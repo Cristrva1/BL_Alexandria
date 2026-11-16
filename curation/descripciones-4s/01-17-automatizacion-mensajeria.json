@@ -1,0 +1,839 @@
+{
+ "batch": "01-automatizacion-mensajeria",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación oficial enlazada; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "huginn": {
+   "que_es": "Sistema de agentes autoalojado para automatizar tareas en línea, descrito por sus autores como una versión «hackeable» de IFTTT o Zapier en tu propio servidor. Es un proyecto comunitario veterano (creado en 2013), con licencia MIT y lanzamientos frecuentes en 2026.",
+   "que_hace": "Crea agentes que leen la web, vigilan eventos y actúan en tu nombre: rastrean páginas y avisan por email cuando cambian, vigilan feeds RSS, buzones IMAP, webhooks y temas MQTT, y envían resúmenes programados. Publica en Slack, Telegram, Threads y otros servicios, envía SMS o llamadas con Twilio y mueve archivos entre Dropbox, S3, FTP y disco local. También resume, clasifica o traduce texto y genera imágenes o voz mediante APIs compatibles con OpenAI. Casos típicos: alertas de precios, monitoreo de páginas y boletines personales.",
+   "como_lo_hace": "Cada agente crea y consume eventos que se propagan por un grafo dirigido; la lógica personalizada se escribe en JavaScript, plantillas Liquid o jq. Es una aplicación Ruby on Rails con un proceso web y un worker en segundo plano, respaldada por MySQL o PostgreSQL. La forma recomendada en producción es Docker Compose con las imágenes oficiales `ghcr.io/huginn/huginn` (todo en un contenedor) o `huginn-single-process` (un proceso por contenedor); la interfaz queda en el puerto 3000. Puede exponer sus propios feeds y endpoints JSON con los eventos recogidos.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Los agentes de IA de Huginn hablan con APIs compatibles con OpenAI y Ollama ofrece un endpoint compatible, así que puedes resumir o clasificar eventos con un modelo local (combinación por arquitectura).",
+     "orden_instalacion": "Ollama primero (puerto 11434). Si Huginn corre en Docker, apunta a la dirección del host y no a `localhost`."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Pone varios proveedores de IA detrás de un único endpoint compatible con OpenAI, con claves virtuales y control de gasto para los agentes de Huginn (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM proxy primero (puerto 4000); luego configura su URL base y una clave virtual en los agentes de IA."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El README indica que los archivos Compose de Huginn funcionan en plataformas autoalojadas que despliegan desde Compose, como Coolify.",
+     "orden_instalacion": "Coolify instalado en el servidor; después crea el servicio desde el Compose de Huginn y define la base de datos y el worker siempre activo."
+    },
+    {
+     "id": "changedetection",
+     "motivo": "Changedetection vigila cambios visuales o de texto en páginas complejas y puede notificar por webhook a Huginn, que encadena acciones posteriores (combinación por arquitectura).",
+     "orden_instalacion": "Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos."
+    }
+   ],
+   "notas": "Alternativas (elige una): n8n, node-red.",
+   "fuentes": [
+    "https://github.com/huginn/huginn/blob/master/README.md",
+    "https://docs.ollama.com/api/openai-compatibility"
+   ],
+   "github": {
+    "name_with_owner": "huginn/huginn",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Ruby",
+    "latest_release": "v2026.11.09 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "kestra": {
+   "que_es": "Plataforma de orquestación de código abierto (Apache 2.0) para flujos de datos, IA e infraestructura, mantenida por Kestra Technologies. Existe desde 2019, publicó la serie 2.0 en 2026 y tiene una edición Enterprise con RBAC y políticas de gobierno.",
+   "que_hace": "Unifica automatizaciones programadas y disparadas por eventos con una interfaz declarativa e independiente del lenguaje: extrae datos de bases, almacenamiento en la nube o APIs, ejecuta scripts en cualquier lenguaje y coordina pipelines de datos, microservicios y procesos de negocio. Incluye agentes de IA y flujos RAG como tipos de tarea, un servidor MCP y disparadores por herramienta MCP. Casos típicos: ETL nocturnos, pipelines de analítica, aprovisionamiento de infraestructura y flujos con aprobación.",
+   "como_lo_hace": "Los flujos se definen en YAML («todo como código») y se pueden editar desde un editor YAML, un editor sin código o un copiloto de IA que se mantienen sincronizados, con control de versiones en Git. El motor está escrito en Java y se extiende con cientos de plugins que se pueden descargar bajo demanda desde Maven Central (`KESTRA_PLUGINS_AUTO_INSTALL_ENABLED=true`). Se prueba con un solo `docker run` en el puerto 8080 montando el socket de Docker para ejecutar tareas en contenedores; en producción usa PostgreSQL y almacenamiento de objetos, con plantillas Terraform para la nube. Tiene CLI (`kestractl`) y extensión para VS Code.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Kestra tiene un plugin JDBC para DuckDB, útil para transformar CSV o Parquet con SQL dentro de un flujo sin levantar un servidor de base de datos.",
+     "orden_instalacion": "Nada que instalar aparte: el plugin se descarga en Kestra; guarda los archivos .duckdb en un volumen persistente."
+    },
+    {
+     "id": "superset",
+     "motivo": "Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura).",
+     "orden_instalacion": "Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Con el servidor MCP de Kestra, un agente de código puede consultar y gestionar flujos y ejecuciones desde la terminal.",
+     "orden_instalacion": "Kestra en marcha y accesible; después registra su servidor MCP en Claude Code según la guía oficial."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Los agentes de IA y flujos RAG de Kestra pueden apuntar a un proveedor de modelos local para no enviar datos a una API externa (combinación por arquitectura; el proveedor exacto depende del plugin de IA) [DATO NO VERIFICADO].",
+     "orden_instalacion": "Ollama primero; desde Kestra en Docker usa la dirección del host."
+    }
+   ],
+   "notas": "Alternativas (elige una): windmill, trigger-dev. El arranque rápido monta `/var/run/docker.sock` como root: úsalo solo en entornos de prueba.",
+   "fuentes": [
+    "https://github.com/kestra-io/kestra/blob/develop/README.md",
+    "https://kestra.io/plugins/plugin-jdbc-duckdb",
+    "https://kestra.io/docs/ai-tools/mcp-server"
+   ],
+   "github": {
+    "name_with_owner": "kestra-io/kestra",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "latest_release": "v2.0.10 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "activepieces": {
+   "que_es": "Plataforma de automatización con IA de código abierto, presentada como reemplazo libre de Zapier. La edición comunitaria tiene licencia MIT y las funciones Enterprise una licencia comercial; el proyecto es activo, con versiones mensuales.",
+   "que_hace": "Permite que personas sin perfil técnico construyan flujos en un editor sin código, mientras los desarrolladores crean las integraciones. Conecta Google Sheets, OpenAI, Discord, RSS y más de 200 servicios, incluye piezas nativas de IA para probar proveedores o crear agentes, y pasos de intervención humana como esperas y aprobaciones. Todas sus piezas (más de 280) se exponen también como servidores MCP para usarlas desde Claude Desktop, Cursor o Windsurf.",
+   "como_lo_hace": "Cada integración es una «pieza»: un paquete npm escrito en TypeScript con tipado estricto, publicado en npmjs.com y con recarga en caliente para desarrollo local; el 60 % lo aporta la comunidad. El constructor visual ejecuta los flujos sobre esas piezas y un SDK de IA ayuda a crear flujos dentro del editor. Se autoaloja (incluso en redes aisladas) o se usa en la nube del proveedor; la guía de despliegue está en su documentación.",
+   "combina_con": [
+    {
+     "id": "nocodb",
+     "motivo": "Activepieces tiene una pieza de NocoDB para crear o actualizar registros desde un flujo, útil como base de datos tipo hoja de cálculo para los resultados.",
+     "orden_instalacion": "NocoDB primero y un token de API; después la conexión en la pieza."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Las piezas se exponen como servidores MCP, así que un agente de código puede usar las integraciones de Activepieces como herramientas.",
+     "orden_instalacion": "Activepieces en marcha; luego registra el servidor MCP de las piezas en el cliente."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Centraliza las llamadas de IA de los flujos en un gateway compatible con OpenAI con presupuestos y registro de gasto (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; usa su URL y una clave virtual en las piezas que acepten un endpoint compatible con OpenAI."
+    }
+   ],
+   "notas": "Alternativa (elige una): n8n. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.",
+   "fuentes": [
+    "https://github.com/activepieces/activepieces/blob/main/README.md",
+    "https://www.activepieces.com/pieces/nocodb"
+   ],
+   "github": {
+    "name_with_owner": "activepieces/activepieces",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "0.93.0 (2026-11-08)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "node-red": {
+   "que_es": "Herramienta de programación low-code para aplicaciones basadas en eventos, proyecto de la OpenJS Foundation con licencia Apache 2.0. Existe desde 2013 y sigue publicando versiones (serie 5.x en 2026).",
+   "que_hace": "Conecta dispositivos, APIs y servicios en línea dibujando flujos en el navegador. Es muy usado en IoT, domótica, integración de APIs y automatizaciones ligeras; su biblioteca comunitaria ofrece miles de nodos, flujos compartidos y colecciones listas para importar.",
+   "como_lo_hace": "Es una aplicación Node.js: se instala con `npm install -g node-red`, se lanza con `node-red` y el editor web queda en el puerto 1880. Cada flujo es un grafo de nodos que intercambian mensajes JavaScript; los flujos se guardan como JSON y se amplían con nodos de la comunidad instalados por npm. También hay imágenes de Docker y guías para Raspberry Pi y la nube en su documentación.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar.",
+     "orden_instalacion": "Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED."
+    },
+    {
+     "id": "ollama",
+     "motivo": "El nodo comunitario `node-red-contrib-ollama` llama a modelos locales desde un flujo, por ejemplo para clasificar mensajes de sensores o de chat.",
+     "orden_instalacion": "Ollama primero con el modelo descargado; luego el nodo desde la paleta."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales).",
+     "orden_instalacion": "Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana."
+    }
+   ],
+   "notas": "Alternativas (elige una): n8n, huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",
+   "fuentes": [
+    "https://github.com/node-red/node-red/blob/master/README.md",
+    "https://flows.nodered.org/node/node-red-contrib-home-assistant-websocket",
+    "https://flows.nodered.org/node/node-red-contrib-ollama"
+   ],
+   "github": {
+    "name_with_owner": "node-red/node-red",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "latest_release": "5.0.9 (2026-10-21)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "windmill": {
+   "que_es": "Plataforma «code-first» autoalojable para flujos de trabajo, apps internas y agentes de IA, de Windmill Labs. El código es abierto bajo AGPLv3 y la empresa vende instancias dedicadas, soporte y licencias comerciales; publica versiones casi a diario.",
+   "que_hace": "Convierte scripts en Python, TypeScript, Go, Bash, SQL, GraphQL, PowerShell, Rust y otros lenguajes en formularios, endpoints HTTP, comandos de CLI y tareas cron, y los compone en flujos, pipelines de datos, agentes o apps React y Svelte. Los equipos de negocio construyen con IA sobre la misma plataforma con revisión, promoción entre entornos y roles. Se presenta como alternativa autoalojada a Retool, Lovable o n8n.",
+   "como_lo_hace": "Backend en Rust con servidores de API sin estado y workers que toman trabajos de una cola en PostgreSQL; frontend en Svelte 5; aislamiento con nsjail y espacios de nombres de procesos. Los runtimes son Bun para TypeScript, python3 con uv, y Go, Bash, PowerShell, Rust, C#, Java o Ansible. Cada espacio de trabajo tiene tablas Postgres gestionadas y scripts DuckDB que consultan S3, Parquet o bases externas. Se despliega con Docker Compose o Helm y se trabaja en local con la CLI `wmill`, sincronizada con Git, o mediante su servidor MCP.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Integración nativa: los scripts DuckDB de Windmill consultan CSV, Parquet y JSON en S3 o Azure Blob, tablas de datos y bases externas en SQL dentro de los workers.",
+     "orden_instalacion": "No requiere instalación aparte; configura el recurso de almacenamiento S3 del espacio de trabajo."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El servidor MCP de Windmill deja que un agente ejecute scripts, gestione recursos y vigile trabajos; `wmill init` genera un AGENTS.md y archivos de skills para trabajar en local.",
+     "orden_instalacion": "Windmill en marcha y CLI `wmill` sincronizada; después registra el MCP en el agente."
+    },
+    {
+     "id": "polars",
+     "motivo": "Scripts Python de Windmill pueden usar Polars para transformar datos tabulares grandes en los workers, con dependencias resueltas por uv (combinación por arquitectura).",
+     "orden_instalacion": "Declara polars como dependencia del script; vigila la memoria del worker con archivos grandes."
+    }
+   ],
+   "notas": "Alternativas (elige una): n8n, kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.",
+   "fuentes": [
+    "https://github.com/windmill-labs/windmill/blob/main/README.md",
+    "https://www.windmill.dev/docs/core_concepts/mcp"
+   ],
+   "github": {
+    "name_with_owner": "windmill-labs/windmill",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Rust",
+    "latest_release": "v1.875.0 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "trigger-dev": {
+   "que_es": "Plataforma de código abierto (Apache 2.0) para crear flujos de IA y tareas en segundo plano en TypeScript. Ofrece un servicio gestionado y guías oficiales de autoalojamiento; publica versiones con frecuencia (serie 4.x).",
+   "que_hace": "Ejecuta tareas largas sin límites de tiempo (a diferencia de AWS Lambda o Vercel), con reintentos, colas, idempotencia, cron duraderos de hasta un año y escalado elástico. Permite pausar tareas hasta que una persona apruebe o rechace, transmitir respuestas de LLM en tiempo real a tu app y ver trazas y logs de cada ejecución con alertas de error. Casos típicos: agentes de IA, procesamiento de video o PDF, scraping con navegador y trabajos programados.",
+   "como_lo_hace": "Las tareas se escriben en tu propio código con el SDK `@trigger.dev/sdk` (función `task`) y se despliegan a la nube de Trigger.dev o a una instancia propia. Las «build extensions» añaden paquetes de sistema a la imagen de ejecución, por ejemplo FFmpeg, Playwright o scripts Python. Cada ejecución tiene etiquetas, ramas de vista previa integradas con Vercel y Git, y una API Realtime para suscribirse al estado. El autoalojamiento se hace con Docker Compose o con su chart de Helm para Kubernetes.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "Trigger.dev documenta ejemplos con el AI SDK de Vercel para ejecutar llamadas de IA largas como tareas duraderas y transmitir el resultado.",
+     "orden_instalacion": "Mismo proyecto TypeScript: instala el SDK de Trigger.dev y el AI SDK; las claves del proveedor van en las variables de entorno de Trigger."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "La build extension oficial de FFmpeg permite procesar audio y video dentro de las tareas sin límites de tiempo.",
+     "orden_instalacion": "Añade la extensión en `trigger.config` antes de desplegar; no hace falta instalar FFmpeg en tu máquina."
+    },
+    {
+     "id": "playwright",
+     "motivo": "La build extension de Playwright instala navegadores en la imagen de ejecución para scraping o pruebas desde tareas en segundo plano.",
+     "orden_instalacion": "Declara la extensión en la configuración y despliega; cuida la memoria de cada ejecución."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Registra trazas y costes de las llamadas a LLM hechas dentro de las tareas (combinación por arquitectura; no encontré guía oficial conjunta).",
+     "orden_instalacion": "Langfuse primero para obtener claves; luego instrumenta el código de las tareas con su SDK."
+    }
+   ],
+   "notas": "Alternativas (elige una): windmill, kestra.",
+   "fuentes": [
+    "https://github.com/triggerdotdev/trigger.dev/blob/main/README.md",
+    "https://trigger.dev/docs/guides/examples/vercel-ai-sdk",
+    "https://trigger.dev/docs/config/extensions/ffmpeg",
+    "https://trigger.dev/docs/config/extensions/playwright"
+   ],
+   "github": {
+    "name_with_owner": "triggerdotdev/trigger.dev",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v4.8.5 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "self-hosted-ai-starter-kit": {
+   "que_es": "Plantilla de Docker Compose de código abierto (Apache 2.0) mantenida por el equipo de n8n para levantar en minutos un entorno local de IA y low-code. No es una aplicación nueva: reúne servicios existentes ya configurados para funcionar juntos.",
+   "que_hace": "Arranca n8n autoalojado junto con Ollama para modelos locales, Qdrant como base vectorial y PostgreSQL. Sirve para prototipar agentes de IA que agendan citas, resumir PDF de la empresa sin enviar datos fuera, crear bots de Slack más útiles o analizar documentos financieros privados a bajo coste. Es un punto de partida para pruebas, no un despliegue endurecido para producción.",
+   "como_lo_hace": "Se clona el repositorio, se copia `.env.example` a `.env` (cambiando secretos y contraseñas) y se ejecuta `docker compose` con el perfil adecuado: `gpu-nvidia`, `gpu-amd` en Linux o solo CPU. En Mac con Apple Silicon la GPU no se expone a Docker, así que se recomienda CPU o ejecutar Ollama de forma nativa y ajustar `OLLAMA_HOST`. Incluye una carpeta compartida para que los flujos de n8n lean archivos locales y un flujo de demostración.",
+   "combina_con": [
+    {
+     "id": "n8n-mcp",
+     "motivo": "Permite que un agente de código cree, valide y depure flujos dentro del n8n del kit mediante su API pública.",
+     "orden_instalacion": "Levanta el kit, activa la Public API de n8n y crea una API key; después conecta n8n-mcp."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Añade una interfaz de chat que reutiliza el Ollama del kit para conversar con los mismos modelos (combinación por arquitectura).",
+     "orden_instalacion": "Kit primero; inicia Open WebUI con `OLLAMA_BASE_URL` apuntando al Ollama del kit y en un puerto distinto de 5678."
+    },
+    {
+     "id": "docling",
+     "motivo": "Convierte PDF y documentos de oficina en Markdown limpio antes de vectorizarlos en el Qdrant del kit (combinación por arquitectura).",
+     "orden_instalacion": "Instala Docling o docling-serve aparte y llámalo desde n8n por HTTP o desde un script."
+    },
+    {
+     "id": "awesome-n8n-templates",
+     "motivo": "Colección de flujos importables para aprender patrones sobre el n8n del kit.",
+     "orden_instalacion": "Después de levantar el kit; importa, revisa credenciales y prueba cada plantilla antes de activarla."
+    }
+   ],
+   "notas": "Ya incluye n8n, Ollama, Qdrant y PostgreSQL: no instales esos servicios por separado en la misma máquina o chocarán los puertos (5678, 11434, 6333, 5432). Cambia todas las contraseñas de `.env`.",
+   "fuentes": [
+    "https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "n8n-io/self-hosted-ai-starter-kit",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "awesome-n8n-templates": {
+   "que_es": "Colección curada por la comunidad de más de 280 archivos de plantillas de flujo para n8n, actualizada en 2026. No es software ejecutable sino material de referencia; su licencia no está declarada de forma estándar en GitHub y el README contiene enlaces de afiliado.",
+   "que_hace": "Ofrece flujos listos para importar organizados por plataforma: Gmail y email, Telegram, Google Drive y Sheets, WordPress, PDF y documentos, Discord, bases de datos, DevOps, Airtable, Notion, Slack, OpenAI y LLM, WhatsApp y redes sociales. Sirve para aprender patrones de n8n o partir de un ejemplo en lugar de empezar desde cero.",
+   "como_lo_hace": "Cada plantilla es un archivo JSON de flujo de n8n que se importa con «Workflows → Import from File»; después hay que configurar las credenciales de cada servicio y probar el flujo. El propio README advierte que debes revisar, configurar y probar cada flujo antes de usarlo.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Es la plataforma donde se importan y ejecutan las plantillas.",
+     "orden_instalacion": "n8n en marcha primero; después importa las plantillas una a una."
+    },
+    {
+     "id": "n8n-mcp",
+     "motivo": "Sus herramientas `validate_workflow` y `n8n_autofix_workflow` detectan nodos desconocidos, versiones obsoletas o conexiones rotas en plantillas importadas.",
+     "orden_instalacion": "Después de importar; valida antes de activar cualquier flujo."
+    },
+    {
+     "id": "n8n-skills",
+     "motivo": "Enseña al agente patrones y sintaxis de expresiones de n8n para adaptar las plantillas a tu caso.",
+     "orden_instalacion": "Requiere n8n-mcp configurado."
+    },
+    {
+     "id": "self-hosted-ai-starter-kit",
+     "motivo": "Entorno local listo (n8n, Ollama, Qdrant) para probar las plantillas de IA sin pagar APIs, cambiando el nodo del modelo por Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Levanta el kit y después importa las plantillas."
+    }
+   ],
+   "notas": "Las plantillas son de terceros: revisa qué datos envían y a qué servicios antes de conectar credenciales reales.",
+   "fuentes": [
+    "https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md",
+    "https://github.com/czlonkowski/n8n-mcp/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "enescingoz/awesome-n8n-templates",
+    "archived": false,
+    "pushed_at": "2026-09-12",
+    "license": "no estándar (NOASSERTION)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "n8n-skills": {
+   "que_es": "Paquete de skills para Claude Code (también instalable como plugin de Codex) que enseña a un agente a construir flujos de n8n de calidad de producción usando el servidor n8n-mcp. Es del mismo autor que n8n-mcp, con licencia MIT y versiones frecuentes.",
+   "que_hace": "Aporta 14 skills complementarias: sintaxis de expresiones `{{}}`, uso experto de las herramientas de n8n-mcp, patrones de flujo, interpretación de errores de validación, configuración de nodos, nodos de código en JavaScript y Python, manejo de errores, datos binarios, subflujos, agentes de IA, varias instancias y autoalojamiento de n8n. Evita que el agente use mal las herramientas MCP o se quede en bucles de validación.",
+   "como_lo_hace": "Cada skill se activa por su descripción cuando la tarea coincide. En la instalación como plugin de Claude Code o Codex añade una capa de control: una skill «router» cargada al inicio de cada sesión por un hook `SessionStart` y hooks `PreToolUse` que recuerdan la skill adecuada antes de llamadas de alto impacto a n8n-mcp. En Claude.ai se pueden subir skills sueltas, pero sin hooks.",
+   "combina_con": [
+    {
+     "id": "n8n-mcp",
+     "motivo": "Requisito declarado: las skills enseñan a usar sus herramientas y algunas funciones necesitan n8n-mcp 2.97.0 o superior.",
+     "orden_instalacion": "Instala y configura n8n-mcp primero; después el plugin de skills."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Es la plataforma final donde se crean y validan los flujos.",
+     "orden_instalacion": "n8n con la Public API activada antes de conectar n8n-mcp."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Cliente principal: la instalación como plugin activa hooks y router.",
+     "orden_instalacion": "Claude Code instalado; después agrega el plugin según la sección de instalación del README."
+    },
+    {
+     "id": "awesome-n8n-templates",
+     "motivo": "Plantillas reales para que el agente las revise y adapte aplicando las skills de patrones y validación (combinación por arquitectura).",
+     "orden_instalacion": "Opcional, después de tener el resto funcionando."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/czlonkowski/n8n-skills/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "czlonkowski/n8n-skills",
+    "archived": false,
+    "pushed_at": "2026-10-24",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "latest_release": "v1.37.1 (2026-10-24)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "whatsapp-web-js": {
+   "que_es": "Librería Node.js de código abierto (Apache 2.0) para interactuar con WhatsApp Web y construir una API de WhatsApp propia. Es un proyecto comunitario no oficial, activo desde 2019 y con versiones frecuentes (serie 1.34 en 2026).",
+   "que_hace": "Permite enviar y recibir mensajes, enviar imágenes, audio, documentos y video, trabajar con multidispositivo, grupos, contactos y reacciones, y reaccionar a eventos del cliente web casi como un usuario. Sirve para bots de atención, notificaciones a usuarios que ya te escribieron e integraciones a medida.",
+   "como_lo_hace": "Usa Puppeteer para abrir WhatsApp Web en un navegador administrado y llamar a sus funciones internas, de modo que se autentica escaneando un código QR como en un navegador normal. Requiere Node.js 18 o superior y se instala con `npm install whatsapp-web.js`; el envío de video necesita Google Chrome en lugar de Chromium. Las sesiones se guardan y restauran con estrategias de autenticación configurables.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Tu servicio con la librería reenvía cada mensaje a un webhook de n8n, que decide la respuesta y la devuelve por HTTP (combinación por arquitectura).",
+     "orden_instalacion": "Expón un endpoint propio para enviar y apunta los eventos al webhook de n8n; protege ambos con autenticación."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Responder mensajes con un modelo local, sin coste por token ni datos enviados a terceros (combinación por arquitectura).",
+     "orden_instalacion": "Ollama primero con el modelo descargado; llama a su API REST desde el manejador de mensajes."
+    },
+    {
+     "id": "chatwoot",
+     "motivo": "Llevar las conversaciones a una bandeja humana usando la API de Chatwoot (combinación por arquitectura; no hay integración nativa documentada).",
+     "orden_instalacion": "Chatwoot primero; crea una bandeja de API y sincroniza los mensajes desde tu servicio."
+    }
+   ],
+   "notas": "Alternativas (elige una): baileys, waha, evolution-api. Es un cliente no oficial: WhatsApp puede restringir números que envían mensajes masivos o no solicitados. Cada sesión mantiene un navegador abierto, con consumo alto de memoria.",
+   "fuentes": [
+    "https://github.com/wwebjs/whatsapp-web.js/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "wwebjs/whatsapp-web.js",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "latest_release": "v1.34.8 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openwa": {
+   "que_es": "Gateway de API de WhatsApp de código abierto (MIT) y autoalojado, creado en 2026 y con versiones muy frecuentes. Es un proyecto comunitario no oficial que se conecta a WhatsApp mediante clientes de ingeniería inversa, no mediante la Cloud API de Meta.",
+   "que_hace": "Gestiona varias sesiones de WhatsApp con API REST, webhooks y un panel React para sesiones, webhooks y claves de API. Permite claves limitadas a ciertas sesiones o chats, útil para dar a un agente de IA acceso solo a algunos grupos. Ofrece plugins oficiales para Chatwoot y Typebot, nodos comunitarios para n8n y un servidor MCP opcional con 26 herramientas de solo lectura por defecto.",
+   "como_lo_hace": "Backend NestJS en TypeScript con arquitectura de adaptadores: base de datos SQLite o PostgreSQL, almacenamiento de medios local o S3 y Redis opcional para colas, límites y WebSocket, todo elegido por configuración. Puede usar dos motores: `whatsapp-web.js` (Chromium sin interfaz, menor riesgo de bloqueo, 300–500 MB por sesión) o `baileys` (WebSocket directo, 30–80 MB por sesión, más fácil de detectar). Se despliega con Docker; el MCP se activa con `MCP_ENABLED=true` en `POST /mcp` del mismo puerto.",
+   "combina_con": [
+    {
+     "id": "chatwoot",
+     "motivo": "Plugin oficial de OpenWA: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot.",
+     "orden_instalacion": "Chatwoot primero; luego instala y configura el plugin desde OpenWA-plugins."
+    },
+    {
+     "id": "typebot",
+     "motivo": "Plugin oficial para responder con flujos conversacionales visuales de Typebot.",
+     "orden_instalacion": "Typebot con el bot publicado; después activa el plugin en OpenWA."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Nodos comunitarios de n8n para automatizar envíos y reaccionar a mensajes.",
+     "orden_instalacion": "n8n primero; instala el nodo comunitario y usa una clave de API de OpenWA limitada a las sesiones necesarias."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El servidor MCP de OpenWA permite que un agente lea sesiones y mensajes con una clave restringida a ciertos chats.",
+     "orden_instalacion": "Activa `MCP_ENABLED=true`, crea una clave limitada y registra el endpoint `/mcp` en el agente."
+    }
+   ],
+   "notas": "Riesgo de bloqueo: no envíes mensajes en frío a números que nunca te escribieron y usa destinatarios que hayan dado su consentimiento. Con S3, el script de respaldo no copia el bucket.",
+   "fuentes": [
+    "https://github.com/rmyndharis/OpenWA/blob/main/README.md",
+    "https://github.com/rmyndharis/OpenWA-plugins"
+   ],
+   "github": {
+    "name_with_owner": "rmyndharis/OpenWA",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.30.3 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "baileys": {
+   "que_es": "Librería de código abierto (MIT) en TypeScript para interactuar con la API de WhatsApp Web mediante WebSockets, mantenida por la comunidad WhiskeySockets. No está afiliada a WhatsApp; la versión 7.0.0 introdujo cambios incompatibles y en 2026 su última versión publicada es una release candidate.",
+   "que_hace": "Permite que una aplicación se conecte a WhatsApp como un dispositivo vinculado para enviar y recibir mensajes y medios y gestionar grupos sin abrir un navegador. Es la base de varios gateways (Evolution API y OpenWA la usan como motor). Sus mantenedores piden no usarla para spam, mensajería masiva automatizada ni stalkerware.",
+   "como_lo_hace": "Habla directamente el protocolo multidispositivo de WhatsApp Web por WebSocket, lo que la hace mucho más ligera que las soluciones con navegador (OpenWA estima 30–80 MB por sesión), aunque más fácil de detectar. Se instala desde npm como paquete `baileys`; la guía nueva está en baileys.wiki y todavía está incompleta, por lo que la anterior sigue en el README histórico y en npm.",
+   "combina_con": [
+    {
+     "id": "evolution-api",
+     "motivo": "Evolution API usa Baileys como conexión gratuita; conocer la librería ayuda a entender y depurar sus sesiones, o a pasar a un gateway listo si no quieres programar el servidor.",
+     "orden_instalacion": "Usa uno de los dos en cada número: no conectes el mismo número a Baileys propio y a Evolution a la vez."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Tu servicio con Baileys envía los eventos a un webhook de n8n para la lógica del bot (combinación por arquitectura).",
+     "orden_instalacion": "Servicio Baileys primero con su endpoint de envío protegido; después el flujo en n8n."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Un único endpoint compatible con OpenAI para generar respuestas con distintos modelos y control de gasto (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; llama a su API desde el manejador de mensajes."
+    }
+   ],
+   "notas": "Alternativas (elige una): whatsapp-web-js, waha. Revisa la guía de migración de la versión 7 antes de actualizar.",
+   "fuentes": [
+    "https://github.com/WhiskeySockets/Baileys/blob/master/README.md",
+    "https://github.com/rmyndharis/OpenWA/blob/main/README.md",
+    "https://github.com/evolution-foundation/evolution-api/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "WhiskeySockets/Baileys",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v7.0.0-rc14 (2026-07-29)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "fluxer": {
+   "que_es": "Aplicación de mensajería instantánea y llamadas de voz (VoIP) gratuita y de código abierto para amigos, grupos y comunidades, con licencia AGPL-3.0 o posterior. Creada en 2026, publica versiones casi a diario; los reportes de errores se gestionan en feedback.fluxer.com y no en GitHub.",
+   "que_hace": "Ofrece canales de texto, mensajes directos, hilos, foros, llamadas, emojis y stickers en servidores de comunidad, con clientes para Windows, macOS, Linux y Android (la beta de iOS está en pausa). Puede usarse en el servicio oficial o autoalojarse según su documentación. Encaja como alternativa abierta a plataformas tipo Discord para comunidades.",
+   "como_lo_hace": "Es un monorepo con servicios separados (API, gateway en tiempo real, mensajes, usuarios, medios, notificaciones push, desplegables y escritorio); GitHub lo clasifica como TypeScript y el repositorio incluye componentes en Rust, Erlang y Go. Expone una API HTTP y un Gateway por WebSocket con eventos y opcodes documentados, además de una API de administración para instancias propias. Se distribuye con instaladores nativos, Flatpak, paquetes deb/rpm, AppImage y repositorios para apt, dnf y pacman.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Automatizar avisos o moderación llamando a la API HTTP de Fluxer desde un flujo (combinación por arquitectura).",
+     "orden_instalacion": "Crea una aplicación o token en tu instancia y úsalo en un nodo HTTP de n8n; respeta los límites de tasa documentados."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Un bot que escucha el Gateway de Fluxer puede responder con un modelo local sin enviar las conversaciones a terceros (combinación por arquitectura).",
+     "orden_instalacion": "Ollama primero; después el proceso del bot conectado al Gateway con su token."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Plataforma autoalojada para desplegar y actualizar los contenedores de una instancia propia (combinación por arquitectura).",
+     "orden_instalacion": "Coolify en el servidor; después sigue la guía de autoalojamiento de Fluxer [DATO NO VERIFICADO: compatibilidad directa con Coolify]."
+    }
+   ],
+   "notas": "La AGPL obliga a publicar tus cambios si ofreces una versión modificada como servicio.",
+   "fuentes": [
+    "https://github.com/fluxerapp/fluxer/blob/main/README.md",
+    "https://docs.fluxer.com/http-api/",
+    "https://docs.fluxer.com/gateway/overview/"
+   ],
+   "github": {
+    "name_with_owner": "fluxerapp/fluxer",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "fluxer-release@2026.1116.2733 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "waha": {
+   "que_es": "WAHA («WhatsApp HTTP API») es una API REST de WhatsApp que instalas en tu propio servidor, de devlike.pro, con licencia Apache 2.0. Desde la versión 2026.6 las funciones de la antigua edición «Plus» están incluidas en la imagen principal.",
+   "que_hace": "Permite iniciar sesiones de WhatsApp escaneando un QR, enviar textos y medios, recibir eventos por webhook y gestionar sesiones desde un panel web. Sirve para bots, notificaciones y conectar WhatsApp con CRM o plataformas de automatización. Incluye documentación interactiva Swagger para probar cada endpoint.",
+   "como_lo_hace": "Se distribuye como imagen Docker (`devlikeapro/waha`) y se arranca con `docker run -p 3000:3000`; en ese puerto quedan el panel, la API y Swagger (por ejemplo `POST /api/sendText`). Su documentación describe tres motores intercambiables: WEBJS (navegador), NOWEB (WebSocket) y GOWS (implementación en Go). Está escrito en TypeScript; el único requisito declarado es tener Docker.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "WAHA documenta una integración con n8n (nodo comunitario) para enviar mensajes y reaccionar a eventos de WhatsApp.",
+     "orden_instalacion": "WAHA primero con una sesión activa y clave de API; después instala el nodo en n8n."
+    },
+    {
+     "id": "chatwoot",
+     "motivo": "WAHA documenta una app de Chatwoot para atender las conversaciones de WhatsApp desde su bandeja.",
+     "orden_instalacion": "Chatwoot primero; luego configura la app de Chatwoot en WAHA con la URL y el token de la cuenta."
+    },
+    {
+     "id": "typebot",
+     "motivo": "Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura).",
+     "orden_instalacion": "Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de n8n."
+    }
+   ],
+   "notas": "Alternativas (elige una): evolution-api, whatsapp-web-js, baileys. Es una conexión no oficial: evita mensajes masivos o no solicitados. Protege la API con clave antes de exponer el puerto 3000.",
+   "fuentes": [
+    "https://github.com/devlikeapro/waha/blob/core/README.md",
+    "https://waha.devlike.pro/docs/how-to/engines/",
+    "https://waha.devlike.pro/docs/integrations/n8n/",
+    "https://waha.devlike.pro/docs/apps/chatwoot/"
+   ],
+   "github": {
+    "name_with_owner": "devlikeapro/waha",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "2026.10.1 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "whatsapp-agentkit": {
+   "que_es": "Kit de código abierto (MIT), escrito en español para builders de Latinoamérica, que usa Claude Code para crear un agente de WhatsApp que atiende a clientes. Es un proyecto pequeño y reciente (2026) sin versiones publicadas.",
+   "que_hace": "En lugar de una plantilla, ofrece instrucciones que Claude Code sigue para entrevistarte sobre tu negocio y luego escribir, probar y desplegar el agente completo: servidor, conexión con WhatsApp, memoria por cliente y prompt con personalidad. Resuelve la «plomería» (webhooks, firmas, tokens, reintentos, despliegue). Casos típicos: atención de un comercio, catálogos, agendas y preguntas frecuentes.",
+   "como_lo_hace": "`start.sh` verifica el entorno y el comando `/build-agent` hace que Claude Code lea `CLAUDE.md` y ejecute cinco fases: comprobar Python 3.11+, entrevistarte, generar el código, probarlo y desplegarlo. El servidor resultante en Python recibe `POST /webhook`, verifica la firma, confirma de inmediato y procesa en segundo plano; elige proveedor de WhatsApp entre Zernio o la Cloud API de Meta. Requiere una API key de Anthropic (modelo configurable con `ANTHROPIC_MODEL`) e incluye Dockerfile y docker-compose; la guía despliega en Railway.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Requisito: es el agente que ejecuta `/build-agent` y escribe todo el proyecto.",
+     "orden_instalacion": "Instala Claude Code y configura la API key de Anthropic antes de clonar el kit."
+    },
+    {
+     "id": "chatwoot",
+     "motivo": "Añadir traspaso a personas cuando el agente no sepa responder, enviando la conversación a Chatwoot por su API (combinación por arquitectura).",
+     "orden_instalacion": "Después de tener el agente funcionando; pide a Claude Code que agregue la llamada a la API de Chatwoot."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar el Dockerfile o docker-compose generado en tu propio servidor en vez de Railway (combinación por arquitectura).",
+     "orden_instalacion": "Coolify en el servidor; publica el webhook con HTTPS antes de registrarlo en el proveedor de WhatsApp."
+    }
+   ],
+   "notas": "Costes: la Cloud API de Meta cobra respuestas de servicio desde el 1 de octubre de 2026 (con 1.000 gratis al mes por número, según el README) y Railway ya no tiene plan gratuito real. Usa una conexión oficial (Zernio o Meta), no un cliente de ingeniería inversa.",
+   "fuentes": [
+    "https://github.com/Hainrixz/whatsapp-agentkit/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Hainrixz/whatsapp-agentkit",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "typebot": {
+   "que_es": "Constructor de chatbots visual y autoalojable creado por Baptiste Arnaud. Se distribuye bajo Functional Source License 1.1 con conversión futura a Apache 2.0 (FSL-1.1-Apache-2.0), un modelo «Fair Source» con restricciones de uso competitivo; el distintivo AGPLv3 del README está desactualizado frente al archivo LICENSE.",
+   "que_hace": "Permite crear chatbots avanzados con más de 34 bloques: burbujas de texto, imagen, video o audio; entradas de texto, email, teléfono, botones, fechas, archivos y pagos con Stripe; lógica condicional, redirecciones, JavaScript y pruebas A/B. Integra webhooks y peticiones HTTP, OpenAI, Google Sheets, Google Analytics, Meta Pixel, Zapier, Make.com y Chatwoot. Los bots se incrustan en web o móvil como contenedor, popup o burbuja, y los resultados se recogen en tiempo real.",
+   "como_lo_hace": "Son dos aplicaciones Next.js en TypeScript: el «builder», donde se diseñan los bots, y el «viewer», donde responde el usuario. Necesita PostgreSQL y, para archivos, almacenamiento compatible con S3. La librería de incrustación es nativa, sin iframe, y los bots también se pueden ejecutar por API HTTP.",
+   "combina_con": [
+    {
+     "id": "evolution-api",
+     "motivo": "Integración nativa del lado de Evolution, con gestión de disparadores, para llevar el bot a WhatsApp.",
+     "orden_instalacion": "Typebot con el bot publicado primero; luego vincúlalo a la instancia de Evolution."
+    },
+    {
+     "id": "chatwoot",
+     "motivo": "Bloque de integración nativo que pasa la conversación a una persona en Chatwoot.",
+     "orden_instalacion": "Chatwoot primero; configura el bloque con el ID de cuenta y el token."
+    },
+    {
+     "id": "n8n",
+     "motivo": "El bloque Webhook/HTTP llama a un flujo de n8n para consultar CRM, bases de datos o un modelo y devolver datos al chat.",
+     "orden_instalacion": "Crea primero el webhook en n8n y luego apúntalo desde el bloque."
+    },
+    {
+     "id": "openwa",
+     "motivo": "Plugin oficial de OpenWA para responder mensajes de WhatsApp con un bot de Typebot.",
+     "orden_instalacion": "Typebot publicado y después el plugin en OpenWA."
+    }
+   ],
+   "notas": "Revisa la FSL antes de ofrecer Typebot como servicio a terceros.",
+   "fuentes": [
+    "https://github.com/baptisteArno/typebot.io/blob/main/README.md",
+    "https://github.com/baptisteArno/typebot.io/blob/main/LICENSE",
+    "https://docs.typebot.io/self-hosting/get-started",
+    "https://docs.typebot.io/editor/blocks/integrations/chatwoot",
+    "https://docs.typebot.io/editor/blocks/integrations/webhook"
+   ],
+   "github": {
+    "name_with_owner": "baptisteArno/typebot.io",
+    "archived": false,
+    "pushed_at": "2026-11-07",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.19.1 (2026-10-20)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "botpress": {
+   "que_es": "Repositorio de herramientas de desarrollo de Botpress Cloud, la plataforma comercial de chatbots y asistentes con IA de Botpress, con licencia MIT. No contiene el servidor autoalojable: la versión local v12 vive en el repositorio aparte `botpress/v12`, cuyo último lanzamiento visible aquí es de 2023.",
+   "que_hace": "Reúne las integraciones públicas del Botpress Hub (WhatsApp, Telegram, Messenger, Slack, Teams, HubSpot, Salesforce, Zendesk, Odoo, n8n, Cal.com, Stripe, OpenAI, Anthropic, Groq, Mistral y muchas más), las herramientas de desarrollo (CLI, SDK y cliente de API), bots de ejemplo «como código» y, próximamente, plugins para Botpress Studio. Sirve para crear o modificar integraciones y bots que se ejecutan en Botpress Cloud.",
+   "como_lo_hace": "Es un monorepo en TypeScript. Se instala la CLI con `npm install -g @botpress/cli` para desarrollar, probar y publicar integraciones en el Hub, o para definir bots con el SDK. Los bots se ejecutan en la nube de Botpress, que requiere cuenta.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Integración oficial `n8n` en la carpeta de integraciones para conectar el bot con flujos de automatización.",
+     "orden_instalacion": "Cuenta en Botpress Cloud y n8n accesible por internet; luego activa la integración en el Hub."
+    },
+    {
+     "id": "odoo",
+     "motivo": "Integración oficial con Odoo para consultar o registrar datos del ERP/CRM desde el bot.",
+     "orden_instalacion": "Odoo con usuario de API; después configura la integración."
+    },
+    {
+     "id": "cal.diy",
+     "motivo": "Existe una integración oficial con Cal.com; cal.diy es su edición comunitaria, así que la compatibilidad con una instancia propia está [DATO NO VERIFICADO].",
+     "orden_instalacion": "Instancia de cal.diy accesible por internet y token de API antes de configurar la integración."
+    }
+   ],
+   "notas": "La ficha del catálogo debe entenderse como herramientas para Botpress Cloud, no como plataforma autoalojada.",
+   "fuentes": [
+    "https://github.com/botpress/botpress/blob/master/readme.md",
+    "https://github.com/botpress/botpress/tree/master/integrations"
+   ],
+   "github": {
+    "name_with_owner": "botpress/botpress",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v12.30.9 (2023-06-22)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "nocodb": {
+   "que_es": "Plataforma para crear bases de datos en línea con interfaz de hoja de cálculo, alternativa abierta a Airtable. Desde hace un tiempo usa la Sustainable Use License (no es OSI); es un proyecto muy popular con versiones mensuales.",
+   "que_hace": "Permite crear, leer, actualizar y borrar tablas, columnas y filas; ordenar, filtrar, agrupar y ocultar columnas; y trabajar con vistas de cuadrícula, galería, formulario, kanban y calendario, con vistas colaborativas o bloqueadas. Expone APIs REST y un SDK, y tiene una «App Store» de integraciones para notificaciones, almacenamiento y más. Casos típicos: CRM ligero, inventarios, seguimiento de proyectos y backends para automatizaciones.",
+   "como_lo_hace": "Se ejecuta en Docker con SQLite (por defecto) o PostgreSQL (`NC_DB=pg://...`) guardando datos en un volumen; el panel queda en `http://localhost:8080/dashboard`. Para producción existe «Auto-upstall», un script que genera un docker-compose; también hay guías para Kubernetes y Helm. Ya no se publican binarios precompilados.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "n8n tiene un nodo NocoDB para crear, leer y actualizar registros desde flujos.",
+     "orden_instalacion": "NocoDB primero y un token de API; después la credencial en n8n."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Pieza oficial de NocoDB en Activepieces para usar la base como origen o destino de flujos.",
+     "orden_instalacion": "NocoDB primero; luego la conexión en la pieza."
+    },
+    {
+     "id": "metabase",
+     "motivo": "Si NocoDB guarda los datos en PostgreSQL, Metabase puede conectarse a esa base para dashboards (combinación por arquitectura).",
+     "orden_instalacion": "Usa NocoDB con PostgreSQL; conecta Metabase con un usuario de solo lectura."
+    }
+   ],
+   "notas": "Alternativas (elige una): appsmith, budibase.",
+   "fuentes": [
+    "https://github.com/nocodb/nocodb/blob/develop/README.md",
+    "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb/",
+    "https://www.activepieces.com/pieces/nocodb"
+   ],
+   "github": {
+    "name_with_owner": "nocodb/nocodb",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "2026.10.1 (2026-10-29)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "tooljet": {
+   "que_es": "Plataforma de código abierto para construir herramientas internas (paneles de administración, dashboards y apps operativas) sobre tus bases de datos, APIs y servicios SaaS, de ToolJet Solutions. La edición comunitaria tiene licencia AGPL v3; existen ToolJet Cloud y funciones de IA en la edición Enterprise.",
+   "que_hace": "Ofrece un constructor visual con más de 80 componentes (tablas, gráficos, formularios, listas), una base de datos sin código integrada, apps de varias páginas con edición multijugador y más de 90 fuentes de datos. Incluye flujos de trabajo con ramas, programados o disparados por webhook, ejecución de JavaScript y Python dentro de las apps, comentarios y control de acceso granular. La generación de apps desde lenguaje natural y el constructor de consultas con IA son de la edición Enterprise.",
+   "como_lo_hace": "Se prueba con un contenedor Docker (`tooljet/try:ee-lts-latest`, puerto 80) que incluye PostgreSQL en un volumen; en producción se despliega con Docker, Kubernetes o en AWS, GCP y Azure, y se recomienda la versión LTS. Los datos pasan por un proxy del servidor con cifrado AES-256-GCM y soporte de SSO. Trae un servidor MCP (en beta) y plugins para Claude Code, Codex y Grok Build que construyen apps contra los contratos reales de componentes y datos; los conectores propios se crean con la CLI `@tooljet/cli`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin y servidor MCP oficiales: el agente genera páginas, consultas y componentes de ToolJet desde un prompt y modifica apps existentes.",
+     "orden_instalacion": "ToolJet en marcha; después instala el plugin o registra el MCP siguiendo la guía de ToolJet MCP (beta)."
+    },
+    {
+     "id": "codex",
+     "motivo": "También compatible como plugin según el README, para quien trabaja con Codex en lugar de Claude Code.",
+     "orden_instalacion": "Igual que con Claude Code; usa solo un agente a la vez sobre la misma app."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Los flujos de ToolJet aceptan disparadores por webhook y las apps pueden llamar a webhooks de n8n para tareas con muchas integraciones (combinación por arquitectura).",
+     "orden_instalacion": "Crea primero el webhook en el sistema que recibe y protégelo con un token."
+    }
+   ],
+   "notas": "Alternativas (elige una): appsmith, budibase. El contenedor de prueba usa la imagen Enterprise (ee); revisa qué funciones requieren licencia.",
+   "fuentes": [
+    "https://github.com/ToolJet/ToolJet/blob/develop/README.md",
+    "https://docs.tooljet.com/docs/build-with-ai/mcp/overview"
+   ],
+   "github": {
+    "name_with_owner": "ToolJet/ToolJet",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "HTML",
+    "latest_release": "v3.20.257-lts (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "appsmith": {
+   "que_es": "Plataforma low-code de código abierto (Apache 2.0) para desarrollar, desplegar y mantener aplicaciones internas, de Appsmith Inc. Se usa en su nube o autoalojada y publica versiones con frecuencia.",
+   "que_hace": "Permite construir dashboards, paneles de administración, vistas «customer 360», automatización de TI y herramientas de gestión de servicios conectando bases de datos y APIs con componentes visuales y JavaScript. Ofrece plantillas y un portal comunitario, y presenta Appsmith Agents para integrar modelos de IA con datos privados dentro de las herramientas del equipo.",
+   "como_lo_hace": "Se instala principalmente con Docker (imagen `appsmith/appsmith-ce`) o Kubernetes siguiendo sus guías; también puede usarse Appsmith Cloud. GitHub muestra un monorepo con TypeScript y JavaScript en el frontend y Java en el backend. Las apps se conectan a fuentes como PostgreSQL mediante consultas configuradas en el editor [DATO NO VERIFICADO: base de datos interna que usa la imagen].",
+   "combina_con": [
+    {
+     "id": "supabase",
+     "motivo": "Appsmith consulta PostgreSQL de forma nativa y Supabase ofrece un PostgreSQL gestionado con autenticación, así que sirve como backend de la app interna (combinación por arquitectura).",
+     "orden_instalacion": "Supabase primero; crea un usuario con permisos mínimos y conéctalo como fuente PostgreSQL en Appsmith."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Un botón de Appsmith llama a un webhook de n8n para tareas que tocan muchos servicios (combinación por arquitectura).",
+     "orden_instalacion": "Crea el webhook en n8n, protégelo con un encabezado secreto y configúralo como API en Appsmith."
+    },
+    {
+     "id": "metabase",
+     "motivo": "Appsmith cubre los formularios y acciones; Metabase, los análisis y dashboards sobre la misma base (combinación por arquitectura).",
+     "orden_instalacion": "Conecta ambos a la base con usuarios distintos: Metabase solo lectura."
+    }
+   ],
+   "notas": "Alternativas (elige una): tooljet, budibase, nocodb.",
+   "fuentes": [
+    "https://github.com/appsmithorg/appsmith/blob/release/README.md",
+    "https://docs.appsmith.com/connect-data/reference/querying-postgres"
+   ],
+   "github": {
+    "name_with_owner": "appsmithorg/appsmith",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v2.7.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "budibase": {
+   "que_es": "Plataforma de operaciones de código abierto para crear agentes, apps y automatizaciones, de Budibase Ltd. El núcleo tiene licencia GPL v3, las librerías de cliente y componentes MPL (las apps que construyes pueden tener la licencia que quieras) y las funciones de pago, Business Source License; publicó la versión 4.0 en 2026.",
+   "que_hace": "Centraliza solicitudes, aprobaciones e incidencias del equipo: sus agentes de IA entienden las peticiones y ejecutan flujos que crean registros, enrutan aprobaciones, actualizan apps y notifican. Permite construir apps internas sobre bases de datos y servicios, automatizaciones y gestión global de usuarios, grupos, SMTP y temas en instalaciones propias. Ofrece una API pública documentada.",
+   "como_lo_hace": "Es un monorepo gestionado con Lerna: el constructor es una aplicación Svelte, el cliente lee definiciones JSON en el navegador para generar las apps y el servidor es una aplicación Koa (Node.js) que sirve el constructor y la API. Se autoaloja con una imagen Docker única compatible con ARM, Docker Compose, Kubernetes o DigitalOcean, o se usa Budibase Cloud. Se conecta a bases externas como PostgreSQL además de sus tablas internas.",
+   "combina_con": [
+    {
+     "id": "supabase",
+     "motivo": "Budibase documenta la conexión a PostgreSQL; Supabase aporta ese PostgreSQL gestionado como fuente de datos (combinación por arquitectura).",
+     "orden_instalacion": "Supabase primero; conecta Budibase con un usuario de permisos limitados."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Las automatizaciones de Budibase pueden llamar a webhooks de n8n para integraciones que Budibase no trae (combinación por arquitectura).",
+     "orden_instalacion": "Crea y protege el webhook en n8n antes de configurarlo en Budibase."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Usar un modelo local para los agentes si Budibase permite un proveedor compatible con OpenAI en tu edición (combinación por arquitectura) [DATO NO VERIFICADO].",
+     "orden_instalacion": "Ollama primero; configura el proveedor de IA en Budibase si tu versión lo permite."
+    }
+   ],
+   "notas": "Alternativas (elige una): appsmith, tooljet, nocodb. Comprueba qué funciones de IA o administración caen en la licencia de pago.",
+   "fuentes": [
+    "https://github.com/Budibase/budibase/blob/master/README.md",
+    "https://docs.budibase.com/docs/postgresql"
+   ],
+   "github": {
+    "name_with_owner": "Budibase/budibase",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v4.0.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "whatsmeow": {
+   "que_es": "Librería de Go para la API multidispositivo de WhatsApp Web, creada por Tulir Asokan (autor de los puentes mautrix) con licencia MPL-2.0. Es un proyecto activo sin versiones etiquetadas; el soporte comunitario se hace en una sala de Matrix y en GitHub Discussions.",
+   "que_hace": "Permite enviar mensajes de texto y medios a chats privados y grupos, recibir todos los mensajes, gestionar grupos y sus eventos, unirse o crear enlaces de invitación, enviar y recibir indicadores de escritura y confirmaciones de entrega y lectura, y leer o escribir el estado de la app (contactos, chats fijados o silenciados). El envío de estados es experimental.",
+   "como_lo_hace": "Implementa el protocolo multidispositivo de WhatsApp Web directamente en Go, sin navegador, por lo que el programa se vincula como un dispositivo más. Se documenta en godoc (`go.mau.fi/whatsmeow`) con todos los métodos y tipos de eventos y un ejemplo básico. Se integra como dependencia de Go en tu propio servicio.",
+   "combina_con": [
+    {
+     "id": "n8n",
+     "motivo": "Un servicio en Go con whatsmeow reenvía eventos a un webhook de n8n y expone un endpoint para responder (combinación por arquitectura).",
+     "orden_instalacion": "Servicio Go primero con autenticación en su endpoint; después el flujo en n8n."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Generar respuestas con un modelo local desde el servicio Go (combinación por arquitectura).",
+     "orden_instalacion": "Ollama primero; llama a su API REST desde el manejador de mensajes."
+    },
+    {
+     "id": "chatwoot",
+     "motivo": "Llevar conversaciones a agentes humanos mediante la API de Chatwoot (combinación por arquitectura).",
+     "orden_instalacion": "Chatwoot primero con una bandeja de API; sincroniza desde tu servicio."
+    }
+   ],
+   "notas": "Cliente no oficial: no lo uses para mensajes masivos ni no solicitados.",
+   "fuentes": [
+    "https://github.com/tulir/whatsmeow/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "tulir/whatsmeow",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MPL-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

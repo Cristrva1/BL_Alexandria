@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Sistema de agentes autoalojado para automatizar tareas en línea, descrito por sus autores como una versión «hackeable» de IFTTT o Zapier en tu propio servidor. Es un proyecto comunitario veterano (creado en 2013), con licencia MIT y lanzamientos frecuentes en 2026.
+
+## ¿Qué hace?
+
+Crea agentes que leen la web, vigilan eventos y actúan en tu nombre: rastrean páginas y avisan por email cuando cambian, vigilan feeds RSS, buzones IMAP, webhooks y temas MQTT, y envían resúmenes programados. Publica en Slack, Telegram, Threads y otros servicios, envía SMS o llamadas con Twilio y mueve archivos entre Dropbox, S3, FTP y disco local. También resume, clasifica o traduce texto y genera imágenes o voz mediante APIs compatibles con OpenAI. Casos típicos: alertas de precios, monitoreo de páginas y boletines personales.
+
+## ¿Cómo lo hace?
+
+Cada agente crea y consume eventos que se propagan por un grafo dirigido; la lógica personalizada se escribe en JavaScript, plantillas Liquid o jq. Es una aplicación Ruby on Rails con un proceso web y un worker en segundo plano, respaldada por MySQL o PostgreSQL. La forma recomendada en producción es Docker Compose con las imágenes oficiales `ghcr.io/huginn/huginn` (todo en un contenedor) o `huginn-single-process` (un proceso por contenedor); la interfaz queda en el puerto 3000. Puede exponer sus propios feeds y endpoints JSON con los eventos recogidos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Los agentes de IA de Huginn hablan con APIs compatibles con OpenAI y Ollama ofrece un endpoint compatible, así que puedes resumir o clasificar eventos con un modelo local (combinación por arquitectura). | Ollama primero (puerto 11434). Si Huginn corre en Docker, apunta a la dirección del host y no a `localhost`. |
+| [litellm](litellm.md) | Pone varios proveedores de IA detrás de un único endpoint compatible con OpenAI, con claves virtuales y control de gasto para los agentes de Huginn (combinación por arquitectura). | LiteLLM proxy primero (puerto 4000); luego configura su URL base y una clave virtual en los agentes de IA. |
+| [coolify](coolify.md) | El README indica que los archivos Compose de Huginn funcionan en plataformas autoalojadas que despliegan desde Compose, como Coolify. | Coolify instalado en el servidor; después crea el servicio desde el Compose de Huginn y define la base de datos y el worker siempre activo. |
+| [changedetection.io](changedetection.md) | Changedetection vigila cambios visuales o de texto en páginas complejas y puede notificar por webhook a Huginn, que encadena acciones posteriores (combinación por arquitectura). | Independientes; crea en Huginn un agente receptor de webhooks y pon su URL como notificación en changedetection. Evita vigilar la misma página con los dos. |
+
+**Notas:** Alternativas (elige una): n8n, node-red.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v2026.11.09 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huginn/huginn/blob/master/README.md) · [2](https://docs.ollama.com/api/openai-compatibility)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Son agentes de eventos, no agentes que requieren un modelo de lenguaje |
 | Coste | Sin pago a un modelo en la ruta básica. La automatización básica no necesita LLM; alojamiento y servicios externos se pagan por separado |
 | Equipo | Preparación según la ruta elegida. Docker;  una fuente RSS pública para la prueba |
-
-Son agentes de eventos, no agentes que requieren un modelo de lenguaje
-
-## Qué puedes hacer con él
-
-Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú".
-
-## Por qué destaca
-
-Usos propuestos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes.
-
-## Cómo funciona
 
 Son agentes de eventos, no agentes que requieren un modelo de lenguaje
 
@@ -91,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker;  una fuente RSS pública para la prueba
 - **Etiquetas:** `automation` `ruby` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
 
 ## Alternativas (elige una)
 

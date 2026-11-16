@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plataforma para crear bases de datos en línea con interfaz de hoja de cálculo, alternativa abierta a Airtable. Desde hace un tiempo usa la Sustainable Use License (no es OSI); es un proyecto muy popular con versiones mensuales.
+
+## ¿Qué hace?
+
+Permite crear, leer, actualizar y borrar tablas, columnas y filas; ordenar, filtrar, agrupar y ocultar columnas; y trabajar con vistas de cuadrícula, galería, formulario, kanban y calendario, con vistas colaborativas o bloqueadas. Expone APIs REST y un SDK, y tiene una «App Store» de integraciones para notificaciones, almacenamiento y más. Casos típicos: CRM ligero, inventarios, seguimiento de proyectos y backends para automatizaciones.
+
+## ¿Cómo lo hace?
+
+Se ejecuta en Docker con SQLite (por defecto) o PostgreSQL (`NC_DB=pg://...`) guardando datos en un volumen; el panel queda en `http://localhost:8080/dashboard`. Para producción existe «Auto-upstall», un script que genera un docker-compose; también hay guías para Kubernetes y Helm. Ya no se publican binarios precompilados.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | n8n tiene un nodo NocoDB para crear, leer y actualizar registros desde flujos. | NocoDB primero y un token de API; después la credencial en n8n. |
+| [activepieces](activepieces.md) | Pieza oficial de NocoDB en Activepieces para usar la base como origen o destino de flujos. | NocoDB primero; luego la conexión en la pieza. |
+| [metabase](metabase.md) | Si NocoDB guarda los datos en PostgreSQL, Metabase puede conectarse a esa base para dashboards (combinación por arquitectura). | Usa NocoDB con PostgreSQL; conecta Metabase con un usuario de solo lectura. |
+
+**Notas:** Alternativas (elige una): appsmith, budibase.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 2026.10.1 (2026-10-29) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nocodb/nocodb/blob/develop/README.md) · [2](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb/) · [3](https://www.activepieces.com/pieces/nocodb)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El primer ejemplo Docker es de evaluación local; no reutilices los secretos de ejemplo para un despliegue público |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta básica no requiere LLM; hosting, funciones comerciales e integraciones tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Docker;  carpeta de datos;  navegador |
-
-El primer ejemplo Docker es de evaluación local; no reutilices los secretos de ejemplo para un despliegue público
-
-## Qué puedes hacer con él
-
-Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas.
-
-## Por qué destaca
-
-Usos propuestos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular.
-
-## Cómo funciona
 
 El primer ejemplo Docker es de evaluación local; no reutilices los secretos de ejemplo para un despliegue público
 
@@ -96,12 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker;  carpeta de datos;  navegador
 - **Etiquetas:** `data` `automation` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

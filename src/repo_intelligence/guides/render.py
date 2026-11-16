@@ -414,6 +414,19 @@ def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
         lines += ["## ¿Con qué otros repos se combina?", "", "| Repo | Para qué juntarlos | Orden de instalación y cuidados |", "|---|---|---|", *rows, ""]
     if repo.get("descripcion_notas"):
         lines += [f"**Notas:** {repo['descripcion_notas'].strip()}", ""]
+    github = repo.get("descripcion_github") or {}
+    if github:
+        estado = "⚠️ archivado (solo lectura)" if github.get("archived") else "activo"
+        partes = [f"Estado en GitHub: {estado}"]
+        if github.get("renamed_to"):
+            partes.append(f"renombrado a `{github['renamed_to']}`")
+        if github.get("pushed_at"):
+            partes.append(f"último push {github['pushed_at']}")
+        if github.get("latest_release"):
+            partes.append(f"última versión publicada {github['latest_release']}")
+        if github.get("license"):
+            partes.append(f"licencia declarada {github['license']}")
+        lines += [" · ".join(partes) + f" (consultado el {github.get('checked_at') or 'fecha por confirmar'}).", ""]
     review = repo.get("descripcion_revision") or {}
     sources = repo.get("descripcion_fuentes") or []
     if sources:

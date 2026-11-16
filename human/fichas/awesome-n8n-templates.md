@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección curada por la comunidad de más de 280 archivos de plantillas de flujo para n8n, actualizada en 2026. No es software ejecutable sino material de referencia; su licencia no está declarada de forma estándar en GitHub y el README contiene enlaces de afiliado.
+
+## ¿Qué hace?
+
+Ofrece flujos listos para importar organizados por plataforma: Gmail y email, Telegram, Google Drive y Sheets, WordPress, PDF y documentos, Discord, bases de datos, DevOps, Airtable, Notion, Slack, OpenAI y LLM, WhatsApp y redes sociales. Sirve para aprender patrones de n8n o partir de un ejemplo en lugar de empezar desde cero.
+
+## ¿Cómo lo hace?
+
+Cada plantilla es un archivo JSON de flujo de n8n que se importa con «Workflows → Import from File»; después hay que configurar las credenciales de cada servicio y probar el flujo. El propio README advierte que debes revisar, configurar y probar cada flujo antes de usarlo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Es la plataforma donde se importan y ejecutan las plantillas. | n8n en marcha primero; después importa las plantillas una a una. |
+| [n8n-mcp](n8n-mcp.md) | Sus herramientas `validate_workflow` y `n8n_autofix_workflow` detectan nodos desconocidos, versiones obsoletas o conexiones rotas en plantillas importadas. | Después de importar; valida antes de activar cualquier flujo. |
+| [n8n-skills](n8n-skills.md) | Enseña al agente patrones y sintaxis de expresiones de n8n para adaptar las plantillas a tu caso. | Requiere n8n-mcp configurado. |
+| [Self-hosted AI Starter Kit](self-hosted-ai-starter-kit.md) | Entorno local listo (n8n, Ollama, Qdrant) para probar las plantillas de IA sin pagar APIs, cambiando el nodo del modelo por Ollama (combinación por arquitectura). | Levanta el kit y después importa las plantillas. |
+
+**Notas:** Las plantillas son de terceros: revisa qué datos envían y a qué servicios antes de conectar credenciales reales.
+
+Estado en GitHub: activo · último push 2026-09-12 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md) · [2](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API |
 | Coste | El coste depende del proveedor o la ruta. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste |
 | Equipo | Preparación según la ruta elegida. n8n;  credenciales y dependencias de la plantilla elegida |
-
-Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
-
-## Qué puedes hacer con él
-
-Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram.
-
-## Cómo funciona
 
 Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
 
@@ -84,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** n8n;  credenciales y dependencias de la plantilla elegida
 - **Etiquetas:** `automation` `prompts`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [n8n-mcp](n8n-mcp.md) | 23.3k | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. |
-| [n8n-skills](n8n-skills.md) | 6.6k | Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas. |
 
 ## Enlaces
 

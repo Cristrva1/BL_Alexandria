@@ -107,7 +107,7 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `docker run -it -p 3000:3000 ghcr.io/huginn/huginn` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [novu](human/fichas/novu.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [coolify](human/fichas/coolify.md) · [changedetection.io](human/fichas/changedetection.md)<br>
 **Más:** [ficha completa](human/fichas/huginn.md) · [GitHub](https://github.com/huginn/huginn)
 
 #### 🔁 Kestra
@@ -123,7 +123,7 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
   -e KESTRA_PLUGINS_AUTO_INSTALL_ENABLED=true `
   kestra/kestra:latest-slim server local` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Apache Superset](human/fichas/superset.md)<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Apache Superset](human/fichas/superset.md) · [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/kestra.md) · [GitHub](https://github.com/kestra-io/kestra)
 
 #### 🧩 activepieces
@@ -132,7 +132,7 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://www.activepieces.com/docs/install/overview); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [novu](human/fichas/novu.md)<br>
+**Combina con:** [NocoDB](human/fichas/nocodb.md) · [Claude Code](human/fichas/claude-code.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/activepieces.md) · [GitHub](https://github.com/activepieces/activepieces)
 
 #### 🔁 Node-RED
@@ -141,6 +141,7 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://nodered.org/docs/getting-started/local); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Mostrar lecturas de un sensor recibidas por MQTT; Convertir un webhook en una secuencia de acciones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Ollama](human/fichas/ollama.md) · [Grafana](human/fichas/grafana.md)<br>
 **Más:** [ficha completa](human/fichas/node-red.md) · [GitHub](https://github.com/node-red/node-red)
 
 #### 🔁 Windmill
@@ -153,7 +154,7 @@ curl https://raw.githubusercontent.com/windmill-labs/windmill/main/.env -o .env
 
 docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un script de conciliación en una herramienta interna con formulario; Programar una consulta de datos como tarea recurrente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md) · [Polars](human/fichas/polars.md)<br>
 **Más:** [ficha completa](human/fichas/windmill.md) · [GitHub](https://github.com/windmill-labs/windmill)
 
 #### 🔁 Trigger.dev
@@ -162,7 +163,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://trigger.dev/docs/quick-start); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [FFmpeg](human/fichas/ffmpeg.md) · [playwright](human/fichas/playwright.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/trigger-dev.md) · [GitHub](https://github.com/triggerdotdev/trigger.dev)
 
 ### Ecosistema n8n
@@ -176,7 +177,7 @@ cd self-hosted-ai-starter-kit
 cp .env.example .env # you should update secrets and passwords inside
 docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [Ollama](human/fichas/ollama.md) · [Qdrant](human/fichas/qdrant.md)<br>
+**Combina con:** [n8n-mcp](human/fichas/n8n-mcp.md) · [Open WebUI](human/fichas/open-webui.md) · [Docling](human/fichas/docling.md) · [Awesome n8n Templates](human/fichas/awesome-n8n-templates.md)<br>
 **Más:** [ficha completa](human/fichas/self-hosted-ai-starter-kit.md) · [GitHub](https://github.com/n8n-io/self-hosted-ai-starter-kit)
 
 #### 🔁 Awesome n8n Templates
@@ -185,7 +186,7 @@ docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [n8n-mcp](human/fichas/n8n-mcp.md) · [n8n-skills](human/fichas/n8n-skills.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [n8n-mcp](human/fichas/n8n-mcp.md) · [n8n-skills](human/fichas/n8n-skills.md) · [Self-hosted AI Starter Kit](human/fichas/self-hosted-ai-starter-kit.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-n8n-templates.md) · [GitHub](https://github.com/enescingoz/awesome-n8n-templates)
 
 #### 🔌 n8n-mcp
@@ -204,7 +205,7 @@ docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br
 **Comando documentado:** `# Install directly as a Claude Code plugin
 /plugin install czlonkowski/n8n-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Corregir una expresión que no encuentra un campo de entrada; Elegir nodos y validar un flujo antes de activarlo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [n8n-mcp](human/fichas/n8n-mcp.md)<br>
+**Combina con:** [n8n-mcp](human/fichas/n8n-mcp.md) · [n8n](human/fichas/n8n.md) · [Claude Code](human/fichas/claude-code.md) · [Awesome n8n Templates](human/fichas/awesome-n8n-templates.md)<br>
 **Más:** [ficha completa](human/fichas/n8n-skills.md) · [GitHub](https://github.com/czlonkowski/n8n-skills)
 
 ### Apps internas y bases de datos no-code
@@ -219,7 +220,7 @@ docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br
   -p 8080:8080 \
   nocodb/nocodb:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [activepieces](human/fichas/activepieces.md) · [metabase](human/fichas/metabase.md)<br>
 **Más:** [ficha completa](human/fichas/nocodb.md) · [GitHub](https://github.com/nocodb/nocodb)
 
 #### 🧱 Appsmith
@@ -228,7 +229,7 @@ docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.appsmith.com/getting-started/setup/installation-guides); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [supabase](human/fichas/supabase.md) · [n8n](human/fichas/n8n.md) · [metabase](human/fichas/metabase.md)<br>
 **Más:** [ficha completa](human/fichas/appsmith.md) · [GitHub](https://github.com/appsmithorg/appsmith)
 
 #### 🧱 ToolJet
@@ -237,7 +238,7 @@ docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.tooljet.com/docs/setup/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/tooljet.md) · [GitHub](https://github.com/ToolJet/ToolJet)
 
 #### 🧱 Budibase
@@ -246,7 +247,7 @@ docker compose --profile cpu up` (comprobar los pasos completos en la ficha).<br
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.budibase.com); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [supabase](human/fichas/supabase.md) · [n8n](human/fichas/n8n.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/budibase.md) · [GitHub](https://github.com/Budibase/budibase)
 
 ---
@@ -3836,7 +3837,7 @@ Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de men
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install whatsapp-web.js` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un bot de atención en laboratorio; Conectar eventos WhatsApp Web a una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [chatwoot](human/fichas/chatwoot.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Ollama](human/fichas/ollama.md) · [chatwoot](human/fichas/chatwoot.md)<br>
 **Más:** [ficha completa](human/fichas/whatsapp-web-js.md) · [GitHub](https://github.com/wwebjs/whatsapp-web.js)
 
 #### 🌐 OpenWA
@@ -3853,7 +3854,7 @@ docker compose -f docker-compose.dev.yml up -d
 # API: http://localhost:2785/api
 # Swagger: http://localhost:2785/api/docs` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una integración de mensajería; Consultar estados desde un agente MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [evolution-api](human/fichas/evolution-api.md)<br>
+**Combina con:** [chatwoot](human/fichas/chatwoot.md) · [Typebot](human/fichas/typebot.md) · [n8n](human/fichas/n8n.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/openwa.md) · [GitHub](https://github.com/rmyndharis/OpenWA)
 
 #### 💬 Baileys
@@ -3862,7 +3863,7 @@ docker compose -f docker-compose.dev.yml up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/WhiskeySockets/Baileys/blob/master/.github/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender el flujo multidispositivo; Conectar eventos de una cuenta propia a una app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n](human/fichas/n8n.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/baileys.md) · [GitHub](https://github.com/WhiskeySockets/Baileys)
 
 #### 🧬 evolution-api
@@ -3880,7 +3881,7 @@ docker compose -f docker-compose.dev.yml up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/tulir/whatsmeow/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una integración de eventos en Go; Estudiar almacenamiento de sesiones WhatsApp Web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Ollama](human/fichas/ollama.md) · [chatwoot](human/fichas/chatwoot.md)<br>
 **Más:** [ficha completa](human/fichas/whatsmeow.md) · [GitHub](https://github.com/tulir/whatsmeow)
 
 #### 💬 WAHA
@@ -3889,7 +3890,7 @@ docker compose -f docker-compose.dev.yml up -d
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `docker run -it --rm -p 3000:3000/tcp --name waha devlikeapro/waha` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un webhook de mensajería; Evaluar un gateway HTTP para una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [chatwoot](human/fichas/chatwoot.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [chatwoot](human/fichas/chatwoot.md) · [Typebot](human/fichas/typebot.md)<br>
 **Más:** [ficha completa](human/fichas/waha.md) · [GitHub](https://github.com/devlikeapro/waha)
 
 #### 🤖 whatsapp-agentkit
@@ -3900,7 +3901,7 @@ docker compose -f docker-compose.dev.yml up -d
 cd whatsapp-agentkit
 bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un asistente de preguntas frecuentes; Diseñar una consulta de horarios en un número de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n-mcp](human/fichas/n8n-mcp.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [chatwoot](human/fichas/chatwoot.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/whatsapp-agentkit.md) · [GitHub](https://github.com/Hainrixz/whatsapp-agentkit)
 
 ### Chatbots y asistentes conversacionales
@@ -3911,7 +3912,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.typebot.io/self-hosting/get-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md) · [evolution-api](human/fichas/evolution-api.md)<br>
+**Combina con:** [evolution-api](human/fichas/evolution-api.md) · [chatwoot](human/fichas/chatwoot.md) · [n8n](human/fichas/n8n.md) · [OpenWA](human/fichas/openwa.md)<br>
 **Más:** [ficha completa](human/fichas/typebot.md) · [GitHub](https://github.com/baptisteArno/typebot.io)
 
 #### 🤖 Botpress
@@ -3920,7 +3921,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm install -g @botpress/cli # for npm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [chatwoot](human/fichas/chatwoot.md) · [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Odoo](human/fichas/odoo.md) · [cal.diy](human/fichas/cal-diy.md)<br>
 **Más:** [ficha completa](human/fichas/botpress.md) · [GitHub](https://github.com/botpress/botpress)
 
 ### Comunidades,chat y llamadas
@@ -3931,7 +3932,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/fluxerapp/fluxer/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Open-Generative-AI](human/fichas/open-generative-ai.md)<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/fluxer.md) · [GitHub](https://github.com/fluxerapp/fluxer)
 
 ---

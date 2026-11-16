@@ -229,7 +229,7 @@ def build_catalog(project_root: Path) -> dict:
         combos = [dict(item) for item in detail.get("combina_con") or [] if isinstance(item, dict) and item.get("id")]
         if combos:
             merged["combina_con"] = combos
-        for field in ("que_es", "que_hace", "como_lo_hace", "descripcion_notas", "descripcion_fuentes", "descripcion_revision"):
+        for field in ("que_es", "que_hace", "como_lo_hace", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github"):
             if detail.get(field):
                 merged[field] = detail[field]
         command, confidence, note = derive_install({**merged, "repo": merged["repo_url"]})

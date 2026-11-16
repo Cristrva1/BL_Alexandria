@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Librería de Go para la API multidispositivo de WhatsApp Web, creada por Tulir Asokan (autor de los puentes mautrix) con licencia MPL-2.0. Es un proyecto activo sin versiones etiquetadas; el soporte comunitario se hace en una sala de Matrix y en GitHub Discussions.
+
+## ¿Qué hace?
+
+Permite enviar mensajes de texto y medios a chats privados y grupos, recibir todos los mensajes, gestionar grupos y sus eventos, unirse o crear enlaces de invitación, enviar y recibir indicadores de escritura y confirmaciones de entrega y lectura, y leer o escribir el estado de la app (contactos, chats fijados o silenciados). El envío de estados es experimental.
+
+## ¿Cómo lo hace?
+
+Implementa el protocolo multidispositivo de WhatsApp Web directamente en Go, sin navegador, por lo que el programa se vincula como un dispositivo más. Se documenta en godoc (`go.mau.fi/whatsmeow`) con todos los métodos y tipos de eventos y un ejemplo básico. Se integra como dependencia de Go en tu propio servicio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Un servicio en Go con whatsmeow reenvía eventos a un webhook de n8n y expone un endpoint para responder (combinación por arquitectura). | Servicio Go primero con autenticación en su endpoint; después el flujo en n8n. |
+| [Ollama](ollama.md) | Generar respuestas con un modelo local desde el servicio Go (combinación por arquitectura). | Ollama primero; llama a su API REST desde el manejador de mensajes. |
+| [chatwoot](chatwoot.md) | Llevar conversaciones a agentes humanos mediante la API de Chatwoot (combinación por arquitectura). | Chatwoot primero con una bandeja de API; sincroniza desde tu servicio. |
+
+**Notas:** Cliente no oficial: no lo uses para mensajes masivos ni no solicitados.
+
+Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tulir/whatsmeow/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere IA; infraestructura y funciones añadidas tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Go; almacenamiento de sesión; cuenta propia de prueba |
-
-Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta
-
-## Qué puedes hacer con él
-
-Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web.
-
-## Por qué destaca
-
-Usos propuestos: Construir una integración de eventos en Go; Estudiar almacenamiento de sesiones WhatsApp Web.
-
-## Cómo funciona
 
 Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Go; almacenamiento de sesión; cuenta propia de prueba
 - **Etiquetas:** `whatsapp` `go` `golang` `whatsapp-web`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

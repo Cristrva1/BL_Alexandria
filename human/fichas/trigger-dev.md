@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plataforma de código abierto (Apache 2.0) para crear flujos de IA y tareas en segundo plano en TypeScript. Ofrece un servicio gestionado y guías oficiales de autoalojamiento; publica versiones con frecuencia (serie 4.x).
+
+## ¿Qué hace?
+
+Ejecuta tareas largas sin límites de tiempo (a diferencia de AWS Lambda o Vercel), con reintentos, colas, idempotencia, cron duraderos de hasta un año y escalado elástico. Permite pausar tareas hasta que una persona apruebe o rechace, transmitir respuestas de LLM en tiempo real a tu app y ver trazas y logs de cada ejecución con alertas de error. Casos típicos: agentes de IA, procesamiento de video o PDF, scraping con navegador y trabajos programados.
+
+## ¿Cómo lo hace?
+
+Las tareas se escriben en tu propio código con el SDK `@trigger.dev/sdk` (función `task`) y se despliegan a la nube de Trigger.dev o a una instancia propia. Las «build extensions» añaden paquetes de sistema a la imagen de ejecución, por ejemplo FFmpeg, Playwright o scripts Python. Cada ejecución tiene etiquetas, ramas de vista previa integradas con Vercel y Git, y una API Realtime para suscribirse al estado. El autoalojamiento se hace con Docker Compose o con su chart de Helm para Kubernetes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI SDK (Vercel)](vercel-ai.md) | Trigger.dev documenta ejemplos con el AI SDK de Vercel para ejecutar llamadas de IA largas como tareas duraderas y transmitir el resultado. | Mismo proyecto TypeScript: instala el SDK de Trigger.dev y el AI SDK; las claves del proveedor van en las variables de entorno de Trigger. |
+| [FFmpeg](ffmpeg.md) | La build extension oficial de FFmpeg permite procesar audio y video dentro de las tareas sin límites de tiempo. | Añade la extensión en `trigger.config` antes de desplegar; no hace falta instalar FFmpeg en tu máquina. |
+| [playwright](playwright.md) | La build extension de Playwright instala navegadores en la imagen de ejecución para scraping o pruebas desde tareas en segundo plano. | Declara la extensión en la configuración y despliega; cuida la memoria de cada ejecución. |
+| [langfuse](langfuse.md) | Registra trazas y costes de las llamadas a LLM hechas dentro de las tareas (combinación por arquitectura; no encontré guía oficial conjunta). | Langfuse primero para obtener claves; luego instrumenta el código de las tareas con su SDK. |
+
+**Notas:** Alternativas (elige una): windmill, kestra.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v4.8.5 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/triggerdotdev/trigger.dev/blob/main/README.md) · [2](https://trigger.dev/docs/guides/examples/vercel-ai-sdk) · [3](https://trigger.dev/docs/config/extensions/ffmpeg) · [4](https://trigger.dev/docs/config/extensions/playwright)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es infraestructura de tareas duraderas; no incluye por sí misma un modelo de IA |
 | Coste | El coste depende del proveedor o la ruta. El servicio y la infraestructura tienen su propio consumo; el LLM solo se paga si tu tarea lo llama |
 | Equipo | Preparación según la ruta elegida. Proyecto TypeScript;  entorno y cuenta o despliegue indicado por la guía |
-
-Es infraestructura de tareas duraderas; no incluye por sí misma un modelo de IA
-
-## Qué puedes hacer con él
-
-Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript.
-
-## Por qué destaca
-
-Usos propuestos: Procesar en segundo plano un archivo subido por un usuario; Reintentar una tarea de generación cuando falla el proveedor.
-
-## Cómo funciona
 
 Es infraestructura de tareas duraderas; no incluye por sí misma un modelo de IA
 
@@ -85,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto TypeScript;  entorno y cuenta o despliegue indicado por la guía
 - **Etiquetas:** `automation` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [AI SDK (Vercel)](vercel-ai.md) | 28k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 

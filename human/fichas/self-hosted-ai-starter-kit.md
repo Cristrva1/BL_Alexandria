@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plantilla de Docker Compose de código abierto (Apache 2.0) mantenida por el equipo de n8n para levantar en minutos un entorno local de IA y low-code. No es una aplicación nueva: reúne servicios existentes ya configurados para funcionar juntos.
+
+## ¿Qué hace?
+
+Arranca n8n autoalojado junto con Ollama para modelos locales, Qdrant como base vectorial y PostgreSQL. Sirve para prototipar agentes de IA que agendan citas, resumir PDF de la empresa sin enviar datos fuera, crear bots de Slack más útiles o analizar documentos financieros privados a bajo coste. Es un punto de partida para pruebas, no un despliegue endurecido para producción.
+
+## ¿Cómo lo hace?
+
+Se clona el repositorio, se copia `.env.example` a `.env` (cambiando secretos y contraseñas) y se ejecuta `docker compose` con el perfil adecuado: `gpu-nvidia`, `gpu-amd` en Linux o solo CPU. En Mac con Apple Silicon la GPU no se expone a Docker, así que se recomienda CPU o ejecutar Ollama de forma nativa y ajustar `OLLAMA_HOST`. Incluye una carpeta compartida para que los flujos de n8n lean archivos locales y un flujo de demostración.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n-mcp](n8n-mcp.md) | Permite que un agente de código cree, valide y depure flujos dentro del n8n del kit mediante su API pública. | Levanta el kit, activa la Public API de n8n y crea una API key; después conecta n8n-mcp. |
+| [Open WebUI](open-webui.md) | Añade una interfaz de chat que reutiliza el Ollama del kit para conversar con los mismos modelos (combinación por arquitectura). | Kit primero; inicia Open WebUI con `OLLAMA_BASE_URL` apuntando al Ollama del kit y en un puerto distinto de 5678. |
+| [Docling](docling.md) | Convierte PDF y documentos de oficina en Markdown limpio antes de vectorizarlos en el Qdrant del kit (combinación por arquitectura). | Instala Docling o docling-serve aparte y llámalo desde n8n por HTTP o desde un script. |
+| [Awesome n8n Templates](awesome-n8n-templates.md) | Colección de flujos importables para aprender patrones sobre el n8n del kit. | Después de levantar el kit; importa, revisa credenciales y prueba cada plantilla antes de activarla. |
+
+**Notas:** Ya incluye n8n, Ollama, Qdrant y PostgreSQL: no instales esos servicios por separado en la misma máquina o chocarán los puertos (5678, 11434, 6333, 5432). Cambia todas las contraseñas de `.env`.
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía |
 | Equipo | Preparación según la ruta elegida. Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado |
-
-El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
-
-## Qué puedes hacer con él
-
-Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.
-
-## Por qué destaca
-
-Usos propuestos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial.
-
-## Cómo funciona
 
 El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
 
@@ -96,14 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado
 - **Etiquetas:** `automation` `local` `rag` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 
 ## Enlaces
 

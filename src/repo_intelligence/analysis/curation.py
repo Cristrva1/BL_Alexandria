@@ -444,7 +444,7 @@ def merge_into_indices(project_root: Path, rid: str, compact: dict[str, Any], de
         if (not new_val or (isinstance(new_val, list) and not new_val)) and old_val:
             clean_det[field] = old_val
     # The 4-section description is curated by hand (curation/descripciones-4s/); never drop it on re-enrich.
-    for field in ("que_es", "que_hace", "como_lo_hace", "combina_con", "descripcion_notas", "descripcion_fuentes", "descripcion_revision"):
+    for field in ("que_es", "que_hace", "como_lo_hace", "combina_con", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github"):
         if field in existing_det and field not in clean_det:
             clean_det[field] = existing_det[field]
     if existing_det.get("combina_con"):

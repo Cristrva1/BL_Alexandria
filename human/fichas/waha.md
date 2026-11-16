@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+WAHA («WhatsApp HTTP API») es una API REST de WhatsApp que instalas en tu propio servidor, de devlike.pro, con licencia Apache 2.0. Desde la versión 2026.6 las funciones de la antigua edición «Plus» están incluidas en la imagen principal.
+
+## ¿Qué hace?
+
+Permite iniciar sesiones de WhatsApp escaneando un QR, enviar textos y medios, recibir eventos por webhook y gestionar sesiones desde un panel web. Sirve para bots, notificaciones y conectar WhatsApp con CRM o plataformas de automatización. Incluye documentación interactiva Swagger para probar cada endpoint.
+
+## ¿Cómo lo hace?
+
+Se distribuye como imagen Docker (`devlikeapro/waha`) y se arranca con `docker run -p 3000:3000`; en ese puerto quedan el panel, la API y Swagger (por ejemplo `POST /api/sendText`). Su documentación describe tres motores intercambiables: WEBJS (navegador), NOWEB (WebSocket) y GOWS (implementación en Go). Está escrito en TypeScript; el único requisito declarado es tener Docker.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | WAHA documenta una integración con n8n (nodo comunitario) para enviar mensajes y reaccionar a eventos de WhatsApp. | WAHA primero con una sesión activa y clave de API; después instala el nodo en n8n. |
+| [chatwoot](chatwoot.md) | WAHA documenta una app de Chatwoot para atender las conversaciones de WhatsApp desde su bandeja. | Chatwoot primero; luego configura la app de Chatwoot en WAHA con la URL y el token de la cuenta. |
+| [Typebot](typebot.md) | Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura). | Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de n8n. |
+
+**Notas:** Alternativas (elige una): evolution-api, whatsapp-web-js, baileys. Es una conexión no oficial: evita mensajes masivos o no solicitados. Protege la API con clave antes de exponer el puerto 3000.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 2026.10.1 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/devlikeapro/waha/blob/core/README.md) · [2](https://waha.devlike.pro/docs/how-to/engines/) · [3](https://waha.devlike.pro/docs/integrations/n8n/) · [4](https://waha.devlike.pro/docs/apps/chatwoot/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El contenedor --rm del ejemplo es una prueba temporal; para conservar sesiones sigue persistencia y seguridad de la guía |
 | Coste | El coste depende del proveedor o la ruta. El núcleo y las modalidades Plus tienen condiciones distintas; hosting y servicios conectados cuestan aparte |
 | Equipo | Preparación según la ruta elegida. Docker; cuenta propia de prueba; configuración de auth y volumen según guía |
-
-El contenedor --rm del ejemplo es una prueba temporal; para conservar sesiones sigue persistencia y seguridad de la guía
-
-## Qué puedes hacer con él
-
-API REST de WhatsApp en un contenedor Docker, con varios motores y panel web.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar un webhook de mensajería; Evaluar un gateway HTTP para una app propia.
-
-## Cómo funciona
 
 El contenedor --rm del ejemplo es una prueba temporal; para conservar sesiones sigue persistencia y seguridad de la guía
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; cuenta propia de prueba; configuración de auth y volumen según guía
 - **Etiquetas:** `whatsapp` `automation` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
 
 ## Alternativas (elige una)
 

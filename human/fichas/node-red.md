@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta de programación low-code para aplicaciones basadas en eventos, proyecto de la OpenJS Foundation con licencia Apache 2.0. Existe desde 2013 y sigue publicando versiones (serie 5.x en 2026).
+
+## ¿Qué hace?
+
+Conecta dispositivos, APIs y servicios en línea dibujando flujos en el navegador. Es muy usado en IoT, domótica, integración de APIs y automatizaciones ligeras; su biblioteca comunitaria ofrece miles de nodos, flujos compartidos y colecciones listas para importar.
+
+## ¿Cómo lo hace?
+
+Es una aplicación Node.js: se instala con `npm install -g node-red`, se lanza con `node-red` y el editor web queda en el puerto 1880. Cada flujo es un grafo de nodos que intercambian mensajes JavaScript; los flujos se guardan como JSON y se amplían con nodos de la comunidad instalados por npm. También hay imágenes de Docker y guías para Raspberry Pi y la nube en su documentación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Home Assistant](home-assistant.md) | El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar. | Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED. |
+| [Ollama](ollama.md) | El nodo comunitario `node-red-contrib-ollama` llama a modelos locales desde un flujo, por ejemplo para clasificar mensajes de sensores o de chat. | Ollama primero con el modelo descargado; luego el nodo desde la paleta. |
+| [Grafana](grafana.md) | Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales). | Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana. |
+
+**Notas:** Alternativas (elige una): n8n, huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 5.0.9 (2026-10-21) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/node-red/node-red/blob/master/README.md) · [2](https://flows.nodered.org/node/node-red-contrib-home-assistant-websocket) · [3](https://flows.nodered.org/node/node-red-contrib-ollama)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. En Windows la guía indica omitir sudo; la instalación es de Node-RED, no de un modelo |
 | Coste | Sin pago a un modelo en la ruta básica. El flujo básico no necesita una API de IA; sensores, hosting y servicios conectados pueden tener costes |
 | Equipo | Preparación según la ruta elegida. Una versión compatible de Node.js;  navegador web |
-
-En Windows la guía indica omitir sudo; la instalación es de Node-RED, no de un modelo
-
-## Qué puedes hacer con él
-
-Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js.
-
-## Por qué destaca
-
-Usos propuestos: Mostrar lecturas de un sensor recibidas por MQTT; Convertir un webhook en una secuencia de acciones.
-
-## Cómo funciona
 
 En Windows la guía indica omitir sudo; la instalación es de Node-RED, no de un modelo
 

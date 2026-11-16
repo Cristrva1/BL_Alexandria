@@ -11893,7 +11893,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "novu"
+        "nocodb",
+        "claude-code",
+        "litellm"
       ],
       "alt": [
         "n8n"
@@ -12010,7 +12012,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "supabase",
+        "n8n",
+        "metabase"
       ],
       "alt": [
         "tooljet",
@@ -12129,7 +12133,8 @@
       "combines_with": [
         "n8n",
         "n8n-mcp",
-        "n8n-skills"
+        "n8n-skills",
+        "self-hosted-ai-starter-kit"
       ],
       "alt": []
     },
@@ -12243,7 +12248,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "supabase",
+        "n8n",
+        "ollama"
       ],
       "alt": [
         "appsmith",
@@ -12360,7 +12367,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "novu"
+        "ollama",
+        "litellm",
+        "coolify",
+        "changedetection"
       ],
       "alt": [
         "n8n",
@@ -12485,7 +12495,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "duckdb",
-        "superset"
+        "superset",
+        "claude-code",
+        "ollama"
       ],
       "alt": [
         "windmill",
@@ -12900,8 +12912,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Corregir una expresión que no encuentra un campo de entrada; Elegir nodos y validar un flujo antes de activarlo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "n8n-mcp",
         "n8n",
-        "n8n-mcp"
+        "claude-code",
+        "awesome-n8n-templates"
       ],
       "alt": []
     },
@@ -13015,7 +13029,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "n8n",
+        "activepieces",
+        "metabase"
       ],
       "alt": [
         "appsmith",
@@ -13129,7 +13145,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mostrar lecturas de un sensor recibidas por MQTT; Convertir un webhook en una secuencia de acciones",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "home-assistant",
+        "ollama",
+        "grafana"
+      ],
       "alt": [
         "n8n",
         "huginn"
@@ -13248,9 +13268,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n",
-        "ollama",
-        "qdrant"
+        "n8n-mcp",
+        "open-webui",
+        "docling",
+        "awesome-n8n-templates"
       ],
       "alt": []
     },
@@ -13369,6 +13390,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "codex",
         "n8n"
       ],
       "alt": [
@@ -13487,6 +13510,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "vercel-ai",
+        "ffmpeg",
+        "playwright",
         "langfuse"
       ],
       "alt": [
@@ -13610,7 +13635,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Convertir un script de conciliación en una herramienta interna con formulario; Programar una consulta de datos como tarea recurrente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langfuse"
+        "duckdb",
+        "claude-code",
+        "polars"
       ],
       "alt": [
         "n8n",
@@ -53027,7 +53054,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "evolution-api",
-        "n8n"
+        "n8n",
+        "litellm"
       ],
       "alt": [
         "whatsapp-web-js",
@@ -53145,8 +53173,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "chatwoot",
-        "n8n"
+        "n8n",
+        "odoo",
+        "cal.diy"
       ],
       "alt": []
     },
@@ -53382,7 +53411,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-generative-ai"
+        "n8n",
+        "ollama",
+        "coolify"
       ],
       "alt": []
     },
@@ -53499,8 +53530,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una integración de mensajería; Consultar estados desde un agente MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "chatwoot",
+        "typebot",
         "n8n",
-        "evolution-api"
+        "claude-code"
       ],
       "alt": []
     },
@@ -53615,8 +53648,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "evolution-api",
+        "chatwoot",
         "n8n",
-        "evolution-api"
+        "openwa"
       ],
       "alt": []
     },
@@ -53731,7 +53766,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
-        "chatwoot"
+        "chatwoot",
+        "typebot"
       ],
       "alt": [
         "evolution-api",
@@ -53853,8 +53889,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un asistente de preguntas frecuentes; Diseñar una consulta de horarios en un número de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "evolution-api",
-        "n8n-mcp"
+        "claude-code",
+        "chatwoot",
+        "coolify"
       ],
       "alt": []
     },
@@ -53970,6 +54007,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "n8n",
+        "ollama",
         "chatwoot"
       ],
       "alt": [
@@ -54088,7 +54126,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir una integración de eventos en Go; Estudiar almacenamiento de sesiones WhatsApp Web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "n8n",
+        "ollama",
+        "chatwoot"
       ],
       "alt": []
     },

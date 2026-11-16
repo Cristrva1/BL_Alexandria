@@ -58,8 +58,10 @@ def test_ficha_renders_four_sections(tmp_path):
         assert heading in text
     assert "[n8n-mcp](n8n-mcp.md)" in text
     assert "## Cómo funciona" not in text  # el texto genérico se sustituye
-    legacy = (tmp_path / "human" / "fichas" / "activepieces.md").read_text(encoding="utf8")
-    assert "## ¿Qué es?" not in legacy  # sin datos curados, la ficha no cambia
+    pending = [r for r in load_catalog(ROOT).repos if not r.get("combina_con") and not r.get("alias_of") and r.get("doc")]
+    if pending:  # sin datos curados, la ficha conserva el formato anterior
+        legacy = (tmp_path / pending[0]["doc"]).read_text(encoding="utf8")
+        assert "## ¿Qué es?" not in legacy
 
 
 def test_web_catalog_exposes_four_sections():
@@ -78,3 +80,18 @@ def test_reenrich_keeps_curated_sections(tmp_path):
     merged = json.loads((tmp_path / "INDICE_IA.detalle.json").read_text(encoding="utf8"))["repos"]["demo"]
     assert merged["que_es"] == "Algo" and merged["combina_con"][0]["id"] == "otro"
     assert merged["combines_with"] == ["otro"]
+
+
+def test_combination_symmetry_report():
+    """Aviso, no fallo, hasta completar la cobertura del catálogo."""
+    import importlib.util
+    import warnings
+
+    spec = importlib.util.spec_from_file_location("simetria", ROOT / "scripts" / "report_combina_simetria.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    detail = json.loads((ROOT / "INDICE_IA.detalle.json").read_text(encoding="utf8"))
+    pairs = module.asymmetries(detail)
+    if pairs:
+        warnings.warn(f"{len(pairs)} combinaciones asimétricas (ver scripts/report_combina_simetria.py)", UserWarning)
+    assert all(a != b for a, b in pairs)

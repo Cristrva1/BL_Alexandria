@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un flujo con un disparador de prueba y una acción de texto
 **Qué comprobar:** El historial del flujo muestra la entrada y la salida de la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `novu`
+**Combina con:** `nocodb`, `claude-code`, `litellm`
 **Alternativas (elige una):** `n8n`
 
 ## `appsmith`
@@ -62,7 +62,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade una tabla a una página y asóciala a una consulta de datos ficticios
 **Qué comprobar:** La tabla se actualiza al ejecutar la consulta y muestra los registros esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `supabase`, `n8n`, `metabase`
 **Alternativas (elige una):** `tooljet`, `budibase`, `nocodb`
 
 ## `awesome-n8n-templates`
@@ -93,7 +93,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Importa una plantilla JSON en un flujo desactivado y revisa sus nodos
 **Qué comprobar:** El lienzo muestra los pasos y puedes identificar qué credenciales faltan
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-mcp`, `n8n-skills`
+**Combina con:** `n8n`, `n8n-mcp`, `n8n-skills`, `self-hosted-ai-starter-kit`
 
 ## `budibase`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,docker
@@ -123,7 +123,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una aplicación con un formulario y una tabla de registros
 **Qué comprobar:** Un envío del formulario aparece en la tabla de la aplicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `supabase`, `n8n`, `ollama`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
 
 ## `huginn`
@@ -154,7 +154,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un agente RSS y observa los eventos que produce
 **Qué comprobar:** Aparece un evento con el título y enlace de una publicación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `novu`
+**Combina con:** `ollama`, `litellm`, `coolify`, `changedetection`
 **Alternativas (elige una):** `n8n`, `node-red`
 
 ## `kestra`
@@ -192,7 +192,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un flujo de ejemplo y abre sus logs en la interfaz de Kestra
 **Qué comprobar:** La ejecución muestra su estado final y los mensajes de las tareas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `superset`
+**Combina con:** `duckdb`, `superset`, `claude-code`, `ollama`
 **Alternativas (elige una):** `windmill`, `trigger-dev`
 
 ## `n8n`
@@ -313,7 +313,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide revisar una expresión de un flujo pequeño sin desplegarlo
 **Qué comprobar:** El agente identifica la skill pertinente y propone una corrección justificable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `n8n-mcp`
+**Combina con:** `n8n-mcp`, `n8n`, `claude-code`, `awesome-n8n-templates`
 
 ## `nocodb`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=data,automation,docker
@@ -347,7 +347,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una tabla con nombre y estado e introduce dos registros de prueba
 **Qué comprobar:** Puedes editar los registros y filtrarlos por su estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `n8n`, `activepieces`, `metabase`
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `node-red`
@@ -378,6 +378,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Une un nodo Inject con un nodo Debug y pulsa el disparador
 **Qué comprobar:** El panel Debug muestra el mensaje que inyectaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`, `ollama`, `grafana`
 **Alternativas (elige una):** `n8n`, `huginn`
 
 ## `self-hosted-ai-starter-kit`
@@ -411,7 +412,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre n8n y ejecuta el flujo local incluido con una pregunta sencilla
 **Qué comprobar:** El flujo devuelve una respuesta usando el servicio Ollama del stack
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `ollama`, `qdrant`
+**Combina con:** `n8n-mcp`, `open-webui`, `docling`, `awesome-n8n-templates`
 
 ## `tooljet`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=ui,automation,docker
@@ -441,7 +442,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una página con una tabla y enlázala a un pequeño conjunto de datos
 **Qué comprobar:** La tabla muestra los datos y puedes revisar la consulta que los obtiene
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `claude-code`, `codex`, `n8n`
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `trigger-dev`
@@ -472,7 +473,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta la tarea hello-world del README con un mensaje de prueba
 **Qué comprobar:** El panel muestra la ejecución y el mensaje en los logs
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vercel-ai`, `langfuse`
+**Combina con:** `vercel-ai`, `ffmpeg`, `playwright`, `langfuse`
 **Alternativas (elige una):** `windmill`, `kestra`
 
 ## `windmill`
@@ -507,5 +508,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un script que reciba un nombre y devuelva un saludo
 **Qué comprobar:** La ejecución guarda el resultado del script y sus logs
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`
+**Combina con:** `duckdb`, `claude-code`, `polars`
 **Alternativas (elige una):** `n8n`, `kestra`, `trigger-dev`

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plataforma low-code de código abierto (Apache 2.0) para desarrollar, desplegar y mantener aplicaciones internas, de Appsmith Inc. Se usa en su nube o autoalojada y publica versiones con frecuencia.
+
+## ¿Qué hace?
+
+Permite construir dashboards, paneles de administración, vistas «customer 360», automatización de TI y herramientas de gestión de servicios conectando bases de datos y APIs con componentes visuales y JavaScript. Ofrece plantillas y un portal comunitario, y presenta Appsmith Agents para integrar modelos de IA con datos privados dentro de las herramientas del equipo.
+
+## ¿Cómo lo hace?
+
+Se instala principalmente con Docker (imagen `appsmith/appsmith-ce`) o Kubernetes siguiendo sus guías; también puede usarse Appsmith Cloud. GitHub muestra un monorepo con TypeScript y JavaScript en el frontend y Java en el backend. Las apps se conectan a fuentes como PostgreSQL mediante consultas configuradas en el editor [DATO NO VERIFICADO: base de datos interna que usa la imagen].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [supabase](supabase.md) | Appsmith consulta PostgreSQL de forma nativa y Supabase ofrece un PostgreSQL gestionado con autenticación, así que sirve como backend de la app interna (combinación por arquitectura). | Supabase primero; crea un usuario con permisos mínimos y conéctalo como fuente PostgreSQL en Appsmith. |
+| [n8n](n8n.md) | Un botón de Appsmith llama a un webhook de n8n para tareas que tocan muchos servicios (combinación por arquitectura). | Crea el webhook en n8n, protégelo con un encabezado secreto y configúralo como API en Appsmith. |
+| [metabase](metabase.md) | Appsmith cubre los formularios y acciones; Metabase, los análisis y dashboards sobre la misma base (combinación por arquitectura). | Conecta ambos a la base con usuarios distintos: Metabase solo lectura. |
+
+**Notas:** Alternativas (elige una): tooljet, budibase, nocodb.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.7.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/appsmithorg/appsmith/blob/release/README.md) · [2](https://docs.appsmith.com/connect-data/reference/querying-postgres)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo |
 | Coste | El coste depende del proveedor o la ruta. El autoalojamiento, los planes y las funciones de IA tienen condiciones distintas; consulta la edición que vas a usar |
 | Equipo | Preparación según la ruta elegida. Cuenta o instancia de prueba;  una fuente de datos de demostración |
-
-La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo
-
-## Qué puedes hacer con él
-
-Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API.
-
-## Cómo funciona
 
 La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta o instancia de prueba;  una fuente de datos de demostración
 - **Etiquetas:** `ui` `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

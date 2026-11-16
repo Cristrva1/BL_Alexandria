@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plataforma de operaciones de código abierto para crear agentes, apps y automatizaciones, de Budibase Ltd. El núcleo tiene licencia GPL v3, las librerías de cliente y componentes MPL (las apps que construyes pueden tener la licencia que quieras) y las funciones de pago, Business Source License; publicó la versión 4.0 en 2026.
+
+## ¿Qué hace?
+
+Centraliza solicitudes, aprobaciones e incidencias del equipo: sus agentes de IA entienden las peticiones y ejecutan flujos que crean registros, enrutan aprobaciones, actualizan apps y notifican. Permite construir apps internas sobre bases de datos y servicios, automatizaciones y gestión global de usuarios, grupos, SMTP y temas en instalaciones propias. Ofrece una API pública documentada.
+
+## ¿Cómo lo hace?
+
+Es un monorepo gestionado con Lerna: el constructor es una aplicación Svelte, el cliente lee definiciones JSON en el navegador para generar las apps y el servidor es una aplicación Koa (Node.js) que sirve el constructor y la API. Se autoaloja con una imagen Docker única compatible con ARM, Docker Compose, Kubernetes o DigitalOcean, o se usa Budibase Cloud. Se conecta a bases externas como PostgreSQL además de sus tablas internas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [supabase](supabase.md) | Budibase documenta la conexión a PostgreSQL; Supabase aporta ese PostgreSQL gestionado como fuente de datos (combinación por arquitectura). | Supabase primero; conecta Budibase con un usuario de permisos limitados. |
+| [n8n](n8n.md) | Las automatizaciones de Budibase pueden llamar a webhooks de n8n para integraciones que Budibase no trae (combinación por arquitectura). | Crea y protege el webhook en n8n antes de configurarlo en Budibase. |
+| [Ollama](ollama.md) | Usar un modelo local para los agentes si Budibase permite un proveedor compatible con OpenAI en tu edición (combinación por arquitectura) [DATO NO VERIFICADO]. | Ollama primero; configura el proveedor de IA en Budibase si tu versión lo permite. |
+
+**Notas:** Alternativas (elige una): appsmith, tooljet, nocodb. Comprueba qué funciones de IA o administración caen en la licencia de pago.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v4.0.0 (2026-11-10) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Budibase/budibase/blob/master/README.md) · [2](https://docs.budibase.com/docs/postgresql)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Las licencias del servidor y de las bibliotecas cliente difieren; comprueba la distribución concreta |
 | Coste | El coste depende del proveedor o la ruta. Las funciones de alojamiento y los proveedores de IA dependen del plan y despliegue; la app básica no exige un LLM |
 | Equipo | Preparación según la ruta elegida. Cuenta o instancia Budibase;  datos de ejemplo para una aplicación |
-
-Las licencias del servidor y de las bibliotecas cliente difieren; comprueba la distribución concreta
-
-## Qué puedes hacer con él
-
-Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos.
-
-## Por qué destaca
-
-Usos propuestos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA.
-
-## Cómo funciona
 
 Las licencias del servidor y de las bibliotecas cliente difieren; comprueba la distribución concreta
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta o instancia Budibase;  datos de ejemplo para una aplicación
 - **Etiquetas:** `automation` `agents` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

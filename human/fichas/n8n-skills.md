@@ -10,6 +10,31 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Paquete de skills para Claude Code (también instalable como plugin de Codex) que enseña a un agente a construir flujos de n8n de calidad de producción usando el servidor n8n-mcp. Es del mismo autor que n8n-mcp, con licencia MIT y versiones frecuentes.
+
+## ¿Qué hace?
+
+Aporta 14 skills complementarias: sintaxis de expresiones `{{}}`, uso experto de las herramientas de n8n-mcp, patrones de flujo, interpretación de errores de validación, configuración de nodos, nodos de código en JavaScript y Python, manejo de errores, datos binarios, subflujos, agentes de IA, varias instancias y autoalojamiento de n8n. Evita que el agente use mal las herramientas MCP o se quede en bucles de validación.
+
+## ¿Cómo lo hace?
+
+Cada skill se activa por su descripción cuando la tarea coincide. En la instalación como plugin de Claude Code o Codex añade una capa de control: una skill «router» cargada al inicio de cada sesión por un hook `SessionStart` y hooks `PreToolUse` que recuerdan la skill adecuada antes de llamadas de alto impacto a n8n-mcp. En Claude.ai se pueden subir skills sueltas, pero sin hooks.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n-mcp](n8n-mcp.md) | Requisito declarado: las skills enseñan a usar sus herramientas y algunas funciones necesitan n8n-mcp 2.97.0 o superior. | Instala y configura n8n-mcp primero; después el plugin de skills. |
+| [n8n](n8n.md) | Es la plataforma final donde se crean y validan los flujos. | n8n con la Public API activada antes de conectar n8n-mcp. |
+| [Claude Code](claude-code.md) | Cliente principal: la instalación como plugin activa hooks y router. | Claude Code instalado; después agrega el plugin según la sección de instalación del README. |
+| [Awesome n8n Templates](awesome-n8n-templates.md) | Plantillas reales para que el agente las revise y adapte aplicando las skills de patrones y validación (combinación por arquitectura). | Opcional, después de tener el resto funcionando. |
+
+Estado en GitHub: activo · último push 2026-10-24 · última versión publicada v1.37.1 (2026-10-24) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/czlonkowski/n8n-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +48,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README documenta hooks para Claude Code y Codex; la portabilidad a otros hosts no prueba su instalación en Antigravity |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones consumen el agente anfitrión; n8n, conectores y modelos usados por el flujo tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Claude Code o cliente compatible;  n8n-mcp configurado para las herramientas |
-
-El README documenta hooks para Claude Code y Codex; la portabilidad a otros hosts no prueba su instalación en Antigravity
-
-## Qué puedes hacer con él
-
-Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas.
-
-## Por qué destaca
-
-Usos propuestos: Corregir una expresión que no encuentra un campo de entrada; Elegir nodos y validar un flujo antes de activarlo.
-
-## Cómo funciona
 
 El README documenta hooks para Claude Code y Codex; la portabilidad a otros hosts no prueba su instalación en Antigravity
 
@@ -93,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code o cliente compatible;  n8n-mcp configurado para las herramientas
 - **Etiquetas:** `skills` `automation`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [n8n-mcp](n8n-mcp.md) | 23.3k | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. |
 
 ## Enlaces
 
