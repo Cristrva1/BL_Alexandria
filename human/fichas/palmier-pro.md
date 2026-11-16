@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Palmier Pro, editor de vídeo para macOS con IA y MCP, de Palmier. El código hasta la v0.7.6 (rama `last-gpl-source`) se publicó con GPLv3; las versiones posteriores son binarios propietarios sin código publicado. Tiene ~15k estrellas (v0.12.1).
+
+## ¿Qué hace?
+
+Combina un editor de línea de tiempo con generación por IA integrada y un agente en la app. Mientras está abierto expone un servidor MCP en `http://127.0.0.1:19789/mcp` para que Claude, Codex o Cursor creen y editen en la línea de tiempo.
+
+## ¿Cómo lo hace?
+
+Requiere macOS 26 (Tahoe) en Apple Silicon. Se conecta con `claude mcp add --transport http palmier-pro …` o `codex mcp add palmier-pro --url …`. El repositorio solo aloja releases binarias y el código GPL histórico.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Conexión MCP documentada. | Abre la app y añade el servidor MCP HTTP. |
+| [Codex CLI](codex.md) | Conexión MCP documentada. | Ejecuta `codex mcp add palmier-pro --url …`. |
+| [FFmpeg](ffmpeg.md) | Preparar medios antes de importarlos. (combinación por arquitectura) | Convierte los formatos no soportados con FFmpeg. |
+
+**Notas:** Sin alternativas declaradas. Pregunta de pertenencia al catálogo: el producto actual es propietario.
+
+Estado en GitHub: activo · último push 2026-11-02 · última versión publicada v0.12.1 (2026-11-02) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/palmier-io/palmier-pro/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El código GPL histórico no concede automáticamente la licencia de los binarios actuales; MCP local HTTP está documentado para Claude y Codex |
 | Coste | El coste depende del proveedor o la ruta. Las versiones posteriores a 0.7.6 son binarias propietarias; agente y modelos tienen costes propios según ruta |
 | Equipo | Preparación según la ruta elegida. Apple Silicon; macOS 26; binario y licencia de su versión; cliente opcional |
-
-El código GPL histórico no concede automáticamente la licencia de los binarios actuales; MCP local HTTP está documentado para Claude y Codex
-
-## Qué puedes hacer con él
-
-Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales.
-
-## Por qué destaca
-
-Usos propuestos: Preparar cortes con un agente; Revisar una secuencia desde herramientas externas.
-
-## Cómo funciona
 
 El código GPL histórico no concede automáticamente la licencia de los binarios actuales; MCP local HTTP está documentado para Claude y Codex
 

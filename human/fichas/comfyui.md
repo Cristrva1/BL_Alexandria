@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+ComfyUI, motor modular de creación con IA basado en grafos de nodos, mantenido por Comfy Org. Licencia GPL-3.0. Es uno de los proyectos de IA generativa más populares (~147k estrellas, v0.45.0).
+
+## ¿Qué hace?
+
+Permite construir flujos de generación y edición de imagen, vídeo, audio y 3D conectando nodos, con soporte nativo para modelos abiertos recientes (SD 1.5/SDXL/SD3.5, Flux.1/Flux.2, Qwen Image, Wan 2.1/2.2, LTX-Video, HunyuanVideo…). Carga checkpoints, VAE, LoRA, ControlNet y upscalers, y solo reejecuta las partes del grafo que cambian. Los «Partner nodes» opcionales dan acceso de pago a modelos cerrados.
+
+## ¿Cómo lo hace?
+
+Se usa con la app de escritorio (recomendada), la versión portable de Windows, `comfy-cli` o instalación manual con PyTorch para CUDA, ROCm, XPU o Apple Silicon. Funciona sin conexión; `--offline` desactiva los nodos de API de pago. El ecosistema de nodos personalizados es enorme, pero de calidad y seguridad variables.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FLUX.2](flux2.md) | Tutoriales oficiales de Comfy para FLUX.2. | Descarga los pesos de FLUX.2 y carga el flujo de ejemplo. |
+| [Krita AI Diffusion](krita-ai-diffusion.md) | El plugin de Krita usa ComfyUI como backend. | Instala ComfyUI con las extensiones requeridas y conéctalo desde Krita. |
+| [Real-ESRGAN](real-esrgan.md) | Cargar modelos ESRGAN como upscalers. | Copia los pesos en `models/upscale_models`. |
+
+**Notas:** Alternativas (elige una): wan2gp. Revisa los nodos personalizados antes de instalarlos: ejecutan código arbitrario.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.45.0 (2026-11-10) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Comfy-Org/ComfyUI/blob/master/README.md) · [2](https://docs.comfy.org) · [3](https://docs.comfy.org/tutorials/flux/flux-2-dev)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El modo offline desactiva nodos API opcionales; importar un workflow puede exigir modelos o nodos adicionales |
 | Coste | El coste depende del proveedor o la ruta. La ruta local usa tu equipo; Cloud y nodos API opcionales son de pago; los pesos tienen licencias propias |
 | Equipo | Preparación según la ruta elegida. Python o distribución elegida; modelo; RAM y GPU según workflow |
-
-El modo offline desactiva nodos API opcionales; importar un workflow puede exigir modelos o nodos adicionales
-
-## Qué puedes hacer con él
-
-Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos.
-
-## Por qué destaca
-
-Usos propuestos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo.
-
-## Cómo funciona
 
 El modo offline desactiva nodos API opcionales; importar un workflow puede exigir modelos o nodos adicionales
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python o distribución elegida; modelo; RAM y GPU según workflow
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Real-ESRGAN](real-esrgan.md) | 37.5k | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. |
 
 ## Alternativas (elige una)
 

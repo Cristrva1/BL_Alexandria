@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+LosslessCut, app de escritorio para editar vídeo y audio sin pérdida mediante FFmpeg, de @mifi. Licencia GPL-2.0. Es madura (~46k estrellas, v3.70.2) y la mantiene una sola persona.
+
+## ¿Qué hace?
+
+Recorta, corta, une y remuxa vídeo, audio y subtítulos sin recodificar, muy rápido y sin pérdida de calidad. También extrae pistas, cambia metadatos, hace capturas y detecta escenas o silencios. Es útil para hacer un primer corte de material grande de cámara, GoPro o dron.
+
+## ¿Cómo lo hace?
+
+Es una app Electron que usa FFmpeg, para Windows, macOS y Linux. Las descargas oficiales son las de GitHub y las tiendas de Mac y Microsoft (de pago en las tiendas); el README advierte de copias en otras webs.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Es una interfaz gráfica de FFmpeg. | Viene incluido en la app. |
+| [yt-dlp](yt-dlp.md) | Recortar vídeos descargados. (combinación por arquitectura) | Descarga con yt-dlp y abre el archivo en LosslessCut. |
+| [whisperX](whisperx.md) | Subtitular los fragmentos recortados. (combinación por arquitectura) | Exporta el audio y transcríbelo. |
+| [MoviePy](moviepy.md) | Automatizar en Python lo que se hace a mano en la app. (combinación por arquitectura) | Usa MoviePy para lotes repetitivos. |
+
+**Notas:** Sin alternativas declaradas. Descarga solo desde las fuentes oficiales.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.70.2 (2026-10-28) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mifi/lossless-cut/blob/master/README.md) · [2](https://losslesscut.app/docs/faq)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo |
 | Coste | El coste depende del proveedor o la ruta. Los ejecutables manuales se ofrecen gratis; tiendas pueden cobrar para apoyar el proyecto; no usa modelo |
 | Equipo | Preparación según la ruta elegida. Distribución para tu sistema; archivo compatible; espacio de salida |
-
-Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo
-
-## Qué puedes hacer con él
-
-App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad.
-
-## Por qué destaca
-
-Usos propuestos: Quitar una parte de una grabación; Separar o unir medios compatibles.
-
-## Cómo funciona
 
 Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo
 
@@ -85,14 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Distribución para tu sistema; archivo compatible; espacio de salida
 - **Etiquetas:** `video` `audio` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
 ## Enlaces
 

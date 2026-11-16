@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+OpenCut, editor de vídeo libre para web, escritorio y móvil. Licencia MIT. Es muy popular (~99k estrellas, v0.3.0) y se está reescribiendo desde cero.
+
+## ¿Qué hace?
+
+La nueva versión promete una API del editor, plugins de terceros, una base Rust común para escritorio, móvil y navegador, servidor MCP para agentes, modo headless y scripting. Mientras tanto, la versión utilizable es opencut-classic, que también se prueba en opencut.app.
+
+## ¿Cómo lo hace?
+
+El desarrollo usa proto (moonrepo) para fijar herramientas. Para editar hoy conviene usar opencut-classic o la versión web.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LosslessCut](lossless-cut.md) | Recortes sin recodificar antes de editar. (combinación por arquitectura) | Corta el material bruto con LosslessCut y edita en OpenCut. |
+| [OBS Studio](obs-studio.md) | Grabar el material que luego se edita. (combinación por arquitectura) | Graba con OBS e importa en OpenCut. |
+| [whisperX](whisperx.md) | Generar subtítulos con marcas de tiempo. (combinación por arquitectura) | Transcribe con WhisperX e importa los subtítulos. |
+
+**Notas:** Sin alternativas declaradas. En reescritura: el código del repo principal aún no es un editor utilizable.
+
+Estado en GitHub: activo · último push 2026-09-24 · última versión publicada v0.3.0 (2026-04-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenCut-app/OpenCut/blob/main/README.md) · [2](https://opencut.app)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El proyecto se reescribe; la versión clásica web y la rama principal no tienen necesariamente las mismas funciones ni instalación |
 | Coste | Sin pago a un modelo en la ruta básica. La edición básica no exige IA; hosting y recursos propios son independientes |
 | Equipo | Preparación según la ruta elegida. Navegador para versión clásica o herramientas de la nueva rama; clip de prueba |
-
-El proyecto se reescribe; la versión clásica web y la rama principal no tienen necesariamente las mismas funciones ni instalación
-
-## Qué puedes hacer con él
-
-Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.
-
-## Por qué destaca
-
-Usos propuestos: Evaluar una alternativa de edición abierta; Estudiar la arquitectura de un editor con plugins.
-
-## Cómo funciona
 
 El proyecto se reescribe; la versión clásica web y la rama principal no tienen necesariamente las mismas funciones ni instalación
 
@@ -84,14 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador para versión clásica o herramientas de la nueva rama; clip de prueba
 - **Etiquetas:** `video` `ui` `typescript` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LosslessCut](lossless-cut.md) | 46k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. |
-| [OBS Studio](obs-studio.md) | 79.6k | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. |
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+OBS Studio, software libre para grabar y transmitir vídeo en directo. Licencia GPL-2.0 o posterior. Es muy maduro (~80k estrellas, 33.0.1).
+
+## ¿Qué hace?
+
+Captura, compone, codifica, graba y transmite vídeo con escenas, fuentes, mezclador de audio, filtros y transiciones. Admite plugins, scripting y control remoto por WebSocket. Funciona en Windows, macOS y Linux.
+
+## ¿Cómo lo hace?
+
+Se instala con los instaladores oficiales o paquetes de la distribución. Está escrito en C/C++ con Qt y aprovecha codificadores por hardware (NVENC, AMF, QuickSync, Apple VT).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LosslessCut](lossless-cut.md) | Recortar grabaciones sin recodificar. (combinación por arquitectura) | Graba con OBS y recorta con LosslessCut. |
+| [OpenCut](opencut.md) | Editar las grabaciones. (combinación por arquitectura) | Importa las grabaciones en el editor. |
+| [faster-whisper](faster-whisper.md) | Subtitular las grabaciones. (combinación por arquitectura) | Transcribe el audio exportado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 33.0.1 (2026-10-29) · licencia declarada GPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsproject/obs-studio/blob/master/README.rst) · [2](https://obsproject.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado |
 | Coste | Sin pago a un modelo en la ruta básica. No usa un modelo ni necesita API de IA; streaming, almacenamiento y equipos son costes externos |
 | Equipo | Preparación según la ruta elegida. Instalador oficial; permisos de captura; micrófono opcional; disco |
-
-Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado
-
-## Qué puedes hacer con él
-
-App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real.
-
-## Por qué destaca
-
-Usos propuestos: Grabar una explicación de pantalla; Preparar escenas para una transmisión.
-
-## Cómo funciona
 
 Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado
 
@@ -86,14 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador oficial; permisos de captura; micrófono opcional; disco
 - **Etiquetas:** `video` `audio` `ui` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LosslessCut](lossless-cut.md) | 46k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. |
-| [OpenCut](opencut.md) | 98.4k | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. |
-| [faster-whisper](faster-whisper.md) | 26.8k | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
 
 ## Enlaces
 

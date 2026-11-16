@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Diffusers, la librería de Hugging Face para modelos de difusión preentrenados. Licencia Apache-2.0. Es muy madura (~35k estrellas, v0.43.0).
+
+## ¿Qué hace?
+
+Ofrece pipelines listos para generar imágenes, vídeo y audio, schedulers intercambiables y modelos como bloques para crear sistemas propios. Soporta inferencia y entrenamiento (incluido LoRA), cuantización y descarga de modelos del Hub.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install --upgrade diffusers[torch]` (también hay soporte para Flax). Funciona sobre PyTorch en GPU, CPU o Apple Silicon y descarga pesos desde Hugging Face Hub.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FLUX.2](flux2.md) | Pipeline oficial de FLUX.2. | Carga el modelo con el pipeline FLUX.2. |
+| [PEFT](peft.md) | Carga y entrenamiento de LoRA mediante PEFT. | Instala peft y usa `load_lora_weights`. |
+| [Transformers](transformers.md) | Codificadores de texto y componentes compartidos. | Se instala como dependencia de muchos pipelines. |
+| [cosmos](cosmos.md) | Probar modelos de mundo de NVIDIA con pipelines de difusión. (combinación por arquitectura) | Consulta si existe pipeline para el checkpoint elegido. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.43.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/huggingface/diffusers/blob/main/README.md) · [2](https://huggingface.co/docs/diffusers/index) · [3](https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux2)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Instalar Diffusers no descarga todos los modelos; elige el pipeline y comprueba su licencia y hardware |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no obliga a API de pago; pesos, GPU y servicios alojados tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Python y PyTorch; modelo y pipeline compatibles; GPU o memoria suficientes |
-
-Instalar Diffusers no descarga todos los modelos; elige el pipeline y comprueba su licencia y hardware
-
-## Qué puedes hacer con él
-
-Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código.
-
-## Por qué destaca
-
-Usos propuestos: Integrar generación de imágenes en Python; Experimentar con modelos de video o audio compatibles.
-
-## Cómo funciona
 
 Instalar Diffusers no descarga todos los modelos; elige el pipeline y comprueba su licencia y hardware
 
@@ -93,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y PyTorch; modelo y pipeline compatibles; GPU o memoria suficientes
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [cosmos](cosmos.md) | 12.4k | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
 
 ## Enlaces
 

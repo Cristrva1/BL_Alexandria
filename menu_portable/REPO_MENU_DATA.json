@@ -39847,6 +39847,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "flux2",
+        "krita-ai-diffusion",
         "real-esrgan"
       ],
       "alt": [
@@ -39964,6 +39966,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Integrar generación de imágenes en Python; Experimentar con modelos de video o audio compatibles",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "flux2",
+        "peft",
+        "transformers",
         "cosmos"
       ],
       "alt": []
@@ -40080,7 +40085,8 @@
       "avoid_if": "Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo",
       "combines_with": [
         "comfyui",
-        "diffusers"
+        "diffusers",
+        "real-esrgan"
       ],
       "alt": []
     },
@@ -40194,7 +40200,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Retocar una ilustración por regiones; Organizar variantes de una producción visual",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "diffusers"
+        "diffusers",
+        "flux2",
+        "real-esrgan"
       ],
       "alt": [
         "krita-ai-diffusion"
@@ -40315,7 +40323,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Completar un fondo en una ilustración; Usar un boceto para guiar una imagen",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "comfyui"
+        "comfyui",
+        "flux2",
+        "real-esrgan"
       ],
       "alt": [
         "invokeai"
@@ -40434,7 +40444,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar imagen local desde una interfaz; Comparar una ruta local con un servicio de video remoto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "remotion"
+        "wan2gp",
+        "remotion",
+        "ffmpeg"
       ],
       "alt": []
     },
@@ -41386,6 +41398,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Quitar una parte de una grabación; Separar o unir medios compatibles",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ffmpeg",
         "yt-dlp",
         "whisperx",
         "moviepy"
@@ -41861,7 +41874,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar una entrega de animación; Comparar versiones de un efecto visual",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "blender",
+        "ffmpeg",
+        "comfyui"
+      ],
       "alt": []
     },
     {
@@ -41983,7 +42000,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar cortes con un agente; Revisar una secuencia desde herramientas externas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "ffmpeg"
+      ],
       "alt": []
     },
     {
@@ -42221,7 +42242,7 @@
       "combines_with": [
         "yt-dlp",
         "gpt-sovits",
-        "whisperx"
+        "ffmpeg"
       ],
       "alt": [
         "omnivoice-studio"

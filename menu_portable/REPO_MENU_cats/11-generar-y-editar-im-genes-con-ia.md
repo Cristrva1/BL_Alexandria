@@ -62,7 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un workflow mínimo y conecta modelo, prompt, sampler y guardado
 **Qué comprobar:** Obtienes una imagen y puedes identificar los nodos que la produjeron
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `real-esrgan`
+**Combina con:** `flux2`, `krita-ai-diffusion`, `real-esrgan`
 **Alternativas (elige una):** `wan2gp`
 
 ## `diffusers`
@@ -93,7 +93,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un pipeline sencillo y fija semilla y tamaño para producir una imagen de prueba
 **Qué comprobar:** Puedes guardar imagen y configuración del pipeline
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `cosmos`
+**Combina con:** `flux2`, `peft`, `transformers`, `cosmos`
 
 ## `flux2`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=image,python
@@ -125,7 +125,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una imagen pequeña con FLUX.2 [klein] 4B desde la CLI interactiva
 **Qué comprobar:** Obtienes la imagen y sabes qué variante y qué licencia usaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`
+**Combina con:** `comfyui`, `diffusers`, `real-esrgan`
 
 ## `invokeai`
 role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
@@ -155,7 +155,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un canvas, genera una zona pequeña y conserva la imagen original en otra capa
 **Qué comprobar:** Puedes comparar la zona editada y sus parámetros
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`
+**Combina con:** `diffusers`, `flux2`, `real-esrgan`
 **Alternativas (elige una):** `krita-ai-diffusion`
 
 ## `krita-ai-diffusion`
@@ -186,7 +186,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Selecciona una región de una imagen propia y genera una modificación en otra capa
 **Qué comprobar:** Puedes aceptar o descartar la capa manteniendo el original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`
+**Combina con:** `comfyui`, `flux2`, `real-esrgan`
 **Alternativas (elige una):** `invokeai`
 
 ## `open-generative-ai`
@@ -217,7 +217,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** En escritorio configura un modelo local pequeño y genera una imagen con el selector Local
 **Qué comprobar:** Puedes identificar el motor local y comprobar que no se usó el proveedor remoto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`
+**Combina con:** `wan2gp`, `remotion`, `ffmpeg`
 
 ## `real-esrgan`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python

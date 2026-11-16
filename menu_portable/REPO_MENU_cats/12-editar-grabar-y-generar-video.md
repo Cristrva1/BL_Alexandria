@@ -186,7 +186,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Marca dos puntos de un video propio y exporta el segmento sin recodificar
 **Qué comprobar:** Compruebas duración, comienzo, final y pistas del clip
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `yt-dlp`, `whisperx`, `moviepy`
+**Combina con:** `ffmpeg`, `yt-dlp`, `whisperx`, `moviepy`
 
 ## `moneyprinterturbo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
@@ -308,6 +308,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre dos versiones de una toma y compara fotogramas en el mismo punto
 **Qué comprobar:** Puedes observar diferencias de imagen sin desalinear el tiempo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `ffmpeg`, `comfyui`
 
 ## `palmier-pro`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,ai-video,claude,macos,mcp,seedance2,swift,video-editor
@@ -337,6 +338,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una copia de un proyecto y consulta su timeline mediante MCP antes de editar
 **Qué comprobar:** El agente identifica pistas y clips del proyecto correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `ffmpeg`
 
 ## `short-video-factory`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux
@@ -396,7 +398,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Procesa un clip corto con voz clara y revisa transcripción, traducción y tiempos antes de doblar
 **Qué comprobar:** Los subtítulos coinciden con las palabras y puedes corregir errores antes de exportar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `yt-dlp`, `gpt-sovits`, `whisperx`
+**Combina con:** `yt-dlp`, `gpt-sovits`, `ffmpeg`
 **Alternativas (elige una):** `omnivoice-studio`
 
 ## `wan2-2`
