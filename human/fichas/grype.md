@@ -30,6 +30,12 @@ Binario instalable con el script oficial; salida tabular/JSON para CI.
 | [Semgrep](semgrep.md) | Semgrep encuentra bugs de código; Grype, CVE de dependencias de imagen. | Usa ambos en el pipeline. |
 | [Checkov](checkov.md) | Checkov endurece IaC; Grype la imagen resultante. | Checkov → build → Grype. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OSV-Scanner](osv-scanner.md) · [Syft](syft.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.121.3 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anchore/grype#readme)</sub>

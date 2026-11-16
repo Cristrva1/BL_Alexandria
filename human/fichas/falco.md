@@ -31,6 +31,12 @@ Se instala como paquete, DaemonSet o binario según la guía oficial; las reglas
 | [CrowdSec](crowdsec.md) | CrowdSec bloquea IPs; Falco detecta abuso dentro del host. | Complementa red (CrowdSec) con runtime (Falco). |
 | [Grype](grype.md) | Combinación recíproca: Grype lo enlaza como «Grype endurece la imagen; Falco vigila el runtime». | Orden indicado desde Grype: Grype en CI; Falco en el nodo. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[kube-bench](kube-bench.md)
+
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada 0.45.2 (2026-10-29) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/falcosecurity/falco#readme) · [2](https://falco.org)</sub>

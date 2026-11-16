@@ -33,6 +33,12 @@ Backend en Go con frontend React; se despliega con Docker Compose (PostgreSQL y 
 | [NetExec](netexec.md) | Combinación recíproca: NetExec lo enlaza como «Los hallazgos de NetExec orientan la recolección para BloodHound». | Orden indicado desde NetExec: Enumera con NetExec; importa el grafo en BloodHound. |
 | [PEASS-ng](peass-ng.md) | Combinación recíproca: PEASS-ng lo enlaza como «En AD, BloodHound da rutas de dominio; PEASS el host». | Orden indicado desde PEASS-ng: Usa ambos niveles. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Certipy](certipy.md) · [mimikatz](mimikatz.md) · [Rubeus](rubeus.md)
+
 **Notas:** Ejecutar colectores en un dominio genera actividad detectable; coordínalo con el equipo de seguridad.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v9.9.2 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-16).

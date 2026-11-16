@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**836 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**860 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -23,7 +23,7 @@
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 23
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 44
-16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 68
+16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 92
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 16
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 17
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 31
@@ -808,18 +808,27 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [hashcat](human/fichas/hashcat.md) | Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [ffuf](human/fichas/ffuf.md) | Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) | Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [dirsearch](human/fichas/dirsearch.md) | Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP Juice Shop](human/fichas/juice-shop.md) | Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Gobuster](human/fichas/gobuster.md) | Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [John the Ripper (jumbo)](human/fichas/john.md) | Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Wireshark](human/fichas/wireshark.md) | Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [WPScan](human/fichas/wpscan.md) | Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago). | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [feroxbuster](human/fichas/feroxbuster.md) | Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Reconocimiento y superficie de ataque
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [masscan](human/fichas/masscan.md) | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [RustScan](human/fichas/rustscan.md) | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Amass](human/fichas/amass.md) | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT y sondeos activos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [subfinder](human/fichas/subfinder.md) | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Nmap](human/fichas/nmap.md) | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [httpx](human/fichas/httpx.md) | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Naabu](human/fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [interactsh](human/fichas/interactsh.md) | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [dnsx](human/fichas/dnsx.md) | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Explotación, C2 y post-explotación
 
@@ -831,13 +840,20 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [Atomic Red Team](human/fichas/atomic-red-team.md) | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Sliver](human/fichas/sliver.md) | Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [CALDERA](human/fichas/caldera.md) | Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Empire](human/fichas/empire.md) | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Ligolo-ng](human/fichas/ligolo-ng.md) | Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Mythic](human/fichas/mythic.md) | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 
 ### Active Directory y red interna
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [mimikatz](human/fichas/mimikatz.md) | Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en laboratorios aislados. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Impacket](human/fichas/impacket.md) | Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Active Directory. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Responder](human/fichas/responder.md) | Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [NetExec](human/fichas/netexec.md) | Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Rubeus](human/fichas/rubeus.md) | Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Certipy](human/fichas/certipy.md) | Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [BloodHound Community Edition](human/fichas/bloodhound.md) | Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria). | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ### Detección, SIEM e IDS
@@ -849,7 +865,9 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [CrowdSec](human/fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Sigma](human/fichas/sigma.md) | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Zeek](human/fichas/zeek.md) | Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Arkime](human/fichas/arkime.md) | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [Suricata](human/fichas/suricata.md) | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Security Onion](human/fichas/securityonion.md) | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 
 ### Nube, contenedores e IaC
 
@@ -858,8 +876,13 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [Trivy](human/fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Prowler](human/fichas/prowler.md) | Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Private Cloud son de pago. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Grype](human/fichas/grype.md) | Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OSV-Scanner](human/fichas/osv-scanner.md) | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Syft](human/fichas/syft.md) | Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scanners. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Falco](human/fichas/falco.md) | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [Checkov](human/fichas/checkov.md) | SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y secretos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [kube-bench](human/fichas/kube-bench.md) | Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Cosign](human/fichas/cosign.md) | Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Pacu](human/fichas/pacu.md) | Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ### Análisis y pruebas con agentes
 
@@ -903,6 +926,7 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 |---|---|---|---|---|
 | [Volatility 3](human/fichas/volatility3.md) | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Velociraptor](human/fichas/velociraptor.md) | EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Hayabusa](human/fichas/hayabusa.md) | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Inteligencia de amenazas
 

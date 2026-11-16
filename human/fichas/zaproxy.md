@@ -31,6 +31,12 @@ Escrito en Java; se instala con los instaladores multiplataforma, paquetes o im�
 | [Nuclei](nuclei.md) | Nuclei comprueba CVE concretos mientras ZAP analiza la lógica y las respuestas de la aplicación (combinación por arquitectura). | Ejecuta ambos escaneos sobre el mismo entorno de pruebas. |
 | [PayloadsAllTheThings](payloadsallthethings.md) | Combinación recíproca: PayloadsAllTheThings lo enlaza como «Usa payloads del repo dentro de ZAP». | Orden indicado desde PayloadsAllTheThings: Define el alcance en ZAP; consulta PayloadsAllTheThings. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP Juice Shop](juice-shop.md)
+
 **Notas:** No hay alternativa equivalente abierta en el catálogo (Burp Suite es propietario); mitmproxy es un proxy de depuración, no un escáner.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.17.0 (2025-12-15) · licencia declarada Apache-2.0 (consultado el 2026-11-16).

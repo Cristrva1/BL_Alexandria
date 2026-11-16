@@ -30,6 +30,12 @@ Solo hace falta clonar o descomprimir; no es un binario.
 | [hashcat](hashcat.md) | Diccionarios de SecLists alimentan ataques de contraseña en lab. | SecLists primero; Hashcat con la lista autorizada. |
 | [Nuclei](nuclei.md) | Algunas plantillas Nuclei usan wordlists externas. | Configura la ruta a SecLists. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[dirsearch](dirsearch.md) · [feroxbuster](feroxbuster.md) · [Gobuster](gobuster.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2026.2 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/danielmiessler/SecLists#readme) · [2](https://owasp.org/www-project-seclists/)</sub>

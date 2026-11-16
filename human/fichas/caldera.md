@@ -30,6 +30,12 @@ Docker (`ghcr.io/apache/caldera`) o `git clone --recursive` + pip; se opera desd
 | [Wazuh](wazuh.md) | Las operaciones deben producir alertas en Wazuh. | Wazuh monitoriza; CALDERA ataca el lab. |
 | [Metasploit Framework](metasploit.md) | Algunas habilidades se apoyan en el mismo tipo de post-explotación que Metasploit. | Elige CALDERA para orquestación ATT&CK; Metasploit para exploits puntuales. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Mythic](mythic.md)
+
 Estado en GitHub: activo · último push 2026-10-12 · última versión publicada 5.3.0 (2025-04-24) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/caldera#readme) · [2](https://caldera.apache.org/)</sub>

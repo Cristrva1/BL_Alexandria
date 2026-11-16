@@ -30,6 +30,12 @@ Se instala con pipx desde GitHub; el binario `nxc` opera por protocolo (smb, lda
 | [BloodHound Community Edition](bloodhound.md) | Los hallazgos de NetExec orientan la recolección para BloodHound. | Enumera con NetExec; importa el grafo en BloodHound. |
 | [Nmap](nmap.md) | Nmap delimita hosts Windows antes de NetExec. | Nmap primero; NetExec sobre el alcance. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Responder](responder.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.5.1 (2026-02-23) · licencia declarada BSD-2-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Pennyw0rth/NetExec#readme) · [2](https://netexec.wiki/)</sub>

@@ -33,9 +33,9 @@ Escrito en Ruby; se recomienda instalar con los instaladores nightly oficiales e
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[CALDERA](caldera.md) · [Impacket](impacket.md) · [PEASS-ng](peass-ng.md) · [Sliver](sliver.md)
+[CALDERA](caldera.md) · [Empire](empire.md) · [Impacket](impacket.md) · [Ligolo-ng](ligolo-ng.md) · [PEASS-ng](peass-ng.md) · [Sliver](sliver.md)
 
 **Notas:** Mantén Metasploit en una VM o laboratorio aislado; los antivirus suelen detectar sus cargas útiles.
 

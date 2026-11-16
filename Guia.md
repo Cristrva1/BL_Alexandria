@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **836 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **860 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -27,7 +27,7 @@ Las **836 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 44 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
-| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 68 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
+| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 92 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 16 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 17 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 31 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
@@ -4433,12 +4433,29 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [hashcat](human/fichas/hashcat.md) | Tu objetivo encaja con estos ejemplos: auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados; recuperar la contraseña de un archivo propio olvidado | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [John the Ripper (jumbo)](human/fichas/john.md) | Tu objetivo encaja con estos ejemplos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo | necesitas una instalación sin cuentas ni dependencias adicionales |
 
+**⚖️ ¿Cuál elegir? — ffuf, dirsearch, Gobuster, feroxbuster**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [ffuf](human/fichas/ffuf.md) | Tu objetivo encaja con estos ejemplos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [dirsearch](human/fichas/dirsearch.md) | Tu objetivo encaja con estos ejemplos: enumerar paneles admin en un lab; fuzzear extensiones de ficheros | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Gobuster](human/fichas/gobuster.md) | Tu objetivo encaja con estos ejemplos: descubrir rutas ocultas en una app de lab; enumerar vhosts de un dominio propio | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [feroxbuster](human/fichas/feroxbuster.md) | Tu objetivo encaja con estos ejemplos: recursión de directorios en un lab Juice Shop; comparar cobertura con Gobuster | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — httpx, Naabu**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [httpx](human/fichas/httpx.md) | Tu objetivo encaja con estos ejemplos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [Naabu](human/fichas/naabu.md) | Tu objetivo encaja con estos ejemplos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios | necesitas una instalación sin cuentas ni dependencias adicionales |
+
+**⚖️ ¿Cuál elegir? — Sliver, Empire, Mythic**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Sliver](human/fichas/sliver.md) | Tu objetivo encaja con estos ejemplos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Empire](human/fichas/empire.md) | Tu objetivo encaja con estos ejemplos: listener + stager en un lab Windows; módulos de post-ex en ejercicio red team | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [Mythic](human/fichas/mythic.md) | Tu objetivo encaja con estos ejemplos: montar un C2 de lab con un agente oficial; ejercicio purple team multi-operador | necesitas una instalación sin cuentas ni dependencias adicionales |
 
 **⚖️ ¿Cuál elegir? — Trivy, Grype**
 
@@ -4656,6 +4673,33 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [sqlmap](human/fichas/sqlmap.md) · [playwright](human/fichas/playwright.md) · [Nuclei](human/fichas/nuclei.md) · [PayloadsAllTheThings](human/fichas/payloadsallthethings.md)<br>
 **Más:** [ficha completa](human/fichas/zaproxy.md) · [GitHub](https://github.com/zaproxy/zaproxy)
 
+#### 🖥️ dirsearch
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 15.1k<br>
+**Qué es:** Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip3 install git+https://github.com/maurosoria/dirsearch.git` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: enumerar paneles admin en un lab; fuzzear extensiones de ficheros — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [SecLists](human/fichas/seclists.md) · [ffuf](human/fichas/ffuf.md)<br>
+**Más:** [ficha completa](human/fichas/dirsearch.md) · [GitHub](https://github.com/maurosoria/dirsearch)
+
+#### 🖥️ OWASP Juice Shop
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.5k<br>
+**Qué es:** Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `npm install` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: practicar OWASP Top 10 en local; validar un scanner contra retos conocidos — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [Nuclei](human/fichas/nuclei.md)<br>
+**Más:** [ficha completa](human/fichas/juice-shop.md) · [GitHub](https://github.com/juice-shop/juice-shop)
+
+#### 🖥️ Gobuster
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.3k<br>
+**Qué es:** Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install github.com/OJ/gobuster/v3@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: descubrir rutas ocultas en una app de lab; enumerar vhosts de un dominio propio — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [SecLists](human/fichas/seclists.md) · [Nuclei](human/fichas/nuclei.md)<br>
+**Más:** [ficha completa](human/fichas/gobuster.md) · [GitHub](https://github.com/OJ/gobuster)
+
 #### 🖥️ John the Ripper (jumbo)
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.9k<br>
 **Qué es:** Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.<br>
@@ -4674,7 +4718,43 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [mitmproxy](human/fichas/mitmproxy.md) · [Nmap](human/fichas/nmap.md) · [John the Ripper (jumbo)](human/fichas/john.md) · [Sliver](human/fichas/sliver.md) · [Suricata](human/fichas/suricata.md) · [Zeek](human/fichas/zeek.md)<br>
 **Más:** [ficha completa](human/fichas/wireshark.md) · [GitHub](https://github.com/wireshark/wireshark)
 
+#### 🖥️ WPScan
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 9.9k<br>
+**Qué es:** Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago).<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `gem install wpscan` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar un WordPress de staging propio; enumerar plugins desactualizados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nuclei](human/fichas/nuclei.md) · [ffuf](human/fichas/ffuf.md)<br>
+**Más:** [ficha completa](human/fichas/wpscan.md) · [GitHub](https://github.com/wpscanteam/wpscan)
+
+#### 🖥️ feroxbuster
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 8.2k<br>
+**Qué es:** Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install feroxbuster` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: recursión de directorios en un lab Juice Shop; comparar cobertura con Gobuster — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [SecLists](human/fichas/seclists.md) · [Nuclei](human/fichas/nuclei.md)<br>
+**Más:** [ficha completa](human/fichas/feroxbuster.md) · [GitHub](https://github.com/epi052/feroxbuster)
+
 ### Reconocimiento y superficie de ataque
+
+#### 🖥️ masscan
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 26.2k<br>
+**Qué es:** Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/robertdavidgraham/masscan/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nmap](human/fichas/nmap.md) · [RustScan](human/fichas/rustscan.md)<br>
+**Más:** [ficha completa](human/fichas/masscan.md) · [GitHub](https://github.com/robertdavidgraham/masscan)
+
+#### 🖥️ RustScan
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 20.7k<br>
+**Qué es:** Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install rustscan` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nmap](human/fichas/nmap.md) · [Naabu](human/fichas/naabu.md)<br>
+**Más:** [ficha completa](human/fichas/rustscan.md) · [GitHub](https://github.com/bee-san/RustScan)
 
 #### 🖥️ Amass
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 15.5k<br>
@@ -4720,6 +4800,24 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Nmap](human/fichas/nmap.md) · [Amass](human/fichas/amass.md) · [Nuclei](human/fichas/nuclei.md)<br>
 **Más:** [ficha completa](human/fichas/naabu.md) · [GitHub](https://github.com/projectdiscovery/naabu)
+
+#### 🖥️ interactsh
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 4.6k<br>
+**Qué es:** Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: confirmar SSRF ciega en una API de lab; validar plantillas Nuclei con OOB — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nuclei](human/fichas/nuclei.md) · [httpx](human/fichas/httpx.md)<br>
+**Más:** [ficha completa](human/fichas/interactsh.md) · [GitHub](https://github.com/projectdiscovery/interactsh)
+
+#### 🖥️ dnsx
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 2.9k<br>
+**Qué es:** Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: resolver un listado de FQDN de lab; detectar wildcards antes de escanear — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [subfinder](human/fichas/subfinder.md) · [httpx](human/fichas/httpx.md)<br>
+**Más:** [ficha completa](human/fichas/dnsx.md) · [GitHub](https://github.com/projectdiscovery/dnsx)
 
 ### Explotación, C2 y post-explotación
 
@@ -4777,7 +4875,43 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Atomic Red Team](human/fichas/atomic-red-team.md) · [Wazuh](human/fichas/wazuh.md) · [Metasploit Framework](human/fichas/metasploit.md)<br>
 **Más:** [ficha completa](human/fichas/caldera.md) · [GitHub](https://github.com/apache/caldera)
 
+#### 🖥️ Empire
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 5.4k<br>
+**Qué es:** Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/BC-SECURITY/Empire.git` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: listener + stager en un lab Windows; módulos de post-ex en ejercicio red team — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [Wazuh](human/fichas/wazuh.md)<br>
+**Más:** [ficha completa](human/fichas/empire.md) · [GitHub](https://github.com/BC-SECURITY/Empire)
+
+#### 🖥️ Ligolo-ng
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.2k<br>
+**Qué es:** Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/nicocha30/ligolo-ng/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Metasploit Framework](human/fichas/metasploit.md) · [Sliver](human/fichas/sliver.md)<br>
+**Más:** [ficha completa](human/fichas/ligolo-ng.md) · [GitHub](https://github.com/nicocha30/ligolo-ng)
+
+#### 🖥️ Mythic
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 4.9k<br>
+**Qué es:** Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/its-a-feature/Mythic/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un C2 de lab con un agente oficial; ejercicio purple team multi-operador — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [CALDERA](human/fichas/caldera.md) · [Wazuh](human/fichas/wazuh.md)<br>
+**Más:** [ficha completa](human/fichas/mythic.md) · [GitHub](https://github.com/its-a-feature/Mythic)
+
 ### Active Directory y red interna
+
+#### 🖥️ mimikatz
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 22k<br>
+**Qué es:** Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en laboratorios aislados.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/gentilkiwi/mimikatz/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: demostrar dump de LSASS en un lab; enseñar lateral movement con tickets — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [PEASS-ng](human/fichas/peass-ng.md)<br>
+**Más:** [ficha completa](human/fichas/mimikatz.md) · [GitHub](https://github.com/gentilkiwi/mimikatz)
 
 #### 📚 Impacket
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 16.3k<br>
@@ -4788,6 +4922,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [Nmap](human/fichas/nmap.md) · [Metasploit Framework](human/fichas/metasploit.md) · [NetExec](human/fichas/netexec.md)<br>
 **Más:** [ficha completa](human/fichas/impacket.md) · [GitHub](https://github.com/fortra/impacket)
 
+#### 🖥️ Responder
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.7k<br>
+**Qué es:** Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/lgandx/Responder.git` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: capturar hashes NetNTLM en un lab GOAD; validar mitigaciones de name resolution — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [NetExec](human/fichas/netexec.md) · [hashcat](human/fichas/hashcat.md)<br>
+**Más:** [ficha completa](human/fichas/responder.md) · [GitHub](https://github.com/lgandx/Responder)
+
 #### 🖥️ NetExec
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6k<br>
 **Qué es:** Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales.<br>
@@ -4796,6 +4939,24 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: validar un set de credenciales contra un segmento Windows de lab; enumerar shares y sesiones tras un compromiso autorizado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Impacket](human/fichas/impacket.md) · [BloodHound Community Edition](human/fichas/bloodhound.md) · [Nmap](human/fichas/nmap.md)<br>
 **Más:** [ficha completa](human/fichas/netexec.md) · [GitHub](https://github.com/Pennyw0rth/NetExec)
+
+#### 🖥️ Rubeus
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.2k<br>
+**Qué es:** Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/GhostPack/Rubeus/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: kerberoasting en un dominio GOAD; pasar-the-ticket en lab — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [Impacket](human/fichas/impacket.md)<br>
+**Más:** [ficha completa](human/fichas/rubeus.md) · [GitHub](https://github.com/GhostPack/Rubeus)
+
+#### 🖥️ Certipy
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 3.7k<br>
+**Qué es:** Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/ly4k/Certipy/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: enumerar plantillas ESC1-ESC8 en un lab GOAD; pedir un certificado en un dominio de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [Impacket](human/fichas/impacket.md)<br>
+**Más:** [ficha completa](human/fichas/certipy.md) · [GitHub](https://github.com/ly4k/Certipy)
 
 #### ⚙️ BloodHound Community Edition
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 3.6k<br>
@@ -4853,6 +5014,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Suricata](human/fichas/suricata.md) · [Wazuh](human/fichas/wazuh.md) · [Wireshark](human/fichas/wireshark.md)<br>
 **Más:** [ficha completa](human/fichas/zeek.md) · [GitHub](https://github.com/zeek/zeek)
 
+#### 🖥️ Arkime
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 7.6k<br>
+**Qué es:** Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/arkime/arkime/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Wireshark](human/fichas/wireshark.md) · [Suricata](human/fichas/suricata.md)<br>
+**Más:** [ficha completa](human/fichas/arkime.md) · [GitHub](https://github.com/arkime/arkime)
+
 #### 🖥️ Suricata
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 6.9k<br>
 **Qué es:** IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad.<br>
@@ -4861,6 +5031,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [Wireshark](human/fichas/wireshark.md) · [Zeek](human/fichas/zeek.md)<br>
 **Más:** [ficha completa](human/fichas/suricata.md) · [GitHub](https://github.com/OISF/suricata)
+
+#### 🖥️ Security Onion
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 5k<br>
+**Qué es:** Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: levantar un SOC de lab; entrenar analistas con telemetría realista — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Suricata](human/fichas/suricata.md) · [Zeek](human/fichas/zeek.md) · [Wazuh](human/fichas/wazuh.md)<br>
+**Más:** [ficha completa](human/fichas/securityonion.md) · [GitHub](https://github.com/Security-Onion-Solutions/securityonion)
 
 ### Nube, contenedores e IaC
 
@@ -4891,6 +5070,24 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Falco](human/fichas/falco.md) · [Semgrep](human/fichas/semgrep.md) · [Checkov](human/fichas/checkov.md)<br>
 **Más:** [ficha completa](human/fichas/grype.md) · [GitHub](https://github.com/anchore/grype)
 
+#### 🖥️ OSV-Scanner
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 11.5k<br>
+**Qué es:** Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de código.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: escanear lockfiles en CI; revisar una imagen de lab — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Trivy](human/fichas/trivy.md) · [Grype](human/fichas/grype.md)<br>
+**Más:** [ficha completa](human/fichas/osv-scanner.md) · [GitHub](https://github.com/google/osv-scanner)
+
+#### 🖥️ Syft
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9.9k<br>
+**Qué es:** Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scanners.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `curl -sSfL https://get.anchore.io/syft | sudo sh -s -- -b /usr/local/bin` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar SBOM de una imagen propia; adjuntar SBOM al artefacto de CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Grype](human/fichas/grype.md) · [Trivy](human/fichas/trivy.md)<br>
+**Más:** [ficha completa](human/fichas/syft.md) · [GitHub](https://github.com/anchore/syft)
+
 #### 🖥️ Falco
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 9.6k<br>
 **Qué es:** Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Kubernetes.<br>
@@ -4908,6 +5105,33 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: revisar un módulo Terraform antes del apply; bloquear un manifiesto K8s con privilegios excesivos en CI — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Trivy](human/fichas/trivy.md) · [Semgrep](human/fichas/semgrep.md) · [Prowler](human/fichas/prowler.md) · [Grype](human/fichas/grype.md)<br>
 **Más:** [ficha completa](human/fichas/checkov.md) · [GitHub](https://github.com/bridgecrewio/checkov)
+
+#### 🖥️ kube-bench
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 8.3k<br>
+**Qué es:** Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/aquasecurity/kube-bench/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar un clúster de lab tras el deploy; integrar CIS check en el pipeline — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Trivy](human/fichas/trivy.md) · [Falco](human/fichas/falco.md)<br>
+**Más:** [ficha completa](human/fichas/kube-bench.md) · [GitHub](https://github.com/aquasecurity/kube-bench)
+
+#### 🖥️ Cosign
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.4k<br>
+**Qué es:** Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/sigstore/cosign/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: firmar una imagen interna; verificar firmas antes del deploy — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Trivy](human/fichas/trivy.md) · [Syft](human/fichas/syft.md)<br>
+**Más:** [ficha completa](human/fichas/cosign.md) · [GitHub](https://github.com/sigstore/cosign)
+
+#### 🖥️ Pacu
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.4k<br>
+**Qué es:** Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pipx install git+https://github.com/RhinoSecurityLabs/pacu.git` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: enumerar privilegios de una cuenta sandbox; simular escalada IAM en lab — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Prowler](human/fichas/prowler.md) · [Trivy](human/fichas/trivy.md)<br>
+**Más:** [ficha completa](human/fichas/pacu.md) · [GitHub](https://github.com/RhinoSecurityLabs/pacu)
 
 ### Análisis y pruebas con agentes
 
@@ -5096,6 +5320,15 @@ claude` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [osquery](human/fichas/osquery.md) · [Volatility 3](human/fichas/volatility3.md)<br>
 **Más:** [ficha completa](human/fichas/velociraptor.md) · [GitHub](https://github.com/Velocidex/velociraptor)
+
+#### 🖥️ Hayabusa
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 3.5k<br>
+**Qué es:** Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Yamato-Security/hayabusa/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Sigma](human/fichas/sigma.md) · [Velociraptor](human/fichas/velociraptor.md)<br>
+**Más:** [ficha completa](human/fichas/hayabusa.md) · [GitHub](https://github.com/Yamato-Security/hayabusa)
 
 ### Inteligencia de amenazas
 
