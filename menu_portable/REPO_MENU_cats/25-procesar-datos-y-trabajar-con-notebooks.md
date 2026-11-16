@@ -31,7 +31,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una
 **Qué comprobar:** Puedes elegir candidatos complementarios
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-dataviz`
+**Combina con:** `awesome-dataviz`, `duckdb`, `hudi`
 
 ## `dash`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,ui,python
@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue la app inicial y conecta un selector a un gráfico pequeño
 **Qué comprobar:** Puedes comprobar qué callback cambia la figura
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `streamlit`, `echarts`
+**Combina con:** `streamlit`, `echarts`, `duckdb`
 
 ## `duckdb`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,analytics,cpp
@@ -122,7 +122,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa
 **Qué comprobar:** Puedes identificar formato, licencia y escala del dato
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `three.js`
+**Combina con:** `three.js`, `duckdb`, `3dviz-pro-max`
 
 ## `gradio`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,python
@@ -152,7 +152,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una interfaz para una función simple de texto y pruébala localmente antes de compartir un enlace
 **Qué comprobar:** Puedes ver la relación entre entrada, función y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`
+**Combina con:** `transformers`, `llama-factory`, `ollama`
 **Alternativas (elige una):** `streamlit`
 
 ## `hudi`
@@ -183,6 +183,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Inserta registros ficticios y actualiza uno para comparar estado y consulta incremental
 **Qué comprobar:** Puedes comprobar la actualización sin reconstruir manualmente toda la tabla
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `superset`, `awesome-bigdata`
 
 ## `marimo`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notebooks,data,python
@@ -273,5 +274,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una app con un control y una tabla de ejemplo y comprueba que la interacción actualiza la vista
 **Qué comprobar:** Puedes identificar script, estado y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dash`
+**Combina con:** `dash`, `polars`, `duckdb`
 **Alternativas (elige una):** `gradio`

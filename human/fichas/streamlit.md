@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Streamlit, framework de apps de datos en Python, propiedad de Snowflake. Licencia Apache-2.0. Es muy maduro (~46k estrellas, 1.67.0) y ahora se presenta como «agent-native».
+
+## ¿Qué hace?
+
+Convierte scripts Python en apps web (dashboards, herramientas de pronóstico, flujos de revisión y aprobación) sin frontend ni API separados. Gestiona interfaz, estado, caché, inicio de sesión y temas.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install streamlit` y se ejecuta con `streamlit run app.py`. Se despliega en Streamlit Community Cloud, Snowflake o servidor propio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [dash](dash.md) | Gráficos Plotly en paralelo para casos más complejos. (combinación por arquitectura) | Elige según la complejidad. |
+| [Polars](polars.md) | DataFrames rápidos dentro de la app. (combinación por arquitectura) | Procesa con Polars y muestra con `st.dataframe`. |
+| [DuckDB](duckdb.md) | Consultas SQL locales en la app. (combinación por arquitectura) | Consulta con DuckDB y muestra el resultado. |
+
+**Notas:** Alternativas (elige una): gradio.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.67.0 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/streamlit/streamlit/blob/develop/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. streamlit skills instala instrucciones para Claude Code y agentes que leen .agents; no convierte la suscripción del agente en backend de cualquier app creada |
 | Coste | El coste depende del proveedor o la ruta. La app básica no necesita LLM; AI, hosting y fuentes de datos tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Python; script pequeño; datos ficticios |
-
-streamlit skills instala instrucciones para Claude Code y agentes que leen .agents; no convierte la suscripción del agente en backend de cualquier app creada
-
-## Qué puedes hacer con él
-
-Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda.
-
-## Cómo funciona
 
 streamlit skills instala instrucciones para Claude Code y agentes que leen .agents; no convierte la suscripción del agente en backend de cualquier app creada
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; script pequeño; datos ficticios
 - **Etiquetas:** `ui` `dataviz` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [dash](dash.md) | 24.5k | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. |
 
 ## Alternativas (elige una)
 

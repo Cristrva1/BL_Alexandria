@@ -5538,7 +5538,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/oxnr/awesome-bigdata/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [awesome-dataviz](human/fichas/awesome-dataviz.md)<br>
+**Combina con:** [awesome-dataviz](human/fichas/awesome-dataviz.md) · [DuckDB](human/fichas/duckdb.md) · [hudi](human/fichas/hudi.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-bigdata.md) · [GitHub](https://github.com/oxnr/awesome-bigdata)
 
 #### 🧑‍💻 hudi
@@ -5547,6 +5547,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://hudi.apache.org/docs/quick-start-guide.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Apache Superset](human/fichas/superset.md) · [awesome-bigdata](human/fichas/awesome-bigdata.md)<br>
 **Más:** [ficha completa](human/fichas/hudi.md) · [GitHub](https://github.com/apache/hudi)
 
 #### 🧑‍💻 GlobalBuildingAtlas
@@ -5555,7 +5556,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [three.js](human/fichas/three-js.md)<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [DuckDB](human/fichas/duckdb.md) · [3dviz-pro-max](human/fichas/3dviz-pro-max.md)<br>
 **Más:** [ficha completa](human/fichas/globalbuildingatlas.md) · [GitHub](https://github.com/zhu-xlab/GlobalBuildingAtlas)
 
 ### Apps de datos en Python
@@ -5566,7 +5567,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install --upgrade gradio` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una demo de un modelo; Preparar una herramienta interna de texto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Transformers](human/fichas/transformers.md)<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [LLaMA-Factory](human/fichas/llama-factory.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/gradio.md) · [GitHub](https://github.com/gradio-app/gradio)
 
 #### 📊 streamlit
@@ -5575,7 +5576,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install streamlit` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [dash](human/fichas/dash.md)<br>
+**Combina con:** [dash](human/fichas/dash.md) · [Polars](human/fichas/polars.md) · [DuckDB](human/fichas/duckdb.md)<br>
 **Más:** [ficha completa](human/fichas/streamlit.md) · [GitHub](https://github.com/streamlit/streamlit)
 
 #### 🧮 dash
@@ -5584,7 +5585,7 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://dash.plotly.com/getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un tablero interactivo; Comparar escenarios con controles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [streamlit](human/fichas/streamlit.md) · [echarts](human/fichas/echarts.md)<br>
+**Combina con:** [streamlit](human/fichas/streamlit.md) · [echarts](human/fichas/echarts.md) · [DuckDB](human/fichas/duckdb.md)<br>
 **Más:** [ficha completa](human/fichas/dash.md) · [GitHub](https://github.com/plotly/dash)
 
 ---
@@ -5609,7 +5610,7 @@ Animación web, motores gráficos, modelado y renderizado 3D. Una librería se i
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://threejs.org/manual/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un visor 3D web; Prototipar una escena interactiva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [react-three-fiber](human/fichas/react-three-fiber.md) · [GSAP](human/fichas/gsap.md)<br>
+**Combina con:** [react-three-fiber](human/fichas/react-three-fiber.md) · [GSAP](human/fichas/gsap.md) · [threejs-skills](human/fichas/threejs-skills.md) · [meshoptimizer](human/fichas/meshoptimizer.md)<br>
 **Más:** [ficha completa](human/fichas/three-js.md) · [GitHub](https://github.com/mrdoob/three.js)
 
 #### ✨ Anime.js
@@ -5618,6 +5619,7 @@ Animación web, motores gráficos, modelado y renderizado 3D. Una librería se i
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/juliangarnier/anime/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Mostrar una transición de estado; Animar un SVG sencillo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [magicui](human/fichas/magicui.md) · [motion-design-skill](human/fichas/motion-design-skill.md)<br>
 **Más:** [ficha completa](human/fichas/animejs.md) · [GitHub](https://github.com/juliangarnier/anime)
 
 #### 🌀 motion
@@ -5627,7 +5629,7 @@ Animación web, motores gráficos, modelado y renderizado 3D. Una librería se i
 **Comando documentado:** `# React / JavaScript
 npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Animar apertura de contenido; Crear una transición de lista — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [magicui](human/fichas/magicui.md) · [react-three-fiber](human/fichas/react-three-fiber.md)<br>
+**Combina con:** [magicui](human/fichas/magicui.md) · [react-three-fiber](human/fichas/react-three-fiber.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/motion.md) · [GitHub](https://github.com/motiondivision/motion)
 
 #### 🔻 react-three-fiber
@@ -5636,7 +5638,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install three @types/three @react-three/fiber` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un configurador 3D; Construir una escena React interactiva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [motion](human/fichas/motion.md)<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [react-three-rapier](human/fichas/react-three-rapier.md) · [motion](human/fichas/motion.md)<br>
 **Más:** [ficha completa](human/fichas/react-three-fiber.md) · [GitHub](https://github.com/pmndrs/react-three-fiber)
 
 #### 🎞️ GSAP
@@ -5645,7 +5647,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install gsap` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Sincronizar una transición compleja; Animar un diagrama explicativo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [motion](human/fichas/motion.md)<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [motion](human/fichas/motion.md) · [remotion](human/fichas/remotion.md)<br>
 **Más:** [ficha completa](human/fichas/gsap.md) · [GitHub](https://github.com/greensock/GSAP)
 
 #### 📚 zdog
@@ -5678,6 +5680,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/ashima/webgl-noise/blob/master/README); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear textura de nube procedural; Explorar variaciones de una superficie — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [regl](human/fichas/regl.md) · [react-three-fiber](human/fichas/react-three-fiber.md)<br>
 **Más:** [ficha completa](human/fichas/webgl-noise.md) · [GitHub](https://github.com/ashima/webgl-noise)
 
 #### 📚 scenejs
@@ -5704,6 +5707,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/blender/blender/blob/main/.github/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Modelar un objeto sencillo; Preparar una escena de presentación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Blender MCP](human/fichas/blender-mcp.md) · [3dviz-pro-max](human/fichas/3dviz-pro-max.md) · [three.js](human/fichas/three-js.md)<br>
 **Más:** [ficha completa](human/fichas/blender.md) · [GitHub](https://github.com/blender/blender)
 
 #### 📚 filament
@@ -5746,6 +5750,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install warp-lang` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar simulación física; Prototipar cómputo para robótica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [blender](human/fichas/blender.md) · [cosmos](human/fichas/cosmos.md)<br>
 **Más:** [ficha completa](human/fichas/warp.md) · [GitHub](https://github.com/NVIDIA/warp)
 
 #### 📚 planck.js

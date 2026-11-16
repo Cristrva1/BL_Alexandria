@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Apache Hudi, plataforma de data lakehouse abierta sobre un formato de tabla de alto rendimiento, de la Apache Software Foundation. Licencia Apache-2.0. Es madura (~6.4k estrellas, release-1.2.1).
+
+## ¿Qué hace?
+
+Ingiere, indexa, almacena, sirve y transforma datos en almacenamiento cloud con upserts, borrados, consultas incrementales y time travel. Sus servicios de tabla (compactación, clustering, limpieza) son automáticos.
+
+## ¿Cómo lo hace?
+
+Se integra con Apache Spark y Flink (herramientas de ingestión integradas) y lo consultan motores como Trino, Presto o Hive. Se compila con Maven (`mvn clean package -Dspark3.5 -Dflink2.2`) o se usan los paquetes publicados.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Leer datos del lakehouse para análisis local. (combinación por arquitectura) | Lee los Parquet subyacentes. |
+| [Apache Superset](superset.md) | BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura) | Conecta Superset al motor de consulta. |
+| [awesome-bigdata](awesome-bigdata.md) | Mapa del ecosistema alrededor. (combinación por arquitectura) | Consulta la lista. |
+
+**Notas:** Sin alternativas declaradas; compite con Iceberg y Delta Lake (no catalogados).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada release-1.2.1 (2026-09-24) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/hudi/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita API de IA; motores, almacenamiento y nube se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños |
-
-Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados
-
-## Qué puedes hacer con él
-
-Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un lakehouse; Preparar ingestión incremental.
-
-## Cómo funciona
 
 Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados
 

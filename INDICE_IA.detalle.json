@@ -36142,7 +36142,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
    "combines_with": [
-    "awesome-dataviz"
+    "awesome-dataviz",
+    "duckdb",
+    "hudi"
    ],
    "alternatives": [],
    "repo": "https://github.com/oxnr/awesome-bigdata",
@@ -36234,7 +36236,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.",
+   "que_hace": "Organiza enlaces por categorías: RDBMS, frameworks, programación distribuida, almacenes columnares, key-value, grafos, ingestión, BI, visualización, machine learning y más. Mezcla proyectos vigentes con otros históricos o descontinuados, así que conviene verificar cada uno.",
+   "como_lo_hace": "Es un README en Markdown y no requiere instalación. Las contribuciones se hacen por pull request.",
+   "combina_con": [
+    {
+     "id": "awesome-dataviz",
+     "motivo": "Lista complementaria de visualización. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta ambas listas."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Motor analítico moderno para empezar en local. (combinación por arquitectura)",
+     "orden_instalacion": "Prueba DuckDB antes de montar un clúster."
+    },
+    {
+     "id": "hudi",
+     "motivo": "Formato lakehouse listado en el ecosistema. (combinación por arquitectura)",
+     "orden_instalacion": "Evalúa Hudi para ingestión incremental."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Recurso, no software.",
+   "descripcion_fuentes": [
+    "https://github.com/oxnr/awesome-bigdata/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "oxnr/awesome-bigdata",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "checked_at": "2026-11-15"
+   }
   },
   "ollama": {
    "name": "Ollama",
@@ -41483,7 +41522,9 @@
    "limits": "Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app",
    "combines_with": [
     "react-three-fiber",
-    "gsap"
+    "gsap",
+    "threejs-skills",
+    "meshoptimizer"
    ],
    "alternatives": [],
    "repo": "https://github.com/mrdoob/three.js",
@@ -41577,7 +41618,52 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "three.js, biblioteca JavaScript 3D de propósito general, de @mrdoob y comunidad. Licencia MIT. Es muy madura (~119k estrellas, r187).",
+   "que_hace": "Crea escenas 3D interactivas en el navegador con renderizadores WebGL y WebGPU (SVG y CSS3D como addons), cámaras, luces, materiales, cargadores (glTF y otros), animación y postprocesado.",
+   "como_lo_hace": "Se instala con `npm install three` o se importa desde CDN como módulo ES. Tiene una amplia colección de ejemplos y addons.",
+   "combina_con": [
+    {
+     "id": "react-three-fiber",
+     "motivo": "Renderer de React para three.js.",
+     "orden_instalacion": "Instala `@react-three/fiber` junto a three."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Animar propiedades de objetos 3D con timelines. (combinación por arquitectura)",
+     "orden_instalacion": "Anima `mesh.position` con GSAP."
+    },
+    {
+     "id": "threejs-skills",
+     "motivo": "Skills para que un agente programe escenas.",
+     "orden_instalacion": "Añade las skills al agente."
+    },
+    {
+     "id": "meshoptimizer",
+     "motivo": "Optimizar geometría glTF.",
+     "orden_instalacion": "Comprime los modelos antes de cargarlos."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/mrdoob/three.js/blob/dev/README.md",
+    "https://threejs.org/docs/"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mrdoob/three.js",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "r187 (2026-10-30)",
+    "checked_at": "2026-11-15"
+   }
   },
   "animejs": {
    "name": "Anime.js",
@@ -41596,7 +41682,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Mostrar una transición de estado; Animar un SVG sencillo",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app",
-   "combines_with": [],
+   "combines_with": [
+    "three.js",
+    "magicui",
+    "motion-design-skill"
+   ],
    "alternatives": [
     "gsap",
     "motion"
@@ -41689,7 +41779,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Anime.js, motor de animación JavaScript ligero, de @juliangarnier. Licencia MIT. Es maduro (~75k estrellas, v4.5.0) y se financia con patrocinios.",
+   "que_hace": "Anima propiedades CSS, SVG, atributos DOM y objetos JavaScript con una API simple: timelines, stagger, easing, scroll y arrastre en la v4.",
+   "como_lo_hace": "Se instala con `npm install animejs` o desde CDN como módulo ES.",
+   "combina_con": [
+    {
+     "id": "three.js",
+     "motivo": "Animar valores de objetos 3D. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa el objeto three.js como objetivo."
+    },
+    {
+     "id": "magicui",
+     "motivo": "Animaciones extra en componentes de interfaz. (combinación por arquitectura)",
+     "orden_instalacion": "Aplica animaciones a componentes."
+    },
+    {
+     "id": "motion-design-skill",
+     "motivo": "Principios de movimiento para agentes. (combinación por arquitectura)",
+     "orden_instalacion": "Añade la skill."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): gsap, motion.",
+   "descripcion_fuentes": [
+    "https://github.com/juliangarnier/anime/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "juliangarnier/anime",
+    "archived": false,
+    "pushed_at": "2026-11-02",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v4.5.0 (2026-06-22)",
+    "checked_at": "2026-11-15"
+   }
   },
   "motion": {
    "name": "motion",
@@ -41710,7 +41839,8 @@
    "limits": "El MCP busca documentación y metadatos de ejemplos; no concede acceso a recursos premium ni ejecuta una suscripción de Codex por sí mismo",
    "combines_with": [
     "magicui",
-    "react-three-fiber"
+    "react-three-fiber",
+    "claude-code"
    ],
    "alternatives": [
     "animejs"
@@ -41808,7 +41938,45 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Motion (antes Framer Motion), librería de animación open source para JavaScript, React y Vue, de motiondivision. Licencia MIT. Es madura (~35k estrellas) y tiene oferta de pago (Motion+).",
+   "que_hace": "Ofrece animaciones declarativas, gestos, layout animations, scroll y transiciones de salida, con aceleración por hardware. Incluye una skill de agente y servidores MCP (`npx motion-ai`) para Claude Code, Cursor, OpenCode y otros.",
+   "como_lo_hace": "Se instala con `npm install motion` (React/JS) o `npm install motion-v` (Vue).",
+   "combina_con": [
+    {
+     "id": "magicui",
+     "motivo": "Componentes animados construidos con Motion.",
+     "orden_instalacion": "Instala Motion como dependencia."
+    },
+    {
+     "id": "react-three-fiber",
+     "motivo": "Animar escenas R3F. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Motion para la capa UI y R3F para 3D."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Skill y MCP oficiales (`npx motion-ai`).",
+     "orden_instalacion": "Ejecuta `npx motion-ai`."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): animejs.",
+   "descripcion_fuentes": [
+    "https://github.com/motiondivision/motion/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "motiondivision/motion",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "react-three-fiber": {
    "name": "react-three-fiber",
@@ -41828,6 +41996,8 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo",
    "combines_with": [
+    "three.js",
+    "react-three-rapier",
     "motion"
    ],
    "alternatives": [],
@@ -41923,7 +42093,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "react-three-fiber (@react-three/fiber), renderer de React para three.js, de pmndrs. Licencia MIT. Es madura (~34k estrellas, v9.8.2).",
+   "que_hace": "Expresa escenas 3D como componentes declarativos y reutilizables que reaccionan al estado y participan del ecosistema React, sin capa de abstracción extra ni pérdida de rendimiento. Funciona también en React Native.",
+   "como_lo_hace": "Se instala con `npm install three @types/three @react-three/fiber`. El ecosistema de pmndrs añade drei, rapier y postprocesado.",
+   "combina_con": [
+    {
+     "id": "three.js",
+     "motivo": "Motor subyacente.",
+     "orden_instalacion": "Instala three junto a R3F."
+    },
+    {
+     "id": "react-three-rapier",
+     "motivo": "Física Rapier para R3F.",
+     "orden_instalacion": "Instala `@react-three/rapier`."
+    },
+    {
+     "id": "motion",
+     "motivo": "Animación de UI alrededor del canvas. (combinación por arquitectura)",
+     "orden_instalacion": "Combina en la misma app."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/pmndrs/react-three-fiber/blob/master/readme.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pmndrs/react-three-fiber",
+    "archived": false,
+    "pushed_at": "2026-10-21",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v9.8.2 (2026-10-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "gsap": {
    "name": "GSAP",
@@ -41943,7 +42152,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una biblioteca web sin LLM; los efectos requieren diseño, implementación y pruebas en la página que los usa",
    "combines_with": [
-    "motion"
+    "three.js",
+    "motion",
+    "remotion"
    ],
    "alternatives": [
     "animejs"
@@ -42038,7 +42249,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "GSAP (GreenSock Animation Platform), librería de animación JavaScript independiente del framework, propiedad de Webflow. Usa la licencia propia «Standard No Charge», gratuita pero no OSI (GitHub no detecta licencia). Es muy madura (~31k estrellas) y está en más de 12 millones de sitios, según el proyecto.",
+   "que_hace": "Anima CSS, SVG, canvas, React, Vue, WebGL y objetos genéricos con secuenciación avanzada mediante timelines. Desde la compra por Webflow todos sus plugins son gratuitos: ScrollTrigger, SplitText, MorphSVG y otros.",
+   "como_lo_hace": "Se instala con `npm install gsap` o desde CDN y no tiene dependencias.",
+   "combina_con": [
+    {
+     "id": "three.js",
+     "motivo": "Animar escenas 3D con timelines. (combinación por arquitectura)",
+     "orden_instalacion": "Anima propiedades de objetos three.js."
+    },
+    {
+     "id": "motion",
+     "motivo": "Combinar en apps React (Motion para la UI, GSAP para la narrativa con scroll). (combinación por arquitectura)",
+     "orden_instalacion": "Evita animar el mismo elemento con ambas."
+    },
+    {
+     "id": "remotion",
+     "motivo": "Animaciones en vídeo programático. (combinación por arquitectura)",
+     "orden_instalacion": "Controla timelines de GSAP por frame."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): animejs. La licencia prohíbe usarla en herramientas visuales de animación sin código que compitan con Webflow.",
+   "descripcion_fuentes": [
+    "https://github.com/greensock/GSAP/blob/master/README.md",
+    "https://gsap.com/standard-license"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "greensock/GSAP",
+    "archived": false,
+    "pushed_at": "2026-11-04",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "excalidraw": {
    "name": "Excalidraw",
@@ -47144,7 +47393,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Incluye skills para agentes compatibles con .agents y ruta Claude; una URL de compartir expone la app y no sustituye autenticación o alojamiento de producción",
    "combines_with": [
-    "transformers"
+    "transformers",
+    "llama-factory",
+    "ollama"
    ],
    "alternatives": [
     "streamlit"
@@ -47240,7 +47491,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Gradio, paquete Python para crear demos y apps web de modelos de ML, APIs o cualquier función, mantenido por Hugging Face. Licencia Apache-2.0. Es muy maduro (~44k estrellas, gradio@6.32.0).",
+   "que_hace": "Con pocas líneas genera una interfaz (Interface o Blocks) con componentes de entrada y salida, chat (`ChatInterface`) y enlaces públicos temporales para compartir. Cada app expone además una API y un cliente Python/JS, y puede servir como servidor MCP.",
+   "como_lo_hace": "Requiere Python 3.10+ y se instala con `pip install --upgrade gradio`. Se despliega en Hugging Face Spaces o en servidor propio.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "Demos de modelos de Hugging Face.",
+     "orden_instalacion": "Carga el pipeline y envuélvelo en una Interface."
+    },
+    {
+     "id": "llama-factory",
+     "motivo": "Su LlamaBoard está construido con Gradio.",
+     "orden_instalacion": "Usa la UI de LlamaFactory."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Interfaz de chat sobre un modelo local. (combinación por arquitectura)",
+     "orden_instalacion": "Llama a la API de Ollama desde ChatInterface."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): streamlit.",
+   "descripcion_fuentes": [
+    "https://github.com/gradio-app/gradio/blob/main/README.md",
+    "https://gradio.app/getting_started/"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "gradio-app/gradio",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "gradio@6.32.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "streamlit": {
    "name": "streamlit",
@@ -47260,7 +47551,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "streamlit skills instala instrucciones para Claude Code y agentes que leen .agents; no convierte la suscripción del agente en backend de cualquier app creada",
    "combines_with": [
-    "dash"
+    "dash",
+    "polars",
+    "duckdb"
    ],
    "alternatives": [
     "gradio"
@@ -47357,7 +47650,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Streamlit, framework de apps de datos en Python, propiedad de Snowflake. Licencia Apache-2.0. Es muy maduro (~46k estrellas, 1.67.0) y ahora se presenta como «agent-native».",
+   "que_hace": "Convierte scripts Python en apps web (dashboards, herramientas de pronóstico, flujos de revisión y aprobación) sin frontend ni API separados. Gestiona interfaz, estado, caché, inicio de sesión y temas.",
+   "como_lo_hace": "Se instala con `pip install streamlit` y se ejecuta con `streamlit run app.py`. Se despliega en Streamlit Community Cloud, Snowflake o servidor propio.",
+   "combina_con": [
+    {
+     "id": "dash",
+     "motivo": "Gráficos Plotly en paralelo para casos más complejos. (combinación por arquitectura)",
+     "orden_instalacion": "Elige según la complejidad."
+    },
+    {
+     "id": "polars",
+     "motivo": "DataFrames rápidos dentro de la app. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa con Polars y muestra con `st.dataframe`."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Consultas SQL locales en la app. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta con DuckDB y muestra el resultado."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): gradio.",
+   "descripcion_fuentes": [
+    "https://github.com/streamlit/streamlit/blob/develop/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "streamlit/streamlit",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "1.67.0 (2026-11-05)",
+    "checked_at": "2026-11-15"
+   }
   },
   "dash": {
    "name": "dash",
@@ -47378,7 +47710,8 @@
    "limits": "Es un framework Python; el README mezcla ejemplos OSS y funciones Enterprise que no vienen todas con el paquete básico",
    "combines_with": [
     "streamlit",
-    "echarts"
+    "echarts",
+    "duckdb"
    ],
    "alternatives": [],
    "repo": "https://github.com/plotly/dash",
@@ -47471,7 +47804,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Dash, framework de Plotly para construir apps analíticas web en Python (también R y Julia), sobre Plotly.js, React y Flask. Licencia MIT. Es maduro (~24k estrellas, v4.5.0) y tiene versión comercial (Dash Enterprise).",
+   "que_hace": "Une componentes de interfaz (desplegables, sliders, gráficos) con código Python analítico mediante callbacks, sin escribir JavaScript. Tiene una galería de apps de ejemplo.",
+   "como_lo_hace": "Se instala con `pip install dash` y se ejecuta como app Flask. Dash Enterprise añade despliegue y autenticación corporativa.",
+   "combina_con": [
+    {
+     "id": "streamlit",
+     "motivo": "Prototipar rápido y migrar a Dash cuando crece. (combinación por arquitectura)",
+     "orden_instalacion": "Elige según la complejidad."
+    },
+    {
+     "id": "echarts",
+     "motivo": "Gráficos alternativos mediante componentes comunitarios. (combinación por arquitectura)",
+     "orden_instalacion": "Integra el componente correspondiente."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Fuente de datos SQL en proceso. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta en los callbacks."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/plotly/dash/blob/dev/README.md",
+    "https://dash.plotly.com/getting-started"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "plotly/dash",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v4.5.0 (2026-10-29)",
+    "checked_at": "2026-11-15"
+   }
   },
   "daily-stock-analysis": {
    "name": "daily_stock_analysis",
@@ -61542,7 +61915,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
    "combines_with": [
-    "three.js"
+    "three.js",
+    "duckdb",
+    "3dviz-pro-max"
    ],
    "alternatives": [],
    "repo": "https://github.com/zhu-xlab/GlobalBuildingAtlas",
@@ -61642,7 +62017,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra NOASSERTION). Tiene ~2.3k estrellas (v1.0.0) y no cambia desde julio de 2026.",
+   "que_hace": "Ofrece polígonos y alturas de edificios a escala mundial, con un visor web. El README advierte que combinar las partes del dataset puede tener implicaciones de licencia.",
+   "como_lo_hace": "Los datos se descargan por partes (`GBA.ODbLPolygon`, `GBA.Polygon`, `GBA.LoD1`, `GBA.Height`) y el código de procesamiento está en el repo. El visor web puede reiniciarse por tráfico alto.",
+   "combina_con": [
+    {
+     "id": "three.js",
+     "motivo": "Visualizar los modelos LoD1 en 3D web. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte los modelos a glTF y cárgalos."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Consultar los polígonos con la extensión espacial. (combinación por arquitectura)",
+     "orden_instalacion": "Carga los archivos con `spatial`."
+    },
+    {
+     "id": "3dviz-pro-max",
+     "motivo": "Escenas 3D asistidas por agente. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los datos como entrada."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales.",
+   "descripcion_fuentes": [
+    "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zhu-xlab/GlobalBuildingAtlas",
+    "archived": false,
+    "pushed_at": "2026-07-06",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v1.0.0 (2025-11-06)",
+    "checked_at": "2026-11-15"
+   }
   },
   "whatsmeow": {
    "name": "whatsmeow",
@@ -62606,7 +63020,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar simulación física; Prototipar cómputo para robótica",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM",
-   "combines_with": [],
+   "combines_with": [
+    "pytorch",
+    "blender",
+    "cosmos"
+   ],
    "alternatives": [],
    "repo": "https://github.com/NVIDIA/warp",
    "homepage": "https://nvidia.github.io/warp/stable/",
@@ -62706,7 +63124,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "NVIDIA Warp, framework Python para simulación, robótica y ML acelerados por GPU. Licencia Apache-2.0. Es maduro (~7.3k estrellas, v1.19.0).",
+   "que_hace": "Compila con JIT funciones Python normales a kernels eficientes para CPU o GPU. Ofrece primitivas de simulación física, geometría y robótica, y sus kernels son diferenciables, así que se integran en pipelines de ML.",
+   "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install warp-lang` (extras `[examples]` para USD). Hay wheels para Windows, Linux y macOS (Apple Silicon solo CPU); la GPU requiere CUDA.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Interoperabilidad de tensores para ML diferenciable.",
+     "orden_instalacion": "Convierte arrays con las utilidades de interop."
+    },
+    {
+     "id": "blender",
+     "motivo": "Visualizar resultados exportados a USD. (combinación por arquitectura)",
+     "orden_instalacion": "Importa el USD en Blender."
+    },
+    {
+     "id": "cosmos",
+     "motivo": "Datos de simulación para modelos de mundo. (combinación por arquitectura)",
+     "orden_instalacion": "Genera escenas con Warp."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/NVIDIA/warp/blob/main/README.md",
+    "https://nvidia.github.io/warp/stable/"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NVIDIA/warp",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.19.0 (2026-11-02)",
+    "checked_at": "2026-11-15"
+   }
   },
   "tensorrt-llm": {
    "name": "TensorRT-LLM",
@@ -68207,7 +68665,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados",
-   "combines_with": [],
+   "combines_with": [
+    "duckdb",
+    "superset",
+    "awesome-bigdata"
+   ],
    "alternatives": [],
    "repo": "https://github.com/apache/hudi",
    "homepage": "https://hudi.apache.org/",
@@ -68305,7 +68767,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Apache Hudi, plataforma de data lakehouse abierta sobre un formato de tabla de alto rendimiento, de la Apache Software Foundation. Licencia Apache-2.0. Es madura (~6.4k estrellas, release-1.2.1).",
+   "que_hace": "Ingiere, indexa, almacena, sirve y transforma datos en almacenamiento cloud con upserts, borrados, consultas incrementales y time travel. Sus servicios de tabla (compactación, clustering, limpieza) son automáticos.",
+   "como_lo_hace": "Se integra con Apache Spark y Flink (herramientas de ingestión integradas) y lo consultan motores como Trino, Presto o Hive. Se compila con Maven (`mvn clean package -Dspark3.5 -Dflink2.2`) o se usan los paquetes publicados.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Leer datos del lakehouse para análisis local. (combinación por arquitectura)",
+     "orden_instalacion": "Lee los Parquet subyacentes."
+    },
+    {
+     "id": "superset",
+     "motivo": "BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta Superset al motor de consulta."
+    },
+    {
+     "id": "awesome-bigdata",
+     "motivo": "Mapa del ecosistema alrededor. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta la lista."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; compite con Iceberg y Delta Lake (no catalogados).",
+   "descripcion_fuentes": [
+    "https://github.com/apache/hudi/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "apache/hudi",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "latest_release": "release-1.2.1 (2026-09-24)",
+    "checked_at": "2026-11-15"
+   }
   },
   "open-sol-bot": {
    "name": "open-sol-bot",
@@ -72330,7 +72831,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Crear textura de nube procedural; Explorar variaciones de una superficie",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El autor remite a su clon stegu/webgl-noise para mantenimiento; es código de shader y no una aplicación generativa de IA",
-   "combines_with": [],
+   "combines_with": [
+    "three.js",
+    "regl",
+    "react-three-fiber"
+   ],
    "alternatives": [],
    "repo": "https://github.com/ashima/webgl-noise",
    "homepage": "",
@@ -72430,7 +72935,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "webgl-noise, rutinas de ruido procedural en GLSL (simplex, clásico, celular y psrdnoise) de Ashima Arts y @stegu. Licencia MIT. Es un repo histórico y estable (~3k estrellas, sin cambios desde noviembre de 2024).",
+   "que_hace": "Proporciona funciones de ruido para shaders WebGL, útiles para texturas procedurales, terrenos y efectos. No usa texturas ni tablas, todo se calcula en el shader.",
+   "como_lo_hace": "Se copian las funciones GLSL al shader. La wiki del repo tiene más información.",
+   "combina_con": [
+    {
+     "id": "three.js",
+     "motivo": "Ruido en ShaderMaterial. (combinación por arquitectura)",
+     "orden_instalacion": "Inyecta las funciones en el shader."
+    },
+    {
+     "id": "regl",
+     "motivo": "Ruido en comandos regl. (combinación por arquitectura)",
+     "orden_instalacion": "Incluye las funciones en el fragment shader."
+    },
+    {
+     "id": "react-three-fiber",
+     "motivo": "Shaders personalizados en R3F. (combinación por arquitectura)",
+     "orden_instalacion": "Usa un shaderMaterial con las funciones."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/ashima/webgl-noise/blob/master/README"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ashima/webgl-noise",
+    "archived": false,
+    "pushed_at": "2024-11-15",
+    "license": "MIT",
+    "primary_language": "C++",
+    "checked_at": "2026-11-15"
+   }
   },
   "genjutsu": {
    "name": "genjutsu",
@@ -73256,7 +73799,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Modelar un objeto sencillo; Preparar una escena de presentación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Este repositorio es un espejo del código; para utilizar Blender elige la distribución de la aplicación y no compiles todo el espejo; los conectores AI son otros proyectos",
-   "combines_with": [],
+   "combines_with": [
+    "blender-mcp",
+    "3dviz-pro-max",
+    "three.js"
+   ],
    "alternatives": [],
    "repo": "https://github.com/blender/blender",
    "homepage": "https://developer.blender.org/docs/handbook/contributing/using_git/#github-mirror",
@@ -73355,7 +73902,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION). El repo de GitHub es un espejo del desarrollo oficial, con ~22k estrellas.",
+   "que_hace": "Cubre modelado, escultura, rigging, animación, simulación, render (Cycles y EEVEE), composición, edición de vídeo y Grease Pencil, y es extensible con Python.",
+   "como_lo_hace": "Los binarios se descargan de blender.org. Para compilar desde el espejo hay que clonar con `GIT_LFS_SKIP_SMUDGE=1` para evitar errores de LFS.",
+   "combina_con": [
+    {
+     "id": "blender-mcp",
+     "motivo": "Controlar Blender desde un agente vía MCP.",
+     "orden_instalacion": "Instala el addon y el servidor MCP."
+    },
+    {
+     "id": "3dviz-pro-max",
+     "motivo": "Skill de escenas 3D con Blender.",
+     "orden_instalacion": "Añade la skill al agente."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Exportar a glTF para la web. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta glTF desde Blender."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/blender/blender/blob/main/.github/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "37-datos-y-graficos-3d-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "blender/blender",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C++",
+    "checked_at": "2026-11-15"
+   }
   },
   "rubberband": {
    "name": "rubberband",

@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+three.js, biblioteca JavaScript 3D de propósito general, de @mrdoob y comunidad. Licencia MIT. Es muy madura (~119k estrellas, r187).
+
+## ¿Qué hace?
+
+Crea escenas 3D interactivas en el navegador con renderizadores WebGL y WebGPU (SVG y CSS3D como addons), cámaras, luces, materiales, cargadores (glTF y otros), animación y postprocesado.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install three` o se importa desde CDN como módulo ES. Tiene una amplia colección de ejemplos y addons.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [react-three-fiber](react-three-fiber.md) | Renderer de React para three.js. | Instala `@react-three/fiber` junto a three. |
+| [GSAP](gsap.md) | Animar propiedades de objetos 3D con timelines. (combinación por arquitectura) | Anima `mesh.position` con GSAP. |
+| [threejs-skills](threejs-skills.md) | Skills para que un agente programe escenas. | Añade las skills al agente. |
+| [meshoptimizer](meshoptimizer.md) | Optimizar geometría glTF. | Comprime los modelos antes de cargarlos. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada r187 (2026-10-30) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mrdoob/three.js/blob/dev/README.md) · [2](https://threejs.org/docs/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no necesita API de IA; modelos 3D, texturas y hosting tienen licencias y costes propios |
 | Equipo | Preparación según la ruta elegida. Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible |
-
-Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app
-
-## Qué puedes hacer con él
-
-Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.
-
-## Por qué destaca
-
-Usos propuestos: Crear un visor 3D web; Prototipar una escena interactiva.
-
-## Cómo funciona
 
 Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app
 
@@ -85,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [react-three-fiber](react-three-fiber.md) | 33.7k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
-| [GSAP](gsap.md) | 30.6k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
 ## Enlaces
 

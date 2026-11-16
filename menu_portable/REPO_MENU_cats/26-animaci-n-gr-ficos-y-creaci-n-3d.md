@@ -31,6 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Anima un cuadrado y cambia duración y easing para observar la diferencia
 **Qué comprobar:** Puedes identificar qué propiedad cambia y cuándo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `magicui`, `motion-design-skill`
 **Alternativas (elige una):** `gsap`, `motion`
 
 ## `awesome-cad`
@@ -90,6 +91,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Usa una escena nueva con un cubo y prueba mover, iluminar y renderizar una imagen
 **Qué comprobar:** Puedes guardar el proyecto y localizar el render
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender-mcp`, `3dviz-pro-max`, `three.js`
 
 ## `filament`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,library,c
@@ -148,7 +150,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una timeline con dos movimientos y cambia el orden y duración
 **Qué comprobar:** Puedes ver cómo se coordinan los pasos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `motion`
+**Combina con:** `three.js`, `motion`, `remotion`
 **Alternativas (elige una):** `animejs`
 
 ## `meshoptimizer`
@@ -209,7 +211,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade una transición sencilla a un elemento y comprueba su estado inicial y final
 **Qué comprobar:** Puedes ajustar la animación y seguir usando el control con teclado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `magicui`, `react-three-fiber`
+**Combina con:** `magicui`, `react-three-fiber`, `claude-code`
 **Alternativas (elige una):** `animejs`
 
 ## `ozz-animation`
@@ -356,7 +358,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Monta una escena con un cubo y cambia una propiedad mediante estado de React
 **Qué comprobar:** Puedes observar la actualización declarativa del objeto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `motion`
+**Combina con:** `three.js`, `react-three-rapier`, `motion`
 
 ## `react-three-rapier`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
@@ -473,7 +475,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue el ejemplo del cubo y cambia su color o rotación
 **Qué comprobar:** Puedes ver la escena, cámara y objeto y reconocer su relación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `react-three-fiber`, `gsap`
+**Combina con:** `react-three-fiber`, `gsap`, `threejs-skills`, `meshoptimizer`
 
 ## `warp`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
@@ -503,6 +505,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una simulación de ejemplo con pocas partículas y revisa su evolución
 **Qué comprobar:** Puedes identificar kernel, dispositivo y estado simulado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `blender`, `cosmos`
 
 ## `webgl-noise`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,c
@@ -532,6 +535,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Integra una función de ruido y cambia su escala para observar el patrón
 **Qué comprobar:** Puedes reconocer un patrón procedural sin cargar una textura
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `regl`, `react-three-fiber`
 
 ## `zdog`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript

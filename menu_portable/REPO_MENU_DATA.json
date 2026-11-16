@@ -70315,7 +70315,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-dataviz"
+        "awesome-dataviz",
+        "duckdb",
+        "hudi"
       ],
       "alt": []
     },
@@ -70429,7 +70431,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "streamlit",
-        "echarts"
+        "echarts",
+        "duckdb"
       ],
       "alt": []
     },
@@ -70658,7 +70661,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "three.js"
+        "three.js",
+        "duckdb",
+        "3dviz-pro-max"
       ],
       "alt": []
     },
@@ -70775,7 +70780,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una demo de un modelo; Preparar una herramienta interna de texto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "transformers"
+        "transformers",
+        "llama-factory",
+        "ollama"
       ],
       "alt": [
         "streamlit"
@@ -70894,7 +70901,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "duckdb",
+        "superset",
+        "awesome-bigdata"
+      ],
       "alt": []
     },
     {
@@ -71252,7 +71263,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "dash"
+        "dash",
+        "polars",
+        "duckdb"
       ],
       "alt": [
         "gradio"
@@ -71365,7 +71378,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mostrar una transición de estado; Animar un SVG sencillo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "magicui",
+        "motion-design-skill"
+      ],
       "alt": [
         "gsap",
         "motion"
@@ -71588,7 +71605,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Modelar un objeto sencillo; Preparar una escena de presentación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "blender-mcp",
+        "3dviz-pro-max",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -71811,7 +71832,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Sincronizar una transición compleja; Animar un diagrama explicativo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "motion"
+        "three.js",
+        "motion",
+        "remotion"
       ],
       "alt": [
         "animejs"
@@ -72045,7 +72068,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "magicui",
-        "react-three-fiber"
+        "react-three-fiber",
+        "claude-code"
       ],
       "alt": [
         "animejs"
@@ -72607,6 +72631,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un configurador 3D; Construir una escena React interactiva",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "three.js",
+        "react-three-rapier",
         "motion"
       ],
       "alt": []
@@ -73056,7 +73082,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "react-three-fiber",
-        "gsap"
+        "gsap",
+        "threejs-skills",
+        "meshoptimizer"
       ],
       "alt": []
     },
@@ -73174,7 +73202,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar simulación física; Prototipar cómputo para robótica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pytorch",
+        "blender",
+        "cosmos"
+      ],
       "alt": []
     },
     {
@@ -73285,7 +73317,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear textura de nube procedural; Explorar variaciones de una superficie",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "regl",
+        "react-three-fiber"
+      ],
       "alt": []
     },
     {

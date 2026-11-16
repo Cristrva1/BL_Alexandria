@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+NVIDIA Warp, framework Python para simulación, robótica y ML acelerados por GPU. Licencia Apache-2.0. Es maduro (~7.3k estrellas, v1.19.0).
+
+## ¿Qué hace?
+
+Compila con JIT funciones Python normales a kernels eficientes para CPU o GPU. Ofrece primitivas de simulación física, geometría y robótica, y sus kernels son diferenciables, así que se integran en pipelines de ML.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ y se instala con `pip install warp-lang` (extras `[examples]` para USD). Hay wheels para Windows, Linux y macOS (Apple Silicon solo CPU); la GPU requiere CUDA.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Interoperabilidad de tensores para ML diferenciable. | Convierte arrays con las utilidades de interop. |
+| [blender](blender.md) | Visualizar resultados exportados a USD. (combinación por arquitectura) | Importa el USD en Blender. |
+| [cosmos](cosmos.md) | Datos de simulación para modelos de mundo. (combinación por arquitectura) | Genera escenas con Warp. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.19.0 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA/warp/blob/main/README.md) · [2](https://nvidia.github.io/warp/stable/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; GPU, energía y servicios de cómputo son costes separados |
 | Equipo | Preparación según la ruta elegida. Python 3.11+; CPU o GPU soportada; ejemplo pequeño |
-
-NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM
-
-## Qué puedes hacer con él
-
-Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar simulación física; Prototipar cómputo para robótica.
-
-## Cómo funciona
 
 NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM
 
