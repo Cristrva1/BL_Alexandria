@@ -31,7 +31,10 @@ NAMES = {"adopcion": "Adopción", "mantenimiento": "Mantenimiento", "licencia": 
 
 
 def load_config(root: Path) -> dict:
-    return yaml.safe_load((root / "config" / "calidad.yaml").read_text(encoding="utf-8")) or {}
+    path = root / "config" / "calidad.yaml"
+    if not path.exists():  # copia sin config/ (pruebas): rúbrica del código fuente
+        path = Path(__file__).resolve().parents[3] / "config" / "calidad.yaml"
+    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
 
 def percentile_ranks(values: dict[str, float]) -> dict[str, float]:

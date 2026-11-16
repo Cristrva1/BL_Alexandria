@@ -463,6 +463,8 @@ class AddResult:
     reciprocal: dict[str, list[str]] = field(default_factory=dict)
     new_subs: list[str] = field(default_factory=list)
     written: list[str] = field(default_factory=list)
+    compact: dict | None = None  # índices resultantes (también en simulación), para la evaluación de calidad
+    detail: dict | None = None
 
 
 def load_batch(path: Path) -> dict:
@@ -581,6 +583,7 @@ def run_add(root: Path, batch: dict, *, gh: GhFn = gh_api, force: bool = False, 
     if remaining:
         raise AddError(f"Quedan combinaciones sin reciprocidad posible: {remaining[:10]}")
     recount(compact, date)
+    result.compact, result.detail = compact, detail
     if simulate or not built:
         return result
     four_path = root / f"curation/descripciones-4s/48-altas-{lote}.json"
