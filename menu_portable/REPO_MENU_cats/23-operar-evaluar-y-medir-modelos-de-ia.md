@@ -36,6 +36,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `ollama`, `vllm`
 **Alternativas (elige una):** `omniroute`, `claude-code-router`, `litellm`
 
+## `bentoml`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=serving,python,ml,docker
+
+**Qué es:** Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/bentoml/BentoML
+
+**Instalación** [+]:
+
+```
+pip install -U bentoml
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar un modelo de Transformers como API REST; empaquetar un LLM servido con vLLM en una imagen desplegable
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install -U bentoml`, define el servicio de ejemplo del README y arráncalo con `bentoml serve`.
+**Qué comprobar:** La API responde en localhost con el resultado del modelo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `transformers`, `pytorch`
+
 ## `claude-code-router`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=serving,server,typescript
 
@@ -65,7 +95,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade un proveedor, inicia el servidor local y aplica un perfil a una sesión de prueba
 **Qué comprobar:** Puedes identificar endpoint, modelo y ruta efectiva
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `claude-code-hooks-mastery`
 **Alternativas (elige una):** `omniroute`, `backdoor`, `litellm`
 
 ## `claude-code-usage-monitor`
@@ -100,7 +130,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el monitor y compara una cifra con su etiqueta de procedencia y fecha
 **Qué comprobar:** Puedes distinguir consumo observado, estado oficial y previsión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `rtk`, `headroom`
+**Combina con:** `claude-code`, `rtk`, `headroom`, `claude-token-efficient`
 
 ## `deepeval`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai · tags=evaluation,python
@@ -132,6 +162,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `llama-index`, `mlflow`, `langfuse`
 **Alternativas (elige una):** `ragas`, `promptfoo`
+
+## `gpustack`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=serving,python,gpu,self-hosted
+
+**Qué es:** Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/gpustack/gpustack
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/gpustack/gpustack/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Sigue la guía de instalación con Docker en un nodo con GPU NVIDIA, despliega un modelo pequeño y prueba la API con curl.
+**Qué comprobar:** El modelo responde por el endpoint compatible con OpenAI.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `sglang`, `tensorrt-llm`
 
 ## `guardrails`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=security,chatbot,python
@@ -191,8 +251,39 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Comprime una salida JSON pequeña y compara el resultado con el original antes de envolver un agente
 **Qué comprobar:** Puedes identificar qué se conservó y recuperar el original cuando corresponda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `litellm`, `context-engineering`, `codegraph`
+**Combina con:** `claude-code`, `litellm`, `context-engineering`, `codegraph`, `claude-code-usage-monitor`, `mimo-code`
 **Alternativas (elige una):** `rtk`
+
+## `helicone`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=observability,typescript,llm,self-hosted
+
+**Qué es:** Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Helicone/helicone
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Helicone/helicone/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: ver coste y latencia de todas las llamadas a modelos de tu aplicación; versionar prompts y enrutar entre proveedores con reintentos
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Helicone con su Docker Compose, cambia la URL base de un cliente OpenAI a la pasarela y haz una petición.
+**Qué comprobar:** La petición aparece en el panel con coste, tokens y latencia.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `litellm`, `langchain`, `open-webui`
+**Alternativas (elige una):** `langfuse`
 
 ## `langfuse`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,observability,typescript,docker
@@ -228,7 +319,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes rastrear una respuesta hasta la llamada que la produjo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `langchain`, `open-webui`, `ragas`
-**Alternativas (elige una):** `phoenix`, `opik`, `mlflow`
+**Alternativas (elige una):** `phoenix`, `opik`, `mlflow`, `helicone`
 
 ## `litellm`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=inference,llmops,python,docker
@@ -260,6 +351,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `open-webui`, `langfuse`, `claude-code`
 **Alternativas (elige una):** `omniroute`, `claude-code-router`, `backdoor`
+
+## `lm-eval-harness`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=evaluation,python,llm,benchmark
+
+**Qué es:** Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/EleutherAI/lm-evaluation-harness
+
+**Instalación** [+]:
+
+```
+pip install "lm_eval[hf]"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K; reproducir resultados de tablas de clasificación con la misma configuración
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install "lm_eval[hf]"` y evalúa un modelo pequeño de Hugging Face en una tarea ligera con `lm_eval --model hf --tasks ...`.
+**Qué comprobar:** Obtienes una tabla con la métrica de la tarea y su error estándar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `sglang`, `transformers`, `torchtune`, `gemma`
 
 ## `loguru`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=observability,evaluation,python
@@ -319,7 +440,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicia el servidor de prueba y registra una ejecución pequeña con parámetros y resultado
 **Qué comprobar:** Puedes abrir la ejecución y comparar sus datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`
+**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`, `qlib`, `airflow`
 **Alternativas (elige una):** `langfuse`
 
 ## `omniroute`
@@ -352,6 +473,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `cline`, `ollama`
 **Alternativas (elige una):** `claude-code-router`, `backdoor`, `litellm`
+
+## `openllmetry`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=observability,python,llm,opentelemetry
+
+**Qué es:** Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/traceloop/openllmetry
+
+**Instalación** [+]:
+
+```
+pip install traceloop-sdk
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: trazar llamadas a OpenAI, LangChain o Ollama en Grafana o Datadog; añadir observabilidad de LLM a una pila OpenTelemetry existente
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install traceloop-sdk`, inicializa el SDK en un script con una llamada a un modelo y envía las trazas a la consola o a tu backend.
+**Qué comprobar:** Ves las trazas con prompts, tokens y latencias.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `langchain`, `llama-index`, `ollama`
 
 ## `opik`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=observability,evaluation,python
@@ -480,6 +631,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`, `langfuse`, `langchain`, `opik`
 **Alternativas (elige una):** `deepeval`, `promptfoo`
 
+## `ray`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=distributed,python,serving,ml
+
+**Qué es:** Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ray-project/ray
+
+**Instalación** [+]:
+
+```
+pip install ray
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo.
+**Qué comprobar:** Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `pytorch`, `verl`, `openrlhf`
+
 ## `rtk`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=tokens,agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction
 
@@ -508,7 +689,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un comando RTK y compara su salida con la versión sin comprimir antes de activar hooks
 **Qué comprobar:** Puedes comprobar datos omitidos y contadores de ahorro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `gemini-cli`
+**Combina con:** `claude-code`, `codex`, `gemini-cli`, `claude-code-usage-monitor`, `mimo-code`
 **Alternativas (elige una):** `headroom`
 
 ## `sglang`
@@ -539,7 +720,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el quickstart y comprueba una petición breve al modelo servido
 **Qué comprobar:** Puedes identificar modelo, proceso y respuesta del endpoint
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `open-webui`, `unsloth`
+**Combina con:** `litellm`, `open-webui`, `unsloth`, `deepseek-v3`, `kimi-k2-7-code`, `llama-factory`
 **Alternativas (elige una):** `vllm`
 
 ## `tensorrt-llm`
@@ -570,7 +751,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar
 **Qué comprobar:** Puedes relacionar motor, modelo y configuración de memoria
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `open-webui`, `transformers`
+**Combina con:** `litellm`, `open-webui`, `transformers`, `deepseek-v3`, `gpustack`
 
 ## `vllm`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python
@@ -603,3 +784,33 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `open-webui`, `langchain`
 **Alternativas (elige una):** `sglang`
+
+## `xinference`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=serving,python,llm,self-hosted
+
+**Qué es:** Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/xorbitsai/inference
+
+**Instalación** [+]:
+
+```
+pip install xinference
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor; conectar Dify, LangChain o LlamaIndex a modelos propios
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala con `pip install xinference`, arranca `xinference-local` y lanza un modelo pequeño desde la interfaz web.
+**Qué comprobar:** El modelo responde por la API compatible con OpenAI.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `llama-cpp`, `langchain`, `llama-index`

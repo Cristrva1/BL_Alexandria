@@ -29,6 +29,15 @@ Cada skill es una carpeta con `SKILL.md` (instrucciones y metadatos) y recursos.
 | [Claude Code](claude-code.md) | Instalación oficial como marketplace de plugins. | Añade el marketplace e instala solo los paquetes que necesites. |
 | [SkillSpector](skillspector.md) | Auditar skills (scripts incluidos) antes de instalarlas (combinación por arquitectura). | Pasa SkillSpector sobre las carpetas antes de habilitarlas. |
 | [claude-agent-sdk-python](claude-agent-sdk-python.md) | Usar las skills dentro de agentes propios (combinación por arquitectura). | Copia las skills al directorio que cargue tu agente. |
+| [hello-halo](hello-halo.md) | Combinación recíproca: hello-halo lo enlaza como «Skills compatibles con el ecosistema de Claude Code». | Orden indicado desde hello-halo: Importa las skills. |
+| [scientific-agent-skills](scientific-agent-skills.md) | Combinación recíproca: scientific-agent-skills lo enlaza como «Sus skills de documentos provienen de anthropics/skills». | Orden indicado desde scientific-agent-skills: No dupliques las mismas skills de documentos desde ambos repositorios. |
+| [financial-services](financial-services.md) | Combinación recíproca: financial-services lo enlaza como «Skills de documentos (Excel, PowerPoint, Word) para producir modelos y presentaciones (combinación por arquitectura)». | Orden indicado desde financial-services: Instala las skills de documentos en el mismo entorno. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[prompt-master](prompt-master.md)
 
 **Notas:** Se quitaron claude-plugins-official y superpowers porque no hay integración documentada.
 

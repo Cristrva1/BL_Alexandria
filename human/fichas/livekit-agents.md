@@ -116,6 +116,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 | [dograh](dograh.md) | 6.1k | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. |
+| [TEN Framework](ten-framework.md) | 11.2k | Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos. |
 
 ## Enlaces
 

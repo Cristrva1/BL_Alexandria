@@ -30,6 +30,12 @@ El backend está en Ruby y el frontend en Vue, según los lenguajes del reposito
 | [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `chatwoot` para usar chatwoot en flujos. | chatwoot en marcha con sus credenciales; después añade la pieza `chatwoot` en un flujo de Activepieces. |
 | [firecrawl](firecrawl.md) | Captain puede usar una clave de Firecrawl (opcional) para rastrear mejor los sitios web de su base de conocimiento; sin ella usa un rastreador simple. | Solo con Captain activo (plan de pago): añade la clave en el Super Admin. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OpenWA](openwa.md) · [Typebot](typebot.md) · [WAHA](waha.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md)
+
 **Notas:** Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. Se resuelve el antiguo [DATO NO VERIFICADO] sobre Captain: no está en la Community Edition.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.19.1 (2026-10-24) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

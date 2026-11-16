@@ -30,6 +30,12 @@ Frontend en Svelte y backend en Python: se instala con `pip install open-webui` 
 | [litellm](litellm.md) | Como endpoint compatible con OpenAI, LiteLLM da acceso a más de 100 proveedores con claves virtuales y control de gasto desde la misma interfaz. | LiteLLM proxy primero (puerto 4000); luego añádelo como conexión OpenAI en Open WebUI. |
 | [SearXNG](searxng.md) | Motor de búsqueda web autoalojado para las respuestas con búsqueda en Open WebUI. | SearXNG primero; activa el formato `json` en su `settings.yml` (si no, Open WebUI recibe 403) y define `SEARXNG_QUERY_URL`. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[exo](exo.md) · [Fabric](fabric.md) · [FreeToken](freetoken.md) · [Helicone](helicone.md) · [Jina Reader](jina-reader.md) · [KoboldCpp](koboldcpp.md) · [langfuse](langfuse.md) · [llama.cpp](llama-cpp.md) · [llamafile](llamafile.md) · [LocalAI](localai.md) · [MLC LLM](mlc-llm.md) · [MLX LM](mlx-lm.md) · [prompts.chat](prompts-chat.md) · [SGLang](sglang.md) · [TensorRT-LLM](tensorrt-llm.md) · [vLLM](vllm.md)
+
 **Notas:** Alternativas (elige una): librechat, lobehub, anything-llm, textgen. La cláusula de marca limita el rebranding: revisa LICENSE antes de redistribuirlo con otra imagen.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.13.3 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).

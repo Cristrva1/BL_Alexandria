@@ -29,6 +29,7 @@ La mayoría de los ejemplos son notebooks Python que requieren una cuenta y una 
 | [openai-python](openai-python.md) | SDK oficial usado por casi todos los notebooks. | Instala `openai` en el entorno antes de ejecutar los ejemplos. |
 | [OpenAI Agents SDK](openai-agents-python.md) | Recetas de agentes del cookbook basadas en el Agents SDK de OpenAI. | Instálalo cuando sigas las recetas de agentes. |
 | [promptfoo](promptfoo.md) | Llevar las evaluaciones del cookbook a una suite automatizada y comparable entre modelos. (combinación por arquitectura) | Reutiliza los casos de prueba del notebook en promptfoo. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | Combinación recíproca: Generative AI for Beginners lo enlaza como «Recetas más avanzadas para quienes usan la API de OpenAI en los ejercicios. (combinación por arquitectura)». | Orden indicado desde Generative AI for Beginners: Úsalo como siguiente paso práctico tras las lecciones 'Build'. |
 
 **Notas:** Alternativas (elige una): claude-cookbooks, awesome-llm-apps.
 

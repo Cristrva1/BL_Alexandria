@@ -29,6 +29,15 @@ Paquete npm `@google/design.md` usado con `npx` (`lint`, `diff`, `export`), con 
 | [tailwindcss](tailwindcss.md) | Exporta temas para Tailwind v3 y v4. | Valida el DESIGN.md antes de exportar. |
 | [impeccable](impeccable.md) | Su comando `document` genera un DESIGN.md (combinación por arquitectura). | Genera con impeccable y valida con la CLI. |
 | [Claude Code](claude-code.md) | El agente lee el DESIGN.md como contexto persistente (combinación por arquitectura). | Coloca el archivo en la raíz del repositorio. |
+| [design-dna](design-dna.md) | Combinación recíproca: design-dna lo enlaza como «Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura)». | Orden indicado desde design-dna: Extrae primero y valida después. |
+| [open-design](open-design.md) | Combinación recíproca: open-design lo enlaza como «Formato `DESIGN.md` para describir el sistema de diseño que el agente sigue. (combinación por arquitectura) (OpenDesign usa archivos DESIGN.md; la compatibilidad exacta con la especificación de Google no está verificada)». | Orden indicado desde open-design: Redacta el DESIGN.md antes de generar prototipos. |
+| [Stitch SDK](stitch-sdk.md) | Combinación recíproca: Stitch SDK lo enlaza como «Especificación de sistema de diseño de Google Labs para guiar la generación. (combinación por arquitectura)». | Orden indicado desde Stitch SDK: Redacta el DESIGN.md e inclúyelo en los prompts. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ui-ux-pro-max-skill](ui-ux-pro-max-skill.md)
 
 **Notas:** La especificación sigue en alpha y puede cambiar.
 

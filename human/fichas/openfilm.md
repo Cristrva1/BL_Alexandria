@@ -29,6 +29,7 @@ Requiere Node 22.2+ y FFmpeg (y Git para las versiones guardadas de Studio). Se 
 | [Claude Code](claude-code.md) | Agente soportado. | Pide al agente que use la CLI. |
 | [GSAP](gsap.md) | Animación en las páginas. | Úsalo en el HTML. |
 | [three.js](three-js.md) | Escenas 3D. | Úsalo en el HTML. |
+| [mediabunny](mediabunny.md) | Combinación recíproca: mediabunny lo enlaza como «Exportación de vídeo desde HTML. (combinación por arquitectura)». | Orden indicado desde mediabunny: Evalúalo para codificar en el navegador. |
 
 **Notas:** Sin alternativas declaradas.
 

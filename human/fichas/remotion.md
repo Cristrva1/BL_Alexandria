@@ -30,6 +30,12 @@ Se inicia con `npx create-video@latest` (Node.js). Tiene APIs de Node para rende
 | [Remotion Superpowers](remotion-superpowers.md) | Orquestación de voz, música y material. | Instala el plugin en el agente. |
 | [GSAP](gsap.md) | Animaciones avanzadas dentro de composiciones. (combinación por arquitectura) | Controla timelines por frame. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AudioCraft](audiocraft.md) · [claude-animated-shorts](claude-animated-shorts.md) · [Creative Architect](creative-architect.md) · [earshot](earshot.md) · [json-render](json-render.md) · [mediabunny](mediabunny.md) · [OpenMontage](openmontage.md) · [rea-video](rea-video.md) · [scenejs](scenejs.md) · [video-shotcraft](video-shotcraft.md) · [videofy_minimal](videofy-minimal.md)
+
 **Notas:** Alternativas (elige una): moviepy, hyperframes. Revisa la licencia antes de un uso comercial.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.543 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
@@ -116,6 +122,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 | [HyperFrames](hyperframes.md) | 84.4k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. |
+| [Motion Canvas](motion-canvas.md) | 20k | Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz. |
+| [Revideo](revideo.md) | 4.2k | Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador. |
 
 ## Enlaces
 

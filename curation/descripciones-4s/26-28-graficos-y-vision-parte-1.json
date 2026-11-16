@@ -57,6 +57,12 @@
      "id": "ozz-animation",
      "motivo": "Animación esquelética en runtime. (combinación por arquitectura)",
      "orden_instalacion": "Integra ozz en el motor."
+    },
+    {
+     "id": "awesome-cad",
+     "motivo": "Combinación recíproca: awesome-cad lo enlaza como «Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-cad: Exporta a glTF y visualiza con Filament.",
+     "reciproca_de": "awesome-cad"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -127,6 +133,12 @@
      "id": "three.js",
      "motivo": "Pasar a 3D real cuando haga falta. (combinación por arquitectura)",
      "orden_instalacion": "Migra la escena a three.js."
+    },
+    {
+     "id": "scenejs",
+     "motivo": "Combinación recíproca: scenejs lo enlaza como «Animar ilustraciones pseudo-3D. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde scenejs: Anima propiedades de Zdog desde la escena.",
+     "reciproca_de": "scenejs"
     }
    ],
    "notas": "Sin alternativas declaradas. Inactivo.",
@@ -162,6 +174,18 @@
      "id": "filament",
      "motivo": "Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)",
      "orden_instalacion": "Exporta a glTF y visualiza con Filament."
+    },
+    {
+     "id": "freecad",
+     "motivo": "Combinación recíproca: FreeCAD lo enlaza como «El directorio awesome-cad incluye FreeCAD entre sus programas CAD de referencia».",
+     "orden_instalacion": "Orden indicado desde FreeCAD: Consulta awesome-cad para elegir herramientas complementarias; después instálalas junto a FreeCAD.",
+     "reciproca_de": "freecad"
+    },
+    {
+     "id": "openscad",
+     "motivo": "Combinación recíproca: OpenSCAD lo enlaza como «El directorio awesome-cad incluye OpenSCAD entre sus herramientas CAD».",
+     "orden_instalacion": "Orden indicado desde OpenSCAD: Consulta awesome-cad para bibliotecas y complementos; después úsalos con OpenSCAD.",
+     "reciproca_de": "openscad"
     }
    ],
    "notas": "Sin alternativas declaradas. Recurso, no software.",
@@ -195,6 +219,12 @@
      "id": "planck-js",
      "motivo": "Física 2D para el juego que usa los efectos. (combinación por arquitectura)",
      "orden_instalacion": "Combina en el mismo juego."
+    },
+    {
+     "id": "pencil",
+     "motivo": "Combinación recíproca: pencil lo enlaza como «Efectos de pixel art de referencia. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde pencil: Usa los sprite sheets como guía.",
+     "reciproca_de": "pencil"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -266,6 +296,12 @@
      "id": "three.js",
      "motivo": "Simular física 2D y dibujar el resultado en una escena three.js (por ejemplo, con cámara ortográfica). (combinación por arquitectura)",
      "orden_instalacion": "Actualiza las posiciones de las mallas desde el paso de simulación de Planck."
+    },
+    {
+     "id": "pixijs",
+     "motivo": "Combinación recíproca: PixiJS lo enlaza como «Planck.js simula física 2D y PixiJS puede dibujar sus cuerpos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PixiJS: Calcula la física con Planck.js; después sincroniza las posiciones de los sprites en cada fotograma.",
+     "reciproca_de": "pixijs"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -370,6 +406,18 @@
      "id": "blender",
      "motivo": "Optimizar exportaciones glTF. (combinación por arquitectura)",
      "orden_instalacion": "Pasa el glTF exportado por gltfpack."
+    },
+    {
+     "id": "ozz-animation",
+     "motivo": "Combinación recíproca: ozz-animation lo enlaza como «Optimizar las mallas de los personajes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ozz-animation: Procesa las mallas antes.",
+     "reciproca_de": "ozz-animation"
+    },
+    {
+     "id": "regl",
+     "motivo": "Combinación recíproca: regl lo enlaza como «Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde regl: Optimiza la malla antes de subirla a buffers.",
+     "reciproca_de": "regl"
     }
    ],
    "notas": "Sin alternativas declaradas.",

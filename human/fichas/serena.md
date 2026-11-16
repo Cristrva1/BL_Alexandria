@@ -29,6 +29,7 @@ Se instala con uv y se conecta al cliente con un comando de arranque o en modo H
 | [Claude Code](claude-code.md) | Cliente MCP compatible, con instrucciones en la documentación. | Instala Serena con uv y añádelo con su comando de arranque. |
 | [Codex CLI](codex.md) | Cliente MCP compatible. | Configura el comando de arranque de Serena en Codex. |
 | [Context7](context7.md) | Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura) | Instala ambos servidores en el mismo agente. |
+| [SuperClaude_Framework](superclaude-framework.md) | Combinación recíproca: SuperClaude_Framework lo enlaza como «MCP opcional de comprensión de código». | Orden indicado desde SuperClaude_Framework: Mediante airis-mcp-gateway. |
 
 **Notas:** Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.
 

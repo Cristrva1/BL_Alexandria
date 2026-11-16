@@ -623,6 +623,16 @@
     return Boolean(item.que_es && item.que_hace && item.como_lo_hace && (item.combina_con || []).length);
   }
 
+  function usedBy(item) {
+    const users = (item.used_by || []).filter((id) => repo(id));
+    if (!users.length) return "";
+    const links = users.map((id) => `<a href="#/repo/${encodeURIComponent(id)}">${esc(repo(id).name)}</a>`).join(" · ");
+    const body = `<p class="meta">Repos que lo citan en sus combinaciones sin que figuren arriba. Lista generada automáticamente; el motivo está en la ficha de cada uno.</p><p>${links}</p>`;
+    return users.length > 12
+      ? `<details class="used-by"><summary><h2>Usado por (${users.length})</h2></summary>${body}</details>`
+      : `<h2>Usado por (${users.length})</h2>${body}`;
+  }
+
   function fourSections(item) {
     if (!hasFour(item)) return "";
     const combos = item.combina_con.filter((combo) => repo(combo.id)).map((combo) => `<li><a href="#/repo/${encodeURIComponent(combo.id)}"><strong>${esc(repo(combo.id).name)}</strong></a>: ${esc(combo.motivo || "")}${combo.orden_instalacion ? `<br><span class="meta">Orden y cuidados: ${esc(combo.orden_instalacion)}</span>` : ""}</li>`).join("");
@@ -638,6 +648,7 @@
         <h2>¿Qué hace?</h2><p>${esc(item.que_hace)}</p>
         <h2>¿Cómo lo hace?</h2><p>${esc(item.como_lo_hace)}</p>
         <h2>¿Con qué otros repos se combina?</h2><ul>${combos}</ul>
+        ${usedBy(item)}
         ${item.descripcion_notas ? `<p><strong>Notas.</strong> ${esc(item.descripcion_notas)}</p>` : ""}
         ${ogLine}${ghLine}
         <p class="meta">Descripción redactada a partir de la documentación del autor (revisada el ${esc(checked)}); no se instaló ni ejecutó.${sources ? ` ${sources}` : ""}</p>

@@ -78,6 +78,12 @@
      "id": "ollama",
      "motivo": "Modelos locales para desarrollo mediante un endpoint compatible con OpenAI. (combinación por arquitectura)",
      "orden_instalacion": "Arranca Ollama y apunta el cliente compatible con OpenAI a su URL local."
+    },
+    {
+     "id": "ai-agents-for-beginners",
+     "motivo": "Combinación recíproca: AI Agents for Beginners lo enlaza como «Framework usado en todos los ejemplos de código del curso».",
+     "orden_instalacion": "Orden indicado desde AI Agents for Beginners: Sigue la lección de configuración del curso; instala agent-framework en Python.",
+     "reciproca_de": "ai-agents-for-beginners"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo; frameworks comparables: langgraph, crewai, openai-agents-python. Hallazgo: AutoGen (microsoft/autogen) no está en el catálogo; Agent Framework es su sucesor oficial.",
@@ -122,6 +128,18 @@
      "id": "langgraph",
      "motivo": "Versión Python de referencia; útil cuando un equipo mezcla servicios Python y TS con el mismo modelo mental. (combinación por arquitectura)",
      "orden_instalacion": "Elige un lenguaje por servicio; comparten conceptos, no código."
+    },
+    {
+     "id": "agent-protocol",
+     "motivo": "Combinación recíproca: Agent Protocol lo enlaza como «Implementación open source en LangGraph.js API».",
+     "orden_instalacion": "Orden indicado desde Agent Protocol: Sirve el agente JS con langgraph-api.",
+     "reciproca_de": "agent-protocol"
+    },
+    {
+     "id": "social-media-agent",
+     "motivo": "Combinación recíproca: social-media-agent lo enlaza como «Runtime del agente».",
+     "orden_instalacion": "Orden indicado desde social-media-agent: Arranca el servidor LangGraph.",
+     "reciproca_de": "social-media-agent"
     }
    ],
    "notas": "Alternativas (elige una): mastra, vercel-ai.",
@@ -239,6 +257,24 @@
      "id": "claude-code",
      "motivo": "Consumir apps de Dify publicadas como servidor MCP desde un agente de programación (la documentación de Dify cita Claude Desktop y Cursor). (combinación por arquitectura para Claude Code)",
      "orden_instalacion": "Publica la app como MCP en Dify y registra la URL en el cliente."
+    },
+    {
+     "id": "evolution-api",
+     "motivo": "Combinación recíproca: evolution-api lo enlaza como «Integración nativa para responder con agentes o RAG construidos en Dify».",
+     "orden_instalacion": "Orden indicado desde evolution-api: Dify primero, con su app publicada; luego conéctala a la instancia.",
+     "reciproca_de": "evolution-api"
+    },
+    {
+     "id": "paddleocr",
+     "motivo": "Combinación recíproca: PaddleOCR lo enlaza como «El README cita Dify entre los proyectos que lo integran».",
+     "orden_instalacion": "Orden indicado desde PaddleOCR: Úsalo como servicio externo de OCR o herramienta dentro de los flujos.",
+     "reciproca_de": "paddleocr"
+    },
+    {
+     "id": "ten-framework",
+     "motivo": "Combinación recíproca: TEN Framework lo enlaza como «TEN incluye una extensión que conecta el agente de voz con aplicaciones de Dify».",
+     "orden_instalacion": "Orden indicado desde TEN Framework: Crea la app en Dify; después configura la extensión de Dify en el grafo de TEN con su clave.",
+     "reciproca_de": "ten-framework"
     }
    ],
    "notas": "Alternativas (elige una): sim, ragflow. Combinación anterior con langflow eliminada: son plataformas solapadas sin integración documentada. Licencia con condiciones adicionales sobre Apache 2.0.",
@@ -321,6 +357,12 @@
      "id": "ollama",
      "motivo": "Modelos locales para reducir el coste de simulaciones masivas vía endpoint compatible con OpenAI. (combinación por arquitectura; la calidad con modelos pequeños no está verificada)",
      "orden_instalacion": "Instala Ollama y apunta LLM_BASE_URL a su API /v1."
+    },
+    {
+     "id": "pythia",
+     "motivo": "Combinación recíproca: Pythia lo enlaza como «Motor de predicción por enjambre integrado».",
+     "orden_instalacion": "Orden indicado desde Pythia: Viene integrado en PYTHIA.",
+     "reciproca_de": "pythia"
     }
    ],
    "notas": "Sin alternativas declaradas. Combinación anterior con openevolve eliminada: sin relación técnica documentada. Licencia AGPL-3.0: ofrecerlo como servicio en red obliga a publicar las modificaciones.",
@@ -547,6 +589,18 @@
      "id": "e2b",
      "motivo": "Ejecutar el agente, que tiene acceso a Bash y archivos, dentro de un sandbox aislado. (combinación por arquitectura)",
      "orden_instalacion": "Crea el sandbox e instala el SDK dentro de él."
+    },
+    {
+     "id": "agno",
+     "motivo": "Combinación recíproca: Agno lo enlaza como «SDK soportado para construir agentes que AgentOS sirve».",
+     "orden_instalacion": "Orden indicado desde Agno: Instala Agno y el SDK de Claude Agent en el mismo entorno.",
+     "reciproca_de": "agno"
+    },
+    {
+     "id": "pageindex",
+     "motivo": "Combinación recíproca: PageIndex lo enlaza como «Integración documentada con el Claude Agent SDK».",
+     "orden_instalacion": "Orden indicado desde PageIndex: Igual que arriba.",
+     "reciproca_de": "pageindex"
     }
    ],
    "notas": "Sin alternativas declaradas; comparable a openai-agents-python (otro proveedor).",

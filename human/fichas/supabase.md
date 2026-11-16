@@ -30,6 +30,12 @@ Se usa en supabase.com o se autoaloja con Docker, y tiene CLI para desarrollo lo
 | [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `supabase` para usar supabase en flujos. | supabase en marcha con sus credenciales; después añade la pieza `supabase` en un flujo de Activepieces. |
 | [coolify](coolify.md) | Autoalojar Supabase. (combinación por arquitectura) | Despliega desde Coolify. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (17). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Appsmith](appsmith.md) · [Budibase](budibase.md) · [Chart.js](chart-js.md) · [Dokploy](dokploy.md) · [Evidence](evidence.md) · [free-for-dev](free-for-dev.md) · [Grafana](grafana.md) · [Onlook](onlook.md) · [plasmic](plasmic.md) · [Plausible Analytics](plausible.md) · [Redash](redash.md) · [social-media-agent](social-media-agent.md) · [swr](swr.md) · [TanStack Query](tanstack-query.md) · [Teable](teable.md) · [tldraw](tldraw.md) · [transformers.js](transformers-js.md)
+
 **Notas:** Sin alternativas declaradas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.26.08 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
@@ -99,6 +105,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto de prueba o entorno local; cuenta para Cloud; cliente MCP opcional
 - **Etiquetas:** `infraestructura` `server` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Appwrite](appwrite.md) | 58.1k | Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. |
 
 ## Enlaces
 
