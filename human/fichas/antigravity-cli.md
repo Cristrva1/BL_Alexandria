@@ -85,7 +85,7 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 2. Instala la versión para tu sistema desde la guía oficial e inicia `agy` dentro de un proyecto de prueba.
 3. Completa el inicio de sesión con Google y pide un cambio acotado; revisa los permisos que concede cada herramienta.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/google-antigravity/antigravity-cli/blob/main/README.md)
 

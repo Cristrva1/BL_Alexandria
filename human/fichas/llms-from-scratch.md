@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 108k | NOASSERTION | Jupyter Notebook | 2026-11-10 |
+| 108k | Apache-2.0 | Jupyter Notebook | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/rasbt/LLMs-from-scratch/blob/main/LICENSE.txt). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

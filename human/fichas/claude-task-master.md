@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 28.4k | NOASSERTION | JavaScript | 2026-11-14 |
+| 28.4k | MIT + Commons Clause | JavaScript | 2026-11-14 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación media
 
 **Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + Commons Clause. Commons Clause prohíbe vender el software o un servicio cuyo valor principal sea el software. Fuente: [LICENSE](https://github.com/eyaltoledano/claude-task-master/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

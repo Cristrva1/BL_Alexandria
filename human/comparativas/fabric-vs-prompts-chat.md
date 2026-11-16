@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelos locales documentados | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
-| Licencia | MIT | NOASSERTION |
-| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | MIT | MIT (código) + CC0-1.0 (prompts) |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | `/plugin marketplace add f/prompts.chat` |
 
 ## Regla práctica
 

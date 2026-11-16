@@ -80,13 +80,13 @@ role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=back
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/appwrite/appwrite
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/appwrite/appwrite/blob/main/README.md
+docker run -it --rm --publish 127.0.0.1:20080:20080 --volume /var/run/docker.sock:/var/run/docker.sock --volume "$(pwd)"/appwrite:/usr/src/code/appwrite:rw --entrypoint="install" appwrite/appwrite:2.7.2
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -111,13 +111,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=web,g
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/caddyserver/caddy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/caddyserver/caddy/blob/master/README.md
+git clone "https://github.com/caddyserver/caddy.git"
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -142,13 +142,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infr
 - Equipo: Preparación según la ruta elegida. Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar
 **Repo:** https://github.com/IceWhaleTech/CasaOS
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/IceWhaleTech/CasaOS/blob/main/README.md
+wget -qO- https://get.casaos.io | sudo bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -204,13 +204,13 @@ role=platform · exec=cloud · setup=easy · mcp=True · prov=openai,anthropic,m
 - Equipo: Preparación según la ruta elegida. Cuenta Composio; CLI o SDK; cuenta externa de prueba
 **Repo:** https://github.com/ComposioHQ/composio
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ComposioHQ/composio/blob/next/README.md
+npm install @composio/core @composio/openai-agents @openai/agents
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -270,13 +270,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infr
 - Equipo: Preparación según la ruta elegida. Servidor compatible; Docker; dominio opcional; aplicación de prueba
 **Repo:** https://github.com/coollabsio/coolify
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://coolify.io/docs/installation
+curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -484,13 +484,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,d
 - Equipo: Preparación según la ruta elegida. Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio
 **Repo:** https://github.com/masterking32/MasterDnsVPN
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD
+docker run -d --name masterdnsvpn --restart unless-stopped -e DOMAIN=v.example.com -v $(pwd)/data:/data -p 53:53/tcp -p 53:53/udp ghcr.io/masterking32/masterdnsvpn:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -514,13 +514,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=age
 - Equipo: Preparación según la ruta elegida. Plataforma compatible según prerequisites; OpenShell; agente y proveedor
 **Repo:** https://github.com/NVIDIA/NemoClaw
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart
+curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -545,13 +545,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=net
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/netbirdio/netbird
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/netbirdio/netbird/blob/main/README.md
+curl -fsSL https://pkgs.netbird.io/install.sh | sh
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -576,13 +576,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=infra,ad
 - Equipo: Preparación según la ruta elegida. macOS o Linux; tmux según ruta; CLI de agente autenticado
 **Repo:** https://github.com/eneskirca/nodeterm
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/eneskirca/nodeterm/blob/main/README.md
+brew install --cask nodeterm
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -733,13 +733,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=net
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/traefik/traefik
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/traefik/traefik/blob/master/README.md
+git clone https://github.com/traefik/traefik
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -764,13 +764,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=monit
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/louislam/uptime-kuma
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/louislam/uptime-kuma/blob/master/README.md
+docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -794,13 +794,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=netwo
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/wg-easy/wg-easy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/wg-easy/wg-easy/blob/master/README.md
+sudo docker compose up / down
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones

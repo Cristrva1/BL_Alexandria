@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
 | Setup | 🔴 pesado | 🔴 pesado |
-| Licencia | GPL-3.0 | NOASSERTION |
-| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | GPL-3.0 | LGPL-3.0 |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 
 ## Regla práctica
 

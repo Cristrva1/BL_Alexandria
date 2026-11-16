@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 21.9k | NOASSERTION | Jupyter Notebook | 2026-06-23 |
+| 21.9k | Licencia propia no comercial | Jupyter Notebook | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Licencia propia no comercial. Licencia personalizada: uso no comercial con atribución; el uso comercial requiere permiso del autor. Fuente: [LICENSE](https://github.com/NirDiamant/agents-towards-production/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

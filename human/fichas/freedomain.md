@@ -68,7 +68,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Lee las condiciones de registro y dibuja registros DNS para un sitio ficticio sin cambiar dominios activos.
 2. Comprueba: Puedes distinguir registro, DNS y alojamiento.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md)
 

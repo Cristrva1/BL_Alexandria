@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 27.2k | NOASSERTION | TypeScript | 2026-11-10 |
+| 27.2k | Apache-2.0 | TypeScript | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/humanlayer/12-factor-agents/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -69,7 +71,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Aplica el principio de controlar el flujo a un agente imaginario de soporte y señala dónde pedir intervención humana.
 2. Comprueba: Obtienes un diagrama con pasos deterministas y decisiones del modelo.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/humanlayer/12-factor-agents/blob/main/README.md)
 

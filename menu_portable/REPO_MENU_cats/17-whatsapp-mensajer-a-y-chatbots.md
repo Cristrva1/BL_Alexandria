@@ -79,13 +79,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=chatbo
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/discordjs/discord.js
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/discordjs/discord.js/blob/main/README.md
+npm install discord.js
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -109,13 +109,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=matrix,c
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/element-hq/element-web
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/element-hq/element-web/blob/develop/README.md
+docker run --rm -p 127.0.0.1:80:80 vectorim/element-web
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -139,13 +139,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=auto
 - Equipo: Preparación según la ruta elegida. Docker o Node; PostgreSQL y Redis según ruta; canal y credenciales; cuenta de prueba
 **Repo:** https://github.com/evolution-foundation/evolution-api
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/evolution-foundation/evolution-api/blob/main/README.md
+docker pull evoapicloud/evolution-api:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -170,13 +170,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=wh
 - Equipo: Preparación según la ruta elegida. Cliente o servidor elegido; micrófono para voz; cuenta de prueba
 **Repo:** https://github.com/fluxerapp/fluxer
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/fluxerapp/fluxer/blob/main/README.md
+flatpak install https://pkgs.fluxer.com/flatpak/fluxer.flatpakref
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -299,13 +299,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=cha
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/RocketChat/Rocket.Chat
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md
+sudo snap install rocketchat-desktop
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -390,13 +390,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=cha
 - Equipo: Preparación según la ruta elegida. Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI
 **Repo:** https://github.com/baptisteArno/typebot.io
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.typebot.io/self-hosting/get-started
+docker-compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -544,13 +544,13 @@ role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=chat,
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/zulip/zulip
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/zulip/zulip/blob/main/README.md
+pip install zulip
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones

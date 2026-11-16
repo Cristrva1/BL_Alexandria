@@ -74701,15 +74701,15 @@
           "cuenta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/WhiskeySockets/Baileys/blob/master/.github/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Ejecuta el ejemplo de conexión y observa cambios de estado sin programar envíos",
@@ -74944,12 +74944,13 @@
           "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
           "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "npm install discord.js",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/discordjs/discord.js/blob/main/README.md",
+        "source": "https://github.com/discordjs/discord.js/blob/main/apps/guide/content/docs/legacy/preparations/installation.mdx",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Installing discord.js»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala con `npm install discord.js`, crea una aplicación en el portal de desarrolladores de Discord y ejecuta un bot que responda a un comando.",
@@ -74994,9 +74995,9 @@
       "desc": "Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.",
       "stack": "TypeScript, package.json",
       "repo": "https://github.com/discordjs/discord.js",
-      "install": "Seguir la instalación original: https://github.com/discordjs/discord.js/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "npm install discord.js",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord",
       "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
       "combines_with": [
@@ -75058,12 +75059,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker run --rm -p 127.0.0.1:80:80 vectorim/element-web",
+        "command_status": "documented",
         "entry_url": "https://element.io",
-        "source": "https://github.com/element-hq/element-web/blob/develop/README.md",
+        "source": "https://github.com/element-hq/element-web/blob/develop/docs/install.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Configura element-web contra tu Synapse de lab según docs Element.",
@@ -75108,9 +75110,9 @@
       "desc": "Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.",
       "stack": "TypeScript, package.json",
       "repo": "https://github.com/element-hq/element-web",
-      "install": "Seguir la instalación original: https://github.com/element-hq/element-web/blob/develop/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run --rm -p 127.0.0.1:80:80 vectorim/element-web",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -75174,16 +75176,17 @@
           "cuenta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "docker pull evoapicloud/evolution-api:latest",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/evolution-foundation/evolution-api/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Configura una instancia de ensayo y consulta su estado antes de habilitar webhooks o respuestas",
@@ -75229,9 +75232,9 @@
       "desc": "API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks.",
       "stack": "Docker o Node; PostgreSQL y Redis según ruta; canal y credenciales; cuenta de prueba",
       "repo": "https://github.com/evolution-foundation/evolution-api",
-      "install": "Seguir la instalación original: https://github.com/evolution-foundation/evolution-api/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker pull evoapicloud/evolution-api:latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -75298,15 +75301,16 @@
           "cuenta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "flatpak install https://pkgs.fluxer.com/flatpak/fluxer.flatpakref",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/fluxerapp/fluxer/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Flatpak»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea una comunidad de ensayo y comprueba permisos de un canal y una llamada de prueba",
@@ -75352,9 +75356,9 @@
       "desc": "Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.",
       "stack": "Cliente o servidor elegido; micrófono para voz; cuenta de prueba",
       "repo": "https://github.com/fluxerapp/fluxer",
-      "install": "Seguir la instalación original: https://github.com/fluxerapp/fluxer/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "flatpak install https://pkgs.fluxer.com/flatpak/fluxer.flatpakref",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -75423,7 +75427,7 @@
         "entry_url": "",
         "source": "https://github.com/mattermost/mattermost/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Despliega Mattermost con Docker siguiendo la guía oficial, crea un equipo y un canal y añade un webhook entrante.",
@@ -75775,12 +75779,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "sudo snap install rocketchat-desktop",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «📱 Desktop and mobile apps»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Despliega Rocket.Chat con Docker Compose siguiendo su guía, crea un espacio de trabajo y un canal.",
@@ -75825,9 +75830,9 @@
       "desc": "Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
       "stack": "TypeScript, package.json",
       "repo": "https://github.com/RocketChat/Rocket.Chat",
-      "install": "Seguir la instalación original: https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "sudo snap install rocketchat-desktop",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -75898,7 +75903,7 @@
         "entry_url": "",
         "source": "https://github.com/AsamK/signal-cli/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga la release (JRE 25 o binario nativo), vincula signal-cli como dispositivo secundario y envía un mensaje de prueba a ti mismo.",
@@ -76014,7 +76019,7 @@
         "entry_url": "",
         "source": "https://github.com/element-hq/synapse/blob/develop/README.rst",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala Synapse con paquetes o Docker siguiendo la guía oficial, crea un usuario y conéctate con un cliente Matrix.",
@@ -76124,16 +76129,17 @@
           "proveedor solo para AI"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://docs.typebot.io/self-hosting/get-started",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "docker-compose up -d",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/baptisteArno/typebot.io/blob/main/apps/docs/self-hosting/deploy/docker.mdx",
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «3. Start the server»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea un flujo de dos preguntas con respuestas fijas y comprueba la rama elegida",
@@ -76179,9 +76185,9 @@
       "desc": "Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más.",
       "stack": "Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI",
       "repo": "https://github.com/baptisteArno/typebot.io",
-      "install": "Seguir la instalación original: https://docs.typebot.io/self-hosting/get-started",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker-compose up -d",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -76616,15 +76622,15 @@
           "cuenta propia de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/tulir/whatsmeow/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Sigue el ejemplo de conexión y comprueba los eventos y la sesión guardada",
@@ -76734,12 +76740,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "pip install zulip",
+        "command_status": "documented",
         "entry_url": "https://zulip.com",
-        "source": "https://github.com/zulip/zulip/blob/main/README.md",
+        "source": "https://github.com/zulip/zulip/blob/main/api_docs/installation-instructions.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Installation instructions»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue https://zulip.readthedocs.io para un install de lab o usa Zulip Cloud de prueba.",
@@ -76784,9 +76791,9 @@
       "desc": "Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.",
       "stack": "Python, package.json, pyproject.toml",
       "repo": "https://github.com/zulip/zulip",
-      "install": "Seguir la instalación original: https://github.com/zulip/zulip/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "pip install zulip",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -76850,19 +76857,20 @@
         "entry_url": "",
         "prerequisites": [
           "Node.js y Yarn según el proyecto",
-          " PostgreSQL",
-          " Docker para el entorno de desarrollo"
+          "PostgreSQL",
+          "Docker para el entorno de desarrollo"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/calcom/cal.diy.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/calcom/cal.diy/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Setup»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Configura un evento personal de prueba y abre su página de reserva",
@@ -76908,9 +76916,9 @@
       "desc": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
       "stack": "Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo",
       "repo": "https://github.com/calcom/cal.diy",
-      "install": "Seguir la instalación original: https://github.com/calcom/cal.diy/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/calcom/cal.diy.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -76978,16 +76986,16 @@
           "proveedor solo para funciones AI"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/chatwoot/chatwoot/blob/develop/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea una bandeja de ensayo y recorre una conversación ficticia con etiquetas y asignación",
@@ -77098,15 +77106,15 @@
           "canal de envío"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/maillab/cloud-mail/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Despliega un entorno de prueba y comprueba recepción con un buzón propio antes de usar correo real",
@@ -77340,12 +77348,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker compose up",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/alextselegidis/easyappointments/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «⚡ Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba.",
@@ -77390,9 +77399,9 @@
       "desc": "Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.",
       "stack": "PHP, composer.json, docker-compose.yml, package.json",
       "repo": "https://github.com/alextselegidis/easyappointments",
-      "install": "Seguir la instalación original: https://github.com/alextselegidis/easyappointments/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker compose up",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -77585,7 +77594,7 @@
         "entry_url": "",
         "source": "https://github.com/espocrm/espocrm/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala EspoCRM con su imagen Docker o en un servidor PHP, crea una cuenta y una oportunidad.",
@@ -77699,12 +77708,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp",
+        "command_status": "documented",
         "entry_url": "https://formbricks.com",
-        "source": "https://github.com/formbricks/formbricks/blob/main/README.md",
+        "source": "https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Claude Code»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "text"
       },
       "first_try": {
         "action": "Sigue https://formbricks.com docs para Docker Compose y abre la UI.",
@@ -77749,9 +77759,9 @@
       "desc": "Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.",
       "stack": "TypeScript, package.json",
       "repo": "https://github.com/formbricks/formbricks",
-      "install": "Seguir la instalación original: https://github.com/formbricks/formbricks/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -77816,12 +77826,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker compose up -d",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+        "source": "https://freescout.net/docker/",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Pull the new image and start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala FreeScout en un servidor PHP o con su imagen Docker, conecta un buzón de prueba y responde a una conversación.",
@@ -77866,9 +77877,9 @@
       "desc": "Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
       "stack": "PHP, composer.json, package.json",
       "repo": "https://github.com/freescout-help-desk/freescout",
-      "install": "Seguir la instalación original: https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker compose up -d",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -78055,15 +78066,15 @@
           "colas y tareas según guía"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://docs.mautic.org/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Diseña una campaña de prueba con un contacto ficticio y revisa condiciones y acciones antes de activarla",
@@ -78173,15 +78184,16 @@
           "destino propio de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://docs.novu.co/platform/quickstart",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "npm install @novu/react",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://docs.novu.co/platform/quickstart/react?utm_source=github&utm_medium=readme&utm_campaign=react-starter-link",
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Install @novu/react»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Define un evento ficticio y comprueba su preview y entrega en un canal de ensayo",
@@ -78227,9 +78239,9 @@
       "desc": "Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.",
       "stack": "Proyecto de notificaciones; credenciales del canal; destino propio de prueba",
       "repo": "https://github.com/novuhq/novu",
-      "install": "Seguir la instalación original: https://docs.novu.co/platform/quickstart",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "npm install @novu/react",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -78292,16 +78304,16 @@
           "negocio ficticio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://www.odoo.com/documentation/master/administration/install/install.html",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea un contacto y una oportunidad ficticios y recorre sus etapas sin emitir documentos reales",
@@ -78421,15 +78433,15 @@
           "dominio propio de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/every-app/open-seo/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Consulta una métrica de un dominio propio y revisa origen, fecha y coste de la solicitud",
@@ -78546,16 +78558,16 @@
           "modelos solo para AI"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://docs.postiz.com/quickstart",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Prepara una publicación ficticia en borrador y revisa preview, canal y horario sin programarla",
@@ -78793,7 +78805,7 @@
         "entry_url": "https://suitecrm.com",
         "source": "https://github.com/SuiteCRM/SuiteCRM/blob/hotfix/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Despliega SuiteCRM según la guía oficial (LAMP/Docker) y completa el instalador web.",
@@ -78911,16 +78923,17 @@
           "modelo si activas AI"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npm install -g twenty",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/twentyhq/twenty/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «<img src=\"./packages/twenty-website/public/images/readme/book-icon.svg\" width=\"14\" height=\"14\"/> Build an app»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea un objeto y dos registros ficticios y revisa sus relaciones antes de añadir automatización",
@@ -78966,9 +78979,9 @@
       "desc": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.",
       "stack": "CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI",
       "repo": "https://github.com/twentyhq/twenty",
-      "install": "Seguir la instalación original: https://github.com/twentyhq/twenty/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "npm install -g twenty",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -79043,7 +79056,7 @@
         "entry_url": "",
         "source": "https://github.com/zammad/zammad/blob/develop/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Despliega Zammad con zammad-docker-compose, conecta una cuenta de correo de prueba y responde a un ticket.",
@@ -79162,8 +79175,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/humanlayer/12-factor-agents/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Aplica el principio de controlar el flujo a un agente imaginario de soporte y señala dónde pedir intervención humana",
@@ -79276,16 +79289,17 @@
           "dependencias y proveedor de un agente elegido"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/ashishpatel26/500-AI-Agents-Projects.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «⚡ Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Selecciona el agente de investigación web y revisa su .env.example sin añadir credenciales todavía",
@@ -79331,9 +79345,9 @@
       "desc": "Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas.",
       "stack": "Navegador; dependencias y proveedor de un agente elegido",
       "repo": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
+      "install": "git clone https://github.com/ashishpatel26/500-AI-Agents-Projects.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -79400,7 +79414,7 @@
         "entry_url": "",
         "source": "https://github.com/huggingface/agents-course/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo.",
@@ -79640,16 +79654,16 @@
           "Python y cuenta Azure para los ejercicios principales"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee la primera lección y dibuja las herramientas y decisiones de un agente de consultas ficticio",
@@ -79766,16 +79780,16 @@
           "modelo local o proveedor"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Elige Simple RAG Workflow y dibuja ingestión, recuperación y generación",
@@ -80007,8 +80021,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/ai-boost/awesome-harness-engineering/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Selecciona las secciones de permisos y evaluación y redacta tres preguntas para revisar tu agente",
@@ -80127,16 +80141,17 @@
           "entorno y proveedor específicos del ejemplo elegido"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npx skills add https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/agent_skills/project-graveyard",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «🚀 Run one now»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Escoge una app de RAG local y revisa su README y requisitos antes de descargar modelos",
@@ -80182,9 +80197,9 @@
       "desc": "Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.",
       "stack": "Navegador; entorno y proveedor específicos del ejemplo elegido",
       "repo": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
+      "install": "npx skills add https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/agent_skills/project-graveyard",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender con un asistente de viajes; Estudiar un RAG con Llama local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -80256,8 +80271,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Busca dos bibliotecas del lenguaje que conoces y abre sus fuentes para comparar mantenimiento y requisitos",
@@ -80378,8 +80393,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee el aviso de fecha y analiza cómo un prompt intenta sustituir las instrucciones del sistema sin aplicarlo a servicios ajenos",
@@ -80498,8 +80513,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato",
@@ -80613,16 +80628,16 @@
           "Python y clave Anthropic para ejecutar ejemplos"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/anthropics/claude-cookbooks/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee una receta de extracción y adapta sus datos a un párrafo ficticio",
@@ -80737,16 +80752,16 @@
           "servicios del ejemplo"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/anthropics/claude-quickstarts/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Escoge Customer Support Agent y revisa las herramientas que permite antes de enviar una consulta ficticia",
@@ -80856,15 +80871,15 @@
           "agente si utilizas los comandos"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/jasontang-ai/Context-Engineering/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee el mapa de contexto y reduce un encargo a objetivo, datos pertinentes y límites",
@@ -81106,16 +81121,16 @@
           "proveedor o Foundry Local según lección"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico",
@@ -81356,8 +81371,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/mlabonne/llm-course/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos",
@@ -81471,16 +81486,16 @@
           "CUDA y GPU para las rutas aceleradas"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/karpathy/llm.c/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee el ejemplo GPT-2 y localiza las operaciones de forward y backward antes de compilar",
@@ -81840,12 +81855,13 @@
           "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
           "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/microsoft/ML-For-Beginners.git",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Getting Started»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter.",
@@ -81890,9 +81906,9 @@
       "desc": "Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.",
       "stack": "Jupyter Notebook, package.json",
       "repo": "https://github.com/microsoft/ML-For-Beginners",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
+      "install": "git clone https://github.com/microsoft/ML-For-Beginners.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase",
       "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
       "combines_with": [
@@ -82079,16 +82095,16 @@
           "Python y API key de OpenAI si ejecutas notebooks"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/openai/openai-cookbook/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Elige una receta de salida estructurada y revisa su esquema antes de ejecutar una entrada breve",
@@ -82209,8 +82225,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia",
@@ -82442,15 +82458,16 @@
           "Node y cliente MCP si conectas la biblioteca"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "/plugin marketplace add f/prompts.chat",
+        "command_language": "text",
+        "command_status": "documented",
         "source": "https://github.com/f/prompts.chat/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Claude Code Plugin»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Busca un prompt de resumen y adapta sus variables a una nota propia antes de probarlo en tu asistente",
@@ -82496,9 +82513,9 @@
       "desc": "La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
       "stack": "Navegador para explorar; Node y cliente MCP si conectas la biblioteca",
       "repo": "https://github.com/f/prompts.chat",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
+      "install": "/plugin marketplace add f/prompts.chat",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -82574,8 +82591,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Compara dos estructuras atribuidas a asistentes y anota sus diferencias sin introducirlas como configuración oficial",
@@ -82954,7 +82971,7 @@
         "entry_url": "https://antigravity.google/docs/cli/overview",
         "source": "https://github.com/google-antigravity/antigravity-cli/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Inicia agy en un proyecto de prueba y pide renombrar una función con su prueba",
@@ -83735,16 +83752,17 @@
           "proyecto de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://goose-docs.ai/docs/getting-started/installation",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/aaif-goose/goose/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Get started»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Configura un proveedor y solicita resumir una carpeta pequeña antes de añadir extensiones",
@@ -83790,9 +83808,9 @@
       "desc": "Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.",
       "stack": "CLI o app; proveedor o agente ACP autenticado; proyecto de prueba",
       "repo": "https://github.com/aaif-goose/goose",
-      "install": "Seguir la instalación original: https://goose-docs.ai/docs/getting-started/installation",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -83860,12 +83878,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "npm install -g @kilocode/cli",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala la extensión desde el VS Code Marketplace, conecta un modelo y pídele que explique un archivo de tu proyecto.",
@@ -83910,9 +83929,9 @@
       "desc": "Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.",
       "stack": "TypeScript, package.json",
       "repo": "https://github.com/Kilo-Org/kilocode",
-      "install": "Seguir la instalación original: https://github.com/Kilo-Org/kilocode/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "npm install -g @kilocode/cli",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos",
       "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
       "combines_with": [
@@ -83983,16 +84002,16 @@
           "carpeta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Sigue el primer inicio y comprueba proveedor y modelo antes de pedir explicar un archivo",
@@ -84229,16 +84248,17 @@
           "carpeta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://www.openinterpreter.com/docs/terminal/install",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "curl -fsSL https://www.openinterpreter.com/install | sh",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/openinterpreter/openinterpreter/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Arranca interpreter y revisa modelo y harness antes de pedir una explicación de código",
@@ -84284,9 +84304,9 @@
       "desc": "Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos.",
       "stack": "Terminal; instalador del sistema; proveedor configurado; carpeta de prueba",
       "repo": "https://github.com/openinterpreter/openinterpreter",
-      "install": "Seguir la instalación original: https://www.openinterpreter.com/docs/terminal/install",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://www.openinterpreter.com/install | sh",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -84353,16 +84373,17 @@
           "servicios integrados"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "brew install --cask langchain-ai/tap/open-swe-desktop",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Desktop client»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee el flujo de issue a PR y prueba un issue ficticio sin habilitar entregas automáticas",
@@ -84408,9 +84429,9 @@
       "desc": "Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.",
       "stack": "Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados",
       "repo": "https://github.com/langchain-ai/open-swe",
-      "install": "Seguir la instalación original: https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install --cask langchain-ai/tap/open-swe-desktop",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -84611,16 +84632,17 @@
           "proveedor configurado"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://opencodemanager.app/docs/getting-started/installation",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "curl -fsSL https://opencodemanager.app/install | sh",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea una sesión en un repositorio de ejemplo y revisa cambios sin programar tareas todavía",
@@ -84666,9 +84688,9 @@
       "desc": "Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.",
       "stack": "Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado",
       "repo": "https://github.com/chriswritescode-dev/opencode-manager",
-      "install": "Seguir la instalación original: https://opencodemanager.app/docs/getting-started/installation",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://opencodemanager.app/install | sh",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -84743,16 +84765,17 @@
           "proyecto de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/PawanOsman/OpenCursor.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/PawanOsman/OpenCursor/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Development»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Instala la extensión y usa un modelo local o cuenta para explicar un archivo antes de permitir comandos",
@@ -84798,9 +84821,9 @@
       "desc": "Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.",
       "stack": "VS Code; extensión o VSIX; cuenta, API u Ollama/llama.cpp; proyecto de prueba",
       "repo": "https://github.com/PawanOsman/OpenCursor",
-      "install": "Seguir la instalación original: https://github.com/PawanOsman/OpenCursor/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/PawanOsman/OpenCursor.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -84992,15 +85015,15 @@
           "proyecto pequeño"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/l0ng-ai/openidea/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre un proyecto de ejemplo y usa buscar en todo para localizar una función",
@@ -85235,16 +85258,17 @@
           "proyecto de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "brew install --cask t3-code",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/pingdotgg/t3code/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Desktop app»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Conecta un agente local y pide explicar un archivo; revisa sus permisos desde la interfaz",
@@ -85290,9 +85314,9 @@
       "desc": "Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.",
       "stack": "Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba",
       "repo": "https://github.com/pingdotgg/t3code",
-      "install": "Seguir la instalación original: https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install --cask t3-code",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -85359,12 +85383,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "brew install --cask zed",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/zed-industries/zed/blob/main/README.md",
+        "source": "https://github.com/zed-industries/zed/blob/main/docs/src/installation.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «macOS»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Descarga Zed para tu sistema, abre un proyecto y configura un agente externo como Gemini CLI.",
@@ -85409,9 +85434,9 @@
       "desc": "Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.",
       "stack": "Rust, Cargo.toml",
       "repo": "https://github.com/zed-industries/zed",
-      "install": "Seguir la instalación original: https://github.com/zed-industries/zed/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install --cask zed",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -85477,16 +85502,17 @@
           "equipo de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "curl -fsSL https://agentes.chat/install | sh",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/agentes-chat/agentes-chat/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Quick start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea un canal de prueba y pide al agente una respuesta sin conectar acciones externas",
@@ -85532,9 +85558,9 @@
       "desc": "Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas.",
       "stack": "Docker Compose y PostgreSQL; proveedor o computadora conectada; equipo de prueba",
       "repo": "https://github.com/agentes-chat/agentes-chat",
-      "install": "Seguir la instalación original: https://github.com/agentes-chat/agentes-chat/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://agentes.chat/install | sh",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Evaluar un espacio de colaboración con agentes; Organizar consultas en canales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -85982,16 +86008,17 @@
           "cliente MCP solo si eliges esa ruta"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "pip install gpt-researcher",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/assafelovic/gpt-researcher/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Run as PIP package»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Haz una pregunta acotada y verifica dos fuentes antes de reutilizar el informe",
@@ -86037,9 +86064,9 @@
       "desc": "Agente autónomo que investiga en línea y consolida reportes citados y estructurados.",
       "stack": "Python 3.11+; proveedor y buscador; cliente MCP solo si eliges esa ruta",
       "repo": "https://github.com/assafelovic/gpt-researcher",
-      "install": "Seguir la instalación original: https://github.com/assafelovic/gpt-researcher/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "pip install gpt-researcher",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -86109,16 +86136,17 @@
           "carpeta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/openkursar/hello-halo.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/openkursar/hello-halo/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Build from source»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea un espacio con un archivo de ejemplo y solicita una explicación antes de activar control del navegador",
@@ -86164,9 +86192,9 @@
       "desc": "Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.",
       "stack": "Aplicación para tu sistema; cuenta o proveedor compatible; carpeta de prueba",
       "repo": "https://github.com/openkursar/hello-halo",
-      "install": "Seguir la instalación original: https://github.com/openkursar/hello-halo/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/openkursar/hello-halo.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -86231,16 +86259,17 @@
           "perfil de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://hermes-agent.nousresearch.com/docs/getting-started/installation",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/NousResearch/hermes-agent/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Linux, macOS, WSL2»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Configura un perfil nuevo y pide recordar una nota ficticia antes de importar historial",
@@ -86286,9 +86315,9 @@
       "desc": "Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados.",
       "stack": "Equipo compatible; proveedor o endpoint local; perfil de prueba",
       "repo": "https://github.com/NousResearch/hermes-agent",
-      "install": "Seguir la instalación original: https://hermes-agent.nousresearch.com/docs/getting-started/installation",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -86364,16 +86393,17 @@
           "equipo adecuado al modelo"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/LearningCircuit/local-deep-research/blob/main/docs/installation.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "pip install local-deep-research",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/LearningCircuit/local-deep-research/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «⚡ Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Investiga una pregunta pequeña con Ollama y SearXNG y abre las fuentes citadas",
@@ -86419,9 +86449,9 @@
       "desc": "Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
       "stack": "Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo",
       "repo": "https://github.com/LearningCircuit/local-deep-research",
-      "install": "Seguir la instalación original: https://github.com/LearningCircuit/local-deep-research/blob/main/docs/installation.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "pip install local-deep-research",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -86611,16 +86641,17 @@
           "Docker si autoalojas servidor"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "curl -fsSL https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.sh | bash -s -- --with-server",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/multica-ai/multica/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Get started»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Asigna una tarea de explicación a un agente en un proyecto de prueba antes de crear automatizaciones",
@@ -86666,9 +86697,9 @@
       "desc": "Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.",
       "stack": "Un CLI de agente instalado y autenticado; Docker si autoalojas servidor",
       "repo": "https://github.com/multica-ai/multica",
-      "install": "Seguir la instalación original: https://github.com/multica-ai/multica/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.sh | bash -s -- --with-server",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -86742,12 +86773,13 @@
           "Elige el modelo (OpenAI, Claude, Gemini o un endpoint compatible) y revisa la licencia local de CopilotKit Intelligence.",
           "Pide una tarea con aprobación activada y revisa la auditoría antes de conectar cuentas reales o un equipo."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest",
+        "command_status": "documented",
         "entry_url": "https://github.com/CopilotKit/OpenBot/releases",
         "source": "https://github.com/CopilotKit/OpenBot/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Deploy it»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación",
@@ -86792,9 +86824,9 @@
       "desc": "Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
       "stack": "TypeScript, docker-compose.yml, package.json",
       "repo": "https://github.com/CopilotKit/OpenBot",
-      "install": "Seguir la instalación original: https://github.com/CopilotKit/OpenBot/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común",
       "avoid_if": "necesitas una herramienta estable y auditada para datos sensibles",
       "combines_with": [
@@ -86871,16 +86903,17 @@
           "canal de prueba opcional"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npm install -g openclaw@latest --allow-scripts=openclaw",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/openclaw/openclaw/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Install»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Completa onboarding y consulta gateway status y dashboard antes de conectar mensajería",
@@ -86926,9 +86959,9 @@
       "desc": "Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.",
       "stack": "Node compatible o instalador; proveedor o harness; canal de prueba opcional",
       "repo": "https://github.com/openclaw/openclaw",
-      "install": "Seguir la instalación original: https://github.com/openclaw/openclaw/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "npm install -g openclaw@latest --allow-scripts=openclaw",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -87125,16 +87158,17 @@
           "proyecto de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://docs.paperclip.ing/reference/cli/installation/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "git clone https://github.com/paperclipai/paperclip.git",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/paperclipai/paperclip/blob/master/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Or install it yourself»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea una tarea de explicación para un agente y revisa historial y presupuesto antes de activar heartbeats",
@@ -87180,9 +87214,9 @@
       "desc": "Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.",
       "stack": "Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba",
       "repo": "https://github.com/paperclipai/paperclip",
-      "install": "Seguir la instalación original: https://docs.paperclip.ing/reference/cli/installation/",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/paperclipai/paperclip.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -87749,8 +87783,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/langchain-ai/agent-protocol/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee las rutas threads y runs y dibuja cómo una aplicación inicia y consulta una ejecución",
@@ -87862,12 +87896,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker run -it --rm --publish 127.0.0.1:20080:20080 --volume /var/run/docker.sock:/var/run/docker.sock --volume \"$(pwd)\"/appwrite:/usr/src/code/appwrite:rw --entrypoint=\"install\" appwrite/appwrite:2.7.2",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/appwrite/appwrite/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Unix»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Lanza Appwrite con el `docker run` del README, crea un proyecto y un usuario de prueba.",
@@ -87912,9 +87947,9 @@
       "desc": "Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.",
       "stack": "TypeScript, Cargo.toml, Dockerfile, composer.json, docker-compose.yml, package.json",
       "repo": "https://github.com/appwrite/appwrite",
-      "install": "Seguir la instalación original: https://github.com/appwrite/appwrite/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run -it --rm --publish 127.0.0.1:20080:20080 --volume /var/run/docker.sock:/var/run/docker.sock --volume \"$(pwd)\"/appwrite:/usr/src/code/appwrite:rw --entrypoint=\"install\" appwrite/appwrite:2.7.2",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -87980,12 +88015,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone \"https://github.com/caddyserver/caddy.git\"",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/caddyserver/caddy/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «For development»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala Caddy y ejecuta `caddy reverse-proxy --from localhost:8443 --to localhost:8080` sobre un servicio local.",
@@ -88030,9 +88066,9 @@
       "desc": "Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.",
       "stack": "Go, go.mod",
       "repo": "https://github.com/caddyserver/caddy",
-      "install": "Seguir la instalación original: https://github.com/caddyserver/caddy/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone \"https://github.com/caddyserver/caddy.git\"",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -88099,15 +88135,16 @@
           "respaldo del equipo antes de instalar"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "wget -qO- https://get.casaos.io | sudo bash",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/IceWhaleTech/CasaOS/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Quick Setup CasaOS»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Consulta compatibilidad y prueba el panel en un equipo de laboratorio antes de instalar apps",
@@ -88153,9 +88190,9 @@
       "desc": "Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.",
       "stack": "Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar",
       "repo": "https://github.com/IceWhaleTech/CasaOS",
-      "install": "Seguir la instalación original: https://github.com/IceWhaleTech/CasaOS/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "wget -qO- https://get.casaos.io | sudo bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -88353,15 +88390,16 @@
           "cuenta externa de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npm install @composio/core @composio/openai-agents @openai/agents",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/ComposioHQ/composio/blob/next/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «TypeScript»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Busca una herramienta de consulta y revisa sus permisos antes de enlazar una cuenta",
@@ -88407,9 +88445,9 @@
       "desc": "Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales.",
       "stack": "Cuenta Composio; CLI o SDK; cuenta externa de prueba",
       "repo": "https://github.com/ComposioHQ/composio",
-      "install": "Seguir la instalación original: https://github.com/ComposioHQ/composio/blob/next/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "npm install @composio/core @composio/openai-agents @openai/agents",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -88601,15 +88639,16 @@
           "aplicación de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://coolify.io/docs/installation",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/coollabsio/coolify/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Quick start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Despliega una página estática de prueba y revisa logs antes de añadir bases de datos reales",
@@ -88655,9 +88694,9 @@
       "desc": "Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
       "stack": "Servidor compatible; Docker; dominio opcional; aplicación de prueba",
       "repo": "https://github.com/coollabsio/coolify",
-      "install": "Seguir la instalación original: https://coolify.io/docs/installation",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -88970,8 +89009,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/ripienaar/free-for-dev/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Elige un servicio de alojamiento y comprueba sus límites y condiciones en la web del proveedor antes de crear una cuenta",
@@ -89094,8 +89133,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee las condiciones de registro y dibuja registros DNS para un sitio ficticio sin cambiar dominios activos",
@@ -89212,7 +89251,7 @@
         "entry_url": "",
         "source": "https://github.com/fatedier/frp/blob/dev/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README.",
@@ -89328,7 +89367,7 @@
         "entry_url": "",
         "source": "https://github.com/juanfont/headscale/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala Headscale en un servidor siguiendo su documentación, crea un usuario y registra un cliente de Tailscale con `--login-server`.",
@@ -89445,15 +89484,16 @@
           "red de laboratorio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "docker run -d --name masterdnsvpn --restart unless-stopped -e DOMAIN=v.example.com -v $(pwd)/data:/data -p 53:53/tcp -p 53:53/udp ghcr.io/masterking32/masterdnsvpn:latest",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Section 2.2.3: 🚀 Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Revisa la delegación DNS y prepara una prueba entre equipos propios antes de sustituir una conexión habitual",
@@ -89499,9 +89539,9 @@
       "desc": "Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.",
       "stack": "Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio",
       "repo": "https://github.com/masterking32/MasterDnsVPN",
-      "install": "Seguir la instalación original: https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run -d --name masterdnsvpn --restart unless-stopped -e DOMAIN=v.example.com -v $(pwd)/data:/data -p 53:53/tcp -p 53:53/udp ghcr.io/masterking32/masterdnsvpn:latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -89563,16 +89603,17 @@
           "agente y proveedor"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/NVIDIA/NemoClaw/blob/main/docs/get-started/quickstart.mdx",
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Set Up with the Interactive Installer on Your Terminal»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Lee los requisitos y prueba la política con una tarea de consulta en un entorno descartable",
@@ -89618,9 +89659,9 @@
       "desc": "Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.",
       "stack": "Plataforma compatible según prerequisites; OpenShell; agente y proveedor",
       "repo": "https://github.com/NVIDIA/NemoClaw",
-      "install": "Seguir la instalación original: https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -89687,12 +89728,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "curl -fsSL https://pkgs.netbird.io/install.sh | sh",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/netbirdio/netbird/blob/main/README.md",
+        "source": "https://docs.netbird.io/get-started/install/linux",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Linux Install Script»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la guía de autoalojamiento rápido de NetBird en un VPS y conecta dos dispositivos con el cliente.",
@@ -89737,9 +89779,9 @@
       "desc": "Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.",
       "stack": "Go, go.mod",
       "repo": "https://github.com/netbirdio/netbird",
-      "install": "Seguir la instalación original: https://github.com/netbirdio/netbird/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -fsSL https://pkgs.netbird.io/install.sh | sh",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -89813,16 +89855,17 @@
           "CLI de agente autenticado"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "brew install --cask nodeterm",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/eneskirca/nodeterm/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «📦 Download»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea un terminal y un nodo de agente para explicar una carpeta de prueba",
@@ -89868,9 +89911,9 @@
       "desc": "Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto.",
       "stack": "macOS o Linux; tmux según ruta; CLI de agente autenticado",
       "repo": "https://github.com/eneskirca/nodeterm",
-      "install": "Seguir la instalación original: https://github.com/eneskirca/nodeterm/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install --cask nodeterm",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -89939,7 +89982,7 @@
         "entry_url": "",
         "source": "https://github.com/portainer/portainer/blob/release/2.45/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales.",
@@ -90302,15 +90345,15 @@
           "cliente MCP opcional"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://supabase.com/docs/guides/getting-started",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea datos ficticios en un proyecto de desarrollo y consulta su estructura con permisos de solo lectura",
@@ -90424,12 +90467,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/traefik/traefik",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/traefik/traefik/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Download»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta.",
@@ -90474,9 +90518,9 @@
       "desc": "Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.",
       "stack": "Go, Dockerfile, go.mod",
       "repo": "https://github.com/traefik/traefik",
-      "install": "Seguir la instalación original: https://github.com/traefik/traefik/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/traefik/traefik",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -90544,12 +90588,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/louislam/uptime-kuma/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «🐳 Docker Command»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación.",
@@ -90594,9 +90639,9 @@
       "desc": "Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.",
       "stack": "JavaScript, compose.yaml, package.json",
       "repo": "https://github.com/louislam/uptime-kuma",
-      "install": "Seguir la instalación original: https://github.com/louislam/uptime-kuma/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -90660,12 +90705,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "sudo docker compose up / down",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/wg-easy/wg-easy/blob/master/README.md",
+        "source": "https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Follow tutorials»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard.",
@@ -90710,9 +90756,9 @@
       "desc": "La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.",
       "stack": "TypeScript, Dockerfile, docker-compose.yml, package.json",
       "repo": "https://github.com/wg-easy/wg-easy",
-      "install": "Seguir la instalación original: https://github.com/wg-easy/wg-easy/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "sudo docker compose up / down",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [

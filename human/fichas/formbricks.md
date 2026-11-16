@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 13.2k | NOASSERTION | TypeScript | 2026-11-16 |
+| 13.2k | AGPL-3.0 + licencia Enterprise (ee/) | TypeScript | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media
 
 **Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** AGPL-3.0 + licencia Enterprise (ee/). Algunos paquetes (SDK, surveys) son MIT. Fuente: [LICENSE](https://github.com/formbricks/formbricks/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -67,15 +69,21 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (text):**
 
-[Instrucciones originales de instalación](https://github.com/formbricks/formbricks/blob/main/README.md)
+```
+claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Claude Code»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx)
 
 [Abrir la web o descarga indicada por el autor](https://formbricks.com)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Formbricks para mi objetivo y necesito pasos guiados. Lee https://github.com/formbricks/formbricks/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Formbricks para mi objetivo y necesito pasos guiados. Lee https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

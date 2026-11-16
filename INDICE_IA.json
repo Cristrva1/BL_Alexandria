@@ -20739,7 +20739,7 @@
    "github_id": 1195371847,
    "gh": "ai-boost/awesome-harness-engineering",
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "CC0-1.0",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -22176,7 +22176,7 @@
    "github_id": 942837343,
    "gh": "eyaltoledano/claude-task-master",
    "lang": "JavaScript",
-   "license": "NOASSERTION",
+   "license": "MIT + Commons Clause",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -25104,7 +25104,7 @@
    "github_id": 1133165145,
    "gh": "openkursar/hello-halo",
    "lang": "TypeScript",
-   "license": "NOASSERTION",
+   "license": "MIT con términos adicionales",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -37742,7 +37742,7 @@
    "doc": "human/fichas/formbricks.md",
    "github_id": 500289888,
    "lang": "TypeScript",
-   "license": "NOASSERTION",
+   "license": "AGPL-3.0 + licencia Enterprise (ee/)",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [

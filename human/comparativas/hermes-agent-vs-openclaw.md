@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | MIT |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Instalación | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` | `npm install -g openclaw@latest --allow-scripts=openclaw` |
 
 ## Regla práctica
 

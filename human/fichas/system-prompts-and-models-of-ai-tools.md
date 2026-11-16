@@ -69,7 +69,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Compara dos estructuras atribuidas a asistentes y anota sus diferencias sin introducirlas como configuración oficial.
 2. Comprueba: Puedes distinguir patrones de diseño de afirmaciones no verificadas de procedencia.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md)
 

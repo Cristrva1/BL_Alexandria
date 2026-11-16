@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revi… |
+| Instalación | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… | Ver README oficial (sin comando literal documentado). Recorre la ruta de fundamentos y… |
 
 ## Regla práctica
 

@@ -80,7 +80,13 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 2. Elige el modelo (OpenAI, Claude, Gemini o un endpoint compatible) y revisa la licencia local de CopilotKit Intelligence.
 3. Pide una tarea con aprobación activada y revisa la auditoría antes de conectar cuentas reales o un equipo.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest
+```
+
+Comando copiado literalmente de el README (sección «Deploy it»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/CopilotKit/OpenBot/blob/main/README.md)
 
