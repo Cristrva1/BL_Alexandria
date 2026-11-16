@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Halo AI Workstation, estación de trabajo de IA de escritorio open source, de OpenKursar. El LICENSE es MIT (GitHub muestra NOASSERTION). Tiene ~1.9k estrellas (v3.0.5).
+
+## ¿Qué hace?
+
+Funciona como un banco de trabajo de IA (chat, código, documentos, investigación) y añade «Digital Humans»: miembros IA que se reparten el trabajo, acumulan memoria y siguen activos de forma autónoma. Permite delegar trabajo desde cualquier lugar.
+
+## ¿Cómo lo hace?
+
+Es una app de escritorio basada en Node; desde el código se instala con `npm install`. Conecta servidores MCP y skills compatibles con el ecosistema de Claude Code. El README incluye partners y patrocinadores.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Anthropic Skills](anthropic-skills.md) | Skills compatibles con el ecosistema de Claude Code. | Importa las skills. |
+| [Context7](context7.md) | Documentación vía MCP. (combinación por arquitectura) | Añade el MCP. |
+| [Playwright MCP](playwright-mcp.md) | Navegador vía MCP. (combinación por arquitectura) | Añade el MCP. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.0.5 (2026-11-01) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openkursar/hello-halo/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada |
 | Coste | El coste depende del proveedor o la ruta. Admite cuentas Claude o ChatGPT y proveedores API; sus cuotas son externas |
 | Equipo | Preparación según la ruta elegida. Aplicación para tu sistema; cuenta o proveedor compatible; carpeta de prueba |
-
-Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada
-
-## Qué puedes hacer con él
-
-Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.
-
-## Por qué destaca
-
-Usos propuestos: Explorar un asistente de escritorio; Revisar tareas de código visualmente.
-
-## Cómo funciona
 
 Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada
 

@@ -31,7 +31,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Aplica el principio de controlar el flujo a un agente imaginario de soporte y señala dónde pedir intervención humana
 **Qué comprobar:** Obtienes un diagrama con pasos deterministas y decisiones del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `context-engineering`, `langgraph`, `vercel-ai`
+**Combina con:** `context-engineering`, `langgraph`, `vercel-ai`, `awesome-harness-engineering`
 
 ## `500-ai-agents-projects`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=guias,ai-agents,genai,python
@@ -62,6 +62,36 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Puedes enumerar fuentes de datos, modelo y permisos necesarios
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crewai`, `langgraph`, `agno`
+
+## `agents-course`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,agents,python
+
+**Qué es:** Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable.
+**Stack:** MDX
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/huggingface/agents-course
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo.
+**Qué comprobar:** Construyes un agente sencillo que usa una herramienta.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `smolagents`, `langgraph`, `llama-index`, `langfuse`
 
 ## `agents-towards-production`
 role=directory · exec=cloud · setup=medium · mcp=True · prov=openai,local · tags=agents,learning,notebooks,python
@@ -153,6 +183,36 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Puedes identificar dónde se almacenan documentos y dónde se usa el modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crewai`, `llama-index`, `firecrawl`, `ollama`
+
+## `annotated-dl-papers`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,python,pytorch
+
+**Qué es:** Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: transformers, optimizadores, GAN, RL y más.
+**Stack:** Python, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/labmlai/annotated_deep_learning_paper_implementations
+
+**Instalación** [+]:
+
+```
+pip install labml-nn
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre en nn.labml.ai la implementación de atención multi-cabeza y lee el código con sus notas.
+**Qué comprobar:** Ves el código de PyTorch con la explicación de cada paso al lado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pytorch`, `claude-code`, `llms-from-scratch`
 
 ## `awesome-harness-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference,python
@@ -303,7 +363,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato
 **Qué comprobar:** Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo`, `prompt-engineering-guide`
+**Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo`, `prompt-engineering-guide`, `chatgpt-dan`
 
 ## `claude-cookbooks`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=learning,notebooks,rag,python
@@ -424,7 +484,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un proveedor y aplica un patrón de resumen a una nota breve que ya conozcas
 **Qué comprobar:** Obtienes un resumen que puedes contrastar con la nota original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `yt-dlp`, `open-webui`, `n8n`
+**Combina con:** `ollama`, `yt-dlp`, `open-webui`
 **Alternativas (elige una):** `prompts-chat`
 
 ## `generative-ai-for-beginners`
@@ -490,7 +550,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el notebook de tokenización y procesa una frase antes de pasar a entrenamiento
 **Qué comprobar:** Puedes inspeccionar tokens y reconstrucción del texto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nanochat`, `llms-from-scratch`, `pytorch`
+**Combina con:** `nanochat`, `pytorch`, `marimo`
 
 ## `llm-course`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,training,notebooks
@@ -520,7 +580,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos
 **Qué comprobar:** Puedes ubicar la diferencia entre entrenar, cuantizar y servir un modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `unsloth`, `trl`, `pytorch`
+**Combina con:** `unsloth`, `trl`, `pytorch`, `awesome-machine-learning`, `ml-for-beginners`
 **Alternativas (elige una):** `llms-from-scratch`, `generative-ai-for-beginners`
 
 ## `llm.c`
@@ -581,7 +641,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el capítulo de tokenización con una frase corta antes de entrenar una red
 **Qué comprobar:** Puedes ver la conversión de texto a tokens y explicarla
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `nanochat`, `transformers`
+**Combina con:** `pytorch`, `nanochat`, `transformers`, `llm.c`, `annotated-dl-papers`
 **Alternativas (elige una):** `llm-course`
 
 ## `loop-engineering`
@@ -613,22 +673,22 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera la plantilla de daily-triage en una carpeta de prueba y ejecuta doctor antes de activar acciones
 **Qué comprobar:** Puedes revisar la configuración y los avisos del diagnóstico
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `awesome-harness-engineering`
 
-## `mvanhorn`
-role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference
+## `ml-for-beginners`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python
 
-**Qué es:** Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.
-**Stack:** Navegador; proyecto de interés
+**Qué es:** Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.
+**Stack:** Jupyter Notebook, package.json
 **Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil
-- Coste: Sin pago a un modelo en la ruta básica. Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes
-- Equipo: Preparación según la ruta elegida. Navegador; proyecto de interés
-**Repo:** https://github.com/mvanhorn/mvanhorn
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/microsoft/ML-For-Beginners
 
 **Instalación** [?]:
 
@@ -638,12 +698,12 @@ Consultar el material original; elegir un ejemplo antes de instalar.
 
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre un proyecto destacado desde el perfil y revisa su README propio antes de considerarlo para instalar
-**Qué comprobar:** Puedes distinguir el perfil del repositorio de la herramienta
+**Elige si:** Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter.
+**Qué comprobar:** El cuaderno se ejecuta y muestra el primer modelo de regresión.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `last30days-skill`, `ecc`, `deer-flow`
+**Combina con:** `jupyterlab`, `marimo`, `llm-course`, `scikit-learn`
 
 ## `nanochat`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
@@ -673,7 +733,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara la ruta CPU para estudiar el código y lee speedrun antes de contratar un nodo GPU
 **Qué comprobar:** Distingues la instalación de dependencias del entrenamiento completo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pytorch`, `llms-from-scratch`, `llm.c`
+**Combina con:** `pytorch`, `llms-from-scratch`, `llm.c`, `autoresearch`, `how-to-train-your-gpt`, `train-llm-from-scratch`
 
 ## `openai-cookbook`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python
@@ -703,7 +763,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una receta de salida estructurada y revisa su esquema antes de ejecutar una entrada breve
 **Qué comprobar:** Puedes identificar la petición, respuesta esperada y consumo de la receta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openai-python`, `openai-agents-python`, `promptfoo`
+**Combina con:** `openai-python`, `openai-agents-python`, `promptfoo`, `generative-ai-for-beginners`
 **Alternativas (elige una):** `claude-cookbooks`, `awesome-llm-apps`
 
 ## `prompt-eng-tutorial`
@@ -765,7 +825,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia
 **Qué comprobar:** Puedes explicar qué información añadiste y por qué
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`
+**Combina con:** `prompt-master`, `context-engineering`, `promptfoo`, `chatgpt-system-prompt`
 **Alternativas (elige una):** `prompt-eng-tutorial`
 
 ## `prompt-master`
@@ -830,36 +890,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `promptfoo`, `open-webui`
 **Alternativas (elige una):** `fabric`
 
-## `python-machine-learning-book`
-role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,data-mining,data-science,logistic-regression,machine-learning,machine-learning-algorithms,neural-network,python
-
-**Qué es:** Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.
-**Stack:** Python; dependencias correspondientes a la primera edición; datos educativos
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
-- Coste: Sin pago a un modelo en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas
-- Equipo: Preparación según la ruta elegida. Python; dependencias correspondientes a la primera edición; datos educativos
-**Repo:** https://github.com/rasbt/python-machine-learning-book
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre el capítulo de clasificación y compara una predicción con su etiqueta de prueba
-**Qué comprobar:** Puedes reconocer el objetivo y la métrica del ejemplo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llms-from-scratch`, `pytorch`, `awesome-machine-learning`
-
 ## `system-prompts-and-models-of-ai-tools`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin
 
@@ -888,7 +918,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara dos estructuras atribuidas a asistentes y anota sus diferencias sin introducirlas como configuración oficial
 **Qué comprobar:** Puedes distinguir patrones de diseño de afirmaciones no verificadas de procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `chatgpt-system-prompt`, `promptfoo`, `claude-code`
+**Combina con:** `chatgpt-system-prompt`, `promptfoo`, `claude-code`, `chatgpt-dan`
 
 ## `train-llm-from-scratch`
 role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=aprender,gemini,large-language-models,llm,openai,training,transformers,python

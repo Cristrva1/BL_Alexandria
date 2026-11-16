@@ -28,7 +28,6 @@ Backend NestJS en TypeScript con arquitectura de adaptadores: base de datos SQLi
 |---|---|---|
 | [chatwoot](chatwoot.md) | Plugin oficial de OpenWA: las conversaciones de WhatsApp llegan a la bandeja de Chatwoot. | Chatwoot primero; luego instala y configura el plugin desde OpenWA-plugins. |
 | [Typebot](typebot.md) | Plugin oficial para responder con flujos conversacionales visuales de Typebot. | Typebot con el bot publicado; después activa el plugin en OpenWA. |
-| [n8n](n8n.md) | Nodos comunitarios de n8n para automatizar envíos y reaccionar a mensajes. | n8n primero; instala el nodo comunitario y usa una clave de API de OpenWA limitada a las sesiones necesarias. |
 | [Claude Code](claude-code.md) | El servidor MCP de OpenWA permite que un agente lea sesiones y mensajes con una clave restringida a ciertos chats. | Activa `MCP_ENABLED=true`, crea una clave limitada y registra el endpoint `/mcp` en el agente. |
 
 **Notas:** Riesgo de bloqueo: no envíes mensajes en frío a números que nunca te escribieron y usa destinatarios que hayan dado su consentimiento. Con S3, el script de respaldo no copia el bucket.

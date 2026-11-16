@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta para que agentes de IA de línea de comandos busquen y lean plataformas a las que no llegan solos (X, Reddit, YouTube, Xiaohongshu y otras), de @Panniantong. Licencia MIT. Es muy popular (~112k estrellas, v1.6.1); el README está sobre todo en chino y muestra patrocinadores de proxies y scraping.
+
+## ¿Qué hace?
+
+Añade a agentes como Claude Code, Codex, Hermes Agent u OpenClaw la capacidad de buscar publicaciones, leer contenidos, comentarios y perfiles en plataformas sociales y de vídeo. Cada plataforma tiene un estado (estable, opcional o experimental) y algunas requieren iniciar sesión. Para las que piden login usa un navegador dedicado que corre en segundo plano.
+
+## ¿Cómo lo hace?
+
+Se instala pidiéndole al agente que siga `docs/install.md` del repo. El README advierte que el paquete `agent-reach` de PyPI no es este proyecto y no debe instalarse desde allí. Las plataformas con login usan tus cuentas, con el riesgo de bloqueo que eso implica.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente CLI al que Agent Reach añade plataformas, citado en el README. | Pide a Claude Code que siga `docs/install.md`. |
+| [OpenClaw](openclaw.md) | Agente compatible citado en el README. | Instala Agent Reach desde la conversación con OpenClaw. |
+| [last30days](last30days-skill.md) | Investigar tendencias sociales de los últimos 30 días con otra skill especializada. (combinación por arquitectura) | Usa ambas en el mismo agente; evita duplicar consultas a las mismas plataformas. |
+
+**Notas:** Sin alternativas declaradas. Instala solo desde GitHub (hay un paquete homónimo en PyPI que no es este). Respeta los términos de uso de cada plataforma y la privacidad de las personas.
+
+Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v1.6.1 (2026-11-01) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Panniantong/Agent-Reach/blob/main/README.md) · [2](https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial |
 | Coste | El coste depende del proveedor o la ruta. Varias rutas no usan claves; transcripción puede requerir Groq u OpenAI y otros canales usan servicios, sesiones o proxies |
 | Equipo | Preparación según la ruta elegida. Agente con terminal; uv; sesiones de sitios solo cuando corresponda |
-
-El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial
-
-## Qué puedes hacer con él
-
-CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs.
-
-## Por qué destaca
-
-Usos propuestos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido.
-
-## Cómo funciona
 
 El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente con terminal; uv; sesiones de sitios solo cuando corresponda
 - **Etiquetas:** `scraping` `research` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [last30days](last30days-skill.md) | 67.7k | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. |
 
 ## Enlaces
 

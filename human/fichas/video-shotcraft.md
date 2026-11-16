@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+video-shotcraft, skill para que Claude Code o Codex creen vídeos promocionales de producto a partir de capturas de tus páginas reales, de @Vincentwei1021. Código y docs Apache-2.0; el audio de Freesound mantiene sus licencias (créditos CC BY). Tiene ~20k estrellas.
+
+## ¿Qué hace?
+
+El agente captura tus páginas, elige planos con «recetas» de storyboard, anima en Remotion, sincroniza con el ritmo, añade sonido y exporta.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js y npm para Remotion, la plantilla y el workbench. Remotion tiene su propia licencia (gratis para individuos y empresas pequeñas).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Motor de animación y render. | Instala Remotion; revisa su licencia. |
+| [Claude Code](claude-code.md) | Agente documentado. | Instala la skill. |
+| [Codex CLI](codex.md) | Agente documentado. | Instala la skill. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada showcase-media (2026-09-01) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Vincentwei1021/video-shotcraft/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code y Codex; los servicios de publicación son opcionales y no se deben activar al preparar un borrador |
 | Coste | El coste depende del proveedor o la ruta. Usa el agente y render; fuentes de sonido, generación y licencia Remotion se revisan por separado |
 | Equipo | Preparación según la ruta elegida. Agente; Node y Remotion; herramientas de captura; recursos autorizados |
-
-Documenta Claude Code y Codex; los servicios de publicación son opcionales y no se deben activar al preparar un borrador
-
-## Qué puedes hacer con él
-
-Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una promo de producto; Organizar planos sincronizados con sonido.
-
-## Cómo funciona
 
 Documenta Claude Code y Codex; los servicios de publicación son opcionales y no se deben activar al preparar un borrador
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista de herramientas de ingeniería inversa con IA para Claude Code, Codex y otros agentes, de @zhuyansen. GitHub muestra licencia NOASSERTION. Es pequeña (~100 estrellas) y se genera a partir de agentskillshub.top, que la actualiza cada 8 horas y añade etiquetas propias como «SAFE».
+
+## ¿Qué hace?
+
+Agrupa repos por tipo: servidores MCP para desensambladores y decompiladores (Ghidra, IDA Pro, Binary Ninja, radare2), herramientas móviles (jadx, Frida), skills de ingeniería inversa, REA y programas reconstruidos con él. Ordena por estrellas y enlaza a fichas del sitio.
+
+## ¿Cómo lo hace?
+
+Es un README generado automáticamente; no requiere instalación. Las etiquetas de seguridad del sitio no son una auditoría independiente [DATO NO VERIFICADO].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GhidraMCP](ghidramcp.md) | Servidor MCP de Ghidra que encabeza la sección de MCP. | Revisa su README e instálalo en Ghidra. |
+| [rea](rea.md) | Listado como herramienta destacada. | Consulta su ficha antes de instalarlo. |
+| [jadx](jadx.md) | Herramienta móvil de la lista. (combinación por arquitectura) | Úsalo con un servidor MCP de Android si lo necesitas. |
+
+**Notas:** Sin alternativas declaradas. Calidad editorial baja: lista autogenerada que redirige tráfico a un sitio externo.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md) · [2](https://agentskillshub.top/best/ai-reverse-engineering/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría |
 | Coste | Sin pago a un modelo en la ruta básica. Leer no requiere API; cada herramienta y modelo puede tener costes propios |
 | Equipo | Preparación según la ruta elegida. Navegador; formato y cliente objetivo |
-
-Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría
-
-## Qué puedes hacer con él
-
-Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una integración MCP para análisis; Comparar herramientas con backends locales.
-
-## Cómo funciona
 
 Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría
 

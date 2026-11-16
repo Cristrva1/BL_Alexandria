@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Constructor visual open source de Plasmic para apps y sitios conectado a tu propio código. La licencia es mixta: MIT fuera de `platform/` y AGPL dentro de `platform/` (el editor y servidor). Es activo (último push en noviembre de 2026) y tiene servicio cloud de pago.
+
+## ¿Qué hace?
+
+Permite arrastrar y soltar tus propios componentes React, diseñar páginas y apps internas, y publicarlas sin depender de desarrolladores para cada cambio. Importa diseños de Figma traduciéndolos a DOM y CSS. Sirve para webs de marketing, tiendas headless y herramientas internas, con integraciones de CMS y comercio.
+
+## ¿Cómo lo hace?
+
+Se integra en el código con paquetes como `@plasmicapp/loader-nextjs` (carga en runtime) o generando código. El editor visual se usa en la nube de Plasmic o autoalojando la plataforma, que tiene licencia AGPL.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Estilos de los componentes propios registrados en el editor. (combinación por arquitectura) | Registra componentes estilados con Tailwind en Plasmic. |
+| [ui](ui.md) | Registrar componentes shadcn/ui como bloques arrastrables. (combinación por arquitectura) | Instala shadcn/ui en el proyecto y registra los componentes con el loader. |
+| [supabase](supabase.md) | Backend de datos para apps internas construidas visualmente. (combinación por arquitectura) | Conecta la fuente de datos desde el código del host. |
+
+**Notas:** Sin alternativas declaradas. Licencia AGPL en `platform/`: revisa obligaciones si la modificas y la ofreces como servicio.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plasmicapp/plasmic/blob/master/README.md) · [2](https://www.plasmic.app/learn/quickstart/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL |
 | Coste | El coste depende del proveedor o la ruta. El editor básico no exige LLM; plataforma alojada y planes tienen costes; loader y plataforma tienen licencias diferentes |
 | Equipo | Preparación según la ruta elegida. Cuenta o despliegue Studio; proyecto Next.js para este loader; Node |
-
-El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL
-
-## Qué puedes hacer con él
-
-Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real.
-
-## Por qué destaca
-
-Usos propuestos: Permitir editar contenido visual de una web; Prototipar una página conectada a React.
-
-## Cómo funciona
 
 El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cuenta o despliegue Studio; proyecto Next.js para este loader; Node
 - **Etiquetas:** `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Enlaces
 

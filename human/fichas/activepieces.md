@@ -30,7 +30,13 @@ Cada integración es una «pieza»: un paquete npm escrito en TypeScript con tip
 | [Claude Code](claude-code.md) | Las piezas se exponen como servidores MCP, así que un agente de código puede usar las integraciones de Activepieces como herramientas. | Activepieces en marcha; luego registra el servidor MCP de las piezas en el cliente. |
 | [litellm](litellm.md) | Centraliza las llamadas de IA de los flujos en un gateway compatible con OpenAI con presupuestos y registro de gasto (combinación por arquitectura). | LiteLLM primero; usa su URL y una clave virtual en las piezas que acepten un endpoint compatible con OpenAI. |
 
-**Notas:** Alternativa (elige una): n8n. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (60). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AdGuardHome](adguardhome.md) · [Anytype Desktop](anytype-ts.md) · [Appsmith](appsmith.md) · [audiobookshelf](audiobookshelf.md) · [Baileys](baileys.md) · [Baserow](baserow.md) · [Bitwarden Clients](bitwarden-clients.md) · [Botpress](botpress.md) · [Budibase](budibase.md) · [cal.diy](cal-diy.md) · [CasaOS](casaos.md) · [changedetection.io](changedetection.md) · [chatwoot](chatwoot.md) · [cloud-mail](cloud-mail.md) · [coolify](coolify.md) · [crm](compai-crm.md) · [daily_stock_analysis](daily-stock-analysis.md) · [docuseal](docuseal.md) · [Easy!Appointments](easyappointments.md) · [ERPNext](erpnext.md) · [EspoCRM](espocrm.md) · [firecrawl](firecrawl.md) · [Firefly III](firefly-iii.md) · [fluxer](fluxer.md) · [FreeScout](freescout.md) · [GitHub CLI](cli.md) · [Grist](grist-core.md) · [Jina Reader](jina-reader.md) · [listmonk](listmonk.md) · [Matomo](matomo.md) · [Mattermost](mattermost.md) · [mautic](mautic.md) · [Maxun](maxun.md) · [Memos](memos.md) · [Odoo](odoo.md) · [open-notebook](open-notebook.md) · [open-sol-bot](open-sol-bot.md) · [Plausible Analytics](plausible.md) · [posthog](posthog.md) · [postiz-app](postiz-app.md) · [public-apis](public-apis.md) · [py-sdk](py-sdk.md) · [Qdrant](qdrant.md) · [RAGFlow](ragflow.md) · [Redash](redash.md) · [Rocket.Chat](rocket-chat.md) · [RSSHub](rsshub.md) · [Selenium](selenium.md) · [signal-cli](signal-cli.md) · [Skyvern](skyvern.md) · [Stirling-PDF](stirling-pdf.md) · [supabase](supabase.md) · [Teable](teable.md) · [ToolJet](tooljet.md) · [twenty-main](twenty-main.md) · [Umami](umami.md) · [WAHA](waha.md) · [whatsapp-web.js](whatsapp-web-js.md) · [whatsmeow](whatsmeow.md) · [Zammad](zammad.md)
+
+**Notas:** Sin alternativas declaradas. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 0.93.0 (2026-11-08) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -97,13 +103,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 - **Stack:** Docker Compose con PostgreSQL y Redis, o una cuenta alojada
 - **Etiquetas:** `automation` `typescript` `docker`
-- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
 ## Enlaces
 

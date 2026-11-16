@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Framework de web scraping en Python con peticiones HTTP rápidas, navegadores sigilosos, parsing potente y crawling concurrente, creado por @D4Vinci. Licencia BSD-3-Clause. Es muy popular (~103k estrellas, v0.5.1) y muestra patrocinadores de proxies residenciales y resolución de CAPTCHA.
+
+## ¿Qué hace?
+
+Descarga páginas estáticas, renderiza JavaScript, interactúa con sitios y extrae datos de las API que hay detrás. Selecciona con CSS, XPath, texto o regex y tiene extracción «adaptativa» que relocaliza elementos cuando cambia el HTML. Incluye spiders con rotación de proxies, CLI, servidor MCP y una Agent Skill; dice manejar Cloudflare Turnstile.
+
+## ¿Cómo lo hace?
+
+Se instala con pip (con extras para navegadores) y se usa desde Python, la terminal o un agente mediante su servidor MCP. Los fetchers sigilosos descargan navegadores adicionales. Su capacidad de evadir protecciones antibots exige especial cuidado legal.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Navegar y extraer datos desde el agente con el servidor MCP y la skill oficiales. | Instala Scrapling con el extra de IA y registra su servidor MCP. |
+| [scrapy](scrapy.md) | Reutilizar el parser de Scrapling dentro de proyectos Scrapy existentes. (combinación por arquitectura) | Mantén la infraestructura de Scrapy y usa Scrapling para seleccionar elementos. |
+| [defuddle](defuddle.md) | Quedarte solo con el contenido principal de los artículos descargados. (combinación por arquitectura) | Pasa el HTML obtenido por Defuddle para limpiarlo. |
+
+**Notas:** Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.5.1 (2026-11-04) · licencia declarada BSD-3-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/D4Vinci/Scrapling/blob/main/README.md) · [2](https://scrapling.readthedocs.io/en/latest/ai/mcp-server.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La instalación base solo trae parser; MCP requiere scrapling[ai]; los tres clientes admiten sus transportes estándar sin prueba de instalación aquí |
 | Coste | Sin pago a un modelo en la ruta básica. El motor no necesita LLM; proxies y servicios de terceros son opcionales y pueden costar |
 | Equipo | Preparación según la ruta elegida. Python 3.10+; navegadores del paquete; extra ai para MCP |
-
-La instalación base solo trae parser; MCP requiere scrapling[ai]; los tres clientes admiten sus transportes estándar sin prueba de instalación aquí
-
-## Qué puedes hacer con él
-
-Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia.
-
-## Por qué destaca
-
-Usos propuestos: Recopilar un catálogo público permitido; Extraer texto para un índice de búsqueda.
-
-## Cómo funciona
 
 La instalación base solo trae parser; MCP requiere scrapling[ai]; los tres clientes admiten sus transportes estándar sin prueba de instalación aquí
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10+; navegadores del paquete; extra ai para MCP
 - **Etiquetas:** `automation` `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [scrapy](scrapy.md) | 65.4k | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. |
 
 ## Enlaces
 

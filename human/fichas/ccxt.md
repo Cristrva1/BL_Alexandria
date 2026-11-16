@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+CCXT, librería que unifica las APIs de más de 100 exchanges de criptomonedas y mercados de predicción. Licencia MIT. Es muy madura (~45k estrellas, v4.5.92).
+
+## ¿Qué hace?
+
+Ofrece una API común para datos de mercado (tickers, libros de órdenes, velas), gestión de cuentas y trading, además de WebSockets en la versión pro. Normaliza las diferencias entre exchanges y sirve de base a muchos bots.
+
+## ¿Cómo lo hace?
+
+Está disponible en JavaScript/TypeScript (`npm install ccxt`), Python (`pip install ccxt`), PHP, C#, Go, Java y Rust. También se añade como skill de agentes (`npx skills add ccxt/ccxt`). Las claves de API deben limitarse (sin retiros).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [freqtrade](freqtrade.md) | Freqtrade se apoya en CCXT para conectarse a exchanges. | Configura el exchange en Freqtrade. |
+| [vectorbt](vectorbt.md) | Descargar datos históricos para backtesting. (combinación por arquitectura) | Obtén velas con CCXT y pásalas a vectorbt. |
+| [Claude Code](claude-code.md) | Skill oficial para agentes. | Ejecuta `npx skills add ccxt/ccxt`. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AutoHedge](autohedge.md) · [binance-trader](binance-trader.md) · [FinceptTerminal](finceptterminal.md) · [hummingbot](hummingbot.md) · [nautilus_trader](nautilus-trader.md) · [py-sdk](py-sdk.md)
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero: usa claves sin permiso de retiro.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.5.92 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ccxt/ccxt/blob/master/README.md) · [2](https://docs.ccxt.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros |
 | Coste | El coste depende del proveedor o la ruta. No necesita modelo; comisiones, datos y planes del exchange o servicios tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Node o paquete de tu lenguaje; exchange elegido; credenciales solo para funciones privadas |
-
-El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros
-
-## Qué puedes hacer con él
-
-Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading.
-
-## Por qué destaca
-
-Usos propuestos: Unificar consultas de varios mercados; Construir una integración de datos de exchange.
-
-## Cómo funciona
 
 El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros
 

@@ -10,6 +10,39 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+OpenCode, agente de programación open source para la terminal, de Anomaly (organización anomalyco). Licencia MIT. Es uno de los repos más populares del catálogo (~227k estrellas, v1.19.5).
+
+## ¿Qué hace?
+
+Funciona como agente en una TUI, en una app de escritorio (beta) o mediante servidor y SDK. Se conecta a muchos proveedores de modelos, incluidos los locales. Integra LSP, MCP, plugins, skills y agentes configurables (por ejemplo, modos de planificación y construcción).
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://opencode.ai/v2/install | bash`, `npm i -g @opencode/cli`, Homebrew (tap propio o fórmula oficial), Nix o el cask de escritorio. Los proveedores y modelos se configuran en `opencode.json` o desde la TUI.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local documentado. | Configura Ollama como proveedor en OpenCode. |
+| [litellm](litellm.md) | Usar el proxy LiteLLM como proveedor compatible con OpenAI. (combinación por arquitectura) | Añade el proxy como proveedor personalizado. |
+| [opencode-manager](opencode-manager.md) | Interfaz web autoalojada para gestionar sesiones de OpenCode. | Instala OpenCode y luego opencode-manager. |
+| [T3 Code](t3code.md) | Controlar OpenCode desde web o móvil. | Instala T3 Code con OpenCode presente. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (24). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[anatomy](anatomy.md) · [archify](archify.md) · [claude-code-router](claude-code-router.md) · [claude-mem](claude-mem.md) · [claude-task-master](claude-task-master.md) · [Context7](context7.md) · [ECC](ecc.md) · [Engram](engram.md) · [GitNexus](gitnexus.md) · [gstack](gstack.md) · [hallmark](hallmark.md) · [Kimi K2.7 Code](kimi-k2-7-code.md) · [Loop Engineering](loop-engineering.md) · [magnitude](magnitude.md) · [multica](multica.md) · [nodeterm](nodeterm.md) · [openidea](openidea.md) · [Papermorph](papermorph.md) · [ripgrep](ripgrep.md) · [ruflo](ruflo.md) · [shepherd](shepherd.md) · [supermemory](supermemory.md) · [The Agency (agency-agents)](agency-agents.md) · [wshobson/agents](wshobson-agents.md)
+
+**Notas:** Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.19.5 (2026-10-28) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anomalyco/opencode/blob/dev/README.md) · [2](https://opencode.ai/docs/providers/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelos locales documentados. El paquete actual es @opencode/cli; no confundir con el antiguo opencode-ai archivado; la integración ChatGPT no convierte el proyecto en un cliente oficial de Codex |
 | Coste | El coste depende del proveedor o la ruta. Admite proveedores por API, ChatGPT Plus o Pro mediante su adaptador y modelos locales con Ollama, LM Studio o vLLM |
 | Equipo | Preparación según la ruta elegida. Node para npm; repositorio de prueba; cuenta de proveedor o Ollama |
-
-El paquete actual es @opencode/cli; no confundir con el antiguo opencode-ai archivado; la integración ChatGPT no convierte el proyecto en un cliente oficial de Codex
-
-## Qué puedes hacer con él
-
-Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales.
-
-## Por qué destaca
-
-Usos propuestos: Comprender un repositorio nuevo; Planificar una corrección pequeña.
-
-## Cómo funciona
 
 El paquete actual es @opencode/cli; no confundir con el antiguo opencode-ai archivado; la integración ChatGPT no convierte el proyecto en un cliente oficial de Codex
 
@@ -94,14 +115,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `coding-agent` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
@@ -111,6 +124,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [MiMo-Code](mimo-code.md) | 13.8k | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. |
 
 ## Enlaces
 

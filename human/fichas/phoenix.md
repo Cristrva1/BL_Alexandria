@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Arize Phoenix, plataforma de observabilidad de IA para experimentación, evaluación y depuración, de Arize. Licencia Elastic License 2.0 (código disponible, no OSI; GitHub muestra NOASSERTION). Es muy activa (~12k estrellas, arize-phoenix-v21.1.0).
+
+## ¿Qué hace?
+
+Traza aplicaciones LLM con instrumentación basada en OpenTelemetry (OpenInference). Evalúa con LLM, gestiona datasets, experimentos y versiones de prompts, y ofrece un playground. Tiene un servidor MCP remoto para consultar trazas desde Claude Code, Cursor y otros clientes.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install arize-phoenix` o `npx @arizeai/phoenix-cli setup`, y también se despliega con Docker Compose o Kubernetes/Helm. Es autoalojado; Arize AX es la versión gestionada de pago.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LlamaIndex](llama-index.md) | Integración documentada para trazar LlamaIndex. | Instala la instrumentación de OpenInference para LlamaIndex. |
+| [LangGraph](langgraph.md) | Integración documentada para LangGraph. | Instrumenta LangGraph y envía trazas a Phoenix. |
+| [Ollama](ollama.md) | Integración documentada con Ollama. | Traza llamadas a modelos locales de Ollama. |
+| [Claude Code](claude-code.md) | Servidor MCP remoto para consultar trazas desde el agente. | Conecta Claude Code al endpoint MCP de Phoenix. |
+
+**Notas:** Alternativas (elige una): langfuse, opik. La licencia ELv2 prohíbe ofrecerlo como servicio gestionado a terceros.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada arize-phoenix-v21.1.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Arize-ai/phoenix/blob/main/README.md) · [2](https://arize.com/docs/phoenix/integrations/python/llamaindex) · [3](https://arize.com/docs/phoenix/integrations/python/langgraph) · [4](https://arize.com/docs/phoenix/integrations/llm-providers/ollama) · [5](https://arize.com/docs/phoenix/integrations/mcp)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El README declara Elastic License 2.0, por lo que no debe etiquetarse como licencia abierta sin restricciones; ofrece MCP y plugins Claude Code y Codex |
 | Coste | El coste depende del proveedor o la ruta. Autoalojamiento, cómputo y evaluadores se costean aparte; puede observar modelos locales Ollama |
 | Equipo | Preparación según la ruta elegida. Python; app de prueba; instrumentación o cliente MCP |
-
-El README declara Elastic License 2.0, por lo que no debe etiquetarse como licencia abierta sin restricciones; ofrece MCP y plugins Claude Code y Codex
-
-## Qué puedes hacer con él
-
-Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry.
-
-## Por qué destaca
-
-Usos propuestos: Depurar una app con OpenTelemetry; Consultar trazas desde un agente.
-
-## Cómo funciona
 
 El README declara Elastic License 2.0, por lo que no debe etiquetarse como licencia abierta sin restricciones; ofrece MCP y plugins Claude Code y Codex
 
@@ -94,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; app de prueba; instrumentación o cliente MCP
 - **Etiquetas:** `observability` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
 ## Alternativas (elige una)
 

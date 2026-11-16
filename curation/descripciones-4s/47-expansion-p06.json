@@ -1,0 +1,922 @@
+{
+ "batch": "47-expansion-p06",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "python-telegram-bot": {
+   "que_es": "Biblioteca de código abierto (LGPL-3.0 según su README; la API de GitHub la marca como GPL-3.0) mantenida por voluntarios. Muy madura; sigue de cerca cada versión de la Bot API.",
+   "que_hace": "Ofrece una interfaz Python completa a la Bot API de Telegram y un framework con manejadores de comandos y mensajes, conversaciones por estados, teclados, pagos, webhooks, persistencia y JobQueue para tareas programadas.",
+   "como_lo_hace": "Se instala con pip (extras opcionales como `[job-queue]`, `[webhooks]`, `[socks]`); desde la v20 está construida sobre asyncio. Requiere un token de BotFather.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Un bot de python-telegram-bot puede reenviar mensajes a un modelo local servido por Ollama y devolver la respuesta (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después llama a su API desde el manejador de mensajes."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Un grafo de LangGraph puede actuar como cerebro de un bot de Telegram construido con esta biblioteca (combinación por arquitectura).",
+     "orden_instalacion": "Construye el agente en LangGraph; después invócalo desde el manejador del bot."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Un bot de python-telegram-bot se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Para bots con IA ya listos, revisa también openclaw o hermes-agent, que integran Telegram como canal.",
+   "fuentes": [
+    "https://github.com/python-telegram-bot/python-telegram-bot/blob/master/README.rst",
+    "https://docs.python-telegram-bot.org/"
+   ],
+   "github": {
+    "name_with_owner": "python-telegram-bot/python-telegram-bot",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v22.8 (2026-06-12)"
+   }
+  },
+  "kilocode": {
+   "que_es": "Agente de código de código abierto (MIT) de Kilo Code, Inc., con servicio en la nube y pasarela de modelos de pago por uso. Muy activo. La extensión nació a partir de Roo Code y Cline; según el README, la CLI actual es un fork de OpenCode.",
+   "que_hace": "Planifica, escribe y revisa código en VS Code, JetBrains o la terminal, con cambio de modelo a mitad de tarea, modos especializados, marketplace para instalar agentes, skills, servidores MCP y plugins, y ejecución en la nube desde app.kilo.ai.",
+   "como_lo_hace": "Escrito en TypeScript; se instala como extensión del marketplace de VS Code, plugin de JetBrains o CLI. Requiere cuenta de Kilo o claves de proveedor; el coste depende del modelo.",
+   "combina_con": [
+    {
+     "id": "context7",
+     "motivo": "Context7 se instala como servidor MCP para que el agente consulte documentación actualizada de bibliotecas (combinación por arquitectura).",
+     "orden_instalacion": "Añade el servidor MCP de Context7 desde el marketplace o la configuración."
+    },
+    {
+     "id": "playwright-mcp",
+     "motivo": "Playwright MCP permite al agente abrir y probar la aplicación en un navegador (combinación por arquitectura).",
+     "orden_instalacion": "Registra Playwright MCP en la configuración de servidores MCP."
+    },
+    {
+     "id": "github-mcp-server",
+     "motivo": "El servidor MCP de GitHub da al agente acceso a issues y pull requests (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token de GitHub; después registra el servidor MCP."
+    }
+   ],
+   "notas": "Alternativas (elige una): cline. Revisa los cambios antes de aceptarlos y controla el gasto en la pasarela.",
+   "fuentes": [
+    "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+    "https://kilo.ai/"
+   ],
+   "github": {
+    "name_with_owner": "Kilo-Org/kilocode",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v7.8.27 (2026-11-05)"
+   }
+  },
+  "qwen-code": {
+   "que_es": "Agente de código de código abierto (Apache-2.0) del equipo Qwen de Alibaba, derivado de Gemini CLI. Muy activo.",
+   "que_hace": "Trabaja en el repositorio desde la terminal, la app de escritorio o el editor: lee y edita archivos, ejecuta comandos, usa memoria automática, skills, subagentes y MCP, y ofrece funciones experimentales como equipos de agentes y un daemon (`qwen serve`) sobre ACP.",
+   "como_lo_hace": "Se instala con npm (Node.js) y se configura con el proveedor de modelos; cambia de proveedor en ejecución. Se integra con VS Code, Zed y JetBrains y con clientes de chat.",
+   "combina_con": [
+    {
+     "id": "zed",
+     "motivo": "Qwen Code documenta su integración con Zed como agente externo.",
+     "orden_instalacion": "Instala Qwen Code; después configúralo como agente en Zed."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Qwen Code admite modelos locales servidos por Ollama.",
+     "orden_instalacion": "Ollama con un modelo de código; después configúralo como proveedor."
+    },
+    {
+     "id": "vllm",
+     "motivo": "vLLM puede servir un modelo Qwen local que Qwen Code consume por API compatible.",
+     "orden_instalacion": "Lanza vLLM; después apunta Qwen Code a su endpoint."
+    },
+    {
+     "id": "openclaw",
+     "motivo": "El README enlaza Qwen Code Claw (openclaw/acpx) para que otros agentes deleguen tareas de código en Qwen Code por ACP.",
+     "orden_instalacion": "Instala Qwen Code; después configura acpx en OpenClaw."
+    }
+   ],
+   "notas": "Alternativas (elige una): gemini-cli, del que deriva.",
+   "fuentes": [
+    "https://github.com/QwenLM/qwen-code/blob/main/README.md",
+    "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+    "https://qwenlm.github.io/qwen-code-docs/en/users/integration-zed/"
+   ],
+   "github": {
+    "name_with_owner": "QwenLM/qwen-code",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "sdk-typescript-v0.1.34 (2026-11-15)"
+   }
+  },
+  "uptime-kuma": {
+   "que_es": "Herramienta de monitorización de código abierto (MIT) creada por Louis Lam. Uno de los proyectos autoalojados más populares; activa.",
+   "que_hace": "Monitoriza HTTP(S), palabras clave, JSON, TCP, ping, DNS, Docker, bases de datos y más, con intervalos de hasta 20 segundos, notificaciones por Telegram, Discord, Slack, correo y más de 90 servicios, páginas de estado con dominio propio, certificados y 2FA.",
+   "como_lo_hace": "Escrito en JavaScript/Node.js; se despliega con `docker run` o Docker Compose, o en local con Node.js. Expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "Uptime Kuma expone métricas Prometheus que se pueden visualizar en Grafana.",
+     "orden_instalacion": "Configura Prometheus para leer /metrics; después crea el panel en Grafana."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Uptime Kuma se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy publica la interfaz y las páginas de estado de Uptime Kuma con HTTPS automático (combinación por arquitectura).",
+     "orden_instalacion": "Uptime Kuma en el puerto local; después configura un reverse_proxy en Caddy."
+    }
+   ],
+   "notas": "No sustituye a una monitorización completa de métricas y registros.",
+   "fuentes": [
+    "https://github.com/louislam/uptime-kuma/blob/master/README.md",
+    "https://github.com/louislam/uptime-kuma/wiki/Prometheus-Integration"
+   ],
+   "github": {
+    "name_with_owner": "louislam/uptime-kuma",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.5.11 (2026-11-12)"
+   }
+  },
+  "dokploy": {
+   "que_es": "PaaS autoalojable de Dokploy Technology, Inc. La licencia es Apache-2.0 salvo el contenido bajo /proprietary (LICENSE_PROPRIETARY). Muy activo; ofrece Dokploy Cloud de pago.",
+   "que_hace": "Despliega aplicaciones (Nixpacks, Heroku Buildpacks, Dockerfile) y bases de datos (PostgreSQL, MySQL, MongoDB, MariaDB, Redis) con copias de seguridad, Docker Compose nativo, multinodo con Swarm, más de 600 plantillas, monitorización de recursos, notificaciones y API/CLI.",
+   "como_lo_hace": "Se instala en un servidor Linux con un script que configura Docker, Swarm y Traefik; se gestiona desde la interfaz web. Escrito en TypeScript.",
+   "combina_con": [
+    {
+     "id": "traefik",
+     "motivo": "Dokploy integra Traefik automáticamente para enrutamiento y balanceo.",
+     "orden_instalacion": "Viene configurado por el instalador; ajusta dominios y certificados desde el panel."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila desde fuera las aplicaciones desplegadas con Dokploy (combinación por arquitectura).",
+     "orden_instalacion": "Despliega tus apps; después añade monitores en Uptime Kuma."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Supabase autoalojado se puede desplegar como plantilla o Compose en Dokploy (combinación por arquitectura).",
+     "orden_instalacion": "Dokploy primero; después despliega Supabase con su Compose."
+    }
+   ],
+   "notas": "Alternativas (elige una): coolify. Instalar con `curl | bash` ejecuta un script remoto con privilegios: revísalo antes.",
+   "fuentes": [
+    "https://github.com/Dokploy/dokploy/blob/canary/README.md",
+    "https://docs.dokploy.com/",
+    "https://github.com/Dokploy/dokploy/blob/canary/LICENSE.MD"
+   ],
+   "github": {
+    "name_with_owner": "Dokploy/dokploy",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.31.2 (2026-11-13)"
+   }
+  },
+  "frp": {
+   "que_es": "Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.",
+   "que_hace": "Expone servicios locales a internet a través de un servidor con IP pública: TCP, UDP, HTTP y HTTPS con dominios, modo P2P, multiplexación, cifrado y compresión, autenticación, panel del servidor, métricas Prometheus y plugins.",
+   "como_lo_hace": "Escrito en Go; se descargan los binarios frps (servidor) y frpc (cliente) y se configuran con TOML, YAML o JSON. Requiere un servidor con IP pública para frps.",
+   "combina_con": [
+    {
+     "id": "caddy",
+     "motivo": "Caddy puede poner HTTPS automático delante de los servicios HTTP expuestos con frp en el VPS (combinación por arquitectura).",
+     "orden_instalacion": "frps en el VPS; después configura Caddy como proxy hacia el puerto de frp."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila que los servicios publicados por el túnel sigan accesibles (combinación por arquitectura).",
+     "orden_instalacion": "Publica el servicio con frp; después añade el monitor."
+    },
+    {
+     "id": "home-assistant",
+     "motivo": "frp permite acceder a una instancia de Home Assistant detrás de NAT sin abrir puertos del router (combinación por arquitectura).",
+     "orden_instalacion": "Configura un proxy HTTP en frpc hacia Home Assistant; después protege el acceso con HTTPS."
+    }
+   ],
+   "notas": "Alternativas cercanas: headscale o netbird si prefieres una red privada en lugar de publicar servicios.",
+   "fuentes": [
+    "https://github.com/fatedier/frp/blob/dev/README.md",
+    "https://gofrp.org/"
+   ],
+   "github": {
+    "name_with_owner": "fatedier/frp",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.72.0 (2026-11-04)"
+   }
+  },
+  "headscale": {
+   "que_es": "Servidor de control de código abierto (BSD-3-Clause) mantenido por la comunidad (Juan Font, Kristoffer Dalby y otros). Maduro; alcance deliberadamente acotado a una sola tailnet para uso personal o pequeñas organizaciones.",
+   "que_hace": "Reemplaza el servidor de coordinación de Tailscale: registra nodos, distribuye claves y rutas, gestiona usuarios, ACL, DNS (MagicDNS), nodos de salida y rutas de subred, con autenticación OIDC opcional.",
+   "como_lo_hace": "Escrito en Go; se instala con paquetes, binario o contenedor y se configura con YAML. Los clientes son los de Tailscale (código abierto salvo las GUI de Windows, macOS e iOS). Expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "caddy",
+     "motivo": "La documentación de Headscale incluye ejemplos para ejecutarlo detrás de Caddy como proxy inverso.",
+     "orden_instalacion": "Headscale en local; después configura Caddy con el bloque de proxy documentado."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Headscale expone métricas Prometheus que se pueden visualizar en Grafana.",
+     "orden_instalacion": "Habilita metrics_listen_addr; después configura Prometheus y Grafana."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila la disponibilidad del servidor de control (combinación por arquitectura).",
+     "orden_instalacion": "Añade un monitor HTTP del endpoint de Headscale."
+    }
+   ],
+   "notas": "Alternativas (elige una): netbird. No es un producto oficial de Tailscale.",
+   "fuentes": [
+    "https://github.com/juanfont/headscale/blob/main/README.md",
+    "https://headscale.net/stable/ref/integration/reverse-proxy/",
+    "https://headscale.net/stable/ref/configuration/"
+   ],
+   "github": {
+    "name_with_owner": "juanfont/headscale",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-3-Clause",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.29.7 (2026-10-30)"
+   }
+  },
+  "discord-js": {
+   "que_es": "Biblioteca de código abierto (Apache-2.0) mantenida por la comunidad discord.js. Muy madura; sigue las versiones de la API de Discord.",
+   "que_hace": "Permite crear bots que reaccionan a eventos, comandos de barra, botones y modales, gestionan canales y roles, y usan voz, con cobertura casi completa de la API de Discord y caché configurable.",
+   "como_lo_hace": "Escrito en TypeScript para Node.js; se instala con npm, yarn, pnpm o bun. Requiere un token de bot del portal de desarrolladores de Discord.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "El AI SDK de Vercel puede generar las respuestas de un bot de discord.js con el modelo que elijas (combinación por arquitectura).",
+     "orden_instalacion": "Crea el bot; después llama al AI SDK desde el manejador de comandos."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Un bot de discord.js puede consultar un modelo local de Ollama para responder en el servidor (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después llama a su API desde el bot."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Un bot de discord.js se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Respeta los términos de desarrolladores de Discord y los límites de tasa.",
+   "fuentes": [
+    "https://github.com/discordjs/discord.js/blob/main/README.md",
+    "https://discord.js.org/"
+   ],
+   "github": {
+    "name_with_owner": "discordjs/discord.js",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "14.28.1 (2026-11-03)"
+   }
+  },
+  "rocket-chat": {
+   "que_es": "Plataforma de comunicación de Rocket.Chat Technologies. El núcleo es MIT y las carpetas ee/ tienen licencia Enterprise propia. Muy madura; usada por grandes organizaciones.",
+   "que_hace": "Ofrece mensajería en tiempo real, hilos, llamadas de voz y vídeo, federación con otras redes, atención omnicanal a clientes, apps del marketplace o propias con Apps-Engine, integraciones, cifrado de extremo a extremo y cumplimiento normativo.",
+   "como_lo_hace": "Escrito en TypeScript sobre Meteor y Node.js con MongoDB; se despliega con Docker, Podman o Kubernetes según la guía oficial. Clientes de escritorio y móviles aparte.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks y la API REST de Rocket.Chat permiten automatizar avisos y flujos desde Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un webhook entrante en Rocket.Chat; después úsalo desde Activepieces."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Un bot de Apps-Engine o una integración puede responder en Rocket.Chat con un modelo local de Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después crea la integración que llame a su API."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Rocket.Chat se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): mattermost.",
+   "fuentes": [
+    "https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md",
+    "https://docs.rocket.chat/docs/deploy-rocketchat"
+   ],
+   "github": {
+    "name_with_owner": "RocketChat/Rocket.Chat",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "9.0.0 (2026-11-10)"
+   }
+  },
+  "mattermost": {
+   "que_es": "Plataforma de colaboración open core de Mattermost, Inc. El código fuente se licencia bajo AGPL-3.0 o licencia comercial; los binarios oficiales, bajo MIT; hay ediciones de pago. Muy madura.",
+   "que_hace": "Ofrece canales, mensajes directos, hilos, búsqueda, automatización de flujos, llamadas y pantalla compartida, integración con IA e integraciones mediante APIs, webhooks, comandos de barra, apps y plugins.",
+   "como_lo_hace": "Servidor en Go con frontend React y PostgreSQL; se despliega con Docker, paquetes de Ubuntu, tarball o Kubernetes. Clientes de escritorio y móviles.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "Los webhooks entrantes de Mattermost permiten enviar avisos desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un webhook entrante en Mattermost; después úsalo en Activepieces."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Las funciones de IA de Mattermost o un bot propio pueden apuntar a un modelo local servido por Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama en marcha; después configura el endpoint en la integración de IA."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Mattermost se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): rocket-chat.",
+   "fuentes": [
+    "https://github.com/mattermost/mattermost/blob/master/README.md",
+    "https://github.com/mattermost/mattermost/blob/master/LICENSE.txt",
+    "https://docs.mattermost.com/guides/deployment.html"
+   ],
+   "github": {
+    "name_with_owner": "mattermost/mattermost",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v12.1.0 (2026-11-05)"
+   }
+  },
+  "synapse": {
+   "que_es": "Implementación de servidor de Matrix de código abierto (AGPL-3.0, o licencia comercial de Element) mantenida por Element. Muy madura.",
+   "que_hace": "Aloja cuentas y salas de Matrix con mensajería cifrada de extremo a extremo (en los clientes), federación con otros servidores, administración, módulos y puentes hacia otras redes mediante servicios de aplicación.",
+   "como_lo_hace": "Escrito en Python y Rust; se instala con paquetes de Debian, Docker o pip. Para producción se recomienda PostgreSQL y un proxy inverso con TLS; expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "La documentación de Synapse explica cómo exponer métricas Prometheus y ofrece un panel de Grafana.",
+     "orden_instalacion": "Habilita las métricas; después importa el panel de Grafana."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy sirve como proxy inverso con TLS y delegación .well-known para Synapse (combinación por arquitectura).",
+     "orden_instalacion": "Synapse en local; después configura reverse_proxy en Caddy."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Synapse se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Para despliegues sencillos, servidores Matrix más ligeros (no catalogados) pueden bastar.",
+   "fuentes": [
+    "https://github.com/element-hq/synapse/blob/develop/README.rst",
+    "https://element-hq.github.io/synapse/latest/setup/installation.html",
+    "https://element-hq.github.io/synapse/latest/metrics-howto.html"
+   ],
+   "github": {
+    "name_with_owner": "element-hq/synapse",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.165.0 (2026-11-10)"
+   }
+  },
+  "signal-cli": {
+   "que_es": "Cliente no oficial de código abierto (GPL-3.0) mantenido por AsamK. Maduro y activo; sigue los cambios del protocolo de Signal.",
+   "que_hace": "Registra un número o se vincula como dispositivo, envía y recibe mensajes, adjuntos y reacciones, gestiona grupos y contactos, y ofrece modo daemon con JSON-RPC y D-Bus para integrarse con servidores y bots.",
+   "como_lo_hace": "Escrito en Java; requiere JRE 25 y la biblioteca nativa libsignal-client (incluida para plataformas comunes) o un binario nativo. Hay que recibir mensajes con regularidad para mantener el cifrado.",
+   "combina_con": [
+    {
+     "id": "openclaw",
+     "motivo": "OpenClaw usa signal-cli para su canal de Signal.",
+     "orden_instalacion": "Instala y vincula signal-cli; después configura el canal de Signal en OpenClaw."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "El modo daemon JSON-RPC permite enviar mensajes de Signal desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Arranca signal-cli en modo daemon; después llama a su API por HTTP."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "signal-cli puede actuar como pasarela para que las alertas de monitorización lleguen por Signal (combinación por arquitectura).",
+     "orden_instalacion": "Expón signal-cli en modo daemon; después configura la notificación correspondiente."
+    }
+   ],
+   "notas": "Hay envoltorios REST de la comunidad (no catalogados) sobre signal-cli.",
+   "fuentes": [
+    "https://github.com/AsamK/signal-cli/blob/master/README.md",
+    "https://docs.openclaw.ai/channels/signal"
+   ],
+   "github": {
+    "name_with_owner": "AsamK/signal-cli",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "GPL-3.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.14.10 (2026-11-07)"
+   }
+  },
+  "zammad": {
+   "que_es": "Helpdesk de código abierto (AGPL-3.0) de la Zammad Foundation, con alojamiento y soporte de pago de Zammad GmbH. Muy maduro.",
+   "que_hace": "Gestiona la comunicación con clientes por correo, chat, teléfono y redes sociales, con tickets, SLA, macros, disparadores, base de conocimiento, informes, búsqueda y API REST para integraciones.",
+   "como_lo_hace": "Escrito en Ruby on Rails; se instala con Docker Compose, paquetes de Linux o Helm. Requiere PostgreSQL; Elasticsearch es recomendable para búsqueda e informes.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API REST y los webhooks de Zammad permiten crear tickets o avisos desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un token de API en Zammad; después úsalo en Activepieces."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir scripts contra la API de Zammad para migraciones o informes (combinación por arquitectura).",
+     "orden_instalacion": "Usa una instancia de prueba; después pide el script al agente."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Zammad se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): freescout. Chatwoot cubre atención por chat y mensajería con otro enfoque.",
+   "fuentes": [
+    "https://github.com/zammad/zammad/blob/develop/README.md",
+    "https://docs.zammad.org/en/latest/install/docker-compose.html"
+   ],
+   "github": {
+    "name_with_owner": "zammad/zammad",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Ruby",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "freescout": {
+   "que_es": "Helpdesk de código abierto (AGPL-3.0) del proyecto FreeScout, financiado con la venta de módulos. Maduro y activo.",
+   "que_hace": "Centraliza conversaciones de clientes en bandejas compartidas con asignación, notas, respuestas guardadas, flujos y seguimiento; con módulos, añade WhatsApp, Telegram, Facebook, Slack, chat en vivo y otras funciones.",
+   "como_lo_hace": "Aplicación PHP/MySQL con Laravel; se instala en hosting compartido, servidor propio o Docker. El instalador web guía la configuración.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API de FreeScout (módulo) o el correo permiten crear conversaciones desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Configura el acceso por API o correo; después crea el flujo."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede ayudar a escribir módulos o scripts de migración para FreeScout (combinación por arquitectura).",
+     "orden_instalacion": "Usa un entorno de pruebas; después revisa el código generado."
+    },
+    {
+     "id": "coolify",
+     "motivo": "FreeScout se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): zammad.",
+   "fuentes": [
+    "https://github.com/freescout-help-desk/freescout/blob/dist/README.md",
+    "https://freescout.net/"
+   ],
+   "github": {
+    "name_with_owner": "freescout-help-desk/freescout",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.8.251 (2026-11-14)"
+   }
+  },
+  "espocrm": {
+   "que_es": "CRM de código abierto (AGPL-3.0) de EspoCRM Inc., con extensiones y soporte de pago. Maduro y activo.",
+   "que_hace": "Gestiona cuentas, contactos, leads, oportunidades, casos, campañas, calendario y correo, con flujos (extensión), informes, roles y permisos, y un gestor de entidades para crear campos, relaciones y diseños sin código.",
+   "como_lo_hace": "Backend PHP 8.3–8.5 con frontend SPA; requiere MySQL 8.0+, MariaDB 10.6+ o PostgreSQL. Se instala en servidor web, con Docker o con script de instalación.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "La API REST y los webhooks de EspoCRM permiten sincronizar leads desde flujos de Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea un usuario API en EspoCRM; después úsalo en Activepieces."
+    },
+    {
+     "id": "easyappointments",
+     "motivo": "Las citas reservadas en Easy!Appointments pueden registrarse como actividades en EspoCRM mediante sus APIs (combinación por arquitectura).",
+     "orden_instalacion": "Conecta ambas APIs con un flujo de automatización."
+    },
+    {
+     "id": "coolify",
+     "motivo": "EspoCRM se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): twenty-main.",
+   "fuentes": [
+    "https://github.com/espocrm/espocrm/blob/master/README.md",
+    "https://docs.espocrm.com/"
+   ],
+   "github": {
+    "name_with_owner": "espocrm/espocrm",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "10.1.1 (2026-11-10)"
+   }
+  },
+  "easyappointments": {
+   "que_es": "Sistema de reservas de código abierto (GPL-3.0) creado por Alex Tselegidis. Maduro y activo.",
+   "que_hace": "Gestiona clientes, servicios, proveedores, horarios de trabajo y reservas online, con notificaciones por correo, sincronización con Google Calendar, API REST e interfaz traducida a muchos idiomas.",
+   "como_lo_hace": "Escrito en PHP 8.2+ con MySQL; se instala en un servidor web o con el entorno Docker Compose del repositorio.",
+   "combina_con": [
+    {
+     "id": "espocrm",
+     "motivo": "Las citas pueden registrarse como actividades del cliente en EspoCRM mediante ambas APIs (combinación por arquitectura).",
+     "orden_instalacion": "Conecta las APIs con un flujo de automatización."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "La API REST de Easy!Appointments permite automatizar recordatorios o altas desde Activepieces (combinación por arquitectura).",
+     "orden_instalacion": "Crea credenciales de API; después úsalas en Activepieces."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Easy!Appointments se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): cal.diy.",
+   "fuentes": [
+    "https://github.com/alextselegidis/easyappointments/blob/main/README.md",
+    "https://easyappointments.org"
+   ],
+   "github": {
+    "name_with_owner": "alextselegidis/easyappointments",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "GPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.6.1 (2026-10-19)"
+   }
+  },
+  "zed": {
+   "que_es": "Editor de código abierto de Zed Industries. El código es principalmente GPL-3.0-or-later con componentes Apache-2.0 donde se indica. Muy activo; ofrece planes de pago para su IA alojada.",
+   "que_hace": "Edita código con alto rendimiento, colaboración multijugador, Tree-sitter, LSP, depuración, terminal integrada y control de versiones, y ofrece un panel de agente con modelos configurables y agentes externos compatibles con ACP.",
+   "como_lo_hace": "Escrito en Rust; se descarga para macOS, Linux y Windows o se instala con gestores de paquetes. Los agentes externos se integran mediante Agent Client Protocol.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Zed documenta el uso de Claude Code (Claude Agent) como agente externo por ACP.",
+     "orden_instalacion": "Instala Claude Code; después añádelo como agente externo en Zed."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Gemini CLI es uno de los agentes externos documentados en Zed.",
+     "orden_instalacion": "Instala Gemini CLI; después actívalo en el panel de agentes."
+    },
+    {
+     "id": "codex",
+     "motivo": "Zed documenta Codex como agente externo.",
+     "orden_instalacion": "Instala Codex; después configúralo en Zed."
+    },
+    {
+     "id": "qwen-code",
+     "motivo": "Qwen Code documenta su integración con Zed.",
+     "orden_instalacion": "Instala Qwen Code; después configúralo como agente externo."
+    }
+   ],
+   "notas": "No hay otro editor completo en el catálogo; cline y kilocode son extensiones para VS Code.",
+   "fuentes": [
+    "https://github.com/zed-industries/zed/blob/main/README.md",
+    "https://zed.dev/docs/ai/external-agents"
+   ],
+   "github": {
+    "name_with_owner": "zed-industries/zed",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.28.1 (2026-11-11)"
+   }
+  },
+  "mini-swe-agent": {
+   "que_es": "Agente de código abierto (MIT) de los autores de SWE-bench y SWE-agent (Princeton y Stanford), que lo presentan como sucesor del SWE-agent original. Activo.",
+   "que_hace": "Resuelve tareas de ingeniería en repositorios con un agente deliberadamente simple que solo usa bash, sin interfaz de llamadas a herramientas, con historial lineal fácil de depurar y despliegue en entornos locales o aislados; incluye scripts para SWE-bench.",
+   "como_lo_hace": "Paquete Python; se ejecuta con `uvx mini-swe-agent` o pip. Usa LiteLLM para los modelos y admite entornos local, Docker/Podman, Singularity/Apptainer, bubblewrap y otros.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "mini-swe-agent llama a los modelos a través de su clase de modelo basada en LiteLLM.",
+     "orden_instalacion": "Configura las claves o el endpoint en LiteLLM; después selecciona el modelo en mini-swe-agent."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Mediante LiteLLM, mini-swe-agent puede usar modelos locales servidos por Ollama (combinación por arquitectura).",
+     "orden_instalacion": "Ollama con un modelo de código; después configúralo como modelo LiteLLM."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Un modelo servido con vLLM puede alimentar mini-swe-agent a través de LiteLLM (combinación por arquitectura).",
+     "orden_instalacion": "Lanza vLLM; después apunta LiteLLM a su endpoint."
+    }
+   ],
+   "notas": "Alternativas (elige una): openhands. Ejecuta el agente en un contenedor para aislar los comandos.",
+   "fuentes": [
+    "https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md",
+    "https://mini-swe-agent.com/"
+   ],
+   "github": {
+    "name_with_owner": "SWE-agent/mini-swe-agent",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.4.6 (2026-07-23)"
+   }
+  },
+  "caddy": {
+   "que_es": "Servidor web de código abierto (Apache-2.0) creado por Matt Holt y patrocinado por empresas. Muy maduro.",
+   "que_hace": "Sirve sitios y hace de proxy inverso con HTTPS automático (incluidos certificados internos y renovación), HTTP/3, balanceo de carga, compresión, plantillas y servidor de archivos, ampliable con módulos.",
+   "como_lo_hace": "Escrito en Go; un único binario para cualquier plataforma, paquetes o Docker. Se configura con Caddyfile, JSON nativo o su API REST; los plugins se compilan con xcaddy.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Coolify permite usar Caddy como proxy en lugar de Traefik.",
+     "orden_instalacion": "Instala Coolify; después cambia el proxy del servidor a Caddy en la configuración."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila los sitios que publica Caddy (combinación por arquitectura).",
+     "orden_instalacion": "Publica el sitio con Caddy; después añade el monitor."
+    },
+    {
+     "id": "headscale",
+     "motivo": "La documentación de Headscale incluye la configuración para ejecutarlo detrás de Caddy.",
+     "orden_instalacion": "Headscale en local; después añade el bloque reverse_proxy en Caddy."
+    },
+    {
+     "id": "frp",
+     "motivo": "Combinación recíproca: frp lo enlaza como «Caddy puede poner HTTPS automático delante de los servicios HTTP expuestos con frp en el VPS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde frp: frps en el VPS; después configura Caddy como proxy hacia el puerto de frp.",
+     "reciproca_de": "frp"
+    },
+    {
+     "id": "synapse",
+     "motivo": "Combinación recíproca: Synapse lo enlaza como «Caddy sirve como proxy inverso con TLS y delegación .well-known para Synapse (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Synapse: Synapse en local; después configura reverse_proxy en Caddy.",
+     "reciproca_de": "synapse"
+    },
+    {
+     "id": "wg-easy",
+     "motivo": "Combinación recíproca: WireGuard Easy lo enlaza como «Caddy publica la interfaz web de wg-easy con HTTPS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WireGuard Easy: wg-easy en local; después configura reverse_proxy en Caddy.",
+     "reciproca_de": "wg-easy"
+    }
+   ],
+   "notas": "Alternativas (elige una): traefik.",
+   "fuentes": [
+    "https://github.com/caddyserver/caddy/blob/master/README.md",
+    "https://caddyserver.com/docs/",
+    "https://coolify.io/docs/knowledge-base/server/proxies"
+   ],
+   "github": {
+    "name_with_owner": "caddyserver/caddy",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.11.9 (2026-11-05)"
+   }
+  },
+  "traefik": {
+   "que_es": "Proxy inverso de código abierto (MIT) de Traefik Labs, que vende productos comerciales aparte. Muy maduro.",
+   "que_hace": "Enruta tráfico a servicios descubiertos automáticamente, con HTTPS por Let's Encrypt (incluidos comodines), balanceo, reintentos, cortacircuitos, middlewares, panel web y métricas (Prometheus, Datadog, StatsD, InfluxDB) y trazas.",
+   "como_lo_hace": "Escrito en Go; un binario o imagen Docker oficial. La configuración estática se define en archivo o argumentos y la dinámica llega de los proveedores, por ejemplo etiquetas de Docker.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Coolify usa Traefik como proxy por defecto para sus despliegues.",
+     "orden_instalacion": "Viene configurado al instalar Coolify; ajusta dominios desde el panel."
+    },
+    {
+     "id": "dokploy",
+     "motivo": "Dokploy integra Traefik automáticamente para enrutamiento y balanceo.",
+     "orden_instalacion": "Viene configurado por el instalador de Dokploy."
+    },
+    {
+     "id": "crowdsec",
+     "motivo": "CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware.",
+     "orden_instalacion": "CrowdSec en el servidor; después añade el bouncer como middleware de Traefik."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Las métricas Prometheus de Traefik se visualizan en Grafana.",
+     "orden_instalacion": "Habilita las métricas Prometheus; después crea el panel en Grafana."
+    },
+    {
+     "id": "portainer",
+     "motivo": "Combinación recíproca: Portainer CE lo enlaza como «Los stacks gestionados con Portainer pueden publicarse con etiquetas de Traefik (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Portainer CE: Despliega Traefik; después añade las etiquetas en los stacks desde Portainer.",
+     "reciproca_de": "portainer"
+    }
+   ],
+   "notas": "Alternativas (elige una): caddy.",
+   "fuentes": [
+    "https://github.com/traefik/traefik/blob/master/README.md",
+    "https://doc.traefik.io/traefik/",
+    "https://docs.crowdsec.net/u/bouncers/traefik"
+   ],
+   "github": {
+    "name_with_owner": "traefik/traefik",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.7.19 (2026-11-13)"
+   }
+  },
+  "appwrite": {
+   "que_es": "Plataforma de backend de código abierto (BSD-3-Clause) de Appwrite, que ofrece también una nube gestionada. Muy popular y activa.",
+   "que_hace": "Proporciona autenticación, bases de datos (propias o PostgreSQL/MySQL gestionados), almacenamiento, funciones serverless, mensajería, tiempo real, hosting de frontends (Sites) y un servidor MCP para que los agentes de código operen proyectos vivos.",
+   "como_lo_hace": "Se autoaloja con Docker (un `docker run` que instala la pila de contenedores) o se usa en Appwrite Cloud. Ofrece SDK cliente y servidor para web, móvil y backend.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Appwrite incluye un servidor MCP para conectar agentes como Claude Code a un proyecto vivo.",
+     "orden_instalacion": "Crea el proyecto y una clave; después registra el servidor MCP en Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "El README cita Codex entre los agentes que se conectan por el servidor MCP de Appwrite.",
+     "orden_instalacion": "Configura el servidor MCP de Appwrite en Codex."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Appwrite se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): supabase.",
+   "fuentes": [
+    "https://github.com/appwrite/appwrite/blob/main/README.md",
+    "https://appwrite.io/docs"
+   ],
+   "github": {
+    "name_with_owner": "appwrite/appwrite",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-3-Clause",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.7.2 (2026-11-12)"
+   }
+  },
+  "portainer": {
+   "que_es": "Gestor de contenedores de código abierto (zlib) de Portainer.io. La Community Edition es gratuita y la Business Edition añade funciones de pago sobre la misma base. Muy maduro.",
+   "que_hace": "Gestiona contenedores, imágenes, redes, volúmenes, stacks de Compose y recursos de Kubernetes con interfaz gráfica, plantillas de aplicaciones, registros, consola y control de acceso básico.",
+   "como_lo_hace": "Escrito en Go con frontend web; se instala como contenedor con acceso al socket de Docker o con agentes y Helm para Kubernetes.",
+   "combina_con": [
+    {
+     "id": "traefik",
+     "motivo": "Los stacks gestionados con Portainer pueden publicarse con etiquetas de Traefik (combinación por arquitectura).",
+     "orden_instalacion": "Despliega Traefik; después añade las etiquetas en los stacks desde Portainer."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma, desplegado como stack desde Portainer, vigila los servicios del host (combinación por arquitectura).",
+     "orden_instalacion": "Crea el stack de Uptime Kuma en Portainer; después añade monitores."
+    },
+    {
+     "id": "wg-easy",
+     "motivo": "wg-easy se despliega y actualiza como stack desde Portainer (combinación por arquitectura).",
+     "orden_instalacion": "Crea el stack con el Compose de wg-easy."
+    }
+   ],
+   "notas": "Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.",
+   "fuentes": [
+    "https://github.com/portainer/portainer/blob/release/2.45/README.md",
+    "https://docs.portainer.io/start/install-ce"
+   ],
+   "github": {
+    "name_with_owner": "portainer/portainer",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Zlib",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.45.3 (2026-10-21)"
+   }
+  },
+  "netbird": {
+   "que_es": "Plataforma de red de código abierto de NetBird GmbH. El repositorio es BSD-3-Clause salvo management/, signal/ y relay/, que son AGPL-3.0. Muy activa, con nube de pago.",
+   "que_hace": "Conecta máquinas mediante túneles WireGuard cifrados sin abrir puertos, con descubrimiento automático de pares, SSO y MFA, grupos y reglas de acceso, rutas de red, DNS, comprobaciones de postura y panel de administración.",
+   "como_lo_hace": "Escrito en Go; el cliente se instala en Linux, Windows, macOS, Android e iOS. El servidor se autoaloja con Docker Compose siguiendo la guía de inicio rápido (incluye proveedor de identidad y proxy).",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "Los servicios de NetBird exponen métricas que se pueden visualizar en Grafana (combinación por arquitectura).",
+     "orden_instalacion": "Configura Prometheus para leer las métricas; después crea el panel."
+    },
+    {
+     "id": "uptime-kuma",
+     "motivo": "Uptime Kuma vigila los servicios de gestión y relay de NetBird (combinación por arquitectura).",
+     "orden_instalacion": "Añade monitores HTTP y TCP para sus endpoints."
+    },
+    {
+     "id": "coolify",
+     "motivo": "El servidor de NetBird se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): headscale.",
+   "fuentes": [
+    "https://github.com/netbirdio/netbird/blob/main/README.md",
+    "https://docs.netbird.io/"
+   ],
+   "github": {
+    "name_with_owner": "netbirdio/netbird",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.83.1 (2026-11-13)"
+   }
+  },
+  "wg-easy": {
+   "que_es": "Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.",
+   "que_hace": "Ejecuta un servidor WireGuard y ofrece una interfaz web para listar, crear, editar, activar y eliminar clientes, mostrar códigos QR, descargar configuraciones, ver estadísticas de tráfico, 2FA y métricas Prometheus.",
+   "como_lo_hace": "Se despliega con Docker o Podman (Compose recomendado); necesita un puerto UDP accesible desde internet y, para HTTPS, un proxy inverso.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "wg-easy expone métricas Prometheus que se pueden visualizar en Grafana.",
+     "orden_instalacion": "Habilita las métricas; después configura Prometheus y Grafana."
+    },
+    {
+     "id": "caddy",
+     "motivo": "Caddy publica la interfaz web de wg-easy con HTTPS (combinación por arquitectura).",
+     "orden_instalacion": "wg-easy en local; después configura reverse_proxy en Caddy."
+    },
+    {
+     "id": "pi-hole",
+     "motivo": "Los clientes de la VPN pueden usar Pi-hole como DNS para bloquear anuncios fuera de casa (combinación por arquitectura).",
+     "orden_instalacion": "Pi-hole en la red; después define su IP como DNS de los clientes en wg-easy."
+    },
+    {
+     "id": "portainer",
+     "motivo": "Combinación recíproca: Portainer CE lo enlaza como «wg-easy se despliega y actualiza como stack desde Portainer (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Portainer CE: Crea el stack con el Compose de wg-easy.",
+     "reciproca_de": "portainer"
+    }
+   ],
+   "notas": "Para redes malladas con muchos nodos, headscale o netbird encajan mejor.",
+   "fuentes": [
+    "https://github.com/wg-easy/wg-easy/blob/master/README.md",
+    "https://wg-easy.github.io/wg-easy/latest/"
+   ],
+   "github": {
+    "name_with_owner": "wg-easy/wg-easy",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v15.5.0 (2026-10-24)"
+   }
+  }
+ }
+}

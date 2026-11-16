@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skills oficiales de Obsidian para agentes de IA, según la especificación Agent Skills. Licencia MIT. Es muy popular (~53k estrellas, 1.1.0).
+
+## ¿Qué hace?
+
+Enseña a los agentes a trabajar con formatos y herramientas de Obsidian mediante siete skills: `obsidian-markdown`, `obsidian-bases` (`.base`), `json-canvas` (`.canvas`), `obsidian-cli` (vaults, plugins y temas), `obsidian-headless` (sincronizar y publicar sin la app de escritorio), `defuddle` (extraer Markdown limpio de webs) y `knap` (plantillas Markdown desde JSON o CSV).
+
+## ¿Cómo lo hace?
+
+Se instala con el marketplace de Claude Code (`claude plugin marketplace add obsidianmd/obsidian-skills` y `claude plugin install obsidian@obsidian-skills`), con el de Codex, desde el Marketplace de Cursor o con `npx skills add`. También se puede copiar `plugins/obsidian/skills/` al directorio de skills del agente o clonar el repo en el de OpenCode. Algunas skills requieren las herramientas que describen (CLI de Obsidian, Defuddle).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalación nativa por su marketplace de plugins. | Ejecuta los dos comandos del marketplace en Claude Code. |
+| [Codex CLI](codex.md) | Instalación nativa por el marketplace de plugins de Codex. | Ejecuta `codex plugin marketplace add obsidianmd/obsidian-skills` e instala Obsidian. |
+| [jsoncanvas](jsoncanvas.md) | La skill `json-canvas` implementa esta especificación. | Instala las skills; la especificación sirve de referencia. |
+| [defuddle](defuddle.md) | La skill `defuddle` usa esta herramienta para extraer Markdown de webs. | Instala Defuddle antes de usar esa skill. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[claude-obsidian](claude-obsidian.md) · [kepano-obsidian](kepano-obsidian.md) · [obsidian-help](obsidian-help.md) · [obsidian-sample-plugin](obsidian-sample-plugin.md) · [obsidian-second-brain](obsidian-second-brain.md)
+
+**Notas:** Sin alternativas declaradas. Se sustituye la combinación con obsidian-releases por integraciones documentadas.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 1.1.0 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/obsidian-skills/blob/main/README.md) · [2](https://agentskills.io/specification) · [3](https://help.obsidian.md/cli)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | La función básica no necesita un modelo. El formato es portable; funciones que llaman el CLI necesitan Obsidian y la versión de CLI correspondiente |
 | Coste | Consumo del agente que ya utilizas. Las skills usan el agente anfitrión; no incluyen acceso pagado a proveedores ni servicios |
 | Equipo | Preparación según la ruta elegida. Agente compatible con Agent Skills; Obsidian y CLI solo para acciones que lo necesiten |
-
-El formato es portable; funciones que llaman el CLI necesitan Obsidian y la versión de CLI correspondiente
-
-## Qué puedes hacer con él
-
-Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos.
-
-## Por qué destaca
-
-Usos propuestos: Guiar un agente para trabajar con notas; Crear bases y lienzos en formatos Obsidian.
-
-## Cómo funciona
 
 El formato es portable; funciones que llaman el CLI necesitan Obsidian y la versión de CLI correspondiente
 
@@ -93,12 +114,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible con Agent Skills; Obsidian y CLI solo para acciones que lo necesiten
 - **Etiquetas:** `notas` `skill` `shell`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Obsidian: distribución y extensiones](obsidian-releases.md) | 23.3k | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. |
 
 ## Enlaces
 
