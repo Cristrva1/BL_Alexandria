@@ -1020,7 +1020,9 @@ def _update_root_docs(project_root: Path, cat: Catalog) -> None:
     if areas:
         stats=(f"**{len(repos)} repos curados** · **{sum(a['kind']=='work' for a in areas)} áreas de trabajo** · "
                f"**{sum(a['kind']=='tool' for a in areas)} colecciones de configuración** · "
-               f"**{sum(len(a['topics']) for a in areas)} subcategorías**")
+               f"**{sum(len(a['topics']) for a in areas)} subcategorías prácticas** · "
+               f"**{len(cat.public_categories())} categorías técnicas** · "
+               f"**{sum(len(c.get('subs', [])) for c in cat.public_categories())} subcategorías técnicas**")
     recipes = "\n".join(
         f"- [{rc.get('emoji', '')} {rc['title']}]({playbook_path(rc['id'], 'root')}) — " + ", ".join(f"`{rid}`" for rid in rc.get("repos", []))
         for rc in cat.recipes

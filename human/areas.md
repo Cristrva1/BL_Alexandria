@@ -2,7 +2,7 @@
 
 # Categorías y subcategorías prácticas
 
-13 áreas de trabajo y 3 colecciones de configuración, con 98 subcategorías.
+13 áreas de trabajo y 3 colecciones de configuración, con 98 subcategorías prácticas. Es una capa de navegación distinta del índice técnico (32 categorías y 110 subcategorías técnicas); por eso los recuentos no coinciden.
 
 Elige un área, después una tarea y por último una ficha. Un repositorio puede servir en varias áreas; conserva una sola identidad y ficha. Los recuentos por área no se suman para obtener el total de proyectos.
 

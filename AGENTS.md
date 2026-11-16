@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**811 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías**
+**811 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías prácticas** · **32 categorías técnicas** · **110 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
