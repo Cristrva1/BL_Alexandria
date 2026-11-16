@@ -70,7 +70,13 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Lee la introducción y completa un ejercicio de herramienta con entrada y salida pequeñas.
 2. Comprueba: Puedes explicar el papel del host, cliente y servidor.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/microsoft/mcp-for-beginners.git
+```
+
+Comando copiado literalmente de el README; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/mcp-for-beginners/blob/main/README.md)
 

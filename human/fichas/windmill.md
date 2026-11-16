@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 18.6k | NOASSERTION | Rust | 2026-11-10 |
+| 18.6k | AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) | Rust | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
 **Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise). La mayoría de archivos AGPL; algunas partes Apache-2.0; funciones enterprise propietarias. Fuente: [LICENSE](https://github.com/windmill-labs/windmill/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

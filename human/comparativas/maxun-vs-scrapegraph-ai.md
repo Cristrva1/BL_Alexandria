@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | AGPL-3.0 | MIT |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| Instalación | `docker-compose up -d` | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 

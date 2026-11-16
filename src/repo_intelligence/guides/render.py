@@ -501,6 +501,17 @@ def _used_by(cat: Catalog) -> dict[str, list[str]]:
     return cached
 
 
+def licence_review_lines(repo: dict[str, Any]) -> list[str]:
+    """Línea con la licencia confirmada leyendo el archivo LICENSE cuando GitHub no la identifica."""
+    lv = repo.get("licencia_verificada") or {}
+    if not lv.get("texto"):
+        return []
+    mark = "⚠️ " if lv.get("restrictiva") and not (repo.get("licencia_nota") or "").strip() else ""
+    nota = f" {lv['nota'].strip()}" if lv.get("nota") else ""
+    src = f" Fuente: [LICENSE]({lv['fuente']})." if lv.get("fuente") else ""
+    return [f"> {mark}**Licencia revisada el {lv.get('fecha', '')}:** {lv['texto']}.{nota}{src} GitHub la marca como {lv.get('github', 'NOASSERTION')}.", ""]
+
+
 def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
     """Render ¿Qué es? / ¿Qué hace? / ¿Cómo lo hace? / ¿Con qué se combina? when curated."""
     if not has_four_sections(repo):
@@ -508,6 +519,7 @@ def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
     lines: list[str] = []
     if (repo.get("licencia_nota") or "").strip():
         lines += [f"> ⚠️ **Licencia y costes:** {repo['licencia_nota'].strip()}", ""]
+    lines += licence_review_lines(repo)
     for title, field in (("¿Qué es?", "que_es"), ("¿Qué hace?", "que_hace"), ("¿Cómo lo hace?", "como_lo_hace")):
         lines += [f"## {title}", "", repo[field].strip(), ""]
     rows = []

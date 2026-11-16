@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 65.5k | NOASSERTION | TypeScript | 2026-11-10 |
+| 65.5k | Sustainable Use License (no OSI) | TypeScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Sustainable Use License (no OSI). Rama master bajo Sustainable Use License; uso comercial limitado. Fuente: [LICENSE](https://github.com/nocodb/nocodb/blob/develop/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

@@ -241,7 +241,7 @@ def build_catalog(project_root: Path) -> dict:
             merged["complejidad"] = {"nivel": cx["nivel"], "nombre": cx["nombre"], "motivos": cx.get("motivos") or [], "origen": cx.get("origen")}
         if detail.get("similares"):
             merged["similares"] = detail["similares"]
-        for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
+        for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "licencia_verificada", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
             if detail.get(field):
                 merged[field] = detail[field]
         command, confidence, note = derive_install({**merged, "repo": merged["repo_url"]})

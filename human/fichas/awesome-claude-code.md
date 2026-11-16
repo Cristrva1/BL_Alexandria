@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 58k | NOASSERTION | Python | 2026-06-23 |
+| 58k | CC-BY-NC-ND-4.0 | Python | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** CC-BY-NC-ND-4.0. Lista: no comercial y sin obras derivadas. Fuente: [LICENSE](https://github.com/hesreallyhim/awesome-claude-code/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -76,12 +78,12 @@ Material para leer. [Entender los términos](../vocabulario.md).
 **Antes de empezar:**
 
 - Navegador
--  una necesidad concreta de configuración
+- una necesidad concreta de configuración
 
 1. Localiza un recurso de hooks o status line y revisa su fuente original.
 2. Comprueba: Identificas su función, mantenimiento y requisitos antes de instalarlo.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md)
 

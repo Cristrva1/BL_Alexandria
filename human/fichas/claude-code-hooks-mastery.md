@@ -63,12 +63,12 @@ Material para leer. [Entender los términos](../vocabulario.md).
 **Antes de empezar:**
 
 - Claude Code y uv
--  revisar solo un ejemplo de hook y sus dependencias
+- revisar solo un ejemplo de hook y sus dependencias
 
 1. Estudia un hook sencillo de sesión y adapta una comprobación en una carpeta de prueba.
 2. Comprueba: El hook produce el evento o registro esperado al activar esa fase de la sesión.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md)
 

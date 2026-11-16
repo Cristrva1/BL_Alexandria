@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 28k | NOASSERTION | TypeScript | 2026-11-10 |
+| 28k | Apache-2.0 | TypeScript | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
 **Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/vercel/ai/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

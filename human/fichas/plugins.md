@@ -63,12 +63,12 @@ Material para leer. [Entender los términos](../vocabulario.md).
 **Antes de empezar:**
 
 - Cursor
--  revisar el plugin concreto y sus credenciales
+- revisar el plugin concreto y sus credenciales
 
 1. Abre un plugin del catálogo y lee su manifiesto y guía de conexión.
 2. Comprueba: Puedes distinguir sus skills, reglas, servidor MCP y servicios externos.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/cursor/plugins/blob/main/README.md)
 

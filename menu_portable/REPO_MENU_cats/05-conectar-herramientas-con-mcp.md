@@ -108,13 +108,13 @@ role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=mcp,p
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/awslabs/mcp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/awslabs/mcp/blob/main/README.md
+claude mcp add aws-api uvx awslabs.aws-api-mcp-server@latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: consultar la documentación actualizada de AWS desde tu agente de código; revisar y generar plantillas de CloudFormation o CDK con validación de seguridad
 **Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
@@ -169,13 +169,13 @@ role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,bro
 - Equipo: Preparación según la ruta elegida. Node.js LTS; npm; Chrome estable; cliente MCP
 **Repo:** https://github.com/ChromeDevTools/chrome-devtools-mcp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md
+/plugin marketplace add ChromeDevTools/chrome-devtools-mcp
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -321,13 +321,13 @@ role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,co
 - Equipo: Preparación según la ruta elegida. Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota
 **Repo:** https://github.com/github/github-mcp-server
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/github/github-mcp-server/blob/main/README.md
+claude mcp add github -e GITHUB_PERSONAL_ACCESS_TOKEN=$GITHUB_PAT -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una base de código; Revisar el estado de una pull request
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -381,13 +381,13 @@ role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp,
 - Equipo: Preparación según la ruta elegida. Navegador; lenguaje elegido para los ejercicios
 **Repo:** https://github.com/microsoft/mcp-for-beginners
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+git clone https://github.com/microsoft/mcp-for-beginners.git
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

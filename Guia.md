@@ -113,7 +113,7 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 47.5k<br>
 **Qué es:** Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/apache/airflow/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install 'apache-airflow==3.4.0' --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.4.0/constraints-3.10.txt"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: programar un ETL diario que descarga, transforma y carga datos en un almacén; coordinar entrenamientos y despliegues de modelos con dependencias y reintentos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Grafana](human/fichas/grafana.md) · [MLflow](human/fichas/mlflow.md) · [Claude Code](human/fichas/claude-code.md) · [dbt](human/fichas/dbt.md)<br>
 **Más:** [ficha completa](human/fichas/airflow.md) · [GitHub](https://github.com/apache/airflow)
@@ -138,7 +138,7 @@ Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 25.5k<br>
 **Qué es:** Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://www.activepieces.com/docs/install/overview); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d --name activepieces -p 8080:80 -v ~/.activepieces:/root/.activepieces -e AP_DB_TYPE=PGLITE -e AP_REDIS_TYPE=MEMORY -e AP_FRONTEND_URL="http://localhost:8080" activepieces/activepieces:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [NocoDB](human/fichas/nocodb.md) · [Claude Code](human/fichas/claude-code.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/activepieces.md) · [GitHub](https://github.com/activepieces/activepieces)
@@ -229,7 +229,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 41.3k<br>
 **Qué es:** Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.appsmith.com/getting-started/setup/installation-guides); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `helm install appsmith appsmith/appsmith -n appsmith --wait --timeout 10m --set mongodb.enabled=false --set mongodbCommunity.enabled=true --set mongodbOperator.enabled=true` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md) · [metabase](human/fichas/metabase.md)<br>
 **Más:** [ficha completa](human/fichas/appsmith.md) · [GitHub](https://github.com/appsmithorg/appsmith)
@@ -238,7 +238,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 41.2k<br>
 **Qué es:** Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.tooljet.com/docs/setup/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run --name tooljet --restart unless-stopped -p 80:80 --platform linux/amd64 -v tooljet_data:/var/lib/postgresql/13/main tooljet/try:ee-lts-latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [activepieces](human/fichas/activepieces.md)<br>
 **Más:** [ficha completa](human/fichas/tooljet.md) · [GitHub](https://github.com/ToolJet/ToolJet)
@@ -247,7 +247,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 28.4k<br>
 **Qué es:** Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.budibase.com); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d -t --name=budibase -p 10000:80 -v /local/path/data:/data --restart unless-stopped budibase/budibase:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/budibase.md) · [GitHub](https://github.com/Budibase/budibase)
@@ -506,7 +506,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 **Etiquetas:** Ejecución 🏠 local · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 150k<br>
 **Qué es:** Kit de GitHub para desarrollo guiado por especificaciones con agentes de código.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
-**Arranque:** [Instrucciones originales](https://github.github.io/spec-kit/installation.html); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/github/spec-kit.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Especificar una función con requisitos y criterios de aceptación; Mantener un flujo común en un equipo que usa agentes diferentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [Awesome GitHub Copilot](human/fichas/awesome-copilot.md) · [elephant-goldfish-model](human/fichas/elephant-goldfish-model.md)<br>
 **Más:** [ficha completa](human/fichas/spec-kit.md) · [GitHub](https://github.com/github/spec-kit)
@@ -701,7 +701,7 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 59k<br>
 **Qué es:** Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
-**Arranque:** [Instrucciones originales](https://github.com/FoundationAgents/OpenManus/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/FoundationAgents/OpenManus.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: delegar una investigación web que termine en un informe guardado en disco; experimentar con un agente general en local antes de elegir un framework — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
 **Combina con:** [browser-use](human/fichas/browser-use.md) · [playwright](human/fichas/playwright.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/openmanus.md) · [GitHub](https://github.com/FoundationAgents/OpenManus)
@@ -930,7 +930,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 161k<br>
 **Qué es:** Plataforma integral para construir apps de IA con backend y UI listos.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/langgenius/dify/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [langfuse](human/fichas/langfuse.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md) · [evolution-api](human/fichas/evolution-api.md) · [PaddleOCR](human/fichas/paddleocr.md) · [TEN Framework](human/fichas/ten-framework.md)<br>
 **Más:** [ficha completa](human/fichas/dify.md) · [GitHub](https://github.com/langgenius/dify)
@@ -1163,7 +1163,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 18.4k<br>
 **Qué es:** Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.maxun.dev/installation/docker); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker-compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [activepieces](human/fichas/activepieces.md) · [changedetection.io](human/fichas/changedetection.md)<br>
 **Más:** [ficha completa](human/fichas/maxun.md) · [GitHub](https://github.com/getmaxun/maxun)
@@ -1192,7 +1192,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 112k<br>
 **Qué es:** CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenClaw](human/fichas/openclaw.md) · [last30days](human/fichas/last30days-skill.md)<br>
 **Más:** [ficha completa](human/fichas/agent-reach.md) · [GitHub](https://github.com/Panniantong/Agent-Reach)
@@ -1211,7 +1211,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 47k<br>
 **Qué es:** Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/DIYgod/RSSHub/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d --name rsshub -p 1200:1200 diygod/rsshub` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: seguir canales, perfiles o webs sin RSS desde tu lector de feeds; alimentar un flujo de monitorización de fuentes con feeds uniformes — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [FreshRSS](human/fichas/freshrss.md) · [Miniflux](human/fichas/miniflux.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/rsshub.md) · [GitHub](https://github.com/DIYgod/RSSHub)
@@ -1238,7 +1238,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 29k<br>
 **Qué es:** Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install archivebox` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [yt-dlp](human/fichas/yt-dlp.md) · [changedetection.io](human/fichas/changedetection.md) · [karakeep](human/fichas/karakeep.md) · [instaloader](human/fichas/instaloader.md)<br>
 **Más:** [ficha completa](human/fichas/archivebox.md) · [GitHub](https://github.com/ArchiveBox/ArchiveBox)
@@ -1256,7 +1256,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 13.1k<br>
 **Qué es:** Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/wallabag/wallabag/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/wallabag/wallabag.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: guardar artículos para leerlos sin conexión en el móvil; archivar lecturas con etiquetas y anotaciones en tu propio servidor — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [FreshRSS](human/fichas/freshrss.md) · [Miniflux](human/fichas/miniflux.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/wallabag.md) · [GitHub](https://github.com/wallabag/wallabag)
@@ -1276,7 +1276,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 208k<br>
 **Qué es:** Descargador de audio y video por línea de comandos compatible con miles de sitios.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/yt-dlp/yt-dlp/wiki/Installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install "yt-dlp[default,curl-cffi]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md) · [Fabric](human/fichas/fabric.md)<br>
 **Más:** [ficha completa](human/fichas/yt-dlp.md) · [GitHub](https://github.com/yt-dlp/yt-dlp)
@@ -1422,7 +1422,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 56.3k<br>
 **Qué es:** Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
-**Arranque:** [Instrucciones originales](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [MCP Inspector](human/fichas/mcp-inspector.md) · [Puppeteer](human/fichas/puppeteer.md) · [agent-browser](human/fichas/agent-browser.md) · [awesome-chrome-devtools](human/fichas/awesome-chrome-devtools.md)<br>
 **Más:** [ficha completa](human/fichas/chrome-devtools-mcp.md) · [GitHub](https://github.com/ChromeDevTools/chrome-devtools-mcp)
@@ -1431,7 +1431,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 34.5k<br>
 **Qué es:** Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/github/github-mcp-server/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `claude mcp add github -e GITHUB_PERSONAL_ACCESS_TOKEN=$GITHUB_PAT -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una base de código; Revisar el estado de una pull request — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [strix](human/fichas/strix.md) · [agentes-chat](human/fichas/agentes-chat.md) · [Awesome GitHub Copilot](human/fichas/awesome-copilot.md) · [GitHub CLI](human/fichas/cli.md)<br>
 **Más:** [ficha completa](human/fichas/github-mcp-server.md) · [GitHub](https://github.com/github/github-mcp-server)
@@ -1495,7 +1495,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 9.9k<br>
 **Qué es:** Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
-**Arranque:** [Instrucciones originales](https://github.com/awslabs/mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `claude mcp add aws-api uvx awslabs.aws-api-mcp-server@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: consultar la documentación actualizada de AWS desde tu agente de código; revisar y generar plantillas de CloudFormation o CDK con validación de seguridad — **Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [MCP Inspector](human/fichas/mcp-inspector.md)<br>
 **Más:** [ficha completa](human/fichas/aws-mcp.md) · [GitHub](https://github.com/awslabs/mcp)
@@ -1533,7 +1533,7 @@ uvx mcp-for-blender setup` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 17.7k<br>
 **Qué es:** Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/microsoft/mcp-for-beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/microsoft/mcp-for-beginners.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [MCP Python SDK](human/fichas/mcp-python-sdk.md) · [FastMCP](human/fichas/fastmcp.md) · [MCP Inspector](human/fichas/mcp-inspector.md) · [AI Agents for Beginners](human/fichas/ai-agents-for-beginners.md) · [Generative AI for Beginners](human/fichas/generative-ai-for-beginners.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-for-beginners.md) · [GitHub](https://github.com/microsoft/mcp-for-beginners)

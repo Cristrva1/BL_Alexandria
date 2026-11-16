@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 25.5k | NOASSERTION | TypeScript | 2026-06-23 |
+| 25.5k | MIT + licencia Enterprise (packages/ee/) | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
 **Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + licencia Enterprise (packages/ee/). El código fuera de packages/ee/ es MIT; lo de ee/ requiere licencia comercial. Fuente: [LICENSE](https://github.com/activepieces/activepieces/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -70,17 +72,24 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 - Docker Compose con PostgreSQL y Redis, o una cuenta alojada
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
-2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
-3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.
+4. Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://www.activepieces.com/docs/install/overview)
+```
+docker run -d --name activepieces -p 8080:80 -v ~/.activepieces:/root/.activepieces -e AP_DB_TYPE=PGLITE -e AP_REDIS_TYPE=MEMORY -e AP_FRONTEND_URL="http://localhost:8080" activepieces/activepieces:latest
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Install»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/activepieces/activepieces/blob/main/docs/install/options/docker.mdx)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar activepieces para mi objetivo y necesito pasos guiados. Lee https://www.activepieces.com/docs/install/overview. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar activepieces para mi objetivo y necesito pasos guiados. Lee https://github.com/activepieces/activepieces/blob/main/docs/install/options/docker.mdx. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

@@ -219,11 +219,11 @@ Formato: `id` [role|exec|setup|inst] — one — tags:… — prov:… — tools
 ### 1. Automatizar procesos y crear herramientas internas (18)
 Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.md`
 
-- `activepieces` [P|hyb|M|?] — Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flu — tags: automation,typescript,docker
-- `airflow` [P|loc|H|?] — Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintento — tags: automation,data,python,docker — alt: prefect,dagster,kestra
-- `appsmith` [P|loc|M|?] — Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. — tags: ui,automation,typescript,docker — alt: tooljet,budibase,nocodb
+- `activepieces` [P|hyb|M|+] — Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flu — tags: automation,typescript,docker
+- `airflow` [P|loc|H|+] — Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintento — tags: automation,data,python,docker — alt: prefect,dagster,kestra
+- `appsmith` [P|loc|M|+] — Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. — tags: ui,automation,typescript,docker — alt: tooljet,budibase,nocodb
 - `baserow` [P|hyb|E|+] — Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashbo — tags: data,no-code,python,docker — alt: grist-core,teable,nocodb
-- `budibase` [P|loc|M|?] — Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. — tags: automation,agents,docker — alt: appsmith,tooljet,nocodb
+- `budibase` [P|loc|M|+] — Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. — tags: automation,agents,docker — alt: appsmith,tooljet,nocodb
 - `dagger` [A|loc|M|+] — Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría O — tags: ci,containers
 - `dagster` [L|loc|M|+] — Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster  — tags: automation,data,python — alt: airflow,prefect,kestra
 - `grist-core` [P|hyb|E|+] — Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en  — tags: data,spreadsheet,docker,python — alt: baserow,teable,nocodb
@@ -234,7 +234,7 @@ Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.m
 - `prefect` [L|loc|E|+] — Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programac — tags: automation,data,python — alt: airflow,dagster,kestra
 - `teable` [P|hyb|M|?] — Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y  — tags: data,no-code,typescript,docker — alt: grist-core,baserow,nocodb
 - `temporal` [P|loc|M|+] — Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores  — tags: automation,go,server,agents
-- `tooljet` [P|loc|M|?] — Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. — tags: ui,automation,docker — alt: appsmith,budibase
+- `tooljet` [P|loc|M|+] — Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. — tags: ui,automation,docker — alt: appsmith,budibase
 - `trigger-dev` [P|hyb|M|?] — Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. — tags: automation,agents,typescript — alt: windmill,kestra
 - `windmill` [P|loc|M|+] — Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. — tags: automation,agents,rust,docker — alt: kestra,trigger-dev
 
@@ -267,7 +267,7 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `plugins` [D|loc|E|?] — Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. — tags: catalogos,reference,typescript
 - `ponytail` [S|loc|E|+] — Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribe — tags: skills,coding-agent
 - `skills` [S|cld|E|+] — Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plu — tags: skills,coding-agent
-- `spec-kit` [S|loc|E|?] — Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. — tags: coding-agent,skills,python — alt: bmad-method,claude-task-master
+- `spec-kit` [S|loc|E|+] — Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. — tags: coding-agent,skills,python — alt: bmad-method,claude-task-master
 - `superclaude-framework` [S|hyb|M|+] — Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. — tags: metodologia,python — tools: claude-code — alt: superpowers,ecc,gstack
 - `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills,superclaude-framework,ecc,gstack
 - `wshobson-agents` [S|hyb|E|+] — Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otr — tags: skills,coding-agent,agents,python — alt: claude-plugins-official,antigravity-awesome-skills,agency-agents
@@ -287,7 +287,7 @@ Detalle: `REPO_MENU_cats/03-construir-agentes-y-coordinar-equipos-de-ia.md`
 - `claude-agent-sdk-python` [L|hyb|M|+] — SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación  — tags: py,framework,python
 - `crewai` [L|cld|E|+] — Framework para orquestar "crews" de agentes con roles y tareas. — tags: automation,agents,python — alt: langgraph,agno,metagpt
 - `deepagents` [R|hyb|E|+] — Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. — tags: agents,python — prov: anthropic,openai — alt: openai-agents-python
-- `dify` [P|hyb|M|?] — Plataforma integral para construir apps de IA con backend y UI listos. — tags: automation,agents,python,docker — alt: sim,ragflow
+- `dify` [P|hyb|M|+] — Plataforma integral para construir apps de IA con backend y UI listos. — tags: automation,agents,python,docker — alt: sim,ragflow
 - `dspy` [L|hyb|M|+] — Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano. — tags: prompts,evaluation,python — prov: openai,anthropic,local — alt: promptfoo
 - `haystack` [L|hyb|M|+] — Framework de deepset para pipelines de RAG y agentes listos para producción. — tags: rag,agents,python — prov: openai,anthropic,local — alt: llama-index,langchain
 - `hermes-agent-self-evolution` [L|cld|M|+] — Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GE — tags: experimentos,python
@@ -304,7 +304,7 @@ Detalle: `REPO_MENU_cats/03-construir-agentes-y-coordinar-equipos-de-ia.md`
 - `mirofish` [P|hyb|H|+] — Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar  — tags: agents,python
 - `openai-agents-python` [L|hyb|E|+] — SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. — tags: agents,python — prov: openai — alt: pydantic-ai,langgraph,smolagents,deepagents,adk-python
 - `openevolve` [R|cld|H|+] — Agente de codificación evolutivo que optimiza algoritmos por simulación genética. — tags: automation,agents,python
-- `openmanus` [A|hyb|M|?] — Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos media — tags: agents,python,browser
+- `openmanus` [A|hyb|M|+] — Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos media — tags: agents,python,browser
 - `pydantic-ai` [L|hyb|E|+] — Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. — tags: agents,python — prov: openai,anthropic,google,local — alt: openai-agents-python,smolagents,langgraph
 - `sim` [P|hyb|M|+] — Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. — tags: agents,automation,typescript — prov: openai,anthropic,local — alt: langflow,dify,autogpt
 - `smolagents` [L|hyb|E|+] — Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. — tags: agents,python — prov: openai,local — alt: pydantic-ai,openai-agents-python
@@ -313,8 +313,8 @@ Detalle: `REPO_MENU_cats/03-construir-agentes-y-coordinar-equipos-de-ia.md`
 ### 4. Buscar, extraer y monitorear información web (28)
 Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 
-- `agent-reach` [A|loc|E|?] — CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. — tags: scraping,research,python
-- `archivebox` [A|loc|E|?] — Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios. — tags: scraping,data,python,docker
+- `agent-reach` [A|loc|E|+] — CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. — tags: scraping,research,python
+- `archivebox` [A|loc|E|+] — Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios. — tags: scraping,data,python,docker
 - `awesome-web-scraping` [D|hyb|E|?] — Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. — tags: crawlers,captcha-bypass,captcha-recaptcha,crawler,crawling,crawling-framework,crawling-python,crawling-tool
 - `changedetection` [A|loc|E|+] — Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. — tags: scraping,notifications,python,docker
 - `colly` [L|loc|E|?] — Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecuc — tags: scraping,go,library
@@ -330,17 +330,17 @@ Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 - `katana` [A|loc|E|+] — Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alc — tags: scraping,go,security,cli
 - `last30days-skill` [S|cld|E|+] — Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días — tags: research,skills,python — alt: social-media-research-skills
 - `llm-scraper` [L|hyb|E|+] — Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el — tags: scraping,typescript — alt: maxun
-- `maxun` [P|loc|M|?] — Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. — tags: scraping,automation,typescript — alt: scrapegraph-ai,llm-scraper
+- `maxun` [P|loc|M|+] — Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. — tags: scraping,automation,typescript — alt: scrapegraph-ai,llm-scraper
 - `miniflux` [P|loc|E|?] — Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más  — tags: research,rss,go,docker — alt: freshrss
-- `rsshub` [P|loc|E|?] — Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker. — tags: research,rss,typescript,docker
+- `rsshub` [P|loc|E|+] — Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker. — tags: research,rss,typescript,docker
 - `scrapegraph-ai` [L|hyb|M|+] — Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué e — tags: scraping,python — alt: maxun
 - `scrapling` [L|loc|M|+] — Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica  — tags: automation,scraping,python
 - `scrapy` [L|loc|M|+] — Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesam — tags: scraping,python
 - `searxng` [P|loc|E|?] — Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. — tags: search,research,python,docker
 - `spotdl` [A|loc|E|+] — CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras — tags: audio,python,cli
 - `vane` [A|loc|E|+] — Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). — tags: search,research,local,typescript — prov: openai,local — alt: gpt-researcher
-- `wallabag` [P|loc|M|?] — Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y exte — tags: research,read-later,php,docker
-- `yt-dlp` [A|loc|E|?] — Descargador de audio y video por línea de comandos compatible con miles de sitios. — tags: video,audio,scraping,python
+- `wallabag` [P|loc|M|+] — Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y exte — tags: research,read-later,php,docker
+- `yt-dlp` [A|loc|E|+] — Descargador de audio y video por línea de comandos compatible con miles de sitios. — tags: video,audio,scraping,python
 
 ### 5. Conectar herramientas con MCP (25)
 Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
@@ -348,16 +348,16 @@ Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 - `annas-mcp` [R|hyb|M|?] — Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. — tags: servidores,annas-archive,cli,mcp-server,go
 - `awesome-mcp-clients` [D|loc|E|?] — Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes. — tags: mcp
 - `awesome-mcp-servers` [D|hyb|E|?] — Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos  — tags: automation,mcp
-- `aws-mcp` [R|loc|M|?] — Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, E — tags: mcp,python,cloud,aws
+- `aws-mcp` [R|loc|M|+] — Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, E — tags: mcp,python,cloud,aws
 - `blender-mcp` [R|loc|E|+] — Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. — tags: mcp,design,python — prov: mcp
-- `chrome-devtools-mcp` [R|loc|E|?] — Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. — tags: mcp,browser,typescript — prov: mcp — alt: playwright-mcp,browser-harness
+- `chrome-devtools-mcp` [R|loc|E|+] — Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. — tags: mcp,browser,typescript — prov: mcp — alt: playwright-mcp,browser-harness
 - `context7` [R|cld|E|+] — Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. — tags: mcp,docs,typescript — prov: mcp
 - `fastmcp` [L|loc|E|+] — La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. — tags: mcp,python — prov: mcp — alt: mcp-python-sdk
 - `figma-context-mcp` [R|hyb|E|?] — Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. — tags: mcp,design,ui,typescript — prov: mcp
 - `ghidramcp` [R|loc|M|+] — Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. — tags: servidores,mcp,java
-- `github-mcp-server` [R|hyb|E|?] — Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. — tags: mcp,code,go — prov: mcp
+- `github-mcp-server` [R|hyb|E|+] — Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. — tags: mcp,code,go — prov: mcp
 - `mcp` [D|hyb|M|?] — Directorio de servidores MCP oficiales de Google, ejemplos y orientación para desplegarlos en Google Cloud. — tags: mcp
-- `mcp-for-beginners` [D|loc|E|?] — Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. — tags: mcp,learning
+- `mcp-for-beginners` [D|loc|E|+] — Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. — tags: mcp,learning
 - `mcp-inspector` [A|loc|E|+] — Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. — tags: mcp,evaluation,typescript
 - `mcp-neo4j` [R|hyb|M|?] — Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. — tags: mcp,python — alt: neo4j-mcp
 - `mcp-python-sdk` [L|loc|E|+] — SDK oficial de Python para crear servidores y clientes del Model Context Protocol. — tags: mcp,python — prov: mcp — alt: fastmcp
