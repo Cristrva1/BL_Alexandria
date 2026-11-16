@@ -22,6 +22,12 @@
      "id": "flexoki",
      "motivo": "Paleta coherente para diagramas de documentación. (combinación por arquitectura)",
      "orden_instalacion": "Define los colores personalizados en la paleta del lienzo."
+    },
+    {
+     "id": "kroki",
+     "motivo": "Combinación recíproca: Kroki lo enlaza como «Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`».",
+     "orden_instalacion": "Orden indicado desde Kroki: Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`.",
+     "reciproca_de": "kroki"
     }
    ],
    "notas": "Alternativas (elige una): tldraw, mermaid.",

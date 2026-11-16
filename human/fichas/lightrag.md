@@ -35,9 +35,9 @@ Biblioteca y servidor Python (`pip install "lightrag-hku[api]"`, luego `lightrag
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Milvus](milvus.md) · [MinerU](mineru.md) · [olmOCR](olmocr.md)
+[kotaemon](kotaemon.md) · [Milvus](milvus.md) · [MinerU](mineru.md) · [olmOCR](olmocr.md)
 
 **Notas:** Alternativas (elige una): graphrag, ragflow, pageindex. `lightrag-server` escucha en 0.0.0.0 sin autenticación por defecto: actívala antes de usarlo en red.
 

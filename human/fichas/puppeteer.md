@@ -29,6 +29,8 @@ Se instala con `npm i puppeteer` (descarga un Chrome compatible) o `npm i puppet
 | [Lightpanda](lightpanda.md) | Navegador headless ligero, documentado con Puppeteer. | Conecta con `browserWSEndpoint` al CDP de Lightpanda. |
 | [Chrome DevTools MCP](chrome-devtools-mcp.md) | MCP para agentes basado en DevTools. | Úsalo para depurar desde el agente. |
 | [awesome-chrome-devtools](awesome-chrome-devtools.md) | Ecosistema CDP. | Consulta herramientas relacionadas. |
+| [Nanobrowser](nanobrowser.md) | Combinación recíproca: Nanobrowser lo enlaza como «Nanobrowser usa Puppeteer para seguir los marcos de la página sobre la API `chrome.debugger`». | Orden indicado desde Nanobrowser: No requiere instalación aparte: Puppeteer va incluido en la extensión. |
+| [Steel Browser](steel-browser.md) | Combinación recíproca: Steel Browser lo enlaza como «Steel controla Chrome con Puppeteer y la documentación muestra cómo conectar Puppeteer a una sesión». | Orden indicado desde Steel Browser: Arranca Steel con Docker; después conecta Puppeteer a la URL CDP de la sesión. |
 
 **Notas:** Alternativas (elige una): playwright, selenium.
 
@@ -113,6 +115,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 | [Selenium](selenium.md) | 34.6k | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. |
+| [Cypress](cypress.md) | 51k | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. |
+| [WebdriverIO](webdriverio.md) | 9.9k | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. |
 
 ## Enlaces
 

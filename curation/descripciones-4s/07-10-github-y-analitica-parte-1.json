@@ -300,6 +300,12 @@
      "motivo": "Combinación recíproca: Kestra lo enlaza como «Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Kestra: Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén.",
      "reciproca_de": "kestra"
+    },
+    {
+     "id": "deck.gl",
+     "motivo": "Combinación recíproca: deck.gl lo enlaza como «Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales».",
+     "orden_instalacion": "Orden indicado desde deck.gl: Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl.",
+     "reciproca_de": "deck.gl"
     }
    ],
    "notas": "Alternativas (elige una): metabase, redash.",
@@ -492,6 +498,12 @@
      "motivo": "Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI.",
      "reciproca_de": "mui"
+    },
+    {
+     "id": "mantine",
+     "motivo": "Combinación recíproca: Mantine lo enlaza como «Mantine Charts está construido sobre Recharts».",
+     "orden_instalacion": "Orden indicado desde Mantine: Instala @mantine/charts y recharts; después usa los componentes de gráficos.",
+     "reciproca_de": "mantine"
     }
    ],
    "notas": "Alternativas (elige una): chart-js, echarts.",

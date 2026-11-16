@@ -364,6 +364,12 @@
      "motivo": "Combinación recíproca: tfjs-models lo enlaza como «Entrenar en Python y convertir a TF.js. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde tfjs-models: Convierte con tensorflowjs_converter.",
      "reciproca_de": "tfjs-models"
+    },
+    {
+     "id": "keras",
+     "motivo": "Combinación recíproca: Keras 3 lo enlaza como «TensorFlow es uno de los backends de Keras 3».",
+     "orden_instalacion": "Orden indicado desde Keras 3: Instala TensorFlow; después define KERAS_BACKEND=tensorflow.",
+     "reciproca_de": "keras"
     }
    ],
    "notas": "Alternativa (elige una): pytorch.",

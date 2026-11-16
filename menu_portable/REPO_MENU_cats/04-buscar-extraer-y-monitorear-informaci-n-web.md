@@ -123,6 +123,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `claude-code`, `activepieces`, `archivebox`, `cloud-mail`, `huginn`
 
+## `colly`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,go,library
+
+**Qué es:** Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/gocolly/colly
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/gocolly/colly/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: escribir un rastreador rápido que extraiga datos estructurados de un sitio; archivar páginas de un dominio respetando límites de velocidad
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea un módulo Go, añade Colly v2 y ejecuta uno de los ejemplos del repositorio contra un sitio de prueba.
+**Qué comprobar:** El programa visita las páginas y escribe los campos extraídos en la salida.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `polars`, `claude-code`
+
 ## `crawl4ai`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=scraping,python
 
@@ -183,7 +213,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un crawler con límite pequeño y recoge títulos de tres páginas de prueba
 **Qué comprobar:** La cola termina y guarda un registro por página
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `defuddle`, `llm-scraper`, `awesome-web-scraping`
+**Combina con:** `playwright`, `defuddle`, `llm-scraper`, `awesome-web-scraping`, `camoufox`
 
 ## `crawlee-python`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
@@ -213,7 +243,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Recoge enlaces de tres páginas con una cola acotada y guarda sus títulos
 **Qué comprobar:** Se controlan duplicados y obtienes los tres registros esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `scrapegraph-ai`, `qdrant`
+**Combina con:** `playwright`, `scrapegraph-ai`, `qdrant`, `flaresolverr`, `camoufox`
 
 ## `defuddle`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,library,typescript
@@ -276,6 +306,67 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `claude-code`, `gpt-researcher`
 **Alternativas (elige una):** `jina-reader`
 
+## `freshrss`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=research,rss,php,docker
+
+**Qué es:** Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.
+**Stack:** PHP, composer.json, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/FreshRSS/FreshRSS
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/FreshRSS/FreshRSS/blob/edge/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar en tu servidor los feeds de noticias y blogs que sigues; seguir webs sin RSS con reglas de extracción XPath
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega FreshRSS con Docker, importa un archivo OPML pequeño y actualiza los feeds.
+**Qué comprobar:** Los artículos aparecen en la interfaz y un cliente móvil compatible puede sincronizarlos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `rsshub`, `wallabag`, `coolify`
+**Alternativas (elige una):** `miniflux`
+
+## `gallery-dl`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,python,image,cli
+
+**Qué es:** Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables.
+**Stack:** Python, Dockerfile, pyproject.toml, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mikf/gallery-dl
+
+**Instalación** [+]:
+
+```
+brew install gallery-dl
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: archivar una colección propia de imágenes con metadatos y nombres ordenados; descargar un conjunto de imágenes públicas para un dataset con permiso de uso
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala gallery-dl (pip, Homebrew o binario) y descarga una galería pública pequeña a una carpeta de prueba.
+**Qué comprobar:** Las imágenes quedan en disco con la estructura de carpetas y nombres configurada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `yt-dlp`, `ffmpeg`, `real-esrgan`, `upscayl`
+
 ## `instaloader`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,scraping,python
 
@@ -337,6 +428,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `open-webui`, `llama-index`
 **Alternativas (elige una):** `firecrawl`, `crawl4ai`
+
+## `katana`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,go,security,cli
+
+**Qué es:** Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/projectdiscovery/katana
+
+**Instalación** [+]:
+
+```
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta la imagen Docker oficial contra el sitio de ejemplo books.toscrape.com que usa el README.
+**Qué comprobar:** Katana lista las URLs descubiertas sin errores.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mitmproxy`, `duckdb`, `claude-code`, `theharvester`, `nuclei`, `subfinder`
 
 ## `last30days-skill`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=research,skills,python
@@ -432,6 +553,67 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `activepieces`, `changedetection`
 **Alternativas (elige una):** `scrapegraph-ai`, `llm-scraper`
 
+## `miniflux`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=research,rss,go,docker
+
+**Qué es:** Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/miniflux/v2
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/miniflux/v2/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: leer feeds sin rastreadores en una instancia propia ligera; enviar artículos automáticamente a un servicio de lectura o notas
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Miniflux con PostgreSQL según la guía, importa un OPML y lee un artículo.
+**Qué comprobar:** Los feeds se actualizan, la búsqueda devuelve resultados y no aparecen píxeles de seguimiento.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `rsshub`, `wallabag`, `coolify`
+**Alternativas (elige una):** `freshrss`
+
+## `rsshub`
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=research,rss,typescript,docker
+
+**Qué es:** Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/DIYgod/RSSHub
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/DIYgod/RSSHub/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: seguir canales, perfiles o webs sin RSS desde tu lector de feeds; alimentar un flujo de monitorización de fuentes con feeds uniformes
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega RSSHub con Docker según su documentación y abre una ruta de ejemplo en el navegador.
+**Qué comprobar:** La ruta devuelve un feed RSS válido que tu lector puede suscribir.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `freshrss`, `miniflux`, `activepieces`, `coolify`
+
 ## `scrapegraph-ai`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=scraping,python
 
@@ -526,7 +708,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un spider para una página propia con tres productos y exporta sus nombres
 **Qué comprobar:** El archivo de salida contiene exactamente los tres productos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright`, `scrapling`, `defuddle`, `awesome-web-scraping`
+**Combina con:** `playwright`, `scrapling`, `defuddle`, `awesome-web-scraping`, `flaresolverr`
 
 ## `searxng`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=search,research,python,docker
@@ -558,6 +740,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `gpt-researcher`, `open-webui`, `vane`
 
+## `spotdl`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=audio,python,cli
+
+**Qué es:** CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/spotDL/spotify-downloader
+
+**Instalación** [+]:
+
+```
+pip install spotdl
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: conservar una copia local de listas de reproducción propias; etiquetar automáticamente archivos de audio con metadatos de Spotify
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `pip install spotdl`, prepara FFmpeg y descarga una canción con su URL.
+**Qué comprobar:** El archivo de audio queda en la carpeta con título, artista y carátula incrustados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `yt-dlp`, `syncthing`
+
 ## `vane`
 role=app · exec=local · setup=easy · mcp=False · prov=openai,local · tags=search,research,local,typescript
 
@@ -588,6 +800,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `searxng`, `ollama`, `markitdown`
 **Alternativas (elige una):** `gpt-researcher`
+
+## `wallabag`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=research,read-later,php,docker
+
+**Qué es:** Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.
+**Stack:** PHP, compose.yaml, composer.json, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/wallabag/wallabag
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/wallabag/wallabag/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: guardar artículos para leerlos sin conexión en el móvil; archivar lecturas con etiquetas y anotaciones en tu propio servidor
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala wallabag con Docker o según su documentación y guarda un artículo desde la extensión del navegador.
+**Qué comprobar:** El artículo aparece limpio en la lista de lectura y se puede exportar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `freshrss`, `miniflux`, `coolify`
 
 ## `yt-dlp`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,scraping,python

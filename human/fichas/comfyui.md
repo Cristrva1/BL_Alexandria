@@ -33,9 +33,9 @@ Se usa con la app de escritorio (recomendada), la versión portable de Windows, 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[CodeFormer](codeformer.md) · [HunyuanVideo](hunyuanvideo.md) · [LivePortrait](liveportrait.md) · [LuxTTS](luxtts.md) · [openpose](openpose.md) · [OpenRV](openrv.md) · [rembg](rembg.md) · [Wan2.2](wan2-2.md)
+[CodeFormer](codeformer.md) · [HunyuanVideo](hunyuanvideo.md) · [LivePortrait](liveportrait.md) · [LTX-2](ltx-2.md) · [LuxTTS](luxtts.md) · [openpose](openpose.md) · [OpenRV](openrv.md) · [rembg](rembg.md) · [SillyTavern](sillytavern.md) · [Wan2.2](wan2-2.md)
 
 **Notas:** Alternativas (elige una): wan2gp. Revisa los nodos personalizados antes de instalarlos: ejecutan código arbitrario.
 

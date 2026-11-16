@@ -90,7 +90,7 @@ const codexSetup=ids('q='+encodeURIComponent('configuración de Codex')).sort();
 if(JSON.stringify(codexSetup)!==JSON.stringify(ids('area=configurar-codex').sort()))throw Error('Codex setup confused with model providers');
 if(!ids('q=frontend').includes('penpot'))throw Error('Practical domain vocabulary missing');
 if(find('area=frontend&topic=av-voz').length||find('area=nonexistent').length)throw Error('Unknown or contradictory facet ignored');
-if(find('cat=32&sub=bibliotecas').length!==3)throw Error('Old links broken');
+if(find('cat=32&sub=bibliotecas').length!==6)throw Error('Old links broken');
 console.log(JSON.stringify({voice:voice.length,web:web.length,trading:trading.length,setup:setup.length}));
 '''
     result=subprocess.run(['node','-e',script,str(ROOT/'src/repo_intelligence/web/assets/search.js')],input=json.dumps(build_catalog(ROOT)),capture_output=True,text=True,encoding='utf8')

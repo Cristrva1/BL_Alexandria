@@ -30,6 +30,7 @@ Se instala con `npm install recharts react-is` y se usa dentro de componentes Re
 | [D3.js](d3.md) | Recharts usa módulos de D3 internamente. | No requiere instalación aparte. |
 | [tailwindcss](tailwindcss.md) | Estilar los gráficos con las variables de tema de Tailwind. (combinación por arquitectura) | Pasa colores del tema a los componentes. |
 | [Material UI](mui.md) | Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)». | Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI. |
+| [Mantine](mantine.md) | Combinación recíproca: Mantine lo enlaza como «Mantine Charts está construido sobre Recharts». | Orden indicado desde Mantine: Instala @mantine/charts y recharts; después usa los componentes de gráficos. |
 
 **Notas:** Alternativas (elige una): chart-js, echarts.
 

@@ -31,6 +31,13 @@ Se arranca un servidor con `uvx mlflow server` o `pip install mlflow`, y se inst
 | [DeepEval](deepeval.md) | Métricas de DeepEval disponibles como scorers de terceros en MLflow. | Instala deepeval y úsalo desde la evaluación de MLflow. |
 | [Ragas](ragas.md) | Métricas de Ragas disponibles como scorers de terceros. | Instala ragas y úsalo desde la evaluación de MLflow. |
 | [qlib](qlib.md) | Combinación recíproca: qlib lo enlaza como «El recorder de Qlib se basa en MLflow». | Orden indicado desde qlib: Configura el URI de MLflow para los experimentos. |
+| [Apache Airflow](airflow.md) | Combinación recíproca: Apache Airflow lo enlaza como «Airflow programa los pasos de entrenamiento y evaluación y MLflow registra parámetros, métricas y modelos de cada ejecución (combinación por arquitectura)». | Orden indicado desde Apache Airflow: Servidor de MLflow primero; después tareas de Airflow que usen su cliente con MLFLOW_TRACKING_URI. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Dagster](dagster.md) · [Prefect](prefect.md) · [PyTorch Lightning](pytorch-lightning.md) · [scikit-learn](scikit-learn.md)
 
 **Notas:** Alternativas (elige una): langfuse.
 

@@ -29,6 +29,7 @@ Se integra con Apache Spark y Flink (herramientas de ingestión integradas) y lo
 | [DuckDB](duckdb.md) | Leer datos del lakehouse para análisis local. (combinación por arquitectura) | Lee los Parquet subyacentes. |
 | [Apache Superset](superset.md) | BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura) | Conecta Superset al motor de consulta. |
 | [awesome-bigdata](awesome-bigdata.md) | Mapa del ecosistema alrededor. (combinación por arquitectura) | Consulta la lista. |
+| [Apache Spark](spark.md) | Combinación recíproca: Apache Spark lo enlaza como «Hudi se integra con Spark como motor principal de escritura e ingestión incremental». | Orden indicado desde Apache Spark: Añade el bundle de Hudi para Spark; después escribe con `format("hudi")`. |
 
 **Notas:** Alternativas (elige una): apache-iceberg, delta-lake.
 

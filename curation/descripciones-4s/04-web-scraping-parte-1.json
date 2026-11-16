@@ -103,6 +103,12 @@
      "motivo": "Combinación recíproca: awesome-web-scraping lo enlaza como «Framework de referencia en la sección de Python. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde awesome-web-scraping: Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico.",
      "reciproca_de": "awesome-web-scraping"
+    },
+    {
+     "id": "flaresolverr",
+     "motivo": "Combinación recíproca: FlareSolverr lo enlaza como «Un spider de Scrapy puede pedir a FlareSolverr la página o las cookies de un sitio autorizado y continuar con peticiones normales (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde FlareSolverr: Despliega FlareSolverr; después llama a su API desde el spider o un middleware.",
+     "reciproca_de": "flaresolverr"
     }
    ],
    "notas": "Sin alternativas declaradas. Se quita la combinación con crawlee-python por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
@@ -146,6 +152,12 @@
      "motivo": "Combinación recíproca: awesome-web-scraping lo enlaza como «Opción moderna para JavaScript/TypeScript. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde awesome-web-scraping: Compárala con las demás de la sección de JavaScript.",
      "reciproca_de": "awesome-web-scraping"
+    },
+    {
+     "id": "camoufox",
+     "motivo": "Combinación recíproca: Camoufox lo enlaza como «Crawlee para Node.js incluye una guía para evitar bloqueos usando Camoufox con su PlaywrightCrawler».",
+     "orden_instalacion": "Orden indicado desde Camoufox: Instala `camoufox` y Crawlee; después configura el lanzador de Camoufox en el crawler.",
+     "reciproca_de": "camoufox"
     }
    ],
    "notas": "Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",
@@ -182,6 +194,18 @@
      "id": "qdrant",
      "motivo": "Indexar el contenido rastreado para RAG. (combinación por arquitectura)",
      "orden_instalacion": "Trocea y vectoriza los resultados y guárdalos en Qdrant."
+    },
+    {
+     "id": "flaresolverr",
+     "motivo": "Combinación recíproca: FlareSolverr lo enlaza como «Un crawler HTTP de Crawlee puede obtener de FlareSolverr las cookies de un sitio autorizado antes de continuar (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde FlareSolverr: Despliega FlareSolverr; después usa sus cookies en las peticiones de Crawlee.",
+     "reciproca_de": "flaresolverr"
+    },
+    {
+     "id": "camoufox",
+     "motivo": "Combinación recíproca: Camoufox lo enlaza como «Crawlee para Python documenta un ejemplo de PlaywrightCrawler con Camoufox».",
+     "orden_instalacion": "Orden indicado desde Camoufox: Instala `crawlee[playwright]` y Camoufox; después pasa Camoufox como navegador del crawler.",
+     "reciproca_de": "camoufox"
     }
    ],
    "notas": "Sin alternativas declaradas. Se quita la combinación con scrapy por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.",

@@ -68,6 +68,12 @@
      "motivo": "Combinación recíproca: chatbox lo enlaza como «Servidor local compatible con OpenAI como alternativa a Ollama (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde chatbox: Usa LocalAI u Ollama, no ambos.",
      "reciproca_de": "chatbox"
+    },
+    {
+     "id": "nextchat",
+     "motivo": "Combinación recíproca: NextChat lo enlaza como «El README declara compatibilidad con despliegues de LocalAI como modelo autoalojado».",
+     "orden_instalacion": "Orden indicado desde NextChat: LocalAI en marcha; después configura su URL como endpoint compatible con OpenAI.",
+     "reciproca_de": "nextchat"
     }
    ],
    "notas": "Alternativas (elige una como motor principal): ollama, llama-cpp.",
@@ -103,6 +109,12 @@
      "id": "litellm",
      "motivo": "Unificar el clúster exo con proveedores en la nube detrás de un solo proxy (combinación por arquitectura).",
      "orden_instalacion": "exo primero; añádelo a LiteLLM como modelo compatible con OpenAI."
+    },
+    {
+     "id": "mlx-lm",
+     "motivo": "Combinación recíproca: MLX LM lo enlaza como «exo usa MLX y mlx-lm como backend de inferencia para repartir modelos entre varios Mac».",
+     "orden_instalacion": "Orden indicado desde MLX LM: Instala exo en cada equipo con versiones iguales de MLX y mlx-lm; después crea el clúster.",
+     "reciproca_de": "mlx-lm"
     }
    ],
    "notas": "Todos los nodos deben ejecutar la misma versión de exo. El rendimiento en Linux (solo CPU) no es comparable con el de Apple Silicon.",
@@ -332,6 +344,12 @@
      "id": "unsloth",
      "motivo": "Afinar modelos con más eficiencia fuera de TextGen y cargar el resultado en él (combinación por arquitectura).",
      "orden_instalacion": "Entrena y exporta el adaptador o GGUF con Unsloth; luego cárgalo en TextGen."
+    },
+    {
+     "id": "sillytavern",
+     "motivo": "Combinación recíproca: SillyTavern lo enlaza como «Text generation web UI (Ooba) es uno de los backends de texto que SillyTavern soporta».",
+     "orden_instalacion": "Orden indicado desde SillyTavern: Arranca textgen con su API habilitada; después conéctalo desde SillyTavern.",
+     "reciproca_de": "sillytavern"
     }
    ],
    "notas": "Alternativas (elige una): jan, open-webui.",
