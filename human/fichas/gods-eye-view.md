@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+God's Eye View, visualizador geoespacial en un globo 3D que reúne datos abiertos en tiempo real, de @bilawalsidhu. Licencia MIT (GitHub muestra NOASSERTION). Es reciente (creado en junio de 2026) y tiene ~65k estrellas tras ser tendencia en GitHub.
+
+## ¿Qué hace?
+
+Permite seguir satélites, aviones, barcos y cámaras públicas, con modos visuales como FLIR y un HUD «militar». Añade capas de incendios, sismos, fauna, centros de datos, presas y ubicaciones de cámaras lectoras de matrículas (ALPR) de OpenStreetMap. Tiene preguntas por voz y un servidor MCP local.
+
+## ¿Cómo lo hace?
+
+Se ejecuta en local con Node.js 24.x (24.14+) o 26.x, con Docker Compose o con un clic en Pinokio. No necesita claves para empezar; el 3D fotorrealista requiere un token de Cesium ion (uso personal no comercial) o una clave de Google Maps. Bajo Docker no está disponible el MCP local.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Servidor MCP local para consultar las capas. (combinación por arquitectura) | Ejecuta la app fuera de Docker y añade su MCP. |
+| [hermes-agent](hermes-agent.md) | Agente con acceso a datos geoespaciales vía MCP. (combinación por arquitectura) | Configura el MCP local en el agente. |
+| [Pythia](pythia.md) | Contrastar las predicciones de PYTHIA con las capas en vivo. (combinación por arquitectura) | Usa ambos sobre la misma región. |
+
+**Notas:** Sin alternativas declaradas; solapa con osiris (solo anotado). El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.3.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md) · [2](https://godseyeview.ai)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. MCP de Claude y Codex sí está documentado; reutilizar sesión OAuth para voz es otra función experimental y no acredita un contrato Realtime cubierto por tu plan |
 | Coste | El coste depende del proveedor o la ruta. El mapa inicial no necesita claves; Cesium, Google, voz y otros servicios tienen cupos y precios; OAuth de voz es experimental |
 | Equipo | Preparación según la ruta elegida. Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP |
-
-MCP de Claude y Codex sí está documentado; reutilizar sesión OAuth para voz es otra función experimental y no acredita un contrato Realtime cubierto por tu plan
-
-## Qué puedes hacer con él
-
-Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.
-
-## Por qué destaca
-
-Usos propuestos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP.
-
-## Cómo funciona
 
 MCP de Claude y Codex sí está documentado; reutilizar sesión OAuth para voz es otra función experimental y no acredita un contrato Realtime cubierto por tu plan
 

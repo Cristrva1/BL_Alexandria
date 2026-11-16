@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+CodeFormer, modelo de restauración ciega de rostros (NeurIPS 2022) de S-Lab, Nanyang Technological University. Licencia NTU S-Lab License 1.0, solo uso no comercial (GitHub muestra NOASSERTION). Tiene ~18k estrellas (v0.1.0) y su último cambio es de noviembre de 2025.
+
+## ¿Qué hace?
+
+Restaura caras en fotos antiguas, borrosas o dañadas usando un transformer con búsqueda en codebook, con un parámetro que equilibra fidelidad y calidad. También colorea, rellena (inpainting) y procesa vídeo. Puede mejorar el fondo con Real-ESRGAN.
+
+## ¿Cómo lo hace?
+
+Se clona el repo, se instalan dependencias de PyTorch y BasicSR y se ejecuta `inference_codeformer.py`. Los autores solo reconocen como oficiales las demos de Hugging Face, Replicate y OpenXLab; avisan de webs que usan el modelo sin licencia.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Real-ESRGAN](real-esrgan.md) | Integración nativa para mejorar fondo y caras. | Añade `--bg_upsampler realesrgan` en la inferencia. |
+| [ComfyUI](comfyui.md) | Restaurar caras dentro de flujos de ComfyUI con nodos de la comunidad. (combinación por arquitectura) | Instala un nodo de restauración facial compatible. |
+| [rembg](rembg.md) | Recortar el retrato restaurado. (combinación por arquitectura) | Restaura con CodeFormer y quita el fondo con rembg. |
+
+**Notas:** Sin alternativas declaradas. Licencia no comercial.
+
+Estado en GitHub: activo · último push 2025-11-18 · última versión publicada v0.1.0 (2022-08-10) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sczhou/CodeFormer/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original |
 | Coste | El coste depende del proveedor o la ruta. La licencia NTU S-Lab restringe el uso y distingue uso no comercial; revisa autorización antes de una producción comercial |
 | Equipo | Preparación según la ruta elegida. Python y entorno indicado; PyTorch; pesos; imagen propia de prueba |
-
-No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original
-
-## Qué puedes hacer con él
-
-Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.
-
-## Por qué destaca
-
-Usos propuestos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio.
-
-## Cómo funciona
 
 No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y entorno indicado; PyTorch; pesos; imagen propia de prueba
 - **Etiquetas:** `image` `vision` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Real-ESRGAN](real-esrgan.md) | 37.5k | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. |
 
 ## Enlaces
 

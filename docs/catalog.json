@@ -66960,6 +66960,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "echarts",
+        "d3",
         "awesome-bigdata"
       ],
       "alt": [],
@@ -67071,6 +67072,45 @@
       "stars": 4461,
       "license": "NOASSERTION",
       "homepage": "https://awesomedataviz.com",
+      "combina_con": [
+        {
+          "id": "echarts",
+          "motivo": "Una de las librerías destacadas de la lista. (combinación por arquitectura)",
+          "orden_instalacion": "Compara alternativas en la lista antes de elegir."
+        },
+        {
+          "id": "d3",
+          "motivo": "Base de muchas entradas de JavaScript. (combinación por arquitectura)",
+          "orden_instalacion": "Revisa la sección de JavaScript."
+        },
+        {
+          "id": "awesome-bigdata",
+          "motivo": "Lista complementaria para el procesamiento de datos. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ambas para elegir el stack de datos y visualización."
+        }
+      ],
+      "que_es": "Awesome Dataviz, lista curada de frameworks, librerías y software de visualización open source, creada por @fasouto y mantenida con patrocinio de Hal9. Licencia CC BY 4.0 (GitHub muestra NOASSERTION). Tiene ~4.5k estrellas.",
+      "que_hace": "Organiza herramientas por lenguaje y tipo (JavaScript, Python, R, BI, mapas, herramientas para agentes y MCP). Se puede navegar en awesomedataviz.com con búsqueda, rankings, estadísticas de GitHub, comparativas y un servidor MCP generado a partir del README.",
+      "como_lo_hace": "Es un README; no requiere instalación.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/hal9ai/awesome-dataviz/blob/main/README.md",
+        "https://awesomedataviz.com"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "hal9ai/awesome-dataviz",
+        "archived": false,
+        "pushed_at": "2026-11-11",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "JavaScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.",
       "body": "Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.",
       "install": {
@@ -67083,6 +67123,10 @@
         {
           "id": "echarts",
           "label": "echarts"
+        },
+        {
+          "id": "d3",
+          "label": "d3"
         },
         {
           "id": "awesome-bigdata",
@@ -67114,7 +67158,11 @@
       "desc": "Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "awesome-dataviz",
+        "tailwindcss",
+        "duckdb"
+      ],
       "alt": [
         "echarts",
         "recharts"
@@ -67226,6 +67274,46 @@
       "stars": 67793,
       "license": "MIT",
       "homepage": "https://www.chartjs.org/",
+      "combina_con": [
+        {
+          "id": "awesome-dataviz",
+          "motivo": "Comparar con otras librerías de gráficos. (combinación por arquitectura)",
+          "orden_instalacion": "Revisa la lista antes de elegir."
+        },
+        {
+          "id": "tailwindcss",
+          "motivo": "Integrar los gráficos con el tema visual de la app. (combinación por arquitectura)",
+          "orden_instalacion": "Pasa los colores del tema a la configuración."
+        },
+        {
+          "id": "duckdb",
+          "motivo": "Agregar datos (incluso en el navegador con DuckDB-WASM) antes de dibujarlos. (combinación por arquitectura)",
+          "orden_instalacion": "Consulta con DuckDB y pasa el resultado al dataset."
+        }
+      ],
+      "que_es": "Chart.js, librería JavaScript de gráficos sobre Canvas para diseñadores y desarrolladores. Licencia MIT. Es muy madura (~68k estrellas, v4.6.1).",
+      "que_hace": "Ofrece tipos comunes (líneas, barras, áreas, tartas, radar, dispersión, burbujas) con animaciones, responsive y plugins. Se configura con un objeto JSON sencillo y admite ejes y escalas personalizables.",
+      "como_lo_hace": "Se instala con `npm install chart.js` o desde CDN y dibuja en un elemento `<canvas>`. Tiene envoltorios de la comunidad para React, Vue y otros frameworks.",
+      "descripcion_notas": "Alternativas (elige una): echarts, recharts.",
+      "descripcion_fuentes": [
+        "https://github.com/chartjs/Chart.js/blob/master/README.md",
+        "https://www.chartjs.org/docs/latest/"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "chartjs/Chart.js",
+        "archived": false,
+        "pushed_at": "2026-11-09",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "v4.6.1 (2026-10-22)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.",
       "body": "Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.",
       "install": {
@@ -67243,7 +67331,20 @@
           "label": "recharts"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "awesome-dataviz",
+          "label": "awesome-dataviz"
+        },
+        {
+          "id": "tailwindcss",
+          "label": "tailwindcss"
+        },
+        {
+          "id": "duckdb",
+          "label": "duckdb"
+        }
+      ],
       "areas": [
         "datos"
       ],
@@ -67269,7 +67370,11 @@
       "desc": "Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una visualización a medida; Explorar relaciones entre datos con interacción",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "recharts",
+        "awesome-dataviz",
+        "marimo"
+      ],
       "alt": [
         "echarts"
       ],
@@ -67380,6 +67485,46 @@
       "stars": 113919,
       "license": "ISC",
       "homepage": "https://d3js.org",
+      "combina_con": [
+        {
+          "id": "recharts",
+          "motivo": "Recharts usa módulos de D3 internamente.",
+          "orden_instalacion": "Usa Recharts para gráficos estándar y D3 para lo a medida."
+        },
+        {
+          "id": "awesome-dataviz",
+          "motivo": "Descubrir librerías construidas sobre D3. (combinación por arquitectura)",
+          "orden_instalacion": "Consulta la sección de JavaScript de la lista."
+        },
+        {
+          "id": "marimo",
+          "motivo": "Prototipar los datos en notebooks antes de la visualización final. (combinación por arquitectura)",
+          "orden_instalacion": "Prepara y exporta los datos desde marimo."
+        }
+      ],
+      "que_es": "D3 (Data-Driven Documents), librería JavaScript de bajo nivel para visualización de datos. Licencia ISC. Es infraestructura muy madura (~114k estrellas, v7.9.2).",
+      "que_hace": "Une datos a elementos del DOM y ofrece módulos para escalas, ejes, formas, layouts (jerarquías, fuerzas, geografía), transiciones, interacción y carga de datos. No da gráficos prediseñados, sino primitivas para construir visualizaciones a medida con SVG, Canvas o HTML. Muchas librerías de alto nivel se apoyan en sus módulos.",
+      "como_lo_hace": "Se instala con `npm install d3` (o módulos sueltos como `d3-scale`) o se carga como ES module desde un CDN. Es JavaScript puro sin dependencias y funciona en el navegador y en Node.",
+      "descripcion_notas": "Alternativas (elige una): echarts. Curva de aprendizaje alta.",
+      "descripcion_fuentes": [
+        "https://github.com/d3/d3/blob/main/README.md",
+        "https://d3js.org"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "d3/d3",
+        "archived": false,
+        "pushed_at": "2026-11-03",
+        "license": "ISC",
+        "primary_language": "Shell",
+        "latest_release": "v7.9.2 (2026-11-03)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML.",
       "body": "Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML.",
       "install": {
@@ -67393,7 +67538,20 @@
           "label": "echarts"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "recharts",
+          "label": "recharts"
+        },
+        {
+          "id": "awesome-dataviz",
+          "label": "awesome-dataviz"
+        },
+        {
+          "id": "marimo",
+          "label": "marimo"
+        }
+      ],
       "areas": [
         "datos"
       ],
@@ -67425,7 +67583,11 @@
       "desc": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "duckdb",
+        "marimo",
+        "metabase"
+      ],
       "alt": [],
       "stack": "Navegador; tiempo de estudio; una tabla pequeña de práctica",
       "repo_url": "https://github.com/mtahiraslan/data-analyst-roadmap",
@@ -67536,6 +67698,43 @@
       "stars": 1134,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "duckdb",
+          "motivo": "Practicar SQL analítico en local. (combinación por arquitectura)",
+          "orden_instalacion": "Instala DuckDB y sigue los ejercicios de SQL."
+        },
+        {
+          "id": "marimo",
+          "motivo": "Practicar Python de análisis en notebooks reactivos. (combinación por arquitectura)",
+          "orden_instalacion": "Usa marimo para los ejercicios de Python."
+        },
+        {
+          "id": "metabase",
+          "motivo": "Practicar BI y paneles. (combinación por arquitectura)",
+          "orden_instalacion": "Conecta Metabase a un dataset de práctica."
+        }
+      ],
+      "que_es": "Hoja de ruta para aprender análisis de datos, de @mtahiraslan. Licencia MIT. Es pequeña (~1k estrellas) y su último cambio es de octubre de 2025.",
+      "que_hace": "Explica el papel del analista de datos y recorre las etapas del aprendizaje (Excel, SQL, Python, estadística, visualización, BI) con enlaces a cursos y recursos gratuitos, sobre todo vídeos.",
+      "como_lo_hace": "Es un README; no requiere instalación. Varios recursos enlazados pueden quedar desactualizados.",
+      "descripcion_notas": "Sin alternativas declaradas. Recurso introductorio, sin mantenimiento reciente.",
+      "descripcion_fuentes": [
+        "https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "mtahiraslan/data-analyst-roadmap",
+        "archived": false,
+        "pushed_at": "2025-10-14",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.",
       "body": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.",
       "install": {
@@ -67544,7 +67743,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "duckdb",
+          "label": "duckdb"
+        },
+        {
+          "id": "marimo",
+          "label": "marimo"
+        },
+        {
+          "id": "metabase",
+          "label": "metabase"
+        }
+      ],
       "areas": [
         "datos"
       ],
@@ -67572,6 +67784,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "metabase",
+        "superset",
         "heroui"
       ],
       "alt": [
@@ -67686,6 +67899,46 @@
       "stars": 67724,
       "license": "Apache-2.0",
       "homepage": "https://echarts.apache.org",
+      "combina_con": [
+        {
+          "id": "metabase",
+          "motivo": "Metabase usa ECharts en sus visualizaciones. (combinación por arquitectura)",
+          "orden_instalacion": "No requiere instalación aparte."
+        },
+        {
+          "id": "superset",
+          "motivo": "Superset usa ECharts en muchos de sus gráficos. (combinación por arquitectura)",
+          "orden_instalacion": "No requiere instalación aparte."
+        },
+        {
+          "id": "heroui",
+          "motivo": "Paneles con componentes HeroUI y gráficos ECharts. (combinación por arquitectura)",
+          "orden_instalacion": "Envuelve el gráfico en un componente de tarjeta."
+        }
+      ],
+      "que_es": "Apache ECharts, librería de visualización de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~68k estrellas, 6.1.0).",
+      "que_hace": "Ofrece decenas de tipos de gráficos (series, mapas, grafos, árboles, 3D con ECharts GL, calendarios) muy interactivos y personalizables, pensados para productos comerciales y paneles. Renderiza con Canvas o SVG y maneja grandes volúmenes de datos con renderizado progresivo.",
+      "como_lo_hace": "Se instala con `npm install echarts` o desde CDN y se configura con un objeto `option` declarativo. Está escrito en TypeScript sobre la librería de renderizado ZRender.",
+      "descripcion_notas": "Alternativas (elige una): d3, chart-js, recharts.",
+      "descripcion_fuentes": [
+        "https://github.com/apache/echarts/blob/master/README.md",
+        "https://echarts.apache.org/en/index.html"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "apache/echarts",
+        "archived": false,
+        "pushed_at": "2026-10-13",
+        "license": "Apache-2.0",
+        "primary_language": "TypeScript",
+        "latest_release": "6.1.0 (2026-05-19)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos.",
       "body": "Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos.",
       "install": {
@@ -67711,6 +67964,10 @@
         {
           "id": "metabase",
           "label": "metabase"
+        },
+        {
+          "id": "superset",
+          "label": "superset"
         },
         {
           "id": "heroui",
@@ -67743,7 +68000,11 @@
       "desc": "Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "hermes-agent",
+        "pythia"
+      ],
       "alt": [],
       "stack": "Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP",
       "repo_url": "https://github.com/bilawalsidhu/gods-eye-view",
@@ -67860,6 +68121,46 @@
       "stars": 64884,
       "license": "NOASSERTION",
       "homepage": "https://godseyeview.ai/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Servidor MCP local para consultar las capas. (combinación por arquitectura)",
+          "orden_instalacion": "Ejecuta la app fuera de Docker y añade su MCP."
+        },
+        {
+          "id": "hermes-agent",
+          "motivo": "Agente con acceso a datos geoespaciales vía MCP. (combinación por arquitectura)",
+          "orden_instalacion": "Configura el MCP local en el agente."
+        },
+        {
+          "id": "pythia",
+          "motivo": "Contrastar las predicciones de PYTHIA con las capas en vivo. (combinación por arquitectura)",
+          "orden_instalacion": "Usa ambos sobre la misma región."
+        }
+      ],
+      "que_es": "God's Eye View, visualizador geoespacial en un globo 3D que reúne datos abiertos en tiempo real, de @bilawalsidhu. Licencia MIT (GitHub muestra NOASSERTION). Es reciente (creado en junio de 2026) y tiene ~65k estrellas tras ser tendencia en GitHub.",
+      "que_hace": "Permite seguir satélites, aviones, barcos y cámaras públicas, con modos visuales como FLIR y un HUD «militar». Añade capas de incendios, sismos, fauna, centros de datos, presas y ubicaciones de cámaras lectoras de matrículas (ALPR) de OpenStreetMap. Tiene preguntas por voz y un servidor MCP local.",
+      "como_lo_hace": "Se ejecuta en local con Node.js 24.x (24.14+) o 26.x, con Docker Compose o con un clic en Pinokio. No necesita claves para empezar; el 3D fotorrealista requiere un token de Cesium ion (uso personal no comercial) o una clave de Google Maps. Bajo Docker no está disponible el MCP local.",
+      "descripcion_notas": "Sin alternativas declaradas; solapa con osiris (solo anotado). El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
+      "descripcion_fuentes": [
+        "https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md",
+        "https://godseyeview.ai"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "bilawalsidhu/gods-eye-view",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "JavaScript",
+        "latest_release": "v0.3.0 (2026-10-28)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
       "body": "Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
       "install": {
@@ -67868,7 +68169,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "hermes-agent",
+          "label": "hermes-agent"
+        },
+        {
+          "id": "pythia",
+          "label": "pythia"
+        }
+      ],
       "areas": [
         "vision",
         "configurar-claude-code",
@@ -68529,7 +68843,11 @@
       "desc": "Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "blender",
+        "three.js",
+        "marimo"
+      ],
       "alt": [],
       "stack": "Docker; fotografías aéreas propias con solapamiento; RAM y disco según lote",
       "repo_url": "https://github.com/OpenDroneMap/ODM",
@@ -68639,6 +68957,46 @@
       "stars": 6602,
       "license": "AGPL-3.0",
       "homepage": "https://opendronemap.org",
+      "combina_con": [
+        {
+          "id": "blender",
+          "motivo": "Editar o renderizar los modelos 3D texturizados generados. (combinación por arquitectura)",
+          "orden_instalacion": "Importa el OBJ/GLB resultante en Blender."
+        },
+        {
+          "id": "three.js",
+          "motivo": "Publicar modelos o nubes de puntos en un visor web. (combinación por arquitectura)",
+          "orden_instalacion": "Carga los resultados con los loaders de three.js."
+        },
+        {
+          "id": "marimo",
+          "motivo": "Analizar DEM y ortomosaicos en notebooks. (combinación por arquitectura)",
+          "orden_instalacion": "Lee los GeoTIFF con librerías raster desde marimo."
+        }
+      ],
+      "que_es": "ODM (OpenDroneMap), kit de línea de comandos para procesar imágenes aéreas de drones. Licencia AGPL-3.0. Es maduro (~6.6k estrellas, v3.6.2).",
+      "que_hace": "Convierte fotos 2D en nubes de puntos clasificadas, modelos 3D texturizados, ortomosaicos georreferenciados y modelos digitales de elevación. Funciona desde la terminal, lo que lo hace adecuado para scripts e integración con otro software. Para interfaz gráfica, el README remite a OpenDroneMap Desktop.",
+      "como_lo_hace": "La vía recomendada es Docker (`opendronemap/odm`, con imagen GPU opcional). Está escrito en Python y C++ sobre OpenSfM, OpenMVS y otras librerías, y es muy exigente en RAM y CPU con proyectos grandes.",
+      "descripcion_notas": "Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm).",
+      "descripcion_fuentes": [
+        "https://github.com/OpenDroneMap/ODM/blob/master/README.md",
+        "https://opendronemap.org/download"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "OpenDroneMap/ODM",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "v3.6.2 (2026-08-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
       "body": "Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
       "install": {
@@ -68647,7 +69005,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "blender",
+          "label": "blender"
+        },
+        {
+          "id": "three.js",
+          "label": "three.js"
+        },
+        {
+          "id": "marimo",
+          "label": "marimo"
+        }
+      ],
       "areas": [
         "vision"
       ],
@@ -68673,7 +69044,11 @@
       "desc": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar noticias por ubicación; Comparar eventos públicos en un globo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pythia",
+        "hermes-agent",
+        "claude-code"
+      ],
       "alt": [],
       "stack": "Node y npm; conexión a fuentes públicas; claves opcionales para capas extra",
       "repo_url": "https://github.com/simplifaisoul/osiris",
@@ -68788,6 +69163,45 @@
       "stars": 11729,
       "license": "MIT",
       "homepage": "https://osirisai.live",
+      "combina_con": [
+        {
+          "id": "pythia",
+          "motivo": "PYTHIA añade predicciones con enjambres de agentes sobre Osiris.",
+          "orden_instalacion": "Instala Osiris y aplica el overlay de PYTHIA."
+        },
+        {
+          "id": "hermes-agent",
+          "motivo": "Agente citado como cliente del MCP de Osiris.",
+          "orden_instalacion": "Configura `/api/mcp` en el agente."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Consultar el panel vía MCP.",
+          "orden_instalacion": "Añade el endpoint MCP de tu instancia."
+        }
+      ],
+      "que_es": "OSIRIS (Open Source Intelligence & Reconnaissance Integrated System), panel OSINT en tiempo real de @simplifaisoul. Licencia MIT. Es reciente (creado en mayo de 2026, ~12k estrellas, v5.0.0).",
+      "que_hace": "Reúne en un globo 3D acelerado por GPU vuelos en directo, cámaras CCTV públicas, sismos, zonas de conflicto y noticias 24/7. Permite dibujar un área y exportar como GeoJSON las cámaras que contiene. Expone una API REST con SSE y un servidor MCP en `/api/mcp` para agentes como Hermes, Claude o Cursor.",
+      "como_lo_hace": "Es una app Next.js 16 con MapLibre GL que se instala con npm, Docker Compose o la imagen `ghcr.io/simplifaisoul/osiris`. Las zonas de conflicto son una lista mantenida a mano, no una medición en vivo.",
+      "descripcion_notas": "Sin alternativas declaradas; solapa con gods-eye-view (solo anotado). El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
+      "descripcion_fuentes": [
+        "https://github.com/simplifaisoul/osiris/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "simplifaisoul/osiris",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v5.0.0 (2026-09-28)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
       "body": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
       "install": {
@@ -68796,7 +69210,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "pythia",
+          "label": "pythia"
+        },
+        {
+          "id": "hermes-agent",
+          "label": "hermes-agent"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "vision",
         "configurar-claude-code",
@@ -69466,7 +69893,12 @@
       "desc": "Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "osiris",
+        "mirofish",
+        "ollama",
+        "claude-code"
+      ],
       "alt": [],
       "stack": "Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script",
       "repo_url": "https://github.com/jangles-byte/Pythia",
@@ -69582,6 +70014,49 @@
       "stars": 1210,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "osiris",
+          "motivo": "Requisito: aporta el globo y las fuentes en vivo.",
+          "orden_instalacion": "Instala Osiris y aplica el overlay de integración."
+        },
+        {
+          "id": "mirofish",
+          "motivo": "Motor de predicción por enjambre integrado.",
+          "orden_instalacion": "Viene integrado en PYTHIA."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Modelos locales para cada persona del enjambre.",
+          "orden_instalacion": "Arranca Ollama y descarga un modelo de chat."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Servidor MCP documentado en el README.",
+          "orden_instalacion": "Ejecuta `claude mcp add pythia …`."
+        }
+      ],
+      "que_es": "PYTHIA, plataforma local de predicción geopolítica de @jangles-byte que fusiona MiroFish (motor de predicción por inteligencia de enjambre) y Osiris (panel de inteligencia global). Licencia MIT. Es muy reciente (creado en junio de 2026, ~1.2k estrellas, sin releases).",
+      "que_hace": "Vigila fuentes abiertas (conflictos, desastres naturales, mercados, desplazamientos, salud pública, sanciones, ciberseguridad) y genera escenarios con un enjambre de personas simuladas por LLM. Cada predicción queda registrada y un LLM juez la califica al vencer su horizonte. Expone una API y un servidor MCP para agentes.",
+      "como_lo_hace": "Requiere Python 3.11+ con uv, Ollama con un modelo descargado y una copia de Osiris con el overlay de PYTHIA. Corre en local sin claves de API. Se añade a Claude Code con `claude mcp add pythia -- uv … run python -m engine.mcp`.",
+      "descripcion_notas": "Sin alternativas declaradas. Las predicciones de LLM no son análisis de inteligencia verificados.",
+      "descripcion_fuentes": [
+        "https://github.com/jangles-byte/Pythia/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "jangles-byte/Pythia",
+        "archived": false,
+        "pushed_at": "2026-09-06",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción.",
       "body": "Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción.",
       "install": {
@@ -69590,7 +70065,24 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "osiris",
+          "label": "osiris"
+        },
+        {
+          "id": "mirofish",
+          "label": "mirofish"
+        },
+        {
+          "id": "ollama",
+          "label": "ollama"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "vision",
         "configurar-claude-code",
@@ -70268,7 +70760,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "swr"
+        "grafana",
+        "swr",
+        "duckdb"
       ],
       "alt": [],
       "stack": "JavaScript; datos temporales ordenados; estilos y build distribuidos",
@@ -70378,6 +70872,45 @@
       "stars": 10640,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "grafana",
+          "motivo": "Grafana usa uPlot en sus paneles de series temporales. (combinación por arquitectura)",
+          "orden_instalacion": "Para paneles completos usa Grafana; para embeber, uPlot."
+        },
+        {
+          "id": "swr",
+          "motivo": "Actualizar series en vivo con la recarga de datos de SWR. (combinación por arquitectura)",
+          "orden_instalacion": "Obtén los datos con SWR y llama a `setData`."
+        },
+        {
+          "id": "duckdb",
+          "motivo": "Agregar series largas antes de pintarlas. (combinación por arquitectura)",
+          "orden_instalacion": "Agrupa por intervalo en DuckDB."
+        }
+      ],
+      "que_es": "μPlot, librería compacta de gráficos de series temporales sobre Canvas 2D, de @leeoniya. Licencia MIT. Es madura (~11k estrellas, 1.6.32).",
+      "que_hace": "Dibuja series temporales, líneas, áreas, OHLC y barras muy rápido y con poca memoria (~50 KB minificado), apto para cientos de miles de puntos y actualizaciones en streaming. Prioriza rendimiento sobre variedad de tipos y animaciones.",
+      "como_lo_hace": "Se instala con `npm install uplot` o se carga desde `dist/`. Es JavaScript puro sin dependencias; los envoltorios para frameworks son de la comunidad.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/leeoniya/uPlot/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "leeoniya/uPlot",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "1.6.32 (2025-03-14)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a renderizar datos con Canvas y controles programables.",
       "body": "Permite visualizar series temporales, líneas, áreas y otros formatos en una página. Su rendimiento depende del volumen, configuración, navegador y equipo; conviene medirlo con una muestra representativa.",
       "install": {
@@ -70388,8 +70921,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
+          "id": "grafana",
+          "label": "grafana"
+        },
+        {
           "id": "swr",
           "label": "swr"
+        },
+        {
+          "id": "duckdb",
+          "label": "duckdb"
         }
       ],
       "areas": [
@@ -70419,7 +70960,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "odm"
+        "blender",
+        "three.js",
+        "marimo"
       ],
       "alt": [],
       "stack": "Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba",
@@ -70529,6 +71072,47 @@
       "stars": 4273,
       "license": "AGPL-3.0",
       "homepage": "https://webodm.org/download",
+      "combina_con": [
+        {
+          "id": "blender",
+          "motivo": "Editar o renderizar los modelos exportados. (combinación por arquitectura)",
+          "orden_instalacion": "Exporta el modelo texturizado e impórtalo en Blender."
+        },
+        {
+          "id": "three.js",
+          "motivo": "Publicar modelos o splats en una web propia. (combinación por arquitectura)",
+          "orden_instalacion": "Exporta y carga con three.js."
+        },
+        {
+          "id": "marimo",
+          "motivo": "Analizar ortomosaicos y DEM exportados. (combinación por arquitectura)",
+          "orden_instalacion": "Abre los GeoTIFF en un notebook."
+        }
+      ],
+      "que_es": "WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.",
+      "que_hace": "Genera mapas georreferenciados, nubes de puntos, modelos de elevación, modelos 3D texturizados y gaussian splats a partir de fotos aéreas. Admite varios motores de procesamiento: ODX (su fork propio), MicMac y LGT. Incluye gestión de proyectos, visor de mapas y 3D, y API.",
+      "como_lo_hace": "Se instala con los instaladores oficiales gratuitos o con Docker; usa Django 5.2, PostgreSQL 18 y Valkey. El README avisa de que quien pagó un instalador después de abril de 2026 compró otro software y documenta la migración. Revisa los requisitos de hardware antes de procesar.",
+      "descripcion_notas": "Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM.",
+      "descripcion_fuentes": [
+        "https://github.com/WebODM/WebODM/blob/master/README.md",
+        "https://webodm.org/blog/announcement/",
+        "https://docs.webodm.org/"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "WebODM/WebODM",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "v4.0.1 (2026-11-15)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
       "body": "Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
       "install": {
@@ -70539,8 +71123,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "odm",
-          "label": "odm"
+          "id": "blender",
+          "label": "blender"
+        },
+        {
+          "id": "three.js",
+          "label": "three.js"
+        },
+        {
+          "id": "marimo",
+          "label": "marimo"
         }
       ],
       "areas": [
@@ -70805,7 +71397,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "real-esrgan"
+        "real-esrgan",
+        "comfyui",
+        "rembg"
       ],
       "alt": [],
       "stack": "Python y entorno indicado; PyTorch; pesos; imagen propia de prueba",
@@ -70919,6 +71513,45 @@
       "stars": 18230,
       "license": "NOASSERTION",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "real-esrgan",
+          "motivo": "Integración nativa para mejorar fondo y caras.",
+          "orden_instalacion": "Añade `--bg_upsampler realesrgan` en la inferencia."
+        },
+        {
+          "id": "comfyui",
+          "motivo": "Restaurar caras dentro de flujos de ComfyUI con nodos de la comunidad. (combinación por arquitectura)",
+          "orden_instalacion": "Instala un nodo de restauración facial compatible."
+        },
+        {
+          "id": "rembg",
+          "motivo": "Recortar el retrato restaurado. (combinación por arquitectura)",
+          "orden_instalacion": "Restaura con CodeFormer y quita el fondo con rembg."
+        }
+      ],
+      "que_es": "CodeFormer, modelo de restauración ciega de rostros (NeurIPS 2022) de S-Lab, Nanyang Technological University. Licencia NTU S-Lab License 1.0, solo uso no comercial (GitHub muestra NOASSERTION). Tiene ~18k estrellas (v0.1.0) y su último cambio es de noviembre de 2025.",
+      "que_hace": "Restaura caras en fotos antiguas, borrosas o dañadas usando un transformer con búsqueda en codebook, con un parámetro que equilibra fidelidad y calidad. También colorea, rellena (inpainting) y procesa vídeo. Puede mejorar el fondo con Real-ESRGAN.",
+      "como_lo_hace": "Se clona el repo, se instalan dependencias de PyTorch y BasicSR y se ejecuta `inference_codeformer.py`. Los autores solo reconocen como oficiales las demos de Hugging Face, Replicate y OpenXLab; avisan de webs que usan el modelo sin licencia.",
+      "descripcion_notas": "Sin alternativas declaradas. Licencia no comercial.",
+      "descripcion_fuentes": [
+        "https://github.com/sczhou/CodeFormer/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "sczhou/CodeFormer",
+        "archived": false,
+        "pushed_at": "2025-11-18",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "latest_release": "v0.1.0 (2022-08-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.",
       "body": "Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.",
       "install": {
@@ -70931,6 +71564,14 @@
         {
           "id": "real-esrgan",
           "label": "real-esrgan"
+        },
+        {
+          "id": "comfyui",
+          "label": "comfyui"
+        },
+        {
+          "id": "rembg",
+          "label": "rembg"
         }
       ],
       "areas": [
@@ -71908,7 +72549,11 @@
       "desc": "Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "codeformer",
+        "comfyui",
+        "rembg"
+      ],
       "alt": [],
       "stack": "Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba",
       "repo_url": "https://github.com/xinntao/Real-ESRGAN",
@@ -72020,6 +72665,45 @@
       "stars": 37497,
       "license": "BSD-3-Clause",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "codeformer",
+          "motivo": "CodeFormer usa Real-ESRGAN para mejorar fondo y caras (`--bg_upsampler realesrgan`).",
+          "orden_instalacion": "Instala CodeFormer; incluye la integración."
+        },
+        {
+          "id": "comfyui",
+          "motivo": "Cargar modelos ESRGAN como upscalers en flujos de ComfyUI. (combinación por arquitectura)",
+          "orden_instalacion": "Copia los pesos en la carpeta de upscale models."
+        },
+        {
+          "id": "rembg",
+          "motivo": "Quitar el fondo después de ampliar. (combinación por arquitectura)",
+          "orden_instalacion": "Amplía con Real-ESRGAN y recorta con rembg."
+        }
+      ],
+      "que_es": "Real-ESRGAN, modelo y herramientas de superresolución de imágenes y vídeo, de @xinntao (Tencent ARC). Licencia BSD-3-Clause. Es muy popular (~38k estrellas, v0.3.0), pero su último cambio es de agosto de 2024.",
+      "que_hace": "Amplía y restaura imágenes reales degradadas con modelos entrenados con datos sintéticos, incluidos modelos específicos para anime y vídeo de anime. Ofrece ejecutables portables (NCNN-Vulkan) para Windows, Linux y macOS y una librería de Python. Puede mejorar caras con GFPGAN.",
+      "como_lo_hace": "Se instala con `pip install basicsr facexlib gfpgan` y `requirements.txt`, o se usan los ejecutables portables. Está escrito en Python sobre PyTorch y BasicSR; conviene una GPU.",
+      "descripcion_notas": "Sin alternativas declaradas. Sin mantenimiento activo desde 2024.",
+      "descripcion_fuentes": [
+        "https://github.com/xinntao/Real-ESRGAN/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "xinntao/Real-ESRGAN",
+        "archived": false,
+        "pushed_at": "2024-08-06",
+        "license": "BSD-3-Clause",
+        "primary_language": "Python",
+        "latest_release": "v0.3.0 (2022-09-20)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos.",
       "body": "Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos.",
       "install": {
@@ -72028,7 +72712,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "codeformer",
+          "label": "codeformer"
+        },
+        {
+          "id": "comfyui",
+          "label": "comfyui"
+        },
+        {
+          "id": "rembg",
+          "label": "rembg"
+        }
+      ],
       "areas": [
         "audiovisual"
       ],
@@ -72055,7 +72752,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Crear un recorte para una composición",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "comfyui"
+        "comfyui",
+        "real-esrgan",
+        "gradio"
       ],
       "alt": [],
       "stack": "Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo",
@@ -72170,6 +72869,45 @@
       "stars": 25467,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "comfyui",
+          "motivo": "Nodos de la comunidad para quitar fondos en flujos. (combinación por arquitectura)",
+          "orden_instalacion": "Instala un nodo basado en rembg."
+        },
+        {
+          "id": "real-esrgan",
+          "motivo": "Ampliar la imagen antes o después del recorte. (combinación por arquitectura)",
+          "orden_instalacion": "Amplía primero si la imagen es pequeña."
+        },
+        {
+          "id": "gradio",
+          "motivo": "Interfaz web rápida para uso interno. (combinación por arquitectura)",
+          "orden_instalacion": "Envuelve `remove()` en una app Gradio."
+        }
+      ],
+      "que_es": "rembg, herramienta para quitar el fondo de imágenes en local, de @danielgatis. Licencia MIT. Es madura (~26k estrellas, v2.0.87) y la patrocina PhotoRoom.",
+      "que_hace": "Elimina fondos con modelos de segmentación (u2net, isnet, BiRefNet, SAM y otros) desde la CLI, una librería de Python, un servidor HTTP o Docker. Procesa imágenes sueltas, carpetas y flujos.",
+      "como_lo_hace": "Se instala con `pip install \"rembg[cpu,cli]\"` o con extras `[gpu]`/`[rocm]`, y requiere Python 3.11+. Usa ONNX Runtime; la GPU NVIDIA puede requerir CUDA y cuDNN. Los modelos se descargan la primera vez que se usan.",
+      "descripcion_notas": "Sin alternativas declaradas.",
+      "descripcion_fuentes": [
+        "https://github.com/danielgatis/rembg/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "28-dataviz-osint-geo-imagen",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "danielgatis/rembg",
+        "archived": false,
+        "pushed_at": "2026-11-06",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v2.0.87 (2026-11-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor.",
       "body": "Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor.",
       "install": {
@@ -72182,6 +72920,14 @@
         {
           "id": "comfyui",
           "label": "comfyui"
+        },
+        {
+          "id": "real-esrgan",
+          "label": "real-esrgan"
+        },
+        {
+          "id": "gradio",
+          "label": "gradio"
         }
       ],
       "areas": [

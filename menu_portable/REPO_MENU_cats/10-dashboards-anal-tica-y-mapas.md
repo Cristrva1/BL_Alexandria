@@ -31,7 +31,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Selecciona dos bibliotecas de un mismo tipo y compara licencia, accesibilidad y formato de datos
 **Qué comprobar:** Tienes candidatos con documentación original y requisitos identificados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `echarts`, `awesome-bigdata`
+**Combina con:** `echarts`, `d3`, `awesome-bigdata`
 
 ## `chart-js`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,javascript
@@ -61,6 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Muestra un gráfico con tres categorías y cambia un valor
 **Qué comprobar:** El gráfico se actualiza y conserva etiquetas y leyenda
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `awesome-dataviz`, `tailwindcss`, `duckdb`
 **Alternativas (elige una):** `echarts`, `recharts`
 
 ## `d3`
@@ -91,6 +92,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Construye un gráfico de barras de tres categorías con escala y ejes explícitos
 **Qué comprobar:** Cada barra y etiqueta corresponde a su valor
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `recharts`, `awesome-dataviz`, `marimo`
 **Alternativas (elige una):** `echarts`
 
 ## `data-analyst-roadmap`
@@ -121,6 +123,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige SQL o una hoja de cálculo y resuelve una pregunta con una tabla ficticia
 **Qué comprobar:** Puedes explicar dato de entrada, cálculo y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `marimo`, `metabase`
 
 ## `echarts`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=dataviz,typescript
@@ -150,7 +153,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una serie de ventas y añade una segunda para comparar
 **Qué comprobar:** La leyenda distingue ambas series y el tooltip muestra valores correctos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `metabase`, `heroui`
+**Combina con:** `metabase`, `superset`, `heroui`
 **Alternativas (elige una):** `d3`, `chart-js`, `recharts`
 
 ## `gods-eye-view`
@@ -185,6 +188,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una capa pública y contrasta un objeto del globo con su fuente y hora de actualización
 **Qué comprobar:** Puedes identificar qué datos son reales, simulados o no disponibles
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `hermes-agent`, `pythia`
 
 ## `grafana`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=observability,dataviz,typescript,docker
@@ -307,6 +311,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Procesa un lote pequeño de imágenes de prueba y abre la ortofoto y nube de puntos
 **Qué comprobar:** Puedes inspeccionar alineación, cobertura y errores visibles
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `three.js`, `marimo`
 
 ## `osiris`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=osint,typescript
@@ -339,6 +344,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Activa una capa pública y contrasta un evento con la fuente original y su fecha
 **Qué comprobar:** Puedes identificar origen y actualización del evento en el mapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pythia`, `hermes-agent`, `claude-code`
 
 ## `pandas-ai`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,local · tags=analytics,data,python
@@ -463,6 +469,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Consulta un resumen del estado observado y separa los eventos de los escenarios generados
 **Qué comprobar:** Cada evento tiene origen y los escenarios se identifican como hipótesis
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `osiris`, `mirofish`, `ollama`, `claude-code`
 
 ## `recharts`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,react,typescript
@@ -619,7 +626,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Grafica una serie de cien puntos y comprueba tiempos y escala
 **Qué comprobar:** El cursor y los valores corresponden a los datos originales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `swr`
+**Combina con:** `grafana`, `swr`, `duckdb`
 
 ## `webodm`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=geoespacial,server,python
@@ -649,7 +656,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento
 **Qué comprobar:** Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `odm`
+**Combina con:** `blender`, `three.js`, `marimo`
 
 ## `wrenai`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=analytics,data,agents,python

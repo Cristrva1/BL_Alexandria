@@ -37112,6 +37112,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "echarts",
+        "d3",
         "awesome-bigdata"
       ],
       "alt": []
@@ -37223,7 +37224,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "awesome-dataviz",
+        "tailwindcss",
+        "duckdb"
+      ],
       "alt": [
         "echarts",
         "recharts"
@@ -37336,7 +37341,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una visualización a medida; Explorar relaciones entre datos con interacción",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "recharts",
+        "awesome-dataviz",
+        "marimo"
+      ],
       "alt": [
         "echarts"
       ]
@@ -37455,7 +37464,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "duckdb",
+        "marimo",
+        "metabase"
+      ],
       "alt": []
     },
     {
@@ -37567,6 +37580,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "metabase",
+        "superset",
         "heroui"
       ],
       "alt": [
@@ -37691,7 +37705,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "hermes-agent",
+        "pythia"
+      ],
       "alt": []
     },
     {
@@ -38154,7 +38172,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "blender",
+        "three.js",
+        "marimo"
+      ],
       "alt": []
     },
     {
@@ -38270,7 +38292,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar noticias por ubicación; Comparar eventos públicos en un globo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pythia",
+        "hermes-agent",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -38746,7 +38772,12 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "osiris",
+        "mirofish",
+        "ollama",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -39335,7 +39366,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "swr"
+        "grafana",
+        "swr",
+        "duckdb"
       ],
       "alt": []
     },
@@ -39448,7 +39481,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "odm"
+        "blender",
+        "three.js",
+        "marimo"
       ],
       "alt": []
     },
@@ -39694,7 +39729,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "real-esrgan"
+        "real-esrgan",
+        "comfyui",
+        "rembg"
       ],
       "alt": []
     },
@@ -40511,7 +40548,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "codeformer",
+        "comfyui",
+        "rembg"
+      ],
       "alt": []
     },
     {
@@ -40627,7 +40668,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Crear un recorte para una composición",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "comfyui"
+        "comfyui",
+        "real-esrgan",
+        "gradio"
       ],
       "alt": []
     },

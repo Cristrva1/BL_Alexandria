@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+rembg, herramienta para quitar el fondo de imágenes en local, de @danielgatis. Licencia MIT. Es madura (~26k estrellas, v2.0.87) y la patrocina PhotoRoom.
+
+## ¿Qué hace?
+
+Elimina fondos con modelos de segmentación (u2net, isnet, BiRefNet, SAM y otros) desde la CLI, una librería de Python, un servidor HTTP o Docker. Procesa imágenes sueltas, carpetas y flujos.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install "rembg[cpu,cli]"` o con extras `[gpu]`/`[rocm]`, y requiere Python 3.11+. Usa ONNX Runtime; la GPU NVIDIA puede requerir CUDA y cuDNN. Los modelos se descargan la primera vez que se usan.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ComfyUI](comfyui.md) | Nodos de la comunidad para quitar fondos en flujos. (combinación por arquitectura) | Instala un nodo basado en rembg. |
+| [Real-ESRGAN](real-esrgan.md) | Ampliar la imagen antes o después del recorte. (combinación por arquitectura) | Amplía primero si la imagen es pequeña. |
+| [Gradio](gradio.md) | Interfaz web rápida para uso interno. (combinación por arquitectura) | Envuelve `remove()` en una app Gradio. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-06 · última versión publicada v2.0.87 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/danielgatis/rembg/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local |
 | Coste | El coste depende del proveedor o la ruta. Los modelos ONNX locales no necesitan API; withoutbg es un backend Cloud de créditos; los pesos pueden tener licencias distintas |
 | Equipo | Preparación según la ruta elegida. Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo |
-
-Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local
-
-## Qué puedes hacer con él
-
-Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una foto de producto; Crear un recorte para una composición.
-
-## Cómo funciona
 
 Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Enlaces
 

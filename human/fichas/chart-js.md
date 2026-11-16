@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Chart.js, librería JavaScript de gráficos sobre Canvas para diseñadores y desarrolladores. Licencia MIT. Es muy madura (~68k estrellas, v4.6.1).
+
+## ¿Qué hace?
+
+Ofrece tipos comunes (líneas, barras, áreas, tartas, radar, dispersión, burbujas) con animaciones, responsive y plugins. Se configura con un objeto JSON sencillo y admite ejes y escalas personalizables.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install chart.js` o desde CDN y dibuja en un elemento `<canvas>`. Tiene envoltorios de la comunidad para React, Vue y otros frameworks.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [awesome-dataviz](awesome-dataviz.md) | Comparar con otras librerías de gráficos. (combinación por arquitectura) | Revisa la lista antes de elegir. |
+| [tailwindcss](tailwindcss.md) | Integrar los gráficos con el tema visual de la app. (combinación por arquitectura) | Pasa los colores del tema a la configuración. |
+| [DuckDB](duckdb.md) | Agregar datos (incluso en el navegador con DuckDB-WASM) antes de dibujarlos. (combinación por arquitectura) | Consulta con DuckDB y pasa el resultado al dataset. |
+
+**Notas:** Alternativas (elige una): echarts, recharts.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v4.6.1 (2026-10-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chartjs/Chart.js/blob/master/README.md) · [2](https://www.chartjs.org/docs/latest/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El canvas necesita tamaño y alternativa textual adecuados para comunicar los datos a todos los usuarios |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo ni API; servicios de datos son independientes |
 | Equipo | Preparación según la ruta elegida. JavaScript; canvas; gestor npm o script distribuido |
-
-El canvas necesita tamaño y alternativa textual adecuados para comunicar los datos a todos los usuarios
-
-## Qué puedes hacer con él
-
-Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.
-
-## Por qué destaca
-
-Usos propuestos: Añadir gráficos a una página sencilla; Comparar resultados por periodo.
-
-## Cómo funciona
 
 El canvas necesita tamaño y alternativa textual adecuados para comunicar los datos a todos los usuarios
 

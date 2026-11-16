@@ -2543,6 +2543,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://d3js.org/getting-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una visualización a medida; Explorar relaciones entre datos con interacción — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Recharts](human/fichas/recharts.md) · [awesome-dataviz](human/fichas/awesome-dataviz.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/d3.md) · [GitHub](https://github.com/d3/d3)
 
 #### 📉 Chart.js
@@ -2551,6 +2552,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://www.chartjs.org/docs/latest/getting-started/index); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [awesome-dataviz](human/fichas/awesome-dataviz.md) · [tailwindcss](human/fichas/tailwindcss.md) · [DuckDB](human/fichas/duckdb.md)<br>
 **Más:** [ficha completa](human/fichas/chart-js.md) · [GitHub](https://github.com/chartjs/Chart.js)
 
 #### 📉 echarts
@@ -2559,7 +2561,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://echarts.apache.org/handbook/en/get-started/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [metabase](human/fichas/metabase.md) · [heroui](human/fichas/heroui.md)<br>
+**Combina con:** [metabase](human/fichas/metabase.md) · [Apache Superset](human/fichas/superset.md) · [heroui](human/fichas/heroui.md)<br>
 **Más:** [ficha completa](human/fichas/echarts.md) · [GitHub](https://github.com/apache/echarts)
 
 #### 📈 uPlot
@@ -2568,7 +2570,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/leeoniya/uPlot/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [swr](human/fichas/swr.md)<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [swr](human/fichas/swr.md) · [DuckDB](human/fichas/duckdb.md)<br>
 **Más:** [ficha completa](human/fichas/uplot.md) · [GitHub](https://github.com/leeoniya/uPlot)
 
 ### Recursos y casos de uso
@@ -2579,7 +2581,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/hal9ai/awesome-dataviz/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una biblioteca de mapas; Comparar gráficos para React y JavaScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [echarts](human/fichas/echarts.md) · [awesome-bigdata](human/fichas/awesome-bigdata.md)<br>
+**Combina con:** [echarts](human/fichas/echarts.md) · [D3.js](human/fichas/d3.md) · [awesome-bigdata](human/fichas/awesome-bigdata.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-dataviz.md) · [GitHub](https://github.com/hal9ai/awesome-dataviz)
 
 #### 📊 data-analyst-roadmap
@@ -2588,6 +2590,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [marimo](human/fichas/marimo.md) · [metabase](human/fichas/metabase.md)<br>
 **Más:** [ficha completa](human/fichas/data-analyst-roadmap.md) · [GitHub](https://github.com/mtahiraslan/data-analyst-roadmap)
 
 ### Inteligencia de fuentes abiertas y mapas
@@ -2602,6 +2605,7 @@ npm ci
 npm run doctor
 npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Pythia](human/fichas/pythia.md)<br>
 **Más:** [ficha completa](human/fichas/gods-eye-view.md) · [GitHub](https://github.com/bilawalsidhu/gods-eye-view)
 
 #### 📊 osiris
@@ -2613,6 +2617,7 @@ cd osiris
 npm install
 npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar noticias por ubicación; Comparar eventos públicos en un globo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Pythia](human/fichas/pythia.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/osiris.md) · [GitHub](https://github.com/simplifaisoul/osiris)
 
 #### 📊 Pythia
@@ -2623,6 +2628,7 @@ npm run dev` (comprobar los pasos completos en la ficha).<br>
 cp .env.example .env          # sensible defaults — no keys needed
 ./run-all.sh                  # starts Osiris + the engine and opens the UI` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [osiris](human/fichas/osiris.md) · [MiroFish](human/fichas/mirofish.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/pythia.md) · [GitHub](https://github.com/jangles-byte/Pythia)
 
 ### Fotogrametría y mapas desde imágenes
@@ -2634,6 +2640,7 @@ cp .env.example .env          # sensible defaults — no keys needed
 **Comando documentado:** `# Windows
 docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --project-path /datasets project` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/odm.md) · [GitHub](https://github.com/OpenDroneMap/ODM)
 
 #### ⚙️ WebODM
@@ -2642,7 +2649,7 @@ docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --p
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.webodm.org/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ODM](human/fichas/odm.md)<br>
+**Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/webodm.md) · [GitHub](https://github.com/WebODM/WebODM)
 
 ---
@@ -2718,7 +2725,7 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install "rembg[cpu,cli]" # for library + cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Crear un recorte para una composición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ComfyUI](human/fichas/comfyui.md)<br>
+**Combina con:** [ComfyUI](human/fichas/comfyui.md) · [Real-ESRGAN](human/fichas/real-esrgan.md) · [Gradio](human/fichas/gradio.md)<br>
 **Más:** [ficha completa](human/fichas/rembg.md) · [GitHub](https://github.com/danielgatis/rembg)
 
 #### 🔍 Real-ESRGAN
@@ -2737,6 +2744,7 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
     pip install -r requirements.txt
     python setup.py develop` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [CodeFormer](human/fichas/codeformer.md) · [ComfyUI](human/fichas/comfyui.md) · [rembg](human/fichas/rembg.md)<br>
 **Más:** [ficha completa](human/fichas/real-esrgan.md) · [GitHub](https://github.com/xinntao/Real-ESRGAN)
 
 #### 🩹 CodeFormer
@@ -2745,7 +2753,7 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/sczhou/CodeFormer/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
+**Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [ComfyUI](human/fichas/comfyui.md) · [rembg](human/fichas/rembg.md)<br>
 **Más:** [ficha completa](human/fichas/codeformer.md) · [GitHub](https://github.com/sczhou/CodeFormer)
 
 ### Suites generativas todo-en-uno

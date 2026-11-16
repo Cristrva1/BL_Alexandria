@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Real-ESRGAN, modelo y herramientas de superresolución de imágenes y vídeo, de @xinntao (Tencent ARC). Licencia BSD-3-Clause. Es muy popular (~38k estrellas, v0.3.0), pero su último cambio es de agosto de 2024.
+
+## ¿Qué hace?
+
+Amplía y restaura imágenes reales degradadas con modelos entrenados con datos sintéticos, incluidos modelos específicos para anime y vídeo de anime. Ofrece ejecutables portables (NCNN-Vulkan) para Windows, Linux y macOS y una librería de Python. Puede mejorar caras con GFPGAN.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install basicsr facexlib gfpgan` y `requirements.txt`, o se usan los ejecutables portables. Está escrito en Python sobre PyTorch y BasicSR; conviene una GPU.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [CodeFormer](codeformer.md) | CodeFormer usa Real-ESRGAN para mejorar fondo y caras (`--bg_upsampler realesrgan`). | Instala CodeFormer; incluye la integración. |
+| [ComfyUI](comfyui.md) | Cargar modelos ESRGAN como upscalers en flujos de ComfyUI. (combinación por arquitectura) | Copia los pesos en la carpeta de upscale models. |
+| [rembg](rembg.md) | Quitar el fondo después de ampliar. (combinación por arquitectura) | Amplía con Real-ESRGAN y recorta con rembg. |
+
+**Notas:** Sin alternativas declaradas. Sin mantenimiento activo desde 2024.
+
+Estado en GitHub: activo · último push 2024-08-06 · última versión publicada v0.3.0 (2022-09-20) · licencia declarada BSD-3-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/xinntao/Real-ESRGAN/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La superresolución generativa puede añadir detalles; no recupera de forma verificable información ausente en la imagen |
 | Coste | Sin pago a un modelo en la ruta básica. La inferencia local no exige API; hardware, modelos y procesamiento tienen recursos propios |
 | Equipo | Preparación según la ruta elegida. Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba |
-
-La superresolución generativa puede añadir detalles; no recupera de forma verificable información ausente en la imagen
-
-## Qué puedes hacer con él
-
-Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución.
-
-## Cómo funciona
 
 La superresolución generativa puede añadir detalles; no recupera de forma verificable información ausente en la imagen
 

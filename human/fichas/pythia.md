@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+PYTHIA, plataforma local de predicción geopolítica de @jangles-byte que fusiona MiroFish (motor de predicción por inteligencia de enjambre) y Osiris (panel de inteligencia global). Licencia MIT. Es muy reciente (creado en junio de 2026, ~1.2k estrellas, sin releases).
+
+## ¿Qué hace?
+
+Vigila fuentes abiertas (conflictos, desastres naturales, mercados, desplazamientos, salud pública, sanciones, ciberseguridad) y genera escenarios con un enjambre de personas simuladas por LLM. Cada predicción queda registrada y un LLM juez la califica al vencer su horizonte. Expone una API y un servidor MCP para agentes.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.11+ con uv, Ollama con un modelo descargado y una copia de Osiris con el overlay de PYTHIA. Corre en local sin claves de API. Se añade a Claude Code con `claude mcp add pythia -- uv … run python -m engine.mcp`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [osiris](osiris.md) | Requisito: aporta el globo y las fuentes en vivo. | Instala Osiris y aplica el overlay de integración. |
+| [MiroFish](mirofish.md) | Motor de predicción por enjambre integrado. | Viene integrado en PYTHIA. |
+| [Ollama](ollama.md) | Modelos locales para cada persona del enjambre. | Arranca Ollama y descarga un modelo de chat. |
+| [Claude Code](claude-code.md) | Servidor MCP documentado en el README. | Ejecuta `claude mcp add pythia …`. |
+
+**Notas:** Sin alternativas declaradas. Las predicciones de LLM no son análisis de inteligencia verificados.
+
+Estado en GitHub: activo · último push 2026-09-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jangles-byte/Pythia/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Las predicciones son resultados generados y no probabilidades verificadas; MCP stdio permite consultar el motor desde los clientes |
 | Coste | Sin pago a un modelo en la ruta básica. El autor ofrece feeds sin claves y modelo local; eso consume hardware y depende de disponibilidad de fuentes |
 | Equipo | Preparación según la ruta elegida. Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script |
-
-Las predicciones son resultados generados y no probabilidades verificadas; MCP stdio permite consultar el motor desde los clientes
-
-## Qué puedes hacer con él
-
-Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción.
-
-## Por qué destaca
-
-Usos propuestos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos.
-
-## Cómo funciona
 
 Las predicciones son resultados generados y no probabilidades verificadas; MCP stdio permite consultar el motor desde los clientes
 
