@@ -29,6 +29,7 @@ Cada componente se escribe una vez en Markdown con el formato de plugin de Claud
 | [Claude Code](claude-code.md) | Formato de origen y marketplace. | Instala solo los plugins que uses. |
 | [Codex CLI](codex.md) | Soporte nativo o mediante artefactos generados. | Sigue la ruta de Codex CLI del README. |
 | [OpenCode](opencode.md) | `make install-opencode`. | Desde un clon del repositorio. |
+| [plugins](plugins.md) | Combinación recíproca: plugins lo enlaza como «Catálogo de plugins con marketplace para Cursor». | Orden indicado desde plugins: Instala desde su marketplace. |
 
 **Notas:** Alternativas (elige una): claude-plugins-official, antigravity-awesome-skills, agency-agents. Se quitó skillspector porque no hay integración (sigue siendo buena práctica auditar).
 

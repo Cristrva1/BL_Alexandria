@@ -54,6 +54,7 @@ Si es una landing estática, Tailwind y un par de componentes bastan. Si es un d
 - En lugar de [assistant-ui](../fichas/assistant-ui.md): [CopilotKit](../fichas/copilotkit.md)
 - En lugar de [motion](../fichas/motion.md): [Anime.js](../fichas/animejs.md)
 - En lugar de [Recharts](../fichas/recharts.md): [Chart.js](../fichas/chart-js.md), [echarts](../fichas/echarts.md)
+- En lugar de [swr](../fichas/swr.md): [TanStack Query](../fichas/tanstack-query.md)
 
 ---
 

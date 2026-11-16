@@ -29,7 +29,7 @@
      "orden_instalacion": "Instala T3 Code con OpenCode presente."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider.",
+   "notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.",
    "fuentes": [
     "https://github.com/anomalyco/opencode/blob/dev/README.md",
     "https://opencode.ai/docs/providers/"
@@ -70,7 +70,7 @@
      "orden_instalacion": "Añade el servidor MCP de Context7."
     }
    ],
-   "notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose. No es open source.",
+   "notas": "Alternativas (elige una): codex, gemini-cli, opencode, goose, antigravity-cli. No es open source.",
    "fuentes": [
     "https://github.com/anthropics/claude-code/blob/main/README.md",
     "https://code.claude.com/docs/en/overview"
@@ -110,7 +110,7 @@
      "orden_instalacion": "Instala T3 Code con Codex presente."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, gemini-cli, opencode.",
+   "notas": "Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.",
    "fuentes": [
     "https://github.com/openai/codex/blob/main/README.md",
     "https://developers.openai.com/codex/"
@@ -146,7 +146,7 @@
      "orden_instalacion": "Añade los endpoints MCP a la configuración."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, codex, opencode. Para uso individual, Google remite a Antigravity CLI (no catalogado).",
+   "notas": "Alternativas (elige una): claude-code, codex, opencode, antigravity-cli. Para uso individual, Google remite a Antigravity CLI (antigravity-cli).",
    "fuentes": [
     "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
     "https://antigravity.google/product/antigravity-cli"
@@ -185,6 +185,12 @@
      "id": "ecc",
      "motivo": "Configuración de agentes reutilizable. (combinación por arquitectura)",
      "orden_instalacion": "Aplica la configuración a los agentes que lances."
+    },
+    {
+     "id": "swe-bench",
+     "motivo": "Combinación recíproca: SWE-bench lo enlaza como «Evaluar agentes de programación sobre SWE-bench. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SWE-bench: Genera predicciones con el agente y evalúalas con el arnés.",
+     "reciproca_de": "swe-bench"
     }
    ],
    "notas": "Alternativas (elige una): open-swe.",
@@ -221,6 +227,18 @@
      "id": "playwright-mcp",
      "motivo": "Automatizar el navegador desde el agente. (combinación por arquitectura)",
      "orden_instalacion": "Instala el MCP de Playwright."
+    },
+    {
+     "id": "omniroute",
+     "motivo": "Combinación recíproca: OmniRoute lo enlaza como «Cliente citado en el flujo de peticiones del README».",
+     "orden_instalacion": "Orden indicado desde OmniRoute: Configura Cline con el endpoint OpenAI de OmniRoute.",
+     "reciproca_de": "omniroute"
+    },
+    {
+     "id": "awesome-mcp-clients",
+     "motivo": "Combinación recíproca: Awesome MCP Clients lo enlaza como «Cliente MCP dentro del editor. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome MCP Clients: Compáralo con los clientes listados.",
+     "reciproca_de": "awesome-mcp-clients"
     }
    ],
    "notas": "Alternativas (elige una): aider.",
@@ -330,7 +348,7 @@
      "orden_instalacion": "Instala OpenCode y selecciónalo."
     }
    ],
-   "notas": "Sin alternativas declaradas; solapa con opencode-manager (solo anotado).",
+   "notas": "Alternativa (elige una): opencode-manager.",
    "fuentes": [
     "https://github.com/pingdotgg/t3code/blob/main/README.md"
    ],
@@ -363,6 +381,24 @@
      "id": "tree-sitter",
      "motivo": "Mapa del repositorio basado en Tree-sitter.",
      "orden_instalacion": "No requiere instalación aparte."
+    },
+    {
+     "id": "ast-grep",
+     "motivo": "Combinación recíproca: ast-grep lo enlaza como «Aplicar refactorizaciones masivas deterministas junto a la edición con IA. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ast-grep: Usa ast-grep para el cambio mecánico y Aider para el resto.",
+     "reciproca_de": "ast-grep"
+    },
+    {
+     "id": "openidea",
+     "motivo": "Combinación recíproca: openidea lo enlaza como «Pareja de programación con git en la terminal integrada. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde openidea: Ejecuta aider dentro del proyecto.",
+     "reciproca_de": "openidea"
+    },
+    {
+     "id": "swe-bench",
+     "motivo": "Combinación recíproca: SWE-bench lo enlaza como «Comparar el rendimiento de distintos modelos en Aider. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SWE-bench: Exporta los parches como predicciones.",
+     "reciproca_de": "swe-bench"
     }
    ],
    "notas": "Alternativas (elige una): opencode, cline. Actividad reciente baja.",
@@ -422,11 +458,6 @@
    "como_lo_hace": "Se instala con `curl -fsSL https://mimo.xiaomi.com/install | bash` o PowerShell. Admite cualquier proveedor de LLM y puede usar opcionalmente skills de `.opencode/skills`.",
    "combina_con": [
     {
-     "id": "opencode",
-     "motivo": "Compatibilidad opcional con skills de OpenCode (`MIMOCODE_ENABLE_OPENCODE_SKILLS`).",
-     "orden_instalacion": "Activa la variable para reutilizar tus skills."
-    },
-    {
      "id": "headroom",
      "motivo": "Comprimir el contexto en sesiones largas. (combinación por arquitectura)",
      "orden_instalacion": "Envuelve el agente con Headroom si es compatible."
@@ -435,9 +466,14 @@
      "id": "rtk",
      "motivo": "Reducir la salida de comandos. (combinación por arquitectura)",
      "orden_instalacion": "Configura los hooks de rtk si son compatibles."
+    },
+    {
+     "id": "context7",
+     "motivo": "MiMo Code admite servidores MCP remotos en su configuración `mcp` (el README muestra Exa y Tavily); Context7 aporta documentación actualizada de librerías. (combinación por arquitectura)",
+     "orden_instalacion": "Añade Context7 como servidor MCP remoto en la configuración."
     }
    ],
-   "notas": "Sin alternativas declaradas; funcionalmente compite con opencode (solo anotado).",
+   "notas": "Alternativa (elige una): opencode.",
    "fuentes": [
     "https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md"
    ],
@@ -448,41 +484,6 @@
     "license": "MIT",
     "primary_language": "TypeScript",
     "latest_release": "v0.1.17 (2026-11-13)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "openclaude": {
-   "que_es": "OpenClaude, CLI de agente de programación multi-proveedor publicada por Twigpine. Según su propio NOTICE, deriva del código propietario de Claude Code de Anthropic y solo las modificaciones se ofrecen con MIT «donde sea legalmente posible» (GitHub muestra NOASSERTION). Tiene ~34k estrellas (v0.36.0) y fue creado en abril de 2026.",
-   "que_hace": "Mantiene un flujo de trabajo de terminal (herramientas, agentes, MCP, comandos slash) con proveedores compatibles con OpenAI, Gemini, GitHub Models, Codex OAuth, Ollama y otros. Usa Exa como búsqueda web por defecto en modelos que no son de Anthropic.",
-   "como_lo_hace": "Se instala con `npm install -g @twigpine/openclaude@latest` (Node.js ≥24.22.1). El paquete anterior ya no se actualiza. Declara no estar afiliado a Anthropic.",
-   "combina_con": [
-    {
-     "id": "ollama",
-     "motivo": "Proveedor local soportado.",
-     "orden_instalacion": "Configura Ollama como backend."
-    },
-    {
-     "id": "litellm",
-     "motivo": "Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura)",
-     "orden_instalacion": "Apunta el proveedor OpenAI al proxy."
-    },
-    {
-     "id": "context7",
-     "motivo": "Documentación de librerías vía MCP. (combinación por arquitectura)",
-     "orden_instalacion": "Añade el MCP de Context7."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Riesgo legal y de propiedad intelectual: deriva de código propietario de Anthropic. Pregunta de pertenencia al catálogo (solo anotada).",
-   "fuentes": [
-    "https://github.com/Twigpine/openclaude/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "Twigpine/openclaude",
-    "archived": false,
-    "pushed_at": "2026-11-16",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "TypeScript",
-    "latest_release": "v0.36.0 (2026-11-13)",
     "checked_at": "2026-11-15"
    }
   },

@@ -29,6 +29,8 @@ Se instala desde el marketplace del editor, con `npm i -g cline` o con la app de
 | [Ollama](ollama.md) | Modelos locales documentados. | Configura Ollama como proveedor. |
 | [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Añade el servidor desde el gestor de MCP. |
 | [Playwright MCP](playwright-mcp.md) | Automatizar el navegador desde el agente. (combinación por arquitectura) | Instala el MCP de Playwright. |
+| [OmniRoute](omniroute.md) | Combinación recíproca: OmniRoute lo enlaza como «Cliente citado en el flujo de peticiones del README». | Orden indicado desde OmniRoute: Configura Cline con el endpoint OpenAI de OmniRoute. |
+| [Awesome MCP Clients](awesome-mcp-clients.md) | Combinación recíproca: Awesome MCP Clients lo enlaza como «Cliente MCP dentro del editor. (combinación por arquitectura)». | Orden indicado desde Awesome MCP Clients: Compáralo con los clientes listados. |
 
 **Notas:** Alternativas (elige una): aider.
 
@@ -113,6 +115,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [Kilo Code](kilocode.md) | 28k | Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP. |
 
 ## Enlaces
 

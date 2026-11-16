@@ -27,7 +27,7 @@ Se ejecuta con GitHub Actions (sin servidor), Docker, tareas programadas locales
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Ollama](ollama.md) | Modelos locales recomendados para despliegues locales o Docker. | Arranca Ollama y configura su URL. |
-| [n8n](n8n.md) | Encadenar el informe con otros flujos o avisos. (combinación por arquitectura) | Recibe el informe por webhook o email en n8n. |
+| [activepieces](activepieces.md) | Encadenar el informe con otros flujos o avisos. (combinación por arquitectura) | Recibe el informe por webhook o email en Activepieces. |
 | [litellm](litellm.md) | Centralizar proveedores compatibles con OpenAI. (combinación por arquitectura) | Apunta `OPENAI_API_KEY`/base URL al proxy LiteLLM. |
 
 **Notas:** Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.

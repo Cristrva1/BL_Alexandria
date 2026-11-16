@@ -29,6 +29,7 @@ Se instala con Docker Compose (recomendado) o `pip install archivebox` en Linux 
 | [yt-dlp](yt-dlp.md) | Descarga de audio y vídeo, integrada como extractor. | Viene en la imagen Docker; en pip instala yt-dlp aparte. |
 | [changedetection.io](changedetection.md) | Archivar una nueva copia cuando una página cambia. (combinación por arquitectura) | Usa una notificación de changedetection (webhook) para añadir la URL a ArchiveBox. |
 | [karakeep](karakeep.md) | Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura) | Exporta los enlaces de Karakeep e impórtalos en ArchiveBox. |
+| [instaloader](instaloader.md) | Combinación recíproca: instaloader lo enlaza como «Archivar también las publicaciones en formatos de archivo web. (combinación por arquitectura)». | Orden indicado desde instaloader: Pasa las URLs de las publicaciones a ArchiveBox. |
 
 **Notas:** Sin alternativas declaradas. Desactiva el envío a archive.org si archivas páginas privadas.
 

@@ -27,7 +27,7 @@ Habla directamente el protocolo multidispositivo de WhatsApp Web por WebSocket, 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [evolution-api](evolution-api.md) | Evolution API usa Baileys como conexión gratuita; conocer la librería ayuda a entender y depurar sus sesiones, o a pasar a un gateway listo si no quieres programar el servidor. | Usa uno de los dos en cada número: no conectes el mismo número a Baileys propio y a Evolution a la vez. |
-| [n8n](n8n.md) | Tu servicio con Baileys envía los eventos a un webhook de n8n para la lógica del bot (combinación por arquitectura). | Servicio Baileys primero con su endpoint de envío protegido; después el flujo en n8n. |
+| [activepieces](activepieces.md) | Tu servicio con Baileys envía los eventos a un webhook de Activepieces para la lógica del bot (combinación por arquitectura). | Servicio Baileys primero con su endpoint de envío protegido; después el flujo en Activepieces. |
 | [litellm](litellm.md) | Un único endpoint compatible con OpenAI para generar respuestas con distintos modelos y control de gasto (combinación por arquitectura). | LiteLLM primero; llama a su API desde el manejador de mensajes. |
 
 **Notas:** Alternativas (elige una): whatsapp-web-js, waha. Revisa la guía de migración de la versión 7 antes de actualizar.

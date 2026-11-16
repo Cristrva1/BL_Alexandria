@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-11-16",
+  "source": "Solicitud del propietario del catálogo (2026-11-16).",
+  "added_count": 11,
+  "added": [
+    {
+      "id": "neo4j-mcp",
+      "full_name": "neo4j/mcp",
+      "github_id": 1041299082,
+      "readme_blob_sha": "23d79333f84d41ccb98d35f8138a098463c9c57d"
+    },
+    {
+      "id": "deepseek-harness",
+      "full_name": "deepseek-ai/deepseek-harness",
+      "github_id": 1333065091,
+      "readme_blob_sha": "7941e30f7bdca9391befe39b9115d211157fa42d"
+    },
+    {
+      "id": "tanstack-query",
+      "full_name": "TanStack/query",
+      "github_id": 207645083,
+      "readme_blob_sha": "3e4b0598ad8a1352350bcea435f77a4393f303c9"
+    },
+    {
+      "id": "antigravity-cli",
+      "full_name": "google-antigravity/antigravity-cli",
+      "github_id": 1237979735,
+      "readme_blob_sha": "7efc2eb63059621f4429fe00d5828d5c7b2a416a"
+    },
+    {
+      "id": "openbot",
+      "full_name": "CopilotKit/OpenBot",
+      "github_id": 1336502227,
+      "readme_blob_sha": "cbf56b370cb0e28ae8edd3fa8149b6a6c81a61b4"
+    },
+    {
+      "id": "hunyuanvideo-1-5",
+      "full_name": "Tencent-Hunyuan/HunyuanVideo-1.5",
+      "github_id": 1100328089,
+      "readme_blob_sha": "ed2a8e0ffc5a3bd602cf4d8fb339a364266fdda9"
+    },
+    {
+      "id": "apache-iceberg",
+      "full_name": "apache/iceberg",
+      "github_id": 158256479,
+      "readme_blob_sha": "7de24c77373acec815a47171f540b46afa7014af"
+    },
+    {
+      "id": "delta-lake",
+      "full_name": "delta-io/delta",
+      "github_id": 182849188,
+      "readme_blob_sha": "5a3c8ceaa500e9c1fd5b205660257915e454cf06"
+    },
+    {
+      "id": "jupyterlab",
+      "full_name": "jupyterlab/jupyterlab",
+      "github_id": 60374819,
+      "readme_blob_sha": "1b6521c29c5e3b96fb374450cde558c2e6387a4f"
+    },
+    {
+      "id": "pyannote-audio",
+      "full_name": "pyannote/pyannote-audio",
+      "github_id": 53344691,
+      "readme_blob_sha": "aacefa836c97e5d2e4e512edfa83f13fbce93f3f"
+    },
+    {
+      "id": "elevenlabs-python",
+      "full_name": "elevenlabs/elevenlabs-python",
+      "github_id": 619143361,
+      "readme_blob_sha": "958f4657ae264f480bd7ae3372e5e08c43101711"
+    }
+  ],
+  "skipped": [
+    {
+      "requested": "microsoft/autogen",
+      "reason": "Ya figura en data/retired.json (motivo «abandonado», 2026-11-15). Su README declara el proyecto archivado y sin correcciones de seguridad y remite a Microsoft Agent Framework, que ya está catalogado; reincorporarlo contradiría ese retiro."
+    },
+    {
+      "requested": "browserbase (plataforma)",
+      "reason": "Browserbase es un servicio de navegadores en la nube; su pieza abierta principal, browserbase/stagehand, ya está catalogada y su servidor MCP (browserbase/mcp-server-browserbase) está archivado."
+    },
+    {
+      "requested": "elevenlabs/elevenlabs-mcp",
+      "reason": "Archivado en GitHub; se cataloga en su lugar el SDK oficial de Python (elevenlabs/elevenlabs-python), activo."
+    }
+  ],
+  "total_public_repositories": 622,
+  "notes": [
+    "No se instaló ni se ejecutó ningún proyecto del catálogo.",
+    "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
+  ]
+}

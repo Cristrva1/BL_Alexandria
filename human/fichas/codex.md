@@ -31,7 +31,13 @@ Se instala con `curl -fsSL https://chatgpt.com/codex/install.sh | sh`, `npm inst
 | [Context7](context7.md) | Documentación de librerías vía MCP. | Añade el MCP de Context7 a la configuración de Codex. |
 | [T3 Code](t3code.md) | Controlar Codex desde web o móvil. | Instala T3 Code con Codex presente. |
 
-**Notas:** Alternativas (elige una): claude-code, gemini-cli, opencode.
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (79). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[3dviz-pro-max](3dviz-pro-max.md) · [agent-desktop](agent-desktop.md) · [agent-toolkit](agent-toolkit.md) · [agentes-chat](agentes-chat.md) · [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) · [ai-job-search](ai-job-search.md) · [anatomy](anatomy.md) · [andrej-karpathy-skills](andrej-karpathy-skills.md) · [Appwrite](appwrite.md) · [AutoGPT](autogpt.md) · [autoresearch](autoresearch.md) · [autoskills](autoskills.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [BMAD Method](bmad-method.md) · [Browser Harness](browser-harness.md) · [claude-code-router](claude-code-router.md) · [claude-mem](claude-mem.md) · [claude-task-master](claude-task-master.md) · [cleanyourtv](cleanyourtv.md) · [codebase-memory-mcp](codebase-memory-mcp.md) · [codegraph](codegraph.md) · [codex-plugin-cc](codex-plugin-cc.md) · [cognee](cognee.md) · [dream-loop](dream-loop.md) · [dsh-noema](dsh-noema.md) · [ECC](ecc.md) · [elephant-goldfish-model](elephant-goldfish-model.md) · [floorplan](floorplan.md) · [FreeToken](freetoken.md) · [fzf](fzf.md) · [GitHub MCP Server](github-mcp-server.md) · [GitNexus](gitnexus.md) · [grok-plugin-claude-code](grok-plugin-claude-code.md) · [gstack](gstack.md) · [hallmark](hallmark.md) · [Humanizer](humanizer.md) · [i-have-adhd](i-have-adhd.md) · [impeccable](impeccable.md) · [last30days](last30days-skill.md) · [lazygit](lazygit.md) · [logo-design-skill](logo-design-skill.md) · [Loop Engineering](loop-engineering.md) · [magnitude](magnitude.md) · [MCP servers for AWS](aws-mcp.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [mempalace](mempalace.md) · [modern-web-guidance](modern-web-guidance.md) · [multica](multica.md) · [Neo4j MCP (oficial)](neo4j-mcp.md) · [no-ai-slop](no-ai-slop.md) · [nodeterm](nodeterm.md) · [notebooklm-mcp-cli](notebooklm-mcp-cli.md) · [notebooklm-py](notebooklm-py.md) · [obsidian-second-brain](obsidian-second-brain.md) · [obsidian-skills](obsidian-skills.md) · [OpenHands](openhands.md) · [OpenMAIC](openmaic.md) · [paperclip](paperclip.md) · [Ponytail](ponytail.md) · [rea](rea.md) · [Revideo](revideo.md) · [rtk](rtk.md) · [ruflo](ruflo.md) · [security-audit-skill](security-audit-skill.md) · [sellbird](sellbird.md) · [Serena](serena.md) · [shepherd](shepherd.md) · [Sim](sim.md) · [skills](skills.md) · [social-media-research-skills](social-media-research-skills.md) · [Stitch Skills](stitch-skills.md) · [superpowers](superpowers.md) · [SWE-bench](swe-bench.md) · [threejs-game-skills](threejs-game-skills.md) · [ToolJet](tooljet.md) · [unity-mcp](unity-mcp.md) · [video-shotcraft](video-shotcraft.md) · [wshobson/agents](wshobson-agents.md) · [Zed](zed.md)
+
+**Notas:** Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada rust-v0.169.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -118,6 +124,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [Antigravity CLI](antigravity-cli.md) | 2.8k | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. |
 
 ## Enlaces
 

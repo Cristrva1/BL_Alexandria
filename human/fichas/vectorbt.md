@@ -30,6 +30,12 @@ Se instala con `pip install -U vectorbt` (extras `[full]` y `[rust]`). Usa NumPy
 | [freqtrade](freqtrade.md) | Llevar la idea validada a un bot. (combinación por arquitectura) | Reimplementa la estrategia en Freqtrade. |
 | [marimo](marimo.md) | Exploración interactiva de resultados. (combinación por arquitectura) | Ejecuta los análisis en notebooks marimo. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AutoHedge](autohedge.md) · [binance-trader](binance-trader.md) · [FinRL](finrl.md) · [lumibot](lumibot.md) · [machine-learning-for-trading](machine-learning-for-trading.md) · [OpenBB Open Data Platform](openbb.md) · [Vibe-Trading](vibe-trading.md) · [yfinance](yfinance.md)
+
 **Notas:** Sin alternativas declaradas. Commons Clause: no es open source según la OSI.
 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v1.2.1 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
@@ -107,6 +113,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dependencias compatibles; serie histórica; comisiones y frecuencia definidas
 - **Etiquetas:** `cuant` `framework` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Backtesting.py](backtesting-py.md) | 9.2k | Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
 
 ## Enlaces
 

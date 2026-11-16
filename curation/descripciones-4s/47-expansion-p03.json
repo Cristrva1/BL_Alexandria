@@ -1,0 +1,860 @@
+{
+ "batch": "47-expansion-p03",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "storybook": {
+   "que_es": "Herramienta de código abierto (MIT) mantenida por Chromatic y la comunidad Storybook. Estándar de la industria para desarrollo de componentes, muy maduro y con un ecosistema amplio de addons.",
+   "que_hace": "Permite desarrollar componentes y páginas de UI aislados del resto de la aplicación, documentarlos automáticamente, probar interacciones, accesibilidad y regresiones visuales, y compartir un catálogo vivo del sistema de diseño. Soporta React, Vue, Angular, Svelte, Web Components, React Native y otros.",
+   "como_lo_hace": "Se añade a un proyecto con su CLI de inicialización (`npm create storybook@latest`), que detecta el framework y configura el builder (Vite o Webpack). Las stories se escriben en archivos CSF; las pruebas se integran con Vitest y el modo navegador basado en Playwright.",
+   "combina_con": [
+    {
+     "id": "playwright",
+     "motivo": "Las pruebas de componentes de Storybook se ejecutan en navegador real mediante Vitest en modo navegador con Playwright.",
+     "orden_instalacion": "Instala el addon de pruebas de Storybook; después instala los navegadores de Playwright."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Storybook publica una receta oficial para integrar Tailwind CSS en las stories.",
+     "orden_instalacion": "Proyecto con Tailwind configurado; después sigue la receta de Storybook para cargar los estilos."
+    },
+    {
+     "id": "mantine",
+     "motivo": "Mantine documenta una guía para usar sus componentes y temas dentro de Storybook.",
+     "orden_instalacion": "Instala Mantine; después sigue su guía de Storybook para el proveedor de tema."
+    },
+    {
+     "id": "chakra-ui",
+     "motivo": "Las stories de componentes Chakra se envuelven en su proveedor de tema mediante un decorador de Storybook (combinación por arquitectura).",
+     "orden_instalacion": "Instala Chakra UI; después añade el decorador con su Provider en preview."
+    },
+    {
+     "id": "cypress",
+     "motivo": "Combinación recíproca: Cypress lo enlaza como «La documentación de Storybook explica cómo reutilizar historias de componentes en pruebas end-to-end con Cypress».",
+     "orden_instalacion": "Orden indicado desde Cypress: Publica o arranca Storybook; después visita las historias desde las pruebas de Cypress.",
+     "reciproca_de": "cypress"
+    }
+   ],
+   "notas": "Añade peso de dependencias al proyecto; mantenlo como dependencia de desarrollo.",
+   "fuentes": [
+    "https://github.com/storybookjs/storybook/blob/next/README.md",
+    "https://storybook.js.org/recipes/tailwindcss",
+    "https://mantine.dev/guides/storybook/"
+   ],
+   "github": {
+    "name_with_owner": "storybookjs/storybook",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v10.6.7 (2026-11-10)"
+   }
+  },
+  "leaflet": {
+   "que_es": "Biblioteca de código abierto (BSD-2-Clause) creada en 2010 por Volodymyr Agafonkin y mantenida por la comunidad Leaflet. La biblioteca de mapas web interactivos más extendida; muy madura.",
+   "que_hace": "Construye mapas interactivos con teselas, marcadores, popups, polígonos, GeoJSON, controles y eventos, y funciona en escritorio y móvil. Su catálogo de plugins cubre clústeres, mapas de calor, dibujo, rutas y muchas otras funciones.",
+   "como_lo_hace": "Pesa unos 40 kB de JS y 2,4 kB de CSS comprimidos; se carga desde CDN o npm. No incluye datos de mapa: usa servidores de teselas como OpenStreetMap, cuyas condiciones de uso hay que respetar.",
+   "combina_con": [
+    {
+     "id": "webodm",
+     "motivo": "WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura).",
+     "orden_instalacion": "Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet."
+    },
+    {
+     "id": "qgis",
+     "motivo": "QGIS prepara y estiliza datos que se exportan como GeoJSON o teselas para mostrarlos con Leaflet (combinación por arquitectura).",
+     "orden_instalacion": "Prepara las capas en QGIS; después exporta y cárgalas en Leaflet."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede generar el HTML y JavaScript de un mapa Leaflet a partir de un GeoJSON (combinación por arquitectura).",
+     "orden_instalacion": "Ten el GeoJSON listo; después pide al agente la página y revísala en el navegador."
+    },
+    {
+     "id": "nicegui",
+     "motivo": "Combinación recíproca: NiceGUI lo enlaza como «El elemento `ui.leaflet` de NiceGUI muestra mapas interactivos con Leaflet».",
+     "orden_instalacion": "Orden indicado desde NiceGUI: Instala NiceGUI; después añade `ui.leaflet(center=...)` a la página.",
+     "reciproca_de": "nicegui"
+    }
+   ],
+   "notas": "Alternativas (elige una): maplibre (mapas vectoriales con WebGL).",
+   "fuentes": [
+    "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+    "https://leafletjs.com/"
+   ],
+   "github": {
+    "name_with_owner": "Leaflet/Leaflet",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "BSD-2-Clause",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.9.4 (2023-05-18)"
+   }
+  },
+  "sherlock": {
+   "que_es": "Herramienta OSINT de código abierto (MIT) mantenida por el Sherlock Project y su comunidad. Muy popular; el README advierte de que los paquetes de terceros para ParrotOS y Ubuntu 24.04 parecen estar rotos.",
+   "que_hace": "Busca cuentas por nombre de usuario en más de 400 redes sociales y sitios, informa de las URL encontradas y exporta resultados en texto, CSV o XLSX, con opciones de proxy, Tor y tiempo de espera.",
+   "como_lo_hace": "Escrito en Python; se instala con pipx, pip, uv o Docker (`docker run -it --rm sherlock/sherlock`). La lista de sitios y sus reglas de detección vive en un archivo JSON mantenido por la comunidad, por lo que los falsos positivos y negativos cambian con el tiempo.",
+   "combina_con": [
+    {
+     "id": "theharvester",
+     "motivo": "theHarvester recoge correos, nombres y dominios de una organización y Sherlock busca los alias encontrados en redes sociales (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester sobre el dominio autorizado; después pasa los alias a Sherlock."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede ejecutar Sherlock y resumir o verificar los perfiles encontrados (combinación por arquitectura).",
+     "orden_instalacion": "Instala Sherlock; después pide al agente la búsqueda y la revisión manual de resultados."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Los resultados en CSV de varias búsquedas se pueden cruzar con DuckDB (combinación por arquitectura).",
+     "orden_instalacion": "Exporta a CSV con Sherlock; después consulta los archivos con DuckDB."
+    }
+   ],
+   "notas": "Alternativas (elige una): maigret.",
+   "fuentes": [
+    "https://github.com/sherlock-project/sherlock/blob/master/docs/README.md"
+   ],
+   "github": {
+    "name_with_owner": "sherlock-project/sherlock",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.16.2 (2026-09-08)"
+   }
+  },
+  "maigret": {
+   "que_es": "Herramienta OSINT de código abierto (MIT) creada por soxoj, derivada de Sherlock y ampliada. Activa; el autor advierte de que las comprobaciones de sitios se rompen con el tiempo y requieren mantenimiento.",
+   "que_hace": "Busca cuentas en miles de sitios solo con el nombre de usuario, sin claves de API, extrae información disponible en las páginas (nombres, enlaces, otros alias) y busca recursivamente los nuevos identificadores. Genera informes HTML, PDF, XMind y JSON; ofrece interfaz web en Docker.",
+   "como_lo_hace": "Requiere Python 3.10+; se instala con `pip install maigret` (el extra `maigret[pdf]` añade PDF) o con Docker, incluida una imagen web. Puede usar FlareSolverr para sitios protegidos y ejecutarse en cuadernos o shells en la nube.",
+   "combina_con": [
+    {
+     "id": "theharvester",
+     "motivo": "theHarvester aporta correos y nombres de un dominio autorizado que después se investigan como alias con Maigret (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester; después pasa los identificadores a Maigret."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede leer el informe JSON de Maigret y resumir hallazgos y coincidencias dudosas (combinación por arquitectura).",
+     "orden_instalacion": "Genera el informe JSON; después pide al agente el resumen con verificación manual."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Los informes JSON o CSV de varias búsquedas se pueden consolidar y consultar con DuckDB (combinación por arquitectura).",
+     "orden_instalacion": "Exporta los informes; después consúltalos con DuckDB."
+    }
+   ],
+   "notas": "Alternativas (elige una): sherlock. El README incluye patrocinios de proxies y servicios de pago no necesarios para la herramienta.",
+   "fuentes": [
+    "https://github.com/soxoj/maigret/blob/main/README.md",
+    "https://maigret.readthedocs.io/"
+   ],
+   "github": {
+    "name_with_owner": "soxoj/maigret",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.6.6 (2026-09-18)"
+   }
+  },
+  "upscayl": {
+   "que_es": "Aplicación de código abierto (AGPL-3.0) del proyecto Upscayl. Muy popular y con versiones frecuentes (v2.15 según el README).",
+   "que_hace": "Amplía y mejora imágenes de baja resolución con modelos de IA, en modo individual o por lotes, con varios modelos incluidos y soporte de modelos personalizados.",
+   "como_lo_hace": "App Electron/TypeScript con backend upscayl-ncnn (Real-ESRGAN y Vulkan). Se instala con las releases, Flathub, Snap, AppImage o `brew install --cask upscayl`. Requiere una GPU compatible con Vulkan: muchas gráficas integradas y CPU no funcionan.",
+   "combina_con": [
+    {
+     "id": "real-esrgan",
+     "motivo": "Upscayl usa modelos y la arquitectura de Real-ESRGAN a través de su backend NCNN Vulkan.",
+     "orden_instalacion": "Nada que instalar aparte: los modelos vienen con Upscayl; Real-ESRGAN sirve para scripts o modelos propios."
+    },
+    {
+     "id": "gallery-dl",
+     "motivo": "Las colecciones descargadas con gallery-dl se pueden ampliar en lote con Upscayl (combinación por arquitectura).",
+     "orden_instalacion": "Descarga primero con gallery-dl; después procesa la carpeta en Upscayl."
+    },
+    {
+     "id": "codeformer",
+     "motivo": "Para retratos, CodeFormer restaura rostros antes o después de ampliar la imagen con Upscayl (combinación por arquitectura).",
+     "orden_instalacion": "Restaura con CodeFormer; después amplía con Upscayl y compara."
+    }
+   ],
+   "notas": "La IA inventa detalles plausibles: no uses el resultado como evidencia documental.",
+   "fuentes": [
+    "https://github.com/upscayl/upscayl/blob/main/README.md",
+    "https://upscayl.org"
+   ],
+   "github": {
+    "name_with_owner": "upscayl/upscayl",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.15.0 (2024-12-25)"
+   }
+  },
+  "handbrake": {
+   "que_es": "Transcodificador de vídeo de código abierto (GPL-2.0 en la mayoría de archivos) mantenido por el HandBrake Team desde 2003. Muy maduro.",
+   "que_hace": "Convierte vídeos de casi cualquier formato (cámaras, móviles, grabaciones de pantalla, DVD y Blu-ray sin protección) a formatos modernos para móviles, TV, consolas o navegador, con presets, recorte, escalado, filtros, subtítulos, capítulos y colas por lotes.",
+   "como_lo_hace": "Escrito en C con interfaces nativas para cada sistema y HandBrakeCLI; usa bibliotecas como FFmpeg (libav), x264, x265 y SVT-AV1. Se descarga desde handbrake.fr o se compila desde el código según su documentación.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "HandBrake se apoya en las bibliotecas de FFmpeg (libav) para decodificar y en códecs comunes; FFmpeg queda para operaciones que HandBrake no expone.",
+     "orden_instalacion": "Usa HandBrake para conversiones con presets; recurre a FFmpeg para tareas por script."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Las grabaciones de OBS Studio en MKV se convierten con HandBrake a MP4 de menor tamaño para publicarlas (combinación por arquitectura).",
+     "orden_instalacion": "Graba con OBS; después transcodifica con un preset de HandBrake."
+    },
+    {
+     "id": "lossless-cut",
+     "motivo": "LosslessCut recorta sin recodificar y HandBrake recodifica solo el resultado final (combinación por arquitectura).",
+     "orden_instalacion": "Recorta primero con LosslessCut; después convierte con HandBrake."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Convierte con HandBrake; después añade los archivos a la biblioteca.",
+     "reciproca_de": "jellyfin"
+    }
+   ],
+   "notas": "No elimina protecciones anticopia; respeta los derechos del material que conviertes.",
+   "fuentes": [
+    "https://github.com/HandBrake/HandBrake/blob/master/README.markdown",
+    "https://handbrake.fr/docs",
+    "https://github.com/HandBrake/HandBrake/blob/master/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "HandBrake/HandBrake",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.11.2 (2026-06-07)"
+   }
+  },
+  "ltx-2": {
+   "que_es": "Paquete oficial de inferencia y entrenador LoRA de Lightricks para el modelo audio-vídeo LTX-2, que alberga también LTX-2.5. El código es Apache-2.0 y los modelos tienen licencias propias. El README de LTX-Video (retirado del catálogo) lo indica como sucesor.",
+   "que_hace": "Genera vídeo con audio sincronizado a partir de texto o imagen con un único modelo DiT, con modos de rendimiento (pipeline destilado rápido y ruta DFR de calidad de producción), IC-LoRA para control y entrenamiento de LoRA propios. Incluye integración con ComfyUI.",
+   "como_lo_hace": "Se clona el repositorio y se instalan sus paquetes Python (el extra `natten`, más rápido, solo en Linux con CUDA). Los pesos y VAE se descargan de Hugging Face; para poca memoria documenta cuantización fp8 y descarga a CPU o disco. Necesita una GPU NVIDIA con mucha VRAM para resultados razonables.",
+   "combina_con": [
+    {
+     "id": "comfyui",
+     "motivo": "El README documenta la integración con ComfyUI para usar LTX-2 en flujos de nodos.",
+     "orden_instalacion": "Instala ComfyUI y los nodos de LTX; después descarga los pesos indicados."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Los clips generados se concatenan, recodifican o mezclan con FFmpeg para su publicación (combinación por arquitectura).",
+     "orden_instalacion": "Genera los clips; después procésalos con FFmpeg."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Los pipelines de LTX-2 se ejecutan sobre PyTorch con CUDA.",
+     "orden_instalacion": "Instala PyTorch con la versión de CUDA de tu GPU; después las dependencias de LTX-2."
+    }
+   ],
+   "notas": "Revisa las licencias de los pesos antes de uso comercial.",
+   "fuentes": [
+    "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+    "https://huggingface.co/Lightricks/LTX-2.5"
+   ],
+   "github": {
+    "name_with_owner": "Lightricks/LTX-2",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.6.2 (2026-11-12)"
+   }
+  },
+  "surya": {
+   "que_es": "Modelo y biblioteca de OCR de Datalab (autores de marker). El código es Apache-2.0 y los pesos usan una licencia Open Rail-M modificada con límites comerciales. Activo; la versión actual es un VLM único.",
+   "que_hace": "Hace OCR, análisis de layout (tablas, imágenes, encabezados, ecuaciones, formularios), orden de lectura y reconocimiento de tablas como HTML con colspan y rowspan, en más de 90 idiomas. El README cita puntuaciones altas en OmniParseBench y olmOCR-bench entre modelos abiertos de menos de 1B.",
+   "como_lo_hace": "`pip install surya-ocr` instala un cliente sin dependencias pesadas que arranca automáticamente el servidor de inferencia: vLLM en Docker o Podman para GPU NVIDIA, llama.cpp para CPU o Apple Silicon y, de forma experimental, mlx_vlm.",
+   "combina_con": [
+    {
+     "id": "vllm",
+     "motivo": "Surya usa vLLM en contenedor como servidor de inferencia por defecto en GPU NVIDIA.",
+     "orden_instalacion": "Docker o Podman con NVIDIA Container Toolkit; Surya lanza vLLM en el primer uso."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "En CPU o Apple Silicon Surya usa llama-server de llama.cpp como backend.",
+     "orden_instalacion": "Instala llama.cpp (p. ej. con Homebrew); después ejecuta Surya."
+    },
+    {
+     "id": "marker",
+     "motivo": "marker, del mismo equipo, usa los modelos de Surya para convertir PDF a Markdown.",
+     "orden_instalacion": "Instala marker; usará Surya para OCR y layout."
+    }
+   ],
+   "notas": "Para usos comerciales por encima de los umbrales de la licencia de pesos, contacta con Datalab.",
+   "fuentes": [
+    "https://github.com/datalab-to/surya/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "datalab-to/surya",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.24.0 (2026-11-13)"
+   }
+  },
+  "chakra-ui": {
+   "que_es": "Biblioteca de componentes de código abierto (MIT) mantenida por Segun Adebayo y la comunidad Chakra UI. Madura; la versión 3 es la actual y mantiene documentación de v2, v1 y v0.",
+   "que_hace": "Proporciona componentes React accesibles y componibles, un sistema de estilos con tokens, recetas y temas, modo oscuro y compatibilidad con React Server Components de Next.js. Ofrece documentación para IA, incluido un servidor MCP.",
+   "como_lo_hace": "Se instala con `npm i @chakra-ui/react @emotion/react` y se envuelve la app en su proveedor. La v3 se basa en Ark UI y Zag.js para la lógica accesible.",
+   "combina_con": [
+    {
+     "id": "storybook",
+     "motivo": "Los componentes Chakra se documentan en Storybook envolviendo las stories con su proveedor (combinación por arquitectura).",
+     "orden_instalacion": "Instala Storybook; después añade un decorador con el Provider de Chakra."
+    },
+    {
+     "id": "lucide",
+     "motivo": "Los iconos de Lucide se usan dentro de los componentes de Chakra como componentes React (combinación por arquitectura).",
+     "orden_instalacion": "Instala lucide-react; después pásalos como iconos a los componentes."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Chakra UI publica un servidor MCP con la documentación y ejemplos de sus componentes para asistentes de código.",
+     "orden_instalacion": "Configura el servidor MCP de Chakra en Claude Code; después pide componentes basados en la versión que usas."
+    }
+   ],
+   "notas": "Alternativas (elige una): mantine, mui.",
+   "fuentes": [
+    "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+    "https://chakra-ui.com/docs/get-started/ai/mcp-server"
+   ],
+   "github": {
+    "name_with_owner": "chakra-ui/chakra-ui",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "@chakra-ui/panda-preset@3.38.0 (2026-11-03)"
+   }
+  },
+  "mantine": {
+   "que_es": "Biblioteca de componentes de código abierto (MIT) creada por Vitaly Rtishchev y financiada por patrocinadores en Open Collective. Madura y muy activa.",
+   "que_hace": "Ofrece más de 100 componentes y 50 hooks, gestión de formularios, gráficos (Mantine Charts, sobre Recharts), selectores de fecha, notificaciones, editor de texto enriquecido, spotlight y modales, con temas y modo oscuro.",
+   "como_lo_hace": "Paquetes npm en TypeScript con estilos basados en CSS modules y variables CSS; plantillas para Next.js y Vite. Publica guías de integración (Storybook, entre otras) y documentación en formato llms.txt.",
+   "combina_con": [
+    {
+     "id": "storybook",
+     "motivo": "Mantine documenta una guía oficial para usar sus componentes en Storybook.",
+     "orden_instalacion": "Instala Storybook; después sigue la guía de Mantine para el tema."
+    },
+    {
+     "id": "recharts",
+     "motivo": "Mantine Charts está construido sobre Recharts.",
+     "orden_instalacion": "Instala @mantine/charts y recharts; después usa los componentes de gráficos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Mantine publica su documentación en formato llms.txt, útil como contexto para agentes de código (combinación por arquitectura).",
+     "orden_instalacion": "Añade la URL de llms.txt al contexto del agente; después pide los componentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): chakra-ui, mui.",
+   "fuentes": [
+    "https://github.com/mantinedev/mantine/blob/master/README.md",
+    "https://mantine.dev/guides/storybook/",
+    "https://mantine.dev/llms.txt"
+   ],
+   "github": {
+    "name_with_owner": "mantinedev/mantine",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "9.8.1 (2026-11-15)"
+   }
+  },
+  "evidence": {
+   "que_es": "Herramienta de BI de código abierto (MIT) de Evidence (evidence.dev), con plataforma de publicación comercial (Evidence Studio). Activa.",
+   "que_hace": "Alternativa basada en código a las herramientas de BI de arrastrar y soltar: los informes se escriben con SQL y Markdown, con gráficos, tablas, filtros y páginas parametrizadas. Se desarrolla con su agente o en local con Claude Code, Cursor u otros, y se autoaloja o publica en Evidence Studio.",
+   "como_lo_hace": "Se instala con `curl -fsSL https://evidence.studio/install.sh | sh` en macOS/Linux (instalador para Windows aparte). Conecta con bases como PostgreSQL, Snowflake, BigQuery o archivos, y usa DuckDB para combinar los resultados.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Evidence usa DuckDB como motor para combinar y consultar las fuentes de datos de los informes.",
+     "orden_instalacion": "Nada que instalar aparte; añade archivos o bases como fuentes del proyecto."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README indica que los informes pueden desarrollarse en local con Claude Code, al ser archivos SQL y Markdown.",
+     "orden_instalacion": "Crea el proyecto de Evidence; después pide al agente páginas y consultas nuevas."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Una base PostgreSQL de Supabase puede ser fuente de datos de Evidence mediante su conector PostgreSQL (combinación por arquitectura).",
+     "orden_instalacion": "Crea un usuario de solo lectura en Supabase; después configura la fuente en Evidence."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: metabase, superset.",
+   "fuentes": [
+    "https://github.com/evidence-dev/evidence/blob/main/README.md",
+    "https://docs.evidence.studio"
+   ],
+   "github": {
+    "name_with_owner": "evidence-dev/evidence",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "@evidence-dev/evidence@40.1.8 (2026-02-06)"
+   }
+  },
+  "qgis": {
+   "que_es": "SIG de escritorio de código abierto (GPL-2.0 o posterior) desarrollado por la comunidad QGIS y miembro de OSGeo. Muy maduro, con versiones LTR y regulares.",
+   "que_hace": "Gestiona datos espaciales vectoriales, ráster, nubes de puntos y mallas; crea cartografía de calidad, ejecuta análisis geoespacial con su caja de herramientas de procesamiento y se amplía con plugins y scripts en Python. QGIS Server publica mapas como servicios OGC.",
+   "como_lo_hace": "Escrito en C++ con Qt; usa GDAL/OGR, PROJ y GEOS. Se instala desde qgis.org para Windows, macOS y Linux, o con imágenes Docker; la API PyQGIS permite automatizar tareas.",
+   "combina_con": [
+    {
+     "id": "leaflet",
+     "motivo": "Las capas preparadas en QGIS se exportan como GeoJSON o teselas para mapas web con Leaflet (combinación por arquitectura).",
+     "orden_instalacion": "Prepara y exporta en QGIS; después cárgalas en Leaflet."
+    },
+    {
+     "id": "maplibre",
+     "motivo": "QGIS puede generar teselas vectoriales que MapLibre muestra en la web (combinación por arquitectura).",
+     "orden_instalacion": "Genera las teselas desde QGIS; después configura la fuente en MapLibre."
+    },
+    {
+     "id": "webodm",
+     "motivo": "Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura).",
+     "orden_instalacion": "Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "DuckDB con su extensión espacial prepara GeoParquet o tablas espaciales que QGIS abre directamente (combinación por arquitectura).",
+     "orden_instalacion": "Exporta desde DuckDB a GeoParquet o GeoPackage; después cárgalo en QGIS."
+    }
+   ],
+   "notas": "Curva de aprendizaje alta para análisis avanzado; la documentación oficial y los tutoriales de la comunidad son amplios.",
+   "fuentes": [
+    "https://github.com/qgis/QGIS/blob/master/README.md",
+    "https://qgis.org"
+   ],
+   "github": {
+    "name_with_owner": "qgis/QGIS",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "final-3_44_15 (2026-09-25)"
+   }
+  },
+  "deck.gl": {
+   "que_es": "Framework de visualización de código abierto (MIT) del grupo vis.gl de la OpenJS Foundation, creado originalmente en Uber. Maduro y activo.",
+   "que_hace": "Renderiza de forma eficiente grandes conjuntos de datos mediante capas componibles, con selección, resaltado y filtrado interactivo, proyecciones cartográficas e integración con proveedores de mapas base. Incluye un catálogo amplio de capas probadas y se extiende con capas propias.",
+   "como_lo_hace": "Escrito en TypeScript sobre luma.gl (WebGL2/WebGPU); se usa por script, npm, con React o desde Python con pydeck en Jupyter. Se integra con MapLibre, Mapbox y Google Maps como mapa base.",
+   "combina_con": [
+    {
+     "id": "maplibre",
+     "motivo": "deck.gl se integra con MapLibre GL JS como mapa base, intercalando sus capas con las del estilo.",
+     "orden_instalacion": "Crea el mapa MapLibre; después añade las capas de deck.gl como overlay."
+    },
+    {
+     "id": "kepler.gl",
+     "motivo": "kepler.gl está construido sobre deck.gl y MapLibre.",
+     "orden_instalacion": "Usa kepler.gl para exploración sin código y deck.gl para visualizaciones a medida."
+    },
+    {
+     "id": "superset",
+     "motivo": "Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales.",
+     "orden_instalacion": "Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "pydeck, el binding de Python de deck.gl, muestra mapas interactivos en cuadernos Jupyter.",
+     "orden_instalacion": "Instala pydeck en el entorno de JupyterLab; después renderiza las capas en una celda."
+    },
+    {
+     "id": "panel",
+     "motivo": "Combinación recíproca: Panel lo enlaza como «Panel incluye un pane DeckGL para mostrar visualizaciones geoespaciales de deck.gl».",
+     "orden_instalacion": "Orden indicado desde Panel: Instala Panel; después usa `pn.pane.DeckGL` con la especificación de deck.gl.",
+     "reciproca_de": "panel"
+    }
+   ],
+   "notas": "Para mapas base comerciales revisa las condiciones y claves del proveedor.",
+   "fuentes": [
+    "https://github.com/visgl/deck.gl/blob/master/README.md",
+    "https://deck.gl/docs",
+    "https://superset.apache.org/docs/configuration/map-tiles/"
+   ],
+   "github": {
+    "name_with_owner": "visgl/deck.gl",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v9.3.12 (2026-10-30)"
+   }
+  },
+  "maplibre": {
+   "que_es": "Biblioteca de código abierto (BSD-3-Clause) de la organización MapLibre, creada como fork de mapbox-gl-js cuando este pasó a una licencia no libre en diciembre de 2020. Madura y con amplio respaldo.",
+   "que_hace": "Publica mapas interactivos en webs y webviews con teselas vectoriales renderizadas en GPU, estilos personalizables, etiquetas, terreno 3D, rotación e inclinación, y una API de capas, fuentes y eventos.",
+   "como_lo_hace": "Escrito en TypeScript con WebGL2; se carga desde npm (`maplibre-gl`) o CDN. Necesita una fuente de teselas y un estilo (propios o de un proveedor compatible); el proyecto prohíbe retroportar código de Mapbox posterior al cambio de licencia.",
+   "combina_con": [
+    {
+     "id": "deck.gl",
+     "motivo": "deck.gl se integra con MapLibre como mapa base para añadir capas de datos en GPU.",
+     "orden_instalacion": "Crea el mapa MapLibre; después añade el overlay de deck.gl."
+    },
+    {
+     "id": "kepler.gl",
+     "motivo": "kepler.gl usa MapLibre GL como motor de mapa base.",
+     "orden_instalacion": "Instala kepler.gl junto a maplibre-gl según su guía."
+    },
+    {
+     "id": "qgis",
+     "motivo": "QGIS genera teselas vectoriales y datos que MapLibre publica en la web (combinación por arquitectura).",
+     "orden_instalacion": "Prepara y exporta desde QGIS; después configura las fuentes en MapLibre."
+    }
+   ],
+   "notas": "Alternativas (elige una): leaflet.",
+   "fuentes": [
+    "https://github.com/maplibre/maplibre-gl-js/blob/main/README.md",
+    "https://maplibre.org/maplibre-gl-js/docs/"
+   ],
+   "github": {
+    "name_with_owner": "maplibre/maplibre-gl-js",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.18.0 (2026-11-11)"
+   }
+  },
+  "kepler.gl": {
+   "que_es": "Aplicación de análisis geoespacial de código abierto (MIT), creada en Uber y hoy proyecto de la OpenJS Foundation dentro del ecosistema vis.gl. Activa.",
+   "que_hace": "Permite explorar visualmente grandes conjuntos de datos de geolocalización: capas de puntos, arcos, hexágonos, rutas y polígonos, filtros, animación temporal y exportación de mapas. Se usa como app web, componente React incrustable y widget de Jupyter, y documenta integración con asistentes de IA y MCP.",
+   "como_lo_hace": "Escrito en TypeScript con React y Redux sobre deck.gl y MapLibre GL; se instala con `npm install --save @kepler.gl/components maplibre-gl` o se usa la demo pública, que procesa los datos en el navegador.",
+   "combina_con": [
+    {
+     "id": "deck.gl",
+     "motivo": "kepler.gl se construye sobre deck.gl para el renderizado de sus capas.",
+     "orden_instalacion": "Usa kepler.gl para explorar y deck.gl para llevar la visualización a una app propia."
+    },
+    {
+     "id": "maplibre",
+     "motivo": "kepler.gl usa MapLibre GL como mapa base.",
+     "orden_instalacion": "Instala maplibre-gl junto a los componentes de kepler.gl."
+    },
+    {
+     "id": "jupyterlab",
+     "motivo": "kepler.gl ofrece un widget de Jupyter documentado para explorar DataFrames en cuadernos.",
+     "orden_instalacion": "Instala el widget de kepler.gl en el entorno de JupyterLab; después pásale los datos."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README dedica una sección a asistentes de IA y MCP para que los agentes creen y manipulen mapas de kepler.gl.",
+     "orden_instalacion": "Sigue la sección de MCP del README; después registra el servidor en Claude Code."
+    }
+   ],
+   "notas": "La demo procesa los datos en el navegador; revisa memoria con conjuntos muy grandes.",
+   "fuentes": [
+    "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+    "https://docs.kepler.gl/"
+   ],
+   "github": {
+    "name_with_owner": "keplergl/kepler.gl",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.3.0-alpha.21 (2026-11-13)"
+   }
+  },
+  "theharvester": {
+   "que_es": "Herramienta OSINT de código abierto (solo GPL-2.0) creada por Christian Martorella (laramies) y mantenida por la comunidad desde hace años. Activa; requiere Python 3.14 y uv.",
+   "que_hace": "Recoge inteligencia de fuentes abiertas sobre un dominio u organización: correos, nombres, subdominios, IP y URL, a partir de buscadores, logs de certificados, conjuntos DNS, repositorios de código y plataformas de inteligencia de amenazas. Pensada para la fase temprana de reconocimiento de una evaluación autorizada.",
+   "como_lo_hace": "Escrito en Python; se ejecuta con `uv sync` y `uv run theHarvester -d <dominio> -b <fuentes>`. Muchas fuentes necesitan claves de API; incluye API REST y Docker Compose.",
+   "combina_con": [
+    {
+     "id": "sherlock",
+     "motivo": "Los alias encontrados por theHarvester se pueden buscar en redes sociales con Sherlock (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester sobre el dominio autorizado; después pasa los alias a Sherlock."
+    },
+    {
+     "id": "maigret",
+     "motivo": "Los nombres y alias recogidos alimentan dossiers por usuario con Maigret (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester; después investiga los identificadores con Maigret."
+    },
+    {
+     "id": "katana",
+     "motivo": "Los hosts y subdominios descubiertos se rastrean con Katana para listar sus endpoints (combinación por arquitectura).",
+     "orden_instalacion": "Exporta los hosts de theHarvester; después pásalos a Katana dentro del alcance autorizado."
+    },
+    {
+     "id": "recon-ng",
+     "motivo": "Combinación recíproca: Recon-ng lo enlaza como «theHarvester aporta correos y subdominios que se pueden importar como semillas en un espacio de trabajo de Recon-ng (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Recon-ng: Ejecuta theHarvester; después importa los resultados en Recon-ng.",
+     "reciproca_de": "recon-ng"
+    }
+   ],
+   "notas": "Alternativa cercana: recon-ng (framework modular de reconocimiento).",
+   "fuentes": [
+    "https://github.com/laramies/theHarvester/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "laramies/theHarvester",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "4.11.1 (2026-06-03)"
+   }
+  },
+  "recon-ng": {
+   "que_es": "Framework de reconocimiento de código abierto (GPL-3.0) creado por Tim Tomes (lanmaster53). Maduro, con ritmo de cambios bajo (último push en octubre de 2026).",
+   "que_hace": "Ofrece un entorno para hacer reconocimiento basado en fuentes abiertas de forma rápida y ordenada: módulos de descubrimiento, reconocimiento, informes e importación, espacios de trabajo con base de datos, claves de API centralizadas e informes.",
+   "como_lo_hace": "Escrito en Python; se instala clonando el repositorio y sus requisitos. Los módulos se instalan desde un marketplace aparte; la interfaz recuerda a Metasploit y tiene también una interfaz web para informes.",
+   "combina_con": [
+    {
+     "id": "theharvester",
+     "motivo": "theHarvester aporta correos y subdominios que se pueden importar como semillas en un espacio de trabajo de Recon-ng (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta theHarvester; después importa los resultados en Recon-ng."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "La base SQLite de cada espacio de trabajo se puede consultar con DuckDB para cruzar resultados (combinación por arquitectura).",
+     "orden_instalacion": "Localiza la base del espacio de trabajo; después ábrela en DuckDB en solo lectura."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede escribir módulos nuevos en Python siguiendo la guía de desarrollo del framework (combinación por arquitectura).",
+     "orden_instalacion": "Lee la guía de desarrollo; después pide al agente el módulo y pruébalo en un espacio de trabajo aislado."
+    }
+   ],
+   "notas": "Ritmo de mantenimiento bajo: comprueba que los módulos que necesitas siguen funcionando.",
+   "fuentes": [
+    "https://github.com/lanmaster53/recon-ng/blob/master/README.md",
+    "https://github.com/lanmaster53/recon-ng/wiki"
+   ],
+   "github": {
+    "name_with_owner": "lanmaster53/recon-ng",
+    "archived": false,
+    "pushed_at": "2026-10-05",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "chainner": {
+   "que_es": "Aplicación de código abierto (GPL-3.0) de la organización chaiNNer, nacida como herramienta de escalado con IA. Activa y multiplataforma.",
+   "que_hace": "Permite construir flujos de procesamiento de imágenes conectando nodos: escalado y restauración con modelos de IA, ajustes de color, conversión de formatos, iteración sobre carpetas y procesamiento por lotes, con control total del pipeline.",
+   "como_lo_hace": "Se instala con las releases; descarga un Python integrado y las dependencias (PyTorch, ONNX, NCNN, TensorRT) desde su gestor. Soporta GPU NVIDIA (CUDA y TensorRT), AMD (ROCm en Linux o NCNN) e Intel (NCNN). Carga modelos mediante la biblioteca spandrel.",
+   "combina_con": [
+    {
+     "id": "real-esrgan",
+     "motivo": "chaiNNer carga modelos de superresolución de la familia ESRGAN/Real-ESRGAN en sus nodos.",
+     "orden_instalacion": "Descarga el modelo compatible; después usa el nodo de carga de modelo y el de escalado."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "La ruta principal de inferencia de chaiNNer en GPU NVIDIA es PyTorch con CUDA.",
+     "orden_instalacion": "Instala PyTorch desde el gestor de dependencias de chaiNNer."
+    },
+    {
+     "id": "codeformer",
+     "motivo": "Los modelos de restauración facial que soporta chaiNNer (vía spandrel) se encadenan con el escalado; CodeFormer sirve para comparar resultados en retratos (combinación por arquitectura).",
+     "orden_instalacion": "Restaura con CodeFormer o un modelo facial compatible; después escala en chaiNNer."
+    }
+   ],
+   "notas": "Algunos usuarios de NCNN con GPU no NVIDIA obtienen salidas negras por falta de memoria, según el README.",
+   "fuentes": [
+    "https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md",
+    "https://github.com/chaiNNer-org/spandrel"
+   ],
+   "github": {
+    "name_with_owner": "chaiNNer-org/chaiNNer",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.26.1 (2026-10-27)"
+   }
+  },
+  "shotcut": {
+   "que_es": "Editor de vídeo de código abierto (GPL-3.0) cuyo autor principal es Dan Dennedy, también mantenedor de MLT. Maduro, con versiones regulares para Windows, macOS y Linux.",
+   "que_hace": "Ofrece edición en línea de tiempo con múltiples pistas, filtros de vídeo y audio, transiciones, fotogramas clave, corrección de color, soporte nativo de muchos formatos sin importación, captura y exportación con presets, y generación de subtítulos por reconocimiento de voz.",
+   "como_lo_hace": "Escrito en C++ con Qt y QML sobre MLT, con FFmpeg, frei0r y otras bibliotecas como dependencias. Se descarga como binario desde shotcut.org; la función de voz a texto descarga modelos Whisper.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Shotcut depende de las bibliotecas de FFmpeg (a través de MLT) para leer y codificar formatos.",
+     "orden_instalacion": "Viene incluido en los binarios; usa FFmpeg aparte solo para tareas por script."
+    },
+    {
+     "id": "whisper-cpp",
+     "motivo": "Shotcut incluye una extensión de modelos Whisper para su función de voz a texto y subtítulos.",
+     "orden_instalacion": "Descarga el modelo desde Shotcut; después genera subtítulos desde el menú correspondiente."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Las grabaciones de OBS Studio se editan en Shotcut antes de publicarlas (combinación por arquitectura).",
+     "orden_instalacion": "Graba con OBS; después importa los archivos en Shotcut."
+    }
+   ],
+   "notas": "Alternativas (elige una): kdenlive, opencut.",
+   "fuentes": [
+    "https://github.com/mltframework/shotcut/blob/master/README.md",
+    "https://github.com/mltframework/shotcut/blob/master/src/qml/extensions/whispermodel.qml",
+    "https://www.shotcut.org/features/"
+   ],
+   "github": {
+    "name_with_owner": "mltframework/shotcut",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v26.9.27 (2026-09-28)"
+   }
+  },
+  "kdenlive": {
+   "que_es": "Editor de vídeo de código abierto (GPL-3.0 según GitHub) desarrollado por la comunidad KDE. El repositorio de GitHub es un espejo: el desarrollo canónico vive en invent.kde.org (multimedia/kdenlive). Maduro, con versiones trimestrales.",
+   "que_hace": "Edición no lineal con múltiples pistas, efectos y transiciones, keyframes, titulación, corrección de color, clips proxy para equipos modestos, edición de audio y generación de subtítulos con reconocimiento de voz.",
+   "como_lo_hace": "Escrito en C++ con Qt, KDE Frameworks y MLT (que usa FFmpeg). Se instala desde kdenlive.org (Windows, macOS, AppImage, Flatpak) o repositorios de distribución; la voz a texto requiere instalar Whisper o VOSK desde la configuración.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Kdenlive usa FFmpeg a través de MLT para decodificar y renderizar.",
+     "orden_instalacion": "Viene con los paquetes oficiales; comprueba la versión en la configuración si fallan códecs."
+    },
+    {
+     "id": "whisper",
+     "motivo": "La función de voz a texto de Kdenlive puede usar Whisper para generar subtítulos.",
+     "orden_instalacion": "Instala Whisper desde la configuración de voz a texto; después genera los subtítulos."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Las grabaciones de OBS Studio se montan en Kdenlive (combinación por arquitectura).",
+     "orden_instalacion": "Graba con OBS; después importa los clips en Kdenlive."
+    }
+   ],
+   "notas": "Alternativas (elige una): shotcut, opencut. Reporta incidencias y contribuye en invent.kde.org, no en el espejo de GitHub.",
+   "fuentes": [
+    "https://github.com/KDE/kdenlive/blob/master/README.md",
+    "https://docs.kdenlive.org/en/effects_and_filters/speech_to_text.html",
+    "https://invent.kde.org/multimedia/kdenlive"
+   ],
+   "origen": {
+    "host": "KDE Invent (GitLab)",
+    "name_with_owner": "multimedia/kdenlive",
+    "url": "https://invent.kde.org/multimedia/kdenlive",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "latest_release": "v26.08.3 (2026-11-03)",
+    "license": "GPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16"
+   },
+   "github": {
+    "name_with_owner": "KDE/kdenlive",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "xberg": {
+   "que_es": "Motor de inteligencia documental de código abierto (MIT) de xberg-io. Es la nueva iteración de Kreuzberg, reconstruida y renombrada en una línea v1; la API de GitHub redirige el repositorio original a este nombre. Muy activo.",
+   "que_hace": "Extrae texto limpio, tablas, metadatos y datos estructurados de 107 formatos (PDF, Office, imágenes, HTML, correo, e-books, publicaciones científicas, código fuente), recorre archivos comprimidos anidados con límites de seguridad, descarga y rastrea URL, transcribe audio y vídeo, aplica OCR bajo demanda y genera embeddings.",
+   "como_lo_hace": "Núcleo en Rust; se instala con `pip install xberg`, npm, Homebrew, Docker o Helm, y funciona en CPU sin GPU. Ofrece biblioteca, CLI de 14 comandos, API REST (`xberg serve`), servidor MCP y skills de agente (`npx skills add xberg-io/xberg`).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Xberg publica skills de agente (`npx skills add xberg-io/xberg`) y un servidor MCP para extraer documentos desde agentes de código.",
+     "orden_instalacion": "Instala Xberg; después añade la skill o registra su servidor MCP en Claude Code."
+    },
+    {
+     "id": "tesseract",
+     "motivo": "Tesseract es uno de los motores de OCR que Xberg usa bajo demanda para documentos escaneados.",
+     "orden_instalacion": "Instala Tesseract y sus idiomas; después activa el backend en la configuración."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Los fragmentos y embeddings que genera Xberg se pueden indexar en Qdrant para búsqueda semántica (combinación por arquitectura).",
+     "orden_instalacion": "Extrae y vectoriza con Xberg; después sube los puntos a una colección de Qdrant."
+    }
+   ],
+   "notas": "Alternativas (elige una): tika, unstructured. Proyectos que usaban Kreuzberg deben revisar la migración a la línea v1 de Xberg; la rama Kreuzberg v4 LTS sigue en kreuzberg-dev.",
+   "fuentes": [
+    "https://github.com/xberg-io/xberg/blob/main/README.md",
+    "https://docs.xberg.io"
+   ],
+   "github": {
+    "name_with_owner": "xberg-io/xberg",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.4.0 (2026-11-13)"
+   }
+  },
+  "tika": {
+   "que_es": "Proyecto de la Apache Software Foundation (Apache-2.0), referencia histórica en extracción de contenido. Muy maduro; la serie 4.x se orienta a pipelines de agentes.",
+   "que_hace": "Detecta el tipo y extrae texto y metadatos de más de mil formatos (PPT, XLS, PDF, imágenes, correos, archivos comprimidos). La versión 4 emite Markdown por defecto, analiza en procesos aislados ante fallos y añade parsers con modelos de visión para documentos difíciles.",
+   "como_lo_hace": "Escrito en Java; se usa como biblioteca Maven, aplicación o tika-server por REST (también en Docker). El OCR clásico usa Tesseract instalado en el sistema; los parsers VLM necesitan credenciales del proveedor.",
+   "combina_con": [
+    {
+     "id": "tesseract",
+     "motivo": "Tika usa Tesseract como motor de OCR para imágenes y PDF escaneados.",
+     "orden_instalacion": "Instala Tesseract y sus idiomas en el sistema o la imagen; después activa el parser de OCR."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Paperless-ngx usa Apache Tika (con Gotenberg) para procesar documentos de Office y correos.",
+     "orden_instalacion": "Despliega tika-server junto a Paperless-ngx y habilita su integración en la configuración."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README de Tika incluye una sección para usarlo desde agentes de IA, con salida Markdown estructurada.",
+     "orden_instalacion": "Arranca tika-server; después indica al agente cómo llamar al endpoint de extracción."
+    }
+   ],
+   "notas": "Alternativas (elige una): xberg, unstructured. Tika incluye subcomponentes con licencias propias (ver LICENSE).",
+   "fuentes": [
+    "https://github.com/apache/tika/blob/main/README.md",
+    "https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/configuration.md"
+   ],
+   "github": {
+    "name_with_owner": "apache/tika",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16"
+   }
+  }
+ }
+}

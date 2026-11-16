@@ -26,7 +26,7 @@ Usa Puppeteer para abrir WhatsApp Web en un navegador administrado y llamar a su
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Tu servicio con la librería reenvía cada mensaje a un webhook de n8n, que decide la respuesta y la devuelve por HTTP (combinación por arquitectura). | Expón un endpoint propio para enviar y apunta los eventos al webhook de n8n; protege ambos con autenticación. |
+| [activepieces](activepieces.md) | Tu servicio con la librería reenvía cada mensaje a un webhook de Activepieces, que decide la respuesta y la devuelve por HTTP (combinación por arquitectura). | Expón un endpoint propio para enviar y apunta los eventos al webhook de Activepieces; protege ambos con autenticación. |
 | [Ollama](ollama.md) | Responder mensajes con un modelo local, sin coste por token ni datos enviados a terceros (combinación por arquitectura). | Ollama primero con el modelo descargado; llama a su API REST desde el manejador de mensajes. |
 | [chatwoot](chatwoot.md) | Llevar las conversaciones a una bandeja humana usando la API de Chatwoot (combinación por arquitectura; no hay integración nativa documentada). | Chatwoot primero; crea una bandeja de API y sincroniza los mensajes desde tu servicio. |
 

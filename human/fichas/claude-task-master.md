@@ -30,7 +30,7 @@ Se usa como servidor MCP (recomendado: `claude mcp add taskmaster-ai -- npx -y t
 | [Codex CLI](codex.md) | Proveedor vía OAuth de ChatGPT. | Instala Codex CLI e inicia sesión. |
 | [OpenCode](opencode.md) | Cliente MCP genérico. (combinación por arquitectura) | Añade el servidor MCP. |
 
-**Notas:** Sin alternativas declaradas; se solapa con spec-kit (solo anotado). Actividad reciente baja.
+**Notas:** Alternativa (elige una): spec-kit. Actividad reciente baja.
 
 Estado en GitHub: activo · último push 2026-04-28 · última versión publicada task-master-ai@0.43.1 (2026-03-31) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -108,6 +108,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio
 - **Etiquetas:** `infra` `agent` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
 
 ## Enlaces
 
