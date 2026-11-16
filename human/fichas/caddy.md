@@ -33,6 +33,12 @@ Escrito en Go; un único binario para cualquier plataforma, paquetes o Docker. S
 | [Synapse](synapse.md) | Combinación recíproca: Synapse lo enlaza como «Caddy sirve como proxy inverso con TLS y delegación .well-known para Synapse (combinación por arquitectura)». | Orden indicado desde Synapse: Synapse en local; después configura reverse_proxy en Caddy. |
 | [WireGuard Easy](wg-easy.md) | Combinación recíproca: WireGuard Easy lo enlaza como «Caddy publica la interfaz web de wg-easy con HTTPS (combinación por arquitectura)». | Orden indicado desde WireGuard Easy: wg-easy en local; después configura reverse_proxy en Caddy. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP CRS](coreruleset.md)
+
 **Notas:** Alternativas (elige una): traefik.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v2.11.9 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-16).

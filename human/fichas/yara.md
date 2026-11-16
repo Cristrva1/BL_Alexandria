@@ -31,6 +31,12 @@ Se instala por paquetes o compilando desde fuente; se integra en sandboxes y MIS
 | [MISP](misp.md) | Publica reglas YARA como objetos MISP. | Exporta la regla al evento MISP. |
 | [Volatility 3](volatility3.md) | Combinación recíproca: Volatility 3 lo enlaza como «Escaneo YARA sobre regiones de memoria con plugins». | Orden indicado desde Volatility 3: Carga reglas YARA en el plugin adecuado. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[capa](capa.md) · [LOKI](loki.md)
+
 Estado en GitHub: activo · último push 2026-10-27 · última versión publicada v4.6.0 (2026-10-27) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/VirusTotal/yara#readme) · [2](https://virustotal.github.io/yara/)</sub>

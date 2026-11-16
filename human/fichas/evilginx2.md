@@ -30,6 +30,12 @@ Release Go + dominio/DNS controlados; phishlets YAML por proveedor.
 | [Wazuh](wazuh.md) | Valida si el SOC detecta el patrón de proxy. | Ejecuta el ejercicio; revisa alertas Wazuh. |
 | [Atomic Red Team](atomic-red-team.md) | Complementa con atomics de phishing/inicial access. | Atomic + Evilginx2 en purple team. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[SET](social-engineer-toolkit.md)
+
 Estado en GitHub: activo · último push 2026-06-10 · última versión publicada v3.3.0 (2024-04-02) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kgretzky/evilginx2#readme)</sub>

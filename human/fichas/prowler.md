@@ -33,9 +33,9 @@ CLI con `pip install prowler` o Docker; los productos Cloud se contratan aparte 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Pacu](pacu.md)
+[Pacu](pacu.md) · [ScubaGear](scubagear.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 5.50.0 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 

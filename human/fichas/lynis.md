@@ -32,6 +32,12 @@ Script de shell sin dependencias ni instalación obligatoria; se ejecuta desde e
 | [Prowler](prowler.md) | Combinación recíproca: Prowler lo enlaza como «Lynis endurece el host; Prowler la nube». | Orden indicado desde Prowler: Audita VMs con Lynis y cuentas con Prowler. |
 | [PEASS-ng](peass-ng.md) | Combinación recíproca: PEASS-ng lo enlaza como «Lynis endurece; PEASS encuentra lo explotable». | Orden indicado desde PEASS-ng: Audita con Lynis; valida con PEASS en lab. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ScubaGear](scubagear.md)
+
 **Notas:** Las sugerencias son genéricas; valida cada cambio antes de aplicarlo en producción.
 
 Estado en GitHub: activo · último push 2026-09-16 · última versión publicada 3.1.7 (2026-06-25) · licencia declarada GPL-3.0 (consultado el 2026-11-16).

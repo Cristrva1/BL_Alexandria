@@ -30,6 +30,12 @@ Es un servidor Rust que usa SQLite por defecto y admite MySQL/MariaDB o PostgreS
 | [coolify](coolify.md) | Desplegar Vaultwarden como servicio de un clic con proxy y certificados (Coolify documenta el servicio Vaultwarden). | Instala Coolify, añade el servicio y asigna un dominio con HTTPS. |
 | [AdGuardHome](adguardhome.md) | Resolver un nombre local para el vault en la red de casa con reescrituras DNS. (combinación por arquitectura) | Crea la reescritura DNS hacia tu proxy inverso y emite el certificado para ese nombre. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[HashiCorp Vault](vault.md)
+
 **Notas:** Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.37.5 (2026-11-01) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
@@ -101,6 +107,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia
 - **Etiquetas:** `privacidad` `server` `rust`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [KeePassXC](keepassxc.md) | 30k | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. |
 
 ## Enlaces
 

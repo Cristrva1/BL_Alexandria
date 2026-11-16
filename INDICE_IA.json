@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 862 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 887 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -684,7 +684,7 @@
      "title": "Aprendizaje asistido"
     }
    ],
-   "count": 44,
+   "count": 48,
    "question": "¿Quieres organizar tus notas, archivos o servicios personales?"
   },
   {
@@ -751,7 +751,7 @@
      "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 92,
+   "count": 113,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -20565,7 +20565,9 @@
    "lib": false,
    "pick": false,
    "one": "Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia.",
-   "alt": [],
+   "alt": [
+    "keepassxc"
+   ],
    "stars": 70740,
    "github_id": 121898717,
    "gh": "dani-garcia/vaultwarden",
@@ -29334,7 +29336,9 @@
    "lib": false,
    "pick": false,
    "one": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
-   "alt": [],
+   "alt": [
+    "fail2ban"
+   ],
    "doc": "human/fichas/crowdsec.md",
    "github_id": 264154402,
    "lang": "Go",
@@ -29486,7 +29490,9 @@
    "lib": false,
    "pick": false,
    "one": "Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
-   "alt": [],
+   "alt": [
+    "caido"
+   ],
    "doc": "human/fichas/zaproxy.md",
    "github_id": 36817565,
    "lang": "Java",
@@ -34719,6 +34725,871 @@
    "routes": [
     "no_api"
    ]
+  },
+  {
+   "id": "sleuthkit",
+   "name": "The Sleuth Kit",
+   "cat": 16,
+   "sub": "ir-forense",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 3198,
+   "gh": "sleuthkit/sleuthkit",
+   "lib": false,
+   "pick": false,
+   "one": "Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
+   "alt": [
+    "autopsy"
+   ],
+   "doc": "human/fichas/sleuthkit.md",
+   "github_id": 2562873,
+   "lang": "C",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "autopsy",
+   "name": "Autopsy",
+   "cat": 16,
+   "sub": "ir-forense",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 3453,
+   "gh": "sleuthkit/autopsy",
+   "lib": false,
+   "pick": false,
+   "one": "GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
+   "alt": [
+    "sleuthkit"
+   ],
+   "doc": "human/fichas/autopsy.md",
+   "github_id": 2516243,
+   "lang": "Java",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "capa",
+   "name": "capa",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 6338,
+   "gh": "mandiant/capa",
+   "lib": false,
+   "pick": false,
+   "one": "Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…) mediante reglas y análisis estático.",
+   "alt": [],
+   "doc": "human/fichas/capa.md",
+   "github_id": 272815213,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pwntools",
+   "name": "pwntools",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 13867,
+   "gh": "Gallopsled/pwntools",
+   "lib": false,
+   "pick": false,
+   "one": "Framework Python para CTF y desarrollo de exploits: tubos, packing, ROP y utilidades de binarios.",
+   "alt": [],
+   "doc": "human/fichas/pwntools.md",
+   "github_id": 9750233,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pwndbg",
+   "name": "pwndbg",
+   "cat": 16,
+   "sub": "depuracion",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 11213,
+   "gh": "pwndbg/pwndbg",
+   "lib": false,
+   "pick": false,
+   "one": "Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más.",
+   "alt": [],
+   "doc": "human/fichas/pwndbg.md",
+   "github_id": 31181767,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "aflplusplus",
+   "name": "AFL++",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 6887,
+   "gh": "AFLplusplus/AFLplusplus",
+   "lib": false,
+   "pick": false,
+   "one": "Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado.",
+   "alt": [],
+   "doc": "human/fichas/aflplusplus.md",
+   "github_id": 189044704,
+   "lang": "C",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "syzkaller",
+   "name": "syzkaller",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 6415,
+   "gh": "google/syzkaller",
+   "lib": false,
+   "pick": false,
+   "one": "Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada.",
+   "alt": [],
+   "doc": "human/fichas/syzkaller.md",
+   "github_id": 44087204,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "aircrack-ng",
+   "name": "Aircrack-ng",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 7922,
+   "gh": "aircrack-ng/aircrack-ng",
+   "lib": false,
+   "pick": false,
+   "one": "Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas.",
+   "alt": [],
+   "doc": "human/fichas/aircrack-ng.md",
+   "github_id": 124678204,
+   "lang": "C",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "bettercap",
+   "name": "bettercap",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 20303,
+   "gh": "bettercap/bettercap",
+   "lib": false,
+   "pick": false,
+   "one": "Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita.",
+   "alt": [],
+   "doc": "human/fichas/bettercap.md",
+   "github_id": 116576783,
+   "lang": "Go",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "thc-hydra",
+   "name": "THC Hydra",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 12516,
+   "gh": "vanhauser-thc/thc-hydra",
+   "lib": false,
+   "pick": false,
+   "one": "Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con autorización explícita.",
+   "alt": [],
+   "doc": "human/fichas/thc-hydra.md",
+   "github_id": 19112091,
+   "lang": "C",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "fail2ban",
+   "name": "Fail2ban",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 19026,
+   "gh": "fail2ban/fail2ban",
+   "lib": false,
+   "pick": false,
+   "one": "Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts.",
+   "alt": [
+    "crowdsec"
+   ],
+   "doc": "human/fichas/fail2ban.md",
+   "github_id": 2476162,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "coreruleset",
+   "name": "OWASP CRS",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 3357,
+   "gh": "coreruleset/coreruleset",
+   "lib": false,
+   "pick": false,
+   "one": "Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias.",
+   "alt": [],
+   "doc": "human/fichas/coreruleset.md",
+   "github_id": 263610232,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "scubagear",
+   "name": "ScubaGear",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 2802,
+   "gh": "cisagov/ScubaGear",
+   "lib": false,
+   "pick": false,
+   "one": "Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra baselines de seguridad.",
+   "alt": [],
+   "doc": "human/fichas/scubagear.md",
+   "github_id": 516451110,
+   "lang": "PowerShell",
+   "license": "CC0-1.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "goad",
+   "name": "GOAD",
+   "cat": 16,
+   "sub": "ad-interno",
+   "role": "directory",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 8627,
+   "gh": "Orange-Cyberdefense/GOAD",
+   "lib": false,
+   "pick": false,
+   "one": "Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD en VMs locales aisladas.",
+   "alt": [],
+   "doc": "human/fichas/goad.md",
+   "github_id": 410808925,
+   "lang": "PowerShell",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "hacktricks",
+   "name": "HackTricks",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 12770,
+   "gh": "HackTricks-wiki/hacktricks",
+   "lib": false,
+   "pick": false,
+   "one": "Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunidad.",
+   "alt": [],
+   "doc": "human/fichas/hacktricks.md",
+   "github_id": 279908689,
+   "lang": "JavaScript",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "cheatsheetseries",
+   "name": "OWASP CheatSheet Series",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 34080,
+   "gh": "OWASP/CheatSheetSeries",
+   "lib": false,
+   "pick": false,
+   "one": "Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores.",
+   "alt": [],
+   "doc": "human/fichas/cheatsheetseries.md",
+   "github_id": 162723104,
+   "lang": "JavaScript",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "caido",
+   "name": "Caido",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 2738,
+   "gh": "caido/caido",
+   "lib": false,
+   "pick": false,
+   "one": "Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.",
+   "alt": [
+    "zaproxy"
+   ],
+   "doc": "human/fichas/caido.md",
+   "github_id": 420144999,
+   "lang": "Shell",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "loki",
+   "name": "LOKI",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 3804,
+   "gh": "Neo23x0/Loki",
+   "lib": false,
+   "pick": false,
+   "one": "Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.",
+   "alt": [],
+   "doc": "human/fichas/loki.md",
+   "github_id": 29420337,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "detection-rules",
+   "name": "Elastic detection-rules",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 2974,
+   "gh": "elastic/detection-rules",
+   "lib": false,
+   "pick": false,
+   "one": "Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI.",
+   "alt": [],
+   "doc": "human/fichas/detection-rules.md",
+   "github_id": 273084758,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ]
+  },
+  {
+   "id": "shuffle",
+   "name": "Shuffle",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 2484,
+   "gh": "Shuffle/Shuffle",
+   "lib": false,
+   "pick": false,
+   "one": "SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows.",
+   "alt": [],
+   "doc": "human/fichas/shuffle.md",
+   "github_id": 262044260,
+   "lang": "JavaScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "social-engineer-toolkit",
+   "name": "SET",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 15485,
+   "gh": "trustedsec/social-engineer-toolkit",
+   "lib": false,
+   "pick": false,
+   "one": "Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y vectores solo con consentimiento.",
+   "alt": [],
+   "doc": "human/fichas/social-engineer-toolkit.md",
+   "github_id": 7391261,
+   "lang": "Python",
+   "license": null,
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "vault",
+   "name": "HashiCorp Vault",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 36522,
+   "gh": "hashicorp/vault",
+   "lib": false,
+   "pick": false,
+   "one": "Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open source puro.",
+   "alt": [],
+   "doc": "human/fichas/vault.md",
+   "github_id": 31288958,
+   "lang": "Go",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "sops",
+   "name": "SOPS",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 23731,
+   "gh": "getsops/sops",
+   "lib": false,
+   "pick": false,
+   "one": "Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI.",
+   "alt": [],
+   "doc": "human/fichas/sops.md",
+   "github_id": 40684033,
+   "lang": "Go",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "age",
+   "name": "age",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 24343,
+   "gh": "FiloSottile/age",
+   "lib": false,
+   "pick": false,
+   "one": "Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable.",
+   "alt": [],
+   "doc": "human/fichas/age.md",
+   "github_id": 187403699,
+   "lang": "Go",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "keepassxc",
+   "name": "KeePassXC",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security"
+   ],
+   "stars": 30017,
+   "gh": "keepassxreboot/keepassxc",
+   "lib": false,
+   "pick": false,
+   "one": "Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador.",
+   "alt": [
+    "vaultwarden"
+   ],
+   "doc": "human/fichas/keepassxc.md",
+   "github_id": 52729242,
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ]
   }
  ],
  "discovery": {
@@ -35491,6 +36362,7 @@
     ],
     "categories": [
      10,
+     15,
      16
     ],
     "keywords": [

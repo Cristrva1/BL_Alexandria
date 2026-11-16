@@ -30,6 +30,12 @@ Consulta web o clone local; no requiere instalación de binarios.
 | [sqlmap](sqlmap.md) | Complementa SQLi manual del cheatsheet con sqlmap. | Prueba manual; automatiza con sqlmap si procede. |
 | [Nuclei](nuclei.md) | Convierte ideas del cheatsheet en plantillas Nuclei. | Redacta la plantilla y valídala en lab. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[HackTricks](hacktricks.md)
+
 Estado en GitHub: activo · último push 2026-10-30 · última versión publicada 4.2 (2025-07-26) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/swisskyrepo/PayloadsAllTheThings#readme) · [2](https://swisskyrepo.github.io/PayloadsAllTheThings/)</sub>

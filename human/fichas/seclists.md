@@ -32,9 +32,9 @@ Solo hace falta clonar o descomprimir; no es un binario.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[dirsearch](dirsearch.md) · [feroxbuster](feroxbuster.md) · [Gobuster](gobuster.md)
+[dirsearch](dirsearch.md) · [feroxbuster](feroxbuster.md) · [Gobuster](gobuster.md) · [THC Hydra](thc-hydra.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 2026.2 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-16).
 

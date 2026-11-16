@@ -1,0 +1,746 @@
+{
+ "batch": "altas-ciber-segundo-2",
+ "checked_at": "2026-11-16",
+ "method": "README + docs + gh api + pricing pages. Ligero. No se instaló ningún proyecto.",
+ "repos": {
+  "sleuthkit": {
+   "que_es": "TSK: toolkit forense de FS (licencias mixtas).",
+   "que_hace": "Analiza volúmenes y recupera artefactos de disco.",
+   "como_lo_hace": "Build desde fuente / paquetes.",
+   "combina_con": [
+    {
+     "id": "velociraptor",
+     "motivo": "Velociraptor adquiere; TSK analiza discos.",
+     "orden_instalacion": "Adquisición → TSK."
+    },
+    {
+     "id": "volatility3",
+     "motivo": "Memoria con Volatility; disco con TSK.",
+     "orden_instalacion": "Complementarios."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/sleuthkit/sleuthkit#readme",
+    "https://www.sleuthkit.org/sleuthkit/"
+   ],
+   "github": {
+    "name_with_owner": "sleuthkit/sleuthkit",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": null,
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "sleuthkit-4.15.0 (2026-04-15)"
+   }
+  },
+  "autopsy": {
+   "que_es": "GUI forense (Apache-2.0 en LICENSE-2.0.txt; API sin SPDX).",
+   "que_hace": "Orquesta TSK y módulos de ingest en una UI.",
+   "como_lo_hace": "Instalador / build.",
+   "combina_con": [
+    {
+     "id": "hayabusa",
+     "motivo": "Hayabusa tria evtx; Autopsy el disco.",
+     "orden_instalacion": "Complementarios en DFIR."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Tras el análisis forense, correlaciona con alertas Wazuh.",
+     "orden_instalacion": "Autopsy + Wazuh."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/sleuthkit/autopsy#readme",
+    "http://www.sleuthkit.org/autopsy/"
+   ],
+   "github": {
+    "name_with_owner": "sleuthkit/autopsy",
+    "archived": false,
+    "pushed_at": "2026-06-20",
+    "license": null,
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "autopsy-4.23.1 (2026-05-07)"
+   }
+  },
+  "capa": {
+   "que_es": "Capability scanner de Mandiant (Apache-2.0).",
+   "que_hace": "Infiere comportamientos de un binario sin ejecutarlo.",
+   "como_lo_hace": "Releases / pip.",
+   "combina_con": [
+    {
+     "id": "ghidra",
+     "motivo": "capa prioriza; Ghidra profundiza.",
+     "orden_instalacion": "capa → Ghidra."
+    },
+    {
+     "id": "yara",
+     "motivo": "YARA firma; capa describe capacidades.",
+     "orden_instalacion": "Ambos sobre la muestra."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/mandiant/capa#readme",
+    "https://mandiant.github.io/capa/"
+   ],
+   "github": {
+    "name_with_owner": "mandiant/capa",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v10.0.0 (2026-10-16)"
+   }
+  },
+  "pwntools": {
+   "que_es": "Framework CTF/exploit-dev (MIT mayoritario).",
+   "que_hace": "Acelera escritura de exploits y wrappers.",
+   "como_lo_hace": "pip.",
+   "combina_con": [
+    {
+     "id": "pwndbg",
+     "motivo": "Depura el binario mientras desarrollas el exploit.",
+     "orden_instalacion": "pwndbg + pwntools."
+    },
+    {
+     "id": "ghidra",
+     "motivo": "RE del binario objetivo.",
+     "orden_instalacion": "Ghidra → pwntools."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Gallopsled/pwntools#readme",
+    "http://pwntools.com"
+   ],
+   "github": {
+    "name_with_owner": "Gallopsled/pwntools",
+    "archived": false,
+    "pushed_at": "2026-11-08",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "4.15.0 (2025-10-12)"
+   }
+  },
+  "pwndbg": {
+   "que_es": "Plugin GDB/LLDB para pwn.",
+   "que_hace": "Añade comandos y vistas útiles en depuración ofensiva.",
+   "como_lo_hace": "Installer documentado.",
+   "combina_con": [
+    {
+     "id": "pwntools",
+     "motivo": "Desarrollo del exploit + debug.",
+     "orden_instalacion": "Ambos en el workflow."
+    },
+    {
+     "id": "ghidra",
+     "motivo": "RE estático + debug dinámico.",
+     "orden_instalacion": "Ghidra ↔ pwndbg."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/pwndbg/pwndbg#readme",
+    "https://pwndbg.re/stable/setup"
+   ],
+   "github": {
+    "name_with_owner": "pwndbg/pwndbg",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "2026.10.28 (2026-10-28)"
+   }
+  },
+  "aflplusplus": {
+   "que_es": "Fuzzer AFL++ (AGPL).",
+   "que_hace": "Mutación guiada por cobertura.",
+   "como_lo_hace": "Docker / make.",
+   "combina_con": [
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep SAST; AFL++ runtime fuzz.",
+     "orden_instalacion": "Ambos en QA."
+    },
+    {
+     "id": "pwntools",
+     "motivo": "Tras un crash, analiza con pwntools.",
+     "orden_instalacion": "AFL++ → triage."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/AFLplusplus/AFLplusplus#readme",
+    "https://aflplus.plus"
+   ],
+   "github": {
+    "name_with_owner": "AFLplusplus/AFLplusplus",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "v5.03c (2026-09-02)"
+   }
+  },
+  "syzkaller": {
+   "que_es": "Kernel fuzzer de Google (Apache-2.0).",
+   "que_hace": "Genera programas de syscalls y detecta bugs de kernel.",
+   "como_lo_hace": "Setup documentado (pesado).",
+   "combina_con": [
+    {
+     "id": "aflplusplus",
+     "motivo": "AFL++ userland; syzkaller kernel.",
+     "orden_instalacion": "Elige según capa."
+    },
+    {
+     "id": "radare2",
+     "motivo": "Analiza crashes/kernel dumps.",
+     "orden_instalacion": "Crash → RE."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/google/syzkaller#readme"
+   ],
+   "github": {
+    "name_with_owner": "google/syzkaller",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "aircrack-ng": {
+   "que_es": "Suite Wi-Fi auditing (GPL-2).",
+   "que_hace": "Captura y ataca protocolos Wi-Fi en alcance autorizado.",
+   "como_lo_hace": "apt/brew/build.",
+   "combina_con": [
+    {
+     "id": "hashcat",
+     "motivo": "Cracking de handshakes con Hashcat.",
+     "orden_instalacion": "Captura → Hashcat."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "Análisis fino del PCAP Wi-Fi.",
+     "orden_instalacion": "Captura → Wireshark."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/aircrack-ng/aircrack-ng#readme",
+    "https://aircrack-ng.org"
+   ],
+   "github": {
+    "name_with_owner": "aircrack-ng/aircrack-ng",
+    "archived": false,
+    "pushed_at": "2026-10-09",
+    "license": "GPL-2.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.7 (2022-05-10)"
+   }
+  },
+  "bettercap": {
+   "que_es": "Framework de ataques de red (GPL-3).",
+   "que_hace": "MITM, sniffing y Wi-Fi auditing interactivo.",
+   "como_lo_hace": "Release / Docker.",
+   "combina_con": [
+    {
+     "id": "wireshark",
+     "motivo": "Capturas a Wireshark.",
+     "orden_instalacion": "bettercap → PCAP → Wireshark."
+    },
+    {
+     "id": "responder",
+     "motivo": "Poisoning de nombres junto a MITM.",
+     "orden_instalacion": "Lab aislado."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/bettercap/bettercap#readme",
+    "https://www.bettercap.org/"
+   ],
+   "github": {
+    "name_with_owner": "bettercap/bettercap",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.41.7 (2026-05-11)"
+   }
+  },
+  "thc-hydra": {
+   "que_es": "Login cracker multi-protocolo (AGPL).",
+   "que_hace": "Prueba credenciales en masa sobre protocolos soportados.",
+   "como_lo_hace": "Docker / make.",
+   "combina_con": [
+    {
+     "id": "seclists",
+     "motivo": "Diccionarios SecLists.",
+     "orden_instalacion": "SecLists → Hydra."
+    },
+    {
+     "id": "nmap",
+     "motivo": "Nmap encuentra el servicio.",
+     "orden_instalacion": "Nmap → Hydra."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/vanhauser-thc/thc-hydra#readme"
+   ],
+   "github": {
+    "name_with_owner": "vanhauser-thc/thc-hydra",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "v9.7 (2026-05-03)"
+   }
+  },
+  "fail2ban": {
+   "que_es": "Ban automático por logs (GPL según COPYING; API NOASSERTION).",
+   "que_hace": "Parsea logs y actualiza firewall.",
+   "como_lo_hace": "Paquete / source.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Wazuh alerta; Fail2ban responde en el host.",
+     "orden_instalacion": "Ambos."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/fail2ban/fail2ban#readme",
+    "http://www.fail2ban.org"
+   ],
+   "github": {
+    "name_with_owner": "fail2ban/fail2ban",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.1.1 (2026-08-15)"
+   }
+  },
+  "coreruleset": {
+   "que_es": "OWASP Core Rule Set (Apache-2.0).",
+   "que_hace": "Firma ataques web comunes en el WAF.",
+   "como_lo_hace": "Clona reglas y apunta el WAF.",
+   "combina_con": [
+    {
+     "id": "caddy",
+     "motivo": "Caddy/Coraza pueden usar CRS.",
+     "orden_instalacion": "Proxy + CRS."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei prueba; CRS bloquea.",
+     "orden_instalacion": "Purple team."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/coreruleset/coreruleset#readme",
+    "https://coreruleset.org"
+   ],
+   "github": {
+    "name_with_owner": "coreruleset/coreruleset",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.30.0 (2026-10-02)"
+   }
+  },
+  "scubagear": {
+   "que_es": "Herramienta CISA (CC0-1.0) para posture M365.",
+   "que_hace": "Evalúa configuración M365 vs baselines SCuBA.",
+   "como_lo_hace": "Install-Module desde PSGallery.",
+   "combina_con": [
+    {
+     "id": "prowler",
+     "motivo": "Prowler cloud IaaS; ScubaGear M365.",
+     "orden_instalacion": "Ambos en la auditoría."
+    },
+    {
+     "id": "lynis",
+     "motivo": "Lynis hosts; ScubaGear SaaS.",
+     "orden_instalacion": "Complementarios."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/cisagov/ScubaGear#readme",
+    "https://www.cisa.gov/resources-tools/services/secure-cloud-business-applications-scuba-project"
+   ],
+   "github": {
+    "name_with_owner": "cisagov/ScubaGear",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "CC0-1.0",
+    "primary_language": "PowerShell",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.0.0 (2026-10-22)"
+   }
+  },
+  "goad": {
+   "que_es": "Lab AD vulnerable documentado (GPL-3).",
+   "que_hace": "Despliega dominios AD rotos a propósito.",
+   "como_lo_hace": "Automatización documentada por Orange.",
+   "combina_con": [
+    {
+     "id": "bloodhound",
+     "motivo": "Analiza el lab con BloodHound.",
+     "orden_instalacion": "GOAD → BloodHound."
+    },
+    {
+     "id": "certipy",
+     "motivo": "Practica AD CS en GOAD.",
+     "orden_instalacion": "GOAD → Certipy."
+    },
+    {
+     "id": "netexec",
+     "motivo": "Enumera el lab con NetExec.",
+     "orden_instalacion": "GOAD → NetExec."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Orange-Cyberdefense/GOAD#readme",
+    "https://orange-cyberdefense.github.io/GOAD/"
+   ],
+   "github": {
+    "name_with_owner": "Orange-Cyberdefense/GOAD",
+    "archived": false,
+    "pushed_at": "2026-10-23",
+    "license": "GPL-3.0",
+    "primary_language": "PowerShell",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "hacktricks": {
+   "que_es": "Wiki de pentest (sin SPDX en API).",
+   "que_hace": "Documenta técnicas ofensivas y defensivas prácticas.",
+   "como_lo_hace": "Web / clone / compose.",
+   "combina_con": [
+    {
+     "id": "peass-ng",
+     "motivo": "PEASS automatiza chequeos descritos en HackTricks.",
+     "orden_instalacion": "Lee → ejecuta PEASS."
+    },
+    {
+     "id": "payloadsallthethings",
+     "motivo": "Otra cheatsheet del catálogo.",
+     "orden_instalacion": "Consulta ambas."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/HackTricks-wiki/hacktricks#readme",
+    "http://book.hacktricks.xyz/"
+   ],
+   "github": {
+    "name_with_owner": "HackTricks-wiki/hacktricks",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": null,
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "searchindex-ja (2025-10-01)"
+   }
+  },
+  "cheatsheetseries": {
+   "que_es": "Serie OWASP (CC-BY-SA-4.0).",
+   "que_hace": "Guías cortas de controles de seguridad.",
+   "como_lo_hace": "Web / repo.",
+   "combina_con": [
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep automatiza parte de las cheatsheets.",
+     "orden_instalacion": "Lee → reglas Semgrep."
+    },
+    {
+     "id": "juice-shop",
+     "motivo": "Practica lo leído en Juice Shop.",
+     "orden_instalacion": "Cheat sheet → lab."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/CheatSheetSeries#readme",
+    "https://cheatsheetseries.owasp.org"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/CheatSheetSeries",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "caido": {
+   "que_es": "Proxy web propietario con plan Basic gratis (2 proyectos, 7 workflows, 3 plugins).",
+   "que_hace": "Intercepta, inspecciona y reenvía HTTP/S para AppSec.",
+   "como_lo_hace": "Descarga desde el dashboard; este repo es branding/roadmap/plugins.",
+   "combina_con": [
+    {
+     "id": "nuclei",
+     "motivo": "Tras mapear con Caido, Nuclei escanea.",
+     "orden_instalacion": "Caido → Nuclei."
+    },
+    {
+     "id": "ffuf",
+     "motivo": "Fuzzing junto al proxy.",
+     "orden_instalacion": "Caido + ffuf."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/caido/caido#readme",
+    "https://caido.io/",
+    "https://caido.io/pricing"
+   ],
+   "github": {
+    "name_with_owner": "caido/caido",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": null,
+    "primary_language": "Shell",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.59.1 (2026-11-13)"
+   }
+  },
+  "loki": {
+   "que_es": "IOC scanner de Neo23x0 (GPL-3).",
+   "que_hace": "Busca indicadores en el filesystem.",
+   "como_lo_hace": "Release / clone.",
+   "combina_con": [
+    {
+     "id": "yara",
+     "motivo": "Usa reglas YARA.",
+     "orden_instalacion": "YARA → LOKI."
+    },
+    {
+     "id": "misp",
+     "motivo": "IOCs desde MISP.",
+     "orden_instalacion": "MISP → LOKI."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Neo23x0/Loki#readme"
+   ],
+   "github": {
+    "name_with_owner": "Neo23x0/Loki",
+    "archived": false,
+    "pushed_at": "2026-01-12",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.51.0 (2023-05-18)"
+   }
+  },
+  "detection-rules": {
+   "que_es": "Detection rules Elastic (Elastic License 2.0).",
+   "que_hace": "Provee detecciones listas para Elastic Security.",
+   "como_lo_hace": "Clone + import en Elastic.",
+   "combina_con": [
+    {
+     "id": "sigma",
+     "motivo": "Muchas ideas también existen en Sigma.",
+     "orden_instalacion": "Compara coberturas."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Wazuh como SIEM alternativo open.",
+     "orden_instalacion": "Elige stack."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/elastic/detection-rules#readme"
+   ],
+   "github": {
+    "name_with_owner": "elastic/detection-rules",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "dev-v3.0.0 (2026-09-25)"
+   }
+  },
+  "shuffle": {
+   "que_es": "SOAR AGPL.",
+   "que_hace": "Orquesta respuestas automatizadas entre herramientas.",
+   "como_lo_hace": "Docker / docs.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Alertas Wazuh disparan Shuffle.",
+     "orden_instalacion": "Wazuh → Shuffle."
+    },
+    {
+     "id": "misp",
+     "motivo": "Enriquece IOCs vía MISP.",
+     "orden_instalacion": "Shuffle ↔ MISP."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/Shuffle/Shuffle#readme"
+   ],
+   "github": {
+    "name_with_owner": "Shuffle/Shuffle",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "AGPL-3.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.3.0 (2026-09-28)"
+   }
+  },
+  "social-engineer-toolkit": {
+   "que_es": "SET de TrustedSec (licencia en readme/LICENSE; API sin SPDX).",
+   "que_hace": "Automatiza plantillas y vectores de ingeniería social.",
+   "como_lo_hace": "git clone + Python.",
+   "combina_con": [
+    {
+     "id": "evilginx2",
+     "motivo": "SET campaña; Evilginx2 proxy MFA.",
+     "orden_instalacion": "Diseño SET → Evilginx2 si aplica."
+    },
+    {
+     "id": "atomic-red-team",
+     "motivo": "Atomics de initial access.",
+     "orden_instalacion": "Purple team."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/trustedsec/social-engineer-toolkit#readme"
+   ],
+   "github": {
+    "name_with_owner": "trustedsec/social-engineer-toolkit",
+    "archived": false,
+    "pushed_at": "2026-06-04",
+    "license": null,
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "vault": {
+   "que_es": "Vault (BSL 1.1 para ≥1.15; Change License MPL-2.0 a 4 años). Producto IBM/HashiCorp.",
+   "que_hace": "Almacena, genera y audita secretos y certificados.",
+   "como_lo_hace": "Binario oficial / Docker / Helm.",
+   "combina_con": [
+    {
+     "id": "sops",
+     "motivo": "Sops cifra en Git; Vault centraliza runtime.",
+     "orden_instalacion": "Sops en repo; Vault en runtime."
+    },
+    {
+     "id": "age",
+     "motivo": "Age para ficheros simples; Vault para org.",
+     "orden_instalacion": "Elige según escala."
+    },
+    {
+     "id": "vaultwarden",
+     "motivo": "Vaultwarden es passwords de usuario; Vault secretos de infra.",
+     "orden_instalacion": "Complementarios."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/hashicorp/vault#readme",
+    "https://developer.hashicorp.com/vault"
+   ],
+   "github": {
+    "name_with_owner": "hashicorp/vault",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.2.2 (2026-11-12)"
+   }
+  },
+  "sops": {
+   "que_es": "Secrets OPerationS (MPL-2.0).",
+   "que_hace": "Cifra valores en ficheros de config versionados.",
+   "como_lo_hace": "Release / gestores de paquetes.",
+   "combina_con": [
+    {
+     "id": "age",
+     "motivo": "Backend de claves age habitual.",
+     "orden_instalacion": "age key → sops."
+    },
+    {
+     "id": "vault",
+     "motivo": "Vault puede custodiar claves KMS/age.",
+     "orden_instalacion": "Vault + sops."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/getsops/sops#readme"
+   ],
+   "github": {
+    "name_with_owner": "getsops/sops",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MPL-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.13.3 (2026-07-23)"
+   }
+  },
+  "age": {
+   "que_es": "Herramienta de cifrado de FiloSottile (BSD-3).",
+   "que_hace": "Cifra/descifra ficheros con recipients age.",
+   "como_lo_hace": "Release / paquetes.",
+   "combina_con": [
+    {
+     "id": "sops",
+     "motivo": "Sops usa age como key source.",
+     "orden_instalacion": "age → sops."
+    },
+    {
+     "id": "vault",
+     "motivo": "Vault para secretos centrales; age para ad-hoc.",
+     "orden_instalacion": "Según caso."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/FiloSottile/age#readme"
+   ],
+   "github": {
+    "name_with_owner": "FiloSottile/age",
+    "archived": false,
+    "pushed_at": "2026-08-29",
+    "license": "BSD-3-Clause",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.3.2 (2026-08-29)"
+   }
+  },
+  "keepassxc": {
+   "que_es": "Password manager local (GPL según COPYING; API NOASSERTION).",
+   "que_hace": "Almacena credenciales cifradas en disco local.",
+   "como_lo_hace": "Instaladores oficiales.",
+   "combina_con": [
+    {
+     "id": "sops",
+     "motivo": "Sops para secretos de infra; KeePassXC para personas.",
+     "orden_instalacion": "Complementarios."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/keepassxreboot/keepassxc#readme",
+    "https://keepassxc.org"
+   ],
+   "github": {
+    "name_with_owner": "keepassxreboot/keepassxc",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.8.0 (2026-10-21)"
+   }
+  }
+ }
+}
