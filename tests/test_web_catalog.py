@@ -208,6 +208,6 @@ def test_real_library_catalog_resolves_every_recipe_step() -> None:
             assert step["why"]
     pairs = {tuple(sorted((lab["a"], lab["b"]))) for lab in catalog["labs"]}
     assert ("heroui", "ui") in pairs
-    assert ("comfyui", "fooocus") in pairs
+    assert ("comfyui", "wan2gp") in pairs
     assert ("ppt-master", "reveal.js") in pairs
     assert len(pairs) >= 10

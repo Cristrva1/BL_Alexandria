@@ -415,35 +415,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `cosmos`, `comfyui`
 **Alternativas (elige una):** `kokoro`
 
-## `melotts`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,model,python
-
-**Qué es:** Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.
-**Stack:** Python; modelo y dependencias; texto de prueba
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca declara licencia MIT; la ejecución local usa hardware y cada recurso externo debe revisarse
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Los idiomas y voces soportados son específicos; no es un conector nativo de Claude Code, Codex o Antigravity
-- Coste: Sin pago a un modelo en la ruta básica. La biblioteca declara licencia MIT; la ejecución local usa hardware y cada recurso externo debe revisarse
-- Equipo: Preparación según la ruta elegida. Python; modelo y dependencias; texto de prueba
-**Repo:** https://github.com/myshell-ai/MeloTTS
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una narración local; Comparar idiomas de una demo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Sintetiza dos frases en español y revisa pronunciación y ritmo
-**Qué comprobar:** Puedes identificar idioma, voz y salida de audio
-Revisión documental individual; instalación no ejecutada por Alexandría.
-
 ## `music-megathread`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=musica
 

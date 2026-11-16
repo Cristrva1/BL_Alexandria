@@ -4,7 +4,7 @@
 
 Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta.
 
-26 repos · 5 secciones
+25 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 5 repos
-- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 12 repos
+- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 11 repos
 - [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 3 repos
 - [Música y audio generativo](#música-y-audio-generativo) — 3 repos
 - [Procesamiento y limpieza de audio](#procesamiento-y-limpieza-de-audio) — 3 repos
@@ -49,7 +49,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz | Sin clave propia de API de IA en la ruta básica |
 | [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz | Sin clave propia de API de IA en la ruta básica |
 | [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles | Sin clave propia de API de IA en la ruta básica |
-| [MeloTTS](../fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Comparar idiomas de una demo | Sin clave propia de API de IA en la ruta básica |
 | [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida | Sin clave propia de API de IA en la ruta básica |
 
 ## Agentes de voz en tiempo real

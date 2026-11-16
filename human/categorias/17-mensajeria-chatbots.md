@@ -4,7 +4,7 @@
 
 Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación.
 
-11 repos · 3 secciones
+10 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [WhatsApp y mensajería](#whatsapp-y-mensajería) — 7 repos
-- [Chatbots y asistentes conversacionales](#chatbots-y-asistentes-conversacionales) — 3 repos
+- [Chatbots y asistentes conversacionales](#chatbots-y-asistentes-conversacionales) — 2 repos
 - [Comunidades,chat y llamadas](#comunidadeschat-y-llamadas) — 1 repos
 
 ## WhatsApp y mensajería
@@ -38,7 +38,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes | API de IA opcional |
-| [Rasa](../fichas/rasa.md) | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. | Tu objetivo encaja con estos ejemplos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo | API de IA opcional |
 | [Botpress](../fichas/botpress.md) | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. | Tu objetivo encaja con estos ejemplos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado | Depende de la ruta elegida |
 
 ## Comunidades,chat y llamadas

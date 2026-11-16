@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**644 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**638 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -11,20 +11,20 @@
 1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 15
 2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 30
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 30
-4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 21
+4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 20
 5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 23
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 23
 7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 13
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 27
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 28
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 22
-11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 12
+11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 9
 12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 15
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 19
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 22
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 27
 16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 26
-17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 11
+17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 10
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 13
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 30
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 19
@@ -36,7 +36,7 @@
 26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 19
 27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 36
 28. [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) — 19
-29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 26
+29. [🎬 Audio, transcripción, voz y música](#-29-audio-transcripción-voz-y-música) — 25
 30. [🎬 Video con código y agentes creativos](#-30-video-con-código-y-agentes-creativos) — 22
 31. [📄 Presentaciones, diagramas y explicación visual](#-31-presentaciones-diagramas-y-explicación-visual) — 8
 32. [🕷️ Navegadores y automatización web](#️-32-navegadores-y-automatización-web) — 12
@@ -189,7 +189,6 @@ _Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer
 | [defuddle](human/fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [crawlee-python](human/fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [awesome-web-scraping](human/fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
-| [scrapydweb](human/fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ### Scraping guiado por LLM
 
@@ -501,18 +500,15 @@ _Interfaces y modelos de generación, recorte, restauración y ampliación. Dist
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [ComfyUI](human/fichas/comfyui.md) | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
-| [Fooocus](human/fichas/fooocus.md) | Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [InvokeAI](human/fichas/invokeai.md) | Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🔴 pesado |
-| [Stable Diffusion WebUI Forge](human/fichas/sd-webui-forge.md) | Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Krita AI Diffusion](human/fichas/krita-ai-diffusion.md) | Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. | API de IA opcional | 🖥️ app | 🟡 medio |
 
 ### Modelos, librerías y control
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
-| ⭐ [FLUX](human/fichas/flux.md) | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
+| ⭐ [FLUX.2](human/fichas/flux2.md) | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [diffusers](human/fichas/diffusers.md) | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
-| [ComfyUI_IPAdapter_plus](human/fichas/comfyui-ipadapter-plus.md) | Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 
 ### Restauración, upscaling y edición
 
@@ -798,7 +794,6 @@ _Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de me
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [Typebot](human/fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
-| [Rasa](human/fichas/rasa.md) | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [Botpress](human/fichas/botpress.md) | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
 
 ### Comunidades,chat y llamadas
@@ -1068,8 +1063,8 @@ _Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [TimesFM](human/fichas/timesfm.md) | Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por versión. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
+| [DeepSeek-V3](human/fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [laya](human/fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
-| [DeepSeek-Coder](human/fichas/deepseek-coder.md) | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [cosmos](human/fichas/cosmos.md) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [Nemotron (NVIDIA)](human/fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | API de IA opcional | 📂 catálogo/recurso | 🔴 pesado |
 | [Kimi K2.7 Code](human/fichas/kimi-k2-7-code.md) | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
@@ -1209,7 +1204,7 @@ _Detección, seguimiento, segmentación, rostros y percepción espacial. Disting
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [Ultralytics YOLO](human/fichas/ultralytics.md) | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
-| ⭐ [SAM 2](human/fichas/sam2.md) | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| ⭐ [SAM 3](human/fichas/sam3.md) | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [OpenCV](human/fichas/opencv.md) | La librería de visión por computadora de referencia, con miles de algoritmos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [supervision](human/fichas/supervision.md) | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [mediapipe](human/fichas/mediapipe.md) | Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
@@ -1256,7 +1251,6 @@ _Transcripción, síntesis, clonación de voz, agentes de audio y música. Compa
 | [IndexTTS](human/fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [CosyVoice](human/fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [edge-tts](human/fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
-| [MeloTTS](human/fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [LuxTTS](human/fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 
 ### Agentes de voz en tiempo real

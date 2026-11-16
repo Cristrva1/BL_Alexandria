@@ -62,35 +62,35 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `diffusers`
 
-## `deepseek-coder`
-role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=inference,python
+## `deepseek-v3`
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=llm,inference,python
 
-**Qué es:** Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.
-**Stack:** Python; modelo y tokenizer; equipo según tamaño y cuantización
+**Qué es:** Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.
+**Stack:** API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM
 **Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Inferencia propia sin API obligatoria; hardware y licencia de pesos separados del código MIT
+- API de IA: API de IA opcional. API de pago compatible con OpenAI en platform.deepseek.com; la ruta local no usa API pero necesita infraestructura de varias GPU
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Es una familia de modelos y no el IDE DeepSeek ni una integración nativa con Claude Code, Codex o Antigravity
-- Coste: Sin pago a un modelo en la ruta básica. Inferencia propia sin API obligatoria; hardware y licencia de pesos separados del código MIT
-- Equipo: Preparación según la ruta elegida. Python; modelo y tokenizer; equipo según tamaño y cuantización
-**Repo:** https://github.com/deepseek-ai/DeepSeek-Coder
+- Modelos locales: Modelos locales documentados. Pesos abiertos en Hugging Face; se sirven con SGLang, vLLM, LMDeploy o TensorRT-LLM en servidores con varias GPU
+- Coste: El coste depende del proveedor o la ruta. La API se paga por uso; la ruta local evita ese pago pero exige hardware de centro de datos
+- Equipo: GPU o infraestructura especializada. API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM
+**Repo:** https://github.com/deepseek-ai/DeepSeek-V3
 
-**Instalación** [+]:
+**Instalación** [?]:
 
 ```
-pip install -r requirements.txt
+Seguir la instalación original: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md
 ```
 
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación de código local; Comparar variantes de un modelo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Carga una variante que quepa en tu equipo y pide completar una función de prueba
-**Qué comprobar:** Puedes revisar la salida y probarla con entradas conocidas
+**Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang
+**Evita si:** Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo
+**Primera prueba propuesta:** Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta
+**Qué comprobar:** Recibes la respuesta y ves en tu panel el consumo de esa llamada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `codegraph`
+**Combina con:** `litellm`, `sglang`, `vllm`
 
 ## `kimi-k2-7-code`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=kimi,moonshot,modelo,programacion,pesos-abiertos,huggingface

@@ -525,36 +525,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crawlee-python`
 
-## `scrapydweb`
-role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,dashboard,log-analysis,log-parsing,scrapy,scrapy-log-analysis,scrapy-visualization,scrapyd
-
-**Qué es:** Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.
-**Stack:** Python; Scrapyd iniciado en los hosts que administrarás
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos
-- Coste: Sin pago a un modelo en la ruta básica. No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios
-- Equipo: Preparación según la ruta elegida. Python; Scrapyd iniciado en los hosts que administrarás
-**Repo:** https://github.com/my8100/scrapydweb
-
-**Instalación** [+]:
-
-```
-pip install scrapydweb
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Conecta una instancia local Scrapyd y ejecuta un spider de prueba desde el panel
-**Qué comprobar:** Ves el trabajo, sus logs y el resultado
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `scrapy`
-
 ## `searxng`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=search,research,python,docker
 

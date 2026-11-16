@@ -30,7 +30,7 @@ Modelos y herramientas de visión por computador.
 | [mmpose](../fichas/mmpose.md) | Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano. | Sin clave propia de API de IA en la ruta básica |
 | [OpenCV](../fichas/opencv.md) | La librería de visión por computadora de referencia, con miles de algoritmos. | Sin clave propia de API de IA en la ruta básica |
 | [openpose](../fichas/openpose.md) | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. | Sin clave propia de API de IA en la ruta básica |
-| [SAM 2](../fichas/sam2.md) | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
+| [SAM 3](../fichas/sam3.md) | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. | Sin clave propia de API de IA en la ruta básica |
 | [supervision](../fichas/supervision.md) | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. | API de IA opcional |
 | [tfjs-models](../fichas/tfjs-models.md) | Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [Ultralytics YOLO](../fichas/ultralytics.md) | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. | Sin clave propia de API de IA en la ruta básica |

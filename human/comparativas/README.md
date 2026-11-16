@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+60 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -62,10 +62,6 @@
 - [metabase vs Apache Superset](metabase-vs-superset.md)
 - [PandasAI vs WrenAI](pandas-ai-vs-wrenai.md)
 - [Plausible Analytics vs Umami](plausible-vs-umami.md)
-
-## 🖼️ Generar y editar imágenes con IA
-
-- [ComfyUI vs Stable Diffusion WebUI Forge](comfyui-vs-sd-webui-forge.md)
 
 ## 🎬 Editar, grabar y generar video
 

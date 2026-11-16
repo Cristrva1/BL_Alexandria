@@ -14,7 +14,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|
 | [Deep-Live-Cam](../fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica |
 | [Ultralytics YOLO](../fichas/ultralytics.md) | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. | Sin clave propia de API de IA en la ruta básica |
-| [SAM 2](../fichas/sam2.md) | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
+| [SAM 3](../fichas/sam3.md) | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. | Sin clave propia de API de IA en la ruta básica |
 
 ## Secciones
 
@@ -37,7 +37,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [Ultralytics YOLO](../fichas/ultralytics.md) | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. | Tu objetivo encaja con estos ejemplos: Contar objetos de muestra; Probar segmentación en un prototipo | Sin clave propia de API de IA en la ruta básica |
-| [SAM 2](../fichas/sam2.md) | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición | Sin clave propia de API de IA en la ruta básica |
+| [SAM 3](../fichas/sam3.md) | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. | Tu objetivo encaja con estos ejemplos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video | Sin clave propia de API de IA en la ruta básica |
 | [OpenCV](../fichas/opencv.md) | La librería de visión por computadora de referencia, con miles de algoritmos. | Tu objetivo encaja con estos ejemplos: Preparar imágenes antes de OCR; Estudiar procesamiento visual básico | Sin clave propia de API de IA en la ruta básica |
 | [supervision](../fichas/supervision.md) | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. | Tu objetivo encaja con estos ejemplos: Visualizar detecciones; Contar cruces en un video de prueba | API de IA opcional |
 | [mediapipe](../fichas/mediapipe.md) | Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones. | Tu objetivo encaja con estos ejemplos: Crear una interacción con manos; Prototipar visión en dispositivo | Sin clave propia de API de IA en la ruta básica |

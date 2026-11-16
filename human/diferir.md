@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**80 repos.**
+**78 repos.**
 
 ## ⏳ Diferir
 
@@ -30,8 +30,7 @@ _Pesado: solo si llega a finalista._
 | [ComfyUI](fichas/comfyui.md) | 🖼️ Generar y editar imágenes con IA | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 | [diffusers](fichas/diffusers.md) | 🖼️ Generar y editar imágenes con IA | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
 | [InvokeAI](fichas/invokeai.md) | 🖼️ Generar y editar imágenes con IA | Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. |
-| [FLUX](fichas/flux.md) | 🖼️ Generar y editar imágenes con IA | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. |
-| [ComfyUI_IPAdapter_plus](fichas/comfyui-ipadapter-plus.md) | 🖼️ Generar y editar imágenes con IA | Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad. |
+| [FLUX.2](fichas/flux2.md) | 🖼️ Generar y editar imágenes con IA | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas. |
 | [Wan2.2](fichas/wan2-2.md) | 🎬 Editar, grabar y generar video | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | 🎬 Editar, grabar y generar video | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
 | [WanGP](fichas/wan2gp.md) | 🎬 Editar, grabar y generar video | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
@@ -50,7 +49,6 @@ _Pesado: solo si llega a finalista._
 | [server](fichas/nextcloud-server.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. |
 | [karakeep](fichas/karakeep.md) | 🗂️ Organizar notas, archivos y servicios personales | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. |
 | [audiobookshelf](fichas/audiobookshelf.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. |
-| [Rasa](fichas/rasa.md) | 🤖 WhatsApp, mensajería y chatbots | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. |
 | [twenty-main](fichas/twenty-main.md) | 🤖 CRM, ventas y marketing | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 | [Odoo](fichas/odoo.md) | 🤖 CRM, ventas y marketing | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 | [cal.diy](fichas/cal-diy.md) | 🤖 CRM, ventas y marketing | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
@@ -72,8 +70,8 @@ _Pesado: solo si llega a finalista._
 | [claude-code-router](fichas/claude-code-router.md) | 🧬 Operar, evaluar y medir modelos de IA | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
 | [TensorRT-LLM](fichas/tensorrt-llm.md) | 🧬 Operar, evaluar y medir modelos de IA | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. |
 | [tensorflow](fichas/tensorflow.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
+| [DeepSeek-V3](fichas/deepseek-v3.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. |
 | [laya](fichas/laya.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. |
-| [DeepSeek-Coder](fichas/deepseek-coder.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. |
 | [cosmos](fichas/cosmos.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. |
 | [hudi](fichas/hudi.md) | 🧑‍💻 Procesar datos y trabajar con notebooks | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
@@ -83,6 +81,7 @@ _Pesado: solo si llega a finalista._
 | [openpose](fichas/openpose.md) | 🖼️ Visión artificial, rostros y percepción | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. |
 | [LivePortrait](fichas/liveportrait.md) | 🖼️ Visión artificial, rostros y percepción | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). |
 | [tfjs-models](fichas/tfjs-models.md) | 🖼️ Visión artificial, rostros y percepción | Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones. |
+| [SAM 3](fichas/sam3.md) | 🖼️ Visión artificial, rostros y percepción | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. |
 | [mmpose](fichas/mmpose.md) | 🖼️ Visión artificial, rostros y percepción | Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano. |
 | [EasyMocap](fichas/easymocap.md) | 🖼️ Visión artificial, rostros y percepción | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. |
 | [4D-Humans](fichas/4d-humans.md) | 🖼️ Visión artificial, rostros y percepción | Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video. |
@@ -91,7 +90,6 @@ _Pesado: solo si llega a finalista._
 | [VoxCPM](fichas/voxcpm.md) | 🎬 Audio, transcripción, voz y música | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. |
 | [NeMo Speech](fichas/nemo.md) | 🎬 Audio, transcripción, voz y música | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
 | [ACE-Step-1.5](fichas/ace-step-1-5.md) | 🎬 Audio, transcripción, voz y música | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
-| [MeloTTS](fichas/melotts.md) | 🎬 Audio, transcripción, voz y música | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. |
 
 ---
 

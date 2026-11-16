@@ -114,10 +114,10 @@ assert.ok(g.firstTry(tldraw).success.includes('sin crear un proyecto de código'
 const restricted=g.recommend(c,{project:'Quiero generar imágenes con IA local',goal:'imagenes',experience:'beginner',mode:'local',ram:'small',gpu:'no'});
 assert.ok(!restricted.picks.some(p=>p.item.id==='rembg'));
 const lowCpu=g.recommend(c,{project:'Quiero generar imágenes con IA local',experience:'beginner',mode:'local',os:'windows',ram:'small',gpu:'no'});
-assert.ok(!lowCpu.picks.some(p=>p.item.id==='fooocus'));
+assert.ok(!lowCpu.picks.some(p=>p.item.id==='comfyui'));
 assert.ok(lowCpu.excluded.preparation>0);
 const cpu=g.recommend(c,{project:'Quiero generar imágenes con IA local',experience:'intermediate',mode:'local',os:'windows',ram:'large',gpu:'no'});
-assert.ok(cpu.picks.find(p=>p.item.id==='fooocus').warnings.some(text=>text.includes('32 GB')));
+assert.ok(cpu.picks.find(p=>p.item.id==='comfyui').warnings.some(text=>text.includes('pesada')));
 ''',build_catalog(ROOT))
 
 

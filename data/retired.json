@@ -281,7 +281,7 @@
       "last_commit": "2024-09-18",
       "archived": false,
       "replaced_by": [
-        "sam2"
+        "sam3"
       ]
     },
     {
@@ -524,6 +524,144 @@
       "last_commit": "2023-12-01",
       "archived": false,
       "replaced_by": []
+    },
+    {
+      "id": "fooocus",
+      "gh": "lllyasviel/Fooocus",
+      "github_id": 676676006,
+      "name": "Fooocus",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "README: soporte limitado solo con correcciones de errores; no adoptará arquitecturas nuevas como FLUX.",
+      "last_commit": "2025-09-02",
+      "archived": false,
+      "replaced_by": [
+        "comfyui",
+        "invokeai"
+      ]
+    },
+    {
+      "id": "comfyui-ipadapter-plus",
+      "gh": "cubiq/ComfyUI_IPAdapter_plus",
+      "github_id": 685001175,
+      "name": "ComfyUI_IPAdapter_plus",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "Su autor lo dejó en modo «solo mantenimiento» en abril de 2025; sin commits desde entonces.",
+      "last_commit": "2025-04-14",
+      "archived": false,
+      "replaced_by": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": "rasa",
+      "gh": "RasaHQ/rasa",
+      "github_id": 70908208,
+      "name": "Rasa",
+      "cat": 17,
+      "retired_at": "2026-11-15",
+      "reason": "abandonado",
+      "evidence": "README: Rasa Open Source está en modo mantenimiento; el desarrollo sigue en productos comerciales (Hello Rasa, CALM).",
+      "last_commit": "2025-12-18",
+      "archived": false,
+      "replaced_by": [
+        "botpress"
+      ]
+    },
+    {
+      "id": "sam2",
+      "gh": "facebookresearch/sam2",
+      "github_id": 835452752,
+      "name": "SAM 2",
+      "cat": 28,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits desde diciembre de 2024; Meta publicó SAM 3 como su sucesor.",
+      "last_commit": "2024-12-16",
+      "archived": false,
+      "replaced_by": [
+        "sam3"
+      ]
+    },
+    {
+      "id": "flux",
+      "gh": "black-forest-labs/flux",
+      "github_id": 836642963,
+      "name": "FLUX",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Sin commits desde julio de 2025; Black Forest Labs publicó FLUX.2 en un repositorio nuevo.",
+      "last_commit": "2025-07-31",
+      "archived": false,
+      "replaced_by": [
+        "flux2"
+      ]
+    },
+    {
+      "id": "deepseek-coder",
+      "gh": "deepseek-ai/DeepSeek-Coder",
+      "github_id": 707551301,
+      "name": "DeepSeek-Coder",
+      "cat": 24,
+      "retired_at": "2026-11-15",
+      "reason": "sustituido",
+      "evidence": "Modelos de 2023; DeepSeek-V3 es el modelo abierto actual de DeepSeek con capacidad de código.",
+      "last_commit": "2025-11-11",
+      "archived": false,
+      "replaced_by": [
+        "deepseek-v3"
+      ]
+    },
+    {
+      "id": "sd-webui-forge",
+      "gh": "lllyasviel/stable-diffusion-webui-forge",
+      "github_id": 743116659,
+      "name": "Stable Diffusion WebUI Forge",
+      "cat": 11,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Sin commits desde junio de 2025 y basado en AUTOMATIC1111, ya retirado.",
+      "last_commit": "2025-06-26",
+      "archived": false,
+      "replaced_by": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": "melotts",
+      "gh": "myshell-ai/MeloTTS",
+      "github_id": 760022246,
+      "name": "MeloTTS",
+      "cat": 29,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Sin commits desde diciembre de 2024.",
+      "last_commit": "2024-12-24",
+      "archived": false,
+      "replaced_by": [
+        "kokoro",
+        "fish-speech"
+      ]
+    },
+    {
+      "id": "scrapydweb",
+      "gh": "my8100/scrapydweb",
+      "github_id": 150997854,
+      "name": "scrapydweb",
+      "cat": 4,
+      "retired_at": "2026-11-15",
+      "reason": "inactivo",
+      "evidence": "Sin commits desde febrero de 2025.",
+      "last_commit": "2025-02-19",
+      "archived": false,
+      "replaced_by": [
+        "scrapy",
+        "crawl4ai"
+      ]
     }
   ]
 }

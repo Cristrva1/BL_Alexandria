@@ -110,7 +110,7 @@ Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-`cosyvoice`, `edge-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `melotts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
+`cosyvoice`, `edge-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `omnivoice-studio`, `rvc`, `vibevoice`, `voxcpm`
 
 ### Transcripción: audio a texto
 
@@ -134,7 +134,7 @@ Construir conversaciones por audio con procesamiento y respuesta en directo.
 
 Generar imágenes, ampliar, recortar o restaurar fotografías.
 
-`codeformer`, `comfyui`, `comfyui-ipadapter-plus`, `creative-architect`, `diffusers`, `flux`, `fooocus`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `open-generative-ai`, `real-esrgan`, `rembg`, `sd-webui-forge`
+`codeformer`, `comfyui`, `creative-architect`, `diffusers`, `flux2`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `open-generative-ai`, `real-esrgan`, `rembg`
 
 ### Avatares, rostros y personajes
 
@@ -238,7 +238,7 @@ Organizar disponibilidad y reserva de horarios.
 
 Diseñar flujos conversacionales y conectar canales.
 
-`botpress`, `rasa`, `typebot`
+`botpress`, `typebot`
 
 ### Comunidades,chat y llamadas
 
@@ -278,7 +278,7 @@ Agentes y herramientas de búsqueda para investigar una pregunta.
 
 Convertir páginas y redes sociales en contenido o datos.
 
-`awesome-web-scraping`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `instaloader`, `jina-reader`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapling`, `scrapy`, `scrapydweb`, `yt-dlp`
+`awesome-web-scraping`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `instaloader`, `jina-reader`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapling`, `scrapy`, `yt-dlp`
 
 ### Navegadores y automatización web
 
@@ -312,7 +312,7 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
 Modelos publicados por sus autores para evaluar e integrar.
 
-`cosmos`, `deepseek-coder`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
+`cosmos`, `deepseek-v3`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
 
 ### Entrenamiento y ajuste fino
 
@@ -488,7 +488,7 @@ Detecta objetos o movimiento, interpreta imágenes y trabaja con información es
 
 Modelos y herramientas de visión por computador.
 
-`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam2`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
+`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam3`, `supervision`, `tfjs-models`, `ultralytics`, `wham`
 
 ### Rostros y análisis visual
 

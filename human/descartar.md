@@ -130,10 +130,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Redash](fichas/redash.md) | [metabase](fichas/metabase.md), [Apache Superset](fichas/superset.md) |
 | [Umami](fichas/umami.md) | [Plausible Analytics](fichas/plausible.md), [Matomo](fichas/matomo.md) |
 | [WrenAI](fichas/wrenai.md) | [PandasAI](fichas/pandas-ai.md) |
-| [ComfyUI](fichas/comfyui.md) | [WanGP](fichas/wan2gp.md), [Stable Diffusion WebUI Forge](fichas/sd-webui-forge.md) |
+| [ComfyUI](fichas/comfyui.md) | [WanGP](fichas/wan2gp.md) |
 | [InvokeAI](fichas/invokeai.md) | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) |
 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | [InvokeAI](fichas/invokeai.md) |
-| [Stable Diffusion WebUI Forge](fichas/sd-webui-forge.md) | [ComfyUI](fichas/comfyui.md) |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md) |
 | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md) |
 | [VideoLingo](fichas/videolingo.md) | [VoiceStudio](fichas/omnivoice-studio.md) |

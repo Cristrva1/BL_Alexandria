@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-48 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+47 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -136,12 +136,11 @@ Organizar disponibilidad y reserva de horarios.
 
 Diseñar flujos conversacionales y conectar canales.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-chatbots)
+[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-chatbots)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Botpress](../fichas/botpress.md) | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. | Depende de la ruta elegida |
-| [Rasa](../fichas/rasa.md) | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. | API de IA opcional |
 | [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | API de IA opcional |
 
 ### Comunidades,chat y llamadas

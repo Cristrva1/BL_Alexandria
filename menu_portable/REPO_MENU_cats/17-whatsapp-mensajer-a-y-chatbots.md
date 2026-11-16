@@ -163,36 +163,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `n8n`, `evolution-api`
 
-## `rasa`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=chatbot,agents,python
-
-**Qué es:** Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local.
-**Stack:** Python y versión de Rasa compatibles; datos NLU; entorno local
-**Acceso y costes:**
-- API de IA: API de IA opcional. La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión
-- Coste: El coste depende del proveedor o la ruta. La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios
-- Equipo: Preparación según la ruta elegida. Python y versión de Rasa compatibles; datos NLU; entorno local
-**Repo:** https://github.com/RasaHQ/rasa
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://rasa.com/docs/rasa/installation/environment-set-up
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Entrena un ejemplo pequeño con dos intenciones y prueba frases nuevas distintas a las de entrenamiento
-**Qué comprobar:** Puedes inspeccionar intención, confianza y respuesta del diálogo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `chatwoot`
-
 ## `typebot`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=chatbot,automation,typescript
 

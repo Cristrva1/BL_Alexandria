@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 647 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 641 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **647 repos** de IA y
+proyecto concreto. Tienes un menú curado de **641 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -58,7 +58,7 @@ LEYENDA de columnas del índice:
 | gemini-cli | `gemini-cli`, `awesome-agent-skills`, `antigravity-awesome-skills`, `stitch-skills` |
 | opencode | `opencode`, `awesome-agent-skills`, `antigravity-awesome-skills`, `prompt-master` |
 | Grok | Sin repos específicos: úsalo como proveedor LLM en runtime (los repos agnósticos lo aceptan vía API compatible con OpenAI). |
-| Deepseek | `deepseek-coder` |
+| Deepseek | `deepseek-v3` |
 
 ## Recetas: flujos propuestos
 
@@ -304,7 +304,7 @@ Detalle: `REPO_MENU_cats/03-construir-agentes-y-coordinar-equipos-de-ia.md`
 - `smolagents` [L|hyb|E|+] — Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. — tags: agents,python — prov: openai,local — alt: pydantic-ai,openai-agents-python
 - `vercel-ai` [L|hyb|E|+] — Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. — tags: agents,ui,typescript,react — prov: openai,anthropic,google,local — alt: langgraphjs,mastra
 
-### 4. Buscar, extraer y monitorear información web (21)
+### 4. Buscar, extraer y monitorear información web (20)
 Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 
 - `agent-reach` [A|loc|E|?] — CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. — tags: scraping,research,python
@@ -324,7 +324,6 @@ Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 - `scrapegraph-ai` [L|hyb|M|+] — Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué e — tags: scraping,python — alt: maxun
 - `scrapling` [L|loc|M|+] — Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica  — tags: automation,scraping,python
 - `scrapy` [L|loc|M|+] — Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesam — tags: scraping,python
-- `scrapydweb` [P|loc|M|+] — Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. — tags: crawlers,dashboard,log-analysis,log-parsing,scrapy,scrapy-log-analysis,scrapy-visualization,scrapyd
 - `searxng` [P|loc|E|?] — Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. — tags: search,research,python,docker
 - `vane` [A|loc|E|+] — Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). — tags: search,research,local,typescript — prov: openai,local — alt: gpt-researcher
 - `yt-dlp` [A|loc|E|?] — Descargador de audio y video por línea de comandos compatible con miles de sitios. — tags: video,audio,scraping,python
@@ -489,21 +488,18 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 - `webodm` [P|loc|H|?] — Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. — tags: geoespacial,server,python
 - `wrenai` [P|hyb|M|+] — BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. — tags: analytics,data,agents,python — prov: openai,local — alt: pandas-ai
 
-### 11. Generar y editar imágenes con IA (12)
+### 11. Generar y editar imágenes con IA (9)
 Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 
 - `codeformer` [L|loc|M|?] — Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. — tags: image,vision,python
-- `comfyui` [R|loc|H|+] — Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. — tags: image,python — alt: wan2gp,sd-webui-forge
-- `comfyui-ipadapter-plus` [R|loc|H|?] — Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varia — tags: image,python
+- `comfyui` [R|loc|H|+] — Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. — tags: image,python — alt: wan2gp
 - `diffusers` [L|loc|H|+] — Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. — tags: image,python
-- `flux` [R|loc|H|+] — Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. — tags: image,python — prov: local
-- `fooocus` [A|loc|M|?] — Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, oc — tags: image,python
+- `flux2` [R|loc|H|+] — Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágene — tags: image,python — prov: local
 - `invokeai` [A|loc|H|?] — Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpain — tags: image,typescript — alt: krita-ai-diffusion
 - `krita-ai-diffusion` [A|loc|M|?] — Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. — tags: image,design,python — prov: local — alt: invokeai
 - `open-generative-ai` [P|hyb|M|?] — Estudio de imagen y video con servicios remotos MuAPI y rutas locales de escritorio mediante sd.cpp o Wan2GP. — tags: image,video,javascript
 - `real-esrgan` [R|loc|M|+] — Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible gene — tags: image,python
 - `rembg` [L|loc|E|+] — Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. — tags: image,python
-- `sd-webui-forge` [A|loc|M|?] — Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el re — tags: image,local,python — prov: local — alt: comfyui
 
 ### 12. Editar, grabar y generar video (15)
 Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
@@ -634,7 +630,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `strix` [A|hyb|M|?] — Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de Ch — tags: agentes,agent,python — prov: local
 - `x64dbg` [A|loc|E|?] — Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. — tags: depuracion,app,c
 
-### 17. WhatsApp, mensajería y chatbots (11)
+### 17. WhatsApp, mensajería y chatbots (10)
 Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
 
 - `baileys` [L|loc|E|?] — Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. — tags: whatsapp,chatbot,typescript — alt: whatsapp-web-js,waha
@@ -642,7 +638,6 @@ Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
 - `evolution-api` [P|loc|H|?] — API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. — tags: automation,whatsapp,typescript,docker — alt: whatsapp-web-js,waha
 - `fluxer` [P|hyb|M|?] — Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de aloj — tags: whatsapp,chatbot,typescript
 - `openwa` [P|loc|E|+] — Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndhar — tags: whatsapp,chatbot,typescript
-- `rasa` [R|loc|H|?] — Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. — tags: chatbot,agents,python
 - `typebot` [P|loc|M|?] — Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. — tags: chatbot,automation,typescript
 - `waha` [P|loc|E|+] — API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. — tags: whatsapp,automation,docker — alt: evolution-api,whatsapp-web-js,baileys
 - `whatsapp-agentkit` [S|hyb|E|+] — Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita  — tags: agents,automation,python
@@ -793,7 +788,7 @@ Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 
 - `bionemo-recipes` [D|loc|H|?] — Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. — tags: entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
 - `cosmos` [R|hyb|H|?] — Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos — tags: inference
-- `deepseek-coder` [R|hyb|H|+] — Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para  — tags: inference,python
+- `deepseek-v3` [R|hyb|H|?] — Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su  — tags: llm,inference,python
 - `kimi-k2-7-code` [R|hyb|H|?] — Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Huggi — tags: kimi,moonshot,modelo,programacion,pesos-abiertos,huggingface — prov: local
 - `laya` [R|loc|H|+] — Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. — tags: modelos,model,python — prov: local
 - `llama-factory` [A|loc|M|+] — Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. — tags: training,python — prov: local — alt: unsloth
@@ -899,13 +894,13 @@ Detalle: `REPO_MENU_cats/28-visi-n-artificial-rostros-y-percepci-n.md`
 - `opencv` [L|loc|E|?] — La librería de visión por computadora de referencia, con miles de algoritmos. — tags: vision,image,cpp,python
 - `openpose` [R|loc|H|?] — Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. — tags: vision,model,c — prov: local
 - `ruview` [P|loc|H|+] — Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. — tags: sensores,claude,claude-code,esp32,firmware,home-assistant,home-automation,iot
-- `sam2` [L|loc|M|+] — Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. — tags: vision,video,python
+- `sam3` [L|loc|H|+] — Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos q — tags: vision,video,python
 - `supervision` [L|loc|E|+] — Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. — tags: vision,python
 - `tfjs-models` [L|loc|H|?] — Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en ap — tags: vision,library,typescript — prov: local
 - `ultralytics` [L|loc|E|+] — Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. — tags: vision,training,python
 - `wham` [R|loc|H|?] — Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de vi — tags: vision,model,python — prov: local
 
-### 29. Audio, transcripción, voz y música (26)
+### 29. Audio, transcripción, voz y música (25)
 Detalle: `REPO_MENU_cats/29-audio-transcripci-n-voz-y-m-sica.md`
 
 - `ace-step-1.5` [P|loc|H|+] — Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tam — tags: musica,text2music,python
@@ -921,7 +916,6 @@ Detalle: `REPO_MENU_cats/29-audio-transcripci-n-voz-y-m-sica.md`
 - `kokoro` [L|loc|E|?] — Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles — tags: tts,audio,local — prov: local — alt: luxtts,edge-tts
 - `livekit-agents` [R|hyb|M|+] — Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. — tags: audio,agents,video,python — prov: openai,anthropic,google — alt: pipecat
 - `luxtts` [L|loc|E|+] — Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. — tags: tts,audio,python — prov: local — alt: kokoro
-- `melotts` [R|loc|H|?] — Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. — tags: tts,model,python — prov: local
 - `music-megathread` [D|hyb|E|?] — Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. — tags: musica
 - `nemo` [L|loc|H|+] — Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenami — tags: stt,tts,audio,python — alt: whisperx
 - `omnivoice-studio` [A|loc|M|?] — App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. — tags: tts,audio,python — alt: videolingo

@@ -636,7 +636,7 @@
         }
       ],
       "repo_ids": [
-        "deepseek-coder"
+        "deepseek-v3"
       ],
       "aliases": [],
       "commands": []

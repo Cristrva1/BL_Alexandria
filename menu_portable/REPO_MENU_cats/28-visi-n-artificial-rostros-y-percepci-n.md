@@ -246,7 +246,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un proyecto con cinco imágenes y etiqueta una clase antes de añadir preanotación AI
 **Qué comprobar:** Puedes exportar anotaciones y comprobar el formato
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ultralytics`, `sam2`
+**Combina con:** `ultralytics`, `sam3`
 
 ## `liveportrait`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,vision,python
@@ -431,35 +431,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes distinguir datos sintéticos, presencia medida y resultados experimentales
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
-## `sam2`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,video,python
+## `sam3`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,video,python
 
-**Qué es:** Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.
-**Stack:** Python >=3.10; PyTorch >=2.5.1; checkpoint; GPU y compilación según ruta
+**Qué es:** Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta.
+**Stack:** Python 3.12 o superior; PyTorch 2.7 o superior; GPU con CUDA 12.6 o superior; cuenta de Hugging Face con acceso aprobado a los pesos
 **Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API remota; los pesos se descargan desde Hugging Face tras aceptar la licencia SAM
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto
-- Coste: Sin pago a un modelo en la ruta básica. No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias
-- Equipo: Preparación según la ruta elegida. Python >=3.10; PyTorch >=2.5.1; checkpoint; GPU y compilación según ruta
-**Repo:** https://github.com/facebookresearch/sam2
+- Modelos locales: Modelos locales documentados. Se ejecuta en tu equipo con PyTorch y una GPU NVIDIA con CUDA 12.6 o superior
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago por uso de un modelo; el coste es tu GPU o una GPU alquilada
+- Equipo: GPU o infraestructura especializada. Python 3.12 o superior; PyTorch 2.7 o superior; GPU con CUDA 12.6 o superior; cuenta de Hugging Face con acceso aprobado a los pesos
+**Repo:** https://github.com/facebookresearch/sam3
 
 **Instalación** [+]:
 
 ```
-git clone https://github.com/facebookresearch/sam2.git && cd sam2
-
+git clone https://github.com/facebookresearch/sam3.git
+cd sam3
 pip install -e .
 ```
 
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Marca un objeto en un clip corto y revisa la máscara a lo largo de varios frames
-**Qué comprobar:** Puedes detectar pérdida de seguimiento o zonas mal segmentadas
+**Elige si:** Tu objetivo encaja con estos ejemplos: Recortar todas las personas o productos de una foto con una frase; Seguir un objeto descrito con texto a lo largo de un video
+**Evita si:** No tienes una GPU NVIDIA compatible o necesitas una licencia permisiva como Apache; revisa los límites antes de elegirlo
+**Primera prueba propuesta:** Escribe «perro» como indicación en una foto con varios perros y revisa las máscaras
+**Qué comprobar:** Cada perro aparece con su propia máscara y caja, y puedes ver cuáles faltan o sobran
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `label-studio`, `supervision`
 
