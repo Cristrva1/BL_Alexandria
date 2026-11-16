@@ -1818,7 +1818,7 @@
         {
           "id": "seguridad-pruebas",
           "title": "Tráfico, pruebas y protección",
-          "description": "Revisar tráfico, rendimiento y mecanismos de protección.",
+          "description": "Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.",
           "selectors": [
             {
               "cat": 16,
@@ -1833,27 +1833,98 @@
           "reference_repos": [],
           "repo_ids": [
             "bla",
-            "bloodhound",
-            "crowdsec",
             "ffuf",
             "hashcat",
             "john",
             "k6",
             "locust",
             "lynis",
-            "metasploit",
             "mitmproxy",
-            "nmap",
             "nuclei",
             "semgrep",
             "sqlmap",
-            "subfinder",
-            "trivy",
-            "wazuh",
             "wireshark",
             "zaproxy"
           ],
-          "count": 20
+          "count": 13
+        },
+        {
+          "id": "seguridad-ofensiva",
+          "title": "Pruebas de intrusión autorizadas",
+          "description": "Reconocimiento, explotación y Active Directory dentro de un alcance firmado.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "reconocimiento",
+                "explotacion-c2",
+                "ad-interno"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [
+            "pentesting",
+            "red team",
+            "c2"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "bloodhound",
+            "metasploit",
+            "nmap",
+            "subfinder"
+          ],
+          "count": 4
+        },
+        {
+          "id": "seguridad-deteccion",
+          "title": "Detección y respuesta",
+          "description": "SIEM, IDS y bloqueo de ataques en sistemas propios.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "deteccion"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [
+            "siem",
+            "ids",
+            "blue team"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "crowdsec",
+            "wazuh"
+          ],
+          "count": 2
+        },
+        {
+          "id": "seguridad-nube",
+          "title": "Nube, contenedores e IaC",
+          "description": "Revisar imágenes, clústeres y cuentas de nube antes de publicar.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "nube-contenedores"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [
+            "cloud security",
+            "kubernetes",
+            "iac"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "trivy"
+          ],
+          "count": 1
         },
         {
           "id": "seguridad-privacidad",

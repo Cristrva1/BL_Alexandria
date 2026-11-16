@@ -4,7 +4,7 @@
 
 Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
 
-48 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
+48 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
 
 ## Opciones para empezar
 
@@ -66,32 +66,59 @@ Comprender procesos y examinar cómo se comporta el software.
 
 ### Tráfico, pruebas y protección
 
-Revisar tráfico, rendimiento y mecanismos de protección.
+Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-[Explorar 20 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-pruebas)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [bla](../fichas/bla.md) | Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes. | Sin clave propia de API de IA en la ruta básica |
-| [BloodHound Community Edition](../fichas/bloodhound.md) | Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria). | Sin clave propia de API de IA en la ruta básica |
-| [CrowdSec](../fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Sin clave propia de API de IA en la ruta básica |
 | [ffuf](../fichas/ffuf.md) | Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy. | Sin clave propia de API de IA en la ruta básica |
 | [hashcat](../fichas/hashcat.md) | Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. | Sin clave propia de API de IA en la ruta básica |
 | [John the Ripper (jumbo)](../fichas/john.md) | Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. | Sin clave propia de API de IA en la ruta básica |
 | [k6](../fichas/k6.md) | Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico. | Sin clave propia de API de IA en la ruta básica |
 | [Locust](../fichas/locust.md) | Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real. | Sin clave propia de API de IA en la ruta básica |
 | [Lynis](../fichas/lynis.md) | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas. | Sin clave propia de API de IA en la ruta básica |
-| [Metasploit Framework](../fichas/metasploit.md) | Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva. | Sin clave propia de API de IA en la ruta básica |
 | [mitmproxy](../fichas/mitmproxy.md) | Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas. | Sin clave propia de API de IA en la ruta básica |
-| [Nmap](../fichas/nmap.md) | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada. | Sin clave propia de API de IA en la ruta básica |
 | [Nuclei](../fichas/nuclei.md) | Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud. | Sin clave propia de API de IA en la ruta básica |
 | [Semgrep](../fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Sin clave propia de API de IA en la ruta básica |
 | [sqlmap](../fichas/sqlmap.md) | Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos. | Sin clave propia de API de IA en la ruta básica |
-| [subfinder](../fichas/subfinder.md) | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras. | Sin clave propia de API de IA en la ruta básica |
-| [Trivy](../fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Sin clave propia de API de IA en la ruta básica |
-| [Wazuh](../fichas/wazuh.md) | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. | Sin clave propia de API de IA en la ruta básica |
 | [Wireshark](../fichas/wireshark.md) | Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos. | Sin clave propia de API de IA en la ruta básica |
 | [ZAP (Zed Attack Proxy)](../fichas/zaproxy.md) | Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. | Sin clave propia de API de IA en la ruta básica |
+
+### Pruebas de intrusión autorizadas
+
+Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
+
+[Explorar 4 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ofensiva)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [BloodHound Community Edition](../fichas/bloodhound.md) | Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria). | Sin clave propia de API de IA en la ruta básica |
+| [Metasploit Framework](../fichas/metasploit.md) | Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva. | Sin clave propia de API de IA en la ruta básica |
+| [Nmap](../fichas/nmap.md) | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada. | Sin clave propia de API de IA en la ruta básica |
+| [subfinder](../fichas/subfinder.md) | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras. | Sin clave propia de API de IA en la ruta básica |
+
+### Detección y respuesta
+
+SIEM, IDS y bloqueo de ataques en sistemas propios.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [CrowdSec](../fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Sin clave propia de API de IA en la ruta básica |
+| [Wazuh](../fichas/wazuh.md) | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. | Sin clave propia de API de IA en la ruta básica |
+
+### Nube, contenedores e IaC
+
+Revisar imágenes, clústeres y cuentas de nube antes de publicar.
+
+[Explorar 1 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-nube)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Trivy](../fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Sin clave propia de API de IA en la ruta básica |
 
 ### Credenciales y privacidad
 

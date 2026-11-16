@@ -7,8 +7,8 @@
     "areas": 16,
     "work_areas": 13,
     "tool_collections": 3,
-    "topics": 98,
-    "technical_subs": 110,
+    "topics": 101,
+    "technical_subs": 115,
     "recipes": 14,
     "mcp": 132,
     "labs": 385
@@ -8662,7 +8662,7 @@
           {
             "id": "seguridad-pruebas",
             "title": "Tráfico, pruebas y protección",
-            "description": "Revisar tráfico, rendimiento y mecanismos de protección.",
+            "description": "Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.",
             "selectors": [
               {
                 "cat": 16,
@@ -8677,27 +8677,98 @@
             "reference_repos": [],
             "repo_ids": [
               "bla",
-              "bloodhound",
-              "crowdsec",
               "ffuf",
               "hashcat",
               "john",
               "k6",
               "locust",
               "lynis",
-              "metasploit",
               "mitmproxy",
-              "nmap",
               "nuclei",
               "semgrep",
               "sqlmap",
-              "subfinder",
-              "trivy",
-              "wazuh",
               "wireshark",
               "zaproxy"
             ],
-            "count": 20
+            "count": 13
+          },
+          {
+            "id": "seguridad-ofensiva",
+            "title": "Pruebas de intrusión autorizadas",
+            "description": "Reconocimiento, explotación y Active Directory dentro de un alcance firmado.",
+            "selectors": [
+              {
+                "cat": 16,
+                "subs": [
+                  "reconocimiento",
+                  "explotacion-c2",
+                  "ad-interno"
+                ]
+              }
+            ],
+            "repos": [],
+            "keywords": [
+              "pentesting",
+              "red team",
+              "c2"
+            ],
+            "reference_repos": [],
+            "repo_ids": [
+              "bloodhound",
+              "metasploit",
+              "nmap",
+              "subfinder"
+            ],
+            "count": 4
+          },
+          {
+            "id": "seguridad-deteccion",
+            "title": "Detección y respuesta",
+            "description": "SIEM, IDS y bloqueo de ataques en sistemas propios.",
+            "selectors": [
+              {
+                "cat": 16,
+                "subs": [
+                  "deteccion"
+                ]
+              }
+            ],
+            "repos": [],
+            "keywords": [
+              "siem",
+              "ids",
+              "blue team"
+            ],
+            "reference_repos": [],
+            "repo_ids": [
+              "crowdsec",
+              "wazuh"
+            ],
+            "count": 2
+          },
+          {
+            "id": "seguridad-nube",
+            "title": "Nube, contenedores e IaC",
+            "description": "Revisar imágenes, clústeres y cuentas de nube antes de publicar.",
+            "selectors": [
+              {
+                "cat": 16,
+                "subs": [
+                  "nube-contenedores"
+                ]
+              }
+            ],
+            "repos": [],
+            "keywords": [
+              "cloud security",
+              "kubernetes",
+              "iac"
+            ],
+            "reference_repos": [],
+            "repo_ids": [
+              "trivy"
+            ],
+            "count": 1
           },
           {
             "id": "seguridad-privacidad",
@@ -19363,8 +19434,8 @@
       "num": 16,
       "title": "Analizar software y comprobar su seguridad",
       "question": "¿Necesitas inspeccionar software o comprobar su seguridad?",
-      "blurb": "Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas.",
-      "description": "Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas.",
+      "blurb": "Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.",
+      "description": "Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.",
       "subs": [
         {
           "key": "reversing",
@@ -19377,6 +19448,26 @@
         {
           "key": "pruebas",
           "title": "Tráfico, rendimiento y pruebas"
+        },
+        {
+          "key": "reconocimiento",
+          "title": "Reconocimiento y superficie de ataque"
+        },
+        {
+          "key": "explotacion-c2",
+          "title": "Explotación, C2 y post-explotación"
+        },
+        {
+          "key": "ad-interno",
+          "title": "Active Directory y red interna"
+        },
+        {
+          "key": "deteccion",
+          "title": "Detección, SIEM e IDS"
+        },
+        {
+          "key": "nube-contenedores",
+          "title": "Nube, contenedores e IaC"
         },
         {
           "key": "agentes",
@@ -110486,7 +110577,7 @@
       "repo_url": "https://github.com/SpecterOps/BloodHound",
       "doc": "human/fichas/bloodhound.md",
       "agent_tools": [],
-      "sub": "pruebas",
+      "sub": "ad-interno",
       "how": "Aplicación web monolítica con frontend React y Sigma.js y API REST en Go, desplegada con PostgreSQL y una base de grafos; los datos se recogen con colectores como SharpHound o AzureHound.",
       "why": "Usos propuestos: identificar rutas de escalada hacia administrador de dominio en tu propio AD; priorizar qué permisos excesivos corregir primero.",
       "cases": [
@@ -110653,9 +110744,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-ofensiva"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Pruebas de intrusión autorizadas pentesting red team c2"
     },
     {
       "id": "craft-anything",
@@ -110898,7 +110989,7 @@
       "repo_url": "https://github.com/crowdsecurity/crowdsec",
       "doc": "human/fichas/crowdsec.md",
       "agent_tools": [],
-      "sub": "defensa",
+      "sub": "deteccion",
       "how": "Motor Go que analiza registros y peticiones HTTP con escenarios del hub y aplica bloqueos mediante bouncers (cortafuegos, proxy inverso, CDN).",
       "why": "Usos propuestos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas.",
       "cases": [
@@ -111076,9 +111167,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-deteccion"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Detección y respuesta siem ids blue team"
     },
     {
       "id": "cybersecurity-skills",
@@ -114243,7 +114334,7 @@
       "repo_url": "https://github.com/rapid7/metasploit-framework",
       "doc": "human/fichas/metasploit.md",
       "agent_tools": [],
-      "sub": "pruebas",
+      "sub": "explotacion-c2",
       "how": "Framework en Ruby con miles de módulos (exploits, auxiliares, payloads, post) gestionados desde msfconsole, con base de datos PostgreSQL para resultados.",
       "why": "Usos propuestos: validar en un laboratorio si una vulnerabilidad conocida es explotable; practicar post-explotación y escalada en máquinas vulnerables de entrenamiento.",
       "cases": [
@@ -114419,9 +114510,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-ofensiva"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Pruebas de intrusión autorizadas pentesting red team c2"
     },
     {
       "id": "mitmproxy",
@@ -114695,7 +114786,7 @@
       "repo_url": "https://github.com/nmap/nmap",
       "doc": "human/fichas/nmap.md",
       "agent_tools": [],
-      "sub": "pruebas",
+      "sub": "reconocimiento",
       "how": "Programa en C/C++ con motor de scripts Lua (NSE), detección de versiones y de sistema operativo; incluye Zenmap, Ncat y Nping.",
       "why": "Usos propuestos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.",
       "cases": [
@@ -114862,9 +114953,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-ofensiva"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Pruebas de intrusión autorizadas pentesting red team c2"
     },
     {
       "id": "nuclei",
@@ -117331,7 +117422,7 @@
       "repo_url": "https://github.com/projectdiscovery/subfinder",
       "doc": "human/fichas/subfinder.md",
       "agent_tools": [],
-      "sub": "pruebas",
+      "sub": "reconocimiento",
       "how": "Binario Go que consulta fuentes pasivas (con claves de API opcionales), resuelve y elimina comodines, y escribe a stdout, archivo o JSON.",
       "why": "Usos propuestos: inventariar los subdominios públicos de tu propia organización; preparar el alcance de un programa de bug bounty.",
       "cases": [
@@ -117499,9 +117590,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-ofensiva"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Pruebas de intrusión autorizadas pentesting red team c2"
     },
     {
       "id": "trivy",
@@ -117535,7 +117626,7 @@
       "repo_url": "https://github.com/aquasecurity/trivy",
       "doc": "human/fichas/trivy.md",
       "agent_tools": [],
-      "sub": "defensa",
+      "sub": "nube-contenedores",
       "how": "Binario Go con escáneres (vulnerabilidades, IaC, secretos, licencias, SBOM) aplicados a objetivos como imágenes de contenedor, sistemas de archivos, repositorios Git, VM y clústeres.",
       "why": "Usos propuestos: escanear una imagen Docker antes de desplegarla; generar un SBOM y revisar dependencias vulnerables de un proyecto en CI.",
       "cases": [
@@ -117733,9 +117824,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-nube"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Nube, contenedores e IaC cloud security kubernetes iac"
     },
     {
       "id": "wazuh",
@@ -117766,7 +117857,7 @@
       "repo_url": "https://github.com/wazuh/wazuh",
       "doc": "human/fichas/wazuh.md",
       "agent_tools": [],
-      "sub": "defensa",
+      "sub": "deteccion",
       "how": "Agentes multiplataforma envían datos a un servidor que los analiza con reglas; el indexador y el panel de Wazuh almacenan y muestran alertas.",
       "why": "Usos propuestos: vigilar los servidores de tu laboratorio o pyme con alertas centralizadas; auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos.",
       "cases": [
@@ -117933,9 +118024,9 @@
         "ciberseguridad"
       ],
       "topics": [
-        "seguridad-pruebas"
+        "seguridad-deteccion"
       ],
-      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Tráfico, pruebas y protección"
+      "discovery_text": " Ciberseguridad ciberseguridad cybersecurity seguridad informatica pentesting Detección y respuesta siem ids blue team"
     },
     {
       "id": "wireshark",

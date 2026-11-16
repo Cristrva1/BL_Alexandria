@@ -1,6 +1,6 @@
 # Categorías y subcategorías prácticas
 
-98 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 110 subcategorías técnicas.
+101 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 115 subcategorías técnicas.
 
 Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.
 
@@ -70,9 +70,27 @@ Comprender procesos y examinar cómo se comporta el software.
 
 ### Tráfico, pruebas y protección
 
-Revisar tráfico, rendimiento y mecanismos de protección.
+Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-`bla`, `bloodhound`, `crowdsec`, `ffuf`, `hashcat`, `john`, `k6`, `locust`, `lynis`, `metasploit`, `mitmproxy`, `nmap`, `nuclei`, `semgrep`, `sqlmap`, `subfinder`, `trivy`, `wazuh`, `wireshark`, `zaproxy`
+`bla`, `ffuf`, `hashcat`, `john`, `k6`, `locust`, `lynis`, `mitmproxy`, `nuclei`, `semgrep`, `sqlmap`, `wireshark`, `zaproxy`
+
+### Pruebas de intrusión autorizadas
+
+Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
+
+`bloodhound`, `metasploit`, `nmap`, `subfinder`
+
+### Detección y respuesta
+
+SIEM, IDS y bloqueo de ataques en sistemas propios.
+
+`crowdsec`, `wazuh`
+
+### Nube, contenedores e IaC
+
+Revisar imágenes, clústeres y cuentas de nube antes de publicar.
+
+`trivy`
 
 ### Credenciales y privacidad
 

@@ -116163,7 +116163,7 @@
   "trivy": {
    "name": "Trivy",
    "cat": 16,
-   "sub": "defensa",
+   "sub": "nube-contenedores",
    "desc": "Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
    "how": "Binario Go con escáneres (vulnerabilidades, IaC, secretos, licencias, SBOM) aplicados a objetivos como imágenes de contenedor, sistemas de archivos, repositorios Git, VM y clústeres.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/aquasecurity/trivy/blob/main/README.md",
@@ -116343,7 +116343,7 @@
   "metasploit": {
    "name": "Metasploit Framework",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "explotacion-c2",
    "desc": "Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.",
    "how": "Framework en Ruby con miles de módulos (exploits, auxiliares, payloads, post) gestionados desde msfconsole, con base de datos PostgreSQL para resultados.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/rapid7/metasploit-framework/blob/master/README.md",
@@ -116840,7 +116840,7 @@
   "nmap": {
    "name": "Nmap",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "reconocimiento",
    "desc": "El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.",
    "how": "Programa en C/C++ con motor de scripts Lua (NSE), detección de versiones y de sistema operativo; incluye Zenmap, Ncat y Nping.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/nmap/nmap/blob/master/README.md",
@@ -117321,7 +117321,7 @@
   "wazuh": {
    "name": "Wazuh",
    "cat": 16,
-   "sub": "defensa",
+   "sub": "deteccion",
    "desc": "Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.",
    "how": "Agentes multiplataforma envían datos a un servidor que los analiza con reglas; el indexador y el panel de Wazuh almacenan y muestran alertas.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/wazuh/wazuh/blob/main/README.md",
@@ -117639,7 +117639,7 @@
   "crowdsec": {
    "name": "CrowdSec",
    "cat": 16,
-   "sub": "defensa",
+   "sub": "deteccion",
    "desc": "IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
    "how": "Motor Go que analiza registros y peticiones HTTP con escenarios del hub y aplica bloqueos mediante bouncers (cortafuegos, proxy inverso, CDN).",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
@@ -118452,7 +118452,7 @@
   "subfinder": {
    "name": "subfinder",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "reconocimiento",
    "desc": "Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.",
    "how": "Binario Go que consulta fuentes pasivas (con claves de API opcionales), resuelve y elimina comodines, y escribe a stdout, archivo o JSON.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/projectdiscovery/subfinder/blob/dev/README.md",
@@ -118930,7 +118930,7 @@
   "bloodhound": {
    "name": "BloodHound Community Edition",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "ad-interno",
    "desc": "Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).",
    "how": "Aplicación web monolítica con frontend React y Sigma.js y API REST en Go, desplegada con PostgreSQL y una base de grafos; los datos se recogen con colectores como SharpHound o AzureHound.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/SpecterOps/BloodHound/blob/main/README.md",
