@@ -30,6 +30,7 @@ Se instala como marketplace de plugins en Codex (CLI o interfaz), con `npx plugi
 | [Claude Code](claude-code.md) | Instalación con `npx plugins add ... --target claude-code`. | Igual que arriba, a nivel de proyecto. |
 | [Gemini CLI](gemini-cli.md) | Agente compatible con el estándar Agent Skills que el README menciona. | Requiere el MCP de Stitch. |
 | [Stitch SDK](stitch-sdk.md) | Acceso programático a la misma plataforma Stitch (combinación por arquitectura). | Úsalo para automatizar lo que las skills hacen de forma interactiva. |
+| [taste-skill](taste-skill.md) | Combinación recíproca: taste-skill lo enlaza como «Trae una variante `stitch-design-taste` para trabajar con Stitch». | Orden indicado desde taste-skill: Configura antes el MCP de Stitch. |
 
 Estado en GitHub: activo · último push 2026-08-17 · última versión publicada v1.0 (2026-05-18) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 

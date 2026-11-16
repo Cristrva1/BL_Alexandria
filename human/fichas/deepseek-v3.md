@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+DeepSeek-V3, modelo de lenguaje MoE de DeepSeek con 671B parámetros totales y 37B activos por token. El código es MIT y los pesos usan un Model Agreement propio. El repo tiene ~105k estrellas, pero no se actualiza desde agosto de 2025 y DeepSeek ha publicado versiones posteriores.
+
+## ¿Qué hace?
+
+Sirve para chat, código y razonamiento. Usa Multi-head Latent Attention, DeepSeekMoE, balanceo sin pérdida auxiliar y predicción multi-token, y destila razonamiento de DeepSeek-R1. Según DeepSeek, se entrenó con 14.8T tokens en 2.788M horas de GPU H800.
+
+## ¿Cómo lo hace?
+
+Se usa por la API de DeepSeek (compatible con OpenAI) o en local con varios GPU mediante SGLang, vLLM, LMDeploy, TensorRT-LLM o LightLLM, en BF16 o FP8. No es viable en hardware doméstico sin cuantizar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [SGLang](sglang.md) | Soporte documentado en BF16 y FP8. | Sirve el modelo con SGLang. |
+| [vLLM](vllm.md) | Soporte documentado. | Sirve el modelo con vLLM. |
+| [litellm](litellm.md) | Enrutar a la API de DeepSeek o a un servidor propio. (combinación por arquitectura) | Añade el modelo al proxy. |
+| [TensorRT-LLM](tensorrt-llm.md) | Soporte documentado para GPU NVIDIA. | Construye el motor con TensorRT-LLM. |
+
+**Notas:** Sin alternativas declaradas. Repo histórico: conviene evaluar las versiones más nuevas de DeepSeek.
+
+Estado en GitHub: activo · último push 2025-08-28 · última versión publicada v1.0.0 (2025-06-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -25,18 +52,6 @@
 | Equipo | GPU o infraestructura especializada. API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM |
 
 No es un cliente de Claude Code, Codex o Antigravity; se usa como proveedor de modelo vía API compatible con OpenAI
-
-## Qué puedes hacer con él
-
-Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.
-
-## Por qué destaca
-
-Usos propuestos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang.
-
-## Cómo funciona
-
-Ejecutarlo en local requiere un servidor con varias GPU de centro de datos; para la mayoría de personas la ruta práctica es la API de pago compatible con OpenAI
 
 ## Cómo empezar
 
@@ -87,14 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM
 - **Etiquetas:** `llm` `inference` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [SGLang](sglang.md) | 38.9k | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
-| [vLLM](vllm.md) | 96.9k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
 
 ## Enlaces
 

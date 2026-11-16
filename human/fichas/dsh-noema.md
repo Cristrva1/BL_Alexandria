@@ -29,8 +29,9 @@ Las memorias son archivos Markdown inspeccionables en `NOEMA_ROOT` (por defecto 
 | [Claude Code](claude-code.md) | `noema_import` lee sus archivos de memoria para migrarlos. | Instala el plugin en DSH y después ejecuta la importación. |
 | [Codex CLI](codex.md) | Fuente de importación soportada. | Igual que arriba. |
 | [hermes-agent](hermes-agent.md) | Fuente de importación soportada. | Igual que arriba. |
+| [DeepSeek Harness (DSH)](deepseek-harness.md) | Es un plugin para DeepSeek Harness: el anfitrión que carga Noema como memoria persistente. | Instala y arranca DSH antes de añadir el plugin. |
 
-**Notas:** Requiere DeepSeek Harness, que no está en el catálogo.
+**Notas:** Requiere DeepSeek Harness (deepseek-harness).
 
 Estado en GitHub: activo · último push 2026-10-06 · licencia declarada MIT (consultado el 2026-11-15).
 

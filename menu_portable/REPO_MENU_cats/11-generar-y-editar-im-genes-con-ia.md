@@ -3,6 +3,36 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `chainner`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,python,app,local
+
+**Qué es:** Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux.
+**Stack:** Python, package.json, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/chaiNNer-org/chaiNNer
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/chaiNNer-org/chaiNNer/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala la release, deja que descargue su Python integrado e instala PyTorch o NCNN desde el gestor de dependencias; después escala una imagen con un modelo.
+**Qué comprobar:** El flujo de nodos procesa la imagen y guarda el resultado sin errores.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `real-esrgan`, `pytorch`, `codeformer`
+
 ## `codeformer`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
 
@@ -31,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Restaura una copia y compara dos ajustes de fidelidad con la foto original
 **Qué comprobar:** Puedes observar el equilibrio entre parecido, limpieza y artefactos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `real-esrgan`, `comfyui`, `rembg`
+**Combina con:** `real-esrgan`, `comfyui`, `rembg`, `deep-live-cam`, `upscayl`, `chainner`
 
 ## `comfyui`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
@@ -62,7 +92,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un workflow mínimo y conecta modelo, prompt, sampler y guardado
 **Qué comprobar:** Obtienes una imagen y puedes identificar los nodos que la produjeron
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `real-esrgan`
+**Combina con:** `flux2`, `krita-ai-diffusion`, `real-esrgan`, `hunyuanvideo-1-5`
 **Alternativas (elige una):** `wan2gp`
 
 ## `diffusers`
@@ -93,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un pipeline sencillo y fija semilla y tamaño para producir una imagen de prueba
 **Qué comprobar:** Puedes guardar imagen y configuración del pipeline
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `cosmos`
+**Combina con:** `flux2`, `peft`, `transformers`, `cosmos`
 
 ## `flux2`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=image,python
@@ -125,7 +155,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una imagen pequeña con FLUX.2 [klein] 4B desde la CLI interactiva
 **Qué comprobar:** Obtienes la imagen y sabes qué variante y qué licencia usaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `diffusers`
+**Combina con:** `comfyui`, `diffusers`, `real-esrgan`, `invokeai`, `krita-ai-diffusion`
 
 ## `invokeai`
 role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
@@ -155,7 +185,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un canvas, genera una zona pequeña y conserva la imagen original en otra capa
 **Qué comprobar:** Puedes comparar la zona editada y sus parámetros
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `diffusers`
+**Combina con:** `diffusers`, `flux2`, `real-esrgan`
 **Alternativas (elige una):** `krita-ai-diffusion`
 
 ## `krita-ai-diffusion`
@@ -186,38 +216,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Selecciona una región de una imagen propia y genera una modificación en otra capa
 **Qué comprobar:** Puedes aceptar o descartar la capa manteniendo el original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`
+**Combina con:** `comfyui`, `flux2`, `real-esrgan`
 **Alternativas (elige una):** `invokeai`
-
-## `open-generative-ai`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=image,video,javascript
-
-**Qué es:** Reúne herramientas de generación de imagen y video. Los modelos alojados consumen servicios externos; la app de escritorio permite configurar motores locales independientes. Las rutas difieren en hardware, instalación, licencia de pesos y costes.
-**Stack:** App de escritorio para modelos locales; sd.cpp o Wan2GP; GPU según modelo; clave MuAPI para servicios remotos
-**Acceso y costes:**
-- API de IA: API de IA opcional. Las rutas MuAPI consumen servicios; escritorio añade sd.cpp y Wan2GP propios; que la interfaz sea abierta no vuelve gratuitos todos sus modelos
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Los modelos locales son función de escritorio; Wan2GP se instala aparte y exige GPU compatible, a diferencia del motor de imagen sd.cpp
-- Coste: El coste depende del proveedor o la ruta. Las rutas MuAPI consumen servicios; escritorio añade sd.cpp y Wan2GP propios; que la interfaz sea abierta no vuelve gratuitos todos sus modelos
-- Equipo: Preparación según la ruta elegida. App de escritorio para modelos locales; sd.cpp o Wan2GP; GPU según modelo; clave MuAPI para servicios remotos
-**Repo:** https://github.com/Anil-matcha/Open-Generative-AI
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar imagen local desde una interfaz; Comparar una ruta local con un servicio de video remoto
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** En escritorio configura un modelo local pequeño y genera una imagen con el selector Local
-**Qué comprobar:** Puedes identificar el motor local y comprobar que no se usó el proveedor remoto
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`
 
 ## `real-esrgan`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
@@ -287,4 +287,34 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Quita el fondo de una imagen simple y guarda un PNG con transparencia
 **Qué comprobar:** Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `comfyui`, `real-esrgan`, `gradio`
+**Combina con:** `comfyui`, `real-esrgan`, `gradio`, `codeformer`
+
+## `upscayl`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=image,typescript,app,local
+
+**Qué es:** Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/upscayl/upscayl
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/upscayl/upscayl/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala la release para tu sistema, abre una imagen pequeña y amplíala x4 con el modelo por defecto.
+**Qué comprobar:** La imagen ampliada se guarda en la carpeta elegida con más detalle que el original.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `real-esrgan`, `gallery-dl`, `codeformer`

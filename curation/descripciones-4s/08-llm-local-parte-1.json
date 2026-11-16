@@ -62,6 +62,18 @@
      "id": "librechat",
      "motivo": "LocalAI como endpoint personalizado compatible con OpenAI en LibreChat (combinación por arquitectura).",
      "orden_instalacion": "LocalAI accesible desde la red de Docker de LibreChat; declara el endpoint en `librechat.yaml`."
+    },
+    {
+     "id": "chatbox",
+     "motivo": "Combinación recíproca: chatbox lo enlaza como «Servidor local compatible con OpenAI como alternativa a Ollama (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde chatbox: Usa LocalAI u Ollama, no ambos.",
+     "reciproca_de": "chatbox"
+    },
+    {
+     "id": "nextchat",
+     "motivo": "Combinación recíproca: NextChat lo enlaza como «El README declara compatibilidad con despliegues de LocalAI como modelo autoalojado».",
+     "orden_instalacion": "Orden indicado desde NextChat: LocalAI en marcha; después configura su URL como endpoint compatible con OpenAI.",
+     "reciproca_de": "nextchat"
     }
    ],
    "notas": "Alternativas (elige una como motor principal): ollama, llama-cpp.",
@@ -97,6 +109,12 @@
      "id": "litellm",
      "motivo": "Unificar el clúster exo con proveedores en la nube detrás de un solo proxy (combinación por arquitectura).",
      "orden_instalacion": "exo primero; añádelo a LiteLLM como modelo compatible con OpenAI."
+    },
+    {
+     "id": "mlx-lm",
+     "motivo": "Combinación recíproca: MLX LM lo enlaza como «exo usa MLX y mlx-lm como backend de inferencia para repartir modelos entre varios Mac».",
+     "orden_instalacion": "Orden indicado desde MLX LM: Instala exo en cada equipo con versiones iguales de MLX y mlx-lm; después crea el clúster.",
+     "reciproca_de": "mlx-lm"
     }
    ],
    "notas": "Todos los nodos deben ejecutar la misma versión de exo. El rendimiento en Linux (solo CPU) no es comparable con el de Apple Silicon.",
@@ -132,6 +150,24 @@
      "id": "vllm",
      "motivo": "El README describe comprobar si un modelo cabe en varias máquinas con Ray y vLLM antes de lanzarlo.",
      "orden_instalacion": "Usa llmfit para planificar; despliega vLLM después."
+    },
+    {
+     "id": "airllm",
+     "motivo": "Combinación recíproca: airllm lo enlaza como «Comprobar si un modelo cabe en memoria de forma normal antes de recurrir a la carga por capas, mucho más lenta (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde airllm: Ejecuta llmfit primero; usa AirLLM solo si el modelo no cabe.",
+     "reciproca_de": "airllm"
+    },
+    {
+     "id": "jan",
+     "motivo": "Combinación recíproca: Jan lo enlaza como «Elegir qué modelo y cuantización caben en tu equipo antes de descargarlos en Jan (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jan: Ejecuta llmfit primero; descarga en Jan el modelo recomendado.",
+     "reciproca_de": "jan"
+    },
+    {
+     "id": "textgen",
+     "motivo": "Combinación recíproca: Text Generation WebUI lo enlaza como «Saber qué modelo y cuantización caben antes de descargar (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Text Generation WebUI: Ejecuta llmfit primero.",
+     "reciproca_de": "textgen"
     }
    ],
    "notas": "Las estimaciones de velocidad son proyecciones; contrástalas con la función de benchmark.",
@@ -308,6 +344,12 @@
      "id": "unsloth",
      "motivo": "Afinar modelos con más eficiencia fuera de TextGen y cargar el resultado en él (combinación por arquitectura).",
      "orden_instalacion": "Entrena y exporta el adaptador o GGUF con Unsloth; luego cárgalo en TextGen."
+    },
+    {
+     "id": "sillytavern",
+     "motivo": "Combinación recíproca: SillyTavern lo enlaza como «Text generation web UI (Ooba) es uno de los backends de texto que SillyTavern soporta».",
+     "orden_instalacion": "Orden indicado desde SillyTavern: Arranca textgen con su API habilitada; después conéctalo desde SillyTavern.",
+     "reciproca_de": "sillytavern"
     }
    ],
    "notas": "Alternativas (elige una): jan, open-webui.",
@@ -343,6 +385,24 @@
      "id": "langfuse",
      "motivo": "La v0.8.8 permite configurar identidad y metadatos de trazas para Langfuse.",
      "orden_instalacion": "Langfuse en marcha con claves de proyecto; configúralas en LibreChat."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "Combinación recíproca: llama.cpp lo enlaza como «LibreChat admite endpoints personalizados compatibles con OpenAI, como el de llama.cpp».",
+     "orden_instalacion": "Orden indicado desde llama.cpp: Servidor de llama.cpp accesible desde el contenedor de LibreChat; luego decláralo en `librechat.yaml`.",
+     "reciproca_de": "llama-cpp"
+    },
+    {
+     "id": "pgvector",
+     "motivo": "Combinación recíproca: pgvector lo enlaza como «El Docker Compose de LibreChat usa una imagen pgvector para su RAG API».",
+     "orden_instalacion": "Orden indicado desde pgvector: Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo.",
+     "reciproca_de": "pgvector"
+    },
+    {
+     "id": "exo",
+     "motivo": "Combinación recíproca: exo lo enlaza como «Endpoint personalizado compatible con OpenAI para un chat multiusuario sobre el clúster (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde exo: Igual que arriba; asegúrate de que el contenedor llega a la IP del nodo.",
+     "reciproca_de": "exo"
     }
    ],
    "notas": "Alternativas (elige una): open-webui, lobehub. Meilisearch, pgvector y RAG API ya vienen en su Compose.",
@@ -383,6 +443,18 @@
      "id": "localai",
      "motivo": "Proveedor soportado de LLM y embeddings totalmente local.",
      "orden_instalacion": "Alternativa a Ollama como motor: usa uno de los dos."
+    },
+    {
+     "id": "chroma",
+     "motivo": "Combinación recíproca: Chroma lo enlaza como «Base vectorial soportada (Chroma y ChromaCloud)».",
+     "orden_instalacion": "Orden indicado desde Chroma: Servidor Chroma primero; configura su URL en AnythingLLM.",
+     "reciproca_de": "chroma"
+    },
+    {
+     "id": "milvus",
+     "motivo": "Combinación recíproca: Milvus lo enlaza como «Base vectorial soportada por AnythingLLM».",
+     "orden_instalacion": "Orden indicado desde Milvus: Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos.",
+     "reciproca_de": "milvus"
     }
    ],
    "notas": "Alternativas (elige una): open-webui, khoj, private-gpt, onyx.",

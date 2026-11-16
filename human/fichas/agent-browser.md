@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+agent-browser, CLI nativa en Rust para que agentes controlen un navegador comando a comando, de Vercel Labs. Licencia Apache-2.0. Creado en enero de 2026, tiene ~52k estrellas (v0.43.0).
+
+## ¿Qué hace?
+
+`snapshot` devuelve la página como árbol de accesibilidad compacto con referencias (@e1) y el agente actúa sobre ellas: clic, escribir y navegar.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install -g agent-browser` o `brew install agent-browser`, y después `agent-browser install` (descarga Chrome for Testing). Un daemon controla el navegador por CDP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente con shell. (combinación por arquitectura) | Instala la CLI y la skill. |
+| [Lightpanda](lightpanda.md) | Navegador headless ligero vía CDP. (combinación por arquitectura) | Evalúa la compatibilidad CDP. |
+| [Chrome DevTools MCP](chrome-devtools-mcp.md) | Depuración profunda complementaria. (combinación por arquitectura) | Úsalo para rendimiento y red. |
+
+**Notas:** Alternativas (elige una): playwright-cli.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.43.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel-labs/agent-browser/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales |
 | Coste | Sin pago a un modelo en la ruta básica. El CLI y MCP no requieren modelo propio; el agente y proveedores remotos tienen costes independientes |
 | Equipo | Preparación según la ruta elegida. Node; Chrome for Testing o navegador configurado; agente opcional |
-
-Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales
-
-## Qué puedes hacer con él
-
-CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.
-
-## Por qué destaca
-
-Usos propuestos: Verificar una interfaz; Preparar capturas y consultas de una página.
-
-## Cómo funciona
 
 Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; Chrome for Testing o navegador configurado; agente opcional
 - **Etiquetas:** `navegador` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

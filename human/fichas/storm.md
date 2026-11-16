@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+STORM y Co-STORM, sistemas de investigación de Stanford OVAL (artículos en NAACL y EMNLP 2024) que escriben informes tipo Wikipedia con citas. Licencia MIT. Tiene ~32k estrellas, pero sin cambios desde septiembre de 2025.
+
+## ¿Qué hace?
+
+Investiga un tema haciendo preguntas desde múltiples perspectivas, genera un esquema y redacta un artículo con referencias. Co-STORM añade colaboración humano-IA.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install knowledge-storm`. Usa modelos y embeddings vía LiteLLM y módulos de recuperación (You, Bing, Serper, Brave, SearXNG, DuckDuckGo, Tavily, VectorRM para documentos propios), y tiene una demo en Streamlit.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Capa de modelos integrada (v1.1.0). | Configura el modelo con `LitellmModel`. |
+| [SearXNG](searxng.md) | Módulo de recuperación soportado. | Usa el módulo SearXNG con tu instancia. |
+| [Qdrant](qdrant.md) | Base vectorial para VectorRM con documentos propios. (combinación por arquitectura) | Indexa tus documentos y configura VectorRM. |
+
+**Notas:** Alternativas (elige una): gpt-researcher. Actividad baja.
+
+Estado en GitHub: activo · último push 2025-09-30 · última versión publicada v1.1.0 (2025-01-23) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/stanford-oval/storm/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Las citas y el texto generado requieren revisión; una interfaz de modelo configurable no confirma una ruta local lista para usar |
 | Coste | Consumo de APIs o servicios. Los ejemplos usan modelos y buscadores con API y sus costes; no incluye suscripciones ni créditos |
 | Equipo | Preparación según la ruta elegida. Conda y Python 3.11; modelo; credenciales del buscador configurado |
-
-Las citas y el texto generado requieren revisión; una interfaz de modelo configurable no confirma una ruta local lista para usar
-
-## Qué puedes hacer con él
-
-Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una revisión de un tema; Comparar perspectivas antes de escribir.
-
-## Cómo funciona
 
 Las citas y el texto generado requieren revisión; una interfaz de modelo configurable no confirma una ruta local lista para usar
 
@@ -98,13 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Conda y Python 3.11; modelo; credenciales del buscador configurado
 - **Etiquetas:** `research` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [SearXNG](searxng.md) | 39.6k | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. |
-| [firecrawl](firecrawl.md) | 202k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
 ## Alternativas (elige una)
 

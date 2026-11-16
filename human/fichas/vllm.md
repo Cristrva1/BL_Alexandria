@@ -30,6 +30,12 @@ Se instala con `uv pip install vllm` (o imagen Docker) y se lanza con `vllm serv
 | [Open WebUI](open-webui.md) | La documentación de vLLM explica cómo usarlo con Open WebUI. | Apunta Open WebUI al endpoint OpenAI de vLLM. |
 | [langchain](langchain.md) | Integración con LangChain documentada por vLLM. | Usa el cliente compatible con OpenAI de LangChain contra vLLM. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (43). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ACE-Step-1.5](ace-step-1-5.md) · [Axolotl](axolotl.md) · [backdoor](backdoor.md) · [BentoML](bentoml.md) · [CAMEL](camel.md) · [CosyVoice](cosyvoice.md) · [DeepSeek-V3](deepseek-v3.md) · [GPUStack](gpustack.md) · [Hermes Desktop](hermes-desktop.md) · [HunyuanVideo 1.5](hunyuanvideo-1-5.md) · [Kimi K2.7 Code](kimi-k2-7-code.md) · [Letta](letta.md) · [LLaMA-Factory](llama-factory.md) · [llmfit](llmfit.md) · [LM Evaluation Harness](lm-eval-harness.md) · [Marker](marker.md) · [MinerU](mineru.md) · [mini-swe-agent](mini-swe-agent.md) · [Nanobrowser](nanobrowser.md) · [NeMo Guardrails](guardrails.md) · [Nemotron (NVIDIA)](nemotron.md) · [odysseus](odysseus.md) · [olmOCR](olmocr.md) · [open-notebook](open-notebook.md) · [openai-python](openai-python.md) · [openevolve](openevolve.md) · [OpenRLHF](openrlhf.md) · [PaddleOCR](paddleocr.md) · [pdf-craft](pdf-craft.md) · [PrivateGPT](private-gpt.md) · [promptfoo](promptfoo.md) · [PyTorch](pytorch.md) · [Qwen Code](qwen-code.md) · [Ray](ray.md) · [Sim](sim.md) · [SurfSense](surfsense.md) · [Surya](surya.md) · [Transformers](transformers.md) · [TRL](trl.md) · [Unlimited-OCR](unlimited-ocr.md) · [verl](verl.md) · [VoxCPM](voxcpm.md) · [Xinference](xinference.md)
+
 **Notas:** Alternativas (elige una): sglang.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.33.0rc3 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

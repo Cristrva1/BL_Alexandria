@@ -28,13 +28,13 @@ Es una aplicación PHP que requiere PHP 8.1+ y MySQL 8.0+ o MariaDB 10.6+. Se in
 |---|---|---|
 | [metabase](metabase.md) | SQL sobre la base de Matomo para informes de negocio. (combinación por arquitectura) | Conecta Metabase a MySQL en solo lectura. |
 | [Grafana](grafana.md) | Paneles con la fuente MySQL o la API de Matomo. (combinación por arquitectura) | Configura la fuente de datos en Grafana. |
-| [n8n](n8n.md) | Automatizar exportaciones con la Reporting API. (combinación por arquitectura) | Usa el nodo HTTP Request con un token de Matomo. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos. | Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces. |
 
 **Notas:** Alternativas (elige una): umami, plausible.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 5.14.2 (2026-10-22) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/matomo-org/matomo/blob/6.x-dev/README.md) · [2](https://developer.matomo.org/api-reference/reporting-api)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/matomo-org/matomo/blob/6.x-dev/README.md) · [2](https://developer.matomo.org/api-reference/reporting-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/matomo)</sub>
 
 ## Acceso, coste y equipo
 
