@@ -13758,7 +13758,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "codex"
+        "codex",
+        "gemini-cli"
       ],
       "alt": [
         "superpowers"
@@ -13992,8 +13993,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Evitar una refactorización amplia para corregir un fallo pequeño; Hacer explícitas dudas y criterios de éxito antes de programar",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-claude-code",
-        "context-engineering"
+        "claude-code",
+        "codex",
+        "multica"
       ],
       "alt": []
     },
@@ -14113,8 +14115,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "claude-plugins-official",
-        "superpowers"
+        "skillspector",
+        "claude-agent-sdk-python"
       ],
       "alt": []
     },
@@ -14232,9 +14234,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "skillspector",
+        "codex",
         "claude-code",
-        "codex"
+        "cli",
+        "skillspector"
       ],
       "alt": [
         "awesome-agent-skills",
@@ -14464,9 +14467,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "skillspector",
         "claude-code",
-        "codex"
+        "codex",
+        "gemini-cli",
+        "skillspector"
       ],
       "alt": [
         "antigravity-awesome-skills",
@@ -14695,7 +14699,7 @@
       "combines_with": [
         "claude-code",
         "claude-plugins-official",
-        "superpowers"
+        "skillspector"
       ],
       "alt": [
         "awesome-claude-skills"
@@ -15403,8 +15407,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "anthropic-skills",
-        "awesome-claude-code"
+        "superpowers",
+        "skills"
       ],
       "alt": [
         "wshobson-agents"
@@ -15757,9 +15761,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Configurar convenciones, skills y comprobaciones para un equipo; Probar una mejora de contexto sin activar todos los componentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "openhands",
-        "sandbox",
-        "hermes-agent"
+        "claude-code",
+        "codex",
+        "opencode",
+        "gemini-cli"
       ],
       "alt": []
     },
@@ -16575,7 +16580,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "superpowers",
+        "codex",
         "andrej-karpathy-skills"
       ],
       "alt": []
@@ -16691,7 +16696,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar requisitos de una función antes de implementarla; Organizar una refactorización pequeña con un plan revisable",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-agent-skills"
+        "claude-code",
+        "claude-plugins-official",
+        "codex"
       ],
       "alt": []
     },
@@ -17044,8 +17051,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Dividir una funcionalidad en tareas que se puedan verificar; Trabajar con pruebas y revisión antes de cerrar un cambio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "awesome-claude-code",
-        "agent-toolkit"
+        "claude-plugins-official",
+        "codex",
+        "gemini-cli",
+        "hermes-agent"
       ],
       "alt": [
         "agent-skills"
@@ -17167,7 +17176,7 @@
       "combines_with": [
         "claude-code",
         "codex",
-        "skillspector"
+        "opencode"
       ],
       "alt": [
         "claude-plugins-official",

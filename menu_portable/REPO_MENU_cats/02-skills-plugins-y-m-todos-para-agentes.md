@@ -32,7 +32,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una revisión de calidad sobre un cambio pequeño del proyecto
 **Qué comprobar:** La revisión aplica los criterios de la skill y señala archivos concretos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`
+**Combina con:** `claude-code`, `codex`, `gemini-cli`
 **Alternativas (elige una):** `superpowers`
 
 ## `agent-toolkit`
@@ -95,7 +95,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide un cambio pequeño y observa si declara supuestos y limita el alcance
 **Qué comprobar:** La propuesta identifica lo que cambiará y cómo comprobar el resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-claude-code`, `context-engineering`
+**Combina con:** `claude-code`, `codex`, `multica`
 
 ## `anthropic-skills`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=skills,docs,pdf,coding-agent,python
@@ -128,7 +128,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide a la skill PDF identificar campos de un formulario de prueba
 **Qué comprobar:** El agente identifica la skill y entrega la lista de campos del PDF
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `claude-plugins-official`, `superpowers`
+**Combina con:** `claude-code`, `skillspector`, `claude-agent-sdk-python`
 
 ## `antigravity-awesome-skills`
 role=skill · exec=hybrid · setup=easy · mcp=True · prov=— · tags=skills,coding-agent,mcp,javascript
@@ -159,7 +159,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Previsualiza una skill concreta y revisa el plan antes de instalarla en un agente
 **Qué comprobar:** El destino contiene la skill seleccionada y puedes revisar los archivos añadidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `skillspector`, `claude-code`, `codex`
+**Combina con:** `codex`, `claude-code`, `cli`, `skillspector`
 **Alternativas (elige una):** `awesome-agent-skills`, `awesome-claude-skills`, `wshobson-agents`
 
 ## `autoskills`
@@ -220,7 +220,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Abre una skill oficial de una tecnología que ya utilices y revisa su instalación
 **Qué comprobar:** Puedes distinguir su autor, archivos y destino compatible
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `skillspector`, `claude-code`, `codex`
+**Combina con:** `claude-code`, `codex`, `gemini-cli`, `skillspector`
 **Alternativas (elige una):** `antigravity-awesome-skills`, `awesome-claude-skills`
 
 ## `awesome-agents`
@@ -280,7 +280,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Localiza un recurso de hooks o status line y revisa su fuente original
 **Qué comprobar:** Identificas su función, mantenimiento y requisitos antes de instalarlo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `claude-plugins-official`, `superpowers`
+**Combina con:** `claude-code`, `claude-plugins-official`, `skillspector`
 **Alternativas (elige una):** `awesome-claude-skills`
 
 ## `awesome-claude-skills`
@@ -463,7 +463,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Busca un plugin del marketplace e instala solo el que corresponde a tu tarea
 **Qué comprobar:** El plugin figura instalado y puedes consultar sus comandos o skills
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `anthropic-skills`, `awesome-claude-code`
+**Combina con:** `claude-code`, `superpowers`, `skills`
 **Alternativas (elige una):** `wshobson-agents`
 
 ## `claude-token-efficient`
@@ -555,7 +555,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta la configuración guiada en una carpeta de prueba y revisa el destino antes de confirmar
 **Qué comprobar:** El informe muestra los componentes y archivos preparados para el cliente elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openhands`, `sandbox`, `hermes-agent`
+**Combina con:** `claude-code`, `codex`, `opencode`, `gemini-cli`
 
 ## `elephant-goldfish-model`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=metodologia,skill,python
@@ -769,7 +769,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Solicita resolver un problema reutilizando el código existente antes de añadir funciones
 **Qué comprobar:** La propuesta explica qué reutiliza y presenta un diff limitado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `superpowers`, `andrej-karpathy-skills`
+**Combina con:** `claude-code`, `codex`, `andrej-karpathy-skills`
 
 ## `skills`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
@@ -799,7 +799,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige una skill de ingeniería e invócala sobre una tarea acotada
 **Qué comprobar:** El agente aplica la skill y produce el artefacto que esa tarea pide
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-agent-skills`
+**Combina con:** `claude-code`, `claude-plugins-official`, `codex`
 
 ## `spec-kit`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,skills,python
@@ -893,7 +893,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Describe una mejora sencilla y revisa la fase de definición y planificación
 **Qué comprobar:** El agente muestra una propuesta acotada antes de cambiar archivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-claude-code`, `agent-toolkit`
+**Combina con:** `claude-plugins-official`, `codex`, `gemini-cli`, `hermes-agent`
 **Alternativas (elige una):** `agent-skills`
 
 ## `wshobson-agents`
@@ -925,5 +925,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala el plugin de desarrollo Python y pide revisar un caso de pruebas pequeño
 **Qué comprobar:** El agente encuentra las instrucciones del plugin y propone una revisión sobre ese caso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `skillspector`
+**Combina con:** `claude-code`, `codex`, `opencode`
 **Alternativas (elige una):** `claude-plugins-official`, `antigravity-awesome-skills`, `agency-agents`

@@ -4978,8 +4978,8 @@
    "limits": "La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes",
    "combines_with": [
     "claude-code",
-    "claude-plugins-official",
-    "superpowers"
+    "skillspector",
+    "claude-agent-sdk-python"
    ],
    "alternatives": [],
    "repo": "https://github.com/anthropics/skills",
@@ -5072,7 +5072,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Repositorio oficial de Anthropic con su implementación de skills para Claude: carpetas de instrucciones, scripts y recursos que Claude carga bajo demanda. Muy activo y sin releases. GitHub no detecta una licencia de repositorio, pero el README dice que muchas skills son Apache 2.0, incluidas las de documentos.",
+   "que_hace": "Reúne skills de ejemplo que van de lo creativo (arte, música, diseño) a lo técnico (probar aplicaciones web, generar servidores MCP) y lo empresarial. Incluye las skills de documentos (docx, pdf, pptx, xlsx) que usa Claude para crear archivos, como referencia de skills complejas. Sirve de inspiración y como guía de patrones; el estándar abierto está en agentskills.io.",
+   "como_lo_hace": "Cada skill es una carpeta con `SKILL.md` (instrucciones y metadatos) y recursos. Se instala como marketplace en Claude Code (`/plugin marketplace add anthropics/skills`, luego `document-skills` o `example-skills`). Las skills ya están disponibles en los planes de pago de Claude.ai y pueden usarse mediante la API de Claude.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Instalación oficial como marketplace de plugins.",
+     "orden_instalacion": "Añade el marketplace e instala solo los paquetes que necesites."
+    },
+    {
+     "id": "skillspector",
+     "motivo": "Auditar skills (scripts incluidos) antes de instalarlas (combinación por arquitectura).",
+     "orden_instalacion": "Pasa SkillSpector sobre las carpetas antes de habilitarlas."
+    },
+    {
+     "id": "claude-agent-sdk-python",
+     "motivo": "Usar las skills dentro de agentes propios (combinación por arquitectura).",
+     "orden_instalacion": "Copia las skills al directorio que cargue tu agente."
+    }
+   ],
+   "descripcion_notas": "Se quitaron claude-plugins-official y superpowers porque no hay integración documentada.",
+   "descripcion_fuentes": [
+    "https://github.com/anthropics/skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "anthropics/skills",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "claude-plugins-official": {
    "name": "Claude Code Plugins Directory",
@@ -5093,8 +5130,8 @@
    "limits": "Es un directorio gestionado por Anthropic; instalar un plugin no implica instalar todos los del repositorio",
    "combines_with": [
     "claude-code",
-    "anthropic-skills",
-    "awesome-claude-code"
+    "superpowers",
+    "skills"
    ],
    "alternatives": [
     "wshobson-agents"
@@ -5189,7 +5226,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Repositorio de Anthropic (Apache 2.0) con sus propios plugins para Claude y el marketplace `claude-plugins-official` de Claude Code. Está en transición: los envíos de terceros ya se hacen en claude.ai/directory/manage.",
+   "que_hace": "Contiene plugins internos de Anthropic (`/plugins`) y plugins de terceros añadidos antes del cambio, además de los plugins de canal de Anthropic (Discord, iMessage, Telegram) en `/external_plugins`. El `marketplace.json` se irá reduciendo a los plugins propios de Anthropic. El README advierte que Anthropic no controla los servidores MCP ni el software que incluyen los plugins.",
+   "como_lo_hace": "Se usa desde el sistema de plugins de Claude Code: `/plugin install <nombre>@claude-plugins-official` o `/plugin > Discover`. Las entradas pueden declarar skills de repositorios externos en modo estricto.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Marketplace oficial de plugins.",
+     "orden_instalacion": "Revisa cada plugin antes de instalarlo, como recomienda el README."
+    },
+    {
+     "id": "superpowers",
+     "motivo": "Se instala desde este marketplace (`superpowers@claude-plugins-official`).",
+     "orden_instalacion": "`/plugin install superpowers@claude-plugins-official`."
+    },
+    {
+     "id": "skills",
+     "motivo": "Las skills de Matt Pocock se instalan desde este marketplace.",
+     "orden_instalacion": "`claude plugin install mattpocock-skills@claude-plugins-official`."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): wshobson-agents. Se quitaron anthropic-skills y awesome-claude-code: son catálogos paralelos, no integraciones.",
+   "descripcion_fuentes": [
+    "https://github.com/anthropics/claude-plugins-official/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "anthropics/claude-plugins-official",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-claude-skills": {
    "name": "Awesome Claude Skills",
@@ -5306,7 +5381,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.",
+   "que_hace": "Organiza skills por categorías (documentos, desarrollo, datos, negocio y marketing, comunicación, creatividad, productividad, seguridad, automatización vía Composio) y explica qué es una skill frente a un MCP o una herramienta. Destaca su plugin `connect-apps`, que permite a Claude enviar correos, crear incidencias o publicar en Slack a través de más de 1.000 aplicaciones.",
+   "como_lo_hace": "Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin-dir ./connect-apps-plugin`, se configura con `/connect-apps:setup` y pide una clave de API de Composio.",
+   "combina_con": [
+    {
+     "id": "composio",
+     "motivo": "El plugin `connect-apps` usa Composio para la autenticación y las integraciones.",
+     "orden_instalacion": "Crea una clave de Composio antes de ejecutar el setup."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Destino principal del plugin y de muchas skills.",
+     "orden_instalacion": "Carga el plugin con `--plugin-dir`."
+    },
+    {
+     "id": "skillspector",
+     "motivo": "Auditar las skills de terceros enlazadas antes de usarlas (combinación por arquitectura).",
+     "orden_instalacion": "Audita cada skill antes de instalarla."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): awesome-agent-skills, antigravity-awesome-skills, awesome-claude-code. Dar acceso a 1.000 apps amplía mucho lo que el agente puede hacer: limita los permisos.",
+   "descripcion_fuentes": [
+    "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ComposioHQ/awesome-claude-skills",
+    "archived": false,
+    "pushed_at": "2026-09-18",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-claude-code": {
    "name": "Awesome Claude Code",
@@ -5328,7 +5440,7 @@
    "combines_with": [
     "claude-code",
     "claude-plugins-official",
-    "superpowers"
+    "skillspector"
    ],
    "alternatives": [
     "awesome-claude-skills"
@@ -5422,7 +5534,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Lista curada de recursos para Claude Code (skills, hooks, comandos, flujos, herramientas, documentación) mantenida por hesreallyhim. Muy activa; GitHub marca su licencia como NOASSERTION.",
+   "que_hace": "Selecciona recursos de la comunidad por categorías: empezar, recursos de Anthropic, documentación, Obsidian, visualización de datos, mantenimiento de código abierto, seguridad y más. Incluye una muestra de proyectos que usan Claude Code y una sección de novedades; la iteración actual prioriza recursos que no estaban en la anterior.",
+   "como_lo_hace": "README estructurado con insignias de fecha de creación y actividad de cada recurso enlazado. No se instala: se consulta.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Herramienta a la que se refieren todos los recursos.",
+     "orden_instalacion": "No aplica: es una lista de consulta."
+    },
+    {
+     "id": "claude-plugins-official",
+     "motivo": "Marketplace oficial frente a los recursos comunitarios de la lista (combinación por arquitectura).",
+     "orden_instalacion": "Prioriza lo oficial y revisa lo comunitario."
+    },
+    {
+     "id": "skillspector",
+     "motivo": "Auditar hooks y skills de terceros antes de instalarlos (combinación por arquitectura).",
+     "orden_instalacion": "Antes de instalar cualquier recurso."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): awesome-claude-skills. Se quitó superpowers porque no hay integración.",
+   "descripcion_fuentes": [
+    "https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "hesreallyhim/awesome-claude-code",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "antigravity-awesome-skills": {
    "name": "Agentic Awesome Skills (AAS)",
@@ -5442,9 +5592,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx",
    "combines_with": [
-    "skillspector",
+    "codex",
     "claude-code",
-    "codex"
+    "cli",
+    "skillspector"
    ],
    "alternatives": [
     "awesome-agent-skills",
@@ -5543,7 +5694,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Agentic Awesome Skills (AAS), antes «Antigravity Awesome Skills», de sickn33 (MIT): biblioteca de más de 2.960 skills instalables y el componente AAS Core. Muy activa (v20.9.0); proyecto comunitario no afiliado a Google.",
+   "que_hace": "Ofrece guías `SKILL.md` para Claude Code, Codex, Cursor, Gemini CLI y otros agentes. AAS Core permite que Codex o Claude busquen en el catálogo local completo, inspeccionen el proyecto, recomienden skills exactas y mantengan un conjunto revisable y reproducible.",
+   "como_lo_hace": "Se instala desde GitHub; la publicación en npm está en pausa porque la cuenta del mantenedor está bloqueada. Puede instalarse una skill concreta con GitHub CLI (`gh skill`) y hay guías de plugin para Claude Code y Codex.",
+   "combina_con": [
+    {
+     "id": "codex",
+     "motivo": "Agente soportado por AAS Core.",
+     "orden_instalacion": "Sigue la guía de configuración para Codex."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente soportado por AAS Core.",
+     "orden_instalacion": "Sigue la guía para Claude Code."
+    },
+    {
+     "id": "cli",
+     "motivo": "Instalación de skills individuales con `gh skill`.",
+     "orden_instalacion": "GitHub CLI con soporte de `gh skill` instalado."
+    },
+    {
+     "id": "skillspector",
+     "motivo": "Auditar un catálogo tan grande antes de instalar nada (combinación por arquitectura).",
+     "orden_instalacion": "Audita las skills seleccionadas."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.",
+   "descripcion_fuentes": [
+    "https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "sickn33/agentic-awesome-skills",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v20.9.0 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "wshobson-agents": {
    "name": "wshobson/agents",
@@ -5565,7 +5760,7 @@
    "combines_with": [
     "claude-code",
     "codex",
-    "skillspector"
+    "opencode"
    ],
    "alternatives": [
     "claude-plugins-official",
@@ -5663,7 +5858,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Colección MIT de plugins, agentes, skills y comandos de wshobson para varias herramientas de código con IA. Muy activa, sin releases.",
+   "que_hace": "Su catálogo tiene 94 plugins (92 locales y 2 externos), con 202 agentes, 185 skills y 105 comandos. Cubre desarrollo en Python y JavaScript, revisión de código, testing, infraestructura, seguridad y más.",
+   "como_lo_hace": "Cada componente se escribe una vez en Markdown con el formato de plugin de Claude Code. Adaptadores en `tools/adapters/` generan el formato de cada herramienta, mapean los alias de modelo y traducen permisos. Se instala por marketplace en Claude Code y Cursor, marketplace nativo o artefactos en Codex CLI y `make install-opencode` o `make install-antigravity` desde un clon; también soporta Copilot y Pi.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Formato de origen y marketplace.",
+     "orden_instalacion": "Instala solo los plugins que uses."
+    },
+    {
+     "id": "codex",
+     "motivo": "Soporte nativo o mediante artefactos generados.",
+     "orden_instalacion": "Sigue la ruta de Codex CLI del README."
+    },
+    {
+     "id": "opencode",
+     "motivo": "`make install-opencode`.",
+     "orden_instalacion": "Desde un clon del repositorio."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): claude-plugins-official, antigravity-awesome-skills, agency-agents. Se quitó skillspector porque no hay integración (sigue siendo buena práctica auditar).",
+   "descripcion_fuentes": [
+    "https://github.com/wshobson/agents/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "wshobson/agents",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-copilot": {
    "name": "Awesome GitHub Copilot",
@@ -5777,7 +6010,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Colección comunitaria alojada por GitHub (MIT) de agentes personalizados, instrucciones, skills, hooks, flujos de trabajo y plugins para GitHub Copilot. Muy activa; tiene web con búsqueda y un Learning Hub.",
+   "que_hace": "Ofrece agentes especializados de Copilot que se integran con servidores MCP, instrucciones de estilo que se aplican por patrón de archivo, skills autocontenidas y paquetes de plugins por flujo de trabajo. Publica un `llms.txt` para que los agentes lean el catálogo.",
+   "como_lo_hace": "Archivos Markdown en el repositorio. Los plugins se instalan con la CLI de Copilot (`copilot plugin marketplace add github/awesome-copilot` y `copilot plugin install <plugin>@awesome-copilot`).",
+   "combina_con": [
+    {
+     "id": "github-mcp-server",
+     "motivo": "Servidor MCP que pueden usar los agentes de Copilot de la colección (combinación por arquitectura).",
+     "orden_instalacion": "Configura el MCP en Copilot antes de usar agentes que lo requieran."
+    },
+    {
+     "id": "spec-kit",
+     "motivo": "Proceso de desarrollo guiado por especificaciones con integración para Copilot.",
+     "orden_instalacion": "`specify init <proyecto> --integration copilot`."
+    },
+    {
+     "id": "cli",
+     "motivo": "Trabajar con repos, PR e incidencias desde la terminal junto a Copilot (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/github/awesome-copilot/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "github/awesome-copilot",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-agent-skills": {
    "name": "Awesome Agent Skills",
@@ -5797,9 +6067,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El catálogo declara varios clientes, pero la compatibilidad y licencia se revisan por skill, no para todo el directorio en bloque",
    "combines_with": [
-    "skillspector",
     "claude-code",
-    "codex"
+    "codex",
+    "gemini-cli",
+    "skillspector"
    ],
    "alternatives": [
     "antigravity-awesome-skills",
@@ -5894,7 +6165,49 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Colección MIT de VoltAgent con skills de agentes oficiales de equipos de desarrollo y de la comunidad, seleccionadas a mano. Muy activa; el README lleva patrocinadores.",
+   "que_hace": "Recopila skills reales de equipos conocidos (por ejemplo Google Cloud, Cypress o las del SDK de Azure) y de la comunidad, con rutas de instalación para Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, OpenCode, Windsurf y otros.",
+   "como_lo_hace": "Lista en Markdown con enlaces a cada `SKILL.md` y una tabla de rutas por agente.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Copia cada skill a la ruta que indica la tabla."
+    },
+    {
+     "id": "codex",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Agente compatible documentado.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "skillspector",
+     "motivo": "Auditar skills de terceros (combinación por arquitectura).",
+     "orden_instalacion": "Antes de instalarlas."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.",
+   "descripcion_fuentes": [
+    "https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "VoltAgent/awesome-agent-skills",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "checked_at": "2026-11-15"
+   }
   },
   "agent-skills": {
    "name": "Agent Skills (Addy Osmani)",
@@ -5915,7 +6228,8 @@
    "limits": "Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda",
    "combines_with": [
     "claude-code",
-    "codex"
+    "codex",
+    "gemini-cli"
    ],
    "alternatives": [
     "superpowers"
@@ -6010,7 +6324,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skills de ingeniería de Addy Osmani (MIT) para agentes de código, centradas en procesos de nivel producción. Activas (0.6.16).",
+   "que_hace": "25 skills y 9 comandos que cubren el ciclo de desarrollo: `/spec`, `/plan`, `/build`, `/test`, `/constraints`, `/review`, `/webperf`, `/code-simplify` y `/ship`. Incluyen revisión en cinco ejes, entrevista de requisitos y TDD obligatorio.",
+   "como_lo_hace": "Se instalan con `npx skills add addyosmani/agent-skills` (todas o `--skill` por separado), como plugin de Claude Code (`/plugin marketplace add addyosmani/agent-skills`) o a mano en Cursor (`.cursor/skills` y reglas `.mdc`) y Gemini CLI.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial; los comandos se instalan con su espacio de nombres.",
+     "orden_instalacion": "Usa la forma con espacio de nombres si choca con `/review`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Instalable con skills CLI.",
+     "orden_instalacion": "`npx skills add addyosmani/agent-skills`."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Guía de instalación documentada.",
+     "orden_instalacion": "Sigue la sección de Gemini CLI."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): superpowers.",
+   "descripcion_fuentes": [
+    "https://github.com/addyosmani/agent-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "addyosmani/agent-skills",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "0.6.16 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
   },
   "skills": {
    "name": "skills",
@@ -6030,7 +6383,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar",
    "combines_with": [
-    "awesome-agent-skills"
+    "claude-code",
+    "claude-plugins-official",
+    "codex"
    ],
    "alternatives": [],
    "repo": "https://github.com/mattpocock/skills",
@@ -6126,7 +6481,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skills de agente de Matt Pocock (MIT) para «ingeniería real, no vibe coding»: pequeñas, adaptables y combinables. Activas (v1.3.2).",
+   "que_hace": "Incluye skills para preguntar qué flujo conviene (`ask-matt`), sesiones de interrogatorio que generan documentación, triaje de incidencias, mejora de arquitectura, convertir conversaciones en especificaciones y tickets, implementar especificaciones, planificar trabajos grandes, retrospectivas y prototipos desechables. El autor las presenta como alternativa a procesos más rígidos como GSD, BMAD o Spec-Kit.",
+   "como_lo_hace": "Se instalan como plugin con actualización automática en Claude Code (`claude plugin install mattpocock-skills@claude-plugins-official`), Codex y GitHub Copilot (CLI y VS Code), o como archivos editables con `npx skills@latest add mattpocock/skills -a <agente>`. Recomienda elegir un solo método por agente e incluir `setup-matt-pocock-skills`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial.",
+     "orden_instalacion": "No combines el plugin con skills.sh en el mismo agente: duplicarías las skills."
+    },
+    {
+     "id": "claude-plugins-official",
+     "motivo": "Marketplace desde el que se instala en Claude Code.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "codex",
+     "motivo": "Marketplace propio para Codex.",
+     "orden_instalacion": "`codex plugin marketplace add mattpocock/skills`."
+    }
+   ],
+   "descripcion_notas": "Se quitó awesome-agent-skills: es un catálogo, no una integración.",
+   "descripcion_fuentes": [
+    "https://github.com/mattpocock/skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mattpocock/skills",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "latest_release": "v1.3.2 (2026-10-29)",
+    "checked_at": "2026-11-15"
+   }
   },
   "superpowers": {
    "name": "superpowers",
@@ -6146,8 +6540,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README",
    "combines_with": [
-    "awesome-claude-code",
-    "agent-toolkit"
+    "claude-plugins-official",
+    "codex",
+    "gemini-cli",
+    "hermes-agent"
    ],
    "alternatives": [
     "agent-skills"
@@ -6243,7 +6639,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Metodología completa de desarrollo para agentes de código de Jesse Vincent y Prime Radiant (MIT), basada en skills combinables. Muy activa (v7.0.2); Prime Radiant ofrece soporte comercial.",
+   "que_hace": "Antes de programar, el agente pregunta qué quieres conseguir, redacta una especificación en partes legibles, pide aprobación, crea un plan, aísla el trabajo en git worktrees y ejecuta tareas con subagentes y revisión (`subagent-driven-development`), con TDD. Su componente visual opcional carga el logo de Prime Radiant desde su web por defecto, e incluye la versión instalada: es telemetría mínima que, según el README, no envía detalles del proyecto ni de los prompts.",
+   "como_lo_hace": "Skills más instrucciones iniciales y hooks de sesión. Se instala por separado en cada herramienta: Claude Code (`/plugin install superpowers@claude-plugins-official`), Codex, Cursor, Gemini CLI (`gemini extensions install`), Copilot CLI, OpenCode, Hermes Agent y otros.",
+   "combina_con": [
+    {
+     "id": "claude-plugins-official",
+     "motivo": "Disponible en el marketplace oficial.",
+     "orden_instalacion": "Instala desde ese marketplace."
+    },
+    {
+     "id": "codex",
+     "motivo": "Instalación documentada (app y CLI).",
+     "orden_instalacion": "Sigue la sección de Codex."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Extensión de Gemini CLI.",
+     "orden_instalacion": "`gemini extensions install https://github.com/obra/superpowers`."
+    },
+    {
+     "id": "hermes-agent",
+     "motivo": "Instalación documentada para Hermes Agent.",
+     "orden_instalacion": "Reinicia la sesión tras instalar para activar los hooks."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): agent-skills. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
+   "descripcion_fuentes": [
+    "https://github.com/obra/superpowers/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "obra/superpowers",
+    "archived": false,
+    "pushed_at": "2026-11-03",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "latest_release": "v7.0.2 (2026-11-03)",
+    "checked_at": "2026-11-15"
+   }
   },
   "ecc": {
    "name": "ECC",
@@ -6263,9 +6703,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes",
    "combines_with": [
-    "openhands",
-    "sandbox",
-    "hermes-agent"
+    "claude-code",
+    "codex",
+    "opencode",
+    "gemini-cli"
    ],
    "alternatives": [],
    "repo": "https://github.com/affaan-m/ECC",
@@ -6361,7 +6802,51 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "ECC, de affaan-m, se presenta como un «sistema operativo de harness» para agentes (MIT). Es open core: el producto ECC Pro es una GitHub App de pago para repositorios privados. Muy activo (v2.2.3), con un solo mantenedor financiado por patrocinadores.",
+   "que_hace": "Da al agente un sistema de ingeniería coordinado: planifica antes de construir, verifica con tests, revisa su propio trabajo desde un contexto limpio, recuerda lo importante y aprende de forma continua. Incluye 71 agentes, 314 skills, 98 comandos heredados, hooks, reglas, memoria y el escáner de seguridad AgentShield.",
+   "como_lo_hace": "Se instala como plugin `ecc@ecc` en Claude Code (asistente guiado o comandos nativos, sin mezclar ambos) y por los paquetes npm `ecc-universal` y `ecc-agentshield`. Funciona mejor con Claude Code; tiene vías nativas para Codex y Qoder y adaptadores limitados para Cursor, OpenCode, Gemini, Zed, Copilot y otros.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plataforma principal (plugin `ecc@ecc`).",
+     "orden_instalacion": "Elige un solo método de instalación."
+    },
+    {
+     "id": "codex",
+     "motivo": "Plugin nativo.",
+     "orden_instalacion": "Consulta la matriz de soporte antes de esperar las mismas funciones."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Adaptador con capacidades limitadas.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Adaptador con capacidades limitadas.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "descripcion_notas": "El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
+   "descripcion_fuentes": [
+    "https://github.com/affaan-m/ECC/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "affaan-m/ECC",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v2.2.3 (2026-10-01)",
+    "checked_at": "2026-11-15"
+   }
   },
   "andrej-karpathy-skills": {
    "name": "andrej-karpathy-skills",
@@ -6381,8 +6866,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad",
    "combines_with": [
-    "awesome-claude-code",
-    "context-engineering"
+    "claude-code",
+    "codex",
+    "multica"
    ],
    "alternatives": [],
    "repo": "https://github.com/multica-ai/andrej-karpathy-skills",
@@ -6477,7 +6963,43 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Un solo archivo `CLAUDE.md`, con plugin de Claude Code, basado en las observaciones de Andrej Karpathy sobre los fallos de los LLM al programar. Lo mantiene multica-ai, cuyo autor promociona su plataforma Multica. No declara licencia y su último cambio es de abril de 2026.",
+   "que_hace": "Aplica cuatro principios: pensar antes de programar (no asumir, aclarar dudas, mostrar alternativas), simplicidad primero (sin abstracciones infladas), cambios quirúrgicos (no tocar código ajeno a la tarea) y ejecución orientada a objetivos con criterios verificables y tests primero.",
+   "como_lo_hace": "Se copia el `CLAUDE.md` al proyecto o se instala como plugin (`/plugin marketplace add forrestchang/andrej-karpathy-skills`, ruta que todavía usa el README tras el cambio de propietario).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Formato CLAUDE.md y plugin.",
+     "orden_instalacion": "Copia el archivo o instala el plugin."
+    },
+    {
+     "id": "codex",
+     "motivo": "Los mismos principios pueden ir en un AGENTS.md (combinación por arquitectura).",
+     "orden_instalacion": "Adapta el texto al AGENTS.md del proyecto."
+    },
+    {
+     "id": "multica",
+     "motivo": "Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    }
+   ],
+   "descripcion_notas": "Sin licencia declarada. Se quitaron awesome-claude-code y context-engineering porque no hay integración.",
+   "descripcion_fuentes": [
+    "https://github.com/multica-ai/andrej-karpathy-skills/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "multica-ai/andrej-karpathy-skills",
+    "archived": false,
+    "pushed_at": "2026-04-20",
+    "checked_at": "2026-11-15"
+   }
   },
   "ponytail": {
    "name": "Ponytail",
@@ -6498,7 +7020,7 @@
    "limits": "Codex tiene hooks propios; los adaptadores de solo instrucciones no ofrecen todos los comandos ni la banda de estado",
    "combines_with": [
     "claude-code",
-    "superpowers",
+    "codex",
     "andrej-karpathy-skills"
    ],
    "alternatives": [],
@@ -6593,7 +7115,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Skill de DietrichGebert (MIT) que hace que el agente escriba solo el código necesario. Activa (v5.3.3); sus benchmarks son del propio proyecto.",
+   "que_hace": "Antes de escribir código, sube una «escalera» de preguntas (¿hace falta?, ¿ya existe en el código?, ¿lo resuelve la plataforma?) y nunca recorta validación, gestión de errores, seguridad ni accesibilidad. El README dice que, frente a no usarla, reduce un 53 % el código, un 41 % el tiempo, un 26 % el coste y un 45 % los tokens [DATO NO VERIFICADO: benchmark propio en Claude Code, 39 tareas].",
+   "como_lo_hace": "Se instala como plugin de Claude Code (`/plugin marketplace add DietrichGebert/ponytail`). En otros agentes se copia su `AGENTS.md` o se instala `skills/ponytail/SKILL.md`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial y entorno de sus benchmarks.",
+     "orden_instalacion": "Instala el plugin."
+    },
+    {
+     "id": "codex",
+     "motivo": "Funciona copiando el AGENTS.md.",
+     "orden_instalacion": "Copia el AGENTS.md al proyecto."
+    },
+    {
+     "id": "andrej-karpathy-skills",
+     "motivo": "Principios compatibles de simplicidad y cambios mínimos (combinación por arquitectura).",
+     "orden_instalacion": "Evita instrucciones contradictorias si usas ambos."
+    }
+   ],
+   "descripcion_notas": "Se quitó superpowers porque no hay integración.",
+   "descripcion_fuentes": [
+    "https://github.com/DietrichGebert/ponytail/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "DietrichGebert/ponytail",
+    "archived": false,
+    "pushed_at": "2026-10-29",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "v5.3.3 (2026-10-29)",
+    "checked_at": "2026-11-15"
+   }
   },
   "spec-kit": {
    "name": "Spec Kit",
@@ -6710,7 +7271,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Kit de código abierto de GitHub (MIT) que da a los agentes de código procesos estructurados, plantillas reutilizables y resultados documentados. Muy activo (v1.4.0).",
+   "que_hace": "Ofrece desarrollo guiado por especificaciones (en el núcleo), corrección de errores y evaluación de ideas (como extensiones), además de primitivas para adaptar o crear procesos: integraciones, extensiones, overlays de flujos, paquetes por rol y catálogos autoalojados para trabajar sin conexión.",
+   "como_lo_hace": "CLI en Python 3.11+ instalada con uv (`uv tool install specify-cli`, luego `specify init <proyecto> --integration <agente>`). Soporta decenas de agentes, entre ellos Claude Code (`claude`), Codex CLI (`codex`), Gemini CLI (`gemini`), GitHub Copilot, Cursor, opencode y Hermes. Las extensiones comunitarias deben revisarse antes de instalarlas.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Integración `--integration claude`.",
+     "orden_instalacion": "Instala el agente antes de `specify init`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Integración `--integration codex`.",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Integración `--integration gemini`.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): bmad-method.",
+   "descripcion_fuentes": [
+    "https://github.com/github/spec-kit/blob/main/README.md",
+    "https://github.github.io/spec-kit/integrations/index.html"
+   ],
+   "descripcion_revision": {
+    "batch": "10-skills-plugins-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "github/spec-kit",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.4.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "bmad-method": {
    "name": "BMAD Method",

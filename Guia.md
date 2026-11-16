@@ -292,7 +292,7 @@ Catálogos de skills, plugins y métodos generales de desarrollo. Elige según t
 /plugin install document-skills@anthropic-agent-skills
 /plugin install example-skills@anthropic-agent-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer campos de un formulario PDF propio; Crear una presentación usando las instrucciones de la skill de diapositivas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Claude Code Plugins Directory](human/fichas/claude-plugins-official.md) · [superpowers](human/fichas/superpowers.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [SkillSpector](human/fichas/skillspector.md) · [claude-agent-sdk-python](human/fichas/claude-agent-sdk-python.md)<br>
 **Más:** [ficha completa](human/fichas/anthropic-skills.md) · [GitHub](https://github.com/anthropics/skills)
 
 #### 🔌 Claude Code Plugins Directory ⭐
@@ -301,7 +301,7 @@ Catálogos de skills, plugins y métodos generales de desarrollo. Elige según t
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://code.claude.com/docs/en/plugins); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir una herramienta de revisión al flujo de desarrollo; Conectar un servicio mediante un plugin publicado en el marketplace oficial — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Anthropic Skills](human/fichas/anthropic-skills.md) · [Awesome Claude Code](human/fichas/awesome-claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [superpowers](human/fichas/superpowers.md) · [skills](human/fichas/skills.md)<br>
 **Más:** [ficha completa](human/fichas/claude-plugins-official.md) · [GitHub](https://github.com/anthropics/claude-plugins-official)
 
 #### 🗂️ Awesome Claude Skills
@@ -319,7 +319,7 @@ Catálogos de skills, plugins y métodos generales de desarrollo. Elige según t
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar ejemplos para personalizar una sesión de Claude Code; Comparar herramientas que muestran el uso del agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Claude Code Plugins Directory](human/fichas/claude-plugins-official.md) · [superpowers](human/fichas/superpowers.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Claude Code Plugins Directory](human/fichas/claude-plugins-official.md) · [SkillSpector](human/fichas/skillspector.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-claude-code.md) · [GitHub](https://github.com/hesreallyhim/awesome-claude-code)
 
 #### 🗂️ Agentic Awesome Skills (AAS)
@@ -329,7 +329,7 @@ Catálogos de skills, plugins y métodos generales de desarrollo. Elige según t
 **Comando documentado:** `gh skill preview sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md@v20.8.0
 gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --agent codex --scope user --pin v20.8.0` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [SkillSpector](human/fichas/skillspector.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Codex CLI](human/fichas/codex.md) · [Claude Code](human/fichas/claude-code.md) · [GitHub CLI](human/fichas/cli.md) · [SkillSpector](human/fichas/skillspector.md)<br>
 **Más:** [ficha completa](human/fichas/antigravity-awesome-skills.md) · [GitHub](https://github.com/sickn33/agentic-awesome-skills)
 
 #### 🗂️ wshobson/agents
@@ -339,7 +339,7 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Comando documentado:** `/plugin marketplace add wshobson/agents
 /plugin install python-development@claude-code-workflows` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [SkillSpector](human/fichas/skillspector.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/wshobson-agents.md) · [GitHub](https://github.com/wshobson/agents)
 
 #### 🗂️ Awesome GitHub Copilot
@@ -357,7 +357,7 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [SkillSpector](human/fichas/skillspector.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [SkillSpector](human/fichas/skillspector.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-agent-skills.md) · [GitHub](https://github.com/VoltAgent/awesome-agent-skills)
 
 #### 🎨 skills
@@ -414,7 +414,7 @@ npx skills add google-gemini/gemini-skills --skill gemini-api-dev` (comprobar lo
 **Comando documentado:** `npx skills add addyosmani/agent-skills            # install all 25 skills
 npx skills add addyosmani/agent-skills --list     # browse before installing` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una especificación antes de escribir una funcionalidad; Revisar un diff con criterios de calidad y pruebas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
 **Más:** [ficha completa](human/fichas/agent-skills.md) · [GitHub](https://github.com/addyosmani/agent-skills)
 
 #### 📦 skills
@@ -423,7 +423,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `claude plugin install mattpocock-skills@claude-plugins-official` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar requisitos de una función antes de implementarla; Organizar una refactorización pequeña con un plan revisable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Awesome Agent Skills](human/fichas/awesome-agent-skills.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Claude Code Plugins Directory](human/fichas/claude-plugins-official.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/skills.md) · [GitHub](https://github.com/mattpocock/skills)
 
 #### 💪 superpowers
@@ -432,7 +432,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `/plugin install superpowers@claude-plugins-official` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Dividir una funcionalidad en tareas que se puedan verificar; Trabajar con pruebas y revisión antes de cerrar un cambio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Awesome Claude Code](human/fichas/awesome-claude-code.md) · [agent-toolkit](human/fichas/agent-toolkit.md)<br>
+**Combina con:** [Claude Code Plugins Directory](human/fichas/claude-plugins-official.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
 **Más:** [ficha completa](human/fichas/superpowers.md) · [GitHub](https://github.com/obra/superpowers)
 
 #### 🌌 ECC
@@ -441,7 +441,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx ecc-universal@2.2.3 setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Configurar convenciones, skills y comprobaciones para un equipo; Probar una mejora de contexto sin activar todos los componentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OpenHands](human/fichas/openhands.md) · [sandbox](human/fichas/sandbox.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
 **Más:** [ficha completa](human/fichas/ecc.md) · [GitHub](https://github.com/affaan-m/ECC)
 
 #### 🧠 andrej-karpathy-skills
@@ -452,7 +452,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 
 /plugin install andrej-karpathy-skills@karpathy-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evitar una refactorización amplia para corregir un fallo pequeño; Hacer explícitas dudas y criterios de éxito antes de programar — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Awesome Claude Code](human/fichas/awesome-claude-code.md) · [Context-Engineering](human/fichas/context-engineering.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [multica](human/fichas/multica.md)<br>
 **Más:** [ficha completa](human/fichas/andrej-karpathy-skills.md) · [GitHub](https://github.com/multica-ai/andrej-karpathy-skills)
 
 #### 🧭 Ponytail
@@ -463,7 +463,7 @@ npx skills add addyosmani/agent-skills --list     # browse before installing` (c
 
 /plugin install ponytail@ponytail` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar deuda técnica y detectar código que se puede eliminar; Evaluar alternativas sencillas antes de crear una abstracción nueva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [superpowers](human/fichas/superpowers.md) · [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md)<br>
 **Más:** [ficha completa](human/fichas/ponytail.md) · [GitHub](https://github.com/DietrichGebert/ponytail)
 
 #### 🧭 Spec Kit

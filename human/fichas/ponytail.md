@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill de DietrichGebert (MIT) que hace que el agente escriba solo el código necesario. Activa (v5.3.3); sus benchmarks son del propio proyecto.
+
+## ¿Qué hace?
+
+Antes de escribir código, sube una «escalera» de preguntas (¿hace falta?, ¿ya existe en el código?, ¿lo resuelve la plataforma?) y nunca recorta validación, gestión de errores, seguridad ni accesibilidad. El README dice que, frente a no usarla, reduce un 53 % el código, un 41 % el tiempo, un 26 % el coste y un 45 % los tokens [DATO NO VERIFICADO: benchmark propio en Claude Code, 39 tareas].
+
+## ¿Cómo lo hace?
+
+Se instala como plugin de Claude Code (`/plugin marketplace add DietrichGebert/ponytail`). En otros agentes se copia su `AGENTS.md` o se instala `skills/ponytail/SKILL.md`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial y entorno de sus benchmarks. | Instala el plugin. |
+| [Codex CLI](codex.md) | Funciona copiando el AGENTS.md. | Copia el AGENTS.md al proyecto. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | Principios compatibles de simplicidad y cambios mínimos (combinación por arquitectura). | Evita instrucciones contradictorias si usas ambos. |
+
+**Notas:** Se quitó superpowers porque no hay integración.
+
+Estado en GitHub: activo · último push 2026-10-29 · última versión publicada v5.3.3 (2026-10-29) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/DietrichGebert/ponytail/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Codex tiene hooks propios; los adaptadores de solo instrucciones no ofrecen todos los comandos ni la banda de estado |
 | Coste | Consumo del agente que ya utilizas. Se consume el acceso del agente; las cifras de ahorro del autor no predicen el coste de tu sesión |
 | Equipo | Preparación según la ruta elegida. Agente compatible;  proyecto donde comparar un cambio pequeño |
-
-Codex tiene hooks propios; los adaptadores de solo instrucciones no ofrecen todos los comandos ni la banda de estado
-
-## Qué puedes hacer con él
-
-Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes.
-
-## Por qué destaca
-
-Usos propuestos: Revisar deuda técnica y detectar código que se puede eliminar; Evaluar alternativas sencillas antes de crear una abstracción nueva.
-
-## Cómo funciona
 
 Codex tiene hooks propios; los adaptadores de solo instrucciones no ofrecen todos los comandos ni la banda de estado
 
@@ -94,14 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible;  proyecto donde comparar un cambio pequeño
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
-| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy. |
 
 ## Enlaces
 

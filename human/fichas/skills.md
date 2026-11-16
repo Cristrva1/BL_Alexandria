@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skills de agente de Matt Pocock (MIT) para «ingeniería real, no vibe coding»: pequeñas, adaptables y combinables. Activas (v1.3.2).
+
+## ¿Qué hace?
+
+Incluye skills para preguntar qué flujo conviene (`ask-matt`), sesiones de interrogatorio que generan documentación, triaje de incidencias, mejora de arquitectura, convertir conversaciones en especificaciones y tickets, implementar especificaciones, planificar trabajos grandes, retrospectivas y prototipos desechables. El autor las presenta como alternativa a procesos más rígidos como GSD, BMAD o Spec-Kit.
+
+## ¿Cómo lo hace?
+
+Se instalan como plugin con actualización automática en Claude Code (`claude plugin install mattpocock-skills@claude-plugins-official`), Codex y GitHub Copilot (CLI y VS Code), o como archivos editables con `npx skills@latest add mattpocock/skills -a <agente>`. Recomienda elegir un solo método por agente e incluir `setup-matt-pocock-skills`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial. | No combines el plugin con skills.sh en el mismo agente: duplicarías las skills. |
+| [Claude Code Plugins Directory](claude-plugins-official.md) | Marketplace desde el que se instala en Claude Code. | Igual que arriba. |
+| [Codex CLI](codex.md) | Marketplace propio para Codex. | `codex plugin marketplace add mattpocock/skills`. |
+
+**Notas:** Se quitó awesome-agent-skills: es un catálogo, no una integración.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.3.2 (2026-10-29) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mattpocock/skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar |
 | Coste | Consumo del agente que ya utilizas. Las skills consumen el agente; no suministran un modelo ni créditos de API |
 | Equipo | Preparación según la ruta elegida. Claude Code o Codex;  carpeta de prueba para la primera skill |
-
-El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar
-
-## Qué puedes hacer con él
-
-Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plugins para Claude Code y Codex.
-
-## Por qué destaca
-
-Usos propuestos: Revisar requisitos de una función antes de implementarla; Organizar una refactorización pequeña con un plan revisable.
-
-## Cómo funciona
 
 El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code o Codex;  carpeta de prueba para la primera skill
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
 
 ## Enlaces
 

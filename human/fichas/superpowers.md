@@ -10,6 +10,33 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Metodología completa de desarrollo para agentes de código de Jesse Vincent y Prime Radiant (MIT), basada en skills combinables. Muy activa (v7.0.2); Prime Radiant ofrece soporte comercial.
+
+## ¿Qué hace?
+
+Antes de programar, el agente pregunta qué quieres conseguir, redacta una especificación en partes legibles, pide aprobación, crea un plan, aísla el trabajo en git worktrees y ejecuta tareas con subagentes y revisión (`subagent-driven-development`), con TDD. Su componente visual opcional carga el logo de Prime Radiant desde su web por defecto, e incluye la versión instalada: es telemetría mínima que, según el README, no envía detalles del proyecto ni de los prompts.
+
+## ¿Cómo lo hace?
+
+Skills más instrucciones iniciales y hooks de sesión. Se instala por separado en cada herramienta: Claude Code (`/plugin install superpowers@claude-plugins-official`), Codex, Cursor, Gemini CLI (`gemini extensions install`), Copilot CLI, OpenCode, Hermes Agent y otros.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code Plugins Directory](claude-plugins-official.md) | Disponible en el marketplace oficial. | Instala desde ese marketplace. |
+| [Codex CLI](codex.md) | Instalación documentada (app y CLI). | Sigue la sección de Codex. |
+| [Gemini CLI](gemini-cli.md) | Extensión de Gemini CLI. | `gemini extensions install https://github.com/obra/superpowers`. |
+| [hermes-agent](hermes-agent.md) | Instalación documentada para Hermes Agent. | Reinicia la sesión tras instalar para activar los hooks. |
+
+**Notas:** Alternativa (elige una): agent-skills. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.
+
+Estado en GitHub: activo · último push 2026-11-03 · última versión publicada v7.0.2 (2026-11-03) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obra/superpowers/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README |
 | Coste | Consumo del agente que ya utilizas. La metodología usa el acceso del agente anfitrión; sus benchmarks no son una promesa de ahorro para tu proyecto |
 | Equipo | Preparación según la ruta elegida. Cliente compatible;  proyecto pequeño o carpeta de prueba |
-
-Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README
-
-## Qué puedes hacer con él
-
-Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque.
-
-## Por qué destaca
-
-Usos propuestos: Dividir una funcionalidad en tareas que se puedan verificar; Trabajar con pruebas y revisión antes de cerrar un cambio.
-
-## Cómo funciona
 
 Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README
 
@@ -92,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Cliente compatible;  proyecto pequeño o carpeta de prueba
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Awesome Claude Code](awesome-claude-code.md) | 58k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
-| [agent-toolkit](agent-toolkit.md) | 2.7k | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. |
 
 ## Alternativas (elige una)
 

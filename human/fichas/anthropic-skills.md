@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Repositorio oficial de Anthropic con su implementación de skills para Claude: carpetas de instrucciones, scripts y recursos que Claude carga bajo demanda. Muy activo y sin releases. GitHub no detecta una licencia de repositorio, pero el README dice que muchas skills son Apache 2.0, incluidas las de documentos.
+
+## ¿Qué hace?
+
+Reúne skills de ejemplo que van de lo creativo (arte, música, diseño) a lo técnico (probar aplicaciones web, generar servidores MCP) y lo empresarial. Incluye las skills de documentos (docx, pdf, pptx, xlsx) que usa Claude para crear archivos, como referencia de skills complejas. Sirve de inspiración y como guía de patrones; el estándar abierto está en agentskills.io.
+
+## ¿Cómo lo hace?
+
+Cada skill es una carpeta con `SKILL.md` (instrucciones y metadatos) y recursos. Se instala como marketplace en Claude Code (`/plugin marketplace add anthropics/skills`, luego `document-skills` o `example-skills`). Las skills ya están disponibles en los planes de pago de Claude.ai y pueden usarse mediante la API de Claude.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalación oficial como marketplace de plugins. | Añade el marketplace e instala solo los paquetes que necesites. |
+| [SkillSpector](skillspector.md) | Auditar skills (scripts incluidos) antes de instalarlas (combinación por arquitectura). | Pasa SkillSpector sobre las carpetas antes de habilitarlas. |
+| [claude-agent-sdk-python](claude-agent-sdk-python.md) | Usar las skills dentro de agentes propios (combinación por arquitectura). | Copia las skills al directorio que cargue tu agente. |
+
+**Notas:** Se quitaron claude-plugins-official y superpowers porque no hay integración documentada.
+
+Estado en GitHub: activo · último push 2026-11-14 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes |
 | Coste | Consumo del agente que ya utilizas. El agente consume su acceso habitual; cada skill puede necesitar programas adicionales y recursos de cómputo |
 | Equipo | Preparación según la ruta elegida. Claude Code activo;  dependencias de la skill de documentos elegida |
-
-La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes
-
-## Qué puedes hacer con él
-
-Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills.
-
-## Por qué destaca
-
-Usos propuestos: Extraer campos de un formulario PDF propio; Crear una presentación usando las instrucciones de la skill de diapositivas.
-
-## Cómo funciona
 
 La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes
 
@@ -95,14 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code activo;  dependencias de la skill de documentos elegida
 - **Etiquetas:** `skills` `docs` `pdf` `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Claude Code Plugins Directory](claude-plugins-official.md) | 47.3k | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. |
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
 ## Enlaces
 

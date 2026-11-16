@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Repositorio de Anthropic (Apache 2.0) con sus propios plugins para Claude y el marketplace `claude-plugins-official` de Claude Code. Está en transición: los envíos de terceros ya se hacen en claude.ai/directory/manage.
+
+## ¿Qué hace?
+
+Contiene plugins internos de Anthropic (`/plugins`) y plugins de terceros añadidos antes del cambio, además de los plugins de canal de Anthropic (Discord, iMessage, Telegram) en `/external_plugins`. El `marketplace.json` se irá reduciendo a los plugins propios de Anthropic. El README advierte que Anthropic no controla los servidores MCP ni el software que incluyen los plugins.
+
+## ¿Cómo lo hace?
+
+Se usa desde el sistema de plugins de Claude Code: `/plugin install <nombre>@claude-plugins-official` o `/plugin > Discover`. Las entradas pueden declarar skills de repositorios externos en modo estricto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Marketplace oficial de plugins. | Revisa cada plugin antes de instalarlo, como recomienda el README. |
+| [superpowers](superpowers.md) | Se instala desde este marketplace (`superpowers@claude-plugins-official`). | `/plugin install superpowers@claude-plugins-official`. |
+| [skills](skills.md) | Las skills de Matt Pocock se instalan desde este marketplace. | `claude plugin install mattpocock-skills@claude-plugins-official`. |
+
+**Notas:** Alternativa (elige una): wshobson-agents. Se quitaron anthropic-skills y awesome-claude-code: son catálogos paralelos, no integraciones.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/claude-plugins-official/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un directorio gestionado por Anthropic; instalar un plugin no implica instalar todos los del repositorio |
 | Coste | Consumo del agente que ya utilizas. El marketplace no incluye tarifas de todos sus servicios; el agente y cada integración conservan sus costes |
 | Equipo | Preparación según la ruta elegida. Claude Code;  elegir un plugin y revisar sus dependencias |
-
-Es un directorio gestionado por Anthropic; instalar un plugin no implica instalar todos los del repositorio
-
-## Qué puedes hacer con él
-
-Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code.
-
-## Por qué destaca
-
-Usos propuestos: Añadir una herramienta de revisión al flujo de desarrollo; Conectar un servicio mediante un plugin publicado en el marketplace oficial.
-
-## Cómo funciona
 
 Es un directorio gestionado por Anthropic; instalar un plugin no implica instalar todos los del repositorio
 
@@ -85,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code;  elegir un plugin y revisar sus dependencias
 - **Etiquetas:** `skills` `coding-agent` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Anthropic Skills](anthropic-skills.md) | 195k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. |
-| [Awesome Claude Code](awesome-claude-code.md) | 58k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
 
 ## Alternativas (elige una)
 
