@@ -219,9 +219,19 @@ def test_cli_batch_simulation_with_mocked_gh(monkeypatch, project: Path):
     gh = fake_gh({"acme/demo": _meta("acme/demo", 990010)})
     monkeypatch.setattr(add_mod, "gh_api", gh)
     monkeypatch.setattr(add_mod.run_add, "__kwdefaults__", {**add_mod.run_add.__kwdefaults__, "gh": gh})
+    from repo_intelligence.quality import metrics as metrics_mod
+
+    def fake_collect(root, targets, **_kw):
+        return {t["id"]: {"id": t["id"], "fecha": "2026-11-16", "estrellas": 4321, "estrellas_anio": 900.0, "edad_dias": 1800,
+                          "commits_90d": 40, "releases_365d": 6, "primera_respuesta_dias": 1.0, "ratio_cerradas": 0.9,
+                          "cuota_principal": 0.5, "semver_mayor": 1, "licencia_spdx": "MIT", "propietario": "acme",
+                          "propietario_tipo": "Organization", "lenguaje": "Go", "scorecard": None} for t in targets}
+
+    monkeypatch.setattr(metrics_mod, "collect", fake_collect)
     result = CliRunner().invoke(app, ["add", "--desde", str(lote), "--simular"])
     assert result.exit_code == 0, result.output
     assert "demo" in result.output and "simulación" in result.output
+    assert "Calidad al alta" in result.output and "/100" in result.output
 
 
 def test_catalog_has_no_pending_drafts():

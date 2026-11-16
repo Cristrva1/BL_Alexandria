@@ -486,6 +486,7 @@ def add_command(
     aplicar_combos: Annotated[bool, typer.Option("--aplicar-combos", help="Escribe las sugeridas y completa la reciprocidad (máx. 6).")] = False,
     simular: Annotated[bool, typer.Option("--simular", help="Valida y muestra el resultado sin escribir.")] = False,
     construir: Annotated[bool, typer.Option("--construir", help="Tras el alta, regenera guías, menú portable, web/ y docs/.")] = False,
+    sin_metricas: Annotated[bool, typer.Option("--sin-metricas", help="No pide métricas públicas al dar de alta (la puntuación queda pendiente).")] = False,
 ) -> None:
     """Da de alta repos en el catálogo (o sugiere combinaciones para uno existente).
 
@@ -560,6 +561,23 @@ def add_command(
         console.print(f"Recíprocas añadidas en {len(result.reciprocal)} repos: " + ", ".join(sorted(result.reciprocal)))
     if any(a["borrador"] for a in result.added):
         console.print("[yellow]Hay entradas en borrador (PENDIENTE). Completa sus textos antes de publicar: los tests lo exigen.[/yellow]")
+    if result.added and result.compact is not None:
+        from repo_intelligence.quality import onboard
+
+        quality = onboard.evaluate(root, [a["id"] for a in result.added], result.compact, result.detail,
+                                   simulate=simular, fetch=not sin_metricas)
+        qt = Table(title="Calidad al alta" + (" (simulación)" if simular else ""))
+        for col in ("id", "puntuación", "complejidad", "grupo de similares"):
+            qt.add_column(col)
+        for rid, q in quality.items():
+            g = q["grupo"]
+            qt.add_row(rid, "—" if q["puntuacion"] is None else f"{q['puntuacion']:.0f}/100",
+                       f"{q['complejidad']['nivel']} {q['complejidad']['nombre']}",
+                       f"{g['titulo']} · posición {g['posicion']} de {g['total']}" if g else "—")
+        console.print(qt)
+        for rid, q in quality.items():
+            for warning in q["avisos"]:
+                console.print(f"[yellow]Aviso[/yellow] {rid}: {warning}")
     if sugerir_combos:
         for a in result.added:
             show_suggestions(a["id"])
