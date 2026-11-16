@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Puente Zigbee de código abierto (GPL-3.0) creado por Koen Kanters (Koenkk) y mantenido por una comunidad grande. Muy maduro y con miles de dispositivos soportados.

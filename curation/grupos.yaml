@@ -1,0 +1,1041 @@
+# Grupos de similares curados (fuente de verdad).
+# Sembrados el 2026-11-16 con quality/similar.py (TF-IDF + temas + alt, umbral 0.30, máximo 8 por grupo)
+# y corregidos a mano. `cuando`: una línea «cuándo elegir este»; sin línea se usa la descripción corta.
+# `caso_unico`: miembros que cubren un caso que los demás no (nunca se proponen para retiro por duplicidad).
+# El orden y el papel (recomendado/alternativa) NO se escriben aquí: salen de la puntuación de calidad.
+# `sin_grupo`: repos que la similitud agrupa pero que cubren otro caso (no se proponen de nuevo).
+sin_grupo: [open-interpreter, metagpt]
+grupos:
+- id: g-memoria-persistente-para-agentes-de-codigo
+  titulo: Memoria persistente para agentes de código
+  miembros:
+  - agentmemory
+  - claude-mem
+  - engram
+  cuando:
+    agentmemory: Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos.
+    claude-mem: Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más.
+    engram: Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra.
+- id: g-capas-de-memoria-para-apps-y-agentes-de-ia
+  titulo: Capas de memoria para apps y agentes de IA
+  miembros:
+  - cognee
+  - graphiti
+  - letta
+  - mem0
+  - supermemory
+  cuando:
+    cognee: Si quieres convertir documentos en un grafo de conocimiento consultable por agentes.
+    graphiti: Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo.
+    letta: Si quieres agentes con estado gestionados por un servidor (antes MemGPT).
+    mem0: Si tu app necesita memoria de usuario a largo plazo con una API sencilla.
+    supermemory: Si buscas una API de memoria y contexto rápida orientada a productos.
+  caso_unico:
+  - letta
+- id: g-agentes-de-programacion-en-terminal
+  titulo: Agentes de programación en terminal
+  miembros:
+  - aider
+  - antigravity-cli
+  - claude-code
+  - codex
+  - gemini-cli
+  - goose
+  - mimo-code
+  - opencode
+  - qwen-code
+  cuando:
+    aider: 'Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo.'
+    antigravity-cli: Si usas Antigravity de Google y quieres su agente desde la terminal.
+    claude-code: Si usas Claude (Pro/Max o API) y quieres el agente de terminal más maduro con skills, hooks y subagentes.
+    codex: Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox.
+    gemini-cli: Si trabajas con Google Code Assist empresarial; para uso individual Google remite a Antigravity CLI.
+    goose: Si quieres un agente local extensible por MCP, con app de escritorio además de la CLI.
+    mimo-code: Si quieres probar el agente de Xiaomi MiMo con memoria persistente.
+    opencode: Si quieres un agente de terminal independiente del proveedor, con TUI cuidada y muchos modelos.
+    qwen-code: Si quieres un agente de terminal que hable con varios protocolos (OpenAI, Anthropic, Gemini) o con modelos locales.
+- id: g-interfaces-de-chat-con-llm
+  titulo: Interfaces de chat con LLM
+  miembros:
+  - chatbox
+  - cherry-studio
+  - jan
+  - librechat
+  - lobehub
+  - nextchat
+  - open-webui
+  - textgen
+  cuando:
+    chatbox: Si quieres un cliente de escritorio y móvil sencillo para tus claves de API.
+    cherry-studio: Si quieres un cliente de escritorio para muchos proveedores con asistentes predefinidos.
+    jan: Si prefieres una app de escritorio que funcione sin conexión con modelos locales.
+    librechat: Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso.
+    lobehub: Si quieres una interfaz moderna con plugins, agentes y despliegue sencillo.
+    nextchat: Si quieres desplegar una interfaz ligera en Vercel con un clic.
+    open-webui: Si quieres la interfaz más completa para Ollama o APIs, multiusuario y con RAG.
+    textgen: Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers).
+  caso_unico:
+  - textgen
+- id: g-frameworks-de-agentes-en-python
+  titulo: Frameworks de agentes en Python
+  miembros:
+  - adk-python
+  - agno
+  - crewai
+  - deepagents
+  - langgraph
+  - openai-agents-python
+  - pydantic-ai
+  - smolagents
+  cuando:
+    adk-python: Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google.
+    agno: Si quieres un runtime de agentes con memoria, conocimiento y equipos listo para servir por API.
+    crewai: Si piensas en equipos de agentes con roles y tareas y quieres arrancar rápido.
+    deepagents: Si quieres agentes de largo recorrido con planificación, subagentes y sistema de archivos sobre LangGraph.
+    langgraph: Si necesitas flujos con estado, ciclos, checkpoints y control fino del grafo en producción.
+    openai-agents-python: Si usas la API de OpenAI y quieres handoffs, guardrails y trazas oficiales.
+    pydantic-ai: Si quieres salidas tipadas y validadas con Pydantic y un estilo cercano a FastAPI.
+    smolagents: Si quieres agentes mínimos que escriben código Python como acciones, de Hugging Face.
+- id: g-herramientas-internas-y-bases-de-datos-no-code
+  titulo: Herramientas internas y bases de datos no-code
+  miembros:
+  - appsmith
+  - baserow
+  - budibase
+  - grist-core
+  - nocodb
+  - teable
+  - tooljet
+  cuando:
+    appsmith: Si construyes paneles internos arrastrando componentes sobre APIs y bases de datos.
+    baserow: Si buscas una alternativa a Airtable auto-hospedada y fácil de usar.
+    budibase: Si quieres formularios, portales y automatizaciones internas con poco código.
+    grist-core: Si necesitas una hoja de cálculo relacional con fórmulas en Python.
+    nocodb: Si quieres una interfaz tipo Airtable sobre tu base de datos SQL existente.
+    teable: Si quieres una hoja-base de datos rápida sobre PostgreSQL con buen rendimiento en tablas grandes.
+    tooljet: Si quieres un builder de apps internas con muchos conectores y opciones de IA.
+  caso_unico:
+  - grist-core
+- id: g-bases-y-librerias-vectoriales
+  titulo: Bases y librerías vectoriales
+  miembros:
+  - chroma
+  - faiss
+  - lancedb
+  - milvus
+  - pgvector
+  - qdrant
+  - weaviate
+  cuando:
+    chroma: Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG.
+    faiss: Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU.
+    lancedb: Si quieres una base vectorial embebida sobre archivos, sin servidor.
+    milvus: Si necesitas escala de miles de millones de vectores y despliegue distribuido.
+    pgvector: Si ya usas PostgreSQL y quieres vectores en la misma base.
+    qdrant: Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local.
+    weaviate: Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados.
+  caso_unico:
+  - faiss
+  - pgvector
+- id: g-orquestadores-de-workflows-de-datos-y-tareas
+  titulo: Orquestadores de workflows de datos y tareas
+  miembros:
+  - airflow
+  - dagster
+  - kestra
+  - prefect
+  - trigger-dev
+  - windmill
+  cuando:
+    airflow: Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores.
+    dagster: Si piensas en activos de datos (tablas, modelos) con linaje y pruebas.
+    kestra: Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos.
+    prefect: Si quieres convertir funciones Python en flujos observables con muy poco código.
+    trigger-dev: Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas.
+    windmill: Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas.
+  caso_unico:
+  - airflow
+- id: g-bibliotecas-de-componentes-react
+  titulo: Bibliotecas de componentes React
+  miembros:
+  - ant-design
+  - chakra-ui
+  - heroui
+  - mantine
+  - mui
+  - ui
+  cuando:
+    ant-design: Si construyes paneles empresariales densos en datos.
+    chakra-ui: Si priorizas accesibilidad y estilos por props.
+    heroui: Si quieres componentes bonitos sobre Tailwind (antes NextUI).
+    mantine: Si quieres componentes y hooks completos con buena documentación y poca configuración.
+    mui: Si quieres Material Design y la biblioteca de componentes React más usada.
+    ui: Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui).
+- id: g-catalogos-de-skills-y-plugins-para-agentes
+  titulo: Catálogos de skills y plugins para agentes
+  miembros:
+  - antigravity-awesome-skills
+  - awesome-agent-skills
+  - awesome-claude-code
+  - awesome-claude-skills
+  - claude-plugins-official
+  - wshobson-agents
+  cuando:
+    antigravity-awesome-skills: Si quieres el catálogo más grande de skills instalables para varios agentes.
+    awesome-agent-skills: Si quieres skills en formato portable para varios agentes.
+    awesome-claude-code: Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos.
+    awesome-claude-skills: Si buscas skills para Claude ordenadas por tema.
+    claude-plugins-official: Si quieres solo plugins publicados por Anthropic.
+    wshobson-agents: Si quieres subagentes y plugins listos para Claude Code por especialidad.
+- id: g-conversion-de-documentos-a-markdown-json-para-ia
+  titulo: Conversión de documentos a Markdown/JSON para IA
+  miembros:
+  - docling
+  - marker
+  - mineru
+  - tika
+  - unstructured
+  - xberg
+  cuando:
+    docling: Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local.
+    marker: Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional.
+    mineru: Si procesas PDF científicos o en chino con fórmulas y maquetación compleja.
+    tika: Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado.
+    unstructured: Si quieres particionar muchos formatos en elementos para pipelines de RAG.
+    xberg: Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario.
+  caso_unico:
+  - tika
+- id: g-metodologias-y-harness-para-agentes-de-codigo
+  titulo: Metodologías y harness para agentes de código
+  miembros:
+  - agent-skills
+  - ecc
+  - gstack
+  - superclaude-framework
+  - superpowers
+  cuando:
+    agent-skills: Si quieres skills de ingeniería portables en el formato Agent Skills.
+    ecc: Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes.
+    gstack: Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code.
+    superclaude-framework: Si quieres comandos y personas para Claude Code organizados por fase.
+    superpowers: Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada.
+- id: g-apis-y-librerias-no-oficiales-de-whatsapp
+  titulo: APIs y librerías no oficiales de WhatsApp
+  miembros:
+  - baileys
+  - evolution-api
+  - waha
+  - whatsapp-web-js
+  - whatsmeow
+  cuando:
+    baileys: Si programas en Node.js y quieres la librería de bajo nivel por WebSocket.
+    evolution-api: Si quieres una API REST de WhatsApp lista para n8n, Chatwoot o CRMs.
+    waha: Si quieres WhatsApp por HTTP en un contenedor, con varios motores.
+    whatsapp-web-js: Si programas en Node.js y prefieres controlar WhatsApp Web con un navegador.
+    whatsmeow: Si programas en Go y quieres una librería multi-dispositivo eficiente.
+- id: g-mapas-e-indices-de-codigo-para-agentes
+  titulo: Mapas e índices de código para agentes
+  miembros:
+  - codebase-memory-mcp
+  - codegraph
+  - gitnexus
+  - graphify
+  - repomix
+  cuando:
+    codebase-memory-mcp: Si quieres un índice persistente del código servido por MCP con poco consumo de tokens.
+    codegraph: Si quieres un grafo de código local para que el agente navegue símbolos y dependencias.
+    gitnexus: Si quieres un grafo de conocimiento del código consultable por agentes vía MCP.
+    graphify: Si quieres convertir carpetas de código y documentos en un grafo navegable.
+    repomix: Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo.
+  caso_unico:
+  - repomix
+- id: g-clonacion-de-voz-y-tts-multilingue
+  titulo: Clonación de voz y TTS multilingüe
+  miembros:
+  - cosyvoice
+  - f5-tts
+  - fish-speech
+  - gpt-sovits
+  - index-tts
+  cuando:
+    cosyvoice: Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino.
+    f5-tts: Si quieres clonación de voz zero-shot con pocos segundos de audio.
+    fish-speech: Si buscas TTS multilingüe con clonación y buena latencia.
+    gpt-sovits: Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web.
+    index-tts: Si necesitas controlar duración y emoción de la voz sintetizada.
+- id: g-automatizacion-de-navegador-y-pruebas-e2e
+  titulo: Automatización de navegador y pruebas E2E
+  miembros:
+  - cypress
+  - playwright
+  - puppeteer
+  - selenium
+  - webdriverio
+  cuando:
+    cypress: Si haces pruebas de componentes y E2E de frontend dentro del navegador.
+    playwright: 'Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia.'
+    puppeteer: Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas.
+    selenium: Si necesitas el estándar W3C WebDriver, muchos lenguajes o grids existentes.
+    webdriverio: Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js.
+  caso_unico:
+  - selenium
+- id: g-crm-y-erp-auto-hospedados
+  titulo: CRM y ERP auto-hospedados
+  miembros:
+  - erpnext
+  - espocrm
+  - odoo
+  - suitecrm
+  - twenty-main
+  cuando:
+    erpnext: Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH.
+    espocrm: Si quieres un CRM ligero y personalizable en PHP.
+    odoo: Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema.
+    suitecrm: Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos.
+    twenty-main: Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado.
+  caso_unico:
+  - erpnext
+  - odoo
+- id: g-apps-web-de-datos-en-python
+  titulo: Apps web de datos en Python
+  miembros:
+  - gradio
+  - nicegui
+  - panel
+  - reflex
+  - streamlit
+  cuando:
+    gradio: Si quieres una demo de un modelo de IA con entradas y salidas en minutos.
+    nicegui: Si quieres una interfaz web en Python con control fino de componentes.
+    panel: Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos.
+    reflex: Si quieres una app web completa (frontend y backend) solo en Python.
+    streamlit: Si quieres convertir un script de datos en app web con la menor curva.
+  caso_unico:
+  - panel
+- id: g-observabilidad-y-trazas-de-llm
+  titulo: Observabilidad y trazas de LLM
+  miembros:
+  - helicone
+  - langfuse
+  - mlflow
+  - opik
+  - phoenix
+  cuando:
+    helicone: Si quieres observabilidad como proxy con solo cambiar la URL base.
+    langfuse: Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande.
+    mlflow: Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM.
+    opik: Si quieres trazas y evaluación de LLM con integración en pruebas.
+    phoenix: Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks.
+  caso_unico:
+  - mlflow
+- id: g-video-y-escenas-por-codigo
+  titulo: Video y escenas por código
+  miembros:
+  - hyperframes
+  - motion-canvas
+  - moviepy
+  - remotion
+  - revideo
+  cuando:
+    hyperframes: Si quieres que un agente componga video desde HTML con HeyGen HyperFrames.
+    motion-canvas: Si haces animaciones explicativas en TypeScript con editor en tiempo real.
+    moviepy: Si editas video desde Python (cortes, composición, texto) sin interfaz.
+    remotion: Si sabes React y quieres generar videos programáticos con calidad de producción (revisa su licencia).
+    revideo: Si quieres renderizar videos desde código TypeScript como API o servicio.
+  caso_unico:
+  - moviepy
+- id: g-motores-para-correr-llm-en-local
+  titulo: Motores para correr LLM en local
+  miembros:
+  - koboldcpp
+  - llama-cpp
+  - llamafile
+  - localai
+  - ollama
+  cuando:
+    koboldcpp: Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF.
+    llama-cpp: Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento.
+    llamafile: Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema.
+    localai: Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor.
+    ollama: Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible.
+  caso_unico:
+  - llamafile
+- id: g-builders-visuales-de-agentes
+  titulo: Builders visuales de agentes
+  miembros:
+  - autogpt
+  - dify
+  - langflow
+  - sim
+  cuando:
+    autogpt: Si quieres una plataforma de agentes continuos con marketplace de bloques.
+    dify: Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo.
+    langflow: Si quieres diseñar flujos de LangChain visualmente y exportarlos.
+    sim: Si quieres un lienzo colaborativo para agentes y workflows con monitorización.
+- id: g-fine-tuning-de-llm
+  titulo: Fine-tuning de LLM
+  miembros:
+  - axolotl
+  - llama-factory
+  - torchtune
+  - unsloth
+  cuando:
+    axolotl: Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU.
+    llama-factory: Si quieres una interfaz web para afinar cientos de modelos sin programar.
+    torchtune: Si prefieres recetas nativas de PyTorch fáciles de modificar.
+    unsloth: Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU.
+- id: g-pasarelas-y-routers-de-proveedores-llm
+  titulo: Pasarelas y routers de proveedores LLM
+  miembros:
+  - backdoor
+  - claude-code-router
+  - litellm
+  - omniroute
+  cuando:
+    backdoor: Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros).
+    claude-code-router: Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea.
+    litellm: Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves.
+    omniroute: Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores.
+- id: g-agentes-que-navegan-la-web
+  titulo: Agentes que navegan la web
+  miembros:
+  - browser-harness
+  - browser-use
+  - skyvern
+  - stagehand
+  cuando:
+    browser-harness: Si quieres que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión.
+    browser-use: Si quieres el framework Python más usado para que un LLM controle el navegador.
+    skyvern: Si automatizas formularios y flujos repetitivos con visión y no quieres selectores frágiles.
+    stagehand: Si trabajas en TypeScript y quieres mezclar código Playwright con acciones en lenguaje natural.
+- id: g-librerias-de-graficos
+  titulo: Librerías de gráficos
+  miembros:
+  - chart-js
+  - d3
+  - echarts
+  - recharts
+  cuando:
+    chart-js: Si quieres gráficos clásicos en canvas sin framework y con poca configuración.
+    d3: Si necesitas visualizaciones a medida y control total sobre SVG.
+    echarts: Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas.
+    recharts: Si usas React y quieres gráficos declarativos con pocas líneas.
+  caso_unico:
+  - d3
+- id: g-fuzzing-de-rutas-y-contenido-web
+  titulo: Fuzzing de rutas y contenido web
+  miembros:
+  - dirsearch
+  - feroxbuster
+  - ffuf
+  - gobuster
+  cuando:
+    dirsearch: Si prefieres una herramienta en Python con listas y reportes listos.
+    feroxbuster: Si quieres descubrimiento recursivo de contenido automático en Rust.
+    ffuf: Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go.
+    gobuster: Si quieres un enumerador simple de directorios, DNS y vhosts.
+- id: g-agentes-de-voz-en-tiempo-real
+  titulo: Agentes de voz en tiempo real
+  miembros:
+  - dograh
+  - livekit-agents
+  - pipecat
+  - ten-framework
+  cuando:
+    dograh: Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz.
+    livekit-agents: Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada.
+    pipecat: Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables.
+    ten-framework: Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real.
+- id: g-rag-con-grafos-e-indices-de-conocimiento
+  titulo: RAG con grafos e índices de conocimiento
+  miembros:
+  - graphrag
+  - lightrag
+  - pageindex
+  - ragflow
+  cuando:
+    graphrag: Si necesitas la metodología GraphRAG de Microsoft para preguntas globales sobre un corpus.
+    lightrag: Si quieres RAG con grafo de conocimiento ligero y rápido de indexar.
+    pageindex: Si quieres RAG sin vectores que razona sobre la tabla de contenidos de documentos largos.
+    ragflow: Si quieres un motor de RAG completo con comprensión profunda de documentos e interfaz.
+- id: g-skills-de-diseno-de-interfaces-para-agentes
+  titulo: Skills de diseño de interfaces para agentes
+  miembros:
+  - hallmark
+  - impeccable
+  - taste-skill
+  - ui-ux-pro-max-skill
+  cuando:
+    hallmark: Si quieres decisiones visuales más concretas y coherentes al construir interfaces.
+    impeccable: Si quieres vocabulario y playbooks de diseño con detector y hooks.
+    taste-skill: Si quieres que el agente evite el aspecto genérico en las interfaces.
+    ui-ux-pro-max-skill: Si quieres una skill con bases de estilos, paletas y tipografías para generar UI.
+- id: g-notas-y-bases-de-conocimiento-personales
+  titulo: Notas y bases de conocimiento personales
+  miembros:
+  - joplin
+  - logseq
+  - siyuan
+  - trilium
+  cuando:
+    joplin: Si quieres notas Markdown con sincronización cifrada en todos tus dispositivos.
+    logseq: Si piensas en esquemas y grafos con notas diarias, local-first.
+    siyuan: Si quieres bloques referenciables y una base de conocimiento local muy completa.
+    trilium: Si quieres jerarquías profundas de notas con scripting y servidor propio.
+- id: g-ocr-de-documentos
+  titulo: OCR de documentos
+  miembros:
+  - olmocr
+  - paddleocr
+  - tesseract
+  - unlimited-ocr
+  cuando:
+    olmocr: Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU).
+    paddleocr: Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación.
+    tesseract: Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes.
+    unlimited-ocr: Si quieres parsear documentos largos de una sola pasada con visión.
+  caso_unico:
+  - tesseract
+- id: g-generacion-de-musica
+  titulo: Generación de música
+  miembros:
+  - ace-step-1.5
+  - audiocraft
+  - yue
+- id: g-animacion-web-en-javascript
+  titulo: Animación web en JavaScript
+  miembros:
+  - animejs
+  - gsap
+  - motion
+- id: g-workspaces-privados-con-documentos-y-chat
+  titulo: Workspaces privados con documentos y chat
+  miembros:
+  - anything-llm
+  - khoj
+  - private-gpt
+- id: g-formatos-de-tabla-para-data-lakes
+  titulo: Formatos de tabla para data lakes
+  miembros:
+  - apache-iceberg
+  - delta-lake
+  - hudi
+- id: g-cookbooks-y-ejemplos-de-apps-con-llm
+  titulo: Cookbooks y ejemplos de apps con LLM
+  miembros:
+  - awesome-llm-apps
+  - claude-cookbooks
+  - openai-cookbook
+- id: g-motores-3d-para-la-web
+  titulo: Motores 3D para la web
+  miembros:
+  - babylonjs
+  - playcanvas
+  - three.js
+- id: g-paneles-de-auto-hospedaje-y-paas-propios
+  titulo: Paneles de auto-hospedaje y PaaS propios
+  miembros:
+  - casaos
+  - coolify
+  - dokploy
+- id: g-crawlers-que-entregan-contenido-listo-para-llm
+  titulo: Crawlers que entregan contenido listo para LLM
+  miembros:
+  - crawl4ai
+  - firecrawl
+  - jina-reader
+- id: g-diagramas-como-codigo
+  titulo: Diagramas como código
+  miembros:
+  - d2
+  - mermaid
+  - plantuml
+- id: g-evaluacion-y-pruebas-de-llm
+  titulo: Evaluación y pruebas de LLM
+  miembros:
+  - deepeval
+  - promptfoo
+  - ragas
+- id: g-procesamiento-de-datos-tabulares
+  titulo: Procesamiento de datos tabulares
+  miembros:
+  - duckdb
+  - pandas
+  - polars
+  caso_unico:
+  - duckdb
+- id: g-sandboxes-para-agentes
+  titulo: Sandboxes para agentes
+  miembros:
+  - e2b
+  - nemoclaw
+  - sandbox
+- id: g-tts-ligero-y-rapido
+  titulo: TTS ligero y rápido
+  miembros:
+  - edge-tts
+  - kokoro
+  - luxtts
+- id: g-frameworks-de-c2-y-post-explotacion
+  titulo: Frameworks de C2 y post-explotación
+  miembros:
+  - empire
+  - mythic
+  - sliver
+- id: g-transcripcion-con-whisper
+  titulo: Transcripción con Whisper
+  miembros:
+  - faster-whisper
+  - whisper
+  - whisper-cpp
+- id: g-ingenieria-inversa-y-desensambladores
+  titulo: Ingeniería inversa y desensambladores
+  miembros:
+  - ghidra
+  - radare2
+  - rizin
+- id: g-agentes-de-investigacion-autonoma
+  titulo: Agentes de investigación autónoma
+  miembros:
+  - gpt-researcher
+  - local-deep-research
+  - storm
+- id: g-frameworks-de-rag-y-orquestacion-de-llm
+  titulo: Frameworks de RAG y orquestación de LLM
+  miembros:
+  - haystack
+  - langchain
+  - llama-index
+- id: g-asistentes-personales-autonomos
+  titulo: Asistentes personales autónomos
+  miembros:
+  - hermes-agent
+  - mercury-agent
+  - openclaw
+- id: g-skills-para-quitar-el-tono-de-ia-a-los-textos
+  titulo: Skills para quitar el tono de IA a los textos
+  miembros:
+  - humanizer
+  - no-ai-slop
+  - stop-slop
+- id: g-modelos-abiertos-de-video-generativo
+  titulo: Modelos abiertos de video generativo
+  miembros:
+  - hunyuanvideo
+  - hunyuanvideo-1-5
+  - wan2-2
+- id: g-frameworks-de-deep-learning
+  titulo: Frameworks de deep learning
+  miembros:
+  - jax
+  - pytorch
+  - tensorflow
+- id: g-editores-de-video
+  titulo: Editores de video
+  miembros:
+  - kdenlive
+  - opencut
+  - shotcut
+- id: g-frameworks-de-agentes-en-typescript
+  titulo: Frameworks de agentes en TypeScript
+  miembros:
+  - langgraphjs
+  - mastra
+  - vercel-ai
+- id: g-scraping-guiado-por-llm
+  titulo: Scraping guiado por LLM
+  miembros:
+  - llm-scraper
+  - maxun
+  - scrapegraph-ai
+- id: g-presentaciones-desde-markdown
+  titulo: Presentaciones desde Markdown
+  miembros:
+  - marp
+  - reveal.js
+  - slidev
+- id: g-analitica-web-auto-hospedada
+  titulo: Analítica web auto-hospedada
+  miembros:
+  - matomo
+  - plausible
+  - umami
+- id: g-chat-de-equipo-auto-hospedado
+  titulo: Chat de equipo auto-hospedado
+  miembros:
+  - mattermost
+  - rocket-chat
+  - zulip
+- id: g-bi-y-dashboards
+  titulo: BI y dashboards
+  miembros:
+  - metabase
+  - redash
+  - superset
+- id: g-agentes-que-resuelven-issues-de-software
+  titulo: Agentes que resuelven issues de software
+  miembros:
+  - mini-swe-agent
+  - open-swe
+  - openhands
+- id: g-skills-y-flujos-de-produccion-de-video
+  titulo: Skills y flujos de producción de video
+  miembros:
+  - openmontage
+  - remotion-superpowers
+  - video-use
+- id: g-skills-de-visualizacion-3d
+  titulo: Skills de visualización 3D
+  miembros:
+  - 3dviz-pro-max
+  - threejs-skills
+- id: g-finanzas-personales
+  titulo: Finanzas personales
+  miembros:
+  - actual
+  - firefly-iii
+- id: g-bloqueo-de-anuncios-por-dns
+  titulo: Bloqueo de anuncios por DNS
+  miembros:
+  - adguardhome
+  - pi-hole
+- id: g-clis-de-navegador-para-agentes
+  titulo: CLIs de navegador para agentes
+  miembros:
+  - agent-browser
+  - playwright-cli
+- id: g-cursos-de-microsoft-para-principiantes
+  titulo: Cursos de Microsoft para principiantes
+  miembros:
+  - ai-agents-for-beginners
+  - generative-ai-for-beginners
+- id: g-espacios-de-trabajo-local-first-tipo-notion
+  titulo: Espacios de trabajo local-first tipo Notion
+  miembros:
+  - anytype-ts
+  - appflowy
+- id: g-backends-como-servicio-auto-hospedados
+  titulo: Backends como servicio auto-hospedados
+  miembros:
+  - appwrite
+  - supabase
+- id: g-skills-de-diagramas-de-arquitectura
+  titulo: Skills de diagramas de arquitectura
+  miembros:
+  - archify
+  - diagram-design
+- id: g-componentes-de-chat-y-copilotos-para-react
+  titulo: Componentes de chat y copilotos para React
+  miembros:
+  - assistant-ui
+  - copilotkit
+- id: g-emulacion-de-adversarios
+  titulo: Emulación de adversarios
+  miembros:
+  - atomic-red-team
+  - caldera
+- id: g-proveedores-de-identidad-y-sso
+  titulo: Proveedores de identidad y SSO
+  miembros:
+  - authentik
+  - keycloak
+- id: g-analisis-forense-de-discos
+  titulo: Análisis forense de discos
+  miembros:
+  - autopsy
+  - sleuthkit
+- id: g-backtesting-en-python
+  titulo: Backtesting en Python
+  miembros:
+  - backtesting-py
+  - vectorbt
+- id: g-motores-de-videojuegos
+  titulo: Motores de videojuegos
+  miembros:
+  - bevy
+  - godot
+- id: g-desarrollo-guiado-por-especificaciones
+  titulo: Desarrollo guiado por especificaciones
+  miembros:
+  - bmad-method
+  - spec-kit
+- id: g-proxies-inversos-con-https-automatico
+  titulo: Proxies inversos con HTTPS automático
+  miembros:
+  - caddy
+  - traefik
+- id: g-proxies-de-pruebas-de-aplicaciones-web
+  titulo: Proxies de pruebas de aplicaciones web
+  miembros:
+  - caido
+  - zaproxy
+- id: g-reservas-y-citas
+  titulo: Reservas y citas
+  miembros:
+  - cal.diy
+  - easyappointments
+- id: g-bibliotecas-de-libros-y-comics
+  titulo: Bibliotecas de libros y cómics
+  miembros:
+  - calibre-web
+  - kavita
+- id: g-servidores-mcp-de-navegador
+  titulo: Servidores MCP de navegador
+  miembros:
+  - chrome-devtools-mcp
+  - playwright-mcp
+- id: g-obsidian-como-segundo-cerebro-para-agentes
+  titulo: Obsidian como segundo cerebro para agentes
+  miembros:
+  - claude-obsidian
+  - obsidian-second-brain
+- id: g-skills-de-seo-para-agentes
+  titulo: Skills de SEO para agentes
+  miembros:
+  - claude-seo
+  - geo-seo-claude
+- id: g-agentes-de-codigo-en-el-editor
+  titulo: Agentes de código en el editor
+  miembros:
+  - cline
+  - kilocode
+- id: g-crawlee-node-js-y-python
+  titulo: Crawlee (Node.js y Python)
+  miembros:
+  - crawlee
+  - crawlee-python
+- id: g-bloqueo-de-ip-por-comportamiento
+  titulo: Bloqueo de IP por comportamiento
+  miembros:
+  - crowdsec
+  - fail2ban
+- id: g-etiquetado-de-datos-para-vision
+  titulo: Etiquetado de datos para visión
+  miembros:
+  - cvat
+  - label-studio
+- id: g-intercambio-de-rostros
+  titulo: Intercambio de rostros
+  miembros:
+  - deep-live-cam
+  - facefusion
+- id: g-pizarras-y-diagramas-a-mano-alzada
+  titulo: Pizarras y diagramas a mano alzada
+  miembros:
+  - excalidraw
+  - tldraw
+- id: g-colecciones-de-prompts
+  titulo: Colecciones de prompts
+  miembros:
+  - fabric
+  - prompts-chat
+- id: g-sdks-de-mcp-en-python
+  titulo: SDKs de MCP en Python
+  miembros:
+  - fastmcp
+  - mcp-python-sdk
+- id: g-help-desk-y-tickets
+  titulo: Help desk y tickets
+  miembros:
+  - freescout
+  - zammad
+- id: g-lectores-rss-auto-hospedados
+  titulo: Lectores RSS auto-hospedados
+  miembros:
+  - freshrss
+  - miniflux
+- id: g-deteccion-de-secretos-en-repos
+  titulo: Detección de secretos en repos
+  miembros:
+  - gitleaks
+  - trufflehog
+- id: g-paneles-osint-sobre-globo-3d
+  titulo: Paneles OSINT sobre globo 3D
+  miembros:
+  - gods-eye-view
+  - osiris
+- id: g-escaneres-de-vulnerabilidades-de-contenedores
+  titulo: Escáneres de vulnerabilidades de contenedores
+  miembros:
+  - grype
+  - trivy
+- id: g-cracking-de-contrasenas
+  titulo: Cracking de contraseñas
+  miembros:
+  - hashcat
+  - john
+- id: g-compactar-contexto-y-tokens
+  titulo: Compactar contexto y tokens
+  miembros:
+  - headroom
+  - rtk
+- id: g-redes-privadas-tipo-mesh-wireguard
+  titulo: Redes privadas tipo mesh (WireGuard)
+  miembros:
+  - headscale
+  - netbird
+- id: g-sondeo-y-escaneo-de-reconocimiento
+  titulo: Sondeo y escaneo de reconocimiento
+  miembros:
+  - httpx
+  - naabu
+- id: g-automatizacion-por-eventos-auto-hospedada
+  titulo: Automatización por eventos auto-hospedada
+  miembros:
+  - huginn
+  - node-red
+- id: g-gestion-de-fotos-auto-hospedada
+  titulo: Gestión de fotos auto-hospedada
+  miembros:
+  - immich
+  - photoprism
+- id: g-skills-para-redes-sociales
+  titulo: Skills para redes sociales
+  miembros:
+  - instagram-agent-skill
+  - linkedin-agent-skill
+- id: g-interfaces-de-creacion-de-imagenes
+  titulo: Interfaces de creación de imágenes
+  miembros:
+  - invokeai
+  - krita-ai-diffusion
+- id: g-notebooks
+  titulo: Notebooks
+  miembros:
+  - jupyterlab
+  - marimo
+- id: g-pruebas-de-carga
+  titulo: Pruebas de carga
+  miembros:
+  - k6
+  - locust
+- id: g-gestores-de-contrasenas
+  titulo: Gestores de contraseñas
+  miembros:
+  - keepassxc
+  - vaultwarden
+- id: g-motores-de-navegador-independientes
+  titulo: Motores de navegador independientes
+  miembros:
+  - ladybird
+  - servo
+- id: g-mapas-web-interactivos
+  titulo: Mapas web interactivos
+  miembros:
+  - leaflet
+  - maplibre
+- id: g-aprender-llm-desde-cero
+  titulo: Aprender LLM desde cero
+  miembros:
+  - llm-course
+  - llms-from-scratch
+- id: g-componentes-animados-para-react
+  titulo: Componentes animados para React
+  miembros:
+  - magicui
+  - react-bits
+- id: g-busqueda-de-usuarios-en-redes-sociales
+  titulo: Búsqueda de usuarios en redes sociales
+  miembros:
+  - maigret
+  - sherlock
+- id: g-animaciones-matematicas-manim
+  titulo: Animaciones matemáticas (Manim)
+  miembros:
+  - manim
+  - manim-community
+- id: g-servidores-mcp-de-neo4j
+  titulo: Servidores MCP de Neo4j
+  miembros:
+  - mcp-neo4j
+  - neo4j-mcp
+- id: g-sdks-de-mcp-en-typescript
+  titulo: SDKs de MCP en TypeScript
+  miembros:
+  - mcp-typescript-sdk
+  - mcp-use
+- id: g-generacion-automatica-de-videos-cortos
+  titulo: Generación automática de videos cortos
+  miembros:
+  - moneyprinterturbo
+  - short-video-factory
+- id: g-paneles-para-coordinar-equipos-de-agentes
+  titulo: Paneles para coordinar equipos de agentes
+  miembros:
+  - multica
+  - paperclip
+- id: g-transcripcion-con-modelos-nvidia-y-alineacion
+  titulo: Transcripción con modelos NVIDIA y alineación
+  miembros:
+  - nemo
+  - whisperx
+- id: g-fotogrametria-con-drones
+  titulo: Fotogrametría con drones
+  miembros:
+  - odm
+  - webodm
+- id: g-editores-visuales-de-diseno-con-ia
+  titulo: Editores visuales de diseño con IA
+  miembros:
+  - onlook
+  - open-design
+- id: g-alternativas-a-notebooklm
+  titulo: Alternativas a NotebookLM
+  miembros:
+  - open-notebook
+  - surfsense
+- id: g-espacios-de-asistentes-de-copilotkit
+  titulo: Espacios de asistentes de CopilotKit
+  miembros:
+  - openbot
+  - opendots
+- id: g-gestores-de-sesiones-de-agentes-de-codigo
+  titulo: Gestores de sesiones de agentes de código
+  miembros:
+  - opencode-manager
+  - t3code
+- id: g-aprendizaje-por-refuerzo-para-llm
+  titulo: Aprendizaje por refuerzo para LLM
+  miembros:
+  - openrlhf
+  - verl
+- id: g-listas-de-payloads-y-diccionarios
+  titulo: Listas de payloads y diccionarios
+  miembros:
+  - payloadsallthethings
+  - seclists
+- id: g-suites-de-herramientas-pdf
+  titulo: Suites de herramientas PDF
+  miembros:
+  - pdfcraft
+  - stirling-pdf
+- id: g-generacion-de-presentaciones-con-ia
+  titulo: Generación de presentaciones con IA
+  miembros:
+  - ppt-master
+  - presenton
+- id: g-guias-de-ingenieria-de-prompts
+  titulo: Guías de ingeniería de prompts
+  miembros:
+  - prompt-eng-tutorial
+  - prompt-engineering-guide
+- id: g-de-diseno-o-captura-a-codigo
+  titulo: De diseño o captura a código
+  miembros:
+  - screenshot-to-code
+  - stitch-sdk
+- id: g-servidores-de-inferencia-de-alto-rendimiento
+  titulo: Servidores de inferencia de alto rendimiento
+  miembros:
+  - sglang
+  - vllm
+- id: g-pentesting-autonomo-con-agentes
+  titulo: Pentesting autónomo con agentes
+  miembros:
+  - shannon
+  - strix
+- id: g-obtencion-de-datos-en-react
+  titulo: Obtención de datos en React
+  miembros:
+  - swr
+  - tanstack-query

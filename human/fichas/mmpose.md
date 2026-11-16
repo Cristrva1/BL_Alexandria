@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 MMPose, toolbox de estimación de pose de OpenMMLab (incluye RTMPose). Licencia Apache-2.0. Tiene ~8k estrellas, pero no cambia desde agosto de 2025 (v1.3.2).

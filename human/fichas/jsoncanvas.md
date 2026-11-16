@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Especificación abierta JSON Canvas para datos de lienzos infinitos, creada por Obsidian. Licencia MIT. Es estable (~4k estrellas, especificación 1.0) y se actualiza poco.

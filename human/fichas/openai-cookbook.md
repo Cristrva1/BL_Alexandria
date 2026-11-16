@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Recetario oficial de OpenAI (MIT) con ejemplos de código y guías para tareas comunes con su API. Se navega en cookbook.openai.com. Es activo (último push en noviembre de 2026) y maduro.
@@ -36,6 +38,16 @@ La mayoría de los ejemplos son notebooks Python que requieren una cuenta y una 
 Estado en GitHub: activo · último push 2026-11-14 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/openai-cookbook/blob/main/README.md) · [2](https://cookbook.openai.com)</sub>
+
+## Ver similares
+
+Grupo **Cookbooks y ejemplos de apps con LLM**: OpenAI Cookbook ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Awesome LLM Apps](awesome-llm-apps.md) ⭐ recomendado | 75 | Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
+| 2 | **OpenAI Cookbook** (esta ficha) | 58 | Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. |
+| 3 | [Claude Cookbooks](claude-cookbooks.md) | 56 | Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
 
 ## Acceso, coste y equipo
 

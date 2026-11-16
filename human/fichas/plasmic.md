@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Constructor visual open source de Plasmic para apps y sitios conectado a tu propio código. La licencia es mixta: MIT fuera de `platform/` y AGPL dentro de `platform/` (el editor y servidor). Es activo (último push en noviembre de 2026) y tiene servicio cloud de pago.

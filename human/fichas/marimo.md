@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 marimo, notebook reactivo de Python que se guarda como script `.py`, de marimo-team. Licencia Apache-2.0. Es maduro y activo (~24k estrellas, 0.25.2).
@@ -41,6 +43,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.25.2 (2026-10-19) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/marimo-team/marimo/blob/main/README.md) · [2](https://docs.marimo.io/guides/apps.html)</sub>
+
+## Ver similares
+
+Grupo **Notebooks**: marimo ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **marimo** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
+| 2 | [JupyterLab](jupyterlab.md) | 66 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
 
 ## Acceso, coste y equipo
 

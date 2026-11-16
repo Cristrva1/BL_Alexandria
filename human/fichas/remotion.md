@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Remotion, framework de React para crear vídeos por código, de remotion-dev. Licencia «Remotion License» especial (GitHub muestra NOASSERTION): exige licencia de empresa en algunos casos. Es maduro (~73k estrellas, v4.0.543).
@@ -41,6 +43,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.543 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/remotion-dev/remotion/blob/main/README.md) · [2](https://remotion.dev/license)</sub>
+
+## Ver similares
+
+Grupo **Video y escenas por código**: remotion ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [HyperFrames](hyperframes.md) ⭐ recomendado | 73 | Si quieres que un agente componga video desde HTML con HeyGen HyperFrames. |
+| 2 | **remotion** (esta ficha) | 68 | Si sabes React y quieres generar videos programáticos con calidad de producción (revisa su licencia). |
+| 3 | [Motion Canvas](motion-canvas.md) | 56 | Si haces animaciones explicativas en TypeScript con editor en tiempo real. |
+| 4 | [MoviePy](moviepy.md) | 54 | Si editas video desde Python (cortes, composición, texto) sin interfaz. |
+| 5 | [Revideo](revideo.md) | 51 | Si quieres renderizar videos desde código TypeScript como API o servicio. |
 
 ## Acceso, coste y equipo
 

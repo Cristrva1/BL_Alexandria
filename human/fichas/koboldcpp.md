@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Software de código abierto (AGPL-3.0) de LostRuins (Concedo), inspirado en KoboldAI y construido sobre llama.cpp. Fork establecido y muy activo, con versiones frecuentes.
@@ -35,6 +37,18 @@ Un único ejecutable para Windows, Linux y macOS sin instalación ni dependencia
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.124.2 (2026-10-31) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LostRuins/koboldcpp/blob/concedo/README.md) · [2](https://koboldcpp.net)</sub>
+
+## Ver similares
+
+Grupo **Motores para correr LLM en local**: KoboldCpp ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ollama](ollama.md) ⭐ recomendado | 84 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
+| 2 | [llama.cpp](llama-cpp.md) | 78 | Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento. |
+| 3 | [LocalAI](localai.md) | 72 | Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor. |
+| 4 | [llamafile](llamafile.md) | 52 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
+| 5 | **KoboldCpp** (esta ficha) | 46 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
 
 ## Acceso, coste y equipo
 

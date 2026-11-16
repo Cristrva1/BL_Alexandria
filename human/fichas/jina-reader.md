@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Reader, de Jina AI: convierte cualquier URL en entrada apta para LLM y busca en la web. Licencia Apache-2.0. Es popular (~12k estrellas, sin releases) y el código abierto se resincronizó con el SaaS en abril de 2026 sin la capa de almacenamiento.
@@ -35,6 +37,16 @@ Se usa directamente por HTTP o se autoaloja con la imagen `ghcr.io/jina-ai/reade
 Estado en GitHub: activo · último push 2026-05-22 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jina-ai/reader/blob/main/README.md) · [2](https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/jina-ai)</sub>
+
+## Ver similares
+
+Grupo **Crawlers que entregan contenido listo para LLM**: Jina Reader ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [crawl4ai](crawl4ai.md) ⭐ recomendado | 72 | Si buscas esto: librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
+| 2 | [firecrawl](firecrawl.md) | 71 | Si buscas esto: plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
+| 3 | **Jina Reader** (esta ficha) | 52 | Si buscas esto: servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de orquestación de IA de código abierto (Apache 2.0) de deepset para aplicaciones LLM en producción con Python. Maduro y activo (v3.5.0); deepset ofrece soporte y plataforma comerciales (Haystack Enterprise).
@@ -37,6 +39,16 @@ Se instala con `pip install haystack-ai` (también hay imágenes Docker) y las i
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.5.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/deepset-ai/haystack/blob/main/README.md) · [2](https://qdrant.tech/documentation/frameworks/haystack/) · [3](https://haystack.deepset.ai/integrations/docling) · [4](https://docs.haystack.deepset.ai/docs/ollamachatgenerator) · [5](https://langfuse.com/integrations/frameworks/haystack)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de RAG y orquestación de LLM**: Haystack ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langchain](langchain.md) ⭐ recomendado | 80 | Si buscas esto: framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| 2 | **Haystack** (esta ficha) | 66 | Si buscas esto: framework de deepset para pipelines de RAG y agentes listos para producción. |
+| 3 | [LlamaIndex](llama-index.md) | 63 | Si buscas esto: framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
 
 ## Acceso, coste y equipo
 

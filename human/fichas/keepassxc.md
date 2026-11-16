@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Password manager local (GPL según COPYING; API NOASSERTION).
@@ -31,6 +33,15 @@ Instaladores oficiales.
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 2.8.0 (2026-10-21) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/keepassxreboot/keepassxc#readme) · [2](https://keepassxc.org)</sub>
+
+## Ver similares
+
+Grupo **Gestores de contraseñas**: KeePassXC ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [vaultwarden](vaultwarden.md) ⭐ recomendado | 64 | Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
+| 2 | **KeePassXC** (esta ficha) | 54 | Si buscas esto: gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills de ingeniería de Addy Osmani (MIT) para agentes de código, centradas en procesos de nivel producción. Activas (0.6.16).
@@ -36,6 +38,18 @@ Se instalan con `npx skills add addyosmani/agent-skills` (todas o `--skill` por 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 0.6.16 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/addyosmani/agent-skills/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Metodologías y harness para agentes de código**: Agent Skills (Addy Osmani) ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ECC](ecc.md) ⭐ recomendado | 72 | Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes. |
+| 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
+| 3 | **Agent Skills (Addy Osmani)** (esta ficha) | 63 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
+| 4 | [superpowers](superpowers.md) | 62 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
+| 5 | [SuperClaude_Framework](superclaude-framework.md) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Fuzzer web de código abierto (MIT) creado por Joona Hoikkala (joohoi). Maduro; ritmo de cambios moderado (último push en septiembre de 2026).
@@ -43,6 +45,17 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se 
 Estado en GitHub: activo · último push 2026-09-26 · última versión publicada v2.3.0 (2026-09-09) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ffuf/ffuf/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Fuzzing de rutas y contenido web**: ffuf ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **ffuf** (esta ficha) ⭐ recomendado | 68 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
+| 2 | [dirsearch](dirsearch.md) | 60 | Si prefieres una herramienta en Python con listas y reportes listos. |
+| 3 | [Gobuster](gobuster.md) | 57 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
+| 4 | [feroxbuster](feroxbuster.md) | 57 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
 
 ## Acceso, coste y equipo
 

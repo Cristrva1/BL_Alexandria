@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Editor de audio libre (GPLv3; la mayoría de archivos GPLv2 o posterior) mantenido por el equipo de Audacity con apoyo de Muse Group. Referencia histórica en edición de audio libre. El repositorio está en una reestructuración profunda hacia Audacity 4 (nueva interfaz).

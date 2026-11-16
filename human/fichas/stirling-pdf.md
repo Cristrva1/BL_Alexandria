@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de edición de PDF de código abierto con modelo «open core» de Stirling Tools (licencia mixta; ver LICENSE). Muy activa (v3.3.0), con planes de servidor y Enterprise de pago.
@@ -36,6 +38,15 @@ Servidor Java (imagen basada en Eclipse Temurin) con frontend TypeScript, que in
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.3.0 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Stirling-Tools/Stirling-PDF/blob/main/README.md) · [2](https://github.com/Stirling-Tools/Stirling-PDF/blob/main/docker/base/Dockerfile)</sub>
+
+## Ver similares
+
+Grupo **Suites de herramientas PDF**: Stirling-PDF ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Stirling-PDF** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
+| 2 | [pdfcraft](pdfcraft.md) | 51 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
 
 ## Acceso, coste y equipo
 

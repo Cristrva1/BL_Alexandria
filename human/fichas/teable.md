@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de base de datos sin código de código abierto mantenida por Teable (teableio). El núcleo es AGPL-3.0 y los paquetes compartidos MIT; las funciones Enterprise se activan con licencia comercial. Proyecto muy activo que se posiciona como alternativa a Airtable sobre PostgreSQL.
@@ -36,6 +38,20 @@ Está escrito en TypeScript y usa PostgreSQL como almacenamiento, de modo que lo
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada release.2026-11-13T02-21-01Z.3890 (2026-11-13) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/teableio/teable/blob/develop/README.md) · [2](https://help.teable.ai/en/deploy/architecture)</sub>
+
+## Ver similares
+
+Grupo **Herramientas internas y bases de datos no-code**: Teable ocupa la posición 5 de 7 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ToolJet](tooljet.md) ⭐ recomendado | 75 | Si quieres un builder de apps internas con muchos conectores y opciones de IA. |
+| 2 | [Appsmith](appsmith.md) | 72 | Si construyes paneles internos arrastrando componentes sobre APIs y bases de datos. |
+| 3 | [NocoDB](nocodb.md) | 70 | Si quieres una interfaz tipo Airtable sobre tu base de datos SQL existente. |
+| 4 | [Budibase](budibase.md) | 62 | Si quieres formularios, portales y automatizaciones internas con poco código. |
+| 5 | **Teable** (esta ficha) | 56 | Si quieres una hoja-base de datos rápida sobre PostgreSQL con buen rendimiento en tablas grandes. |
+| 6 | [Grist](grist-core.md) | 53 | Si necesitas una hoja de cálculo relacional con fórmulas en Python. |
+| 7 | [Baserow](baserow.md) | 50 | Si buscas una alternativa a Airtable auto-hospedada y fácil de usar. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 RAD Debugger, depurador gráfico nativo de Epic Games (equipo RAD), junto con el RAD Linker y herramientas de información de depuración. Licencia MIT. Está en alfa (v0.9.29-alpha), aunque ya tiene ~9k estrellas.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay releases en GitHub.
@@ -35,6 +37,17 @@ Se ejecuta con Transformers para pruebas rápidas (probado con Python 3.10, torc
 Estado en GitHub: activo · último push 2026-11-09 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/baidu/Unlimited-OCR/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **OCR de documentos**: Unlimited-OCR ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [PaddleOCR](paddleocr.md) ⭐ recomendado | 72 | Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación. |
+| 2 | **Unlimited-OCR** (esta ficha) | 65 | Si quieres parsear documentos largos de una sola pasada con visión. |
+| 3 | [Tesseract](tesseract.md) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
+| 4 | [olmOCR](olmocr.md) | 53 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
 
 ## Acceso, coste y equipo
 

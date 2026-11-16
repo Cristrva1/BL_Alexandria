@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 82/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor RAG (generación aumentada por recuperación) de código abierto (Apache 2.0) de InfiniFlow, que fusiona RAG con capacidades de agente. Muy activo: la versión 1.0.0 salió el 6 de noviembre de 2026 y el código principal está ahora en Go; tiene servicio en la nube opcional.
@@ -36,6 +38,17 @@ Se despliega con Docker Compose (Docker ≥ 24.0.0, Compose ≥ v2.26.1) y una c
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.0 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/infiniflow/ragflow/blob/main/README.md) · [2](https://ragflow.io/docs/dev/deploy_local_llm) · [3](https://ragflow.io/docs/dev/http_api_reference)</sub>
+
+## Ver similares
+
+Grupo **RAG con grafos e índices de conocimiento**: RAGFlow ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **RAGFlow** (esta ficha) ⭐ recomendado | 82 | Si quieres un motor de RAG completo con comprensión profunda de documentos e interfaz. |
+| 2 | [LightRAG](lightrag.md) | 66 | Si quieres RAG con grafo de conocimiento ligero y rápido de indexar. |
+| 3 | [PageIndex](pageindex.md) | 60 | Si quieres RAG sin vectores que razona sobre la tabla de contenidos de documentos largos. |
+| 4 | [graphrag](graphrag.md) | 54 | Si necesitas la metodología GraphRAG de Microsoft para preguntas globales sobre un corpus. |
 
 ## Acceso, coste y equipo
 

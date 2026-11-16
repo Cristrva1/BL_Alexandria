@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Paquete de 94 skills (MIT) de arjun988 para artistas de Blender, que se presenta como un equipo de arte técnico senior. Sin releases; su ficha en el marketplace de Anthropic estaba en revisión según el README.

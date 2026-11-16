@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 86/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Transformers, la librería de definición de modelos de Hugging Face para texto, visión, audio, vídeo y multimodal. Licencia Apache-2.0. Es muy madura (~169k estrellas, v5.23.0).

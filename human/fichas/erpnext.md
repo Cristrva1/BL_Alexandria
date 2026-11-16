@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema ERP 100 % de código abierto (GPL v3) de Frappe Technologies, construido sobre el Frappe Framework. Es maduro y muy activo (serie v16 en 2026), con hospedaje gestionado opcional en Frappe Cloud.
@@ -35,6 +37,18 @@ Se basa en Frappe Framework, un framework web completo en Python y JavaScript co
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v16.55.0 (2026-11-12) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/frappe/erpnext/blob/develop/README.md)</sub>
+
+## Ver similares
+
+Grupo **CRM y ERP auto-hospedados**: ERPNext ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [twenty-main](twenty-main.md) ⭐ recomendado | 75 | Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado. |
+| 2 | **ERPNext** (esta ficha) | 74 | Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH. |
+| 3 | [Odoo](odoo.md) | 66 | Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema. |
+| 4 | [EspoCRM](espocrm.md) | 53 | Si quieres un CRM ligero y personalizable en PHP. |
+| 5 | [SuiteCRM](suitecrm.md) | 45 | Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos. |
 
 ## Acceso, coste y equipo
 

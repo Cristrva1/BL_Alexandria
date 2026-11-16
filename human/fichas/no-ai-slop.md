@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).
@@ -35,6 +37,16 @@ Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills
 Estado en GitHub: activo · último push 2026-09-02 · última versión publicada v1.0.6 (2026-08-01) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/petergyang/no-ai-slop/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills para quitar el tono de IA a los textos**: no-ai-slop ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Humanizer](humanizer.md) ⭐ recomendado | 72 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
+| 2 | **no-ai-slop** (esta ficha) | 55 | Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. |
+| 3 | [Stop Slop](stop-slop.md) | 43 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
 ## Acceso, coste y equipo
 

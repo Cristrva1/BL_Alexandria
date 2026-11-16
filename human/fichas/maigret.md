@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta OSINT de código abierto (MIT) creada por soxoj, derivada de Sherlock y ampliada. Activa; el autor advierte de que las comprobaciones de sitios se rompen con el tiempo y requieren mantenimiento.
@@ -35,6 +37,15 @@ Requiere Python 3.10+; se instala con `pip install maigret` (el extra `maigret[p
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.6.6 (2026-09-18) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/soxoj/maigret/blob/main/README.md) · [2](https://maigret.readthedocs.io/)</sub>
+
+## Ver similares
+
+Grupo **Búsqueda de usuarios en redes sociales**: Maigret ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Sherlock](sherlock.md) ⭐ recomendado | 67 | Si buscas esto: cLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas. |
+| 2 | **Maigret** (esta ficha) | 63 | Si buscas esto: recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles. |
 
 ## Acceso, coste y equipo
 

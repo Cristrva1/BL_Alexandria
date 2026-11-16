@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Kit de código abierto de GitHub (MIT) que da a los agentes de código procesos estructurados, plantillas reutilizables y resultados documentados. Muy activo (v1.4.0).
@@ -37,6 +39,15 @@ CLI en Python 3.11+ instalada con uv (`uv tool install specify-cli`, luego `spec
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.4.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/github/spec-kit/blob/main/README.md) · [2](https://github.github.io/spec-kit/integrations/index.html)</sub>
+
+## Ver similares
+
+Grupo **Desarrollo guiado por especificaciones**: Spec Kit ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Spec Kit** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
+| 2 | [BMAD Method](bmad-method.md) | 60 | Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Gradio, paquete Python para crear demos y apps web de modelos de ML, APIs o cualquier función, mantenido por Hugging Face. Licencia Apache-2.0. Es muy maduro (~44k estrellas, gradio@6.32.0).
@@ -37,6 +39,18 @@ Requiere Python 3.10+ y se instala con `pip install --upgrade gradio`. Se despli
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada gradio@6.32.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gradio-app/gradio/blob/main/README.md) · [2](https://gradio.app/getting_started/)</sub>
+
+## Ver similares
+
+Grupo **Apps web de datos en Python**: Gradio ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [streamlit](streamlit.md) ⭐ recomendado | 76 | Si quieres convertir un script de datos en app web con la menor curva. |
+| 2 | **Gradio** (esta ficha) | 71 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
+| 3 | [Reflex](reflex.md) | 71 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 4 | [NiceGUI](nicegui.md) | 68 | Si quieres una interfaz web en Python con control fino de componentes. |
+| 5 | [Panel](panel.md) | 55 | Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos. |
 
 ## Acceso, coste y equipo
 

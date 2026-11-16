@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Label Studio, herramienta open source de etiquetado de datos, de HumanSignal. Licencia Apache-2.0. Es madura (~29k estrellas, 1.23.2) y tiene edición Enterprise de pago.
@@ -35,6 +37,15 @@ Se ejecuta con Docker (`docker run -p 8080:8080 heartexlabs/label-studio`) o con
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.23.2 (2026-09-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/HumanSignal/label-studio/blob/develop/README.md)</sub>
+
+## Ver similares
+
+Grupo **Etiquetado de datos para visión**: Label Studio ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Label Studio** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. |
+| 2 | [CVAT Community](cvat.md) | 68 | Si buscas esto: plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets. |
 
 ## Acceso, coste y equipo
 

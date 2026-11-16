@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 MoviePy, librería Python para editar vídeo por código, de @Zulko. Licencia MIT. Es madura (~15k estrellas, v2.2.1); la v2.0 introdujo cambios incompatibles y la v1 ya no se mantiene.
@@ -41,6 +43,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se 
 Estado en GitHub: activo · último push 2026-08-26 · última versión publicada v2.2.1 (2025-05-21) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Zulko/moviepy/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Video y escenas por código**: MoviePy ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [HyperFrames](hyperframes.md) ⭐ recomendado | 73 | Si quieres que un agente componga video desde HTML con HeyGen HyperFrames. |
+| 2 | [remotion](remotion.md) | 68 | Si sabes React y quieres generar videos programáticos con calidad de producción (revisa su licencia). |
+| 3 | [Motion Canvas](motion-canvas.md) | 56 | Si haces animaciones explicativas en TypeScript con editor en tiempo real. |
+| 4 | **MoviePy** (esta ficha) | 54 | Si editas video desde Python (cortes, composición, texto) sin interfaz. |
+| 5 | [Revideo](revideo.md) | 51 | Si quieres renderizar videos desde código TypeScript como API o servicio. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Content discovery en Rust.
@@ -32,6 +34,17 @@ Paquetes o script install-nix.sh.
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v2.14.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/epi052/feroxbuster#readme) · [2](https://epi052.github.io/feroxbuster-docs/overview/)</sub>
+
+## Ver similares
+
+Grupo **Fuzzing de rutas y contenido web**: feroxbuster ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ffuf](ffuf.md) ⭐ recomendado | 68 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
+| 2 | [dirsearch](dirsearch.md) | 60 | Si prefieres una herramienta en Python con listas y reportes listos. |
+| 3 | [Gobuster](gobuster.md) | 57 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
+| 4 | **feroxbuster** (esta ficha) | 57 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
 
 ## Acceso, coste y equipo
 

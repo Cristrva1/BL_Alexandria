@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de comunicación de Rocket.Chat Technologies. El núcleo es MIT y las carpetas ee/ tienen licencia Enterprise propia. Muy madura; usada por grandes organizaciones.
@@ -35,6 +37,16 @@ Escrito en TypeScript sobre Meteor y Node.js con MongoDB; se despliega con Docke
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 9.0.0 (2026-11-10) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md) · [2](https://docs.rocket.chat/docs/deploy-rocketchat)</sub>
+
+## Ver similares
+
+Grupo **Chat de equipo auto-hospedado**: Rocket.Chat ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Rocket.Chat** (esta ficha) ⭐ recomendado | 75 | Si buscas esto: plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. |
+| 2 | [Mattermost](mattermost.md) | 71 | Si buscas esto: plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA. |
+| 3 | [Zulip](zulip.md) | 63 | Si buscas esto: chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. |
 
 ## Acceso, coste y equipo
 

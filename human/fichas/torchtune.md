@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (BSD-3-Clause) de Meta/PyTorch. Su README avisa de que ya no se mantiene activamente: el desarrollo terminó en 2025. Sigue siendo una referencia útil de recetas en PyTorch puro.
@@ -35,6 +37,17 @@ Se instala con pip junto a torch, torchvision y torchao; la CLI `tune` descarga 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v0.6.1 (2025-04-07) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/meta-pytorch/torchtune/blob/main/README.md) · [2](https://pytorch.org/torchtune/main/tutorials/e2e_flow.html) · [3](https://github.com/meta-pytorch/torchtune/issues/2883)</sub>
+
+## Ver similares
+
+Grupo **Fine-tuning de LLM**: torchtune ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Unsloth](unsloth.md) ⭐ recomendado | 82 | Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU. |
+| 2 | [Axolotl](axolotl.md) | 65 | Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU. |
+| 3 | [LLaMA-Factory](llama-factory.md) | 60 | Si quieres una interfaz web para afinar cientos de modelos sin programar. |
+| 4 | **torchtune** (esta ficha) | 52 | Si prefieres recetas nativas de PyTorch fáciles de modificar. |
 
 ## Acceso, coste y equipo
 

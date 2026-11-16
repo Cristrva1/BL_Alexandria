@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Bloqueador de anuncios por DNS de código abierto (EUPL-1.2 según su archivo de licencia) mantenido por Pi-hole LLC y la comunidad desde 2014. Muy maduro.
@@ -36,6 +38,15 @@ Se instala con `curl -sSL https://install.pi-hole.net | bash` en Linux (Raspberr
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v6.6 (2026-11-11) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pi-hole/pi-hole/blob/master/README.md) · [2](https://docs.pi-hole.net/) · [3](https://www.home-assistant.io/integrations/pi_hole/)</sub>
+
+## Ver similares
+
+Grupo **Bloqueo de anuncios por DNS**: Pi-hole ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Pi-hole** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional. |
+| 2 | [AdGuardHome](adguardhome.md) | 59 | Si buscas esto: servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. |
 
 ## Acceso, coste y equipo
 

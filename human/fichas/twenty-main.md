@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CRM de código abierto pensado para equipos técnicos, de Twenty (twentyhq), que se construye, despliega y versiona como el resto del código. Es muy activo (versión 2.58 en 2026); su licencia no figura como estándar en GitHub y combina código abierto con partes comerciales [DATO NO VERIFICADO: reparto exacto de licencias].
@@ -35,6 +37,18 @@ Backend NestJS en TypeScript con BullMQ, PostgreSQL y Redis, y frontend en React
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada twenty/v2.58.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/twentyhq/twenty/blob/main/README.md) · [2](https://docs.twenty.com/developers/self-host/capabilities/docker-compose) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/twenty)</sub>
+
+## Ver similares
+
+Grupo **CRM y ERP auto-hospedados**: twenty-main ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **twenty-main** (esta ficha) ⭐ recomendado | 75 | Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado. |
+| 2 | [ERPNext](erpnext.md) | 74 | Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH. |
+| 3 | [Odoo](odoo.md) | 66 | Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema. |
+| 4 | [EspoCRM](espocrm.md) | 53 | Si quieres un CRM ligero y personalizable en PHP. |
+| 5 | [SuiteCRM](suitecrm.md) | 45 | Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de diseño de logotipos (MIT) de Kaan Kızıltuğ para Claude y otros agentes compatibles con Agent Skills (Gemini CLI, Codex CLI, Cursor, GitHub Copilot). Activa (v1.4.5).

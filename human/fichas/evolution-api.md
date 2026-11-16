@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Evolution API, API REST para WhatsApp y mensajería multicanal, mantenida por Evolution Foundation. Licencia Apache-2.0 con condiciones adicionales: conservar el logo y el copyright en los componentes frontend y avisar del uso, incluso en sistemas cerrados. No es una licencia OSI estándar, por eso GitHub muestra NOASSERTION. Es madura (~10k estrellas, v2.3.7) y nació de CodeChat.
@@ -37,6 +39,18 @@ Servidor Node.js 20+ en TypeScript con Express y Prisma sobre PostgreSQL o MySQL
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada 2.3.7 (2025-12-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **APIs y librerías no oficiales de WhatsApp**: evolution-api ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [whatsapp-web.js](whatsapp-web-js.md) ⭐ recomendado | 69 | Si programas en Node.js y prefieres controlar WhatsApp Web con un navegador. |
+| 2 | [Baileys](baileys.md) | 67 | Si programas en Node.js y quieres la librería de bajo nivel por WebSocket. |
+| 3 | [WAHA](waha.md) | 62 | Si quieres WhatsApp por HTTP en un contenedor, con varios motores. |
+| 4 | **evolution-api** (esta ficha) | 54 | Si quieres una API REST de WhatsApp lista para n8n, Chatwoot o CRMs. |
+| 5 | [whatsmeow](whatsmeow.md) | 49 | Si programas en Go y quieres una librería multi-dispositivo eficiente. |
 
 ## Acceso, coste y equipo
 

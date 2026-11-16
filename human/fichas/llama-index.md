@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto (MIT) de LlamaIndex (run-llama) para aplicaciones RAG y agentes sobre datos propios. Activo (v0.14.26), pero el README avisa de que la empresa ha desplazado su foco principal a LlamaParse, su plataforma comercial de parsing, y a LiteParse; el framework sigue disponible como kit abierto.
@@ -42,6 +44,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.14.26 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/run-llama/llama_index/blob/main/README.md) · [2](https://qdrant.tech/documentation/frameworks/llama-index/) · [3](https://docling-project.github.io/docling/integrations/llamaindex/) · [4](https://docs.ragas.io/en/stable/howtos/integrations/_llamaindex/)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de RAG y orquestación de LLM**: LlamaIndex ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langchain](langchain.md) ⭐ recomendado | 80 | Si buscas esto: framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| 2 | [Haystack](haystack.md) | 66 | Si buscas esto: framework de deepset para pipelines de RAG y agentes listos para producción. |
+| 3 | **LlamaIndex** (esta ficha) | 63 | Si buscas esto: framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
 
 ## Acceso, coste y equipo
 

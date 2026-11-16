@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 44/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Guía y curso en construcción (MIT) sobre 'ingeniería de contexto', inspirada en la definición de Andrej Karpathy. El repositorio cambió de dueño, de davidkimai/Context-Engineering a jasontang-ai/Context-Engineering, y el README todavía enlaza al nombre antiguo. Último push en febrero de 2026.

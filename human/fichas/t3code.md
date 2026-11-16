@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 T3 Code, plano de control open source para agentes de programación, de ping.gg. Licencia MIT. Es muy popular (~62k estrellas, v0.1.9).
@@ -35,6 +37,15 @@ Se instala con `brew install --cask t3-code` o las descargas por plataforma, o s
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.9 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pingdotgg/t3code/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Gestores de sesiones de agentes de código**: T3 Code ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **T3 Code** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. |
+| 2 | [opencode-manager](opencode-manager.md) | 44 | Si buscas esto: interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. |
 
 ## Acceso, coste y equipo
 

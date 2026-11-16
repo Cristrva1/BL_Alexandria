@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma para crear bases de datos en línea con interfaz de hoja de cálculo, alternativa abierta a Airtable. Desde hace un tiempo usa la Sustainable Use License (no es OSI); es un proyecto muy popular con versiones mensuales.
@@ -35,6 +37,20 @@ Se ejecuta en Docker con SQLite (por defecto) o PostgreSQL (`NC_DB=pg://...`) gu
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 2026.10.1 (2026-10-29) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nocodb/nocodb/blob/develop/README.md) · [2](https://www.activepieces.com/pieces/nocodb) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/nocodb) · [4](https://github.com/coollabsio/coolify/tree/main/templates/compose)</sub>
+
+## Ver similares
+
+Grupo **Herramientas internas y bases de datos no-code**: NocoDB ocupa la posición 3 de 7 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ToolJet](tooljet.md) ⭐ recomendado | 75 | Si quieres un builder de apps internas con muchos conectores y opciones de IA. |
+| 2 | [Appsmith](appsmith.md) | 72 | Si construyes paneles internos arrastrando componentes sobre APIs y bases de datos. |
+| 3 | **NocoDB** (esta ficha) | 70 | Si quieres una interfaz tipo Airtable sobre tu base de datos SQL existente. |
+| 4 | [Budibase](budibase.md) | 62 | Si quieres formularios, portales y automatizaciones internas con poco código. |
+| 5 | [Teable](teable.md) | 56 | Si quieres una hoja-base de datos rápida sobre PostgreSQL con buen rendimiento en tablas grandes. |
+| 6 | [Grist](grist-core.md) | 53 | Si necesitas una hoja de cálculo relacional con fórmulas en Python. |
+| 7 | [Baserow](baserow.md) | 50 | Si buscas una alternativa a Airtable auto-hospedada y fácil de usar. |
 
 ## Acceso, coste y equipo
 

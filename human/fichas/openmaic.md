@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OpenMAIC (Open Multi-Agent Interactive Classroom), plataforma open source de la organización THU-MAIC (afiliación universitaria no declarada en el README [DATO NO VERIFICADO]), con un artículo en JCST'26. Licencia MIT desde v0.3.0. Es muy activa y crece rápido (~44k estrellas, v1.4.2; v1.5.0-rc.2 en pruebas).

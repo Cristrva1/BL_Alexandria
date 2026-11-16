@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (Apache-2.0) de Kanaries, enlace Python de Graphic Walker. Kanaries ofrece además servicios en la nube y una app de escritorio. Último push en septiembre de 2026.

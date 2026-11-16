@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección MIT de personalidades de agentes especializados («The Agency») de msitarzewski, surgida de un hilo de Reddit; uno de los repos más populares del catálogo. Sin releases; tiene app de escritorio aparte para instalarla.

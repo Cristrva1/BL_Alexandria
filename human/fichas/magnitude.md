@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de inferencia de código abierto (Apache 2.0) de magnitudedev que ajusta sus núcleos a tu hardware para ejecutar cada modelo lo más rápido posible. Reciente y muy activo (CLI 0.2.17), con app de escritorio y CLI.

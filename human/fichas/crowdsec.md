@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Solución de seguridad de código abierto (MIT) de CrowdSec SAS, con consola y listas premium de pago. Muy activa.
@@ -38,6 +40,15 @@ Escrito en Go; se instala con paquetes, Docker o Helm. Las reglas y escenarios v
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.8.2 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/crowdsecurity/crowdsec/blob/master/README.md) · [2](https://docs.crowdsec.net)</sub>
+
+## Ver similares
+
+Grupo **Bloqueo de IP por comportamiento**: CrowdSec ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **CrowdSec** (esta ficha) ⭐ recomendado | 75 | Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. |
+| 2 | [Fail2ban](fail2ban.md) | 61 | Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
 
 ## Acceso, coste y equipo
 

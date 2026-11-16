@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proxy interceptor interactivo con soporte SSL/TLS para HTTP/1, HTTP/2 y WebSockets. Licencia MIT. Es muy maduro y activo (~47k estrellas, v12.3.1).

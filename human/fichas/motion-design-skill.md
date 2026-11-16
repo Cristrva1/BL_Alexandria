@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de LottieFiles (MIT) con principios universales de diseño de movimiento para agentes; parte de la filosofía y no depende de la implementación. Sin releases; último cambio en mayo de 2026.

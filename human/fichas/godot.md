@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de juegos de código abierto (MIT), sin regalías, desarrollado por la comunidad y respaldado por la Godot Foundation (sin ánimo de lucro). El motor libre más popular; muy activo.
@@ -35,6 +37,15 @@ Está escrito en C++ con renderizadores Vulkan, Direct3D 12 y OpenGL. Importa gl
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 4.7.2-stable (2026-08-18) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/godotengine/godot/blob/master/README.md) · [2](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/available_formats.html) · [3](https://docs.godotengine.org/en/stable/tutorials/animation/creating_movies.html) · [4](https://github.com/godotengine/godot/tree/master/thirdparty)</sub>
+
+## Ver similares
+
+Grupo **Motores de videojuegos**: Godot Engine ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Godot Engine** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas. |
+| 2 | [Bevy](bevy.md) | 66 | Si buscas esto: motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones. |
 
 ## Acceso, coste y equipo
 

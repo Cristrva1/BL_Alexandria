@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Librería de web scraping y automatización de navegadores para Node.js, de Apify. Licencia Apache-2.0. Es madura y activa (~26k estrellas, v3.18.2).
@@ -37,6 +39,15 @@ Requiere Node.js 22.13+; se crea un proyecto con `npx crawlee create my-crawler`
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.18.2 (2026-09-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apify/crawlee/blob/master/README.md) · [2](https://crawlee.dev/js/docs/quick-start)</sub>
+
+## Ver similares
+
+Grupo **Crawlee (Node.js y Python)**: crawlee ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [crawlee-python](crawlee-python.md) ⭐ recomendado | 66 | Si buscas esto: versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. |
+| 2 | **crawlee** (esta ficha) | 65 | Si buscas esto: framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. |
 
 ## Acceso, coste y equipo
 

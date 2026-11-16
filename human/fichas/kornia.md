@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Kornia, biblioteca de visión por computador diferenciable sobre PyTorch. Licencia Apache-2.0. Es madura (~12k estrellas, v0.9.1).

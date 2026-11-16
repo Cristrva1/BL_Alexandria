@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 38/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 > ⚠️ **Licencia y costes:** Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP.
 
 ## ¿Qué es?
@@ -34,6 +36,15 @@ Descarga desde el dashboard; este repo es branding/roadmap/plugins.
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.59.1 (2026-11-13) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/caido/caido#readme) · [2](https://caido.io/) · [3](https://caido.io/pricing)</sub>
+
+## Ver similares
+
+Grupo **Proxies de pruebas de aplicaciones web**: Caido ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ZAP (Zed Attack Proxy)](zaproxy.md) ⭐ recomendado | 73 | Si buscas esto: escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. |
+| 2 | **Caido** (esta ficha) | 38 | Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. |
 
 ## Acceso, coste y equipo
 

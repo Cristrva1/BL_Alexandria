@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Librería TypeScript para extraer datos estructurados de cualquier página web con LLM, de @mishushakov. Licencia MIT. Es estable (~7k estrellas, sin releases) y su versión 2.0 usa el Vercel AI SDK 6.
@@ -36,6 +38,16 @@ Se instala con `npm i zod playwright llm-scraper` y el proveedor del AI SDK que 
 Estado en GitHub: activo · último push 2026-10-26 · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mishushakov/llm-scraper/blob/main/README.md) · [2](https://ai-sdk.dev/docs/introduction)</sub>
+
+## Ver similares
+
+Grupo **Scraping guiado por LLM**: llm-scraper ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Scrapegraph-ai](scrapegraph-ai.md) ⭐ recomendado | 70 | Si buscas esto: framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. |
+| 2 | [Maxun](maxun.md) | 70 | Si buscas esto: plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. |
+| 3 | **llm-scraper** (esta ficha) | 47 | Si buscas esto: librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. |
 
 ## Acceso, coste y equipo
 

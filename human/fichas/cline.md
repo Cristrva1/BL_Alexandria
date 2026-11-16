@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Cline, agente de programación open source para IDE, terminal y escritorio, de Cline Bot Inc. Licencia Apache-2.0. Es muy activo (~72k estrellas, v4.1.26).
@@ -37,6 +39,15 @@ Se instala desde el marketplace del editor, con `npm i -g cline` o con la app de
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v4.1.26 (2026-10-26) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cline/cline/blob/main/README.md) · [2](https://docs.cline.bot)</sub>
+
+## Ver similares
+
+Grupo **Agentes de código en el editor**: Cline ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Cline** (esta ficha) ⭐ recomendado | 66 | Si buscas esto: agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. |
+| 2 | [Kilo Code](kilocode.md) | 60 | Si buscas esto: agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP. |
 
 ## Acceso, coste y equipo
 

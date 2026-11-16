@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills oficiales de Obsidian para agentes de IA, según la especificación Agent Skills. Licencia MIT. Es muy popular (~53k estrellas, 1.1.0).

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra NOASSERTION). Es muy popular (~63k estrellas, v1.10x).
@@ -42,6 +44,17 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (48). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.109.1 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BerriAI/litellm/blob/main/README.md) · [2](https://docs.litellm.ai/docs/providers/ollama) · [3](https://docs.litellm.ai/docs/observability/langfuse_integration) · [4](https://docs.litellm.ai/blog/security-update-march-2026) · [5](https://blog.pypi.org/posts/2026-04-02-incident-report-litellm-telnyx-supply-chain-attack/)</sub>
+
+## Ver similares
+
+Grupo **Pasarelas y routers de proveedores LLM**: litellm ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **litellm** (esta ficha) ⭐ recomendado | 77 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
+| 2 | [OmniRoute](omniroute.md) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
+| 3 | [claude-code-router](claude-code-router.md) | 57 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
+| 4 | [backdoor](backdoor.md) | 36 | Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros). |
 
 ## Acceso, coste y equipo
 

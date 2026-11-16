@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 LlamaFactory, framework para fine-tuning unificado de más de 100 LLM y modelos de visión con CLI e interfaz web sin código, de @hiyouga. Licencia Apache-2.0. Es maduro (~76k estrellas, v0.9.5) y está citado por empresas como Amazon y NVIDIA.
@@ -37,6 +39,17 @@ Se instala desde el repo con pip (extras para métricas, DeepSpeed, etc.) o se u
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.5 (2026-05-30) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hiyouga/LlamaFactory/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Fine-tuning de LLM**: LLaMA-Factory ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Unsloth](unsloth.md) ⭐ recomendado | 82 | Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU. |
+| 2 | [Axolotl](axolotl.md) | 65 | Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU. |
+| 3 | **LLaMA-Factory** (esta ficha) | 60 | Si quieres una interfaz web para afinar cientos de modelos sin programar. |
+| 4 | [torchtune](torchtune.md) | 52 | Si prefieres recetas nativas de PyTorch fáciles de modificar. |
 
 ## Acceso, coste y equipo
 

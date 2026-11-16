@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 NVIDIA NeMo Speech (antes parte de NeMo), framework actual de NVIDIA para reconocimiento de voz, síntesis y modelos conversacionales. Licencia Apache-2.0. Es maduro (~19k estrellas, v3.0.0).
@@ -36,6 +38,15 @@ Requiere Python 3.12+ y PyTorch con CUDA; se instala sobre una pila existente si
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.0.0 (2026-08-07) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA-NeMo/Speech/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Transcripción con modelos NVIDIA y alineación**: NeMo Speech ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [whisperX](whisperx.md) ⭐ recomendado | 67 | Si buscas esto: pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
+| 2 | **NeMo Speech** (esta ficha) | 66 | Si buscas esto: framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
 
 ## Acceso, coste y equipo
 

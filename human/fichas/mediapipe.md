@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 MediaPipe, framework de Google AI Edge para ML en dispositivo. Licencia Apache-2.0. Es maduro (~38k estrellas, v1.2.3).

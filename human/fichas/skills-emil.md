@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills de diseño e ingeniería de interfaces (MIT) de Emil Kowalski, ex Vercel y Linear y autor de la biblioteca Sonner. Activo, sin releases.

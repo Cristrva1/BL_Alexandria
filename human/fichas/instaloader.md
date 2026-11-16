@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta Python para descargar fotos, vídeos y metadatos de Instagram. Licencia MIT. Es madura (~14k estrellas, v4.16) y muestra un patrocinador de APIs sociales.

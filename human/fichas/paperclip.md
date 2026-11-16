@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Paperclip, servidor Node.js con interfaz React para orquestar equipos de agentes de IA como si fueran una empresa. Licencia MIT. Creado en marzo de 2026, ya tiene ~114k estrellas; hay lista de espera para un servicio cloud.
@@ -36,6 +38,15 @@ Se inicia con `npx paperclipai@latest onboard --yes` o se prueba con `npx paperc
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2026.1106.0 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/paperclipai/paperclip/blob/master/README.md) · [2](https://docs.paperclip.ing/connectors/)</sub>
+
+## Ver similares
+
+Grupo **Paneles para coordinar equipos de agentes**: paperclip ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **paperclip** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
+| 2 | [multica](multica.md) | 56 | Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. |
 
 ## Acceso, coste y equipo
 

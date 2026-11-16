@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Generative AI for Krita, plugin para usar IA generativa dentro de Krita, de @Acly (Interstice). Licencia GPL-3.0. Es maduro (~11k estrellas, v1.53.0).
@@ -35,6 +37,15 @@ Se instala como plugin de Krita desde la release y, desde el docker del plugin, 
 Estado en GitHub: activo · último push 2026-11-06 · última versión publicada v1.53.0 (2026-08-22) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Acly/krita-ai-diffusion/blob/main/README.md) · [2](https://docs.interstice.cloud/installation) · [3](https://docs.interstice.cloud/comfyui-setup)</sub>
+
+## Ver similares
+
+Grupo **Interfaces de creación de imágenes**: Krita AI Diffusion ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [InvokeAI](invokeai.md) ⭐ recomendado | 73 | Si buscas esto: suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. |
+| 2 | **Krita AI Diffusion** (esta ficha) | 55 | Si buscas esto: plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. |
 
 ## Acceso, coste y equipo
 

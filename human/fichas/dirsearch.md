@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Dirbuster Python (GPL-2 según README; API sin SPDX).
@@ -32,6 +34,17 @@ git clone o pip desde GitHub.
 Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v0.5.0 (2026-08-14) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/maurosoria/dirsearch#readme)</sub>
+
+## Ver similares
+
+Grupo **Fuzzing de rutas y contenido web**: dirsearch ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ffuf](ffuf.md) ⭐ recomendado | 68 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
+| 2 | **dirsearch** (esta ficha) | 60 | Si prefieres una herramienta en Python con listas y reportes listos. |
+| 3 | [Gobuster](gobuster.md) | 57 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
+| 4 | [feroxbuster](feroxbuster.md) | 57 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 AIO Sandbox, entorno sandbox todo en uno para agentes (navegador, terminal, archivos, VSCode, Jupyter y MCP en un contenedor), de agent-infra. Licencia Apache-2.0. Tiene ~6.3k estrellas (v1.11.0) y artículo asociado.
@@ -36,6 +38,16 @@ Se ejecuta con `docker run … ghcr.io/agent-infra/sandbox:<tag>` (hay espejo en
 Estado en GitHub: activo · último push 2026-09-14 · última versión publicada v1.11.0 (2026-06-23) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/agent-infra/sandbox/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Sandboxes para agentes**: sandbox ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [NemoClaw](nemoclaw.md) ⭐ recomendado | 69 | Si buscas esto: stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
+| 2 | [E2B](e2b.md) | 65 | Si buscas esto: sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
+| 3 | **sandbox** (esta ficha) | 52 | Si buscas esto: entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
 
 ## Acceso, coste y equipo
 

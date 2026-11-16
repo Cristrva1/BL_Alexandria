@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Versión mantenida oficialmente por Alexandre Défossez, autor de Demucs, tras dejar Meta (y archivarse facebookresearch/demucs). El código es MIT. El propio autor avisa de que no trabaja activamente en él: respuestas lentas y sin funciones nuevas.

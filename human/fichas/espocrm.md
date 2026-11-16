@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CRM de código abierto (AGPL-3.0) de EspoCRM Inc., con extensiones y soporte de pago. Maduro y activo.
@@ -35,6 +37,18 @@ Backend PHP 8.3–8.5 con frontend SPA; requiere MySQL 8.0+, MariaDB 10.6+ o Pos
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 10.1.1 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/espocrm/espocrm/blob/master/README.md) · [2](https://docs.espocrm.com/)</sub>
+
+## Ver similares
+
+Grupo **CRM y ERP auto-hospedados**: EspoCRM ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [twenty-main](twenty-main.md) ⭐ recomendado | 75 | Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado. |
+| 2 | [ERPNext](erpnext.md) | 74 | Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH. |
+| 3 | [Odoo](odoo.md) | 66 | Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema. |
+| 4 | **EspoCRM** (esta ficha) | 53 | Si quieres un CRM ligero y personalizable en PHP. |
+| 5 | [SuiteCRM](suitecrm.md) | 45 | Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos. |
 
 ## Acceso, coste y equipo
 

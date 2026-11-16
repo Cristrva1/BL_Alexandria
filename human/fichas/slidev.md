@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Slidev, presentaciones para desarrolladores escritas en Markdown, de Anthony Fu y slidevjs. Licencia MIT. Es madura (~49k estrellas, v53.1.0).
@@ -36,6 +38,16 @@ Requiere Node.js 22.12+ y se inicia con `npm init slidev`. Usa Vite para la reca
 Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v53.1.0 (2026-11-05) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/slidevjs/slidev/blob/main/README.md) · [2](https://sli.dev/)</sub>
+
+## Ver similares
+
+Grupo **Presentaciones desde Markdown**: Slidev ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Slidev** (esta ficha) ⭐ recomendado | 73 | Si buscas esto: presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| 2 | [reveal.js](reveal-js.md) | 59 | Si buscas esto: framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
+| 3 | [Marp](marp.md) | 47 | Si buscas esto: entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado. |
 
 ## Acceso, coste y equipo
 

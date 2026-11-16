@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Depurador binario open source para Windows orientado a análisis de malware e ingeniería inversa de ejecutables sin código fuente, con @mrexodia entre sus autores según los créditos. Licencia GPL-3.0 (GitHub muestra NOASSERTION). Es muy maduro y activo (~50k estrellas, snapshot 2026.05.27).

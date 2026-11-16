@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill y plugin que da memoria persistente a agentes de programación usando un vault de Obsidian, creado por @eugeniughelbur. Licencia MIT. Es muy activo (~5k estrellas, v0.20.0) y el README promociona un boletín del autor.
@@ -38,6 +40,15 @@ Requiere Claude Code (u otra de las plataformas soportadas), `git` y `uv` para l
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.20.0 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/eugeniughelbur/obsidian-second-brain/blob/main/README.md) · [2](https://github.com/eugeniughelbur/obsidian-second-brain#install)</sub>
+
+## Ver similares
+
+Grupo **Obsidian como segundo cerebro para agentes**: obsidian-second-brain ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **obsidian-second-brain** (esta ficha) ⭐ recomendado | 62 | Si buscas esto: sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. |
+| 2 | [claude-obsidian](claude-obsidian.md) | 60 | Si buscas esto: instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. |
 
 ## Acceso, coste y equipo
 

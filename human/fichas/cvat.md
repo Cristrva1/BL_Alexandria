@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Edición comunitaria, autoalojable y de código abierto (MIT) de CVAT, una de las herramientas de anotación de datos más usadas en visión por computador desde 2018. Es la base de CVAT Online y CVAT Enterprise (comerciales). Muy activa.
@@ -35,6 +37,15 @@ Se despliega con Docker Compose o Kubernetes. Backend Django con PostgreSQL y Re
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.83.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cvat-ai/cvat/blob/develop/README.md) · [2](https://github.com/cvat-ai/cvat/blob/develop/cvat/apps/dataset_manager/formats/yolo.py)</sub>
+
+## Ver similares
+
+Grupo **Etiquetado de datos para visión**: CVAT Community ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Label Studio](label-studio.md) ⭐ recomendado | 71 | Si buscas esto: herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video. |
+| 2 | **CVAT Community** (esta ficha) | 68 | Si buscas esto: plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets. |
 
 ## Acceso, coste y equipo
 

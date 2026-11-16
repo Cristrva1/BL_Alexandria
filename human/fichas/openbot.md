@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba para evaluar en Kubernetes y de pago en producción. Versión v1.0.3 (noviembre de 2026), ~12k estrellas.
@@ -38,6 +40,15 @@ Para una persona, la app de escritorio (Mac/Windows) incluye el backend en Docke
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.3 (2026-11-14) · licencia declarada MIT (plantilla; Intelligence con licencia aparte) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CopilotKit/OpenBot/blob/main/README.md) · [2](https://github.com/CopilotKit/OpenDots/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Espacios de asistentes de CopilotKit**: OpenBot ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **OpenBot** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
+| 2 | [OpenDots](opendots.md) | 48 | Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. |
 
 ## Acceso, coste y equipo
 

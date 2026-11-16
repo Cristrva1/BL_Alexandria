@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta OSINT de código abierto (MIT) mantenida por el Sherlock Project y su comunidad. Muy popular; el README advierte de que los paquetes de terceros para ParrotOS y Ubuntu 24.04 parecen estar rotos.
@@ -35,6 +37,15 @@ Escrito en Python; se instala con pipx, pip, uv o Docker (`docker run -it --rm s
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.16.2 (2026-09-08) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sherlock-project/sherlock/blob/master/docs/README.md)</sub>
+
+## Ver similares
+
+Grupo **Búsqueda de usuarios en redes sociales**: Sherlock ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Sherlock** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: cLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas. |
+| 2 | [Maigret](maigret.md) | 63 | Si buscas esto: recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.
@@ -35,6 +37,19 @@ Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin
 Estado en GitHub: activo · último push 2026-09-18 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Catálogos de skills y plugins para agentes**: Awesome Claude Skills ocupa la posición 4 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) ⭐ recomendado | 68 | Si quieres el catálogo más grande de skills instalables para varios agentes. |
+| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 61 | Si quieres solo plugins publicados por Anthropic. |
+| 3 | [Awesome Agent Skills](awesome-agent-skills.md) | 53 | Si quieres skills en formato portable para varios agentes. |
+| 4 | **Awesome Claude Skills** (esta ficha) | 50 | Si buscas skills para Claude ordenadas por tema. |
+| 5 | [Awesome Claude Code](awesome-claude-code.md) | 50 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
+| 6 | [wshobson/agents](wshobson-agents.md) | 49 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
 
 ## Acceso, coste y equipo
 

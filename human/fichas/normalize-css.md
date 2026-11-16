@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Hoja de estilos (MIT) de @necolas que normaliza los estilos por defecto entre navegadores, como alternativa moderna a los 'CSS resets'. Su último push es de junio de 2024: está prácticamente sin mantenimiento, y su lista de compatibilidad aún incluye Internet Explorer 10+.

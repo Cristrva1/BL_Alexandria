@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor MCP oficial de Neo4j (organización neo4j, Neo4j Sweden AB), escrito en Go. Licencia GPL-3.0 según LICENSE.txt y NOTICE.txt (GitHub muestra NOASSERTION); si se usa con Aura o con las ediciones comerciales de Neo4j, pasa a regirse por esos contratos. Versión v2.1.1 (noviembre de 2026), ~300 estrellas, activo.
@@ -36,6 +38,15 @@ Se instala con `pip install neo4j-mcp-server` (la documentación oficial cubre b
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.1.1 (2026-11-11) · licencia declarada GPL-3.0 (GitHub: NOASSERTION) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/neo4j/mcp/blob/main/README.md) · [2](https://github.com/neo4j/mcp/blob/main/NOTICE.txt) · [3](https://neo4j.com/docs/mcp/current/)</sub>
+
+## Ver similares
+
+Grupo **Servidores MCP de Neo4j**: Neo4j MCP (oficial) ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Neo4j MCP (oficial)** (esta ficha) ⭐ recomendado | 60 | Si buscas esto: servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. |
+| 2 | [mcp-neo4j](mcp-neo4j.md) | 52 | Si buscas esto: servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. |
 
 ## Acceso, coste y equipo
 

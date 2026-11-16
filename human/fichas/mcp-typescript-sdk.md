@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SDK oficial en TypeScript del Model Context Protocol. La rama principal es la v2 estable (v2.4.0), que implementa la especificación MCP 2026-07-28. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION); ~14k estrellas.
@@ -35,6 +37,15 @@ Se instala con npm (`npm install @modelcontextprotocol/server`, más `zod` para 
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v2.4.0 (2026-10-23) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md) · [2](https://modelcontextprotocol.io/docs/tools/inspector) · [3](https://ai-sdk.dev/docs/ai-sdk-core/mcp-tools)</sub>
+
+## Ver similares
+
+Grupo **SDKs de MCP en TypeScript**: MCP TypeScript SDK ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [mcp-use](mcp-use.md) ⭐ recomendado | 64 | Si buscas esto: framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
+| 2 | **MCP TypeScript SDK** (esta ficha) | 60 | Si buscas esto: sDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección (MIT) de @ashishpatel26 con más de 500 casos de uso y proyectos de agentes de IA, organizados por industria y framework. Es activa (último push en noviembre de 2026) y popular (~40k estrellas).

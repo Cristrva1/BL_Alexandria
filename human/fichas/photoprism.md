@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de fotos de código abierto (AGPL-3.0) de PhotoPrism UG, financiada con membresías que desbloquean funciones adicionales. Madura y activa.
@@ -35,6 +37,15 @@ Escrito en Go con TensorFlow; se despliega con Docker Compose y MariaDB (o SQLit
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 261029-963b58c50 (2026-10-29) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/photoprism/photoprism/blob/develop/README.md) · [2](https://docs.photoprism.app/user-guide/sync/webdav/) · [3](https://docs.photoprism.app/license/agpl/)</sub>
+
+## Ver similares
+
+Grupo **Gestión de fotos auto-hospedada**: PhotoPrism ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Immich](immich.md) ⭐ recomendado | 81 | Si buscas esto: gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local. |
+| 2 | **PhotoPrism** (esta ficha) | 66 | Si buscas esto: app de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube. |
 
 ## Acceso, coste y equipo
 

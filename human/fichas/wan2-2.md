@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Wan2.2, familia de modelos abiertos de generación de vídeo de Alibaba (Wan-AI). Licencia Apache-2.0 para los modelos; no reclaman derechos sobre el contenido generado. Tiene ~19k estrellas (sin releases) y su último cambio es de septiembre de 2026.
@@ -37,6 +39,16 @@ Se instala con `pip install -r requirements.txt` y se descargan los pesos de Hug
 Estado en GitHub: activo · último push 2026-09-21 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Wan-Video/Wan2.2/blob/main/README.md) · [2](https://docs.comfy.org/tutorials/video/wan/wan2_2) · [3](https://huggingface.co/docs/diffusers/main/en/api/pipelines/wan)</sub>
+
+## Ver similares
+
+Grupo **Modelos abiertos de video generativo**: Wan2.2 ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Wan2.2** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
+| 2 | [HunyuanVideo](hunyuanvideo.md) | 54 | Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
+| 3 | [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | 41 | Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de código abierto (MIT) de Anjok07 y aufr33, referencia popular para separar voces. La última versión publicada es la v5.6 (2023); el README remite a una actualización de desarrollo de octubre de 2026.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lenguaje de diseño empresarial y biblioteca de componentes React (MIT) de Ant Group. Es muy madura (versión 6.7.0, ~100k estrellas), está escrita en TypeScript y se financia con patrocinios en Open Collective.
@@ -35,6 +37,19 @@ Se instala con `npm install antd` o `pnpm add antd`. Funciona en navegadores mod
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 6.7.0 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ant-design/ant-design/blob/master/README.md) · [2](https://ant.design/)</sub>
+
+## Ver similares
+
+Grupo **Bibliotecas de componentes React**: Ant Design ocupa la posición 1 de 6 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Ant Design** (esta ficha) ⭐ recomendado | 77 | Si construyes paneles empresariales densos en datos. |
+| 2 | [ui](ui.md) | 73 | Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui). |
+| 3 | [Material UI](mui.md) | 70 | Si quieres Material Design y la biblioteca de componentes React más usada. |
+| 4 | [Chakra UI](chakra-ui.md) | 64 | Si priorizas accesibilidad y estilos por props. |
+| 5 | [heroui](heroui.md) | 62 | Si quieres componentes bonitos sobre Tailwind (antes NextUI). |
+| 6 | [Mantine](mantine.md) | 58 | Si quieres componentes y hooks completos con buena documentación y poca configuración. |
 
 ## Acceso, coste y equipo
 

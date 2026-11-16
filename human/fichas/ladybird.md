@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** hard
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Navegador de código abierto (BSD-2-Clause) desarrollado por Ladybird Browser Initiative, organización sin ánimo de lucro, a partir de componentes de SerenityOS. Muy popular y activo; está en pre-alfa.
@@ -35,6 +37,15 @@ Está escrito en C++ con arquitectura multiproceso: proceso de interfaz, proceso
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada BSD-2-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/LadybirdBrowser/ladybird/blob/master/README.md) · [2](https://github.com/LadybirdBrowser/ladybird/tree/master/Services/WebDriver) · [3](https://github.com/LadybirdBrowser/ladybird/blob/master/vcpkg.json)</sub>
+
+## Ver similares
+
+Grupo **Motores de navegador independientes**: Ladybird ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Ladybird** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa. |
+| 2 | [Servo](servo.md) | 58 | Si buscas esto: motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe. |
 
 ## Acceso, coste y equipo
 

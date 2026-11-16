@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema RAG «sin vectores» basado en razonamiento, de VectifyAI. La versión de código abierto es MIT (v0.7.0) y convive con productos en la nube: PageIndex Cloud, una API de búsqueda de páginas y una app de análisis de documentos.
@@ -35,6 +37,17 @@ SDK Python (`pip install -U pageindex`) con modo local y nube; en local usa por 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.7.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/VectifyAI/PageIndex/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **RAG con grafos e índices de conocimiento**: PageIndex ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [RAGFlow](ragflow.md) ⭐ recomendado | 82 | Si quieres un motor de RAG completo con comprensión profunda de documentos e interfaz. |
+| 2 | [LightRAG](lightrag.md) | 66 | Si quieres RAG con grafo de conocimiento ligero y rápido de indexar. |
+| 3 | **PageIndex** (esta ficha) | 60 | Si quieres RAG sin vectores que razona sobre la tabla de contenidos de documentos largos. |
+| 4 | [graphrag](graphrag.md) | 54 | Si necesitas la metodología GraphRAG de Microsoft para preguntas globales sobre un corpus. |
 
 ## Acceso, coste y equipo
 

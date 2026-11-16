@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** hard
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de navegador de código abierto (MPL-2.0) iniciado por Mozilla y alojado ahora en Linux Foundation Europe. Muy activo; sigue considerándose un prototipo. Su política prohíbe contribuciones generadas con modelos de lenguaje.
@@ -35,6 +37,15 @@ Está escrito en Rust y se compila con la herramienta `mach`. Se divide en compo
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.8.0 (2026-11-09) · licencia declarada MPL-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/servo/servo/blob/main/README.md) · [2](https://book.servo.org/policy/ai-usage.html) · [3](https://github.com/servo/servo/blob/main/components/config/prefs.rs)</sub>
+
+## Ver similares
+
+Grupo **Motores de navegador independientes**: Servo ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Ladybird](ladybird.md) ⭐ recomendado | 72 | Si buscas esto: navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa. |
+| 2 | **Servo** (esta ficha) | 58 | Si buscas esto: motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe. |
 
 ## Acceso, coste y equipo
 

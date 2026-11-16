@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 API para buscar, extraer e interactuar con la web a escala, pensada como «API de contexto» para agentes de IA, de Firecrawl. Licencia AGPL-3.0, con servicio alojado de pago. Es muy popular y activo (~202k estrellas, v2.11.0).
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.11.0 (2026-06-19) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/firecrawl/firecrawl/blob/main/README.md) · [2](https://docs.firecrawl.dev/mcp-server) · [3](https://n8n.io/integrations/firecrawl/) · [4](https://docs.gptr.dev/docs/gpt-researcher/gptr/scraping) · [5](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/firecrawl)</sub>
+
+## Ver similares
+
+Grupo **Crawlers que entregan contenido listo para LLM**: firecrawl ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [crawl4ai](crawl4ai.md) ⭐ recomendado | 72 | Si buscas esto: librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
+| 2 | **firecrawl** (esta ficha) | 71 | Si buscas esto: plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
+| 3 | [Jina Reader](jina-reader.md) | 52 | Si buscas esto: servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. |
 
 ## Acceso, coste y equipo
 

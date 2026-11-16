@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SGLang, framework de inferencia para modelos de lenguaje, visión-lenguaje y difusión, de la comunidad sgl-project (LMSYS). Licencia Apache-2.0. Es muy activo (~39k estrellas, v0.5.23).
@@ -44,6 +46,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.5.23 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sgl-project/sglang/blob/main/README.md) · [2](https://docs.sglang.io/docs/basic_usage/openai_api)</sub>
+
+## Ver similares
+
+Grupo **Servidores de inferencia de alto rendimiento**: SGLang ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [vLLM](vllm.md) ⭐ recomendado | 78 | Si buscas esto: motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
+| 2 | **SGLang** (esta ficha) | 67 | Si buscas esto: framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 
 ## Acceso, coste y equipo
 

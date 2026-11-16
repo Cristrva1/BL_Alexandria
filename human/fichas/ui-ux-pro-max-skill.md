@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de «inteligencia de diseño» (MIT) de NextLevelBuilder para construir interfaces profesionales en múltiples plataformas. Muy popular y activa (v2.15.0); el README promociona otros productos del mismo equipo.
@@ -35,6 +37,17 @@ Datos estructurados y un script de búsqueda en Python 3 (solo biblioteca están
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-08-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Skills de diseño de interfaces para agentes**: ui-ux-pro-max-skill ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **ui-ux-pro-max-skill** (esta ficha) ⭐ recomendado | 73 | Si quieres una skill con bases de estilos, paletas y tipografías para generar UI. |
+| 2 | [taste-skill](taste-skill.md) | 70 | Si quieres que el agente evite el aspecto genérico en las interfaces. |
+| 3 | [impeccable](impeccable.md) | 63 | Si quieres vocabulario y playbooks de diseño con detector y hooks. |
+| 4 | [hallmark](hallmark.md) | 51 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
 
 ## Acceso, coste y equipo
 

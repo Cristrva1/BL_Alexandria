@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 vLLM, motor de inferencia y servicio de LLM nacido en el Sky Computing Lab de UC Berkeley y mantenido por una comunidad amplia. Licencia Apache-2.0. Es uno de los proyectos open source de IA más activos (~97k estrellas; última versión candidata v0.33.0rc3).
@@ -41,6 +43,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (43). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.33.0rc3 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vllm-project/vllm/blob/main/README.md) · [2](https://docs.vllm.ai/en/latest/deployment/frameworks/open-webui.html) · [3](https://docs.litellm.ai/docs/providers/vllm) · [4](https://docs.vllm.ai/en/latest/serving/integrations/langchain.html)</sub>
+
+## Ver similares
+
+Grupo **Servidores de inferencia de alto rendimiento**: vLLM ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **vLLM** (esta ficha) ⭐ recomendado | 78 | Si buscas esto: motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
+| 2 | [SGLang](sglang.md) | 67 | Si buscas esto: framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de ingeniería inversa nacido como fork de radare2, centrado en usabilidad, funciones y limpieza del código. Licencia LGPL-3.0. Es activo (~4k estrellas, v0.9.1).
@@ -35,6 +37,16 @@ Está escrito en C y se compila con Meson según el README; también hay binario
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.1 (2026-06-29) · licencia declarada LGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rizinorg/rizin/blob/dev/README.md) · [2](https://book.rizin.re) · [3](https://github.com/rizinorg/rz-ghidra)</sub>
+
+## Ver similares
+
+Grupo **Ingeniería inversa y desensambladores**: rizin ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ghidra](ghidra.md) ⭐ recomendado | 71 | Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. |
+| 2 | [radare2](radare2.md) | 68 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
+| 3 | **rizin** (esta ficha) | 46 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
 
 ## Acceso, coste y equipo
 

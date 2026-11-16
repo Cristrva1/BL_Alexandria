@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skills «con opinión» de @leonardocouy (Softaworks), con licencia MIT y en formato Agent Skills, pensadas para ganar eficiencia en Claude Code. Sin releases; último cambio en marzo de 2026.

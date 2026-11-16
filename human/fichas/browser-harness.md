@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Browser Harness, harness con el que Claude Code, Codex o Cursor usan tu Chrome real con tu sesión iniciada, de browser-use. Licencia MIT. Creado en abril de 2026 (~19k estrellas, v0.1.13); ahora es el motor de Browser Use y se recomienda usar la CLI `browser-use`.
@@ -35,6 +37,17 @@ Se instala con `uv tool install browser-use` y `browser-use skill install`, y lu
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.13 (2026-09-04) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/browser-use/browser-harness/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Agentes que navegan la web**: Browser Harness ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [browser-use](browser-use.md) ⭐ recomendado | 73 | Si quieres el framework Python más usado para que un LLM controle el navegador. |
+| 2 | [Stagehand](stagehand.md) | 61 | Si trabajas en TypeScript y quieres mezclar código Playwright con acciones en lenguaje natural. |
+| 3 | [Skyvern](skyvern.md) | 60 | Si automatizas formularios y flujos repetitivos con visión y no quieres selectores frágiles. |
+| 4 | **Browser Harness** (esta ficha) | 60 | Si quieres que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión. |
 
 ## Acceso, coste y equipo
 

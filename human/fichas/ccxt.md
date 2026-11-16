@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 81/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 CCXT, librería que unifica las APIs de más de 100 exchanges de criptomonedas y mercados de predicción. Licencia MIT. Es muy madura (~45k estrellas, v4.5.92).

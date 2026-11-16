@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Promptfoo, CLI y librería para evaluar y hacer red teaming de aplicaciones con LLM. Ahora forma parte de OpenAI y sigue siendo open source con licencia MIT. Es muy activo (~27k estrellas, 0.125.1).
@@ -41,6 +43,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.125.1 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/promptfoo/promptfoo/blob/main/README.md) · [2](https://www.promptfoo.dev/docs/integrations/langfuse/) · [3](https://www.promptfoo.dev/docs/providers/litellm/) · [4](https://www.promptfoo.dev/docs/providers/vllm/)</sub>
+
+## Ver similares
+
+Grupo **Evaluación y pruebas de LLM**: promptfoo ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **promptfoo** (esta ficha) ⭐ recomendado | 79 | Si buscas esto: cLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
+| 2 | [DeepEval](deepeval.md) | 63 | Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. |
+| 3 | [Ragas](ragas.md) | 51 | Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
 
 ## Acceso, coste y equipo
 

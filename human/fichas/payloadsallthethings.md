@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Wiki/cheatsheet MIT de swisskyrepo con payloads y metodología web ofensiva.
@@ -39,6 +41,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-10-30 · última versión publicada 4.2 (2025-07-26) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/swisskyrepo/PayloadsAllTheThings#readme) · [2](https://swisskyrepo.github.io/PayloadsAllTheThings/)</sub>
+
+## Ver similares
+
+Grupo **Listas de payloads y diccionarios**: PayloadsAllTheThings ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [SecLists](seclists.md) ⭐ recomendado | 66 | Si buscas esto: colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas. |
+| 2 | **PayloadsAllTheThings** (esta ficha) | 63 | Si buscas esto: enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest. |
 
 ## Acceso, coste y equipo
 

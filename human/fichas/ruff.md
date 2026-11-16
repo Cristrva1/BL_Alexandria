@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Linter y formateador de código abierto (MIT) desarrollado por Astral, la empresa de uv. Estándar de facto en el ecosistema Python, usado por proyectos como FastAPI, pandas o Apache Airflow.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de ingeniería inversa de software creado y mantenido por la Research Directorate de la NSA. Licencia Apache-2.0. Es muy maduro y popular (~100k estrellas, Ghidra 12.2). El README avisa de vulnerabilidades conocidas en algunas versiones y remite a sus avisos de seguridad.
@@ -42,6 +44,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se 
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada Ghidra_12.2_build (2026-10-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md) · [2](https://github.com/NationalSecurityAgency/ghidra/security/advisories) · [3](https://github.com/LaurieWired/GhidraMCP)</sub>
+
+## Ver similares
+
+Grupo **Ingeniería inversa y desensambladores**: ghidra ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **ghidra** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. |
+| 2 | [radare2](radare2.md) | 68 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
+| 3 | [rizin](rizin.md) | 46 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
 
 ## Acceso, coste y equipo
 

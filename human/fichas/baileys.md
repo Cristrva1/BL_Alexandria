@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Librería de código abierto (MIT) en TypeScript para interactuar con la API de WhatsApp Web mediante WebSockets, mantenida por la comunidad WhiskeySockets. No está afiliada a WhatsApp; la versión 7.0.0 introdujo cambios incompatibles y en 2026 su última versión publicada es una release candidate.
@@ -35,6 +37,18 @@ Habla directamente el protocolo multidispositivo de WhatsApp Web por WebSocket, 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v7.0.0-rc14 (2026-07-29) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/WhiskeySockets/Baileys/blob/master/README.md) · [2](https://github.com/rmyndharis/OpenWA/blob/main/README.md) · [3](https://github.com/evolution-foundation/evolution-api/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **APIs y librerías no oficiales de WhatsApp**: Baileys ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [whatsapp-web.js](whatsapp-web-js.md) ⭐ recomendado | 69 | Si programas en Node.js y prefieres controlar WhatsApp Web con un navegador. |
+| 2 | **Baileys** (esta ficha) | 67 | Si programas en Node.js y quieres la librería de bajo nivel por WebSocket. |
+| 3 | [WAHA](waha.md) | 62 | Si quieres WhatsApp por HTTP en un contenedor, con varios motores. |
+| 4 | [evolution-api](evolution-api.md) | 54 | Si quieres una API REST de WhatsApp lista para n8n, Chatwoot o CRMs. |
+| 5 | [whatsmeow](whatsmeow.md) | 49 | Si programas en Go y quieres una librería multi-dispositivo eficiente. |
 
 ## Acceso, coste y equipo
 

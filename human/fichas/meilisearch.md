@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor de búsqueda de código abierto de Meili SAS. La Community Edition es MIT; la Enterprise Edition añade sharding y otras funciones bajo licencia comercial o Business Source License 1.1. Proyecto muy popular y maduro con nube gestionada.

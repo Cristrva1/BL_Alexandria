@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 44/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Paquete de nueve skills (MIT) de Majid Manzarpour para Codex y Claude Code, centrado en crear juegos de navegador con Three.js. Sin releases; último cambio en septiembre de 2026.

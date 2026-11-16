@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Memoria persistente de código abierto (Apache 2.0) para sesiones de programación y agentes, de rohitg00, que se presenta como implementación del patrón «LLM Wiki» de Karpathy con puntuación de confianza, ciclo de vida, grafos y búsqueda híbrida. Muy activo (v0.9.33).
@@ -36,6 +38,16 @@ Requiere Node.js 20+; se ejecuta con `npx -y @agentmemory/agentmemory@latest`. S
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v0.9.33 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/rohitg00/agentmemory/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Memoria persistente para agentes de código**: agentmemory ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [claude-mem](claude-mem.md) ⭐ recomendado | 74 | Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más. |
+| 2 | [Engram](engram.md) | 62 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
+| 3 | **agentmemory** (esta ficha) | 52 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
 
 ## Acceso, coste y equipo
 

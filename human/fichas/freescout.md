@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Helpdesk de código abierto (AGPL-3.0) del proyecto FreeScout, financiado con la venta de módulos. Maduro y activo.
@@ -35,6 +37,15 @@ Aplicación PHP/MySQL con Laravel; se instala en hosting compartido, servidor pr
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.8.251 (2026-11-14) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/freescout-help-desk/freescout/blob/dist/README.md) · [2](https://freescout.net/)</sub>
+
+## Ver similares
+
+Grupo **Help desk y tickets**: FreeScout ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Zammad](zammad.md) ⭐ recomendado | 58 | Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
+| 2 | **FreeScout** (esta ficha) | 56 | Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. |
 
 ## Acceso, coste y equipo
 

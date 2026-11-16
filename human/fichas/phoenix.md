@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Arize Phoenix, plataforma de observabilidad de IA para experimentación, evaluación y depuración, de Arize. Licencia Elastic License 2.0 (código disponible, no OSI; GitHub muestra NOASSERTION). Es muy activa (~12k estrellas, arize-phoenix-v21.1.0).
@@ -36,6 +38,18 @@ Se instala con `pip install arize-phoenix` o `npx @arizeai/phoenix-cli setup`, y
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada arize-phoenix-v21.1.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Arize-ai/phoenix/blob/main/README.md) · [2](https://arize.com/docs/phoenix/integrations/python/llamaindex) · [3](https://arize.com/docs/phoenix/integrations/python/langgraph) · [4](https://arize.com/docs/phoenix/integrations/llm-providers/ollama) · [5](https://arize.com/docs/phoenix/integrations/mcp)</sub>
+
+## Ver similares
+
+Grupo **Observabilidad y trazas de LLM**: Phoenix ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langfuse](langfuse.md) ⭐ recomendado | 79 | Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande. |
+| 2 | [Opik](opik.md) | 75 | Si quieres trazas y evaluación de LLM con integración en pruebas. |
+| 3 | [MLflow](mlflow.md) | 70 | Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM. |
+| 4 | **Phoenix** (esta ficha) | 53 | Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks. |
+| 5 | [Helicone](helicone.md) | 50 | Si quieres observabilidad como proxy con solo cambiar la URL base. |
 
 ## Acceso, coste y equipo
 

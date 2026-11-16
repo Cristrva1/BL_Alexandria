@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Editor hexadecimal para ingenieros inversos y programadores, creado por @WerWolv. La mayor parte es GPL-2.0-only, con partes en LGPL-2.1 (librerías y plugins). Es muy popular y activo (~56k estrellas, v1.38.1).

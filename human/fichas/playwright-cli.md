@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Playwright CLI, CLI de Playwright con skills para agentes de código, de Microsoft. Licencia Apache-2.0. Tiene ~15k estrellas (v0.1.x).
@@ -35,6 +37,15 @@ Requiere Node.js 20+ y se instala con `npm install -g @playwright/cli@latest`. F
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v0.1.24 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/playwright-cli/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **CLIs de navegador para agentes**: playwright-cli ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [agent-browser](agent-browser.md) ⭐ recomendado | 63 | Si buscas esto: cLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. |
+| 2 | **playwright-cli** (esta ficha) | 57 | Si buscas esto: interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Fish Speech, herramientas y modelos de voz de Fish Audio. El código y los pesos usan la «Fish Audio Community License»; los pesos S2-Pro usan la Fish Audio Research License (GitHub muestra NOASSERTION). Tiene ~34k estrellas.
@@ -35,6 +37,18 @@ Se instala desde el repo con Python y PyTorch (GPU recomendable), y se usa con W
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.5.1 (2025-05-31) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/fishaudio/fish-speech/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Clonación de voz y TTS multilingüe**: Fish Speech ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 72 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
+| 2 | [F5-TTS](f5-tts.md) | 63 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
+| 3 | [CosyVoice](cosyvoice.md) | 61 | Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino. |
+| 4 | **Fish Speech** (esta ficha) | 61 | Si buscas TTS multilingüe con clonación y buena latencia. |
+| 5 | [IndexTTS](index-tts.md) | 56 | Si necesitas controlar duración y emoción de la voz sintetizada. |
 
 ## Acceso, coste y equipo
 

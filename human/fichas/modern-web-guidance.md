@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Conjunto de skills (Apache 2.0) de Google Chrome, mantenido junto con los equipos de Microsoft Edge, Mozilla Firefox y MDN, que lleva al agente de código pautas de la plataforma web y datos de compatibilidad. Versión v1.0.0.

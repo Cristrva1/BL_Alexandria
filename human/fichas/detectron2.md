@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** hard
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de investigación de código abierto (Apache-2.0) de Facebook AI Research (Meta), sucesora de Detectron y maskrcnn-benchmark. Muy citada, pero con mantenimiento bajo: la última versión publicada es v0.6 (2021) y el último push es de octubre de 2026.

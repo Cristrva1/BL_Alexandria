@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (LGPL-3.0 según su README; la API de GitHub la marca como GPL-3.0) mantenida por voluntarios. Muy madura; sigue de cerca cada versión de la Bot API.

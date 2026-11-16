@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5). No está afiliada a Bitwarden: los fallos se reportan a Vaultwarden, no al soporte de Bitwarden.
@@ -41,6 +43,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.37.5 (2026-11-01) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dani-garcia/vaultwarden/blob/main/README.md) · [2](https://github.com/dani-garcia/vaultwarden/wiki) · [3](https://coolify.io/docs/services/vaultwarden)</sub>
+
+## Ver similares
+
+Grupo **Gestores de contraseñas**: vaultwarden ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **vaultwarden** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
+| 2 | [KeePassXC](keepassxc.md) | 54 | Si buscas esto: gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. |
 
 ## Acceso, coste y equipo
 

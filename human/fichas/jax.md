@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (Apache-2.0) de Google. Muy madura y base de gran parte de la investigación de Google DeepMind.
@@ -36,6 +38,16 @@ Se instala con pip según el hardware (`jax` para CPU, `jax[cuda13]` para GPU NV
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada jax-v0.12.0.1 (2026-10-22) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jax-ml/jax/blob/main/README.md) · [2](https://docs.jax.dev/)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de deep learning**: JAX ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [tensorflow](tensorflow.md) ⭐ recomendado | 79 | Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
+| 2 | [PyTorch](pytorch.md) | 78 | Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
+| 3 | **JAX** (esta ficha) | 64 | Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
 
 ## Acceso, coste y equipo
 

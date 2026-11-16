@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Proyecto de la Apache Software Foundation (Apache-2.0) que define un formato columnar estándar en memoria y lo implementa en muchos lenguajes. Es infraestructura compartida por pandas, Polars, DuckDB, Spark y muchos otros. Muy activo.

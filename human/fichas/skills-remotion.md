@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Remotion Agent Skills, skills oficiales de Remotion con buenas prácticas para que agentes de código (Claude Code, Codex, Kimi Code, Cursor) trabajen en proyectos Remotion. GitHub no detecta licencia. Tiene ~7.3k estrellas.

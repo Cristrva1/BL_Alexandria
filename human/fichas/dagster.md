@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Orquestador de pipelines de datos de Dagster Labs (Apache-2.0), con oferta comercial gestionada (Dagster+). Proyecto maduro; el README indica soporte oficial de Python 3.9 a 3.14.
@@ -38,6 +40,19 @@ Los activos se declaran como funciones Python decoradas y sus dependencias se de
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 1.13.30 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dagster-io/dagster/blob/master/README.md) · [2](https://docs.dagster.io/integrations/libraries/duckdb) · [3](https://docs.dagster.io/integrations/libraries/polars)</sub>
+
+## Ver similares
+
+Grupo **Orquestadores de workflows de datos y tareas**: Dagster ocupa la posición 6 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Apache Airflow](airflow.md) ⭐ recomendado | 81 | Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores. |
+| 2 | [Kestra](kestra.md) | 80 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
+| 3 | [Prefect](prefect.md) | 68 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
+| 4 | [Trigger.dev](trigger-dev.md) | 68 | Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas. |
+| 5 | [Windmill](windmill.md) | 61 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
+| 6 | **Dagster** (esta ficha) | 57 | Si piensas en activos de datos (tablas, modelos) con linaje y pruebas. |
 
 ## Acceso, coste y equipo
 

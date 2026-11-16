@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor de ejecución duradera de código abierto (MIT) desarrollado por Temporal Technologies, la empresa de los creadores de Cadence en Uber, del que es un fork. Tecnología madura usada en producción; existe una oferta gestionada (Temporal Cloud) aparte.

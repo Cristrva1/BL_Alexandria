@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de UI generativa (MIT) de Thesys, construido en torno a OpenUI Lang, un lenguaje compacto y pensado para streaming. Es activo (@openuidev/server@0.4.3) y reciente. El README avisa de que no existe ninguna criptomoneda oficial con su nombre.

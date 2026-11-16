@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 reveal.js, framework HTML de presentaciones de @hakimel. Licencia MIT. Es veterano y estable (creado en 2011, ~73k estrellas, v6.0.2).
@@ -36,6 +38,16 @@ Se usa como paquete npm o clonando el repo; funciona en cualquier navegador. Sli
 Estado en GitHub: activo · último push 2026-09-30 · última versión publicada 6.0.2 (2026-09-10) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hakimel/reveal.js/blob/master/README.md) · [2](https://revealjs.com/)</sub>
+
+## Ver similares
+
+Grupo **Presentaciones desde Markdown**: reveal.js ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Slidev](slidev.md) ⭐ recomendado | 73 | Si buscas esto: presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| 2 | **reveal.js** (esta ficha) | 59 | Si buscas esto: framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
+| 3 | [Marp](marp.md) | 47 | Si buscas esto: entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado. |
 
 ## Acceso, coste y equipo
 

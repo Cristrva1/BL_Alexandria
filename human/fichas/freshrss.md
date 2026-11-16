@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Agregador RSS autoalojado de código abierto (AGPL-3.0) mantenido por la comunidad FreshRSS. Proyecto maduro y traducido a más de 20 idiomas.
@@ -35,6 +37,15 @@ Escrito en PHP; funciona con SQLite, MySQL/MariaDB o PostgreSQL y se instala en 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.30.4 (2026-10-21) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/FreshRSS/FreshRSS/blob/edge/README.md) · [2](https://freshrss.github.io/FreshRSS/en/users/08_sharing_services.html)</sub>
+
+## Ver similares
+
+Grupo **Lectores RSS auto-hospedados**: FreshRSS ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **FreshRSS** (esta ficha) ⭐ recomendado | 65 | Si buscas esto: agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones. |
+| 2 | [Miniflux](miniflux.md) | 58 | Si buscas esto: lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones. |
 
 ## Acceso, coste y equipo
 

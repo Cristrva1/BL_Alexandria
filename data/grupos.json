@@ -1,0 +1,6014 @@
+{
+ "fecha": "2026-11-16",
+ "nota": "Generado desde curation/grupos.yaml y data/metricas/puntuaciones.json. No editar a mano.",
+ "grupos": [
+  {
+   "id": "g-memoria-persistente-para-agentes-de-codigo",
+   "titulo": "Memoria persistente para agentes de código",
+   "cat": 6,
+   "sub": "memoria",
+   "miembros": [
+    "agentmemory",
+    "claude-mem",
+    "engram"
+   ],
+   "ranking": [
+    {
+     "id": "claude-mem",
+     "posicion": 1,
+     "puntuacion": 74.0,
+     "papel": "recomendado",
+     "cuando": "Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "engram",
+     "posicion": 2,
+     "puntuacion": 62.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "agentmemory",
+     "posicion": 3,
+     "puntuacion": 52.2,
+     "papel": "alternativa",
+     "cuando": "Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "claude-mem",
+   "alternativas": [
+    "engram",
+    "agentmemory"
+   ]
+  },
+  {
+   "id": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
+   "titulo": "Capas de memoria para apps y agentes de IA",
+   "cat": 6,
+   "sub": "memoria",
+   "miembros": [
+    "cognee",
+    "graphiti",
+    "letta",
+    "mem0",
+    "supermemory"
+   ],
+   "ranking": [
+    {
+     "id": "mem0",
+     "posicion": 1,
+     "puntuacion": 76.4,
+     "papel": "recomendado",
+     "cuando": "Si tu app necesita memoria de usuario a largo plazo con una API sencilla.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "cognee",
+     "posicion": 2,
+     "puntuacion": 68.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres convertir documentos en un grafo de conocimiento consultable por agentes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "graphiti",
+     "posicion": 3,
+     "puntuacion": 60.9,
+     "papel": "alternativa",
+     "cuando": "Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "supermemory",
+     "posicion": 4,
+     "puntuacion": 60.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas una API de memoria y contexto rápida orientada a productos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "letta",
+     "posicion": 5,
+     "puntuacion": 54.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres agentes con estado gestionados por un servidor (antes MemGPT).",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    }
+   ],
+   "recomendado": "mem0",
+   "alternativas": [
+    "cognee",
+    "graphiti",
+    "supermemory",
+    "letta"
+   ]
+  },
+  {
+   "id": "g-agentes-de-programacion-en-terminal",
+   "titulo": "Agentes de programación en terminal",
+   "cat": 20,
+   "sub": "terminal",
+   "miembros": [
+    "aider",
+    "antigravity-cli",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "goose",
+    "mimo-code",
+    "opencode",
+    "qwen-code"
+   ],
+   "ranking": [
+    {
+     "id": "opencode",
+     "posicion": 1,
+     "puntuacion": 82.4,
+     "papel": "recomendado",
+     "cuando": "Si quieres un agente de terminal independiente del proveedor, con TUI cuidada y muchos modelos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "codex",
+     "posicion": 2,
+     "puntuacion": 71.1,
+     "papel": "alternativa",
+     "cuando": "Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "gemini-cli",
+     "posicion": 3,
+     "puntuacion": 64.7,
+     "papel": "alternativa",
+     "cuando": "Si trabajas con Google Code Assist empresarial; para uso individual Google remite a Antigravity CLI.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "qwen-code",
+     "posicion": 4,
+     "puntuacion": 64.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres un agente de terminal que hable con varios protocolos (OpenAI, Anthropic, Gemini) o con modelos locales.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "goose",
+     "posicion": 5,
+     "puntuacion": 61.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres un agente local extensible por MCP, con app de escritorio además de la CLI.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "claude-code",
+     "posicion": 6,
+     "puntuacion": 57.6,
+     "papel": "alternativa",
+     "cuando": "Si usas Claude (Pro/Max o API) y quieres el agente de terminal más maduro con skills, hooks y subagentes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "mimo-code",
+     "posicion": 7,
+     "puntuacion": 50.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres probar el agente de Xiaomi MiMo con memoria persistente.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "aider",
+     "posicion": 8,
+     "puntuacion": 49.2,
+     "papel": "alternativa",
+     "cuando": "Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "antigravity-cli",
+     "posicion": 9,
+     "puntuacion": 26.6,
+     "papel": "alternativa",
+     "cuando": "Si usas Antigravity de Google y quieres su agente desde la terminal.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "opencode",
+   "alternativas": [
+    "codex",
+    "gemini-cli",
+    "qwen-code",
+    "goose",
+    "claude-code",
+    "mimo-code",
+    "aider",
+    "antigravity-cli"
+   ]
+  },
+  {
+   "id": "g-interfaces-de-chat-con-llm",
+   "titulo": "Interfaces de chat con LLM",
+   "cat": 8,
+   "sub": "chats",
+   "miembros": [
+    "chatbox",
+    "cherry-studio",
+    "jan",
+    "librechat",
+    "lobehub",
+    "nextchat",
+    "open-webui",
+    "textgen"
+   ],
+   "ranking": [
+    {
+     "id": "open-webui",
+     "posicion": 1,
+     "puntuacion": 73.7,
+     "papel": "recomendado",
+     "cuando": "Si quieres la interfaz más completa para Ollama o APIs, multiusuario y con RAG.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "cherry-studio",
+     "posicion": 2,
+     "puntuacion": 71.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres un cliente de escritorio para muchos proveedores con asistentes predefinidos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "lobehub",
+     "posicion": 3,
+     "puntuacion": 69.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres una interfaz moderna con plugins, agentes y despliegue sencillo.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "librechat",
+     "posicion": 4,
+     "puntuacion": 68.0,
+     "papel": "alternativa",
+     "cuando": "Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "jan",
+     "posicion": 5,
+     "puntuacion": 65.2,
+     "papel": "alternativa",
+     "cuando": "Si prefieres una app de escritorio que funcione sin conexión con modelos locales.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "nextchat",
+     "posicion": 6,
+     "puntuacion": 63.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres desplegar una interfaz ligera en Vercel con un clic.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "chatbox",
+     "posicion": 7,
+     "puntuacion": 51.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres un cliente de escritorio y móvil sencillo para tus claves de API.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "textgen",
+     "posicion": 8,
+     "puntuacion": 50.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers).",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    }
+   ],
+   "recomendado": "open-webui",
+   "alternativas": [
+    "cherry-studio",
+    "lobehub",
+    "librechat",
+    "jan",
+    "nextchat",
+    "chatbox",
+    "textgen"
+   ]
+  },
+  {
+   "id": "g-frameworks-de-agentes-en-python",
+   "titulo": "Frameworks de agentes en Python",
+   "cat": 3,
+   "sub": "py",
+   "miembros": [
+    "adk-python",
+    "agno",
+    "crewai",
+    "deepagents",
+    "langgraph",
+    "openai-agents-python",
+    "pydantic-ai",
+    "smolagents"
+   ],
+   "ranking": [
+    {
+     "id": "langgraph",
+     "posicion": 1,
+     "puntuacion": 72.0,
+     "papel": "recomendado",
+     "cuando": "Si necesitas flujos con estado, ciclos, checkpoints y control fino del grafo en producción.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "crewai",
+     "posicion": 2,
+     "puntuacion": 71.8,
+     "papel": "alternativa",
+     "cuando": "Si piensas en equipos de agentes con roles y tareas y quieres arrancar rápido.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "deepagents",
+     "posicion": 3,
+     "puntuacion": 70.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres agentes de largo recorrido con planificación, subagentes y sistema de archivos sobre LangGraph.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "openai-agents-python",
+     "posicion": 4,
+     "puntuacion": 66.8,
+     "papel": "alternativa",
+     "cuando": "Si usas la API de OpenAI y quieres handoffs, guardrails y trazas oficiales.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "pydantic-ai",
+     "posicion": 5,
+     "puntuacion": 65.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres salidas tipadas y validadas con Pydantic y un estilo cercano a FastAPI.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "adk-python",
+     "posicion": 6,
+     "puntuacion": 65.4,
+     "papel": "alternativa",
+     "cuando": "Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "agno",
+     "posicion": 7,
+     "puntuacion": 61.1,
+     "papel": "alternativa",
+     "cuando": "Si quieres un runtime de agentes con memoria, conocimiento y equipos listo para servir por API.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "smolagents",
+     "posicion": 8,
+     "puntuacion": 54.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres agentes mínimos que escriben código Python como acciones, de Hugging Face.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "langgraph",
+   "alternativas": [
+    "crewai",
+    "deepagents",
+    "openai-agents-python",
+    "pydantic-ai",
+    "adk-python",
+    "agno",
+    "smolagents"
+   ]
+  },
+  {
+   "id": "g-herramientas-internas-y-bases-de-datos-no-code",
+   "titulo": "Herramientas internas y bases de datos no-code",
+   "cat": 1,
+   "sub": "internas",
+   "miembros": [
+    "appsmith",
+    "baserow",
+    "budibase",
+    "grist-core",
+    "nocodb",
+    "teable",
+    "tooljet"
+   ],
+   "ranking": [
+    {
+     "id": "tooljet",
+     "posicion": 1,
+     "puntuacion": 75.0,
+     "papel": "recomendado",
+     "cuando": "Si quieres un builder de apps internas con muchos conectores y opciones de IA.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "appsmith",
+     "posicion": 2,
+     "puntuacion": 71.8,
+     "papel": "alternativa",
+     "cuando": "Si construyes paneles internos arrastrando componentes sobre APIs y bases de datos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "nocodb",
+     "posicion": 3,
+     "puntuacion": 70.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres una interfaz tipo Airtable sobre tu base de datos SQL existente.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "budibase",
+     "posicion": 4,
+     "puntuacion": 62.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres formularios, portales y automatizaciones internas con poco código.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "teable",
+     "posicion": 5,
+     "puntuacion": 55.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres una hoja-base de datos rápida sobre PostgreSQL con buen rendimiento en tablas grandes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "grist-core",
+     "posicion": 6,
+     "puntuacion": 53.4,
+     "papel": "alternativa",
+     "cuando": "Si necesitas una hoja de cálculo relacional con fórmulas en Python.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "baserow",
+     "posicion": 7,
+     "puntuacion": 49.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas una alternativa a Airtable auto-hospedada y fácil de usar.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "tooljet",
+   "alternativas": [
+    "appsmith",
+    "nocodb",
+    "budibase",
+    "teable",
+    "grist-core",
+    "baserow"
+   ]
+  },
+  {
+   "id": "g-bases-y-librerias-vectoriales",
+   "titulo": "Bases y librerías vectoriales",
+   "cat": 6,
+   "sub": "vectores",
+   "miembros": [
+    "chroma",
+    "faiss",
+    "lancedb",
+    "milvus",
+    "pgvector",
+    "qdrant",
+    "weaviate"
+   ],
+   "ranking": [
+    {
+     "id": "milvus",
+     "posicion": 1,
+     "puntuacion": 77.3,
+     "papel": "recomendado",
+     "cuando": "Si necesitas escala de miles de millones de vectores y despliegue distribuido.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "qdrant",
+     "posicion": 2,
+     "puntuacion": 65.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "chroma",
+     "posicion": 3,
+     "puntuacion": 63.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "lancedb",
+     "posicion": 4,
+     "puntuacion": 61.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres una base vectorial embebida sobre archivos, sin servidor.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "pgvector",
+     "posicion": 5,
+     "puntuacion": 59.1,
+     "papel": "alternativa",
+     "cuando": "Si ya usas PostgreSQL y quieres vectores en la misma base.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "weaviate",
+     "posicion": 6,
+     "puntuacion": 59.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "faiss",
+     "posicion": 7,
+     "puntuacion": 56.3,
+     "papel": "alternativa",
+     "cuando": "Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    }
+   ],
+   "recomendado": "milvus",
+   "alternativas": [
+    "qdrant",
+    "chroma",
+    "lancedb",
+    "pgvector",
+    "weaviate",
+    "faiss"
+   ]
+  },
+  {
+   "id": "g-orquestadores-de-workflows-de-datos-y-tareas",
+   "titulo": "Orquestadores de workflows de datos y tareas",
+   "cat": 1,
+   "sub": "motores",
+   "miembros": [
+    "airflow",
+    "dagster",
+    "kestra",
+    "prefect",
+    "trigger-dev",
+    "windmill"
+   ],
+   "ranking": [
+    {
+     "id": "airflow",
+     "posicion": 1,
+     "puntuacion": 81.1,
+     "papel": "recomendado",
+     "cuando": "Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "kestra",
+     "posicion": 2,
+     "puntuacion": 80.5,
+     "papel": "alternativa",
+     "cuando": "Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "prefect",
+     "posicion": 3,
+     "puntuacion": 68.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres convertir funciones Python en flujos observables con muy poco código.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "trigger-dev",
+     "posicion": 4,
+     "puntuacion": 67.8,
+     "papel": "alternativa",
+     "cuando": "Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "windmill",
+     "posicion": 5,
+     "puntuacion": 61.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "dagster",
+     "posicion": 6,
+     "puntuacion": 56.7,
+     "papel": "alternativa",
+     "cuando": "Si piensas en activos de datos (tablas, modelos) con linaje y pruebas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "airflow",
+   "alternativas": [
+    "kestra",
+    "prefect",
+    "trigger-dev",
+    "windmill",
+    "dagster"
+   ]
+  },
+  {
+   "id": "g-bibliotecas-de-componentes-react",
+   "titulo": "Bibliotecas de componentes React",
+   "cat": 9,
+   "sub": "componentes",
+   "miembros": [
+    "ant-design",
+    "chakra-ui",
+    "heroui",
+    "mantine",
+    "mui",
+    "ui"
+   ],
+   "ranking": [
+    {
+     "id": "ant-design",
+     "posicion": 1,
+     "puntuacion": 77.4,
+     "papel": "recomendado",
+     "cuando": "Si construyes paneles empresariales densos en datos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "ui",
+     "posicion": 2,
+     "puntuacion": 73.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres copiar componentes Tailwind+Radix a tu proyecto y adaptarlos (shadcn/ui).",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "mui",
+     "posicion": 3,
+     "puntuacion": 70.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres Material Design y la biblioteca de componentes React más usada.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "chakra-ui",
+     "posicion": 4,
+     "puntuacion": 64.3,
+     "papel": "alternativa",
+     "cuando": "Si priorizas accesibilidad y estilos por props.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "heroui",
+     "posicion": 5,
+     "puntuacion": 61.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres componentes bonitos sobre Tailwind (antes NextUI).",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "mantine",
+     "posicion": 6,
+     "puntuacion": 58.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres componentes y hooks completos con buena documentación y poca configuración.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ant-design",
+   "alternativas": [
+    "ui",
+    "mui",
+    "chakra-ui",
+    "heroui",
+    "mantine"
+   ]
+  },
+  {
+   "id": "g-catalogos-de-skills-y-plugins-para-agentes",
+   "titulo": "Catálogos de skills y plugins para agentes",
+   "cat": 2,
+   "sub": "catalogos",
+   "miembros": [
+    "antigravity-awesome-skills",
+    "awesome-agent-skills",
+    "awesome-claude-code",
+    "awesome-claude-skills",
+    "claude-plugins-official",
+    "wshobson-agents"
+   ],
+   "ranking": [
+    {
+     "id": "antigravity-awesome-skills",
+     "posicion": 1,
+     "puntuacion": 67.7,
+     "papel": "recomendado",
+     "cuando": "Si quieres el catálogo más grande de skills instalables para varios agentes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "claude-plugins-official",
+     "posicion": 2,
+     "puntuacion": 61.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres solo plugins publicados por Anthropic.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "awesome-agent-skills",
+     "posicion": 3,
+     "puntuacion": 52.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres skills en formato portable para varios agentes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "awesome-claude-skills",
+     "posicion": 4,
+     "puntuacion": 50.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas skills para Claude ordenadas por tema.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "awesome-claude-code",
+     "posicion": 5,
+     "puntuacion": 49.8,
+     "papel": "alternativa",
+     "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "wshobson-agents",
+     "posicion": 6,
+     "puntuacion": 49.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "antigravity-awesome-skills",
+   "alternativas": [
+    "claude-plugins-official",
+    "awesome-agent-skills",
+    "awesome-claude-skills",
+    "awesome-claude-code",
+    "wshobson-agents"
+   ]
+  },
+  {
+   "id": "g-conversion-de-documentos-a-markdown-json-para-ia",
+   "titulo": "Conversión de documentos a Markdown/JSON para IA",
+   "cat": 13,
+   "sub": "conversion",
+   "miembros": [
+    "docling",
+    "marker",
+    "mineru",
+    "tika",
+    "unstructured",
+    "xberg"
+   ],
+   "ranking": [
+    {
+     "id": "docling",
+     "posicion": 1,
+     "puntuacion": 77.5,
+     "papel": "recomendado",
+     "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "mineru",
+     "posicion": 2,
+     "puntuacion": 67.6,
+     "papel": "alternativa",
+     "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "xberg",
+     "posicion": 3,
+     "puntuacion": 62.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "marker",
+     "posicion": 4,
+     "puntuacion": 60.0,
+     "papel": "alternativa",
+     "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "tika",
+     "posicion": 5,
+     "puntuacion": 58.7,
+     "papel": "alternativa",
+     "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "unstructured",
+     "posicion": 6,
+     "puntuacion": 57.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "docling",
+   "alternativas": [
+    "mineru",
+    "xberg",
+    "marker",
+    "tika",
+    "unstructured"
+   ]
+  },
+  {
+   "id": "g-metodologias-y-harness-para-agentes-de-codigo",
+   "titulo": "Metodologías y harness para agentes de código",
+   "cat": 2,
+   "sub": "metodologia",
+   "miembros": [
+    "agent-skills",
+    "ecc",
+    "gstack",
+    "superclaude-framework",
+    "superpowers"
+   ],
+   "ranking": [
+    {
+     "id": "ecc",
+     "posicion": 1,
+     "puntuacion": 71.5,
+     "papel": "recomendado",
+     "cuando": "Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "gstack",
+     "posicion": 2,
+     "puntuacion": 65.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "agent-skills",
+     "posicion": 3,
+     "puntuacion": 63.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres skills de ingeniería portables en el formato Agent Skills.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "superpowers",
+     "posicion": 4,
+     "puntuacion": 62.1,
+     "papel": "alternativa",
+     "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "superclaude-framework",
+     "posicion": 5,
+     "puntuacion": 48.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres comandos y personas para Claude Code organizados por fase.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ecc",
+   "alternativas": [
+    "gstack",
+    "agent-skills",
+    "superpowers",
+    "superclaude-framework"
+   ]
+  },
+  {
+   "id": "g-apis-y-librerias-no-oficiales-de-whatsapp",
+   "titulo": "APIs y librerías no oficiales de WhatsApp",
+   "cat": 17,
+   "sub": "whatsapp",
+   "miembros": [
+    "baileys",
+    "evolution-api",
+    "waha",
+    "whatsapp-web-js",
+    "whatsmeow"
+   ],
+   "ranking": [
+    {
+     "id": "whatsapp-web-js",
+     "posicion": 1,
+     "puntuacion": 69.0,
+     "papel": "recomendado",
+     "cuando": "Si programas en Node.js y prefieres controlar WhatsApp Web con un navegador.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "baileys",
+     "posicion": 2,
+     "puntuacion": 67.3,
+     "papel": "alternativa",
+     "cuando": "Si programas en Node.js y quieres la librería de bajo nivel por WebSocket.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "waha",
+     "posicion": 3,
+     "puntuacion": 62.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres WhatsApp por HTTP en un contenedor, con varios motores.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "evolution-api",
+     "posicion": 4,
+     "puntuacion": 54.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres una API REST de WhatsApp lista para n8n, Chatwoot o CRMs.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "whatsmeow",
+     "posicion": 5,
+     "puntuacion": 49.1,
+     "papel": "alternativa",
+     "cuando": "Si programas en Go y quieres una librería multi-dispositivo eficiente.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "whatsapp-web-js",
+   "alternativas": [
+    "baileys",
+    "waha",
+    "evolution-api",
+    "whatsmeow"
+   ]
+  },
+  {
+   "id": "g-mapas-e-indices-de-codigo-para-agentes",
+   "titulo": "Mapas e índices de código para agentes",
+   "cat": 7,
+   "sub": "codigo",
+   "miembros": [
+    "codebase-memory-mcp",
+    "codegraph",
+    "gitnexus",
+    "graphify",
+    "repomix"
+   ],
+   "ranking": [
+    {
+     "id": "graphify",
+     "posicion": 1,
+     "puntuacion": 74.6,
+     "papel": "recomendado",
+     "cuando": "Si quieres convertir carpetas de código y documentos en un grafo navegable.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "codegraph",
+     "posicion": 2,
+     "puntuacion": 66.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres un grafo de código local para que el agente navegue símbolos y dependencias.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "codebase-memory-mcp",
+     "posicion": 3,
+     "puntuacion": 58.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres un índice persistente del código servido por MCP con poco consumo de tokens.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "repomix",
+     "posicion": 4,
+     "puntuacion": 52.1,
+     "papel": "alternativa",
+     "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "gitnexus",
+     "posicion": 5,
+     "puntuacion": 50.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "graphify",
+   "alternativas": [
+    "codegraph",
+    "codebase-memory-mcp",
+    "repomix",
+    "gitnexus"
+   ]
+  },
+  {
+   "id": "g-clonacion-de-voz-y-tts-multilingue",
+   "titulo": "Clonación de voz y TTS multilingüe",
+   "cat": 29,
+   "sub": "tts",
+   "miembros": [
+    "cosyvoice",
+    "f5-tts",
+    "fish-speech",
+    "gpt-sovits",
+    "index-tts"
+   ],
+   "ranking": [
+    {
+     "id": "gpt-sovits",
+     "posicion": 1,
+     "puntuacion": 72.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "f5-tts",
+     "posicion": 2,
+     "puntuacion": 63.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres clonación de voz zero-shot con pocos segundos de audio.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "cosyvoice",
+     "posicion": 3,
+     "puntuacion": 61.3,
+     "papel": "alternativa",
+     "cuando": "Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "fish-speech",
+     "posicion": 4,
+     "puntuacion": 60.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas TTS multilingüe con clonación y buena latencia.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "index-tts",
+     "posicion": 5,
+     "puntuacion": 56.0,
+     "papel": "alternativa",
+     "cuando": "Si necesitas controlar duración y emoción de la voz sintetizada.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "gpt-sovits",
+   "alternativas": [
+    "f5-tts",
+    "cosyvoice",
+    "fish-speech",
+    "index-tts"
+   ]
+  },
+  {
+   "id": "g-automatizacion-de-navegador-y-pruebas-e2e",
+   "titulo": "Automatización de navegador y pruebas E2E",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "miembros": [
+    "cypress",
+    "playwright",
+    "puppeteer",
+    "selenium",
+    "webdriverio"
+   ],
+   "ranking": [
+    {
+     "id": "playwright",
+     "posicion": 1,
+     "puntuacion": 78.4,
+     "papel": "recomendado",
+     "cuando": "Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "puppeteer",
+     "posicion": 2,
+     "puntuacion": 72.5,
+     "papel": "alternativa",
+     "cuando": "Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "cypress",
+     "posicion": 3,
+     "puntuacion": 65.0,
+     "papel": "alternativa",
+     "cuando": "Si haces pruebas de componentes y E2E de frontend dentro del navegador.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "webdriverio",
+     "posicion": 4,
+     "puntuacion": 60.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "selenium",
+     "posicion": 5,
+     "puntuacion": 60.3,
+     "papel": "alternativa",
+     "cuando": "Si necesitas el estándar W3C WebDriver, muchos lenguajes o grids existentes.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    }
+   ],
+   "recomendado": "playwright",
+   "alternativas": [
+    "puppeteer",
+    "cypress",
+    "webdriverio",
+    "selenium"
+   ]
+  },
+  {
+   "id": "g-crm-y-erp-auto-hospedados",
+   "titulo": "CRM y ERP auto-hospedados",
+   "cat": 18,
+   "sub": "crm",
+   "miembros": [
+    "erpnext",
+    "espocrm",
+    "odoo",
+    "suitecrm",
+    "twenty-main"
+   ],
+   "ranking": [
+    {
+     "id": "twenty-main",
+     "posicion": 1,
+     "puntuacion": 74.9,
+     "papel": "recomendado",
+     "cuando": "Si quieres un CRM moderno tipo Salesforce/HubSpot, auto-hospedado.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "erpnext",
+     "posicion": 2,
+     "puntuacion": 74.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres un ERP 100 % abierto para manufactura, contabilidad y RR. HH.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "odoo",
+     "posicion": 3,
+     "puntuacion": 66.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres un ERP completo y modular (contabilidad, inventario, CRM) con gran ecosistema.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "espocrm",
+     "posicion": 4,
+     "puntuacion": 53.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres un CRM ligero y personalizable en PHP.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "suitecrm",
+     "posicion": 5,
+     "puntuacion": 44.8,
+     "papel": "alternativa",
+     "cuando": "Si vienes de SugarCRM o necesitas un CRM clásico con muchos módulos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "twenty-main",
+   "alternativas": [
+    "erpnext",
+    "odoo",
+    "espocrm",
+    "suitecrm"
+   ]
+  },
+  {
+   "id": "g-apps-web-de-datos-en-python",
+   "titulo": "Apps web de datos en Python",
+   "cat": 25,
+   "sub": "apps",
+   "miembros": [
+    "gradio",
+    "nicegui",
+    "panel",
+    "reflex",
+    "streamlit"
+   ],
+   "ranking": [
+    {
+     "id": "streamlit",
+     "posicion": 1,
+     "puntuacion": 76.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres convertir un script de datos en app web con la menor curva.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "gradio",
+     "posicion": 2,
+     "puntuacion": 71.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres una demo de un modelo de IA con entradas y salidas en minutos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "reflex",
+     "posicion": 3,
+     "puntuacion": 71.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres una app web completa (frontend y backend) solo en Python.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "nicegui",
+     "posicion": 4,
+     "puntuacion": 68.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres una interfaz web en Python con control fino de componentes.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "panel",
+     "posicion": 5,
+     "puntuacion": 55.2,
+     "papel": "alternativa",
+     "cuando": "Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    }
+   ],
+   "recomendado": "streamlit",
+   "alternativas": [
+    "gradio",
+    "reflex",
+    "nicegui",
+    "panel"
+   ]
+  },
+  {
+   "id": "g-observabilidad-y-trazas-de-llm",
+   "titulo": "Observabilidad y trazas de LLM",
+   "cat": 23,
+   "sub": "observabilidad",
+   "miembros": [
+    "helicone",
+    "langfuse",
+    "mlflow",
+    "opik",
+    "phoenix"
+   ],
+   "ranking": [
+    {
+     "id": "langfuse",
+     "posicion": 1,
+     "puntuacion": 79.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "opik",
+     "posicion": 2,
+     "puntuacion": 74.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres trazas y evaluación de LLM con integración en pruebas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "mlflow",
+     "posicion": 3,
+     "puntuacion": 70.0,
+     "papel": "alternativa",
+     "cuando": "Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "phoenix",
+     "posicion": 4,
+     "puntuacion": 52.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "helicone",
+     "posicion": 5,
+     "puntuacion": 49.9,
+     "papel": "alternativa",
+     "cuando": "Si quieres observabilidad como proxy con solo cambiar la URL base.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "langfuse",
+   "alternativas": [
+    "opik",
+    "mlflow",
+    "phoenix",
+    "helicone"
+   ]
+  },
+  {
+   "id": "g-video-y-escenas-por-codigo",
+   "titulo": "Video y escenas por código",
+   "cat": 30,
+   "sub": "motores",
+   "miembros": [
+    "hyperframes",
+    "motion-canvas",
+    "moviepy",
+    "remotion",
+    "revideo"
+   ],
+   "ranking": [
+    {
+     "id": "hyperframes",
+     "posicion": 1,
+     "puntuacion": 72.8,
+     "papel": "recomendado",
+     "cuando": "Si quieres que un agente componga video desde HTML con HeyGen HyperFrames.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "remotion",
+     "posicion": 2,
+     "puntuacion": 67.7,
+     "papel": "alternativa",
+     "cuando": "Si sabes React y quieres generar videos programáticos con calidad de producción (revisa su licencia).",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "motion-canvas",
+     "posicion": 3,
+     "puntuacion": 56.3,
+     "papel": "alternativa",
+     "cuando": "Si haces animaciones explicativas en TypeScript con editor en tiempo real.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "moviepy",
+     "posicion": 4,
+     "puntuacion": 54.3,
+     "papel": "alternativa",
+     "cuando": "Si editas video desde Python (cortes, composición, texto) sin interfaz.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "revideo",
+     "posicion": 5,
+     "puntuacion": 50.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres renderizar videos desde código TypeScript como API o servicio.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "hyperframes",
+   "alternativas": [
+    "remotion",
+    "motion-canvas",
+    "moviepy",
+    "revideo"
+   ]
+  },
+  {
+   "id": "g-motores-para-correr-llm-en-local",
+   "titulo": "Motores para correr LLM en local",
+   "cat": 8,
+   "sub": "motores",
+   "miembros": [
+    "koboldcpp",
+    "llama-cpp",
+    "llamafile",
+    "localai",
+    "ollama"
+   ],
+   "ranking": [
+    {
+     "id": "ollama",
+     "posicion": 1,
+     "puntuacion": 84.5,
+     "papel": "recomendado",
+     "cuando": "Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "llama-cpp",
+     "posicion": 2,
+     "puntuacion": 77.8,
+     "papel": "alternativa",
+     "cuando": "Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "localai",
+     "posicion": 3,
+     "puntuacion": 71.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "llamafile",
+     "posicion": 4,
+     "puntuacion": 51.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "koboldcpp",
+     "posicion": 5,
+     "puntuacion": 46.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ollama",
+   "alternativas": [
+    "llama-cpp",
+    "localai",
+    "llamafile",
+    "koboldcpp"
+   ]
+  },
+  {
+   "id": "g-builders-visuales-de-agentes",
+   "titulo": "Builders visuales de agentes",
+   "cat": 3,
+   "sub": "visual",
+   "miembros": [
+    "autogpt",
+    "dify",
+    "langflow",
+    "sim"
+   ],
+   "ranking": [
+    {
+     "id": "langflow",
+     "posicion": 1,
+     "puntuacion": 70.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres diseñar flujos de LangChain visualmente y exportarlos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "autogpt",
+     "posicion": 2,
+     "puntuacion": 69.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres una plataforma de agentes continuos con marketplace de bloques.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "dify",
+     "posicion": 3,
+     "puntuacion": 69.7,
+     "papel": "alternativa",
+     "cuando": "Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "sim",
+     "posicion": 4,
+     "puntuacion": 61.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres un lienzo colaborativo para agentes y workflows con monitorización.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "langflow",
+   "alternativas": [
+    "autogpt",
+    "dify",
+    "sim"
+   ]
+  },
+  {
+   "id": "g-fine-tuning-de-llm",
+   "titulo": "Fine-tuning de LLM",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "miembros": [
+    "axolotl",
+    "llama-factory",
+    "torchtune",
+    "unsloth"
+   ],
+   "ranking": [
+    {
+     "id": "unsloth",
+     "posicion": 1,
+     "puntuacion": 81.6,
+     "papel": "recomendado",
+     "cuando": "Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "axolotl",
+     "posicion": 2,
+     "puntuacion": 64.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "llama-factory",
+     "posicion": 3,
+     "puntuacion": 60.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres una interfaz web para afinar cientos de modelos sin programar.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "torchtune",
+     "posicion": 4,
+     "puntuacion": 52.2,
+     "papel": "alternativa",
+     "cuando": "Si prefieres recetas nativas de PyTorch fáciles de modificar.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "unsloth",
+   "alternativas": [
+    "axolotl",
+    "llama-factory",
+    "torchtune"
+   ]
+  },
+  {
+   "id": "g-pasarelas-y-routers-de-proveedores-llm",
+   "titulo": "Pasarelas y routers de proveedores LLM",
+   "cat": 23,
+   "sub": "serving",
+   "miembros": [
+    "backdoor",
+    "claude-code-router",
+    "litellm",
+    "omniroute"
+   ],
+   "ranking": [
+    {
+     "id": "litellm",
+     "posicion": 1,
+     "puntuacion": 77.2,
+     "papel": "recomendado",
+     "cuando": "Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "omniroute",
+     "posicion": 2,
+     "puntuacion": 75.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "claude-code-router",
+     "posicion": 3,
+     "puntuacion": 57.1,
+     "papel": "alternativa",
+     "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "backdoor",
+     "posicion": 4,
+     "puntuacion": 36.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres adaptar otro proveedor al flujo de herramientas de Claude Code (proyecto pequeño de terceros).",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "litellm",
+   "alternativas": [
+    "omniroute",
+    "claude-code-router",
+    "backdoor"
+   ]
+  },
+  {
+   "id": "g-agentes-que-navegan-la-web",
+   "titulo": "Agentes que navegan la web",
+   "cat": 32,
+   "sub": "agentes-web",
+   "miembros": [
+    "browser-harness",
+    "browser-use",
+    "skyvern",
+    "stagehand"
+   ],
+   "ranking": [
+    {
+     "id": "browser-use",
+     "posicion": 1,
+     "puntuacion": 73.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres el framework Python más usado para que un LLM controle el navegador.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "stagehand",
+     "posicion": 2,
+     "puntuacion": 61.1,
+     "papel": "alternativa",
+     "cuando": "Si trabajas en TypeScript y quieres mezclar código Playwright con acciones en lenguaje natural.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "skyvern",
+     "posicion": 3,
+     "puntuacion": 60.0,
+     "papel": "alternativa",
+     "cuando": "Si automatizas formularios y flujos repetitivos con visión y no quieres selectores frágiles.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "browser-harness",
+     "posicion": 4,
+     "puntuacion": 59.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "browser-use",
+   "alternativas": [
+    "stagehand",
+    "skyvern",
+    "browser-harness"
+   ]
+  },
+  {
+   "id": "g-librerias-de-graficos",
+   "titulo": "Librerías de gráficos",
+   "cat": 10,
+   "sub": "graficos",
+   "miembros": [
+    "chart-js",
+    "d3",
+    "echarts",
+    "recharts"
+   ],
+   "ranking": [
+    {
+     "id": "echarts",
+     "posicion": 1,
+     "puntuacion": 70.6,
+     "papel": "recomendado",
+     "cuando": "Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "d3",
+     "posicion": 2,
+     "puntuacion": 70.0,
+     "papel": "alternativa",
+     "cuando": "Si necesitas visualizaciones a medida y control total sobre SVG.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "recharts",
+     "posicion": 3,
+     "puntuacion": 69.0,
+     "papel": "alternativa",
+     "cuando": "Si usas React y quieres gráficos declarativos con pocas líneas.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "chart-js",
+     "posicion": 4,
+     "puntuacion": 64.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres gráficos clásicos en canvas sin framework y con poca configuración.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "echarts",
+   "alternativas": [
+    "d3",
+    "recharts",
+    "chart-js"
+   ]
+  },
+  {
+   "id": "g-fuzzing-de-rutas-y-contenido-web",
+   "titulo": "Fuzzing de rutas y contenido web",
+   "cat": 16,
+   "sub": "pruebas",
+   "miembros": [
+    "dirsearch",
+    "feroxbuster",
+    "ffuf",
+    "gobuster"
+   ],
+   "ranking": [
+    {
+     "id": "ffuf",
+     "posicion": 1,
+     "puntuacion": 68.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "dirsearch",
+     "posicion": 2,
+     "puntuacion": 59.8,
+     "papel": "alternativa",
+     "cuando": "Si prefieres una herramienta en Python con listas y reportes listos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "gobuster",
+     "posicion": 3,
+     "puntuacion": 57.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres un enumerador simple de directorios, DNS y vhosts.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "feroxbuster",
+     "posicion": 4,
+     "puntuacion": 56.9,
+     "papel": "alternativa",
+     "cuando": "Si quieres descubrimiento recursivo de contenido automático en Rust.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ffuf",
+   "alternativas": [
+    "dirsearch",
+    "gobuster",
+    "feroxbuster"
+   ]
+  },
+  {
+   "id": "g-agentes-de-voz-en-tiempo-real",
+   "titulo": "Agentes de voz en tiempo real",
+   "cat": 29,
+   "sub": "voz-agentes",
+   "miembros": [
+    "dograh",
+    "livekit-agents",
+    "pipecat",
+    "ten-framework"
+   ],
+   "ranking": [
+    {
+     "id": "pipecat",
+     "posicion": 1,
+     "puntuacion": 73.1,
+     "papel": "recomendado",
+     "cuando": "Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "livekit-agents",
+     "posicion": 2,
+     "puntuacion": 72.9,
+     "papel": "alternativa",
+     "cuando": "Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "dograh",
+     "posicion": 3,
+     "puntuacion": 59.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "ten-framework",
+     "posicion": 4,
+     "puntuacion": 43.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "pipecat",
+   "alternativas": [
+    "livekit-agents",
+    "dograh",
+    "ten-framework"
+   ]
+  },
+  {
+   "id": "g-rag-con-grafos-e-indices-de-conocimiento",
+   "titulo": "RAG con grafos e índices de conocimiento",
+   "cat": 6,
+   "sub": "rag",
+   "miembros": [
+    "graphrag",
+    "lightrag",
+    "pageindex",
+    "ragflow"
+   ],
+   "ranking": [
+    {
+     "id": "ragflow",
+     "posicion": 1,
+     "puntuacion": 81.5,
+     "papel": "recomendado",
+     "cuando": "Si quieres un motor de RAG completo con comprensión profunda de documentos e interfaz.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "lightrag",
+     "posicion": 2,
+     "puntuacion": 65.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres RAG con grafo de conocimiento ligero y rápido de indexar.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "pageindex",
+     "posicion": 3,
+     "puntuacion": 59.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres RAG sin vectores que razona sobre la tabla de contenidos de documentos largos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "graphrag",
+     "posicion": 4,
+     "puntuacion": 54.4,
+     "papel": "alternativa",
+     "cuando": "Si necesitas la metodología GraphRAG de Microsoft para preguntas globales sobre un corpus.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ragflow",
+   "alternativas": [
+    "lightrag",
+    "pageindex",
+    "graphrag"
+   ]
+  },
+  {
+   "id": "g-skills-de-diseno-de-interfaces-para-agentes",
+   "titulo": "Skills de diseño de interfaces para agentes",
+   "cat": 27,
+   "sub": "skills",
+   "miembros": [
+    "hallmark",
+    "impeccable",
+    "taste-skill",
+    "ui-ux-pro-max-skill"
+   ],
+   "ranking": [
+    {
+     "id": "ui-ux-pro-max-skill",
+     "posicion": 1,
+     "puntuacion": 73.4,
+     "papel": "recomendado",
+     "cuando": "Si quieres una skill con bases de estilos, paletas y tipografías para generar UI.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "taste-skill",
+     "posicion": 2,
+     "puntuacion": 70.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres que el agente evite el aspecto genérico en las interfaces.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "impeccable",
+     "posicion": 3,
+     "puntuacion": 63.2,
+     "papel": "alternativa",
+     "cuando": "Si quieres vocabulario y playbooks de diseño con detector y hooks.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "hallmark",
+     "posicion": 4,
+     "puntuacion": 50.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres decisiones visuales más concretas y coherentes al construir interfaces.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ui-ux-pro-max-skill",
+   "alternativas": [
+    "taste-skill",
+    "impeccable",
+    "hallmark"
+   ]
+  },
+  {
+   "id": "g-notas-y-bases-de-conocimiento-personales",
+   "titulo": "Notas y bases de conocimiento personales",
+   "cat": 15,
+   "sub": "notas",
+   "miembros": [
+    "joplin",
+    "logseq",
+    "siyuan",
+    "trilium"
+   ],
+   "ranking": [
+    {
+     "id": "siyuan",
+     "posicion": 1,
+     "puntuacion": 75.8,
+     "papel": "recomendado",
+     "cuando": "Si quieres bloques referenciables y una base de conocimiento local muy completa.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "trilium",
+     "posicion": 2,
+     "puntuacion": 64.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres jerarquías profundas de notas con scripting y servidor propio.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "logseq",
+     "posicion": 3,
+     "puntuacion": 59.2,
+     "papel": "alternativa",
+     "cuando": "Si piensas en esquemas y grafos con notas diarias, local-first.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "joplin",
+     "posicion": 4,
+     "puntuacion": 57.3,
+     "papel": "alternativa",
+     "cuando": "Si quieres notas Markdown con sincronización cifrada en todos tus dispositivos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "siyuan",
+   "alternativas": [
+    "trilium",
+    "logseq",
+    "joplin"
+   ]
+  },
+  {
+   "id": "g-ocr-de-documentos",
+   "titulo": "OCR de documentos",
+   "cat": 13,
+   "sub": "ocr",
+   "miembros": [
+    "olmocr",
+    "paddleocr",
+    "tesseract",
+    "unlimited-ocr"
+   ],
+   "ranking": [
+    {
+     "id": "paddleocr",
+     "posicion": 1,
+     "puntuacion": 72.4,
+     "papel": "recomendado",
+     "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "unlimited-ocr",
+     "posicion": 2,
+     "puntuacion": 65.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres parsear documentos largos de una sola pasada con visión.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "tesseract",
+     "posicion": 3,
+     "puntuacion": 63.5,
+     "papel": "alternativa",
+     "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes.",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "olmocr",
+     "posicion": 4,
+     "puntuacion": 53.2,
+     "papel": "alternativa",
+     "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU).",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "paddleocr",
+   "alternativas": [
+    "unlimited-ocr",
+    "tesseract",
+    "olmocr"
+   ]
+  },
+  {
+   "id": "g-generacion-de-musica",
+   "titulo": "Generación de música",
+   "cat": 29,
+   "sub": "musica",
+   "miembros": [
+    "ace-step-1.5",
+    "audiocraft",
+    "yue"
+   ],
+   "ranking": [
+    {
+     "id": "ace-step-1.5",
+     "posicion": 1,
+     "puntuacion": 69.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "yue",
+     "posicion": 2,
+     "puntuacion": 67.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "audiocraft",
+     "posicion": 3,
+     "puntuacion": 54.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ace-step-1.5",
+   "alternativas": [
+    "yue",
+    "audiocraft"
+   ]
+  },
+  {
+   "id": "g-animacion-web-en-javascript",
+   "titulo": "Animación web en JavaScript",
+   "cat": 26,
+   "sub": "animacion",
+   "miembros": [
+    "animejs",
+    "gsap",
+    "motion"
+   ],
+   "ranking": [
+    {
+     "id": "motion",
+     "posicion": 1,
+     "puntuacion": 77.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "animejs",
+     "posicion": 2,
+     "puntuacion": 60.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor de animación JavaScript ligero para CSS, SVG, DOM y objetos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "gsap",
+     "posicion": 3,
+     "puntuacion": 54.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "motion",
+   "alternativas": [
+    "animejs",
+    "gsap"
+   ]
+  },
+  {
+   "id": "g-workspaces-privados-con-documentos-y-chat",
+   "titulo": "Workspaces privados con documentos y chat",
+   "cat": 8,
+   "sub": "workspaces",
+   "miembros": [
+    "anything-llm",
+    "khoj",
+    "private-gpt"
+   ],
+   "ranking": [
+    {
+     "id": "anything-llm",
+     "posicion": 1,
+     "puntuacion": 78.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "private-gpt",
+     "posicion": 2,
+     "puntuacion": 67.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "khoj",
+     "posicion": 3,
+     "puntuacion": 47.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "anything-llm",
+   "alternativas": [
+    "private-gpt",
+    "khoj"
+   ]
+  },
+  {
+   "id": "g-formatos-de-tabla-para-data-lakes",
+   "titulo": "Formatos de tabla para data lakes",
+   "cat": 25,
+   "sub": "datos",
+   "miembros": [
+    "apache-iceberg",
+    "delta-lake",
+    "hudi"
+   ],
+   "ranking": [
+    {
+     "id": "delta-lake",
+     "posicion": 1,
+     "puntuacion": 62.7,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "apache-iceberg",
+     "posicion": 2,
+     "puntuacion": 61.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "hudi",
+     "posicion": 3,
+     "puntuacion": 50.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "delta-lake",
+   "alternativas": [
+    "apache-iceberg",
+    "hudi"
+   ]
+  },
+  {
+   "id": "g-cookbooks-y-ejemplos-de-apps-con-llm",
+   "titulo": "Cookbooks y ejemplos de apps con LLM",
+   "cat": 19,
+   "sub": "guias",
+   "miembros": [
+    "awesome-llm-apps",
+    "claude-cookbooks",
+    "openai-cookbook"
+   ],
+   "ranking": [
+    {
+     "id": "awesome-llm-apps",
+     "posicion": 1,
+     "puntuacion": 75.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "openai-cookbook",
+     "posicion": 2,
+     "puntuacion": 58.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "claude-cookbooks",
+     "posicion": 3,
+     "puntuacion": 56.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "awesome-llm-apps",
+   "alternativas": [
+    "openai-cookbook",
+    "claude-cookbooks"
+   ]
+  },
+  {
+   "id": "g-motores-3d-para-la-web",
+   "titulo": "Motores 3D para la web",
+   "cat": 26,
+   "sub": "animacion",
+   "miembros": [
+    "babylonjs",
+    "playcanvas",
+    "three.js"
+   ],
+   "ranking": [
+    {
+     "id": "three.js",
+     "posicion": 1,
+     "puntuacion": 69.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "babylonjs",
+     "posicion": 2,
+     "puntuacion": 67.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "playcanvas",
+     "posicion": 3,
+     "puntuacion": 65.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "three.js",
+   "alternativas": [
+    "babylonjs",
+    "playcanvas"
+   ]
+  },
+  {
+   "id": "g-paneles-de-auto-hospedaje-y-paas-propios",
+   "titulo": "Paneles de auto-hospedaje y PaaS propios",
+   "cat": 22,
+   "sub": "infraestructura",
+   "miembros": [
+    "casaos",
+    "coolify",
+    "dokploy"
+   ],
+   "ranking": [
+    {
+     "id": "coolify",
+     "posicion": 1,
+     "puntuacion": 73.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "dokploy",
+     "posicion": 2,
+     "puntuacion": 67.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "casaos",
+     "posicion": 3,
+     "puntuacion": 51.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "coolify",
+   "alternativas": [
+    "dokploy",
+    "casaos"
+   ]
+  },
+  {
+   "id": "g-crawlers-que-entregan-contenido-listo-para-llm",
+   "titulo": "Crawlers que entregan contenido listo para LLM",
+   "cat": 4,
+   "sub": "crawlers",
+   "miembros": [
+    "crawl4ai",
+    "firecrawl",
+    "jina-reader"
+   ],
+   "ranking": [
+    {
+     "id": "crawl4ai",
+     "posicion": 1,
+     "puntuacion": 72.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "firecrawl",
+     "posicion": 2,
+     "puntuacion": 70.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "jina-reader",
+     "posicion": 3,
+     "puntuacion": 52.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "crawl4ai",
+   "alternativas": [
+    "firecrawl",
+    "jina-reader"
+   ]
+  },
+  {
+   "id": "g-diagramas-como-codigo",
+   "titulo": "Diagramas como código",
+   "cat": 31,
+   "sub": "diagramas",
+   "miembros": [
+    "d2",
+    "mermaid",
+    "plantuml"
+   ],
+   "ranking": [
+    {
+     "id": "mermaid",
+     "posicion": 1,
+     "puntuacion": 77.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "d2",
+     "posicion": 2,
+     "puntuacion": 58.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "plantuml",
+     "posicion": 3,
+     "puntuacion": 54.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "mermaid",
+   "alternativas": [
+    "d2",
+    "plantuml"
+   ]
+  },
+  {
+   "id": "g-evaluacion-y-pruebas-de-llm",
+   "titulo": "Evaluación y pruebas de LLM",
+   "cat": 23,
+   "sub": "observabilidad",
+   "miembros": [
+    "deepeval",
+    "promptfoo",
+    "ragas"
+   ],
+   "ranking": [
+    {
+     "id": "promptfoo",
+     "posicion": 1,
+     "puntuacion": 78.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: cLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "deepeval",
+     "posicion": 2,
+     "puntuacion": 63.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "ragas",
+     "posicion": 3,
+     "puntuacion": 51.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "promptfoo",
+   "alternativas": [
+    "deepeval",
+    "ragas"
+   ]
+  },
+  {
+   "id": "g-procesamiento-de-datos-tabulares",
+   "titulo": "Procesamiento de datos tabulares",
+   "cat": 25,
+   "sub": "datos",
+   "miembros": [
+    "duckdb",
+    "pandas",
+    "polars"
+   ],
+   "ranking": [
+    {
+     "id": "pandas",
+     "posicion": 1,
+     "puntuacion": 77.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "duckdb",
+     "posicion": 2,
+     "puntuacion": 67.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL.",
+     "cuando_origen": "plantilla",
+     "caso_unico": true
+    },
+    {
+     "id": "polars",
+     "posicion": 3,
+     "puntuacion": 67.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "pandas",
+   "alternativas": [
+    "duckdb",
+    "polars"
+   ]
+  },
+  {
+   "id": "g-sandboxes-para-agentes",
+   "titulo": "Sandboxes para agentes",
+   "cat": 22,
+   "sub": "infra",
+   "miembros": [
+    "e2b",
+    "nemoclaw",
+    "sandbox"
+   ],
+   "ranking": [
+    {
+     "id": "nemoclaw",
+     "posicion": 1,
+     "puntuacion": 69.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "e2b",
+     "posicion": 2,
+     "puntuacion": 64.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "sandbox",
+     "posicion": 3,
+     "puntuacion": 52.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "nemoclaw",
+   "alternativas": [
+    "e2b",
+    "sandbox"
+   ]
+  },
+  {
+   "id": "g-tts-ligero-y-rapido",
+   "titulo": "TTS ligero y rápido",
+   "cat": 29,
+   "sub": "tts",
+   "miembros": [
+    "edge-tts",
+    "kokoro",
+    "luxtts"
+   ],
+   "ranking": [
+    {
+     "id": "edge-tts",
+     "posicion": 1,
+     "puntuacion": 60.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "luxtts",
+     "posicion": 2,
+     "puntuacion": 55.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "kokoro",
+     "posicion": 3,
+     "puntuacion": 51.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "edge-tts",
+   "alternativas": [
+    "luxtts",
+    "kokoro"
+   ]
+  },
+  {
+   "id": "g-frameworks-de-c2-y-post-explotacion",
+   "titulo": "Frameworks de C2 y post-explotación",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "miembros": [
+    "empire",
+    "mythic",
+    "sliver"
+   ],
+   "ranking": [
+    {
+     "id": "sliver",
+     "posicion": 1,
+     "puntuacion": 70.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "empire",
+     "posicion": 2,
+     "puntuacion": 58.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mythic",
+     "posicion": 3,
+     "puntuacion": 49.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "sliver",
+   "alternativas": [
+    "empire",
+    "mythic"
+   ]
+  },
+  {
+   "id": "g-transcripcion-con-whisper",
+   "titulo": "Transcripción con Whisper",
+   "cat": 29,
+   "sub": "stt",
+   "miembros": [
+    "faster-whisper",
+    "whisper",
+    "whisper-cpp"
+   ],
+   "ranking": [
+    {
+     "id": "whisper-cpp",
+     "posicion": 1,
+     "puntuacion": 72.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "faster-whisper",
+     "posicion": 2,
+     "puntuacion": 69.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "whisper",
+     "posicion": 3,
+     "puntuacion": 66.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "whisper-cpp",
+   "alternativas": [
+    "faster-whisper",
+    "whisper"
+   ]
+  },
+  {
+   "id": "g-ingenieria-inversa-y-desensambladores",
+   "titulo": "Ingeniería inversa y desensambladores",
+   "cat": 16,
+   "sub": "reversing",
+   "miembros": [
+    "ghidra",
+    "radare2",
+    "rizin"
+   ],
+   "ranking": [
+    {
+     "id": "ghidra",
+     "posicion": 1,
+     "puntuacion": 70.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "radare2",
+     "posicion": 2,
+     "puntuacion": 68.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "rizin",
+     "posicion": 3,
+     "puntuacion": 46.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ghidra",
+   "alternativas": [
+    "radare2",
+    "rizin"
+   ]
+  },
+  {
+   "id": "g-agentes-de-investigacion-autonoma",
+   "titulo": "Agentes de investigación autónoma",
+   "cat": 21,
+   "sub": "research",
+   "miembros": [
+    "gpt-researcher",
+    "local-deep-research",
+    "storm"
+   ],
+   "ranking": [
+    {
+     "id": "gpt-researcher",
+     "posicion": 1,
+     "puntuacion": 61.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: agente autónomo que investiga en línea y consolida reportes citados y estructurados.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "storm",
+     "posicion": 2,
+     "puntuacion": 60.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "local-deep-research",
+     "posicion": 3,
+     "puntuacion": 57.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "gpt-researcher",
+   "alternativas": [
+    "storm",
+    "local-deep-research"
+   ]
+  },
+  {
+   "id": "g-frameworks-de-rag-y-orquestacion-de-llm",
+   "titulo": "Frameworks de RAG y orquestación de LLM",
+   "cat": 3,
+   "sub": "py",
+   "miembros": [
+    "haystack",
+    "langchain",
+    "llama-index"
+   ],
+   "ranking": [
+    {
+     "id": "langchain",
+     "posicion": 1,
+     "puntuacion": 80.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas).",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "haystack",
+     "posicion": 2,
+     "puntuacion": 65.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework de deepset para pipelines de RAG y agentes listos para producción.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "llama-index",
+     "posicion": 3,
+     "puntuacion": 62.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "langchain",
+   "alternativas": [
+    "haystack",
+    "llama-index"
+   ]
+  },
+  {
+   "id": "g-asistentes-personales-autonomos",
+   "titulo": "Asistentes personales autónomos",
+   "cat": 21,
+   "sub": "asistentes",
+   "miembros": [
+    "hermes-agent",
+    "mercury-agent",
+    "openclaw"
+   ],
+   "ranking": [
+    {
+     "id": "openclaw",
+     "posicion": 1,
+     "puntuacion": 82.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "hermes-agent",
+     "posicion": 2,
+     "puntuacion": 73.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mercury-agent",
+     "posicion": 3,
+     "puntuacion": 48.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "openclaw",
+   "alternativas": [
+    "hermes-agent",
+    "mercury-agent"
+   ]
+  },
+  {
+   "id": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
+   "titulo": "Skills para quitar el tono de IA a los textos",
+   "cat": 27,
+   "sub": "escritura",
+   "miembros": [
+    "humanizer",
+    "no-ai-slop",
+    "stop-slop"
+   ],
+   "ranking": [
+    {
+     "id": "humanizer",
+     "posicion": 1,
+     "puntuacion": 72.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "no-ai-slop",
+     "posicion": 2,
+     "puntuacion": 55.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "stop-slop",
+     "posicion": 3,
+     "puntuacion": 43.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "humanizer",
+   "alternativas": [
+    "no-ai-slop",
+    "stop-slop"
+   ]
+  },
+  {
+   "id": "g-modelos-abiertos-de-video-generativo",
+   "titulo": "Modelos abiertos de video generativo",
+   "cat": 12,
+   "sub": "generativo",
+   "miembros": [
+    "hunyuanvideo",
+    "hunyuanvideo-1-5",
+    "wan2-2"
+   ],
+   "ranking": [
+    {
+     "id": "wan2-2",
+     "posicion": 1,
+     "puntuacion": 67.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "hunyuanvideo",
+     "posicion": 2,
+     "puntuacion": 53.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "hunyuanvideo-1-5",
+     "posicion": 3,
+     "puntuacion": 41.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "wan2-2",
+   "alternativas": [
+    "hunyuanvideo",
+    "hunyuanvideo-1-5"
+   ]
+  },
+  {
+   "id": "g-frameworks-de-deep-learning",
+   "titulo": "Frameworks de deep learning",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "miembros": [
+    "jax",
+    "pytorch",
+    "tensorflow"
+   ],
+   "ranking": [
+    {
+     "id": "tensorflow",
+     "posicion": 1,
+     "puntuacion": 79.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "pytorch",
+     "posicion": 2,
+     "puntuacion": 77.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "jax",
+     "posicion": 3,
+     "puntuacion": 64.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "tensorflow",
+   "alternativas": [
+    "pytorch",
+    "jax"
+   ]
+  },
+  {
+   "id": "g-editores-de-video",
+   "titulo": "Editores de video",
+   "cat": 12,
+   "sub": "edicion",
+   "miembros": [
+    "kdenlive",
+    "opencut",
+    "shotcut"
+   ],
+   "ranking": [
+    {
+     "id": "opencut",
+     "posicion": 1,
+     "puntuacion": 62.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "shotcut",
+     "posicion": 2,
+     "puntuacion": 59.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "kdenlive",
+     "posicion": 3,
+     "puntuacion": 58.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "opencut",
+   "alternativas": [
+    "shotcut",
+    "kdenlive"
+   ]
+  },
+  {
+   "id": "g-frameworks-de-agentes-en-typescript",
+   "titulo": "Frameworks de agentes en TypeScript",
+   "cat": 3,
+   "sub": "ts",
+   "miembros": [
+    "langgraphjs",
+    "mastra",
+    "vercel-ai"
+   ],
+   "ranking": [
+    {
+     "id": "vercel-ai",
+     "posicion": 1,
+     "puntuacion": 67.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mastra",
+     "posicion": 2,
+     "puntuacion": 64.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "langgraphjs",
+     "posicion": 3,
+     "puntuacion": 60.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "vercel-ai",
+   "alternativas": [
+    "mastra",
+    "langgraphjs"
+   ]
+  },
+  {
+   "id": "g-scraping-guiado-por-llm",
+   "titulo": "Scraping guiado por LLM",
+   "cat": 4,
+   "sub": "llm",
+   "miembros": [
+    "llm-scraper",
+    "maxun",
+    "scrapegraph-ai"
+   ],
+   "ranking": [
+    {
+     "id": "scrapegraph-ai",
+     "posicion": 1,
+     "puntuacion": 70.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "maxun",
+     "posicion": 2,
+     "puntuacion": 69.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "llm-scraper",
+     "posicion": 3,
+     "puntuacion": 47.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "scrapegraph-ai",
+   "alternativas": [
+    "maxun",
+    "llm-scraper"
+   ]
+  },
+  {
+   "id": "g-presentaciones-desde-markdown",
+   "titulo": "Presentaciones desde Markdown",
+   "cat": 31,
+   "sub": "slides",
+   "miembros": [
+    "marp",
+    "reveal.js",
+    "slidev"
+   ],
+   "ranking": [
+    {
+     "id": "slidev",
+     "posicion": 1,
+     "puntuacion": 73.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "reveal.js",
+     "posicion": 2,
+     "puntuacion": 59.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "marp",
+     "posicion": 3,
+     "puntuacion": 47.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "slidev",
+   "alternativas": [
+    "reveal.js",
+    "marp"
+   ]
+  },
+  {
+   "id": "g-analitica-web-auto-hospedada",
+   "titulo": "Analítica web auto-hospedada",
+   "cat": 10,
+   "sub": "producto",
+   "miembros": [
+    "matomo",
+    "plausible",
+    "umami"
+   ],
+   "ranking": [
+    {
+     "id": "umami",
+     "posicion": 1,
+     "puntuacion": 74.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "plausible",
+     "posicion": 2,
+     "puntuacion": 59.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "matomo",
+     "posicion": 3,
+     "puntuacion": 57.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: alternativa open source a Google Analytics con control total de los datos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "umami",
+   "alternativas": [
+    "plausible",
+    "matomo"
+   ]
+  },
+  {
+   "id": "g-chat-de-equipo-auto-hospedado",
+   "titulo": "Chat de equipo auto-hospedado",
+   "cat": 17,
+   "sub": "comunidades",
+   "miembros": [
+    "mattermost",
+    "rocket-chat",
+    "zulip"
+   ],
+   "ranking": [
+    {
+     "id": "rocket-chat",
+     "posicion": 1,
+     "puntuacion": 74.7,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mattermost",
+     "posicion": 2,
+     "puntuacion": 71.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "zulip",
+     "posicion": 3,
+     "puntuacion": 63.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "rocket-chat",
+   "alternativas": [
+    "mattermost",
+    "zulip"
+   ]
+  },
+  {
+   "id": "g-bi-y-dashboards",
+   "titulo": "BI y dashboards",
+   "cat": 10,
+   "sub": "bi",
+   "miembros": [
+    "metabase",
+    "redash",
+    "superset"
+   ],
+   "ranking": [
+    {
+     "id": "superset",
+     "posicion": 1,
+     "puntuacion": 82.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "metabase",
+     "posicion": 2,
+     "puntuacion": 66.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "redash",
+     "posicion": 3,
+     "puntuacion": 54.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "superset",
+   "alternativas": [
+    "metabase",
+    "redash"
+   ]
+  },
+  {
+   "id": "g-agentes-que-resuelven-issues-de-software",
+   "titulo": "Agentes que resuelven issues de software",
+   "cat": 20,
+   "sub": "ingenieria",
+   "miembros": [
+    "mini-swe-agent",
+    "open-swe",
+    "openhands"
+   ],
+   "ranking": [
+    {
+     "id": "openhands",
+     "posicion": 1,
+     "puntuacion": 74.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "open-swe",
+     "posicion": 2,
+     "puntuacion": 61.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mini-swe-agent",
+     "posicion": 3,
+     "puntuacion": 52.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "openhands",
+   "alternativas": [
+    "open-swe",
+    "mini-swe-agent"
+   ]
+  },
+  {
+   "id": "g-skills-y-flujos-de-produccion-de-video",
+   "titulo": "Skills y flujos de producción de video",
+   "cat": 30,
+   "sub": "skills-video",
+   "miembros": [
+    "openmontage",
+    "remotion-superpowers",
+    "video-use"
+   ],
+   "ranking": [
+    {
+     "id": "openmontage",
+     "posicion": 1,
+     "puntuacion": 71.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "video-use",
+     "posicion": 2,
+     "puntuacion": 60.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "remotion-superpowers",
+     "posicion": 3,
+     "puntuacion": 47.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "openmontage",
+   "alternativas": [
+    "video-use",
+    "remotion-superpowers"
+   ]
+  },
+  {
+   "id": "g-skills-de-visualizacion-3d",
+   "titulo": "Skills de visualización 3D",
+   "cat": 27,
+   "sub": "skills",
+   "miembros": [
+    "3dviz-pro-max",
+    "threejs-skills"
+   ],
+   "ranking": [
+    {
+     "id": "3dviz-pro-max",
+     "posicion": 1,
+     "puntuacion": 53.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "threejs-skills",
+     "posicion": 2,
+     "puntuacion": 53.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "3dviz-pro-max",
+   "alternativas": [
+    "threejs-skills"
+   ]
+  },
+  {
+   "id": "g-finanzas-personales",
+   "titulo": "Finanzas personales",
+   "cat": 15,
+   "sub": "personal",
+   "miembros": [
+    "actual",
+    "firefly-iii"
+   ],
+   "ranking": [
+    {
+     "id": "actual",
+     "posicion": 1,
+     "puntuacion": 69.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "firefly-iii",
+     "posicion": 2,
+     "puntuacion": 59.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "actual",
+   "alternativas": [
+    "firefly-iii"
+   ]
+  },
+  {
+   "id": "g-bloqueo-de-anuncios-por-dns",
+   "titulo": "Bloqueo de anuncios por DNS",
+   "cat": 15,
+   "sub": "privacidad",
+   "miembros": [
+    "adguardhome",
+    "pi-hole"
+   ],
+   "ranking": [
+    {
+     "id": "pi-hole",
+     "posicion": 1,
+     "puntuacion": 68.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "adguardhome",
+     "posicion": 2,
+     "puntuacion": 59.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "pi-hole",
+   "alternativas": [
+    "adguardhome"
+   ]
+  },
+  {
+   "id": "g-clis-de-navegador-para-agentes",
+   "titulo": "CLIs de navegador para agentes",
+   "cat": 32,
+   "sub": "agentes-web",
+   "miembros": [
+    "agent-browser",
+    "playwright-cli"
+   ],
+   "ranking": [
+    {
+     "id": "agent-browser",
+     "posicion": 1,
+     "puntuacion": 62.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: cLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "playwright-cli",
+     "posicion": 2,
+     "puntuacion": 56.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "agent-browser",
+   "alternativas": [
+    "playwright-cli"
+   ]
+  },
+  {
+   "id": "g-cursos-de-microsoft-para-principiantes",
+   "titulo": "Cursos de Microsoft para principiantes",
+   "cat": 19,
+   "sub": "guias",
+   "miembros": [
+    "ai-agents-for-beginners",
+    "generative-ai-for-beginners"
+   ],
+   "ranking": [
+    {
+     "id": "generative-ai-for-beginners",
+     "posicion": 1,
+     "puntuacion": 67.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "ai-agents-for-beginners",
+     "posicion": 2,
+     "puntuacion": 65.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "generative-ai-for-beginners",
+   "alternativas": [
+    "ai-agents-for-beginners"
+   ]
+  },
+  {
+   "id": "g-espacios-de-trabajo-local-first-tipo-notion",
+   "titulo": "Espacios de trabajo local-first tipo Notion",
+   "cat": 15,
+   "sub": "notas",
+   "miembros": [
+    "anytype-ts",
+    "appflowy"
+   ],
+   "ranking": [
+    {
+     "id": "appflowy",
+     "posicion": 1,
+     "puntuacion": 63.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "anytype-ts",
+     "posicion": 2,
+     "puntuacion": 48.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "appflowy",
+   "alternativas": [
+    "anytype-ts"
+   ]
+  },
+  {
+   "id": "g-backends-como-servicio-auto-hospedados",
+   "titulo": "Backends como servicio auto-hospedados",
+   "cat": 22,
+   "sub": "infraestructura",
+   "miembros": [
+    "appwrite",
+    "supabase"
+   ],
+   "ranking": [
+    {
+     "id": "supabase",
+     "posicion": 1,
+     "puntuacion": 75.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "appwrite",
+     "posicion": 2,
+     "puntuacion": 72.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "supabase",
+   "alternativas": [
+    "appwrite"
+   ]
+  },
+  {
+   "id": "g-skills-de-diagramas-de-arquitectura",
+   "titulo": "Skills de diagramas de arquitectura",
+   "cat": 31,
+   "sub": "diagramas",
+   "miembros": [
+    "archify",
+    "diagram-design"
+   ],
+   "ranking": [
+    {
+     "id": "archify",
+     "posicion": 1,
+     "puntuacion": 69.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "diagram-design",
+     "posicion": 2,
+     "puntuacion": 55.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "archify",
+   "alternativas": [
+    "diagram-design"
+   ]
+  },
+  {
+   "id": "g-componentes-de-chat-y-copilotos-para-react",
+   "titulo": "Componentes de chat y copilotos para React",
+   "cat": 9,
+   "sub": "ia-ui",
+   "miembros": [
+    "assistant-ui",
+    "copilotkit"
+   ],
+   "ranking": [
+    {
+     "id": "copilotkit",
+     "posicion": 1,
+     "puntuacion": 69.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "assistant-ui",
+     "posicion": 2,
+     "puntuacion": 61.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería React y TypeScript para interfaces de chat con IA de calidad producción.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "copilotkit",
+   "alternativas": [
+    "assistant-ui"
+   ]
+  },
+  {
+   "id": "g-emulacion-de-adversarios",
+   "titulo": "Emulación de adversarios",
+   "cat": 16,
+   "sub": "explotacion-c2",
+   "miembros": [
+    "atomic-red-team",
+    "caldera"
+   ],
+   "ranking": [
+    {
+     "id": "atomic-red-team",
+     "posicion": 1,
+     "puntuacion": 64.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "caldera",
+     "posicion": 2,
+     "puntuacion": 62.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "atomic-red-team",
+   "alternativas": [
+    "caldera"
+   ]
+  },
+  {
+   "id": "g-proveedores-de-identidad-y-sso",
+   "titulo": "Proveedores de identidad y SSO",
+   "cat": 15,
+   "sub": "privacidad",
+   "miembros": [
+    "authentik",
+    "keycloak"
+   ],
+   "ranking": [
+    {
+     "id": "keycloak",
+     "posicion": 1,
+     "puntuacion": 67.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "authentik",
+     "posicion": 2,
+     "puntuacion": 64.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "keycloak",
+   "alternativas": [
+    "authentik"
+   ]
+  },
+  {
+   "id": "g-analisis-forense-de-discos",
+   "titulo": "Análisis forense de discos",
+   "cat": 16,
+   "sub": "ir-forense",
+   "miembros": [
+    "autopsy",
+    "sleuthkit"
+   ],
+   "ranking": [
+    {
+     "id": "autopsy",
+     "posicion": 1,
+     "puntuacion": 45.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "sleuthkit",
+     "posicion": 2,
+     "puntuacion": 41.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "autopsy",
+   "alternativas": [
+    "sleuthkit"
+   ]
+  },
+  {
+   "id": "g-backtesting-en-python",
+   "titulo": "Backtesting en Python",
+   "cat": 14,
+   "sub": "cuant",
+   "miembros": [
+    "backtesting-py",
+    "vectorbt"
+   ],
+   "ranking": [
+    {
+     "id": "vectorbt",
+     "posicion": 1,
+     "puntuacion": 55.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "backtesting-py",
+     "posicion": 2,
+     "puntuacion": 50.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "vectorbt",
+   "alternativas": [
+    "backtesting-py"
+   ]
+  },
+  {
+   "id": "g-motores-de-videojuegos",
+   "titulo": "Motores de videojuegos",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "miembros": [
+    "bevy",
+    "godot"
+   ],
+   "ranking": [
+    {
+     "id": "godot",
+     "posicion": 1,
+     "puntuacion": 76.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "bevy",
+     "posicion": 2,
+     "puntuacion": 65.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "godot",
+   "alternativas": [
+    "bevy"
+   ]
+  },
+  {
+   "id": "g-desarrollo-guiado-por-especificaciones",
+   "titulo": "Desarrollo guiado por especificaciones",
+   "cat": 2,
+   "sub": "metodologia",
+   "miembros": [
+    "bmad-method",
+    "spec-kit"
+   ],
+   "ranking": [
+    {
+     "id": "spec-kit",
+     "posicion": 1,
+     "puntuacion": 75.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: kit de GitHub para desarrollo guiado por especificaciones con agentes de código.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "bmad-method",
+     "posicion": 2,
+     "puntuacion": 60.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "spec-kit",
+   "alternativas": [
+    "bmad-method"
+   ]
+  },
+  {
+   "id": "g-proxies-inversos-con-https-automatico",
+   "titulo": "Proxies inversos con HTTPS automático",
+   "cat": 22,
+   "sub": "infraestructura",
+   "miembros": [
+    "caddy",
+    "traefik"
+   ],
+   "ranking": [
+    {
+     "id": "caddy",
+     "posicion": 1,
+     "puntuacion": 70.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "traefik",
+     "posicion": 2,
+     "puntuacion": 69.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "caddy",
+   "alternativas": [
+    "traefik"
+   ]
+  },
+  {
+   "id": "g-proxies-de-pruebas-de-aplicaciones-web",
+   "titulo": "Proxies de pruebas de aplicaciones web",
+   "cat": 16,
+   "sub": "pruebas",
+   "miembros": [
+    "caido",
+    "zaproxy"
+   ],
+   "ranking": [
+    {
+     "id": "zaproxy",
+     "posicion": 1,
+     "puntuacion": 72.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "caido",
+     "posicion": 2,
+     "puntuacion": 37.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "zaproxy",
+   "alternativas": [
+    "caido"
+   ]
+  },
+  {
+   "id": "g-reservas-y-citas",
+   "titulo": "Reservas y citas",
+   "cat": 18,
+   "sub": "reservas",
+   "miembros": [
+    "cal.diy",
+    "easyappointments"
+   ],
+   "ranking": [
+    {
+     "id": "cal.diy",
+     "posicion": 1,
+     "puntuacion": 69.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "easyappointments",
+     "posicion": 2,
+     "puntuacion": 47.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "cal.diy",
+   "alternativas": [
+    "easyappointments"
+   ]
+  },
+  {
+   "id": "g-bibliotecas-de-libros-y-comics",
+   "titulo": "Bibliotecas de libros y cómics",
+   "cat": 15,
+   "sub": "lectura",
+   "miembros": [
+    "calibre-web",
+    "kavita"
+   ],
+   "ranking": [
+    {
+     "id": "kavita",
+     "posicion": 1,
+     "puntuacion": 57.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "calibre-web",
+     "posicion": 2,
+     "puntuacion": 45.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "kavita",
+   "alternativas": [
+    "calibre-web"
+   ]
+  },
+  {
+   "id": "g-servidores-mcp-de-navegador",
+   "titulo": "Servidores MCP de navegador",
+   "cat": 5,
+   "sub": "servidores",
+   "miembros": [
+    "chrome-devtools-mcp",
+    "playwright-mcp"
+   ],
+   "ranking": [
+    {
+     "id": "chrome-devtools-mcp",
+     "posicion": 1,
+     "puntuacion": 72.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "playwright-mcp",
+     "posicion": 2,
+     "puntuacion": 62.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "chrome-devtools-mcp",
+   "alternativas": [
+    "playwright-mcp"
+   ]
+  },
+  {
+   "id": "g-obsidian-como-segundo-cerebro-para-agentes",
+   "titulo": "Obsidian como segundo cerebro para agentes",
+   "cat": 15,
+   "sub": "notas",
+   "miembros": [
+    "claude-obsidian",
+    "obsidian-second-brain"
+   ],
+   "ranking": [
+    {
+     "id": "obsidian-second-brain",
+     "posicion": 1,
+     "puntuacion": 62.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "claude-obsidian",
+     "posicion": 2,
+     "puntuacion": 59.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "obsidian-second-brain",
+   "alternativas": [
+    "claude-obsidian"
+   ]
+  },
+  {
+   "id": "g-skills-de-seo-para-agentes",
+   "titulo": "Skills de SEO para agentes",
+   "cat": 27,
+   "sub": "dominio",
+   "miembros": [
+    "claude-seo",
+    "geo-seo-claude"
+   ],
+   "ranking": [
+    {
+     "id": "claude-seo",
+     "posicion": 1,
+     "puntuacion": 70.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "geo-seo-claude",
+     "posicion": 2,
+     "puntuacion": 48.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "claude-seo",
+   "alternativas": [
+    "geo-seo-claude"
+   ]
+  },
+  {
+   "id": "g-agentes-de-codigo-en-el-editor",
+   "titulo": "Agentes de código en el editor",
+   "cat": 20,
+   "sub": "editor",
+   "miembros": [
+    "cline",
+    "kilocode"
+   ],
+   "ranking": [
+    {
+     "id": "cline",
+     "posicion": 1,
+     "puntuacion": 65.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "kilocode",
+     "posicion": 2,
+     "puntuacion": 59.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "cline",
+   "alternativas": [
+    "kilocode"
+   ]
+  },
+  {
+   "id": "g-crawlee-node-js-y-python",
+   "titulo": "Crawlee (Node.js y Python)",
+   "cat": 4,
+   "sub": "crawlers",
+   "miembros": [
+    "crawlee",
+    "crawlee-python"
+   ],
+   "ranking": [
+    {
+     "id": "crawlee-python",
+     "posicion": 1,
+     "puntuacion": 65.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "crawlee",
+     "posicion": 2,
+     "puntuacion": 65.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "crawlee-python",
+   "alternativas": [
+    "crawlee"
+   ]
+  },
+  {
+   "id": "g-bloqueo-de-ip-por-comportamiento",
+   "titulo": "Bloqueo de IP por comportamiento",
+   "cat": 16,
+   "sub": "deteccion",
+   "miembros": [
+    "crowdsec",
+    "fail2ban"
+   ],
+   "ranking": [
+    {
+     "id": "crowdsec",
+     "posicion": 1,
+     "puntuacion": 74.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "fail2ban",
+     "posicion": 2,
+     "puntuacion": 61.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "crowdsec",
+   "alternativas": [
+    "fail2ban"
+   ]
+  },
+  {
+   "id": "g-etiquetado-de-datos-para-vision",
+   "titulo": "Etiquetado de datos para visión",
+   "cat": 28,
+   "sub": "vision",
+   "miembros": [
+    "cvat",
+    "label-studio"
+   ],
+   "ranking": [
+    {
+     "id": "label-studio",
+     "posicion": 1,
+     "puntuacion": 71.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "cvat",
+     "posicion": 2,
+     "puntuacion": 67.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "label-studio",
+   "alternativas": [
+    "cvat"
+   ]
+  },
+  {
+   "id": "g-intercambio-de-rostros",
+   "titulo": "Intercambio de rostros",
+   "cat": 28,
+   "sub": "rostros",
+   "miembros": [
+    "deep-live-cam",
+    "facefusion"
+   ],
+   "ranking": [
+    {
+     "id": "deep-live-cam",
+     "posicion": 1,
+     "puntuacion": 75.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "facefusion",
+     "posicion": 2,
+     "puntuacion": 55.6,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plataforma para intercambio y mejora de rostros en imágenes y video.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "deep-live-cam",
+   "alternativas": [
+    "facefusion"
+   ]
+  },
+  {
+   "id": "g-pizarras-y-diagramas-a-mano-alzada",
+   "titulo": "Pizarras y diagramas a mano alzada",
+   "cat": 9,
+   "sub": "diseno",
+   "miembros": [
+    "excalidraw",
+    "tldraw"
+   ],
+   "ranking": [
+    {
+     "id": "excalidraw",
+     "posicion": 1,
+     "puntuacion": 69.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "tldraw",
+     "posicion": 2,
+     "puntuacion": 54.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "excalidraw",
+   "alternativas": [
+    "tldraw"
+   ]
+  },
+  {
+   "id": "g-colecciones-de-prompts",
+   "titulo": "Colecciones de prompts",
+   "cat": 19,
+   "sub": "prompts",
+   "miembros": [
+    "fabric",
+    "prompts-chat"
+   ],
+   "ranking": [
+    {
+     "id": "prompts-chat",
+     "posicion": 1,
+     "puntuacion": 69.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "fabric",
+     "posicion": 2,
+     "puntuacion": 63.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "prompts-chat",
+   "alternativas": [
+    "fabric"
+   ]
+  },
+  {
+   "id": "g-sdks-de-mcp-en-python",
+   "titulo": "SDKs de MCP en Python",
+   "cat": 5,
+   "sub": "sdk",
+   "miembros": [
+    "fastmcp",
+    "mcp-python-sdk"
+   ],
+   "ranking": [
+    {
+     "id": "fastmcp",
+     "posicion": 1,
+     "puntuacion": 74.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: la forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mcp-python-sdk",
+     "posicion": 2,
+     "puntuacion": 61.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "fastmcp",
+   "alternativas": [
+    "mcp-python-sdk"
+   ]
+  },
+  {
+   "id": "g-help-desk-y-tickets",
+   "titulo": "Help desk y tickets",
+   "cat": 18,
+   "sub": "crm",
+   "miembros": [
+    "freescout",
+    "zammad"
+   ],
+   "ranking": [
+    {
+     "id": "zammad",
+     "posicion": 1,
+     "puntuacion": 57.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "freescout",
+     "posicion": 2,
+     "puntuacion": 56.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "zammad",
+   "alternativas": [
+    "freescout"
+   ]
+  },
+  {
+   "id": "g-lectores-rss-auto-hospedados",
+   "titulo": "Lectores RSS auto-hospedados",
+   "cat": 4,
+   "sub": "busqueda",
+   "miembros": [
+    "freshrss",
+    "miniflux"
+   ],
+   "ranking": [
+    {
+     "id": "freshrss",
+     "posicion": 1,
+     "puntuacion": 65.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "miniflux",
+     "posicion": 2,
+     "puntuacion": 57.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "freshrss",
+   "alternativas": [
+    "miniflux"
+   ]
+  },
+  {
+   "id": "g-deteccion-de-secretos-en-repos",
+   "titulo": "Detección de secretos en repos",
+   "cat": 7,
+   "sub": "calidad",
+   "miembros": [
+    "gitleaks",
+    "trufflehog"
+   ],
+   "ranking": [
+    {
+     "id": "gitleaks",
+     "posicion": 1,
+     "puntuacion": 61.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "trufflehog",
+     "posicion": 2,
+     "puntuacion": 59.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "gitleaks",
+   "alternativas": [
+    "trufflehog"
+   ]
+  },
+  {
+   "id": "g-paneles-osint-sobre-globo-3d",
+   "titulo": "Paneles OSINT sobre globo 3D",
+   "cat": 10,
+   "sub": "osint",
+   "miembros": [
+    "gods-eye-view",
+    "osiris"
+   ],
+   "ranking": [
+    {
+     "id": "gods-eye-view",
+     "posicion": 1,
+     "puntuacion": 68.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "osiris",
+     "posicion": 2,
+     "puntuacion": 52.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "gods-eye-view",
+   "alternativas": [
+    "osiris"
+   ]
+  },
+  {
+   "id": "g-escaneres-de-vulnerabilidades-de-contenedores",
+   "titulo": "Escáneres de vulnerabilidades de contenedores",
+   "cat": 16,
+   "sub": "nube-contenedores",
+   "miembros": [
+    "grype",
+    "trivy"
+   ],
+   "ranking": [
+    {
+     "id": "trivy",
+     "posicion": 1,
+     "puntuacion": 78.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "grype",
+     "posicion": 2,
+     "puntuacion": 69.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "trivy",
+   "alternativas": [
+    "grype"
+   ]
+  },
+  {
+   "id": "g-cracking-de-contrasenas",
+   "titulo": "Cracking de contraseñas",
+   "cat": 16,
+   "sub": "pruebas",
+   "miembros": [
+    "hashcat",
+    "john"
+   ],
+   "ranking": [
+    {
+     "id": "hashcat",
+     "posicion": 1,
+     "puntuacion": 61.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "john",
+     "posicion": 2,
+     "puntuacion": 53.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "hashcat",
+   "alternativas": [
+    "john"
+   ]
+  },
+  {
+   "id": "g-compactar-contexto-y-tokens",
+   "titulo": "Compactar contexto y tokens",
+   "cat": 23,
+   "sub": "tokens",
+   "miembros": [
+    "headroom",
+    "rtk"
+   ],
+   "ranking": [
+    {
+     "id": "rtk",
+     "posicion": 1,
+     "puntuacion": 68.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "headroom",
+     "posicion": 2,
+     "puntuacion": 60.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "rtk",
+   "alternativas": [
+    "headroom"
+   ]
+  },
+  {
+   "id": "g-redes-privadas-tipo-mesh-wireguard",
+   "titulo": "Redes privadas tipo mesh (WireGuard)",
+   "cat": 22,
+   "sub": "redes",
+   "miembros": [
+    "headscale",
+    "netbird"
+   ],
+   "ranking": [
+    {
+     "id": "headscale",
+     "posicion": 1,
+     "puntuacion": 69.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "netbird",
+     "posicion": 2,
+     "puntuacion": 63.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "headscale",
+   "alternativas": [
+    "netbird"
+   ]
+  },
+  {
+   "id": "g-sondeo-y-escaneo-de-reconocimiento",
+   "titulo": "Sondeo y escaneo de reconocimiento",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "miembros": [
+    "httpx",
+    "naabu"
+   ],
+   "ranking": [
+    {
+     "id": "httpx",
+     "posicion": 1,
+     "puntuacion": 76.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "naabu",
+     "posicion": 2,
+     "puntuacion": 61.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "httpx",
+   "alternativas": [
+    "naabu"
+   ]
+  },
+  {
+   "id": "g-automatizacion-por-eventos-auto-hospedada",
+   "titulo": "Automatización por eventos auto-hospedada",
+   "cat": 1,
+   "sub": "motores",
+   "miembros": [
+    "huginn",
+    "node-red"
+   ],
+   "ranking": [
+    {
+     "id": "node-red",
+     "posicion": 1,
+     "puntuacion": 63.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "huginn",
+     "posicion": 2,
+     "puntuacion": 62.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un \"IFTTT/Zapier que controlas tú\".",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "node-red",
+   "alternativas": [
+    "huginn"
+   ]
+  },
+  {
+   "id": "g-gestion-de-fotos-auto-hospedada",
+   "titulo": "Gestión de fotos auto-hospedada",
+   "cat": 15,
+   "sub": "archivos",
+   "miembros": [
+    "immich",
+    "photoprism"
+   ],
+   "ranking": [
+    {
+     "id": "immich",
+     "posicion": 1,
+     "puntuacion": 80.7,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática desde el móvil y búsqueda con IA local.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "photoprism",
+     "posicion": 2,
+     "puntuacion": 65.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: app de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en la nube.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "immich",
+   "alternativas": [
+    "photoprism"
+   ]
+  },
+  {
+   "id": "g-skills-para-redes-sociales",
+   "titulo": "Skills para redes sociales",
+   "cat": 27,
+   "sub": "dominio",
+   "miembros": [
+    "instagram-agent-skill",
+    "linkedin-agent-skill"
+   ],
+   "ranking": [
+    {
+     "id": "instagram-agent-skill",
+     "posicion": 1,
+     "puntuacion": 55.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "linkedin-agent-skill",
+     "posicion": 2,
+     "puntuacion": 47.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "instagram-agent-skill",
+   "alternativas": [
+    "linkedin-agent-skill"
+   ]
+  },
+  {
+   "id": "g-interfaces-de-creacion-de-imagenes",
+   "titulo": "Interfaces de creación de imágenes",
+   "cat": 11,
+   "sub": "interfaces",
+   "miembros": [
+    "invokeai",
+    "krita-ai-diffusion"
+   ],
+   "ranking": [
+    {
+     "id": "invokeai",
+     "posicion": 1,
+     "puntuacion": 73.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "krita-ai-diffusion",
+     "posicion": 2,
+     "puntuacion": 55.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "invokeai",
+   "alternativas": [
+    "krita-ai-diffusion"
+   ]
+  },
+  {
+   "id": "g-notebooks",
+   "titulo": "Notebooks",
+   "cat": 25,
+   "sub": "datos",
+   "miembros": [
+    "jupyterlab",
+    "marimo"
+   ],
+   "ranking": [
+    {
+     "id": "marimo",
+     "posicion": 1,
+     "puntuacion": 76.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "jupyterlab",
+     "posicion": 2,
+     "puntuacion": 65.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "marimo",
+   "alternativas": [
+    "jupyterlab"
+   ]
+  },
+  {
+   "id": "g-pruebas-de-carga",
+   "titulo": "Pruebas de carga",
+   "cat": 16,
+   "sub": "pruebas",
+   "miembros": [
+    "k6",
+    "locust"
+   ],
+   "ranking": [
+    {
+     "id": "locust",
+     "posicion": 1,
+     "puntuacion": 76.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "k6",
+     "posicion": 2,
+     "puntuacion": 69.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "locust",
+   "alternativas": [
+    "k6"
+   ]
+  },
+  {
+   "id": "g-gestores-de-contrasenas",
+   "titulo": "Gestores de contraseñas",
+   "cat": 15,
+   "sub": "privacidad",
+   "miembros": [
+    "keepassxc",
+    "vaultwarden"
+   ],
+   "ranking": [
+    {
+     "id": "vaultwarden",
+     "posicion": 1,
+     "puntuacion": 64.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "keepassxc",
+     "posicion": 2,
+     "puntuacion": 54.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "vaultwarden",
+   "alternativas": [
+    "keepassxc"
+   ]
+  },
+  {
+   "id": "g-motores-de-navegador-independientes",
+   "titulo": "Motores de navegador independientes",
+   "cat": 32,
+   "sub": "motores-web",
+   "miembros": [
+    "ladybird",
+    "servo"
+   ],
+   "ranking": [
+    {
+     "id": "ladybird",
+     "posicion": 1,
+     "puntuacion": 72.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "servo",
+     "posicion": 2,
+     "puntuacion": 58.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ladybird",
+   "alternativas": [
+    "servo"
+   ]
+  },
+  {
+   "id": "g-mapas-web-interactivos",
+   "titulo": "Mapas web interactivos",
+   "cat": 10,
+   "sub": "geoespacial",
+   "miembros": [
+    "leaflet",
+    "maplibre"
+   ],
+   "ranking": [
+    {
+     "id": "leaflet",
+     "posicion": 1,
+     "puntuacion": 70.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "maplibre",
+     "posicion": 2,
+     "puntuacion": 67.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "leaflet",
+   "alternativas": [
+    "maplibre"
+   ]
+  },
+  {
+   "id": "g-aprender-llm-desde-cero",
+   "titulo": "Aprender LLM desde cero",
+   "cat": 19,
+   "sub": "aprender",
+   "miembros": [
+    "llm-course",
+    "llms-from-scratch"
+   ],
+   "ranking": [
+    {
+     "id": "llms-from-scratch",
+     "posicion": 1,
+     "puntuacion": 71.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "llm-course",
+     "posicion": 2,
+     "puntuacion": 53.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "llms-from-scratch",
+   "alternativas": [
+    "llm-course"
+   ]
+  },
+  {
+   "id": "g-componentes-animados-para-react",
+   "titulo": "Componentes animados para React",
+   "cat": 9,
+   "sub": "componentes",
+   "miembros": [
+    "magicui",
+    "react-bits"
+   ],
+   "ranking": [
+    {
+     "id": "react-bits",
+     "posicion": 1,
+     "puntuacion": 59.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "magicui",
+     "posicion": 2,
+     "puntuacion": 53.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "react-bits",
+   "alternativas": [
+    "magicui"
+   ]
+  },
+  {
+   "id": "g-busqueda-de-usuarios-en-redes-sociales",
+   "titulo": "Búsqueda de usuarios en redes sociales",
+   "cat": 10,
+   "sub": "osint",
+   "miembros": [
+    "maigret",
+    "sherlock"
+   ],
+   "ranking": [
+    {
+     "id": "sherlock",
+     "posicion": 1,
+     "puntuacion": 66.7,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: cLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "maigret",
+     "posicion": 2,
+     "puntuacion": 63.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "sherlock",
+   "alternativas": [
+    "maigret"
+   ]
+  },
+  {
+   "id": "g-animaciones-matematicas-manim",
+   "titulo": "Animaciones matemáticas (Manim)",
+   "cat": 30,
+   "sub": "motores",
+   "miembros": [
+    "manim",
+    "manim-community"
+   ],
+   "ranking": [
+    {
+     "id": "manim-community",
+     "posicion": 1,
+     "puntuacion": 71.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "manim",
+     "posicion": 2,
+     "puntuacion": 57.3,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "manim-community",
+   "alternativas": [
+    "manim"
+   ]
+  },
+  {
+   "id": "g-servidores-mcp-de-neo4j",
+   "titulo": "Servidores MCP de Neo4j",
+   "cat": 5,
+   "sub": "servidores",
+   "miembros": [
+    "mcp-neo4j",
+    "neo4j-mcp"
+   ],
+   "ranking": [
+    {
+     "id": "neo4j-mcp",
+     "posicion": 1,
+     "puntuacion": 59.7,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mcp-neo4j",
+     "posicion": 2,
+     "puntuacion": 51.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "neo4j-mcp",
+   "alternativas": [
+    "mcp-neo4j"
+   ]
+  },
+  {
+   "id": "g-sdks-de-mcp-en-typescript",
+   "titulo": "SDKs de MCP en TypeScript",
+   "cat": 5,
+   "sub": "sdk",
+   "miembros": [
+    "mcp-typescript-sdk",
+    "mcp-use"
+   ],
+   "ranking": [
+    {
+     "id": "mcp-use",
+     "posicion": 1,
+     "puntuacion": 64.0,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "mcp-typescript-sdk",
+     "posicion": 2,
+     "puntuacion": 59.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "mcp-use",
+   "alternativas": [
+    "mcp-typescript-sdk"
+   ]
+  },
+  {
+   "id": "g-generacion-automatica-de-videos-cortos",
+   "titulo": "Generación automática de videos cortos",
+   "cat": 12,
+   "sub": "generativo",
+   "miembros": [
+    "moneyprinterturbo",
+    "short-video-factory"
+   ],
+   "ranking": [
+    {
+     "id": "moneyprinterturbo",
+     "posicion": 1,
+     "puntuacion": 76.9,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: app que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "short-video-factory",
+     "posicion": 2,
+     "puntuacion": 46.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "moneyprinterturbo",
+   "alternativas": [
+    "short-video-factory"
+   ]
+  },
+  {
+   "id": "g-paneles-para-coordinar-equipos-de-agentes",
+   "titulo": "Paneles para coordinar equipos de agentes",
+   "cat": 21,
+   "sub": "asistentes",
+   "miembros": [
+    "multica",
+    "paperclip"
+   ],
+   "ranking": [
+    {
+     "id": "paperclip",
+     "posicion": 1,
+     "puntuacion": 67.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "multica",
+     "posicion": 2,
+     "puntuacion": 56.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "paperclip",
+   "alternativas": [
+    "multica"
+   ]
+  },
+  {
+   "id": "g-transcripcion-con-modelos-nvidia-y-alineacion",
+   "titulo": "Transcripción con modelos NVIDIA y alineación",
+   "cat": 29,
+   "sub": "stt",
+   "miembros": [
+    "nemo",
+    "whisperx"
+   ],
+   "ranking": [
+    {
+     "id": "whisperx",
+     "posicion": 1,
+     "puntuacion": 67.3,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "nemo",
+     "posicion": 2,
+     "puntuacion": 65.8,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "whisperx",
+   "alternativas": [
+    "nemo"
+   ]
+  },
+  {
+   "id": "g-fotogrametria-con-drones",
+   "titulo": "Fotogrametría con drones",
+   "cat": 10,
+   "sub": "geoespacial",
+   "miembros": [
+    "odm",
+    "webodm"
+   ],
+   "ranking": [
+    {
+     "id": "odm",
+     "posicion": 1,
+     "puntuacion": 57.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "webodm",
+     "posicion": 2,
+     "puntuacion": 57.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "odm",
+   "alternativas": [
+    "webodm"
+   ]
+  },
+  {
+   "id": "g-editores-visuales-de-diseno-con-ia",
+   "titulo": "Editores visuales de diseño con IA",
+   "cat": 9,
+   "sub": "diseno",
+   "miembros": [
+    "onlook",
+    "open-design"
+   ],
+   "ranking": [
+    {
+     "id": "open-design",
+     "posicion": 1,
+     "puntuacion": 77.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "onlook",
+     "posicion": 2,
+     "puntuacion": 53.1,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "open-design",
+   "alternativas": [
+    "onlook"
+   ]
+  },
+  {
+   "id": "g-alternativas-a-notebooklm",
+   "titulo": "Alternativas a NotebookLM",
+   "cat": 8,
+   "sub": "notebooklm",
+   "miembros": [
+    "open-notebook",
+    "surfsense"
+   ],
+   "ranking": [
+    {
+     "id": "open-notebook",
+     "posicion": 1,
+     "puntuacion": 67.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "surfsense",
+     "posicion": 2,
+     "puntuacion": 61.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "open-notebook",
+   "alternativas": [
+    "surfsense"
+   ]
+  },
+  {
+   "id": "g-espacios-de-asistentes-de-copilotkit",
+   "titulo": "Espacios de asistentes de CopilotKit",
+   "cat": 21,
+   "sub": "asistentes",
+   "miembros": [
+    "openbot",
+    "opendots"
+   ],
+   "ranking": [
+    {
+     "id": "openbot",
+     "posicion": 1,
+     "puntuacion": 67.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "opendots",
+     "posicion": 2,
+     "puntuacion": 48.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "openbot",
+   "alternativas": [
+    "opendots"
+   ]
+  },
+  {
+   "id": "g-gestores-de-sesiones-de-agentes-de-codigo",
+   "titulo": "Gestores de sesiones de agentes de código",
+   "cat": 20,
+   "sub": "sesiones",
+   "miembros": [
+    "opencode-manager",
+    "t3code"
+   ],
+   "ranking": [
+    {
+     "id": "t3code",
+     "posicion": 1,
+     "puntuacion": 72.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "opencode-manager",
+     "posicion": 2,
+     "puntuacion": 44.2,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "t3code",
+   "alternativas": [
+    "opencode-manager"
+   ]
+  },
+  {
+   "id": "g-aprendizaje-por-refuerzo-para-llm",
+   "titulo": "Aprendizaje por refuerzo para LLM",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "miembros": [
+    "openrlhf",
+    "verl"
+   ],
+   "ranking": [
+    {
+     "id": "verl",
+     "posicion": 1,
+     "puntuacion": 67.6,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "openrlhf",
+     "posicion": 2,
+     "puntuacion": 57.9,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "verl",
+   "alternativas": [
+    "openrlhf"
+   ]
+  },
+  {
+   "id": "g-listas-de-payloads-y-diccionarios",
+   "titulo": "Listas de payloads y diccionarios",
+   "cat": 16,
+   "sub": "referencias",
+   "miembros": [
+    "payloadsallthethings",
+    "seclists"
+   ],
+   "ranking": [
+    {
+     "id": "seclists",
+     "posicion": 1,
+     "puntuacion": 65.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "payloadsallthethings",
+     "posicion": 2,
+     "puntuacion": 62.7,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "seclists",
+   "alternativas": [
+    "payloadsallthethings"
+   ]
+  },
+  {
+   "id": "g-suites-de-herramientas-pdf",
+   "titulo": "Suites de herramientas PDF",
+   "cat": 13,
+   "sub": "pdf",
+   "miembros": [
+    "pdfcraft",
+    "stirling-pdf"
+   ],
+   "ranking": [
+    {
+     "id": "stirling-pdf",
+     "posicion": 1,
+     "puntuacion": 75.5,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "pdfcraft",
+     "posicion": 2,
+     "puntuacion": 51.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "stirling-pdf",
+   "alternativas": [
+    "pdfcraft"
+   ]
+  },
+  {
+   "id": "g-generacion-de-presentaciones-con-ia",
+   "titulo": "Generación de presentaciones con IA",
+   "cat": 31,
+   "sub": "slides",
+   "miembros": [
+    "ppt-master",
+    "presenton"
+   ],
+   "ranking": [
+    {
+     "id": "ppt-master",
+     "posicion": 1,
+     "puntuacion": 68.8,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "presenton",
+     "posicion": 2,
+     "puntuacion": 60.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "ppt-master",
+   "alternativas": [
+    "presenton"
+   ]
+  },
+  {
+   "id": "g-guias-de-ingenieria-de-prompts",
+   "titulo": "Guías de ingeniería de prompts",
+   "cat": 19,
+   "sub": "prompts",
+   "miembros": [
+    "prompt-eng-tutorial",
+    "prompt-engineering-guide"
+   ],
+   "ranking": [
+    {
+     "id": "prompt-engineering-guide",
+     "posicion": 1,
+     "puntuacion": 62.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "prompt-eng-tutorial",
+     "posicion": 2,
+     "puntuacion": 38.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "prompt-engineering-guide",
+   "alternativas": [
+    "prompt-eng-tutorial"
+   ]
+  },
+  {
+   "id": "g-de-diseno-o-captura-a-codigo",
+   "titulo": "De diseño o captura a código",
+   "cat": 9,
+   "sub": "ia-ui",
+   "miembros": [
+    "screenshot-to-code",
+    "stitch-sdk"
+   ],
+   "ranking": [
+    {
+     "id": "screenshot-to-code",
+     "posicion": 1,
+     "puntuacion": 60.4,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "stitch-sdk",
+     "posicion": 2,
+     "puntuacion": 49.0,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: sDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "screenshot-to-code",
+   "alternativas": [
+    "stitch-sdk"
+   ]
+  },
+  {
+   "id": "g-servidores-de-inferencia-de-alto-rendimiento",
+   "titulo": "Servidores de inferencia de alto rendimiento",
+   "cat": 23,
+   "sub": "serving",
+   "miembros": [
+    "sglang",
+    "vllm"
+   ],
+   "ranking": [
+    {
+     "id": "vllm",
+     "posicion": 1,
+     "puntuacion": 78.2,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "sglang",
+     "posicion": 2,
+     "puntuacion": 67.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: framework de servicio de alto rendimiento para LLM y modelos multimodales.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "vllm",
+   "alternativas": [
+    "sglang"
+   ]
+  },
+  {
+   "id": "g-pentesting-autonomo-con-agentes",
+   "titulo": "Pentesting autónomo con agentes",
+   "cat": 16,
+   "sub": "agentes",
+   "miembros": [
+    "shannon",
+    "strix"
+   ],
+   "ranking": [
+    {
+     "id": "strix",
+     "posicion": 1,
+     "puntuacion": 72.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "shannon",
+     "posicion": 2,
+     "puntuacion": 62.5,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "strix",
+   "alternativas": [
+    "shannon"
+   ]
+  },
+  {
+   "id": "g-obtencion-de-datos-en-react",
+   "titulo": "Obtención de datos en React",
+   "cat": 9,
+   "sub": "componentes",
+   "miembros": [
+    "swr",
+    "tanstack-query"
+   ],
+   "ranking": [
+    {
+     "id": "tanstack-query",
+     "posicion": 1,
+     "puntuacion": 74.1,
+     "papel": "recomendado",
+     "cuando": "Si buscas esto: biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    },
+    {
+     "id": "swr",
+     "posicion": 2,
+     "puntuacion": 59.4,
+     "papel": "alternativa",
+     "cuando": "Si buscas esto: librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.",
+     "cuando_origen": "plantilla",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "tanstack-query",
+   "alternativas": [
+    "swr"
+   ]
+  }
+ ]
+}

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.
@@ -37,6 +39,15 @@ Se instala con los instaladores oficiales gratuitos o con Docker; usa Django 5.2
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.1 (2026-11-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/WebODM/WebODM/blob/master/README.md) · [2](https://webodm.org/blog/announcement/) · [3](https://docs.webodm.org/)</sub>
+
+## Ver similares
+
+Grupo **Fotogrametría con drones**: WebODM ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ODM](odm.md) ⭐ recomendado | 58 | Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. |
+| 2 | **WebODM** (esta ficha) | 57 | Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
 
 ## Acceso, coste y equipo
 

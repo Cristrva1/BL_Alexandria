@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework open source (MIT) de Daniel Miessler para aumentar capacidades humanas con IA, organizado en torno a 'patterns' (prompts reutilizables por tarea). Es muy activo (v1.4.576, publicaciones casi diarias) y maduro.
@@ -35,6 +37,15 @@ CLI en Go que se instala con binarios, Homebrew (como `fabric-ai`), paquetes de 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.4.576 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/danielmiessler/Fabric/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Colecciones de prompts**: Fabric ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [prompts.chat](prompts-chat.md) ⭐ recomendado | 70 | Si buscas esto: la colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. |
+| 2 | **Fabric** (esta ficha) | 63 | Si buscas esto: cLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. |
 
 ## Acceso, coste y equipo
 

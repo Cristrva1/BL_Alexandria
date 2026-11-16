@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de web scraping en Python con peticiones HTTP rápidas, navegadores sigilosos, parsing potente y crawling concurrente, creado por @D4Vinci. Licencia BSD-3-Clause. Es muy popular (~103k estrellas, v0.5.1) y muestra patrocinadores de proxies residenciales y resolución de CAPTCHA.

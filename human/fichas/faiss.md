@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de Meta (Facebook Research) para búsqueda de similitud y agrupamiento de vectores densos, escrita en C++ con interfaz Python. MIT, madura y activa (v1.16.0); es una biblioteca, no un servidor de base de datos.
@@ -35,6 +37,20 @@ Implementación en C++ con wrappers de Python/NumPy y una implementación GPU (C
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.16.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/facebookresearch/faiss/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Bases y librerías vectoriales**: Faiss ocupa la posición 7 de 7 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Milvus](milvus.md) ⭐ recomendado | 77 | Si necesitas escala de miles de millones de vectores y despliegue distribuido. |
+| 2 | [Qdrant](qdrant.md) | 65 | Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local. |
+| 3 | [Chroma](chroma.md) | 63 | Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG. |
+| 4 | [LanceDB](lancedb.md) | 62 | Si quieres una base vectorial embebida sobre archivos, sin servidor. |
+| 5 | [pgvector](pgvector.md) | 59 | Si ya usas PostgreSQL y quieres vectores en la misma base. |
+| 6 | [Weaviate](weaviate.md) | 59 | Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados. |
+| 7 | **Faiss** (esta ficha) | 56 | Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU. |
 
 ## Acceso, coste y equipo
 

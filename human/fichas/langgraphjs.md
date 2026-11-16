@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Port oficial en TypeScript de LangGraph, de LangChain Inc. (MIT), para construir agentes con estado como grafos. Es activo y maduro, y se publica como varios paquetes npm (`@langchain/langgraph`, CLI, SDK).
@@ -38,6 +40,16 @@ Bibliotecas npm para Node.js y otros runtimes de JavaScript. Para depuración, e
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @langchain/langgraph-cli@1.7.2 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/langgraphjs/blob/main/README.md) · [2](https://langfuse.com/integrations/frameworks/langchain) · [3](https://docs.copilotkit.ai/langgraph) · [4](https://docs.langchain.com/oss/javascript/langgraph/)</sub>
+
+## Ver similares
+
+Grupo **Frameworks de agentes en TypeScript**: LangGraph.js ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [AI SDK (Vercel)](vercel-ai.md) ⭐ recomendado | 67 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
+| 2 | [Mastra](mastra.md) | 65 | Si buscas esto: framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
+| 3 | **LangGraph.js** (esta ficha) | 60 | Si buscas esto: versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
 
 ## Acceso, coste y equipo
 

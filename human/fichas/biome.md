@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Cadena de herramientas de código abierto (doble licencia MIT o Apache-2.0) mantenida por la comunidad Biome, sucesora de Rome. Muy activa y adoptada en proyectos web.

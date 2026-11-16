@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Docling, librería y CLI de Python que convierte documentos a formatos listos para IA generativa. Nació en IBM Research y hoy está alojada en LF AI & Data (Linux Foundation). Licencia MIT. Es muy activa (~71k estrellas, v2.150.x).
@@ -42,6 +44,19 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.150.1 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/docling-project/docling/blob/main/README.md) · [2](https://docling-project.github.io/docling/integrations/llamaindex/) · [3](https://docling-project.github.io/docling/integrations/haystack/) · [4](https://qdrant.tech/documentation/data-management/docling/) · [5](https://docling-project.github.io/docling/integrations/langchain/)</sub>
+
+## Ver similares
+
+Grupo **Conversión de documentos a Markdown/JSON para IA**: Docling ocupa la posición 1 de 6 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Docling** (esta ficha) ⭐ recomendado | 78 | Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local. |
+| 2 | [MinerU](mineru.md) | 68 | Si procesas PDF científicos o en chino con fórmulas y maquetación compleja. |
+| 3 | [Xberg (antes Kreuzberg)](xberg.md) | 63 | Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario. |
+| 4 | [Marker](marker.md) | 60 | Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional. |
+| 5 | [Apache Tika](tika.md) | 59 | Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado. |
+| 6 | [Unstructured](unstructured.md) | 58 | Si quieres particionar muchos formatos en elementos para pipelines de RAG. |
 
 ## Acceso, coste y equipo
 

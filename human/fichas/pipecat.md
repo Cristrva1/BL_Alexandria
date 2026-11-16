@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Pipecat, framework open source en Python para agentes de voz y multimodales en tiempo real, creado por Daily. Licencia BSD-2-Clause. Es maduro y muy activo (~17k estrellas, v1.16.0).
@@ -43,6 +45,17 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.16.0 (2026-11-12) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pipecat-ai/pipecat/blob/main/README.md) · [2](https://docs.pipecat.ai/getting-started/quickstart)</sub>
+
+## Ver similares
+
+Grupo **Agentes de voz en tiempo real**: Pipecat ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Pipecat** (esta ficha) ⭐ recomendado | 73 | Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables. |
+| 2 | [LiveKit Agents](livekit-agents.md) | 73 | Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada. |
+| 3 | [dograh](dograh.md) | 60 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
+| 4 | [TEN Framework](ten-framework.md) | 43 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
 
 ## Acceso, coste y equipo
 

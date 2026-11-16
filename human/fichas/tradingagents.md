@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 TradingAgents, framework multiagente con LLM para trading financiero, de Tauric Research. Licencia Apache-2.0. Es muy popular (~123k estrellas, v0.7.1) y su README promociona Trading-R1, en acceso anticipado.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de pruebas de carga de código abierto (MIT) mantenida por la comunidad locustio; ofrece Locust Cloud como servicio. Muy madura.
@@ -35,6 +37,15 @@ Se instala con pip (Python 3); se ejecuta desde la CLI o la interfaz web. El paq
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 2.47.0 (2026-10-21) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/locustio/locust/blob/master/README.md) · [2](https://docs.locust.io/en/stable/) · [3](https://github.com/SvenskaSpel/locust-plugins)</sub>
+
+## Ver similares
+
+Grupo **Pruebas de carga**: Locust ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Locust** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real. |
+| 2 | [k6](k6.md) | 70 | Si buscas esto: herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico. |
 
 ## Acceso, coste y equipo
 

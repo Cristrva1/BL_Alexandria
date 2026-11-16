@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Open Interpreter, ahora reescrito en Rust a partir de Codex como agente de programación optimizado para modelos de bajo coste. Licencia Apache-2.0. Tiene ~69k estrellas (rust-v0.0.61); el proyecto Python original sigue como fork comunitario (endolith/open-interpreter).

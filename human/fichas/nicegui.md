@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de interfaz de código abierto (MIT) creado por Zauberzeug, una empresa alemana de robótica. Activo, con paquetes en PyPI, Docker y conda-forge.
@@ -36,6 +38,18 @@ Se instala con pip, uv o Docker. Usa FastAPI y uvicorn en el backend y Vue/Quasa
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v4.0.0 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zauberzeug/nicegui/blob/main/README.md) · [2](https://nicegui.io/documentation) · [3](https://github.com/zauberzeug/nicegui/blob/main/nicegui/elements/table.py)</sub>
+
+## Ver similares
+
+Grupo **Apps web de datos en Python**: NiceGUI ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [streamlit](streamlit.md) ⭐ recomendado | 76 | Si quieres convertir un script de datos en app web con la menor curva. |
+| 2 | [Gradio](gradio.md) | 71 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
+| 3 | [Reflex](reflex.md) | 71 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 4 | **NiceGUI** (esta ficha) | 68 | Si quieres una interfaz web en Python con control fino de componentes. |
+| 5 | [Panel](panel.md) | 55 | Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos. |
 
 ## Acceso, coste y equipo
 

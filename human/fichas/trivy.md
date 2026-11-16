@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Escáner de seguridad de código abierto (Apache-2.0) de Aqua Security. Muy popular y maduro; Aqua ofrece una plataforma comercial aparte.
@@ -44,6 +46,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.76.2 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/aquasecurity/trivy/blob/main/README.md) · [2](https://trivy.dev) · [3](https://github.com/aquasecurity/trivy-mcp)</sub>
+
+## Ver similares
+
+Grupo **Escáneres de vulnerabilidades de contenedores**: Trivy ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Trivy** (esta ficha) ⭐ recomendado | 79 | Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. |
+| 2 | [Grype](grype.md) | 70 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
 
 ## Acceso, coste y equipo
 

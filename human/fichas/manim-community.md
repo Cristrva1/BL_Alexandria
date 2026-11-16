@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Manim Community Edition (ManimCE), fork comunitario de 3b1b/manim para animaciones matemáticas explicativas. Doble licencia MIT (3blue1brown LLC y Manim Community Developers). Es madura y activa (~43k estrellas, v0.22.1).
@@ -35,6 +37,15 @@ Requiere instalar dependencias previas según el sistema (y LaTeX para fórmulas
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.22.1 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ManimCommunity/manim/blob/main/README.md) · [2](https://docs.manim.community/)</sub>
+
+## Ver similares
+
+Grupo **Animaciones matemáticas (Manim)**: manim ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **manim** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. |
+| 2 | [Manim (ManimGL)](manim.md) | 57 | Si buscas esto: motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. |
 
 ## Acceso, coste y equipo
 

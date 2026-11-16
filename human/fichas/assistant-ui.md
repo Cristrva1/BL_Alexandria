@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca open source TypeScript/React (MIT) para construir experiencias de chat con IA de calidad de producción. Es activa (assistant-ui@0.0.135, aún 0.x). Tiene un servicio opcional de pago, Assistant Cloud, para persistencia de hilos, telemetría y archivos.
@@ -35,6 +37,15 @@ Una CLI genera un proyecto Next.js o añade componentes con estilo a uno existen
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada assistant-ui@0.0.135 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/assistant-ui/assistant-ui/blob/main/README.md) · [2](https://www.assistant-ui.com/docs/runtimes/ai-sdk) · [3](https://www.assistant-ui.com/docs/runtimes/langgraph)</sub>
+
+## Ver similares
+
+Grupo **Componentes de chat y copilotos para React**: assistant-ui ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [CopilotKit](copilotkit.md) ⭐ recomendado | 70 | Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
+| 2 | **assistant-ui** (esta ficha) | 62 | Si buscas esto: librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Acceso, coste y equipo
 

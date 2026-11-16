@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Browser Use, agente de navegador open source de browser-use. La librería Python es MIT; la inferencia y los navegadores alojados son de pago. Es muy popular (~121k estrellas, v1.0.6).
@@ -38,6 +40,17 @@ Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta m
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.0.6 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/browser-use/browser-use/blob/main/README.md) · [2](https://docs.browser-use.com/)</sub>
+
+## Ver similares
+
+Grupo **Agentes que navegan la web**: browser-use ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **browser-use** (esta ficha) ⭐ recomendado | 73 | Si quieres el framework Python más usado para que un LLM controle el navegador. |
+| 2 | [Stagehand](stagehand.md) | 61 | Si trabajas en TypeScript y quieres mezclar código Playwright con acciones en lenguaje natural. |
+| 3 | [Skyvern](skyvern.md) | 60 | Si automatizas formularios y flujos repetitivos con visión y no quieres selectores frágiles. |
+| 4 | [Browser Harness](browser-harness.md) | 60 | Si quieres que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión. |
 
 ## Acceso, coste y equipo
 

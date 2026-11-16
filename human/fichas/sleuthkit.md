@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 41/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 TSK: toolkit forense de FS (licencias mixtas).
@@ -32,6 +34,15 @@ Build desde fuente / paquetes.
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada sleuthkit-4.15.0 (2026-04-15) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sleuthkit/sleuthkit#readme) · [2](https://www.sleuthkit.org/sleuthkit/)</sub>
+
+## Ver similares
+
+Grupo **Análisis forense de discos**: The Sleuth Kit ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Autopsy](autopsy.md) ⭐ recomendado | 46 | Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. |
+| 2 | **The Sleuth Kit** (esta ficha) | 41 | Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
 
 ## Acceso, coste y equipo
 

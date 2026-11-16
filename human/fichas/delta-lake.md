@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de almacenamiento abierto Delta Lake (organización delta-io), en Scala con licencia Apache-2.0. Este repositorio contiene el conector de Spark, Delta Kernel, conectores y el protocolo; delta-rs es la implementación nativa en Rust/Python. Versión v4.4.1 (octubre de 2026), activo.
@@ -36,6 +38,16 @@ Registra cada cambio en un log de transacciones (`_delta_log`) definido en PROTO
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.4.1 (2026-10-05) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/delta-io/delta/blob/master/README.md) · [2](https://docs.delta.io/latest/quick-start.html) · [3](https://docs.delta.io/latest/delta-uniform.html) · [4](https://duckdb.org/docs/stable/core_extensions/delta) · [5](https://docs.pola.rs/api/python/stable/reference/api/polars.scan_delta.html)</sub>
+
+## Ver similares
+
+Grupo **Formatos de tabla para data lakes**: Delta Lake ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Delta Lake** (esta ficha) ⭐ recomendado | 63 | Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. |
+| 2 | [Apache Iceberg](apache-iceberg.md) | 62 | Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. |
+| 3 | [hudi](hudi.md) | 51 | Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 
 ## Acceso, coste y equipo
 

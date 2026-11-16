@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 PPT Master, workflow (skill) que genera presentaciones PowerPoint nativas y editables a partir de cualquier documento, de @hugohe3. Licencia MIT. Creado en diciembre de 2025, tiene ~77k estrellas (v6.9.0); el README incluye patrocinios de servicios de reventa de APIs.
@@ -35,6 +37,15 @@ Requiere Python 3.10–3.14 y `pip install -r requirements.txt` (Pandoc opcional
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v6.9.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hugohe3/ppt-master/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Generación de presentaciones con IA**: ppt-master ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **ppt-master** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. |
+| 2 | [Presenton](presenton.md) | 60 | Si buscas esto: generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. |
 
 ## Acceso, coste y equipo
 

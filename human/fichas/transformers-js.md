@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca JavaScript oficial de Hugging Face para ejecutar modelos Transformers directamente en el navegador, sin servidor. Apache 2.0, madura y activa (v4.3.2); funcionalmente equivalente a la biblioteca `transformers` de Python.

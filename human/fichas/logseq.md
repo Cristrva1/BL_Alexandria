@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de conocimiento de código abierto (AGPL-3.0) de Logseq Inc. Muy popular; el equipo trabaja en una versión basada en base de datos que sustituirá al modelo de archivos.
@@ -36,6 +38,17 @@ Escrita en Clojure/ClojureScript; apps para Windows, macOS, Linux, iOS y Android
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 2.0.2 (2026-10-07) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/logseq/logseq/blob/master/README.md) · [2](https://docs.logseq.com/)</sub>
+
+## Ver similares
+
+Grupo **Notas y bases de conocimiento personales**: Logseq ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [SiYuan](siyuan.md) ⭐ recomendado | 76 | Si quieres bloques referenciables y una base de conocimiento local muy completa. |
+| 2 | [Trilium Notes](trilium.md) | 64 | Si quieres jerarquías profundas de notas con scripting y servidor propio. |
+| 3 | **Logseq** (esta ficha) | 59 | Si piensas en esquemas y grafos con notas diarias, local-first. |
+| 4 | [Joplin](joplin.md) | 57 | Si quieres notas Markdown con sincronización cifrada en todos tus dispositivos. |
 
 ## Acceso, coste y equipo
 

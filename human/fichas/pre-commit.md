@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de hooks de git de código abierto (MIT) mantenido por Anthony Sottile y la comunidad pre-commit desde 2014. Muy maduro y ampliamente adoptado.

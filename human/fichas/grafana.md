@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 80/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Grafana, plataforma open source de visualización y observabilidad de Grafana Labs. Licencia AGPL-3.0-only con excepciones Apache-2.0. Es muy madura (~78k estrellas, v13.3.1).

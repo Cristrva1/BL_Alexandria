@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Kit de OCR y motor de IA documental de Baidu sobre PaddlePaddle, Apache 2.0. Muy usado (más de 6.000 repositorios dependientes según su insignia) y activo (v3.7.0, último push en septiembre de 2026).
@@ -36,6 +38,17 @@ Biblioteca Python sobre el framework PaddlePaddle, con modelos publicados en Hug
 Estado en GitHub: activo · último push 2026-09-16 · última versión publicada v3.7.0 (2026-06-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PaddlePaddle/PaddleOCR/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **OCR de documentos**: PaddleOCR ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **PaddleOCR** (esta ficha) ⭐ recomendado | 72 | Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación. |
+| 2 | [Unlimited-OCR](unlimited-ocr.md) | 65 | Si quieres parsear documentos largos de una sola pasada con visión. |
+| 3 | [Tesseract](tesseract.md) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
+| 4 | [olmOCR](olmocr.md) | 53 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
 
 ## Acceso, coste y equipo
 

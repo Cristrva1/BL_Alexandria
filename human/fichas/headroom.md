@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Headroom, capa de compresión de contexto para agentes y LLM de Headroom Labs (paquete `headroom-ai` en PyPI y npm). Licencia Apache-2.0. Es muy activo (~80k estrellas, v0.44.0).
@@ -38,6 +40,15 @@ Se instala con `pip install headroom-ai` (o con extras `[proxy]`/`[all]`) y se u
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.44.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/headroomlabs-ai/headroom/blob/main/README.md) · [2](https://docs.headroomlabs.ai/docs)</sub>
+
+## Ver similares
+
+Grupo **Compactar contexto y tokens**: headroom ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [rtk](rtk.md) ⭐ recomendado | 69 | Si buscas esto: proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. |
+| 2 | **headroom** (esta ficha) | 60 | Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Acceso, coste y equipo
 

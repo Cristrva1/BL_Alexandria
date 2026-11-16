@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Monitor autoalojado de cambios en páginas web (changedetection.io), de @dgtlmoon. Licencia Apache-2.0. Es maduro y activo (~36k estrellas, 0.70.3) y tiene versión alojada de pago.

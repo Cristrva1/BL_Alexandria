@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Implementación abierta (MIT) de un agente general al estilo Manus, creada por miembros de MetaGPT y la comunidad FoundationAgents. Los autores la describen como una implementación sencilla; ritmo de cambios alto y sin versiones estables marcadas.

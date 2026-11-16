@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Colección de modelos preentrenados portados a TensorFlow.js, de Google. Licencia Apache-2.0. Tiene ~15k estrellas y está poco activa (último cambio en junio de 2026).

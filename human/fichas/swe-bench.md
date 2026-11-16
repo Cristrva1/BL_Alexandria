@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SWE-bench, benchmark para evaluar si los modelos resuelven issues reales de GitHub, presentado en ICLR 2024 (oral) y ampliado con SWE-bench Multimodal (ICLR 2025). Licencia MIT. Es estable (~6k estrellas, sin releases) y su último cambio es de septiembre de 2026.

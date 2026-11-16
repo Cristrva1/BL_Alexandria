@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 LiveKit Agents, framework para agentes de voz y vídeo en tiempo real sobre la infraestructura WebRTC de LiveKit. Licencia Apache-2.0; sus modelos de detección de turno usan la «LiveKit Model License». Es activo (~15k estrellas, 1.8.12).
@@ -36,6 +38,17 @@ Se instala con `pip install "livekit-agents[openai,deepgram,cartesia]"` (u otros
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada livekit-agents@1.8.12 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/livekit/agents/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Agentes de voz en tiempo real**: LiveKit Agents ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Pipecat](pipecat.md) ⭐ recomendado | 73 | Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables. |
+| 2 | **LiveKit Agents** (esta ficha) | 73 | Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada. |
+| 3 | [dograh](dograh.md) | 60 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
+| 4 | [TEN Framework](ten-framework.md) | 43 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
 
 ## Acceso, coste y equipo
 

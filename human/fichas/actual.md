@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.
@@ -35,6 +37,15 @@ Escrita en TypeScript sobre Node.js; se despliega en PikaPods, Fly.io, Docker o 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v26.11.0 (2026-11-02) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/actualbudget/actual/blob/master/README.md) · [2](https://actualbudget.org/docs)</sub>
+
+## Ver similares
+
+Grupo **Finanzas personales**: Actual Budget ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Actual Budget** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. |
+| 2 | [Firefly III](firefly-iii.md) | 59 | Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. |
 
 ## Acceso, coste y equipo
 

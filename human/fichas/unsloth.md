@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 82/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Unsloth, app de escritorio y librería para ejecutar y entrenar modelos en local, de unslothai. Tiene licencia dual: el núcleo es Apache-2.0 y componentes opcionales como la UI de Unsloth Studio son AGPL-3.0. Es muy popular (~80k estrellas) y sus releases siguen en beta (v0.1.917-beta).
@@ -44,6 +46,17 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.917-beta (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/unslothai/unsloth/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Fine-tuning de LLM**: Unsloth ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Unsloth** (esta ficha) ⭐ recomendado | 82 | Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU. |
+| 2 | [Axolotl](axolotl.md) | 65 | Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU. |
+| 3 | [LLaMA-Factory](llama-factory.md) | 60 | Si quieres una interfaz web para afinar cientos de modelos sin programar. |
+| 4 | [torchtune](torchtune.md) | 52 | Si prefieres recetas nativas de PyTorch fáciles de modificar. |
 
 ## Acceso, coste y equipo
 

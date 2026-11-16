@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Sistema multimedia de código abierto (GPL-2.0) mantenido por voluntarios desde 2018, cuando nació como fork de Emby. Sin licencias premium ni funciones de pago; muy maduro.

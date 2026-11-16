@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma open source de diseño y prototipado colaborativo (MPL-2.0) para equipos de producto, pensada para autoalojarse. Es madura y activa (2.19.1). Tiene un plan de pago, Penpot Enterprise, para organizaciones.

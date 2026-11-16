@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 MLflow, plataforma open source de ingeniería de IA para agentes, LLM y modelos de ML. Licencia Apache-2.0. Es muy madura (~29k estrellas, v3.18.0) y el README cita más de 60 millones de descargas mensuales.
@@ -44,6 +46,18 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.18.0 (2026-11-04) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mlflow/mlflow/blob/master/README.md) · [2](https://mlflow.org/docs/latest/genai/tracing/integrations/listing/dspy) · [3](https://mlflow.org/docs/latest/ml/deep-learning/transformers/) · [4](https://mlflow.org/docs/latest/genai/eval-monitor/scorers/third-party/deepeval) · [5](https://mlflow.org/docs/latest/genai/eval-monitor/scorers/third-party/ragas)</sub>
+
+## Ver similares
+
+Grupo **Observabilidad y trazas de LLM**: MLflow ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [langfuse](langfuse.md) ⭐ recomendado | 79 | Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande. |
+| 2 | [Opik](opik.md) | 75 | Si quieres trazas y evaluación de LLM con integración en pruebas. |
+| 3 | **MLflow** (esta ficha) | 70 | Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM. |
+| 4 | [Phoenix](phoenix.md) | 53 | Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks. |
+| 5 | [Helicone](helicone.md) | 50 | Si quieres observabilidad como proxy con solo cambiar la URL base. |
 
 ## Acceso, coste y equipo
 

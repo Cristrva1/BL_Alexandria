@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 41/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista curada de kyrolabs con herramientas y productos de código abierto para construir agentes de IA. GitHub no detecta licencia. Activa; ha lanzado una lista hermana, Awesome ADE, sobre entornos de desarrollo agéntico.

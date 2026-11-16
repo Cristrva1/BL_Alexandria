@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Interfaz de nueva generación de Project Jupyter (organización jupyterlab), en TypeScript y Python con licencia BSD-3-Clause. Es el repositorio canónico de la experiencia de notebook de Jupyter; la rama 3 dejó de mantenerse en 2024. Versión v4.6.6 (noviembre de 2026), ~15k estrellas.
@@ -44,6 +46,15 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (12). La lista se
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.6.6 (2026-11-06) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jupyterlab/jupyterlab/blob/main/README.md) · [2](https://jupyterlab.readthedocs.io/en/stable/)</sub>
+
+## Ver similares
+
+Grupo **Notebooks**: JupyterLab ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [marimo](marimo.md) ⭐ recomendado | 76 | Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
+| 2 | **JupyterLab** (esta ficha) | 66 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
 
 ## Acceso, coste y equipo
 

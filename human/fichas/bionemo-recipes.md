@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+**Puntuación de calidad** 37/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 BioNeMo Recipes, recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Licencia Apache-2.0 en LICENSE/license.txt (GitHub no la detecta por la ubicación). Es de nicho (~880 estrellas, v3.0.0).

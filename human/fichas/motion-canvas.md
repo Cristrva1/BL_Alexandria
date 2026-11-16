@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (MIT) orientada a vídeos explicativos. Popular; el desarrollo se ha ralentizado (última versión publicada v3.17.2, diciembre de 2024; último push en julio de 2026).
@@ -35,6 +37,18 @@ Las escenas se escriben como funciones generadoras en TypeScript; el editor corr
 Estado en GitHub: activo · último push 2026-07-02 · última versión publicada v3.17.2 (2024-12-14) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/motion-canvas/motion-canvas/blob/main/README.md) · [2](https://motion-canvas.io/docs/quickstart) · [3](https://github.com/motion-canvas/motion-canvas/tree/main/packages/ffmpeg)</sub>
+
+## Ver similares
+
+Grupo **Video y escenas por código**: Motion Canvas ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [HyperFrames](hyperframes.md) ⭐ recomendado | 73 | Si quieres que un agente componga video desde HTML con HeyGen HyperFrames. |
+| 2 | [remotion](remotion.md) | 68 | Si sabes React y quieres generar videos programáticos con calidad de producción (revisa su licencia). |
+| 3 | **Motion Canvas** (esta ficha) | 56 | Si haces animaciones explicativas en TypeScript con editor en tiempo real. |
+| 4 | [MoviePy](moviepy.md) | 54 | Si editas video desde Python (cortes, composición, texto) sin interfaz. |
+| 5 | [Revideo](revideo.md) | 51 | Si quieres renderizar videos desde código TypeScript como API o servicio. |
 
 ## Acceso, coste y equipo
 

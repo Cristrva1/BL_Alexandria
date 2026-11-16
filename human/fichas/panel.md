@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework de código abierto (BSD-3-Clause) del ecosistema HoloViz, respaldado por Anaconda y otros patrocinadores. Activo y maduro.
@@ -37,6 +39,18 @@ Se instala con pip o conda. Usa Bokeh como servidor y capa de comunicación; la 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.10.0 (2026-10-23) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/holoviz/panel/blob/main/README.md) · [2](https://panel.holoviz.org/reference/panes/DeckGL.html) · [3](https://panel.holoviz.org/reference/panes/ECharts.html) · [4](https://skills.holoviz.org/)</sub>
+
+## Ver similares
+
+Grupo **Apps web de datos en Python**: Panel ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [streamlit](streamlit.md) ⭐ recomendado | 76 | Si quieres convertir un script de datos en app web con la menor curva. |
+| 2 | [Gradio](gradio.md) | 71 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
+| 3 | [Reflex](reflex.md) | 71 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 4 | [NiceGUI](nicegui.md) | 68 | Si quieres una interfaz web en Python con control fino de componentes. |
+| 5 | **Panel** (esta ficha) | 55 | Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos. |
 
 ## Acceso, coste y equipo
 

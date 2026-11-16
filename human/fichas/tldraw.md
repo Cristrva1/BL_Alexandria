@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open source OSI. Los starter kits sí son MIT. Es muy activo (v5.6.0).
@@ -35,6 +37,15 @@ Se instala con `npm i tldraw` o arranca un proyecto con `npx create-tldraw@lates
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v5.6.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tldraw/tldraw/blob/main/README.md) · [2](https://tldraw.dev/docs/sync)</sub>
+
+## Ver similares
+
+Grupo **Pizarras y diagramas a mano alzada**: tldraw ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Excalidraw](excalidraw.md) ⭐ recomendado | 70 | Si buscas esto: pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
+| 2 | **tldraw** (esta ficha) | 55 | Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
 
 ## Acceso, coste y equipo
 

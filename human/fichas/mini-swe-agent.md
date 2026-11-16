@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Agente de código abierto (MIT) de los autores de SWE-bench y SWE-agent (Princeton y Stanford), que lo presentan como sucesor del SWE-agent original. Activo.
@@ -35,6 +37,16 @@ Paquete Python; se ejecuta con `uvx mini-swe-agent` o pip. Usa LiteLLM para los 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v2.4.6 (2026-07-23) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SWE-agent/mini-swe-agent/blob/main/README.md) · [2](https://mini-swe-agent.com/)</sub>
+
+## Ver similares
+
+Grupo **Agentes que resuelven issues de software**: mini-swe-agent ocupa la posición 3 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenHands](openhands.md) ⭐ recomendado | 74 | Si buscas esto: agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
+| 2 | [Open SWE](open-swe.md) | 61 | Si buscas esto: robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
+| 3 | **mini-swe-agent** (esta ficha) | 52 | Si buscas esto: agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Motor 3D de código abierto (Apache-2.0) creado en Microsoft y mantenido con la comunidad. Maduro y activo, con playground, sandbox y foro oficiales.
@@ -35,6 +37,16 @@ Se instala con npm (paquetes UMD o ES6 con tree shaking) o se prueba en el playg
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 9.36.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BabylonJS/Babylon.js/blob/master/readme.md) · [2](https://github.com/BabylonJS/Babylon.js/tree/master/packages/dev/loaders/src/glTF/2.0/Extensions) · [3](https://github.com/BabylonJS/BlenderExporter)</sub>
+
+## Ver similares
+
+Grupo **Motores 3D para la web**: Babylon.js ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [three.js](three-js.md) ⭐ recomendado | 69 | Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
+| 2 | **Babylon.js** (esta ficha) | 67 | Si buscas esto: motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. |
+| 3 | [PlayCanvas Engine](playcanvas.md) | 65 | Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
 
 ## Acceso, coste y equipo
 

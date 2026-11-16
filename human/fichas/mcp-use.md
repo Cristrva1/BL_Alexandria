@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Framework TypeScript para construir, probar y publicar servidores MCP, plugins de ChatGPT y conectores de Claude, de mcp-use. Licencia MIT. Es activo (~11k estrellas, mcp-use@2.12.4).
@@ -36,6 +38,15 @@ Se instala con npm (`mcp-use`) y se crea un proyecto con su CLI; la v2 tiene gu�
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada mcp-use@2.12.4 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mcp-use/mcp-use/blob/main/README.md) · [2](https://docs.mcp-use.com/v2/typescript/getting-started/welcome)</sub>
+
+## Ver similares
+
+Grupo **SDKs de MCP en TypeScript**: mcp-use ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **mcp-use** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
+| 2 | [MCP TypeScript SDK](mcp-typescript-sdk.md) | 60 | Si buscas esto: sDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol. |
 
 ## Acceso, coste y equipo
 

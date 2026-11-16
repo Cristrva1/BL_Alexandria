@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 SDK oficial en Python del Model Context Protocol. Licencia MIT (el proyecto MCP está migrando a Apache-2.0). Es muy usado (~25k estrellas, v2.3.0).
@@ -36,6 +38,15 @@ Se instala con `uv add "mcp[cli]"` o `pip install "mcp[cli]"`; el extra `cli` a�
 Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v2.3.0 (2026-10-02) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md) · [2](https://py.sdk.modelcontextprotocol.io/get-started/)</sub>
+
+## Ver similares
+
+Grupo **SDKs de MCP en Python**: MCP Python SDK ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [FastMCP](fastmcp.md) ⭐ recomendado | 74 | Si buscas esto: la forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
+| 2 | **MCP Python SDK** (esta ficha) | 61 | Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
 
 ## Acceso, coste y equipo
 

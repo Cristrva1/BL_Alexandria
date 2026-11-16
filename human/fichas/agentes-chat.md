@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 agentes.chat, alternativa autoalojada a Slack donde trabajan juntos personas y agentes de IA, de Codari Global, LLC. Licencia AGPL-3.0, con licencia comercial y CLA. Es muy reciente (noviembre de 2026, ~1.5k estrellas) y tiene app de escritorio.

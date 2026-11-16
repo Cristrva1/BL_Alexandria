@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Conjunto de extensiones de OpenTelemetry de código abierto (Apache-2.0) de Traceloop, empresa que ofrece una plataforma comercial. Sus convenciones semánticas se han incorporado a OpenTelemetry. Activo.

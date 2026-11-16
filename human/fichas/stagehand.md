@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Stagehand, SDK para agentes de navegador de Browserbase. Licencia MIT. Es maduro y activo (~26k estrellas, v3.x).
@@ -36,6 +38,17 @@ Disponible para TypeScript (npm) y Python (`pip install stagehand`), más la CLI
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada stagehand-server-v3/v3.7.7 (2026-10-23) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/browserbase/stagehand/blob/main/README.md) · [2](https://docs.stagehand.dev/)</sub>
+
+## Ver similares
+
+Grupo **Agentes que navegan la web**: Stagehand ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [browser-use](browser-use.md) ⭐ recomendado | 73 | Si quieres el framework Python más usado para que un LLM controle el navegador. |
+| 2 | **Stagehand** (esta ficha) | 61 | Si trabajas en TypeScript y quieres mezclar código Playwright con acciones en lenguaje natural. |
+| 3 | [Skyvern](skyvern.md) | 60 | Si automatizas formularios y flujos repetitivos con visión y no quieres selectores frágiles. |
+| 4 | [Browser Harness](browser-harness.md) | 60 | Si quieres que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión. |
 
 ## Acceso, coste y equipo
 

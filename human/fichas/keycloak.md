@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 IdP Apache-2.0 de Keycloak.
@@ -32,6 +34,15 @@ Contenedor / Operator / distro.
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 26.8.2 (2026-11-05) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/keycloak/keycloak#readme) · [2](https://www.keycloak.org)</sub>
+
+## Ver similares
+
+Grupo **Proveedores de identidad y SSO**: Keycloak ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Keycloak** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. |
+| 2 | [authentik](authentik.md) | 64 | Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. |
 
 ## Acceso, coste y equipo
 

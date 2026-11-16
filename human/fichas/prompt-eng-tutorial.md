@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 38/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con Claude. El repositorio no tiene archivo de licencia, así que no hay permiso explícito de reutilización. Último push en agosto de 2026; los ejemplos usan Claude 3 Haiku, un modelo ya antiguo.
@@ -35,6 +37,15 @@ Notebooks Jupyter en dos versiones: API de Anthropic (carpeta 'Anthropic 1P') y 
 Estado en GitHub: activo · último push 2026-08-28 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Guías de ingeniería de prompts**: Anthropic's Prompt Engineering Tutorial ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Prompt Engineering Guide](prompt-engineering-guide.md) ⭐ recomendado | 62 | Si buscas esto: guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
+| 2 | **Anthropic's Prompt Engineering Tutorial** (esta ficha) | 38 | Si buscas esto: tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
 
 ## Acceso, coste y equipo
 

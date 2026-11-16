@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Servidor de control de código abierto (BSD-3-Clause) mantenido por la comunidad (Juan Font, Kristoffer Dalby y otros). Maduro; alcance deliberadamente acotado a una sola tailnet para uso personal o pequeñas organizaciones.
@@ -35,6 +37,15 @@ Escrito en Go; se instala con paquetes, binario o contenedor y se configura con 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.29.7 (2026-10-30) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/juanfont/headscale/blob/main/README.md) · [2](https://headscale.net/stable/ref/integration/reverse-proxy/) · [3](https://headscale.net/stable/ref/configuration/)</sub>
+
+## Ver similares
+
+Grupo **Redes privadas tipo mesh (WireGuard)**: Headscale ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Headscale** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. |
+| 2 | [NetBird](netbird.md) | 63 | Si buscas esto: red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. |
 
 ## Acceso, coste y equipo
 

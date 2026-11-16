@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de código abierto (BSD-3-Clause) del proyecto pandas, patrocinado fiscalmente por NumFOCUS. Es la referencia de facto para el análisis de datos tabulares en Python y la base sobre la que se apoyan muchas otras herramientas. Muy activa.
@@ -44,6 +46,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.1.1 (2026-11-04) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pandas-dev/pandas/blob/main/README.md) · [2](https://pandas.pydata.org/docs/user_guide/pyarrow.html) · [3](https://duckdb.org/docs/stable/guides/python/sql_on_pandas)</sub>
+
+## Ver similares
+
+Grupo **Procesamiento de datos tabulares**: pandas ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **pandas** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
+| 2 | [DuckDB](duckdb.md) | 68 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| 3 | [Polars](polars.md) | 67 | Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Acceso, coste y equipo
 

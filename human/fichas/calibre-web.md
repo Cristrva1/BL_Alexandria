@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 45/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación de código abierto (GPL-3.0) de janeczku, fork del proyecto library de mutschler. Madura y activa; requiere una base de datos de Calibre válida.
@@ -35,6 +37,15 @@ Escrito en Python; se instala con `pip install calibreweb` (Python 3.7+) o con i
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 0.6.27 (2026-08-08) · licencia declarada GPL-3.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/janeczku/calibre-web/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Bibliotecas de libros y cómics**: Calibre-Web ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Kavita](kavita.md) ⭐ recomendado | 57 | Si buscas esto: servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos. |
+| 2 | **Calibre-Web** (esta ficha) | 45 | Si buscas esto: aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador. |
 
 ## Acceso, coste y equipo
 

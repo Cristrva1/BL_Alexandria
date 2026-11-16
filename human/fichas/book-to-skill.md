@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Skill de virgiliojr94 (MIT) que convierte libros técnicos, carpetas de documentos o colecciones de fuentes en una skill de agente unificada. Activa (v1.4.0).

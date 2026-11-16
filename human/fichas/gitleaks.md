@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de detección de secretos de código abierto (MIT) creada por Zachary Rice. Muy usada; el README indica que está completa en funciones y que las versiones futuras serán solo parches de seguridad, mientras el autor se centra en Betterleaks.
@@ -35,6 +37,15 @@ Escrito en Go; se instala con Homebrew, Docker, Go o binarios. Se usa como CLI, 
 Estado en GitHub: activo · último push 2026-10-28 · última versión publicada v8.30.1 (2026-03-21) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/gitleaks/gitleaks/blob/master/README.md) · [2](https://github.com/betterleaks/betterleaks)</sub>
+
+## Ver similares
+
+Grupo **Detección de secretos en repos**: Gitleaks ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Gitleaks** (esta ficha) ⭐ recomendado | 61 | Si buscas esto: detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. |
+| 2 | [TruffleHog](trufflehog.md) | 60 | Si buscas esto: busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. |
 
 ## Acceso, coste y equipo
 

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Biblioteca de patrones (MIT) de Cobus Greyling para operar agentes de programación alrededor de un repositorio mediante 'bucles' en lugar de prompts sueltos. Es activa (v1.6.0) y reciente.

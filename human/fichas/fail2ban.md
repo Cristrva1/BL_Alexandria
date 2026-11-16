@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Ban automático por logs (GPL según COPYING; API NOASSERTION).
@@ -31,6 +33,15 @@ Paquete / source.
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.1.1 (2026-08-15) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/fail2ban/fail2ban#readme) · [2](http://www.fail2ban.org)</sub>
+
+## Ver similares
+
+Grupo **Bloqueo de IP por comportamiento**: Fail2ban ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [CrowdSec](crowdsec.md) ⭐ recomendado | 75 | Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. |
+| 2 | **Fail2ban** (esta ficha) | 61 | Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
 
 ## Acceso, coste y equipo
 

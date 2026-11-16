@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Cliente de escritorio de Anytype, una base de conocimiento local-first, P2P y cifrada de extremo a extremo, de Any, una asociación suiza (organización anyproto). Su licencia es la Any Source Available License 1.0, que no es OSI (GitHub muestra NOASSERTION). Sigue en alfa (v0.57.8-alpha), aunque ya tiene ~9k estrellas.
@@ -35,6 +37,15 @@ Es una app Electron con TypeScript para macOS, Windows y Linux; el núcleo (anyt
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v0.57.8-alpha (2026-11-10) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anyproto/anytype-ts/blob/develop/README.md) · [2](https://github.com/anyproto/anytype-mcp) · [3](https://github.com/anyproto/anytype-ts/blob/main/LICENSE.md)</sub>
+
+## Ver similares
+
+Grupo **Espacios de trabajo local-first tipo Notion**: Anytype Desktop ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [AppFlowy](appflowy.md) ⭐ recomendado | 64 | Si buscas esto: espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. |
+| 2 | **Anytype Desktop** (esta ficha) | 48 | Si buscas esto: cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. |
 
 ## Acceso, coste y equipo
 

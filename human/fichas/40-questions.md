@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 28/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Lista de 40 preguntas para hacerse cada año y cada década, con revisiones y traducciones, mantenida por @kepano. El repo no tiene archivo de licencia. Es pequeño (~2k estrellas) y no es software.

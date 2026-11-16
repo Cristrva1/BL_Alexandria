@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Dograh AI, plataforma open source y autoalojable para construir agentes de voz, alternativa a Vapi y Retell. Licencia BSD-2-Clause. Tiene ~6k estrellas y es activa (dograh-v1.51.0).
@@ -35,6 +37,17 @@ Se autoaloja con un comando Docker. Por defecto el quickstart abre un túnel pú
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada dograh-v1.51.0 (2026-11-04) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dograh-hq/dograh/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Agentes de voz en tiempo real**: dograh ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Pipecat](pipecat.md) ⭐ recomendado | 73 | Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables. |
+| 2 | [LiveKit Agents](livekit-agents.md) | 73 | Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada. |
+| 3 | **dograh** (esta ficha) | 60 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
+| 4 | [TEN Framework](ten-framework.md) | 43 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
 
 ## Acceso, coste y equipo
 

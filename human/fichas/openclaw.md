@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+**Puntuación de calidad** 82/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 OpenClaw, asistente de IA personal open source que corre en tu equipo y atiende en tus canales de chat. Licencia MIT. Lo desarrolla la OpenClaw Foundation, una organización 501(c)(3) independiente, y es el repo con más estrellas del catálogo (~395k).
@@ -42,6 +44,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2026.11.4 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openclaw/openclaw/blob/main/README.md) · [2](https://docs.openclaw.ai/install)</sub>
+
+## Ver similares
+
+Grupo **Asistentes personales autónomos**: OpenClaw ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **OpenClaw** (esta ficha) ⭐ recomendado | 82 | Si buscas esto: asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
+| 2 | [hermes-agent](hermes-agent.md) | 74 | Si buscas esto: asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
+| 3 | [Mercury Agent](mercury-agent.md) | 49 | Si buscas esto: agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 
 ## Acceso, coste y equipo
 

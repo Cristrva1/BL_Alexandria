@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plataforma de red de código abierto de NetBird GmbH. El repositorio es BSD-3-Clause salvo management/, signal/ y relay/, que son AGPL-3.0. Muy activa, con nube de pago.
@@ -35,6 +37,15 @@ Escrito en Go; el cliente se instala en Linux, Windows, macOS, Android e iOS. El
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.83.1 (2026-11-13) · licencia declarada NOASSERTION (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/netbirdio/netbird/blob/main/README.md) · [2](https://docs.netbird.io/)</sub>
+
+## Ver similares
+
+Grupo **Redes privadas tipo mesh (WireGuard)**: NetBird ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [Headscale](headscale.md) ⭐ recomendado | 69 | Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. |
+| 2 | **NetBird** (esta ficha) | 63 | Si buscas esto: red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. |
 
 ## Acceso, coste y equipo
 

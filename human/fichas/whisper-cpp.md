@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 whisper.cpp, implementación en C/C++ sin dependencias del modelo de reconocimiento de voz Whisper de OpenAI, de ggml-org. Licencia MIT. Es muy madura (~55k estrellas, v1.9.5).
@@ -44,6 +46,16 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.9.5 (2026-10-06) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ggml-org/whisper.cpp/blob/master/README.md)</sub>
+
+## Ver similares
+
+Grupo **Transcripción con Whisper**: whisper.cpp ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **whisper.cpp** (esta ficha) ⭐ recomendado | 73 | Si buscas esto: port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
+| 2 | [faster-whisper](faster-whisper.md) | 70 | Si buscas esto: runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
+| 3 | [whisper](whisper.md) | 67 | Si buscas esto: modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
 
 ## Acceso, coste y equipo
 

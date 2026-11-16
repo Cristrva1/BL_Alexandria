@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aplicación «leer más tarde» de código abierto (MIT) mantenida por la comunidad wallabag desde 2013. Madura, con apps oficiales para Android e iOS y servicio alojado (wallabag.it) aparte.

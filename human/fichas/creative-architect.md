@@ -10,6 +10,8 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 41/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Plugin para Claude Code (MIT) de Hainrixz, documentado en español, que actúa como director de arte y productor de imagen y video con IA. Muy nuevo y con poca adopción (v1.0.1, 24 estrellas).

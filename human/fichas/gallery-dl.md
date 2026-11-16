@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Herramienta de línea de comandos de código abierto (GPL-2.0) creada por Mike Fährmann y mantenida durante años. El README anuncia que el desarrollo activo se ha trasladado a Codeberg; GitHub sigue recibiendo cambios.

@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Umami, plataforma open source de analítica web y de producto centrada en la privacidad, de Umami Software. Licencia MIT. Es madura (~40k estrellas, v3.5.0).
@@ -35,6 +37,16 @@ Es una app Next.js que requiere Node.js 20.19+ (22 LTS recomendado) y PostgreSQL
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.5.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/umami-software/umami/blob/master/README.md) · [2](https://umami.is/docs) · [3](https://umami.is/docs/api) · [4](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/umami)</sub>
+
+## Ver similares
+
+Grupo **Analítica web auto-hospedada**: Umami ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Umami** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
+| 2 | [Plausible Analytics](plausible.md) | 59 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
+| 3 | [Matomo](matomo.md) | 57 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
 
 ## Acceso, coste y equipo
 

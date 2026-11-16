@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Robin (repo open-swe), «fábrica de software» open source de LangChain construida sobre Deep Agents. El código propio es MIT y `vendor/` no está cubierto. Tiene ~11k estrellas (desktop-v0.3.18), está en desarrollo activo con cambios incompatibles y no acepta contribuciones externas.
@@ -35,6 +37,16 @@ Desplegarlo tal cual requiere Managed Deep Agents de LangSmith; las herramientas
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada desktop-v0.3.18 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langchain-ai/open-swe/blob/main/README.md)</sub>
+
+## Ver similares
+
+Grupo **Agentes que resuelven issues de software**: Open SWE ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [OpenHands](openhands.md) ⭐ recomendado | 74 | Si buscas esto: agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
+| 2 | **Open SWE** (esta ficha) | 61 | Si buscas esto: robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
+| 3 | [mini-swe-agent](mini-swe-agent.md) | 52 | Si buscas esto: agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench. |
 
 ## Acceso, coste y equipo
 

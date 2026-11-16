@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** hard
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Modelo de investigación de código abierto del proyecto Multimodal Art Projection (M-A-P). Desde septiembre de 2026 el repositorio aloja YuE2; el YuE original se conserva en la rama YuE-v1. Código, skill y documentación son Apache-2.0; los pesos son CC BY-NC 4.0 con permiso adicional de los creadores.
@@ -35,6 +37,16 @@ Un backbone AR–NAR Mixture-of-Transformers predice partitura y tokens semánti
 Estado en GitHub: activo · último push 2026-11-01 · última versión publicada yue2-v0.1.6 (2026-09-09) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/multimodal-art-projection/YuE/blob/main/README.md) · [2](https://github.com/multimodal-art-projection/YuE/blob/main/MODEL_LICENSE)</sub>
+
+## Ver similares
+
+Grupo **Generación de música**: YuE2 ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [ACE-Step-1.5](ace-step-1-5.md) ⭐ recomendado | 70 | Si buscas esto: modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
+| 2 | **YuE2** (esta ficha) | 67 | Si buscas esto: modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes. |
+| 3 | [AudioCraft](audiocraft.md) | 54 | Si buscas esto: librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. |
 
 ## Acceso, coste y equipo
 

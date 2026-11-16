@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Capa de API de código abierto (Apache 2.0) de Zylon que convierte modelos locales en aplicaciones de IA para producción; es la base de la plataforma on-premise Zylon. Versión 1.0.1 publicada en 2026.
@@ -35,6 +37,16 @@ No ejecuta modelos: se conecta a cualquier servidor compatible con OpenAI que im
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.0.1 (2026-06-18) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zylon-ai/private-gpt/blob/main/README.md) · [2](https://docs.privategpt.dev/getting-started/quickstart)</sub>
+
+## Ver similares
+
+Grupo **Workspaces privados con documentos y chat**: PrivateGPT ocupa la posición 2 de 3 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | [AnythingLLM](anything-llm.md) ⭐ recomendado | 78 | Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
+| 2 | **PrivateGPT** (esta ficha) | 67 | Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
+| 3 | [Khoj](khoj.md) | 48 | Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
 
 ## Acceso, coste y equipo
 

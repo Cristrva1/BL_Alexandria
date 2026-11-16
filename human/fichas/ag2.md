@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 AG2 (Apache 2.0), «AgentOS de código abierto» surgido de AutoGen y mantenido por un grupo de voluntarios de varias organizaciones (administradores: Chi Wang y Qingyun Wu). Desde la v1.0 (actual v1.3.2) el paquete `ag2` es un framework nuevo orientado a protocolos; el clásico (`import autogen`, ConversableAgent, GroupChat) se trasladó a ag2ai/ag2-classic.

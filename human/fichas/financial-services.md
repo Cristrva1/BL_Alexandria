@@ -10,6 +10,8 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Repositorio oficial de Anthropic (Apache 2.0) con agentes de referencia, skills y conectores de datos para servicios financieros. Activo, sin releases; advierte que nada en él es asesoría financiera, legal o fiscal.

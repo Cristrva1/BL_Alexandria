@@ -10,6 +10,8 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Red y servidor de feeds RSS de código abierto (AGPL-3.0) creado por DIYgod y mantenido por una comunidad amplia. Muy usado (más de 5.000 instancias según el proyecto) y en desarrollo continuo.
