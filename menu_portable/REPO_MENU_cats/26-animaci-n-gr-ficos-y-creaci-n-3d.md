@@ -62,6 +62,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida
 **Qué comprobar:** Puedes explicar cuál se ajusta al objeto que quieres diseñar
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `blender`, `three.js`, `filament`
 
 ## `blender`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=creacion-3d,app,c
@@ -121,6 +122,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un modelo de muestra y cambia iluminación o material para observar la respuesta
 **Qué comprobar:** Puedes distinguir geometría, material y entorno
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `meshoptimizer`, `blender`, `ozz-animation`
 
 ## `gsap`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
@@ -181,6 +183,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Optimiza una malla de prueba y compara número de vértices, tamaño y apariencia
 **Qué comprobar:** Puedes medir una reducción y detectar si cambia demasiado el detalle
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `filament`, `blender`
 
 ## `motion`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,design,typescript
@@ -242,6 +245,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta una muestra de reproducción y cambia el tiempo de una animación esquelética
 **Qué comprobar:** Puedes identificar esqueleto, clip y pose
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `filament`, `blender`, `meshoptimizer`
 
 ## `pencil`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=edicion,app,c
@@ -271,6 +275,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Dibuja tres fotogramas sencillos, ajusta su duración y reproduce el movimiento
 **Qué comprobar:** Puedes guardar el proyecto y exportar una animación corta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `blender`, `pixelfx`
 
 ## `pixelfx`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
@@ -300,6 +305,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un efecto existente y cambia tamaño o paleta antes de pedir generar uno nuevo
 **Qué comprobar:** Puedes inspeccionar frames y exportar una muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `threejs-game-skills`, `planck-js`
 
 ## `planck-js`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
@@ -329,6 +335,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una demo de un cuerpo que cae y modifica gravedad o rebote
 **Qué comprobar:** Puedes observar colisión y estado del cuerpo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pixelfx`, `threejs-game-skills`, `dsh-game-studio`
 
 ## `react-three-fiber`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,typescript
@@ -388,6 +395,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un cuerpo y un suelo con debug visible y comprueba la colisión
 **Qué comprobar:** Puedes relacionar collider, geometría y movimiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `react-three-fiber`, `three.js`, `threejs-game-skills`
 
 ## `regl`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
@@ -417,6 +425,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja un triángulo de ejemplo y cambia una propiedad del comando de render
 **Qué comprobar:** Puedes identificar buffers, shader y llamada de dibujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `webgl-noise`, `three.js`, `meshoptimizer`
 
 ## `scenejs`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
@@ -446,6 +455,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una animación con dos keyframes y cambia su progreso desde un control
 **Qué comprobar:** Puedes identificar tiempo, propiedad y valor final
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `motion-design-skill`, `remotion`, `zdog`
 
 ## `three.js`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
@@ -565,3 +575,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente
 **Qué comprobar:** Puedes reconocer las formas y su orden
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `animejs`, `gsap`, `three.js`

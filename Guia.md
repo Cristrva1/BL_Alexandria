@@ -5656,6 +5656,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/metafizzy/zdog/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Anime.js](human/fichas/animejs.md) · [GSAP](human/fichas/gsap.md) · [three.js](human/fichas/three-js.md)<br>
 **Más:** [ficha completa](human/fichas/zdog.md) · [GitHub](https://github.com/metafizzy/zdog)
 
 #### 📚 pixelfx
@@ -5664,6 +5665,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/patch-gg/pixelfx/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir un efecto a un juego; Preparar una hoja de sprites — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [threejs-game-skills](human/fichas/threejs-game-skills.md) · [planck.js](human/fichas/planck-js.md)<br>
 **Más:** [ficha completa](human/fichas/pixelfx.md) · [GitHub](https://github.com/patch-gg/pixelfx)
 
 #### 📚 regl
@@ -5672,6 +5674,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm i -S regl` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar visualización acelerada; Aprender render funcional — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [webgl-noise](human/fichas/webgl-noise.md) · [three.js](human/fichas/three-js.md) · [meshoptimizer](human/fichas/meshoptimizer.md)<br>
 **Más:** [ficha completa](human/fichas/regl.md) · [GitHub](https://github.com/regl-project/regl)
 
 #### 📚 webgl-noise
@@ -5689,6 +5692,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install scenejs` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una animación de interfaz; Explorar una línea de tiempo web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [motion-design-skill](human/fichas/motion-design-skill.md) · [remotion](human/fichas/remotion.md) · [zdog](human/fichas/zdog.md)<br>
 **Más:** [ficha completa](human/fichas/scenejs.md) · [GitHub](https://github.com/daybrush/scenejs)
 
 #### 🖥️ pencil
@@ -5697,6 +5701,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://www.pencil2d.org/download/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender animación dibujada a mano; Crear una prueba de movimiento 2D — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [blender](human/fichas/blender.md) · [pixelfx](human/fichas/pixelfx.md)<br>
 **Más:** [ficha completa](human/fichas/pencil.md) · [GitHub](https://github.com/pencil2d/pencil)
 
 ### Creación, renderizado y animación 3D
@@ -5716,6 +5721,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/google/filament/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Integrar un visor 3D móvil; Estudiar render físicamente basado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [meshoptimizer](human/fichas/meshoptimizer.md) · [blender](human/fichas/blender.md) · [ozz-animation](human/fichas/ozz-animation.md)<br>
 **Más:** [ficha completa](human/fichas/filament.md) · [GitHub](https://github.com/google/filament)
 
 #### 📚 meshoptimizer
@@ -5724,6 +5730,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `git clone -b v1.3 https://github.com/zeux/meshoptimizer.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [filament](human/fichas/filament.md) · [blender](human/fichas/blender.md)<br>
 **Más:** [ficha completa](human/fichas/meshoptimizer.md) · [GitHub](https://github.com/zeux/meshoptimizer)
 
 #### 📚 ozz-animation
@@ -5732,6 +5739,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reproducir animaciones de personajes; Combinar clips en un motor propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [filament](human/fichas/filament.md) · [blender](human/fichas/blender.md) · [meshoptimizer](human/fichas/meshoptimizer.md)<br>
 **Más:** [ficha completa](human/fichas/ozz-animation.md) · [GitHub](https://github.com/guillaumeblanc/ozz-animation)
 
 #### 📂 awesome-cad
@@ -5740,6 +5748,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/mlightcad/awesome-cad/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar software CAD; Comparar bibliotecas de geometría — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [filament](human/fichas/filament.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-cad.md) · [GitHub](https://github.com/mlightcad/awesome-cad)
 
 ### Física y simulación
@@ -5759,6 +5768,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://piqnt.com/planck.js/docs/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar física de un juego 2D; Explicar gravedad con una simulación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [pixelfx](human/fichas/pixelfx.md) · [threejs-game-skills](human/fichas/threejs-game-skills.md) · [dsh-game-studio](human/fichas/dsh-game-studio.md)<br>
 **Más:** [ficha completa](human/fichas/planck-js.md) · [GitHub](https://github.com/piqnt/planck.js)
 
 #### 📚 react-three-rapier
@@ -5767,6 +5777,7 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/pmndrs/react-three-rapier/blob/main/readme.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una escena física React; Prototipar interacción con objetos 3D — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [react-three-fiber](human/fichas/react-three-fiber.md) · [three.js](human/fichas/three-js.md) · [threejs-game-skills](human/fichas/threejs-game-skills.md)<br>
 **Más:** [ficha completa](human/fichas/react-three-rapier.md) · [GitHub](https://github.com/pmndrs/react-three-rapier)
 
 ---
@@ -6179,7 +6190,7 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `git clone --depth 1 https://github.com/hacksider/Deep-Live-Cam.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [face_recognition](human/fichas/face-recognition.md)<br>
+**Combina con:** [InsightFace](human/fichas/insightface.md) · [OBS Studio](human/fichas/obs-studio.md) · [CodeFormer](human/fichas/codeformer.md)<br>
 **Más:** [ficha completa](human/fichas/deep-live-cam.md) · [GitHub](https://github.com/hacksider/Deep-Live-Cam)
 
 #### 👤 face_recognition
@@ -6188,7 +6199,7 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip3 install face_recognition` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Deep-Live-Cam](human/fichas/deep-live-cam.md)<br>
+**Combina con:** [OpenCV](human/fichas/opencv.md) · [supervision](human/fichas/supervision.md) · [mediapipe](human/fichas/mediapipe.md)<br>
 **Más:** [ficha completa](human/fichas/face-recognition.md) · [GitHub](https://github.com/ageitgey/face_recognition)
 
 #### 🙂 FaceFusion
@@ -6197,7 +6208,7 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.facefusion.io/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FFmpeg](human/fichas/ffmpeg.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [InsightFace](human/fichas/insightface.md) · [Real-ESRGAN](human/fichas/real-esrgan.md)<br>
 **Más:** [ficha completa](human/fichas/facefusion.md) · [GitHub](https://github.com/facefusion/facefusion)
 
 #### 🙂 InsightFace

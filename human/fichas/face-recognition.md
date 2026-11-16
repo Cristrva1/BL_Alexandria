@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+face_recognition, librería Python de reconocimiento facial sobre dlib, de @ageitgey. Licencia MIT. Tiene ~57k estrellas, pero su última release es v1.2.2 (abril de 2018) y el README aún menciona Python 2.7/3.3: está prácticamente sin mantenimiento.
+
+## ¿Qué hace?
+
+Detecta rostros, localiza rasgos faciales y compara caras con una API de alto nivel y una CLI (`face_recognition`, `face_detection`). Trae ejemplos con webcam vía OpenCV.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install face_recognition`, lo que requiere compilar dlib (con CMake y un compilador). En Windows no está soportado oficialmente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenCV](opencv.md) | Captura de vídeo y dibujo en los ejemplos. | Instala `opencv-python`. |
+| [supervision](supervision.md) | Anotar y rastrear detecciones. (combinación por arquitectura) | Convierte las cajas a Detections. |
+| [mediapipe](mediapipe.md) | Detección facial moderna y más ligera. (combinación por arquitectura) | Compara antes de adoptar. |
+
+**Notas:** Alternativas (elige una): insightface. Se quita deep-live-cam de las combinaciones. Considera insightface o mediapipe para proyectos nuevos.
+
+Estado en GitHub: activo · último push 2026-06-25 · última versión publicada v1.2.2 (2018-04-02) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ageitgey/face_recognition/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación |
 | Coste | Sin pago a un modelo en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo |
 | Equipo | Preparación según la ruta elegida. Python; dlib y CMake según sistema; fotos propias autorizadas |
-
-Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
-
-## Qué puedes hacer con él
-
-Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio.
-
-## Cómo funciona
 
 Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dlib y CMake según sistema; fotos propias autorizadas
 - **Etiquetas:** `image` `vision` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Deep-Live-Cam](deep-live-cam.md) | 98.1k | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 
 ## Alternativas (elige una)
 

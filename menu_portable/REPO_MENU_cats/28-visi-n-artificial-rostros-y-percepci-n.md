@@ -63,7 +63,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba con imágenes propias o autorizadas y revisa artefactos en una salida corta etiquetada como sintética
 **Qué comprobar:** Puedes comparar original y resultado y reconocer errores visibles
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `face-recognition`
+**Combina con:** `insightface`, `obs-studio`, `codeformer`
 **Alternativas (elige una):** `facefusion`
 
 ## `easymocap`
@@ -123,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Localiza rostros en una imagen de prueba y revisa las cajas antes de comparar identidades
 **Qué comprobar:** Puedes comprobar qué región detectó el modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `deep-live-cam`
+**Combina con:** `opencv`, `supervision`, `mediapipe`
 **Alternativas (elige una):** `insightface`
 
 ## `facefusion`
@@ -154,7 +154,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Procesa una imagen de prueba y revisa bordes, color y artefactos antes de pasar a video
 **Qué comprobar:** Puedes identificar modelo y limitaciones de la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`
+**Combina con:** `ffmpeg`, `insightface`, `real-esrgan`
 **Alternativas (elige una):** `deep-live-cam`
 
 ## `insightface`

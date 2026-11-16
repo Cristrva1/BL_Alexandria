@@ -49284,7 +49284,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible",
    "combines_with": [
-    "face-recognition"
+    "insightface",
+    "obs-studio",
+    "codeformer"
    ],
    "alternatives": [
     "facefusion"
@@ -49383,7 +49385,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Deep-Live-Cam, herramienta de intercambio de rostros (face swap) y deepfake en tiempo real a partir de una sola imagen, de @hacksider. Licencia AGPL-3.0. Tiene ~98k estrellas y versión 2.8, y vende una versión precompilada «Ultimate» (quickstart) en deeplivecam.net.",
+   "que_hace": "Sustituye rostros en webcam o vídeo en tiempo real con un clic. El README incluye un descargo ético y un filtro integrado contra contenido inapropiado, y pide consentimiento y etiquetar los deepfakes.",
+   "como_lo_hace": "La instalación manual requiere conocimientos técnicos: Python (el README menciona 3.14), `pip install -r requirements.txt` y descargar los modelos ONNX `inswapper_128_fp16` y `gfpgan-1024` de Hugging Face. Soporta CUDA, CoreML (Apple Silicon) y otros proveedores de ONNX Runtime.",
+   "combina_con": [
+    {
+     "id": "insightface",
+     "motivo": "Modelo de intercambio (inswapper) y análisis facial.",
+     "orden_instalacion": "Viene como dependencia."
+    },
+    {
+     "id": "obs-studio",
+     "motivo": "Emitir la cámara virtual. (combinación por arquitectura)",
+     "orden_instalacion": "Captura la salida en OBS."
+    },
+    {
+     "id": "codeformer",
+     "motivo": "Restaurar rostros en vídeo procesado offline. (combinación por arquitectura)",
+     "orden_instalacion": "Aplica sobre los fotogramas."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación); se quita face-recognition de las combinaciones (sin integración documentada).",
+   "descripcion_fuentes": [
+    "https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "hacksider/Deep-Live-Cam",
+    "archived": false,
+    "pushed_at": "2026-11-08",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "2.8 (2026-10-22)",
+    "checked_at": "2026-11-15"
+   }
   },
   "face-recognition": {
    "name": "face_recognition",
@@ -49403,7 +49444,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación",
    "combines_with": [
-    "deep-live-cam"
+    "opencv",
+    "supervision",
+    "mediapipe"
    ],
    "alternatives": [
     "insightface"
@@ -49500,7 +49543,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "face_recognition, librería Python de reconocimiento facial sobre dlib, de @ageitgey. Licencia MIT. Tiene ~57k estrellas, pero su última release es v1.2.2 (abril de 2018) y el README aún menciona Python 2.7/3.3: está prácticamente sin mantenimiento.",
+   "que_hace": "Detecta rostros, localiza rasgos faciales y compara caras con una API de alto nivel y una CLI (`face_recognition`, `face_detection`). Trae ejemplos con webcam vía OpenCV.",
+   "como_lo_hace": "Se instala con `pip install face_recognition`, lo que requiere compilar dlib (con CMake y un compilador). En Windows no está soportado oficialmente.",
+   "combina_con": [
+    {
+     "id": "opencv",
+     "motivo": "Captura de vídeo y dibujo en los ejemplos.",
+     "orden_instalacion": "Instala `opencv-python`."
+    },
+    {
+     "id": "supervision",
+     "motivo": "Anotar y rastrear detecciones. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte las cajas a Detections."
+    },
+    {
+     "id": "mediapipe",
+     "motivo": "Detección facial moderna y más ligera. (combinación por arquitectura)",
+     "orden_instalacion": "Compara antes de adoptar."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): insightface. Se quita deep-live-cam de las combinaciones. Considera insightface o mediapipe para proyectos nuevos.",
+   "descripcion_fuentes": [
+    "https://github.com/ageitgey/face_recognition/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ageitgey/face_recognition",
+    "archived": false,
+    "pushed_at": "2026-06-25",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.2.2 (2018-04-02)",
+    "checked_at": "2026-11-15"
+   }
   },
   "facefusion": {
    "name": "FaceFusion",
@@ -49520,7 +49602,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La instalación desde fuente requiere conocimientos técnicos; no debe presentarse la disponibilidad del código como permiso comercial de todos los pesos",
    "combines_with": [
-    "ffmpeg"
+    "ffmpeg",
+    "insightface",
+    "real-esrgan"
    ],
    "alternatives": [
     "deep-live-cam"
@@ -49616,7 +49700,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "FaceFusion, plataforma de manipulación facial (intercambio y mejora de rostros) para imágenes y vídeo. Licencia OpenRAIL-AS (GitHub muestra NOASSERTION). Tiene ~31k estrellas y está activa (3.9.2).",
+   "que_hace": "Intercambia rostros, mejora caras y fotogramas, sincroniza labios y aplica otros procesadores mediante UI o CLI (`python facefusion.py [commands]`). Incluye controles de contenido.",
+   "como_lo_hace": "La instalación requiere conocimientos técnicos según el propio README (docs.facefusion.io) y usa Python, ONNX Runtime con aceleración CUDA, ROCm, CoreML u OpenVINO, y FFmpeg.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesamiento de vídeo.",
+     "orden_instalacion": "Instala FFmpeg en el sistema."
+    },
+    {
+     "id": "insightface",
+     "motivo": "Modelos de análisis facial del ecosistema. (combinación por arquitectura)",
+     "orden_instalacion": "Usados en los procesadores."
+    },
+    {
+     "id": "real-esrgan",
+     "motivo": "Escalar fotogramas tras el procesado. (combinación por arquitectura)",
+     "orden_instalacion": "Aplica después."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): deep-live-cam. Riesgo ético y legal; licencia RAIL con restricciones de uso.",
+   "descripcion_fuentes": [
+    "https://github.com/facefusion/facefusion/blob/master/README.md",
+    "https://docs.facefusion.io/installation"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "facefusion/facefusion",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "3.9.2 (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
   },
   "insightface": {
    "name": "InsightFace",
@@ -75769,7 +75893,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una animación de interfaz; Explorar una línea de tiempo web",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los bloques JavaScript se integran en una app y no son órdenes para pegar en la terminal; los plugins de medios tienen dependencias separadas",
-   "combines_with": [],
+   "combines_with": [
+    "motion-design-skill",
+    "remotion",
+    "zdog"
+   ],
    "alternatives": [],
    "repo": "https://github.com/daybrush/scenejs",
    "homepage": "https://daybrush.com/scenejs",
@@ -75870,7 +75998,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Scene.js, biblioteca JavaScript y CSS de animación basada en líneas de tiempo, de @daybrush. Licencia MIT. Tiene ~2.8k estrellas y no se actualiza desde junio de 2023 (1.10.3).",
+   "que_hace": "Organiza animaciones de propiedades CSS y objetos JS en escenas y fotogramas clave con control de reproducción. Con `@scenejs/media` también sincroniza audio y vídeo.",
+   "como_lo_hace": "Se instala con `npm install scenejs` o desde CDN. Forma parte del ecosistema de @daybrush (Moveable, Selecto).",
+   "combina_con": [
+    {
+     "id": "motion-design-skill",
+     "motivo": "Principios de ritmo y transiciones para diseñar la línea de tiempo. (combinación por arquitectura)",
+     "orden_instalacion": "Añade la skill al agente que escribe la animación."
+    },
+    {
+     "id": "remotion",
+     "motivo": "Vídeo programático cuando la línea de tiempo crece. (combinación por arquitectura)",
+     "orden_instalacion": "Migra la secuencia a Remotion."
+    },
+    {
+     "id": "zdog",
+     "motivo": "Animar ilustraciones pseudo-3D. (combinación por arquitectura)",
+     "orden_instalacion": "Anima propiedades de Zdog desde la escena."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Inactivo.",
+   "descripcion_fuentes": [
+    "https://github.com/daybrush/scenejs/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "daybrush/scenejs",
+    "archived": false,
+    "pushed_at": "2023-06-19",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "1.10.3 (2023-06-05)",
+    "checked_at": "2026-11-15"
+   }
   },
   "claude-code-hooks-mastery": {
    "name": "claude-code-hooks-mastery",
@@ -78976,7 +79143,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Integrar un visor 3D móvil; Estudiar render físicamente basado",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El compilador de materiales y runtime deben ser de la misma versión; las dependencias Gradle son configuración del proyecto Android, no comandos de shell",
-   "combines_with": [],
+   "combines_with": [
+    "meshoptimizer",
+    "blender",
+    "ozz-animation"
+   ],
    "alternatives": [],
    "repo": "https://github.com/google/filament",
    "homepage": "https://google.github.io/filament/",
@@ -79076,7 +79247,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Filament, motor de renderizado físicamente basado (PBR) en tiempo real de Google. Licencia Apache-2.0. Es maduro (~21k estrellas, v1.80.1).",
+   "que_hace": "Renderiza en Android, iOS, Linux, macOS, Windows y WebAssembly con materiales PBR, iluminación basada en imagen, sombras y postprocesado, priorizando tamaño y eficiencia en Android. Incluye un visor y una librería glTF (gltfio).",
+   "como_lo_hace": "Se descargan las releases estables o se compila con CMake. Soporta Vulkan, Metal, OpenGL y WebGL, y trae herramientas como `matc` (compilador de materiales) y `cmgen` (mapas de entorno).",
+   "combina_con": [
+    {
+     "id": "meshoptimizer",
+     "motivo": "Optimizar geometría glTF antes de cargarla. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa los modelos con gltfpack."
+    },
+    {
+     "id": "blender",
+     "motivo": "Exportar modelos glTF. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta desde Blender y carga con gltfio."
+    },
+    {
+     "id": "ozz-animation",
+     "motivo": "Animación esquelética en runtime. (combinación por arquitectura)",
+     "orden_instalacion": "Integra ozz en el motor."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/google/filament/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "google/filament",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "latest_release": "v1.80.1 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
   },
   "google-skills": {
    "name": "skills",
@@ -79735,7 +79945,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Reproducir animaciones de personajes; Combinar clips en un motor propio",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una biblioteca de bajo nivel independiente del motor; no crea automáticamente un personaje ni su rig",
-   "combines_with": [],
+   "combines_with": [
+    "filament",
+    "blender",
+    "meshoptimizer"
+   ],
    "alternatives": [],
    "repo": "https://github.com/guillaumeblanc/ozz-animation",
    "homepage": "http://guillaumeblanc.github.io/ozz-animation/",
@@ -79835,7 +80049,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "ozz-animation, biblioteca C++ open source de animación esquelética 3D con herramientas, de @guillaumeblanc. El README indica licencia MIT (GitHub muestra NOASSERTION). Es madura (~3.1k estrellas, 0.17.0).",
+   "que_hace": "Ofrece reproducción de animación de personajes en runtime (carga, muestreo, mezcla), independiente del renderer y del motor de juego, centrada en rendimiento y memoria.",
+   "como_lo_hace": "Incluye herramientas para convertir desde glTF, FBX, Collada, OBJ, 3ds o DXF a estructuras optimizadas, y librerías offline. Se compila con CMake.",
+   "combina_con": [
+    {
+     "id": "filament",
+     "motivo": "Motor de render para mostrar los personajes. (combinación por arquitectura)",
+     "orden_instalacion": "Integra el muestreo con el render."
+    },
+    {
+     "id": "blender",
+     "motivo": "Exportar animaciones a glTF o FBX. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte con las herramientas de ozz."
+    },
+    {
+     "id": "meshoptimizer",
+     "motivo": "Optimizar las mallas de los personajes. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa las mallas antes."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "guillaumeblanc/ozz-animation",
+    "archived": false,
+    "pushed_at": "2026-08-01",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C++",
+    "latest_release": "0.17.0 (2026-08-01)",
+    "checked_at": "2026-11-15"
+   }
   },
   "floorplan": {
    "name": "floorplan",
@@ -85793,7 +86046,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado",
-   "combines_with": [],
+   "combines_with": [
+    "animejs",
+    "gsap",
+    "three.js"
+   ],
    "alternatives": [],
    "repo": "https://github.com/metafizzy/zdog",
    "homepage": "https://zzz.dog",
@@ -85893,7 +86150,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Zdog, motor pseudo-3D «redondo, plano y amigable para diseñadores», de Metafizzy. El README indica licencia MIT, pero GitHub no detecta archivo de licencia. Tiene ~11k estrellas y no se actualiza desde julio de 2023 (v1.1.1).",
+   "que_hace": "Dibuja y anima ilustraciones 3D simples con formas planas y redondeadas sobre canvas o SVG. Es muy ligero.",
+   "como_lo_hace": "Se instala con `npm install zdog` o descargando el script. La documentación y demos están en zzz.dog.",
+   "combina_con": [
+    {
+     "id": "animejs",
+     "motivo": "Animar propiedades de las formas. (combinación por arquitectura)",
+     "orden_instalacion": "Interpola rotaciones con Anime.js."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Timelines para ilustraciones. (combinación por arquitectura)",
+     "orden_instalacion": "Anima objetos Zdog con GSAP."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Pasar a 3D real cuando haga falta. (combinación por arquitectura)",
+     "orden_instalacion": "Migra la escena a three.js."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Inactivo.",
+   "descripcion_fuentes": [
+    "https://github.com/metafizzy/zdog/blob/master/README.md",
+    "https://zzz.dog"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "metafizzy/zdog",
+    "archived": false,
+    "pushed_at": "2023-07-18",
+    "primary_language": "JavaScript",
+    "latest_release": "v1.1.1 (2019-10-23)",
+    "checked_at": "2026-11-15"
+   }
   },
   "mitmproxy": {
    "name": "mitmproxy",
@@ -86073,7 +86369,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar software CAD; Comparar bibliotecas de geometría",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD",
-   "combines_with": [],
+   "combines_with": [
+    "blender",
+    "three.js",
+    "filament"
+   ],
    "alternatives": [],
    "repo": "https://github.com/mlightcad/awesome-cad",
    "homepage": "",
@@ -86172,7 +86472,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Awesome CAD, lista curada de software, librerías y herramientas CAD open source, de mlightcad. Licencia MIT. Es reciente (enero de 2026) y de nicho (~240 estrellas).",
+   "que_hace": "Organiza por categorías proyectos de CAD prácticos y reutilizables: modeladores, kernels geométricos, parsers DXF/DWG, CAD en navegador, CAD programable y herramientas con IA.",
+   "como_lo_hace": "Es un README en Markdown y no requiere instalación.",
+   "combina_con": [
+    {
+     "id": "blender",
+     "motivo": "Modelado complementario a CAD. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta la lista para el flujo CAD."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Visores CAD web suelen apoyarse en three.js. (combinación por arquitectura)",
+     "orden_instalacion": "Elige un visor de la lista."
+    },
+    {
+     "id": "filament",
+     "motivo": "Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta a glTF y visualiza con Filament."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Recurso, no software.",
+   "descripcion_fuentes": [
+    "https://github.com/mlightcad/awesome-cad/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mlightcad/awesome-cad",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "MIT",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-reverse-engineering": {
    "name": "awesome-reverse-engineering",
@@ -89820,7 +90157,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir un efecto a un juego; Preparar una hoja de sprites",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Documenta plugin de Claude Code; no es necesario publicar el juego para usar o estudiar un efecto existente",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "threejs-game-skills",
+    "planck-js"
+   ],
    "alternatives": [],
    "repo": "https://github.com/patch-gg/pixelfx",
    "homepage": "https://patch-gg.github.io/pixelfx/",
@@ -89920,7 +90261,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "pixelfx, colección de 244 efectos y animaciones de pixel art hechos con código, de patch-gg. Licencia MIT. Es muy reciente (octubre de 2026) y ya tiene ~7.6k estrellas.",
+   "que_hace": "Ofrece efectos de fuego, explosiones, magia, clima, UI, objetos recogibles, criaturas y más, que se reproducen en vivo, se recolorean y se exportan como sprite sheets para cualquier motor. Incluye una skill de Claude Code para crear efectos nuevos con un ciclo de borrador, render, revisión y refinado.",
+   "como_lo_hace": "Se instala con `npm i github:patch-gg/pixelfx` o copiando `src/core` y los efectos deseados. También funciona como bloque en Patch (patch.gg), cuya CLI se promociona en el README.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Skill para generar efectos nuevos.",
+     "orden_instalacion": "Instala la skill del repo."
+    },
+    {
+     "id": "threejs-game-skills",
+     "motivo": "Efectos para juegos de navegador. (combinación por arquitectura)",
+     "orden_instalacion": "Integra los sprite sheets en el juego."
+    },
+    {
+     "id": "planck-js",
+     "motivo": "Física 2D para el juego que usa los efectos. (combinación por arquitectura)",
+     "orden_instalacion": "Combina en el mismo juego."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/patch-gg/pixelfx/blob/main/README.md",
+    "https://patch-gg.github.io/pixelfx/"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "patch-gg/pixelfx",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "pencil": {
    "name": "pencil",
@@ -89937,7 +90317,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender animación dibujada a mano; Crear una prueba de movimiento 2D",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Pencil2D es un editor de animación 2D tradicional; no debe confundirse con herramientas IA o editores de UI que comparten nombre",
-   "combines_with": [],
+   "combines_with": [
+    "ffmpeg",
+    "blender",
+    "pixelfx"
+   ],
    "alternatives": [],
    "repo": "https://github.com/pencil2d/pencil",
    "homepage": "http://pencil2d.org",
@@ -90037,7 +90421,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Pencil2D, software libre de animación 2D tradicional dibujada a mano, desarrollado por voluntarios. Licencia GPL-2.0. Tiene ~1.9k estrellas y su última release es v0.7.2 (marzo de 2026).",
+   "que_hace": "Permite crear animación cuadro a cuadro con gráficos bitmap y vectoriales, papel cebolla, capas, cámara y sonido. Es sencillo y ligero, pensado para animación tipo cartoon.",
+   "como_lo_hace": "Hay instaladores para Windows, macOS, Linux y FreeBSD en pencil2d.org. Está construido con Qt y C++.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Convertir secuencias de imágenes exportadas a vídeo o GIF. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta la secuencia y codifícala con FFmpeg."
+    },
+    {
+     "id": "blender",
+     "motivo": "Pasar a Grease Pencil para proyectos más grandes. (combinación por arquitectura)",
+     "orden_instalacion": "Importa las secuencias."
+    },
+    {
+     "id": "pixelfx",
+     "motivo": "Efectos de pixel art de referencia. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los sprite sheets como guía."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/pencil2d/pencil/blob/master/README.md",
+    "https://www.pencil2d.org/"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pencil2d/pencil",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "GPL-2.0",
+    "primary_language": "C++",
+    "latest_release": "v0.7.2 (2026-03-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "no-ai-slop": {
    "name": "no-ai-slop",
@@ -90218,7 +90642,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar física de un juego 2D; Explicar gravedad con una simulación",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es un motor de física 2D basado en Box2D y corresponde a simulación; no genera animaciones por instrucciones de IA",
-   "combines_with": [],
+   "combines_with": [
+    "pixelfx",
+    "threejs-game-skills",
+    "dsh-game-studio"
+   ],
    "alternatives": [],
    "repo": "https://github.com/piqnt/planck.js",
    "homepage": "http://piqnt.com/planck.js/",
@@ -90317,7 +90745,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Planck.js, reescritura en JavaScript/TypeScript del motor de física 2D Box2D, de piqnt. Licencia MIT. Es madura (~5.3k estrellas) y está activa.",
+   "que_hace": "Simula cuerpos rígidos, colisiones, uniones y fuerzas para juegos HTML5 multiplataforma, con código legible y editable que aprovecha el diseño de Box2D.",
+   "como_lo_hace": "Se instala con `npm install planck` (o `planck-js`) y funciona en navegador y Node. Incluye un testbed para depurar.",
+   "combina_con": [
+    {
+     "id": "pixelfx",
+     "motivo": "Efectos visuales para juegos con física. (combinación por arquitectura)",
+     "orden_instalacion": "Combina en el mismo juego."
+    },
+    {
+     "id": "threejs-game-skills",
+     "motivo": "Juegos de navegador asistidos por agente. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Planck para la física 2D."
+    },
+    {
+     "id": "dsh-game-studio",
+     "motivo": "Física 2D en juegos generados. (combinación por arquitectura)",
+     "orden_instalacion": "Añádelo al juego exportado."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/piqnt/planck.js/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "piqnt/planck.js",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "react-three-rapier": {
    "name": "react-three-rapier",
@@ -90334,7 +90800,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una escena física React; Prototipar interacción con objetos 3D",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones",
-   "combines_with": [],
+   "combines_with": [
+    "react-three-fiber",
+    "three.js",
+    "threejs-game-skills"
+   ],
    "alternatives": [],
    "repo": "https://github.com/pmndrs/react-three-rapier",
    "homepage": "https://react-three-rapier.pmnd.rs",
@@ -90434,7 +90904,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "@react-three/rapier, wrapper del motor de física Rapier (WASM) para react-three-fiber, de pmndrs. Licencia MIT. Tiene ~1.7k estrellas (v2.2.0).",
+   "que_hace": "Añade cuerpos rígidos, colisionadores, uniones y eventos de colisión a escenas R3F con una API pequeña y directa. La v2 soporta R3F v9 y React 19; con React 18 hay que usar la v1.",
+   "como_lo_hace": "Se instala con `npm install @react-three/rapier` junto a `@react-three/fiber` y three.",
+   "combina_con": [
+    {
+     "id": "react-three-fiber",
+     "motivo": "Pipeline sobre el que se integra.",
+     "orden_instalacion": "Instala R3F primero."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Motor 3D subyacente.",
+     "orden_instalacion": "Viene con R3F."
+    },
+    {
+     "id": "threejs-game-skills",
+     "motivo": "Juegos 3D de navegador. (combinación por arquitectura)",
+     "orden_instalacion": "Usa Rapier para la física."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/pmndrs/react-three-rapier/blob/main/readme.md",
+    "https://rapier.rs/docs/user_guides/javascript"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pmndrs/react-three-rapier",
+    "archived": false,
+    "pushed_at": "2026-10-12",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "@react-three/rapier@2.2.0 (2025-11-03)",
+    "checked_at": "2026-11-15"
+   }
   },
   "vectorbt": {
    "name": "vectorbt",
@@ -91102,7 +91612,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar visualización acelerada; Aprender render funcional",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una abstracción de WebGL para desarrolladores y no un editor gráfico o biblioteca de componentes de interfaz",
-   "combines_with": [],
+   "combines_with": [
+    "webgl-noise",
+    "three.js",
+    "meshoptimizer"
+   ],
    "alternatives": [],
    "repo": "https://github.com/regl-project/regl",
    "homepage": "https://regl-project.github.io/",
@@ -91203,7 +91717,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "regl, biblioteca funcional para WebGL, de regl-project. Licencia MIT. Es madura y estable (~5.6k estrellas).",
+   "que_hace": "Encapsula el estado de WebGL en comandos declarativos que combinan shaders, buffers y uniforms, eliminando el estado global mutable y reduciendo errores. Se usa en visualizaciones de datos de alto rendimiento.",
+   "como_lo_hace": "Se instala con `npm i -S regl` y no tiene dependencias.",
+   "combina_con": [
+    {
+     "id": "webgl-noise",
+     "motivo": "Ruido procedural en los shaders. (combinación por arquitectura)",
+     "orden_instalacion": "Incluye las funciones en los fragment shaders."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Alternativa de más alto nivel para escenas completas. (combinación por arquitectura)",
+     "orden_instalacion": "Elige según el nivel de control."
+    },
+    {
+     "id": "meshoptimizer",
+     "motivo": "Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura)",
+     "orden_instalacion": "Optimiza la malla antes de subirla a buffers."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/regl-project/regl/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "regl-project/regl",
+    "archived": false,
+    "pushed_at": "2026-10-17",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "rizin": {
    "name": "rizin",
@@ -95629,7 +96181,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets",
-   "combines_with": [],
+   "combines_with": [
+    "three.js",
+    "filament",
+    "blender"
+   ],
    "alternatives": [],
    "repo": "https://github.com/zeux/meshoptimizer",
    "homepage": "https://meshoptimizer.org/",
@@ -95730,7 +96286,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "meshoptimizer, biblioteca para optimizar mallas de triángulos para GPU, de @zeux. Licencia MIT. Es madura y muy usada en la industria (~8.9k estrellas, v1.3).",
+   "que_hace": "Ofrece algoritmos de optimización de caché de vértices, overdraw y fetch, cuantización, simplificación, construcción de meshlets y compresión. Su compresión es la extensión glTF EXT_meshopt_compression.",
+   "como_lo_hace": "Tiene interfaz C y C++ (usable por FFI desde otros lenguajes; en Rust, el crate meshopt). Se distribuye junto a gltfpack, CLI para optimizar glTF disponible como binario o vía npm, y clusterlod.h.",
+   "combina_con": [
+    {
+     "id": "three.js",
+     "motivo": "Carga glTF comprimido con EXT_meshopt (MeshoptDecoder).",
+     "orden_instalacion": "Optimiza con gltfpack y carga con GLTFLoader."
+    },
+    {
+     "id": "filament",
+     "motivo": "Geometría optimizada para su render. (combinación por arquitectura)",
+     "orden_instalacion": "Procesa los modelos antes."
+    },
+    {
+     "id": "blender",
+     "motivo": "Optimizar exportaciones glTF. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa el glTF exportado por gltfpack."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas.",
+   "descripcion_fuentes": [
+    "https://github.com/zeux/meshoptimizer/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "38-graficos-3d-parte-2-y-vision-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "zeux/meshoptimizer",
+    "archived": false,
+    "pushed_at": "2026-10-14",
+    "license": "MIT",
+    "primary_language": "C++",
+    "latest_release": "v1.3 (2026-09-25)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-ai-reverse-engineering": {
    "name": "awesome-ai-reverse-engineering",

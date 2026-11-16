@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Deep-Live-Cam, herramienta de intercambio de rostros (face swap) y deepfake en tiempo real a partir de una sola imagen, de @hacksider. Licencia AGPL-3.0. Tiene ~98k estrellas y versión 2.8, y vende una versión precompilada «Ultimate» (quickstart) en deeplivecam.net.
+
+## ¿Qué hace?
+
+Sustituye rostros en webcam o vídeo en tiempo real con un clic. El README incluye un descargo ético y un filtro integrado contra contenido inapropiado, y pide consentimiento y etiquetar los deepfakes.
+
+## ¿Cómo lo hace?
+
+La instalación manual requiere conocimientos técnicos: Python (el README menciona 3.14), `pip install -r requirements.txt` y descargar los modelos ONNX `inswapper_128_fp16` y `gfpgan-1024` de Hugging Face. Soporta CUDA, CoreML (Apple Silicon) y otros proveedores de ONNX Runtime.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [InsightFace](insightface.md) | Modelo de intercambio (inswapper) y análisis facial. | Viene como dependencia. |
+| [OBS Studio](obs-studio.md) | Emitir la cámara virtual. (combinación por arquitectura) | Captura la salida en OBS. |
+| [CodeFormer](codeformer.md) | Restaurar rostros en vídeo procesado offline. (combinación por arquitectura) | Aplica sobre los fotogramas. |
+
+**Notas:** Alternativas (elige una): facefusion. Riesgo ético y legal alto (suplantación); se quita face-recognition de las combinaciones (sin integración documentada).
+
+Estado en GitHub: activo · último push 2026-11-08 · última versión publicada 2.8 (2026-10-22) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible |
 | Coste | Sin pago a un modelo en la ruta básica. La ejecución local no exige API; hardware y licencias de modelos como InsightFace se revisan aparte |
 | Equipo | Preparación según la ruta elegida. Python compatible; FFmpeg; modelos ONNX; CPU o GPU según backend; imágenes autorizadas |
-
-El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible
-
-## Qué puedes hacer con él
-
-Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar un efecto facial consentido; Probar un pipeline local de video.
-
-## Cómo funciona
 
 El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python compatible; FFmpeg; modelos ONNX; CPU o GPU según backend; imágenes autorizadas
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [face_recognition](face-recognition.md) | 56.9k | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. |
 
 ## Alternativas (elige una)
 

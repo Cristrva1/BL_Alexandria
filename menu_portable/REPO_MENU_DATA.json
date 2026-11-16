@@ -71495,7 +71495,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar software CAD; Comparar bibliotecas de geometría",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "blender",
+        "three.js",
+        "filament"
+      ],
       "alt": []
     },
     {
@@ -71720,7 +71724,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Integrar un visor 3D móvil; Estudiar render físicamente basado",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "meshoptimizer",
+        "blender",
+        "ozz-animation"
+      ],
       "alt": []
     },
     {
@@ -71949,7 +71957,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "filament",
+        "blender"
+      ],
       "alt": []
     },
     {
@@ -72183,7 +72195,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reproducir animaciones de personajes; Combinar clips en un motor propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "filament",
+        "blender",
+        "meshoptimizer"
+      ],
       "alt": []
     },
     {
@@ -72294,7 +72310,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender animación dibujada a mano; Crear una prueba de movimiento 2D",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ffmpeg",
+        "blender",
+        "pixelfx"
+      ],
       "alt": []
     },
     {
@@ -72407,7 +72427,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir un efecto a un juego; Preparar una hoja de sprites",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "threejs-game-skills",
+        "planck-js"
+      ],
       "alt": []
     },
     {
@@ -72517,7 +72541,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar física de un juego 2D; Explicar gravedad con una simulación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pixelfx",
+        "threejs-game-skills",
+        "dsh-game-studio"
+      ],
       "alt": []
     },
     {
@@ -72745,7 +72773,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una escena física React; Prototipar interacción con objetos 3D",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "react-three-fiber",
+        "three.js",
+        "threejs-game-skills"
+      ],
       "alt": []
     },
     {
@@ -72857,7 +72889,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar visualización acelerada; Aprender render funcional",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "webgl-noise",
+        "three.js",
+        "meshoptimizer"
+      ],
       "alt": []
     },
     {
@@ -72969,7 +73005,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear una animación de interfaz; Explorar una línea de tiempo web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "motion-design-skill",
+        "remotion",
+        "zdog"
+      ],
       "alt": []
     },
     {
@@ -73432,7 +73472,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "animejs",
+        "gsap",
+        "three.js"
+      ],
       "alt": []
     },
     {
@@ -78025,7 +78069,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "face-recognition"
+        "insightface",
+        "obs-studio",
+        "codeformer"
       ],
       "alt": [
         "facefusion"
@@ -78258,7 +78304,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "deep-live-cam"
+        "opencv",
+        "supervision",
+        "mediapipe"
       ],
       "alt": [
         "insightface"
@@ -78377,7 +78425,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ffmpeg"
+        "ffmpeg",
+        "insightface",
+        "real-esrgan"
       ],
       "alt": [
         "deep-live-cam"

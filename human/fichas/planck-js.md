@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Planck.js, reescritura en JavaScript/TypeScript del motor de física 2D Box2D, de piqnt. Licencia MIT. Es madura (~5.3k estrellas) y está activa.
+
+## ¿Qué hace?
+
+Simula cuerpos rígidos, colisiones, uniones y fuerzas para juegos HTML5 multiplataforma, con código legible y editable que aprovecha el diseño de Box2D.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install planck` (o `planck-js`) y funciona en navegador y Node. Incluye un testbed para depurar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [pixelfx](pixelfx.md) | Efectos visuales para juegos con física. (combinación por arquitectura) | Combina en el mismo juego. |
+| [threejs-game-skills](threejs-game-skills.md) | Juegos de navegador asistidos por agente. (combinación por arquitectura) | Usa Planck para la física 2D. |
+| [dsh-game-studio](dsh-game-studio.md) | Física 2D en juegos generados. (combinación por arquitectura) | Añádelo al juego exportado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/piqnt/planck.js/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un motor de física 2D basado en Box2D y corresponde a simulación; no genera animaciones por instrucciones de IA |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelos ni API; hosting y assets se costean aparte |
 | Equipo | Preparación según la ruta elegida. Proyecto JavaScript; escena 2D de prueba |
-
-Es un motor de física 2D basado en Box2D y corresponde a simulación; no genera animaciones por instrucciones de IA
-
-## Qué puedes hacer con él
-
-Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar física de un juego 2D; Explicar gravedad con una simulación.
-
-## Cómo funciona
 
 Es un motor de física 2D basado en Box2D y corresponde a simulación; no genera animaciones por instrucciones de IA
 

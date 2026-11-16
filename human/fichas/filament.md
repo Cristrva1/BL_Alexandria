@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Filament, motor de renderizado físicamente basado (PBR) en tiempo real de Google. Licencia Apache-2.0. Es maduro (~21k estrellas, v1.80.1).
+
+## ¿Qué hace?
+
+Renderiza en Android, iOS, Linux, macOS, Windows y WebAssembly con materiales PBR, iluminación basada en imagen, sombras y postprocesado, priorizando tamaño y eficiencia en Android. Incluye un visor y una librería glTF (gltfio).
+
+## ¿Cómo lo hace?
+
+Se descargan las releases estables o se compila con CMake. Soporta Vulkan, Metal, OpenGL y WebGL, y trae herramientas como `matc` (compilador de materiales) y `cmgen` (mapas de entorno).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [meshoptimizer](meshoptimizer.md) | Optimizar geometría glTF antes de cargarla. (combinación por arquitectura) | Procesa los modelos con gltfpack. |
+| [blender](blender.md) | Exportar modelos glTF. (combinación por arquitectura) | Exporta desde Blender y carga con gltfio. |
+| [ozz-animation](ozz-animation.md) | Animación esquelética en runtime. (combinación por arquitectura) | Integra ozz en el motor. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.80.1 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google/filament/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El compilador de materiales y runtime deben ser de la misma versión; las dependencias Gradle son configuración del proyecto Android, no comandos de shell |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita API de IA; recursos, hardware y distribución tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Plataforma de destino; runtime y herramientas de la misma release; modelo glTF de prueba |
-
-El compilador de materiales y runtime deben ser de la misma versión; las dependencias Gradle son configuración del proyecto Android, no comandos de shell
-
-## Qué puedes hacer con él
-
-Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.
-
-## Por qué destaca
-
-Usos propuestos: Integrar un visor 3D móvil; Estudiar render físicamente basado.
-
-## Cómo funciona
 
 El compilador de materiales y runtime deben ser de la misma versión; las dependencias Gradle son configuración del proyecto Android, no comandos de shell
 

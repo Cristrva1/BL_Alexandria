@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Zdog, motor pseudo-3D «redondo, plano y amigable para diseñadores», de Metafizzy. El README indica licencia MIT, pero GitHub no detecta archivo de licencia. Tiene ~11k estrellas y no se actualiza desde julio de 2023 (v1.1.1).
+
+## ¿Qué hace?
+
+Dibuja y anima ilustraciones 3D simples con formas planas y redondeadas sobre canvas o SVG. Es muy ligero.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install zdog` o descargando el script. La documentación y demos están en zzz.dog.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Anime.js](animejs.md) | Animar propiedades de las formas. (combinación por arquitectura) | Interpola rotaciones con Anime.js. |
+| [GSAP](gsap.md) | Timelines para ilustraciones. (combinación por arquitectura) | Anima objetos Zdog con GSAP. |
+| [three.js](three-js.md) | Pasar a 3D real cuando haga falta. (combinación por arquitectura) | Migra la escena a three.js. |
+
+**Notas:** Sin alternativas declaradas. Inactivo.
+
+Estado en GitHub: activo · último push 2023-07-18 · última versión publicada v1.1.1 (2019-10-23) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/metafizzy/zdog/blob/master/README.md) · [2](https://zzz.dog)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado |
 | Coste | Sin pago a un modelo en la ruta básica. MIT y sin API de IA; alojamiento y recursos propios separados |
 | Equipo | Preparación según la ruta elegida. Página de prueba; JavaScript; canvas o SVG |
-
-Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado
-
-## Qué puedes hacer con él
-
-Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva.
-
-## Cómo funciona
 
 Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado
 

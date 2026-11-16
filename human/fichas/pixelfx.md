@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+pixelfx, colección de 244 efectos y animaciones de pixel art hechos con código, de patch-gg. Licencia MIT. Es muy reciente (octubre de 2026) y ya tiene ~7.6k estrellas.
+
+## ¿Qué hace?
+
+Ofrece efectos de fuego, explosiones, magia, clima, UI, objetos recogibles, criaturas y más, que se reproducen en vivo, se recolorean y se exportan como sprite sheets para cualquier motor. Incluye una skill de Claude Code para crear efectos nuevos con un ciclo de borrador, render, revisión y refinado.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i github:patch-gg/pixelfx` o copiando `src/core` y los efectos deseados. También funciona como bloque en Patch (patch.gg), cuya CLI se promociona en el README.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Skill para generar efectos nuevos. | Instala la skill del repo. |
+| [threejs-game-skills](threejs-game-skills.md) | Efectos para juegos de navegador. (combinación por arquitectura) | Integra los sprite sheets en el juego. |
+| [planck.js](planck-js.md) | Física 2D para el juego que usa los efectos. (combinación por arquitectura) | Combina en el mismo juego. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/patch-gg/pixelfx/blob/main/README.md) · [2](https://patch-gg.github.io/pixelfx/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta plugin de Claude Code; no es necesario publicar el juego para usar o estudiar un efecto existente |
 | Coste | El coste depende del proveedor o la ruta. Los efectos básicos no requieren modelo; crear nuevos con el skill usa el agente y publicar con Patch tiene condiciones propias |
 | Equipo | Preparación según la ruta elegida. Proyecto JavaScript o motor que admita sprites; Claude Code opcional |
-
-Documenta plugin de Claude Code; no es necesario publicar el juego para usar o estudiar un efecto existente
-
-## Qué puedes hacer con él
-
-Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.
-
-## Por qué destaca
-
-Usos propuestos: Añadir un efecto a un juego; Preparar una hoja de sprites.
-
-## Cómo funciona
 
 Documenta plugin de Claude Code; no es necesario publicar el juego para usar o estudiar un efecto existente
 
