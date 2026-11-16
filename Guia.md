@@ -267,12 +267,15 @@ Catálogos de skills, plugins y métodos generales de desarrollo. Elige según t
 | [wshobson/agents](human/fichas/wshobson-agents.md) | Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Awesome Agent Skills](human/fichas/awesome-agent-skills.md) | Tu objetivo encaja con estos ejemplos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Agent Skills (Addy Osmani), superpowers**
+**⚖️ ¿Cuál elegir? — Agent Skills (Addy Osmani), superpowers, ECC, gstack, SuperClaude_Framework**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Agent Skills (Addy Osmani)](human/fichas/agent-skills.md) | Tu objetivo encaja con estos ejemplos: Preparar una especificación antes de escribir una funcionalidad; Revisar un diff con criterios de calidad y pruebas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [superpowers](human/fichas/superpowers.md) | Tu objetivo encaja con estos ejemplos: Dividir una funcionalidad en tareas que se puedan verificar; Trabajar con pruebas y revisión antes de cerrar un cambio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [ECC](human/fichas/ecc.md) | Tu objetivo encaja con estos ejemplos: Configurar convenciones, skills y comprobaciones para un equipo; Probar una mejora de contexto sin activar todos los componentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [gstack](human/fichas/gstack.md) | Tu objetivo encaja con estos ejemplos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [SuperClaude_Framework](human/fichas/superclaude-framework.md) | Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — Spec Kit, BMAD Method**
 
@@ -3086,7 +3089,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 
 #### 📑 PdfDing
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.8k<br>
-**Qué es:** Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.<br>
+**Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://docs.pdfding.com/getting_started/docker/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
@@ -5639,6 +5642,15 @@ npm install motion` (comprobar los pasos completos en la ficha).<br>
 
 Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales.
 
+**⚖️ ¿Cuál elegir? — ui-ux-pro-max-skill, taste-skill, impeccable, hallmark**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [ui-ux-pro-max-skill](human/fichas/ui-ux-pro-max-skill.md) | Tu objetivo encaja con estos ejemplos: Preparar un sistema de diseño; Revisar un formulario | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [taste-skill](human/fichas/taste-skill.md) | Tu objetivo encaja con estos ejemplos: Preparar una web de empresa; Revisar dirección visual de una landing | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [impeccable](human/fichas/impeccable.md) | Tu objetivo encaja con estos ejemplos: Auditar una interfaz; Pulir un componente concreto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [hallmark](human/fichas/hallmark.md) | Tu objetivo encaja con estos ejemplos: Preparar una página de empresa; Revisar una landing genérica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 **⚖️ ¿Cuál elegir? — threejs-skills, 3dviz-pro-max**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -5646,12 +5658,20 @@ Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añad
 | [threejs-skills](human/fichas/threejs-skills.md) | Tu objetivo encaja con estos ejemplos: Preparar una escena web; Revisar migraciones de Three.js | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [3dviz-pro-max](human/fichas/3dviz-pro-max.md) | Tu objetivo encaja con estos ejemplos: Preparar una visualización de producto; Crear una escena explicativa | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Humanizer, Stop Slop**
+**⚖️ ¿Cuál elegir? — Humanizer, Stop Slop, no-ai-slop**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Humanizer](human/fichas/humanizer.md) | Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Stop Slop](human/fichas/stop-slop.md) | Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [no-ai-slop](human/fichas/no-ai-slop.md) | Tu objetivo encaja con estos ejemplos: Editar una publicación; Mejorar claridad de un informe | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — claude-seo, GEO-SEO Claude**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [claude-seo](human/fichas/claude-seo.md) | Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [GEO-SEO Claude](human/fichas/geo-seo-claude.md) | Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Skills de diseño para agentes
 

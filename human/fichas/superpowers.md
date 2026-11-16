@@ -31,7 +31,7 @@ Skills más instrucciones iniciales y hooks de sesión. Se instala por separado 
 | [Gemini CLI](gemini-cli.md) | Extensión de Gemini CLI. | `gemini extensions install https://github.com/obra/superpowers`. |
 | [hermes-agent](hermes-agent.md) | Instalación documentada para Hermes Agent. | Reinicia la sesión tras instalar para activar los hooks. |
 
-**Notas:** Alternativa (elige una): agent-skills. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.
+**Notas:** Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.
 
 Estado en GitHub: activo · último push 2026-11-03 · última versión publicada v7.0.2 (2026-11-03) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -113,6 +113,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Agent Skills (Addy Osmani)](agent-skills.md) | 118k | Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes. |
+| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
+| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
+| [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 
 ## Enlaces
 

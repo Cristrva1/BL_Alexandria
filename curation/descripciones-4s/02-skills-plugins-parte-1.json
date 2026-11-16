@@ -378,7 +378,7 @@
      "orden_instalacion": "Reinicia la sesión tras instalar para activar los hooks."
     }
    ],
-   "notas": "Alternativa (elige una): agent-skills. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
+   "notas": "Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
    "fuentes": [
     "https://github.com/obra/superpowers/blob/main/README.md"
    ],
@@ -418,7 +418,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "notas": "El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
+   "notas": "Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
    "fuentes": [
     "https://github.com/affaan-m/ECC/blob/main/README.md"
    ],

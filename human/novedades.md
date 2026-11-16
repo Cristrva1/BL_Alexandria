@@ -460,7 +460,7 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-08-23 | [T3 Code](fichas/t3code.md) | Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. | API de IA opcional |
 | 2026-08-23 | [SWE-bench](fichas/swe-bench.md) | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | API de IA opcional |
 | 2026-08-23 | [Remotion Superpowers](fichas/remotion-superpowers.md) | Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. | API de IA necesaria |
-| 2026-08-23 | [PdfDing](fichas/pdfding.md) | Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura. | Sin clave propia de API de IA en la ruta básica |
+| 2026-08-23 | [PdfDing](fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Sin clave propia de API de IA en la ruta básica |
 | 2026-08-23 | [PDF Inspector](fichas/pdf-inspector.md) | Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. | Sin clave propia de API de IA en la ruta básica |
 | 2026-08-23 | [OpenClaw](fichas/openclaw.md) | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. | API de IA opcional |
 | 2026-08-23 | [Open SWE](fichas/open-swe.md) | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. | API de IA necesaria |

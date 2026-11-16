@@ -561,6 +561,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El informe muestra los componentes y archivos preparados para el cliente elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`, `gemini-cli`
+**Alternativas (elige una):** `superclaude-framework`, `superpowers`, `gstack`
 
 ## `elephant-goldfish-model`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=metodologia,skill,python
@@ -719,6 +720,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El estado indica el host y puedes revisar el resultado de la skill elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `superclaude-framework`, `superpowers`, `ecc`
 
 ## `plugins`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=catalogos,reference,typescript
@@ -876,6 +878,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar qué comandos se incorporaron y ejecutar el diagnóstico del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `context7`, `serena`
+**Alternativas (elige una):** `superpowers`, `ecc`, `gstack`
 
 ## `superpowers`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
@@ -906,7 +909,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El agente muestra una propuesta acotada antes de cambiar archivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-plugins-official`, `codex`, `gemini-cli`, `hermes-agent`
-**Alternativas (elige una):** `agent-skills`
+**Alternativas (elige una):** `agent-skills`, `superclaude-framework`, `ecc`, `gstack`
 
 ## `wshobson-agents`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,coding-agent,agents,python

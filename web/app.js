@@ -629,14 +629,17 @@
     const sources = (item.descripcion_fuentes || []).map((url, index) => `<a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index + 1}</a>`).join(" · ");
     const checked = (item.descripcion_revision || {}).checked_at || "fecha por confirmar";
     const gh = item.descripcion_github || {};
-    const ghLine = gh.checked_at ? `<p class="meta">Estado en GitHub: ${gh.archived ? "⚠️ archivado (solo lectura)" : "activo"}${gh.renamed_to ? ` · renombrado a ${esc(gh.renamed_to)}` : ""}${gh.pushed_at ? ` · último push ${esc(gh.pushed_at)}` : ""}${gh.latest_release ? ` · última versión ${esc(gh.latest_release)}` : ""}${gh.license ? ` · licencia ${esc(gh.license)}` : ""} (consultado el ${esc(gh.checked_at)}).</p>` : "";
+    const og = item.descripcion_origen || {};
+    const ogHost = ({codeberg:"Codeberg",gitlab:"GitLab",huggingface:"Hugging Face"})[og.host] || og.host || "la forja original";
+    const ogLine = og.checked_at ? `<p class="meta">Estado en ${esc(ogHost)}: ${og.archived ? "⚠️ archivado (solo lectura)" : "activo"}${og.pushed_at ? ` · última actividad ${esc(og.pushed_at)}` : ""}${og.latest_release ? ` · última versión ${esc(og.latest_release)}` : ""}${og.license ? ` · licencia ${esc(og.license)}` : ""} (consultado el ${esc(og.checked_at)}).</p>` : "";
+    const ghLine = gh.checked_at ? `<p class="meta">${og.checked_at ? "Copia antigua en GitHub" : "Estado en GitHub"}: ${gh.archived ? "⚠️ archivado (solo lectura)" : "activo"}${gh.renamed_to ? ` · renombrado a ${esc(gh.renamed_to)}` : ""}${gh.pushed_at ? ` · último push ${esc(gh.pushed_at)}` : ""}${gh.latest_release ? ` · última versión ${esc(gh.latest_release)}` : ""}${gh.license ? ` · licencia ${esc(gh.license)}` : ""} (consultado el ${esc(gh.checked_at)}).</p>` : "";
     return `<section id="repo-four" class="section">
         <h2>¿Qué es?</h2><p>${esc(item.que_es)}</p>
         <h2>¿Qué hace?</h2><p>${esc(item.que_hace)}</p>
         <h2>¿Cómo lo hace?</h2><p>${esc(item.como_lo_hace)}</p>
         <h2>¿Con qué otros repos se combina?</h2><ul>${combos}</ul>
         ${item.descripcion_notas ? `<p><strong>Notas.</strong> ${esc(item.descripcion_notas)}</p>` : ""}
-        ${ghLine}
+        ${ogLine}${ghLine}
         <p class="meta">Descripción redactada a partir de la documentación del autor (revisada el ${esc(checked)}); no se instaló ni ejecutó.${sources ? ` ${sources}` : ""}</p>
       </section>`;
   }

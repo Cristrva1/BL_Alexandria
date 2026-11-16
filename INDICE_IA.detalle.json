@@ -6546,7 +6546,10 @@
     "hermes-agent"
    ],
    "alternatives": [
-    "agent-skills"
+    "agent-skills",
+    "superclaude-framework",
+    "ecc",
+    "gstack"
    ],
    "repo": "https://github.com/obra/superpowers",
    "homepage": "",
@@ -6665,7 +6668,7 @@
      "orden_instalacion": "Reinicia la sesión tras instalar para activar los hooks."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): agent-skills. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
+   "descripcion_notas": "Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
    "descripcion_fuentes": [
     "https://github.com/obra/superpowers/blob/main/README.md"
    ],
@@ -6708,7 +6711,11 @@
     "opencode",
     "gemini-cli"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "superclaude-framework",
+    "superpowers",
+    "gstack"
+   ],
    "repo": "https://github.com/affaan-m/ECC",
    "homepage": "https://ecc.tools",
    "license": "MIT",
@@ -6828,7 +6835,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "descripcion_notas": "El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
+   "descripcion_notas": "Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
    "descripcion_fuentes": [
     "https://github.com/affaan-m/ECC/blob/main/README.md"
    ],
@@ -7765,7 +7772,8 @@
     "postiz-app"
    ],
    "alternatives": [
-    "stop-slop"
+    "stop-slop",
+    "no-ai-slop"
    ],
    "repo": "https://github.com/blader/humanizer",
    "homepage": "https://skills.sh/blader/humanizer",
@@ -7885,7 +7893,7 @@
      "orden_instalacion": "Humaniza primero; programa después."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): stop-slop.",
+   "descripcion_notas": "Alternativas (elige una): no-ai-slop, stop-slop.",
    "descripcion_fuentes": [
     "https://github.com/blader/humanizer/blob/main/README.md"
    ],
@@ -7928,7 +7936,8 @@
     "postiz-app"
    ],
    "alternatives": [
-    "humanizer"
+    "humanizer",
+    "no-ai-slop"
    ],
    "repo": "https://github.com/hardikpandya/stop-slop",
    "homepage": "",
@@ -8041,7 +8050,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+   "descripcion_notas": "Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
    "descripcion_fuentes": [
     "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
    ],
@@ -8399,7 +8408,9 @@
     "playwright",
     "open-seo"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "claude-seo"
+   ],
    "repo": "https://github.com/zubair-trabzada/geo-seo-claude",
    "homepage": "https://www.skool.com/aiworkshop",
    "license": "MIT",
@@ -8514,7 +8525,7 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "descripcion_notas": "Revisa el script antes de ejecutar `curl | bash`. Se solapa en parte con claude-seo.",
+   "descripcion_notas": "Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.",
    "descripcion_fuentes": [
     "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
    ],
@@ -37934,7 +37945,11 @@
     "tailwindcss",
     "design.md"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "taste-skill",
+    "impeccable",
+    "hallmark"
+   ],
    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
    "homepage": "https://www.uupm.cc/",
    "license": "MIT",
@@ -38049,7 +38064,7 @@
      "orden_instalacion": "Genera primero y valida después con `npx @google/design.md lint`."
     }
    ],
-   "descripcion_notas": "Se quitaron taste-skill e impeccable: se solapan en función, no se complementan.",
+   "descripcion_notas": "Alternativas (elige una): taste-skill, impeccable, hallmark.",
    "descripcion_fuentes": [
     "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md"
    ],
@@ -38091,7 +38106,11 @@
     "ffmpeg",
     "stitch-skills"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "ui-ux-pro-max-skill",
+    "impeccable",
+    "hallmark"
+   ],
    "repo": "https://github.com/Leonxlnx/taste-skill",
    "homepage": "https://tasteskill.dev",
    "license": "MIT",
@@ -38207,7 +38226,7 @@
      "orden_instalacion": "Configura antes el MCP de Stitch."
     }
    ],
-   "descripcion_notas": "Se solapa con ui-ux-pro-max-skill, impeccable y hallmark; conviene elegir uno como guía principal.",
+   "descripcion_notas": "Alternativas (elige una): ui-ux-pro-max-skill, impeccable, hallmark.",
    "descripcion_fuentes": [
     "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
    ],
@@ -38249,7 +38268,11 @@
     "codex",
     "design.md"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "ui-ux-pro-max-skill",
+    "taste-skill",
+    "hallmark"
+   ],
    "repo": "https://github.com/pbakaus/impeccable",
    "homepage": "https://impeccable.style",
    "license": "Apache-2.0",
@@ -38381,7 +38404,8 @@
     "primary_language": "Rust",
     "latest_release": "cli-v4.9.2 (2026-11-16)",
     "checked_at": "2026-11-15"
-   }
+   },
+   "descripcion_notas": "Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, hallmark."
   },
   "skills-emil": {
    "name": "skills_emil",
@@ -49698,7 +49722,7 @@
    "name": "PdfDing",
    "cat": 13,
    "sub": "pdf",
-   "desc": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
+   "desc": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
    "why": "Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.",
    "how": "Se instala con Docker siguiendo la guía oficial. El código y las versiones nuevas se publican en Codeberg; el repositorio de GitHub quedó archivado como copia antigua",
    "install": "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Guía original: https://docs.pdfding.com/getting_started/docker/",
@@ -49710,7 +49734,7 @@
    "models": "El gestor básico no requiere IA; servidor y almacenamiento son recursos propios",
    "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia",
+   "limits": "El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia. Sin OCR ni IA integrados.",
    "combines_with": [
     "ocrmypdf",
     "paperless-ngx",
@@ -49719,9 +49743,9 @@
    "alternatives": [],
    "repo": "https://codeberg.org/mrmn/PdfDing",
    "homepage": "https://www.pdfding.com",
-   "license": "",
-   "lang": "",
-   "updated": "2026-11-14",
+   "license": "AGPL-3.0",
+   "lang": "Python",
+   "updated": "2026-11-15",
    "doc": "human/fichas/pdfding.md",
    "previously_registered_local": true,
    "access": {
@@ -49794,7 +49818,7 @@
      "pdf"
     ],
     "category_verdict": "confirmed",
-    "note": "Fuente actualizada a Codeberg, donde continúa el desarrollo; el repositorio de GitHub está archivado. La guía de instalación oficial no cambia.",
+    "note": "Fuente canónica cambiada a Codeberg (codeberg.org/mrmn/PdfDing); el repositorio de GitHub mrmn2/PdfDing está archivado ('NOW MANAGED ON CODEBERG'). Se conserva gh/github_id como identidad de la estrella original. Las 4 secciones se reescribieron desde el README de Codeberg.",
     "checks": [
      "identity",
      "category",
@@ -49810,9 +49834,9 @@
     "previous_source": "https://github.com/mrmn2/PdfDing/blob/master/README.md"
    },
    "source_archived": false,
-   "que_es": "Gestor, visor y editor de PDF autoalojado de mrmn2. **El repositorio de GitHub está archivado**: el proyecto se gestiona ahora en Codeberg (codeberg.org/mrmn/PdfDing); último push en GitHub en agosto de 2026.",
-   "que_hace": "Permite leer PDF en el navegador en varios dispositivos recordando la posición, organizar la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos y archivo, editar con texto, resaltados, dibujos y firmas, exportar resaltados y comentarios, compartir por enlace o QR con control de acceso y tomar notas en Markdown. Incluye SSO por OIDC y 2FA (TOTP y WebAuthn).",
-   "como_lo_hace": "Aplicación web autoalojada pensada para ser mínima y rápida, desplegada con Docker, Docker Compose o Helm, o en PikaPods [DATO NO VERIFICADO: stack y base de datos, no descritos en el README].",
+   "que_es": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de 2026; el repositorio de GitHub (mrmn2/PdfDing) está archivado y solo conserva la historia hasta agosto de 2026. Es un proyecto maduro mantenido principalmente por una persona, que se sostiene con donaciones.",
+   "que_hace": "Permite leer PDF en el navegador desde varios dispositivos y recuerda la posición para continuar donde se dejó. Organiza la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos, archivo y acciones masivas, y muestra barras de progreso de lectura. Permite editar PDF añadiendo texto, resaltados, dibujos y firmas reutilizables, y gestionar o exportar resaltados y comentarios en secciones propias. Comparte colecciones o PDF con público externo mediante enlace o código QR con control de acceso opcional. Incluye modo oscuro, modo de color invertido, SSO por OIDC y 2FA (TOTP y WebAuthn). No incluye OCR ni funciones de IA.",
+   "como_lo_hace": "Aplicación web en Python con Django (según su pyproject.toml en Codeberg, Python ≥3.12), distribuida como imagen Docker `mrmn/pdfding` para amd64 y arm64. La guía oficial la arranca con `docker run` en el puerto 8000, con volúmenes para la base de datos SQLite y los archivos, y variables como `HOST_NAME` y `SECRET_KEY`. También documenta Docker Compose, Podman y Helm, y existe hosting gestionado en PikaPods (~2,70 USD/mes). Las opciones de configuración (incluida la base de datos alternativa) están en docs.pdfding.com/configuration [DATO NO VERIFICADO: soporte de PostgreSQL no confirmado en las páginas revisadas]. Las instrucciones antiguas que apuntan a GitHub ya no reciben cambios.",
    "combina_con": [
     {
      "id": "ocrmypdf",
@@ -49830,9 +49854,11 @@
      "orden_instalacion": "Usa la imagen y la documentación de Codeberg."
     }
    ],
-   "descripcion_notas": "Actualiza la URL del catálogo a Codeberg. Se retiraron markitdown, ppt-master y reveal.js por falta de relación.",
+   "descripcion_notas": "Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las estrellas mostradas (~1,8k) son las de GitHub, Codeberg tiene muy pocas. Se retiraron markitdown, ppt-master y reveal.js por falta de relación. Licencia AGPL-3.0: si modificas el código y lo ofreces como servicio, debes publicar los cambios.",
    "descripcion_fuentes": [
-    "https://github.com/mrmn2/PdfDing/blob/master/README.md"
+    "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+    "https://docs.pdfding.com/getting_started/docker/",
+    "https://codeberg.org/mrmn/PdfDing/src/branch/master/pyproject.toml"
    ],
    "descripcion_revision": {
     "batch": "07-documentos-ocr-pdf",
@@ -49844,6 +49870,18 @@
     "name_with_owner": "mrmn2/PdfDing",
     "archived": true,
     "pushed_at": "2026-08-29",
+    "description": "NOW MANAGED ON CODEBERG",
+    "checked_at": "2026-11-15"
+   },
+   "descripcion_origen": {
+    "host": "codeberg",
+    "name_with_owner": "mrmn/PdfDing",
+    "url": "https://codeberg.org/mrmn/PdfDing",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "latest_release": "v1.15.0 (2026-11-01)",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
     "checked_at": "2026-11-15"
    }
   },
@@ -57704,7 +57742,11 @@
     "context7",
     "serena"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "superpowers",
+    "ecc",
+    "gstack"
+   ],
    "repo": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
    "homepage": "https://superclaude.netlify.app/",
    "license": "MIT",
@@ -57824,7 +57866,7 @@
      "orden_instalacion": "Mediante airis-mcp-gateway."
     }
    ],
-   "descripcion_notas": "Inyecta muchas instrucciones: puede chocar con otros marcos como superpowers o ecc; usa uno.",
+   "descripcion_notas": "Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos.",
    "descripcion_fuentes": [
     "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
    ],
@@ -61178,7 +61220,9 @@
     "posthog",
     "open-seo"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "geo-seo-claude"
+   ],
    "repo": "https://github.com/AgriciDaniel/claude-seo",
    "homepage": "skool.com/ai-marketing-hub-pro",
    "license": "MIT",
@@ -61301,7 +61345,7 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "descripcion_notas": "Se solapa con geo-seo-claude; elige uno para auditorías.",
+   "descripcion_notas": "Alternativa (elige una): geo-seo-claude.",
    "descripcion_fuentes": [
     "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
    ],
@@ -66794,7 +66838,11 @@
     "codex",
     "opencode"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "superclaude-framework",
+    "superpowers",
+    "ecc"
+   ],
    "repo": "https://github.com/garrytan/gstack",
    "homepage": "",
    "license": "MIT",
@@ -66932,7 +66980,8 @@
     "primary_language": "TypeScript",
     "latest_release": "v1.99.4.0 (2026-11-15)",
     "checked_at": "2026-11-15"
-   }
+   },
+   "descripcion_notas": "Alternativas (elige una): superclaude-framework, superpowers, ecc."
   },
   "cleanyourtv": {
    "name": "cleanyourtv",
@@ -74822,7 +74871,11 @@
     "codex",
     "opencode"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "ui-ux-pro-max-skill",
+    "taste-skill",
+    "impeccable"
+   ],
    "repo": "https://github.com/Nutlope/hallmark",
    "homepage": "https://www.usehallmark.com/",
    "license": "MIT",
@@ -74944,7 +74997,7 @@
      "orden_instalacion": "`--agent opencode`."
     }
    ],
-   "descripcion_notas": "Se solapa con impeccable y taste-skill (el propio README cita a impeccable como referencia).",
+   "descripcion_notas": "Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, impeccable. El propio README cita a impeccable como referencia.",
    "descripcion_fuentes": [
     "https://github.com/Nutlope/hallmark/blob/main/README.md"
    ],
@@ -77179,7 +77232,10 @@
     "codex",
     "marketingskills"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "humanizer",
+    "stop-slop"
+   ],
    "repo": "https://github.com/petergyang/no-ai-slop",
    "homepage": "https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns",
    "license": "MIT",
@@ -77300,7 +77356,7 @@
      "orden_instalacion": "Genera primero y revisa después."
     }
    ],
-   "descripcion_notas": "Se solapa con humanizer y stop-slop: usa uno como revisor principal.",
+   "descripcion_notas": "Alternativas (elige una): humanizer, stop-slop.",
    "descripcion_fuentes": [
     "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
    ],

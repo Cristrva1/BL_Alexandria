@@ -29,7 +29,7 @@
      "orden_instalacion": "Humaniza primero; programa después."
     }
    ],
-   "notas": "Alternativa (elige una): stop-slop.",
+   "notas": "Alternativas (elige una): no-ai-slop, stop-slop.",
    "fuentes": [
     "https://github.com/blader/humanizer/blob/main/README.md"
    ],
@@ -64,7 +64,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+   "notas": "Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
    "fuentes": [
     "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
    ],
@@ -171,7 +171,7 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "notas": "Revisa el script antes de ejecutar `curl | bash`. Se solapa en parte con claude-seo.",
+   "notas": "Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.",
    "fuentes": [
     "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
    ],
@@ -312,7 +312,7 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "notas": "Se solapa con geo-seo-claude; elige uno para auditorías.",
+   "notas": "Alternativa (elige una): geo-seo-claude.",
    "fuentes": [
     "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
    ],
@@ -483,7 +483,7 @@
      "orden_instalacion": "Genera primero y revisa después."
     }
    ],
-   "notas": "Se solapa con humanizer y stop-slop: usa uno como revisor principal.",
+   "notas": "Alternativas (elige una): humanizer, stop-slop.",
    "fuentes": [
     "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
    ],

@@ -414,10 +414,22 @@ def _four_sections(cat: Catalog, repo: dict[str, Any], base: str) -> list[str]:
         lines += ["## ¿Con qué otros repos se combina?", "", "| Repo | Para qué juntarlos | Orden de instalación y cuidados |", "|---|---|---|", *rows, ""]
     if repo.get("descripcion_notas"):
         lines += [f"**Notas:** {repo['descripcion_notas'].strip()}", ""]
+    origen = repo.get("descripcion_origen") or {}
+    if origen:
+        # Proyecto alojado fuera de GitHub (p. ej. Codeberg): su estado se lee de la forja canónica.
+        host = {"codeberg": "Codeberg", "gitlab": "GitLab", "huggingface": "Hugging Face"}.get(origen.get("host"), origen.get("host") or "la forja original")
+        partes = [f"Estado en {host}: {'⚠️ archivado (solo lectura)' if origen.get('archived') else 'activo'}"]
+        if origen.get("pushed_at"):
+            partes.append(f"última actividad {origen['pushed_at']}")
+        if origen.get("latest_release"):
+            partes.append(f"última versión publicada {origen['latest_release']}")
+        if origen.get("license"):
+            partes.append(f"licencia declarada {origen['license']}")
+        lines += [" · ".join(partes) + f" (consultado el {origen.get('checked_at') or 'fecha por confirmar'}).", ""]
     github = repo.get("descripcion_github") or {}
     if github:
         estado = "⚠️ archivado (solo lectura)" if github.get("archived") else "activo"
-        partes = [f"Estado en GitHub: {estado}"]
+        partes = [f"{'Copia antigua en GitHub' if origen else 'Estado en GitHub'}: {estado}"]
         if github.get("renamed_to"):
             partes.append(f"renombrado a `{github['renamed_to']}`")
         if github.get("pushed_at"):

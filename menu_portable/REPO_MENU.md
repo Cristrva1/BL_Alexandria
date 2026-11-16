@@ -256,18 +256,18 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `claude-plugins-official` [S|cld|E|?] — Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. — tags: skills,coding-agent,mcp — prov: anthropic — alt: wshobson-agents
 - `claude-token-efficient` [S|loc|E|+] — Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. — tags: metodologia,python — tools: claude-code
 - `codex-plugin-cc` [S|cld|E|+] — Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. — tags: metodologia,javascript — prov: openai — tools: claude-code
-- `ecc` [S|loc|H|+] — Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacida — tags: automation,skills,javascript
+- `ecc` [S|loc|H|+] — Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacida — tags: automation,skills,javascript — alt: superclaude-framework,superpowers,gstack
 - `elephant-goldfish-model` [S|loc|M|+] — Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complem — tags: metodologia,skill,python
 - `gemini-skills` [S|hyb|E|+] — Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. — tags: catalogos,gemini,gemini-api,skills,python — prov: google
 - `google-skills` [S|loc|M|+] — Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatib — tags: catalogos,skill,python
 - `grok-plugin-claude-code` [S|cld|E|+] — Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. — tags: metodologia,ai-agents,claude-code,grok,grok-cli,plugin,xai,javascript — prov: xai — tools: claude-code
-- `gstack` [S|loc|M|+] — Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude  — tags: metodologia,skill,typescript
+- `gstack` [S|loc|M|+] — Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude  — tags: metodologia,skill,typescript — alt: superclaude-framework,superpowers,ecc
 - `plugins` [D|loc|E|?] — Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. — tags: catalogos,reference,typescript
 - `ponytail` [S|loc|E|+] — Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribe — tags: skills,coding-agent
 - `skills` [S|cld|E|+] — Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plu — tags: skills,coding-agent
 - `spec-kit` [S|loc|E|?] — Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. — tags: coding-agent,skills,python — alt: bmad-method
-- `superclaude-framework` [S|hyb|M|+] — Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. — tags: metodologia,python — tools: claude-code
-- `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills
+- `superclaude-framework` [S|hyb|M|+] — Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. — tags: metodologia,python — tools: claude-code — alt: superpowers,ecc,gstack
+- `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills,superclaude-framework,ecc,gstack
 - `wshobson-agents` [S|hyb|E|+] — Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otr — tags: skills,coding-agent,agents,python — alt: claude-plugins-official,antigravity-awesome-skills,agency-agents
 
 ### 3. Construir agentes y coordinar equipos de IA (30)
@@ -535,7 +535,7 @@ Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 - `pdf-craft` [L|hyb|M|+] — Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamien — tags: ocr,library,python — prov: local — alt: marker
 - `pdf-inspector` [L|loc|E|+] — Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. — tags: pdf,docs,rust
 - `pdfcraft` [A|loc|E|?] — Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y co — tags: pdf,typescript — alt: stirling-pdf
-- `pdfding` [A|loc|E|?] — Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura. — tags: pdf,docker
+- `pdfding` [A|loc|E|?] — Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lec — tags: pdf,docker
 - `pdfmathtranslate` [A|hyb|E|+] — Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. — tags: pdf,docs,python — prov: openai,google,local
 - `stirling-pdf` [A|loc|E|+] — Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. — tags: pdf,docker — alt: pdfcraft
 - `tesseract` [A|loc|E|?] — Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idio — tags: ocr,cpp — alt: paddleocr
@@ -844,7 +844,7 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `anatomy` [S|loc|M|+] — Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales op — tags: skills,skill,javascript
 - `arcads-claude-code` [S|cld|M|+] — Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, S — tags: video,image,skills,python
 - `blender-skills` [S|loc|M|+] — Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexio — tags: creacion-3d,skill,typescript
-- `claude-seo` [S|loc|M|+] — Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de u — tags: dominio,skill,python
+- `claude-seo` [S|loc|M|+] — Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de u — tags: dominio,skill,python — alt: geo-seo-claude
 - `creative-architect` [S|hyb|E|+] — Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de ima — tags: direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect — prov: anthropic,openai
 - `design-dna` [S|loc|M|+] — Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo cohe — tags: skills,skill,javascript
 - `design.md` [L|cld|E|+] — Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones. — tags: skills,design,typescript
@@ -852,12 +852,12 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `financial-services` [S|cld|M|+] — Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. — tags: dominio,python — prov: anthropic
 - `front-end-checklist` [D|loc|E|?] — Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. — tags: skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
 - `genjutsu` [S|loc|M|+] — Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. — tags: skills,skill,python
-- `geo-seo-claude` [S|cld|E|+] — Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms — tags: skills,search,pdf,python — prov: anthropic
+- `geo-seo-claude` [S|cld|E|+] — Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms — tags: skills,search,pdf,python — prov: anthropic — alt: claude-seo
 - `gsap-skills` [S|loc|M|+] — Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. — tags: skills,skill,reference
-- `hallmark` [S|loc|M|+] — Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y cohere — tags: skills,skill,css
-- `humanizer` [S|hyb|E|+] — Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. — tags: skills,prompts,docs — alt: stop-slop
+- `hallmark` [S|loc|M|+] — Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y cohere — tags: skills,skill,css — alt: ui-ux-pro-max-skill,taste-skill,impeccable
+- `humanizer` [S|hyb|E|+] — Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. — tags: skills,prompts,docs — alt: stop-slop,no-ai-slop
 - `i-have-adhd` [S|loc|M|?] — Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. — tags: escritura,skill,python
-- `impeccable` [S|cld|E|+] — Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. — tags: skills,design,rust
+- `impeccable` [S|cld|E|+] — Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. — tags: skills,design,rust — alt: ui-ux-pro-max-skill,taste-skill,hallmark
 - `instagram-agent-skill` [S|loc|M|+] — Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de  — tags: dominio,skill,python
 - `linkedin-agent-skill` [S|loc|M|+] — Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de Linke — tags: dominio,skill,python
 - `logo-design-skill` [S|loc|M|?] — Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de dise — tags: skills,skill,html
@@ -865,16 +865,16 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `minimalist-entrepreneur-skills` [S|loc|M|+] — Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con u — tags: dominio,skill,reference
 - `modern-web-guidance` [S|loc|M|+] — Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. — tags: skills,skill,reference
 - `motion-design-skill` [S|loc|M|+] — Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interface — tags: skills,skill,reference
-- `no-ai-slop` [S|loc|M|+] — Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con — tags: escritura,skill,python
+- `no-ai-slop` [S|loc|M|+] — Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con — tags: escritura,skill,python — alt: humanizer,stop-slop
 - `scientific-agent-skills` [S|loc|M|+] — Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas d — tags: dominio,skill,python
 - `skills-emil` [S|cld|E|+] — Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrolla — tags: skills,design
 - `social-media-research-skills` [S|cld|M|+] — Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. — tags: dominio,agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor — tools: claude-code,codex — alt: last30days-skill
 - `stitch-skills` [S|cld|E|?] — Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. — tags: skills,design,ui
-- `stop-slop` [S|hyb|E|?] — Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbric — tags: skills,prompts,docs — alt: humanizer
-- `taste-skill` [S|cld|E|+] — Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movie — tags: skills,design,javascript
+- `stop-slop` [S|hyb|E|?] — Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbric — tags: skills,prompts,docs — alt: humanizer,no-ai-slop
+- `taste-skill` [S|cld|E|+] — Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movie — tags: skills,design,javascript — alt: ui-ux-pro-max-skill,impeccable,hallmark
 - `threejs-game-skills` [S|loc|M|+] — Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros o — tags: skills,skill,python
 - `threejs-skills` [S|loc|M|+] — Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. — tags: skills,skill,reference — alt: 3dviz-pro-max
-- `ui-ux-pro-max-skill` [S|cld|E|+] — Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para  — tags: skills,design,python
+- `ui-ux-pro-max-skill` [S|cld|E|+] — Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para  — tags: skills,design,python — alt: taste-skill,impeccable,hallmark
 
 ### 28. Visión artificial, rostros y percepción (19)
 Detalle: `REPO_MENU_cats/28-visi-n-artificial-rostros-y-percepci-n.md`

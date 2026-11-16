@@ -63,7 +63,7 @@
      "orden_instalacion": "Genera primero y valida después con `npx @google/design.md lint`."
     }
    ],
-   "notas": "Se quitaron taste-skill e impeccable: se solapan en función, no se complementan.",
+   "notas": "Alternativas (elige una): taste-skill, impeccable, hallmark.",
    "fuentes": [
     "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md"
    ],
@@ -98,7 +98,7 @@
      "orden_instalacion": "Configura antes el MCP de Stitch."
     }
    ],
-   "notas": "Se solapa con ui-ux-pro-max-skill, impeccable y hallmark; conviene elegir uno como guía principal.",
+   "notas": "Alternativas (elige una): ui-ux-pro-max-skill, impeccable, hallmark.",
    "fuentes": [
     "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
    ],
@@ -144,7 +144,8 @@
     "primary_language": "Rust",
     "latest_release": "cli-v4.9.2 (2026-11-16)",
     "checked_at": "2026-11-15"
-   }
+   },
+   "notas": "Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, hallmark."
   },
   "skills-emil": {
    "que_es": "Skills de diseño e ingeniería de interfaces (MIT) de Emil Kowalski, ex Vercel y Linear y autor de la biblioteca Sonner. Activo, sin releases.",
@@ -471,7 +472,7 @@
      "orden_instalacion": "`--agent opencode`."
     }
    ],
-   "notas": "Se solapa con impeccable y taste-skill (el propio README cita a impeccable como referencia).",
+   "notas": "Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, impeccable. El propio README cita a impeccable como referencia.",
    "fuentes": [
     "https://github.com/Nutlope/hallmark/blob/main/README.md"
    ],

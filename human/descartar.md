@@ -24,8 +24,11 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Awesome Claude Skills](fichas/awesome-claude-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [Awesome Claude Code](fichas/awesome-claude-code.md) |
 | [BMAD Method](fichas/bmad-method.md) | [Spec Kit](fichas/spec-kit.md) |
 | [Claude Code Plugins Directory](fichas/claude-plugins-official.md) | [wshobson/agents](fichas/wshobson-agents.md) |
+| [ECC](fichas/ecc.md) | [SuperClaude_Framework](fichas/superclaude-framework.md), [superpowers](fichas/superpowers.md), [gstack](fichas/gstack.md) |
+| [gstack](fichas/gstack.md) | [SuperClaude_Framework](fichas/superclaude-framework.md), [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md) |
 | [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md) |
-| [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) |
+| [SuperClaude_Framework](fichas/superclaude-framework.md) | [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
+| [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md), [SuperClaude_Framework](fichas/superclaude-framework.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
 | [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
 | [Agent Development Kit (ADK)](fichas/adk-python.md) | [LangGraph](fichas/langgraph.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
 | [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md) |
@@ -214,11 +217,18 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [GSAP](fichas/gsap.md) | [Anime.js](fichas/animejs.md) |
 | [motion](fichas/motion.md) | [Anime.js](fichas/animejs.md) |
 | [3dviz-pro-max](fichas/3dviz-pro-max.md) | [threejs-skills](fichas/threejs-skills.md) |
-| [Humanizer](fichas/humanizer.md) | [Stop Slop](fichas/stop-slop.md) |
+| [claude-seo](fichas/claude-seo.md) | [GEO-SEO Claude](fichas/geo-seo-claude.md) |
+| [GEO-SEO Claude](fichas/geo-seo-claude.md) | [claude-seo](fichas/claude-seo.md) |
+| [hallmark](fichas/hallmark.md) | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md), [taste-skill](fichas/taste-skill.md), [impeccable](fichas/impeccable.md) |
+| [Humanizer](fichas/humanizer.md) | [Stop Slop](fichas/stop-slop.md), [no-ai-slop](fichas/no-ai-slop.md) |
+| [impeccable](fichas/impeccable.md) | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md), [taste-skill](fichas/taste-skill.md), [hallmark](fichas/hallmark.md) |
+| [no-ai-slop](fichas/no-ai-slop.md) | [Humanizer](fichas/humanizer.md), [Stop Slop](fichas/stop-slop.md) |
 | [social-media-research-skills](fichas/social-media-research-skills.md) | [last30days](fichas/last30days-skill.md) |
-| [Stop Slop](fichas/stop-slop.md) | [Humanizer](fichas/humanizer.md) |
+| [Stop Slop](fichas/stop-slop.md) | [Humanizer](fichas/humanizer.md), [no-ai-slop](fichas/no-ai-slop.md) |
+| [taste-skill](fichas/taste-skill.md) | [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md), [impeccable](fichas/impeccable.md), [hallmark](fichas/hallmark.md) |
 | [The Agency (agency-agents)](fichas/agency-agents.md) | [wshobson/agents](fichas/wshobson-agents.md) |
 | [threejs-skills](fichas/threejs-skills.md) | [3dviz-pro-max](fichas/3dviz-pro-max.md) |
+| [ui-ux-pro-max-skill](fichas/ui-ux-pro-max-skill.md) | [taste-skill](fichas/taste-skill.md), [impeccable](fichas/impeccable.md), [hallmark](fichas/hallmark.md) |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | [FaceFusion](fichas/facefusion.md) |
 | [face_recognition](fichas/face-recognition.md) | [InsightFace](fichas/insightface.md) |
 | [FaceFusion](fichas/facefusion.md) | [Deep-Live-Cam](fichas/deep-live-cam.md) |

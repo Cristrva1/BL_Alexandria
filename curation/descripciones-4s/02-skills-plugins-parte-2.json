@@ -294,7 +294,7 @@
      "orden_instalacion": "Mediante airis-mcp-gateway."
     }
    ],
-   "notas": "Inyecta muchas instrucciones: puede chocar con otros marcos como superpowers o ecc; usa uno.",
+   "notas": "Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos.",
    "fuentes": [
     "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
    ],
@@ -406,7 +406,8 @@
     "primary_language": "TypeScript",
     "latest_release": "v1.99.4.0 (2026-11-15)",
     "checked_at": "2026-11-15"
-   }
+   },
+   "notas": "Alternativas (elige una): superclaude-framework, superpowers, ecc."
   },
   "elephant-goldfish-model": {
    "que_es": "EGM, plugin de código abierto de Google (Apache 2.0) para asistentes de IA, que separa diseñar con contexto de revisar con ojos frescos. Muy reciente (v0.1.1).",

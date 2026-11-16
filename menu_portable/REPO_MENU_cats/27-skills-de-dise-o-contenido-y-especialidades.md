@@ -188,6 +188,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes contrastar títulos, enlaces o schema con la página
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `posthog`, `open-seo`
+**Alternativas (elige una):** `geo-seo-claude`
 
 ## `creative-architect`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=anthropic,openai · tags=direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect
@@ -435,6 +436,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes separar observación, heurística y propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `playwright`, `open-seo`
+**Alternativas (elige una):** `claude-seo`
 
 ## `gsap-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
@@ -495,6 +497,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes explicar el papel de cada imagen y el orden de lectura
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `ui-ux-pro-max-skill`, `taste-skill`, `impeccable`
 
 ## `humanizer`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,prompts,docs
@@ -525,7 +528,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes aceptar cambios de estilo sin alterar el contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `marketingskills`, `postiz-app`
-**Alternativas (elige una):** `stop-slop`
+**Alternativas (elige una):** `stop-slop`, `no-ai-slop`
 
 ## `i-have-adhd`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
@@ -586,6 +589,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes distinguir reglas deterministas de recomendaciones del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `design.md`
+**Alternativas (elige una):** `ui-ux-pro-max-skill`, `taste-skill`, `hallmark`
 
 ## `instagram-agent-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -829,6 +833,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes aceptar correcciones concretas sin perder información
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `marketingskills`
+**Alternativas (elige una):** `humanizer`, `stop-slop`
 
 ## `scientific-agent-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -980,7 +985,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes justificar cada cambio de redacción
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `marketingskills`, `postiz-app`
-**Alternativas (elige una):** `humanizer`
+**Alternativas (elige una):** `humanizer`, `no-ai-slop`
 
 ## `taste-skill`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,javascript
@@ -1011,6 +1016,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar composición, texto y créditos de recursos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `ffmpeg`, `stitch-skills`
+**Alternativas (elige una):** `ui-ux-pro-max-skill`, `impeccable`, `hallmark`
 
 ## `threejs-game-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,python
@@ -1103,3 +1109,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar colores, tipografía y restricciones de la propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tailwindcss`, `design.md`
+**Alternativas (elige una):** `taste-skill`, `impeccable`, `hallmark`

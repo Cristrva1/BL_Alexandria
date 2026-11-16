@@ -30,6 +30,8 @@ Se clona en `~/.claude/skills/gstack` y se ejecuta `./setup`, que requiere Claud
 | [Codex CLI](codex.md) | Host experimental y segunda opinión documentada. | Codex CLI con sesión iniciada. |
 | [OpenCode](opencode.md) | Host experimental (`--host opencode`). | `./setup --host opencode`. |
 
+**Notas:** Alternativas (elige una): superclaude-framework, superpowers, ecc.
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.99.4.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/garrytan/gstack/blob/main/README.md)</sub>
@@ -106,6 +108,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js
 - **Etiquetas:** `metodologia` `skill` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
+| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
 
 ## Enlaces
 

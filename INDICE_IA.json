@@ -3964,7 +3964,10 @@
    "pick": false,
    "one": "Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque.",
    "alt": [
-    "agent-skills"
+    "agent-skills",
+    "superclaude-framework",
+    "ecc",
+    "gstack"
    ],
    "doc": "human/fichas/superpowers.md",
    "github_id": 1073224795,
@@ -4002,7 +4005,11 @@
    "lib": false,
    "pick": false,
    "one": "Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente.",
-   "alt": [],
+   "alt": [
+    "superclaude-framework",
+    "superpowers",
+    "gstack"
+   ],
    "doc": "human/fichas/ecc.md",
    "github_id": 1136590548,
    "starred_by": "Cristrva1",
@@ -4263,7 +4270,8 @@
    "pick": true,
    "one": "Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.",
    "alt": [
-    "stop-slop"
+    "stop-slop",
+    "no-ai-slop"
    ],
    "doc": "human/fichas/humanizer.md",
    "github_id": 1136666433,
@@ -4302,7 +4310,8 @@
    "pick": false,
    "one": "Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
    "alt": [
-    "humanizer"
+    "humanizer",
+    "no-ai-slop"
    ],
    "doc": "human/fichas/stop-slop.md",
    "github_id": 1132137660,
@@ -4420,7 +4429,9 @@
    "lib": false,
    "pick": false,
    "one": "Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
-   "alt": [],
+   "alt": [
+    "claude-seo"
+   ],
    "doc": "human/fichas/geo-seo-claude.md",
    "github_id": 1160693255,
    "starred_by": "Cristrva1",
@@ -13044,7 +13055,11 @@
    "lib": false,
    "pick": false,
    "one": "Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a \"plantilla\".",
-   "alt": [],
+   "alt": [
+    "taste-skill",
+    "impeccable",
+    "hallmark"
+   ],
    "doc": "human/fichas/ui-ux-pro-max-skill.md",
    "github_id": 1106996539,
    "starred_by": "Cristrva1",
@@ -13082,7 +13097,11 @@
    "lib": false,
    "pick": false,
    "one": "Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios.",
-   "alt": [],
+   "alt": [
+    "ui-ux-pro-max-skill",
+    "impeccable",
+    "hallmark"
+   ],
    "doc": "human/fichas/taste-skill.md",
    "github_id": 1162099055,
    "starred_by": "Cristrva1",
@@ -13120,7 +13139,11 @@
    "lib": false,
    "pick": false,
    "one": "Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta.",
-   "alt": [],
+   "alt": [
+    "ui-ux-pro-max-skill",
+    "taste-skill",
+    "hallmark"
+   ],
    "doc": "human/fichas/impeccable.md",
    "github_id": 1097346685,
    "starred_by": "Cristrva1",
@@ -16614,9 +16637,12 @@
    ],
    "stars": 1842,
    "gh": "mrmn2/PdfDing",
+   "repository_host": "codeberg",
+   "source_repo": "mrmn/PdfDing",
+   "github_archived": true,
    "lib": false,
    "pick": false,
-   "one": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
+   "one": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
    "alt": [],
    "doc": "human/fichas/pdfding.md",
    "github_id": 894891699,
@@ -17577,7 +17603,11 @@
    "lib": false,
    "pick": false,
    "one": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
-   "alt": [],
+   "alt": [
+    "superpowers",
+    "ecc",
+    "gstack"
+   ],
    "doc": "human/fichas/superclaude-framework.md",
    "agent_tools": [
     "claude-code"
@@ -20095,7 +20125,9 @@
    "lib": false,
    "pick": false,
    "one": "Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
-   "alt": [],
+   "alt": [
+    "geo-seo-claude"
+   ],
    "stars": 29424,
    "github_id": 1152014594,
    "gh": "AgriciDaniel/claude-seo",
@@ -21638,7 +21670,11 @@
    "lib": false,
    "pick": false,
    "one": "Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.",
-   "alt": [],
+   "alt": [
+    "superclaude-framework",
+    "superpowers",
+    "ecc"
+   ],
    "stars": 141589,
    "github_id": 1179264259,
    "gh": "garrytan/gstack",
@@ -23878,7 +23914,11 @@
    "lib": false,
    "pick": false,
    "one": "Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.",
-   "alt": [],
+   "alt": [
+    "ui-ux-pro-max-skill",
+    "taste-skill",
+    "impeccable"
+   ],
    "stars": 55089,
    "github_id": 1222917575,
    "gh": "Nutlope/hallmark",
@@ -24527,7 +24567,10 @@
    "lib": false,
    "pick": false,
    "one": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
-   "alt": [],
+   "alt": [
+    "humanizer",
+    "stop-slop"
+   ],
    "stars": 13508,
    "github_id": 1291783779,
    "gh": "petergyang/no-ai-slop",

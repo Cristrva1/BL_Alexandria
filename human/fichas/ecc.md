@@ -31,7 +31,7 @@ Se instala como plugin `ecc@ecc` en Claude Code (asistente guiado o comandos nat
 | [OpenCode](opencode.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Adaptador con capacidades limitadas. | Igual que arriba. |
 
-**Notas:** El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
+**Notas:** Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.2.3 (2026-10-01) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -107,6 +107,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js compatible;  Git y cliente que elegirá el instalador
 - **Etiquetas:** `automation` `skills` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
+| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 
 ## Enlaces
 

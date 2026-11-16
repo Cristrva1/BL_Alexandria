@@ -30,7 +30,7 @@ Una carpeta con `SKILL.md` y archivos de referencia (frases, estructuras) que se
 | [Marketing Skills](marketingskills.md) | Limpiar textos generados por las skills de marketing (combinación por arquitectura). | Genera primero y revisa después. |
 | [postiz-app](postiz-app.md) | Revisar publicaciones antes de programarlas (combinación por arquitectura). | Igual que arriba. |
 
-**Notas:** Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.
+**Notas:** Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.
 
 Estado en GitHub: activo · último push 2026-03-17 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -105,6 +105,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Humanizer](humanizer.md) | 69.1k | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
+| [no-ai-slop](no-ai-slop.md) | 13.5k | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. |
 
 ## Enlaces
 

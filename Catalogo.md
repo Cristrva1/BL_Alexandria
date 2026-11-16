@@ -587,7 +587,7 @@ _Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el format
 | [PDFMathTranslate](human/fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida | 🖥️ app | 🟢 fácil |
 | [docuseal](human/fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [pdfcraft](human/fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
-| [PdfDing](human/fichas/pdfding.md) | Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [PdfDing](human/fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Gestión y archivo de documentos
 

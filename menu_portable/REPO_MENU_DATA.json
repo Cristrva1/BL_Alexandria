@@ -15789,7 +15789,11 @@
         "opencode",
         "gemini-cli"
       ],
-      "alt": []
+      "alt": [
+        "superclaude-framework",
+        "superpowers",
+        "gstack"
+      ]
     },
     {
       "id": "elephant-goldfish-model",
@@ -16397,7 +16401,11 @@
         "codex",
         "opencode"
       ],
-      "alt": []
+      "alt": [
+        "superclaude-framework",
+        "superpowers",
+        "ecc"
+      ]
     },
     {
       "id": "plugins",
@@ -16985,7 +16993,11 @@
         "context7",
         "serena"
       ],
-      "alt": [],
+      "alt": [
+        "superpowers",
+        "ecc",
+        "gstack"
+      ],
       "agent_tools": [
         "claude-code"
       ]
@@ -17108,7 +17120,10 @@
         "hermes-agent"
       ],
       "alt": [
-        "agent-skills"
+        "agent-skills",
+        "superclaude-framework",
+        "ecc",
+        "gstack"
       ]
     },
     {
@@ -43892,7 +43907,7 @@
           "pdf"
         ],
         "category_verdict": "confirmed",
-        "note": "Fuente actualizada a Codeberg, donde continúa el desarrollo; el repositorio de GitHub está archivado. La guía de instalación oficial no cambia.",
+        "note": "Fuente canónica cambiada a Codeberg (codeberg.org/mrmn/PdfDing); el repositorio de GitHub mrmn2/PdfDing está archivado ('NOW MANAGED ON CODEBERG'). Se conserva gh/github_id como identidad de la estrella original. Las 4 secciones se reescribieron desde el README de Codeberg.",
         "checks": [
           "identity",
           "category",
@@ -43907,8 +43922,8 @@
         "installation_tested": false,
         "previous_source": "https://github.com/mrmn2/PdfDing/blob/master/README.md"
       },
-      "one": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
-      "desc": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
+      "one": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
+      "desc": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
       "stack": "Docker o entorno de la guía; volumen para documentos; cuenta de prueba",
       "repo": "https://codeberg.org/mrmn/PdfDing",
       "install": "Seguir la instalación original: https://docs.pdfding.com/getting_started/docker/",
@@ -73503,7 +73518,9 @@
         "posthog",
         "open-seo"
       ],
-      "alt": []
+      "alt": [
+        "geo-seo-claude"
+      ]
     },
     {
       "id": "creative-architect",
@@ -74467,7 +74484,9 @@
         "playwright",
         "open-seo"
       ],
-      "alt": []
+      "alt": [
+        "claude-seo"
+      ]
     },
     {
       "id": "gsap-skills",
@@ -74706,7 +74725,11 @@
         "codex",
         "opencode"
       ],
-      "alt": []
+      "alt": [
+        "ui-ux-pro-max-skill",
+        "taste-skill",
+        "impeccable"
+      ]
     },
     {
       "id": "humanizer",
@@ -74827,7 +74850,8 @@
         "postiz-app"
       ],
       "alt": [
-        "stop-slop"
+        "stop-slop",
+        "no-ai-slop"
       ]
     },
     {
@@ -75068,7 +75092,11 @@
         "codex",
         "design.md"
       ],
-      "alt": []
+      "alt": [
+        "ui-ux-pro-max-skill",
+        "taste-skill",
+        "hallmark"
+      ]
     },
     {
       "id": "instagram-agent-skill",
@@ -76024,7 +76052,10 @@
         "codex",
         "marketingskills"
       ],
-      "alt": []
+      "alt": [
+        "humanizer",
+        "stop-slop"
+      ]
     },
     {
       "id": "scientific-agent-skills",
@@ -76632,7 +76663,8 @@
         "postiz-app"
       ],
       "alt": [
-        "humanizer"
+        "humanizer",
+        "no-ai-slop"
       ]
     },
     {
@@ -76754,7 +76786,11 @@
         "ffmpeg",
         "stitch-skills"
       ],
-      "alt": []
+      "alt": [
+        "ui-ux-pro-max-skill",
+        "impeccable",
+        "hallmark"
+      ]
     },
     {
       "id": "threejs-game-skills",
@@ -77116,7 +77152,11 @@
         "tailwindcss",
         "design.md"
       ],
-      "alt": []
+      "alt": [
+        "taste-skill",
+        "impeccable",
+        "hallmark"
+      ]
     },
     {
       "id": "4d-humans",

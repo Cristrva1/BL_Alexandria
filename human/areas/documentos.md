@@ -31,7 +31,7 @@ Leer, convertir, firmar y organizar archivos.
 | [paperless-ngx](../fichas/paperless-ngx.md) | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | Sin clave propia de API de IA en la ruta básica |
 | [PDF Inspector](../fichas/pdf-inspector.md) | Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. | Sin clave propia de API de IA en la ruta básica |
 | [pdfcraft](../fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Sin clave propia de API de IA en la ruta básica |
-| [PdfDing](../fichas/pdfding.md) | Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura. | Sin clave propia de API de IA en la ruta básica |
+| [PdfDing](../fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Sin clave propia de API de IA en la ruta básica |
 | [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida |
 | [Stirling-PDF](../fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | Sin clave propia de API de IA en la ruta básica |
 | [Unstructured](../fichas/unstructured.md) | ETL open source que transforma documentos complejos en datos estructurados para LLM. | API de IA opcional |

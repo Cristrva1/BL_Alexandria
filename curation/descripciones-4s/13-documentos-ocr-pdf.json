@@ -503,9 +503,9 @@
    }
   },
   "pdfding": {
-   "que_es": "Gestor, visor y editor de PDF autoalojado de mrmn2. **El repositorio de GitHub está archivado**: el proyecto se gestiona ahora en Codeberg (codeberg.org/mrmn/PdfDing); último push en GitHub en agosto de 2026.",
-   "que_hace": "Permite leer PDF en el navegador en varios dispositivos recordando la posición, organizar la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos y archivo, editar con texto, resaltados, dibujos y firmas, exportar resaltados y comentarios, compartir por enlace o QR con control de acceso y tomar notas en Markdown. Incluye SSO por OIDC y 2FA (TOTP y WebAuthn).",
-   "como_lo_hace": "Aplicación web autoalojada pensada para ser mínima y rápida, desplegada con Docker, Docker Compose o Helm, o en PikaPods [DATO NO VERIFICADO: stack y base de datos, no descritos en el README].",
+   "que_es": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de 2026; el repositorio de GitHub (mrmn2/PdfDing) está archivado y solo conserva la historia hasta agosto de 2026. Es un proyecto maduro mantenido principalmente por una persona, que se sostiene con donaciones.",
+   "que_hace": "Permite leer PDF en el navegador desde varios dispositivos y recuerda la posición para continuar donde se dejó. Organiza la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos, archivo y acciones masivas, y muestra barras de progreso de lectura. Permite editar PDF añadiendo texto, resaltados, dibujos y firmas reutilizables, y gestionar o exportar resaltados y comentarios en secciones propias. Comparte colecciones o PDF con público externo mediante enlace o código QR con control de acceso opcional. Incluye modo oscuro, modo de color invertido, SSO por OIDC y 2FA (TOTP y WebAuthn). No incluye OCR ni funciones de IA.",
+   "como_lo_hace": "Aplicación web en Python con Django (según su pyproject.toml en Codeberg, Python ≥3.12), distribuida como imagen Docker `mrmn/pdfding` para amd64 y arm64. La guía oficial la arranca con `docker run` en el puerto 8000, con volúmenes para la base de datos SQLite y los archivos, y variables como `HOST_NAME` y `SECRET_KEY`. También documenta Docker Compose, Podman y Helm, y existe hosting gestionado en PikaPods (~2,70 USD/mes). Las opciones de configuración (incluida la base de datos alternativa) están en docs.pdfding.com/configuration [DATO NO VERIFICADO: soporte de PostgreSQL no confirmado en las páginas revisadas]. Las instrucciones antiguas que apuntan a GitHub ya no reciben cambios.",
    "combina_con": [
     {
      "id": "ocrmypdf",
@@ -523,14 +523,28 @@
      "orden_instalacion": "Usa la imagen y la documentación de Codeberg."
     }
    ],
-   "notas": "Actualiza la URL del catálogo a Codeberg. Se retiraron markitdown, ppt-master y reveal.js por falta de relación.",
+   "notas": "Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las estrellas mostradas (~1,8k) son las de GitHub, Codeberg tiene muy pocas. Se retiraron markitdown, ppt-master y reveal.js por falta de relación. Licencia AGPL-3.0: si modificas el código y lo ofreces como servicio, debes publicar los cambios.",
    "fuentes": [
-    "https://github.com/mrmn2/PdfDing/blob/master/README.md"
+    "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+    "https://docs.pdfding.com/getting_started/docker/",
+    "https://codeberg.org/mrmn/PdfDing/src/branch/master/pyproject.toml"
    ],
    "github": {
     "name_with_owner": "mrmn2/PdfDing",
     "archived": true,
     "pushed_at": "2026-08-29",
+    "description": "NOW MANAGED ON CODEBERG",
+    "checked_at": "2026-11-15"
+   },
+   "origen": {
+    "host": "codeberg",
+    "name_with_owner": "mrmn/PdfDing",
+    "url": "https://codeberg.org/mrmn/PdfDing",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "latest_release": "v1.15.0 (2026-11-01)",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
     "checked_at": "2026-11-15"
    }
   },

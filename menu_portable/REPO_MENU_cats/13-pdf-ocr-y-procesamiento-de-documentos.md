@@ -403,7 +403,7 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 ## `pdfding`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 
-**Qué es:** Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
+**Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.
 **Stack:** Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 **Acceso y costes:**
 - API de IA: Sin clave propia de API de IA en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios

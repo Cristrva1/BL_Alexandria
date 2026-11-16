@@ -10,7 +10,7 @@
     "topics": 100,
     "recipes": 14,
     "mcp": 127,
-    "labs": 234
+    "labs": 249
   },
   "labels": {
     "role": {
@@ -21038,6 +21038,10 @@
       "b": "wshobson-agents"
     },
     {
+      "a": "claude-seo",
+      "b": "geo-seo-claude"
+    },
+    {
       "a": "codebase-memory-mcp",
       "b": "codegraph"
     },
@@ -21178,6 +21182,18 @@
       "b": "sandbox"
     },
     {
+      "a": "ecc",
+      "b": "gstack"
+    },
+    {
+      "a": "ecc",
+      "b": "superclaude-framework"
+    },
+    {
+      "a": "ecc",
+      "b": "superpowers"
+    },
+    {
       "a": "echarts",
       "b": "recharts"
     },
@@ -21294,6 +21310,26 @@
       "b": "motion"
     },
     {
+      "a": "gstack",
+      "b": "superclaude-framework"
+    },
+    {
+      "a": "gstack",
+      "b": "superpowers"
+    },
+    {
+      "a": "hallmark",
+      "b": "impeccable"
+    },
+    {
+      "a": "hallmark",
+      "b": "taste-skill"
+    },
+    {
+      "a": "hallmark",
+      "b": "ui-ux-pro-max-skill"
+    },
+    {
       "a": "haystack",
       "b": "langchain"
     },
@@ -21331,6 +21367,10 @@
     },
     {
       "a": "humanizer",
+      "b": "no-ai-slop"
+    },
+    {
+      "a": "humanizer",
       "b": "stop-slop"
     },
     {
@@ -21344,6 +21384,14 @@
     {
       "a": "hyperframes",
       "b": "remotion"
+    },
+    {
+      "a": "impeccable",
+      "b": "taste-skill"
+    },
+    {
+      "a": "impeccable",
+      "b": "ui-ux-pro-max-skill"
     },
     {
       "a": "invokeai",
@@ -21570,6 +21618,10 @@
       "b": "sandbox"
     },
     {
+      "a": "no-ai-slop",
+      "b": "stop-slop"
+    },
+    {
       "a": "olmocr",
       "b": "paddleocr"
     },
@@ -21700,6 +21752,14 @@
     {
       "a": "skyvern",
       "b": "stagehand"
+    },
+    {
+      "a": "superclaude-framework",
+      "b": "superpowers"
+    },
+    {
+      "a": "taste-skill",
+      "b": "ui-ux-pro-max-skill"
     },
     {
       "a": "trigger-dev",
@@ -28649,7 +28709,11 @@
         "opencode",
         "gemini-cli"
       ],
-      "alt": [],
+      "alt": [
+        "superclaude-framework",
+        "superpowers",
+        "gstack"
+      ],
       "stack": "Node.js compatible;  Git y cliente que elegirá el instalador",
       "repo_url": "https://github.com/affaan-m/ECC",
       "doc": "human/fichas/ecc.md",
@@ -28786,7 +28850,7 @@
       "que_es": "ECC, de affaan-m, se presenta como un «sistema operativo de harness» para agentes (MIT). Es open core: el producto ECC Pro es una GitHub App de pago para repositorios privados. Muy activo (v2.2.3), con un solo mantenedor financiado por patrocinadores.",
       "que_hace": "Da al agente un sistema de ingeniería coordinado: planifica antes de construir, verifica con tests, revisa su propio trabajo desde un contexto limpio, recuerda lo importante y aprende de forma continua. Incluye 71 agentes, 314 skills, 98 comandos heredados, hooks, reglas, memoria y el escáner de seguridad AgentShield.",
       "como_lo_hace": "Se instala como plugin `ecc@ecc` en Claude Code (asistente guiado o comandos nativos, sin mezclar ambos) y por los paquetes npm `ecc-universal` y `ecc-agentshield`. Funciona mejor con Claude Code; tiene vías nativas para Codex y Qoder y adaptadores limitados para Cursor, OpenCode, Gemini, Zed, Copilot y otros.",
-      "descripcion_notas": "El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
+      "descripcion_notas": "Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
       "descripcion_fuentes": [
         "https://github.com/affaan-m/ECC/blob/main/README.md"
       ],
@@ -28812,7 +28876,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "superclaude-framework",
+          "label": "superclaude-framework"
+        },
+        {
+          "id": "superpowers",
+          "label": "superpowers"
+        },
+        {
+          "id": "gstack",
+          "label": "gstack"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -29503,7 +29580,11 @@
         "codex",
         "opencode"
       ],
-      "alt": [],
+      "alt": [
+        "superclaude-framework",
+        "superpowers",
+        "ecc"
+      ],
       "stack": "Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js",
       "repo_url": "https://github.com/garrytan/gstack",
       "doc": "human/fichas/gstack.md",
@@ -29635,6 +29716,7 @@
       "que_es": "«Fábrica de software» de código abierto (MIT) de Garry Tan, presidente y CEO de Y Combinator, que convierte Claude Code y otros agentes en un equipo de ingeniería virtual. Muy activo (v1.99.4.0), con canal estable y releases frecuentes.",
       "que_hace": "Asigna roles especializados: un CEO que replantea el producto (`/office-hours` escribe un documento de diseño), un jefe de ingeniería que fija la arquitectura, un diseñador contra el «AI slop», un revisor que busca bugs que pasan CI (`/review`), QA que abre un navegador real y reproduce bugs (`/qa`), y `/autoplan` y `/ship` para revisar planes y publicar con tests y revisión.",
       "como_lo_hace": "Se clona en `~/.claude/skills/gstack` y se ejecuta `./setup`, que requiere Claude Code, Git y Bun 1.4.2+. Claude Code tiene soporte completo, con hooks que bloquean pasos indebidos. Codex CLI, OpenCode y Cursor tienen soporte experimental (`--host codex|opencode|cursor`), donde las reglas solo son orientativas. Algunas funciones usan Codex CLI con sesión iniciada como segunda opinión.",
+      "descripcion_notas": "Alternativas (elige una): superclaude-framework, superpowers, ecc.",
       "descripcion_fuentes": [
         "https://github.com/garrytan/gstack/blob/main/README.md"
       ],
@@ -29660,7 +29742,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "superclaude-framework",
+          "label": "superclaude-framework"
+        },
+        {
+          "id": "superpowers",
+          "label": "superpowers"
+        },
+        {
+          "id": "ecc",
+          "label": "ecc"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -30752,7 +30847,11 @@
         "context7",
         "serena"
       ],
-      "alt": [],
+      "alt": [
+        "superpowers",
+        "ecc",
+        "gstack"
+      ],
       "stack": "Claude Code;  Python y pipx según la guía;  copia de configuración revisable",
       "repo_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
       "doc": "human/fichas/superclaude-framework.md",
@@ -30885,7 +30984,7 @@
       "que_es": "Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.",
       "que_hace": "Convierte Claude Code en una plataforma de desarrollo estructurada mediante inyección de instrucciones de comportamiento: 30 comandos `/sc:*` que cubren de la lluvia de ideas al despliegue, 20 agentes especializados, 7 modos de comportamiento y 8 integraciones MCP. Por ejemplo, `/sc:research` hace investigación web profunda con Tavily.",
       "como_lo_hace": "Se instala con pipx (`pipx install superclaude`), que despliega los componentes en Claude Code. `superclaude mcp` instala servidores MCP opcionales (Serena, Sequential, Tavily, Context7, Mindbase) mediante airis-mcp-gateway, con mejoras de velocidad y tokens declaradas por el proyecto [DATO NO VERIFICADO]. El instalador como plugin está previsto para la v5.0.",
-      "descripcion_notas": "Inyecta muchas instrucciones: puede chocar con otros marcos como superpowers o ecc; usa uno.",
+      "descripcion_notas": "Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos.",
       "descripcion_fuentes": [
         "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
       ],
@@ -30911,7 +31010,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "superpowers",
+          "label": "superpowers"
+        },
+        {
+          "id": "ecc",
+          "label": "ecc"
+        },
+        {
+          "id": "gstack",
+          "label": "gstack"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -30960,7 +31072,10 @@
         "hermes-agent"
       ],
       "alt": [
-        "agent-skills"
+        "agent-skills",
+        "superclaude-framework",
+        "ecc",
+        "gstack"
       ],
       "stack": "Cliente compatible;  proyecto pequeño o carpeta de prueba",
       "repo_url": "https://github.com/obra/superpowers",
@@ -31098,7 +31213,7 @@
       "que_es": "Metodología completa de desarrollo para agentes de código de Jesse Vincent y Prime Radiant (MIT), basada en skills combinables. Muy activa (v7.0.2); Prime Radiant ofrece soporte comercial.",
       "que_hace": "Antes de programar, el agente pregunta qué quieres conseguir, redacta una especificación en partes legibles, pide aprobación, crea un plan, aísla el trabajo en git worktrees y ejecuta tareas con subagentes y revisión (`subagent-driven-development`), con TDD. Su componente visual opcional carga el logo de Prime Radiant desde su web por defecto, e incluye la versión instalada: es telemetría mínima que, según el README, no envía detalles del proyecto ni de los prompts.",
       "como_lo_hace": "Skills más instrucciones iniciales y hooks de sesión. Se instala por separado en cada herramienta: Claude Code (`/plugin install superpowers@claude-plugins-official`), Codex, Cursor, Gemini CLI (`gemini extensions install`), Copilot CLI, OpenCode, Hermes Agent y otros.",
-      "descripcion_notas": "Alternativa (elige una): agent-skills. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
+      "descripcion_notas": "Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
       "descripcion_fuentes": [
         "https://github.com/obra/superpowers/blob/main/README.md"
       ],
@@ -31128,6 +31243,18 @@
         {
           "id": "agent-skills",
           "label": "agent-skills"
+        },
+        {
+          "id": "superclaude-framework",
+          "label": "superclaude-framework"
+        },
+        {
+          "id": "ecc",
+          "label": "ecc"
+        },
+        {
+          "id": "gstack",
+          "label": "gstack"
         }
       ],
       "combine_refs": [
@@ -72697,8 +72824,8 @@
         "pdf",
         "docker"
       ],
-      "one": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
-      "desc": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
+      "one": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
+      "desc": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -72719,7 +72846,7 @@
         "Consultar documentos desde varios dispositivos"
       ],
       "gh": "mrmn2/PdfDing",
-      "limits": "El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia",
+      "limits": "El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia. Sin OCR ni IA integrados.",
       "getting_started": {
         "kind": "source",
         "audience": "setup",
@@ -72766,7 +72893,7 @@
           "pdf"
         ],
         "category_verdict": "confirmed",
-        "note": "Fuente actualizada a Codeberg, donde continúa el desarrollo; el repositorio de GitHub está archivado. La guía de instalación oficial no cambia.",
+        "note": "Fuente canónica cambiada a Codeberg (codeberg.org/mrmn/PdfDing); el repositorio de GitHub mrmn2/PdfDing está archivado ('NOW MANAGED ON CODEBERG'). Se conserva gh/github_id como identidad de la estrella original. Las 4 secciones se reescribieron desde el README de Codeberg.",
         "checks": [
           "identity",
           "category",
@@ -72814,7 +72941,7 @@
       "status": "",
       "pick": false,
       "stars": 1842,
-      "license": "",
+      "license": "AGPL-3.0",
       "homepage": "https://www.pdfding.com",
       "combina_con": [
         {
@@ -72833,12 +72960,14 @@
           "orden_instalacion": "Usa la imagen y la documentación de Codeberg."
         }
       ],
-      "que_es": "Gestor, visor y editor de PDF autoalojado de mrmn2. **El repositorio de GitHub está archivado**: el proyecto se gestiona ahora en Codeberg (codeberg.org/mrmn/PdfDing); último push en GitHub en agosto de 2026.",
-      "que_hace": "Permite leer PDF en el navegador en varios dispositivos recordando la posición, organizar la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos y archivo, editar con texto, resaltados, dibujos y firmas, exportar resaltados y comentarios, compartir por enlace o QR con control de acceso y tomar notas en Markdown. Incluye SSO por OIDC y 2FA (TOTP y WebAuthn).",
-      "como_lo_hace": "Aplicación web autoalojada pensada para ser mínima y rápida, desplegada con Docker, Docker Compose o Helm, o en PikaPods [DATO NO VERIFICADO: stack y base de datos, no descritos en el README].",
-      "descripcion_notas": "Actualiza la URL del catálogo a Codeberg. Se retiraron markitdown, ppt-master y reveal.js por falta de relación.",
+      "que_es": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de 2026; el repositorio de GitHub (mrmn2/PdfDing) está archivado y solo conserva la historia hasta agosto de 2026. Es un proyecto maduro mantenido principalmente por una persona, que se sostiene con donaciones.",
+      "que_hace": "Permite leer PDF en el navegador desde varios dispositivos y recuerda la posición para continuar donde se dejó. Organiza la colección con espacios de trabajo, colecciones, etiquetas multinivel, favoritos, archivo y acciones masivas, y muestra barras de progreso de lectura. Permite editar PDF añadiendo texto, resaltados, dibujos y firmas reutilizables, y gestionar o exportar resaltados y comentarios en secciones propias. Comparte colecciones o PDF con público externo mediante enlace o código QR con control de acceso opcional. Incluye modo oscuro, modo de color invertido, SSO por OIDC y 2FA (TOTP y WebAuthn). No incluye OCR ni funciones de IA.",
+      "como_lo_hace": "Aplicación web en Python con Django (según su pyproject.toml en Codeberg, Python ≥3.12), distribuida como imagen Docker `mrmn/pdfding` para amd64 y arm64. La guía oficial la arranca con `docker run` en el puerto 8000, con volúmenes para la base de datos SQLite y los archivos, y variables como `HOST_NAME` y `SECRET_KEY`. También documenta Docker Compose, Podman y Helm, y existe hosting gestionado en PikaPods (~2,70 USD/mes). Las opciones de configuración (incluida la base de datos alternativa) están en docs.pdfding.com/configuration [DATO NO VERIFICADO: soporte de PostgreSQL no confirmado en las páginas revisadas]. Las instrucciones antiguas que apuntan a GitHub ya no reciben cambios.",
+      "descripcion_notas": "Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las estrellas mostradas (~1,8k) son las de GitHub, Codeberg tiene muy pocas. Se retiraron markitdown, ppt-master y reveal.js por falta de relación. Licencia AGPL-3.0: si modificas el código y lo ofreces como servicio, debes publicar los cambios.",
       "descripcion_fuentes": [
-        "https://github.com/mrmn2/PdfDing/blob/master/README.md"
+        "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+        "https://docs.pdfding.com/getting_started/docker/",
+        "https://codeberg.org/mrmn/PdfDing/src/branch/master/pyproject.toml"
       ],
       "descripcion_revision": {
         "batch": "07-documentos-ocr-pdf",
@@ -72850,10 +72979,22 @@
         "name_with_owner": "mrmn2/PdfDing",
         "archived": true,
         "pushed_at": "2026-08-29",
+        "description": "NOW MANAGED ON CODEBERG",
         "checked_at": "2026-11-15"
       },
-      "lead": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
-      "body": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
+      "descripcion_origen": {
+        "host": "codeberg",
+        "name_with_owner": "mrmn/PdfDing",
+        "url": "https://codeberg.org/mrmn/PdfDing",
+        "archived": false,
+        "pushed_at": "2026-11-01",
+        "latest_release": "v1.15.0 (2026-11-01)",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
+      "lead": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
+      "body": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
       "install": {
         "command": "Seguir la instalación original: https://docs.pdfding.com/getting_started/docker/",
         "confidence": "clone",
@@ -113878,7 +114019,9 @@
         "posthog",
         "open-seo"
       ],
-      "alt": [],
+      "alt": [
+        "geo-seo-claude"
+      ],
       "stack": "Claude Code; Python 3.11–3.14; web propia; dependencias de navegador",
       "repo_url": "https://github.com/AgriciDaniel/claude-seo",
       "doc": "human/fichas/claude-seo.md",
@@ -114011,7 +114154,7 @@
       "que_es": "Plugin SEO gratuito y de código abierto (MIT) para Claude Code, de AgriciDaniel. Activo (v2.6.2), con 29 subskills y 20 agentes especialistas.",
       "que_hace": "Ejecuta una auditoría SEO completa en 10–15 minutos y entrega un plan priorizado: SEO técnico (rastreo, indexación, sitemaps, redirecciones, Core Web Vitals), calidad de contenido (E-E-A-T, páginas pobres), datos estructurados Schema.org, visibilidad en buscadores con IA (GEO), SEO local y de comercio electrónico. Hasta 17 agentes trabajan en paralelo y cada recomendación explica por qué importa.",
       "como_lo_hace": "Plugin de Claude Code (marketplace e instalación del plugin) con unos 30 comandos `/seo` en seis grupos, más extensiones opcionales como datos en vivo, generación de imágenes y análisis con PostHog.",
-      "descripcion_notas": "Se solapa con geo-seo-claude; elige uno para auditorías.",
+      "descripcion_notas": "Alternativa (elige una): geo-seo-claude.",
       "descripcion_fuentes": [
         "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
       ],
@@ -114037,7 +114180,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "geo-seo-claude",
+          "label": "geo-seo-claude"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -115562,7 +115710,9 @@
         "playwright",
         "open-seo"
       ],
-      "alt": [],
+      "alt": [
+        "claude-seo"
+      ],
       "stack": "Claude Code; Python; Git Bash en Windows; web propia de prueba",
       "repo_url": "https://github.com/zubair-trabzada/geo-seo-claude",
       "doc": "human/fichas/geo-seo-claude.md",
@@ -115695,7 +115845,7 @@
       "que_es": "Skill para Claude Code de zubair-trabzada (MIT) que optimiza sitios para buscadores con IA (GEO) sin descuidar el SEO tradicional. Activa, sin releases.",
       "que_hace": "Comandos `/geo` para auditoría completa GEO+SEO con subagentes en paralelo, instantánea rápida, puntuación de «citabilidad», acceso de rastreadores de IA (robots.txt), análisis o generación de llms.txt, menciones de marca en plataformas citadas por IA, datos estructurados, SEO técnico, calidad de contenido (E-E-A-T) e informes para clientes, también en PDF con gráficos.",
       "como_lo_hace": "Se instala con un script (macOS/Linux o Git Bash en Windows) que copia la skill y crea un entorno virtual aislado en `~/.claude/skills/geo/.venv/`. Requiere Python 3.10+, Claude Code y Git; uv acelera la instalación y Playwright es opcional para capturas.",
-      "descripcion_notas": "Revisa el script antes de ejecutar `curl | bash`. Se solapa en parte con claude-seo.",
+      "descripcion_notas": "Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.",
       "descripcion_fuentes": [
         "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
       ],
@@ -115720,7 +115870,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "claude-seo",
+          "label": "claude-seo"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -115981,7 +116136,11 @@
         "codex",
         "opencode"
       ],
-      "alt": [],
+      "alt": [
+        "ui-ux-pro-max-skill",
+        "taste-skill",
+        "impeccable"
+      ],
       "stack": "Agente compatible; brief de sitio; acceso a recursos si descargas fotos",
       "repo_url": "https://github.com/Nutlope/hallmark",
       "doc": "human/fichas/hallmark.md",
@@ -116114,7 +116273,7 @@
       "que_es": "Skill de diseño (MIT) de Nutlope, publicada como «hecha por Together AI», para Claude Code, Codex, Cursor y OpenCode. Activa, sin releases.",
       "que_hace": "Busca que las páginas no parezcan generadas por IA: elige tres temas de un catálogo de cincuenta «materiales», construye la página en torno a la acción del visitante y la revisa en un navegador real. Sus controles van por niveles: el «suelo» nunca se omite (contraste, foco, movimiento reducido, datos inventados, diseño móvil roto) y los «reflejos» son los defaults del modelo, que solo pasan con justificación. También rediseña y audita por nombre.",
       "como_lo_hace": "Se instala con `npx skills add nutlope/hallmark -g` (opción `--agent` para un solo agente) o como plugin de Claude Code (`/plugin marketplace add nutlope/hallmark`).",
-      "descripcion_notas": "Se solapa con impeccable y taste-skill (el propio README cita a impeccable como referencia).",
+      "descripcion_notas": "Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, impeccable. El propio README cita a impeccable como referencia.",
       "descripcion_fuentes": [
         "https://github.com/Nutlope/hallmark/blob/main/README.md"
       ],
@@ -116139,7 +116298,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "ui-ux-pro-max-skill",
+          "label": "ui-ux-pro-max-skill"
+        },
+        {
+          "id": "taste-skill",
+          "label": "taste-skill"
+        },
+        {
+          "id": "impeccable",
+          "label": "impeccable"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -116193,7 +116365,8 @@
         "postiz-app"
       ],
       "alt": [
-        "stop-slop"
+        "stop-slop",
+        "no-ai-slop"
       ],
       "stack": "Agente con skills; texto propio breve",
       "repo_url": "https://github.com/blader/humanizer",
@@ -116331,7 +116504,7 @@
       "que_es": "Skill de escritura de código abierto (MIT) de blader que hace que un texto escrito por IA suene a persona sin cambiar su contenido. Muy popular y activa (v4.0.0); el README lleva un patrocinio.",
       "que_hace": "Reescribe borradores eliminando las marcas de escritura de IA descritas en la guía «Signs of AI writing» de Wikipedia: entusiasmo vacío, emojis, fórmulas y estructuras repetidas. Se invoca con `/humanizer`. Edita para lectores humanos, no para burlar detectores de IA; según su README, en una prueba ciega los jueces prefirieron su versión 16 de 16 veces [DATO NO VERIFICADO: prueba del propio proyecto].",
       "como_lo_hace": "Es un conjunto de instrucciones para agentes (formato skill). Se instala como plugin de Claude Code (`/plugin marketplace add blader/humanizer`, requiere Claude Code 2.1.142+) o con `npx skills add blader/humanizer --global --agent claude-code` o `--agent codex`.",
-      "descripcion_notas": "Alternativa (elige una): stop-slop.",
+      "descripcion_notas": "Alternativas (elige una): no-ai-slop, stop-slop.",
       "descripcion_fuentes": [
         "https://github.com/blader/humanizer/blob/main/README.md"
       ],
@@ -116361,6 +116534,10 @@
         {
           "id": "stop-slop",
           "label": "stop-slop"
+        },
+        {
+          "id": "no-ai-slop",
+          "label": "no-ai-slop"
         }
       ],
       "combine_refs": [
@@ -116631,7 +116808,11 @@
         "codex",
         "design.md"
       ],
-      "alt": [],
+      "alt": [
+        "ui-ux-pro-max-skill",
+        "taste-skill",
+        "hallmark"
+      ],
       "stack": "Node para instalador; agente; Chrome o Edge para revisión de página",
       "repo_url": "https://github.com/pbakaus/impeccable",
       "doc": "human/fichas/impeccable.md",
@@ -116766,6 +116947,7 @@
       "que_es": "«Vocabulario de diseño» para agentes de código, de Paul Bakaus, con licencia Apache 2.0. Muy popular y activo (CLI v4.9.2).",
       "que_hace": "Ofrece comandos para dirigir el diseño (`polish`, `bolder`), revisarlo (`critique` puntúa con heurísticas de usabilidad; `audit` revisa accesibilidad) y planificarlo (`shape`, `init` escribe PRODUCT.md, `document` escribe DESIGN.md). Incluye un detector determinista con 62 reglas, sin LLM, para los tics típicos de la IA: Inter en todo, degradados morado-azul, tarjetas anidadas.",
       "como_lo_hace": "Se instala con `npx impeccable install` en la raíz del proyecto y se inicia con `/impeccable init`. Funciona con Claude Code, Cursor, Codex CLI, Copilot, Gemini CLI, OpenCode, Kiro y muchos otros. `npx impeccable detect` analiza directorios o páginas renderizadas (usa Chrome o Edge) y emite JSON o anotaciones de GitHub Actions; guarda su estado en `.impeccable/`.",
+      "descripcion_notas": "Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, hallmark.",
       "descripcion_fuentes": [
         "https://github.com/pbakaus/impeccable/blob/main/README.md"
       ],
@@ -116791,7 +116973,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "ui-ux-pro-max-skill",
+          "label": "ui-ux-pro-max-skill"
+        },
+        {
+          "id": "taste-skill",
+          "label": "taste-skill"
+        },
+        {
+          "id": "hallmark",
+          "label": "hallmark"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -118123,7 +118318,10 @@
         "codex",
         "marketingskills"
       ],
-      "alt": [],
+      "alt": [
+        "humanizer",
+        "stop-slop"
+      ],
       "stack": "Agente compatible; texto propio",
       "repo_url": "https://github.com/petergyang/no-ai-slop",
       "doc": "human/fichas/no-ai-slop.md",
@@ -118255,7 +118453,7 @@
       "que_es": "Skill de escritura de código abierto (MIT) de Peter Yang. Activa (v1.0.6).",
       "que_hace": "Quita más de 20 patrones de «slop» de IA (como «No es X. Es Y.» o «Lo que nadie te cuenta…») sin aplanar tu voz personal, y lista lo que cambió. También detecta y cita patrones sin juzgar si lo escribió una IA, y genera «slop» exagerado como sátira.",
       "como_lo_hace": "Skill instalable pidiéndoselo a ChatGPT, Claude Code o Codex, o con `npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes`; se usa con `/no-ai-slop`.",
-      "descripcion_notas": "Se solapa con humanizer y stop-slop: usa uno como revisor principal.",
+      "descripcion_notas": "Alternativas (elige una): humanizer, stop-slop.",
       "descripcion_fuentes": [
         "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
       ],
@@ -118281,7 +118479,16 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "humanizer",
+          "label": "humanizer"
+        },
+        {
+          "id": "stop-slop",
+          "label": "stop-slop"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -119415,7 +119622,8 @@
         "postiz-app"
       ],
       "alt": [
-        "humanizer"
+        "humanizer",
+        "no-ai-slop"
       ],
       "stack": "Claude con skills o instrucciones pegadas en otro modelo; texto propio",
       "repo_url": "https://github.com/hardikpandya/stop-slop",
@@ -119545,7 +119753,7 @@
       "que_es": "Skill de código abierto (MIT) de Hardik Pandya para eliminar marcas de IA en la prosa. Sin releases y con último cambio en marzo de 2026.",
       "que_hace": "Enseña a Claude o a cualquier LLM a detectar y quitar frases vetadas (aperturas de relleno, muletillas de énfasis, jerga empresarial, adverbios, metacomentarios), clichés estructurales (contrastes binarios, fragmentación dramática, voz pasiva) y reglas por frase (sin guiones largos, sin inicios con interrogativos, voz activa). Puntúa el texto del 1 al 10 en cinco dimensiones y pide revisar por debajo de 35/50.",
       "como_lo_hace": "Una carpeta con `SKILL.md` y archivos de referencia (frases, estructuras) que se cargan bajo demanda. Se añade como skill en Claude Code, se sube a un Proyecto de Claude, se copian sus reglas a instrucciones personalizadas o se incluye en el prompt de sistema por API.",
-      "descripcion_notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+      "descripcion_notas": "Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
       "descripcion_fuentes": [
         "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
       ],
@@ -119573,6 +119781,10 @@
         {
           "id": "humanizer",
           "label": "humanizer"
+        },
+        {
+          "id": "no-ai-slop",
+          "label": "no-ai-slop"
         }
       ],
       "combine_refs": [
@@ -119624,7 +119836,11 @@
         "ffmpeg",
         "stitch-skills"
       ],
-      "alt": [],
+      "alt": [
+        "ui-ux-pro-max-skill",
+        "impeccable",
+        "hallmark"
+      ],
       "stack": "Node 22+; Chrome, Edge o Chromium; agente; brief de sitio",
       "repo_url": "https://github.com/Leonxlnx/taste-skill",
       "doc": "human/fichas/taste-skill.md",
@@ -119759,7 +119975,7 @@
       "que_es": "Skill de agente (MIT) de Leonxlnx para que los agentes construyan webs de empresa de calidad profesional en lugar de landings genéricas. Muy popular y activa (v2.5.1), con patrocinadores.",
       "que_hace": "Parte de un único sistema (plantilla HTML y CSS con una sección por pantalla y bordes de contenido iguales), incluye fragmentos de interfaz reales y fotografías de archivos abiertos con crédito, y ejecuta un verificador antes de entregar. Incluye variantes como minimalista, brutalista industrial o una para Stitch.",
       "como_lo_hace": "Se instala con `npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"` o como plugin de Claude Code. Sus scripts requieren Node 22+ y Chrome, Edge o Chromium instalado; ffmpeg es opcional para generar WebP.",
-      "descripcion_notas": "Se solapa con ui-ux-pro-max-skill, impeccable y hallmark; conviene elegir uno como guía principal.",
+      "descripcion_notas": "Alternativas (elige una): ui-ux-pro-max-skill, impeccable, hallmark.",
       "descripcion_fuentes": [
         "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
       ],
@@ -119785,7 +120001,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "ui-ux-pro-max-skill",
+          "label": "ui-ux-pro-max-skill"
+        },
+        {
+          "id": "impeccable",
+          "label": "impeccable"
+        },
+        {
+          "id": "hallmark",
+          "label": "hallmark"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -120484,7 +120713,11 @@
         "tailwindcss",
         "design.md"
       ],
-      "alt": [],
+      "alt": [
+        "taste-skill",
+        "impeccable",
+        "hallmark"
+      ],
       "stack": "Node; Python para las utilidades según ruta; agente; brief",
       "repo_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "doc": "human/fichas/ui-ux-pro-max-skill.md",
@@ -120619,7 +120852,7 @@
       "que_es": "Skill de «inteligencia de diseño» (MIT) de NextLevelBuilder para construir interfaces profesionales en múltiples plataformas. Muy popular y activa (v2.15.0); el README promociona otros productos del mismo equipo.",
       "que_hace": "Su generador de sistemas de diseño analiza los requisitos del proyecto y propone un sistema completo: estilo, paleta (192 paletas por tipo de producto), tipografías (74 combinaciones con Google Fonts), patrones y antipatrones. Cubre 22 stacks, entre ellos React, Next.js, Astro, Vue, Svelte, SwiftUI, React Native, Flutter, HTML+Tailwind, shadcn/ui, Jetpack Compose y Angular.",
       "como_lo_hace": "Datos estructurados y un script de búsqueda en Python 3 (solo biblioteca estándar, sin red) que consulta el agente. Se instala como plugin de Claude Code (`/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill`) o con su CLI (`npx ui-ux-pro-max-cli init --ai claude` y otros agentes).",
-      "descripcion_notas": "Se quitaron taste-skill e impeccable: se solapan en función, no se complementan.",
+      "descripcion_notas": "Alternativas (elige una): taste-skill, impeccable, hallmark.",
       "descripcion_fuentes": [
         "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md"
       ],
@@ -120645,7 +120878,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "taste-skill",
+          "label": "taste-skill"
+        },
+        {
+          "id": "impeccable",
+          "label": "impeccable"
+        },
+        {
+          "id": "hallmark",
+          "label": "hallmark"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
