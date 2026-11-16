@@ -29,6 +29,9 @@ Incluye `SKILL.md`, referencias, scripts de ayuda y un scaffold Vite + TypeScrip
 | [three.js](three-js.md) | Motor del scaffold incluido. | El scaffold instala las dependencias del juego. |
 | [Codex CLI](codex.md) | Agente objetivo. | Instala con `-a codex -g`. |
 | [Claude Code](claude-code.md) | Agente objetivo. | Instala con `-a claude-code -g`. |
+| [pixelfx](pixelfx.md) | Combinación recíproca: pixelfx lo enlaza como «Efectos para juegos de navegador. (combinación por arquitectura)». | Orden indicado desde pixelfx: Integra los sprite sheets en el juego. |
+| [planck.js](planck-js.md) | Combinación recíproca: planck.js lo enlaza como «Juegos de navegador asistidos por agente. (combinación por arquitectura)». | Orden indicado desde planck.js: Usa Planck para la física 2D. |
+| [react-three-rapier](react-three-rapier.md) | Combinación recíproca: react-three-rapier lo enlaza como «Juegos 3D de navegador. (combinación por arquitectura)». | Orden indicado desde react-three-rapier: Usa Rapier para la física. |
 
 **Notas:** Las claves opcionales nunca deben ir en el código del navegador (lo advierte el README).
 

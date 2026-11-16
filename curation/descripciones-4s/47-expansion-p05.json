@@ -1,0 +1,781 @@
+{
+ "batch": "47-expansion-p05",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "garak": {
+   "que_es": "Kit de red teaming y evaluación de IA generativa de código abierto (Apache-2.0), creado por Leon Derczynski y mantenido bajo la organización NVIDIA. Activo y con artículo académico asociado.",
+   "que_hace": "Comprueba si una aplicación basada en LLM puede fallar de formas no deseadas: alucinación, fuga de datos, inyección de prompts, desinformación, toxicidad, jailbreaks y codificaciones maliciosas, entre otras. Genera informes por sonda y detector.",
+   "como_lo_hace": "Se instala con pip (`python -m pip install -U garak`) en Python 3.10+. Los generadores conectan con modelos locales (Hugging Face, GGML, Ollama) o remotos (OpenAI, Bedrock, NIM, LiteLLM, REST); los modelos locales grandes necesitan GPU.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "garak incluye un generador para Ollama, lo que permite auditar modelos locales.",
+     "orden_instalacion": "Ollama en marcha con el modelo descargado; después ejecuta garak con el generador ollama."
+    },
+    {
+     "id": "litellm",
+     "motivo": "garak incluye un generador LiteLLM para probar cualquier modelo que exponga ese proxy.",
+     "orden_instalacion": "Configura LiteLLM; después apunta garak a su generador litellm."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "promptfoo cubre evaluaciones y red teaming en CI mientras garak aporta un catálogo amplio de sondas de vulnerabilidad (combinación por arquitectura).",
+     "orden_instalacion": "Define casos en promptfoo; después ejecuta garak sobre el mismo endpoint y compara."
+    }
+   ],
+   "notas": "Las tasas de fallo dependen de la versión de las sondas; fija la versión para comparar resultados.",
+   "fuentes": [
+    "https://github.com/NVIDIA/garak/blob/main/README.md",
+    "https://docs.garak.ai/",
+    "https://github.com/NVIDIA/garak/tree/main/garak/generators"
+   ],
+   "github": {
+    "name_with_owner": "NVIDIA/garak",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.17.1 (2026-10-16)"
+   }
+  },
+  "trivy": {
+   "que_es": "Escáner de seguridad de código abierto (Apache-2.0) de Aqua Security. Muy popular y maduro; Aqua ofrece una plataforma comercial aparte.",
+   "que_hace": "Detecta paquetes y dependencias (SBOM), vulnerabilidades conocidas, problemas de IaC y configuración, secretos y licencias en imágenes de contenedor, sistemas de archivos, repositorios remotos, imágenes de VM y Kubernetes, con salidas para CI.",
+   "como_lo_hace": "Se distribuye como binario Go (Homebrew, Docker `aquasec/trivy`, paquetes y GitHub Action). Descarga bases de vulnerabilidades al ejecutarse; ofrece un plugin oficial (trivy-mcp) que lo expone como servidor MCP.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El plugin oficial trivy-mcp expone Trivy como servidor MCP para agentes.",
+     "orden_instalacion": "Instala Trivy y el plugin mcp; después registra el servidor en Claude Code."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep analiza el código propio y Trivy las dependencias, imágenes y la IaC; juntos cubren SAST y SCA (combinación por arquitectura).",
+     "orden_instalacion": "Añade ambos escaneos al pipeline de CI."
+    },
+    {
+     "id": "pre-commit",
+     "motivo": "Un hook local de pre-commit puede lanzar `trivy fs` o el escaneo de secretos antes de cada commit (combinación por arquitectura).",
+     "orden_instalacion": "Instala Trivy; después define un hook local en .pre-commit-config.yaml."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Las imágenes que despliega Coolify se pueden escanear con Trivy antes de publicarlas (combinación por arquitectura).",
+     "orden_instalacion": "Escanea la imagen con Trivy en CI; después despliega en Coolify."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Combinación recíproca: Wazuh lo enlaza como «Trivy escanea imágenes antes del despliegue y Wazuh vigila vulnerabilidades en ejecución (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Wazuh: Integra Trivy en CI; después despliega agentes de Wazuh en los hosts.",
+     "reciproca_de": "wazuh"
+    },
+    {
+     "id": "lynis",
+     "motivo": "Combinación recíproca: Lynis lo enlaza como «Trivy revisa imágenes y dependencias mientras Lynis audita el sistema anfitrión (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Lynis: Audita el host con Lynis; escanea las imágenes con Trivy.",
+     "reciproca_de": "lynis"
+    }
+   ],
+   "notas": "La base de vulnerabilidades se descarga de registros públicos; en entornos aislados hay que preparar una réplica.",
+   "fuentes": [
+    "https://github.com/aquasecurity/trivy/blob/main/README.md",
+    "https://trivy.dev",
+    "https://github.com/aquasecurity/trivy-mcp"
+   ],
+   "github": {
+    "name_with_owner": "aquasecurity/trivy",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.76.2 (2026-11-05)"
+   }
+  },
+  "metasploit": {
+   "que_es": "Framework de explotación de código abierto (licencia de estilo BSD; ver COPYING) de Rapid7 y la comunidad. Estándar del sector desde hace más de 15 años; Rapid7 vende Metasploit Pro aparte.",
+   "que_hace": "Reúne exploits, payloads (incluido Meterpreter), módulos auxiliares de escaneo y fuerza bruta, post-explotación y evasión, con base de datos de hosts y credenciales, importación de escaneos de Nmap y módulos que analizan hashes con John the Ripper o Hashcat.",
+   "como_lo_hace": "Escrito en Ruby; se recomienda instalar con los instaladores nightly oficiales en Linux o macOS (también viene en Kali). Usa PostgreSQL para la base de datos y se maneja con msfconsole o su API RPC.",
+   "combina_con": [
+    {
+     "id": "nmap",
+     "motivo": "Metasploit importa resultados de Nmap y ejecuta escaneos con `db_nmap` desde msfconsole.",
+     "orden_instalacion": "Inicializa la base de datos de Metasploit; después lanza db_nmap o importa el XML de Nmap."
+    },
+    {
+     "id": "hashcat",
+     "motivo": "Los módulos `auxiliary/analyze/crack_*` usan Hashcat o John the Ripper para probar los hashes recogidos.",
+     "orden_instalacion": "Instala Hashcat en el sistema; después ejecuta el módulo de crackeo con la acción hashcat."
+    },
+    {
+     "id": "john",
+     "motivo": "Los mismos módulos `crack_*` pueden usar John the Ripper como motor.",
+     "orden_instalacion": "Instala John; después ejecuta el módulo con la acción john."
+    },
+    {
+     "id": "bloodhound",
+     "motivo": "BloodHound mapea rutas de ataque en Active Directory que después se validan con módulos de Metasploit en un ejercicio autorizado (combinación por arquitectura).",
+     "orden_instalacion": "Recoge y analiza datos con BloodHound; después prueba las rutas en el laboratorio."
+    }
+   ],
+   "notas": "Mantén Metasploit en una VM o laboratorio aislado; los antivirus suelen detectar sus cargas útiles.",
+   "fuentes": [
+    "https://github.com/rapid7/metasploit-framework/blob/master/README.md",
+    "https://docs.metasploit.com/",
+    "https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/analyze/crack_windows.rb"
+   ],
+   "github": {
+    "name_with_owner": "rapid7/metasploit-framework",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Ruby",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "sqlmap": {
+   "que_es": "Herramienta de código abierto (GPL-2.0 con aclaraciones propias; ver LICENSE) de Bernardo Damele y Miroslav Stampar. Muy madura y activa desde 2006.",
+   "que_hace": "Detecta y explota inyecciones SQL con varias técnicas (booleana, basada en tiempo, errores, UNION, consultas apiladas), identifica el motor, enumera bases de datos, tablas y usuarios, extrae datos y puede acceder al sistema de archivos o ejecutar comandos según el motor.",
+   "como_lo_hace": "Escrito en Python; funciona con Python 2.7 y 3.x sin dependencias tras clonar el repositorio. Admite proxies, peticiones guardadas y registros de proxies, y tamper scripts.",
+   "combina_con": [
+    {
+     "id": "mitmproxy",
+     "motivo": "sqlmap puede enviar su tráfico por un proxy como mitmproxy para inspeccionarlo o reutilizar peticiones capturadas (combinación por arquitectura).",
+     "orden_instalacion": "Arranca mitmproxy; después ejecuta sqlmap con `--proxy`."
+    },
+    {
+     "id": "zaproxy",
+     "motivo": "ZAP descubre parámetros sospechosos y sqlmap confirma y explota la inyección (combinación por arquitectura).",
+     "orden_instalacion": "Escanea con ZAP; después pasa la petición guardada a sqlmap con `-r`."
+    },
+    {
+     "id": "ffuf",
+     "motivo": "ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura).",
+     "orden_instalacion": "Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap."
+    }
+   ],
+   "notas": "Las técnicas de extracción pueden alterar datos o cargar el servidor; nunca lo uses en producción sin acuerdo previo.",
+   "fuentes": [
+    "https://github.com/sqlmapproject/sqlmap/blob/master/README.md",
+    "https://github.com/sqlmapproject/sqlmap/wiki/Usage"
+   ],
+   "github": {
+    "name_with_owner": "sqlmapproject/sqlmap",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.10 (2026-01-01)"
+   }
+  },
+  "nuclei": {
+   "que_es": "Escáner de vulnerabilidades de código abierto (MIT) de ProjectDiscovery, con ediciones Pro y Enterprise de pago. Muy activo; las plantillas las aporta una comunidad grande.",
+   "que_hace": "Ejecuta plantillas que simulan pasos reales para confirmar vulnerabilidades y reducir falsos positivos, sobre HTTP, DNS, TCP, SSL, WHOIS, JavaScript y código; se integra en CI/CD y envía resultados a Jira, Splunk, GitHub, Elastic o GitLab.",
+   "como_lo_hace": "Escrito en Go; se instala con `go install`, Docker o binarios. Las plantillas se descargan y actualizan automáticamente; acepta listas de objetivos por stdin, lo que permite encadenarlo con otras herramientas de ProjectDiscovery.",
+   "combina_con": [
+    {
+     "id": "subfinder",
+     "motivo": "subfinder enumera subdominios que se pasan por stdin a Nuclei; ambos son de ProjectDiscovery.",
+     "orden_instalacion": "Ejecuta subfinder; después canaliza la salida a nuclei."
+    },
+    {
+     "id": "katana",
+     "motivo": "katana rastrea URLs y endpoints que Nuclei escanea a continuación.",
+     "orden_instalacion": "Rastrea con katana; después pasa las URLs a nuclei."
+    },
+    {
+     "id": "nmap",
+     "motivo": "Nmap identifica puertos y servicios y Nuclei comprueba vulnerabilidades concretas en ellos (combinación por arquitectura).",
+     "orden_instalacion": "Escanea con Nmap; después lanza nuclei contra los servicios encontrados."
+    },
+    {
+     "id": "ffuf",
+     "motivo": "Combinación recíproca: ffuf lo enlaza como «Las rutas que descubre ffuf se revisan después con plantillas de Nuclei (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ffuf: Guarda la salida de ffuf; después pasa las URLs a nuclei.",
+     "reciproca_de": "ffuf"
+    },
+    {
+     "id": "zaproxy",
+     "motivo": "Combinación recíproca: ZAP (Zed Attack Proxy) lo enlaza como «Nuclei comprueba CVE concretos mientras ZAP analiza la lógica y las respuestas de la aplicación (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ZAP (Zed Attack Proxy): Ejecuta ambos escaneos sobre el mismo entorno de pruebas.",
+     "reciproca_de": "zaproxy"
+    }
+   ],
+   "notas": "Algunas plantillas son intrusivas; filtra por etiquetas y severidad antes de escanear.",
+   "fuentes": [
+    "https://github.com/projectdiscovery/nuclei/blob/dev/README.md",
+    "https://docs.projectdiscovery.io/tools/nuclei"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/nuclei",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.11.1 (2026-08-08)"
+   }
+  },
+  "nmap": {
+   "que_es": "Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para redistribuirlo.",
+   "que_hace": "Descubre hosts, puertos abiertos, servicios y versiones, sistema operativo y vulnerabilidades mediante cientos de scripts NSE; produce salidas en texto, XML y grepeable. Incluye Ncat, Nping y la interfaz Zenmap.",
+   "como_lo_hace": "Escrito en C/C++ con Lua para NSE; hay instaladores para Windows, macOS y Linux en nmap.org, o se compila con `./configure && make && make install`. Algunas técnicas requieren privilegios de administrador.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Metasploit integra Nmap con `db_nmap` e importa su XML en la base de datos del proyecto.",
+     "orden_instalacion": "Instala Nmap; después úsalo desde msfconsole con db_nmap."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Los servicios que encuentra Nmap se revisan con plantillas de Nuclei (combinación por arquitectura).",
+     "orden_instalacion": "Escanea con Nmap; después pasa los objetivos a nuclei."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "Wireshark permite ver a nivel de paquete qué envía un escaneo de Nmap, útil para aprender o depurar reglas de red (combinación por arquitectura).",
+     "orden_instalacion": "Inicia la captura en Wireshark; después lanza el escaneo."
+    }
+   ],
+   "notas": "Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.",
+   "fuentes": [
+    "https://github.com/nmap/nmap/blob/master/README.md",
+    "https://nmap.org/book/man-legal.html",
+    "https://docs.metasploit.com/docs/using-metasploit/intermediate/metasploit-database-support.html"
+   ],
+   "github": {
+    "name_with_owner": "nmap/nmap",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "NOASSERTION",
+    "primary_language": "C",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "ml-for-beginners": {
+   "que_es": "Currículo educativo de código abierto (MIT) de Microsoft (serie «for Beginners»). Muy popular; mantenimiento continuo con traducciones automáticas.",
+   "que_hace": "Enseña machine learning clásico en 12 semanas: regresión, clasificación, clustering, procesamiento de lenguaje natural, series temporales y aprendizaje por refuerzo, con proyectos basados en datos de culturas de todo el mundo y cuestionarios antes y después de cada lección.",
+   "como_lo_hace": "Lecciones en Markdown con cuadernos Jupyter en Python (Scikit-learn) y R; se clona el repositorio (recomienda descarga dispersa para evitar las traducciones) o se abre en Codespaces.",
+   "combina_con": [
+    {
+     "id": "jupyterlab",
+     "motivo": "Las lecciones prácticas son cuadernos Jupyter que se ejecutan en JupyterLab.",
+     "orden_instalacion": "Instala JupyterLab y las dependencias de la lección; después abre el cuaderno."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Los ejercicios se pueden rehacer como cuadernos reactivos de marimo (combinación por arquitectura).",
+     "orden_instalacion": "Instala marimo; después convierte o reescribe el cuaderno."
+    },
+    {
+     "id": "llm-course",
+     "motivo": "Tras el ML clásico, llm-course ofrece el recorrido hacia modelos de lenguaje (combinación por arquitectura).",
+     "orden_instalacion": "Completa el curso; después sigue con llm-course."
+    },
+    {
+     "id": "scikit-learn",
+     "motivo": "Combinación recíproca: scikit-learn lo enlaza como «El curso ML for Beginners enseña machine learning clásico con scikit-learn».",
+     "orden_instalacion": "Orden indicado desde scikit-learn: Sigue las lecciones con scikit-learn instalado.",
+     "reciproca_de": "scikit-learn"
+    }
+   ],
+   "notas": "No cubre deep learning; para ese tema Microsoft remite a otros cursos de la serie.",
+   "fuentes": [
+    "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "microsoft/ML-For-Beginners",
+    "archived": false,
+    "pushed_at": "2026-11-07",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "agents-course": {
+   "que_es": "Curso de código abierto (Apache-2.0) de Hugging Face. Muy popular; contenido estable con unidades extra añadidas con el tiempo.",
+   "que_hace": "Enseña qué son los agentes, cómo usan herramientas, los frameworks smolagents, LangGraph y LlamaIndex, ajuste fino para llamadas a funciones, observabilidad y evaluación, RAG agéntico y un proyecto final evaluado con benchmark.",
+   "como_lo_hace": "El contenido está en MDX y se publica en la web de Hugging Face; los ejercicios usan cuadernos y Spaces. Requisitos: Python y nociones de LLM.",
+   "combina_con": [
+    {
+     "id": "smolagents",
+     "motivo": "La unidad 2.1 enseña a construir agentes con smolagents.",
+     "orden_instalacion": "Sigue la unidad; instala smolagents en el entorno del cuaderno."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "La unidad 2.3 está dedicada a LangGraph.",
+     "orden_instalacion": "Sigue la unidad; instala langgraph."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "La unidad 2.2 cubre agentes y flujos con LlamaIndex.",
+     "orden_instalacion": "Sigue la unidad; instala llama-index."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "La unidad extra de observabilidad y evaluación usa Langfuse para trazar agentes.",
+     "orden_instalacion": "Crea un proyecto en Langfuse; después sigue la unidad extra 2."
+    }
+   ],
+   "notas": "Algunos ejercicios usan la API de inferencia de Hugging Face, con límites en cuentas gratuitas.",
+   "fuentes": [
+    "https://github.com/huggingface/agents-course/blob/main/README.md",
+    "https://huggingface.co/learn/agents-course"
+   ],
+   "github": {
+    "name_with_owner": "huggingface/agents-course",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "Apache-2.0",
+    "primary_language": "MDX",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "wazuh": {
+   "que_es": "Plataforma de seguridad de código abierto de Wazuh Inc. (GPL-2.0 en su mayor parte, con componentes bajo otras licencias, como AGPL). Muy madura; la empresa vende cloud y soporte.",
+   "que_hace": "Detecta intrusiones y malware con agentes, analiza registros con reglas, vigila la integridad de archivos, detecta vulnerabilidades, evalúa configuración y cumplimiento, responde a incidentes y protege cargas en contenedores y nube.",
+   "como_lo_hace": "Componentes: agente (C/C++) en cada equipo, servidor de gestión, indexador y panel. Se instala con el asistente, paquetes, Docker, Kubernetes u OVA; necesita recursos de servidor según el número de agentes.",
+   "combina_con": [
+    {
+     "id": "crowdsec",
+     "motivo": "CrowdSec bloquea IP maliciosas en el perímetro y Wazuh centraliza la detección y el cumplimiento en los equipos (combinación por arquitectura).",
+     "orden_instalacion": "Despliega CrowdSec en los servidores expuestos; después envía sus registros a Wazuh."
+    },
+    {
+     "id": "lynis",
+     "motivo": "Lynis hace auditorías puntuales de endurecimiento y Wazuh vigila de forma continua (combinación por arquitectura).",
+     "orden_instalacion": "Audita con Lynis; después monitoriza con agentes de Wazuh."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Trivy escanea imágenes antes del despliegue y Wazuh vigila vulnerabilidades en ejecución (combinación por arquitectura).",
+     "orden_instalacion": "Integra Trivy en CI; después despliega agentes de Wazuh en los hosts."
+    }
+   ],
+   "notas": "La curva de aprendizaje de reglas y decodificadores es alta; empieza con pocas fuentes.",
+   "fuentes": [
+    "https://github.com/wazuh/wazuh/blob/main/README.md",
+    "https://documentation.wazuh.com"
+   ],
+   "github": {
+    "name_with_owner": "wazuh/wazuh",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.14.10 (2026-11-09)"
+   }
+  },
+  "lynis": {
+   "que_es": "Herramienta de auditoría de código abierto (GPL-3.0) de CISOfy, con versión Enterprise de pago. Muy madura; ritmo de cambios moderado (último push en septiembre de 2026).",
+   "que_hace": "Audita la seguridad del sistema en el que se ejecuta: configuración, servicios, cuentas, kernel, red, permisos y software, con pruebas de cumplimiento, detección de vulnerabilidades y sugerencias de endurecimiento; también ayuda en gestión de parches y pentesting interno.",
+   "como_lo_hace": "Script de shell sin dependencias ni instalación obligatoria; se ejecuta desde el repositorio o con paquetes de la distribución. Algunas pruebas requieren privilegios de root.",
+   "combina_con": [
+    {
+     "id": "wazuh",
+     "motivo": "Wazuh mantiene vigilancia continua de los sistemas que Lynis audita puntualmente (combinación por arquitectura).",
+     "orden_instalacion": "Corrige lo que señala Lynis; después vigila con Wazuh."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Trivy revisa imágenes y dependencias mientras Lynis audita el sistema anfitrión (combinación por arquitectura).",
+     "orden_instalacion": "Audita el host con Lynis; escanea las imágenes con Trivy."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede explicar y priorizar las sugerencias del informe de Lynis (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta Lynis y guarda el informe; después pásalo al agente sin datos sensibles."
+    }
+   ],
+   "notas": "Las sugerencias son genéricas; valida cada cambio antes de aplicarlo en producción.",
+   "fuentes": [
+    "https://github.com/CISOfy/lynis/blob/master/README.md",
+    "https://cisofy.com/documentation/lynis/"
+   ],
+   "github": {
+    "name_with_owner": "CISOfy/lynis",
+    "archived": false,
+    "pushed_at": "2026-09-16",
+    "license": "GPL-3.0",
+    "primary_language": "Shell",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.1.7 (2026-06-25)"
+   }
+  },
+  "crowdsec": {
+   "que_es": "Solución de seguridad de código abierto (MIT) de CrowdSec SAS, con consola y listas premium de pago. Muy activa.",
+   "que_hace": "Detecta comportamientos maliciosos en registros y peticiones HTTP, bloquea IP mediante componentes de remediación, incluye un WAF basado en Coraza compatible con OWASP CRS y comparte señales para alimentar una lista de bloqueo comunitaria.",
+   "como_lo_hace": "Escrito en Go; se instala con paquetes, Docker o Helm. Las reglas y escenarios vienen del hub (MIT); los bouncers se integran con nftables/iptables, Nginx, Traefik, Cloudflare y otros. Expone métricas Prometheus.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "CrowdSec expone métricas Prometheus y documenta paneles de Grafana para visualizarlas.",
+     "orden_instalacion": "Habilita las métricas Prometheus; después importa el panel en Grafana."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "CrowdSec bloquea en el perímetro y Wazuh correlaciona alertas de los equipos (combinación por arquitectura).",
+     "orden_instalacion": "Despliega CrowdSec; después reenvía sus registros a Wazuh."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Coolify usa Traefik como proxy, que puede protegerse con el bouncer de CrowdSec para Traefik (combinación por arquitectura).",
+     "orden_instalacion": "CrowdSec en el servidor; después añade el bouncer como middleware de Traefik."
+    },
+    {
+     "id": "traefik",
+     "motivo": "Combinación recíproca: Traefik Proxy lo enlaza como «CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware».",
+     "orden_instalacion": "Orden indicado desde Traefik Proxy: CrowdSec en el servidor; después añade el bouncer como middleware de Traefik.",
+     "reciproca_de": "traefik"
+    }
+   ],
+   "notas": "Compartir señales con la red comunitaria es opcional; revisa qué datos se envían.",
+   "fuentes": [
+    "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+    "https://docs.crowdsec.net"
+   ],
+   "github": {
+    "name_with_owner": "crowdsecurity/crowdsec",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.8.2 (2026-10-26)"
+   }
+  },
+  "locust": {
+   "que_es": "Herramienta de pruebas de carga de código abierto (MIT) mantenida por la comunidad locustio; ofrece Locust Cloud como servicio. Muy madura.",
+   "que_hace": "Simula muchos usuarios concurrentes definidos en código Python con lógica arbitraria, sobre HTTP u otros protocolos, y muestra rendimiento, tiempos de respuesta y errores en vivo o los exporta; escala en modo distribuido.",
+   "como_lo_hace": "Se instala con pip (Python 3); se ejecuta desde la CLI o la interfaz web. El paquete comunitario locust-plugins añade usuarios para Playwright, Kafka y otros, y exportación a bases de datos.",
+   "combina_con": [
+    {
+     "id": "grafana",
+     "motivo": "Las métricas de Locust se pueden exportar (por ejemplo con locust-plugins) y visualizar en Grafana (combinación por arquitectura).",
+     "orden_instalacion": "Configura el exportador; después crea el panel en Grafana."
+    },
+    {
+     "id": "playwright",
+     "motivo": "locust-plugins incluye un PlaywrightUser para pruebas de carga con navegador real.",
+     "orden_instalacion": "Instala locust-plugins y Playwright; después define el usuario Playwright."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede escribir locustfiles a partir de la especificación de tu API (combinación por arquitectura).",
+     "orden_instalacion": "Pide el escenario al agente; después revísalo antes de lanzar carga."
+    }
+   ],
+   "notas": "Alternativas (elige una): k6. No lances carga contra servicios de terceros sin permiso.",
+   "fuentes": [
+    "https://github.com/locustio/locust/blob/master/README.md",
+    "https://docs.locust.io/en/stable/",
+    "https://github.com/SvenskaSpel/locust-plugins"
+   ],
+   "github": {
+    "name_with_owner": "locustio/locust",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "2.47.0 (2026-10-21)"
+   }
+  },
+  "hashcat": {
+   "que_es": "Herramienta de recuperación de contraseñas de código abierto (MIT) del proyecto hashcat, creada por Jens Steube. Muy madura y activa.",
+   "que_hace": "Recupera contraseñas a partir de hashes con más de 630 modos (incluidas recetas de hash compuestas), 10 modos de ataque, motor de reglas en el kernel, cadenas de Markov, reanudación de sesiones, Brain para evitar repeticiones y redes de cracking distribuido.",
+   "como_lo_hace": "Escrito en C; se usa con binarios de la release o paquetes de la plataforma. Requiere los drivers y runtimes de la GPU (CUDA, HIP, Metal u OpenCL) indicados en su documentación.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Los módulos de análisis de Metasploit pueden usar Hashcat para probar los hashes recogidos en un ejercicio.",
+     "orden_instalacion": "Instala Hashcat; después ejecuta el módulo crack_* con la acción hashcat."
+    },
+    {
+     "id": "bloodhound",
+     "motivo": "BloodHound identifica cuentas expuestas (por ejemplo, kerberoasteables) cuyos hashes se auditan con Hashcat (combinación por arquitectura).",
+     "orden_instalacion": "Analiza el dominio con BloodHound; después audita los hashes autorizados con Hashcat."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede ayudar a construir reglas, máscaras y comandos de Hashcat para una auditoría (combinación por arquitectura).",
+     "orden_instalacion": "Describe la política de contraseñas; después revisa el comando propuesto."
+    }
+   ],
+   "notas": "Alternativas (elige una): john.",
+   "fuentes": [
+    "https://github.com/hashcat/hashcat/blob/master/README.md",
+    "https://hashcat.net/hashcat/"
+   ],
+   "github": {
+    "name_with_owner": "hashcat/hashcat",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": null,
+    "primary_language": "C",
+    "checked_at": "2026-11-16",
+    "latest_release": "v8.0.0 (2026-10-25)"
+   }
+  },
+  "ffuf": {
+   "que_es": "Fuzzer web de código abierto (MIT) creado por Joona Hoikkala (joohoi). Maduro; ritmo de cambios moderado (último push en septiembre de 2026).",
+   "que_hace": "Descubre directorios y archivos, hosts virtuales sin DNS, parámetros GET y datos POST mediante fuzzing, con mutadores externos, archivos de configuración, varios formatos de salida y modo interactivo para ajustar filtros.",
+   "como_lo_hace": "Escrito en Go; se instala con binarios, Homebrew, Scoop, Winget o `go install`. Admite proxy (`-x`) y reenvío de coincidencias a otro proxy (`-replay-proxy`).",
+   "combina_con": [
+    {
+     "id": "subfinder",
+     "motivo": "subfinder encuentra subdominios que después se fuzzean con ffuf (combinación por arquitectura).",
+     "orden_instalacion": "Enumera con subfinder; después lanza ffuf sobre cada host."
+    },
+    {
+     "id": "mitmproxy",
+     "motivo": "ffuf puede enviar o reenviar sus peticiones a un proxy como mitmproxy para inspeccionarlas.",
+     "orden_instalacion": "Arranca mitmproxy; después usa `-x` o `-replay-proxy` en ffuf."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Las rutas que descubre ffuf se revisan después con plantillas de Nuclei (combinación por arquitectura).",
+     "orden_instalacion": "Guarda la salida de ffuf; después pasa las URLs a nuclei."
+    },
+    {
+     "id": "sqlmap",
+     "motivo": "Combinación recíproca: sqlmap lo enlaza como «ffuf descubre rutas y parámetros ocultos que después se prueban con sqlmap (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde sqlmap: Fuzzea con ffuf; después prueba los parámetros encontrados con sqlmap.",
+     "reciproca_de": "sqlmap"
+    }
+   ],
+   "notas": "Ajusta la tasa de peticiones para no saturar el servidor objetivo.",
+   "fuentes": [
+    "https://github.com/ffuf/ffuf/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ffuf/ffuf",
+    "archived": false,
+    "pushed_at": "2026-09-26",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.3.0 (2026-09-09)"
+   }
+  },
+  "zaproxy": {
+   "que_es": "Escáner de aplicaciones web de código abierto (Apache-2.0), nacido en OWASP y patrocinado ahora por Checkmarx. Muy maduro y comunitario.",
+   "que_hace": "Encuentra vulnerabilidades en aplicaciones web durante el desarrollo y en pruebas manuales: intercepta y modifica tráfico, rastrea la aplicación, detecta problemas de forma pasiva y activa, y se automatiza con API, marco de automatización, Docker y acciones de CI.",
+   "como_lo_hace": "Escrito en Java; se instala con los instaladores multiplataforma, paquetes o imágenes Docker. Requiere Java para la versión de escritorio; el marketplace añade complementos.",
+   "combina_con": [
+    {
+     "id": "sqlmap",
+     "motivo": "Cuando ZAP señala una posible inyección SQL, sqlmap la confirma con más profundidad (combinación por arquitectura).",
+     "orden_instalacion": "Escanea con ZAP; después guarda la petición y pásala a sqlmap con `-r`."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Las pruebas E2E de Playwright pueden pasar por el proxy de ZAP para que analice el tráfico real de la aplicación (combinación por arquitectura).",
+     "orden_instalacion": "Arranca ZAP como proxy; después configura el proxy en Playwright y ejecuta las pruebas."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei comprueba CVE concretos mientras ZAP analiza la lógica y las respuestas de la aplicación (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta ambos escaneos sobre el mismo entorno de pruebas."
+    }
+   ],
+   "notas": "No hay alternativa equivalente abierta en el catálogo (Burp Suite es propietario); mitmproxy es un proxy de depuración, no un escáner.",
+   "fuentes": [
+    "https://github.com/zaproxy/zaproxy/blob/main/README.md",
+    "https://www.zaproxy.org/docs/"
+   ],
+   "github": {
+    "name_with_owner": "zaproxy/zaproxy",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.17.0 (2025-12-15)"
+   }
+  },
+  "subfinder": {
+   "que_es": "Herramienta de código abierto (MIT) de ProjectDiscovery. Muy activa y usada en reconocimiento y bug bounty.",
+   "que_hace": "Descubre subdominios válidos de un dominio mediante fuentes pasivas seleccionadas, con resolución y eliminación de comodines, varios formatos de salida y entrada y salida por stdin/stdout para integrarse en flujos. También se usa como biblioteca Go.",
+   "como_lo_hace": "Escrito en Go; se instala con `go install`, binarios o Docker. Las claves de API de las fuentes se configuran en su archivo provider-config.yaml.",
+   "combina_con": [
+    {
+     "id": "nuclei",
+     "motivo": "La salida de subfinder se encadena con Nuclei para escanear los hosts encontrados.",
+     "orden_instalacion": "Ejecuta subfinder; después canaliza la lista a nuclei."
+    },
+    {
+     "id": "katana",
+     "motivo": "katana rastrea los subdominios descubiertos para mapear endpoints.",
+     "orden_instalacion": "Enumera con subfinder; después pasa los hosts a katana."
+    },
+    {
+     "id": "ffuf",
+     "motivo": "ffuf fuzzea contenido en los subdominios descubiertos (combinación por arquitectura).",
+     "orden_instalacion": "Enumera con subfinder; después lanza ffuf por host."
+    }
+   ],
+   "notas": "Cercano a theharvester (que además recoge correos y otros datos); subfinder se centra solo en subdominios.",
+   "fuentes": [
+    "https://github.com/projectdiscovery/subfinder/blob/dev/README.md",
+    "https://docs.projectdiscovery.io/tools/subfinder"
+   ],
+   "github": {
+    "name_with_owner": "projectdiscovery/subfinder",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.17.0 (2026-10-08)"
+   }
+  },
+  "john": {
+   "que_es": "Crackeador de contraseñas de Openwall (Solar Designer); esta es la versión jumbo con aportes de la comunidad. Licencia GPL-2.0 con archivos bajo licencias más permisivas (ver doc/LICENSE). El README avisa de que parte del código jumbo no es maduro.",
+   "que_hace": "Detecta contraseñas débiles a partir de cientos de tipos de hash y cifrado, con modos single, diccionario con reglas e incremental, soporte de GPU y FPGA en algunos formatos, y utilidades *2john para extraer hashes de ZIP, PDF, capturas WPA y otros formatos.",
+   "como_lo_hace": "Escrito en C; se compila desde el código (doc/INSTALL) o se instala con paquetes oficiales (john-packages, Snap, etc.). El soporte de GPU requiere OpenCL.",
+   "combina_con": [
+    {
+     "id": "metasploit",
+     "motivo": "Los módulos crack_* de Metasploit pueden usar John the Ripper como motor.",
+     "orden_instalacion": "Instala John; después ejecuta el módulo con la acción john."
+    },
+    {
+     "id": "wireshark",
+     "motivo": "John incluye utilidades como wpapcap2john para extraer hashes de capturas de red como las de Wireshark.",
+     "orden_instalacion": "Captura con Wireshark en tu red; después extrae el hash con wpapcap2john."
+    },
+    {
+     "id": "bloodhound",
+     "motivo": "Los hashes de cuentas que BloodHound señala como expuestas se auditan después con John (combinación por arquitectura).",
+     "orden_instalacion": "Analiza con BloodHound; después audita los hashes autorizados con John."
+    }
+   ],
+   "notas": "Alternativas (elige una): hashcat.",
+   "fuentes": [
+    "https://github.com/openwall/john/blob/bleeding-jumbo/README.md",
+    "https://www.openwall.com/john/"
+   ],
+   "github": {
+    "name_with_owner": "openwall/john",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "C",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "wireshark": {
+   "que_es": "Analizador de tráfico de código abierto (GPL-2.0 o posterior en su mayor parte) de la Wireshark Foundation; GitHub es un espejo de solo lectura del repositorio de GitLab. Estándar del sector desde 1998.",
+   "que_hace": "Captura y analiza tráfico de red en vivo o desde archivos, decodifica cientos de protocolos, filtra y sigue flujos, descifra TLS con claves de sesión y exporta datos. Incluye TShark, editcap y otras utilidades.",
+   "como_lo_hace": "Escrito en C con interfaz Qt; usa libpcap o Npcap para capturar. Hay instaladores para Windows y macOS y paquetes en Linux; compilar requiere Python 3, AsciiDoctor y flex.",
+   "combina_con": [
+    {
+     "id": "mitmproxy",
+     "motivo": "mitmproxy puede exportar las claves TLS (SSLKEYLOGFILE) para que Wireshark descifre el tráfico capturado.",
+     "orden_instalacion": "Arranca mitmproxy con SSLKEYLOGFILE; después configura ese archivo en las preferencias de TLS de Wireshark."
+    },
+    {
+     "id": "nmap",
+     "motivo": "Ver un escaneo de Nmap en Wireshark ayuda a entender sus técnicas y depurar cortafuegos (combinación por arquitectura).",
+     "orden_instalacion": "Inicia la captura; después lanza el escaneo."
+    },
+    {
+     "id": "john",
+     "motivo": "Las capturas de handshakes WPA de tu propia red pueden convertirse a hashes para John con wpapcap2john.",
+     "orden_instalacion": "Captura con Wireshark; después extrae el hash para auditar la clave."
+    }
+   ],
+   "notas": "Para capturar en Linux sin root hay que configurar permisos de captura según la documentación.",
+   "fuentes": [
+    "https://github.com/wireshark/wireshark/blob/master/README.md",
+    "https://www.wireshark.org/docs/",
+    "https://docs.mitmproxy.org/stable/howto/wireshark-tls/"
+   ],
+   "github": {
+    "name_with_owner": "wireshark/wireshark",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-2.0",
+    "primary_language": "C",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "bloodhound": {
+   "que_es": "Herramienta de código abierto (Apache-2.0) de SpecterOps, que vende BloodHound Enterprise. Muy usada por equipos rojos y azules; la edición comunitaria es la versión actual del proyecto original.",
+   "que_hace": "Revela relaciones ocultas y no intencionadas en sistemas de identidad y acceso mediante teoría de grafos, mostrando rutas de ataque en Active Directory y Entra ID, y extensible con OpenGraph a otras plataformas.",
+   "como_lo_hace": "Backend en Go con frontend React; se despliega con Docker Compose (PostgreSQL y base de grafos) según la guía rápida. Los colectores se ejecutan en el entorno a analizar.",
+   "combina_con": [
+    {
+     "id": "hashcat",
+     "motivo": "Las cuentas que BloodHound señala como expuestas se auditan después con Hashcat (combinación por arquitectura).",
+     "orden_instalacion": "Identifica las cuentas con BloodHound; después audita sus hashes con Hashcat."
+    },
+    {
+     "id": "john",
+     "motivo": "John the Ripper sirve para la misma auditoría de contraseñas de las cuentas señaladas (combinación por arquitectura).",
+     "orden_instalacion": "Identifica las cuentas; después audita con John."
+    },
+    {
+     "id": "metasploit",
+     "motivo": "Las rutas de ataque encontradas se validan con módulos de Metasploit en un ejercicio autorizado (combinación por arquitectura).",
+     "orden_instalacion": "Analiza con BloodHound; después valida en laboratorio con Metasploit."
+    }
+   ],
+   "notas": "Ejecutar colectores en un dominio genera actividad detectable; coordínalo con el equipo de seguridad.",
+   "fuentes": [
+    "https://github.com/SpecterOps/BloodHound/blob/main/README.md",
+    "https://bloodhound.specterops.io/"
+   ],
+   "github": {
+    "name_with_owner": "SpecterOps/BloodHound",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v9.9.2 (2026-11-06)"
+   }
+  },
+  "annotated-dl-papers": {
+   "que_es": "Colección educativa de código abierto (MIT) de labml.ai (Varuna Jayasiri y colaboradores). Muy popular; se añaden implementaciones con frecuencia.",
+   "que_hace": "Ofrece implementaciones anotadas de transformers (original, XL, Switch, ViT, RoPE, Flash Attention…), modelos de difusión, GAN, optimizadores, normalización, aprendizaje por refuerzo (PPO, DQN), LoRA y otros, con explicaciones línea a línea.",
+   "como_lo_hace": "Código Python sobre PyTorch (alguna implementación en JAX y Triton); se instala con `pip install labml-nn` o se lee en la web. Algunos ejemplos grandes (NeoX) requieren GPU de 48 GB.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Todas las implementaciones están escritas en PyTorch.",
+     "orden_instalacion": "Instala PyTorch; después labml-nn."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "El README recomienda una skill de implementación anotada para que agentes de código implementen papers con el mismo estilo.",
+     "orden_instalacion": "Instala la skill indicada en el README; después pide al agente una implementación anotada."
+    },
+    {
+     "id": "llms-from-scratch",
+     "motivo": "LLMs from Scratch construye un modelo de lenguaje completo y estas notas profundizan en piezas concretas (combinación por arquitectura).",
+     "orden_instalacion": "Sigue el libro; consulta la implementación anotada de cada componente."
+    }
+   ],
+   "notas": "Son implementaciones didácticas, no optimizadas para producción.",
+   "fuentes": [
+    "https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/readme.md",
+    "https://nn.labml.ai/index.html"
+   ],
+   "github": {
+    "name_with_owner": "labmlai/annotated_deep_learning_paper_implementations",
+    "archived": false,
+    "pushed_at": "2026-11-02",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  }
+ }
+}

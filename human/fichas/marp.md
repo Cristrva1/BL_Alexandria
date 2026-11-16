@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Marp, ecosistema para escribir presentaciones en Markdown plano, de marp-team. Licencia MIT. Es maduro (~13k estrellas); este repo es el punto de entrada (web y documentación) a Marpit, Marp Core, Marp CLI y Marp for VS Code.
+
+## ¿Qué hace?
+
+Convierte Markdown en diapositivas con temas y directivas, y exporta a HTML, PDF, PPTX o imágenes.
+
+## ¿Cómo lo hace?
+
+Marp CLI se usa vía npm o npx y Marp for VS Code ofrece previsualización. La exportación a PDF usa un navegador.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Generar Markdown de diapositivas. (combinación por arquitectura) | Pide al agente un .md con directivas Marp. |
+| [Mermaid](mermaid.md) | Diagramas. (combinación por arquitectura) | Renderiza a imagen e incrústala. |
+| [Pandoc](pandoc.md) | Conversión de documentos a Markdown. (combinación por arquitectura) | Preprocesa el contenido. |
+
+**Notas:** Alternativas (elige una): slidev, reveal.js.
+
+Estado en GitHub: activo · último push 2026-11-07 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/marp-team/marp/blob/main/README.md) · [2](https://marp.app/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Este repositorio es la entrada y web del ecosistema; el CLI y extensión están en repos separados y los formatos de exportación no prometen editabilidad nativa equivalente a PPT generado con formas |
 | Coste | Sin pago a un modelo en la ruta básica. El ecosistema básico no exige API de IA; recursos y distribución tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Marp CLI o extensión de VS Code; Markdown; contenido propio |
-
-Este repositorio es la entrada y web del ecosistema; el CLI y extensión están en repos separados y los formatos de exportación no prometen editabilidad nativa equivalente a PPT generado con formas
-
-## Qué puedes hacer con él
-
-Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado.
-
-## Por qué destaca
-
-Usos propuestos: Preparar slides sencillas; Versionar una presentación en Git.
-
-## Cómo funciona
 
 Este repositorio es la entrada y web del ecosistema; el CLI y extensión están en repos separados y los formatos de exportación no prometen editabilidad nativa equivalente a PPT generado con formas
 

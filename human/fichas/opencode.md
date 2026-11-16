@@ -31,7 +31,13 @@ Se instala con `curl -fsSL https://opencode.ai/v2/install | bash`, `npm i -g @op
 | [opencode-manager](opencode-manager.md) | Interfaz web autoalojada para gestionar sesiones de OpenCode. | Instala OpenCode y luego opencode-manager. |
 | [T3 Code](t3code.md) | Controlar OpenCode desde web o móvil. | Instala T3 Code con OpenCode presente. |
 
-**Notas:** Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider.
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (24). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[anatomy](anatomy.md) · [archify](archify.md) · [claude-code-router](claude-code-router.md) · [claude-mem](claude-mem.md) · [claude-task-master](claude-task-master.md) · [Context7](context7.md) · [ECC](ecc.md) · [Engram](engram.md) · [GitNexus](gitnexus.md) · [gstack](gstack.md) · [hallmark](hallmark.md) · [Kimi K2.7 Code](kimi-k2-7-code.md) · [Loop Engineering](loop-engineering.md) · [magnitude](magnitude.md) · [multica](multica.md) · [nodeterm](nodeterm.md) · [openidea](openidea.md) · [Papermorph](papermorph.md) · [ripgrep](ripgrep.md) · [ruflo](ruflo.md) · [shepherd](shepherd.md) · [supermemory](supermemory.md) · [The Agency (agency-agents)](agency-agents.md) · [wshobson/agents](wshobson-agents.md)
+
+**Notas:** Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.19.5 (2026-10-28) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -118,6 +124,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [MiMo-Code](mimo-code.md) | 13.8k | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. |
 
 ## Enlaces
 

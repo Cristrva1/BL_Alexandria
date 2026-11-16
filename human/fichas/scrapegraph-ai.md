@@ -29,6 +29,7 @@ Se instala con `pip install scrapegraphai` y `playwright install` para la descar
 | [Ollama](ollama.md) | Modelos locales soportados de forma nativa. | Instala Ollama, descarga el modelo y apúntalo en la configuración. |
 | [playwright](playwright.md) | Descarga y renderizado de páginas. | Ejecuta `playwright install` tras instalar la librería. |
 | [graphrag](graphrag.md) | Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura) | Exporta los resultados como documentos para GraphRAG. |
+| [crawlee-python](crawlee-python.md) | Combinación recíproca: crawlee-python lo enlaza como «Extraer datos con LLM a partir de las páginas recogidas. (combinación por arquitectura)». | Orden indicado desde crawlee-python: Recoge con Crawlee y pasa el HTML a ScrapeGraphAI. |
 
 **Notas:** Alternativas (elige una): maxun. Se quita la combinación con crawl4ai por solaparse. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

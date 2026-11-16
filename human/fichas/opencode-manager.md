@@ -30,7 +30,7 @@ Requiere Docker con Compose v2. Se instala con `curl -fsSL https://opencodemanag
 | [Ollama](ollama.md) | Modelos locales para las sesiones de OpenCode. (combinación por arquitectura) | Configura Ollama como proveedor en OpenCode. |
 | [coolify](coolify.md) | Desplegar el contenedor en un servidor propio. (combinación por arquitectura) | Despliega con Compose desde Coolify. |
 
-**Notas:** Sin alternativas declaradas; se solapa con t3code (solo anotado).
+**Notas:** Alternativa (elige una): t3code.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.1.0 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -100,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado
 - **Etiquetas:** `coding` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [T3 Code](t3code.md) | 60.6k | Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. |
 
 ## Enlaces
 

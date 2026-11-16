@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+regl, biblioteca funcional para WebGL, de regl-project. Licencia MIT. Es madura y estable (~5.6k estrellas).
+
+## ¿Qué hace?
+
+Encapsula el estado de WebGL en comandos declarativos que combinan shaders, buffers y uniforms, eliminando el estado global mutable y reduciendo errores. Se usa en visualizaciones de datos de alto rendimiento.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i -S regl` y no tiene dependencias.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [webgl-noise](webgl-noise.md) | Ruido procedural en los shaders. (combinación por arquitectura) | Incluye las funciones en los fragment shaders. |
+| [three.js](three-js.md) | Alternativa de más alto nivel para escenas completas. (combinación por arquitectura) | Elige según el nivel de control. |
+| [meshoptimizer](meshoptimizer.md) | Geometría cuantizada y optimizada para los buffers. (combinación por arquitectura) | Optimiza la malla antes de subirla a buffers. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-17 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/regl-project/regl/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una abstracción de WebGL para desarrolladores y no un editor gráfico o biblioteca de componentes de interfaz |
 | Coste | Sin pago a un modelo en la ruta básica. Biblioteca MIT sin modelo ni API de IA |
 | Equipo | Preparación según la ruta elegida. Node; proyecto WebGL; nociones de shaders |
-
-Es una abstracción de WebGL para desarrolladores y no un editor gráfico o biblioteca de componentes de interfaz
-
-## Qué puedes hacer con él
-
-Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar visualización acelerada; Aprender render funcional.
-
-## Cómo funciona
 
 Es una abstracción de WebGL para desarrolladores y no un editor gráfico o biblioteca de componentes de interfaz
 

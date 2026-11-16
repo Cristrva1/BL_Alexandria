@@ -29,6 +29,7 @@ Se instala con `npm i zod playwright llm-scraper` y el proveedor del AI SDK que 
 | [playwright](playwright.md) | Abre y controla la página que se analiza. | Instala Playwright y sus navegadores. |
 | [AI SDK (Vercel)](vercel-ai.md) | Proveedores de modelos mediante el AI SDK 6. | Instala el paquete de proveedor del AI SDK correspondiente. |
 | [Ollama](ollama.md) | Modelos locales mediante `ollama-ai-provider-v2`, documentado en el README. | Levanta Ollama e instala el proveedor. |
+| [crawlee](crawlee.md) | Combinación recíproca: crawlee lo enlaza como «Extraer datos estructurados con un LLM de las páginas que abre Crawlee. (combinación por arquitectura)». | Orden indicado desde crawlee: Pasa la página de Playwright a LLM Scraper con un esquema Zod. |
 
 **Notas:** Alternativas (elige una): maxun. Se quita la combinación con firecrawl por no estar documentada. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Videofy Minimal, herramienta local para convertir artículos de noticias en vídeos cortos para pantallas de señalización digital, del grupo de medios Schibsted. Licencia Apache-2.0. Es de nicho (~650 estrellas) y no cambia desde marzo de 2026.
+
+## ¿Qué hace?
+
+Obtiene el artículo, genera un guion corto, busca imágenes, produce narración y renderiza el vídeo con un flujo de revisión en una interfaz CMS.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.12, Node, uv y FFmpeg (`brew install uv node ffmpeg`). Renderiza con Remotion, cuya licencia el README pide revisar para uso comercial; las fuentes Reuters o AP requieren credenciales.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Motor de composición y render. | Viene integrado; revisa la licencia. |
+| [whisper](whisper.md) | Transcripción o subtítulos. (combinación por arquitectura) | Combina según el flujo. |
+| [FFmpeg](ffmpeg.md) | Procesado de medios. | Instala FFmpeg. |
+
+**Notas:** Alternativas (elige una): moneyprinterturbo.
+
+Estado en GitHub: activo · último push 2026-03-13 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/schibsted/videofy_minimal/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión |
 | Coste | Consumo de APIs o servicios. Necesita modelos y voz por API; Reuters o AP requieren además acceso a sus fuentes si los eliges |
 | Equipo | Preparación según la ruta elegida. uv; Node; FFmpeg; claves OpenAI y ElevenLabs; artículo autorizado |
-
-La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión
-
-## Qué puedes hacer con él
-
-Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una noticia para señalización; Probar una pieza informativa breve.
-
-## Cómo funciona
 
 La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión
 
@@ -96,12 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv; Node; FFmpeg; claves OpenAI y ElevenLabs; artículo autorizado
 - **Etiquetas:** `video` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
 
 ## Alternativas (elige una)
 

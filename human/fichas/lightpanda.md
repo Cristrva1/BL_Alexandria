@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).
+
+## ¿Qué hace?
+
+Ejecuta JavaScript con bajo consumo de memoria y alta velocidad, y expone un servidor CDP compatible con clientes como Puppeteer y Playwright.
+
+## ¿Cómo lo hace?
+
+Se instala con `brew install lightpanda-io/browser/lightpanda`, binario o `docker run -p 127.0.0.1:9222:9222 lightpanda/browser`. Envía telemetría por defecto (se desactiva con `LIGHTPANDA_DISABLE_TELEMETRY=true`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Puppeteer](puppeteer.md) | Cliente CDP documentado. | Arranca el servidor CDP y conecta Puppeteer. |
+| [playwright](playwright.md) | Cliente CDP. | Usa connectOverCDP. |
+| [Stagehand](stagehand.md) | SDK de agentes sobre un navegador ligero. (combinación por arquitectura) | Conecta por CDP si es compatible. |
+| [agent-browser](agent-browser.md) | Combinación recíproca: agent-browser lo enlaza como «Navegador headless ligero vía CDP. (combinación por arquitectura)». | Orden indicado desde agent-browser: Evalúa la compatibilidad CDP. |
+| [awesome-chrome-devtools](awesome-chrome-devtools.md) | Combinación recíproca: awesome-chrome-devtools lo enlaza como «Navegador con servidor CDP. (combinación por arquitectura)». | Orden indicado desde awesome-chrome-devtools: Evalúalo como backend. |
+
+**Notas:** Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.0.4 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lightpanda-io/browser/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web |
 | Coste | El coste depende del proveedor o la ruta. El navegador y scripts deterministas no usan tokens; el agente integrado admite API, modelos locales y Codex con su cuenta |
 | Equipo | Preparación según la ruta elegida. Binario compatible o Docker; agente o proveedor opcional; sitio de prueba |
-
-Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web
-
-## Qué puedes hacer con él
-
-Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.
-
-## Por qué destaca
-
-Usos propuestos: Preparar navegación headless; Explorar un agente con modelo local.
-
-## Cómo funciona
 
 Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web
 
@@ -86,13 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario compatible o Docker; agente o proveedor opcional; sitio de prueba
 - **Etiquetas:** `browser` `scraping`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Puppeteer](puppeteer.md) | 95.8k | Librería de Google para controlar Chrome y Firefox desde Node.js. |
-| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
 ## Enlaces
 

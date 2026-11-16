@@ -29,6 +29,8 @@ Es Java (requiere Java 11+); se instala desde las releases, con `brew install ja
 | [frida](frida.md) | Localizar clases y métodos para escribir hooks de Frida. (combinación por arquitectura) | Analiza en JADX y escribe el script de Frida con las firmas encontradas. |
 | [Apktool](apktool.md) | Modificar y reconstruir la app tras entenderla en JADX. (combinación por arquitectura) | Usa JADX para leer y Apktool para editar smali y recursos. |
 | [ghidra](ghidra.md) | Analizar las librerías nativas `.so` que JADX no cubre. (combinación por arquitectura) | Extrae `lib/` de la APK y ábrelas en Ghidra. |
+| [rea](rea.md) | Combinación recíproca: rea lo enlaza como «Análisis de APK mediante JADX headless». | Orden indicado desde rea: Instala JADX y un JDK completo. |
+| [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Herramienta móvil de la lista. (combinación por arquitectura)». | Orden indicado desde awesome-ai-reverse-engineering: Úsalo con un servidor MCP de Android si lo necesitas. |
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

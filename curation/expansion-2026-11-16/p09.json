@@ -1,0 +1,833 @@
+{
+ "batch": "p09",
+ "title": "Visión y rostros, audio y voz, vídeo programático, diagramas y navegadores",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "cvat",
+   "label-studio"
+  ],
+  [
+   "f5-tts",
+   "fish-speech",
+   "cosyvoice"
+  ],
+  [
+   "yue",
+   "ace-step-1.5",
+   "audiocraft"
+  ],
+  [
+   "ten-framework",
+   "pipecat",
+   "livekit-agents",
+   "dograh"
+  ],
+  [
+   "motion-canvas",
+   "revideo",
+   "remotion"
+  ],
+  [
+   "d2",
+   "plantuml",
+   "mermaid"
+  ],
+  [
+   "cypress",
+   "webdriverio",
+   "playwright",
+   "selenium",
+   "puppeteer"
+  ],
+  [
+   "ladybird",
+   "servo"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "serengil/deepface",
+   "id": "deepface",
+   "cat": 28,
+   "sub": "rostros",
+   "kind": "library",
+   "name": "DeepFace",
+   "one": "Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face.",
+   "how": "Paquete Python que encadena detección, alineación, normalización, representación y verificación de rostros sobre ONNX Runtime (por defecto), TensorFlow o PyTorch.",
+   "examples": [
+    "verificar si dos fotos propias o autorizadas corresponden a la misma persona",
+    "buscar una cara dentro de una carpeta de imágenes con consentimiento de las personas"
+   ],
+   "try": [
+    "Instala con `pip install deepface` y ejecuta `DeepFace.verify` con dos imágenes tuyas.",
+    "Obtienes un diccionario con `verified`, la distancia y el umbral usado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "face",
+    "python",
+    "vision",
+    "biometrics"
+   ],
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos faciales locales (VGG-Face, FaceNet, ArcFace, Dlib, SFace, GhostFaceNet, Buffalo_L) descargados al primer uso",
+   "cmd": "pip install deepface",
+   "caveat": "Reconocimiento facial: tratar datos biométricos está regulado (p. ej. RGPD o LFPDPPP) y requiere base legal o consentimiento. Algunos modelos envueltos tienen licencias propias."
+  },
+  {
+   "gh": "facebookresearch/detectron2",
+   "id": "detectron2",
+   "cat": 28,
+   "sub": "vision",
+   "kind": "library",
+   "name": "Detectron2",
+   "one": "Biblioteca de Meta AI para detección de objetos y segmentación (instancias, panóptica, keypoints) sobre PyTorch, con un zoo de modelos preentrenados.",
+   "how": "Biblioteca PyTorch modular con implementaciones de Mask R-CNN, Cascade R-CNN, PointRend, DeepLab, ViTDet y otras, configuración LazyConfig y exportación a TorchScript.",
+   "examples": [
+    "entrenar un detector o segmentador sobre un conjunto de imágenes propio",
+    "usar modelos preentrenados de detección como base para investigación"
+   ],
+   "try": [
+    "Sigue la guía de instalación oficial (requiere PyTorch y compilar extensiones) y ejecuta la demo con un modelo del zoo sobre una imagen.",
+    "Obtienes la imagen con cajas y máscaras de los objetos detectados."
+   ],
+   "setup": "hard",
+   "tags": [
+    "vision",
+    "pytorch",
+    "detection",
+    "segmentation"
+   ],
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos del zoo de Detectron2 (Mask R-CNN, Cascade R-CNN, ViTDet…) en local",
+   "caveat": "Mantenimiento bajo: la última versión publicada es v0.6 (noviembre de 2021) y los cambios recientes son esporádicos; para proyectos nuevos valora alternativas más activas."
+  },
+  {
+   "gh": "cvat-ai/cvat",
+   "id": "cvat",
+   "cat": 28,
+   "sub": "vision",
+   "kind": "server",
+   "name": "CVAT Community",
+   "one": "Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets.",
+   "how": "Aplicación web (Django + React) desplegada con Docker Compose, con SDK y CLI en Python, funciones serverless (Nuclio) para preanotar y almacenamiento en la nube.",
+   "examples": [
+    "etiquetar un dataset de detección o segmentación con varias personas",
+    "preanotar vídeos con un modelo y corregir solo los errores"
+   ],
+   "try": [
+    "Clona el repositorio y ejecuta `docker compose up -d`; crea un usuario y una tarea con unas pocas imágenes.",
+    "Puedes dibujar cajas o polígonos y exportar las anotaciones en formato COCO o YOLO."
+   ],
+   "setup": "medium",
+   "tags": [
+    "annotation",
+    "vision",
+    "dataset",
+    "self-hosted"
+   ],
+   "goals": [
+    "imagenes",
+    "datos"
+   ],
+   "cmd": "docker compose up -d",
+   "caveat": "CVAT Community es MIT; el código de /serverless puede usar recursos de terceros con licencias no comerciales. CVAT Online y Enterprise son de pago."
+  },
+  {
+   "gh": "davisking/dlib",
+   "id": "dlib",
+   "cat": 28,
+   "sub": "vision",
+   "kind": "library",
+   "name": "dlib",
+   "one": "Toolkit C++ con bindings de Python para aprendizaje automático y visión: detección de caras, 68 puntos faciales, seguimiento de objetos y optimización.",
+   "how": "Biblioteca C++17 con su propio módulo de redes neuronales, detectores HOG y CNN, regresión de formas y bindings de Python compilados con CMake.",
+   "examples": [
+    "detectar caras y sus puntos de referencia en fotos para alinear o recortar",
+    "usar un detector rápido en CPU dentro de una aplicación C++"
+   ],
+   "try": [
+    "Instala con `pip install dlib` (necesita CMake y compilador) y ejecuta el ejemplo de detección facial de la carpeta python_examples.",
+    "Obtienes las coordenadas de las caras detectadas en la imagen."
+   ],
+   "setup": "medium",
+   "tags": [
+    "vision",
+    "cpp",
+    "python",
+    "face"
+   ],
+   "goals": [
+    "imagenes",
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos preentrenados de dlib (detector facial, predictor de 68 puntos, reconocimiento facial) descargados aparte",
+   "cmd": "pip install dlib",
+   "license": "BSL-1.0"
+  },
+  {
+   "gh": "Anjok07/ultimatevocalremovergui",
+   "id": "ultimate-vocal-remover",
+   "cat": 29,
+   "sub": "audio",
+   "kind": "app",
+   "name": "Ultimate Vocal Remover (UVR)",
+   "one": "Aplicación de escritorio para separar voz e instrumentos de canciones con modelos de IA (MDX-Net, VR, Demucs), sin necesidad de programar.",
+   "how": "Aplicación Python con interfaz Tkinter que ejecuta modelos de separación de fuentes con PyTorch y usa FFmpeg y Rubber Band para formatos y cambios de tono.",
+   "examples": [
+    "obtener la pista instrumental o la voz aislada de una canción propia",
+    "preparar stems para remezclar o practicar con una canción"
+   ],
+   "try": [
+    "Descarga el instalador para tu sistema desde las releases, abre una canción y separa con un modelo MDX-Net.",
+    "Obtienes dos archivos: voz e instrumental."
+   ],
+   "setup": "easy",
+   "tags": [
+    "audio",
+    "music",
+    "separation",
+    "app"
+   ],
+   "goals": [
+    "voz"
+   ],
+   "ready": true,
+   "ai": "local",
+   "models": "Modelos de separación locales (MDX-Net, VR Architecture, Demucs v3/v4)",
+   "caveat": "Separar y redistribuir pistas de música ajena puede infringir derechos de autor. La última versión publicada es la v5.6 (septiembre de 2023)."
+  },
+  {
+   "gh": "k2-fsa/sherpa-onnx",
+   "id": "sherpa-onnx",
+   "cat": 29,
+   "sub": "stt",
+   "kind": "engine",
+   "name": "sherpa-onnx",
+   "one": "Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor.",
+   "how": "Biblioteca C++ sobre ONNX Runtime con APIs en Python, C, C++, Java, Kotlin, Swift, Go, C#, JavaScript, Dart y otros; ejecuta modelos exportados (Zipformer, Whisper, Parakeet, Kokoro, Piper…).",
+   "examples": [
+    "añadir dictado o transcripción sin conexión a una app Android o iOS",
+    "poner reconocimiento y síntesis de voz en una Raspberry Pi sin nube"
+   ],
+   "try": [
+    "Instala el paquete de Python, descarga un modelo de reconocimiento preentrenado de la documentación y transcribe un WAV de prueba.",
+    "Obtienes el texto reconocido sin conexión a internet."
+   ],
+   "setup": "medium",
+   "tags": [
+    "speech",
+    "stt",
+    "tts",
+    "onnx"
+   ],
+   "goals": [
+    "voz",
+    "programar"
+   ],
+   "ai": "local",
+   "models": "Modelos ONNX locales: Zipformer, Paraformer, SenseVoice, Whisper, Parakeet (NeMo), Kokoro, Piper, VITS, pyannote y otros",
+   "caveat": "El código es Apache-2.0; cada modelo preentrenado tiene su propia licencia."
+  },
+  {
+   "gh": "SWivid/F5-TTS",
+   "id": "f5-tts",
+   "cat": 29,
+   "sub": "tts",
+   "kind": "model",
+   "name": "F5-TTS",
+   "one": "Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI.",
+   "how": "Paquete Python sobre PyTorch con los modelos F5-TTS (DiT + ConvNeXt V2) y E2 TTS, muestreo Sway, vocoder Vocos y herramientas de inferencia, entrenamiento y ajuste fino.",
+   "examples": [
+    "generar narración con tu propia voz a partir de una muestra corta",
+    "prototipar voces para un proyecto de investigación sin uso comercial"
+   ],
+   "try": [
+    "Instala PyTorch y `pip install f5-tts`; ejecuta `f5-tts_infer-gradio` y genera audio con una referencia de tu voz.",
+    "Obtienes un audio con el texto leído imitando la voz de referencia."
+   ],
+   "setup": "medium",
+   "tags": [
+    "tts",
+    "voice-cloning",
+    "pytorch",
+    "speech"
+   ],
+   "goals": [
+    "narrar",
+    "voz"
+   ],
+   "ai": "local",
+   "models": "Pesos F5-TTS y E2 TTS (Hugging Face) en local",
+   "cmd": "pip install f5-tts",
+   "caveat": "Los pesos preentrenados son CC-BY-NC (solo uso no comercial) por el dataset Emilia; clonar voces ajenas sin consentimiento puede violar derechos de imagen y voz."
+  },
+  {
+   "gh": "audacity/audacity",
+   "id": "audacity",
+   "cat": 29,
+   "sub": "audio",
+   "kind": "app",
+   "name": "Audacity",
+   "one": "Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incluidos plugins de IA locales de Intel.",
+   "how": "Aplicación C++ multiplataforma con edición multipista, efectos y plugins (VST3, LV2, Nyquist); importa y exporta formatos comprimidos con FFmpeg.",
+   "examples": [
+    "limpiar, cortar y normalizar una grabación de voz o podcast",
+    "editar stems separados con IA antes de mezclarlos"
+   ],
+   "try": [
+    "Descarga Audacity desde su web, graba o importa un audio y aplica reducción de ruido y normalización.",
+    "Exportas un MP3 o WAV más limpio."
+   ],
+   "setup": "easy",
+   "tags": [
+    "audio",
+    "editor",
+    "cpp",
+    "app"
+   ],
+   "goals": [
+    "voz"
+   ],
+   "ready": true,
+   "caveat": "La rama master está en plena reestructuración hacia Audacity 4 y no es estable para compilar; usa las versiones publicadas.",
+   "license": "GPL-3.0 (mayoría de archivos GPL-2.0-or-later)"
+  },
+  {
+   "gh": "adefossez/demucs",
+   "id": "demucs",
+   "cat": 29,
+   "sub": "audio",
+   "kind": "library",
+   "name": "Demucs",
+   "one": "Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta.",
+   "how": "Paquete Python y CLI sobre PyTorch con los modelos Hybrid Demucs v3 y Hybrid Transformer Demucs v4 (htdemucs), que procesan espectrograma y forma de onda.",
+   "examples": [
+    "separar la voz y la batería de una canción propia para remezclar",
+    "generar stems para karaoke o práctica musical"
+   ],
+   "try": [
+    "Instala con `python3 -m pip install -U demucs` y ejecuta `demucs cancion.mp3`.",
+    "Obtienes una carpeta con las pistas separadas (drums, bass, vocals, other)."
+   ],
+   "setup": "easy",
+   "tags": [
+    "audio",
+    "music",
+    "separation",
+    "pytorch"
+   ],
+   "goals": [
+    "voz"
+   ],
+   "ai": "local",
+   "models": "Modelos Demucs (htdemucs, htdemucs_ft, htdemucs_6s, mdx) descargados al primer uso",
+   "cmd": "python3 -m pip install -U demucs",
+   "caveat": "Es un fork (el original de Meta se archivó). El autor no trabaja activamente en él; la licencia de los pesos no es clara (MusDB es de uso para investigación y la variante de 6 fuentes probablemente es no comercial)."
+  },
+  {
+   "gh": "multimodal-art-projection/YuE",
+   "id": "yue",
+   "cat": 29,
+   "sub": "musica",
+   "kind": "model",
+   "name": "YuE2",
+   "one": "Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes.",
+   "how": "Paquete Python (`yue2`) con un backbone AR–NAR Mixture-of-Transformers que planifica una partitura ABC y genera audio estéreo a 48 kHz con flow matching y un VAE.",
+   "examples": [
+    "generar una maqueta de canción con letra propia para un proyecto personal o académico",
+    "editar la armonía de una canción generada manteniendo la melodía"
+   ],
+   "try": [
+    "En Linux con una GPU NVIDIA de 24 GB, clona el repo, ejecuta `python -m pip install .` y genera una canción con `YuE2Pipeline`.",
+    "Obtienes un audio estéreo y la partitura ABC editable."
+   ],
+   "setup": "hard",
+   "tags": [
+    "music",
+    "generation",
+    "audio",
+    "model"
+   ],
+   "goals": [
+    "voz"
+   ],
+   "ai": "local",
+   "models": "YuE2-3B (Hugging Face) en local; requiere GPU NVIDIA con BF16 y 24 GB de VRAM",
+   "caveat": "Los pesos son CC BY-NC 4.0 con permiso adicional de los creadores: solo uso no comercial; el uso comercial requiere licencia. Exige GPU NVIDIA de 24 GB."
+  },
+  {
+   "gh": "TEN-framework/ten-framework",
+   "id": "ten-framework",
+   "cat": 29,
+   "sub": "voz-agentes",
+   "kind": "framework",
+   "name": "TEN Framework",
+   "one": "Framework para agentes de voz conversacionales en tiempo real, con grafo de extensiones (ASR, LLM, TTS, VAD, turnos), diseñador visual y ejemplos listos.",
+   "how": "Runtime multilenguaje (C++, Go, Python, Node.js) que conecta extensiones en un grafo; TMAN Designer permite editarlo visualmente y los ejemplos se ejecutan con Docker Compose.",
+   "examples": [
+    "montar un asistente de voz que conversa en tiempo real con un LLM",
+    "construir un agente de voz con avatar o con transcripción en vivo"
+   ],
+   "try": [
+    "Clona el repo, rellena `.env` con las claves de Agora, OpenAI, Deepgram y ElevenLabs y ejecuta `docker compose up -d`; abre el ejemplo de voz en el navegador.",
+    "Puedes hablar con un agente que responde por voz en tiempo real."
+   ],
+   "setup": "hard",
+   "tags": [
+    "voice",
+    "agents",
+    "realtime",
+    "framework"
+   ],
+   "goals": [
+    "voz",
+    "automatizar"
+   ],
+   "ai": "required",
+   "models": "LLM, ASR y TTS configurables por extensión (OpenAI, Deepgram, ElevenLabs y otros; algunos locales)",
+   "caveat": "Licencia Apache-2.0 con condiciones adicionales de Agora (no OSI): no permite alojarlo en dispositivos de usuario final ni usarlo para competir con Agora. El ejemplo rápido necesita claves de pago (Agora, OpenAI, Deepgram, ElevenLabs).",
+   "license": "Apache-2.0 con condiciones adicionales (Agora)"
+  },
+  {
+   "gh": "motion-canvas/motion-canvas",
+   "id": "motion-canvas",
+   "cat": 30,
+   "sub": "motores",
+   "kind": "library",
+   "name": "Motion Canvas",
+   "one": "Biblioteca TypeScript para crear animaciones y vídeos explicativos con código, con editor en tiempo real que sincroniza animaciones con una pista de voz.",
+   "how": "Biblioteca TypeScript que describe animaciones con generadores, más un editor basado en Vite para previsualizar, ajustar tiempos y renderizar fotogramas.",
+   "examples": [
+    "hacer vídeos explicativos de programación o matemáticas con animaciones precisas",
+    "sincronizar animaciones con una narración grabada"
+   ],
+   "try": [
+    "Ejecuta `npm init @motion-canvas@latest`, entra en la carpeta, ejecuta `npm install` y `npm start`, y abre el editor.",
+    "Ves la escena de ejemplo y puedes editar el código con recarga en vivo."
+   ],
+   "setup": "easy",
+   "tags": [
+    "animation",
+    "typescript",
+    "video",
+    "code"
+   ],
+   "goals": [
+    "video",
+    "programar"
+   ],
+   "caveat": "La última versión publicada (v3.17.2) es de diciembre de 2024 y el último push de julio de 2026: mantenimiento lento."
+  },
+  {
+   "gh": "midrender/revideo",
+   "id": "revideo",
+   "cat": 30,
+   "sub": "motores",
+   "kind": "library",
+   "name": "Revideo",
+   "one": "Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor React para previsualizar escenas en el navegador.",
+   "how": "Escenas como funciones generadoras en TypeScript (modelo heredado de Motion Canvas), API de renderizado headless paralelizable y utilidades FFmpeg en `@revideo/ffmpeg`.",
+   "examples": [
+    "generar muchas variantes de un vídeo a partir de datos o plantillas",
+    "añadir un renderizador de vídeo a una aplicación web"
+   ],
+   "try": [
+    "Ejecuta `npm init @revideo@latest` y sigue el asistente; después renderiza el proyecto de ejemplo.",
+    "Obtienes un MP4 generado desde código."
+   ],
+   "setup": "medium",
+   "tags": [
+    "video",
+    "typescript",
+    "rendering",
+    "code"
+   ],
+   "goals": [
+    "video",
+    "programar"
+   ],
+   "cmd": "npm init @revideo@latest",
+   "caveat": "Envía telemetría por defecto (se desactiva con DISABLE_TELEMETRY=true). El último push es de julio de 2026."
+  },
+  {
+   "gh": "d2lang/d2",
+   "id": "d2",
+   "cat": 31,
+   "sub": "diagramas",
+   "kind": "app",
+   "name": "D2",
+   "one": "Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
+   "how": "CLI y biblioteca en Go que compila archivos .d2 con los motores de layout Dagro, elk-go o TALA y exporta a SVG, PNG, GIF, PDF o PPTX, con recarga en vivo.",
+   "examples": [
+    "mantener diagramas de arquitectura como texto versionado junto al código",
+    "generar diagramas desde scripts o documentación técnica"
+   ],
+   "try": [
+    "Instala con el script oficial, escribe `x -> y` en `in.d2` y ejecuta `d2 --watch in.d2 out.svg`.",
+    "Se abre una vista en el navegador que se actualiza al guardar el archivo."
+   ],
+   "setup": "easy",
+   "tags": [
+    "diagrams",
+    "go",
+    "cli",
+    "docs-as-code"
+   ],
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "cmd": "curl -fsSL https://d2lang.com/install.sh | sh -s --",
+   "caveat": "El instalador recomendado ejecuta un script remoto con `sh`; revísalo antes (`--dry-run`) o instala con Go o el gestor de paquetes."
+  },
+  {
+   "gh": "jgraph/drawio",
+   "id": "drawio",
+   "cat": 31,
+   "sub": "diagramas",
+   "kind": "app",
+   "name": "draw.io",
+   "one": "Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML.",
+   "how": "Aplicación JavaScript del lado del cliente (basada en mxGraph) que guarda en archivos .drawio, con app de escritorio Electron y servidor MCP oficial para asistentes de IA.",
+   "examples": [
+    "dibujar diagramas de arquitectura o redes con iconos de AWS, Azure o GCP",
+    "convertir un diagrama Mermaid en uno editable a mano"
+   ],
+   "try": [
+    "Abre app.diagrams.net en el navegador o instala draw.io Desktop, y crea un diagrama desde una plantilla.",
+    "Guardas un archivo .drawio editable o lo exportas a PNG, SVG o PDF."
+   ],
+   "setup": "easy",
+   "tags": [
+    "diagrams",
+    "editor",
+    "javascript",
+    "app"
+   ],
+   "goals": [
+    "diagramas"
+   ],
+   "ready": true,
+   "caveat": "Código Apache-2.0, pero los iconos y plantillas no pueden usarse en productos de Atlassian sin permiso. El proyecto no acepta pull requests."
+  },
+  {
+   "gh": "plantuml/plantuml",
+   "id": "plantuml",
+   "cat": 31,
+   "sub": "diagramas",
+   "kind": "app",
+   "name": "PlantUML",
+   "one": "Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
+   "how": "Programa Java (JAR) que interpreta el lenguaje PlantUML y renderiza con su motor propio o Graphviz; tiene servidor web, integraciones y un servidor MCP en Node.js.",
+   "examples": [
+    "documentar diagramas de secuencia y clases como texto en el repositorio",
+    "generar diagramas automáticamente en la documentación técnica"
+   ],
+   "try": [
+    "Descarga el JAR de las releases, escribe un `@startuml` sencillo en `a.puml` y ejecuta `java -jar plantuml.jar a.puml`.",
+    "Obtienes un PNG con el diagrama."
+   ],
+   "setup": "easy",
+   "tags": [
+    "diagrams",
+    "uml",
+    "java",
+    "docs-as-code"
+   ],
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "license": "Multilicencia (GPL-3.0, LGPL-3.0, Apache-2.0, EPL-2.0 o MIT)"
+  },
+  {
+   "gh": "yuzutech/kroki",
+   "id": "kroki",
+   "cat": 31,
+   "sub": "diagramas",
+   "kind": "server",
+   "name": "Kroki",
+   "one": "Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG.",
+   "how": "Gateway en Java (Vert.x) que recibe el código del diagrama por GET o POST y lo renderiza con cada herramienta; Mermaid, BPMN, Excalidraw y Diagrams.net van en contenedores complementarios.",
+   "examples": [
+    "renderizar diagramas de varios lenguajes en una wiki o generador de documentación",
+    "autoalojar el renderizado para no enviar diagramas a servicios públicos"
+   ],
+   "try": [
+    "Ejecuta `docker run -d -p 8000:8000 yuzutech/kroki` y abre `http://localhost:8000/plantuml/svg/` con un diagrama codificado.",
+    "Obtienes el SVG del diagrama desde tu propio servidor."
+   ],
+   "setup": "easy",
+   "tags": [
+    "diagrams",
+    "api",
+    "self-hosted",
+    "docker"
+   ],
+   "goals": [
+    "diagramas",
+    "programar"
+   ],
+   "cmd": "docker run -d -p 8000:8000 yuzutech/kroki"
+  },
+  {
+   "gh": "FlareSolverr/FlareSolverr",
+   "id": "flaresolverr",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "kind": "server",
+   "name": "FlareSolverr",
+   "one": "Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.",
+   "how": "Servicio Python con API HTTP que lanza Chrome con Selenium y undetected-chromedriver, espera a que se resuelva el desafío y devuelve HTML y cookies.",
+   "examples": [
+    "dar acceso a indexadores (como Prowlarr o Jackett) a sitios propios o autorizados detrás de Cloudflare",
+    "obtener cookies válidas para que un scraper autorizado continúe con un cliente HTTP ligero"
+   ],
+   "try": [
+    "Ejecuta el contenedor con Docker y envía un POST a `http://localhost:8191/v1` con `cmd: request.get` y una URL autorizada.",
+    "Obtienes el HTML de la página y las cookies de la sesión."
+   ],
+   "setup": "easy",
+   "tags": [
+    "scraping",
+    "proxy",
+    "cloudflare",
+    "docker"
+   ],
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "cmd": "docker run -d --name=flaresolverr -p 127.0.0.1:8191:8191 -e LOG_LEVEL=info --restart unless-stopped ghcr.io/flaresolverr/flaresolverr:latest",
+   "caveat": "Evadir protecciones anti-bot puede violar los términos de servicio de los sitios; úsalo solo con autorización. Cada petición lanza un navegador: alto consumo de memoria. Los solucionadores de captcha no funcionan actualmente."
+  },
+  {
+   "gh": "daijro/camoufox",
+   "id": "camoufox",
+   "cat": 32,
+   "sub": "motores-web",
+   "kind": "library",
+   "name": "Camoufox",
+   "one": "Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright.",
+   "how": "Build parcheado de Firefox que inyecta la huella de dispositivo desde C++, con paquetes de Python (MIT) y TypeScript que lo lanzan como navegador de Playwright.",
+   "examples": [
+    "automatizar navegación en sitios propios o autorizados que bloquean navegadores headless",
+    "probar cómo responde tu web a distintas huellas de navegador"
+   ],
+   "try": [
+    "Instala con `pip install -U \"camoufox[geoip]\"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README.",
+    "Obtienes un objeto `Browser` de Playwright normal controlando Camoufox."
+   ],
+   "setup": "medium",
+   "tags": [
+    "browser",
+    "scraping",
+    "firefox",
+    "playwright"
+   ],
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "cmd": "pip install -U \"camoufox[geoip]\"",
+   "license": "MPL-2.0 (navegador) y MIT (paquetes de Python)",
+   "caveat": "Proyecto en desarrollo, no recomendado para producción estable. Falsear huellas para evadir detección puede violar los términos de servicio de los sitios."
+  },
+  {
+   "gh": "nanobrowser/nanobrowser",
+   "id": "nanobrowser",
+   "cat": 32,
+   "sub": "agentes-web",
+   "kind": "agent",
+   "name": "Nanobrowser",
+   "one": "Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, con tu clave de API o un modelo local.",
+   "how": "Extensión de Chrome con panel lateral de chat; el agente controla las pestañas mediante la API `chrome.debugger` y usa el proveedor de LLM que elijas.",
+   "examples": [
+    "automatizar tareas repetitivas en webs donde ya tienes la sesión iniciada",
+    "investigar y resumir información de varias páginas desde el panel lateral"
+   ],
+   "try": [
+    "Instala Nanobrowser desde la Chrome Web Store, configura una clave de API o Ollama y pide una tarea sencilla en el panel lateral.",
+    "El agente abre las páginas y realiza la tarea en una pestaña propia."
+   ],
+   "setup": "easy",
+   "tags": [
+    "browser",
+    "agent",
+    "chrome",
+    "extension"
+   ],
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "ready": true,
+   "ai": "local_choice",
+   "models": "Proveedores en la nube (Anthropic, OpenAI, Gemini, xAI, DeepSeek, Mistral, OpenRouter…) o modelos locales con Ollama, LM Studio u otros servidores compatibles con OpenAI",
+   "caveat": "Envía un recuento diario anónimo de usuarios y de uso (sin páginas ni sitios). El agente actúa con tus sesiones iniciadas: revisa el modo Ask/Auto y las reglas por sitio."
+  },
+  {
+   "gh": "steel-dev/steel-browser",
+   "id": "steel-browser",
+   "cat": 32,
+   "sub": "agentes-web",
+   "kind": "server",
+   "name": "Steel Browser",
+   "one": "API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium.",
+   "how": "Servidor Node.js que gestiona instancias de Chrome por CDP con una API REST de sesiones, scraping y capturas, SDK de Node y Python e interfaz para ver sesiones en vivo.",
+   "examples": [
+    "dar a un agente de IA un navegador aislado y persistente sin montar infraestructura",
+    "extraer páginas o capturas mediante una API REST propia"
+   ],
+   "try": [
+    "Ejecuta el contenedor con Docker y abre la interfaz en `http://localhost:3000/ui` o llama a la API en el puerto 3000.",
+    "Puedes crear una sesión y conectar Puppeteer o Playwright a ella."
+   ],
+   "setup": "medium",
+   "tags": [
+    "browser",
+    "api",
+    "agents",
+    "docker"
+   ],
+   "goals": [
+    "web",
+    "automatizar"
+   ],
+   "cmd": "docker run -p 3000:3000 -p 9223:9223 ghcr.io/steel-dev/steel-browser",
+   "caveat": "Steel Cloud (la opción gestionada que promociona el README) es de pago; la versión autoalojada es Apache-2.0."
+  },
+  {
+   "gh": "cypress-io/cypress",
+   "id": "cypress",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "kind": "framework",
+   "name": "Cypress",
+   "one": "Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso.",
+   "how": "Aplicación de escritorio y CLI (Electron + Node.js) que ejecuta las pruebas JavaScript dentro del navegador junto a la app, con capturas, vídeo y servicio Cypress Cloud opcional.",
+   "examples": [
+    "probar los flujos críticos de una web (registro, compra) en cada cambio",
+    "probar componentes de React, Vue o Angular de forma aislada"
+   ],
+   "try": [
+    "En un proyecto web ejecuta `npm install cypress --save-dev` y `npx cypress open`; crea una prueba de ejemplo.",
+    "Ves la prueba ejecutándose paso a paso en el navegador."
+   ],
+   "setup": "easy",
+   "tags": [
+    "testing",
+    "e2e",
+    "javascript",
+    "browser"
+   ],
+   "goals": [
+    "programar",
+    "web"
+   ],
+   "cmd": "npm install cypress --save-dev",
+   "caveat": "Cypress es MIT; Cypress Cloud (grabación, paralelización, Test Replay, Cloud MCP) es un servicio con planes de pago."
+  },
+  {
+   "gh": "webdriverio/webdriverio",
+   "id": "webdriverio",
+   "cat": 32,
+   "sub": "bibliotecas",
+   "kind": "framework",
+   "name": "WebdriverIO",
+   "one": "Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA.",
+   "how": "Framework Node.js modular (test runner, servicios y reporters) que habla los protocolos estándar WebDriver y WebDriver BiDi, y Appium para móvil; ejecuta en local o en nubes de pruebas.",
+   "examples": [
+    "probar una web en varios navegadores reales con protocolos estándar",
+    "automatizar pruebas de apps iOS y Android con Appium"
+   ],
+   "try": [
+    "En un proyecto ejecuta el asistente `npm init wdio@latest .` y lanza la prueba de ejemplo.",
+    "Ves el navegador abrirse y la prueba pasar en la terminal."
+   ],
+   "setup": "medium",
+   "tags": [
+    "testing",
+    "e2e",
+    "webdriver",
+    "mobile"
+   ],
+   "goals": [
+    "programar",
+    "web"
+   ],
+   "mcp": true
+  },
+  {
+   "gh": "LadybirdBrowser/ladybird",
+   "id": "ladybird",
+   "cat": 32,
+   "sub": "motores-web",
+   "kind": "app",
+   "name": "Ladybird",
+   "one": "Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa.",
+   "how": "Navegador C++ multiproceso con procesos de renderizado aislados por sitio, heredado de SerenityOS (LibWeb, LibJS, LibWasm…), que se compila desde el código.",
+   "examples": [
+    "seguir o contribuir al desarrollo de un motor de navegador independiente",
+    "probar la compatibilidad de una web con un motor nuevo"
+   ],
+   "try": [
+    "Sigue la guía de compilación (`Documentation/BuildInstructionsLadybird.md`) en Linux o macOS y ejecuta el navegador.",
+    "Abres páginas con un motor independiente, todavía con fallos."
+   ],
+   "setup": "hard",
+   "tags": [
+    "browser",
+    "engine",
+    "cpp",
+    "independent"
+   ],
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "caveat": "Pre-alfa: solo apto para desarrolladores, no para uso diario."
+  },
+  {
+   "gh": "servo/servo",
+   "id": "servo",
+   "cat": 32,
+   "sub": "motores-web",
+   "kind": "engine",
+   "name": "Servo",
+   "one": "Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe.",
+   "how": "Motor Rust modular (layout, script, red, WebGPU…) que se incrusta como biblioteca o se ejecuta como navegador de demostración en Linux, macOS, Windows, Android y OpenHarmony.",
+   "examples": [
+    "incrustar renderizado web en una aplicación Rust sin depender de Chromium",
+    "experimentar con un motor de navegador moderno y seguro en memoria"
+   ],
+   "try": [
+    "Instala Rust y las dependencias del sistema según el README y ejecuta `./mach build` y `./mach run https://servo.org`.",
+    "Abres una web con el navegador de demostración de Servo."
+   ],
+   "setup": "hard",
+   "tags": [
+    "browser",
+    "engine",
+    "rust",
+    "embedding"
+   ],
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "caveat": "Es un prototipo. El proyecto no acepta contribuciones generadas con LLM u otras herramientas de IA."
+  }
+ ]
+}

@@ -128,37 +128,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Completa setup y solicita un informe corto con fuentes antes de habilitar herramientas de escritura
 **Qué comprobar:** Puedes contrastar las referencias y revisar las acciones del agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `firecrawl`, `searxng`
-
-## `fugu`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,shell
-
-**Qué es:** Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.
-**Stack:** Acceso Sakana API; Claude Code o Codex si eliges sus launchers; carpeta de prueba
-**Acceso y costes:**
-- API de IA: API de IA necesaria. Se consume mediante Sakana API y sus condiciones; usar los launchers no incluye créditos del plan Claude Code o Codex
-- Claude Code: Integración documentada por el proyecto
-- Codex: Integración documentada por el proyecto
-- Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Los launchers son adaptaciones de proveedor; el autor documenta diferencias con Claude Code y un procedimiento manual específico para Windows
-- Coste: Consumo de APIs o servicios. Se consume mediante Sakana API y sus condiciones; usar los launchers no incluye créditos del plan Claude Code o Codex
-- Equipo: Preparación según la ruta elegida. Acceso Sakana API; Claude Code o Codex si eliges sus launchers; carpeta de prueba
-**Repo:** https://github.com/SakanaAI/fugu
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/SakanaAI/fugu/blob/main/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un sistema multiagente como proveedor; Comparar un flujo de código con Fugu
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Sigue la configuración manual para tu sistema y consulta un archivo breve antes de permitir cambios
-**Qué comprobar:** Puedes identificar Fugu como proveedor y revisar la respuesta
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`, `claude-code`, `t3code`
+**Combina con:** `langgraph`, `firecrawl`, `searxng`, `sandbox`
 
 ## `gpt-researcher`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,research,python,docker
@@ -188,8 +158,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Haz una pregunta acotada y verifica dos fuentes antes de reutilizar el informe
 **Qué comprobar:** Puedes recuperar contexto y enlaces que respaldan conclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `firecrawl`, `ollama`
-**Alternativas (elige una):** `storm`, `vane`
+**Combina con:** `claude-code`, `firecrawl`, `ollama`, `searxng`
+**Alternativas (elige una):** `storm`, `vane`, `local-deep-research`
 
 ## `hello-halo`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=asistentes,agent,typescript
@@ -281,6 +251,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar buscador, modelo y evidencia utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `searxng`, `llama-cpp`
+**Alternativas (elige una):** `gpt-researcher`
 
 ## `mercury-agent`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,chatbot,typescript
@@ -341,7 +312,39 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Asigna una tarea de explicación a un agente en un proyecto de prueba antes de crear automatizaciones
 **Qué comprobar:** Puedes ver tarea, sesión y resultado atribuibles al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `opencode`
+**Combina con:** `claude-code`, `codex`, `opencode`, `andrej-karpathy-skills`
+**Alternativas (elige una):** `paperclip`
+
+## `openbot`
+role=app · exec=hybrid · setup=heavy · mcp=True · prov=openai,anthropic,google,local · tags=agents,computer-use,ag-ui,mcp,typescript
+
+**Qué es:** Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.
+**Stack:** TypeScript, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. Elige OpenAI, Claude, Gemini o un endpoint compatible con OpenAI; el despliegue en Kubernetes de evaluación usa una clave de modelo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El README describe una operación totalmente local con OpenBot, Intelligence y un modelo compatible; las apps conectadas siguen usando internet.
+- Coste: El coste depende del proveedor o la ruta. La plantilla es MIT, pero CopilotKit Intelligence tiene licencia aparte: local gratuita para uso personal, prueba para Kubernetes y licencia de producción después.
+- Equipo: Preparación según la ruta elegida. Docker para PostgreSQL, la API y los Bots; Bun para ejecutar desde el código; Kubernetes y Helm para equipos.
+**Repo:** https://github.com/CopilotKit/OpenBot
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/CopilotKit/OpenBot/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación
+**Qué comprobar:** La acción queda pendiente de tu aprobación y aparece en la auditoría
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `copilotkit`, `langgraph`, `mastra`, `crewai`, `firecrawl`, `composio`
+**Alternativas (elige una):** `opendots`
 
 ## `openclaw`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript
@@ -407,6 +410,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar la respuesta y el panel de conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `copilotkit`, `composio`, `servers`
+**Alternativas (elige una):** `openbot`
 
 ## `paperclip`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance
@@ -437,6 +441,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes atribuir una ejecución a su tarea, agente y coste registrado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openclaw`, `claude-code`, `codex`, `hermes-agent`
+**Alternativas (elige una):** `multica`
 
 ## `ruflo`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=automation,agents,typescript

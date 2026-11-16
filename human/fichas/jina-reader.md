@@ -26,7 +26,7 @@ Se usa directamente por HTTP o se autoaloja con la imagen `ghcr.io/jina-ai/reade
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Usar Jina AI desde flujos con la integración de n8n. | Configura la credencial de Jina AI en n8n. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `jina-ai` para usar Jina Reader en flujos. | Jina Reader en marcha con sus credenciales; después añade la pieza `jina-ai` en un flujo de Activepieces. |
 | [Open WebUI](open-webui.md) | Usar Jina como proveedor de búsqueda web en Open WebUI, documentado en su guía. | Activa la búsqueda web en Open WebUI y elige Jina con tu clave. |
 | [LlamaIndex](llama-index.md) | Cargar el texto limpio de URLs en índices de LlamaIndex. (combinación por arquitectura) | Llama a r.jina.ai y crea documentos con la respuesta. |
 
@@ -34,7 +34,7 @@ Se usa directamente por HTTP o se autoaloja con la imagen `ghcr.io/jina-ai/reade
 
 Estado en GitHub: activo · último push 2026-05-22 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jina-ai/reader/blob/main/README.md) · [2](https://n8n.io/integrations/jina-ai/) · [3](https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jina-ai/reader/blob/main/README.md) · [2](https://docs.openwebui.com/features/chat-conversations/web-search/providers/jina) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/jina-ai)</sub>
 
 ## Acceso, coste y equipo
 

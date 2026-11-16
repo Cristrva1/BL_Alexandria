@@ -32,6 +32,12 @@ La CLI (`npx shadcn@latest init`, `add`, `create`) configura `components.json` y
 | [magicui](magicui.md) | Componentes animados distribuidos como registro de shadcn (`npx shadcn@latest add @magicui/...`). | Inicializa shadcn/ui y luego añade componentes de Magic UI con la misma CLI. |
 | [Claude Code](claude-code.md) | Explorar e instalar componentes de los registros desde el asistente vía el servidor MCP de shadcn. | Configura el proyecto con shadcn y registra el servidor MCP según su documentación. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (15). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AI SDK (Vercel)](vercel-ai.md) · [ai-website-cloner-template](ai-website-cloner-template.md) · [assistant-ui](assistant-ui.md) · [Figma Context MCP](figma-context-mcp.md) · [jev-fraud](jev-fraud.md) · [json-render](json-render.md) · [konva](konva.md) · [Onlook](onlook.md) · [plasmic](plasmic.md) · [React Bits](react-bits.md) · [Recharts](recharts.md) · [screenshot-to-code](screenshot-to-code.md) · [swr](swr.md) · [TanStack Query](tanstack-query.md) · [tldraw](tldraw.md)
+
 **Notas:** Alternativas (elige una): mui, ant-design, daisyui. Combinación anterior con plasmic eliminada: sin integración documentada.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada shadcn@4.23.0 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).

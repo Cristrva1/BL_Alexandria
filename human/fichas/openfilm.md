@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+OpenFilm, «agente de vídeo con IA open source»: formato, CLI, Studio y app de escritorio, de openfilm. Licencia MIT (el nombre y el logo son marcas). Creado en octubre de 2026, tiene ~7.6k estrellas (v0.3.2).
+
+## ¿Qué hace?
+
+Un agente (Codex, Claude Code u otro) escribe la película como páginas web, con three.js, WebGL, canvas, SVG, CSS, GSAP o vídeo, y Studio, un editor local, permite revisarla y exportarla. No depende de un framework como Remotion o HyperFrames: un archivo HTML y una función.
+
+## ¿Cómo lo hace?
+
+Requiere Node 22.2+ y FFmpeg (y Git para las versiones guardadas de Studio). Se usa con `npx -y openfilm@latest <comando>` o `npm i -g openfilm`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado. | Pide al agente que use la CLI. |
+| [GSAP](gsap.md) | Animación en las páginas. | Úsalo en el HTML. |
+| [three.js](three-js.md) | Escenas 3D. | Úsalo en el HTML. |
+| [mediabunny](mediabunny.md) | Combinación recíproca: mediabunny lo enlaza como «Exportación de vídeo desde HTML. (combinación por arquitectura)». | Orden indicado desde mediabunny: Evalúalo para codificar en el navegador. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.3.2 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openfilm/openfilm/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. El video se describe como páginas web y puede editarse; instalar la skill y abrir Studio son pasos distintos y el nombre y logo conservan reglas de marca |
 | Coste | El coste depende del proveedor o la ruta. Formato, CLI y Studio MIT; el agente y servicios de generación opcionales tienen costes propios |
 | Equipo | Preparación según la ruta elegida. Node 22.2+; FFmpeg; Git para versiones; agente; recursos propios |
-
-El video se describe como páginas web y puede editarse; instalar la skill y abrir Studio son pasos distintos y el nombre y logo conservan reglas de marca
-
-## Qué puedes hacer con él
-
-Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un video editable; Revisar el resultado de un agente en un editor.
-
-## Cómo funciona
 
 El video se describe como páginas web y puede editarse; instalar la skill y abrir Studio son pasos distintos y el nombre y logo conservan reglas de marca
 

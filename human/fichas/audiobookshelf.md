@@ -28,7 +28,9 @@ Es una aplicación Node.js con frontend en Vue (en migración a React). Se insta
 |---|---|---|
 | [coolify](coolify.md) | Desplegar Audiobookshelf como servicio de un clic (Coolify documenta el servicio Audiobookshelf). | Instala Coolify y añade el servicio Audiobookshelf desde su catálogo. |
 | [syncthing](syncthing.md) | Llevar audiolibros desde otros equipos a la carpeta de la biblioteca; Audiobookshelf detecta los cambios sin reescanear. (combinación por arquitectura) | Comparte en Syncthing la carpeta que usa la biblioteca de Audiobookshelf. |
-| [n8n](n8n.md) | Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura) | Crea un token de API en Audiobookshelf y úsalo en un nodo HTTP Request de n8n. |
+| [activepieces](activepieces.md) | Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura) | Crea un token de API en Audiobookshelf y úsalo en la pieza HTTP de Activepieces. |
+| [Jellyfin](jellyfin.md) | Combinación recíproca: Jellyfin lo enlaza como «Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura)». | Orden indicado desde Jellyfin: Despliega ambos con bibliotecas separadas. |
+| [Kavita](kavita.md) | Combinación recíproca: Kavita lo enlaza como «Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura)». | Orden indicado desde Kavita: Despliega ambos con bibliotecas separadas. |
 
 **Notas:** Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.
 

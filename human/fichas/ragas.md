@@ -31,6 +31,12 @@ Se instala con `pip install ragas` y ofrece `ragas quickstart` para clonar un pr
 | [langchain](langchain.md) | Integración documentada con LangChain. | Envuelve el modelo y los embeddings de LangChain para Ragas. |
 | [Opik](opik.md) | Integración documentada en Opik. | Registra métricas de Ragas en Opik. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[agentic-rag-for-dummies](agentic-rag-for-dummies.md) · [DSPy](dspy.md) · [LightRAG](lightrag.md) · [MLflow](mlflow.md)
+
 **Notas:** Alternativas (elige una): deepeval, promptfoo. El repo se movió de explodinggradients/ragas a vibrantlabsai/ragas (GitHub redirige).
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.4.4 (2026-11-14) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

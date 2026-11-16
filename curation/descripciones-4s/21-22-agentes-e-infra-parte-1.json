@@ -22,9 +22,15 @@
      "id": "ollama",
      "motivo": "Modelos locales. (combinación por arquitectura)",
      "orden_instalacion": "Configura el LLM a través de un proveedor compatible."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Combinación recíproca: SearXNG lo enlaza como «Usarlo como motor de búsqueda (retriever Searx) de GPT Researcher».",
+     "orden_instalacion": "Orden indicado desde SearXNG: Despliega SearXNG con JSON activado y configura su URL en GPT Researcher.",
+     "reciproca_de": "searxng"
     }
    ],
-   "notas": "Alternativas (elige una): storm, vane. Se quita browser-use de las combinaciones (no hay integración documentada).",
+   "notas": "Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).",
    "fuentes": [
     "https://github.com/assafelovic/gpt-researcher/blob/main/README.md"
    ],
@@ -59,7 +65,7 @@
      "orden_instalacion": "Expón llama-server y configúralo."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con gpt-researcher (solo anotado).",
+   "notas": "Alternativa (elige una): gpt-researcher.",
    "fuentes": [
     "https://github.com/LearningCircuit/local-deep-research/blob/main/README.md"
    ],
@@ -99,7 +105,7 @@
      "orden_instalacion": "Registra Hermes vía su gateway."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con multica (solo anotado). Conviene vigilar el gasto con presupuestos.",
+   "notas": "Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos.",
    "fuentes": [
     "https://github.com/paperclipai/paperclip/blob/master/README.md",
     "https://docs.paperclip.ing/connectors/"
@@ -204,7 +210,7 @@
      "orden_instalacion": "Añade los MCP por Dot."
     }
    ],
-   "notas": "Sin alternativas declaradas. No es autónomo del todo: depende de un servicio de CopilotKit.",
+   "notas": "Alternativa (elige una): openbot. No es autónomo del todo: depende de un servicio de CopilotKit.",
    "fuentes": [
     "https://github.com/CopilotKit/OpenDots/blob/main/README.md"
    ],
@@ -252,40 +258,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "fugu": {
-   "que_es": "Sakana Fugu, sistema multiagente comercial de Sakana AI que se consume como un único modelo. El repo solo contiene ejemplos e instaladores, sin licencia; el servicio es de pago o con registro en console.sakana.ai. Tiene ~1k estrellas.",
-   "que_hace": "Orquesta dinámicamente un conjunto de modelos frontera para resolver tareas complejas de varios pasos, expuesto como un único endpoint de modelo. Las cifras de rendimiento provienen del informe técnico de Sakana.",
-   "como_lo_hace": "Se integra con Codex o Claude Code mediante `curl -fsSL https://sakana.ai/fugu/install | bash`, que crea los comandos `codex-fugu` y `claude-fugu` (Ubuntu y macOS; en Windows hay configuración manual). Con Claude Code hay diferencias de compatibilidad, mayormente cosméticas.",
-   "combina_con": [
-    {
-     "id": "codex",
-     "motivo": "Integración nativa (`codex-fugu`).",
-     "orden_instalacion": "Instala Codex y luego el script de Fugu."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Integración nativa (`claude-fugu`).",
-     "orden_instalacion": "Instala Claude Code y luego el script de Fugu."
-    },
-    {
-     "id": "t3code",
-     "motivo": "Controlar desde web o móvil el Codex que usa Fugu. (combinación por arquitectura)",
-     "orden_instalacion": "Usa T3 Code sobre Codex."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: el repo es un cliente de un servicio propietario (solo anotado).",
-   "fuentes": [
-    "https://github.com/SakanaAI/fugu/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "SakanaAI/fugu",
-    "archived": false,
-    "pushed_at": "2026-10-28",
-    "primary_language": "Shell",
-    "latest_release": "user-demo-v1 (2026-06-26)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "composio": {
    "que_es": "Composio, monorepo de SDKs que da a los agentes más de 1000 toolkits preautenticados, de ComposioHQ. Licencia MIT para los SDKs; la plataforma es un servicio con API key. Tiene ~31k estrellas.",
    "que_hace": "Gestiona sesiones por usuario, autenticación, triggers y un sandbox para que los agentes actúen en apps externas. Cada sesión expone además un endpoint MCP alojado.",
@@ -310,6 +282,18 @@
      "id": "claude-code",
      "motivo": "Cliente del endpoint MCP de la sesión.",
      "orden_instalacion": "Pasa `mcp: true` y añade la URL."
+    },
+    {
+     "id": "awesome-claude-skills",
+     "motivo": "Combinación recíproca: Awesome Claude Skills lo enlaza como «El plugin `connect-apps` usa Composio para la autenticación y las integraciones».",
+     "orden_instalacion": "Orden indicado desde Awesome Claude Skills: Crea una clave de Composio antes de ejecutar el setup.",
+     "reciproca_de": "awesome-claude-skills"
+    },
+    {
+     "id": "openbot",
+     "motivo": "Combinación recíproca: OpenBot lo enlaza como «Composio actúa como intermediario de cientos de apps detrás de una sola cuenta en el catálogo MCP gobernado».",
+     "orden_instalacion": "Orden indicado desde OpenBot: Prepara `setup:composio` y concede solo las apps necesarias.",
+     "reciproca_de": "openbot"
     }
    ],
    "notas": "Sin alternativas declaradas. Dependencia de un servicio comercial para las credenciales de terceros.",
@@ -422,6 +406,12 @@
      "id": "deer-flow",
      "motivo": "Sandbox para el harness. (combinación por arquitectura)",
      "orden_instalacion": "Configúralo como entorno de ejecución."
+    },
+    {
+     "id": "computer-use-preview",
+     "motivo": "Combinación recíproca: Gemini Computer Use (preview) lo enlaza como «Ejecutar el navegador en un contenedor aislado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Gemini Computer Use (preview): Lanza el agente dentro del sandbox.",
+     "reciproca_de": "computer-use-preview"
     }
    ],
    "notas": "Alternativas (elige una): nemoclaw, e2b. Se quita ecc (sin relación documentada). Riesgo: sin API key, todo queda expuesto.",
