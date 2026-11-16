@@ -691,7 +691,7 @@
    "num": 16,
    "title": "Analizar software y comprobar su seguridad",
    "emoji": "🔍",
-   "desc": "Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas.",
+   "desc": "Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.",
    "file": "human/categorias/16-analisis-de-software-y-seguridad.md",
    "subs": [
     {
@@ -705,6 +705,26 @@
     {
      "key": "pruebas",
      "title": "Tráfico, rendimiento y pruebas"
+    },
+    {
+     "key": "reconocimiento",
+     "title": "Reconocimiento y superficie de ataque"
+    },
+    {
+     "key": "explotacion-c2",
+     "title": "Explotación, C2 y post-explotación"
+    },
+    {
+     "key": "ad-interno",
+     "title": "Active Directory y red interna"
+    },
+    {
+     "key": "deteccion",
+     "title": "Detección, SIEM e IDS"
+    },
+    {
+     "key": "nube-contenedores",
+     "title": "Nube, contenedores e IaC"
     },
     {
      "key": "agentes",
@@ -28963,7 +28983,7 @@
    "id": "trivy",
    "name": "Trivy",
    "cat": 16,
-   "sub": "defensa",
+   "sub": "nube-contenedores",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -29000,7 +29020,7 @@
    "id": "metasploit",
    "name": "Metasploit Framework",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "explotacion-c2",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -29108,7 +29128,7 @@
    "id": "nmap",
    "name": "Nmap",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "reconocimiento",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -29216,7 +29236,7 @@
    "id": "wazuh",
    "name": "Wazuh",
    "cat": 16,
-   "sub": "defensa",
+   "sub": "deteccion",
    "role": "platform",
    "exec": "local",
    "setup": "heavy",
@@ -29287,7 +29307,7 @@
    "id": "crowdsec",
    "name": "CrowdSec",
    "cat": 16,
-   "sub": "defensa",
+   "sub": "deteccion",
    "role": "platform",
    "exec": "local",
    "setup": "medium",
@@ -29472,7 +29492,7 @@
    "id": "subfinder",
    "name": "subfinder",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "reconocimiento",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -29583,7 +29603,7 @@
    "id": "bloodhound",
    "name": "BloodHound Community Edition",
    "cat": 16,
-   "sub": "pruebas",
+   "sub": "ad-interno",
    "role": "platform",
    "exec": "local",
    "setup": "medium",
@@ -33995,7 +34015,7 @@
      {
       "id": "seguridad-pruebas",
       "title": "Tráfico, pruebas y protección",
-      "description": "Revisar tráfico, rendimiento y mecanismos de protección.",
+      "description": "Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.",
       "selectors": [
        {
         "cat": 16,
@@ -34007,6 +34027,68 @@
       ],
       "repos": [],
       "keywords": [],
+      "reference_repos": []
+     },
+     {
+      "id": "seguridad-ofensiva",
+      "title": "Pruebas de intrusión autorizadas",
+      "description": "Reconocimiento, explotación y Active Directory dentro de un alcance firmado.",
+      "selectors": [
+       {
+        "cat": 16,
+        "subs": [
+         "reconocimiento",
+         "explotacion-c2",
+         "ad-interno"
+        ]
+       }
+      ],
+      "repos": [],
+      "keywords": [
+       "pentesting",
+       "red team",
+       "c2"
+      ],
+      "reference_repos": []
+     },
+     {
+      "id": "seguridad-deteccion",
+      "title": "Detección y respuesta",
+      "description": "SIEM, IDS y bloqueo de ataques en sistemas propios.",
+      "selectors": [
+       {
+        "cat": 16,
+        "subs": [
+         "deteccion"
+        ]
+       }
+      ],
+      "repos": [],
+      "keywords": [
+       "siem",
+       "ids",
+       "blue team"
+      ],
+      "reference_repos": []
+     },
+     {
+      "id": "seguridad-nube",
+      "title": "Nube, contenedores e IaC",
+      "description": "Revisar imágenes, clústeres y cuentas de nube antes de publicar.",
+      "selectors": [
+       {
+        "cat": 16,
+        "subs": [
+         "nube-contenedores"
+        ]
+       }
+      ],
+      "repos": [],
+      "keywords": [
+       "cloud security",
+       "kubernetes",
+       "iac"
+      ],
       "reference_repos": []
      },
      {
