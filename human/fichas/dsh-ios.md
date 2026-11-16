@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+DSH iOS Simulator, plugin de DeepSeek Harness con un simulador iOS en vivo y soporte para iPhone físico por USB, de @ZSeven-W. Licencia MIT. Está en fase de release candidate (0.1.0-rc.12) y tiene ~470 estrellas.
+
+## ¿Qué hace?
+
+Le da al agente 22 herramientas para arrancar simuladores, compilar y ejecutar proyectos Xcode o paquetes Swift, manejar la interfaz por accesibilidad y recargar previews de SwiftUI. Con WebDriverAgent controla también un iPhone real.
+
+## ¿Cómo lo hace?
+
+Se instala como paquete npm `@zseven-w/dsh-ios`. Requiere macOS con Xcode (en otros sistemas las herramientas devuelven error), usa serve-sim y opcionalmente AXe. Su anfitrión, DeepSeek Harness (deepseek-ai/deepseek-harness), no está en el catálogo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [dsh-android](dsh-android.md) | Plugin hermano para Android. (combinación por arquitectura) | Instala ambos plugins en DSH. |
+| [dsh-game-studio](dsh-game-studio.md) | Plugin hermano para juegos. (combinación por arquitectura) | Instálalo en DSH si haces juegos. |
+| [genjutsu](genjutsu.md) | Skills de diseño para interfaces móviles. (combinación por arquitectura) | Añade las skills al agente. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-10 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ZSeven-W/dsh-ios/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Fuera de macOS las herramientas devuelven error explicativo; inspirarse en un plugin de Codex no significa ser compatible directamente con él |
 | Coste | Consumo del agente que ya utilizas. El plugin usa el modelo del anfitrión; dispositivos, firma y servicios Apple tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. macOS; Xcode completo; runtime iOS Simulator; DSH con web |
-
-Fuera de macOS las herramientas devuelven error explicativo; inspirarse en un plugin de Codex no significa ser compatible directamente con él
-
-## Qué puedes hacer con él
-
-Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.
-
-## Por qué destaca
-
-Usos propuestos: Inspeccionar una interfaz iOS propia; Revisar logs de una app de prueba.
-
-## Cómo funciona
 
 Fuera de macOS las herramientas devuelven error explicativo; inspirarse en un plugin de Codex no significa ser compatible directamente con él
 

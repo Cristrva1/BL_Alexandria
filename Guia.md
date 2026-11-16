@@ -4638,6 +4638,7 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/l0ng-ai/openidea/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar código con atajos tipo IntelliJ; Probar un editor nativo con plugins — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenCode](human/fichas/opencode.md) · [Claude Code](human/fichas/claude-code.md) · [Aider](human/fichas/aider.md)<br>
 **Más:** [ficha completa](human/fichas/openidea.md) · [GitHub](https://github.com/l0ng-ai/openidea)
 
 #### 🕸️ OpenCursor
@@ -4687,6 +4688,7 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://opencodemanager.app/docs/getting-started/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OpenCode](human/fichas/opencode.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/opencode-manager.md) · [GitHub](https://github.com/chriswritescode-dev/opencode-manager)
 
 ### Desarrollo móvil y de juegos
@@ -4698,6 +4700,7 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `dsh plugin --profile web add @zseven-w/dsh-game-studio@latest
 dsh web` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un minijuego educativo; Prototipar mecánicas con plantillas 2D — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [threejs-game-skills](human/fichas/threejs-game-skills.md) · [threejs-skills](human/fichas/threejs-skills.md) · [planck.js](human/fichas/planck-js.md)<br>
 **Más:** [ficha completa](human/fichas/dsh-game-studio.md) · [GitHub](https://github.com/ZSeven-W/dsh-game-studio)
 
 #### 📚 dsh-ios
@@ -4707,6 +4710,7 @@ dsh web` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `dsh plugin --profile web add @zseven-w/dsh-ios@latest
 dsh web` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una interfaz iOS propia; Revisar logs de una app de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [dsh-android](human/fichas/dsh-android.md) · [dsh-game-studio](human/fichas/dsh-game-studio.md) · [genjutsu](human/fichas/genjutsu.md)<br>
 **Más:** [ficha completa](human/fichas/dsh-ios.md) · [GitHub](https://github.com/ZSeven-W/dsh-ios)
 
 #### 📚 dsh-android
@@ -4716,6 +4720,7 @@ dsh web` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `dsh plugin --profile web add @zseven-w/dsh-android@latest
 dsh web` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una app Android de prueba; Recoger logcat de una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [dsh-ios](human/fichas/dsh-ios.md) · [dsh-game-studio](human/fichas/dsh-game-studio.md) · [jadx](human/fichas/jadx.md)<br>
 **Más:** [ficha completa](human/fichas/dsh-android.md) · [GitHub](https://github.com/ZSeven-W/dsh-android)
 
 ---
@@ -4747,7 +4752,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/openclaw/openclaw/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [NemoClaw](human/fichas/nemoclaw.md) · [claude-mem](human/fichas/claude-mem.md)<br>
+**Combina con:** [NemoClaw](human/fichas/nemoclaw.md) · [claude-mem](human/fichas/claude-mem.md) · [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/openclaw.md) · [GitHub](https://github.com/openclaw/openclaw)
 
 #### ☤ hermes-agent
@@ -4756,7 +4761,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://hermes-agent.nousresearch.com/docs/getting-started/installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ECC](human/fichas/ecc.md) · [odysseus](human/fichas/odysseus.md)<br>
+**Combina con:** [NemoClaw](human/fichas/nemoclaw.md) · [Ollama](human/fichas/ollama.md) · [ECC](human/fichas/ecc.md)<br>
 **Más:** [ficha completa](human/fichas/hermes-agent.md) · [GitHub](https://github.com/NousResearch/hermes-agent)
 
 #### 🕸️ paperclip
@@ -4773,7 +4778,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx ruflo@latest init` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Coordinar tareas de código; Estudiar memoria compartida entre agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [mem0](human/fichas/mem0.md) · [ECC](human/fichas/ecc.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/ruflo.md) · [GitHub](https://github.com/ruvnet/ruflo)
 
 #### 🦾 DeepTutor
@@ -4785,7 +4790,7 @@ python -m pip install -U "deeptutor[full]"
 deeptutor init     # ports + LLM provider + optional embedding/search
 deeptutor start    # starts backend + frontend` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un tema desde apuntes propios; Preparar preguntas de repaso — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Docling](human/fichas/docling.md)<br>
+**Combina con:** [LightRAG](human/fichas/lightrag.md) · [Docling](human/fichas/docling.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/deeptutor.md) · [GitHub](https://github.com/HKUDS/DeepTutor)
 
 #### 🧑‍🤝‍🧑 multica
@@ -4794,7 +4799,7 @@ deeptutor start    # starts backend + frontend` (comprobar los pasos completos e
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/multica-ai/multica/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ruflo](human/fichas/ruflo.md) · [chatwoot](human/fichas/chatwoot.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/multica.md) · [GitHub](https://github.com/multica-ai/multica)
 
 #### 🖥️ OpenDots
@@ -4815,7 +4820,7 @@ npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm i -g @cosmicstack/mercury-agent` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar presupuestos de tokens — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [claude-mem](human/fichas/claude-mem.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [SearXNG](human/fichas/searxng.md)<br>
 **Más:** [ficha completa](human/fichas/mercury-agent.md) · [GitHub](https://github.com/cosmicstack-labs/mercury-agent)
 
 #### 🕸️ social-media-agent
@@ -4862,7 +4867,7 @@ yarn install` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `# 2. Install dependencies
 uv sync` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar optimización de entrenamiento; Aprender a registrar experimentos reproducibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [gpt-researcher](human/fichas/gpt-researcher.md) · [crawl4ai](human/fichas/crawl4ai.md)<br>
+**Combina con:** [nanochat](human/fichas/nanochat.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/autoresearch.md) · [GitHub](https://github.com/karpathy/autoresearch)
 
 #### 🦌 deer-flow
@@ -4873,7 +4878,7 @@ uv sync` (comprobar los pasos completos en la ficha).<br>
 cd deer-flow
 make setup          # interactive wizard: writes config.yaml and .env (about 2 minutes)` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Investigar un tema con fuentes; Coordinar una generación de informe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [gpt-researcher](human/fichas/gpt-researcher.md) · [firecrawl](human/fichas/firecrawl.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [firecrawl](human/fichas/firecrawl.md) · [SearXNG](human/fichas/searxng.md)<br>
 **Más:** [ficha completa](human/fichas/deer-flow.md) · [GitHub](https://github.com/bytedance/deer-flow)
 
 #### 🔎 STORM
@@ -4887,7 +4892,7 @@ conda create -n storm python=3.11
    conda activate storm
    pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una revisión de un tema; Comparar perspectivas antes de escribir — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [SearXNG](human/fichas/searxng.md) · [firecrawl](human/fichas/firecrawl.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [SearXNG](human/fichas/searxng.md) · [Qdrant](human/fichas/qdrant.md)<br>
 **Más:** [ficha completa](human/fichas/storm.md) · [GitHub](https://github.com/stanford-oval/storm)
 
 #### 🔍 gpt-researcher

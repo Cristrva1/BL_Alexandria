@@ -158,6 +158,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lista dispositivos con android_devices y consulta el estado antes de pedir acciones
 **Qué comprobar:** Puedes identificar el emulador o dispositivo y su autorización
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dsh-ios`, `dsh-game-studio`, `jadx`
 
 ## `dsh-game-studio`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
@@ -188,6 +189,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera un juego pequeño con recursos de plantilla y pruébalo antes de solicitar arte o publicar
 **Qué comprobar:** Puedes jugar la demo e inspeccionar su HTML exportado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `threejs-game-skills`, `threejs-skills`, `planck-js`
 
 ## `dsh-ios`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
@@ -218,6 +220,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lista simuladores con ios_sim_devices y comprueba el runtime antes de iniciar una app de ejemplo
 **Qué comprobar:** Puedes identificar simulador y herramientas disponibles
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dsh-android`, `dsh-game-studio`, `genjutsu`
 
 ## `gemini-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
@@ -463,6 +466,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una sesión en un repositorio de ejemplo y revisa cambios sin programar tareas todavía
 **Qué comprobar:** Puedes reconocer la sesión, terminal y estado Git
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `opencode`, `ollama`, `coolify`
 
 ## `opencursor`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,agent,ai,code,coder,cursor,extension,ide
@@ -554,6 +558,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre un proyecto de ejemplo y usa buscar en todo para localizar una función
 **Qué comprobar:** Puedes navegar al archivo y reconocer sus referencias
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `opencode`, `claude-code`, `aider`
 
 ## `t3code`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,ui,typescript

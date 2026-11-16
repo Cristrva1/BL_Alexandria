@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+OpenClaw, asistente de IA personal open source que corre en tu equipo y atiende en tus canales de chat. Licencia MIT. Lo desarrolla la OpenClaw Foundation, una organización 501(c)(3) independiente, y es el repo con más estrellas del catálogo (~395k).
+
+## ¿Qué hace?
+
+Atiende por Discord, iMessage, Slack, Teams, Telegram, WhatsApp y más de 20 canales, además de apps nativas. El estado, la memoria y las credenciales se quedan en tu hardware, y los modelos y harnesses de agente (Claude, Codex, modelos locales) son plugins intercambiables.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://openclaw.ai/install.sh | bash` o PowerShell, o con `npm install -g openclaw@latest` (Node 24.16+ o 26.1+; se recomiendan las versiones con parches de seguridad). También hay rutas con Docker y Nix, y el instalador lanza el onboarding.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [NemoClaw](nemoclaw.md) | Stack de NVIDIA para ejecutar OpenClaw con más aislamiento. | Instala NemoClaw y lanza OpenClaw dentro. |
+| [claude-mem](claude-mem.md) | Plugin de memoria persistente para gateways OpenClaw. | Instala claude-mem con su comando para OpenClaw. |
+| [Claude Code](claude-code.md) | Harness de agente como plugin. | Configura Claude como harness. |
+| [Ollama](ollama.md) | Modelos locales como plugin. (combinación por arquitectura) | Configura un proveedor local. |
+
+**Notas:** Alternativas (elige una): hermes-agent, mercury-agent. Superficie de ataque amplia (canales y credenciales): conviene aislarlo.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2026.11.4 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openclaw/openclaw/blob/main/README.md) · [2](https://docs.openclaw.ai/install)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness |
 | Coste | El coste depende del proveedor o la ruta. Modelos locales, API y harnesses con cuentas tienen costes distintos; los canales también pueden cobrar |
 | Equipo | Preparación según la ruta elegida. Node compatible o instalador; proveedor o harness; canal de prueba opcional |
-
-La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness
-
-## Qué puedes hacer con él
-
-Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.
-
-## Por qué destaca
-
-Usos propuestos: Probar un asistente personal; Conectar un agente a un canal propio.
-
-## Cómo funciona
 
 La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness
 
@@ -86,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node compatible o instalador; proveedor o harness; canal de prueba opcional
 - **Etiquetas:** `agents` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
-| [claude-mem](claude-mem.md) | 117k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+DSH Game Studio, plugin de DeepSeek Harness para crear juegos pequeños a partir de una frase, de @ZSeven-W. Licencia MIT. Está en fase de release candidate (0.1.0-rc.5); se creó en noviembre de 2026 y tiene ~560 estrellas.
+
+## ¿Qué hace?
+
+Construye el juego a partir de plantillas 2D o vóxel 3D (three.js), lo prueba jugando solo y lo muestra en una barra lateral con historial de versiones. Puede generar arte con OpenAI o Codex tras comprobar el coste y exporta un único HTML.
+
+## ¿Cómo lo hace?
+
+Se instala como paquete `@zseven-w/dsh-game-studio` (probado con DSH 0.2.1-rc.5). Opcionalmente usa `cloudflared` para enlaces públicos temporales y `gh` para publicar en GitHub. Su anfitrión, DeepSeek Harness (deepseek-ai/deepseek-harness), no está en el catálogo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [threejs-game-skills](threejs-game-skills.md) | Skills para juegos con Three.js, el mismo motor de sus plantillas. (combinación por arquitectura) | Añade las skills al agente. |
+| [threejs-skills](threejs-skills.md) | Skills generales de escenas 3D con Three.js. (combinación por arquitectura) | Añade las skills al agente. |
+| [planck.js](planck-js.md) | Física 2D para juegos más complejos. (combinación por arquitectura) | Añade la librería al juego exportado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-09 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ZSeven-W/dsh-game-studio/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La integración Codex corresponde a generar imágenes y no a instalar todo el plugin como skill de Codex; exportar no equivale a publicar |
 | Coste | El coste depende del proveedor o la ruta. El agente usa su proveedor; el arte opcional admite API OpenAI o CLI Codex con su plan y una confirmación de coste |
 | Equipo | Preparación según la ruta elegida. DSH con web; plantilla de juego; proveedor de arte solo si lo activas |
-
-La integración Codex corresponde a generar imágenes y no a instalar todo el plugin como skill de Codex; exportar no equivale a publicar
-
-## Qué puedes hacer con él
-
-Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.
-
-## Por qué destaca
-
-Usos propuestos: Crear un minijuego educativo; Prototipar mecánicas con plantillas 2D.
-
-## Cómo funciona
 
 La integración Codex corresponde a generar imágenes y no a instalar todo el plugin como skill de Codex; exportar no equivale a publicar
 

@@ -60349,7 +60349,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Inspeccionar una app Android de prueba; Recoger logcat de una app propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "dsh-ios",
+        "dsh-game-studio",
+        "jadx"
+      ],
       "alt": []
     },
     {
@@ -60464,7 +60468,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un minijuego educativo; Prototipar mecánicas con plantillas 2D",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "threejs-game-skills",
+        "threejs-skills",
+        "planck-js"
+      ],
       "alt": []
     },
     {
@@ -60577,7 +60585,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Inspeccionar una interfaz iOS propia; Revisar logs de una app de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "dsh-android",
+        "dsh-game-studio",
+        "genjutsu"
+      ],
       "alt": []
     },
     {
@@ -61567,7 +61579,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "opencode",
+        "ollama",
+        "coolify"
+      ],
       "alt": []
     },
     {
@@ -61930,7 +61946,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar código con atajos tipo IntelliJ; Probar un editor nativo con plugins",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "opencode",
+        "claude-code",
+        "aider"
+      ],
       "alt": []
     },
     {
@@ -62283,8 +62303,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar optimización de entrenamiento; Aprender a registrar experimentos reproducibles",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "gpt-researcher",
-        "crawl4ai"
+        "nanochat",
+        "claude-code",
+        "codex"
       ],
       "alt": []
     },
@@ -62408,7 +62429,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un tema desde apuntes propios; Preparar preguntas de repaso",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "docling"
+        "lightrag",
+        "docling",
+        "ollama"
       ],
       "alt": [
         "open-notebook"
@@ -62528,8 +62551,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Investigar un tema con fuentes; Coordinar una generación de informe",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "gpt-researcher",
-        "firecrawl"
+        "langgraph",
+        "firecrawl",
+        "searxng"
       ],
       "alt": []
     },
@@ -63000,8 +63024,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ecc",
-        "odysseus"
+        "nemoclaw",
+        "ollama",
+        "ecc"
       ],
       "alt": [
         "openclaw",
@@ -63244,7 +63269,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar presupuestos de tokens",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-mem"
+        "ollama",
+        "litellm",
+        "searxng"
       ],
       "alt": [
         "openclaw",
@@ -63362,8 +63389,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ruflo",
-        "chatwoot"
+        "claude-code",
+        "codex",
+        "opencode"
       ],
       "alt": []
     },
@@ -63488,7 +63516,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "nemoclaw",
-        "claude-mem"
+        "claude-mem",
+        "claude-code",
+        "ollama"
       ],
       "alt": [
         "hermes-agent",
@@ -63846,8 +63876,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Coordinar tareas de código; Estudiar memoria compartida entre agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mem0",
-        "ecc"
+        "claude-code",
+        "codex",
+        "opencode"
       ],
       "alt": []
     },
@@ -64078,8 +64109,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una revisión de un tema; Comparar perspectivas antes de escribir",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "litellm",
         "searxng",
-        "firecrawl"
+        "qdrant"
       ],
       "alt": [
         "gpt-researcher"

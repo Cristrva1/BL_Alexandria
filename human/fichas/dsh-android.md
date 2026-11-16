@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+DSH Android, plugin de DeepSeek Harness (DSH) que muestra y controla un dispositivo Android real dentro de la conversación, de @ZSeven-W. Licencia MIT. Está en fase de release candidate (0.1.0-rc.13) y tiene ~350 estrellas.
+
+## ¿Qué hace?
+
+Le da al agente 20 herramientas para transmitir un emulador o un teléfono USB, compilar e instalar proyectos Gradle, manejar la interfaz y hacer OCR visual. La transmisión se genera dentro del proceso, sin helper externo, mediante rutas firmadas solo de loopback.
+
+## ¿Cómo lo hace?
+
+Se instala como paquete npm `@zseven-w/dsh-android` (probado con DSH 0.1.5-rc.1). Requiere adb de las platform-tools del SDK de Android, que no se redistribuye. Su anfitrión, DeepSeek Harness (deepseek-ai/deepseek-harness), no está en el catálogo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [dsh-ios](dsh-ios.md) | Plugin hermano para iOS en el mismo anfitrión. (combinación por arquitectura) | Instala ambos plugins en DSH. |
+| [dsh-game-studio](dsh-game-studio.md) | Plugin hermano para juegos en el mismo anfitrión. (combinación por arquitectura) | Instálalo en DSH si haces juegos. |
+| [jadx](jadx.md) | Inspeccionar los APK generados. (combinación por arquitectura) | Abre el APK en jadx. |
+
+**Notas:** Sin alternativas declaradas. Catalogado aunque su anfitrión no lo está (pregunta de pertenencia ya anotada).
+
+Estado en GitHub: activo · último push 2026-11-10 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ZSeven-W/dsh-android/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La integración es con DSH; DSH Crew es otro proyecto y no convierte este plugin en integración directa de Claude Code o Codex |
 | Coste | Consumo del agente que ya utilizas. El plugin usa el modelo del anfitrión; Android SDK y equipo son requisitos separados y no incluye créditos |
 | Equipo | Preparación según la ruta elegida. DeepSeek Harness con web; Android SDK y adb; emulador o dispositivo propio |
-
-La integración es con DSH; DSH Crew es otro proyecto y no convierte este plugin en integración directa de Claude Code o Codex
-
-## Qué puedes hacer con él
-
-Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.
-
-## Por qué destaca
-
-Usos propuestos: Inspeccionar una app Android de prueba; Recoger logcat de una app propia.
-
-## Cómo funciona
 
 La integración es con DSH; DSH Crew es otro proyecto y no convierte este plugin en integración directa de Claude Code o Codex
 

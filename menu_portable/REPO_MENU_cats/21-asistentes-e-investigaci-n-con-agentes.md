@@ -61,7 +61,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee program.md y ejecuta primero un experimento manual pequeño antes de permitir iteraciones
 **Qué comprobar:** Puedes comparar métrica y cambio concreto del experimento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gpt-researcher`, `crawl4ai`
+**Combina con:** `nanochat`, `claude-code`, `codex`
 
 ## `deeptutor`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=learning,agents,rag,python
@@ -94,7 +94,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una base con un texto breve y pide una explicación con referencias al contenido
 **Qué comprobar:** Puedes contrastar la respuesta con fragmentos del texto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`
+**Combina con:** `lightrag`, `docling`, `ollama`
 **Alternativas (elige una):** `open-notebook`
 
 ## `deer-flow`
@@ -127,7 +127,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Completa setup y solicita un informe corto con fuentes antes de habilitar herramientas de escritura
 **Qué comprobar:** Puedes contrastar las referencias y revisar las acciones del agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gpt-researcher`, `firecrawl`
+**Combina con:** `langgraph`, `firecrawl`, `searxng`
 
 ## `fugu`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,shell
@@ -246,7 +246,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un perfil nuevo y pide recordar una nota ficticia antes de importar historial
 **Qué comprobar:** Puedes comprobar la nota guardada y el proveedor usado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ecc`, `odysseus`
+**Combina con:** `nemoclaw`, `ollama`, `ecc`
 **Alternativas (elige una):** `openclaw`, `mercury-agent`
 
 ## `local-deep-research`
@@ -306,7 +306,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca mercury, comprueba status y pide una respuesta sobre una nota ficticia sin conectar canales
 **Qué comprobar:** Puedes identificar proveedor, servicio en segundo plano y permisos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-mem`
+**Combina con:** `ollama`, `litellm`, `searxng`
 **Alternativas (elige una):** `openclaw`, `hermes-agent`
 
 ## `multica`
@@ -337,7 +337,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Asigna una tarea de explicación a un agente en un proyecto de prueba antes de crear automatizaciones
 **Qué comprobar:** Puedes ver tarea, sesión y resultado atribuibles al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ruflo`, `chatwoot`
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `openclaw`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript
@@ -367,7 +367,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Completa onboarding y consulta gateway status y dashboard antes de conectar mensajería
 **Qué comprobar:** Puedes identificar estado, proveedor y permisos del Gateway
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nemoclaw`, `claude-mem`
+**Combina con:** `nemoclaw`, `claude-mem`, `claude-code`, `ollama`
 **Alternativas (elige una):** `hermes-agent`, `mercury-agent`
 
 ## `opendots`
@@ -460,7 +460,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicializa una carpeta de prueba y examina los agentes, hooks y configuración añadidos antes de encargar trabajo
 **Qué comprobar:** Puedes identificar los archivos creados y herramientas MCP disponibles
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mem0`, `ecc`
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `social-media-agent`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=asistentes,typescript
@@ -527,5 +527,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Investiga un tema acotado y comprueba manualmente dos citas del borrador
 **Qué comprobar:** Puedes rastrear las afirmaciones a sus fuentes
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `searxng`, `firecrawl`
+**Combina con:** `litellm`, `searxng`, `qdrant`
 **Alternativas (elige una):** `gpt-researcher`
