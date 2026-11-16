@@ -79,13 +79,13 @@ role=app · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,go
 - Equipo: Preparación según la ruta elegida. Binario gh oficial; cuenta GitHub para operaciones autenticadas
 **Repo:** https://github.com/cli/cli
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/cli/cli/blob/trunk/README.md
+git clone https://github.com/cli/cli.git gh-cli
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar issues desde terminal; Revisar ejecuciones de Actions
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -109,13 +109,13 @@ role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=code,mc
 - Equipo: Preparación según la ruta elegida. Binario para tu sistema; repositorio de prueba; Node 22+ solo para compilar CBM Lens
 **Repo:** https://github.com/DeusData/codebase-memory-mcp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md
+curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

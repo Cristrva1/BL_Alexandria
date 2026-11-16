@@ -1683,7 +1683,7 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 8.2k<br>
 **Qué es:** Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Gentleman-Programming/engram/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install gentleman-programming/tap/engram` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [DeepSeek Harness (DSH)](human/fichas/deepseek-harness.md) · [Antigravity CLI](human/fichas/antigravity-cli.md)<br>
 **Más:** [ficha completa](human/fichas/engram.md) · [GitHub](https://github.com/Gentleman-Programming/engram)
@@ -1712,7 +1712,7 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 94.2k<br>
 **Qué es:** Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/infiniflow/ragflow/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose -f docker-compose.yml up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar manuales de una organización; Combinar documentos en una base de conocimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [activepieces](human/fichas/activepieces.md) · [langfuse](human/fichas/langfuse.md) · [PaddleOCR](human/fichas/paddleocr.md)<br>
 **Más:** [ficha completa](human/fichas/ragflow.md) · [GitHub](https://github.com/infiniflow/ragflow)
@@ -1721,7 +1721,7 @@ pip install mempalace` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 59.9k<br>
 **Qué es:** Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/meilisearch/meilisearch/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -it --rm -p 7700:7700 -v $(pwd)/meili_data:/meili_data getmeili/meilisearch:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda instantánea con facetas a una web o aplicación; combinar búsqueda por palabras y semántica como capa de recuperación para RAG — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [langchain](human/fichas/langchain.md) · [firecrawl](human/fichas/firecrawl.md)<br>
 **Más:** [ficha completa](human/fichas/meilisearch.md) · [GitHub](https://github.com/meilisearch/meilisearch)
@@ -1749,7 +1749,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 36.6k<br>
 **Qué es:** Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://microsoft.github.io/graphrag/get_started/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `python -m pip install graphrag` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [litellm](human/fichas/litellm.md) · [mcp-neo4j](human/fichas/mcp-neo4j.md) · [Docling](human/fichas/docling.md) · [graphify](human/fichas/graphify.md) · [Scrapegraph-ai](human/fichas/scrapegraph-ai.md) · [kotaemon](human/fichas/kotaemon.md)<br>
 **Más:** [ficha completa](human/fichas/graphrag.md) · [GitHub](https://github.com/microsoft/graphrag)
@@ -1758,7 +1758,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 33.4k<br>
 **Qué es:** Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/onyx-dot-app/onyx/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `uv tool install onyx-cli && onyx-cli deploy install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [SearXNG](human/fichas/searxng.md) · [firecrawl](human/fichas/firecrawl.md)<br>
 **Más:** [ficha completa](human/fichas/onyx.md) · [GitHub](https://github.com/onyx-dot-app/onyx)
@@ -1767,7 +1767,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 25.9k<br>
 **Qué es:** Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Cinnamon/kotaemon/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -e GRADIO_SERVER_NAME=0.0.0.0 -e GRADIO_SERVER_PORT=7860 -v ./ktem_app_data:/app/ktem_app_data -p 7860:7860 -it --rm ghcr.io/cinnamon/kotaemon:main-full` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [LightRAG](human/fichas/lightrag.md) · [graphrag](human/fichas/graphrag.md) · [Docling](human/fichas/docling.md)<br>
 **Más:** [ficha completa](human/fichas/kotaemon.md) · [GitHub](https://github.com/Cinnamon/kotaemon)
@@ -1805,7 +1805,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 46.7k<br>
 **Qué es:** Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/milvus-io/milvus/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/milvus-io/milvus.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar productos por similitud; Indexar embeddings a gran escala — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [AnythingLLM](human/fichas/anything-llm.md) · [LightRAG](human/fichas/lightrag.md) · [LlamaIndex](human/fichas/llama-index.md) · [langchain4j](human/fichas/langchain4j.md)<br>
 **Más:** [ficha completa](human/fichas/milvus.md) · [GitHub](https://github.com/milvus-io/milvus)
@@ -1832,7 +1832,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 23.7k<br>
 **Qué es:** Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/pgvector/pgvector/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install pgvector` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [supabase](human/fichas/supabase.md) · [AnythingLLM](human/fichas/anything-llm.md) · [LibreChat](human/fichas/librechat.md) · [LightRAG](human/fichas/lightrag.md) · [langchain4j](human/fichas/langchain4j.md)<br>
 **Más:** [ficha completa](human/fichas/pgvector.md) · [GitHub](https://github.com/pgvector/pgvector)
@@ -1850,7 +1850,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 17k<br>
 **Qué es:** Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/weaviate/weaviate/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install -U weaviate-client` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/weaviate.md) · [GitHub](https://github.com/weaviate/weaviate)
@@ -1859,7 +1859,7 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 11.9k<br>
 **Qué es:** Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/lancedb/lancedb/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install lancedb pandas` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md)<br>
 **Más:** [ficha completa](human/fichas/lancedb.md) · [GitHub](https://github.com/lancedb/lancedb)
@@ -1921,7 +1921,7 @@ graphify install               # detects your assistant and registers the skill`
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 48.6k<br>
 **Qué es:** Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Repomix](human/fichas/repomix.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/codebase-memory-mcp.md) · [GitHub](https://github.com/DeusData/codebase-memory-mcp)
@@ -2040,7 +2040,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 47k<br>
 **Qué es:** CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/cli/cli/blob/trunk/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/cli/cli.git gh-cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar issues desde terminal; Revisar ejecuciones de Actions — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md) · [activepieces](human/fichas/activepieces.md) · [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md) · [Awesome GitHub Copilot](human/fichas/awesome-copilot.md)<br>
 **Más:** [ficha completa](human/fichas/cli.md) · [GitHub](https://github.com/cli/cli)
@@ -2116,7 +2116,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 187k<br>
 **Qué es:** La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.ollama.com/quickstart); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install ollama` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un LLM local; Conectar un modelo local a Codex CLI — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Open WebUI](human/fichas/open-webui.md) · [litellm](human/fichas/litellm.md) · [crawl4ai](human/fichas/crawl4ai.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/ollama.md) · [GitHub](https://github.com/ollama/ollama)
@@ -2125,7 +2125,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 135k<br>
 **Qué es:** Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/ggml-org/llama.cpp/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -LsSf https://llama.app/install.sh | sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Open WebUI](human/fichas/open-webui.md) · [llmfit](human/fichas/llmfit.md) · [LibreChat](human/fichas/librechat.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/llama-cpp.md) · [GitHub](https://github.com/ggml-org/llama.cpp)
@@ -2170,7 +2170,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 26.6k<br>
 **Qué es:** Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/mozilla-ai/llamafile/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/mozilla-ai/llamafile.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Distribuir una demo local de un LLM; Probar inferencia sin montar un servidor complejo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Open WebUI](human/fichas/open-webui.md) · [AnythingLLM](human/fichas/anything-llm.md) · [LibreChat](human/fichas/librechat.md)<br>
 **Más:** [ficha completa](human/fichas/llamafile.md) · [GitHub](https://github.com/mozilla-ai/llamafile)
@@ -2179,7 +2179,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 23.4k<br>
 **Qué es:** Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/mlc-ai/mlc-llm/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone --recursive https://github.com/mlc-ai/mlc-llm.git && cd mlc-llm/` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: ejecutar un LLM en un móvil o en el navegador sin servidor; servir un modelo en GPU AMD, Intel o Apple con una API compatible con OpenAI — **Evita si:** no quieres preparar modelos, dependencias y hardware propios<br>
 **Combina con:** [Transformers](human/fichas/transformers.md) · [Open WebUI](human/fichas/open-webui.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/mlc-llm.md) · [GitHub](https://github.com/mlc-ai/mlc-llm)
@@ -2206,7 +2206,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 12.3k<br>
 **Qué es:** Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/LostRuins/koboldcpp/blob/concedo/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/LostRuins/koboldcpp.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama — **Evita si:** no quieres preparar modelos, dependencias y hardware propios<br>
 **Combina con:** [SillyTavern](human/fichas/sillytavern.md) · [Open WebUI](human/fichas/open-webui.md) · [Kokoro](human/fichas/kokoro.md)<br>
 **Más:** [ficha completa](human/fichas/koboldcpp.md) · [GitHub](https://github.com/LostRuins/koboldcpp)
@@ -2244,7 +2244,7 @@ Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 45.7k<br>
 **Qué es:** Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://jan.ai/docs); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/janhq/jan` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [llmfit](human/fichas/llmfit.md) · [Ollama](human/fichas/ollama.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/jan.md) · [GitHub](https://github.com/janhq/jan)
@@ -2282,7 +2282,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 47.7k<br>
 **Qué es:** App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/oobabooga/textgen/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up --build` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [LibreChat](human/fichas/librechat.md) · [llmfit](human/fichas/llmfit.md) · [Unsloth](human/fichas/unsloth.md) · [SillyTavern](human/fichas/sillytavern.md)<br>
 **Más:** [ficha completa](human/fichas/textgen.md) · [GitHub](https://github.com/oobabooga/textgen)
@@ -2300,7 +2300,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 42.3k<br>
 **Qué es:** Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/chatboxai/chatbox/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/chatboxai/chatbox.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con varios proveedores; Probar un modelo local desde escritorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [LocalAI](human/fichas/localai.md)<br>
 **Más:** [ficha completa](human/fichas/chatbox.md) · [GitHub](https://github.com/chatboxai/chatbox)
@@ -2309,7 +2309,7 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 35.7k<br>
 **Qué es:** Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/SillyTavern/SillyTavern/blob/release/.github/readme.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/SillyTavern/SillyTavern -b release` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: escribir historias o partidas de rol con personajes y memoria persistente; probar el mismo prompt contra varios modelos locales y remotos — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [KoboldCpp](human/fichas/koboldcpp.md) · [Ollama](human/fichas/ollama.md) · [ComfyUI](human/fichas/comfyui.md) · [Kokoro](human/fichas/kokoro.md) · [Text Generation WebUI](human/fichas/textgen.md)<br>
 **Más:** [ficha completa](human/fichas/sillytavern.md) · [GitHub](https://github.com/SillyTavern/SillyTavern)
@@ -2341,7 +2341,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 57.6k<br>
 **Qué es:** Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.privategpt.dev/getting-started/quickstart); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install private-gpt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md) · [llama.cpp](human/fichas/llama-cpp.md)<br>
 **Más:** [ficha completa](human/fichas/private-gpt.md) · [GitHub](https://github.com/zylon-ai/private-gpt)
@@ -2350,7 +2350,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 38.1k<br>
 **Qué es:** Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.khoj.dev/get-started/setup); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `python -m pip install 'khoj[local]'` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar notas desde Obsidian; Crear un asistente de investigación personal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md) · [markitdown](human/fichas/markitdown.md)<br>
 **Más:** [ficha completa](human/fichas/khoj.md) · [GitHub](https://github.com/khoj-ai/khoj)
@@ -2359,7 +2359,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.6k<br>
 **Qué es:** App de escritorio que envuelve al agente Hermes en una interfaz nativa.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/fathah/hermes-desktop/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install hermes-desktop` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [hermes-agent](human/fichas/hermes-agent.md) · [Ollama](human/fichas/ollama.md) · [mem0](human/fichas/mem0.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/hermes-desktop.md) · [GitHub](https://github.com/fathah/hermes-desktop)
@@ -2370,7 +2370,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 16.9k<br>
 **Qué es:** Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/MODSetter/SurfSense/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://raw.githubusercontent.com/MODSetter/SurfSense/main/docker/scripts/install.sh \| bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/surfsense.md) · [GitHub](https://github.com/MODSetter/SurfSense)
@@ -2379,7 +2379,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 42k<br>
 **Qué es:** Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/lfnovo/open-notebook/blob/main/docs/0-START-HERE/quick-start-local.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md) · [activepieces](human/fichas/activepieces.md) · [scientific-agent-skills](human/fichas/scientific-agent-skills.md) · [olmOCR](human/fichas/olmocr.md) · [VibeVoice](human/fichas/vibevoice.md)<br>
 **Más:** [ficha completa](human/fichas/open-notebook.md) · [GitHub](https://github.com/lfnovo/open-notebook)
@@ -2388,7 +2388,7 @@ docker compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución ☁️ cloud/API · MCP 🔌 · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 20.2k<br>
 **Qué es:** API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/teng-lin/notebooklm-py/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `uv tool install "notebooklm-py[browser]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar consultas documentales; Exportar mapas o resúmenes propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [obsidian-second-brain](human/fichas/obsidian-second-brain.md)<br>
 **Más:** [ficha completa](human/fichas/notebooklm-py.md) · [GitHub](https://github.com/teng-lin/notebooklm-py)
@@ -2522,7 +2522,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 40.7k<br>
 **Qué es:** Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/chakra-ui/chakra-ui/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `yarn add @chakra-ui/react @emotion/react` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [Storybook](human/fichas/storybook.md) · [Lucide](human/fichas/lucide.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/chakra-ui.md) · [GitHub](https://github.com/chakra-ui/chakra-ui)
@@ -2558,7 +2558,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 25.8k<br>
 **Qué es:** Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://lucide.dev/guide/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pnpm add lucide-static` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ui](human/fichas/ui.md) · [tailwindcss](human/fichas/tailwindcss.md) · [daisyUI](human/fichas/daisyui.md) · [konva](human/fichas/konva.md) · [normalize.css](human/fichas/normalize-css.md) · [Radix Primitives](human/fichas/radix-primitives.md)<br>
 **Más:** [ficha completa](human/fichas/lucide.md) · [GitHub](https://github.com/lucide-icons/lucide)
@@ -2596,7 +2596,7 @@ Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la ba
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 42.8k<br>
 **Qué es:** La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://daisyui.com/docs/install/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm i -D daisyui@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [Lucide](human/fichas/lucide.md) · [flexoki](human/fichas/flexoki.md)<br>
 **Más:** [ficha completa](human/fichas/daisyui.md) · [GitHub](https://github.com/saadeghi/daisyui)
@@ -2675,7 +2675,7 @@ docker compose up -d
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 27.2k<br>
 **Qué es:** Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.onlook.com/developers/running-locally); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker-compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [supabase](human/fichas/supabase.md) · [ui](human/fichas/ui.md)<br>
 **Más:** [ficha completa](human/fichas/onlook.md) · [GitHub](https://github.com/onlook-dev/onlook)
@@ -2704,7 +2704,7 @@ docker compose up -d
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 81.2k<br>
 **Qué es:** Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/abi/screenshot-to-code/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker-compose up -d --build` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [ui](human/fichas/ui.md) · [playwright](human/fichas/playwright.md)<br>
 **Más:** [ficha completa](human/fichas/screenshot-to-code.md) · [GitHub](https://github.com/abi/screenshot-to-code)
@@ -2713,7 +2713,7 @@ docker compose up -d
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 39.1k<br>
 **Qué es:** Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
-**Arranque:** [Instrucciones originales](https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up app --build` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [ui](human/fichas/ui.md) · [playwright](human/fichas/playwright.md)<br>
 **Más:** [ficha completa](human/fichas/ai-website-cloner-template.md) · [GitHub](https://github.com/JCodesMore/ai-website-cloner-template)
@@ -2851,7 +2851,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 22k<br>
 **Qué es:** Alternativa open source a Google Analytics con control total de los datos.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://matomo.org/faq/how-to-install/faq_18271/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/matomo-org/matomo .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [metabase](human/fichas/metabase.md) · [Grafana](human/fichas/grafana.md) · [activepieces](human/fichas/activepieces.md)<br>
 **Más:** [ficha completa](human/fichas/matomo.md) · [GitHub](https://github.com/matomo-org/matomo)
@@ -2862,7 +2862,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 75.5k<br>
 **Qué es:** Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://superset.apache.org/docs/quickstart/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose -f docker-compose-image-tag.yml up` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar métricas de una base SQL; Compartir un dashboard interno — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [WrenAI](human/fichas/wrenai.md) · [echarts](human/fichas/echarts.md) · [hudi](human/fichas/hudi.md) · [Kestra](human/fichas/kestra.md) · [deck.gl](human/fichas/deck-gl.md)<br>
 **Más:** [ficha completa](human/fichas/superset.md) · [GitHub](https://github.com/apache/superset)
@@ -2891,7 +2891,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 50.3k<br>
 **Qué es:** Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install -g @metabase/cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [posthog](human/fichas/posthog.md) · [echarts](human/fichas/echarts.md)<br>
 **Más:** [ficha completa](human/fichas/metabase.md) · [GitHub](https://github.com/metabase/metabase)
@@ -2900,7 +2900,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 28.9k<br>
 **Qué es:** Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://redash.io/help/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker-compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md)<br>
 **Más:** [ficha completa](human/fichas/redash.md) · [GitHub](https://github.com/getredash/redash)
@@ -2909,7 +2909,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 7.1k<br>
 **Qué es:** BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/evidence-dev/evidence/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://evidence.studio/install.sh | sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [Claude Code](human/fichas/claude-code.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/evidence.md) · [GitHub](https://github.com/evidence-dev/evidence)
@@ -2930,7 +2930,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 114k<br>
 **Qué es:** Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://d3js.org/getting-started); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `yarn add d3` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una visualización a medida; Explorar relaciones entre datos con interacción — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Recharts](human/fichas/recharts.md) · [awesome-dataviz](human/fichas/awesome-dataviz.md) · [marimo](human/fichas/marimo.md)<br>
 **Más:** [ficha completa](human/fichas/d3.md) · [GitHub](https://github.com/d3/d3)
@@ -2939,7 +2939,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 67.8k<br>
 **Qué es:** Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://www.chartjs.org/docs/latest/getting-started/index); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install chart.js` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [DuckDB](human/fichas/duckdb.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/chart-js.md) · [GitHub](https://github.com/chartjs/Chart.js)
@@ -2948,7 +2948,7 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 67.7k<br>
 **Qué es:** Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://echarts.apache.org/handbook/en/get-started/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install echarts --save` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [metabase](human/fichas/metabase.md) · [Apache Superset](human/fichas/superset.md) · [heroui](human/fichas/heroui.md) · [Ant Design](human/fichas/ant-design.md) · [awesome-dataviz](human/fichas/awesome-dataviz.md) · [dash](human/fichas/dash.md)<br>
 **Más:** [ficha completa](human/fichas/echarts.md) · [GitHub](https://github.com/apache/echarts)
@@ -3019,7 +3019,7 @@ npm run dev` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 18.3k<br>
 **Qué es:** Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/laramies/theHarvester/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up --build -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Sherlock](human/fichas/sherlock.md) · [Maigret](human/fichas/maigret.md) · [Katana](human/fichas/katana.md) · [Recon-ng](human/fichas/recon-ng.md)<br>
 **Más:** [ficha completa](human/fichas/theharvester.md) · [GitHub](https://github.com/laramies/theHarvester)
@@ -3062,7 +3062,7 @@ cp .env.example .env          # sensible defaults — no keys needed
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 45.9k<br>
 **Qué es:** Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Leaflet/Leaflet/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install leaflet@beta` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [WebODM](human/fichas/webodm.md) · [QGIS](human/fichas/qgis.md) · [Claude Code](human/fichas/claude-code.md) · [NiceGUI](human/fichas/nicegui.md)<br>
 **Más:** [ficha completa](human/fichas/leaflet.md) · [GitHub](https://github.com/Leaflet/Leaflet)
@@ -3071,7 +3071,7 @@ cp .env.example .env          # sensible defaults — no keys needed
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.8k<br>
 **Qué es:** Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/qgis/QGIS/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/qgis/QGIS.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Leaflet](human/fichas/leaflet.md) · [MapLibre GL JS](human/fichas/maplibre.md) · [WebODM](human/fichas/webodm.md) · [DuckDB](human/fichas/duckdb.md)<br>
 **Más:** [ficha completa](human/fichas/qgis.md) · [GitHub](https://github.com/qgis/QGIS)
@@ -3098,7 +3098,7 @@ cp .env.example .env          # sensible defaults — no keys needed
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 12.1k<br>
 **Qué es:** Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/keplergl/kepler.gl/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install --save @kepler.gl/components maplibre-gl` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [deck.gl](human/fichas/deck-gl.md) · [MapLibre GL JS](human/fichas/maplibre.md) · [JupyterLab](human/fichas/jupyterlab.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/kepler-gl.md) · [GitHub](https://github.com/keplergl/kepler.gl)
@@ -3117,7 +3117,7 @@ docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --p
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 4.3k<br>
 **Qué es:** Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.webodm.org/installation/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [marimo](human/fichas/marimo.md) · [Leaflet](human/fichas/leaflet.md) · [QGIS](human/fichas/qgis.md)<br>
 **Más:** [ficha completa](human/fichas/webodm.md) · [GitHub](https://github.com/WebODM/WebODM)

@@ -202,13 +202,13 @@ role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=memory,
 - Equipo: Preparación según la ruta elegida. Binario oficial o Go; cliente MCP; directorio de memoria de prueba
 **Repo:** https://github.com/Gentleman-Programming/engram
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Gentleman-Programming/engram/blob/main/README.md
+brew install gentleman-programming/tap/engram
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -295,13 +295,13 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=rag
 - Equipo: Preparación según la ruta elegida. Python según guía; modelo y embeddings; corpus pequeño; presupuesto de indexación
 **Repo:** https://github.com/microsoft/graphrag
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://microsoft.github.io/graphrag/get_started/
+python -m pip install graphrag
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -326,13 +326,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=rag,pyt
 - Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/Cinnamon/kotaemon
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Cinnamon/kotaemon/blob/main/README.md
+docker run -e GRADIO_SERVER_NAME=0.0.0.0 -e GRADIO_SERVER_PORT=7860 -v ./ktem_app_data:/app/ktem_app_data -p 7860:7860 -it --rm ghcr.io/cinnamon/kotaemon:main-full
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -356,13 +356,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vector
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/lancedb/lancedb
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/lancedb/lancedb/blob/main/README.md
+pip install lancedb pandas
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -450,13 +450,13 @@ role=platform · exec=hybrid · setup=easy · mcp=False · prov=— · tags=rag,
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/meilisearch/meilisearch
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/meilisearch/meilisearch/blob/main/README.md
+docker run -it --rm -p 7700:7700 -v $(pwd)/meili_data:/meili_data getmeili/meilisearch:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda instantánea con facetas a una web o aplicación; combinar búsqueda por palabras y semántica como capa de recuperación para RAG
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -542,13 +542,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vecto
 - Equipo: Preparación según la ruta elegida. Python para cliente; servidor o modo local según guía; vectores de prueba
 **Repo:** https://github.com/milvus-io/milvus
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/milvus-io/milvus/blob/master/README.md
+git clone https://github.com/milvus-io/milvus.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar productos por similitud; Indexar embeddings a gran escala
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -573,13 +573,13 @@ role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=rag,ag
 - Equipo: Preparación según la ruta elegida. Docker o ruta elegida; proveedor; fuente documental de prueba
 **Repo:** https://github.com/onyx-dot-app/onyx
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/onyx-dot-app/onyx/blob/main/README.md
+uv tool install onyx-cli && onyx-cli deploy install
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -665,13 +665,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vector
 - Equipo: Preparación según la ruta elegida. PostgreSQL; permisos de extensión; paquete o compilación adecuados al sistema
 **Repo:** https://github.com/pgvector/pgvector
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/pgvector/pgvector/blob/master/README.md
+brew install pgvector
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -727,13 +727,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=openai,local · 
 - Equipo: Preparación según la ruta elegida. Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos
 **Repo:** https://github.com/infiniflow/ragflow
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/infiniflow/ragflow/blob/main/README.md
+docker compose -f docker-compose.yml up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar manuales de una organización; Combinar documentos en una base de conocimiento
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -849,13 +849,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=ve
 - Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/weaviate/weaviate
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/weaviate/weaviate/blob/main/README.md
+pip install -U weaviate-client
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones

@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 40.8k | NOASSERTION | Python | 2026-06-23 |
+| 40.8k | MIT + licencia Enterprise (ee/) | Python | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
 **Nivel:** 3 Avanzado — preparación pesada
 
 **Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + licencia Enterprise (ee/). Fuente: [LICENSE](https://github.com/PostHog/posthog/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

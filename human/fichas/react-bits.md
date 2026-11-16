@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 52k | NOASSERTION | JavaScript | 2026-11-10 |
+| 52k | MIT + Commons Clause | JavaScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
 **Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + Commons Clause. No permite vender los componentes como producto propio. Fuente: [LICENSE](https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

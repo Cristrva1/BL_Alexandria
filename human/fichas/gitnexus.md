@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 48.5k | NOASSERTION | TypeScript | 2026-06-23 |
+| 48.5k | PolyForm-Noncommercial-1.0.0 | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** PolyForm-Noncommercial-1.0.0. Solo uso no comercial. Fuente: [LICENSE](https://github.com/abhigyanpatwari/GitNexus/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

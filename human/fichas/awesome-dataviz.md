@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 4.5k | NOASSERTION | JavaScript | 2026-06-23 |
+| 4.5k | CC-BY-4.0 | JavaScript | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** CC-BY-4.0. Fuente: [LICENSE](https://github.com/hal9ai/awesome-dataviz/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -68,7 +70,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Selecciona dos bibliotecas de un mismo tipo y compara licencia, accesibilidad y formato de datos.
 2. Comprueba: Tienes candidatos con documentación original y requisitos identificados.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/hal9ai/awesome-dataviz/blob/main/README.md)
 

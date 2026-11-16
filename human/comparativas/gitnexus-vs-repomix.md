@@ -13,7 +13,7 @@
 | Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
-| Licencia | NOASSERTION | MIT |
+| Licencia | PolyForm-Noncommercial-1.0.0 | MIT |
 | Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica

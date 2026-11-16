@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 64.9k | NOASSERTION | JavaScript | 2026-11-14 |
+| 64.9k | MIT (solo código) | JavaScript | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación media
 
 **Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** MIT (solo código). Los datos y recursos de terceros incluidos tienen restricciones, algunas no comerciales. Fuente: [LICENSE](https://github.com/bilawalsidhu/gods-eye-view/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

@@ -86,16 +86,23 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 - driver de conexión
 - datos ficticios
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
-2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://superset.apache.org/docs/quickstart/)
+```
+docker compose -f docker-compose-image-tag.yml up
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «2. Start the latest official release of Superset»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/apache/superset/blob/master/docs/docs/quickstart.mdx)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Apache Superset para mi objetivo y necesito pasos guiados. Lee https://superset.apache.org/docs/quickstart/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Apache Superset para mi objetivo y necesito pasos guiados. Lee https://github.com/apache/superset/blob/master/docs/docs/quickstart.mdx. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

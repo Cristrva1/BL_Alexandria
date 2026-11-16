@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 15k | NOASSERTION | TypeScript | 2026-11-14 |
+| 15k | MIT | TypeScript | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
 **Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** MIT. Fuente: [LICENSE](https://github.com/konvajs/konva/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

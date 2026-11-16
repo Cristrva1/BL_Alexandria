@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
-| Licencia | AGPL-3.0 | NOASSERTION |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | AGPL-3.0 | Apache-2.0 |
+| Instalación | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… | `git clone https://github.com/janhq/jan` |
 
 ## Regla práctica
 

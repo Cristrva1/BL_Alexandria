@@ -48,13 +48,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=datavi
 - Equipo: Preparación según la ruta elegida. JavaScript; canvas; gestor npm o script distribuido
 **Repo:** https://github.com/chartjs/Chart.js
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://www.chartjs.org/docs/latest/getting-started/index
+npm install chart.js
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -79,13 +79,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data
 - Equipo: Preparación según la ruta elegida. JavaScript; HTML/SVG o Canvas; datos de prueba
 **Repo:** https://github.com/d3/d3
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://d3js.org/getting-started
+yarn add d3
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una visualización a medida; Explorar relaciones entre datos con interacción
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -170,13 +170,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data
 - Equipo: Preparación según la ruta elegida. JavaScript; contenedor con tamaño; datos
 **Repo:** https://github.com/apache/echarts
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://echarts.apache.org/handbook/en/get-started/
+npm install echarts --save
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -201,13 +201,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,an
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/evidence-dev/evidence
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/evidence-dev/evidence/blob/main/README.md
+curl -fsSL https://evidence.studio/install.sh | sh
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -296,13 +296,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,ty
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/keplergl/kepler.gl
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/keplergl/kepler.gl/blob/master/README.md
+npm install --save @kepler.gl/components maplibre-gl
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -326,13 +326,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=datavi
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/Leaflet/Leaflet
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Leaflet/Leaflet/blob/main/README.md
+npm install leaflet@beta
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -419,13 +419,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ana
 - Equipo: Preparación según la ruta elegida. Servidor PHP y MySQL compatibles; web de prueba; configuración de privacidad
 **Repo:** https://github.com/matomo-org/matomo
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://matomo.org/faq/how-to-install/faq_18271/
+git clone https://github.com/matomo-org/matomo .
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -450,13 +450,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=an
 - Equipo: Preparación según la ruta elegida. Ruta Docker o Java según guía; base de prueba; usuario de lectura
 **Repo:** https://github.com/metabase/metabase
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase
+npm install -g @metabase/cli
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -639,13 +639,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,cp
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/qgis/QGIS
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/qgis/QGIS/blob/master/README.md
+git clone https://github.com/qgis/QGIS.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -731,13 +731,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ana
 - Equipo: Preparación según la ruta elegida. Servidor según guía; fuente de datos; SQL básico
 **Repo:** https://github.com/getredash/redash
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://redash.io/help/
+docker-compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -793,13 +793,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ana
 - Equipo: Preparación según la ruta elegida. Entorno del quickstart; motor SQL; driver de conexión; datos ficticios
 **Repo:** https://github.com/apache/superset
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://superset.apache.org/docs/quickstart/
+docker compose -f docker-compose-image-tag.yml up
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar métricas de una base SQL; Compartir un dashboard interno
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -824,13 +824,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=osint,pyth
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/laramies/theHarvester
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/laramies/theHarvester/blob/master/README.md
+docker compose up --build -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -917,13 +917,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=geoe
 - Equipo: Preparación según la ruta elegida. Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba
 **Repo:** https://github.com/WebODM/WebODM
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.webodm.org/installation/
+git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

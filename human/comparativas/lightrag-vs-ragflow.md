@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🔴 pesado |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | `docker compose -f docker-compose.yml up -d` |
 
 ## Regla práctica
 

@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 51.4k | NOASSERTION | TypeScript | 2026-11-10 |
+| 51.4k | tldraw license (no OSI) | TypeScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
 **Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** tldraw license (no OSI). Source-available; tldraw ofrece licencias comerciales alternativas. Revisa las condiciones de uso en producción. Fuente: [LICENSE](https://github.com/tldraw/tldraw/blob/main/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

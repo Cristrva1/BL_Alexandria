@@ -380,36 +380,36 @@ Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 - `claude-mem` [S|loc|E|+] — Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. — tags: memory,coding-agent,mcp,typescript — prov: anthropic,mcp — alt: engram,agentmemory
 - `cognee` [L|hyb|E|+] — Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. — tags: memory,rag,python — prov: openai,local — alt: graphiti,mem0,graphrag,letta
 - `dsh-noema` [L|loc|M|?] — Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. — tags: memoria,plugin,typescript
-- `engram` [R|loc|E|?] — Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. — tags: memory,mcp,coding-agent,go — prov: mcp — alt: claude-mem,agentmemory
+- `engram` [R|loc|E|+] — Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. — tags: memory,mcp,coding-agent,go — prov: mcp — alt: claude-mem,agentmemory
 - `faiss` [L|loc|M|?] — Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. — tags: vector-db,python,cpp — alt: qdrant,chroma
 - `graphiti` [L|hyb|M|+] — Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. — tags: memory,rag,python — prov: openai,anthropic — alt: cognee,graphrag
-- `graphrag` [L|hyb|M|?] — Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lu — tags: rag,python — alt: graphiti,cognee,lightrag
-- `kotaemon` [A|hyb|M|?] — Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de G — tags: rag,python,docs,local
-- `lancedb` [L|loc|E|?] — Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL  — tags: vector-db,rag,rust,library — alt: chroma
+- `graphrag` [L|hyb|M|+] — Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lu — tags: rag,python — alt: graphiti,cognee,lightrag
+- `kotaemon` [A|hyb|M|+] — Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de G — tags: rag,python,docs,local
+- `lancedb` [L|loc|E|+] — Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL  — tags: vector-db,rag,rust,library — alt: chroma
 - `letta` [P|hyb|M|+] — Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente ree — tags: memory,agents,typescript — prov: openai,anthropic,local — alt: mem0,cognee
 - `lightrag` [L|hyb|M|+] — RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. — tags: rag,python — prov: openai,local — alt: graphrag,ragflow,pageindex
-- `meilisearch` [P|hyb|E|?] — Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a errat — tags: rag,search,rust,docker
+- `meilisearch` [P|hyb|E|+] — Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a errat — tags: rag,search,rust,docker
 - `mem0` [L|hyb|E|+] — Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y — tags: memory,python — alt: letta,cognee,supermemory
 - `mempalace` [L|loc|E|+] — Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin envia — tags: memory,python
-- `milvus` [R|loc|H|?] — Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. — tags: vector-db,rag,go,docker — alt: qdrant,chroma,pgvector,weaviate
-- `onyx` [A|hyb|M|?] — Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. — tags: rag,agent,python — prov: local — alt: anything-llm
+- `milvus` [R|loc|H|+] — Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. — tags: vector-db,rag,go,docker — alt: qdrant,chroma,pgvector,weaviate
+- `onyx` [A|hyb|M|+] — Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. — tags: rag,agent,python — prov: local — alt: anything-llm
 - `openviking` [P|hyb|H|+] — Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. — tags: memoria,server,python — prov: local
 - `pageindex` [L|cld|E|+] — Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. — tags: rag,docs,python — prov: openai — alt: lightrag
-- `pgvector` [L|loc|E|?] — Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. — tags: vector-db,postgres,rag — alt: qdrant,chroma,milvus
+- `pgvector` [L|loc|E|+] — Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. — tags: vector-db,postgres,rag — alt: qdrant,chroma,milvus
 - `qdrant` [R|loc|E|+] — Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. — tags: vector-db,rag,rust,docker — alt: milvus,chroma,pgvector,faiss,weaviate
-- `ragflow` [P|loc|H|?] — Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. — tags: rag,docs,agents,docker — prov: openai,local — alt: dify,lightrag
+- `ragflow` [P|loc|H|+] — Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. — tags: rag,docs,agents,docker — prov: openai,local — alt: dify,lightrag
 - `supermemory` [P|hyb|E|+] — Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. — tags: memory,rag,typescript — alt: mem0,agentmemory
 - `turbovec` [L|loc|E|+] — Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación  — tags: automation,vector-db,rust
 - `txtai` [L|hyb|E|+] — Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base d — tags: rag,python,library,mcp
-- `weaviate` [P|hyb|M|?] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y  — tags: vector-db,rag,go,docker — alt: qdrant,milvus
+- `weaviate` [P|hyb|M|+] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y  — tags: vector-db,rag,go,docker — alt: qdrant,milvus
 
 ### 7. Entender código y comprobar su calidad (20)
 Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 
 - `ast-grep` [A|loc|E|+] — CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. — tags: code,security,rust — alt: semgrep
 - `biome` [A|loc|E|+] — Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por — tags: code,javascript,typescript,rust
-- `cli` [A|cld|E|?] — CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. — tags: code,go
-- `codebase-memory-mcp` [R|loc|E|?] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para  — tags: code,mcp,memory — prov: mcp — alt: codegraph,gitnexus,serena,graphify
+- `cli` [A|cld|E|+] — CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. — tags: code,go
+- `codebase-memory-mcp` [R|loc|E|+] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para  — tags: code,mcp,memory — prov: mcp — alt: codegraph,gitnexus,serena,graphify
 - `codegraph` [R|loc|E|+] — CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada arc — tags: code,typescript — alt: codebase-memory-mcp,serena,gitnexus,graphify
 - `floorplan` [S|loc|M|+] — Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un pr — tags: codigo,skill,javascript
 - `fzf` [A|loc|E|+] — Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cu — tags: cli,go,terminal
@@ -432,63 +432,63 @@ Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 
 - `airllm` [R|loc|H|+] — Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus compon — tags: motores,engine,jupyter-notebook — prov: local
 - `anything-llm` [A|loc|E|?] — App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. — tags: rag,agents,local,javascript — prov: openai,anthropic,local — alt: open-webui,khoj,private-gpt,onyx
-- `chatbox` [A|hyb|E|?] — Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz comú — tags: chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek — alt: jan,nextchat,lobehub
+- `chatbox` [A|hyb|E|+] — Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz comú — tags: chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek — alt: jan,nextchat,lobehub
 - `cherry-studio` [A|hyb|E|?] — App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: jan,lobehub
 - `exo` [R|loc|M|+] — Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina. — tags: inference,local,python — prov: local
 - `freetoken` [R|loc|H|+] — Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del pr — tags: motores,engine,python — prov: local
-- `hermes-desktop` [A|loc|E|?] — App de escritorio que envuelve al agente Hermes en una interfaz nativa. — tags: agents,ui,typescript
-- `jan` [A|loc|E|?] — Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma i — tags: chatbot,local,rust — prov: local,openai — alt: cherry-studio,textgen,chatbox
-- `khoj` [A|hyb|M|?] — Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. — tags: research,rag,agents,python — prov: openai,anthropic,local — alt: anything-llm,surfsense
-- `koboldcpp` [R|loc|E|?] — Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs c — tags: inference,cpp,local,app — alt: llamafile
+- `hermes-desktop` [A|loc|E|+] — App de escritorio que envuelve al agente Hermes en una interfaz nativa. — tags: agents,ui,typescript
+- `jan` [A|loc|E|+] — Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma i — tags: chatbot,local,rust — prov: local,openai — alt: cherry-studio,textgen,chatbox
+- `khoj` [A|hyb|M|+] — Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. — tags: research,rag,agents,python — prov: openai,anthropic,local — alt: anything-llm,surfsense
+- `koboldcpp` [R|loc|E|+] — Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs c — tags: inference,cpp,local,app — alt: llamafile
 - `librechat` [A|hyb|M|?] — Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. — tags: chatbot,agents,typescript,docker — prov: openai,anthropic,google,local — alt: open-webui,lobehub
-- `llama-cpp` [R|loc|M|?] — Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. — tags: inference,local,cpp — prov: local — alt: ollama,llamafile,localai
-- `llamafile` [R|loc|E|?] — Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. — tags: inference,local,cpp — prov: local — alt: ollama,llama-cpp,koboldcpp
+- `llama-cpp` [R|loc|M|+] — Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. — tags: inference,local,cpp — prov: local — alt: ollama,llamafile,localai
+- `llamafile` [R|loc|E|+] — Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. — tags: inference,local,cpp — prov: local — alt: ollama,llama-cpp,koboldcpp
 - `llmfit` [A|hyb|E|+] — Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. — tags: inference,local,rust
 - `lobehub` [A|hyb|E|+] — Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: open-webui,librechat,cherry-studio,nextchat,chatbox
 - `localai` [R|loc|M|+] — Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. — tags: inference,local,go,docker — prov: local — alt: ollama,llama-cpp
 - `magnitude` [R|loc|H|+] — Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. — tags: motores,engine,rust — prov: local
-- `mlc-llm` [R|loc|H|?] — Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y na — tags: inference,python,local,model
+- `mlc-llm` [R|loc|H|+] — Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y na — tags: inference,python,local,model
 - `mlx-lm` [R|loc|E|+] — Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantizac — tags: inference,python,local,training
 - `nextchat` [A|hyb|E|?] — Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y  — tags: chatbot,typescript,app,mcp — alt: lobehub,chatbox
 - `notebooklm-mcp-cli` [R|cld|E|+] — CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde termi — tags: mcp,notebooks,python
-- `notebooklm-py` [L|cld|E|?] — API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuen — tags: notebooks,research,python
+- `notebooklm-py` [L|cld|E|+] — API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuen — tags: notebooks,research,python
 - `odysseus` [P|loc|H|+] — Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por age — tags: agents,local,python,docker
-- `ollama` [R|loc|E|?] — La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. — tags: inference,local,go — prov: local — alt: llama-cpp,localai,llamafile
-- `open-notebook` [A|loc|M|?] — Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y ge — tags: notebooks,research,typescript,docker — alt: deeptutor,surfsense
+- `ollama` [R|loc|E|+] — La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. — tags: inference,local,go — prov: local — alt: llama-cpp,localai,llamafile
+- `open-notebook` [A|loc|M|+] — Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y ge — tags: notebooks,research,typescript,docker — alt: deeptutor,surfsense
 - `open-webui` [A|loc|E|+] — Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. — tags: chatbot,local,rag,docker — prov: openai,local — alt: librechat,lobehub,anything-llm,textgen
-- `private-gpt` [P|loc|M|?] — Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. — tags: rag,local,python — prov: local,openai — alt: anything-llm
-- `sillytavern` [A|hyb|M|?] — Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y  — tags: chatbot,javascript,local,app
-- `surfsense` [A|hyb|M|?] — Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. — tags: research,rag,notebooks,python — prov: openai,local — alt: open-notebook,khoj
-- `textgen` [A|loc|M|?] — App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. — tags: chatbot,local,inference,python — prov: local — alt: jan,open-webui
+- `private-gpt` [P|loc|M|+] — Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. — tags: rag,local,python — prov: local,openai — alt: anything-llm
+- `sillytavern` [A|hyb|M|+] — Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y  — tags: chatbot,javascript,local,app
+- `surfsense` [A|hyb|M|+] — Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. — tags: research,rag,notebooks,python — prov: openai,local — alt: open-notebook,khoj
+- `textgen` [A|loc|M|+] — App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. — tags: chatbot,local,inference,python — prov: local — alt: jan,open-webui
 - `transformers.js` [L|loc|M|+] — Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. — tags: motores,browser,javascript,transformers,webml
 
 ### 9. Diseñar y construir interfaces web (32)
 Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 
-- `ai-website-cloner-template` [L|loc|M|?] — Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interf — tags: ia-ui,template,typescript
+- `ai-website-cloner-template` [L|loc|M|+] — Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interf — tags: ia-ui,template,typescript
 - `ant-design` [L|loc|E|+] — Lenguaje de diseño empresarial y librería de componentes React de Ant Group. — tags: ui,react,typescript — alt: mui,ui
 - `assistant-ui` [L|loc|E|+] — Librería React y TypeScript para interfaces de chat con IA de calidad producción. — tags: ui,chatbot,react,typescript — alt: copilotkit
-- `chakra-ui` [L|loc|E|?] — Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con  — tags: ui,typescript,react,library — alt: mantine,mui
+- `chakra-ui` [L|loc|E|+] — Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con  — tags: ui,typescript,react,library — alt: mantine,mui
 - `copilotkit` [L|hyb|E|+] — Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. — tags: ui,agents,react,typescript — prov: openai,anthropic — alt: assistant-ui
-- `daisyui` [L|loc|E|?] — La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. — tags: ui,design,javascript — alt: ui
+- `daisyui` [L|loc|E|+] — La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. — tags: ui,design,javascript — alt: ui
 - `excalidraw` [A|loc|E|?] — Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. — tags: design,docs,typescript — alt: tldraw,mermaid
 - `flexoki` [D|loc|E|?] — Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual. — tags: estilos,reference,css
 - `heroui` [L|loc|E|+] — Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, da — tags: ui,typescript — alt: mui
 - `json-render` [L|hyb|M|+] — Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el d — tags: ia-ui,library,typescript
 - `konva` [L|loc|M|+] — Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivo — tags: componentes,library,typescript
-- `lucide` [L|loc|E|?] — Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. — tags: ui,design,typescript
+- `lucide` [L|loc|E|+] — Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. — tags: ui,design,typescript
 - `magicui` [L|loc|E|?] — Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces mod — tags: ui — alt: react-bits
 - `mantine` [L|loc|E|?] — Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y no — tags: ui,typescript,react,library — alt: chakra-ui,mui
 - `mui` [L|loc|E|?] — Librería de componentes React completa que implementa Material Design de Google. — tags: ui,react,javascript — alt: ant-design,ui,heroui,chakra-ui,mantine
 - `normalize.css` [L|loc|E|+] — Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. — tags: ui,design
-- `onlook` [A|loc|E|?] — Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. — tags: design,ui,coding-agent,typescript — prov: anthropic — alt: open-design
+- `onlook` [A|loc|E|+] — Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. — tags: design,ui,coding-agent,typescript — prov: anthropic — alt: open-design
 - `open-design` [A|hyb|M|+] — Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. — tags: agents,design,typescript — alt: onlook
 - `openui` [L|hyb|E|+] — Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces, no solo texto. — tags: ui,agents,typescript
 - `penpot` [A|loc|H|?] — Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que qui — tags: design,docker
 - `plasmic` [A|hyb|M|+] — Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin per — tags: design,typescript
 - `radix-primitives` [L|loc|E|?] — Componentes React sin estilos y accesibles para construir sistemas de diseño propios. — tags: ui,react,typescript
 - `react-bits` [L|loc|E|+] — La mayor colección open source de componentes React animados e interactivos para webs llamativas. — tags: ui,react,javascript — alt: magicui
-- `screenshot-to-code` [A|cld|E|?] — Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. — tags: ui,vision,code,python — prov: openai,anthropic,google — alt: stitch-sdk
+- `screenshot-to-code` [A|cld|E|+] — Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. — tags: ui,vision,code,python — prov: openai,anthropic,google — alt: stitch-sdk
 - `stitch-sdk` [L|cld|E|+] — SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. — tags: ui,design,typescript — prov: google — alt: screenshot-to-code
 - `storybook` [A|loc|E|?] — Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React,  — tags: ui,typescript,javascript,docs
 - `swr` [L|loc|E|?] — Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los reva — tags: ui,typescript — alt: tanstack-query
@@ -502,35 +502,35 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 
 - `awesome-dataviz` [D|cld|E|?] — Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad — tags: automation,dataviz,javascript
-- `chart-js` [L|loc|E|?] — Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. — tags: dataviz,javascript — alt: echarts,recharts
-- `d3` [L|loc|M|?] — Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML. — tags: dataviz,javascript — alt: echarts
+- `chart-js` [L|loc|E|+] — Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. — tags: dataviz,javascript — alt: echarts,recharts
+- `d3` [L|loc|M|+] — Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML. — tags: dataviz,javascript — alt: echarts
 - `data-analyst-roadmap` [D|loc|E|?] — Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. — tags: recursos,blogs,businessintelligence,courses,data,dataanalysis,dataanalyst,excel
 - `deck.gl` [L|loc|E|+] — Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y — tags: dataviz,typescript,library,maps
-- `echarts` [L|loc|M|?] — Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gr — tags: dataviz,typescript — alt: d3,chart-js,recharts
-- `evidence` [A|loc|E|?] — BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados — tags: dataviz,analytics,typescript,app
+- `echarts` [L|loc|M|+] — Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gr — tags: dataviz,typescript — alt: d3,chart-js,recharts
+- `evidence` [A|loc|E|+] — BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados — tags: dataviz,analytics,typescript,app
 - `gods-eye-view` [A|loc|M|+] — Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el na — tags: osint,app,javascript — alt: osiris
 - `grafana` [P|loc|E|?] — Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. — tags: observability,dataviz,typescript,docker
-- `kepler.gl` [A|loc|E|?] — Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente  — tags: dataviz,typescript,app,maps
-- `leaflet` [L|loc|E|?] — Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y  — tags: dataviz,javascript,library,maps — alt: maplibre
+- `kepler.gl` [A|loc|E|+] — Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente  — tags: dataviz,typescript,app,maps
+- `leaflet` [L|loc|E|+] — Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y  — tags: dataviz,javascript,library,maps — alt: maplibre
 - `maigret` [A|loc|E|+] — Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayend — tags: osint,python,cli,security — alt: sherlock
 - `maplibre` [L|loc|E|?] — Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de  — tags: dataviz,typescript,library,maps — alt: leaflet
-- `matomo` [P|loc|M|?] — Alternativa open source a Google Analytics con control total de los datos. — tags: analytics,php — alt: umami,plausible
-- `metabase` [P|hyb|M|?] — Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos  — tags: analytics,dataviz,docker — alt: superset,redash
+- `matomo` [P|loc|M|+] — Alternativa open source a Google Analytics con control total de los datos. — tags: analytics,php — alt: umami,plausible
+- `metabase` [P|hyb|M|+] — Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos  — tags: analytics,dataviz,docker — alt: superset,redash
 - `odm` [A|loc|M|+] — Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. — tags: geoespacial,app,python
 - `osiris` [A|hyb|M|+] — Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. — tags: osint,typescript — alt: gods-eye-view
 - `plausible` [P|hyb|M|?] — Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. — tags: analytics,docker — alt: umami,matomo
 - `posthog` [P|hyb|H|+] — Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session re — tags: analytics,python,docker
 - `pythia` [P|loc|H|+] — Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. — tags: osint,typescript
-- `qgis` [A|loc|E|?] — Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, — tags: dataviz,cpp,app,maps
+- `qgis` [A|loc|E|+] — Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, — tags: dataviz,cpp,app,maps
 - `recharts` [L|loc|E|+] — Librería de gráficos para React construida con D3, declarativa y componible. — tags: dataviz,react,typescript — alt: chart-js,echarts
 - `recon-ng` [A|loc|M|?] — Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Me — tags: osint,python,security,cli
-- `redash` [P|loc|M|?] — Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. — tags: analytics,dataviz,typescript — alt: metabase,superset
+- `redash` [P|loc|M|+] — Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. — tags: analytics,dataviz,typescript — alt: metabase,superset
 - `sherlock` [A|loc|E|+] — CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociada — tags: osint,python,cli,security — alt: maigret
-- `superset` [P|loc|M|?] — Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. — tags: analytics,dataviz,python,docker — alt: metabase,redash
-- `theharvester` [A|loc|E|?] — Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadore — tags: osint,python,security,cli
+- `superset` [P|loc|M|+] — Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. — tags: analytics,dataviz,python,docker — alt: metabase,redash
+- `theharvester` [A|loc|E|+] — Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadore — tags: osint,python,security,cli
 - `umami` [P|loc|E|+] — Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. — tags: analytics,typescript,docker — alt: plausible,matomo
 - `uplot` [L|loc|E|?] — Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a renderizar datos con Canvas y  — tags: dataviz,javascript
-- `webodm` [P|loc|H|?] — Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. — tags: geoespacial,server,python
+- `webodm` [P|loc|H|+] — Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. — tags: geoespacial,server,python
 - `wrenai` [P|hyb|M|+] — BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. — tags: analytics,data,agents,python — prov: openai,local
 
 ### 11. Generar y editar imágenes con IA (10)
