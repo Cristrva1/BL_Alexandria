@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de Significant-Gravitas para crear, desplegar y gestionar agentes de IA ('Experts') que automatizan flujos de trabajo. La licencia es mixta: `autogpt_platform/` usa Polyform Shield, que no es OSI y prohíbe competir con el producto, y `classic/` y el resto del repo son MIT. La plataforma está en beta (autogpt-platform-beta-v0.11.3), con ~188k estrellas heredadas del AutoGPT original.
+
+## ¿Qué hace?
+
+Ofrece 'Experts', agentes con rol configurable mediante instrucciones, contexto, skills y apps conectadas, que pueden partir de plantillas. Tiene un constructor visual de bloques con lógica de ramificación, integraciones con herramientas de terceros, y una API y servidor MCP para lanzar workflows desde código o desde un agente de programación. El AutoGPT original sigue en `classic/` (con Forge y agbenchmark), separado de la plataforma.
+
+## ¿Cómo lo hace?
+
+La plataforma se puede usar en la nube (agpt.co) o autoalojada (frontend y backend en Python con Docker, según su documentación). La documentación de la plataforma incluye una guía para usar modelos locales con Ollama. Antes de desplegarla en una empresa hay que revisar la licencia Polyform Shield.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales en la plataforma autoalojada (guía oficial en agpt.co/docs). | Instala Ollama y descarga el modelo; después configúralo en la plataforma. |
+| [Claude Code](claude-code.md) | Ejecutar y construir workflows desde un agente de programación a través de la API/MCP de la plataforma (documentado en el README). | Plataforma operativa con su clave de API; luego registra el servidor MCP en Claude Code. |
+| [Codex CLI](codex.md) | Mismo uso vía MCP desde Codex CLI. (combinación por arquitectura: el README habla de 'un agente de programación' sin nombrar Codex) | Plataforma primero; luego registra el MCP en Codex. |
+
+**Notas:** Alternativas (elige una): sim, langflow. Combinación anterior con n8n eliminada: sin integración documentada. Licencia: Polyform Shield en la plataforma (no es open source OSI).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada autogpt-platform-beta-v0.11.3 (2026-11-15) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md) · [2](https://agpt.co/docs/platform/api-and-integrations/api-guide) · [3](https://agpt.co/docs/platform/ollama)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo |
 | Coste | El coste depende del proveedor o la ruta. La plataforma alojada es de pago y ofrece acceso a modelos; self-hosting usa tus credenciales o modelo local y recursos propios |
 | Equipo | Preparación según la ruta elegida. Docker para self-hosting; credenciales o modelo local |
-
-La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo
-
-## Qué puedes hacer con él
-
-Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques.
-
-## Por qué destaca
-
-Usos propuestos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana.
-
-## Cómo funciona
 
 La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo
 
@@ -103,12 +117,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker para self-hosting; credenciales o modelo local
 - **Etiquetas:** `agents` `automation` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 

@@ -653,6 +653,7 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 # or `pip install --upgrade git+https://github.com/geekan/MetaGPT.git`
 # or `git clone https://github.com/geekan/MetaGPT && cd MetaGPT && pip install --upgrade -e .`` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [E2B](human/fichas/e2b.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/metagpt.md) · [GitHub](https://github.com/FoundationAgents/MetaGPT)
 
 #### 👥 crewAI
@@ -756,6 +757,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
 **Comando documentado:** `pip install claude-agent-sdk` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [FastMCP](human/fichas/fastmcp.md) · [langfuse](human/fichas/langfuse.md) · [E2B](human/fichas/e2b.md)<br>
 **Más:** [ficha completa](human/fichas/claude-agent-sdk-python.md) · [GitHub](https://github.com/anthropics/claude-agent-sdk-python)
 
 #### 🤝 ag2
@@ -793,7 +795,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm install ai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una interfaz de chat; Extraer datos tipados de un mensaje — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui](human/fichas/ui.md) · [assistant-ui](human/fichas/assistant-ui.md)<br>
+**Combina con:** [assistant-ui](human/fichas/assistant-ui.md) · [ui](human/fichas/ui.md) · [langfuse](human/fichas/langfuse.md) · [Ollama](human/fichas/ollama.md) · [mem0](human/fichas/mem0.md)<br>
 **Más:** [ficha completa](human/fichas/vercel-ai.md) · [GitHub](https://github.com/vercel/ai)
 
 #### 🟦 Microsoft Agent Framework
@@ -804,6 +806,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 # This installs the standard package set; install `agent-framework-lab` separately for experimental modules.
 # It may take a minute on first install on Windows.` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [langfuse](human/fichas/langfuse.md) · [CopilotKit](human/fichas/copilotkit.md) · [ag2](human/fichas/ag2.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/agent-framework.md) · [GitHub](https://github.com/microsoft/agent-framework)
 
 #### 🕸️ langchain4j
@@ -812,6 +815,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.langchain4j.dev/get-started); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir IA a Spring Boot; Recuperar documentos desde una aplicación JVM — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Qdrant](human/fichas/qdrant.md) · [pgvector](human/fichas/pgvector.md) · [Milvus](human/fichas/milvus.md)<br>
 **Más:** [ficha completa](human/fichas/langchain4j.md) · [GitHub](https://github.com/langchain4j/langchain4j)
 
 #### 🟦 LangGraph.js
@@ -820,7 +824,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm install @langchain/langgraph @langchain/core` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Controlar aprobación de una solicitud; Reanudar un agente en una app JavaScript — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [langchain](human/fichas/langchain.md) · [langfuse](human/fichas/langfuse.md) · [CopilotKit](human/fichas/copilotkit.md) · [LangGraph](human/fichas/langgraph.md)<br>
 **Más:** [ficha completa](human/fichas/langgraphjs.md) · [GitHub](https://github.com/langchain-ai/langgraphjs)
 
 ### Builders visuales y plataformas de agentes
@@ -831,7 +835,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx sim-setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ollama](human/fichas/ollama.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/sim.md) · [GitHub](https://github.com/simstudioai/sim)
 
 #### 🧩 AutoGPT
@@ -851,7 +855,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
   -v autogpt-data:/data \
   significantgravitas/autogpt:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/autogpt.md) · [GitHub](https://github.com/Significant-Gravitas/AutoGPT)
 
 #### 🧱 dify
@@ -860,7 +864,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/langgenius/dify/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langflow](human/fichas/langflow.md)<br>
+**Combina con:** [langfuse](human/fichas/langfuse.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/dify.md) · [GitHub](https://github.com/langgenius/dify)
 
 #### 🔗 langflow
@@ -871,7 +875,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 
 uv run langflow run` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md) · [dify](human/fichas/dify.md)<br>
+**Combina con:** [langfuse](human/fichas/langfuse.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md) · [langchain](human/fichas/langchain.md)<br>
 **Más:** [ficha completa](human/fichas/langflow.md) · [GitHub](https://github.com/langflow-ai/langflow)
 
 ### Simulación, evolución y debate entre modelos
@@ -886,7 +890,7 @@ cp .env.example .env
 # 2. Pull image and start
 docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar reacciones hipotéticas a un anuncio; Comparar escenarios narrativos antes de investigar datos reales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [openevolve](human/fichas/openevolve.md)<br>
+**Combina con:** [Graphiti](human/fichas/graphiti.md) · [litellm](human/fichas/litellm.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/mirofish.md) · [GitHub](https://github.com/666ghj/MiroFish)
 
 #### 🏛️ llm-council
@@ -899,7 +903,7 @@ cd frontend
 npm install
 cd ..` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [Ollama](human/fichas/ollama.md) · [promptfoo](human/fichas/promptfoo.md)<br>
 **Más:** [ficha completa](human/fichas/llm-council.md) · [GitHub](https://github.com/karpathy/llm-council)
 
 #### 🧬 openevolve
@@ -910,7 +914,7 @@ cd ..` (comprobar los pasos completos en la ficha).<br>
 cd openevolve
 pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Optimizar una función medible; Buscar mejores reglas de ordenación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [llm-council](human/fichas/llm-council.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md) · [litellm](human/fichas/litellm.md)<br>
 **Más:** [ficha completa](human/fichas/openevolve.md) · [GitHub](https://github.com/algorithmicsuperintelligence/openevolve)
 
 #### 🕸️ hermes-agent-self-evolution
@@ -922,7 +926,7 @@ git clone https://github.com/NousResearch/hermes-agent-self-evolution.git
 cd hermes-agent-self-evolution
 pip install -e ".[dev]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Refinar una skill de revisión de código; Comparar instrucciones con fallos observados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [hermes-agent](human/fichas/hermes-agent.md)<br>
+**Combina con:** [hermes-agent](human/fichas/hermes-agent.md) · [DSPy](human/fichas/dspy.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/hermes-agent-self-evolution.md) · [GitHub](https://github.com/NousResearch/hermes-agent-self-evolution)
 
 #### 📚 jev-fraud
@@ -936,6 +940,7 @@ pip install -e ".[dev]"` (comprobar los pasos completos en la ficha).<br>
 
 npm run dev -- --port 3017` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [promptfoo](human/fichas/promptfoo.md) · [ui](human/fichas/ui.md)<br>
 **Más:** [ficha completa](human/fichas/jev-fraud.md) · [GitHub](https://github.com/Nutlope/jev-fraud)
 
 ---

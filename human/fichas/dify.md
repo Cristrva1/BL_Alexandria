@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plataforma de LangGenius para desarrollar aplicaciones con LLM, con versión cloud y autoalojada. La licencia es la 'Dify Open Source License', basada en Apache 2.0 con condiciones adicionales (GitHub la marca NOASSERTION), así que hay que revisarla antes de ofrecer Dify como servicio multi-inquilino o quitar su marca. Es muy madura y activa (1.19.0, ~161k estrellas).
+
+## ¿Qué hace?
+
+Combina en una interfaz visual workflows de IA, pipeline de RAG, agentes con sandbox propio que ejecutan comandos y gestionan archivos, gestión de modelos, Prompt IDE, LLMOps y Backend-as-a-Service (API para integrar las apps). Integra observabilidad con Opik, Langfuse y Arize Phoenix. Puede publicar sus aplicaciones como servidores MCP para Claude Desktop, Cursor y otras herramientas.
+
+## ¿Cómo lo hace?
+
+Se despliega con Docker Compose (v2.35.0+) desde `docker/` tras copiar `.env.example` y generar secretos con OpenSSL. Requisitos mínimos: 2 núcleos y 4 GiB de RAM. Incluye base de datos, Redis y un almacén vectorial configurable (la documentación de autoalojamiento incluye guías para Weaviate). Admite proveedores comerciales y locales (Ollama entre ellos) como plugins de modelo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langfuse](langfuse.md) | Trazas y evaluación de las apps de Dify (integración oficial documentada por Dify). | Despliega Langfuse y configura sus claves en la sección de monitorización de la app. |
+| [Ollama](ollama.md) | Modelos locales para despliegues autoalojados, citados en la documentación del nodo LLM. | Instala Ollama y descarga los modelos; añade después el proveedor en Dify. |
+| [Claude Code](claude-code.md) | Consumir apps de Dify publicadas como servidor MCP desde un agente de programación (la documentación de Dify cita Claude Desktop y Cursor). (combinación por arquitectura para Claude Code) | Publica la app como MCP en Dify y registra la URL en el cliente. |
+| [n8n](n8n.md) | Orquestar procesos de negocio que llaman a las apps de Dify por su API de Backend-as-a-Service. (combinación por arquitectura) | Dify primero; luego llámalo desde nodos HTTP de n8n. |
+
+**Notas:** Alternativas (elige una): sim, ragflow. Combinación anterior con langflow eliminada: son plataformas solapadas sin integración documentada. Licencia con condiciones adicionales sobre Apache 2.0.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.19.0 (2026-11-04) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langgenius/dify/blob/main/README.md) · [2](https://docs.dify.ai/en/self-host/use-dify/monitor/integrations/integrate-langfuse.md) · [3](https://docs.dify.ai/en/self-host/use-dify/nodes/llm.md) · [4](https://docs.dify.ai/en/self-host/use-dify/publish/publish-mcp.md) · [5](https://www.comet.com/docs/opik/integrations/dify)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Genera y guarda el token de sandbox antes de arrancar; un modelo Ollama local necesita una dirección accesible desde Docker |
 | Coste | El coste depende del proveedor o la ruta. Dify Cloud tiene planes y cupos; self-hosting paga infraestructura y modelos; su licencia añade condiciones a Apache-2.0 |
 | Equipo | Preparación según la ruta elegida. Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor |
-
-Genera y guarda el token de sandbox antes de arrancar; un modelo Ollama local necesita una dirección accesible desde Docker
-
-## Qué puedes hacer con él
-
-Plataforma integral para construir apps de IA con backend y UI listos.
-
-## Por qué destaca
-
-Usos propuestos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación.
-
-## Cómo funciona
 
 Genera y guarda el token de sandbox antes de arrancar; un modelo Ollama local necesita una dirección accesible desde Docker
 
@@ -86,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor
 - **Etiquetas:** `automation` `agents` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langflow](langflow.md) | 157k | Constructor visual de flujos LLM/agentes construido sobre LangChain. |
 
 ## Alternativas (elige una)
 

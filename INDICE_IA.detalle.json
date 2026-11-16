@@ -14094,8 +14094,11 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación",
    "combines_with": [
+    "assistant-ui",
     "ui",
-    "assistant-ui"
+    "langfuse",
+    "ollama",
+    "mem0"
    ],
    "alternatives": [
     "langgraphjs",
@@ -14192,7 +14195,62 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Toolkit TypeScript de Vercel (AI SDK) para construir aplicaciones y agentes con IA. El LICENSE es Apache-2.0 aunque GitHub no reconozca la licencia (NOASSERTION). Es un monorepo maduro y muy activo, con publicaciones casi a diario de paquetes como `ai`, `@ai-sdk/react` o `@ai-sdk/vue`.",
+   "que_hace": "Unifica la llamada a modelos de muchos proveedores (texto, objetos estructurados, herramientas, streaming) tras una sola API. Incluye la clase `ToolLoopAgent` para agentes que ejecutan herramientas en bucle. También trae AI SDK UI, hooks para React, Vue, Svelte y otros frameworks que gestionan el estado de chats con streaming. Por defecto enruta a través de Vercel AI Gateway, un servicio de pago de Vercel, aunque también se pueden instalar proveedores directos (`@ai-sdk/openai`, etc.).",
+   "como_lo_hace": "Paquetes npm (`npm i ai` más el proveedor elegido) para Node.js, edge runtimes y frameworks como Next.js, Nuxt o SvelteKit. Las claves van por variables de entorno: la de AI Gateway o la del proveedor directo. Si se usa el gateway, conviene revisar costes y privacidad porque añade un intermediario. La documentación está en ai-sdk.dev.",
+   "combina_con": [
+    {
+     "id": "assistant-ui",
+     "motivo": "Componentes de chat en React con runtime oficial para AI SDK (documentado por assistant-ui).",
+     "orden_instalacion": "Instala ai y el proveedor primero; luego @assistant-ui/react con su runtime de AI SDK."
+    },
+    {
+     "id": "ui",
+     "motivo": "shadcn/ui como base de componentes; AI Elements, el kit de componentes de chat de Vercel para AI SDK, se distribuye como registro de shadcn.",
+     "orden_instalacion": "Inicializa shadcn/ui en el proyecto y añade después los componentes de AI Elements que necesites."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas y costes de las llamadas del AI SDK mediante su telemetría OpenTelemetry (integración oficial de Langfuse).",
+     "orden_instalacion": "Langfuse (cloud o autoalojado) primero; activa `experimental_telemetry` y el exportador de Langfuse."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante el proveedor comunitario de Ollama, listado en la documentación del AI SDK.",
+     "orden_instalacion": "Instala Ollama y descarga un modelo; luego añade el paquete del proveedor comunitario."
+    },
+    {
+     "id": "mem0",
+     "motivo": "Memoria persistente de usuario mediante el proveedor de Mem0 para el AI SDK (integración documentada por Mem0).",
+     "orden_instalacion": "Configura Mem0 (cloud o autoalojado) y envuelve el modelo con su proveedor."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): langgraphjs, mastra. Ojo: algunos ejemplos del README usan modelos vía AI Gateway que requieren cuenta de Vercel.",
+   "descripcion_fuentes": [
+    "https://github.com/vercel/ai/blob/main/README.md",
+    "https://ai-sdk.dev/docs/ai-sdk-ui/overview",
+    "https://www.assistant-ui.com/docs/runtimes/ai-sdk",
+    "https://ai-sdk.dev/elements",
+    "https://docs.langfuse.com/integrations/frameworks/vercel-ai-sdk",
+    "https://ai-sdk.dev/providers/community-providers/ollama",
+    "https://docs.mem0.ai/integrations/vercel-ai-sdk"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "vercel/ai",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "@ai-sdk/vue@3.0.332 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "agent-framework": {
    "name": "Microsoft Agent Framework",
@@ -14211,7 +14269,12 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La skill de construcción usa el agente; el runtime tiene autenticación y costes propios; módulos Lab son experimentales",
-   "combines_with": [],
+   "combines_with": [
+    "langfuse",
+    "copilotkit",
+    "ag2",
+    "ollama"
+   ],
    "alternatives": [],
    "repo": "https://github.com/microsoft/agent-framework",
    "homepage": "https://aka.ms/agent-framework",
@@ -14305,7 +14368,55 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework open source (MIT) de Microsoft para construir, orquestar y desplegar agentes y workflows multiagente. Lo presentan como sucesor de AutoGen y Semantic Kernel, con guías oficiales de migración desde ambos. Es muy activo: el SDK de Python va por la 1.26.0, y hay implementaciones en .NET y un SDK de Go en otro repositorio.",
+   "que_hace": "Ofrece agentes con varios proveedores de LLM, un sistema de middleware para el procesamiento de peticiones y respuestas, y workflows basados en grafos (secuenciales, concurrentes, con checkpoints y human-in-the-loop). También incluye agentes declarativos en YAML y 'Agent Skills' construidas a partir de varias fuentes. Trae una DevUI para probar y depurar y paquetes experimentales en 'AF Labs' (benchmarks, aprendizaje por refuerzo). Además permite desplegar agentes alojados en Microsoft Foundry.",
+   "como_lo_hace": "Paquetes `agent-framework` en PyPI (Python) y `Microsoft.Agents.AI` en NuGet (.NET), con una API coherente entre los dos lenguajes. Trae instrumentación OpenTelemetry integrada para trazas distribuidas. Funciona con Azure OpenAI, OpenAI y otros proveedores; parte de las funciones (Foundry Hosted Agents) dependen de servicios de Azure. La documentación está en Microsoft Learn.",
+   "combina_con": [
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de agentes y workflows a través de OpenTelemetry (integración oficial de Langfuse para Microsoft Agent Framework).",
+     "orden_instalacion": "Langfuse primero; configura el exportador OTLP antes de crear los agentes."
+    },
+    {
+     "id": "copilotkit",
+     "motivo": "Interfaz React/Next.js para agentes de Agent Framework (integración documentada por CopilotKit).",
+     "orden_instalacion": "Expón el agente desde el backend de Agent Framework y conecta CopilotKit en el frontend."
+    },
+    {
+     "id": "ag2",
+     "motivo": "Útil si migras desde AutoGen 0.2/AG2: hay una guía oficial de migración desde AutoGen. (combinación por arquitectura: no se integran entre sí, se usan como origen y destino de una migración).",
+     "orden_instalacion": "Mantén AG2 solo mientras portas los agentes a Agent Framework con la guía de Microsoft."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para desarrollo mediante un endpoint compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Arranca Ollama y apunta el cliente compatible con OpenAI a su URL local."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas en el catálogo; frameworks comparables: langgraph, crewai, openai-agents-python. Hallazgo: AutoGen (microsoft/autogen) no está en el catálogo; Agent Framework es su sucesor oficial.",
+   "descripcion_fuentes": [
+    "https://github.com/microsoft/agent-framework/blob/main/README.md",
+    "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen",
+    "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel",
+    "https://docs.langfuse.com/integrations/frameworks/microsoft-agent-framework",
+    "https://docs.copilotkit.ai/microsoft-agent-framework"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "microsoft/agent-framework",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "python-1.26.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "langgraphjs": {
    "name": "LangGraph.js",
@@ -14325,7 +14436,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ollama está documentado mediante @langchain/ollama; revisa que el modelo soporte las herramientas necesarias",
    "combines_with": [
-    "langfuse"
+    "langchain",
+    "langfuse",
+    "copilotkit",
+    "langgraph"
    ],
    "alternatives": [
     "mastra",
@@ -14424,7 +14538,54 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Port oficial en TypeScript de LangGraph, de LangChain Inc. (MIT), para construir agentes con estado como grafos. Es activo y maduro, y se publica como varios paquetes npm (`@langchain/langgraph`, CLI, SDK).",
+   "que_hace": "Modela agentes y workflows como grafos con estado, con ejecución duradera, human-in-the-loop (inspeccionar y modificar el estado) y memoria a corto y largo plazo. No impone prompts ni arquitectura. Puede funcionar sin LangChain, aunque se integra con sus componentes.",
+   "como_lo_hace": "Bibliotecas npm para Node.js y otros runtimes de JavaScript. Para depuración, evaluación y despliegue, el README remite a LangSmith y LangSmith Deployment, servicios comerciales de la misma empresa. Requiere las claves del proveedor de modelos que uses.",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "Modelos, herramientas e integraciones de LangChain.js que se usan dentro de los nodos.",
+     "orden_instalacion": "Instala @langchain/langgraph y añade solo los paquetes @langchain/* que necesites."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de código abierto mediante el callback handler de Langfuse para LangChain/LangGraph (también en JS).",
+     "orden_instalacion": "Langfuse primero; pasa el handler en la configuración de cada invocación."
+    },
+    {
+     "id": "copilotkit",
+     "motivo": "Frontend React para agentes LangGraph, incluidos los de TypeScript (integración documentada por CopilotKit).",
+     "orden_instalacion": "Despliega el grafo y conecta CopilotKit al endpoint del agente."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Versión Python de referencia; útil cuando un equipo mezcla servicios Python y TS con el mismo modelo mental. (combinación por arquitectura)",
+     "orden_instalacion": "Elige un lenguaje por servicio; comparten conceptos, no código."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): mastra, vercel-ai.",
+   "descripcion_fuentes": [
+    "https://github.com/langchain-ai/langgraphjs/blob/main/README.md",
+    "https://langfuse.com/integrations/frameworks/langchain",
+    "https://docs.copilotkit.ai/langgraph",
+    "https://docs.langchain.com/oss/javascript/langgraph/"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langchain-ai/langgraphjs",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "@langchain/langgraph-cli@1.7.2 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "sim": {
    "name": "Sim",
@@ -14445,7 +14606,9 @@
    "limits": "MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo",
    "combines_with": [
     "ollama",
-    "langfuse"
+    "vllm",
+    "claude-code",
+    "codex"
    ],
    "alternatives": [
     "langflow",
@@ -14545,7 +14708,53 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Plataforma open source (Apache-2.0) de Sim Studio para construir, desplegar y monitorizar agentes y workflows de IA con un lienzo visual. Hay versión cloud (sim.ai) y autoalojada. Es muy activa (v0.9.58) y popular (~30k estrellas), aunque sigue en versiones 0.x.",
+   "que_hace": "Permite diseñar workflows y agentes conectando bloques en un lienzo, con integraciones (Slack y otras), bases de conocimiento, sandbox de ejecución, trabajos programados y chat. Incluye un servidor MCP que permite a Claude, Claude Code, Codex u otros clientes MCP gestionar espacios de trabajo y ejecutar y desplegar workflows. También admite modelos locales vía Ollama y vLLM.",
+   "como_lo_hace": "Hecho con Next.js y Bun sobre PostgreSQL (Drizzle ORM) y Better Auth. El autoalojamiento requiere Node.js 20+ y Docker. `npx sim-setup` es un asistente que crea el despliegue, provisiona la base de datos, genera secretos y escribe `.env`; luego se añaden capacidades con `npx sim-setup add <capacidad>`. Hay modos de desarrollo local y Kubernetes (Helm) desde el código fuente.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales; el README documenta el soporte de Ollama.",
+     "orden_instalacion": "Instala Ollama y descarga los modelos antes de configurar el proveedor en Sim (ver la documentación de autoalojamiento)."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Servir modelos locales de alto rendimiento; el README documenta el soporte de vLLM.",
+     "orden_instalacion": "Despliega vLLM con su API compatible y configúralo como proveedor en Sim."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Gestionar y ejecutar workflows de Sim desde Claude Code vía su servidor MCP (`claude mcp add --transport http sim https://mcp.sim.ai/mcp`).",
+     "orden_instalacion": "Ten Sim (cloud o autoalojado) operativo; añade después el servidor MCP en Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "Mismo uso desde Codex CLI (`codex mcp add sim --url https://mcp.sim.ai/mcp`).",
+     "orden_instalacion": "Sim primero; luego registra el MCP en Codex."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): langflow, dify, autogpt. Combinación anterior con langfuse eliminada: no se encontró integración documentada en el README ni en la documentación revisada.",
+   "descripcion_fuentes": [
+    "https://github.com/simstudioai/sim/blob/main/README.md",
+    "https://docs.sim.ai/mcp/overview",
+    "https://docs.sim.ai/self-hosting/docker"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "simstudioai/sim",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.9.58 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "autogpt": {
    "name": "AutoGPT",
@@ -14565,7 +14774,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo",
    "combines_with": [
-    "n8n"
+    "ollama",
+    "claude-code",
+    "codex"
    ],
    "alternatives": [
     "sim",
@@ -14663,7 +14874,48 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Plataforma de Significant-Gravitas para crear, desplegar y gestionar agentes de IA ('Experts') que automatizan flujos de trabajo. La licencia es mixta: `autogpt_platform/` usa Polyform Shield, que no es OSI y prohíbe competir con el producto, y `classic/` y el resto del repo son MIT. La plataforma está en beta (autogpt-platform-beta-v0.11.3), con ~188k estrellas heredadas del AutoGPT original.",
+   "que_hace": "Ofrece 'Experts', agentes con rol configurable mediante instrucciones, contexto, skills y apps conectadas, que pueden partir de plantillas. Tiene un constructor visual de bloques con lógica de ramificación, integraciones con herramientas de terceros, y una API y servidor MCP para lanzar workflows desde código o desde un agente de programación. El AutoGPT original sigue en `classic/` (con Forge y agbenchmark), separado de la plataforma.",
+   "como_lo_hace": "La plataforma se puede usar en la nube (agpt.co) o autoalojada (frontend y backend en Python con Docker, según su documentación). La documentación de la plataforma incluye una guía para usar modelos locales con Ollama. Antes de desplegarla en una empresa hay que revisar la licencia Polyform Shield.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales en la plataforma autoalojada (guía oficial en agpt.co/docs).",
+     "orden_instalacion": "Instala Ollama y descarga el modelo; después configúralo en la plataforma."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Ejecutar y construir workflows desde un agente de programación a través de la API/MCP de la plataforma (documentado en el README).",
+     "orden_instalacion": "Plataforma operativa con su clave de API; luego registra el servidor MCP en Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "Mismo uso vía MCP desde Codex CLI. (combinación por arquitectura: el README habla de 'un agente de programación' sin nombrar Codex)",
+     "orden_instalacion": "Plataforma primero; luego registra el MCP en Codex."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): sim, langflow. Combinación anterior con n8n eliminada: sin integración documentada. Licencia: Polyform Shield en la plataforma (no es open source OSI).",
+   "descripcion_fuentes": [
+    "https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md",
+    "https://agpt.co/docs/platform/api-and-integrations/api-guide",
+    "https://agpt.co/docs/platform/ollama"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Significant-Gravitas/AutoGPT",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "autogpt-platform-beta-v0.11.3 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "dify": {
    "name": "dify",
@@ -14683,7 +14935,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Genera y guarda el token de sandbox antes de arrancar; un modelo Ollama local necesita una dirección accesible desde Docker",
    "combines_with": [
-    "langflow"
+    "langfuse",
+    "ollama",
+    "claude-code",
+    "n8n"
    ],
    "alternatives": [
     "sim",
@@ -14781,7 +15036,55 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Plataforma de LangGenius para desarrollar aplicaciones con LLM, con versión cloud y autoalojada. La licencia es la 'Dify Open Source License', basada en Apache 2.0 con condiciones adicionales (GitHub la marca NOASSERTION), así que hay que revisarla antes de ofrecer Dify como servicio multi-inquilino o quitar su marca. Es muy madura y activa (1.19.0, ~161k estrellas).",
+   "que_hace": "Combina en una interfaz visual workflows de IA, pipeline de RAG, agentes con sandbox propio que ejecutan comandos y gestionan archivos, gestión de modelos, Prompt IDE, LLMOps y Backend-as-a-Service (API para integrar las apps). Integra observabilidad con Opik, Langfuse y Arize Phoenix. Puede publicar sus aplicaciones como servidores MCP para Claude Desktop, Cursor y otras herramientas.",
+   "como_lo_hace": "Se despliega con Docker Compose (v2.35.0+) desde `docker/` tras copiar `.env.example` y generar secretos con OpenSSL. Requisitos mínimos: 2 núcleos y 4 GiB de RAM. Incluye base de datos, Redis y un almacén vectorial configurable (la documentación de autoalojamiento incluye guías para Weaviate). Admite proveedores comerciales y locales (Ollama entre ellos) como plugins de modelo.",
+   "combina_con": [
+    {
+     "id": "langfuse",
+     "motivo": "Trazas y evaluación de las apps de Dify (integración oficial documentada por Dify).",
+     "orden_instalacion": "Despliega Langfuse y configura sus claves en la sección de monitorización de la app."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para despliegues autoalojados, citados en la documentación del nodo LLM.",
+     "orden_instalacion": "Instala Ollama y descarga los modelos; añade después el proveedor en Dify."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Consumir apps de Dify publicadas como servidor MCP desde un agente de programación (la documentación de Dify cita Claude Desktop y Cursor). (combinación por arquitectura para Claude Code)",
+     "orden_instalacion": "Publica la app como MCP en Dify y registra la URL en el cliente."
+    },
+    {
+     "id": "n8n",
+     "motivo": "Orquestar procesos de negocio que llaman a las apps de Dify por su API de Backend-as-a-Service. (combinación por arquitectura)",
+     "orden_instalacion": "Dify primero; luego llámalo desde nodos HTTP de n8n."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): sim, ragflow. Combinación anterior con langflow eliminada: son plataformas solapadas sin integración documentada. Licencia con condiciones adicionales sobre Apache 2.0.",
+   "descripcion_fuentes": [
+    "https://github.com/langgenius/dify/blob/main/README.md",
+    "https://docs.dify.ai/en/self-host/use-dify/monitor/integrations/integrate-langfuse.md",
+    "https://docs.dify.ai/en/self-host/use-dify/nodes/llm.md",
+    "https://docs.dify.ai/en/self-host/use-dify/publish/publish-mcp.md",
+    "https://www.comet.com/docs/opik/integrations/dify"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langgenius/dify",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "1.19.0 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
   },
   "langflow": {
    "name": "langflow",
@@ -14801,8 +15104,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Configura la contraseña antes de iniciar; las herramientas de autoría MCP pueden crear componentes que ejecutan código en el servidor",
    "combines_with": [
-    "langchain",
-    "dify"
+    "langfuse",
+    "ollama",
+    "claude-code",
+    "langchain"
    ],
    "alternatives": [
     "sim",
@@ -14905,7 +15210,54 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Plataforma open source (MIT) de langflow-ai para construir y desplegar agentes y workflows de IA con un editor visual. Es muy madura y activa (v1.13.2, ~157k estrellas).",
+   "que_hace": "Ofrece un constructor visual, acceso al código Python de cada componente para personalizarlo, un playground interactivo para probar flujos paso a paso y orquestación multiagente con gestión de conversación y retrieval. Cada flujo se puede desplegar como API, exportar como JSON para apps Python o publicar como servidor MCP para que lo usen clientes MCP. Integra observabilidad con LangSmith, Langfuse y otros.",
+   "como_lo_hace": "Paquete Python (Python 3.10–3.14) que se instala con `uv pip install langflow -U` y se ejecuta con `uv run langflow run`. También hay imagen Docker y Langflow Desktop, que incluye todas las dependencias. Los modelos se conectan por componentes, Ollama entre ellos.",
+   "combina_con": [
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de los flujos (integración oficial documentada por Langflow).",
+     "orden_instalacion": "Despliega Langfuse y define sus variables de entorno antes de arrancar Langflow."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante el bundle de componentes de Ollama documentado por Langflow.",
+     "orden_instalacion": "Instala Ollama y descarga los modelos; después usa el componente en el flujo."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Usar flujos de Langflow como herramientas desde un cliente MCP (la documentación de su servidor MCP cubre Cursor y otros). (combinación por arquitectura para Claude Code)",
+     "orden_instalacion": "Publica el proyecto como servidor MCP y registra la URL en el cliente."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Muchos componentes de Langflow envuelven integraciones de LangChain. (combinación por arquitectura: el README actual no lo menciona)",
+     "orden_instalacion": "No requiere instalación aparte; añade paquetes de integración solo si un componente los pide."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): sim, autogpt. Combinación anterior con dify eliminada: plataformas solapadas sin integración documentada.",
+   "descripcion_fuentes": [
+    "https://github.com/langflow-ai/langflow/blob/main/README.md",
+    "https://docs.langflow.org/integrations-langfuse",
+    "https://docs.langflow.org/bundles-ollama",
+    "https://docs.langflow.org/mcp-server"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langflow-ai/langflow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.13.2 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "openclaw": {
    "name": "OpenClaw",
@@ -16804,7 +17156,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales",
    "combines_with": [
-    "openevolve"
+    "graphiti",
+    "litellm",
+    "ollama"
    ],
    "alternatives": [],
    "repo": "https://github.com/666ghj/MiroFish",
@@ -16899,7 +17253,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Motor de 'inteligencia colectiva' (AGPL-3.0) de 666ghj para predecir escenarios simulando sociedades de agentes. Su motor de simulación es OASIS, de CAMEL-AI. Es experimental (v0.1.2 de marzo de 2026; último push en octubre de 2026), pese a sus ~86k estrellas.",
+   "que_hace": "Parte de material semilla (noticias, borradores de políticas, señales financieras o incluso novelas) y de una petición en lenguaje natural. Construye un grafo de conocimiento (GraphRAG) con memoria individual y colectiva, genera miles de agentes con personalidad y simula su interacción. Devuelve un informe de predicción y un 'mundo digital' con el que se puede interactuar. La validez predictiva de estas simulaciones no está demostrada [DATO NO VERIFICADO: no se encontró evaluación independiente].",
+   "como_lo_hace": "El backend está en Python (3.11–3.12, con uv) y el frontend en Node.js 18+. También hay despliegue con Docker. Necesita una API de LLM compatible con el SDK de OpenAI (recomiendan qwen-plus de Alibaba Bailian) y una clave de Zep Cloud para la memoria en grafo. Las simulaciones grandes consumen muchas llamadas al LLM, así que conviene vigilar el coste.",
+   "combina_con": [
+    {
+     "id": "graphiti",
+     "motivo": "Motor open source de grafos temporales de Zep; podría sustituir o complementar Zep Cloud para no depender del servicio. (combinación por arquitectura: MiroFish solo documenta Zep Cloud)",
+     "orden_instalacion": "Requiere adaptar el código; evalúalo solo si necesitas autoalojar la memoria."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Proxy compatible con OpenAI para usar cualquier proveedor o modelo local mediante `LLM_BASE_URL`. (combinación por arquitectura)",
+     "orden_instalacion": "Arranca el proxy de LiteLLM y apunta las variables LLM_* de MiroFish a él."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para reducir el coste de simulaciones masivas vía endpoint compatible con OpenAI. (combinación por arquitectura; la calidad con modelos pequeños no está verificada)",
+     "orden_instalacion": "Instala Ollama y apunta LLM_BASE_URL a su API /v1."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Combinación anterior con openevolve eliminada: sin relación técnica documentada. Licencia AGPL-3.0: ofrecerlo como servicio en red obliga a publicar las modificaciones.",
+   "descripcion_fuentes": [
+    "https://github.com/666ghj/MiroFish/blob/main/README.md",
+    "https://github.com/camel-ai/oasis"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "666ghj/MiroFish",
+    "archived": false,
+    "pushed_at": "2026-10-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "latest_release": "v0.1.2 (2026-03-07)",
+    "checked_at": "2026-11-15"
+   }
   },
   "llm-council": {
    "name": "llm-council",
@@ -16919,7 +17313,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes",
    "combines_with": [
-    "litellm"
+    "litellm",
+    "ollama",
+    "promptfoo"
    ],
    "alternatives": [],
    "repo": "https://github.com/karpathy/llm-council",
@@ -17014,7 +17410,44 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Experimento personal de Andrej Karpathy, 'vibe coded' en un sábado según el propio README. El autor avisa de que no lo mantendrá ni lo soportará. No tiene archivo de licencia, así que legalmente no hay permiso de reutilización explícito, y su último push es de noviembre de 2025.",
+   "que_hace": "Envía una pregunta a varios LLM a la vez (el 'consejo') en 3 etapas. Primero recoge respuestas individuales, que se ven en pestañas. Después cada modelo revisa y ordena las respuestas anonimizadas de los demás. Por último un modelo 'presidente' redacta la respuesta final.",
+   "como_lo_hace": "El backend es FastAPI (Python 3.10+, httpx asíncrono) y el frontend React con Vite, gestionados con uv y npm. Todas las llamadas pasan por OpenRouter (`OPENROUTER_API_KEY`) y los modelos se configuran en el backend. Cada consulta dispara varias llamadas de pago.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Sustituir OpenRouter por un proxy propio con control de costes y proveedores. (combinación por arquitectura: requiere cambiar el cliente del backend)",
+     "orden_instalacion": "Despliega el proxy LiteLLM y modifica la URL base del cliente."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Incluir modelos locales en el consejo, vía LiteLLM o un endpoint compatible. (combinación por arquitectura)",
+     "orden_instalacion": "Ollama y LiteLLM primero; añade los modelos a la configuración."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "Si el objetivo es comparar modelos de forma sistemática y repetible, promptfoo ofrece evaluaciones reproducibles. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo en paralelo para validar con datasets lo que el consejo sugiere de forma anecdótica."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Sin licencia: no reutilices el código en proyectos distribuidos sin permiso. Combinación anterior con openevolve (desde openevolve) eliminada en esa ficha.",
+   "descripcion_fuentes": [
+    "https://github.com/karpathy/llm-council/blob/master/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "karpathy/llm-council",
+    "archived": false,
+    "pushed_at": "2025-11-22",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "openevolve": {
    "name": "openevolve",
@@ -17034,7 +17467,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una implementación independiente de AlphaEvolve; una puntuación mejor solo vale para el evaluador definido",
    "combines_with": [
-    "llm-council"
+    "ollama",
+    "vllm",
+    "litellm"
    ],
    "alternatives": [],
    "repo": "https://github.com/algorithmicsuperintelligence/openevolve",
@@ -17129,7 +17564,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Implementación open source (Apache-2.0) de AlphaEvolve de Google DeepMind, mantenida por algorithmicsuperintelligence. Es activa (v0.4.1) y el README lista artículos científicos que la han usado para obtener nuevos resultados.",
+   "que_hace": "Usa LLMs para mutar programas y los hace evolucionar con MAP-Elites y poblaciones en islas. Optimiza cualquier problema que se pueda puntuar con un evaluador (algoritmos, rendimiento de sistemas, matemáticas). Parte de un programa inicial y una función de evaluación, e itera para descubrir variantes mejores.",
+   "como_lo_hace": "Python 3.10+, instalable desde el código fuente (`pip install -e .`) o como biblioteca (`pip install openevolve`). Se ejecuta con `openevolve-run.py` pasando el programa inicial, el evaluador y un `config.yaml`. Usa cualquier API compatible con OpenAI, configurando `api_base` y el modelo: Gemini, Ollama, vLLM u OptiLLM, según su guía de proveedores. Las ejecuciones largas pueden suponer muchas llamadas al LLM.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para iteraciones baratas (documentado en docs/llm-providers.md).",
+     "orden_instalacion": "Arranca Ollama y pon su URL /v1 como `api_base` en config.yaml."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Servir modelos propios con alto rendimiento para ejecuciones largas (documentado en la guía de proveedores).",
+     "orden_instalacion": "Despliega vLLM y configúralo como `api_base`."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Enrutar a varios proveedores y controlar el gasto. (combinación por arquitectura: cualquier endpoint compatible con OpenAI funciona)",
+     "orden_instalacion": "Proxy LiteLLM primero; apunta `api_base` a él."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Combinación anterior con llm-council eliminada: sin relación técnica.",
+   "descripcion_fuentes": [
+    "https://github.com/algorithmicsuperintelligence/openevolve/blob/main/README.md",
+    "https://github.com/algorithmicsuperintelligence/openevolve/blob/main/docs/llm-providers.md"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "algorithmicsuperintelligence/openevolve",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.4.1 (2026-11-02)",
+    "checked_at": "2026-11-15"
+   }
   },
   "firecrawl": {
    "name": "firecrawl",
@@ -52867,7 +53342,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como datos",
    "combines_with": [
-    "hermes-agent"
+    "hermes-agent",
+    "dspy",
+    "claude-code"
    ],
    "alternatives": [],
    "repo": "https://github.com/NousResearch/hermes-agent-self-evolution",
@@ -52969,7 +53446,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Herramienta de Nous Research para mejorar automáticamente Hermes Agent mediante evolución de prompts con DSPy y GEPA. El repositorio no tiene archivo LICENSE: la mención 'MIT licensed' del README parece referirse a GEPA [DATO NO VERIFICADO]. Es temprana: solo está implementada la fase 1 y el último push es de junio de 2026.",
+   "que_hace": "Lee una skill (SKILL.md) de Hermes Agent, genera un dataset de evaluación (sintético o a partir de historial real de sesiones de Claude Code, Copilot y Hermes) y usa GEPA para proponer y seleccionar variantes mejores a partir de trazas de ejecución. El resultado se propone como PR contra hermes-agent. La optimización de descripciones de herramientas, prompts de sistema y código está planificada pero sin implementar.",
+   "como_lo_hace": "Paquete Python que se instala desde el código fuente (`pip install -e \".[dev]\"`) y se apunta al repositorio local de hermes-agent con `HERMES_AGENT_REPO`. No necesita GPU, todo va por llamadas a API; el README estima de 2 a 10 dólares por ejecución. Hay que revisar qué historial de sesiones se envía al LLM, porque puede contener datos sensibles.",
+   "combina_con": [
+    {
+     "id": "hermes-agent",
+     "motivo": "Objetivo de la optimización; sin él la herramienta no tiene uso.",
+     "orden_instalacion": "Instala Hermes Agent primero y exporta HERMES_AGENT_REPO."
+    },
+    {
+     "id": "dspy",
+     "motivo": "Motor de optimización (DSPy + GEPA) sobre el que está construida.",
+     "orden_instalacion": "Se instala como dependencia; consulta la documentación de GEPA en DSPy para entender los parámetros."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Su historial de sesiones puede servir como fuente de evaluación real (`--eval-source sessiondb`).",
+     "orden_instalacion": "Úsalo solo si aceptas que esas sesiones se procesen con un LLM externo."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Sin archivo de licencia en el repositorio.",
+   "descripcion_fuentes": [
+    "https://github.com/NousResearch/hermes-agent-self-evolution/blob/main/README.md",
+    "https://github.com/NousResearch/hermes-agent",
+    "https://dspy.ai/api/optimizers/GEPA/overview/"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "NousResearch/hermes-agent-self-evolution",
+    "archived": false,
+    "pushed_at": "2026-06-17",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
   },
   "globalbuildingatlas": {
    "name": "GlobalBuildingAtlas",
@@ -53267,7 +53783,12 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir IA a Spring Boot; Recuperar documentos desde una aplicación JVM",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una biblioteca Java independiente; no es un port con las mismas versiones o API que LangChain Python",
-   "combines_with": [],
+   "combines_with": [
+    "ollama",
+    "qdrant",
+    "pgvector",
+    "milvus"
+   ],
    "alternatives": [],
    "repo": "https://github.com/langchain4j/langchain4j",
    "homepage": "https://docs.langchain4j.dev",
@@ -53366,7 +53887,56 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Biblioteca open source (Apache-2.0) para integrar LLMs en aplicaciones Java y de la JVM. Pese al nombre, es un proyecto independiente de LangChain Inc. Es madura y activa (1.23.0) y se publica en Maven Central.",
+   "que_hace": "Ofrece APIs unificadas para más de 20 proveedores de LLM y más de 30 almacenes de embeddings, así que se puede cambiar de uno a otro sin reescribir código. Incluye un toolbox que va de plantillas de prompt, memoria de chat y function calling a patrones de alto nivel como agentes y RAG. Aporta 'AI Services' declarativos con interfaces y anotaciones, y soporte de MCP.",
+   "como_lo_hace": "Dependencias Maven o Gradle (`dev.langchain4j:*`), un módulo por proveedor o almacén. Tiene integraciones de primera clase con Quarkus (quarkus-langchain4j), Spring Boot y Helidon. Requiere un JDK moderno; la versión mínima concreta está en la documentación [DATO NO VERIFICADO: no figura en el README].",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante el módulo oficial de Ollama.",
+     "orden_instalacion": "Instala Ollama y descarga el modelo; añade `langchain4j-ollama`."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Almacén vectorial para RAG mediante el módulo oficial.",
+     "orden_instalacion": "Despliega Qdrant y añade `langchain4j-qdrant`."
+    },
+    {
+     "id": "pgvector",
+     "motivo": "Embeddings en PostgreSQL mediante el módulo oficial de pgvector.",
+     "orden_instalacion": "Habilita la extensión en Postgres y añade `langchain4j-pgvector`."
+    },
+    {
+     "id": "milvus",
+     "motivo": "Almacén vectorial alternativo para volúmenes grandes (módulo oficial).",
+     "orden_instalacion": "Elige uno de los almacenes vectoriales; despliega Milvus y añade su módulo."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas en el catálogo (spring-ai no figura). Qdrant, pgvector y milvus son alternativas entre sí: elige uno.",
+   "descripcion_fuentes": [
+    "https://github.com/langchain4j/langchain4j/blob/main/README.md",
+    "https://docs.langchain4j.dev/integrations/language-models/ollama",
+    "https://docs.langchain4j.dev/integrations/embedding-stores/qdrant",
+    "https://docs.langchain4j.dev/integrations/embedding-stores/pgvector",
+    "https://docs.langchain4j.dev/integrations/embedding-stores/milvus",
+    "https://docs.langchain4j.dev/tutorials/mcp"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langchain4j/langchain4j",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "latest_release": "1.23.0 (2026-10-28)",
+    "checked_at": "2026-11-15"
+   }
   },
   "pythia": {
    "name": "Pythia",
@@ -55891,7 +56461,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Los artefactos generados no acreditan una aplicación lista ni sustituyen pruebas y revisión",
-   "combines_with": [],
+   "combines_with": [
+    "ollama",
+    "e2b",
+    "claude-code"
+   ],
    "alternatives": [
     "crewai"
    ],
@@ -55993,7 +56567,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework multiagente open source (MIT) de FoundationAgents (antes geekan/MetaGPT) que asigna roles a LLMs para que colaboren como un equipo. Tiene mucha repercusión (~71k estrellas), pero poca actividad: la última release es la v0.8.1 de abril de 2024 y el último push, de enero de 2026. Sus autores se han centrado en el producto comercial MGX/Atoms y en investigación (AFlow, SPO, AOT).",
+   "que_hace": "Recibe un requisito de una línea y simula una empresa de software con roles de product manager, arquitecto, project manager e ingeniero. Produce historias de usuario, análisis competitivo, requisitos, estructuras de datos, APIs, documentos y código. Sigue procedimientos operativos estándar (SOPs) codificados como prompts. El repositorio también incluye código de los artículos de investigación del equipo.",
+   "como_lo_hace": "Python 3.9 a 3.11 (no admite 3.12+), instalable con `pip install --upgrade metagpt`. Requiere Node.js y pnpm para algunas funciones. Se configura con `~/.metagpt/config2.yaml`, donde se define el proveedor de LLM: OpenAI, Azure, Ollama y otros según la documentación. Por la versión antigua de Python y la falta de releases, conviene aislarlo en un entorno propio.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante la configuración de LLM documentada por MetaGPT.",
+     "orden_instalacion": "Instala Ollama y define api_type ollama en config2.yaml."
+    },
+    {
+     "id": "e2b",
+     "motivo": "Ejecutar el código generado en un sandbox aislado en lugar del equipo local. (combinación por arquitectura)",
+     "orden_instalacion": "Genera el proyecto con MetaGPT y pruébalo dentro de un sandbox de E2B."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Revisar y completar el código que genera MetaGPT, que suele necesitar correcciones. (combinación por arquitectura)",
+     "orden_instalacion": "MetaGPT genera el esqueleto; después itera sobre él con un agente de programación."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): crewai. Mantenimiento bajo: sin releases desde 2024.",
+   "descripcion_fuentes": [
+    "https://github.com/FoundationAgents/MetaGPT/blob/main/README.md",
+    "https://docs.deepwisdom.ai/main/en/guide/get_started/configuration/llm_api_configuration.html"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "FoundationAgents/MetaGPT",
+    "archived": false,
+    "pushed_at": "2026-01-21",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.8.1 (2024-04-22)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-agents": {
    "name": "awesome-agents",
@@ -61310,7 +61924,12 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa",
-   "combines_with": [],
+   "combines_with": [
+    "claude-code",
+    "fastmcp",
+    "langfuse",
+    "e2b"
+   ],
    "alternatives": [],
    "repo": "https://github.com/anthropics/claude-agent-sdk-python",
    "homepage": null,
@@ -61413,7 +62032,53 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "SDK oficial de Anthropic (MIT) para usar desde Python el bucle de agente de Claude Code. Es muy activo (v0.2.182), con publicaciones casi a diario, pero sigue en 0.x y su API puede cambiar.",
+   "que_hace": "Ofrece `query()`, una función asíncrona para consultas puntuales, y `ClaudeSDKClient` para conversaciones interactivas con sesiones. Da acceso a todas las herramientas de Claude Code (Read, Write, Edit, Bash…), controladas con `allowed_tools` y modos de permiso. Permite definir herramientas propias como servidores MCP en proceso (`create_sdk_mcp_server`), conectar servidores MCP externos y usar hooks para interceptar el comportamiento del agente.",
+   "como_lo_hace": "Se instala con `pip install claude-agent-sdk` y requiere Python 3.10+. El paquete incluye la CLI de Claude Code; también se puede usar una instalación propia con `cli_path`. Algunas funciones piden una versión mínima de la CLI (2.1.257+). Requiere credenciales de Anthropic y está atado a los modelos Claude.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Motor subyacente; la CLI viene incluida, pero conviene alinear versiones si usas una instalación propia.",
+     "orden_instalacion": "Normalmente basta con el SDK; si usas tu propia CLI, instálala primero y pásala con cli_path."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "Construir servidores MCP externos que el agente consuma además de las herramientas en proceso.",
+     "orden_instalacion": "Crea el servidor con FastMCP y regístralo en las opciones `mcp_servers` del SDK."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de las ejecuciones del agente (integración oficial de Langfuse para Claude Agent SDK).",
+     "orden_instalacion": "Langfuse primero; configura la instrumentación antes de lanzar consultas."
+    },
+    {
+     "id": "e2b",
+     "motivo": "Ejecutar el agente, que tiene acceso a Bash y archivos, dentro de un sandbox aislado. (combinación por arquitectura)",
+     "orden_instalacion": "Crea el sandbox e instala el SDK dentro de él."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas; comparable a openai-agents-python (otro proveedor).",
+   "descripcion_fuentes": [
+    "https://github.com/anthropics/claude-agent-sdk-python/blob/main/README.md",
+    "https://platform.claude.com/docs/en/agent-sdk/python",
+    "https://langfuse.com/integrations/frameworks/claude-agent-sdk"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "anthropics/claude-agent-sdk-python",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.2.182 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "anytype-ts": {
    "name": "Anytype Desktop",
@@ -74313,7 +74978,11 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción",
-   "combines_with": [],
+   "combines_with": [
+    "vercel-ai",
+    "promptfoo",
+    "ui"
+   ],
    "alternatives": [],
    "repo": "https://github.com/Nutlope/jev-fraud",
    "homepage": "",
@@ -74414,7 +75083,46 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Demo open source (MIT) de @Nutlope que muestra una cascada de modelos para detectar fraude en emails. Es un proyecto de ejemplo, no una herramienta mantenida: tiene ~17 estrellas y su último push es de septiembre de 2026.",
+   "que_hace": "Clasifica 100 emails reales del dataset DIFrauD (50 fraudulentos y 50 legítimos) con el modelo Jev, que devuelve una puntuación de confianza. Las predicciones con confianza de al menos 95 % se aceptan y el resto pasa a Kimi K3 para una segunda revisión independiente. La interfaz muestra decisiones en vivo, precisión y coste de inferencia, permite ajustar el umbral y exportar resultados.",
+   "como_lo_hace": "App con Next.js App Router, React, Tailwind CSS y Radix UI que requiere Node.js 22.13+ y npm. Usa Jev a través de Vercel AI Gateway y Kimi K3 en Together AI, con las claves en `.env.local`. `npm run benchmark` hace llamadas de pago y graba una ejecución nueva. Según su package.json no usa el AI SDK, sino llamadas HTTP directas.",
+   "combina_con": [
+    {
+     "id": "vercel-ai",
+     "motivo": "Reescribir las llamadas con el AI SDK para cambiar de modelo o proveedor sin tocar la lógica de la cascada. (combinación por arquitectura)",
+     "orden_instalacion": "Instala `ai` y los proveedores y sustituye las llamadas fetch."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "Evaluar de forma reproducible el patrón de cascada (umbral, modelos) sobre más datos. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta el dataset y define la evaluación en promptfoo."
+    },
+    {
+     "id": "ui",
+     "motivo": "Las dependencias (radix-ui, cva, clsx, tailwind-merge) siguen el patrón de shadcn/ui, útil para extender la interfaz. (combinación por arquitectura)",
+     "orden_instalacion": "Inicializa shadcn/ui en el proyecto clonado antes de añadir componentes."
+    }
+   ],
+   "descripcion_notas": "Sin alternativas declaradas. Jev (typesafe.ai) y Kimi K3 son modelos comerciales; resultados no verificados de forma independiente.",
+   "descripcion_fuentes": [
+    "https://github.com/Nutlope/jev-fraud/blob/main/README.md",
+    "https://huggingface.co/datasets/difraud/difraud"
+   ],
+   "descripcion_revision": {
+    "batch": "13-frameworks-agentes-parte-2",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "Nutlope/jev-fraud",
+    "archived": false,
+    "pushed_at": "2026-09-20",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "jsoncanvas": {
    "name": "jsoncanvas",

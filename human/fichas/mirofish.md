@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Motor de 'inteligencia colectiva' (AGPL-3.0) de 666ghj para predecir escenarios simulando sociedades de agentes. Su motor de simulación es OASIS, de CAMEL-AI. Es experimental (v0.1.2 de marzo de 2026; último push en octubre de 2026), pese a sus ~86k estrellas.
+
+## ¿Qué hace?
+
+Parte de material semilla (noticias, borradores de políticas, señales financieras o incluso novelas) y de una petición en lenguaje natural. Construye un grafo de conocimiento (GraphRAG) con memoria individual y colectiva, genera miles de agentes con personalidad y simula su interacción. Devuelve un informe de predicción y un 'mundo digital' con el que se puede interactuar. La validez predictiva de estas simulaciones no está demostrada [DATO NO VERIFICADO: no se encontró evaluación independiente].
+
+## ¿Cómo lo hace?
+
+El backend está en Python (3.11–3.12, con uv) y el frontend en Node.js 18+. También hay despliegue con Docker. Necesita una API de LLM compatible con el SDK de OpenAI (recomiendan qwen-plus de Alibaba Bailian) y una clave de Zep Cloud para la memoria en grafo. Las simulaciones grandes consumen muchas llamadas al LLM, así que conviene vigilar el coste.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Graphiti](graphiti.md) | Motor open source de grafos temporales de Zep; podría sustituir o complementar Zep Cloud para no depender del servicio. (combinación por arquitectura: MiroFish solo documenta Zep Cloud) | Requiere adaptar el código; evalúalo solo si necesitas autoalojar la memoria. |
+| [litellm](litellm.md) | Proxy compatible con OpenAI para usar cualquier proveedor o modelo local mediante `LLM_BASE_URL`. (combinación por arquitectura) | Arranca el proxy de LiteLLM y apunta las variables LLM_* de MiroFish a él. |
+| [Ollama](ollama.md) | Modelos locales para reducir el coste de simulaciones masivas vía endpoint compatible con OpenAI. (combinación por arquitectura; la calidad con modelos pequeños no está verificada) | Instala Ollama y apunta LLM_BASE_URL a su API /v1. |
+
+**Notas:** Sin alternativas declaradas. Combinación anterior con openevolve eliminada: sin relación técnica documentada. Licencia AGPL-3.0: ofrecerlo como servicio en red obliga a publicar las modificaciones.
+
+Estado en GitHub: activo · último push 2026-10-16 · última versión publicada v0.1.2 (2026-03-07) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/666ghj/MiroFish/blob/main/README.md) · [2](https://github.com/camel-ai/oasis)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales |
 | Coste | Consumo de APIs o servicios. La ruta documentada usa API compatible OpenAI y Zep; muchas rondas multiplican consumo; los cupos gratuitos pueden cambiar |
 | Equipo | Preparación según la ruta elegida. Docker o Node 18+ y Python 3.11–3.12; clave LLM; Zep Cloud |
-
-Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales
-
-## Qué puedes hacer con él
-
-Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios.
-
-## Por qué destaca
-
-Usos propuestos: Explorar reacciones hipotéticas a un anuncio; Comparar escenarios narrativos antes de investigar datos reales.
-
-## Cómo funciona
 
 Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales
 
@@ -97,12 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o Node 18+ y Python 3.11–3.12; clave LLM; Zep Cloud
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [openevolve](openevolve.md) | 7.8k | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. |
 
 ## Enlaces
 

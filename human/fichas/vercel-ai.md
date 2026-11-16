@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Toolkit TypeScript de Vercel (AI SDK) para construir aplicaciones y agentes con IA. El LICENSE es Apache-2.0 aunque GitHub no reconozca la licencia (NOASSERTION). Es un monorepo maduro y muy activo, con publicaciones casi a diario de paquetes como `ai`, `@ai-sdk/react` o `@ai-sdk/vue`.
+
+## ¿Qué hace?
+
+Unifica la llamada a modelos de muchos proveedores (texto, objetos estructurados, herramientas, streaming) tras una sola API. Incluye la clase `ToolLoopAgent` para agentes que ejecutan herramientas en bucle. También trae AI SDK UI, hooks para React, Vue, Svelte y otros frameworks que gestionan el estado de chats con streaming. Por defecto enruta a través de Vercel AI Gateway, un servicio de pago de Vercel, aunque también se pueden instalar proveedores directos (`@ai-sdk/openai`, etc.).
+
+## ¿Cómo lo hace?
+
+Paquetes npm (`npm i ai` más el proveedor elegido) para Node.js, edge runtimes y frameworks como Next.js, Nuxt o SvelteKit. Las claves van por variables de entorno: la de AI Gateway o la del proveedor directo. Si se usa el gateway, conviene revisar costes y privacidad porque añade un intermediario. La documentación está en ai-sdk.dev.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [assistant-ui](assistant-ui.md) | Componentes de chat en React con runtime oficial para AI SDK (documentado por assistant-ui). | Instala ai y el proveedor primero; luego @assistant-ui/react con su runtime de AI SDK. |
+| [ui](ui.md) | shadcn/ui como base de componentes; AI Elements, el kit de componentes de chat de Vercel para AI SDK, se distribuye como registro de shadcn. | Inicializa shadcn/ui en el proyecto y añade después los componentes de AI Elements que necesites. |
+| [langfuse](langfuse.md) | Trazas y costes de las llamadas del AI SDK mediante su telemetría OpenTelemetry (integración oficial de Langfuse). | Langfuse (cloud o autoalojado) primero; activa `experimental_telemetry` y el exportador de Langfuse. |
+| [Ollama](ollama.md) | Modelos locales mediante el proveedor comunitario de Ollama, listado en la documentación del AI SDK. | Instala Ollama y descarga un modelo; luego añade el paquete del proveedor comunitario. |
+| [mem0](mem0.md) | Memoria persistente de usuario mediante el proveedor de Mem0 para el AI SDK (integración documentada por Mem0). | Configura Mem0 (cloud o autoalojado) y envuelve el modelo con su proveedor. |
+
+**Notas:** Alternativas (elige una): langgraphjs, mastra. Ojo: algunos ejemplos del README usan modelos vía AI Gateway que requieren cuenta de Vercel.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @ai-sdk/vue@3.0.332 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel/ai/blob/main/README.md) · [2](https://ai-sdk.dev/docs/ai-sdk-ui/overview) · [3](https://www.assistant-ui.com/docs/runtimes/ai-sdk) · [4](https://ai-sdk.dev/elements) · [5](https://docs.langfuse.com/integrations/frameworks/vercel-ai-sdk) · [6](https://ai-sdk.dev/providers/community-providers/ollama) · [7](https://docs.mem0.ai/integrations/vercel-ai-sdk)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelo local no documentado. El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación |
 | Coste | El coste depende del proveedor o la ruta. El SDK no incluye modelos ni créditos; proveedores, AI Gateway y alojamiento tienen costes separados |
 | Equipo | Preparación según la ruta elegida. Node.js; proyecto TypeScript; paquete del proveedor |
-
-El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación
-
-## Qué puedes hacer con él
-
-Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat.
-
-## Por qué destaca
-
-Usos propuestos: Construir una interfaz de chat; Extraer datos tipados de un mensaje.
-
-## Cómo funciona
 
 El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación
 
@@ -93,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; proyecto TypeScript; paquete del proveedor
 - **Etiquetas:** `agents` `ui` `typescript` `react`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
-| [assistant-ui](assistant-ui.md) | 13.2k | Librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Alternativas (elige una)
 

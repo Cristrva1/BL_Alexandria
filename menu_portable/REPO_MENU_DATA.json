@@ -17593,7 +17593,12 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "langfuse",
+        "copilotkit",
+        "ag2",
+        "ollama"
+      ],
       "alt": []
     },
     {
@@ -17844,7 +17849,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n"
+        "ollama",
+        "claude-code",
+        "codex"
       ],
       "alt": [
         "sim",
@@ -18078,7 +18085,12 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "fastmcp",
+        "langfuse",
+        "e2b"
+      ],
       "alt": []
     },
     {
@@ -18440,7 +18452,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langflow"
+        "langfuse",
+        "ollama",
+        "claude-code",
+        "n8n"
       ],
       "alt": [
         "sim",
@@ -18814,7 +18829,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Refinar una skill de revisión de código; Comparar instrucciones con fallos observados",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "hermes-agent"
+        "hermes-agent",
+        "dspy",
+        "claude-code"
       ],
       "alt": []
     },
@@ -18928,7 +18945,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vercel-ai",
+        "promptfoo",
+        "ui"
+      ],
       "alt": []
     },
     {
@@ -19168,7 +19189,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Añadir IA a Spring Boot; Recuperar documentos desde una aplicación JVM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "qdrant",
+        "pgvector",
+        "milvus"
+      ],
       "alt": []
     },
     {
@@ -19291,8 +19317,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain",
-        "dify"
+        "langfuse",
+        "ollama",
+        "claude-code",
+        "langchain"
       ],
       "alt": [
         "sim",
@@ -19541,7 +19569,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Controlar aprobación de una solicitud; Reanudar un agente en una app JavaScript",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langfuse"
+        "langchain",
+        "langfuse",
+        "copilotkit",
+        "langgraph"
       ],
       "alt": [
         "mastra",
@@ -19784,7 +19815,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "litellm"
+        "litellm",
+        "ollama",
+        "promptfoo"
       ],
       "alt": []
     },
@@ -20027,7 +20060,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "e2b",
+        "claude-code"
+      ],
       "alt": [
         "crewai"
       ]
@@ -20142,7 +20179,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar reacciones hipotéticas a un anuncio; Comparar escenarios narrativos antes de investigar datos reales",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "openevolve"
+        "graphiti",
+        "litellm",
+        "ollama"
       ],
       "alt": []
     },
@@ -20383,7 +20422,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Optimizar una función medible; Buscar mejores reglas de ordenación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "llm-council"
+        "ollama",
+        "vllm",
+        "litellm"
       ],
       "alt": []
     },
@@ -20634,7 +20675,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "langfuse"
+        "vllm",
+        "claude-code",
+        "codex"
       ],
       "alt": [
         "langflow",
@@ -20884,8 +20927,11 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir una interfaz de chat; Extraer datos tipados de un mensaje",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "assistant-ui",
         "ui",
-        "assistant-ui"
+        "langfuse",
+        "ollama",
+        "mem0"
       ],
       "alt": [
         "langgraphjs",

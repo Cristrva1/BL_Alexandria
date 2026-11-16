@@ -94,6 +94,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un agente y después un workflow con dos pasos y un punto de control
 **Qué comprobar:** Puedes seguir las transiciones y recuperar el estado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langfuse`, `copilotkit`, `ag2`, `ollama`
 
 ## `agno`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,memory,python
@@ -165,7 +166,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una automatización breve que transforma una entrada de texto y revisa cada bloque
 **Qué comprobar:** Ves la salida y el historial de una ejecución acotada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `ollama`, `claude-code`, `codex`
 **Alternativas (elige una):** `sim`, `langflow`
 
 ## `awesome-langgraph`
@@ -226,6 +227,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un agente con permiso de lectura y pídele localizar un fallo en un archivo ficticio
 **Qué comprobar:** Puedes ver herramientas llamadas y contrastar el fallo antes de permitir ediciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `fastmcp`, `langfuse`, `e2b`
 
 ## `crewai`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,python
@@ -317,7 +319,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings
 **Qué comprobar:** La respuesta recupera un fragmento comprobable del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langflow`
+**Combina con:** `langfuse`, `ollama`, `claude-code`, `n8n`
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`
@@ -413,7 +415,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Optimiza una skill pequeña con datos sintéticos y compara el candidato antes de aceptarlo
 **Qué comprobar:** Puedes revisar diferencias y puntuaciones manteniendo la versión inicial
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `hermes-agent`
+**Combina con:** `hermes-agent`, `dspy`, `claude-code`
 
 ## `jev-fraud`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=experimentos,template,typescript
@@ -448,6 +450,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre la aplicación y usa primero 10s replay sobre la grabación incluida
 **Qué comprobar:** Ves la demostración grabada sin lanzar una clasificación nueva
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vercel-ai`, `promptfoo`, `ui`
 
 ## `langchain`
 role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=agents,automation,python
@@ -508,6 +511,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Integra un chat que consulta un objeto de inventario de prueba en Java
 **Qué comprobar:** El resultado devuelve el dato del objeto y puede validarse con un test
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `qdrant`, `pgvector`, `milvus`
 
 ## `langflow`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,agents,python,docker
@@ -539,7 +543,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre Simple Agent y conecta un modelo y una herramienta de cálculo
 **Qué comprobar:** Puedes ejecutar una pregunta y revisar el recorrido por los componentes
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `dify`
+**Combina con:** `langfuse`, `ollama`, `claude-code`, `langchain`
 **Alternativas (elige una):** `sim`, `autogpt`
 
 ## `langgraph`
@@ -601,7 +605,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Monta un grafo que clasifica una solicitud y espera revisión antes de continuar
 **Qué comprobar:** Se conserva el estado y se ve el siguiente paso
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`
+**Combina con:** `langchain`, `langfuse`, `copilotkit`, `langgraph`
 **Alternativas (elige una):** `mastra`, `vercel-ai`
 
 ## `llama-index`
@@ -671,7 +675,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Envía una pregunta acotada y compara las respuestas y las revisiones entre modelos
 **Qué comprobar:** Se distinguen propuestas iniciales, evaluaciones y síntesis final
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`
+**Combina con:** `litellm`, `ollama`, `promptfoo`
 
 ## `mastra`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,rag,typescript
@@ -734,6 +738,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide el diseño de una lista de tareas mínima y revisa requisitos y estructura antes del código
 **Qué comprobar:** Obtienes artefactos separados que puedes revisar y corregir
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `e2b`, `claude-code`
 **Alternativas (elige una):** `crewai`
 
 ## `mirofish`
@@ -768,7 +773,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un escenario ficticio y realiza una simulación corta con menos de 40 rondas
 **Qué comprobar:** Puedes inspeccionar los agentes simulados y el informe del escenario
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openevolve`
+**Combina con:** `graphiti`, `litellm`, `ollama`
 
 ## `openai-agents-python`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=openai · tags=agents,python
@@ -832,7 +837,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba la minimización de una función con pocas iteraciones y revisa cada candidato
 **Qué comprobar:** El evaluador permite comparar la puntuación inicial y la final
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llm-council`
+**Combina con:** `ollama`, `vllm`, `litellm`
 
 ## `pydantic-ai`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,python
@@ -893,7 +898,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Construye un flujo visual que recibe texto, lo resume y registra la salida
 **Qué comprobar:** La ejecución muestra cada bloque y el resumen final
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `langfuse`
+**Combina con:** `ollama`, `vllm`, `claude-code`, `codex`
 **Alternativas (elige una):** `langflow`, `dify`, `autogpt`
 
 ## `smolagents`
@@ -955,5 +960,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade una respuesta de chat en streaming y una herramienta de consulta de estado
 **Qué comprobar:** El texto llega por partes y la llamada devuelve el estado ficticio
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `assistant-ui`
+**Combina con:** `assistant-ui`, `ui`, `langfuse`, `ollama`, `mem0`
 **Alternativas (elige una):** `langgraphjs`, `mastra`
