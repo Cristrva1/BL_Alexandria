@@ -6665,7 +6665,8 @@
     "gemini-cli"
    ],
    "alternatives": [
-    "bmad-method"
+    "bmad-method",
+    "claude-task-master"
    ],
    "repo": "https://github.com/github/spec-kit",
    "homepage": "https://github.github.com/spec-kit/",
@@ -6778,7 +6779,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): bmad-method.",
+   "descripcion_notas": "Alternativas (elige una): bmad-method, claude-task-master.",
    "descripcion_fuentes": [
     "https://github.com/github/spec-kit/blob/main/README.md",
     "https://github.github.io/spec-kit/integrations/index.html"
@@ -10423,7 +10424,8 @@
     "codex",
     "goose",
     "gemini-cli",
-    "aider"
+    "aider",
+    "mimo-code"
    ],
    "repo": "https://github.com/anomalyco/opencode",
    "homepage": "https://opencode.ai",
@@ -10543,7 +10545,7 @@
      "orden_instalacion": "Instala T3 Code con OpenCode presente."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider.",
+   "descripcion_notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.",
    "descripcion_fuentes": [
     "https://github.com/anomalyco/opencode/blob/dev/README.md",
     "https://opencode.ai/docs/providers/"
@@ -11726,7 +11728,9 @@
     "codex",
     "opencode"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "opencode-manager"
+   ],
    "repo": "https://github.com/pingdotgg/t3code",
    "homepage": "https://t3.codes",
    "license": "MIT",
@@ -11839,7 +11843,7 @@
      "orden_instalacion": "Instala OpenCode y selecciónalo."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; solapa con opencode-manager (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): opencode-manager.",
    "descripcion_fuentes": [
     "https://github.com/pingdotgg/t3code/blob/main/README.md"
    ],
@@ -12205,7 +12209,8 @@
     "crewai",
     "openai-agents-python",
     "pydantic-ai",
-    "adk-python"
+    "adk-python",
+    "agno"
    ],
    "repo": "https://github.com/langchain-ai/langgraph",
    "homepage": "https://docs.langchain.com/oss/python/langgraph/",
@@ -12324,7 +12329,7 @@
      "orden_instalacion": "Configura Mem0 y úsalo desde un nodo o herramienta."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python.",
+   "descripcion_notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python, agno.",
    "descripcion_fuentes": [
     "https://github.com/langchain-ai/langgraph/blob/main/README.md",
     "https://langfuse.com/integrations/frameworks/langchain",
@@ -12867,7 +12872,8 @@
     "mem0"
    ],
    "alternatives": [
-    "crewai"
+    "crewai",
+    "langgraph"
    ],
    "repo": "https://github.com/agno-agi/agno",
    "homepage": "https://docs.agno.com",
@@ -12985,7 +12991,7 @@
      "orden_instalacion": "Opcional: Agno ya trae memoria propia sobre PostgreSQL."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): crewai. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
+   "descripcion_notas": "Alternativas (elige una): crewai, langgraph. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
    "descripcion_fuentes": [
     "https://github.com/agno-agi/agno/blob/main/README.md",
     "https://docs.agno.com/knowledge/vector-stores/qdrant/overview",
@@ -16475,7 +16481,9 @@
     "codex",
     "opencode"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "paperclip"
+   ],
    "repo": "https://github.com/multica-ai/multica",
    "homepage": "https://multica.ai",
    "license": "NOASSERTION",
@@ -16588,7 +16596,7 @@
      "orden_instalacion": "Instala OpenCode en el runtime."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
+   "descripcion_notas": "Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
    "descripcion_fuentes": [
     "https://github.com/multica-ai/multica/blob/main/README.md",
     "https://multica.ai/docs/agents"
@@ -17262,7 +17270,8 @@
    ],
    "alternatives": [
     "storm",
-    "vane"
+    "vane",
+    "local-deep-research"
    ],
    "repo": "https://github.com/assafelovic/gpt-researcher",
    "homepage": "https://gptr.dev",
@@ -17378,7 +17387,7 @@
      "orden_instalacion": "Configura el LLM a través de un proveedor compatible."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): storm, vane. Se quita browser-use de las combinaciones (no hay integración documentada).",
+   "descripcion_notas": "Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).",
    "descripcion_fuentes": [
     "https://github.com/assafelovic/gpt-researcher/blob/main/README.md"
    ],
@@ -20591,15 +20600,16 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta",
    "combines_with": [
-    "browser-harness",
     "claude-code",
-    "ollama"
+    "ollama",
+    "pydantic-ai"
    ],
    "alternatives": [
     "computer-use-preview",
     "stagehand",
     "skyvern",
-    "playwright-mcp"
+    "playwright-mcp",
+    "browser-harness"
    ],
    "repo": "https://github.com/browser-use/browser-use",
    "homepage": "https://browser-use.com",
@@ -20700,11 +20710,6 @@
    "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta modelos propios, Anthropic, Google o cualquier modelo de Pydantic AI. Tiene telemetría anónima configurable.",
    "combina_con": [
     {
-     "id": "browser-harness",
-     "motivo": "Motor interno.",
-     "orden_instalacion": "Viene incluido."
-    },
-    {
      "id": "claude-code",
      "motivo": "Uso vía skill o MCP.",
      "orden_instalacion": "Registra la skill o el MCP."
@@ -20713,9 +20718,14 @@
      "id": "ollama",
      "motivo": "Modelos locales vía integraciones de modelos. (combinación por arquitectura)",
      "orden_instalacion": "Configura un modelo local compatible."
+    },
+    {
+     "id": "pydantic-ai",
+     "motivo": "Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI.",
+     "orden_instalacion": "Instala el extra correspondiente de pydantic-ai para el proveedor elegido."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp.",
+   "descripcion_notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.",
    "descripcion_fuentes": [
     "https://github.com/browser-use/browser-use/blob/main/README.md",
     "https://docs.browser-use.com/"
@@ -21553,13 +21563,14 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Ahora es el motor de Browser Use y el README recomienda su CLI; conectar una sesión autenticada concede acceso a lo que esa sesión puede hacer",
    "combines_with": [
-    "browser-use",
     "claude-code",
-    "codex"
+    "codex",
+    "gemini-cli"
    ],
    "alternatives": [
     "playwright-mcp",
-    "chrome-devtools-mcp"
+    "chrome-devtools-mcp",
+    "browser-use"
    ],
    "repo": "https://github.com/browser-use/browser-harness",
    "homepage": "https://browser-harness.com",
@@ -21658,11 +21669,6 @@
    "como_lo_hace": "Se instala con `uv tool install browser-use` y `browser-use skill install`, y luego activando la depuración remota en `chrome://inspect`. Al usar tu sesión real, el agente actúa con tus credenciales.",
    "combina_con": [
     {
-     "id": "browser-use",
-     "motivo": "Producto que ahora lo integra.",
-     "orden_instalacion": "Usa la CLI browser-use."
-    },
-    {
      "id": "claude-code",
      "motivo": "Agente documentado.",
      "orden_instalacion": "Registra la skill."
@@ -21671,9 +21677,14 @@
      "id": "codex",
      "motivo": "Agente documentado.",
      "orden_instalacion": "Registra la skill."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Cualquier cliente MCP puede usar Browser Harness vía `browser-harness-mcp`; Gemini CLI es uno de ellos. (combinación por arquitectura)",
+     "orden_instalacion": "Registra `browser-harness-mcp` en la configuración MCP de Gemini CLI."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp. Riesgo: acceso del agente a sesiones autenticadas.",
+   "descripcion_notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp, browser-use. Riesgo: acceso del agente a sesiones autenticadas.",
    "descripcion_fuentes": [
     "https://github.com/browser-use/browser-harness/blob/main/README.md"
    ],
@@ -24852,7 +24863,9 @@
    ],
    "alternatives": [
     "codegraph",
-    "gitnexus"
+    "gitnexus",
+    "codebase-memory-mcp",
+    "graphify"
    ],
    "repo": "https://github.com/oraios/serena",
    "homepage": "https://oraios.github.io/serena",
@@ -24966,7 +24979,7 @@
      "orden_instalacion": "Instala ambos servidores en el mismo agente."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus.",
+   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.",
    "descripcion_fuentes": [
     "https://github.com/oraios/serena/blob/main/README.md",
     "https://oraios.github.io/serena/"
@@ -28369,7 +28382,8 @@
    ],
    "alternatives": [
     "qdrant",
-    "chroma"
+    "chroma",
+    "pgvector"
    ],
    "repo": "https://github.com/milvus-io/milvus",
    "homepage": "https://milvus.io",
@@ -28481,7 +28495,7 @@
      "orden_instalacion": "Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): qdrant, chroma.",
+   "descripcion_notas": "Alternativas (elige una): qdrant, chroma, pgvector.",
    "descripcion_fuentes": [
     "https://github.com/milvus-io/milvus/blob/master/README.md",
     "https://milvus.io/docs/integrate_with_llamaindex.md"
@@ -28842,7 +28856,8 @@
    ],
    "alternatives": [
     "qdrant",
-    "chroma"
+    "chroma",
+    "milvus"
    ],
    "repo": "https://github.com/pgvector/pgvector",
    "homepage": "",
@@ -28959,7 +28974,7 @@
      "orden_instalacion": "Activa la extensión antes de arrancar LightRAG con el backend de Postgres."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): qdrant, chroma.",
+   "descripcion_notas": "Alternativas (elige una): qdrant, chroma, milvus.",
    "descripcion_fuentes": [
     "https://github.com/pgvector/pgvector/blob/master/README.md",
     "https://supabase.com/docs/guides/database/extensions/pgvector"
@@ -29316,7 +29331,11 @@
     "langfuse",
     "claude-code"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "omniroute",
+    "claude-code-router",
+    "backdoor"
+   ],
    "repo": "https://github.com/BerriAI/litellm",
    "homepage": "https://docs.litellm.ai/docs/",
    "license": "NOASSERTION",
@@ -29448,7 +29467,7 @@
     "status": "source_reviewed",
     "installation_tested": false
    },
-   "descripcion_notas": "Sin alternativas declaradas. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
+   "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
    "descripcion_github": {
     "name_with_owner": "BerriAI/litellm",
     "archived": false,
@@ -31455,7 +31474,12 @@
     "ollama",
     "graphrag"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "codegraph",
+    "gitnexus",
+    "serena",
+    "codebase-memory-mcp"
+   ],
    "repo": "https://github.com/Graphify-Labs/graphify",
    "homepage": "https://www.graphify.com",
    "license": "Apache-2.0",
@@ -31575,7 +31599,7 @@
      "orden_instalacion": "Usa Graphify para el código y GraphRAG para la documentación."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; funcionalmente compite con codegraph (solo anotado). Ojo con paquetes PyPI de nombre parecido.",
+   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
    "descripcion_fuentes": [
     "https://github.com/Graphify-Labs/graphify/blob/v8/README.md"
    ],
@@ -31619,7 +31643,9 @@
    ],
    "alternatives": [
     "codebase-memory-mcp",
-    "serena"
+    "serena",
+    "gitnexus",
+    "graphify"
    ],
    "repo": "https://github.com/colbymchenry/codegraph",
    "homepage": "https://colbymchenry.github.io/codegraph/",
@@ -31733,7 +31759,7 @@
      "orden_instalacion": "Indexa con CodeGraph y envuelve el agente con Headroom."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena. Telemetría anónima activada.",
+   "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.",
    "descripcion_fuentes": [
     "https://github.com/colbymchenry/codegraph/blob/main/README.md",
     "https://colbymchenry.github.io/codegraph/"
@@ -31773,12 +31799,14 @@
    "limits": "Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens",
    "combines_with": [
     "claude-code",
-    "serena",
-    "repomix"
+    "repomix",
+    "codex"
    ],
    "alternatives": [
     "codegraph",
-    "gitnexus"
+    "gitnexus",
+    "serena",
+    "graphify"
    ],
    "repo": "https://github.com/DeusData/codebase-memory-mcp",
    "homepage": "https://deusdata.github.io/codebase-memory-mcp/",
@@ -31882,17 +31910,17 @@
      "orden_instalacion": "Instala el binario y ejecuta `install` para configurar el cliente."
     },
     {
-     "id": "serena",
-     "motivo": "Edición semántica con LSP junto a la memoria de grafo. (combinación por arquitectura)",
-     "orden_instalacion": "Usa codebase-memory para explorar y Serena para editar."
-    },
-    {
      "id": "repomix",
      "motivo": "Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)",
      "orden_instalacion": "Localiza con el grafo y empaqueta con Repomix."
+    },
+    {
+     "id": "codex",
+     "motivo": "Cliente MCP soportado: el README indica que comparte un daemon de coordinación entre Claude Code, Codex, OpenCode y otros clientes configurados.",
+     "orden_instalacion": "Ejecuta `install` para configurar Codex como cliente."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus. Revisa el script de instalación antes de ejecutarlo.",
+   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
    "descripcion_fuentes": [
     "https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md"
    ],
@@ -31937,7 +31965,9 @@
    "alternatives": [
     "repomix",
     "codebase-memory-mcp",
-    "serena"
+    "serena",
+    "codegraph",
+    "graphify"
    ],
    "repo": "https://github.com/abhigyanpatwari/GitNexus",
    "homepage": "https://gitnexus.vercel.app",
@@ -32050,7 +32080,7 @@
      "orden_instalacion": "Ejecuta `gitnexus setup -c codex`."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
+   "descripcion_notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
    "descripcion_fuentes": [
     "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md"
    ],
@@ -33206,7 +33236,9 @@
     "diffusers",
     "vllm"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "tensorflow"
+   ],
    "repo": "https://github.com/pytorch/pytorch",
    "homepage": "https://pytorch.org",
    "license": "NOASSERTION",
@@ -33318,7 +33350,7 @@
      "orden_instalacion": "Instala vLLM con la versión de PyTorch compatible."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; compite con tensorflow (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): tensorflow.",
    "descripcion_fuentes": [
     "https://github.com/pytorch/pytorch/blob/main/README.md",
     "https://pytorch.org/get-started/locally/"
@@ -52514,7 +52546,8 @@
     "nemo"
    ],
    "alternatives": [
-    "livekit-agents"
+    "livekit-agents",
+    "dograh"
    ],
    "repo": "https://github.com/pipecat-ai/pipecat",
    "homepage": "https://pipecat.ai",
@@ -52634,7 +52667,7 @@
      "orden_instalacion": "Configura el servicio NVIDIA."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): livekit-agents.",
+   "descripcion_notas": "Alternativas (elige una): livekit-agents, dograh.",
    "descripcion_fuentes": [
     "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
     "https://docs.pipecat.ai/getting-started/quickstart"
@@ -52678,7 +52711,8 @@
     "whisper-cpp"
    ],
    "alternatives": [
-    "pipecat"
+    "pipecat",
+    "dograh"
    ],
    "repo": "https://github.com/livekit/agents",
    "homepage": "https://docs.livekit.io/agents",
@@ -52795,7 +52829,7 @@
      "orden_instalacion": "Expón el servidor y úsalo como STT."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): pipecat.",
+   "descripcion_notas": "Alternativas (elige una): pipecat, dograh.",
    "descripcion_fuentes": [
     "https://github.com/livekit/agents/blob/main/README.md"
    ],
@@ -55221,7 +55255,8 @@
    ],
    "alternatives": [
     "openmontage",
-    "videofy-minimal"
+    "videofy-minimal",
+    "short-video-factory"
    ],
    "repo": "https://github.com/harry0703/MoneyPrinterTurbo",
    "homepage": "",
@@ -55337,7 +55372,7 @@
      "orden_instalacion": "Apunta el proveedor compatible con OpenAI a Ollama."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): openmontage, videofy-minimal. Revisa los derechos del material de stock y de las voces antes de publicar.",
+   "descripcion_notas": "Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.",
    "descripcion_fuentes": [
     "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md"
    ],
@@ -60930,7 +60965,9 @@
     "ffmpeg",
     "ollama"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "moneyprinterturbo"
+   ],
    "repo": "https://github.com/YILS-LIN/short-video-factory",
    "homepage": "https://short-video-factory.yils.blog",
    "license": "AGPL-3.0",
@@ -61049,7 +61086,7 @@
      "orden_instalacion": "Configura un endpoint compatible si la app lo admite."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; solapa con moneyprinterturbo (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): moneyprinterturbo.",
    "descripcion_fuentes": [
     "https://github.com/YILS-LIN/short-video-factory/blob/main/README.md"
    ],
@@ -61091,7 +61128,9 @@
     "searxng",
     "llama-cpp"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "gpt-researcher"
+   ],
    "repo": "https://github.com/LearningCircuit/local-deep-research",
    "homepage": "",
    "license": "MIT",
@@ -61212,7 +61251,7 @@
      "orden_instalacion": "Expón llama-server y configúralo."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con gpt-researcher (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): gpt-researcher.",
    "descripcion_fuentes": [
     "https://github.com/LearningCircuit/local-deep-research/blob/main/README.md"
    ],
@@ -61574,7 +61613,9 @@
     "opencode",
     "mermaid"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "diagram-design"
+   ],
    "repo": "https://github.com/tt-a1i/archify",
    "homepage": "https://archify.si",
    "license": "Apache-2.0",
@@ -61692,7 +61733,7 @@
      "orden_instalacion": "Usa Mermaid en docs y Archify para explorar."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Tiene un grupo funcional con diagram-design.",
+   "descripcion_notas": "Alternativa (elige una): diagram-design.",
    "descripcion_fuentes": [
     "https://github.com/tt-a1i/archify/blob/main/README.md"
    ],
@@ -62706,7 +62747,9 @@
     "codex",
     "hermes-agent"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "multica"
+   ],
    "repo": "https://github.com/paperclipai/paperclip",
    "homepage": "https://paperclip.ing",
    "license": "MIT",
@@ -62831,7 +62874,7 @@
      "orden_instalacion": "Registra Hermes vía su gateway."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con multica (solo anotado). Conviene vigilar el gasto con presupuestos.",
+   "descripcion_notas": "Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos.",
    "descripcion_fuentes": [
     "https://github.com/paperclipai/paperclip/blob/master/README.md",
     "https://docs.paperclip.ing/connectors/"
@@ -65147,11 +65190,13 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Son adaptadores de terceros y la importación de credenciales no demuestra autorización universal del proveedor; no se confirma una ruta local en este README",
    "combines_with": [
-    "opencode",
     "headroom",
-    "rtk"
+    "rtk",
+    "context7"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "opencode"
+   ],
    "repo": "https://github.com/XiaomiMiMo/MiMo-Code",
    "homepage": "https://mimo.xiaomi.com/mimocode",
    "license": "MIT",
@@ -65255,11 +65300,6 @@
    "como_lo_hace": "Se instala con `curl -fsSL https://mimo.xiaomi.com/install | bash` o PowerShell. Admite cualquier proveedor de LLM y puede usar opcionalmente skills de `.opencode/skills`.",
    "combina_con": [
     {
-     "id": "opencode",
-     "motivo": "Compatibilidad opcional con skills de OpenCode (`MIMOCODE_ENABLE_OPENCODE_SKILLS`).",
-     "orden_instalacion": "Activa la variable para reutilizar tus skills."
-    },
-    {
      "id": "headroom",
      "motivo": "Comprimir el contexto en sesiones largas. (combinación por arquitectura)",
      "orden_instalacion": "Envuelve el agente con Headroom si es compatible."
@@ -65268,9 +65308,14 @@
      "id": "rtk",
      "motivo": "Reducir la salida de comandos. (combinación por arquitectura)",
      "orden_instalacion": "Configura los hooks de rtk si son compatibles."
+    },
+    {
+     "id": "context7",
+     "motivo": "MiMo Code admite servidores MCP remotos en su configuración `mcp` (el README muestra Exa y Tavily); Context7 aporta documentación actualizada de librerías. (combinación por arquitectura)",
+     "orden_instalacion": "Añade Context7 como servidor MCP remoto en la configuración."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; funcionalmente compite con opencode (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): opencode.",
    "descripcion_fuentes": [
     "https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md"
    ],
@@ -65312,7 +65357,9 @@
     "hermes-agent",
     "claude-code"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "gods-eye-view"
+   ],
    "repo": "https://github.com/simplifaisoul/osiris",
    "homepage": "https://osirisai.live",
    "license": "MIT",
@@ -65433,7 +65480,7 @@
      "orden_instalacion": "Añade el endpoint MCP de tu instancia."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; solapa con gods-eye-view (solo anotado). El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
+   "descripcion_notas": "Alternativa (elige una): gods-eye-view. El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
    "descripcion_fuentes": [
     "https://github.com/simplifaisoul/osiris/blob/master/README.md"
    ],
@@ -65473,9 +65520,13 @@
    "combines_with": [
     "claude-code",
     "ollama",
+    "vllm"
+   ],
+   "alternatives": [
+    "omniroute",
+    "claude-code-router",
     "litellm"
    ],
-   "alternatives": [],
    "repo": "https://github.com/ajsai47/backdoor",
    "homepage": "",
    "license": "MIT",
@@ -65591,12 +65642,12 @@
      "orden_instalacion": "Arranca Ollama y elígelo como backend."
     },
     {
-     "id": "litellm",
-     "motivo": "Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura)",
-     "orden_instalacion": "Apunta Backdoor a la URL del proxy LiteLLM."
+     "id": "vllm",
+     "motivo": "vLLM sirve modelos propios con API compatible con OpenAI, el tipo de proveedor al que Backdoor redirige Claude Code. (combinación por arquitectura)",
+     "orden_instalacion": "Levanta vLLM primero y apunta Backdoor a su URL base."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
+   "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
    "descripcion_fuentes": [
     "https://github.com/ajsai47/backdoor/blob/main/README.md"
    ],
@@ -68699,7 +68750,9 @@
     "mediapipe",
     "marimo"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "pytorch"
+   ],
    "repo": "https://github.com/tensorflow/tensorflow",
    "homepage": "https://tensorflow.org",
    "license": "Apache-2.0",
@@ -68819,7 +68872,7 @@
      "orden_instalacion": "Instala marimo en el mismo entorno."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; compite con pytorch (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): pytorch.",
    "descripcion_fuentes": [
     "https://github.com/tensorflow/tensorflow/blob/master/README.md",
     "https://www.tensorflow.org/install"
@@ -73870,7 +73923,9 @@
     "hermes-agent",
     "pythia"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "osiris"
+   ],
    "repo": "https://github.com/bilawalsidhu/gods-eye-view",
    "homepage": "https://godseyeview.ai/",
    "license": "NOASSERTION",
@@ -73995,7 +74050,7 @@
      "orden_instalacion": "Usa ambos sobre la misma región."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; solapa con osiris (solo anotado). El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
+   "descripcion_notas": "Alternativa (elige una): osiris. El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
    "descripcion_fuentes": [
     "https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md",
     "https://godseyeview.ai"
@@ -74516,7 +74571,9 @@
     "claude-code",
     "slidev"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "archify"
+   ],
    "repo": "https://github.com/cathrynlavery/diagram-design",
    "homepage": "https://diagramdesign.dev",
    "license": "MIT",
@@ -74639,7 +74696,7 @@
      "orden_instalacion": "Exporta SVG/PNG e insértalos."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Tiene un grupo funcional con archify.",
+   "descripcion_notas": "Alternativa (elige una): archify.",
    "descripcion_fuentes": [
     "https://github.com/cathrynlavery/diagram-design/blob/main/README.md"
    ],
@@ -74841,7 +74898,11 @@
     "cline",
     "ollama"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "claude-code-router",
+    "backdoor",
+    "litellm"
+   ],
    "repo": "https://github.com/cheaper-inference/OmniRoute",
    "homepage": "https://omniroute.online",
    "license": "MIT",
@@ -74962,7 +75023,7 @@
      "orden_instalacion": "Conecta tu instancia de Ollama como proveedor local."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Posible grupo alt con claude-code-router, backdoor y litellm (solo anotado). Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
+   "descripcion_notas": "Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
    "descripcion_fuentes": [
     "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md"
    ],
@@ -75002,7 +75063,9 @@
     "ollama",
     "coolify"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "t3code"
+   ],
    "repo": "https://github.com/chriswritescode-dev/opencode-manager",
    "homepage": "https://opencodemanager.app",
    "license": "MIT",
@@ -75123,7 +75186,7 @@
      "orden_instalacion": "Despliega con Compose desde Coolify."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con t3code (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): t3code.",
    "descripcion_fuentes": [
     "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
     "https://opencodemanager.app/docs/getting-started/installation"
@@ -75489,7 +75552,9 @@
     "windmill",
     "freedomain"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "casaos"
+   ],
    "repo": "https://github.com/coollabsio/coolify",
    "homepage": "https://coolify.io",
    "license": "Apache-2.0",
@@ -75615,7 +75680,7 @@
      "orden_instalacion": "Apunta el DNS al servidor."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).",
+   "descripcion_notas": "Alternativa (elige una): casaos.",
    "descripcion_fuentes": [
     "https://github.com/coollabsio/coolify/blob/main/README.md",
     "https://coolify.io/docs/installation",
@@ -76942,7 +77007,10 @@
     "whisper-cpp",
     "kokoro"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "pipecat",
+    "livekit-agents"
+   ],
    "repo": "https://github.com/dograh-hq/dograh",
    "homepage": "https://app.dograh.com",
    "license": "BSD-2-Clause",
@@ -77064,7 +77132,7 @@
      "orden_instalacion": "Configura un TTS propio."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con pipecat y livekit-agents (solo anotado). Revisa el túnel público y el registro abierto por defecto.",
+   "descripcion_notas": "Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.",
    "descripcion_fuentes": [
     "https://github.com/dograh-hq/dograh/blob/main/README.md"
    ],
@@ -77925,7 +77993,9 @@
     "codex",
     "opencode"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "spec-kit"
+   ],
    "repo": "https://github.com/eyaltoledano/claude-task-master",
    "homepage": "https://tryhamster.com",
    "license": "NOASSERTION",
@@ -78049,7 +78119,7 @@
      "orden_instalacion": "Añade el servidor MCP."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con spec-kit (solo anotado). Actividad reciente baja.",
+   "descripcion_notas": "Alternativa (elige una): spec-kit. Actividad reciente baja.",
    "descripcion_fuentes": [
     "https://github.com/eyaltoledano/claude-task-master/blob/main/README.md",
     "https://tryhamster.com/docs/taskmaster/capabilities/mcp"
@@ -81504,7 +81574,9 @@
     "adguardhome",
     "activepieces"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "coolify"
+   ],
    "repo": "https://github.com/IceWhaleTech/CasaOS",
    "homepage": "https://casaos.zimaspace.com",
    "license": "Apache-2.0",
@@ -81624,7 +81696,7 @@
      "orden_instalacion": "Instálalo como contenedor."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.",
+   "descripcion_notas": "Alternativa (elige una): coolify. Ritmo de releases lento.",
    "descripcion_fuentes": [
     "https://github.com/IceWhaleTech/CasaOS/blob/main/README.md"
    ],
@@ -83915,7 +83987,9 @@
     "semgrep",
     "mitmproxy"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "strix"
+   ],
    "repo": "https://github.com/KeygraphHQ/shannon",
    "homepage": "https://keygraph.io/",
    "license": "AGPL-3.0",
@@ -84039,7 +84113,7 @@
      "orden_instalacion": "Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
+   "descripcion_notas": "Alternativa (elige una): strix. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
    "descripcion_fuentes": [
     "https://github.com/KeygraphHQ/shannon/blob/main/README.md",
     "https://github.com/KeygraphHQ/shannon/blob/main/docs/ai-providers.md"
@@ -87320,7 +87394,11 @@
     "codex",
     "opencode"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "omniroute",
+    "backdoor",
+    "litellm"
+   ],
    "repo": "https://github.com/musistudio/claude-code-router",
    "homepage": "https://ccrdesk.top/",
    "license": "MIT",
@@ -87442,7 +87520,7 @@
      "orden_instalacion": "Apunta OpenCode a la pasarela de CCR."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Posible grupo alt con omniroute, backdoor y litellm (solo anotado). Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
+   "descripcion_notas": "Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
    "descripcion_fuentes": [
     "https://github.com/musistudio/claude-code-router/blob/main/README.md"
    ],
@@ -94154,7 +94232,9 @@
     "github-mcp-server",
     "semgrep"
    ],
-   "alternatives": [],
+   "alternatives": [
+    "shannon"
+   ],
    "repo": "https://github.com/usestrix/strix",
    "homepage": "https://strix.ai",
    "license": "Apache-2.0",
@@ -94276,7 +94356,7 @@
      "orden_instalacion": "Ejecuta ambos en el pipeline de PR."
     }
    ],
-   "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.",
+   "descripcion_notas": "Alternativa (elige una): shannon. Úsalo solo contra sistemas propios o con autorización escrita.",
    "descripcion_fuentes": [
     "https://github.com/usestrix/strix/blob/main/README.md",
     "https://docs.strix.ai/quickstart",

@@ -92,8 +92,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un proyecto pequeño y consulta el impacto de cambiar una función
 **Qué comprobar:** Puedes abrir las referencias y relaciones del grafo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `serena`, `repomix`
-**Alternativas (elige una):** `codegraph`, `gitnexus`
+**Combina con:** `claude-code`, `repomix`, `codex`
+**Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `graphify`
 
 ## `codegraph`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=code,typescript
@@ -124,7 +124,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Los resultados identifican definiciones y relaciones comprobables
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `headroom`
-**Alternativas (elige una):** `codebase-memory-mcp`, `serena`
+**Alternativas (elige una):** `codebase-memory-mcp`, `serena`, `gitnexus`, `graphify`
 
 ## `floorplan`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=codigo,skill,javascript
@@ -190,7 +190,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `opencode`, `codex`
-**Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`
+**Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`, `codegraph`, `graphify`
 
 ## `graphify`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=code,python
@@ -222,6 +222,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Cada relación se puede contrastar con un archivo o símbolo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tree-sitter`, `ollama`, `graphrag`
+**Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `codebase-memory-mcp`
 
 ## `openai-python`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,python

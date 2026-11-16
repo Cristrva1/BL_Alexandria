@@ -30,7 +30,7 @@ Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y confi
 | [Codex CLI](codex.md) | Configuración automática en Codex CLI. | Ejecuta el instalador con Codex presente. |
 | [headroom](headroom.md) | Combinar contexto preciso con compresión del resto. (combinación por arquitectura) | Indexa con CodeGraph y envuelve el agente con Headroom. |
 
-**Notas:** Alternativas (elige una): codebase-memory-mcp, serena. Telemetría anónima activada.
+**Notas:** Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.2 (2026-10-03) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -113,6 +113,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 | [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
+| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 
 ## Enlaces
 

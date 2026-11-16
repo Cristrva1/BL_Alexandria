@@ -202,7 +202,7 @@
      "orden_instalacion": "Apunta el DNS al servidor."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).",
+   "notas": "Alternativa (elige una): casaos.",
    "fuentes": [
     "https://github.com/coollabsio/coolify/blob/main/README.md",
     "https://coolify.io/docs/installation",
@@ -239,7 +239,7 @@
      "orden_instalacion": "Añade el servidor MCP."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con spec-kit (solo anotado). Actividad reciente baja.",
+   "notas": "Alternativa (elige una): spec-kit. Actividad reciente baja.",
    "fuentes": [
     "https://github.com/eyaltoledano/claude-task-master/blob/main/README.md",
     "https://tryhamster.com/docs/taskmaster/capabilities/mcp"
@@ -275,7 +275,7 @@
      "orden_instalacion": "Instálalo como contenedor."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.",
+   "notas": "Alternativa (elige una): coolify. Ritmo de releases lento.",
    "fuentes": [
     "https://github.com/IceWhaleTech/CasaOS/blob/main/README.md"
    ],

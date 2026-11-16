@@ -30,7 +30,7 @@ Se instala con `npx skills add cathrynlavery/diagram-design`. La exportación a 
 | [Claude Code](claude-code.md) | Agente anfitrión. (combinación por arquitectura) | Instala la skill. |
 | [Slidev](slidev.md) | Incrustar diagramas en presentaciones. (combinación por arquitectura) | Exporta SVG/PNG e insértalos. |
 
-**Notas:** Sin alternativas declaradas. Tiene un grupo funcional con archify.
+**Notas:** Alternativa (elige una): archify.
 
 Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -108,6 +108,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; proceso descrito; marca opcional; navegador
 - **Etiquetas:** `diagramas` `skill` `html`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [archify](archify.md) | 96.5k | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. |
 
 ## Enlaces
 

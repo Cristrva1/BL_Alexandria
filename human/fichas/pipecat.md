@@ -31,7 +31,7 @@ Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con
 | [Ollama](ollama.md) | Servicio LLM integrado. | Configura el servicio Ollama. |
 | [NeMo Speech](nemo.md) | Servicios NVIDIA integrados. | Configura el servicio NVIDIA. |
 
-**Notas:** Alternativas (elige una): livekit-agents.
+**Notas:** Alternativas (elige una): livekit-agents, dograh.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.16.0 (2026-11-12) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
 
@@ -116,6 +116,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [LiveKit Agents](livekit-agents.md) | 15.2k | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. |
+| [dograh](dograh.md) | 6.1k | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. |
 
 ## Enlaces
 

@@ -520,7 +520,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "notas": "Alternativa (elige una): bmad-method.",
+   "notas": "Alternativas (elige una): bmad-method, claude-task-master.",
    "fuentes": [
     "https://github.com/github/spec-kit/blob/main/README.md",
     "https://github.github.io/spec-kit/integrations/index.html"

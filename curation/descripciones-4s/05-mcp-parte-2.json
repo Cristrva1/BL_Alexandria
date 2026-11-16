@@ -95,7 +95,7 @@
      "orden_instalacion": "Instala ambos servidores en el mismo agente."
     }
    ],
-   "notas": "Alternativas (elige una): codegraph, gitnexus.",
+   "notas": "Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.",
    "fuentes": [
     "https://github.com/oraios/serena/blob/main/README.md",
     "https://oraios.github.io/serena/"

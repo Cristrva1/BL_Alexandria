@@ -30,7 +30,7 @@ Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o C
 | [diffusers](diffusers.md) | Modelos de difusión sobre PyTorch. | Instala Diffusers. |
 | [vLLM](vllm.md) | Inferencia en producción construida sobre PyTorch. | Instala vLLM con la versión de PyTorch compatible. |
 
-**Notas:** Sin alternativas declaradas; compite con tensorflow (solo anotado).
+**Notas:** Alternativa (elige una): tensorflow.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -100,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python compatible; paquete para CPU o tu GPU; entorno aislado
 - **Etiquetas:** `training` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [tensorflow](tensorflow.md) | 202k | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 
 ## Enlaces
 

@@ -30,7 +30,7 @@ CLI en Python 3.11+ instalada con uv (`uv tool install specify-cli`, luego `spec
 | [Codex CLI](codex.md) | Integración `--integration codex`. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Integración `--integration gemini`. | Igual que arriba. |
 
-**Notas:** Alternativa (elige una): bmad-method.
+**Notas:** Alternativas (elige una): bmad-method, claude-task-master.
 
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.4.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -105,6 +105,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [BMAD Method](bmad-method.md) | 55.4k | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
+| [claude-task-master](claude-task-master.md) | 28.4k | Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. |
 
 ## Enlaces
 

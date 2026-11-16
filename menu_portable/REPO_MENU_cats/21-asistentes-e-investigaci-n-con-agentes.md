@@ -159,7 +159,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes recuperar contexto y enlaces que respaldan conclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `firecrawl`, `ollama`
-**Alternativas (elige una):** `storm`, `vane`
+**Alternativas (elige una):** `storm`, `vane`, `local-deep-research`
 
 ## `hello-halo`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=asistentes,agent,typescript
@@ -251,6 +251,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar buscador, modelo y evidencia utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `searxng`, `llama-cpp`
+**Alternativas (elige una):** `gpt-researcher`
 
 ## `mercury-agent`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,chatbot,typescript
@@ -312,6 +313,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes ver tarea, sesión y resultado atribuibles al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `paperclip`
 
 ## `openclaw`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript
@@ -407,6 +409,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes atribuir una ejecución a su tarea, agente y coste registrado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openclaw`, `claude-code`, `codex`, `hermes-agent`
+**Alternativas (elige una):** `multica`
 
 ## `ruflo`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=automation,agents,typescript

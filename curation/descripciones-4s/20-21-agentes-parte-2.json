@@ -24,7 +24,7 @@
      "orden_instalacion": "Despliega con Compose desde Coolify."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con t3code (solo anotado).",
+   "notas": "Alternativa (elige una): t3code.",
    "fuentes": [
     "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
     "https://opencodemanager.app/docs/getting-started/installation"
@@ -243,7 +243,7 @@
      "orden_instalacion": "Instala OpenCode en el runtime."
     }
    ],
-   "notas": "Sin alternativas declaradas. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
+   "notas": "Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
    "fuentes": [
     "https://github.com/multica-ai/multica/blob/main/README.md",
     "https://multica.ai/docs/agents"

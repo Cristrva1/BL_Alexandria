@@ -843,7 +843,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El proyecto contiene el scaffolding y los comandos o skills de ese agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `gemini-cli`
-**Alternativas (elige una):** `bmad-method`
+**Alternativas (elige una):** `bmad-method`, `claude-task-master`
 
 ## `superclaude-framework`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,python · tools=claude-code

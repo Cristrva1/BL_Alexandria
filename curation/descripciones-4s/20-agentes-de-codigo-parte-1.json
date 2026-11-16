@@ -29,7 +29,7 @@
      "orden_instalacion": "Instala T3 Code con OpenCode presente."
     }
    ],
-   "notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider.",
+   "notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.",
    "fuentes": [
     "https://github.com/anomalyco/opencode/blob/dev/README.md",
     "https://opencode.ai/docs/providers/"
@@ -330,7 +330,7 @@
      "orden_instalacion": "Instala OpenCode y selecciónalo."
     }
    ],
-   "notas": "Sin alternativas declaradas; solapa con opencode-manager (solo anotado).",
+   "notas": "Alternativa (elige una): opencode-manager.",
    "fuentes": [
     "https://github.com/pingdotgg/t3code/blob/main/README.md"
    ],
@@ -422,11 +422,6 @@
    "como_lo_hace": "Se instala con `curl -fsSL https://mimo.xiaomi.com/install | bash` o PowerShell. Admite cualquier proveedor de LLM y puede usar opcionalmente skills de `.opencode/skills`.",
    "combina_con": [
     {
-     "id": "opencode",
-     "motivo": "Compatibilidad opcional con skills de OpenCode (`MIMOCODE_ENABLE_OPENCODE_SKILLS`).",
-     "orden_instalacion": "Activa la variable para reutilizar tus skills."
-    },
-    {
      "id": "headroom",
      "motivo": "Comprimir el contexto en sesiones largas. (combinación por arquitectura)",
      "orden_instalacion": "Envuelve el agente con Headroom si es compatible."
@@ -435,9 +430,14 @@
      "id": "rtk",
      "motivo": "Reducir la salida de comandos. (combinación por arquitectura)",
      "orden_instalacion": "Configura los hooks de rtk si son compatibles."
+    },
+    {
+     "id": "context7",
+     "motivo": "MiMo Code admite servidores MCP remotos en su configuración `mcp` (el README muestra Exa y Tavily); Context7 aporta documentación actualizada de librerías. (combinación por arquitectura)",
+     "orden_instalacion": "Añade Context7 como servidor MCP remoto en la configuración."
     }
    ],
-   "notas": "Sin alternativas declaradas; funcionalmente compite con opencode (solo anotado).",
+   "notas": "Alternativa (elige una): opencode.",
    "fuentes": [
     "https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md"
    ],

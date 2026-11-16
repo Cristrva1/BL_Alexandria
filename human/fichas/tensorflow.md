@@ -30,7 +30,7 @@ Se instala con `pip install tensorflow` (o `tensorflow-cpu`) y tiene imágenes D
 | [mediapipe](mediapipe.md) | Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura) | Usa modelos TF Lite en MediaPipe. |
 | [marimo](marimo.md) | Experimentación en notebooks reactivos. (combinación por arquitectura) | Instala marimo en el mismo entorno. |
 
-**Notas:** Sin alternativas declaradas; compite con pytorch (solo anotado).
+**Notas:** Alternativa (elige una): pytorch.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.21.0 (2026-03-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -107,6 +107,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; paquete y sistema compatibles; datos de ejemplo
 - **Etiquetas:** `entrenamiento` `deep-learning` `deep-neural-networks` `distributed` `machine-learning` `ml` `neural-network` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [PyTorch](pytorch.md) | 106k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
 
 ## Enlaces
 

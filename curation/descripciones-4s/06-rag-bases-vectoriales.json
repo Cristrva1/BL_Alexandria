@@ -178,7 +178,7 @@
      "orden_instalacion": "Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor."
     }
    ],
-   "notas": "Alternativas (elige una): qdrant, chroma.",
+   "notas": "Alternativas (elige una): qdrant, chroma, pgvector.",
    "fuentes": [
     "https://github.com/milvus-io/milvus/blob/master/README.md",
     "https://milvus.io/docs/integrate_with_llamaindex.md"
@@ -290,7 +290,7 @@
      "orden_instalacion": "Activa la extensión antes de arrancar LightRAG con el backend de Postgres."
     }
    ],
-   "notas": "Alternativas (elige una): qdrant, chroma.",
+   "notas": "Alternativas (elige una): qdrant, chroma, milvus.",
    "fuentes": [
     "https://github.com/pgvector/pgvector/blob/master/README.md",
     "https://supabase.com/docs/guides/database/extensions/pgvector"

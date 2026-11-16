@@ -30,7 +30,7 @@ Requiere Python 3.12+. Se instala con `pip install gpt-researcher` o desde el re
 | [firecrawl](firecrawl.md) | Scraping de páginas difíciles. (combinación por arquitectura) | Usa Firecrawl como fuente o vía MCP. |
 | [Ollama](ollama.md) | Modelos locales. (combinación por arquitectura) | Configura el LLM a través de un proveedor compatible. |
 
-**Notas:** Alternativas (elige una): storm, vane. Se quita browser-use de las combinaciones (no hay integración documentada).
+**Notas:** Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).
 
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v3.8.0 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -107,6 +107,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [STORM](storm.md) | 31.9k | Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
 | [Vane](vane.md) | 38.2k | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). |
+| [local-deep-research](local-deep-research.md) | 9.6k | Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
 
 ## Enlaces
 

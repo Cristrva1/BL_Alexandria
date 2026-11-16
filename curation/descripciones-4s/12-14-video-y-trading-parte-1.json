@@ -24,7 +24,7 @@
      "orden_instalacion": "Apunta el proveedor compatible con OpenAI a Ollama."
     }
    ],
-   "notas": "Alternativas (elige una): openmontage, videofy-minimal. Revisa los derechos del material de stock y de las voces antes de publicar.",
+   "notas": "Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.",
    "fuentes": [
     "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md"
    ],
@@ -210,7 +210,7 @@
      "orden_instalacion": "Configura un endpoint compatible si la app lo admite."
     }
    ],
-   "notas": "Sin alternativas declaradas; solapa con moneyprinterturbo (solo anotado).",
+   "notas": "Alternativa (elige una): moneyprinterturbo.",
    "fuentes": [
     "https://github.com/YILS-LIN/short-video-factory/blob/main/README.md"
    ],

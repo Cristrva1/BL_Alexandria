@@ -276,6 +276,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes comprobar versión, dispositivo y resultado numérico
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `transformers`, `diffusers`, `vllm`
+**Alternativas (elige una):** `tensorflow`
 
 ## `tensorflow`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python
@@ -306,6 +307,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes verificar versión y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `transformers`, `mediapipe`, `marimo`
+**Alternativas (elige una):** `pytorch`
 
 ## `timesfm`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,analytics,python

@@ -31,7 +31,7 @@ Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en
 | [Windmill](windmill.md) | Plantilla de servicio oficial de Coolify para Windmill. | Coolify primero; luego despliega la plantilla `windmill`. |
 | [FreeDomain](freedomain.md) | Dominio gratuito para las apps. (combinación por arquitectura) | Apunta el DNS al servidor. |
 
-**Notas:** Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).
+**Notas:** Alternativa (elige una): casaos.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.7.5 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -101,6 +101,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Servidor compatible; Docker; dominio opcional; aplicación de prueba
 - **Etiquetas:** `infraestructura` `server` `php`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [CasaOS](casaos.md) | 37.6k | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
 
 ## Enlaces
 

@@ -24,7 +24,7 @@
      "orden_instalacion": "Usa Mermaid en docs y Archify para explorar."
     }
    ],
-   "notas": "Sin alternativas declaradas. Tiene un grupo funcional con diagram-design.",
+   "notas": "Alternativa (elige una): diagram-design.",
    "fuentes": [
     "https://github.com/tt-a1i/archify/blob/main/README.md"
    ],
@@ -59,7 +59,7 @@
      "orden_instalacion": "Exporta SVG/PNG e insértalos."
     }
    ],
-   "notas": "Sin alternativas declaradas. Tiene un grupo funcional con archify.",
+   "notas": "Alternativa (elige una): archify.",
    "fuentes": [
     "https://github.com/cathrynlavery/diagram-design/blob/main/README.md"
    ],
@@ -114,11 +114,6 @@
    "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta modelos propios, Anthropic, Google o cualquier modelo de Pydantic AI. Tiene telemetría anónima configurable.",
    "combina_con": [
     {
-     "id": "browser-harness",
-     "motivo": "Motor interno.",
-     "orden_instalacion": "Viene incluido."
-    },
-    {
      "id": "claude-code",
      "motivo": "Uso vía skill o MCP.",
      "orden_instalacion": "Registra la skill o el MCP."
@@ -127,9 +122,14 @@
      "id": "ollama",
      "motivo": "Modelos locales vía integraciones de modelos. (combinación por arquitectura)",
      "orden_instalacion": "Configura un modelo local compatible."
+    },
+    {
+     "id": "pydantic-ai",
+     "motivo": "Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI.",
+     "orden_instalacion": "Instala el extra correspondiente de pydantic-ai para el proveedor elegido."
     }
    ],
-   "notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp.",
+   "notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.",
    "fuentes": [
     "https://github.com/browser-use/browser-use/blob/main/README.md",
     "https://docs.browser-use.com/"
@@ -335,11 +335,6 @@
    "como_lo_hace": "Se instala con `uv tool install browser-use` y `browser-use skill install`, y luego activando la depuración remota en `chrome://inspect`. Al usar tu sesión real, el agente actúa con tus credenciales.",
    "combina_con": [
     {
-     "id": "browser-use",
-     "motivo": "Producto que ahora lo integra.",
-     "orden_instalacion": "Usa la CLI browser-use."
-    },
-    {
      "id": "claude-code",
      "motivo": "Agente documentado.",
      "orden_instalacion": "Registra la skill."
@@ -348,9 +343,14 @@
      "id": "codex",
      "motivo": "Agente documentado.",
      "orden_instalacion": "Registra la skill."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Cualquier cliente MCP puede usar Browser Harness vía `browser-harness-mcp`; Gemini CLI es uno de ellos. (combinación por arquitectura)",
+     "orden_instalacion": "Registra `browser-harness-mcp` en la configuración MCP de Gemini CLI."
     }
    ],
-   "notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp. Riesgo: acceso del agente a sesiones autenticadas.",
+   "notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp, browser-use. Riesgo: acceso del agente a sesiones autenticadas.",
    "fuentes": [
     "https://github.com/browser-use/browser-harness/blob/main/README.md"
    ],

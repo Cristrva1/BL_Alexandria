@@ -10,7 +10,7 @@
     "topics": 99,
     "recipes": 14,
     "mcp": 119,
-    "labs": 242
+    "labs": 270
   },
   "labels": {
     "role": {
@@ -20408,6 +20408,10 @@
       "b": "crewai"
     },
     {
+      "a": "agno",
+      "b": "langgraph"
+    },
+    {
       "a": "aider",
       "b": "cline"
     },
@@ -20476,6 +20480,10 @@
       "b": "tooljet"
     },
     {
+      "a": "archify",
+      "b": "diagram-design"
+    },
+    {
       "a": "assistant-ui",
       "b": "copilotkit"
     },
@@ -20508,6 +20516,18 @@
       "b": "openai-cookbook"
     },
     {
+      "a": "backdoor",
+      "b": "claude-code-router"
+    },
+    {
+      "a": "backdoor",
+      "b": "litellm"
+    },
+    {
+      "a": "backdoor",
+      "b": "omniroute"
+    },
+    {
       "a": "baileys",
       "b": "waha"
     },
@@ -20518,6 +20538,10 @@
     {
       "a": "bmad-method",
       "b": "spec-kit"
+    },
+    {
+      "a": "browser-harness",
+      "b": "browser-use"
     },
     {
       "a": "browser-harness",
@@ -20550,6 +20574,10 @@
     {
       "a": "budibase",
       "b": "tooljet"
+    },
+    {
+      "a": "casaos",
+      "b": "coolify"
     },
     {
       "a": "chart-js",
@@ -20608,6 +20636,14 @@
       "b": "opencode"
     },
     {
+      "a": "claude-code-router",
+      "b": "litellm"
+    },
+    {
+      "a": "claude-code-router",
+      "b": "omniroute"
+    },
+    {
       "a": "claude-cookbooks",
       "b": "openai-cookbook"
     },
@@ -20628,12 +20664,32 @@
       "b": "geo-seo-claude"
     },
     {
+      "a": "claude-task-master",
+      "b": "spec-kit"
+    },
+    {
       "a": "codebase-memory-mcp",
       "b": "codegraph"
     },
     {
       "a": "codebase-memory-mcp",
       "b": "gitnexus"
+    },
+    {
+      "a": "codebase-memory-mcp",
+      "b": "graphify"
+    },
+    {
+      "a": "codebase-memory-mcp",
+      "b": "serena"
+    },
+    {
+      "a": "codegraph",
+      "b": "gitnexus"
+    },
+    {
+      "a": "codegraph",
+      "b": "graphify"
     },
     {
       "a": "codegraph",
@@ -20752,6 +20808,14 @@
       "b": "unstructured"
     },
     {
+      "a": "dograh",
+      "b": "livekit-agents"
+    },
+    {
+      "a": "dograh",
+      "b": "pipecat"
+    },
+    {
       "a": "dspy",
       "b": "promptfoo"
     },
@@ -20845,11 +20909,19 @@
     },
     {
       "a": "gitnexus",
+      "b": "graphify"
+    },
+    {
+      "a": "gitnexus",
       "b": "repomix"
     },
     {
       "a": "gitnexus",
       "b": "serena"
+    },
+    {
+      "a": "gods-eye-view",
+      "b": "osiris"
     },
     {
       "a": "goose",
@@ -20858,6 +20930,10 @@
     {
       "a": "goose",
       "b": "opencode"
+    },
+    {
+      "a": "gpt-researcher",
+      "b": "local-deep-research"
     },
     {
       "a": "gpt-researcher",
@@ -20874,6 +20950,10 @@
     {
       "a": "graphify",
       "b": "graphrag"
+    },
+    {
+      "a": "graphify",
+      "b": "serena"
     },
     {
       "a": "graphiti",
@@ -21052,6 +21132,10 @@
       "b": "ragflow"
     },
     {
+      "a": "litellm",
+      "b": "omniroute"
+    },
+    {
       "a": "livekit-agents",
       "b": "pipecat"
     },
@@ -21157,11 +21241,23 @@
     },
     {
       "a": "milvus",
+      "b": "pgvector"
+    },
+    {
+      "a": "milvus",
       "b": "qdrant"
+    },
+    {
+      "a": "mimo-code",
+      "b": "opencode"
     },
     {
       "a": "moneyprinterturbo",
       "b": "openmontage"
+    },
+    {
+      "a": "moneyprinterturbo",
+      "b": "short-video-factory"
     },
     {
       "a": "moneyprinterturbo",
@@ -21174,6 +21270,10 @@
     {
       "a": "mui",
       "b": "ui"
+    },
+    {
+      "a": "multica",
+      "b": "paperclip"
     },
     {
       "a": "nemo",
@@ -21226,6 +21326,10 @@
     {
       "a": "openai-agents-python",
       "b": "smolagents"
+    },
+    {
+      "a": "opencode-manager",
+      "b": "t3code"
     },
     {
       "a": "openmontage",
@@ -21288,6 +21392,10 @@
       "b": "smolagents"
     },
     {
+      "a": "pytorch",
+      "b": "tensorflow"
+    },
+    {
       "a": "radare2",
       "b": "rizin"
     },
@@ -21310,6 +21418,10 @@
     {
       "a": "sglang",
       "b": "vllm"
+    },
+    {
+      "a": "shannon",
+      "b": "strix"
     },
     {
       "a": "skyvern",
@@ -29462,7 +29574,8 @@
         "gemini-cli"
       ],
       "alt": [
-        "bmad-method"
+        "bmad-method",
+        "claude-task-master"
       ],
       "stack": "Python y uv según la guía;  un agente con integración soportada",
       "repo_url": "https://github.com/github/spec-kit",
@@ -29595,7 +29708,7 @@
       "que_es": "Kit de código abierto de GitHub (MIT) que da a los agentes de código procesos estructurados, plantillas reutilizables y resultados documentados. Muy activo (v1.4.0).",
       "que_hace": "Ofrece desarrollo guiado por especificaciones (en el núcleo), corrección de errores y evaluación de ideas (como extensiones), además de primitivas para adaptar o crear procesos: integraciones, extensiones, overlays de flujos, paquetes por rol y catálogos autoalojados para trabajar sin conexión.",
       "como_lo_hace": "CLI en Python 3.11+ instalada con uv (`uv tool install specify-cli`, luego `specify init <proyecto> --integration <agente>`). Soporta decenas de agentes, entre ellos Claude Code (`claude`), Codex CLI (`codex`), Gemini CLI (`gemini`), GitHub Copilot, Cursor, opencode y Hermes. Las extensiones comunitarias deben revisarse antes de instalarlas.",
-      "descripcion_notas": "Alternativa (elige una): bmad-method.",
+      "descripcion_notas": "Alternativas (elige una): bmad-method, claude-task-master.",
       "descripcion_fuentes": [
         "https://github.com/github/spec-kit/blob/main/README.md",
         "https://github.github.io/spec-kit/integrations/index.html"
@@ -29626,6 +29739,10 @@
         {
           "id": "bmad-method",
           "label": "bmad-method"
+        },
+        {
+          "id": "claude-task-master",
+          "label": "claude-task-master"
         }
       ],
       "combine_refs": [
@@ -30806,7 +30923,8 @@
         "mem0"
       ],
       "alt": [
-        "crewai"
+        "crewai",
+        "langgraph"
       ],
       "stack": "Python; plantilla; PostgreSQL; proveedor de modelos",
       "repo_url": "https://github.com/agno-agi/agno",
@@ -30941,7 +31059,7 @@
       "que_es": "Plataforma de agentes «autogestionada» (Apache 2.0) de Agno. Muy activa (v3.2.0).",
       "que_hace": "Permite crear agentes con los SDK de Agno, Claude Agent o Codex, combinarlos en equipos y flujos, y ejecutarlos como servicios duraderos en AgentOS: autenticación, roles, reanudación y repetición, aprobaciones humanas, programación y ejecución duradera. Company OS asigna responsabilidades, proyectos y rutinas a agentes. Los agentes se exponen por API REST, como servidor MCP (Claude, ChatGPT) o en Slack.",
       "como_lo_hace": "Python. Usa PostgreSQL para conversaciones, memoria y actividad, y ofrece plantillas para desplegar en tu nube (Docker, Railway…). El README propone arrancar dando una plantilla a un agente de código. La interfaz AgentOS UI (os.agno.com) inspecciona trazas y conocimiento.",
-      "descripcion_notas": "Alternativa (elige una): crewai. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
+      "descripcion_notas": "Alternativas (elige una): crewai, langgraph. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
       "descripcion_fuentes": [
         "https://github.com/agno-agi/agno/blob/main/README.md",
         "https://docs.agno.com/knowledge/vector-stores/qdrant/overview",
@@ -30973,6 +31091,10 @@
         {
           "id": "crewai",
           "label": "crewai"
+        },
+        {
+          "id": "langgraph",
+          "label": "langgraph"
         }
       ],
       "combine_refs": [
@@ -34128,7 +34250,8 @@
         "crewai",
         "openai-agents-python",
         "pydantic-ai",
-        "adk-python"
+        "adk-python",
+        "agno"
       ],
       "stack": "Python y entorno virtual; modelo solo para nodos LLM",
       "repo_url": "https://github.com/langchain-ai/langgraph",
@@ -34264,7 +34387,7 @@
       "que_es": "Framework de orquestación de bajo nivel (MIT) de LangChain Inc. para construir, gestionar y desplegar agentes con estado y de larga duración. Es maduro y muy activo (1.2.22), y lo usan en producción empresas como Klarna, Replit o Elastic, según el README.",
       "que_hace": "Modela agentes y flujos como grafos con estado y ofrece ejecución duradera (los agentes sobreviven a fallos y retoman donde se quedaron), human-in-the-loop (inspeccionar y modificar el estado en cualquier punto) y memoria a corto y largo plazo. No impone prompts ni arquitectura. Para empezar más rápido, el propio README remite a Deep Agents, construido encima.",
       "como_lo_hace": "Biblioteca Python (`pip install -U langgraph`), con equivalente en JS/TS (LangGraph.js). Funciona sola o con componentes de LangChain. Para depuración, evaluación y despliegue se integra con LangSmith y LangSmith Deployment, servicios comerciales de la misma empresa.",
-      "descripcion_notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python.",
+      "descripcion_notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python, agno.",
       "descripcion_fuentes": [
         "https://github.com/langchain-ai/langgraph/blob/main/README.md",
         "https://langfuse.com/integrations/frameworks/langchain",
@@ -34308,6 +34431,10 @@
         {
           "id": "adk-python",
           "label": "adk-python"
+        },
+        {
+          "id": "agno",
+          "label": "agno"
         }
       ],
       "combine_refs": [
@@ -45208,7 +45335,9 @@
       ],
       "alt": [
         "codegraph",
-        "gitnexus"
+        "gitnexus",
+        "codebase-memory-mcp",
+        "graphify"
       ],
       "stack": "uv; servidor de lenguaje del proyecto; repositorio de prueba",
       "repo_url": "https://github.com/oraios/serena",
@@ -45341,7 +45470,7 @@
       "que_es": "Serena, un kit de herramientas de código semántico para agentes («el IDE de tu agente»), de Oraios AI. La aplicación es GPL-3.0-or-later y el componente SolidLSP es MIT (GitHub muestra NOASSERTION). Es muy activa (~31k estrellas, v2.1.0).",
       "que_hace": "Da al agente recuperación, edición, refactorización y depuración a nivel de símbolo, apoyándose en la estructura del código en lugar de leer archivos enteros. Usa servidores de lenguaje (LSP) de forma gratuita o, como alternativa, un plugin de JetBrains de pago. Se integra con cualquier cliente mediante MCP.",
       "como_lo_hace": "Se instala con uv y se conecta al cliente con un comando de arranque o en modo HTTP. El README pide no instalarlo desde marketplaces de MCP o plugins, porque traen comandos desactualizados. Algunos lenguajes requieren instalar su servidor de lenguaje.",
-      "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus.",
+      "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.",
       "descripcion_fuentes": [
         "https://github.com/oraios/serena/blob/main/README.md",
         "https://oraios.github.io/serena/"
@@ -45376,6 +45505,14 @@
         {
           "id": "gitnexus",
           "label": "gitnexus"
+        },
+        {
+          "id": "codebase-memory-mcp",
+          "label": "codebase-memory-mcp"
+        },
+        {
+          "id": "graphify",
+          "label": "graphify"
         }
       ],
       "combine_refs": [
@@ -49010,7 +49147,8 @@
       ],
       "alt": [
         "qdrant",
-        "chroma"
+        "chroma",
+        "pgvector"
       ],
       "stack": "Python para cliente; servidor o modo local según guía; vectores de prueba",
       "repo_url": "https://github.com/milvus-io/milvus",
@@ -49139,7 +49277,7 @@
       "que_es": "Base de datos vectorial de alto rendimiento y escalable, escrita en Go y C++, proyecto de la LF AI & Data Foundation bajo Apache 2.0. Madura y muy activa (v3.0.6), con versión gestionada en Zilliz Cloud.",
       "que_hace": "Organiza y busca grandes volúmenes de datos no estructurados (texto, imágenes, multimodal) por similitud vectorial, con soporte de los principales tipos de índice, búsqueda de texto completo con BM25 mediante vectores dispersos y búsqueda híbrida. Sirve desde prototipos hasta despliegues distribuidos de miles de millones de vectores.",
       "como_lo_hace": "Arquitectura distribuida nativa de Kubernetes que separa cómputo y almacenamiento, con aceleración por CPU y GPU. Se usa con el SDK `pymilvus` (`MilvusClient`); Milvus Lite (`pymilvus[milvus-lite]`) crea una base local en un archivo para empezar, y para servidor se despliega en Docker (standalone) o en Kubernetes.",
-      "descripcion_notas": "Alternativas (elige una): qdrant, chroma.",
+      "descripcion_notas": "Alternativas (elige una): qdrant, chroma, pgvector.",
       "descripcion_fuentes": [
         "https://github.com/milvus-io/milvus/blob/master/README.md",
         "https://milvus.io/docs/integrate_with_llamaindex.md"
@@ -49174,6 +49312,10 @@
         {
           "id": "chroma",
           "label": "chroma"
+        },
+        {
+          "id": "pgvector",
+          "label": "pgvector"
         }
       ],
       "combine_refs": [
@@ -49881,7 +50023,8 @@
       ],
       "alt": [
         "qdrant",
-        "chroma"
+        "chroma",
+        "milvus"
       ],
       "stack": "PostgreSQL; permisos de extensión; paquete o compilación adecuados al sistema",
       "repo_url": "https://github.com/pgvector/pgvector",
@@ -50015,7 +50158,7 @@
       "que_es": "Extensión de código abierto de PostgreSQL para búsqueda de similitud vectorial, de Andrew Kane. Se distribuye con una licencia de estilo PostgreSQL (GitHub la marca como no estándar); madura y activa (v0.8.7), sin releases en GitHub.",
       "que_hace": "Guarda vectores junto al resto de tus datos y ofrece búsqueda exacta y aproximada, vectores de precisión simple, media, binarios y dispersos, y distancias L2, producto interno, coseno, L1, Hamming y Jaccard. Mantiene ACID, recuperación a un punto en el tiempo y JOIN de Postgres, y permite escalar con cuantización.",
       "como_lo_hace": "Extensión en C para Postgres 13+ que se compila e instala o se obtiene por Docker, Homebrew, PGXN, APT, Yum, conda-forge y otros (viene preinstalada en Postgres.app). Se activa con `CREATE EXTENSION vector;` en cada base y ofrece índices HNSW (mejor relación velocidad/recuperación, construcción más lenta) e IVFFlat. Funciona con cualquier lenguaje con cliente Postgres.",
-      "descripcion_notas": "Alternativas (elige una): qdrant, chroma.",
+      "descripcion_notas": "Alternativas (elige una): qdrant, chroma, milvus.",
       "descripcion_fuentes": [
         "https://github.com/pgvector/pgvector/blob/master/README.md",
         "https://supabase.com/docs/guides/database/extensions/pgvector"
@@ -50049,6 +50192,10 @@
         {
           "id": "chroma",
           "label": "chroma"
+        },
+        {
+          "id": "milvus",
+          "label": "milvus"
         }
       ],
       "combine_refs": [
@@ -51198,12 +51345,14 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "serena",
-        "repomix"
+        "repomix",
+        "codex"
       ],
       "alt": [
         "codegraph",
-        "gitnexus"
+        "gitnexus",
+        "serena",
+        "graphify"
       ],
       "stack": "Binario para tu sistema; repositorio de prueba; Node 22+ solo para compilar CBM Lens",
       "repo_url": "https://github.com/DeusData/codebase-memory-mcp",
@@ -51326,20 +51475,20 @@
           "orden_instalacion": "Instala el binario y ejecuta `install` para configurar el cliente."
         },
         {
-          "id": "serena",
-          "motivo": "Edición semántica con LSP junto a la memoria de grafo. (combinación por arquitectura)",
-          "orden_instalacion": "Usa codebase-memory para explorar y Serena para editar."
-        },
-        {
           "id": "repomix",
           "motivo": "Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)",
           "orden_instalacion": "Localiza con el grafo y empaqueta con Repomix."
+        },
+        {
+          "id": "codex",
+          "motivo": "Cliente MCP soportado: el README indica que comparte un daemon de coordinación entre Claude Code, Codex, OpenCode y otros clientes configurados.",
+          "orden_instalacion": "Ejecuta `install` para configurar Codex como cliente."
         }
       ],
       "que_es": "codebase-memory-mcp, motor local de inteligencia de código para agentes vía MCP, de DeusData. Licencia MIT. Es muy activo (~49k estrellas, v0.12.1).",
       "que_hace": "Conecta código, documentación, configuración e infraestructura en un grafo de conocimiento local persistente. Expone 17 herramientas MCP y ofrece resolución de tipos híbrida con LSP. Incluye un visor opcional (CBM Lens) y perfiles para agentes.",
       "como_lo_hace": "Es un binario nativo en C que se instala con un script (`install.sh` o `install.ps1`, que el README recomienda revisar antes), con Nix o compilando el código. `install` configura los clientes compatibles. Indexa y consulta en local sin telemetría.",
-      "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus. Revisa el script de instalación antes de ejecutarlo.",
+      "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
       "descripcion_fuentes": [
         "https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md"
       ],
@@ -51373,6 +51522,14 @@
         {
           "id": "gitnexus",
           "label": "gitnexus"
+        },
+        {
+          "id": "serena",
+          "label": "serena"
+        },
+        {
+          "id": "graphify",
+          "label": "graphify"
         }
       ],
       "combine_refs": [
@@ -51381,12 +51538,12 @@
           "label": "claude-code"
         },
         {
-          "id": "serena",
-          "label": "serena"
-        },
-        {
           "id": "repomix",
           "label": "repomix"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
         }
       ],
       "areas": [
@@ -51429,7 +51586,9 @@
       ],
       "alt": [
         "codebase-memory-mcp",
-        "serena"
+        "serena",
+        "gitnexus",
+        "graphify"
       ],
       "stack": "Instalador oficial o Node y npm; repositorio de prueba",
       "repo_url": "https://github.com/colbymchenry/codegraph",
@@ -51564,7 +51723,7 @@
       "que_es": "CodeGraph, CLI que indexa el código en local para dar contexto semántico a asistentes de IA, de @colbymchenry. Licencia MIT. Es muy popular (~78k estrellas, v1.6.2) y prepara una plataforma alojada.",
       "que_hace": "Construye un grafo del código (símbolos, llamadas, rutas de frameworks, puentes iOS/React Native) para que el agente obtenga contexto preciso con menos lecturas. Se sirve como MCP (`codegraph serve --mcp`) y mantiene el índice sincronizado mientras editas. El README incluye benchmarks propios con Claude.",
       "como_lo_hace": "Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y configura Claude Code, Cursor, Codex, OpenCode, Gemini CLI, Copilot y otros. El núcleo está en Rust y el índice vive en `.codegraph/`. Recoge estadísticas de uso anónimas (sin código ni rutas), desactivables según la sección de telemetría.",
-      "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena. Telemetría anónima activada.",
+      "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.",
       "descripcion_fuentes": [
         "https://github.com/colbymchenry/codegraph/blob/main/README.md",
         "https://colbymchenry.github.io/codegraph/"
@@ -51599,6 +51758,14 @@
         {
           "id": "serena",
           "label": "serena"
+        },
+        {
+          "id": "gitnexus",
+          "label": "gitnexus"
+        },
+        {
+          "id": "graphify",
+          "label": "graphify"
         }
       ],
       "combine_refs": [
@@ -52064,7 +52231,9 @@
       "alt": [
         "repomix",
         "codebase-memory-mcp",
-        "serena"
+        "serena",
+        "codegraph",
+        "graphify"
       ],
       "stack": "Node 22.18+ en 22.x o 24.11+; repositorio de prueba",
       "repo_url": "https://github.com/abhigyanpatwari/GitNexus",
@@ -52196,7 +52365,7 @@
       "que_es": "GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION). Es muy activo (~49k estrellas, v1.6.12).",
       "que_hace": "Indexa símbolos, llamadas, dependencias y flujos de ejecución para responder preguntas como dónde se usa algo o qué afecta un cambio. Se usa desde las herramientas MCP del agente, la CLI o un explorador visual del grafo. Reporta ambigüedad y cobertura del índice.",
       "como_lo_hace": "Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+.",
-      "descripcion_notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
+      "descripcion_notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
       "descripcion_fuentes": [
         "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md"
       ],
@@ -52234,6 +52403,14 @@
         {
           "id": "serena",
           "label": "serena"
+        },
+        {
+          "id": "codegraph",
+          "label": "codegraph"
+        },
+        {
+          "id": "graphify",
+          "label": "graphify"
         }
       ],
       "combine_refs": [
@@ -52287,7 +52464,12 @@
         "ollama",
         "graphrag"
       ],
-      "alt": [],
+      "alt": [
+        "codegraph",
+        "gitnexus",
+        "serena",
+        "codebase-memory-mcp"
+      ],
       "stack": "Python 3.10+; uv o pipx; carpeta de código",
       "repo_url": "https://github.com/Graphify-Labs/graphify",
       "doc": "human/fichas/graphify.md",
@@ -52427,7 +52609,7 @@
       "que_es": "Graphify, CLI y skill que convierte código y documentos en un grafo de conocimiento consultable, de Graphify Labs. Licencia Apache-2.0. Tiene un recuento de estrellas excepcionalmente alto (~149k), publica muy a menudo (v0.9.111) y ofrece un servicio de pago, Graphify Cloud.",
       "que_hace": "Con `/graphify` en el asistente mapea el proyecto (código, docs, PDF, imágenes y vídeos) en un grafo que el agente consulta en lugar de usar grep. El código se analiza en local con Tree-sitter sin LLM; los documentos y medios usan el modelo de tu asistente. Puede funcionar como servidor MCP y usar Ollama para inferencia local.",
       "como_lo_hace": "Se instala con `pip install graphifyy` o `uv tool install graphifyy` (paquete oficial con doble «y»; otros `graphify*` de PyPI no están afiliados), con extras como `[mcp]` u `[ollama]`. Luego `graphify install` configura los agentes. Requiere Python 3.10+ y declara no tener telemetría.",
-      "descripcion_notas": "Sin alternativas declaradas; funcionalmente compite con codegraph (solo anotado). Ojo con paquetes PyPI de nombre parecido.",
+      "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
       "descripcion_fuentes": [
         "https://github.com/Graphify-Labs/graphify/blob/v8/README.md"
       ],
@@ -52453,7 +52635,24 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "codegraph",
+          "label": "codegraph"
+        },
+        {
+          "id": "gitnexus",
+          "label": "gitnexus"
+        },
+        {
+          "id": "serena",
+          "label": "serena"
+        },
+        {
+          "id": "codebase-memory-mcp",
+          "label": "codebase-memory-mcp"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -66240,7 +66439,9 @@
         "hermes-agent",
         "pythia"
       ],
-      "alt": [],
+      "alt": [
+        "osiris"
+      ],
       "stack": "Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP",
       "repo_url": "https://github.com/bilawalsidhu/gods-eye-view",
       "doc": "human/fichas/gods-eye-view.md",
@@ -66376,7 +66577,7 @@
       "que_es": "God's Eye View, visualizador geoespacial en un globo 3D que reúne datos abiertos en tiempo real, de @bilawalsidhu. Licencia MIT (GitHub muestra NOASSERTION). Es reciente (creado en junio de 2026) y tiene ~65k estrellas tras ser tendencia en GitHub.",
       "que_hace": "Permite seguir satélites, aviones, barcos y cámaras públicas, con modos visuales como FLIR y un HUD «militar». Añade capas de incendios, sismos, fauna, centros de datos, presas y ubicaciones de cámaras lectoras de matrículas (ALPR) de OpenStreetMap. Tiene preguntas por voz y un servidor MCP local.",
       "como_lo_hace": "Se ejecuta en local con Node.js 24.x (24.14+) o 26.x, con Docker Compose o con un clic en Pinokio. No necesita claves para empezar; el 3D fotorrealista requiere un token de Cesium ion (uso personal no comercial) o una clave de Google Maps. Bajo Docker no está disponible el MCP local.",
-      "descripcion_notas": "Sin alternativas declaradas; solapa con osiris (solo anotado). El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
+      "descripcion_notas": "Alternativa (elige una): osiris. El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
       "descripcion_fuentes": [
         "https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md",
         "https://godseyeview.ai"
@@ -66403,7 +66604,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "osiris",
+          "label": "osiris"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -67285,7 +67491,9 @@
         "hermes-agent",
         "claude-code"
       ],
-      "alt": [],
+      "alt": [
+        "gods-eye-view"
+      ],
       "stack": "Node y npm; conexión a fuentes públicas; claves opcionales para capas extra",
       "repo_url": "https://github.com/simplifaisoul/osiris",
       "doc": "human/fichas/osiris.md",
@@ -67419,7 +67627,7 @@
       "que_es": "OSIRIS (Open Source Intelligence & Reconnaissance Integrated System), panel OSINT en tiempo real de @simplifaisoul. Licencia MIT. Es reciente (creado en mayo de 2026, ~12k estrellas, v5.0.0).",
       "que_hace": "Reúne en un globo 3D acelerado por GPU vuelos en directo, cámaras CCTV públicas, sismos, zonas de conflicto y noticias 24/7. Permite dibujar un área y exportar como GeoJSON las cámaras que contiene. Expone una API REST con SSE y un servidor MCP en `/api/mcp` para agentes como Hermes, Claude o Cursor.",
       "como_lo_hace": "Es una app Next.js 16 con MapLibre GL que se instala con npm, Docker Compose o la imagen `ghcr.io/simplifaisoul/osiris`. Las zonas de conflicto son una lista mantenida a mano, no una medición en vivo.",
-      "descripcion_notas": "Sin alternativas declaradas; solapa con gods-eye-view (solo anotado). El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
+      "descripcion_notas": "Alternativa (elige una): gods-eye-view. El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
       "descripcion_fuentes": [
         "https://github.com/simplifaisoul/osiris/blob/master/README.md"
       ],
@@ -67445,7 +67653,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "gods-eye-view",
+          "label": "gods-eye-view"
+        }
+      ],
       "combine_refs": [
         {
           "id": "pythia",
@@ -72354,7 +72567,8 @@
       ],
       "alt": [
         "openmontage",
-        "videofy-minimal"
+        "videofy-minimal",
+        "short-video-factory"
       ],
       "stack": "Python; FFmpeg; proveedores de guion, voz e imágenes; material propio o autorizado",
       "repo_url": "https://github.com/harry0703/MoneyPrinterTurbo",
@@ -72489,7 +72703,7 @@
       "que_es": "MoneyPrinterTurbo, app para generar vídeos cortos a partir de un tema o palabra clave, de @harry0703. Licencia MIT. Es muy popular (~144k estrellas, v1.3.10) y su README está lleno de patrocinios y enlaces de afiliado a proveedores de modelos.",
       "que_hace": "Genera el guion con un LLM, busca material en Pexels o Pixabay (o usa tus propios clips), sintetiza la voz, crea subtítulos y música de fondo y compone un vídeo vertical u horizontal. Admite muchos proveedores de LLM (OpenAI, Kimi, DeepSeek y compatibles) y de voz (Edge TTS gratuito, Azure, ElevenLabs, Kokoro, Fish Audio, VoxCPM…). Tiene interfaz web y API.",
       "como_lo_hace": "Requiere Python 3.11+ y se instala con pip (paquete oficial), desde el código o con Docker. Los subtítulos pueden salir de las marcas de tiempo del TTS o de faster-whisper en local; con GPU el procesamiento es más rápido. Las claves de LLM, de material y de voz se configuran en la interfaz.",
-      "descripcion_notas": "Alternativas (elige una): openmontage, videofy-minimal. Revisa los derechos del material de stock y de las voces antes de publicar.",
+      "descripcion_notas": "Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.",
       "descripcion_fuentes": [
         "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md"
       ],
@@ -72523,6 +72737,10 @@
         {
           "id": "videofy-minimal",
           "label": "videofy-minimal"
+        },
+        {
+          "id": "short-video-factory",
+          "label": "short-video-factory"
         }
       ],
       "combine_refs": [
@@ -73181,7 +73399,9 @@
         "ffmpeg",
         "ollama"
       ],
-      "alt": [],
+      "alt": [
+        "moneyprinterturbo"
+      ],
       "stack": "App de escritorio; proveedores de guion y voz; clips e imágenes propios",
       "repo_url": "https://github.com/YILS-LIN/short-video-factory",
       "doc": "human/fichas/short-video-factory.md",
@@ -73310,7 +73530,7 @@
       "que_es": "Short Video Factory (短视频工厂), app de escritorio para crear vídeos cortos de producto y contenido general, de @YILS-LIN. Licencia AGPL-3.0. Tiene ~6k estrellas (v1.4.0) y su README está principalmente en chino.",
       "que_hace": "Genera el texto con IA a partir de un prompt, combina clips de material por escenas, sintetiza la voz con Edge TTS y monta los vídeos automáticamente y por lotes. Está pensado para marketing de producto.",
       "como_lo_hace": "Es una app Electron con Vue y TypeScript para Windows, macOS y Linux. Requiere configurar un proveedor de LLM.",
-      "descripcion_notas": "Sin alternativas declaradas; solapa con moneyprinterturbo (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): moneyprinterturbo.",
       "descripcion_fuentes": [
         "https://github.com/YILS-LIN/short-video-factory/blob/main/README.md"
       ],
@@ -73336,7 +73556,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "moneyprinterturbo",
+          "label": "moneyprinterturbo"
+        }
+      ],
       "combine_refs": [
         {
           "id": "edge-tts",
@@ -92191,7 +92416,9 @@
         "semgrep",
         "mitmproxy"
       ],
-      "alt": [],
+      "alt": [
+        "strix"
+      ],
       "stack": "Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local",
       "repo_url": "https://github.com/KeygraphHQ/shannon",
       "doc": "human/fichas/shannon.md",
@@ -92325,7 +92552,7 @@
       "que_es": "Pentester autónomo con IA para aplicaciones web y APIs, de Keygraph. Licencia AGPL-3.0. Es muy activo (~52k estrellas, v3.5.1).",
       "que_hace": "Analiza el código fuente, identifica rutas de ataque y ejecuta exploits reales para demostrar las vulnerabilidades antes de producción, con la regla «sin exploit, no hay informe». Incluye sondas experimentales (por ejemplo, para verificar el parche de la cadena RCE php2shell). Genera informes con pruebas reproducibles.",
       "como_lo_hace": "Se lanza con `npx @keygraph/shannon@latest setup` y `start`, y requiere Docker y Docker Compose v2. Es agnóstico de proveedor (BYOK): Anthropic, OpenAI, xAI (también con suscripción), Bedrock, APIs compatibles y modelos locales vía Ollama, vLLM o LM Studio; no admite suscripciones de Claude Code. El README advierte que ejecuta exploits: solo contra entornos propios o con autorización escrita, y nunca en producción.",
-      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
+      "descripcion_notas": "Alternativa (elige una): strix. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
       "descripcion_fuentes": [
         "https://github.com/KeygraphHQ/shannon/blob/main/README.md",
         "https://github.com/KeygraphHQ/shannon/blob/main/docs/ai-providers.md"
@@ -92352,7 +92579,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "strix",
+          "label": "strix"
+        }
+      ],
       "combine_refs": [
         {
           "id": "ollama",
@@ -92617,7 +92849,9 @@
         "github-mcp-server",
         "semgrep"
       ],
-      "alt": [],
+      "alt": [
+        "shannon"
+      ],
       "stack": "Docker activo; modelo con herramientas; objetivo de laboratorio autorizado",
       "repo_url": "https://github.com/usestrix/strix",
       "doc": "human/fichas/strix.md",
@@ -92751,7 +92985,7 @@
       "que_es": "Herramienta open source de pentesting con agentes de IA autónomos, de usestrix. Licencia Apache-2.0. Es muy activa (~76k estrellas, v1.7.1); el README distingue la versión open source de otras opciones en strix.ai.",
       "que_hace": "Sus agentes ejecutan tu aplicación dinámicamente, buscan vulnerabilidades, las validan con pruebas de concepto reales y proponen correcciones. Incluye un runtime Python aislado para exploits, integración con GitHub Actions para escanear cada PR y conexión a servidores MCP que tú declares. También se distribuye como skill (`npx skills add usestrix/strix`).",
       "como_lo_hace": "Se instala con pipx, uv o pip (`strix-agent`) y necesita Docker en marcha; la primera ejecución descarga la imagen sandbox. Usa tu propia clave de LLM o un modelo local mediante `LLM_API_BASE` (Ollama, LM Studio). Los resultados se guardan en `strix_runs/`. El README exige autorización escrita y dentro del alcance acordado.",
-      "descripcion_notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.",
+      "descripcion_notas": "Alternativa (elige una): shannon. Úsalo solo contra sistemas propios o con autorización escrita.",
       "descripcion_fuentes": [
         "https://github.com/usestrix/strix/blob/main/README.md",
         "https://docs.strix.ai/quickstart",
@@ -92779,7 +93013,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "shannon",
+          "label": "shannon"
+        }
+      ],
       "combine_refs": [
         {
           "id": "ollama",
@@ -105039,11 +105278,13 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "opencode",
         "headroom",
-        "rtk"
+        "rtk",
+        "context7"
       ],
-      "alt": [],
+      "alt": [
+        "opencode"
+      ],
       "stack": "Terminal; cuenta o proveedor admitido; carpeta de prueba",
       "repo_url": "https://github.com/XiaomiMiMo/MiMo-Code",
       "doc": "human/fichas/mimo-code.md",
@@ -105157,11 +105398,6 @@
       "homepage": "https://mimo.xiaomi.com/mimocode",
       "combina_con": [
         {
-          "id": "opencode",
-          "motivo": "Compatibilidad opcional con skills de OpenCode (`MIMOCODE_ENABLE_OPENCODE_SKILLS`).",
-          "orden_instalacion": "Activa la variable para reutilizar tus skills."
-        },
-        {
           "id": "headroom",
           "motivo": "Comprimir el contexto en sesiones largas. (combinación por arquitectura)",
           "orden_instalacion": "Envuelve el agente con Headroom si es compatible."
@@ -105170,12 +105406,17 @@
           "id": "rtk",
           "motivo": "Reducir la salida de comandos. (combinación por arquitectura)",
           "orden_instalacion": "Configura los hooks de rtk si son compatibles."
+        },
+        {
+          "id": "context7",
+          "motivo": "MiMo Code admite servidores MCP remotos en su configuración `mcp` (el README muestra Exa y Tavily); Context7 aporta documentación actualizada de librerías. (combinación por arquitectura)",
+          "orden_instalacion": "Añade Context7 como servidor MCP remoto en la configuración."
         }
       ],
       "que_es": "MiMoCode, asistente de programación para terminal de Xiaomi MiMo, construido como fork de OpenCode. Licencia MIT. Tiene ~14k estrellas (v0.1.17).",
       "que_hace": "Mantiene las capacidades de OpenCode (múltiples proveedores, TUI, LSP, MCP, plugins) y añade memoria persistente, gestión inteligente de contexto, orquestación de subagentes, bucles autónomos guiados por objetivos y checkpoints automáticos. Incluye búsqueda web con Exa o Tavily.",
       "como_lo_hace": "Se instala con `curl -fsSL https://mimo.xiaomi.com/install | bash` o PowerShell. Admite cualquier proveedor de LLM y puede usar opcionalmente skills de `.opencode/skills`.",
-      "descripcion_notas": "Sin alternativas declaradas; funcionalmente compite con opencode (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): opencode.",
       "descripcion_fuentes": [
         "https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md"
       ],
@@ -105201,12 +105442,13 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
-      "combine_refs": [
+      "alt_refs": [
         {
           "id": "opencode",
           "label": "opencode"
-        },
+        }
+      ],
+      "combine_refs": [
         {
           "id": "headroom",
           "label": "headroom"
@@ -105214,6 +105456,10 @@
         {
           "id": "rtk",
           "label": "rtk"
+        },
+        {
+          "id": "context7",
+          "label": "context7"
         }
       ],
       "areas": [
@@ -105688,7 +105934,8 @@
         "codex",
         "goose",
         "gemini-cli",
-        "aider"
+        "aider",
+        "mimo-code"
       ],
       "stack": "Node para npm; repositorio de prueba; cuenta de proveedor o Ollama",
       "repo_url": "https://github.com/anomalyco/opencode",
@@ -105829,7 +106076,7 @@
       "que_es": "OpenCode, agente de programación open source para la terminal, de Anomaly (organización anomalyco). Licencia MIT. Es uno de los repos más populares del catálogo (~227k estrellas, v1.19.5).",
       "que_hace": "Funciona como agente en una TUI, en una app de escritorio (beta) o mediante servidor y SDK. Se conecta a muchos proveedores de modelos, incluidos los locales. Integra LSP, MCP, plugins, skills y agentes configurables (por ejemplo, modos de planificación y construcción).",
       "como_lo_hace": "Se instala con `curl -fsSL https://opencode.ai/v2/install | bash`, `npm i -g @opencode/cli`, Homebrew (tap propio o fórmula oficial), Nix o el cask de escritorio. Los proveedores y modelos se configuran en `opencode.json` o desde la TUI.",
-      "descripcion_notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider.",
+      "descripcion_notas": "Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.",
       "descripcion_fuentes": [
         "https://github.com/anomalyco/opencode/blob/dev/README.md",
         "https://opencode.ai/docs/providers/"
@@ -105876,6 +106123,10 @@
         {
           "id": "aider",
           "label": "aider"
+        },
+        {
+          "id": "mimo-code",
+          "label": "mimo-code"
         }
       ],
       "combine_refs": [
@@ -105929,7 +106180,9 @@
         "ollama",
         "coolify"
       ],
-      "alt": [],
+      "alt": [
+        "t3code"
+      ],
       "stack": "Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado",
       "repo_url": "https://github.com/chriswritescode-dev/opencode-manager",
       "doc": "human/fichas/opencode-manager.md",
@@ -106058,7 +106311,7 @@
       "que_es": "OpenCode Manager, centro de mando web autoalojado para OpenCode, de @chriswritescode-dev. Licencia MIT. Tiene ~1k estrellas y está activo.",
       "que_hace": "Reúne en una app web, usable desde escritorio y móvil, las sesiones de OpenCode, git, una terminal y tareas programadas. Incluye la CLI `ocm`.",
       "como_lo_hace": "Requiere Docker con Compose v2. Se instala con `curl -fsSL https://opencodemanager.app/install | sh`, que lo arranca en http://localhost:5003 y pide crear una cuenta de administrador. Es un workspace pnpm: backend con Bun y Hono, frontend con React y Vite.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con t3code (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): t3code.",
       "descripcion_fuentes": [
         "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
         "https://opencodemanager.app/docs/getting-started/installation"
@@ -106085,7 +106338,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "t3code",
+          "label": "t3code"
+        }
+      ],
       "combine_refs": [
         {
           "id": "opencode",
@@ -106780,7 +107038,9 @@
         "codex",
         "opencode"
       ],
-      "alt": [],
+      "alt": [
+        "opencode-manager"
+      ],
       "stack": "Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba",
       "repo_url": "https://github.com/pingdotgg/t3code",
       "doc": "human/fichas/t3code.md",
@@ -106913,7 +107173,7 @@
       "que_es": "T3 Code, plano de control open source para agentes de programación, de ping.gg. Licencia MIT. Es muy popular (~62k estrellas, v0.1.9).",
       "que_hace": "Ejecuta los agentes en tu máquina y les da una interfaz común en escritorio, web, iOS y Android: empiezas un hilo en el ordenador y apruebas el siguiente paso desde el móvil. Funciona con Claude Code, Codex, Cursor, OpenCode, Grok Build, Antigravity, Kiro y cualquier agente ACP, usando tus suscripciones.",
       "como_lo_hace": "Se instala con `brew install --cask t3-code` o las descargas por plataforma, o se prueba con `npx t3@latest`. Puede exponerse a agentes externos por MCP.",
-      "descripcion_notas": "Sin alternativas declaradas; solapa con opencode-manager (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): opencode-manager.",
       "descripcion_fuentes": [
         "https://github.com/pingdotgg/t3code/blob/main/README.md"
       ],
@@ -106939,7 +107199,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "opencode-manager",
+          "label": "opencode-manager"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -107838,7 +108103,8 @@
       ],
       "alt": [
         "storm",
-        "vane"
+        "vane",
+        "local-deep-research"
       ],
       "stack": "Python 3.11+; proveedor y buscador; cliente MCP solo si eliges esa ruta",
       "repo_url": "https://github.com/assafelovic/gpt-researcher",
@@ -107974,7 +108240,7 @@
       "que_es": "GPT Researcher, agente open source de investigación profunda en web y documentos locales, de @assafelovic. Licencia Apache-2.0. Es maduro (desde 2023, ~31k estrellas, v3.8.0).",
       "que_hace": "Planifica una investigación, consulta múltiples fuentes y genera informes detallados con citas. Admite investigación híbrida web más MCP (GitHub, bases de datos, APIs) y se puede usar como skill de Claude.",
       "como_lo_hace": "Requiere Python 3.12+. Se instala con `pip install gpt-researcher` o desde el repo (servidor FastAPI con uvicorn), y como skill con `npx skills add assafelovic/gpt-researcher`. El buscador se elige con `RETRIEVER` (por ejemplo `tavily,mcp`) y necesita claves de LLM y de búsqueda.",
-      "descripcion_notas": "Alternativas (elige una): storm, vane. Se quita browser-use de las combinaciones (no hay integración documentada).",
+      "descripcion_notas": "Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).",
       "descripcion_fuentes": [
         "https://github.com/assafelovic/gpt-researcher/blob/main/README.md"
       ],
@@ -108008,6 +108274,10 @@
         {
           "id": "vane",
           "label": "vane"
+        },
+        {
+          "id": "local-deep-research",
+          "label": "local-deep-research"
         }
       ],
       "combine_refs": [
@@ -108489,7 +108759,9 @@
         "searxng",
         "llama-cpp"
       ],
-      "alt": [],
+      "alt": [
+        "gpt-researcher"
+      ],
       "stack": "Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo",
       "repo_url": "https://github.com/LearningCircuit/local-deep-research",
       "doc": "human/fichas/local-deep-research.md",
@@ -108624,7 +108896,7 @@
       "que_es": "Local Deep Research, asistente de investigación agéntica que puede ejecutarse totalmente en local, de LearningCircuit. Licencia MIT. Tiene ~9.6k estrellas (v2.0.1); según su propio README, alcanza ~95% en SimpleQA con Qwen3.6-27B en una RTX 3090 (benchmark del autor).",
       "que_hace": "Hace investigación profunda con múltiples LLM y buscadores, con citas, y construye una base de conocimiento consultable. La base de datos está cifrada con SQLCipher.",
       "como_lo_hace": "Se despliega con Docker o Docker Compose junto a Ollama (por ejemplo, `gpt-oss:20b`) y SearXNG. En Docker Desktop (Mac/Windows/WSL2), `--network host` no funciona y hay que usar Compose.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con gpt-researcher (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): gpt-researcher.",
       "descripcion_fuentes": [
         "https://github.com/LearningCircuit/local-deep-research/blob/main/README.md"
       ],
@@ -108650,7 +108922,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "gpt-researcher",
+          "label": "gpt-researcher"
+        }
+      ],
       "combine_refs": [
         {
           "id": "ollama",
@@ -108915,7 +109192,9 @@
         "codex",
         "opencode"
       ],
-      "alt": [],
+      "alt": [
+        "paperclip"
+      ],
       "stack": "Un CLI de agente instalado y autenticado; Docker si autoalojas servidor",
       "repo_url": "https://github.com/multica-ai/multica",
       "doc": "human/fichas/multica.md",
@@ -109044,7 +109323,7 @@
       "que_es": "Multica, workspace para asignar trabajo a agentes de programación como si fueran compañeros de equipo, de multica-ai, escrito en Go. Es source-available: «Multica License», Apache-2.0 con condiciones adicionales sobre servicios alojados, integración comercial y marca. Tiene ~56k estrellas.",
       "que_hace": "Los agentes reciben issues, informan del progreso, señalan bloqueos y devuelven el resultado para revisión. Admite squads mixtos de personas y agentes, skills reutilizables y runtimes propios mediante un daemon.",
       "como_lo_hace": "Se autoaloja con Docker Compose o Helm usando imágenes de GHCR, y usa las CLIs de agente que ya tienes (Claude Code, Codex, Cursor, Copilot, Kimi, OpenCode). Tiene telemetría anónima de despliegue que se puede desactivar.",
-      "descripcion_notas": "Sin alternativas declaradas. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
+      "descripcion_notas": "Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
       "descripcion_fuentes": [
         "https://github.com/multica-ai/multica/blob/main/README.md",
         "https://multica.ai/docs/agents"
@@ -109071,7 +109350,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "paperclip",
+          "label": "paperclip"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -109564,7 +109848,9 @@
         "codex",
         "hermes-agent"
       ],
-      "alt": [],
+      "alt": [
+        "multica"
+      ],
       "stack": "Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba",
       "repo_url": "https://github.com/paperclipai/paperclip",
       "doc": "human/fichas/paperclip.md",
@@ -109700,7 +109986,7 @@
       "que_es": "Paperclip, servidor Node.js con interfaz React para orquestar equipos de agentes de IA como si fueran una empresa. Licencia MIT. Creado en marzo de 2026, ya tiene ~114k estrellas; hay lista de espera para un servicio cloud.",
       "que_hace": "Defines objetivos de negocio, «contratas» agentes con roles (CEO, CTO…), apruebas la estrategia y fijas presupuestos. Incluye organigramas, gobernanza, seguimiento de tokens y costes por agente o proyecto, y conectores (GitHub, Notion, Railway, MCP).",
       "como_lo_hace": "Se inicia con `npx paperclipai@latest onboard --yes` o se prueba con `npx paperclipai test-drive` y una clave de proveedor. Funciona con OpenClaw, Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes y otros.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con multica (solo anotado). Conviene vigilar el gasto con presupuestos.",
+      "descripcion_notas": "Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos.",
       "descripcion_fuentes": [
         "https://github.com/paperclipai/paperclip/blob/master/README.md",
         "https://docs.paperclip.ing/connectors/"
@@ -109727,7 +110013,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "multica",
+          "label": "multica"
+        }
+      ],
       "combine_refs": [
         {
           "id": "openclaw",
@@ -110815,7 +111106,9 @@
         "adguardhome",
         "activepieces"
       ],
-      "alt": [],
+      "alt": [
+        "coolify"
+      ],
       "stack": "Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar",
       "repo_url": "https://github.com/IceWhaleTech/CasaOS",
       "doc": "human/fichas/casaos.md",
@@ -110943,7 +111236,7 @@
       "que_es": "CasaOS, sistema para nube personal sobre Docker, de IceWhaleTech (ZimaSpace). Licencia Apache-2.0. Tiene ~38k estrellas, pero su última release es v0.4.15 (diciembre de 2024), aunque el repo sigue recibiendo cambios.",
       "que_hace": "Ofrece un panel web para gestionar un servidor doméstico, archivos y una tienda de apps con instalación en un clic, además de acceso a miles de apps del ecosistema Docker. Funciona en ZimaBoard, NUC, Raspberry Pi o equipos viejos.",
       "como_lo_hace": "Se instala con un script en Debian, Ubuntu, Raspberry Pi OS y similares, y requiere Docker.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con coolify (solo anotado). Ritmo de releases lento.",
+      "descripcion_notas": "Alternativa (elige una): coolify. Ritmo de releases lento.",
       "descripcion_fuentes": [
         "https://github.com/IceWhaleTech/CasaOS/blob/main/README.md"
       ],
@@ -110969,7 +111262,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "coolify",
+          "label": "coolify"
+        }
+      ],
       "combine_refs": [
         {
           "id": "nextcloud-server",
@@ -111017,7 +111315,9 @@
         "codex",
         "opencode"
       ],
-      "alt": [],
+      "alt": [
+        "spec-kit"
+      ],
       "stack": "Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio",
       "repo_url": "https://github.com/eyaltoledano/claude-task-master",
       "doc": "human/fichas/claude-task-master.md",
@@ -111152,7 +111452,7 @@
       "que_es": "Taskmaster, sistema de gestión de tareas para desarrollo con IA, de @eyaltoledano y @RalphEcom. Licencia MIT con Commons Clause (no OSI; GitHub muestra NOASSERTION). Tiene ~28k estrellas, pero su último cambio es de abril de 2026; la documentación vive en tryhamster.com.",
       "que_hace": "Convierte un PRD en tareas con dependencias y estructura, y las expande y gestiona desde el editor. Usa tres roles de modelo (principal, investigación y respaldo).",
       "como_lo_hace": "Se usa como servidor MCP (recomendado: `claude mcp add taskmaster-ai -- npx -y task-master-ai`, o el deeplink de Cursor) o como CLI. Admite Claude Code sin clave de API y Codex CLI vía OAuth, además de claves de proveedores.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con spec-kit (solo anotado). Actividad reciente baja.",
+      "descripcion_notas": "Alternativa (elige una): spec-kit. Actividad reciente baja.",
       "descripcion_fuentes": [
         "https://github.com/eyaltoledano/claude-task-master/blob/main/README.md",
         "https://tryhamster.com/docs/taskmaster/capabilities/mcp"
@@ -111179,7 +111479,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "spec-kit",
+          "label": "spec-kit"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -111451,7 +111756,9 @@
         "windmill",
         "freedomain"
       ],
-      "alt": [],
+      "alt": [
+        "casaos"
+      ],
       "stack": "Servidor compatible; Docker; dominio opcional; aplicación de prueba",
       "repo_url": "https://github.com/coollabsio/coolify",
       "doc": "human/fichas/coolify.md",
@@ -111585,7 +111892,7 @@
       "que_es": "Coolify, plataforma autoalojada para desplegar aplicaciones, bases de datos y servicios en tus propios servidores, de coollabsio. Licencia Apache-2.0. Es muy popular (~66k estrellas), activa y financiada por patrocinios.",
       "que_hace": "Es una alternativa autoalojada a Heroku, Netlify y Vercel. Despliega desde GitHub, GitLab, Bitbucket o Gitea con Nixpacks, Railpack, Dockerfile, Compose o imágenes. Gestiona bases de datos, backups, SSL y dominios, con dashboard, API, CLI y MCP. Los recursos siguen funcionando si dejas de usarlo.",
       "como_lo_hace": "Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en un servidor compatible (VPS, bare metal, Raspberry Pi); solo necesita SSH hacia los servidores gestionados.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con casaos en el uso doméstico (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): casaos.",
       "descripcion_fuentes": [
         "https://github.com/coollabsio/coolify/blob/main/README.md",
         "https://coolify.io/docs/installation",
@@ -111613,7 +111920,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "casaos",
+          "label": "casaos"
+        }
+      ],
       "combine_refs": [
         {
           "id": "supabase",
@@ -113774,9 +114086,13 @@
       "combines_with": [
         "claude-code",
         "ollama",
+        "vllm"
+      ],
+      "alt": [
+        "omniroute",
+        "claude-code-router",
         "litellm"
       ],
-      "alt": [],
       "stack": "Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba",
       "repo_url": "https://github.com/ajsai47/backdoor",
       "doc": "human/fichas/backdoor.md",
@@ -113900,15 +114216,15 @@
           "orden_instalacion": "Arranca Ollama y elígelo como backend."
         },
         {
-          "id": "litellm",
-          "motivo": "Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura)",
-          "orden_instalacion": "Apunta Backdoor a la URL del proxy LiteLLM."
+          "id": "vllm",
+          "motivo": "vLLM sirve modelos propios con API compatible con OpenAI, el tipo de proveedor al que Backdoor redirige Claude Code. (combinación por arquitectura)",
+          "orden_instalacion": "Levanta vLLM primero y apunta Backdoor a su URL base."
         }
       ],
       "que_es": "Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.",
       "que_hace": "Intercepta las llamadas de Claude Code a la API de Anthropic, traduce el formato y las reenvía a cualquier proveedor compatible con OpenAI (DeepSeek, Groq, OpenRouter, Ollama o un modelo local). Permite cambiar de proveedor con una línea. El README presenta una comparación de costes propia que no se ha verificado.",
       "como_lo_hace": "Es un proyecto en Python de menos de 600 líneas (servidor, asistente de configuración y scripts) que se ejecuta en local con uv y un archivo `.env`. Requiere tener Claude Code instalado. Con Ollama no salen datos de tu máquina.",
-      "descripcion_notas": "Sin alternativas declaradas. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
+      "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
       "descripcion_fuentes": [
         "https://github.com/ajsai47/backdoor/blob/main/README.md"
       ],
@@ -113933,7 +114249,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "omniroute",
+          "label": "omniroute"
+        },
+        {
+          "id": "claude-code-router",
+          "label": "claude-code-router"
+        },
+        {
+          "id": "litellm",
+          "label": "litellm"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -113944,8 +114273,8 @@
           "label": "ollama"
         },
         {
-          "id": "litellm",
-          "label": "litellm"
+          "id": "vllm",
+          "label": "vllm"
         }
       ],
       "areas": [
@@ -113983,7 +114312,11 @@
         "codex",
         "opencode"
       ],
-      "alt": [],
+      "alt": [
+        "omniroute",
+        "backdoor",
+        "litellm"
+      ],
       "stack": "Node 22+ o app; proveedor y credenciales; agente de prueba",
       "repo_url": "https://github.com/musistudio/claude-code-router",
       "doc": "human/fichas/claude-code-router.md",
@@ -114113,7 +114446,7 @@
       "que_es": "Claude Code Router (CCR), pasarela local y plano de control para agentes de programación, de @musistudio. Licencia MIT. Es muy popular (~38k estrellas, v3.1.4).",
       "que_hace": "Conecta Claude Code, Codex, OpenCode, Kimi CLI, Kilo Code y otros clientes con los proveedores que elijas (OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek, Moonshot, Mistral…), con enrutado, reintentos, rotación de claves y modelos de respaldo. Añade capacidades como visión, búsqueda web, herramientas MCP y ToolHub. Muestra registros de peticiones, rutas resueltas, latencia, tokens, coste estimado y cuotas por cliente.",
       "como_lo_hace": "Se usa como app de escritorio (Electron) o con `npm install -g @musistudio/claude-code-router` y `ccr ui` (Node.js 22+), y también con Docker en `127.0.0.1:3458`. Las claves de los proveedores se guardan en local.",
-      "descripcion_notas": "Sin alternativas declaradas. Posible grupo alt con omniroute, backdoor y litellm (solo anotado). Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
+      "descripcion_notas": "Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
       "descripcion_fuentes": [
         "https://github.com/musistudio/claude-code-router/blob/main/README.md"
       ],
@@ -114139,7 +114472,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "omniroute",
+          "label": "omniroute"
+        },
+        {
+          "id": "backdoor",
+          "label": "backdoor"
+        },
+        {
+          "id": "litellm",
+          "label": "litellm"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -115098,7 +115444,11 @@
         "langfuse",
         "claude-code"
       ],
-      "alt": [],
+      "alt": [
+        "omniroute",
+        "claude-code-router",
+        "backdoor"
+      ],
       "stack": "Python y uv; proveedor o endpoint local; presupuesto de prueba",
       "repo_url": "https://github.com/BerriAI/litellm",
       "doc": "human/fichas/litellm.md",
@@ -115235,7 +115585,7 @@
       "que_es": "LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra NOASSERTION). Es muy popular (~63k estrellas, v1.10x).",
       "que_hace": "Permite llamar a OpenAI, Anthropic, Gemini, Bedrock, Azure, Ollama y otros con una sola interfaz. Como proxy centralizado añade claves virtuales, control de gasto, guardrails, balanceo de carga, enrutamiento automático por complejidad, panel de administración y una pasarela MCP. Funciones como SSO o ciertos guardrails requieren la licencia Enterprise.",
       "como_lo_hace": "En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefijo del modelo (`openai/...`, `anthropic/...`) y `Router` reparte entre modelos. El proxy (`litellm[proxy]`, puerto 4000) expone endpoints compatibles con OpenAI como `/chat/completions`, `/embeddings`, `/responses` y `/messages`, de modo que un cliente de OpenAI solo cambia `base_url`. Los paquetes `litellm` y `litellm-core` no deben instalarse en el mismo entorno. Fija versiones: el 24 de marzo de 2026 se publicaron en PyPI las versiones maliciosas 1.82.7 y 1.82.8, con un ladrón de credenciales. La imagen Docker oficial no se vio afectada.",
-      "descripcion_notas": "Sin alternativas declaradas. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
+      "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
       "descripcion_fuentes": [
         "https://github.com/BerriAI/litellm/blob/main/README.md",
         "https://docs.litellm.ai/docs/providers/ollama",
@@ -115265,7 +115615,20 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "omniroute",
+          "label": "omniroute"
+        },
+        {
+          "id": "claude-code-router",
+          "label": "claude-code-router"
+        },
+        {
+          "id": "backdoor",
+          "label": "backdoor"
+        }
+      ],
       "combine_refs": [
         {
           "id": "ollama",
@@ -115954,7 +116317,11 @@
         "cline",
         "ollama"
       ],
-      "alt": [],
+      "alt": [
+        "claude-code-router",
+        "backdoor",
+        "litellm"
+      ],
       "stack": "Node o distribución compatible; cuentas de proveedores o backend local; agente opcional",
       "repo_url": "https://github.com/cheaper-inference/OmniRoute",
       "doc": "human/fichas/omniroute.md",
@@ -116086,7 +116453,7 @@
       "que_es": "OmniRoute, pasarela local de IA gratuita creada por @diegosouzapw. Licencia MIT. Tiene un recuento de estrellas inusualmente alto (~88k) y publica versiones casi a diario (v3.8.53).",
       "que_hace": "Expone un único endpoint compatible con OpenAI (`http://localhost:20128/v1`) que enruta hacia cientos de proveedores con fallback automático, circuit breakers y control de cuotas. Cataloga niveles gratuitos de terceros y estima tokens disponibles, pero exige tus propias cuentas y credenciales. Tiene modos de enrutado (p. ej. solo suscripción o «thrifty»), analítica de costes, MCP/A2A y modo remoto.",
       "como_lo_hace": "Se instala con `npm install -g omniroute`, con Docker (`diegosouzapw/omniroute`) o desde el código, y se conectan proveedores desde el panel web. Funciones avanzadas como el descifrado MITM transparente (TPROXY) instalan una CA local: úsalas con cuidado. Los proveedores marcados `tos: avoid` quedan fuera del enrutado automático por defecto.",
-      "descripcion_notas": "Sin alternativas declaradas. Posible grupo alt con claude-code-router, backdoor y litellm (solo anotado). Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
+      "descripcion_notas": "Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
       "descripcion_fuentes": [
         "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md"
       ],
@@ -116112,7 +116479,20 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "claude-code-router",
+          "label": "claude-code-router"
+        },
+        {
+          "id": "backdoor",
+          "label": "backdoor"
+        },
+        {
+          "id": "litellm",
+          "label": "litellm"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -119618,7 +119998,9 @@
         "diffusers",
         "vllm"
       ],
-      "alt": [],
+      "alt": [
+        "tensorflow"
+      ],
       "stack": "Python compatible; paquete para CPU o tu GPU; entorno aislado",
       "repo_url": "https://github.com/pytorch/pytorch",
       "doc": "human/fichas/pytorch.md",
@@ -119746,7 +120128,7 @@
       "que_es": "PyTorch, framework de deep learning con tensores acelerados por GPU y autograd dinámico, gobernado por la PyTorch Foundation (Linux Foundation). Licencia de estilo BSD (GitHub muestra NOASSERTION). Es muy madura (~106k estrellas, v2.15.0).",
       "que_hace": "Ofrece cálculo de tensores tipo NumPy en GPU, redes neuronales con autograd basado en cinta, ejecución imperativa y compilación (`torch.compile`). Es la base de la mayoría de librerías modernas de modelos.",
       "como_lo_hace": "Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o CPU en pytorch.org) o desde el código fuente. Soporta GPU NVIDIA (CUDA), AMD (ROCm), Intel y Jetson.",
-      "descripcion_notas": "Sin alternativas declaradas; compite con tensorflow (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): tensorflow.",
       "descripcion_fuentes": [
         "https://github.com/pytorch/pytorch/blob/main/README.md",
         "https://pytorch.org/get-started/locally/"
@@ -119773,7 +120155,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "tensorflow",
+          "label": "tensorflow"
+        }
+      ],
       "combine_refs": [
         {
           "id": "transformers",
@@ -119824,7 +120211,9 @@
         "mediapipe",
         "marimo"
       ],
-      "alt": [],
+      "alt": [
+        "pytorch"
+      ],
       "stack": "Python; paquete y sistema compatibles; datos de ejemplo",
       "repo_url": "https://github.com/tensorflow/tensorflow",
       "doc": "human/fichas/tensorflow.md",
@@ -119953,7 +120342,7 @@
       "que_es": "TensorFlow, plataforma open source de aprendizaje automático creada en Google Brain. Licencia Apache-2.0. Es muy madura (~202k estrellas, v2.21.0).",
       "que_hace": "Permite construir, entrenar y desplegar modelos con APIs estables en Python y C++, además de un ecosistema de herramientas (Keras, TF Lite/LiteRT, TF Serving, TensorBoard). Hoy pierde peso frente a PyTorch en investigación.",
       "como_lo_hace": "Se instala con `pip install tensorflow` (o `tensorflow-cpu`) y tiene imágenes Docker. Soporta GPU NVIDIA con CUDA en Linux.",
-      "descripcion_notas": "Sin alternativas declaradas; compite con pytorch (solo anotado).",
+      "descripcion_notas": "Alternativa (elige una): pytorch.",
       "descripcion_fuentes": [
         "https://github.com/tensorflow/tensorflow/blob/master/README.md",
         "https://www.tensorflow.org/install"
@@ -119980,7 +120369,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "pytorch",
+          "label": "pytorch"
+        }
+      ],
       "combine_refs": [
         {
           "id": "transformers",
@@ -138502,7 +138896,10 @@
         "whisper-cpp",
         "kokoro"
       ],
-      "alt": [],
+      "alt": [
+        "pipecat",
+        "livekit-agents"
+      ],
       "stack": "Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba",
       "repo_url": "https://github.com/dograh-hq/dograh",
       "doc": "human/fichas/dograh.md",
@@ -138634,7 +139031,7 @@
       "que_es": "Dograh AI, plataforma open source y autoalojable para construir agentes de voz, alternativa a Vapi y Retell. Licencia BSD-2-Clause. Tiene ~6k estrellas y es activa (dograh-v1.51.0).",
       "que_hace": "Ofrece un constructor visual de flujos, pruebas rápidas, telefonía y la posibilidad de usar cualquier LLM, STT o TTS, o su propio stack. Los asistentes de código con IA pueden ayudar a diseñar los agentes.",
       "como_lo_hace": "Se autoaloja con un comando Docker. Por defecto el quickstart abre un túnel público de trycloudflare.com para los webhooks de telefonía y deja el registro abierto, algo a revisar en producción.",
-      "descripcion_notas": "Sin alternativas declaradas; se solapa con pipecat y livekit-agents (solo anotado). Revisa el túnel público y el registro abierto por defecto.",
+      "descripcion_notas": "Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.",
       "descripcion_fuentes": [
         "https://github.com/dograh-hq/dograh/blob/main/README.md"
       ],
@@ -138660,7 +139057,16 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "pipecat",
+          "label": "pipecat"
+        },
+        {
+          "id": "livekit-agents",
+          "label": "livekit-agents"
+        }
+      ],
       "combine_refs": [
         {
           "id": "ollama",
@@ -140218,7 +140624,8 @@
         "whisper-cpp"
       ],
       "alt": [
-        "pipecat"
+        "pipecat",
+        "dograh"
       ],
       "stack": "Python; LiveKit; proveedores o modelos locales; micrófono de prueba",
       "repo_url": "https://github.com/livekit/agents",
@@ -140354,7 +140761,7 @@
       "que_es": "LiveKit Agents, framework para agentes de voz y vídeo en tiempo real sobre la infraestructura WebRTC de LiveKit. Licencia Apache-2.0; sus modelos de detección de turno usan la «LiveKit Model License». Es activo (~15k estrellas, 1.8.12).",
       "que_hace": "Crea participantes programables que escuchan, hablan y ven en salas LiveKit, con plugins de STT, LLM y TTS, detección de turnos, herramientas y telefonía. Hay SDK en Python y Node.js (AgentsJS).",
       "como_lo_hace": "Se instala con `pip install \"livekit-agents[openai,deepgram,cartesia]\"` (u otros plugins) y requiere un servidor LiveKit, autoalojado o LiveKit Cloud.",
-      "descripcion_notas": "Alternativas (elige una): pipecat.",
+      "descripcion_notas": "Alternativas (elige una): pipecat, dograh.",
       "descripcion_fuentes": [
         "https://github.com/livekit/agents/blob/main/README.md"
       ],
@@ -140384,6 +140791,10 @@
         {
           "id": "pipecat",
           "label": "pipecat"
+        },
+        {
+          "id": "dograh",
+          "label": "dograh"
         }
       ],
       "combine_refs": [
@@ -140870,7 +141281,8 @@
         "nemo"
       ],
       "alt": [
-        "livekit-agents"
+        "livekit-agents",
+        "dograh"
       ],
       "stack": "uv; proveedores STT, LLM y TTS; micrófono; transporte local o remoto",
       "repo_url": "https://github.com/pipecat-ai/pipecat",
@@ -141008,7 +141420,7 @@
       "que_es": "Pipecat, framework open source en Python para agentes de voz y multimodales en tiempo real, creado por Daily. Licencia BSD-2-Clause. Es maduro y muy activo (~17k estrellas, v1.16.0).",
       "que_hace": "Construye agentes de voz individuales o sistemas multiagente con pipelines de STT, LLM y TTS, turnos de conversación, interrupciones y transporte en tiempo real. Tiene integraciones con decenas de servicios, entre ellos Whisper, Kokoro, Fish, Piper, XTTS, NVIDIA y Ollama, y transportes como Daily, LiveKit, WebSocket y telefonía.",
       "como_lo_hace": "Funciona con Python 3.11–3.14 (3.15 aún no, por onnxruntime) y se instala con `pip install pipecat-ai[...]` o `pipecat init quickstart`. Daily ofrece soporte enterprise.",
-      "descripcion_notas": "Alternativas (elige una): livekit-agents.",
+      "descripcion_notas": "Alternativas (elige una): livekit-agents, dograh.",
       "descripcion_fuentes": [
         "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
         "https://docs.pipecat.ai/getting-started/quickstart"
@@ -141039,6 +141451,10 @@
         {
           "id": "livekit-agents",
           "label": "livekit-agents"
+        },
+        {
+          "id": "dograh",
+          "label": "dograh"
         }
       ],
       "combine_refs": [
@@ -147476,7 +147892,9 @@
         "opencode",
         "mermaid"
       ],
-      "alt": [],
+      "alt": [
+        "diagram-design"
+      ],
       "stack": "Agente con archivos y ejecución; idea o repositorio de prueba",
       "repo_url": "https://github.com/tt-a1i/archify",
       "doc": "human/fichas/archify.md",
@@ -147609,7 +148027,7 @@
       "que_es": "Archify, skill que convierte ideas, preguntas o planes en visuales HTML interactivos, de @tt-a1i. Licencia Apache-2.0 (las concesiones MIT históricas siguen vigentes; servicios de terceros y planes de pago no son del proyecto). Creado en abril de 2026, tiene ~97k estrellas (v3.2.0), una cifra inusual.",
       "que_hace": "Describes lo que quieres entender o planificar (arquitecturas, mapas de aprendizaje, itinerarios) y el agente genera un HTML interactivo que se puede explorar, personalizar y compartir.",
       "como_lo_hace": "Funciona con Cursor, Claude Code, Codex CLI y OpenCode; en Claude.ai se sube `archify.zip` como skill (depende del acceso a Node.js en el sandbox).",
-      "descripcion_notas": "Sin alternativas declaradas. Tiene un grupo funcional con diagram-design.",
+      "descripcion_notas": "Alternativa (elige una): diagram-design.",
       "descripcion_fuentes": [
         "https://github.com/tt-a1i/archify/blob/main/README.md"
       ],
@@ -147635,7 +148053,12 @@
         "confidence": "clone",
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "diagram-design",
+          "label": "diagram-design"
+        }
+      ],
       "combine_refs": [
         {
           "id": "claude-code",
@@ -147685,7 +148108,9 @@
         "claude-code",
         "slidev"
       ],
-      "alt": [],
+      "alt": [
+        "archify"
+      ],
       "stack": "Agente compatible; proceso descrito; marca opcional; navegador",
       "repo_url": "https://github.com/cathrynlavery/diagram-design",
       "doc": "human/fichas/diagram-design.md",
@@ -147819,7 +148244,7 @@
       "que_es": "diagram-design, skill que dibuja diagramas como un único archivo HTML + SVG autocontenido con tu marca, de @cathrynlavery. Licencia MIT. Creado en abril de 2026, tiene ~67k estrellas y sin releases.",
       "que_hace": "Ofrece 50 tipos de diagrama con estética cuidada (sin sombras, a diferencia del «Mermaid genérico») y exportación a PNG.",
       "como_lo_hace": "Se instala con `npx skills add cathrynlavery/diagram-design`. La exportación a PNG usa Playwright (`pip install playwright && playwright install chromium`).",
-      "descripcion_notas": "Sin alternativas declaradas. Tiene un grupo funcional con archify.",
+      "descripcion_notas": "Alternativa (elige una): archify.",
       "descripcion_fuentes": [
         "https://github.com/cathrynlavery/diagram-design/blob/main/README.md"
       ],
@@ -147844,7 +148269,12 @@
         "confidence": "ok",
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
-      "alt_refs": [],
+      "alt_refs": [
+        {
+          "id": "archify",
+          "label": "archify"
+        }
+      ],
       "combine_refs": [
         {
           "id": "playwright",
@@ -149591,13 +150021,14 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "browser-use",
         "claude-code",
-        "codex"
+        "codex",
+        "gemini-cli"
       ],
       "alt": [
         "playwright-mcp",
-        "chrome-devtools-mcp"
+        "chrome-devtools-mcp",
+        "browser-use"
       ],
       "stack": "Browser Use CLI actual; Chrome y perfil de prueba; cliente agente",
       "repo_url": "https://github.com/browser-use/browser-harness",
@@ -149709,11 +150140,6 @@
       "homepage": "https://browser-harness.com",
       "combina_con": [
         {
-          "id": "browser-use",
-          "motivo": "Producto que ahora lo integra.",
-          "orden_instalacion": "Usa la CLI browser-use."
-        },
-        {
           "id": "claude-code",
           "motivo": "Agente documentado.",
           "orden_instalacion": "Registra la skill."
@@ -149722,12 +150148,17 @@
           "id": "codex",
           "motivo": "Agente documentado.",
           "orden_instalacion": "Registra la skill."
+        },
+        {
+          "id": "gemini-cli",
+          "motivo": "Cualquier cliente MCP puede usar Browser Harness vía `browser-harness-mcp`; Gemini CLI es uno de ellos. (combinación por arquitectura)",
+          "orden_instalacion": "Registra `browser-harness-mcp` en la configuración MCP de Gemini CLI."
         }
       ],
       "que_es": "Browser Harness, harness con el que Claude Code, Codex o Cursor usan tu Chrome real con tu sesión iniciada, de browser-use. Licencia MIT. Creado en abril de 2026 (~19k estrellas, v0.1.13); ahora es el motor de Browser Use y se recomienda usar la CLI `browser-use`.",
       "que_hace": "Abre páginas, hace clic, escribe, lee y descarga en tu navegador real mediante el protocolo de depuración remota.",
       "como_lo_hace": "Se instala con `uv tool install browser-use` y `browser-use skill install`, y luego activando la depuración remota en `chrome://inspect`. Al usar tu sesión real, el agente actúa con tus credenciales.",
-      "descripcion_notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp. Riesgo: acceso del agente a sesiones autenticadas.",
+      "descripcion_notas": "Alternativas (elige una): playwright-mcp, chrome-devtools-mcp, browser-use. Riesgo: acceso del agente a sesiones autenticadas.",
       "descripcion_fuentes": [
         "https://github.com/browser-use/browser-harness/blob/main/README.md"
       ],
@@ -149761,13 +150192,13 @@
         {
           "id": "chrome-devtools-mcp",
           "label": "chrome-devtools-mcp"
-        }
-      ],
-      "combine_refs": [
+        },
         {
           "id": "browser-use",
           "label": "browser-use"
-        },
+        }
+      ],
+      "combine_refs": [
         {
           "id": "claude-code",
           "label": "claude-code"
@@ -149775,6 +150206,10 @@
         {
           "id": "codex",
           "label": "codex"
+        },
+        {
+          "id": "gemini-cli",
+          "label": "gemini-cli"
         }
       ],
       "areas": [
@@ -149810,15 +150245,16 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "browser-harness",
         "claude-code",
-        "ollama"
+        "ollama",
+        "pydantic-ai"
       ],
       "alt": [
         "computer-use-preview",
         "stagehand",
         "skyvern",
-        "playwright-mcp"
+        "playwright-mcp",
+        "browser-harness"
       ],
       "stack": "Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba",
       "repo_url": "https://github.com/browser-use/browser-use",
@@ -149934,11 +150370,6 @@
       "homepage": "https://browser-use.com",
       "combina_con": [
         {
-          "id": "browser-harness",
-          "motivo": "Motor interno.",
-          "orden_instalacion": "Viene incluido."
-        },
-        {
           "id": "claude-code",
           "motivo": "Uso vía skill o MCP.",
           "orden_instalacion": "Registra la skill o el MCP."
@@ -149947,12 +150378,17 @@
           "id": "ollama",
           "motivo": "Modelos locales vía integraciones de modelos. (combinación por arquitectura)",
           "orden_instalacion": "Configura un modelo local compatible."
+        },
+        {
+          "id": "pydantic-ai",
+          "motivo": "Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI.",
+          "orden_instalacion": "Instala el extra correspondiente de pydantic-ai para el proveedor elegido."
         }
       ],
       "que_es": "Browser Use, agente de navegador open source de browser-use. La librería Python es MIT; la inferencia y los navegadores alojados son de pago. Es muy popular (~121k estrellas, v1.0.6).",
       "que_hace": "Le das una tarea y el modelo la ejecuta en un navegador real escribiendo Python en un REPL persistente con los helpers de browser-harness. Incluye CLI, login y servidor MCP.",
       "como_lo_hace": "Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta modelos propios, Anthropic, Google o cualquier modelo de Pydantic AI. Tiene telemetría anónima configurable.",
-      "descripcion_notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp.",
+      "descripcion_notas": "Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.",
       "descripcion_fuentes": [
         "https://github.com/browser-use/browser-use/blob/main/README.md",
         "https://docs.browser-use.com/"
@@ -149995,13 +150431,13 @@
         {
           "id": "playwright-mcp",
           "label": "playwright-mcp"
-        }
-      ],
-      "combine_refs": [
+        },
         {
           "id": "browser-harness",
           "label": "browser-harness"
-        },
+        }
+      ],
+      "combine_refs": [
         {
           "id": "claude-code",
           "label": "claude-code"
@@ -150009,6 +150445,10 @@
         {
           "id": "ollama",
           "label": "ollama"
+        },
+        {
+          "id": "pydantic-ai",
+          "label": "pydantic-ai"
         }
       ],
       "areas": [

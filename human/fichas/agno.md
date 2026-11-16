@@ -30,7 +30,7 @@ Python. Usa PostgreSQL para conversaciones, memoria y actividad, y ofrece planti
 | [Qdrant](qdrant.md) | Almacén vectorial para la base de conocimiento (documentado por Agno). | Qdrant primero; configúralo en el knowledge del agente. |
 | [mem0](mem0.md) | Memoria externa con integración documentada por Mem0. | Opcional: Agno ya trae memoria propia sobre PostgreSQL. |
 
-**Notas:** Alternativa (elige una): crewai. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.
+**Notas:** Alternativas (elige una): crewai, langgraph. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -107,6 +107,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [crewAI](crewai.md) | 60.9k | Framework para orquestar "crews" de agentes con roles y tareas. |
+| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
 ## Enlaces
 

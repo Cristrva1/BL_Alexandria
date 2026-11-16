@@ -30,7 +30,7 @@ Se autoaloja con Docker Compose o Helm usando imágenes de GHCR, y usa las CLIs 
 | [Codex CLI](codex.md) | Runtime de agente soportado. | Instala Codex en el runtime. |
 | [OpenCode](opencode.md) | Runtime de agente soportado. | Instala OpenCode en el runtime. |
 
-**Notas:** Sin alternativas declaradas. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.
+**Notas:** Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -99,6 +99,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Un CLI de agente instalado y autenticado; Docker si autoalojas servidor
 - **Etiquetas:** `agents` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [paperclip](paperclip.md) | 114k | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
 
 ## Enlaces
 

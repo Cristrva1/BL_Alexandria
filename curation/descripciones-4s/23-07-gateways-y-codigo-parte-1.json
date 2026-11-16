@@ -24,7 +24,7 @@
      "orden_instalacion": "Conecta tu instancia de Ollama como proveedor local."
     }
    ],
-   "notas": "Sin alternativas declaradas. Posible grupo alt con claude-code-router, backdoor y litellm (solo anotado). Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
+   "notas": "Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica confiar en una CA local.",
    "fuentes": [
     "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md"
    ],
@@ -59,7 +59,7 @@
      "orden_instalacion": "Apunta OpenCode a la pasarela de CCR."
     }
    ],
-   "notas": "Sin alternativas declaradas. Posible grupo alt con omniroute, backdoor y litellm (solo anotado). Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
+   "notas": "Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.",
    "fuentes": [
     "https://github.com/musistudio/claude-code-router/blob/main/README.md"
    ],
@@ -89,12 +89,12 @@
      "orden_instalacion": "Arranca Ollama y elígelo como backend."
     },
     {
-     "id": "litellm",
-     "motivo": "Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura)",
-     "orden_instalacion": "Apunta Backdoor a la URL del proxy LiteLLM."
+     "id": "vllm",
+     "motivo": "vLLM sirve modelos propios con API compatible con OpenAI, el tipo de proveedor al que Backdoor redirige Claude Code. (combinación por arquitectura)",
+     "orden_instalacion": "Levanta vLLM primero y apunta Backdoor a su URL base."
     }
    ],
-   "notas": "Sin alternativas declaradas. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
+   "notas": "Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. La calidad del agente depende mucho del modelo y de su soporte de herramientas. Cifras de ahorro del README sin verificar.",
    "fuentes": [
     "https://github.com/ajsai47/backdoor/blob/main/README.md"
    ],
@@ -205,7 +205,7 @@
      "orden_instalacion": "Usa Graphify para el código y GraphRAG para la documentación."
     }
    ],
-   "notas": "Sin alternativas declaradas; funcionalmente compite con codegraph (solo anotado). Ojo con paquetes PyPI de nombre parecido.",
+   "notas": "Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
    "fuentes": [
     "https://github.com/Graphify-Labs/graphify/blob/v8/README.md"
    ],
@@ -240,7 +240,7 @@
      "orden_instalacion": "Indexa con CodeGraph y envuelve el agente con Headroom."
     }
    ],
-   "notas": "Alternativas (elige una): codebase-memory-mcp, serena. Telemetría anónima activada.",
+   "notas": "Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.",
    "fuentes": [
     "https://github.com/colbymchenry/codegraph/blob/main/README.md",
     "https://colbymchenry.github.io/codegraph/"
@@ -266,17 +266,17 @@
      "orden_instalacion": "Instala el binario y ejecuta `install` para configurar el cliente."
     },
     {
-     "id": "serena",
-     "motivo": "Edición semántica con LSP junto a la memoria de grafo. (combinación por arquitectura)",
-     "orden_instalacion": "Usa codebase-memory para explorar y Serena para editar."
-    },
-    {
      "id": "repomix",
      "motivo": "Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)",
      "orden_instalacion": "Localiza con el grafo y empaqueta con Repomix."
+    },
+    {
+     "id": "codex",
+     "motivo": "Cliente MCP soportado: el README indica que comparte un daemon de coordinación entre Claude Code, Codex, OpenCode y otros clientes configurados.",
+     "orden_instalacion": "Ejecuta `install` para configurar Codex como cliente."
     }
    ],
-   "notas": "Alternativas (elige una): codegraph, gitnexus. Revisa el script de instalación antes de ejecutarlo.",
+   "notas": "Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
    "fuentes": [
     "https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md"
    ],
@@ -311,7 +311,7 @@
      "orden_instalacion": "Ejecuta `gitnexus setup -c codex`."
     }
    ],
-   "notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
+   "notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
    "fuentes": [
     "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md"
    ],

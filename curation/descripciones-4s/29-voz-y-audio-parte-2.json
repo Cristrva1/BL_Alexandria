@@ -132,7 +132,7 @@
      "orden_instalacion": "Configura el servicio NVIDIA."
     }
    ],
-   "notas": "Alternativas (elige una): livekit-agents.",
+   "notas": "Alternativas (elige una): livekit-agents, dograh.",
    "fuentes": [
     "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
     "https://docs.pipecat.ai/getting-started/quickstart"
@@ -168,7 +168,7 @@
      "orden_instalacion": "Expón el servidor y úsalo como STT."
     }
    ],
-   "notas": "Alternativas (elige una): pipecat.",
+   "notas": "Alternativas (elige una): pipecat, dograh.",
    "fuentes": [
     "https://github.com/livekit/agents/blob/main/README.md"
    ],
@@ -341,7 +341,7 @@
      "orden_instalacion": "Configura un TTS propio."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con pipecat y livekit-agents (solo anotado). Revisa el túnel público y el registro abierto por defecto.",
+   "notas": "Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.",
    "fuentes": [
     "https://github.com/dograh-hq/dograh/blob/main/README.md"
    ],

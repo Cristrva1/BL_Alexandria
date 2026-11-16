@@ -93,8 +93,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un perfil de prueba y solicita solo leer el título de una página
 **Qué comprobar:** Puedes identificar qué navegador y sesión expone al agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `browser-use`, `claude-code`, `codex`
-**Alternativas (elige una):** `playwright-mcp`, `chrome-devtools-mcp`
+**Combina con:** `claude-code`, `codex`, `gemini-cli`
+**Alternativas (elige una):** `playwright-mcp`, `chrome-devtools-mcp`, `browser-use`
 
 ## `browser-use`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,browser,python
@@ -124,8 +124,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un navegador de prueba y solicita leer una página sin enviar formularios ni usar cuentas personales
 **Qué comprobar:** Puedes revisar pestaña, contexto y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `browser-harness`, `claude-code`, `ollama`
-**Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`
+**Combina con:** `claude-code`, `ollama`, `pydantic-ai`
+**Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`, `browser-harness`
 
 ## `lightpanda`
 role=runtime · exec=local · setup=easy · mcp=True · prov=— · tags=browser,scraping

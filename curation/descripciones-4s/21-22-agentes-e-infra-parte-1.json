@@ -24,7 +24,7 @@
      "orden_instalacion": "Configura el LLM a través de un proveedor compatible."
     }
    ],
-   "notas": "Alternativas (elige una): storm, vane. Se quita browser-use de las combinaciones (no hay integración documentada).",
+   "notas": "Alternativas (elige una): storm, vane, local-deep-research. Se quita browser-use de las combinaciones (no hay integración documentada).",
    "fuentes": [
     "https://github.com/assafelovic/gpt-researcher/blob/main/README.md"
    ],
@@ -59,7 +59,7 @@
      "orden_instalacion": "Expón llama-server y configúralo."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con gpt-researcher (solo anotado).",
+   "notas": "Alternativa (elige una): gpt-researcher.",
    "fuentes": [
     "https://github.com/LearningCircuit/local-deep-research/blob/main/README.md"
    ],
@@ -99,7 +99,7 @@
      "orden_instalacion": "Registra Hermes vía su gateway."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con multica (solo anotado). Conviene vigilar el gasto con presupuestos.",
+   "notas": "Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos.",
    "fuentes": [
     "https://github.com/paperclipai/paperclip/blob/master/README.md",
     "https://docs.paperclip.ing/connectors/"

@@ -29,7 +29,7 @@
      "orden_instalacion": "Configura Mem0 y úsalo desde un nodo o herramienta."
     }
    ],
-   "notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python.",
+   "notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python, agno.",
    "fuentes": [
     "https://github.com/langchain-ai/langgraph/blob/main/README.md",
     "https://langfuse.com/integrations/frameworks/langchain",
@@ -190,7 +190,7 @@
      "orden_instalacion": "Opcional: Agno ya trae memoria propia sobre PostgreSQL."
     }
    ],
-   "notas": "Alternativa (elige una): crewai. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
+   "notas": "Alternativas (elige una): crewai, langgraph. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
    "fuentes": [
     "https://github.com/agno-agi/agno/blob/main/README.md",
     "https://docs.agno.com/knowledge/vector-stores/qdrant/overview",

@@ -24,12 +24,12 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Claude Code Plugins Directory](fichas/claude-plugins-official.md) | [wshobson/agents](fichas/wshobson-agents.md) |
 | [ECC](fichas/ecc.md) | [SuperClaude_Framework](fichas/superclaude-framework.md), [superpowers](fichas/superpowers.md), [gstack](fichas/gstack.md) |
 | [gstack](fichas/gstack.md) | [SuperClaude_Framework](fichas/superclaude-framework.md), [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md) |
-| [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md) |
+| [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md), [claude-task-master](fichas/claude-task-master.md) |
 | [SuperClaude_Framework](fichas/superclaude-framework.md) | [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
 | [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md), [SuperClaude_Framework](fichas/superclaude-framework.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
 | [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
 | [Agent Development Kit (ADK)](fichas/adk-python.md) | [LangGraph](fichas/langgraph.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
-| [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md) |
+| [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md), [LangGraph](fichas/langgraph.md) |
 | [AI SDK (Vercel)](fichas/vercel-ai.md) | [LangGraph.js](fichas/langgraphjs.md), [Mastra](fichas/mastra.md) |
 | [AutoGPT](fichas/autogpt.md) | [Sim](fichas/sim.md), [langflow](fichas/langflow.md) |
 | [crewAI](fichas/crewai.md) | [LangGraph](fichas/langgraph.md), [Agno](fichas/agno.md), [MetaGPT](fichas/metagpt.md) |
@@ -39,7 +39,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Haystack](fichas/haystack.md) | [LlamaIndex](fichas/llama-index.md), [langchain](fichas/langchain.md) |
 | [langchain](fichas/langchain.md) | [LlamaIndex](fichas/llama-index.md), [Haystack](fichas/haystack.md) |
 | [langflow](fichas/langflow.md) | [Sim](fichas/sim.md), [AutoGPT](fichas/autogpt.md) |
-| [LangGraph](fichas/langgraph.md) | [crewAI](fichas/crewai.md), [OpenAI Agents SDK](fichas/openai-agents-python.md), [Pydantic AI](fichas/pydantic-ai.md), [Agent Development Kit (ADK)](fichas/adk-python.md) |
+| [LangGraph](fichas/langgraph.md) | [crewAI](fichas/crewai.md), [OpenAI Agents SDK](fichas/openai-agents-python.md), [Pydantic AI](fichas/pydantic-ai.md), [Agent Development Kit (ADK)](fichas/adk-python.md), [Agno](fichas/agno.md) |
 | [LangGraph.js](fichas/langgraphjs.md) | [Mastra](fichas/mastra.md), [AI SDK (Vercel)](fichas/vercel-ai.md) |
 | [LlamaIndex](fichas/llama-index.md) | [Haystack](fichas/haystack.md), [langchain](fichas/langchain.md) |
 | [Mastra](fichas/mastra.md) | [LangGraph.js](fichas/langgraphjs.md), [AI SDK (Vercel)](fichas/vercel-ai.md) |
@@ -62,7 +62,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md) | [mcp-use](fichas/mcp-use.md) |
 | [mcp-use](fichas/mcp-use.md) | [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md) |
 | [Playwright MCP](fichas/playwright-mcp.md) | [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md), [browser-use](fichas/browser-use.md), [Browser Harness](fichas/browser-harness.md) |
-| [Serena](fichas/serena.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md) |
+| [Serena](fichas/serena.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [graphify](fichas/graphify.md) |
 | [agentmemory](fichas/agentmemory.md) | [Engram](fichas/engram.md), [supermemory](fichas/supermemory.md), [claude-mem](fichas/claude-mem.md) |
 | [Chroma](fichas/chroma.md) | [Qdrant](fichas/qdrant.md), [pgvector](fichas/pgvector.md), [Milvus](fichas/milvus.md), [Faiss](fichas/faiss.md) |
 | [claude-mem](fichas/claude-mem.md) | [Engram](fichas/engram.md), [agentmemory](fichas/agentmemory.md) |
@@ -74,17 +74,18 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Letta](fichas/letta.md) | [mem0](fichas/mem0.md), [cognee](fichas/cognee.md) |
 | [LightRAG](fichas/lightrag.md) | [graphrag](fichas/graphrag.md), [RAGFlow](fichas/ragflow.md), [PageIndex](fichas/pageindex.md) |
 | [mem0](fichas/mem0.md) | [Letta](fichas/letta.md), [cognee](fichas/cognee.md), [supermemory](fichas/supermemory.md) |
-| [Milvus](fichas/milvus.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md) |
+| [Milvus](fichas/milvus.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md) |
 | [onyx](fichas/onyx.md) | [AnythingLLM](fichas/anything-llm.md) |
 | [PageIndex](fichas/pageindex.md) | [LightRAG](fichas/lightrag.md) |
-| [pgvector](fichas/pgvector.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md) |
+| [pgvector](fichas/pgvector.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md), [Milvus](fichas/milvus.md) |
 | [Qdrant](fichas/qdrant.md) | [Milvus](fichas/milvus.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md), [Faiss](fichas/faiss.md) |
 | [RAGFlow](fichas/ragflow.md) | [dify](fichas/dify.md), [LightRAG](fichas/lightrag.md) |
 | [supermemory](fichas/supermemory.md) | [mem0](fichas/mem0.md), [agentmemory](fichas/agentmemory.md) |
 | [ast-grep](fichas/ast-grep.md) | [Semgrep](fichas/semgrep.md) |
-| [codebase-memory-mcp](fichas/codebase-memory-mcp.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md) |
-| [codegraph](fichas/codegraph.md) | [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md) |
-| [GitNexus](fichas/gitnexus.md) | [Repomix](fichas/repomix.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md) |
+| [codebase-memory-mcp](fichas/codebase-memory-mcp.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [Serena](fichas/serena.md), [graphify](fichas/graphify.md) |
+| [codegraph](fichas/codegraph.md) | [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [GitNexus](fichas/gitnexus.md), [graphify](fichas/graphify.md) |
+| [GitNexus](fichas/gitnexus.md) | [Repomix](fichas/repomix.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [codegraph](fichas/codegraph.md), [graphify](fichas/graphify.md) |
+| [graphify](fichas/graphify.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [Serena](fichas/serena.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md) |
 | [Repomix](fichas/repomix.md) | [GitNexus](fichas/gitnexus.md) |
 | [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md), [onyx](fichas/onyx.md) |
 | [chatbox](fichas/chatbox.md) | [Jan](fichas/jan.md) |
@@ -121,8 +122,10 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Chart.js](fichas/chart-js.md) | [echarts](fichas/echarts.md), [Recharts](fichas/recharts.md) |
 | [D3.js](fichas/d3.md) | [echarts](fichas/echarts.md) |
 | [echarts](fichas/echarts.md) | [D3.js](fichas/d3.md), [Chart.js](fichas/chart-js.md), [Recharts](fichas/recharts.md) |
+| [gods-eye-view](fichas/gods-eye-view.md) | [osiris](fichas/osiris.md) |
 | [Matomo](fichas/matomo.md) | [Umami](fichas/umami.md), [Plausible Analytics](fichas/plausible.md) |
 | [metabase](fichas/metabase.md) | [Apache Superset](fichas/superset.md), [Redash](fichas/redash.md) |
+| [osiris](fichas/osiris.md) | [gods-eye-view](fichas/gods-eye-view.md) |
 | [Plausible Analytics](fichas/plausible.md) | [Umami](fichas/umami.md), [Matomo](fichas/matomo.md) |
 | [Recharts](fichas/recharts.md) | [Chart.js](fichas/chart-js.md), [echarts](fichas/echarts.md) |
 | [Redash](fichas/redash.md) | [metabase](fichas/metabase.md), [Apache Superset](fichas/superset.md) |
@@ -131,7 +134,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [InvokeAI](fichas/invokeai.md) | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) |
 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | [InvokeAI](fichas/invokeai.md) |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md) |
-| [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md) |
+| [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md), [short-video-factory](fichas/short-video-factory.md) |
+| [short-video-factory](fichas/short-video-factory.md) | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
 | [VideoLingo](fichas/videolingo.md) | [VoiceStudio](fichas/omnivoice-studio.md) |
 | [Wan2.2](fichas/wan2-2.md) | [HunyuanVideo](fichas/hunyuanvideo.md) |
 | [WanGP](fichas/wan2gp.md) | [ComfyUI](fichas/comfyui.md) |
@@ -154,6 +158,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
 | [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md) |
+| [shannon](fichas/shannon.md) | [strix](fichas/strix.md) |
+| [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [evolution-api](fichas/evolution-api.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [WAHA](fichas/waha.md) | [evolution-api](fichas/evolution-api.md), [whatsapp-web.js](fichas/whatsapp-web-js.md), [Baileys](fichas/baileys.md) |
@@ -176,24 +182,37 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Codex CLI](fichas/codex.md) | [Claude Code](fichas/claude-code.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md) |
 | [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md) |
 | [goose](fichas/goose.md) | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md), [Open Interpreter](fichas/open-interpreter.md) |
+| [MiMo-Code](fichas/mimo-code.md) | [OpenCode](fichas/opencode.md) |
 | [Open Interpreter](fichas/open-interpreter.md) | [goose](fichas/goose.md) |
 | [Open SWE](fichas/open-swe.md) | [OpenHands](fichas/openhands.md) |
-| [OpenCode](fichas/opencode.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [goose](fichas/goose.md), [Gemini CLI](fichas/gemini-cli.md), [Aider](fichas/aider.md) |
+| [OpenCode](fichas/opencode.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [goose](fichas/goose.md), [Gemini CLI](fichas/gemini-cli.md), [Aider](fichas/aider.md), [MiMo-Code](fichas/mimo-code.md) |
+| [opencode-manager](fichas/opencode-manager.md) | [T3 Code](fichas/t3code.md) |
 | [OpenHands](fichas/openhands.md) | [Open SWE](fichas/open-swe.md) |
+| [T3 Code](fichas/t3code.md) | [opencode-manager](fichas/opencode-manager.md) |
 | [DeepTutor](fichas/deeptutor.md) | [open-notebook](fichas/open-notebook.md) |
-| [gpt-researcher](fichas/gpt-researcher.md) | [STORM](fichas/storm.md), [Vane](fichas/vane.md) |
+| [gpt-researcher](fichas/gpt-researcher.md) | [STORM](fichas/storm.md), [Vane](fichas/vane.md), [local-deep-research](fichas/local-deep-research.md) |
 | [hermes-agent](fichas/hermes-agent.md) | [OpenClaw](fichas/openclaw.md), [Mercury Agent](fichas/mercury-agent.md) |
+| [local-deep-research](fichas/local-deep-research.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [Mercury Agent](fichas/mercury-agent.md) | [OpenClaw](fichas/openclaw.md), [hermes-agent](fichas/hermes-agent.md) |
+| [multica](fichas/multica.md) | [paperclip](fichas/paperclip.md) |
 | [OpenClaw](fichas/openclaw.md) | [hermes-agent](fichas/hermes-agent.md), [Mercury Agent](fichas/mercury-agent.md) |
+| [paperclip](fichas/paperclip.md) | [multica](fichas/multica.md) |
 | [STORM](fichas/storm.md) | [gpt-researcher](fichas/gpt-researcher.md) |
+| [CasaOS](fichas/casaos.md) | [coolify](fichas/coolify.md) |
+| [claude-task-master](fichas/claude-task-master.md) | [Spec Kit](fichas/spec-kit.md) |
+| [coolify](fichas/coolify.md) | [CasaOS](fichas/casaos.md) |
 | [E2B](fichas/e2b.md) | [sandbox](fichas/sandbox.md) |
 | [Gemini Computer Use (preview)](fichas/computer-use-preview.md) | [browser-use](fichas/browser-use.md), [Skyvern](fichas/skyvern.md) |
 | [NemoClaw](fichas/nemoclaw.md) | [sandbox](fichas/sandbox.md) |
 | [sandbox](fichas/sandbox.md) | [NemoClaw](fichas/nemoclaw.md), [E2B](fichas/e2b.md) |
+| [backdoor](fichas/backdoor.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md), [litellm](fichas/litellm.md) |
+| [claude-code-router](fichas/claude-code-router.md) | [OmniRoute](fichas/omniroute.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
 | [DeepEval](fichas/deepeval.md) | [Ragas](fichas/ragas.md), [promptfoo](fichas/promptfoo.md) |
 | [headroom](fichas/headroom.md) | [rtk](fichas/rtk.md) |
 | [langfuse](fichas/langfuse.md) | [Phoenix](fichas/phoenix.md), [Opik](fichas/opik.md), [MLflow](fichas/mlflow.md) |
+| [litellm](fichas/litellm.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md), [backdoor](fichas/backdoor.md) |
 | [MLflow](fichas/mlflow.md) | [langfuse](fichas/langfuse.md) |
+| [OmniRoute](fichas/omniroute.md) | [claude-code-router](fichas/claude-code-router.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
 | [Opik](fichas/opik.md) | [langfuse](fichas/langfuse.md), [Phoenix](fichas/phoenix.md) |
 | [Phoenix](fichas/phoenix.md) | [langfuse](fichas/langfuse.md), [Opik](fichas/opik.md) |
 | [promptfoo](fichas/promptfoo.md) | [DeepEval](fichas/deepeval.md), [Ragas](fichas/ragas.md), [DSPy](fichas/dspy.md) |
@@ -202,6 +221,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [SGLang](fichas/sglang.md) | [vLLM](fichas/vllm.md) |
 | [vLLM](fichas/vllm.md) | [SGLang](fichas/sglang.md) |
 | [LLaMA-Factory](fichas/llama-factory.md) | [Unsloth](fichas/unsloth.md) |
+| [PyTorch](fichas/pytorch.md) | [tensorflow](fichas/tensorflow.md) |
+| [tensorflow](fichas/tensorflow.md) | [PyTorch](fichas/pytorch.md) |
 | [Unsloth](fichas/unsloth.md) | [LLaMA-Factory](fichas/llama-factory.md) |
 | [DuckDB](fichas/duckdb.md) | [Polars](fichas/polars.md) |
 | [Gradio](fichas/gradio.md) | [streamlit](fichas/streamlit.md) |
@@ -226,16 +247,17 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | [FaceFusion](fichas/facefusion.md) |
 | [FaceFusion](fichas/facefusion.md) | [Deep-Live-Cam](fichas/deep-live-cam.md) |
 | [CosyVoice](fichas/cosyvoice.md) | [Fish Speech](fichas/fish-speech.md), [IndexTTS](fichas/index-tts.md) |
+| [dograh](fichas/dograh.md) | [Pipecat](fichas/pipecat.md), [LiveKit Agents](fichas/livekit-agents.md) |
 | [edge-tts](fichas/edge-tts.md) | [Kokoro](fichas/kokoro.md) |
 | [faster-whisper](fichas/faster-whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |
 | [Fish Speech](fichas/fish-speech.md) | [CosyVoice](fichas/cosyvoice.md), [GPT-SoVITS](fichas/gpt-sovits.md) |
 | [GPT-SoVITS](fichas/gpt-sovits.md) | [Fish Speech](fichas/fish-speech.md) |
 | [IndexTTS](fichas/index-tts.md) | [CosyVoice](fichas/cosyvoice.md) |
 | [Kokoro](fichas/kokoro.md) | [LuxTTS](fichas/luxtts.md), [edge-tts](fichas/edge-tts.md) |
-| [LiveKit Agents](fichas/livekit-agents.md) | [Pipecat](fichas/pipecat.md) |
+| [LiveKit Agents](fichas/livekit-agents.md) | [Pipecat](fichas/pipecat.md), [dograh](fichas/dograh.md) |
 | [LuxTTS](fichas/luxtts.md) | [Kokoro](fichas/kokoro.md) |
 | [NeMo Speech](fichas/nemo.md) | [whisperX](fichas/whisperx.md) |
-| [Pipecat](fichas/pipecat.md) | [LiveKit Agents](fichas/livekit-agents.md) |
+| [Pipecat](fichas/pipecat.md) | [LiveKit Agents](fichas/livekit-agents.md), [dograh](fichas/dograh.md) |
 | [VoiceStudio](fichas/omnivoice-studio.md) | [VideoLingo](fichas/videolingo.md) |
 | [whisper](fichas/whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |
 | [whisper.cpp](fichas/whisper-cpp.md) | [faster-whisper](fichas/faster-whisper.md), [whisper](fichas/whisper.md) |
@@ -249,6 +271,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Remotion Superpowers](fichas/remotion-superpowers.md) | [OpenMontage](fichas/openmontage.md), [video-use](fichas/video-use.md) |
 | [video-use](fichas/video-use.md) | [Remotion Superpowers](fichas/remotion-superpowers.md) |
 | [videofy_minimal](fichas/videofy-minimal.md) | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
+| [archify](fichas/archify.md) | [diagram-design](fichas/diagram-design.md) |
+| [diagram-design](fichas/diagram-design.md) | [archify](fichas/archify.md) |
 | [Marp](fichas/marp.md) | [Slidev](fichas/slidev.md), [reveal.js](fichas/reveal-js.md) |
 | [Mermaid](fichas/mermaid.md) | [Excalidraw](fichas/excalidraw.md) |
 | [ppt-master](fichas/ppt-master.md) | [Presenton](fichas/presenton.md) |
@@ -256,8 +280,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [reveal.js](fichas/reveal-js.md) | [Slidev](fichas/slidev.md), [Marp](fichas/marp.md) |
 | [Slidev](fichas/slidev.md) | [Marp](fichas/marp.md), [reveal.js](fichas/reveal-js.md) |
 | [agent-browser](fichas/agent-browser.md) | [playwright-cli](fichas/playwright-cli.md) |
-| [Browser Harness](fichas/browser-harness.md) | [Playwright MCP](fichas/playwright-mcp.md), [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md) |
-| [browser-use](fichas/browser-use.md) | [Gemini Computer Use (preview)](fichas/computer-use-preview.md), [Stagehand](fichas/stagehand.md), [Skyvern](fichas/skyvern.md), [Playwright MCP](fichas/playwright-mcp.md) |
+| [Browser Harness](fichas/browser-harness.md) | [Playwright MCP](fichas/playwright-mcp.md), [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md), [browser-use](fichas/browser-use.md) |
+| [browser-use](fichas/browser-use.md) | [Gemini Computer Use (preview)](fichas/computer-use-preview.md), [Stagehand](fichas/stagehand.md), [Skyvern](fichas/skyvern.md), [Playwright MCP](fichas/playwright-mcp.md), [Browser Harness](fichas/browser-harness.md) |
 | [playwright](fichas/playwright.md) | [Puppeteer](fichas/puppeteer.md), [Selenium](fichas/selenium.md) |
 | [playwright-cli](fichas/playwright-cli.md) | [agent-browser](fichas/agent-browser.md) |
 | [Puppeteer](fichas/puppeteer.md) | [playwright](fichas/playwright.md), [Selenium](fichas/selenium.md) |

@@ -235,7 +235,7 @@
      "orden_instalacion": "Añade el endpoint MCP de tu instancia."
     }
    ],
-   "notas": "Sin alternativas declaradas; solapa con gods-eye-view (solo anotado). El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
+   "notas": "Alternativa (elige una): gods-eye-view. El acceso a cámaras públicas plantea cuestiones de privacidad y uso responsable.",
    "fuentes": [
     "https://github.com/simplifaisoul/osiris/blob/master/README.md"
    ],
@@ -309,7 +309,7 @@
      "orden_instalacion": "Usa ambos sobre la misma región."
     }
    ],
-   "notas": "Sin alternativas declaradas; solapa con osiris (solo anotado). El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
+   "notas": "Alternativa (elige una): osiris. El seguimiento de cámaras y ALPR plantea cuestiones de privacidad.",
    "fuentes": [
     "https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md",
     "https://godseyeview.ai"

@@ -33,7 +33,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Revisa la configuración que propone el asistente y solicita una explicación corta sin herramientas externas
 **Qué comprobar:** Puedes identificar el proveedor detrás del proxy
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ollama`, `litellm`
+**Combina con:** `claude-code`, `ollama`, `vllm`
+**Alternativas (elige una):** `omniroute`, `claude-code-router`, `litellm`
 
 ## `claude-code-router`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=serving,server,typescript
@@ -65,6 +66,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar endpoint, modelo y ruta efectiva
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `omniroute`, `backdoor`, `litellm`
 
 ## `claude-code-usage-monitor`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=observabilidad,app,python
@@ -257,6 +259,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar el proveedor real y su consumo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `open-webui`, `langfuse`, `claude-code`
+**Alternativas (elige una):** `omniroute`, `claude-code-router`, `backdoor`
 
 ## `loguru`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=observability,evaluation,python
@@ -348,6 +351,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar qué cuenta y modelo atendieron la petición
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `cline`, `ollama`
+**Alternativas (elige una):** `claude-code-router`, `backdoor`, `litellm`
 
 ## `opik`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=observability,evaluation,python

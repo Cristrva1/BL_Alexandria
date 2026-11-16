@@ -30,7 +30,7 @@ Se autoaloja con un comando Docker. Por defecto el quickstart abre un túnel pú
 | [whisper.cpp](whisper-cpp.md) | STT autoalojado. (combinación por arquitectura) | Configura un STT propio. |
 | [Kokoro](kokoro.md) | TTS autoalojado. (combinación por arquitectura) | Configura un TTS propio. |
 
-**Notas:** Sin alternativas declaradas; se solapa con pipecat y livekit-agents (solo anotado). Revisa el túnel público y el registro abierto por defecto.
+**Notas:** Alternativas (elige una): pipecat, livekit-agents. Revisa el túnel público y el registro abierto por defecto.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada dograh-v1.51.0 (2026-11-04) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
 
@@ -100,6 +100,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba
 - **Etiquetas:** `voz-agentes` `agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [LiveKit Agents](livekit-agents.md) | 15.2k | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. |
 
 ## Enlaces
 

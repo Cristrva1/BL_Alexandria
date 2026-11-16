@@ -189,6 +189,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar qué datos son reales, simulados o no disponibles
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `hermes-agent`, `pythia`
+**Alternativas (elige una):** `osiris`
 
 ## `grafana`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=observability,dataviz,typescript,docker
@@ -345,6 +346,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar origen y actualización del evento en el mapa
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pythia`, `hermes-agent`, `claude-code`
+**Alternativas (elige una):** `gods-eye-view`
 
 ## `plausible`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=analytics,docker

@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-58 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+59 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -64,6 +64,7 @@
 ## 🎬 Editar, grabar y generar video
 
 - [HunyuanVideo vs Wan2.2](hunyuanvideo-vs-wan2-2.md)
+- [MoneyPrinterTurbo vs short-video-factory](moneyprinterturbo-vs-short-video-factory.md)
 
 ## 📄 PDF, OCR y procesamiento de documentos
 

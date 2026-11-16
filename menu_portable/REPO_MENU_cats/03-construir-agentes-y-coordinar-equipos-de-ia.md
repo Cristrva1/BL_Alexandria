@@ -125,7 +125,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El agente consulta la guía y enumera servicios y credenciales necesarios
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-agent-sdk-python`, `qdrant`, `mem0`
-**Alternativas (elige una):** `crewai`
+**Alternativas (elige una):** `crewai`, `langgraph`
 
 ## `autogpt`
 role=platform · exec=hybrid · setup=heavy · mcp=True · prov=openai,anthropic · tags=agents,automation,python
@@ -575,7 +575,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes inspeccionar el estado y reanudar el pedido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `deepagents`, `langfuse`, `mem0`
-**Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `adk-python`
+**Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `adk-python`, `agno`
 
 ## `langgraphjs`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,typescript

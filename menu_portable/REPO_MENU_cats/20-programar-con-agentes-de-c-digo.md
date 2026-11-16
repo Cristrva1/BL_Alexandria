@@ -220,7 +220,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue el primer inicio y comprueba proveedor y modelo antes de pedir explicar un archivo
 **Qué comprobar:** Puedes identificar la ruta de autenticación y revisar la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `opencode`, `headroom`, `rtk`
+**Combina con:** `headroom`, `rtk`, `context7`
+**Alternativas (elige una):** `opencode`
 
 ## `open-interpreter`
 role=runtime · exec=local · setup=easy · mcp=False · prov=openai,local · tags=coding-agent,local,rust
@@ -313,7 +314,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes una explicación contrastable antes de permitir ediciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `opencode-manager`, `t3code`
-**Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`
+**Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`, `mimo-code`
 
 ## `opencode-manager`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,agent,typescript
@@ -344,6 +345,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes reconocer la sesión, terminal y estado Git
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `opencode`, `ollama`, `coolify`
+**Alternativas (elige una):** `t3code`
 
 ## `opencursor`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,agent,ai,code,coder,cursor,extension,ide
@@ -466,3 +468,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** La sesión refleja el agente y puedes comprobar el archivo consultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
+**Alternativas (elige una):** `opencode-manager`

@@ -3920,7 +3920,8 @@
    "pick": false,
    "one": "Kit de GitHub para desarrollo guiado por especificaciones con agentes de código.",
    "alt": [
-    "bmad-method"
+    "bmad-method",
+    "claude-task-master"
    ],
    "doc": "human/fichas/spec-kit.md",
    "github_id": 1042367133,
@@ -4866,7 +4867,8 @@
     "codex",
     "goose",
     "gemini-cli",
-    "aider"
+    "aider",
+    "mimo-code"
    ],
    "doc": "human/fichas/opencode.md",
    "github_id": 975734319,
@@ -5209,7 +5211,9 @@
    "lib": false,
    "pick": false,
    "one": "Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.",
-   "alt": [],
+   "alt": [
+    "opencode-manager"
+   ],
    "doc": "human/fichas/t3code.md",
    "github_id": 1153130349,
    "added_at": "2026-08-23",
@@ -5334,7 +5338,8 @@
     "crewai",
     "openai-agents-python",
     "pydantic-ai",
-    "adk-python"
+    "adk-python",
+    "agno"
    ],
    "doc": "human/fichas/langgraph.md",
    "github_id": 676672661,
@@ -5489,7 +5494,8 @@
    "pick": false,
    "one": "Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente.",
    "alt": [
-    "crewai"
+    "crewai",
+    "langgraph"
    ],
    "doc": "human/fichas/agno.md",
    "github_id": 488641606,
@@ -6341,7 +6347,9 @@
    "lib": false,
    "pick": false,
    "one": "Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.",
-   "alt": [],
+   "alt": [
+    "paperclip"
+   ],
    "doc": "human/fichas/multica.md",
    "github_id": 1133707766,
    "starred_by": "Cristrva1",
@@ -6526,7 +6534,8 @@
    "one": "Agente autónomo que investiga en línea y consolida reportes citados y estructurados.",
    "alt": [
     "storm",
-    "vane"
+    "vane",
+    "local-deep-research"
    ],
    "doc": "human/fichas/gpt-researcher.md",
    "github_id": 639835356,
@@ -7293,7 +7302,8 @@
     "computer-use-preview",
     "stagehand",
     "skyvern",
-    "playwright-mcp"
+    "playwright-mcp",
+    "browser-harness"
    ],
    "doc": "human/fichas/browser-use.md",
    "github_id": 881458615,
@@ -7518,7 +7528,8 @@
    "one": "Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.",
    "alt": [
     "playwright-mcp",
-    "chrome-devtools-mcp"
+    "chrome-devtools-mcp",
+    "browser-use"
    ],
    "doc": "human/fichas/browser-harness.md",
    "github_id": 1213049020,
@@ -8296,7 +8307,9 @@
    "one": "Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.",
    "alt": [
     "codegraph",
-    "gitnexus"
+    "gitnexus",
+    "codebase-memory-mcp",
+    "graphify"
    ],
    "doc": "human/fichas/serena.md",
    "github_id": 953683578,
@@ -9146,7 +9159,8 @@
    "one": "Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores.",
    "alt": [
     "qdrant",
-    "chroma"
+    "chroma",
+    "pgvector"
    ],
    "doc": "human/fichas/milvus.md",
    "github_id": 208728772,
@@ -9256,7 +9270,8 @@
    "one": "Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales.",
    "alt": [
     "qdrant",
-    "chroma"
+    "chroma",
+    "milvus"
    ],
    "doc": "human/fichas/pgvector.md",
    "github_id": 359952601,
@@ -9362,7 +9377,11 @@
    "lib": false,
    "pick": false,
    "one": "Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.",
-   "alt": [],
+   "alt": [
+    "omniroute",
+    "claude-code-router",
+    "backdoor"
+   ],
    "doc": "human/fichas/litellm.md",
    "github_id": 671269505,
    "starred_by": "Cristrva1",
@@ -9846,7 +9865,12 @@
    "lib": false,
    "pick": false,
    "one": "CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas.",
-   "alt": [],
+   "alt": [
+    "codegraph",
+    "gitnexus",
+    "serena",
+    "codebase-memory-mcp"
+   ],
    "doc": "human/fichas/graphify.md",
    "github_id": 1200597263,
    "starred_by": "Cristrva1",
@@ -9887,7 +9911,9 @@
    "one": "CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo.",
    "alt": [
     "codebase-memory-mcp",
-    "serena"
+    "serena",
+    "gitnexus",
+    "graphify"
    ],
    "doc": "human/fichas/codegraph.md",
    "github_id": 1137078255,
@@ -9931,7 +9957,9 @@
    "one": "Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.",
    "alt": [
     "codegraph",
-    "gitnexus"
+    "gitnexus",
+    "serena",
+    "graphify"
    ],
    "doc": "human/fichas/codebase-memory-mcp.md",
    "github_id": 1166102148,
@@ -9974,7 +10002,9 @@
    "alt": [
     "repomix",
     "codebase-memory-mcp",
-    "serena"
+    "serena",
+    "codegraph",
+    "graphify"
    ],
    "doc": "human/fichas/gitnexus.md",
    "github_id": 1031059905,
@@ -10258,7 +10288,9 @@
    "lib": false,
    "pick": false,
    "one": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
-   "alt": [],
+   "alt": [
+    "tensorflow"
+   ],
    "doc": "human/fichas/pytorch.md",
    "github_id": 65600975,
    "added_at": "2026-11-10",
@@ -14872,7 +14904,8 @@
    "pick": true,
    "one": "Framework open source para agentes de voz y apps multimodales en tiempo real.",
    "alt": [
-    "livekit-agents"
+    "livekit-agents",
+    "dograh"
    ],
    "doc": "human/fichas/pipecat.md",
    "github_id": 736272311,
@@ -14913,7 +14946,8 @@
    "pick": false,
    "one": "Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit.",
    "alt": [
-    "pipecat"
+    "pipecat",
+    "dograh"
    ],
    "doc": "human/fichas/livekit-agents.md",
    "github_id": 707441527,
@@ -15533,7 +15567,8 @@
    "one": "App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso.",
    "alt": [
     "openmontage",
-    "videofy-minimal"
+    "videofy-minimal",
+    "short-video-factory"
    ],
    "doc": "human/fichas/moneyprinterturbo.md",
    "github_id": 770153867,
@@ -17449,7 +17484,9 @@
    "lib": false,
    "pick": false,
    "one": "Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
-   "alt": [],
+   "alt": [
+    "gpt-researcher"
+   ],
    "doc": "human/fichas/local-deep-research.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -17531,7 +17568,9 @@
    "lib": false,
    "pick": false,
    "one": "Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.",
-   "alt": [],
+   "alt": [
+    "opencode"
+   ],
    "doc": "human/fichas/mimo-code.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -17660,7 +17699,9 @@
    "lib": false,
    "pick": false,
    "one": "Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.",
-   "alt": [],
+   "alt": [
+    "multica"
+   ],
    "doc": "human/fichas/paperclip.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -17999,7 +18040,11 @@
    "lib": false,
    "pick": false,
    "one": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
-   "alt": [],
+   "alt": [
+    "omniroute",
+    "claude-code-router",
+    "litellm"
+   ],
    "doc": "human/fichas/backdoor.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -18264,7 +18309,9 @@
    "lib": false,
    "pick": false,
    "one": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
-   "alt": [],
+   "alt": [
+    "pytorch"
+   ],
    "doc": "human/fichas/tensorflow.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -18811,7 +18858,9 @@
    "lib": false,
    "pick": false,
    "one": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
-   "alt": [],
+   "alt": [
+    "gods-eye-view"
+   ],
    "doc": "human/fichas/osiris.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -19200,7 +19249,9 @@
    "lib": false,
    "pick": false,
    "one": "Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.",
-   "alt": [],
+   "alt": [
+    "moneyprinterturbo"
+   ],
    "doc": "human/fichas/short-video-factory.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -19239,7 +19290,9 @@
    "lib": false,
    "pick": false,
    "one": "Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas.",
-   "alt": [],
+   "alt": [
+    "diagram-design"
+   ],
    "doc": "human/fichas/archify.md",
    "agent_tools": [
     "claude-code",
@@ -19956,7 +20009,9 @@
    "lib": false,
    "pick": false,
    "one": "Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
-   "alt": [],
+   "alt": [
+    "osiris"
+   ],
    "stars": 64884,
    "github_id": 1277471539,
    "gh": "bilawalsidhu/gods-eye-view",
@@ -20095,7 +20150,9 @@
    "lib": false,
    "pick": false,
    "one": "Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
-   "alt": [],
+   "alt": [
+    "archify"
+   ],
    "stars": 67188,
    "github_id": 1212769188,
    "gh": "cathrynlavery/diagram-design",
@@ -20171,7 +20228,11 @@
    "lib": false,
    "pick": false,
    "one": "Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.",
-   "alt": [],
+   "alt": [
+    "claude-code-router",
+    "backdoor",
+    "litellm"
+   ],
    "stars": 87518,
    "github_id": 1157102282,
    "gh": "cheaper-inference/OmniRoute",
@@ -20208,7 +20269,9 @@
    "lib": false,
    "pick": false,
    "one": "Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.",
-   "alt": [],
+   "alt": [
+    "t3code"
+   ],
    "stars": 1074,
    "github_id": 1102782418,
    "gh": "chriswritescode-dev/opencode-manager",
@@ -20318,7 +20381,9 @@
    "lib": false,
    "pick": false,
    "one": "Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
-   "alt": [],
+   "alt": [
+    "casaos"
+   ],
    "stars": 66090,
    "github_id": 332880689,
    "gh": "coollabsio/coolify",
@@ -20635,7 +20700,10 @@
    "lib": false,
    "pick": false,
    "one": "Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.",
-   "alt": [],
+   "alt": [
+    "pipecat",
+    "livekit-agents"
+   ],
    "stars": 6094,
    "github_id": 1053292493,
    "gh": "dograh-hq/dograh",
@@ -20855,7 +20923,9 @@
    "lib": false,
    "pick": false,
    "one": "Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.",
-   "alt": [],
+   "alt": [
+    "spec-kit"
+   ],
    "stars": 28358,
    "github_id": 942837343,
    "gh": "eyaltoledano/claude-task-master",
@@ -21658,7 +21728,9 @@
    "lib": false,
    "pick": false,
    "one": "Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.",
-   "alt": [],
+   "alt": [
+    "coolify"
+   ],
    "stars": 37644,
    "github_id": 410430370,
    "gh": "IceWhaleTech/CasaOS",
@@ -22189,7 +22261,9 @@
    "lib": false,
    "pick": false,
    "one": "Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.",
-   "alt": [],
+   "alt": [
+    "strix"
+   ],
    "stars": 51901,
    "github_id": 1065059442,
    "gh": "KeygraphHQ/shannon",
@@ -22956,7 +23030,11 @@
    "lib": false,
    "pick": false,
    "one": "Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.",
-   "alt": [],
+   "alt": [
+    "omniroute",
+    "backdoor",
+    "litellm"
+   ],
    "stars": 38150,
    "github_id": 938468965,
    "gh": "musistudio/claude-code-router",
@@ -24468,7 +24546,9 @@
    "lib": false,
    "pick": false,
    "one": "Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT.",
-   "alt": [],
+   "alt": [
+    "shannon"
+   ],
    "stars": 75602,
    "github_id": 1032808806,
    "gh": "usestrix/strix",

@@ -1619,11 +1619,12 @@ uv tool install "lightrag-hku[api]"` (comprobar los pasos completos en la ficha)
 
 Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.
 
-**⚖️ ¿Cuál elegir? — Repomix, codegraph, codebase-memory-mcp, GitNexus**
+**⚖️ ¿Cuál elegir? — Repomix, graphify, codegraph, codebase-memory-mcp, GitNexus**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Repomix](human/fichas/repomix.md) | Tu objetivo encaja con estos ejemplos: Preparar contexto de código para una consulta; Compartir una muestra reproducible de un proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [graphify](human/fichas/graphify.md) | Tu objetivo encaja con estos ejemplos: Explorar impacto de un cambio; Relacionar documentación y estructura de código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [codegraph](human/fichas/codegraph.md) | Tu objetivo encaja con estos ejemplos: Preparar una refactorización; Encontrar rutas de ejecución de un proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [codebase-memory-mcp](human/fichas/codebase-memory-mcp.md) | Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [GitNexus](human/fichas/gitnexus.md) | Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
@@ -1664,7 +1665,7 @@ graphify install               # detects your assistant and registers the skill`
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Serena](human/fichas/serena.md) · [Repomix](human/fichas/repomix.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Repomix](human/fichas/repomix.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/codebase-memory-mcp.md) · [GitHub](https://github.com/DeusData/codebase-memory-mcp)
 
 #### 🧭 GitNexus
@@ -2364,6 +2365,13 @@ Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consu
 | [Chart.js](human/fichas/chart-js.md) | Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [echarts](human/fichas/echarts.md) | Tu objetivo encaja con estos ejemplos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — gods-eye-view, osiris**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [gods-eye-view](human/fichas/gods-eye-view.md) | Tu objetivo encaja con estos ejemplos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [osiris](human/fichas/osiris.md) | Tu objetivo encaja con estos ejemplos: Explorar noticias por ubicación; Comparar eventos públicos en un globo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 ### Analítica web y de producto
 
 #### 📈 Umami ⭐
@@ -2689,6 +2697,13 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 ## 🎬 12. Editar, grabar y generar video
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
+
+**⚖️ ¿Cuál elegir? — MoneyPrinterTurbo, short-video-factory**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [MoneyPrinterTurbo](human/fichas/moneyprinterturbo.md) | Tu objetivo encaja con estos ejemplos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [short-video-factory](human/fichas/short-video-factory.md) | Tu objetivo encaja con estos ejemplos: Crear un borrador de producto; Preparar variantes de un anuncio propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — Wan2.2, HunyuanVideo**
 
@@ -3546,6 +3561,13 @@ Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaj
 | [ghidra](human/fichas/ghidra.md) | Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [radare2](human/fichas/radare2.md) | Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [rizin](human/fichas/rizin.md) | Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — strix, shannon**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [strix](human/fichas/strix.md) | Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [shannon](human/fichas/shannon.md) | Tu objetivo encaja con estos ejemplos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Ingeniería inversa y formatos binarios
 
@@ -4412,6 +4434,13 @@ Agentes de terminal, extensiones de editor y entornos para programar con IA. Rev
 | [OpenHands](human/fichas/openhands.md) | Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Open SWE](human/fichas/open-swe.md) | Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — T3 Code, opencode-manager**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [T3 Code](human/fichas/t3code.md) | Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [opencode-manager](human/fichas/opencode-manager.md) | Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 ### Agentes de terminal
 
 #### 👨‍💻 OpenCode ⭐
@@ -4486,7 +4515,7 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OpenCode](human/fichas/opencode.md) · [headroom](human/fichas/headroom.md) · [rtk](human/fichas/rtk.md)<br>
+**Combina con:** [headroom](human/fichas/headroom.md) · [rtk](human/fichas/rtk.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/mimo-code.md) · [GitHub](https://github.com/XiaomiMiMo/MiMo-Code)
 
 ### Editores y extensiones de código
@@ -4573,12 +4602,20 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 | [hermes-agent](human/fichas/hermes-agent.md) | Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Mercury Agent](human/fichas/mercury-agent.md) | Tu objetivo encaja con estos ejemplos: Probar un asistente persistente; Estudiar presupuestos de tokens | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — STORM, gpt-researcher**
+**⚖️ ¿Cuál elegir? — paperclip, multica**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [paperclip](human/fichas/paperclip.md) | Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [multica](human/fichas/multica.md) | Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — STORM, gpt-researcher, local-deep-research**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [STORM](human/fichas/storm.md) | Tu objetivo encaja con estos ejemplos: Preparar una revisión de un tema; Comparar perspectivas antes de escribir | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [gpt-researcher](human/fichas/gpt-researcher.md) | Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [local-deep-research](human/fichas/local-deep-research.md) | Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Asistentes autónomos y equipos de agentes
 
@@ -4759,6 +4796,13 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 | [NemoClaw](human/fichas/nemoclaw.md) | Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [sandbox](human/fichas/sandbox.md) | Tu objetivo encaja con estos ejemplos: Probar herramientas de un agente en un contenedor; Consultar una interfaz de navegador aislada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — coolify, CasaOS**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [coolify](human/fichas/coolify.md) | Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [CasaOS](human/fichas/casaos.md) | Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 ### Infraestructura: sandboxes, herramientas y protocolos
 
 #### 🛠️ Composio ⭐
@@ -4936,6 +4980,15 @@ Servidores de inferencia, gateways, evaluación, trazas y control de contexto. C
 | [vLLM](human/fichas/vllm.md) | Tu objetivo encaja con estos ejemplos: Servir un modelo propio; Estudiar rendimiento de inferencia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [SGLang](human/fichas/sglang.md) | Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — OmniRoute, litellm, claude-code-router, backdoor**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [OmniRoute](human/fichas/omniroute.md) | Tu objetivo encaja con estos ejemplos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [litellm](human/fichas/litellm.md) | Tu objetivo encaja con estos ejemplos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [claude-code-router](human/fichas/claude-code-router.md) | Tu objetivo encaja con estos ejemplos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [backdoor](human/fichas/backdoor.md) | Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 **⚖️ ¿Cuál elegir? — headroom, rtk**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -5026,7 +5079,7 @@ ccr ui` (comprobar los pasos completos en la ficha).<br>
 cd backdoor
 ./backdoor   # animated setup wizard — picks your provider, writes your config, launches Claude Code` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un backend local con Claude Code; Comparar proveedores compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/backdoor.md) · [GitHub](https://github.com/ajsai47/backdoor)
 
 ### Ahorro de contexto y tokens
@@ -5165,6 +5218,13 @@ Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los p
 |---|---|---|
 | [Unsloth](human/fichas/unsloth.md) | Tu objetivo encaja con estos ejemplos: Probar inferencia local; Preparar un ajuste fino pequeño | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LLaMA-Factory](human/fichas/llama-factory.md) | Tu objetivo encaja con estos ejemplos: Ajustar un modelo con ejemplos propios; Comparar un adaptador antes de exportarlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — tensorflow, PyTorch**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [tensorflow](human/fichas/tensorflow.md) | Tu objetivo encaja con estos ejemplos: Aprender redes neuronales; Construir un clasificador educativo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [PyTorch](human/fichas/pytorch.md) | Tu objetivo encaja con estos ejemplos: Aprender tensores; Entrenar una red educativa | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Entrenar y afinar modelos
 
@@ -6199,12 +6259,13 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 | [IndexTTS](human/fichas/index-tts.md) | Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [CosyVoice](human/fichas/cosyvoice.md) | Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Pipecat, LiveKit Agents**
+**⚖️ ¿Cuál elegir? — Pipecat, LiveKit Agents, dograh**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Pipecat](human/fichas/pipecat.md) | Tu objetivo encaja con estos ejemplos: Prototipar un agente de voz; Comparar combinaciones STT/LLM/TTS | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LiveKit Agents](human/fichas/livekit-agents.md) | Tu objetivo encaja con estos ejemplos: Construir un asistente de voz; Evaluar conversación en tiempo real | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [dograh](human/fichas/dograh.md) | Tu objetivo encaja con estos ejemplos: Diseñar un agente de voz; Editar un workflow mediante MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 ### Transcripción (voz a texto)
 
@@ -6710,6 +6771,13 @@ Presentaciones, diagramas y documentación visual. Elige entre editar una pieza,
 | [ppt-master](human/fichas/ppt-master.md) | Tu objetivo encaja con estos ejemplos: Preparar una presentación de un informe; Adaptar una plantilla corporativa | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Presenton](human/fichas/presenton.md) | Tu objetivo encaja con estos ejemplos: Preparar una presentación desde un documento; Comparar una plantilla con generación libre | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — archify, diagram-design**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [archify](human/fichas/archify.md) | Tu objetivo encaja con estos ejemplos: Explicar una arquitectura; Preparar un plan de trabajo visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [diagram-design](human/fichas/diagram-design.md) | Tu objetivo encaja con estos ejemplos: Documentar un proceso comercial; Explicar una arquitectura con SVG | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 ### Presentaciones
 
 #### 🖥️ Slidev ⭐
@@ -6805,13 +6873,14 @@ Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Pa
 | [Puppeteer](human/fichas/puppeteer.md) | Tu objetivo encaja con estos ejemplos: Automatizar una captura; Extraer datos de una página propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Selenium](human/fichas/selenium.md) | Tu objetivo encaja con estos ejemplos: Automatizar pruebas funcionales; Comparar comportamiento entre navegadores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — Stagehand, browser-use, Skyvern**
+**⚖️ ¿Cuál elegir? — Stagehand, browser-use, Skyvern, Browser Harness**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Stagehand](human/fichas/stagehand.md) | Tu objetivo encaja con estos ejemplos: Prototipar extracción estructurada; Automatizar un formulario de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [browser-use](human/fichas/browser-use.md) | Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Skyvern](human/fichas/skyvern.md) | Tu objetivo encaja con estos ejemplos: Automatizar un flujo propio; Evaluar extracción basada en visión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Browser Harness](human/fichas/browser-harness.md) | Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
 **⚖️ ¿Cuál elegir? — agent-browser, playwright-cli**
 
@@ -6867,7 +6936,7 @@ npx playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/browser-use/browser-use/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Browser Harness](human/fichas/browser-harness.md) · [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md) · [Pydantic AI](human/fichas/pydantic-ai.md)<br>
 **Más:** [ficha completa](human/fichas/browser-use.md) · [GitHub](https://github.com/browser-use/browser-use)
 
 #### 🕷️ agent-browser
@@ -6895,7 +6964,7 @@ agent-browser install           # download Chrome for Testing (first time only)`
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/browser-use/browser-harness/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [browser-use](human/fichas/browser-use.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
 **Más:** [ficha completa](human/fichas/browser-harness.md) · [GitHub](https://github.com/browser-use/browser-harness)
 
 #### 🎭 playwright-cli

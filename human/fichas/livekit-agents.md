@@ -30,7 +30,7 @@ Se instala con `pip install "livekit-agents[openai,deepgram,cartesia]"` (u otros
 | [Ollama](ollama.md) | LLM local vía plugin compatible con OpenAI. (combinación por arquitectura) | Apunta el plugin al endpoint de Ollama. |
 | [whisper.cpp](whisper-cpp.md) | STT local. (combinación por arquitectura) | Expón el servidor y úsalo como STT. |
 
-**Notas:** Alternativas (elige una): pipecat.
+**Notas:** Alternativas (elige una): pipecat, dograh.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada livekit-agents@1.8.12 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -114,6 +114,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [dograh](dograh.md) | 6.1k | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. |
 
 ## Enlaces
 

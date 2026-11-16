@@ -31,7 +31,7 @@ Extensión en C para Postgres 13+ que se compila e instala o se obtiene por Dock
 | [LibreChat](librechat.md) | El Docker Compose de LibreChat usa una imagen pgvector para su RAG API. | Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo. |
 | [LightRAG](lightrag.md) | PostgreSQL es el backend recomendado para producción en LightRAG. | Activa la extensión antes de arrancar LightRAG con el backend de Postgres. |
 
-**Notas:** Alternativas (elige una): qdrant, chroma.
+**Notas:** Alternativas (elige una): qdrant, chroma, milvus.
 
 Estado en GitHub: activo · último push 2026-11-14 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -107,6 +107,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 | [Chroma](chroma.md) | 29.7k | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. |
+| [Milvus](milvus.md) | 46.7k | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
 
 ## Enlaces
 

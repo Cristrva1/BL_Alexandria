@@ -26,11 +26,11 @@ Se instala con `uv tool install browser-use` y `browser-use skill install`, y lu
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [browser-use](browser-use.md) | Producto que ahora lo integra. | Usa la CLI browser-use. |
 | [Claude Code](claude-code.md) | Agente documentado. | Registra la skill. |
 | [Codex CLI](codex.md) | Agente documentado. | Registra la skill. |
+| [Gemini CLI](gemini-cli.md) | Cualquier cliente MCP puede usar Browser Harness vía `browser-harness-mcp`; Gemini CLI es uno de ellos. (combinación por arquitectura) | Registra `browser-harness-mcp` en la configuración MCP de Gemini CLI. |
 
-**Notas:** Alternativas (elige una): playwright-mcp, chrome-devtools-mcp. Riesgo: acceso del agente a sesiones autenticadas.
+**Notas:** Alternativas (elige una): playwright-mcp, chrome-devtools-mcp, browser-use. Riesgo: acceso del agente a sesiones autenticadas.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.13 (2026-09-04) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -106,6 +106,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Playwright MCP](playwright-mcp.md) | 39.7k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 | [Chrome DevTools MCP](chrome-devtools-mcp.md) | 56.3k | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
+| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
 
 ## Enlaces
 

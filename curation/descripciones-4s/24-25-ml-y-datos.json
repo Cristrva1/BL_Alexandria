@@ -64,7 +64,7 @@
      "orden_instalacion": "Instala vLLM con la versión de PyTorch compatible."
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con tensorflow (solo anotado).",
+   "notas": "Alternativa (elige una): tensorflow.",
    "fuentes": [
     "https://github.com/pytorch/pytorch/blob/main/README.md",
     "https://pytorch.org/get-started/locally/"
@@ -324,7 +324,7 @@
      "orden_instalacion": "Instala marimo en el mismo entorno."
     }
    ],
-   "notas": "Sin alternativas declaradas; compite con pytorch (solo anotado).",
+   "notas": "Alternativa (elige una): pytorch.",
    "fuentes": [
     "https://github.com/tensorflow/tensorflow/blob/master/README.md",
     "https://www.tensorflow.org/install"

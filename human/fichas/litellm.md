@@ -31,7 +31,7 @@ En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefi
 | [langfuse](langfuse.md) | Integración de observabilidad documentada por LiteLLM: trazas, costes y latencia de cada llamada. | Langfuse primero (para tener sus claves); luego actívalo como callback en LiteLLM. |
 | [Claude Code](claude-code.md) | El proxy expone `/messages` (formato Anthropic), así que Claude Code puede apuntar a LiteLLM para usar otros modelos o centralizar gasto. (combinación por arquitectura) | LiteLLM proxy primero; luego configura la URL base en Claude Code. |
 
-**Notas:** Sin alternativas declaradas. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.
+**Notas:** Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.109.1 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -108,6 +108,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; proveedor o endpoint local; presupuesto de prueba
 - **Etiquetas:** `inference` `llmops` `python` `docker`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OmniRoute](omniroute.md) | 87.5k | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
+| [claude-code-router](claude-code-router.md) | 38.1k | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
+| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
 
 ## Enlaces
 

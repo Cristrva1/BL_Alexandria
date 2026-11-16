@@ -465,7 +465,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes contrastar el vecino y los metadatos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `anything-llm`, `lightrag`, `llama-index`
-**Alternativas (elige una):** `qdrant`, `chroma`
+**Alternativas (elige una):** `qdrant`, `chroma`, `pgvector`
 
 ## `onyx`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=rag,agent,python
@@ -588,7 +588,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** La consulta devuelve la fila más cercana usando la distancia elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supabase`, `anything-llm`, `librechat`, `lightrag`
-**Alternativas (elige una):** `qdrant`, `chroma`
+**Alternativas (elige una):** `qdrant`, `chroma`, `milvus`
 
 ## `qdrant`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust,docker

@@ -31,7 +31,7 @@ Se instala con `curl -fsSL https://opencode.ai/v2/install | bash`, `npm i -g @op
 | [opencode-manager](opencode-manager.md) | Interfaz web autoalojada para gestionar sesiones de OpenCode. | Instala OpenCode y luego opencode-manager. |
 | [T3 Code](t3code.md) | Controlar OpenCode desde web o móvil. | Instala T3 Code con OpenCode presente. |
 
-**Notas:** Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider.
+**Notas:** Alternativas (elige una): claude-code, codex, goose, gemini-cli, aider, mimo-code.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.19.5 (2026-10-28) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -118,6 +118,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [MiMo-Code](mimo-code.md) | 13.8k | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. |
 
 ## Enlaces
 

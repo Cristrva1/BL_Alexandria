@@ -54,7 +54,7 @@ Si solo necesitas cortar un video existente,no necesitas generar voces o imágen
 - En lugar de [Kokoro](../fichas/kokoro.md): [LuxTTS](../fichas/luxtts.md), [edge-tts](../fichas/edge-tts.md)
 - En lugar de [ComfyUI](../fichas/comfyui.md): [WanGP](../fichas/wan2gp.md)
 - En lugar de [remotion](../fichas/remotion.md): [MoviePy](../fichas/moviepy.md), [HyperFrames](../fichas/hyperframes.md)
-- En lugar de [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md): [OpenMontage](../fichas/openmontage.md), [videofy_minimal](../fichas/videofy-minimal.md)
+- En lugar de [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md): [OpenMontage](../fichas/openmontage.md), [videofy_minimal](../fichas/videofy-minimal.md), [short-video-factory](../fichas/short-video-factory.md)
 
 ---
 

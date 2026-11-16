@@ -132,6 +132,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes inspeccionar nodos, proveedores y transiciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `whisper-cpp`, `kokoro`
+**Alternativas (elige una):** `pipecat`, `livekit-agents`
 
 ## `earshot`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=local · tags=edicion,mcp,python
@@ -385,7 +386,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar audio de entrada, modelo y respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `kokoro`, `ollama`, `whisper-cpp`
-**Alternativas (elige una):** `pipecat`
+**Alternativas (elige una):** `pipecat`, `dograh`
 
 ## `luxtts`
 role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,python
@@ -514,7 +515,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes localizar en qué etapa falla la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `kokoro`, `whisper-cpp`, `ollama`, `nemo`
-**Alternativas (elige una):** `livekit-agents`
+**Alternativas (elige una):** `livekit-agents`, `dograh`
 
 ## `rnnoise`
 role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=edicion,model,c

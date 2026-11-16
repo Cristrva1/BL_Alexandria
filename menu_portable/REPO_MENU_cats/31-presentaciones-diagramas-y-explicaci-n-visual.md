@@ -32,6 +32,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes contrastar nodos, enlaces y responsabilidades
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `opencode`, `mermaid`
+**Alternativas (elige una):** `diagram-design`
 
 ## `diagram-design`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=diagramas,skill,html
@@ -62,6 +63,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes explicar cada relación y abrir el HTML
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `playwright`, `claude-code`, `slidev`
+**Alternativas (elige una):** `archify`
 
 ## `marp`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=slides,typescript

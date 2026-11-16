@@ -609,7 +609,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El agente identifica la definición y usos reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `context7`
-**Alternativas (elige una):** `codegraph`, `gitnexus`
+**Alternativas (elige una):** `codegraph`, `gitnexus`, `codebase-memory-mcp`, `graphify`
 
 ## `servers`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=mcp,typescript

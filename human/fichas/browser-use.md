@@ -26,11 +26,11 @@ Requiere Python 3.11+ y se instala con `pip install browser-use` o uv. Soporta m
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [Browser Harness](browser-harness.md) | Motor interno. | Viene incluido. |
 | [Claude Code](claude-code.md) | Uso vía skill o MCP. | Registra la skill o el MCP. |
 | [Ollama](ollama.md) | Modelos locales vía integraciones de modelos. (combinación por arquitectura) | Configura un modelo local compatible. |
+| [Pydantic AI](pydantic-ai.md) | Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI. | Instala el extra correspondiente de pydantic-ai para el proveedor elegido. |
 
-**Notas:** Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp.
+**Notas:** Alternativas (elige una): computer-use-preview, stagehand, skyvern, playwright-mcp, browser-harness.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.0.6 (2026-11-16) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -110,6 +110,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Stagehand](stagehand.md) | 26.1k | SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural. |
 | [Skyvern](skyvern.md) | 23.4k | Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles. |
 | [Playwright MCP](playwright-mcp.md) | 39.7k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| [Browser Harness](browser-harness.md) | 19.1k | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. |
 
 ## Enlaces
 

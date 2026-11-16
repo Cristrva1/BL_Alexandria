@@ -219,7 +219,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes rastrear el origen de cada recurso y corregir el resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `faster-whisper`, `kokoro`, `ollama`
-**Alternativas (elige una):** `openmontage`, `videofy-minimal`
+**Alternativas (elige una):** `openmontage`, `videofy-minimal`, `short-video-factory`
 
 ## `obs-studio`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,cpp
@@ -340,6 +340,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El video exportado coincide con guion, voz y subtítulos corregidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `edge-tts`, `ffmpeg`, `ollama`
+**Alternativas (elige una):** `moneyprinterturbo`
 
 ## `videolingo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=video,stt,tts,python

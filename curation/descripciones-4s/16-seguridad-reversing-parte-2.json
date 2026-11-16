@@ -206,7 +206,7 @@
      "orden_instalacion": "Enruta el tráfico del objetivo por mitmproxy en el entorno de pruebas."
     }
    ],
-   "notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
+   "notas": "Alternativa (elige una): strix. Úsalo solo contra sistemas propios o con autorización escrita. Nunca en producción.",
    "fuentes": [
     "https://github.com/KeygraphHQ/shannon/blob/main/README.md",
     "https://github.com/KeygraphHQ/shannon/blob/main/docs/ai-providers.md"
@@ -242,7 +242,7 @@
      "orden_instalacion": "Ejecuta ambos en el pipeline de PR."
     }
    ],
-   "notas": "Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.",
+   "notas": "Alternativa (elige una): shannon. Úsalo solo contra sistemas propios o con autorización escrita.",
    "fuentes": [
     "https://github.com/usestrix/strix/blob/main/README.md",
     "https://docs.strix.ai/quickstart",

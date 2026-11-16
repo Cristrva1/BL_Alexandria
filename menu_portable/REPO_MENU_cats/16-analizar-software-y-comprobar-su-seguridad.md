@@ -703,6 +703,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar exactamente qué se analizaría y dónde se guardarían hallazgos y costes
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `semgrep`, `mitmproxy`
+**Alternativas (elige una):** `strix`
 
 ## `skillspector`
 role=app · exec=cloud · setup=easy · mcp=True · prov=— · tags=skills,coding-agent,python
@@ -772,6 +773,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Los hallazgos quedan asociados al alcance y evidencias que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `github-mcp-server`, `semgrep`
+**Alternativas (elige una):** `shannon`
 
 ## `x64dbg`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c

@@ -16060,7 +16060,8 @@
         "gemini-cli"
       ],
       "alt": [
-        "bmad-method"
+        "bmad-method",
+        "claude-task-master"
       ]
     },
     {
@@ -16928,7 +16929,8 @@
         "mem0"
       ],
       "alt": [
-        "crewai"
+        "crewai",
+        "langgraph"
       ]
     },
     {
@@ -18652,7 +18654,8 @@
         "crewai",
         "openai-agents-python",
         "pydantic-ai",
-        "adk-python"
+        "adk-python",
+        "agno"
       ]
     },
     {
@@ -24902,7 +24905,9 @@
       ],
       "alt": [
         "codegraph",
-        "gitnexus"
+        "gitnexus",
+        "codebase-memory-mcp",
+        "graphify"
       ]
     },
     {
@@ -26997,7 +27002,8 @@
       ],
       "alt": [
         "qdrant",
-        "chroma"
+        "chroma",
+        "pgvector"
       ]
     },
     {
@@ -27486,7 +27492,8 @@
       ],
       "alt": [
         "qdrant",
-        "chroma"
+        "chroma",
+        "milvus"
       ]
     },
     {
@@ -28324,12 +28331,14 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "serena",
-        "repomix"
+        "repomix",
+        "codex"
       ],
       "alt": [
         "codegraph",
-        "gitnexus"
+        "gitnexus",
+        "serena",
+        "graphify"
       ]
     },
     {
@@ -28452,7 +28461,9 @@
       ],
       "alt": [
         "codebase-memory-mcp",
-        "serena"
+        "serena",
+        "gitnexus",
+        "graphify"
       ]
     },
     {
@@ -28691,7 +28702,9 @@
       "alt": [
         "repomix",
         "codebase-memory-mcp",
-        "serena"
+        "serena",
+        "codegraph",
+        "graphify"
       ]
     },
     {
@@ -28814,7 +28827,12 @@
         "ollama",
         "graphrag"
       ],
-      "alt": []
+      "alt": [
+        "codegraph",
+        "gitnexus",
+        "serena",
+        "codebase-memory-mcp"
+      ]
     },
     {
       "id": "openai-python",
@@ -36536,7 +36554,9 @@
         "hermes-agent",
         "pythia"
       ],
-      "alt": []
+      "alt": [
+        "osiris"
+      ]
     },
     {
       "id": "grafana",
@@ -37123,7 +37143,9 @@
         "hermes-agent",
         "claude-code"
       ],
-      "alt": []
+      "alt": [
+        "gods-eye-view"
+      ]
     },
     {
       "id": "plausible",
@@ -40121,7 +40143,8 @@
       ],
       "alt": [
         "openmontage",
-        "videofy-minimal"
+        "videofy-minimal",
+        "short-video-factory"
       ]
     },
     {
@@ -40589,7 +40612,9 @@
         "ffmpeg",
         "ollama"
       ],
-      "alt": []
+      "alt": [
+        "moneyprinterturbo"
+      ]
     },
     {
       "id": "videolingo",
@@ -51397,7 +51422,9 @@
         "semgrep",
         "mitmproxy"
       ],
-      "alt": []
+      "alt": [
+        "strix"
+      ]
     },
     {
       "id": "skillspector",
@@ -51642,7 +51669,9 @@
         "github-mcp-server",
         "semgrep"
       ],
-      "alt": []
+      "alt": [
+        "shannon"
+      ]
     },
     {
       "id": "x64dbg",
@@ -58712,11 +58741,13 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "opencode",
         "headroom",
-        "rtk"
+        "rtk",
+        "context7"
       ],
-      "alt": []
+      "alt": [
+        "opencode"
+      ]
     },
     {
       "id": "open-interpreter",
@@ -59092,7 +59123,8 @@
         "codex",
         "goose",
         "gemini-cli",
-        "aider"
+        "aider",
+        "mimo-code"
       ]
     },
     {
@@ -59209,7 +59241,9 @@
         "ollama",
         "coolify"
       ],
-      "alt": []
+      "alt": [
+        "t3code"
+      ]
     },
     {
       "id": "opencursor",
@@ -59696,7 +59730,9 @@
         "codex",
         "opencode"
       ],
-      "alt": []
+      "alt": [
+        "opencode-manager"
+      ]
     },
     {
       "id": "agentes-chat",
@@ -60309,7 +60345,8 @@
       ],
       "alt": [
         "storm",
-        "vane"
+        "vane",
+        "local-deep-research"
       ]
     },
     {
@@ -60678,7 +60715,9 @@
         "searxng",
         "llama-cpp"
       ],
-      "alt": []
+      "alt": [
+        "gpt-researcher"
+      ]
     },
     {
       "id": "mercury-agent",
@@ -60917,7 +60956,9 @@
         "codex",
         "opencode"
       ],
-      "alt": []
+      "alt": [
+        "paperclip"
+      ]
     },
     {
       "id": "openclaw",
@@ -61290,7 +61331,9 @@
         "codex",
         "hermes-agent"
       ],
-      "alt": []
+      "alt": [
+        "multica"
+      ]
     },
     {
       "id": "ruflo",
@@ -62003,7 +62046,9 @@
         "adguardhome",
         "activepieces"
       ],
-      "alt": []
+      "alt": [
+        "coolify"
+      ]
     },
     {
       "id": "claude-task-master",
@@ -62125,7 +62170,9 @@
         "codex",
         "opencode"
       ],
-      "alt": []
+      "alt": [
+        "spec-kit"
+      ]
     },
     {
       "id": "composio",
@@ -62487,7 +62534,9 @@
         "windmill",
         "freedomain"
       ],
-      "alt": []
+      "alt": [
+        "casaos"
+      ]
     },
     {
       "id": "e2b",
@@ -63693,9 +63742,13 @@
       "combines_with": [
         "claude-code",
         "ollama",
-        "litellm"
+        "vllm"
       ],
-      "alt": []
+      "alt": [
+        "omniroute",
+        "claude-code-router",
+        "litellm"
+      ]
     },
     {
       "id": "claude-code-router",
@@ -63814,7 +63867,11 @@
         "codex",
         "opencode"
       ],
-      "alt": []
+      "alt": [
+        "omniroute",
+        "backdoor",
+        "litellm"
+      ]
     },
     {
       "id": "claude-code-usage-monitor",
@@ -64548,7 +64605,11 @@
         "langfuse",
         "claude-code"
       ],
-      "alt": []
+      "alt": [
+        "omniroute",
+        "claude-code-router",
+        "backdoor"
+      ]
     },
     {
       "id": "loguru",
@@ -64910,7 +64971,11 @@
         "cline",
         "ollama"
       ],
-      "alt": []
+      "alt": [
+        "claude-code-router",
+        "backdoor",
+        "litellm"
+      ]
     },
     {
       "id": "opik",
@@ -66985,7 +67050,9 @@
         "diffusers",
         "vllm"
       ],
-      "alt": []
+      "alt": [
+        "tensorflow"
+      ]
     },
     {
       "id": "tensorflow",
@@ -67108,7 +67175,9 @@
         "mediapipe",
         "marimo"
       ],
-      "alt": []
+      "alt": [
+        "pytorch"
+      ]
     },
     {
       "id": "timesfm",
@@ -77732,7 +77801,10 @@
         "whisper-cpp",
         "kokoro"
       ],
-      "alt": []
+      "alt": [
+        "pipecat",
+        "livekit-agents"
+      ]
     },
     {
       "id": "earshot",
@@ -78723,7 +78795,8 @@
         "whisper-cpp"
       ],
       "alt": [
-        "pipecat"
+        "pipecat",
+        "dograh"
       ]
     },
     {
@@ -79219,7 +79292,8 @@
         "nemo"
       ],
       "alt": [
-        "livekit-agents"
+        "livekit-agents",
+        "dograh"
       ]
     },
     {
@@ -82865,7 +82939,9 @@
         "opencode",
         "mermaid"
       ],
-      "alt": [],
+      "alt": [
+        "diagram-design"
+      ],
       "agent_tools": [
         "claude-code",
         "codex"
@@ -82990,7 +83066,9 @@
         "claude-code",
         "slidev"
       ],
-      "alt": []
+      "alt": [
+        "archify"
+      ]
     },
     {
       "id": "marp",
@@ -84059,13 +84137,14 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "browser-use",
         "claude-code",
-        "codex"
+        "codex",
+        "gemini-cli"
       ],
       "alt": [
         "playwright-mcp",
-        "chrome-devtools-mcp"
+        "chrome-devtools-mcp",
+        "browser-use"
       ]
     },
     {
@@ -84184,15 +84263,16 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "browser-harness",
         "claude-code",
-        "ollama"
+        "ollama",
+        "pydantic-ai"
       ],
       "alt": [
         "computer-use-preview",
         "stagehand",
         "skyvern",
-        "playwright-mcp"
+        "playwright-mcp",
+        "browser-harness"
       ]
     },
     {
