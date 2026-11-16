@@ -1,12 +1,21 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16",
   "note": "Repos retirados del catálogo por estar archivados, abandonados, sustituidos o inactivos. scripts/daily_stars.py no los propone de nuevo aunque sigan con star. Para recuperar uno, quítalo de esta lista y vuelve a revisarlo como incorporación nueva.",
   "reasons": {
     "archivado": "Archivado en GitHub por sus autores.",
     "abandonado": "Sus autores anuncian que ya no se mantiene.",
     "sustituido": "Lo reemplaza otro proyecto o una versión nueva.",
-    "inactivo": "Sin cambios en años y con poco valor actual."
+    "inactivo": "Sin cambios en años y con poco valor actual.",
+    "seguridad": "Señales de suplantación o malware; no se recomienda descargarlo.",
+    "no-herramienta": "No es una herramienta ni un recurso utilizable (p. ej. un perfil personal de GitHub).",
+    "descontinuado": "Material sin mantenimiento basado en tecnología descontinuada.",
+    "propietario": "Depende de software o servicios propietarios, o ya no distribuye código abierto utilizable.",
+    "riesgo-legal": "Riesgo de incumplir términos de servicio, derechos de autor o licencias de terceros.",
+    "demo": "Demostración o experimento con adopción mínima; no aporta como herramienta.",
+    "nicho": "Complemento o proyecto de nicho con poca adopción; se cubre mejor desde otra ficha.",
+    "no-verificable": "Sus afirmaciones principales no están validadas o el propio proyecto las reconoce como simuladas.",
+    "editorial": "Decisión editorial del propietario del catálogo a favor de otras opciones."
   },
   "repos": [
     {
@@ -661,6 +670,402 @@
       "replaced_by": [
         "scrapy",
         "crawl4ai"
+      ]
+    },
+    {
+      "id": "muse-spark",
+      "gh": "muse-spark-app/muse-spark",
+      "github_id": 1364404896,
+      "name": "Muse Spark",
+      "cat": 8,
+      "retired_at": "2026-11-15",
+      "reason": "seguridad",
+      "evidence": "posible suplantación/malware: org creada 1 min antes, release .7z ejecutado como admin",
+      "last_commit": "2026-09-10",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "mvanhorn",
+      "gh": "mvanhorn/mvanhorn",
+      "github_id": 1176139654,
+      "name": "mvanhorn",
+      "cat": 19,
+      "retired_at": "2026-11-15",
+      "reason": "no-herramienta",
+      "evidence": "perfil personal de GitHub, no es una herramienta",
+      "last_commit": "2026-11-09",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "python-machine-learning-book",
+      "gh": "rasbt/python-machine-learning-book",
+      "github_id": 40380094,
+      "name": "python-machine-learning-book",
+      "cat": 19,
+      "retired_at": "2026-11-15",
+      "reason": "descontinuado",
+      "evidence": "primera edición 2015 basada en Theano, descontinuado",
+      "last_commit": "2026-07-18",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "openclaude",
+      "gh": "Twigpine/openclaude",
+      "github_id": 1197990888,
+      "name": "openclaude",
+      "cat": 20,
+      "retired_at": "2026-11-16",
+      "reason": "propietario",
+      "evidence": "Su propio NOTICE indica que deriva del código propietario de Claude Code.",
+      "last_commit": "2026-11-16",
+      "archived": false,
+      "replaced_by": [
+        "claude-code",
+        "opencode"
+      ]
+    },
+    {
+      "id": "codex-chatgpt-web",
+      "gh": "miuuyy/codex-chatgpt-web",
+      "github_id": 1312807575,
+      "name": "codex-chatgpt-web",
+      "cat": 22,
+      "retired_at": "2026-11-16",
+      "reason": "riesgo-legal",
+      "evidence": "Automatiza una sesión de consumidor de ChatGPT Web sin API oficial: riesgo de términos de servicio y de seguridad.",
+      "last_commit": "2026-11-12",
+      "archived": false,
+      "replaced_by": [
+        "codex"
+      ]
+    },
+    {
+      "id": "fugu",
+      "gh": "SakanaAI/fugu",
+      "github_id": 1272437000,
+      "name": "fugu",
+      "cat": 21,
+      "retired_at": "2026-11-16",
+      "reason": "propietario",
+      "evidence": "Cliente de un servicio propietario de Sakana AI, sin licencia de código abierto.",
+      "last_commit": "2026-10-28",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "company-pixel-office",
+      "gh": "ATK-zk/company-pixel-office",
+      "github_id": 1414581085,
+      "name": "company-pixel-office",
+      "cat": 14,
+      "retired_at": "2026-11-16",
+      "reason": "demo",
+      "evidence": "Demo con adopción mínima.",
+      "last_commit": "2026-10-13",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "pixel-hedge-fund",
+      "gh": "jaypolanco96/pixel-hedge-fund",
+      "github_id": 1378011443,
+      "name": "pixel-hedge-fund",
+      "cat": 14,
+      "retired_at": "2026-11-16",
+      "reason": "demo",
+      "evidence": "Demo con adopción mínima y sin licencia.",
+      "last_commit": "2026-10-08",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "pixelfund-ai",
+      "gh": "kyjwang/PixelFund-AI",
+      "github_id": 1257216735,
+      "name": "PixelFund-AI",
+      "cat": 14,
+      "retired_at": "2026-11-16",
+      "reason": "demo",
+      "evidence": "Demo con adopción mínima.",
+      "last_commit": "2026-06-15",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "palmier-pro",
+      "gh": "palmier-io/palmier-pro",
+      "github_id": 1203468533,
+      "name": "palmier-pro",
+      "cat": 12,
+      "retired_at": "2026-11-16",
+      "reason": "propietario",
+      "evidence": "Las versiones actuales distribuyen binarios propietarios; el código abierto que queda es histórico.",
+      "last_commit": "2026-11-02",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "open-generative-ai",
+      "gh": "Anil-matcha/Open-Generative-AI",
+      "github_id": 638513786,
+      "name": "Open-Generative-AI",
+      "cat": 11,
+      "retired_at": "2026-11-16",
+      "reason": "propietario",
+      "evidence": "Funciona sobre todo como escaparate de MuAPI, un servicio de pago.",
+      "last_commit": "2026-11-15",
+      "archived": false,
+      "replaced_by": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": "dsh-qa",
+      "gh": "ZSeven-W/dsh-qa",
+      "github_id": 1352490672,
+      "name": "dsh-qa",
+      "cat": 7,
+      "retired_at": "2026-11-16",
+      "reason": "nicho",
+      "evidence": "Plugin de DeepSeek Harness con muy poca adopción y en prerelease.",
+      "last_commit": "2026-09-24",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "dsh-android",
+      "gh": "ZSeven-W/dsh-android",
+      "github_id": 1341805689,
+      "name": "dsh-android",
+      "cat": 20,
+      "retired_at": "2026-11-16",
+      "reason": "nicho",
+      "evidence": "Plugin de DeepSeek Harness; se cubre desde la guía práctica (handbook) de DSH.",
+      "last_commit": "2026-11-10",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "dsh-ios",
+      "gh": "ZSeven-W/dsh-ios",
+      "github_id": 1339882322,
+      "name": "dsh-ios",
+      "cat": 20,
+      "retired_at": "2026-11-16",
+      "reason": "nicho",
+      "evidence": "Plugin de DeepSeek Harness; se cubre desde la guía práctica (handbook) de DSH.",
+      "last_commit": "2026-11-10",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "dsh-game-studio",
+      "gh": "ZSeven-W/dsh-game-studio",
+      "github_id": 1446725818,
+      "name": "dsh-game-studio",
+      "cat": 20,
+      "retired_at": "2026-11-16",
+      "reason": "nicho",
+      "evidence": "Plugin de DeepSeek Harness de nicho.",
+      "last_commit": "2026-11-09",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "treg",
+      "gh": "superdesigndev/treg",
+      "github_id": 1301657572,
+      "name": "treg",
+      "cat": 5,
+      "retired_at": "2026-11-16",
+      "reason": "nicho",
+      "evidence": "Servidor MCP de nicho con licencia Apache más condiciones adicionales.",
+      "last_commit": "2026-11-16",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "deepwiki-open",
+      "gh": "AsyncFuncAI/deepwiki-open",
+      "github_id": 975318071,
+      "name": "DeepWiki Open",
+      "cat": 7,
+      "retired_at": "2026-11-16",
+      "reason": "nicho",
+      "evidence": "El README actual es escueto y remite a otro producto (Grok Wiki); relación poco clara.",
+      "last_commit": "2026-11-15",
+      "archived": false,
+      "replaced_by": [
+        "context7"
+      ]
+    },
+    {
+      "id": "pandas-ai",
+      "gh": "sinaptik-ai/pandas-ai",
+      "github_id": 631258918,
+      "name": "PandasAI",
+      "cat": 10,
+      "retired_at": "2026-11-16",
+      "reason": "inactivo",
+      "evidence": "Sin cambios en más de un año (último push en octubre de 2025) y requiere Python ≤3.11.",
+      "last_commit": "2025-10-28",
+      "archived": false,
+      "replaced_by": [
+        "wrenai"
+      ]
+    },
+    {
+      "id": "face-recognition",
+      "gh": "ageitgey/face_recognition",
+      "github_id": 83844720,
+      "name": "face_recognition",
+      "cat": 28,
+      "retired_at": "2026-11-16",
+      "reason": "inactivo",
+      "evidence": "Última release en 2018; el README aún menciona Python 2.7.",
+      "last_commit": "2026-06-25",
+      "archived": false,
+      "replaced_by": [
+        "insightface"
+      ]
+    },
+    {
+      "id": "ruview",
+      "gh": "ruvnet/RuView",
+      "github_id": 997737944,
+      "name": "RuView",
+      "cat": 28,
+      "retired_at": "2026-11-16",
+      "reason": "no-verificable",
+      "evidence": "Afirmaciones de pose por WiFi sin validación independiente; parte de los resultados se reconocen como sintéticos.",
+      "last_commit": "2026-11-16",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "music-megathread",
+      "gh": "MoonWalker440/Music-Megathread",
+      "github_id": 738633114,
+      "name": "Music-Megathread",
+      "cat": 29,
+      "retired_at": "2026-11-16",
+      "reason": "riesgo-legal",
+      "evidence": "Lista con enlaces a descargadores de dudosa legalidad y sin licencia.",
+      "last_commit": "2025-06-24",
+      "archived": false,
+      "replaced_by": []
+    },
+    {
+      "id": "camofox-browser",
+      "gh": "jo-inc/camofox-browser",
+      "github_id": 1142274728,
+      "name": "camofox-browser",
+      "cat": 32,
+      "retired_at": "2026-11-16",
+      "reason": "riesgo-legal",
+      "evidence": "Diseñado para eludir la detección de bots (Google, Cloudflare): riesgo de términos de servicio y de abuso.",
+      "last_commit": "2026-11-10",
+      "archived": false,
+      "replaced_by": [
+        "playwright",
+        "browser-use"
+      ]
+    },
+    {
+      "id": "hypit",
+      "gh": "hypit-ai/hypit",
+      "github_id": 1316470719,
+      "name": "hypit",
+      "cat": 30,
+      "retired_at": "2026-11-16",
+      "reason": "riesgo-legal",
+      "evidence": "Licencia no OSI (Apache con condiciones) y orientado a clonar vídeos virales de terceros.",
+      "last_commit": "2026-11-14",
+      "archived": false,
+      "replaced_by": [
+        "openmontage"
+      ]
+    },
+    {
+      "id": "n8n",
+      "gh": "n8n-io/n8n",
+      "github_id": 193215554,
+      "name": "n8n",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Decisión editorial: se prefieren langgraph, activepieces y windmill. El alias n8n-io (mismo repositorio) se retira con él.",
+      "last_commit": "2026-11-16",
+      "archived": false,
+      "replaced_by": [
+        "activepieces",
+        "windmill",
+        "langgraph"
+      ]
+    },
+    {
+      "id": "n8n-mcp",
+      "gh": "czlonkowski/n8n-mcp",
+      "github_id": 997890921,
+      "name": "n8n-mcp",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Decisión editorial: se prefieren langgraph, activepieces y windmill (depende de n8n).",
+      "last_commit": "2026-11-11",
+      "archived": false,
+      "replaced_by": [
+        "activepieces"
+      ]
+    },
+    {
+      "id": "n8n-skills",
+      "gh": "czlonkowski/n8n-skills",
+      "github_id": 1079619168,
+      "name": "n8n-skills",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Depende de n8n, retirado por decisión editorial.",
+      "last_commit": "2026-10-24",
+      "archived": false,
+      "replaced_by": [
+        "activepieces"
+      ]
+    },
+    {
+      "id": "awesome-n8n-templates",
+      "gh": "enescingoz/awesome-n8n-templates",
+      "github_id": 980205160,
+      "name": "Awesome n8n Templates",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Ecosistema n8n, retirado por decisión editorial. Colección de plantillas que solo sirve con n8n, retirado del catálogo.",
+      "last_commit": "2026-09-12",
+      "archived": false,
+      "replaced_by": [
+        "activepieces"
+      ]
+    },
+    {
+      "id": "self-hosted-ai-starter-kit",
+      "gh": "n8n-io/self-hosted-ai-starter-kit",
+      "github_id": 762303728,
+      "name": "Self-hosted AI Starter Kit",
+      "cat": 1,
+      "retired_at": "2026-11-16",
+      "reason": "editorial",
+      "evidence": "Ecosistema n8n, retirado por decisión editorial. Plantilla Docker Compose centrada en n8n (con Ollama, Qdrant y PostgreSQL).",
+      "last_commit": "2026-11-12",
+      "archived": false,
+      "replaced_by": [
+        "ollama",
+        "qdrant",
+        "open-webui"
       ]
     }
   ]

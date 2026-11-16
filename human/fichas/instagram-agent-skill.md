@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Trece skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de Instagram, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.
+
+## ¿Qué hace?
+
+Escriben Reels a partir de 26 fórmulas de gancho y puntúan el gancho, encuentran los reels que funcionan en tu nicho, redactan pies de foto mostrando lo que se ve antes de «… más», puntúan el perfil sobre 100 y planifican la semana. Incluye un «humanizador» que quita guiones largos, vocabulario típico de IA y caracteres invisibles. No publica nada: tú decides.
+
+## ¿Cómo lo hace?
+
+Se instala pegando el enlace en Claude, copiando `skills/ig-*` a `~/.claude/skills/` o como plugin (`/plugin marketplace add Jakeschincariol/instagram-agent-skill`). Sin Claude Code, cada `SKILL.md` puede pegarse en un chat, perdiendo las herramientas Python.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin y skills nativas. | Instala el plugin y completa la plantilla de voz. |
+| [postiz-app](postiz-app.md) | Programar las publicaciones aprobadas (combinación por arquitectura). | Aprueba el contenido antes de enviarlo a Postiz. |
+| [social-media-research-skills](social-media-research-skills.md) | Datos de competidores y tendencias para alimentar los guiones (combinación por arquitectura). | Requiere clave de ScrapeCreators. |
+
+Estado en GitHub: activo · último push 2026-09-13 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Jakeschincariol/instagram-agent-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Produce ideas y revisiones y no conecta automáticamente tu Instagram; pegar SKILL.md en otro modelo no acredita un plugin nativo allí |
 | Coste | Consumo del agente que ya utilizas. El pack declara no requerir API key ni cuenta conectada para su función básica; usa el modelo del anfitrión |
 | Equipo | Preparación según la ruta elegida. Claude o Claude Code; brief de contenido; Python para utilidades opcionales |
-
-Produce ideas y revisiones y no conecta automáticamente tu Instagram; pegar SKILL.md en otro modelo no acredita un plugin nativo allí
-
-## Qué puedes hacer con él
-
-Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un Reel; Revisar un caption.
-
-## Cómo funciona
 
 Produce ideas y revisiones y no conecta automáticamente tu Instagram; pegar SKILL.md en otro modelo no acredita un plugin nativo allí
 

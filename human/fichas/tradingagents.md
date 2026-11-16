@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+TradingAgents, framework multiagente con LLM para trading financiero, de Tauric Research. Licencia Apache-2.0. Es muy popular (~123k estrellas, v0.7.1) y su README promociona Trading-R1, en acceso anticipado.
+
+## ¿Qué hace?
+
+Simula una firma de trading con analistas (fundamental, sentimiento, noticias, técnico), investigadores alcista y bajista que debaten, un trader, gestión de riesgo y gestor de cartera. Puntúa las decisiones sobre cierres reales y evita datos posteriores a la fecha simulada.
+
+## ¿Cómo lo hace?
+
+Está construido con LangGraph (con reanudación por checkpoints) y se instala con `uv pip install .` o con Docker Compose, con perfil para Ollama. Admite muchos proveedores de LLM, incluida una suscripción de ChatGPT.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Framework sobre el que está construido. | Viene en las dependencias. |
+| [Ollama](ollama.md) | Perfil de Docker Compose para modelos locales. | Ejecuta `docker compose --profile ollama run --rm tradingagents-ollama`. |
+| [dexter](dexter.md) | Investigación financiera previa con otro agente. (combinación por arquitectura) | Pasa los hallazgos de Dexter como contexto. |
+
+**Notas:** Sin alternativas declaradas. Herramienta de investigación. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-11-04 · última versión publicada v0.7.1 (2026-10-27) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/TauricResearch/TradingAgents/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La investigación multiagente no equivale a rentabilidad validada ni a un motor listo para operar capital |
 | Coste | El coste depende del proveedor o la ruta. Admite Ollama y servidores compatibles, además de APIs; datos y múltiples llamadas por análisis pueden costar |
 | Equipo | Preparación según la ruta elegida. Python; proveedor u Ollama; datos; configuración del grafo |
-
-La investigación multiagente no equivale a rentabilidad validada ni a un motor listo para operar capital
-
-## Qué puedes hacer con él
-
-Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar debate entre agentes financieros; Comparar proveedores sobre la misma muestra histórica.
-
-## Cómo funciona
 
 La investigación multiagente no equivale a rentabilidad validada ni a un motor listo para operar capital
 

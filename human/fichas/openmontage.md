@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+OpenMontage, «sistema de producción de vídeo agéntico» open source, de OpenMontageInc (antes calesthio). Licencia AGPL-3.0. Creado en marzo de 2026, tiene ~81k estrellas, una cifra inusual; el README anuncia un nuevo producto en preparación.
+
+## ¿Qué hace?
+
+Pipelines y herramientas para que un agente produzca vídeo de principio a fin: concepto, guion, plan de escenas, clips generados, banda sonora y composición en Remotion. Funciona con herramientas gratuitas o con proveedores de pago (Atlas Cloud, Veo, Kling y otros).
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10+, FFmpeg y Node.js parcheado (22.23.4+, 24.22.1+ o 26.12.1+), y se instala con `make setup` o pip.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Composición final. | Viene integrado; revisa la licencia de Remotion. |
+| [FFmpeg](ffmpeg.md) | Procesado de medios. | Instala FFmpeg. |
+| [Kokoro](kokoro.md) | Narración local sin claves. (combinación por arquitectura) | Configura un TTS local. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | OpenMontage usa ElevenLabs para TTS premium, música y efectos; su código importa este SDK. | Añade `ELEVENLABS_API_KEY` al `.env`. |
+
+**Notas:** Alternativas (elige una): remotion-superpowers, moneyprinterturbo.
+
+Estado en GitHub: activo · último push 2026-11-09 · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenMontageInc/OpenMontage/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Documenta asistentes con archivos y ejecución de código; Piper permite voz offline, pero no implica que el modelo del agente o todos los pipelines sean locales |
 | Coste | El coste depende del proveedor o la ruta. API keys opcionales amplían proveedores; el agente, render, Remotion y recursos tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Python; Node; FFmpeg; dependencias de la ruta; material autorizado |
-
-Documenta asistentes con archivos y ejecución de código; Piper permite voz offline, pero no implica que el modelo del agente o todos los pipelines sean locales
-
-## Qué puedes hacer con él
-
-Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un video con recursos locales; Comparar un pipeline con servicios opcionales.
-
-## Cómo funciona
 
 Documenta asistentes con archivos y ejecución de código; Piper permite voz offline, pero no implica que el modelo del agente o todos los pipelines sean locales
 
@@ -97,12 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Node; FFmpeg; dependencias de la ruta; material autorizado
 - **Etiquetas:** `video` `coding-agent` `skills`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [remotion](remotion.md) | 73.2k | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
 
 ## Alternativas (elige una)
 

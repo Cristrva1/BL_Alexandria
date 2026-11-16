@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Paquete de 94 skills (MIT) de arjun988 para artistas de Blender, que se presenta como un equipo de arte técnico senior. Sin releases; su ficha en el marketplace de Anthropic estaba en revisión según el README.
+
+## ¿Qué hace?
+
+Cubre modelado, producción, técnica, pipeline, estilos artísticos, paquetes de terror, mundos, ambientes y jugabilidad, ejecutando las acciones en Blender a través de Blender MCP en lugar de dar tutoriales.
+
+## ¿Cómo lo hace?
+
+Skills en `.claude/skills` que se copian al proyecto para Claude Code, a `.cursor/skills` en Cursor, al directorio de Kiro o a la ruta de skills de Codex. La documentación completa está en su web en Vercel.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Blender MCP](blender-mcp.md) | Vía de ejecución de las skills en Blender. | Instala y conecta el MCP siguiendo `docs/BLENDER_MCP_SETUP.md`. |
+| [blender](blender.md) | Aplicación sobre la que actúan. | Blender instalado y abierto con el complemento del MCP. |
+| [Claude Code](claude-code.md) | Agente compatible documentado. | Copia las skills al `.claude/skills` del proyecto. |
+
+Estado en GitHub: activo · último push 2026-11-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/arjun988/blender-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code y Codex; instalar instrucciones no instala ni autentica automáticamente el servidor Blender MCP |
 | Coste | Consumo del agente que ya utilizas. Las skills usan el plan del agente; Blender y servicios de assets adicionales tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Blender; agente; conexión MCP o scripting; escena de prueba |
-
-Documenta Claude Code y Codex; instalar instrucciones no instala ni autentica automáticamente el servidor Blender MCP
-
-## Qué puedes hacer con él
-
-Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un objeto para un juego; Revisar un pipeline de assets 3D.
-
-## Cómo funciona
 
 Documenta Claude Code y Codex; instalar instrucciones no instala ni autentica automáticamente el servidor Blender MCP
 
@@ -95,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Blender; agente; conexión MCP o scripting; escena de prueba
 - **Etiquetas:** `creacion-3d` `skill` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [blender](blender.md) | 22k | Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. |
 
 ## Enlaces
 

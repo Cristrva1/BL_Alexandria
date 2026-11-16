@@ -1,0 +1,823 @@
+{
+ "batch": "47-expansion-p02",
+ "checked_at": "2026-11-16",
+ "method": "Lectura del README upstream (API de GitHub) y de la documentación oficial enlazada; estado del repositorio (archivado, licencia, último push, última release) consultado con la API de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "mcp-toolbox": {
+   "que_es": "Servidor MCP de código abierto (Apache-2.0) mantenido por Google (organización googleapis). El repositorio se llamaba genai-toolbox y se renombró a mcp-toolbox; publica versiones frecuentes y SDK oficiales.",
+   "que_hace": "Conecta agentes, IDE y aplicaciones con bases de datos empresariales en dos modos: como servidor MCP listo con herramientas genéricas (explorar esquemas, consultar datos) para Gemini CLI, Antigravity, Claude Code, Codex u otros clientes, y como framework para definir herramientas específicas y seguras (consultas estructuradas, búsqueda semántica, NL2SQL) para agentes en producción. Soporta PostgreSQL, MySQL, BigQuery, AlloyDB, Spanner, ClickHouse, Elasticsearch y muchas más.",
+   "como_lo_hace": "Escrito en Go; se instala con Homebrew (`brew install mcp-toolbox`), `go install`, binarios, Docker o `npx @toolbox-sdk/server --config tools.yaml`. Las fuentes y herramientas se declaran en `tools.yaml`; los SDK (`toolbox-core`, `toolbox-langchain`, `toolbox-llamaindex`, npm, Go y Java) cargan esas herramientas en frameworks de agentes.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "El README documenta conectar Claude Code a las bases de datos mediante las herramientas genéricas del servidor MCP.",
+     "orden_instalacion": "Arranca el servidor con tu tools.yaml; después añádelo como servidor MCP en Claude Code."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Gemini CLI es uno de los clientes documentados para usar el servidor MCP de Toolbox.",
+     "orden_instalacion": "Instala Gemini CLI; después configura Toolbox como servidor MCP."
+    },
+    {
+     "id": "codex",
+     "motivo": "Codex figura entre los clientes MCP que el README cita para hablar con las bases de datos.",
+     "orden_instalacion": "Servidor Toolbox en marcha; después regístralo en la configuración MCP de Codex."
+    },
+    {
+     "id": "langchain",
+     "motivo": "El paquete toolbox-langchain carga las herramientas definidas en Toolbox dentro de agentes de LangChain.",
+     "orden_instalacion": "Servidor Toolbox primero; después `pip install toolbox-langchain` y carga el conjunto de herramientas."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "El paquete toolbox-llamaindex expone las mismas herramientas a agentes de LlamaIndex.",
+     "orden_instalacion": "Servidor Toolbox primero; después `pip install toolbox-llamaindex`."
+    }
+   ],
+   "notas": "Usa credenciales de solo lectura en las primeras pruebas: las herramientas genéricas pueden ejecutar SQL arbitrario.",
+   "fuentes": [
+    "https://github.com/googleapis/mcp-toolbox/blob/main/README.md",
+    "https://mcp-toolbox.dev/documentation/introduction/"
+   ],
+   "github": {
+    "name_with_owner": "googleapis/mcp-toolbox",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.17.0 (2026-11-13)"
+   }
+  },
+  "aws-mcp": {
+   "que_es": "Conjunto de servidores MCP de código abierto (Apache-2.0) publicado por AWS Labs. Muy activo; desde mayo de 2026 AWS recomienda para producción el Agent Toolkit for AWS, presentado como sucesor, aunque este repositorio sigue funcionando y aceptando contribuciones.",
+   "que_hace": "Ofrece servidores especializados: documentación de AWS, infraestructura como código (CloudFormation y CDK), Amazon EKS y ECS, aplicaciones serverless con SAM, ejecución de funciones Lambda como herramientas, construcción de contenedores con Finch, bases de datos, costes y más. También enlaza el AWS MCP Server gestionado (en preview).",
+   "como_lo_hace": "Cada servidor vive en `src/` y se ejecuta normalmente con `uvx awslabs.<servidor>@latest` usando el transporte stdio (el soporte SSE se retiró). La autenticación usa perfiles y credenciales estándar de AWS; el README incluye botones de instalación para varios clientes y configuraciones JSON.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Los servidores se registran como servidores MCP stdio en Claude Code con sus comandos uvx (combinación por arquitectura).",
+     "orden_instalacion": "Configura credenciales y perfil de AWS; después añade el servidor elegido en Claude Code."
+    },
+    {
+     "id": "codex",
+     "motivo": "Codex puede usar los mismos servidores stdio para consultar documentación o generar infraestructura (combinación por arquitectura).",
+     "orden_instalacion": "Perfil de AWS listo; después registra el servidor en la configuración MCP de Codex."
+    },
+    {
+     "id": "mcp-inspector",
+     "motivo": "MCP Inspector permite probar las herramientas de un servidor de AWS antes de dárselas a un agente (combinación por arquitectura).",
+     "orden_instalacion": "Instala uv y el servidor; después lánzalo desde MCP Inspector."
+    }
+   ],
+   "notas": "Empieza por servidores de solo lectura (documentación) y usa permisos IAM mínimos. Para producción, AWS recomienda el Agent Toolkit for AWS.",
+   "fuentes": [
+    "https://github.com/awslabs/mcp/blob/main/README.md",
+    "https://awslabs.github.io/mcp/",
+    "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/"
+   ],
+   "github": {
+    "name_with_owner": "awslabs/mcp",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "2026.11.20261109200750 (2026-11-09)"
+   }
+  },
+  "weaviate": {
+   "que_es": "Base de datos vectorial de código abierto de Weaviate B.V. La mayor parte del repositorio es BSD-3-Clause; los archivos de `wl/` pertenecen a la edición Enterprise y requieren clave de licencia. Proyecto maduro con nube gestionada aparte.",
+   "que_hace": "Almacena objetos junto a sus vectores y combina búsqueda por similitud con filtros por palabra clave y propiedades, búsqueda híbrida, RAG y reordenación. Puede vectorizar automáticamente al importar mediante modelos integrados o aceptar vectores precalculados; escala con replicación y fragmentación.",
+   "como_lo_hace": "Escrito en Go; se despliega con Docker (`docker compose up -d`), Kubernetes o Weaviate Cloud. Expone REST, GraphQL y gRPC con clientes oficiales (`pip install -U weaviate-client`, TypeScript, Go, Java). Publica además skills para agentes (`npx skills add weaviate/agent-skills`).",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "LangChain mantiene una integración de almacén vectorial para Weaviate (langchain-weaviate).",
+     "orden_instalacion": "Weaviate en marcha; después instala langchain-weaviate y crea el almacén."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "LlamaIndex incluye WeaviateVectorStore para indexar y consultar documentos en Weaviate.",
+     "orden_instalacion": "Weaviate en marcha; después instala la integración de LlamaIndex."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Weaviate tiene módulos de vectorización y generación con Ollama para trabajar con modelos locales.",
+     "orden_instalacion": "Ollama con un modelo de embeddings; después habilita el módulo de Ollama en Weaviate."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Weaviate publica skills de agente que se instalan con `npx skills add weaviate/agent-skills` para trabajar con la base desde agentes de código.",
+     "orden_instalacion": "Weaviate accesible; después añade las skills al agente."
+    }
+   ],
+   "notas": "Alternativas (elige una): qdrant, milvus.",
+   "fuentes": [
+    "https://github.com/weaviate/weaviate/blob/main/README.md",
+    "https://docs.weaviate.io/weaviate/model-providers",
+    "https://docs.weaviate.io/deploy/enterprise"
+   ],
+   "github": {
+    "name_with_owner": "weaviate/weaviate",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.40.5 (2026-11-10)"
+   }
+  },
+  "meilisearch": {
+   "que_es": "Motor de búsqueda de código abierto de Meili SAS. La Community Edition es MIT; la Enterprise Edition añade sharding y otras funciones bajo licencia comercial o Business Source License 1.1. Proyecto muy popular y maduro con nube gestionada.",
+   "que_hace": "Ofrece búsqueda de texto completo, semántica e híbrida con tolerancia a erratas, facetas, filtros, ordenación, geobúsqueda, sinónimos y multi-tenencia, con respuestas de pocos milisegundos. Según el README funciona con LangChain y MCP para casos de IA.",
+   "como_lo_hace": "Escrito en Rust; se instala con Docker, `curl -L https://install.meilisearch.com | sh`, paquetes o la nube. Se usa por API REST con SDK oficiales; la búsqueda semántica se activa configurando embedders.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Meilisearch admite Ollama como fuente de embeddings para la búsqueda semántica e híbrida en local.",
+     "orden_instalacion": "Ollama con un modelo de embeddings; después configura el embedder de Ollama en el índice."
+    },
+    {
+     "id": "langchain",
+     "motivo": "El README indica que Meilisearch funciona con LangChain como almacén para búsqueda y recuperación.",
+     "orden_instalacion": "Meilisearch en marcha con una clave; después usa su integración en LangChain."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Firecrawl extrae páginas en Markdown o JSON que se pueden indexar en Meilisearch para buscar en un sitio (combinación por arquitectura).",
+     "orden_instalacion": "Rastrea con Firecrawl; después sube los documentos al índice de Meilisearch."
+    }
+   ],
+   "notas": "Revisa la licencia antes de usar funciones Enterprise en producción.",
+   "fuentes": [
+    "https://github.com/meilisearch/meilisearch/blob/main/README.md",
+    "https://www.meilisearch.com/docs/reference/api/settings"
+   ],
+   "github": {
+    "name_with_owner": "meilisearch/meilisearch",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "NOASSERTION",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.56.2 (2026-11-09)"
+   }
+  },
+  "kotaemon": {
+   "que_es": "Herramienta RAG de código abierto (Apache-2.0) de Cinnamon AI, pensada tanto para usuarios finales como para desarrolladores. Popular, aunque el ritmo de cambios se ha reducido (último push en julio de 2026).",
+   "que_hace": "Permite subir documentos y preguntar sobre ellos con citas, vista previa de las fuentes, recuperación híbrida y reordenación, multiusuario y gestión de colecciones. Soporta GraphRAG, nano-GraphRAG y LightRAG, razonamiento multi-paso y extracción de tablas y figuras con distintos cargadores, incluido Docling.",
+   "como_lo_hace": "Construido en Python sobre Gradio; se ejecuta con imágenes Docker (`main-lite`, `main-full`, `main-ollama`) para linux/amd64 y arm64, o desde el código con uv o pip (`libs/kotaemon` y `libs/ktem`). Los modelos y embeddings se configuran en la interfaz o en `.env`.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "kotaemon documenta modelos locales mediante el servidor compatible con OpenAI de Ollama y publica una imagen main-ollama.",
+     "orden_instalacion": "Ollama con un modelo de chat y uno de embeddings; después configúralos en kotaemon."
+    },
+    {
+     "id": "lightrag",
+     "motivo": "El README incluye la configuración de LightRAG como estrategia de indexación basada en grafos.",
+     "orden_instalacion": "Instala las dependencias de LightRAG indicadas; después actívalo en la configuración."
+    },
+    {
+     "id": "graphrag",
+     "motivo": "kotaemon soporta GraphRAG de Microsoft y nano-GraphRAG para preguntas sobre relaciones entre documentos.",
+     "orden_instalacion": "Instala graphrag o nano-graphrag según el README; después elige ese índice."
+    },
+    {
+     "id": "docling",
+     "motivo": "kotaemon documenta Docling como cargador local para extraer texto, tablas y figuras.",
+     "orden_instalacion": "Instala Docling; después selecciónalo como cargador siguiendo integrations/docling.md."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: anything-llm, open-notebook.",
+   "fuentes": [
+    "https://github.com/Cinnamon/kotaemon/blob/main/README.md",
+    "https://cinnamon.github.io/kotaemon/"
+   ],
+   "github": {
+    "name_with_owner": "Cinnamon/kotaemon",
+    "archived": false,
+    "pushed_at": "2026-07-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.12.0 (2026-05-31)"
+   }
+  },
+  "txtai": {
+   "que_es": "Framework de código abierto (Apache-2.0) de NeuML, mantenido de forma continua desde 2020. Requiere Python 3.11 o superior.",
+   "que_hace": "Ofrece búsqueda vectorial con SQL, almacenamiento de objetos, modelado de temas, análisis de grafos e indexación multimodal; pipelines con LLM para preguntas, etiquetado, transcripción, traducción y resumen; workflows que encadenan pipelines; agentes; y APIs web y MCP con bindings para JavaScript, Java, Rust y Go.",
+   "como_lo_hace": "Construido en Python con Hugging Face Transformers, Sentence Transformers y FastAPI; se instala con `pip install txtai` y extras opcionales. Funciona en local o en contenedores, y documenta integración con llama.cpp, LiteLLM y generadores propios.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "txtai se construye sobre Hugging Face Transformers para embeddings y pipelines.",
+     "orden_instalacion": "Se instala como dependencia; elige los modelos del Hub en la configuración."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Un notebook oficial muestra cómo integrar LiteLLM como backend de LLM en txtai.",
+     "orden_instalacion": "Configura LiteLLM o las claves del proveedor; después usa la ruta de LiteLLM en el pipeline LLM."
+    },
+    {
+     "id": "llama-cpp",
+     "motivo": "txtai documenta llama.cpp como backend para ejecutar LLM locales en sus pipelines.",
+     "orden_instalacion": "Descarga un modelo GGUF; después configura el pipeline LLM con llama.cpp."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "La API MCP de txtai permite exponer un índice a agentes de código como herramienta de búsqueda (combinación por arquitectura).",
+     "orden_instalacion": "Arranca la API de txtai con MCP; después regístrala en Claude Code."
+    }
+   ],
+   "notas": "Alternativas cercanas en el catálogo: llama-index, haystack.",
+   "fuentes": [
+    "https://github.com/neuml/txtai/blob/master/README.md",
+    "https://neuml.github.io/txtai"
+   ],
+   "github": {
+    "name_with_owner": "neuml/txtai",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v9.14.0 (2026-10-06)"
+   }
+  },
+  "lancedb": {
+   "que_es": "Biblioteca de recuperación embebida de código abierto (Apache-2.0) de LanceDB Inc., con nube y edición empresarial aparte. Activa y en crecimiento.",
+   "que_hace": "Almacena, indexa y busca petabytes de datos multimodales y vectores: búsqueda vectorial, de texto completo y SQL, filtros, versionado automático sin copia y construcción de índices con GPU. Se integra con LangChain, LlamaIndex, Pandas, Polars, DuckDB y más.",
+   "como_lo_hace": "El motor está escrito en Rust sobre el formato columnar Lance; se usa como biblioteca embebida desde Python, TypeScript o Rust, y guarda datos en disco local o S3/GCS. No requiere servidor.",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "LanceDB documenta su integración como almacén vectorial de LangChain.",
+     "orden_instalacion": "Instala lancedb; después crea el almacén LanceDB en LangChain."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "LanceDB documenta su integración con LlamaIndex para indexar documentos.",
+     "orden_instalacion": "Instala lancedb y la integración de LlamaIndex; después crea el índice."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "LanceDB enumera DuckDB entre sus integraciones para consultar tablas Lance con SQL.",
+     "orden_instalacion": "Crea la tabla en LanceDB; después consúltala desde DuckDB."
+    },
+    {
+     "id": "polars",
+     "motivo": "LanceDB enumera Polars entre sus integraciones de datos para leer resultados como DataFrames.",
+     "orden_instalacion": "Instala polars; después convierte las consultas a DataFrames de Polars."
+    }
+   ],
+   "notas": "Alternativas (elige una): chroma.",
+   "fuentes": [
+    "https://github.com/lancedb/lancedb/blob/main/README.md",
+    "https://docs.lancedb.com/integrations/ai/langchain"
+   ],
+   "github": {
+    "name_with_owner": "lancedb/lancedb",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.41.0 (2026-10-29)"
+   }
+  },
+  "ruff": {
+   "que_es": "Linter y formateador de código abierto (MIT) desarrollado por Astral, la empresa de uv. Estándar de facto en el ecosistema Python, usado por proyectos como FastAPI, pandas o Apache Airflow.",
+   "que_hace": "Analiza código Python con más de 800 reglas (equivalentes a Flake8 y muchos de sus plugins, isort, pyupgrade y otros), corrige automáticamente y formatea con paridad práctica con Black, entre 10 y 100 veces más rápido según el proyecto. Soporta cuadernos Jupyter y monorepos.",
+   "como_lo_hace": "Escrito en Rust; se instala con `pip install ruff`, el instalador de Astral, `uvx ruff` o gestores de paquetes. Se configura en `pyproject.toml` o `ruff.toml` y se integra en editores (servidor de lenguaje), pre-commit y CI.",
+   "combina_con": [
+    {
+     "id": "pre-commit",
+     "motivo": "Astral mantiene el hook oficial ruff-pre-commit para ejecutar lint y formato antes de cada commit.",
+     "orden_instalacion": "Instala pre-commit; después añade el repositorio ruff-pre-commit a .pre-commit-config.yaml."
+    },
+    {
+     "id": "sonarqube",
+     "motivo": "El analizador Python de SonarQube puede importar informes de Ruff como problemas externos.",
+     "orden_instalacion": "Genera el informe de Ruff en el formato admitido; después configura la propiedad de importación en el análisis de SonarQube."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede ejecutar `ruff check --fix` y `ruff format` tras cada cambio para mantener el estilo (combinación por arquitectura).",
+     "orden_instalacion": "Instala Ruff en el proyecto; después indícale al agente que lo ejecute antes de terminar."
+    }
+   ],
+   "notas": "Ruff no hace comprobación de tipos: combínalo con un verificador de tipos si lo necesitas.",
+   "fuentes": [
+    "https://github.com/astral-sh/ruff/blob/main/README.md",
+    "https://docs.astral.sh/ruff/",
+    "https://github.com/astral-sh/ruff-pre-commit",
+    "https://docs.sonarsource.com/sonarqube-server/latest/analyzing-source-code/importing-external-issues/external-analyzer-reports/"
+   ],
+   "github": {
+    "name_with_owner": "astral-sh/ruff",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "0.17.5 (2026-11-12)"
+   }
+  },
+  "gitleaks": {
+   "que_es": "Herramienta de detección de secretos de código abierto (MIT) creada por Zachary Rice. Muy usada; el README indica que está completa en funciones y que las versiones futuras serán solo parches de seguridad, mientras el autor se centra en Betterleaks.",
+   "que_hace": "Detecta secretos como contraseñas, claves de API y tokens en repositorios git (historial completo o rangos de commits), directorios, archivos y entrada estándar. Genera informes en JSON, CSV, SARIF y otros, y admite listas de excepciones y una línea base.",
+   "como_lo_hace": "Escrito en Go; se instala con Homebrew, Docker, Go o binarios. Se usa como CLI, como hook de pre-commit o como GitHub Action (Gitleaks-Action); las reglas se configuran en TOML.",
+   "combina_con": [
+    {
+     "id": "pre-commit",
+     "motivo": "El README documenta Gitleaks como hook de pre-commit para frenar secretos antes de cada commit.",
+     "orden_instalacion": "Instala pre-commit; después añade el hook de Gitleaks a .pre-commit-config.yaml."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep cubre análisis estático de vulnerabilidades y Gitleaks los secretos: juntos forman una revisión de seguridad básica en CI (combinación por arquitectura).",
+     "orden_instalacion": "Configura ambos en el mismo pipeline de CI y revisa sus informes SARIF."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Ejecutar Gitleaks sobre los cambios de un agente antes de publicarlos evita filtrar claves que haya escrito en el código (combinación por arquitectura).",
+     "orden_instalacion": "Instala Gitleaks; después añádelo como paso obligatorio antes del commit."
+    }
+   ],
+   "notas": "Alternativas (elige una): trufflehog. Sucesor declarado por el autor: Betterleaks.",
+   "fuentes": [
+    "https://github.com/gitleaks/gitleaks/blob/master/README.md",
+    "https://github.com/betterleaks/betterleaks"
+   ],
+   "github": {
+    "name_with_owner": "gitleaks/gitleaks",
+    "archived": false,
+    "pushed_at": "2026-10-28",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v8.30.1 (2026-03-21)"
+   }
+  },
+  "trufflehog": {
+   "que_es": "Herramienta de código abierto (AGPL-3.0) de Truffle Security, que financia el proyecto con una edición Enterprise de monitorización continua. Muy activa.",
+   "que_hace": "Descubre secretos en Git, GitHub, GitLab, Docker, S3, GCS, Slack, Jira, Confluence, sistemas de archivos y más; los clasifica entre cientos de tipos, verifica si siguen siendo válidos y analiza los permisos de algunas credenciales.",
+   "como_lo_hace": "Escrito en Go; se instala con Homebrew, Docker, script de instalación o desde el código. Se usa como CLI, hook de pre-commit o GitHub Action, con salida JSON.",
+   "combina_con": [
+    {
+     "id": "pre-commit",
+     "motivo": "TruffleHog se puede ejecutar como hook de pre-commit para escanear los cambios antes de confirmarlos.",
+     "orden_instalacion": "Instala pre-commit; después añade el hook de TruffleHog según su documentación."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep cubre el análisis estático y TruffleHog los secretos verificados en el mismo pipeline de seguridad (combinación por arquitectura).",
+     "orden_instalacion": "Configura ambos pasos en CI y revisa sus informes."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente puede ejecutar TruffleHog sobre un repositorio y resumir qué credenciales están activas y deben rotarse (combinación por arquitectura).",
+     "orden_instalacion": "Instala TruffleHog; después pide al agente el análisis sobre un repositorio autorizado."
+    }
+   ],
+   "notas": "Alternativas (elige una): gitleaks.",
+   "fuentes": [
+    "https://github.com/trufflesecurity/trufflehog/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "trufflesecurity/trufflehog",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.99.9 (2026-11-12)"
+   }
+  },
+  "biome": {
+   "que_es": "Cadena de herramientas de código abierto (doble licencia MIT o Apache-2.0) mantenida por la comunidad Biome, sucesora de Rome. Muy activa y adoptada en proyectos web.",
+   "que_hace": "Formatea JavaScript, TypeScript, JSX, JSON, CSS, GraphQL, HTML, Markdown, YAML y SCSS con un 97 % de compatibilidad con Prettier según el proyecto, y analiza con más de 750 reglas que cubren casos de ESLint, typescript-eslint y otras fuentes, con diagnósticos detallados y correcciones automáticas.",
+   "como_lo_hace": "Escrito en Rust; se instala con npm (`npm install --save-dev --save-exact @biomejs/biome`) u otros gestores, y se usa con `biome format`, `biome lint`, `biome check` y `biome ci`. Tiene extensiones oficiales para editores y servidor LSP.",
+   "combina_con": [
+    {
+     "id": "pre-commit",
+     "motivo": "Biome publica hooks oficiales para pre-commit que ejecutan check o format sobre los archivos cambiados.",
+     "orden_instalacion": "Instala pre-commit; después añade el repositorio de hooks de Biome."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Biome incluye una regla para ordenar clases de utilidad de Tailwind CSS (useSortedClasses, que la próxima versión reubica en opciones propias de Tailwind).",
+     "orden_instalacion": "Proyecto con Tailwind; después activa la regla de clases ordenadas en biome.json."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Un agente de código puede ejecutar `biome check --write` tras cada cambio para dejar el código formateado y sin avisos (combinación por arquitectura).",
+     "orden_instalacion": "Añade Biome al proyecto; después indícale al agente que lo ejecute antes de terminar."
+    }
+   ],
+   "notas": "Algunos plugins de ESLint no tienen equivalente en Biome: revisa las reglas que necesitas antes de migrar.",
+   "fuentes": [
+    "https://github.com/biomejs/biome/blob/main/packages/%40biomejs/biome/README.md",
+    "https://biomejs.dev/",
+    "https://github.com/biomejs/pre-commit",
+    "https://github.com/biomejs/biome/blob/main/crates/biome_migrate/src/analyzers/tailwind_options.rs"
+   ],
+   "github": {
+    "name_with_owner": "biomejs/biome",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "@biomejs/biome@2.6.8 (2026-11-15)"
+   }
+  },
+  "pre-commit": {
+   "que_es": "Framework de hooks de git de código abierto (MIT) mantenido por Anthony Sottile y la comunidad pre-commit desde 2014. Muy maduro y ampliamente adoptado.",
+   "que_hace": "Gestiona hooks de pre-commit en muchos lenguajes: descarga cada herramienta en la versión fijada, la aísla en su propio entorno y la ejecuta solo sobre los archivos afectados. Sirve para formateo, lint, escaneo de secretos y otras comprobaciones; existe el servicio pre-commit.ci para ejecutarlo en PR.",
+   "como_lo_hace": "Escrito en Python; se instala con pip o gestores de paquetes y se activa con `pre-commit install`. La configuración es un archivo YAML con repositorios de hooks y revisiones fijadas; `pre-commit autoupdate` actualiza versiones.",
+   "combina_con": [
+    {
+     "id": "ruff",
+     "motivo": "ruff-pre-commit es el hook oficial de Ruff para pre-commit.",
+     "orden_instalacion": "pre-commit instalado; después añade ruff-pre-commit al YAML."
+    },
+    {
+     "id": "gitleaks",
+     "motivo": "Gitleaks documenta su uso como hook de pre-commit.",
+     "orden_instalacion": "pre-commit instalado; después añade el hook de Gitleaks."
+    },
+    {
+     "id": "trufflehog",
+     "motivo": "TruffleHog se puede ejecutar como hook para escanear cambios antes del commit.",
+     "orden_instalacion": "pre-commit instalado; después añade el hook de TruffleHog."
+    },
+    {
+     "id": "biome",
+     "motivo": "Biome publica hooks oficiales para pre-commit.",
+     "orden_instalacion": "pre-commit instalado; después añade los hooks de Biome."
+    },
+    {
+     "id": "semgrep",
+     "motivo": "Semgrep ofrece un hook de pre-commit para analizar los archivos modificados.",
+     "orden_instalacion": "pre-commit instalado; después añade el hook de Semgrep con su configuración."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Combinación recíproca: Trivy lo enlaza como «Un hook local de pre-commit puede lanzar `trivy fs` o el escaneo de secretos antes de cada commit (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Trivy: Instala Trivy; después define un hook local en .pre-commit-config.yaml.",
+     "reciproca_de": "trivy"
+    }
+   ],
+   "notas": "Los hooks se descargan de repositorios externos: fija revisiones y revisa su origen.",
+   "fuentes": [
+    "https://github.com/pre-commit/pre-commit/blob/main/README.md",
+    "https://pre-commit.com/"
+   ],
+   "github": {
+    "name_with_owner": "pre-commit/pre-commit",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.7.0 (2026-10-13)"
+   }
+  },
+  "sonarqube": {
+   "que_es": "Código de SonarQube Community Build, la edición gratuita y de código abierto (LGPL-3.0) de la plataforma de SonarSource. Proyecto muy maduro; las ediciones superiores son comerciales.",
+   "que_hace": "Analiza el código con técnicas como ejecución simbólica y análisis de flujo de datos y control para encontrar bugs, vulnerabilidades, puntos críticos de seguridad y problemas de mantenibilidad, y aplica puertas de calidad en cada análisis. Importa también informes de herramientas externas.",
+   "como_lo_hace": "Servidor en Java con PostgreSQL u otra base soportada; se despliega con la imagen Docker oficial o el archivo ZIP. Los análisis se lanzan con SonarScanner desde CI o local; SonarSource publica además un servidor MCP para agentes.",
+   "combina_con": [
+    {
+     "id": "ruff",
+     "motivo": "SonarQube puede importar informes de Ruff como problemas externos del análisis de Python.",
+     "orden_instalacion": "Genera el informe de Ruff; después configura su importación en el escáner."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "SonarSource publica un servidor MCP de SonarQube para que los agentes consulten problemas y analicen fragmentos.",
+     "orden_instalacion": "SonarQube en marcha con un token; después registra el servidor MCP en Claude Code."
+    },
+    {
+     "id": "coolify",
+     "motivo": "La imagen Docker de SonarQube con su base de datos puede desplegarse y respaldarse desde Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; luego SonarQube con PostgreSQL y volúmenes persistentes."
+    }
+   ],
+   "notas": "Alternativas (elige una): semgrep.",
+   "fuentes": [
+    "https://github.com/SonarSource/sonarqube/blob/master/README.md",
+    "https://github.com/SonarSource/sonarqube-mcp-server",
+    "https://docs.sonarsource.com/sonarqube-server/latest/analyzing-source-code/importing-external-issues/external-analyzer-reports/"
+   ],
+   "github": {
+    "name_with_owner": "SonarSource/sonarqube",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "LGPL-3.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "26.11.0.134175 (2026-11-04)"
+   }
+  },
+  "fzf": {
+   "que_es": "Buscador difuso de propósito general de código abierto (MIT) creado y mantenido por Junegunn Choi desde 2013. Muy maduro y extendido.",
+   "que_hace": "Filtra listas de millones de elementos en milisegundos y permite seleccionar archivos, comandos del historial, procesos, ramas o cualquier dato, con vista previa, atajos y una arquitectura por eventos para crear interfaces de terminal a medida.",
+   "como_lo_hace": "Binario único en Go; se instala con Homebrew, mise, paquetes de Linux, Windows o git. Incluye integraciones para Bash, Zsh, Fish, Nushell, Vim y Neovim; el comando de búsqueda por defecto se cambia con `FZF_DEFAULT_COMMAND`.",
+   "combina_con": [
+    {
+     "id": "ripgrep",
+     "motivo": "La documentación de fzf muestra cómo usar ripgrep como comando de búsqueda por defecto o para buscar contenido con vista previa.",
+     "orden_instalacion": "Instala ripgrep; después configura FZF_DEFAULT_COMMAND o el ejemplo de búsqueda interactiva."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "fzf sirve para elegir de forma interactiva archivos o sesiones que pasar a un agente de terminal (combinación por arquitectura).",
+     "orden_instalacion": "Instala fzf; después compón el comando del agente con la selección."
+    },
+    {
+     "id": "codex",
+     "motivo": "Del mismo modo, una selección de fzf puede alimentar los argumentos de Codex en scripts de terminal (combinación por arquitectura).",
+     "orden_instalacion": "Instala fzf; después úsalo en un alias o script que invoque Codex."
+    }
+   ],
+   "notas": "Es una herramienta de uso diario: no requiere servidor ni configuración para empezar.",
+   "fuentes": [
+    "https://github.com/junegunn/fzf/blob/master/README.md",
+    "https://junegunn.github.io/fzf/"
+   ],
+   "github": {
+    "name_with_owner": "junegunn/fzf",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.75.0 (2026-11-07)"
+   }
+  },
+  "lazygit": {
+   "que_es": "Interfaz de terminal para git de código abierto (MIT) creada por Jesse Duffield y mantenida con la comunidad y patrocinadores. Muy popular y activa.",
+   "que_hace": "Facilita las operaciones de git más laboriosas: preparar fragmentos o líneas sueltas, rebase interactivo, cherry-pick, bisect, worktrees, filtrar commits, deshacer con reflog y resolver conflictos, todo con atajos de teclado y vistas de diff.",
+   "como_lo_hace": "Binario Go que llama a git; se instala con Homebrew, `go install github.com/jesseduffield/lazygit@latest`, paquetes de distribución o binarios. Se configura con un archivo YAML y comandos personalizados.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Tras una sesión de un agente de código, lazygit permite revisar los diffs y confirmar solo lo correcto, línea a línea (combinación por arquitectura).",
+     "orden_instalacion": "Deja que el agente trabaje en una rama; después abre lazygit para revisar y preparar los cambios."
+    },
+    {
+     "id": "codex",
+     "motivo": "El mismo flujo de revisión sirve para los cambios que deja Codex en el árbol de trabajo (combinación por arquitectura).",
+     "orden_instalacion": "Ejecuta Codex; después revisa y confirma con lazygit."
+    },
+    {
+     "id": "aider",
+     "motivo": "aider crea commits automáticos; lazygit facilita inspeccionarlos, reordenarlos o deshacerlos (combinación por arquitectura).",
+     "orden_instalacion": "Trabaja con aider; después usa lazygit para revisar el historial generado."
+    }
+   ],
+   "notas": "lazygit ejecuta comandos git reales: las operaciones destructivas (reset, force push) siguen siendo destructivas.",
+   "fuentes": [
+    "https://github.com/jesseduffield/lazygit/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "jesseduffield/lazygit",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.66.3 (2026-11-07)"
+   }
+  },
+  "ripgrep": {
+   "que_es": "Herramienta de búsqueda de código abierto con doble licencia MIT o Unlicense, creada por Andrew Gallant (BurntSushi). Muy madura; la usan editores como VS Code y muchos agentes de código.",
+   "que_hace": "Busca recursivamente un patrón en el directorio actual respetando .gitignore, saltando archivos ocultos y binarios, con soporte de tipos de archivo, búsqueda en comprimidos, varias codificaciones y salida JSON.",
+   "como_lo_hace": "Escrito en Rust; se instala con Homebrew, cargo, paquetes de distribución o binarios publicados para Windows, macOS y Linux. `rg -uuu` desactiva el filtrado automático.",
+   "combina_con": [
+    {
+     "id": "fzf",
+     "motivo": "fzf usa ripgrep como comando de búsqueda para filtrar archivos o contenido de forma interactiva.",
+     "orden_instalacion": "Instala ambos; después configura FZF_DEFAULT_COMMAND con rg."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Claude Code usa ripgrep para buscar en el código; su documentación explica cómo usar una instalación del sistema si la incluida no funciona.",
+     "orden_instalacion": "Instala ripgrep en el sistema si tu plataforma lo requiere; después configura Claude Code según la guía de solución de problemas."
+    },
+    {
+     "id": "opencode",
+     "motivo": "OpenCode usa ripgrep para sus herramientas de búsqueda de archivos y contenido.",
+     "orden_instalacion": "Instala ripgrep o deja que OpenCode use el suyo; después busca desde el agente."
+    }
+   ],
+   "notas": "Es la herramienta de búsqueda que asumen muchos agentes de terminal; conviene tenerla instalada.",
+   "fuentes": [
+    "https://github.com/BurntSushi/ripgrep/blob/master/README.md",
+    "https://docs.anthropic.com/en/docs/claude-code/troubleshooting",
+    "https://github.com/anomalyco/opencode/blob/dev/packages/core/src/ripgrep.ts"
+   ],
+   "github": {
+    "name_with_owner": "BurntSushi/ripgrep",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "Unlicense",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-16",
+    "latest_release": "15.2.0 (2026-07-15)"
+   }
+  },
+  "sillytavern": {
+   "que_es": "Interfaz de usuario local de código abierto (AGPL-3.0), nacida en 2023 como fork de TavernAI 1.2.8 y mantenida por una comunidad de más de 300 contribuyentes. No ofrece servicios alojados ni rastrea datos de usuario según el proyecto.",
+   "que_hace": "Ofrece una interfaz única para muchas APIs de LLM, con tarjetas de personaje, chats grupales, modo novela visual, generación de imágenes con Automatic1111 y ComfyUI, texto a voz, world info, extensiones y una gran capacidad de control sobre los prompts. Está orientada a usuarios avanzados.",
+   "como_lo_hace": "Funciona en cualquier sistema con Node.js 20 o superior; se instala con git o el lanzador y se abre en el navegador. Los requisitos de hardware son mínimos salvo que también ejecutes la inferencia en local; usa librerías como kokoro-js para voz en el navegador.",
+   "combina_con": [
+    {
+     "id": "koboldcpp",
+     "motivo": "SillyTavern conecta con la API de KoboldAI/KoboldCpp como backend local de texto.",
+     "orden_instalacion": "Arranca KoboldCpp con un modelo GGUF; después selecciona la API de KoboldCpp en SillyTavern."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Ollama figura entre los backends de texto soportados para chatear con modelos locales.",
+     "orden_instalacion": "Ollama con un modelo; después configura la conexión de Ollama en SillyTavern."
+    },
+    {
+     "id": "comfyui",
+     "motivo": "SillyTavern integra la API de ComfyUI para generar imágenes desde el chat.",
+     "orden_instalacion": "ComfyUI en marcha; después configura la extensión de generación de imágenes con su URL."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "SillyTavern incluye kokoro-js para texto a voz con Kokoro en el navegador.",
+     "orden_instalacion": "Activa el proveedor de TTS de Kokoro en la configuración de voz."
+    },
+    {
+     "id": "textgen",
+     "motivo": "Text generation web UI (Ooba) es uno de los backends de texto que SillyTavern soporta.",
+     "orden_instalacion": "Arranca textgen con su API habilitada; después conéctalo desde SillyTavern."
+    }
+   ],
+   "notas": "La curva de aprendizaje es alta por diseño; las tarjetas de personaje de terceros pueden contener prompts no deseados.",
+   "fuentes": [
+    "https://github.com/SillyTavern/SillyTavern/blob/release/README.md",
+    "https://docs.sillytavern.app/"
+   ],
+   "github": {
+    "name_with_owner": "SillyTavern/SillyTavern",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "1.19.0 (2026-09-14)"
+   }
+  },
+  "nextchat": {
+   "que_es": "Cliente de chat de código abierto (MIT), antes ChatGPT-Next-Web, muy popular. Su organización ofrece además un servicio SaaS de pago por uso; el repositorio sigue siendo el cliente autoalojable.",
+   "que_hace": "Proporciona una interfaz rápida para conversar con varios proveedores, con plantillas de prompts (máscaras), compresión de historial, exportación, PWA y apps de escritorio. Admite modelos autoalojados compatibles (RWKV-Runner, LocalAI) y servidores MCP.",
+   "como_lo_hace": "Escrito en TypeScript con Next.js; se despliega en Vercel con un clic, con Docker (`docker run -d -p 3000:3000 ...` y variables como `OPENAI_API_KEY` y `CODE`) o como app de escritorio. Los datos de chat se guardan localmente en el navegador.",
+   "combina_con": [
+    {
+     "id": "localai",
+     "motivo": "El README declara compatibilidad con despliegues de LocalAI como modelo autoalojado.",
+     "orden_instalacion": "LocalAI en marcha; después configura su URL como endpoint compatible con OpenAI."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Un proxy LiteLLM con API compatible con OpenAI permite usar desde NextChat proveedores que no soporta directamente (combinación por arquitectura).",
+     "orden_instalacion": "LiteLLM primero; después pon su URL como base de la API en NextChat."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "NextChat soporta servidores MCP; FastMCP sirve para escribir servidores propios que conectar (combinación por arquitectura).",
+     "orden_instalacion": "Escribe el servidor con FastMCP; después regístralo en la configuración MCP de NextChat."
+    }
+   ],
+   "notas": "Alternativas (elige una): lobehub, chatbox. Protege el despliegue con la variable CODE si es público.",
+   "fuentes": [
+    "https://github.com/ChatGPTNextWeb/NextChat/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ChatGPTNextWeb/NextChat",
+    "archived": false,
+    "pushed_at": "2026-10-20",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.16.1 (2025-07-29)"
+   }
+  },
+  "mlc-llm": {
+   "que_es": "Compilador de ML y motor de despliegue de código abierto (Apache-2.0) del proyecto MLC (CMU, OctoAI y comunidad), basado en Apache TVM. Activo; hermano de WebLLM para el navegador.",
+   "que_hace": "Permite desarrollar, optimizar y desplegar modelos de lenguaje de forma nativa en muchas plataformas: GPU NVIDIA, AMD, Intel y Apple, móviles iOS y Android y navegadores con WebGPU. MLCEngine ofrece una API compatible con OpenAI por REST, Python, JavaScript, Swift y Kotlin.",
+   "como_lo_hace": "Escrito en Python y C++ sobre TVM; se instala con wheels por plataforma según el quick start. Los modelos se convierten y compilan desde pesos de Hugging Face o se descargan precompilados; el servidor REST se lanza con `mlc_llm serve`.",
+   "combina_con": [
+    {
+     "id": "transformers",
+     "motivo": "MLC LLM convierte y compila modelos a partir de pesos en formato Hugging Face (combinación por arquitectura).",
+     "orden_instalacion": "Descarga los pesos del Hub; después conviértelos y compílalos con las herramientas de MLC LLM."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "El servidor REST compatible con OpenAI de MLC LLM puede conectarse a Open WebUI como proveedor (combinación por arquitectura).",
+     "orden_instalacion": "Arranca `mlc_llm serve`; después añade su URL como conexión OpenAI en Open WebUI."
+    },
+    {
+     "id": "litellm",
+     "motivo": "LiteLLM puede enrutar peticiones al endpoint compatible con OpenAI de MLC LLM junto a otros proveedores (combinación por arquitectura).",
+     "orden_instalacion": "Servidor MLC en marcha; después decláralo como modelo compatible con OpenAI en LiteLLM."
+    }
+   ],
+   "notas": "La compilación requiere preparar el entorno de la GPU objetivo; usa modelos precompilados para la primera prueba.",
+   "fuentes": [
+    "https://github.com/mlc-ai/mlc-llm/blob/main/README.md",
+    "https://llm.mlc.ai/docs/"
+   ],
+   "github": {
+    "name_with_owner": "mlc-ai/mlc-llm",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "koboldcpp": {
+   "que_es": "Software de código abierto (AGPL-3.0) de LostRuins (Concedo), inspirado en KoboldAI y construido sobre llama.cpp. Fork establecido y muy activo, con versiones frecuentes.",
+   "que_hace": "Ejecuta modelos GGUF para chat, aventura, instrucciones o escritura; añade generación y edición de imágenes, vídeo, transcripción con Whisper, voz (Kokoro, Qwen3TTS y otros) y música, herramientas MCP, búsqueda web, RAG y un agente integrado. Expone endpoints compatibles con KoboldAI, OpenAI, Ollama, A1111/Forge, ComfyUI y clientes de voz.",
+   "como_lo_hace": "Un único ejecutable para Windows, Linux y macOS sin instalación ni dependencias externas; funciona en CPU o GPU con descarga parcial de capas. Incluye la interfaz KoboldAI Lite; hay cuaderno de Colab e imágenes para GPU en la nube.",
+   "combina_con": [
+    {
+     "id": "sillytavern",
+     "motivo": "SillyTavern se conecta a la API de KoboldCpp como backend de texto para rol y personajes.",
+     "orden_instalacion": "Arranca KoboldCpp con un modelo; después configura la API en SillyTavern."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "KoboldCpp expone endpoints compatibles con OpenAI y Ollama que Open WebUI puede usar como proveedor (combinación por arquitectura).",
+     "orden_instalacion": "KoboldCpp en marcha; después añade su URL en Open WebUI."
+    },
+    {
+     "id": "kokoro",
+     "motivo": "KoboldCpp soporta Kokoro para texto a voz dentro de la misma aplicación.",
+     "orden_instalacion": "Descarga el modelo de Kokoro compatible; después cárgalo en el campo de TTS del lanzador."
+    }
+   ],
+   "notas": "Alternativas (elige una): llamafile. Ajusta capas de GPU y contexto si te quedas sin memoria.",
+   "fuentes": [
+    "https://github.com/LostRuins/koboldcpp/blob/concedo/README.md",
+    "https://koboldcpp.net"
+   ],
+   "github": {
+    "name_with_owner": "LostRuins/koboldcpp",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.124.2 (2026-10-31)"
+   }
+  },
+  "mlx-lm": {
+   "que_es": "Paquete de código abierto (MIT) del equipo ml-explore de Apple, construido sobre el framework MLX. Activo; requiere un Mac con Apple Silicon.",
+   "que_hace": "Genera texto y afina LLM en Apple Silicon: integra el Hub de Hugging Face para usar miles de modelos con un comando, cuantiza y sube modelos, ajusta con LoRA o de forma completa (también sobre modelos cuantizados) y hace inferencia y ajuste distribuidos con mx.distributed.",
+   "como_lo_hace": "Se instala con `pip install mlx-lm` o conda; ofrece comandos como `mlx_lm.generate`, `mlx_lm.chat`, `mlx_lm.lora` y `mlx_lm.server`. Para modelos grandes puede ser necesario ampliar el límite de memoria fija de la GPU con sysctl.",
+   "combina_con": [
+    {
+     "id": "exo",
+     "motivo": "exo usa MLX y mlx-lm como backend de inferencia para repartir modelos entre varios Mac.",
+     "orden_instalacion": "Instala exo en cada equipo con versiones iguales de MLX y mlx-lm; después crea el clúster."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "mlx_lm.server ofrece una API HTTP compatible con OpenAI que Open WebUI puede usar como proveedor (combinación por arquitectura).",
+     "orden_instalacion": "Arranca mlx_lm.server con un modelo; después añade su URL en Open WebUI."
+    },
+    {
+     "id": "litellm",
+     "motivo": "LiteLLM puede enrutar a mlx_lm.server como endpoint compatible con OpenAI junto a otros proveedores (combinación por arquitectura).",
+     "orden_instalacion": "Servidor MLX en marcha; después decláralo en la configuración de LiteLLM."
+    }
+   ],
+   "notas": "Solo funciona en Apple Silicon; el rendimiento depende de la memoria unificada disponible.",
+   "fuentes": [
+    "https://github.com/ml-explore/mlx-lm/blob/main/README.md",
+    "https://github.com/exo-explore/exo/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ml-explore/mlx-lm",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v0.32.2 (2026-10-16)"
+   }
+  }
+ }
+}

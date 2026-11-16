@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Demo open source (MIT) de @Nutlope que muestra una cascada de modelos para detectar fraude en emails. Es un proyecto de ejemplo, no una herramienta mantenida: tiene ~17 estrellas y su último push es de septiembre de 2026.
+
+## ¿Qué hace?
+
+Clasifica 100 emails reales del dataset DIFrauD (50 fraudulentos y 50 legítimos) con el modelo Jev, que devuelve una puntuación de confianza. Las predicciones con confianza de al menos 95 % se aceptan y el resto pasa a Kimi K3 para una segunda revisión independiente. La interfaz muestra decisiones en vivo, precisión y coste de inferencia, permite ajustar el umbral y exportar resultados.
+
+## ¿Cómo lo hace?
+
+App con Next.js App Router, React, Tailwind CSS y Radix UI que requiere Node.js 22.13+ y npm. Usa Jev a través de Vercel AI Gateway y Kimi K3 en Together AI, con las claves en `.env.local`. `npm run benchmark` hace llamadas de pago y graba una ejecución nueva. Según su package.json no usa el AI SDK, sino llamadas HTTP directas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI SDK (Vercel)](vercel-ai.md) | Reescribir las llamadas con el AI SDK para cambiar de modelo o proveedor sin tocar la lógica de la cascada. (combinación por arquitectura) | Instala `ai` y los proveedores y sustituye las llamadas fetch. |
+| [promptfoo](promptfoo.md) | Evaluar de forma reproducible el patrón de cascada (umbral, modelos) sobre más datos. (combinación por arquitectura) | Exporta el dataset y define la evaluación en promptfoo. |
+| [ui](ui.md) | Las dependencias (radix-ui, cva, clsx, tailwind-merge) siguen el patrón de shadcn/ui, útil para extender la interfaz. (combinación por arquitectura) | Inicializa shadcn/ui en el proyecto clonado antes de añadir componentes. |
+
+**Notas:** Sin alternativas declaradas. Jev (typesafe.ai) y Kimi K3 son modelos comerciales; resultados no verificados de forma independiente.
+
+Estado en GitHub: activo · último push 2026-09-20 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Nutlope/jev-fraud/blob/main/README.md) · [2](https://huggingface.co/datasets/difraud/difraud)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción |
 | Coste | El coste depende del proveedor o la ruta. La reproducción no hace llamadas; una ejecución nueva o npm run benchmark consume APIs; la cifra de la grabación no es una tarifa garantizada |
 | Equipo | Preparación según la ruta elegida. Node.js y npm; claves Together y AI Gateway solo para ejecución nueva |
-
-Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción
-
-## Qué puedes hacer con él
-
-Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio.
-
-## Cómo funciona
 
 Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+TimesFM, modelo fundacional preentrenado de Google Research para pronóstico de series temporales (artículo en ICML 2024). El código es Apache-2.0 y la licencia de los pesos cambia por versión. Tiene ~36k estrellas y su versión actual es TimesFM 3.0; el README aclara que esta versión abierta no es un producto oficial de Google.
+
+## ¿Qué hace?
+
+Hace pronósticos zero-shot de series temporales; TimesFM 3 añade pronóstico multivariante. Google también lo ofrece en BigQuery ML, Google Sheets (Connected Sheets) y Vertex Model Garden.
+
+## ¿Cómo lo hace?
+
+Se instala con pip y carga checkpoints desde Hugging Face (`google/timesfm-3.0-pytorch`; las versiones hasta 2.5 están en la colección). Funciona con PyTorch.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Polars](polars.md) | Preparar series antes de pronosticar. (combinación por arquitectura) | Carga y limpia los datos con Polars. |
+| [DuckDB](duckdb.md) | Consultar históricos en SQL antes de pronosticar. (combinación por arquitectura) | Extrae las series con DuckDB. |
+| [PyTorch](pytorch.md) | Backend del checkpoint PyTorch. | Instala PyTorch. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.0.0 (2026-08-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-research/timesfm/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Código y pesos hasta 2.5 son Apache; pesos 3.0 autoalojados no permiten uso comercial o productivo, que sí se ofrece mediante servicios Google autorizados |
 | Coste | El coste depende del proveedor o la ruta. Inferencia propia consume hardware; Cloud cobra por servicio; pesos 3.0 tienen restricciones no comerciales y no productivas |
 | Equipo | Preparación según la ruta elegida. Python; serie numérica ordenada; backend PyTorch o MLX; pesos permitidos |
-
-Código y pesos hasta 2.5 son Apache; pesos 3.0 autoalojados no permiten uso comercial o productivo, que sí se ofrece mediante servicios Google autorizados
-
-## Qué puedes hacer con él
-
-Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por versión.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar demanda con series temporales; Comparar un baseline de pronóstico.
-
-## Cómo funciona
 
 Código y pesos hasta 2.5 son Apache; pesos 3.0 autoalojados no permiten uso comercial o productivo, que sí se ofrece mediante servicios Google autorizados
 
@@ -95,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; serie numérica ordenada; backend PyTorch o MLX; pesos permitidos
 - **Etiquetas:** `data` `analytics` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Polars](polars.md) | 40.3k | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
-| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 
 ## Enlaces
 

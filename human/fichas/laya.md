@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+laya, motor de decisión multilingüe no autoregresivo de @NandhaKishorM, con preprint asociado («From Laya to Vega»). Licencia Apache-2.0. Es muy reciente (septiembre de 2026, v0.4.34) y ya tiene ~36k estrellas, una cifra inusual; promociona Studio, el servicio de pago de Embedding Space.
+
+## ¿Qué hace?
+
+Toma decisiones tipadas (clasificar o elegir opciones) en más de 100 idiomas en una sola pasada (~33 ms según el autor). Devuelve probabilidades calibradas, conjuntos de predicción conformal, aviso de abstención y detección de fuera de distribución, y tiene un router.
+
+## ¿Cómo lo hace?
+
+Requiere Python 3.10+ y se instala con `pip install laya` o `uv add laya`, con extras para servidor HTTP, MCP, LangChain/LangGraph, LlamaIndex, CrewAI y ONNX. Hay versión TypeScript (`laya-ts`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LangGraph](langgraph.md) | Extra `laya[langchain]` para enrutar nodos. | Instala el extra y úsalo como router. |
+| [LlamaIndex](llama-index.md) | Extra `laya[llamaindex]` como selector. | Instala el extra. |
+| [crewAI](crewai.md) | Extra `laya[crewai]` para enrutar. | Instala el extra. |
+
+**Notas:** Sin alternativas declaradas. Recuento de estrellas inusual para su edad.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.4.34 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NandhaKishorM/laya/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Ofrece MCP stdio opcional; el ejemplo offline sin descarga es routing y no demuestra que se haya cargado un modelo; las probabilidades requieren evaluación propia |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta propia no necesita API de pago; primera descarga de pesos requiere red y el modelo consume recursos |
 | Equipo | Preparación según la ruta elegida. Python 3.10+; pesos del checkpoint para inferencia real; memoria del modelo |
-
-Ofrece MCP stdio opcional; el ejemplo offline sin descarga es routing y no demuestra que se haya cargado un modelo; las probabilidades requieren evaluación propia
-
-## Qué puedes hacer con él
-
-Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.
-
-## Por qué destaca
-
-Usos propuestos: Clasificar consultas por intención; Elegir una opción estructurada.
-
-## Cómo funciona
 
 Ofrece MCP stdio opcional; el ejemplo offline sin descarga es routing y no demuestra que se haya cargado un modelo; las probabilidades requieren evaluación propia
 

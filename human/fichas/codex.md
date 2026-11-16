@@ -10,6 +10,39 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Codex CLI, agente de programación de OpenAI que se ejecuta en local, escrito en Rust. Licencia Apache-2.0. Es muy activo (~135k estrellas, rust-v0.169.0).
+
+## ¿Qué hace?
+
+Lee, edita y ejecuta código en tu máquina con sandbox y niveles de aprobación. Existe también como extensión de IDE, app de escritorio (`codex app`) y agente en la nube (Codex Web). Admite MCP, skills y `AGENTS.md`.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://chatgpt.com/codex/install.sh | sh`, `npm install -g @openai/codex` o `brew install --cask codex`. Se inicia sesión con un plan de ChatGPT o, con configuración adicional, con una clave de API.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Agent Skills (Addy Osmani)](agent-skills.md) | Skills reutilizables para Codex. (combinación por arquitectura) | Copia las skills al directorio de Codex. |
+| [Spec Kit](spec-kit.md) | Desarrollo guiado por especificaciones con soporte para Codex. | Inicializa Spec Kit eligiendo Codex. |
+| [Context7](context7.md) | Documentación de librerías vía MCP. | Añade el MCP de Context7 a la configuración de Codex. |
+| [T3 Code](t3code.md) | Controlar Codex desde web o móvil. | Instala T3 Code con Codex presente. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (79). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[3dviz-pro-max](3dviz-pro-max.md) · [agent-desktop](agent-desktop.md) · [agent-toolkit](agent-toolkit.md) · [agentes-chat](agentes-chat.md) · [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) · [ai-job-search](ai-job-search.md) · [anatomy](anatomy.md) · [andrej-karpathy-skills](andrej-karpathy-skills.md) · [Appwrite](appwrite.md) · [AutoGPT](autogpt.md) · [autoresearch](autoresearch.md) · [autoskills](autoskills.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [BMAD Method](bmad-method.md) · [Browser Harness](browser-harness.md) · [claude-code-router](claude-code-router.md) · [claude-mem](claude-mem.md) · [claude-task-master](claude-task-master.md) · [cleanyourtv](cleanyourtv.md) · [codebase-memory-mcp](codebase-memory-mcp.md) · [codegraph](codegraph.md) · [codex-plugin-cc](codex-plugin-cc.md) · [cognee](cognee.md) · [dream-loop](dream-loop.md) · [dsh-noema](dsh-noema.md) · [ECC](ecc.md) · [elephant-goldfish-model](elephant-goldfish-model.md) · [floorplan](floorplan.md) · [FreeToken](freetoken.md) · [fzf](fzf.md) · [GitHub MCP Server](github-mcp-server.md) · [GitNexus](gitnexus.md) · [grok-plugin-claude-code](grok-plugin-claude-code.md) · [gstack](gstack.md) · [hallmark](hallmark.md) · [Humanizer](humanizer.md) · [i-have-adhd](i-have-adhd.md) · [impeccable](impeccable.md) · [last30days](last30days-skill.md) · [lazygit](lazygit.md) · [logo-design-skill](logo-design-skill.md) · [Loop Engineering](loop-engineering.md) · [magnitude](magnitude.md) · [MCP servers for AWS](aws-mcp.md) · [MCP Toolbox for Databases](mcp-toolbox.md) · [mempalace](mempalace.md) · [modern-web-guidance](modern-web-guidance.md) · [multica](multica.md) · [Neo4j MCP (oficial)](neo4j-mcp.md) · [no-ai-slop](no-ai-slop.md) · [nodeterm](nodeterm.md) · [notebooklm-mcp-cli](notebooklm-mcp-cli.md) · [notebooklm-py](notebooklm-py.md) · [obsidian-second-brain](obsidian-second-brain.md) · [obsidian-skills](obsidian-skills.md) · [OpenHands](openhands.md) · [OpenMAIC](openmaic.md) · [paperclip](paperclip.md) · [Ponytail](ponytail.md) · [rea](rea.md) · [Revideo](revideo.md) · [rtk](rtk.md) · [ruflo](ruflo.md) · [security-audit-skill](security-audit-skill.md) · [sellbird](sellbird.md) · [Serena](serena.md) · [shepherd](shepherd.md) · [Sim](sim.md) · [skills](skills.md) · [social-media-research-skills](social-media-research-skills.md) · [Stitch Skills](stitch-skills.md) · [superpowers](superpowers.md) · [SWE-bench](swe-bench.md) · [threejs-game-skills](threejs-game-skills.md) · [ToolJet](tooljet.md) · [unity-mcp](unity-mcp.md) · [video-shotcraft](video-shotcraft.md) · [wshobson/agents](wshobson-agents.md) · [Zed](zed.md)
+
+**Notas:** Alternativas (elige una): claude-code, gemini-cli, opencode, antigravity-cli.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada rust-v0.169.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/codex/blob/main/README.md) · [2](https://developers.openai.com/codex/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | Modelos locales documentados. El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos |
 | Coste | El coste depende del proveedor o la ruta. Acceso oficial con plan de ChatGPT elegible o API con facturación separada; Ollama documenta la ruta --oss local |
 | Equipo | Preparación según la ruta elegida. Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local |
-
-El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
-
-## Qué puedes hacer con él
-
-Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source.
-
-## Por qué destaca
-
-Usos propuestos: Explorar un proyecto; Preparar un cambio y revisar su diff.
-
-## Cómo funciona
 
 El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
 
@@ -96,14 +117,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `coding-agent` `agents` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Agent Skills (Addy Osmani)](agent-skills.md) | 118k | Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes. |
-| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
@@ -111,6 +124,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [Antigravity CLI](antigravity-cli.md) | 2.8k | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. |
 
 ## Enlaces
 

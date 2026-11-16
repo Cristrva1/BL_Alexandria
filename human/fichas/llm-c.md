@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Implementación de entrenamiento de LLMs en C/CUDA puro (MIT) de Andrej Karpathy, sin PyTorch ni Python. Es un proyecto educativo y de investigación de rendimiento, poco activo: el último push es de junio de 2025.
+
+## ¿Qué hace?
+
+Se centra en el preentrenamiento, en particular en reproducir GPT-2 y GPT-3 (miniseries). La mejor introducción, según el README, es reproducir GPT-2 (124M). Incluye una versión fp32 'legacy' sencilla para aprender CUDA y una versión de precisión mixta para multi-GPU y multinodo, además de una ruta para CPU limitada.
+
+## ¿Cómo lo hace?
+
+Se compila con `make` (por ejemplo, `make train_gpt2fp32cu`). Requiere toolkit CUDA para GPU; para preparar datos y pesos de referencia se usan scripts Python (`pip install -r requirements.txt`, `dev/download_starter_pack.sh`). En CPU funciona, pero solo para demostraciones pequeñas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [nanochat](nanochat.md) | Pipeline completo y más reciente del mismo autor en PyTorch. (combinación por arquitectura) | Úsalo si quieres resultados completos sin escribir CUDA. |
+| [LLMs from Scratch](llms-from-scratch.md) | Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura) | Estudia primero la versión en PyTorch. |
+| [PyTorch](pytorch.md) | El repositorio incluye una referencia en PyTorch para comparar resultados. (combinación por arquitectura) | Instálalo solo si quieres verificar contra la referencia. |
+
+**Notas:** Sin alternativas declaradas. Mantenimiento bajo desde 2025.
+
+Estado en GitHub: activo · último push 2025-06-26 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/karpathy/llm.c/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es un proyecto técnico de entrenamiento; no es una app de chat lista para personas sin programación |
 | Coste | El coste depende del proveedor o la ruta. No necesita API; GPU, energía y alquiler de hardware pueden ser significativos |
 | Equipo | Preparación según la ruta elegida. Compilador C; Python para preparación; CUDA y GPU para las rutas aceleradas |
-
-Es un proyecto técnico de entrenamiento; no es una app de chat lista para personas sin programación
-
-## Qué puedes hacer con él
-
-Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch.
-
-## Cómo funciona
 
 Es un proyecto técnico de entrenamiento; no es una app de chat lista para personas sin programación
 

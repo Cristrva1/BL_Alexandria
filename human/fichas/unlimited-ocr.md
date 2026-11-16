@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay releases en GitHub.
+
+## ¿Qué hace?
+
+Busca analizar documentos de longitud «ilimitada» (lo que llaman OCR-3.0) con una técnica de atención de ventana deslizante (SR-SWA), en lugar de procesar página a página. El modelo está disponible en Hugging Face, ModelScope y Baidu Cloud, y admite entrenamiento con ms-swift.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con Transformers para pruebas rápidas (probado con Python 3.10, torch 2.13 y transformers 4.52.1 en una NVIDIA A800 de 80 GB) o con SGLang, recomendado para servir; también admite inferencia con vLLM. Requiere GPU con mucha memoria [DATO NO VERIFICADO: mínimo de VRAM].
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [SGLang](sglang.md) | Backend recomendado para servir el modelo. | Instala SGLang en un servidor con GPU y carga el modelo desde Hugging Face. |
+| [vLLM](vllm.md) | Inferencia soportada gracias a la comunidad de vLLM. | Alternativa a SGLang: usa uno de los dos. |
+| [Transformers](transformers.md) | Ejecución nativa para pruebas rápidas. | Fija las versiones probadas en un entorno aislado. |
+
+**Notas:** Alternativas (elige una): olmocr, paddleocr. Se retiraron litellm, cosmos y comfyui por no tener relación documentada.
+
+Estado en GitHub: activo · último push 2026-11-09 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/baidu/Unlimited-OCR/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API remota; el entorno y pesos usan recursos propios |
 | Equipo | Preparación según la ruta elegida. Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo |
-
-La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo
-
-## Qué puedes hacer con él
-
-Modelo de Baidu para parsear documentos largos de una sola pasada con visión.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor.
-
-## Cómo funciona
 
 La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo
 
@@ -94,14 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo
 - **Etiquetas:** `ocr` `docs` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [cosmos](cosmos.md) | 12.4k | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Alternativas (elige una)
 

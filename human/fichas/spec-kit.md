@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Kit de código abierto de GitHub (MIT) que da a los agentes de código procesos estructurados, plantillas reutilizables y resultados documentados. Muy activo (v1.4.0).
+
+## ¿Qué hace?
+
+Ofrece desarrollo guiado por especificaciones (en el núcleo), corrección de errores y evaluación de ideas (como extensiones), además de primitivas para adaptar o crear procesos: integraciones, extensiones, overlays de flujos, paquetes por rol y catálogos autoalojados para trabajar sin conexión.
+
+## ¿Cómo lo hace?
+
+CLI en Python 3.11+ instalada con uv (`uv tool install specify-cli`, luego `specify init <proyecto> --integration <agente>`). Soporta decenas de agentes, entre ellos Claude Code (`claude`), Codex CLI (`codex`), Gemini CLI (`gemini`), GitHub Copilot, Cursor, opencode y Hermes. Las extensiones comunitarias deben revisarse antes de instalarlas.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Integración `--integration claude`. | Instala el agente antes de `specify init`. |
+| [Codex CLI](codex.md) | Integración `--integration codex`. | Igual que arriba. |
+| [Gemini CLI](gemini-cli.md) | Integración `--integration gemini`. | Igual que arriba. |
+| [Awesome GitHub Copilot](awesome-copilot.md) | Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Proceso de desarrollo guiado por especificaciones con integración para Copilot». | Orden indicado desde Awesome GitHub Copilot: `specify init <proyecto> --integration copilot`. |
+| [elephant-goldfish-model](elephant-goldfish-model.md) | Combinación recíproca: elephant-goldfish-model lo enlaza como «Revisar con ojos frescos las especificaciones que genera Spec Kit (combinación por arquitectura)». | Orden indicado desde elephant-goldfish-model: Genera la especificación y pásala por `egm-review`. |
+
+**Notas:** Alternativas (elige una): bmad-method, claude-task-master.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v1.4.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/github/spec-kit/blob/main/README.md) · [2](https://github.github.io/spec-kit/integrations/index.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos |
 | Coste | Consumo del agente que ya utilizas. El CLI no incluye el modelo; los encargos consumen el acceso del agente elegido |
 | Equipo | Preparación según la ruta elegida. Python y uv según la guía;  un agente con integración soportada |
-
-La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos
-
-## Qué puedes hacer con él
-
-Kit de GitHub para desarrollo guiado por especificaciones con agentes de código.
-
-## Por qué destaca
-
-Usos propuestos: Especificar una función con requisitos y criterios de aceptación; Mantener un flujo común en un equipo que usa agentes diferentes.
-
-## Cómo funciona
 
 La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos
 
@@ -86,19 +102,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `coding-agent` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [BMAD Method](bmad-method.md) | 55.4k | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
+| [claude-task-master](claude-task-master.md) | 28.4k | Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open source OSI. Los starter kits sí son MIT. Es muy activo (v5.6.0).
+
+## ¿Qué hace?
+
+Ofrece un motor de lienzo completo con dibujo sensible a la presión, formas, texto enriquecido, flechas, ajuste, imágenes y vídeo, y exportación. Permite crear formas, herramientas, enlaces y UI propios, y controlar el lienzo con su Editor API. Incluye multijugador autoalojable (`@tldraw/sync`). Los starter kits cubren multijugador, agentes de IA que leen y modifican el lienzo, constructores de workflows, chat con lienzo, pipelines de imágenes y shaders.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i tldraw` o arranca un proyecto con `npx create-tldraw@latest`. El kit multijugador usa Cloudflare Durable Objects, el mismo stack que tldraw.com. Al ser un lienzo DOM, permite embeber webs, YouTube o Figma.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AI SDK (Vercel)](vercel-ai.md) | Construir agentes que lean y modifiquen el lienzo, como en el starter kit 'Agent'. (combinación por arquitectura) (el kit no fija proveedor en el README) | Parte del starter kit y conecta el modelo con la biblioteca de IA elegida. |
+| [ui](ui.md) | Interfaz alrededor del lienzo (paneles, diálogos) en una app React. (combinación por arquitectura) | Construye la UI con shadcn/ui y deja el lienzo a tldraw. |
+| [supabase](supabase.md) | Persistencia y autenticación de documentos si no usas el stack de sync en Cloudflare. (combinación por arquitectura) | Guarda los snapshots del documento en tu backend. |
+
+**Notas:** Alternativas (elige una): excalidraw. Licencia: requiere clave para producción.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v5.6.0 (2026-10-28) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tldraw/tldraw/blob/main/README.md) · [2](https://tldraw.dev/docs/sync)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia |
 | Coste | El coste depende del proveedor o la ruta. El SDK permite desarrollo gratuito y exige clave de licencia para producción; starter kits MIT no cambian la licencia del SDK |
 | Equipo | Preparación según la ruta elegida. React; Node; estilos del SDK; licencia para producción según condiciones |
-
-No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia
-
-## Qué puedes hacer con él
-
-SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas.
-
-## Por qué destaca
-
-Usos propuestos: Construir una pizarra de colaboración; Crear un editor de diagramas propio.
-
-## Cómo funciona
 
 No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia
 

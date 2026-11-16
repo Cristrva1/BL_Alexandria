@@ -26,7 +26,7 @@ Implementa el protocolo multidispositivo de WhatsApp Web directamente en Go, sin
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Un servicio en Go con whatsmeow reenvía eventos a un webhook de n8n y expone un endpoint para responder (combinación por arquitectura). | Servicio Go primero con autenticación en su endpoint; después el flujo en n8n. |
+| [activepieces](activepieces.md) | Un servicio en Go con whatsmeow reenvía eventos a un webhook de Activepieces y expone un endpoint para responder (combinación por arquitectura). | Servicio Go primero con autenticación en su endpoint; después el flujo en Activepieces. |
 | [Ollama](ollama.md) | Generar respuestas con un modelo local desde el servicio Go (combinación por arquitectura). | Ollama primero; llama a su API REST desde el manejador de mensajes. |
 | [chatwoot](chatwoot.md) | Llevar conversaciones a agentes humanos mediante la API de Chatwoot (combinación por arquitectura). | Chatwoot primero con una bandeja de API; sincroniza desde tu servicio. |
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Colección MIT de 177 skills científicas y de investigación de K-Dense (antes Claude Scientific Skills), compatible con cualquier agente que siga el estándar Agent Skills. Muy activa (v2.72.0); K-Dense ofrece además un «co-científico» de escritorio de código abierto basado en ellas.
+
+## ¿Qué hace?
+
+Cubre biología, química, medicina, física, ingeniería, ciencias de la Tierra, datos y finanzas: búsqueda en más de 100 bases de datos científicas y financieras, integraciones con Benchling, DNAnexus, LatchBio, OMERO, Protocols.io, Open Notebook, Ginkgo Cloud Lab, LabArchives y Opentrons, análisis y generación de documentos e imágenes.
+
+## ¿Cómo lo hace?
+
+Skills en Markdown con scripts de apoyo; incluye las skills de documentos docx, pdf, pptx y xlsx copiadas de anthropics/skills bajo su licencia, y la generación de imágenes usa la API de OpenRouter. Se instala en el agente compatible según el README.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible principal. | Instala solo las categorías que necesites. |
+| [open-notebook](open-notebook.md) | Skill de integración explícita con Open Notebook. | Open Notebook en marcha y con API accesible antes de usar la skill. |
+| [Anthropic Skills](anthropic-skills.md) | Sus skills de documentos provienen de anthropics/skills. | No dupliques las mismas skills de documentos desde ambos repositorios. |
+
+**Notas:** Las integraciones de laboratorio requieren cuentas propias en cada plataforma.
+
+Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v2.72.0 (2026-10-01) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos |
 | Coste | El coste depende del proveedor o la ruta. El agente, las bases de datos, servicios y cómputo de cada workflow tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Agente compatible; herramienta y skill elegidas; datos no sensibles de muestra |
-
-Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos
-
-## Qué puedes hacer con él
-
-Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.
-
-## Por qué destaca
-
-Usos propuestos: Explorar un dataset científico; Preparar una revisión bibliográfica.
-
-## Cómo funciona
 
 Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos
 

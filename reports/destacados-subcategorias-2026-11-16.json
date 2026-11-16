@@ -1,0 +1,12 @@
+{
+ "date": "2026-11-16",
+ "method": "Elección entre los miembros existentes de cada subcategoría con los datos ya revisados del catálogo (descripción en 4 secciones, editorial_review y estado de GitHub consultado el 2026-11-15). No se instaló ni ejecutó ningún proyecto.",
+ "picks": [
+  {"subcategory": "14/aprender", "id": "machine-learning-for-trading", "candidates": ["machine-learning-for-trading"],
+   "reason": "Único miembro de la subcategoría. Cubre de principio a fin el paso de una idea a una estrategia operable (datos, factores, ML y deep learning, backtesting, ejecución y monitorización) en 27 capítulos y nueve casos de estudio. Código MIT, ~22k estrellas, activo (push 2026-11-13, release v3.1.0-artifacts del 2026-09-20). Ojo: el contenido del libro está protegido y el entorno es pesado."},
+  {"subcategory": "7/calidad", "id": "ast-grep", "candidates": ["ast-grep", "swe-bench"],
+   "reason": "Herramienta práctica para el día a día: CLI en Rust para búsqueda estructural, lint con reglas YAML y reescrituras masivas. Instalación fácil, sin API ni GPU, MIT, ~17k estrellas y muy activo (0.51.2 del 2026-11-11). SWE-bench es un benchmark para evaluar modelos: pesado de montar (contenedores) y útil para investigación, no como herramienta de calidad de código del proyecto."},
+  {"subcategory": "32/motores-web", "id": "lightpanda", "candidates": ["lightpanda"],
+   "reason": "Único miembro de la subcategoría. Navegador headless propio (Zig, no es un fork de Chromium) con servidor CDP compatible con Puppeteer y Playwright y MCP por stdio y HTTP. ~42k estrellas, activo (1.0.4 del 2026-11-13), instalación fácil. Ojo: licencia AGPL-3.0 y compatibilidad con páginas menor que la de un navegador completo."}
+ ]
+}

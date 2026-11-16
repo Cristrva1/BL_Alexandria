@@ -10,6 +10,41 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Framework Python de código abierto (MIT) de CrewAI Inc. para flujos multiagente en producción, con abstracciones de alto nivel y API de bajo nivel. Es open core: CrewAI AMP Suite añade un plano de control comercial. Muy activo (1.15.41).
+
+## ¿Qué hace?
+
+Ofrece dos modelos: Crews, agentes con roles que colaboran de forma autónoma, y Flows, automatizaciones dirigidas por eventos con control preciso, llamadas únicas al LLM y Crews integradas. Soporta herramientas, memoria, conocimiento, checkpoints, ejecución asíncrona y MCP/A2A. AMP añade despliegue gestionado, trazas, gobernanza y soporte.
+
+## ¿Cómo lo hace?
+
+Requiere Python >=3.10 y <3.14. Se instala como herramienta (`uv tool install crewai`) y `crewai create crew <proyecto>` genera un proyecto con agentes y tareas en JSONC (o `--classic`), que se ejecuta con `crewai run`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [mem0](mem0.md) | Memoria persistente con la integración documentada por Mem0. | Configura Mem0 y pásalo como memoria de la crew. |
+| [langfuse](langfuse.md) | Trazas de código abierto como alternativa al plano de control comercial (integración oficial). | Instrumenta antes de pasar a producción. |
+| [FastMCP](fastmcp.md) | Exponer herramientas propias como servidor MCP que CrewAI puede consumir (combinación por arquitectura; CrewAI documenta soporte MCP). | Servidor MCP primero; conéctalo a los agentes. |
+| [500-AI-Agents-Projects](500-ai-agents-projects.md) | Combinación recíproca: 500-AI-Agents-Projects lo enlaza como «Framework más citado en la colección». | Orden indicado desde 500-AI-Agents-Projects: Instálalo en el entorno del agente que lo use. |
+| [ai-engineering-hub](ai-engineering-hub.md) | Combinación recíproca: ai-engineering-hub lo enlaza como «Framework de agentes usado en varios proyectos». | Orden indicado desde ai-engineering-hub: Instálalo en el entorno del proyecto que lo use. |
+| [CopilotKit](copilotkit.md) | Combinación recíproca: CopilotKit lo enlaza como «Equipos de agentes CrewAI con integración documentada». | Orden indicado desde CopilotKit: Despliega el crew y conéctalo al runtime. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[laya](laya.md) · [OpenBot](openbot.md)
+
+**Notas:** Alternativas (elige una): langgraph, agno, metagpt. Se quitó langchain: CrewAI no lo requiere.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 1.15.41 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/crewAIInc/crewAI/blob/main/README.md) · [2](https://docs.mem0.ai/integrations/crewai) · [3](https://langfuse.com/integrations/frameworks/crewai) · [4](https://docs.crewai.com/en/mcp/overview)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. Claude Code y Codex tienen skills documentadas; Antigravity sigue sin confirmar para esta integración |
 | Coste | El coste depende del proveedor o la ruta. Las skills consumen tu agente; la crew utiliza su propio proveedor; AMP y servicios externos pueden costar aparte |
 | Equipo | Preparación según la ruta elegida. Python >=3.10 y <3.14; uv; proveedor o Ollama/LM Studio |
-
-Claude Code y Codex tienen skills documentadas; Antigravity sigue sin confirmar para esta integración
-
-## Qué puedes hacer con él
-
-Framework para orquestar "crews" de agentes con roles y tareas.
-
-## Por qué destaca
-
-Usos propuestos: Preparar investigación de mercado; Separar investigación y redacción de producto.
-
-## Cómo funciona
 
 Claude Code y Codex tienen skills documentadas; Antigravity sigue sin confirmar para esta integración
 
@@ -93,13 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python >=3.10 y <3.14; uv; proveedor o Ollama/LM Studio
 - **Etiquetas:** `automation` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [mem0](mem0.md) | 69k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
 
 ## Alternativas (elige una)
 
