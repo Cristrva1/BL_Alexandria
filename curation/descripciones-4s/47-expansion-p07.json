@@ -69,6 +69,12 @@
      "id": "ml-for-beginners",
      "motivo": "El curso ML for Beginners enseña machine learning clásico con scikit-learn.",
      "orden_instalacion": "Sigue las lecciones con scikit-learn instalado."
+    },
+    {
+     "id": "pandas",
+     "motivo": "Combinación recíproca: pandas lo enlaza como «scikit-learn acepta DataFrames de pandas como entrada y puede devolver salidas en pandas con `set_output(transform=\"pandas\")`».",
+     "orden_instalacion": "Orden indicado desde pandas: Prepara los datos con pandas; después pásalos a los estimadores de scikit-learn.",
+     "reciproca_de": "pandas"
     }
    ],
    "notas": "No está pensado para deep learning ni GPU; para eso usa pytorch o jax.",
@@ -466,6 +472,12 @@
      "id": "jupyterlab",
      "motivo": "JAX se usa habitualmente en cuadernos para experimentar (combinación por arquitectura).",
      "orden_instalacion": "Instala JAX en el entorno de JupyterLab."
+    },
+    {
+     "id": "mujoco",
+     "motivo": "Combinación recíproca: MuJoCo lo enlaza como «MJX (MuJoCo XLA) es una rama de MuJoCo escrita en JAX que permite simular miles de entornos en paralelo en GPU o TPU».",
+     "orden_instalacion": "Orden indicado desde MuJoCo: Instala `mujoco-mjx` con JAX; después carga el modelo con `mjx.put_model`.",
+     "reciproca_de": "mujoco"
     }
    ],
    "notas": "Alternativas (elige una): pytorch, tensorflow.",

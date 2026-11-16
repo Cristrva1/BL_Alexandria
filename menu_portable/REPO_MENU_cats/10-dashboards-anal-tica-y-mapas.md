@@ -153,7 +153,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo.
 **Qué comprobar:** El mapa muestra los puntos y permite seleccionar uno con el ratón.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `maplibre`, `kepler.gl`, `superset`, `jupyterlab`
+**Combina con:** `maplibre`, `kepler.gl`, `superset`, `jupyterlab`, `panel`
 
 ## `echarts`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=dataviz,typescript
@@ -339,7 +339,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una página HTML con Leaflet desde CDN, un mapa de OpenStreetMap y un marcador.
 **Qué comprobar:** El mapa se desplaza y amplía y el marcador muestra su popup al hacer clic.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `webodm`, `qgis`, `claude-code`
+**Combina con:** `webodm`, `qgis`, `claude-code`, `nicegui`
 **Alternativas (elige una):** `maplibre`
 
 ## `maigret`

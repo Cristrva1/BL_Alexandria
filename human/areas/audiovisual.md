@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-95 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+101 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -187,27 +187,33 @@ Animación de retratos y herramientas para personajes.
 
 Crear objetos, escenas y recursos tridimensionales.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-3d)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-3d)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [3dviz-pro-max](../fichas/3dviz-pro-max.md) | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-cad](../fichas/awesome-cad.md) | Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad. | Sin clave propia de API de IA en la ruta básica |
+| [Bevy](../fichas/bevy.md) | Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones. | Sin clave propia de API de IA en la ruta básica |
 | [blender](../fichas/blender.md) | Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. | Sin clave propia de API de IA en la ruta básica |
 | [Blender MCP](../fichas/blender-mcp.md) | Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. | API de IA opcional |
 | [blender-skills](../fichas/blender-skills.md) | Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP. | Sin clave propia de API de IA en la ruta básica |
 | [filament](../fichas/filament.md) | Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio. | Sin clave propia de API de IA en la ruta básica |
+| [FreeCAD](../fichas/freecad.md) | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python. | Sin clave propia de API de IA en la ruta básica |
+| [Godot Engine](../fichas/godot.md) | Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas. | Sin clave propia de API de IA en la ruta básica |
 | [meshoptimizer](../fichas/meshoptimizer.md) | Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. | Sin clave propia de API de IA en la ruta básica |
+| [OpenSCAD](../fichas/openscad.md) | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas. | Sin clave propia de API de IA en la ruta básica |
 | [ozz-animation](../fichas/ozz-animation.md) | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 
 ### Física y simulación
 
 Simular cuerpos,colisiones y sistemas físicos.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-simulacion)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-simulacion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Genesis World](../fichas/genesis-world.md) | Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU. | Sin clave propia de API de IA en la ruta básica |
+| [MuJoCo](../fichas/mujoco.md) | Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo. | Sin clave propia de API de IA en la ruta básica |
 | [planck.js](../fichas/planck-js.md) | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | Sin clave propia de API de IA en la ruta básica |
 | [react-three-rapier](../fichas/react-three-rapier.md) | Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | Sin clave propia de API de IA en la ruta básica |
 | [warp](../fichas/warp.md) | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. | Sin clave propia de API de IA en la ruta básica |

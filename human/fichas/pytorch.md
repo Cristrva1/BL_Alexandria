@@ -32,9 +32,9 @@ Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o C
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (29). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (30). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[4D-Humans](4d-humans.md) · [Accelerate](accelerate.md) · [awesome-machine-learning](awesome-machine-learning.md) · [BentoML](bentoml.md) · [bionemo-recipes](bionemo-recipes.md) · [chaiNNer](chainner.md) · [cosmos](cosmos.md) · [FinGPT](fingpt.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [JupyterLab](jupyterlab.md) · [Keras 3](keras.md) · [kornia](kornia.md) · [labml.ai Annotated Paper Implementations](annotated-dl-papers.md) · [LLM Course](llm-course.md) · [llm.c](llm-c.md) · [LLMs from Scratch](llms-from-scratch.md) · [LTX-2](ltx-2.md) · [mmpose](mmpose.md) · [nanochat](nanochat.md) · [NeMo Speech](nemo.md) · [pyannote.audio](pyannote-audio.md) · [PyTorch Lightning](pytorch-lightning.md) · [Ray](ray.md) · [TimesFM](timesfm.md) · [torchtune](torchtune.md) · [train-llm-from-scratch](train-llm-from-scratch.md) · [warp](warp.md) · [WHAM](wham.md) · [whisper](whisper.md)
+[4D-Humans](4d-humans.md) · [Accelerate](accelerate.md) · [awesome-machine-learning](awesome-machine-learning.md) · [BentoML](bentoml.md) · [bionemo-recipes](bionemo-recipes.md) · [chaiNNer](chainner.md) · [cosmos](cosmos.md) · [FinGPT](fingpt.md) · [Genesis World](genesis-world.md) · [how-to-train-your-gpt](how-to-train-your-gpt.md) · [JupyterLab](jupyterlab.md) · [Keras 3](keras.md) · [kornia](kornia.md) · [labml.ai Annotated Paper Implementations](annotated-dl-papers.md) · [LLM Course](llm-course.md) · [llm.c](llm-c.md) · [LLMs from Scratch](llms-from-scratch.md) · [LTX-2](ltx-2.md) · [mmpose](mmpose.md) · [nanochat](nanochat.md) · [NeMo Speech](nemo.md) · [pyannote.audio](pyannote-audio.md) · [PyTorch Lightning](pytorch-lightning.md) · [Ray](ray.md) · [TimesFM](timesfm.md) · [torchtune](torchtune.md) · [train-llm-from-scratch](train-llm-from-scratch.md) · [warp](warp.md) · [WHAM](wham.md) · [whisper](whisper.md)
 
 **Notas:** Alternativa (elige una): tensorflow.
 

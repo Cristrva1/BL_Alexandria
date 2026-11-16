@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-60 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -123,6 +123,10 @@
 - [DuckDB vs Polars](duckdb-vs-polars.md)
 - [Gradio vs streamlit](gradio-vs-streamlit.md)
 - [JupyterLab vs marimo](jupyterlab-vs-marimo.md)
+
+## 🎨 Animación, gráficos y creación 3D
+
+- [Babylon.js vs three.js](babylonjs-vs-three-js.md)
 
 ## 🎨 Skills de diseño, contenido y especialidades
 

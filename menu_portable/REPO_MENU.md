@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 768 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 788 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **768 repos** de IA y
+proyecto concreto. Tienes un menú curado de **788 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -928,41 +928,61 @@ Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 - `unsloth` [A|loc|M|+] — App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcional — tags: training,local,python — prov: local — alt: llama-factory,axolotl,torchtune
 - `verl` [L|loc|H|?] — Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros alg — tags: training,python,rl,gpu — alt: openrlhf
 
-### 25. Procesar datos y trabajar con notebooks (12)
+### 25. Procesar datos y trabajar con notebooks (23)
 Detalle: `REPO_MENU_cats/25-procesar-datos-y-trabajar-con-notebooks.md`
 
 - `apache-iceberg` [L|loc|M|?] — Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación d — tags: data,lakehouse,table-format,java — alt: delta-lake,hudi
+- `arrow` [L|loc|E|?] — Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin cop — tags: data,columnar,python,cpp
 - `awesome-bigdata` [D|cld|E|?] — Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para des — tags: data
+- `clickhouse` [P|loc|M|+] — Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones d — tags: database,sql,analytics,cpp
 - `dash` [L|loc|M|?] — Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con compone — tags: automation,ui,python
+- `dbt` [A|loc|M|?] — Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y de — tags: data,sql,etl,analytics
 - `delta-lake` [L|loc|M|?] — Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y — tags: data,lakehouse,table-format,scala — alt: apache-iceberg,hudi
+- `dlt` [L|loc|E|+] — Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o alm — tags: data,etl,python,pipeline
 - `duckdb` [L|loc|E|?] — Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. — tags: data,analytics,cpp — alt: polars
 - `globalbuildingatlas` [D|loc|H|?] — Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. — tags: datos,python
-- `gradio` [L|loc|E|+] — Librería Python para crear y compartir apps web de modelos de ML en minutos. — tags: ui,python — alt: streamlit
+- `gradio` [L|loc|E|+] — Librería Python para crear y compartir apps web de modelos de ML en minutos. — tags: ui,python — alt: streamlit,reflex,nicegui,panel
 - `hudi` [P|hyb|H|?] — Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. — tags: datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi — alt: apache-iceberg,delta-lake
+- `ibis` [L|loc|E|+] — Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHous — tags: data,python,dataframe,sql
 - `jupyterlab` [A|loc|E|+] — Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable me — tags: notebooks,data,python,typescript — alt: marimo
 - `marimo` [A|loc|E|+] — Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. — tags: notebooks,data,python — alt: jupyterlab
-- `polars` [L|loc|E|+] — Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. — tags: data,python,rust — alt: duckdb
-- `streamlit` [L|loc|E|+] — Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin t — tags: ui,dataviz,python — alt: gradio
+- `nicegui` [L|loc|E|+] — Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil p — tags: python,web,ui,framework — alt: reflex,panel,streamlit,gradio
+- `pandas` [L|loc|E|+] — Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, ag — tags: data,python,dataframe,analytics — alt: polars
+- `panel` [L|loc|E|+] — Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplic — tags: python,dashboard,dataviz,framework — alt: reflex,nicegui,streamlit,gradio
+- `polars` [L|loc|E|+] — Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. — tags: data,python,rust — alt: duckdb,pandas
+- `pygwalker` [L|loc|E|+] — Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter — tags: dataviz,python,jupyter,eda
+- `reflex` [L|loc|E|+] — Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, co — tags: python,web,framework,ui — alt: nicegui,panel,streamlit,gradio
+- `spark` [R|loc|-|?] — Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine l — tags: data,bigdata,sql,streaming
+- `streamlit` [L|loc|E|+] — Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin t — tags: ui,dataviz,python — alt: gradio,reflex,nicegui,panel
 
-### 26. Animación, gráficos y creación 3D (19)
+### 26. Animación, gráficos y creación 3D (28)
 Detalle: `REPO_MENU_cats/26-animaci-n-gr-ficos-y-creaci-n-3d.md`
 
 - `animejs` [L|loc|E|?] — Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. — tags: ui,design,javascript — alt: gsap,motion
 - `awesome-cad` [D|loc|E|?] — Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialida — tags: creacion-3d,reference
+- `babylonjs` [L|loc|E|+] — Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos  — tags: javascript,3d,webgl,webxr — alt: three.js,playcanvas
+- `bevy` [L|loc|M|+] — Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones  — tags: rust,gamedev,ecs,3d — alt: godot
 - `blender` [A|loc|E|?] — Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. — tags: creacion-3d,app,c
 - `filament` [L|loc|M|?] — Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio — tags: creacion-3d,library,c
+- `freecad` [A|loc|E|?] — Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con plan — tags: cad,3d,cpp,app
+- `genesis-world` [L|loc|-|+] — Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos — tags: simulation,robotics,physics,python
+- `godot` [A|loc|E|?] — Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escr — tags: gamedev,3d,2d,cpp — alt: bevy
 - `gsap` [L|loc|M|+] — Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincro — tags: ui,design,javascript — alt: animejs
 - `meshoptimizer` [L|loc|M|+] — Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. — tags: creacion-3d,library,c
 - `motion` [L|loc|E|+] — Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteraccio — tags: ui,design,typescript — alt: animejs
+- `mujoco` [L|loc|M|+] — Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, bi — tags: simulation,robotics,physics,python
+- `openscad` [A|loc|E|?] — CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (S — tags: cad,3d,code,app
 - `ozz-animation` [L|loc|M|?] — Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicacione — tags: creacion-3d,library,c
 - `pencil` [A|loc|E|?] — Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. — tags: edicion,app,c
 - `pixelfx` [L|loc|M|?] — Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. — tags: animacion,library,javascript
+- `pixijs` [L|loc|E|+] — Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y apl — tags: javascript,2d,webgl,animation
 - `planck-js` [L|loc|M|?] — Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. — tags: animacion,library,typescript
+- `playcanvas` [L|loc|E|+] — Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con sop — tags: javascript,3d,webgpu,gamedev — alt: three.js,babylonjs
 - `react-three-fiber` [L|loc|M|+] — Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. — tags: ui,design,typescript
 - `react-three-rapier` [L|loc|M|?] — Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales — tags: animacion,library,typescript
 - `regl` [L|loc|M|+] — Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicac — tags: animacion,library,javascript
 - `scenejs` [L|loc|M|+] — Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. — tags: animacion,library,typescript
-- `three.js` [L|loc|M|?] — Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. — tags: ui,design,javascript
+- `three.js` [L|loc|M|?] — Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. — tags: ui,design,javascript — alt: babylonjs,playcanvas
 - `warp` [L|loc|H|+] — Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. — tags: entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
 - `webgl-noise` [L|loc|M|?] — Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo rea — tags: animacion,library,c
 - `zdog` [L|loc|M|?] — Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. — tags: animacion,library,javascript

@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-68 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+71 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Opciones para empezar
 
@@ -96,16 +96,19 @@ Instrucciones de diseño, accesibilidad y calidad para tu agente.
 
 Movimiento, gráficos y escenas interactivas en el navegador.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=frontend&topic=web-movimiento)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-movimiento)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Anime.js](../fichas/animejs.md) | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | Sin clave propia de API de IA en la ruta básica |
+| [Babylon.js](../fichas/babylonjs.md) | Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. | Sin clave propia de API de IA en la ruta básica |
 | [GSAP](../fichas/gsap.md) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | Sin clave propia de API de IA en la ruta básica |
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin clave propia de API de IA en la ruta básica |
 | [motion](../fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional |
 | [pencil](../fichas/pencil.md) | Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | Sin clave propia de API de IA en la ruta básica |
 | [pixelfx](../fichas/pixelfx.md) | Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | API de IA opcional |
+| [PixiJS](../fichas/pixijs.md) | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador. | Sin clave propia de API de IA en la ruta básica |
+| [PlayCanvas Engine](../fichas/playcanvas.md) | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. | Sin clave propia de API de IA en la ruta básica |
 | [react-three-fiber](../fichas/react-three-fiber.md) | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. | Sin clave propia de API de IA en la ruta básica |
 | [regl](../fichas/regl.md) | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web. | Sin clave propia de API de IA en la ruta básica |
 | [scenejs](../fichas/scenejs.md) | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. | Sin clave propia de API de IA en la ruta básica |

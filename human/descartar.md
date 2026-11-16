@@ -303,15 +303,24 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Apache Iceberg](fichas/apache-iceberg.md) | [Delta Lake](fichas/delta-lake.md), [hudi](fichas/hudi.md) |
 | [Delta Lake](fichas/delta-lake.md) | [Apache Iceberg](fichas/apache-iceberg.md), [hudi](fichas/hudi.md) |
 | [DuckDB](fichas/duckdb.md) | [Polars](fichas/polars.md) |
-| [Gradio](fichas/gradio.md) | [streamlit](fichas/streamlit.md) |
+| [Gradio](fichas/gradio.md) | [streamlit](fichas/streamlit.md), [Reflex](fichas/reflex.md), [NiceGUI](fichas/nicegui.md), [Panel](fichas/panel.md) |
 | [hudi](fichas/hudi.md) | [Apache Iceberg](fichas/apache-iceberg.md), [Delta Lake](fichas/delta-lake.md) |
 | [JupyterLab](fichas/jupyterlab.md) | [marimo](fichas/marimo.md) |
 | [marimo](fichas/marimo.md) | [JupyterLab](fichas/jupyterlab.md) |
-| [Polars](fichas/polars.md) | [DuckDB](fichas/duckdb.md) |
-| [streamlit](fichas/streamlit.md) | [Gradio](fichas/gradio.md) |
+| [NiceGUI](fichas/nicegui.md) | [Reflex](fichas/reflex.md), [Panel](fichas/panel.md), [streamlit](fichas/streamlit.md), [Gradio](fichas/gradio.md) |
+| [pandas](fichas/pandas.md) | [Polars](fichas/polars.md) |
+| [Panel](fichas/panel.md) | [Reflex](fichas/reflex.md), [NiceGUI](fichas/nicegui.md), [streamlit](fichas/streamlit.md), [Gradio](fichas/gradio.md) |
+| [Polars](fichas/polars.md) | [DuckDB](fichas/duckdb.md), [pandas](fichas/pandas.md) |
+| [Reflex](fichas/reflex.md) | [NiceGUI](fichas/nicegui.md), [Panel](fichas/panel.md), [streamlit](fichas/streamlit.md), [Gradio](fichas/gradio.md) |
+| [streamlit](fichas/streamlit.md) | [Gradio](fichas/gradio.md), [Reflex](fichas/reflex.md), [NiceGUI](fichas/nicegui.md), [Panel](fichas/panel.md) |
 | [Anime.js](fichas/animejs.md) | [GSAP](fichas/gsap.md), [motion](fichas/motion.md) |
+| [Babylon.js](fichas/babylonjs.md) | [three.js](fichas/three-js.md), [PlayCanvas Engine](fichas/playcanvas.md) |
+| [Bevy](fichas/bevy.md) | [Godot Engine](fichas/godot.md) |
+| [Godot Engine](fichas/godot.md) | [Bevy](fichas/bevy.md) |
 | [GSAP](fichas/gsap.md) | [Anime.js](fichas/animejs.md) |
 | [motion](fichas/motion.md) | [Anime.js](fichas/animejs.md) |
+| [PlayCanvas Engine](fichas/playcanvas.md) | [three.js](fichas/three-js.md), [Babylon.js](fichas/babylonjs.md) |
+| [three.js](fichas/three-js.md) | [Babylon.js](fichas/babylonjs.md), [PlayCanvas Engine](fichas/playcanvas.md) |
 | [3dviz-pro-max](fichas/3dviz-pro-max.md) | [threejs-skills](fichas/threejs-skills.md) |
 | [claude-seo](fichas/claude-seo.md) | [GEO-SEO Claude](fichas/geo-seo-claude.md) |
 | [GEO-SEO Claude](fichas/geo-seo-claude.md) | [claude-seo](fichas/claude-seo.md) |

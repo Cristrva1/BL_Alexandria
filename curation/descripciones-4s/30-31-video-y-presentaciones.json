@@ -201,6 +201,12 @@
      "id": "openfilm",
      "motivo": "Exportación de vídeo desde HTML. (combinación por arquitectura)",
      "orden_instalacion": "Evalúalo para codificar en el navegador."
+    },
+    {
+     "id": "pixijs",
+     "motivo": "Combinación recíproca: PixiJS lo enlaza como «Mediabunny puede codificar en el navegador vídeo a partir de un canvas, como el que dibuja PixiJS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PixiJS: Renderiza la escena con PixiJS; después captura su canvas con la fuente de canvas de Mediabunny.",
+     "reciproca_de": "pixijs"
     }
    ],
    "notas": "Sin alternativas declaradas.",

@@ -36,7 +36,7 @@ Instrucciones de diseño, accesibilidad y calidad para tu agente.
 
 Movimiento, gráficos y escenas interactivas en el navegador.
 
-`animejs`, `gsap`, `gsap-skills`, `motion`, `pencil`, `pixelfx`, `react-three-fiber`, `regl`, `scenejs`, `three.js`, `threejs-skills`, `webgl-noise`, `zdog`
+`animejs`, `babylonjs`, `gsap`, `gsap-skills`, `motion`, `pencil`, `pixelfx`, `pixijs`, `playcanvas`, `react-three-fiber`, `regl`, `scenejs`, `three.js`, `threejs-skills`, `webgl-noise`, `zdog`
 
 ### Probar y publicar una web
 
@@ -146,13 +146,13 @@ Animación de retratos y herramientas para personajes.
 
 Crear objetos, escenas y recursos tridimensionales.
 
-`3dviz-pro-max`, `awesome-cad`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `meshoptimizer`, `ozz-animation`
+`3dviz-pro-max`, `awesome-cad`, `bevy`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `freecad`, `godot`, `meshoptimizer`, `openscad`, `ozz-animation`
 
 ### Física y simulación
 
 Simular cuerpos,colisiones y sistemas físicos.
 
-`planck-js`, `react-three-rapier`, `warp`
+`genesis-world`, `mujoco`, `planck-js`, `react-three-rapier`, `warp`
 
 ## Trading, inversión y finanzas
 
@@ -368,13 +368,13 @@ Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicaci
 
 Motores de consulta, tablas y conjuntos de datos.
 
-`apache-iceberg`, `awesome-bigdata`, `delta-lake`, `duckdb`, `globalbuildingatlas`, `hudi`, `jupyterlab`, `marimo`, `polars`
+`apache-iceberg`, `arrow`, `awesome-bigdata`, `clickhouse`, `dbt`, `delta-lake`, `dlt`, `duckdb`, `globalbuildingatlas`, `hudi`, `ibis`, `jupyterlab`, `marimo`, `pandas`, `polars`, `pygwalker`, `spark`
 
 ### Notebooks y aplicaciones de datos
 
 Explorar datos y compartir una interfaz de análisis.
 
-`dash`, `gradio`, `marimo`, `streamlit`
+`dash`, `gradio`, `marimo`, `nicegui`, `panel`, `reflex`, `streamlit`
 
 ### Dashboards y BI
 

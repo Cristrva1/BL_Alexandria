@@ -249,7 +249,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee duración y pistas de un archivo y convierte una copia a un formato admitido
 **Qué comprobar:** Puedes contrastar metadatos y reproducir la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `remotion`, `ffmpeg`, `openfilm`
+**Combina con:** `remotion`, `ffmpeg`, `openfilm`, `pixijs`
 
 ## `motionmaxxing`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript

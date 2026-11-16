@@ -137,12 +137,12 @@
     {
       "num": 25,
       "title": "Procesar datos y trabajar con notebooks",
-      "count": 12
+      "count": 23
     },
     {
       "num": 26,
       "title": "Animación, gráficos y creación 3D",
-      "count": 19
+      "count": 28
     },
     {
       "num": 27,
@@ -1571,11 +1571,14 @@
           "reference_repos": [],
           "repo_ids": [
             "animejs",
+            "babylonjs",
             "gsap",
             "gsap-skills",
             "motion",
             "pencil",
             "pixelfx",
+            "pixijs",
+            "playcanvas",
             "react-three-fiber",
             "regl",
             "scenejs",
@@ -1584,7 +1587,7 @@
             "webgl-noise",
             "zdog"
           ],
-          "count": 13
+          "count": 16
         },
         {
           "id": "web-pruebas",
@@ -1633,6 +1636,7 @@
         "ant-design",
         "appwrite",
         "assistant-ui",
+        "babylonjs",
         "caddy",
         "casaos",
         "chakra-ui",
@@ -1665,7 +1669,9 @@
         "pencil",
         "penpot",
         "pixelfx",
+        "pixijs",
         "plasmic",
+        "playcanvas",
         "playwright",
         "playwright-mcp",
         "portainer",
@@ -1697,7 +1703,7 @@
         "webgl-noise",
         "zdog"
       ],
-      "count": 68
+      "count": 71
     },
     {
       "id": "ciberseguridad",
@@ -2248,14 +2254,18 @@
           "repo_ids": [
             "3dviz-pro-max",
             "awesome-cad",
+            "bevy",
             "blender",
             "blender-mcp",
             "blender-skills",
             "filament",
+            "freecad",
+            "godot",
             "meshoptimizer",
+            "openscad",
             "ozz-animation"
           ],
-          "count": 8
+          "count": 12
         },
         {
           "id": "av-simulacion",
@@ -2277,11 +2287,13 @@
           "reference_repos": [],
           "keywords": [],
           "repo_ids": [
+            "genesis-world",
+            "mujoco",
             "planck-js",
             "react-three-rapier",
             "warp"
           ],
-          "count": 3
+          "count": 5
         }
       ],
       "repo_ids": [
@@ -2290,6 +2302,7 @@
         "ai-youtube-shorts-generator",
         "audiocraft",
         "awesome-cad",
+        "bevy",
         "blender",
         "blender-mcp",
         "blender-skills",
@@ -2314,7 +2327,10 @@
         "filament",
         "fish-speech",
         "flux2",
+        "freecad",
+        "genesis-world",
         "genjutsu",
+        "godot",
         "gpt-sovits",
         "handbrake",
         "huashu-motion",
@@ -2342,6 +2358,7 @@
         "motion-design-skill",
         "motionmaxxing",
         "moviepy",
+        "mujoco",
         "nemo",
         "obs-studio",
         "omnivoice-studio",
@@ -2349,6 +2366,7 @@
         "openfilm",
         "openmontage",
         "openrv",
+        "openscad",
         "ozz-animation",
         "papermorph",
         "pipecat",
@@ -2381,7 +2399,7 @@
         "whisper-cpp",
         "whisperx"
       ],
-      "count": 95
+      "count": 101
     },
     {
       "id": "trading",
@@ -3794,16 +3812,24 @@
           "reference_repos": [],
           "repo_ids": [
             "apache-iceberg",
+            "arrow",
             "awesome-bigdata",
+            "clickhouse",
+            "dbt",
             "delta-lake",
+            "dlt",
             "duckdb",
             "globalbuildingatlas",
             "hudi",
+            "ibis",
             "jupyterlab",
             "marimo",
-            "polars"
+            "pandas",
+            "polars",
+            "pygwalker",
+            "spark"
           ],
-          "count": 9
+          "count": 17
         },
         {
           "id": "datos-apps",
@@ -3826,9 +3852,12 @@
             "dash",
             "gradio",
             "marimo",
+            "nicegui",
+            "panel",
+            "reflex",
             "streamlit"
           ],
-          "count": 4
+          "count": 7
         },
         {
           "id": "datos-bi",
@@ -3926,13 +3955,17 @@
       ],
       "repo_ids": [
         "apache-iceberg",
+        "arrow",
         "awesome-bigdata",
         "awesome-dataviz",
         "chart-js",
+        "clickhouse",
         "d3",
         "dash",
         "data-analyst-roadmap",
+        "dbt",
         "delta-lake",
+        "dlt",
         "duckdb",
         "echarts",
         "evidence",
@@ -3940,22 +3973,29 @@
         "gradio",
         "grafana",
         "hudi",
+        "ibis",
         "jupyterlab",
         "marimo",
         "matomo",
         "metabase",
+        "nicegui",
+        "pandas",
+        "panel",
         "plausible",
         "polars",
         "posthog",
+        "pygwalker",
         "recharts",
         "redash",
+        "reflex",
+        "spark",
         "streamlit",
         "superset",
         "umami",
         "uplot",
         "wrenai"
       ],
-      "count": 29
+      "count": 40
     },
     {
       "id": "productividad",
@@ -11923,7 +11963,8 @@
         "polars",
         "grafana",
         "mlflow",
-        "claude-code"
+        "claude-code",
+        "dbt"
       ],
       "alt": [
         "prefect",
@@ -12399,7 +12440,9 @@
         "duckdb",
         "polars",
         "mlflow",
-        "claude-code"
+        "claude-code",
+        "dbt",
+        "dlt"
       ],
       "alt": [
         "airflow",
@@ -41834,7 +41877,8 @@
         "maplibre",
         "kepler.gl",
         "superset",
-        "jupyterlab"
+        "jupyterlab",
+        "panel"
       ],
       "alt": []
     },
@@ -42536,7 +42580,8 @@
       "combines_with": [
         "webodm",
         "qgis",
-        "claude-code"
+        "claude-code",
+        "nicegui"
       ],
       "alt": [
         "maplibre"
@@ -83386,7 +83431,8 @@
       "combines_with": [
         "keras",
         "gemma",
-        "jupyterlab"
+        "jupyterlab",
+        "mujoco"
       ],
       "alt": [
         "pytorch",
@@ -84577,7 +84623,8 @@
       "combines_with": [
         "jupyterlab",
         "mlflow",
-        "ml-for-beginners"
+        "ml-for-beginners",
+        "pandas"
       ],
       "alt": []
     },
@@ -85545,12 +85592,127 @@
       "combines_with": [
         "duckdb",
         "polars",
-        "jupyterlab"
+        "jupyterlab",
+        "spark"
       ],
       "alt": [
         "delta-lake",
         "hudi"
       ]
+    },
+    {
+      "id": "arrow",
+      "name": "Apache Arrow",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "columnar",
+        "python",
+        "cpp"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/apache/arrow/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "7ba3f56fce388c2ce16001f2cfa26f3d22d476ae"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/apache/arrow/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala PyArrow, lee un archivo Parquet con `pyarrow.parquet.read_table` y conviértelo a pandas.",
+        "success": "Obtienes una tabla Arrow y su DataFrame equivalente.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "mover datos entre pandas, Polars, DuckDB y Spark sin serializar",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "leer y escribir Parquet o datasets particionados desde Python",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/apache/arrow/blob/main/README.md",
+        "source_blob_sha": "7ba3f56fce388c2ce16001f2cfa26f3d22d476ae",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas.",
+      "desc": "Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas.",
+      "stack": "C++, compose.yaml",
+      "repo": "https://github.com/apache/arrow",
+      "install": "Seguir la instalación original: https://github.com/apache/arrow/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: mover datos entre pandas, Polars, DuckDB y Spark sin serializar; leer y escribir Parquet o datasets particionados desde Python",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "pandas",
+        "polars",
+        "duckdb",
+        "spark"
+      ],
+      "alt": []
     },
     {
       "id": "awesome-bigdata",
@@ -85662,6 +85824,122 @@
         "awesome-dataviz",
         "duckdb",
         "hudi"
+      ],
+      "alt": []
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "cat": 25,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "database",
+        "sql",
+        "analytics",
+        "cpp"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/ClickHouse/ClickHouse/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "86f8e38b02f523cab27229f0f4203c2a45b9033b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "curl https://clickhouse.com/ | sh",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/ClickHouse/ClickHouse/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `curl https://clickhouse.com/ | sh` en una máquina de pruebas y consulta un CSV local con `./clickhouse local`.",
+        "success": "Obtienes el resultado de la consulta SQL en la terminal sin levantar un servidor.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "guardar y consultar logs, métricas o eventos de producto con latencias de segundos",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "servir de motor para dashboards analíticos sobre grandes volúmenes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/ClickHouse/ClickHouse/blob/master/README.md",
+        "source_blob_sha": "86f8e38b02f523cab27229f0f4203c2a45b9033b",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube.",
+      "desc": "Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube.",
+      "stack": "C++, CMakeLists.txt, pyproject.toml",
+      "repo": "https://github.com/ClickHouse/ClickHouse",
+      "install": "curl https://clickhouse.com/ | sh",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: guardar y consultar logs, métricas o eventos de producto con latencias de segundos; servir de motor para dashboards analíticos sobre grandes volúmenes",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "langfuse",
+        "grafana",
+        "metabase",
+        "dbt",
+        "superset",
+        "ibis"
       ],
       "alt": []
     },
@@ -85781,6 +86059,121 @@
       "alt": []
     },
     {
+      "id": "dbt",
+      "name": "dbt",
+      "cat": 25,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "sql",
+        "etl",
+        "analytics"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/dbt-labs/dbt/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e879e4e705dedb1f227e0889473cb9c9afc2dc5d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/dbt-labs/dbt/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía de instalación oficial, crea un proyecto con un modelo SELECT simple y ejecútalo con `dbt run` contra una base de pruebas.",
+        "success": "El modelo aparece como tabla o vista en la base y `dbt test` informa de las pruebas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "mantener las transformaciones de un almacén analítico como código revisable en Git",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "añadir pruebas de calidad (únicos, no nulos) a las tablas de un informe",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/dbt-labs/dbt/blob/main/README.md",
+        "source_blob_sha": "e879e4e705dedb1f227e0889473cb9c9afc2dc5d",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
+      "desc": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
+      "stack": "Rust, Cargo.toml, pyproject.toml",
+      "repo": "https://github.com/dbt-labs/dbt",
+      "install": "Seguir la instalación original: https://github.com/dbt-labs/dbt/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: mantener las transformaciones de un almacén analítico como código revisable en Git; añadir pruebas de calidad (únicos, no nulos) a las tablas de un informe",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "duckdb",
+        "clickhouse",
+        "spark",
+        "dagster",
+        "airflow"
+      ],
+      "alt": []
+    },
+    {
       "id": "delta-lake",
       "name": "Delta Lake",
       "cat": 25,
@@ -85889,12 +86282,128 @@
       "combines_with": [
         "duckdb",
         "polars",
-        "jupyterlab"
+        "jupyterlab",
+        "spark"
       ],
       "alt": [
         "apache-iceberg",
         "hudi"
       ]
+    },
+    {
+      "id": "dlt",
+      "name": "dlt (data load tool)",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "etl",
+        "python",
+        "pipeline"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/dlt-hub/dlt/blob/devel/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "8bc2249f4293ab09747379457605f1fc78c837e1"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install \"dlt[duckdb]\"",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/dlt-hub/dlt/blob/devel/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install \"dlt[duckdb]\"`, define una fuente REST pequeña y ejecuta el pipeline con destino DuckDB.",
+        "success": "Obtienes un archivo DuckDB con tablas tipadas creadas por dlt.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "volcar los datos de una API REST paginada en DuckDB para analizarlos",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "sincronizar tablas de una base SQL a un almacén analítico cada día",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/dlt-hub/dlt/blob/devel/README.md",
+        "source_blob_sha": "8bc2249f4293ab09747379457605f1fc78c837e1",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental",
+      "desc": "Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/dlt-hub/dlt",
+      "install": "pip install \"dlt[duckdb]\"",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: volcar los datos de una API REST paginada en DuckDB para analizarlos; sincronizar tablas de una base SQL a un almacén analítico cada día",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "airflow",
+        "ibis",
+        "marimo",
+        "dagster"
+      ],
+      "alt": []
     },
     {
       "id": "duckdb",
@@ -86248,7 +86757,10 @@
         "rembg"
       ],
       "alt": [
-        "streamlit"
+        "streamlit",
+        "reflex",
+        "nicegui",
+        "panel"
       ]
     },
     {
@@ -86367,12 +86879,129 @@
       "combines_with": [
         "duckdb",
         "superset",
-        "awesome-bigdata"
+        "awesome-bigdata",
+        "spark"
       ],
       "alt": [
         "apache-iceberg",
         "delta-lake"
       ]
+    },
+    {
+      "id": "ibis",
+      "name": "Ibis",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "python",
+        "dataframe",
+        "sql"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/ibis-project/ibis/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d4ce3c0ea135d7b6ae39dd41923c857e5a3469e9"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install 'ibis-framework[duckdb,examples]'",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/ibis-project/ibis/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install 'ibis-framework[duckdb,examples]'` y filtra un conjunto de ejemplo en modo interactivo.",
+        "success": "Obtienes la tabla resultante calculada por DuckDB.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "desarrollar una transformación en local con DuckDB y ejecutarla después en un almacén en la nube",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "escribir lógica de datos sin atarse al dialecto SQL de un motor",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/ibis-project/ibis/blob/main/README.md",
+        "source_blob_sha": "d4ce3c0ea135d7b6ae39dd41923c857e5a3469e9",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores.",
+      "desc": "Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores.",
+      "stack": "Python, compose.yaml, pyproject.toml",
+      "repo": "https://github.com/ibis-project/ibis",
+      "install": "pip install 'ibis-framework[duckdb,examples]'",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: desarrollar una transformación en local con DuckDB y ejecutarla después en un almacén en la nube; escribir lógica de datos sin atarse al dialecto SQL de un motor",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "duckdb",
+        "polars",
+        "clickhouse",
+        "spark",
+        "pandas",
+        "dlt"
+      ],
+      "alt": []
     },
     {
       "id": "jupyterlab",
@@ -86617,6 +87246,363 @@
       ]
     },
     {
+      "id": "nicegui",
+      "name": "NiceGUI",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "python",
+        "web",
+        "ui",
+        "framework"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/zauberzeug/nicegui/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "8d6ef2bc91c727941f49c02d80ef117f7fedc730"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "python3 -m pip install nicegui",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/zauberzeug/nicegui/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `python3 -m pip install nicegui`, escribe un script con `ui.label` y `ui.button` y ejecútalo con `ui.run()`.",
+        "success": "La interfaz se abre en el navegador (puerto 8080) y se recarga al guardar.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "crear un panel de control para un robot o una casa domótica",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "hacer una pequeña herramienta web para ajustar parámetros de un algoritmo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/zauberzeug/nicegui/blob/main/README.md",
+        "source_blob_sha": "8d6ef2bc91c727941f49c02d80ef117f7fedc730",
+        "previous_category": [
+          25,
+          "apps"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas.",
+      "desc": "Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas.",
+      "stack": "Python, docker-compose.yml, package.json, pyproject.toml",
+      "repo": "https://github.com/zauberzeug/nicegui",
+      "install": "python3 -m pip install nicegui",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: crear un panel de control para un robot o una casa domótica; hacer una pequeña herramienta web para ajustar parámetros de un algoritmo",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "leaflet",
+        "echarts",
+        "three.js",
+        "pandas"
+      ],
+      "alt": [
+        "reflex",
+        "panel",
+        "streamlit",
+        "gradio"
+      ]
+    },
+    {
+      "id": "pandas",
+      "name": "pandas",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "python",
+        "dataframe",
+        "analytics"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/pandas-dev/pandas/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9c759350971e68ffd2d8b26e1b49b832a475ddf0"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install pandas",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/pandas-dev/pandas/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install pandas`, carga un CSV con `pd.read_csv` y agrupa por una columna con `groupby().sum()`.",
+        "success": "Obtienes un DataFrame resumido que puedes exportar a CSV o Parquet.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "limpiar y cruzar varios CSV o Excel antes de un informe",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preparar un conjunto de datos para entrenar un modelo de scikit-learn",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/pandas-dev/pandas/blob/main/README.md",
+        "source_blob_sha": "9c759350971e68ffd2d8b26e1b49b832a475ddf0",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
+      "desc": "Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/pandas-dev/pandas",
+      "install": "pip install pandas",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: limpiar y cruzar varios CSV o Excel antes de un informe; preparar un conjunto de datos para entrenar un modelo de scikit-learn",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "jupyterlab",
+        "duckdb",
+        "scikit-learn",
+        "arrow",
+        "pygwalker",
+        "reflex"
+      ],
+      "alt": [
+        "polars"
+      ]
+    },
+    {
+      "id": "panel",
+      "name": "Panel",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "python",
+        "dashboard",
+        "dataviz",
+        "framework"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/holoviz/panel/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2cf9b62e8c8a8cd005866910858c337e855e5ea0"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install panel",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/holoviz/panel/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install panel`, crea `app.py` con un widget enlazado a un gráfico y ejecútalo con `panel serve app.py --dev`.",
+        "success": "El dashboard se abre en el navegador y responde a los controles.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "convertir un análisis de notebook en un dashboard interactivo para el equipo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "crear una plataforma interna con varias páginas, tablas editables y autenticación",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/holoviz/panel/blob/main/README.md",
+        "source_blob_sha": "2cf9b62e8c8a8cd005866910858c337e855e5ea0",
+        "previous_category": [
+          25,
+          "apps"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`.",
+      "desc": "Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/holoviz/panel",
+      "install": "pip install panel",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: convertir un análisis de notebook en un dashboard interactivo para el equipo; crear una plataforma interna con varias páginas, tablas editables y autenticación",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "jupyterlab",
+        "marimo",
+        "claude-code",
+        "deck.gl",
+        "echarts"
+      ],
+      "alt": [
+        "reflex",
+        "nicegui",
+        "streamlit",
+        "gradio"
+      ]
+    },
+    {
       "id": "polars",
       "name": "Polars",
       "cat": 25,
@@ -86733,8 +87719,359 @@
         "delta-lake"
       ],
       "alt": [
-        "duckdb"
+        "duckdb",
+        "pandas"
       ]
+    },
+    {
+      "id": "pygwalker",
+      "name": "PyGWalker",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "dataviz",
+        "python",
+        "jupyter",
+        "eda"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Kanaries/pygwalker/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4bb63fa0847d0f9a068a77890cfb44434cda0102"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install pygwalker",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/Kanaries/pygwalker/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install pygwalker` y, en un notebook, ejecuta `pyg.walk(df)` con un DataFrame.",
+        "success": "Aparece una interfaz donde arrastras columnas para crear gráficos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "explorar un conjunto de datos nuevo con gráficos de arrastrar y soltar sin escribir código de visualización",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "publicar una exploración interactiva de datos dentro de una app de Streamlit",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Kanaries/pygwalker/blob/main/README.md",
+        "source_blob_sha": "4bb63fa0847d0f9a068a77890cfb44434cda0102",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos.",
+      "desc": "Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/Kanaries/pygwalker",
+      "install": "pip install pygwalker",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: explorar un conjunto de datos nuevo con gráficos de arrastrar y soltar sin escribir código de visualización; publicar una exploración interactiva de datos dentro de una app de Streamlit",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "pandas",
+        "polars",
+        "duckdb",
+        "jupyterlab",
+        "streamlit"
+      ],
+      "alt": []
+    },
+    {
+      "id": "reflex",
+      "name": "Reflex",
+      "cat": 25,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "python",
+        "web",
+        "framework",
+        "ui"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/reflex-dev/reflex/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "0922e274ca684794ac2bca6429817a51dd4c01f8"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "uv add reflex",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/reflex-dev/reflex/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea un proyecto con `uv init`, ejecuta `uv add reflex`, `uv run reflex init` y `uv run reflex run`.",
+        "success": "La app de ejemplo se abre en http://localhost:3000 y se recarga al editar el código.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "construir un panel interno o una herramienta con formularios y tablas sin escribir JavaScript",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "prototipar una app de IA con estado, como un generador de imágenes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/reflex-dev/reflex/blob/main/README.md",
+        "source_blob_sha": "0922e274ca684794ac2bca6429817a51dd4c01f8",
+        "previous_category": [
+          25,
+          "apps"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado.",
+      "desc": "Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/reflex-dev/reflex",
+      "install": "uv add reflex",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: construir un panel interno o una herramienta con formularios y tablas sin escribir JavaScript; prototipar una app de IA con estado, como un generador de imágenes",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "claude-code",
+        "pandas",
+        "coolify"
+      ],
+      "alt": [
+        "nicegui",
+        "panel",
+        "streamlit",
+        "gradio"
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Apache Spark",
+      "cat": 25,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data",
+        "bigdata",
+        "sql",
+        "streaming"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/apache/spark/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9f5b2c59d9657a8c9d56c9051a3d39ff8acf1702"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida."
+        ],
+        "steps": [
+          "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+          "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+          "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/apache/spark/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala PySpark (`pip install pyspark`) y procesa un CSV local con un DataFrame y una consulta SQL en modo local.",
+        "success": "Obtienes el resultado agregado en la consola sin necesidad de clúster.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "procesar terabytes de logs o eventos en un clúster con SQL o PySpark",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "alimentar un lakehouse con Delta Lake o Iceberg mediante trabajos batch y streaming",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/apache/spark/blob/master/README.md",
+        "source_blob_sha": "9f5b2c59d9657a8c9d56c9051a3d39ff8acf1702",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark.",
+      "desc": "Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark.",
+      "stack": "Scala, pom.xml, pyproject.toml",
+      "repo": "https://github.com/apache/spark",
+      "install": "Seguir la instalación original: https://github.com/apache/spark/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: procesar terabytes de logs o eventos en un clúster con SQL o PySpark; alimentar un lakehouse con Delta Lake o Iceberg mediante trabajos batch y streaming",
+      "avoid_if": "no quieres preparar modelos, dependencias y hardware propios",
+      "combines_with": [
+        "delta-lake",
+        "apache-iceberg",
+        "hudi",
+        "pandas",
+        "arrow",
+        "dbt"
+      ],
+      "alt": []
     },
     {
       "id": "streamlit",
@@ -86854,10 +88191,14 @@
         "dash",
         "polars",
         "duckdb",
-        "awesome-llm-apps"
+        "awesome-llm-apps",
+        "pygwalker"
       ],
       "alt": [
-        "gradio"
+        "gradio",
+        "reflex",
+        "nicegui",
+        "panel"
       ]
     },
     {
@@ -87088,9 +88429,242 @@
       "combines_with": [
         "blender",
         "three.js",
-        "filament"
+        "filament",
+        "freecad",
+        "openscad"
       ],
       "alt": []
+    },
+    {
+      "id": "babylonjs",
+      "name": "Babylon.js",
+      "cat": 26,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "javascript",
+        "3d",
+        "webgl",
+        "webxr"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/BabylonJS/Babylon.js/blob/master/readme.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "dae9a1a73cd3250f9b616b1b81af46801eebe65f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "npm install babylonjs --save",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/BabylonJS/Babylon.js/blob/master/readme.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Abre el playground oficial, carga un ejemplo y modifícalo; o instala con `npm install babylonjs --save`.",
+        "success": "La escena 3D se renderiza en el navegador con tus cambios.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "mostrar un configurador de producto 3D en una web",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "crear un juego o experiencia WebXR en el navegador",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/BabylonJS/Babylon.js/blob/master/readme.md",
+        "source_blob_sha": "dae9a1a73cd3250f9b616b1b81af46801eebe65f",
+        "previous_category": [
+          26,
+          "animacion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.",
+      "desc": "Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/BabylonJS/Babylon.js",
+      "install": "npm install babylonjs --save",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: mostrar un configurador de producto 3D en una web; crear un juego o experiencia WebXR en el navegador",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "blender",
+        "meshoptimizer",
+        "gsap"
+      ],
+      "alt": [
+        "three.js",
+        "playcanvas"
+      ]
+    },
+    {
+      "id": "bevy",
+      "name": "Bevy",
+      "cat": 26,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "rust",
+        "gamedev",
+        "ecs",
+        "3d"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/bevyengine/bevy/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f7642983953bc5028424231fb75f182637bcd4ee"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "cargo run --example breakout",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/bevyengine/bevy/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Clona el repositorio y ejecuta `cargo run --example breakout`.",
+        "success": "Se abre el juego de ejemplo Breakout en una ventana.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "programar un juego 2D o 3D en Rust con alto rendimiento",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "crear una simulación o herramienta visual que compile también a WebAssembly",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/bevyengine/bevy/blob/main/README.md",
+        "source_blob_sha": "f7642983953bc5028424231fb75f182637bcd4ee",
+        "previous_category": [
+          26,
+          "creacion-3d"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.",
+      "desc": "Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones 2D y 3D para juegos y simulaciones.",
+      "stack": "Rust, Cargo.toml",
+      "repo": "https://github.com/bevyengine/bevy",
+      "install": "cargo run --example breakout",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: programar un juego 2D o 3D en Rust con alto rendimiento; crear una simulación o herramienta visual que compile también a WebAssembly",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "blender",
+        "meshoptimizer",
+        "claude-code"
+      ],
+      "alt": [
+        "godot"
+      ]
     },
     {
       "id": "blender",
@@ -87321,6 +88895,347 @@
         "awesome-cad"
       ],
       "alt": []
+    },
+    {
+      "id": "freecad",
+      "name": "FreeCAD",
+      "cat": 26,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "cad",
+        "3d",
+        "cpp",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/FreeCAD/FreeCAD/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d39480c08d4bd6a3fbd2a86eff1a3c3eabbbe89f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/FreeCAD/FreeCAD/releases",
+        "source": "https://github.com/FreeCAD/FreeCAD/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala FreeCAD desde su web, crea un boceto en Part Design y extrúyelo.",
+        "success": "Obtienes un sólido paramétrico que cambia al editar las cotas del boceto.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "diseñar una pieza mecánica paramétrica y exportarla a STL para impresión 3D",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar planos técnicos acotados a partir de un modelo 3D",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/FreeCAD/FreeCAD/blob/main/README.md",
+        "source_blob_sha": "d39480c08d4bd6a3fbd2a86eff1a3c3eabbbe89f",
+        "previous_category": [
+          26,
+          "creacion-3d"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python.",
+      "desc": "Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python.",
+      "stack": "C++, CMakeLists.txt",
+      "repo": "https://github.com/FreeCAD/FreeCAD",
+      "install": "Seguir la instalación original: https://github.com/FreeCAD/FreeCAD/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: diseñar una pieza mecánica paramétrica y exportarla a STL para impresión 3D; generar planos técnicos acotados a partir de un modelo 3D",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "openscad",
+        "blender",
+        "awesome-cad"
+      ],
+      "alt": []
+    },
+    {
+      "id": "genesis-world",
+      "name": "Genesis World",
+      "cat": 26,
+      "role": "library",
+      "exec": "local",
+      "setup": "hard",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "simulation",
+        "robotics",
+        "physics",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Genesis-Embodied-AI/genesis-world/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "b25aabc2ee72659f5a4c27deb14a2c25950f1844"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install genesis-world",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/Genesis-Embodied-AI/genesis-world/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala PyTorch y después `pip install genesis-world`; ejecuta el ejemplo `examples/rigid/single_franka.py`.",
+        "success": "Se simula un brazo Franka en una escena con visor.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar políticas de robots con miles de entornos paralelos en GPU",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar datos sintéticos de manipulación con cuerpos rígidos y deformables",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Genesis-Embodied-AI/genesis-world/blob/main/README.md",
+        "source_blob_sha": "b25aabc2ee72659f5a4c27deb14a2c25950f1844",
+        "previous_category": [
+          26,
+          "simulacion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GP",
+      "desc": "Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/Genesis-Embodied-AI/genesis-world",
+      "install": "pip install genesis-world",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar políticas de robots con miles de entornos paralelos en GPU; generar datos sintéticos de manipulación con cuerpos rígidos y deformables",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "pytorch",
+        "mujoco",
+        "blender"
+      ],
+      "alt": []
+    },
+    {
+      "id": "godot",
+      "name": "Godot Engine",
+      "cat": 26,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "gamedev",
+        "3d",
+        "2d",
+        "cpp"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/godotengine/godot/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "aa4bc5f484dbf486a2bd7f1773fdc7ec97f210e1"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://godotengine.org",
+        "source": "https://github.com/godotengine/godot/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Descarga Godot desde su web, abre un proyecto de las demos oficiales y ejecútalo con F5.",
+        "success": "La demo se ejecuta en una ventana y puedes modificar sus escenas en el editor.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "crear un juego 2D o 3D y exportarlo a Windows, Android y web",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "construir una visualización interactiva o una simulación con editor visual",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/godotengine/godot/blob/master/README.md",
+        "source_blob_sha": "aa4bc5f484dbf486a2bd7f1773fdc7ec97f210e1",
+        "previous_category": [
+          26,
+          "creacion-3d"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.",
+      "desc": "Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas.",
+      "stack": "C++, pyproject.toml",
+      "repo": "https://github.com/godotengine/godot",
+      "install": "Seguir la instalación original: https://github.com/godotengine/godot/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: crear un juego 2D o 3D y exportarlo a Windows, Android y web; construir una visualización interactiva o una simulación con editor visual",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "blender",
+        "meshoptimizer",
+        "ffmpeg"
+      ],
+      "alt": [
+        "bevy"
+      ]
     },
     {
       "id": "gsap",
@@ -87684,6 +89599,232 @@
       ]
     },
     {
+      "id": "mujoco",
+      "name": "MuJoCo",
+      "cat": 26,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "simulation",
+        "robotics",
+        "physics",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/google-deepmind/mujoco/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "c6fb8355165ddd1477109a96d3aace4e6f9cd17b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install mujoco",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/google-deepmind/mujoco/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install mujoco`, carga un modelo MJCF de ejemplo y ábrelo con `python -m mujoco.viewer`.",
+        "success": "Ves el modelo simulado en el visor interactivo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "simular un robot o un brazo para probar controladores antes del hardware",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "entrenar políticas de aprendizaje por refuerzo en entornos físicos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/google-deepmind/mujoco/blob/main/README.md",
+        "source_blob_sha": "c6fb8355165ddd1477109a96d3aace4e6f9cd17b",
+        "previous_category": [
+          26,
+          "simulacion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo.",
+      "desc": "Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo.",
+      "stack": "C++, CMakeLists.txt",
+      "repo": "https://github.com/google-deepmind/mujoco",
+      "install": "pip install mujoco",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: simular un robot o un brazo para probar controladores antes del hardware; entrenar políticas de aprendizaje por refuerzo en entornos físicos",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "jax",
+        "warp",
+        "genesis-world"
+      ],
+      "alt": []
+    },
+    {
+      "id": "openscad",
+      "name": "OpenSCAD",
+      "cat": 26,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "cad",
+        "3d",
+        "code",
+        "app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/openscad/openscad/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "a16f83066366e7e800699abf117cb12358a59c6f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "ready_app",
+        "prerequisites": [
+          "Un sistema compatible y una copia de datos o archivos para la primera prueba."
+        ],
+        "steps": [
+          "Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.",
+          "Sigue su guía de inicio y configura únicamente la función que necesitas probar.",
+          "Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://www.openscad.org",
+        "source": "https://github.com/openscad/openscad/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala OpenSCAD, escribe `cube(10); translate([5,5,5]) sphere(6);`, renderiza con F6 y exporta a STL.",
+        "success": "Obtienes un archivo STL listo para el laminador de la impresora.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "diseñar piezas paramétricas para impresión 3D cambiando variables",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar variantes de una pieza (tamaños, agujeros) desde el mismo script",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/openscad/openscad/blob/master/README.md",
+        "source_blob_sha": "a16f83066366e7e800699abf117cb12358a59c6f",
+        "previous_category": [
+          26,
+          "creacion-3d"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas.",
+      "desc": "CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas.",
+      "stack": "C++, CMakeLists.txt",
+      "repo": "https://github.com/openscad/openscad",
+      "install": "Seguir la instalación original: https://github.com/openscad/openscad/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: diseñar piezas paramétricas para impresión 3D cambiando variables; generar variantes de una pieza (tamaños, agujeros) desde el mismo script",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "freecad",
+        "awesome-cad",
+        "claude-code"
+      ],
+      "alt": []
+    },
+    {
       "id": "ozz-animation",
       "name": "ozz-animation",
       "cat": 26,
@@ -88032,6 +90173,119 @@
       "alt": []
     },
     {
+      "id": "pixijs",
+      "name": "PixiJS",
+      "cat": 26,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "javascript",
+        "2d",
+        "webgl",
+        "animation"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/pixijs/pixijs/blob/dev/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "6d27872539a6b9530f5dcc43fc8db27ef25bb8a5"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "npm create pixi.js@latest",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/pixijs/pixijs/blob/dev/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea un proyecto con `npm create pixi.js@latest`, añade un sprite y anímalo en el ticker.",
+        "success": "El sprite se mueve en el canvas del navegador a alta tasa de fotogramas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "crear un juego 2D o una experiencia interactiva para navegador",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "dibujar miles de elementos animados en una visualización web",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/pixijs/pixijs/blob/dev/README.md",
+        "source_blob_sha": "6d27872539a6b9530f5dcc43fc8db27ef25bb8a5",
+        "previous_category": [
+          26,
+          "animacion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador.",
+      "desc": "Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/pixijs/pixijs",
+      "install": "npm create pixi.js@latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: crear un juego 2D o una experiencia interactiva para navegador; dibujar miles de elementos animados en una visualización web",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "gsap",
+        "mediabunny",
+        "planck-js"
+      ],
+      "alt": []
+    },
+    {
       "id": "planck-js",
       "name": "planck.js",
       "cat": 26,
@@ -88141,9 +90395,126 @@
       "combines_with": [
         "pixelfx",
         "threejs-game-skills",
-        "three.js"
+        "three.js",
+        "pixijs"
       ],
       "alt": []
+    },
+    {
+      "id": "playcanvas",
+      "name": "PlayCanvas Engine",
+      "cat": 26,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "javascript",
+        "3d",
+        "webgpu",
+        "gamedev"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/playcanvas/engine/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2e23aa6bdb4b5bc6821efb16d199e75dc0e29ccc"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "npm install playcanvas",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/playcanvas/engine/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea un proyecto con `npm create playcanvas@latest` o instala `npm install playcanvas` y ejecuta el ejemplo del cubo giratorio.",
+        "success": "El cubo 3D gira en un canvas del navegador.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "publicar una escena 3D o un escaneo con Gaussian splats en una web",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "crear un juego ligero que funcione en cualquier navegador y móvil",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/playcanvas/engine/blob/main/README.md",
+        "source_blob_sha": "2e23aa6bdb4b5bc6821efb16d199e75dc0e29ccc",
+        "previous_category": [
+          26,
+          "animacion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.",
+      "desc": "Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF.",
+      "stack": "JavaScript, package.json",
+      "repo": "https://github.com/playcanvas/engine",
+      "install": "npm install playcanvas",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: publicar una escena 3D o un escaneo con Gaussian splats en una web; crear un juego ligero que funcione en cualquier navegador y móvil",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "meshoptimizer",
+        "blender",
+        "gsap"
+      ],
+      "alt": [
+        "three.js",
+        "babylonjs"
+      ]
     },
     {
       "id": "react-three-fiber",
@@ -88725,7 +91096,10 @@
         "threejs-skills",
         "meshoptimizer"
       ],
-      "alt": []
+      "alt": [
+        "babylonjs",
+        "playcanvas"
+      ]
     },
     {
       "id": "warp",
@@ -88844,7 +91218,8 @@
       "combines_with": [
         "pytorch",
         "blender",
-        "cosmos"
+        "cosmos",
+        "mujoco"
       ],
       "alt": []
     },
@@ -99638,7 +102013,8 @@
       "combines_with": [
         "remotion",
         "ffmpeg",
-        "openfilm"
+        "openfilm",
+        "pixijs"
       ],
       "alt": []
     },

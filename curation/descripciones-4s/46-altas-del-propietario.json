@@ -277,6 +277,12 @@
      "id": "jupyterlab",
      "motivo": "Explorar tablas con PyIceberg, DuckDB o Spark desde notebooks. (combinación por arquitectura)",
      "orden_instalacion": "Instala JupyterLab en el mismo entorno que PyIceberg."
+    },
+    {
+     "id": "spark",
+     "motivo": "Combinación recíproca: Apache Spark lo enlaza como «Iceberg ofrece un runtime para Spark que permite crear y consultar tablas Iceberg con Spark SQL».",
+     "orden_instalacion": "Orden indicado desde Apache Spark: Añade el JAR `iceberg-spark-runtime` y configura un catálogo; después usa Spark SQL.",
+     "reciproca_de": "spark"
     }
    ],
    "notas": "Alternativas (elige una): delta-lake, hudi. Para consultas locales pequeñas suele bastar Parquet con DuckDB; Iceberg aporta valor con varios motores o escritores concurrentes.",
@@ -315,6 +321,12 @@
      "id": "jupyterlab",
      "motivo": "Explorar tablas Delta con PySpark, delta-rs o DuckDB desde notebooks. (combinación por arquitectura)",
      "orden_instalacion": "Instala JupyterLab en el entorno con PySpark o deltalake."
+    },
+    {
+     "id": "spark",
+     "motivo": "Combinación recíproca: Apache Spark lo enlaza como «Delta Lake nació para Spark: añade transacciones ACID, versiones y MERGE a tablas en almacenamiento de objetos usando Spark como motor».",
+     "orden_instalacion": "Orden indicado desde Apache Spark: Añade el paquete `delta-spark` a la sesión de Spark; después lee y escribe con `format(\"delta\")`.",
+     "reciproca_de": "spark"
     }
    ],
    "notas": "Alternativas (elige una): apache-iceberg, hudi. Delta UniForm acerca ambos formatos: Delta puede publicar metadatos Iceberg.",

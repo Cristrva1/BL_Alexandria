@@ -242,7 +242,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala con `pip install -U jax` y calcula el gradiente de una función simple con `jax.grad`.
 **Qué comprobar:** Obtienes el valor del gradiente evaluado en el punto indicado.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `keras`, `gemma`, `jupyterlab`
+**Combina con:** `keras`, `gemma`, `jupyterlab`, `mujoco`
 **Alternativas (elige una):** `pytorch`, `tensorflow`
 
 ## `keras`
@@ -549,7 +549,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala con `pip install -U scikit-learn` y entrena un clasificador sobre el conjunto iris incluido.
 **Qué comprobar:** Obtienes la precisión del modelo en validación cruzada.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `jupyterlab`, `mlflow`, `ml-for-beginners`
+**Combina con:** `jupyterlab`, `mlflow`, `ml-for-beginners`, `pandas`
 
 ## `tensorflow`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python
