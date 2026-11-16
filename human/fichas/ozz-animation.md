@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+ozz-animation, biblioteca C++ open source de animación esquelética 3D con herramientas, de @guillaumeblanc. El README indica licencia MIT (GitHub muestra NOASSERTION). Es madura (~3.1k estrellas, 0.17.0).
+
+## ¿Qué hace?
+
+Ofrece reproducción de animación de personajes en runtime (carga, muestreo, mezcla), independiente del renderer y del motor de juego, centrada en rendimiento y memoria.
+
+## ¿Cómo lo hace?
+
+Incluye herramientas para convertir desde glTF, FBX, Collada, OBJ, 3ds o DXF a estructuras optimizadas, y librerías offline. Se compila con CMake.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [filament](filament.md) | Motor de render para mostrar los personajes. (combinación por arquitectura) | Integra el muestreo con el render. |
+| [blender](blender.md) | Exportar animaciones a glTF o FBX. (combinación por arquitectura) | Convierte con las herramientas de ozz. |
+| [meshoptimizer](meshoptimizer.md) | Optimizar las mallas de los personajes. (combinación por arquitectura) | Procesa las mallas antes. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-08-01 · última versión publicada 0.17.0 (2026-08-01) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca de bajo nivel independiente del motor; no crea automáticamente un personaje ni su rig |
 | Coste | Sin pago a un modelo en la ruta básica. Biblioteca MIT sin API de IA; assets y herramientas de creación tienen licencias separadas |
 | Equipo | Preparación según la ruta elegida. Entorno C++; modelo con esqueleto; herramientas de conversión compatibles |
-
-Es una biblioteca de bajo nivel independiente del motor; no crea automáticamente un personaje ni su rig
-
-## Qué puedes hacer con él
-
-Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones.
-
-## Por qué destaca
-
-Usos propuestos: Reproducir animaciones de personajes; Combinar clips en un motor propio.
-
-## Cómo funciona
 
 Es una biblioteca de bajo nivel independiente del motor; no crea automáticamente un personaje ni su rig
 

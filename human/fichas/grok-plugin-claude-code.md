@@ -10,6 +10,30 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plugin no oficial de zachdunn (MIT) para Claude Code que delega tareas en Grok CLI de xAI. Versión v0.2.0; último cambio en junio de 2026.
+
+## ¿Qué hace?
+
+Ofrece el subagente `grok-rescue` y el comando `/grok-cc:rescue` para delegar programación, depuración o revisión en Grok como agente paralelo, y `/grok-cc:setup` para verificar la instalación. Es una reimplementación sencilla de codex-plugin-cc, pero más ligera: usa el modo headless de un disparo de Grok, sin registro de tareas, estado ni cancelación.
+
+## ¿Cómo lo hace?
+
+Un runtime Node (`grok-companion.mjs`) envuelve `grok -p --output-format json`. Se instala con `/plugin marketplace add zachdunn/grok-plugin-claude-code` y `/plugin install grok-cc@...`. Requiere acceso a Grok CLI y el binario `grok` en el PATH.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plataforma anfitriona. | Instala el plugin y ejecuta `/grok-cc:setup`. |
+| [codex-plugin-cc](codex-plugin-cc.md) | Su modelo de referencia; juntos permiten pedir segundas opiniones a dos modelos distintos. | Independientes. |
+| [Codex CLI](codex.md) | Alternativa de delegación con seguimiento de tareas (combinación por arquitectura). | A través de codex-plugin-cc. |
+
+Estado en GitHub: activo · último push 2026-06-13 · última versión publicada v0.2.0 (2026-06-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zachdunn/grok-plugin-claude-code/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README |
 | Coste | El coste depende del proveedor o la ruta. Necesitas acceso a Grok CLI además de Claude Code; confirmar las condiciones de esa cuenta en el portal del proveedor |
 | Equipo | Preparación según la ruta elegida. Claude Code;  Grok CLI instalado y autenticado;  Node.js |
-
-Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README
-
-## Qué puedes hacer con él
-
-Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar.
-
-## Por qué destaca
-
-Usos propuestos: Solicitar una segunda opinión sobre un cambio pequeño usando Grok; Delegar una tarea acotada desde una sesión de Claude Code.
-
-## Cómo funciona
 
 Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README
 

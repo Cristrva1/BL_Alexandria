@@ -10,6 +10,30 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca oficial de Google (Apache 2.0) de skills para la API de Gemini, su SDK y la interacción con los modelos. Activa, sin releases.
+
+## ¿Qué hace?
+
+Cubre el desfase de conocimiento de los modelos sobre la API de Gemini y sus buenas prácticas, por ejemplo la circulación de firmas de pensamiento o los cambios del SDK. Su skill principal, `gemini-api-dev`, sirve para construir apps con la API; según Google, eleva la generación de código correcto al 87 % con Gemini 3 Flash y al 96 % con Gemini 3.1 Pro [DATO NO VERIFICADO: evaluación propia]. La skill de Vertex AI se trasladó a google/skills.
+
+## ¿Cómo lo hace?
+
+Skills en formato Agent Skills instalables con `npx skills add google-gemini/gemini-skills` (con `--list` o `--skill`) y en otros asistentes y gestores de paquetes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Gemini CLI](gemini-cli.md) | Agente de Google que usa skills estándar (combinación por arquitectura). | Instala con npx skills eligiendo Gemini CLI. |
+| [skills](google-skills.md) | La skill de Vertex AI se movió allí. | Instala `skills/cloud/gemini-api` desde google/skills si usas Vertex. |
+| [Agent Development Kit (ADK)](adk-python.md) | Construir agentes sobre la API de Gemini con el ADK (combinación por arquitectura). | Independientes. |
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-gemini/gemini-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada |
 | Coste | El coste depende del proveedor o la ruta. Las instrucciones usan el agente; las peticiones reales a Gemini o servicios multimedia tienen sus propios límites y tarifas |
 | Equipo | Preparación según la ruta elegida. Agente compatible;  cuenta Gemini solo si el proyecto generado llama su API |
-
-Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada
-
-## Qué puedes hacer con él
-
-Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.
-
-## Por qué destaca
-
-Usos propuestos: Revisar cómo integrar el SDK de Gemini en una aplicación; Preparar una llamada multimodal con datos de prueba.
-
-## Cómo funciona
 
 Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada
 

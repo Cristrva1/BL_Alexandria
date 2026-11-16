@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+MediaPipe, framework de Google AI Edge para ML en dispositivo. Licencia Apache-2.0. Es maduro (~38k estrellas, v1.2.3).
+
+## ¿Qué hace?
+
+Ofrece MediaPipe Tasks (detección y landmarks de cara, manos y pose, segmentación, clasificación, LLM Inference y más) y Model Maker para personalizar modelos. Funciona en Android, iOS, web, escritorio, edge e IoT.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install mediapipe` o con los SDK de Android, iOS y web. La documentación principal está en developers.google.com/edge/mediapipe; las antiguas «Legacy Solutions» se sustituyeron por Tasks.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenCV](opencv.md) | Captura de vídeo en escritorio. | Lee frames con OpenCV y pásalos a Tasks. |
+| [tfjs-models](tfjs-models.md) | Modelos de pose en navegador con backend MediaPipe. | Elige el runtime `mediapipe` en pose-detection. |
+| [three.js](three-js.md) | Avatares controlados por landmarks. (combinación por arquitectura) | Mapea landmarks a un esqueleto 3D. |
+| [EasyMocap](easymocap.md) | Combinación recíproca: EasyMocap lo enlaza como «Detector de keypoints soportado». | Orden indicado desde EasyMocap: Usa el detector MediaPipe. |
+| [tensorflow](tensorflow.md) | Combinación recíproca: tensorflow lo enlaza como «Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)». | Orden indicado desde tensorflow: Usa modelos TF Lite en MediaPipe. |
+| [DeepFace](deepface.md) | Combinación recíproca: DeepFace lo enlaza como «DeepFace puede usar MediaPipe como detector facial». | Orden indicado desde DeepFace: Instala `mediapipe`; después usa `detector_backend="mediapipe"`. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.2.3 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-ai-edge/mediapipe/blob/master/README.md) · [2](https://developers.google.com/edge/mediapipe/solutions/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelos locales documentados. MediaPipe Solutions y compilar el Framework son rutas diferentes; elige la tarea antes de preparar todo el entorno |
 | Coste | Sin pago a un modelo en la ruta básica. La ejecución en dispositivo no exige API de modelo alojado; distribución, modelos y hardware tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Plataforma y SDK elegidos; modelo de tarea; imagen o clip de prueba |
-
-MediaPipe Solutions y compilar el Framework son rutas diferentes; elige la tarea antes de preparar todo el entorno
-
-## Qué puedes hacer con él
-
-Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.
-
-## Por qué destaca
-
-Usos propuestos: Crear una interacción con manos; Prototipar visión en dispositivo.
-
-## Cómo funciona
 
 MediaPipe Solutions y compilar el Framework son rutas diferentes; elige la tarea antes de preparar todo el entorno
 

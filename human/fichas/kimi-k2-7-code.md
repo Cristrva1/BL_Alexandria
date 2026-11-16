@@ -10,6 +10,30 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Kimi K2.7 Code, modelo de pesos abiertos de Moonshot AI orientado a programación agéntica, construido sobre Kimi K2.6. Se publica en Hugging Face (moonshotai/Kimi-K2.7-Code), no en GitHub. Licencia «Modified MIT»: los productos con más de 100 M de usuarios activos mensuales o más de 20 M USD de ingresos mensuales deben mostrar «Kimi K2.7 Code» en su interfaz.
+
+## ¿Qué hace?
+
+Mejora la ejecución de tareas largas de ingeniería de software y el uso de herramientas. En la tabla de su model card supera a K2.6, pero queda por debajo de GPT-5.5 y Claude Opus 4.8 en los benchmarks de código mostrados, varios de ellos internos (Kimi Code Bench v2). Es multimodal (imagen y texto) con el codificador MoonViT.
+
+## ¿Cómo lo hace?
+
+Es un MoE de 1T parámetros (32B activos, 384 expertos, contexto de 256K, MLA) con cuantización INT4 nativa. Se usa por la API de platform.moonshot.ai (compatible con OpenAI y Anthropic) o se despliega con vLLM, SGLang o KTransformers, igual que K2.5/K2.6; requiere `transformers>=4.57.1,<5` y fuerza el modo thinking.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [vLLM](vllm.md) | Despliegue documentado. | Sirve el modelo con vLLM en multi-GPU. |
+| [SGLang](sglang.md) | Despliegue documentado. | Sirve el modelo con SGLang. |
+| [OpenCode](opencode.md) | Usarlo como modelo en un agente de código vía API compatible. (combinación por arquitectura) | Configura el endpoint de Moonshot en OpenCode. |
+
+**Notas:** Sin alternativas declaradas. Sin repo de GitHub: la fuente canónica es la model card de Hugging Face.
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://huggingface.co/moonshotai/Kimi-K2.7-Code) · [2](https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | Modelos locales documentados. Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes |
 | Coste | El coste depende del proveedor o la ruta. API por consumo o infraestructura propia considerable; pesos y código usan Modified MIT con condiciones propias |
 | Equipo | Preparación según la ruta elegida. Servicio Moonshot o infraestructura de inferencia adecuada; licencia Modified MIT; proyecto de prueba |
-
-Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes
-
-## Qué puedes hacer con él
-
-Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face.
-
-## Por qué destaca
-
-Usos propuestos: Comparar generación de código; Estudiar uso de herramientas con un modelo abierto.
-
-## Cómo funciona
 
 Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes
 

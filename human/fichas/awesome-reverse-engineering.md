@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada de herramientas y recursos de ingeniería inversa para binarios, aplicaciones, firmware, formatos y protocolos, de @morluto (los creadores de REA). Licencia CC0-1.0. Es reciente y activa (~2k estrellas) y destaca REA en primer plano.
+
+## ¿Qué hace?
+
+Organiza herramientas por tarea: aprendizaje, identificación de ejecutables, desensamblado y decompilación, depuración, análisis dinámico, .NET, Java/Android, memoria, firmware, protocolos y más. Cada entrada describe su propósito, marca las comerciales y advierte de proyectos archivados (p. ej. de4dot). Se presenta como una selección inicial abierta a correcciones.
+
+## ¿Cómo lo hace?
+
+Es un README con enlaces; no requiere instalación. Las herramientas listadas tienen sus propias licencias y requisitos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [rea](rea.md) | Herramienta destacada por los mismos autores. | Lee la sección de REA y su documentación antes de instalarlo. |
+| [ghidra](ghidra.md) | Decompilador de referencia de la lista. (combinación por arquitectura) | Empieza por la sección de desensamblado. |
+| [frida](frida.md) | Herramienta de análisis dinámico listada, con r2frida. (combinación por arquitectura) | Consulta la sección de instrumentación. |
+
+**Notas:** Sin alternativas declaradas. Ten en cuenta que promociona REA, de los mismos autores.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada CC0-1.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces |
 | Coste | Sin pago a un modelo en la ruta básica. Leer la lista no requiere API; herramientas y hardware enlazados pueden tener costes |
 | Equipo | Preparación según la ruta elegida. Navegador; plataforma y formato de interés |
-
-La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces
-
-## Qué puedes hacer con él
-
-Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos.
-
-## Por qué destaca
-
-Usos propuestos: Buscar un analizador de ELF; Encontrar material introductorio de ensamblador.
-
-## Cómo funciona
 
 La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces
 

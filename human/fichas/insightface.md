@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+InsightFace, proyecto de análisis facial 2D y 3D mantenido por Jia Guo y Jiankang Deng. El código es MIT, pero los datos de entrenamiento y los modelos entrenados con ellos son solo para investigación no comercial; GitHub no detecta licencia. Tiene ~30k estrellas y es una referencia histórica del área.
+
+## ¿Qué hace?
+
+Ofrece detección (SCRFD/RetinaFace), reconocimiento (ArcFace), alineación, atributos y reconstrucción 3D, con un model zoo. Sus modelos (por ejemplo, inswapper) son la base de muchas herramientas de face swap.
+
+## ¿Cómo lo hace?
+
+Se usa mediante el paquete Python `insightface` (que descarga los modelos automáticamente) con ONNX Runtime. El código de entrenamiento funciona con PyTorch 1.6+ y/o MXNet.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FaceFusion](facefusion.md) | Usa modelos de análisis facial del ecosistema. (combinación por arquitectura) | Instala FaceFusion con sus modelos. |
+| [Deep-Live-Cam](deep-live-cam.md) | Usa su modelo inswapper. | Viene como dependencia. |
+| [LivePortrait](liveportrait.md) | Detección y recorte facial. (combinación por arquitectura) | Viene como dependencia en la ruta por defecto. |
+| [DeepFace](deepface.md) | Combinación recíproca: DeepFace lo enlaza como «El modelo de reconocimiento Buffalo_L que envuelve DeepFace procede de InsightFace». | Orden indicado desde DeepFace: Instala DeepFace; después usa `model_name="Buffalo_L"` (revisa la licencia de los pesos de InsightFace). |
+
+**Notas:** Sin alternativas declaradas. Los pesos no permiten uso comercial.
+
+Estado en GitHub: activo · último push 2026-10-19 · última versión publicada model-zoo (2026-09-03) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/deepinsight/insightface/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes |
 | Coste | El coste depende del proveedor o la ruta. Código MIT, pero modelos preentrenados proporcionados para investigación no comercial; uso comercial requiere revisar la licencia correspondiente |
 | Equipo | Preparación según la ruta elegida. Python; runtime ONNX; modelos con licencia adecuada; datos autorizados |
-
-La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes
-
-## Qué puedes hacer con él
-
-Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar alineación facial; Evaluar detección en un dataset de prueba.
-
-## Cómo funciona
 
 La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes
 
@@ -87,18 +102,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; runtime ONNX; modelos con licencia adecuada; datos autorizados
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [FaceFusion](facefusion.md) | 30.7k | Plataforma para intercambio y mejora de rostros en imágenes y video. |
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [face_recognition](face-recognition.md) | 56.9k | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. |
 
 ## Enlaces
 

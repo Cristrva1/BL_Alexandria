@@ -65,9 +65,8 @@ def test_meaningful_classification_and_identity_corrections():
     assert cat.get('llmfit')['role']=='app'
     assert 'hardware' in cat.get('llmfit')['desc'].lower() or 'equipo' in cat.get('llmfit')['desc'].lower()
     assert cat.get('botpress')['role']=='library' and not cat.get('botpress')['alternatives']
-    assert cat.get('muse-spark')['status']=='unverified'
-    assert cat.get('muse-spark')['access']['api']=='unconfirmed'
-    assert not cat.get('muse-spark')['getting_started']['command']
+    # muse-spark se retiró por señales de suplantación/malware (data/retired.json).
+    assert cat.get('muse-spark') is None
 
 
 def test_references_and_unknown_costs_do_not_become_supported_plan_routes():
@@ -87,9 +86,9 @@ def test_antigravity_is_available_in_exports_without_promoting_sdk_mentions():
     catalog=build_catalog(ROOT)
     assert 'antigravity' in catalog['labels']['route']
     repos={r['id']:r for r in catalog['repos']}
-    assert 'antigravity' in repos['camofox-browser']['routes']
+    assert 'antigravity' in repos['browser-harness']['routes']
     assert 'antigravity' not in repos['openai-python']['routes']
     topics={t['id']:t for a in catalog['discovery']['areas'] for t in a['topics']}
-    assert 'camofox-browser' in topics['antigravity-mcp']['repo_ids']
+    assert 'browser-harness' in topics['antigravity-mcp']['repo_ids']
     assert 'fluxer' not in topics['negocio-whatsapp']['repo_ids']
     assert 'fluxer' in topics['negocio-comunidades']['repo_ids']

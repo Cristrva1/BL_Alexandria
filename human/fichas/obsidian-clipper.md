@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Obsidian Web Clipper, la extensión oficial de navegador de Obsidian para capturar y subrayar la web. Código MIT; las marcas y recursos de marketing quedan excluidos. Es activa (~6k estrellas, 1.7.1).
+
+## ¿Qué hace?
+
+Guarda páginas web como archivos Markdown duraderos en tu vault, legibles sin conexión. Permite subrayar, usar plantillas con variables y lógica (if/for) y, con el Interpreter, extraer o resumir datos con un modelo de lenguaje que configures. Funciona en Chrome y derivados, Firefox, Edge y Safari (macOS, iOS, iPadOS).
+
+## ¿Cómo lo hace?
+
+Se instala desde la tienda de extensiones de cada navegador. Está escrito en TypeScript y usa Defuddle para extraer el contenido y convertirlo a Markdown. La documentación oficial está en la ayuda de Obsidian.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [defuddle](defuddle.md) | Motor de extracción de contenido y conversión a Markdown que usa el Clipper, según su README. | Viene incluido; úsalo aparte solo si quieres la misma extracción en scripts. |
+| [claude-obsidian](claude-obsidian.md) | Capturar fuentes en la carpeta `inbox/` para que el agente las convierta en wiki. (combinación por arquitectura) | Configura una plantilla del Clipper que guarde en `inbox/`. |
+| [kepano-obsidian](kepano-obsidian.md) | Guardar los recortes dentro de una estructura de vault ya pensada. (combinación por arquitectura) | Apunta la carpeta de destino del Clipper al vault de plantilla. |
+| [obsidian-help](obsidian-help.md) | Combinación recíproca: obsidian-help lo enlaza como «La documentación del Web Clipper vive en la ayuda oficial». | Orden indicado desde obsidian-help: Lee la sección del Web Clipper antes de crear plantillas. |
+| [obsidian-minimal](obsidian-minimal.md) | Combinación recíproca: obsidian-minimal lo enlaza como «Lectura cómoda de los artículos capturados. (combinación por arquitectura)». | Orden indicado desde obsidian-minimal: Captura con el Web Clipper y lee las notas con Minimal. |
+
+**Notas:** Sin alternativas declaradas. El Interpreter envía el contenido de la página al proveedor de modelos que configures.
+
+Estado en GitHub: activo · último push 2026-09-22 · última versión publicada 1.7.1 (2026-07-22) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/obsidianmd/obsidian-clipper/blob/main/README.md) · [2](https://help.obsidian.md/web-clipper) · [3](https://help.obsidian.md/web-clipper/interpreter)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Guardar notas localmente no hace local una petición Interpreter a un proveedor remoto; Ollama necesita permisos de origen para la extensión |
 | Coste | El coste depende del proveedor o la ruta. El recorte normal no usa LLM; Interpreter puede llamar API o usar Ollama local; sus modelos mantienen costes y recursos propios |
 | Equipo | Preparación según la ruta elegida. Extensión oficial del navegador; Obsidian; modelo solo para Interpreter |
-
-Guardar notas localmente no hace local una petición Interpreter a un proveedor remoto; Ollama necesita permisos de origen para la extensión
-
-## Qué puedes hacer con él
-
-Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian.
-
-## Por qué destaca
-
-Usos propuestos: Capturar lecturas con una plantilla; Extraer un resumen opcional con Interpreter.
-
-## Cómo funciona
 
 Guardar notas localmente no hace local una petición Interpreter a un proveedor remoto; Ollama necesita permisos de origen para la extensión
 

@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Paquete de nueve skills (MIT) de Majid Manzarpour para Codex y Claude Code, centrado en crear juegos de navegador con Three.js. Sin releases; último cambio en septiembre de 2026.
+
+## ¿Qué hace?
+
+Un skill director (`threejs-game-director`) mantiene el alcance y la dirección artística y deriva la jugabilidad, los recursos y el pulido a skills especialistas, delegando trabajo en paralelo cuando el agente lo permite. Incluye demos jugables publicadas.
+
+## ¿Cómo lo hace?
+
+Incluye `SKILL.md`, referencias, scripts de ayuda y un scaffold Vite + TypeScript + Three.js. Se instala con `npx skills add majidmanzarpour/threejs-game-skills --skill '*' -a codex` (o `-a claude-code`). Funciona sin claves; opcionalmente usa Tripo (3D), la API de imágenes de Gemini y ElevenLabs (audio) mediante variables de entorno.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Motor del scaffold incluido. | El scaffold instala las dependencias del juego. |
+| [Codex CLI](codex.md) | Agente objetivo. | Instala con `-a codex -g`. |
+| [Claude Code](claude-code.md) | Agente objetivo. | Instala con `-a claude-code -g`. |
+| [pixelfx](pixelfx.md) | Combinación recíproca: pixelfx lo enlaza como «Efectos para juegos de navegador. (combinación por arquitectura)». | Orden indicado desde pixelfx: Integra los sprite sheets en el juego. |
+| [planck.js](planck-js.md) | Combinación recíproca: planck.js lo enlaza como «Juegos de navegador asistidos por agente. (combinación por arquitectura)». | Orden indicado desde planck.js: Usa Planck para la física 2D. |
+| [react-three-rapier](react-three-rapier.md) | Combinación recíproca: react-three-rapier lo enlaza como «Juegos 3D de navegador. (combinación por arquitectura)». | Orden indicado desde react-three-rapier: Usa Rapier para la física. |
+
+**Notas:** Las claves opcionales nunca deben ir en el código del navegador (lo advierte el README).
+
+Estado en GitHub: activo · último push 2026-09-28 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/majidmanzarpour/threejs-game-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. El pack sirve a Codex y Claude Code; los recursos locales o procedurales son alternativas explícitas y no prueban que el modelo del agente sea local |
 | Coste | El coste depende del proveedor o la ruta. El núcleo funciona sin API de assets de pago; usa el agente y generación externa opcional con costes propios |
 | Equipo | Preparación según la ruta elegida. Codex o Claude Code; Node; navegador; brief de juego pequeño |
-
-El pack sirve a Codex y Claude Code; los recursos locales o procedurales son alternativas explícitas y no prueban que el modelo del agente sea local
-
-## Qué puedes hacer con él
-
-Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar un juego de navegador; Añadir QA a una escena Three.js.
-
-## Cómo funciona
 
 El pack sirve a Codex y Claude Code; los recursos locales o procedurales son alternativas explícitas y no prueban que el modelo del agente sea local
 

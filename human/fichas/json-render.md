@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de UI generativa (Apache-2.0) de Vercel Labs: la IA genera interfaces desde prompts, restringidas a un catálogo de componentes definido por ti. Es muy activo (v0.23.1, aún 0.x).
+
+## ¿Qué hace?
+
+Defines un catálogo de componentes y acciones con esquemas; el modelo genera un JSON (o YAML) que cumple ese esquema y se renderiza de forma progresiva mientras llega. Sus puntos fuertes son las barreras de seguridad (solo componentes del catálogo) y la previsibilidad. Desde el mismo catálogo renderiza en React, Vue, Svelte, Solid y React Native, y también vídeos con Remotion, PDFs y emails. Incluye 36 componentes shadcn/ui listos, devtools e integración con MCP Apps para Claude, ChatGPT, Cursor y VS Code.
+
+## ¿Cómo lo hace?
+
+Paquetes npm por destino (`@json-render/core` más `@json-render/react`, `/shadcn`, `/react-native`, `/remotion`, `/react-pdf`, `/react-email`, `/mcp`, `/yaml`…). Funciona con cualquier modelo que produzca salida estructurada; el formato YAML incluye una transformación para el AI SDK.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | 36 componentes shadcn/ui preconstruidos (`@json-render/shadcn`). | Instala `@json-render/shadcn` junto al núcleo. |
+| [remotion](remotion.md) | Renderizar vídeos desde la misma especificación (`@json-render/remotion`). | Instala Remotion y el paquete de json-render correspondiente. |
+| [AI SDK (Vercel)](vercel-ai.md) | Generar y transmitir la especificación con el AI SDK (transformación documentada en el paquete YAML). | Usa el AI SDK para la llamada al modelo y json-render para renderizar. |
+
+**Notas:** Sin alternativas declaradas; enfoques comparables: openui, copilotkit (A2UI).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.23.1 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel-labs/json-render/blob/main/README.md) · [2](https://json-render.dev)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La integración MCP Apps necesita soporte de UI en el cliente; no equivale a soporte universal de todos los agentes MCP |
 | Coste | El coste depende del proveedor o la ruta. Renderizar JSON no exige modelo; generar el JSON con IA sí usa el proveedor elegido; otros renderers añaden dependencias |
 | Equipo | Preparación según la ruta elegida. Node; renderer del framework; catálogo y esquema; modelo solo para generación |
-
-La integración MCP Apps necesita soporte de UI en el cliente; no equivale a soporte universal de todos los agentes MCP
-
-## Qué puedes hacer con él
-
-Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador.
-
-## Por qué destaca
-
-Usos propuestos: Crear interfaces dinámicas desde datos; Acotar la UI que puede proponer un modelo.
-
-## Cómo funciona
 
 La integración MCP Apps necesita soporte de UI en el cliente; no equivale a soporte universal de todos los agentes MCP
 

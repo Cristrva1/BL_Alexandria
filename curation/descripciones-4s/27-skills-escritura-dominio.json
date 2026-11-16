@@ -29,7 +29,7 @@
      "orden_instalacion": "Humaniza primero; programa después."
     }
    ],
-   "notas": "Alternativa (elige una): stop-slop.",
+   "notas": "Alternativas (elige una): no-ai-slop, stop-slop.",
    "fuentes": [
     "https://github.com/blader/humanizer/blob/main/README.md"
    ],
@@ -64,7 +64,7 @@
      "orden_instalacion": "Igual que arriba."
     }
    ],
-   "notas": "Alternativa (elige una): humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
+   "notas": "Alternativas (elige una): no-ai-slop, humanizer. Sus reglas son estrictas (por ejemplo, elimina todos los adverbios) y pueden aplanar el estilo.",
    "fuentes": [
     "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
    ],
@@ -100,6 +100,18 @@
      "id": "open-seo",
      "motivo": "Datos SEO vía MCP para las skills de SEO (combinación por arquitectura).",
      "orden_instalacion": "Conecta el MCP de OpenSEO antes de usar las skills de SEO."
+    },
+    {
+     "id": "humanizer",
+     "motivo": "Combinación recíproca: Humanizer lo enlaza como «Pulir los textos de marketing que generan otras skills (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Humanizer: Genera con marketingskills y pasa el resultado por `/humanizer`.",
+     "reciproca_de": "humanizer"
+    },
+    {
+     "id": "linkedin-agent-skill",
+     "motivo": "Combinación recíproca: linkedin-agent-skill lo enlaza como «Estrategia y mensajes de marketing como base de los textos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde linkedin-agent-skill: Independientes.",
+     "reciproca_de": "linkedin-agent-skill"
     }
    ],
    "notas": "Algunas herramientas recomendadas son socios que financian el proyecto; lo declara en su registro.",
@@ -171,7 +183,7 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "notas": "Revisa el script antes de ejecutar `curl | bash`. Se solapa en parte con claude-seo.",
+   "notas": "Revisa el script antes de ejecutar `curl | bash`. Alternativa (elige una): claude-seo.",
    "fuentes": [
     "https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md"
    ],
@@ -276,6 +288,12 @@
      "id": "postiz-app",
      "motivo": "Convertir los hallazgos en publicaciones programadas (combinación por arquitectura).",
      "orden_instalacion": "Investiga primero; programa después."
+    },
+    {
+     "id": "instagram-agent-skill",
+     "motivo": "Combinación recíproca: instagram-agent-skill lo enlaza como «Datos de competidores y tendencias para alimentar los guiones (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde instagram-agent-skill: Requiere clave de ScrapeCreators.",
+     "reciproca_de": "instagram-agent-skill"
     }
    ],
    "notas": "Alternativa (elige una): last30days-skill. Cada consulta consume créditos de ScrapeCreators.",
@@ -312,7 +330,7 @@
      "orden_instalacion": "Conecta el MCP de OpenSEO al mismo agente."
     }
    ],
-   "notas": "Se solapa con geo-seo-claude; elige uno para auditorías.",
+   "notas": "Alternativa (elige una): geo-seo-claude.",
    "fuentes": [
     "https://github.com/AgriciDaniel/claude-seo/blob/main/README.md"
    ],
@@ -483,7 +501,7 @@
      "orden_instalacion": "Genera primero y revisa después."
     }
    ],
-   "notas": "Se solapa con humanizer y stop-slop: usa uno como revisor principal.",
+   "notas": "Alternativas (elige una): humanizer, stop-slop.",
    "fuentes": [
     "https://github.com/petergyang/no-ai-slop/blob/main/README.md"
    ],

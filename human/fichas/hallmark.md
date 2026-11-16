@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de diseño (MIT) de Nutlope, publicada como «hecha por Together AI», para Claude Code, Codex, Cursor y OpenCode. Activa, sin releases.
+
+## ¿Qué hace?
+
+Busca que las páginas no parezcan generadas por IA: elige tres temas de un catálogo de cincuenta «materiales», construye la página en torno a la acción del visitante y la revisa en un navegador real. Sus controles van por niveles: el «suelo» nunca se omite (contraste, foco, movimiento reducido, datos inventados, diseño móvil roto) y los «reflejos» son los defaults del modelo, que solo pasan con justificación. También rediseña y audita por nombre.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add nutlope/hallmark -g` (opción `--agent` para un solo agente) o como plugin de Claude Code (`/plugin marketplace add nutlope/hallmark`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado; plugin disponible. | Instala globalmente. |
+| [Codex CLI](codex.md) | Agente soportado. | `--agent codex`. |
+| [OpenCode](opencode.md) | Agente soportado. | `--agent opencode`. |
+
+**Notas:** Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, impeccable. El propio README cita a impeccable como referencia.
+
+Estado en GitHub: activo · último push 2026-11-11 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Nutlope/hallmark/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta Claude Code y Codex; no contiene todos los archivos de imagen y descargar una fotografía exige respetar su licencia individual |
 | Coste | Consumo del agente que ya utilizas. Usa el plan del agente; las fotos conservan licencias CC0, dominio público, CC BY o CC BY-SA |
 | Equipo | Preparación según la ruta elegida. Agente compatible; brief de sitio; acceso a recursos si descargas fotos |
-
-Documenta Claude Code y Codex; no contiene todos los archivos de imagen y descargar una fotografía exige respetar su licencia individual
-
-## Qué puedes hacer con él
-
-Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una página de empresa; Revisar una landing genérica.
-
-## Cómo funciona
 
 Documenta Claude Code y Codex; no contiene todos los archivos de imagen y descargar una fotografía exige respetar su licencia individual
 
@@ -93,6 +107,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; brief de sitio; acceso a recursos si descargas fotos
 - **Etiquetas:** `skills` `skill` `css`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
+| [taste-skill](taste-skill.md) | 116k | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. |
+| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
 
 ## Enlaces
 

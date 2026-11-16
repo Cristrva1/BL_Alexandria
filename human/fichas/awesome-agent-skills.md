@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección MIT de VoltAgent con skills de agentes oficiales de equipos de desarrollo y de la comunidad, seleccionadas a mano. Muy activa; el README lleva patrocinadores.
+
+## ¿Qué hace?
+
+Recopila skills reales de equipos conocidos (por ejemplo Google Cloud, Cypress o las del SDK de Azure) y de la comunidad, con rutas de instalación para Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, OpenCode, Windsurf y otros.
+
+## ¿Cómo lo hace?
+
+Lista en Markdown con enlaces a cada `SKILL.md` y una tabla de rutas por agente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible documentado. | Copia cada skill a la ruta que indica la tabla. |
+| [Codex CLI](codex.md) | Agente compatible documentado. | Igual que arriba. |
+| [Gemini CLI](gemini-cli.md) | Agente compatible documentado. | Igual que arriba. |
+| [SkillSpector](skillspector.md) | Auditar skills de terceros (combinación por arquitectura). | Antes de instalarlas. |
+| [awesome-agents](awesome-agents.md) | Combinación recíproca: awesome-agents lo enlaza como «Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura)». | Orden indicado desde awesome-agents: No aplica. |
+
+**Notas:** Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. El catálogo declara varios clientes, pero la compatibilidad y licencia se revisan por skill, no para todo el directorio en bloque |
 | Coste | El coste depende del proveedor o la ruta. Leer la lista no necesita API; cada skill y sus servicios pueden consumir agente, infraestructura o APIs |
 | Equipo | Preparación según la ruta elegida. Navegador;  identificar el cliente donde usarás el recurso elegido |
-
-El catálogo declara varios clientes, pero la compatibilidad y licencia se revisan por skill, no para todo el directorio en bloque
-
-## Qué puedes hacer con él
-
-Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor.
-
-## Cómo funciona
 
 El catálogo declara varios clientes, pero la compatibilidad y licencia se revisan por skill, no para todo el directorio en bloque
 
@@ -84,14 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador;  identificar el cliente donde usarás el recurso elegido
 - **Etiquetas:** `skills` `coding-agent` `agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [SkillSpector](skillspector.md) | 26.1k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
 ## Alternativas (elige una)
 

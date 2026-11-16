@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Matomo (antes Piwik), plataforma de analítica web libre y autoalojable. Licencia GPL-3.0 o posterior. Es muy madura (~22k estrellas, 5.14.2) y el README cita más de 1,4 millones de sitios.
+
+## ¿Qué hace?
+
+Ofrece analítica web completa con control total de los datos: visitas, objetivos, ecommerce, segmentos, informes en tiempo real y API de informes. Se amplía con un marketplace de plugins, algunos de pago. Tiene servicio en la nube de pago.
+
+## ¿Cómo lo hace?
+
+Es una aplicación PHP que requiere PHP 8.1+ y MySQL 8.0+ o MariaDB 10.6+. Se instala en un servidor web en unos cinco minutos y genera un código JavaScript para los sitios.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [metabase](metabase.md) | SQL sobre la base de Matomo para informes de negocio. (combinación por arquitectura) | Conecta Metabase a MySQL en solo lectura. |
+| [Grafana](grafana.md) | Paneles con la fuente MySQL o la API de Matomo. (combinación por arquitectura) | Configura la fuente de datos en Grafana. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos. | Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces. |
+
+**Notas:** Alternativas (elige una): umami, plausible.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 5.14.2 (2026-10-22) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/matomo-org/matomo/blob/6.x-dev/README.md) · [2](https://developer.matomo.org/api-reference/reporting-api) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/matomo)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Ajusta seguimiento y privacidad a tu implementación; instalar Matomo no configura automáticamente todas las políticas del sitio |
 | Coste | El coste depende del proveedor o la ruta. El núcleo no requiere IA; Cloud, infraestructura y plugins premium tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Servidor PHP y MySQL compatibles; web de prueba; configuración de privacidad |
-
-Ajusta seguimiento y privacidad a tu implementación; instalar Matomo no configura automáticamente todas las políticas del sitio
-
-## Qué puedes hacer con él
-
-Alternativa open source a Google Analytics con control total de los datos.
-
-## Por qué destaca
-
-Usos propuestos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web.
-
-## Cómo funciona
 
 Ajusta seguimiento y privacidad a tu implementación; instalar Matomo no configura automáticamente todas las políticas del sitio
 

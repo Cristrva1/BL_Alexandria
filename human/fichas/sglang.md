@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+SGLang, framework de inferencia para modelos de lenguaje, visión-lenguaje y difusión, de la comunidad sgl-project (LMSYS). Licencia Apache-2.0. Es muy activo (~39k estrellas, v0.5.23).
+
+## ¿Qué hace?
+
+Sirve modelos optimizados para cargas agénticas, servicio a gran escala y rollouts de aprendizaje por refuerzo. Soporta un abanico amplio de hardware: GPU NVIDIA y AMD, TPU de Google, Intel, NPU, CPU y Apple Silicon. Incluye SGLang Diffusion para modelos de imagen y vídeo y expone APIs compatibles con OpenAI.
+
+## ¿Cómo lo hace?
+
+Se usa con la imagen Docker `lmsysorg/sglang` o con `uv pip install --prerelease=allow sglang`, y se lanza con los comandos del Cookbook según modelo y hardware. Está escrito en Python con kernels propios. Requiere aceleradores compatibles para rendimiento real.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Usar SGLang a través del proveedor compatible con OpenAI de LiteLLM. (combinación por arquitectura) | Lanza SGLang y regístralo como endpoint OpenAI en LiteLLM. |
+| [Open WebUI](open-webui.md) | Interfaz de chat sobre el endpoint OpenAI de SGLang. (combinación por arquitectura) | Configura la conexión OpenAI de Open WebUI con la URL de SGLang. |
+| [Unsloth](unsloth.md) | Servir con SGLang modelos afinados con Unsloth. (combinación por arquitectura) | Afina y exporta con Unsloth y sirve los pesos con SGLang. |
+| [DeepSeek-V3](deepseek-v3.md) | Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado en BF16 y FP8». | Orden indicado desde DeepSeek-V3: Sirve el modelo con SGLang. |
+| [Kimi K2.7 Code](kimi-k2-7-code.md) | Combinación recíproca: Kimi K2.7 Code lo enlaza como «Despliegue documentado». | Orden indicado desde Kimi K2.7 Code: Sirve el modelo con SGLang. |
+| [LLaMA-Factory](llama-factory.md) | Combinación recíproca: LLaMA-Factory lo enlaza como «Worker de inferencia alternativo». | Orden indicado desde LLaMA-Factory: Configura el backend SGLang. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[GPUStack](gpustack.md) · [LM Evaluation Harness](lm-eval-harness.md) · [Unlimited-OCR](unlimited-ocr.md) · [verl](verl.md)
+
+**Notas:** Alternativas (elige una): vllm.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.5.23 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sgl-project/sglang/blob/main/README.md) · [2](https://docs.sglang.io/docs/basic_usage/openai_api)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | Modelos locales documentados. El comando del README admite prereleases; selecciona una versión apropiada según la documentación de tu hardware; patrocinio a contribuidores no es integración con sus agentes |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de modelo alojado en la ruta propia; cómputo y pesos tienen sus costes y licencias |
 | Equipo | Preparación según la ruta elegida. uv; hardware y drivers compatibles; modelo con memoria suficiente |
-
-El comando del README admite prereleases; selecciona una versión apropiada según la documentación de tu hardware; patrocinio a contribuidores no es integración con sus agentes
-
-## Qué puedes hacer con él
-
-Framework de servicio de alto rendimiento para LLM y modelos multimodales.
-
-## Por qué destaca
-
-Usos propuestos: Servir un modelo para una aplicación; Estudiar inferencia multimodal.
-
-## Cómo funciona
 
 El comando del README admite prereleases; selecciona una versión apropiada según la documentación de tu hardware; patrocinio a contribuidores no es integración con sus agentes
 
@@ -93,12 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv; hardware y drivers compatibles; modelo con memoria suficiente
 - **Etiquetas:** `inference` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Alternativas (elige una)
 

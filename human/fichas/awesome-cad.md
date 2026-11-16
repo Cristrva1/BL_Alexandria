@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Awesome CAD, lista curada de software, librerías y herramientas CAD open source, de mlightcad. Licencia MIT. Es reciente (enero de 2026) y de nicho (~240 estrellas).
+
+## ¿Qué hace?
+
+Organiza por categorías proyectos de CAD prácticos y reutilizables: modeladores, kernels geométricos, parsers DXF/DWG, CAD en navegador, CAD programable y herramientas con IA.
+
+## ¿Cómo lo hace?
+
+Es un README en Markdown y no requiere instalación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [blender](blender.md) | Modelado complementario a CAD. (combinación por arquitectura) | Consulta la lista para el flujo CAD. |
+| [three.js](three-js.md) | Visores CAD web suelen apoyarse en three.js. (combinación por arquitectura) | Elige un visor de la lista. |
+| [filament](filament.md) | Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura) | Exporta a glTF y visualiza con Filament. |
+| [FreeCAD](freecad.md) | Combinación recíproca: FreeCAD lo enlaza como «El directorio awesome-cad incluye FreeCAD entre sus programas CAD de referencia». | Orden indicado desde FreeCAD: Consulta awesome-cad para elegir herramientas complementarias; después instálalas junto a FreeCAD. |
+| [OpenSCAD](openscad.md) | Combinación recíproca: OpenSCAD lo enlaza como «El directorio awesome-cad incluye OpenSCAD entre sus herramientas CAD». | Orden indicado desde OpenSCAD: Consulta awesome-cad para bibliotecas y complementos; después úsalos con OpenSCAD. |
+
+**Notas:** Sin alternativas declaradas. Recurso, no software.
+
+Estado en GitHub: activo · último push 2026-11-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mlightcad/awesome-cad/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD |
 | Coste | Sin pago a un modelo en la ruta básica. Consultar la lista es libre; cada herramienta tiene requisitos y licencia propios |
 | Equipo | Preparación según la ruta elegida. Navegador; tipo de diseño que necesitas |
-
-Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD
-
-## Qué puedes hacer con él
-
-Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar software CAD; Comparar bibliotecas de geometría.
-
-## Cómo funciona
 
 Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD
 

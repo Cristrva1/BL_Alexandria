@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada de clientes MCP de @punkpeye. Licencia MIT. Es pequeña (~7k estrellas) y poco activa (último cambio en junio de 2026); el propio README remite a glama.ai/mcp/clients para la lista más actual.
+
+## ¿Qué hace?
+
+Recoge aplicaciones de escritorio, editores, agentes y herramientas de línea de comandos que actúan como clientes MCP, con sus plataformas y funciones. Incluye enlaces a la comunidad de MCP.
+
+## ¿Cómo lo hace?
+
+Es un README; no requiere instalación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [awesome-mcp-servers](awesome-mcp-servers.md) | Lista hermana de servidores del mismo autor. | Elige el cliente y busca después los servidores. |
+| [Claude Code](claude-code.md) | Cliente MCP de referencia en el catálogo. (combinación por arquitectura) | Compáralo con los clientes listados. |
+| [Cline](cline.md) | Cliente MCP dentro del editor. (combinación por arquitectura) | Compáralo con los clientes listados. |
+
+**Notas:** Sin alternativas declaradas. Posiblemente desactualizada frente a Glama.
+
+Estado en GitHub: activo · último push 2026-06-07 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/punkpeye/awesome-mcp-clients/blob/main/README.md) · [2](https://glama.ai/mcp/clients)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones |
 | Coste | Sin pago a un modelo en la ruta básica. El directorio no cobra modelos; cada cliente puede tener suscripción, API o requisitos locales |
 | Equipo | Preparación según la ruta elegida. Navegador; preferencias de sistema y modelo |
-
-Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones
-
-## Qué puedes hacer con él
-
-Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales.
-
-## Cómo funciona
 
 Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; preferencias de sistema y modelo
 - **Etiquetas:** `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.7k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
 
 ## Enlaces
 
