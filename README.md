@@ -115,3 +115,9 @@ uv run repo-intelligence candidatos-retiro  # propuesta de retiro en reports/can
 Un repo solo es candidato a retiro si cumple tres condiciones: puntuación menor que 45, sin commits en 365 días (o archivado) y sin caso de uso único (está en un grupo, no es el recomendado y no tiene la marca `caso_unico`). La lista es una propuesta; `data/retired.json` solo cambia por decisión editorial.
 
 Una acción mensual recalcula las métricas y abre un pull request; nunca empuja a `main`. El archivo está en `infra/github-actions/metricas-mensuales.yml`: para activarla, cópialo a `.github/workflows/` (publicar workflows exige el permiso `workflow` de GitHub). Para que pueda abrir el PR hay que activar además en GitHub **Settings → Actions → General → Workflow permissions → «Allow GitHub Actions to create and approve pull requests»**.
+
+## Contributors
+
+- [Cristrva1](https://github.com/Cristrva1): dirección y mantenimiento de la biblioteca.
+- [Claude](https://github.com/claude): asistencia de IA en el desarrollo y la curación.
+- [Codex (OpenAI)](https://github.com/openai/codex): asistencia de IA en la integración de PR y la verificación del despliegue y de los archivos publicados.
