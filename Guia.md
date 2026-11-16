@@ -5653,7 +5653,7 @@ Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añad
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/google-labs-code/stitch-skills/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una interfaz con Stitch; Convertir una pantalla en componentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Stitch SDK](human/fichas/stitch-sdk.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
+**Combina con:** [Codex CLI](human/fichas/codex.md) · [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [Stitch SDK](human/fichas/stitch-sdk.md)<br>
 **Más:** [ficha completa](human/fichas/stitch-skills.md) · [GitHub](https://github.com/google-labs-code/stitch-skills)
 
 #### 🎨 ui-ux-pro-max-skill
@@ -5663,7 +5663,7 @@ Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añad
 **Comando documentado:** `# Install CLI globally
 npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un sistema de diseño; Revisar un formulario — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [taste-skill](human/fichas/taste-skill.md) · [impeccable](human/fichas/impeccable.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [tailwindcss](human/fichas/tailwindcss.md) · [design.md](human/fichas/design-md.md)<br>
 **Más:** [ficha completa](human/fichas/ui-ux-pro-max-skill.md) · [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 
 #### 🍷 taste-skill
@@ -5672,7 +5672,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una web de empresa; Revisar dirección visual de una landing — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui-ux-pro-max-skill](human/fichas/ui-ux-pro-max-skill.md) · [impeccable](human/fichas/impeccable.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Stitch Skills](human/fichas/stitch-skills.md)<br>
 **Más:** [ficha completa](human/fichas/taste-skill.md) · [GitHub](https://github.com/Leonxlnx/taste-skill)
 
 #### 💎 impeccable
@@ -5681,7 +5681,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx impeccable install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Auditar una interfaz; Pulir un componente concreto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [taste-skill](human/fichas/taste-skill.md) · [ui-ux-pro-max-skill](human/fichas/ui-ux-pro-max-skill.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [design.md](human/fichas/design-md.md)<br>
 **Más:** [ficha completa](human/fichas/impeccable.md) · [GitHub](https://github.com/pbakaus/impeccable)
 
 #### 🎨 Front-End-Checklist
@@ -5690,6 +5690,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una revisión de frontend; Crear criterios de entrega de una web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Chrome DevTools MCP](human/fichas/chrome-devtools-mcp.md) · [modern-web-guidance](human/fichas/modern-web-guidance.md)<br>
 **Más:** [ficha completa](human/fichas/front-end-checklist.md) · [GitHub](https://github.com/thedaviddias/Front-End-Checklist)
 
 #### ✏️ skills_emil
@@ -5698,7 +5699,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills@latest add emilkowalski/skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar estados de un componente; Preparar decisiones de movimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui-ux-pro-max-skill](human/fichas/ui-ux-pro-max-skill.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [motion](human/fichas/motion.md) · [motion-design-skill](human/fichas/motion-design-skill.md)<br>
 **Más:** [ficha completa](human/fichas/skills-emil.md) · [GitHub](https://github.com/emilkowalski/skills)
 
 #### 🎨 hallmark
@@ -5707,6 +5708,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add nutlope/hallmark -g` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una página de empresa; Revisar una landing genérica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/hallmark.md) · [GitHub](https://github.com/Nutlope/hallmark)
 
 #### 📐 design.md
@@ -5715,7 +5717,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx @google/design.md lint DESIGN.md` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar una identidad visual; Comparar dos versiones de tokens — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [impeccable](human/fichas/impeccable.md)<br>
+**Combina con:** [tailwindcss](human/fichas/tailwindcss.md) · [impeccable](human/fichas/impeccable.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/design-md.md) · [GitHub](https://github.com/google-labs-code/design.md)
 
 #### 🎨 anatomy
@@ -5724,6 +5726,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add wheresryan22/anatomy -g` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explicar un mecanismo; Crear una ilustración isométrica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/anatomy.md) · [GitHub](https://github.com/wheresryan22/anatomy)
 
 #### 🎨 gsap-skills
@@ -5732,6 +5735,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add https://github.com/greensock/gsap-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una transición web; Revisar uso de ScrollTrigger — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [GSAP](human/fichas/gsap.md) · [Claude Code](human/fichas/claude-code.md) · [motion-design-skill](human/fichas/motion-design-skill.md)<br>
 **Más:** [ficha completa](human/fichas/gsap-skills.md) · [GitHub](https://github.com/greensock/gsap-skills)
 
 #### 🎨 modern-web-guidance
@@ -5740,6 +5744,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx modern-web-guidance@latest install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar APIs web actuales; Revisar patrones heredados — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Front-End-Checklist](human/fichas/front-end-checklist.md)<br>
 **Más:** [ficha completa](human/fichas/modern-web-guidance.md) · [GitHub](https://github.com/GoogleChrome/modern-web-guidance)
 
 #### 🎨 logo-design-skill
@@ -5748,6 +5753,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un logotipo; Preparar variantes monocromas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/logo-design-skill.md) · [GitHub](https://github.com/kaankiziltug/logo-design-skill)
 
 #### 🎨 threejs-skills
@@ -5756,6 +5762,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add cloudai-x/threejs-skills` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una escena web; Revisar migraciones de Three.js — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [react-three-fiber](human/fichas/react-three-fiber.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/threejs-skills.md) · [GitHub](https://github.com/CloudAI-X/threejs-skills)
 
 #### 🎨 blender-skills
@@ -5774,6 +5781,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add LottieFiles/motion-design-skill` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Planificar movimiento de un componente; Revisar una transición de interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [GSAP](human/fichas/gsap.md) · [motion](human/fichas/motion.md)<br>
 **Más:** [ficha completa](human/fichas/motion-design-skill.md) · [GitHub](https://github.com/LottieFiles/motion-design-skill)
 
 #### 🎨 threejs-game-skills
@@ -5782,6 +5790,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx skills add majidmanzarpour/threejs-game-skills --skill '*' -a codex -g -y` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un juego de navegador; Añadir QA a una escena Three.js — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [Codex CLI](human/fichas/codex.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/threejs-game-skills.md) · [GitHub](https://github.com/majidmanzarpour/threejs-game-skills)
 
 #### 🎨 dream-loop
@@ -5799,6 +5808,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `npx skills add zanwei/design-dna` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar un estilo existente; Aplicar una identidad a una pantalla nueva — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [design.md](human/fichas/design-md.md) · [Figma Context MCP](human/fichas/figma-context-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/design-dna.md) · [GitHub](https://github.com/zanwei/design-dna)
 
 #### 🎨 3dviz-pro-max
@@ -5807,6 +5817,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/viettranx/3dviz-pro-max/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una visualización de producto; Crear una escena explicativa — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
 **Más:** [ficha completa](human/fichas/3dviz-pro-max.md) · [GitHub](https://github.com/viettranx/3dviz-pro-max)
 
 #### 🎨 genjutsu
@@ -5825,6 +5836,7 @@ cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/` (comp
 **Comando documentado:** `/plugin marketplace add Hainrixz/creative-architect
 /plugin install creative-architect@creative-architect` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Planificar un anuncio UGC — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [HyperFrames](human/fichas/hyperframes.md) · [remotion](human/fichas/remotion.md)<br>
 **Más:** [ficha completa](human/fichas/creative-architect.md) · [GitHub](https://github.com/Hainrixz/creative-architect)
 
 ### Escritura y calidad de texto

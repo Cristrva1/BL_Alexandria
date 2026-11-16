@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill de agente (MIT) de zanwei para extraer, estructurar y aplicar la identidad visual de un diseño como «ADN de diseño» legible por máquina. Sin releases; último cambio en agosto de 2026.
+
+## ¿Qué hace?
+
+A partir de capturas, imágenes o URL de referencia genera un perfil JSON completo en tres dimensiones: sistema de diseño (tokens de color, tipografía, espaciado, sombras, movimiento, componentes), estilo cualitativo (ambiente, lenguaje visual, voz de marca) y efectos visuales (Canvas, WebGL, partículas, shaders, scroll). Después aplica ese perfil a nuevos diseños, con una pasada de pulido opcional.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add zanwei/design-dna` (también para un agente concreto: `-a cursor` o `-a claude-code`). Requiere Node.js.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente documentado. | `-a claude-code -g -y`. |
+| [design.md](design-md.md) | Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura). | Extrae primero y valida después. |
+| [Figma Context MCP](figma-context-mcp.md) | Usar diseños de Figma como referencia (combinación por arquitectura). | Conecta el MCP de Figma antes del análisis. |
+
+**Notas:** Extraer la identidad de webs ajenas puede plantear problemas de propiedad intelectual.
+
+Estado en GitHub: activo · último push 2026-08-28 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zanwei/design-dna/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Sigue Agent Skills y el instalador soportado; cuantificar colores no convierte toda interpretación visual en una medida exacta |
 | Coste | Consumo del agente que ya utilizas. Las utilidades y el agente usan recursos propios; otros servicios o assets pueden añadir costes |
 | Equipo | Preparación según la ruta elegida. Node; agente; referencias visuales con permiso de uso |
-
-Sigue Agent Skills y el instalador soportado; cuantificar colores no convierte toda interpretación visual en una medida exacta
-
-## Qué puedes hacer con él
-
-Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.
-
-## Por qué destaca
-
-Usos propuestos: Documentar un estilo existente; Aplicar una identidad a una pantalla nueva.
-
-## Cómo funciona
 
 Sigue Agent Skills y el instalador soportado; cuantificar colores no convierte toda interpretación visual en una medida exacta
 

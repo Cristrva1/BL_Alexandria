@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skill independiente (MIT) de viettranx para visualización 3D creativa; la promociona también el README de ui-ux-pro-max-skill. Sin releases; último cambio en septiembre de 2026.
+
+## ¿Qué hace?
+
+Ayuda a construir escenas 3D explorables a partir de una frase: da forma al mundo, modela sus reglas, lo hace interactivo y comprueba lo que realmente aparece en pantalla. Sigue un flujo de diez pasos (intención, razonamiento de objetos, representación, construcción, objetivos de calidad), con un catálogo buscable de kits, rigs y recetas; publica capturas reales en GPU.
+
+## ¿Cómo lo hace?
+
+Skill con datos y plantillas, incluido un scaffold Vite + Three.js con gestión de color, tone mapping y cinco rigs. Usa el stack existente del proyecto cuando lo hay. Se instala como plugin de Claude Code; Codex es su primer objetivo de evaluación.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Base del scaffold incluido. | Usa la plantilla o tu proyecto Three.js existente. |
+| [Claude Code](claude-code.md) | Plugin documentado y validado. | `/plugin marketplace add viettranx/3dviz-pro-max`. |
+| [Codex CLI](codex.md) | Primer objetivo de evaluación. | Copia la carpeta de la skill a la ubicación que reconozca tu versión de Codex. |
+
+**Notas:** Alternativa (elige una): threejs-skills. El video de cabecera es material previo del autor, no una demo de la skill (lo aclara el README).
+
+Estado en GitHub: activo · último push 2026-09-11 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/viettranx/3dviz-pro-max/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El autor separa demostraciones históricas, validación de plugins y pruebas de ejecución; no se debe atribuir todo video promocional a una prueba de la skill |
 | Coste | Consumo del agente que ya utilizas. Usa el agente y cómputo de render; material de terceros conserva condiciones independientes |
 | Equipo | Preparación según la ruta elegida. Codex o Claude Code; Three.js o Blender según ruta; brief y escena pequeña |
-
-El autor separa demostraciones históricas, validación de plugins y pruebas de ejecución; no se debe atribuir todo video promocional a una prueba de la skill
-
-## Qué puedes hacer con él
-
-Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una visualización de producto; Crear una escena explicativa.
-
-## Cómo funciona
 
 El autor separa demostraciones históricas, validación de plugins y pruebas de ejecución; no se debe atribuir todo video promocional a una prueba de la skill
 

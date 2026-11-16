@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Conjunto de skills (Apache 2.0) de Google Chrome, mantenido junto con los equipos de Microsoft Edge, Mozilla Firefox y MDN, que lleva al agente de código pautas de la plataforma web y datos de compatibilidad. Versión v1.0.0.
+
+## ¿Qué hace?
+
+Evita que los agentes generen JavaScript pesado o patrones antiguos cuando existe una solución nativa moderna: devuelve pautas seleccionadas por expertos para tareas concretas (por ejemplo, animar el fondo de un diálogo), con datos de compatibilidad de navegadores, y detecta código heredado en un proyecto.
+
+## ¿Cómo lo hace?
+
+CLI npm (`npx modern-web-guidance@latest install`, con asistente interactivo) con comandos `search`, `retrieve` y `legacy-scan`. Se integra como skill en GitHub Copilot CLI, como plugin de Claude Code y en OpenAI Codex, entre otros.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin documentado. | Ejecuta el asistente de instalación. |
+| [Codex CLI](codex.md) | Instalación documentada. | Igual que arriba. |
+| [Front-End-Checklist](front-end-checklist.md) | Lista de calidad para verificar el resultado (combinación por arquitectura). | Independientes. |
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v1.0.0 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md) · [2](https://developer.chrome.com/docs/modern-web-guidance)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | Modelos locales documentados. Documenta Claude Code, Codex y Antigravity; el modelo local es el buscador de documentación y no un sustituto completo del agente de código |
 | Coste | El coste depende del proveedor o la ruta. La búsqueda usa embeddings locales sin API; el agente consume su plan y npx puede descargar actualizaciones |
 | Equipo | Preparación según la ruta elegida. Node; agente compatible; pregunta concreta de plataforma web |
-
-Documenta Claude Code, Codex y Antigravity; el modelo local es el buscador de documentación y no un sustituto completo del agente de código
-
-## Qué puedes hacer con él
-
-Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.
-
-## Por qué destaca
-
-Usos propuestos: Consultar APIs web actuales; Revisar patrones heredados.
-
-## Cómo funciona
 
 Documenta Claude Code, Codex y Antigravity; el modelo local es el buscador de documentación y no un sustituto completo del agente de código
 

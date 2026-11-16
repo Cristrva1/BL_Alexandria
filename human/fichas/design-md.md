@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
+
+## ¿Qué hace?
+
+Un archivo DESIGN.md combina tokens de diseño legibles por máquina (YAML) con la justificación del diseño en Markdown, de modo que el agente conoce los valores exactos y su porqué. La CLI valida el archivo contra la especificación, detecta referencias de tokens rotas, comprueba el contraste WCAG, compara versiones y exporta a Tailwind v3/v4 o DTCG.
+
+## ¿Cómo lo hace?
+
+Paquete npm `@google/design.md` usado con `npx` (`lint`, `diff`, `export`), con salida JSON pensada para que actúen los agentes. La especificación completa está en `docs/spec.md`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Exporta temas para Tailwind v3 y v4. | Valida el DESIGN.md antes de exportar. |
+| [impeccable](impeccable.md) | Su comando `document` genera un DESIGN.md (combinación por arquitectura). | Genera con impeccable y valida con la CLI. |
+| [Claude Code](claude-code.md) | El agente lee el DESIGN.md como contexto persistente (combinación por arquitectura). | Coloca el archivo en la raíz del repositorio. |
+
+**Notas:** La especificación sigue en alpha y puede cambiar.
+
+Estado en GitHub: activo · último push 2026-11-06 · última versión publicada 0.4.0 (2026-07-27) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-labs-code/design.md/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente |
 | Coste | Sin pago a un modelo en la ruta básica. La especificación y CLI básicos no requieren modelo ni API; usar un agente consume su plan |
 | Equipo | Preparación según la ruta elegida. Node para CLI; archivo DESIGN.md de prueba |
-
-Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente
-
-## Qué puedes hacer con él
-
-Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.
-
-## Por qué destaca
-
-Usos propuestos: Documentar una identidad visual; Comparar dos versiones de tokens.
-
-## Cómo funciona
 
 Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente
 
@@ -91,12 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node para CLI; archivo DESIGN.md de prueba
 - **Etiquetas:** `skills` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
 
 ## Enlaces
 

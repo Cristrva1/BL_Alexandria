@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill de «inteligencia de diseño» (MIT) de NextLevelBuilder para construir interfaces profesionales en múltiples plataformas. Muy popular y activa (v2.15.0); el README promociona otros productos del mismo equipo.
+
+## ¿Qué hace?
+
+Su generador de sistemas de diseño analiza los requisitos del proyecto y propone un sistema completo: estilo, paleta (192 paletas por tipo de producto), tipografías (74 combinaciones con Google Fonts), patrones y antipatrones. Cubre 22 stacks, entre ellos React, Next.js, Astro, Vue, Svelte, SwiftUI, React Native, Flutter, HTML+Tailwind, shadcn/ui, Jetpack Compose y Angular.
+
+## ¿Cómo lo hace?
+
+Datos estructurados y un script de búsqueda en Python 3 (solo biblioteca estándar, sin red) que consulta el agente. Se instala como plugin de Claude Code (`/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill`) o con su CLI (`npx ui-ux-pro-max-cli init --ai claude` y otros agentes).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial. | Comprueba que tienes Python 3 instalado. |
+| [tailwindcss](tailwindcss.md) | HTML+Tailwind es uno de sus stacks soportados. | Instala Tailwind en el proyecto antes de aplicar el sistema. |
+| [design.md](design-md.md) | Guardar el sistema generado como DESIGN.md persistente y validable (combinación por arquitectura). | Genera primero y valida después con `npx @google/design.md lint`. |
+
+**Notas:** Se quitaron taste-skill e impeccable: se solapan en función, no se complementan.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-08-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El CLI documenta Claude, Codex y Antigravity; sus reglas no sustituyen comprobaciones de contraste, usabilidad o accesibilidad |
 | Coste | Consumo del agente que ya utilizas. La búsqueda y plantillas usan recursos locales y el modelo del anfitrión; servicios añadidos se costean aparte |
 | Equipo | Preparación según la ruta elegida. Node; Python para las utilidades según ruta; agente; brief |
-
-El CLI documenta Claude, Codex y Antigravity; sus reglas no sustituyen comprobaciones de contraste, usabilidad o accesibilidad
-
-## Qué puedes hacer con él
-
-Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla".
-
-## Por qué destaca
-
-Usos propuestos: Preparar un sistema de diseño; Revisar un formulario.
-
-## Cómo funciona
 
 El CLI documenta Claude, Codex y Antigravity; sus reglas no sustituyen comprobaciones de contraste, usabilidad o accesibilidad
 
@@ -95,14 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; Python para las utilidades según ruta; agente; brief
 - **Etiquetas:** `skills` `design` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [taste-skill](taste-skill.md) | 116k | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. |
-| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Enlaces
 

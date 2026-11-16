@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Skill de agente (MIT) de Leonxlnx para que los agentes construyan webs de empresa de calidad profesional en lugar de landings genéricas. Muy popular y activa (v2.5.1), con patrocinadores.
+
+## ¿Qué hace?
+
+Parte de un único sistema (plantilla HTML y CSS con una sección por pantalla y bordes de contenido iguales), incluye fragmentos de interfaz reales y fotografías de archivos abiertos con crédito, y ejecuta un verificador antes de entregar. Incluye variantes como minimalista, brutalista industrial o una para Stitch.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"` o como plugin de Claude Code. Sus scripts requieren Node 22+ y Chrome, Edge o Chromium instalado; ffmpeg es opcional para generar WebP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin y skill nativos. | Node 22+ y Chrome antes de usarla. |
+| [FFmpeg](ffmpeg.md) | Dependencia opcional para exportar WebP. | Añádelo al PATH si necesitas WebP. |
+| [Stitch Skills](stitch-skills.md) | Trae una variante `stitch-design-taste` para trabajar con Stitch. | Configura antes el MCP de Stitch. |
+
+**Notas:** Se solapa con ui-ux-pro-max-skill, impeccable y hallmark; conviene elegir uno como guía principal.
+
+Estado en GitHub: activo · último push 2026-11-08 · última versión publicada v2.5.1 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Leonxlnx/taste-skill/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual |
 | Coste | Consumo del agente que ya utilizas. Los scripts no piden API; el agente usa su plan y los recursos conservan sus licencias |
 | Equipo | Preparación según la ruta elegida. Node 22+; Chrome, Edge o Chromium; agente; brief de sitio |
-
-Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual
-
-## Qué puedes hacer con él
-
-Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una web de empresa; Revisar dirección visual de una landing.
-
-## Cómo funciona
 
 Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 22+; Chrome, Edge o Chromium; agente; brief de sitio
 - **Etiquetas:** `skills` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
-| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
 
 ## Enlaces
 

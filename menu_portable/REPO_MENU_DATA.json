@@ -72882,7 +72882,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una visualización de producto; Crear una escena explicativa",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "claude-code",
+        "codex"
+      ],
       "alt": [
         "threejs-skills"
       ]
@@ -73121,7 +73125,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar un mecanismo; Crear una ilustración isométrica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "opencode",
+        "codex"
+      ],
       "alt": []
     },
     {
@@ -73602,7 +73610,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Planificar un anuncio UGC",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "hyperframes",
+        "remotion"
+      ],
       "alt": []
     },
     {
@@ -73718,7 +73730,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar un estilo existente; Aplicar una identidad a una pantalla nueva",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "design.md",
+        "figma-context-mcp"
+      ],
       "alt": []
     },
     {
@@ -73830,7 +73846,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar una identidad visual; Comparar dos versiones de tokens",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "impeccable"
+        "tailwindcss",
+        "impeccable",
+        "claude-code"
       ],
       "alt": []
     },
@@ -74190,7 +74208,11 @@
       "install_note": "Una referencia no se instala como un servicio único.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una revisión de frontend; Crear criterios de entrega de una web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "chrome-devtools-mcp",
+        "modern-web-guidance"
+      ],
       "alt": []
     },
     {
@@ -74547,7 +74569,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una transición web; Revisar uso de ScrollTrigger",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "gsap",
+        "claude-code",
+        "motion-design-skill"
+      ],
       "alt": []
     },
     {
@@ -74662,7 +74688,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una página de empresa; Revisar una landing genérica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
       "alt": []
     },
     {
@@ -75021,8 +75051,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Auditar una interfaz; Pulir un componente concreto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "taste-skill",
-        "ui-ux-pro-max-skill"
+        "claude-code",
+        "codex",
+        "design.md"
       ],
       "alt": []
     },
@@ -75374,7 +75405,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un logotipo; Preparar variantes monocromas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "gemini-cli",
+        "codex"
+      ],
       "alt": []
     },
     {
@@ -75733,7 +75768,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar APIs web actuales; Revisar patrones heredados",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "front-end-checklist"
+      ],
       "alt": []
     },
     {
@@ -75848,7 +75887,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Planificar movimiento de un componente; Revisar una transición de interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "gsap",
+        "motion"
+      ],
       "alt": []
     },
     {
@@ -76203,7 +76246,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar estados de un componente; Preparar decisiones de movimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ui-ux-pro-max-skill"
+        "claude-code",
+        "motion",
+        "motion-design-skill"
       ],
       "alt": []
     },
@@ -76452,8 +76497,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar una interfaz con Stitch; Convertir una pantalla en componentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "stitch-sdk",
-        "gemini-cli"
+        "codex",
+        "claude-code",
+        "gemini-cli",
+        "stitch-sdk"
       ],
       "alt": []
     },
@@ -76690,8 +76737,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una web de empresa; Revisar dirección visual de una landing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ui-ux-pro-max-skill",
-        "impeccable"
+        "claude-code",
+        "ffmpeg",
+        "stitch-skills"
       ],
       "alt": []
     },
@@ -76809,7 +76857,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar un juego de navegador; Añadir QA a una escena Three.js",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "codex",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -76923,7 +76975,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una escena web; Revisar migraciones de Three.js",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "react-three-fiber",
+        "claude-code"
+      ],
       "alt": [
         "3dviz-pro-max"
       ]
@@ -77043,9 +77099,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un sistema de diseño; Revisar un formulario",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "taste-skill",
-        "impeccable",
-        "tailwindcss"
+        "claude-code",
+        "tailwindcss",
+        "design.md"
       ],
       "alt": []
     },

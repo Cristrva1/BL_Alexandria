@@ -10,6 +10,30 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+«Vocabulario de diseño» para agentes de código, de Paul Bakaus, con licencia Apache 2.0. Muy popular y activo (CLI v4.9.2).
+
+## ¿Qué hace?
+
+Ofrece comandos para dirigir el diseño (`polish`, `bolder`), revisarlo (`critique` puntúa con heurísticas de usabilidad; `audit` revisa accesibilidad) y planificarlo (`shape`, `init` escribe PRODUCT.md, `document` escribe DESIGN.md). Incluye un detector determinista con 62 reglas, sin LLM, para los tics típicos de la IA: Inter en todo, degradados morado-azul, tarjetas anidadas.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx impeccable install` en la raíz del proyecto y se inicia con `/impeccable init`. Funciona con Claude Code, Cursor, Codex CLI, Copilot, Gemini CLI, OpenCode, Kiro y muchos otros. `npx impeccable detect` analiza directorios o páginas renderizadas (usa Chrome o Edge) y emite JSON o anotaciones de GitHub Actions; guarda su estado en `.impeccable/`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible documentado. | Instala y ejecuta `/impeccable init` una vez por proyecto. |
+| [Codex CLI](codex.md) | Agente compatible (`$impeccable init`). | Igual que arriba. |
+| [design.md](design-md.md) | El comando `document` escribe un DESIGN.md que puede validarse con la herramienta de Google (combinación por arquitectura; [DATO NO VERIFICADO: plena conformidad con la especificación de Google]). | Genera con impeccable y valida con `npx @google/design.md lint`. |
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada cli-v4.9.2 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pbakaus/impeccable/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Hooks y descarga del motor tienen efectos propios fuera del permiso de cada llamada del modelo; Antigravity puede cargar skills sin compartir todos los hooks de Claude o Codex |
 | Coste | El coste depende del proveedor o la ruta. El detector no requiere LLM ni API; los cambios guiados usan el plan del agente |
 | Equipo | Preparación según la ruta elegida. Node para instalador; agente; Chrome o Edge para revisión de página |
-
-Hooks y descarga del motor tienen efectos propios fuera del permiso de cada llamada del modelo; Antigravity puede cargar skills sin compartir todos los hooks de Claude o Codex
-
-## Qué puedes hacer con él
-
-Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta.
-
-## Por qué destaca
-
-Usos propuestos: Auditar una interfaz; Pulir un componente concreto.
-
-## Cómo funciona
 
 Hooks y descarga del motor tienen efectos propios fuera del permiso de cada llamada del modelo; Antigravity puede cargar skills sin compartir todos los hooks de Claude o Codex
 
@@ -93,13 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node para instalador; agente; Chrome o Edge para revisión de página
 - **Etiquetas:** `skills` `design` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [taste-skill](taste-skill.md) | 116k | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. |
-| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
 
 ## Enlaces
 

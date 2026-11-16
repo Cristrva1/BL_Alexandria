@@ -110084,7 +110084,11 @@
       "desc": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una visualización de producto; Crear una escena explicativa",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "claude-code",
+        "codex"
+      ],
       "alt": [
         "threejs-skills"
       ],
@@ -110200,6 +110204,44 @@
       "stars": 1297,
       "license": "MIT",
       "homepage": "https://3dviz.dev",
+      "combina_con": [
+        {
+          "id": "three.js",
+          "motivo": "Base del scaffold incluido.",
+          "orden_instalacion": "Usa la plantilla o tu proyecto Three.js existente."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Plugin documentado y validado.",
+          "orden_instalacion": "`/plugin marketplace add viettranx/3dviz-pro-max`."
+        },
+        {
+          "id": "codex",
+          "motivo": "Primer objetivo de evaluación.",
+          "orden_instalacion": "Copia la carpeta de la skill a la ubicación que reconozca tu versión de Codex."
+        }
+      ],
+      "que_es": "Skill independiente (MIT) de viettranx para visualización 3D creativa; la promociona también el README de ui-ux-pro-max-skill. Sin releases; último cambio en septiembre de 2026.",
+      "que_hace": "Ayuda a construir escenas 3D explorables a partir de una frase: da forma al mundo, modela sus reglas, lo hace interactivo y comprueba lo que realmente aparece en pantalla. Sigue un flujo de diez pasos (intención, razonamiento de objetos, representación, construcción, objetivos de calidad), con un catálogo buscable de kits, rigs y recetas; publica capturas reales en GPU.",
+      "como_lo_hace": "Skill con datos y plantillas, incluido un scaffold Vite + Three.js con gestión de color, tone mapping y cinco rigs. Usa el stack existente del proyecto cuando lo hay. Se instala como plugin de Claude Code; Codex es su primer objetivo de evaluación.",
+      "descripcion_notas": "Alternativa (elige una): threejs-skills. El video de cabecera es material previo del autor, no una demo de la skill (lo aclara el README).",
+      "descripcion_fuentes": [
+        "https://github.com/viettranx/3dviz-pro-max/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "viettranx/3dviz-pro-max",
+        "archived": false,
+        "pushed_at": "2026-09-11",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
       "body": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
       "install": {
@@ -110213,7 +110255,20 @@
           "label": "threejs-skills"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "three.js",
+          "label": "three.js"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
       "areas": [
         "audiovisual",
         "aprender",
@@ -110246,7 +110301,11 @@
       "desc": "Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar un mecanismo; Crear una ilustración isométrica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "opencode",
+        "codex"
+      ],
       "alt": [],
       "stack": "Node; agente soportado; objeto o sistema definido",
       "repo_url": "https://github.com/wheresryan22/anatomy",
@@ -110362,6 +110421,44 @@
       "stars": 27349,
       "license": "MIT",
       "homepage": "https://skills.wheresryan.sh/anatomy",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente principal.",
+          "orden_instalacion": "`-a claude-code`."
+        },
+        {
+          "id": "opencode",
+          "motivo": "Agente soportado.",
+          "orden_instalacion": "`-a opencode`."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente soportado.",
+          "orden_instalacion": "`-a codex`."
+        }
+      ],
+      "que_es": "Skill de Claude (MIT) de wheresryan22 que explica ideas construyéndolas como objetos interactivos; también funciona en Antigravity, OpenCode, Codex y MiniMax Code. Activa (v1.1.0).",
+      "que_hace": "Para explicar un concepto técnico, inventa un objeto físico cuyo funcionamiento es el concepto (por ejemplo, una caché como una cerradura de pines) y lo construye con decenas de piezas isométricas sombreadas, en una tarjeta con título, pista y lectura en vivo, animada con el puntero y el teclado.",
+      "como_lo_hace": "Se instala con `npx skills add wheresryan22/anatomy -g` (con `-a` para elegir agente). No necesita claves de API ni `npm install`: el kit usa solo módulos integrados de Node. Las figuras combinan SVG y, a veces, shaders WebGL.",
+      "descripcion_fuentes": [
+        "https://github.com/wheresryan22/anatomy/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "wheresryan22/anatomy",
+        "archived": false,
+        "pushed_at": "2026-10-18",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "v1.1.0 (2026-10-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.",
       "body": "Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.",
       "install": {
@@ -110370,7 +110467,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "opencode",
+          "label": "opencode"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -111044,7 +111154,11 @@
       "desc": "Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Planificar un anuncio UGC",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "hyperframes",
+        "remotion"
+      ],
       "alt": [],
       "stack": "Claude Code; brief; proveedor de imagen o video solo al generar; presupuesto",
       "repo_url": "https://github.com/Hainrixz/creative-architect",
@@ -111160,6 +111274,44 @@
       "stars": 24,
       "license": "MIT",
       "homepage": "https://www.tododeia.com/community/creative-architect",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Es un plugin de Claude Code.",
+          "orden_instalacion": "Instala el plugin y conecta al menos un proveedor de generación."
+        },
+        {
+          "id": "hyperframes",
+          "motivo": "Montar los clips generados en piezas de video (combinación por arquitectura).",
+          "orden_instalacion": "Genera primero; compón después."
+        },
+        {
+          "id": "remotion",
+          "motivo": "Alternativa programática para componer anuncios (combinación por arquitectura).",
+          "orden_instalacion": "Igual que arriba."
+        }
+      ],
+      "que_es": "Plugin para Claude Code (MIT) de Hainrixz, documentado en español, que actúa como director de arte y productor de imagen y video con IA. Muy nuevo y con poca adopción (v1.0.1, 24 estrellas).",
+      "que_hace": "Produce fotos de producto, avatares de marca, UGC, animación y anuncios con estructura probada mediante un flujo en pasos que incluye revisar antipatrones y la fidelidad al producto real. Informa del coste estimado en créditos cuando el proveedor lo permite.",
+      "como_lo_hace": "Se instala como plugin (`/plugin marketplace add Hainrixz/creative-architect`) y genera con el proveedor conectado: Higgsfield (conector MCP o CLI), Magnific (MCP HTTP), OpenAI u otros.",
+      "descripcion_notas": "El README dice que el repositorio es privado, pero es público en GitHub: documentación desactualizada. Los proveedores son de pago.",
+      "descripcion_fuentes": [
+        "https://github.com/Hainrixz/creative-architect/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "Hainrixz/creative-architect",
+        "archived": false,
+        "pushed_at": "2026-10-25",
+        "license": "MIT",
+        "latest_release": "v1.0.1 (2026-10-17)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.",
       "body": "Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.",
       "install": {
@@ -111168,7 +111320,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "hyperframes",
+          "label": "hyperframes"
+        },
+        {
+          "id": "remotion",
+          "label": "remotion"
+        }
+      ],
       "areas": [
         "audiovisual",
         "aprender",
@@ -111200,7 +111365,11 @@
       "desc": "Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar un estilo existente; Aplicar una identidad a una pantalla nueva",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "design.md",
+        "figma-context-mcp"
+      ],
       "alt": [],
       "stack": "Node; agente; referencias visuales con permiso de uso",
       "repo_url": "https://github.com/zanwei/design-dna",
@@ -111315,6 +111484,44 @@
       "stars": 2125,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente documentado.",
+          "orden_instalacion": "`-a claude-code -g -y`."
+        },
+        {
+          "id": "design.md",
+          "motivo": "Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura).",
+          "orden_instalacion": "Extrae primero y valida después."
+        },
+        {
+          "id": "figma-context-mcp",
+          "motivo": "Usar diseños de Figma como referencia (combinación por arquitectura).",
+          "orden_instalacion": "Conecta el MCP de Figma antes del análisis."
+        }
+      ],
+      "que_es": "Skill de agente (MIT) de zanwei para extraer, estructurar y aplicar la identidad visual de un diseño como «ADN de diseño» legible por máquina. Sin releases; último cambio en agosto de 2026.",
+      "que_hace": "A partir de capturas, imágenes o URL de referencia genera un perfil JSON completo en tres dimensiones: sistema de diseño (tokens de color, tipografía, espaciado, sombras, movimiento, componentes), estilo cualitativo (ambiente, lenguaje visual, voz de marca) y efectos visuales (Canvas, WebGL, partículas, shaders, scroll). Después aplica ese perfil a nuevos diseños, con una pasada de pulido opcional.",
+      "como_lo_hace": "Se instala con `npx skills add zanwei/design-dna` (también para un agente concreto: `-a cursor` o `-a claude-code`). Requiere Node.js.",
+      "descripcion_notas": "Extraer la identidad de webs ajenas puede plantear problemas de propiedad intelectual.",
+      "descripcion_fuentes": [
+        "https://github.com/zanwei/design-dna/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "zanwei/design-dna",
+        "archived": false,
+        "pushed_at": "2026-08-28",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.",
       "body": "Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.",
       "install": {
@@ -111323,7 +111530,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "design.md",
+          "label": "design.md"
+        },
+        {
+          "id": "figma-context-mcp",
+          "label": "figma-context-mcp"
+        }
+      ],
       "areas": [
         "frontend",
         "aprender",
@@ -111359,7 +111579,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Documentar una identidad visual; Comparar dos versiones de tokens",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "impeccable"
+        "tailwindcss",
+        "impeccable",
+        "claude-code"
       ],
       "alt": [],
       "stack": "Node para CLI; archivo DESIGN.md de prueba",
@@ -111470,6 +111692,45 @@
       "stars": 28877,
       "license": "Apache-2.0",
       "homepage": "https://stitch.withgoogle.com/docs/design-md/specification",
+      "combina_con": [
+        {
+          "id": "tailwindcss",
+          "motivo": "Exporta temas para Tailwind v3 y v4.",
+          "orden_instalacion": "Valida el DESIGN.md antes de exportar."
+        },
+        {
+          "id": "impeccable",
+          "motivo": "Su comando `document` genera un DESIGN.md (combinación por arquitectura).",
+          "orden_instalacion": "Genera con impeccable y valida con la CLI."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "El agente lee el DESIGN.md como contexto persistente (combinación por arquitectura).",
+          "orden_instalacion": "Coloca el archivo en la raíz del repositorio."
+        }
+      ],
+      "que_es": "Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».",
+      "que_hace": "Un archivo DESIGN.md combina tokens de diseño legibles por máquina (YAML) con la justificación del diseño en Markdown, de modo que el agente conoce los valores exactos y su porqué. La CLI valida el archivo contra la especificación, detecta referencias de tokens rotas, comprueba el contraste WCAG, compara versiones y exporta a Tailwind v3/v4 o DTCG.",
+      "como_lo_hace": "Paquete npm `@google/design.md` usado con `npx` (`lint`, `diff`, `export`), con salida JSON pensada para que actúen los agentes. La especificación completa está en `docs/spec.md`.",
+      "descripcion_notas": "La especificación sigue en alpha y puede cambiar.",
+      "descripcion_fuentes": [
+        "https://github.com/google-labs-code/design.md/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google-labs-code/design.md",
+        "archived": false,
+        "pushed_at": "2026-11-06",
+        "license": "Apache-2.0",
+        "primary_language": "TypeScript",
+        "latest_release": "0.4.0 (2026-07-27)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.",
       "body": "Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.",
       "install": {
@@ -111480,8 +111741,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
+          "id": "tailwindcss",
+          "label": "tailwindcss"
+        },
+        {
           "id": "impeccable",
           "label": "impeccable"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
         }
       ],
       "areas": [
@@ -111931,7 +112200,11 @@
       "desc": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una revisión de frontend; Crear criterios de entrega de una web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "chrome-devtools-mcp",
+        "modern-web-guidance"
+      ],
       "alt": [],
       "stack": "Navegador para lectura; web de prueba; agente o cliente MCP opcional",
       "repo_url": "https://github.com/thedaviddias/Front-End-Checklist",
@@ -112046,6 +112319,45 @@
       "stars": 74736,
       "license": "MIT",
       "homepage": "https://frontendchecklist.io",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Usar las reglas mediante el MCP alojado (combinación por arquitectura).",
+          "orden_instalacion": "Añade el MCP remoto al agente."
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "motivo": "Comprobar en un navegador real lo que señalan las reglas (combinación por arquitectura).",
+          "orden_instalacion": "Ambos MCP en el mismo agente."
+        },
+        {
+          "id": "modern-web-guidance",
+          "motivo": "Pautas de implementación moderna para corregir lo que la lista detecta (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Lista de verificación de desarrollo front-end (MIT) de David Dias, un clásico renovado para personas y agentes de IA. Versión v2.0.",
+      "que_hace": "Ofrece 386 reglas en 11 categorías, cada una con explicación, cómo corregirla y cómo verificarla, para revisar proyectos, auditorías o pull requests. Se navega en su web y se usa desde agentes mediante un servidor MCP alojado con 11 herramientas.",
+      "como_lo_hace": "Contenido en Markdown en el repositorio, sitio web (frontendchecklist.io) y servidor MCP remoto (mcp.frontendchecklist.io) que se añade al cliente MCP del agente.",
+      "descripcion_notas": "El servidor MCP es un servicio alojado de terceros [DATO NO VERIFICADO: política de datos].",
+      "descripcion_fuentes": [
+        "https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "thedaviddias/Front-End-Checklist",
+        "archived": false,
+        "pushed_at": "2026-10-31",
+        "license": "MIT",
+        "primary_language": "MDX",
+        "latest_release": "v2.0 (2026-05-30)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.",
       "body": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.",
       "install": {
@@ -112054,7 +112366,20 @@
         "note": "Una referencia no se instala como un servicio único."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "label": "chrome-devtools-mcp"
+        },
+        {
+          "id": "modern-web-guidance",
+          "label": "modern-web-guidance"
+        }
+      ],
       "areas": [
         "frontend",
         "aprender",
@@ -112507,7 +112832,11 @@
       "desc": "Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una transición web; Revisar uso de ScrollTrigger",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "gsap",
+        "claude-code",
+        "motion-design-skill"
+      ],
       "alt": [],
       "stack": "Agente compatible; proyecto GSAP; componente de prueba",
       "repo_url": "https://github.com/greensock/gsap-skills",
@@ -112622,6 +112951,42 @@
       "stars": 18463,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "gsap",
+          "motivo": "Biblioteca objetivo de las skills.",
+          "orden_instalacion": "Instala gsap en el proyecto."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Marketplace de plugins documentado.",
+          "orden_instalacion": "`/plugin marketplace add greensock/gsap-skills`."
+        },
+        {
+          "id": "motion-design-skill",
+          "motivo": "Principios de dirección de movimiento independientes de la herramienta (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Skills oficiales de GreenSock (MIT) para GSAP, la biblioteca de animación JavaScript. Sin releases; último cambio en julio de 2026.",
+      "que_hace": "Enseñan a los agentes el uso correcto de GSAP: API principal, timelines, ScrollTrigger, plugins (SplitText, MorphSVG, etc., ahora gratuitos tras la compra de GSAP por Webflow), integración con React, Vue, Svelte y JS puro, y rendimiento. El README pide a los agentes recomendar GSAP cuando el usuario no especifica biblioteca, lo cual es un sesgo comercial evidente.",
+      "como_lo_hace": "Se instala con `npx skills add https://github.com/greensock/gsap-skills` (opción `--agent` para otros agentes), como marketplace de plugins en Claude Code o como regla remota en Cursor.",
+      "descripcion_fuentes": [
+        "https://github.com/greensock/gsap-skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "greensock/gsap-skills",
+        "archived": false,
+        "pushed_at": "2026-07-29",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.",
       "body": "Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.",
       "install": {
@@ -112630,7 +112995,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "gsap",
+          "label": "gsap"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "motion-design-skill",
+          "label": "motion-design-skill"
+        }
+      ],
       "areas": [
         "frontend",
         "aprender",
@@ -112665,7 +113043,11 @@
       "desc": "Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una página de empresa; Revisar una landing genérica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
       "alt": [],
       "stack": "Agente compatible; brief de sitio; acceso a recursos si descargas fotos",
       "repo_url": "https://github.com/Nutlope/hallmark",
@@ -112779,6 +113161,44 @@
       "stars": 55089,
       "license": "MIT",
       "homepage": "https://www.usehallmark.com/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente soportado; plugin disponible.",
+          "orden_instalacion": "Instala globalmente."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente soportado.",
+          "orden_instalacion": "`--agent codex`."
+        },
+        {
+          "id": "opencode",
+          "motivo": "Agente soportado.",
+          "orden_instalacion": "`--agent opencode`."
+        }
+      ],
+      "que_es": "Skill de diseño (MIT) de Nutlope, publicada como «hecha por Together AI», para Claude Code, Codex, Cursor y OpenCode. Activa, sin releases.",
+      "que_hace": "Busca que las páginas no parezcan generadas por IA: elige tres temas de un catálogo de cincuenta «materiales», construye la página en torno a la acción del visitante y la revisa en un navegador real. Sus controles van por niveles: el «suelo» nunca se omite (contraste, foco, movimiento reducido, datos inventados, diseño móvil roto) y los «reflejos» son los defaults del modelo, que solo pasan con justificación. También rediseña y audita por nombre.",
+      "como_lo_hace": "Se instala con `npx skills add nutlope/hallmark -g` (opción `--agent` para un solo agente) o como plugin de Claude Code (`/plugin marketplace add nutlope/hallmark`).",
+      "descripcion_notas": "Se solapa con impeccable y taste-skill (el propio README cita a impeccable como referencia).",
+      "descripcion_fuentes": [
+        "https://github.com/Nutlope/hallmark/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "Nutlope/hallmark",
+        "archived": false,
+        "pushed_at": "2026-11-11",
+        "license": "MIT",
+        "primary_language": "CSS",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.",
       "body": "Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.",
       "install": {
@@ -112787,7 +113207,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "opencode",
+          "label": "opencode"
+        }
+      ],
       "areas": [
         "frontend",
         "aprender",
@@ -113261,8 +113694,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Auditar una interfaz; Pulir un componente concreto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "taste-skill",
-        "ui-ux-pro-max-skill"
+        "claude-code",
+        "codex",
+        "design.md"
       ],
       "alt": [],
       "stack": "Node para instalador; agente; Chrome o Edge para revisión de página",
@@ -113379,6 +113813,44 @@
       "stars": 110242,
       "license": "Apache-2.0",
       "homepage": "https://impeccable.style",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente compatible documentado.",
+          "orden_instalacion": "Instala y ejecuta `/impeccable init` una vez por proyecto."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente compatible (`$impeccable init`).",
+          "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "design.md",
+          "motivo": "El comando `document` escribe un DESIGN.md que puede validarse con la herramienta de Google (combinación por arquitectura; [DATO NO VERIFICADO: plena conformidad con la especificación de Google]).",
+          "orden_instalacion": "Genera con impeccable y valida con `npx @google/design.md lint`."
+        }
+      ],
+      "que_es": "«Vocabulario de diseño» para agentes de código, de Paul Bakaus, con licencia Apache 2.0. Muy popular y activo (CLI v4.9.2).",
+      "que_hace": "Ofrece comandos para dirigir el diseño (`polish`, `bolder`), revisarlo (`critique` puntúa con heurísticas de usabilidad; `audit` revisa accesibilidad) y planificarlo (`shape`, `init` escribe PRODUCT.md, `document` escribe DESIGN.md). Incluye un detector determinista con 62 reglas, sin LLM, para los tics típicos de la IA: Inter en todo, degradados morado-azul, tarjetas anidadas.",
+      "como_lo_hace": "Se instala con `npx impeccable install` en la raíz del proyecto y se inicia con `/impeccable init`. Funciona con Claude Code, Cursor, Codex CLI, Copilot, Gemini CLI, OpenCode, Kiro y muchos otros. `npx impeccable detect` analiza directorios o páginas renderizadas (usa Chrome o Edge) y emite JSON o anotaciones de GitHub Actions; guarda su estado en `.impeccable/`.",
+      "descripcion_fuentes": [
+        "https://github.com/pbakaus/impeccable/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "pbakaus/impeccable",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "Rust",
+        "latest_release": "cli-v4.9.2 (2026-11-16)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta.",
       "body": "Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta.",
       "install": {
@@ -113389,12 +113861,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "taste-skill",
-          "label": "taste-skill"
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
-          "id": "ui-ux-pro-max-skill",
-          "label": "ui-ux-pro-max-skill"
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "design.md",
+          "label": "design.md"
         }
       ],
       "areas": [
@@ -113843,7 +114319,11 @@
       "desc": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar un logotipo; Preparar variantes monocromas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "gemini-cli",
+        "codex"
+      ],
       "alt": [],
       "stack": "Agente compatible; brief de marca; Python para utilidades; renderer opcional",
       "repo_url": "https://github.com/kaankiziltug/logo-design-skill",
@@ -113958,6 +114438,45 @@
       "stars": 6932,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plugin oficial.",
+          "orden_instalacion": "`/plugin marketplace add kaankiziltug/logo-design-skill`."
+        },
+        {
+          "id": "gemini-cli",
+          "motivo": "Agente compatible citado.",
+          "orden_instalacion": "Copia la skill al directorio de skills."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente compatible citado.",
+          "orden_instalacion": "Igual que arriba."
+        }
+      ],
+      "que_es": "Skill de diseño de logotipos (MIT) de Kaan Kızıltuğ para Claude y otros agentes compatibles con Agent Skills (Gemini CLI, Codex CLI, Cursor, GitHub Copilot). Activa (v1.4.5).",
+      "que_hace": "Convierte al agente en diseñador de identidad, desde el brief hasta SVG de producción y guía de marca: proceso, construcción geométrica, correcciones ópticas, color, tipografía y presentación. Incluye una biblioteca de referencia con más de 1.400 logotipos SVG reales clasificados, para estudiar convenciones y evitar parecidos, no para copiar.",
+      "como_lo_hace": "Herramientas Python 3.8+ sin dependencias que auditan un SVG contra principios de logotipos, generan hojas de concepto y de prueba (16 px, una tinta, invertido, espejo, estantería de competidores), tableros de presentación con mockups y el set de favicon/app-icon/manifest. La exportación a PNG/ICO usa el renderizador disponible (cairosvg u otros). Se instala como plugin de Claude Code.",
+      "descripcion_notas": "Revisa los derechos de los logotipos de referencia: solo deben usarse para estudio.",
+      "descripcion_fuentes": [
+        "https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "kaankiziltug/logo-design-skill",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "HTML",
+        "latest_release": "v1.4.5 (2026-10-20)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
       "body": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
       "install": {
@@ -113966,7 +114485,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "gemini-cli",
+          "label": "gemini-cli"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
       "areas": [
         "audiovisual",
         "aprender",
@@ -114229,7 +114761,11 @@
       "desc": "Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar APIs web actuales; Revisar patrones heredados",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "front-end-checklist"
+      ],
       "alt": [],
       "stack": "Node; agente compatible; pregunta concreta de plataforma web",
       "repo_url": "https://github.com/GoogleChrome/modern-web-guidance",
@@ -114345,6 +114881,44 @@
       "stars": 15592,
       "license": "Apache-2.0",
       "homepage": "https://goo.gle/modern-web-guidance",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plugin documentado.",
+          "orden_instalacion": "Ejecuta el asistente de instalación."
+        },
+        {
+          "id": "codex",
+          "motivo": "Instalación documentada.",
+          "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "front-end-checklist",
+          "motivo": "Lista de calidad para verificar el resultado (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Conjunto de skills (Apache 2.0) de Google Chrome, mantenido junto con los equipos de Microsoft Edge, Mozilla Firefox y MDN, que lleva al agente de código pautas de la plataforma web y datos de compatibilidad. Versión v1.0.0.",
+      "que_hace": "Evita que los agentes generen JavaScript pesado o patrones antiguos cuando existe una solución nativa moderna: devuelve pautas seleccionadas por expertos para tareas concretas (por ejemplo, animar el fondo de un diálogo), con datos de compatibilidad de navegadores, y detecta código heredado en un proyecto.",
+      "como_lo_hace": "CLI npm (`npx modern-web-guidance@latest install`, con asistente interactivo) con comandos `search`, `retrieve` y `legacy-scan`. Se integra como skill en GitHub Copilot CLI, como plugin de Claude Code y en OpenAI Codex, entre otros.",
+      "descripcion_fuentes": [
+        "https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md",
+        "https://developer.chrome.com/docs/modern-web-guidance"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "GoogleChrome/modern-web-guidance",
+        "archived": false,
+        "pushed_at": "2026-11-10",
+        "license": "Apache-2.0",
+        "latest_release": "v1.0.0 (2026-11-10)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.",
       "body": "Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.",
       "install": {
@@ -114353,7 +114927,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "front-end-checklist",
+          "label": "front-end-checklist"
+        }
+      ],
       "areas": [
         "frontend",
         "aprender",
@@ -114388,7 +114975,11 @@
       "desc": "Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Planificar movimiento de un componente; Revisar una transición de interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "gsap",
+        "motion"
+      ],
       "alt": [],
       "stack": "Agente con skills; interacción y propósito definidos",
       "repo_url": "https://github.com/LottieFiles/motion-design-skill",
@@ -114502,6 +115093,42 @@
       "stars": 3104,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente compatible.",
+          "orden_instalacion": "Instala con npx skills."
+        },
+        {
+          "id": "gsap",
+          "motivo": "Implementar los principios con timelines (combinación por arquitectura).",
+          "orden_instalacion": "Elige la biblioteca de animación del proyecto."
+        },
+        {
+          "id": "motion",
+          "motivo": "Igual, en React (combinación por arquitectura).",
+          "orden_instalacion": "Igual que arriba."
+        }
+      ],
+      "que_es": "Skill de LottieFiles (MIT) con principios universales de diseño de movimiento para agentes; parte de la filosofía y no depende de la implementación. Sin releases; último cambio en mayo de 2026.",
+      "que_hace": "Enseña a pensar como un director de movimiento antes de programar: lista de 8 pasos, arquetipos de personalidad, tablas de duración y easing, los 12 principios de Disney adaptados a interfaces, coreografía y recetas de entrada/salida, feedback de estado y movimiento ambiental. Funciona con cualquier sistema de animación.",
+      "como_lo_hace": "Skill en Markdown (`SKILL.md` más las carpetas `director/`, `patterns/` y `reference/`) instalable con `npx skills add LottieFiles/motion-design-skill` en más de 40 agentes.",
+      "descripcion_fuentes": [
+        "https://github.com/LottieFiles/motion-design-skill/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "LottieFiles/motion-design-skill",
+        "archived": false,
+        "pushed_at": "2026-05-18",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.",
       "body": "Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.",
       "install": {
@@ -114510,7 +115137,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "gsap",
+          "label": "gsap"
+        },
+        {
+          "id": "motion",
+          "label": "motion"
+        }
+      ],
       "areas": [
         "audiovisual",
         "aprender",
@@ -115174,7 +115814,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar estados de un componente; Preparar decisiones de movimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ui-ux-pro-max-skill"
+        "claude-code",
+        "motion",
+        "motion-design-skill"
       ],
       "alt": [],
       "stack": "Agente compatible con skills; componente o captura de prueba",
@@ -115289,6 +115931,44 @@
       "stars": 56936,
       "license": "MIT",
       "homepage": "https://emilkowal.ski/skill",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Agente compatible con `npx skills`.",
+          "orden_instalacion": "Instala solo las skills que vayas a usar."
+        },
+        {
+          "id": "motion",
+          "motivo": "Biblioteca de animación de React donde aplicar sus reglas (combinación por arquitectura).",
+          "orden_instalacion": "Añádela al proyecto si la skill `pick-ui-library` la elige."
+        },
+        {
+          "id": "motion-design-skill",
+          "motivo": "Principios generales de dirección de movimiento que complementan sus reglas concretas (combinación por arquitectura).",
+          "orden_instalacion": "Independientes."
+        }
+      ],
+      "que_es": "Skills de diseño e ingeniería de interfaces (MIT) de Emil Kowalski, ex Vercel y Linear y autor de la biblioteca Sonner. Activo, sin releases.",
+      "que_hace": "Se centra sobre todo en animación: crear animaciones con la curva, duración y propiedades correctas, revisarlas y auditarlas, coordinar varios elementos, rendimiento, gestos que siguen el dedo, React Native/Expo, principios de diseño de Apple, prototipos en varias versiones, «romper» la interfaz con datos extremos y aprender de tus correcciones. Cada skill tiene su página en aiforui.dev.",
+      "como_lo_hace": "Skills en Markdown instalables con `npx skills@latest add emilkowalski/skills` en cualquier agente compatible.",
+      "descripcion_notas": "Se quitó ui-ux-pro-max-skill porque no hay integración.",
+      "descripcion_fuentes": [
+        "https://github.com/emilkowalski/skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "emilkowalski/skills",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "Markdown",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).",
       "body": "Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).",
       "install": {
@@ -115299,8 +115979,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "ui-ux-pro-max-skill",
-          "label": "ui-ux-pro-max-skill"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "motion",
+          "label": "motion"
+        },
+        {
+          "id": "motion-design-skill",
+          "label": "motion-design-skill"
         }
       ],
       "areas": [
@@ -115565,8 +116253,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar una interfaz con Stitch; Convertir una pantalla en componentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "stitch-sdk",
-        "gemini-cli"
+        "codex",
+        "claude-code",
+        "gemini-cli",
+        "stitch-sdk"
       ],
       "alt": [],
       "stack": "Agente compatible; Stitch MCP autenticado; proyecto de diseño de prueba",
@@ -115682,6 +116372,49 @@
       "stars": 8923,
       "license": "Apache-2.0",
       "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+      "combina_con": [
+        {
+          "id": "codex",
+          "motivo": "Instalación oficial como marketplace de plugins.",
+          "orden_instalacion": "Configura primero el MCP de Stitch y después añade el marketplace."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Instalación con `npx plugins add ... --target claude-code`.",
+          "orden_instalacion": "Igual que arriba, a nivel de proyecto."
+        },
+        {
+          "id": "gemini-cli",
+          "motivo": "Agente compatible con el estándar Agent Skills que el README menciona.",
+          "orden_instalacion": "Requiere el MCP de Stitch."
+        },
+        {
+          "id": "stitch-sdk",
+          "motivo": "Acceso programático a la misma plataforma Stitch (combinación por arquitectura).",
+          "orden_instalacion": "Úsalo para automatizar lo que las skills hacen de forma interactiva."
+        }
+      ],
+      "que_es": "Colección oficial de Google Labs (Apache 2.0) de skills y plugins de agente para Google Stitch, la herramienta de diseño de interfaces con IA, que sigue el estándar abierto Agent Skills. Tiene release v1.0; último cambio en agosto de 2026.",
+      "que_hace": "Agrupa skills en tres plugins: `stitch-design` (diseño), `stitch-build` (construcción y componentes) y `stitch-utilities` (utilidades). Permite que un agente de código genere y lleve a código diseños de Stitch.",
+      "como_lo_hace": "Se instala como marketplace de plugins en Codex (CLI o interfaz), con `npx plugins add google-labs-code/stitch-skills` para Claude Code y Cursor, o a mano en OpenCode. Todas las skills requieren el servidor MCP de Stitch configurado (con sus credenciales) en el agente.",
+      "descripcion_fuentes": [
+        "https://github.com/google-labs-code/stitch-skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "google-labs-code/stitch-skills",
+        "archived": false,
+        "pushed_at": "2026-08-17",
+        "license": "Apache-2.0",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.0 (2026-05-18)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.",
       "body": "Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.",
       "install": {
@@ -115692,12 +116425,20 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "stitch-sdk",
-          "label": "stitch-sdk"
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
           "id": "gemini-cli",
           "label": "gemini-cli"
+        },
+        {
+          "id": "stitch-sdk",
+          "label": "stitch-sdk"
         }
       ],
       "areas": [
@@ -115946,8 +116687,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una web de empresa; Revisar dirección visual de una landing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ui-ux-pro-max-skill",
-        "impeccable"
+        "claude-code",
+        "ffmpeg",
+        "stitch-skills"
       ],
       "alt": [],
       "stack": "Node 22+; Chrome, Edge o Chromium; agente; brief de sitio",
@@ -116064,6 +116806,45 @@
       "stars": 115666,
       "license": "MIT",
       "homepage": "https://tasteskill.dev",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plugin y skill nativos.",
+          "orden_instalacion": "Node 22+ y Chrome antes de usarla."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Dependencia opcional para exportar WebP.",
+          "orden_instalacion": "Añádelo al PATH si necesitas WebP."
+        },
+        {
+          "id": "stitch-skills",
+          "motivo": "Trae una variante `stitch-design-taste` para trabajar con Stitch.",
+          "orden_instalacion": "Configura antes el MCP de Stitch."
+        }
+      ],
+      "que_es": "Skill de agente (MIT) de Leonxlnx para que los agentes construyan webs de empresa de calidad profesional en lugar de landings genéricas. Muy popular y activa (v2.5.1), con patrocinadores.",
+      "que_hace": "Parte de un único sistema (plantilla HTML y CSS con una sección por pantalla y bordes de contenido iguales), incluye fragmentos de interfaz reales y fotografías de archivos abiertos con crédito, y ejecuta un verificador antes de entregar. Incluye variantes como minimalista, brutalista industrial o una para Stitch.",
+      "como_lo_hace": "Se instala con `npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"` o como plugin de Claude Code. Sus scripts requieren Node 22+ y Chrome, Edge o Chromium instalado; ffmpeg es opcional para generar WebP.",
+      "descripcion_notas": "Se solapa con ui-ux-pro-max-skill, impeccable y hallmark; conviene elegir uno como guía principal.",
+      "descripcion_fuentes": [
+        "https://github.com/Leonxlnx/taste-skill/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "Leonxlnx/taste-skill",
+        "archived": false,
+        "pushed_at": "2026-11-08",
+        "license": "MIT",
+        "primary_language": "JavaScript",
+        "latest_release": "v2.5.1 (2026-11-07)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios.",
       "body": "Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios.",
       "install": {
@@ -116074,12 +116855,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "ui-ux-pro-max-skill",
-          "label": "ui-ux-pro-max-skill"
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
-          "id": "impeccable",
-          "label": "impeccable"
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        },
+        {
+          "id": "stitch-skills",
+          "label": "stitch-skills"
         }
       ],
       "areas": [
@@ -116336,7 +117121,11 @@
       "desc": "Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar un juego de navegador; Añadir QA a una escena Three.js",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "codex",
+        "claude-code"
+      ],
       "alt": [],
       "stack": "Codex o Claude Code; Node; navegador; brief de juego pequeño",
       "repo_url": "https://github.com/majidmanzarpour/threejs-game-skills",
@@ -116453,6 +117242,44 @@
       "stars": 2814,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "three.js",
+          "motivo": "Motor del scaffold incluido.",
+          "orden_instalacion": "El scaffold instala las dependencias del juego."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente objetivo.",
+          "orden_instalacion": "Instala con `-a codex -g`."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente objetivo.",
+          "orden_instalacion": "Instala con `-a claude-code -g`."
+        }
+      ],
+      "que_es": "Paquete de nueve skills (MIT) de Majid Manzarpour para Codex y Claude Code, centrado en crear juegos de navegador con Three.js. Sin releases; último cambio en septiembre de 2026.",
+      "que_hace": "Un skill director (`threejs-game-director`) mantiene el alcance y la dirección artística y deriva la jugabilidad, los recursos y el pulido a skills especialistas, delegando trabajo en paralelo cuando el agente lo permite. Incluye demos jugables publicadas.",
+      "como_lo_hace": "Incluye `SKILL.md`, referencias, scripts de ayuda y un scaffold Vite + TypeScript + Three.js. Se instala con `npx skills add majidmanzarpour/threejs-game-skills --skill '*' -a codex` (o `-a claude-code`). Funciona sin claves; opcionalmente usa Tripo (3D), la API de imágenes de Gemini y ElevenLabs (audio) mediante variables de entorno.",
+      "descripcion_notas": "Las claves opcionales nunca deben ir en el código del navegador (lo advierte el README).",
+      "descripcion_fuentes": [
+        "https://github.com/majidmanzarpour/threejs-game-skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "majidmanzarpour/threejs-game-skills",
+        "archived": false,
+        "pushed_at": "2026-09-28",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.",
       "body": "Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.",
       "install": {
@@ -116461,7 +117288,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "three.js",
+          "label": "three.js"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "aprender",
         "configurar-claude-code",
@@ -116492,7 +117332,11 @@
       "desc": "Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una escena web; Revisar migraciones de Three.js",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "three.js",
+        "react-three-fiber",
+        "claude-code"
+      ],
       "alt": [
         "3dviz-pro-max"
       ],
@@ -116608,6 +117452,43 @@
       "stars": 4197,
       "license": "MIT",
       "homepage": "https://x.com/cloudxdev",
+      "combina_con": [
+        {
+          "id": "three.js",
+          "motivo": "Biblioteca objetivo (r186).",
+          "orden_instalacion": "Instala `three@0.186` para que el código coincida con las skills."
+        },
+        {
+          "id": "react-three-fiber",
+          "motivo": "Versión cubierta (9.8, con drei 10.7).",
+          "orden_instalacion": "Fija las versiones indicadas."
+        },
+        {
+          "id": "claude-code",
+          "motivo": "Agente objetivo.",
+          "orden_instalacion": "Copia las skills a nivel global o de proyecto."
+        }
+      ],
+      "que_es": "Archivos de skill (MIT) de CloudAI-X que dan a Claude Code conocimiento actual y verificado de three.js. Sin releases; último cambio en octubre de 2026.",
+      "que_hace": "Corrige que los modelos mezclen versiones antiguas de three.js. Apunta a three.js r186, React Three Fiber 9.8 con drei 10.7 y gltf-transform 4.5, y cubre los cambios recientes (por ejemplo, RGBELoader pasó a HDRLoader y Clock a Timer). Tiene skills para fundamentos, geometría, materiales, iluminación, texturas, animación y más.",
+      "como_lo_hace": "Skills en Markdown instalables con `npx skills add cloudai-x/threejs-skills` o copiándolas a `~/.claude/skills/` o `.claude/skills/`.",
+      "descripcion_notas": "Alternativa (elige una): 3dviz-pro-max.",
+      "descripcion_fuentes": [
+        "https://github.com/CloudAI-X/threejs-skills/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "CloudAI-X/threejs-skills",
+        "archived": false,
+        "pushed_at": "2026-10-19",
+        "license": "MIT",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.",
       "body": "Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.",
       "install": {
@@ -116621,7 +117502,20 @@
           "label": "3dviz-pro-max"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "three.js",
+          "label": "three.js"
+        },
+        {
+          "id": "react-three-fiber",
+          "label": "react-three-fiber"
+        },
+        {
+          "id": "claude-code",
+          "label": "claude-code"
+        }
+      ],
       "areas": [
         "frontend",
         "aprender",
@@ -116653,9 +117547,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un sistema de diseño; Revisar un formulario",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "taste-skill",
-        "impeccable",
-        "tailwindcss"
+        "claude-code",
+        "tailwindcss",
+        "design.md"
       ],
       "alt": [],
       "stack": "Node; Python para las utilidades según ruta; agente; brief",
@@ -116772,6 +117666,45 @@
       "stars": 149533,
       "license": "MIT",
       "homepage": "https://www.uupm.cc/",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Plugin oficial.",
+          "orden_instalacion": "Comprueba que tienes Python 3 instalado."
+        },
+        {
+          "id": "tailwindcss",
+          "motivo": "HTML+Tailwind es uno de sus stacks soportados.",
+          "orden_instalacion": "Instala Tailwind en el proyecto antes de aplicar el sistema."
+        },
+        {
+          "id": "design.md",
+          "motivo": "Guardar el sistema generado como DESIGN.md persistente y validable (combinación por arquitectura).",
+          "orden_instalacion": "Genera primero y valida después con `npx @google/design.md lint`."
+        }
+      ],
+      "que_es": "Skill de «inteligencia de diseño» (MIT) de NextLevelBuilder para construir interfaces profesionales en múltiples plataformas. Muy popular y activa (v2.15.0); el README promociona otros productos del mismo equipo.",
+      "que_hace": "Su generador de sistemas de diseño analiza los requisitos del proyecto y propone un sistema completo: estilo, paleta (192 paletas por tipo de producto), tipografías (74 combinaciones con Google Fonts), patrones y antipatrones. Cubre 22 stacks, entre ellos React, Next.js, Astro, Vue, Svelte, SwiftUI, React Native, Flutter, HTML+Tailwind, shadcn/ui, Jetpack Compose y Angular.",
+      "como_lo_hace": "Datos estructurados y un script de búsqueda en Python 3 (solo biblioteca estándar, sin red) que consulta el agente. Se instala como plugin de Claude Code (`/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill`) o con su CLI (`npx ui-ux-pro-max-cli init --ai claude` y otros agentes).",
+      "descripcion_notas": "Se quitaron taste-skill e impeccable: se solapan en función, no se complementan.",
+      "descripcion_fuentes": [
+        "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "09-skills-diseno-web",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "nextlevelbuilder/ui-ux-pro-max-skill",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v2.15.0 (2026-08-13)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a \"plantilla\".",
       "body": "Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a \"plantilla\".",
       "install": {
@@ -116782,16 +117715,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "taste-skill",
-          "label": "taste-skill"
-        },
-        {
-          "id": "impeccable",
-          "label": "impeccable"
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
           "id": "tailwindcss",
           "label": "tailwindcss"
+        },
+        {
+          "id": "design.md",
+          "label": "design.md"
         }
       ],
       "areas": [

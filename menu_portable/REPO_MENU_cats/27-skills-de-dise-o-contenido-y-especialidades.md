@@ -31,6 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige una receta sencilla y compara el render con un criterio de composición explícito
 **Qué comprobar:** Puedes inspeccionar escena y resultados del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `claude-code`, `codex`
 **Alternativas (elige una):** `threejs-skills`
 
 ## `agency-agents`
@@ -92,6 +93,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una figura de una máquina sencilla con tres partes etiquetadas y comprueba su estructura
 **Qué comprobar:** Puedes identificar las piezas y probar sus interacciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `opencode`, `codex`
 
 ## `arcads-claude-code`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=— · tags=video,image,skills,python
@@ -216,6 +218,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prepara la dirección de arte y revisa modelo, coste y referencia antes de generar una pieza
 **Qué comprobar:** Puedes identificar proveedor y resultado y decidir una iteración concreta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `hyperframes`, `remotion`
 
 ## `design-dna`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
@@ -245,6 +248,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae tokens de una captura propia y compara el resultado con sus colores medidos
 **Qué comprobar:** Puedes separar medidas de interpretación del estilo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `design.md`, `figma-context-mcp`
 
 ## `design.md`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,typescript
@@ -274,7 +278,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Valida un archivo de identidad y corrige una referencia de token rota
 **Qué comprobar:** Puedes revisar el JSON de hallazgos y repetir la validación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `impeccable`
+**Combina con:** `tailwindcss`, `impeccable`, `claude-code`
 
 ## `dream-loop`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
@@ -368,6 +372,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Revisa cinco reglas aplicables a un formulario y anota evidencia y pendientes
 **Qué comprobar:** Puedes separar regla cumplida, hallazgo y elemento no aplicable
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `chrome-devtools-mcp`, `modern-web-guidance`
 
 ## `genjutsu`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,python
@@ -459,6 +464,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una timeline pequeña y revisa limpieza de recursos y estados finales
 **Qué comprobar:** Puedes comprobar orden, duración y comportamiento al desmontar
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gsap`, `claude-code`, `motion-design-skill`
 
 ## `hallmark`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,css
@@ -488,6 +494,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Diseña una sección con referencias pertinentes y revisa créditos y jerarquía del contenido
 **Qué comprobar:** Puedes explicar el papel de cada imagen y el orden de lectura
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `humanizer`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,prompts,docs
@@ -578,7 +585,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala para un proyecto de prueba y revisa hallazgos del detector antes de pedir cambios
 **Qué comprobar:** Puedes distinguir reglas deterministas de recomendaciones del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `taste-skill`, `ui-ux-pro-max-skill`
+**Combina con:** `claude-code`, `codex`, `design.md`
 
 ## `instagram-agent-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -670,6 +677,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea tres bocetos SVG simples y prueba legibilidad a tamaño pequeño
 **Qué comprobar:** Puedes comparar silueta, espaciado y contraste
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gemini-cli`, `codex`
 
 ## `marketingskills`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,analytics,email,search
@@ -760,6 +768,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Busca una guía sobre formularios y recupera su contenido antes de proponer una implementación
 **Qué comprobar:** Puedes identificar recomendación, compatibilidad y patrón aplicable
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `front-end-checklist`
 
 ## `motion-design-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
@@ -789,6 +798,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide dos alternativas de timing para un cambio de estado y prueba cuál comunica mejor la transición
 **Qué comprobar:** Puedes justificar duración, easing y orden
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gsap`, `motion`
 
 ## `no-ai-slop`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
@@ -878,7 +888,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige una skill de diseño y pide una revisión acotada antes de implementar sugerencias
 **Qué comprobar:** Puedes convertir cada recomendación en un cambio verificable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui-ux-pro-max-skill`
+**Combina con:** `claude-code`, `motion`, `motion-design-skill`
 
 ## `social-media-research-skills`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=— · tags=dominio,agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor · tools=claude-code,codex
@@ -939,7 +949,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta Stitch y pide una sola pantalla a partir de un brief antes de construir una app completa
 **Qué comprobar:** Puedes revisar diseño y recursos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `stitch-sdk`, `gemini-cli`
+**Combina con:** `codex`, `claude-code`, `gemini-cli`, `stitch-sdk`
 
 ## `stop-slop`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,prompts,docs
@@ -1000,7 +1010,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Diseña una página de prueba con referencias acreditadas y ejecuta su comprobación visual
 **Qué comprobar:** Puedes revisar composición, texto y créditos de recursos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui-ux-pro-max-skill`, `impeccable`
+**Combina con:** `claude-code`, `ffmpeg`, `stitch-skills`
 
 ## `threejs-game-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,python
@@ -1030,6 +1040,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un juego con una sola mecánica y recursos procedurales antes de añadir servicios de assets
 **Qué comprobar:** Puedes jugar y comprobar reglas de victoria y reinicio
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `codex`, `claude-code`
 
 ## `threejs-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
@@ -1059,6 +1070,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide una escena mínima indicando tu release y comprueba sus imports con la documentación de esa versión
 **Qué comprobar:** Puedes relacionar el código con APIs vigentes de la release
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `react-three-fiber`, `claude-code`
 **Alternativas (elige una):** `3dviz-pro-max`
 
 ## `ui-ux-pro-max-skill`
@@ -1090,4 +1102,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicializa únicamente tu agente y genera una propuesta de sistema visual para una app ficticia
 **Qué comprobar:** Puedes comprobar colores, tipografía y restricciones de la propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `taste-skill`, `impeccable`, `tailwindcss`
+**Combina con:** `claude-code`, `tailwindcss`, `design.md`
