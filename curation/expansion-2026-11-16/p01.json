@@ -1,0 +1,587 @@
+{
+ "batch": "p01",
+ "title": "Automatización, agentes en Python e investigación web",
+ "checked_at": "2026-11-16",
+ "alt_groups": [
+  [
+   "airflow",
+   "prefect",
+   "dagster",
+   "kestra"
+  ],
+  [
+   "grist-core",
+   "baserow",
+   "teable",
+   "nocodb"
+  ],
+  [
+   "freshrss",
+   "miniflux"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "gristlabs/grist-core",
+   "id": "grist-core",
+   "cat": 1,
+   "sub": "internas",
+   "kind": "server",
+   "name": "Grist",
+   "one": "Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite.",
+   "how": "Servidor TypeScript con motor de fórmulas en Python; cada documento es un archivo SQLite que se puede copiar y restaurar.",
+   "examples": [
+    "sustituir una hoja compartida por tablas relacionadas con permisos por fila",
+    "montar un inventario o CRM ligero en tu propio servidor"
+   ],
+   "try": [
+    "Arranca la imagen Docker de prueba, crea un documento con dos tablas enlazadas y una fórmula Python.",
+    "La fórmula se recalcula al editar la tabla referenciada y el documento sigue disponible tras reiniciar con /persist montado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "data",
+    "spreadsheet",
+    "docker",
+    "python"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "ai": "optional",
+   "models": "Asistente de fórmulas opcional con OpenAI, Llama u otros modelos vía OpenRouter",
+   "cmd": "docker run -p 8484:8484 -it gristlabs/grist",
+   "caveat": "Open-core: grist-core es Apache-2.0, pero algunas extensiones de la edición Enterprise usan licencia propietaria."
+  },
+  {
+   "gh": "apache/airflow",
+   "id": "airflow",
+   "cat": 1,
+   "sub": "motores",
+   "kind": "server",
+   "name": "Apache Airflow",
+   "one": "Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización.",
+   "how": "Los workflows se escriben como DAGs de Python; el scheduler reparte tareas entre workers y la interfaz muestra ejecuciones, logs y dependencias.",
+   "examples": [
+    "programar un ETL diario que descarga, transforma y carga datos en un almacén",
+    "coordinar entrenamientos y despliegues de modelos con dependencias y reintentos"
+   ],
+   "try": [
+    "Levanta un entorno local de pruebas siguiendo la guía oficial y ejecuta un DAG de ejemplo con dos tareas dependientes.",
+    "El DAG aparece en la interfaz, ambas tareas terminan en verde y puedes leer sus logs."
+   ],
+   "setup": "heavy",
+   "tags": [
+    "automation",
+    "data",
+    "python",
+    "docker"
+   ],
+   "goals": [
+    "automatizar"
+   ]
+  },
+  {
+   "gh": "temporalio/temporal",
+   "id": "temporal",
+   "cat": 1,
+   "sub": "motores",
+   "kind": "server",
+   "name": "Temporal",
+   "one": "Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor.",
+   "how": "Un servidor en Go guarda el historial de cada workflow; los workers escritos con los SDK (Go, Java, Python, TypeScript, .NET…) ejecutan el código y se reanudan tras un fallo.",
+   "examples": [
+    "procesos de negocio largos como pagos o altas que deben completarse aunque caiga un servicio",
+    "agentes de IA con pasos largos que necesitan reintentos y reanudación"
+   ],
+   "try": [
+    "Instala la CLI con `brew install temporal`, arranca el servidor de desarrollo y ejecuta el ejemplo hello-world de un SDK.",
+    "El workflow aparece completado en la interfaz web local con su historial de eventos."
+   ],
+   "setup": "medium",
+   "tags": [
+    "automation",
+    "go",
+    "server",
+    "agents"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "cmd": "brew install temporal"
+  },
+  {
+   "gh": "teableio/teable",
+   "id": "teable",
+   "cat": 1,
+   "sub": "internas",
+   "kind": "server",
+   "name": "Teable",
+   "one": "Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA.",
+   "how": "Aplicación TypeScript (Next.js y NestJS) que guarda las tablas en PostgreSQL y añade vistas, permisos, API y automatizaciones con pasos de IA.",
+   "examples": [
+    "gestionar un catálogo o pipeline comercial con vistas de cuadrícula, kanban y calendario",
+    "dar a un equipo tablas en PostgreSQL con permisos y API sin escribir backend"
+   ],
+   "try": [
+    "Despliega Teable con la guía Docker oficial y crea una tabla con un formulario y una vista kanban.",
+    "Los registros enviados por el formulario aparecen en la tabla y en la vista kanban, y se conservan tras reiniciar."
+   ],
+   "setup": "medium",
+   "tags": [
+    "data",
+    "no-code",
+    "typescript",
+    "docker"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "ai": "optional",
+   "models": "Funciones de IA opcionales (chat, rellenado de campos, constructor de apps) con el proveedor que configures",
+   "caveat": "Licencia AGPL-3.0 (paquetes bajo packages/ en MIT); la edición Enterprise se activa con licencia comercial.",
+   "license": "AGPL-3.0"
+  },
+  {
+   "gh": "baserow/baserow",
+   "id": "baserow",
+   "cat": 1,
+   "sub": "internas",
+   "kind": "server",
+   "name": "Baserow",
+   "one": "Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.",
+   "how": "Backend Django sobre PostgreSQL y frontend Vue; se ejecuta en un único contenedor Docker o con Compose y expone todas las tablas por API.",
+   "examples": [
+    "crear una base de clientes o inventario compartida sin escribir backend",
+    "publicar un portal o formulario sobre tus propias tablas en tu dominio"
+   ],
+   "try": [
+    "Arranca el contenedor de la documentación con un volumen de datos y crea una base con una tabla y un formulario.",
+    "El formulario guarda filas en la tabla y la API REST devuelve esos registros con un token."
+   ],
+   "setup": "easy",
+   "tags": [
+    "data",
+    "no-code",
+    "python",
+    "docker"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "ai": "optional",
+   "models": "Asistente de IA opcional para crear bases y flujos en lenguaje natural",
+   "cmd": "docker run -v baserow_data:/baserow/data -p 80:80 -p 443:443 baserow/baserow:2.4.3",
+   "caveat": "Open-core: el núcleo es MIT, pero las funciones premium y enterprise tienen licencia propia.",
+   "license": "MIT"
+  },
+  {
+   "gh": "PrefectHQ/prefect",
+   "id": "prefect",
+   "cat": 1,
+   "sub": "motores",
+   "kind": "framework",
+   "name": "Prefect",
+   "one": "Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización.",
+   "how": "Decora funciones con @flow y @task; un servidor Prefect autoalojado (o Prefect Cloud) registra ejecuciones, programaciones y eventos.",
+   "examples": [
+    "convertir un script de ingesta en un flujo con reintentos y ejecución programada",
+    "encadenar pasos de datos o ML con dependencias dinámicas y observabilidad"
+   ],
+   "try": [
+    "Instala con `pip install -U prefect`, ejecuta el ejemplo de estrellas de GitHub del README y abre el servidor local.",
+    "El flujo y sus tareas aparecen como completados en la interfaz con sus logs."
+   ],
+   "setup": "easy",
+   "tags": [
+    "automation",
+    "data",
+    "python"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "cmd": "pip install -U prefect"
+  },
+  {
+   "gh": "dagster-io/dagster",
+   "id": "dagster",
+   "cat": 1,
+   "sub": "motores",
+   "kind": "framework",
+   "name": "Dagster",
+   "one": "Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje.",
+   "how": "Los activos se definen con @dg.asset; Dagster deduce dependencias, programa materializaciones y muestra linaje y metadatos en su interfaz web.",
+   "examples": [
+    "mantener al día un conjunto de tablas analíticas con dependencias y linaje visibles",
+    "probar pipelines de datos con tests unitarios antes de llevarlos a producción"
+   ],
+   "try": [
+    "Instala con `uv add dagster dagster-webserver dagster-dg-cli`, define dos activos dependientes y materialízalos desde la interfaz.",
+    "La interfaz muestra el grafo de activos y ambos aparecen materializados con sus metadatos."
+   ],
+   "setup": "medium",
+   "tags": [
+    "automation",
+    "data",
+    "python"
+   ],
+   "goals": [
+    "automatizar"
+   ],
+   "cmd": "uv add dagster dagster-webserver dagster-dg-cli"
+  },
+  {
+   "gh": "agentscope-ai/agentscope",
+   "id": "agentscope",
+   "cat": 3,
+   "sub": "py",
+   "kind": "framework",
+   "name": "AgentScope",
+   "one": "Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable.",
+   "how": "Biblioteca Python con abstracciones de modelo, memoria, herramientas (Python, MCP y skills), pipelines multiagente y un servicio de agentes con interfaz.",
+   "examples": [
+    "construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso",
+    "orquestar un equipo de agentes con un líder que delega tareas"
+   ],
+   "try": [
+    "Instala con `uv pip install agentscope` y ejecuta el ejemplo de inicio rápido con un modelo configurado.",
+    "El agente responde y usa al menos una herramienta, y puedes ver sus pasos en la salida."
+   ],
+   "setup": "medium",
+   "tags": [
+    "agents",
+    "python",
+    "mcp",
+    "framework"
+   ],
+   "goals": [
+    "mcp"
+   ],
+   "ai": "local_choice",
+   "models": "OpenAI, Anthropic, Gemini, DashScope, xAI, Ollama y otros proveedores configurables",
+   "cmd": "uv pip install agentscope",
+   "mcp": true
+  },
+  {
+   "gh": "FoundationAgents/OpenManus",
+   "id": "openmanus",
+   "cat": 3,
+   "sub": "py",
+   "kind": "agent",
+   "name": "OpenManus",
+   "one": "Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.",
+   "how": "Aplicación Python que conecta un LLM compatible con OpenAI a herramientas de navegador (Browser Use vía MCP), ejecución de Python y edición de archivos.",
+   "examples": [
+    "delegar una investigación web que termine en un informe guardado en disco",
+    "experimentar con un agente general en local antes de elegir un framework"
+   ],
+   "try": [
+    "Crea el entorno con uv según el README, configura la clave del modelo en config.toml y lanza una tarea pequeña de búsqueda.",
+    "El agente completa los pasos visibles en consola y deja el resultado en el espacio de trabajo."
+   ],
+   "setup": "medium",
+   "tags": [
+    "agents",
+    "python",
+    "browser"
+   ],
+   "goals": [
+    "investigar"
+   ],
+   "ai": "required",
+   "models": "Cualquier API compatible con OpenAI configurada en config.toml (el ejemplo usa la de OpenAI)"
+  },
+  {
+   "gh": "OpenBMB/ChatDev",
+   "id": "chatdev",
+   "cat": 3,
+   "sub": "py",
+   "kind": "agent",
+   "name": "ChatDev",
+   "one": "Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.",
+   "how": "ChatDev 2.0 (DevAll) define sistemas multiagente por configuración con backend Python, frontend web y ejecución opcional con Docker Compose.",
+   "examples": [
+    "prototipar una pequeña aplicación con agentes que actúan como roles de un equipo",
+    "estudiar patrones de colaboración multiagente de los artículos del proyecto"
+   ],
+   "try": [
+    "Arranca la aplicación con `docker compose up --build`, configura una clave de modelo y ejecuta un flujo de ejemplo.",
+    "El flujo termina y muestra los mensajes entre agentes y el artefacto generado."
+   ],
+   "setup": "medium",
+   "tags": [
+    "agents",
+    "python",
+    "research"
+   ],
+   "goals": [
+    "programar"
+   ],
+   "ai": "required",
+   "models": "API de un proveedor de LLM configurada por el usuario",
+   "cmd": "docker compose up --build"
+  },
+  {
+   "gh": "camel-ai/camel",
+   "id": "camel",
+   "cat": 3,
+   "sub": "py",
+   "kind": "framework",
+   "name": "CAMEL",
+   "one": "Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores.",
+   "how": "Biblioteca Python con ChatAgent, roles, toolkits, memorias, almacenes vectoriales y conectores a modelos remotos y locales.",
+   "examples": [
+    "generar datos sintéticos con agentes que dialogan en roles",
+    "montar un experimento de simulación con muchos agentes y medir su comportamiento"
+   ],
+   "try": [
+    "Instala con `pip install camel-ai`, configura la clave de un modelo y ejecuta el ejemplo de ChatAgent.",
+    "El agente responde y el script termina sin errores mostrando la conversación."
+   ],
+   "setup": "easy",
+   "tags": [
+    "agents",
+    "python",
+    "research",
+    "framework"
+   ],
+   "goals": [
+    "aprender"
+   ],
+   "ai": "local_choice",
+   "models": "OpenAI y otros proveedores; plataformas locales como Ollama o vLLM",
+   "cmd": "pip install camel-ai"
+  },
+  {
+   "gh": "DIYgod/RSSHub",
+   "id": "rsshub",
+   "cat": 4,
+   "sub": "busqueda",
+   "kind": "server",
+   "name": "RSSHub",
+   "one": "Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker.",
+   "how": "Servidor Node.js/TypeScript con miles de rutas mantenidas por la comunidad que convierten páginas y APIs en feeds RSS, Atom o JSON.",
+   "examples": [
+    "seguir canales, perfiles o webs sin RSS desde tu lector de feeds",
+    "alimentar un flujo de monitorización de fuentes con feeds uniformes"
+   ],
+   "try": [
+    "Despliega RSSHub con Docker según su documentación y abre una ruta de ejemplo en el navegador.",
+    "La ruta devuelve un feed RSS válido que tu lector puede suscribir."
+   ],
+   "setup": "easy",
+   "tags": [
+    "research",
+    "rss",
+    "typescript",
+    "docker"
+   ],
+   "goals": [
+    "investigar"
+   ],
+   "caveat": "Algunas rutas extraen sitios sin API pública: revisa sus términos de uso."
+  },
+  {
+   "gh": "mikf/gallery-dl",
+   "id": "gallery-dl",
+   "cat": 4,
+   "sub": "social",
+   "kind": "app",
+   "name": "gallery-dl",
+   "one": "Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres de archivo configurables.",
+   "how": "CLI en Python con extractores por sitio, archivo de configuración JSON y plantillas de nombres; delega vídeos HLS/DASH en yt-dlp.",
+   "examples": [
+    "archivar una colección propia de imágenes con metadatos y nombres ordenados",
+    "descargar un conjunto de imágenes públicas para un dataset con permiso de uso"
+   ],
+   "try": [
+    "Instala gallery-dl (pip, Homebrew o binario) y descarga una galería pública pequeña a una carpeta de prueba.",
+    "Las imágenes quedan en disco con la estructura de carpetas y nombres configurada."
+   ],
+   "setup": "easy",
+   "tags": [
+    "scraping",
+    "python",
+    "image",
+    "cli"
+   ],
+   "goals": [
+    "investigar"
+   ],
+   "cmd": "brew install gallery-dl",
+   "caveat": "Descargar contenido ajeno puede vulnerar términos de servicio o derechos de autor."
+  },
+  {
+   "gh": "FreshRSS/FreshRSS",
+   "id": "freshrss",
+   "cat": 4,
+   "sub": "busqueda",
+   "kind": "server",
+   "name": "FreshRSS",
+   "one": "Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones.",
+   "how": "Aplicación PHP con base de datos SQLite, MySQL o PostgreSQL; expone APIs compatibles con clientes móviles y una CLI de administración.",
+   "examples": [
+    "centralizar en tu servidor los feeds de noticias y blogs que sigues",
+    "seguir webs sin RSS con reglas de extracción XPath"
+   ],
+   "try": [
+    "Despliega FreshRSS con Docker, importa un archivo OPML pequeño y actualiza los feeds.",
+    "Los artículos aparecen en la interfaz y un cliente móvil compatible puede sincronizarlos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "research",
+    "rss",
+    "php",
+    "docker"
+   ],
+   "goals": [
+    "investigar"
+   ]
+  },
+  {
+   "gh": "wallabag/wallabag",
+   "id": "wallabag",
+   "cat": 4,
+   "sub": "busqueda",
+   "kind": "server",
+   "name": "wallabag",
+   "one": "Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y extensión de navegador.",
+   "how": "Aplicación PHP (Symfony) que extrae el contenido limpio de cada página y lo guarda con etiquetas, anotaciones y exportación.",
+   "examples": [
+    "guardar artículos para leerlos sin conexión en el móvil",
+    "archivar lecturas con etiquetas y anotaciones en tu propio servidor"
+   ],
+   "try": [
+    "Instala wallabag con Docker o según su documentación y guarda un artículo desde la extensión del navegador.",
+    "El artículo aparece limpio en la lista de lectura y se puede exportar."
+   ],
+   "setup": "medium",
+   "tags": [
+    "research",
+    "read-later",
+    "php",
+    "docker"
+   ],
+   "goals": [
+    "investigar"
+   ]
+  },
+  {
+   "gh": "miniflux/v2",
+   "id": "miniflux",
+   "cat": 4,
+   "sub": "busqueda",
+   "kind": "server",
+   "name": "Miniflux",
+   "one": "Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más de 25 integraciones.",
+   "how": "Binario único en Go con PostgreSQL; elimina rastreadores, admite OPML y se integra con servicios externos y APIs compatibles.",
+   "examples": [
+    "leer feeds sin rastreadores en una instancia propia ligera",
+    "enviar artículos automáticamente a un servicio de lectura o notas"
+   ],
+   "try": [
+    "Despliega Miniflux con PostgreSQL según la guía, importa un OPML y lee un artículo.",
+    "Los feeds se actualizan, la búsqueda devuelve resultados y no aparecen píxeles de seguimiento."
+   ],
+   "setup": "easy",
+   "tags": [
+    "research",
+    "rss",
+    "go",
+    "docker"
+   ],
+   "goals": [
+    "investigar"
+   ]
+  },
+  {
+   "gh": "gocolly/colly",
+   "id": "colly",
+   "cat": 4,
+   "sub": "crawlers",
+   "kind": "library",
+   "name": "Colly",
+   "one": "Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela.",
+   "how": "Biblioteca Go con un Collector que visita URLs y dispara callbacks sobre elementos HTML; gestiona concurrencia, retardos y robots.txt.",
+   "examples": [
+    "escribir un rastreador rápido que extraiga datos estructurados de un sitio",
+    "archivar páginas de un dominio respetando límites de velocidad"
+   ],
+   "try": [
+    "Crea un módulo Go, añade Colly v2 y ejecuta uno de los ejemplos del repositorio contra un sitio de prueba.",
+    "El programa visita las páginas y escribe los campos extraídos en la salida."
+   ],
+   "setup": "easy",
+   "tags": [
+    "scraping",
+    "go",
+    "library"
+   ],
+   "goals": [
+    "investigar"
+   ],
+   "caveat": "Respeta robots.txt y los términos de cada sitio al rastrear."
+  },
+  {
+   "gh": "projectdiscovery/katana",
+   "id": "katana",
+   "cat": 4,
+   "sub": "crawlers",
+   "kind": "app",
+   "name": "Katana",
+   "one": "Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alcance y salida JSON.",
+   "how": "CLI en Go que rastrea URLs con peticiones directas o con Chrome sin interfaz, filtra por alcance y emite endpoints en STDOUT, archivo o JSON.",
+   "examples": [
+    "descubrir los endpoints de una aplicación propia antes de una auditoría autorizada",
+    "mapear rutas generadas por JavaScript en un sitio de pruebas"
+   ],
+   "try": [
+    "Ejecuta la imagen Docker oficial contra el sitio de ejemplo books.toscrape.com que usa el README.",
+    "Katana lista las URLs descubiertas sin errores."
+   ],
+   "setup": "easy",
+   "tags": [
+    "scraping",
+    "go",
+    "security",
+    "cli"
+   ],
+   "goals": [
+    "investigar"
+   ],
+   "cmd": "go install github.com/projectdiscovery/katana/cmd/katana@latest",
+   "caveat": "Úsalo solo en sitios propios o con autorización: el rastreo agresivo puede violar términos de uso o leyes."
+  },
+  {
+   "gh": "spotDL/spotify-downloader",
+   "id": "spotdl",
+   "cat": 4,
+   "sub": "social",
+   "kind": "app",
+   "name": "spotDL",
+   "one": "CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras y metadatos.",
+   "how": "Programa Python que lee los metadatos de Spotify, busca el audio en YouTube con yt-dlp y lo convierte con FFmpeg.",
+   "examples": [
+    "conservar una copia local de listas de reproducción propias",
+    "etiquetar automáticamente archivos de audio con metadatos de Spotify"
+   ],
+   "try": [
+    "Instala con `pip install spotdl`, prepara FFmpeg y descarga una canción con su URL.",
+    "El archivo de audio queda en la carpeta con título, artista y carátula incrustados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "audio",
+    "python",
+    "cli"
+   ],
+   "goals": [
+    "investigar"
+   ],
+   "cmd": "pip install spotdl",
+   "caveat": "Puede infringir derechos de autor y los términos de Spotify y YouTube; úsalo solo con contenido que tengas derecho a descargar."
+  }
+ ]
+}

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Scene.js, biblioteca JavaScript y CSS de animación basada en líneas de tiempo, de @daybrush. Licencia MIT. Tiene ~2.8k estrellas y no se actualiza desde junio de 2023 (1.10.3).
+
+## ¿Qué hace?
+
+Organiza animaciones de propiedades CSS y objetos JS en escenas y fotogramas clave con control de reproducción. Con `@scenejs/media` también sincroniza audio y vídeo.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install scenejs` o desde CDN. Forma parte del ecosistema de @daybrush (Moveable, Selecto).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [motion-design-skill](motion-design-skill.md) | Principios de ritmo y transiciones para diseñar la línea de tiempo. (combinación por arquitectura) | Añade la skill al agente que escribe la animación. |
+| [remotion](remotion.md) | Vídeo programático cuando la línea de tiempo crece. (combinación por arquitectura) | Migra la secuencia a Remotion. |
+| [zdog](zdog.md) | Animar ilustraciones pseudo-3D. (combinación por arquitectura) | Anima propiedades de Zdog desde la escena. |
+
+**Notas:** Sin alternativas declaradas. Inactivo.
+
+Estado en GitHub: activo · último push 2023-06-19 · última versión publicada 1.10.3 (2023-06-05) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/daybrush/scenejs/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los bloques JavaScript se integran en una app y no son órdenes para pegar en la terminal; los plugins de medios tienen dependencias separadas |
 | Coste | Sin pago a un modelo en la ruta básica. Biblioteca MIT sin modelo ni API de IA |
 | Equipo | Preparación según la ruta elegida. Node; proyecto web; elemento de prueba |
-
-Los bloques JavaScript se integran en una app y no son órdenes para pegar en la terminal; los plugins de medios tienen dependencias separadas
-
-## Qué puedes hacer con él
-
-Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos.
-
-## Por qué destaca
-
-Usos propuestos: Crear una animación de interfaz; Explorar una línea de tiempo web.
-
-## Cómo funciona
 
 Los bloques JavaScript se integran en una app y no son órdenes para pegar en la terminal; los plugins de medios tienen dependencias separadas
 

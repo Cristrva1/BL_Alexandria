@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+SWE-bench, benchmark para evaluar si los modelos resuelven issues reales de GitHub, presentado en ICLR 2024 (oral) y ampliado con SWE-bench Multimodal (ICLR 2025). Licencia MIT. Es estable (~6k estrellas, sin releases) y su último cambio es de septiembre de 2026.
+
+## ¿Qué hace?
+
+Ofrece datasets (SWE-bench, Verified, Lite, Multimodal) con issues y tests, y un arnés que aplica los parches generados y ejecuta los tests en contenedores. SWE-bench Multimodal v2 es open source con 480 tareas. sb-cli permite evaluar en la nube.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -e .` y requiere Docker. El README recomienda una máquina x86_64 con al menos 120 GB libres, 16 GB de RAM y 8 núcleos; arm64 es experimental. Los resultados se guardan en `logs/evaluation/<run_id>/`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenHands](openhands.md) | Evaluar agentes de programación sobre SWE-bench. (combinación por arquitectura) | Genera predicciones con el agente y evalúalas con el arnés. |
+| [Aider](aider.md) | Comparar el rendimiento de distintos modelos en Aider. (combinación por arquitectura) | Exporta los parches como predicciones. |
+| [Codex CLI](codex.md) | Medir un agente CLI en tareas reales. (combinación por arquitectura) | Ejecuta el agente por instancia y evalúa los parches. |
+
+**Notas:** Sin alternativas declaradas. Muy exigente en disco y CPU.
+
+Estado en GitHub: activo · último push 2026-09-18 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/SWE-bench/SWE-bench/blob/main/README.md) · [2](https://www.swebench.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El benchmark no demuestra que un agente resuelva cualquier issue real; usa el conjunto y la versión de tareas correspondientes |
 | Coste | El coste depende del proveedor o la ruta. El harness no necesita llamar un modelo para evaluar predicciones; generar parches y levantar contenedores sí puede consumir modelos y cómputo |
 | Equipo | Preparación según la ruta elegida. Python; Docker para evaluación; predicciones y tareas elegidas |
-
-El benchmark no demuestra que un agente resuelva cualquier issue real; usa el conjunto y la versión de tareas correspondientes
-
-## Qué puedes hacer con él
-
-Benchmark para evaluar si los modelos resuelven issues reales de GitHub.
-
-## Por qué destaca
-
-Usos propuestos: Comparar soluciones a issues reproducibles; Estudiar evaluación de agentes de programación.
-
-## Cómo funciona
 
 El benchmark no demuestra que un agente resuelva cualquier issue real; usa el conjunto y la versión de tareas correspondientes
 

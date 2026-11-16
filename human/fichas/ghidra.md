@@ -31,6 +31,12 @@ Es una aplicación Java: se instala el JDK 25 de 64 bits, se descarga la release
 | [ImHex](imhex.md) | Inspeccionar estructuras binarias y formatos con el lenguaje de patrones de ImHex. (combinación por arquitectura) | Usa ImHex para el formato del archivo y Ghidra para el código. |
 | [x64dbg](x64dbg.md) | Contrastar el análisis estático con depuración dinámica en Windows. (combinación por arquitectura) | Localiza funciones en Ghidra y pon breakpoints en x64dbg. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[angr](angr.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [craft-anything](craft-anything.md) · [rea](rea.md) · [rizin](rizin.md)
+
 **Notas:** Alternativas (elige una): radare2. Úsalo solo con software y sistemas que tengas derecho a analizar. Revisa los avisos de seguridad antes de abrir proyectos de terceros.
 
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada Ghidra_12.2_build (2026-10-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

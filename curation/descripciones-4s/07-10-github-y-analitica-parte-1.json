@@ -1,0 +1,526 @@
+{
+ "batch": "27-github-y-analitica-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "cli": {
+   "que_es": "GitHub CLI (`gh`), la herramienta oficial de GitHub para la terminal. Licencia MIT. Es madura y muy activa (~47k estrellas, v2.104.0).",
+   "que_hace": "Lleva a la terminal pull requests, issues, releases, Actions, repos, gists y la API de GitHub (`gh api`), además de extensiones de la comunidad. Funciona con GitHub.com, Enterprise Cloud y las versiones soportadas de Enterprise Server. Es la vía habitual con la que los agentes de programación operan sobre GitHub.",
+   "como_lo_hace": "Es un binario en Go para macOS, Windows y Linux, instalable con Homebrew, winget, paquetes de distribución o desde las releases. Se autentica con `gh auth login` (navegador o token). La clave PGP de los repositorios de paquetes de Linux rotó el 5 de septiembre de 2026; si fallan las actualizaciones, consulta el anuncio.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Dar al agente acceso a PR, issues y CI desde la terminal. (combinación por arquitectura)",
+     "orden_instalacion": "Autentica `gh` y permite su uso al agente."
+    },
+    {
+     "id": "github-mcp-server",
+     "motivo": "Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura)",
+     "orden_instalacion": "Usa `gh` en terminal y el servidor MCP en clientes sin shell."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `github` para usar GitHub CLI en flujos.",
+     "orden_instalacion": "GitHub CLI en marcha con sus credenciales; después añade la pieza `github` en un flujo de Activepieces."
+    },
+    {
+     "id": "antigravity-awesome-skills",
+     "motivo": "Combinación recíproca: Agentic Awesome Skills (AAS) lo enlaza como «Instalación de skills individuales con `gh skill`».",
+     "orden_instalacion": "Orden indicado desde Agentic Awesome Skills (AAS): GitHub CLI con soporte de `gh skill` instalado.",
+     "reciproca_de": "antigravity-awesome-skills"
+    },
+    {
+     "id": "awesome-copilot",
+     "motivo": "Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Trabajar con repos, PR e incidencias desde la terminal junto a Copilot (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Awesome GitHub Copilot: Independientes.",
+     "reciproca_de": "awesome-copilot"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Limita los scopes del token que uses con agentes.",
+   "fuentes": [
+    "",
+    "https://cli.github.com/manual/",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/github"
+   ],
+   "github": {
+    "name_with_owner": "cli/cli",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Go",
+    "latest_release": "v2.104.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openai-python": {
+   "que_es": "SDK oficial de OpenAI para Python. Licencia Apache-2.0. Es madura y muy activa (~32k estrellas, v3.51.0) y se genera a partir de la especificación OpenAPI de OpenAI.",
+   "que_hace": "Da acceso tipado a la API REST de OpenAI (Responses, Chat Completions, embeddings, imágenes, audio, archivos, Realtime, etc.) con clientes síncronos y asíncronos. Incluye streaming, paginación automática, reintentos, timeouts y webhooks. También admite Azure OpenAI y Bedrock mediante extras.",
+   "como_lo_hace": "Se instala con `pip install openai` y requiere Python 3.10+. Usa HTTPX2 por defecto y `aiohttp` opcionalmente (`openai[aiohttp]`). Se configura con `OPENAI_API_KEY` y puede apuntar a otro endpoint compatible con `base_url`.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "El proxy LiteLLM se consume con el SDK de OpenAI cambiando `base_url`.",
+     "orden_instalacion": "Arranca el proxy y crea el cliente con su URL y clave."
+    },
+    {
+     "id": "vllm",
+     "motivo": "vLLM expone un servidor compatible con OpenAI que se usa con este SDK.",
+     "orden_instalacion": "Lanza `vllm serve` y apunta `base_url` a `/v1`."
+    },
+    {
+     "id": "langchain",
+     "motivo": "`langchain-openai` se construye sobre este SDK.",
+     "orden_instalacion": "Instala `langchain-openai` y configura la clave."
+    },
+    {
+     "id": "openai-agents-python",
+     "motivo": "Combinación recíproca: OpenAI Agents SDK lo enlaza como «Cliente oficial de OpenAI que usa el SDK».",
+     "orden_instalacion": "Orden indicado desde OpenAI Agents SDK: Se instala como dependencia.",
+     "reciproca_de": "openai-agents-python"
+    },
+    {
+     "id": "openai-cookbook",
+     "motivo": "Combinación recíproca: OpenAI Cookbook lo enlaza como «SDK oficial usado por casi todos los notebooks».",
+     "orden_instalacion": "Orden indicado desde OpenAI Cookbook: Instala `openai` en el entorno antes de ejecutar los ejemplos.",
+     "reciproca_de": "openai-cookbook"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/openai/openai-python/blob/main/README.md",
+    "https://docs.litellm.ai/docs/proxy/user_keys",
+    "https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html",
+    "https://python.langchain.com/docs/integrations/chat/openai/"
+   ],
+   "github": {
+    "name_with_owner": "openai/openai-python",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.51.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "umami": {
+   "que_es": "Umami, plataforma open source de analítica web y de producto centrada en la privacidad, de Umami Software. Licencia MIT. Es madura (~40k estrellas, v3.5.0).",
+   "que_hace": "Mide adquisición, comportamiento, conversión y retención sin cookies, con eventos personalizados, embudos y paneles compartibles. Se puede autoalojar o usar en Umami Cloud. Ofrece una API para consultar y enviar datos.",
+   "como_lo_hace": "Es una app Next.js que requiere Node.js 20.19+ (22 LTS recomendado) y PostgreSQL 12.14+. Se instala desde el código con pnpm o con Docker Compose, que incluye la base de datos. Se añade un script de seguimiento al sitio.",
+   "combina_con": [
+    {
+     "id": "metabase",
+     "motivo": "Consultar con SQL la base PostgreSQL de Umami para informes a medida. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta Metabase a la base de Umami en solo lectura."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Paneles operativos sobre los datos de Umami en PostgreSQL. (combinación por arquitectura)",
+     "orden_instalacion": "Añade la fuente PostgreSQL en Grafana."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `umami` para usar Umami en flujos.",
+     "orden_instalacion": "Umami en marcha con sus credenciales; después añade la pieza `umami` en un flujo de Activepieces."
+    }
+   ],
+   "notas": "Alternativas (elige una): plausible, matomo.",
+   "fuentes": [
+    "https://github.com/umami-software/umami/blob/master/README.md",
+    "https://umami.is/docs",
+    "https://umami.is/docs/api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/umami"
+   ],
+   "github": {
+    "name_with_owner": "umami-software/umami",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.5.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "posthog": {
+   "que_es": "PostHog, plataforma de analítica de producto y capa de datos para producto y agentes. Licencia MIT salvo la carpeta `ee` (GitHub muestra NOASSERTION). Es muy activa (~41k estrellas).",
+   "que_hace": "Reúne analítica de producto y web, grabaciones de sesión, feature flags, experimentos, encuestas, seguimiento de errores, data warehouse y analítica de LLM y MCP. Tiene un servidor MCP remoto (`mcp.posthog.com`) para consultar y actuar sobre los datos desde agentes.",
+   "como_lo_hace": "Se usa en PostHog Cloud (EE. UU. o UE) o se autoaloja la versión «hobby» con un script Docker (recomendado 4 GB de RAM), sin soporte para producción. Se integra con un asistente (`npx @posthog/wizard`), el snippet web o SDK por lenguaje.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Servidor MCP oficial instalable con `npx @posthog/wizard mcp add`.",
+     "orden_instalacion": "Ejecuta el asistente y autoriza tu proyecto."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos.",
+     "orden_instalacion": "posthog en marcha con sus credenciales; después añade la pieza `posthog` en un flujo de Activepieces."
+    },
+    {
+     "id": "metabase",
+     "motivo": "BI sobre datos exportados del warehouse de PostHog. (combinación por arquitectura)",
+     "orden_instalacion": "Exporta o sincroniza los datos y conéctalos a Metabase."
+    },
+    {
+     "id": "claude-seo",
+     "motivo": "Combinación recíproca: claude-seo lo enlaza como «Extensión `seo-posthog` para cruzar datos de analítica».",
+     "orden_instalacion": "Orden indicado desde claude-seo: Configura credenciales de PostHog de solo lectura.",
+     "reciproca_de": "claude-seo"
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Combinación recíproca: Marketing Skills lo enlaza como «Leer métricas de producto para las skills de analítica y conversión (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marketing Skills: Usa credenciales de solo lectura siguiendo su guía de conexión.",
+     "reciproca_de": "marketingskills"
+    },
+    {
+     "id": "mautic",
+     "motivo": "Combinación recíproca: mautic lo enlaza como «PostHog mide el comportamiento en producto y Mautic actúa con campañas sobre esos segmentos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde mautic: Define un identificador común de contacto antes de sincronizar datos entre ambos.",
+     "reciproca_de": "mautic"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. El autoalojamiento «hobby» no es para producción.",
+   "fuentes": [
+    "https://github.com/PostHog/posthog/blob/master/README.md",
+    "https://posthog.com/docs/model-context-protocol",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/posthog"
+   ],
+   "github": {
+    "name_with_owner": "PostHog/posthog",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "desktop-v0.61.1042 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "plausible": {
+   "que_es": "Plausible Analytics, analítica web ligera y sin cookies hecha y alojada en la UE. Plausible CE es AGPL-3.0 o posterior y el script de seguimiento es MIT. Es madura (~30k estrellas, v3.2.1).",
+   "que_hace": "Mide visitas, fuentes, páginas, objetivos y eventos con un panel simple y un script muy ligero, cumpliendo GDPR, CCPA y PECR. Envía informes por email o Slack y ofrece API de estadísticas. La versión de pago incluye funciones premium (embudos, ingresos de ecommerce, SSO) que no están en CE.",
+   "como_lo_hace": "Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community Edition con Docker (Elixir/Phoenix con PostgreSQL y ClickHouse). Se integra añadiendo el script al sitio.",
+   "combina_con": [
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `plausible` para usar Plausible Analytics en flujos.",
+     "orden_instalacion": "Plausible Analytics en marcha con sus credenciales; después añade la pieza `plausible` en un flujo de Activepieces."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Paneles propios sobre la API o la base ClickHouse de CE. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta Grafana a ClickHouse en una instancia CE."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Analítica sin cookies para apps alojadas sobre Supabase. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el script de Plausible al frontend."
+    }
+   ],
+   "notas": "Alternativas (elige una): umami, matomo.",
+   "fuentes": [
+    "https://github.com/plausible/analytics/blob/master/README.md",
+    "https://plausible.io/docs/stats-api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/plausible"
+   ],
+   "github": {
+    "name_with_owner": "plausible/analytics",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "AGPL-3.0",
+    "primary_language": "Elixir",
+    "latest_release": "v3.2.1 (2026-05-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "matomo": {
+   "que_es": "Matomo (antes Piwik), plataforma de analítica web libre y autoalojable. Licencia GPL-3.0 o posterior. Es muy madura (~22k estrellas, 5.14.2) y el README cita más de 1,4 millones de sitios.",
+   "que_hace": "Ofrece analítica web completa con control total de los datos: visitas, objetivos, ecommerce, segmentos, informes en tiempo real y API de informes. Se amplía con un marketplace de plugins, algunos de pago. Tiene servicio en la nube de pago.",
+   "como_lo_hace": "Es una aplicación PHP que requiere PHP 8.1+ y MySQL 8.0+ o MariaDB 10.6+. Se instala en un servidor web en unos cinco minutos y genera un código JavaScript para los sitios.",
+   "combina_con": [
+    {
+     "id": "metabase",
+     "motivo": "SQL sobre la base de Matomo para informes de negocio. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta Metabase a MySQL en solo lectura."
+    },
+    {
+     "id": "grafana",
+     "motivo": "Paneles con la fuente MySQL o la API de Matomo. (combinación por arquitectura)",
+     "orden_instalacion": "Configura la fuente de datos en Grafana."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Activepieces tiene una pieza oficial `matomo` para usar Matomo en flujos.",
+     "orden_instalacion": "Matomo en marcha con sus credenciales; después añade la pieza `matomo` en un flujo de Activepieces."
+    }
+   ],
+   "notas": "Alternativas (elige una): umami, plausible.",
+   "fuentes": [
+    "https://github.com/matomo-org/matomo/blob/6.x-dev/README.md",
+    "https://developer.matomo.org/api-reference/reporting-api",
+    "https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/matomo"
+   ],
+   "github": {
+    "name_with_owner": "matomo-org/matomo",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "GPL-3.0",
+    "primary_language": "PHP",
+    "latest_release": "5.14.2 (2026-10-22)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "superset": {
+   "que_es": "Apache Superset, aplicación web de BI de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~76k estrellas, 6.1.0).",
+   "que_hace": "Permite explorar datos sin código o con un IDE SQL, crear gráficos y paneles interactivos y compartirlos. Se conecta a casi cualquier base SQL mediante SQLAlchemy y tiene capa semántica ligera, caché y control de acceso. Ofrece API REST y un framework de extensiones.",
+   "como_lo_hace": "Se prueba con Docker Compose y se despliega en producción con Kubernetes (Helm) o pip. Está escrito en Python (Flask) con frontend React y requiere una base de metadatos y un driver por cada fuente.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "DuckDB y MotherDuck son bases soportadas en la documentación.",
+     "orden_instalacion": "Instala el driver de DuckDB y añade la conexión."
+    },
+    {
+     "id": "wrenai",
+     "motivo": "Capa semántica y text-to-SQL para agentes junto a paneles de Superset. (combinación por arquitectura)",
+     "orden_instalacion": "Modela en WrenAI y visualiza en Superset."
+    },
+    {
+     "id": "echarts",
+     "motivo": "Superset usa ECharts en muchas visualizaciones. (combinación por arquitectura)",
+     "orden_instalacion": "No requiere instalación aparte."
+    },
+    {
+     "id": "hudi",
+     "motivo": "Combinación recíproca: hudi lo enlaza como «BI sobre tablas Hudi vía un motor SQL. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde hudi: Conecta Superset al motor de consulta.",
+     "reciproca_de": "hudi"
+    },
+    {
+     "id": "kestra",
+     "motivo": "Combinación recíproca: Kestra lo enlaza como «Kestra carga y transforma los datos en el almacén y Superset los visualiza en dashboards (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kestra: Primero el almacén de datos, luego Kestra para poblarlo y al final Superset conectado a ese almacén.",
+     "reciproca_de": "kestra"
+    },
+    {
+     "id": "deck.gl",
+     "motivo": "Combinación recíproca: deck.gl lo enlaza como «Apache Superset incluye tipos de gráfico basados en deck.gl para datos geoespaciales».",
+     "orden_instalacion": "Orden indicado desde deck.gl: Superset con una fuente de datos con coordenadas; después crea un gráfico deck.gl.",
+     "reciproca_de": "deck.gl"
+    }
+   ],
+   "notas": "Alternativas (elige una): metabase, redash.",
+   "fuentes": [
+    "https://github.com/apache/superset/blob/master/README.md",
+    "https://superset.apache.org/user-docs/databases/supported/duckdb"
+   ],
+   "github": {
+    "name_with_owner": "apache/superset",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "6.1.0 (2026-05-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "wrenai": {
+   "que_es": "WrenAI, motor de BI generativo (GenBI) de Canner. El motor (capa semántica MDL, text-to-SQL, MCP, CLI y conectores) es Apache-2.0 y las funciones de seguridad fina y la UI GenBI son comerciales (GitHub muestra NOASSERTION). Es activo (~18k estrellas, wren-v0.18.0).",
+   "que_hace": "Da a los agentes que ya usas una capa semántica gobernada y una capa de contexto para generar SQL fiable, desplegar paneles y guardar definiciones de negocio en Git. Conecta con más de 22 fuentes (BigQuery, Snowflake, PostgreSQL, ClickHouse, DuckDB y otras) sobre Apache DataFusion.",
+   "como_lo_hace": "Se instala con `pip install wrenai` (con extras por conector) y se añade como skill con `npx skills add Canner/WrenAI`. Funciona con Claude Code, Cursor, Cline, Codex, clientes MCP y LangChain.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente soportado mediante skill y MCP.",
+     "orden_instalacion": "Instala wrenai y añade la skill."
+    },
+    {
+     "id": "duckdb",
+     "motivo": "Conector DuckDB soportado.",
+     "orden_instalacion": "Instala el extra del conector y define el modelo MDL."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración citada en el README.",
+     "orden_instalacion": "Usa WrenAI como herramienta en LangChain."
+    },
+    {
+     "id": "superset",
+     "motivo": "Visualizar en Superset las consultas gobernadas. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta Superset a la misma base."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago.",
+   "fuentes": [
+    "https://github.com/Canner/WrenAI/blob/main/README.md",
+    "https://docs.getwren.ai"
+   ],
+   "github": {
+    "name_with_owner": "Canner/WrenAI",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "wren-v0.18.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "grafana": {
+   "que_es": "Grafana, plataforma open source de visualización y observabilidad de Grafana Labs. Licencia AGPL-3.0-only con excepciones Apache-2.0. Es muy madura (~78k estrellas, v13.3.1).",
+   "que_hace": "Consulta, visualiza y alerta sobre métricas, logs y trazas estén donde estén, con paneles dinámicos y variables. Permite explorar datos ad hoc, alertas unificadas y mezclar fuentes en un mismo panel. Se amplía con plugins de fuentes de datos y paneles.",
+   "como_lo_hace": "Se instala con paquetes, Docker o Helm, o se usa en Grafana Cloud. Está escrito en Go y TypeScript y usa SQLite, MySQL o PostgreSQL para su configuración.",
+   "combina_con": [
+    {
+     "id": "langfuse",
+     "motivo": "Paneles operativos sobre métricas de apps LLM. (combinación por arquitectura)",
+     "orden_instalacion": "Expón métricas de Langfuse a una fuente compatible y crea paneles."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Fuente PostgreSQL nativa para paneles sobre Supabase.",
+     "orden_instalacion": "Añade la conexión Postgres de Supabase como fuente."
+    },
+    {
+     "id": "umami",
+     "motivo": "Panel sobre la base PostgreSQL de Umami. (combinación por arquitectura)",
+     "orden_instalacion": "Añade la base de Umami como fuente."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. AGPL: ofrecerlo modificado como servicio obliga a publicar cambios.",
+   "fuentes": [
+    "https://github.com/grafana/grafana/blob/main/README.md",
+    "https://grafana.com/docs/grafana/latest/datasources/postgres/"
+   ],
+   "github": {
+    "name_with_owner": "grafana/grafana",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v13.3.1 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "metabase": {
+   "que_es": "Metabase, herramienta open source de BI y paneles. La edición open source es AGPL y el repo incluye también código de las ediciones comerciales (GitHub muestra NOASSERTION). Es muy madura (~50k estrellas, v0.65.4).",
+   "que_hace": "Permite que cualquiera haga preguntas a los datos con un editor visual o SQL, cree paneles y alertas y los comparta o incruste. Se conecta a las bases de datos más comunes y tiene modelos y métricas reutilizables. Metabase Cloud añade soporte, copias y auditoría.",
+   "como_lo_hace": "Se ejecuta como JAR (Java) o con Docker y necesita una base de aplicación (PostgreSQL recomendado en producción). Hay drivers de la comunidad, como el de DuckDB mantenido por MotherDuck.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Driver de DuckDB mantenido por MotherDuck.",
+     "orden_instalacion": "Añade el driver a la carpeta de plugins y crea la conexión."
+    },
+    {
+     "id": "posthog",
+     "motivo": "BI sobre datos exportados de PostHog. (combinación por arquitectura)",
+     "orden_instalacion": "Sincroniza los datos a una base que lea Metabase."
+    },
+    {
+     "id": "echarts",
+     "motivo": "Visualizaciones basadas en ECharts. (combinación por arquitectura)",
+     "orden_instalacion": "No requiere instalación aparte."
+    }
+   ],
+   "notas": "Alternativas (elige una): superset, redash.",
+   "fuentes": [
+    "https://github.com/metabase/metabase/blob/master/README.md",
+    "https://github.com/motherduckdb/metabase_duckdb_driver",
+    "https://www.metabase.com/docs/latest/databases/connections/postgresql"
+   ],
+   "github": {
+    "name_with_owner": "metabase/metabase",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Clojure",
+    "latest_release": "v0.65.4 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "redash": {
+   "que_es": "Redash, herramienta para consultar fuentes de datos con SQL, visualizar y compartir resultados. Licencia BSD-2-Clause. Es madura (~29k estrellas) y sigue publicando versiones (v26.9.0).",
+   "que_hace": "Ofrece un editor SQL en el navegador con autocompletado, visualizaciones, paneles, alertas y consultas programadas. Se conecta a bases SQL, NoSQL, APIs y servicios en la nube. Todo se comparte mediante URL.",
+   "como_lo_hace": "Se autoaloja siguiendo la guía de instalación (Docker, con imágenes preparadas para AWS y GCE). Está escrito en Python con frontend React y requiere PostgreSQL y Redis.",
+   "combina_con": [
+    {
+     "id": "duckdb",
+     "motivo": "Consultar archivos locales o analíticos con SQL. (combinación por arquitectura)",
+     "orden_instalacion": "Configura la fuente de datos correspondiente."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Fuente PostgreSQL para consultas y paneles. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta con un usuario de solo lectura."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Disparar flujos a partir de alertas de Redash. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un webhook de alerta hacia Activepieces."
+    }
+   ],
+   "notas": "Alternativas (elige una): metabase, superset.",
+   "fuentes": [
+    "https://github.com/getredash/redash/blob/master/README.md",
+    "https://redash.io/help/"
+   ],
+   "github": {
+    "name_with_owner": "getredash/redash",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "BSD-2-Clause",
+    "primary_language": "TypeScript",
+    "latest_release": "v26.9.0 (2026-09-24)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "recharts": {
+   "que_es": "Recharts, librería de gráficos para React construida con D3. Licencia MIT. Es madura (~28k estrellas, v3.10.1).",
+   "que_hace": "Permite componer gráficos (líneas, barras, áreas, tartas, radar, dispersión…) con componentes React declarativos. Renderiza SVG nativo con pocas dependencias. Es la base de los componentes de gráficos de shadcn/ui.",
+   "como_lo_hace": "Se instala con `npm install recharts react-is` y se usa dentro de componentes React. La documentación incluye ejemplos y un storybook.",
+   "combina_con": [
+    {
+     "id": "ui",
+     "motivo": "Los componentes Chart de shadcn/ui se construyen con Recharts.",
+     "orden_instalacion": "Añade el componente chart de shadcn/ui."
+    },
+    {
+     "id": "d3",
+     "motivo": "Recharts usa módulos de D3 internamente.",
+     "orden_instalacion": "No requiere instalación aparte."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Estilar los gráficos con las variables de tema de Tailwind. (combinación por arquitectura)",
+     "orden_instalacion": "Pasa colores del tema a los componentes."
+    },
+    {
+     "id": "mui",
+     "motivo": "Combinación recíproca: Material UI lo enlaza como «Gráficos ligeros en dashboards si no quieres MUI X Charts. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Material UI: Instala recharts y envuélvelo en componentes Card o Paper de MUI.",
+     "reciproca_de": "mui"
+    },
+    {
+     "id": "mantine",
+     "motivo": "Combinación recíproca: Mantine lo enlaza como «Mantine Charts está construido sobre Recharts».",
+     "orden_instalacion": "Orden indicado desde Mantine: Instala @mantine/charts y recharts; después usa los componentes de gráficos.",
+     "reciproca_de": "mantine"
+    }
+   ],
+   "notas": "Alternativas (elige una): chart-js, echarts.",
+   "fuentes": [
+    "https://github.com/recharts/recharts/blob/main/README.md",
+    "https://ui.shadcn.com/docs/components/chart",
+    "https://recharts.github.io"
+   ],
+   "github": {
+    "name_with_owner": "recharts/recharts",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.10.1 (2026-07-25)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}
