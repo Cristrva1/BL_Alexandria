@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca de componentes para Tailwind CSS (MIT) de @saadeghi, la más popular de su tipo según el README. Es madura y activa (daisyUI 5, v5.8.1).
+
+## ¿Qué hace?
+
+Añade clases semánticas de componentes (`btn`, `card`, `modal` y otras) sobre Tailwind, para escribir menos clases utilitarias, e incluye un sistema de temas con decenas de temas predefinidos. Es agnóstica del framework: funciona con HTML puro, React, Vue, Svelte y otros, porque es solo CSS.
+
+## ¿Cómo lo hace?
+
+Es un plugin de Tailwind CSS v4: se instala con npm y se activa con `@plugin "daisyui"` en el CSS. No trae JavaScript: el comportamiento interactivo (modales, menús) depende de HTML nativo o de tu propio código.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | daisyUI es un plugin de Tailwind; sin él no funciona. | Instala Tailwind v4 y añade `@plugin "daisyui"`. |
+| [Lucide](lucide.md) | Iconos para los componentes. (combinación por arquitectura) | Instala el paquete de Lucide de tu framework. |
+| [flexoki](flexoki.md) | Paleta para crear un tema personalizado de daisyUI. (combinación por arquitectura) | Define un tema propio con los colores de Flexoki. |
+
+**Notas:** Alternativas (elige una): ui.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v5.8.1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/saadeghi/daisyui/blob/master/README.md) · [2](https://daisyui.com/docs/install/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no requiere IA; plantillas o servicios comerciales relacionados son opcionales |
 | Equipo | Preparación según la ruta elegida. Proyecto con Tailwind compatible; Node y gestor de paquetes |
-
-Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS
-
-## Qué puedes hacer con él
-
-La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo.
-
-## Cómo funciona
 
 Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto con Tailwind compatible; Node y gestor de paquetes
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Alternativas (elige una)
 

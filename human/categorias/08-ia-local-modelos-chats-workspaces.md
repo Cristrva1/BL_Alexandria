@@ -4,7 +4,7 @@
 
 Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.
 
-26 repos · 4 secciones
+31 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -20,8 +20,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 10 repos
-- [Interfaces de chat auto-hospedadas](#interfaces-de-chat-auto-hospedadas) — 7 repos
+- [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 13 repos
+- [Interfaces de chat auto-hospedadas](#interfaces-de-chat-auto-hospedadas) — 9 repos
 - [Workspaces privados y segundos cerebros](#workspaces-privados-y-segundos-cerebros) — 5 repos
 - [NotebookLM: alternativas y clientes](#notebooklm-alternativas-y-clientes) — 4 repos
 
@@ -36,9 +36,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [airllm](../fichas/airllm.md) | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. | Tu objetivo encaja con estos ejemplos: Estudiar inferencia por carga de capas; Probar un modelo que supera la VRAM disponible | Sin clave propia de API de IA en la ruta básica |
 | [llmfit](../fichas/llmfit.md) | Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. | Tu objetivo encaja con estos ejemplos: Elegir un modelo antes de descargarlo; Comparar requisitos de dos cuantizaciones | Sin clave propia de API de IA en la ruta básica |
 | [llamafile](../fichas/llamafile.md) | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. | Tu objetivo encaja con estos ejemplos: Distribuir una demo local de un LLM; Probar inferencia sin montar un servidor complejo | Sin clave propia de API de IA en la ruta básica |
+| [MLC LLM](../fichas/mlc-llm.md) | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. | Tu objetivo encaja con estos ejemplos: ejecutar un LLM en un móvil o en el navegador sin servidor; servir un modelo en GPU AMD, Intel o Apple con una API compatible con OpenAI | Sin clave propia de API de IA en la ruta básica |
 | [FreeToken](../fichas/freetoken.md) | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. | Tu objetivo encaja con estos ejemplos: Experimentar con inferencia de modelos MoE; Evaluar un backend de aceleración local | Sin clave propia de API de IA en la ruta básica |
 | [transformers.js](../fichas/transformers-js.md) | Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. | Tu objetivo encaja con estos ejemplos: Clasificar texto en el navegador; Procesar audio o imágenes sin servidor de modelos externo | Sin clave propia de API de IA en la ruta básica |
+| [KoboldCpp](../fichas/koboldcpp.md) | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama. | Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama | Sin clave propia de API de IA en la ruta básica |
 | [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Tu objetivo encaja con estos ejemplos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo | Sin clave propia de API de IA en la ruta básica |
+| [MLX LM](../fichas/mlx-lm.md) | Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP. | Tu objetivo encaja con estos ejemplos: ejecutar un LLM local optimizado en un Mac con chip Apple; afinar un modelo con LoRA en un Mac sin GPU NVIDIA | Sin clave propia de API de IA en la ruta básica |
 
 ## Interfaces de chat auto-hospedadas
 
@@ -46,11 +49,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Open WebUI](../fichas/open-webui.md) | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. | Tu objetivo encaja con estos ejemplos: Unificar chats de modelos locales; Crear una interfaz compartida para un equipo | API de IA opcional |
 | [Jan](../fichas/jan.md) | Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz. | Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API | API de IA opcional |
+| [NextChat](../fichas/nextchat.md) | Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP. | Tu objetivo encaja con estos ejemplos: desplegar un chat privado con tu propia clave para un equipo pequeño; usar un modelo autoalojado compatible con OpenAI desde una interfaz web ligera | API de IA necesaria |
 | [LobeHub](../fichas/lobehub.md) | Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. | Tu objetivo encaja con estos ejemplos: Organizar agentes para tareas de equipo; Conectar un agente de código a un espacio de trabajo | Depende de la ruta elegida |
 | [Cherry Studio](../fichas/cherry-studio.md) | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. | Tu objetivo encaja con estos ejemplos: Comparar respuestas de varios modelos; Organizar una base documental de prueba | API de IA opcional |
 | [Text Generation WebUI](../fichas/textgen.md) | App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. | Tu objetivo encaja con estos ejemplos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app | Sin clave propia de API de IA en la ruta básica |
 | [LibreChat](../fichas/librechat.md) | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. | Tu objetivo encaja con estos ejemplos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos | API de IA opcional |
 | [chatbox](../fichas/chatbox.md) | Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. | Tu objetivo encaja con estos ejemplos: Conversar con varios proveedores; Probar un modelo local desde escritorio | API de IA opcional |
+| [SillyTavern](../fichas/sillytavern.md) | Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones. | Tu objetivo encaja con estos ejemplos: escribir historias o partidas de rol con personajes y memoria persistente; probar el mismo prompt contra varios modelos locales y remotos | API de IA opcional |
 
 ## Workspaces privados y segundos cerebros
 

@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+MCP for Blender (antes blender-mcp), integración de terceros que conecta Blender con cualquier LLM, creada por @ahujasid. Licencia MIT. Es muy popular (~35k estrellas) y no está hecha por la Blender Foundation; el paquete PyPI pasó a llamarse `mcp-for-blender`.
+
+## ¿Qué hace?
+
+Permite que un asistente cree y modifique escenas, objetos, materiales e iluminación, inspeccione la escena y ejecute código Python de Blender directamente. Integra recursos de Poly Haven, Sketchfab y Poly Pizza, y modelos 3D generados con Meshy, Tripo, Hyper3D Rodin o Hunyuan3D. Incluye controles de telemetría (`disable_telemetry`).
+
+## ¿Cómo lo hace?
+
+Un comando instala el complemento de Blender y configura las apps de IA; también hay instalación manual con `uv` (`uvx mcp-for-blender`; `uvx blender-mcp` sigue funcionando). Requiere Blender y Python con uv. La ejecución de código arbitrario en Blender exige guardar el trabajo antes de usarlo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Controlar Blender desde un cliente MCP como Claude Code. | Ejecuta el setup y elige tu cliente. |
+| [blender](blender.md) | Complemento que se instala dentro de Blender. | Instala Blender y activa el complemento. |
+| [unity-mcp](unity-mcp.md) | Llevar a Unity los modelos creados en Blender, ambos controlados por agentes. (combinación por arquitectura) | Exporta desde Blender e importa en Unity con MCP for Unity. |
+| [blender-skills](blender-skills.md) | Combinación recíproca: blender-skills lo enlaza como «Vía de ejecución de las skills en Blender». | Orden indicado desde blender-skills: Instala y conecta el MCP siguiendo `docs/BLENDER_MCP_SETUP.md`. |
+| [dream-loop](dream-loop.md) | Combinación recíproca: dream-loop lo enlaza como «Vía preferida para que el agente controle Blender». | Orden indicado desde dream-loop: Blender abierto con el complemento del MCP antes de iniciar el bucle. |
+| [ChatDev](chatdev.md) | Combinación recíproca: ChatDev lo enlaza como «ChatDev documenta blender-mcp como requisito de su flujo de construcción 3D». | Orden indicado desde ChatDev: Blender primero, luego blender-mcp, y por último el flujo de ChatDev. |
+
+**Notas:** Sin alternativas declaradas. Revisa los ajustes de telemetría y el uso de servicios 3D de terceros.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ahujasid/mcp-for-blender/blob/main/README.md) · [2](https://pypi.org/project/mcp-for-blender/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelo local no documentado. El paquete actual es mcp-for-blender; plugin comunitario sin afiliación con Blender Foundation |
 | Coste | El coste depende del proveedor o la ruta. El control básico no requiere API extra; generación premium y proveedores de modelos 3D tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Blender >=3; uv; cliente MCP; escena de prueba |
-
-El paquete actual es mcp-for-blender; plugin comunitario sin afiliación con Blender Foundation
-
-## Qué puedes hacer con él
-
-Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP.
-
-## Por qué destaca
-
-Usos propuestos: Bocetar una escena 3D; Automatizar ajustes de objetos y materiales.
-
-## Cómo funciona
 
 El paquete actual es mcp-for-blender; plugin comunitario sin afiliación con Blender Foundation
 
@@ -95,12 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Blender >=3; uv; cliente MCP; escena de prueba
 - **Etiquetas:** `mcp` `design` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Enlaces
 

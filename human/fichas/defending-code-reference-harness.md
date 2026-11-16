@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Implementación de referencia de Anthropic para descubrir y corregir vulnerabilidades de forma autónoma con Claude, basada en su trabajo con equipos de seguridad tras lanzar Claude Mythos Preview. El archivo LICENSE es Apache-2.0, aunque GitHub muestra NOASSERTION. Es una referencia para adaptar, no un producto (~8k estrellas, sin releases).
+
+## ¿Qué hace?
+
+Sigue el ciclo reconocimiento → búsqueda → triaje → informe → parche, con verificación en varias etapas para reducir falsos positivos y gestión de hallazgos (triaje, validación de la corrección, generación rápida de parches). Incluye skills de Claude Code (`/quickstart`, `/threat-model`, `/vuln-scan`, entre otras) y un arnés con agentes en contenedores. Comprueba que la prueba de concepto deja de fallar y que los tests del objetivo siguen pasando.
+
+## ¿Cómo lo hace?
+
+Es Python (`pip install -e .`) con Docker y gVisor para aislar los agentes (`scripts/setup_sandbox.sh`). Funciona con cualquier acceso a la API de Claude (API key, token OAuth de Claude Code, Bedrock, Vertex o Azure). Las skills se pueden usar sin sandbox solo si revisas y apruebas cada uso de herramientas en Claude Code.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Las skills del repo se ejecutan en Claude Code. | Clona el repo y usa `/quickstart` desde Claude Code. |
+| [Semgrep](semgrep.md) | Añadir candidatos deterministas al reconocimiento. (combinación por arquitectura) | Ejecuta Semgrep y aporta sus hallazgos a la fase de búsqueda. |
+| [strix](strix.md) | Validar dinámicamente en un entorno de prueba los hallazgos del arnés. (combinación por arquitectura) | Despliega el objetivo en un entorno aislado y lanza Strix contra él. |
+
+**Notas:** Sin alternativas declaradas. Úsalo solo contra sistemas propios o con autorización escrita.
+
+Estado en GitHub: activo · último push 2026-08-06 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/defending-code-reference-harness/blob/main/README.md) · [2](https://claude.com/blog/using-llms-to-secure-source-code) · [3](https://www.anthropic.com/glasswing)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El CLI autónomo y las skills son rutas distintas; el sandbox usa dependencias adicionales y no se configura solo por clonar |
 | Coste | El coste depende del proveedor o la ruta. Skills interactivas usan el agente; el harness autónomo tiene autenticación API, OAuth o Bedrock según su guía y consume por ejecución |
 | Equipo | Preparación según la ruta elegida. Claude Code; Python y Docker para harness aislado; objetivo canary de práctica |
-
-El CLI autónomo y las skills son rutas distintas; el sandbox usa dependencias adicionales y no se configura solo por clonar
-
-## Qué puedes hacer con él
-
-Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades.
-
-## Por qué destaca
-
-Usos propuestos: Aprender un flujo de modelado de amenazas; Priorizar y revisar parches en software autorizado.
-
-## Cómo funciona
 
 El CLI autónomo y las skills son rutas distintas; el sandbox usa dependencias adicionales y no se configura solo por clonar
 
@@ -95,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Claude Code; Python y Docker para harness aislado; objetivo canary de práctica
 - **Etiquetas:** `security` `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Semgrep](semgrep.md) | 17.7k | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. |
 
 ## Enlaces
 

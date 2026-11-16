@@ -29,6 +29,15 @@ Se instala con `uv add pydantic-ai` (extras como `[temporal]` o `[openai-realtim
 | [langfuse](langfuse.md) | Trazas de código abierto con la integración oficial, como alternativa a Logfire. | Instrumenta vía OpenTelemetry. |
 | [FastMCP](fastmcp.md) | Servidores MCP propios como herramientas; Pydantic AI documenta el cliente MCP (combinación por arquitectura). | Servidor MCP primero. |
 | [Ollama](ollama.md) | Proveedor de modelos locales soportado. | Ollama con el modelo descargado primero. |
+| [browser-use](browser-use.md) | Combinación recíproca: browser-use lo enlaza como «Browser Use 1.0 está construido sobre Pydantic AI y acepta cualquier cadena de modelo de Pydantic AI». | Orden indicado desde browser-use: Instala el extra correspondiente de pydantic-ai para el proveedor elegido. |
+| [loguru](loguru.md) | Combinación recíproca: loguru lo enlaza como «Logging sencillo en agentes Python. (combinación por arquitectura)». | Orden indicado desde loguru: Configura Loguru al iniciar el agente. |
+| [MCP Python SDK](mcp-python-sdk.md) | Combinación recíproca: MCP Python SDK lo enlaza como «Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura)». | Orden indicado desde MCP Python SDK: Conecta el servidor como toolset MCP. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Temporal](temporal.md)
 
 **Notas:** Alternativas (elige una): openai-agents-python, smolagents, langgraph.
 

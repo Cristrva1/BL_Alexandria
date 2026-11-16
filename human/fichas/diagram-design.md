@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+diagram-design, skill que dibuja diagramas como un único archivo HTML + SVG autocontenido con tu marca, de @cathrynlavery. Licencia MIT. Creado en abril de 2026, tiene ~67k estrellas y sin releases.
+
+## ¿Qué hace?
+
+Ofrece 50 tipos de diagrama con estética cuidada (sin sombras, a diferencia del «Mermaid genérico») y exportación a PNG.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add cathrynlavery/diagram-design`. La exportación a PNG usa Playwright (`pip install playwright && playwright install chromium`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Rasterizado a PNG. | Instala Playwright y Chromium. |
+| [Claude Code](claude-code.md) | Agente anfitrión. (combinación por arquitectura) | Instala la skill. |
+| [Slidev](slidev.md) | Incrustar diagramas en presentaciones. (combinación por arquitectura) | Exporta SVG/PNG e insértalos. |
+
+**Notas:** Alternativa (elige una): archify.
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/cathrynlavery/diagram-design/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Portable en hosts Agent Skills; un solo HTML con SVG no implica que todas las fuentes o recursos externos se hayan incrustado |
 | Coste | Consumo del agente que ya utilizas. Usa el agente; el archivo puede evitar red usando fuentes del sistema en lugar de Google Fonts |
 | Equipo | Preparación según la ruta elegida. Agente compatible; proceso descrito; marca opcional; navegador |
-
-Portable en hosts Agent Skills; un solo HTML con SVG no implica que todas las fuentes o recursos externos se hayan incrustado
-
-## Qué puedes hacer con él
-
-Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.
-
-## Por qué destaca
-
-Usos propuestos: Documentar un proceso comercial; Explicar una arquitectura con SVG.
-
-## Cómo funciona
 
 Portable en hosts Agent Skills; un solo HTML con SVG no implica que todas las fuentes o recursos externos se hayan incrustado
 
@@ -94,6 +108,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; proceso descrito; marca opcional; navegador
 - **Etiquetas:** `diagramas` `skill` `html`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [archify](archify.md) | 96.5k | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. |
 
 ## Enlaces
 

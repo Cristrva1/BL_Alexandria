@@ -30,7 +30,7 @@ Datos estructurados y un script de búsqueda en Python 3 (solo biblioteca están
 | [tailwindcss](tailwindcss.md) | HTML+Tailwind es uno de sus stacks soportados. | Instala Tailwind en el proyecto antes de aplicar el sistema. |
 | [design.md](design-md.md) | Guardar el sistema generado como DESIGN.md persistente y validable (combinación por arquitectura). | Genera primero y valida después con `npx @google/design.md lint`. |
 
-**Notas:** Se quitaron taste-skill e impeccable: se solapan en función, no se complementan.
+**Notas:** Alternativas (elige una): taste-skill, impeccable, hallmark.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.15.0 (2026-08-13) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -109,6 +109,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; Python para las utilidades según ruta; agente; brief
 - **Etiquetas:** `skills` `design` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [taste-skill](taste-skill.md) | 116k | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. |
+| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
+| [hallmark](hallmark.md) | 55.1k | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. |
 
 ## Enlaces
 

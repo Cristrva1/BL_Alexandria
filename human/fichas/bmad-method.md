@@ -28,7 +28,7 @@ La v6.12 se instala con `npx bmad-method install` y requiere Node.js 20.12+ y Py
 |---|---|---|
 | [Claude Code](claude-code.md) | Herramienta de código compatible con sus skills (combinación por arquitectura: el README habla de «tu herramienta de IA» sin lista cerrada). | Instala BMad en la raíz del proyecto y abre el proyecto en el agente. |
 | [Codex CLI](codex.md) | Igual: es compatible con skills estándar mediante `npx skills` (combinación por arquitectura). | Igual que arriba. |
-| [skills](skills.md) | Alternativa más ligera para quien quiera controlar el proceso; el autor de esas skills compara las dos explícitamente (combinación por arquitectura). | Elige una metodología por proyecto. |
+| [SkillSpector](skillspector.md) | Revisar con SkillSpector los módulos de la V7, que se instalan como skills (`npx skills add …`), antes de dárselos al agente (combinación por arquitectura). | Escanea la carpeta del módulo con SkillSpector; instala en el agente solo lo que pase la revisión. |
 
 **Notas:** Alternativa (elige una): spec-kit. Usa la v6.12 si necesitas estabilidad.
 

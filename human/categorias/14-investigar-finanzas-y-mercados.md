@@ -4,7 +4,7 @@
 
 Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.
 
-22 repos · 4 secciones
+23 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -15,13 +15,14 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [daily_stock_analysis](../fichas/daily-stock-analysis.md) | Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario. | Depende de la ruta elegida |
 | [dexter](../fichas/dexter.md) | Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. | Depende de la ruta elegida |
 | [qlib](../fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | API de IA opcional |
+| [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | API de IA opcional |
 
 ## Secciones
 
-- [Agentes de investigación financiera](#agentes-de-investigación-financiera) — 7 repos
-- [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 5 repos
+- [Agentes de investigación financiera](#agentes-de-investigación-financiera) — 8 repos
+- [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 8 repos
 - [Bots y conexiones a exchanges](#bots-y-conexiones-a-exchanges) — 6 repos
-- [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 4 repos
+- [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 1 repos
 
 ## Agentes de investigación financiera
 
@@ -32,6 +33,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [TradingAgents](../fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Tu objetivo encaja con estos ejemplos: Estudiar debate entre agentes financieros; Comparar proveedores sobre la misma muestra histórica | Depende de la ruta elegida |
 | [Vibe-Trading](../fichas/vibe-trading.md) | Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. | Tu objetivo encaja con estos ejemplos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles | Depende de la ruta elegida |
 | [FinceptTerminal](../fichas/finceptterminal.md) | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. | Tu objetivo encaja con estos ejemplos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas | API de IA opcional |
+| [FinGPT](../fichas/fingpt.md) | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. | Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación | API de IA opcional |
 | [AutoHedge](../fichas/autohedge.md) | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. | Tu objetivo encaja con estos ejemplos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading | API de IA necesaria |
 | [QuantHarness](../fichas/quantharness.md) | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. | Tu objetivo encaja con estos ejemplos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental | API de IA necesaria |
 
@@ -40,9 +42,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [qlib](../fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | Tu objetivo encaja con estos ejemplos: Comparar modelos sobre datos temporales; Investigar un pipeline cuantitativo reproducible | API de IA opcional |
+| [OpenBB Open Data Platform](../fichas/openbb.md) | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP. | Tu objetivo encaja con estos ejemplos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB | Sin clave propia de API de IA en la ruta básica |
 | [nautilus_trader](../fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Tu objetivo encaja con estos ejemplos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados | Sin clave propia de API de IA en la ruta básica |
+| [yfinance](../fichas/yfinance.md) | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas. | Tu objetivo encaja con estos ejemplos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno | Sin clave propia de API de IA en la ruta básica |
 | [FinRL](../fichas/finrl.md) | Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. | Tu objetivo encaja con estos ejemplos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica | Sin clave propia de API de IA en la ruta básica |
 | [vectorbt](../fichas/vectorbt.md) | Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. | Tu objetivo encaja con estos ejemplos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica | Sin clave propia de API de IA en la ruta básica |
+| [Backtesting.py](../fichas/backtesting-py.md) | Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. | Tu objetivo encaja con estos ejemplos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo | Sin clave propia de API de IA en la ruta básica |
 | [lumibot](../fichas/lumibot.md) | Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers. | Tu objetivo encaja con estos ejemplos: Comparar una estrategia de reglas; Estudiar decisiones de una estrategia AI en backtest | API de IA opcional |
 
 ## Bots y conexiones a exchanges
@@ -61,9 +66,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest | API de IA opcional |
-| [PixelFund-AI](../fichas/pixelfund-ai.md) | Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión | API de IA opcional |
-| [pixel-hedge-fund](../fichas/pixel-hedge-fund.md) | Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados. | Tu objetivo encaja con estos ejemplos: Estudiar una interfaz financiera en pixel art; Mostrar estados y movimientos de una simulación | Sin clave propia de API de IA en la ruta básica |
-| [company-pixel-office](../fichas/company-pixel-office.md) | Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo. | Tu objetivo encaja con estos ejemplos: Estudiar una visualización de equipo en pixel art; Prototipar un panel de estados narrativo | Sin clave propia de API de IA en la ruta básica |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 

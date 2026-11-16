@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+DaVinci Resolve MCP Server, servidor MCP que permite a asistentes de IA controlar DaVinci Resolve mediante su API oficial de scripting, de @samuelgursky. Licencia MIT. Es activo (~4k estrellas, v5.2.11).
+
+## ¿Qué hace?
+
+Cubre toda la API de scripting y añade ayudas guiadas para montaje, color, medios y renderizado. Incluye un panel de control local en el navegador para inspeccionar el estado de Resolve y analizar clips y planos. En la versión gratuita usa un puente desde el menú de scripts, porque Blackmagic limita el scripting externo a Studio.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx davinci-resolve-mcp setup` o clonando y ejecutando `python install.py` (Python 3.10+). En Studio hay que activar el scripting externo «Local». El instalador y el servidor consultan GitHub para buscar actualizaciones.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Cliente MCP configurado por el instalador. | Ejecuta el setup y elige tu cliente. |
+| [FFmpeg](ffmpeg.md) | Preparar o convertir medios antes de importarlos. (combinación por arquitectura) | Normaliza los medios con FFmpeg. |
+| [whisper](whisper.md) | Generar subtítulos para importarlos en la línea de tiempo. (combinación por arquitectura) | Transcribe y añade el SRT al proyecto. |
+
+**Notas:** Sin alternativas declaradas. Trabaja sobre copias de proyectos: el agente puede modificar la línea de tiempo.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v5.2.11 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve |
 | Coste | El coste depende del proveedor o la ruta. El conector no incluye un modelo; Studio tiene licencia propia y la edición gratuita necesita otra ruta; el agente mantiene sus límites |
 | Equipo | Preparación según la ruta elegida. Resolve >=18.5; Python 64 bits; FFmpeg; Studio o puente interno para edición gratuita |
-
-Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve
-
-## Qué puedes hacer con él
-
-Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render.
-
-## Por qué destaca
-
-Usos propuestos: Organizar material desde un agente; Preparar ajustes de render con revisión.
-
-## Cómo funciona
 
 Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve
 
@@ -93,14 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Resolve >=18.5; Python 64 bits; FFmpeg; Studio o puente interno para edición gratuita
 - **Etiquetas:** `video` `mcp` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
-| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
 
 ## Enlaces
 

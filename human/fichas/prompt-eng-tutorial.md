@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con Claude. El repositorio no tiene archivo de licencia, así que no hay permiso explícito de reutilización. Último push en agosto de 2026; los ejemplos usan Claude 3 Haiku, un modelo ya antiguo.
+
+## ¿Qué hace?
+
+Enseña en 9 capítulos con ejercicios y un apéndice la estructura de un buen prompt, los fallos habituales y las técnicas '80/20' para corregirlos, las fortalezas y debilidades de Claude, y a construir prompts desde cero para casos comunes. Cada lección tiene un 'Example Playground' para experimentar.
+
+## ¿Cómo lo hace?
+
+Notebooks Jupyter en dos versiones: API de Anthropic (carpeta 'Anthropic 1P') y Amazon Bedrock. También existe una versión en Google Sheets con la extensión Claude for Sheets. Requiere una clave de API de Anthropic o acceso a Bedrock, y cada ejercicio consume tokens.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Cookbooks](claude-cookbooks.md) | Pasar de la teoría de prompts a recetas de código (herramientas, RAG, evaluación) del mismo proveedor. (combinación por arquitectura) | Termina el tutorial y continúa con las recetas que necesites. |
+| [promptfoo](promptfoo.md) | Convertir los ejercicios en pruebas automáticas y comparar variantes de prompt. (combinación por arquitectura) | Usa los prompts del tutorial como casos base. |
+| [marimo](marimo.md) | Ejecutar los notebooks en un entorno reactivo y reproducible en lugar de Jupyter clásico. (combinación por arquitectura) (requiere convertirlos) | Convierte el notebook con la herramienta de importación de marimo. |
+
+**Notas:** Alternativas (elige una): prompt-engineering-guide. Sin archivo de licencia. Combinación anterior con claude-cookbooks conservada como complemento de aprendizaje.
+
+Estado en GitHub: activo · último push 2026-08-28 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar |
 | Coste | El coste depende del proveedor o la ruta. Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo |
 | Equipo | Preparación según la ruta elegida. Navegador; cuenta y acceso al modelo para ejecutar ejercicios |
-
-Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar
-
-## Qué puedes hacer con él
-
-Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.
-
-## Por qué destaca
-
-Usos propuestos: Practicar instrucciones claras; Aprender a separar datos y órdenes.
-
-## Cómo funciona
 
 Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; cuenta y acceso al modelo para ejecutar ejercicios
 - **Etiquetas:** `learning` `prompts` `notebooks`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Cookbooks](claude-cookbooks.md) | 54.7k | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
 
 ## Alternativas (elige una)
 

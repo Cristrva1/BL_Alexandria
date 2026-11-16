@@ -1,0 +1,412 @@
+{
+ "batch": "33-agentes-de-codigo-parte-2-y-agentes-autonomos-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "opencode-manager": {
+   "que_es": "OpenCode Manager, centro de mando web autoalojado para OpenCode, de @chriswritescode-dev. Licencia MIT. Tiene ~1k estrellas y está activo.",
+   "que_hace": "Reúne en una app web, usable desde escritorio y móvil, las sesiones de OpenCode, git, una terminal y tareas programadas. Incluye la CLI `ocm`.",
+   "como_lo_hace": "Requiere Docker con Compose v2. Se instala con `curl -fsSL https://opencodemanager.app/install | sh`, que lo arranca en http://localhost:5003 y pide crear una cuenta de administrador. Es un workspace pnpm: backend con Bun y Hono, frontend con React y Vite.",
+   "combina_con": [
+    {
+     "id": "opencode",
+     "motivo": "Agente que gestiona.",
+     "orden_instalacion": "Instala OpenCode y luego el gestor."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para las sesiones de OpenCode. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Ollama como proveedor en OpenCode."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar el contenedor en un servidor propio. (combinación por arquitectura)",
+     "orden_instalacion": "Despliega con Compose desde Coolify."
+    }
+   ],
+   "notas": "Alternativa (elige una): t3code.",
+   "fuentes": [
+    "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
+    "https://opencodemanager.app/docs/getting-started/installation"
+   ],
+   "github": {
+    "name_with_owner": "chriswritescode-dev/opencode-manager",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.1.0 (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openidea": {
+   "que_es": "OpenIDEA, IDE nativo con núcleo en Rust que reproduce la forma de trabajar de IntelliJ IDEA, de l0ng-ai. Licencia Apache-2.0; no está afiliado a JetBrains. Es muy reciente (creado en octubre de 2026) y ya tiene ~9k estrellas.",
+   "que_hace": "Ofrece editor, análisis de código, depurador, Git, terminal y clientes de bases de datos y HTTP para más de 60 lenguajes, con el keymap y las ventanas de herramientas de IntelliJ. Su benchmark propio (abriendo freqtrade) muestra arranque y memoria muy inferiores a IDEA, aunque el propio README admite que IDEA analiza Python con más profundidad.",
+   "como_lo_hace": "Hay builds para macOS, Windows y Linux. Los plugins se ejecutan como componentes WebAssembly aislados y se crean con `openidea-plugin new`; la API de plugins está en preview.",
+   "combina_con": [
+    {
+     "id": "opencode",
+     "motivo": "Agente de terminal en la terminal integrada. (combinación por arquitectura)",
+     "orden_instalacion": "Instala OpenCode y ábrelo en la terminal del IDE."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente de terminal en la terminal integrada. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta Claude Code en la terminal del IDE."
+    },
+    {
+     "id": "aider",
+     "motivo": "Pareja de programación con git en la terminal integrada. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta aider dentro del proyecto."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Proyecto muy joven: conviene vigilar su madurez.",
+   "fuentes": [
+    "https://github.com/l0ng-ai/openidea/blob/main/README.md",
+    "https://openidea.sh/en/plugins"
+   ],
+   "github": {
+    "name_with_owner": "l0ng-ai/openidea",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.1.45 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openclaw": {
+   "que_es": "OpenClaw, asistente de IA personal open source que corre en tu equipo y atiende en tus canales de chat. Licencia MIT. Lo desarrolla la OpenClaw Foundation, una organización 501(c)(3) independiente, y es el repo con más estrellas del catálogo (~395k).",
+   "que_hace": "Atiende por Discord, iMessage, Slack, Teams, Telegram, WhatsApp y más de 20 canales, además de apps nativas. El estado, la memoria y las credenciales se quedan en tu hardware, y los modelos y harnesses de agente (Claude, Codex, modelos locales) son plugins intercambiables.",
+   "como_lo_hace": "Se instala con `curl -fsSL https://openclaw.ai/install.sh | bash` o PowerShell, o con `npm install -g openclaw@latest` (Node 24.16+ o 26.1+; se recomiendan las versiones con parches de seguridad). También hay rutas con Docker y Nix, y el instalador lanza el onboarding.",
+   "combina_con": [
+    {
+     "id": "nemoclaw",
+     "motivo": "Stack de NVIDIA para ejecutar OpenClaw con más aislamiento.",
+     "orden_instalacion": "Instala NemoClaw y lanza OpenClaw dentro."
+    },
+    {
+     "id": "claude-mem",
+     "motivo": "Plugin de memoria persistente para gateways OpenClaw.",
+     "orden_instalacion": "Instala claude-mem con su comando para OpenClaw."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Harness de agente como plugin.",
+     "orden_instalacion": "Configura Claude como harness."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales como plugin. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un proveedor local."
+    }
+   ],
+   "notas": "Alternativas (elige una): hermes-agent, mercury-agent. Superficie de ataque amplia (canales y credenciales): conviene aislarlo.",
+   "fuentes": [
+    "https://github.com/openclaw/openclaw/blob/main/README.md",
+    "https://docs.openclaw.ai/install"
+   ],
+   "github": {
+    "name_with_owner": "openclaw/openclaw",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v2026.11.4 (2026-11-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "hermes-agent": {
+   "que_es": "Hermes Agent, agente de Nous Research que se mejora a sí mismo. Licencia MIT. Es muy activo (~264k estrellas) y tiene versión de escritorio.",
+   "que_hace": "Tiene un bucle de aprendizaje: crea skills a partir de la experiencia, las mejora con el uso y mantiene memoria curada con búsqueda FTS5 entre sesiones. Atiende por TUI, Telegram, Discord, Slack, WhatsApp y Signal desde un único gateway, programa automatizaciones con cron, lanza subagentes y se conecta a MCP.",
+   "como_lo_hace": "Se instala con `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`, que instala Python 3.14, Node y otras dependencias, o con PowerShell o MSIX. Funciona con Nous Portal, OpenRouter, OpenAI o endpoints propios, en seis backends de terminal (local, Docker, SSH, Modal, Daytona, Vercel Sandbox). Puede importar configuración y memoria de OpenClaw, Claude Code, Codex o Cursor.",
+   "combina_con": [
+    {
+     "id": "nemoclaw",
+     "motivo": "Ejecutar Hermes con más aislamiento en el stack de NVIDIA.",
+     "orden_instalacion": "Instala NemoClaw y lanza Hermes dentro."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Endpoint propio con modelos locales. (combinación por arquitectura)",
+     "orden_instalacion": "Configura el endpoint compatible con OpenAI."
+    },
+    {
+     "id": "ecc",
+     "motivo": "Skills y configuración reutilizables. (combinación por arquitectura)",
+     "orden_instalacion": "Importa las skills que apliquen."
+    }
+   ],
+   "notas": "Alternativas (elige una): openclaw, mercury-agent.",
+   "fuentes": [
+    "https://github.com/NousResearch/hermes-agent/blob/main/README.md",
+    "https://hermes-agent.nousresearch.com/docs/integrations/providers"
+   ],
+   "github": {
+    "name_with_owner": "NousResearch/hermes-agent",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.23.1 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ruflo": {
+   "que_es": "Ruflo, meta-harness de agentes para Claude Code y Codex, de @ruvnet. Licencia MIT. Tiene ~82k estrellas y está activo; el README es muy promocional (swarms, federación, ruOS).",
+   "que_hace": "Añade al proyecto agentes, hooks, memoria y un servidor MCP para coordinar enjambres de agentes que aprenden de cada tarea y recuerdan entre sesiones. Incluye una consola visual y una TUI.",
+   "como_lo_hace": "Se inicia con `npx ruflo@latest init`; otras vías son los plugins de Claude Code (≥2.1.287) o un servidor MCP para Codex y otros clientes (`npx -y ruflo@latest mcp start`). Los mods se ejecutan con los permisos de tu cuenta, así que conviene revisarlos.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Anfitrión principal (plugins y hooks).",
+     "orden_instalacion": "Instala Claude Code y luego `ruflo init`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Cliente vía servidor MCP.",
+     "orden_instalacion": "Añade el MCP de ruflo a Codex."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Cliente MCP genérico. (combinación por arquitectura)",
+     "orden_instalacion": "Añade el MCP de ruflo a OpenCode."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Se quita mem0 de las combinaciones porque ruflo trae su propia memoria. Cuidado con las afirmaciones de marketing.",
+   "fuentes": [
+    "https://github.com/ruvnet/ruflo/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ruvnet/ruflo",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v3.77.1 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "deeptutor": {
+   "que_es": "DeepTutor, sistema de tutoría personalizada con agentes, de la organización HKUDS. Licencia Apache-2.0. Es muy activo, con releases casi semanales (v1.7.3), tiene ~60k estrellas y busca mantenedores.",
+   "que_hace": "Personaliza el aprendizaje a partir de tus documentos con chat, rutas de aprendizaje, evaluaciones, cuadernos por bloques, lecciones en vídeo narradas, lectura y edición de libros, y exportación a Anki y calendario. Se amplía con personas, skills, servicios MCP y apps CLI.",
+   "como_lo_hace": "Se instala con `pip install -U \"deeptutor[full]\"` (web y CLI; la instalación base es solo el núcleo), con Docker o con apps de escritorio (las de Windows no están firmadas). La ingesta usa LlamaIndex y admite modelos de rol LightRAG; hubo refactorizaciones incompatibles (v1.6.3).",
+   "combina_con": [
+    {
+     "id": "lightrag",
+     "motivo": "Integración nativa de modelos de rol LightRAG.",
+     "orden_instalacion": "Configura LightRAG desde ajustes."
+    },
+    {
+     "id": "docling",
+     "motivo": "Pre-convertir PDFs complejos antes de ingerirlos. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte los documentos y súbelos."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales si el proveedor lo permite. (combinación por arquitectura)",
+     "orden_instalacion": "Configura un endpoint compatible."
+    }
+   ],
+   "notas": "Alternativas (elige una): open-notebook.",
+   "fuentes": [
+    "https://github.com/HKUDS/DeepTutor/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "HKUDS/DeepTutor",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.7.3 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "multica": {
+   "que_es": "Multica, workspace para asignar trabajo a agentes de programación como si fueran compañeros de equipo, de multica-ai, escrito en Go. Es source-available: «Multica License», Apache-2.0 con condiciones adicionales sobre servicios alojados, integración comercial y marca. Tiene ~56k estrellas.",
+   "que_hace": "Los agentes reciben issues, informan del progreso, señalan bloqueos y devuelven el resultado para revisión. Admite squads mixtos de personas y agentes, skills reutilizables y runtimes propios mediante un daemon.",
+   "como_lo_hace": "Se autoaloja con Docker Compose o Helm usando imágenes de GHCR, y usa las CLIs de agente que ya tienes (Claude Code, Codex, Cursor, Copilot, Kimi, OpenCode). Tiene telemetría anónima de despliegue que se puede desactivar.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Runtime de agente soportado.",
+     "orden_instalacion": "Instala Claude Code en el runtime."
+    },
+    {
+     "id": "codex",
+     "motivo": "Runtime de agente soportado.",
+     "orden_instalacion": "Instala Codex en el runtime."
+    },
+    {
+     "id": "opencode",
+     "motivo": "Runtime de agente soportado.",
+     "orden_instalacion": "Instala OpenCode en el runtime."
+    },
+    {
+     "id": "andrej-karpathy-skills",
+     "motivo": "Combinación recíproca: andrej-karpathy-skills lo enlaza como «Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde andrej-karpathy-skills: Independientes.",
+     "reciproca_de": "andrej-karpathy-skills"
+    }
+   ],
+   "notas": "Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
+   "fuentes": [
+    "https://github.com/multica-ai/multica/blob/main/README.md",
+    "https://multica.ai/docs/agents"
+   ],
+   "github": {
+    "name_with_owner": "multica-ai/multica",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Go",
+    "latest_release": "v0.9.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mercury-agent": {
+   "que_es": "Mercury, agente personal open source «con alma» (personalidad escrita por el usuario), de cosmicstack-labs. Licencia MIT. Tiene ~4k estrellas.",
+   "que_hace": "Lee y escribe archivos, ejecuta comandos, trabaja con git y GitHub, investiga en la web y gestiona una agenda, comprobando cada acción con tus reglas de permisos y un presupuesto diario de tokens. Mercury Code actúa como programador en pareja y Mercury Bots como equipo de especialistas programados.",
+   "como_lo_hace": "Se instala con un instalador de una línea o con `npm i -g @cosmicstack/mercury-agent` (Node 22+), en macOS, Linux, Windows y Android (Termux). Se usa desde TUI, Telegram, Discord, Slack, Signal o un panel web, con DeepSeek, OpenAI, Anthropic, Grok, Ollama, LM Studio o endpoints compatibles.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor local documentado.",
+     "orden_instalacion": "Configura Ollama Local."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Proxy compatible documentado.",
+     "orden_instalacion": "Apunta el endpoint compatible con OpenAI al proxy."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Búsqueda web autoalojada. (combinación por arquitectura)",
+     "orden_instalacion": "Expón SearXNG si el agente lo admite."
+    }
+   ],
+   "notas": "Alternativas (elige una): openclaw, hermes-agent. Se quita claude-mem (es un plugin de Claude Code y OpenClaw, no de Mercury).",
+   "fuentes": [
+    "https://github.com/cosmicstack-labs/mercury-agent/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "cosmicstack-labs/mercury-agent",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.5.2 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "autoresearch": {
+   "que_es": "autoresearch, experimento de @karpathy en el que un agente investiga de forma autónoma sobre el entrenamiento de nanochat con una sola GPU. Licencia MIT según el README, pero sin archivo LICENSE (GitHub no detecta licencia). Tiene ~100k estrellas y está inactivo desde marzo de 2026.",
+   "que_hace": "El agente modifica `train.py`, entrena 5 minutos, comprueba si mejoró, conserva o descarta el cambio y repite durante la noche. El humano itera sobre `program.md`, que contiene las instrucciones del agente.",
+   "como_lo_hace": "Usa uv (`uv sync`, `uv run prepare.py`) y requiere una GPU NVIDIA; hay forks comunitarios para otras plataformas, como AMD. Sirve con cualquier agente de programación al que se le indique `program.md`.",
+   "combina_con": [
+    {
+     "id": "nanochat",
+     "motivo": "Base de entrenamiento sobre la que experimenta.",
+     "orden_instalacion": "Viene integrado en forma simplificada."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente que ejecuta el bucle. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta el agente a `program.md`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Agente alternativo para el bucle. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta Codex a `program.md`."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Se quitan gpt-researcher y crawl4ai: es investigación en entrenamiento de modelos, no en la web.",
+   "fuentes": [
+    "https://github.com/karpathy/autoresearch/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "karpathy/autoresearch",
+    "archived": false,
+    "pushed_at": "2026-03-26",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "deer-flow": {
+   "que_es": "DeerFlow 2.0, «super agent harness» open source de ByteDance, construido sobre LangGraph y LangChain. Licencia MIT. Es una reescritura completa sin código compartido con la v1 (el framework Deep Research sigue en la rama 1.x), tiene ~85k estrellas y está activo.",
+   "que_hace": "Orquesta subagentes, memoria y sandboxes para tareas de largo recorrido: investigación, código, informes y más. Incluye skills, servidores MCP y un toolset de búsqueda y crawling de BytePlus (InfoQuest).",
+   "como_lo_hace": "Requiere Python 3.12+, Node 22+, pnpm, uv y nginx (`make check`), y se configura con `make setup`. Se recomienda ejecutarlo con Docker (`make docker-init` descarga la imagen sandbox). El README promociona el Coding Plan de Volcengine/BytePlus.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Runtime sobre el que está construido.",
+     "orden_instalacion": "Viene incluido."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Crawling web alternativo a InfoQuest. (combinación por arquitectura)",
+     "orden_instalacion": "Configúralo como herramienta o MCP."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Búsqueda autoalojada. (combinación por arquitectura)",
+     "orden_instalacion": "Configúralo como herramienta de búsqueda."
+    },
+    {
+     "id": "sandbox",
+     "motivo": "Combinación recíproca: sandbox lo enlaza como «Sandbox para el harness. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde sandbox: Configúralo como entorno de ejecución.",
+     "reciproca_de": "sandbox"
+    }
+   ],
+   "notas": "Sin alternativas declaradas; se solapa con gpt-researcher en el modo investigación (solo anotado).",
+   "fuentes": [
+    "https://github.com/bytedance/deer-flow/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "bytedance/deer-flow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.2.0 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "storm": {
+   "que_es": "STORM y Co-STORM, sistemas de investigación de Stanford OVAL (artículos en NAACL y EMNLP 2024) que escriben informes tipo Wikipedia con citas. Licencia MIT. Tiene ~32k estrellas, pero sin cambios desde septiembre de 2025.",
+   "que_hace": "Investiga un tema haciendo preguntas desde múltiples perspectivas, genera un esquema y redacta un artículo con referencias. Co-STORM añade colaboración humano-IA.",
+   "como_lo_hace": "Se instala con `pip install knowledge-storm`. Usa modelos y embeddings vía LiteLLM y módulos de recuperación (You, Bing, Serper, Brave, SearXNG, DuckDuckGo, Tavily, VectorRM para documentos propios), y tiene una demo en Streamlit.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Capa de modelos integrada (v1.1.0).",
+     "orden_instalacion": "Configura el modelo con `LitellmModel`."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Módulo de recuperación soportado.",
+     "orden_instalacion": "Usa el módulo SearXNG con tu instancia."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Base vectorial para VectorRM con documentos propios. (combinación por arquitectura)",
+     "orden_instalacion": "Indexa tus documentos y configura VectorRM."
+    }
+   ],
+   "notas": "Alternativas (elige una): gpt-researcher. Actividad baja.",
+   "fuentes": [
+    "https://github.com/stanford-oval/storm/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "stanford-oval/storm",
+    "archived": false,
+    "pushed_at": "2025-09-30",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.1.0 (2025-01-23)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

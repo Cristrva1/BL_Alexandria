@@ -26,7 +26,7 @@ Es un monorepo con servicios separados (API, gateway en tiempo real, mensajes, u
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Automatizar avisos o moderación llamando a la API HTTP de Fluxer desde un flujo (combinación por arquitectura). | Crea una aplicación o token en tu instancia y úsalo en un nodo HTTP de n8n; respeta los límites de tasa documentados. |
+| [activepieces](activepieces.md) | Automatizar avisos o moderación llamando a la API HTTP de Fluxer desde un flujo (combinación por arquitectura). | Crea una aplicación o token en tu instancia y úsalo en la pieza HTTP de Activepieces; respeta los límites de tasa documentados. |
 | [Ollama](ollama.md) | Un bot que escucha el Gateway de Fluxer puede responder con un modelo local sin enviar las conversaciones a terceros (combinación por arquitectura). | Ollama primero; después el proceso del bot conectado al Gateway con su token. |
 | [coolify](coolify.md) | Plataforma autoalojada para desplegar y actualizar los contenedores de una instancia propia (combinación por arquitectura). | Coolify en el servidor; después sigue la guía de autoalojamiento de Fluxer [DATO NO VERIFICADO: compatibilidad directa con Coolify]. |
 

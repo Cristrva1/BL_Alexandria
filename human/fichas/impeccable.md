@@ -30,6 +30,8 @@ Se instala con `npx impeccable install` en la raíz del proyecto y se inicia con
 | [Codex CLI](codex.md) | Agente compatible (`$impeccable init`). | Igual que arriba. |
 | [design.md](design-md.md) | El comando `document` escribe un DESIGN.md que puede validarse con la herramienta de Google (combinación por arquitectura; [DATO NO VERIFICADO: plena conformidad con la especificación de Google]). | Genera con impeccable y valida con `npx @google/design.md lint`. |
 
+**Notas:** Alternativas (elige una): ui-ux-pro-max-skill, taste-skill, hallmark.
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada cli-v4.9.2 (2026-11-16) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pbakaus/impeccable/blob/main/README.md)</sub>
@@ -105,6 +107,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node para instalador; agente; Chrome o Edge para revisión de página
 - **Etiquetas:** `skills` `design` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
+| [taste-skill](taste-skill.md) | 116k | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. |
+| [hallmark](hallmark.md) | 55.1k | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. |
 
 ## Enlaces
 

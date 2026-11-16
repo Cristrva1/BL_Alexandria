@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada clásica de frameworks, bibliotecas y software de machine learning organizada por lenguaje, mantenida por Joseph Misiti e inspirada en awesome-php. GitHub marca su licencia como NOASSERTION. Es activa (último push en noviembre de 2026). Desde abril de 2026 el mantenedor pide verificar por email que el contribuyente es humano, por el exceso de PRs generados con LLMs.
+
+## ¿Qué hace?
+
+Recoge bibliotecas de ML, visión, NLP, deep learning y herramientas para muchos lenguajes (C, C++, Python, Java, JavaScript, Go, Rust y otros). También enlaza listas de libros gratuitos, eventos, cursos y blogs. Marca como obsoletos los proyectos sin mantenimiento durante 2 o 3 años.
+
+## ¿Cómo lo hace?
+
+Markdown, sin código ni instalación. La calidad de las entradas varía: algunas son proyectos menores o promocionales, así que conviene verificar actividad y licencia de cada enlace.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Framework de referencia que aparece en la lista; punto de partida práctico. (combinación por arquitectura) | Elige un framework de la lista y profundiza en su documentación. |
+| [Transformers](transformers.md) | Biblioteca estándar para modelos preentrenados, puerta de entrada al NLP moderno. (combinación por arquitectura) | Úsala tras explorar la sección de Python. |
+| [LLM Course](llm-course.md) | Ruta de estudio guiada para quien llega a la lista buscando aprender LLMs. (combinación por arquitectura) | Combina la exploración de la lista con un curso estructurado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-12 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados |
 | Coste | Sin pago a un modelo en la ruta básica. Directorio gratuito; cada recurso externo define licencia, coste y hardware |
 | Equipo | Preparación según la ruta elegida. Navegador; lenguaje y problema de interés |
-
-No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados
-
-## Qué puedes hacer con él
-
-Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema.
-
-## Por qué destaca
-
-Usos propuestos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje.
-
-## Cómo funciona
 
 No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados
 

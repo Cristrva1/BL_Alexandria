@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Presenton, generador open source de presentaciones con IA y API, alternativa a Gamma o Beautiful AI. Licencia Apache-2.0. Tiene ~12k estrellas; app web autoalojada con Docker y app de escritorio en beta.
+
+## ¿Qué hace?
+
+Genera presentaciones desde un prompt, un documento o tu propio diseño de PowerPoint, con plantillas y exportación. Incluye una API de generación y un servidor MCP.
+
+## ¿Cómo lo hace?
+
+Se despliega con `docker run -p 5001:80 ghcr.io/presenton/presenton:latest`, o en desarrollo con Node.js, Python 3.11 y otras dependencias. Funciona con Ollama, OpenAI, Gemini, Anthropic, Bedrock y otros proveedores compatibles.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales soportados. | Configura Ollama como proveedor. |
+| [Claude Code](claude-code.md) | Cliente MCP para generar presentaciones. (combinación por arquitectura) | Conecta el MCP de Presenton. |
+| [litellm](litellm.md) | Proveedor compatible con OpenAI. (combinación por arquitectura) | Apunta Presenton al proxy. |
+
+**Notas:** Alternativas (elige una): ppt-master.
+
+Estado en GitHub: activo · último push 2026-11-06 · última versión publicada electron-v0.9.12-beta (2026-10-26) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/presenton/presenton/blob/main/README.md) · [2](https://docs.presenton.ai/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP |
 | Coste | El coste depende del proveedor o la ruta. Admite API, Ollama, LM Studio y ruta Codex con OAuth; imágenes y otros servicios pueden tener costes separados |
 | Equipo | Preparación según la ruta elegida. Docker o app compatible; proveedor de texto e imagen; contraseña propia; datos ficticios |
-
-El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP
-
-## Qué puedes hacer con él
-
-Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una presentación desde un documento; Comparar una plantilla con generación libre.
-
-## Cómo funciona
 
 El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP
 
@@ -99,12 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o app compatible; proveedor de texto e imagen; contraseña propia; datos ficticios
 - **Etiquetas:** `slides` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 

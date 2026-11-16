@@ -4,7 +4,7 @@
 
 Investiga mercados, compara estrategias y conecta herramientas financieras. Las demos y el backtesting se distinguen de la operación real.
 
-24 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/trading).
+25 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/trading).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Agentes que reúnen y analizan información financiera.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=trading&topic=trading-investigacion)
+[Explorar 9 repos](../../docs/index.html#/explorar?area=trading&topic=trading-investigacion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -27,6 +27,7 @@ Agentes que reúnen y analizan información financiera.
 | [dexter](../fichas/dexter.md) | Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. | Depende de la ruta elegida |
 | [financial-services](../fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | API de IA opcional |
 | [FinceptTerminal](../fichas/finceptterminal.md) | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. | API de IA opcional |
+| [FinGPT](../fichas/fingpt.md) | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. | API de IA opcional |
 | [QuantHarness](../fichas/quantharness.md) | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. | API de IA necesaria |
 | [TradingAgents](../fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Depende de la ruta elegida |
 | [Vibe-Trading](../fichas/vibe-trading.md) | Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. | Depende de la ruta elegida |
@@ -35,16 +36,19 @@ Agentes que reúnen y analizan información financiera.
 
 Analizar datos históricos y evaluar estrategias cuantitativas.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=trading&topic=trading-backtesting)
+[Explorar 9 repos](../../docs/index.html#/explorar?area=trading&topic=trading-backtesting)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Backtesting.py](../fichas/backtesting-py.md) | Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. | Sin clave propia de API de IA en la ruta básica |
 | [FinRL](../fichas/finrl.md) | Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. | Sin clave propia de API de IA en la ruta básica |
 | [lumibot](../fichas/lumibot.md) | Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers. | API de IA opcional |
 | [nautilus_trader](../fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica |
+| [OpenBB Open Data Platform](../fichas/openbb.md) | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP. | Sin clave propia de API de IA en la ruta básica |
 | [qlib](../fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | API de IA opcional |
 | [TimesFM](../fichas/timesfm.md) | Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por versión. | API de IA opcional |
 | [vectorbt](../fichas/vectorbt.md) | Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. | Sin clave propia de API de IA en la ruta básica |
+| [yfinance](../fichas/yfinance.md) | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames de pandas. | Sin clave propia de API de IA en la ruta básica |
 
 ### Bots, exchanges y conexiones
 
@@ -65,13 +69,10 @@ Código y SDKs para conectar plataformas y automatizar operaciones.
 
 Referencias y demostraciones para entender los sistemas de inversión.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=trading&topic=trading-aprender)
+[Explorar 1 repos](../../docs/index.html#/explorar?area=trading&topic=trading-aprender)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [company-pixel-office](../fichas/company-pixel-office.md) | Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo. | Sin clave propia de API de IA en la ruta básica |
 | [machine-learning-for-trading](../fichas/machine-learning-for-trading.md) | Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. | API de IA opcional |
-| [pixel-hedge-fund](../fichas/pixel-hedge-fund.md) | Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados. | Sin clave propia de API de IA en la ruta básica |
-| [PixelFund-AI](../fichas/pixelfund-ai.md) | Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | API de IA opcional |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

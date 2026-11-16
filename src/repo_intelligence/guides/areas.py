@@ -25,7 +25,9 @@ def render_area_guides(root: Path, catalog: Catalog) -> list[dict]:
     work = [a for a in areas if a["kind"] == "work"]
     tools = [a for a in areas if a["kind"] == "tool"]
     lines = ["[Inicio](README.md) · [Explorador](../docs/index.html#/salas)", "", "# Categorías y subcategorías prácticas", "",
-        f'{len(work)} áreas de trabajo y {len(tools)} colecciones de configuración, con {sum(len(a["topics"]) for a in areas)} subcategorías.', "",
+        f'{len(work)} áreas de trabajo y {len(tools)} colecciones de configuración, con {sum(len(a["topics"]) for a in areas)} subcategorías prácticas. '
+        f'Es una capa de navegación distinta del índice técnico ({len(catalog.public_categories())} categorías y '
+        f'{sum(len(c.get("subs", [])) for c in catalog.public_categories())} subcategorías técnicas); por eso los recuentos no coinciden.', "",
         "Elige un área, después una tarea y por último una ficha. Un repositorio puede servir en varias áreas; conserva una sola identidad y ficha. Los recuentos por área no se suman para obtener el total de proyectos.", "",
         "## Áreas de trabajo", "", practical_table(work), "", "## Configuración de asistentes", "", practical_table(tools), "",
         "Estas colecciones reúnen recursos para preparar el cliente. No convierten su suscripción en una API para cualquier aplicación.", "",
