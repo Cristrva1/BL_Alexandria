@@ -28,7 +28,8 @@ Se instala con `npm install planck` (o `planck-js`) y funciona en navegador y No
 |---|---|---|
 | [pixelfx](pixelfx.md) | Efectos visuales para juegos con física. (combinación por arquitectura) | Combina en el mismo juego. |
 | [threejs-game-skills](threejs-game-skills.md) | Juegos de navegador asistidos por agente. (combinación por arquitectura) | Usa Planck para la física 2D. |
-| [dsh-game-studio](dsh-game-studio.md) | Física 2D en juegos generados. (combinación por arquitectura) | Añádelo al juego exportado. |
+| [three.js](three-js.md) | Simular física 2D y dibujar el resultado en una escena three.js (por ejemplo, con cámara ortográfica). (combinación por arquitectura) | Actualiza las posiciones de las mallas desde el paso de simulación de Planck. |
+| [PixiJS](pixijs.md) | Combinación recíproca: PixiJS lo enlaza como «Planck.js simula física 2D y PixiJS puede dibujar sus cuerpos (combinación por arquitectura)». | Orden indicado desde PixiJS: Calcula la física con Planck.js; después sincroniza las posiciones de los sprites en cada fotograma. |
 
 **Notas:** Sin alternativas declaradas.
 

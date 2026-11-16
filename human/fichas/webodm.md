@@ -29,6 +29,8 @@ Se instala con los instaladores oficiales gratuitos o con Docker; usa Django 5.2
 | [blender](blender.md) | Editar o renderizar los modelos exportados. (combinación por arquitectura) | Exporta el modelo texturizado e impórtalo en Blender. |
 | [three.js](three-js.md) | Publicar modelos o splats en una web propia. (combinación por arquitectura) | Exporta y carga con three.js. |
 | [marimo](marimo.md) | Analizar ortomosaicos y DEM exportados. (combinación por arquitectura) | Abre los GeoTIFF en un notebook. |
+| [Leaflet](leaflet.md) | Combinación recíproca: Leaflet lo enlaza como «WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura)». | Orden indicado desde Leaflet: Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet. |
+| [QGIS](qgis.md) | Combinación recíproca: QGIS lo enlaza como «Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura)». | Orden indicado desde QGIS: Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS. |
 
 **Notas:** Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM.
 

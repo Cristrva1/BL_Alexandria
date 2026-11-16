@@ -30,6 +30,8 @@ Se instala con `pip install trl` y escala con Accelerate, DeepSpeed y PEFT. Tamb
 | [PEFT](peft.md) | LoRA y adaptadores. | Instala `peft`. |
 | [Unsloth](unsloth.md) | Entrenamiento acelerado compatible con los trainers de TRL. | Carga el modelo con Unsloth y entrena con TRL. |
 | [vLLM](vllm.md) | Generación en AsyncGRPOTrainer. | Levanta el servidor vLLM. |
+| [LLM Course](llm-course.md) | Combinación recíproca: LLM Course lo enlaza como «Fine-tuning supervisado con QLoRA usado en el notebook de Mistral-7b». | Orden indicado desde LLM Course: Se instala dentro del notebook. |
+| [train-llm-from-scratch](train-llm-from-scratch.md) | Combinación recíproca: train-llm-from-scratch lo enlaza como «Contrastar las implementaciones manuales de SFT, DPO, PPO y GRPO con la biblioteca de referencia. (combinación por arquitectura)». | Orden indicado desde train-llm-from-scratch: Úsala después para entrenar en serio. |
 
 **Notas:** Sin alternativas declaradas.
 

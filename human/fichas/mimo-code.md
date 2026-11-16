@@ -26,11 +26,11 @@ Se instala con `curl -fsSL https://mimo.xiaomi.com/install | bash` o PowerShell.
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [OpenCode](opencode.md) | Compatibilidad opcional con skills de OpenCode (`MIMOCODE_ENABLE_OPENCODE_SKILLS`). | Activa la variable para reutilizar tus skills. |
 | [headroom](headroom.md) | Comprimir el contexto en sesiones largas. (combinación por arquitectura) | Envuelve el agente con Headroom si es compatible. |
 | [rtk](rtk.md) | Reducir la salida de comandos. (combinación por arquitectura) | Configura los hooks de rtk si son compatibles. |
+| [Context7](context7.md) | MiMo Code admite servidores MCP remotos en su configuración `mcp` (el README muestra Exa y Tavily); Context7 aporta documentación actualizada de librerías. (combinación por arquitectura) | Añade Context7 como servidor MCP remoto en la configuración. |
 
-**Notas:** Sin alternativas declaradas; funcionalmente compite con opencode (solo anotado).
+**Notas:** Alternativa (elige una): opencode.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.17 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -100,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Terminal; cuenta o proveedor admitido; carpeta de prueba
 - **Etiquetas:** `coding` `ai` `ai-agents` `cli` `mimo` `mimo-code` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Enlaces
 

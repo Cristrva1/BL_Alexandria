@@ -29,6 +29,8 @@ Es un README en Markdown y no requiere instalación.
 | [blender](blender.md) | Modelado complementario a CAD. (combinación por arquitectura) | Consulta la lista para el flujo CAD. |
 | [three.js](three-js.md) | Visores CAD web suelen apoyarse en three.js. (combinación por arquitectura) | Elige un visor de la lista. |
 | [filament](filament.md) | Motor PBR para visores de modelos CAD exportados. (combinación por arquitectura) | Exporta a glTF y visualiza con Filament. |
+| [FreeCAD](freecad.md) | Combinación recíproca: FreeCAD lo enlaza como «El directorio awesome-cad incluye FreeCAD entre sus programas CAD de referencia». | Orden indicado desde FreeCAD: Consulta awesome-cad para elegir herramientas complementarias; después instálalas junto a FreeCAD. |
+| [OpenSCAD](openscad.md) | Combinación recíproca: OpenSCAD lo enlaza como «El directorio awesome-cad incluye OpenSCAD entre sus herramientas CAD». | Orden indicado desde OpenSCAD: Consulta awesome-cad para bibliotecas y complementos; después úsalos con OpenSCAD. |
 
 **Notas:** Sin alternativas declaradas. Recurso, no software.
 

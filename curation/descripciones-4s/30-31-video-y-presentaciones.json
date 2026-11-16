@@ -3,41 +3,6 @@
  "checked_at": "2026-11-15",
  "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
  "repos": {
-  "hypit": {
-   "que_es": "Hypit, herramienta para «clonar» vídeos virales con agentes de IA, de hypit-ai. Licencia «Hypit Open Source License»: Apache-2.0 con condiciones que prohíben, sin autorización, ofrecerlo como servicio multi-tenant, la redistribución comercial y quitar el logo o el copyright de la CLI y de los resultados. Creado en julio de 2026, tiene ~30k estrellas (v0.3.2).",
-   "que_hace": "A partir de un vídeo de referencia, una plantilla o una descripción, el agente genera variantes de vídeo con modelos de generación (por ejemplo, Seedance). Los vídeos producidos pertenecen al usuario.",
-   "como_lo_hace": "Requiere Node.js 22.15+ y un agente de código. Los modelos se usan vía HypiHub (servicio alojado recomendado), una API propia o modelos locales, cada uno con sus propios costes.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Agente que lo ejecuta. (combinación por arquitectura)",
-     "orden_instalacion": "Instala Hypit y pide el vídeo."
-    },
-    {
-     "id": "ffmpeg",
-     "motivo": "Procesado de medios. (combinación por arquitectura)",
-     "orden_instalacion": "Instala FFmpeg."
-    },
-    {
-     "id": "comfyui",
-     "motivo": "Generación local en lugar de servicios alojados. (combinación por arquitectura)",
-     "orden_instalacion": "Configura un backend local si se admite."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Licencia no OSI (Apache con condiciones). Clonar vídeos virales plantea dudas de derechos de autor sobre el material de referencia.",
-   "fuentes": [
-    "https://github.com/hypit-ai/hypit/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "hypit-ai/hypit",
-    "archived": false,
-    "pushed_at": "2026-11-14",
-    "license": "no estándar (NOASSERTION)",
-    "primary_language": "TypeScript",
-    "latest_release": "v0.3.2 (2026-11-11)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "brag": {
    "que_es": "/brag, skill que convierte el proyecto que has construido en un vídeo de lanzamiento corto y compartible, con música, movimiento y textos para redes, de latent-spaces. Licencia MIT. Creado en junio de 2026, tiene ~22k estrellas (v0.6.0). Tiene versión web alojada (letsbrag.app).",
    "que_hace": "Analiza tu proyecto o sitio y produce un vídeo promocional con un comando, usando HyperFrames.",
@@ -161,6 +126,12 @@
      "id": "three.js",
      "motivo": "Escenas 3D.",
      "orden_instalacion": "Úsalo en el HTML."
+    },
+    {
+     "id": "mediabunny",
+     "motivo": "Combinación recíproca: mediabunny lo enlaza como «Exportación de vídeo desde HTML. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde mediabunny: Evalúalo para codificar en el navegador.",
+     "reciproca_de": "mediabunny"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -188,14 +159,14 @@
      "orden_instalacion": "Viene incluida; revisa su licencia."
     },
     {
-     "id": "hyperframes",
-     "motivo": "Mismo enfoque HTML→vídeo y misma licencia. (combinación por arquitectura)",
-     "orden_instalacion": "Úsalo para pulir composiciones."
-    },
-    {
      "id": "claude-code",
      "motivo": "Anfitrión documentado.",
      "orden_instalacion": "Instala la skill."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "FFmpeg es un requisito declarado en el README para renderizar y comparar los vídeos.",
+     "orden_instalacion": "Instala FFmpeg (junto a Node 22+, Python 3 y Chrome) antes de la skill."
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -230,6 +201,12 @@
      "id": "openfilm",
      "motivo": "Exportación de vídeo desde HTML. (combinación por arquitectura)",
      "orden_instalacion": "Evalúalo para codificar en el navegador."
+    },
+    {
+     "id": "pixijs",
+     "motivo": "Combinación recíproca: PixiJS lo enlaza como «Mediabunny puede codificar en el navegador vídeo a partir de un canvas, como el que dibuja PixiJS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PixiJS: Renderiza la escena con PixiJS; después captura su canvas con la fuente de canvas de Mediabunny.",
+     "reciproca_de": "pixijs"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -300,6 +277,12 @@
      "id": "playwright",
      "motivo": "Exportación a PDF o PNG.",
      "orden_instalacion": "Instala playwright-chromium cuando lo pida."
+    },
+    {
+     "id": "diagram-design",
+     "motivo": "Combinación recíproca: diagram-design lo enlaza como «Incrustar diagramas en presentaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde diagram-design: Exporta SVG/PNG e insértalos.",
+     "reciproca_de": "diagram-design"
     }
    ],
    "notas": "Alternativas (elige una): marp, reveal.js.",
@@ -371,6 +354,12 @@
      "id": "claude-code",
      "motivo": "Generar HTML de presentaciones. (combinación por arquitectura)",
      "orden_instalacion": "Pide al agente el index.html."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Combinación recíproca: Pandoc lo enlaza como «Pandoc genera presentaciones reveal.js desde Markdown».",
+     "orden_instalacion": "Orden indicado desde Pandoc: Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local.",
+     "reciproca_de": "pandoc"
     }
    ],
    "notas": "Alternativas (elige una): slidev, marp.",
@@ -475,9 +464,28 @@
      "orden_instalacion": "Pide diagramas en sintaxis Mermaid."
     },
     {
-     "id": "diagram-design",
-     "motivo": "Otra vía de diagramas para agentes. (combinación por arquitectura)",
-     "orden_instalacion": "Elige según el estilo."
+     "id": "archify",
+     "motivo": "Combinación recíproca: archify lo enlaza como «Diagramas textuales para documentación estática. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde archify: Usa Mermaid en docs y Archify para explorar.",
+     "reciproca_de": "archify"
+    },
+    {
+     "id": "marp",
+     "motivo": "Combinación recíproca: Marp lo enlaza como «Diagramas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marp: Renderiza a imagen e incrústala.",
+     "reciproca_de": "marp"
+    },
+    {
+     "id": "reveal.js",
+     "motivo": "Combinación recíproca: reveal.js lo enlaza como «Diagramas en las diapositivas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde reveal.js: Añade un plugin de Mermaid.",
+     "reciproca_de": "reveal.js"
+    },
+    {
+     "id": "drawio",
+     "motivo": "Combinación recíproca: draw.io lo enlaza como «draw.io importa diagramas Mermaid y los convierte en diagramas editables».",
+     "orden_instalacion": "Orden indicado desde draw.io: Escribe el diagrama en Mermaid; después usa Organizar > Insertar > Avanzado > Mermaid en draw.io.",
+     "reciproca_de": "drawio"
     }
    ],
    "notas": "Alternativas (elige una): excalidraw.",

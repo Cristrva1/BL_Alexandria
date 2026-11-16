@@ -29,6 +29,7 @@ Requiere Node.js 22.18+ y las skills oficiales, que instala `/setup`. El servido
 | [remotion](remotion.md) | Motor de render. | Crea el proyecto Remotion. |
 | [Remotion Agent Skills](skills-remotion.md) | Skills oficiales sobre las que se construye. | Las instala `/setup`. |
 | [Claude Code](claude-code.md) | Agente anfitrión del plugin. (combinación por arquitectura) | Instala el plugin. |
+| [ElevenLabs (SDK de Python)](elevenlabs-python.md) | Combinación recíproca: ElevenLabs (SDK de Python) lo enlaza como «El plugin usa las skills oficiales de ElevenLabs para locución, efectos y música. (combinación por arquitectura)». | Orden indicado desde ElevenLabs (SDK de Python): Configura la clave de ElevenLabs al instalar el plugin. |
 
 **Notas:** Alternativas (elige una): openmontage, video-use. Depende de servicios de pago.
 

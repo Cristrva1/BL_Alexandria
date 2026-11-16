@@ -800,3 +800,5 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--green); width:
   .nav, .site-foot, .search-line, .decision-form { display: none; }
   body { background: #fff; color: #000; }
 }
+.used-by summary { cursor: pointer; }
+.used-by summary h2 { display: inline; }

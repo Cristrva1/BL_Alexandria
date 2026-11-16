@@ -27,13 +27,14 @@ Backend NestJS en TypeScript con BullMQ, PostgreSQL y Redis, y frontend en React
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Claude Code](claude-code.md) | Twenty publica skills oficiales para que un agente de código cree objetos, vistas y lógica de apps del CRM. | Instala la CLI de Twenty y las skills; inicia sesión en tu espacio con `twenty auth login` antes de publicar. |
-| [n8n](n8n.md) | Sincronizar contactos y oportunidades con otros sistemas usando la API de Twenty desde nodos HTTP (combinación por arquitectura). | Crea una clave de API en Twenty y úsala en n8n. |
-| [evolution-api](evolution-api.md) | Registrar conversaciones de WhatsApp como actividades del CRM, con n8n o un servicio intermedio (combinación por arquitectura). | Evolution API y n8n primero; después el flujo que escribe en Twenty. |
+| [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos. | twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces. |
+| [evolution-api](evolution-api.md) | Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura). | Evolution API y Activepieces primero; después el flujo que escribe en Twenty. |
 | [cal.diy](cal-diy.md) | Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio). | Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty. |
+| [docuseal](docuseal.md) | Combinación recíproca: docuseal lo enlaza como «Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura)». | Orden indicado desde docuseal: Usa un flujo intermedio con el webhook de DocuSeal. |
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada twenty/v2.58.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/twentyhq/twenty/blob/main/README.md) · [2](https://docs.twenty.com/developers/self-host/capabilities/docker-compose)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/twentyhq/twenty/blob/main/README.md) · [2](https://docs.twenty.com/developers/self-host/capabilities/docker-compose) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/twenty)</sub>
 
 ## Acceso, coste y equipo
 
@@ -99,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI
 - **Etiquetas:** `automation` `crm` `typescript` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [EspoCRM](espocrm.md) | 3.6k | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. |
 
 ## Enlaces
 

@@ -14,9 +14,9 @@
      "orden_instalacion": "Arranca Ollama y configura su URL."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Encadenar el informe con otros flujos o avisos. (combinación por arquitectura)",
-     "orden_instalacion": "Recibe el informe por webhook o email en n8n."
+     "orden_instalacion": "Recibe el informe por webhook o email en Activepieces."
     },
     {
      "id": "litellm",
@@ -83,14 +83,14 @@
      "orden_instalacion": "Reescribe las llamadas con CCXT."
     },
     {
-     "id": "freqtrade",
-     "motivo": "Alternativa madura con backtesting y dry-run. (combinación por arquitectura)",
-     "orden_instalacion": "Prueba la estrategia en Freqtrade en dry-run."
-    },
-    {
      "id": "vectorbt",
      "motivo": "Evaluar la estrategia con datos históricos. (combinación por arquitectura)",
      "orden_instalacion": "Backtestea antes de usar dinero real."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar su imagen Docker en un servidor propio gestionado con Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; las claves de API de Binance como secretos y con permisos mínimos (sin retirada de fondos)."
     }
    ],
    "notas": "Sin alternativas declaradas. Proyecto experimental. Riesgo financiero: no es asesoramiento de inversión.",
@@ -194,6 +194,12 @@
      "id": "marimo",
      "motivo": "Notebooks reactivos para los ejercicios. (combinación por arquitectura)",
      "orden_instalacion": "Convierte notebooks a marimo si lo prefieres."
+    },
+    {
+     "id": "finrl",
+     "motivo": "Combinación recíproca: FinRL lo enlaza como «Base teórica y práctica complementaria. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde FinRL: Estudia los capítulos de RL del libro.",
+     "reciproca_de": "finrl"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -216,19 +222,19 @@
    "como_lo_hace": "Se despliega con Docker o Podman Compose y se configura con una wallet y un RPC de Solana.",
    "combina_con": [
     {
-     "id": "autohedge",
-     "motivo": "Comparar con agentes autónomos que también operan en Solana. (combinación por arquitectura)",
-     "orden_instalacion": "Evalúa ambos solo en entornos de prueba."
-    },
-    {
      "id": "grafana",
      "motivo": "Monitorizar operaciones y saldos. (combinación por arquitectura)",
      "orden_instalacion": "Exporta métricas a una base y crea paneles."
     },
     {
-     "id": "n8n",
+     "id": "activepieces",
      "motivo": "Avisos de operaciones. (combinación por arquitectura)",
-     "orden_instalacion": "Envía eventos a n8n por webhook."
+     "orden_instalacion": "Envía eventos a Activepieces por webhook."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar su Docker Compose en un servidor propio gestionado con Coolify (combinación por arquitectura).",
+     "orden_instalacion": "Coolify primero; después crea el recurso desde el compose del bot con la wallet y el RPC como secretos. El autor lo presenta como práctica, no apta para producción."
     }
    ],
    "notas": "Sin alternativas declaradas. No apto para producción, según su autor. Riesgo muy alto con claves privadas. Riesgo financiero: no es asesoramiento de inversión.",
@@ -261,9 +267,9 @@
      "orden_instalacion": "Viene en las dependencias."
     },
     {
-     "id": "tradingagents",
-     "motivo": "Comparar con otro framework multiagente de trading. (combinación por arquitectura)",
-     "orden_instalacion": "Evalúa ambos con los mismos activos."
+     "id": "langfuse",
+     "motivo": "Trazar las llamadas de sus agentes de LangChain y LangGraph con la integración de Langfuse para LangChain (combinación por arquitectura).",
+     "orden_instalacion": "Langfuse en marcha y sus claves en el entorno; después añade el callback de Langfuse a la ejecución de los agentes."
     }
    ],
    "notas": "Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión.",
@@ -349,40 +355,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "company-pixel-office": {
-   "que_es": "Autonomous Trading HQ, visualización en pixel art de un «equipo de trading» de 6 agentes sobre Polymarket Perps, de @ATK-zk. Licencia MIT (con sprites de pixel-agents, MIT). Es una demo muy pequeña (~4 estrellas).",
-   "que_hace": "Muestra en una oficina pixel art en vivo los roles del equipo (líder, quant, crítico, riesgo, scout y operaciones), con reglas como un límite de pérdida diaria del 15 % y un informe diario.",
-   "como_lo_hace": "Es una página web estática publicada en GitHub Pages; el motor de trading no se documenta en el repo.",
-   "combina_con": [
-    {
-     "id": "py-sdk",
-     "motivo": "SDK oficial de Polymarket para el motor que se visualiza. (combinación por arquitectura)",
-     "orden_instalacion": "Usa el SDK en el backend y la oficina como panel."
-    },
-    {
-     "id": "tradingagents",
-     "motivo": "Patrón de roles multiagente similar. (combinación por arquitectura)",
-     "orden_instalacion": "Compara la división de roles."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Agentes que podrían ocupar los roles. (combinación por arquitectura)",
-     "orden_instalacion": "Asigna cada rol a un agente con límites claros."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima.",
-   "fuentes": [
-    "https://github.com/ATK-zk/company-pixel-office/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ATK-zk/company-pixel-office",
-    "archived": false,
-    "pushed_at": "2026-10-13",
-    "license": "MIT",
-    "primary_language": "JavaScript",
-    "checked_at": "2026-11-15"
-   }
-  },
   "vibe-trading": {
    "que_es": "Vibe-Trading, agente personal de investigación de trading de la organización HKUDS. Licencia MIT. Es muy activo (~38k estrellas, v0.1.19).",
    "que_hace": "Da a tu agente capacidades de investigación y trading: datos de mercado, skills de análisis, backtesting con costes y pruebas fuera de muestra, laboratorio de investigación, paper trading (incluidas sesiones de acciones A en pasos de cinco minutos) y una «cuenta sombra». Ofrece web, CLI, API y servidor MCP.",
@@ -418,73 +390,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "pixel-hedge-fund": {
-   "que_es": "Pixel Hedge Fund, «oficina viva» en pixel art de un fondo de los 90 hecha con SvelteKit, de @jaypolanco96. El repo no declara licencia. Es una demo muy pequeña (~5 estrellas).",
-   "que_hace": "Representa una oficina de trading animada donde un escritorio de análisis técnico dirige el comportamiento de los personajes, con temas visuales y rutas que se conectan a la API de BloFin.",
-   "como_lo_hace": "Se ejecuta con `npm install` y `npm run dev`. El README advierte de no exponer el servidor de desarrollo a la red si la máquina guarda `.env.local` o `.secrets/`, porque las rutas `/api/blofin/*` usan credenciales.",
-   "combina_con": [
-    {
-     "id": "ccxt",
-     "motivo": "Datos de mercado normalizados en lugar de una sola API. (combinación por arquitectura)",
-     "orden_instalacion": "Sustituye las llamadas por CCXT."
-    },
-    {
-     "id": "tradingagents",
-     "motivo": "Lógica de decisión multiagente detrás de la escena. (combinación por arquitectura)",
-     "orden_instalacion": "Conecta las decisiones a la oficina."
-    },
-    {
-     "id": "claude-code",
-     "motivo": "Personalizar la demo con un agente. (combinación por arquitectura)",
-     "orden_instalacion": "Pide cambios al agente en un entorno sin credenciales."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima y sin licencia.",
-   "fuentes": [
-    "https://github.com/jaypolanco96/pixel-hedge-fund/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "jaypolanco96/pixel-hedge-fund",
-    "archived": false,
-    "pushed_at": "2026-10-08",
-    "primary_language": "Svelte",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "pixelfund-ai": {
-   "que_es": "PixelFund AI, simulador bursátil en pixel art con agentes de IA especializados, de @kyjwang. Licencia MIT. Es una demo muy pequeña (~6 estrellas) con último cambio en junio de 2026.",
-   "que_hace": "Ofrece una oficina pixel art, cotizaciones en tiempo real, cuentas de simulación aisladas por navegador y operaciones con cartera virtual asistidas por agentes.",
-   "como_lo_hace": "Es una app web Node con API separada que requiere PostgreSQL y Redis (con Docker o en local).",
-   "combina_con": [
-    {
-     "id": "tradingagents",
-     "motivo": "Lógica de análisis multiagente más completa. (combinación por arquitectura)",
-     "orden_instalacion": "Integra sus decisiones en el simulador."
-    },
-    {
-     "id": "dexter",
-     "motivo": "Investigación financiera para los agentes. (combinación por arquitectura)",
-     "orden_instalacion": "Usa Dexter como fuente de análisis."
-    },
-    {
-     "id": "ollama",
-     "motivo": "Modelos locales para los agentes. (combinación por arquitectura)",
-     "orden_instalacion": "Configura un endpoint local si la app lo permite."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Pregunta de pertenencia al catálogo: demo con adopción mínima.",
-   "fuentes": [
-    "https://github.com/kyjwang/PixelFund-AI/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "kyjwang/PixelFund-AI",
-    "archived": false,
-    "pushed_at": "2026-06-15",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "checked_at": "2026-11-15"
-   }
-  },
   "py-sdk": {
    "que_es": "SDK oficial de Polymarket para Python (`polymarket-client`). Licencia MIT. Es reciente y pequeño (~150 estrellas, polymarket-client-v0.18.0).",
    "que_hace": "Ofrece una interfaz unificada para datos públicos, cuenta autenticada, trading, atribución de builders y operaciones de wallet en Polymarket, con clientes síncrono y asíncrono.",
@@ -496,19 +401,20 @@
      "orden_instalacion": "Compara cobertura antes de elegir."
     },
     {
-     "id": "company-pixel-office",
-     "motivo": "Visualizar un equipo de agentes que opera en Polymarket. (combinación por arquitectura)",
-     "orden_instalacion": "Alimenta la oficina con datos del SDK."
+     "id": "nautilus-trader",
+     "motivo": "NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura)",
+     "orden_instalacion": "Elige uno como capa de ejecución; prueba primero en modo simulado."
     },
     {
-     "id": "n8n",
-     "motivo": "Alertas de mercados o posiciones. (combinación por arquitectura)",
-     "orden_instalacion": "Ejecuta scripts del SDK y envía resultados a n8n."
+     "id": "activepieces",
+     "motivo": "Avisos de mercados o posiciones desde un flujo que llame a tu script. (combinación por arquitectura)",
+     "orden_instalacion": "Levanta ambos servicios y crea el flujo en Activepieces con la pieza HTTP o un disparador Webhook."
     }
    ],
    "notas": "Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.",
    "fuentes": [
-    "https://github.com/Polymarket/py-sdk/blob/main/README.md"
+    "https://github.com/Polymarket/py-sdk/blob/main/README.md",
+    "https://nautilustrader.io/docs/latest/integrations/polymarket/"
    ],
    "github": {
     "name_with_owner": "Polymarket/py-sdk",

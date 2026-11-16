@@ -29,6 +29,7 @@ Se instala con `pip install edge-tts` y se usa con `edge-tts` o `edge-playback` 
 | [MoviePy](moviepy.md) | Narración rápida para vídeos. | Genera el MP3 y móntalo. |
 | [whisper](whisper.md) | Comparar o subtitular. (combinación por arquitectura) | Combina según el caso. |
 | [FFmpeg](ffmpeg.md) | Convertir el audio. (combinación por arquitectura) | Convierte el formato. |
+| [short-video-factory](short-video-factory.md) | Combinación recíproca: short-video-factory lo enlaza como «Síntesis de voz con Edge TTS». | Orden indicado desde short-video-factory: Viene integrada en la app. |
 
 **Notas:** Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad.
 

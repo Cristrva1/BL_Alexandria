@@ -30,6 +30,14 @@ Requiere Node.js 22+ y FFmpeg. Las skills se instalan con `npx hyperframes skill
 | [GSAP](gsap.md) | Animaciones navegables en las composiciones. | Usa timelines GSAP en el HTML. |
 | [Kokoro](kokoro.md) | Narración local. (combinación por arquitectura) | Genera el audio y añádelo a la composición. |
 | [whisperX](whisperx.md) | Subtítulos sincronizados. (combinación por arquitectura) | Genera marcas por palabra. |
+| [Arcads AI Video Skill Pack](arcads-claude-code.md) | Combinación recíproca: Arcads AI Video Skill Pack lo enlaza como «Usado para incrustar subtítulos». | Orden indicado desde Arcads AI Video Skill Pack: Requiere Node.js; se ejecuta con npx bajo demanda. |
+| [brag](brag.md) | Combinación recíproca: brag lo enlaza como «Motor de render en el que se basa». | Orden indicado desde brag: Viene integrado. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Creative Architect](creative-architect.md) · [open-design](open-design.md)
 
 **Notas:** Alternativas (elige una): remotion, moviepy. Su README compara explícitamente su licencia con la de Remotion.
 

@@ -30,6 +30,7 @@ Se instala con `npm install -g @openhands/agent-canvas` o con Docker. Por defect
 | [Codex CLI](codex.md) | Agente soportado en Agent Canvas. | Configura Codex como agente. |
 | [sandbox](sandbox.md) | Aislar la ejecución de los agentes. (combinación por arquitectura) | Ejecuta los agentes en un backend aislado. |
 | [ECC](ecc.md) | Configuración de agentes reutilizable. (combinación por arquitectura) | Aplica la configuración a los agentes que lances. |
+| [SWE-bench](swe-bench.md) | Combinación recíproca: SWE-bench lo enlaza como «Evaluar agentes de programación sobre SWE-bench. (combinación por arquitectura)». | Orden indicado desde SWE-bench: Genera predicciones con el agente y evalúalas con el arnés. |
 
 **Notas:** Alternativas (elige una): open-swe.
 
@@ -117,6 +118,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Open SWE](open-swe.md) | 11.2k | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
+| [mini-swe-agent](mini-swe-agent.md) | 9.6k | Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y rinde alto en SWE-bench. |
 
 ## Enlaces
 

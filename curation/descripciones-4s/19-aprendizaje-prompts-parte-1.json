@@ -22,6 +22,12 @@
      "id": "promptfoo",
      "motivo": "Medir con evaluaciones reproducibles si una técnica de la guía mejora de verdad tus resultados. (combinación por arquitectura)",
      "orden_instalacion": "Diseña los prompts con la guía y valídalos con un conjunto de pruebas en promptfoo."
+    },
+    {
+     "id": "chatgpt-system-prompt",
+     "motivo": "Combinación recíproca: chatgpt_system_prompt lo enlaza como «Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde chatgpt_system_prompt: Úsalo como marco conceptual.",
+     "reciproca_de": "chatgpt-system-prompt"
     }
    ],
    "notas": "Alternativas (elige una): prompt-eng-tutorial.",
@@ -57,11 +63,6 @@
      "id": "open-webui",
      "motivo": "Usar el servidor REST de Fabric en modo de compatibilidad con Ollama como backend de una interfaz de chat. (combinación por arquitectura) (no hay guía conjunta)",
      "orden_instalacion": "Arranca `fabric --serve` con el modo Ollama y apunta el cliente a esa URL."
-    },
-    {
-     "id": "n8n",
-     "motivo": "Llamar a patterns desde automatizaciones a través de la API REST. (combinación por arquitectura)",
-     "orden_instalacion": "Arranca el servidor REST y usa nodos HTTP de n8n."
     }
    ],
    "notas": "Alternativas (elige una): prompts-chat. Ojo: el uso de OAuth de suscripción vía backend privado puede contravenir los términos del proveedor [DATO NO VERIFICADO].",
@@ -306,6 +307,12 @@
      "id": "promptfoo",
      "motivo": "Llevar las evaluaciones del cookbook a una suite automatizada y comparable entre modelos. (combinación por arquitectura)",
      "orden_instalacion": "Reutiliza los casos de prueba del notebook en promptfoo."
+    },
+    {
+     "id": "generative-ai-for-beginners",
+     "motivo": "Combinación recíproca: Generative AI for Beginners lo enlaza como «Recetas más avanzadas para quienes usan la API de OpenAI en los ejercicios. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Generative AI for Beginners: Úsalo como siguiente paso práctico tras las lecciones 'Build'.",
+     "reciproca_de": "generative-ai-for-beginners"
     }
    ],
    "notas": "Alternativas (elige una): claude-cookbooks, awesome-llm-apps.",
@@ -375,6 +382,12 @@
      "id": "vercel-ai",
      "motivo": "Biblioteca ligera para aplicar los factores en TypeScript manteniendo el control de prompts y bucle. (combinación por arquitectura)",
      "orden_instalacion": "Implementa el bucle propio con generateText/tools."
+    },
+    {
+     "id": "awesome-harness-engineering",
+     "motivo": "Combinación recíproca: awesome-harness-engineering lo enlaza como «Principios concretos de diseño de harnesses fiables. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-harness-engineering: Lee los 12 factores como base y usa la lista para ampliar.",
+     "reciproca_de": "awesome-harness-engineering"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -445,6 +458,12 @@
      "id": "opencode",
      "motivo": "Agente open source soportado (`--tool opencode`).",
      "orden_instalacion": "Instala opencode y elige `--tool opencode`."
+    },
+    {
+     "id": "awesome-harness-engineering",
+     "motivo": "Combinación recíproca: awesome-harness-engineering lo enlaza como «Patrones prácticos de bucles de agentes alrededor de un repositorio. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-harness-engineering: Úsalo para aplicar los conceptos de verificación y estado.",
+     "reciproca_de": "awesome-harness-engineering"
     }
    ],
    "notas": "Sin alternativas declaradas. claude-code, codex y opencode son alternativas entre sí: elige uno por bucle. Combinación anterior con superpowers eliminada: sin integración documentada.",
@@ -514,6 +533,18 @@
      "id": "pytorch",
      "motivo": "Base técnica de la parte 'LLM Scientist'. (combinación por arquitectura)",
      "orden_instalacion": "Instálalo con soporte CUDA si vas a entrenar en local."
+    },
+    {
+     "id": "awesome-machine-learning",
+     "motivo": "Combinación recíproca: awesome-machine-learning lo enlaza como «Ruta de estudio guiada para quien llega a la lista buscando aprender LLMs. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-machine-learning: Combina la exploración de la lista con un curso estructurado.",
+     "reciproca_de": "awesome-machine-learning"
+    },
+    {
+     "id": "ml-for-beginners",
+     "motivo": "Combinación recíproca: ML for Beginners lo enlaza como «Tras el ML clásico, llm-course ofrece el recorrido hacia modelos de lenguaje (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ML for Beginners: Completa el curso; después sigue con llm-course.",
+     "reciproca_de": "ml-for-beginners"
     }
    ],
    "notas": "Alternativas (elige una): llms-from-scratch, generative-ai-for-beginners. Combinación anterior con llama-factory eliminada: el curso no lo usa (y es alternativa de unsloth).",

@@ -29,8 +29,11 @@ Se instala con `npm i swr` y se usa con una función `fetcher` propia. Tiene int
 | [ui](ui.md) | Alimentar los componentes shadcn/ui (tablas, listas) con datos cacheados. (combinación por arquitectura) | Añade swr y conecta sus hooks a los componentes. |
 | [heroui](heroui.md) | Combinación anterior del catálogo: datos para componentes HeroUI. (combinación por arquitectura) | Instala ambas y usa useSWR en las vistas. |
 | [supabase](supabase.md) | Consultar un backend Supabase desde React con caché y revalidación. (combinación por arquitectura) | Usa el cliente de Supabase dentro del fetcher de SWR. |
+| [Ant Design](ant-design.md) | Combinación recíproca: Ant Design lo enlaza como «Carga de datos con caché para alimentar tablas y formularios. (combinación por arquitectura)». | Orden indicado desde Ant Design: Añade swr y conecta sus hooks a los componentes. |
+| [Material UI](mui.md) | Combinación recíproca: Material UI lo enlaza como «Carga de datos con caché para alimentar los componentes. (combinación por arquitectura)». | Orden indicado desde Material UI: Añade swr y usa sus hooks en las vistas. |
+| [uPlot](uplot.md) | Combinación recíproca: uPlot lo enlaza como «Actualizar series en vivo con la recarga de datos de SWR. (combinación por arquitectura)». | Orden indicado desde uPlot: Obtén los datos con SWR y llama a `setData`. |
 
-**Notas:** Sin alternativas declaradas en el catálogo (TanStack Query no figura).
+**Notas:** Alternativa (elige una): tanstack-query.
 
 Estado en GitHub: activo · último push 2026-10-16 · última versión publicada v2.5.1 (2026-08-12) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -99,6 +102,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; endpoint de datos de prueba; función fetcher
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [TanStack Query](tanstack-query.md) | 50.6k | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. |
 
 ## Enlaces
 

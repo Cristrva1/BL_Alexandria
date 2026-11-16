@@ -29,6 +29,8 @@ Un único binario en Go sin dependencias, con SQLite y búsqueda de texto comple
 | [Claude Code](claude-code.md) | Destino de configuración soportado vía MCP. | Instala el binario y ejecuta la configuración para Claude Code. |
 | [OpenCode](opencode.md) | Destino de configuración soportado. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Destino de configuración soportado. | Igual que arriba. |
+| [DeepSeek Harness (DSH)](deepseek-harness.md) | La guía oficial de DSH incluye una configuración de referencia para conectar Engram como memoria MCP vía `dsh-mcp-client`. | Instala Engram con la versión fijada en la guía de DSH y activa la overlay. |
+| [Antigravity CLI](antigravity-cli.md) | Combinación recíproca: Antigravity CLI lo enlaza como «Engram documenta una configuración para Antigravity como cliente MCP de memoria persistente. (combinación por arquitectura)». | Orden indicado desde Antigravity CLI: Instala Engram y registra su servidor MCP; comprueba que la guía aplica a la CLI. |
 
 **Notas:** Alternativas (elige una): claude-mem, agentmemory.
 

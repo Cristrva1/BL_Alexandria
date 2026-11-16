@@ -29,6 +29,7 @@ CLI npm (`npx @cobusgreyling/loop init . --pattern daily-triage --tool claude`) 
 | [Claude Code](claude-code.md) | Agente por defecto de los bucles (`--tool claude`). | Instala y autentica Claude Code antes de `loop init`. |
 | [Codex CLI](codex.md) | Agente alternativo soportado (`--tool codex`). | Instala Codex CLI y elige `--tool codex` al iniciar. |
 | [OpenCode](opencode.md) | Agente open source soportado (`--tool opencode`). | Instala opencode y elige `--tool opencode`. |
+| [awesome-harness-engineering](awesome-harness-engineering.md) | Combinación recíproca: awesome-harness-engineering lo enlaza como «Patrones prácticos de bucles de agentes alrededor de un repositorio. (combinación por arquitectura)». | Orden indicado desde awesome-harness-engineering: Úsalo para aplicar los conceptos de verificación y estado. |
 
 **Notas:** Sin alternativas declaradas. claude-code, codex y opencode son alternativas entre sí: elige uno por bucle. Combinación anterior con superpowers eliminada: sin integración documentada.
 

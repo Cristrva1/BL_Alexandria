@@ -29,6 +29,15 @@ Se instala con `uv add deepagents` y está construido sobre LangGraph (streaming
 | [LangGraph](langgraph.md) | Base de ejecución sobre la que está construido. | Se instala como dependencia; baja a LangGraph para personalizar el grafo. |
 | [langchain](langchain.md) | Modelos e integraciones del mismo ecosistema. | Añade los paquetes del proveedor de modelos. |
 | [langfuse](langfuse.md) | Trazas de código abierto mediante la integración de Langfuse con LangChain/LangGraph (combinación por arquitectura). | Configura el callback antes de producción. |
+| [awesome-LangGraph](awesome-langgraph.md) | Combinación recíproca: awesome-LangGraph lo enlaza como «Sección propia en la lista». | Orden indicado desde awesome-LangGraph: No aplica. |
+| [NemoClaw](nemoclaw.md) | Combinación recíproca: NemoClaw lo enlaza como «Deep Agents Code soportado». | Orden indicado desde NemoClaw: Elige Deep Agents Code. |
+| [Open SWE](open-swe.md) | Combinación recíproca: Open SWE lo enlaza como «Framework sobre el que está construido». | Orden indicado desde Open SWE: Viene incluido. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Agent Protocol](agent-protocol.md)
 
 **Notas:** Alternativa (elige una): openai-agents-python. Si da shell al agente, úsalo dentro de un sandbox.
 

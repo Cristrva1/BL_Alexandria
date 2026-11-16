@@ -29,6 +29,7 @@ Es un único README en Markdown; se consulta en GitHub o en free-for.dev. No req
 | [FreeDomain](freedomain.md) | Listado en la sección de dominios (DigitalPlat). | Registra un subdominio gratuito. |
 | [supabase](supabase.md) | Listado con plan gratuito. | Crea un proyecto en el plan gratuito. |
 | [coolify](coolify.md) | Autoalojar en un VPS gratuito de la lista. (combinación por arquitectura) | Instala Coolify en el servidor. |
+| [MasterDnsVPN](masterdnsvpn.md) | Combinación recíproca: MasterDnsVPN lo enlaza como «Buscar un VPS gratuito para el servidor. (combinación por arquitectura)». | Orden indicado desde MasterDnsVPN: Elige un proveedor de la lista. |
 
 **Notas:** Sin alternativas declaradas. Recurso, no software.
 

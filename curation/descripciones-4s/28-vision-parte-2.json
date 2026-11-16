@@ -22,9 +22,15 @@
      "id": "liveportrait",
      "motivo": "Detección y recorte facial. (combinación por arquitectura)",
      "orden_instalacion": "Viene como dependencia en la ruta por defecto."
+    },
+    {
+     "id": "deepface",
+     "motivo": "Combinación recíproca: DeepFace lo enlaza como «El modelo de reconocimiento Buffalo_L que envuelve DeepFace procede de InsightFace».",
+     "orden_instalacion": "Orden indicado desde DeepFace: Instala DeepFace; después usa `model_name=\"Buffalo_L\"` (revisa la licencia de los pesos de InsightFace).",
+     "reciproca_de": "deepface"
     }
    ],
-   "notas": "Alternativas (elige una): face-recognition. Los pesos no permiten uso comercial.",
+   "notas": "Sin alternativas declaradas. Los pesos no permiten uso comercial.",
    "fuentes": [
     "https://github.com/deepinsight/insightface/blob/master/README.md"
    ],
@@ -90,6 +96,18 @@
      "id": "opencv",
      "motivo": "Captura y procesado de vídeo. (combinación por arquitectura)",
      "orden_instalacion": "Lee fotogramas con OpenCV."
+    },
+    {
+     "id": "kornia",
+     "motivo": "Combinación recíproca: kornia lo enlaza como «Aumentos de datos en GPU para entrenar. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde kornia: Aplica aumentos antes del entrenamiento.",
+     "reciproca_de": "kornia"
+    },
+    {
+     "id": "sam3",
+     "motivo": "Combinación recíproca: SAM 3 lo enlaza como «Combinar detección YOLO con segmentación por concepto. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde SAM 3: Usa las cajas como prompts.",
+     "reciproca_de": "sam3"
     }
    ],
    "notas": "Sin alternativas declaradas. La AGPL obliga a publicar el código de servicios que lo usen, salvo con licencia Enterprise.",
@@ -160,6 +178,24 @@
      "id": "mediapipe",
      "motivo": "Captura con OpenCV y análisis con MediaPipe. (combinación por arquitectura)",
      "orden_instalacion": "Convierte BGR a RGB antes."
+    },
+    {
+     "id": "mmpose",
+     "motivo": "Combinación recíproca: mmpose lo enlaza como «Captura y visualización».",
+     "orden_instalacion": "Orden indicado desde mmpose: Instala OpenCV.",
+     "reciproca_de": "mmpose"
+    },
+    {
+     "id": "openpose",
+     "motivo": "Combinación recíproca: openpose lo enlaza como «Captura y visualización».",
+     "orden_instalacion": "Orden indicado desde openpose: Instala OpenCV.",
+     "reciproca_de": "openpose"
+    },
+    {
+     "id": "kornia",
+     "motivo": "Combinación recíproca: kornia lo enlaza como «Preprocesado clásico fuera del grafo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde kornia: Combina según necesidad.",
+     "reciproca_de": "kornia"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -195,6 +231,12 @@
      "id": "sam3",
      "motivo": "Visualizar máscaras de segmentación. (combinación por arquitectura)",
      "orden_instalacion": "Convierte las máscaras."
+    },
+    {
+     "id": "label-studio",
+     "motivo": "Combinación recíproca: Label Studio lo enlaza como «Revisar y convertir anotaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Label Studio: Carga el dataset exportado.",
+     "reciproca_de": "label-studio"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -243,41 +285,6 @@
     "license": "Apache-2.0",
     "primary_language": "TypeScript",
     "latest_release": "1.23.2 (2026-09-29)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "ruview": {
-   "que_es": "RuView (antes wifi-densepose), proyecto de @ruvnet (autor de ruflo) de detección espacial con señales WiFi. Licencia MIT. Tiene ~104k estrellas, una cifra inusual para el área.",
-   "que_hace": "Promete reconocer actividad, presencia, respiración y pose (17 keypoints) a partir de la información de estado del canal WiFi (CSI), y combinar radar, UWB y señales celulares. El propio README admite que la precisión del modelo de mundo RF sigue siendo sintética hasta validarse con datos reales.",
-   "como_lo_hace": "Se instala con `pip install ruview` (alias `wifi-densepose`) o con Docker. Para datos reales necesita nodos ESP32 con firmware CSI, y trae demos web con three.js.",
-   "combina_con": [
-    {
-     "id": "home-assistant",
-     "motivo": "Exponer eventos de presencia en domótica. (combinación por arquitectura)",
-     "orden_instalacion": "Envía los eventos vía API o MQTT."
-    },
-    {
-     "id": "three.js",
-     "motivo": "Visualización de la escena (demos incluidas).",
-     "orden_instalacion": "Abre la galería three.js del proyecto."
-    },
-    {
-     "id": "mediapipe",
-     "motivo": "Comparar con pose basada en cámara para validar. (combinación por arquitectura)",
-     "orden_instalacion": "Usa MediaPipe como referencia."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Afirmaciones técnicas sin validación independiente: pregunta de pertenencia al catálogo (solo anotada).",
-   "fuentes": [
-    "https://github.com/ruvnet/RuView/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ruvnet/RuView",
-    "archived": false,
-    "pushed_at": "2026-11-16",
-    "license": "MIT",
-    "primary_language": "Rust",
-    "latest_release": "ruview-harness-v0.9.2 (2026-10-12)",
     "checked_at": "2026-11-15"
    }
   },
@@ -335,6 +342,24 @@
      "id": "three.js",
      "motivo": "Avatares controlados por landmarks. (combinación por arquitectura)",
      "orden_instalacion": "Mapea landmarks a un esqueleto 3D."
+    },
+    {
+     "id": "easymocap",
+     "motivo": "Combinación recíproca: EasyMocap lo enlaza como «Detector de keypoints soportado».",
+     "orden_instalacion": "Orden indicado desde EasyMocap: Usa el detector MediaPipe.",
+     "reciproca_de": "easymocap"
+    },
+    {
+     "id": "tensorflow",
+     "motivo": "Combinación recíproca: tensorflow lo enlaza como «Soluciones de visión sobre modelos TF Lite. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde tensorflow: Usa modelos TF Lite en MediaPipe.",
+     "reciproca_de": "tensorflow"
+    },
+    {
+     "id": "deepface",
+     "motivo": "Combinación recíproca: DeepFace lo enlaza como «DeepFace puede usar MediaPipe como detector facial».",
+     "orden_instalacion": "Orden indicado desde DeepFace: Instala `mediapipe`; después usa `detector_backend=\"mediapipe\"`.",
+     "reciproca_de": "deepface"
     }
    ],
    "notas": "Sin alternativas declaradas.",
@@ -406,6 +431,12 @@
      "id": "easymocap",
      "motivo": "Keypoints 2D como entrada para captura de movimiento. (combinación por arquitectura)",
      "orden_instalacion": "Exporta los keypoints."
+    },
+    {
+     "id": "cvat",
+     "motivo": "Combinación recíproca: CVAT Community lo enlaza como «CVAT incluye una función serverless con HRNet32 de MMPose para estimar pose de cuerpo completo».",
+     "orden_instalacion": "Orden indicado desde CVAT Community: Despliega CVAT con el componente serverless; después instala la función de MMPose.",
+     "reciproca_de": "cvat"
     }
    ],
    "notas": "Sin alternativas declaradas. Actividad baja.",
