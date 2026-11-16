@@ -25985,7 +25985,13 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender RAG por pasos; Comparar un pipeline local con otro proveedor",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "langgraph",
+        "ollama",
+        "qdrant",
+        "langfuse",
+        "ragas"
+      ],
       "alt": []
     },
     {
@@ -26224,7 +26230,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar búsqueda semántica local; Filtrar fragmentos por metadatos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "llama-index",
+        "mempalace",
+        "anything-llm",
         "langchain"
       ],
       "alt": [
@@ -26842,6 +26849,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar embeddings de imágenes; Experimentar con índices y compresión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "langchain",
+        "llama-index",
         "transformers"
       ],
       "alt": [
@@ -27088,9 +27097,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "graphify",
+        "litellm",
         "mcp-neo4j",
-        "turbovec"
+        "docling"
       ],
       "alt": [
         "graphiti",
@@ -27337,8 +27346,11 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar relaciones entre conceptos; Combinar búsqueda de grafos y vectores",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "pgvector",
         "ollama",
-        "qdrant"
+        "docling",
+        "langfuse",
+        "ragas"
       ],
       "alt": [
         "graphrag",
@@ -27707,6 +27719,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar productos por similitud; Indexar embeddings a gran escala",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "anything-llm",
+        "lightrag",
         "llama-index"
       ],
       "alt": [
@@ -27829,7 +27843,12 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "litellm",
+        "searxng",
+        "firecrawl"
+      ],
       "alt": [
         "anything-llm"
       ]
@@ -28071,7 +28090,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar informes largos por su estructura; Encontrar una sección de un contrato",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "docling"
+        "claude-code",
+        "openai-agents-python",
+        "claude-agent-sdk-python"
       ],
       "alt": [
         "lightrag"
@@ -28186,8 +28207,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "n8n",
-        "llama-index"
+        "supabase",
+        "anything-llm",
+        "librechat",
+        "lightrag"
       ],
       "alt": [
         "qdrant",
@@ -28432,7 +28455,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "docling"
+        "n8n",
+        "langfuse"
       ],
       "alt": [
         "dify",
@@ -28673,8 +28697,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar índices vectoriales embebidos; Reducir memoria de una búsqueda local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mem0",
-        "graphrag"
+        "langchain",
+        "llama-index",
+        "haystack"
       ],
       "alt": []
     },

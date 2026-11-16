@@ -10,6 +10,34 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Sistema RAG «simple y rápido» basado en grafos de conocimiento, del laboratorio HKUDS (Universidad de Hong Kong). MIT y muy activo; la última etiqueta es una release candidate (v1.5.8rc1) y en 2026 absorbió el proyecto multimodal RAG-Anything.
+
+## ¿Qué hace?
+
+Extrae entidades y relaciones de los documentos para construir un grafo y combina recuperación por grafo y por vectores, con reranker, citas, borrado de documentos con regeneración del grafo y procesamiento multimodal (tablas, imágenes, ecuaciones) vía MinerU o Docling. Ofrece cuatro estrategias de troceado, LLM distintos por rol (extracción, consulta, palabras clave, visión), una interfaz web para insertar, consultar y visualizar el grafo, evaluación con RAGAS y trazas con Langfuse.
+
+## ¿Cómo lo hace?
+
+Biblioteca y servidor Python (`pip install "lightrag-hku[api]"`, luego `lightrag-server`) con la WebUI precompilada. Por defecto guarda KV, vectores y grafo en archivos locales, solo apto para pruebas; para producción recomienda PostgreSQL, que cubre los cuatro tipos de almacenamiento, y admite MongoDB, OpenSearch, Neo4j, Milvus y otros. Un asistente despliega embeddings, reranker y almacenamiento con Docker. El modelo de embeddings debe fijarse antes de indexar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [pgvector](pgvector.md) | PostgreSQL (con pgvector para vectores) es el backend recomendado para producción. | PostgreSQL con pgvector primero; configúralo en `.env` antes de indexar. |
+| [Ollama](ollama.md) | Modelos locales para extracción, consulta y embeddings. | Ollama primero; usa un modelo con contexto suficiente para la extracción del grafo. |
+| [Docling](docling.md) | Servicio de análisis multimodal soportado tras la integración de RAG-Anything. | Arranca el servicio de Docling y apunta LightRAG a él. |
+| [langfuse](langfuse.md) | Trazas integradas desde 2025. | Configura las claves de Langfuse en el entorno del servidor. |
+| [Ragas](ragas.md) | Evaluación integrada; la API devuelve los contextos recuperados para medir precisión. | Después de tener datos indexados. |
+
+**Notas:** Alternativas (elige una): graphrag, ragflow, pageindex. `lightrag-server` escucha en 0.0.0.0 sin autenticación por defecto: actívala antes de usarlo en red.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.5.8rc1 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/HKUDS/LightRAG/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | Modelos locales documentados. Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta |
 | Coste | El coste depende del proveedor o la ruta. Indexar y responder pueden llamar varios modelos; admite configuración Ollama; el coste depende de roles, corpus y proveedor |
 | Equipo | Preparación según la ruta elegida. Python y uv; LLM; embeddings; almacenamiento; configuración .env |
-
-Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta
-
-## Qué puedes hacer con él
-
-RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong.
-
-## Por qué destaca
-
-Usos propuestos: Consultar relaciones entre conceptos; Combinar búsqueda de grafos y vectores.
-
-## Cómo funciona
 
 Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta
 
@@ -96,13 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; LLM; embeddings; almacenamiento; configuración .env
 - **Etiquetas:** `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 
 ## Alternativas (elige una)
 

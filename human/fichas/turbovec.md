@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Índice vectorial en proceso para Python y Rust de Ryan Codrai, MIT, basado en el método TurboQuant de Google Research. Reciente y sin releases formales en GitHub.
+
+## ¿Qué hace?
+
+Guarda cada vector con 2 o 4 bits por dimensión y busca directamente sobre la forma comprimida; según el README, 10 millones de embeddings de 768 dimensiones pasan de 31 GB a 4 GB y la búsqueda es 4,4 veces más rápida que FAISS FastScan con la misma recuperación [DATO NO VERIFICADO: benchmark propio]. No necesita entrenamiento ni reconstrucciones, admite altas y bajas inmediatas, filtrado por listas de ids o máscaras y persistencia incremental segura ante fallos.
+
+## ¿Cómo lo hace?
+
+Biblioteca nativa (no servicio) instalable con `pip install turbovec` o `cargo add turbovec`; trabaja con matrices `float32` y puntuaciones de producto interno (normaliza para coseno). `IdMapIndex` mantiene ids propios estables. Incluye reemplazos directos de los almacenes en memoria de LangChain, LlamaIndex y Haystack.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langchain](langchain.md) | Integración oficial (`turbovec[langchain]`) como almacén en memoria. | Instala el extra y sustituye el almacén en memoria. |
+| [LlamaIndex](llama-index.md) | Integración oficial (`turbovec[llama-index]`). | Igual que arriba. |
+| [Haystack](haystack.md) | Integración oficial (`turbovec[haystack]`). | Igual que arriba. |
+
+Estado en GitHub: activo · último push 2026-10-07 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/RyanCodrai/turbovec/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no exige API; obtener embeddings y disponer de RAM sigue siendo necesario |
 | Equipo | Preparación según la ruta elegida. Python; wheel compatible o Rust y maturin para compilar; embeddings de prueba |
-
-Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus
-
-## Qué puedes hacer con él
-
-Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida.
-
-## Por qué destaca
-
-Usos propuestos: Explorar índices vectoriales embebidos; Reducir memoria de una búsqueda local.
-
-## Cómo funciona
 
 Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus
 
@@ -92,13 +104,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; wheel compatible o Rust y maturin para compilar; embeddings de prueba
 - **Etiquetas:** `automation` `vector-db` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [mem0](mem0.md) | 69k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
-| [graphrag](graphrag.md) | 36.6k | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
 
 ## Enlaces
 

@@ -31,6 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Coloca un PDF breve en docs y pregunta por un dato de una página concreta
 **Qué comprobar:** Puedes ver documentos recuperados y aclarar una consulta ambigua
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langgraph`, `ollama`, `qdrant`, `langfuse`, `ragas`
 
 ## `agentmemory`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=— · tags=agents,memory,typescript
@@ -91,7 +92,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una colección con dos textos y consulta uno de sus temas
 **Qué comprobar:** Se devuelve el documento relacionado y su identificador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `langchain`
+**Combina con:** `mempalace`, `anything-llm`, `langchain`
 **Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`
 
 ## `claude-mem`
@@ -245,7 +246,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Construye un índice con cinco vectores y consulta el más cercano a uno conocido
 **Qué comprobar:** El resultado coincide con el vecino calculado para la muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`
+**Combina con:** `langchain`, `llama-index`, `transformers`
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `graphiti`
@@ -307,7 +308,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa unos textos ficticios y pregunta por un tema que conecte varios de ellos
 **Qué comprobar:** Puedes revisar entidades, comunidades y fuentes de la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `graphify`, `mcp-neo4j`, `turbovec`
+**Combina con:** `litellm`, `mcp-neo4j`, `docling`
 **Alternativas (elige una):** `graphiti`, `cognee`, `lightrag`
 
 ## `letta`
@@ -370,7 +371,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un documento ficticio y compara una consulta sobre una entidad con otra sobre sus relaciones
 **Qué comprobar:** Puedes inspeccionar los resultados y las relaciones recuperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `qdrant`
+**Combina con:** `pgvector`, `ollama`, `docling`, `langfuse`, `ragas`
 **Alternativas (elige una):** `graphrag`, `ragflow`, `pageindex`
 
 ## `mem0`
@@ -463,7 +464,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una colección, inserta tres vectores y busca uno cercano
 **Qué comprobar:** Puedes contrastar el vecino y los metadatos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`
+**Combina con:** `anything-llm`, `lightrag`, `llama-index`
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `onyx`
@@ -494,6 +495,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta dos documentos de prueba y formula una consulta que exija una cita
 **Qué comprobar:** La respuesta muestra fuentes accesibles para el usuario que consulta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `litellm`, `searxng`, `firecrawl`
 **Alternativas (elige una):** `anything-llm`
 
 ## `openviking`
@@ -554,7 +556,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un PDF con secciones y pregunta por un dato de una sección concreta
 **Qué comprobar:** La recuperación señala la parte pertinente del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`
+**Combina con:** `claude-code`, `openai-agents-python`, `claude-agent-sdk-python`
 **Alternativas (elige una):** `lightrag`
 
 ## `pgvector`
@@ -585,7 +587,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Habilita la extensión en una base de prueba y compara tres vectores junto a sus filas
 **Qué comprobar:** La consulta devuelve la fila más cercana usando la distancia elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `llama-index`
+**Combina con:** `supabase`, `anything-llm`, `librechat`, `lightrag`
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `qdrant`
@@ -647,7 +649,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un PDF propio corto y pregunta por un dato identificable con cita
 **Qué comprobar:** La respuesta permite abrir el fragmento y comprobar su procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `docling`
+**Combina con:** `ollama`, `n8n`, `langfuse`
 **Alternativas (elige una):** `dify`, `lightrag`
 
 ## `supermemory`
@@ -709,4 +711,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un conjunto pequeño y compara vecinos antes y después de cuantizar
 **Qué comprobar:** Puedes medir memoria, tiempo y coincidencia en tus propios datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mem0`, `graphrag`
+**Combina con:** `langchain`, `llama-index`, `haystack`

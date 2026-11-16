@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Motor RAG (generación aumentada por recuperación) de código abierto (Apache 2.0) de InfiniFlow, que fusiona RAG con capacidades de agente. Muy activo: la versión 1.0.0 salió el 6 de noviembre de 2026 y el código principal está ahora en Go; tiene servicio en la nube opcional.
+
+## ¿Qué hace?
+
+Extrae conocimiento de documentos no estructurados con formatos complejos mediante comprensión profunda de documentos y troceado por plantillas explicables, con citas para reducir alucinaciones. Desde 2026 añade «compilación de conocimiento» (wikis, grafos, árboles, PageIndex, mapas mentales, líneas de tiempo y skills por documento o conjunto), RAG agéntico con cuatro niveles de razonamiento, ingesta de sitios web por sitemap y de Google BigQuery con sincronización incremental.
+
+## ¿Cómo lo hace?
+
+Se despliega con Docker Compose (Docker ≥ 24.0.0, Compose ≥ v2.26.1) y una configuración inicial recomendada de 4 núcleos, 16 GB de RAM y 50 GB de disco; usa MySQL por defecto y un motor de documentos Elasticsearch o Infinity (con Elasticsearch hay que subir `vm.max_map_count` a 262144). La interfaz se sirve en el puerto 80. Desde código requiere Go 1.27, Clang 20, LLD 20 y CMake ≥ 4.0. Admite modelos locales según su guía.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | La guía oficial explica cómo usar modelos locales de Ollama como LLM y embeddings. | Ollama accesible desde los contenedores (no uses localhost); después añade el proveedor en RAGFlow. |
+| [n8n](n8n.md) | Automatizar la carga de documentos o consultar bases de conocimiento a través de su API HTTP (combinación por arquitectura). | Crea una clave de API en RAGFlow y úsala desde nodos HTTP. |
+| [langfuse](langfuse.md) | Observar las llamadas a LLM de los flujos (combinación por arquitectura; [DATO NO VERIFICADO: integración nativa]). | Langfuse en marcha con claves de proyecto antes de configurarlo. |
+
+**Notas:** Alternativas (elige una): dify, lightrag. El puerto 80 puede chocar con otros servicios web del mismo servidor.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.0.0 (2026-11-06) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/infiniflow/ragflow/blob/main/README.md) · [2](https://ragflow.io/docs/dev/deploy_local_llm) · [3](https://ragflow.io/docs/dev/http_api_reference)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los mínimos del servidor no incluyen necesariamente ejecutar los modelos; prueba pocos documentos antes de ampliar |
 | Coste | El coste depende del proveedor o la ruta. LLM, embeddings y reranker se configuran por separado; modelos locales necesitan recursos adicionales; APIs remotas tienen consumo |
 | Equipo | Preparación según la ruta elegida. Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos |
-
-Los mínimos del servidor no incluyen necesariamente ejecutar los modelos; prueba pocos documentos antes de ampliar
-
-## Qué puedes hacer con él
-
-Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable.
-
-## Por qué destaca
-
-Usos propuestos: Consultar manuales de una organización; Combinar documentos en una base de conocimiento.
-
-## Cómo funciona
 
 Los mínimos del servidor no incluyen necesariamente ejecutar los modelos; prueba pocos documentos antes de ampliar
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos
 - **Etiquetas:** `rag` `docs` `agents` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 
