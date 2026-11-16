@@ -31,7 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Consulta el horario de una tienda ficticia mediante una herramienta del agente
 **Qué comprobar:** El agente devuelve el dato de la herramienta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gemini-cli`, `fastmcp`
+**Combina con:** `litellm`, `fastmcp`, `langfuse`, `google-skills`
 **Alternativas (elige una):** `langgraph`, `openai-agents-python`
 
 ## `ag2`
@@ -62,7 +62,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Haz que un agente resuma una conversación y otro revise las omisiones
 **Qué comprobar:** Se registran los intercambios usando import ag2
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `langfuse`
+**Combina con:** `ollama`, `langfuse`, `agent-framework`
 
 ## `agent-framework`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=agents,python
@@ -123,7 +123,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta el MCP de documentación y pide que explique el montaje de la plataforma local
 **Qué comprobar:** El agente consulta la guía y enumera servicios y credenciales necesarios
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qdrant`, `mem0`
+**Combina con:** `claude-agent-sdk-python`, `qdrant`, `mem0`
 **Alternativas (elige una):** `crewai`
 
 ## `autogpt`
@@ -196,7 +196,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Busca una plantilla de aprobación humana y contrasta su versión con las guías oficiales
 **Qué comprobar:** Tienes un candidato y sabes qué aporta al flujo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`
+**Combina con:** `langgraph`, `langchain`, `deepagents`
 
 ## `claude-agent-sdk-python`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=py,framework,python
@@ -255,7 +255,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una crew que investiga y luego redacta una comparación de dos productos
 **Qué comprobar:** Puedes revisar la salida y las fuentes de cada tarea
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `mem0`
+**Combina con:** `mem0`, `langfuse`, `fastmcp`
 **Alternativas (elige una):** `langgraph`, `agno`, `metagpt`
 
 ## `deepagents`
@@ -286,7 +286,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide un plan y un informe sobre tres archivos de ejemplo
 **Qué comprobar:** Puedes revisar el plan, las lecturas y el informe guardado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `langfuse`
+**Combina con:** `langgraph`, `langchain`, `langfuse`
 **Alternativas (elige una):** `openai-agents-python`
 
 ## `dify`
@@ -348,7 +348,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Clasifica tema y urgencia de cinco mensajes ficticios antes de optimizar
 **Qué comprobar:** Obtienes campos estructurados y una medida de aciertos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ragas`, `mlflow`
+**Combina con:** `mlflow`, `langfuse`, `ragas`
 **Alternativas (elige una):** `promptfoo`
 
 ## `haystack`
@@ -379,7 +379,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Recupera un párrafo de un manual antes de generar la respuesta
 **Qué comprobar:** Puedes inspeccionar el párrafo y contrastar la salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qdrant`, `docling`
+**Combina con:** `qdrant`, `docling`, `ollama`, `langfuse`
 **Alternativas (elige una):** `llama-index`, `langchain`
 
 ## `hermes-agent-self-evolution`
@@ -477,7 +477,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pregunta por existencias a una herramienta con tres productos ficticios
 **Qué comprobar:** La respuesta coincide con los datos y muestra la llamada a la herramienta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langflow`, `langfuse`, `litellm`
+**Combina con:** `langgraph`, `langfuse`, `qdrant`, `ollama`
 **Alternativas (elige una):** `llama-index`, `haystack`
 
 ## `langchain4j`
@@ -570,7 +570,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un grafo que guarda un pedido y se detiene para revisión humana
 **Qué comprobar:** Puedes inspeccionar el estado y reanudar el pedido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `langfuse`
+**Combina con:** `langchain`, `deepagents`, `langfuse`, `mem0`
 **Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `adk-python`
 
 ## `langgraphjs`
@@ -636,7 +636,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pregunta por una cifra que solo aparece en uno de tus dos documentos
 **Qué comprobar:** Se recupera el documento correcto y puedes contrastar el fragmento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qdrant`, `docling`, `ragas`
+**Combina con:** `qdrant`, `docling`, `ragas`, `ollama`
 **Alternativas (elige una):** `haystack`, `langchain`
 
 ## `llm-council`
@@ -701,7 +701,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un proyecto y añade una herramienta que devuelva el precio de un producto ficticio
 **Qué comprobar:** Puedes probar el agente y ver la herramienta usada en sus trazas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `copilotkit`, `langfuse`
+**Combina con:** `copilotkit`, `langfuse`, `ollama`
 **Alternativas (elige una):** `langgraphjs`, `vercel-ai`
 
 ## `metagpt`
@@ -799,7 +799,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Deriva una consulta a un especialista de facturación ficticio
 **Qué comprobar:** La traza muestra el traspaso y su respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `openai-python`, `fastmcp`
+**Combina con:** `litellm`, `openai-python`, `langfuse`, `fastmcp`
 **Alternativas (elige una):** `pydantic-ai`, `langgraph`, `smolagents`, `deepagents`, `adk-python`
 
 ## `openevolve`
@@ -862,7 +862,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Extrae nombre, importe y moneda de una factura ficticia
 **Qué comprobar:** El resultado respeta los tipos o informa del fallo de validación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `fastmcp`
+**Combina con:** `langfuse`, `fastmcp`, `ollama`
 **Alternativas (elige una):** `openai-agents-python`, `smolagents`, `langgraph`
 
 ## `sim`
@@ -924,7 +924,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Calcula el total y promedio de cinco importes ficticios y revisa el código generado
 **Qué comprobar:** Los resultados coinciden con los números de entrada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `e2b`, `transformers`
+**Combina con:** `e2b`, `transformers`, `litellm`, `langfuse`
 **Alternativas (elige una):** `pydantic-ai`, `openai-agents-python`
 
 ## `vercel-ai`

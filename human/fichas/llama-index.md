@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Framework de código abierto (MIT) de LlamaIndex (run-llama) para aplicaciones RAG y agentes sobre datos propios. Activo (v0.14.26), pero el README avisa de que la empresa ha desplazado su foco principal a LlamaParse, su plataforma comercial de parsing, y a LiteParse; el framework sigue disponible como kit abierto.
+
+## ¿Qué hace?
+
+Conecta LLM con documentos y datos: ingesta, indexación, recuperación, motores de consulta y agentes. Tiene más de 300 paquetes de integración para LLM, embeddings y almacenes vectoriales.
+
+## ¿Cómo lo hace?
+
+Python. Se instala como `llama-index` (núcleo más una selección de integraciones) o como `llama-index-core` más integraciones sueltas (por ejemplo `llama-index-llms-ollama` o `llama-index-embeddings-huggingface`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Qdrant](qdrant.md) | Almacén vectorial con integración oficial. | Qdrant primero; luego `llama-index-vector-stores-qdrant`. |
+| [Docling](docling.md) | Lector de documentos complejos con integración oficial de Docling. | Instala el lector de Docling para LlamaIndex antes de indexar PDF complejos. |
+| [Ragas](ragas.md) | Evaluar la calidad del RAG (integración documentada por Ragas). | Evalúa tras construir el pipeline. |
+| [Ollama](ollama.md) | Modelos locales (`llama-index-llms-ollama`, citado en el README). | Ollama con el modelo descargado primero. |
+
+**Notas:** Alternativas (elige una): haystack, langchain. Ten en cuenta el cambio de foco de la empresa al planificar proyectos largos.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.14.26 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/run-llama/llama_index/blob/main/README.md) · [2](https://qdrant.tech/documentation/frameworks/llama-index/) · [3](https://docling-project.github.io/docling/integrations/llamaindex/) · [4](https://docs.ragas.io/en/stable/howtos/integrations/_llamaindex/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Configura también embeddings locales si quieres que todo el procesamiento sea local |
 | Coste | El coste depende del proveedor o la ruta. OpenAI consume API; Ollama y embeddings locales evitan esa API; LlamaParse se presupuesta aparte |
 | Equipo | Preparación según la ruta elegida. Python; dos documentos; modelo generativo y embeddings |
-
-Configura también embeddings locales si quieres que todo el procesamiento sea local
-
-## Qué puedes hacer con él
-
-Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos.
-
-## Por qué destaca
-
-Usos propuestos: Consultar políticas internas; Encontrar cláusulas en contratos ficticios.
-
-## Cómo funciona
 
 Configura también embeddings locales si quieres que todo el procesamiento sea local
 
@@ -97,14 +112,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dos documentos; modelo generativo y embeddings
 - **Etiquetas:** `rag` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
-| [Ragas](ragas.md) | 16.3k | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
 
 ## Alternativas (elige una)
 

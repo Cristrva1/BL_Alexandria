@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Plataforma de agentes «autogestionada» (Apache 2.0) de Agno. Muy activa (v3.2.0).
+
+## ¿Qué hace?
+
+Permite crear agentes con los SDK de Agno, Claude Agent o Codex, combinarlos en equipos y flujos, y ejecutarlos como servicios duraderos en AgentOS: autenticación, roles, reanudación y repetición, aprobaciones humanas, programación y ejecución duradera. Company OS asigna responsabilidades, proyectos y rutinas a agentes. Los agentes se exponen por API REST, como servidor MCP (Claude, ChatGPT) o en Slack.
+
+## ¿Cómo lo hace?
+
+Python. Usa PostgreSQL para conversaciones, memoria y actividad, y ofrece plantillas para desplegar en tu nube (Docker, Railway…). El README propone arrancar dando una plantilla a un agente de código. La interfaz AgentOS UI (os.agno.com) inspecciona trazas y conocimiento.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [claude-agent-sdk-python](claude-agent-sdk-python.md) | SDK soportado para construir agentes que AgentOS sirve. | Instala Agno y el SDK de Claude Agent en el mismo entorno. |
+| [Qdrant](qdrant.md) | Almacén vectorial para la base de conocimiento (documentado por Agno). | Qdrant primero; configúralo en el knowledge del agente. |
+| [mem0](mem0.md) | Memoria externa con integración documentada por Mem0. | Opcional: Agno ya trae memoria propia sobre PostgreSQL. |
+
+**Notas:** Alternativa (elige una): crewai. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.2.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/agno-agi/agno/blob/main/README.md) · [2](https://docs.agno.com/knowledge/vector-stores/qdrant/overview) · [3](https://docs.mem0.ai/integrations/agno)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados |
 | Coste | El coste depende del proveedor o la ruta. El MCP de documentación no requiere autenticación; plataforma, nube y modelos pueden costar; los ingenieros Claude/Codex usan claves API |
 | Equipo | Preparación según la ruta elegida. Python; plantilla; PostgreSQL; proveedor de modelos |
-
-MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados
-
-## Qué puedes hacer con él
-
-Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente.
-
-## Por qué destaca
-
-Usos propuestos: Servir un agente mediante una API; Investigar fallos mediante trazas.
-
-## Cómo funciona
 
 MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados
 
@@ -87,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; plantilla; PostgreSQL; proveedor de modelos
 - **Etiquetas:** `agents` `memory` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| [mem0](mem0.md) | 69k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
 
 ## Alternativas (elige una)
 

@@ -17349,8 +17349,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar información de negocio; Evaluar la selección de herramientas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "gemini-cli",
-        "fastmcp"
+        "litellm",
+        "fastmcp",
+        "langfuse",
+        "google-skills"
       ],
       "alt": [
         "langgraph",
@@ -17468,8 +17470,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Coordinar redactor y verificador; Incluir intervención humana en un equipo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain",
-        "langfuse"
+        "ollama",
+        "langfuse",
+        "agent-framework"
       ],
       "alt": []
     },
@@ -17715,6 +17718,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Servir un agente mediante una API; Investigar fallos mediante trazas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-agent-sdk-python",
         "qdrant",
         "mem0"
       ],
@@ -17956,7 +17960,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar un flujo con memoria; Localizar evaluadores de agentes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain"
+        "langgraph",
+        "langchain",
+        "deepagents"
       ],
       "alt": []
     },
@@ -18189,8 +18195,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar investigación de mercado; Separar investigación y redacción de producto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain",
-        "mem0"
+        "mem0",
+        "langfuse",
+        "fastmcp"
       ],
       "alt": [
         "langgraph",
@@ -18313,6 +18320,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "langgraph",
+        "langchain",
         "langfuse"
       ],
       "alt": [
@@ -18556,8 +18564,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar solicitudes de soporte; Optimizar un extractor de datos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ragas",
-        "mlflow"
+        "mlflow",
+        "langfuse",
+        "ragas"
       ],
       "alt": [
         "promptfoo"
@@ -18684,7 +18693,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "qdrant",
-        "docling"
+        "docling",
+        "ollama",
+        "langfuse"
       ],
       "alt": [
         "llama-index",
@@ -19032,9 +19043,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar un catálogo de prueba; Responder sobre documentos propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langflow",
+        "langgraph",
         "langfuse",
-        "litellm"
+        "qdrant",
+        "ollama"
       ],
       "alt": [
         "llama-index",
@@ -19405,7 +19417,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "langchain",
-        "langfuse"
+        "deepagents",
+        "langfuse",
+        "mem0"
       ],
       "alt": [
         "crewai",
@@ -19652,7 +19666,8 @@
       "combines_with": [
         "qdrant",
         "docling",
-        "ragas"
+        "ragas",
+        "ollama"
       ],
       "alt": [
         "haystack",
@@ -19889,7 +19904,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "copilotkit",
-        "langfuse"
+        "langfuse",
+        "ollama"
       ],
       "alt": [
         "langgraphjs",
@@ -20241,7 +20257,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Enrutar consultas por departamento; Validar una respuesta antes de aceptarla",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "litellm",
         "openai-python",
+        "langfuse",
         "fastmcp"
       ],
       "alt": [
@@ -20486,7 +20504,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "langfuse",
-        "fastmcp"
+        "fastmcp",
+        "ollama"
       ],
       "alt": [
         "openai-agents-python",
@@ -20738,7 +20757,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "e2b",
-        "transformers"
+        "transformers",
+        "litellm",
+        "langfuse"
       ],
       "alt": [
         "pydantic-ai",

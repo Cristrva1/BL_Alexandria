@@ -633,7 +633,7 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install -U langgraph` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Pausar una devolución hasta su revisión; Retomar una investigación interrumpida — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [langchain](human/fichas/langchain.md) · [Deep Agents](human/fichas/deepagents.md) · [langfuse](human/fichas/langfuse.md) · [mem0](human/fichas/mem0.md)<br>
 **Más:** [ficha completa](human/fichas/langgraph.md) · [GitHub](https://github.com/langchain-ai/langgraph)
 
 #### 🦜 langchain
@@ -642,7 +642,7 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv add langchain` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar un catálogo de prueba; Responder sobre documentos propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langflow](human/fichas/langflow.md) · [langfuse](human/fichas/langfuse.md) · [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langfuse](human/fichas/langfuse.md) · [Qdrant](human/fichas/qdrant.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/langchain.md) · [GitHub](https://github.com/langchain-ai/langchain)
 
 #### 🕸️ MetaGPT
@@ -661,7 +661,7 @@ Frameworks, builders visuales y experimentos de coordinación. Separa la base t�
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv tool install crewai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar investigación de mercado; Separar investigación y redacción de producto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md) · [mem0](human/fichas/mem0.md)<br>
+**Combina con:** [mem0](human/fichas/mem0.md) · [langfuse](human/fichas/langfuse.md) · [FastMCP](human/fichas/fastmcp.md)<br>
 **Más:** [ficha completa](human/fichas/crewai.md) · [GitHub](https://github.com/crewAIInc/crewAI)
 
 #### 🐍 LlamaIndex
@@ -674,7 +674,7 @@ pip install llama-index-llms-openai
 pip install llama-index-llms-ollama
 pip install llama-index-embeddings-huggingface` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar políticas internas; Encontrar cláusulas en contratos ficticios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Qdrant](human/fichas/qdrant.md) · [Docling](human/fichas/docling.md) · [Ragas](human/fichas/ragas.md)<br>
+**Combina con:** [Qdrant](human/fichas/qdrant.md) · [Docling](human/fichas/docling.md) · [Ragas](human/fichas/ragas.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/llama-index.md) · [GitHub](https://github.com/run-llama/llama_index)
 
 #### 🐍 Agno
@@ -683,7 +683,7 @@ pip install llama-index-embeddings-huggingface` (comprobar los pasos completos e
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://docs.agno.com/agent-platform/overview); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Servir un agente mediante una API; Investigar fallos mediante trazas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Qdrant](human/fichas/qdrant.md) · [mem0](human/fichas/mem0.md)<br>
+**Combina con:** [claude-agent-sdk-python](human/fichas/claude-agent-sdk-python.md) · [Qdrant](human/fichas/qdrant.md) · [mem0](human/fichas/mem0.md)<br>
 **Más:** [ficha completa](human/fichas/agno.md) · [GitHub](https://github.com/agno-agi/agno)
 
 #### 🐍 DSPy
@@ -692,7 +692,7 @@ pip install llama-index-embeddings-huggingface` (comprobar los pasos completos e
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install dspy` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Clasificar solicitudes de soporte; Optimizar un extractor de datos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Ragas](human/fichas/ragas.md) · [MLflow](human/fichas/mlflow.md)<br>
+**Combina con:** [MLflow](human/fichas/mlflow.md) · [langfuse](human/fichas/langfuse.md) · [Ragas](human/fichas/ragas.md)<br>
 **Más:** [ficha completa](human/fichas/dspy.md) · [GitHub](https://github.com/stanfordnlp/dspy)
 
 #### 🐍 Deep Agents
@@ -701,7 +701,7 @@ pip install llama-index-embeddings-huggingface` (comprobar los pasos completos e
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv add deepagents` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Resumir documentos de proyecto; Dividir una revisión de archivos en tareas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langchain](human/fichas/langchain.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/deepagents.md) · [GitHub](https://github.com/langchain-ai/deepagents)
 
 #### 🐍 OpenAI Agents SDK
@@ -711,7 +711,7 @@ pip install llama-index-embeddings-huggingface` (comprobar los pasos completos e
 **Comando documentado:** `uv init
 uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Enrutar consultas por departamento; Validar una respuesta antes de aceptarla — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [openai-python](human/fichas/openai-python.md) · [FastMCP](human/fichas/fastmcp.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [openai-python](human/fichas/openai-python.md) · [langfuse](human/fichas/langfuse.md) · [FastMCP](human/fichas/fastmcp.md)<br>
 **Más:** [ficha completa](human/fichas/openai-agents-python.md) · [GitHub](https://github.com/openai/openai-agents-python)
 
 #### 🐍 smolagents
@@ -720,7 +720,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install "smolagents[toolkit]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Calcular indicadores de un CSV; Transformar datos consultados en un resumen — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [E2B](human/fichas/e2b.md) · [Transformers](human/fichas/transformers.md)<br>
+**Combina con:** [E2B](human/fichas/e2b.md) · [Transformers](human/fichas/transformers.md) · [litellm](human/fichas/litellm.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/smolagents.md) · [GitHub](https://github.com/huggingface/smolagents)
 
 #### 🐍 Haystack
@@ -729,7 +729,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install haystack-ai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Responder sobre manuales propios; Comparar recuperación de dos consultas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Qdrant](human/fichas/qdrant.md) · [Docling](human/fichas/docling.md)<br>
+**Combina con:** [Qdrant](human/fichas/qdrant.md) · [Docling](human/fichas/docling.md) · [Ollama](human/fichas/ollama.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/haystack.md) · [GitHub](https://github.com/deepset-ai/haystack)
 
 #### 🐍 Agent Development Kit (ADK)
@@ -738,7 +738,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install google-adk` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar información de negocio; Evaluar la selección de herramientas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Gemini CLI](human/fichas/gemini-cli.md) · [FastMCP](human/fichas/fastmcp.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [FastMCP](human/fichas/fastmcp.md) · [langfuse](human/fichas/langfuse.md) · [skills](human/fichas/google-skills.md)<br>
 **Más:** [ficha completa](human/fichas/adk-python.md) · [GitHub](https://github.com/google/adk-python)
 
 #### 🐍 Pydantic AI
@@ -747,7 +747,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uv add pydantic-ai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer campos de mensajes; Validar datos generados antes de guardarlos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md) · [FastMCP](human/fichas/fastmcp.md)<br>
+**Combina con:** [langfuse](human/fichas/langfuse.md) · [FastMCP](human/fichas/fastmcp.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/pydantic-ai.md) · [GitHub](https://github.com/pydantic/pydantic-ai)
 
 #### 📚 claude-agent-sdk-python
@@ -764,7 +764,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install ag2[openai]` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Coordinar redactor y verificador; Incluir intervención humana en un equipo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [langfuse](human/fichas/langfuse.md) · [Microsoft Agent Framework](human/fichas/agent-framework.md)<br>
 **Más:** [ficha completa](human/fichas/ag2.md) · [GitHub](https://github.com/ag2ai/ag2)
 
 #### 🕸️ awesome-LangGraph
@@ -773,7 +773,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar un flujo con memoria; Localizar evaluadores de agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [langchain](human/fichas/langchain.md) · [Deep Agents](human/fichas/deepagents.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-langgraph.md) · [GitHub](https://github.com/vonzosten/awesome-LangGraph)
 
 ### Frameworks en TypeScript y multi-lenguaje
@@ -784,7 +784,7 @@ uv add openai-agents` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npm create mastra@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir un agente a una app TypeScript; Pausar y reanudar un flujo de aprobación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [langfuse](human/fichas/langfuse.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/mastra.md) · [GitHub](https://github.com/mastra-ai/mastra)
 
 #### 🟦 AI SDK (Vercel)

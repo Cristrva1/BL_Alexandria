@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Framework en TypeScript para aplicaciones y agentes de IA, de Mastra. Doble licencia: Apache 2.0 para el núcleo y Mastra Enterprise License (código visible pero no libre) en los directorios `ee/`; GitHub lo marca NOASSERTION. Muy activo (@mastra/core 1.83.0).
+
+## ¿Qué hace?
+
+Ofrece enrutamiento de modelos a más de 40 proveedores, agentes autónomos con herramientas, un motor de flujos basado en grafos, human-in-the-loop con suspensión y reanudación, gestión de contexto (historial, memoria de trabajo y semántica, RAG), autoría de servidores MCP, evals y observabilidad integradas.
+
+## ¿Cómo lo hace?
+
+Node/TypeScript. Se crea con `npm create mastra@latest` y se integra en apps React, Next.js o Node o como endpoints independientes. Mastra Studio (`localhost:4111`) sirve para construir y probar agentes y flujos. Para interfaces se integra con AI SDK UI de Vercel y CopilotKit.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [CopilotKit](copilotkit.md) | Interfaz de asistente en la web (integración documentada por CopilotKit y citada en el README). | Crea el backend Mastra y conecta CopilotKit en el frontend. |
+| [langfuse](langfuse.md) | Trazas con la integración oficial de Langfuse para Mastra. | Configura el exportador en la observabilidad de Mastra. |
+| [Ollama](ollama.md) | Modelos locales a través del enrutamiento de proveedores (combinación por arquitectura) [DATO NO VERIFICADO: proveedor exacto]. | Ollama primero. |
+
+**Notas:** Alternativas (elige una): langgraphjs, vercel-ai. Las funciones de `ee/` requieren licencia comercial para producción.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada @mastra/core@1.83.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mastra-ai/mastra/blob/main/README.md) · [2](https://docs.copilotkit.ai/mastra) · [3](https://langfuse.com/integrations/frameworks/mastra) · [4](https://mastra.ai/docs/observability/overview)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. No copies el bloque de prompt del README como comando de terminal; el instalador es npm create mastra |
 | Coste | El coste depende del proveedor o la ruta. El framework base es Apache-2.0; nube, modelos y partes con otra licencia tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Node.js y npm; proveedor elegido |
-
-No copies el bloque de prompt del README como comando de terminal; el instalador es npm create mastra
-
-## Qué puedes hacer con él
-
-Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby.
-
-## Por qué destaca
-
-Usos propuestos: Añadir un agente a una app TypeScript; Pausar y reanudar un flujo de aprobación.
-
-## Cómo funciona
 
 No copies el bloque de prompt del README como comando de terminal; el instalador es npm create mastra
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js y npm; proveedor elegido
 - **Etiquetas:** `agents` `rag` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [CopilotKit](copilotkit.md) | 38.7k | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 

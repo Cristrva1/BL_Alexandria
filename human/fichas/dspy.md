@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Framework de Stanford NLP (MIT) para «programar, no promptear» modelos de lenguaje (Declarative Self-improving Python). Maduro y activo (3.5.0).
+
+## ¿Qué hace?
+
+Permite construir sistemas de IA modulares con código Python compositivo en lugar de prompts frágiles, y ofrece optimizadores que ajustan automáticamente prompts y pesos según una métrica, tanto para clasificadores simples como para pipelines RAG o agentes.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install dspy`. La integración con LM usa motores nativos `lm15` integrados, sin dependencia de LiteLLM; esto rompe opciones de proveedor anteriores y hay guía de migración. La documentación completa está en dspy.ai.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MLflow](mlflow.md) | Seguimiento de experimentos y trazas con el flavor oficial de DSPy en MLflow. | Activa el autolog de MLflow antes de optimizar. |
+| [langfuse](langfuse.md) | Trazas de los programas DSPy con la integración oficial de Langfuse. | Instrumenta antes de las ejecuciones. |
+| [Ragas](ragas.md) | Métricas de RAG como objetivo para los optimizadores (combinación por arquitectura). | Define la métrica antes de compilar. |
+
+**Notas:** Alternativa (elige una): promptfoo. Si actualizas desde versiones con LiteLLM, revisa la guía de migración.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 3.5.0 (2026-11-10) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/stanfordnlp/dspy/blob/main/README.md) · [2](https://mlflow.org/docs/latest/genai/flavors/dspy/) · [3](https://langfuse.com/integrations/frameworks/dspy) · [4](https://dspy.ai/tutorials/observability/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Reserva ejemplos distintos para medir el resultado de la optimización |
 | Coste | El coste depende del proveedor o la ruta. La optimización repite llamadas y puede acumular consumo; la guía también ofrece Ollama local |
 | Equipo | Preparación según la ruta elegida. Python; modelo elegido; casos etiquetados |
-
-Reserva ejemplos distintos para medir el resultado de la optimización
-
-## Qué puedes hacer con él
-
-Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano.
-
-## Por qué destaca
-
-Usos propuestos: Clasificar solicitudes de soporte; Optimizar un extractor de datos.
-
-## Cómo funciona
 
 Reserva ejemplos distintos para medir el resultado de la optimización
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; modelo elegido; casos etiquetados
 - **Etiquetas:** `prompts` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ragas](ragas.md) | 16.3k | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
-| [MLflow](mlflow.md) | 28.8k | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. |
 
 ## Alternativas (elige una)
 

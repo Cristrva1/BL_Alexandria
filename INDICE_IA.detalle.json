@@ -11641,7 +11641,9 @@
    "limits": "Ollama se configura mediante la integración LangChain; no es un plugin del editor",
    "combines_with": [
     "langchain",
-    "langfuse"
+    "deepagents",
+    "langfuse",
+    "mem0"
    ],
    "alternatives": [
     "crewai",
@@ -11740,7 +11742,53 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework de orquestación de bajo nivel (MIT) de LangChain Inc. para construir, gestionar y desplegar agentes con estado y de larga duración. Es maduro y muy activo (1.2.22), y lo usan en producción empresas como Klarna, Replit o Elastic, según el README.",
+   "que_hace": "Modela agentes y flujos como grafos con estado y ofrece ejecución duradera (los agentes sobreviven a fallos y retoman donde se quedaron), human-in-the-loop (inspeccionar y modificar el estado en cualquier punto) y memoria a corto y largo plazo. No impone prompts ni arquitectura. Para empezar más rápido, el propio README remite a Deep Agents, construido encima.",
+   "como_lo_hace": "Biblioteca Python (`pip install -U langgraph`), con equivalente en JS/TS (LangGraph.js). Funciona sola o con componentes de LangChain. Para depuración, evaluación y despliegue se integra con LangSmith y LangSmith Deployment, servicios comerciales de la misma empresa.",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "Componentes de modelos, herramientas e integraciones que se usan dentro de los nodos del grafo.",
+     "orden_instalacion": "Instala langgraph y añade solo los paquetes de integración de LangChain que necesites."
+    },
+    {
+     "id": "deepagents",
+     "motivo": "Harness de alto nivel construido sobre LangGraph.",
+     "orden_instalacion": "Empieza con deepagents si no necesitas controlar el grafo a bajo nivel."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas y evaluación de código abierto mediante la integración oficial de Langfuse con LangChain/LangGraph.",
+     "orden_instalacion": "Langfuse (cloud o autoalojado) primero; añade su callback handler a las ejecuciones."
+    },
+    {
+     "id": "mem0",
+     "motivo": "Memoria a largo plazo para agentes de LangGraph (integración documentada por Mem0).",
+     "orden_instalacion": "Configura Mem0 y úsalo desde un nodo o herramienta."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): crewai, openai-agents-python, pydantic-ai, adk-python.",
+   "descripcion_fuentes": [
+    "https://github.com/langchain-ai/langgraph/blob/main/README.md",
+    "https://langfuse.com/integrations/frameworks/langchain",
+    "https://docs.mem0.ai/integrations/langgraph"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langchain-ai/langgraph",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "1.2.22 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
   },
   "langchain": {
    "name": "langchain",
@@ -11760,9 +11808,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Instala la integración del modelo además del paquete base; compatibilidad con Anthropic API no equivale a Claude Code",
    "combines_with": [
-    "langflow",
+    "langgraph",
     "langfuse",
-    "litellm"
+    "qdrant",
+    "ollama"
    ],
    "alternatives": [
     "llama-index",
@@ -11860,7 +11909,54 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework (MIT) de LangChain Inc. para construir agentes y aplicaciones con LLM encadenando componentes intercambiables e integraciones de terceros. Es uno de los proyectos más populares del ecosistema y está en desarrollo activo (langchain-core 1.8.1).",
+   "que_hace": "Ofrece una interfaz estándar para modelos, embeddings, almacenes vectoriales, cargadores y herramientas, de modo que se puede cambiar de proveedor sin reescribir la aplicación (por ejemplo, `init_chat_model(\"openai:...\")`). Incluye agentes con patrones habituales. Para orquestación avanzada remite a LangGraph y, para empezar rápido, a Deep Agents.",
+   "como_lo_hace": "Paquete Python (`uv add langchain`) con paquetes de integración por proveedor y equivalente en JS (LangChain.js). La observabilidad y el despliegue se resuelven con LangSmith (comercial) o con herramientas de terceros.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Orquestación con estado del mismo equipo cuando el agente necesita control fino.",
+     "orden_instalacion": "Añade langgraph cuando los agentes de LangChain se queden cortos."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas y evaluación de código abierto con la integración oficial de Langfuse.",
+     "orden_instalacion": "Configura el callback de Langfuse en las cadenas o agentes."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Almacén vectorial con integración oficial (`langchain-qdrant`).",
+     "orden_instalacion": "Qdrant en marcha primero; luego el paquete de integración."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales con el proveedor oficial (`langchain-ollama`).",
+     "orden_instalacion": "Ollama con el modelo descargado antes de configurar el proveedor."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): llama-index, haystack. Se quitaron langflow y litellm: no son necesarias y el README no las documenta.",
+   "descripcion_fuentes": [
+    "https://github.com/langchain-ai/langchain/blob/master/README.md",
+    "https://langfuse.com/integrations/frameworks/langchain",
+    "https://docs.langchain.com/oss/python/integrations/vectorstores/qdrant",
+    "https://docs.langchain.com/oss/python/integrations/providers/ollama"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langchain-ai/langchain",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "langchain-core==1.8.1 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "crewai": {
    "name": "crewAI",
@@ -11880,8 +11976,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Claude Code y Codex tienen skills documentadas; Antigravity sigue sin confirmar para esta integración",
    "combines_with": [
-    "langchain",
-    "mem0"
+    "mem0",
+    "langfuse",
+    "fastmcp"
    ],
    "alternatives": [
     "langgraph",
@@ -11980,7 +12077,49 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework Python de código abierto (MIT) de CrewAI Inc. para flujos multiagente en producción, con abstracciones de alto nivel y API de bajo nivel. Es open core: CrewAI AMP Suite añade un plano de control comercial. Muy activo (1.15.41).",
+   "que_hace": "Ofrece dos modelos: Crews, agentes con roles que colaboran de forma autónoma, y Flows, automatizaciones dirigidas por eventos con control preciso, llamadas únicas al LLM y Crews integradas. Soporta herramientas, memoria, conocimiento, checkpoints, ejecución asíncrona y MCP/A2A. AMP añade despliegue gestionado, trazas, gobernanza y soporte.",
+   "como_lo_hace": "Requiere Python >=3.10 y <3.14. Se instala como herramienta (`uv tool install crewai`) y `crewai create crew <proyecto>` genera un proyecto con agentes y tareas en JSONC (o `--classic`), que se ejecuta con `crewai run`.",
+   "combina_con": [
+    {
+     "id": "mem0",
+     "motivo": "Memoria persistente con la integración documentada por Mem0.",
+     "orden_instalacion": "Configura Mem0 y pásalo como memoria de la crew."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de código abierto como alternativa al plano de control comercial (integración oficial).",
+     "orden_instalacion": "Instrumenta antes de pasar a producción."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "Exponer herramientas propias como servidor MCP que CrewAI puede consumir (combinación por arquitectura; CrewAI documenta soporte MCP).",
+     "orden_instalacion": "Servidor MCP primero; conéctalo a los agentes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): langgraph, agno, metagpt. Se quitó langchain: CrewAI no lo requiere.",
+   "descripcion_fuentes": [
+    "https://github.com/crewAIInc/crewAI/blob/main/README.md",
+    "https://docs.mem0.ai/integrations/crewai",
+    "https://langfuse.com/integrations/frameworks/crewai",
+    "https://docs.crewai.com/en/mcp/overview"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "crewAIInc/crewAI",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "1.15.41 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "llama-index": {
    "name": "LlamaIndex",
@@ -12002,7 +12141,8 @@
    "combines_with": [
     "qdrant",
     "docling",
-    "ragas"
+    "ragas",
+    "ollama"
    ],
    "alternatives": [
     "haystack",
@@ -12099,7 +12239,54 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework de código abierto (MIT) de LlamaIndex (run-llama) para aplicaciones RAG y agentes sobre datos propios. Activo (v0.14.26), pero el README avisa de que la empresa ha desplazado su foco principal a LlamaParse, su plataforma comercial de parsing, y a LiteParse; el framework sigue disponible como kit abierto.",
+   "que_hace": "Conecta LLM con documentos y datos: ingesta, indexación, recuperación, motores de consulta y agentes. Tiene más de 300 paquetes de integración para LLM, embeddings y almacenes vectoriales.",
+   "como_lo_hace": "Python. Se instala como `llama-index` (núcleo más una selección de integraciones) o como `llama-index-core` más integraciones sueltas (por ejemplo `llama-index-llms-ollama` o `llama-index-embeddings-huggingface`).",
+   "combina_con": [
+    {
+     "id": "qdrant",
+     "motivo": "Almacén vectorial con integración oficial.",
+     "orden_instalacion": "Qdrant primero; luego `llama-index-vector-stores-qdrant`."
+    },
+    {
+     "id": "docling",
+     "motivo": "Lector de documentos complejos con integración oficial de Docling.",
+     "orden_instalacion": "Instala el lector de Docling para LlamaIndex antes de indexar PDF complejos."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Evaluar la calidad del RAG (integración documentada por Ragas).",
+     "orden_instalacion": "Evalúa tras construir el pipeline."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales (`llama-index-llms-ollama`, citado en el README).",
+     "orden_instalacion": "Ollama con el modelo descargado primero."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): haystack, langchain. Ten en cuenta el cambio de foco de la empresa al planificar proyectos largos.",
+   "descripcion_fuentes": [
+    "https://github.com/run-llama/llama_index/blob/main/README.md",
+    "https://qdrant.tech/documentation/frameworks/llama-index/",
+    "https://docling-project.github.io/docling/integrations/llamaindex/",
+    "https://docs.ragas.io/en/stable/howtos/integrations/_llamaindex/"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "run-llama/llama_index",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.14.26 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "agno": {
    "name": "Agno",
@@ -12119,6 +12306,7 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados",
    "combines_with": [
+    "claude-agent-sdk-python",
     "qdrant",
     "mem0"
    ],
@@ -12220,7 +12408,48 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Plataforma de agentes «autogestionada» (Apache 2.0) de Agno. Muy activa (v3.2.0).",
+   "que_hace": "Permite crear agentes con los SDK de Agno, Claude Agent o Codex, combinarlos en equipos y flujos, y ejecutarlos como servicios duraderos en AgentOS: autenticación, roles, reanudación y repetición, aprobaciones humanas, programación y ejecución duradera. Company OS asigna responsabilidades, proyectos y rutinas a agentes. Los agentes se exponen por API REST, como servidor MCP (Claude, ChatGPT) o en Slack.",
+   "como_lo_hace": "Python. Usa PostgreSQL para conversaciones, memoria y actividad, y ofrece plantillas para desplegar en tu nube (Docker, Railway…). El README propone arrancar dando una plantilla a un agente de código. La interfaz AgentOS UI (os.agno.com) inspecciona trazas y conocimiento.",
+   "combina_con": [
+    {
+     "id": "claude-agent-sdk-python",
+     "motivo": "SDK soportado para construir agentes que AgentOS sirve.",
+     "orden_instalacion": "Instala Agno y el SDK de Claude Agent en el mismo entorno."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Almacén vectorial para la base de conocimiento (documentado por Agno).",
+     "orden_instalacion": "Qdrant primero; configúralo en el knowledge del agente."
+    },
+    {
+     "id": "mem0",
+     "motivo": "Memoria externa con integración documentada por Mem0.",
+     "orden_instalacion": "Opcional: Agno ya trae memoria propia sobre PostgreSQL."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): crewai. AgentOS UI es un servicio alojado por Agno: revisa qué datos ve.",
+   "descripcion_fuentes": [
+    "https://github.com/agno-agi/agno/blob/main/README.md",
+    "https://docs.agno.com/knowledge/vector-stores/qdrant/overview",
+    "https://docs.mem0.ai/integrations/agno"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "agno-agi/agno",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.2.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "dspy": {
    "name": "DSPy",
@@ -12240,8 +12469,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Reserva ejemplos distintos para medir el resultado de la optimización",
    "combines_with": [
-    "ragas",
-    "mlflow"
+    "mlflow",
+    "langfuse",
+    "ragas"
    ],
    "alternatives": [
     "promptfoo"
@@ -12338,7 +12568,49 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework de Stanford NLP (MIT) para «programar, no promptear» modelos de lenguaje (Declarative Self-improving Python). Maduro y activo (3.5.0).",
+   "que_hace": "Permite construir sistemas de IA modulares con código Python compositivo en lugar de prompts frágiles, y ofrece optimizadores que ajustan automáticamente prompts y pesos según una métrica, tanto para clasificadores simples como para pipelines RAG o agentes.",
+   "como_lo_hace": "Se instala con `pip install dspy`. La integración con LM usa motores nativos `lm15` integrados, sin dependencia de LiteLLM; esto rompe opciones de proveedor anteriores y hay guía de migración. La documentación completa está en dspy.ai.",
+   "combina_con": [
+    {
+     "id": "mlflow",
+     "motivo": "Seguimiento de experimentos y trazas con el flavor oficial de DSPy en MLflow.",
+     "orden_instalacion": "Activa el autolog de MLflow antes de optimizar."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de los programas DSPy con la integración oficial de Langfuse.",
+     "orden_instalacion": "Instrumenta antes de las ejecuciones."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Métricas de RAG como objetivo para los optimizadores (combinación por arquitectura).",
+     "orden_instalacion": "Define la métrica antes de compilar."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): promptfoo. Si actualizas desde versiones con LiteLLM, revisa la guía de migración.",
+   "descripcion_fuentes": [
+    "https://github.com/stanfordnlp/dspy/blob/main/README.md",
+    "https://mlflow.org/docs/latest/genai/flavors/dspy/",
+    "https://langfuse.com/integrations/frameworks/dspy",
+    "https://dspy.ai/tutorials/observability/"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "stanfordnlp/dspy",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "3.5.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "deepagents": {
    "name": "Deep Agents",
@@ -12359,6 +12631,7 @@
    "limits": "Su parecido con Claude Code no acredita el uso de la suscripción de Claude Code",
    "combines_with": [
     "langgraph",
+    "langchain",
     "langfuse"
    ],
    "alternatives": [
@@ -12456,7 +12729,47 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Harness de agentes de código abierto (MIT) de LangChain, «con pilas incluidas», que funciona sin configuración y es extensible. Activo (0.7.38), con versión JS/TS.",
+   "que_hace": "Trae defaults para trabajo largo y multipaso: subagentes con contexto aislado, sistema de archivos con backends locales, en sandbox o remotos, gestión de contexto (resume hilos y descarga salidas de herramientas a disco), acceso a shell en el sandbox elegido, memoria persistente, aprobación humana de herramientas, skills y herramientas propias o de cualquier servidor MCP.",
+   "como_lo_hace": "Se instala con `uv add deepagents` y está construido sobre LangGraph (streaming, persistencia, checkpoints), con trazas, evaluación y despliegue mediante LangSmith. Es agnóstico de modelo: vale cualquier LLM con tool calling, incluidos modelos locales.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Base de ejecución sobre la que está construido.",
+     "orden_instalacion": "Se instala como dependencia; baja a LangGraph para personalizar el grafo."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Modelos e integraciones del mismo ecosistema.",
+     "orden_instalacion": "Añade los paquetes del proveedor de modelos."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de código abierto mediante la integración de Langfuse con LangChain/LangGraph (combinación por arquitectura).",
+     "orden_instalacion": "Configura el callback antes de producción."
+    }
+   ],
+   "descripcion_notas": "Alternativa (elige una): openai-agents-python. Si da shell al agente, úsalo dentro de un sandbox.",
+   "descripcion_fuentes": [
+    "https://github.com/langchain-ai/deepagents/blob/main/README.md",
+    "https://langfuse.com/integrations/frameworks/langchain"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "langchain-ai/deepagents",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "deepagents==0.7.38 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "openai-agents-python": {
    "name": "OpenAI Agents SDK",
@@ -12476,7 +12789,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Es una biblioteca de aplicaciones; la disponibilidad de adaptadores no confirma por sí sola una ruta local completa",
    "combines_with": [
+    "litellm",
     "openai-python",
+    "langfuse",
     "fastmcp"
    ],
    "alternatives": [
@@ -12576,7 +12891,55 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "SDK oficial de OpenAI (MIT) para flujos multiagente, ligero y agnóstico de proveedor. Muy activo (v0.24.0), con versión JS/TS.",
+   "que_hace": "Ofrece agentes con instrucciones, herramientas, guardrails y handoffs; agentes en sandbox que trabajan en un contenedor durante horizontes largos; agentes de voz y en tiempo real; agentes como herramientas; herramientas de función, MCP y alojadas; sesiones con historial automático, y trazas integradas para ver y depurar ejecuciones. Soporta las API Responses y Chat Completions y más de 100 LLM.",
+   "como_lo_hace": "Python 3.10+ (`pip install openai-agents`), con extras opcionales para voz (`[voice]`) y sesiones en Redis. Los modelos de otros proveedores se conectan, por ejemplo, mediante LiteLLM.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Integración documentada para usar modelos de otros proveedores.",
+     "orden_instalacion": "Instala el extra de LiteLLM y configura el modelo."
+    },
+    {
+     "id": "openai-python",
+     "motivo": "Cliente oficial de OpenAI que usa el SDK.",
+     "orden_instalacion": "Se instala como dependencia."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de código abierto como alternativa al panel de OpenAI (integración oficial).",
+     "orden_instalacion": "Instrumenta con el procesador de trazas de Langfuse."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "Construir servidores MCP propios que el SDK consume como herramientas (combinación por arquitectura; el SDK documenta MCP).",
+     "orden_instalacion": "Servidor MCP primero."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): pydantic-ai, langgraph, smolagents, deepagents, adk-python. Las trazas están activadas por defecto y van al panel de OpenAI; se desactivan con `OPENAI_AGENTS_DISABLE_TRACING=1`.",
+   "descripcion_fuentes": [
+    "https://github.com/openai/openai-agents-python/blob/main/README.md",
+    "https://openai.github.io/openai-agents-python/models/litellm/",
+    "https://openai.github.io/openai-agents-python/mcp/",
+    "https://langfuse.com/integrations/frameworks/openai-agents",
+    "https://openai.github.io/openai-agents-python/tracing/"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "openai/openai-agents-python",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.24.0 (2026-10-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "smolagents": {
    "name": "smolagents",
@@ -12597,7 +12960,9 @@
    "limits": "El agente ejecuta código: usa el aislamiento documentado y archivos de prueba",
    "combines_with": [
     "e2b",
-    "transformers"
+    "transformers",
+    "litellm",
+    "langfuse"
    ],
    "alternatives": [
     "pydantic-ai",
@@ -12694,7 +13059,53 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Biblioteca minimalista de agentes de Hugging Face (Apache 2.0): la lógica principal cabe en unas 1.000 líneas. Activa (v1.26.0).",
+   "que_hace": "Su `CodeAgent` escribe sus acciones como código Python en lugar de JSON. También hay agentes de tool calling. Permite compartir y descargar herramientas y agentes del Hub, admite texto, visión, vídeo y audio, y usa herramientas de cualquier servidor MCP o de LangChain.",
+   "como_lo_hace": "Se instala con `pip install \"smolagents[toolkit]\"`. Es agnóstico de modelo: `transformers` u Ollama en local, proveedores del Hub, LiteLLM para más de 100 LLM, OpenAI o Anthropic. Como ejecuta código, recomienda sandboxes (E2B, Blaxel, Modal o Docker): su `LocalPythonExecutor` no es una frontera de seguridad.",
+   "combina_con": [
+    {
+     "id": "e2b",
+     "motivo": "Sandbox gestionado documentado para ejecutar el código del agente.",
+     "orden_instalacion": "Cuenta de E2B y extra correspondiente antes de ejecutar CodeAgent."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Modelos locales de Hugging Face.",
+     "orden_instalacion": "Requiere GPU para modelos medianos."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Acceso a más de 100 LLM con `LiteLLMModel`.",
+     "orden_instalacion": "Configura las claves del proveedor."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas con la integración oficial de Langfuse.",
+     "orden_instalacion": "Instrumenta antes de producción."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): pydantic-ai, openai-agents-python. No ejecutes CodeAgent sin sandbox con datos o credenciales reales.",
+   "descripcion_fuentes": [
+    "https://github.com/huggingface/smolagents/blob/main/README.md",
+    "https://huggingface.co/docs/smolagents/tutorials/secure_code_execution",
+    "https://langfuse.com/integrations/frameworks/smolagents"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "huggingface/smolagents",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.26.0 (2026-05-29)",
+    "checked_at": "2026-11-15"
+   }
   },
   "haystack": {
    "name": "Haystack",
@@ -12715,7 +13126,9 @@
    "limits": "El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte",
    "combines_with": [
     "qdrant",
-    "docling"
+    "docling",
+    "ollama",
+    "langfuse"
    ],
    "alternatives": [
     "llama-index",
@@ -12814,7 +13227,55 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "mcp": true
+   "mcp": true,
+   "que_es": "Framework de orquestación de IA de código abierto (Apache 2.0) de deepset para aplicaciones LLM en producción con Python. Maduro y activo (v3.5.0); deepset ofrece soporte y plataforma comerciales (Haystack Enterprise).",
+   "que_hace": "Permite diseñar pipelines modulares y flujos de agentes con control explícito sobre recuperación, enrutamiento, memoria y generación: RAG escalable, aplicaciones multimodales, búsqueda semántica, preguntas y respuestas. Los agentes tienen hooks de ciclo de vida para guardrails y métricas de pasos y tokens. Hayhooks despliega pipelines como API REST o servidores MCP.",
+   "como_lo_hace": "Se instala con `pip install haystack-ai` (también hay imágenes Docker) y las integraciones van en `haystack-core-integrations`. Recoge telemetría anónima de uso de componentes por defecto; se puede desactivar.",
+   "combina_con": [
+    {
+     "id": "qdrant",
+     "motivo": "Document store con integración oficial.",
+     "orden_instalacion": "Qdrant primero; luego `qdrant-haystack`."
+    },
+    {
+     "id": "docling",
+     "motivo": "Conversión de documentos complejos con la integración oficial de Docling.",
+     "orden_instalacion": "Añade el convertidor de Docling al pipeline de indexación."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Generadores con modelos locales (`OllamaChatGenerator`).",
+     "orden_instalacion": "Ollama con el modelo descargado primero."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas con la integración oficial de Langfuse.",
+     "orden_instalacion": "Añade el componente tracer de Langfuse."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): llama-index, langchain. Desactiva la telemetría si tu política lo exige.",
+   "descripcion_fuentes": [
+    "https://github.com/deepset-ai/haystack/blob/main/README.md",
+    "https://qdrant.tech/documentation/frameworks/haystack/",
+    "https://haystack.deepset.ai/integrations/docling",
+    "https://docs.haystack.deepset.ai/docs/ollamachatgenerator",
+    "https://langfuse.com/integrations/frameworks/haystack"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "deepset-ai/haystack",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.5.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
   },
   "adk-python": {
    "name": "Agent Development Kit (ADK)",
@@ -12834,8 +13295,10 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Que Google publique ADK no lo convierte en configuración de Antigravity",
    "combines_with": [
-    "gemini-cli",
-    "fastmcp"
+    "litellm",
+    "fastmcp",
+    "langfuse",
+    "google-skills"
    ],
    "alternatives": [
     "langgraph",
@@ -12932,7 +13395,54 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Agent Development Kit (ADK) 2.0 de Google (Apache 2.0): framework Python «code-first» para construir, evaluar y desplegar agentes. Muy activo (v2.14.1), con versiones en Java, Kotlin, Go y TypeScript.",
+   "que_hace": "Tiene un runtime de flujos basado en grafos (enrutamiento, fan-out/fan-in, bucles, reintentos, estado, nodos dinámicos, human-in-the-loop), una Task API para delegar entre agentes, sistemas multiagente jerárquicos, herramientas prediseñadas, funciones, OpenAPI y MCP, agentes sin código (Agent Config) y confirmación de herramientas. Está optimizado para Gemini, pero es agnóstico de modelo y de despliegue.",
+   "como_lo_hace": "Python 3.11+ (`pip install google-adk`). Incluye ADK Web para desarrollar y se despliega en contenedores, Cloud Run o Agent Runtime en Gemini Enterprise Agent Platform (antes Vertex AI Agent Engine). Otros modelos se conectan, por ejemplo, mediante LiteLLM.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Usar modelos no Gemini, incluidos locales (documentado en ADK).",
+     "orden_instalacion": "Instala LiteLLM y configura el modelo en el agente."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "Servidores MCP propios como herramientas (combinación por arquitectura; ADK documenta herramientas MCP).",
+     "orden_instalacion": "Servidor MCP primero."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas con la integración oficial de Langfuse para Google ADK.",
+     "orden_instalacion": "Instrumenta antes de desplegar."
+    },
+    {
+     "id": "google-skills",
+     "motivo": "Skills oficiales de Google Cloud para que un agente de código despliegue en Cloud Run o Agent Runtime (combinación por arquitectura).",
+     "orden_instalacion": "Independientes."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): langgraph, openai-agents-python. Se quitó gemini-cli: no es una integración.",
+   "descripcion_fuentes": [
+    "https://github.com/google/adk-python/blob/main/README.md",
+    "https://google.github.io/adk-docs/agents/models/",
+    "https://google.github.io/adk-docs/tools/mcp-tools/",
+    "https://langfuse.com/integrations/frameworks/google-adk"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "google/adk-python",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v2.14.1 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "pydantic-ai": {
    "name": "Pydantic AI",
@@ -12953,7 +13463,8 @@
    "limits": "Empieza con el paquete base; el harness de programación es un componente adicional",
    "combines_with": [
     "langfuse",
-    "fastmcp"
+    "fastmcp",
+    "ollama"
    ],
    "alternatives": [
     "openai-agents-python",
@@ -13051,7 +13562,49 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "SDK de IA para Python (MIT) del equipo de Pydantic: un bucle de agente tipado y extensible. Muy activo (v2.68.0). Se apoya en productos comerciales de la misma empresa (Logfire, AI Gateway).",
+   "que_hace": "Cubre agentes, voz en tiempo real, generación de imágenes y embeddings con cualquier modelo (OpenAI, Anthropic, Google, Bedrock, Groq, Mistral, xAI, Ollama y docenas más), cambiando solo una cadena. Pydantic AI Harness añade capacidades para trabajo largo (memoria, archivos, shell con lista blanca), Pydantic Evals evalúa salidas y trayectorias, y la ejecución duradera se hace con Temporal y otros.",
+   "como_lo_hace": "Se instala con `uv add pydantic-ai` (extras como `[temporal]` o `[openai-realtime]`), con validación de tipos de extremo a extremo. Para observabilidad recomienda Pydantic Logfire, que es comercial, y soporta MCP.",
+   "combina_con": [
+    {
+     "id": "langfuse",
+     "motivo": "Trazas de código abierto con la integración oficial, como alternativa a Logfire.",
+     "orden_instalacion": "Instrumenta vía OpenTelemetry."
+    },
+    {
+     "id": "fastmcp",
+     "motivo": "Servidores MCP propios como herramientas; Pydantic AI documenta el cliente MCP (combinación por arquitectura).",
+     "orden_instalacion": "Servidor MCP primero."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Proveedor de modelos locales soportado.",
+     "orden_instalacion": "Ollama con el modelo descargado primero."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): openai-agents-python, smolagents, langgraph.",
+   "descripcion_fuentes": [
+    "https://github.com/pydantic/pydantic-ai/blob/main/README.md",
+    "https://langfuse.com/integrations/frameworks/pydantic-ai",
+    "https://ai.pydantic.dev/mcp/",
+    "https://ai.pydantic.dev/models/overview/"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "pydantic/pydantic-ai",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v2.68.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
   },
   "ag2": {
    "name": "ag2",
@@ -13071,8 +13624,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen",
    "combines_with": [
-    "langchain",
-    "langfuse"
+    "ollama",
+    "langfuse",
+    "agent-framework"
    ],
    "alternatives": [],
    "repo": "https://github.com/ag2ai/ag2",
@@ -13167,7 +13721,48 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "AG2 (Apache 2.0), «AgentOS de código abierto» surgido de AutoGen y mantenido por un grupo de voluntarios de varias organizaciones (administradores: Chi Wang y Qingyun Wu). Desde la v1.0 (actual v1.3.2) el paquete `ag2` es un framework nuevo orientado a protocolos; el clásico (`import autogen`, ConversableAgent, GroupChat) se trasladó a ag2ai/ag2-classic.",
+   "que_hace": "Construye agentes y cooperación entre agentes: herramientas, human-in-the-loop, orquestación multiagente, un harness con conocimiento y compactación de historial (por ejemplo, `SummarizeCompact`) y patrones de diseño agéntico avanzados.",
+   "como_lo_hace": "Python 3.11+ (`pip install ag2[openai]`; también hay extras `anthropic`, `gemini`, `ollama`…). La v1.0 no es una actualización directa desde Classic: cambian el modelo de agentes, la orquestación y los imports.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales mediante el extra `ag2[ollama]`.",
+     "orden_instalacion": "Ollama primero; instala el extra."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas (Langfuse documenta AutoGen/AG2) [DATO NO VERIFICADO: vigencia con la API de AG2 1.0].",
+     "orden_instalacion": "Comprueba la compatibilidad con la versión instalada."
+    },
+    {
+     "id": "agent-framework",
+     "motivo": "Sucesor de AutoGen por parte de Microsoft; conviene compararlo antes de migrar (combinación por arquitectura).",
+     "orden_instalacion": "Elige uno de los dos para proyectos nuevos."
+    }
+   ],
+   "descripcion_notas": "Se quitó langchain porque no hay integración documentada. Si tu código usa `import autogen`, instala ag2-classic.",
+   "descripcion_fuentes": [
+    "https://github.com/ag2ai/ag2/blob/main/README.md",
+    "https://langfuse.com/integrations/frameworks/autogen",
+    "https://docs.ag2.ai/latest/"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "ag2ai/ag2",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v1.3.2 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
   },
   "awesome-langgraph": {
    "name": "awesome-LangGraph",
@@ -13187,7 +13782,9 @@
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
    "limits": "Las integraciones de los enlaces no acreditan compatibilidad del directorio completo",
    "combines_with": [
-    "langchain"
+    "langgraph",
+    "langchain",
+    "deepagents"
    ],
    "alternatives": [],
    "repo": "https://github.com/vonzosten/awesome-LangGraph",
@@ -13279,7 +13876,45 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Índice curado (CC0) de vonzosten sobre el ecosistema LangChain y LangGraph: frameworks, plantillas y proyectos reales. Activo; último cambio en octubre de 2026.",
+   "que_hace": "Cubre el ciclo completo de un agente con LangChain/LangGraph: construir (bibliotecas e integraciones), observar y evaluar (LangSmith), desplegar, Deep Agents, LangSmith Fleet (no-code), integraciones y herramientas MCP, proyectos oficiales y proyectos comunitarios por caso de uso (RAG, automatización web, investigación, finanzas), con plantillas y recursos de aprendizaje.",
+   "como_lo_hace": "README con tablas y enlaces. No se instala.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Framework central de la lista.",
+     "orden_instalacion": "No aplica: es una lista de consulta."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Framework central de la lista.",
+     "orden_instalacion": "No aplica."
+    },
+    {
+     "id": "deepagents",
+     "motivo": "Sección propia en la lista.",
+     "orden_instalacion": "No aplica."
+    }
+   ],
+   "descripcion_notas": "Todavía recomienda langchain-mcp-adapters, archivado y retirado del catálogo (MCP pasó al paquete principal de LangChain): desactualización detectada.",
+   "descripcion_fuentes": [
+    "https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "vonzosten/awesome-LangGraph",
+    "archived": false,
+    "pushed_at": "2026-10-15",
+    "license": "CC0-1.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
   },
   "mastra": {
    "name": "Mastra",
@@ -13300,7 +13935,8 @@
    "limits": "No copies el bloque de prompt del README como comando de terminal; el instalador es npm create mastra",
    "combines_with": [
     "copilotkit",
-    "langfuse"
+    "langfuse",
+    "ollama"
    ],
    "alternatives": [
     "langgraphjs",
@@ -13396,7 +14032,49 @@
     ],
     "installation_tested": false
    },
-   "source_archived": false
+   "source_archived": false,
+   "que_es": "Framework en TypeScript para aplicaciones y agentes de IA, de Mastra. Doble licencia: Apache 2.0 para el núcleo y Mastra Enterprise License (código visible pero no libre) en los directorios `ee/`; GitHub lo marca NOASSERTION. Muy activo (@mastra/core 1.83.0).",
+   "que_hace": "Ofrece enrutamiento de modelos a más de 40 proveedores, agentes autónomos con herramientas, un motor de flujos basado en grafos, human-in-the-loop con suspensión y reanudación, gestión de contexto (historial, memoria de trabajo y semántica, RAG), autoría de servidores MCP, evals y observabilidad integradas.",
+   "como_lo_hace": "Node/TypeScript. Se crea con `npm create mastra@latest` y se integra en apps React, Next.js o Node o como endpoints independientes. Mastra Studio (`localhost:4111`) sirve para construir y probar agentes y flujos. Para interfaces se integra con AI SDK UI de Vercel y CopilotKit.",
+   "combina_con": [
+    {
+     "id": "copilotkit",
+     "motivo": "Interfaz de asistente en la web (integración documentada por CopilotKit y citada en el README).",
+     "orden_instalacion": "Crea el backend Mastra y conecta CopilotKit en el frontend."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas con la integración oficial de Langfuse para Mastra.",
+     "orden_instalacion": "Configura el exportador en la observabilidad de Mastra."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales a través del enrutamiento de proveedores (combinación por arquitectura) [DATO NO VERIFICADO: proveedor exacto].",
+     "orden_instalacion": "Ollama primero."
+    }
+   ],
+   "descripcion_notas": "Alternativas (elige una): langgraphjs, vercel-ai. Las funciones de `ee/` requieren licencia comercial para producción.",
+   "descripcion_fuentes": [
+    "https://github.com/mastra-ai/mastra/blob/main/README.md",
+    "https://docs.copilotkit.ai/mastra",
+    "https://langfuse.com/integrations/frameworks/mastra",
+    "https://mastra.ai/docs/observability/overview"
+   ],
+   "descripcion_revision": {
+    "batch": "12-frameworks-agentes-parte-1",
+    "checked_at": "2026-11-15",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "mastra-ai/mastra",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "@mastra/core@1.83.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
   },
   "vercel-ai": {
    "name": "AI SDK (Vercel)",
