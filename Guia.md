@@ -6335,6 +6335,7 @@ docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/labe
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://chingswy.github.io/easymocap-public-doc/quickstart/quickstart.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [openpose](human/fichas/openpose.md) · [mediapipe](human/fichas/mediapipe.md) · [blender](human/fichas/blender.md)<br>
 **Más:** [ficha completa](human/fichas/easymocap.md) · [GitHub](https://github.com/zju3dv/EasyMocap)
 
 #### 🧩 4D-Humans
@@ -6355,6 +6356,7 @@ conda activate 4D-humans` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/yohanshin/WHAM/blob/main/docs/INSTALL.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [4D-Humans](human/fichas/4d-humans.md) · [blender](human/fichas/blender.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/wham.md) · [GitHub](https://github.com/yohanshin/WHAM)
 
 ### Sensores y percepción espacial
@@ -6423,7 +6425,7 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `git clone https://github.com/ggml-org/whisper.cpp.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Transcribir una nota offline; Preparar texto base para subtítulos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FFmpeg](human/fichas/ffmpeg.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Pipecat](human/fichas/pipecat.md)<br>
 **Más:** [ficha completa](human/fichas/whisper-cpp.md) · [GitHub](https://github.com/ggml-org/whisper.cpp)
 
 #### 📝 whisper
@@ -6432,7 +6434,7 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install -U openai-whisper` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una transcripción local; Traducir habla al inglés como borrador — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisperX](human/fichas/whisperx.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/whisper.md) · [GitHub](https://github.com/openai/whisper)
 
 #### ⚡ faster-whisper
@@ -6441,7 +6443,7 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install faster-whisper` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisperX](human/fichas/whisperx.md)<br>
+**Combina con:** [whisperX](human/fichas/whisperx.md) · [Pipecat](human/fichas/pipecat.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/faster-whisper.md) · [GitHub](https://github.com/SYSTRAN/faster-whisper)
 
 #### 🎯 whisperX
@@ -6450,7 +6452,7 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install whisperx` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisper](human/fichas/whisper.md) · [MoviePy](human/fichas/moviepy.md)<br>
+**Combina con:** [faster-whisper](human/fichas/faster-whisper.md) · [whisper](human/fichas/whisper.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/whisperx.md) · [GitHub](https://github.com/m-bain/whisperX)
 
 #### 🎙️ NeMo Speech
@@ -6461,7 +6463,7 @@ Transcripción, síntesis, clonación de voz, agentes de audio y música. Compar
 cd Speech
 uv sync --extra all --extra cu13     # CUDA 13.x (recommended) — use --extra cu12 for CUDA 12.x` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Pipecat](human/fichas/pipecat.md)<br>
+**Combina con:** [Nemotron (NVIDIA)](human/fichas/nemotron.md) · [Pipecat](human/fichas/pipecat.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/nemo.md) · [GitHub](https://github.com/NVIDIA-NeMo/Speech)
 
 ### Síntesis y clonación de voz
@@ -6472,7 +6474,7 @@ uv sync --extra all --extra cu13     # CUDA 13.x (recommended) — use --extra c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/hexgrad/kokoro/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Narrar una nota propia; Probar una voz para una demo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Pipecat](human/fichas/pipecat.md) · [whisper.cpp](human/fichas/whisper-cpp.md)<br>
+**Combina con:** [Pipecat](human/fichas/pipecat.md) · [whisper.cpp](human/fichas/whisper-cpp.md) · [MoviePy](human/fichas/moviepy.md)<br>
 **Más:** [ficha completa](human/fichas/kokoro.md) · [GitHub](https://github.com/hexgrad/kokoro)
 
 #### 🎚️ VoiceStudio
@@ -6481,7 +6483,7 @@ uv sync --extra all --extra cu13     # CUDA 13.x (recommended) — use --extra c
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/debpalash/VoiceStudio/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisperX](human/fichas/whisperx.md)<br>
+**Combina con:** [whisperX](human/fichas/whisperx.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Kokoro](human/fichas/kokoro.md)<br>
 **Más:** [ficha completa](human/fichas/omnivoice-studio.md) · [GitHub](https://github.com/debpalash/VoiceStudio)
 
 #### 🗣️ GPT-SoVITS
@@ -6494,7 +6496,7 @@ conda activate GPTSoVits
 pip install -r extra-req.txt --no-deps
 pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [RVC WebUI](human/fichas/rvc.md)<br>
+**Combina con:** [RVC WebUI](human/fichas/rvc.md) · [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md)<br>
 **Más:** [ficha completa](human/fichas/gpt-sovits.md) · [GitHub](https://github.com/RVC-Boss/GPT-SoVITS)
 
 #### 🗣️ VibeVoice
@@ -6503,7 +6505,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/microsoft/VibeVoice/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [open-notebook](human/fichas/open-notebook.md)<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [open-notebook](human/fichas/open-notebook.md) · [Pipecat](human/fichas/pipecat.md)<br>
 **Más:** [ficha completa](human/fichas/vibevoice.md) · [GitHub](https://github.com/microsoft/VibeVoice)
 
 #### 🗣️ VoxCPM
@@ -6512,6 +6514,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install voxcpm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar narración local; Explorar diseño de voz consentido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [Pipecat](human/fichas/pipecat.md) · [FFmpeg](human/fichas/ffmpeg.md)<br>
 **Más:** [ficha completa](human/fichas/voxcpm.md) · [GitHub](https://github.com/OpenBMB/VoxCPM)
 
 #### 🗣️ RVC WebUI
@@ -6522,7 +6525,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 .venv\Scripts\activate
 python -m pip install --upgrade pip setuptools wheel` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [GPT-SoVITS](human/fichas/gpt-sovits.md)<br>
+**Combina con:** [GPT-SoVITS](human/fichas/gpt-sovits.md) · [FFmpeg](human/fichas/ffmpeg.md) · [OBS Studio](human/fichas/obs-studio.md)<br>
 **Más:** [ficha completa](human/fichas/rvc.md) · [GitHub](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 
 #### 🗣️ Fish Speech
@@ -6531,6 +6534,7 @@ python -m pip install --upgrade pip setuptools wheel` (comprobar los pasos compl
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://speech.fish.audio/install/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Pipecat](human/fichas/pipecat.md) · [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md)<br>
 **Más:** [ficha completa](human/fichas/fish-speech.md) · [GitHub](https://github.com/fishaudio/fish-speech)
 
 #### 🗣️ IndexTTS

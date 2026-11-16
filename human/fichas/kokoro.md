@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+kokoro, librería de inferencia para Kokoro-82M, modelo TTS de pesos abiertos de 82 millones de parámetros, de @hexgrad. Licencia Apache-2.0. Tiene ~10k estrellas, pero no cambia desde agosto de 2025.
+
+## ¿Qué hace?
+
+Genera voz de calidad comparable a modelos mayores siendo mucho más rápido y barato, según el autor, con varias voces e idiomas (inglés, japonés, chino y otros).
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install kokoro>=0.9.4 soundfile`. Usa misaki (G2P) y espeak-ng como respaldo para inglés fuera de vocabulario y algunos idiomas; los idiomas extra se instalan con `misaki[ja]` y similares.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Pipecat](pipecat.md) | TTS local en agentes de voz. (combinación por arquitectura) | Expón Kokoro como servicio TTS. |
+| [whisper.cpp](whisper-cpp.md) | STT local para un ciclo voz a voz. (combinación por arquitectura) | Combina en el mismo pipeline. |
+| [MoviePy](moviepy.md) | Narración de vídeos. (combinación por arquitectura) | Monta el audio generado. |
+
+**Notas:** Alternativas (elige una): luxtts, edge-tts. Inactivo desde 2025.
+
+Estado en GitHub: activo · último push 2025-08-06 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/hexgrad/kokoro/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias |
 | Coste | Sin pago a un modelo en la ruta básica. Modelo local Apache sin API de pago; equipo y recursos de voz independientes |
 | Equipo | Preparación según la ruta elegida. Python; Kokoro y soundfile; espeak-ng según idioma; pesos |
-
-Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias
-
-## Qué puedes hacer con él
-
-Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.
-
-## Por qué destaca
-
-Usos propuestos: Narrar una nota propia; Probar una voz para una demo.
-
-## Cómo funciona
 
 Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias
 
@@ -87,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Kokoro y soundfile; espeak-ng según idioma; pesos
 - **Etiquetas:** `tts` `audio` `local`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
-| [whisper.cpp](whisper-cpp.md) | 55.2k | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
 
 ## Alternativas (elige una)
 

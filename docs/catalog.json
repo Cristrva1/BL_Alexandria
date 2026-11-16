@@ -139024,7 +139024,11 @@
       "desc": "Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openpose",
+        "mediapipe",
+        "blender"
+      ],
       "alt": [],
       "stack": "Entorno de la demo; cámaras y calibración según método; modelos corporales autorizados",
       "repo_url": "https://github.com/zju3dv/EasyMocap",
@@ -139135,6 +139139,45 @@
       "stars": 4980,
       "license": "NOASSERTION",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "openpose",
+          "motivo": "Detector de keypoints 2D de entrada.",
+          "orden_instalacion": "Genera los keypoints con OpenPose."
+        },
+        {
+          "id": "mediapipe",
+          "motivo": "Detector de keypoints soportado.",
+          "orden_instalacion": "Usa el detector MediaPipe."
+        },
+        {
+          "id": "blender",
+          "motivo": "Visualizar y animar las mallas. (combinación por arquitectura)",
+          "orden_instalacion": "Importa el resultado."
+        }
+      ],
+      "que_es": "EasyMocap, toolbox open source de captura de movimiento sin marcadores y síntesis de nuevas vistas desde vídeo RGB, del grupo ZJU3DV (Universidad de Zhejiang). Licencia «Project Registration License (PRL) v1.0» propia (GitHub muestra NOASSERTION). Tiene ~5k estrellas y está poco activo (v0.1).",
+      "que_hace": "Ajusta modelos SMPL, SMPL+H, SMPL-X y MANO para capturar cuerpo, manos y cara desde una o varias cámaras, con múltiples demos. Incluye trabajos de síntesis de vistas presentados en SIGGRAPH 2022.",
+      "como_lo_hace": "Se instala desde el repo con PyTorch. Necesita detectores de keypoints 2D (OpenPose, HRNet o MediaPipe, este último soportado desde 2021) y los modelos SMPL, que requieren registro.",
+      "descripcion_notas": "Sin alternativas declaradas. Revisa la licencia PRL antes de redistribuir.",
+      "descripcion_fuentes": [
+        "https://github.com/zju3dv/EasyMocap/blob/master/Readme.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "zju3dv/EasyMocap",
+        "archived": false,
+        "pushed_at": "2026-09-15",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "latest_release": "v0.1 (2021-03-29)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.",
       "body": "Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.",
       "install": {
@@ -139143,7 +139186,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "openpose",
+          "label": "openpose"
+        },
+        {
+          "id": "mediapipe",
+          "label": "mediapipe"
+        },
+        {
+          "id": "blender",
+          "label": "blender"
+        }
+      ],
       "areas": [
         "vision"
       ],
@@ -142269,7 +142325,11 @@
       "desc": "Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "4d-humans",
+        "blender",
+        "pytorch"
+      ],
       "alt": [],
       "stack": "Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado",
       "repo_url": "https://github.com/yohanshin/WHAM",
@@ -142382,6 +142442,44 @@
       "stars": 1178,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "4d-humans",
+          "motivo": "Otro enfoque de reconstrucción para comparar. (combinación por arquitectura)",
+          "orden_instalacion": "Compara resultados en el mismo vídeo."
+        },
+        {
+          "id": "blender",
+          "motivo": "Animar un personaje con el movimiento SMPL. (combinación por arquitectura)",
+          "orden_instalacion": "Importa el movimiento exportado."
+        },
+        {
+          "id": "pytorch",
+          "motivo": "Backend.",
+          "orden_instalacion": "Instala PyTorch con CUDA."
+        }
+      ],
+      "que_es": "WHAM, implementación de investigación para reconstruir humanos en 3D anclados al mundo con movimiento preciso a partir de vídeo, de @yohanshin. Licencia MIT. Tiene ~1.2k estrellas y no cambia desde abril de 2024.",
+      "que_hace": "Estima la malla SMPL y la trayectoria global de la persona a partir de vídeo monocular, opcionalmente con SLAM para el movimiento de cámara. El refinado opcional con Temporal SMPLify mejora la alineación 2D.",
+      "como_lo_hace": "La instalación está en `docs/INSTALL.md` (PyTorch con GPU). Requiere registrarse para descargar los modelos SMPL/SMPLify; algunos pesos están en Google Drive.",
+      "descripcion_notas": "Sin alternativas declaradas. Código de investigación inactivo.",
+      "descripcion_fuentes": [
+        "https://github.com/yohanshin/WHAM/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "yohanshin/WHAM",
+        "archived": false,
+        "pushed_at": "2024-04-18",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.",
       "body": "Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.",
       "install": {
@@ -142390,7 +142488,20 @@
         "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "4d-humans",
+          "label": "4d-humans"
+        },
+        {
+          "id": "blender",
+          "label": "blender"
+        },
+        {
+          "id": "pytorch",
+          "label": "pytorch"
+        }
+      ],
       "areas": [
         "vision"
       ],
@@ -143375,7 +143486,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx"
+        "whisperx",
+        "pipecat",
+        "moviepy"
       ],
       "alt": [
         "whisper-cpp"
@@ -143491,6 +143604,45 @@
       "stars": 26758,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "whisperx",
+          "motivo": "Backend de transcripción de WhisperX.",
+          "orden_instalacion": "Instala WhisperX, que lo usa por debajo."
+        },
+        {
+          "id": "pipecat",
+          "motivo": "STT local en agentes de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Usa un servicio STT basado en faster-whisper."
+        },
+        {
+          "id": "moviepy",
+          "motivo": "Generar subtítulos sobre vídeo. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte los segmentos a SRT."
+        }
+      ],
+      "que_es": "faster-whisper, reimplementación de Whisper sobre CTranslate2, de SYSTRAN. Licencia MIT. Es madura (~27k estrellas, v1.2.1).",
+      "que_hace": "Transcribe hasta 4 veces más rápido que openai/whisper con la misma precisión y menos memoria, según el proyecto. Admite cuantización de 8 bits, transcripción por lotes, VAD y modelos distil-whisper.",
+      "como_lo_hace": "Requiere Python 3.9+ y se instala con `pip install faster-whisper`. En GPU necesita cuBLAS y cuDNN 9 para CUDA 12 (con CUDA 11 hay que fijar ctranslate2 3.24.0).",
+      "descripcion_notas": "Alternativas (elige una): whisper-cpp.",
+      "descripcion_fuentes": [
+        "https://github.com/SYSTRAN/faster-whisper/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "SYSTRAN/faster-whisper",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v1.2.1 (2025-10-31)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización.",
       "body": "Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización.",
       "install": {
@@ -143508,6 +143660,14 @@
         {
           "id": "whisperx",
           "label": "whisperx"
+        },
+        {
+          "id": "pipecat",
+          "label": "pipecat"
+        },
+        {
+          "id": "moviepy",
+          "label": "moviepy"
         }
       ],
       "areas": [
@@ -143538,7 +143698,11 @@
       "desc": "Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pipecat",
+        "ffmpeg",
+        "whisperx"
+      ],
       "alt": [
         "cosyvoice",
         "gpt-sovits"
@@ -143652,6 +143816,45 @@
       "stars": 33724,
       "license": "NOASSERTION",
       "homepage": "https://speech.fish.audio",
+      "combina_con": [
+        {
+          "id": "pipecat",
+          "motivo": "TTS en agentes de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Integra el servicio o el modelo local."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Postproceso de audio. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte la salida."
+        },
+        {
+          "id": "whisperx",
+          "motivo": "Transcribir referencias de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Genera el texto de referencia."
+        }
+      ],
+      "que_es": "Fish Speech, herramientas y modelos de voz de Fish Audio. El código y los pesos usan la «Fish Audio Community License»; los pesos S2-Pro usan la Fish Audio Research License (GitHub muestra NOASSERTION). Tiene ~34k estrellas.",
+      "que_hace": "Genera voz expresiva (risas, llanto, susurros), clona voces a partir de referencias y produce varios hablantes en un mismo texto. Fish Audio ofrece además un servicio comercial.",
+      "como_lo_hace": "Se instala desde el repo con Python y PyTorch (GPU recomendable), y se usa con WebUI, API o CLI. Fish Audio advierte que actuará ante violaciones de la licencia.",
+      "descripcion_notas": "Alternativas (elige una): cosyvoice, gpt-sovits. Licencia no OSI: revisa los términos.",
+      "descripcion_fuentes": [
+        "https://github.com/fishaudio/fish-speech/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "fishaudio/fish-speech",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "no estándar (NOASSERTION)",
+        "primary_language": "Python",
+        "latest_release": "v1.5.1 (2025-05-31)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.",
       "body": "Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.",
       "install": {
@@ -143669,7 +143872,20 @@
           "label": "gpt-sovits"
         }
       ],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "pipecat",
+          "label": "pipecat"
+        },
+        {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        },
+        {
+          "id": "whisperx",
+          "label": "whisperx"
+        }
+      ],
       "areas": [
         "audiovisual"
       ],
@@ -143699,7 +143915,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "rvc"
+        "rvc",
+        "ffmpeg",
+        "whisperx"
       ],
       "alt": [
         "fish-speech"
@@ -143817,6 +144035,45 @@
       "stars": 65074,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "rvc",
+          "motivo": "Conversión de timbre del mismo autor.",
+          "orden_instalacion": "Usa RVC para ajustar la voz generada."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Preparación de audio. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte el audio de entrenamiento."
+        },
+        {
+          "id": "whisperx",
+          "motivo": "Transcribir el dataset. (combinación por arquitectura)",
+          "orden_instalacion": "Genera transcripciones alineadas."
+        }
+      ],
+      "que_es": "GPT-SoVITS, WebUI de TTS y conversión de voz con pocos ejemplos, de @RVC-Boss. Licencia MIT. Es muy popular (~65k estrellas, release 20250606v2pro).",
+      "que_hace": "Clona una voz con unos segundos (zero-shot) o un minuto de audio (few-shot), con soporte multilingüe e inferencia entre idiomas. Incluye herramientas para preparar datasets: separación de voz, segmentación, ASR y etiquetado.",
+      "como_lo_hace": "Hay combinaciones probadas de Python 3.9–3.12, PyTorch 2.5–2.8 y CUDA 11.8–12.8; se instala con scripts o paquetes integrados para Windows. La GPU NVIDIA es recomendable.",
+      "descripcion_notas": "Alternativas (elige una): fish-speech. Riesgo de suplantación de voz: usa voces con consentimiento.",
+      "descripcion_fuentes": [
+        "https://github.com/RVC-Boss/GPT-SoVITS/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "RVC-Boss/GPT-SoVITS",
+        "archived": false,
+        "pushed_at": "2026-11-11",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "20250606v2pro (2025-06-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos.",
       "body": "Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos.",
       "install": {
@@ -143834,6 +144091,14 @@
         {
           "id": "rvc",
           "label": "rvc"
+        },
+        {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        },
+        {
+          "id": "whisperx",
+          "label": "whisperx"
         }
       ],
       "areas": [
@@ -144024,7 +144289,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "pipecat",
-        "whisper-cpp"
+        "whisper-cpp",
+        "moviepy"
       ],
       "alt": [
         "luxtts",
@@ -144140,6 +144406,44 @@
       "stars": 10120,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "pipecat",
+          "motivo": "TTS local en agentes de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Expón Kokoro como servicio TTS."
+        },
+        {
+          "id": "whisper-cpp",
+          "motivo": "STT local para un ciclo voz a voz. (combinación por arquitectura)",
+          "orden_instalacion": "Combina en el mismo pipeline."
+        },
+        {
+          "id": "moviepy",
+          "motivo": "Narración de vídeos. (combinación por arquitectura)",
+          "orden_instalacion": "Monta el audio generado."
+        }
+      ],
+      "que_es": "kokoro, librería de inferencia para Kokoro-82M, modelo TTS de pesos abiertos de 82 millones de parámetros, de @hexgrad. Licencia Apache-2.0. Tiene ~10k estrellas, pero no cambia desde agosto de 2025.",
+      "que_hace": "Genera voz de calidad comparable a modelos mayores siendo mucho más rápido y barato, según el autor, con varias voces e idiomas (inglés, japonés, chino y otros).",
+      "como_lo_hace": "Se instala con `pip install kokoro>=0.9.4 soundfile`. Usa misaki (G2P) y espeak-ng como respaldo para inglés fuera de vocabulario y algunos idiomas; los idiomas extra se instalan con `misaki[ja]` y similares.",
+      "descripcion_notas": "Alternativas (elige una): luxtts, edge-tts. Inactivo desde 2025.",
+      "descripcion_fuentes": [
+        "https://github.com/hexgrad/kokoro/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "hexgrad/kokoro",
+        "archived": false,
+        "pushed_at": "2025-08-06",
+        "license": "Apache-2.0",
+        "primary_language": "JavaScript",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.",
       "body": "Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.",
       "install": {
@@ -144165,6 +144469,10 @@
         {
           "id": "whisper-cpp",
           "label": "whisper-cpp"
+        },
+        {
+          "id": "moviepy",
+          "label": "moviepy"
         }
       ],
       "areas": [
@@ -144688,7 +144996,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "pipecat"
+        "nemotron",
+        "pipecat",
+        "pytorch"
       ],
       "alt": [
         "whisperx"
@@ -144804,6 +145114,45 @@
       "stars": 18753,
       "license": "Apache-2.0",
       "homepage": "https://docs.nvidia.com/nemo/speech/nightly/index.html",
+      "combina_con": [
+        {
+          "id": "nemotron",
+          "motivo": "Familia Nemotron, incluida la voz.",
+          "orden_instalacion": "Descarga los checkpoints de Hugging Face."
+        },
+        {
+          "id": "pipecat",
+          "motivo": "Agentes de voz con modelos NVIDIA. (combinación por arquitectura)",
+          "orden_instalacion": "Sirve el modelo y conéctalo al pipeline."
+        },
+        {
+          "id": "pytorch",
+          "motivo": "Backend.",
+          "orden_instalacion": "Instala PyTorch con CUDA."
+        }
+      ],
+      "que_es": "NVIDIA NeMo Speech (antes parte de NeMo), framework actual de NVIDIA para reconocimiento de voz, síntesis y modelos conversacionales. Licencia Apache-2.0. Es maduro (~19k estrellas, v3.0.0).",
+      "que_hace": "Entrena, ajusta y despliega modelos ASR (Parakeet, Canary), TTS (MagpieTTS multilingüe) y de voz conversacional (Nemotron VoiceChat en acceso anticipado). Los checkpoints abiertos están en la colección nemotron-speech de Hugging Face.",
+      "como_lo_hace": "Requiere Python 3.12+ y PyTorch con CUDA; se instala sobre una pila existente sin reemplazarla, o con el entorno soportado (Python 3.13, PyTorch 2.12, CUDA 13.2). También hay contenedor NGC (`nvcr.io/nvidia/nemo-speech`).",
+      "descripcion_notas": "Alternativas (elige una): whisperx.",
+      "descripcion_fuentes": [
+        "https://github.com/NVIDIA-NeMo/Speech/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "NVIDIA-NeMo/Speech",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "latest_release": "v3.0.0 (2026-08-07)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento.",
       "body": "Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento.",
       "install": {
@@ -144819,8 +145168,16 @@
       ],
       "combine_refs": [
         {
+          "id": "nemotron",
+          "label": "nemotron"
+        },
+        {
           "id": "pipecat",
           "label": "pipecat"
+        },
+        {
+          "id": "pytorch",
+          "label": "pytorch"
         }
       ],
       "areas": [
@@ -145319,7 +145676,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "gpt-sovits"
+        "gpt-sovits",
+        "ffmpeg",
+        "obs-studio"
       ],
       "alt": [],
       "stack": "Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo",
@@ -145434,6 +145793,45 @@
       "stars": 39262,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "gpt-sovits",
+          "motivo": "TTS del mismo ecosistema.",
+          "orden_instalacion": "Genera voz con GPT-SoVITS y conviértela con RVC."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Preparación de audio. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte el audio de entrada."
+        },
+        {
+          "id": "obs-studio",
+          "motivo": "Cambiador de voz en tiempo real para streaming. (combinación por arquitectura)",
+          "orden_instalacion": "Enruta el audio a OBS."
+        }
+      ],
+      "que_es": "RVC (Retrieval-based Voice Conversion WebUI), framework para convertir el timbre de voz, de RVC-Project. Licencia MIT. Es muy popular (~39k estrellas, 2.3.260718); el README principal está en chino.",
+      "que_hace": "Convierte una grabación a otra voz con modelos entrenados con poco audio, usando recuperación de características para reducir la fuga de timbre. Incluye entrenamiento, inferencia, separación de voz y conversión en tiempo real.",
+      "como_lo_hace": "Esta rama apunta a Python 3.12 x64 (se recomienda Ubuntu 24.04) y se instala con pip y requirements por plataforma (CPU, CUDA y otros).",
+      "descripcion_notas": "Sin alternativas declaradas. Riesgo de suplantación de voz.",
+      "descripcion_fuentes": [
+        "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+        "archived": false,
+        "pushed_at": "2026-08-04",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "2.3.260718 (2026-07-21)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales.",
       "body": "Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales.",
       "install": {
@@ -145446,6 +145844,14 @@
         {
           "id": "gpt-sovits",
           "label": "gpt-sovits"
+        },
+        {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        },
+        {
+          "id": "obs-studio",
+          "label": "obs-studio"
         }
       ],
       "areas": [
@@ -145477,7 +145883,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-notebook"
+        "transformers",
+        "open-notebook",
+        "pipecat"
       ],
       "alt": [],
       "stack": "Modelo y guía específicos; Python y GPU según variante; audio autorizado",
@@ -145589,6 +145997,44 @@
       "stars": 57181,
       "license": "MIT",
       "homepage": "https://microsoft.github.io/VibeVoice/",
+      "combina_con": [
+        {
+          "id": "transformers",
+          "motivo": "VibeVoice-ASR integrado en Transformers.",
+          "orden_instalacion": "Carga el modelo con Transformers."
+        },
+        {
+          "id": "open-notebook",
+          "motivo": "Narración de podcasts. (combinación por arquitectura)",
+          "orden_instalacion": "Usa un TTS compatible para los episodios."
+        },
+        {
+          "id": "pipecat",
+          "motivo": "ASR o TTS en agentes de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Integra el modelo como servicio."
+        }
+      ],
+      "que_es": "VibeVoice, familia de modelos de voz open source de Microsoft (TTS y ASR). Licencia MIT. Tiene ~57k estrellas; en septiembre de 2025 Microsoft desactivó el código de VibeVoice-TTS-1.5B tras detectar usos indebidos.",
+      "que_hace": "VibeVoice-ASR transcribe hasta 60 minutos con identificación de hablantes en más de 50 idiomas, con versión streaming y motor BitNet para CPU. VibeVoice-Realtime-0.5B es un TTS en streaming; el TTS largo multi-hablante está deshabilitado.",
+      "como_lo_hace": "VibeVoice-ASR está integrado en Transformers y en Azure AI Foundry Labs, y hay código de fine-tuning de ASR. Los modelos se descargan de Hugging Face.",
+      "descripcion_notas": "Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido.",
+      "descripcion_fuentes": [
+        "https://github.com/microsoft/VibeVoice/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "microsoft/VibeVoice",
+        "archived": false,
+        "pushed_at": "2026-10-08",
+        "license": "MIT",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio.",
       "body": "Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio.",
       "install": {
@@ -145599,8 +146045,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
+          "id": "transformers",
+          "label": "transformers"
+        },
+        {
           "id": "open-notebook",
           "label": "open-notebook"
+        },
+        {
+          "id": "pipecat",
+          "label": "pipecat"
         }
       ],
       "areas": [
@@ -145631,7 +146085,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx"
+        "whisperx",
+        "ffmpeg",
+        "kokoro"
       ],
       "alt": [
         "videolingo"
@@ -145746,6 +146202,45 @@
       "stars": 110726,
       "license": "AGPL-3.0",
       "homepage": "https://voicestudio.sh",
+      "combina_con": [
+        {
+          "id": "whisperx",
+          "motivo": "Transcripción alineada para doblaje. (combinación por arquitectura)",
+          "orden_instalacion": "Prepara transcripciones antes de doblar."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Procesado de audio y vídeo. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte y monta los resultados."
+        },
+        {
+          "id": "kokoro",
+          "motivo": "Modelo TTS ligero como alternativa local. (combinación por arquitectura)",
+          "orden_instalacion": "Compara la calidad de narración."
+        }
+      ],
+      "que_es": "VoiceStudio (antes OmniVoice Studio; repo debpalash/VoiceStudio), estudio de voz con IA que funciona en el dispositivo. La app es AGPL-3.0; los pesos, voces y salidas tienen licencias propias, y hay ediciones Pro y Cloud de pago con licencia comercial. Creado en abril de 2026, tiene ~111k estrellas, una cifra inusual.",
+      "que_hace": "Clona, diseña, dobla, dicta, transcribe y narra en 646 idiomas, según el proyecto, con modelos descargables desde un gestor de modelos.",
+      "como_lo_hace": "Se instala con `brew install --cask debpalash/tap/voicestudio`, con los instaladores de escritorio o con Docker. Funciona sin cuenta.",
+      "descripcion_notas": "Alternativas (elige una): videolingo. Recuento de estrellas inusual para su edad.",
+      "descripcion_fuentes": [
+        "https://github.com/debpalash/VoiceStudio/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "debpalash/VoiceStudio",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "v0.5.8 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "App local de voz con modelos descargables,edición AGPL y una oferta comercial separada.",
       "body": "App local de voz con modelos descargables,edición AGPL y una oferta comercial separada.",
       "install": {
@@ -145763,6 +146258,14 @@
         {
           "id": "whisperx",
           "label": "whisperx"
+        },
+        {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        },
+        {
+          "id": "kokoro",
+          "label": "kokoro"
         }
       ],
       "areas": [
@@ -145791,7 +146294,11 @@
       "desc": "VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar narración local; Explorar diseño de voz consentido",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vllm",
+        "pipecat",
+        "ffmpeg"
+      ],
       "alt": [],
       "stack": "Python >=3.10 y <3.13; PyTorch >=2.5; CUDA según ruta; pesos; audio autorizado",
       "repo_url": "https://github.com/OpenBMB/VoxCPM",
@@ -145905,6 +146412,45 @@
       "stars": 42484,
       "license": "Apache-2.0",
       "homepage": "https://voxcpm.com",
+      "combina_con": [
+        {
+          "id": "vllm",
+          "motivo": "Servir el modelo con vLLM.",
+          "orden_instalacion": "Instala la versión indicada y sirve el modelo."
+        },
+        {
+          "id": "pipecat",
+          "motivo": "TTS en agentes de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Expón un endpoint TTS."
+        },
+        {
+          "id": "ffmpeg",
+          "motivo": "Postproceso de audio. (combinación por arquitectura)",
+          "orden_instalacion": "Convierte el formato de salida."
+        }
+      ],
+      "que_es": "VoxCPM2, TTS sin tokenizador para habla multilingüe, diseño de voces y clonación, de OpenBMB. Licencia Apache-2.0 para código y pesos, con uso comercial permitido. Tiene ~43k estrellas (2.0.3).",
+      "que_hace": "Genera voz expresiva en varios idiomas, diseña voces a partir de descripciones y clona voces con alto realismo. Puede devolver marcas de tiempo.",
+      "como_lo_hace": "Se instala con `pip install voxcpm` (extras `[timestamps]`) y descarga los modelos de Hugging Face o ModelScope. Para servir rápido usa nano-vllm-voxcpm o vLLM (0.19).",
+      "descripcion_notas": "Sin alternativas declaradas. Riesgo de suplantación por la clonación de voz.",
+      "descripcion_fuentes": [
+        "https://github.com/OpenBMB/VoxCPM/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "OpenBMB/VoxCPM",
+        "archived": false,
+        "pushed_at": "2026-11-09",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "latest_release": "2.0.3 (2026-05-11)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz.",
       "body": "VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz.",
       "install": {
@@ -145913,7 +146459,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "vllm",
+          "label": "vllm"
+        },
+        {
+          "id": "pipecat",
+          "label": "pipecat"
+        },
+        {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        }
+      ],
       "areas": [
         "audiovisual"
       ],
@@ -145941,7 +146500,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una transcripción local; Traducir habla al inglés como borrador",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx"
+        "ffmpeg",
+        "whisperx",
+        "pytorch"
       ],
       "alt": [
         "whisper-cpp"
@@ -146058,6 +146619,45 @@
       "stars": 112719,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "ffmpeg",
+          "motivo": "Requisito para leer audio.",
+          "orden_instalacion": "Instala FFmpeg con el gestor de paquetes."
+        },
+        {
+          "id": "whisperx",
+          "motivo": "Añadir marcas de tiempo por palabra y diarización.",
+          "orden_instalacion": "Usa WhisperX con modelos Whisper."
+        },
+        {
+          "id": "pytorch",
+          "motivo": "Backend.",
+          "orden_instalacion": "Instala PyTorch con CUDA si hay GPU."
+        }
+      ],
+      "que_es": "Whisper, modelo de reconocimiento de voz de propósito general de OpenAI, entrenado con datos débilmente supervisados. Licencia MIT para código y pesos. Tiene ~113k estrellas y su release es v20250625; el repo recibe pocos cambios.",
+      "que_hace": "Transcribe en decenas de idiomas, traduce al inglés y detecta el idioma, con modelos de tiny a large y turbo.",
+      "como_lo_hace": "Se instala con `pip install -U openai-whisper` y requiere FFmpeg en el sistema. Usa PyTorch; el código se probó con Python 3.8–3.11.",
+      "descripcion_notas": "Alternativas (elige una): whisper-cpp. Para producción suelen preferirse faster-whisper o whisper.cpp por velocidad.",
+      "descripcion_fuentes": [
+        "https://github.com/openai/whisper/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "openai/whisper",
+        "archived": false,
+        "pushed_at": "2026-08-31",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v20250625 (2025-06-26)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo.",
       "body": "Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo.",
       "install": {
@@ -146073,8 +146673,16 @@
       ],
       "combine_refs": [
         {
+          "id": "ffmpeg",
+          "label": "ffmpeg"
+        },
+        {
           "id": "whisperx",
           "label": "whisperx"
+        },
+        {
+          "id": "pytorch",
+          "label": "pytorch"
         }
       ],
       "areas": [
@@ -146107,7 +146715,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Transcribir una nota offline; Preparar texto base para subtítulos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ffmpeg"
+        "ffmpeg",
+        "llama-cpp",
+        "pipecat"
       ],
       "alt": [
         "faster-whisper",
@@ -146223,6 +146833,45 @@
       "stars": 55194,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "ffmpeg",
+          "motivo": "Convertir audio a WAV de 16 kHz.",
+          "orden_instalacion": "Convierte el audio con FFmpeg antes."
+        },
+        {
+          "id": "llama-cpp",
+          "motivo": "Mismo ecosistema ggml: voz a texto y luego LLM local. (combinación por arquitectura)",
+          "orden_instalacion": "Encadena la transcripción con llama.cpp."
+        },
+        {
+          "id": "pipecat",
+          "motivo": "STT local en agentes de voz. (combinación por arquitectura)",
+          "orden_instalacion": "Expón el servidor de whisper.cpp al pipeline."
+        }
+      ],
+      "que_es": "whisper.cpp, implementación en C/C++ sin dependencias del modelo de reconocimiento de voz Whisper de OpenAI, de ggml-org. Licencia MIT. Es muy madura (~55k estrellas, v1.9.5).",
+      "que_hace": "Transcribe y traduce audio en local con alto rendimiento en CPU y GPU, incluido streaming en tiempo real. Ofrece servidor HTTP, ejemplos y bindings para muchos lenguajes.",
+      "como_lo_hace": "Se compila con CMake o make y se descargan modelos ggml (por ejemplo `make -j large-v3-turbo`). Soporta Apple Silicon (Metal, Core ML), CUDA, Vulkan y otros backends; el audio debe estar en WAV de 16 kHz.",
+      "descripcion_notas": "Alternativas (elige una): faster-whisper, whisper.",
+      "descripcion_fuentes": [
+        "https://github.com/ggml-org/whisper.cpp/blob/master/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "ggml-org/whisper.cpp",
+        "archived": false,
+        "pushed_at": "2026-11-13",
+        "license": "MIT",
+        "primary_language": "C++",
+        "latest_release": "v1.9.5 (2026-10-06)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles.",
       "body": "Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles.",
       "install": {
@@ -146244,6 +146893,14 @@
         {
           "id": "ffmpeg",
           "label": "ffmpeg"
+        },
+        {
+          "id": "llama-cpp",
+          "label": "llama-cpp"
+        },
+        {
+          "id": "pipecat",
+          "label": "pipecat"
         }
       ],
       "areas": [
@@ -146273,6 +146930,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "faster-whisper",
         "whisper",
         "moviepy"
       ],
@@ -146390,6 +147048,45 @@
       "stars": 25290,
       "license": "BSD-2-Clause",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "faster-whisper",
+          "motivo": "Backend de transcripción.",
+          "orden_instalacion": "Viene como dependencia."
+        },
+        {
+          "id": "whisper",
+          "motivo": "Modelos Whisper subyacentes.",
+          "orden_instalacion": "Elige el tamaño de modelo."
+        },
+        {
+          "id": "moviepy",
+          "motivo": "Subtítulos con marcas por palabra. (combinación por arquitectura)",
+          "orden_instalacion": "Genera SRT y móntalo."
+        }
+      ],
+      "que_es": "WhisperX, pipeline de transcripción con marcas de tiempo precisas por palabra y diarización, de @m-bain. Licencia BSD-2-Clause. Es madura (~25k estrellas, v3.8.6); el README incluye un patrocinio (Recall.ai).",
+      "que_hace": "Transcribe por lotes con backend faster-whisper (≈70× tiempo real, según el proyecto), alinea palabras con wav2vec2 y separa hablantes con pyannote-audio. También tiene modelos de ASR por fonemas.",
+      "como_lo_hace": "Se instala con `pip install whisperx`. La diarización requiere aceptar las condiciones de los modelos de pyannote en Hugging Face y un token; la GPU es recomendable (<8 GB para large-v2).",
+      "descripcion_notas": "Alternativas (elige una): nemo.",
+      "descripcion_fuentes": [
+        "https://github.com/m-bain/whisperX/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "40-mocap-y-voz-parte-1",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "m-bain/whisperX",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "BSD-2-Clause",
+        "primary_language": "Python",
+        "latest_release": "v3.8.6 (2026-05-25)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes.",
       "body": "Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes.",
       "install": {
@@ -146404,6 +147101,10 @@
         }
       ],
       "combine_refs": [
+        {
+          "id": "faster-whisper",
+          "label": "faster-whisper"
+        },
         {
           "id": "whisper",
           "label": "whisper"

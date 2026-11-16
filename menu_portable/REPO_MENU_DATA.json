@@ -78193,7 +78193,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "openpose",
+        "mediapipe",
+        "blender"
+      ],
       "alt": []
     },
     {
@@ -80103,7 +80107,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "4d-humans",
+        "blender",
+        "pytorch"
+      ],
       "alt": []
     },
     {
@@ -80932,7 +80940,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx"
+        "whisperx",
+        "pipecat",
+        "moviepy"
       ],
       "alt": [
         "whisper-cpp"
@@ -81050,7 +81060,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "pipecat",
+        "ffmpeg",
+        "whisperx"
+      ],
       "alt": [
         "cosyvoice",
         "gpt-sovits"
@@ -81173,7 +81187,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "rvc"
+        "rvc",
+        "ffmpeg",
+        "whisperx"
       ],
       "alt": [
         "fish-speech"
@@ -81414,7 +81430,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "pipecat",
-        "whisper-cpp"
+        "whisper-cpp",
+        "moviepy"
       ],
       "alt": [
         "luxtts",
@@ -81897,7 +81914,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "pipecat"
+        "nemotron",
+        "pipecat",
+        "pytorch"
       ],
       "alt": [
         "whisperx"
@@ -82015,7 +82034,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx"
+        "whisperx",
+        "ffmpeg",
+        "kokoro"
       ],
       "alt": [
         "videolingo"
@@ -82491,7 +82512,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "gpt-sovits"
+        "gpt-sovits",
+        "ffmpeg",
+        "obs-studio"
       ],
       "alt": []
     },
@@ -82608,7 +82631,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-notebook"
+        "transformers",
+        "open-notebook",
+        "pipecat"
       ],
       "alt": []
     },
@@ -82725,7 +82750,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar narración local; Explorar diseño de voz consentido",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "vllm",
+        "pipecat",
+        "ffmpeg"
+      ],
       "alt": []
     },
     {
@@ -82842,7 +82871,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar una transcripción local; Traducir habla al inglés como borrador",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx"
+        "ffmpeg",
+        "whisperx",
+        "pytorch"
       ],
       "alt": [
         "whisper-cpp"
@@ -82963,7 +82994,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Transcribir una nota offline; Preparar texto base para subtítulos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ffmpeg"
+        "ffmpeg",
+        "llama-cpp",
+        "pipecat"
       ],
       "alt": [
         "faster-whisper",
@@ -83083,6 +83116,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "faster-whisper",
         "whisper",
         "moviepy"
       ],

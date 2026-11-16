@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+WhisperX, pipeline de transcripción con marcas de tiempo precisas por palabra y diarización, de @m-bain. Licencia BSD-2-Clause. Es madura (~25k estrellas, v3.8.6); el README incluye un patrocinio (Recall.ai).
+
+## ¿Qué hace?
+
+Transcribe por lotes con backend faster-whisper (≈70× tiempo real, según el proyecto), alinea palabras con wav2vec2 y separa hablantes con pyannote-audio. También tiene modelos de ASR por fonemas.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install whisperx`. La diarización requiere aceptar las condiciones de los modelos de pyannote en Hugging Face y un token; la GPU es recomendable (<8 GB para large-v2).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [faster-whisper](faster-whisper.md) | Backend de transcripción. | Viene como dependencia. |
+| [whisper](whisper.md) | Modelos Whisper subyacentes. | Elige el tamaño de modelo. |
+| [MoviePy](moviepy.md) | Subtítulos con marcas por palabra. (combinación por arquitectura) | Genera SRT y móntalo. |
+
+**Notas:** Alternativas (elige una): nemo.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v3.8.6 (2026-05-25) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/m-bain/whisperX/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Un token de descarga no equivale a facturación de API; etiquetas de hablante no identifican personas y los tiempos necesitan comprobación |
 | Coste | Sin pago a un modelo en la ruta básica. No exige API de transcripción de pago; diarización requiere acceso autorizado al modelo de Hugging Face y cómputo propio |
 | Equipo | Preparación según la ruta elegida. Python; modelo de transcripción y alineación; HF token y acuerdo para diarización; audio propio |
-
-Un token de descarga no equivale a facturación de API; etiquetas de hablante no identifican personas y los tiempos necesitan comprobación
-
-## Qué puedes hacer con él
-
-Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes.
-
-## Por qué destaca
-
-Usos propuestos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista.
-
-## Cómo funciona
 
 Un token de descarga no equivale a facturación de API; etiquetas de hablante no identifican personas y los tiempos necesitan comprobación
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; modelo de transcripción y alineación; HF token y acuerdo para diarización; audio propio
 - **Etiquetas:** `stt` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
-| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
 ## Alternativas (elige una)
 

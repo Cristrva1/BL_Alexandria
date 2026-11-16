@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Whisper, modelo de reconocimiento de voz de propósito general de OpenAI, entrenado con datos débilmente supervisados. Licencia MIT para código y pesos. Tiene ~113k estrellas y su release es v20250625; el repo recibe pocos cambios.
+
+## ¿Qué hace?
+
+Transcribe en decenas de idiomas, traduce al inglés y detecta el idioma, con modelos de tiny a large y turbo.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install -U openai-whisper` y requiere FFmpeg en el sistema. Usa PyTorch; el código se probó con Python 3.8–3.11.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Requisito para leer audio. | Instala FFmpeg con el gestor de paquetes. |
+| [whisperX](whisperx.md) | Añadir marcas de tiempo por palabra y diarización. | Usa WhisperX con modelos Whisper. |
+| [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA si hay GPU. |
+
+**Notas:** Alternativas (elige una): whisper-cpp. Para producción suelen preferirse faster-whisper o whisper.cpp por velocidad.
+
+Estado en GitHub: activo · último push 2026-08-31 · última versión publicada v20250625 (2025-06-26) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/whisper/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. No es la API hospedada de OpenAI y no usa créditos de ChatGPT; puede inventar texto en silencios o audio difícil y requiere revisión |
 | Coste | Sin pago a un modelo en la ruta básica. Código y pesos MIT para ejecución propia sin API; cómputo independiente |
 | Equipo | Preparación según la ruta elegida. Python; PyTorch; FFmpeg; modelo con memoria suficiente; audio autorizado |
-
-No es la API hospedada de OpenAI y no usa créditos de ChatGPT; puede inventar texto en silencios o audio difícil y requiere revisión
-
-## Qué puedes hacer con él
-
-Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una transcripción local; Traducir habla al inglés como borrador.
-
-## Cómo funciona
 
 No es la API hospedada de OpenAI y no usa créditos de ChatGPT; puede inventar texto en silencios o audio difícil y requiere revisión
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; PyTorch; FFmpeg; modelo con memoria suficiente; audio autorizado
 - **Etiquetas:** `stt` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 

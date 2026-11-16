@@ -95,6 +95,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Empieza por los datos de una demo y revisa correspondencia de cámaras y reconstrucción
 **Qué comprobar:** Puedes reconocer qué observaciones sustentan la pose
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openpose`, `mediapipe`, `blender`
 
 ## `face-recognition`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
@@ -587,3 +588,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Prepara la demo de un clip corto y revisa trayectoria y articulaciones reconstruidas
 **Qué comprobar:** Puedes distinguir estimación visual de una medición real
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `4d-humans`, `blender`, `pytorch`

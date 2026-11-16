@@ -220,7 +220,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe un clip corto con una configuración adecuada al equipo y compara salida y tiempo
 **Qué comprobar:** Puedes revisar modelo, cuantización y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`
+**Combina con:** `whisperx`, `pipecat`, `moviepy`
 **Alternativas (elige una):** `whisper-cpp`
 
 ## `fish-speech`
@@ -251,6 +251,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige Drama 3 o S2-Pro y prueba una frase corta después de revisar sus condiciones
 **Qué comprobar:** Puedes distinguir la variante y su licencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pipecat`, `ffmpeg`, `whisperx`
 **Alternativas (elige una):** `cosyvoice`, `gpt-sovits`
 
 ## `gpt-sovits`
@@ -285,7 +286,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sintetiza una frase corta con una voz autorizada y compara inteligibilidad antes de entrenar
 **Qué comprobar:** Puedes revisar referencia, modelo y resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `rvc`
+**Combina con:** `rvc`, `ffmpeg`, `whisperx`
 **Alternativas (elige una):** `fish-speech`
 
 ## `index-tts`
@@ -348,7 +349,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Genera dos frases en español y revisa pronunciación y pausas
 **Qué comprobar:** Puedes localizar el archivo de audio y reconocer voz e idioma seleccionados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pipecat`, `whisper-cpp`
+**Combina con:** `pipecat`, `whisper-cpp`, `moviepy`
 **Alternativas (elige una):** `luxtts`, `edge-tts`
 
 ## `livekit-agents`
@@ -474,7 +475,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige la receta de transcripción y prueba un clip breve antes de entrenar
 **Qué comprobar:** Puedes identificar checkpoint, configuración y salida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `pipecat`
+**Combina con:** `nemotron`, `pipecat`, `pytorch`
 **Alternativas (elige una):** `whisperx`
 
 ## `omnivoice-studio`
@@ -505,7 +506,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Descarga un modelo compatible y sintetiza un párrafo propio antes de probar clonación
 **Qué comprobar:** Puedes comprobar modelo, licencia y salida de audio
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`
+**Combina con:** `whisperx`, `ffmpeg`, `kokoro`
 **Alternativas (elige una):** `videolingo`
 
 ## `pipecat`
@@ -628,7 +629,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Convierte un clip propio corto y compara claridad, tono y artefactos
 **Qué comprobar:** Puedes reconocer entrada y voz objetivo del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gpt-sovits`
+**Combina con:** `gpt-sovits`, `ffmpeg`, `obs-studio`
 
 ## `vibevoice`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,audio,python
@@ -658,7 +659,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Elige ASR o TTS y prueba una muestra corta siguiendo esa guía
 **Qué comprobar:** Puedes distinguir transcripción, generación y variante del modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-notebook`
+**Combina con:** `transformers`, `open-notebook`, `pipecat`
 
 ## `voxcpm`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=tts,audio,python
@@ -688,6 +689,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sintetiza un texto corto y revisa pronunciación y estabilidad antes de ampliar
 **Qué comprobar:** Puedes identificar modelo y parámetros de la prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vllm`, `pipecat`, `ffmpeg`
 
 ## `whisper`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
@@ -717,7 +719,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe una nota de voz breve y corrige manualmente las palabras dudosas
 **Qué comprobar:** Puedes contrastar texto con audio original
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`
+**Combina con:** `ffmpeg`, `whisperx`, `pytorch`
 **Alternativas (elige una):** `whisper-cpp`
 
 ## `whisper-cpp`
@@ -748,7 +750,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe una grabación propia corta y compara nombres y números con el audio
 **Qué comprobar:** Puedes identificar modelo y errores de transcripción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ffmpeg`
+**Combina con:** `ffmpeg`, `llama-cpp`, `pipecat`
 **Alternativas (elige una):** `faster-whisper`, `whisper`
 
 ## `whisperx`
@@ -779,5 +781,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Transcribe una conversación de prueba y verifica varias marcas temporales y cambios de hablante
 **Qué comprobar:** Puedes distinguir texto, alineación y etiquetas de hablante
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisper`, `moviepy`
+**Combina con:** `faster-whisper`, `whisper`, `moviepy`
 **Alternativas (elige una):** `nemo`

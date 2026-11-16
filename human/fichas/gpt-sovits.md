@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+GPT-SoVITS, WebUI de TTS y conversión de voz con pocos ejemplos, de @RVC-Boss. Licencia MIT. Es muy popular (~65k estrellas, release 20250606v2pro).
+
+## ¿Qué hace?
+
+Clona una voz con unos segundos (zero-shot) o un minuto de audio (few-shot), con soporte multilingüe e inferencia entre idiomas. Incluye herramientas para preparar datasets: separación de voz, segmentación, ASR y etiquetado.
+
+## ¿Cómo lo hace?
+
+Hay combinaciones probadas de Python 3.9–3.12, PyTorch 2.5–2.8 y CUDA 11.8–12.8; se instala con scripts o paquetes integrados para Windows. La GPU NVIDIA es recomendable.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [RVC WebUI](rvc.md) | Conversión de timbre del mismo autor. | Usa RVC para ajustar la voz generada. |
+| [FFmpeg](ffmpeg.md) | Preparación de audio. (combinación por arquitectura) | Convierte el audio de entrenamiento. |
+| [whisperX](whisperx.md) | Transcribir el dataset. (combinación por arquitectura) | Genera transcripciones alineadas. |
+
+**Notas:** Alternativas (elige una): fish-speech. Riesgo de suplantación de voz: usa voces con consentimiento.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 20250606v2pro (2025-06-06) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/RVC-Boss/GPT-SoVITS/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El lema de un minuto describe few-shot y no una garantía de calidad con cualquier grabación o idioma |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta propia no exige API; GPU, datos y licencias de componentes aparte |
 | Equipo | Preparación según la ruta elegida. Conda; Python 3.10; PyTorch compatible; modelos; audio con permiso; GPU según tarea |
-
-El lema de un minuto describe few-shot y no una garantía de calidad con cualquier grabación o idioma
-
-## Qué puedes hacer con él
-
-Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos.
-
-## Cómo funciona
 
 El lema de un minuto describe few-shot y no una garantía de calidad con cualquier grabación o idioma
 
@@ -100,12 +114,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Conda; Python 3.10; PyTorch compatible; modelos; audio con permiso; GPU según tarea
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [RVC WebUI](rvc.md) | 39.3k | Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. |
 
 ## Alternativas (elige una)
 

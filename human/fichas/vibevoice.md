@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+VibeVoice, familia de modelos de voz open source de Microsoft (TTS y ASR). Licencia MIT. Tiene ~57k estrellas; en septiembre de 2025 Microsoft desactivó el código de VibeVoice-TTS-1.5B tras detectar usos indebidos.
+
+## ¿Qué hace?
+
+VibeVoice-ASR transcribe hasta 60 minutos con identificación de hablantes en más de 50 idiomas, con versión streaming y motor BitNet para CPU. VibeVoice-Realtime-0.5B es un TTS en streaming; el TTS largo multi-hablante está deshabilitado.
+
+## ¿Cómo lo hace?
+
+VibeVoice-ASR está integrado en Transformers y en Azure AI Foundry Labs, y hay código de fine-tuning de ASR. Los modelos se descargan de Hugging Face.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Transformers](transformers.md) | VibeVoice-ASR integrado en Transformers. | Carga el modelo con Transformers. |
+| [open-notebook](open-notebook.md) | Narración de podcasts. (combinación por arquitectura) | Usa un TTS compatible para los episodios. |
+| [Pipecat](pipecat.md) | ASR o TTS en agentes de voz. (combinación por arquitectura) | Integra el modelo como servicio. |
+
+**Notas:** Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido.
+
+Estado en GitHub: activo · último push 2026-10-08 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/VibeVoice/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal |
 | Coste | Sin pago a un modelo en la ruta básica. La ejecución propia no exige API; pesos, hardware y datos tienen condiciones por variante |
 | Equipo | Preparación según la ruta elegida. Modelo y guía específicos; Python y GPU según variante; audio autorizado |
-
-Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal
-
-## Qué puedes hacer con él
-
-Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar transcripción por hablantes; Probar generación de voz.
-
-## Cómo funciona
 
 Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Modelo y guía específicos; Python y GPU según variante; audio autorizado
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [open-notebook](open-notebook.md) | 42k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
 
 ## Enlaces
 
