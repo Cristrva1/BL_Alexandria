@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-96 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+94 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Material para empezar a construir y entender aplicaciones de IA.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-cursos)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-cursos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -34,7 +34,6 @@ Material para empezar a construir y entender aplicaciones de IA.
 | [Context-Engineering](../fichas/context-engineering.md) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | Sin clave propia de API de IA en la ruta básica |
 | [Generative AI for Beginners](../fichas/generative-ai-for-beginners.md) | Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. | API de IA opcional |
 | [Loop Engineering](../fichas/loop-engineering.md) | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. | Sin clave propia de API de IA en la ruta básica |
-| [mvanhorn](../fichas/mvanhorn.md) | Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. | Sin clave propia de API de IA en la ruta básica |
 | [OpenAI Cookbook](../fichas/openai-cookbook.md) | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. | API de IA opcional |
 
 ### Prompts y contexto
@@ -58,7 +57,7 @@ Escribir mejores encargos y comprender instrucciones de agentes.
 
 Ejemplos de machine learning y entrenamiento desde cero.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-modelos)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-modelos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -68,7 +67,6 @@ Ejemplos de machine learning y entrenamiento desde cero.
 | [llm.c](../fichas/llm-c.md) | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. | Sin clave propia de API de IA en la ruta básica |
 | [LLMs from Scratch](../fichas/llms-from-scratch.md) | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. | API de IA opcional |
 | [nanochat](../fichas/nanochat.md) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | Sin clave propia de API de IA en la ruta básica |
-| [python-machine-learning-book](../fichas/python-machine-learning-book.md) | Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. | Sin clave propia de API de IA en la ruta básica |
 | [train-llm-from-scratch](../fichas/train-llm-from-scratch.md) | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. | Sin clave propia de API de IA en la ruta básica |
 
 ### Métodos, plugins y catálogos de skills

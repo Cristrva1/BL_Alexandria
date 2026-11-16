@@ -380,41 +380,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "python-machine-learning-book": {
-   "que_es": "Código de la **primera edición** (2015) del libro 'Python Machine Learning' de Sebastian Raschka (MIT). El propio README avisa desde 2017 de que existen ediciones posteriores en otros repositorios. Es material histórico: usa Theano, una biblioteca discontinuada.",
-   "que_hace": "Contiene notebooks de los capítulos del libro: clasificación con perceptrones y Adaline, scikit-learn, preprocesamiento, reducción de dimensionalidad, evaluación de modelos, ensembles, análisis de sentimiento, regresión, clustering y redes neuronales con Theano.",
-   "como_lo_hace": "Notebooks Jupyter con NumPy, scikit-learn y Theano. Parte del código no funcionará con versiones actuales de las bibliotecas, sobre todo los capítulos de Theano. Para aprender hoy es preferible la edición más reciente del libro.",
-   "combina_con": [
-    {
-     "id": "llms-from-scratch",
-     "motivo": "Libro moderno del mismo autor para continuar hacia LLMs. (combinación por arquitectura)",
-     "orden_instalacion": "Usa este repositorio solo como referencia histórica y continúa con el libro actual."
-    },
-    {
-     "id": "pytorch",
-     "motivo": "Sustituto actual de Theano para los capítulos de redes neuronales. (combinación por arquitectura)",
-     "orden_instalacion": "Reescribe los ejemplos de Theano en PyTorch si quieres ejecutarlos."
-    },
-    {
-     "id": "awesome-machine-learning",
-     "motivo": "Directorio para encontrar bibliotecas actuales equivalentes. (combinación por arquitectura)",
-     "orden_instalacion": "Consulta la sección de Python."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Obsoleto: primera edición con Theano.",
-   "fuentes": [
-    "https://github.com/rasbt/python-machine-learning-book/blob/master/README.md"
-   ],
-   "github": {
-    "name_with_owner": "rasbt/python-machine-learning-book",
-    "archived": false,
-    "pushed_at": "2026-07-18",
-    "license": "MIT",
-    "primary_language": "Jupyter Notebook",
-    "latest_release": "v1.3 (2016-09-30)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "train-llm-from-scratch": {
    "que_es": "Tutorial y código (MIT) de @FareedKhan-dev para entrenar un modelo de lenguaje desde cero en PyTorch puro. Empezó como tutorial de preentrenamiento y hoy cubre hasta modelos alineados de estilo razonador. Es activo (último push en octubre de 2026) y tiene CI.",
    "que_hace": "Implementa a mano, sin `trl`, `peft` ni `transformers`, todo el pipeline: modelo base → SFT → modelo de recompensa → PPO/DPO → GRPO → evaluación y chat. Tiene dos arquitecturas: el transformer original de 'Attention is All You Need' y una moderna con RoPE, RMSNorm, SwiGLU, atención agrupada y latente, Mixture of Experts y KV cache. Incluye una ruta para entrenar un modelo pequeño en CPU en minutos y tablas de GPU para modelos de hasta miles de millones de parámetros.",
@@ -480,38 +445,6 @@
     "pushed_at": "2026-11-15",
     "license": "no estándar (NOASSERTION)",
     "primary_language": "Python",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "mvanhorn": {
-   "que_es": "Repositorio de perfil de GitHub (README personal) de Matt Van Horn, cofundador de June y de la empresa que se convirtió en Lyft, según su propio perfil. **No es un proyecto de software**: no tiene código, licencia ni releases.",
-   "que_hace": "Presenta los proyectos del autor (last30days-skill, Printing Press para generar CLIs de APIs, Printing Press Library y otros) y una lista de repositorios a los que ha contribuido, como ECC, LangChain, awesome-llm-apps, Deer Flow, Strix o Voicebox. Sirve como punto de partida para descubrir sus herramientas.",
-   "como_lo_hace": "README Markdown de perfil. No se instala nada; cada proyecto enlazado tiene su propio repositorio e instrucciones.",
-   "combina_con": [
-    {
-     "id": "last30days-skill",
-     "motivo": "Proyecto principal del autor presente en el catálogo (enlazado en el perfil).",
-     "orden_instalacion": "Instálalo desde su propio repositorio."
-    },
-    {
-     "id": "ecc",
-     "motivo": "Proyecto al que el autor ha contribuido (enlazado en el perfil). (combinación por arquitectura)",
-     "orden_instalacion": "Consulta su ficha para instalarlo."
-    },
-    {
-     "id": "deer-flow",
-     "motivo": "Otro proyecto con contribuciones del autor (enlazado en el perfil). (combinación por arquitectura)",
-     "orden_instalacion": "Consulta su ficha para instalarlo."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Hallazgo: es un perfil personal, no un repositorio de herramienta. Conviene revisar si debe seguir en el catálogo o reclasificarse como referencia.",
-   "fuentes": [
-    "https://github.com/mvanhorn/mvanhorn/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "mvanhorn/mvanhorn",
-    "archived": false,
-    "pushed_at": "2026-11-09",
     "checked_at": "2026-11-15"
    }
   }

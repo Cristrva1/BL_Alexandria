@@ -516,7 +516,7 @@ Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el 
 
 Material para empezar a construir y entender aplicaciones de IA.
 
-`12-factor-agents`, `500-ai-agents-projects`, `agents-towards-production`, `ai-agents-for-beginners`, `ai-engineering-hub`, `awesome-harness-engineering`, `awesome-llm-apps`, `claude-cookbooks`, `claude-quickstarts`, `context-engineering`, `generative-ai-for-beginners`, `loop-engineering`, `mvanhorn`, `openai-cookbook`
+`12-factor-agents`, `500-ai-agents-projects`, `agents-towards-production`, `ai-agents-for-beginners`, `ai-engineering-hub`, `awesome-harness-engineering`, `awesome-llm-apps`, `claude-cookbooks`, `claude-quickstarts`, `context-engineering`, `generative-ai-for-beginners`, `loop-engineering`, `openai-cookbook`
 
 ### Prompts y contexto
 
@@ -528,7 +528,7 @@ Escribir mejores encargos y comprender instrucciones de agentes.
 
 Ejemplos de machine learning y entrenamiento desde cero.
 
-`awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `nanochat`, `python-machine-learning-book`, `train-llm-from-scratch`
+`awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `nanochat`, `train-llm-from-scratch`
 
 ### Métodos, plugins y catálogos de skills
 

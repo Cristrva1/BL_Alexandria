@@ -615,36 +615,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
 
-## `mvanhorn`
-role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference
-
-**Qué es:** Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.
-**Stack:** Navegador; proyecto de interés
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil
-- Coste: Sin pago a un modelo en la ruta básica. Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes
-- Equipo: Preparación según la ruta elegida. Navegador; proyecto de interés
-**Repo:** https://github.com/mvanhorn/mvanhorn
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre un proyecto destacado desde el perfil y revisa su README propio antes de considerarlo para instalar
-**Qué comprobar:** Puedes distinguir el perfil del repositorio de la herramienta
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `last30days-skill`, `ecc`, `deer-flow`
-
 ## `nanochat`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
 
@@ -829,36 +799,6 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `promptfoo`, `open-webui`
 **Alternativas (elige una):** `fabric`
-
-## `python-machine-learning-book`
-role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,data-mining,data-science,logistic-regression,machine-learning,machine-learning-algorithms,neural-network,python
-
-**Qué es:** Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.
-**Stack:** Python; dependencias correspondientes a la primera edición; datos educativos
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: Modelos locales documentados. Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
-- Coste: Sin pago a un modelo en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas
-- Equipo: Preparación según la ruta elegida. Python; dependencias correspondientes a la primera edición; datos educativos
-**Repo:** https://github.com/rasbt/python-machine-learning-book
-
-**Instalación** [?]:
-
-```
-Consultar el material original; elegir un ejemplo antes de instalar.
-```
-
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Abre el capítulo de clasificación y compara una predicción con su etiqueta de prueba
-**Qué comprobar:** Puedes reconocer el objetivo y la métrica del ejemplo
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llms-from-scratch`, `pytorch`, `awesome-machine-learning`
 
 ## `system-prompts-and-models-of-ai-tools`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin

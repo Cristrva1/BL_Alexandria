@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**637 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **100 subcategorías**
+**635 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **100 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -93,7 +93,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 16 | 🔍 Analizar software y comprobar su seguridad | 26 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad | `human/categorias/16-analisis-de-software-y-seguridad.md` |
 | 17 | 🤖 WhatsApp, mensajería y chatbots | 10 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
 | 18 | 🤖 CRM, ventas y marketing | 13 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
-| 19 | 🧠 Aprender IA y escribir mejores prompts | 30 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
+| 19 | 🧠 Aprender IA y escribir mejores prompts | 28 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
 | 20 | 🕸️ Programar con agentes de código | 19 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones, Desarrollo móvil y de juegos | `human/categorias/20-agentes-de-codigo.md` |
 | 21 | 🕸️ Asistentes e investigación con agentes | 17 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
 | 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 17 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |

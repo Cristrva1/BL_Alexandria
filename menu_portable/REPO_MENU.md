@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 640 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 638 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **640 repos** de IA y
+proyecto concreto. Tienes un menú curado de **638 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -660,7 +660,7 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 - `sellbird` [A|loc|M|+] — Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. — tags: marketing,agent,python
 - `twenty-main` [P|hyb|H|?] — CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modela — tags: automation,crm,typescript,docker
 
-### 19. Aprender IA y escribir mejores prompts (30)
+### 19. Aprender IA y escribir mejores prompts (28)
 Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 
 - `12-factor-agents` [D|hyb|E|?] — Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12  — tags: agents,learning,prompts,typescript
@@ -683,14 +683,12 @@ Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 - `llm.c` [L|loc|H|?] — Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados,  — tags: learning
 - `llms-from-scratch` [D|loc|M|+] — Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. — tags: learning,training,python — alt: llm-course
 - `loop-engineering` [S|loc|E|+] — Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. — tags: coding-agent,skills,typescript
-- `mvanhorn` [D|loc|E|?] — Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. — tags: guias,reference
 - `nanochat` [L|loc|M|+] — Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde e — tags: learning,python
 - `openai-cookbook` [D|cld|E|?] — Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. — tags: learning,notebooks,python — alt: claude-cookbooks,awesome-llm-apps
 - `prompt-eng-tutorial` [D|cld|E|?] — Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. — tags: learning,prompts,notebooks — prov: anthropic — alt: prompt-engineering-guide
 - `prompt-engineering-guide` [D|cld|E|?] — Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. — tags: learning,prompts,rag — alt: prompt-eng-tutorial
 - `prompt-master` [S|cld|E|+] — Skill de Claude que ayuda a formular encargos para distintas herramientas de IA; no garantiza ahorro de tokens — tags: skills,prompts
 - `prompts-chat` [D|loc|E|?] — La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. — tags: prompts,chatbot — alt: fabric
-- `python-machine-learning-book` [D|loc|M|?] — Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. — tags: aprender,data-mining,data-science,logistic-regression,machine-learning,machine-learning-algorithms,neural-network,python
 - `system-prompts-and-models-of-ai-tools` [D|hyb|E|?] — Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. — tags: prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin
 - `train-llm-from-scratch` [D|loc|H|+] — Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generaci — tags: aprender,gemini,large-language-models,llm,openai,training,transformers,python
 

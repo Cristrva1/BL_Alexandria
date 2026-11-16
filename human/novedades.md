@@ -60,7 +60,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [radare2](fichas/radare2.md) | Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [QuantHarness](fichas/quantharness.md) | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. | API de IA necesaria |
 | 2026-11-14 | [qlib](fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | API de IA opcional |
-| 2026-11-14 | [python-machine-learning-book](fichas/python-machine-learning-book.md) | Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [Pythia](fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [py-sdk](fichas/py-sdk.md) | SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [postiz-app](fichas/postiz-app.md) | Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA. | API de IA opcional |
@@ -105,7 +104,6 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [no-ai-slop](fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [server](fichas/nextcloud-server.md) | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [nautilus_trader](fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica |
-| 2026-11-14 | [mvanhorn](fichas/mvanhorn.md) | Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [Music-Megathread](fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-14 | [motionmaxxing](fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | API de IA opcional |
 | 2026-11-14 | [motion-design-skill](fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |

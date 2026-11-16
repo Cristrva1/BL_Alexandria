@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-11-15",
-  "title": "Índice IA — 637 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 635 repos curados de IA, automatización y herramientas",
   "counts": {
-    "repos": 637,
+    "repos": 635,
     "categories": 32,
     "areas": 16,
     "work_areas": 13,
@@ -11276,10 +11276,9 @@
               "context-engineering",
               "generative-ai-for-beginners",
               "loop-engineering",
-              "mvanhorn",
               "openai-cookbook"
             ],
-            "count": 14
+            "count": 13
           },
           {
             "id": "aprender-prompts",
@@ -11330,10 +11329,9 @@
               "llm.c",
               "llms-from-scratch",
               "nanochat",
-              "python-machine-learning-book",
               "train-llm-from-scratch"
             ],
-            "count": 8
+            "count": 7
           },
           {
             "id": "aprender-metodos",
@@ -11504,7 +11502,6 @@
           "minimalist-entrepreneur-skills",
           "modern-web-guidance",
           "motion-design-skill",
-          "mvanhorn",
           "nanochat",
           "no-ai-slop",
           "openai-cookbook",
@@ -11514,7 +11511,6 @@
           "prompt-engineering-guide",
           "prompt-master",
           "prompts-chat",
-          "python-machine-learning-book",
           "scientific-agent-skills",
           "skills",
           "skills-emil",
@@ -11532,7 +11528,7 @@
           "ui-ux-pro-max-skill",
           "wshobson-agents"
         ],
-        "count": 96
+        "count": 94
       },
       {
         "id": "configurar-claude-code",
@@ -19420,7 +19416,7 @@
           "title": "Aprender LLMs desde cero"
         }
       ],
-      "count": 30,
+      "count": 28,
       "starters": [
         "fabric",
         "loop-engineering",
@@ -96791,203 +96787,6 @@
       "discovery_text": " Aprender IA, prompts y skills aprender formacion cursos skills prompts Cursos, guías y ejemplos Configuración de Claude Code configurar claude code configuracion claude code setup claude code Skills, plugins y métodos Configuración de Codex configurar codex configuracion codex setup codex optimizar codex Skills y método de trabajo"
     },
     {
-      "id": "mvanhorn",
-      "name": "mvanhorn",
-      "cat": 19,
-      "role": "directory",
-      "exec": "local",
-      "setup": "easy",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "guias",
-        "reference"
-      ],
-      "one": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
-      "desc": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "last30days-skill",
-        "ecc",
-        "deer-flow"
-      ],
-      "alt": [],
-      "stack": "Navegador; proyecto de interés",
-      "repo_url": "https://github.com/mvanhorn/mvanhorn",
-      "doc": "human/fichas/mvanhorn.md",
-      "agent_tools": [],
-      "sub": "guias",
-      "how": "Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil",
-      "why": "Usos propuestos: Encontrar herramientas de un autor; Explorar contribuciones a otros proyectos.",
-      "cases": [
-        "Encontrar herramientas de un autor",
-        "Explorar contribuciones a otros proyectos"
-      ],
-      "gh": "mvanhorn/mvanhorn",
-      "limits": "Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil",
-      "getting_started": {
-        "kind": "reference",
-        "audience": "reading",
-        "entry_url": "",
-        "prerequisites": [
-          "Navegador",
-          "proyecto de interés"
-        ],
-        "steps": [
-          "Abre un proyecto destacado desde el perfil y revisa su README propio antes de considerarlo para instalar.",
-          "Comprueba: Puedes distinguir el perfil del repositorio de la herramienta."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "reference",
-        "source": "https://github.com/mvanhorn/mvanhorn/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Abre un proyecto destacado desde el perfil y revisa su README propio antes de considerarlo para instalar",
-        "success": "Puedes distinguir el perfil del repositorio de la herramienta",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Encontrar herramientas de un autor",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Explorar contribuciones a otros proyectos",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/mvanhorn/mvanhorn/blob/main/README.md",
-        "source_blob_sha": "91a8570fdf9ab3a81eb48c23509ee177d02b2876",
-        "previous_source_blob_sha": "91a8570fdf9ab3a81eb48c23509ee177d02b2876",
-        "previous_category": [
-          19,
-          "guias"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "access": {
-        "api": "not_required",
-        "local_model": "not_applicable",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "no_model_fee",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes",
-        "subscription_note": "Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil",
-        "local_note": "Es el README del perfil y un registro de contribuciones; las tecnologías mencionadas no son prestaciones instalables del perfil",
-        "cost_note": "Consultar el perfil no requiere API; sus proyectos tienen condiciones independientes",
-        "hardware_note": "Navegador; proyecto de interés",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/mvanhorn/mvanhorn/blob/main/README.md"
-        ],
-        "mode": "reference",
-        "source_blob_sha": "91a8570fdf9ab3a81eb48c23509ee177d02b2876",
-        "antigravity": "not_documented"
-      },
-      "routes": [
-        "no_api",
-        "reference"
-      ],
-      "goals": [
-        "skills",
-        "aprender"
-      ],
-      "added_at": "2026-11-14",
-      "status": "",
-      "pick": false,
-      "stars": 53,
-      "license": "",
-      "homepage": "",
-      "combina_con": [
-        {
-          "id": "last30days-skill",
-          "motivo": "Proyecto principal del autor presente en el catálogo (enlazado en el perfil).",
-          "orden_instalacion": "Instálalo desde su propio repositorio."
-        },
-        {
-          "id": "ecc",
-          "motivo": "Proyecto al que el autor ha contribuido (enlazado en el perfil). (combinación por arquitectura)",
-          "orden_instalacion": "Consulta su ficha para instalarlo."
-        },
-        {
-          "id": "deer-flow",
-          "motivo": "Otro proyecto con contribuciones del autor (enlazado en el perfil). (combinación por arquitectura)",
-          "orden_instalacion": "Consulta su ficha para instalarlo."
-        }
-      ],
-      "que_es": "Repositorio de perfil de GitHub (README personal) de Matt Van Horn, cofundador de June y de la empresa que se convirtió en Lyft, según su propio perfil. **No es un proyecto de software**: no tiene código, licencia ni releases.",
-      "que_hace": "Presenta los proyectos del autor (last30days-skill, Printing Press para generar CLIs de APIs, Printing Press Library y otros) y una lista de repositorios a los que ha contribuido, como ECC, LangChain, awesome-llm-apps, Deer Flow, Strix o Voicebox. Sirve como punto de partida para descubrir sus herramientas.",
-      "como_lo_hace": "README Markdown de perfil. No se instala nada; cada proyecto enlazado tiene su propio repositorio e instrucciones.",
-      "descripcion_notas": "Sin alternativas declaradas. Hallazgo: es un perfil personal, no un repositorio de herramienta. Conviene revisar si debe seguir en el catálogo o reclasificarse como referencia.",
-      "descripcion_fuentes": [
-        "https://github.com/mvanhorn/mvanhorn/blob/main/README.md"
-      ],
-      "descripcion_revision": {
-        "batch": "15-aprendizaje-prompts-parte-2",
-        "checked_at": "2026-11-15",
-        "status": "source_reviewed",
-        "installation_tested": false
-      },
-      "descripcion_github": {
-        "name_with_owner": "mvanhorn/mvanhorn",
-        "archived": false,
-        "pushed_at": "2026-11-09",
-        "checked_at": "2026-11-15"
-      },
-      "lead": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
-      "body": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
-      "install": {
-        "command": "Consultar el material original; elegir un ejemplo antes de instalar.",
-        "confidence": "clone",
-        "note": "Una referencia no se instala como un servicio único."
-      },
-      "alt_refs": [],
-      "combine_refs": [
-        {
-          "id": "last30days-skill",
-          "label": "last30days-skill"
-        },
-        {
-          "id": "ecc",
-          "label": "ecc"
-        },
-        {
-          "id": "deer-flow",
-          "label": "deer-flow"
-        }
-      ],
-      "areas": [
-        "aprender"
-      ],
-      "topics": [
-        "aprender-cursos"
-      ],
-      "discovery_text": " Aprender IA, prompts y skills aprender formacion cursos skills prompts Cursos, guías y ejemplos"
-    },
-    {
       "id": "nanochat",
       "name": "nanochat",
       "cat": 19,
@@ -98028,213 +97827,6 @@
         "antigravity-mcp"
       ],
       "discovery_text": " Aprender IA, prompts y skills aprender formacion cursos skills prompts Prompts y contexto Configuración de Claude Code configurar claude code configuracion claude code setup claude code Skills, plugins y métodos Configuración de Codex configurar codex configuracion codex setup codex optimizar codex MCP y herramientas de navegador Configuración de Antigravity configurar antigravity configuracion antigravity setup antigravity MCP y herramientas conectadas"
-    },
-    {
-      "id": "python-machine-learning-book",
-      "name": "python-machine-learning-book",
-      "cat": 19,
-      "role": "directory",
-      "exec": "local",
-      "setup": "medium",
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "aprender",
-        "data-mining",
-        "data-science",
-        "logistic-regression",
-        "machine-learning",
-        "machine-learning-algorithms",
-        "neural-network",
-        "python"
-      ],
-      "one": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
-      "desc": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "llms-from-scratch",
-        "pytorch",
-        "awesome-machine-learning"
-      ],
-      "alt": [],
-      "stack": "Python; dependencias correspondientes a la primera edición; datos educativos",
-      "repo_url": "https://github.com/rasbt/python-machine-learning-book",
-      "doc": "human/fichas/python-machine-learning-book.md",
-      "agent_tools": [],
-      "sub": "aprender",
-      "how": "Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual",
-      "why": "Usos propuestos: Aprender regresión y clasificación; Entender validación de modelos.",
-      "cases": [
-        "Aprender regresión y clasificación",
-        "Entender validación de modelos"
-      ],
-      "gh": "rasbt/python-machine-learning-book",
-      "limits": "Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual",
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Python",
-          "dependencias correspondientes a la primera edición",
-          "datos educativos"
-        ],
-        "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/rasbt/python-machine-learning-book/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
-      },
-      "first_try": {
-        "action": "Abre el capítulo de clasificación y compara una predicción con su etiqueta de prueba",
-        "success": "Puedes reconocer el objetivo y la métrica del ejemplo",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Aprender regresión y clasificación",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Entender validación de modelos",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/rasbt/python-machine-learning-book/blob/master/README.md",
-        "source_blob_sha": "205e31ca1a72b9262fe79fc971acbd1ec8c588f0",
-        "previous_source_blob_sha": "205e31ca1a72b9262fe79fc971acbd1ec8c588f0",
-        "previous_category": [
-          19,
-          "aprender"
-        ],
-        "category_verdict": "confirmed",
-        "note": "Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "access": {
-        "mode": "software",
-        "api": "not_required",
-        "local_model": "supported",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "no_model_fee",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "El código se consulta libremente; el libro y cómputo tienen condiciones separadas",
-        "subscription_note": "Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual",
-        "local_note": "Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual",
-        "cost_note": "El código se consulta libremente; el libro y cómputo tienen condiciones separadas",
-        "hardware_note": "Python; dependencias correspondientes a la primera edición; datos educativos",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/rasbt/python-machine-learning-book/blob/master/README.md"
-        ],
-        "source_blob_sha": "205e31ca1a72b9262fe79fc971acbd1ec8c588f0",
-        "antigravity": "not_documented"
-      },
-      "routes": [
-        "no_api",
-        "local_model"
-      ],
-      "goals": [
-        "aprender"
-      ],
-      "added_at": "2026-11-14",
-      "status": "",
-      "pick": false,
-      "stars": 12673,
-      "license": "MIT",
-      "homepage": "",
-      "combina_con": [
-        {
-          "id": "llms-from-scratch",
-          "motivo": "Libro moderno del mismo autor para continuar hacia LLMs. (combinación por arquitectura)",
-          "orden_instalacion": "Usa este repositorio solo como referencia histórica y continúa con el libro actual."
-        },
-        {
-          "id": "pytorch",
-          "motivo": "Sustituto actual de Theano para los capítulos de redes neuronales. (combinación por arquitectura)",
-          "orden_instalacion": "Reescribe los ejemplos de Theano en PyTorch si quieres ejecutarlos."
-        },
-        {
-          "id": "awesome-machine-learning",
-          "motivo": "Directorio para encontrar bibliotecas actuales equivalentes. (combinación por arquitectura)",
-          "orden_instalacion": "Consulta la sección de Python."
-        }
-      ],
-      "que_es": "Código de la **primera edición** (2015) del libro 'Python Machine Learning' de Sebastian Raschka (MIT). El propio README avisa desde 2017 de que existen ediciones posteriores en otros repositorios. Es material histórico: usa Theano, una biblioteca discontinuada.",
-      "que_hace": "Contiene notebooks de los capítulos del libro: clasificación con perceptrones y Adaline, scikit-learn, preprocesamiento, reducción de dimensionalidad, evaluación de modelos, ensembles, análisis de sentimiento, regresión, clustering y redes neuronales con Theano.",
-      "como_lo_hace": "Notebooks Jupyter con NumPy, scikit-learn y Theano. Parte del código no funcionará con versiones actuales de las bibliotecas, sobre todo los capítulos de Theano. Para aprender hoy es preferible la edición más reciente del libro.",
-      "descripcion_notas": "Sin alternativas declaradas. Obsoleto: primera edición con Theano.",
-      "descripcion_fuentes": [
-        "https://github.com/rasbt/python-machine-learning-book/blob/master/README.md"
-      ],
-      "descripcion_revision": {
-        "batch": "15-aprendizaje-prompts-parte-2",
-        "checked_at": "2026-11-15",
-        "status": "source_reviewed",
-        "installation_tested": false
-      },
-      "descripcion_github": {
-        "name_with_owner": "rasbt/python-machine-learning-book",
-        "archived": false,
-        "pushed_at": "2026-07-18",
-        "license": "MIT",
-        "primary_language": "Jupyter Notebook",
-        "latest_release": "v1.3 (2016-09-30)",
-        "checked_at": "2026-11-15"
-      },
-      "lead": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
-      "body": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
-      "install": {
-        "command": "Consultar el material original; elegir un ejemplo antes de instalar.",
-        "confidence": "clone",
-        "note": "Una referencia no se instala como un servicio único."
-      },
-      "alt_refs": [],
-      "combine_refs": [
-        {
-          "id": "llms-from-scratch",
-          "label": "llms-from-scratch"
-        },
-        {
-          "id": "pytorch",
-          "label": "pytorch"
-        },
-        {
-          "id": "awesome-machine-learning",
-          "label": "awesome-machine-learning"
-        }
-      ],
-      "areas": [
-        "aprender"
-      ],
-      "topics": [
-        "aprender-modelos"
-      ],
-      "discovery_text": " Aprender IA, prompts y skills aprender formacion cursos skills prompts Aprender cómo funcionan los modelos"
     },
     {
       "id": "system-prompts-and-models-of-ai-tools",

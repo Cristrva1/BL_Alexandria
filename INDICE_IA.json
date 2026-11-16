@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 637 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 635 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -802,7 +802,7 @@
      "title": "Aprender LLMs desde cero"
     }
    ],
-   "count": 30
+   "count": 28
   },
   {
    "num": 20,
@@ -18713,46 +18713,6 @@
    "source_archived": false
   },
   {
-   "id": "python-machine-learning-book",
-   "name": "python-machine-learning-book",
-   "emoji": "🧑‍💻",
-   "cat": 19,
-   "sub": "aprender",
-   "role": "directory",
-   "exec": "local",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "aprender",
-    "data-mining",
-    "data-science",
-    "logistic-regression",
-    "machine-learning",
-    "machine-learning-algorithms",
-    "neural-network",
-    "python"
-   ],
-   "stars": 12673,
-   "gh": "rasbt/python-machine-learning-book",
-   "github_id": 40380094,
-   "lib": false,
-   "pick": false,
-   "one": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
-   "alt": [],
-   "doc": "human/fichas/python-machine-learning-book.md",
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "aprender"
-   ],
-   "routes": [
-    "no_api",
-    "local_model"
-   ],
-   "source_archived": false
-  },
-  {
    "id": "tensorflow",
    "name": "tensorflow",
    "emoji": "🧑‍💻",
@@ -23751,41 +23711,6 @@
     "api"
    ],
    "goals": [],
-   "source_archived": false
-  },
-  {
-   "id": "mvanhorn",
-   "name": "mvanhorn",
-   "cat": 19,
-   "sub": "guias",
-   "role": "directory",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "guias",
-    "reference"
-   ],
-   "lib": false,
-   "pick": false,
-   "one": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
-   "alt": [],
-   "stars": 53,
-   "github_id": 1176139654,
-   "gh": "mvanhorn/mvanhorn",
-   "lang": null,
-   "license": null,
-   "added_at": "2026-11-14",
-   "github_checked": "2026-11-14",
-   "routes": [
-    "no_api",
-    "reference"
-   ],
-   "goals": [
-    "skills",
-    "aprender"
-   ],
    "source_archived": false
   },
   {
