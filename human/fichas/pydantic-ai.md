@@ -33,6 +33,12 @@ Se instala con `uv add pydantic-ai` (extras como `[temporal]` o `[openai-realtim
 | [loguru](loguru.md) | Combinación recíproca: loguru lo enlaza como «Logging sencillo en agentes Python. (combinación por arquitectura)». | Orden indicado desde loguru: Configura Loguru al iniciar el agente. |
 | [MCP Python SDK](mcp-python-sdk.md) | Combinación recíproca: MCP Python SDK lo enlaza como «Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura)». | Orden indicado desde MCP Python SDK: Conecta el servidor como toolset MCP. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Temporal](temporal.md)
+
 **Notas:** Alternativas (elige una): openai-agents-python, smolagents, langgraph.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.68.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).

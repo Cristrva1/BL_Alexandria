@@ -33,9 +33,9 @@ Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (18). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (54). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[AppFlowy](appflowy.md) · [audiobookshelf](audiobookshelf.md) · [binance-trader](binance-trader.md) · [fluxer](fluxer.md) · [free-for-dev](free-for-dev.md) · [huginn](huginn.md) · [karakeep](karakeep.md) · [NocoDB](nocodb.md) · [open-seo](open-seo.md) · [open-sol-bot](open-sol-bot.md) · [opencode-manager](opencode-manager.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [postiz-app](postiz-app.md) · [server](nextcloud-server.md) · [syncthing](syncthing.md) · [vaultwarden](vaultwarden.md) · [whatsapp-agentkit](whatsapp-agentkit.md)
+[Actual Budget](actual.md) · [AppFlowy](appflowy.md) · [Appwrite](appwrite.md) · [audiobookshelf](audiobookshelf.md) · [Baserow](baserow.md) · [binance-trader](binance-trader.md) · [Caddy](caddy.md) · [Calibre-Web](calibre-web.md) · [CrowdSec](crowdsec.md) · [discord.js](discord-js.md) · [Easy!Appointments](easyappointments.md) · [EspoCRM](espocrm.md) · [Firefly III](firefly-iii.md) · [fluxer](fluxer.md) · [free-for-dev](free-for-dev.md) · [FreeScout](freescout.md) · [FreshRSS](freshrss.md) · [Ghostfolio](ghostfolio.md) · [Grist](grist-core.md) · [huginn](huginn.md) · [Immich](immich.md) · [Jellyfin](jellyfin.md) · [karakeep](karakeep.md) · [Kavita](kavita.md) · [Mattermost](mattermost.md) · [Memos](memos.md) · [Miniflux](miniflux.md) · [NetBird](netbird.md) · [NocoDB](nocodb.md) · [open-seo](open-seo.md) · [open-sol-bot](open-sol-bot.md) · [opencode-manager](opencode-manager.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [PhotoPrism](photoprism.md) · [Pi-hole](pi-hole.md) · [postiz-app](postiz-app.md) · [python-telegram-bot](python-telegram-bot.md) · [Reflex](reflex.md) · [Rocket.Chat](rocket-chat.md) · [RSSHub](rsshub.md) · [server](nextcloud-server.md) · [SonarQube Community Build](sonarqube.md) · [Synapse](synapse.md) · [syncthing](syncthing.md) · [Teable](teable.md) · [Traefik Proxy](traefik.md) · [Trilium Notes](trilium.md) · [Trivy](trivy.md) · [Uptime Kuma](uptime-kuma.md) · [vaultwarden](vaultwarden.md) · [wallabag](wallabag.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [Zammad](zammad.md)
 
 **Notas:** Alternativa (elige una): casaos.
 
@@ -113,6 +113,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [CasaOS](casaos.md) | 37.6k | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
+| [Dokploy](dokploy.md) | 38.5k | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. |
 
 ## Enlaces
 

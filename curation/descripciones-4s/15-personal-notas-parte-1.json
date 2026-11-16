@@ -28,6 +28,18 @@
      "motivo": "Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor.",
      "reciproca_de": "casaos"
+    },
+    {
+     "id": "immich",
+     "motivo": "Combinación recíproca: Immich lo enlaza como «Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Immich: Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa.",
+     "reciproca_de": "immich"
+    },
+    {
+     "id": "photoprism",
+     "motivo": "Combinación recíproca: PhotoPrism lo enlaza como «PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PhotoPrism: Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism.",
+     "reciproca_de": "photoprism"
     }
    ],
    "notas": "Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.",
@@ -125,6 +137,18 @@
      "id": "activepieces",
      "motivo": "Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura)",
      "orden_instalacion": "Crea un token de API en Audiobookshelf y úsalo en la pieza HTTP de Activepieces."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "jellyfin"
+    },
+    {
+     "id": "kavita",
+     "motivo": "Combinación recíproca: Kavita lo enlaza como «Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kavita: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "kavita"
     }
    ],
    "notas": "Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.",
@@ -293,6 +317,12 @@
      "id": "audiobookshelf",
      "motivo": "Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura)",
      "orden_instalacion": "Comparte la carpeta de la biblioteca en Syncthing."
+    },
+    {
+     "id": "spotdl",
+     "motivo": "Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing.",
+     "reciproca_de": "spotdl"
     }
    ],
    "notas": "Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.",

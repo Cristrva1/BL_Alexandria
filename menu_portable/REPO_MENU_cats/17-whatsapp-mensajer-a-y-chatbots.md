@@ -64,6 +64,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `odoo`, `cal.diy`
 
+## `discord-js`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=chatbots,javascript,library,discord
+
+**Qué es:** Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/discordjs/discord.js
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/discordjs/discord.js/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `npm install discord.js`, crea una aplicación en el portal de desarrolladores de Discord y ejecuta un bot que responda a un comando.
+**Qué comprobar:** El bot aparece en línea y responde al comando en tu servidor de pruebas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `vercel-ai`, `ollama`, `coolify`
+
 ## `evolution-api`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,whatsapp,typescript,docker
 
@@ -125,6 +155,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `ollama`, `coolify`
 
+## `mattermost`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=chat,self-hosted,go,server
+
+**Qué es:** Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llamadas, pantalla compartida e integración con IA.
+**Stack:** TypeScript
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mattermost/mattermost
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/mattermost/mattermost/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar un chat de equipo privado en tu infraestructura; integrar alertas de CI o monitorización en canales del equipo
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Mattermost con Docker siguiendo la guía oficial, crea un equipo y un canal y añade un webhook entrante.
+**Qué comprobar:** Los mensajes enviados al webhook aparecen en el canal.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `ollama`, `coolify`
+**Alternativas (elige una):** `rocket-chat`
+
 ## `openwa`
 role=platform · exec=local · setup=easy · mcp=True · prov=— · tags=whatsapp,chatbot,typescript
 
@@ -162,6 +223,127 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes ver sesión, API y permisos del usuario configurado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `chatwoot`, `typebot`, `claude-code`
+
+## `python-telegram-bot`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=chatbots,python,library,telegram
+
+**Qué es:** Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/python-telegram-bot/python-telegram-bot
+
+**Instalación** [+]:
+
+```
+pip install python-telegram-bot --upgrade
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: crear un bot de Telegram que responda comandos y envíe avisos; conectar un modelo de lenguaje a un chat de Telegram
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install python-telegram-bot --upgrade`, crea un token con BotFather y ejecuta el ejemplo echobot.
+**Qué comprobar:** El bot responde en Telegram repitiendo tus mensajes.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `langgraph`, `coolify`
+
+## `rocket-chat`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=chat,self-hosted,typescript,server
+
+**Qué es:** Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/RocketChat/Rocket.Chat
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Rocket.Chat con Docker Compose siguiendo su guía, crea un espacio de trabajo y un canal.
+**Qué comprobar:** Puedes chatear en el canal desde la web y la app móvil.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `activepieces`, `ollama`, `coolify`
+**Alternativas (elige una):** `mattermost`
+
+## `signal-cli`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=messaging,java,cli
+
+**Qué es:** Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.
+**Stack:** Java
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/AsamK/signal-cli
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/AsamK/signal-cli/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: enviar avisos de un servidor a tu móvil por Signal; conectar un asistente o bot a Signal mediante su API JSON-RPC
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga la release (JRE 25 o binario nativo), vincula signal-cli como dispositivo secundario y envía un mensaje de prueba a ti mismo.
+**Qué comprobar:** El mensaje llega a tu app de Signal.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `openclaw`, `activepieces`, `uptime-kuma`
+
+## `synapse`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=chat,python,self-hosted,server
+
+**Qué es:** Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo.
+**Stack:** Python, Cargo.toml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/element-hq/synapse
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/element-hq/synapse/blob/develop/README.rst
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: alojar tu propio servidor de chat federado para un grupo o comunidad; conectar usuarios con otros servidores Matrix manteniendo tus datos
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala Synapse con paquetes o Docker siguiendo la guía oficial, crea un usuario y conéctate con un cliente Matrix.
+**Qué comprobar:** Puedes chatear desde el cliente y unirte a salas de otros servidores federados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `caddy`, `coolify`
 
 ## `typebot`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=chatbot,automation,typescript

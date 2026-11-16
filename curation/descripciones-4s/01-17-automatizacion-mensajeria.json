@@ -141,6 +141,12 @@
      "id": "grafana",
      "motivo": "Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales).",
      "orden_instalacion": "Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Combinación recíproca: Zigbee2MQTT lo enlaza como «Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Zigbee2MQTT: Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT.",
+     "reciproca_de": "zigbee2mqtt"
     }
    ],
    "notas": "Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",

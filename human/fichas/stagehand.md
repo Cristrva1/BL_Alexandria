@@ -29,6 +29,7 @@ Disponible para TypeScript (npm) y Python (`pip install stagehand`), más la CLI
 | [Claude Code](claude-code.md) | Cliente del MCP alojado de Browserbase. | Conecta el MCP. |
 | [Lightpanda](lightpanda.md) | Navegador headless ligero vía CDP. (combinación por arquitectura) | Conecta por CDP si es compatible. |
 | [firecrawl](firecrawl.md) | Extracción masiva complementaria. (combinación por arquitectura) | Usa Firecrawl para el rastreo y Stagehand para las interacciones. |
+| [Steel Browser](steel-browser.md) | Combinación recíproca: Steel Browser lo enlaza como «El cookbook oficial de Steel incluye ejemplos de Stagehand en Python y TypeScript». | Orden indicado desde Steel Browser: Arranca Steel; después sigue el ejemplo `stagehand-ts` o `stagehand-py` del cookbook. |
 
 **Notas:** Alternativas (elige una): browser-use, skyvern. La nube de Browserbase es de pago.
 

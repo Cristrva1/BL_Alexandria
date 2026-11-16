@@ -99,6 +99,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `video` `ui` `typescript` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Shotcut](shotcut.md) | 15.7k | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. |
+| [Kdenlive](kdenlive.md) | 6.1k | Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. |
+
 ## Enlaces
 
 - 🐙 GitHub: [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut)

@@ -403,6 +403,18 @@
      "id": "marimo",
      "motivo": "Analizar ortomosaicos y DEM exportados. (combinación por arquitectura)",
      "orden_instalacion": "Abre los GeoTIFF en un notebook."
+    },
+    {
+     "id": "leaflet",
+     "motivo": "Combinación recíproca: Leaflet lo enlaza como «WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Leaflet: Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet.",
+     "reciproca_de": "leaflet"
+    },
+    {
+     "id": "qgis",
+     "motivo": "Combinación recíproca: QGIS lo enlaza como «Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde QGIS: Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS.",
+     "reciproca_de": "qgis"
     }
    ],
    "notas": "Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM.",
@@ -481,6 +493,18 @@
      "motivo": "Combinación recíproca: Deep-Live-Cam lo enlaza como «Restaurar rostros en vídeo procesado offline. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Deep-Live-Cam: Aplica sobre los fotogramas.",
      "reciproca_de": "deep-live-cam"
+    },
+    {
+     "id": "upscayl",
+     "motivo": "Combinación recíproca: Upscayl lo enlaza como «Para retratos, CodeFormer restaura rostros antes o después de ampliar la imagen con Upscayl (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Upscayl: Restaura con CodeFormer; después amplía con Upscayl y compara.",
+     "reciproca_de": "upscayl"
+    },
+    {
+     "id": "chainner",
+     "motivo": "Combinación recíproca: chaiNNer lo enlaza como «Los modelos de restauración facial que soporta chaiNNer (vía spandrel) se encadenan con el escalado; CodeFormer sirve para comparar resultados en retratos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde chaiNNer: Restaura con CodeFormer o un modelo facial compatible; después escala en chaiNNer.",
+     "reciproca_de": "chainner"
     }
    ],
    "notas": "Sin alternativas declaradas. Licencia no comercial.",

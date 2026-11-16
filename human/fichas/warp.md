@@ -29,6 +29,7 @@ Requiere Python 3.11+ y se instala con `pip install warp-lang` (extras `[example
 | [PyTorch](pytorch.md) | Interoperabilidad de tensores para ML diferenciable. | Convierte arrays con las utilidades de interop. |
 | [blender](blender.md) | Visualizar resultados exportados a USD. (combinación por arquitectura) | Importa el USD en Blender. |
 | [cosmos](cosmos.md) | Datos de simulación para modelos de mundo. (combinación por arquitectura) | Genera escenas con Warp. |
+| [MuJoCo](mujoco.md) | Combinación recíproca: MuJoCo lo enlaza como «MuJoCo Warp (MJWarp), mantenido por Google DeepMind y NVIDIA dentro del proyecto Newton, es una versión de MuJoCo acelerada en GPU con NVIDIA Warp». | Orden indicado desde MuJoCo: Instala MuJoCo Warp (requiere Warp y GPU NVIDIA); después carga tus modelos MJCF. |
 
 **Notas:** Sin alternativas declaradas.
 

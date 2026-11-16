@@ -33,9 +33,9 @@ Se instala con `npm init playwright@latest` (pruebas), `npm i playwright` (libre
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (14). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (20). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[ai-website-cloner-template](ai-website-cloner-template.md) · [crawlee-python](crawlee-python.md) · [diagram-design](diagram-design.md) · [Gemini Computer Use (preview)](computer-use-preview.md) · [GEO-SEO Claude](geo-seo-claude.md) · [llm-scraper](llm-scraper.md) · [mitmproxy](mitmproxy.md) · [Scrapegraph-ai](scrapegraph-ai.md) · [scrapy](scrapy.md) · [screenshot-to-code](screenshot-to-code.md) · [Skyvern](skyvern.md) · [Slidev](slidev.md) · [Trigger.dev](trigger-dev.md) · [UI SDK (Vercel)](ui-sdk.md)
+[ai-website-cloner-template](ai-website-cloner-template.md) · [Camoufox](camoufox.md) · [crawlee-python](crawlee-python.md) · [diagram-design](diagram-design.md) · [Gemini Computer Use (preview)](computer-use-preview.md) · [GEO-SEO Claude](geo-seo-claude.md) · [llm-scraper](llm-scraper.md) · [Locust](locust.md) · [mitmproxy](mitmproxy.md) · [OpenManus](openmanus.md) · [Scrapegraph-ai](scrapegraph-ai.md) · [scrapy](scrapy.md) · [screenshot-to-code](screenshot-to-code.md) · [Skyvern](skyvern.md) · [Slidev](slidev.md) · [Steel Browser](steel-browser.md) · [Storybook](storybook.md) · [Trigger.dev](trigger-dev.md) · [UI SDK (Vercel)](ui-sdk.md) · [ZAP (Zed Attack Proxy)](zaproxy.md)
 
 **Notas:** Alternativas (elige una): puppeteer, selenium.
 
@@ -121,6 +121,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Puppeteer](puppeteer.md) | 95.8k | Librería de Google para controlar Chrome y Firefox desde Node.js. |
 | [Selenium](selenium.md) | 34.6k | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. |
+| [Cypress](cypress.md) | 51k | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. |
+| [WebdriverIO](webdriverio.md) | 9.9k | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. |
 
 ## Enlaces
 

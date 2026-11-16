@@ -30,6 +30,14 @@ Es una aplicación PHP con frontend en JavaScript/Vue; necesita servidor web, PH
 | [Home Assistant](home-assistant.md) | Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud. | Activa la integración en Home Assistant con un usuario administrador de Nextcloud. |
 | [Ollama](ollama.md) | Dar a Nextcloud Assistant un modelo local mediante un backend compatible con la API de OpenAI. (combinación por arquitectura) (la app integration_openai admite endpoints compatibles; la compatibilidad concreta con Ollama es [DATO NO VERIFICADO] en este lote) | Levanta Ollama, instala la app de integración y apunta su URL al endpoint compatible. |
 | [CasaOS](casaos.md) | Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)». | Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor. |
+| [Immich](immich.md) | Combinación recíproca: Immich lo enlaza como «Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura)». | Orden indicado desde Immich: Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa. |
+| [PhotoPrism](photoprism.md) | Combinación recíproca: PhotoPrism lo enlaza como «PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura)». | Orden indicado desde PhotoPrism: Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Joplin](joplin.md) · [SiYuan](siyuan.md)
 
 **Notas:** Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.
 

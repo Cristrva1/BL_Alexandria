@@ -32,9 +32,9 @@ Se ejecuta con `npx @modelcontextprotocol/inspector` (web), `--cli` o `--tui`. L
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Chrome DevTools MCP](chrome-devtools-mcp.md) · [Google MCP](mcp.md) · [MCP for Beginners](mcp-for-beginners.md) · [Playwright MCP](playwright-mcp.md) · [servers](servers.md)
+[Chrome DevTools MCP](chrome-devtools-mcp.md) · [Google MCP](mcp.md) · [MCP for Beginners](mcp-for-beginners.md) · [MCP servers for AWS](aws-mcp.md) · [Playwright MCP](playwright-mcp.md) · [servers](servers.md)
 
 **Notas:** Sin alternativas declaradas. Trata los secretos que guarda como credenciales.
 
