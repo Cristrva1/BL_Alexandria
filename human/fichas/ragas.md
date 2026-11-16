@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Ragas, librería para evaluar y optimizar aplicaciones de LLM y RAG, ahora bajo la organización vibrantlabsai. Licencia Apache-2.0. Es activa (~16k estrellas, v0.4.4).
+
+## ¿Qué hace?
+
+Calcula métricas objetivas, basadas en LLM y tradicionales, como fidelidad, relevancia y precisión del contexto. Genera datasets de prueba sintéticos alineados con producción y crea bucles de retroalimentación con datos reales. Se integra con frameworks de LLM y herramientas de observabilidad.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install ragas` y ofrece `ragas quickstart` para clonar un proyecto de ejemplo. Las métricas con LLM requieren un modelo evaluador y su clave.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LlamaIndex](llama-index.md) | Integración documentada con LlamaIndex. | Evalúa el query engine con Ragas. |
+| [langfuse](langfuse.md) | Guía oficial de Langfuse para registrar puntuaciones de Ragas. | Calcula métricas y súbelas como scores. |
+| [langchain](langchain.md) | Integración documentada con LangChain. | Envuelve el modelo y los embeddings de LangChain para Ragas. |
+| [Opik](opik.md) | Integración documentada en Opik. | Registra métricas de Ragas en Opik. |
+
+**Notas:** Alternativas (elige una): deepeval, promptfoo. El repo se movió de explodinggradients/ragas a vibrantlabsai/ragas (GitHub redirige).
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.4.4 (2026-11-14) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vibrantlabsai/ragas/blob/main/README.md) · [2](https://docs.ragas.io/en/stable/howtos/integrations/_llamaindex/) · [3](https://docs.ragas.io/en/stable/howtos/integrations/langchain/) · [4](https://langfuse.com/integrations/frameworks/ragas) · [5](https://www.comet.com/docs/opik/integrations/ragas)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. El ejemplo usa OpenAI y algunas métricas consumen modelos y embeddings; el proveedor y coste dependen de la métrica elegida y deben configurarse explícitamente |
 | Coste | El coste depende del proveedor o la ruta. El ejemplo usa OPENAI_API_KEY y métricas que pueden consumir modelos y embeddings; cada adaptación debe presupuestarse |
 | Equipo | Preparación según la ruta elegida. Python; dataset de evaluación; modelo y embeddings configurados |
-
-El ejemplo usa OpenAI y algunas métricas consumen modelos y embeddings; el proveedor y coste dependen de la métrica elegida y deben configurarse explícitamente
-
-## Qué puedes hacer con él
-
-Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos.
-
-## Por qué destaca
-
-Usos propuestos: Medir un RAG con datos controlados; Comparar versiones de una cadena.
-
-## Cómo funciona
 
 El ejemplo usa OpenAI y algunas métricas consumen modelos y embeddings; el proveedor y coste dependen de la métrica elegida y deben configurarse explícitamente
 
@@ -93,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dataset de evaluación; modelo y embeddings configurados
 - **Etiquetas:** `evaluation` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 

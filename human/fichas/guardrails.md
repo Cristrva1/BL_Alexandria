@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+NeMo Guardrails, toolkit open source de NVIDIA para añadir barreras programables a aplicaciones conversacionales con LLM. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activo (~7.5k estrellas, v0.24.1).
+
+## ¿Qué hace?
+
+Controla la salida del modelo con «rails»: no hablar de ciertos temas, seguir un diálogo, filtrar entradas y salidas, detectar jailbreaks, verificar hechos y moderar contenido. Las reglas se definen con configuración y el lenguaje Colang. Se puede usar como librería de Python o como servidor de guardrails.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install nemoguardrails` y requiere Python 3.11–3.13 (desde 0.25.0 ya no admite 3.10). La integración con LangChain es opcional (`NEMOGUARDRAILS_LLM_FRAMEWORK=langchain`). Recoge telemetría anónima de uso (revisa la sección de privacidad para desactivarla).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langchain](langchain.md) | Integración opcional con LangChain documentada en el README. | Activa el framework LangChain y envuelve tu cadena con los rails. |
+| [promptfoo](promptfoo.md) | Hacer red teaming de la app protegida para comprobar los rails. (combinación por arquitectura) | Configura los rails y lanza promptfoo contra el servidor. |
+| [vLLM](vllm.md) | Proteger un modelo autoalojado. (combinación por arquitectura) | Sirve el modelo con vLLM y apúntale la configuración de Guardrails. |
+
+**Notas:** Sin alternativas declaradas. No confundir con Guardrails AI (otro proyecto, no catalogado). Telemetría activa por defecto.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.24.1 (2026-09-16) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/README.md) · [2](https://docs.nvidia.com/nemo/guardrails)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. NeMo Guardrails no garantiza seguridad total ni adecuación a todo sector; develop es desarrollo y la versión publicada debe elegirse de forma explícita |
 | Coste | El coste depende del proveedor o la ruta. Los modelos y servicios usados por las reglas pueden generar consumo; el toolkit Apache no los incluye |
 | Equipo | Preparación según la ruta elegida. Python; app conversacional; configuración Colang; modelo según rails |
-
-NeMo Guardrails no garantiza seguridad total ni adecuación a todo sector; develop es desarrollo y la versión publicada debe elegirse de forma explícita
-
-## Qué puedes hacer con él
-
-Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM.
-
-## Por qué destaca
-
-Usos propuestos: Guiar un asistente de soporte; Evaluar controles de una app propia.
-
-## Cómo funciona
 
 NeMo Guardrails no garantiza seguridad total ni adecuación a todo sector; develop es desarrollo y la versión publicada debe elegirse de forma explícita
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; app conversacional; configuración Colang; modelo según rails
 - **Etiquetas:** `security` `chatbot` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
 ## Enlaces
 

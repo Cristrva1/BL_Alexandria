@@ -5087,7 +5087,7 @@ Servidores de inferencia, gateways, evaluación, trazas y control de contexto. C
 **Comando documentado:** `uv pip install vllm
 vllm download-kernels  # precompiled kernels for faster startup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Servir un modelo propio; Estudiar rendimiento de inferencia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [Open WebUI](human/fichas/open-webui.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [Open WebUI](human/fichas/open-webui.md) · [langchain](human/fichas/langchain.md)<br>
 **Más:** [ficha completa](human/fichas/vllm.md) · [GitHub](https://github.com/vllm-project/vllm)
 
 #### ⚙️ OmniRoute
@@ -5113,7 +5113,7 @@ vllm download-kernels  # precompiled kernels for faster startup` (comprobar los 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `uv pip install --prerelease=allow sglang` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [Open WebUI](human/fichas/open-webui.md) · [Unsloth](human/fichas/unsloth.md)<br>
 **Más:** [ficha completa](human/fichas/sglang.md) · [GitHub](https://github.com/sgl-project/sglang)
 
 #### ⚙️ claude-code-router
@@ -5131,6 +5131,7 @@ ccr ui` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://nvidia.github.io/TensorRT-LLM/installation/index.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [Open WebUI](human/fichas/open-webui.md) · [Transformers](human/fichas/transformers.md)<br>
 **Más:** [ficha completa](human/fichas/tensorrt-llm.md) · [GitHub](https://github.com/NVIDIA/TensorRT-LLM)
 
 #### 🧬 backdoor
@@ -5151,7 +5152,7 @@ cd backdoor
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install headroom-ai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Context-Engineering](human/fichas/context-engineering.md) · [codegraph](human/fichas/codegraph.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [litellm](human/fichas/litellm.md) · [Context-Engineering](human/fichas/context-engineering.md) · [codegraph](human/fichas/codegraph.md)<br>
 **Más:** [ficha completa](human/fichas/headroom.md) · [GitHub](https://github.com/headroomlabs-ai/headroom)
 
 #### 🧬 rtk
@@ -5160,6 +5161,7 @@ cd backdoor
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `winget install rtk-ai.rtk` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir salida repetitiva de comandos; Estudiar consumo de contexto por tarea — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Gemini CLI](human/fichas/gemini-cli.md)<br>
 **Más:** [ficha completa](human/fichas/rtk.md) · [GitHub](https://github.com/rtk-ai/rtk)
 
 ### Observabilidad, evaluación y guardrails
@@ -5171,7 +5173,7 @@ cd backdoor
 **Comando documentado:** `npm install -g promptfoo
 promptfoo init --example getting-started` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar un prompt de soporte; Probar regresiones de un RAG — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md) · [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [langfuse](human/fichas/langfuse.md) · [litellm](human/fichas/litellm.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/promptfoo.md) · [GitHub](https://github.com/promptfoo/promptfoo)
 
 #### 📡 langfuse
@@ -5185,7 +5187,7 @@ promptfoo init --example getting-started` (comprobar los pasos completos en la f
   # Run the langfuse docker compose
   docker compose up` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar un asistente; Comparar versiones de un prompt — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md) · [litellm](human/fichas/litellm.md) · [ag2](human/fichas/ag2.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [langchain](human/fichas/langchain.md) · [Open WebUI](human/fichas/open-webui.md) · [Ragas](human/fichas/ragas.md)<br>
 **Más:** [ficha completa](human/fichas/langfuse.md) · [GitHub](https://github.com/langfuse/langfuse)
 
 #### 📡 MLflow
@@ -5194,7 +5196,7 @@ promptfoo init --example getting-started` (comprobar los pasos completos en la f
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `uvx mlflow server` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Registrar experimentos de ML; Añadir trazas a una app de IA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Transformers](human/fichas/transformers.md) · [DSPy](human/fichas/dspy.md)<br>
+**Combina con:** [DSPy](human/fichas/dspy.md) · [Transformers](human/fichas/transformers.md) · [DeepEval](human/fichas/deepeval.md) · [Ragas](human/fichas/ragas.md)<br>
 **Más:** [ficha completa](human/fichas/mlflow.md) · [GitHub](https://github.com/mlflow/mlflow)
 
 #### 📝 loguru
@@ -5203,7 +5205,7 @@ promptfoo init --example getting-started` (comprobar los pasos completos en la f
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install loguru` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar una automatización; Añadir logs legibles a una app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [langfuse](human/fichas/langfuse.md) · [Pydantic AI](human/fichas/pydantic-ai.md)<br>
 **Más:** [ficha completa](human/fichas/loguru.md) · [GitHub](https://github.com/Delgan/loguru)
 
 #### 📡 Opik
@@ -5213,7 +5215,7 @@ promptfoo init --example getting-started` (comprobar los pasos completos en la f
 **Comando documentado:** `pip install opik
 opik configure` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar una cadena RAG; Revisar fallos con un agente de código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LangGraph](human/fichas/langgraph.md)<br>
+**Combina con:** [LangGraph](human/fichas/langgraph.md) · [litellm](human/fichas/litellm.md) · [Ragas](human/fichas/ragas.md) · [DSPy](human/fichas/dspy.md)<br>
 **Más:** [ficha completa](human/fichas/opik.md) · [GitHub](https://github.com/comet-ml/opik)
 
 #### 📡 DeepEval
@@ -5222,7 +5224,7 @@ opik configure` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install -U deepeval` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [MLflow](human/fichas/mlflow.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/deepeval.md) · [GitHub](https://github.com/confident-ai/deepeval)
 
 #### 📡 Ragas
@@ -5231,7 +5233,7 @@ opik configure` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install ragas` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Medir un RAG con datos controlados; Comparar versiones de una cadena — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [langfuse](human/fichas/langfuse.md) · [langchain](human/fichas/langchain.md) · [Opik](human/fichas/opik.md)<br>
 **Más:** [ficha completa](human/fichas/ragas.md) · [GitHub](https://github.com/vibrantlabsai/ragas)
 
 #### 📡 Phoenix
@@ -5241,7 +5243,7 @@ opik configure` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `pip install arize-phoenix
 phoenix serve` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar una app con OpenTelemetry; Consultar trazas desde un agente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [LangGraph](human/fichas/langgraph.md)<br>
+**Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [LangGraph](human/fichas/langgraph.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/phoenix.md) · [GitHub](https://github.com/Arize-ai/phoenix)
 
 #### 🖥️ Claude-Code-Usage-Monitor
@@ -5262,7 +5264,7 @@ claude-monitor  # or cmonitor, ccmonitor for short` (comprobar los pasos complet
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `pip install nemoguardrails` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Guiar un asistente de soporte; Evaluar controles de una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langchain](human/fichas/langchain.md)<br>
+**Combina con:** [langchain](human/fichas/langchain.md) · [promptfoo](human/fichas/promptfoo.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/guardrails.md) · [GitHub](https://github.com/NVIDIA-NeMo/Guardrails)
 
 ---

@@ -125,7 +125,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Evalúa tres respuestas ficticias con un criterio explícito y revisa una puntuación manualmente
 **Qué comprobar:** Puedes relacionar el resultado con el caso y el juez seleccionado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`
+**Combina con:** `langchain`, `llama-index`, `mlflow`, `langfuse`
 **Alternativas (elige una):** `ragas`, `promptfoo`
 
 ## `guardrails`
@@ -156,7 +156,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Define un flujo de tema permitido y prueba una pregunta dentro y otra fuera de ese tema
 **Qué comprobar:** Puedes comprobar la regla aplicada y registrar sus límites
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`
+**Combina con:** `langchain`, `promptfoo`, `vllm`
 
 ## `headroom`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=— · tags=automation,llmops,python
@@ -186,7 +186,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Comprime una salida JSON pequeña y compara el resultado con el original antes de envolver un agente
 **Qué comprobar:** Puedes identificar qué se conservó y recuperar el original cuando corresponda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `context-engineering`, `codegraph`
+**Combina con:** `claude-code`, `litellm`, `context-engineering`, `codegraph`
 **Alternativas (elige una):** `rtk`
 
 ## `langfuse`
@@ -222,7 +222,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra una llamada de prueba y abre su traza para revisar entrada, salida y duración
 **Qué comprobar:** Puedes rastrear una respuesta hasta la llamada que la produjo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langchain`, `litellm`, `ag2`
+**Combina con:** `litellm`, `langchain`, `open-webui`, `ragas`
 **Alternativas (elige una):** `phoenix`, `opik`, `mlflow`
 
 ## `litellm`
@@ -283,7 +283,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra un mensaje y una excepción ficticia en un script pequeño
 **Qué comprobar:** Puedes distinguir nivel, fecha y detalle del error
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`
+**Combina con:** `litellm`, `langfuse`, `pydantic-ai`
 
 ## `mlflow`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=observability,training,evaluation,python
@@ -313,7 +313,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inicia el servidor de prueba y registra una ejecución pequeña con parámetros y resultado
 **Qué comprobar:** Puedes abrir la ejecución y comparar sus datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`, `dspy`
+**Combina con:** `dspy`, `transformers`, `deepeval`, `ragas`
 **Alternativas (elige una):** `langfuse`
 
 ## `omniroute`
@@ -374,7 +374,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra una traza y consúltala desde el panel o MCP con acceso de prueba
 **Qué comprobar:** Puedes localizar entrada, salida y evaluación de esa ejecución
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`
+**Combina con:** `langgraph`, `litellm`, `ragas`, `dspy`
 **Alternativas (elige una):** `langfuse`, `phoenix`
 
 ## `phoenix`
@@ -406,7 +406,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una traza de muestra y consulta una ejecución antes de conectar una aplicación real
 **Qué comprobar:** Puedes identificar spans, latencia y entradas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `langgraph`
+**Combina con:** `llama-index`, `langgraph`, `ollama`, `claude-code`
 **Alternativas (elige una):** `langfuse`, `opik`
 
 ## `promptfoo`
@@ -438,7 +438,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea dos variantes de un prompt y evalúalas con tres casos conocidos
 **Qué comprobar:** Puedes comparar respuestas y detectar un fallo concreto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`, `litellm`
+**Combina con:** `langfuse`, `litellm`, `vllm`
 **Alternativas (elige una):** `deepeval`, `ragas`, `dspy`
 
 ## `ragas`
@@ -469,7 +469,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Evalúa una respuesta cuyo contexto y referencia conozcas y comprueba qué mide cada métrica
 **Qué comprobar:** Puedes distinguir recuperación, relevancia y fidelidad
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `langfuse`
+**Combina con:** `llama-index`, `langfuse`, `langchain`, `opik`
 **Alternativas (elige una):** `deepeval`, `promptfoo`
 
 ## `rtk`
@@ -500,6 +500,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un comando RTK y compara su salida con la versión sin comprimir antes de activar hooks
 **Qué comprobar:** Puedes comprobar datos omitidos y contadores de ahorro
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `gemini-cli`
 **Alternativas (elige una):** `headroom`
 
 ## `sglang`
@@ -530,7 +531,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el quickstart y comprueba una petición breve al modelo servido
 **Qué comprobar:** Puedes identificar modelo, proceso y respuesta del endpoint
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`
+**Combina con:** `litellm`, `open-webui`, `unsloth`
 **Alternativas (elige una):** `vllm`
 
 ## `tensorrt-llm`
@@ -561,6 +562,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar
 **Qué comprobar:** Puedes relacionar motor, modelo y configuración de memoria
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `litellm`, `open-webui`, `transformers`
 
 ## `vllm`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python
@@ -591,5 +593,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el quickstart con un modelo que quepa en tu equipo y solicita una respuesta breve
 **Qué comprobar:** Puedes comprobar modelo cargado y endpoint de inferencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `open-webui`
+**Combina con:** `litellm`, `open-webui`, `langchain`
 **Alternativas (elige una):** `sglang`

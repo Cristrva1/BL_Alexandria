@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Langfuse, plataforma open source de ingeniería de IA para observabilidad y evaluación de agentes; forma parte de ClickHouse desde enero de 2026. Es MIT salvo las carpetas `ee` (GitHub muestra NOASSERTION). Es muy activa (~37k estrellas, v4.80.0).
+
+## ¿Qué hace?
+
+Registra trazas de llamadas a LLM, recuperación, embeddings y herramientas, con uso y costes. Gestiona y versiona prompts, y en beta también skills (`SKILL.md`). Permite evaluaciones con LLM como juez, anotación manual, datasets y experimentos, además de un playground.
+
+## ¿Cómo lo hace?
+
+Se usa en Langfuse Cloud o se autoaloja con Docker Compose, Kubernetes o Terraform. Recibe trazas por SDK de Python y JS/TS o por OpenTelemetry, con integraciones para muchos frameworks. El despliegue propio requiere Postgres, ClickHouse, Redis y almacenamiento S3.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Integración nativa: LiteLLM envía trazas a Langfuse. | Activa el callback de Langfuse en LiteLLM. |
+| [langchain](langchain.md) | Integración nativa con LangChain y LangGraph mediante callback. | Pasa el callback handler de Langfuse a tus cadenas. |
+| [Open WebUI](open-webui.md) | Integración documentada con Open WebUI. | Configura el pipeline de Langfuse en Open WebUI. |
+| [Ragas](ragas.md) | Guía oficial para evaluar RAG con Ragas y registrar puntuaciones. | Calcula métricas con Ragas y súbelas como scores. |
+
+**Notas:** Alternativas (elige una): phoenix, opik, mlflow. Las funciones `ee` tienen otra licencia.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.80.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/langfuse/langfuse/blob/main/README.md) · [2](https://langfuse.com/integrations/gateways/litellm) · [3](https://langfuse.com/integrations/frameworks/langchain) · [4](https://langfuse.com/integrations/no-code/openwebui) · [5](https://langfuse.com/integrations/frameworks/ragas)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El MCP documentado en el README consulta documentación y no equivale a acceso automático a tus trazas; el núcleo MIT excluye carpetas ee |
 | Coste | El coste depende del proveedor o la ruta. Self-host requiere infraestructura; Cloud, LLM-as-judge y modelos tienen costes separados; integra trazas de Ollama |
 | Equipo | Preparación según la ruta elegida. Docker o servicio Cloud; app de prueba; SDK o instrumentación |
-
-El MCP documentado en el README consulta documentación y no equivale a acceso automático a tus trazas; el núcleo MIT excluye carpetas ee
-
-## Qué puedes hacer con él
-
-Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente.
-
-## Por qué destaca
-
-Usos propuestos: Depurar un asistente; Comparar versiones de un prompt.
-
-## Cómo funciona
 
 El MCP documentado en el README consulta documentación y no equivale a acceso automático a tus trazas; el núcleo MIT excluye carpetas ee
 
@@ -98,14 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o servicio Cloud; app de prueba; SDK o instrumentación
 - **Etiquetas:** `automation` `observability` `typescript` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [ag2](ag2.md) | 5.1k | Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen. |
 
 ## Alternativas (elige una)
 

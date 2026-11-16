@@ -66301,6 +66301,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "langchain",
+        "llama-index",
+        "mlflow",
         "langfuse"
       ],
       "alt": [
@@ -66420,7 +66423,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Guiar un asistente de soporte; Evaluar controles de una app propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain"
+        "langchain",
+        "promptfoo",
+        "vllm"
       ],
       "alt": []
     },
@@ -66539,6 +66544,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "litellm",
         "context-engineering",
         "codegraph"
       ],
@@ -66663,9 +66670,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Depurar un asistente; Comparar versiones de un prompt",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langchain",
         "litellm",
-        "ag2"
+        "langchain",
+        "open-webui",
+        "ragas"
       ],
       "alt": [
         "phoenix",
@@ -66904,7 +66912,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Depurar una automatización; Añadir logs legibles a una app",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "litellm"
+        "litellm",
+        "langfuse",
+        "pydantic-ai"
       ],
       "alt": []
     },
@@ -67023,8 +67033,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Registrar experimentos de ML; Añadir trazas a una app de IA",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "dspy",
         "transformers",
-        "dspy"
+        "deepeval",
+        "ragas"
       ],
       "alt": [
         "langfuse"
@@ -67266,7 +67278,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Depurar una cadena RAG; Revisar fallos con un agente de código",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langgraph"
+        "langgraph",
+        "litellm",
+        "ragas",
+        "dspy"
       ],
       "alt": [
         "langfuse",
@@ -67390,7 +67405,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "llama-index",
-        "langgraph"
+        "langgraph",
+        "ollama",
+        "claude-code"
       ],
       "alt": [
         "langfuse",
@@ -67517,7 +67534,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "langfuse",
-        "litellm"
+        "litellm",
+        "vllm"
       ],
       "alt": [
         "deepeval",
@@ -67640,7 +67658,9 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "llama-index",
-        "langfuse"
+        "langfuse",
+        "langchain",
+        "opik"
       ],
       "alt": [
         "deepeval",
@@ -67766,7 +67786,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Reducir salida repetitiva de comandos; Estudiar consumo de contexto por tarea",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "claude-code",
+        "codex",
+        "gemini-cli"
+      ],
       "alt": [
         "headroom"
       ]
@@ -67884,7 +67908,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "litellm"
+        "litellm",
+        "open-webui",
+        "unsloth"
       ],
       "alt": [
         "vllm"
@@ -68004,7 +68030,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "litellm",
+        "open-webui",
+        "transformers"
+      ],
       "alt": []
     },
     {
@@ -68121,7 +68151,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "litellm",
-        "open-webui"
+        "open-webui",
+        "langchain"
       ],
       "alt": [
         "sglang"

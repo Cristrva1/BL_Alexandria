@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+vLLM, motor de inferencia y servicio de LLM nacido en el Sky Computing Lab de UC Berkeley y mantenido por una comunidad amplia. Licencia Apache-2.0. Es uno de los proyectos open source de IA más activos (~97k estrellas; última versión candidata v0.33.0rc3).
+
+## ¿Qué hace?
+
+Sirve modelos de lenguaje y multimodales con alto rendimiento gracias a PagedAttention, batching continuo, caché de prefijos, decodificación especulativa y muchos formatos de cuantización (FP8, INT4, GPTQ/AWQ, GGUF…). Ofrece paralelismo tensorial, de pipeline, de datos y de expertos para inferencia distribuida, salidas estructuradas, tool calling y multi-LoRA. Expone una API compatible con OpenAI, además de Anthropic Messages y gRPC.
+
+## ¿Cómo lo hace?
+
+Se instala con `uv pip install vllm` (o imagen Docker) y se lanza con `vllm serve <modelo>`. Está escrito en Python con kernels CUDA/HIP y torch.compile. Funciona en GPU NVIDIA y AMD y en otros aceleradores mediante plugins; el rendimiento óptimo exige una GPU con memoria suficiente para el modelo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | LiteLLM tiene proveedor nativo para vLLM. | Lanza `vllm serve` y añade el endpoint en LiteLLM. |
+| [Open WebUI](open-webui.md) | La documentación de vLLM explica cómo usarlo con Open WebUI. | Apunta Open WebUI al endpoint OpenAI de vLLM. |
+| [langchain](langchain.md) | Integración con LangChain documentada por vLLM. | Usa el cliente compatible con OpenAI de LangChain contra vLLM. |
+
+**Notas:** Alternativas (elige una): sglang.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.33.0rc3 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vllm-project/vllm/blob/main/README.md) · [2](https://docs.vllm.ai/en/latest/deployment/frameworks/open-webui.html) · [3](https://docs.litellm.ai/docs/providers/vllm) · [4](https://docs.vllm.ai/en/latest/serving/integrations/langchain.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es un motor de serving y no una app de chat; confirma la matriz de hardware y versión antes de instalar |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita API de pago para inferencia propia; GPU, alquiler y licencia de pesos son independientes |
 | Equipo | Preparación según la ruta elegida. uv y Python compatibles; hardware soportado; pesos y memoria del modelo |
-
-Es un motor de serving y no una app de chat; confirma la matriz de hardware y versión antes de instalar
-
-## Qué puedes hacer con él
-
-Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU.
-
-## Por qué destaca
-
-Usos propuestos: Servir un modelo propio; Estudiar rendimiento de inferencia.
-
-## Cómo funciona
 
 Es un motor de serving y no una app de chat; confirma la matriz de hardware y versión antes de instalar
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** uv y Python compatibles; hardware soportado; pesos y memoria del modelo
 - **Etiquetas:** `inference` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 
 ## Alternativas (elige una)
 
