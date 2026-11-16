@@ -30,6 +30,12 @@ Se instala con `npm i e2b` o `pip install e2b` y requiere `E2B_API_KEY` del serv
 | [Open SWE](open-swe.md) | Proveedor de sandbox posible. (combinación por arquitectura) | Configúralo como sandbox si tu despliegue lo admite. |
 | [Gemini Computer Use (preview)](computer-use-preview.md) | Escritorio aislado para agentes de uso de ordenador. (combinación por arquitectura) | Ejecuta el navegador en `e2b-desktop`. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[claude-agent-sdk-python](claude-agent-sdk-python.md) · [claude-quickstarts](claude-quickstarts.md) · [MetaGPT](metagpt.md) · [Open Interpreter](open-interpreter.md)
+
 **Notas:** Alternativas (elige una): sandbox.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada @e2b/cli@2.24.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

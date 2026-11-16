@@ -30,6 +30,12 @@ Se instala con `pip install -U openai-whisper` y requiere FFmpeg en el sistema. 
 | [whisperX](whisperx.md) | Añadir marcas de tiempo por palabra y diarización. | Usa WhisperX con modelos Whisper. |
 | [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA si hay GPU. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Arcads AI Video Skill Pack](arcads-claude-code.md) · [DaVinci Resolve MCP](davinci-resolve-mcp.md) · [edge-tts](edge-tts.md) · [instaloader](instaloader.md) · [Kdenlive](kdenlive.md) · [sherpa-onnx](sherpa-onnx.md) · [TEN Framework](ten-framework.md) · [transformers.js](transformers-js.md) · [videofy_minimal](videofy-minimal.md)
+
 **Notas:** Alternativas (elige una): whisper-cpp. Para producción suelen preferirse faster-whisper o whisper.cpp por velocidad.
 
 Estado en GitHub: activo · último push 2026-08-31 · última versión publicada v20250625 (2025-06-26) · licencia declarada MIT (consultado el 2026-11-15).

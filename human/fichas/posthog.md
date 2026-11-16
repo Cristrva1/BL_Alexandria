@@ -29,6 +29,15 @@ Se usa en PostHog Cloud (EE. UU. o UE) o se autoaloja la versión «hobby» con 
 | [Claude Code](claude-code.md) | Servidor MCP oficial instalable con `npx @posthog/wizard mcp add`. | Ejecuta el asistente y autoriza tu proyecto. |
 | [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `posthog` para usar posthog en flujos. | posthog en marcha con sus credenciales; después añade la pieza `posthog` en un flujo de Activepieces. |
 | [metabase](metabase.md) | BI sobre datos exportados del warehouse de PostHog. (combinación por arquitectura) | Exporta o sincroniza los datos y conéctalos a Metabase. |
+| [claude-seo](claude-seo.md) | Combinación recíproca: claude-seo lo enlaza como «Extensión `seo-posthog` para cruzar datos de analítica». | Orden indicado desde claude-seo: Configura credenciales de PostHog de solo lectura. |
+| [Marketing Skills](marketingskills.md) | Combinación recíproca: Marketing Skills lo enlaza como «Leer métricas de producto para las skills de analítica y conversión (combinación por arquitectura)». | Orden indicado desde Marketing Skills: Usa credenciales de solo lectura siguiendo su guía de conexión. |
+| [mautic](mautic.md) | Combinación recíproca: mautic lo enlaza como «PostHog mide el comportamiento en producto y Mautic actúa con campañas sobre esos segmentos (combinación por arquitectura)». | Orden indicado desde mautic: Define un identificador común de contacto antes de sincronizar datos entre ambos. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[skills](minimalist-entrepreneur-skills.md)
 
 **Notas:** Sin alternativas declaradas. El autoalojamiento «hobby» no es para producción.
 

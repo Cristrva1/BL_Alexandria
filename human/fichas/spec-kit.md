@@ -29,6 +29,8 @@ CLI en Python 3.11+ instalada con uv (`uv tool install specify-cli`, luego `spec
 | [Claude Code](claude-code.md) | Integración `--integration claude`. | Instala el agente antes de `specify init`. |
 | [Codex CLI](codex.md) | Integración `--integration codex`. | Igual que arriba. |
 | [Gemini CLI](gemini-cli.md) | Integración `--integration gemini`. | Igual que arriba. |
+| [Awesome GitHub Copilot](awesome-copilot.md) | Combinación recíproca: Awesome GitHub Copilot lo enlaza como «Proceso de desarrollo guiado por especificaciones con integración para Copilot». | Orden indicado desde Awesome GitHub Copilot: `specify init <proyecto> --integration copilot`. |
+| [elephant-goldfish-model](elephant-goldfish-model.md) | Combinación recíproca: elephant-goldfish-model lo enlaza como «Revisar con ojos frescos las especificaciones que genera Spec Kit (combinación por arquitectura)». | Orden indicado desde elephant-goldfish-model: Genera la especificación y pásala por `egm-review`. |
 
 **Notas:** Alternativas (elige una): bmad-method, claude-task-master.
 

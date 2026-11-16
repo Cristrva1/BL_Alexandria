@@ -32,6 +32,12 @@ Paquetes npm (`@copilotkit/react-core`, `@copilotkit/runtime`), un asistente de 
 | [crewAI](crewai.md) | Equipos de agentes CrewAI con integración documentada. | Despliega el crew y conéctalo al runtime. |
 | [OpenBot](openbot.md) | OpenBot, la plataforma de compañeros de IA de CopilotKit, está construida sobre CopilotKit y AG-UI. | Parte de OpenBot si quieres un espacio de trabajo completo en vez de componentes sueltos. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[claude-quickstarts](claude-quickstarts.md) · [LangGraph.js](langgraphjs.md) · [OpenDots](opendots.md) · [OpenUI](openui.md)
+
 **Notas:** Alternativas (elige una): assistant-ui.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.88.0 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).

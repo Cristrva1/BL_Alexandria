@@ -28,7 +28,7 @@ Cada servidor se instala por separado (normalmente con `uvx`) y se configura con
 |---|---|---|
 | [Claude Code](claude-code.md) | Consultar y modelar grafos Neo4j desde un cliente MCP. (combinación por arquitectura) | Configura el servidor Cypher con un usuario de solo lectura primero. |
 | [graphrag](graphrag.md) | Explorar en Neo4j grafos de conocimiento generados con GraphRAG. (combinación por arquitectura) | Carga el grafo en Neo4j y consúltalo con el servidor Cypher. |
-| [awesome-mcp-servers](awesome-mcp-servers.md) | Comparar con otros servidores de bases de datos. (combinación por arquitectura) | Revisa la sección de bases de datos de la lista. |
+| [Graphiti](graphiti.md) | Combinación recíproca: Graphiti lo enlaza como «Explorar y consultar con un agente el grafo guardado en Neo4j (combinación por arquitectura)». | Orden indicado desde Graphiti: Usa un usuario de solo lectura para el MCP de Neo4j. |
 
 **Notas:** Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos.
 

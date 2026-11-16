@@ -64,6 +64,12 @@
      "id": "cal.diy",
      "motivo": "Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio).",
      "orden_instalacion": "Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty."
+    },
+    {
+     "id": "docuseal",
+     "motivo": "Combinación recíproca: docuseal lo enlaza como «Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde docuseal: Usa un flujo intermedio con el webhook de DocuSeal.",
+     "reciproca_de": "docuseal"
     }
    ],
    "fuentes": [
@@ -245,6 +251,12 @@
      "id": "botpress",
      "motivo": "Botpress Cloud tiene integración con Cal.com para que un bot ofrezca horarios; con cal.diy es [DATO NO VERIFICADO].",
      "orden_instalacion": "Instancia accesible por internet y token de API antes de configurar la integración."
+    },
+    {
+     "id": "compai-crm",
+     "motivo": "Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado.",
+     "reciproca_de": "compai-crm"
     }
    ],
    "fuentes": [
@@ -349,6 +361,24 @@
      "id": "geo-seo-claude",
      "motivo": "Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura).",
      "orden_instalacion": "Después de conectar el MCP de OpenSEO al agente."
+    },
+    {
+     "id": "claude-seo",
+     "motivo": "Combinación recíproca: claude-seo lo enlaza como «Datos de palabras clave y posiciones vía MCP (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde claude-seo: Conecta el MCP de OpenSEO al mismo agente.",
+     "reciproca_de": "claude-seo"
+    },
+    {
+     "id": "cloud-mail",
+     "motivo": "Combinación recíproca: cloud-mail lo enlaza como «Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cloud-mail: Configura el dominio en Cloudflare primero; separa subdominios por servicio.",
+     "reciproca_de": "cloud-mail"
+    },
+    {
+     "id": "marketingskills",
+     "motivo": "Combinación recíproca: Marketing Skills lo enlaza como «Datos SEO vía MCP para las skills de SEO (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marketing Skills: Conecta el MCP de OpenSEO antes de usar las skills de SEO.",
+     "reciproca_de": "marketingskills"
     }
    ],
    "notas": "Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel.",
@@ -384,6 +414,24 @@
      "id": "coolify",
      "motivo": "Ruta de despliegue citada en el README.",
      "orden_instalacion": "Coolify en el servidor; prepara PostgreSQL, Redis y almacenamiento antes del primer arranque."
+    },
+    {
+     "id": "humanizer",
+     "motivo": "Combinación recíproca: Humanizer lo enlaza como «Revisar publicaciones antes de programarlas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Humanizer: Humaniza primero; programa después.",
+     "reciproca_de": "humanizer"
+    },
+    {
+     "id": "instagram-agent-skill",
+     "motivo": "Combinación recíproca: instagram-agent-skill lo enlaza como «Programar las publicaciones aprobadas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde instagram-agent-skill: Aprueba el contenido antes de enviarlo a Postiz.",
+     "reciproca_de": "instagram-agent-skill"
+    },
+    {
+     "id": "linkedin-agent-skill",
+     "motivo": "Combinación recíproca: linkedin-agent-skill lo enlaza como «Programar en LinkedIn las publicaciones aprobadas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde linkedin-agent-skill: Aprueba antes de programar.",
+     "reciproca_de": "linkedin-agent-skill"
     }
    ],
    "fuentes": [

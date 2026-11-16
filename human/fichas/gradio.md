@@ -29,6 +29,8 @@ Requiere Python 3.10+ y se instala con `pip install --upgrade gradio`. Se despli
 | [Transformers](transformers.md) | Demos de modelos de Hugging Face. | Carga el pipeline y envuélvelo en una Interface. |
 | [LLaMA-Factory](llama-factory.md) | Su LlamaBoard está construido con Gradio. | Usa la UI de LlamaFactory. |
 | [Ollama](ollama.md) | Interfaz de chat sobre un modelo local. (combinación por arquitectura) | Llama a la API de Ollama desde ChatInterface. |
+| [rembg](rembg.md) | Combinación recíproca: rembg lo enlaza como «Interfaz web rápida para uso interno. (combinación por arquitectura)». | Orden indicado desde rembg: Envuelve `remove()` en una app Gradio. |
+| [F5-TTS](f5-tts.md) | Combinación recíproca: F5-TTS lo enlaza como «F5-TTS incluye una aplicación web Gradio (`f5-tts_infer-gradio`) para generar voz sin programar». | Orden indicado desde F5-TTS: Instala F5-TTS (incluye Gradio); después ejecuta `f5-tts_infer-gradio`. |
 
 **Notas:** Alternativas (elige una): streamlit.
 
@@ -112,6 +114,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [streamlit](streamlit.md) | 46.4k | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. |
+| [Reflex](reflex.md) | 29k | Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado. |
+| [NiceGUI](nicegui.md) | 16.3k | Framework Python para interfaces web en el navegador con botones, gráficos, mapas, tablas y escenas 3D, útil para paneles, robótica y herramientas internas. |
+| [Panel](panel.md) | 5.8k | Framework de HoloViz para dashboards y apps de datos en Python que funcionan igual en un notebook y como aplicación web servida con `panel serve`. |
 
 ## Enlaces
 

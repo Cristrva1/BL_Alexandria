@@ -30,6 +30,7 @@ Backend NestJS en TypeScript con BullMQ, PostgreSQL y Redis, y frontend en React
 | [activepieces](activepieces.md) | Activepieces tiene una pieza oficial `twenty` para usar twenty-main en flujos. | twenty-main en marcha con sus credenciales; después añade la pieza `twenty` en un flujo de Activepieces. |
 | [evolution-api](evolution-api.md) | Registrar conversaciones de WhatsApp como actividades del CRM con un flujo de Activepieces (pieza oficial de Twenty y webhook de Evolution API) o un servicio intermedio (combinación por arquitectura). | Evolution API y Activepieces primero; después el flujo que escribe en Twenty. |
 | [cal.diy](cal-diy.md) | Crear o actualizar oportunidades cuando alguien reserva una cita (combinación por arquitectura, mediante webhooks y un flujo intermedio). | Configura el webhook de reservas en cal.diy apuntando al flujo que escribe en Twenty. |
+| [docuseal](docuseal.md) | Combinación recíproca: docuseal lo enlaza como «Registrar contratos firmados en las oportunidades del CRM (combinación por arquitectura)». | Orden indicado desde docuseal: Usa un flujo intermedio con el webhook de DocuSeal. |
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada twenty/v2.58.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -99,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI
 - **Etiquetas:** `automation` `crm` `typescript` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [EspoCRM](espocrm.md) | 3.6k | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades y actividades, con API REST y personalización sin código. |
 
 ## Enlaces
 

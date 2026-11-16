@@ -58,6 +58,24 @@
      "id": "strix",
      "motivo": "Combinar análisis estático en CI con pruebas dinámicas por agentes. (combinación por arquitectura)",
      "orden_instalacion": "Pon Semgrep en cada PR y Strix en entornos de prueba."
+    },
+    {
+     "id": "defending-code-reference-harness",
+     "motivo": "Combinación recíproca: Defending Code Reference Harness lo enlaza como «Añadir candidatos deterministas al reconocimiento. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Defending Code Reference Harness: Ejecuta Semgrep y aporta sus hallazgos a la fase de búsqueda.",
+     "reciproca_de": "defending-code-reference-harness"
+    },
+    {
+     "id": "raddebugger",
+     "motivo": "Combinación recíproca: raddebugger lo enlaza como «Encontrar con análisis estático los fallos que luego reproduces en el depurador. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde raddebugger: Ejecuta Semgrep en CI y depura los hallazgos con RAD Debugger.",
+     "reciproca_de": "raddebugger"
+    },
+    {
+     "id": "shannon",
+     "motivo": "Combinación recíproca: shannon lo enlaza como «Análisis estático previo para priorizar rutas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde shannon: Ejecuta Semgrep en el repo antes de la prueba.",
+     "reciproca_de": "shannon"
     }
    ],
    "notas": "Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura.",
@@ -240,6 +258,12 @@
      "id": "semgrep",
      "motivo": "Análisis estático en CI junto a las pruebas dinámicas. (combinación por arquitectura)",
      "orden_instalacion": "Ejecuta ambos en el pipeline de PR."
+    },
+    {
+     "id": "defending-code-reference-harness",
+     "motivo": "Combinación recíproca: Defending Code Reference Harness lo enlaza como «Validar dinámicamente en un entorno de prueba los hallazgos del arnés. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Defending Code Reference Harness: Despliega el objetivo en un entorno aislado y lanza Strix contra él.",
+     "reciproca_de": "defending-code-reference-harness"
     }
    ],
    "notas": "Alternativa (elige una): shannon. Úsalo solo contra sistemas propios o con autorización escrita.",
@@ -318,6 +342,18 @@
      "id": "codex",
      "motivo": "Plugin de Codex disponible.",
      "orden_instalacion": "Ejecuta el setup y elige Codex."
+    },
+    {
+     "id": "awesome-ai-reverse-engineering",
+     "motivo": "Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Listado como herramienta destacada».",
+     "orden_instalacion": "Orden indicado desde awesome-ai-reverse-engineering: Consulta su ficha antes de instalarlo.",
+     "reciproca_de": "awesome-ai-reverse-engineering"
+    },
+    {
+     "id": "awesome-reverse-engineering",
+     "motivo": "Combinación recíproca: awesome-reverse-engineering lo enlaza como «Herramienta destacada por los mismos autores».",
+     "orden_instalacion": "Orden indicado desde awesome-reverse-engineering: Lee la sección de REA y su documentación antes de instalarlo.",
+     "reciproca_de": "awesome-reverse-engineering"
     }
    ],
    "notas": "Sin alternativas declaradas. Revisa qué escribe el setup en la configuración de tu agente. Úsalo solo con software propio o con autorización escrita.",

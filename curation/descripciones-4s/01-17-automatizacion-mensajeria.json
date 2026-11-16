@@ -141,6 +141,12 @@
      "id": "grafana",
      "motivo": "Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales).",
      "orden_instalacion": "Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana."
+    },
+    {
+     "id": "zigbee2mqtt",
+     "motivo": "Combinación recíproca: Zigbee2MQTT lo enlaza como «Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Zigbee2MQTT: Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT.",
+     "reciproca_de": "zigbee2mqtt"
     }
    ],
    "notas": "Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.",
@@ -178,6 +184,12 @@
      "id": "polars",
      "motivo": "Scripts Python de Windmill pueden usar Polars para transformar datos tabulares grandes en los workers, con dependencias resueltas por uv (combinación por arquitectura).",
      "orden_instalacion": "Declara polars como dependencia del script; vigila la memoria del worker con archivos grandes."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Combinación recíproca: coolify lo enlaza como «Plantilla de servicio oficial de Coolify para Windmill».",
+     "orden_instalacion": "Orden indicado desde coolify: Coolify primero; luego despliega la plantilla `windmill`.",
+     "reciproca_de": "coolify"
     }
    ],
    "notas": "Alternativas (elige una): kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.",
@@ -473,6 +485,12 @@
      "id": "openwa",
      "motivo": "Plugin oficial de OpenWA para responder mensajes de WhatsApp con un bot de Typebot.",
      "orden_instalacion": "Typebot publicado y después el plugin en OpenWA."
+    },
+    {
+     "id": "waha",
+     "motivo": "Combinación recíproca: WAHA lo enlaza como «Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde WAHA: Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill.",
+     "reciproca_de": "waha"
     }
    ],
    "notas": "Revisa la FSL antes de ofrecer Typebot como servicio a terceros.",

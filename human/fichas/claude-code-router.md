@@ -29,6 +29,7 @@ Se usa como app de escritorio (Electron) o con `npm install -g @musistudio/claud
 | [Claude Code](claude-code.md) | Cliente principal del router. | Instala CCR y lanza Claude Code a través de él. |
 | [Codex CLI](codex.md) | Cliente soportado según el README. | Configura Codex para usar CCR como proveedor. |
 | [OpenCode](opencode.md) | Cliente soportado según el README. | Apunta OpenCode a la pasarela de CCR. |
+| [claude-code-hooks-mastery](claude-code-hooks-mastery.md) | Combinación recíproca: claude-code-hooks-mastery lo enlaza como «Enrutar Claude Code a otros modelos mientras experimentas con hooks (combinación por arquitectura)». | Orden indicado desde claude-code-hooks-mastery: Independientes. |
 
 **Notas:** Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic.
 

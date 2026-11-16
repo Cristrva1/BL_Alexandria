@@ -29,6 +29,8 @@ Se instala con `brew install lightpanda-io/browser/lightpanda`, binario o `docke
 | [Puppeteer](puppeteer.md) | Cliente CDP documentado. | Arranca el servidor CDP y conecta Puppeteer. |
 | [playwright](playwright.md) | Cliente CDP. | Usa connectOverCDP. |
 | [Stagehand](stagehand.md) | SDK de agentes sobre un navegador ligero. (combinación por arquitectura) | Conecta por CDP si es compatible. |
+| [agent-browser](agent-browser.md) | Combinación recíproca: agent-browser lo enlaza como «Navegador headless ligero vía CDP. (combinación por arquitectura)». | Orden indicado desde agent-browser: Evalúa la compatibilidad CDP. |
+| [awesome-chrome-devtools](awesome-chrome-devtools.md) | Combinación recíproca: awesome-chrome-devtools lo enlaza como «Navegador con servidor CDP. (combinación por arquitectura)». | Orden indicado desde awesome-chrome-devtools: Evalúalo como backend. |
 
 **Notas:** Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto.
 

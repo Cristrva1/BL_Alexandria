@@ -29,6 +29,15 @@ Se compila con CMake o make y se descargan modelos ggml (por ejemplo `make -j la
 | [FFmpeg](ffmpeg.md) | Convertir audio a WAV de 16 kHz. | Convierte el audio con FFmpeg antes. |
 | [llama.cpp](llama-cpp.md) | Mismo ecosistema ggml: voz a texto y luego LLM local. (combinación por arquitectura) | Encadena la transcripción con llama.cpp. |
 | [Pipecat](pipecat.md) | STT local en agentes de voz. (combinación por arquitectura) | Expón el servidor de whisper.cpp al pipeline. |
+| [dograh](dograh.md) | Combinación recíproca: dograh lo enlaza como «STT autoalojado. (combinación por arquitectura)». | Orden indicado desde dograh: Configura un STT propio. |
+| [Kokoro](kokoro.md) | Combinación recíproca: Kokoro lo enlaza como «STT local para un ciclo voz a voz. (combinación por arquitectura)». | Orden indicado desde Kokoro: Combina en el mismo pipeline. |
+| [LiveKit Agents](livekit-agents.md) | Combinación recíproca: LiveKit Agents lo enlaza como «STT local. (combinación por arquitectura)». | Orden indicado desde LiveKit Agents: Expón el servidor y úsalo como STT. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Audacity](audacity.md) · [rnnoise](rnnoise.md) · [Shotcut](shotcut.md)
 
 **Notas:** Alternativas (elige una): faster-whisper, whisper.
 

@@ -29,6 +29,7 @@ Se instala con `npm install @heroui/styles @heroui/react`, con importaciones por
 | [tailwindcss](tailwindcss.md) | Motor de estilos requerido (Tailwind CSS v4). | Configura Tailwind v4 antes de instalar HeroUI. |
 | [Claude Code](claude-code.md) | Componentes y tema accesibles para el asistente mediante el servidor MCP `@heroui/react-mcp`. | Instala HeroUI y registra su servidor MCP en Claude Code. |
 | [swr](swr.md) | Carga de datos para los componentes. (combinación por arquitectura) | Añade swr y usa sus hooks en las vistas. |
+| [echarts](echarts.md) | Combinación recíproca: echarts lo enlaza como «Paneles con componentes HeroUI y gráficos ECharts. (combinación por arquitectura)». | Orden indicado desde echarts: Envuelve el gráfico en un componente de tarjeta. |
 
 **Notas:** Alternativas (elige una): mui.
 

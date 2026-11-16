@@ -14,11 +14,11 @@
 
 ## ¿Qué es?
 
-tools, entrada interna del hub BL_Alexandria que representa sus utilidades auxiliares de mantenimiento, no un proyecto externo. No tiene repositorio en GitHub ni licencia propia. En el repositorio actual estas utilidades están en `src/repo_intelligence/tools/` y `tools_check/`; no hay una carpeta `tools/` en la raíz.
+tools, entrada interna del hub BL_Alexandria que representa sus utilidades auxiliares de mantenimiento, no un proyecto externo. No tiene repositorio en GitHub ni licencia propia. En el repositorio actual estas utilidades están en `src/repo_intelligence/tools/`; no hay una carpeta `tools/` en la raíz.
 
 ## ¿Qué hace?
 
-Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `tools_check/` verifica las guías heredadas que quedan en `guias/` (`check_guias.py`) y reconcilia los JSON con su contenido (`reconcile_json.py`); `Guia.md` lo genera `repo-intelligence guide build`.
+Los envoltorios de `src/repo_intelligence/tools/` llaman a herramientas externas para el análisis de repos: `crawl4ai_docs.py` (Crawl4AI para obtener Markdown de una URL), `markitdown_runner.py` (MarkItDown, con copia del README como respaldo), `repomix_runner.py` (empaqueta un repo con Repomix) y `gitnexus_runner.py` (`gitnexus analyze`). `Guia.md` y las fichas los genera `repo-intelligence guide build` desde el índice; las guías heredadas escritas a mano y sus scripts de verificación se retiraron el 2026-11-16.
 
 ## ¿Cómo lo hace?
 
@@ -32,10 +32,11 @@ Son scripts Python del propio repo que se ejecutan con `uv run` dentro del entor
 | [markitdown](markitdown.md) | Envoltorio `markitdown_runner.py` (CLI markitdown). | Instala la CLI markitdown. |
 | [Repomix](repomix.md) | Envoltorio `repomix_runner.py`. | Instala repomix (npm). |
 | [GitNexus](gitnexus.md) | Envoltorio `gitnexus_runner.py`. | Instala la CLI gitnexus. |
+| [Guía (histórica)](guia.md) | Combinación recíproca: Guía (histórica) lo enlaza como «Utilidades internas del hub que alimentan y verifican el índice del que se genera la guía». | Orden indicado desde Guía (histórica): Ambas vienen con el repositorio; no requieren instalación. |
 
 **Notas:** Entrada local (categoría 0), excluida del recuento de cobertura. La ficha describía una carpeta `tools/` que ya no existe; se documentan las ubicaciones reales.
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Cristrva1/BL_Alexandria/tree/main/src/repo_intelligence/tools) · [2](https://github.com/Cristrva1/BL_Alexandria/tree/main/tools_check)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Cristrva1/BL_Alexandria/tree/main/src/repo_intelligence/tools)</sub>
 
 ## Acceso, coste y equipo
 

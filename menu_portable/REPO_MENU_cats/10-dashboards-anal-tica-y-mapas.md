@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Muestra un gráfico con tres categorías y cambia un valor
 **Qué comprobar:** El gráfico se actualiza y conserva etiquetas y leyenda
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `awesome-dataviz`, `tailwindcss`, `duckdb`
+**Combina con:** `tailwindcss`, `duckdb`, `supabase`
 **Alternativas (elige una):** `echarts`, `recharts`
 
 ## `d3`
@@ -125,6 +125,36 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `marimo`, `metabase`
 
+## `deck.gl`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,typescript,library,maps
+
+**Qué es:** Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/visgl/deck.gl
+
+**Instalación** [+]:
+
+```
+npm install deck.gl
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo.
+**Qué comprobar:** El mapa muestra los puntos y permite seleccionar uno con el ratón.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `maplibre`, `kepler.gl`, `superset`, `jupyterlab`, `panel`
+
 ## `echarts`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=dataviz,typescript
 
@@ -153,8 +183,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una serie de ventas y añade una segunda para comparar
 **Qué comprobar:** La leyenda distingue ambas series y el tooltip muestra valores correctos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `metabase`, `superset`, `heroui`
+**Combina con:** `metabase`, `superset`, `heroui`, `ant-design`, `awesome-dataviz`, `dash`
 **Alternativas (elige una):** `d3`, `chart-js`, `recharts`
+
+## `evidence`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,analytics,typescript,app
+
+**Qué es:** BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados en Evidence Studio.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/evidence-dev/evidence
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/evidence-dev/evidence/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Evidence con el script del README, crea un proyecto de ejemplo y abre el servidor local.
+**Qué comprobar:** Ves un informe con gráficos generados a partir de las consultas SQL del Markdown.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `claude-code`, `supabase`
 
 ## `gods-eye-view`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=osint,app,javascript
@@ -220,6 +280,129 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El panel coincide con la consulta y cambia al ajustar el periodo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langfuse`, `supabase`, `umami`
+
+## `kepler.gl`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,typescript,app,maps
+
+**Qué es:** Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/keplergl/kepler.gl
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/keplergl/kepler.gl/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud.
+**Qué comprobar:** El mapa crea capas automáticamente y permite filtrar por tiempo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `deck.gl`, `maplibre`, `jupyterlab`, `claude-code`
+
+## `leaflet`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,javascript,library,maps
+
+**Qué es:** Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Leaflet/Leaflet
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Leaflet/Leaflet/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea una página HTML con Leaflet desde CDN, un mapa de OpenStreetMap y un marcador.
+**Qué comprobar:** El mapa se desplaza y amplía y el marcador muestra su popup al hacer clic.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `webodm`, `qgis`, `claude-code`, `nicegui`
+**Alternativas (elige una):** `maplibre`
+
+## `maigret`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=osint,python,cli,security
+
+**Qué es:** Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/soxoj/maigret
+
+**Instalación** [+]:
+
+```
+pip install maigret
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar la huella pública de un alias propio; investigaciones OSINT autorizadas que requieren un informe consolidado
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `pip install maigret` (Python 3.10+) y busca un alias propio con salida HTML.
+**Qué comprobar:** Se genera un informe HTML con los perfiles encontrados y los datos extraídos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `theharvester`, `claude-code`, `duckdb`
+**Alternativas (elige una):** `sherlock`
+
+## `maplibre`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,typescript,library,maps
+
+**Qué es:** Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.
+**Stack:** TypeScript, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/maplibre/maplibre-gl-js
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/maplibre/maplibre-gl-js/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea una página con MapLibre desde unpkg y el estilo de demostración de MapLibre.
+**Qué comprobar:** El mapa vectorial se carga, rota e inclina con el ratón.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `deck.gl`, `kepler.gl`, `qgis`
+**Alternativas (elige una):** `leaflet`
 
 ## `matomo`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=analytics,php
@@ -407,7 +590,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra un evento ficticio y construye un embudo de dos pasos en un proyecto de prueba
 **Qué comprobar:** Puedes ver cada evento y cómo se calcula el embudo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `activepieces`, `metabase`
+**Combina con:** `claude-code`, `activepieces`, `metabase`, `claude-seo`, `marketingskills`, `mautic`
 
 ## `pythia`
 role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=osint,typescript
@@ -439,7 +622,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Consulta un resumen del estado observado y separa los eventos de los escenarios generados
 **Qué comprobar:** Cada evento tiene origen y los escenarios se identifican como hipótesis
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `osiris`, `mirofish`, `ollama`, `claude-code`
+**Combina con:** `osiris`, `mirofish`, `ollama`, `claude-code`, `gods-eye-view`
+
+## `qgis`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,cpp,app,maps
+
+**Qué es:** Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server.
+**Stack:** C++, CMakeLists.txt, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/qgis/QGIS
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/qgis/QGIS/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala QGIS, carga una capa GeoJSON y un mapa base, y exporta un mapa en PDF.
+**Qué comprobar:** El PDF contiene el mapa con la capa estilizada, leyenda y escala.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `leaflet`, `maplibre`, `webodm`, `duckdb`
 
 ## `recharts`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=dataviz,react,typescript
@@ -470,8 +683,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja una línea con cinco valores y comprueba etiquetas y tooltip
 **Qué comprobar:** Los puntos corresponden a los datos y el gráfico cabe en móvil
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`, `d3`, `tailwindcss`
+**Combina con:** `ui`, `d3`, `tailwindcss`, `mui`, `mantine`
 **Alternativas (elige una):** `chart-js`, `echarts`
+
+## `recon-ng`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=osint,python,security,cli
+
+**Qué es:** Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit.
+**Stack:** Python, Dockerfile, docker-compose.yml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/lanmaster53/recon-ng
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/lanmaster53/recon-ng/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala las dependencias del README, crea un espacio de trabajo e instala un módulo pasivo del marketplace.
+**Qué comprobar:** El módulo se ejecuta y sus resultados aparecen en la tabla correspondiente del espacio de trabajo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `theharvester`, `duckdb`, `claude-code`
 
 ## `redash`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=analytics,dataviz,typescript
@@ -504,6 +747,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `supabase`, `activepieces`
 **Alternativas (elige una):** `metabase`, `superset`
 
+## `sherlock`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=osint,python,cli,security
+
+**Qué es:** CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/sherlock-project/sherlock
+
+**Instalación** [+]:
+
+```
+pipx install sherlock-project
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: comprobar dónde está registrado un nombre de usuario propio o de tu marca; iniciar una investigación OSINT autorizada a partir de un alias
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `pipx install sherlock-project` y busca un nombre de usuario propio.
+**Qué comprobar:** La salida lista las URL de los perfiles encontrados y guarda un archivo de resultados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `theharvester`, `claude-code`, `duckdb`
+**Alternativas (elige una):** `maigret`
+
 ## `superset`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=analytics,dataviz,python,docker
 
@@ -532,8 +806,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta una tabla de ventas ficticias y crea un gráfico por mes
 **Qué comprobar:** El gráfico coincide con una suma SQL verificable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `wrenai`, `echarts`
+**Combina con:** `duckdb`, `wrenai`, `echarts`, `hudi`, `kestra`, `deck.gl`
 **Alternativas (elige una):** `metabase`, `redash`
+
+## `theharvester`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=osint,python,security,cli
+
+**Qué es:** Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadores, certificados y fuentes públicas.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/laramies/theHarvester
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/laramies/theHarvester/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio.
+**Qué comprobar:** La terminal informa del resultado de cada fuente y lista subdominios encontrados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sherlock`, `maigret`, `katana`, `recon-ng`
 
 ## `umami`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=analytics,typescript,docker
@@ -626,7 +930,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento
 **Qué comprobar:** Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `blender`, `three.js`, `marimo`
+**Combina con:** `blender`, `three.js`, `marimo`, `leaflet`, `qgis`
 
 ## `wrenai`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=analytics,data,agents,python

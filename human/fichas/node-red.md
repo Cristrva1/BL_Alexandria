@@ -29,6 +29,7 @@ Es una aplicación Node.js: se instala con `npm install -g node-red`, se lanza c
 | [Home Assistant](home-assistant.md) | El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar. | Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED. |
 | [Ollama](ollama.md) | El nodo comunitario `node-red-contrib-ollama` llama a modelos locales desde un flujo, por ejemplo para clasificar mensajes de sensores o de chat. | Ollama primero con el modelo descargado; luego el nodo desde la paleta. |
 | [Grafana](grafana.md) | Node-RED recoge y transforma datos de sensores o APIs y Grafana los grafica en paneles (combinación por arquitectura, normalmente a través de una base de series temporales). | Primero la base de datos intermedia, luego Node-RED escribiendo en ella y por último Grafana. |
+| [Zigbee2MQTT](zigbee2mqtt.md) | Combinación recíproca: Zigbee2MQTT lo enlaza como «Node-RED se suscribe a los topics MQTT de Zigbee2MQTT para crear automatizaciones por flujos (combinación por arquitectura)». | Orden indicado desde Zigbee2MQTT: Broker MQTT primero; después crea nodos MQTT en Node-RED con los topics de Zigbee2MQTT. |
 
 **Notas:** Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción.
 

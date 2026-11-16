@@ -31,6 +31,12 @@ Se instala con `pip install whisperx`. La diarización requiere aceptar las cond
 | [MoviePy](moviepy.md) | Subtítulos con marcas por palabra. (combinación por arquitectura) | Genera SRT y móntalo. |
 | [pyannote.audio](pyannote-audio.md) | WhisperX usa pyannote-audio para la diarización (etiquetas de hablante). | Acepta las condiciones del modelo de pyannote en Hugging Face y pasa el token con `--hf_token`. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Fish Speech](fish-speech.md) · [GPT-SoVITS](gpt-sovits.md) · [HyperFrames](hyperframes.md) · [IndexTTS](index-tts.md) · [LosslessCut](lossless-cut.md) · [OpenCut](opencut.md) · [srt-whiteboard-animation](srt-whiteboard-animation.md) · [VoiceStudio](omnivoice-studio.md) · [yt-dlp](yt-dlp.md)
+
 **Notas:** Alternativas (elige una): nemo.
 
 Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v3.8.6 (2026-05-25) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).

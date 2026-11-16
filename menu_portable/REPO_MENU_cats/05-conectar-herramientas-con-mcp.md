@@ -93,6 +93,36 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `awesome-mcp-clients`, `servers`, `mcp-use`
 
+## `aws-mcp`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=mcp,python,cloud,aws
+
+**Qué es:** Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/awslabs/mcp
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/awslabs/mcp/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: consultar la documentación actualizada de AWS desde tu agente de código; revisar y generar plantillas de CloudFormation o CDK con validación de seguridad
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Configura el servidor de documentación de AWS con uvx en tu cliente MCP y pregunta por un servicio concreto.
+**Qué comprobar:** El agente devuelve fragmentos de la documentación oficial con su enlace.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `mcp-inspector`
+
 ## `blender-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,design,python
 
@@ -122,7 +152,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea un cubo y cambia su material en una escena vacía
 **Qué comprobar:** Puedes ver el objeto y el material en Blender
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `blender`, `unity-mcp`
+**Combina con:** `claude-code`, `blender`, `unity-mcp`, `blender-skills`, `dream-loop`, `chatdev`
 
 ## `chrome-devtools-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript
@@ -152,7 +182,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre tu app local y pide revisar errores de consola y una petición de red
 **Qué comprobar:** El informe identifica el error y la petición que puedes reproducir
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `gemini-cli`, `mcp-inspector`
+**Combina con:** `claude-code`, `gemini-cli`, `mcp-inspector`, `puppeteer`, `agent-browser`, `awesome-chrome-devtools`
 **Alternativas (elige una):** `playwright-mcp`, `browser-harness`
 
 ## `context7`
@@ -244,7 +274,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Solicita los datos de un frame pequeño y compara dimensiones y textos con Figma
 **Qué comprobar:** El agente obtiene información del frame correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `ui`, `tailwindcss`
+**Combina con:** `claude-code`, `ui`, `tailwindcss`, `design-dna`
 
 ## `ghidramcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,java
@@ -274,7 +304,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un programa de prueba y pide enumerar funciones sin modificar el análisis
 **Qué comprobar:** Obtienes nombres y ubicaciones verificables en Ghidra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ghidra`, `claude-code`, `angr`
+**Combina con:** `ghidra`, `claude-code`, `angr`, `awesome-ai-reverse-engineering`
 
 ## `github-mcp-server`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,code,go
@@ -304,7 +334,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lista archivos y lee un README de un repositorio público antes de habilitar herramientas de escritura
 **Qué comprobar:** El agente devuelve contenidos y enlaces del repositorio elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `strix`
+**Combina con:** `claude-code`, `codex`, `strix`, `agentes-chat`, `awesome-copilot`, `cli`
 
 ## `mcp`
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp
@@ -334,7 +364,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servidor oficial Google y consulta su autenticación antes de desplegar
 **Qué comprobar:** Distingues servicio gestionado, ejemplo y despliegue en Cloud Run
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `gemini-cli`, `servers`, `mcp-use`
+**Combina con:** `gemini-cli`, `mcp-use`, `mcp-inspector`
 
 ## `mcp-for-beginners`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp,learning
@@ -364,7 +394,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Lee la introducción y completa un ejercicio de herramienta con entrada y salida pequeñas
 **Qué comprobar:** Puedes explicar el papel del host, cliente y servidor
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-python-sdk`, `fastmcp`, `mcp-inspector`
+**Combina con:** `mcp-python-sdk`, `fastmcp`, `mcp-inspector`, `ai-agents-for-beginners`, `generative-ai-for-beginners`
 
 ## `mcp-inspector`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=mcp,evaluation,typescript
@@ -424,7 +454,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta el esquema de un grafo ficticio y revisa una consulta Cypher de lectura
 **Qué comprobar:** Obtienes etiquetas y relaciones que coinciden con la base de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `graphrag`, `awesome-mcp-servers`
+**Combina con:** `claude-code`, `graphrag`, `graphiti`
 **Alternativas (elige una):** `neo4j-mcp`
 
 ## `mcp-python-sdk`
@@ -455,8 +485,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Implementa el servidor add del ejemplo y comprueba su esquema con Inspector
 **Qué comprobar:** Una llamada con dos enteros devuelve su suma
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-inspector`, `pydantic-ai`, `claude-code`
+**Combina con:** `mcp-inspector`, `pydantic-ai`, `claude-code`, `mcp-for-beginners`
 **Alternativas (elige una):** `fastmcp`
+
+## `mcp-toolbox`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=mcp,go,data,database
+
+**Qué es:** Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/googleapis/mcp-toolbox
+
+**Instalación** [+]:
+
+```
+brew install mcp-toolbox
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: consultar y explorar el esquema de una base PostgreSQL desde tu agente de código; dar a un agente en producción consultas parametrizadas en lugar de SQL libre
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Prepara un tools.yaml contra una base de prueba, arranca el servidor y regístralo en tu cliente MCP.
+**Qué comprobar:** El cliente lista las herramientas y una consulta de solo lectura devuelve filas de la base de prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `gemini-cli`, `codex`, `langchain`, `llama-index`
 
 ## `mcp-typescript-sdk`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,typescript
@@ -517,7 +577,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una app MCP de ejemplo y prueba su herramienta desde el inspector incluido
 **Qué comprobar:** Puedes ver una respuesta y la interfaz asociada si el cliente admite MCP Apps
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `awesome-mcp-servers`, `mcp`
+**Combina con:** `claude-code`, `awesome-mcp-servers`, `mcp`, `servers`
 **Alternativas (elige una):** `mcp-typescript-sdk`
 
 ## `neo4j-mcp`
@@ -640,7 +700,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide localizar una función por símbolo y enumera sus referencias antes de editar
 **Qué comprobar:** El agente identifica la definición y usos reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `context7`
+**Combina con:** `claude-code`, `codex`, `context7`, `superclaude-framework`
 **Alternativas (elige una):** `codegraph`, `gitnexus`, `codebase-memory-mcp`, `graphify`
 
 ## `servers`
@@ -671,7 +731,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios
 **Qué comprobar:** Entiendes qué herramientas expone y qué datos puede modificar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-inspector`, `mcp-use`, `awesome-mcp-servers`
+**Combina con:** `mcp-inspector`, `mcp-use`, `awesome-mcp-servers`, `opendots`
 
 ## `unity-mcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,c
@@ -701,4 +761,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** En un proyecto vacío pide crear un cubo en el origen con un Rigidbody
 **Qué comprobar:** El cubo aparece y puedes inspeccionar el componente en Unity
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `blender`
+**Combina con:** `claude-code`, `codex`, `blender`, `blender-mcp`

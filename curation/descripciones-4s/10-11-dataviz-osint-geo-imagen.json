@@ -45,11 +45,6 @@
    "como_lo_hace": "Se instala con `npm install chart.js` o desde CDN y dibuja en un elemento `<canvas>`. Tiene envoltorios de la comunidad para React, Vue y otros frameworks.",
    "combina_con": [
     {
-     "id": "awesome-dataviz",
-     "motivo": "Comparar con otras librerías de gráficos. (combinación por arquitectura)",
-     "orden_instalacion": "Revisa la lista antes de elegir."
-    },
-    {
      "id": "tailwindcss",
      "motivo": "Integrar los gráficos con el tema visual de la app. (combinación por arquitectura)",
      "orden_instalacion": "Pasa los colores del tema a la configuración."
@@ -58,6 +53,11 @@
      "id": "duckdb",
      "motivo": "Agregar datos (incluso en el navegador con DuckDB-WASM) antes de dibujarlos. (combinación por arquitectura)",
      "orden_instalacion": "Consulta con DuckDB y pasa el resultado al dataset."
+    },
+    {
+     "id": "supabase",
+     "motivo": "Leer los datos desde la API de Supabase y dibujarlos en el cliente con Chart.js (combinación por arquitectura).",
+     "orden_instalacion": "Supabase con la tabla y sus políticas de acceso primero; después la página que consulta y pinta el `<canvas>`."
     }
    ],
    "notas": "Alternativas (elige una): echarts, recharts.",
@@ -94,6 +94,24 @@
      "id": "heroui",
      "motivo": "Paneles con componentes HeroUI y gráficos ECharts. (combinación por arquitectura)",
      "orden_instalacion": "Envuelve el gráfico en un componente de tarjeta."
+    },
+    {
+     "id": "ant-design",
+     "motivo": "Combinación recíproca: Ant Design lo enlaza como «Gráficos avanzados en paneles de administración junto a las tablas y formularios de antd. (combinación por arquitectura); el ecosistema oficial ofrece Ant Design Charts como opción integrada».",
+     "orden_instalacion": "Orden indicado desde Ant Design: Instala echarts y su envoltorio para React; úsalo en componentes Card o layouts de antd.",
+     "reciproca_de": "ant-design"
+    },
+    {
+     "id": "awesome-dataviz",
+     "motivo": "Combinación recíproca: awesome-dataviz lo enlaza como «Una de las librerías destacadas de la lista. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde awesome-dataviz: Compara alternativas en la lista antes de elegir.",
+     "reciproca_de": "awesome-dataviz"
+    },
+    {
+     "id": "dash",
+     "motivo": "Combinación recíproca: dash lo enlaza como «Gráficos alternativos mediante componentes comunitarios. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde dash: Integra el componente correspondiente.",
+     "reciproca_de": "dash"
     }
    ],
    "notas": "Alternativas (elige una): d3, chart-js, recharts.",
@@ -273,6 +291,12 @@
      "id": "claude-code",
      "motivo": "Servidor MCP documentado en el README.",
      "orden_instalacion": "Ejecuta `claude mcp add pythia …`."
+    },
+    {
+     "id": "gods-eye-view",
+     "motivo": "Combinación recíproca: gods-eye-view lo enlaza como «Contrastar las predicciones de PYTHIA con las capas en vivo. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde gods-eye-view: Usa ambos sobre la misma región.",
+     "reciproca_de": "gods-eye-view"
     }
    ],
    "notas": "Sin alternativas declaradas. Las predicciones de LLM no son análisis de inteligencia verificados.",
@@ -379,6 +403,18 @@
      "id": "marimo",
      "motivo": "Analizar ortomosaicos y DEM exportados. (combinación por arquitectura)",
      "orden_instalacion": "Abre los GeoTIFF en un notebook."
+    },
+    {
+     "id": "leaflet",
+     "motivo": "Combinación recíproca: Leaflet lo enlaza como «WebODM muestra ortofotos y modelos en su interfaz con mapas Leaflet; los mosaicos generados se pueden publicar como capa en una web propia (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Leaflet: Procesa las imágenes en WebODM; después publica las teselas y añádelas como capa en Leaflet.",
+     "reciproca_de": "leaflet"
+    },
+    {
+     "id": "qgis",
+     "motivo": "Combinación recíproca: QGIS lo enlaza como «Las ortofotos y modelos de elevación generados con WebODM se analizan en QGIS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde QGIS: Procesa las imágenes en WebODM; después descarga los GeoTIFF y ábrelos en QGIS.",
+     "reciproca_de": "qgis"
     }
    ],
    "notas": "Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM.",
@@ -451,6 +487,24 @@
      "id": "rembg",
      "motivo": "Recortar el retrato restaurado. (combinación por arquitectura)",
      "orden_instalacion": "Restaura con CodeFormer y quita el fondo con rembg."
+    },
+    {
+     "id": "deep-live-cam",
+     "motivo": "Combinación recíproca: Deep-Live-Cam lo enlaza como «Restaurar rostros en vídeo procesado offline. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Deep-Live-Cam: Aplica sobre los fotogramas.",
+     "reciproca_de": "deep-live-cam"
+    },
+    {
+     "id": "upscayl",
+     "motivo": "Combinación recíproca: Upscayl lo enlaza como «Para retratos, CodeFormer restaura rostros antes o después de ampliar la imagen con Upscayl (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Upscayl: Restaura con CodeFormer; después amplía con Upscayl y compara.",
+     "reciproca_de": "upscayl"
+    },
+    {
+     "id": "chainner",
+     "motivo": "Combinación recíproca: chaiNNer lo enlaza como «Los modelos de restauración facial que soporta chaiNNer (vía spandrel) se encadenan con el escalado; CodeFormer sirve para comparar resultados en retratos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde chaiNNer: Restaura con CodeFormer o un modelo facial compatible; después escala en chaiNNer.",
+     "reciproca_de": "chainner"
     }
    ],
    "notas": "Sin alternativas declaradas. Licencia no comercial.",
@@ -486,6 +540,12 @@
      "id": "gradio",
      "motivo": "Interfaz web rápida para uso interno. (combinación por arquitectura)",
      "orden_instalacion": "Envuelve `remove()` en una app Gradio."
+    },
+    {
+     "id": "codeformer",
+     "motivo": "Combinación recíproca: CodeFormer lo enlaza como «Recortar el retrato restaurado. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CodeFormer: Restaura con CodeFormer y quita el fondo con rembg.",
+     "reciproca_de": "codeformer"
     }
    ],
    "notas": "Sin alternativas declaradas.",

@@ -29,6 +29,7 @@ Se instala con `uv tool install claude-monitor` o `pip install claude-monitor` y
 | [Claude Code](claude-code.md) | Lee los datos locales y la statusline de Claude Code. | Instala el monitor y ejecútalo junto a tus sesiones. |
 | [rtk](rtk.md) | Medir el efecto de reducir salidas de terminal. (combinación por arquitectura) | Compara el consumo antes y después de activar rtk. |
 | [headroom](headroom.md) | Medir el ahorro de compresión de contexto. (combinación por arquitectura) | Compara el consumo con y sin `headroom wrap claude`. |
+| [claude-token-efficient](claude-token-efficient.md) | Comprobar el efecto de un `CLAUDE.md` que pide respuestas concisas, cuyo README advierte que también añade tokens de entrada (combinación por arquitectura). | Mide antes y después de añadir el archivo al proyecto. |
 
 **Notas:** Sin alternativas declaradas. Los límites por plan son estimaciones si no hay datos oficiales.
 

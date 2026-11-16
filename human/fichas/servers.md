@@ -29,6 +29,7 @@ Cada servidor se ejecuta con `npx` (TypeScript) o `uvx` (Python) desde la config
 | [MCP Inspector](mcp-inspector.md) | Probar los servidores de referencia, sobre todo Everything, que existe para ejercitar clientes. (combinación por arquitectura) | Lanza el Inspector contra el servidor elegido. |
 | [mcp-use](mcp-use.md) | Tomar los servidores como ejemplo al construir uno propio. (combinación por arquitectura) | Estudia el servidor parecido y construye el tuyo con mcp-use. |
 | [awesome-mcp-servers](awesome-mcp-servers.md) | Encontrar servidores de la comunidad más allá de las referencias. (combinación por arquitectura) | Consulta también el MCP Registry oficial. |
+| [OpenDots](opendots.md) | Combinación recíproca: OpenDots lo enlaza como «Servidores MCP de referencia como herramientas. (combinación por arquitectura)». | Orden indicado desde OpenDots: Añade los MCP por Dot. |
 
 **Notas:** Sin alternativas declaradas. No son para producción, según el propio README.
 
