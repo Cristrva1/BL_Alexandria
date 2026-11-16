@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 67.3k | NOASSERTION | C | 2026-06-24 |
+| 67.3k | LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later) | C | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 2 Intermedio — instalación simple, pero se usa con opciones de línea de comandos · corregido a mano
 
 **Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later). Fuente: [LICENSE](https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -72,10 +74,10 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 - archivo de video propio
 - espacio de salida
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.
 2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://ffmpeg.org/download.html)
 

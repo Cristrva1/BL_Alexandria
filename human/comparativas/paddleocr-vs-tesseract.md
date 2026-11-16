@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Instalación | `python -m pip install paddleocr` | `brew install tesseract` |
 
 ## Regla práctica
 

@@ -48,13 +48,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=personal,t
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/actualbudget/actual
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/actualbudget/actual/blob/master/README.md
+docker compose up --detach
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -79,13 +79,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=priv
 - Equipo: Preparación según la ruta elegida. Equipo servidor; acceso de configuración DNS; cliente de prueba
 **Repo:** https://github.com/AdguardTeam/AdGuardHome
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md
+curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -110,13 +110,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/FiloSottile/age
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/FiloSottile/age/blob/main/README.md
+brew install age
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: cifrar un backup antes de subirlo; claves age para SOPS
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -170,13 +170,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,app,
 - Equipo: Preparación según la ruta elegida. Instalador de escritorio para tu sistema; espacio local; cuenta según ruta
 **Repo:** https://github.com/anyproto/anytype-ts
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/anyproto/anytype-ts/blob/develop/README.md
+git clone https://github.com/anyproto/anytype-ts.git && cd anytype-ts
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -262,13 +262,13 @@ role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=idp,s
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/goauthentik/authentik
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/goauthentik/authentik/blob/main/README.md
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: SSO delante de apps autoalojadas; MFA centralizado para el lab
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -293,13 +293,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=privacidad
 - Equipo: Preparación según la ruta elegida. Cliente oficial de tu sistema; cuenta y servidor elegido; bóveda de prueba
 **Repo:** https://github.com/bitwarden/clients
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://bitwarden.com/download/
+git clone https://github.com/bitwarden/clients.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -386,13 +386,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=personal
 - Equipo: Preparación según la ruta elegida. TV propia Android/Google TV; misma red; ADB autorizado; Python; JDK 17–22 y Android SDK para launcher
 **Repo:** https://github.com/Gathin23/cleanyourtv
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Gathin23/cleanyourtv/blob/main/README.md
+git clone https://github.com/Gathin23/cleanyourtv
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar apps preinstaladas de una TV propia; Planificar un launcher sin perder funciones necesarias
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -446,13 +446,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=per
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/firefly-iii/firefly-iii
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/firefly-iii/firefly-iii/blob/main/readme.md
+docker compose -f docker-compose.yml up -d --pull=always
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -477,13 +477,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=visi
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/blakeblackshear/frigate
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/blakeblackshear/frigate/blob/dev/README.md
+docker pull ghcr.io/blakeblackshear/frigate:stable
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -507,13 +507,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=per
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/ghostfolio/ghostfolio
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ghostfolio/ghostfolio/blob/main/README.md
+docker compose -f docker/docker-compose.yml up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -598,13 +598,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=self-
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/jellyfin/jellyfin
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/jellyfin/jellyfin/blob/master/README.md
+git clone https://github.com/jellyfin/jellyfin.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: organizar y ver tu videoteca en TV, móvil y navegador; compartir una biblioteca multimedia con la familia sin cuentas en la nube
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -689,13 +689,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=not
 - Equipo: Preparación según la ruta elegida. Docker; volumen persistente; modelo solo para etiquetado AI
 **Repo:** https://github.com/karakeep-app/karakeep
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.karakeep.com/Installation/docker
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -750,13 +750,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/keepassxreboot/keepassxc
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/keepassxreboot/keepassxc/blob/develop/README.md
+git clone https://github.com/keepassxreboot/keepassxc.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -842,13 +842,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notas,cloj
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/logseq/logseq
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/logseq/logseq/blob/master/README.md
+curl -fsSL https://raw.githubusercontent.com/logseq/logseq/master/scripts/install-linux.sh | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -873,13 +873,13 @@ role=platform · exec=local · setup=easy · mcp=True · prov=— · tags=notas,
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/usememos/memos
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/usememos/memos/blob/main/README.md
+docker run -d --name memos -p 5230:5230 -v ~/.memos:/var/opt/memos neosmemo/memos:stable
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -1269,13 +1269,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=priva
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/pi-hole/pi-hole
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/pi-hole/pi-hole/blob/master/README.md
+curl -sSL https://install.pi-hole.net | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -1300,13 +1300,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=notas,typ
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/siyuan-note/siyuan
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/siyuan-note/siyuan/blob/master/README.md
+docker run -d -v workspace_dir_host:workspace_dir_container -p 6806:6806 -e PUID=1001 -e PGID=1002 b3log/siyuan serve --workspace=workspace_dir_container --accessAuthCode="${AuthCode:?Set AuthCode}"
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -1391,13 +1391,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=notas,typ
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/TriliumNext/Trilium
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/TriliumNext/Trilium/blob/main/README.md
+git clone https://github.com/TriliumNext/Trilium.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -1482,13 +1482,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=priv
 - Equipo: Preparación según la ruta elegida. Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia
 **Repo:** https://github.com/dani-garcia/vaultwarden
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/dani-garcia/vaultwarden/blob/main/README.md
+docker pull vaultwarden/server:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

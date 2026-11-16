@@ -537,7 +537,7 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 
 - `chainner` [A|loc|M|?] — Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversi — tags: image,python,app,local
-- `codeformer` [L|loc|M|?] — Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. — tags: image,vision,python
+- `codeformer` [L|loc|M|+] — Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. — tags: image,vision,python
 - `comfyui` [R|loc|H|+] — Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. — tags: image,python — alt: wan2gp
 - `diffusers` [L|loc|H|+] — Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. — tags: image,python
 - `flux2` [R|loc|H|+] — Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágene — tags: image,python — prov: local
@@ -545,7 +545,7 @@ Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 - `krita-ai-diffusion` [A|loc|M|?] — Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. — tags: image,design,python — prov: local — alt: invokeai
 - `real-esrgan` [R|loc|M|+] — Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible gene — tags: image,python
 - `rembg` [L|loc|E|+] — Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. — tags: image,python
-- `upscayl` [A|loc|E|?] — Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux — tags: image,typescript,app,local
+- `upscayl` [A|loc|E|+] — Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux — tags: image,typescript,app,local
 
 ### 12. Editar, grabar y generar video (19)
 Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
@@ -555,20 +555,20 @@ Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 - `davinci-resolve-mcp` [R|loc|M|+] — Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render — tags: video,mcp,agents,python — prov: mcp
 - `ffmpeg` [A|loc|E|?] — Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier forma — tags: video,audio,automation,cpp
 - `handbrake` [A|loc|E|?] — Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo — tags: video,c,app
-- `hunyuanvideo` [R|loc|H|?] — Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de infere — tags: video,inference,local,python — prov: local — alt: wan2-2,hunyuanvideo-1-5
-- `hunyuanvideo-1-5` [R|hyb|H|?] — Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de  — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,wan2-2
+- `hunyuanvideo` [R|loc|H|+] — Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de infere — tags: video,inference,local,python — prov: local — alt: wan2-2,hunyuanvideo-1-5
+- `hunyuanvideo-1-5` [R|hyb|H|+] — Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de  — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,wan2-2
 - `kdenlive` [A|loc|E|?] — Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por — tags: video,cpp,app,edicion — alt: shotcut,opencut
 - `lossless-cut` [A|loc|E|?] — App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. — tags: video,audio,ui,typescript
-- `ltx-2` [R|loc|H|?] — Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera víde — tags: video,python,model,local
+- `ltx-2` [R|loc|H|+] — Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera víde — tags: video,python,model,local
 - `moneyprinterturbo` [A|hyb|M|+] — App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música e — tags: video,automation,tts,python — prov: openai,anthropic,google,local — alt: openmontage,videofy-minimal,short-video-factory
 - `obs-studio` [A|loc|E|?] — App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio e — tags: video,audio,ui,cpp
 - `opencut` [A|hyb|M|?] — Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescr — tags: video,ui,typescript,rust — alt: shotcut,kdenlive
-- `openrv` [A|loc|E|?] — Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. — tags: edicion,app,c
+- `openrv` [A|loc|E|+] — Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. — tags: edicion,app,c
 - `short-video-factory` [A|hyb|M|?] — Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. — tags: generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux — alt: moneyprinterturbo
 - `shotcut` [A|loc|E|?] — Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de fo — tags: video,cpp,app,edicion — alt: kdenlive,opencut
 - `videolingo` [A|hyb|M|+] — App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores config — tags: video,stt,tts,python — prov: openai — alt: omnivoice-studio
 - `wan2-2` [R|loc|H|+] — Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y li — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,hunyuanvideo-1-5
-- `wan2gp` [A|loc|H|?] — App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modes — tags: video,image,tts,local,python — prov: local,mcp — alt: comfyui
+- `wan2gp` [A|loc|H|+] — App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modes — tags: video,image,tts,local,python — prov: local,mcp — alt: comfyui
 
 ### 13. PDF, OCR y procesamiento de documentos (22)
 Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
@@ -576,24 +576,24 @@ Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 - `docling` [L|loc|E|+] — Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. — tags: docs,pdf,ocr,python — alt: marker,mineru,unstructured,olmocr
 - `docuseal` [P|loc|H|+] — Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegu — tags: pdf,server,ruby
 - `marker` [L|loc|E|+] — Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. — tags: docs,pdf,python — alt: docling,mineru,pdf-craft
-- `markitdown` [L|loc|E|?] — Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, a — tags: docs,python
+- `markitdown` [L|loc|E|+] — Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, a — tags: docs,python
 - `mineru` [A|loc|M|+] — Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes. — tags: docs,pdf,ocr,python — alt: docling,marker
-- `ocrmypdf` [A|loc|E|?] — Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. — tags: ocr,pdf,python
+- `ocrmypdf` [A|loc|E|+] — Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. — tags: ocr,pdf,python
 - `olmocr` [A|loc|H|+] — Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. — tags: ocr,pdf,python — prov: local — alt: paddleocr,docling,unlimited-ocr
-- `paddleocr` [L|loc|M|?] — Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. — tags: ocr,docs,python — alt: tesseract,olmocr,unlimited-ocr
+- `paddleocr` [L|loc|M|+] — Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. — tags: ocr,docs,python — alt: tesseract,olmocr,unlimited-ocr
 - `pandoc` [A|loc|E|?] — Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y decenas de formatos. — tags: docs
-- `paperless-ngx` [P|loc|H|?] — Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. — tags: gestion,server,python
+- `paperless-ngx` [P|loc|H|+] — Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. — tags: gestion,server,python
 - `pdf-craft` [L|hyb|M|+] — Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamien — tags: ocr,library,python — prov: local — alt: marker
 - `pdf-inspector` [L|loc|E|+] — Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. — tags: pdf,docs,rust
-- `pdfcraft` [A|loc|E|?] — Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y co — tags: pdf,typescript — alt: stirling-pdf
+- `pdfcraft` [A|loc|E|+] — Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y co — tags: pdf,typescript — alt: stirling-pdf
 - `pdfding` [A|loc|E|?] — Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lec — tags: pdf,docker
 - `pdfmathtranslate` [A|hyb|E|+] — Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. — tags: pdf,docs,python — prov: openai,google,local
 - `stirling-pdf` [A|loc|E|+] — Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. — tags: pdf,docker — alt: pdfcraft
 - `surya` [R|loc|M|+] — OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de  — tags: ocr,python,pdf,model
-- `tesseract` [A|loc|E|?] — Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idio — tags: ocr,cpp — alt: paddleocr
-- `tika` [P|hyb|M|?] — Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown  — tags: docs,java,pdf,server — alt: xberg,unstructured
+- `tesseract` [A|loc|E|+] — Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idio — tags: ocr,cpp — alt: paddleocr
+- `tika` [P|hyb|M|+] — Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown  — tags: docs,java,pdf,server — alt: xberg,unstructured
 - `unlimited-ocr` [L|loc|H|+] — Modelo de Baidu para parsear documentos largos de una sola pasada con visión. — tags: ocr,docs,python — alt: olmocr,paddleocr
-- `unstructured` [L|hyb|M|?] — ETL open source que transforma documentos complejos en datos estructurados para LLM. — tags: docs,data,python — alt: docling,xberg,tika
+- `unstructured` [L|hyb|M|+] — ETL open source que transforma documentos complejos en datos estructurados para LLM. — tags: docs,data,python — alt: docling,xberg,tika
 - `xberg` [L|hyb|E|+] — Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcri — tags: docs,rust,pdf,mcp — alt: tika,unstructured
 
 ### 14. Investigar finanzas y mercados (23)
@@ -604,16 +604,16 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `binance-trader` [A|cld|M|?] — Bot experimental de Python para estudiar estrategias y automatización con la API de Binance. — tags: finanzas,arbitrage,binance,bitcoin,btc,cryptocurrency,trade,python
 - `ccxt` [L|loc|M|+] — Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. — tags: bots,library,python
 - `daily-stock-analysis` [A|cld|M|+] — Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario. — tags: analytics,agents,python — prov: openai,google
-- `dexter` [A|cld|M|?] — Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. — tags: finanzas,typescript
+- `dexter` [A|cld|M|+] — Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. — tags: finanzas,typescript
 - `finceptterminal` [A|hyb|H|?] — Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. — tags: finanzas,ai-agents,algorithmic-trading,bloomberg-terminal,cpp,finance,financial-markets,fintech
-- `fingpt` [R|hyb|H|?] — Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis  — tags: finanzas,python,model,training
+- `fingpt` [R|hyb|H|+] — Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis  — tags: finanzas,python,model,training
 - `finrl` [L|loc|H|+] — Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. — tags: cuant,framework,jupyter-notebook — prov: local
-- `freqtrade` [A|loc|M|?] — Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simu — tags: bots,app,python
+- `freqtrade` [A|loc|M|+] — Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simu — tags: bots,app,python
 - `hummingbot` [A|loc|M|+] — Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias config — tags: bots,app,python
 - `lumibot` [L|loc|M|+] — Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con b — tags: cuant,framework,python
-- `machine-learning-for-trading` [D|hyb|H|?] — Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,artificial-intelligence,backtesting,data-science,deep-learning,finance,investment
+- `machine-learning-for-trading` [D|hyb|H|+] — Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,artificial-intelligence,backtesting,data-science,deep-learning,finance,investment
 - `nautilus-trader` [L|loc|M|+] — Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. — tags: cuant,framework,rust
-- `open-sol-bot` [P|hyb|H|?] — Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. — tags: finanzas,blockchain,solana,telegram-bot,trader,transaction,python
+- `open-sol-bot` [P|hyb|H|+] — Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. — tags: finanzas,blockchain,solana,telegram-bot,trader,transaction,python
 - `openbb` [L|loc|E|+] — Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a  — tags: finanzas,python,data,mcp
 - `py-sdk` [L|loc|M|+] — SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondi — tags: bots,library,python
 - `qlib` [P|loc|H|+] — Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,auto-quant,deep-learning,finance,fintech,investment,machine-learning
@@ -627,34 +627,34 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 
 - `40-questions` [D|loc|E|?] — Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones pe — tags: personal,reference
-- `actual` [A|loc|E|?] — App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos — tags: personal,typescript,self-hosted,finance — alt: firefly-iii
-- `adguardhome` [P|loc|H|?] — Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración centr — tags: privacidad,server,typescript — alt: pi-hole
-- `age` [A|loc|E|?] — Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. — tags: security
+- `actual` [A|loc|E|+] — App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos — tags: personal,typescript,self-hosted,finance — alt: firefly-iii
+- `adguardhome` [P|loc|H|+] — Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración centr — tags: privacidad,server,typescript — alt: pi-hole
+- `age` [A|loc|E|+] — Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. — tags: security
 - `ai-job-search` [S|loc|M|?] — Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de e — tags: personal,skill,python
-- `anytype-ts` [A|loc|E|?] — Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento pers — tags: notas,app,typescript — alt: appflowy
+- `anytype-ts` [A|loc|E|+] — Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento pers — tags: notas,app,typescript — alt: appflowy
 - `appflowy` [A|hyb|E|?] — Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento  — tags: notas,app,dart — alt: anytype-ts
 - `audiobookshelf` [P|loc|H|?] — Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reprodu — tags: lectura,server,javascript
-- `authentik` [P|loc|-|?] — IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. — tags: idp,sso — alt: keycloak
-- `bitwarden-clients` [A|loc|E|?] — Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información co — tags: privacidad,app,typescript
+- `authentik` [P|loc|-|+] — IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. — tags: idp,sso — alt: keycloak
+- `bitwarden-clients` [A|loc|E|+] — Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información co — tags: privacidad,app,typescript
 - `calibre-web` [P|loc|E|+] — Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuari — tags: self-hosted,python,server,reading — alt: kavita
 - `claude-obsidian` [S|loc|M|+] — Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsi — tags: notas,skill,python — alt: obsidian-second-brain
-- `cleanyourtv` [A|loc|M|?] — Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante  — tags: personal,app,python
+- `cleanyourtv` [A|loc|M|+] — Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante  — tags: personal,app,python
 - `esphome` [A|loc|M|?] — Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlar — tags: automation,python,iot,cpp
-- `firefly-iii` [P|loc|M|?] — Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y  — tags: personal,php,self-hosted,finance — alt: actual
-- `frigate` [P|loc|H|?] — Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado — tags: vision,python,docker,self-hosted
-- `ghostfolio` [P|loc|M|?] — Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimient — tags: personal,typescript,self-hosted,finance
+- `firefly-iii` [P|loc|M|+] — Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y  — tags: personal,php,self-hosted,finance — alt: actual
+- `frigate` [P|loc|H|+] — Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado — tags: vision,python,docker,self-hosted
+- `ghostfolio` [P|loc|M|+] — Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimient — tags: personal,typescript,self-hosted,finance
 - `home-assistant` [P|loc|H|?] — Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. — tags: domotica,server,python
 - `immich` [P|loc|M|?] — Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática d — tags: self-hosted,typescript,docker,image — alt: photoprism
-- `jellyfin` [P|loc|E|?] — Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alt — tags: self-hosted,csharp,video,server
+- `jellyfin` [P|loc|E|+] — Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alt — tags: self-hosted,csharp,video,server
 - `joplin` [A|loc|E|?] — App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extrem — tags: notas,typescript,app — alt: trilium,siyuan,logseq
 - `jsoncanvas` [D|loc|E|?] — Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. — tags: notas,reference,javascript
-- `karakeep` [P|hyb|H|?] — Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación median — tags: notas,server,typescript
+- `karakeep` [P|hyb|H|+] — Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación median — tags: notas,server,typescript
 - `kavita` [P|loc|E|?] — Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y met — tags: self-hosted,csharp,server,reading — alt: calibre-web
-- `keepassxc` [A|loc|E|?] — Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. — tags: security — alt: vaultwarden
+- `keepassxc` [A|loc|E|+] — Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. — tags: security — alt: vaultwarden
 - `kepano-obsidian` [L|loc|M|?] — Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. — tags: notas,template,reference
 - `keycloak` [P|loc|-|?] — IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. — tags: idp,sso — alt: authentik
-- `logseq` [A|loc|E|?] — Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consult — tags: notas,clojure,app,local — alt: joplin,trilium,siyuan
-- `memos` [P|loc|E|?] — App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, AP — tags: notas,go,self-hosted,mcp
+- `logseq` [A|loc|E|+] — Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consult — tags: notas,clojure,app,local — alt: joplin,trilium,siyuan
+- `memos` [P|loc|E|+] — App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, AP — tags: notas,go,self-hosted,mcp
 - `nextcloud-server` [P|hyb|H|?] — Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. — tags: workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
 - `obsidian-clipper` [A|loc|E|?] — Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian. — tags: notas,app,typescript
 - `obsidian-help` [D|loc|E|?] — Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda. — tags: notas,reference,javascript
@@ -667,14 +667,14 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `openmaic` [A|hyb|M|+] — Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configura — tags: aprendizaje,agent,typescript — prov: local
 - `optimizerduck` [A|loc|E|?] — Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows — tags: personal,app,c
 - `photoprism` [P|loc|M|?] — App de fotos con IA y privacidad primero para explorar, organizar y compartir fotos y vídeos, autoalojada o en — tags: self-hosted,go,docker,image — alt: immich
-- `pi-hole` [P|loc|E|?] — Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con p — tags: privacy,self-hosted,shell,server — alt: adguardhome
-- `siyuan` [A|hyb|E|?] — Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQ — tags: notas,typescript,self-hosted,app — alt: joplin,trilium,logseq
+- `pi-hole` [P|loc|E|+] — Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con p — tags: privacy,self-hosted,shell,server — alt: adguardhome
+- `siyuan` [A|hyb|E|+] — Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQ — tags: notas,typescript,self-hosted,app — alt: joplin,trilium,logseq
 - `sops` [A|loc|E|?] — Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS; integrado en flujos CI. — tags: security
 - `syncthing` [A|loc|E|?] — Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. — tags: archivos,app,go
-- `trilium` [A|hyb|E|?] — App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y se — tags: notas,typescript,app,self-hosted — alt: joplin,siyuan,logseq
+- `trilium` [A|hyb|E|+] — App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y se — tags: notas,typescript,app,self-hosted — alt: joplin,siyuan,logseq
 - `universal-android-debloater-next-generation` [A|loc|M|?] — Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplica — tags: personal,app,rust
 - `vault` [P|loc|-|?] — Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open sou — tags: security
-- `vaultwarden` [P|loc|H|?] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
+- `vaultwarden` [P|loc|H|+] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
 - `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable  — tags: automation,typescript,iot,self-hosted
 
 ### 16. Analizar software y comprobar su seguridad (113)

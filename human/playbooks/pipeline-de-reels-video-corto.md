@@ -37,7 +37,7 @@ flowchart LR
 | 3 | [ComfyUI](../fichas/comfyui.md) | Genera imágenes o b-roll con modelos de difusión | 147k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 4 | [Real-ESRGAN](../fichas/real-esrgan.md) | Escala y limpia las imágenes antes del montaje | 37.5k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 5 | [remotion](../fichas/remotion.md) | Ensambla el video con plantillas en React | 73.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 6 | [FFmpeg](../fichas/ffmpeg.md) | Render final, formatos y compresión | 67.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 6 | [FFmpeg](../fichas/ffmpeg.md) | Render final, formatos y compresión | 67.3k | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 | 7 | [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | Atajo todo-en-uno: tema → video corto automático | 144k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta

@@ -31,7 +31,7 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [markitdown](../fichas/markitdown.md) | Convierte Office, HTML y PDF simples a Markdown | 195k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 1 | [markitdown](../fichas/markitdown.md) | Convierte Office, HTML y PDF simples a Markdown | 195k | `pip install 'markitdown[all]'` |
 | 2 | [Docling](../fichas/docling.md) | Para PDFs complejos: tablas, layout y OCR | 70.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 3 | [ppt-master](../fichas/ppt-master.md) | Genera PowerPoint nativo y editable con IA | 76.8k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 | 4 | [Slidev](../fichas/slidev.md) | Slides web desde Markdown para presentaciones técnicas | 49.5k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |

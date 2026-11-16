@@ -48,13 +48,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=imag
 - Equipo: Preparación según la ruta elegida. Python y entorno indicado; PyTorch; pesos; imagen propia de prueba
 **Repo:** https://github.com/sczhou/CodeFormer
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/sczhou/CodeFormer/blob/master/README.md
+git clone https://github.com/sczhou/CodeFormer
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -304,13 +304,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=image,type
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/upscayl/upscayl
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/upscayl/upscayl/blob/main/README.md
+brew install --cask upscayl
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales

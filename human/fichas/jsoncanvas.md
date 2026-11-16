@@ -68,7 +68,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Lee el esquema y crea un lienzo de dos notas conectadas usando una app compatible.
 2. Comprueba: Puedes abrir el archivo y reconocer nodos y conexión en JSON.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/obsidianmd/jsoncanvas/blob/main/readme.md)
 

@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 96.6k | NOASSERTION | TypeScript | 2026-11-10 |
+| 96.6k | MIT + licencia propietaria (app/proprietary/, app/saas/) | TypeScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + licencia propietaria (app/proprietary/, app/saas/). Fuente: [LICENSE](https://github.com/Stirling-Tools/Stirling-PDF/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

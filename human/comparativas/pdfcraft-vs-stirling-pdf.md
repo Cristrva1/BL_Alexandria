@@ -13,8 +13,8 @@
 | Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
-| Licencia | AGPL-3.0 | NOASSERTION |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| Licencia | AGPL-3.0 | MIT + licencia propietaria (app/proprietary/, app/saas/) |
+| Instalación | `docker pull ghcr.io/pdfcrafttool/pdfcraft:latest` | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
