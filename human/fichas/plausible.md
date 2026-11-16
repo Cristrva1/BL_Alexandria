@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Plausible Analytics, analítica web ligera y sin cookies hecha y alojada en la UE. Plausible CE es AGPL-3.0 o posterior y el script de seguimiento es MIT. Es madura (~30k estrellas, v3.2.1).
+
+## ¿Qué hace?
+
+Mide visitas, fuentes, páginas, objetivos y eventos con un panel simple y un script muy ligero, cumpliendo GDPR, CCPA y PECR. Envía informes por email o Slack y ofrece API de estadísticas. La versión de pago incluye funciones premium (embudos, ingresos de ecommerce, SSO) que no están en CE.
+
+## ¿Cómo lo hace?
+
+Se usa como servicio de pago en plausible.io o se autoaloja Plausible Community Edition con Docker (Elixir/Phoenix con PostgreSQL y ClickHouse). Se integra añadiendo el script al sitio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [n8n](n8n.md) | Automatizar informes con la Stats API. (combinación por arquitectura) | Consulta la API desde el nodo HTTP Request. |
+| [Grafana](grafana.md) | Paneles propios sobre la API o la base ClickHouse de CE. (combinación por arquitectura) | Conecta Grafana a ClickHouse en una instancia CE. |
+| [supabase](supabase.md) | Analítica sin cookies para apps alojadas sobre Supabase. (combinación por arquitectura) | Añade el script de Plausible al frontend. |
+
+**Notas:** Alternativas (elige una): umami, matomo.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.2.1 (2026-05-15) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/plausible/analytics/blob/master/README.md) · [2](https://plausible.io/docs/stats-api)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Para self-hosting sigue el repositorio Community Edition enlazado, no asumas que clonar analytics completa el despliegue |
 | Coste | El coste depende del proveedor o la ruta. Cloud cobra suscripción; Community Edition requiere infraestructura; la analítica básica no necesita LLM |
 | Equipo | Preparación según la ruta elegida. Cuenta Cloud o servidor CE; web propia para el script |
-
-Para self-hosting sigue el repositorio Community Edition enlazado, no asumas que clonar analytics completa el despliegue
-
-## Qué puedes hacer con él
-
-Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada.
-
-## Por qué destaca
-
-Usos propuestos: Medir una web de contenido; Comparar conversiones de una landing.
-
-## Cómo funciona
 
 Para self-hosting sigue el repositorio Community Edition enlazado, no asumas que clonar analytics completa el despliegue
 

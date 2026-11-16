@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Grafana, plataforma open source de visualización y observabilidad de Grafana Labs. Licencia AGPL-3.0-only con excepciones Apache-2.0. Es muy madura (~78k estrellas, v13.3.1).
+
+## ¿Qué hace?
+
+Consulta, visualiza y alerta sobre métricas, logs y trazas estén donde estén, con paneles dinámicos y variables. Permite explorar datos ad hoc, alertas unificadas y mezclar fuentes en un mismo panel. Se amplía con plugins de fuentes de datos y paneles.
+
+## ¿Cómo lo hace?
+
+Se instala con paquetes, Docker o Helm, o se usa en Grafana Cloud. Está escrito en Go y TypeScript y usa SQLite, MySQL o PostgreSQL para su configuración.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langfuse](langfuse.md) | Paneles operativos sobre métricas de apps LLM. (combinación por arquitectura) | Expón métricas de Langfuse a una fuente compatible y crea paneles. |
+| [supabase](supabase.md) | Fuente PostgreSQL nativa para paneles sobre Supabase. | Añade la conexión Postgres de Supabase como fuente. |
+| [Umami](umami.md) | Panel sobre la base PostgreSQL de Umami. (combinación por arquitectura) | Añade la base de Umami como fuente. |
+
+**Notas:** Sin alternativas declaradas. AGPL: ofrecerlo modificado como servicio obliga a publicar cambios.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v13.3.1 (2026-11-10) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/grafana/grafana/blob/main/README.md) · [2](https://grafana.com/docs/grafana/latest/datasources/postgres/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas |
 | Coste | El coste depende del proveedor o la ruta. El dashboard básico no usa LLM; Cloud, Enterprise, almacenamiento y fuentes tienen planes y consumo propios |
 | Equipo | Preparación según la ruta elegida. Servidor o cuenta Cloud; fuente de métricas; permisos de consulta |
-
-Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas
-
-## Qué puedes hacer con él
-
-Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes.
-
-## Por qué destaca
-
-Usos propuestos: Observar consumo de un servicio; Compartir métricas de una operación.
-
-## Cómo funciona
 
 Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Servidor o cuenta Cloud; fuente de métricas; permisos de consulta
 - **Etiquetas:** `observability` `dataviz` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Enlaces
 

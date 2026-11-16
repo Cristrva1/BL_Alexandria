@@ -62,7 +62,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Autentica tu cuenta y consulta el estado de una pull request de un repositorio de prueba
 **Qué comprobar:** Ves el estado que coincide con la interfaz de GitHub
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `github-mcp-server`
+**Combina con:** `claude-code`, `github-mcp-server`, `n8n`
 
 ## `codebase-memory-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=code,mcp,memory
@@ -186,6 +186,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Explora un formulario local, guarda evidencia y exporta un recorrido para repetirlo
 **Qué comprobar:** El replay comprueba acciones y estados del recorrido observado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `playwright`, `browser-use`, `claude-code`
 
 ## `floorplan`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=codigo,skill,javascript
@@ -313,7 +314,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Envía una petición breve de ejemplo y revisa respuesta y uso informado
 **Qué comprobar:** Obtienes la salida del endpoint y puedes localizar el consumo del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `langchain`
+**Combina con:** `litellm`, `vllm`, `langchain`
 
 ## `repomix`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=code,coding-agent,typescript

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+DSH QA, plugin orquestador de QA de terceros para DeepSeek Harness (DSH, el framework de plugins de deepseek-ai), de @ZSeven-W. Licencia MIT. Es muy pequeño y temprano (~12 estrellas; 0.1.0-rc.2 en npm desde septiembre de 2026).
+
+## ¿Qué hace?
+
+Un agente explora la aplicación como un usuario real con hallazgos respaldados por evidencia, y el recorrido explorado se exporta como escenario de Replay determinista para cada release. Usa drivers para navegador, escritorio macOS, iOS y Android, y genera informes JSON/Markdown/JSONL con datos sensibles redactados. Hereda las salvaguardas de los drivers: rechaza campos seguros y acciones de confirmación externa.
+
+## ¿Cómo lo hace?
+
+Se instala con npm (`@zseven-w/dsh-qa` y los drivers necesarios) y requiere Node.js 24.11+. Se carga como plugin del host DSH (`@deepseek-ai/dsh`) o como servidor MCP stdio independiente. El README documenta limitaciones y huecos conocidos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [playwright](playwright.md) | Automatización de navegador para comparar o complementar los escenarios de Replay. (combinación por arquitectura) | Usa DSH QA para explorar y Playwright para la suite estable. |
+| [browser-use](browser-use.md) | Exploración agéntica de webs como alternativa o complemento. (combinación por arquitectura) | Compara hallazgos de ambos sobre la misma app. |
+| [Claude Code](claude-code.md) | Cargar el servidor MCP stdio desde un cliente MCP. (combinación por arquitectura) | Configura `src/server.mjs` como servidor MCP. |
+
+**Notas:** Sin alternativas declaradas. Pregunta de pertenencia al catálogo: proyecto con muy poca adopción y en prerelease.
+
+Estado en GitHub: activo · último push 2026-09-24 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ZSeven-W/dsh-qa/blob/main/README.md) · [2](https://registry.npmjs.org/@zseven-w/dsh-qa) · [3](https://github.com/deepseek-ai/deepseek-harness)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Documenta servidor MCP stdio independiente; requiere configurar drivers y permisos y no hereda todos los hooks o superficies de DSH en otros clientes |
 | Coste | Consumo del agente que ya utilizas. La exploración usa el agente DSH; replay y drivers consumen recursos; los drivers de escritorio o dispositivos tienen requisitos adicionales |
 | Equipo | Preparación según la ruta elegida. DeepSeek Harness; Node >=24.11; driver de navegador; app de prueba |
-
-Documenta servidor MCP stdio independiente; requiere configurar drivers y permisos y no hereda todos los hooks o superficies de DSH en otros clientes
-
-## Qué puedes hacer con él
-
-Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles.
-
-## Por qué destaca
-
-Usos propuestos: Repetir una prueba de registro en desarrollo; Guardar evidencia de un fallo de interfaz.
-
-## Cómo funciona
 
 Documenta servidor MCP stdio independiente; requiere configurar drivers y permisos y no hereda todos los hooks o superficies de DSH en otros clientes
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Umami, plataforma open source de analítica web y de producto centrada en la privacidad, de Umami Software. Licencia MIT. Es madura (~40k estrellas, v3.5.0).
+
+## ¿Qué hace?
+
+Mide adquisición, comportamiento, conversión y retención sin cookies, con eventos personalizados, embudos y paneles compartibles. Se puede autoalojar o usar en Umami Cloud. Ofrece una API para consultar y enviar datos.
+
+## ¿Cómo lo hace?
+
+Es una app Next.js que requiere Node.js 20.19+ (22 LTS recomendado) y PostgreSQL 12.14+. Se instala desde el código con pnpm o con Docker Compose, que incluye la base de datos. Se añade un script de seguimiento al sitio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [metabase](metabase.md) | Consultar con SQL la base PostgreSQL de Umami para informes a medida. (combinación por arquitectura) | Conecta Metabase a la base de Umami en solo lectura. |
+| [Grafana](grafana.md) | Paneles operativos sobre los datos de Umami en PostgreSQL. (combinación por arquitectura) | Añade la fuente PostgreSQL en Grafana. |
+| [n8n](n8n.md) | Automatizar informes con la API de Umami. (combinación por arquitectura) | Llama a la API desde el nodo HTTP Request. |
+
+**Notas:** Alternativas (elige una): plausible, matomo.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.5.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/umami-software/umami/blob/master/README.md) · [2](https://umami.is/docs) · [3](https://umami.is/docs/api)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Configura DATABASE_URL y APP_SECRET antes de build; cambia la contraseña inicial cuando lo solicite |
 | Coste | El coste depende del proveedor o la ruta. La analítica básica no exige IA; hosting, base de datos y Umami Cloud pueden costar |
 | Equipo | Preparación según la ruta elegida. Node >=20.19; pnpm; PostgreSQL >=12.14; configuración .env |
-
-Configura DATABASE_URL y APP_SECRET antes de build; cambia la contraseña inicial cuando lo solicite
-
-## Qué puedes hacer con él
-
-Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics.
-
-## Por qué destaca
-
-Usos propuestos: Medir visitas de una web; Comparar campañas mediante eventos propios.
-
-## Cómo funciona
 
 Configura DATABASE_URL y APP_SECRET antes de build; cambia la contraseña inicial cuando lo solicite
 

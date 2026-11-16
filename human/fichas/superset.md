@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Apache Superset, aplicación web de BI de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~76k estrellas, 6.1.0).
+
+## ¿Qué hace?
+
+Permite explorar datos sin código o con un IDE SQL, crear gráficos y paneles interactivos y compartirlos. Se conecta a casi cualquier base SQL mediante SQLAlchemy y tiene capa semántica ligera, caché y control de acceso. Ofrece API REST y un framework de extensiones.
+
+## ¿Cómo lo hace?
+
+Se prueba con Docker Compose y se despliega en producción con Kubernetes (Helm) o pip. Está escrito en Python (Flask) con frontend React y requiere una base de metadatos y un driver por cada fuente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | DuckDB y MotherDuck son bases soportadas en la documentación. | Instala el driver de DuckDB y añade la conexión. |
+| [WrenAI](wrenai.md) | Capa semántica y text-to-SQL para agentes junto a paneles de Superset. (combinación por arquitectura) | Modela en WrenAI y visualiza en Superset. |
+| [echarts](echarts.md) | Superset usa ECharts en muchas visualizaciones. (combinación por arquitectura) | No requiere instalación aparte. |
+
+**Notas:** Alternativas (elige una): metabase, redash.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 6.1.0 (2026-05-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/apache/superset/blob/master/README.md) · [2](https://superset.apache.org/user-docs/databases/supported/duckdb)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Instala el driver de la base elegida y usa credenciales de lectura para la primera prueba |
 | Coste | Sin pago a un modelo en la ruta básica. El BI básico no necesita modelo; servidor, base y consultas pueden generar gasto |
 | Equipo | Preparación según la ruta elegida. Entorno del quickstart; motor SQL; driver de conexión; datos ficticios |
-
-Instala el driver de la base elegida y usa credenciales de lectura para la primera prueba
-
-## Qué puedes hacer con él
-
-Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau.
-
-## Por qué destaca
-
-Usos propuestos: Explorar métricas de una base SQL; Compartir un dashboard interno.
-
-## Cómo funciona
 
 Instala el driver de la base elegida y usa credenciales de lectura para la primera prueba
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Entorno del quickstart; motor SQL; driver de conexión; datos ficticios
 - **Etiquetas:** `analytics` `dataviz` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
-| [WrenAI](wrenai.md) | 18.2k | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. |
 
 ## Alternativas (elige una)
 

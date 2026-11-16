@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+SDK oficial de OpenAI para Python. Licencia Apache-2.0. Es madura y muy activa (~32k estrellas, v3.51.0) y se genera a partir de la especificación OpenAPI de OpenAI.
+
+## ¿Qué hace?
+
+Da acceso tipado a la API REST de OpenAI (Responses, Chat Completions, embeddings, imágenes, audio, archivos, Realtime, etc.) con clientes síncronos y asíncronos. Incluye streaming, paginación automática, reintentos, timeouts y webhooks. También admite Azure OpenAI y Bedrock mediante extras.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install openai` y requiere Python 3.10+. Usa HTTPX2 por defecto y `aiohttp` opcionalmente (`openai[aiohttp]`). Se configura con `OPENAI_API_KEY` y puede apuntar a otro endpoint compatible con `base_url`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | El proxy LiteLLM se consume con el SDK de OpenAI cambiando `base_url`. | Arranca el proxy y crea el cliente con su URL y clave. |
+| [vLLM](vllm.md) | vLLM expone un servidor compatible con OpenAI que se usa con este SDK. | Lanza `vllm serve` y apunta `base_url` a `/v1`. |
+| [langchain](langchain.md) | `langchain-openai` se construye sobre este SDK. | Instala `langchain-openai` y configura la clave. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v3.51.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/openai-python/blob/main/README.md) · [2](https://docs.litellm.ai/docs/proxy/user_keys) · [3](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html) · [4](https://python.langchain.com/docs/integrations/chat/openai/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales |
 | Coste | Consumo de APIs o servicios. La ruta OpenAI usa API y facturación de plataforma; la suscripción de Codex o ChatGPT no debe suponerse crédito para este SDK |
 | Equipo | Preparación según la ruta elegida. Python 3.10+; entorno virtual; clave de proyecto API |
-
-Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales
-
-## Qué puedes hacer con él
-
-SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API.
-
-## Por qué destaca
-
-Usos propuestos: Integrar respuestas de IA en una app Python; Procesar audio o imágenes desde código.
-
-## Cómo funciona
 
 Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales
 
@@ -94,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10+; entorno virtual; clave de proyecto API
 - **Etiquetas:** `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
 ## Enlaces
 

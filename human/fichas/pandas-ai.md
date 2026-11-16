@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+PandasAI, librería de Python para conversar con tus datos en lenguaje natural, de Sinaptik AI. Es MIT salvo `pandasai/ee` (GitHub muestra NOASSERTION). Tiene ~24k estrellas (v3.0.0), pero su último cambio es de octubre de 2025.
+
+## ¿Qué hace?
+
+Permite hacer preguntas sobre DataFrames, CSV, Parquet y bases SQL y obtener respuestas, tablas o gráficos. Genera y ejecuta código para responder, y admite varios DataFrames a la vez. Puede ejecutar el código en un sandbox Docker.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install pandasai pandasai-litellm` y requiere Python 3.8–3.11. Usa LiteLLM para conectar con distintos proveedores. Como ejecuta código generado por LLM, conviene usar el sandbox (`pandasai-docker`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Conexión con modelos mediante el paquete `pandasai-litellm`. | Instala ambos paquetes y configura el modelo. |
+| [DuckDB](duckdb.md) | Consultar archivos analíticos grandes. (combinación por arquitectura) | Carga los datos con DuckDB y pásalos a PandasAI. |
+| [streamlit](streamlit.md) | Interfaz web sencilla para preguntar a los datos. (combinación por arquitectura) | Envuelve las llamadas a PandasAI en una app Streamlit. |
+
+**Notas:** Alternativas (elige una): wrenai. Sin cambios en más de un año; requiere Python ≤3.11.
+
+Estado en GitHub: activo · último push 2025-10-28 · última versión publicada v3.0.0 (2025-10-07) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sinaptik-ai/pandas-ai/blob/main/README.md) · [2](https://docs.pandas-ai.com/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Puede generar y ejecutar código de análisis; prueba datos ficticios y revisa resultados antes de usar información real |
 | Coste | El coste depende del proveedor o la ruta. El ejemplo usa OpenAI mediante LiteLLM y consume API; proveedor y sandbox tienen condiciones propias; no se confirma aquí una ruta local completa |
 | Equipo | Preparación según la ruta elegida. Python >=3.8 y <=3.11 según README; datos ficticios; LLM configurado |
-
-Puede generar y ejecutar código de análisis; prueba datos ficticios y revisa resultados antes de usar información real
-
-## Qué puedes hacer con él
-
-Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM.
-
-## Por qué destaca
-
-Usos propuestos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta.
-
-## Cómo funciona
 
 Puede generar y ejecutar código de análisis; prueba datos ficticios y revisa resultados antes de usar información real
 
@@ -94,12 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python >=3.8 y <=3.11 según README; datos ficticios; LLM configurado
 - **Etiquetas:** `analytics` `data` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 
 ## Alternativas (elige una)
 

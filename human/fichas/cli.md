@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+GitHub CLI (`gh`), la herramienta oficial de GitHub para la terminal. Licencia MIT. Es madura y muy activa (~47k estrellas, v2.104.0).
+
+## ¿Qué hace?
+
+Lleva a la terminal pull requests, issues, releases, Actions, repos, gists y la API de GitHub (`gh api`), además de extensiones de la comunidad. Funciona con GitHub.com, Enterprise Cloud y las versiones soportadas de Enterprise Server. Es la vía habitual con la que los agentes de programación operan sobre GitHub.
+
+## ¿Cómo lo hace?
+
+Es un binario en Go para macOS, Windows y Linux, instalable con Homebrew, winget, paquetes de distribución o desde las releases. Se autentica con `gh auth login` (navegador o token). La clave PGP de los repositorios de paquetes de Linux rotó el 5 de septiembre de 2026; si fallan las actualizaciones, consulta el anuncio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Dar al agente acceso a PR, issues y CI desde la terminal. (combinación por arquitectura) | Autentica `gh` y permite su uso al agente. |
+| [GitHub MCP Server](github-mcp-server.md) | Acceso a GitHub vía MCP para clientes sin shell. (combinación por arquitectura) | Usa `gh` en terminal y el servidor MCP en clientes sin shell. |
+| [n8n](n8n.md) | Automatizar GitHub con el nodo nativo de n8n, complementario a scripts con `gh`. (combinación por arquitectura) | Usa `gh` para tareas manuales y n8n para flujos programados. |
+
+**Notas:** Sin alternativas declaradas. Limita los scopes del token que uses con agentes.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v2.104.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1]() · [2](https://cli.github.com/manual/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Instala gh antes de instalar su skill opcional; los comandos que escriben o publican afectan la cuenta autenticada |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelo; GitHub y acciones de la cuenta conservan sus límites y costes |
 | Equipo | Preparación según la ruta elegida. Binario gh oficial; cuenta GitHub para operaciones autenticadas |
-
-Instala gh antes de instalar su skill opcional; los comandos que escriben o publican afectan la cuenta autenticada
-
-## Qué puedes hacer con él
-
-CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal.
-
-## Por qué destaca
-
-Usos propuestos: Consultar issues desde terminal; Revisar ejecuciones de Actions.
-
-## Cómo funciona
 
 Instala gh antes de instalar su skill opcional; los comandos que escriben o publican afectan la cuenta autenticada
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario gh oficial; cuenta GitHub para operaciones autenticadas
 - **Etiquetas:** `code` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [GitHub MCP Server](github-mcp-server.md) | 34.5k | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. |
 
 ## Enlaces
 

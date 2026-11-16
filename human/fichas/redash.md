@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Redash, herramienta para consultar fuentes de datos con SQL, visualizar y compartir resultados. Licencia BSD-2-Clause. Es madura (~29k estrellas) y sigue publicando versiones (v26.9.0).
+
+## ¿Qué hace?
+
+Ofrece un editor SQL en el navegador con autocompletado, visualizaciones, paneles, alertas y consultas programadas. Se conecta a bases SQL, NoSQL, APIs y servicios en la nube. Todo se comparte mediante URL.
+
+## ¿Cómo lo hace?
+
+Se autoaloja siguiendo la guía de instalación (Docker, con imágenes preparadas para AWS y GCE). Está escrito en Python con frontend React y requiere PostgreSQL y Redis.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [DuckDB](duckdb.md) | Consultar archivos locales o analíticos con SQL. (combinación por arquitectura) | Configura la fuente de datos correspondiente. |
+| [supabase](supabase.md) | Fuente PostgreSQL para consultas y paneles. (combinación por arquitectura) | Conecta con un usuario de solo lectura. |
+| [n8n](n8n.md) | Disparar flujos a partir de alertas de Redash. (combinación por arquitectura) | Configura un webhook de alerta hacia n8n. |
+
+**Notas:** Alternativas (elige una): metabase, superset.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v26.9.0 (2026-09-24) · licencia declarada BSD-2-Clause (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/getredash/redash/blob/master/README.md) · [2](https://redash.io/help/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; servidor, fuentes y ejecución de consultas pueden costar |
 | Equipo | Preparación según la ruta elegida. Servidor según guía; fuente de datos; SQL básico |
-
-La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas
-
-## Qué puedes hacer con él
-
-Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards.
-
-## Por qué destaca
-
-Usos propuestos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL.
-
-## Cómo funciona
 
 La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas
 

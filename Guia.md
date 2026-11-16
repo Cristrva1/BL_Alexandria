@@ -1773,6 +1773,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `npm install @zseven-w/dsh-qa           # the orchestrator
 npm install @zseven-w/dsh-browser      # browser sessions` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Repetir una prueba de registro en desarrollo; Guardar evidencia de un fallo de interfaz — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [playwright](human/fichas/playwright.md) · [browser-use](human/fichas/browser-use.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/dsh-qa.md) · [GitHub](https://github.com/ZSeven-W/dsh-qa)
 
 ### CLIs y SDKs de desarrollo
@@ -1783,7 +1784,7 @@ npm install @zseven-w/dsh-browser      # browser sessions` (comprobar los pasos 
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/cli/cli/blob/trunk/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar issues desde terminal; Revisar ejecuciones de Actions — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/cli.md) · [GitHub](https://github.com/cli/cli)
 
 #### 🐍 openai-python
@@ -1793,7 +1794,7 @@ npm install @zseven-w/dsh-browser      # browser sessions` (comprobar los pasos 
 **Comando documentado:** `# install from PyPI
 pip install openai` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Integrar respuestas de IA en una app Python; Procesar audio o imágenes desde código — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [langchain](human/fichas/langchain.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [vLLM](human/fichas/vllm.md) · [langchain](human/fichas/langchain.md)<br>
 **Más:** [ficha completa](human/fichas/openai-python.md) · [GitHub](https://github.com/openai/openai-python)
 
 ---
@@ -2435,6 +2436,7 @@ Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consu
 cd umami
 pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Medir visitas de una web; Comparar campañas mediante eventos propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [metabase](human/fichas/metabase.md) · [Grafana](human/fichas/grafana.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/umami.md) · [GitHub](https://github.com/umami-software/umami)
 
 #### 📈 posthog
@@ -2443,7 +2445,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx -y @posthog/wizard@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Entender abandono en un flujo de registro; Revisar errores y sesiones de una app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [metabase](human/fichas/metabase.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [n8n](human/fichas/n8n.md) · [metabase](human/fichas/metabase.md)<br>
 **Más:** [ficha completa](human/fichas/posthog.md) · [GitHub](https://github.com/PostHog/posthog)
 
 #### 📈 Plausible Analytics
@@ -2452,6 +2454,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/plausible/community-edition/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Medir una web de contenido; Comparar conversiones de una landing — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [n8n](human/fichas/n8n.md) · [Grafana](human/fichas/grafana.md) · [supabase](human/fichas/supabase.md)<br>
 **Más:** [ficha completa](human/fichas/plausible.md) · [GitHub](https://github.com/plausible/analytics)
 
 #### 📈 Matomo
@@ -2460,6 +2463,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://matomo.org/faq/how-to-install/faq_18271/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [metabase](human/fichas/metabase.md) · [Grafana](human/fichas/grafana.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/matomo.md) · [GitHub](https://github.com/matomo-org/matomo)
 
 ### BI, dashboards y chat con datos
@@ -2470,7 +2474,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://superset.apache.org/docs/quickstart/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar métricas de una base SQL; Compartir un dashboard interno — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [DuckDB](human/fichas/duckdb.md) · [WrenAI](human/fichas/wrenai.md)<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [WrenAI](human/fichas/wrenai.md) · [echarts](human/fichas/echarts.md)<br>
 **Más:** [ficha completa](human/fichas/superset.md) · [GitHub](https://github.com/apache/superset)
 
 #### 📊 WrenAI ⭐
@@ -2481,7 +2485,7 @@ pnpm install` (comprobar los pasos completos en la ficha).<br>
 
 npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Definir ingresos de forma consistente; Crear dashboards desde preguntas de negocio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Apache Superset](human/fichas/superset.md) · [DuckDB](human/fichas/duckdb.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [DuckDB](human/fichas/duckdb.md) · [langchain](human/fichas/langchain.md) · [Apache Superset](human/fichas/superset.md)<br>
 **Más:** [ficha completa](human/fichas/wrenai.md) · [GitHub](https://github.com/Canner/WrenAI)
 
 #### 📊 Grafana
@@ -2490,7 +2494,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://grafana.com/docs/grafana/latest/setup-grafana/installation/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Observar consumo de un servicio; Compartir métricas de una operación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [langfuse](human/fichas/langfuse.md)<br>
+**Combina con:** [langfuse](human/fichas/langfuse.md) · [supabase](human/fichas/supabase.md) · [Umami](human/fichas/umami.md)<br>
 **Más:** [ficha completa](human/fichas/grafana.md) · [GitHub](https://github.com/grafana/grafana)
 
 #### 📊 metabase
@@ -2499,7 +2503,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [posthog](human/fichas/posthog.md) · [echarts](human/fichas/echarts.md)<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [posthog](human/fichas/posthog.md) · [echarts](human/fichas/echarts.md)<br>
 **Más:** [ficha completa](human/fichas/metabase.md) · [GitHub](https://github.com/metabase/metabase)
 
 #### 📊 Redash
@@ -2508,6 +2512,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://redash.io/help/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [supabase](human/fichas/supabase.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/redash.md) · [GitHub](https://github.com/getredash/redash)
 
 #### 📊 PandasAI
@@ -2517,7 +2522,7 @@ npx skills add Canner/WrenAI` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `pip install pandasai
 pip install pandasai-litellm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [DuckDB](human/fichas/duckdb.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [DuckDB](human/fichas/duckdb.md) · [streamlit](human/fichas/streamlit.md)<br>
 **Más:** [ficha completa](human/fichas/pandas-ai.md) · [GitHub](https://github.com/sinaptik-ai/pandas-ai)
 
 ### Librerías de gráficos
@@ -2529,7 +2534,7 @@ pip install pandasai-litellm` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `# latest stable
 npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Visualizar una serie de ventas; Comparar categorías en un dashboard React — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ui](human/fichas/ui.md)<br>
+**Combina con:** [ui](human/fichas/ui.md) · [D3.js](human/fichas/d3.md) · [tailwindcss](human/fichas/tailwindcss.md)<br>
 **Más:** [ficha completa](human/fichas/recharts.md) · [GitHub](https://github.com/recharts/recharts)
 
 #### 📉 D3.js

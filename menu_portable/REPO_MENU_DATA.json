@@ -29133,7 +29133,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "github-mcp-server"
+        "github-mcp-server",
+        "n8n"
       ],
       "alt": []
     },
@@ -29621,7 +29622,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Repetir una prueba de registro en desarrollo; Guardar evidencia de un fallo de interfaz",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "playwright",
+        "browser-use",
+        "claude-code"
+      ],
       "alt": []
     },
     {
@@ -30096,6 +30101,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "litellm",
+        "vllm",
         "langchain"
       ],
       "alt": []
@@ -37798,7 +37804,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Observar consumo de un servicio; Compartir métricas de una operación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "langfuse"
+        "langfuse",
+        "supabase",
+        "umami"
       ],
       "alt": []
     },
@@ -37909,7 +37917,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "metabase",
+        "grafana",
+        "n8n"
+      ],
       "alt": [
         "umami",
         "plausible"
@@ -38024,6 +38036,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "duckdb",
         "posthog",
         "echarts"
       ],
@@ -38374,7 +38387,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "duckdb"
+        "litellm",
+        "duckdb",
+        "streamlit"
       ],
       "alt": [
         "wrenai"
@@ -38486,7 +38501,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Medir una web de contenido; Comparar conversiones de una landing",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "n8n",
+        "grafana",
+        "supabase"
+      ],
       "alt": [
         "umami",
         "matomo"
@@ -38607,6 +38626,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Entender abandono en un flujo de registro; Revisar errores y sesiones de una app",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
+        "n8n",
         "metabase"
       ],
       "alt": []
@@ -38839,7 +38860,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Visualizar una serie de ventas; Comparar categorías en un dashboard React",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ui"
+        "ui",
+        "d3",
+        "tailwindcss"
       ],
       "alt": [
         "chart-js",
@@ -38954,7 +38977,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "duckdb",
+        "supabase",
+        "n8n"
+      ],
       "alt": [
         "metabase",
         "superset"
@@ -39072,7 +39099,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "duckdb",
-        "wrenai"
+        "wrenai",
+        "echarts"
       ],
       "alt": [
         "metabase",
@@ -39189,7 +39217,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Medir visitas de una web; Comparar campañas mediante eventos propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "metabase",
+        "grafana",
+        "n8n"
+      ],
       "alt": [
         "plausible",
         "matomo"
@@ -39540,8 +39572,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Definir ingresos de forma consistente; Crear dashboards desde preguntas de negocio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "superset",
-        "duckdb"
+        "claude-code",
+        "duckdb",
+        "langchain",
+        "superset"
       ],
       "alt": [
         "pandas-ai"

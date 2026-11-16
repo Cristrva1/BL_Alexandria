@@ -214,7 +214,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta una fuente de prueba y grafica una métrica con un rango temporal explícito
 **Qué comprobar:** El panel coincide con la consulta y cambia al ajustar el periodo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langfuse`
+**Combina con:** `langfuse`, `supabase`, `umami`
 
 ## `matomo`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=analytics,php
@@ -244,6 +244,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade seguimiento a una página propia y verifica una visita y un objetivo ficticio
 **Qué comprobar:** El informe identifica las acciones de la visita de prueba
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `metabase`, `grafana`, `n8n`
 **Alternativas (elige una):** `umami`, `plausible`
 
 ## `metabase`
@@ -274,7 +275,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una pregunta de suma por categoría usando los datos de ejemplo
 **Qué comprobar:** El resultado coincide con las filas y puedes guardarlo en un dashboard
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `posthog`, `echarts`
+**Combina con:** `duckdb`, `posthog`, `echarts`
 **Alternativas (elige una):** `superset`, `redash`
 
 ## `odm`
@@ -368,7 +369,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pregunta el promedio por región de un CSV pequeño y calcula el resultado también de forma directa
 **Qué comprobar:** La respuesta y el código generado coinciden con los datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`
+**Combina con:** `litellm`, `duckdb`, `streamlit`
 **Alternativas (elige una):** `wrenai`
 
 ## `plausible`
@@ -399,6 +400,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Mide una visita y un objetivo de prueba sin añadir datos personales al evento
 **Qué comprobar:** El panel muestra el sitio, la visita y el objetivo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `n8n`, `grafana`, `supabase`
 **Alternativas (elige una):** `umami`, `matomo`
 
 ## `posthog`
@@ -429,7 +431,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra un evento ficticio y construye un embudo de dos pasos en un proyecto de prueba
 **Qué comprobar:** Puedes ver cada evento y cómo se calcula el embudo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `metabase`
+**Combina con:** `claude-code`, `n8n`, `metabase`
 
 ## `pythia`
 role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=osint,typescript
@@ -491,7 +493,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Dibuja una línea con cinco valores y comprueba etiquetas y tooltip
 **Qué comprobar:** Los puntos corresponden a los datos y el gráfico cabe en móvil
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ui`
+**Combina con:** `ui`, `d3`, `tailwindcss`
 **Alternativas (elige una):** `chart-js`, `echarts`
 
 ## `redash`
@@ -522,6 +524,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta una consulta sobre una tabla ficticia y conviértela en una gráfica
 **Qué comprobar:** Puedes revisar consulta, filas y visualización del mismo resultado
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `duckdb`, `supabase`, `n8n`
 **Alternativas (elige una):** `metabase`, `superset`
 
 ## `superset`
@@ -552,7 +555,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta una tabla de ventas ficticias y crea un gráfico por mes
 **Qué comprobar:** El gráfico coincide con una suma SQL verificable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `duckdb`, `wrenai`
+**Combina con:** `duckdb`, `wrenai`, `echarts`
 **Alternativas (elige una):** `metabase`, `redash`
 
 ## `umami`
@@ -585,6 +588,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade el script a una página propia de prueba y genera un evento ficticio
 **Qué comprobar:** El panel recibe la visita y el evento del sitio correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `metabase`, `grafana`, `n8n`
 **Alternativas (elige una):** `plausible`, `matomo`
 
 ## `uplot`
@@ -677,5 +681,5 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide usar la muestra jaffle_shop y explica una métrica antes de generar su consulta
 **Qué comprobar:** Puedes revisar definición, SQL y resultado sobre la muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `superset`, `duckdb`
+**Combina con:** `claude-code`, `duckdb`, `langchain`, `superset`
 **Alternativas (elige una):** `pandas-ai`
