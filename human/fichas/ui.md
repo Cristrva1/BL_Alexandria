@@ -10,6 +10,40 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+shadcn/ui es un conjunto de componentes React (MIT) pensado para construir tu propia biblioteca de componentes: no se instala como dependencia, sino que el código se copia en tu proyecto. Es muy maduro y popular (~128k estrellas), con una CLI muy activa (shadcn@4.23.0).
+
+## ¿Qué hace?
+
+Ofrece componentes accesibles y personalizables (botones, formularios, diálogos, tablas, gráficos, barras laterales y otros) que pasan a ser código propio. Su sistema de registros permite distribuir componentes, bloques y temas propios o de terceros (por ejemplo `@magicui/...`) con la misma CLI. Incluye un servidor MCP para que asistentes como Claude Code, Cursor, Codex o VS Code busquen e instalen componentes de los registros.
+
+## ¿Cómo lo hace?
+
+La CLI (`npx shadcn@latest init`, `add`, `create`) configura `components.json` y copia los componentes al proyecto. Se apoya en Tailwind CSS y en primitivas accesibles: Radix UI o Base UI, según la documentación actual. Por defecto usa iconos de Lucide. Funciona con Next.js, Vite, React Router, Astro y otros frameworks. Como el código es tuyo, las actualizaciones no llegan solas: hay que volver a traerlas con la CLI y revisar las diferencias.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Sistema de estilos sobre el que están escritos todos los componentes. | Configura Tailwind (o deja que lo haga `shadcn init`) antes de añadir componentes. |
+| [Radix Primitives](radix-primitives.md) | Primitivas accesibles sin estilos que usan muchos componentes (alternativa: Base UI). | Se instalan automáticamente al añadir cada componente. |
+| [Lucide](lucide.md) | Biblioteca de iconos por defecto (`iconLibrary` en components.json). | Se instala con los componentes que la necesitan. |
+| [magicui](magicui.md) | Componentes animados distribuidos como registro de shadcn (`npx shadcn@latest add @magicui/...`). | Inicializa shadcn/ui y luego añade componentes de Magic UI con la misma CLI. |
+| [Claude Code](claude-code.md) | Explorar e instalar componentes de los registros desde el asistente vía el servidor MCP de shadcn. | Configura el proyecto con shadcn y registra el servidor MCP según su documentación. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (15). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AI SDK (Vercel)](vercel-ai.md) · [ai-website-cloner-template](ai-website-cloner-template.md) · [assistant-ui](assistant-ui.md) · [Figma Context MCP](figma-context-mcp.md) · [jev-fraud](jev-fraud.md) · [json-render](json-render.md) · [konva](konva.md) · [Onlook](onlook.md) · [plasmic](plasmic.md) · [React Bits](react-bits.md) · [Recharts](recharts.md) · [screenshot-to-code](screenshot-to-code.md) · [swr](swr.md) · [TanStack Query](tanstack-query.md) · [tldraw](tldraw.md)
+
+**Notas:** Alternativas (elige una): mui, ant-design, daisyui. Combinación anterior con plasmic eliminada: sin integración documentada.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada shadcn@4.23.0 (2026-10-27) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/shadcn-ui/ui/blob/main/README.md) · [2](https://ui.shadcn.com/docs/cli) · [3](https://ui.shadcn.com/docs/registry) · [4](https://ui.shadcn.com/docs/mcp) · [5](https://ui.shadcn.com/docs/components-json) · [6](https://magicui.design/docs/installation)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +57,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación |
 | Coste | Sin pago a un modelo en la ruta básica. Los componentes abiertos no necesitan IA; registros privados, servicios y el agente pueden tener costes |
 | Equipo | Preparación según la ruta elegida. Proyecto React compatible; Node; gestor de paquetes; configuración del framework |
-
-El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación
-
-## Qué puedes hacer con él
-
-Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
-
-## Por qué destaca
-
-Usos propuestos: Construir un formulario con componentes propios; Crear un sistema de interfaz con código modificable.
-
-## Cómo funciona
 
 El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación
 
@@ -86,13 +108,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto React compatible; Node; gestor de paquetes; configuración del framework
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
-| [plasmic](plasmic.md) | 7.2k | Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real. |
 
 ## Alternativas (elige una)
 

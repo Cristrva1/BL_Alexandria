@@ -34,7 +34,7 @@ install_modes:
     - loguru
     - crawl4ai
   docker_later:
-    - n8n
+    - activepieces
     - langfuse
   deferred:
     - graphrag
@@ -58,7 +58,7 @@ repo_install_modes:
     - crawl4ai
     - litellm
   docker_local:
-    - n8n
+    - activepieces
     - langfuse
     - evolution-api
     - chatwoot

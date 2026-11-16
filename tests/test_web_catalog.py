@@ -9,7 +9,7 @@ from repo_intelligence.web.catalog import build_catalog
 from repo_intelligence.web.lessons import CATEGORY_LESSONS, RECIPE_LESSONS
 
 
-def _write_indices(root: Path, *, one: str = "n8n is a workflow automation platform.", desc: str = "Orquesta flujos con nodos y puede llamar a un modelo.") -> None:
+def _write_indices(root: Path, *, one: str = "dify is a workflow automation platform.", desc: str = "Orquesta flujos con nodos y puede llamar a un modelo.") -> None:
     compact = {
         "categories": [
             {"num": 1, "title": "Automatización", "count": 1},
@@ -20,8 +20,8 @@ def _write_indices(root: Path, *, one: str = "n8n is a workflow automation platf
                 "id": "bot-de-whatsapp-con-ia",
                 "title": "Bot de WhatsApp con IA",
                 "goal": "atención por WhatsApp",
-                "repos": ["n8n"],
-                "how": "n8n enruta y llama al LLM",
+                "repos": ["dify"],
+                "how": "dify enruta y llama al LLM",
             },
             {
                 "id": "web-app-moderna-con-ia",
@@ -37,8 +37,8 @@ def _write_indices(root: Path, *, one: str = "n8n is a workflow automation platf
         },
         "repos": [
             {
-                "id": "n8n",
-                "name": "n8n",
+                "id": "dify",
+                "name": "dify",
                 "cat": 1,
                 "role": "library",
                 "exec": "local",
@@ -48,7 +48,7 @@ def _write_indices(root: Path, *, one: str = "n8n is a workflow automation platf
                 "tags": ["automation"],
                 "one": one,
                 "alt": ["activepieces"],
-                "doc": "human/fichas/n8n.md",
+                "doc": "human/fichas/dify.md",
             },
             {
                 "id": "three.js",
@@ -67,10 +67,10 @@ def _write_indices(root: Path, *, one: str = "n8n is a workflow automation platf
     }
     detalle = {
         "repos": {
-            "n8n": {
+            "dify": {
                 "desc": desc,
                 "stack": "python",
-                "repo": "https://github.com/n8n-io/n8n",
+                "repo": "https://github.com/langgenius/dify",
                 "choose_if": "quieres orquestar flujos en self-host",
                 "avoid_if": "no quieres operar un servicio",
                 "combines_with": ["chatwoot"],
@@ -93,11 +93,11 @@ def test_catalog_merges_detail_install_and_aliases(tmp_path: Path) -> None:
     _write_indices(tmp_path)
     catalog = build_catalog(tmp_path)
 
-    n8n = next(repo for repo in catalog["repos"] if repo["id"] == "n8n")
-    assert "instalación original" in n8n["install"]["command"]
-    assert "pip install" not in n8n["install"]["command"]
-    assert n8n["choose_if"].startswith("quieres orquestar")
-    assert n8n["lead"].startswith("n8n is a workflow")
+    dify = next(repo for repo in catalog["repos"] if repo["id"] == "dify")
+    assert "instalación original" in dify["install"]["command"]
+    assert "pip install" not in dify["install"]["command"]
+    assert dify["choose_if"].startswith("quieres orquestar")
+    assert dify["lead"].startswith("dify is a workflow")
 
     web = next(recipe for recipe in catalog["recipes"] if recipe["id"] == "web-app-moderna-con-ia")
     assert web["steps"][0]["id"] == "three.js"
@@ -105,7 +105,7 @@ def test_catalog_merges_detail_install_and_aliases(tmp_path: Path) -> None:
     assert "escena" in web["steps"][0]["why"]
 
     whatsapp = next(recipe for recipe in catalog["recipes"] if recipe["id"] == "bot-de-whatsapp-con-ia")
-    assert whatsapp["steps"][0]["why"].startswith("El flujo")
+    assert whatsapp["steps"][0]["why"].startswith("La app de IA")
     assert catalog["counts"]["categories"] == 2
 
 
@@ -116,9 +116,9 @@ def test_junk_readme_falls_back_to_curated_criterion(tmp_path: Path) -> None:
         desc="⚠️ Important Notice: any token on pump.fun is not affiliated with this project.",
     )
     catalog = build_catalog(tmp_path)
-    n8n = next(repo for repo in catalog["repos"] if repo["id"] == "n8n")
-    assert n8n["body"] == ""
-    assert "orquestar flujos" in n8n["lead"]
+    dify = next(repo for repo in catalog["repos"] if repo["id"] == "dify")
+    assert dify["body"] == ""
+    assert "orquestar flujos" in dify["lead"]
 
 
 def test_site_inlines_catalog_and_escapes_script(tmp_path: Path) -> None:
@@ -137,8 +137,8 @@ def test_site_inlines_catalog_and_escapes_script(tmp_path: Path) -> None:
     )
     assert match is not None
     data = json.loads(match.group(1))
-    n8n = next(repo for repo in data["repos"] if repo["id"] == "n8n")
-    assert n8n["desc"] == "</script><script>alert(1)</script>"
+    dify = next(repo for repo in data["repos"] if repo["id"] == "dify")
+    assert dify["desc"] == "</script><script>alert(1)</script>"
     assert (out / "app.js").exists()
     assert (out / "styles.css").exists()
 
@@ -171,7 +171,7 @@ def test_server_serves_the_site(tmp_path: Path) -> None:
             body = response.read().decode("utf-8")
             assert response.status == 200
             assert "Alejandría" in body
-            assert "n8n" in body
+            assert "dify" in body
         with urllib.request.urlopen(url + "app.js") as response:
             assert response.status == 200
             assert "Explorar" in response.read().decode("utf-8")

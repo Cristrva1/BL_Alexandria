@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Repositorio oficial de servidores de referencia del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es muy popular (~92k estrellas, v2.4.0).
+
+## ¿Qué hace?
+
+Contiene implementaciones de referencia que muestran funciones de MCP y el uso de los SDK: Everything (servidor de pruebas), Fetch, Filesystem, Git, Memory (grafo de conocimiento), Sequential Thinking y Time. Los servidores antiguos se movieron a servers-archived y la lista de servidores de terceros ahora vive en el MCP Registry. El README advierte que son ejemplos educativos, no soluciones listas para producción.
+
+## ¿Cómo lo hace?
+
+Cada servidor se ejecuta con `npx` (TypeScript) o `uvx` (Python) desde la configuración del cliente MCP, o con Docker. Están escritos con los SDK oficiales. Revisa los permisos (por ejemplo, las rutas permitidas de Filesystem) antes de usarlos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MCP Inspector](mcp-inspector.md) | Probar los servidores de referencia, sobre todo Everything, que existe para ejercitar clientes. (combinación por arquitectura) | Lanza el Inspector contra el servidor elegido. |
+| [mcp-use](mcp-use.md) | Tomar los servidores como ejemplo al construir uno propio. (combinación por arquitectura) | Estudia el servidor parecido y construye el tuyo con mcp-use. |
+| [awesome-mcp-servers](awesome-mcp-servers.md) | Encontrar servidores de la comunidad más allá de las referencias. (combinación por arquitectura) | Consulta también el MCP Registry oficial. |
+| [OpenDots](opendots.md) | Combinación recíproca: OpenDots lo enlaza como «Servidores MCP de referencia como herramientas. (combinación por arquitectura)». | Orden indicado desde OpenDots: Añade los MCP por Dot. |
+
+**Notas:** Sin alternativas declaradas. No son para producción, según el propio README.
+
+Estado en GitHub: activo · último push 2026-11-12 · última versión publicada v2.4.0 (2026-11-11) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/modelcontextprotocol/servers/blob/main/README.md) · [2](https://registry.modelcontextprotocol.io/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción |
 | Coste | Sin pago a un modelo en la ruta básica. Leer no requiere API; el cliente y cada implementación elegida tienen sus requisitos |
 | Equipo | Preparación según la ruta elegida. Navegador; Node o Python según el servidor elegido |
-
-Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción
-
-## Qué puedes hacer con él
-
-Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.
-
-## Por qué destaca
-
-Usos propuestos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba.
-
-## Cómo funciona
 
 Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción
 
@@ -84,13 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; Node o Python según el servidor elegido
 - **Etiquetas:** `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [mcp-use](mcp-use.md) | 11k | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
-| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.7k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
 
 ## Enlaces
 

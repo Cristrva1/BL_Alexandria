@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Claude Animated Shorts, skill gratuita de Claude que acompaña a un vídeo tutorial, de @mromidev. Licencia MIT (los fotogramas de referencia solo sirven para estudiar el estilo). Creada en noviembre de 2026, tiene ~3.6k estrellas y sin releases.
+
+## ¿Qué hace?
+
+Produce cortos verticales animados de 55–70 s: personajes 2D en un mundo 3D colorido con contornos de tinta, cámaras suaves, música y efectos.
+
+## ¿Cómo lo hace?
+
+Requiere Remotion con `@remotion/three`, Node, Python 3 y FFmpeg; el render 3D usa three.js.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [remotion](remotion.md) | Motor de composición. | Instala Remotion y `@remotion/three`; revisa su licencia. |
+| [three.js](three-js.md) | Render 3D de las escenas. | Viene vía @remotion/three. |
+| [Claude Code](claude-code.md) | Anfitrión de la skill. (combinación por arquitectura) | Instala la skill. |
+
+**Notas:** Sin alternativas declaradas. Proyecto de un solo autor ligado a un vídeo.
+
+Estado en GitHub: activo · último push 2026-11-01 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mromidev/claude-animated-shorts/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía |
 | Coste | Consumo del agente que ya utilizas. La skill usa el agente y recursos de render; Remotion y assets mantienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Claude Code; Three.js y Remotion; dependencias de render; historia propia |
-
-Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía
-
-## Qué puedes hacer con él
-
-Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.
-
-## Por qué destaca
-
-Usos propuestos: Crear un corto animado de prueba; Estudiar personajes 2D en escena 3D.
-
-## Cómo funciona
 
 Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía
 

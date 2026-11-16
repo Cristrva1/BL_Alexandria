@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Fork independiente y mantenido de Universal Android Debloater (UAD), de la Universal-Debloater-Alliance. Licencia GPL-3.0. Es activo (~10k estrellas, v1.3.1).
+
+## ¿Qué hace?
+
+Ofrece una interfaz gráfica para quitar apps de sistema innecesarias u opacas en Android sin root, con el objetivo de mejorar privacidad, eficiencia (energía, velocidad, memoria) y seguridad al reducir la superficie de ataque. Usa la Universal Debloat List, una lista comunitaria de paquetes con recomendaciones que también reutilizan otros proyectos como Canta. Según el README, no recoge datos y su única conexión externa son peticiones GET a GitHub para descargar la lista de paquetes.
+
+## ¿Cómo lo hace?
+
+Es una app en Rust con GUI que habla con el móvil mediante ADB. Se descargan los binarios de Releases (o se compila desde el código), se instala ADB (platform-tools) y se activa la depuración USB en el teléfono, según la guía de inicio de la wiki. El README avisa que se usa bajo tu propio riesgo: quitar paquetes críticos puede dejar el dispositivo inutilizable, así que sigue las recomendaciones y haz copia de seguridad.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AdGuardHome](adguardhome.md) | Filtrado DNS de red para los rastreadores que no se pueden quitar del teléfono. (combinación por arquitectura) | Configura AdGuard Home como DNS (o DNS privado DoT) en el móvil. |
+| [cleanyourtv](cleanyourtv.md) | Misma técnica (ADB, `pm`) para televisores Android. (combinación por arquitectura) | Úsalos por separado con el mismo ADB instalado. |
+| [optimizerDuck](optimizerduck.md) | Limpieza equivalente en Windows. (combinación por arquitectura) | Úsalos por separado, cada uno en su plataforma. |
+
+**Notas:** Sin alternativas declaradas en el catálogo. El README recomienda Canta (Shizuku, desde el propio móvil) como opción complementaria.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.3.1 (2026-11-02) · licencia declarada GPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/README.md) · [2](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/wiki/Usage)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita IA; herramientas y equipo son propios |
 | Equipo | Preparación según la ruta elegida. Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes |
-
-Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto
-
-## Qué puedes hacer con él
-
-Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo.
-
-## Cómo funciona
 
 Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto
 

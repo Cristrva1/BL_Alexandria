@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+SDK oficial en TypeScript del Model Context Protocol. La rama principal es la v2 estable (v2.4.0), que implementa la especificación MCP 2026-07-28. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION); ~14k estrellas.
+
+## ¿Qué hace?
+
+Proporciona librerías de servidor (herramientas, recursos, prompts, Streamable HTTP, stdio, ayudas de autenticación) y de cliente (transportes, ayudas OAuth). Se publica en paquetes separados: `@modelcontextprotocol/server` y `@modelcontextprotocol/client`. Funciona en Node.js, Bun y Deno.
+
+## ¿Cómo lo hace?
+
+Se instala con npm (`npm install @modelcontextprotocol/server`, más `zod` para los esquemas). Hay guía de migración desde la v1. Es la base de muchos servidores MCP en JavaScript.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MCP Inspector](mcp-inspector.md) | Herramienta oficial para probar servidores construidos con el SDK. | Ejecuta `npx @modelcontextprotocol/inspector` contra tu servidor. |
+| [AI SDK (Vercel)](vercel-ai.md) | Consumir servidores MCP desde apps con el cliente MCP del AI SDK. | Conecta tu servidor con las herramientas MCP del AI SDK. |
+| [Claude Code](claude-code.md) | Probar el servidor en un agente real. (combinación por arquitectura) | Regístralo con `claude mcp add`. |
+
+**Notas:** Alternativas (elige una): mcp-use.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v2.4.0 (2026-10-23) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md) · [2](https://modelcontextprotocol.io/docs/tools/inspector) · [3](https://ai-sdk.dev/docs/ai-sdk-core/mcp-tools)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1 |
 | Coste | Sin pago a un modelo en la ruta básica. El SDK no llama modelos por sí solo; servicios y despliegue se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Node.js; TypeScript; gestor de paquetes |
-
-La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1
-
-## Qué puedes hacer con él
-
-SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol.
-
-## Por qué destaca
-
-Usos propuestos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas.
-
-## Cómo funciona
 
 La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; TypeScript; gestor de paquetes
 - **Etiquetas:** `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [MCP Inspector](mcp-inspector.md) | 11.3k | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. |
 
 ## Alternativas (elige una)
 

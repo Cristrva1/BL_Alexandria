@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Librería y CLI que extrae el contenido principal de páginas web, de @kepano. Licencia MIT. Es activa (~10k estrellas, 0.19.6) y el propio README avisa de que sigue en desarrollo.
+
+## ¿Qué hace?
+
+Elimina comentarios, barras laterales, cabeceras, pies y otros elementos accesorios, y devuelve HTML limpio o Markdown con metadatos (título, autor, fecha…). Normaliza notas al pie, código y fórmulas para producir una salida consistente. Es el motor de extracción de Obsidian Web Clipper.
+
+## ¿Cómo lo hace?
+
+Se usa con `npx defuddle parse <archivo|url> [--markdown|--json]` o como librería en navegador y Node.js (`npm install defuddle`). Funciona sin modelos de IA.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [obsidian-clipper](obsidian-clipper.md) | El Web Clipper oficial de Obsidian usa Defuddle para extraer contenido. | Instala el Clipper; Defuddle va incluido. |
+| [obsidian-skills](obsidian-skills.md) | La skill oficial `defuddle` enseña a los agentes a usarlo para ahorrar tokens. | Instala obsidian-skills en el agente. |
+| [crawlee](crawlee.md) | Limpiar el contenido de cada página de un crawler Node.js. (combinación por arquitectura) | Pasa el HTML de cada página a Defuddle. |
+| [claude-obsidian](claude-obsidian.md) | Combinación recíproca: claude-obsidian lo enlaza como «Extraer el contenido limpio de páginas web antes de ingerirlas. (combinación por arquitectura)». | Orden indicado desde claude-obsidian: Usa Defuddle (o su skill) para preparar la fuente y déjala en `inbox/`. |
+| [Scrapling](scrapling.md) | Combinación recíproca: Scrapling lo enlaza como «Quedarte solo con el contenido principal de los artículos descargados. (combinación por arquitectura)». | Orden indicado desde Scrapling: Pasa el HTML obtenido por Defuddle para limpiarlo. |
+| [scrapy](scrapy.md) | Combinación recíproca: scrapy lo enlaza como «Extraer el contenido principal de artículos en un paso posterior. (combinación por arquitectura)». | Orden indicado desde scrapy: Procesa el HTML guardado con Defuddle. |
+
+**Notas:** Sin alternativas declaradas. En desarrollo: la salida puede cambiar entre versiones.
+
+Estado en GitHub: activo · último push 2026-10-25 · última versión publicada 0.19.6 (2026-10-24) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kepano/defuddle/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas |
 | Coste | Sin pago a un modelo en la ruta básica. La extracción básica no necesita API ni modelo; el contenido y alojamiento son costes externos |
 | Equipo | Preparación según la ruta elegida. Node.js; archivo HTML de prueba o página pública |
-
-Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas
-
-## Qué puedes hacer con él
-
-Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable.
-
-## Por qué destaca
-
-Usos propuestos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo.
-
-## Cómo funciona
 
 Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas
 

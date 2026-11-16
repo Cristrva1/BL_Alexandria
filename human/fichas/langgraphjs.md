@@ -30,6 +30,8 @@ Bibliotecas npm para Node.js y otros runtimes de JavaScript. Para depuración, e
 | [langfuse](langfuse.md) | Trazas de código abierto mediante el callback handler de Langfuse para LangChain/LangGraph (también en JS). | Langfuse primero; pasa el handler en la configuración de cada invocación. |
 | [CopilotKit](copilotkit.md) | Frontend React para agentes LangGraph, incluidos los de TypeScript (integración documentada por CopilotKit). | Despliega el grafo y conecta CopilotKit al endpoint del agente. |
 | [LangGraph](langgraph.md) | Versión Python de referencia; útil cuando un equipo mezcla servicios Python y TS con el mismo modelo mental. (combinación por arquitectura) | Elige un lenguaje por servicio; comparten conceptos, no código. |
+| [Agent Protocol](agent-protocol.md) | Combinación recíproca: Agent Protocol lo enlaza como «Implementación open source en LangGraph.js API». | Orden indicado desde Agent Protocol: Sirve el agente JS con langgraph-api. |
+| [social-media-agent](social-media-agent.md) | Combinación recíproca: social-media-agent lo enlaza como «Runtime del agente». | Orden indicado desde social-media-agent: Arranca el servidor LangGraph. |
 
 **Notas:** Alternativas (elige una): mastra, vercel-ai.
 

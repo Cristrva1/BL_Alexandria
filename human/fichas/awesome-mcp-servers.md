@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Lista curada de servidores MCP de @punkpeye (vinculada a Glama). Licencia MIT. Es muy popular (~98k estrellas) y su README empieza con un anuncio.
+
+## ¿Qué hace?
+
+Clasifica servidores MCP que instalas y ejecutas tú, por categoría (navegadores, bases de datos, desarrollo, finanzas, etc.), con indicadores de lenguaje y ámbito. Remite a listas aparte para servidores remotos y para clientes.
+
+## ¿Cómo lo hace?
+
+Es un README; no requiere instalación. La calidad y seguridad de cada servidor varían mucho: revisa el código y los permisos antes de instalarlo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Awesome MCP Clients](awesome-mcp-clients.md) | Lista hermana de clientes MCP del mismo autor. | Elige primero el cliente y luego los servidores. |
+| [servers](servers.md) | Servidores de referencia oficiales para comparar. (combinación por arquitectura) | Empieza por las referencias si buscas ejemplos fiables. |
+| [mcp-use](mcp-use.md) | Construir el servidor que no encuentres en la lista. (combinación por arquitectura) | Busca primero y construye solo si no existe. |
+
+**Notas:** Sin alternativas declaradas. Lista sin auditoría de seguridad.
+
+Estado en GitHub: activo · último push 2026-11-06 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md) · [2](https://glama.ai/mcp/servers)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme |
 | Coste | Sin pago a un modelo en la ruta básica. Leer no requiere API; cada servidor, servicio y modelo tiene condiciones propias |
 | Equipo | Preparación según la ruta elegida. Navegador; cliente y tarea elegidos |
-
-Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme
-
-## Qué puedes hacer con él
-
-Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
-
-## Por qué destaca
-
-Usos propuestos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos.
-
-## Cómo funciona
 
 Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme
 
@@ -84,13 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; cliente y tarea elegidos
 - **Etiquetas:** `automation` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [mcp-use](mcp-use.md) | 11k | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
-| [servers](servers.md) | 92k | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+ast-grep (sg), CLI en Rust para búsqueda estructural, lint y reescritura de código, de @HerringtonDarkholme. Licencia MIT. Es activa (~17k estrellas, 0.51.2).
+
+## ¿Qué hace?
+
+Busca código con patrones escritos como código normal, usando `$VAR` como comodín para nodos del AST. Permite crear reglas de lint en YAML y aplicar reescrituras masivas. Soporta muchos lenguajes y tiene un playground online.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install --global @ast-grep/cli` (Node.js 20+), `pip install ast-grep-cli`, `brew` o `cargo install ast-grep --locked`. Está escrito en Rust sobre Tree-sitter.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tree-sitter](tree-sitter.md) | Usa gramáticas de Tree-sitter. | No requiere instalación aparte. |
+| [Claude Code](claude-code.md) | Dar al agente búsquedas y refactorizaciones estructurales. (combinación por arquitectura) | Instala `sg` y permite al agente usarlo. |
+| [Aider](aider.md) | Aplicar refactorizaciones masivas deterministas junto a la edición con IA. (combinación por arquitectura) | Usa ast-grep para el cambio mecánico y Aider para el resto. |
+
+**Notas:** Alternativas (elige una): semgrep.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.51.2 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ast-grep/ast-grep/blob/main/README.md) · [2](https://ast-grep.github.io)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni API; solo recursos locales |
 | Equipo | Preparación según la ruta elegida. Node y npm para esta ruta; archivos de prueba |
-
-Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero
-
-## Qué puedes hacer con él
-
-CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código.
-
-## Por qué destaca
-
-Usos propuestos: Migrar llamadas de una API; Aplicar reglas de lint personalizadas.
-
-## Cómo funciona
 
 Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero
 
@@ -91,13 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node y npm para esta ruta; archivos de prueba
 - **Etiquetas:** `code` `security` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tree-sitter](tree-sitter.md) | 27.5k | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 

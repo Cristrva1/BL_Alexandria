@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lenguaje de diseño empresarial y biblioteca de componentes React (MIT) de Ant Group. Es muy madura (versión 6.7.0, ~100k estrellas), está escrita en TypeScript y se financia con patrocinios en Open Collective.
+
+## ¿Qué hace?
+
+Ofrece un conjunto amplio de componentes de alta calidad para aplicaciones web empresariales: tablas, formularios, árboles, calendarios, layouts y más. Trae internacionalización para decenas de idiomas y personalización de temas basada en CSS-in-JS. El ecosistema añade Ant Design Pro (plantillas), Pro Components y Ant Design Charts.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install antd` o `pnpm add antd`. Funciona en navegadores modernos, con renderizado en servidor y en Electron. Al usar CSS-in-JS, los estilos se generan en tiempo de ejecución, lo que conviene tener en cuenta si combinas con Tailwind o buscas un CSS mínimo. Su estética es la propia de Ant Design; adaptarla a otra marca exige trabajo de tema.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [echarts](echarts.md) | Gráficos avanzados en paneles de administración junto a las tablas y formularios de antd. (combinación por arquitectura); el ecosistema oficial ofrece Ant Design Charts como opción integrada | Instala echarts y su envoltorio para React; úsalo en componentes Card o layouts de antd. |
+| [swr](swr.md) | Carga de datos con caché para alimentar tablas y formularios. (combinación por arquitectura) | Añade swr y conecta sus hooks a los componentes. |
+| [AI SDK (Vercel)](vercel-ai.md) | Añadir funciones de IA (chat, streaming) a una aplicación empresarial construida con antd. (combinación por arquitectura) | Usa los hooks de AI SDK UI y renderiza con componentes de antd. |
+
+**Notas:** Alternativas (elige una): mui, ui.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 6.7.0 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ant-design/ant-design/blob/master/README.md) · [2](https://ant.design/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca React con su sistema visual; no se instala como una app final ni como agente de IA |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo; alojamiento y servicios del producto se pagan aparte |
 | Equipo | Preparación según la ruta elegida. React; Node; gestor de paquetes |
-
-Es una biblioteca React con su sistema visual; no se instala como una app final ni como agente de IA
-
-## Qué puedes hacer con él
-
-Lenguaje de diseño empresarial y librería de componentes React de Ant Group.
-
-## Por qué destaca
-
-Usos propuestos: Crear un panel administrativo; Montar formularios de gestión.
-
-## Cómo funciona
 
 Es una biblioteca React con su sistema visual; no se instala como una app final ni como agente de IA
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; Node; gestor de paquetes
 - **Etiquetas:** `ui` `react` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
 
 ## Alternativas (elige una)
 

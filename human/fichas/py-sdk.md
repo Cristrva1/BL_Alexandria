@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+SDK oficial de Polymarket para Python (`polymarket-client`). Licencia MIT. Es reciente y pequeño (~150 estrellas, polymarket-client-v0.18.0).
+
+## ¿Qué hace?
+
+Ofrece una interfaz unificada para datos públicos, cuenta autenticada, trading, atribución de builders y operaciones de wallet en Polymarket, con clientes síncrono y asíncrono.
+
+## ¿Cómo lo hace?
+
+Se instala con `uv add polymarket-client` o `pip install polymarket-client`. Operar requiere wallet y credenciales; revisa si Polymarket está permitido en tu jurisdicción.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ccxt](ccxt.md) | CCXT también cubre mercados de predicción. (combinación por arquitectura) | Compara cobertura antes de elegir. |
+| [nautilus_trader](nautilus-trader.md) | NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura) | Elige uno como capa de ejecución; prueba primero en modo simulado. |
+| [activepieces](activepieces.md) | Avisos de mercados o posiciones desde un flujo que llame a tu script. (combinación por arquitectura) | Levanta ambos servicios y crea el flujo en Activepieces con la pieza HTTP o un disparador Webhook. |
+
+**Notas:** Sin alternativas declaradas. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada polymarket-client-v0.18.0 (2026-11-09) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Polymarket/py-sdk/blob/main/README.md) · [2](https://nautilustrader.io/docs/latest/integrations/polymarket/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados |
 | Coste | El coste depende del proveedor o la ruta. No necesita LLM; cuentas, red y operaciones de la plataforma tienen condiciones y posibles costes propios |
 | Equipo | Preparación según la ruta elegida. Python y uv o pip; API y permisos según función; consulta de datos públicos |
-
-El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados
-
-## Qué puedes hacer con él
-
-SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo.
-
-## Cómo funciona
 
 El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados
 

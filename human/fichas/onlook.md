@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Editor visual open source (Apache-2.0) para diseñar sobre apps Next.js + Tailwind con IA. Es el proyecto que dio origen a Onlook; la empresa construye ahora un producto alojado distinto, en acceso anticipado con lista de espera. El repositorio sigue activo (v0.2.32), pero su futuro frente al producto alojado es incierto.
+
+## ¿Qué hace?
+
+Permite editar sitios y prototipos directamente en el DOM del navegador con una interfaz tipo Figma, escribir cambios con IA y sincronizarlos en tiempo real con el código. Se presenta como alternativa open source a Bolt.new, Lovable, v0, Replit Agent o Figma Make. Su hoja de ruta incluye funciones pendientes, como usar MCPs en proyectos.
+
+## ¿Cómo lo hace?
+
+Stack: Next.js, Tailwind CSS, Supabase (autenticación, base de datos y almacenamiento), CodeSandbox SDK (sandbox de desarrollo), Bun y Docker. Requiere claves de proveedores de IA y de los servicios citados para el autoalojamiento.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Stack de estilos que el editor modifica. | Los proyectos editados deben usar Tailwind. |
+| [supabase](supabase.md) | Autenticación, base de datos y almacenamiento del editor (stack del README). | Crea el proyecto Supabase antes de autoalojar Onlook. |
+| [ui](ui.md) | Componentes base para las apps que diseñas. (combinación por arquitectura) | Inicializa shadcn/ui en el proyecto antes de editarlo visualmente. |
+
+**Notas:** Alternativas (elige una): open-design.
+
+Estado en GitHub: activo · último push 2026-10-21 · última versión publicada v0.2.32 (2025-07-17) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/onlook-dev/onlook/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado |
 | Coste | El coste depende del proveedor o la ruta. El editor y las funciones AI tienen requisitos distintos; los proveedores y servicios alojados pueden cobrar |
 | Equipo | Preparación según la ruta elegida. Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI |
-
-Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado
-
-## Qué puedes hacer con él
-
-Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.
-
-## Por qué destaca
-
-Usos propuestos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código.
-
-## Cómo funciona
 
 Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI
 - **Etiquetas:** `design` `ui` `coding-agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 
 ## Alternativas (elige una)
 

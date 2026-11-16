@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Esquema de color (MIT) de @kepano (stephango.com, también autor del tema Minimal de Obsidian) pensado para leer y escribir en pantallas, inspirado en tintas de imprenta y tonos de papel. Versión 2.0.0; último push en marzo de 2026.
+
+## ¿Qué hace?
+
+Define una paleta de colores para prosa, código e interfaces, con variantes claras y oscuras y resaltado de sintaxis. Tiene ports para decenas de aplicaciones y herramientas, la mayoría comunitarios: Alacritty, Chrome, Discord, Emacs, Neovim, Obsidian, VS Code, Vim, terminales y Tailwind, entre otros.
+
+## ¿Cómo lo hace?
+
+Se usa instalando el port de cada aplicación o copiando los valores de color (hex, variables CSS) desde stephango.com/flexoki. El port de Tailwind lo mantiene la comunidad (@bslobodin). No es software, sino una especificación de colores con archivos de tema.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Usar la paleta como colores del tema mediante el port de Tailwind listado en el README. | Copia el port y regístralo en `@theme`. |
+| [daisyUI](daisyui.md) | Crear un tema daisyUI propio con los colores de Flexoki. (combinación por arquitectura) | Define un tema personalizado con las variables de la paleta. |
+| [Excalidraw](excalidraw.md) | Paleta coherente para diagramas y documentación visual. (combinación por arquitectura) | Configura los colores personalizados en Excalidraw. |
+| [normalize.css](normalize-css.md) | Combinación recíproca: normalize.css lo enlaza como «Paleta de color sobre una base de estilos normalizada en un sitio de CSS propio. (combinación por arquitectura)». | Orden indicado desde normalize.css: Importa normalize.css y define las variables de color de Flexoki. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-03-07 · última versión publicada 2.0.0 (2025-01-07) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/kepano/flexoki/blob/main/README.md) · [2](https://stephango.com/flexoki)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una referencia de color y sus ports; no instala una aplicación ni garantiza contraste en cualquier combinación |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni API; el proyecto pide atribución al portar la paleta |
 | Equipo | Preparación según la ruta elegida. Navegador o editor con un tema compatible |
-
-Es una referencia de color y sus ports; no instala una aplicación ni garantiza contraste en cualquier combinación
-
-## Qué puedes hacer con él
-
-Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual.
-
-## Por qué destaca
-
-Usos propuestos: Definir una paleta para una app de notas; Crear un tema de editor.
-
-## Cómo funciona
 
 Es una referencia de color y sus ports; no instala una aplicación ni garantiza contraste en cualquier combinación
 

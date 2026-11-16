@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca de componentes React de bajo nivel, sin estilos y accesibles (MIT), con copyright de WorkOS. Es madura y muy usada como base de sistemas de diseño, aunque su ritmo de cambios es moderado: el último push es de octubre de 2026.
+
+## ¿Qué hace?
+
+Ofrece primitivas como diálogos, menús, popovers, pestañas, tooltips y selects que resuelven la accesibilidad (WAI-ARIA, foco, teclado) y el comportamiento, dejando los estilos al desarrollador. Se usa como capa base de un sistema de diseño o de forma incremental.
+
+## ¿Cómo lo hace?
+
+Paquetes npm (paquete unificado `radix-ui` o `@radix-ui/react-*` por componente). El README describe el desarrollo del monorepo con pnpm; la documentación de uso está en radix-ui.com. Como no trae estilos, hace falta CSS propio o Tailwind.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | shadcn/ui se construye sobre Radix (o Base UI) y añade estilos Tailwind. | Usa shadcn/ui si quieres estilos listos; Radix directamente si diseñas tu propio sistema. |
+| [tailwindcss](tailwindcss.md) | Estilar las primitivas sin estilos con clases utilitarias. (combinación por arquitectura) | Configura Tailwind y aplica clases a cada parte de la primitiva. |
+| [Lucide](lucide.md) | Iconos para triggers y menús. (combinación por arquitectura) | Instala lucide-react. |
+| [normalize.css](normalize-css.md) | Combinación recíproca: normalize.css lo enlaza como «Base de estilos coherente para primitivas sin estilos en proyectos sin Tailwind. (combinación por arquitectura)». | Orden indicado desde normalize.css: Importa normalize.css antes de tus estilos propios. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-14 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/radix-ui/primitives/blob/main/README.md) · [2](https://www.radix-ui.com/primitives/docs/overview/introduction)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los comandos pnpm del README preparan el repositorio de contribución; para usarlo sigue la instalación de la primitiva en la guía |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelos ni API; alojamiento es independiente |
 | Equipo | Preparación según la ruta elegida. React; Node; estilos propios |
-
-Los comandos pnpm del README preparan el repositorio de contribución; para usarlo sigue la instalación de la primitiva en la guía
-
-## Qué puedes hacer con él
-
-Componentes React sin estilos y accesibles para construir sistemas de diseño propios.
-
-## Por qué destaca
-
-Usos propuestos: Construir un menú accesible; Crear un sistema de diseño sin estilos impuestos.
-
-## Cómo funciona
 
 Los comandos pnpm del README preparan el repositorio de contribución; para usarlo sigue la instalación de la primitiva en la guía
 
@@ -85,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; Node; estilos propios
 - **Etiquetas:** `ui` `react` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Enlaces
 
