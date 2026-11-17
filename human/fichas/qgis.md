@@ -69,15 +69,21 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 2. Sigue su guía de inicio y configura únicamente la función que necesitas probar.
 3. Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/qgis/QGIS/blob/master/README.md)
+```
+git clone https://github.com/qgis/QGIS.git
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «3.6. Check out the QGIS Source Code»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
 [Abrir la web o descarga indicada por el autor](https://qgis.org)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar QGIS para mi objetivo y necesito pasos guiados. Lee https://github.com/qgis/QGIS/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar QGIS para mi objetivo y necesito pasos guiados. Lee https://github.com/qgis/QGIS/blob/master/INSTALL.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

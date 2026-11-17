@@ -18,13 +18,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ia-u
 - Equipo: Preparación según la ruta elegida. Node; agente con acceso de navegador; web propia o referencia autorizada
 **Repo:** https://github.com/JCodesMore/ai-website-cloner-template
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md
+docker compose up app --build
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -110,13 +110,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typ
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/chakra-ui/chakra-ui
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/chakra-ui/chakra-ui/blob/main/README.md
+yarn add @chakra-ui/react @emotion/react
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: construir el panel de un SaaS con componentes accesibles y tema propio; crear un sistema de diseño con tokens y recetas de estilo
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -172,13 +172,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,des
 - Equipo: Preparación según la ruta elegida. Proyecto con Tailwind compatible; Node y gestor de paquetes
 **Repo:** https://github.com/saadeghi/daisyui
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://daisyui.com/docs/install/
+npm i -D daisyui@latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -356,13 +356,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,des
 - Equipo: Preparación según la ruta elegida. Paquete para tu framework o archivos SVG; proyecto web
 **Repo:** https://github.com/lucide-icons/lucide
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://lucide.dev/guide/
+pnpm add lucide-static
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -509,13 +509,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=anthropic · tags=desi
 - Equipo: Preparación según la ruta elegida. Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI
 **Repo:** https://github.com/onlook-dev/onlook
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.onlook.com/developers/running-locally
+docker-compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -727,13 +727,13 @@ role=app · exec=cloud · setup=easy · mcp=False · prov=openai,anthropic,googl
 - Equipo: Preparación según la ruta elegida. Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview
 **Repo:** https://github.com/abi/screenshot-to-code
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/abi/screenshot-to-code/blob/main/README.md
+docker-compose up -d --build
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

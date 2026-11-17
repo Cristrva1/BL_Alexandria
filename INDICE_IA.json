@@ -21196,7 +21196,7 @@
    "github_id": 1277471539,
    "gh": "bilawalsidhu/gods-eye-view",
    "lang": "JavaScript",
-   "license": "NOASSERTION",
+   "license": "MIT (solo código)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -23634,7 +23634,7 @@
    "github_id": 29011477,
    "gh": "konvajs/konva",
    "lang": "TypeScript",
-   "license": "NOASSERTION",
+   "license": "MIT",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -24905,7 +24905,7 @@
    "github_id": 633262635,
    "gh": "onyx-dot-app/onyx",
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "MIT + Onyx Enterprise License (ee/)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [

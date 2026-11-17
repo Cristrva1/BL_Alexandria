@@ -68,13 +68,19 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.
 3. Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/mlc-ai/mlc-llm/blob/main/README.md)
+```
+git clone --recursive https://github.com/mlc-ai/mlc-llm.git && cd mlc-llm/
+```
+
+Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Option 2. Build from Source¶»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://llm.mlc.ai/docs/install/mlc_llm)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar MLC LLM para mi objetivo y necesito pasos guiados. Lee https://github.com/mlc-ai/mlc-llm/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar MLC LLM para mi objetivo y necesito pasos guiados. Lee https://llm.mlc.ai/docs/install/mlc_llm. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

@@ -83,13 +83,19 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
 3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/lancedb/lancedb/blob/main/README.md)
+```
+pip install lancedb pandas
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «1\. Install LanceDB {1-install-lancedb}»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/lancedb/lancedb/blob/main/docs/web/quickstart.mdx)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar LanceDB para mi objetivo y necesito pasos guiados. Lee https://github.com/lancedb/lancedb/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar LanceDB para mi objetivo y necesito pasos guiados. Lee https://github.com/lancedb/lancedb/blob/main/docs/web/quickstart.mdx. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

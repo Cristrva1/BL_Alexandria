@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 85.5k | NOASSERTION | TypeScript | 2026-11-10 |
+| 85.5k | LobeHub Community License (Apache-2.0 + condiciones) | TypeScript | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación sencilla; varios servicios con Docker Compose
 
 **Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** LobeHub Community License (Apache-2.0 + condiciones). Las obras derivadas distribuidas comercialmente requieren licencia. Fuente: [LICENSE](https://github.com/lobehub/lobehub/blob/canary/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

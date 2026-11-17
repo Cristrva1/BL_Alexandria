@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 18.2k | NOASSERTION | Python | 2026-11-10 |
+| 18.2k | Multilicencia por ruta (Apache-2.0, AGPL-3.0, CC-BY-4.0) | Python | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media
 
 **Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Multilicencia por ruta (Apache-2.0, AGPL-3.0, CC-BY-4.0). Fuente: [LICENSE](https://github.com/Canner/WrenAI/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

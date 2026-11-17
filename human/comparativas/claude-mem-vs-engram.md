@@ -14,7 +14,7 @@
 | Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
-| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | `brew install gentleman-programming/tap/engram` |
 
 ## Regla práctica
 

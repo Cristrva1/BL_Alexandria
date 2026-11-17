@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 159k | NOASSERTION | Svelte | 2026-11-10 |
+| 159k | Open WebUI License (BSD-3-Clause + cláusula de marca) | Svelte | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Open WebUI License (BSD-3-Clause + cláusula de marca). Prohíbe quitar o cambiar la marca Open WebUI salvo excepciones. Fuente: [LICENSE](https://github.com/open-webui/open-webui/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

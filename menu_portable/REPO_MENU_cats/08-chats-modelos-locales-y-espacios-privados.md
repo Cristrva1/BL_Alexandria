@@ -79,13 +79,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=chats,ass
 - Equipo: Preparación según la ruta elegida. Instalador Community para tu sistema; proveedor o instancia Ollama
 **Repo:** https://github.com/chatboxai/chatbox
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/chatboxai/chatbox/blob/main/README.md
+git clone https://github.com/chatboxai/chatbox.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con varios proveedores; Probar un modelo local desde escritorio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -201,13 +201,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=agents,ui,
 - Equipo: Preparación según la ruta elegida. Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local
 **Repo:** https://github.com/fathah/hermes-desktop
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/fathah/hermes-desktop/blob/main/README.md
+npm install hermes-desktop
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -231,13 +231,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=local,openai · tags=c
 - Equipo: Preparación según la ruta elegida. Instalador de escritorio oficial; RAM y disco; modelo compatible
 **Repo:** https://github.com/janhq/jan
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://jan.ai/docs
+git clone https://github.com/janhq/jan
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -262,13 +262,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,lo
 - Equipo: Preparación según la ruta elegida. Ruta self-host o cuenta Cloud; modelo; notas de prueba
 **Repo:** https://github.com/khoj-ai/khoj
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.khoj.dev/get-started/setup
+python -m pip install 'khoj[local]'
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar notas desde Obsidian; Crear un asistente de investigación personal
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -293,13 +293,13 @@ role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=infere
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/LostRuins/koboldcpp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/LostRuins/koboldcpp/blob/concedo/README.md
+git clone https://github.com/LostRuins/koboldcpp.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama
 **Evita si:** no quieres preparar modelos, dependencias y hardware propios
@@ -355,13 +355,13 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=in
 - Equipo: Preparación según la ruta elegida. Binario o compilación para tu sistema; modelo GGUF; memoria suficiente
 **Repo:** https://github.com/ggml-org/llama.cpp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ggml-org/llama.cpp/blob/master/README.md
+curl -LsSf https://llama.app/install.sh | sh
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -386,13 +386,13 @@ role=runtime · exec=local · setup=easy · mcp=False · prov=local · tags=infe
 - Equipo: Preparación según la ruta elegida. Ejecutable oficial del modelo; RAM y disco; instrucciones de tu sistema
 **Repo:** https://github.com/mozilla-ai/llamafile
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/mozilla-ai/llamafile/blob/main/README.md
+git clone https://github.com/mozilla-ai/llamafile.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Distribuir una demo local de un LLM; Probar inferencia sin montar un servidor complejo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -541,13 +541,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=infer
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/mlc-ai/mlc-llm
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/mlc-ai/mlc-llm/blob/main/README.md
+git clone --recursive https://github.com/mlc-ai/mlc-llm.git && cd mlc-llm/
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: ejecutar un LLM en un móvil o en el navegador sin servidor; servir un modelo en GPU AMD, Intel o Apple con una API compatible con OpenAI
 **Evita si:** no quieres preparar modelos, dependencias y hardware propios
@@ -662,13 +662,13 @@ role=library · exec=cloud · setup=easy · mcp=True · prov=— · tags=noteboo
 - Equipo: Preparación según la ruta elegida. Python y uv o pipx; sesión Google; Chromium para login; notebook de prueba
 **Repo:** https://github.com/teng-lin/notebooklm-py
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/teng-lin/notebooklm-py/blob/main/README.md
+uv tool install "notebooklm-py[browser]"
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar consultas documentales; Exportar mapas o resúmenes propios
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -725,13 +725,13 @@ role=runtime · exec=local · setup=easy · mcp=False · prov=local · tags=infe
 - Equipo: Preparación según la ruta elegida. Instalador oficial para tu sistema; RAM y disco adecuados al modelo
 **Repo:** https://github.com/ollama/ollama
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.ollama.com/quickstart
+pip install ollama
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un LLM local; Conectar un modelo local a Codex CLI
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -756,13 +756,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=notebook
 - Equipo: Preparación según la ruta elegida. Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba
 **Repo:** https://github.com/lfnovo/open-notebook
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/lfnovo/open-notebook/blob/main/docs/0-START-HERE/quick-start-local.md
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -818,13 +818,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=local,openai ·
 - Equipo: Preparación según la ruta elegida. Servidor LLM compatible OpenAI; Python 3.11 o distribución adecuada; documentos de prueba
 **Repo:** https://github.com/zylon-ai/private-gpt
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.privategpt.dev/getting-started/quickstart
+brew install private-gpt
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -849,13 +849,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=chatbot
 - Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/SillyTavern/SillyTavern
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/SillyTavern/SillyTavern/blob/release/.github/readme.md
+git clone https://github.com/SillyTavern/SillyTavern -b release
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: escribir historias o partidas de rol con personajes y memoria persistente; probar el mismo prompt contra varios modelos locales y remotos
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -879,13 +879,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tag
 - Equipo: Preparación según la ruta elegida. Instalador para tu sistema; modelo local o remoto; LibreOffice solo para conversiones Office
 **Repo:** https://github.com/MODSetter/SurfSense
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/MODSetter/SurfSense/blob/main/README.md
+curl -fsSL https://raw.githubusercontent.com/MODSetter/SurfSense/main/docker/scripts/install.sh \| bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -910,13 +910,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=local · tags=chatbo
 - Equipo: Preparación según la ruta elegida. Distribución portable apropiada a tu GPU o CPU; modelo GGUF
 **Repo:** https://github.com/oobabooga/textgen
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/oobabooga/textgen/blob/main/README.md
+docker compose up --build
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

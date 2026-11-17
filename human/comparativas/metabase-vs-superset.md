@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
-| Licencia | NOASSERTION | Apache-2.0 |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | AGPL-3.0 + licencia comercial (enterprise/) | Apache-2.0 |
+| Instalación | `npm install -g @metabase/cli` | `docker compose -f docker-compose-image-tag.yml up` |
 
 ## Regla práctica
 
