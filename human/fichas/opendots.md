@@ -46,7 +46,7 @@ Grupo **Espacios de asistentes de CopilotKit**: OpenDots ocupa la posición 2 de
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [OpenBot](openbot.md) ⭐ recomendado | 67 | Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
+| 1 | [OpenBot](openbot.md) ⭐ recomendado | 70 | Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
 | 2 | **OpenDots** (esta ficha) | 48 | Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. |
 
 ## Acceso, coste y equipo

@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -36,9 +36,9 @@ Componentes: agente (C/C++) en cada equipo, servidor de gestión, indexador y pa
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (18). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (19). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Atomic Red Team](atomic-red-team.md) · [Autopsy](autopsy.md) · [CALDERA](caldera.md) · [Elastic detection-rules](detection-rules.md) · [Empire](empire.md) · [Evilginx2](evilginx2.md) · [Fail2ban](fail2ban.md) · [Falco](falco.md) · [MISP](misp.md) · [Mythic](mythic.md) · [OpenCTI](opencti.md) · [osquery](osquery.md) · [Security Onion](securityonion.md) · [Shuffle](shuffle.md) · [Sigma](sigma.md) · [Suricata](suricata.md) · [Velociraptor](velociraptor.md) · [Zeek](zeek.md)
+[Atomic Red Team](atomic-red-team.md) · [Autopsy](autopsy.md) · [CALDERA](caldera.md) · [Elastic detection-rules](detection-rules.md) · [Empire](empire.md) · [Evilginx2](evilginx2.md) · [Fail2ban](fail2ban.md) · [Falco](falco.md) · [MISP](misp.md) · [ModSecurity](modsecurity.md) · [Mythic](mythic.md) · [OpenCTI](opencti.md) · [osquery](osquery.md) · [Security Onion](securityonion.md) · [Shuffle](shuffle.md) · [Sigma](sigma.md) · [Suricata](suricata.md) · [Velociraptor](velociraptor.md) · [Zeek](zeek.md)
 
 **Notas:** La curva de aprendizaje de reglas y decodificadores es alta; empieza con pocas fuentes.
 

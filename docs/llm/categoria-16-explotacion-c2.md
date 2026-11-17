@@ -18,16 +18,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `metasploit` | Framework de referencia para pruebas de penetración: módulos de exploits… | 3 Avanzado | 72 | BSD-3-Clause (OSI copyleft) | sin grupo |
+| `metasploit` | Framework de referencia para pruebas de penetración: módulos de exploits… | 3 Avanzado | 73 | BSD-3-Clause (OSI copyleft) | sin grupo |
 | `peass-ng` | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de… | 3 Avanzado | 72 | GPL-2.0-or-later (con aclaraciones) (OSI copyleft) | sin grupo |
-| `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 70 | GPL-3.0 (OSI copyleft) | recomendado |
-| `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 64 | MIT (OSI permisiva) | recomendado |
-| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 62 | Apache-2.0 (OSI permisiva) | alternativa |
-| `empire` | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma… | 4 Experto | 58 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `evilginx2` | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 54 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `mythic` | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía… | 4 Experto | 50 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `social-engineer-toolkit` | Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y… | 3 Avanzado | 47 | — (sin licencia detectada) | sin grupo |
-| `ligolo-ng` | Túneles de pivoting modernos (agente/proxy) para moverse por redes de un… | 3 Avanzado | 46 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 72 | GPL-3.0 (OSI copyleft) | recomendado |
+| `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 65 | MIT (OSI permisiva) | recomendado |
+| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 64 | Apache-2.0 (OSI permisiva) | alternativa |
+| `empire` | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma… | 4 Experto | 60 | BSD-3-Clause (OSI permisiva) | alternativa |
+| `evilginx2` | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 55 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `mythic` | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía… | 4 Experto | 51 | BSD-3-Clause (OSI permisiva) | alternativa |
+| `social-engineer-toolkit` | Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y… | 3 Avanzado | 48 | — (sin licencia detectada) | sin grupo |
+| `ligolo-ng` | Túneles de pivoting modernos (agente/proxy) para moverse por redes de un… | 3 Avanzado | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -35,7 +35,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Metasploit Framework (`metasploit`)
 
-- **Repo:** https://github.com/rapid7/metasploit-framework · BSD-3-Clause · nivel 3 · 72/100
+- **Repo:** https://github.com/rapid7/metasploit-framework · BSD-3-Clause · nivel 3 · 73/100
 - **Qué es:** Framework de explotación de código abierto (licencia de estilo BSD; ver COPYING) de Rapid7 y la comunidad. Estándar del sector desde hace más de 15 años; Rapid7 vende Metasploit Pro aparte.
 - **Cuándo elegirlo:** Casos: validar en un laboratorio si una vulnerabilidad conocida es explotable; practicar post-explotación y escalada en máquinas vulnerables de entrenamiento.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; Ruby, Dockerfile, Gemfile, docker-compose.yml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -57,7 +57,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Sliver (`sliver`)
 
-- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 70/100 · recomendado en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 72/100 · recomendado en «Frameworks de C2 y post-explotación»
 - **Qué es:** C2 open source de Bishop Fox orientado a red team y emulación autorizada (alternativa a Cobalt Strike de pago).
 - **Cuándo elegirlo:** Casos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -69,9 +69,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Atomic Red Team (`atomic-red-team`)
 
-- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 64/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 65/100 · recomendado en «Emulación de adversarios»
 - **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
-- **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
@@ -81,7 +81,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 62/100 · alternativa en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100 · alternativa en «Emulación de adversarios»
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
@@ -93,7 +93,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Empire (`empire`)
 
-- **Repo:** https://github.com/BC-SECURITY/Empire · BSD-3-Clause · nivel 4 · 58/100 · alternativa en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/BC-SECURITY/Empire · BSD-3-Clause · nivel 4 · 60/100 · alternativa en «Frameworks de C2 y post-explotación»
 - **Qué es:** Empire de BC-Security (BSD-3).
 - **Cuándo elegirlo:** Casos: listener + stager en un lab Windows; módulos de post-ex en ejercicio red team.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; PowerShell, Dockerfile, pyproject.toml; API de IA: no.
@@ -105,7 +105,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Evilginx2 (`evilginx2`)
 
-- **Repo:** https://github.com/kgretzky/evilginx2 · BSD-3-Clause · nivel 4 · 54/100
+- **Repo:** https://github.com/kgretzky/evilginx2 · BSD-3-Clause · nivel 4 · 55/100
 - **Qué es:** Framework MITM de phishing moderno (BSD-3-Clause) de kgretzky; sucesor de Evilginx 2017.
 - **Cuándo elegirlo:** Casos: entrenar al personal con un phishing MFA controlado; evaluar la detección de reverse-proxy phishing.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Makefile, go.mod; API de IA: no.
@@ -116,7 +116,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Mythic (`mythic`)
 
-- **Repo:** https://github.com/its-a-feature/Mythic · BSD-3-Clause · nivel 4 · 50/100 · alternativa en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/its-a-feature/Mythic · BSD-3-Clause · nivel 4 · 51/100 · alternativa en «Frameworks de C2 y post-explotación»
 - **Qué es:** C2 colaborativo (BSD-3 según LICENSE; API NOASSERTION).
 - **Cuándo elegirlo:** Casos: montar un C2 de lab con un agente oficial; ejercicio purple team multi-operador.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; JavaScript, Makefile; API de IA: no.
@@ -128,7 +128,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SET (`social-engineer-toolkit`)
 
-- **Repo:** https://github.com/trustedsec/social-engineer-toolkit · — · nivel 3 · 47/100
+- **Repo:** https://github.com/trustedsec/social-engineer-toolkit · — · nivel 3 · 48/100
 - **Qué es:** SET de TrustedSec (licencia en readme/LICENSE; API sin SPDX).
 - **Cuándo elegirlo:** Casos: simulación de phishing interna autorizada; entrenamiento de concienciación.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, Dockerfile, pyproject.toml, requirements.txt, setup.py; API de IA: no.
@@ -139,7 +139,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Ligolo-ng (`ligolo-ng`)
 
-- **Repo:** https://github.com/nicocha30/ligolo-ng · GPL-3.0 · nivel 3 · 46/100
+- **Repo:** https://github.com/nicocha30/ligolo-ng · GPL-3.0 · nivel 3 · 47/100
 - **Qué es:** Pivoting tunnel GPL-3.
 - **Cuándo elegirlo:** Casos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Go, Makefile, go.mod; API de IA: no.

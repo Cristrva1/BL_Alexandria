@@ -32,8 +32,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `moneyprinterturbo` | generativo | App que genera videos cortos a partir de un tema: guion con LLM, material de… | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
 | `ltx-2` | generativo | Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `wan2-2` | generativo | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | recomendado |
+| `hunyuanvideo` | generativo | Modelo abierto de Tencent de 13B parámetros para generar video a partir de… | 3 Avanzado | 57 | Tencent Hunyuan Community License (source-available) | alternativa |
 | `wan2gp` | generativo | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan… | 3 Avanzado | 56 | WanGP Community License 2.0 (no OSI) (source-available) | sin grupo |
-| `hunyuanvideo` | generativo | Modelo abierto de Tencent de 13B parámetros para generar video a partir de… | 3 Avanzado | 54 | Tencent Hunyuan Community License (source-available) | alternativa |
 | `ai-youtube-shorts-generator` | generativo | Pipeline de Python que extrae clips verticales de videos de YouTube mediante… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `short-video-factory` | generativo | Aplicación de escritorio para crear videos cortos de producto combinando guion… | 2 Intermedio | 46 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `hunyuanvideo-1-5` | generativo | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o… | 3 Avanzado | 41 | Tencent Hunyuan Community License (source-available) | alternativa |
@@ -221,6 +221,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `hunyuanvideo`, `hunyuanvideo-1-5`
 - **Riesgos y avisos:** Alternativas (elige una): hunyuanvideo, hunyuanvideo-1-5. El ejemplo 5B cita al menos 24 GB VRAM; otros ejemplos 14B citan 80 GB; no extrapoles esos mínimos a interfaces optimizadas de terceros.
 
+### HunyuanVideo (`hunyuanvideo`)
+
+- **Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo · Tencent Hunyuan Community License · nivel 3 · 57/100 · alternativa en «Modelos abiertos de video generativo»
+- **Qué es:** HunyuanVideo, modelo abierto de generación de vídeo de 13B parámetros de Tencent Hunyuan. Usa la Tencent Hunyuan Community License, que excluye expresamente la UE, Reino Unido y Corea del Sur (GitHub muestra NOASSERTION).
+- **Cuándo elegirlo:** Casos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos.
+- **Requisitos:** nivel 3: preparación pesada; Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia; hardware prerequisites; API de IA: no; Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull hunyuanvideo/hunyuanvideo:cuda_12` — fuente: https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Comprueba la resolución y memoria de la tabla antes de generar el ejemplo más pequeño viable Éxito: El clip y sus recursos se pueden comparar con la configuración elegida
+- **Combina con:** `diffusers` [11/modelos], `comfyui` [11/interfaces], `wan2gp`
+- **Alternativas:** `wan2-2`, `hunyuanvideo-1-5`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5. La ruta original cita 45 GB VRAM para 544x960x129 y 60 GB para 720x1280x129; no es una instalación ligera para cualquier laptop.
+
 ### WanGP (`wan2gp`)
 
 - **Repo:** https://github.com/deepbeepmeep/WanGP · WanGP Community License 2.0 (no OSI) · nivel 3 · 56/100
@@ -232,18 +244,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `wan2-2`, `moviepy` [30/motores], `lossless-cut` [12/edicion], `hunyuanvideo-1-5`, `hunyuanvideo`
 - **Alternativas:** `comfyui`
 - **Riesgos y avisos:** Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): comfyui. Licencia propia, no OSI: revísala antes de redistribuir. Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan.
-
-### HunyuanVideo (`hunyuanvideo`)
-
-- **Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo · Tencent Hunyuan Community License · nivel 3 · 54/100 · alternativa en «Modelos abiertos de video generativo»
-- **Qué es:** HunyuanVideo, modelo abierto de generación de vídeo de 13B parámetros de Tencent Hunyuan. Usa la Tencent Hunyuan Community License, que excluye expresamente la UE, Reino Unido y Corea del Sur (GitHub muestra NOASSERTION).
-- **Cuándo elegirlo:** Casos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos.
-- **Requisitos:** nivel 3: preparación pesada; Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia; hardware prerequisites; API de IA: no; Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull hunyuanvideo/hunyuanvideo:cuda_12` — fuente: https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Comprueba la resolución y memoria de la tabla antes de generar el ejemplo más pequeño viable Éxito: El clip y sus recursos se pueden comparar con la configuración elegida
-- **Combina con:** `diffusers` [11/modelos], `comfyui` [11/interfaces], `wan2gp`
-- **Alternativas:** `wan2-2`, `hunyuanvideo-1-5`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): wan2-2, hunyuanvideo-1-5. La licencia no aplica en la UE, Reino Unido ni Corea del Sur; para proyectos nuevos valora HunyuanVideo-1.5. La ruta original cita 45 GB VRAM para 544x960x129 y 60 GB para 720x1280x129; no es una instalación ligera para cualquier laptop.
 
 ### AI-Youtube-Shorts-Generator (`ai-youtube-shorts-generator`)
 

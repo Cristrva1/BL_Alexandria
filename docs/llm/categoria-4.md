@@ -198,7 +198,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/getmaxun/maxun · AGPL-3.0 · nivel 2 · 70/100 · alternativa en «Scraping guiado por LLM»
 - **Qué es:** Plataforma open source de datos web para scraping, crawling, búsqueda, monitorización y extracción con IA, de getmaxun. Licencia AGPL-3.0. Es activa (~18k estrellas) pero joven (v0.1.0) y muestra patrocinadores de proxies.
 - **Cuándo elegirlo:** Casos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo.
-- **Requisitos:** nivel 2: preparación media; Docker; cuenta local; modelo solo para funciones AI; hardware prerequisites; API de IA: opcional; Docker; cuenta local; modelo solo para funciones AI.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Docker; cuenta local; modelo solo para funciones AI; hardware prerequisites; API de IA: opcional; Docker; cuenta local; modelo solo para funciones AI.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/getmaxun/maxun/blob/develop/SETUP.md
 - **Primera prueba propuesta (no ejecutada):** Graba un robot que recoge nombres y precios de una página de prueba Éxito: El robot devuelve filas que puedes repetir y comparar
 - **Combina con:** `claude-code` [20/terminal], `activepieces` [1/motores], `changedetection` [4/busqueda]

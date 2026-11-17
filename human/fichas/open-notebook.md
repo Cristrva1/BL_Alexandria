@@ -10,7 +10,7 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-**Nivel:** 2 Intermedio — preparación media
+**Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
 **Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
@@ -50,7 +50,7 @@ Grupo **Alternativas a NotebookLM**: open-notebook ocupa la posición 1 de 2 (re
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **open-notebook** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
-| 2 | [SurfSense](surfsense.md) | 62 | Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
+| 2 | [SurfSense](surfsense.md) | 64 | Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
 ## Acceso, coste y equipo
 

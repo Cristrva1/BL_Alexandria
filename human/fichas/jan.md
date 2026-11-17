@@ -54,8 +54,8 @@ Grupo **Interfaces de chat con LLM**: Jan ocupa la posición 5 de 8 (alternativa
 | 4 | [LibreChat](librechat.md) | 68 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
 | 5 | **Jan** (esta ficha) | 65 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
 | 6 | [NextChat](nextchat.md) | 63 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
-| 7 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
-| 8 | [Text Generation WebUI](textgen.md) | 50 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
+| 7 | [Text Generation WebUI](textgen.md) | 53 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
+| 8 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
 
 ## Acceso, coste y equipo
 

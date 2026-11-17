@@ -10,7 +10,7 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
-**Nivel:** 1 Básico — preparación sencilla
+**Nivel:** 2 Intermedio — preparación sencilla; varios servicios con Docker Compose
 
 **Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 

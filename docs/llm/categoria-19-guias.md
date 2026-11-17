@@ -104,7 +104,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/huggingface/agents-course · Apache-2.0 · nivel 1 · 60/100
 - **Qué es:** Curso de código abierto (Apache-2.0) de Hugging Face. Muy popular; contenido estable con unidades extra añadidas con el tiempo.
-- **Cuándo elegirlo:** Casos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; MDX; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/huggingface/agents-course/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo. Éxito: Construyes un agente sencillo que usa una herramienta.

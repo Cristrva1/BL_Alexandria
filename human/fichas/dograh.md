@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,8 +48,8 @@ Grupo **Agentes de voz en tiempo real**: dograh ocupa la posición 3 de 4 (alter
 |---:|---|---:|---|
 | 1 | [Pipecat](pipecat.md) ⭐ recomendado | 73 | Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables. |
 | 2 | [LiveKit Agents](livekit-agents.md) | 73 | Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada. |
-| 3 | **dograh** (esta ficha) | 60 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
-| 4 | [TEN Framework](ten-framework.md) | 43 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
+| 3 | **dograh** (esta ficha) | 62 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
+| 4 | [TEN Framework](ten-framework.md) | 46 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
 
 ## Acceso, coste y equipo
 

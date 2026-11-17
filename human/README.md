@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-891 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+919 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -24,7 +24,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
 | [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 74 |
-| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 124 |
+| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 152 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 111 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 25 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 64 |
@@ -59,7 +59,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 13 | [📄 PDF, OCR y procesamiento de documentos](categorias/13-documentos-presentaciones.md) | 22 | [Docling](fichas/docling.md), [PaddleOCR](fichas/paddleocr.md), [OCRmyPDF](fichas/ocrmypdf.md), [Stirling-PDF](fichas/stirling-pdf.md) |
 | 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 23 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md), [machine-learning-for-trading](fichas/machine-learning-for-trading.md) |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](categorias/15-notas-archivos-y-servicios-personales.md) | 50 | [Anytype Desktop](fichas/anytype-ts.md) |
-| 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 113 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
+| 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 141 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](categorias/17-mensajeria-chatbots.md) | 18 | [whatsapp-web.js](fichas/whatsapp-web-js.md), [Typebot](fichas/typebot.md) |
 | 18 | [🤖 CRM, ventas y marketing](categorias/18-crm-ventas-marketing.md) | 19 | [Odoo](fichas/odoo.md), [novu](fichas/novu.md) |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](categorias/19-aprender-ia-prompts.md) | 30 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md), [Fabric](fichas/fabric.md), [Generative AI for Beginners](fichas/generative-ai-for-beginners.md), [AI Agents for Beginners](fichas/ai-agents-for-beginners.md), [LLM Course](fichas/llm-course.md) |

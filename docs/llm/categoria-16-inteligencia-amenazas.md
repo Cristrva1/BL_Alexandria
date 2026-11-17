@@ -18,8 +18,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `opencti` | Plataforma de threat intel orientada a grafos (Filigran): Community Edition… | 3 Avanzado | 71 | Apache-2.0 (Community) + licencia Enterprise (open-core) | sin grupo |
-| `misp` | Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y… | 3 Avanzado | 50 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `opencti` | Plataforma de threat intel orientada a grafos (Filigran): Community Edition… | 3 Avanzado | 75 | Apache-2.0 (Community) + licencia Enterprise (open-core) | sin grupo |
+| `misp` | Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y… | 3 Avanzado | 51 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -27,7 +27,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenCTI (`opencti`)
 
-- **Repo:** https://github.com/OpenCTI-Platform/opencti · Apache-2.0 (Community) + licencia Enterprise · nivel 3 · 71/100
+- **Repo:** https://github.com/OpenCTI-Platform/opencti · Apache-2.0 (Community) + licencia Enterprise · nivel 3 · 75/100
 - **Qué es:** Plataforma de threat intel de Filigran. Open-core: Community Edition Apache-2.0; Enterprise Edition (playbooks, SSO por UI, IA/NLP, PIR, auditoría) con licencia de pago.
 - **Cuándo elegirlo:** Casos: modelar una campaña APT con relaciones STIX; centralizar feeds y casos de amenaza del SOC.
 - **Requisitos:** nivel 3: Docker Compose con varios servicios (Elastic, Redis, RabbitMQ); TypeScript, package.json; API de IA: no.
@@ -38,7 +38,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MISP (`misp`)
 
-- **Repo:** https://github.com/MISP/MISP · AGPL-3.0 · nivel 3 · 50/100
+- **Repo:** https://github.com/MISP/MISP · AGPL-3.0 · nivel 3 · 51/100
 - **Qué es:** Proyecto AGPL de compartir información de amenazas usado por CERTs y SOCs.
 - **Cuándo elegirlo:** Casos: compartir IOCs de un incidente interno con un partner; ingerir un feed OSINT y enriquecer alertas del SIEM.
 - **Requisitos:** nivel 3: plataforma de inteligencia con Docker; requiere curar feeds; PHP, requirements.txt; API de IA: no.

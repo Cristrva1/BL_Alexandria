@@ -19,10 +19,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `pi-hole` | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar… | 1 Básico | 68 | EUPL-1.2 (OSI copyleft) | recomendado |
-| `keycloak` | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | recomendado |
-| `authentik` | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 64 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | alternativa |
+| `authentik` | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 67 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | recomendado |
+| `keycloak` | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | alternativa |
+| `vaultwarden` | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 67 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `vault` | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. | 3 Avanzado | 64 | BUSL-1.1 (source-available) | sin grupo |
-| `vaultwarden` | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 64 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `age` | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña… | 1 Básico | 61 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `bitwarden-clients` | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar… | 1 Básico | 61 | GPL-3.0 + Bitwarden License (bitwarden_license/) (OSI copyleft) | sin grupo |
 | `adguardhome` | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | alternativa |
@@ -45,20 +45,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `adguardhome`
 - **Riesgos y avisos:** Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.
 
-### Keycloak (`keycloak`)
-
-- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 67/100 · recomendado en «Proveedores de identidad y SSO»
-- **Qué es:** IdP Apache-2.0 de Keycloak.
-- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
-- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
-- **Combina con:** `vault`, `caddy` [22/infraestructura]
-- **Alternativas:** `authentik`
-
 ### authentik (`authentik`)
 
-- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 64/100 · alternativa en «Proveedores de identidad y SSO»
+- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 67/100 · recomendado en «Proveedores de identidad y SSO»
 - **Qué es:** Identity provider (MIT + enterprise/ propietaria).
 - **Cuándo elegirlo:** Casos: SSO delante de apps autoalojadas; MFA centralizado para el lab.
 - **Requisitos:** nivel 3: proveedor de identidad con Docker Compose y flujos a configurar; Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml; API de IA: no.
@@ -67,6 +56,29 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `vaultwarden`, `caddy` [22/infraestructura]
 - **Alternativas:** `keycloak`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### Keycloak (`keycloak`)
+
+- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 67/100 · alternativa en «Proveedores de identidad y SSO»
+- **Qué es:** IdP Apache-2.0 de Keycloak.
+- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
+- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
+- **Combina con:** `vault`, `caddy` [22/infraestructura]
+- **Alternativas:** `authentik`
+
+### vaultwarden (`vaultwarden`)
+
+- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 67/100 · recomendado en «Gestores de contraseñas»
+- **Qué es:** Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5).
+- **Cuándo elegirlo:** Casos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
+- **Requisitos:** nivel 2: un contenedor; requiere HTTPS y copias de seguridad; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia; hardware prerequisites; API de IA: no; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull vaultwarden/server:latest` — fuente: https://github.com/dani-garcia/vaultwarden/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Conecta un cliente Bitwarden a una instancia de prueba y guarda un registro ficticio Éxito: Puedes reconocer la URL de servidor y recuperar el registro
+- **Combina con:** `bitwarden-clients`, `coolify` [22/infraestructura], `adguardhome`
+- **Alternativas:** `keepassxc`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token. Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden.
 
 ### HashiCorp Vault (`vault`)
 
@@ -78,18 +90,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Arranca Vault en modo dev (`vault server -dev`) según docs y escribe un secreto KV. Éxito: Lees el secreto con la CLI.
 - **Combina con:** `sops`, `age`, `vaultwarden`
 - **Riesgos y avisos:** BSL (source-available): no es OSI; revisa usos comerciales y la fecha de cambio de licencia. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
-### vaultwarden (`vaultwarden`)
-
-- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 64/100 · recomendado en «Gestores de contraseñas»
-- **Qué es:** Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5).
-- **Cuándo elegirlo:** Casos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
-- **Requisitos:** nivel 2: un contenedor; requiere HTTPS y copias de seguridad; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia; hardware prerequisites; API de IA: no; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull vaultwarden/server:latest` — fuente: https://github.com/dani-garcia/vaultwarden/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Conecta un cliente Bitwarden a una instancia de prueba y guarda un registro ficticio Éxito: Puedes reconocer la URL de servidor y recuperar el registro
-- **Combina con:** `bitwarden-clients`, `coolify` [22/infraestructura], `adguardhome`
-- **Alternativas:** `keepassxc`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token. Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden.
 
 ### age (`age`)
 

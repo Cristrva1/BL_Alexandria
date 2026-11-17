@@ -35,6 +35,7 @@ Es Java (requiere Java 11+); se instala desde las releases, con `brew install ja
 | [ghidra](ghidra.md) | Analizar las librerías nativas `.so` que JADX no cubre. (combinación por arquitectura) | Extrae `lib/` de la APK y ábrelas en Ghidra. |
 | [rea](rea.md) | Combinación recíproca: rea lo enlaza como «Análisis de APK mediante JADX headless». | Orden indicado desde rea: Instala JADX y un JDK completo. |
 | [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Herramienta móvil de la lista. (combinación por arquitectura)». | Orden indicado desde awesome-ai-reverse-engineering: Úsalo con un servidor MCP de Android si lo necesitas. |
+| [OWASP MASTG](mastg.md) | Combinación recíproca: OWASP MASTG lo enlaza como «jadx decompila a Java para revisar la lógica de la app». | Orden indicado desde OWASP MASTG: Abre la APK en jadx durante las pruebas estáticas. |
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

@@ -10,9 +10,9 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-**Nivel:** 1 Básico — preparación sencilla
+**Nivel:** 2 Intermedio — preparación sencilla; varios servicios con Docker Compose
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,8 +46,8 @@ Grupo **Finanzas personales**: Actual Budget ocupa la posición 1 de 2 (recomend
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Actual Budget** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. |
-| 2 | [Firefly III](firefly-iii.md) | 59 | Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. |
+| 1 | **Actual Budget** (esta ficha) ⭐ recomendado | 73 | Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. |
+| 2 | [Firefly III](firefly-iii.md) | 62 | Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. |
 
 ## Acceso, coste y equipo
 

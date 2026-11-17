@@ -26,8 +26,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `grafana` | bi | Plataforma de visualización y observabilidad para métricas, logs y trazas de… | 2 Intermedio | 80 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `metabase` | bi | Herramienta de dashboards y BI para explorar métricas de negocio conectando… | 2 Intermedio | 67 | AGPL-3.0 + licencia comercial (enterprise/) (open-core) | alternativa |
 | `evidence` | bi | BI como código: informes y visualizaciones interactivas escritos en SQL y… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
+| `redash` | bi | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y… | 2 Intermedio | 57 | BSD-2-Clause (OSI permisiva) | alternativa |
 | `wrenai` | bi | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica… | 2 Intermedio | 57 | Multilicencia por ruta (Apache-2.0, AGPL-3.0, CC-BY-4.0) (OSI copyleft) | sin grupo |
-| `redash` | bi | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y… | 2 Intermedio | 54 | BSD-2-Clause (OSI permisiva) | alternativa |
 | `echarts` | graficos | Librería de visualización potente para gráficos y dashboards web (proyecto… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | recomendado |
 | `d3` | graficos | Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y… | 2 Intermedio | 70 | ISC (OSI permisiva) | alternativa |
 | `recharts` | graficos | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 69 | MIT (OSI permisiva) | alternativa |
@@ -37,8 +37,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `data-analyst-roadmap` | recursos | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 41 | MIT (OSI permisiva) | sin grupo |
 | `gods-eye-view` | osint | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 68 | MIT (solo código) (OSI permisiva) | recomendado |
 | `sherlock` | osint | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios… | 1 Básico | 67 | MIT (OSI permisiva) | recomendado |
+| `theharvester` | osint | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 2 Intermedio | 66 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `maigret` | osint | Recopila un dossier sobre una persona a partir de un nombre de usuario… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `theharvester` | osint | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 1 Básico | 62 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `osiris` | osint | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
 | `pythia` | osint | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 50 | MIT (OSI permisiva) | sin grupo |
 | `recon-ng` | osint | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
@@ -47,8 +47,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `kepler.gl` | geoespacial | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
 | `deck.gl` | geoespacial | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
 | `qgis` | geoespacial | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
-| `odm` | geoespacial | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `webodm` | geoespacial | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 57 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `webodm` | geoespacial | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `odm` | geoespacial | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -112,7 +112,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/apache/superset · Apache-2.0 · nivel 2 · 82/100 · recomendado en «BI y dashboards»
 - **Qué es:** Apache Superset, aplicación web de BI de la Apache Software Foundation. Licencia Apache-2.0. Es muy madura (~76k estrellas, 6.1.0).
 - **Cuándo elegirlo:** Casos: Explorar métricas de una base SQL; Compartir un dashboard interno.
-- **Requisitos:** nivel 2: preparación media; Entorno del quickstart; motor SQL; driver de conexión; datos ficticios; hardware prerequisites; API de IA: no; Entorno del quickstart; motor SQL; driver de conexión; datos ficticios.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Entorno del quickstart; motor SQL; driver de conexión; datos ficticios; hardware prerequisites; API de IA: no; Entorno del quickstart; motor SQL; driver de conexión; datos ficticios.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose -f docker-compose-image-tag.yml up` — fuente: https://github.com/apache/superset/blob/master/docs/docs/quickstart.mdx
 - **Primera prueba propuesta (no ejecutada):** Conecta una tabla de ventas ficticias y crea un gráfico por mes Éxito: El gráfico coincide con una suma SQL verificable
 - **Combina con:** `duckdb` [25/datos], `wrenai`, `echarts` [10/graficos], `hudi` [25/datos], `kestra` [1/motores], `deck.gl` [10/geoespacial]
@@ -153,6 +153,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `duckdb` [25/datos], `claude-code` [20/terminal], `supabase` [22/infraestructura]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas cercanas en el catálogo: metabase, superset.
 
+### Redash (`redash`)
+
+- **Repo:** https://github.com/getredash/redash · BSD-2-Clause · nivel 2 · 57/100 · alternativa en «BI y dashboards»
+- **Qué es:** Redash, herramienta para consultar fuentes de datos con SQL, visualizar y compartir resultados. Licencia BSD-2-Clause. Es madura (~29k estrellas) y sigue publicando versiones (v26.9.0).
+- **Cuándo elegirlo:** Casos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Servidor según guía; fuente de datos; SQL básico; hardware prerequisites; API de IA: no; Servidor según guía; fuente de datos; SQL básico.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/getredash/redash/blob/master/docs/open-source/setup.md
+- **Primera prueba propuesta (no ejecutada):** Ejecuta una consulta sobre una tabla ficticia y conviértela en una gráfica Éxito: Puedes revisar consulta, filas y visualización del mismo resultado
+- **Combina con:** `duckdb` [25/datos], `supabase` [22/infraestructura], `activepieces` [1/motores]
+- **Alternativas:** `superset`, `metabase`
+- **Riesgos y avisos:** Alternativas (elige una): metabase, superset. La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas.
+
 ### WrenAI (`wrenai`)
 
 - **Repo:** https://github.com/Canner/WrenAI · Multilicencia por ruta (Apache-2.0, AGPL-3.0, CC-BY-4.0) · nivel 2 · 57/100
@@ -169,18 +181,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Pide usar la muestra jaffle_shop y explica una métrica antes de generar su consulta Éxito: Puedes revisar definición, SQL y resultado sobre la muestra
 - **Combina con:** `claude-code` [20/terminal], `duckdb` [25/datos], `langchain` [3/py], `superset`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago. La capa semántica no garantiza SQL correcto sin definiciones y revisión; la guía actual usa CLI más skills, no solo una app de chat.
-
-### Redash (`redash`)
-
-- **Repo:** https://github.com/getredash/redash · BSD-2-Clause · nivel 2 · 54/100 · alternativa en «BI y dashboards»
-- **Qué es:** Redash, herramienta para consultar fuentes de datos con SQL, visualizar y compartir resultados. Licencia BSD-2-Clause. Es madura (~29k estrellas) y sigue publicando versiones (v26.9.0).
-- **Cuándo elegirlo:** Casos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL.
-- **Requisitos:** nivel 2: preparación media; Servidor según guía; fuente de datos; SQL básico; hardware prerequisites; API de IA: no; Servidor según guía; fuente de datos; SQL básico.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/getredash/redash/blob/master/docs/open-source/setup.md
-- **Primera prueba propuesta (no ejecutada):** Ejecuta una consulta sobre una tabla ficticia y conviértela en una gráfica Éxito: Puedes revisar consulta, filas y visualización del mismo resultado
-- **Combina con:** `duckdb` [25/datos], `supabase` [22/infraestructura], `activepieces` [1/motores]
-- **Alternativas:** `superset`, `metabase`
-- **Riesgos y avisos:** Alternativas (elige una): metabase, superset. La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas.
 
 ### echarts (`echarts`)
 
@@ -300,6 +300,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `maigret`
 - **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Alternativas (elige una): maigret.
 
+### theHarvester (`theharvester`)
+
+- **Repo:** https://github.com/laramies/theHarvester · GPL-2.0 · nivel 2 · 66/100
+- **Qué es:** Herramienta OSINT de código abierto (solo GPL-2.0) creada por Christian Martorella (laramies) y mantenida por la comunidad desde hace años. Activa; requiere Python 3.14 y uv.
+- **Cuándo elegirlo:** Casos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build -d` — fuente: https://github.com/laramies/theHarvester/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio. Éxito: La terminal informa del resultado de cada fuente y lista subdominios encontrados.
+- **Combina con:** `sherlock`, `maigret`, `katana` [4/crawlers], `recon-ng`
+- **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Alternativa cercana: recon-ng (framework modular de reconocimiento).
+
 ### Maigret (`maigret`)
 
 - **Repo:** https://github.com/soxoj/maigret · MIT · nivel 1 · 63/100 · alternativa en «Búsqueda de usuarios en redes sociales»
@@ -311,17 +322,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `theharvester`, `claude-code` [20/terminal], `duckdb` [25/datos]
 - **Alternativas:** `sherlock`
 - **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): sherlock. El README incluye patrocinios de proxies y servicios de pago no necesarios para la herramienta.
-
-### theHarvester (`theharvester`)
-
-- **Repo:** https://github.com/laramies/theHarvester · GPL-2.0 · nivel 1 · 62/100
-- **Qué es:** Herramienta OSINT de código abierto (solo GPL-2.0) creada por Christian Martorella (laramies) y mantenida por la comunidad desde hace años. Activa; requiere Python 3.14 y uv.
-- **Cuándo elegirlo:** Casos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada.
-- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build -d` — fuente: https://github.com/laramies/theHarvester/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio. Éxito: La terminal informa del resultado de cada fuente y lista subdominios encontrados.
-- **Combina con:** `sherlock`, `maigret`, `katana` [4/crawlers], `recon-ng`
-- **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Alternativa cercana: recon-ng (framework modular de reconocimiento).
 
 ### osiris (`osiris`)
 
@@ -427,9 +427,21 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `leaflet`, `maplibre`, `webodm`, `duckdb` [25/datos]
 - **Riesgos y avisos:** Curva de aprendizaje alta para análisis avanzado; la documentación oficial y los tutoriales de la comunidad son amplios.
 
+### WebODM (`webodm`)
+
+- **Repo:** https://github.com/WebODM/WebODM · AGPL-3.0 · nivel 3 · 60/100 · recomendado en «Fotogrametría con drones»
+- **Qué es:** WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.
+- **Cuándo elegirlo:** Casos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica.
+- **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
+- **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
+- **Alternativas:** `odm`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
+
 ### ODM (`odm`)
 
-- **Repo:** https://github.com/OpenDroneMap/ODM · AGPL-3.0 · nivel 2 · 58/100 · recomendado en «Fotogrametría con drones»
+- **Repo:** https://github.com/OpenDroneMap/ODM · AGPL-3.0 · nivel 2 · 58/100 · alternativa en «Fotogrametría con drones»
 - **Qué es:** ODM (OpenDroneMap), kit de línea de comandos para procesar imágenes aéreas de drones. Licencia AGPL-3.0. Es maduro (~6.6k estrellas, v3.6.2).
 - **Cuándo elegirlo:** Casos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección.
 - **Requisitos:** nivel 2: preparación media; Docker; fotografías aéreas propias con solapamiento; RAM y disco según lote; hardware prerequisites; API de IA: no; Docker; fotografías aéreas propias con solapamiento; RAM y disco según lote.
@@ -443,18 +455,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos]
 - **Alternativas:** `webodm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm). El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas.
-
-### WebODM (`webodm`)
-
-- **Repo:** https://github.com/WebODM/WebODM · AGPL-3.0 · nivel 3 · 57/100 · alternativa en «Fotogrametría con drones»
-- **Qué es:** WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.
-- **Cuándo elegirlo:** Casos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica.
-- **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
-- **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
-- **Alternativas:** `odm`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -18,7 +18,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `machine-learning-for-trading` | Material y código de Machine Learning for Trading para estudiar datos, modelos… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
+| `machine-learning-for-trading` | Material y código de Machine Learning for Trading para estudiar datos, modelos… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -26,7 +26,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### machine-learning-for-trading (`machine-learning-for-trading`)
 
-- **Repo:** https://github.com/stefan-jansen/machine-learning-for-trading · MIT · nivel 1 · 59/100
+- **Repo:** https://github.com/stefan-jansen/machine-learning-for-trading · MIT · nivel 1 · 62/100
 - **Qué es:** Código de *Machine Learning for Trading* (3.ª edición) de Stefan Jansen: 27 capítulos y nueve casos de estudio. El código es MIT; el contenido del libro está protegido. Es muy popular (~22k estrellas, v3.1.0-artifacts).
 - **Cuándo elegirlo:** Casos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Docker o entorno del capítulo; datasets; cuaderno elegido; hardware prerequisites; API de IA: opcional; Docker o entorno del capítulo; datasets; cuaderno elegido.

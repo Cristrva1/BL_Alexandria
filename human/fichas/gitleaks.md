@@ -34,6 +34,12 @@ Escrito en Go; se instala con Homebrew, Docker, Go o binarios. Se usa como CLI, 
 | [Semgrep](semgrep.md) | Semgrep cubre análisis estático de vulnerabilidades y Gitleaks los secretos: juntos forman una revisión de seguridad básica en CI (combinación por arquitectura). | Configura ambos en el mismo pipeline de CI y revisa sus informes SARIF. |
 | [Claude Code](claude-code.md) | Ejecutar Gitleaks sobre los cambios de un agente antes de publicarlos evita filtrar claves que haya escrito en el código (combinación por arquitectura). | Instala Gitleaks; después añádelo como paso obligatorio antes del commit. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP WrongSecrets](wrongsecrets.md)
+
 **Notas:** Alternativas (elige una): trufflehog. Sucesor declarado por el autor: Betterleaks.
 
 Estado en GitHub: activo · último push 2026-10-28 · última versión publicada v8.30.1 (2026-03-21) · licencia declarada MIT (consultado el 2026-11-16).

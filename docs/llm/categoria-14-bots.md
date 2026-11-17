@@ -22,7 +22,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `freqtrade` | Bot de trading de criptomonedas con herramientas para preparar estrategias… | 2 Intermedio | 78 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `hummingbot` | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `py-sdk` | SDK Python de Polymarket para integrar funciones de su plataforma mediante las… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
-| `open-sol-bot` | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de… | 3 Avanzado | 43 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `open-sol-bot` | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de… | 3 Avanzado | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `binance-trader` | Bot experimental de Python para estudiar estrategias y automatización con la… | 2 Intermedio | 36 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -88,10 +88,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### open-sol-bot (`open-sol-bot`)
 
-- **Repo:** https://github.com/ChainBuff/open-sol-bot · Apache-2.0 · nivel 3 · 43/100
+- **Repo:** https://github.com/ChainBuff/open-sol-bot · Apache-2.0 · nivel 3 · 46/100
 - **Qué es:** OpenSolBot, bot de trading en la cadena Solana, de ChainBuff. Licencia Apache-2.0. Es pequeño (~400 estrellas, v0.2.1) y su último cambio es de diciembre de 2025; su README está en chino.
 - **Cuándo elegirlo:** Casos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain.
-- **Requisitos:** nivel 3: preparación pesada; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones; hardware prerequisites; API de IA: no; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones.
+- **Requisitos:** nivel 3: preparación pesada, varios servicios con Docker Compose; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones; hardware prerequisites; API de IA: no; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/ChainBuff/open-sol-bot/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Examina configuración y rutas de órdenes antes de conectar una wallet o habilitar seguimiento Éxito: Puedes identificar las acciones que consultarían datos y las que moverían fondos
 - **Combina con:** `grafana` [10/bi], `activepieces` [1/motores], `coolify` [22/infraestructura]

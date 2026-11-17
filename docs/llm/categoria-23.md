@@ -21,8 +21,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `vllm` | serving | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de… | 3 Avanzado | 78 | Apache-2.0 (OSI permisiva) | recomendado |
 | `litellm` | serving | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola… | 2 Intermedio | 77 | MIT + licencia Enterprise (litellm/enterprise/) (open-core) | recomendado |
 | `omniroute` | serving | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar… | 3 Avanzado | 76 | MIT (OSI permisiva) | alternativa |
+| `tensorrt-llm` | serving | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de… | 3 Avanzado | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ray` | serving | Motor de cómputo distribuido para IA: escala Python de un portátil a un… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `tensorrt-llm` | serving | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de… | 3 Avanzado | 72 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `sglang` | serving | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | alternativa |
 | `xinference` | serving | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings… | 3 Avanzado | 66 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `gpustack` | serving | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -90,20 +90,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `litellm`, `claude-code-router`, `backdoor`
 - **Riesgos y avisos:** Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM…. Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor.
 
-### Ray (`ray`)
-
-- **Repo:** https://github.com/ray-project/ray · Apache-2.0 · nivel 2 · 74/100
-- **Qué es:** Framework de código abierto (Apache-2.0) creado en UC Berkeley y mantenido por Anyscale, que ofrece una plataforma gestionada. Muy maduro y usado a gran escala.
-- **Cuándo elegirlo:** Casos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install ray` — fuente: https://github.com/ray-project/ray/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo. Éxito: Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso.
-- **Combina con:** `vllm`, `pytorch` [24/entrenamiento], `verl` [24/entrenamiento], `openrlhf` [24/entrenamiento]
-- **Riesgos y avisos:** Para un solo equipo, la complejidad de Ray puede no compensar.
-
 ### TensorRT-LLM (`tensorrt-llm`)
 
-- **Repo:** https://github.com/NVIDIA/TensorRT-LLM · Apache-2.0 · nivel 3 · 72/100
+- **Repo:** https://github.com/NVIDIA/TensorRT-LLM · Apache-2.0 · nivel 3 · 75/100
 - **Qué es:** TensorRT LLM, la librería de NVIDIA para optimizar inferencia de LLM y modelos de generación visual en GPU NVIDIA. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activa (~15k estrellas, v1.2.1).
 - **Cuándo elegirlo:** Casos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él; GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado; hardware prerequisites; API de IA: no; GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado.
@@ -115,6 +104,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar Éxito: Puedes relacionar motor, modelo y configuración de memoria
 - **Combina con:** `litellm`, `open-webui` [8/chats], `transformers` [24/entrenamiento], `deepseek-v3` [24/modelos], `gpustack`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA. Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU.
+
+### Ray (`ray`)
+
+- **Repo:** https://github.com/ray-project/ray · Apache-2.0 · nivel 2 · 74/100
+- **Qué es:** Framework de código abierto (Apache-2.0) creado en UC Berkeley y mantenido por Anyscale, que ofrece una plataforma gestionada. Muy maduro y usado a gran escala.
+- **Cuándo elegirlo:** Casos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install ray` — fuente: https://github.com/ray-project/ray/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo. Éxito: Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso.
+- **Combina con:** `vllm`, `pytorch` [24/entrenamiento], `verl` [24/entrenamiento], `openrlhf` [24/entrenamiento]
+- **Riesgos y avisos:** Para un solo equipo, la complejidad de Ray puede no compensar.
 
 ### SGLang (`sglang`)
 

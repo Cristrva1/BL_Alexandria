@@ -10,9 +10,9 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-**Nivel:** 1 Básico — preparación sencilla
+**Nivel:** 2 Intermedio — preparación sencilla; varios servicios con Docker Compose
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,7 +46,7 @@ Grupo **De diseño o captura a código**: screenshot-to-code ocupa la posición 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **screenshot-to-code** (esta ficha) ⭐ recomendado | 60 | Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
+| 1 | **screenshot-to-code** (esta ficha) ⭐ recomendado | 63 | Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
 | 2 | [Stitch SDK](stitch-sdk.md) | 49 | Si buscas esto: sDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
 
 ## Acceso, coste y equipo

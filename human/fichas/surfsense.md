@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,7 +47,7 @@ Grupo **Alternativas a NotebookLM**: SurfSense ocupa la posición 2 de 2 (altern
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [open-notebook](open-notebook.md) ⭐ recomendado | 67 | Si buscas esto: clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
-| 2 | **SurfSense** (esta ficha) | 62 | Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
+| 2 | **SurfSense** (esta ficha) | 64 | Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 84/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 86/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -38,9 +38,9 @@ Escrito en Go; se instala con `go install`, Docker o binarios. Las plantillas se
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (16). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Amass](amass.md) · [Caido](caido.md) · [Evilginx2](evilginx2.md) · [feroxbuster](feroxbuster.md) · [Gobuster](gobuster.md) · [httpx](httpx.md) · [interactsh](interactsh.md) · [Naabu](naabu.md) · [OWASP CRS](coreruleset.md) · [OWASP Juice Shop](juice-shop.md) · [PayloadsAllTheThings](payloadsallthethings.md) · [SecLists](seclists.md) · [WPScan](wpscan.md)
+[Amass](amass.md) · [Caido](caido.md) · [DefectDojo](defectdojo.md) · [Evilginx2](evilginx2.md) · [feroxbuster](feroxbuster.md) · [Gobuster](gobuster.md) · [httpx](httpx.md) · [interactsh](interactsh.md) · [Naabu](naabu.md) · [OWASP CRS](coreruleset.md) · [OWASP Juice Shop](juice-shop.md) · [OWASP Nettacker](nettacker.md) · [OWASP secureCodeBox](securecodebox.md) · [PayloadsAllTheThings](payloadsallthethings.md) · [SecLists](seclists.md) · [WPScan](wpscan.md)
 
 **Notas:** Algunas plantillas son intrusivas; filtra por etiquetas y severidad antes de escanear.
 

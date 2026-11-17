@@ -29,11 +29,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `discord-js` | chatbots | Módulo Node.js de referencia para interactuar con la API de Discord y crear… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `python-telegram-bot` | chatbots | Biblioteca Python asíncrona de referencia para crear bots de Telegram, con… | 2 Intermedio | 68 | LGPL-3.0 (OSI copyleft) | sin grupo |
 | `botpress` | chatbots | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el… | 2 Intermedio | 53 | MIT (OSI permisiva) | sin grupo |
-| `typebot` | chatbots | Constructor visual de chatbots conversacionales, auto-hospedable, para web… | 2 Intermedio | 50 | FSL-1.1-Apache-2.0 (source-available) | sin grupo |
+| `typebot` | chatbots | Constructor visual de chatbots conversacionales, auto-hospedable, para web… | 2 Intermedio | 53 | FSL-1.1-Apache-2.0 (source-available) | sin grupo |
 | `rocket-chat` | comunidades | Plataforma de comunicación autoalojable para equipos y atención al cliente, con… | 2 Intermedio | 75 | MIT + licencia Enterprise (ee/) (open-core) | recomendado |
 | `mattermost` | comunidades | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat… | 2 Intermedio | 71 | AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise (open-core) | alternativa |
 | `fluxer` | comunidades | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con… | 2 Intermedio | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `element-web` | comunidades | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `element-web` | comunidades | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver… | 2 Intermedio | 66 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `zulip` | comunidades | Chat de equipo open source con hilos por tema: combina lo mejor del email y del… | 3 Avanzado | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `synapse` | comunidades | Servidor doméstico de Matrix de referencia, mantenido por Element: chat… | 3 Avanzado | 59 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
@@ -187,10 +187,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Typebot (`typebot`)
 
-- **Repo:** https://github.com/baptisteArno/typebot.io · FSL-1.1-Apache-2.0 · nivel 2 · 50/100
+- **Repo:** https://github.com/baptisteArno/typebot.io · FSL-1.1-Apache-2.0 · nivel 2 · 53/100
 - **Qué es:** Constructor de chatbots visual y autoalojable creado por Baptiste Arnaud. Se distribuye bajo Functional Source License 1.1 con conversión futura a Apache 2.0 (FSL-1.1-Apache-2.0), un modelo «Fair Source» con restricciones de uso…
 - **Cuándo elegirlo:** Casos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes.
-- **Requisitos:** nivel 2: preparación media; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI; hardware prerequisites; API de IA: opcional; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI; hardware prerequisites; API de IA: opcional; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/baptisteArno/typebot.io/blob/main/apps/docs/self-hosting/deploy/docker.mdx
 - **Primera prueba propuesta (no ejecutada):** Crea un flujo de dos preguntas con respuestas fijas y comprueba la rama elegida Éxito: El resultado guarda respuestas y recorre el camino esperado
 - **Combina con:** `evolution-api` [17/whatsapp], `chatwoot` [18/crm], `openwa` [17/whatsapp], `waha` [17/whatsapp], `formbricks` [18/reservas]
@@ -233,7 +233,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Element Web (`element-web`)
 
-- **Repo:** https://github.com/element-hq/element-web · AGPL-3.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/element-hq/element-web · AGPL-3.0 · nivel 2 · 66/100
 - **Qué es:** Cliente Matrix AGPL de Element.
 - **Cuándo elegirlo:** Casos: UI web delante de Synapse propio; salas E2E para un equipo.
 - **Requisitos:** nivel 2: preparación media; TypeScript, package.json; API de IA: no.

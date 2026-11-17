@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 893 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 921 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -751,7 +751,7 @@
      "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 113,
+   "count": 141,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -2915,7 +2915,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 53,
    "complejidad": 2
   },
   {
@@ -3345,7 +3345,7 @@
    "source_archived": false,
    "puntuacion": 72,
    "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 2
+   "complejidad": 3
   },
   {
    "id": "budibase",
@@ -4092,7 +4092,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73,
+   "puntuacion": 74,
    "complejidad": 1
   },
   {
@@ -4541,7 +4541,7 @@
    ],
    "desc": "Skill que recopila contexto y restricciones para redactar prompts destinados a herramientas de código, imagen y otros servicios. La instalación documentada corresponde a Claude; los nombres de otros productos describen destinos de los prompts generados.",
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 54,
    "complejidad": 1
   },
   {
@@ -8576,7 +8576,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 67,
+   "puntuacion": 70,
    "complejidad": 1
   },
   {
@@ -10559,7 +10559,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 73,
    "complejidad": 1
   },
   {
@@ -11931,7 +11931,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 53,
    "grupo": "g-interfaces-de-chat-con-llm",
    "complejidad": 2
   },
@@ -12240,7 +12240,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 64,
    "grupo": "g-alternativas-a-notebooklm",
    "complejidad": 2
   },
@@ -13223,9 +13223,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 56,
    "grupo": "g-editores-visuales-de-diseno-con-ia",
-   "complejidad": 1
+   "complejidad": 2
   },
   {
    "id": "plasmic",
@@ -13342,9 +13342,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 63,
    "grupo": "g-de-diseno-o-captura-a-codigo",
-   "complejidad": 1
+   "complejidad": 2
   },
   {
    "id": "openui",
@@ -14071,7 +14071,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 57,
    "grupo": "g-bi-y-dashboards",
    "complejidad": 2
   },
@@ -16555,7 +16555,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 57,
    "grupo": "g-modelos-abiertos-de-video-generativo",
    "complejidad": 3
   },
@@ -17244,7 +17244,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 54,
    "grupo": "g-suites-de-herramientas-pdf",
    "complejidad": 1
   },
@@ -17888,7 +17888,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 32,
+   "puntuacion": 33,
    "complejidad": 1
   },
   {
@@ -17928,7 +17928,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 52,
    "complejidad": 1
   },
   {
@@ -18353,7 +18353,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 61,
    "complejidad": 1
   },
   {
@@ -19059,7 +19059,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 55,
    "complejidad": 2
   },
   {
@@ -19191,7 +19191,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 75,
    "complejidad": 3
   },
   {
@@ -19896,7 +19896,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -19936,7 +19936,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 43,
+   "puntuacion": 46,
    "complejidad": 3
   },
   {
@@ -20902,7 +20902,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 74,
    "complejidad": 3
   },
   {
@@ -21759,7 +21759,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 67,
    "grupo": "g-gestores-de-contrasenas",
    "complejidad": 2
   },
@@ -21873,7 +21873,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 51,
    "complejidad": 3
   },
   {
@@ -21953,7 +21953,7 @@
     "mcp"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 62,
    "grupo": "g-agentes-de-voz-en-tiempo-real",
    "complejidad": 2
   },
@@ -22303,7 +22303,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 59,
    "complejidad": 3
   },
   {
@@ -23001,7 +23001,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 3
   },
   {
@@ -23076,7 +23076,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 69,
    "complejidad": 2
   },
   {
@@ -23224,7 +23224,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -23607,7 +23607,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 63,
    "grupo": "g-pentesting-autonomo-con-agentes",
    "complejidad": 2
   },
@@ -24226,7 +24226,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 78,
+   "puntuacion": 79,
    "complejidad": 2
   },
   {
@@ -24302,7 +24302,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 57,
    "complejidad": 1
   },
   {
@@ -25152,7 +25152,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 73,
+   "puntuacion": 76,
    "complejidad": 2
   },
   {
@@ -25456,7 +25456,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -25495,7 +25495,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 69,
    "grupo": "g-ingenieria-inversa-y-desensambladores",
    "complejidad": 3
   },
@@ -25570,7 +25570,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 46,
+   "puntuacion": 48,
    "grupo": "g-ingenieria-inversa-y-desensambladores",
    "complejidad": 3
   },
@@ -26344,7 +26344,7 @@
     "datos"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 60,
    "grupo": "g-fotogrametria-con-drones",
    "complejidad": 3
   },
@@ -26536,7 +26536,7 @@
     "imagenes"
    ],
    "source_archived": false,
-   "puntuacion": 39,
+   "puntuacion": 42,
    "complejidad": 3
   },
   {
@@ -26650,7 +26650,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 38,
+   "puntuacion": 44,
    "complejidad": 1
   },
   {
@@ -26808,7 +26808,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 1
   },
   {
@@ -27073,7 +27073,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 67,
+   "puntuacion": 70,
    "grupo": "g-espacios-de-asistentes-de-copilotkit",
    "complejidad": 2
   },
@@ -28289,7 +28289,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 56,
+   "puntuacion": 59,
    "complejidad": 2
   },
   {
@@ -29550,8 +29550,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
-   "complejidad": 1
+   "puntuacion": 66,
+   "complejidad": 2
   },
   {
    "id": "recon-ng",
@@ -29991,7 +29991,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 79,
+   "puntuacion": 82,
    "complejidad": 1
   },
   {
@@ -30435,7 +30435,7 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 79,
    "grupo": "g-notas-y-bases-de-conocimiento-personales",
    "complejidad": 1
   },
@@ -30563,9 +30563,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 73,
    "grupo": "g-finanzas-personales",
-   "complejidad": 1
+   "complejidad": 2
   },
   {
    "id": "firefly-iii",
@@ -30604,7 +30604,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59,
+   "puntuacion": 62,
    "grupo": "g-finanzas-personales",
    "complejidad": 2
   },
@@ -30683,7 +30683,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 62,
    "complejidad": 2
   },
   {
@@ -30763,7 +30763,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 3
   },
   {
@@ -30801,7 +30801,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 1
   },
   {
@@ -30839,7 +30839,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 84,
+   "puntuacion": 86,
    "complejidad": 1
   },
   {
@@ -30877,7 +30877,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 59,
    "complejidad": 1
   },
   {
@@ -30991,7 +30991,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74,
+   "puntuacion": 76,
    "complejidad": 3
   },
   {
@@ -31028,7 +31028,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -31069,7 +31069,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75,
+   "puntuacion": 76,
    "grupo": "g-bloqueo-de-ip-por-comportamiento",
    "complejidad": 2
   },
@@ -31110,7 +31110,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 77,
+   "puntuacion": 78,
    "grupo": "g-pruebas-de-carga",
    "complejidad": 1
   },
@@ -31193,7 +31193,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68,
+   "puntuacion": 69,
    "grupo": "g-fuzzing-de-rutas-y-contenido-web",
    "complejidad": 1
   },
@@ -31234,7 +31234,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73,
+   "puntuacion": 74,
    "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
    "complejidad": 2
   },
@@ -31274,7 +31274,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 77,
    "complejidad": 1
   },
   {
@@ -31314,7 +31314,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53,
+   "puntuacion": 54,
    "grupo": "g-cracking-de-contrasenas",
    "complejidad": 2
   },
@@ -31353,7 +31353,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68,
+   "puntuacion": 72,
    "complejidad": 1
   },
   {
@@ -31391,7 +31391,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 3
   },
   {
@@ -31989,9 +31989,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56,
+   "puntuacion": 59,
    "grupo": "g-help-desk-y-tickets",
-   "complejidad": 1
+   "complejidad": 2
   },
   {
    "id": "espocrm",
@@ -32398,7 +32398,7 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "complejidad": 1
+   "complejidad": 2
   },
   {
    "id": "lm-eval-harness",
@@ -34375,7 +34375,7 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 43,
+   "puntuacion": 46,
    "grupo": "g-agentes-de-voz-en-tiempo-real",
    "complejidad": 3
   },
@@ -34996,7 +34996,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 2
   },
   {
@@ -35036,7 +35036,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 77,
    "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
    "complejidad": 1
   },
@@ -35076,7 +35076,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 63,
    "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
    "complejidad": 1
   },
@@ -35115,7 +35115,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67,
+   "puntuacion": 68,
    "complejidad": 3
   },
   {
@@ -35152,7 +35152,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75,
+   "puntuacion": 76,
    "complejidad": 3
   },
   {
@@ -35192,7 +35192,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 72,
    "grupo": "g-frameworks-de-c2-y-post-explotacion",
    "complejidad": 4
   },
@@ -35231,7 +35231,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 64,
+   "puntuacion": 65,
    "grupo": "g-emulacion-de-adversarios",
    "complejidad": 1
   },
@@ -35269,7 +35269,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 64,
    "grupo": "g-emulacion-de-adversarios",
    "complejidad": 4
   },
@@ -35307,7 +35307,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 74,
    "complejidad": 4
   },
   {
@@ -35344,7 +35344,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 69,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -35381,7 +35381,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 1
   },
   {
@@ -35420,7 +35420,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores",
    "complejidad": 1
   },
@@ -35458,7 +35458,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 62,
    "complejidad": 4
   },
   {
@@ -35495,7 +35495,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 4
   },
   {
@@ -35532,7 +35532,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 58,
    "complejidad": 4
   },
   {
@@ -35569,7 +35569,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 51,
    "complejidad": 3
   },
   {
@@ -35606,7 +35606,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71,
+   "puntuacion": 75,
    "complejidad": 3
   },
   {
@@ -35644,7 +35644,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 56,
+   "puntuacion": 58,
    "complejidad": 1
   },
   {
@@ -35681,7 +35681,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 3
   },
   {
@@ -35718,7 +35718,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53,
+   "puntuacion": 55,
    "complejidad": 3
   },
   {
@@ -35836,7 +35836,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
+   "puntuacion": 55,
    "complejidad": 4
   },
   {
@@ -35909,7 +35909,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 2
   },
   {
@@ -35945,7 +35945,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -35981,7 +35981,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 63,
    "complejidad": 2
   },
   {
@@ -36021,7 +36021,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 59,
    "grupo": "g-fuzzing-de-rutas-y-contenido-web",
    "complejidad": 1
   },
@@ -36062,7 +36062,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 58,
    "grupo": "g-fuzzing-de-rutas-y-contenido-web",
    "complejidad": 1
   },
@@ -36102,7 +36102,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 61,
    "grupo": "g-fuzzing-de-rutas-y-contenido-web",
    "complejidad": 1
   },
@@ -36211,7 +36211,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48,
+   "puntuacion": 52,
    "complejidad": 2
   },
   {
@@ -36232,7 +36232,9 @@
    "lib": false,
    "pick": false,
    "one": "Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación.",
-   "alt": [],
+   "alt": [
+    "webgoat"
+   ],
    "doc": "human/fichas/juice-shop.md",
    "github_id": 24233689,
    "lang": "TypeScript",
@@ -36247,7 +36249,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 75,
+   "grupo": "g-aplicaciones-web-vulnerables-para-practicar",
    "complejidad": 1
   },
   {
@@ -36283,7 +36286,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52,
+   "puntuacion": 54,
    "complejidad": 3
   },
   {
@@ -36319,7 +36322,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 3
   },
   {
@@ -36355,7 +36358,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48,
+   "puntuacion": 49,
    "complejidad": 3
   },
   {
@@ -36391,7 +36394,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 52,
    "complejidad": 3
   },
   {
@@ -36427,7 +36430,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 46,
+   "puntuacion": 47,
    "complejidad": 3
   },
   {
@@ -36466,7 +36469,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 51,
    "grupo": "g-frameworks-de-c2-y-post-explotacion",
    "complejidad": 4
   },
@@ -36506,7 +36509,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 60,
    "grupo": "g-frameworks-de-c2-y-post-explotacion",
    "complejidad": 4
   },
@@ -36543,7 +36546,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -36564,7 +36567,9 @@
    "lib": false,
    "pick": false,
    "one": "Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scanners.",
-   "alt": [],
+   "alt": [
+    "cdxgen"
+   ],
    "doc": "human/fichas/syft.md",
    "github_id": 262126497,
    "lang": "Go",
@@ -36579,7 +36584,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 77,
+   "grupo": "g-generadores-de-sbom",
    "complejidad": 1
   },
   {
@@ -36615,7 +36621,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 2
   },
   {
@@ -36651,7 +36657,8 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 78,
+   "puntuacion": 79,
+   "grupo": "g-analisis-de-dependencias-vulnerables",
    "complejidad": 1
   },
   {
@@ -36687,7 +36694,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 51,
    "complejidad": 2
   },
   {
@@ -36723,7 +36730,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 52,
    "complejidad": 4
   },
   {
@@ -36759,7 +36766,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 62,
    "complejidad": 4
   },
   {
@@ -36795,7 +36802,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 3
   },
   {
@@ -36833,7 +36840,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 41,
+   "puntuacion": 42,
    "grupo": "g-analisis-forense-de-discos",
    "complejidad": 3
   },
@@ -36909,7 +36916,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 60,
    "complejidad": 3
   },
   {
@@ -36945,7 +36952,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -36981,7 +36988,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 66,
    "complejidad": 3
   },
   {
@@ -37017,7 +37024,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 66,
    "complejidad": 4
   },
   {
@@ -37053,7 +37060,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53,
+   "puntuacion": 57,
    "complejidad": 4
   },
   {
@@ -37089,7 +37096,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 43,
+   "puntuacion": 51,
    "complejidad": 2
   },
   {
@@ -37125,7 +37132,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -37161,7 +37168,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -37199,7 +37206,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 62,
    "grupo": "g-bloqueo-de-ip-por-comportamiento",
    "complejidad": 2
   },
@@ -37237,7 +37244,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 1
   },
   {
@@ -37273,7 +37280,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51,
+   "puntuacion": 52,
    "complejidad": 2
   },
   {
@@ -37310,7 +37317,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 55,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -37347,7 +37354,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 56,
+   "puntuacion": 61,
    "complejidad": 1
   },
   {
@@ -37384,7 +37391,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 76,
+   "puntuacion": 80,
    "complejidad": 1
   },
   {
@@ -37422,7 +37429,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 38,
+   "puntuacion": 39,
    "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
    "complejidad": 1
   },
@@ -37459,7 +37466,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 40,
+   "puntuacion": 41,
    "complejidad": 1
   },
   {
@@ -37496,7 +37503,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 1
   },
   {
@@ -37532,7 +37539,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51,
+   "puntuacion": 55,
    "complejidad": 3
   },
   {
@@ -37568,7 +37575,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 3
   },
   {
@@ -37831,7 +37838,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -37870,7 +37877,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 67,
    "grupo": "g-proveedores-de-identidad-y-sso",
    "complejidad": 3
   },
@@ -37991,6 +37998,1135 @@
    ],
    "puntuacion": 45,
    "grupo": "g-crm-y-erp-auto-hospedados",
+   "complejidad": 2
+  },
+  {
+   "id": "dependency-track",
+   "name": "Dependency-Track",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "sbom",
+    "sca",
+    "supply-chain",
+    "cyclonedx",
+    "java"
+   ],
+   "stars": 4467,
+   "gh": "DependencyTrack/dependency-track",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos.",
+   "alt": [],
+   "doc": "human/fichas/dependency-track.md",
+   "github_id": 11457947,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 65,
+   "complejidad": 2
+  },
+  {
+   "id": "defectdojo",
+   "name": "DefectDojo",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "vulnerability-management",
+    "devsecops",
+    "aspm",
+    "python"
+   ],
+   "stars": 5243,
+   "gh": "DefectDojo/django-DefectDojo",
+   "lib": false,
+   "pick": false,
+   "one": "Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección.",
+   "alt": [],
+   "doc": "human/fichas/defectdojo.md",
+   "github_id": 31028375,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 73,
+   "complejidad": 2
+  },
+  {
+   "id": "dependency-check",
+   "name": "OWASP Dependency-Check",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "sca",
+    "dependencies",
+    "cve",
+    "java"
+   ],
+   "stars": 7775,
+   "gh": "dependency-check/DependencyCheck",
+   "lib": false,
+   "pick": false,
+   "one": "Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.",
+   "alt": [],
+   "doc": "human/fichas/dependency-check.md",
+   "github_id": 5663857,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 63,
+   "grupo": "g-analisis-de-dependencias-vulnerables",
+   "complejidad": 1
+  },
+  {
+   "id": "modsecurity",
+   "name": "ModSecurity",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "waf",
+    "http",
+    "nginx",
+    "c++"
+   ],
+   "stars": 9876,
+   "gh": "owasp-modsecurity/ModSecurity",
+   "lib": false,
+   "pick": false,
+   "one": "Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set.",
+   "alt": [
+    "coraza"
+   ],
+   "doc": "human/fichas/modsecurity.md",
+   "github_id": 1320594,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "puntuacion": 66,
+   "grupo": "g-waf-compatibles-con-seclang",
+   "complejidad": 4
+  },
+  {
+   "id": "coraza",
+   "name": "OWASP Coraza",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "waf",
+    "go",
+    "seclang"
+   ],
+   "stars": 4034,
+   "gh": "corazawaf/coraza",
+   "lib": false,
+   "pick": false,
+   "one": "WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik.",
+   "alt": [
+    "modsecurity"
+   ],
+   "doc": "human/fichas/coraza.md",
+   "github_id": 267379172,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 62,
+   "grupo": "g-waf-compatibles-con-seclang",
+   "complejidad": 2
+  },
+  {
+   "id": "nettacker",
+   "name": "OWASP Nettacker",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "pentest",
+    "scanner",
+    "python"
+   ],
+   "stars": 5741,
+   "gh": "OWASP/Nettacker",
+   "lib": false,
+   "pick": false,
+   "one": "Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML.",
+   "alt": [],
+   "doc": "human/fichas/nettacker.md",
+   "github_id": 88980374,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 60,
+   "complejidad": 1
+  },
+  {
+   "id": "threat-dragon",
+   "name": "OWASP Threat Dragon",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "threat-modeling",
+    "stride",
+    "javascript"
+   ],
+   "stars": 1693,
+   "gh": "OWASP/threat-dragon",
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web.",
+   "alt": [
+    "pytm"
+   ],
+   "doc": "human/fichas/threat-dragon.md",
+   "github_id": 268796991,
+   "lang": "JavaScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 65,
+   "grupo": "g-modelado-de-amenazas",
+   "complejidad": 1
+  },
+  {
+   "id": "webgoat",
+   "name": "WebGoat",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "training",
+    "vulnerable-app",
+    "java"
+   ],
+   "stars": 9487,
+   "gh": "WebGoat/WebGoat",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10.",
+   "alt": [
+    "juice-shop"
+   ],
+   "doc": "human/fichas/webgoat.md",
+   "github_id": 31771754,
+   "lang": "JavaScript",
+   "license": "GPL-2.0-or-later",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 62,
+   "grupo": "g-aplicaciones-web-vulnerables-para-practicar",
+   "complejidad": 1
+  },
+  {
+   "id": "wstg",
+   "name": "OWASP Web Security Testing Guide",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "testing",
+    "guide",
+    "web"
+   ],
+   "stars": 10281,
+   "gh": "OWASP/wstg",
+   "lib": false,
+   "pick": false,
+   "one": "Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG.",
+   "alt": [],
+   "doc": "human/fichas/wstg.md",
+   "github_id": 91277330,
+   "lang": "CSS",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 71,
+   "complejidad": 1
+  },
+  {
+   "id": "mastg",
+   "name": "OWASP MASTG",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "mobile",
+    "android",
+    "ios",
+    "guide"
+   ],
+   "stars": 13350,
+   "gh": "OWASP/mastg",
+   "lib": false,
+   "pick": false,
+   "one": "Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS.",
+   "alt": [],
+   "doc": "human/fichas/mastg.md",
+   "github_id": 69648386,
+   "lang": "Python",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 69,
+   "complejidad": 1
+  },
+  {
+   "id": "asvs",
+   "name": "OWASP ASVS",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "standard",
+    "requirements",
+    "appsec"
+   ],
+   "stars": 3793,
+   "gh": "OWASP/ASVS",
+   "lib": false,
+   "pick": false,
+   "one": "Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar.",
+   "alt": [],
+   "doc": "human/fichas/asvs.md",
+   "github_id": 25990824,
+   "lang": "HTML",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 56,
+   "complejidad": 1
+  },
+  {
+   "id": "owasp-top10",
+   "name": "OWASP Top 10",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "awareness",
+    "web",
+    "standard"
+   ],
+   "stars": 6555,
+   "gh": "OWASP/Top10",
+   "lib": false,
+   "pick": false,
+   "one": "Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados.",
+   "alt": [],
+   "doc": "human/fichas/owasp-top10.md",
+   "github_id": 66954973,
+   "lang": "HTML",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 56,
+   "complejidad": 1
+  },
+  {
+   "id": "owasp-llm-top10",
+   "name": "OWASP Top 10 for LLM Applications",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "llm",
+    "genai",
+    "awareness"
+   ],
+   "stars": 1492,
+   "gh": "OWASP/www-project-top-10-for-large-language-model-applications",
+   "lib": false,
+   "pick": false,
+   "one": "Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project.",
+   "alt": [],
+   "doc": "human/fichas/owasp-llm-top10.md",
+   "github_id": 641487831,
+   "lang": "Python",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 52,
+   "complejidad": 1
+  },
+  {
+   "id": "owasp-ai-testing-guide",
+   "name": "OWASP AI Testing Guide",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ai",
+    "llm",
+    "testing",
+    "guide"
+   ],
+   "stars": 856,
+   "gh": "OWASP/www-project-ai-testing-guide",
+   "lib": false,
+   "pick": false,
+   "one": "Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos.",
+   "alt": [],
+   "doc": "human/fichas/owasp-ai-testing-guide.md",
+   "github_id": 999758373,
+   "lang": "Python",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 42,
+   "complejidad": 1
+  },
+  {
+   "id": "aisvs",
+   "name": "OWASP AISVS",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "ai",
+    "standard",
+    "requirements"
+   ],
+   "stars": 590,
+   "gh": "OWASP/AISVS",
+   "lib": false,
+   "pick": false,
+   "one": "Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura.",
+   "alt": [],
+   "doc": "human/fichas/aisvs.md",
+   "github_id": 978297458,
+   "lang": null,
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 54,
+   "complejidad": 1
+  },
+  {
+   "id": "masvs",
+   "name": "OWASP MASVS",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "mobile",
+    "standard"
+   ],
+   "stars": 2482,
+   "gh": "OWASP/masvs",
+   "lib": false,
+   "pick": false,
+   "one": "Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia.",
+   "alt": [],
+   "doc": "human/fichas/masvs.md",
+   "github_id": 67674352,
+   "lang": "Python",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 56,
+   "complejidad": 1
+  },
+  {
+   "id": "owasp-api-security",
+   "name": "OWASP API Security Top 10",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "api",
+    "awareness"
+   ],
+   "stars": 2401,
+   "gh": "OWASP/API-Security",
+   "lib": false,
+   "pick": false,
+   "one": "Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más.",
+   "alt": [],
+   "doc": "human/fichas/owasp-api-security.md",
+   "github_id": 165115515,
+   "lang": "Dockerfile",
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 47,
+   "complejidad": 1
+  },
+  {
+   "id": "owasp-devguide",
+   "name": "OWASP Developer Guide",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "guide",
+    "sdlc"
+   ],
+   "stars": 2193,
+   "gh": "OWASP/DevGuide",
+   "lib": false,
+   "pick": false,
+   "one": "Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase.",
+   "alt": [],
+   "doc": "human/fichas/owasp-devguide.md",
+   "github_id": 14621521,
+   "lang": null,
+   "license": "CC-BY-SA-4.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "puntuacion": 50,
+   "complejidad": 1
+  },
+  {
+   "id": "owtf",
+   "name": "OWASP OWTF",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "pentest",
+    "web",
+    "python"
+   ],
+   "stars": 1969,
+   "gh": "owtf/owtf",
+   "lib": false,
+   "pick": false,
+   "one": "Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web.",
+   "alt": [],
+   "doc": "human/fichas/owtf.md",
+   "github_id": 3215654,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 55,
+   "complejidad": 2
+  },
+  {
+   "id": "noir",
+   "name": "OWASP Noir",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "sast",
+    "attack-surface",
+    "api",
+    "crystal"
+   ],
+   "stars": 1499,
+   "gh": "owasp-noir/noir",
+   "lib": false,
+   "pick": false,
+   "one": "Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.",
+   "alt": [],
+   "doc": "human/fichas/noir.md",
+   "github_id": 466473918,
+   "lang": "Crystal",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 61,
+   "complejidad": 1
+  },
+  {
+   "id": "dep-scan",
+   "name": "OWASP dep-scan",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "sca",
+    "sbom",
+    "vex",
+    "python"
+   ],
+   "stars": 1412,
+   "gh": "owasp-dep-scan/dep-scan",
+   "lib": false,
+   "pick": false,
+   "one": "Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.",
+   "alt": [],
+   "doc": "human/fichas/dep-scan.md",
+   "github_id": 236836976,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 59,
+   "grupo": "g-analisis-de-dependencias-vulnerables",
+   "complejidad": 1
+  },
+  {
+   "id": "cdxgen",
+   "name": "cdxgen",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "sbom",
+    "cyclonedx",
+    "supply-chain",
+    "javascript"
+   ],
+   "stars": 1119,
+   "gh": "cdxgen/cdxgen",
+   "lib": false,
+   "pick": false,
+   "one": "Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes.",
+   "alt": [
+    "syft"
+   ],
+   "doc": "human/fichas/cdxgen.md",
+   "github_id": 230924711,
+   "lang": "JavaScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 62,
+   "grupo": "g-generadores-de-sbom",
+   "complejidad": 1
+  },
+  {
+   "id": "securecodebox",
+   "name": "OWASP secureCodeBox",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "hard",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "kubernetes",
+    "scanner",
+    "devsecops",
+    "go"
+   ],
+   "stars": 994,
+   "gh": "secureCodeBox/secureCodeBox",
+   "lib": false,
+   "pick": false,
+   "one": "Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos.",
+   "alt": [],
+   "doc": "human/fichas/securecodebox.md",
+   "github_id": 80711933,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 58,
+   "complejidad": 4
+  },
+  {
+   "id": "crapi",
+   "name": "OWASP crAPI",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "api",
+    "training",
+    "vulnerable-app"
+   ],
+   "stars": 1638,
+   "gh": "OWASP/crAPI",
+   "lib": false,
+   "pick": false,
+   "one": "API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10.",
+   "alt": [],
+   "doc": "human/fichas/crapi.md",
+   "github_id": 335756350,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 46,
+   "complejidad": 2
+  },
+  {
+   "id": "wrongsecrets",
+   "name": "OWASP WrongSecrets",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "secrets",
+    "training",
+    "kubernetes"
+   ],
+   "stars": 1479,
+   "gh": "OWASP/wrongsecrets",
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios.",
+   "alt": [],
+   "doc": "human/fichas/wrongsecrets.md",
+   "github_id": 288646913,
+   "lang": "HTML",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 62,
+   "complejidad": 1
+  },
+  {
+   "id": "pytm",
+   "name": "OWASP pytm",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "threat-modeling",
+    "python",
+    "as-code"
+   ],
+   "stars": 1201,
+   "gh": "OWASP/pytm",
+   "lib": false,
+   "pick": false,
+   "one": "Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas.",
+   "alt": [
+    "threat-dragon"
+   ],
+   "doc": "human/fichas/pytm.md",
+   "github_id": 133432149,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 60,
+   "grupo": "g-modelado-de-amenazas",
+   "complejidad": 2
+  },
+  {
+   "id": "java-html-sanitizer",
+   "name": "OWASP Java HTML Sanitizer",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "xss",
+    "java",
+    "library"
+   ],
+   "stars": 958,
+   "gh": "OWASP/java-html-sanitizer",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS.",
+   "alt": [],
+   "doc": "human/fichas/java-html-sanitizer.md",
+   "github_id": 34677782,
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 61,
+   "complejidad": 2
+  },
+  {
+   "id": "owasp-java-encoder",
+   "name": "OWASP Java Encoder",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "security",
+    "xss",
+    "encoding",
+    "java"
+   ],
+   "stars": 552,
+   "gh": "OWASP/owasp-java-encoder",
+   "lib": false,
+   "pick": false,
+   "one": "Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución.",
+   "alt": [],
+   "doc": "human/fichas/owasp-java-encoder.md",
+   "github_id": 33094979,
+   "lang": "Java",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 56,
    "complejidad": 2
   }
  ],

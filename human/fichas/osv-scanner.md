@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -33,9 +33,25 @@ go install / releases.
 | [Trivy](trivy.md) | Contrasta CVE. | Ambos en CI. |
 | [Grype](grype.md) | Otro motor CVE. | Compara. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP Dependency-Check](dependency-check.md)
+
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.7.1 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google/osv-scanner#readme) · [2](https://google.github.io/osv-scanner/)</sub>
+
+## Ver similares
+
+Grupo **Análisis de dependencias vulnerables (SCA)**: OSV-Scanner ocupa la posición 1 de 3 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **OSV-Scanner** (esta ficha) ⭐ recomendado | 79 | Si quieres consultar la base OSV desde lockfiles con una CLI ligera en Go. |
+| 2 | [OWASP Dependency-Check](dependency-check.md) | 63 | Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins. |
+| 3 | [OWASP dep-scan](dep-scan.md) | 59 | Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI. |
 
 ## Acceso, coste y equipo
 

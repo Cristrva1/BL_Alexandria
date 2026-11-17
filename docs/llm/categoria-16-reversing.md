@@ -18,17 +18,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `angr` | Plataforma en Python para analizar programas binarios mediante técnicas como… | 3 Avanzado | 72 | BSD-2-Clause (OSI permisiva) | sin grupo |
+| `angr` | Plataforma en Python para analizar programas binarios mediante técnicas como… | 3 Avanzado | 74 | BSD-2-Clause (OSI permisiva) | sin grupo |
 | `ghidra` | Conjunto de herramientas para desensamblar, descompilar y analizar programas y… | 3 Avanzado | 71 | Apache-2.0 (OSI permisiva) | recomendado |
-| `ilspy` | Descompilador de .NET para explorar ensamblados y estudiar el código y… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
-| `radare2` | Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar… | 3 Avanzado | 68 | LGPL-3.0 (partes GPL) (OSI copyleft) | alternativa |
-| `apktool` | Herramienta para decodificar recursos y reconstruir paquetes APK de Android… | 3 Avanzado | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `ilspy` | Descompilador de .NET para explorar ensamblados y estudiar el código y… | 2 Intermedio | 69 | MIT (OSI permisiva) | sin grupo |
+| `radare2` | Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar… | 3 Avanzado | 69 | LGPL-3.0 (partes GPL) (OSI copyleft) | alternativa |
+| `apktool` | Herramienta para decodificar recursos y reconstruir paquetes APK de Android… | 3 Avanzado | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `imhex` | Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras… | 2 Intermedio | 64 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `jadx` | Descompilador de archivos DEX y APK para explorar código Java reconstruido y… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `capa` | Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…)… | 3 Avanzado | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `frida` | Herramientas de instrumentación dinámica para observar y modificar el… | 3 Avanzado | 58 | wxWindows Library Licence 3.1 (OSI copyleft) | sin grupo |
-| `yara` | Motor de reglas para identificar malware y artefactos por patrones de bytes… | 3 Avanzado | 53 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `rizin` | Herramientas para analizar binarios y estudiar programas mediante… | 3 Avanzado | 46 | LGPL-3.0 (OSI copyleft) | alternativa |
+| `capa` | Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…)… | 3 Avanzado | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `frida` | Herramientas de instrumentación dinámica para observar y modificar el… | 3 Avanzado | 59 | wxWindows Library Licence 3.1 (OSI copyleft) | sin grupo |
+| `yara` | Motor de reglas para identificar malware y artefactos por patrones de bytes… | 3 Avanzado | 55 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `rizin` | Herramientas para analizar binarios y estudiar programas mediante… | 3 Avanzado | 48 | LGPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -36,7 +36,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### angr (`angr`)
 
-- **Repo:** https://github.com/angr/angr · BSD-2-Clause · nivel 3 · 72/100
+- **Repo:** https://github.com/angr/angr · BSD-2-Clause · nivel 3 · 74/100
 - **Qué es:** Framework de análisis binario en Python, independiente de la plataforma, del Computer Security Lab de UC Santa Barbara, SEFCOM de Arizona State University y el equipo CTF Shellphish. Licencia BSD-2-Clause.
 - **Cuándo elegirlo:** Casos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; Python y entorno compatible; binario de laboratorio; hardware prerequisites; API de IA: no; Python y entorno compatible; binario de laboratorio.
@@ -59,7 +59,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ILSpy (`ilspy`)
 
-- **Repo:** https://github.com/icsharpcode/ILSpy · MIT · nivel 2 · 68/100
+- **Repo:** https://github.com/icsharpcode/ILSpy · MIT · nivel 2 · 69/100
 - **Qué es:** Navegador y decompilador de ensamblados .NET open source y multiplataforma, del equipo icsharpcode. Licencia MIT. Es muy maduro (~27k estrellas, v11.2) y su motor se publica como paquete NuGet (ICSharpCode.Decompiler).
 - **Cuándo elegirlo:** Casos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado.
 - **Requisitos:** nivel 2: app de escritorio; hay que saber leer código .NET; App o ilspycmd del sistema; ensamblado .NET de práctica; hardware prerequisites; API de IA: no; App o ilspycmd del sistema; ensamblado .NET de práctica.
@@ -70,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### radare2 (`radare2`)
 
-- **Repo:** https://github.com/radareorg/radare2 · LGPL-3.0 (partes GPL) · nivel 3 · 68/100 · alternativa en «Ingeniería inversa y desensambladores»
+- **Repo:** https://github.com/radareorg/radare2 · LGPL-3.0 (partes GPL) · nivel 3 · 69/100 · alternativa en «Ingeniería inversa y desensambladores»
 - **Qué es:** Framework libre de ingeniería inversa para línea de comandos (r2), reescritura completa de radare. Licencia LGPL-3.0, aunque cada plugin puede tener la suya (GitHub muestra NOASSERTION; `r2 -Lj` lista las licencias).
 - **Cuándo elegirlo:** Casos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Release o compilación compatible; binario propio de práctica; hardware prerequisites; API de IA: no; Release o compilación compatible; binario propio de práctica.
@@ -82,13 +82,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Apktool (`apktool`)
 
-- **Repo:** https://github.com/iBotPeaches/Apktool · Apache-2.0 · nivel 3 · 64/100
+- **Repo:** https://github.com/iBotPeaches/Apktool · Apache-2.0 · nivel 3 · 65/100
 - **Qué es:** Herramienta para hacer ingeniería inversa de apps Android binarias y cerradas, de @iBotPeaches. Licencia Apache-2.0. Es muy madura (~27k estrellas, v3.0.3).
 - **Cuándo elegirlo:** Casos: Estudiar recursos de una app Android; Revisar una configuración de manifiesto propia.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Java y distribución de Apktool; APK propio de prueba; hardware prerequisites; API de IA: no; Java y distribución de Apktool; APK propio de prueba.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://apktool.org/wiki/the-basics/intro
 - **Primera prueba propuesta (no ejecutada):** Decodifica recursos de un APK de laboratorio y localiza su manifiesto Éxito: Puedes contrastar nombres de recursos y permisos declarados
-- **Combina con:** `jadx`, `frida`, `mitmproxy` [16/pruebas]
+- **Combina con:** `jadx`, `frida`, `mitmproxy` [16/pruebas], `mastg` [16/referencias]
 - **Riesgos y avisos:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar. No reconstruye el código Java original ni certifica el comportamiento de toda la aplicación.
 
 ### ImHex (`imhex`)
@@ -110,12 +110,12 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: app con interfaz gráfica; hay que saber leer código Java; Java y release apropiada; APK o DEX propio; hardware prerequisites; API de IA: no; Java y release apropiada; APK o DEX propio.
 - **Instalación (documentada en la fuente; no ejecutada):** `brew install jadx` — fuente: https://github.com/skylot/jadx/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Abre una app Android de prueba y navega por una clase y sus recursos Éxito: Puedes identificar métodos y líneas que no se reconstruyen correctamente
-- **Combina con:** `frida`, `apktool`, `ghidra`, `rea` [16/agentes], `awesome-ai-reverse-engineering` [16/referencias]
+- **Combina con:** `frida`, `apktool`, `ghidra`, `rea` [16/agentes], `awesome-ai-reverse-engineering` [16/referencias], `mastg` [16/referencias]
 - **Riesgos y avisos:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar. El Java reconstruido no es necesariamente el código original ni compila de nuevo sin cambios.
 
 ### capa (`capa`)
 
-- **Repo:** https://github.com/mandiant/capa · Apache-2.0 · nivel 3 · 58/100
+- **Repo:** https://github.com/mandiant/capa · Apache-2.0 · nivel 3 · 60/100
 - **Qué es:** Capability scanner de Mandiant (Apache-2.0).
 - **Cuándo elegirlo:** Casos: clasificar una muestra de lab; priorizar qué abrir en Ghidra.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; Python, pyproject.toml, requirements.txt; API de IA: no.
@@ -125,7 +125,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### frida (`frida`)
 
-- **Repo:** https://github.com/frida/frida · wxWindows Library Licence 3.1 · nivel 3 · 58/100
+- **Repo:** https://github.com/frida/frida · wxWindows Library Licence 3.1 · nivel 3 · 59/100
 - **Qué es:** Kit de instrumentación dinámica para desarrolladores, ingenieros inversos e investigadores de seguridad. Licencia wxWindows Library Licence 3.1 (GitHub muestra NOASSERTION). Es muy maduro y activo (~23k estrellas, 17.26.3).
 - **Cuándo elegirlo:** Casos: Estudiar comportamiento dinámico de una app propia; Depurar una llamada que no aparece en logs.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Paquetes de plataforma; programa propio de laboratorio; permisos del entorno; hardware prerequisites; API de IA: no; Paquetes de plataforma; programa propio de laboratorio; permisos del entorno.
@@ -136,7 +136,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### YARA (`yara`)
 
-- **Repo:** https://github.com/VirusTotal/yara · BSD-3-Clause · nivel 3 · 53/100
+- **Repo:** https://github.com/VirusTotal/yara · BSD-3-Clause · nivel 3 · 55/100
 - **Qué es:** Motor open source (BSD-3-Clause) mantenido en el org VirusTotal para matching de malware.
 - **Cuándo elegirlo:** Casos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; C; API de IA: no.
@@ -146,7 +146,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### rizin (`rizin`)
 
-- **Repo:** https://github.com/rizinorg/rizin · LGPL-3.0 · nivel 3 · 46/100 · alternativa en «Ingeniería inversa y desensambladores»
+- **Repo:** https://github.com/rizinorg/rizin · LGPL-3.0 · nivel 3 · 48/100 · alternativa en «Ingeniería inversa y desensambladores»
 - **Qué es:** Framework de ingeniería inversa nacido como fork de radare2, centrado en usabilidad, funciones y limpieza del código. Licencia LGPL-3.0. Es activo (~4k estrellas, v0.9.1).
 - **Cuándo elegirlo:** Casos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Distribución del sistema; binario propio de prueba; hardware prerequisites; API de IA: no; Distribución del sistema; binario propio de prueba.

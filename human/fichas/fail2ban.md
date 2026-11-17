@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** GPL-2.0. Algunos archivos indican otra licencia en COPYING. Fuente: [LICENSE](https://github.com/fail2ban/fail2ban/blob/master/COPYING). GitHub la marca como NOASSERTION.
 
@@ -44,8 +44,8 @@ Grupo **Bloqueo de IP por comportamiento**: Fail2ban ocupa la posición 2 de 2 (
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [CrowdSec](crowdsec.md) ⭐ recomendado | 75 | Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. |
-| 2 | **Fail2ban** (esta ficha) | 61 | Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
+| 1 | [CrowdSec](crowdsec.md) ⭐ recomendado | 76 | Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. |
+| 2 | **Fail2ban** (esta ficha) | 62 | Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
 
 ## Acceso, coste y equipo
 

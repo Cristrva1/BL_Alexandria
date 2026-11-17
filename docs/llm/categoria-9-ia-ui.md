@@ -19,9 +19,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `copilotkit` | Stack frontend para agentes y UI generativa en React, creadores del protocolo… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
-| `ai-website-cloner-template` | Plantilla para que un agente de código estudie una web de referencia y prepare… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
+| `ai-website-cloner-template` | Plantilla para que un agente de código estudie una web de referencia y prepare… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `screenshot-to-code` | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind… | 2 Intermedio | 63 | MIT (OSI permisiva) | recomendado |
 | `assistant-ui` | Librería React y TypeScript para interfaces de chat con IA de calidad… | 2 Intermedio | 62 | MIT (OSI permisiva) | alternativa |
-| `screenshot-to-code` | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind… | 1 Básico | 60 | MIT (OSI permisiva) | recomendado |
 | `ui-sdk` | Colección de comportamientos y recursos para que agentes construyan interfaces… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `json-render` | Framework para generar interfaces desde una representación JSON y un catálogo… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `openui` | Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
@@ -45,14 +45,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ai-website-cloner-template (`ai-website-cloner-template`)
 
-- **Repo:** https://github.com/JCodesMore/ai-website-cloner-template · MIT · nivel 2 · 62/100
+- **Repo:** https://github.com/JCodesMore/ai-website-cloner-template · MIT · nivel 2 · 64/100
 - **Qué es:** Plantilla (MIT) de @JCodesMore para que un agente de programación estudie una web de referencia y la recree como app Next.js. Es activa (v0.6.1) y popular (~39k estrellas).
 - **Cuándo elegirlo:** Casos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Node; agente con acceso de navegador; web propia o referencia autorizada; hardware prerequisites; API de IA: no; Node; agente con acceso de navegador; web propia o referencia autorizada.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él, varios servicios con Docker Compose; Node; agente con acceso de navegador; web propia o referencia autorizada; hardware prerequisites; API de IA: no; Node; agente con acceso de navegador; web propia o referencia autorizada.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up app --build` — fuente: https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Usa una página de referencia propia y pide recrear una única sección en el proyecto de prueba Éxito: Puedes comparar referencia y resultado a la misma anchura y revisar el código
 - **Combina con:** `claude-code` [20/terminal], `ui` [9/componentes], `playwright` [32/bibliotecas]
 - **Riesgos y avisos:** Sin alternativas declaradas. Úsala solo con sitios propios o con permiso. La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity.
+
+### screenshot-to-code (`screenshot-to-code`)
+
+- **Repo:** https://github.com/abi/screenshot-to-code · MIT · nivel 2 · 63/100 · recomendado en «De diseño o captura a código»
+- **Qué es:** Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).
+- **Cuándo elegirlo:** Casos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview; hardware prerequisites; API de IA: depends; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d --build` — fuente: https://github.com/abi/screenshot-to-code/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Carga una captura de una interfaz propia mínima y compara el HTML generado con ella Éxito: Puedes revisar código y vista previa y señalar diferencias
+- **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `playwright` [32/bibliotecas]
+- **Alternativas:** `stitch-sdk`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): stitch-sdk. Respeta derechos de autor al convertir diseños ajenos. Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión.
 
 ### assistant-ui (`assistant-ui`)
 
@@ -65,18 +77,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `vercel-ai` [3/ts], `langgraph` [3/py], `ui` [9/componentes]
 - **Alternativas:** `copilotkit`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): copilotkit. Es la interfaz del chat; necesitas configurar el backend y no basta con instalar el paquete React.
-
-### screenshot-to-code (`screenshot-to-code`)
-
-- **Repo:** https://github.com/abi/screenshot-to-code · MIT · nivel 1 · 60/100 · recomendado en «De diseño o captura a código»
-- **Qué es:** Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).
-- **Cuándo elegirlo:** Casos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura.
-- **Requisitos:** nivel 1: preparación sencilla; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview; hardware prerequisites; API de IA: depends; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d --build` — fuente: https://github.com/abi/screenshot-to-code/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Carga una captura de una interfaz propia mínima y compara el HTML generado con ella Éxito: Puedes revisar código y vista previa y señalar diferencias
-- **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `playwright` [32/bibliotecas]
-- **Alternativas:** `stitch-sdk`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): stitch-sdk. Respeta derechos de autor al convertir diseños ajenos. Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión.
 
 ### UI SDK (Vercel) (`ui-sdk`)
 

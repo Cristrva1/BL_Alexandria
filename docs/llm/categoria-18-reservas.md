@@ -54,7 +54,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/alextselegidis/easyappointments · GPL-3.0 · nivel 2 · 47/100 · alternativa en «Reservas y citas»
 - **Qué es:** Sistema de reservas de código abierto (GPL-3.0) creado por Alex Tselegidis. Maduro y activo.
 - **Cuándo elegirlo:** Casos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios.
-- **Requisitos:** nivel 2: preparación media; PHP, composer.json, docker-compose.yml, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; PHP, composer.json, docker-compose.yml, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up` — fuente: https://github.com/alextselegidis/easyappointments/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba. Éxito: La cita aparece en el calendario del proveedor.
 - **Combina con:** `espocrm` [18/crm], `activepieces` [1/motores], `coolify` [22/infraestructura], `formbricks`

@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -33,6 +33,7 @@ Es una herramienta Java: se descarga el JAR y el script envoltorio según la gu�
 | [jadx](jadx.md) | Leer el código en Java con JADX mientras editas smali y recursos con Apktool. (combinación por arquitectura) | Decompila en JADX para entender y modifica con Apktool. |
 | [frida](frida.md) | Incrustar Frida Gadget en la APK reconstruida cuando no hay root. (combinación por arquitectura) | Añade la librería del gadget con Apktool, reconstruye y firma. |
 | [mitmproxy](mitmproxy.md) | Modificar `network_security_config` para que la app confíe en el certificado de mitmproxy. (combinación por arquitectura) | Edita la configuración con Apktool, reconstruye, firma e intercepta. |
+| [OWASP MASTG](mastg.md) | Combinación recíproca: OWASP MASTG lo enlaza como «Apktool descompila APK para las pruebas estáticas de Android». | Orden indicado desde OWASP MASTG: Descompila la APK propia con Apktool y revisa según el MASTG. |
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

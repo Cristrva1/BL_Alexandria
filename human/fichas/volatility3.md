@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
-**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** Volatility Software License 1.0 (no OSI). Copyleft: exige compartir el código de cambios y del software construido con ella. Fuente: [LICENSE](https://github.com/volatilityfoundation/volatility3/blob/develop/LICENSE.txt). GitHub la marca como NOASSERTION.
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,8 +49,8 @@ Grupo **Bloqueo de IP por comportamiento**: CrowdSec ocupa la posición 1 de 2 (
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **CrowdSec** (esta ficha) ⭐ recomendado | 75 | Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. |
-| 2 | [Fail2ban](fail2ban.md) | 61 | Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
+| 1 | **CrowdSec** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. |
+| 2 | [Fail2ban](fail2ban.md) | 62 | Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. |
 
 ## Acceso, coste y equipo
 

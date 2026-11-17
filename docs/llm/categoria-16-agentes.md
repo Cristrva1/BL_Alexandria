@@ -20,8 +20,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `rea` | Herramientas e instrucciones para estudiar el comportamiento y la estructura de… | 2 Intermedio | 75 | MIT (OSI permisiva) | sin grupo |
 | `strix` | Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `shannon` | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y… | 2 Intermedio | 62 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `garak` | Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `shannon` | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `garak` | Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `craft-anything` | Herramientas para estudiar cómo funciona una aplicación y ayudar a construir… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -53,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### shannon (`shannon`)
 
-- **Repo:** https://github.com/KeygraphHQ/shannon · AGPL-3.0 · nivel 2 · 62/100 · alternativa en «Pentesting autónomo con agentes»
+- **Repo:** https://github.com/KeygraphHQ/shannon · AGPL-3.0 · nivel 2 · 63/100 · alternativa en «Pentesting autónomo con agentes»
 - **Qué es:** Pentester autónomo con IA para aplicaciones web y APIs, de Keygraph. Licencia AGPL-3.0. Es muy activo (~52k estrellas, v3.5.1).
 - **Cuándo elegirlo:** Casos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada.
 - **Requisitos:** nivel 2: preparación media; Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local; hardware prerequisites; API de IA: depends; Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local.
@@ -65,7 +65,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### garak (`garak`)
 
-- **Repo:** https://github.com/NVIDIA/garak · Apache-2.0 · nivel 2 · 61/100
+- **Repo:** https://github.com/NVIDIA/garak · Apache-2.0 · nivel 2 · 62/100
 - **Qué es:** Kit de red teaming y evaluación de IA generativa de código abierto (Apache-2.0), creado por Leon Derczynski y mantenido bajo la organización NVIDIA. Activo y con artículo académico asociado.
 - **Cuándo elegirlo:** Casos: auditar un chatbot propio frente a inyección de prompts y jailbreaks antes de publicarlo; comparar la robustez de varios modelos locales con las mismas sondas.
 - **Requisitos:** nivel 2: preparación media; Python, pyproject.toml, requirements.txt; hardware model_dependent; API de IA: opcional.

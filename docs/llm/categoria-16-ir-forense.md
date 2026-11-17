@@ -18,11 +18,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `hayabusa` | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `velociraptor` | EDR/IR open source para recolección forense a escala: consultas VQL sobre… | 4 Experto | 57 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `volatility3` | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para… | 3 Avanzado | 47 | Volatility Software License 1.0 (no OSI) (source-available) | sin grupo |
+| `hayabusa` | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `velociraptor` | EDR/IR open source para recolección forense a escala: consultas VQL sobre… | 4 Experto | 58 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `volatility3` | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para… | 3 Avanzado | 48 | Volatility Software License 1.0 (no OSI) (source-available) | sin grupo |
 | `autopsy` | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para… | 3 Avanzado | 46 | — (sin licencia detectada) | recomendado |
-| `sleuthkit` | Toolkit forense de sistemas de archivos: recupera y analiza particiones… | 3 Avanzado | 41 | — (sin licencia detectada) | alternativa |
+| `sleuthkit` | Toolkit forense de sistemas de archivos: recupera y analiza particiones… | 3 Avanzado | 42 | — (sin licencia detectada) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -30,7 +30,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Hayabusa (`hayabusa`)
 
-- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 63/100
+- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 64/100
 - **Qué es:** DFIR timeline/rules (AGPL) de Yamato Security.
 - **Cuándo elegirlo:** Casos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; Rust, Cargo.toml; API de IA: no.
@@ -41,7 +41,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Velociraptor (`velociraptor`)
 
-- **Repo:** https://github.com/Velocidex/velociraptor · AGPL-3.0 · nivel 4 · 57/100
+- **Repo:** https://github.com/Velocidex/velociraptor · AGPL-3.0 · nivel 4 · 58/100
 - **Qué es:** Plataforma AGPL de Velocidex para respuesta a incidentes y caza en endpoints.
 - **Cuándo elegirlo:** Casos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Makefile, go.mod; API de IA: no.
@@ -52,7 +52,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Volatility 3 (`volatility3`)
 
-- **Repo:** https://github.com/volatilityfoundation/volatility3 · Volatility Software License 1.0 (no OSI) · nivel 3 · 47/100
+- **Repo:** https://github.com/volatilityfoundation/volatility3 · Volatility Software License 1.0 (no OSI) · nivel 3 · 48/100
 - **Qué es:** Volatility 3 de Volatility Foundation; licencia propia (Volatility Software License) aunque la API marca NOASSERTION.
 - **Cuándo elegirlo:** Casos: listar procesos ocultos en un dump de lab; extraer conexiones de red desde memoria.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, pyproject.toml; API de IA: no.
@@ -74,7 +74,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### The Sleuth Kit (`sleuthkit`)
 
-- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 41/100 · alternativa en «Análisis forense de discos»
+- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 42/100 · alternativa en «Análisis forense de discos»
 - **Qué es:** TSK: toolkit forense de FS (licencias mixtas).
 - **Cuándo elegirlo:** Casos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..

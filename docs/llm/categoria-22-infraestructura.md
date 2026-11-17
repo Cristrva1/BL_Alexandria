@@ -103,7 +103,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media; Go, Dockerfile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/traefik/traefik` — fuente: https://github.com/traefik/traefik/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta. Éxito: El servicio responde en el dominio configurado sin reiniciar Traefik.
-- **Combina con:** `coolify`, `dokploy`, `crowdsec` [16/deteccion], `grafana` [10/bi], `portainer`
+- **Combina con:** `coolify`, `dokploy`, `crowdsec` [16/deteccion], `grafana` [10/bi], `portainer`, `coraza` [16/deteccion]
 - **Alternativas:** `caddy`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): caddy.
 

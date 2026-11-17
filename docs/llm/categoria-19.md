@@ -20,11 +20,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---|---:|---|---|
 | `prompts-chat` | prompts | La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts)… | 1 Básico | 69 | MIT (código) + CC0-1.0 (prompts) (OSI permisiva) | recomendado |
 | `fabric` | prompts | CLI con cientos de patrones de prompts para resumir, extraer y transformar… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `system-prompts-and-models-of-ai-tools` | prompts | Colección de prompts y configuraciones atribuidos a herramientas de IA para… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `system-prompts-and-models-of-ai-tools` | prompts | Colección de prompts y configuraciones atribuidos a herramientas de IA para… | 1 Básico | 61 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `prompt-engineering-guide` | prompts | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y… | 1 Básico | 56 | MIT (OSI permisiva) | sin grupo |
-| `chatgpt-system-prompt` | prompts | Colección de prompts de GPT y recursos sobre instrucciones de sistema y… | 1 Básico | 53 | MIT (OSI permisiva) | sin grupo |
-| `prompt-master` | prompts | Skill de Claude que ayuda a formular encargos para distintas herramientas de… | 1 Básico | 53 | MIT (OSI permisiva) | sin grupo |
-| `chatgpt-dan` | prompts | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones… | 1 Básico | 32 | — (sin licencia detectada) | sin grupo |
+| `prompt-master` | prompts | Skill de Claude que ayuda a formular encargos para distintas herramientas de… | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
+| `chatgpt-system-prompt` | prompts | Colección de prompts de GPT y recursos sobre instrucciones de sistema y… | 1 Básico | 52 | MIT (OSI permisiva) | sin grupo |
+| `chatgpt-dan` | prompts | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones… | 1 Básico | 33 | — (sin licencia detectada) | sin grupo |
 | `awesome-llm-apps` | guias | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos… | 1 Básico | 75 | Apache-2.0 (OSI permisiva) | recomendado |
 | `generative-ai-for-beginners` | guias | Curso de Microsoft para aprender los conceptos y construir ejemplos de… | 1 Básico | 68 | MIT (OSI permisiva) | recomendado |
 | `loop-engineering` | guias | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
@@ -79,7 +79,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### system-prompts-and-models-of-ai-tools (`system-prompts-and-models-of-ai-tools`)
 
-- **Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools · GPL-3.0 · nivel 1 · 60/100
+- **Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools · GPL-3.0 · nivel 1 · 61/100
 - **Qué es:** Colección (GPL-3.0) de @x1xhlol con system prompts, definiciones de herramientas y modelos atribuidos a herramientas de IA comerciales como Cursor, Devin, v0, Lovable o Windsurf. Es muy popular (~145k estrellas).
 - **Cuándo elegirlo:** Casos: Estudiar instrucciones de herramientas de código; Preparar una plantilla propia de sistema.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; interés en diseño de instrucciones; hardware prerequisites; API de IA: no; Navegador; interés en diseño de instrucciones.
@@ -99,20 +99,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `prompt-master`, `context-engineering` [19/guias], `promptfoo` [23/observabilidad], `chatgpt-system-prompt`, `claude-cookbooks` [19/guias]
 - **Riesgos y avisos:** Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro.
 
-### chatgpt_system_prompt (`chatgpt-system-prompt`)
-
-- **Repo:** https://github.com/LouisShark/chatgpt_system_prompt · MIT · nivel 1 · 53/100
-- **Qué es:** Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026).
-- **Cuándo elegirlo:** Casos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; ejemplo propio de instrucciones; hardware prerequisites; API de IA: no; Navegador; ejemplo propio de instrucciones.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato Éxito: Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
-- **Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo` [23/observabilidad], `prompt-engineering-guide`, `chatgpt-dan`
-- **Riesgos y avisos:** Sin alternativas declaradas. Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales.
-
 ### prompt-master (`prompt-master`)
 
-- **Repo:** https://github.com/nidhinjs/prompt-master · MIT · nivel 1 · 53/100
+- **Repo:** https://github.com/nidhinjs/prompt-master · MIT · nivel 1 · 54/100
 - **Qué es:** Skill para Claude (MIT) de nidhinjs que redacta prompts optimizados para otras herramientas de IA. Es un proyecto individual y reciente (último push en octubre de 2026), sin releases.
 - **Cuándo elegirlo:** Casos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude con skills o Claude Code; descripción de una tarea; hardware prerequisites; API de IA: no; Claude con skills o Claude Code; descripción de una tarea.
@@ -126,9 +115,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `prompt-engineering-guide`, `anthropic-skills` [2/catalogos]
 - **Riesgos y avisos:** Sin alternativas declaradas. Combinación anterior con andrej-karpathy-skills eliminada: sin relación documentada. La instalación documentada es para Claude y Claude Code; Codex y Antigravity aparecen como destinos del prompt generado y no prueban instalación nativa en….
 
+### chatgpt_system_prompt (`chatgpt-system-prompt`)
+
+- **Repo:** https://github.com/LouisShark/chatgpt_system_prompt · MIT · nivel 1 · 52/100
+- **Qué es:** Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026).
+- **Cuándo elegirlo:** Casos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; ejemplo propio de instrucciones; hardware prerequisites; API de IA: no; Navegador; ejemplo propio de instrucciones.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato Éxito: Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
+- **Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo` [23/observabilidad], `prompt-engineering-guide`, `chatgpt-dan`
+- **Riesgos y avisos:** Sin alternativas declaradas. Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales.
+
 ### ChatGPT_DAN (`chatgpt-dan`)
 
-- **Repo:** https://github.com/0xk1h0/ChatGPT_DAN · — · nivel 1 · 32/100
+- **Repo:** https://github.com/0xk1h0/ChatGPT_DAN · — · nivel 1 · 33/100
 - **Qué es:** Archivo de prompts de 'jailbreak' (DAN y otros) para ChatGPT, mantenido por @0xk1h0. No tiene licencia declarada. Es contenido histórico: la última nota de funcionamiento del README es de julio de 2023 (DAN 12.0 con GPT-3.5), aunque el…
 - **Cuándo elegirlo:** Casos: Estudiar la historia de prompts de roleplay; Reconocer intentos de manipulación de instrucciones.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; criterio de lectura histórica; hardware prerequisites; API de IA: no; Navegador; criterio de lectura histórica.
@@ -204,7 +204,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/huggingface/agents-course · Apache-2.0 · nivel 1 · 60/100
 - **Qué es:** Curso de código abierto (Apache-2.0) de Hugging Face. Muy popular; contenido estable con unidades extra añadidas con el tiempo.
-- **Cuándo elegirlo:** Casos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; MDX; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/huggingface/agents-course/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Abre la unidad 1 en hf.co/learn/agents-course y ejecuta su cuaderno de ejemplo. Éxito: Construyes un agente sencillo que usa una herramienta.
@@ -322,7 +322,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/microsoft/ML-For-Beginners · MIT · nivel 1 · 70/100
 - **Qué es:** Currículo educativo de código abierto (MIT) de Microsoft (serie «for Beginners»). Muy popular; mantenimiento continuo con traducciones automáticas.
-- **Cuándo elegirlo:** Casos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Jupyter Notebook, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/microsoft/ML-For-Beginners.git` — fuente: https://github.com/microsoft/ML-For-Beginners/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter. Éxito: El cuaderno se ejecuta y muestra el primer modelo de regresión.
@@ -344,7 +344,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/labmlai/annotated_deep_learning_paper_implementations · MIT · nivel 1 · 59/100
 - **Qué es:** Colección educativa de código abierto (MIT) de labml.ai (Varuna Jayasiri y colaboradores). Muy popular; se añaden implementaciones con frecuencia.
-- **Cuándo elegirlo:** Casos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, requirements.txt, setup.py; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install labml-nn` — fuente: https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/readme.md
 - **Primera prueba propuesta (no ejecutada):** Abre en nn.labml.ai la implementación de atención multi-cabeza y lee el código con sus notas. Éxito: Ves el código de PyTorch con la explicación de cada paso al lado.

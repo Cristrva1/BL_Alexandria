@@ -23,8 +23,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `kepler.gl` | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
 | `deck.gl` | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
 | `qgis` | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
-| `odm` | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `webodm` | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 57 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `webodm` | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `odm` | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -87,9 +87,21 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `leaflet`, `maplibre`, `webodm`, `duckdb` [25/datos]
 - **Riesgos y avisos:** Curva de aprendizaje alta para análisis avanzado; la documentación oficial y los tutoriales de la comunidad son amplios.
 
+### WebODM (`webodm`)
+
+- **Repo:** https://github.com/WebODM/WebODM · AGPL-3.0 · nivel 3 · 60/100 · recomendado en «Fotogrametría con drones»
+- **Qué es:** WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.
+- **Cuándo elegirlo:** Casos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica.
+- **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
+- **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
+- **Alternativas:** `odm`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
+
 ### ODM (`odm`)
 
-- **Repo:** https://github.com/OpenDroneMap/ODM · AGPL-3.0 · nivel 2 · 58/100 · recomendado en «Fotogrametría con drones»
+- **Repo:** https://github.com/OpenDroneMap/ODM · AGPL-3.0 · nivel 2 · 58/100 · alternativa en «Fotogrametría con drones»
 - **Qué es:** ODM (OpenDroneMap), kit de línea de comandos para procesar imágenes aéreas de drones. Licencia AGPL-3.0. Es maduro (~6.6k estrellas, v3.6.2).
 - **Cuándo elegirlo:** Casos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección.
 - **Requisitos:** nivel 2: preparación media; Docker; fotografías aéreas propias con solapamiento; RAM y disco según lote; hardware prerequisites; API de IA: no; Docker; fotografías aéreas propias con solapamiento; RAM y disco según lote.
@@ -103,18 +115,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos]
 - **Alternativas:** `webodm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm). El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas.
-
-### WebODM (`webodm`)
-
-- **Repo:** https://github.com/WebODM/WebODM · AGPL-3.0 · nivel 3 · 57/100 · alternativa en «Fotogrametría con drones»
-- **Qué es:** WebODM, software de procesamiento de imágenes de drones con interfaz web, liderado por @pierotofy. Licencia AGPL-3.0. Es maduro (~4.3k estrellas, v4.0.1) y desde abril de 2026 es independiente de OpenDroneMap.
-- **Cuándo elegirlo:** Casos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica.
-- **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
-- **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
-- **Alternativas:** `odm`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

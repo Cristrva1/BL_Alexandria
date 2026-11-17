@@ -33,8 +33,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `headscale` | redes | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 69 | BSD-3-Clause (OSI permisiva) | recomendado |
 | `frp` | redes | Proxy inverso rápido para exponer servidores locales detrás de NAT o… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `netbird` | redes | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso… | 2 Intermedio | 63 | BSD-3-Clause + AGPL-3.0 (management, signal, relay) (OSI copyleft) | alternativa |
-| `wg-easy` | redes | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 1 Básico | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `masterdnsvpn` | redes | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
+| `wg-easy` | redes | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `masterdnsvpn` | redes | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
 | `supabase` | infraestructura | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras… | 3 Avanzado | 76 | Apache-2.0 (OSI permisiva) | recomendado |
 | `coolify` | infraestructura | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
 | `appwrite` | infraestructura | Plataforma de backend abierta orientada a agentes y desarrolladores… | 2 Intermedio | 73 | BSD-3-Clause (OSI permisiva) | alternativa |
@@ -247,10 +247,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### WireGuard Easy (`wg-easy`)
 
-- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 1 · 63/100
+- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 2 · 63/100
 - **Qué es:** Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.
 - **Cuándo elegirlo:** Casos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `sudo docker compose up / down` — fuente: https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md
 - **Primera prueba propuesta (no ejecutada):** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard. Éxito: El cliente se conecta y aparece activo en el panel.
 - **Combina con:** `grafana` [10/bi], `caddy` [22/infraestructura], `pi-hole` [15/privacidad], `portainer` [22/infraestructura]
@@ -258,7 +258,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MasterDnsVPN (`masterdnsvpn`)
 
-- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 52/100
+- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 55/100
 - **Qué es:** MasterDnsVPN, proyecto de investigación en Go para transportar tráfico TCP mediante consultas y respuestas DNS, de @masterking32. Licencia MIT. Tiene ~7.3k estrellas y existe una versión legacy en Python.
 - **Cuándo elegirlo:** Casos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio.
 - **Requisitos:** nivel 2: preparación media; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio; hardware prerequisites; API de IA: no; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio.
@@ -342,7 +342,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media; Go, Dockerfile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/traefik/traefik` — fuente: https://github.com/traefik/traefik/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta. Éxito: El servicio responde en el dominio configurado sin reiniciar Traefik.
-- **Combina con:** `coolify`, `dokploy`, `crowdsec` [16/deteccion], `grafana` [10/bi], `portainer`
+- **Combina con:** `coolify`, `dokploy`, `crowdsec` [16/deteccion], `grafana` [10/bi], `portainer`, `coraza` [16/deteccion]
 - **Alternativas:** `caddy`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): caddy.
 

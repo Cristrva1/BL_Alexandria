@@ -12,7 +12,7 @@
 
 **Nivel:** 4 Experto — preparación difícil; dominio especializado
 
-**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** AGPL-3.0. Fuente: [LICENSE](https://github.com/Velocidex/velociraptor/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 

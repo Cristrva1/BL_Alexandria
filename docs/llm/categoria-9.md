@@ -39,13 +39,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | `open-design` | diseno | Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces… | 2 Intermedio | 78 | Apache-2.0 (OSI permisiva) | recomendado |
 | `excalidraw` | diseno | Pizarra virtual open source para diagramas con estilo dibujado a mano… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
 | `penpot` | diseno | Plataforma open-source de diseño y prototipado colaborativo, pensada para… | 3 Avanzado | 68 | MPL-2.0 (OSI copyleft) | sin grupo |
+| `onlook` | diseno | Editor visual con IA para construir, estilar y editar apps React y Tailwind… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | alternativa |
 | `tldraw` | diseno | SDK para construir apps de lienzo infinito en React, como pizarras y… | 2 Intermedio | 55 | tldraw license (no OSI) (source-available) | alternativa |
 | `plasmic` | diseno | Builder visual para apps y sitios conectado a tu propia base de código, que… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
-| `onlook` | diseno | Editor visual con IA para construir, estilar y editar apps React y Tailwind… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | alternativa |
 | `copilotkit` | ia-ui | Stack frontend para agentes y UI generativa en React, creadores del protocolo… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
-| `ai-website-cloner-template` | ia-ui | Plantilla para que un agente de código estudie una web de referencia y prepare… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
+| `ai-website-cloner-template` | ia-ui | Plantilla para que un agente de código estudie una web de referencia y prepare… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `screenshot-to-code` | ia-ui | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind… | 2 Intermedio | 63 | MIT (OSI permisiva) | recomendado |
 | `assistant-ui` | ia-ui | Librería React y TypeScript para interfaces de chat con IA de calidad… | 2 Intermedio | 62 | MIT (OSI permisiva) | alternativa |
-| `screenshot-to-code` | ia-ui | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind… | 1 Básico | 60 | MIT (OSI permisiva) | recomendado |
 | `ui-sdk` | ia-ui | Colección de comportamientos y recursos para que agentes construyan interfaces… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `json-render` | ia-ui | Framework para generar interfaces desde una representación JSON y un catálogo… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `openui` | ia-ui | Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
@@ -308,6 +308,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `excalidraw`, `tailwindcss` [9/estilos]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas en el catálogo (Figma no es open source). Combinación anterior con plasmic eliminada: sin integración documentada. MCP puede leer y modificar el workspace mediante su plugin; es opcional para diseñar manualmente.
 
+### Onlook (`onlook`)
+
+- **Repo:** https://github.com/onlook-dev/onlook · Apache-2.0 · nivel 2 · 56/100 · alternativa en «Editores visuales de diseño con IA»
+- **Qué es:** Editor visual open source (Apache-2.0) para diseñar sobre apps Next.js + Tailwind con IA. Es el proyecto que dio origen a Onlook; la empresa construye ahora un producto alojado distinto, en acceso anticipado con lista de espera.
+- **Cuándo elegirlo:** Casos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI; hardware prerequisites; API de IA: depends; Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/onlook-dev/onlook/blob/main/docs/content/docs/self-hosting/docker-compose.mdx
+- **Primera prueba propuesta (no ejecutada):** Abre una app de prueba, cambia un espaciado visualmente y revisa el diff de código Éxito: El cambio visible corresponde a un cambio identificable en los archivos
+- **Combina con:** `tailwindcss` [9/estilos], `supabase` [22/infraestructura], `ui` [9/componentes]
+- **Alternativas:** `open-design`
+- **Riesgos y avisos:** Alternativas (elige una): open-design. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado.
+
 ### tldraw (`tldraw`)
 
 - **Repo:** https://github.com/tldraw/tldraw · tldraw license (no OSI) · nivel 2 · 55/100 · alternativa en «Pizarras y diagramas a mano alzada»
@@ -331,18 +343,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `supabase` [22/infraestructura]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Licencia AGPL en `platform/`: revisa obligaciones si la modificas y la ofreces como servicio. El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL.
 
-### Onlook (`onlook`)
-
-- **Repo:** https://github.com/onlook-dev/onlook · Apache-2.0 · nivel 1 · 53/100 · alternativa en «Editores visuales de diseño con IA»
-- **Qué es:** Editor visual open source (Apache-2.0) para diseñar sobre apps Next.js + Tailwind con IA. Es el proyecto que dio origen a Onlook; la empresa construye ahora un producto alojado distinto, en acceso anticipado con lista de espera.
-- **Cuándo elegirlo:** Casos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código.
-- **Requisitos:** nivel 1: preparación sencilla; Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI; hardware prerequisites; API de IA: depends; Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/onlook-dev/onlook/blob/main/docs/content/docs/self-hosting/docker-compose.mdx
-- **Primera prueba propuesta (no ejecutada):** Abre una app de prueba, cambia un espaciado visualmente y revisa el diff de código Éxito: El cambio visible corresponde a un cambio identificable en los archivos
-- **Combina con:** `tailwindcss` [9/estilos], `supabase` [22/infraestructura], `ui` [9/componentes]
-- **Alternativas:** `open-design`
-- **Riesgos y avisos:** Alternativas (elige una): open-design. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado.
-
 ### CopilotKit (`copilotkit`)
 
 - **Repo:** https://github.com/CopilotKit/CopilotKit · MIT · nivel 2 · 70/100 · recomendado en «Componentes de chat y copilotos para React»
@@ -357,14 +357,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ai-website-cloner-template (`ai-website-cloner-template`)
 
-- **Repo:** https://github.com/JCodesMore/ai-website-cloner-template · MIT · nivel 2 · 62/100
+- **Repo:** https://github.com/JCodesMore/ai-website-cloner-template · MIT · nivel 2 · 64/100
 - **Qué es:** Plantilla (MIT) de @JCodesMore para que un agente de programación estudie una web de referencia y la recree como app Next.js. Es activa (v0.6.1) y popular (~39k estrellas).
 - **Cuándo elegirlo:** Casos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Node; agente con acceso de navegador; web propia o referencia autorizada; hardware prerequisites; API de IA: no; Node; agente con acceso de navegador; web propia o referencia autorizada.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él, varios servicios con Docker Compose; Node; agente con acceso de navegador; web propia o referencia autorizada; hardware prerequisites; API de IA: no; Node; agente con acceso de navegador; web propia o referencia autorizada.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up app --build` — fuente: https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Usa una página de referencia propia y pide recrear una única sección en el proyecto de prueba Éxito: Puedes comparar referencia y resultado a la misma anchura y revisar el código
 - **Combina con:** `claude-code` [20/terminal], `ui` [9/componentes], `playwright` [32/bibliotecas]
 - **Riesgos y avisos:** Sin alternativas declaradas. Úsala solo con sitios propios o con permiso. La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity.
+
+### screenshot-to-code (`screenshot-to-code`)
+
+- **Repo:** https://github.com/abi/screenshot-to-code · MIT · nivel 2 · 63/100 · recomendado en «De diseño o captura a código»
+- **Qué es:** Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).
+- **Cuándo elegirlo:** Casos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview; hardware prerequisites; API de IA: depends; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d --build` — fuente: https://github.com/abi/screenshot-to-code/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Carga una captura de una interfaz propia mínima y compara el HTML generado con ella Éxito: Puedes revisar código y vista previa y señalar diferencias
+- **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `playwright` [32/bibliotecas]
+- **Alternativas:** `stitch-sdk`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): stitch-sdk. Respeta derechos de autor al convertir diseños ajenos. Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión.
 
 ### assistant-ui (`assistant-ui`)
 
@@ -377,18 +389,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `vercel-ai` [3/ts], `langgraph` [3/py], `ui` [9/componentes]
 - **Alternativas:** `copilotkit`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): copilotkit. Es la interfaz del chat; necesitas configurar el backend y no basta con instalar el paquete React.
-
-### screenshot-to-code (`screenshot-to-code`)
-
-- **Repo:** https://github.com/abi/screenshot-to-code · MIT · nivel 1 · 60/100 · recomendado en «De diseño o captura a código»
-- **Qué es:** Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).
-- **Cuándo elegirlo:** Casos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura.
-- **Requisitos:** nivel 1: preparación sencilla; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview; hardware prerequisites; API de IA: depends; Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d --build` — fuente: https://github.com/abi/screenshot-to-code/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Carga una captura de una interfaz propia mínima y compara el HTML generado con ella Éxito: Puedes revisar código y vista previa y señalar diferencias
-- **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `playwright` [32/bibliotecas]
-- **Alternativas:** `stitch-sdk`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): stitch-sdk. Respeta derechos de autor al convertir diseños ajenos. Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión.
 
 ### UI SDK (Vercel) (`ui-sdk`)
 

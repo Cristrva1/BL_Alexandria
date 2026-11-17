@@ -37,7 +37,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `sam3` | vision | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en… | 3 Avanzado | 52 | SAM License (source-available) | sin grupo |
 | `openpose` | vision | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y… | 3 Avanzado | 48 | Licencia académica no comercial (source-available) | sin grupo |
 | `4d-humans` | vision | Implementación de investigación para reconstruir y seguir personas en 3D a… | 3 Avanzado | 47 | MIT (OSI permisiva) | sin grupo |
-| `wham` | vision | Implementación de investigación para reconstruir movimiento humano… | 3 Avanzado | 39 | MIT (OSI permisiva) | sin grupo |
+| `wham` | vision | Implementación de investigación para reconstruir movimiento humano… | 3 Avanzado | 42 | MIT (OSI permisiva) | sin grupo |
 | `easymocap` | vision | Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir… | 3 Avanzado | 38 | Project Registration License v1.0 (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -286,7 +286,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### WHAM (`wham`)
 
-- **Repo:** https://github.com/yohanshin/WHAM · MIT · nivel 3 · 39/100
+- **Repo:** https://github.com/yohanshin/WHAM · MIT · nivel 3 · 42/100
 - **Qué es:** WHAM, implementación de investigación para reconstruir humanos en 3D anclados al mundo con movimiento preciso a partir de vídeo, de @yohanshin. Licencia MIT. Tiene ~1.2k estrellas y no cambia desde abril de 2024.
 - **Cuándo elegirlo:** Casos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento.
 - **Requisitos:** nivel 3: preparación pesada; Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado; hardware prerequisites; API de IA: no; Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado.

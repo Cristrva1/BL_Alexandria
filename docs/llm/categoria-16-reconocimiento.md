@@ -1,6 +1,6 @@
 # Alexandría para agentes · Reconocimiento y superficie de ataque
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `reconocimiento`. 9 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `reconocimiento`. 10 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=reconocimiento · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,14 +18,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `httpx` | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 76 | MIT (OSI permisiva) | recomendado |
-| `subfinder` | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes… | 1 Básico | 76 | MIT (OSI permisiva) | sin grupo |
+| `httpx` | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 77 | MIT (OSI permisiva) | recomendado |
+| `subfinder` | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
+| `amass` | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `interactsh` | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
+| `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
 | `rustscan` | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 63 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `amass` | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
-| `interactsh` | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 61 | MIT (OSI permisiva) | sin grupo |
-| `dnsx` | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 60 | MIT (OSI permisiva) | sin grupo |
-| `nmap` | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 58 | NPSL (no OSI) (OSI copyleft) | sin grupo |
+| `dnsx` | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
+| `noir` | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
+| `nmap` | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 59 | NPSL (no OSI) (OSI copyleft) | sin grupo |
 | `masscan` | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 54 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -34,7 +35,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### httpx (`httpx`)
 
-- **Repo:** https://github.com/projectdiscovery/httpx · MIT · nivel 1 · 76/100 · recomendado en «Sondeo y escaneo de reconocimiento»
+- **Repo:** https://github.com/projectdiscovery/httpx · MIT · nivel 1 · 77/100 · recomendado en «Sondeo y escaneo de reconocimiento»
 - **Qué es:** Toolkit HTTP multipropósito de ProjectDiscovery, pareja natural de Subfinder y Nuclei.
 - **Cuándo elegirlo:** Casos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -46,7 +47,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### subfinder (`subfinder`)
 
-- **Repo:** https://github.com/projectdiscovery/subfinder · MIT · nivel 1 · 76/100
+- **Repo:** https://github.com/projectdiscovery/subfinder · MIT · nivel 1 · 77/100
 - **Qué es:** Herramienta de código abierto (MIT) de ProjectDiscovery. Muy activa y usada en reconocimiento y bug bounty.
 - **Cuándo elegirlo:** Casos: inventariar los subdominios públicos de tu propia organización; preparar el alcance de un programa de bug bounty.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
@@ -54,6 +55,40 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` y enumera un dominio propio. Éxito: Obtienes la lista de subdominios encontrados en fuentes pasivas.
 - **Combina con:** `nuclei` [16/pruebas], `katana` [4/crawlers], `ffuf` [16/pruebas], `amass`, `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Cercano a theharvester (que además recoge correos y otros datos); subfinder se centra solo en subdominios.
+
+### Amass (`amass`)
+
+- **Repo:** https://github.com/owasp-amass/amass · Apache-2.0 · nivel 2 · 63/100
+- **Qué es:** Proyecto OWASP de mapeo de superficie de ataque y descubrimiento de activos externos.
+- **Cuándo elegirlo:** Casos: inventariar subdominios de un dominio propio antes de un pentest; cruzar certificados TLS públicos con la infraestructura conocida.
+- **Requisitos:** nivel 2: preparación media; Go, Dockerfile, go.mod; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/owasp-amass/amass/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala Amass según https://owasp-amass.github.io/docs y ejecuta un enum pasivo sobre un dominio de laboratorio. Éxito: Obtienes un listado de FQDN, IPs y fuentes usadas.
+- **Combina con:** `nmap`, `subfinder`, `nuclei` [16/pruebas], `httpx`, `naabu`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### interactsh (`interactsh`)
+
+- **Repo:** https://github.com/projectdiscovery/interactsh · MIT · nivel 2 · 63/100
+- **Qué es:** Plataforma OOB de ProjectDiscovery.
+- **Cuándo elegirlo:** Casos: confirmar SSRF ciega en una API de lab; validar plantillas Nuclei con OOB.
+- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest` — fuente: https://github.com/projectdiscovery/interactsh/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala el cliente con `go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest`. Éxito: Recibes un dominio OOB de prueba.
+- **Combina con:** `nuclei` [16/pruebas], `httpx`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
+### Naabu (`naabu`)
+
+- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 63/100 · alternativa en «Sondeo y escaneo de reconocimiento»
+- **Qué es:** Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
+- **Cuándo elegirlo:** Casos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` — fuente: https://github.com/projectdiscovery/naabu/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio. Éxito: Obtienes puertos abiertos listos para Nmap o httpx.
+- **Combina con:** `nmap`, `amass`, `nuclei` [16/pruebas]
+- **Alternativas:** `httpx`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### RustScan (`rustscan`)
 
@@ -66,43 +101,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nmap`, `naabu`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### Amass (`amass`)
-
-- **Repo:** https://github.com/owasp-amass/amass · Apache-2.0 · nivel 2 · 62/100
-- **Qué es:** Proyecto OWASP de mapeo de superficie de ataque y descubrimiento de activos externos.
-- **Cuándo elegirlo:** Casos: inventariar subdominios de un dominio propio antes de un pentest; cruzar certificados TLS públicos con la infraestructura conocida.
-- **Requisitos:** nivel 2: preparación media; Go, Dockerfile, go.mod; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/owasp-amass/amass/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Amass según https://owasp-amass.github.io/docs y ejecuta un enum pasivo sobre un dominio de laboratorio. Éxito: Obtienes un listado de FQDN, IPs y fuentes usadas.
-- **Combina con:** `nmap`, `subfinder`, `nuclei` [16/pruebas], `httpx`, `naabu`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
-### Naabu (`naabu`)
-
-- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 62/100 · alternativa en «Sondeo y escaneo de reconocimiento»
-- **Qué es:** Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
-- **Cuándo elegirlo:** Casos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios.
-- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` — fuente: https://github.com/projectdiscovery/naabu/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio. Éxito: Obtienes puertos abiertos listos para Nmap o httpx.
-- **Combina con:** `nmap`, `amass`, `nuclei` [16/pruebas]
-- **Alternativas:** `httpx`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
-### interactsh (`interactsh`)
-
-- **Repo:** https://github.com/projectdiscovery/interactsh · MIT · nivel 2 · 61/100
-- **Qué es:** Plataforma OOB de ProjectDiscovery.
-- **Cuándo elegirlo:** Casos: confirmar SSRF ciega en una API de lab; validar plantillas Nuclei con OOB.
-- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest` — fuente: https://github.com/projectdiscovery/interactsh/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala el cliente con `go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest`. Éxito: Recibes un dominio OOB de prueba.
-- **Combina con:** `nuclei` [16/pruebas], `httpx`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
 ### dnsx (`dnsx`)
 
-- **Repo:** https://github.com/projectdiscovery/dnsx · MIT · nivel 1 · 60/100
+- **Repo:** https://github.com/projectdiscovery/dnsx · MIT · nivel 1 · 62/100
 - **Qué es:** Herramienta DNS del ecosistema ProjectDiscovery.
 - **Cuándo elegirlo:** Casos: resolver un listado de FQDN de lab; detectar wildcards antes de escanear.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -111,9 +112,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `subfinder`, `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
+### OWASP Noir (`noir`)
+
+- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 61/100
+- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
+- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
+- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
+- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
 ### Nmap (`nmap`)
 
-- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 58/100
+- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 59/100
 - **Qué es:** Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para…
 - **Cuándo elegirlo:** Casos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.
 - **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no.

@@ -24,9 +24,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 | `librechat` | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola… | 2 Intermedio | 68 | MIT (OSI permisiva) | alternativa |
 | `jan` | Aplicación de escritorio para conversar con modelos locales y configurar… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | alternativa |
 | `nextchat` | Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
+| `textgen` | App open source para LLM locales con texto, visión, herramientas y API… | 2 Intermedio | 53 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `chatbox` | Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos… | 1 Básico | 52 | GPL-3.0 (OSI copyleft) | alternativa |
 | `sillytavern` | Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `textgen` | App open source para LLM locales con texto, visión, herramientas y API… | 2 Intermedio | 50 | AGPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -45,7 +45,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Conecta un modelo y conversa sobre un texto ficticio antes de cargar documentos privados Éxito: Puedes ver el modelo seleccionado y conservar una conversación
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `searxng` [4/busqueda]
-- **Alternativas:** `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`, `textgen`, `anything-llm`
+- **Alternativas:** `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `textgen`, `chatbox`, `anything-llm`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): librechat, lobehub, anything-llm, textgen. La cláusula de marca limita el rebranding: revisa LICENSE antes de redistribuirlo con otra…. Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia.
 
 ### Cherry Studio (`cherry-studio`)
@@ -57,7 +57,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://cherryai.com/docs/en/getting-started/quick-start/
 - **Primera prueba propuesta (no ejecutada):** Configura un modelo y prueba una pregunta sobre una nota ficticia en un espacio de trabajo Éxito: Puedes comprobar el proveedor y la respuesta usada en la conversación
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `playwright-mcp` [5/servidores]
-- **Alternativas:** `open-webui`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`, `textgen`
+- **Alternativas:** `open-webui`, `lobehub`, `librechat`, `jan`, `nextchat`, `textgen`, `chatbox`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): jan, lobehub. Los agentes pueden ejecutar comandos: revisa sus permisos. Es una app multiproveedor; escoger Anthropic u OpenAI no la convierte en sesión de Claude Code o Codex.
 
 ### LobeHub (`lobehub`)
@@ -75,7 +75,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Crea un asistente de prueba y distingue su modelo del agente externo que puedas conectar Éxito: Puedes identificar qué proveedor atiende cada conversación
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `playwright-mcp` [5/servidores]
-- **Alternativas:** `open-webui`, `cherry-studio`, `librechat`, `jan`, `nextchat`, `chatbox`, `textgen`
+- **Alternativas:** `open-webui`, `cherry-studio`, `librechat`, `jan`, `nextchat`, `textgen`, `chatbox`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): open-webui, librechat, cherry-studio. SearXNG ya viene en su Compose; no instales otro aparte. Las skills portables y conectar un agente externo son funciones distintas; la página de integración consultada aún está en migración documental.
 
 ### LibreChat (`librechat`)
@@ -87,7 +87,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://www.librechat.ai/docs
 - **Primera prueba propuesta (no ejecutada):** Conecta un proveedor y prueba un agente sin herramientas antes de añadir archivos Éxito: Puedes identificar el modelo y revisar la conversación
 - **Combina con:** `litellm` [23/serving], `ollama` [8/motores], `langfuse` [23/observabilidad], `llama-cpp` [8/motores], `pgvector` [6/vectores], `exo` [8/motores]
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `jan`, `nextchat`, `chatbox`, `textgen`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `jan`, `nextchat`, `textgen`, `chatbox`
 - **Riesgos y avisos:** Alternativas (elige una): open-webui, lobehub. Meilisearch, pgvector y RAG API ya vienen en su Compose. Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo.
 
 ### Jan (`jan`)
@@ -99,7 +99,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/janhq/jan` — fuente: https://github.com/janhq/jan/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Desde la app descarga un modelo pequeño y prueba una conversación local Éxito: Ves el modelo cargado y puedes repetir la consulta sin proveedor remoto
 - **Combina con:** `llmfit` [8/motores], `ollama` [8/motores], `playwright-mcp` [5/servidores]
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `nextchat`, `chatbox`, `textgen`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `nextchat`, `textgen`, `chatbox`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): cherry-studio, textgen, chatbox. Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan.
 
 ### NextChat (`nextchat`)
@@ -111,8 +111,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/ChatGPTNextWeb/NextChat/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Despliega NextChat con Docker o Vercel usando tu clave de API y abre un chat. Éxito: El chat responde con el modelo configurado y el historial queda en el navegador.
 - **Combina con:** `localai` [8/motores], `litellm` [23/serving], `fastmcp` [5/sdk]
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `chatbox`, `textgen`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `textgen`, `chatbox`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): lobehub, chatbox. Protege el despliegue con la variable CODE si es público.
+
+### Text Generation WebUI (`textgen`)
+
+- **Repo:** https://github.com/oobabooga/textgen · AGPL-3.0 · nivel 2 · 53/100 · alternativa en «Interfaces de chat con LLM»
+- **Qué es:** Aplicación de escritorio para LLM locales, de código abierto (AGPL-3.0) y sin telemetría, de oobabooga (antes text-generation-webui). Madura y con versiones regulares (v4.9).
+- **Cuándo elegirlo:** Casos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app.
+- **Requisitos:** nivel 2: instaladores de un clic por sistema; Distribución portable apropiada a tu GPU o CPU; modelo GGUF; hardware prerequisites; API de IA: no; Distribución portable apropiada a tu GPU o CPU; modelo GGUF.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build` — fuente: https://github.com/oobabooga/textgen/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Carga un modelo pequeño en la app y revisa texto generado y consumo de memoria Éxito: Puedes identificar backend, modelo y memoria utilizada
+- **Combina con:** `librechat`, `llmfit` [8/motores], `unsloth` [24/entrenamiento], `sillytavern`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): jan, open-webui. Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación.
 
 ### chatbox (`chatbox`)
 
@@ -136,18 +148,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala SillyTavern con Node.js 20+, conéctalo a un backend local como KoboldCpp u Ollama y abre un chat. Éxito: El chat responde con el modelo conectado y la conversación se guarda en tu equipo.
 - **Combina con:** `koboldcpp` [8/motores], `ollama` [8/motores], `comfyui` [11/interfaces], `kokoro` [29/tts], `textgen`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La curva de aprendizaje es alta por diseño; las tarjetas de personaje de terceros pueden contener prompts no deseados.
-
-### Text Generation WebUI (`textgen`)
-
-- **Repo:** https://github.com/oobabooga/textgen · AGPL-3.0 · nivel 2 · 50/100 · alternativa en «Interfaces de chat con LLM»
-- **Qué es:** Aplicación de escritorio para LLM locales, de código abierto (AGPL-3.0) y sin telemetría, de oobabooga (antes text-generation-webui). Madura y con versiones regulares (v4.9).
-- **Cuándo elegirlo:** Casos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app.
-- **Requisitos:** nivel 2: instaladores de un clic por sistema; Distribución portable apropiada a tu GPU o CPU; modelo GGUF; hardware prerequisites; API de IA: no; Distribución portable apropiada a tu GPU o CPU; modelo GGUF.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build` — fuente: https://github.com/oobabooga/textgen/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Carga un modelo pequeño en la app y revisa texto generado y consumo de memoria Éxito: Puedes identificar backend, modelo y memoria utilizada
-- **Combina con:** `librechat`, `llmfit` [8/motores], `unsloth` [24/entrenamiento], `sillytavern`
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): jan, open-webui. Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

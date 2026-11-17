@@ -23,8 +23,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `compai-crm` | crm | CRM de Comp AI diseñado alrededor de agentes que investigan contactos… | 3 Avanzado | 66 | MIT (OSI permisiva) | sin grupo |
 | `odoo` | crm | Suite ERP y CRM de código abierto con módulos de ventas, inventario… | 3 Avanzado | 66 | LGPL-3.0 (OSI copyleft) | alternativa |
 | `chatwoot` | crm | Plataforma open-source de soporte al cliente que unifica conversaciones de… | 3 Avanzado | 65 | MIT + licencia Enterprise (enterprise/) (open-core) | sin grupo |
-| `zammad` | crm | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y… | 3 Avanzado | 58 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `freescout` | crm | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help… | 1 Básico | 56 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `freescout` | crm | Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help… | 2 Intermedio | 59 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `zammad` | crm | Sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y… | 3 Avanzado | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `espocrm` | crm | CRM web ligero y autoalojable para gestionar contactos, cuentas, oportunidades… | 2 Intermedio | 53 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `suitecrm` | crm | CRM open source clásico (fork de SugarCRM): contactos, oportunidades, casos y… | 2 Intermedio | 45 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `postiz-app` | marketing | Plataforma para preparar, programar y gestionar publicaciones en redes… | 3 Avanzado | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
@@ -119,9 +119,21 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `evolution-api` [17/whatsapp], `activepieces` [1/motores], `firecrawl` [4/crawlers]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. El equipo desaconseja usar la Community Edition para clones de Chatwoot Cloud o servicios de rebranding. El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado.
 
+### FreeScout (`freescout`)
+
+- **Repo:** https://github.com/freescout-help-desk/freescout · AGPL-3.0 · nivel 2 · 59/100 · recomendado en «Help desk y tickets»
+- **Qué es:** Helpdesk de código abierto (AGPL-3.0) del proyecto FreeScout, financiado con la venta de módulos. Maduro y activo.
+- **Cuándo elegirlo:** Casos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; PHP, composer.json, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://freescout.net/docker/
+- **Primera prueba propuesta (no ejecutada):** Instala FreeScout en un servidor PHP o con su imagen Docker, conecta un buzón de prueba y responde a una conversación. Éxito: El correo aparece como conversación y la respuesta se envía desde FreeScout.
+- **Combina con:** `activepieces` [1/motores], `claude-code` [20/terminal], `coolify` [22/infraestructura]
+- **Alternativas:** `zammad`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): zammad.
+
 ### Zammad (`zammad`)
 
-- **Repo:** https://github.com/zammad/zammad · AGPL-3.0 · nivel 3 · 58/100 · recomendado en «Help desk y tickets»
+- **Repo:** https://github.com/zammad/zammad · AGPL-3.0 · nivel 3 · 58/100 · alternativa en «Help desk y tickets»
 - **Qué es:** Helpdesk de código abierto (AGPL-3.0) de la Zammad Foundation, con alojamiento y soporte de pago de Zammad GmbH. Muy maduro.
 - **Cuándo elegirlo:** Casos: centralizar el soporte por correo y chat de un equipo pequeño; crear una base de conocimiento y métricas de atención.
 - **Requisitos:** nivel 3: preparación pesada; Ruby, Dockerfile, Gemfile, package.json; API de IA: no.
@@ -130,18 +142,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `activepieces` [1/motores], `claude-code` [20/terminal], `coolify` [22/infraestructura]
 - **Alternativas:** `freescout`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): freescout. Chatwoot cubre atención por chat y mensajería con otro enfoque.
-
-### FreeScout (`freescout`)
-
-- **Repo:** https://github.com/freescout-help-desk/freescout · AGPL-3.0 · nivel 1 · 56/100 · alternativa en «Help desk y tickets»
-- **Qué es:** Helpdesk de código abierto (AGPL-3.0) del proyecto FreeScout, financiado con la venta de módulos. Maduro y activo.
-- **Cuándo elegirlo:** Casos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos.
-- **Requisitos:** nivel 1: preparación sencilla; PHP, composer.json, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://freescout.net/docker/
-- **Primera prueba propuesta (no ejecutada):** Instala FreeScout en un servidor PHP o con su imagen Docker, conecta un buzón de prueba y responde a una conversación. Éxito: El correo aparece como conversación y la respuesta se envía desde FreeScout.
-- **Combina con:** `activepieces` [1/motores], `claude-code` [20/terminal], `coolify` [22/infraestructura]
-- **Alternativas:** `zammad`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): zammad.
 
 ### EspoCRM (`espocrm`)
 
@@ -285,7 +285,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/alextselegidis/easyappointments · GPL-3.0 · nivel 2 · 47/100 · alternativa en «Reservas y citas»
 - **Qué es:** Sistema de reservas de código abierto (GPL-3.0) creado por Alex Tselegidis. Maduro y activo.
 - **Cuándo elegirlo:** Casos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios.
-- **Requisitos:** nivel 2: preparación media; PHP, composer.json, docker-compose.yml, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; PHP, composer.json, docker-compose.yml, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up` — fuente: https://github.com/alextselegidis/easyappointments/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba. Éxito: La cita aparece en el calendario del proveedor.
 - **Combina con:** `espocrm` [18/crm], `activepieces` [1/motores], `coolify` [22/infraestructura], `formbricks`

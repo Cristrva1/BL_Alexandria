@@ -10,9 +10,9 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-**Nivel:** 2 Intermedio — preparación media
+**Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
-**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,8 +46,8 @@ Grupo **Finanzas personales**: Firefly III ocupa la posición 2 de 2 (alternativ
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Actual Budget](actual.md) ⭐ recomendado | 70 | Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. |
-| 2 | **Firefly III** (esta ficha) | 59 | Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. |
+| 1 | [Actual Budget](actual.md) ⭐ recomendado | 73 | Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable. |
+| 2 | **Firefly III** (esta ficha) | 62 | Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube. |
 
 ## Acceso, coste y equipo
 

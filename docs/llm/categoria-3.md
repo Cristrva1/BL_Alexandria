@@ -405,7 +405,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/langgenius/dify · Apache-2.0 modificada (condiciones adicionales) · nivel 2 · 70/100 · alternativa en «Builders visuales de agentes»
 - **Qué es:** Plataforma de LangGenius para desarrollar aplicaciones con LLM, con versión cloud y autoalojada. La licencia es la 'Dify Open Source License', basada en Apache 2.0 con condiciones adicionales (GitHub la marca NOASSERTION), así que hay que…
 - **Cuándo elegirlo:** Casos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación.
-- **Requisitos:** nivel 2: preparación media; Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor; hardware prerequisites; API de IA: depends; Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor; hardware prerequisites; API de IA: depends; Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/langgenius/dify/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings Éxito: La respuesta recupera un fragmento comprobable del documento
 - **Combina con:** `langfuse` [23/observabilidad], `ollama` [8/motores], `claude-code` [20/terminal], `evolution-api` [17/whatsapp], `paddleocr` [13/ocr], `ten-framework` [29/voz-agentes]

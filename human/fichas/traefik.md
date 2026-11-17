@@ -35,6 +35,7 @@ Escrito en Go; un binario o imagen Docker oficial. La configuración estática s
 | [CrowdSec](crowdsec.md) | CrowdSec ofrece un bouncer para Traefik que bloquea IP maliciosas como middleware. | CrowdSec en el servidor; después añade el bouncer como middleware de Traefik. |
 | [Grafana](grafana.md) | Las métricas Prometheus de Traefik se visualizan en Grafana. | Habilita las métricas Prometheus; después crea el panel en Grafana. |
 | [Portainer CE](portainer.md) | Combinación recíproca: Portainer CE lo enlaza como «Los stacks gestionados con Portainer pueden publicarse con etiquetas de Traefik (combinación por arquitectura)». | Orden indicado desde Portainer CE: Despliega Traefik; después añade las etiquetas en los stacks desde Portainer. |
+| [OWASP Coraza](coraza.md) | Combinación recíproca: OWASP Coraza lo enlaza como «Coraza figura entre las integraciones para Traefik en su README». | Orden indicado desde OWASP Coraza: Traefik desplegado; añade la integración de Coraza según su documentación. |
 
 **Notas:** Alternativas (elige una): caddy.
 

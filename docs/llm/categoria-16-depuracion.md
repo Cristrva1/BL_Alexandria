@@ -19,9 +19,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `x64dbg` | Depurador de Windows para inspeccionar programas en ejecución y estudiar… | 3 Avanzado | 69 | GPL-3.0 (texto modificado) (OSI copyleft) | sin grupo |
-| `pwndbg` | Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de… | 3 Avanzado | 64 | MIT (OSI permisiva) | sin grupo |
+| `pwndbg` | Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de… | 3 Avanzado | 66 | MIT (OSI permisiva) | sin grupo |
 | `raddebugger` | Depurador gráfico nativo para inspeccionar procesos, código y memoria durante… | 3 Avanzado | 61 | MIT (OSI permisiva) | sin grupo |
-| `dnspy` | Depurador y editor de ensamblados .NET para inspeccionar y analizar… | 3 Avanzado | 50 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `dnspy` | Depurador y editor de ensamblados .NET para inspeccionar y analizar… | 3 Avanzado | 51 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -40,7 +40,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### pwndbg (`pwndbg`)
 
-- **Repo:** https://github.com/pwndbg/pwndbg · MIT · nivel 3 · 64/100
+- **Repo:** https://github.com/pwndbg/pwndbg · MIT · nivel 3 · 66/100
 - **Qué es:** Plugin GDB/LLDB para pwn.
 - **Cuándo elegirlo:** Casos: depurar un binario vulnerable de lab; inspeccionar heap tras un overflow.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
@@ -61,7 +61,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### dnSpy (`dnspy`)
 
-- **Repo:** https://github.com/dnSpyEx/dnSpy · GPL-3.0 · nivel 3 · 50/100
+- **Repo:** https://github.com/dnSpyEx/dnSpy · GPL-3.0 · nivel 3 · 51/100
 - **Qué es:** dnSpyEx, continuación no oficial del proyecto dnSpy (archivado): depurador y editor de ensamblados .NET. Licencia GPL-3.0. Es activo (~11k estrellas, v6.6.0).
 - **Cuándo elegirlo:** Casos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo.
 - **Requisitos:** nivel 3: preparación sencilla, app o instalador listo para usar, dominio especializado; Distribución dnSpyEx compatible; ensamblado .NET propio de prueba; hardware prerequisites; API de IA: no; Distribución dnSpyEx compatible; ensamblado .NET propio de prueba.

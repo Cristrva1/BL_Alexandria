@@ -18,8 +18,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `memos` | App de notas rápidas autoalojada con línea temporal personal, Markdown… | 1 Básico | 79 | MIT (OSI permisiva) | sin grupo |
-| `siyuan` | Espacio de conocimiento por bloques, local-first y autoalojable, con… | 1 Básico | 76 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `memos` | App de notas rápidas autoalojada con línea temporal personal, Markdown… | 1 Básico | 82 | MIT (OSI permisiva) | sin grupo |
+| `siyuan` | Espacio de conocimiento por bloques, local-first y autoalojable, con… | 1 Básico | 79 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `karakeep` | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones… | 2 Intermedio | 68 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `appflowy` | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `trilium` | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | alternativa |
@@ -44,7 +44,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Memos (`memos`)
 
-- **Repo:** https://github.com/usememos/memos · MIT · nivel 1 · 79/100
+- **Repo:** https://github.com/usememos/memos · MIT · nivel 1 · 82/100
 - **Qué es:** Aplicación de notas de código abierto (MIT) del proyecto usememos. Muy popular y activa; versiones con formato YY.MM.N.
 - **Cuándo elegirlo:** Casos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP.
 - **Requisitos:** nivel 1: preparación sencilla; Go, go.mod; API de IA: no.
@@ -55,7 +55,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SiYuan (`siyuan`)
 
-- **Repo:** https://github.com/siyuan-note/siyuan · AGPL-3.0 · nivel 1 · 76/100 · recomendado en «Notas y bases de conocimiento personales»
+- **Repo:** https://github.com/siyuan-note/siyuan · AGPL-3.0 · nivel 1 · 79/100 · recomendado en «Notas y bases de conocimiento personales»
 - **Qué es:** Gestor de conocimiento de código abierto (AGPL-3.0) de B3log. Muy activo; algunas funciones de sincronización en la nube requieren suscripción.
 - **Cuándo elegirlo:** Casos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile; API de IA: opcional.

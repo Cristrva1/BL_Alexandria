@@ -26,7 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5
 | `servers` | servidores | Colección oficial de implementaciones de referencia de servidores MCP mantenida… | 1 Básico | 80 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
 | `context7` | servidores | Servidor MCP que trae documentación actualizada y por versión de librerías al… | 1 Básico | 75 | MIT (OSI permisiva) | sin grupo |
 | `chrome-devtools-mcp` | servidores | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red… | 1 Básico | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `github-mcp-server` | servidores | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
+| `github-mcp-server` | servidores | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
 | `serena` | servidores | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un… | 1 Básico | 64 | GPL-3.0-or-later (SolidLSP: MIT) (open-core) | sin grupo |
 | `unity-mcp` | servidores | Servidor MCP que permite a un asistente operar escenas, scripts y recursos… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
 | `mcp-toolbox` | servidores | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -143,7 +143,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GitHub MCP Server (`github-mcp-server`)
 
-- **Repo:** https://github.com/github/github-mcp-server · MIT · nivel 1 · 67/100
+- **Repo:** https://github.com/github/github-mcp-server · MIT · nivel 1 · 70/100
 - **Qué es:** Servidor MCP oficial de GitHub que conecta herramientas de IA con la plataforma. Licencia MIT. Es muy activo (~35k estrellas, v2.1.0).
 - **Cuándo elegirlo:** Casos: Explorar una base de código; Revisar el estado de una pull request.
 - **Requisitos:** nivel 1: preparación sencilla; Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota; hardware prerequisites; API de IA: no; Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota.
