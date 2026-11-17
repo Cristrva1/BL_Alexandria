@@ -68,7 +68,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Lee las rutas threads y runs y dibuja cómo una aplicación inicia y consulta una ejecución.
 2. Comprueba: Puedes distinguir estado del hilo y ejecución del agente.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/langchain-ai/agent-protocol/blob/main/README.md)
 

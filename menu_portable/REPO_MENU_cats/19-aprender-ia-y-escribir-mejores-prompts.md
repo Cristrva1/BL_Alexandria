@@ -48,13 +48,13 @@ role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=gui
 - Equipo: Preparación según la ruta elegida. Navegador; dependencias y proveedor de un agente elegido
 **Repo:** https://github.com/ashishpatel26/500-AI-Agents-Projects
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+git clone https://github.com/ashishpatel26/500-AI-Agents-Projects.git
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -259,13 +259,13 @@ role=directory · exec=hybrid · setup=medium · mcp=False · prov=openai,anthro
 - Equipo: Preparación según la ruta elegida. Navegador; entorno y proveedor específicos del ejemplo elegido
 **Repo:** https://github.com/Shubhamsaboo/awesome-llm-apps
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+npx skills add https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/agent_skills/project-graveyard
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender con un asistente de viajes; Estudiar un RAG con Llama local
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -690,13 +690,13 @@ role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=lear
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/microsoft/ML-For-Beginners
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+git clone https://github.com/microsoft/ML-For-Beginners.git
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase
 **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
@@ -842,13 +842,13 @@ role=directory · exec=local · setup=easy · mcp=True · prov=— · tags=promp
 - Equipo: Preparación según la ruta elegida. Navegador para explorar; Node y cliente MCP si conectas la biblioteca
 **Repo:** https://github.com/f/prompts.chat
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+/plugin marketplace add f/prompts.chat
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

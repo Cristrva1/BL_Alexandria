@@ -18,13 +18,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asisten
 - Equipo: Preparación según la ruta elegida. Docker Compose y PostgreSQL; proveedor o computadora conectada; equipo de prueba
 **Repo:** https://github.com/agentes-chat/agentes-chat
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/agentes-chat/agentes-chat/blob/main/README.md
+curl -fsSL https://agentes.chat/install | sh
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar un espacio de colaboración con agentes; Organizar consultas en canales
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -145,13 +145,13 @@ role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=aut
 - Equipo: Preparación según la ruta elegida. Python 3.11+; proveedor y buscador; cliente MCP solo si eliges esa ruta
 **Repo:** https://github.com/assafelovic/gpt-researcher
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/assafelovic/gpt-researcher/blob/main/README.md
+pip install gpt-researcher
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -176,13 +176,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=asistente
 - Equipo: Preparación según la ruta elegida. Aplicación para tu sistema; cuenta o proveedor compatible; carpeta de prueba
 **Repo:** https://github.com/openkursar/hello-halo
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/openkursar/hello-halo/blob/main/README.md
+git clone https://github.com/openkursar/hello-halo.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -206,13 +206,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=agents,p
 - Equipo: Preparación según la ruta elegida. Equipo compatible; proveedor o endpoint local; perfil de prueba
 **Repo:** https://github.com/NousResearch/hermes-agent
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://hermes-agent.nousresearch.com/docs/getting-started/installation
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -237,13 +237,13 @@ role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=res
 - Equipo: Preparación según la ruta elegida. Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo
 **Repo:** https://github.com/LearningCircuit/local-deep-research
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/LearningCircuit/local-deep-research/blob/main/docs/installation.md
+pip install local-deep-research
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -299,13 +299,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=ag
 - Equipo: Preparación según la ruta elegida. Un CLI de agente instalado y autenticado; Docker si autoalojas servidor
 **Repo:** https://github.com/multica-ai/multica
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/multica-ai/multica/blob/main/README.md
+curl -fsSL https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.sh | bash -s -- --with-server
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -330,13 +330,13 @@ role=app · exec=hybrid · setup=heavy · mcp=True · prov=openai,anthropic,goog
 - Equipo: Preparación según la ruta elegida. Docker para PostgreSQL, la API y los Bots; Bun para ejecutar desde el código; Kubernetes y Helm para equipos.
 **Repo:** https://github.com/CopilotKit/OpenBot
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/CopilotKit/OpenBot/blob/main/README.md
+docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común
 **Evita si:** necesitas una herramienta estable y auditada para datos sensibles
@@ -361,13 +361,13 @@ role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,loc
 - Equipo: Preparación según la ruta elegida. Node compatible o instalador; proveedor o harness; canal de prueba opcional
 **Repo:** https://github.com/openclaw/openclaw
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/openclaw/openclaw/blob/main/README.md
+npm install -g openclaw@latest --allow-scripts=openclaw
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -427,13 +427,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asi
 - Equipo: Preparación según la ruta elegida. Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba
 **Repo:** https://github.com/paperclipai/paperclip
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.paperclip.ing/reference/cli/installation/
+git clone https://github.com/paperclipai/paperclip.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

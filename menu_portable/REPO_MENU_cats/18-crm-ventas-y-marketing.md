@@ -18,13 +18,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=mot
 - Equipo: Preparación según la ruta elegida. Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo
 **Repo:** https://github.com/calcom/cal.diy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/calcom/cal.diy/blob/main/README.md
+git clone https://github.com/calcom/cal.diy.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -147,13 +147,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=boo
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/alextselegidis/easyappointments
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/alextselegidis/easyappointments/blob/main/README.md
+docker compose up
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -243,13 +243,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=forms,su
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/formbricks/formbricks
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/formbricks/formbricks/blob/main/README.md
+claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -273,13 +273,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=helpd
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/freescout-help-desk/freescout
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/freescout-help-desk/freescout/blob/dist/README.md
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -368,13 +368,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=au
 - Equipo: Preparación según la ruta elegida. Proyecto de notificaciones; credenciales del canal; destino propio de prueba
 **Repo:** https://github.com/novuhq/novu
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.novu.co/platform/quickstart
+npm install @novu/react
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -551,13 +551,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=aut
 - Equipo: Preparación según la ruta elegida. CRM o entorno self-host; Node y CLI solo para construir apps; modelo si activas AI
 **Repo:** https://github.com/twentyhq/twenty
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/twentyhq/twenty/blob/main/README.md
+npm install -g twenty
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

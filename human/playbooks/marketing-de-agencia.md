@@ -31,7 +31,7 @@ flowchart LR
 |---:|---|---|---:|---|
 | 1 | [Marketing Skills](../fichas/marketingskills.md) | Skills de CRO, copy, SEO y analítica para tu agente | 60.4k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 2 | [The Agency (agency-agents)](../fichas/agency-agents.md) | Roles de agencia listos (estratega, redactor, analista…) | 168k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
-| 3 | [mautic](../fichas/mautic.md) | Automatización de marketing: segmentos, scoring y nurturing | 11k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 3 | [mautic](../fichas/mautic.md) | Automatización de marketing: segmentos, scoring y nurturing | 11k | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 | 4 | [listmonk](../fichas/listmonk.md) | Newsletters y envíos masivos baratos | 24.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 5 | [posthog](../fichas/posthog.md) | Analítica de producto y embudos | 40.8k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 

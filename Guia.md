@@ -5701,7 +5701,7 @@ docker compose -f docker-compose.dev.yml up -d
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 10.1k<br>
 **Qué es:** API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/evolution-foundation/evolution-api/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker pull evoapicloud/evolution-api:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [chatwoot](human/fichas/chatwoot.md) · [Typebot](human/fichas/typebot.md) · [dify](human/fichas/dify.md) · [Baileys](human/fichas/baileys.md) · [twenty-main](human/fichas/twenty-main.md)<br>
 **Más:** [ficha completa](human/fichas/evolution-api.md) · [GitHub](https://github.com/evolution-foundation/evolution-api)
@@ -5750,7 +5750,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 10.6k<br>
 **Qué es:** Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.typebot.io/self-hosting/get-started); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker-compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [evolution-api](human/fichas/evolution-api.md) · [chatwoot](human/fichas/chatwoot.md) · [OpenWA](human/fichas/openwa.md) · [WAHA](human/fichas/waha.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/typebot.md) · [GitHub](https://github.com/baptisteArno/typebot.io)
@@ -5768,7 +5768,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 26.8k<br>
 **Qué es:** Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/discordjs/discord.js/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install discord.js` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: crear un bot de Discord con comandos de barra para tu comunidad; conectar un asistente de IA a un servidor de Discord — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/discord-js.md) · [GitHub](https://github.com/discordjs/discord.js)
@@ -5788,7 +5788,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 46.5k<br>
 **Qué es:** Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/RocketChat/Rocket.Chat/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `sudo snap install rocketchat-desktop` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: sustituir Slack o Teams por un chat de equipo en tu servidor; atender clientes de varios canales desde una bandeja compartida — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/rocket-chat.md) · [GitHub](https://github.com/RocketChat/Rocket.Chat)
@@ -5806,7 +5806,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 26.2k<br>
 **Qué es:** Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/zulip/zulip/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install zulip` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: chat interno con hilos por ticket; comunidad open source autoalojada — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Synapse](human/fichas/synapse.md)<br>
 **Más:** [ficha completa](human/fichas/zulip.md) · [GitHub](https://github.com/zulip/zulip)
@@ -5815,7 +5815,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.7k<br>
 **Qué es:** Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/element-hq/element-web/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run --rm -p 127.0.0.1:80:80 vectorim/element-web` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: UI web delante de Synapse propio; salas E2E para un equipo — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Synapse](human/fichas/synapse.md) · [Mattermost](human/fichas/mattermost.md)<br>
 **Más:** [ficha completa](human/fichas/element-web.md) · [GitHub](https://github.com/element-hq/element-web)
@@ -5824,7 +5824,7 @@ bash start.sh` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 10.9k<br>
 **Qué es:** Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/fluxerapp/fluxer/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `flatpak install https://pkgs.fluxer.com/flatpak/fluxer.flatpakref` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/fluxer.md) · [GitHub](https://github.com/fluxerapp/fluxer)
@@ -5883,7 +5883,7 @@ Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la 
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 60.9k<br>
 **Qué es:** CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/twentyhq/twenty/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install -g twenty` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Modelar un proceso comercial propio; Desarrollar una app sobre un CRM — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [activepieces](human/fichas/activepieces.md) · [evolution-api](human/fichas/evolution-api.md) · [cal.diy](human/fichas/cal-diy.md) · [docuseal](human/fichas/docuseal.md)<br>
 **Más:** [ficha completa](human/fichas/twenty-main.md) · [GitHub](https://github.com/twentyhq/twenty)
@@ -5948,7 +5948,7 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 4.7k<br>
 **Qué es:** Helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/freescout-help-desk/freescout/blob/dist/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: gestionar el correo de soporte de un equipo pequeño en un hosting barato; unificar correo, WhatsApp o Telegram de clientes con módulos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [Claude Code](human/fichas/claude-code.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/freescout.md) · [GitHub](https://github.com/freescout-help-desk/freescout)
@@ -5968,7 +5968,7 @@ bun run dev` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 40.3k<br>
 **Qué es:** Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.novu.co/platform/quickstart); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install @novu/react` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [LangGraph](human/fichas/langgraph.md) · [listmonk](human/fichas/listmonk.md)<br>
 **Más:** [ficha completa](human/fichas/novu.md) · [GitHub](https://github.com/novuhq/novu)
@@ -6038,7 +6038,7 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 50k<br>
 **Qué es:** Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/calcom/cal.diy/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/calcom/cal.diy.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md) · [crm](human/fichas/compai-crm.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/cal-diy.md) · [GitHub](https://github.com/calcom/cal.diy)
@@ -6047,7 +6047,7 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.2k<br>
 **Qué es:** Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/formbricks/formbricks/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [cal.diy](human/fichas/cal-diy.md) · [Easy!Appointments](human/fichas/easyappointments.md) · [listmonk](human/fichas/listmonk.md) · [Typebot](human/fichas/typebot.md)<br>
 **Más:** [ficha completa](human/fichas/formbricks.md) · [GitHub](https://github.com/formbricks/formbricks)
@@ -6056,7 +6056,7 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.5k<br>
 **Qué es:** Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/alextselegidis/easyappointments/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [EspoCRM](human/fichas/espocrm.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md) · [Formbricks](human/fichas/formbricks.md)<br>
 **Más:** [ficha completa](human/fichas/easyappointments.md) · [GitHub](https://github.com/alextselegidis/easyappointments)
@@ -6114,7 +6114,7 @@ Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: 
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 177k<br>
 **Qué es:** La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/f/prompts.chat/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `/plugin marketplace add f/prompts.chat` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [promptfoo](human/fichas/promptfoo.md) · [Open WebUI](human/fichas/open-webui.md)<br>
 **Más:** [ficha completa](human/fichas/prompts-chat.md) · [GitHub](https://github.com/f/prompts.chat)
@@ -6180,7 +6180,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 145k<br>
 **Qué es:** Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npx skills add https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/agent_skills/project-graveyard` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender con un asistente de viajes; Estudiar un RAG con Llama local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [streamlit](human/fichas/streamlit.md) · [OpenAI Agents SDK](human/fichas/openai-agents-python.md) · [Agent Development Kit (ADK)](human/fichas/adk-python.md) · [firecrawl](human/fichas/firecrawl.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-llm-apps.md) · [GitHub](https://github.com/Shubhamsaboo/awesome-llm-apps)
@@ -6216,7 +6216,7 @@ git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 39.9k<br>
 **Qué es:** Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/ashishpatel26/500-AI-Agents-Projects.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [crewAI](human/fichas/crewai.md) · [LangGraph](human/fichas/langgraph.md) · [Agno](human/fichas/agno.md)<br>
 **Más:** [ficha completa](human/fichas/500-ai-agents-projects.md) · [GitHub](https://github.com/ashishpatel26/500-AI-Agents-Projects)
@@ -6310,7 +6310,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 92.2k<br>
 **Qué es:** Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Python y R.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/microsoft/ML-For-Beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/microsoft/ML-For-Beginners.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
 **Combina con:** [JupyterLab](human/fichas/jupyterlab.md) · [marimo](human/fichas/marimo.md) · [LLM Course](human/fichas/llm-course.md) · [scikit-learn](human/fichas/scikit-learn.md)<br>
 **Más:** [ficha completa](human/fichas/ml-for-beginners.md) · [GitHub](https://github.com/microsoft/ML-For-Beginners)
@@ -6461,7 +6461,7 @@ npx @google/gemini-cli` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 68.9k<br>
 **Qué es:** Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://www.openinterpreter.com/docs/terminal/install); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://www.openinterpreter.com/install | sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [E2B](human/fichas/e2b.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/open-interpreter.md) · [GitHub](https://github.com/openinterpreter/openinterpreter)
@@ -6470,7 +6470,7 @@ npx @google/gemini-cli` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟢 fácil · ⭐ 56.6k<br>
 **Qué es:** Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://goose-docs.ai/docs/getting-started/installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [Playwright MCP](human/fichas/playwright-mcp.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md)<br>
 **Más:** [ficha completa](human/fichas/goose.md) · [GitHub](https://github.com/aaif-goose/goose)
@@ -6518,7 +6518,7 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 95.1k<br>
 **Qué es:** Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada y agentes externos por ACP.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/zed-industries/zed/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install --cask zed` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [Codex CLI](human/fichas/codex.md) · [Qwen Code](human/fichas/qwen-code.md)<br>
 **Más:** [ficha completa](human/fichas/zed.md) · [GitHub](https://github.com/zed-industries/zed)
@@ -6536,7 +6536,7 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 28k<br>
 **Qué es:** Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y marketplace de agentes, skills y MCP.<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
-**Arranque:** [Instrucciones originales](https://github.com/Kilo-Org/kilocode/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install -g @kilocode/cli` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
 **Combina con:** [Context7](human/fichas/context7.md) · [Playwright MCP](human/fichas/playwright-mcp.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md)<br>
 **Más:** [ficha completa](human/fichas/kilocode.md) · [GitHub](https://github.com/Kilo-Org/kilocode)
@@ -6554,7 +6554,7 @@ aider-install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.1k<br>
 **Qué es:** Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/PawanOsman/OpenCursor/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/PawanOsman/OpenCursor.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [llama.cpp](human/fichas/llama-cpp.md) · [Context7](human/fichas/context7.md)<br>
 **Más:** [ficha completa](human/fichas/opencursor.md) · [GitHub](https://github.com/PawanOsman/OpenCursor)
@@ -6575,7 +6575,7 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 11.2k<br>
 **Qué es:** Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.<br>
 **Acceso:** API de IA necesaria · Consumo de APIs o servicios<br>
-**Arranque:** [Instrucciones originales](https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install --cask langchain-ai/tap/open-swe-desktop` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Deep Agents](human/fichas/deepagents.md) · [LangGraph](human/fichas/langgraph.md) · [E2B](human/fichas/e2b.md)<br>
 **Más:** [ficha completa](human/fichas/open-swe.md) · [GitHub](https://github.com/langchain-ai/open-swe)
@@ -6595,7 +6595,7 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 60.6k<br>
 **Qué es:** Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install --cask t3-code` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/t3code.md) · [GitHub](https://github.com/pingdotgg/t3code)
@@ -6604,7 +6604,7 @@ agent-canvas` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 1.1k<br>
 **Qué es:** Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://opencodemanager.app/docs/getting-started/installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://opencodemanager.app/install | sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OpenCode](human/fichas/opencode.md) · [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/opencode-manager.md) · [GitHub](https://github.com/chriswritescode-dev/opencode-manager)
@@ -6651,7 +6651,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 394k<br>
 **Qué es:** Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/openclaw/openclaw/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install -g openclaw@latest --allow-scripts=openclaw` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [NemoClaw](human/fichas/nemoclaw.md) · [claude-mem](human/fichas/claude-mem.md) · [Claude Code](human/fichas/claude-code.md) · [Ollama](human/fichas/ollama.md)<br>
 **Más:** [ficha completa](human/fichas/openclaw.md) · [GitHub](https://github.com/openclaw/openclaw)
@@ -6660,7 +6660,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 263k<br>
 **Qué es:** Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://hermes-agent.nousresearch.com/docs/getting-started/installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [NemoClaw](human/fichas/nemoclaw.md) · [Ollama](human/fichas/ollama.md) · [ECC](human/fichas/ecc.md)<br>
 **Más:** [ficha completa](human/fichas/hermes-agent.md) · [GitHub](https://github.com/NousResearch/hermes-agent)
@@ -6669,7 +6669,7 @@ Asistentes personales, equipos de agentes e investigación con fuentes. Compara 
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 114k<br>
 **Qué es:** Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.paperclip.ing/reference/cli/installation/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/paperclipai/paperclip.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OpenClaw](human/fichas/openclaw.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [hermes-agent](human/fichas/hermes-agent.md)<br>
 **Más:** [ficha completa](human/fichas/paperclip.md) · [GitHub](https://github.com/paperclipai/paperclip)
@@ -6699,7 +6699,7 @@ deeptutor start    # starts backend + frontend` (comprobar los pasos completos e
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 56.1k<br>
 **Qué es:** Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/multica-ai/multica/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.sh | bash -s -- --with-server` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md) · [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md)<br>
 **Más:** [ficha completa](human/fichas/multica.md) · [GitHub](https://github.com/multica-ai/multica)
@@ -6708,7 +6708,7 @@ deeptutor start    # starts backend + frontend` (comprobar los pasos completos e
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 12.5k<br>
 **Qué es:** Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/CopilotKit/OpenBot/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común — **Evita si:** necesitas una herramienta estable y auditada para datos sensibles<br>
 **Combina con:** [CopilotKit](human/fichas/copilotkit.md) · [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [crewAI](human/fichas/crewai.md) · [firecrawl](human/fichas/firecrawl.md) · [Composio](human/fichas/composio.md)<br>
 **Más:** [ficha completa](human/fichas/openbot.md) · [GitHub](https://github.com/CopilotKit/OpenBot)
@@ -6750,7 +6750,7 @@ yarn install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.9k<br>
 **Qué es:** Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/openkursar/hello-halo/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/openkursar/hello-halo.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Anthropic Skills](human/fichas/anthropic-skills.md) · [Context7](human/fichas/context7.md) · [Playwright MCP](human/fichas/playwright-mcp.md)<br>
 **Más:** [ficha completa](human/fichas/hello-halo.md) · [GitHub](https://github.com/openkursar/hello-halo)
@@ -6759,7 +6759,7 @@ yarn install` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 1.4k<br>
 **Qué es:** Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/agentes-chat/agentes-chat/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://agentes.chat/install | sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Evaluar un espacio de colaboración con agentes; Organizar consultas en canales — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md)<br>
 **Más:** [ficha completa](human/fichas/agentes-chat.md) · [GitHub](https://github.com/agentes-chat/agentes-chat)
@@ -6805,7 +6805,7 @@ conda create -n storm python=3.11
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 30.7k<br>
 **Qué es:** Agente autónomo que investiga en línea y consolida reportes citados y estructurados.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/assafelovic/gpt-researcher/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install gpt-researcher` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [firecrawl](human/fichas/firecrawl.md) · [Ollama](human/fichas/ollama.md) · [SearXNG](human/fichas/searxng.md)<br>
 **Más:** [ficha completa](human/fichas/gpt-researcher.md) · [GitHub](https://github.com/assafelovic/gpt-researcher)
@@ -6814,7 +6814,7 @@ conda create -n storm python=3.11
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 9.6k<br>
 **Qué es:** Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/LearningCircuit/local-deep-research/blob/main/docs/installation.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install local-deep-research` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar documentos privados; Preparar una revisión bibliográfica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [SearXNG](human/fichas/searxng.md) · [llama.cpp](human/fichas/llama-cpp.md)<br>
 **Más:** [ficha completa](human/fichas/local-deep-research.md) · [GitHub](https://github.com/LearningCircuit/local-deep-research)
@@ -6868,7 +6868,7 @@ Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infr
 **Etiquetas:** Ejecución ☁️ cloud/API · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 31.1k<br>
 **Qué es:** Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo de APIs o servicios<br>
-**Arranque:** [Instrucciones originales](https://github.com/ComposioHQ/composio/blob/next/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `npm install @composio/core @composio/openai-agents @openai/agents` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OpenAI Agents SDK](human/fichas/openai-agents-python.md) · [LangGraph](human/fichas/langgraph.md) · [Mastra](human/fichas/mastra.md) · [Claude Code](human/fichas/claude-code.md) · [Awesome Claude Skills](human/fichas/awesome-claude-skills.md) · [OpenBot](human/fichas/openbot.md)<br>
 **Más:** [ficha completa](human/fichas/composio.md) · [GitHub](https://github.com/ComposioHQ/composio)
@@ -6906,7 +6906,7 @@ agent-desktop permissions --guide   # macOS: walks you through the Accessibility
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 23k<br>
 **Qué es:** Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OpenClaw](human/fichas/openclaw.md) · [hermes-agent](human/fichas/hermes-agent.md) · [Deep Agents](human/fichas/deepagents.md) · [Nemotron (NVIDIA)](human/fichas/nemotron.md)<br>
 **Más:** [ficha completa](human/fichas/nemoclaw.md) · [GitHub](https://github.com/NVIDIA/NemoClaw)
@@ -6952,7 +6952,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 2.5k<br>
 **Qué es:** Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/eneskirca/nodeterm/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install --cask nodeterm` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/nodeterm.md) · [GitHub](https://github.com/eneskirca/nodeterm)
@@ -7010,7 +7010,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 31k<br>
 **Qué es:** Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/netbirdio/netbird/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://pkgs.netbird.io/install.sh | sh` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: conectar servidores y equipos remotos sin abrir puertos; dar acceso a la red interna con SSO y políticas por grupo — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Grafana](human/fichas/grafana.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/netbird.md) · [GitHub](https://github.com/netbirdio/netbird)
@@ -7019,7 +7019,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 27.5k<br>
 **Qué es:** La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/wg-easy/wg-easy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `sudo docker compose up / down` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Grafana](human/fichas/grafana.md) · [Caddy](human/fichas/caddy.md) · [Pi-hole](human/fichas/pi-hole.md) · [Portainer CE](human/fichas/portainer.md)<br>
 **Más:** [ficha completa](human/fichas/wg-easy.md) · [GitHub](https://github.com/wg-easy/wg-easy)
@@ -7028,7 +7028,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 7.3k<br>
 **Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d --name masterdnsvpn --restart unless-stopped -e DOMAIN=v.example.com -v $(pwd)/data:/data -p 53:53/tcp -p 53:53/udp ghcr.io/masterking32/masterdnsvpn:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FreeDomain](human/fichas/freedomain.md) · [free-for-dev](human/fichas/free-for-dev.md) · [CasaOS](human/fichas/casaos.md)<br>
 **Más:** [ficha completa](human/fichas/masterdnsvpn.md) · [GitHub](https://github.com/masterking32/MasterDnsVPN)
@@ -7048,7 +7048,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 94.5k<br>
 **Qué es:** Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/louislam/uptime-kuma/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Grafana](human/fichas/grafana.md) · [coolify](human/fichas/coolify.md) · [Caddy](human/fichas/caddy.md)<br>
 **Más:** [ficha completa](human/fichas/uptime-kuma.md) · [GitHub](https://github.com/louislam/uptime-kuma)
@@ -7057,7 +7057,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 79.1k<br>
 **Qué es:** Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/caddyserver/caddy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone "https://github.com/caddyserver/caddy.git"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar tus servicios autoalojados con HTTPS sin gestionar certificados; servir una web estática o hacer de proxy inverso con pocas líneas — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [coolify](human/fichas/coolify.md) · [Uptime Kuma](human/fichas/uptime-kuma.md) · [Headscale](human/fichas/headscale.md) · [frp](human/fichas/frp.md) · [Synapse](human/fichas/synapse.md) · [WireGuard Easy](human/fichas/wg-easy.md)<br>
 **Más:** [ficha completa](human/fichas/caddy.md) · [GitHub](https://github.com/caddyserver/caddy)
@@ -7066,7 +7066,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 66.1k<br>
 **Qué es:** Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://coolify.io/docs/installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [supabase](human/fichas/supabase.md) · [activepieces](human/fichas/activepieces.md) · [Windmill](human/fichas/windmill.md) · [FreeDomain](human/fichas/freedomain.md)<br>
 **Más:** [ficha completa](human/fichas/coolify.md) · [GitHub](https://github.com/coollabsio/coolify)
@@ -7075,7 +7075,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 65.6k<br>
 **Qué es:** Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/traefik/traefik/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/traefik/traefik` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [coolify](human/fichas/coolify.md) · [Dokploy](human/fichas/dokploy.md) · [CrowdSec](human/fichas/crowdsec.md) · [Grafana](human/fichas/grafana.md) · [Portainer CE](human/fichas/portainer.md)<br>
 **Más:** [ficha completa](human/fichas/traefik.md) · [GitHub](https://github.com/traefik/traefik)
@@ -7084,7 +7084,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 58.1k<br>
 **Qué es:** Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/appwrite/appwrite/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -it --rm --publish 127.0.0.1:20080:20080 --volume /var/run/docker.sock:/var/run/docker.sock --volume "$(pwd)"/appwrite:/usr/src/code/appwrite:rw --entrypoint="install" appwrite/appwrite:2.7.2` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/appwrite.md) · [GitHub](https://github.com/appwrite/appwrite)
@@ -7111,7 +7111,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 37.6k<br>
 **Qué es:** Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/IceWhaleTech/CasaOS/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `wget -qO- https://get.casaos.io | sudo bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [server](human/fichas/nextcloud-server.md) · [AdGuardHome](human/fichas/adguardhome.md) · [activepieces](human/fichas/activepieces.md) · [MasterDnsVPN](human/fichas/masterdnsvpn.md)<br>
 **Más:** [ficha completa](human/fichas/casaos.md) · [GitHub](https://github.com/IceWhaleTech/CasaOS)

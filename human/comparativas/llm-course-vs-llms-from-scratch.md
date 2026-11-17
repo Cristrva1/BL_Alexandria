@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟡 medio |
-| Licencia | Apache-2.0 | NOASSERTION |
-| Instalación | Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| Licencia | Apache-2.0 | Apache-2.0 |
+| Instalación | Ver README oficial (sin comando literal documentado). Recorre la ruta de fundamentos y… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 

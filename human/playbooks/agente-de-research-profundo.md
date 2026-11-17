@@ -29,7 +29,7 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [gpt-researcher](../fichas/gpt-researcher.md) | Orquestador: planifica preguntas, delega y redacta el informe | 30.7k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 1 | [gpt-researcher](../fichas/gpt-researcher.md) | Orquestador: planifica preguntas, delega y redacta el informe | 30.7k | `pip install gpt-researcher` |
 | 2 | [SearXNG](../fichas/searxng.md) | Buscador privado y sin claves de API | 39.6k | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 | 3 | [crawl4ai](../fichas/crawl4ai.md) | Convierte cada página en Markdown limpio para el LLM | 87.4k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 4 | [browser-use](../fichas/browser-use.md) | Navega sitios dinámicos o con login | 121k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |

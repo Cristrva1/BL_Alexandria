@@ -237,13 +237,13 @@ role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,g
 - Equipo: Preparación según la ruta elegida. CLI o app; proveedor o agente ACP autenticado; proyecto de prueba
 **Repo:** https://github.com/aaif-goose/goose
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://goose-docs.ai/docs/getting-started/installation
+curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -268,13 +268,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=coding,ag
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/Kilo-Org/kilocode
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Kilo-Org/kilocode/blob/main/README.md
+npm install -g @kilocode/cli
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: delegar en el editor una tarea de refactorización con revisión de cambios; usar el mismo agente en VS Code y en la terminal con distintos modelos
 **Evita si:** necesitas una herramienta estable y auditada para datos sensibles
@@ -361,13 +361,13 @@ role=runtime · exec=local · setup=easy · mcp=False · prov=openai,local · ta
 - Equipo: Preparación según la ruta elegida. Terminal; instalador del sistema; proveedor configurado; carpeta de prueba
 **Repo:** https://github.com/openinterpreter/openinterpreter
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://www.openinterpreter.com/docs/terminal/install
+curl -fsSL https://www.openinterpreter.com/install | sh
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -392,13 +392,13 @@ role=runtime · exec=cloud · setup=medium · mcp=False · prov=anthropic,openai
 - Equipo: Preparación según la ruta elegida. Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados
 **Repo:** https://github.com/langchain-ai/open-swe
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md
+brew install --cask langchain-ai/tap/open-swe-desktop
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -454,13 +454,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,
 - Equipo: Preparación según la ruta elegida. Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado
 **Repo:** https://github.com/chriswritescode-dev/opencode-manager
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://opencodemanager.app/docs/getting-started/installation
+curl -fsSL https://opencodemanager.app/install | sh
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -485,13 +485,13 @@ role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,a
 - Equipo: Preparación según la ruta elegida. VS Code; extensión o VSIX; cuenta, API u Ollama/llama.cpp; proyecto de prueba
 **Repo:** https://github.com/PawanOsman/OpenCursor
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/PawanOsman/OpenCursor/blob/main/README.md
+git clone https://github.com/PawanOsman/OpenCursor.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -608,13 +608,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding-age
 - Equipo: Preparación según la ruta elegida. Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba
 **Repo:** https://github.com/pingdotgg/t3code
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md
+brew install --cask t3-code
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -639,13 +639,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=editor,ru
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/zed-industries/zed
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/zed-industries/zed/blob/main/README.md
+brew install --cask zed
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: editar código con un editor rápido y colaborar en tiempo real; usar Claude Code, Gemini CLI o Codex dentro del editor por ACP
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales

@@ -65,7 +65,13 @@ Material para leer. [Entender los términos](../vocabulario.md).
 2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
 3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/microsoft/ML-For-Beginners.git
+```
+
+Comando copiado literalmente de el README (sección «Getting Started»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/ML-For-Beginners/blob/main/README.md)
 

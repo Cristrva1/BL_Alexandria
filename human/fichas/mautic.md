@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 11k | NOASSERTION | PHP | 2026-06-23 |
+| 11k | GPL-3.0-or-later | PHP | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
 **Nivel:** 3 Avanzado — preparación pesada
 
 **Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** GPL-3.0-or-later. Fuente: [LICENSE](https://github.com/mautic/mautic/blob/7.x/LICENSE.txt). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -67,10 +69,10 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 - contactos ficticios
 - colas y tareas según guía
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.
 2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://docs.mautic.org/)
 
