@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -35,13 +35,22 @@ npm o Docker.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OWASP CheatSheet Series](cheatsheetseries.md)
+[ModSecurity](modsecurity.md) · [OWASP CheatSheet Series](cheatsheetseries.md) · [OWASP Top 10](owasp-top10.md) · [OWASP Web Security Testing Guide](wstg.md)
 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada v20.4.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/juice-shop/juice-shop#readme) · [2](https://owasp-juice.shop)</sub>
+
+## Ver similares
+
+Grupo **Aplicaciones web vulnerables para practicar**: OWASP Juice Shop ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **OWASP Juice Shop** (esta ficha) ⭐ recomendado | 75 | Si quieres retos tipo CTF sobre una tienda moderna en JavaScript. |
+| 2 | [WebGoat](webgoat.md) | 62 | Si prefieres lecciones guiadas paso a paso sobre una aplicación Java. |
 
 ## Acceso, coste y equipo
 
@@ -114,6 +123,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** TypeScript, Dockerfile, package.json
 - **Etiquetas:** `security`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [WebGoat](webgoat.md) | 9.5k | Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10. |
 
 ## Enlaces
 

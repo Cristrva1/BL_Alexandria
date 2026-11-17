@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,7 +46,7 @@ Grupo **Pruebas de carga**: Locust ocupa la posición 1 de 2 (recomendado). Orde
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Locust** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real. |
+| 1 | **Locust** (esta ficha) ⭐ recomendado | 78 | Si buscas esto: herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real. |
 | 2 | [k6](k6.md) | 70 | Si buscas esto: herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico. |
 
 ## Acceso, coste y equipo

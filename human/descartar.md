@@ -205,6 +205,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [vaultwarden](fichas/vaultwarden.md) | [KeePassXC](fichas/keepassxc.md) |
 | [Autopsy](fichas/autopsy.md) | [The Sleuth Kit](fichas/sleuthkit.md) |
 | [Caido](fichas/caido.md) | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) |
+| [cdxgen](fichas/cdxgen.md) | [Syft](fichas/syft.md) |
 | [CrowdSec](fichas/crowdsec.md) | [Fail2ban](fichas/fail2ban.md) |
 | [dirsearch](fichas/dirsearch.md) | [Gobuster](fichas/gobuster.md), [feroxbuster](fichas/feroxbuster.md) |
 | [Empire](fichas/empire.md) | [Mythic](fichas/mythic.md), [Sliver](fichas/sliver.md) |
@@ -219,8 +220,13 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [John the Ripper (jumbo)](fichas/john.md) | [hashcat](fichas/hashcat.md) |
 | [k6](fichas/k6.md) | [Locust](fichas/locust.md) |
 | [Locust](fichas/locust.md) | [k6](fichas/k6.md) |
+| [ModSecurity](fichas/modsecurity.md) | [OWASP Coraza](fichas/coraza.md) |
 | [Mythic](fichas/mythic.md) | [Empire](fichas/empire.md), [Sliver](fichas/sliver.md) |
 | [Naabu](fichas/naabu.md) | [httpx](fichas/httpx.md) |
+| [OWASP Coraza](fichas/coraza.md) | [ModSecurity](fichas/modsecurity.md) |
+| [OWASP Juice Shop](fichas/juice-shop.md) | [WebGoat](fichas/webgoat.md) |
+| [OWASP pytm](fichas/pytm.md) | [OWASP Threat Dragon](fichas/threat-dragon.md) |
+| [OWASP Threat Dragon](fichas/threat-dragon.md) | [OWASP pytm](fichas/pytm.md) |
 | [PayloadsAllTheThings](fichas/payloadsallthethings.md) | [SecLists](fichas/seclists.md) |
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
@@ -229,8 +235,10 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [shannon](fichas/shannon.md) | [strix](fichas/strix.md) |
 | [Sliver](fichas/sliver.md) | [Mythic](fichas/mythic.md), [Empire](fichas/empire.md) |
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
+| [Syft](fichas/syft.md) | [cdxgen](fichas/cdxgen.md) |
 | [The Sleuth Kit](fichas/sleuthkit.md) | [Autopsy](fichas/autopsy.md) |
 | [Trivy](fichas/trivy.md) | [Grype](fichas/grype.md) |
+| [WebGoat](fichas/webgoat.md) | [OWASP Juice Shop](fichas/juice-shop.md) |
 | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) | [Caido](fichas/caido.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
 | [evolution-api](fichas/evolution-api.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |

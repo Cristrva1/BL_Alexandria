@@ -42,12 +42,12 @@ Estado en GitHub: activo · último push 2026-11-13 · última versión publicad
 
 ## Ver similares
 
-Grupo **Fotogrametría con drones**: ODM ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Fotogrametría con drones**: ODM ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **ODM** (esta ficha) ⭐ recomendado | 58 | Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. |
-| 2 | [WebODM](webodm.md) | 57 | Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
+| 1 | [WebODM](webodm.md) ⭐ recomendado | 60 | Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
+| 2 | **ODM** (esta ficha) | 58 | Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. |
 
 ## Acceso, coste y equipo
 

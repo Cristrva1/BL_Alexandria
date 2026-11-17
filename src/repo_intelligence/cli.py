@@ -36,11 +36,13 @@ context_app = typer.Typer(help="Context pack commands.")
 report_app = typer.Typer(help="Report commands.")
 menu_app = typer.Typer(help="Portable AI menu commands.")
 web_app = typer.Typer(help="Educational web catalog commands.")
+llm_app = typer.Typer(help="Markdown para agentes de código (AGENTS.md / CLAUDE.md).")
 app.add_typer(guide_app, name="guide")
 app.add_typer(context_app, name="context")
 app.add_typer(report_app, name="report")
 app.add_typer(menu_app, name="menu")
 app.add_typer(web_app, name="web")
+app.add_typer(llm_app, name="llm")
 console = Console()
 
 
@@ -351,6 +353,20 @@ def web_build(
         f"{stats['repos']} repos, {stats['categories']} categories, {stats['recipes']} recipes."
     )
     console.print("Open web/index.html or run `repo-intelligence web serve`.")
+
+
+@llm_app.command("export")
+def llm_export(
+    output: Annotated[Path | None, typer.Option("--output", "-o", help="Carpeta de salida (por defecto: docs/llm/).")] = None,
+) -> None:
+    """Genera un Markdown por categoría y por subcategoría para agentes; divide los que superan ~25k tokens."""
+    from repo_intelligence.llm.export import export_llm
+
+    paths = ProjectPaths.load()
+    stats = export_llm(paths.project_root, output or (paths.project_root / "docs" / "llm"))
+    console.print(f"Markdown para agentes escrito en {stats['output_dir']}: {stats['files']} archivos.")
+    for f in stats["largest"]:
+        console.print(f"  {f['archivo']}: ~{f['tokens_estimados']} tokens ({f['caracteres']} caracteres)")
 
 
 @web_app.command("serve")

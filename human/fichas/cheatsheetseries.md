@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 80/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -32,6 +32,12 @@ Web / repo.
 |---|---|---|
 | [Semgrep](semgrep.md) | Semgrep automatiza parte de las cheatsheets. | Lee → reglas Semgrep. |
 | [OWASP Juice Shop](juice-shop.md) | Practica lo leído en Juice Shop. | Cheat sheet → lab. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP ASVS](asvs.md) · [OWASP Developer Guide](owasp-devguide.md) · [OWASP Java Encoder](owasp-java-encoder.md) · [OWASP Java HTML Sanitizer](java-html-sanitizer.md) · [OWASP Threat Dragon](threat-dragon.md) · [OWASP Top 10](owasp-top10.md) · [OWASP Web Security Testing Guide](wstg.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada CC-BY-SA-4.0 (consultado el 2026-11-16).
 

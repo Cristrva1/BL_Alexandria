@@ -54,8 +54,8 @@ Grupo **Ingeniería inversa y desensambladores**: ghidra ocupa la posición 1 de
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **ghidra** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. |
-| 2 | [radare2](radare2.md) | 68 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
-| 3 | [rizin](rizin.md) | 46 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
+| 2 | [radare2](radare2.md) | 69 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
+| 3 | [rizin](rizin.md) | 48 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
 
 ## Acceso, coste y equipo
 

@@ -10,9 +10,9 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
-**Nivel:** 1 Básico — preparación sencilla
+**Nivel:** 2 Intermedio — preparación sencilla; varios servicios con Docker Compose
 
-**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -42,12 +42,12 @@ Estado en GitHub: activo · último push 2026-11-15 · última versión publicad
 
 ## Ver similares
 
-Grupo **Help desk y tickets**: FreeScout ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Help desk y tickets**: FreeScout ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Zammad](zammad.md) ⭐ recomendado | 58 | Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
-| 2 | **FreeScout** (esta ficha) | 56 | Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. |
+| 1 | **FreeScout** (esta ficha) ⭐ recomendado | 59 | Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. |
+| 2 | [Zammad](zammad.md) | 58 | Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
 
 ## Acceso, coste y equipo
 

@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**891 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **103 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
+**919 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **103 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
@@ -93,7 +93,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 13 | 📄 PDF, OCR y procesamiento de documentos | 22 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 23 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
 | 15 | 🗂️ Organizar notas, archivos y servicios personales | 50 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
-| 16 | 🔍 Analizar software y comprobar su seguridad | 113 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Reconocimiento y superficie de ataque, Explotación, C2 y post-explotación, Active Directory y red interna, Detección, SIEM e IDS, Nube, contenedores e IaC, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | `human/categorias/16-analisis-de-software-y-seguridad.md` |
+| 16 | 🔍 Analizar software y comprobar su seguridad | 141 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Reconocimiento y superficie de ataque, Explotación, C2 y post-explotación, Active Directory y red interna, Detección, SIEM e IDS, Nube, contenedores e IaC, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | `human/categorias/16-analisis-de-software-y-seguridad.md` |
 | 17 | 🤖 WhatsApp, mensajería y chatbots | 18 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
 | 18 | 🤖 CRM, ventas y marketing | 19 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
 | 19 | 🧠 Aprender IA y escribir mejores prompts | 30 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
@@ -157,6 +157,8 @@ uv run repo-intelligence menu export
 uv run repo-intelligence web build
 uv run pytest
 ```
+
+`web build` (y `guide build`, que regenera `docs/`) escribe también `docs/llm/`: un Markdown compacto por categoría y subcategoría para pegar en otro proyecto (`docs/alexandria/…` + referencia desde AGENTS.md o CLAUDE.md). Regenerar solo esa carpeta: `uv run repo-intelligence llm export`.
 
 La web pública es [Alexandría](https://cristrva1.github.io/BL_Alexandria/). GitHub Pages publica el contenido generado de `main/docs`: al actualizar el catálogo, ejecuta `guide build` y sube sus resultados para que se desplieguen. El generador conserva `.nojekyll` para servir los archivos estáticos directamente.
 

@@ -47,7 +47,7 @@ Grupo **Modelos abiertos de video generativo**: HunyuanVideo 1.5 ocupa la posici
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Wan2.2](wan2-2.md) ⭐ recomendado | 67 | Si buscas esto: familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
-| 2 | [HunyuanVideo](hunyuanvideo.md) | 54 | Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
+| 2 | [HunyuanVideo](hunyuanvideo.md) | 57 | Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
 | 3 | **HunyuanVideo 1.5** (esta ficha) | 41 | Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. |
 
 ## Acceso, coste y equipo

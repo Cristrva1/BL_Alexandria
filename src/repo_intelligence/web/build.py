@@ -9,6 +9,7 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+from repo_intelligence.llm.export import export_llm, web_manifest
 from repo_intelligence.web.catalog import build_catalog
 
 _ASSETS = Path(__file__).resolve().parent / "assets"
@@ -36,6 +37,9 @@ def build_site(project_root: Path, output_dir: Path) -> dict:
     catalog = build_catalog(project_root)
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
+    # Markdown para agentes por categoría y subcategoría; el explorador enlaza su descarga.
+    llm = export_llm(project_root, output / "llm")
+    catalog["llm"] = web_manifest(llm["manifest"])
     # Pages serves these prebuilt files directly, without a Jekyll transform.
     (output / ".nojekyll").write_text("", encoding="utf-8")
     payload = json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
@@ -64,6 +68,7 @@ def build_site(project_root: Path, output_dir: Path) -> dict:
         "repos": catalog["counts"]["repos"],
         "categories": catalog["counts"]["categories"],
         "recipes": catalog["counts"]["recipes"],
+        "llm_files": llm["files"],
     }
 
 

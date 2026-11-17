@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **891 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **919 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -27,7 +27,7 @@ Las **891 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 23 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 50 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
-| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 113 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
+| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 141 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 18 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 19 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 30 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
@@ -4532,6 +4532,13 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) | Tu objetivo encaja con estos ejemplos: buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo; integrar un escaneo DAST en el pipeline de CI | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [Caido](human/fichas/caido.md) | Tu objetivo encaja con estos ejemplos: interceptar tráfico de una app de lab; reproducir requests en un ejercicio web | necesitas una instalación sin cuentas ni dependencias adicionales |
 
+**⚖️ ¿Cuál elegir? — OWASP Juice Shop, WebGoat**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [OWASP Juice Shop](human/fichas/juice-shop.md) | Tu objetivo encaja con estos ejemplos: practicar OWASP Top 10 en local; validar un scanner contra retos conocidos | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [WebGoat](human/fichas/webgoat.md) | Tu objetivo encaja con estos ejemplos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — httpx, Naabu**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4554,6 +4561,13 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [Fail2ban](human/fichas/fail2ban.md) | Tu objetivo encaja con estos ejemplos: proteger SSH de un VPS propio; banear force brute a un panel web | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [CrowdSec](human/fichas/crowdsec.md) | Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
+**⚖️ ¿Cuál elegir? — ModSecurity, OWASP Coraza**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [ModSecurity](human/fichas/modsecurity.md) | Tu objetivo encaja con estos ejemplos: proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear; registrar intentos de inyección SQL y XSS para un SOC | no quieres preparar modelos, dependencias y hardware propios |
+| [OWASP Coraza](human/fichas/coraza.md) | Tu objetivo encaja con estos ejemplos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza | buscas una aplicación lista y no quieres preparar un proyecto de código |
+
 **⚖️ ¿Cuál elegir? — Trivy, Grype**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4561,12 +4575,26 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [Trivy](human/fichas/trivy.md) | Tu objetivo encaja con estos ejemplos: escanear una imagen Docker antes de desplegarla; generar un SBOM y revisar dependencias vulnerables de un proyecto en CI | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [Grype](human/fichas/grype.md) | Tu objetivo encaja con estos ejemplos: escanear una imagen Docker propia antes de publicarla; evaluar un SBOM generado en CI | necesitas una instalación sin cuentas ni dependencias adicionales |
 
+**⚖️ ¿Cuál elegir? — Syft, cdxgen**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Syft](human/fichas/syft.md) | Tu objetivo encaja con estos ejemplos: generar SBOM de una imagen propia; adjuntar SBOM al artefacto de CI | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [cdxgen](human/fichas/cdxgen.md) | Tu objetivo encaja con estos ejemplos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia | necesitas una instalación sin cuentas ni dependencias adicionales |
+
 **⚖️ ¿Cuál elegir? — strix, shannon**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [strix](human/fichas/strix.md) | Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [shannon](human/fichas/shannon.md) | Tu objetivo encaja con estos ejemplos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — OWASP Threat Dragon, OWASP pytm**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [OWASP Threat Dragon](human/fichas/threat-dragon.md) | Tu objetivo encaja con estos ejemplos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura | necesitas una instalación sin cuentas ni dependencias adicionales |
+| [OWASP pytm](human/fichas/pytm.md) | Tu objetivo encaja con estos ejemplos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
 **⚖️ ¿Cuál elegir? — PayloadsAllTheThings, SecLists**
 
@@ -4608,7 +4636,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `brew install jadx` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una app Android propia; Documentar recursos y referencias de un APK — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [frida](human/fichas/frida.md) · [Apktool](human/fichas/apktool.md) · [ghidra](human/fichas/ghidra.md) · [rea](human/fichas/rea.md) · [awesome-ai-reverse-engineering](human/fichas/awesome-ai-reverse-engineering.md)<br>
+**Combina con:** [frida](human/fichas/frida.md) · [Apktool](human/fichas/apktool.md) · [ghidra](human/fichas/ghidra.md) · [rea](human/fichas/rea.md) · [awesome-ai-reverse-engineering](human/fichas/awesome-ai-reverse-engineering.md) · [OWASP MASTG](human/fichas/mastg.md)<br>
 **Más:** [ficha completa](human/fichas/jadx.md) · [GitHub](https://github.com/skylot/jadx)
 
 #### 🖥️ Apktool
@@ -4617,7 +4645,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://apktool.org/wiki/the-basics/intro); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar recursos de una app Android; Revisar una configuración de manifiesto propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [jadx](human/fichas/jadx.md) · [frida](human/fichas/frida.md) · [mitmproxy](human/fichas/mitmproxy.md)<br>
+**Combina con:** [jadx](human/fichas/jadx.md) · [frida](human/fichas/frida.md) · [mitmproxy](human/fichas/mitmproxy.md) · [OWASP MASTG](human/fichas/mastg.md)<br>
 **Más:** [ficha completa](human/fichas/apktool.md) · [GitHub](https://github.com/iBotPeaches/Apktool)
 
 #### 🖥️ ILSpy
@@ -4876,6 +4904,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Nuclei](human/fichas/nuclei.md) · [ffuf](human/fichas/ffuf.md)<br>
 **Más:** [ficha completa](human/fichas/wpscan.md) · [GitHub](https://github.com/wpscanteam/wpscan)
 
+#### 🖥️ WebGoat
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9.5k<br>
+**Qué es:** Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [Caido](human/fichas/caido.md) · [OWASP Web Security Testing Guide](human/fichas/wstg.md)<br>
+**Más:** [ficha completa](human/fichas/webgoat.md) · [GitHub](https://github.com/WebGoat/WebGoat)
+
 #### 🖥️ feroxbuster
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 8.2k<br>
 **Qué es:** Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web.<br>
@@ -4912,6 +4949,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [AFL++](human/fichas/aflplusplus.md) · [radare2](human/fichas/radare2.md)<br>
 **Más:** [ficha completa](human/fichas/syzkaller.md) · [GitHub](https://github.com/google/syzkaller)
 
+#### 🖥️ OWASP Nettacker
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 5.7k<br>
+**Qué es:** Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker run owasp/nettacker --help` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar puertos y servicios de una red de laboratorio; detectar cambios en la superficie expuesta entre dos escaneos autorizados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Nmap](human/fichas/nmap.md) · [Nuclei](human/fichas/nuclei.md) · [DefectDojo](human/fichas/defectdojo.md)<br>
+**Más:** [ficha completa](human/fichas/nettacker.md) · [GitHub](https://github.com/OWASP/Nettacker)
+
 #### 🖥️ Caido
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 2.7k<br>
 **Qué es:** Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.<br>
@@ -4920,6 +4966,44 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: interceptar tráfico de una app de lab; reproducir requests en un ejercicio web — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Nuclei](human/fichas/nuclei.md) · [ffuf](human/fichas/ffuf.md)<br>
 **Más:** [ficha completa](human/fichas/caido.md) · [GitHub](https://github.com/caido/caido)
+
+#### 🖥️ OWASP OWTF
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 2k<br>
+**Qué es:** Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/owtf/owtf.git
+cd owtf
+make compose-safe` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: coordinar varias herramientas en un pentest web autorizado; seguir casos de la WSTG con una sola interfaz — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [OWASP Web Security Testing Guide](human/fichas/wstg.md)<br>
+**Más:** [ficha completa](human/fichas/owtf.md) · [GitHub](https://github.com/owtf/owtf)
+
+#### 🖥️ OWASP crAPI
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 1.6k<br>
+**Qué es:** API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/crAPI/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: practicar ataques de autorización a nivel de objeto en una API; formar a un equipo en pruebas de seguridad de API — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [OWASP API Security Top 10](human/fichas/owasp-api-security.md)<br>
+**Más:** [ficha completa](human/fichas/crapi.md) · [GitHub](https://github.com/OWASP/crAPI)
+
+#### 🖥️ OWASP WrongSecrets
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.5k<br>
+**Qué es:** Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker run -p 8080:8080 -p 8090:8090 jeroenwillemsen/wrongsecrets:latest-no-vault` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: enseñar a detectar secretos filtrados en imágenes de contenedor; practicar la gestión de secretos en Kubernetes — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Gitleaks](human/fichas/gitleaks.md) · [TruffleHog](human/fichas/trufflehog.md)<br>
+**Más:** [ficha completa](human/fichas/wrongsecrets.md) · [GitHub](https://github.com/OWASP/wrongsecrets)
+
+#### 🖥️ OWASP secureCodeBox
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 994<br>
+**Qué es:** Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `helm --namespace securecodebox-system upgrade --install --create-namespace securecodebox-operator oci://ghcr.io/securecodebox/helm/operator` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: programar escaneos periódicos de un entorno de staging autorizado; enviar resultados de varios escáneres a DefectDojo — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [DefectDojo](human/fichas/defectdojo.md) · [Nuclei](human/fichas/nuclei.md)<br>
+**Más:** [ficha completa](human/fichas/securecodebox.md) · [GitHub](https://github.com/secureCodeBox/secureCodeBox)
 
 ### Reconocimiento y superficie de ataque
 
@@ -5003,6 +5087,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: resolver un listado de FQDN de lab; detectar wildcards antes de escanear — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [subfinder](human/fichas/subfinder.md) · [httpx](human/fichas/httpx.md)<br>
 **Más:** [ficha completa](human/fichas/dnsx.md) · [GitHub](https://github.com/projectdiscovery/dnsx)
+
+#### 🖥️ OWASP Noir
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.5k<br>
+**Qué es:** Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install noir` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [Caido](human/fichas/caido.md)<br>
+**Más:** [ficha completa](human/fichas/noir.md) · [GitHub](https://github.com/owasp-noir/noir)
 
 ### Explotación, C2 y post-explotación
 
@@ -5217,6 +5310,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [Atomic Red Team](human/fichas/atomic-red-team.md) · [CrowdSec](human/fichas/crowdsec.md) · [OpenCTI](human/fichas/opencti.md) · [osquery](human/fichas/osquery.md)<br>
 **Más:** [ficha completa](human/fichas/sigma.md) · [GitHub](https://github.com/SigmaHQ/sigma)
 
+#### 🧩 ModSecurity
+**Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup hard · ⭐ 9.9k<br>
+**Qué es:** Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/owasp-modsecurity/ModSecurity ModSecurity` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear; registrar intentos de inyección SQL y XSS para un SOC — **Evita si:** no quieres preparar modelos, dependencias y hardware propios<br>
+**Combina con:** [OWASP CRS](human/fichas/coreruleset.md) · [Wazuh](human/fichas/wazuh.md) · [OWASP Juice Shop](human/fichas/juice-shop.md)<br>
+**Más:** [ficha completa](human/fichas/modsecurity.md) · [GitHub](https://github.com/owasp-modsecurity/ModSecurity)
+
 #### 🖥️ Zeek
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 8.2k<br>
 **Qué es:** Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.<br>
@@ -5252,6 +5354,15 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Elige si:** Tu objetivo encaja con estos ejemplos: levantar un SOC de lab; entrenar analistas con telemetría realista — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Suricata](human/fichas/suricata.md) · [Zeek](human/fichas/zeek.md) · [Wazuh](human/fichas/wazuh.md)<br>
 **Más:** [ficha completa](human/fichas/securityonion.md) · [GitHub](https://github.com/Security-Onion-Solutions/securityonion)
+
+#### 📚 OWASP Coraza
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 4k<br>
+**Qué es:** WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/corazawaf/coraza/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [OWASP CRS](human/fichas/coreruleset.md) · [Caddy](human/fichas/caddy.md) · [Traefik Proxy](human/fichas/traefik.md)<br>
+**Más:** [ficha completa](human/fichas/coraza.md) · [GitHub](https://github.com/corazawaf/coraza)
 
 #### 🖥️ LOKI
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 3.8k<br>
@@ -5460,6 +5571,15 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [Trivy](human/fichas/trivy.md) · [Claude Code](human/fichas/claude-code.md) · [Prowler](human/fichas/prowler.md) · [PEASS-ng](human/fichas/peass-ng.md)<br>
 **Más:** [ficha completa](human/fichas/lynis.md) · [GitHub](https://github.com/CISOfy/lynis)
 
+#### 🖥️ OWASP Dependency-Check
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 7.8k<br>
+**Qué es:** Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew update && brew install dependency-check` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Dependency-Track](human/fichas/dependency-track.md) · [DefectDojo](human/fichas/defectdojo.md) · [OSV-Scanner](human/fichas/osv-scanner.md)<br>
+**Más:** [ficha completa](human/fichas/dependency-check.md) · [GitHub](https://github.com/dependency-check/DependencyCheck)
+
 #### 🖥️ bla
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.7k<br>
 **Qué es:** Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes.<br>
@@ -5468,6 +5588,79 @@ craft-anything-cli doctor                            # checks the install, codin
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [rea](human/fichas/rea.md) · [Claude Code](human/fichas/claude-code.md) · [frida](human/fichas/frida.md)<br>
 **Más:** [ficha completa](human/fichas/bla.md) · [GitHub](https://github.com/qybaihe/bla)
+
+#### ⚙️ DefectDojo
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 5.2k<br>
+**Qué es:** Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [Semgrep](human/fichas/semgrep.md) · [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [Trivy](human/fichas/trivy.md) · [Nuclei](human/fichas/nuclei.md) · [Dependency-Track](human/fichas/dependency-track.md) · [OWASP Dependency-Check](human/fichas/dependency-check.md)<br>
+**Más:** [ficha completa](human/fichas/defectdojo.md) · [GitHub](https://github.com/DefectDojo/django-DefectDojo)
+
+#### ⚙️ Dependency-Track
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.5k<br>
+**Qué es:** Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `curl -LO https://dependencytrack.org/docker-compose.yml
+docker compose up -d` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [cdxgen](human/fichas/cdxgen.md) · [Syft](human/fichas/syft.md) · [DefectDojo](human/fichas/defectdojo.md) · [OWASP Dependency-Check](human/fichas/dependency-check.md)<br>
+**Más:** [ficha completa](human/fichas/dependency-track.md) · [GitHub](https://github.com/DependencyTrack/dependency-track)
+
+#### 🖥️ OWASP Threat Dragon
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.7k<br>
+**Qué es:** Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker pull threatdragon/owasp-threat-dragon:stable` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [OWASP ASVS](human/fichas/asvs.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md) · [OWASP Top 10](human/fichas/owasp-top10.md)<br>
+**Más:** [ficha completa](human/fichas/threat-dragon.md) · [GitHub](https://github.com/OWASP/threat-dragon)
+
+#### 🖥️ OWASP dep-scan
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.4k<br>
+**Qué es:** Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install owasp-depscan` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [cdxgen](human/fichas/cdxgen.md) · [Dependency-Track](human/fichas/dependency-track.md)<br>
+**Más:** [ficha completa](human/fichas/dep-scan.md) · [GitHub](https://github.com/owasp-dep-scan/dep-scan)
+
+#### 📚 OWASP pytm
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 1.2k<br>
+**Qué es:** Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/pytm/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [OWASP ASVS](human/fichas/asvs.md)<br>
+**Más:** [ficha completa](human/fichas/pytm.md) · [GitHub](https://github.com/OWASP/pytm)
+
+#### 🖥️ cdxgen
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.1k<br>
+**Qué es:** Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `npm install -g @cdxgen/cdxgen --omit=optional --ignore-scripts --min-release-age=2` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [Dependency-Track](human/fichas/dependency-track.md)<br>
+**Más:** [ficha completa](human/fichas/cdxgen.md) · [GitHub](https://github.com/cdxgen/cdxgen)
+
+#### 📚 OWASP Java HTML Sanitizer
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 958<br>
+**Qué es:** Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/java-html-sanitizer/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [OWASP Java Encoder](human/fichas/owasp-java-encoder.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md)<br>
+**Más:** [ficha completa](human/fichas/java-html-sanitizer.md) · [GitHub](https://github.com/OWASP/java-html-sanitizer)
+
+#### 📚 OWASP Java Encoder
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 552<br>
+**Qué es:** Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/owasp-java-encoder/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: codificar datos de usuario al renderizar plantillas JSP; escapar valores insertados en JavaScript en línea — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [OWASP Java HTML Sanitizer](human/fichas/java-html-sanitizer.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md)<br>
+**Más:** [ficha completa](human/fichas/owasp-java-encoder.md) · [GitHub](https://github.com/OWASP/owasp-java-encoder)
 
 ### Directorios y aprendizaje
 
@@ -5498,6 +5691,15 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [Semgrep](human/fichas/semgrep.md) · [OWASP Juice Shop](human/fichas/juice-shop.md)<br>
 **Más:** [ficha completa](human/fichas/cheatsheetseries.md) · [GitHub](https://github.com/OWASP/CheatSheetSeries)
 
+#### 📂 OWASP MASTG
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 13.3k<br>
+**Qué es:** Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/mastg/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar el almacenamiento local y la red de una app Android propia; preparar un plan de pruebas para una app iOS antes de publicarla — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP MASVS](human/fichas/masvs.md) · [frida](human/fichas/frida.md) · [Apktool](human/fichas/apktool.md) · [jadx](human/fichas/jadx.md)<br>
+**Más:** [ficha completa](human/fichas/mastg.md) · [GitHub](https://github.com/OWASP/mastg)
+
 #### 📂 HackTricks
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 12.8k<br>
 **Qué es:** Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunidad.<br>
@@ -5507,6 +5709,60 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [PEASS-ng](human/fichas/peass-ng.md) · [PayloadsAllTheThings](human/fichas/payloadsallthethings.md)<br>
 **Más:** [ficha completa](human/fichas/hacktricks.md) · [GitHub](https://github.com/HackTricks-wiki/hacktricks)
 
+#### 📂 OWASP Web Security Testing Guide
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 10.3k<br>
+**Qué es:** Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/wstg/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: planificar un pentest web con una lista de casos WSTG; citar identificadores WSTG en un informe de hallazgos — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [OWASP Juice Shop](human/fichas/juice-shop.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md) · [OWASP ASVS](human/fichas/asvs.md) · [WebGoat](human/fichas/webgoat.md)<br>
+**Más:** [ficha completa](human/fichas/wstg.md) · [GitHub](https://github.com/OWASP/wstg)
+
+#### 📂 OWASP Top 10
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 6.6k<br>
+**Qué es:** Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/Top10/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: formar a un equipo de desarrollo en los riesgos web más comunes; priorizar una revisión de código por categorías de riesgo — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP ASVS](human/fichas/asvs.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md) · [OWASP Juice Shop](human/fichas/juice-shop.md) · [OWASP Threat Dragon](human/fichas/threat-dragon.md)<br>
+**Más:** [ficha completa](human/fichas/owasp-top10.md) · [GitHub](https://github.com/OWASP/Top10)
+
+#### 📂 OWASP ASVS
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 3.8k<br>
+**Qué es:** Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/ASVS/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP Web Security Testing Guide](human/fichas/wstg.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md) · [OWASP Threat Dragon](human/fichas/threat-dragon.md) · [OWASP Top 10](human/fichas/owasp-top10.md)<br>
+**Más:** [ficha completa](human/fichas/asvs.md) · [GitHub](https://github.com/OWASP/ASVS)
+
+#### 📂 OWASP MASVS
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 2.5k<br>
+**Qué es:** Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/masvs/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: fijar requisitos de seguridad para una app móvil nueva; estructurar una auditoría móvil por grupos de control — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP MASTG](human/fichas/mastg.md)<br>
+**Más:** [ficha completa](human/fichas/masvs.md) · [GitHub](https://github.com/OWASP/masvs)
+
+#### 📂 OWASP API Security Top 10
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 2.4k<br>
+**Qué es:** Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/API-Security/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar una API REST nueva contra los riesgos más comunes; formar a un equipo backend en fallos de autorización — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP crAPI](human/fichas/crapi.md)<br>
+**Más:** [ficha completa](human/fichas/owasp-api-security.md) · [GitHub](https://github.com/OWASP/API-Security)
+
+#### 📂 OWASP Developer Guide
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 2.2k<br>
+**Qué es:** Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/DevGuide/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: introducir prácticas de desarrollo seguro en un equipo nuevo; elegir qué proyecto OWASP usar en cada fase — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md)<br>
+**Más:** [ficha completa](human/fichas/owasp-devguide.md) · [GitHub](https://github.com/OWASP/DevGuide)
+
 #### 📂 awesome-reverse-engineering
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 2.1k<br>
 **Qué es:** Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos.<br>
@@ -5515,6 +5771,33 @@ craft-anything-cli doctor                            # checks the install, codin
 **Elige si:** Tu objetivo encaja con estos ejemplos: Buscar un analizador de ELF; Encontrar material introductorio de ensamblador — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [rea](human/fichas/rea.md) · [ghidra](human/fichas/ghidra.md) · [frida](human/fichas/frida.md)<br>
 **Más:** [ficha completa](human/fichas/awesome-reverse-engineering.md) · [GitHub](https://github.com/morluto/awesome-reverse-engineering)
+
+#### 📂 OWASP Top 10 for LLM Applications
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 1.5k<br>
+**Qué es:** Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar los riesgos de un asistente con RAG antes de lanzarlo; priorizar defensas contra inyección de prompts en un agente — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [garak](human/fichas/garak.md) · [promptfoo](human/fichas/promptfoo.md)<br>
+**Más:** [ficha completa](human/fichas/owasp-llm-top10.md) · [GitHub](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications)
+
+#### 📂 OWASP AI Testing Guide
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 856<br>
+**Qué es:** Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/www-project-ai-testing-guide/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: planificar una evaluación de seguridad de un chatbot con LLM; verificar controles de un pipeline de entrenamiento — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP Top 10 for LLM Applications](human/fichas/owasp-llm-top10.md) · [garak](human/fichas/garak.md)<br>
+**Más:** [ficha completa](human/fichas/owasp-ai-testing-guide.md) · [GitHub](https://github.com/OWASP/www-project-ai-testing-guide)
+
+#### 📂 OWASP AISVS
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 590<br>
+**Qué es:** Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OWASP/AISVS/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: definir requisitos de seguridad para una aplicación con LLM y agentes; auditar controles de un pipeline de ML — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
+**Combina con:** [OWASP ASVS](human/fichas/asvs.md)<br>
+**Más:** [ficha completa](human/fichas/aisvs.md) · [GitHub](https://github.com/OWASP/AISVS)
 
 #### 📂 awesome-ai-reverse-engineering
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 108<br>
@@ -7083,7 +7366,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `git clone https://github.com/traefik/traefik` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: publicar contenedores Docker con dominios y HTTPS mediante etiquetas; balancear tráfico entre servicios en Kubernetes — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
-**Combina con:** [coolify](human/fichas/coolify.md) · [Dokploy](human/fichas/dokploy.md) · [CrowdSec](human/fichas/crowdsec.md) · [Grafana](human/fichas/grafana.md) · [Portainer CE](human/fichas/portainer.md)<br>
+**Combina con:** [coolify](human/fichas/coolify.md) · [Dokploy](human/fichas/dokploy.md) · [CrowdSec](human/fichas/crowdsec.md) · [Grafana](human/fichas/grafana.md) · [Portainer CE](human/fichas/portainer.md) · [OWASP Coraza](human/fichas/coraza.md)<br>
 **Más:** [ficha completa](human/fichas/traefik.md) · [GitHub](https://github.com/traefik/traefik)
 
 #### ⚙️ Appwrite

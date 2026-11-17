@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**891 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**919 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -23,7 +23,7 @@
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 23
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 50
-16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 113
+16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 141
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 18
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 19
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 30
@@ -826,11 +826,17 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [THC Hydra](human/fichas/thc-hydra.md) | Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con autorización explícita. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Wireshark](human/fichas/wireshark.md) | Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [WPScan](human/fichas/wpscan.md) | Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día gratis; DB Enterprise de pago). | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [WebGoat](human/fichas/webgoat.md) | Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [feroxbuster](human/fichas/feroxbuster.md) | Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Aircrack-ng](human/fichas/aircrack-ng.md) | Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [AFL++](human/fichas/aflplusplus.md) | Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [syzkaller](human/fichas/syzkaller.md) | Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [OWASP Nettacker](human/fichas/nettacker.md) | Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Caido](human/fichas/caido.md) | Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP OWTF](human/fichas/owtf.md) | Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [OWASP crAPI](human/fichas/crapi.md) | API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [OWASP WrongSecrets](human/fichas/wrongsecrets.md) | Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP secureCodeBox](human/fichas/securecodebox.md) | Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 
 ### Reconocimiento y superficie de ataque
 
@@ -845,6 +851,7 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [Naabu](human/fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [interactsh](human/fichas/interactsh.md) | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [dnsx](human/fichas/dnsx.md) | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP Noir](human/fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Explotación, C2 y post-explotación
 
@@ -883,10 +890,12 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [Wazuh](human/fichas/wazuh.md) | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [CrowdSec](human/fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Sigma](human/fichas/sigma.md) | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
+| [ModSecurity](human/fichas/modsecurity.md) | Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | hard |
 | [Zeek](human/fichas/zeek.md) | Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [Arkime](human/fichas/arkime.md) | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [Suricata](human/fichas/suricata.md) | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [Security Onion](human/fichas/securityonion.md) | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [OWASP Coraza](human/fichas/coraza.md) | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [LOKI](human/fichas/loki.md) | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [OWASP CRS](human/fichas/coreruleset.md) | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Elastic detection-rules](human/fichas/detection-rules.md) | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
@@ -924,7 +933,16 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 |---|---|---|---|---|
 | ⭐ [Semgrep](human/fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Lynis](human/fichas/lynis.md) | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP Dependency-Check](human/fichas/dependency-check.md) | Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [bla](human/fichas/bla.md) | Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [DefectDojo](human/fichas/defectdojo.md) | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [Dependency-Track](human/fichas/dependency-track.md) | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [OWASP Threat Dragon](human/fichas/threat-dragon.md) | Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP dep-scan](human/fichas/dep-scan.md) | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP pytm](human/fichas/pytm.md) | Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [cdxgen](human/fichas/cdxgen.md) | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP Java HTML Sanitizer](human/fichas/java-html-sanitizer.md) | Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [OWASP Java Encoder](human/fichas/owasp-java-encoder.md) | Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 
 ### Directorios y aprendizaje
 
@@ -933,8 +951,18 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [PayloadsAllTheThings](human/fichas/payloadsallthethings.md) | Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [SecLists](human/fichas/seclists.md) | Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md) | Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP MASTG](human/fichas/mastg.md) | Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [HackTricks](human/fichas/hacktricks.md) | Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunidad. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP Web Security Testing Guide](human/fichas/wstg.md) | Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP Top 10](human/fichas/owasp-top10.md) | Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP ASVS](human/fichas/asvs.md) | Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP MASVS](human/fichas/masvs.md) | Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP API Security Top 10](human/fichas/owasp-api-security.md) | Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP Developer Guide](human/fichas/owasp-devguide.md) | Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [awesome-reverse-engineering](human/fichas/awesome-reverse-engineering.md) | Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP Top 10 for LLM Applications](human/fichas/owasp-llm-top10.md) | Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP AI Testing Guide](human/fichas/owasp-ai-testing-guide.md) | Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [OWASP AISVS](human/fichas/aisvs.md) | Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [awesome-ai-reverse-engineering](human/fichas/awesome-ai-reverse-engineering.md) | Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 
 ### Skills de análisis y seguridad

@@ -53,7 +53,7 @@ El contenido de Configurar IA, Servicios y despliegue, Prompts y comandos vive e
 
 Revisa la fuente del proyecto, la fecha, la ruta de acceso y el contexto de cada comando. Conserva los límites cuando falte evidencia y distingue la prueba propuesta de una instalación ejecutada. Las plantillas originales indican los datos que necesita aportar la persona.
 
-`guide build` genera también `human/MANUAL_IA.md` y el sitio de Pages. `web build` actualiza la copia web. El cargador comprueba fuentes, comandos y referencias antes de publicar.
+`guide build` genera también `human/MANUAL_IA.md` y el sitio de Pages. `web build` actualiza la copia web y escribe `llm/`: un Markdown para agentes por categoría y por subcategoría (publicado en `docs/llm/`, descargable desde el explorador; `uv run repo-intelligence llm export` lo regenera solo). Los que superan ~25k tokens se dividen en partes. El cargador comprueba fuentes, comandos y referencias antes de publicar.
 
 ## Mantener técnicas e ideas
 

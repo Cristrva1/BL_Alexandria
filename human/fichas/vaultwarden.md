@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — un contenedor; requiere HTTPS y copias de seguridad · corregido a mano
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -52,7 +52,7 @@ Grupo **Gestores de contraseñas**: vaultwarden ocupa la posición 1 de 2 (recom
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **vaultwarden** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
+| 1 | **vaultwarden** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
 | 2 | [KeePassXC](keepassxc.md) | 54 | Si buscas esto: gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. |
 
 ## Acceso, coste y equipo

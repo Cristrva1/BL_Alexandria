@@ -32,3 +32,6 @@ ai_index/CONFLICTS.json
 ai_index/CONTEXT_PACKS/
 ai_index/SUPERGUIAS/
 human/guia-generada.md
+
+# Copia local del Markdown para agentes; la publicada vive en docs/llm/
+web/llm/

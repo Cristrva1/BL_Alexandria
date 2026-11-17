@@ -34,6 +34,12 @@ Escrito en Go; se instala con Homebrew, Docker, script de instalación o desde e
 | [Semgrep](semgrep.md) | Semgrep cubre el análisis estático y TruffleHog los secretos verificados en el mismo pipeline de seguridad (combinación por arquitectura). | Configura ambos pasos en CI y revisa sus informes. |
 | [Claude Code](claude-code.md) | Un agente puede ejecutar TruffleHog sobre un repositorio y resumir qué credenciales están activas y deben rotarse (combinación por arquitectura). | Instala TruffleHog; después pide al agente el análisis sobre un repositorio autorizado. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP WrongSecrets](wrongsecrets.md)
+
 **Notas:** Alternativas (elige una): gitleaks.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.99.9 (2026-11-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).

@@ -1034,3 +1034,45 @@ grupos:
   miembros:
   - swr
   - tanstack-query
+- id: g-waf-compatibles-con-seclang
+  titulo: WAF compatibles con SecLang y el OWASP CRS
+  miembros:
+  - modsecurity
+  - coraza
+  cuando:
+    modsecurity: Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores.
+    coraza: Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido.
+- id: g-modelado-de-amenazas
+  titulo: Modelado de amenazas
+  miembros:
+  - threat-dragon
+  - pytm
+  cuando:
+    threat-dragon: Si prefieres dibujar el diagrama en una aplicación de escritorio o web.
+    pytm: Si quieres el modelo como código Python versionado junto al proyecto y generado en CI.
+- id: g-aplicaciones-web-vulnerables-para-practicar
+  titulo: Aplicaciones web vulnerables para practicar
+  miembros:
+  - juice-shop
+  - webgoat
+  cuando:
+    juice-shop: Si quieres retos tipo CTF sobre una tienda moderna en JavaScript.
+    webgoat: Si prefieres lecciones guiadas paso a paso sobre una aplicación Java.
+- id: g-generadores-de-sbom
+  titulo: Generadores de SBOM
+  miembros:
+  - cdxgen
+  - syft
+  cuando:
+    cdxgen: Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad.
+    syft: Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX.
+- id: g-analisis-de-dependencias-vulnerables
+  titulo: Análisis de dependencias vulnerables (SCA)
+  miembros:
+  - dependency-check
+  - dep-scan
+  - osv-scanner
+  cuando:
+    dependency-check: Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins.
+    dep-scan: Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI.
+    osv-scanner: Si quieres consultar la base OSV desde lockfiles con una CLI ligera en Go.

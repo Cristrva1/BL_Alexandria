@@ -44,7 +44,7 @@ Grupo **Análisis forense de discos**: Autopsy ocupa la posición 1 de 2 (recome
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Autopsy** (esta ficha) ⭐ recomendado | 46 | Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. |
-| 2 | [The Sleuth Kit](sleuthkit.md) | 41 | Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
+| 2 | [The Sleuth Kit](sleuthkit.md) | 42 | Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
 
 ## Acceso, coste y equipo
 

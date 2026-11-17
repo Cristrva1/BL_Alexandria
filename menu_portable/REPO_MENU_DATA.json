@@ -92,7 +92,7 @@
     {
       "num": 16,
       "title": "Analizar software y comprobar su seguridad",
-      "count": 113
+      "count": 141
     },
     {
       "num": 17,
@@ -1840,28 +1840,43 @@
             "bettercap",
             "bla",
             "caido",
+            "cdxgen",
+            "crapi",
+            "defectdojo",
+            "dep-scan",
+            "dependency-check",
+            "dependency-track",
             "dirsearch",
             "feroxbuster",
             "ffuf",
             "gobuster",
             "hashcat",
+            "java-html-sanitizer",
             "john",
             "juice-shop",
             "k6",
             "locust",
             "lynis",
             "mitmproxy",
+            "nettacker",
             "nuclei",
+            "owasp-java-encoder",
+            "owtf",
             "pwntools",
+            "pytm",
+            "securecodebox",
             "semgrep",
             "sqlmap",
             "syzkaller",
             "thc-hydra",
+            "threat-dragon",
+            "webgoat",
             "wireshark",
             "wpscan",
+            "wrongsecrets",
             "zaproxy"
           ],
-          "count": 25
+          "count": 40
         },
         {
           "id": "seguridad-ofensiva",
@@ -1905,6 +1920,7 @@
             "naabu",
             "netexec",
             "nmap",
+            "noir",
             "peass-ng",
             "responder",
             "rubeus",
@@ -1913,7 +1929,7 @@
             "social-engineer-toolkit",
             "subfinder"
           ],
-          "count": 27
+          "count": 28
         },
         {
           "id": "seguridad-deteccion",
@@ -1936,11 +1952,13 @@
           "reference_repos": [],
           "repo_ids": [
             "arkime",
+            "coraza",
             "coreruleset",
             "crowdsec",
             "detection-rules",
             "fail2ban",
             "loki",
+            "modsecurity",
             "osquery",
             "securityonion",
             "shuffle",
@@ -1949,7 +1967,7 @@
             "wazuh",
             "zeek"
           ],
-          "count": 13
+          "count": 15
         },
         {
           "id": "seguridad-nube",
@@ -2032,15 +2050,25 @@
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
+            "aisvs",
+            "asvs",
             "awesome-ai-reverse-engineering",
             "awesome-reverse-engineering",
             "cheatsheetseries",
             "cybersecurity-skills",
             "hacktricks",
+            "mastg",
+            "masvs",
+            "owasp-ai-testing-guide",
+            "owasp-api-security",
+            "owasp-devguide",
+            "owasp-llm-top10",
+            "owasp-top10",
             "payloadsallthethings",
-            "seclists"
+            "seclists",
+            "wstg"
           ],
-          "count": 7
+          "count": 17
         },
         {
           "id": "seguridad-ir",
@@ -2101,10 +2129,12 @@
         "aflplusplus",
         "age",
         "aircrack-ng",
+        "aisvs",
         "amass",
         "angr",
         "apktool",
         "arkime",
+        "asvs",
         "atomic-red-team",
         "authentik",
         "autopsy",
@@ -2117,15 +2147,22 @@
         "caido",
         "caldera",
         "capa",
+        "cdxgen",
         "certipy",
         "cheatsheetseries",
         "checkov",
+        "coraza",
         "coreruleset",
         "cosign",
         "craft-anything",
+        "crapi",
         "crowdsec",
         "cybersecurity-skills",
+        "defectdojo",
         "defending-code-reference-harness",
+        "dep-scan",
+        "dependency-check",
+        "dependency-track",
         "detection-rules",
         "dirsearch",
         "dnspy",
@@ -2152,6 +2189,7 @@
         "impacket",
         "interactsh",
         "jadx",
+        "java-html-sanitizer",
         "john",
         "juice-shop",
         "k6",
@@ -2163,18 +2201,30 @@
         "loki",
         "lynis",
         "masscan",
+        "mastg",
+        "masvs",
         "metasploit",
         "mimikatz",
         "misp",
         "mitmproxy",
+        "modsecurity",
         "mythic",
         "naabu",
         "netexec",
+        "nettacker",
         "nmap",
+        "noir",
         "nuclei",
         "opencti",
         "osquery",
         "osv-scanner",
+        "owasp-ai-testing-guide",
+        "owasp-api-security",
+        "owasp-devguide",
+        "owasp-java-encoder",
+        "owasp-llm-top10",
+        "owasp-top10",
+        "owtf",
         "pacu",
         "payloadsallthethings",
         "peass-ng",
@@ -2182,6 +2232,7 @@
         "prowler",
         "pwndbg",
         "pwntools",
+        "pytm",
         "radare2",
         "raddebugger",
         "rea",
@@ -2191,6 +2242,7 @@
         "rustscan",
         "scubagear",
         "seclists",
+        "securecodebox",
         "security-audit-skill",
         "securityonion",
         "semgrep",
@@ -2209,20 +2261,24 @@
         "syft",
         "syzkaller",
         "thc-hydra",
+        "threat-dragon",
         "trivy",
         "vault",
         "vaultwarden",
         "velociraptor",
         "volatility3",
         "wazuh",
+        "webgoat",
         "wireshark",
         "wpscan",
+        "wrongsecrets",
+        "wstg",
         "x64dbg",
         "yara",
         "zaproxy",
         "zeek"
       ],
-      "count": 124
+      "count": 152
     },
     {
       "id": "audiovisual",
@@ -12340,7 +12396,7 @@
       "role": "platform",
       "exec": "local",
       "setup": "medium",
-      "complejidad": 2,
+      "complejidad": 3,
       "puntuacion": 72,
       "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
       "mcp": false,
@@ -26953,7 +27009,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 67,
+      "puntuacion": 70,
       "grupo": null,
       "mcp": true,
       "prov": [
@@ -30068,7 +30124,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -38257,7 +38313,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 64,
       "grupo": "g-alternativas-a-notebooklm",
       "mcp": false,
       "prov": [
@@ -38385,7 +38441,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 50,
+      "puntuacion": 53,
       "grupo": "g-interfaces-de-chat-con-llm",
       "mcp": false,
       "prov": [
@@ -38635,7 +38691,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -40584,8 +40640,8 @@
       "role": "app",
       "exec": "local",
       "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 53,
+      "complejidad": 2,
+      "puntuacion": 56,
       "grupo": "g-editores-visuales-de-diseno-con-ia",
       "mcp": false,
       "prov": [
@@ -41447,8 +41503,8 @@
       "role": "app",
       "exec": "cloud",
       "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 60,
+      "complejidad": 2,
+      "puntuacion": 63,
       "grupo": "g-de-diseno-o-captura-a-codigo",
       "mcp": false,
       "prov": [
@@ -45346,7 +45402,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 54,
+      "puntuacion": 57,
       "grupo": "g-bi-y-dashboards",
       "mcp": false,
       "prov": [],
@@ -45712,8 +45768,8 @@
       "role": "app",
       "exec": "local",
       "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 62,
+      "complejidad": 2,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46071,7 +46127,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 57,
+      "puntuacion": 60,
       "grupo": "g-fotogrametria-con-drones",
       "mcp": false,
       "prov": [],
@@ -48152,7 +48208,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 54,
+      "puntuacion": 57,
       "grupo": "g-modelos-abiertos-de-video-generativo",
       "mcp": false,
       "prov": [
@@ -51023,7 +51079,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 73,
+      "puntuacion": 76,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -51392,7 +51448,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 51,
+      "puntuacion": 54,
       "grupo": "g-suites-de-herramientas-pdf",
       "mcp": false,
       "prov": [],
@@ -54080,7 +54136,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 1,
-      "puntuacion": 59,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -54328,7 +54384,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 43,
+      "puntuacion": 46,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -55546,8 +55602,8 @@
       "role": "app",
       "exec": "local",
       "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 70,
+      "complejidad": 2,
+      "puntuacion": 73,
       "grupo": "g-finanzas-personales",
       "mcp": false,
       "prov": [],
@@ -56389,7 +56445,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 64,
+      "puntuacion": 67,
       "grupo": "g-proveedores-de-identidad-y-sso",
       "mcp": false,
       "prov": [],
@@ -57113,7 +57169,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 59,
+      "puntuacion": 62,
       "grupo": "g-finanzas-personales",
       "mcp": false,
       "prov": [],
@@ -58774,7 +58830,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 79,
+      "puntuacion": 82,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -60472,7 +60528,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 76,
+      "puntuacion": 79,
       "grupo": "g-notas-y-bases-de-conocimiento-personales",
       "mcp": false,
       "prov": [],
@@ -61180,7 +61236,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 67,
       "grupo": "g-gestores-de-contrasenas",
       "mcp": false,
       "prov": [],
@@ -61420,7 +61476,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 61,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -61533,7 +61589,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 43,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -61640,6 +61696,121 @@
       "alt": []
     },
     {
+      "id": "aisvs",
+      "name": "OWASP AISVS",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 54,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ai",
+        "standard",
+        "requirements"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/AISVS/blob/main/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "68c1dcf394f8bf421c6bf2263e828647ed0545f0"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/OWASP/AISVS#readme",
+        "source": "https://github.com/OWASP/AISVS/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre el repositorio y revisa los capítulos de AISVS aplicables a un proyecto con LLM.",
+        "success": "Obtienes una lista de requisitos con identificadores para verificar.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "definir requisitos de seguridad para una aplicación con LLM y agentes",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "auditar controles de un pipeline de ML",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/AISVS/blob/main/README.md",
+        "source_blob_sha": "68c1dcf394f8bf421c6bf2263e828647ed0545f0",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura.",
+      "desc": "Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura.",
+      "stack": "",
+      "repo": "https://github.com/OWASP/AISVS",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: definir requisitos de seguridad para una aplicación con LLM y agentes; auditar controles de un pipeline de ML",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "asvs"
+      ],
+      "alt": []
+    },
+    {
       "id": "amass",
       "name": "Amass",
       "cat": 16,
@@ -61647,7 +61818,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -61766,7 +61937,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 72,
+      "puntuacion": 74,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -61886,7 +62057,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 64,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -61991,7 +62162,8 @@
       "combines_with": [
         "jadx",
         "frida",
-        "mitmproxy"
+        "mitmproxy",
+        "mastg"
       ],
       "alt": []
     },
@@ -62003,7 +62175,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 61,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -62110,6 +62282,124 @@
       "alt": []
     },
     {
+      "id": "asvs",
+      "name": "OWASP ASVS",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 56,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "standard",
+        "requirements",
+        "appsec"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/ASVS/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "56e0d2922895e8a1990d4881b1908d50ca431f7d"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp.org/www-project-application-security-verification-standard/",
+        "source": "https://github.com/OWASP/ASVS/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto.",
+        "success": "Obtienes la lista de requisitos aplicables con sus identificadores.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "definir los requisitos de seguridad de un proyecto según su nivel de riesgo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "usar los requisitos como lista de verificación en una auditoría",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/ASVS/blob/master/README.md",
+        "source_blob_sha": "56e0d2922895e8a1990d4881b1908d50ca431f7d",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar.",
+      "desc": "Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar.",
+      "stack": "HTML, Makefile",
+      "repo": "https://github.com/OWASP/ASVS",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "wstg",
+        "cheatsheetseries",
+        "threat-dragon",
+        "owasp-top10"
+      ],
+      "alt": []
+    },
+    {
       "id": "atomic-red-team",
       "name": "Atomic Red Team",
       "cat": 16,
@@ -62117,7 +62407,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 64,
+      "puntuacion": 65,
       "grupo": "g-emulacion-de-adversarios",
       "mcp": false,
       "prov": [],
@@ -62349,7 +62639,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 38,
+      "puntuacion": 44,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -62466,7 +62756,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 56,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -62584,7 +62874,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -62697,7 +62987,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 70,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -62819,7 +63109,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 70,
+      "puntuacion": 71,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -62939,7 +63229,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 38,
+      "puntuacion": 39,
       "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
       "mcp": false,
       "prov": [],
@@ -63054,7 +63344,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 62,
+      "puntuacion": 64,
       "grupo": "g-emulacion-de-adversarios",
       "mcp": false,
       "prov": [],
@@ -63170,7 +63460,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 3,
-      "puntuacion": 58,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -63276,6 +63566,125 @@
       "alt": []
     },
     {
+      "id": "cdxgen",
+      "name": "cdxgen",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 62,
+      "grupo": "g-generadores-de-sbom",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "sbom",
+        "cyclonedx",
+        "supply-chain",
+        "javascript"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/cdxgen/cdxgen/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "61fd0ff0dfc0ef8537b28b9034b9be6c4f0d3bba"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "npm install -g @cdxgen/cdxgen --omit=optional --ignore-scripts --min-release-age=2",
+        "command_status": "documented",
+        "entry_url": "https://cdxgen.github.io/cdxgen/",
+        "source": "https://github.com/cdxgen/cdxgen/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «npm and JavaScript package managers»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Instala con npm como indica el README y ejecuta cdxgen en el directorio de un proyecto propio.",
+        "success": "Obtienes un archivo bom.json en formato CycloneDX.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "generar el SBOM de cada release en CI",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "inventariar componentes de una imagen Docker propia",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/cdxgen/cdxgen/blob/master/README.md",
+        "source_blob_sha": "61fd0ff0dfc0ef8537b28b9034b9be6c4f0d3bba",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes.",
+      "desc": "Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes.",
+      "stack": "JavaScript, docker-compose.yml, package.json, pyproject.toml",
+      "repo": "https://github.com/cdxgen/cdxgen",
+      "install": "npm install -g @cdxgen/cdxgen --omit=optional --ignore-scripts --min-release-age=2",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "dependency-track"
+      ],
+      "alt": [
+        "syft"
+      ]
+    },
+    {
       "id": "certipy",
       "name": "Certipy",
       "cat": 16,
@@ -63283,7 +63692,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 52,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -63397,7 +63806,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 76,
+      "puntuacion": 80,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -63510,7 +63919,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 72,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -63620,6 +64029,125 @@
       "alt": []
     },
     {
+      "id": "coraza",
+      "name": "OWASP Coraza",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 62,
+      "grupo": "g-waf-compatibles-con-seclang",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "waf",
+        "go",
+        "seclang"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/corazawaf/coraza/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4d308107fb9ba3ef1cd4c5f8eb69dc6036bc6561"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://coraza.io/docs/",
+        "source": "https://github.com/corazawaf/coraza/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Sigue el ejemplo de uso de Coraza del README en un programa Go de prueba con una regla sencilla.",
+        "success": "La transacción con la carga de prueba queda interrumpida por la regla.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "añadir un WAF con el CRS a un servicio escrito en Go",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "proteger un Caddy de laboratorio con el módulo de Coraza",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/corazawaf/coraza/blob/main/README.md",
+        "source_blob_sha": "4d308107fb9ba3ef1cd4c5f8eb69dc6036bc6561",
+        "previous_category": [
+          16,
+          "deteccion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik.",
+      "desc": "WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik.",
+      "stack": "Go, go.mod",
+      "repo": "https://github.com/corazawaf/coraza",
+      "install": "Seguir la instalación original: https://github.com/corazawaf/coraza/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "coreruleset",
+        "caddy",
+        "traefik"
+      ],
+      "alt": [
+        "modsecurity"
+      ]
+    },
+    {
       "id": "coreruleset",
       "name": "OWASP CRS",
       "cat": 16,
@@ -63627,7 +64155,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 63,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -63740,7 +64268,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 71,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -63972,6 +64500,121 @@
       "alt": []
     },
     {
+      "id": "crapi",
+      "name": "OWASP crAPI",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 46,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "api",
+        "training",
+        "vulnerable-app"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/crAPI/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1f4237562fff7e79cba5cdca4faa1f5968eea0ff"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/OWASP/crAPI#readme",
+        "source": "https://github.com/OWASP/crAPI/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Descarga los archivos de despliegue y levanta crAPI con Docker Compose como indica el README.",
+        "success": "Accedes a la aplicación web y a su API en local.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "practicar ataques de autorización a nivel de objeto en una API",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "formar a un equipo en pruebas de seguridad de API",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/crAPI/blob/develop/README.md",
+        "source_blob_sha": "1f4237562fff7e79cba5cdca4faa1f5968eea0ff",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10.",
+      "desc": "API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10.",
+      "stack": "Java",
+      "repo": "https://github.com/OWASP/crAPI",
+      "install": "Seguir la instalación original: https://github.com/OWASP/crAPI/blob/develop/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: practicar ataques de autorización a nivel de objeto en una API; formar a un equipo en pruebas de seguridad de API",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "owasp-api-security"
+      ],
+      "alt": []
+    },
+    {
       "id": "crowdsec",
       "name": "CrowdSec",
       "cat": 16,
@@ -63979,7 +64622,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 75,
+      "puntuacion": 76,
       "grupo": "g-bloqueo-de-ip-por-comportamiento",
       "mcp": false,
       "prov": [],
@@ -64101,7 +64744,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 63,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -64217,6 +64860,128 @@
         "claude-code",
         "skillspector",
         "promptfoo"
+      ],
+      "alt": []
+    },
+    {
+      "id": "defectdojo",
+      "name": "DefectDojo",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 73,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "vulnerability-management",
+        "devsecops",
+        "aspm",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/DefectDojo/django-DefectDojo/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "91931021d703f233b849a01e2194f966171ac5ea"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up",
+        "command_status": "documented",
+        "entry_url": "https://docs.defectdojo.com",
+        "source": "https://github.com/DefectDojo/django-DefectDojo/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Quick Start for Docker Compose»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Clona el repo y levanta la versión de prueba con Docker Compose como indica el README; importa un informe de un escáner propio.",
+        "success": "Ves los hallazgos deduplicados asociados a un producto y a una prueba.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "medir el tiempo de corrección de hallazgos críticos por producto",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/DefectDojo/django-DefectDojo/blob/master/README.md",
+        "source_blob_sha": "91931021d703f233b849a01e2194f966171ac5ea",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección.",
+      "desc": "Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección.",
+      "stack": "Python, docker-compose.yml, requirements.txt",
+      "repo": "https://github.com/DefectDojo/django-DefectDojo",
+      "install": "git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "semgrep",
+        "zaproxy",
+        "trivy",
+        "nuclei",
+        "dependency-track",
+        "dependency-check"
       ],
       "alt": []
     },
@@ -64344,6 +65109,364 @@
       "alt": []
     },
     {
+      "id": "dep-scan",
+      "name": "OWASP dep-scan",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 59,
+      "grupo": "g-analisis-de-dependencias-vulnerables",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "sca",
+        "sbom",
+        "vex",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "c5cc8edf4779d38544c9ab7bf816ba55ebee9d17"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pip install owasp-depscan",
+        "command_status": "documented",
+        "entry_url": "https://depscan.readthedocs.io",
+        "source": "https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Scanning projects locally (Python version)»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio.",
+        "success": "Obtienes un informe de vulnerabilidades y riesgos de dependencias.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "auditar las dependencias de un repositorio en CI",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "priorizar CVE alcanzables en un proyecto Java o JavaScript",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md",
+        "source_blob_sha": "c5cc8edf4779d38544c9ab7bf816ba55ebee9d17",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.",
+      "desc": "Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.",
+      "stack": "Python, Dockerfile, docker-compose.yml, pyproject.toml",
+      "repo": "https://github.com/owasp-dep-scan/dep-scan",
+      "install": "pip install owasp-depscan",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "cdxgen",
+        "dependency-track"
+      ],
+      "alt": []
+    },
+    {
+      "id": "dependency-check",
+      "name": "OWASP Dependency-Check",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 63,
+      "grupo": "g-analisis-de-dependencias-vulnerables",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "sca",
+        "dependencies",
+        "cve",
+        "java"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/dependency-check/DependencyCheck/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d60999bae305ae5fb2ed88087236cd76a2aef7b6"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "brew update && brew install dependency-check",
+        "command_status": "documented",
+        "entry_url": "https://dependency-check.github.io/DependencyCheck/",
+        "source": "https://github.com/dependency-check/DependencyCheck/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Command Line»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio.",
+        "success": "Obtienes un informe HTML con las dependencias y los CVE asociados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "romper el build de Maven cuando aparece una dependencia con CVSS alto",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar un informe HTML de dependencias vulnerables para una auditoría",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/dependency-check/DependencyCheck/blob/main/README.md",
+        "source_blob_sha": "d60999bae305ae5fb2ed88087236cd76a2aef7b6",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.",
+      "desc": "Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.",
+      "stack": "Java, Dockerfile, pom.xml",
+      "repo": "https://github.com/dependency-check/DependencyCheck",
+      "install": "brew update && brew install dependency-check",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "dependency-track",
+        "defectdojo",
+        "osv-scanner"
+      ],
+      "alt": []
+    },
+    {
+      "id": "dependency-track",
+      "name": "Dependency-Track",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 65,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "sbom",
+        "sca",
+        "supply-chain",
+        "cyclonedx",
+        "java"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/DependencyTrack/dependency-track/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d393d57719babf1706448db4f77f25bfad5914b8"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno."
+        ],
+        "command": "curl -LO https://dependencytrack.org/docker-compose.yml\ndocker compose up -d",
+        "command_status": "documented",
+        "entry_url": "https://docs.dependencytrack.org/getting-started/deploy-docker/",
+        "source": "https://docs.dependencytrack.org/getting-started/deploy-docker/",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio.",
+        "success": "Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "auditar licencias de componentes de toda la cartera de aplicaciones",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/DependencyTrack/dependency-track/blob/main/README.md",
+        "source_blob_sha": "d393d57719babf1706448db4f77f25bfad5914b8",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos.",
+      "desc": "Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos.",
+      "stack": "Java, Makefile, pom.xml",
+      "repo": "https://github.com/DependencyTrack/dependency-track",
+      "install": "curl -LO https://dependencytrack.org/docker-compose.yml\ndocker compose up -d",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "cdxgen",
+        "syft",
+        "defectdojo",
+        "dependency-check"
+      ],
+      "alt": []
+    },
+    {
       "id": "detection-rules",
       "name": "Elastic detection-rules",
       "cat": 16,
@@ -64351,7 +65474,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -64465,7 +65588,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 61,
       "grupo": "g-fuzzing-de-rutas-y-contenido-web",
       "mcp": false,
       "prov": [],
@@ -64581,7 +65704,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 3,
-      "puntuacion": 50,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -64699,7 +65822,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -64812,7 +65935,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 58,
+      "puntuacion": 60,
       "grupo": "g-frameworks-de-c2-y-post-explotacion",
       "mcp": false,
       "prov": [],
@@ -64928,7 +66051,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 54,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65044,7 +66167,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 61,
+      "puntuacion": 62,
       "grupo": "g-bloqueo-de-ip-por-comportamiento",
       "mcp": false,
       "prov": [],
@@ -65158,7 +66281,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 72,
+      "puntuacion": 74,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65275,7 +66398,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": "g-fuzzing-de-rutas-y-contenido-web",
       "mcp": false,
       "prov": [],
@@ -65392,7 +66515,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 68,
+      "puntuacion": 69,
       "grupo": "g-fuzzing-de-rutas-y-contenido-web",
       "mcp": false,
       "prov": [],
@@ -65514,7 +66637,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 58,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65632,7 +66755,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 61,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65873,7 +66996,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 1,
-      "puntuacion": 55,
+      "puntuacion": 56,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65987,7 +67110,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 57,
+      "puntuacion": 59,
       "grupo": "g-fuzzing-de-rutas-y-contenido-web",
       "mcp": false,
       "prov": [],
@@ -66104,7 +67227,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 70,
+      "puntuacion": 71,
       "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores",
       "mcp": false,
       "prov": [],
@@ -66222,7 +67345,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 56,
+      "puntuacion": 61,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66455,7 +67578,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 3,
-      "puntuacion": 63,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66568,7 +67691,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 76,
+      "puntuacion": 77,
       "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
       "mcp": false,
       "prov": [],
@@ -66687,7 +67810,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66923,7 +68046,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 67,
+      "puntuacion": 68,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -67041,7 +68164,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 61,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -67262,7 +68385,124 @@
         "apktool",
         "ghidra",
         "rea",
-        "awesome-ai-reverse-engineering"
+        "awesome-ai-reverse-engineering",
+        "mastg"
+      ],
+      "alt": []
+    },
+    {
+      "id": "java-html-sanitizer",
+      "name": "OWASP Java HTML Sanitizer",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 2,
+      "puntuacion": 61,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "xss",
+        "java",
+        "library"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/java-html-sanitizer/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "5b2e28e4e37ba9ec37dec36426478fe67727ea64"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/OWASP/java-html-sanitizer#readme",
+        "source": "https://github.com/OWASP/java-html-sanitizer/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida.",
+        "success": "El HTML con scripts queda saneado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "permitir HTML enriquecido de usuarios en comentarios sin XSS",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "sanear contenido importado de fuentes externas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/java-html-sanitizer/blob/main/README.md",
+        "source_blob_sha": "5b2e28e4e37ba9ec37dec36426478fe67727ea64",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS.",
+      "desc": "Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS.",
+      "stack": "Java, pom.xml",
+      "repo": "https://github.com/OWASP/java-html-sanitizer",
+      "install": "Seguir la instalación original: https://github.com/OWASP/java-html-sanitizer/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "owasp-java-encoder",
+        "cheatsheetseries"
       ],
       "alt": []
     },
@@ -67274,7 +68514,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 53,
+      "puntuacion": 54,
       "grupo": "g-cracking-de-contrasenas",
       "mcp": false,
       "prov": [],
@@ -67393,8 +68633,8 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 72,
-      "grupo": null,
+      "puntuacion": 75,
+      "grupo": "g-aplicaciones-web-vulnerables-para-practicar",
       "mcp": false,
       "prov": [],
       "tags": [
@@ -67496,7 +68736,9 @@
         "zaproxy",
         "nuclei"
       ],
-      "alt": []
+      "alt": [
+        "webgoat"
+      ]
     },
     {
       "id": "k6",
@@ -67626,7 +68868,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 53,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -67740,7 +68982,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 46,
+      "puntuacion": 47,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -67853,7 +69095,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 77,
+      "puntuacion": 78,
       "grupo": "g-pruebas-de-carga",
       "mcp": false,
       "prov": [],
@@ -67972,7 +69214,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 40,
+      "puntuacion": 41,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68085,7 +69327,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 50,
+      "puntuacion": 56,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68309,6 +69551,239 @@
       "alt": []
     },
     {
+      "id": "mastg",
+      "name": "OWASP MASTG",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 69,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "mobile",
+        "android",
+        "ios",
+        "guide"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/mastg/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "50fca933b651b0d268fe4929d50dfbfb7c3f4e7e"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://mas.owasp.org/MASTG/",
+        "source": "https://github.com/OWASP/mastg/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre mas.owasp.org, elige un control MASVS (por ejemplo MASVS-STORAGE) y sigue sus pruebas para Android.",
+        "success": "Obtienes los pasos, las herramientas y la evidencia esperada para cada prueba.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "auditar el almacenamiento local y la red de una app Android propia",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "preparar un plan de pruebas para una app iOS antes de publicarla",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/mastg/blob/master/README.md",
+        "source_blob_sha": "50fca933b651b0d268fe4929d50dfbfb7c3f4e7e",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS.",
+      "desc": "Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS.",
+      "stack": "Python, package.json",
+      "repo": "https://github.com/OWASP/mastg",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: auditar el almacenamiento local y la red de una app Android propia; preparar un plan de pruebas para una app iOS antes de publicarla",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "masvs",
+        "frida",
+        "apktool",
+        "jadx"
+      ],
+      "alt": []
+    },
+    {
+      "id": "masvs",
+      "name": "OWASP MASVS",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 56,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "mobile",
+        "standard"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/masvs/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "1971f6e539403e5d8b5505bd92c4e1bf22976f79"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://mas.owasp.org/MASVS/",
+        "source": "https://github.com/OWASP/masvs/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre mas.owasp.org/MASVS y revisa el grupo MASVS-STORAGE.",
+        "success": "Obtienes los controles y enlaces a sus pruebas en el MASTG.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "fijar requisitos de seguridad para una app móvil nueva",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "estructurar una auditoría móvil por grupos de control",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/masvs/blob/master/README.md",
+        "source_blob_sha": "1971f6e539403e5d8b5505bd92c4e1bf22976f79",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia.",
+      "desc": "Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia.",
+      "stack": "Python",
+      "repo": "https://github.com/OWASP/masvs",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: fijar requisitos de seguridad para una app móvil nueva; estructurar una auditoría móvil por grupos de control",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "mastg"
+      ],
+      "alt": []
+    },
+    {
       "id": "metasploit",
       "name": "Metasploit Framework",
       "cat": 16,
@@ -68316,7 +69791,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 72,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68434,7 +69909,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 48,
+      "puntuacion": 49,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68547,7 +70022,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 50,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68663,7 +70138,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 78,
+      "puntuacion": 79,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68778,6 +70253,128 @@
       "alt": []
     },
     {
+      "id": "modsecurity",
+      "name": "ModSecurity",
+      "cat": 16,
+      "role": "runtime",
+      "exec": "local",
+      "setup": "hard",
+      "complejidad": 4,
+      "puntuacion": 66,
+      "grupo": "g-waf-compatibles-con-seclang",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "waf",
+        "http",
+        "nginx",
+        "c++"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "31613cb25d0e26fa63577e9c138a6c485d0a2470"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige el modelo y el backend que documenta el proyecto para tu sistema.",
+          "Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.",
+          "Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea."
+        ],
+        "command": "git clone https://github.com/owasp-modsecurity/ModSecurity ModSecurity",
+        "command_status": "documented",
+        "entry_url": "https://github.com/owasp-modsecurity/ModSecurity/wiki",
+        "source": "https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Unix (Linux, macOS, FreeBSD, …)»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Sigue la compilación de libmodsecurity del README e integra el conector de Nginx en un servidor de laboratorio con el CRS.",
+        "success": "Las peticiones maliciosas de prueba quedan registradas en el log de auditoría.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "registrar intentos de inyección SQL y XSS para un SOC",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/owasp-modsecurity/ModSecurity/blob/v3/master/README.md",
+        "source_blob_sha": "31613cb25d0e26fa63577e9c138a6c485d0a2470",
+        "previous_category": [
+          16,
+          "deteccion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set.",
+      "desc": "Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set.",
+      "stack": "C++",
+      "repo": "https://github.com/owasp-modsecurity/ModSecurity",
+      "install": "git clone https://github.com/owasp-modsecurity/ModSecurity ModSecurity",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear; registrar intentos de inyección SQL y XSS para un SOC",
+      "avoid_if": "no quieres preparar modelos, dependencias y hardware propios",
+      "combines_with": [
+        "coreruleset",
+        "wazuh",
+        "juice-shop"
+      ],
+      "alt": [
+        "coraza"
+      ]
+    },
+    {
       "id": "mythic",
       "name": "Mythic",
       "cat": 16,
@@ -68785,7 +70382,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 50,
+      "puntuacion": 51,
       "grupo": "g-frameworks-de-c2-y-post-explotacion",
       "mcp": false,
       "prov": [],
@@ -68901,7 +70498,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 62,
+      "puntuacion": 63,
       "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
       "mcp": false,
       "prov": [],
@@ -69019,7 +70616,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 75,
+      "puntuacion": 76,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69128,6 +70725,124 @@
       "alt": []
     },
     {
+      "id": "nettacker",
+      "name": "OWASP Nettacker",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 60,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "pentest",
+        "scanner",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/Nettacker/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1a7121c093c05a49003570390bb8c51d30cbdfb2"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run owasp/nettacker --help",
+        "command_status": "documented",
+        "entry_url": "https://nettacker.readthedocs.io/",
+        "source": "https://github.com/OWASP/Nettacker/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «CLI (Docker)»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Ejecuta la ayuda de la imagen Docker oficial como indica el README y lanza un port_scan contra un host propio.",
+        "success": "Obtienes un informe con puertos abiertos y servicios detectados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "inventariar puertos y servicios de una red de laboratorio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "detectar cambios en la superficie expuesta entre dos escaneos autorizados",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/Nettacker/blob/master/README.md",
+        "source_blob_sha": "1a7121c093c05a49003570390bb8c51d30cbdfb2",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML.",
+      "desc": "Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML.",
+      "stack": "Python, Dockerfile, Makefile, docker-compose.yml, pyproject.toml",
+      "repo": "https://github.com/OWASP/Nettacker",
+      "install": "docker run owasp/nettacker --help",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: inventariar puertos y servicios de una red de laboratorio; detectar cambios en la superficie expuesta entre dos escaneos autorizados",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "nmap",
+        "nuclei",
+        "defectdojo"
+      ],
+      "alt": []
+    },
+    {
       "id": "nmap",
       "name": "Nmap",
       "cat": 16,
@@ -69135,7 +70850,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69245,6 +70960,124 @@
       "alt": []
     },
     {
+      "id": "noir",
+      "name": "OWASP Noir",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 61,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "sast",
+        "attack-surface",
+        "api",
+        "crystal"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/owasp-noir/noir/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "c830d16cd4777803819a436c9ddcce4fe974c635"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "brew install noir",
+        "command_status": "documented",
+        "entry_url": "https://owasp-noir.github.io/noir/",
+        "source": "https://github.com/owasp-noir/noir/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Usage»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia.",
+        "success": "Obtienes la lista de endpoints, métodos y parámetros detectados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "listar todos los endpoints de un repositorio propio antes de un pentest",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "pasar endpoints descubiertos a ZAP para un escaneo autorizado",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/owasp-noir/noir/blob/main/README.md",
+        "source_blob_sha": "c830d16cd4777803819a436c9ddcce4fe974c635",
+        "previous_category": [
+          16,
+          "reconocimiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.",
+      "desc": "Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.",
+      "stack": "Crystal",
+      "repo": "https://github.com/owasp-noir/noir",
+      "install": "brew install noir",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "zaproxy",
+        "caido"
+      ],
+      "alt": []
+    },
+    {
       "id": "nuclei",
       "name": "Nuclei",
       "cat": 16,
@@ -69252,7 +71085,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 84,
+      "puntuacion": 86,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69371,7 +71204,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 71,
+      "puntuacion": 75,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69488,7 +71321,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 72,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69604,8 +71437,8 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 78,
-      "grupo": null,
+      "puntuacion": 79,
+      "grupo": "g-analisis-de-dependencias-vulnerables",
       "mcp": false,
       "prov": [],
       "tags": [
@@ -69710,6 +71543,817 @@
       "alt": []
     },
     {
+      "id": "owasp-ai-testing-guide",
+      "name": "OWASP AI Testing Guide",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 42,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "ai",
+        "llm",
+        "testing",
+        "guide"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/www-project-ai-testing-guide/blob/main/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "6ef8d9aaee61514391e25e4c0a20b294e617fa02"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp.org/www-project-ai-testing-guide/",
+        "source": "https://github.com/OWASP/www-project-ai-testing-guide/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Descarga el PDF v1.0 enlazado en el README y elige los casos de la capa de aplicación.",
+        "success": "Obtienes objetivos, pasos y resultados esperados para cada prueba.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "planificar una evaluación de seguridad de un chatbot con LLM",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "verificar controles de un pipeline de entrenamiento",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/www-project-ai-testing-guide/blob/main/README.md",
+        "source_blob_sha": "6ef8d9aaee61514391e25e4c0a20b294e617fa02",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos.",
+      "desc": "Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos.",
+      "stack": "Python, Gemfile",
+      "repo": "https://github.com/OWASP/www-project-ai-testing-guide",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: planificar una evaluación de seguridad de un chatbot con LLM; verificar controles de un pipeline de entrenamiento",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "owasp-llm-top10",
+        "garak"
+      ],
+      "alt": []
+    },
+    {
+      "id": "owasp-api-security",
+      "name": "OWASP API Security Top 10",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 47,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "api",
+        "awareness"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/API-Security/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "eae8fa32dc6bceedaa1fceea09577e4659585292"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp.org/API-Security/",
+        "source": "https://github.com/OWASP/API-Security/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre la edición 2023 en el sitio del proyecto y revisa el riesgo API1 (BOLA).",
+        "success": "Obtienes escenarios de ataque y medidas de prevención.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "revisar una API REST nueva contra los riesgos más comunes",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "formar a un equipo backend en fallos de autorización",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/API-Security/blob/master/README.md",
+        "source_blob_sha": "eae8fa32dc6bceedaa1fceea09577e4659585292",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más.",
+      "desc": "Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más.",
+      "stack": "Dockerfile, Dockerfile, docker-compose.yml",
+      "repo": "https://github.com/OWASP/API-Security",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: revisar una API REST nueva contra los riesgos más comunes; formar a un equipo backend en fallos de autorización",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "crapi"
+      ],
+      "alt": []
+    },
+    {
+      "id": "owasp-devguide",
+      "name": "OWASP Developer Guide",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 50,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "guide",
+        "sdlc"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/DevGuide/blob/main/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "3aadce1fa3854a90c22b93b94444065a4cb48cc2"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://devguide.owasp.org",
+        "source": "https://github.com/OWASP/DevGuide/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre devguide.owasp.org y lee la sección de implementación.",
+        "success": "Obtienes prácticas y referencias a proyectos OWASP aplicables.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "introducir prácticas de desarrollo seguro en un equipo nuevo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "elegir qué proyecto OWASP usar en cada fase",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/DevGuide/blob/main/README.md",
+        "source_blob_sha": "3aadce1fa3854a90c22b93b94444065a4cb48cc2",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase.",
+      "desc": "Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase.",
+      "stack": "",
+      "repo": "https://github.com/OWASP/DevGuide",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: introducir prácticas de desarrollo seguro en un equipo nuevo; elegir qué proyecto OWASP usar en cada fase",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "cheatsheetseries"
+      ],
+      "alt": []
+    },
+    {
+      "id": "owasp-java-encoder",
+      "name": "OWASP Java Encoder",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 2,
+      "puntuacion": 56,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "xss",
+        "encoding",
+        "java"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/owasp-java-encoder/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "89df4ea908bc6cd10019c84bbf179aed95570b04"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp.org/www-project-java-encoder/",
+        "source": "https://github.com/OWASP/owasp-java-encoder/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Añade la dependencia Maven del README a un proyecto Java de prueba y usa Encode.forHtml.",
+        "success": "La salida queda codificada para el contexto HTML.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "codificar datos de usuario al renderizar plantillas JSP",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "escapar valores insertados en JavaScript en línea",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/owasp-java-encoder/blob/main/README.md",
+        "source_blob_sha": "89df4ea908bc6cd10019c84bbf179aed95570b04",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución.",
+      "desc": "Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución.",
+      "stack": "Java, pom.xml",
+      "repo": "https://github.com/OWASP/owasp-java-encoder",
+      "install": "Seguir la instalación original: https://github.com/OWASP/owasp-java-encoder/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: codificar datos de usuario al renderizar plantillas JSP; escapar valores insertados en JavaScript en línea",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "java-html-sanitizer",
+        "cheatsheetseries"
+      ],
+      "alt": []
+    },
+    {
+      "id": "owasp-llm-top10",
+      "name": "OWASP Top 10 for LLM Applications",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 52,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "llm",
+        "genai",
+        "awareness"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "4fcff09b318d46394fd5b15d506000165937f8d7"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://genai.owasp.org",
+        "source": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre la edición vigente en genai.owasp.org y revisa el riesgo de inyección de prompts.",
+        "success": "Obtienes escenarios de ataque y medidas de mitigación.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "revisar los riesgos de un asistente con RAG antes de lanzarlo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "priorizar defensas contra inyección de prompts en un agente",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/README.md",
+        "source_blob_sha": "4fcff09b318d46394fd5b15d506000165937f8d7",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project.",
+      "desc": "Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project.",
+      "stack": "Python, Gemfile",
+      "repo": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: revisar los riesgos de un asistente con RAG antes de lanzarlo; priorizar defensas contra inyección de prompts en un agente",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "garak",
+        "promptfoo"
+      ],
+      "alt": []
+    },
+    {
+      "id": "owasp-top10",
+      "name": "OWASP Top 10",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 56,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "awareness",
+        "web",
+        "standard"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/Top10/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "5af8dfc7fafb80a96747cc6e2ed6fbd739ba6949"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp.org/Top10/",
+        "source": "https://github.com/OWASP/Top10/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre la edición vigente en owasp.org/Top10 y lee la categoría de control de acceso roto.",
+        "success": "Obtienes la descripción, ejemplos de ataque, prevención y CWE relacionados.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "formar a un equipo de desarrollo en los riesgos web más comunes",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "priorizar una revisión de código por categorías de riesgo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/Top10/blob/master/README.md",
+        "source_blob_sha": "5af8dfc7fafb80a96747cc6e2ed6fbd739ba6949",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados.",
+      "desc": "Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados.",
+      "stack": "HTML, Makefile, package.json, requirements.txt",
+      "repo": "https://github.com/OWASP/Top10",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: formar a un equipo de desarrollo en los riesgos web más comunes; priorizar una revisión de código por categorías de riesgo",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "asvs",
+        "cheatsheetseries",
+        "juice-shop",
+        "threat-dragon"
+      ],
+      "alt": []
+    },
+    {
+      "id": "owtf",
+      "name": "OWASP OWTF",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 55,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "pentest",
+        "web",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/owtf/owtf/blob/develop/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9a551a1204da2c0ff6d33f4bb31ec1f311ec98d8"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "git clone https://github.com/owtf/owtf.git\ncd owtf\nmake compose-safe",
+        "command_status": "documented",
+        "entry_url": "https://github.com/owtf/owtf#readme",
+        "source": "https://github.com/owtf/owtf/blob/develop/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Quick start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Clona el repo y ejecuta `make compose-safe` como indica el README; abre la interfaz en localhost:8019.",
+        "success": "Ves la interfaz web lista para crear un objetivo de laboratorio.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "coordinar varias herramientas en un pentest web autorizado",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "seguir casos de la WSTG con una sola interfaz",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/owtf/owtf/blob/develop/README.md",
+        "source_blob_sha": "9a551a1204da2c0ff6d33f4bb31ec1f311ec98d8",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web.",
+      "desc": "Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web.",
+      "stack": "Python, Makefile, pyproject.toml, setup.py",
+      "repo": "https://github.com/owtf/owtf",
+      "install": "git clone https://github.com/owtf/owtf.git\ncd owtf\nmake compose-safe",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: coordinar varias herramientas en un pentest web autorizado; seguir casos de la WSTG con una sola interfaz",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "wstg"
+      ],
+      "alt": []
+    },
+    {
       "id": "pacu",
       "name": "Pacu",
       "cat": 16,
@@ -69717,7 +72361,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 50,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70063,7 +72707,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 69,
+      "puntuacion": 70,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70180,7 +72824,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 64,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70294,7 +72938,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70400,6 +73044,123 @@
       "alt": []
     },
     {
+      "id": "pytm",
+      "name": "OWASP pytm",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 60,
+      "grupo": "g-modelado-de-amenazas",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "threat-modeling",
+        "python",
+        "as-code"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/pytm/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "eb46012669aed13fc65c30dd088cd71b3f91ffb5"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/OWASP/pytm#readme",
+        "source": "https://github.com/OWASP/pytm/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Sigue el ejemplo tm.py del README en un entorno con las dependencias indicadas y genera el DFD.",
+        "success": "Obtienes un diagrama de flujo de datos y la lista de amenazas.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "versionar el modelo de amenazas junto al código de un servicio",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "generar informes de amenazas en CI",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/pytm/blob/master/README.md",
+        "source_blob_sha": "eb46012669aed13fc65c30dd088cd71b3f91ffb5",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas.",
+      "desc": "Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas.",
+      "stack": "Python, Dockerfile, Makefile, pyproject.toml",
+      "repo": "https://github.com/OWASP/pytm",
+      "install": "Seguir la instalación original: https://github.com/OWASP/pytm/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "asvs"
+      ],
+      "alt": [
+        "threat-dragon"
+      ]
+    },
+    {
       "id": "radare2",
       "name": "radare2",
       "cat": 16,
@@ -70407,7 +73168,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 68,
+      "puntuacion": 69,
       "grupo": "g-ingenieria-inversa-y-desensambladores",
       "mcp": false,
       "prov": [],
@@ -70774,7 +73535,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 50,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70887,7 +73648,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 46,
+      "puntuacion": 48,
       "grupo": "g-ingenieria-inversa-y-desensambladores",
       "mcp": false,
       "prov": [],
@@ -71007,7 +73768,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71233,7 +73994,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 51,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71456,6 +74217,124 @@
       ]
     },
     {
+      "id": "securecodebox",
+      "name": "OWASP secureCodeBox",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "hard",
+      "complejidad": 4,
+      "puntuacion": 58,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "kubernetes",
+        "scanner",
+        "devsecops",
+        "go"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/secureCodeBox/secureCodeBox/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "90cd9c002553dcd5ad613fab922efd27d3564046"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno."
+        ],
+        "command": "helm --namespace securecodebox-system upgrade --install --create-namespace securecodebox-operator oci://ghcr.io/securecodebox/helm/operator",
+        "command_status": "documented",
+        "entry_url": "https://www.securecodebox.io/docs/getting-started/installation",
+        "source": "https://www.securecodebox.io/docs/getting-started/installation",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Instala el operador con Helm según la guía de instalación oficial en un clúster de pruebas.",
+        "success": "El operador queda listo para lanzar un escaneo de ejemplo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "programar escaneos periódicos de un entorno de staging autorizado",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "enviar resultados de varios escáneres a DefectDojo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/secureCodeBox/secureCodeBox/blob/main/README.md",
+        "source_blob_sha": "90cd9c002553dcd5ad613fab922efd27d3564046",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos.",
+      "desc": "Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos.",
+      "stack": "Go",
+      "repo": "https://github.com/secureCodeBox/secureCodeBox",
+      "install": "helm --namespace securecodebox-system upgrade --install --create-namespace securecodebox-operator oci://ghcr.io/securecodebox/helm/operator",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: programar escaneos periódicos de un entorno de staging autorizado; enviar resultados de varios escáneres a DefectDojo",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "defectdojo",
+        "nuclei"
+      ],
+      "alt": []
+    },
+    {
       "id": "security-audit-skill",
       "name": "security-audit-skill",
       "cat": 16,
@@ -71585,7 +74464,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 50,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71699,7 +74578,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 69,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71824,7 +74703,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 63,
       "grupo": "g-pentesting-autonomo-con-agentes",
       "mcp": false,
       "prov": [
@@ -71952,7 +74831,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 51,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72066,7 +74945,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 56,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72184,7 +75063,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 73,
+      "puntuacion": 74,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -72309,7 +75188,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 41,
+      "puntuacion": 42,
       "grupo": "g-analisis-forense-de-discos",
       "mcp": false,
       "prov": [],
@@ -72424,7 +75303,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 70,
+      "puntuacion": 72,
       "grupo": "g-frameworks-de-c2-y-post-explotacion",
       "mcp": false,
       "prov": [],
@@ -72543,7 +75422,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72656,7 +75535,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 72,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72904,7 +75783,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 76,
+      "puntuacion": 77,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73023,7 +75902,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 60,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73139,8 +76018,8 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 76,
-      "grupo": null,
+      "puntuacion": 77,
+      "grupo": "g-generadores-de-sbom",
       "mcp": false,
       "prov": [],
       "tags": [
@@ -73242,7 +76121,9 @@
         "grype",
         "trivy"
       ],
-      "alt": []
+      "alt": [
+        "cdxgen"
+      ]
     },
     {
       "id": "syzkaller",
@@ -73252,7 +76133,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 53,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73366,7 +76247,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 53,
+      "puntuacion": 56,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73470,6 +76351,126 @@
         "nmap"
       ],
       "alt": []
+    },
+    {
+      "id": "threat-dragon",
+      "name": "OWASP Threat Dragon",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 65,
+      "grupo": "g-modelado-de-amenazas",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "threat-modeling",
+        "stride",
+        "javascript"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/threat-dragon/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "e628a774193ef62dba0d105edb349aa0adea1e64"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker pull threatdragon/owasp-threat-dragon:stable",
+        "command_status": "documented",
+        "entry_url": "https://www.threatdragon.com/docs/",
+        "source": "https://github.com/OWASP/threat-dragon/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Docker (from dockerhub)»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo.",
+        "success": "Obtienes un diagrama con amenazas asociadas y un informe exportable.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "modelar las amenazas de una API nueva durante el diseño",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "documentar mitigaciones STRIDE para una revisión de arquitectura",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/threat-dragon/blob/main/README.md",
+        "source_blob_sha": "e628a774193ef62dba0d105edb349aa0adea1e64",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web.",
+      "desc": "Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web.",
+      "stack": "JavaScript, Dockerfile, package.json",
+      "repo": "https://github.com/OWASP/threat-dragon",
+      "install": "docker pull threatdragon/owasp-threat-dragon:stable",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "asvs",
+        "cheatsheetseries",
+        "owasp-top10"
+      ],
+      "alt": [
+        "pytm"
+      ]
     },
     {
       "id": "trivy",
@@ -73601,7 +76602,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73718,7 +76719,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73834,7 +76835,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 74,
+      "puntuacion": 76,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73944,6 +76945,126 @@
       "alt": []
     },
     {
+      "id": "webgoat",
+      "name": "WebGoat",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 62,
+      "grupo": "g-aplicaciones-web-vulnerables-para-practicar",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "training",
+        "vulnerable-app",
+        "java"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/WebGoat/WebGoat/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "024e069a101df3ebb0acce1b67ce2191207a4258"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat",
+        "command_status": "documented",
+        "entry_url": "https://owasp.org/www-project-webgoat/",
+        "source": "https://github.com/WebGoat/WebGoat/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «1. Run using Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Ejecuta la imagen Docker oficial ligada a 127.0.0.1 como indica el README y abre WebGoat en el navegador.",
+        "success": "Accedes a las lecciones y completas la primera.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "practicar inyección SQL y XSS siguiendo lecciones paso a paso",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "formar a desarrolladores en errores comunes de seguridad web",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/WebGoat/WebGoat/blob/main/README.md",
+        "source_blob_sha": "024e069a101df3ebb0acce1b67ce2191207a4258",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10.",
+      "desc": "Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10.",
+      "stack": "JavaScript, Dockerfile, pom.xml",
+      "repo": "https://github.com/WebGoat/WebGoat",
+      "install": "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "zaproxy",
+        "caido",
+        "wstg"
+      ],
+      "alt": [
+        "juice-shop"
+      ]
+    },
+    {
       "id": "wireshark",
       "name": "Wireshark",
       "cat": 16,
@@ -73951,7 +77072,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 68,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -74071,7 +77192,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 48,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -74173,6 +77294,242 @@
       "combines_with": [
         "nuclei",
         "ffuf"
+      ],
+      "alt": []
+    },
+    {
+      "id": "wrongsecrets",
+      "name": "OWASP WrongSecrets",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 62,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "secrets",
+        "training",
+        "kubernetes"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/wrongsecrets/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "fd607591a2878f1e23b21a7d66ccff4cdf8c2572"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "docker run -p 8080:8080 -p 8090:8090 jeroenwillemsen/wrongsecrets:latest-no-vault",
+        "command_status": "documented",
+        "entry_url": "https://owasp.org/www-project-wrongsecrets/",
+        "source": "https://github.com/OWASP/wrongsecrets/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando copiado literalmente de el README (sección «Basic docker exercises»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
+      },
+      "first_try": {
+        "action": "Ejecuta la imagen Docker sin Vault como indica el README y abre la aplicación en localhost:8080.",
+        "success": "Accedes a los retos básicos de secretos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "enseñar a detectar secretos filtrados en imágenes de contenedor",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "practicar la gestión de secretos en Kubernetes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/wrongsecrets/blob/master/README.md",
+        "source_blob_sha": "fd607591a2878f1e23b21a7d66ccff4cdf8c2572",
+        "previous_category": [
+          16,
+          "pruebas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios.",
+      "desc": "Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios.",
+      "stack": "HTML, Dockerfile, package.json, pom.xml",
+      "repo": "https://github.com/OWASP/wrongsecrets",
+      "install": "docker run -p 8080:8080 -p 8090:8090 jeroenwillemsen/wrongsecrets:latest-no-vault",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: enseñar a detectar secretos filtrados en imágenes de contenedor; practicar la gestión de secretos en Kubernetes",
+      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+      "combines_with": [
+        "gitleaks",
+        "trufflehog"
+      ],
+      "alt": []
+    },
+    {
+      "id": "wstg",
+      "name": "OWASP Web Security Testing Guide",
+      "cat": 16,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 71,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "security",
+        "testing",
+        "guide",
+        "web"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Leer la documentación, especificación o directorio. Los ejemplos enlazados tienen sus propios requisitos.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OWASP/wstg/blob/master/README.md"
+        ],
+        "mode": "reference",
+        "source_blob_sha": "4d48868d4e3dad8b38e1bbc637f664d0a906f638"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "prerequisites": [
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Abre el material original y localiza la sección relacionada con tu tarea.",
+          "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
+          "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://owasp.org/www-project-web-security-testing-guide/",
+        "source": "https://github.com/OWASP/wstg/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
+      },
+      "first_try": {
+        "action": "Abre la versión estable de la guía en el sitio de OWASP y elige una categoría, por ejemplo pruebas de autenticación.",
+        "success": "Obtienes los casos de prueba, sus objetivos y cómo verificarlos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "planificar un pentest web con una lista de casos WSTG",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "citar identificadores WSTG en un informe de hallazgos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OWASP/wstg/blob/master/README.md",
+        "source_blob_sha": "4d48868d4e3dad8b38e1bbc637f664d0a906f638",
+        "previous_category": [
+          16,
+          "referencias"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG.",
+      "desc": "Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG.",
+      "stack": "CSS",
+      "repo": "https://github.com/OWASP/wstg",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: planificar un pentest web con una lista de casos WSTG; citar identificadores WSTG en un informe de hallazgos",
+      "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
+      "combines_with": [
+        "zaproxy",
+        "juice-shop",
+        "cheatsheetseries",
+        "asvs",
+        "webgoat"
       ],
       "alt": []
     },
@@ -74303,7 +77660,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 53,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -74421,7 +77778,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 73,
+      "puntuacion": 74,
       "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
       "mcp": false,
       "prov": [],
@@ -74541,7 +77898,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 70,
+      "puntuacion": 71,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -75016,7 +78373,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -76085,7 +79442,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 50,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -77780,8 +81137,8 @@
       "role": "platform",
       "exec": "local",
       "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 56,
+      "complejidad": 2,
+      "puntuacion": 59,
       "grupo": "g-help-desk-y-tickets",
       "mcp": false,
       "prov": [],
@@ -80339,7 +83696,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 32,
+      "puntuacion": 33,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80461,7 +83818,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 53,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -82295,7 +85652,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 53,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -82536,7 +85893,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 61,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -86721,7 +90078,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 67,
+      "puntuacion": 70,
       "grupo": "g-espacios-de-asistentes-de-copilotkit",
       "mcp": true,
       "prov": [
@@ -89435,7 +92792,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 52,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -90529,7 +93886,8 @@
         "dokploy",
         "crowdsec",
         "grafana",
-        "portainer"
+        "portainer",
+        "coraza"
       ],
       "alt": [
         "caddy"
@@ -90659,7 +94017,7 @@
       "role": "platform",
       "exec": "local",
       "setup": "easy",
-      "complejidad": 1,
+      "complejidad": 2,
       "puntuacion": 63,
       "grupo": null,
       "mcp": false,
@@ -93661,7 +97019,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 72,
+      "puntuacion": 75,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -110148,7 +113506,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 39,
+      "puntuacion": 42,
       "grupo": null,
       "mcp": false,
       "prov": [
@@ -110893,7 +114251,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 60,
+      "puntuacion": 62,
       "grupo": "g-agentes-de-voz-en-tiempo-real",
       "mcp": true,
       "prov": [],
@@ -113407,7 +116765,7 @@
       "exec": "hybrid",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 43,
+      "puntuacion": 46,
       "grupo": "g-agentes-de-voz-en-tiempo-real",
       "mcp": false,
       "prov": [],

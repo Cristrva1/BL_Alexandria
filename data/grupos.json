@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-16",
+ "fecha": "2026-11-17",
  "nota": "Generado desde curation/grupos.yaml y data/metricas/puntuaciones.json. No editar a mano.",
  "grupos": [
   {
@@ -197,7 +197,7 @@
     {
      "id": "aider",
      "posicion": 8,
-     "puntuacion": 49.2,
+     "puntuacion": 49.3,
      "papel": "alternativa",
      "cuando": "Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo.",
      "cuando_origen": "curado",
@@ -296,22 +296,22 @@
      "caso_unico": false
     },
     {
-     "id": "chatbox",
+     "id": "textgen",
      "posicion": 7,
+     "puntuacion": 53.0,
+     "papel": "alternativa",
+     "cuando": "Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers).",
+     "cuando_origen": "curado",
+     "caso_unico": true
+    },
+    {
+     "id": "chatbox",
+     "posicion": 8,
      "puntuacion": 51.7,
      "papel": "alternativa",
      "cuando": "Si quieres un cliente de escritorio y móvil sencillo para tus claves de API.",
      "cuando_origen": "curado",
      "caso_unico": false
-    },
-    {
-     "id": "textgen",
-     "posicion": 8,
-     "puntuacion": 50.0,
-     "papel": "alternativa",
-     "cuando": "Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers).",
-     "cuando_origen": "curado",
-     "caso_unico": true
     }
    ],
    "recomendado": "open-webui",
@@ -321,8 +321,8 @@
     "librechat",
     "jan",
     "nextchat",
-    "chatbox",
-    "textgen"
+    "textgen",
+    "chatbox"
    ]
   },
   {
@@ -1880,7 +1880,7 @@
     {
      "id": "ffuf",
      "posicion": 1,
-     "puntuacion": 68.1,
+     "puntuacion": 68.8,
      "papel": "recomendado",
      "cuando": "Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go.",
      "cuando_origen": "curado",
@@ -1889,7 +1889,7 @@
     {
      "id": "dirsearch",
      "posicion": 2,
-     "puntuacion": 59.8,
+     "puntuacion": 60.9,
      "papel": "alternativa",
      "cuando": "Si prefieres una herramienta en Python con listas y reportes listos.",
      "cuando_origen": "curado",
@@ -1898,7 +1898,7 @@
     {
      "id": "gobuster",
      "posicion": 3,
-     "puntuacion": 57.4,
+     "puntuacion": 58.6,
      "papel": "alternativa",
      "cuando": "Si quieres un enumerador simple de directorios, DNS y vhosts.",
      "cuando_origen": "curado",
@@ -1907,7 +1907,7 @@
     {
      "id": "feroxbuster",
      "posicion": 4,
-     "puntuacion": 56.9,
+     "puntuacion": 57.7,
      "papel": "alternativa",
      "cuando": "Si quieres descubrimiento recursivo de contenido automático en Rust.",
      "cuando_origen": "curado",
@@ -1954,7 +1954,7 @@
     {
      "id": "dograh",
      "posicion": 3,
-     "puntuacion": 59.5,
+     "puntuacion": 62.5,
      "papel": "alternativa",
      "cuando": "Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz.",
      "cuando_origen": "curado",
@@ -1963,7 +1963,7 @@
     {
      "id": "ten-framework",
      "posicion": 4,
-     "puntuacion": 43.2,
+     "puntuacion": 46.2,
      "papel": "alternativa",
      "cuando": "Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real.",
      "cuando_origen": "curado",
@@ -2104,7 +2104,7 @@
     {
      "id": "siyuan",
      "posicion": 1,
-     "puntuacion": 75.8,
+     "puntuacion": 78.8,
      "papel": "recomendado",
      "cuando": "Si quieres bloques referenciables y una base de conocimiento local muy completa.",
      "cuando_origen": "curado",
@@ -2584,7 +2584,7 @@
     {
      "id": "d2",
      "posicion": 2,
-     "puntuacion": 58.4,
+     "puntuacion": 58.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo boceto y tres motores de layout incluidos.",
      "cuando_origen": "plantilla",
@@ -2593,7 +2593,7 @@
     {
      "id": "plantuml",
      "posicion": 3,
-     "puntuacion": 54.8,
+     "puntuacion": 54.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto.",
      "cuando_origen": "plantilla",
@@ -2800,7 +2800,7 @@
     {
      "id": "sliver",
      "posicion": 1,
-     "puntuacion": 70.4,
+     "puntuacion": 71.5,
      "papel": "recomendado",
      "cuando": "Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS.",
      "cuando_origen": "plantilla",
@@ -2809,7 +2809,7 @@
     {
      "id": "empire",
      "posicion": 2,
-     "puntuacion": 58.4,
+     "puntuacion": 60.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados.",
      "cuando_origen": "plantilla",
@@ -2818,7 +2818,7 @@
     {
      "id": "mythic",
      "posicion": 3,
-     "puntuacion": 49.9,
+     "puntuacion": 51.3,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli.",
      "cuando_origen": "plantilla",
@@ -2890,7 +2890,7 @@
     {
      "id": "ghidra",
      "posicion": 1,
-     "puntuacion": 70.6,
+     "puntuacion": 70.7,
      "papel": "recomendado",
      "cuando": "Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
      "cuando_origen": "plantilla",
@@ -2899,7 +2899,7 @@
     {
      "id": "radare2",
      "posicion": 2,
-     "puntuacion": 68.2,
+     "puntuacion": 69.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
      "cuando_origen": "plantilla",
@@ -2908,7 +2908,7 @@
     {
      "id": "rizin",
      "posicion": 3,
-     "puntuacion": 46.4,
+     "puntuacion": 47.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
      "cuando_origen": "plantilla",
@@ -2953,7 +2953,7 @@
     {
      "id": "local-deep-research",
      "posicion": 3,
-     "puntuacion": 57.8,
+     "puntuacion": 57.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
      "cuando_origen": "plantilla",
@@ -3124,7 +3124,7 @@
     {
      "id": "hunyuanvideo",
      "posicion": 2,
-     "puntuacion": 53.7,
+     "puntuacion": 56.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.",
      "cuando_origen": "plantilla",
@@ -3349,7 +3349,7 @@
     {
      "id": "reveal.js",
      "posicion": 2,
-     "puntuacion": 59.3,
+     "puntuacion": 59.4,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.",
      "cuando_origen": "plantilla",
@@ -3493,7 +3493,7 @@
     {
      "id": "redash",
      "posicion": 3,
-     "puntuacion": 54.1,
+     "puntuacion": 57.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards.",
      "cuando_origen": "plantilla",
@@ -3643,7 +3643,7 @@
     {
      "id": "actual",
      "posicion": 1,
-     "puntuacion": 69.8,
+     "puntuacion": 72.8,
      "papel": "recomendado",
      "cuando": "Si buscas esto: app de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.",
      "cuando_origen": "plantilla",
@@ -3652,7 +3652,7 @@
     {
      "id": "firefly-iii",
      "posicion": 2,
-     "puntuacion": 59.0,
+     "puntuacion": 62.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.",
      "cuando_origen": "plantilla",
@@ -3915,7 +3915,7 @@
     {
      "id": "atomic-red-team",
      "posicion": 1,
-     "puntuacion": 64.2,
+     "puntuacion": 65.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
      "cuando_origen": "plantilla",
@@ -3924,7 +3924,7 @@
     {
      "id": "caldera",
      "posicion": 2,
-     "puntuacion": 62.0,
+     "puntuacion": 63.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
      "cuando_origen": "plantilla",
@@ -3947,27 +3947,27 @@
    ],
    "ranking": [
     {
-     "id": "keycloak",
+     "id": "authentik",
      "posicion": 1,
      "puntuacion": 67.3,
      "papel": "recomendado",
-     "cuando": "Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.",
+     "cuando": "Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     },
     {
-     "id": "authentik",
+     "id": "keycloak",
      "posicion": 2,
-     "puntuacion": 64.3,
+     "puntuacion": 67.3,
      "papel": "alternativa",
-     "cuando": "Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.",
+     "cuando": "Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     }
    ],
-   "recomendado": "keycloak",
+   "recomendado": "authentik",
    "alternativas": [
-    "authentik"
+    "keycloak"
    ]
   },
   {
@@ -3983,7 +3983,7 @@
     {
      "id": "autopsy",
      "posicion": 1,
-     "puntuacion": 45.6,
+     "puntuacion": 46.5,
      "papel": "recomendado",
      "cuando": "Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
      "cuando_origen": "plantilla",
@@ -3992,7 +3992,7 @@
     {
      "id": "sleuthkit",
      "posicion": 2,
-     "puntuacion": 41.0,
+     "puntuacion": 41.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
      "cuando_origen": "plantilla",
@@ -4153,7 +4153,7 @@
     {
      "id": "zaproxy",
      "posicion": 1,
-     "puntuacion": 72.6,
+     "puntuacion": 73.6,
      "papel": "recomendado",
      "cuando": "Si buscas esto: escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.",
      "cuando_origen": "plantilla",
@@ -4162,7 +4162,7 @@
     {
      "id": "caido",
      "posicion": 2,
-     "puntuacion": 37.9,
+     "puntuacion": 39.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.",
      "cuando_origen": "plantilla",
@@ -4357,7 +4357,7 @@
     {
      "id": "cline",
      "posicion": 1,
-     "puntuacion": 65.9,
+     "puntuacion": 66.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.",
      "cuando_origen": "plantilla",
@@ -4425,7 +4425,7 @@
     {
      "id": "crowdsec",
      "posicion": 1,
-     "puntuacion": 74.8,
+     "puntuacion": 75.6,
      "papel": "recomendado",
      "cuando": "Si buscas esto: iDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.",
      "cuando_origen": "plantilla",
@@ -4434,7 +4434,7 @@
     {
      "id": "fail2ban",
      "posicion": 2,
-     "puntuacion": 61.4,
+     "puntuacion": 62.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts.",
      "cuando_origen": "plantilla",
@@ -4627,27 +4627,27 @@
    ],
    "ranking": [
     {
-     "id": "zammad",
+     "id": "freescout",
      "posicion": 1,
-     "puntuacion": 57.5,
+     "puntuacion": 59.0,
      "papel": "recomendado",
-     "cuando": "Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
+     "cuando": "Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     },
     {
-     "id": "freescout",
+     "id": "zammad",
      "posicion": 2,
-     "puntuacion": 56.0,
+     "puntuacion": 57.5,
      "papel": "alternativa",
-     "cuando": "Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido.",
+     "cuando": "Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     }
    ],
-   "recomendado": "zammad",
+   "recomendado": "freescout",
    "alternativas": [
-    "freescout"
+    "zammad"
    ]
   },
   {
@@ -4765,7 +4765,7 @@
     {
      "id": "trivy",
      "posicion": 1,
-     "puntuacion": 78.6,
+     "puntuacion": 79.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.",
      "cuando_origen": "plantilla",
@@ -4774,7 +4774,7 @@
     {
      "id": "grype",
      "posicion": 2,
-     "puntuacion": 69.5,
+     "puntuacion": 70.6,
      "papel": "alternativa",
      "cuando": "Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
      "cuando_origen": "plantilla",
@@ -4799,7 +4799,7 @@
     {
      "id": "hashcat",
      "posicion": 1,
-     "puntuacion": 61.9,
+     "puntuacion": 62.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.",
      "cuando_origen": "plantilla",
@@ -4808,7 +4808,7 @@
     {
      "id": "john",
      "posicion": 2,
-     "puntuacion": 53.2,
+     "puntuacion": 54.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
      "cuando_origen": "plantilla",
@@ -4901,7 +4901,7 @@
     {
      "id": "httpx",
      "posicion": 1,
-     "puntuacion": 76.1,
+     "puntuacion": 77.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
      "cuando_origen": "plantilla",
@@ -4910,7 +4910,7 @@
     {
      "id": "naabu",
      "posicion": 2,
-     "puntuacion": 61.8,
+     "puntuacion": 62.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
      "cuando_origen": "plantilla",
@@ -5105,7 +5105,7 @@
     {
      "id": "locust",
      "posicion": 1,
-     "puntuacion": 76.8,
+     "puntuacion": 77.5,
      "papel": "recomendado",
      "cuando": "Si buscas esto: herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
      "cuando_origen": "plantilla",
@@ -5114,7 +5114,7 @@
     {
      "id": "k6",
      "posicion": 2,
-     "puntuacion": 69.5,
+     "puntuacion": 70.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.",
      "cuando_origen": "plantilla",
@@ -5139,7 +5139,7 @@
     {
      "id": "vaultwarden",
      "posicion": 1,
-     "puntuacion": 64.4,
+     "puntuacion": 67.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia.",
      "cuando_origen": "plantilla",
@@ -5545,27 +5545,27 @@
    ],
    "ranking": [
     {
-     "id": "odm",
+     "id": "webodm",
      "posicion": 1,
-     "puntuacion": 57.8,
+     "puntuacion": 60.0,
      "papel": "recomendado",
-     "cuando": "Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
+     "cuando": "Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     },
     {
-     "id": "webodm",
+     "id": "odm",
      "posicion": 2,
-     "puntuacion": 57.0,
+     "puntuacion": 57.8,
      "papel": "alternativa",
-     "cuando": "Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
+     "cuando": "Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     }
    ],
-   "recomendado": "odm",
+   "recomendado": "webodm",
    "alternativas": [
-    "webodm"
+    "odm"
    ]
   },
   {
@@ -5590,7 +5590,7 @@
     {
      "id": "onlook",
      "posicion": 2,
-     "puntuacion": 53.1,
+     "puntuacion": 56.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.",
      "cuando_origen": "plantilla",
@@ -5624,7 +5624,7 @@
     {
      "id": "surfsense",
      "posicion": 2,
-     "puntuacion": 61.5,
+     "puntuacion": 64.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos.",
      "cuando_origen": "plantilla",
@@ -5649,7 +5649,7 @@
     {
      "id": "openbot",
      "posicion": 1,
-     "puntuacion": 67.1,
+     "puntuacion": 70.1,
      "papel": "recomendado",
      "cuando": "Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI.",
      "cuando_origen": "plantilla",
@@ -5751,7 +5751,7 @@
     {
      "id": "seclists",
      "posicion": 1,
-     "puntuacion": 65.8,
+     "puntuacion": 66.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de referencia para pruebas autorizadas.",
      "cuando_origen": "plantilla",
@@ -5760,7 +5760,7 @@
     {
      "id": "payloadsallthethings",
      "posicion": 2,
-     "puntuacion": 62.7,
+     "puntuacion": 62.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
      "cuando_origen": "plantilla",
@@ -5794,7 +5794,7 @@
     {
      "id": "pdfcraft",
      "posicion": 2,
-     "puntuacion": 51.0,
+     "puntuacion": 54.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.",
      "cuando_origen": "plantilla",
@@ -5853,7 +5853,7 @@
     {
      "id": "screenshot-to-code",
      "posicion": 1,
-     "puntuacion": 60.4,
+     "puntuacion": 63.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue.",
      "cuando_origen": "plantilla",
@@ -5930,7 +5930,7 @@
     {
      "id": "shannon",
      "posicion": 2,
-     "puntuacion": 62.5,
+     "puntuacion": 63.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.",
      "cuando_origen": "plantilla",
@@ -5974,6 +5974,187 @@
    "recomendado": "tanstack-query",
    "alternativas": [
     "swr"
+   ]
+  },
+  {
+   "id": "g-waf-compatibles-con-seclang",
+   "titulo": "WAF compatibles con SecLang y el OWASP CRS",
+   "cat": 16,
+   "sub": "deteccion",
+   "miembros": [
+    "modsecurity",
+    "coraza"
+   ],
+   "ranking": [
+    {
+     "id": "modsecurity",
+     "posicion": 1,
+     "puntuacion": 66.5,
+     "papel": "recomendado",
+     "cuando": "Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "coraza",
+     "posicion": 2,
+     "puntuacion": 61.6,
+     "papel": "alternativa",
+     "cuando": "Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "modsecurity",
+   "alternativas": [
+    "coraza"
+   ]
+  },
+  {
+   "id": "g-modelado-de-amenazas",
+   "titulo": "Modelado de amenazas",
+   "cat": 16,
+   "sub": "defensa",
+   "miembros": [
+    "threat-dragon",
+    "pytm"
+   ],
+   "ranking": [
+    {
+     "id": "threat-dragon",
+     "posicion": 1,
+     "puntuacion": 64.7,
+     "papel": "recomendado",
+     "cuando": "Si prefieres dibujar el diagrama en una aplicación de escritorio o web.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "pytm",
+     "posicion": 2,
+     "puntuacion": 59.8,
+     "papel": "alternativa",
+     "cuando": "Si quieres el modelo como código Python versionado junto al proyecto y generado en CI.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "threat-dragon",
+   "alternativas": [
+    "pytm"
+   ]
+  },
+  {
+   "id": "g-aplicaciones-web-vulnerables-para-practicar",
+   "titulo": "Aplicaciones web vulnerables para practicar",
+   "cat": 16,
+   "sub": "pruebas",
+   "miembros": [
+    "juice-shop",
+    "webgoat"
+   ],
+   "ranking": [
+    {
+     "id": "juice-shop",
+     "posicion": 1,
+     "puntuacion": 74.8,
+     "papel": "recomendado",
+     "cuando": "Si quieres retos tipo CTF sobre una tienda moderna en JavaScript.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "webgoat",
+     "posicion": 2,
+     "puntuacion": 62.5,
+     "papel": "alternativa",
+     "cuando": "Si prefieres lecciones guiadas paso a paso sobre una aplicación Java.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "juice-shop",
+   "alternativas": [
+    "webgoat"
+   ]
+  },
+  {
+   "id": "g-generadores-de-sbom",
+   "titulo": "Generadores de SBOM",
+   "cat": 16,
+   "sub": "defensa",
+   "miembros": [
+    "cdxgen",
+    "syft"
+   ],
+   "ranking": [
+    {
+     "id": "syft",
+     "posicion": 1,
+     "puntuacion": 76.9,
+     "papel": "recomendado",
+     "cuando": "Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "cdxgen",
+     "posicion": 2,
+     "puntuacion": 62.2,
+     "papel": "alternativa",
+     "cuando": "Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "syft",
+   "alternativas": [
+    "cdxgen"
+   ]
+  },
+  {
+   "id": "g-analisis-de-dependencias-vulnerables",
+   "titulo": "Análisis de dependencias vulnerables (SCA)",
+   "cat": 16,
+   "sub": "defensa",
+   "miembros": [
+    "dependency-check",
+    "dep-scan",
+    "osv-scanner"
+   ],
+   "ranking": [
+    {
+     "id": "osv-scanner",
+     "posicion": 1,
+     "puntuacion": 78.6,
+     "papel": "recomendado",
+     "cuando": "Si quieres consultar la base OSV desde lockfiles con una CLI ligera en Go.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "dependency-check",
+     "posicion": 2,
+     "puntuacion": 63.2,
+     "papel": "alternativa",
+     "cuando": "Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
+     "id": "dep-scan",
+     "posicion": 3,
+     "puntuacion": 58.6,
+     "papel": "alternativa",
+     "cuando": "Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    }
+   ],
+   "recomendado": "osv-scanner",
+   "alternativas": [
+    "dependency-check",
+    "dep-scan"
    ]
   }
  ]

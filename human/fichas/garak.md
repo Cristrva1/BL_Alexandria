@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -33,6 +33,12 @@ Se instala con pip (`python -m pip install -U garak`) en Python 3.10+. Los gener
 | [Ollama](ollama.md) | garak incluye un generador para Ollama, lo que permite auditar modelos locales. | Ollama en marcha con el modelo descargado; después ejecuta garak con el generador ollama. |
 | [litellm](litellm.md) | garak incluye un generador LiteLLM para probar cualquier modelo que exponga ese proxy. | Configura LiteLLM; después apunta garak a su generador litellm. |
 | [promptfoo](promptfoo.md) | promptfoo cubre evaluaciones y red teaming en CI mientras garak aporta un catálogo amplio de sondas de vulnerabilidad (combinación por arquitectura). | Define casos en promptfoo; después ejecuta garak sobre el mismo endpoint y compara. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[OWASP AI Testing Guide](owasp-ai-testing-guide.md) · [OWASP Top 10 for LLM Applications](owasp-llm-top10.md)
 
 **Notas:** Las tasas de fallo dependen de la versión de las sondas; fija la versión para comparar resultados.
 

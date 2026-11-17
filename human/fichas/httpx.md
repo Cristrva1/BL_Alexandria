@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -50,8 +50,8 @@ Grupo **Sondeo y escaneo de reconocimiento**: httpx ocupa la posición 1 de 2 (r
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **httpx** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. |
-| 2 | [Naabu](naabu.md) | 62 | Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. |
+| 1 | **httpx** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. |
+| 2 | [Naabu](naabu.md) | 63 | Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. |
 
 ## Acceso, coste y equipo
 

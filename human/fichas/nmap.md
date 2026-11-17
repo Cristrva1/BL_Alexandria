@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -36,9 +36,9 @@ Escrito en C/C++ con Lua para NSE; hay instaladores para Windows, macOS y Linux 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Amass](amass.md) · [Impacket](impacket.md) · [masscan](masscan.md) · [Naabu](naabu.md) · [NetExec](netexec.md) · [RustScan](rustscan.md) · [Sliver](sliver.md) · [THC Hydra](thc-hydra.md)
+[Amass](amass.md) · [Impacket](impacket.md) · [masscan](masscan.md) · [Naabu](naabu.md) · [NetExec](netexec.md) · [OWASP Nettacker](nettacker.md) · [RustScan](rustscan.md) · [Sliver](sliver.md) · [THC Hydra](thc-hydra.md)
 
 **Notas:** Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
 

@@ -228,6 +228,12 @@
      "id": "mitmproxy",
      "motivo": "Modificar `network_security_config` para que la app confíe en el certificado de mitmproxy. (combinación por arquitectura)",
      "orden_instalacion": "Edita la configuración con Apktool, reconstruye, firma e intercepta."
+    },
+    {
+     "id": "mastg",
+     "motivo": "Combinación recíproca: OWASP MASTG lo enlaza como «Apktool descompila APK para las pruebas estáticas de Android».",
+     "orden_instalacion": "Orden indicado desde OWASP MASTG: Descompila la APK propia con Apktool y revisa según el MASTG.",
+     "reciproca_de": "mastg"
     }
    ],
    "notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",
@@ -276,6 +282,12 @@
      "motivo": "Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Herramienta móvil de la lista. (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde awesome-ai-reverse-engineering: Úsalo con un servidor MCP de Android si lo necesitas.",
      "reciproca_de": "awesome-ai-reverse-engineering"
+    },
+    {
+     "id": "mastg",
+     "motivo": "Combinación recíproca: OWASP MASTG lo enlaza como «jadx decompila a Java para revisar la lógica de la app».",
+     "orden_instalacion": "Orden indicado desde OWASP MASTG: Abre la APK en jadx durante las pruebas estáticas.",
+     "reciproca_de": "mastg"
     }
    ],
    "notas": "Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.",

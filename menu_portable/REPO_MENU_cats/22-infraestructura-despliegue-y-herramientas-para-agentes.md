@@ -746,7 +746,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca Traefik con Docker y el proveedor de Docker activado, y lanza un contenedor whoami con etiquetas de ruta.
 **Qué comprobar:** El servicio responde en el dominio configurado sin reiniciar Traefik.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `coolify`, `dokploy`, `crowdsec`, `grafana`, `portainer`
+**Combina con:** `coolify`, `dokploy`, `crowdsec`, `grafana`, `portainer`, `coraza`
 **Alternativas (elige una):** `caddy`
 
 ## `uptime-kuma`

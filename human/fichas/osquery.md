@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** Apache-2.0 OR GPL-2.0-only. Fuente: [LICENSE](https://github.com/osquery/osquery/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 

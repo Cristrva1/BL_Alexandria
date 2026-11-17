@@ -12,7 +12,7 @@
 
 **Nivel:** 4 Experto — preparación difícil
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** BSD-3-Clause. Fuente: [LICENSE](https://github.com/zeek/zeek/blob/master/COPYING). GitHub la marca como NOASSERTION.
 

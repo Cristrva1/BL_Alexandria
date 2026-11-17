@@ -48,7 +48,7 @@ Grupo **Pentesting autónomo con agentes**: strix ocupa la posición 1 de 2 (rec
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **strix** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT. |
-| 2 | [shannon](shannon.md) | 62 | Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
+| 2 | [shannon](shannon.md) | 63 | Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
 
 ## Acceso, coste y equipo
 

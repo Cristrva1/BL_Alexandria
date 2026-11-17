@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — app de escritorio; hay que saber leer código .NET · corregido a mano
 
-**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,7 +47,7 @@ Grupo **Cracking de contraseñas**: John the Ripper (jumbo) ocupa la posición 2
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [hashcat](hashcat.md) ⭐ recomendado | 62 | Si buscas esto: utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. |
-| 2 | **John the Ripper (jumbo)** (esta ficha) | 53 | Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. |
+| 2 | **John the Ripper (jumbo)** (esta ficha) | 54 | Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. |
 
 ## Acceso, coste y equipo
 

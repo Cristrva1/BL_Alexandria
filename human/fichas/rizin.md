@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
-**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,8 +47,8 @@ Grupo **Ingeniería inversa y desensambladores**: rizin ocupa la posición 3 de 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [ghidra](ghidra.md) ⭐ recomendado | 71 | Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. |
-| 2 | [radare2](radare2.md) | 68 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
-| 3 | **rizin** (esta ficha) | 46 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
+| 2 | [radare2](radare2.md) | 69 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
+| 3 | **rizin** (esta ficha) | 48 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
 
 ## Acceso, coste y equipo
 

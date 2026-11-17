@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -32,6 +32,12 @@ Clona reglas y apunta el WAF.
 |---|---|---|
 | [Caddy](caddy.md) | Caddy/Coraza pueden usar CRS. | Proxy + CRS. |
 | [Nuclei](nuclei.md) | Nuclei prueba; CRS bloquea. | Purple team. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ModSecurity](modsecurity.md) · [OWASP Coraza](coraza.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.30.0 (2026-10-02) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 

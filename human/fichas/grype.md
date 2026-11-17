@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -51,7 +51,7 @@ Grupo **Escáneres de vulnerabilidades de contenedores**: Grype ocupa la posici�
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Trivy](trivy.md) ⭐ recomendado | 79 | Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. |
-| 2 | **Grype** (esta ficha) | 70 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
+| 2 | **Grype** (esta ficha) | 71 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
 
 ## Acceso, coste y equipo
 

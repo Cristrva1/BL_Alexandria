@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — Docker Compose con varios servicios (Elastic, Redis, RabbitMQ) · corregido a mano
 
-**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia y costes:** Open-core: la Community Edition es Apache-2.0 y gratuita. La Enterprise Edition (mismo repositorio, ficheros con cabecera EE) requiere licencia Filigran: registro de actividad, playbooks, segregación por organización, indexado de texto completo, AI Insights/NLP, PIR, SSO configurado desde la UI, campos personalizados, entre otros. Filigran ofrece licencias de prueba y gratuitas para I+D y ONG.
 
