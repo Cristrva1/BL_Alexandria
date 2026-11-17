@@ -10,9 +10,9 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-**Nivel:** 2 Intermedio — preparación media
+**Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
-**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** FSL-1.1-Apache-2.0. Functional Source License: prohíbe el uso competidor y cada versión pasa después a Apache-2.0. Fuente: [LICENSE](https://github.com/baptisteArno/typebot.io/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

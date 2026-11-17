@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación sencilla; dominio especializado
 
-**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

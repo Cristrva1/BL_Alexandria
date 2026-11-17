@@ -20,8 +20,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `gods-eye-view` | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 68 | MIT (solo código) (OSI permisiva) | recomendado |
 | `sherlock` | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios… | 1 Básico | 67 | MIT (OSI permisiva) | recomendado |
+| `theharvester` | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 2 Intermedio | 66 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `maigret` | Recopila un dossier sobre una persona a partir de un nombre de usuario… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `theharvester` | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 1 Básico | 62 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `osiris` | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
 | `pythia` | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 50 | MIT (OSI permisiva) | sin grupo |
 | `recon-ng` | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
@@ -62,6 +62,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `maigret`
 - **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Alternativas (elige una): maigret.
 
+### theHarvester (`theharvester`)
+
+- **Repo:** https://github.com/laramies/theHarvester · GPL-2.0 · nivel 2 · 66/100
+- **Qué es:** Herramienta OSINT de código abierto (solo GPL-2.0) creada por Christian Martorella (laramies) y mantenida por la comunidad desde hace años. Activa; requiere Python 3.14 y uv.
+- **Cuándo elegirlo:** Casos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build -d` — fuente: https://github.com/laramies/theHarvester/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio. Éxito: La terminal informa del resultado de cada fuente y lista subdominios encontrados.
+- **Combina con:** `sherlock`, `maigret`, `katana` [4/crawlers], `recon-ng`
+- **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Alternativa cercana: recon-ng (framework modular de reconocimiento).
+
 ### Maigret (`maigret`)
 
 - **Repo:** https://github.com/soxoj/maigret · MIT · nivel 1 · 63/100 · alternativa en «Búsqueda de usuarios en redes sociales»
@@ -73,17 +84,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `theharvester`, `claude-code` [20/terminal], `duckdb` [25/datos]
 - **Alternativas:** `sherlock`
 - **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): sherlock. El README incluye patrocinios de proxies y servicios de pago no necesarios para la herramienta.
-
-### theHarvester (`theharvester`)
-
-- **Repo:** https://github.com/laramies/theHarvester · GPL-2.0 · nivel 1 · 62/100
-- **Qué es:** Herramienta OSINT de código abierto (solo GPL-2.0) creada por Christian Martorella (laramies) y mantenida por la comunidad desde hace años. Activa; requiere Python 3.14 y uv.
-- **Cuándo elegirlo:** Casos: inventariar la superficie expuesta de tu propio dominio; fase inicial de reconocimiento en una auditoría de seguridad autorizada.
-- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build -d` — fuente: https://github.com/laramies/theHarvester/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona el repositorio, ejecuta `uv sync` y lanza la búsqueda de ejemplo con las fuentes pasivas crtsh y certspotter sobre un dominio propio. Éxito: La terminal informa del resultado de cada fuente y lista subdominios encontrados.
-- **Combina con:** `sherlock`, `maigret`, `katana` [4/crawlers], `recon-ng`
-- **Riesgos y avisos:** Uso dual con datos personales: respeta la privacidad y la base legal del tratamiento. Alternativa cercana: recon-ng (framework modular de reconocimiento).
 
 ### osiris (`osiris`)
 

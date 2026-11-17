@@ -18,11 +18,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `actual` | App de finanzas personales local-first basada en presupuesto por sobres, con… | 2 Intermedio | 73 | MIT (OSI permisiva) | recomendado |
 | `ai-job-search` | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
-| `actual` | App de finanzas personales local-first basada en presupuesto por sobres, con… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
 | `cleanyourtv` | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `ghostfolio` | Software abierto de gestión de patrimonio para seguir acciones, ETF y… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `firefly-iii` | Gestor autoalojado de finanzas personales con contabilidad de doble entrada… | 2 Intermedio | 59 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `firefly-iii` | Gestor autoalojado de finanzas personales con contabilidad de doble entrada… | 2 Intermedio | 62 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `optimizerduck` | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `universal-android-debloater-next-generation` | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 48 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `40-questions` | Colección de preguntas para revisar un año o una década y reflexionar sobre… | 1 Básico | 28 | — (sin licencia detectada) | sin grupo |
@@ -30,6 +30,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### Actual Budget (`actual`)
+
+- **Repo:** https://github.com/actualbudget/actual · MIT · nivel 2 · 73/100 · recomendado en «Finanzas personales»
+- **Qué es:** Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.
+- **Cuándo elegirlo:** Casos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --detach` — fuente: https://github.com/actualbudget/actual/blob/master/packages/docs/docs/install/docker.md
+- **Primera prueba propuesta (no ejecutada):** Despliega el servidor de Actual (Docker o PikaPods), crea un presupuesto e importa un archivo de movimientos. Éxito: Los movimientos aparecen categorizables y el presupuesto se sincroniza en otro navegador.
+- **Combina con:** `ghostfolio`, `coolify` [22/infraestructura], `claude-code` [20/terminal]
+- **Alternativas:** `firefly-iii`
+- **Riesgos y avisos:** Alternativas (elige una): firefly-iii.
 
 ### ai-job-search (`ai-job-search`)
 
@@ -41,18 +53,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Evalúa una vacante ficticia y prepara un borrador sin enviar ninguna candidatura Éxito: Puedes revisar criterios, datos del perfil y texto que necesitaría corrección
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `markitdown` [13/conversion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Mantén privado tu fork, que contiene datos personales; algunos portales bloquean el acceso automatizado. Claude Code tiene el flujo principal; Codex y Antigravity reciben skills de búsqueda de portales y el flujo completo necesita adaptación.
-
-### Actual Budget (`actual`)
-
-- **Repo:** https://github.com/actualbudget/actual · MIT · nivel 1 · 70/100 · recomendado en «Finanzas personales»
-- **Qué es:** Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.
-- **Cuándo elegirlo:** Casos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --detach` — fuente: https://github.com/actualbudget/actual/blob/master/packages/docs/docs/install/docker.md
-- **Primera prueba propuesta (no ejecutada):** Despliega el servidor de Actual (Docker o PikaPods), crea un presupuesto e importa un archivo de movimientos. Éxito: Los movimientos aparecen categorizables y el presupuesto se sincroniza en otro navegador.
-- **Combina con:** `ghostfolio`, `coolify` [22/infraestructura], `claude-code` [20/terminal]
-- **Alternativas:** `firefly-iii`
-- **Riesgos y avisos:** Alternativas (elige una): firefly-iii.
 
 ### cleanyourtv (`cleanyourtv`)
 
@@ -70,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/ghostfolio/ghostfolio · AGPL-3.0 · nivel 2 · 63/100
 - **Qué es:** Software de gestión de patrimonio de código abierto (AGPL-3.0) del proyecto Ghostfolio, con oferta comercial en la nube (Premium). Activo.
 - **Cuándo elegirlo:** Casos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker.
-- **Requisitos:** nivel 2: preparación media; TypeScript, Dockerfile, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; TypeScript, Dockerfile, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose -f docker/docker-compose.yml up -d` — fuente: https://github.com/ghostfolio/ghostfolio/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Despliega Ghostfolio con el Docker Compose del README, registra unas operaciones y revisa el panel. Éxito: El panel muestra la cartera con su valor, rendimiento y asignación.
 - **Combina con:** `actual`, `firefly-iii`, `coolify` [22/infraestructura]
@@ -78,10 +78,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Firefly III (`firefly-iii`)
 
-- **Repo:** https://github.com/firefly-iii/firefly-iii · AGPL-3.0 · nivel 2 · 59/100 · alternativa en «Finanzas personales»
+- **Repo:** https://github.com/firefly-iii/firefly-iii · AGPL-3.0 · nivel 2 · 62/100 · alternativa en «Finanzas personales»
 - **Qué es:** Gestor de finanzas personales de código abierto (AGPL-3.0) creado por James Cole. Muy maduro; se declara sin IA, sin nube y respetuoso con la privacidad.
 - **Cuándo elegirlo:** Casos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor.
-- **Requisitos:** nivel 2: preparación media; PHP, composer.json, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; PHP, composer.json, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose -f docker-compose.yml up -d --pull=always` — fuente: https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/
 - **Primera prueba propuesta (no ejecutada):** Despliega Firefly III con Docker Compose, crea una cuenta y registra unas transacciones. Éxito: Los informes muestran gastos por categoría y el saldo de la cuenta.
 - **Combina con:** `ghostfolio`, `activepieces` [1/motores], `coolify` [22/infraestructura]

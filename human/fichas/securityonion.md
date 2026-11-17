@@ -12,7 +12,7 @@
 
 **Nivel:** 4 Experto — preparación difícil
 
-**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** Elastic-2.0. Source-available (ELv2). Fuente: [LICENSE](https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/LICENSE). GitHub la marca como NOASSERTION.
 

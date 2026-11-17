@@ -18,14 +18,14 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `netexec` | Suite de post-explotación y enumeración de redes Windows/AD (sucesora de… | 3 Avanzado | 75 | BSD-2-Clause (OSI permisiva) | sin grupo |
-| `bloodhound` | Aplicación de análisis de rutas de ataque basada en grafos para Active… | 3 Avanzado | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `impacket` | Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base… | 3 Avanzado | 67 | Apache-1.1 modificada (OSI permisiva) | sin grupo |
-| `goad` | Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD… | 1 Básico | 55 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `certipy` | Enumeración y abuso de Active Directory Certificate Services (AD CS) en… | 3 Avanzado | 52 | MIT (OSI permisiva) | sin grupo |
-| `responder` | Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio. | 3 Avanzado | 50 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `mimikatz` | Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en… | 3 Avanzado | 48 | — (sin licencia detectada) | sin grupo |
-| `rubeus` | Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD… | 3 Avanzado | 47 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `netexec` | Suite de post-explotación y enumeración de redes Windows/AD (sucesora de… | 3 Avanzado | 76 | BSD-2-Clause (OSI permisiva) | sin grupo |
+| `bloodhound` | Aplicación de análisis de rutas de ataque basada en grafos para Active… | 3 Avanzado | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `impacket` | Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base… | 3 Avanzado | 68 | Apache-1.1 modificada (OSI permisiva) | sin grupo |
+| `goad` | Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD… | 1 Básico | 56 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `certipy` | Enumeración y abuso de Active Directory Certificate Services (AD CS) en… | 3 Avanzado | 54 | MIT (OSI permisiva) | sin grupo |
+| `responder` | Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio. | 3 Avanzado | 52 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `mimikatz` | Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en… | 3 Avanzado | 49 | — (sin licencia detectada) | sin grupo |
+| `rubeus` | Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD… | 3 Avanzado | 48 | BSD-3-Clause (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -33,7 +33,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### NetExec (`netexec`)
 
-- **Repo:** https://github.com/Pennyw0rth/NetExec · BSD-2-Clause · nivel 3 · 75/100
+- **Repo:** https://github.com/Pennyw0rth/NetExec · BSD-2-Clause · nivel 3 · 76/100
 - **Qué es:** Herramienta comunitaria sucesora de CrackMapExec para enumerar y post-explotar redes Windows/AD.
 - **Cuándo elegirlo:** Casos: validar un set de credenciales contra un segmento Windows de lab; enumerar shares y sesiones tras un compromiso autorizado.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, Dockerfile, Makefile, pyproject.toml; API de IA: no.
@@ -44,7 +44,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### BloodHound Community Edition (`bloodhound`)
 
-- **Repo:** https://github.com/SpecterOps/BloodHound · Apache-2.0 · nivel 3 · 70/100
+- **Repo:** https://github.com/SpecterOps/BloodHound · Apache-2.0 · nivel 3 · 71/100
 - **Qué es:** Herramienta de código abierto (Apache-2.0) de SpecterOps, que vende BloodHound Enterprise. Muy usada por equipos rojos y azules; la edición comunitaria es la versión actual del proyecto original.
 - **Cuándo elegirlo:** Casos: identificar rutas de escalada hacia administrador de dominio en tu propio AD; priorizar qué permisos excesivos corregir primero.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Go, go.mod, package.json, pyproject.toml; API de IA: no.
@@ -55,7 +55,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Impacket (`impacket`)
 
-- **Repo:** https://github.com/fortra/impacket · Apache-1.1 modificada · nivel 3 · 67/100
+- **Repo:** https://github.com/fortra/impacket · Apache-1.1 modificada · nivel 3 · 68/100
 - **Qué es:** Colección de clases Python para protocolos de red Windows, mantenida por Fortra (Core Security).
 - **Cuándo elegirlo:** Casos: extraer hashes con secretsdump en un DC de laboratorio; simular autenticación SMB/Kerberos en un lab aislado.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; Python, Dockerfile, requirements.txt, setup.py; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -66,9 +66,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GOAD (`goad`)
 
-- **Repo:** https://github.com/Orange-Cyberdefense/GOAD · GPL-3.0 · nivel 1 · 55/100
+- **Repo:** https://github.com/Orange-Cyberdefense/GOAD · GPL-3.0 · nivel 1 · 56/100
 - **Qué es:** Lab AD vulnerable documentado (GPL-3).
-- **Cuándo elegirlo:** Casos: montar un lab AD completo; practicar BloodHound/Certipy/NetExec con seguridad. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: montar un lab AD completo; practicar BloodHound/Certipy/NetExec con seguridad.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; PowerShell, Dockerfile, pyproject.toml; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Orange-Cyberdefense/GOAD/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Sigue https://orange-cyberdefense.github.io/GOAD/ en hardware con suficiente RAM. Éxito: VMs AD listas para atacar en aislamiento.
@@ -77,7 +77,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Certipy (`certipy`)
 
-- **Repo:** https://github.com/ly4k/Certipy · MIT · nivel 3 · 52/100
+- **Repo:** https://github.com/ly4k/Certipy · MIT · nivel 3 · 54/100
 - **Qué es:** Toolkit AD CS de ly4k (MIT).
 - **Cuándo elegirlo:** Casos: enumerar plantillas ESC1-ESC8 en un lab GOAD; pedir un certificado en un dominio de prueba.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, pyproject.toml; API de IA: no.
@@ -88,7 +88,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Responder (`responder`)
 
-- **Repo:** https://github.com/lgandx/Responder · GPL-3.0 · nivel 3 · 50/100
+- **Repo:** https://github.com/lgandx/Responder · GPL-3.0 · nivel 3 · 52/100
 - **Qué es:** Poisoner de resolución de nombres (GPL-3).
 - **Cuándo elegirlo:** Casos: capturar hashes NetNTLM en un lab GOAD; validar mitigaciones de name resolution.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, pyproject.toml, requirements.txt; API de IA: no.
@@ -99,7 +99,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### mimikatz (`mimikatz`)
 
-- **Repo:** https://github.com/gentilkiwi/mimikatz · — · nivel 3 · 48/100
+- **Repo:** https://github.com/gentilkiwi/mimikatz · — · nivel 3 · 49/100
 - **Qué es:** Herramienta de gentilkiwi (CC BY 4.0 según README; sin SPDX en API).
 - **Cuándo elegirlo:** Casos: demostrar dump de LSASS en un lab; enseñar lateral movement con tickets.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; C; API de IA: no.
@@ -110,7 +110,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Rubeus (`rubeus`)
 
-- **Repo:** https://github.com/GhostPack/Rubeus · BSD-3-Clause · nivel 3 · 47/100
+- **Repo:** https://github.com/GhostPack/Rubeus · BSD-3-Clause · nivel 3 · 48/100
 - **Qué es:** Herramienta GhostPack (BSD-3) para Kerberos offense.
 - **Cuándo elegirlo:** Casos: kerberoasting en un dominio GOAD; pasar-the-ticket en lab.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; C#; API de IA: no.

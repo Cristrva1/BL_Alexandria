@@ -10,9 +10,9 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-**Nivel:** 1 Básico — preparación sencilla
+**Nivel:** 2 Intermedio — preparación sencilla; varios servicios con Docker Compose
 
-**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,7 +47,7 @@ Grupo **Editores visuales de diseño con IA**: Onlook ocupa la posición 2 de 2 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [open-design](open-design.md) ⭐ recomendado | 78 | Si buscas esto: espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. |
-| 2 | **Onlook** (esta ficha) | 53 | Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
+| 2 | **Onlook** (esta ficha) | 56 | Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
 
 ## Acceso, coste y equipo
 

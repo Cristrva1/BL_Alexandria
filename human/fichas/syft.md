@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -35,13 +35,22 @@ Script oficial / releases.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Cosign](cosign.md)
+[Cosign](cosign.md) · [Dependency-Track](dependency-track.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.57.1 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anchore/syft#readme)</sub>
+
+## Ver similares
+
+Grupo **Generadores de SBOM**: Syft ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+
+| # | Repo | Puntuación | Cuándo elegirlo |
+|---:|---|---:|---|
+| 1 | **Syft** (esta ficha) ⭐ recomendado | 77 | Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX. |
+| 2 | [cdxgen](cdxgen.md) | 62 | Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad. |
 
 ## Acceso, coste y equipo
 
@@ -112,6 +121,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Go, Dockerfile, Makefile, go.mod
 - **Etiquetas:** `security`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [cdxgen](cdxgen.md) | 1.1k | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes. |
 
 ## Enlaces
 

@@ -18,8 +18,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `memos` | notas | App de notas rápidas autoalojada con línea temporal personal, Markdown… | 1 Básico | 79 | MIT (OSI permisiva) | sin grupo |
-| `siyuan` | notas | Espacio de conocimiento por bloques, local-first y autoalojable, con… | 1 Básico | 76 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `memos` | notas | App de notas rápidas autoalojada con línea temporal personal, Markdown… | 1 Básico | 82 | MIT (OSI permisiva) | sin grupo |
+| `siyuan` | notas | Espacio de conocimiento por bloques, local-first y autoalojable, con… | 1 Básico | 79 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `karakeep` | notas | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones… | 2 Intermedio | 68 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `appflowy` | notas | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `trilium` | notas | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | alternativa |
@@ -42,10 +42,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `photoprism` | archivos | App de fotos con IA y privacidad primero para explorar, organizar y compartir… | 2 Intermedio | 66 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `nextcloud-server` | archivos | Servidor de Nextcloud para almacenar y compartir archivos, contactos y… | 3 Avanzado | 59 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `pi-hole` | privacidad | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar… | 1 Básico | 68 | EUPL-1.2 (OSI copyleft) | recomendado |
-| `keycloak` | privacidad | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | recomendado |
-| `authentik` | privacidad | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 64 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | alternativa |
+| `authentik` | privacidad | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 67 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | recomendado |
+| `keycloak` | privacidad | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | alternativa |
+| `vaultwarden` | privacidad | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 67 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `vault` | privacidad | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. | 3 Avanzado | 64 | BUSL-1.1 (source-available) | sin grupo |
-| `vaultwarden` | privacidad | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 64 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `age` | privacidad | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña… | 1 Básico | 61 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `bitwarden-clients` | privacidad | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar… | 1 Básico | 61 | GPL-3.0 + Bitwarden License (bitwarden_license/) (OSI copyleft) | sin grupo |
 | `adguardhome` | privacidad | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | alternativa |
@@ -59,11 +59,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `frigate` | domotica | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo… | 3 Avanzado | 69 | MIT (OSI permisiva) | sin grupo |
 | `esphome` | domotica | Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros… | 2 Intermedio | 60 | MIT + GPL-3.0 (OSI copyleft) | sin grupo |
 | `zigbee2mqtt` | domotica | Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin… | 2 Intermedio | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `actual` | personal | App de finanzas personales local-first basada en presupuesto por sobres, con… | 2 Intermedio | 73 | MIT (OSI permisiva) | recomendado |
 | `ai-job-search` | personal | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
-| `actual` | personal | App de finanzas personales local-first basada en presupuesto por sobres, con… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
 | `cleanyourtv` | personal | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `ghostfolio` | personal | Software abierto de gestión de patrimonio para seguir acciones, ETF y… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `firefly-iii` | personal | Gestor autoalojado de finanzas personales con contabilidad de doble entrada… | 2 Intermedio | 59 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `firefly-iii` | personal | Gestor autoalojado de finanzas personales con contabilidad de doble entrada… | 2 Intermedio | 62 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `optimizerduck` | personal | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `universal-android-debloater-next-generation` | personal | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 48 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `40-questions` | personal | Colección de preguntas para revisar un año o una década y reflexionar sobre… | 1 Básico | 28 | — (sin licencia detectada) | sin grupo |
@@ -75,7 +75,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Memos (`memos`)
 
-- **Repo:** https://github.com/usememos/memos · MIT · nivel 1 · 79/100
+- **Repo:** https://github.com/usememos/memos · MIT · nivel 1 · 82/100
 - **Qué es:** Aplicación de notas de código abierto (MIT) del proyecto usememos. Muy popular y activa; versiones con formato YY.MM.N.
 - **Cuándo elegirlo:** Casos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP.
 - **Requisitos:** nivel 1: preparación sencilla; Go, go.mod; API de IA: no.
@@ -86,7 +86,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SiYuan (`siyuan`)
 
-- **Repo:** https://github.com/siyuan-note/siyuan · AGPL-3.0 · nivel 1 · 76/100 · recomendado en «Notas y bases de conocimiento personales»
+- **Repo:** https://github.com/siyuan-note/siyuan · AGPL-3.0 · nivel 1 · 79/100 · recomendado en «Notas y bases de conocimiento personales»
 - **Qué es:** Gestor de conocimiento de código abierto (AGPL-3.0) de B3log. Muy activo; algunas funciones de sincronización en la nube requieren suscripción.
 - **Cuándo elegirlo:** Casos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile; API de IA: opcional.
@@ -367,20 +367,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `adguardhome`
 - **Riesgos y avisos:** Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.
 
-### Keycloak (`keycloak`)
-
-- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 67/100 · recomendado en «Proveedores de identidad y SSO»
-- **Qué es:** IdP Apache-2.0 de Keycloak.
-- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
-- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
-- **Combina con:** `vault`, `caddy` [22/infraestructura]
-- **Alternativas:** `authentik`
-
 ### authentik (`authentik`)
 
-- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 64/100 · alternativa en «Proveedores de identidad y SSO»
+- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 67/100 · recomendado en «Proveedores de identidad y SSO»
 - **Qué es:** Identity provider (MIT + enterprise/ propietaria).
 - **Cuándo elegirlo:** Casos: SSO delante de apps autoalojadas; MFA centralizado para el lab.
 - **Requisitos:** nivel 3: proveedor de identidad con Docker Compose y flujos a configurar; Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml; API de IA: no.
@@ -389,6 +378,29 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `vaultwarden`, `caddy` [22/infraestructura]
 - **Alternativas:** `keycloak`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### Keycloak (`keycloak`)
+
+- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 67/100 · alternativa en «Proveedores de identidad y SSO»
+- **Qué es:** IdP Apache-2.0 de Keycloak.
+- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
+- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
+- **Combina con:** `vault`, `caddy` [22/infraestructura]
+- **Alternativas:** `authentik`
+
+### vaultwarden (`vaultwarden`)
+
+- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 67/100 · recomendado en «Gestores de contraseñas»
+- **Qué es:** Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5).
+- **Cuándo elegirlo:** Casos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
+- **Requisitos:** nivel 2: un contenedor; requiere HTTPS y copias de seguridad; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia; hardware prerequisites; API de IA: no; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull vaultwarden/server:latest` — fuente: https://github.com/dani-garcia/vaultwarden/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Conecta un cliente Bitwarden a una instancia de prueba y guarda un registro ficticio Éxito: Puedes reconocer la URL de servidor y recuperar el registro
+- **Combina con:** `bitwarden-clients`, `coolify` [22/infraestructura], `adguardhome`
+- **Alternativas:** `keepassxc`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token. Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden.
 
 ### HashiCorp Vault (`vault`)
 
@@ -400,18 +412,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Arranca Vault en modo dev (`vault server -dev`) según docs y escribe un secreto KV. Éxito: Lees el secreto con la CLI.
 - **Combina con:** `sops`, `age`, `vaultwarden`
 - **Riesgos y avisos:** BSL (source-available): no es OSI; revisa usos comerciales y la fecha de cambio de licencia. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
-### vaultwarden (`vaultwarden`)
-
-- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 64/100 · recomendado en «Gestores de contraseñas»
-- **Qué es:** Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5).
-- **Cuándo elegirlo:** Casos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
-- **Requisitos:** nivel 2: un contenedor; requiere HTTPS y copias de seguridad; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia; hardware prerequisites; API de IA: no; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull vaultwarden/server:latest` — fuente: https://github.com/dani-garcia/vaultwarden/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Conecta un cliente Bitwarden a una instancia de prueba y guarda un registro ficticio Éxito: Puedes reconocer la URL de servidor y recuperar el registro
-- **Combina con:** `bitwarden-clients`, `coolify` [22/infraestructura], `adguardhome`
-- **Alternativas:** `keepassxc`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token. Es un servidor alternativo no oficial; la bóveda web necesita HTTPS y contexto seguro; revisa las diferencias respecto al servidor Bitwarden.
 
 ### age (`age`)
 
@@ -558,6 +558,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `home-assistant`, `node-red` [1/motores], `frigate`, `esphome`
 - **Riesgos y avisos:** Comprueba la compatibilidad del adaptador y de cada dispositivo en la lista oficial antes de comprar.
 
+### Actual Budget (`actual`)
+
+- **Repo:** https://github.com/actualbudget/actual · MIT · nivel 2 · 73/100 · recomendado en «Finanzas personales»
+- **Qué es:** Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.
+- **Cuándo elegirlo:** Casos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --detach` — fuente: https://github.com/actualbudget/actual/blob/master/packages/docs/docs/install/docker.md
+- **Primera prueba propuesta (no ejecutada):** Despliega el servidor de Actual (Docker o PikaPods), crea un presupuesto e importa un archivo de movimientos. Éxito: Los movimientos aparecen categorizables y el presupuesto se sincroniza en otro navegador.
+- **Combina con:** `ghostfolio`, `coolify` [22/infraestructura], `claude-code` [20/terminal]
+- **Alternativas:** `firefly-iii`
+- **Riesgos y avisos:** Alternativas (elige una): firefly-iii.
+
 ### ai-job-search (`ai-job-search`)
 
 - **Repo:** https://github.com/ai-job-search-dev/ai-job-search · MIT · nivel 2 · 72/100
@@ -568,18 +580,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Evalúa una vacante ficticia y prepara un borrador sin enviar ninguna candidatura Éxito: Puedes revisar criterios, datos del perfil y texto que necesitaría corrección
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `markitdown` [13/conversion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Mantén privado tu fork, que contiene datos personales; algunos portales bloquean el acceso automatizado. Claude Code tiene el flujo principal; Codex y Antigravity reciben skills de búsqueda de portales y el flujo completo necesita adaptación.
-
-### Actual Budget (`actual`)
-
-- **Repo:** https://github.com/actualbudget/actual · MIT · nivel 1 · 70/100 · recomendado en «Finanzas personales»
-- **Qué es:** Herramienta de finanzas personales de código abierto (MIT), liberada por su creador y mantenida por la comunidad Actual Budget. Madura y activa.
-- **Cuándo elegirlo:** Casos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --detach` — fuente: https://github.com/actualbudget/actual/blob/master/packages/docs/docs/install/docker.md
-- **Primera prueba propuesta (no ejecutada):** Despliega el servidor de Actual (Docker o PikaPods), crea un presupuesto e importa un archivo de movimientos. Éxito: Los movimientos aparecen categorizables y el presupuesto se sincroniza en otro navegador.
-- **Combina con:** `ghostfolio`, `coolify` [22/infraestructura], `claude-code` [20/terminal]
-- **Alternativas:** `firefly-iii`
-- **Riesgos y avisos:** Alternativas (elige una): firefly-iii.
 
 ### cleanyourtv (`cleanyourtv`)
 
@@ -597,7 +597,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/ghostfolio/ghostfolio · AGPL-3.0 · nivel 2 · 63/100
 - **Qué es:** Software de gestión de patrimonio de código abierto (AGPL-3.0) del proyecto Ghostfolio, con oferta comercial en la nube (Premium). Activo.
 - **Cuándo elegirlo:** Casos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker.
-- **Requisitos:** nivel 2: preparación media; TypeScript, Dockerfile, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; TypeScript, Dockerfile, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose -f docker/docker-compose.yml up -d` — fuente: https://github.com/ghostfolio/ghostfolio/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Despliega Ghostfolio con el Docker Compose del README, registra unas operaciones y revisa el panel. Éxito: El panel muestra la cartera con su valor, rendimiento y asignación.
 - **Combina con:** `actual`, `firefly-iii`, `coolify` [22/infraestructura]
@@ -605,10 +605,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Firefly III (`firefly-iii`)
 
-- **Repo:** https://github.com/firefly-iii/firefly-iii · AGPL-3.0 · nivel 2 · 59/100 · alternativa en «Finanzas personales»
+- **Repo:** https://github.com/firefly-iii/firefly-iii · AGPL-3.0 · nivel 2 · 62/100 · alternativa en «Finanzas personales»
 - **Qué es:** Gestor de finanzas personales de código abierto (AGPL-3.0) creado por James Cole. Muy maduro; se declara sin IA, sin nube y respetuoso con la privacidad.
 - **Cuándo elegirlo:** Casos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor.
-- **Requisitos:** nivel 2: preparación media; PHP, composer.json, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; PHP, composer.json, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose -f docker-compose.yml up -d --pull=always` — fuente: https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/
 - **Primera prueba propuesta (no ejecutada):** Despliega Firefly III con Docker Compose, crea una cuenta y registra unas transacciones. Éxito: Los informes muestran gastos por categoría y el saldo de la cuenta.
 - **Combina con:** `ghostfolio`, `activepieces` [1/motores], `coolify` [22/infraestructura]

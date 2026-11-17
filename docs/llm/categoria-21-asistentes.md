@@ -20,9 +20,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `openclaw` | Asistente personal de IA que corre en tus dispositivos y te atiende por… | 2 Intermedio | 82 | MIT (OSI permisiva) | recomendado |
 | `hermes-agent` | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores… | 2 Intermedio | 74 | MIT (OSI permisiva) | alternativa |
+| `openbot` | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
 | `deeptutor` | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ruflo` | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes… | 3 Avanzado | 69 | MIT (OSI permisiva) | sin grupo |
-| `openbot` | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio… | 2 Intermedio | 67 | MIT (OSI permisiva) | recomendado |
 | `paperclip` | Servidor y panel para organizar equipos de agentes con objetivos, tareas… | 3 Avanzado | 67 | MIT (OSI permisiva) | recomendado |
 | `multica` | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI… | 2 Intermedio | 56 | Apache-2.0 con condiciones adicionales (open-core) | alternativa |
 | `agentes-chat` | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que… | 2 Intermedio | 50 | AGPL-3.0 (OSI copyleft) | sin grupo |
@@ -59,6 +59,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `openclaw`, `mercury-agent`
 - **Riesgos y avisos:** Alternativas (elige una): openclaw, mercury-agent. Importar ajustes e historial de Claude Code no equivale a usar su plan como motor; las herramientas de búsqueda, voz e imagen tienen proveedores separados.
 
+### OpenBot (`openbot`)
+
+- **Repo:** https://github.com/CopilotKit/OpenBot · MIT · nivel 2 · 70/100 · recomendado en «Espacios de asistentes de CopilotKit»
+- **Qué es:** Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba…
+- **Cuándo elegirlo:** Casos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
+- **Requisitos:** nivel 2: preparación pesada, app o instalador listo para usar; TypeScript, docker-compose.yml, package.json; hardware prerequisites; API de IA: depends; Un sistema compatible y una copia de datos o archivos para la primera prueba..
+- **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest` — fuente: https://github.com/CopilotKit/OpenBot/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación Éxito: La acción queda pendiente de tu aprobación y aparece en la auditoría
+- **Combina con:** `copilotkit` [9/ia-ui], `langgraph` [3/py], `mastra` [3/ts], `crewai` [3/py], `firecrawl` [4/crawlers], `composio` [22/infra]
+- **Alternativas:** `opendots`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad.
+
 ### DeepTutor (`deeptutor`)
 
 - **Repo:** https://github.com/HKUDS/DeepTutor · Apache-2.0 · nivel 2 · 69/100
@@ -88,18 +100,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Inicializa una carpeta de prueba y examina los agentes, hooks y configuración añadidos antes de encargar trabajo Éxito: Puedes identificar los archivos creados y herramientas MCP disponibles
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
 - **Riesgos y avisos:** Sin alternativas declaradas. Se quita mem0 de las combinaciones porque ruflo trae su propia memoria. Cuidado con las afirmaciones de marketing. Claude Code tiene integración de proyecto; otros clientes usan el servidor MCP estándar y no heredan necesariamente sus hooks ni todas las funciones.
-
-### OpenBot (`openbot`)
-
-- **Repo:** https://github.com/CopilotKit/OpenBot · MIT · nivel 2 · 67/100 · recomendado en «Espacios de asistentes de CopilotKit»
-- **Qué es:** Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba…
-- **Cuándo elegirlo:** Casos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
-- **Requisitos:** nivel 2: preparación pesada, app o instalador listo para usar; TypeScript, docker-compose.yml, package.json; hardware prerequisites; API de IA: depends; Un sistema compatible y una copia de datos o archivos para la primera prueba..
-- **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest` — fuente: https://github.com/CopilotKit/OpenBot/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación Éxito: La acción queda pendiente de tu aprobación y aparece en la auditoría
-- **Combina con:** `copilotkit` [9/ia-ui], `langgraph` [3/py], `mastra` [3/ts], `crewai` [3/py], `firecrawl` [4/crawlers], `composio` [22/infra]
-- **Alternativas:** `opendots`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad.
 
 ### paperclip (`paperclip`)
 

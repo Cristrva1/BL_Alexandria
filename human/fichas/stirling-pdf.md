@@ -50,7 +50,7 @@ Grupo **Suites de herramientas PDF**: Stirling-PDF ocupa la posición 1 de 2 (re
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Stirling-PDF** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
-| 2 | [pdfcraft](pdfcraft.md) | 51 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
+| 2 | [pdfcraft](pdfcraft.md) | 54 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
 
 ## Acceso, coste y equipo
 

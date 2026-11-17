@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
-**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** wxWindows Library Licence 3.1. LGPL con excepción para binarios. Fuente: [LICENSE](https://github.com/frida/frida/blob/main/COPYING). GitHub la marca como NOASSERTION.
 
@@ -38,9 +38,9 @@ Se instala con `pip install frida-tools` (CLI), `pip install frida` (Python) o `
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[angr](angr.md) · [Apktool](apktool.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [bla](bla.md)
+[angr](angr.md) · [Apktool](apktool.md) · [awesome-reverse-engineering](awesome-reverse-engineering.md) · [bla](bla.md) · [OWASP MASTG](mastg.md)
 
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 

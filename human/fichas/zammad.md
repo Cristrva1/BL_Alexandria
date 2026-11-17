@@ -42,12 +42,12 @@ Estado en GitHub: activo · último push 2026-11-16 · licencia declarada AGPL-3
 
 ## Ver similares
 
-Grupo **Help desk y tickets**: Zammad ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Help desk y tickets**: Zammad ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Zammad** (esta ficha) ⭐ recomendado | 58 | Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
-| 2 | [FreeScout](freescout.md) | 56 | Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. |
+| 1 | [FreeScout](freescout.md) ⭐ recomendado | 59 | Si buscas esto: helpdesk y bandeja de entrada compartida muy ligera, alternativa abierta a Help Scout y Zendesk, en PHP y desplegable incluso en hosting compartido. |
+| 2 | **Zammad** (esta ficha) | 58 | Si buscas esto: sistema de helpdesk y tickets autoalojado y omnicanal: correo, chat, teléfono y redes sociales en una sola interfaz web. |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación pesada; app o instalador listo para usar
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,7 +49,7 @@ Grupo **Espacios de asistentes de CopilotKit**: OpenBot ocupa la posición 1 de 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **OpenBot** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
+| 1 | **OpenBot** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. |
 | 2 | [OpenDots](opendots.md) | 48 | Si buscas esto: interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia. |
 
 ## Acceso, coste y equipo

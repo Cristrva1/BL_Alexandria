@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,7 +47,7 @@ Grupo **Pentesting autónomo con agentes**: shannon ocupa la posición 2 de 2 (a
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [strix](strix.md) ⭐ recomendado | 72 | Si buscas esto: agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT. |
-| 2 | **shannon** (esta ficha) | 62 | Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
+| 2 | **shannon** (esta ficha) | 63 | Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. |
 
 ## Acceso, coste y equipo
 

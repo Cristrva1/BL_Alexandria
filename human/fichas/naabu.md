@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -50,8 +50,8 @@ Grupo **Sondeo y escaneo de reconocimiento**: Naabu ocupa la posición 2 de 2 (a
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [httpx](httpx.md) ⭐ recomendado | 76 | Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. |
-| 2 | **Naabu** (esta ficha) | 62 | Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. |
+| 1 | [httpx](httpx.md) ⭐ recomendado | 77 | Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos. |
+| 2 | **Naabu** (esta ficha) | 63 | Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. |
 
 ## Acceso, coste y equipo
 

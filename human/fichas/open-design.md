@@ -48,7 +48,7 @@ Grupo **Editores visuales de diseño con IA**: open-design ocupa la posición 1 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **open-design** (esta ficha) ⭐ recomendado | 78 | Si buscas esto: espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. |
-| 2 | [Onlook](onlook.md) | 53 | Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
+| 2 | [Onlook](onlook.md) | 56 | Si buscas esto: editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
 
 ## Acceso, coste y equipo
 

@@ -756,6 +756,12 @@
      "motivo": "Combinación recíproca: Portainer CE lo enlaza como «Los stacks gestionados con Portainer pueden publicarse con etiquetas de Traefik (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde Portainer CE: Despliega Traefik; después añade las etiquetas en los stacks desde Portainer.",
      "reciproca_de": "portainer"
+    },
+    {
+     "id": "coraza",
+     "motivo": "Combinación recíproca: OWASP Coraza lo enlaza como «Coraza figura entre las integraciones para Traefik en su README».",
+     "orden_instalacion": "Orden indicado desde OWASP Coraza: Traefik desplegado; añade la integración de Coraza según su documentación.",
+     "reciproca_de": "coraza"
     }
    ],
    "notas": "Alternativas (elige una): caddy.",

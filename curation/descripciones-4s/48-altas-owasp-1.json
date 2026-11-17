@@ -1,0 +1,908 @@
+{
+ "batch": "altas-owasp-1",
+ "checked_at": "2026-11-16",
+ "method": "gh api (organización OWASP y proyectos OWASP en otras organizaciones), README, LICENSE y documentación oficial (2026-11-16). No se instaló ningún proyecto.",
+ "repos": {
+  "dependency-track": {
+   "que_es": "Proyecto insignia de OWASP para análisis continuo de componentes (Component Analysis) a partir de listas de materiales de software (SBOM).",
+   "que_hace": "Mantiene un inventario de componentes por proyecto y versión, lo cruza con fuentes de vulnerabilidades y aplica políticas de seguridad, licencias y operación con alertas.",
+   "como_lo_hace": "Recibe SBOM CycloneDX por la API o la interfaz, los analiza contra NVD, GitHub Advisories, OSV, Sonatype OSS Index y Snyk (opcional), y expone resultados por API REST, webhooks e integraciones.",
+   "combina_con": [
+    {
+     "id": "cdxgen",
+     "motivo": "cdxgen genera el SBOM CycloneDX que Dependency-Track analiza de forma continua.",
+     "orden_instalacion": "Primero Dependency-Track; después cdxgen en CI publicando el SBOM por la API."
+    },
+    {
+     "id": "syft",
+     "motivo": "Syft produce SBOM CycloneDX de imágenes de contenedor para subirlos a Dependency-Track.",
+     "orden_instalacion": "Dependency-Track en marcha; Syft en el pipeline de imágenes."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "DefectDojo consolida los hallazgos de Dependency-Track con los de SAST/DAST para su gestión y seguimiento.",
+     "orden_instalacion": "Ambos servidores; configura la importación de Dependency-Track en DefectDojo."
+    },
+    {
+     "id": "dependency-check",
+     "motivo": "Dependency-Check aporta un análisis SCA puntual en build; Dependency-Track lo hace continuo sobre el inventario.",
+     "orden_instalacion": "Dependency-Check en CI; Dependency-Track como inventario central."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/DependencyTrack/dependency-track#readme",
+    "https://docs.dependencytrack.org/getting-started/deploy-docker/"
+   ],
+   "github": {
+    "name_with_owner": "DependencyTrack/dependency-track",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "5.2.1 (2026-10-25)"
+   }
+  },
+  "defectdojo": {
+   "que_es": "Proyecto insignia de OWASP para gestión unificada de vulnerabilidades y seguridad de aplicaciones (ASPM), con edición comunitaria de código abierto.",
+   "que_hace": "Importa y normaliza informes de escáneres, deduplica hallazgos, asigna responsables, gestiona aceptación de riesgos y genera métricas e informes.",
+   "como_lo_hace": "Servidor Django con PostgreSQL, Celery y Redis desplegado con Docker Compose; parsers por herramienta, API REST v2 e integraciones con Jira y CI.",
+   "combina_con": [
+    {
+     "id": "semgrep",
+     "motivo": "Los resultados SAST de Semgrep se importan en DefectDojo para su triaje.",
+     "orden_instalacion": "DefectDojo primero; exporta Semgrep en un formato soportado e impórtalo."
+    },
+    {
+     "id": "zaproxy",
+     "motivo": "Los informes DAST de ZAP alimentan DefectDojo junto con otros hallazgos.",
+     "orden_instalacion": "Ejecuta ZAP en un objetivo autorizado y sube el informe XML/JSON."
+    },
+    {
+     "id": "trivy",
+     "motivo": "Trivy aporta vulnerabilidades de contenedores e IaC al mismo tablero.",
+     "orden_instalacion": "Trivy en CI con salida JSON; importación en DefectDojo."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Los hallazgos de plantillas de Nuclei se consolidan y deduplican en DefectDojo.",
+     "orden_instalacion": "Nuclei con salida JSON; importa en una prueba de DefectDojo."
+    },
+    {
+     "id": "dependency-track",
+     "motivo": "Combinación recíproca: Dependency-Track lo enlaza como «DefectDojo consolida los hallazgos de Dependency-Track con los de SAST/DAST para su gestión y seguimiento».",
+     "orden_instalacion": "Orden indicado desde Dependency-Track: Ambos servidores; configura la importación de Dependency-Track en DefectDojo.",
+     "reciproca_de": "dependency-track"
+    },
+    {
+     "id": "dependency-check",
+     "motivo": "Combinación recíproca: OWASP Dependency-Check lo enlaza como «DefectDojo importa el informe XML de Dependency-Check para su seguimiento».",
+     "orden_instalacion": "Orden indicado desde OWASP Dependency-Check: Genera el informe XML e impórtalo en DefectDojo.",
+     "reciproca_de": "dependency-check"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/DefectDojo/django-DefectDojo#readme",
+    "https://docs.defectdojo.com"
+   ],
+   "github": {
+    "name_with_owner": "DefectDojo/django-DefectDojo",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "3.5.200 (2026-11-16)"
+   }
+  },
+  "dependency-check": {
+   "que_es": "Herramienta OWASP de análisis de composición de software que busca vulnerabilidades conocidas en las dependencias de un proyecto.",
+   "que_hace": "Identifica las bibliotecas usadas, les asigna identificadores CPE y emite informes HTML, JSON, XML o SARIF con los CVE encontrados.",
+   "como_lo_hace": "Descarga y mantiene en caché la NVD (se recomienda una clave de API de NVD) y otros analizadores; se ejecuta como CLI, plugin de build o contenedor.",
+   "combina_con": [
+    {
+     "id": "dependency-track",
+     "motivo": "Dependency-Check cubre el análisis en build; Dependency-Track mantiene el inventario continuo.",
+     "orden_instalacion": "Dependency-Check en CI; Dependency-Track como servidor central."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "DefectDojo importa el informe XML de Dependency-Check para su seguimiento.",
+     "orden_instalacion": "Genera el informe XML e impórtalo en DefectDojo."
+    },
+    {
+     "id": "osv-scanner",
+     "motivo": "OSV-Scanner contrasta resultados con la base OSV y reduce falsos negativos.",
+     "orden_instalacion": "Ejecuta ambos en CI y compara hallazgos."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/dependency-check/DependencyCheck#readme",
+    "https://dependency-check.github.io/DependencyCheck/"
+   ],
+   "github": {
+    "name_with_owner": "dependency-check/DependencyCheck",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v13.0.0 (2026-08-03)"
+   }
+  },
+  "modsecurity": {
+   "que_es": "Motor de firewall de aplicaciones web (WAF) multiplataforma, hoy bajo la organización OWASP, en su versión libmodsecurity 3.",
+   "que_hace": "Inspecciona y registra el tráfico HTTP y bloquea peticiones que coinciden con reglas, como inyecciones, XSS o escaneos automatizados.",
+   "como_lo_hace": "Biblioteca C++ que interpreta el lenguaje de reglas SecLang; se conecta al servidor web mediante módulos como ModSecurity-nginx y usa conjuntos de reglas como el CRS.",
+   "combina_con": [
+    {
+     "id": "coreruleset",
+     "motivo": "El OWASP CRS es el conjunto de reglas genérico que ModSecurity ejecuta.",
+     "orden_instalacion": "Primero libmodsecurity y el conector; después el CRS en modo detección."
+    },
+    {
+     "id": "wazuh",
+     "motivo": "Wazuh recoge y correlaciona los logs de auditoría de ModSecurity.",
+     "orden_instalacion": "ModSecurity registrando; agente de Wazuh leyendo el log."
+    },
+    {
+     "id": "juice-shop",
+     "motivo": "Juice Shop sirve de objetivo vulnerable para ajustar reglas sin riesgo.",
+     "orden_instalacion": "Juice Shop detrás del servidor con ModSecurity, en laboratorio."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/owasp-modsecurity/ModSecurity#readme",
+    "https://github.com/owasp-modsecurity/ModSecurity/wiki"
+   ],
+   "github": {
+    "name_with_owner": "owasp-modsecurity/ModSecurity",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.0.17 (2026-09-29)"
+   }
+  },
+  "coraza": {
+   "que_es": "Proyecto OWASP de nivel producción: un framework WAF en Go compatible con ModSecurity y el OWASP CRS.",
+   "que_hace": "Inspecciona peticiones y respuestas HTTP con reglas SecLang y permite interrumpirlas, registrar eventos y aplicar el CRS.",
+   "como_lo_hace": "Biblioteca Go importable que procesa transacciones por fases; se integra en servidores mediante módulos (Caddy, proxy-wasm para Envoy, Traefik y otros).",
+   "combina_con": [
+    {
+     "id": "coreruleset",
+     "motivo": "Coraza ejecuta el OWASP CRS como conjunto de reglas base.",
+     "orden_instalacion": "Integra Coraza; después carga el CRS en modo detección."
+    },
+    {
+     "id": "caddy",
+     "motivo": "El módulo coraza-caddy añade el WAF a Caddy.",
+     "orden_instalacion": "Compila Caddy con el módulo de Coraza y configura las reglas."
+    },
+    {
+     "id": "traefik",
+     "motivo": "Coraza figura entre las integraciones para Traefik en su README.",
+     "orden_instalacion": "Traefik desplegado; añade la integración de Coraza según su documentación."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/corazawaf/coraza#readme",
+    "https://coraza.io/docs/"
+   ],
+   "github": {
+    "name_with_owner": "corazawaf/coraza",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v3.8.1 (2026-10-02)"
+   }
+  },
+  "nettacker": {
+   "que_es": "Proyecto OWASP de pruebas de penetración automatizadas y recopilación de información.",
+   "que_hace": "Escanea puertos, subdominios, servicios HTTP, credenciales débiles y vulnerabilidades conocidas, y compara resultados entre escaneos.",
+   "como_lo_hace": "Motor Python con módulos declarativos en YAML, base de datos de resultados, informes HTML/JSON y una API con interfaz web.",
+   "combina_con": [
+    {
+     "id": "nmap",
+     "motivo": "Nmap profundiza en el fingerprint de los servicios que Nettacker detecta.",
+     "orden_instalacion": "Nettacker para el barrido; Nmap sobre los hosts de interés."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei aplica plantillas de vulnerabilidades a los servicios web encontrados.",
+     "orden_instalacion": "Tras Nettacker, pasa las URLs vivas a Nuclei."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "DefectDojo centraliza los hallazgos para su seguimiento.",
+     "orden_instalacion": "Exporta resultados e impórtalos en DefectDojo."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/Nettacker#readme",
+    "https://nettacker.readthedocs.io/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/Nettacker",
+    "archived": false,
+    "pushed_at": "2026-11-17",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "0.4.1 (2026-08-24)"
+   }
+  },
+  "threat-dragon": {
+   "que_es": "Proyecto OWASP de código abierto para modelado de amenazas con diagramas.",
+   "que_hace": "Permite dibujar diagramas de flujo de datos, asignar amenazas por metodología (STRIDE, LINDDUN, CIA, PLOT4ai) y registrar mitigaciones e informes.",
+   "como_lo_hace": "Aplicación de escritorio Electron o servidor web; los modelos se guardan como JSON local o en repositorios Git remotos mediante OAuth.",
+   "combina_con": [
+    {
+     "id": "asvs",
+     "motivo": "ASVS aporta requisitos verificables para las mitigaciones del modelo.",
+     "orden_instalacion": "Modela primero; después enlaza controles de ASVS a cada amenaza."
+    },
+    {
+     "id": "cheatsheetseries",
+     "motivo": "Las Cheat Sheets de OWASP detallan cómo aplicar cada mitigación.",
+     "orden_instalacion": "Consulta la hoja correspondiente al implementar la mitigación."
+    },
+    {
+     "id": "owasp-top10",
+     "motivo": "El Top 10 orienta qué riesgos priorizar en el modelo de una aplicación web.",
+     "orden_instalacion": "Revisa el Top 10 antes de enumerar amenazas."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/threat-dragon#readme",
+    "https://www.threatdragon.com/docs/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/threat-dragon",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.6.2 (2026-05-10)"
+   }
+  },
+  "webgoat": {
+   "que_es": "Proyecto OWASP de formación: una aplicación web con vulnerabilidades intencionadas y lecciones para explotarlas y corregirlas.",
+   "que_hace": "Guía al usuario por lecciones de inyección, autenticación rota, XSS, XXE, deserialización insegura y otros fallos, con pistas y validación.",
+   "como_lo_hace": "Aplicación Spring Boot más WebWolf (servidor de apoyo para ataques); se distribuye como imagen Docker, imagen con escritorio Linux o JAR.",
+   "combina_con": [
+    {
+     "id": "zaproxy",
+     "motivo": "ZAP intercepta y modifica el tráfico necesario en muchas lecciones.",
+     "orden_instalacion": "WebGoat en local; ZAP como proxy del navegador."
+    },
+    {
+     "id": "caido",
+     "motivo": "Caido sirve como proxy alternativo para resolver las lecciones.",
+     "orden_instalacion": "WebGoat en local; Caido como proxy."
+    },
+    {
+     "id": "wstg",
+     "motivo": "La WSTG explica la metodología de prueba detrás de cada lección.",
+     "orden_instalacion": "Lee la sección de la WSTG antes de cada lección."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/WebGoat/WebGoat#readme",
+    "https://owasp.org/www-project-webgoat/"
+   ],
+   "github": {
+    "name_with_owner": "WebGoat/WebGoat",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2026.5 (2026-10-12)"
+   }
+  },
+  "wstg": {
+   "que_es": "Proyecto insignia de OWASP: la guía de pruebas de seguridad para aplicaciones y servicios web.",
+   "que_hace": "Describe la metodología de prueba y cientos de casos (configuración, identidad, autenticación, sesiones, validación de entradas, lógica de negocio, API) con identificadores estables.",
+   "como_lo_hace": "Contenido Markdown versionado en GitHub, publicado en owasp.org con versiones estables y la rama en desarrollo; licencia CC BY-SA 4.0.",
+   "combina_con": [
+    {
+     "id": "zaproxy",
+     "motivo": "ZAP ejecuta muchas de las pruebas que describe la guía.",
+     "orden_instalacion": "Lee el caso WSTG; reprodúcelo con ZAP en un objetivo autorizado."
+    },
+    {
+     "id": "juice-shop",
+     "motivo": "Juice Shop permite practicar los casos de prueba sin riesgo.",
+     "orden_instalacion": "Juice Shop en local; sigue los casos de la guía."
+    },
+    {
+     "id": "cheatsheetseries",
+     "motivo": "Las Cheat Sheets explican cómo corregir lo que la guía detecta.",
+     "orden_instalacion": "Prueba con la WSTG; corrige con la Cheat Sheet correspondiente."
+    },
+    {
+     "id": "asvs",
+     "motivo": "ASVS define los requisitos que las pruebas de la WSTG verifican.",
+     "orden_instalacion": "Fija el nivel ASVS; selecciona los casos WSTG asociados."
+    },
+    {
+     "id": "webgoat",
+     "motivo": "Combinación recíproca: WebGoat lo enlaza como «La WSTG explica la metodología de prueba detrás de cada lección».",
+     "orden_instalacion": "Orden indicado desde WebGoat: Lee la sección de la WSTG antes de cada lección.",
+     "reciproca_de": "webgoat"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/wstg#readme",
+    "https://owasp.org/www-project-web-security-testing-guide/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/wstg",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": "CSS",
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.2 (2020-12-03)"
+   }
+  },
+  "mastg": {
+   "que_es": "Proyecto insignia de OWASP: el manual de pruebas de seguridad y de ingeniería inversa de aplicaciones móviles.",
+   "que_hace": "Explica cómo verificar los controles MASVS en Android e iOS con pruebas estáticas y dinámicas, técnicas de ingeniería inversa y herramientas recomendadas.",
+   "como_lo_hace": "Contenido Markdown publicado como sitio MkDocs en mas.owasp.org, con identificadores estables de pruebas, técnicas y herramientas; licencia CC BY-SA 4.0.",
+   "combina_con": [
+    {
+     "id": "masvs",
+     "motivo": "MASVS define los controles que el MASTG enseña a probar.",
+     "orden_instalacion": "Elige los controles MASVS; aplica las pruebas del MASTG."
+    },
+    {
+     "id": "frida",
+     "motivo": "Frida es la herramienta de instrumentación usada en muchas pruebas dinámicas del MASTG.",
+     "orden_instalacion": "Instala Frida en un dispositivo de pruebas y sigue la técnica del MASTG."
+    },
+    {
+     "id": "apktool",
+     "motivo": "Apktool descompila APK para las pruebas estáticas de Android.",
+     "orden_instalacion": "Descompila la APK propia con Apktool y revisa según el MASTG."
+    },
+    {
+     "id": "jadx",
+     "motivo": "jadx decompila a Java para revisar la lógica de la app.",
+     "orden_instalacion": "Abre la APK en jadx durante las pruebas estáticas."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/mastg#readme",
+    "https://mas.owasp.org/MASTG/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/mastg",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.0.0 (2026-06-30)"
+   }
+  },
+  "asvs": {
+   "que_es": "Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.",
+   "que_hace": "Define requisitos de seguridad verificables (autenticación, sesiones, control de acceso, validación, criptografía, API, configuración) en niveles L1 a L3.",
+   "como_lo_hace": "Documento versionado en GitHub con identificadores estables y exportaciones en formatos legibles por máquina para integrarlo en herramientas y procesos.",
+   "combina_con": [
+    {
+     "id": "wstg",
+     "motivo": "La WSTG explica cómo probar los requisitos de ASVS.",
+     "orden_instalacion": "Fija los requisitos ASVS; prueba con la WSTG."
+    },
+    {
+     "id": "cheatsheetseries",
+     "motivo": "Las Cheat Sheets guían la implementación de cada requisito.",
+     "orden_instalacion": "Requisito ASVS → Cheat Sheet correspondiente."
+    },
+    {
+     "id": "threat-dragon",
+     "motivo": "El modelo de amenazas ayuda a elegir el nivel y los requisitos prioritarios.",
+     "orden_instalacion": "Modela amenazas; selecciona requisitos ASVS como mitigaciones."
+    },
+    {
+     "id": "owasp-top10",
+     "motivo": "El Top 10 sensibiliza; ASVS concreta qué verificar.",
+     "orden_instalacion": "Usa el Top 10 como introducción y ASVS como estándar."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/ASVS#readme",
+    "https://owasp.org/www-project-application-security-verification-standard/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/ASVS",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-16",
+    "latest_release": "latest (2026-10-26)"
+   }
+  },
+  "owasp-top10": {
+   "que_es": "Proyecto insignia de OWASP: el documento de referencia sobre los riesgos de seguridad más críticos en aplicaciones web.",
+   "que_hace": "Clasifica y explica diez categorías de riesgo a partir de datos de la industria y una encuesta comunitaria, con ejemplos, prevención y referencias.",
+   "como_lo_hace": "Contenido Markdown en GitHub publicado en owasp.org con traducciones; se actualiza por ediciones (2017, 2021 y siguientes).",
+   "combina_con": [
+    {
+     "id": "asvs",
+     "motivo": "ASVS convierte los riesgos del Top 10 en requisitos verificables.",
+     "orden_instalacion": "Top 10 para concienciar; ASVS para verificar."
+    },
+    {
+     "id": "cheatsheetseries",
+     "motivo": "Las Cheat Sheets detallan la prevención de cada riesgo.",
+     "orden_instalacion": "Consulta la hoja enlazada desde cada riesgo."
+    },
+    {
+     "id": "juice-shop",
+     "motivo": "Juice Shop permite practicar los riesgos del Top 10.",
+     "orden_instalacion": "Lee el riesgo; practícalo en Juice Shop local."
+    },
+    {
+     "id": "threat-dragon",
+     "motivo": "Combinación recíproca: OWASP Threat Dragon lo enlaza como «El Top 10 orienta qué riesgos priorizar en el modelo de una aplicación web».",
+     "orden_instalacion": "Orden indicado desde OWASP Threat Dragon: Revisa el Top 10 antes de enumerar amenazas.",
+     "reciproca_de": "threat-dragon"
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/Top10#readme",
+    "https://owasp.org/Top10/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/Top10",
+    "archived": false,
+    "pushed_at": "2026-09-24",
+    "license": "NOASSERTION",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "owasp-llm-top10": {
+   "que_es": "Proyecto insignia de OWASP (GenAI Security Project) con los diez riesgos principales de las aplicaciones basadas en modelos de lenguaje.",
+   "que_hace": "Describe riesgos como inyección de prompts, divulgación de información sensible, cadena de suministro, envenenamiento de datos, salida mal gestionada y agencia excesiva, con mitigaciones.",
+   "como_lo_hace": "Repositorio del sitio y del contenido del proyecto; las ediciones se publican en genai.owasp.org con traducciones. Licencia CC BY-SA 4.0 (LICENSE.md).",
+   "combina_con": [
+    {
+     "id": "garak",
+     "motivo": "garak sondea modelos en busca de los riesgos que describe el Top 10 de LLM.",
+     "orden_instalacion": "Lee el riesgo; pruébalo con garak sobre un modelo propio."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "promptfoo automatiza pruebas de red teaming alineadas con estos riesgos.",
+     "orden_instalacion": "Define casos por riesgo y ejecútalos con promptfoo."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications#readme",
+    "https://genai.owasp.org"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/www-project-top-10-for-large-language-model-applications",
+    "archived": false,
+    "pushed_at": "2026-08-05",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "2024 (2024-11-18)"
+   }
+  },
+  "owasp-ai-testing-guide": {
+   "que_es": "Proyecto OWASP de documentación: la guía de pruebas para sistemas de inteligencia artificial.",
+   "que_hace": "Propone una metodología y casos de prueba para inyección de prompts, fuga de datos, robustez del modelo, sesgos, cadena de suministro e infraestructura de IA.",
+   "como_lo_hace": "Contenido versionado en GitHub y publicado en owasp.org y como PDF; licencia CC BY-SA 4.0 según LICENSE.md.",
+   "combina_con": [
+    {
+     "id": "owasp-llm-top10",
+     "motivo": "El Top 10 de LLM prioriza los riesgos que esta guía enseña a probar.",
+     "orden_instalacion": "Riesgos del Top 10 → casos de la guía."
+    },
+    {
+     "id": "garak",
+     "motivo": "garak automatiza parte de las pruebas sobre modelos.",
+     "orden_instalacion": "Selecciona casos AITG; ejecútalos con garak en un modelo propio."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/www-project-ai-testing-guide#readme",
+    "https://owasp.org/www-project-ai-testing-guide/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/www-project-ai-testing-guide",
+    "archived": false,
+    "pushed_at": "2026-06-01",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "aisvs": {
+   "que_es": "Proyecto OWASP: el estándar de verificación de seguridad para sistemas de inteligencia artificial.",
+   "que_hace": "Define requisitos verificables sobre gobierno de datos de entrenamiento, validación de entradas, seguridad del modelo, agentes autónomos, privacidad e infraestructura.",
+   "como_lo_hace": "Documento versionado en GitHub con capítulos numerados; sigue el formato de ASVS. Licencia CC BY-SA 4.0.",
+   "combina_con": [
+    {
+     "id": "asvs",
+     "motivo": "ASVS cubre la aplicación web; AISVS añade los requisitos propios de IA.",
+     "orden_instalacion": "Aplica ASVS a la app y AISVS a los componentes de IA."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/AISVS#readme"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/AISVS",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": null,
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.01 (2026-10-16)"
+   }
+  },
+  "masvs": {
+   "que_es": "Proyecto insignia de OWASP: el estándar de seguridad para aplicaciones móviles.",
+   "que_hace": "Agrupa controles de seguridad (STORAGE, CRYPTO, AUTH, NETWORK, PLATFORM, CODE, RESILIENCE, PRIVACY) que una app móvil debe cumplir.",
+   "como_lo_hace": "Documento versionado en GitHub y publicado en mas.owasp.org, enlazado a las pruebas del MASTG; licencia CC BY-SA 4.0.",
+   "combina_con": [
+    {
+     "id": "mastg",
+     "motivo": "El MASTG enseña a probar cada control MASVS.",
+     "orden_instalacion": "Controles MASVS → pruebas MASTG."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/masvs#readme",
+    "https://mas.owasp.org/MASVS/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/masvs",
+    "archived": false,
+    "pushed_at": "2026-09-21",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.1.0 (2024-01-18)"
+   }
+  },
+  "owasp-api-security": {
+   "que_es": "Proyecto OWASP centrado en los riesgos de seguridad propios de las API.",
+   "que_hace": "Explica los diez riesgos principales de las API con ejemplos, factores de riesgo y prevención.",
+   "como_lo_hace": "Contenido Markdown en GitHub publicado en owasp.org; licencia CC BY-SA 4.0 en LICENSE pese a NOASSERTION en la API de GitHub.",
+   "combina_con": [
+    {
+     "id": "crapi",
+     "motivo": "crAPI permite practicar los riesgos del API Security Top 10.",
+     "orden_instalacion": "Lee el riesgo; practícalo en crAPI local."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/API-Security#readme",
+    "https://owasp.org/API-Security/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/API-Security",
+    "archived": false,
+    "pushed_at": "2026-09-22",
+    "license": "NOASSERTION",
+    "primary_language": "Dockerfile",
+    "checked_at": "2026-11-16"
+   }
+  },
+  "owasp-devguide": {
+   "que_es": "Proyecto OWASP de documentación: la guía de seguridad para desarrolladores.",
+   "que_hace": "Recorre el ciclo de desarrollo seguro y explica qué estándares, guías y herramientas OWASP aplicar en cada etapa.",
+   "como_lo_hace": "Contenido Markdown en GitHub publicado como sitio y PDF; licencia CC BY-SA 4.0.",
+   "combina_con": [
+    {
+     "id": "cheatsheetseries",
+     "motivo": "Las Cheat Sheets dan el detalle práctico que la guía resume.",
+     "orden_instalacion": "Guía para el marco; Cheat Sheets para implementar."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/DevGuide#readme",
+    "https://devguide.owasp.org"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/DevGuide",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "CC-BY-SA-4.0",
+    "primary_language": null,
+    "checked_at": "2026-11-16",
+    "latest_release": "v4.2.0 (2026-03-16)"
+   }
+  },
+  "owtf": {
+   "que_es": "Proyecto insignia de OWASP: un framework de pruebas ofensivas web orientado a la WSTG y PTES.",
+   "que_hace": "Agrupa herramientas de pentest en plugins por caso de prueba, registra resultados y ofrece un proxy interceptor y una interfaz web.",
+   "como_lo_hace": "Servicios Python (API, interfaz y proxy) desplegados con Docker Compose; la instalación nativa se reserva a contribuidores según el README.",
+   "combina_con": [
+    {
+     "id": "wstg",
+     "motivo": "Los plugins de OWTF siguen los casos de prueba de la WSTG.",
+     "orden_instalacion": "Consulta la WSTG para interpretar cada resultado."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/owtf/owtf#readme"
+   ],
+   "github": {
+    "name_with_owner": "owtf/owtf",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v2.7.0 (2026-09-03)"
+   }
+  },
+  "noir": {
+   "que_es": "Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.",
+   "que_hace": "Identifica rutas, métodos y parámetros (incluidas API no documentadas) en código de múltiples lenguajes y frameworks, y exporta en JSON, OpenAPI y otros formatos.",
+   "como_lo_hace": "Analizadores estáticos por framework escritos en Crystal; puede enviar resultados a proxies DAST y usar un LLM opcional para lenguajes no soportados.",
+   "combina_con": [
+    {
+     "id": "zaproxy",
+     "motivo": "Noir envía los endpoints descubiertos a ZAP para pruebas dinámicas.",
+     "orden_instalacion": "Noir sobre el código; después ZAP sobre la app en laboratorio."
+    },
+    {
+     "id": "caido",
+     "motivo": "Caido recibe los endpoints como punto de partida de pruebas manuales.",
+     "orden_instalacion": "Noir primero; Caido como proxy."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/owasp-noir/noir#readme",
+    "https://owasp-noir.github.io/noir/"
+   ],
+   "github": {
+    "name_with_owner": "owasp-noir/noir",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Crystal",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.5.0 (2026-11-02)"
+   }
+  },
+  "dep-scan": {
+   "que_es": "Proyecto OWASP de auditoría de seguridad y riesgo de dependencias.",
+   "que_hace": "Detecta vulnerabilidades y avisos conocidos, riesgos de licencia y alcanzabilidad de dependencias en proyectos y contenedores, y genera documentos VEX/CSAF.",
+   "como_lo_hace": "Usa cdxgen para producir el SBOM y una base de vulnerabilidades local (vdb); funciona en local, CI o modo servidor.",
+   "combina_con": [
+    {
+     "id": "cdxgen",
+     "motivo": "dep-scan usa cdxgen para generar el SBOM que analiza.",
+     "orden_instalacion": "Instala cdxgen y después dep-scan."
+    },
+    {
+     "id": "dependency-track",
+     "motivo": "Dependency-Track conserva el inventario continuo que dep-scan audita puntualmente.",
+     "orden_instalacion": "dep-scan en CI; SBOM publicado en Dependency-Track."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/owasp-dep-scan/dep-scan#readme",
+    "https://depscan.readthedocs.io"
+   ],
+   "github": {
+    "name_with_owner": "owasp-dep-scan/dep-scan",
+    "archived": false,
+    "pushed_at": "2026-11-17",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v6.3.2 (2026-11-12)"
+   }
+  },
+  "cdxgen": {
+   "que_es": "Herramienta del proyecto OWASP CycloneDX para generar listas de materiales de software (SBOM) y otras BOM.",
+   "que_hace": "Produce SBOM, SaaSBOM, CBOM y otros BOM CycloneDX de código, contenedores y entornos, con análisis de evidencia y alcanzabilidad opcionales.",
+   "como_lo_hace": "CLI Node.js que llama a los gestores de paquetes de cada lenguaje o lee lockfiles; se distribuye por npm, Homebrew e imágenes de contenedor.",
+   "combina_con": [
+    {
+     "id": "dependency-track",
+     "motivo": "Dependency-Track ingiere el SBOM generado por cdxgen.",
+     "orden_instalacion": "cdxgen en CI; publica el BOM en Dependency-Track."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/cdxgen/cdxgen#readme",
+    "https://cdxgen.github.io/cdxgen/"
+   ],
+   "github": {
+    "name_with_owner": "cdxgen/cdxgen",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-16",
+    "latest_release": "v13.8.0 (2026-11-14)"
+   }
+  },
+  "securecodebox": {
+   "que_es": "Proyecto OWASP para automatizar y orquestar escáneres de seguridad en Kubernetes.",
+   "que_hace": "Ejecuta escaneos únicos o programados con herramientas de código abierto, normaliza los hallazgos y los envía a sistemas de gestión.",
+   "como_lo_hace": "Operador Go con CRD (Scan, ScheduledScan) y charts Helm por escáner y hook; licencia Apache-2.0 en LICENSE pese a NOASSERTION en la API de GitHub.",
+   "combina_con": [
+    {
+     "id": "defectdojo",
+     "motivo": "Un hook de secureCodeBox envía los hallazgos a DefectDojo.",
+     "orden_instalacion": "DefectDojo primero; después el hook en el clúster."
+    },
+    {
+     "id": "nuclei",
+     "motivo": "Nuclei está disponible como escáner integrado.",
+     "orden_instalacion": "Instala el chart del escáner tras el operador."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/secureCodeBox/secureCodeBox#readme",
+    "https://www.securecodebox.io/docs/getting-started/installation"
+   ],
+   "github": {
+    "name_with_owner": "secureCodeBox/secureCodeBox",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "NOASSERTION",
+    "primary_language": "Go",
+    "checked_at": "2026-11-16",
+    "latest_release": "v5.9.0 (2026-09-15)"
+   }
+  },
+  "crapi": {
+   "que_es": "Proyecto OWASP de formación: una API vulnerable a propósito.",
+   "que_hace": "Simula una plataforma de vehículos con tienda y comunidad cuyos microservicios contienen vulnerabilidades del API Security Top 10.",
+   "como_lo_hace": "Varios microservicios en contenedores orquestados con Docker Compose, Vagrant o Kubernetes; imágenes precompiladas desde CI.",
+   "combina_con": [
+    {
+     "id": "owasp-api-security",
+     "motivo": "El API Security Top 10 explica los riesgos que crAPI permite explotar.",
+     "orden_instalacion": "Lee el riesgo; practícalo en crAPI."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/crAPI#readme"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/crAPI",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.1.6 (2025-09-30)"
+   }
+  },
+  "wrongsecrets": {
+   "que_es": "Proyecto OWASP de formación centrado en errores de gestión de secretos.",
+   "que_hace": "Plantea retos en los que hay que encontrar secretos mal guardados en código, configuración, contenedores, Kubernetes, gestores de secretos y servicios en la nube.",
+   "como_lo_hace": "Aplicación Java con niveles de despliegue progresivos (Docker, Kubernetes, Vault, nube); licencia AGPL-3.0.",
+   "combina_con": [
+    {
+     "id": "gitleaks",
+     "motivo": "Gitleaks detecta secretos en repositorios, una habilidad que los retos ejercitan.",
+     "orden_instalacion": "Resuelve el reto; después prueba Gitleaks en un repo propio."
+    },
+    {
+     "id": "trufflehog",
+     "motivo": "TruffleHog busca y verifica secretos como los de los retos.",
+     "orden_instalacion": "Úsalo tras los retos en repositorios propios."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/wrongsecrets#readme",
+    "https://owasp.org/www-project-wrongsecrets/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/wrongsecrets",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.14.2 (2026-10-20)"
+   }
+  },
+  "pytm": {
+   "que_es": "Proyecto OWASP para modelado de amenazas como código en Python.",
+   "que_hace": "A partir de una descripción del sistema en Python, identifica amenazas de una base predefinida y genera diagramas y un informe.",
+   "como_lo_hace": "Biblioteca Python con salida para Graphviz y PlantUML y plantillas de informe vía pandoc; licencia MIT en LICENSE pese a NOASSERTION en la API de GitHub.",
+   "combina_con": [
+    {
+     "id": "asvs",
+     "motivo": "ASVS aporta requisitos para mitigar las amenazas que pytm identifica.",
+     "orden_instalacion": "Genera el informe; asigna requisitos ASVS."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/pytm#readme"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/pytm",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.4.1 (2026-11-01)"
+   }
+  },
+  "java-html-sanitizer": {
+   "que_es": "Proyecto OWASP: un saneador de HTML para aplicaciones Java.",
+   "que_hace": "Recibe HTML no confiable y devuelve HTML seguro según una política de elementos y atributos permitidos.",
+   "como_lo_hace": "Analizador y filtro en Java con políticas componibles y probadas contra vectores XSS; se distribuye en Maven Central.",
+   "combina_con": [
+    {
+     "id": "owasp-java-encoder",
+     "motivo": "El sanitizer limpia HTML enriquecido de entrada; Java Encoder codifica el resto de datos en la salida.",
+     "orden_instalacion": "Añade ambas dependencias; sanea al recibir HTML y codifica al renderizar."
+    },
+    {
+     "id": "cheatsheetseries",
+     "motivo": "La Cheat Sheet de prevención de XSS explica cuándo sanear y cuándo codificar.",
+     "orden_instalacion": "Lee la hoja antes de definir la política del sanitizer."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/java-html-sanitizer#readme"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/java-html-sanitizer",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "release-20261110.1 (2026-11-11)"
+   }
+  },
+  "owasp-java-encoder": {
+   "que_es": "Proyecto OWASP: un codificador de salida contextual para Java.",
+   "que_hace": "Codifica datos según el contexto de salida (HTML, atributos, JavaScript, CSS, URI, XML) para evitar inyecciones XSS.",
+   "como_lo_hace": "Biblioteca Java 8+ sin dependencias, con etiquetas y funciones EL para JSP y Jakarta; licencia BSD-3-Clause.",
+   "combina_con": [
+    {
+     "id": "java-html-sanitizer",
+     "motivo": "Java Encoder codifica la salida; el sanitizer cubre el caso de HTML enriquecido permitido.",
+     "orden_instalacion": "Codifica toda salida; usa el sanitizer solo donde aceptes HTML."
+    },
+    {
+     "id": "cheatsheetseries",
+     "motivo": "La Cheat Sheet de prevención de XSS describe la codificación por contexto que aplica la biblioteca.",
+     "orden_instalacion": "Consulta la hoja al elegir el método Encode.for* de cada contexto."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/OWASP/owasp-java-encoder#readme",
+    "https://owasp.org/www-project-java-encoder/"
+   ],
+   "github": {
+    "name_with_owner": "OWASP/owasp-java-encoder",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "BSD-3-Clause",
+    "primary_language": "Java",
+    "checked_at": "2026-11-16",
+    "latest_release": "v1.6.0 (2026-10-18)"
+   }
+  }
+ }
+}

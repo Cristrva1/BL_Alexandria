@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
-**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** LGPL-3.0 (partes GPL). Los plugins GPL se excluyen con --without-gpl. Fuente: [LICENSE](https://github.com/radareorg/radare2/blob/master/COPYING.md). GitHub la marca como NOASSERTION.
 
@@ -56,8 +56,8 @@ Grupo **Ingeniería inversa y desensambladores**: radare2 ocupa la posición 2 d
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [ghidra](ghidra.md) ⭐ recomendado | 71 | Si buscas esto: conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. |
-| 2 | **radare2** (esta ficha) | 68 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
-| 3 | [rizin](rizin.md) | 46 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
+| 2 | **radare2** (esta ficha) | 69 | Si buscas esto: conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
+| 3 | [rizin](rizin.md) | 48 | Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola. |
 
 ## Acceso, coste y equipo
 

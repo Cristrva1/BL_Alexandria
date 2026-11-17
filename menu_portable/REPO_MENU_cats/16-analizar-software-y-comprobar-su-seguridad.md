@@ -63,6 +63,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `hashcat`, `wireshark`
 
+## `aisvs`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,ai,standard,requirements
+
+**Qué es:** Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/AISVS
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: definir requisitos de seguridad para una aplicación con LLM y agentes; auditar controles de un pipeline de ML
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre el repositorio y revisa los capítulos de AISVS aplicables a un proyecto con LLM.
+**Qué comprobar:** Obtienes una lista de requisitos con identificadores para verificar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `asvs`
+
 ## `amass`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security,osint,recon,go
 
@@ -151,7 +181,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Decodifica recursos de un APK de laboratorio y localiza su manifiesto
 **Qué comprobar:** Puedes contrastar nombres de recursos y permisos declarados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `jadx`, `frida`, `mitmproxy`
+**Combina con:** `jadx`, `frida`, `mitmproxy`, `mastg`
 
 ## `arkime`
 role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security
@@ -182,6 +212,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** UI muestra sesiones capturadas.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `wireshark`, `suricata`
+
+## `asvs`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,standard,requirements,appsec
+
+**Qué es:** Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar.
+**Stack:** HTML, Makefile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/ASVS
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto.
+**Qué comprobar:** Obtienes la lista de requisitos aplicables con sus identificadores.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon`, `owasp-top10`
 
 ## `atomic-red-team`
 role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=security,attack,purple
@@ -485,6 +545,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ghidra`, `yara`
 
+## `cdxgen`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,sbom,cyclonedx,supply-chain,javascript
+
+**Qué es:** Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes.
+**Stack:** JavaScript, docker-compose.yml, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/cdxgen/cdxgen
+
+**Instalación** [+]:
+
+```
+npm install -g @cdxgen/cdxgen --omit=optional --ignore-scripts --min-release-age=2
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con npm como indica el README y ejecuta cdxgen en el directorio de un proyecto propio.
+**Qué comprobar:** Obtienes un archivo bom.json en formato CycloneDX.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dependency-track`
+**Alternativas (elige una):** `syft`
+
 ## `certipy`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 
@@ -574,6 +665,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes checks fallidos con archivo y línea.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `trivy`, `semgrep`, `prowler`, `grype`
+
+## `coraza`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=security,waf,go,seclang
+
+**Qué es:** WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/corazawaf/coraza
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/corazawaf/coraza/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue el ejemplo de uso de Coraza del README en un programa Go de prueba con una regla sencilla.
+**Qué comprobar:** La transacción con la carga de prueba queda interrumpida por la regla.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coreruleset`, `caddy`, `traefik`
+**Alternativas (elige una):** `modsecurity`
 
 ## `coreruleset`
 role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=security
@@ -668,6 +790,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `ghidra`, `rea`
 
+## `crapi`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security,api,training,vulnerable-app
+
+**Qué es:** API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10.
+**Stack:** Java
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/crAPI
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/OWASP/crAPI/blob/develop/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: practicar ataques de autorización a nivel de objeto en una API; formar a un equipo en pruebas de seguridad de API
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga los archivos de despliegue y levanta crAPI con Docker Compose como indica el README.
+**Qué comprobar:** Accedes a la aplicación web y a su API en local.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `owasp-api-security`
+
 ## `crowdsec`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=security,go,server,self-hosted
 
@@ -730,6 +882,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `skillspector`, `promptfoo`
 
+## `defectdojo`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=security,vulnerability-management,devsecops,aspm,python
+
+**Qué es:** Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección.
+**Stack:** Python, docker-compose.yml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/DefectDojo/django-DefectDojo
+
+**Instalación** [+]:
+
+```
+git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Clona el repo y levanta la versión de prueba con Docker Compose como indica el README; importa un informe de un escáner propio.
+**Qué comprobar:** Ves los hallazgos deduplicados asociados a un producto y a una prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `semgrep`, `zaproxy`, `trivy`, `nuclei`, `dependency-track`, `dependency-check`
+
 ## `defending-code-reference-harness`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=security,skills,coding-agent
 
@@ -761,6 +943,97 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar un hallazgo contra el objetivo y su evidencia de práctica
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `semgrep`, `strix`
+
+## `dep-scan`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,sca,sbom,vex,python
+
+**Qué es:** Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/owasp-dep-scan/dep-scan
+
+**Instalación** [+]:
+
+```
+pip install owasp-depscan
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio.
+**Qué comprobar:** Obtienes un informe de vulnerabilidades y riesgos de dependencias.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `cdxgen`, `dependency-track`
+
+## `dependency-check`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,sca,dependencies,cve,java
+
+**Qué es:** Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.
+**Stack:** Java, Dockerfile, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/dependency-check/DependencyCheck
+
+**Instalación** [+]:
+
+```
+brew update && brew install dependency-check
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio.
+**Qué comprobar:** Obtienes un informe HTML con las dependencias y los CVE asociados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `dependency-track`, `defectdojo`, `osv-scanner`
+
+## `dependency-track`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=security,sbom,sca,supply-chain,cyclonedx,java
+
+**Qué es:** Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos.
+**Stack:** Java, Makefile, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/DependencyTrack/dependency-track
+
+**Instalación** [+]:
+
+```
+curl -LO https://dependencytrack.org/docker-compose.yml
+docker compose up -d
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio.
+**Qué comprobar:** Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `cdxgen`, `syft`, `defectdojo`, `dependency-check`
 
 ## `detection-rules`
 role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=security
@@ -1520,7 +1793,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una app Android de prueba y navega por una clase y sus recursos
 **Qué comprobar:** Puedes identificar métodos y líneas que no se reconstruyen correctamente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `frida`, `apktool`, `ghidra`, `rea`, `awesome-ai-reverse-engineering`
+**Combina con:** `frida`, `apktool`, `ghidra`, `rea`, `awesome-ai-reverse-engineering`, `mastg`
+
+## `java-html-sanitizer`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=security,xss,java,library
+
+**Qué es:** Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS.
+**Stack:** Java, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/java-html-sanitizer
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/OWASP/java-html-sanitizer/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida.
+**Qué comprobar:** El HTML con scripts queda saneado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `owasp-java-encoder`, `cheatsheetseries`
 
 ## `john`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,c,security,cli
@@ -1582,6 +1885,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Abres la tienda vulnerable en localhost.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `zaproxy`, `nuclei`
+**Alternativas (elige una):** `webgoat`
 
 ## `k6`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,app,go
@@ -1795,6 +2099,66 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `nmap`, `rustscan`
 
+## `mastg`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,mobile,android,ios,guide
+
+**Qué es:** Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/mastg
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar el almacenamiento local y la red de una app Android propia; preparar un plan de pruebas para una app iOS antes de publicarla
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre mas.owasp.org, elige un control MASVS (por ejemplo MASVS-STORAGE) y sigue sus pruebas para Android.
+**Qué comprobar:** Obtienes los pasos, las herramientas y la evidencia esperada para cada prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `masvs`, `frida`, `apktool`, `jadx`
+
+## `masvs`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,mobile,standard
+
+**Qué es:** Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/masvs
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: fijar requisitos de seguridad para una app móvil nueva; estructurar una auditoría móvil por grupos de control
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre mas.owasp.org/MASVS y revisa el grupo MASVS-STORAGE.
+**Qué comprobar:** Obtienes los controles y enlaces a sus pruebas en el MASTG.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mastg`
+
 ## `metasploit`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,ruby,security,cli
 
@@ -1915,6 +2279,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `frida`, `playwright`, `k6`, `apktool`, `selenium`, `shannon`
 
+## `modsecurity`
+role=runtime · exec=local · setup=hard · mcp=False · prov=— · tags=security,waf,http,nginx,c++
+
+**Qué es:** Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set.
+**Stack:** C++
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/owasp-modsecurity/ModSecurity
+
+**Instalación** [+]:
+
+```
+git clone https://github.com/owasp-modsecurity/ModSecurity ModSecurity
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear; registrar intentos de inyección SQL y XSS para un SOC
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Sigue la compilación de libmodsecurity del README e integra el conector de Nginx en un servidor de laboratorio con el CRS.
+**Qué comprobar:** Las peticiones maliciosas de prueba quedan registradas en el log de auditoría.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `coreruleset`, `wazuh`, `juice-shop`
+**Alternativas (elige una):** `coraza`
+
 ## `mythic`
 role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security
 
@@ -2007,6 +2402,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `impacket`, `bloodhound`, `nmap`
 
+## `nettacker`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,pentest,scanner,python
+
+**Qué es:** Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML.
+**Stack:** Python, Dockerfile, Makefile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/Nettacker
+
+**Instalación** [+]:
+
+```
+docker run owasp/nettacker --help
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar puertos y servicios de una red de laboratorio; detectar cambios en la superficie expuesta entre dos escaneos autorizados
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta la ayuda de la imagen Docker oficial como indica el README y lanza un port_scan contra un host propio.
+**Qué comprobar:** Obtienes un informe con puertos abiertos y servicios detectados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nmap`, `nuclei`, `defectdojo`
+
 ## `nmap`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,c,security,cli
 
@@ -2036,6 +2461,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Obtienes la lista de puertos abiertos y los servicios detectados.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `metasploit`, `nuclei`, `wireshark`
+
+## `noir`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,sast,attack-surface,api,crystal
+
+**Qué es:** Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.
+**Stack:** Crystal
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/owasp-noir/noir
+
+**Instalación** [+]:
+
+```
+brew install noir
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia.
+**Qué comprobar:** Obtienes la lista de endpoints, métodos y parámetros detectados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `zaproxy`, `caido`
 
 ## `nuclei`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,go,security,cli
@@ -2156,6 +2611,218 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Listas vulnerabilidades OSV.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `trivy`, `grype`
+
+## `owasp-ai-testing-guide`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,ai,llm,testing,guide
+
+**Qué es:** Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos.
+**Stack:** Python, Gemfile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/www-project-ai-testing-guide
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: planificar una evaluación de seguridad de un chatbot con LLM; verificar controles de un pipeline de entrenamiento
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Descarga el PDF v1.0 enlazado en el README y elige los casos de la capa de aplicación.
+**Qué comprobar:** Obtienes objetivos, pasos y resultados esperados para cada prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `owasp-llm-top10`, `garak`
+
+## `owasp-api-security`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,api,awareness
+
+**Qué es:** Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más.
+**Stack:** Dockerfile, Dockerfile, docker-compose.yml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/API-Security
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar una API REST nueva contra los riesgos más comunes; formar a un equipo backend en fallos de autorización
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre la edición 2023 en el sitio del proyecto y revisa el riesgo API1 (BOLA).
+**Qué comprobar:** Obtienes escenarios de ataque y medidas de prevención.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `crapi`
+
+## `owasp-devguide`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,guide,sdlc
+
+**Qué es:** Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/DevGuide
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: introducir prácticas de desarrollo seguro en un equipo nuevo; elegir qué proyecto OWASP usar en cada fase
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre devguide.owasp.org y lee la sección de implementación.
+**Qué comprobar:** Obtienes prácticas y referencias a proyectos OWASP aplicables.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `cheatsheetseries`
+
+## `owasp-java-encoder`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=security,xss,encoding,java
+
+**Qué es:** Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución.
+**Stack:** Java, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/owasp-java-encoder
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/OWASP/owasp-java-encoder/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: codificar datos de usuario al renderizar plantillas JSP; escapar valores insertados en JavaScript en línea
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Añade la dependencia Maven del README a un proyecto Java de prueba y usa Encode.forHtml.
+**Qué comprobar:** La salida queda codificada para el contexto HTML.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `java-html-sanitizer`, `cheatsheetseries`
+
+## `owasp-llm-top10`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,llm,genai,awareness
+
+**Qué es:** Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project.
+**Stack:** Python, Gemfile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/www-project-top-10-for-large-language-model-applications
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar los riesgos de un asistente con RAG antes de lanzarlo; priorizar defensas contra inyección de prompts en un agente
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre la edición vigente en genai.owasp.org y revisa el riesgo de inyección de prompts.
+**Qué comprobar:** Obtienes escenarios de ataque y medidas de mitigación.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `garak`, `promptfoo`
+
+## `owasp-top10`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,awareness,web,standard
+
+**Qué es:** Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados.
+**Stack:** HTML, Makefile, package.json, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/Top10
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: formar a un equipo de desarrollo en los riesgos web más comunes; priorizar una revisión de código por categorías de riesgo
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre la edición vigente en owasp.org/Top10 y lee la categoría de control de acceso roto.
+**Qué comprobar:** Obtienes la descripción, ejemplos de ataque, prevención y CWE relacionados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `asvs`, `cheatsheetseries`, `juice-shop`, `threat-dragon`
+
+## `owtf`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security,pentest,web,python
+
+**Qué es:** Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web.
+**Stack:** Python, Makefile, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/owtf/owtf
+
+**Instalación** [+]:
+
+```
+git clone https://github.com/owtf/owtf.git
+cd owtf
+make compose-safe
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: coordinar varias herramientas en un pentest web autorizado; seguir casos de la WSTG con una sola interfaz
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Clona el repo y ejecuta `make compose-safe` como indica el README; abre la interfaz en localhost:8019.
+**Qué comprobar:** Ves la interfaz web lista para crear un objetivo de laboratorio.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `wstg`
 
 ## `pacu`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
@@ -2337,6 +3004,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Interacción local/remota funcionando.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pwndbg`, `ghidra`
+
+## `pytm`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=security,threat-modeling,python,as-code
+
+**Qué es:** Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas.
+**Stack:** Python, Dockerfile, Makefile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/pytm
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/OWASP/pytm/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue el ejemplo tm.py del README en un entorno con las dependencias indicadas y genera el DFD.
+**Qué comprobar:** Obtienes un diagrama de flujo de datos y la lista de amenazas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `asvs`
+**Alternativas (elige una):** `threat-dragon`
 
 ## `radare2`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -2610,6 +3308,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ffuf`, `hashcat`, `nuclei`
 **Alternativas (elige una):** `payloadsallthethings`
+
+## `securecodebox`
+role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security,kubernetes,scanner,devsecops,go
+
+**Qué es:** Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos.
+**Stack:** Go
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/secureCodeBox/secureCodeBox
+
+**Instalación** [+]:
+
+```
+helm --namespace securecodebox-system upgrade --install --create-namespace securecodebox-operator oci://ghcr.io/securecodebox/helm/operator
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: programar escaneos periódicos de un entorno de staging autorizado; enviar resultados de varios escáneres a DefectDojo
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala el operador con Helm según la guía de instalación oficial en un clúster de pruebas.
+**Qué comprobar:** El operador queda listo para lanzar un escaneo de ejemplo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `defectdojo`, `nuclei`
 
 ## `security-audit-skill`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,javascript
@@ -3075,6 +3803,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes el SBOM.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `grype`, `trivy`
+**Alternativas (elige una):** `cdxgen`
 
 ## `syzkaller`
 role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security
@@ -3135,6 +3864,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Éxitos/fracasos según el diccionario.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `seclists`, `nmap`
+
+## `threat-dragon`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,threat-modeling,stride,javascript
+
+**Qué es:** Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web.
+**Stack:** JavaScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/threat-dragon
+
+**Instalación** [+]:
+
+```
+docker pull threatdragon/owasp-threat-dragon:stable
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo.
+**Qué comprobar:** Obtienes un diagrama con amenazas asociadas y un informe exportable.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `asvs`, `cheatsheetseries`, `owasp-top10`
+**Alternativas (elige una):** `pytm`
 
 ## `trivy`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,go,cli,devops
@@ -3257,6 +4017,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `crowdsec`, `lynis`, `trivy`
 
+## `webgoat`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,training,vulnerable-app,java
+
+**Qué es:** Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10.
+**Stack:** JavaScript, Dockerfile, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/WebGoat/WebGoat
+
+**Instalación** [+]:
+
+```
+docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta la imagen Docker oficial ligada a 127.0.0.1 como indica el README y abre WebGoat en el navegador.
+**Qué comprobar:** Accedes a las lecciones y completas la primera.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `zaproxy`, `caido`, `wstg`
+**Alternativas (elige una):** `juice-shop`
+
 ## `wireshark`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,c,network,app
 
@@ -3316,6 +4107,66 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Informe de usuarios/plugins/vulns según cuota API.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `nuclei`, `ffuf`
+
+## `wrongsecrets`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,secrets,training,kubernetes
+
+**Qué es:** Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios.
+**Stack:** HTML, Dockerfile, package.json, pom.xml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/wrongsecrets
+
+**Instalación** [+]:
+
+```
+docker run -p 8080:8080 -p 8090:8090 jeroenwillemsen/wrongsecrets:latest-no-vault
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: enseñar a detectar secretos filtrados en imágenes de contenedor; practicar la gestión de secretos en Kubernetes
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Ejecuta la imagen Docker sin Vault como indica el README y abre la aplicación en localhost:8080.
+**Qué comprobar:** Accedes a los retos básicos de secretos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `gitleaks`, `trufflehog`
+
+## `wstg`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=security,testing,guide,web
+
+**Qué es:** Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG.
+**Stack:** CSS
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OWASP/wstg
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: planificar un pentest web con una lista de casos WSTG; citar identificadores WSTG en un informe de hallazgos
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre la versión estable de la guía en el sitio de OWASP y elige una categoría, por ejemplo pruebas de autenticación.
+**Qué comprobar:** Obtienes los casos de prueba, sus objetivos y cómo verificarlos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `zaproxy`, `juice-shop`, `cheatsheetseries`, `asvs`, `webgoat`
 
 ## `x64dbg`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c

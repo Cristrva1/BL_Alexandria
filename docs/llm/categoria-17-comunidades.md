@@ -21,7 +21,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `rocket-chat` | Plataforma de comunicación autoalojable para equipos y atención al cliente, con… | 2 Intermedio | 75 | MIT + licencia Enterprise (ee/) (open-core) | recomendado |
 | `mattermost` | Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat… | 2 Intermedio | 71 | AGPL-3.0 / Apache-2.0 (herramientas) + Enterprise (open-core) | alternativa |
 | `fluxer` | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con… | 2 Intermedio | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `element-web` | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `element-web` | Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver… | 2 Intermedio | 66 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `zulip` | Chat de equipo open source con hilos por tema: combina lo mejor del email y del… | 3 Avanzado | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `synapse` | Servidor doméstico de Matrix de referencia, mantenido por Element: chat… | 3 Avanzado | 59 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
@@ -66,7 +66,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Element Web (`element-web`)
 
-- **Repo:** https://github.com/element-hq/element-web · AGPL-3.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/element-hq/element-web · AGPL-3.0 · nivel 2 · 66/100
 - **Qué es:** Cliente Matrix AGPL de Element.
 - **Cuándo elegirlo:** Casos: UI web delante de Synapse propio; salas E2E para un equipo.
 - **Requisitos:** nivel 2: preparación media; TypeScript, package.json; API de IA: no.

@@ -10,9 +10,9 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-**Nivel:** 2 Intermedio — preparación media; requiere programar con él
+**Nivel:** 2 Intermedio — preparación media; requiere programar con él; varios servicios con Docker Compose
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

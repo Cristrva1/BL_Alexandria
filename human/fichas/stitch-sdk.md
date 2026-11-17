@@ -46,7 +46,7 @@ Grupo **De diseño o captura a código**: Stitch SDK ocupa la posición 2 de 2 (
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [screenshot-to-code](screenshot-to-code.md) ⭐ recomendado | 60 | Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
+| 1 | [screenshot-to-code](screenshot-to-code.md) ⭐ recomendado | 63 | Si buscas esto: convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
 | 2 | **Stitch SDK** (esta ficha) | 49 | Si buscas esto: sDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
 
 ## Acceso, coste y equipo

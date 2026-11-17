@@ -18,8 +18,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `skillspector` | Herramienta que audita skills de agentes y detecta comandos peligrosos… | 1 Básico | 73 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `cybersecurity-skills` | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `skillspector` | Herramienta que audita skills de agentes y detecta comandos peligrosos… | 1 Básico | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `cybersecurity-skills` | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `security-audit-skill` | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
 | `defending-code-reference-harness` | Arnés de referencia de Anthropic con skills para modelar amenazas, escanear… | 2 Intermedio | 49 | Apache-2.0 (OSI permisiva) | sin grupo |
 
@@ -29,7 +29,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SkillSpector (`skillspector`)
 
-- **Repo:** https://github.com/NVIDIA/SkillSpector · Apache-2.0 · nivel 1 · 73/100
+- **Repo:** https://github.com/NVIDIA/SkillSpector · Apache-2.0 · nivel 1 · 74/100
 - **Qué es:** Escáner de seguridad para skills de agentes de IA, de NVIDIA. Licencia Apache-2.0. Es activo (~26k estrellas, v2.13.4) y forma parte de la canalización NVIDIA Verified Skills.
 - **Cuándo elegirlo:** Casos: Examinar una skill antes de incorporarla al agente; Añadir un escaneo de skills a una revisión de cambios.
 - **Requisitos:** nivel 1: preparación sencilla; Python, Git, uv y Make;  entorno Bash compatible para la ruta seleccionada; hardware prerequisites; API de IA: opcional; Python, Git, uv y Make; entorno Bash compatible para la ruta seleccionada.
@@ -53,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Cybersecurity Skills (comunidad) (`cybersecurity-skills`)
 
-- **Repo:** https://github.com/mukul975/Anthropic-Cybersecurity-Skills · Apache-2.0 · nivel 1 · 63/100
+- **Repo:** https://github.com/mukul975/Anthropic-Cybersecurity-Skills · Apache-2.0 · nivel 1 · 64/100
 - **Qué es:** Biblioteca comunitaria de skills de ciberseguridad para agentes, de @mukul975. Licencia Apache-2.0. No está afiliada a Anthropic pese a su nombre. Tiene ~36k estrellas (v1.3.0) y su último cambio es de agosto de 2026.
 - **Cuándo elegirlo:** Casos: Organizar una revisión de configuración; Preparar un ejercicio de respuesta defensiva.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; herramientas de la skill elegida; entorno propio de práctica; hardware prerequisites; API de IA: no; Agente compatible; herramientas de la skill elegida; entorno propio de práctica.

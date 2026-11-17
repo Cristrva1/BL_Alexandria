@@ -48,7 +48,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/microsoft/ML-For-Beginners · MIT · nivel 1 · 70/100
 - **Qué es:** Currículo educativo de código abierto (MIT) de Microsoft (serie «for Beginners»). Muy popular; mantenimiento continuo con traducciones automáticas.
-- **Cuándo elegirlo:** Casos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Jupyter Notebook, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/microsoft/ML-For-Beginners.git` — fuente: https://github.com/microsoft/ML-For-Beginners/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter. Éxito: El cuaderno se ejecuta y muestra el primer modelo de regresión.
@@ -70,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/labmlai/annotated_deep_learning_paper_implementations · MIT · nivel 1 · 59/100
 - **Qué es:** Colección educativa de código abierto (MIT) de labml.ai (Varuna Jayasiri y colaboradores). Muy popular; se añaden implementaciones con frecuencia.
-- **Cuándo elegirlo:** Casos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos. Evítalo si necesitas una aplicación lista para ejecutar en lugar de material de consulta.
+- **Cuándo elegirlo:** Casos: entender un mecanismo como la atención o RoPE leyendo código comentado; reutilizar una implementación de referencia como punto de partida para experimentos.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, requirements.txt, setup.py; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install labml-nn` — fuente: https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/readme.md
 - **Primera prueba propuesta (no ejecutada):** Abre en nn.labml.ai la implementación de atención multi-cabeza y lee el código con sus notas. Éxito: Ves el código de PyTorch con la explicación de cada paso al lado.

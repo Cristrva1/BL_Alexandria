@@ -21,7 +21,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `discord-js` | Módulo Node.js de referencia para interactuar con la API de Discord y crear… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `python-telegram-bot` | Biblioteca Python asíncrona de referencia para crear bots de Telegram, con… | 2 Intermedio | 68 | LGPL-3.0 (OSI copyleft) | sin grupo |
 | `botpress` | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el… | 2 Intermedio | 53 | MIT (OSI permisiva) | sin grupo |
-| `typebot` | Constructor visual de chatbots conversacionales, auto-hospedable, para web… | 2 Intermedio | 50 | FSL-1.1-Apache-2.0 (source-available) | sin grupo |
+| `typebot` | Constructor visual de chatbots conversacionales, auto-hospedable, para web… | 2 Intermedio | 53 | FSL-1.1-Apache-2.0 (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -62,10 +62,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Typebot (`typebot`)
 
-- **Repo:** https://github.com/baptisteArno/typebot.io · FSL-1.1-Apache-2.0 · nivel 2 · 50/100
+- **Repo:** https://github.com/baptisteArno/typebot.io · FSL-1.1-Apache-2.0 · nivel 2 · 53/100
 - **Qué es:** Constructor de chatbots visual y autoalojable creado por Baptiste Arnaud. Se distribuye bajo Functional Source License 1.1 con conversión futura a Apache 2.0 (FSL-1.1-Apache-2.0), un modelo «Fair Source» con restricciones de uso…
 - **Cuándo elegirlo:** Casos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes.
-- **Requisitos:** nivel 2: preparación media; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI; hardware prerequisites; API de IA: opcional; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI; hardware prerequisites; API de IA: opcional; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/baptisteArno/typebot.io/blob/main/apps/docs/self-hosting/deploy/docker.mdx
 - **Primera prueba propuesta (no ejecutada):** Crea un flujo de dos preguntas con respuestas fijas y comprueba la rama elegida Éxito: El resultado guarda respuestas y recorre el camino esperado
 - **Combina con:** `evolution-api` [17/whatsapp], `chatwoot` [18/crm], `openwa` [17/whatsapp], `waha` [17/whatsapp], `formbricks` [18/reservas]

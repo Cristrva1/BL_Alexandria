@@ -21,8 +21,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `headscale` | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 69 | BSD-3-Clause (OSI permisiva) | recomendado |
 | `frp` | Proxy inverso rápido para exponer servidores locales detrás de NAT o… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `netbird` | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso… | 2 Intermedio | 63 | BSD-3-Clause + AGPL-3.0 (management, signal, relay) (OSI copyleft) | alternativa |
-| `wg-easy` | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 1 Básico | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `masterdnsvpn` | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
+| `wg-easy` | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `masterdnsvpn` | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -65,10 +65,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### WireGuard Easy (`wg-easy`)
 
-- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 1 · 63/100
+- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 2 · 63/100
 - **Qué es:** Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.
 - **Cuándo elegirlo:** Casos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `sudo docker compose up / down` — fuente: https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md
 - **Primera prueba propuesta (no ejecutada):** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard. Éxito: El cliente se conecta y aparece activo en el panel.
 - **Combina con:** `grafana` [10/bi], `caddy` [22/infraestructura], `pi-hole` [15/privacidad], `portainer` [22/infraestructura]
@@ -76,7 +76,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MasterDnsVPN (`masterdnsvpn`)
 
-- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 52/100
+- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 55/100
 - **Qué es:** MasterDnsVPN, proyecto de investigación en Go para transportar tráfico TCP mediante consultas y respuestas DNS, de @masterking32. Licencia MIT. Tiene ~7.3k estrellas y existe una versión legacy en Python.
 - **Cuándo elegirlo:** Casos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio.
 - **Requisitos:** nivel 2: preparación media; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio; hardware prerequisites; API de IA: no; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio.

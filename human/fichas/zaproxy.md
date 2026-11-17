@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 74/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -37,9 +37,9 @@ Escrito en Java; se instala con los instaladores multiplataforma, paquetes o im�
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OWASP Juice Shop](juice-shop.md)
+[DefectDojo](defectdojo.md) · [OWASP Juice Shop](juice-shop.md) · [OWASP Noir](noir.md) · [OWASP Web Security Testing Guide](wstg.md) · [WebGoat](webgoat.md)
 
 **Notas:** No hay alternativa equivalente abierta en el catálogo (Burp Suite es propietario); mitmproxy es un proxy de depuración, no un escáner.
 
@@ -53,8 +53,8 @@ Grupo **Proxies de pruebas de aplicaciones web**: ZAP (Zed Attack Proxy) ocupa l
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **ZAP (Zed Attack Proxy)** (esta ficha) ⭐ recomendado | 73 | Si buscas esto: escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. |
-| 2 | [Caido](caido.md) | 38 | Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. |
+| 1 | **ZAP (Zed Attack Proxy)** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo. |
+| 2 | [Caido](caido.md) | 39 | Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. |
 
 ## Acceso, coste y equipo
 

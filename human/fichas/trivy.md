@@ -39,9 +39,9 @@ Se distribuye como binario Go (Homebrew, Docker `aquasec/trivy`, paquetes y GitH
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (9). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Checkov](checkov.md) · [Cosign](cosign.md) · [Falco](falco.md) · [kube-bench](kube-bench.md) · [OSV-Scanner](osv-scanner.md) · [Pacu](pacu.md) · [Prowler](prowler.md) · [Syft](syft.md)
+[Checkov](checkov.md) · [Cosign](cosign.md) · [DefectDojo](defectdojo.md) · [Falco](falco.md) · [kube-bench](kube-bench.md) · [OSV-Scanner](osv-scanner.md) · [Pacu](pacu.md) · [Prowler](prowler.md) · [Syft](syft.md)
 
 **Notas:** La base de vulnerabilidades se descarga de registros públicos; en entornos aislados hay que preparar una réplica.
 
@@ -56,7 +56,7 @@ Grupo **Escáneres de vulnerabilidades de contenedores**: Trivy ocupa la posici�
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Trivy** (esta ficha) ⭐ recomendado | 79 | Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. |
-| 2 | [Grype](grype.md) | 70 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
+| 2 | [Grype](grype.md) | 71 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT (partes GPL-2.0 y BSD). Fuente: [LICENSE](https://github.com/Gallopsled/pwntools/blob/dev/LICENSE-pwntools.txt). GitHub la marca como NOASSERTION.
 

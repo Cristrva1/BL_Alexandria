@@ -10,7 +10,7 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-**Nivel:** 2 Intermedio — preparación media
+**Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
 **Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 

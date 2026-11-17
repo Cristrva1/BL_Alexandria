@@ -18,21 +18,32 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `osv-scanner` | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `trivy` | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
-| `osv-scanner` | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de… | 1 Básico | 78 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `syft` | Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes… | 1 Básico | 76 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `checkov` | SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y… | 1 Básico | 72 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `falco` | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls… | 4 Experto | 72 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `cosign` | Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `grype` | Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja… | 1 Básico | 70 | Apache-2.0 (OSI permisiva) | alternativa |
-| `prowler` | Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos… | 2 Intermedio | 69 | Apache-2.0 (open-core) | sin grupo |
-| `kube-bench` | Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta… | 2 Intermedio | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `scubagear` | Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra… | 2 Intermedio | 51 | CC0-1.0 (OSI permisiva) | sin grupo |
-| `pacu` | Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en… | 2 Intermedio | 50 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `syft` | Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes… | 1 Básico | 77 | Apache-2.0 (OSI permisiva) | recomendado |
+| `falco` | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls… | 4 Experto | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `checkov` | SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y… | 1 Básico | 73 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `cosign` | Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `grype` | Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja… | 1 Básico | 71 | Apache-2.0 (OSI permisiva) | alternativa |
+| `prowler` | Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos… | 2 Intermedio | 70 | Apache-2.0 (open-core) | sin grupo |
+| `kube-bench` | Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `scubagear` | Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra… | 2 Intermedio | 52 | CC0-1.0 (OSI permisiva) | sin grupo |
+| `pacu` | Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en… | 2 Intermedio | 51 | BSD-3-Clause (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### OSV-Scanner (`osv-scanner`)
+
+- **Repo:** https://github.com/google/osv-scanner · Apache-2.0 · nivel 1 · 79/100 · recomendado en «Análisis de dependencias vulnerables (SCA)»
+- **Qué es:** Scanner OSV de Google.
+- **Cuándo elegirlo:** Casos: escanear lockfiles en CI; revisar una imagen de lab.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Makefile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest` — fuente: https://github.com/google/osv-scanner/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest` y escanea un repo propio. Éxito: Listas vulnerabilidades OSV.
+- **Combina con:** `trivy`, `grype`
+- **Alternativas:** `dependency-check`, `dep-scan`
 
 ### Trivy (`trivy`)
 
@@ -46,39 +57,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `grype`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. La base de vulnerabilidades se descarga de registros públicos; en entornos aislados hay que preparar una réplica.
 
-### OSV-Scanner (`osv-scanner`)
-
-- **Repo:** https://github.com/google/osv-scanner · Apache-2.0 · nivel 1 · 78/100
-- **Qué es:** Scanner OSV de Google.
-- **Cuándo elegirlo:** Casos: escanear lockfiles en CI; revisar una imagen de lab.
-- **Requisitos:** nivel 1: preparación sencilla; Go, Makefile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest` — fuente: https://github.com/google/osv-scanner/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `go install github.com/google/osv-scanner/v2/cmd/osv-scanner@latest` y escanea un repo propio. Éxito: Listas vulnerabilidades OSV.
-- **Combina con:** `trivy`, `grype`
-
 ### Syft (`syft`)
 
-- **Repo:** https://github.com/anchore/syft · Apache-2.0 · nivel 1 · 76/100
+- **Repo:** https://github.com/anchore/syft · Apache-2.0 · nivel 1 · 77/100 · recomendado en «Generadores de SBOM»
 - **Qué es:** Generador SBOM de Anchore.
 - **Cuándo elegirlo:** Casos: generar SBOM de una imagen propia; adjuntar SBOM al artefacto de CI.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `curl -sSfL https://get.anchore.io/syft | sudo sh -s -- -b /usr/local/bin` — fuente: https://github.com/anchore/syft/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `curl -sSfL https://get.anchore.io/syft | sudo sh -s -- -b /usr/local/bin` y ejecuta `syft <imagen>`. Éxito: Obtienes el SBOM.
 - **Combina con:** `grype`, `trivy`
-
-### Checkov (`checkov`)
-
-- **Repo:** https://github.com/bridgecrewio/checkov · Apache-2.0 · nivel 1 · 72/100
-- **Qué es:** Escáner de IaC open source de Bridgecrew/Prisma Cloud para detectar misconfigs antes del despliegue.
-- **Cuándo elegirlo:** Casos: revisar un módulo Terraform antes del apply; bloquear un manifiesto K8s con privilegios excesivos en CI.
-- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, pyproject.toml, setup.py; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip3 install checkov` — fuente: https://github.com/bridgecrewio/checkov/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `pip3 install checkov` y ejecuta `checkov -d .` en un repo IaC propio. Éxito: Obtienes checks fallidos con archivo y línea.
-- **Combina con:** `trivy`, `semgrep` [16/defensa], `prowler`, `grype`
+- **Alternativas:** `cdxgen`
 
 ### Falco (`falco`)
 
-- **Repo:** https://github.com/falcosecurity/falco · Apache-2.0 · nivel 4 · 72/100
+- **Repo:** https://github.com/falcosecurity/falco · Apache-2.0 · nivel 4 · 74/100
 - **Qué es:** Proyecto CNCF de seguridad en tiempo de ejecución para hosts Linux y Kubernetes.
 - **Cuándo elegirlo:** Casos: detectar un shell interactivo en un pod de producción propia; alertar sobre escritura inesperada en /etc dentro de un contenedor.
 - **Requisitos:** nivel 4: preparación difícil; C++, CMakeLists.txt, Makefile; API de IA: no.
@@ -86,9 +78,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Sigue https://falco.org/docs/getting-started e instala Falco en un nodo o clúster de laboratorio. Éxito: Al provocar un evento de prueba ves la alerta correspondiente.
 - **Combina con:** `trivy`, `wazuh` [16/deteccion], `crowdsec` [16/deteccion], `grype`
 
+### Checkov (`checkov`)
+
+- **Repo:** https://github.com/bridgecrewio/checkov · Apache-2.0 · nivel 1 · 73/100
+- **Qué es:** Escáner de IaC open source de Bridgecrew/Prisma Cloud para detectar misconfigs antes del despliegue.
+- **Cuándo elegirlo:** Casos: revisar un módulo Terraform antes del apply; bloquear un manifiesto K8s con privilegios excesivos en CI.
+- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, pyproject.toml, setup.py; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip3 install checkov` — fuente: https://github.com/bridgecrewio/checkov/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `pip3 install checkov` y ejecuta `checkov -d .` en un repo IaC propio. Éxito: Obtienes checks fallidos con archivo y línea.
+- **Combina con:** `trivy`, `semgrep` [16/defensa], `prowler`, `grype`
+
 ### Cosign (`cosign`)
 
-- **Repo:** https://github.com/sigstore/cosign · Apache-2.0 · nivel 2 · 70/100
+- **Repo:** https://github.com/sigstore/cosign · Apache-2.0 · nivel 2 · 71/100
 - **Qué es:** Herramienta Sigstore para supply-chain signing.
 - **Cuándo elegirlo:** Casos: firmar una imagen interna; verificar firmas antes del deploy.
 - **Requisitos:** nivel 2: preparación media; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -98,7 +100,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Grype (`grype`)
 
-- **Repo:** https://github.com/anchore/grype · Apache-2.0 · nivel 1 · 70/100 · alternativa en «Escáneres de vulnerabilidades de contenedores»
+- **Repo:** https://github.com/anchore/grype · Apache-2.0 · nivel 1 · 71/100 · alternativa en «Escáneres de vulnerabilidades de contenedores»
 - **Qué es:** Escáner de vulnerabilidades open source de Anchore, pareja natural de Syft y alternativa/complemento de Trivy.
 - **Cuándo elegirlo:** Casos: escanear una imagen Docker propia antes de publicarla; evaluar un SBOM generado en CI.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -109,7 +111,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Prowler (`prowler`)
 
-- **Repo:** https://github.com/prowler-cloud/prowler · Apache-2.0 · nivel 2 · 69/100
+- **Repo:** https://github.com/prowler-cloud/prowler · Apache-2.0 · nivel 2 · 70/100
 - **Qué es:** Auditoría de seguridad multi-cloud de Prowler. Open-core: CLI/SDK Apache-2.0 gratuitos; Prowler Cloud y Private Cloud son de pago.
 - **Cuándo elegirlo:** Casos: auditar cuentas AWS de laboratorio contra CIS; generar un informe de posture antes de un ejercicio interno.
 - **Requisitos:** nivel 2: preparación media; Python, Dockerfile, Makefile, docker-compose.yml, pyproject.toml; API de IA: no.
@@ -120,7 +122,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### kube-bench (`kube-bench`)
 
-- **Repo:** https://github.com/aquasecurity/kube-bench · Apache-2.0 · nivel 2 · 53/100
+- **Repo:** https://github.com/aquasecurity/kube-bench · Apache-2.0 · nivel 2 · 58/100
 - **Qué es:** Auditor CIS K8s de Aqua Security.
 - **Cuándo elegirlo:** Casos: auditar un clúster de lab tras el deploy; integrar CIS check en el pipeline.
 - **Requisitos:** nivel 2: preparación media; Go, Dockerfile, go.mod; API de IA: no.
@@ -130,7 +132,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ScubaGear (`scubagear`)
 
-- **Repo:** https://github.com/cisagov/ScubaGear · CC0-1.0 · nivel 2 · 51/100
+- **Repo:** https://github.com/cisagov/ScubaGear · CC0-1.0 · nivel 2 · 52/100
 - **Qué es:** Herramienta CISA (CC0-1.0) para posture M365.
 - **Cuándo elegirlo:** Casos: auditar un tenant M365 de lab; preparar evidencia BOD 25-01.
 - **Requisitos:** nivel 2: preparación media; PowerShell; API de IA: no.
@@ -140,7 +142,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Pacu (`pacu`)
 
-- **Repo:** https://github.com/RhinoSecurityLabs/pacu · BSD-3-Clause · nivel 2 · 50/100
+- **Repo:** https://github.com/RhinoSecurityLabs/pacu · BSD-3-Clause · nivel 2 · 51/100
 - **Qué es:** Framework ofensivo AWS.
 - **Cuándo elegirlo:** Casos: enumerar privilegios de una cuenta sandbox; simular escalada IAM en lab.
 - **Requisitos:** nivel 2: preparación media; Python, Dockerfile, Makefile, pyproject.toml; API de IA: no.

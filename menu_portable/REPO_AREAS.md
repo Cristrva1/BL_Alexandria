@@ -72,19 +72,19 @@ Comprender procesos y examinar cómo se comporta el software.
 
 Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-`aflplusplus`, `aircrack-ng`, `bettercap`, `bla`, `caido`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `hashcat`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `nuclei`, `pwntools`, `semgrep`, `sqlmap`, `syzkaller`, `thc-hydra`, `wireshark`, `wpscan`, `zaproxy`
+`aflplusplus`, `aircrack-ng`, `bettercap`, `bla`, `caido`, `cdxgen`, `crapi`, `defectdojo`, `dep-scan`, `dependency-check`, `dependency-track`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `hashcat`, `java-html-sanitizer`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `nettacker`, `nuclei`, `owasp-java-encoder`, `owtf`, `pwntools`, `pytm`, `securecodebox`, `semgrep`, `sqlmap`, `syzkaller`, `thc-hydra`, `threat-dragon`, `webgoat`, `wireshark`, `wpscan`, `wrongsecrets`, `zaproxy`
 
 ### Pruebas de intrusión autorizadas
 
 Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
-`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `certipy`, `dnsx`, `empire`, `evilginx2`, `goad`, `httpx`, `impacket`, `interactsh`, `ligolo-ng`, `masscan`, `metasploit`, `mimikatz`, `mythic`, `naabu`, `netexec`, `nmap`, `peass-ng`, `responder`, `rubeus`, `rustscan`, `sliver`, `social-engineer-toolkit`, `subfinder`
+`amass`, `atomic-red-team`, `bloodhound`, `caldera`, `certipy`, `dnsx`, `empire`, `evilginx2`, `goad`, `httpx`, `impacket`, `interactsh`, `ligolo-ng`, `masscan`, `metasploit`, `mimikatz`, `mythic`, `naabu`, `netexec`, `nmap`, `noir`, `peass-ng`, `responder`, `rubeus`, `rustscan`, `sliver`, `social-engineer-toolkit`, `subfinder`
 
 ### Detección y respuesta
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-`arkime`, `coreruleset`, `crowdsec`, `detection-rules`, `fail2ban`, `loki`, `osquery`, `securityonion`, `shuffle`, `sigma`, `suricata`, `wazuh`, `zeek`
+`arkime`, `coraza`, `coreruleset`, `crowdsec`, `detection-rules`, `fail2ban`, `loki`, `modsecurity`, `osquery`, `securityonion`, `shuffle`, `sigma`, `suricata`, `wazuh`, `zeek`
 
 ### Nube, contenedores e IaC
 
@@ -102,7 +102,7 @@ Gestionar contraseñas y proteger servicios personales.
 
 Directorios y material de referencia para orientar el análisis.
 
-`awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cheatsheetseries`, `cybersecurity-skills`, `hacktricks`, `payloadsallthethings`, `seclists`
+`aisvs`, `asvs`, `awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cheatsheetseries`, `cybersecurity-skills`, `hacktricks`, `mastg`, `masvs`, `owasp-ai-testing-guide`, `owasp-api-security`, `owasp-devguide`, `owasp-llm-top10`, `owasp-top10`, `payloadsallthethings`, `seclists`, `wstg`
 
 ### Respuesta a incidentes y forense
 

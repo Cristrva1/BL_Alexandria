@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; requiere programar con él; dominio especializado
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** Apache-1.1 modificada. Texto de Apache 1.1 con el nombre cambiado a Impacket/Fortra. Fuente: [LICENSE](https://github.com/fortra/impacket/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 

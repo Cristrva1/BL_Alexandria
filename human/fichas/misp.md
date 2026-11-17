@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — plataforma de inteligencia con Docker; requiere curar feeds · corregido a mano
 
-**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — SOAR con Docker Compose; flujos visuales · corregido a mano
 
-**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

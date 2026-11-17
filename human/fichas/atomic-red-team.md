@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -51,8 +51,8 @@ Grupo **Emulación de adversarios**: Atomic Red Team ocupa la posición 1 de 2 (
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Atomic Red Team** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. |
-| 2 | [CALDERA](caldera.md) | 62 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
+| 1 | **Atomic Red Team** (esta ficha) ⭐ recomendado | 65 | Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. |
+| 2 | [CALDERA](caldera.md) | 64 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
 
 ## Acceso, coste y equipo
 

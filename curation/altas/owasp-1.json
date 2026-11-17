@@ -1,0 +1,954 @@
+{
+ "lote": "owasp-1",
+ "fecha": "2026-11-16",
+ "metodo": "gh api (organización OWASP y proyectos OWASP en otras organizaciones), README, LICENSE y documentación oficial (2026-11-16). No se instaló ningún proyecto.",
+ "alt_groups": [
+  [
+   "modsecurity",
+   "coraza"
+  ],
+  [
+   "threat-dragon",
+   "pytm"
+  ],
+  [
+   "webgoat",
+   "juice-shop"
+  ],
+  [
+   "cdxgen",
+   "syft"
+  ]
+ ],
+ "repos": [
+  {
+   "gh": "DependencyTrack/dependency-track",
+   "id": "dependency-track",
+   "name": "Dependency-Track",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "server",
+   "one": "Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos.",
+   "how": "Servidor Java (API + interfaz web) que analiza SBOM contra NVD, GitHub Advisories, OSV y otras fuentes, con políticas, notificaciones y API REST.",
+   "examples": [
+    "subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia",
+    "auditar licencias de componentes de toda la cartera de aplicaciones"
+   ],
+   "try": [
+    "Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio.",
+    "Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "sbom",
+    "sca",
+    "supply-chain",
+    "cyclonedx",
+    "java"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "curl -LO https://dependencytrack.org/docker-compose.yml\ndocker compose up -d",
+   "url": "https://docs.dependencytrack.org/getting-started/deploy-docker/",
+   "alt": [],
+   "caveat": "Requiere al menos 4 GB de RAM para el servidor API según la documentación; la primera sincronización de fuentes de vulnerabilidades tarda."
+  },
+  {
+   "gh": "DefectDojo/django-DefectDojo",
+   "id": "defectdojo",
+   "name": "DefectDojo",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "server",
+   "one": "Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección.",
+   "how": "Aplicación Django con API REST y parsers para herramientas SAST, DAST, SCA e infraestructura; organiza productos, pruebas y hallazgos.",
+   "examples": [
+    "centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero",
+    "medir el tiempo de corrección de hallazgos críticos por producto"
+   ],
+   "try": [
+    "Clona el repo y levanta la versión de prueba con Docker Compose como indica el README; importa un informe de un escáner propio.",
+    "Ves los hallazgos deduplicados asociados a un producto y a una prueba."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "vulnerability-management",
+    "devsecops",
+    "aspm",
+    "python"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up",
+   "url": "https://docs.defectdojo.com",
+   "alt": [],
+   "caveat": "Existe una edición comercial (DefectDojo Pro) con funciones adicionales; la edición comunitaria es BSD-3-Clause."
+  },
+  {
+   "gh": "dependency-check/DependencyCheck",
+   "id": "dependency-check",
+   "name": "OWASP Dependency-Check",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.",
+   "how": "CLI, plugins de Maven/Gradle/Ant/Jenkins e imagen Docker que identifican componentes (CPE) y los cruzan con la NVD y otras fuentes.",
+   "examples": [
+    "romper el build de Maven cuando aparece una dependencia con CVSS alto",
+    "generar un informe HTML de dependencias vulnerables para una auditoría"
+   ],
+   "try": [
+    "Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio.",
+    "Obtienes un informe HTML con las dependencias y los CVE asociados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "sca",
+    "dependencies",
+    "cve",
+    "java"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "brew update && brew install dependency-check",
+   "url": "https://dependency-check.github.io/DependencyCheck/",
+   "alt": [],
+   "caveat": "La identificación por CPE produce falsos positivos y negativos; la descarga inicial de la NVD es lenta sin clave de API."
+  },
+  {
+   "gh": "owasp-modsecurity/ModSecurity",
+   "id": "modsecurity",
+   "name": "ModSecurity",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "engine",
+   "one": "Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set.",
+   "how": "Biblioteca C++ que se integra en Nginx, Apache u otros servidores mediante conectores y evalúa reglas en cada fase de la petición.",
+   "examples": [
+    "proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear",
+    "registrar intentos de inyección SQL y XSS para un SOC"
+   ],
+   "try": [
+    "Sigue la compilación de libmodsecurity del README e integra el conector de Nginx en un servidor de laboratorio con el CRS.",
+    "Las peticiones maliciosas de prueba quedan registradas en el log de auditoría."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "waf",
+    "http",
+    "nginx",
+    "c++"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "git clone https://github.com/owasp-modsecurity/ModSecurity ModSecurity",
+   "url": "https://github.com/owasp-modsecurity/ModSecurity/wiki",
+   "alt": [
+    "coraza"
+   ],
+   "caveat": "Requiere compilar e integrar un conector (por ejemplo ModSecurity-nginx); ajusta falsos positivos en modo detección antes de bloquear."
+  },
+  {
+   "gh": "corazawaf/coraza",
+   "id": "coraza",
+   "name": "OWASP Coraza",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "library",
+   "one": "WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik.",
+   "how": "Biblioteca Go (coraza/v3) que evalúa reglas SecLang sobre transacciones HTTP; integraciones oficiales para Caddy, proxy-wasm y otros.",
+   "examples": [
+    "añadir un WAF con el CRS a un servicio escrito en Go",
+    "proteger un Caddy de laboratorio con el módulo de Coraza"
+   ],
+   "try": [
+    "Sigue el ejemplo de uso de Coraza del README en un programa Go de prueba con una regla sencilla.",
+    "La transacción con la carga de prueba queda interrumpida por la regla."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "waf",
+    "go",
+    "seclang"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://coraza.io/docs/",
+   "alt": [
+    "modsecurity"
+   ],
+   "caveat": "Es una biblioteca: el despliegue depende de la integración elegida; prueba el CRS en modo detección antes de bloquear."
+  },
+  {
+   "gh": "OWASP/Nettacker",
+   "id": "nettacker",
+   "name": "OWASP Nettacker",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML.",
+   "how": "CLI y API/interfaz web en Python con módulos de escaneo, fuerza bruta y vulnerabilidades; guarda resultados para comparar ejecuciones.",
+   "examples": [
+    "inventariar puertos y servicios de una red de laboratorio",
+    "detectar cambios en la superficie expuesta entre dos escaneos autorizados"
+   ],
+   "try": [
+    "Ejecuta la ayuda de la imagen Docker oficial como indica el README y lanza un port_scan contra un host propio.",
+    "Obtienes un informe con puertos abiertos y servicios detectados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "pentest",
+    "scanner",
+    "python"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "docker run owasp/nettacker --help",
+   "url": "https://nettacker.readthedocs.io/",
+   "alt": [],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo."
+  },
+  {
+   "gh": "OWASP/threat-dragon",
+   "id": "threat-dragon",
+   "name": "OWASP Threat Dragon",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web.",
+   "how": "Aplicación Electron y web (Node.js/Vue) que guarda los modelos en JSON y genera informes; integra almacenamiento en GitHub, GitLab o Bitbucket.",
+   "examples": [
+    "modelar las amenazas de una API nueva durante el diseño",
+    "documentar mitigaciones STRIDE para una revisión de arquitectura"
+   ],
+   "try": [
+    "Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo.",
+    "Obtienes un diagrama con amenazas asociadas y un informe exportable."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "threat-modeling",
+    "stride",
+    "javascript"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "docker pull threatdragon/owasp-threat-dragon:stable",
+   "url": "https://www.threatdragon.com/docs/",
+   "alt": [
+    "pytm"
+   ]
+  },
+  {
+   "gh": "WebGoat/WebGoat",
+   "id": "webgoat",
+   "name": "WebGoat",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para aprender y practicar vulnerabilidades del Top 10.",
+   "how": "Aplicación Java (Spring Boot) con lecciones interactivas y WebWolf como servidor auxiliar; se ejecuta con Docker o un JAR.",
+   "examples": [
+    "practicar inyección SQL y XSS siguiendo lecciones paso a paso",
+    "formar a desarrolladores en errores comunes de seguridad web"
+   ],
+   "try": [
+    "Ejecuta la imagen Docker oficial ligada a 127.0.0.1 como indica el README y abre WebGoat en el navegador.",
+    "Accedes a las lecciones y completas la primera."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "training",
+    "vulnerable-app",
+    "java"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "cmd": "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat",
+   "url": "https://owasp.org/www-project-webgoat/",
+   "alt": [
+    "juice-shop"
+   ],
+   "license": "GPL-2.0-or-later",
+   "caveat": "Aplicación deliberadamente vulnerable: ejecútala solo en local o en una red aislada, nunca expuesta a Internet ni en equipos con datos reales. Licencia GPL-2.0-or-later en LICENSE.txt pese a NOASSERTION en la API de GitHub."
+  },
+  {
+   "gh": "OWASP/wstg",
+   "id": "wstg",
+   "name": "OWASP Web Security Testing Guide",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Guía OWASP de referencia para probar la seguridad de aplicaciones web: metodología y casos de prueba con identificadores WSTG.",
+   "how": "Documento abierto en Markdown, publicado como web y PDF, con escenarios de prueba numerados por categoría.",
+   "examples": [
+    "planificar un pentest web con una lista de casos WSTG",
+    "citar identificadores WSTG en un informe de hallazgos"
+   ],
+   "try": [
+    "Abre la versión estable de la guía en el sitio de OWASP y elige una categoría, por ejemplo pruebas de autenticación.",
+    "Obtienes los casos de prueba, sus objetivos y cómo verificarlos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "testing",
+    "guide",
+    "web"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://owasp.org/www-project-web-security-testing-guide/",
+   "alt": [],
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia."
+  },
+  {
+   "gh": "OWASP/mastg",
+   "id": "mastg",
+   "name": "OWASP MASTG",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba ligados a MASVS.",
+   "how": "Manual abierto publicado en mas.owasp.org con pruebas, técnicas, herramientas y apps de ejemplo, mapeado a los controles MASVS y MASWE.",
+   "examples": [
+    "auditar el almacenamiento local y la red de una app Android propia",
+    "preparar un plan de pruebas para una app iOS antes de publicarla"
+   ],
+   "try": [
+    "Abre mas.owasp.org, elige un control MASVS (por ejemplo MASVS-STORAGE) y sigue sus pruebas para Android.",
+    "Obtienes los pasos, las herramientas y la evidencia esperada para cada prueba."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "mobile",
+    "android",
+    "ios",
+    "guide"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://mas.owasp.org/MASTG/",
+   "alt": [],
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia. Las pruebas sobre apps de terceros requieren autorización."
+  },
+  {
+   "gh": "OWASP/ASVS",
+   "id": "asvs",
+   "name": "OWASP ASVS",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para diseñar, desarrollar y auditar.",
+   "how": "Estándar abierto (versión 5.0) con requisitos numerados por capítulos, publicado en Markdown, PDF, CSV y JSON.",
+   "examples": [
+    "definir los requisitos de seguridad de un proyecto según su nivel de riesgo",
+    "usar los requisitos como lista de verificación en una auditoría"
+   ],
+   "try": [
+    "Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto.",
+    "Obtienes la lista de requisitos aplicables con sus identificadores."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "standard",
+    "requirements",
+    "appsec"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://owasp.org/www-project-application-security-verification-standard/",
+   "alt": [],
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia."
+  },
+  {
+   "gh": "OWASP/Top10",
+   "id": "owasp-top10",
+   "name": "OWASP Top 10",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prevención y CWE asociados.",
+   "how": "Documento abierto publicado en owasp.org/Top10 y versionado en GitHub; cada riesgo enlaza CWE, ejemplos y medidas de prevención.",
+   "examples": [
+    "formar a un equipo de desarrollo en los riesgos web más comunes",
+    "priorizar una revisión de código por categorías de riesgo"
+   ],
+   "try": [
+    "Abre la edición vigente en owasp.org/Top10 y lee la categoría de control de acceso roto.",
+    "Obtienes la descripción, ejemplos de ataque, prevención y CWE relacionados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "awareness",
+    "web",
+    "standard"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://owasp.org/Top10/",
+   "alt": [],
+   "license": "CC-BY-SA-4.0",
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia. Licencia CC BY-SA 4.0 en LICENSE pese a NOASSERTION en la API de GitHub. No es un estándar de cumplimiento: para requisitos verificables usa ASVS."
+  },
+  {
+   "gh": "OWASP/www-project-top-10-for-large-language-model-applications",
+   "id": "owasp-llm-top10",
+   "name": "OWASP Top 10 for LLM Applications",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia excesiva) del GenAI Security Project.",
+   "how": "Documento OWASP publicado en genai.owasp.org con versiones anuales, traducciones y guías complementarias.",
+   "examples": [
+    "revisar los riesgos de un asistente con RAG antes de lanzarlo",
+    "priorizar defensas contra inyección de prompts en un agente"
+   ],
+   "try": [
+    "Abre la edición vigente en genai.owasp.org y revisa el riesgo de inyección de prompts.",
+    "Obtienes escenarios de ataque y medidas de mitigación."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "llm",
+    "genai",
+    "awareness"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://genai.owasp.org",
+   "alt": [],
+   "license": "CC-BY-SA-4.0",
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia. Licencia confirmada en LICENSE.md pese a NOASSERTION en la API de GitHub.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/www-project-ai-testing-guide",
+   "id": "owasp-ai-testing-guide",
+   "name": "OWASP AI Testing Guide",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Metodología OWASP para evaluar la seguridad y fiabilidad de sistemas de IA: casos de prueba para aplicación, modelo, infraestructura y datos.",
+   "how": "Guía abierta (v1.0) en Markdown y PDF con casos de prueba numerados AITG por capa del sistema de IA.",
+   "examples": [
+    "planificar una evaluación de seguridad de un chatbot con LLM",
+    "verificar controles de un pipeline de entrenamiento"
+   ],
+   "try": [
+    "Descarga el PDF v1.0 enlazado en el README y elige los casos de la capa de aplicación.",
+    "Obtienes objetivos, pasos y resultados esperados para cada prueba."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "ai",
+    "llm",
+    "testing",
+    "guide"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://owasp.org/www-project-ai-testing-guide/",
+   "alt": [],
+   "license": "CC-BY-SA-4.0",
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia. Licencia confirmada en LICENSE.md pese a NOASSERTION en la API de GitHub.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/AISVS",
+   "id": "aisvs",
+   "name": "OWASP AISVS",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, agentes e infraestructura.",
+   "how": "Estándar abierto en Markdown, en la línea de ASVS, con capítulos y requisitos numerados por niveles.",
+   "examples": [
+    "definir requisitos de seguridad para una aplicación con LLM y agentes",
+    "auditar controles de un pipeline de ML"
+   ],
+   "try": [
+    "Abre el repositorio y revisa los capítulos de AISVS aplicables a un proyecto con LLM.",
+    "Obtienes una lista de requisitos con identificadores para verificar."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "ai",
+    "standard",
+    "requirements"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://github.com/OWASP/AISVS#readme",
+   "alt": [],
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/masvs",
+   "id": "masvs",
+   "name": "OWASP MASVS",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles para almacenamiento, criptografía, red, plataforma y resiliencia.",
+   "how": "Estándar abierto publicado en mas.owasp.org, base de las pruebas del MASTG y de la enumeración de debilidades MASWE.",
+   "examples": [
+    "fijar requisitos de seguridad para una app móvil nueva",
+    "estructurar una auditoría móvil por grupos de control"
+   ],
+   "try": [
+    "Abre mas.owasp.org/MASVS y revisa el grupo MASVS-STORAGE.",
+    "Obtienes los controles y enlaces a sus pruebas en el MASTG."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "mobile",
+    "standard"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://mas.owasp.org/MASVS/",
+   "alt": [],
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/API-Security",
+   "id": "owasp-api-security",
+   "name": "OWASP API Security Top 10",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Top 10 de OWASP sobre riesgos de seguridad en API: autorización a nivel de objeto, autenticación rota, consumo de recursos y más.",
+   "how": "Documento abierto del OWASP API Security Project con ediciones 2019 y 2023, ejemplos de ataque y prevención.",
+   "examples": [
+    "revisar una API REST nueva contra los riesgos más comunes",
+    "formar a un equipo backend en fallos de autorización"
+   ],
+   "try": [
+    "Abre la edición 2023 en el sitio del proyecto y revisa el riesgo API1 (BOLA).",
+    "Obtienes escenarios de ataque y medidas de prevención."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "api",
+    "awareness"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://owasp.org/API-Security/",
+   "alt": [],
+   "license": "CC-BY-SA-4.0",
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/DevGuide",
+   "id": "owasp-devguide",
+   "name": "OWASP Developer Guide",
+   "cat": 16,
+   "sub": "referencias",
+   "kind": "reference",
+   "one": "Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño, implementación, verificación y proyectos OWASP útiles en cada fase.",
+   "how": "Documento abierto publicado en devguide.owasp.org que enlaza estándares, guías y herramientas OWASP por fase del ciclo de desarrollo.",
+   "examples": [
+    "introducir prácticas de desarrollo seguro en un equipo nuevo",
+    "elegir qué proyecto OWASP usar en cada fase"
+   ],
+   "try": [
+    "Abre devguide.owasp.org y lee la sección de implementación.",
+    "Obtienes prácticas y referencias a proyectos OWASP aplicables."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "guide",
+    "sdlc"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://devguide.owasp.org",
+   "alt": [],
+   "caveat": "Contenido CC BY-SA 4.0: puedes reutilizarlo citando a OWASP y compartiendo las obras derivadas con la misma licencia.",
+   "ligero": true
+  },
+  {
+   "gh": "owtf/owtf",
+   "id": "owtf",
+   "name": "OWASP OWTF",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web.",
+   "how": "Framework Python que se despliega con Docker Compose y coordina herramientas externas, un proxy interceptor y plugins por caso de prueba.",
+   "examples": [
+    "coordinar varias herramientas en un pentest web autorizado",
+    "seguir casos de la WSTG con una sola interfaz"
+   ],
+   "try": [
+    "Clona el repo y ejecuta `make compose-safe` como indica el README; abre la interfaz en localhost:8019.",
+    "Ves la interfaz web lista para crear un objetivo de laboratorio."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "pentest",
+    "web",
+    "python"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "git clone https://github.com/owtf/owtf.git\ncd owtf\nmake compose-safe",
+   "url": "https://github.com/owtf/owtf#readme",
+   "alt": [],
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "ligero": true
+  },
+  {
+   "gh": "owasp-noir/noir",
+   "id": "noir",
+   "name": "OWASP Noir",
+   "cat": 16,
+   "sub": "reconocimiento",
+   "kind": "app",
+   "one": "Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.",
+   "how": "CLI en Crystal que analiza código de muchos frameworks, detecta rutas y parámetros y los envía a ZAP, Caido o Burp; análisis opcional con LLM.",
+   "examples": [
+    "listar todos los endpoints de un repositorio propio antes de un pentest",
+    "pasar endpoints descubiertos a ZAP para un escaneo autorizado"
+   ],
+   "try": [
+    "Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia.",
+    "Obtienes la lista de endpoints, métodos y parámetros detectados."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "sast",
+    "attack-surface",
+    "api",
+    "crystal"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "brew install noir",
+   "url": "https://owasp-noir.github.io/noir/",
+   "alt": [],
+   "caveat": "Uso dual: analiza solo código propio o con autorización. El análisis con LLM envía fragmentos de código al proveedor configurado.",
+   "ligero": true
+  },
+  {
+   "gh": "owasp-dep-scan/dep-scan",
+   "id": "dep-scan",
+   "name": "OWASP dep-scan",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.",
+   "how": "CLI Python que genera o lee SBOM, consulta bases de vulnerabilidades y produce informes, VEX y análisis de alcanzabilidad.",
+   "examples": [
+    "auditar las dependencias de un repositorio en CI",
+    "priorizar CVE alcanzables en un proyecto Java o JavaScript"
+   ],
+   "try": [
+    "Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio.",
+    "Obtienes un informe de vulnerabilidades y riesgos de dependencias."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "sca",
+    "sbom",
+    "vex",
+    "python"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "pip install owasp-depscan",
+   "url": "https://depscan.readthedocs.io",
+   "alt": [],
+   "caveat": "La edición «[all]» incluye extensiones con varias licencias según el README; la versión normal es MIT.",
+   "ligero": true
+  },
+  {
+   "gh": "cdxgen/cdxgen",
+   "id": "cdxgen",
+   "name": "cdxgen",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes.",
+   "how": "CLI Node.js (también imágenes de contenedor y modo servidor) que inspecciona manifiestos, lockfiles e imágenes y emite BOM CycloneDX.",
+   "examples": [
+    "generar el SBOM de cada release en CI",
+    "inventariar componentes de una imagen Docker propia"
+   ],
+   "try": [
+    "Instala con npm como indica el README y ejecuta cdxgen en el directorio de un proyecto propio.",
+    "Obtienes un archivo bom.json en formato CycloneDX."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "sbom",
+    "cyclonedx",
+    "supply-chain",
+    "javascript"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "npm install -g @cdxgen/cdxgen --omit=optional --ignore-scripts --min-release-age=2",
+   "url": "https://cdxgen.github.io/cdxgen/",
+   "alt": [
+    "syft"
+   ],
+   "ligero": true
+  },
+  {
+   "gh": "secureCodeBox/secureCodeBox",
+   "id": "securecodebox",
+   "name": "OWASP secureCodeBox",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos.",
+   "how": "Operador de Kubernetes con charts Helm por escáner, CRD de escaneos programados y hooks que envían hallazgos a DefectDojo u otros destinos.",
+   "examples": [
+    "programar escaneos periódicos de un entorno de staging autorizado",
+    "enviar resultados de varios escáneres a DefectDojo"
+   ],
+   "try": [
+    "Instala el operador con Helm según la guía de instalación oficial en un clúster de pruebas.",
+    "El operador queda listo para lanzar un escaneo de ejemplo."
+   ],
+   "setup": "hard",
+   "tags": [
+    "security",
+    "kubernetes",
+    "scanner",
+    "devsecops",
+    "go"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "cmd": "helm --namespace securecodebox-system upgrade --install --create-namespace securecodebox-operator oci://ghcr.io/securecodebox/helm/operator",
+   "url": "https://www.securecodebox.io/docs/getting-started/installation",
+   "alt": [],
+   "license": "Apache-2.0",
+   "caveat": "Uso exclusivo sobre sistemas propios o con autorización escrita y dentro del alcance acordado. Acceder sin permiso a sistemas ajenos es delito en la mayoría de países (en México, Código Penal Federal, arts. 211 bis 1 a 211 bis 7); revisa la ley local antes de cada encargo.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/crAPI",
+   "id": "crapi",
+   "name": "OWASP crAPI",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10.",
+   "how": "Aplicación de microservicios (Java, Go, Python, web) desplegada con Docker Compose o Kubernetes, con retos sobre BOLA, BFLA y más.",
+   "examples": [
+    "practicar ataques de autorización a nivel de objeto en una API",
+    "formar a un equipo en pruebas de seguridad de API"
+   ],
+   "try": [
+    "Descarga los archivos de despliegue y levanta crAPI con Docker Compose como indica el README.",
+    "Accedes a la aplicación web y a su API en local."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "api",
+    "training",
+    "vulnerable-app"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "url": "https://github.com/OWASP/crAPI#readme",
+   "alt": [],
+   "caveat": "Aplicación deliberadamente vulnerable: ejecútala solo en local o en una red aislada, nunca expuesta a Internet ni en equipos con datos reales.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/wrongsecrets",
+   "id": "wrongsecrets",
+   "name": "OWASP WrongSecrets",
+   "cat": 16,
+   "sub": "pruebas",
+   "kind": "app",
+   "one": "Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en código, contenedores, Kubernetes, nube y binarios.",
+   "how": "Aplicación Spring Boot con retos en Docker, Kubernetes, Vault y nubes (AWS, GCP, Azure); integra CTF con CTFd o FBCTF.",
+   "examples": [
+    "enseñar a detectar secretos filtrados en imágenes de contenedor",
+    "practicar la gestión de secretos en Kubernetes"
+   ],
+   "try": [
+    "Ejecuta la imagen Docker sin Vault como indica el README y abre la aplicación en localhost:8080.",
+    "Accedes a los retos básicos de secretos."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "secrets",
+    "training",
+    "kubernetes"
+   ],
+   "goals": [
+    "seguridad",
+    "aprender"
+   ],
+   "cmd": "docker run -p 8080:8080 -p 8090:8090 jeroenwillemsen/wrongsecrets:latest-no-vault",
+   "url": "https://owasp.org/www-project-wrongsecrets/",
+   "alt": [],
+   "caveat": "Aplicación deliberadamente vulnerable: ejecútala solo en local o en una red aislada, nunca expuesta a Internet ni en equipos con datos reales. Licencia AGPL-3.0.",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/pytm",
+   "id": "pytm",
+   "name": "OWASP pytm",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "library",
+   "one": "Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas.",
+   "how": "Biblioteca Python: defines elementos (servidores, flujos, límites de confianza) en un script y genera DFD, diagramas de secuencia e informes.",
+   "examples": [
+    "versionar el modelo de amenazas junto al código de un servicio",
+    "generar informes de amenazas en CI"
+   ],
+   "try": [
+    "Sigue el ejemplo tm.py del README en un entorno con las dependencias indicadas y genera el DFD.",
+    "Obtienes un diagrama de flujo de datos y la lista de amenazas."
+   ],
+   "setup": "medium",
+   "tags": [
+    "security",
+    "threat-modeling",
+    "python",
+    "as-code"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://github.com/OWASP/pytm#readme",
+   "alt": [
+    "threat-dragon"
+   ],
+   "license": "MIT",
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/java-html-sanitizer",
+   "id": "java-html-sanitizer",
+   "name": "OWASP Java HTML Sanitizer",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "library",
+   "one": "Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS.",
+   "how": "Biblioteca Java con constructor de políticas (elementos, atributos, URLs permitidos) distribuida en Maven Central.",
+   "examples": [
+    "permitir HTML enriquecido de usuarios en comentarios sin XSS",
+    "sanear contenido importado de fuentes externas"
+   ],
+   "try": [
+    "Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida.",
+    "El HTML con scripts queda saneado."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "xss",
+    "java",
+    "library"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://github.com/OWASP/java-html-sanitizer#readme",
+   "alt": [],
+   "ligero": true
+  },
+  {
+   "gh": "OWASP/owasp-java-encoder",
+   "id": "owasp-java-encoder",
+   "name": "OWASP Java Encoder",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "library",
+   "one": "Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependencias en tiempo de ejecución.",
+   "how": "Biblioteca Java (Encode.forHtml, forJavaScript…) más adaptadores para JSP y Jakarta JSP, publicada en Maven Central.",
+   "examples": [
+    "codificar datos de usuario al renderizar plantillas JSP",
+    "escapar valores insertados en JavaScript en línea"
+   ],
+   "try": [
+    "Añade la dependencia Maven del README a un proyecto Java de prueba y usa Encode.forHtml.",
+    "La salida queda codificada para el contexto HTML."
+   ],
+   "setup": "easy",
+   "tags": [
+    "security",
+    "xss",
+    "encoding",
+    "java"
+   ],
+   "goals": [
+    "seguridad"
+   ],
+   "url": "https://owasp.org/www-project-java-encoder/",
+   "alt": [],
+   "ligero": true
+  }
+ ]
+}

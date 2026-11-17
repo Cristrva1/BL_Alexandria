@@ -30,7 +30,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `windmill` | motores | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y… | 2 Intermedio | 61 | AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) (open-core) | alternativa |
 | `dagster` | motores | Orquestador de datos orientado a activos: declaras tablas, modelos o informes… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | alternativa |
 | `tooljet` | internas | Plataforma low-code para herramientas internas, dashboards y flujos, con… | 2 Intermedio | 75 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `appsmith` | internas | Plataforma low-code para crear paneles de administración y herramientas… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | alternativa |
+| `appsmith` | internas | Plataforma low-code para crear paneles de administración y herramientas… | 3 Avanzado | 72 | Apache-2.0 (OSI permisiva) | alternativa |
 | `nocodb` | internas | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de… | 1 Básico | 70 | Sustainable Use License (no OSI) (source-available) | alternativa |
 | `budibase` | internas | Plataforma open source para apps internas, automatizaciones y agentes de IA… | 2 Intermedio | 62 | GPL-3.0 + BSL (packages/pro) (source-available) | alternativa |
 | `teable` | internas | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja… | 2 Intermedio | 56 | AGPL-3.0 (OSI copyleft) | alternativa |
@@ -210,10 +210,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Appsmith (`appsmith`)
 
-- **Repo:** https://github.com/appsmithorg/appsmith · Apache-2.0 · nivel 2 · 72/100 · alternativa en «Herramientas internas y bases de datos no-code»
+- **Repo:** https://github.com/appsmithorg/appsmith · Apache-2.0 · nivel 3 · 72/100 · alternativa en «Herramientas internas y bases de datos no-code»
 - **Qué es:** Plataforma low-code de código abierto (Apache 2.0) para desarrollar, desplegar y mantener aplicaciones internas, de Appsmith Inc. Se usa en su nube o autoalojada y publica versiones con frecuencia.
 - **Cuándo elegirlo:** Casos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API.
-- **Requisitos:** nivel 2: preparación media; Cuenta o instancia de prueba;  una fuente de datos de demostración; hardware prerequisites; API de IA: opcional; Cuenta o instancia de prueba; una fuente de datos de demostración.
+- **Requisitos:** nivel 3: preparación media, despliegue con Kubernetes/Helm; Cuenta o instancia de prueba;  una fuente de datos de demostración; hardware prerequisites; API de IA: opcional; Cuenta o instancia de prueba; una fuente de datos de demostración.
 - **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/appsmithorg/appsmith/blob/release/deploy/helm/docs/install-mongodb-operator.md
 
   ```bash

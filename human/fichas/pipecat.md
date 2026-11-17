@@ -56,8 +56,8 @@ Grupo **Agentes de voz en tiempo real**: Pipecat ocupa la posición 1 de 4 (reco
 |---:|---|---:|---|
 | 1 | **Pipecat** (esta ficha) ⭐ recomendado | 73 | Si quieres componer pipelines de voz en Python con muchos proveedores intercambiables. |
 | 2 | [LiveKit Agents](livekit-agents.md) | 73 | Si quieres agentes de voz y video en tiempo real sobre WebRTC con infraestructura probada. |
-| 3 | [dograh](dograh.md) | 60 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
-| 4 | [TEN Framework](ten-framework.md) | 43 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
+| 3 | [dograh](dograh.md) | 62 | Si quieres una plataforma con flujos visuales y telefonía lista para agentes de voz. |
+| 4 | [TEN Framework](ten-framework.md) | 46 | Si quieres un grafo visual de extensiones (ASR, LLM, TTS) para voz en tiempo real. |
 
 ## Acceso, coste y equipo
 

@@ -20,11 +20,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `prompts-chat` | La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts)… | 1 Básico | 69 | MIT (código) + CC0-1.0 (prompts) (OSI permisiva) | recomendado |
 | `fabric` | CLI con cientos de patrones de prompts para resumir, extraer y transformar… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `system-prompts-and-models-of-ai-tools` | Colección de prompts y configuraciones atribuidos a herramientas de IA para… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `system-prompts-and-models-of-ai-tools` | Colección de prompts y configuraciones atribuidos a herramientas de IA para… | 1 Básico | 61 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `prompt-engineering-guide` | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y… | 1 Básico | 56 | MIT (OSI permisiva) | sin grupo |
-| `chatgpt-system-prompt` | Colección de prompts de GPT y recursos sobre instrucciones de sistema y… | 1 Básico | 53 | MIT (OSI permisiva) | sin grupo |
-| `prompt-master` | Skill de Claude que ayuda a formular encargos para distintas herramientas de… | 1 Básico | 53 | MIT (OSI permisiva) | sin grupo |
-| `chatgpt-dan` | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones… | 1 Básico | 32 | — (sin licencia detectada) | sin grupo |
+| `prompt-master` | Skill de Claude que ayuda a formular encargos para distintas herramientas de… | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
+| `chatgpt-system-prompt` | Colección de prompts de GPT y recursos sobre instrucciones de sistema y… | 1 Básico | 52 | MIT (OSI permisiva) | sin grupo |
+| `chatgpt-dan` | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones… | 1 Básico | 33 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -56,7 +56,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### system-prompts-and-models-of-ai-tools (`system-prompts-and-models-of-ai-tools`)
 
-- **Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools · GPL-3.0 · nivel 1 · 60/100
+- **Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools · GPL-3.0 · nivel 1 · 61/100
 - **Qué es:** Colección (GPL-3.0) de @x1xhlol con system prompts, definiciones de herramientas y modelos atribuidos a herramientas de IA comerciales como Cursor, Devin, v0, Lovable o Windsurf. Es muy popular (~145k estrellas).
 - **Cuándo elegirlo:** Casos: Estudiar instrucciones de herramientas de código; Preparar una plantilla propia de sistema.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; interés en diseño de instrucciones; hardware prerequisites; API de IA: no; Navegador; interés en diseño de instrucciones.
@@ -76,20 +76,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `prompt-master`, `context-engineering` [19/guias], `promptfoo` [23/observabilidad], `chatgpt-system-prompt`, `claude-cookbooks` [19/guias]
 - **Riesgos y avisos:** Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro.
 
-### chatgpt_system_prompt (`chatgpt-system-prompt`)
-
-- **Repo:** https://github.com/LouisShark/chatgpt_system_prompt · MIT · nivel 1 · 53/100
-- **Qué es:** Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026).
-- **Cuándo elegirlo:** Casos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; ejemplo propio de instrucciones; hardware prerequisites; API de IA: no; Navegador; ejemplo propio de instrucciones.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato Éxito: Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
-- **Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo` [23/observabilidad], `prompt-engineering-guide`, `chatgpt-dan`
-- **Riesgos y avisos:** Sin alternativas declaradas. Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales.
-
 ### prompt-master (`prompt-master`)
 
-- **Repo:** https://github.com/nidhinjs/prompt-master · MIT · nivel 1 · 53/100
+- **Repo:** https://github.com/nidhinjs/prompt-master · MIT · nivel 1 · 54/100
 - **Qué es:** Skill para Claude (MIT) de nidhinjs que redacta prompts optimizados para otras herramientas de IA. Es un proyecto individual y reciente (último push en octubre de 2026), sin releases.
 - **Cuándo elegirlo:** Casos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude con skills o Claude Code; descripción de una tarea; hardware prerequisites; API de IA: no; Claude con skills o Claude Code; descripción de una tarea.
@@ -103,9 +92,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `prompt-engineering-guide`, `anthropic-skills` [2/catalogos]
 - **Riesgos y avisos:** Sin alternativas declaradas. Combinación anterior con andrej-karpathy-skills eliminada: sin relación documentada. La instalación documentada es para Claude y Claude Code; Codex y Antigravity aparecen como destinos del prompt generado y no prueban instalación nativa en….
 
+### chatgpt_system_prompt (`chatgpt-system-prompt`)
+
+- **Repo:** https://github.com/LouisShark/chatgpt_system_prompt · MIT · nivel 1 · 52/100
+- **Qué es:** Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026).
+- **Cuándo elegirlo:** Casos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; ejemplo propio de instrucciones; hardware prerequisites; API de IA: no; Navegador; ejemplo propio de instrucciones.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Compara una plantilla del archivo con una instrucción de tu autoría y separa objetivo, restricciones y formato Éxito: Puedes identificar patrones sin asumir autenticidad de prompts atribuidos
+- **Combina con:** `system-prompts-and-models-of-ai-tools`, `promptfoo` [23/observabilidad], `prompt-engineering-guide`, `chatgpt-dan`
+- **Riesgos y avisos:** Sin alternativas declaradas. Colección comunitaria educativa; atribuciones o extracciones no son documentación oficial ni garantías sobre productos actuales.
+
 ### ChatGPT_DAN (`chatgpt-dan`)
 
-- **Repo:** https://github.com/0xk1h0/ChatGPT_DAN · — · nivel 1 · 32/100
+- **Repo:** https://github.com/0xk1h0/ChatGPT_DAN · — · nivel 1 · 33/100
 - **Qué es:** Archivo de prompts de 'jailbreak' (DAN y otros) para ChatGPT, mantenido por @0xk1h0. No tiene licencia declarada. Es contenido histórico: la última nota de funcionamiento del README es de julio de 2023 (DAN 12.0 con GPT-3.5), aunque el…
 - **Cuándo elegirlo:** Casos: Estudiar la historia de prompts de roleplay; Reconocer intentos de manipulación de instrucciones.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; criterio de lectura histórica; hardware prerequisites; API de IA: no; Navegador; criterio de lectura histórica.

@@ -46,7 +46,7 @@ Grupo **Notas y bases de conocimiento personales**: Joplin ocupa la posición 4 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [SiYuan](siyuan.md) ⭐ recomendado | 76 | Si quieres bloques referenciables y una base de conocimiento local muy completa. |
+| 1 | [SiYuan](siyuan.md) ⭐ recomendado | 79 | Si quieres bloques referenciables y una base de conocimiento local muy completa. |
 | 2 | [Trilium Notes](trilium.md) | 64 | Si quieres jerarquías profundas de notas con scripting y servidor propio. |
 | 3 | [Logseq](logseq.md) | 59 | Si piensas en esquemas y grafos con notas diarias, local-first. |
 | 4 | **Joplin** (esta ficha) | 57 | Si quieres notas Markdown con sincronización cifrada en todos tus dispositivos. |

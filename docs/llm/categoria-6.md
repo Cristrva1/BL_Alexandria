@@ -33,8 +33,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6
 | `onyx` | rag | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con… | 2 Intermedio | 69 | MIT + Onyx Enterprise License (ee/) (open-core) | sin grupo |
 | `lightrag` | rag | RAG simple y rápido que combina grafo de conocimiento y vectores, de la… | 2 Intermedio | 66 | MIT (OSI permisiva) | alternativa |
 | `pageindex` | rag | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
+| `kotaemon` | rag | Interfaz RAG limpia y personalizable para chatear con documentos, con modelos… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `txtai` | rag | Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `kotaemon` | rag | Interfaz RAG limpia y personalizable para chatear con documentos, con modelos… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `meilisearch` | rag | Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e… | 1 Básico | 56 | MIT (source-available) | sin grupo |
 | `graphrag` | rag | Sistema de RAG de Microsoft que recupera información sobre un grafo de… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `agentic-rag-for-dummies` | rag | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
@@ -190,7 +190,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/infiniflow/ragflow · Apache-2.0 · nivel 3 · 82/100 · recomendado en «RAG con grafos e índices de conocimiento»
 - **Qué es:** Motor RAG (generación aumentada por recuperación) de código abierto (Apache 2.0) de InfiniFlow, que fusiona RAG con capacidades de agente. Muy activo: la versión 1.0.0 salió el 6 de noviembre de 2026 y el código principal está ahora en Go…
 - **Cuándo elegirlo:** Casos: Consultar manuales de una organización; Combinar documentos en una base de conocimiento.
-- **Requisitos:** nivel 3: preparación pesada; Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos; hardware prerequisites; API de IA: depends; Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos.
+- **Requisitos:** nivel 3: preparación pesada, varios servicios con Docker Compose; Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos; hardware prerequisites; API de IA: depends; Docker; configuración inicial orientativa 4 CPU,16 GB RAM,50 GB disco; modelos.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose -f docker-compose.yml up -d` — fuente: https://github.com/infiniflow/ragflow/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Indexa un PDF propio corto y pregunta por un dato identificable con cita Éxito: La respuesta permite abrir el fragmento y comprobar su procedencia
 - **Combina con:** `ollama` [8/motores], `activepieces` [1/motores], `langfuse` [23/observabilidad], `paddleocr` [13/ocr]
@@ -238,20 +238,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `ragflow`, `lightrag`, `graphrag`
 - **Riesgos y avisos:** Alternativa (elige una): lightrag. Cada consulta implica razonamiento del LLM: más latencia y coste por pregunta que una búsqueda vectorial. Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes.
 
-### txtai (`txtai`)
-
-- **Repo:** https://github.com/neuml/txtai · Apache-2.0 · nivel 2 · 57/100
-- **Qué es:** Framework de código abierto (Apache-2.0) de NeuML, mantenido de forma continua desde 2020. Requiere Python 3.11 o superior.
-- **Cuándo elegirlo:** Casos: indexar documentos y hacer búsqueda semántica con SQL en local; montar un RAG o un grafo de conocimiento sin desplegar varios servicios.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml, setup.py; hardware model_dependent; API de IA: opcional; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install txtai` — fuente: https://github.com/neuml/txtai/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `pip install txtai`, indexa unas frases y busca por significado. Éxito: La búsqueda devuelve las frases más parecidas aunque no compartan palabras.
-- **Combina con:** `transformers` [24/entrenamiento], `litellm` [23/serving], `llama-cpp` [8/motores], `claude-code` [20/terminal]
-- **Riesgos y avisos:** Alternativas cercanas en el catálogo: llama-index, haystack.
-
 ### kotaemon (`kotaemon`)
 
-- **Repo:** https://github.com/Cinnamon/kotaemon · Apache-2.0 · nivel 2 · 56/100
+- **Repo:** https://github.com/Cinnamon/kotaemon · Apache-2.0 · nivel 2 · 59/100
 - **Qué es:** Herramienta RAG de código abierto (Apache-2.0) de Cinnamon AI, pensada tanto para usuarios finales como para desarrolladores. Popular, aunque el ritmo de cambios se ha reducido (último push en julio de 2026).
 - **Cuándo elegirlo:** Casos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus.
 - **Requisitos:** nivel 2: preparación media; Python, Dockerfile, pyproject.toml; hardware model_dependent; API de IA: opcional.
@@ -263,6 +252,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Arranca la imagen Docker main-lite (u ollama) del README, sube un PDF y haz una pregunta. Éxito: La respuesta incluye citas enlazadas a las páginas del documento.
 - **Combina con:** `ollama` [8/motores], `lightrag`, `graphrag`, `docling` [13/conversion]
 - **Riesgos y avisos:** Alternativas cercanas en el catálogo: anything-llm, open-notebook.
+
+### txtai (`txtai`)
+
+- **Repo:** https://github.com/neuml/txtai · Apache-2.0 · nivel 2 · 57/100
+- **Qué es:** Framework de código abierto (Apache-2.0) de NeuML, mantenido de forma continua desde 2020. Requiere Python 3.11 o superior.
+- **Cuándo elegirlo:** Casos: indexar documentos y hacer búsqueda semántica con SQL en local; montar un RAG o un grafo de conocimiento sin desplegar varios servicios.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml, setup.py; hardware model_dependent; API de IA: opcional; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install txtai` — fuente: https://github.com/neuml/txtai/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `pip install txtai`, indexa unas frases y busca por significado. Éxito: La búsqueda devuelve las frases más parecidas aunque no compartan palabras.
+- **Combina con:** `transformers` [24/entrenamiento], `litellm` [23/serving], `llama-cpp` [8/motores], `claude-code` [20/terminal]
+- **Riesgos y avisos:** Alternativas cercanas en el catálogo: llama-index, haystack.
 
 ### Meilisearch (`meilisearch`)
 

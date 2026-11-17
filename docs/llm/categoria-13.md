@@ -37,9 +37,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `stirling-pdf` | pdf | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar… | 1 Básico | 76 | MIT + licencia propietaria (app/proprietary/, app/saas/) (open-core) | recomendado |
 | `pdfmathtranslate` | pdf | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `pdfcraft` | pdf | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 51 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `pdfcraft` | pdf | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 54 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `pdfding` | pdf | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | — | AGPL-3.0 | sin grupo |
-| `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 73 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 76 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -278,7 +278,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### pdfcraft (`pdfcraft`)
 
-- **Repo:** https://github.com/PDFCraftTool/pdfcraft · AGPL-3.0 · nivel 1 · 51/100 · alternativa en «Suites de herramientas PDF»
+- **Repo:** https://github.com/PDFCraftTool/pdfcraft · AGPL-3.0 · nivel 1 · 54/100 · alternativa en «Suites de herramientas PDF»
 - **Qué es:** Suite de herramientas PDF en el navegador de PDFCraftTool, AGPL-3.0, activa con versiones por fecha. Tiene un proyecto hermano de escritorio, LibrePDF (Apache 2.0).
 - **Cuándo elegirlo:** Casos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Navegador moderno; PDFs de prueba; Node solo para self-hosting; hardware prerequisites; API de IA: no; Navegador moderno; PDFs de prueba; Node solo para self-hosting.
@@ -311,7 +311,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### paperless-ngx (`paperless-ngx`)
 
-- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 73/100
+- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 76/100
 - **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
 - **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
 - **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.

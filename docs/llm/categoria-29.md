@@ -39,8 +39,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `kokoro` | tts | Modelo y biblioteca de texto a voz para generar narración localmente con… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
 | `livekit-agents` | voz-agentes | Framework para agentes de voz y video en tiempo real sobre la infraestructura… | 2 Intermedio | 73 | Apache-2.0 (OSI permisiva) | alternativa |
 | `pipecat` | voz-agentes | Framework open source para agentes de voz y apps multimodales en tiempo real. | 2 Intermedio | 73 | BSD-2-Clause (OSI permisiva) | recomendado |
-| `dograh` | voz-agentes | Plataforma para construir agentes de voz con flujos visuales, telefonía y… | 2 Intermedio | 60 | BSD-2-Clause (OSI permisiva) | alternativa |
-| `ten-framework` | voz-agentes | Framework para agentes de voz conversacionales en tiempo real, con grafo de… | 3 Avanzado | 43 | Apache-2.0 con condiciones adicionales (Agora) (source-available) | alternativa |
+| `dograh` | voz-agentes | Plataforma para construir agentes de voz con flujos visuales, telefonía y… | 2 Intermedio | 62 | BSD-2-Clause (OSI permisiva) | alternativa |
+| `ten-framework` | voz-agentes | Framework para agentes de voz conversacionales en tiempo real, con grafo de… | 3 Avanzado | 46 | Apache-2.0 con condiciones adicionales (Agora) (source-available) | alternativa |
 | `ace-step-1.5` | musica | Modelo y herramientas para generar música localmente a partir de instrucciones… | 3 Avanzado | 70 | MIT (OSI permisiva) | recomendado |
 | `yue` | musica | Modelo abierto de generación de canciones completas (voz y acompañamiento) a… | 4 Experto | 67 | Apache-2.0 (OSI permisiva) | alternativa |
 | `audiocraft` | musica | Librería PyTorch de Meta para generar música y efectos de sonido desde texto… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
@@ -353,7 +353,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### dograh (`dograh`)
 
-- **Repo:** https://github.com/dograh-hq/dograh · BSD-2-Clause · nivel 2 · 60/100 · alternativa en «Agentes de voz en tiempo real»
+- **Repo:** https://github.com/dograh-hq/dograh · BSD-2-Clause · nivel 2 · 62/100 · alternativa en «Agentes de voz en tiempo real»
 - **Qué es:** Dograh AI, plataforma open source y autoalojable para construir agentes de voz, alternativa a Vapi y Retell. Licencia BSD-2-Clause. Tiene ~6k estrellas y es activa (dograh-v1.51.0).
 - **Cuándo elegirlo:** Casos: Diseñar un agente de voz; Editar un workflow mediante MCP.
 - **Requisitos:** nivel 2: preparación media; Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba; hardware prerequisites; API de IA: depends; Docker o entorno documentado; proveedores de voz/modelo; micrófono de prueba.
@@ -365,7 +365,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### TEN Framework (`ten-framework`)
 
-- **Repo:** https://github.com/TEN-framework/ten-framework · Apache-2.0 con condiciones adicionales (Agora) · nivel 3 · 43/100 · alternativa en «Agentes de voz en tiempo real»
+- **Repo:** https://github.com/TEN-framework/ten-framework · Apache-2.0 con condiciones adicionales (Agora) · nivel 3 · 46/100 · alternativa en «Agentes de voz en tiempo real»
 - **Qué es:** Framework de código abierto impulsado por Agora para agentes de voz conversacionales. Muy activo. Se publica con licencia Apache-2.0 con restricciones adicionales, por lo que no es una licencia OSI.
 - **Cuándo elegirlo:** Casos: montar un asistente de voz que conversa en tiempo real con un LLM; construir un agente de voz con avatar o con transcripción en vivo.
 - **Requisitos:** nivel 3: framework de voz con diseñador visual y varios proveedores; Python, package.json; API de IA: sí; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
