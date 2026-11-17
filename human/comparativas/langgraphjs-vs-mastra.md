@@ -13,7 +13,7 @@
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelo local no documentado |
 | Setup | 🟡 medio | 🟢 fácil |
-| Licencia | MIT | NOASSERTION |
+| Licencia | MIT | Apache-2.0 + licencia Enterprise (ee/) |
 | Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica

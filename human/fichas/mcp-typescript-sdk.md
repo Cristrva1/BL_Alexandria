@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 13.8k | NOASSERTION | TypeScript | 2026-11-10 |
+| 13.8k | Apache-2.0 (en transición desde MIT) | TypeScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
 **Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0 (en transición desde MIT). Documentación bajo CC-BY-4.0. Fuente: [LICENSE](https://github.com/modelcontextprotocol/typescript-sdk/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

@@ -31,7 +31,7 @@ flowchart LR
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
 | 1 | [evolution-api](../fichas/evolution-api.md) | Canal de WhatsApp: recibe y envía mensajes; integra Dify y Chatwoot de forma nativa | 10.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
-| 2 | [dify](../fichas/dify.md) | Agente o flujo con LLM: responde, guarda el lead y decide el traspaso | 161k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [dify](../fichas/dify.md) | Agente o flujo con LLM: responde, guarda el lead y decide el traspaso | 161k | `docker compose up -d` |
 | 3 | [chatwoot](../fichas/chatwoot.md) | Bandeja omnicanal para el traspaso a un agente humano | 39.9k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 | 4 | [novu](../fichas/novu.md) | Notificaciones internas (email, push) cuando entra un lead | 40.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 

@@ -829,13 +829,13 @@ role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=coding-a
 - Equipo: Preparación según la ruta elegida. Python y uv según la guía;  un agente con integración soportada
 **Repo:** https://github.com/github/spec-kit
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.github.io/spec-kit/installation.html
+git clone https://github.com/github/spec-kit.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Especificar una función con requisitos y criterios de aceptación; Mantener un flujo común en un equipo que usa agentes diferentes
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

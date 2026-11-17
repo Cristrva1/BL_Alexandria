@@ -31,11 +31,11 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [awesome-mcp-servers](../fichas/awesome-mcp-servers.md) | Comprueba primero si ya existe un servidor para tu caso | 97.7k | Filtra por función y sistema operativo y contrasta el README de dos servidores. Comprue… |
+| 1 | [awesome-mcp-servers](../fichas/awesome-mcp-servers.md) | Comprueba primero si ya existe un servidor para tu caso | 97.7k | Ver README oficial (sin comando literal documentado). Filtra por función y sistema oper… |
 | 2 | [FastMCP](../fichas/fastmcp.md) | Framework Python para escribir el servidor en pocas líneas | 28.5k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 3 | [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md) | SDK oficial si tu servidor es TypeScript | 13.8k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 4 | [MCP Inspector](../fichas/mcp-inspector.md) | Prueba y depura el servidor antes de conectarlo | 11.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 5 | [servers](../fichas/servers.md) | Implementaciones de referencia para copiar patrones | 92k | Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios. Comprue… |
+| 5 | [servers](../fichas/servers.md) | Implementaciones de referencia para copiar patrones | 92k | Ver README oficial (sin comando literal documentado). Elige un servidor de referencia y… |
 | 6 | [mcp-use](../fichas/mcp-use.md) | Apps MCP y clientes full-stack cuando necesitas UI | 11k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta

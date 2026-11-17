@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 92k | NOASSERTION | TypeScript | 2026-06-23 |
+| 92k | Apache-2.0 (en transición desde MIT) | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 80/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0 (en transición desde MIT). Documentación bajo CC-BY-4.0. Fuente: [LICENSE](https://github.com/modelcontextprotocol/servers/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -69,7 +71,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios.
 2. Comprueba: Entiendes qué herramientas expone y qué datos puede modificar.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/modelcontextprotocol/servers/blob/main/README.md)
 

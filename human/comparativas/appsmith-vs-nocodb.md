@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟢 fácil |
-| Licencia | Apache-2.0 | NOASSERTION |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| Licencia | Apache-2.0 | Sustainable Use License (no OSI) |
+| Instalación | `helm install appsmith appsmith/appsmith -n appsmith --wait --timeout 10m --set mongodb.enabled=false --set mongodbCommunity.enabled=true --set mongodbOperator.enabled=true` | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 

@@ -13,7 +13,7 @@
 | Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟡 medio |
-| Licencia | NOASSERTION | MIT |
+| Licencia | Apache-2.0 (en transición desde MIT) | MIT |
 | Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica

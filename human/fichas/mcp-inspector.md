@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 11.3k | NOASSERTION | TypeScript | 2026-11-10 |
+| 11.3k | Apache-2.0 (en transición desde MIT) | TypeScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0 (en transición desde MIT). Documentación bajo CC-BY-4.0. Fuente: [LICENSE](https://github.com/modelcontextprotocol/inspector/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

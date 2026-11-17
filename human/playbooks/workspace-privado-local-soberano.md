@@ -33,7 +33,7 @@ flowchart LR
 | 2 | [odysseus](../fichas/odysseus.md) | Workspace todo-en-uno: chat, documentos y tareas | 95.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 3 | [open-notebook](../fichas/open-notebook.md) | Cuaderno de investigación con RAG sobre tus fuentes | 42k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 | 4 | [mem0](../fichas/mem0.md) | Memoria persistente entre sesiones | 69k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 5 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada cuando hace falta | 39.6k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 5 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada cuando hace falta | 39.6k | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 
 ## 🔌 Cómo se conecta
 

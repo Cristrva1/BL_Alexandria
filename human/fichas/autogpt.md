@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 188k | NOASSERTION | Python | 2026-11-10 |
+| 188k | MIT + Polyform Shield (autogpt_platform/) | Python | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
 **Nivel:** 3 Avanzado — preparación pesada
 
 **Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + Polyform Shield (autogpt_platform/). La plataforma (autogpt_platform/) es Polyform Shield, no OSI; el resto, MIT. Fuente: [LICENSE](https://github.com/Significant-Gravitas/AutoGPT/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

@@ -396,13 +396,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=au
 - Equipo: Preparación según la ruta elegida. Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor
 **Repo:** https://github.com/langgenius/dify
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/langgenius/dify/blob/main/README.md
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -944,13 +944,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/FoundationAgents/OpenManus
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/FoundationAgents/OpenManus/blob/main/README.md
+git clone https://github.com/FoundationAgents/OpenManus.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: delegar una investigación web que termine en un informe guardado en disco; experimentar con un agente general en local antes de elegir un framework
 **Evita si:** necesitas una herramienta estable y auditada para datos sensibles

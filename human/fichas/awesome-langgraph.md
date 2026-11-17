@@ -68,7 +68,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 1. Busca una plantilla de aprobación humana y contrasta su versión con las guías oficiales.
 2. Comprueba: Tienes un candidato y sabes qué aporta al flujo.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md)
 

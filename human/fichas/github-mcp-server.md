@@ -75,10 +75,17 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 - cliente MCP
 - token con permisos adecuados o autenticación remota
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
-2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+**Entrada documentada (text):**
+
+```
+claude mcp add github -e GITHUB_PERSONAL_ACCESS_TOKEN=$GITHUB_PAT -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server
+```
+
+Comando copiado literalmente de el README (sección «Environment Variables»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/github/github-mcp-server/blob/main/README.md)
 

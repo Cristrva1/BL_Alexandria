@@ -78,12 +78,12 @@ Material para leer. [Entender los términos](../vocabulario.md).
 **Antes de empezar:**
 
 - Navegador
--  identificar el cliente donde usarás el recurso elegido
+- identificar el cliente donde usarás el recurso elegido
 
 1. Abre una skill oficial de una tecnología que ya utilices y revisa su instalación.
 2. Comprueba: Puedes distinguir su autor, archivos y destino compatible.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md)
 

@@ -18,13 +18,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,r
 - Equipo: Preparación según la ruta elegida. Agente con terminal; uv; sesiones de sitios solo cuando corresponda
 **Repo:** https://github.com/Panniantong/Agent-Reach
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md
+uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -48,13 +48,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,d
 - Equipo: Preparación según la ruta elegida. Docker o dependencias nativas; directorio persistente; espacio en disco
 **Repo:** https://github.com/ArchiveBox/ArchiveBox
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart
+pip install archivebox
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -537,13 +537,13 @@ role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=scra
 - Equipo: Preparación según la ruta elegida. Docker; cuenta local; modelo solo para funciones AI
 **Repo:** https://github.com/getmaxun/maxun
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.maxun.dev/installation/docker
+docker-compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -599,13 +599,13 @@ role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=resea
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/DIYgod/RSSHub
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/DIYgod/RSSHub/blob/master/README.md
+docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: seguir canales, perfiles o webs sin RSS desde tu lector de feeds; alimentar un flujo de monitorización de fuentes con feeds uniformes
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -816,13 +816,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=res
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/wallabag/wallabag
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/wallabag/wallabag/blob/master/README.md
+git clone https://github.com/wallabag/wallabag.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: guardar artículos para leerlos sin conexión en el móvil; archivar lecturas con etiquetas y anotaciones en tu propio servidor
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -846,13 +846,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audi
 - Equipo: Preparación según la ruta elegida. Binario oficial o Python compatible; FFmpeg para unir y convertir medios
 **Repo:** https://github.com/yt-dlp/yt-dlp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/yt-dlp/yt-dlp/wiki/Installation
+pip install "yt-dlp[default,curl-cffi]"
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

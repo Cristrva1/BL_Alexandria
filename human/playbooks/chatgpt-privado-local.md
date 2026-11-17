@@ -31,7 +31,7 @@ flowchart LR
 |---:|---|---|---:|---|
 | 1 | [Ollama](../fichas/ollama.md) | Descarga y sirve los modelos con una API local | 187k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 | 2 | [Open WebUI](../fichas/open-webui.md) | Interfaz web con usuarios, RAG, voz y herramientas | 159k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 3 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada para respuestas actualizadas | 39.6k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 3 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada para respuestas actualizadas | 39.6k | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 | 4 | [litellm](../fichas/litellm.md) | Gateway opcional para mezclar modelos locales y APIs comerciales | 63.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta

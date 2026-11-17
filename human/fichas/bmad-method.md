@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 55.4k | NOASSERTION | Python | 2026-11-10 |
+| 55.4k | MIT | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP)
 
 **Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** MIT. Las marcas BMad están registradas; la licencia no cubre su uso. Fuente: [LICENSE](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

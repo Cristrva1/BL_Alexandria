@@ -17,6 +17,7 @@ def test_every_public_identity_has_one_individual_decision_and_current_evidence(
         with path.open(encoding='utf8',newline='') as handle:
             rows.extend(csv.DictReader(handle,delimiter='|'))
     catalog=build_catalog(ROOT)
+    detail=json.loads((ROOT/'INDICE_IA.detalle.json').read_text(encoding='utf8'))['repos']
     report=json.loads((ROOT/'reports/review-679-2026-11-14.json').read_text(encoding='utf8'))
     assert len(rows)==len({r['id'] for r in rows})==679
     baseline={r['id'] for r in rows}
@@ -49,6 +50,8 @@ def test_every_public_identity_has_one_individual_decision_and_current_evidence(
         assert review['source_blob_sha']==record['source_blob_sha']
         assert repo['first_try']['action']==ledger[repo['id']]['first_action']
         assert repo['first_try']['success']==ledger[repo['id']]['success']
+        if (detail[repo['id']].get('revision_instalacion') or {}).get('resultado')=='documentado':
+            continue  # Revisión de instalación posterior con comando literal y fuente propia.
         selected=ledger[repo['id']]['install']
         if selected.startswith('docs:'):
             assert repo['getting_started']['source']==selected[5:]

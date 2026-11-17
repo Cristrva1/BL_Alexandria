@@ -63,12 +63,12 @@ Material para leer. [Entender los términos](../vocabulario.md).
 **Antes de empezar:**
 
 - Navegador
--  definir qué tarea quieres delegar
+- definir qué tarea quieres delegar
 
 1. Compara dos proyectos del mismo tipo y abre sus repositorios originales.
 2. Comprueba: Puedes explicar su diferencia y qué infraestructura necesita cada uno.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/kyrolabs/awesome-agents/blob/main/README.md)
 

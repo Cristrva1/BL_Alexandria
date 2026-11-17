@@ -68,7 +68,13 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 2. Añade el comando o la URL en el cliente MCP y configura los permisos y credenciales de los servicios conectados.
 3. Comprueba que aparecen sus herramientas y prueba una consulta pequeña antes de permitir modificaciones.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (text):**
+
+```
+claude mcp add aws-api uvx awslabs.aws-api-mcp-server@latest
+```
+
+Comando copiado literalmente de el README (sección «Getting Started with Claude Code»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/awslabs/mcp/blob/main/README.md)
 

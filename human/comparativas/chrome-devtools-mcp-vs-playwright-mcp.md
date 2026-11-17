@@ -14,7 +14,7 @@
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| Instalación | `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp` | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 

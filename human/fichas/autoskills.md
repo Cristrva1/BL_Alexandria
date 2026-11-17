@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 7k | NOASSERTION | Ruby | 2026-11-14 |
+| 7k | CC-BY-NC-4.0 | Ruby | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 39/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** CC-BY-NC-4.0. Solo uso no comercial. Fuente: [LICENSE](https://github.com/midudev/autoskills/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
