@@ -173,13 +173,13 @@ role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=finanzas
 - Equipo: Preparación según la ruta elegida. Runtime y gestor de la guía; proveedor u Ollama; acceso a datos financieros
 **Repo:** https://github.com/virattt/dexter
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/virattt/dexter/blob/main/README.md
+git clone https://github.com/virattt/dexter.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -233,13 +233,13 @@ role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=fina
 - Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/AI4Finance-Foundation/FinGPT
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md
+git clone https://github.com/AI4Finance-Foundation/FinGPT.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación
 **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
@@ -296,13 +296,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=bots,app
 - Equipo: Preparación según la ruta elegida. Docker o entorno de la guía; datos; estrategia de ejemplo; modo dry-run
 **Repo:** https://github.com/freqtrade/freqtrade
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://www.freqtrade.io/en/stable/docker_quickstart/
+pip install freqtrade
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar una regla en datos históricos; Evaluar una estrategia en simulación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -395,13 +395,13 @@ role=directory · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=fi
 - Equipo: Preparación según la ruta elegida. Docker o entorno del capítulo; datasets; cuaderno elegido
 **Repo:** https://github.com/stefan-jansen/machine-learning-for-trading
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+docker compose up ml4t
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -455,13 +455,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=fin
 - Equipo: Preparación según la ruta elegida. Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones
 **Repo:** https://github.com/ChainBuff/open-sol-bot
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ChainBuff/open-sol-bot/blob/main/README.md
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

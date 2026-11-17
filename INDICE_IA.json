@@ -20468,7 +20468,7 @@
    "github_id": 559748217,
    "gh": "AcademySoftwareFoundation/OpenRV",
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "Apache-2.0",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -20965,7 +20965,7 @@
    "github_id": 643874750,
    "gh": "anyproto/anytype-ts",
    "lang": "TypeScript",
-   "license": "NOASSERTION",
+   "license": "Any Source Available License 1.0 (no OSI)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -21237,7 +21237,7 @@
    "github_id": 53538899,
    "gh": "bitwarden/clients",
    "lang": "TypeScript",
-   "license": "NOASSERTION",
+   "license": "GPL-3.0 + Bitwarden License (bitwarden_license/)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -22373,7 +22373,7 @@
    "github_id": 1423101235,
    "gh": "Gathin23/cleanyourtv",
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "MIT",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -23102,7 +23102,7 @@
    "github_id": 1087077125,
    "gh": "itsfatduck/optimizerDuck",
    "lang": "C#",
-   "license": "NOASSERTION",
+   "license": "GPL-3.0",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -25369,7 +25369,7 @@
    "github_id": 110684325,
    "gh": "polakowo/vectorbt",
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "Apache-2.0 + Commons Clause",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -37593,7 +37593,7 @@
    "doc": "human/fichas/vault.md",
    "github_id": 31288958,
    "lang": "Go",
-   "license": "NOASSERTION",
+   "license": "BUSL-1.1",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -37703,7 +37703,7 @@
    "doc": "human/fichas/keepassxc.md",
    "github_id": 52729242,
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "GPL-2.0 o GPL-3.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -37859,7 +37859,7 @@
    "doc": "human/fichas/authentik.md",
    "github_id": 230885748,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "MIT + licencia Enterprise (authentik/enterprise/)",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [

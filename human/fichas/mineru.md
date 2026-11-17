@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 83.7k | NOASSERTION | Python | 2026-11-10 |
+| 83.7k | Apache-2.0 con condiciones adicionales | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media
 
 **Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Apache-2.0 con condiciones adicionales. Umbrales a partir de los cuales el uso comercial exige licencia. Fuente: [LICENSE](https://github.com/opendatalab/MinerU/blob/master/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

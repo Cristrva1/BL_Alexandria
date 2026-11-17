@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 9.9k | NOASSERTION | Python | 2026-11-14 |
+| 9.9k | Apache-2.0 + Commons Clause | Python | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
 **Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Apache-2.0 + Commons Clause. No permite vender el software. Fuente: [LICENSE](https://github.com/polakowo/vectorbt/blob/master/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

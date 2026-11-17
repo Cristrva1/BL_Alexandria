@@ -3202,7 +3202,7 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 52.7k<br>
 **Qué es:** Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/upscayl/upscayl/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install --cask upscayl` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [gallery-dl](human/fichas/gallery-dl.md) · [CodeFormer](human/fichas/codeformer.md)<br>
 **Más:** [ficha completa](human/fichas/upscayl.md) · [GitHub](https://github.com/upscayl/upscayl)
@@ -3230,7 +3230,7 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 18.2k<br>
 **Qué es:** Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/sczhou/CodeFormer/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/sczhou/CodeFormer` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [ComfyUI](human/fichas/comfyui.md) · [rembg](human/fichas/rembg.md) · [Deep-Live-Cam](human/fichas/deep-live-cam.md) · [Upscayl](human/fichas/upscayl.md) · [chaiNNer](human/fichas/chainner.md)<br>
 **Más:** [ficha completa](human/fichas/codeformer.md) · [GitHub](https://github.com/sczhou/CodeFormer)
@@ -3370,7 +3370,7 @@ uv run start.py` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 797<br>
 **Qué es:** Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://aswf-openrv.readthedocs.io/en/latest/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone --recursive https://github.com/AcademySoftwareFoundation/OpenRV.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar una entrega de animación; Comparar versiones de un efecto visual — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [blender](human/fichas/blender.md) · [FFmpeg](human/fichas/ffmpeg.md) · [ComfyUI](human/fichas/comfyui.md)<br>
 **Más:** [ficha completa](human/fichas/openrv.md) · [GitHub](https://github.com/AcademySoftwareFoundation/OpenRV)
@@ -3405,7 +3405,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 12.8k<br>
 **Qué es:** Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker pull hunyuanvideo/hunyuanvideo:cuda_12` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [diffusers](human/fichas/diffusers.md) · [ComfyUI](human/fichas/comfyui.md) · [WanGP](human/fichas/wan2gp.md)<br>
 **Más:** [ficha completa](human/fichas/hunyuanvideo.md) · [GitHub](https://github.com/Tencent-Hunyuan/HunyuanVideo)
@@ -3414,7 +3414,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 11.8k<br>
 **Qué es:** App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/deepbeepmeep/Wan2GP/blob/main/docs/INSTALLATION.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/deepbeepmeep/WanGP.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Wan2.2](human/fichas/wan2-2.md) · [MoviePy](human/fichas/moviepy.md) · [LosslessCut](human/fichas/lossless-cut.md) · [HunyuanVideo 1.5](human/fichas/hunyuanvideo-1-5.md) · [HunyuanVideo](human/fichas/hunyuanvideo.md)<br>
 **Más:** [ficha completa](human/fichas/wan2gp.md) · [GitHub](https://github.com/deepbeepmeep/WanGP)
@@ -3423,7 +3423,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 10.3k<br>
 **Qué es:** Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Lightricks/LTX-2/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/Lightricks/LTX-2.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: generar clips cortos con audio a partir de texto o una imagen en una GPU propia; entrenar un LoRA de estilo o personaje para el modelo — **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos<br>
 **Combina con:** [ComfyUI](human/fichas/comfyui.md) · [FFmpeg](human/fichas/ffmpeg.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/ltx-2.md) · [GitHub](https://github.com/Lightricks/LTX-2)
@@ -3455,7 +3455,7 @@ pip install -r requirements.txt
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 4.6k<br>
 **Qué es:** Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p — **Evita si:** no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia<br>
 **Combina con:** [ComfyUI](human/fichas/comfyui.md) · [WanGP](human/fichas/wan2gp.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/hunyuanvideo-1-5.md) · [GitHub](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5)
@@ -3500,7 +3500,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 195k<br>
 **Qué es:** Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/microsoft/markitdown/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install 'markitdown[all]'` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos Office para consulta; Crear una copia textual de un informe — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Khoj](human/fichas/khoj.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/markitdown.md) · [GitHub](https://github.com/microsoft/markitdown)
@@ -3545,7 +3545,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 15.7k<br>
 **Qué es:** ETL open source que transforma documentos complejos en datos estructurados para LLM.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Unstructured-IO/unstructured/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install "unstructured[all-docs]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Tesseract](human/fichas/tesseract.md) · [langchain](human/fichas/langchain.md) · [Qdrant](human/fichas/qdrant.md)<br>
 **Más:** [ficha completa](human/fichas/unstructured.md) · [GitHub](https://github.com/Unstructured-IO/unstructured)
@@ -3563,7 +3563,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.2k<br>
 **Qué es:** Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/apache/tika/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/apache/tika.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación; alimentar un sistema RAG con Markdown generado desde documentos Office y PDF — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Tesseract](human/fichas/tesseract.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/tika.md) · [GitHub](https://github.com/apache/tika)
@@ -3574,7 +3574,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 92.7k<br>
 **Qué es:** Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.en.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `python -m pip install paddleocr` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [PDF Inspector](human/fichas/pdf-inspector.md) · [RAGFlow](human/fichas/ragflow.md) · [dify](human/fichas/dify.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/paddleocr.md) · [GitHub](https://github.com/PaddlePaddle/PaddleOCR)
@@ -3583,7 +3583,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 35.3k<br>
 **Qué es:** Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://ocrmypdf.readthedocs.io/en/latest/installation.html); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install ocrmypdf` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Tesseract](human/fichas/tesseract.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Stirling-PDF](human/fichas/stirling-pdf.md) · [PDF Inspector](human/fichas/pdf-inspector.md) · [PdfDing](human/fichas/pdfding.md)<br>
 **Más:** [ficha completa](human/fichas/ocrmypdf.md) · [GitHub](https://github.com/ocrmypdf/OCRmyPDF)
@@ -3592,7 +3592,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 77.5k<br>
 **Qué es:** Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://tesseract-ocr.github.io/tessdoc/Installation.html); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install tesseract` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [Unstructured](human/fichas/unstructured.md) · [Xberg (antes Kreuzberg)](human/fichas/xberg.md) · [Apache Tika](human/fichas/tika.md)<br>
 **Más:** [ficha completa](human/fichas/tesseract.md) · [GitHub](https://github.com/tesseract-ocr/tesseract)
@@ -3668,7 +3668,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9.8k<br>
 **Qué es:** Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker pull ghcr.io/pdfcrafttool/pdfcraft:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [coolify](human/fichas/coolify.md) · [docuseal](human/fichas/docuseal.md) · [paperless-ngx](human/fichas/paperless-ngx.md)<br>
 **Más:** [ficha completa](human/fichas/pdfcraft.md) · [GitHub](https://github.com/PDFCraftTool/pdfcraft)
@@ -3688,7 +3688,7 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 48.1k<br>
 **Qué es:** Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://docs.paperless-ngx.com/setup/#installation); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [Tesseract](human/fichas/tesseract.md) · [ERPNext](human/fichas/erpnext.md)<br>
 **Más:** [ficha completa](human/fichas/paperless-ngx.md) · [GitHub](https://github.com/paperless-ngx/paperless-ngx)
@@ -3725,7 +3725,7 @@ pip install -r requirements.txt` (comprobar los pasos completos en la ficha).<br
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🖥️ app · Setup 🟡 medio · ⭐ 27.8k<br>
 **Qué es:** Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/virattt/dexter/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/virattt/dexter.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [TradingAgents](human/fichas/tradingagents.md) · [langfuse](human/fichas/langfuse.md)<br>
 **Más:** [ficha completa](human/fichas/dexter.md) · [GitHub](https://github.com/virattt/dexter)
@@ -3766,7 +3766,7 @@ vibe-trading` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 21.6k<br>
 **Qué es:** Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/AI4Finance-Foundation/FinGPT/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/AI4Finance-Foundation/FinGPT.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación — **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos<br>
 **Combina con:** [Transformers](human/fichas/transformers.md) · [PEFT](human/fichas/peft.md) · [PyTorch](human/fichas/pytorch.md)<br>
 **Más:** [ficha completa](human/fichas/fingpt.md) · [GitHub](https://github.com/AI4Finance-Foundation/FinGPT)
@@ -3872,7 +3872,7 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 56.9k<br>
 **Qué es:** Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simulación.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://www.freqtrade.io/en/stable/docker_quickstart/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install freqtrade` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar una regla en datos históricos; Evaluar una estrategia en simulación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ccxt](human/fichas/ccxt.md) · [vectorbt](human/fichas/vectorbt.md) · [Grafana](human/fichas/grafana.md)<br>
 **Más:** [ficha completa](human/fichas/freqtrade.md) · [GitHub](https://github.com/freqtrade/freqtrade)
@@ -3917,7 +3917,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 406<br>
 **Qué es:** Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/ChainBuff/open-sol-bot/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Grafana](human/fichas/grafana.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/open-sol-bot.md) · [GitHub](https://github.com/ChainBuff/open-sol-bot)
@@ -3937,7 +3937,7 @@ hbot --help` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 21.8k<br>
 **Qué es:** Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up ml4t` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [qlib](human/fichas/qlib.md) · [vectorbt](human/fichas/vectorbt.md) · [marimo](human/fichas/marimo.md) · [FinRL](human/fichas/finrl.md)<br>
 **Más:** [ficha completa](human/fichas/machine-learning-for-trading.md) · [GitHub](https://github.com/stefan-jansen/machine-learning-for-trading)
@@ -4019,7 +4019,7 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9.1k<br>
 **Qué es:** Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/anyproto/anytype-ts/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/anyproto/anytype-ts.git && cd anytype-ts` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [markitdown](human/fichas/markitdown.md) · [activepieces](human/fichas/activepieces.md)<br>
 **Más:** [ficha completa](human/fichas/anytype-ts.md) · [GitHub](https://github.com/anyproto/anytype-ts)
@@ -4037,7 +4037,7 @@ Notas, sincronización, privacidad, aprendizaje y servidores personales. Disting
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 64.5k<br>
 **Qué es:** App de notas rápidas autoalojada con línea temporal personal, Markdown, etiquetas, compartición controlada, API y servidor MCP.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/usememos/memos/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d --name memos -p 5230:5230 -v ~/.memos:/var/opt/memos neosmemo/memos:stable` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: registrar ideas y notas breves del día en tu propio servidor; conectar tus notas con scripts o agentes mediante su API o MCP — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/memos.md) · [GitHub](https://github.com/usememos/memos)
@@ -4065,7 +4065,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 47.2k<br>
 **Qué es:** Espacio de conocimiento por bloques, local-first y autoalojable, con referencias bidireccionales, consultas SQL, mapas mentales y funciones de IA.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/siyuan-note/siyuan/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run -d -v workspace_dir_host:workspace_dir_container -p 6806:6806 -e PUID=1001 -e PGID=1002 b3log/siyuan serve --workspace=workspace_dir_container --accessAuthCode="${AuthCode:?Set AuthCode}"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal con referencias entre bloques; autoalojar un espacio de notas accesible desde el navegador — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [server](human/fichas/nextcloud-server.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/siyuan.md) · [GitHub](https://github.com/siyuan-note/siyuan)
@@ -4074,7 +4074,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 45.6k<br>
 **Qué es:** Plataforma de gestión del conocimiento local-first en forma de esquema, con páginas enlazadas, diario, consultas y grafo, en Markdown u Org.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/logseq/logseq/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -fsSL https://raw.githubusercontent.com/logseq/logseq/master/scripts/install-linux.sh | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: llevar un diario y notas enlazadas en archivos de texto propios; organizar investigación con bloques, referencias y consultas — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [syncthing](human/fichas/syncthing.md) · [Pandoc](human/fichas/pandoc.md) · [Claude Code](human/fichas/claude-code.md) · [D2](human/fichas/d2.md)<br>
 **Más:** [ficha completa](human/fichas/logseq.md) · [GitHub](https://github.com/logseq/logseq)
@@ -4083,7 +4083,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 39k<br>
 **Qué es:** App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/TriliumNext/Trilium/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/TriliumNext/Trilium.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md) · [Pandoc](human/fichas/pandoc.md)<br>
 **Más:** [ficha completa](human/fichas/trilium.md) · [GitHub](https://github.com/TriliumNext/Trilium)
@@ -4092,7 +4092,7 @@ claude plugin install obsidian@obsidian-skills` (comprobar los pasos completos e
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 30.5k<br>
 **Qué es:** Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA.<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://docs.karakeep.com/Installation/docker); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md) · [ArchiveBox](human/fichas/archivebox.md)<br>
 **Más:** [ficha completa](human/fichas/karakeep.md) · [GitHub](https://github.com/karakeep-app/karakeep)
@@ -4233,7 +4233,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 70.7k<br>
 **Qué es:** Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/dani-garcia/vaultwarden/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker pull vaultwarden/server:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Bitwarden Clients](human/fichas/bitwarden-clients.md) · [coolify](human/fichas/coolify.md) · [AdGuardHome](human/fichas/adguardhome.md)<br>
 **Más:** [ficha completa](human/fichas/vaultwarden.md) · [GitHub](https://github.com/dani-garcia/vaultwarden)
@@ -4242,7 +4242,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 62k<br>
 **Qué es:** Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar nada en los dispositivos, con panel web y DHCP opcional.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/pi-hole/pi-hole/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -sSL https://install.pi-hole.net | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: bloquear anuncios en smart TV y apps móviles de toda la casa; ver qué dominios consultan los dispositivos de tu red — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [Grafana](human/fichas/grafana.md) · [coolify](human/fichas/coolify.md) · [WireGuard Easy](human/fichas/wg-easy.md)<br>
 **Más:** [ficha completa](human/fichas/pi-hole.md) · [GitHub](https://github.com/pi-hole/pi-hole)
@@ -4251,7 +4251,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 38.5k<br>
 **Qué es:** Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [activepieces](human/fichas/activepieces.md) · [vaultwarden](human/fichas/vaultwarden.md) · [CasaOS](human/fichas/casaos.md) · [cleanyourtv](human/fichas/cleanyourtv.md) · [optimizerDuck](human/fichas/optimizerduck.md)<br>
 **Más:** [ficha completa](human/fichas/adguardhome.md) · [GitHub](https://github.com/AdguardTeam/AdGuardHome)
@@ -4278,7 +4278,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 30k<br>
 **Qué es:** Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/keepassxreboot/keepassxc/blob/develop/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/keepassxreboot/keepassxc.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: cofre local para el equipo de lab; TOTP + contraseñas sin nube — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [SOPS](human/fichas/sops.md)<br>
 **Más:** [ficha completa](human/fichas/keepassxc.md) · [GitHub](https://github.com/keepassxreboot/keepassxc)
@@ -4287,7 +4287,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 26.4k<br>
 **Qué es:** IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/goauthentik/authentik/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: SSO delante de apps autoalojadas; MFA centralizado para el lab — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [vaultwarden](human/fichas/vaultwarden.md) · [Caddy](human/fichas/caddy.md)<br>
 **Más:** [ficha completa](human/fichas/authentik.md) · [GitHub](https://github.com/goauthentik/authentik)
@@ -4296,7 +4296,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 24.3k<br>
 **Qué es:** Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/FiloSottile/age/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install age` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: cifrar un backup antes de subirlo; claves age para SOPS — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [SOPS](human/fichas/sops.md) · [HashiCorp Vault](human/fichas/vault.md)<br>
 **Más:** [ficha completa](human/fichas/age.md) · [GitHub](https://github.com/FiloSottile/age)
@@ -4314,7 +4314,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 14.2k<br>
 **Qué es:** Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://bitwarden.com/download/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/bitwarden/clients.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [vaultwarden](human/fichas/vaultwarden.md) · [activepieces](human/fichas/activepieces.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/bitwarden-clients.md) · [GitHub](https://github.com/bitwarden/clients)
@@ -4325,7 +4325,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 59.4k<br>
 **Qué es:** Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alternativa a Plex y Emby.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/jellyfin/jellyfin/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/jellyfin/jellyfin.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: organizar y ver tu videoteca en TV, móvil y navegador; compartir una biblioteca multimedia con la familia sin cuentas en la nube — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [HandBrake](human/fichas/handbrake.md) · [audiobookshelf](human/fichas/audiobookshelf.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/jellyfin.md) · [GitHub](https://github.com/jellyfin/jellyfin)
@@ -4372,7 +4372,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 37.5k<br>
 **Qué es:** Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/blakeblackshear/frigate/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker pull ghcr.io/blakeblackshear/frigate:stable` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Home Assistant](human/fichas/home-assistant.md) · [OpenCV](human/fichas/opencv.md) · [Zigbee2MQTT](human/fichas/zigbee2mqtt.md)<br>
 **Más:** [ficha completa](human/fichas/frigate.md) · [GitHub](https://github.com/blakeblackshear/frigate)
@@ -4410,7 +4410,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 57.9k<br>
 **Qué es:** Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/Gathin23/cleanyourtv/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/Gathin23/cleanyourtv` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar apps preinstaladas de una TV propia; Planificar un launcher sin perder funciones necesarias — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [AdGuardHome](human/fichas/adguardhome.md) · [optimizerDuck](human/fichas/optimizerduck.md) · [universal-android-debloater-next-generation](human/fichas/universal-android-debloater-next-generation.md)<br>
 **Más:** [ficha completa](human/fichas/cleanyourtv.md) · [GitHub](https://github.com/Gathin23/cleanyourtv)
@@ -4419,7 +4419,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 30.3k<br>
 **Qué es:** App de finanzas personales local-first basada en presupuesto por sobres, con sincronización entre dispositivos y servidor autoalojable.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/actualbudget/actual/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up --detach` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: llevar un presupuesto por sobres sin ceder tus datos a un servicio; importar movimientos bancarios y categorizar gastos en casa — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Ghostfolio](human/fichas/ghostfolio.md) · [coolify](human/fichas/coolify.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/actual.md) · [GitHub](https://github.com/actualbudget/actual)
@@ -4428,7 +4428,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 25.3k<br>
 **Qué es:** Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y API, sin IA ni nube.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/firefly-iii/firefly-iii/blob/main/readme.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose -f docker-compose.yml up -d --pull=always` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: registrar y categorizar gastos e ingresos con reglas automáticas; obtener informes de flujo de caja de varias cuentas en tu servidor — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Ghostfolio](human/fichas/ghostfolio.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/firefly-iii.md) · [GitHub](https://github.com/firefly-iii/firefly-iii)
@@ -4455,7 +4455,7 @@ claude plugin install claude-obsidian@agricidaniel-claude-obsidian` (comprobar l
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 9.7k<br>
 **Qué es:** Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/ghostfolio/ghostfolio/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose -f docker/docker-compose.yml up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [Actual Budget](human/fichas/actual.md) · [Firefly III](human/fichas/firefly-iii.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/ghostfolio.md) · [GitHub](https://github.com/ghostfolio/ghostfolio)

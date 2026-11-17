@@ -68,7 +68,13 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.
 3. Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/Lightricks/LTX-2.git
+```
+
+Comando copiado literalmente de el README (sección «🚀 Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/Lightricks/LTX-2/blob/main/README.md)
 

@@ -78,7 +78,13 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Instala las dependencias y descarga los pesos según checkpoints-download.md; ComfyUI y Diffusers son rutas alternativas.
 3. Genera un clip corto en 480p con offloading activado y mide tiempo y memoria antes de subir a 720p.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5.git
+```
+
+Comando copiado literalmente de el README (sección «Step 1: Clone the Repository»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md)
 

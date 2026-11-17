@@ -110,13 +110,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,p
 - Equipo: Preparación según la ruta elegida. Python 3.10–3.14; entorno virtual; extras del formato elegido
 **Repo:** https://github.com/microsoft/markitdown
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/microsoft/markitdown/blob/main/README.md
+pip install 'markitdown[all]'
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos Office para consulta; Crear una copia textual de un informe
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -171,13 +171,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,pdf,py
 - Equipo: Preparación según la ruta elegida. Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba
 **Repo:** https://github.com/ocrmypdf/OCRmyPDF
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://ocrmypdf.readthedocs.io/en/latest/installation.html
+brew install ocrmypdf
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -232,13 +232,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ocr,
 - Equipo: Preparación según la ruta elegida. Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba
 **Repo:** https://github.com/PaddlePaddle/PaddleOCR
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.en.md
+python -m pip install paddleocr
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -293,13 +293,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=gest
 - Equipo: Preparación según la ruta elegida. Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios
 **Repo:** https://github.com/paperless-ngx/paperless-ngx
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.paperless-ngx.com/setup/#installation
+docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -384,13 +384,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,typesc
 - Equipo: Preparación según la ruta elegida. Navegador moderno; PDFs de prueba; Node solo para self-hosting
 **Repo:** https://github.com/PDFCraftTool/pdfcraft
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md
+docker pull ghcr.io/pdfcrafttool/pdfcraft:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -537,13 +537,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,cpp
 - Equipo: Preparación según la ruta elegida. Binario o paquete; datos entrenados del idioma; imagen legible
 **Repo:** https://github.com/tesseract-ocr/tesseract
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://tesseract-ocr.github.io/tessdoc/Installation.html
+brew install tesseract
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -568,13 +568,13 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=do
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/apache/tika
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/apache/tika/blob/main/README.md
+git clone https://github.com/apache/tika.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: extraer texto y metadatos de archivos heterogéneos en un pipeline de indexación; alimentar un sistema RAG con Markdown generado desde documentos Office y PDF
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -631,13 +631,13 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=doc
 - Equipo: Preparación según la ruta elegida. Python; extras por formato; herramientas del sistema para PDF o imágenes
 **Repo:** https://github.com/Unstructured-IO/unstructured
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Unstructured-IO/unstructured/blob/main/README.md
+pip install "unstructured[all-docs]"
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

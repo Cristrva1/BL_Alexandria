@@ -13,8 +13,8 @@
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
-| Licencia | NOASSERTION | AGPL-3.0 |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | Any Source Available License 1.0 (no OSI) | AGPL-3.0 |
+| Instalación | `git clone https://github.com/anyproto/anytype-ts.git && cd anytype-ts` | Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y… |
 
 ## Regla práctica
 

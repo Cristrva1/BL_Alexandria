@@ -68,7 +68,13 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 2. Sigue su guía de inicio y configura únicamente la función que necesitas probar.
 3. Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+brew install --cask upscayl
+```
+
+Comando copiado literalmente de el README (sección «🍺 Homebrew»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/upscayl/upscayl/blob/main/README.md)
 

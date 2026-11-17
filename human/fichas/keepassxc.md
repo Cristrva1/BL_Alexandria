@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 30k | NOASSERTION | C++ | 2026-11-16 |
+| 30k | GPL-2.0 o GPL-3.0 | C++ | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla
 
 **Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** GPL-2.0 o GPL-3.0. A elección del usuario. Fuente: [LICENSE](https://github.com/keepassxreboot/keepassxc/blob/develop/COPYING). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -73,15 +75,21 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/keepassxreboot/keepassxc/blob/develop/README.md)
+```
+git clone https://github.com/keepassxreboot/keepassxc.git
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Build Steps»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/keepassxreboot/keepassxc/blob/develop/INSTALL.md)
 
 [Abrir la web o descarga indicada por el autor](https://keepassxc.org)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar KeePassXC para mi objetivo y necesito pasos guiados. Lee https://github.com/keepassxreboot/keepassxc/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar KeePassXC para mi objetivo y necesito pasos guiados. Lee https://github.com/keepassxreboot/keepassxc/blob/develop/INSTALL.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

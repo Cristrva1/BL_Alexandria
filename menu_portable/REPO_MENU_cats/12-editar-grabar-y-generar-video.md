@@ -173,13 +173,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vid
 - Equipo: Preparación según la ruta elegida. Python 3.10.9 y PyTorch según ruta; GPU grande; pesos y licencia
 **Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md
+docker pull hunyuanvideo/hunyuanvideo:cuda_12
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -204,13 +204,13 @@ role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=vi
 - Equipo: GPU o infraestructura especializada. GPU NVIDIA con CUDA y al menos 14 GB de VRAM con offloading; Linux y Python 3.10 o superior.
 **Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md
+git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p
 **Evita si:** no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia
@@ -296,13 +296,13 @@ role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=video
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/Lightricks/LTX-2
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Lightricks/LTX-2/blob/main/README.md
+git clone https://github.com/Lightricks/LTX-2.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: generar clips cortos con audio a partir de texto o una imagen en una GPU propia; entrenar un LoRA de estilo o personaje para el modelo
 **Evita si:** no tienes el hardware o no aceptas la licencia de los pesos
@@ -419,13 +419,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=edicion,ap
 - Equipo: Preparación según la ruta elegida. Build compatible o herramientas de compilación; secuencia o video de prueba
 **Repo:** https://github.com/AcademySoftwareFoundation/OpenRV
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://aswf-openrv.readthedocs.io/en/latest/
+git clone --recursive https://github.com/AcademySoftwareFoundation/OpenRV.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Revisar una entrega de animación; Comparar versiones de un efecto visual
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -579,13 +579,13 @@ role=app · exec=local · setup=heavy · mcp=True · prov=local,mcp · tags=vide
 - Equipo: Preparación según la ruta elegida. GPU compatible; Python y PyTorch según guía; pesos del modelo elegido
 **Repo:** https://github.com/deepbeepmeep/WanGP
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/deepbeepmeep/Wan2GP/blob/main/docs/INSTALLATION.md
+git clone https://github.com/deepbeepmeep/WanGP.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

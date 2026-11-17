@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 9.1k | NOASSERTION | TypeScript | 2026-11-14 |
+| 9.1k | Any Source Available License 1.0 (no OSI) | TypeScript | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
 **Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Any Source Available License 1.0 (no OSI). Source-available: uso no comercial o comercial solo en redes permitidas. Fuente: [LICENSE](https://github.com/anyproto/anytype-ts/blob/develop/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -75,10 +77,17 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 - espacio local
 - cuenta según ruta
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
-2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/anyproto/anytype-ts.git && cd anytype-ts
+```
+
+Comando copiado literalmente de el README (sección «🏗 Building from Source»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/anyproto/anytype-ts/blob/develop/README.md)
 
