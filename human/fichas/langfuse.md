@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 37.4k | NOASSERTION | TypeScript | 2026-06-23 |
+| 37.4k | MIT + licencia Enterprise (ee/) | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
 **Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT + licencia Enterprise (ee/). Fuente: [LICENSE](https://github.com/langfuse/langfuse/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 3.1k | NOASSERTION | C++ | 2026-11-14 |
+| 3.1k | MIT | C++ | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
 **Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** MIT. Fuente: [LICENSE](https://github.com/guillaumeblanc/ozz-animation/blob/master/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -66,10 +68,10 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 - modelo con esqueleto
 - herramientas de conversión compatibles
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.
 2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md)
 

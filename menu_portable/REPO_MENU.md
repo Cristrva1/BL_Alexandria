@@ -957,16 +957,16 @@ Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 - `claude-code-router` [P|hyb|H|+] — Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control lo — tags: serving,server,typescript — alt: omniroute,backdoor,litellm
 - `claude-code-usage-monitor` [A|loc|M|+] — Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible — tags: observabilidad,app,python
 - `deepeval` [L|hyb|E|+] — Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. — tags: evaluation,python — prov: openai — alt: ragas,promptfoo
-- `gpustack` [P|loc|H|?] — Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compa — tags: serving,python,gpu,self-hosted
+- `gpustack` [P|loc|H|+] — Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compa — tags: serving,python,gpu,self-hosted
 - `guardrails` [L|hyb|M|+] — Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. — tags: security,chatbot,python
 - `headroom` [L|hyb|E|+] — Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder  — tags: automation,llmops,python — alt: rtk
-- `helicone` [P|loc|M|?] — Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestion — tags: observability,typescript,llm,self-hosted — alt: langfuse
+- `helicone` [P|loc|M|+] — Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestion — tags: observability,typescript,llm,self-hosted — alt: langfuse
 - `langfuse` [P|hyb|M|+] — Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llama — tags: automation,observability,typescript,docker — alt: phoenix,opik,mlflow,helicone
 - `litellm` [L|hyb|E|+] — Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato d — tags: inference,llmops,python,docker — alt: omniroute,claude-code-router,backdoor
 - `lm-eval-harness` [L|hyb|M|+] — Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends — tags: evaluation,python,llm,benchmark
 - `loguru` [L|loc|E|+] — Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin  — tags: observability,evaluation,python
 - `mlflow` [P|loc|E|+] — Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. — tags: observability,training,evaluation,python — alt: langfuse
-- `omniroute` [P|hyb|H|?] — Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acces — tags: serving,server,typescript — prov: local — alt: claude-code-router,backdoor,litellm
+- `omniroute` [P|hyb|H|+] — Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acces — tags: serving,server,typescript — prov: local — alt: claude-code-router,backdoor,litellm
 - `openllmetry` [L|loc|E|+] — Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vect — tags: observability,python,llm,opentelemetry
 - `opik` [P|loc|M|+] — Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. — tags: observability,evaluation,python — alt: langfuse,phoenix
 - `phoenix` [P|loc|E|+] — Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. — tags: observability,evaluation,python — alt: langfuse,opik
@@ -975,7 +975,7 @@ Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 - `ray` [L|loc|M|+] — Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, e — tags: distributed,python,serving,ml
 - `rtk` [A|loc|E|+] — Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código — tags: tokens,agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction — alt: headroom
 - `sglang` [R|loc|H|+] — Framework de servicio de alto rendimiento para LLM y modelos multimodales. — tags: inference,python — prov: local — alt: vllm
-- `tensorrt-llm` [L|loc|H|?] — Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes esp — tags: serving,blackwell,cuda,llm-serving,moe,pytorch,python
+- `tensorrt-llm` [L|loc|H|+] — Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes esp — tags: serving,blackwell,cuda,llm-serving,moe,pytorch,python
 - `vllm` [R|loc|H|+] — Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. — tags: inference,python — prov: local — alt: sglang
 - `xinference` [P|loc|M|+] — Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y víde — tags: serving,python,llm,self-hosted
 
@@ -983,10 +983,10 @@ Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 
 - `accelerate` [L|loc|E|+] — Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y  — tags: training,python,pytorch
-- `axolotl` [L|loc|H|?] — Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimod — tags: training,python,llm,gpu — alt: torchtune,llama-factory,unsloth
+- `axolotl` [L|loc|H|+] — Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimod — tags: training,python,llm,gpu — alt: torchtune,llama-factory,unsloth
 - `bionemo-recipes` [D|loc|H|?] — Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. — tags: entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
 - `cosmos` [R|hyb|H|?] — Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos — tags: inference
-- `deepseek-v3` [R|hyb|H|?] — Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su  — tags: llm,inference,python
+- `deepseek-v3` [R|hyb|H|+] — Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su  — tags: llm,inference,python
 - `deepspeed` [L|loc|H|+] — Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descar — tags: training,python,gpu,distributed
 - `gemma` [L|loc|H|+] — Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo — tags: model,python,jax,llm
 - `jax` [L|loc|M|+] — Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y — tags: ml,python,library,numerical — alt: pytorch,tensorflow
@@ -994,10 +994,10 @@ Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 - `kimi-k2-7-code` [R|hyb|H|?] — Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Huggi — tags: kimi,moonshot,modelo,programacion,pesos-abiertos,huggingface — prov: local
 - `laya` [R|loc|H|+] — Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. — tags: modelos,model,python — prov: local
 - `llama-factory` [A|loc|M|+] — Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. — tags: training,python — prov: local — alt: unsloth,axolotl,torchtune
-- `nemotron` [D|loc|H|?] — Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. — tags: training,inference — prov: local
-- `openrlhf` [L|loc|H|?] — Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entr — tags: training,python,rl,gpu — alt: verl
+- `nemotron` [D|loc|H|+] — Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. — tags: training,inference — prov: local
+- `openrlhf` [L|loc|H|+] — Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entr — tags: training,python,rl,gpu — alt: verl
 - `peft` [L|loc|M|+] — Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. — tags: training,python
-- `pytorch` [L|loc|M|?] — Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. — tags: training,python — alt: tensorflow,jax
+- `pytorch` [L|loc|M|+] — Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. — tags: training,python — alt: tensorflow,jax
 - `pytorch-lightning` [L|loc|E|+] — Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con — tags: training,python,pytorch
 - `scikit-learn` [L|loc|E|+] — La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimens — tags: ml,python,library,data
 - `tensorflow` [L|loc|H|+] — Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entor — tags: entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python — alt: pytorch,jax
@@ -1006,7 +1006,7 @@ Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 - `transformers` [L|loc|E|+] — Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. — tags: training,inference,python
 - `trl` [L|loc|M|+] — Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. — tags: training,python
 - `unsloth` [A|loc|M|+] — App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcional — tags: training,local,python — prov: local — alt: llama-factory,axolotl,torchtune
-- `verl` [L|loc|H|?] — Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros alg — tags: training,python,rl,gpu — alt: openrlhf
+- `verl` [L|loc|H|+] — Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros alg — tags: training,python,rl,gpu — alt: openrlhf
 
 ### 25. Procesar datos y trabajar con notebooks (23)
 Detalle: `REPO_MENU_cats/25-procesar-datos-y-trabajar-con-notebooks.md`
@@ -1016,13 +1016,13 @@ Detalle: `REPO_MENU_cats/25-procesar-datos-y-trabajar-con-notebooks.md`
 - `awesome-bigdata` [D|cld|E|?] — Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para des — tags: data
 - `clickhouse` [P|loc|M|+] — Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones d — tags: database,sql,analytics,cpp
 - `dash` [L|loc|M|?] — Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con compone — tags: automation,ui,python
-- `dbt` [A|loc|M|?] — Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y de — tags: data,sql,etl,analytics
-- `delta-lake` [L|loc|M|?] — Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y — tags: data,lakehouse,table-format,scala — alt: apache-iceberg,hudi
+- `dbt` [A|loc|M|+] — Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y de — tags: data,sql,etl,analytics
+- `delta-lake` [L|loc|M|+] — Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y — tags: data,lakehouse,table-format,scala — alt: apache-iceberg,hudi
 - `dlt` [L|loc|E|+] — Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o alm — tags: data,etl,python,pipeline
 - `duckdb` [L|loc|E|?] — Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. — tags: data,analytics,cpp — alt: polars
 - `globalbuildingatlas` [D|loc|H|?] — Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. — tags: datos,python
 - `gradio` [L|loc|E|+] — Librería Python para crear y compartir apps web de modelos de ML en minutos. — tags: ui,python — alt: streamlit,reflex,nicegui,panel
-- `hudi` [P|hyb|H|?] — Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. — tags: datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi — alt: apache-iceberg,delta-lake
+- `hudi` [P|hyb|H|+] — Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. — tags: datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi — alt: apache-iceberg,delta-lake
 - `ibis` [L|loc|E|+] — Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHous — tags: data,python,dataframe,sql
 - `jupyterlab` [A|loc|E|+] — Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable me — tags: notebooks,data,python,typescript — alt: marimo
 - `marimo` [A|loc|E|+] — Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. — tags: notebooks,data,python — alt: jupyterlab
@@ -1054,24 +1054,24 @@ Detalle: `REPO_MENU_cats/26-animaci-n-gr-ficos-y-creaci-n-3d.md`
 - `openscad` [A|loc|E|?] — CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (S — tags: cad,3d,code,app
 - `ozz-animation` [L|loc|M|?] — Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicacione — tags: creacion-3d,library,c
 - `pencil` [A|loc|E|?] — Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. — tags: edicion,app,c
-- `pixelfx` [L|loc|M|?] — Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. — tags: animacion,library,javascript
+- `pixelfx` [L|loc|M|+] — Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. — tags: animacion,library,javascript
 - `pixijs` [L|loc|E|+] — Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y apl — tags: javascript,2d,webgl,animation
-- `planck-js` [L|loc|M|?] — Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. — tags: animacion,library,typescript
+- `planck-js` [L|loc|M|+] — Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. — tags: animacion,library,typescript
 - `playcanvas` [L|loc|E|+] — Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con sop — tags: javascript,3d,webgpu,gamedev — alt: three.js,babylonjs
 - `react-three-fiber` [L|loc|M|+] — Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. — tags: ui,design,typescript
 - `react-three-rapier` [L|loc|M|?] — Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales — tags: animacion,library,typescript
 - `regl` [L|loc|M|+] — Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicac — tags: animacion,library,javascript
 - `scenejs` [L|loc|M|+] — Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. — tags: animacion,library,typescript
-- `three.js` [L|loc|M|?] — Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. — tags: ui,design,javascript — alt: babylonjs,playcanvas
+- `three.js` [L|loc|M|+] — Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. — tags: ui,design,javascript — alt: babylonjs,playcanvas
 - `warp` [L|loc|H|+] — Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. — tags: entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
 - `webgl-noise` [L|loc|M|?] — Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo rea — tags: animacion,library,c
-- `zdog` [L|loc|M|?] — Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. — tags: animacion,library,javascript
+- `zdog` [L|loc|M|+] — Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. — tags: animacion,library,javascript
 
 ### 27. Skills de diseño, contenido y especialidades (36)
 Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 
-- `3dviz-pro-max` [S|loc|M|?] — Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. — tags: skills,skill,javascript — alt: threejs-skills
-- `agency-agents` [S|hyb|E|?] — Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Co — tags: agents,prompts,skills,coding-agent — alt: wshobson-agents
+- `3dviz-pro-max` [S|loc|M|+] — Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. — tags: skills,skill,javascript — alt: threejs-skills
+- `agency-agents` [S|hyb|E|+] — Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Co — tags: agents,prompts,skills,coding-agent — alt: wshobson-agents
 - `anatomy` [S|loc|M|+] — Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales op — tags: skills,skill,javascript
 - `arcads-claude-code` [S|cld|M|+] — Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, S — tags: video,image,skills,python
 - `blender-skills` [S|loc|M|+] — Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexio — tags: creacion-3d,skill,typescript
@@ -1079,7 +1079,7 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `creative-architect` [S|hyb|E|+] — Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de ima — tags: direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect — prov: anthropic,openai
 - `design-dna` [S|loc|M|+] — Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo cohe — tags: skills,skill,javascript
 - `design.md` [L|cld|E|+] — Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones. — tags: skills,design,typescript
-- `dream-loop` [S|loc|M|?] — Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimension — tags: skills,skill,javascript
+- `dream-loop` [S|loc|M|+] — Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimension — tags: skills,skill,javascript
 - `financial-services` [S|cld|M|+] — Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. — tags: dominio,python — prov: anthropic
 - `front-end-checklist` [D|loc|E|?] — Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. — tags: skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
 - `genjutsu` [S|loc|M|+] — Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. — tags: skills,skill,python
@@ -1087,11 +1087,11 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `gsap-skills` [S|loc|M|+] — Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. — tags: skills,skill,reference
 - `hallmark` [S|loc|M|+] — Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y cohere — tags: skills,skill,css — alt: ui-ux-pro-max-skill,taste-skill,impeccable
 - `humanizer` [S|hyb|E|+] — Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. — tags: skills,prompts,docs — alt: stop-slop,no-ai-slop
-- `i-have-adhd` [S|loc|M|?] — Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. — tags: escritura,skill,python
+- `i-have-adhd` [S|loc|M|+] — Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. — tags: escritura,skill,python
 - `impeccable` [S|cld|E|+] — Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. — tags: skills,design,rust — alt: ui-ux-pro-max-skill,taste-skill,hallmark
 - `instagram-agent-skill` [S|loc|M|+] — Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de  — tags: dominio,skill,python
 - `linkedin-agent-skill` [S|loc|M|+] — Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de Linke — tags: dominio,skill,python
-- `logo-design-skill` [S|loc|M|?] — Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de dise — tags: skills,skill,html
+- `logo-design-skill` [S|loc|M|+] — Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de dise — tags: skills,skill,html
 - `marketingskills` [S|hyb|E|+] — Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code,  — tags: skills,analytics,email,search
 - `minimalist-entrepreneur-skills` [S|loc|M|+] — Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con u — tags: dominio,skill,reference
 - `modern-web-guidance` [S|loc|M|+] — Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. — tags: skills,skill,reference
@@ -1100,7 +1100,7 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `scientific-agent-skills` [S|loc|M|+] — Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas d — tags: dominio,skill,python
 - `skills-emil` [S|cld|E|+] — Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrolla — tags: skills,design
 - `social-media-research-skills` [S|cld|M|+] — Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. — tags: dominio,agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor — tools: claude-code,codex — alt: last30days-skill
-- `stitch-skills` [S|cld|E|?] — Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. — tags: skills,design,ui
+- `stitch-skills` [S|cld|E|+] — Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. — tags: skills,design,ui
 - `stop-slop` [S|hyb|E|?] — Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbric — tags: skills,prompts,docs — alt: humanizer,no-ai-slop
 - `taste-skill` [S|cld|E|+] — Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movie — tags: skills,design,javascript — alt: ui-ux-pro-max-skill,impeccable,hallmark
 - `threejs-game-skills` [S|loc|M|+] — Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros o — tags: skills,skill,python

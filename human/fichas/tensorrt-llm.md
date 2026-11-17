@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 15.1k | NOASSERTION | Python | 2026-11-14 |
+| 15.1k | Apache-2.0 | Python | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
 **Nivel:** 3 Avanzado — preparación pesada; requiere programar con él
 
 **Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0. Componentes de terceros con sus licencias (BSD-3, MIT…). Fuente: [LICENSE](https://github.com/NVIDIA/TensorRT-LLM/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -68,17 +70,24 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 - CUDA y dependencias según versión
 - modelo soportado
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
-2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
-3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.
+4. Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://nvidia.github.io/TensorRT-LLM/installation/index.html)
+```
+docker run --rm -it --ipc=host --gpus all -p 8000:8000 -v "$HOST_MODELS_DIR":/models --name tensorrt_llm nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc25 /bin/bash
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Run Docker Container»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/deployment-guide/deployment-guide-for-glm-5-on-trtllm.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar TensorRT-LLM para mi objetivo y necesito pasos guiados. Lee https://nvidia.github.io/TensorRT-LLM/installation/index.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar TensorRT-LLM para mi objetivo y necesito pasos guiados. Lee https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/deployment-guide/deployment-guide-for-glm-5-on-trtllm.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

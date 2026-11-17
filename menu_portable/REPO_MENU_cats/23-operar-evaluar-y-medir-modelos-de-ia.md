@@ -178,13 +178,13 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=serv
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/gpustack/gpustack
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/gpustack/gpustack/blob/main/README.md
+sudo docker run -d --name gpustack --restart unless-stopped -p 80:80 --volume gpustack-data:/var/lib/gpustack gpustack/gpustack
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -269,13 +269,13 @@ role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=obs
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/Helicone/helicone
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Helicone/helicone/blob/main/README.md
+git clone https://github.com/Helicone/helicone.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: ver coste y latencia de todas las llamadas a modelos de tu aplicación; versionar prompts y enrutar entre proveedores con reintentos
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -458,13 +458,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=s
 - Equipo: Preparación según la ruta elegida. Node o distribución compatible; cuentas de proveedores o backend local; agente opcional
 **Repo:** https://github.com/cheaper-inference/OmniRoute
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md
+npm install -g omniroute
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -738,13 +738,13 @@ role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=servi
 - Equipo: Preparación según la ruta elegida. GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado
 **Repo:** https://github.com/NVIDIA/TensorRT-LLM
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://nvidia.github.io/TensorRT-LLM/installation/index.html
+docker run --rm -it --ipc=host --gpus all -p 8000:8000 -v "$HOST_MODELS_DIR":/models --name tensorrt_llm nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc25 /bin/bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

@@ -48,13 +48,13 @@ role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=train
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/axolotl-ai-cloud/axolotl
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md
+uv pip install axolotl[deepspeed]
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: ajustar un modelo abierto con QLoRA a partir de un archivo YAML; entrenar con GRPO o DPO en varias GPU
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -139,13 +139,13 @@ role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=llm,
 - Equipo: GPU o infraestructura especializada. API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM
 **Repo:** https://github.com/deepseek-ai/DeepSeek-V3
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md
+git clone https://github.com/deepseek-ai/DeepSeek-V3.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang
 **Evita si:** Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo
@@ -384,13 +384,13 @@ role=directory · exec=local · setup=heavy · mcp=False · prov=local · tags=t
 - Equipo: Preparación según la ruta elegida. Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin
 **Repo:** https://github.com/NVIDIA-NeMo/Nemotron
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+/plugin marketplace add NVIDIA-NeMo/Nemotron
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar modelos abiertos de NVIDIA; Preparar un pipeline guiado de adaptación
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -414,13 +414,13 @@ role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=train
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/OpenRLHF/OpenRLHF
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md
+pip install openrlhf
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa; experimentar con RL para agentes con varios turnos
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -475,13 +475,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=trai
 - Equipo: Preparación según la ruta elegida. Python compatible; paquete para CPU o tu GPU; entorno aislado
 **Repo:** https://github.com/pytorch/pytorch
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://pytorch.org/get-started/locally/
+docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender tensores; Entrenar una red educativa
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -751,13 +751,13 @@ role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=train
 - Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
 **Repo:** https://github.com/verl-project/verl
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/verl-project/verl/blob/main/README.md
+git clone --recursive https://github.com/verl-project/verl.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo de razonamiento con GRPO sobre problemas verificables; investigar nuevos algoritmos de RL para LLM a escala
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código

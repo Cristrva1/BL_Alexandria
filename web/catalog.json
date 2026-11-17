@@ -183750,12 +183750,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "sudo docker run -d --name gpustack --restart unless-stopped -p 80:80 --volume gpustack-data:/var/lib/gpustack gpustack/gpustack",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/gpustack/gpustack/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Install GPUStack»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la guía de instalación con Docker en un nodo con GPU NVIDIA, despliega un modelo pequeño y prueba la API con curl.",
@@ -183887,9 +183888,9 @@
       "lead": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
       "body": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/gpustack/gpustack/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "sudo docker run -d --name gpustack --restart unless-stopped -p 80:80 --volume gpustack-data:/var/lib/gpustack gpustack/gpustack",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -184256,12 +184257,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/Helicone/helicone.git",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/Helicone/helicone/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Despliega Helicone con su Docker Compose, cambia la URL base de un cliente OpenAI a la pasarela y haz una petición.",
@@ -184437,9 +184439,9 @@
       "lead": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
       "body": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/Helicone/helicone/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "git clone https://github.com/Helicone/helicone.git",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -184610,7 +184612,7 @@
       "status": "",
       "pick": false,
       "stars": 37436,
-      "license": "NOASSERTION",
+      "license": "MIT + licencia Enterprise (ee/)",
       "homepage": "https://langfuse.com",
       "combina_con": [
         {
@@ -184695,6 +184697,13 @@
       "que_es": "Langfuse, plataforma open source de ingeniería de IA para observabilidad y evaluación de agentes; forma parte de ClickHouse desde enero de 2026. Es MIT salvo las carpetas `ee` (GitHub muestra NOASSERTION). Es muy activa (~37k estrellas, v4.80.0).",
       "que_hace": "Registra trazas de llamadas a LLM, recuperación, embeddings y herramientas, con uso y costes. Gestiona y versiona prompts, y en beta también skills (`SKILL.md`). Permite evaluaciones con LLM como juez, anotación manual, datasets y experimentos, además de un playground.",
       "como_lo_hace": "Se usa en Langfuse Cloud o se autoaloja con Docker Compose, Kubernetes o Terraform. Recibe trazas por SDK de Python y JS/TS o por OpenTelemetry, con integraciones para muchos frameworks. El despliegue propio requiere Postgres, ClickHouse, Redis y almacenamiento S3.",
+      "licencia_verificada": {
+        "texto": "MIT + licencia Enterprise (ee/)",
+        "fuente": "https://github.com/langfuse/langfuse/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": true
+      },
       "descripcion_notas": "Alternativas (elige una): phoenix, opik, mlflow. Las funciones `ee` tienen otra licencia.",
       "descripcion_fuentes": [
         "https://github.com/langfuse/langfuse/blob/main/README.md",
@@ -184947,7 +184956,7 @@
       "status": "",
       "pick": false,
       "stars": 63263,
-      "license": "NOASSERTION",
+      "license": "MIT + licencia Enterprise (litellm/enterprise/)",
       "homepage": "https://docs.litellm.ai/docs/",
       "combina_con": [
         {
@@ -185025,6 +185034,13 @@
       "que_es": "LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra NOASSERTION). Es muy popular (~63k estrellas, v1.10x).",
       "que_hace": "Permite llamar a OpenAI, Anthropic, Gemini, Bedrock, Azure, Ollama y otros con una sola interfaz. Como proxy centralizado añade claves virtuales, control de gasto, guardrails, balanceo de carga, enrutamiento automático por complejidad, panel de administración y una pasarela MCP. Funciones como SSO o ciertos guardrails requieren la licencia Enterprise.",
       "como_lo_hace": "En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefijo del modelo (`openai/...`, `anthropic/...`) y `Router` reparte entre modelos. El proxy (`litellm[proxy]`, puerto 4000) expone endpoints compatibles con OpenAI como `/chat/completions`, `/embeddings`, `/responses` y `/messages`, de modo que un cliente de OpenAI solo cambia `base_url`. Los paquetes `litellm` y `litellm-core` no deben instalarse en el mismo entorno. Fija versiones: el 24 de marzo de 2026 se publicaron en PyPI las versiones maliciosas 1.82.7 y 1.82.8, con un ladrón de credenciales. La imagen Docker oficial no se vio afectada.",
+      "licencia_verificada": {
+        "texto": "MIT + licencia Enterprise (litellm/enterprise/)",
+        "fuente": "https://github.com/BerriAI/litellm/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": true
+      },
       "descripcion_notas": "Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.",
       "descripcion_fuentes": [
         "https://github.com/BerriAI/litellm/blob/main/README.md",
@@ -186044,7 +186060,7 @@
       "status": "",
       "pick": false,
       "stars": 7498,
-      "license": "NOASSERTION",
+      "license": "Apache-2.0",
       "homepage": "https://docs.nvidia.com/nemo/guardrails/latest/index.html",
       "combina_con": [
         {
@@ -186079,6 +186095,13 @@
       "que_es": "NeMo Guardrails, toolkit open source de NVIDIA para añadir barreras programables a aplicaciones conversacionales con LLM. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activo (~7.5k estrellas, v0.24.1).",
       "que_hace": "Controla la salida del modelo con «rails»: no hablar de ciertos temas, seguir un diálogo, filtrar entradas y salidas, detectar jailbreaks, verificar hechos y moderar contenido. Las reglas se definen con configuración y el lenguaje Colang. Se puede usar como librería de Python o como servidor de guardrails.",
       "como_lo_hace": "Se instala con `pip install nemoguardrails` y requiere Python 3.11–3.13 (desde 0.25.0 ya no admite 3.10). La integración con LangChain es opcional (`NEMOGUARDRAILS_LLM_FRAMEWORK=langchain`). Recoge telemetría anónima de uso (revisa la sección de privacidad para desactivarla).",
+      "licencia_verificada": {
+        "texto": "Apache-2.0",
+        "fuente": "https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/LICENSE.md",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": false
+      },
       "descripcion_notas": "Sin alternativas declaradas. No confundir con Guardrails AI (otro proyecto, no catalogado). Telemetría activa por defecto.",
       "descripcion_fuentes": [
         "https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/README.md",
@@ -186182,16 +186205,17 @@
           "agente opcional"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "npm install -g omniroute",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/README.md",
+        "note": "Comando copiado literalmente de el README (sección «⚡ Quick Start»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Conecta un proveedor autorizado y revisa una petición breve antes de activar rotación, fallback o compresión",
@@ -186362,9 +186386,9 @@
       "lead": "Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.",
       "body": "Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "npm install -g omniroute",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -187066,7 +187090,7 @@
       "status": "",
       "pick": false,
       "stars": 12295,
-      "license": "NOASSERTION",
+      "license": "Elastic-2.0",
       "homepage": "https://arize.com/docs/phoenix",
       "combina_con": [
         {
@@ -187150,6 +187174,14 @@
       "que_es": "Arize Phoenix, plataforma de observabilidad de IA para experimentación, evaluación y depuración, de Arize. Licencia Elastic License 2.0 (código disponible, no OSI; GitHub muestra NOASSERTION). Es muy activa (~12k estrellas, arize-phoenix-v21.1.0).",
       "que_hace": "Traza aplicaciones LLM con instrumentación basada en OpenTelemetry (OpenInference). Evalúa con LLM, gestiona datasets, experimentos y versiones de prompts, y ofrece un playground. Tiene un servidor MCP remoto para consultar trazas desde Claude Code, Cursor y otros clientes.",
       "como_lo_hace": "Se instala con `pip install arize-phoenix` o `npx @arizeai/phoenix-cli setup`, y también se despliega con Docker Compose o Kubernetes/Helm. Es autoalojado; Arize AX es la versión gestionada de pago.",
+      "licencia_verificada": {
+        "texto": "Elastic-2.0",
+        "nota": "Source-available (ELv2).",
+        "fuente": "https://github.com/Arize-ai/phoenix/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": true
+      },
       "descripcion_notas": "Alternativas (elige una): langfuse, opik. La licencia ELv2 prohíbe ofrecerlo como servicio gestionado a terceros.",
       "descripcion_fuentes": [
         "https://github.com/Arize-ai/phoenix/blob/main/README.md",
@@ -188634,16 +188666,17 @@
           "modelo soportado"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://nvidia.github.io/TensorRT-LLM/installation/index.html",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "docker run --rm -it --ipc=host --gpus all -p 8000:8000 -v \"$HOST_MODELS_DIR\":/models --name tensorrt_llm nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc25 /bin/bash",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/deployment-guide/deployment-guide-for-glm-5-on-trtllm.md",
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Run Docker Container»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar",
@@ -188716,7 +188749,7 @@
       "status": "",
       "pick": false,
       "stars": 15075,
-      "license": "NOASSERTION",
+      "license": "Apache-2.0",
       "homepage": "https://nvidia.github.io/TensorRT-LLM",
       "combina_con": [
         {
@@ -188763,6 +188796,14 @@
       "que_es": "TensorRT LLM, la librería de NVIDIA para optimizar inferencia de LLM y modelos de generación visual en GPU NVIDIA. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activa (~15k estrellas, v1.2.1).",
       "que_hace": "Ofrece kernels especializados, un runtime eficiente y una API de Python (LLM API) construida sobre PyTorch para servir modelos en una o varias GPU. Incluye cuantización, caché KV optimizada, decodificación especulativa y técnicas para MoE a gran escala. Sirve modelos con `trtllm-serve` mediante una API compatible con OpenAI.",
       "como_lo_hace": "Se instala con pip o con contenedores NGC y solo funciona en GPU NVIDIA con CUDA. Desde la versión 1.0 tiene política formal de deprecaciones. Recoge telemetría anónima por defecto (se desactiva automáticamente en CI; revisa la documentación para desactivarla).",
+      "licencia_verificada": {
+        "texto": "Apache-2.0",
+        "nota": "Componentes de terceros con sus licencias (BSD-3, MIT…).",
+        "fuente": "https://github.com/NVIDIA/TensorRT-LLM/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": false
+      },
       "descripcion_notas": "Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.",
       "descripcion_fuentes": [
         "https://github.com/NVIDIA/TensorRT-LLM/blob/main/README.md",
@@ -188787,9 +188828,9 @@
       "lead": "Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados.",
       "body": "Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados.",
       "install": {
-        "command": "Seguir la instalación original: https://nvidia.github.io/TensorRT-LLM/installation/index.html",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "docker run --rm -it --ipc=host --gpus all -p 8000:8000 -v \"$HOST_MODELS_DIR\":/models --name tensorrt_llm nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc25 /bin/bash",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -189610,12 +189651,13 @@
           "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
           "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "uv pip install axolotl[deepspeed]",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la instalación con uv del README en una máquina con GPU y lanza uno de los ejemplos de configuración QLoRA pequeños.",
@@ -189790,9 +189832,9 @@
       "lead": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
       "body": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "uv pip install axolotl[deepspeed]",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -189885,16 +189927,16 @@
           "datos autorizados"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Revisa la receta ESM2 y calcula sus requisitos antes de ejecutar un ejemplo educativo pequeño",
@@ -190098,16 +190140,16 @@
           "token HF de lectura"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/NVIDIA/cosmos/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Consulta una demo o ejecuta una receta pequeña y compara el video con su condicionamiento",
@@ -190181,7 +190223,7 @@
       "status": "",
       "pick": false,
       "stars": 12365,
-      "license": "NOASSERTION",
+      "license": "OpenMDW-1.1",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "combina_con": [
         {
@@ -190222,6 +190264,14 @@
       "que_es": "NVIDIA Cosmos, plataforma de modelos fundacionales de mundo (world foundation models) para IA física: robótica, vehículos autónomos, industria y más. Código y modelos con licencia OpenMDW-1.1 (GitHub muestra NOASSERTION). Tiene ~12k estrellas; la familia actual es Cosmos 3 (mayo de 2026) y Cosmos3-Edge (4B) está pensado para dispositivos.",
       "que_hace": "Cosmos 3 usa una arquitectura Mixture-of-Transformers con dos torres: Reasoner (comprensión del mundo, planificación) y un generador de vídeo y mundos. Sirve para generación con física, transferencia de escenarios, políticas de acción, simulación y datos sintéticos.",
       "como_lo_hace": "Se prueba sin instalar en build.nvidia.com o se instala con `uv pip install --torch-backend=auto …` y se usa desde Diffusers (`Cosmos3OmniPipeline`). Requiere GPU NVIDIA; el COOKBOOK trae recetas de entrenamiento y simulación.",
+      "licencia_verificada": {
+        "texto": "OpenMDW-1.1",
+        "nota": "Licencia de NVIDIA para modelos y materiales asociados.",
+        "fuente": "https://github.com/NVIDIA/cosmos/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": true
+      },
       "descripcion_notas": "Sin alternativas declaradas.",
       "descripcion_fuentes": [
         "https://github.com/NVIDIA/cosmos/blob/main/README.md",
@@ -190325,15 +190375,15 @@
         "steps": [
           "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
           "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/deepseek-ai/DeepSeek-V3.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Model Weights & Demo Code Preparation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta",
@@ -190465,9 +190515,9 @@
       "lead": "Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.",
       "body": "Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "git clone https://github.com/deepseek-ai/DeepSeek-V3.git",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -192203,16 +192253,17 @@
           "Claude Code solo para plugin"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "/plugin marketplace add NVIDIA-NeMo/Nemotron",
+        "command_language": "text",
+        "command_status": "documented",
         "source": "https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Use from Claude Code»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Elige una receta y usa su guía para identificar datos, checkpoint y recursos antes de ejecutarla",
@@ -192356,9 +192407,9 @@
       "lead": "Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.",
       "body": "Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.",
       "install": {
-        "command": "Consultar el material original; elegir un ejemplo antes de instalar.",
-        "confidence": "clone",
-        "note": "Una referencia no se instala como un servicio único."
+        "command": "/plugin marketplace add NVIDIA-NeMo/Nemotron",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -192444,12 +192495,13 @@
           "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
           "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "pip install openrlhf",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la guía rápida de OpenRLHF en un entorno con GPU y ejecuta un script de ejemplo de SFT o RM pequeño.",
@@ -192607,9 +192659,9 @@
       "lead": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
       "body": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "pip install openrlhf",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -192940,16 +192992,17 @@
           "entorno aislado"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://pytorch.org/get-started/locally/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/pytorch/pytorch/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Using pre-built images»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Usa el selector oficial de instalación y realiza una operación pequeña con tensores",
@@ -193022,7 +193075,7 @@
       "status": "",
       "pick": false,
       "stars": 105501,
-      "license": "NOASSERTION",
+      "license": "BSD-3-Clause",
       "homepage": "https://pytorch.org",
       "combina_con": [
         {
@@ -193090,6 +193143,13 @@
       "que_es": "PyTorch, framework de deep learning con tensores acelerados por GPU y autograd dinámico, gobernado por la PyTorch Foundation (Linux Foundation). Licencia de estilo BSD (GitHub muestra NOASSERTION). Es muy madura (~106k estrellas, v2.15.0).",
       "que_hace": "Ofrece cálculo de tensores tipo NumPy en GPU, redes neuronales con autograd basado en cinta, ejecución imperativa y compilación (`torch.compile`). Es la base de la mayoría de librerías modernas de modelos.",
       "como_lo_hace": "Se instala con binarios por plataforma (pip o conda, con selector CUDA, ROCm o CPU en pytorch.org) o desde el código fuente. Soporta GPU NVIDIA (CUDA), AMD (ROCm), Intel y Jetson.",
+      "licencia_verificada": {
+        "texto": "BSD-3-Clause",
+        "fuente": "https://github.com/pytorch/pytorch/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": false
+      },
       "descripcion_notas": "Alternativa (elige una): tensorflow.",
       "descripcion_fuentes": [
         "https://github.com/pytorch/pytorch/blob/main/README.md",
@@ -193113,9 +193173,9 @@
       "lead": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
       "body": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
       "install": {
-        "command": "Seguir la instalación original: https://pytorch.org/get-started/locally/",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -195269,12 +195329,13 @@
           "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
           "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone --recursive https://github.com/verl-project/verl.git",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/verl-project/verl/blob/main/README.md",
+        "source": "https://github.com/verl-project/verl/blob/main/docs/ascend_tutorial/en/get_start/install_guidance.rst",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «USE_MEGATRON=0 bash verl/scripts/install_vllm_mcore_npu.sh»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la guía de inicio rápido de verl en un nodo con GPU y ejecuta el ejemplo PPO o GRPO pequeño con GSM8K.",
@@ -195437,9 +195498,9 @@
       "lead": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
       "body": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/verl-project/verl/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "git clone --recursive https://github.com/verl-project/verl.git",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -195528,7 +195589,7 @@
         "entry_url": "",
         "source": "https://github.com/apache/arrow/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala PyArrow, lee un archivo Parquet con `pyarrow.parquet.read_table` y conviértelo a pandas.",
@@ -195755,7 +195816,7 @@
         "entry_url": "https://py.iceberg.apache.org/",
         "source": "https://github.com/apache/iceberg/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Crea una tabla Iceberg pequeña con PyIceberg, añade una columna y consulta el snapshot previo",
@@ -196022,7 +196083,7 @@
         "entry_url": "",
         "source": "https://github.com/apache/spark/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala PySpark (`pip install pyspark`) y procesa un CSV local con un DataFrame y una consulta SQL en modo local.",
@@ -196263,8 +196324,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/oxnr/awesome-bigdata/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una",
@@ -196715,15 +196776,15 @@
           "datos de muestra"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://dash.plotly.com/getting-started",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Sigue la app inicial y conecta un selector a un gráfico pequeño",
@@ -196933,12 +196994,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "python -m pip install dbt",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/dbt-labs/dbt/blob/main/README.md",
+        "source": "https://docs.getdbt.com/docs/local/install-dbt?version=2",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Install dbt​»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la guía de instalación oficial, crea un proyecto con un modelo SELECT simple y ejecútalo con `dbt run` contra una base de pruebas.",
@@ -197080,9 +197142,9 @@
       "lead": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
       "body": "Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/dbt-labs/dbt/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "python -m pip install dbt",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -197168,12 +197230,13 @@
           "Escribe una tabla de prueba en un directorio local y lee su historial.",
           "Prueba una actualización y una consulta de una versión anterior antes de usar almacenamiento en la nube."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "pip install delta-spark==4.0.0",
+        "command_status": "documented",
         "entry_url": "https://docs.delta.io/latest/quick-start.html",
-        "source": "https://github.com/delta-io/delta/blob/master/README.md",
+        "source": "https://github.com/delta-io/delta/blob/master/docs/src/content/docs/quick-start.mdx",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Python»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Escribe una tabla Delta local, actualiza unas filas y lee la versión 0",
@@ -197344,9 +197407,9 @@
       "lead": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
       "body": "Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/delta-io/delta/blob/master/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "pip install delta-spark==4.0.0",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -197667,15 +197730,15 @@
           "CSV pequeño"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://duckdb.org/docs/installation/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre un CSV ficticio y consulta el total de registros y una suma por categoría",
@@ -197969,15 +198032,15 @@
           "licencia de la capa"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa",
@@ -198052,7 +198115,7 @@
       "status": "",
       "pick": false,
       "stars": 2267,
-      "license": "NOASSERTION",
+      "license": "MIT + Commons Clause",
       "homepage": "",
       "combina_con": [
         {
@@ -198086,6 +198149,14 @@
       "que_es": "GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra NOASSERTION). Tiene ~2.3k estrellas (v1.0.0) y no cambia desde julio de 2026.",
       "que_hace": "Ofrece polígonos y alturas de edificios a escala mundial, con un visor web. El README advierte que combinar las partes del dataset puede tener implicaciones de licencia.",
       "como_lo_hace": "Los datos se descargan por partes (`GBA.ODbLPolygon`, `GBA.Polygon`, `GBA.LoD1`, `GBA.Height`) y el código de procesamiento está en el repo. El visor web puede reiniciarse por tráfico alto.",
+      "licencia_verificada": {
+        "texto": "MIT + Commons Clause",
+        "nota": "No permite vender el software.",
+        "fuente": "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": true
+      },
       "descripcion_notas": "Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales.",
       "descripcion_fuentes": [
         "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md"
@@ -198504,15 +198575,16 @@
           "datos pequeños"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://hudi.apache.org/docs/quick-start-guide.html",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "git clone https://github.com/apache/hudi.git && cd hudi",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/apache/hudi/blob/master/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Building Apache Hudi from source»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Inserta registros ficticios y actualiza uno para comparar estado y consulta incremental",
@@ -198679,9 +198751,9 @@
       "lead": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
       "body": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
       "install": {
-        "command": "Seguir la instalación original: https://hudi.apache.org/docs/quick-start-guide.html",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "git clone https://github.com/apache/hudi.git && cd hudi",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -201569,15 +201641,15 @@
           "DOM o SVG de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/juliangarnier/anime/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Anima un cuadrado y cambia duración y easing para observar la diferencia",
@@ -201839,8 +201911,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/mlightcad/awesome-cad/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida",
@@ -202565,15 +202637,15 @@
           "equipo adecuado a la escena"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/blender/blender/blob/main/.github/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Usa una escena nueva con un cubo y prueba mover, iluminar y renderizar una imagen",
@@ -202648,7 +202720,7 @@
       "status": "",
       "pick": false,
       "stars": 22014,
-      "license": "NOASSERTION",
+      "license": "GPL-2.0-or-later",
       "homepage": "https://developer.blender.org/docs/handbook/contributing/using_git/#github-mirror",
       "combina_con": [
         {
@@ -202683,6 +202755,14 @@
       "que_es": "Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION). El repo de GitHub es un espejo del desarrollo oficial, con ~22k estrellas.",
       "que_hace": "Cubre modelado, escultura, rigging, animación, simulación, render (Cycles y EEVEE), composición, edición de vídeo y Grease Pencil, y es extensible con Python.",
       "como_lo_hace": "Los binarios se descargan de blender.org. Para compilar desde el espejo hay que clonar con `GIT_LFS_SKIP_SMUDGE=1` para evitar errores de LFS.",
+      "licencia_verificada": {
+        "texto": "GPL-2.0-or-later",
+        "nota": "COPYING remite al texto GPL v2 de doc/license/GPL-license.txt.",
+        "fuente": "https://github.com/blender/blender/blob/main/COPYING",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": false
+      },
       "descripcion_notas": "Sin alternativas declaradas.",
       "descripcion_fuentes": [
         "https://github.com/blender/blender/blob/main/.github/README.md"
@@ -202803,15 +202883,15 @@
           "modelo glTF de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/google/filament/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre un modelo de muestra y cambia iluminación o material para observar la respuesta",
@@ -203034,7 +203114,7 @@
         "entry_url": "https://github.com/FreeCAD/FreeCAD/releases",
         "source": "https://github.com/FreeCAD/FreeCAD/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala FreeCAD desde su web, crea un boceto en Part Design y extrúyelo.",
@@ -203460,7 +203540,7 @@
         "entry_url": "https://godotengine.org",
         "source": "https://github.com/godotengine/godot/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga Godot desde su web, abre un proyecto de las demos oficiales y ejecútalo con F5.",
@@ -204718,7 +204798,7 @@
         "entry_url": "https://www.openscad.org",
         "source": "https://github.com/openscad/openscad/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala OpenSCAD, escribe `cube(10); translate([5,5,5]) sphere(6);`, renderiza con F6 y exporta a STL.",
@@ -204923,15 +205003,15 @@
           "herramientas de conversión compatibles"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Consulta una muestra de reproducción y cambia el tiempo de una animación esquelética",
@@ -205006,7 +205086,7 @@
       "status": "",
       "pick": false,
       "stars": 3145,
-      "license": "NOASSERTION",
+      "license": "MIT",
       "homepage": "http://guillaumeblanc.github.io/ozz-animation/",
       "combina_con": [
         {
@@ -205041,6 +205121,13 @@
       "que_es": "ozz-animation, biblioteca C++ open source de animación esquelética 3D con herramientas, de @guillaumeblanc. El README indica licencia MIT (GitHub muestra NOASSERTION). Es madura (~3.1k estrellas, 0.17.0).",
       "que_hace": "Ofrece reproducción de animación de personajes en runtime (carga, muestreo, mezcla), independiente del renderer y del motor de juego, centrada en rendimiento y memoria.",
       "como_lo_hace": "Incluye herramientas para convertir desde glTF, FBX, Collada, OBJ, 3ds o DXF a estructuras optimizadas, y librerías offline. Se compila con CMake.",
+      "licencia_verificada": {
+        "texto": "MIT",
+        "fuente": "https://github.com/guillaumeblanc/ozz-animation/blob/master/LICENSE.md",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": false
+      },
       "descripcion_notas": "Sin alternativas declaradas.",
       "descripcion_fuentes": [
         "https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md"
@@ -205137,15 +205224,15 @@
           "carpeta de proyecto"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://www.pencil2d.org/download/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Dibuja tres fotogramas sencillos, ajusta su duración y reproduce el movimiento",
@@ -205351,16 +205438,17 @@
           "Claude Code opcional"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "/plugin marketplace add patch-gg/pixelfx",
+        "command_language": "text",
+        "command_status": "documented",
         "source": "https://github.com/patch-gg/pixelfx/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «the skill.»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre un efecto existente y cambia tamaño o paleta antes de pedir generar uno nuevo",
@@ -205499,9 +205587,9 @@
       "lead": "Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.",
       "body": "Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/patch-gg/pixelfx/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "/plugin marketplace add patch-gg/pixelfx",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -205793,15 +205881,16 @@
           "escena 2D de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://piqnt.com/planck.js/docs/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "npm install planck",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/piqnt/planck.js/blob/master/docs/pages/install.md",
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «NPM»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre una demo de un cuerpo que cae y modifica gravedad o rebote",
@@ -205937,9 +206026,9 @@
       "lead": "Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.",
       "body": "Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.",
       "install": {
-        "command": "Seguir la instalación original: https://piqnt.com/planck.js/docs/",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "npm install planck",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -206508,15 +206597,15 @@
           "Rapier"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/pmndrs/react-three-rapier/blob/main/readme.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Añade un cuerpo y un suelo con debug visible y comprueba la colisión",
@@ -207153,15 +207242,16 @@
           "navegador con GPU compatible"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://threejs.org/manual/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "git clone --depth=1 https://github.com/mrdoob/three.js.git",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/mrdoob/three.js/blob/dev/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Cloning this repository»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Sigue el ejemplo del cubo y cambia su color o rotación",
@@ -207330,9 +207420,9 @@
       "lead": "Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.",
       "body": "Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.",
       "install": {
-        "command": "Seguir la instalación original: https://threejs.org/manual/",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "git clone --depth=1 https://github.com/mrdoob/three.js.git",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -207668,15 +207758,15 @@
           "shader de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/ashima/webgl-noise/blob/master/README",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Integra una función de ruido y cambia su escala para observar el patrón",
@@ -207881,15 +207971,16 @@
           "canvas o SVG"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npm install zdog",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/metafizzy/zdog/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Package managers»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente",
@@ -208026,9 +208117,9 @@
       "lead": "Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.",
       "body": "Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/metafizzy/zdog/blob/master/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "npm install zdog",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -208108,16 +208199,17 @@
           "brief y escena pequeña"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "/plugin marketplace add viettranx/3dviz-pro-max",
+        "command_language": "text",
+        "command_status": "documented",
         "source": "https://github.com/viettranx/3dviz-pro-max/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Install»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Elige una receta sencilla y compara el render con un criterio de composición explícito",
@@ -208287,9 +208379,9 @@
       "lead": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
       "body": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/viettranx/3dviz-pro-max/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "/plugin marketplace add viettranx/3dviz-pro-max",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {
@@ -210019,16 +210111,17 @@
           "presupuesto"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npx skills add achimala/dream-loop",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/achimala/dream-loop/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Prepara una escena pequeña y compara la captura con una referencia antes de iterar",
@@ -210162,9 +210255,9 @@
       "lead": "Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.",
       "body": "Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/achimala/dream-loop/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "npx skills add achimala/dream-loop",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -210464,16 +210557,16 @@
           "agente o cliente MCP opcional"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Revisa cinco reglas aplicables a un formulario y anota evidencia y pendientes",
@@ -210776,7 +210869,7 @@
       "status": "",
       "pick": false,
       "stars": 799,
-      "license": "NOASSERTION",
+      "license": "MIT",
       "homepage": "https://genjutsu.athevon.dev",
       "combina_con": [
         {
@@ -210811,6 +210904,14 @@
       "que_es": "Skills para Claude Code de AThevon para animación y diseño de interfaces; el README declara MIT, aunque GitHub no reconoce la licencia como estándar. Activo (v4.2.1).",
       "que_hace": "Tres skills: `cast` anima una interfaz, `paint` diseña el aspecto de un producto y `bunshin` construye un sitio completo con un equipo de agentes. Cubre web (React, Vue, Svelte, Astro, CSS, Three.js, Canvas) y otros entornos, y mantiene un catálogo de los «tics» por defecto de los modelos (como tres tarjetas iguales) con un comando que los localiza en un proyecto.",
       "como_lo_hace": "Se instala con `npx skills add https://genjutsu.athevon.dev -g` o como plugin de Claude Code (`/plugin marketplace add AThevon/genjutsu`), que añade `/genjutsu:cast`, `/genjutsu:paint` y `/genjutsu:bunshin`. Publica ejemplos con registros de ejecución, incluidos casos que salieron flojos.",
+      "licencia_verificada": {
+        "texto": "MIT",
+        "nota": "Incluye componentes de terceros con sus licencias.",
+        "fuente": "https://github.com/AThevon/genjutsu/blob/main/LICENSE",
+        "github": "NOASSERTION",
+        "fecha": "2026-11-16",
+        "restrictiva": false
+      },
       "descripcion_fuentes": [
         "https://github.com/AThevon/genjutsu/blob/main/README.md"
       ],
@@ -211944,16 +212045,17 @@
           "preferencia personal de presentación"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "claude plugin install i-have-adhd@i-have-adhd",
+        "command_language": "text",
+        "command_status": "documented",
+        "source": "https://github.com/ayghri/i-have-adhd/blob/main/README.md",
+        "note": "Comando copiado literalmente de el README (sección «Tune it»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Activa el skill y pide explicar cómo crear una carpeta vacía para comparar la estructura de respuesta",
@@ -212087,9 +212189,9 @@
       "lead": "Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.",
       "body": "Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "claude plugin install i-have-adhd@i-have-adhd",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -212939,16 +213041,17 @@
           "renderer opcional"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "/plugin marketplace add kaankiziltug/logo-design-skill",
+        "command_language": "text",
+        "command_status": "documented",
         "source": "https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Claude Code — plugin marketplace»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Crea tres bocetos SVG simples y prueba legibilidad a tamaño pequeño",
@@ -213083,9 +213186,9 @@
       "lead": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
       "body": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "/plugin marketplace add kaankiziltug/logo-design-skill",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -215107,16 +215210,17 @@
           "proyecto de diseño de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "npx skills add google-labs-code/stitch-skills",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/google-labs-code/stitch-skills/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «2. Install Skills Selectively»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Conecta Stitch y pide una sola pantalla a partir de un brief antes de construir una app completa",
@@ -215262,9 +215366,9 @@
       "lead": "Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.",
       "body": "Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/google-labs-code/stitch-skills/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "npx skills add google-labs-code/stitch-skills",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
       "combine_refs": [
@@ -215355,16 +215459,16 @@
           "texto propio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/hardikpandya/stop-slop/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Aplica la lista de frases a un párrafo y conserva cualquier término técnico necesario",
@@ -215899,16 +216003,17 @@
           "encargo concreto"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "brew install --cask msitarzewski/agency-agents/agency-agents",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/msitarzewski/agency-agents/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Option 1: Install the app»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Instala solo un especialista y pide revisar un componente de prueba con criterios claros",
@@ -216041,9 +216146,9 @@
       "lead": "Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes.",
       "body": "Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes.",
       "install": {
-        "command": "Seguir la instalación original: https://github.com/msitarzewski/agency-agents/blob/main/README.md",
-        "confidence": "clone",
-        "note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
+        "command": "brew install --cask msitarzewski/agency-agents/agency-agents",
+        "confidence": "ok",
+        "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [
         {

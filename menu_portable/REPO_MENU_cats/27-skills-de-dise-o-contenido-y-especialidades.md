@@ -18,13 +18,13 @@ role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills
 - Equipo: Preparación según la ruta elegida. Codex o Claude Code; Three.js o Blender según ruta; brief y escena pequeña
 **Repo:** https://github.com/viettranx/3dviz-pro-max
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/viettranx/3dviz-pro-max/blob/main/README.md
+/plugin marketplace add viettranx/3dviz-pro-max
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una visualización de producto; Crear una escena explicativa
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -49,13 +49,13 @@ role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,
 - Equipo: Preparación según la ruta elegida. Agente compatible o app del catálogo; encargo concreto
 **Repo:** https://github.com/msitarzewski/agency-agents
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/msitarzewski/agency-agents/blob/main/README.md
+brew install --cask msitarzewski/agency-agents/agency-agents
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Seleccionar un perfil de frontend; Revisar un brief de marketing
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -296,13 +296,13 @@ role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills
 - Equipo: Preparación según la ruta elegida. Agente con visión y generación de imagen; Blender para modelado propio; presupuesto
 **Repo:** https://github.com/achimala/dream-loop
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/achimala/dream-loop/blob/main/README.md
+npx skills add achimala/dream-loop
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una escena 3D; Comparar dirección visual de un juego
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -545,13 +545,13 @@ role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escrit
 - Equipo: Preparación según la ruta elegida. Agente soportado; preferencia personal de presentación
 **Repo:** https://github.com/ayghri/i-have-adhd
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md
+claude plugin install i-have-adhd@i-have-adhd
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -668,13 +668,13 @@ role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills
 - Equipo: Preparación según la ruta elegida. Agente compatible; brief de marca; Python para utilidades; renderer opcional
 **Repo:** https://github.com/kaankiziltug/logo-design-skill
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md
+/plugin marketplace add kaankiziltug/logo-design-skill
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un logotipo; Preparar variantes monocromas
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -941,13 +941,13 @@ role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,d
 - Equipo: Preparación según la ruta elegida. Agente compatible; Stitch MCP autenticado; proyecto de diseño de prueba
 **Repo:** https://github.com/google-labs-code/stitch-skills
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/google-labs-code/stitch-skills/blob/main/README.md
+npx skills add google-labs-code/stitch-skills
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una interfaz con Stitch; Convertir una pantalla en componentes
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

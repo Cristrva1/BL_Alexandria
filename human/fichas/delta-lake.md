@@ -79,15 +79,21 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 2. Escribe una tabla de prueba en un directorio local y lee su historial.
 3. Prueba una actualización y una consulta de una versión anterior antes de usar almacenamiento en la nube.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/delta-io/delta/blob/master/README.md)
+```
+pip install delta-spark==4.0.0
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Python»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/delta-io/delta/blob/master/docs/src/content/docs/quick-start.mdx)
 
 [Abrir la web o descarga indicada por el autor](https://docs.delta.io/latest/quick-start.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Delta Lake para mi objetivo y necesito pasos guiados. Lee https://github.com/delta-io/delta/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Delta Lake para mi objetivo y necesito pasos guiados. Lee https://github.com/delta-io/delta/blob/master/docs/src/content/docs/quick-start.mdx. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

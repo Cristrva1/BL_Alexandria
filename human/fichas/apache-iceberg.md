@@ -79,7 +79,7 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 2. Configura un catálogo y un almacenamiento de prueba según la documentación oficial.
 3. Crea una tabla pequeña, haz un cambio de esquema y consulta un snapshot anterior.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/apache/iceberg/blob/main/README.md)
 

@@ -169,13 +169,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=data,sql
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/dbt-labs/dbt
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/dbt-labs/dbt/blob/main/README.md
+python -m pip install dbt
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: mantener las transformaciones de un almacén analítico como código revisable en Git; añadir pruebas de calidad (únicos, no nulos) a las tablas de un informe
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -199,13 +199,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data
 - Equipo: Preparación según la ruta elegida. JVM (Java 17 o 21 para compilar Iceberg; Scala/sbt para Delta) o las bibliotecas de Python y Rust del ecosistema; un motor como Spark, Trino o DuckDB para consultar.
 **Repo:** https://github.com/delta-io/delta
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/delta-io/delta/blob/master/README.md
+pip install delta-spark==4.0.0
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Añadir transacciones y versiones a archivos Parquet; Recuperar una versión anterior de una tabla
 **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
@@ -352,13 +352,13 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=dat
 - Equipo: Preparación según la ruta elegida. Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños
 **Repo:** https://github.com/apache/hudi
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://hudi.apache.org/docs/quick-start-guide.html
+git clone https://github.com/apache/hudi.git && cd hudi
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

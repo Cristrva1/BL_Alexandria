@@ -69,7 +69,7 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
 3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/apache/arrow/blob/main/README.md)
 

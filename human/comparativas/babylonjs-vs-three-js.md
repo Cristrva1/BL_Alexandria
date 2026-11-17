@@ -14,7 +14,7 @@
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | Apache-2.0 | MIT |
-| Instalación | Sigue la instalación y el ejemplo mínimo en https://github.com/BabylonJS/Babylon.js/blo… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Instalación | Sigue la instalación y el ejemplo mínimo en https://github.com/BabylonJS/Babylon.js/blo… | `git clone --depth=1 https://github.com/mrdoob/three.js.git` |
 
 ## Regla práctica
 
