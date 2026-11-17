@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 50.3k | NOASSERTION | C++ | 2026-11-14 |
+| 50.3k | GPL-3.0 (texto modificado) | C++ | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
 **Nivel:** 3 Avanzado — preparación sencilla; app o instalador listo para usar; dominio especializado
 
 **Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** GPL-3.0 (texto modificado). El LICENSE indica «THIS DOCUMENT HAS BEEN MODIFIED». Fuente: [LICENSE](https://github.com/x64dbg/x64dbg/blob/development/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -67,10 +69,10 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 - distribución oficial
 - ejecutable de práctica propio
 
-1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.
 2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/x64dbg/x64dbg/blob/development/README.md)
 

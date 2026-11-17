@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 4.6k | NOASSERTION | Python | 2026-11-16 |
+| 4.6k | Volatility Software License 1.0 (no OSI) | Python | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
 **Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Volatility Software License 1.0 (no OSI). Copyleft: exige compartir el código de cambios y del software construido con ella. Fuente: [LICENSE](https://github.com/volatilityfoundation/volatility3/blob/develop/LICENSE.txt). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

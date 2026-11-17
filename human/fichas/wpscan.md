@@ -6,7 +6,7 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 9.9k | NOASSERTION | Ruby | 2026-11-16 |
+| 9.9k | WPScan Public Source License (no OSI) | Ruby | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -15,6 +15,8 @@
 **Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia y costes:** WPScan usa la «WPScan Public Source License»: gratis para pentesting propio o como parte de una auditoría, pero el uso comercial (SaaS, producto o servicio de valor añadido) exige licencia de pago. Los datos de vulnerabilidades vienen de la API de wpscan.com: 25 peticiones/día gratis con token; sin token o agotada la cuota escanea sin datos de vulnerabilidades. La base local Enterprise es de pago.
+
+> **Licencia revisada el 2026-11-16:** WPScan Public Source License (no OSI). La comercialización requiere licencia comercial. Fuente: [LICENSE](https://github.com/wpscanteam/wpscan/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

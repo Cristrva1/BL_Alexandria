@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 11.5k | NOASSERTION | Python | 2026-11-16 |
+| 11.5k | DRL-1.1 (reglas); especificación de dominio público | Python | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** DRL-1.1 (reglas); especificación de dominio público. Detection Rule License 1.1: exige atribución de las reglas. Fuente: [LICENSE](https://github.com/SigmaHQ/sigma/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -74,7 +76,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
 3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/SigmaHQ/sigma/blob/master/README.md)
 
