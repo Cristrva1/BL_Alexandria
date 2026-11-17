@@ -21554,7 +21554,7 @@
    "github_id": 89247811,
    "gh": "CMU-Perceptual-Computing-Lab/openpose",
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "Licencia académica no comercial",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -23824,7 +23824,7 @@
    "github_id": 1389011744,
    "gh": "lemomo-ai/lemo-opuscar",
    "lang": "JavaScript",
-   "license": "NOASSERTION",
+   "license": "MIT (código) + CC-BY-NC-4.0 (docs) + CC-BY-4.0 (demos)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -26678,7 +26678,7 @@
    "github_id": 329620403,
    "gh": "zju3dv/EasyMocap",
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "Project Registration License v1.0",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [

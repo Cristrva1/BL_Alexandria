@@ -13,8 +13,8 @@
 | Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🟡 medio |
-| Licencia | AGPL-3.0 | NOASSERTION |
-| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | AGPL-3.0 | OpenRAIL-AS |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | `git clone https://github.com/facefusion/facefusion` |
 
 ## Regla práctica
 

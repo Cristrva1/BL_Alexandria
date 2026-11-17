@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 73.2k | NOASSERTION | TypeScript | 2026-06-23 |
+| 73.2k | Remotion License (no OSI) | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
 **Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Remotion License (no OSI). Gratis para personas y empresas pequeñas; las organizaciones con ánimo de lucro de cierto tamaño necesitan licencia de empresa. Fuente: [LICENSE](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

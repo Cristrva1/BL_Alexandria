@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 16.3k | NOASSERTION | JavaScript | 2026-11-14 |
+| 16.3k | MIT (código) + CC-BY-NC-4.0 (docs) + CC-BY-4.0 (demos) | JavaScript | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
 **Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** MIT (código) + CC-BY-NC-4.0 (docs) + CC-BY-4.0 (demos). La documentación es solo para uso no comercial. Fuente: [LICENSE](https://github.com/lemomo-ai/lemo-opuscar/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

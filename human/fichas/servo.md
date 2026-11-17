@@ -77,7 +77,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.
 3. Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/servo/servo/blob/main/README.md)
 

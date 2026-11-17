@@ -171,13 +171,13 @@ role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=slid
 - Equipo: Preparación según la ruta elegida. Marp CLI o extensión de VS Code; Markdown; contenido propio
 **Repo:** https://github.com/marp-team/marp
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+npm install --save-dev @marp-team/marp-cli
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar slides sencillas; Versionar una presentación en Git
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -202,13 +202,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,d
 - Equipo: Preparación según la ruta elegida. Editor o entorno que renderice Mermaid; texto del proceso
 **Repo:** https://github.com/mermaid-js/mermaid
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/mermaid-js/mermaid/blob/develop/README.md
+npm install mermaid
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Documentar un proceso; Preparar un diagrama de secuencia
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -233,13 +233,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=diagrams,u
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/plantuml/plantuml
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/plantuml/plantuml/blob/master/README.md
+git clone https://github.com/plantuml/plantuml.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: documentar diagramas de secuencia y clases como texto en el repositorio; generar diagramas automáticamente en la documentación técnica
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -264,13 +264,13 @@ role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=slides,
 - Equipo: Preparación según la ruta elegida. Python 3.10–3.14; agente con archivos; dependencias; documento y plantilla autorizados
 **Repo:** https://github.com/hugohe3/ppt-master
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/hugohe3/ppt-master/blob/main/docs/getting-started.md
+git clone https://github.com/hugohe3/ppt-master.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una presentación de un informe; Adaptar una plantilla corporativa
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -331,13 +331,13 @@ role=library · exec=local · setup=easy · mcp=False · prov=— · tags=slides
 - Equipo: Preparación según la ruta elegida. Node según ruta; HTML; contenido propio; navegador
 **Repo:** https://github.com/hakimel/reveal.js
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://revealjs.com/installation
+npm install reveal.js
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una presentación web; Mostrar un ejemplo interactivo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

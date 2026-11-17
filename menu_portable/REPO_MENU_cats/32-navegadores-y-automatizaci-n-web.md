@@ -111,13 +111,13 @@ role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=auto
 - Equipo: Preparación según la ruta elegida. Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba
 **Repo:** https://github.com/browser-use/browser-use
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/browser-use/browser-use/blob/main/README.md
+uv add 'browser-use==1.0.6'
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -264,13 +264,13 @@ role=runtime · exec=local · setup=easy · mcp=True · prov=— · tags=browser
 - Equipo: Preparación según la ruta elegida. Binario compatible o Docker; agente o proveedor opcional; sitio de prueba
 **Repo:** https://github.com/lightpanda-io/browser
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/lightpanda-io/browser/blob/main/README.md
+brew install lightpanda-io/browser/lightpanda
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar navegación headless; Explorar un agente con modelo local
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -294,13 +294,13 @@ role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=browser,a
 - Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/nanobrowser/nanobrowser
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/nanobrowser/nanobrowser/blob/master/README.md
+git clone https://github.com/nanobrowser/nanobrowser.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: automatizar tareas repetitivas en webs donde ya tienes la sesión iniciada; investigar y resumir información de varias páginas desde el panel lateral
 **Evita si:** necesitas una herramienta estable y auditada para datos sensibles

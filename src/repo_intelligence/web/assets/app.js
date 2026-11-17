@@ -660,7 +660,10 @@
     const ogLine = og.checked_at ? `<p class="meta">Estado en ${esc(ogHost)}: ${og.archived ? "⚠️ archivado (solo lectura)" : "activo"}${og.pushed_at ? ` · última actividad ${esc(og.pushed_at)}` : ""}${og.latest_release ? ` · última versión ${esc(og.latest_release)}` : ""}${og.license ? ` · licencia ${esc(og.license)}` : ""} (consultado el ${esc(og.checked_at)}).</p>` : "";
     const ghLine = gh.checked_at ? `<p class="meta">${og.checked_at ? "Copia antigua en GitHub" : "Estado en GitHub"}: ${gh.archived ? "⚠️ archivado (solo lectura)" : "activo"}${gh.renamed_to ? ` · renombrado a ${esc(gh.renamed_to)}` : ""}${gh.pushed_at ? ` · último push ${esc(gh.pushed_at)}` : ""}${gh.latest_release ? ` · última versión ${esc(gh.latest_release)}` : ""}${gh.license ? ` · licencia ${esc(gh.license)}` : ""} (consultado el ${esc(gh.checked_at)}).</p>` : "";
     const licNote = item.licencia_nota ? `<p class="notice"><strong>⚠️ Licencia y costes:</strong> ${esc(item.licencia_nota)}</p>` : "";
-    return `<section id="repo-four" class="section">${licNote}
+    const lv = item.licencia_verificada || {};
+    const licWarn = lv.restrictiva && !item.licencia_nota;
+    const licReview = lv.texto ? `<p class="${licWarn ? "notice" : "meta"}"><strong>${licWarn ? "⚠️ " : ""}Licencia revisada el ${esc(lv.fecha || "")}:</strong> ${esc(lv.texto)}.${lv.nota ? ` ${esc(lv.nota)}` : ""}${lv.fuente ? ` <a href="${esc(safeUrl(lv.fuente))}" target="_blank" rel="noreferrer">LICENSE</a>.` : ""} GitHub la marca como ${esc(lv.github || "NOASSERTION")}.</p>` : "";
+    return `<section id="repo-four" class="section">${licNote}${licReview}
         <h2>¿Qué es?</h2><p>${esc(item.que_es)}</p>
         <h2>¿Qué hace?</h2><p>${esc(item.que_hace)}</p>
         <h2>¿Cómo lo hace?</h2><p>${esc(item.como_lo_hace)}</p>

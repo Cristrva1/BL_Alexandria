@@ -35,7 +35,7 @@ flowchart LR
 | 1 | [Pipecat](../fichas/pipecat.md) | Orquesta la conversación: turnos, interrupciones y pipeline | 17.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 2 | [faster-whisper](../fichas/faster-whisper.md) | Transcripción rápida (voz a texto) | 26.8k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 | 3 | [litellm](../fichas/litellm.md) | Acceso al LLM que decide la respuesta | 63.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
-| 4 | [Kokoro](../fichas/kokoro.md) | Voz sintética ligera (texto a voz) | 10.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 4 | [Kokoro](../fichas/kokoro.md) | Voz sintética ligera (texto a voz) | 10.1k | `pip install kokoro` |
 | 5 | [LiveKit Agents](../fichas/livekit-agents.md) | Alternativa con transporte WebRTC y telefonía integrados | 15.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta

@@ -14,7 +14,7 @@
 | Modelos locales | Modelos locales documentados | Modelo local no documentado |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| Instalación | `uv add 'browser-use==1.0.6'` | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
