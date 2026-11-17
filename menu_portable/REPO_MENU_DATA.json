@@ -3233,6 +3233,238 @@
       "count": 64
     },
     {
+      "id": "marketing-redes-sociales",
+      "title": "Marketing y Redes Sociales",
+      "description": "Prepara campañas, crea contenido, gestiona publicaciones y mide resultados. Encuentra herramientas para redes sociales, SEO, email y anuncios.",
+      "kind": "work",
+      "keywords": [
+        "marketing",
+        "redes sociales",
+        "social media",
+        "contenido",
+        "seo",
+        "campañas",
+        "email",
+        "instagram",
+        "linkedin"
+      ],
+      "starters": [
+        "marketingskills",
+        "postiz-app",
+        "listmonk"
+      ],
+      "topics": [
+        {
+          "id": "marketing-estrategia",
+          "title": "Estrategia, copy y conversión",
+          "description": "Preparar la estrategia, los textos de campaña y propuestas para mejorar la conversión con un agente.",
+          "selectors": [],
+          "repos": [
+            "marketingskills",
+            "agency-agents",
+            "minimalist-entrepreneur-skills"
+          ],
+          "keywords": [
+            "copywriting",
+            "estrategia",
+            "campañas",
+            "conversión"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "agency-agents",
+            "marketingskills",
+            "minimalist-entrepreneur-skills"
+          ],
+          "count": 3
+        },
+        {
+          "id": "marketing-redes",
+          "title": "Gestión y publicación en redes sociales",
+          "description": "Preparar publicaciones, organizar calendarios y gestionar contenido para distintas redes. Revisa en cada ficha qué acciones permite y qué cuentas necesita.",
+          "selectors": [],
+          "repos": [
+            "postiz-app",
+            "social-media-agent",
+            "instagram-agent-skill",
+            "linkedin-agent-skill"
+          ],
+          "keywords": [
+            "calendario editorial",
+            "publicaciones",
+            "instagram",
+            "linkedin",
+            "social media"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "instagram-agent-skill",
+            "linkedin-agent-skill",
+            "postiz-app",
+            "social-media-agent"
+          ],
+          "count": 4
+        },
+        {
+          "id": "marketing-investigacion",
+          "title": "Tendencias, audiencias y competencia",
+          "description": "Investigar publicaciones, comentarios, tendencias y competidores para fundamentar ideas de contenido.",
+          "selectors": [],
+          "repos": [
+            "social-media-research-skills",
+            "last30days-skill",
+            "instaloader"
+          ],
+          "keywords": [
+            "tendencias",
+            "audiencias",
+            "competidores",
+            "investigación de redes"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "instaloader",
+            "last30days-skill",
+            "social-media-research-skills"
+          ],
+          "count": 3
+        },
+        {
+          "id": "marketing-seo",
+          "title": "SEO y buscadores con IA",
+          "description": "Revisar la visibilidad de una web en buscadores y respuestas de IA, y consultar datos para orientar el contenido.",
+          "selectors": [],
+          "repos": [
+            "geo-seo-claude",
+            "claude-seo",
+            "open-seo"
+          ],
+          "keywords": [
+            "seo",
+            "geo",
+            "posicionamiento",
+            "buscadores"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "claude-seo",
+            "geo-seo-claude",
+            "open-seo"
+          ],
+          "count": 3
+        },
+        {
+          "id": "marketing-email",
+          "title": "Email, newsletters y campañas",
+          "description": "Gestionar listas, newsletters, segmentación y prospección por correo. Comprueba el proveedor de envío y sus costes en cada ficha.",
+          "selectors": [],
+          "repos": [
+            "listmonk",
+            "mautic",
+            "sellbird"
+          ],
+          "keywords": [
+            "email marketing",
+            "newsletter",
+            "correo",
+            "segmentación"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "listmonk",
+            "mautic",
+            "sellbird"
+          ],
+          "count": 3
+        },
+        {
+          "id": "marketing-contenido",
+          "title": "Contenido visual, videos y anuncios",
+          "description": "Preparar anuncios, videos de producto, clips verticales y piezas de lanzamiento. Cada ficha distingue las skills, los generadores y los servicios externos.",
+          "selectors": [],
+          "repos": [
+            "arcads-claude-code",
+            "moneyprinterturbo",
+            "short-video-factory",
+            "ai-youtube-shorts-generator",
+            "brag"
+          ],
+          "keywords": [
+            "anuncios",
+            "reels",
+            "shorts",
+            "tiktok",
+            "video de producto"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "ai-youtube-shorts-generator",
+            "arcads-claude-code",
+            "brag",
+            "moneyprinterturbo",
+            "short-video-factory"
+          ],
+          "count": 5
+        },
+        {
+          "id": "marketing-analitica",
+          "title": "Analítica web y conversión",
+          "description": "Medir visitas, eventos y recorridos en una web o producto para revisar resultados. Cada herramienta ofrece métricas e integraciones diferentes.",
+          "selectors": [
+            {
+              "cat": 10,
+              "subs": [
+                "producto"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [
+            "analítica",
+            "métricas",
+            "conversiones",
+            "embudos"
+          ],
+          "reference_repos": [],
+          "repo_ids": [
+            "matomo",
+            "plausible",
+            "posthog",
+            "umami"
+          ],
+          "count": 4
+        }
+      ],
+      "repo_ids": [
+        "agency-agents",
+        "ai-youtube-shorts-generator",
+        "arcads-claude-code",
+        "brag",
+        "claude-seo",
+        "geo-seo-claude",
+        "instagram-agent-skill",
+        "instaloader",
+        "last30days-skill",
+        "linkedin-agent-skill",
+        "listmonk",
+        "marketingskills",
+        "matomo",
+        "mautic",
+        "minimalist-entrepreneur-skills",
+        "moneyprinterturbo",
+        "open-seo",
+        "plausible",
+        "posthog",
+        "postiz-app",
+        "sellbird",
+        "short-video-factory",
+        "social-media-agent",
+        "social-media-research-skills",
+        "umami"
+      ],
+      "count": 25
+    },
+    {
       "id": "agentes",
       "title": "Agentes de IA, investigación y navegación",
       "description": "Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.",

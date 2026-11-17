@@ -1,6 +1,6 @@
 # Categorías y subcategorías prácticas
 
-103 subcategorías prácticas en 16 áreas. El índice técnico tiene 32 categorías y 117 subcategorías técnicas.
+110 subcategorías prácticas en 17 áreas. El índice técnico tiene 32 categorías y 117 subcategorías técnicas.
 
 Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.
 
@@ -271,6 +271,52 @@ Diseñar flujos conversacionales y conectar canales.
 Organizar espacios compartidos de comunicación.
 
 `element-web`, `fluxer`, `mattermost`, `rocket-chat`, `synapse`, `zulip`
+
+## Marketing y Redes Sociales
+
+Prepara campañas, crea contenido, gestiona publicaciones y mide resultados. Encuentra herramientas para redes sociales, SEO, email y anuncios.
+
+### Estrategia, copy y conversión
+
+Preparar la estrategia, los textos de campaña y propuestas para mejorar la conversión con un agente.
+
+`agency-agents`, `marketingskills`, `minimalist-entrepreneur-skills`
+
+### Gestión y publicación en redes sociales
+
+Preparar publicaciones, organizar calendarios y gestionar contenido para distintas redes. Revisa en cada ficha qué acciones permite y qué cuentas necesita.
+
+`instagram-agent-skill`, `linkedin-agent-skill`, `postiz-app`, `social-media-agent`
+
+### Tendencias, audiencias y competencia
+
+Investigar publicaciones, comentarios, tendencias y competidores para fundamentar ideas de contenido.
+
+`instaloader`, `last30days-skill`, `social-media-research-skills`
+
+### SEO y buscadores con IA
+
+Revisar la visibilidad de una web en buscadores y respuestas de IA, y consultar datos para orientar el contenido.
+
+`claude-seo`, `geo-seo-claude`, `open-seo`
+
+### Email, newsletters y campañas
+
+Gestionar listas, newsletters, segmentación y prospección por correo. Comprueba el proveedor de envío y sus costes en cada ficha.
+
+`listmonk`, `mautic`, `sellbird`
+
+### Contenido visual, videos y anuncios
+
+Preparar anuncios, videos de producto, clips verticales y piezas de lanzamiento. Cada ficha distingue las skills, los generadores y los servicios externos.
+
+`ai-youtube-shorts-generator`, `arcads-claude-code`, `brag`, `moneyprinterturbo`, `short-video-factory`
+
+### Analítica web y conversión
+
+Medir visitas, eventos y recorridos en una web o producto para revisar resultados. Cada herramienta ofrece métricas e integraciones diferentes.
+
+`matomo`, `plausible`, `posthog`, `umami`
 
 ## Agentes de IA, investigación y navegación
 

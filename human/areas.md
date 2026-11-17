@@ -2,7 +2,7 @@
 
 # Categorías y subcategorías prácticas
 
-13 áreas de trabajo y 3 colecciones de configuración, con 103 subcategorías prácticas. Es una capa de navegación distinta del índice técnico (32 categorías y 117 subcategorías técnicas); por eso los recuentos no coinciden.
+14 áreas de trabajo y 3 colecciones de configuración, con 110 subcategorías prácticas. Es una capa de navegación distinta del índice técnico (32 categorías y 117 subcategorías técnicas); por eso los recuentos no coinciden.
 
 Elige un área, después una tarea y por último una ficha. Un repositorio puede servir en varias áreas; conserva una sola identidad y ficha. Los recuentos por área no se suman para obtener el total de proyectos.
 
@@ -15,6 +15,7 @@ Elige un área, después una tarea y por último una ficha. Un repositorio puede
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 111 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 25 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 64 |
+| [Marketing y Redes Sociales](areas/marketing-redes-sociales.md) | Estrategia, copy y conversión, Gestión y publicación en redes sociales, Tendencias, audiencias y competencia, SEO y buscadores con IA, Email, newsletters y campañas, Contenido visual, videos y anuncios, Analítica web y conversión | 25 |
 | [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 124 |
 | [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 67 |
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 63 |

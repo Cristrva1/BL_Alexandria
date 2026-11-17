@@ -27,6 +27,7 @@
   // Visual identity per practical area: an icon and an OKLCH hue (lightness comes from the theme).
   const AREA_STYLE = {
     frontend:["🎨",295], ciberseguridad:["🛡️",25], audiovisual:["🎬",345], trading:["📈",150], automatizacion:["⚙️",65],
+    "marketing-redes-sociales":["📣",15],
     agentes:["🤖",255], "ia-local":["🏠",190], documentos:["📄",48], datos:["📊",225], productividad:["🗂️",115],
     desarrollo:["🧑‍💻",275], vision:["👁️",30], aprender:["🧠",85],
     "configurar-claude-code":["✳️",38], "configurar-codex":["◎",205], "configurar-antigravity":["🪐",310],
