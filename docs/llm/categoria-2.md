@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills, plugins y métodos para agentes
 
-Categoría 2 completa (30 repos, 2 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 completa (34 repos, 2 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -31,6 +31,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `plugins` | catalogos | Especificación y colección oficial de plugins de Cursor para estudiar e… | 1 Básico | 48 | — (sin licencia detectada) | sin grupo |
 | `awesome-agents` | catalogos | Directorio de herramientas y proyectos abiertos para construir y operar agentes… | 1 Básico | 41 | — (sin licencia detectada) | sin grupo |
 | `autoskills` | catalogos | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un… | 1 Básico | 39 | CC-BY-NC-4.0 (source-available) | sin grupo |
+| `awesome-claude-code-subagents` | catalogos | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes… | 1 Básico | — | MIT | sin grupo |
+| `claude-code-templates` | catalogos | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes… | 1 Básico | — | MIT | sin grupo |
 | `spec-kit` | metodologia | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. | 1 Básico | 76 | MIT (OSI permisiva) | recomendado |
 | `ecc` | metodologia | Sistema de skills, hooks y configuración para agentes de código, con rutas… | 2 Intermedio | 72 | MIT (OSI permisiva) | recomendado |
 | `ponytail` | metodologia | Skill que hace que tu agente de código piense como un senior minimalista: el… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
@@ -48,6 +50,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `agent-toolkit` | metodologia | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code… | 1 Básico | 45 | MIT (OSI permisiva) | sin grupo |
 | `grok-plugin-claude-code` | metodologia | Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante… | 1 Básico | 36 | MIT (OSI permisiva) | sin grupo |
 | `claude-code-hooks-mastery` | metodologia | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar… | 1 Básico | 30 | — (sin licencia detectada) | sin grupo |
+| `humans-md-plugins` | metodologia | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `shadcn-improve` | metodologia | Organiza una auditoría de código en un plan que un modelo diferente puede… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -226,6 +230,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Revisa la selección que propone para tu stack antes de permitir la instalación Éxito: La lista corresponde a tus tecnologías y queda un registro de las skills instaladas
 - **Combina con:** `claude-code` [20/terminal], `skillspector` [16/skills], `codex` [20/terminal]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). La licencia CC BY-NC impide el uso comercial. Se quitó awesome-agent-skills porque no hay integración. Se corrige la API inferida por menciones a tecnologías de autenticación y pagos: no son proveedores requeridos por el CLI.
+
+### Awesome Claude Code Subagents (`awesome-claude-code-subagents`)
+
+- **Repo:** https://github.com/VoltAgent/awesome-claude-code-subagents · MIT · nivel 1 · —/100
+- **Qué es:** Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.
+- **Cuándo elegirlo:** Casos: Comparar el perfil de un revisor de accesibilidad y uno de documentación.; Identificar las herramientas declaradas por una plantilla antes de copiarla.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Shell; API de IA: no; Navegador; para una eventual adopción, Claude Code y una carpeta de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre dos perfiles de una categoría y compara instrucciones, permisos y alcance. Éxito: Puedes explicar qué haría cada perfil y cuál se ajusta a una tarea pequeña.
+- **Riesgos y avisos:** Es una colección comunitaria. Revisar cada perfil y sus herramientas antes de instalar; no asumir compatibilidad con otros clientes.
+
+### Claude Code Templates (`claude-code-templates`)
+
+- **Repo:** https://github.com/davila7/claude-code-templates · MIT · nivel 1 · —/100
+- **Qué es:** Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.
+- **Cuándo elegirlo:** Casos: Comparar dos plantillas de revisión de UI.; Encontrar un componente y revisar su procedencia antes de importarlo.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, package.json; API de IA: no; Navegador; para una eventual adopción, Claude Code y una carpeta limpia..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://www.aitmpl.com
+- **Primera prueba propuesta (no ejecutada):** Navega el catálogo y revisa los archivos y la licencia de una sola skill. Éxito: Puedes explicar qué instalaría y detectar si añade scripts o conexiones.
+- **Riesgos y avisos:** Se ficha como referencia. Para su CLI, la publicación 1.29.7 es posterior a la corrección de GHSA-79wm-x847-7cvg; revisa también los otros avisos y cada….
 
 ### Spec Kit (`spec-kit`)
 
@@ -482,6 +506,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Estudia un hook sencillo de sesión y adapta una comprobación en una carpeta de prueba Éxito: El hook produce el evento o registro esperado al activar esa fase de la sesión
 - **Combina con:** `claude-code` [20/terminal], `ecc`, `claude-code-router` [23/serving]
 - **Riesgos y avisos:** Sin licencia: úsalo como referencia didáctica. Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales.
+
+### HUMANS.md Plugins (`humans-md-plugins`)
+
+- **Repo:** https://github.com/cmdai-hq/humans-md-plugins · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.
+- **Cuándo elegirlo:** Casos: Pedir que el agente avise antes de modificar archivos de configuración.; Reutilizar preferencias de comunicación entre dos clientes compatibles. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); JavaScript, package.json; API de IA: no; Node.js 22.18 o posterior según el README, un anfitrión compatible y perfil de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://humansmd.dev/
+- **Primera prueba propuesta (no ejecutada):** Crea un perfil con una sola preferencia ficticia y abre una nueva sesión. Éxito: El agente puede leer y explicar esa preferencia sin cargar notas reales.
+- **Riesgos y avisos:** El autor indica pruebas solo en macOS. El proveedor del agente puede procesar el perfil; no guardes contraseñas ni datos sensibles.
+
+### Improve de shadcn (`shadcn-improve`)
+
+- **Repo:** https://github.com/shadcn/improve · MIT · nivel 2 · —/100
+- **Qué es:** Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.
+- **Cuándo elegirlo:** Casos: Separar el análisis de un formulario y su corrección.; Convertir un diagnóstico de rendimiento en tareas verificables. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); API de IA: no; Un agente con soporte de skills y un repositorio desechable o una copia de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/shadcn/improve/blob/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/README.md
+- **Primera prueba propuesta (no ejecutada):** Revisa un módulo pequeño con la skill y solicita solo el plan, sin aplicar cambios. Éxito: El plan nombra archivos, cambios propuestos y una forma de comprobarlos.
+- **Riesgos y avisos:** Los modelos se pagan o limitan por el anfitrión; el proyecto no incluye un modelo ni promete ahorro fijo.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

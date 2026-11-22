@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills y métodos de producción audiovisual
 
-Categoría 30 «Video con código y agentes creativos» › subcategoría `skills-video`. 14 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 30 «Video con código y agentes creativos» › subcategoría `skills-video`. 15 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=30&sub=skills-video · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -32,6 +32,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `huashu-motion` | Skill para crear videos de presentación de productos con un agente de código… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
 | `skills-remotion` | Skills oficiales de Remotion para que tu agente de código cree videos con React. | 1 Básico | 45 | — (sin licencia detectada) | sin grupo |
 | `motionmaxxing` | Skill para mejorar composición, ritmo y movimiento de videos creados con… | 2 Intermedio | 38 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `ffmpeg-skill` | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -214,6 +215,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Revisa providers.sh y crea una escena tipográfica breve antes de añadir voces o imágenes Éxito: Puedes comparar composición y tiempos de dos versiones
 - **Combina con:** `gsap` [26/animacion], `claude-code` [20/terminal], `ffmpeg` [12/edicion]
 - **Riesgos y avisos:** Sin alternativas declaradas. El skill admite hosts que leen SKILL.md pero las funciones dependen de herramientas disponibles; no garantiza una valoración profesional por sus puntuaciones.
+
+### FFmpeg Skill (`ffmpeg-skill`)
+
+- **Repo:** https://github.com/kajisho5/ffmpeg-skill · MIT · nivel 2 · —/100
+- **Qué es:** Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.
+- **Cuándo elegirlo:** Casos: Recortar un anuncio de prueba a quince segundos.; Reencuadrar una toma propia para formato vertical. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, package.json; API de IA: no; FFmpeg 6.1 o posterior con los codecs y filtros de la operación; entorno del agente para la skill..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md
+- **Primera prueba propuesta (no ejecutada):** Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo. Éxito: El archivo resultante tiene la duración esperada y el original sigue intacto.
+- **Combina con:** `ffmpeg` [12/edicion]
+- **Riesgos y avisos:** FFmpeg no necesita una API de modelo. Subtítulos, plugins y ejecución del agente pueden tener requisitos y cobros aparte.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

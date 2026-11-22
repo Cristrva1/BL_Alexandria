@@ -1,6 +1,6 @@
 # Alexandría para agentes · Servidores MCP destacados
 
-Categoría 5 «Conectar herramientas con MCP» › subcategoría `servidores`. 15 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 5 «Conectar herramientas con MCP» › subcategoría `servidores`. 17 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5&sub=servidores · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -33,6 +33,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5
 | `mcp-neo4j` | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y… | 2 Intermedio | 52 | MIT (OSI permisiva) | alternativa |
 | `ghidramcp` | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y… | 2 Intermedio | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `annas-mcp` | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's… | 2 Intermedio | 27 | — (sin licencia detectada) | sin grupo |
+| `claude-context` | Permite que asistentes busquen funciones y conceptos por significado en una… | 2 Intermedio | — | MIT | sin grupo |
+| `ha-mcp` | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -216,6 +218,27 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Busca un documento que puedas utilizar legalmente y revisa los metadatos antes de descargar Éxito: La búsqueda muestra título y origen sin necesitar clave de descarga
 - **Combina con:** `claude-code` [20/terminal], `markitdown` [13/conversion], `docling` [13/conversion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Riesgo legal: descargar obras protegidas puede infringir derechos de autor según tu país. Sin licencia declarada. Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos.
+
+### Claude Context (`claude-context`)
+
+- **Repo:** https://github.com/zilliztech/claude-context · MIT · nivel 2 · —/100
+- **Qué es:** Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.
+- **Cuándo elegirlo:** Casos: Encontrar archivos relacionados con la autenticación en un proyecto de ejemplo.; Indexar una biblioteca ficticia y comprobar qué resultado devuelve por función. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js 20+, un cliente MCP, base vectorial y una configuración de embeddings según el proveedor escogido..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md
+- **Primera prueba propuesta (no ejecutada):** Configura un índice de prueba sobre código público e intenta encontrar una función conocida. Éxito: La búsqueda devuelve el archivo y fragmento esperado, y puedes comprobar el proveedor de embeddings utilizado.
+- **Riesgos y avisos:** Los embeddings y almacenamiento pueden ser servicios externos. La cuenta del cliente no cubre esos cargos; no enviar código sensible sin revisar destino y….
+
+### Home Assistant MCP (`ha-mcp`)
+
+- **Repo:** https://github.com/homeassistant-ai/ha-mcp · MIT · nivel 2 · —/100
+- **Qué es:** Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.
+- **Cuándo elegirlo:** Casos: Consultar qué sensores aparecen en el demo.; Revisar como borrador la automatización de una luz virtual. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no; Home Assistant compatible o el demo oficial, y un cliente MCP de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://homeassistant-ai.github.io/ha-mcp/
+- **Primera prueba propuesta (no ejecutada):** Inicia con el demo y pide una consulta sin cambios sobre una entidad ficticia. Éxito: La herramienta devuelve el estado de la entidad sin accionar dispositivos.
+- **Combina con:** `home-assistant` [15/domotica]
+- **Riesgos y avisos:** Hay avisos públicos: el release revisado v9.2.0 es posterior a los pisos publicados para el paquete.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

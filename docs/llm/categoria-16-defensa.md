@@ -1,6 +1,6 @@
 # Alexandría para agentes · Protección y verificación de software
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `defensa`. 12 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `defensa`. 12 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=defensa · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

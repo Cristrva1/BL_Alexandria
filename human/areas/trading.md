@@ -4,7 +4,7 @@
 
 Investiga mercados, compara estrategias y conecta herramientas financieras. Las demos y el backtesting se distinguen de la operación real.
 
-25 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/trading).
+27 repos únicos · 4 subcategorías. [Ver en el explorador](../../docs/index.html#/area/trading).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Agentes que reúnen y analizan información financiera.
 
-[Explorar 9 repos](../../docs/index.html#/explorar?area=trading&topic=trading-investigacion)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=trading&topic=trading-investigacion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -28,6 +28,7 @@ Agentes que reúnen y analizan información financiera.
 | [financial-services](../fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | API de IA opcional |
 | [FinceptTerminal](../fichas/finceptterminal.md) | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. | API de IA opcional |
 | [FinGPT](../fichas/fingpt.md) | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. | API de IA opcional |
+| [PolyWeather](../fichas/polyweather.md) | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima. | Sin clave propia de API de IA en la ruta básica |
 | [QuantHarness](../fichas/quantharness.md) | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. | API de IA necesaria |
 | [TradingAgents](../fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Depende de la ruta elegida |
 | [Vibe-Trading](../fichas/vibe-trading.md) | Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. | Depende de la ruta elegida |
@@ -36,7 +37,7 @@ Agentes que reúnen y analizan información financiera.
 
 Analizar datos históricos y evaluar estrategias cuantitativas.
 
-[Explorar 9 repos](../../docs/index.html#/explorar?area=trading&topic=trading-backtesting)
+[Explorar 10 repos](../../docs/index.html#/explorar?area=trading&topic=trading-backtesting)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -45,6 +46,7 @@ Analizar datos históricos y evaluar estrategias cuantitativas.
 | [lumibot](../fichas/lumibot.md) | Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers. | API de IA opcional |
 | [nautilus_trader](../fichas/nautilus-trader.md) | Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. | Sin clave propia de API de IA en la ruta básica |
 | [OpenBB Open Data Platform](../fichas/openbb.md) | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a Python, Excel, APIs REST y servidores MCP. | Sin clave propia de API de IA en la ruta básica |
+| [Prediction Market Backtesting](../fichas/prediction-market-backtesting.md) | Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas. | Sin clave propia de API de IA en la ruta básica |
 | [qlib](../fichas/qlib.md) | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. | API de IA opcional |
 | [TimesFM](../fichas/timesfm.md) | Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por versión. | API de IA opcional |
 | [vectorbt](../fichas/vectorbt.md) | Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. | Sin clave propia de API de IA en la ruta básica |

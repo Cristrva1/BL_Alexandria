@@ -1,6 +1,6 @@
 # Alexandría para agentes · Ahorro de contexto y tokens
 
-Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `tokens`. 2 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `tokens`. 4 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=23&sub=tokens · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -20,6 +20,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `rtk` | Proxy de terminal que compacta salidas de comandos para reducir el contexto que… | 1 Básico | 69 | Apache-2.0 (OSI permisiva) | recomendado |
 | `headroom` | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
+| `gptcache` | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | — | MIT | sin grupo |
+| `llmlingua` | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -48,6 +50,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `litellm` [23/serving], `context-engineering` [19/guias], `codegraph` [7/codigo], `claude-code-usage-monitor` [23/observabilidad], `mimo-code` [20/terminal]
 - **Alternativas:** `rtk`
 - **Riesgos y avisos:** Alternativas (elige una): rtk. El número de estrellas crece de forma inusual para un proyecto tan joven; los ahorros son mediciones del propio proyecto. Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea.
+
+### GPTCache (`gptcache`)
+
+- **Repo:** https://github.com/zilliztech/GPTCache · MIT · nivel 2 · —/100
+- **Qué es:** Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.
+- **Cuándo elegirlo:** Casos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, requirements.txt, setup.py; API de IA: opcional; Python y un componente de embeddings y almacenamiento compatible; entorno de prueba con consultas ficticias..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://gptcache.readthedocs.io
+- **Primera prueba propuesta (no ejecutada):** Configura el ejemplo en un entorno aislado y manda dos consultas de ejemplo similares. Éxito: Puedes observar cuándo se reutiliza una respuesta y cuándo se vuelve a calcular.
+- **Riesgos y avisos:** Los ejemplos con OpenAI requieren su clave. No compartas entradas y respuestas privadas entre usuarios de distintas cuentas.
+
+### LLMLingua (`llmlingua`)
+
+- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · —/100
+- **Qué es:** Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.
+- **Cuándo elegirlo:** Casos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; hardware model_dependent; API de IA: no; Python, PyTorch y un modelo de compresión compatible con el hardware..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://llmlingua.com/
+- **Primera prueba propuesta (no ejecutada):** Comprime un texto público breve con un modelo local pequeño del proyecto. Éxito: Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas.
+- **Riesgos y avisos:** Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills de dominio: marketing, SEO y negocio
 
-Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `dominio`. 11 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `dominio`. 14 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=27&sub=dominio · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,6 +29,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `linkedin-agent-skill` | Skills de Claude para preparar publicaciones, comentarios y planificación de… | 2 Intermedio | 47 | MIT (OSI permisiva) | alternativa |
 | `arcads-claude-code` | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen… | 2 Intermedio | 39 | MIT (OSI permisiva) | sin grupo |
 | `minimalist-entrepreneur-skills` | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de… | 2 Intermedio | 36 | — (sin licencia detectada) | sin grupo |
+| `claude-ads` | Audita campañas de publicidad con Claude Code y organiza los hallazgos por… | 2 Intermedio | — | MIT | sin grupo |
+| `knowledge-work-plugins` | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `shopify-ai-toolkit` | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -200,6 +203,36 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Usa una skill para formular una hipótesis de cliente y una prueba pequeña sin gastar ni contactar personas todavía Éxito: Puedes distinguir hipótesis, evidencia pendiente y siguiente experimento
 - **Combina con:** `claude-code` [20/terminal], `marketingskills`, `posthog` [10/producto]
 - **Riesgos y avisos:** Sin licencia declarada: técnicamente no hay permiso explícito de redistribución. El pack está basado en un libro y documenta Claude Code; sus plantillas no demuestran demanda, ingresos o validez de un precio.
+
+### Claude Ads (`claude-ads`)
+
+- **Repo:** https://github.com/AgriciDaniel/claude-ads · MIT · nivel 2 · —/100
+- **Qué es:** Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.
+- **Cuándo elegirlo:** Casos: Crear una lista de comprobaciones para una campaña ficticia.; Preparar un informe a partir de un CSV de métricas inventadas. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, pyproject.toml, requirements.txt; API de IA: no; Claude Code, una cuenta de prueba y Python 3.11 o 3.12 si activas dependencias gestionadas..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/AgriciDaniel/claude-ads/blob/fc3908e786c318776df89a3a098333da377364be/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona la skill de auditoría y entrega métricas ficticias, sin conectar cuentas. Éxito: El informe separa hallazgos, evidencia y datos que faltan.
+- **Riesgos y avisos:** Las operaciones que cambian cuentas dependen de conectores y permisos; el catálogo recomienda empezar solo con datos de muestra.
+
+### Knowledge Work Plugins (`knowledge-work-plugins`)
+
+- **Repo:** https://github.com/anthropics/knowledge-work-plugins · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.
+- **Cuándo elegirlo:** Casos: Preparar preguntas para una reunión ficticia.; Clasificar tres tickets inventados sin abrir un CRM. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python; API de IA: no; Claude Cowork o Claude Code y, solo para conectores, cuentas de prueba y permisos limitados..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://claude.com/plugins
+- **Primera prueba propuesta (no ejecutada):** Elige un plugin de ventas desde el marketplace y prepara un brief sobre una empresa ficticia. Éxito: Claude devuelve objetivos y preguntas sin conectarse a sistemas reales.
+- **Riesgos y avisos:** El anfitrión consume su propio plan; los conectores de trabajo pueden requerir otra cuenta. Revisa cada plugin por separado.
+
+### Shopify AI Toolkit (`shopify-ai-toolkit`)
+
+- **Repo:** https://github.com/Shopify/Shopify-AI-Toolkit · MIT · nivel 2 · —/100
+- **Qué es:** Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.
+- **Cuándo elegirlo:** Casos: Consultar cómo se organiza una sección de tema de prueba.; Preparar una consulta de catálogo para una tienda de desarrollo. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); JavaScript, package.json; API de IA: no; Un cliente admitido y, si consultas una tienda, una cuenta de desarrollo con alcance mínimo..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la integración para tu cliente en un proyecto de ejemplo y prueba una consulta de documentación. Éxito: El asistente enlaza la guía de Shopify o devuelve la estructura esperada para el ejemplo.
+- **Riesgos y avisos:** El README declara telemetría activada por defecto y documenta desactivarla. Operar tiendas y usar modelos puede requerir cuentas o planes separados.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

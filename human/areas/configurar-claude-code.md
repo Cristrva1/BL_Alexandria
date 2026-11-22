@@ -4,7 +4,7 @@
 
 Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un proyecto real.
 
-242 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
+251 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
 
 ## Primera configuración, paso a paso
 
@@ -39,7 +39,7 @@ Cliente oficial y selección inicial de herramientas.
 
 Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
-[Explorar 116 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
+[Explorar 118 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -52,6 +52,7 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [ai-website-cloner-template](../fichas/ai-website-cloner-template.md) | Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz. | Sin clave propia de API de IA en la ruta básica |
 | [anatomy](../fichas/anatomy.md) | Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | Sin clave propia de API de IA en la ruta básica |
 | [andrej-karpathy-skills](../fichas/andrej-karpathy-skills.md) | Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy. | Sin clave propia de API de IA en la ruta básica |
+| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [Anthropic Skills](../fichas/anthropic-skills.md) | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. | Sin clave propia de API de IA en la ruta básica |
 | [Arcads AI Video Skill Pack](../fichas/arcads-claude-code.md) | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling). | API de IA necesaria |
 | [archify](../fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | Sin clave propia de API de IA en la ruta básica |
@@ -96,6 +97,7 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [hallmark](../fichas/hallmark.md) | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. | Sin clave propia de API de IA en la ruta básica |
 | [huashu-motion](../fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Sin clave propia de API de IA en la ruta básica |
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica |
+| [HUMANS.md Plugins](../fichas/humans-md-plugins.md) | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin. | Sin clave propia de API de IA en la ruta básica |
 | [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | API de IA opcional |
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
@@ -164,7 +166,7 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
 Conectar documentación, repositorios y herramientas de navegador.
 
-[Explorar 77 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-mcp)
+[Explorar 79 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -180,6 +182,7 @@ Conectar documentación, repositorios y herramientas de navegador.
 | [ccxt](../fichas/ccxt.md) | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. | Sin clave propia de API de IA en la ruta básica |
 | [changedetection.io](../fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | API de IA opcional |
 | [Chrome DevTools MCP](../fichas/chrome-devtools-mcp.md) | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. | Sin clave propia de API de IA en la ruta básica |
+| [Claude Context](../fichas/claude-context.md) | Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP. | API de IA necesaria |
 | [Concat](../fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin clave propia de API de IA en la ruta básica |
 | [Context7](../fichas/context7.md) | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. | Sin clave propia de API de IA en la ruta básica |
 | [crawl4ai](../fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | API de IA opcional |
@@ -197,6 +200,7 @@ Conectar documentación, repositorios y herramientas de navegador.
 | [Graphiti](../fichas/graphiti.md) | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. | Depende de la ruta elegida |
 | [Haystack](../fichas/haystack.md) | Framework de deepset para pipelines de RAG y agentes listos para producción. | Depende de la ruta elegida |
 | [heroui](../fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica |
+| [Home Assistant MCP](../fichas/ha-mcp.md) | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica. | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
 | [langflow](../fichas/langflow.md) | Constructor visual de flujos LLM/agentes construido sobre LangChain. | Depende de la ruta elegida |
 | [langfuse](../fichas/langfuse.md) | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. | API de IA opcional |
@@ -285,10 +289,11 @@ Material de consulta con ejemplos de hooks y controles de Claude Code. Revisa ca
 
 Herramientas auxiliares para observar uso y estudiar el enrutamiento. No son una ampliación de tu plan.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-consumo)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-consumo)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [ccusage](../fichas/ccusage.md) | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
 | [Claude-Code-Usage-Monitor](../fichas/claude-code-usage-monitor.md) | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | Sin clave propia de API de IA en la ruta básica |
 | [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
@@ -298,16 +303,20 @@ Herramientas auxiliares para observar uso y estudiar el enrutamiento. No son una
 
 Skills de oficio documentadas para Claude Code.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-especialidades)
+[Explorar 11 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-especialidades)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Claude Ads](../fichas/claude-ads.md) | Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad. | Sin clave propia de API de IA en la ruta básica |
 | [Creative Architect](../fichas/creative-architect.md) | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video. | API de IA opcional |
 | [Cybersecurity Skills (comunidad)](../fichas/cybersecurity-skills.md) | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica |
+| [FFmpeg Skill](../fichas/ffmpeg-skill.md) | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
+| [Knowledge Work Plugins](../fichas/knowledge-work-plugins.md) | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte. | Sin clave propia de API de IA en la ruta básica |
 | [Marketing Skills](../fichas/marketingskills.md) | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | API de IA opcional |
 | [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | API de IA opcional |
 | [scientific-agent-skills](../fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | API de IA opcional |
+| [Shopify AI Toolkit](../fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Sin clave propia de API de IA en la ruta básica |
 | [taste-skill](../fichas/taste-skill.md) | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. | Sin clave propia de API de IA en la ruta básica |
 
 ### Integraciones,proveedores y paneles

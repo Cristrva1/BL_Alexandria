@@ -63,6 +63,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `remotion`, `three.js`, `claude-code`
 
+## `ffmpeg-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. FFmpeg 6.1 o posterior con los codecs y filtros de la operación; entorno del agente para la skill.
+**Repo:** https://github.com/kajisho5/ffmpeg-skill
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Recortar un anuncio de prueba a quince segundos.; Reencuadrar una toma propia para formato vertical.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo.
+**Qué comprobar:** El archivo resultante tiene la duración esperada y el original sigue intacto.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`
+
 ## `huashu-motion`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
 
@@ -123,6 +153,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`, `arcads-claude-code`, `brag`
 **Alternativas (elige una):** `remotion`, `moviepy`
+
+## `hyperframes-launches`
+role=directory · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.
+**Stack:** HTML
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.
+- Equipo: Equipo normal; revisar dependencias. Navegador; para previsualizar código, HyperFrames, dependencias del ejemplo y Git LFS para sus archivos grandes.
+**Repo:** https://github.com/heygen-com/hyperframes-launches
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar el ritmo de un lanzamiento de producto.; Tomar de referencia la organización de textos y gráficos de una escena.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto.
+**Qué comprobar:** Puedes describir qué archivo controla la escena y qué elementos son recursos externos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `hyperframes`
 
 ## `lemo-opuscar`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript

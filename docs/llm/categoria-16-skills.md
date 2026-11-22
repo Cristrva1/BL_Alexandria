@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills de análisis y seguridad
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `skills`. 4 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `skills`. 4 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=skills · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

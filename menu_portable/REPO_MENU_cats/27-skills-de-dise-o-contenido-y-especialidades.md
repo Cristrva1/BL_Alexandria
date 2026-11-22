@@ -95,6 +95,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `opencode`, `codex`
 
+## `android-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=android,skills,móvil
+
+**Qué es:** Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android.
+**Stack:** Kotlin
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Las instrucciones no necesitan una clave propia. Usan el acceso del asistente; los servicios opcionales tienen requisitos separados.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. El SDK o emulador puede correr localmente; eso no implica que el modelo del asistente sea local.
+- Coste: Consumo del agente que ya utilizas. Skills Apache-2.0. El consumo del asistente y cualquier dispositivo o servicio remoto siguen sus propias condiciones.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Otras rutas: Google documenta Android CLI y Gemini como rutas adicionales.
+**Repo:** https://github.com/android/skills
+
+**Instalación** [+]:
+
+```
+android skills add r8-analyzer --project=.
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Pedir una revisión de cómo maneja una pantalla los bordes del sistema.; Examinar en un proyecto de ejemplo por qué R8 conserva clases que se esperaban eliminar.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada.
+**Qué comprobar:** El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `codex`
+
 ## `arcads-claude-code`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=— · tags=video,image,skills,python
 
@@ -156,6 +187,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes abrir y editar la escena generada
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `blender-mcp`, `blender`, `claude-code`
+
+## `claude-ads`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.
+**Stack:** Python, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Claude Code, una cuenta de prueba y Python 3.11 o 3.12 si activas dependencias gestionadas.
+**Repo:** https://github.com/AgriciDaniel/claude-ads
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/AgriciDaniel/claude-ads/blob/fc3908e786c318776df89a3a098333da377364be/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una lista de comprobaciones para una campaña ficticia.; Preparar un informe a partir de un CSV de métricas inventadas.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Selecciona la skill de auditoría y entrega métricas ficticias, sin conectar cuentas.
+**Qué comprobar:** El informe separa hallazgos, evidencia y datos que faltan.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `claude-seo`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
@@ -622,6 +682,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `postiz-app`, `social-media-research-skills`
 
+## `knowledge-work-plugins`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Claude Cowork o Claude Code y, solo para conectores, cuentas de prueba y permisos limitados.
+**Repo:** https://github.com/anthropics/knowledge-work-plugins
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://claude.com/plugins
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar preguntas para una reunión ficticia.; Clasificar tres tickets inventados sin abrir un CRM.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Elige un plugin de ventas desde el marketplace y prepara un brief sobre una empresa ficticia.
+**Qué comprobar:** Claude devuelve objetivos y preguntas sin conectarse a sistemas reales.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `linkedin-agent-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
 
@@ -864,6 +953,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes reproducir un resultado pequeño y revisar las referencias
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `open-notebook`, `anthropic-skills`
+
+## `shopify-ai-toolkit`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Un cliente admitido y, si consultas una tienda, una cuenta de desarrollo con alcance mínimo.
+**Repo:** https://github.com/Shopify/Shopify-AI-Toolkit
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar cómo se organiza una sección de tema de prueba.; Preparar una consulta de catálogo para una tienda de desarrollo.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Instala la integración para tu cliente en un proyecto de ejemplo y prueba una consulta de documentación.
+**Qué comprobar:** El asistente enlaza la guía de Shopify o devuelve la estructura esperada para el ejemplo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `skills-emil`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design

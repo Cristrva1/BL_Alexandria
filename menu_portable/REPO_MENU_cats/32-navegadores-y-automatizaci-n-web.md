@@ -218,6 +218,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `selenium`, `scrapy`, `crawlee-python`
 
+## `kitesurf`
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.
+**Stack:** TypeScript, Cargo.toml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: El coste depende del proveedor o la ruta. La demo local consume equipo; el uso hospedado de Dynamic Workers depende de Cloudflare Workers Paid.
+- Equipo: Memoria y GPU según el modelo. Contenedor local para el ejemplo o Cloudflare Workers con los servicios que indique su guía.
+**Repo:** https://github.com/cloudflare/kitesurf
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://kitesurf.dev/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Capturar una página estática de prueba.; Comparar cómo se renderiza un componente en un entorno aislado.
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Usa el ejemplo local enlazado y abre una página de prueba sin cuentas ni cookies.
+**Qué comprobar:** Se obtiene una captura o HTML del ejemplo y puedes compararlo con tu navegador.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `ladybird`
 role=app · exec=local · setup=hard · mcp=False · prov=— · tags=browser,engine,cpp,independent
 

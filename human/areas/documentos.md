@@ -4,7 +4,7 @@
 
 Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
 
-63 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
+66 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
 
 ## Opciones para empezar
 
@@ -18,13 +18,14 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Leer, convertir, firmar y organizar archivos.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Apache Tika](../fichas/tika.md) | Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG. | API de IA opcional |
 | [Docling](../fichas/docling.md) | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | API de IA opcional |
 | [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica |
+| [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
 | [Marker](../fichas/marker.md) | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. | API de IA opcional |
 | [markitdown](../fichas/markitdown.md) | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. | API de IA opcional |
 | [MinerU](../fichas/mineru.md) | Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes. | API de IA opcional |
@@ -89,13 +90,15 @@ Explicar sistemas e ideas mediante diagramas.
 
 Recuperar fuentes con RAG y búsqueda semántica.
 
-[Explorar 17 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag)
+[Explorar 19 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | Depende de la ruta elegida |
+| [Chonkie](../fichas/chonkie.md) | Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos. | API de IA opcional |
 | [Chroma](../fichas/chroma.md) | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. | Sin clave propia de API de IA en la ruta básica |
 | [Faiss](../fichas/faiss.md) | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. | Sin clave propia de API de IA en la ruta básica |
+| [FlagEmbedding](../fichas/flagembedding.md) | Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda. | Sin clave propia de API de IA en la ruta básica |
 | [graphrag](../fichas/graphrag.md) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | Depende de la ruta elegida |
 | [kotaemon](../fichas/kotaemon.md) | Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG. | API de IA opcional |
 | [LanceDB](../fichas/lancedb.md) | Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener. | Sin clave propia de API de IA en la ruta básica |

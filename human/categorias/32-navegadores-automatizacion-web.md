@@ -4,7 +4,7 @@
 
 Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Para leer páginas estáticas consulta extracción web; para operar una interfaz empieza por estas herramientas.
 
-19 repos · 4 secciones
+20 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Automatización y pruebas por código](#automatización-y-pruebas-por-código) — 6 repos
 - [Herramientas de navegación para agentes](#herramientas-de-navegación-para-agentes) — 8 repos
-- [Navegadores y servidores de ejecución](#navegadores-y-servidores-de-ejecución) — 4 repos
+- [Navegadores y servidores de ejecución](#navegadores-y-servidores-de-ejecución) — 5 repos
 - [Directorios y recursos de navegador](#directorios-y-recursos-de-navegador) — 1 repos
 
 ## Automatización y pruebas por código
@@ -54,6 +54,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Ladybird](../fichas/ladybird.md) | Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa. | Tu objetivo encaja con estos ejemplos: seguir o contribuir al desarrollo de un motor de navegador independiente; probar la compatibilidad de una web con un motor nuevo | Sin clave propia de API de IA en la ruta básica |
 | [Servo](../fichas/servo.md) | Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; prototipo de la Linux Foundation Europe. | Tu objetivo encaja con estos ejemplos: incrustar renderizado web en una aplicación Rust sin depender de Chromium; experimentar con un motor de navegador moderno y seguro en memoria | Sin clave propia de API de IA en la ruta básica |
 | [Camoufox](../fichas/camoufox.md) | Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright. | Tu objetivo encaja con estos ejemplos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador | Sin clave propia de API de IA en la ruta básica |
+| [Kitesurf](../fichas/kitesurf.md) | Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles. | Tu objetivo encaja con estos ejemplos: Capturar una página estática de prueba.; Comparar cómo se renderiza un componente en un entorno aislado. | Sin clave propia de API de IA en la ruta básica |
 
 ## Directorios y recursos de navegador
 

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 921 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 961 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -171,7 +171,7 @@
     ]
    }
   ],
-  "updated": "2026-11-16",
+  "updated": "2026-11-22",
   "local_inventory": {
    "checked_at": "2026-11-14",
    "status": "library_deleted_by_user",
@@ -308,7 +308,7 @@
    "title": "Automatizar procesos y crear herramientas internas",
    "desc": "Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-   "count": 18,
+   "count": 19,
    "subs": [
     {
      "key": "motores",
@@ -327,7 +327,7 @@
    "title": "Skills, plugins y métodos para agentes",
    "desc": "Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.",
    "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
-   "count": 30,
+   "count": 34,
    "subs": [
     {
      "key": "catalogos",
@@ -346,7 +346,7 @@
    "title": "Construir agentes y coordinar equipos de IA",
    "desc": "Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.",
    "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
-   "count": 34,
+   "count": 36,
    "subs": [
     {
      "key": "py",
@@ -400,7 +400,7 @@
    "title": "Conectar herramientas con MCP",
    "desc": "SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.",
    "file": "human/categorias/05-mcp-conectividad.md",
-   "count": 25,
+   "count": 27,
    "subs": [
     {
      "key": "sdk",
@@ -423,7 +423,7 @@
    "title": "Memoria, RAG y búsqueda de conocimiento",
    "desc": "Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda.",
    "file": "human/categorias/06-memoria-rag-llm-ops.md",
-   "count": 28,
+   "count": 30,
    "subs": [
     {
      "key": "memoria",
@@ -446,7 +446,7 @@
    "title": "Entender código y comprobar su calidad",
    "desc": "Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-   "count": 20,
+   "count": 25,
    "subs": [
     {
      "key": "codigo",
@@ -469,7 +469,7 @@
    "title": "Chats, modelos locales y espacios privados",
    "desc": "Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.",
    "file": "human/categorias/08-ia-local-modelos-chats-workspaces.md",
-   "count": 31,
+   "count": 33,
    "subs": [
     {
      "key": "motores",
@@ -496,7 +496,7 @@
    "title": "Diseñar y construir interfaces web",
    "desc": "Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.",
    "file": "human/categorias/09-dise-o-ui-frontend.md",
-   "count": 32,
+   "count": 33,
    "subs": [
     {
      "key": "componentes",
@@ -645,7 +645,7 @@
      "title": "Ejemplos y aprendizaje"
     }
    ],
-   "count": 23,
+   "count": 25,
    "question": "¿Quieres investigar mercados, probar una estrategia o conectar un exchange?"
   },
   {
@@ -684,7 +684,7 @@
      "title": "Aprendizaje asistido"
     }
    ],
-   "count": 50,
+   "count": 51,
    "question": "¿Quieres organizar tus notas, archivos o servicios personales?"
   },
   {
@@ -867,7 +867,7 @@
      "title": "Agentes de research autónomo"
     }
    ],
-   "count": 17
+   "count": 18
   },
   {
    "num": 22,
@@ -894,7 +894,7 @@
      "title": "Alojamiento y backend"
     }
    ],
-   "count": 26
+   "count": 27
   },
   {
    "num": 23,
@@ -917,7 +917,7 @@
      "title": "Observabilidad, evaluación y guardrails"
     }
    ],
-   "count": 26
+   "count": 30
   },
   {
    "num": 24,
@@ -978,7 +978,7 @@
      "title": "Física y simulación"
     }
    ],
-   "count": 28
+   "count": 32
   },
   {
    "num": 27,
@@ -1001,7 +1001,7 @@
      "title": "Skills de dominio: marketing, SEO y negocio"
     }
    ],
-   "count": 36
+   "count": 40
   },
   {
    "num": 28,
@@ -1051,7 +1051,7 @@
      "title": "Procesamiento y limpieza de audio"
     }
    ],
-   "count": 33
+   "count": 34
   },
   {
    "num": 30,
@@ -1074,7 +1074,7 @@
      "title": "Aplicaciones y flujos de producción"
     }
    ],
-   "count": 23
+   "count": 25
   },
   {
    "num": 31,
@@ -1120,7 +1120,7 @@
      "title": "Directorios y recursos de navegador"
     }
    ],
-   "count": 19
+   "count": 20
   }
  ],
  "recipes": [
@@ -39128,6 +39128,1395 @@
    ],
    "puntuacion": 56,
    "complejidad": 2
+  },
+  {
+   "id": "buzz",
+   "name": "Buzz",
+   "cat": 29,
+   "sub": "stt",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "whisper",
+    "subtítulos",
+    "transcripción"
+   ],
+   "stars": 22980,
+   "gh": "chidiwilliams/buzz",
+   "lib": false,
+   "pick": false,
+   "one": "Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propio equipo.",
+   "alt": [],
+   "doc": "human/fichas/buzz.md",
+   "github_id": 540842713,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "voz",
+    "local"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "complejidad": 1
+  },
+  {
+   "id": "libretranslate",
+   "name": "LibreTranslate",
+   "cat": 22,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "traducción",
+    "argos",
+    "autoalojado"
+   ],
+   "stars": 17819,
+   "gh": "LibreTranslate/LibreTranslate",
+   "lib": false,
+   "pick": false,
+   "one": "Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos.",
+   "alt": [],
+   "doc": "human/fichas/libretranslate.md",
+   "github_id": 322921248,
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "servicios",
+    "local"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "ccusage",
+   "name": "ccusage",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "consumo",
+    "tokens",
+    "costos"
+   ],
+   "stars": 19543,
+   "gh": "ccusage/ccusage",
+   "lib": false,
+   "pick": false,
+   "one": "Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales.",
+   "alt": [],
+   "doc": "human/fichas/ccusage.md",
+   "github_id": 992755069,
+   "lang": "Rust",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "antigravity"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "android-skills",
+   "name": "Android Skills",
+   "cat": 27,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "android",
+    "skills",
+    "móvil"
+   ],
+   "stars": 10700,
+   "gh": "android/skills",
+   "lib": false,
+   "pick": false,
+   "one": "Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android.",
+   "alt": [],
+   "doc": "human/fichas/android-skills.md",
+   "github_id": 1183263320,
+   "lang": "Kotlin",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "antigravity"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "claude-ads",
+   "name": "Claude Ads",
+   "cat": 27,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 11231,
+   "gh": "AgriciDaniel/claude-ads",
+   "lib": false,
+   "pick": false,
+   "one": "Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.",
+   "alt": [],
+   "doc": "human/fichas/claude-ads.md",
+   "github_id": 1155383451,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "apscheduler",
+   "name": "APScheduler",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 7719,
+   "gh": "agronholm/apscheduler",
+   "lib": false,
+   "pick": false,
+   "one": "Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.",
+   "alt": [],
+   "doc": "human/fichas/apscheduler.md",
+   "github_id": 54828252,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "knowledge-work-plugins",
+   "name": "Knowledge Work Plugins",
+   "cat": 27,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 36680,
+   "gh": "anthropics/knowledge-work-plugins",
+   "lib": false,
+   "pick": false,
+   "one": "Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.",
+   "alt": [],
+   "doc": "human/fichas/knowledge-work-plugins.md",
+   "github_id": 1140828898,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "semantic-router",
+   "name": "Semantic Router",
+   "cat": 3,
+   "sub": "py",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 4040,
+   "gh": "aurelio-labs/semantic-router",
+   "lib": false,
+   "pick": false,
+   "one": "Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.",
+   "alt": [],
+   "doc": "human/fichas/semantic-router.md",
+   "github_id": 711904962,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "celery",
+   "name": "Celery",
+   "cat": 1,
+   "sub": "motores",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 29259,
+   "gh": "celery/celery",
+   "lib": false,
+   "pick": false,
+   "one": "Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.",
+   "alt": [],
+   "doc": "human/fichas/celery.md",
+   "github_id": 184460,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "automatizar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "kitesurf",
+   "name": "Kitesurf",
+   "cat": 32,
+   "sub": "motores-web",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 2554,
+   "gh": "cloudflare/kitesurf",
+   "lib": false,
+   "pick": false,
+   "one": "Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.",
+   "alt": [],
+   "doc": "human/fichas/kitesurf.md",
+   "github_id": 1397434450,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "web"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "humans-md-plugins",
+   "name": "HUMANS.md Plugins",
+   "cat": 2,
+   "sub": "metodologia",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 3,
+   "gh": "cmdai-hq/humans-md-plugins",
+   "lib": false,
+   "pick": false,
+   "one": "Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.",
+   "alt": [],
+   "doc": "human/fichas/humans-md-plugins.md",
+   "github_id": 1422629976,
+   "lang": "JavaScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "antigravity"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "video2threejs",
+   "name": "video2threejs",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 63,
+   "gh": "cpppppp7/video2threejs",
+   "lib": false,
+   "pick": false,
+   "one": "Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.",
+   "alt": [],
+   "doc": "human/fichas/video2threejs.md",
+   "github_id": 1346840166,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "complejidad": 1
+  },
+  {
+   "id": "pybreaker",
+   "name": "PyBreaker",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 706,
+   "gh": "danielfm/pybreaker",
+   "lib": false,
+   "pick": false,
+   "one": "Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.",
+   "alt": [],
+   "doc": "human/fichas/pybreaker.md",
+   "github_id": 993698,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "claude-code-templates",
+   "name": "Claude Code Templates",
+   "cat": 2,
+   "sub": "catalogos",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 34099,
+   "gh": "davila7/claude-code-templates",
+   "lib": false,
+   "pick": false,
+   "one": "Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.",
+   "alt": [],
+   "doc": "human/fichas/claude-code-templates.md",
+   "github_id": 1013480284,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "complejidad": 1
+  },
+  {
+   "id": "isponsorblocktv",
+   "name": "iSponsorBlockTV",
+   "cat": 15,
+   "sub": "personal",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 7306,
+   "gh": "dmunozv04/iSponsorBlockTV",
+   "lib": false,
+   "pick": false,
+   "one": "Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.",
+   "alt": [],
+   "doc": "human/fichas/isponsorblocktv.md",
+   "github_id": 448358672,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 1
+  },
+  {
+   "id": "prediction-market-backtesting",
+   "name": "Prediction Market Backtesting",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 1273,
+   "gh": "evan-kolberg/prediction-market-backtesting",
+   "lib": false,
+   "pick": false,
+   "one": "Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.",
+   "alt": [],
+   "doc": "human/fichas/prediction-market-backtesting.md",
+   "github_id": 1156777542,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "chonkie",
+   "name": "Chonkie",
+   "cat": 6,
+   "sub": "rag",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 4853,
+   "gh": "feyninc/chonkie",
+   "lib": false,
+   "pick": false,
+   "one": "Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.",
+   "alt": [],
+   "doc": "human/fichas/chonkie.md",
+   "github_id": 956908445,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "flagembedding",
+   "name": "FlagEmbedding",
+   "cat": 6,
+   "sub": "vectores",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 12354,
+   "gh": "FlagOpen/FlagEmbedding",
+   "lib": false,
+   "pick": false,
+   "one": "Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.",
+   "alt": [],
+   "doc": "human/fichas/flagembedding.md",
+   "github_id": 673596675,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "documentos"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "robotics-antigravity-plugin",
+   "name": "Robotics for Antigravity",
+   "cat": 26,
+   "sub": "simulacion",
+   "role": "skill",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 212,
+   "gh": "google-deepmind/robotics-antigravity-plugin",
+   "lib": false,
+   "pick": false,
+   "one": "Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.",
+   "alt": [],
+   "doc": "human/fichas/robotics-antigravity-plugin.md",
+   "github_id": 1460429608,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "antigravity",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "hyperframes-launches",
+   "name": "HyperFrames Launches",
+   "cat": 30,
+   "sub": "aplicaciones",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 693,
+   "gh": "heygen-com/hyperframes-launches",
+   "lib": false,
+   "pick": false,
+   "one": "Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.",
+   "alt": [],
+   "doc": "human/fichas/hyperframes-launches.md",
+   "github_id": 1218406026,
+   "lang": "HTML",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "complejidad": 1
+  },
+  {
+   "id": "ha-mcp",
+   "name": "Home Assistant MCP",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [],
+   "stars": 8065,
+   "gh": "homeassistant-ai/ha-mcp",
+   "lib": false,
+   "pick": false,
+   "one": "Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.",
+   "alt": [],
+   "doc": "human/fichas/ha-mcp.md",
+   "github_id": 1056618941,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "mcp"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "local_model"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "claude-second-brain",
+   "name": "Claude Second Brain",
+   "cat": 8,
+   "sub": "workspaces",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 178,
+   "gh": "jessepinkman9900/claude-second-brain",
+   "lib": false,
+   "pick": false,
+   "one": "Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.",
+   "alt": [],
+   "doc": "human/fichas/claude-second-brain.md",
+   "github_id": 1208153223,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "local",
+    "notas"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "ffmpeg-skill",
+   "name": "FFmpeg Skill",
+   "cat": 30,
+   "sub": "skills-video",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 9579,
+   "gh": "kajisho5/ffmpeg-skill",
+   "lib": false,
+   "pick": false,
+   "one": "Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.",
+   "alt": [],
+   "doc": "human/fichas/ffmpeg-skill.md",
+   "github_id": 1356077516,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "hishel",
+   "name": "Hishel",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 424,
+   "gh": "karpetrosyan/hishel",
+   "lib": false,
+   "pick": false,
+   "one": "Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.",
+   "alt": [],
+   "doc": "human/fichas/hishel.md",
+   "github_id": 666701506,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "astryx",
+   "name": "Astryx",
+   "cat": 9,
+   "sub": "componentes",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 32107,
+   "gh": "meta/astryx",
+   "lib": false,
+   "pick": false,
+   "one": "Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.",
+   "alt": [],
+   "doc": "human/fichas/astryx.md",
+   "github_id": 1131202426,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "web"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "llmlingua",
+   "name": "LLMLingua",
+   "cat": 23,
+   "sub": "tokens",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 6853,
+   "gh": "microsoft/LLMLingua",
+   "lib": false,
+   "pick": false,
+   "one": "Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.",
+   "alt": [],
+   "doc": "human/fichas/llmlingua.md",
+   "github_id": 663368311,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "motionbricks",
+   "name": "MotionBricks",
+   "cat": 26,
+   "sub": "simulacion",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 1590,
+   "gh": "NVlabs/motionbricks",
+   "lib": false,
+   "pick": false,
+   "one": "Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.",
+   "alt": [],
+   "doc": "human/fichas/motionbricks.md",
+   "github_id": 1217294667,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "openjarvis",
+   "name": "OpenJarvis",
+   "cat": 21,
+   "sub": "asistentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 17950,
+   "gh": "open-jarvis/OpenJarvis",
+   "lib": false,
+   "pick": false,
+   "one": "Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.",
+   "alt": [],
+   "doc": "human/fichas/openjarvis.md",
+   "github_id": 1158198234,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "portkey-gateway",
+   "name": "Portkey AI Gateway",
+   "cat": 23,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 13428,
+   "gh": "Portkey-AI/gateway",
+   "lib": false,
+   "pick": false,
+   "one": "Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.",
+   "alt": [],
+   "doc": "human/fichas/portkey-gateway.md",
+   "github_id": 682080300,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "api"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "openreality",
+   "name": "Open Reality",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [],
+   "stars": 662,
+   "gh": "reality-opened/openreality",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.",
+   "alt": [],
+   "doc": "human/fichas/openreality.md",
+   "github_id": 1353278725,
+   "lang": "Python",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "3d"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "requests-cache",
+   "name": "Requests Cache",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 1511,
+   "gh": "requests-cache/requests-cache",
+   "lib": false,
+   "pick": false,
+   "one": "Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.",
+   "alt": [],
+   "doc": "human/fichas/requests-cache.md",
+   "github_id": 4006131,
+   "lang": "Python",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "shadcn-improve",
+   "name": "Improve de shadcn",
+   "cat": 2,
+   "sub": "metodologia",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 12128,
+   "gh": "shadcn/improve",
+   "lib": false,
+   "pick": false,
+   "one": "Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.",
+   "alt": [],
+   "doc": "human/fichas/shadcn-improve.md",
+   "github_id": 1264986626,
+   "lang": null,
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "shopify-ai-toolkit",
+   "name": "Shopify AI Toolkit",
+   "cat": 27,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 652,
+   "gh": "Shopify/Shopify-AI-Toolkit",
+   "lib": false,
+   "pick": false,
+   "one": "Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.",
+   "alt": [],
+   "doc": "human/fichas/shopify-ai-toolkit.md",
+   "github_id": 1198690790,
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "antigravity"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "eve",
+   "name": "Eve",
+   "cat": 3,
+   "sub": "ts",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 6049,
+   "gh": "vercel/eve",
+   "lib": false,
+   "pick": false,
+   "one": "Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.",
+   "alt": [],
+   "doc": "human/fichas/eve.md",
+   "github_id": 1271113810,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "awesome-claude-code-subagents",
+   "name": "Awesome Claude Code Subagents",
+   "cat": 2,
+   "sub": "catalogos",
+   "role": "directory",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 26723,
+   "gh": "VoltAgent/awesome-claude-code-subagents",
+   "lib": false,
+   "pick": false,
+   "one": "Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.",
+   "alt": [],
+   "doc": "human/fichas/awesome-claude-code-subagents.md",
+   "github_id": 1029036679,
+   "lang": "Shell",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "complejidad": 1
+  },
+  {
+   "id": "inferssd",
+   "name": "InferSSD",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 1286,
+   "gh": "wici-ai/inferssd",
+   "lib": false,
+   "pick": false,
+   "one": "Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.",
+   "alt": [],
+   "doc": "human/fichas/inferssd.md",
+   "github_id": 1429601047,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "local",
+    "notas"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "polyweather",
+   "name": "PolyWeather",
+   "cat": 14,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 347,
+   "gh": "yangyuan-zhen/PolyWeather",
+   "lib": false,
+   "pick": false,
+   "one": "Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.",
+   "alt": [],
+   "doc": "human/fichas/polyweather.md",
+   "github_id": 1150535773,
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "finanzas"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "claude-context",
+   "name": "Claude Context",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [],
+   "stars": 12716,
+   "gh": "zilliztech/claude-context",
+   "lib": false,
+   "pick": false,
+   "one": "Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.",
+   "alt": [],
+   "doc": "human/fichas/claude-context.md",
+   "github_id": 997125912,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "mcp"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "claude",
+    "codex",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "gptcache",
+   "name": "GPTCache",
+   "cat": 23,
+   "sub": "tokens",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 8235,
+   "gh": "zilliztech/GPTCache",
+   "lib": false,
+   "pick": false,
+   "one": "Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.",
+   "alt": [],
+   "doc": "human/fichas/gptcache.md",
+   "github_id": 618276831,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "npkill",
+   "name": "npkill",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 9622,
+   "gh": "voidcosmos/npkill",
+   "lib": false,
+   "pick": false,
+   "one": "Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.",
+   "alt": [],
+   "doc": "human/fichas/npkill.md",
+   "github_id": 194513266,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 1
   }
  ],
  "discovery": {
@@ -39159,6 +40548,7 @@
      24,
      25,
      26,
+     27,
      28,
      29,
      30,
@@ -39197,6 +40587,7 @@
     ],
     "categories": [
      1,
+     3,
      17,
      18,
      25,
@@ -39348,8 +40739,11 @@
     "categories": [
      8,
      15,
+     21,
+     22,
      23,
-     24
+     24,
+     29
     ],
     "keywords": [
      "local",
@@ -39832,6 +41226,7 @@
      "obsidian-second-brain"
     ],
     "categories": [
+     8,
      15
     ],
     "keywords": [
@@ -41112,7 +42507,9 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "openjarvis"
+      ],
       "keywords": [],
       "reference_repos": []
      },
@@ -41176,7 +42573,9 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "libretranslate"
+      ],
       "keywords": [],
       "reference_repos": []
      }
@@ -41214,7 +42613,9 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "libretranslate"
+      ],
       "keywords": [],
       "reference_repos": []
      },
@@ -41500,7 +42901,9 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "ha-mcp"
+      ],
       "keywords": [],
       "reference_repos": []
      },
@@ -41565,7 +42968,9 @@
         "cat": 20
        }
       ],
-      "repos": [],
+      "repos": [
+       "android-skills"
+      ],
       "keywords": [],
       "reference_repos": []
      },
@@ -41940,7 +43345,9 @@
        "video-use",
        "whatsapp-agentkit",
        "wrenai",
-       "wshobson-agents"
+       "wshobson-agents",
+       "android-skills",
+       "humans-md-plugins"
       ],
       "keywords": [],
       "reference_repos": [
@@ -42029,7 +43436,9 @@
        "ui",
        "unity-mcp",
        "vibe-trading",
-       "windmill"
+       "windmill",
+       "ha-mcp",
+       "claude-context"
       ],
       "keywords": [],
       "reference_repos": []
@@ -42080,7 +43489,8 @@
        "claude-code-router",
        "claude-code-usage-monitor",
        "magnitude",
-       "ollama"
+       "ollama",
+       "ccusage"
       ],
       "keywords": [],
       "reference_repos": []
@@ -42097,7 +43507,11 @@
        "marketingskills",
        "scientific-agent-skills",
        "skills-remotion",
-       "taste-skill"
+       "taste-skill",
+       "claude-ads",
+       "knowledge-work-plugins",
+       "ffmpeg-skill",
+       "shopify-ai-toolkit"
       ],
       "keywords": [],
       "reference_repos": []
@@ -43998,7 +45412,9 @@
        "video-shotcraft",
        "video-use",
        "wrenai",
-       "wshobson-agents"
+       "wshobson-agents",
+       "android-skills",
+       "humans-md-plugins"
       ],
       "keywords": [],
       "reference_repos": []
@@ -44086,7 +45502,9 @@
        "ui",
        "unity-mcp",
        "vibe-trading",
-       "windmill"
+       "windmill",
+       "ha-mcp",
+       "claude-context"
       ],
       "keywords": [],
       "reference_repos": []
@@ -44130,7 +45548,9 @@
        "marketingskills",
        "ppt-master",
        "skills-remotion",
-       "taste-skill"
+       "taste-skill",
+       "ffmpeg-skill",
+       "shopify-ai-toolkit"
       ],
       "keywords": [],
       "reference_repos": []
@@ -44185,7 +45605,8 @@
        "supermemory",
        "t3code",
        "unsloth",
-       "wan2gp"
+       "wan2gp",
+       "ccusage"
       ],
       "reference_repos": [],
       "keywords": []
@@ -45748,7 +47169,11 @@
        "ui-ux-pro-max-skill",
        "video-use",
        "wrenai",
-       "wshobson-agents"
+       "wshobson-agents",
+       "android-skills",
+       "humans-md-plugins",
+       "robotics-antigravity-plugin",
+       "shopify-ai-toolkit"
       ],
       "keywords": [],
       "reference_repos": []
@@ -45885,7 +47310,8 @@
        "nodeterm",
        "omniroute",
        "opencursor",
-       "t3code"
+       "t3code",
+       "ccusage"
       ],
       "reference_repos": [],
       "keywords": []
@@ -47025,15 +48451,50 @@
       "readme_blob_sha": "52b4542456850a2ec4ffed9b92824c8aa10045bf",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
+     },
+     {
+      "repo_id": "android-skills",
+      "source": "https://github.com/android/skills/blob/c72942584fff970dac86ced78b367fce0c441e52/README.md",
+      "readme_blob_sha": "6636206616de644079b8b1d3334f4da22c8b379a",
+      "checked_at": "2026-11-22",
+      "usage": "documented_integration"
+     },
+     {
+      "repo_id": "ccusage",
+      "source": "https://github.com/ccusage/ccusage/blob/8fd41cd10e595cd4231a5627427d1725112ad718/README.md",
+      "readme_blob_sha": "42a930b382af78cc033e35a24653e6bcb5ab9d1d",
+      "checked_at": "2026-11-22",
+      "usage": "documented_integration"
+     },
+     {
+      "repo_id": "humans-md-plugins",
+      "source": "https://github.com/cmdai-hq/humans-md-plugins/blob/fab03e3c81544d418349b6c477049e31ab9bed1b/README.md",
+      "readme_blob_sha": "70a4ed19353da664a7adc56109a8c85e9fdafcc3",
+      "checked_at": "2026-11-22",
+      "usage": "documented_integration"
+     },
+     {
+      "repo_id": "robotics-antigravity-plugin",
+      "source": "https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md",
+      "readme_blob_sha": "7509784a0a0f9145cd411966952e0f3fe20f8adb",
+      "checked_at": "2026-11-22",
+      "usage": "documented_integration"
+     },
+     {
+      "repo_id": "shopify-ai-toolkit",
+      "source": "https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md",
+      "readme_blob_sha": "3c068238badd898672dd339bb11bb669f3e0c087",
+      "checked_at": "2026-11-22",
+      "usage": "documented_integration"
      }
     ]
    }
   ],
   "editorial_review": {
-   "total": 637,
-   "reviewed": 637,
-   "date": "2026-11-15",
-   "report": "reports/review-679-2026-11-14.json",
+   "total": 959,
+   "reviewed": 959,
+   "date": "2026-11-22",
+   "report": "reports/drive-2026-11-22.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."
   },
   "goal_groups": [

@@ -157,6 +157,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supabase`, `activepieces`, `ollama`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
 
+## `celery`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.
+**Stack:** Python, Makefile, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Python compatible con la versión estable elegida y un intermediario local como Redis o RabbitMQ.
+**Repo:** https://github.com/celery/celery
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Procesar una miniatura de prueba en segundo plano.; Generar un informe de ejemplo en una cola distinta a la interfaz web.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Completa el tutorial con una tarea que sume dos números y un intermediario local.
+**Qué comprobar:** El proceso trabajador recibe la tarea y el resultado contiene la suma esperada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `dagger`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=ci,containers
 

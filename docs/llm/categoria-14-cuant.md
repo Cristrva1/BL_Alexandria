@@ -1,6 +1,6 @@
 # Alexandría para agentes · Modelos y backtesting cuantitativo
 
-Categoría 14 «Investigar finanzas y mercados» › subcategoría `cuant`. 8 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 14 «Investigar finanzas y mercados» › subcategoría `cuant`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=14&sub=cuant · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -26,6 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `vectorbt` | Biblioteca de análisis cuantitativo para explorar señales y comparar… | 2 Intermedio | 56 | Apache-2.0 + Commons Clause (source-available) | recomendado |
 | `finrl` | Biblioteca y ejemplos para investigar estrategias de trading mediante… | 3 Avanzado | 53 | MIT (OSI permisiva) | sin grupo |
 | `backtesting-py` | Framework ligero de Python para hacer backtesting de estrategias de trading… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `prediction-market-backtesting` | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | — | NOASSERTION | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -127,6 +128,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `yfinance`, `jupyterlab` [25/datos], `claude-code` [20/terminal], `openbb`
 - **Alternativas:** `vectorbt`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): vectorbt. Los resultados de backtest no anticipan resultados reales.
+
+### Prediction Market Backtesting (`prediction-market-backtesting`)
+
+- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · NOASSERTION · nivel 2 · —/100
+- **Qué es:** Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.
+- **Cuándo elegirlo:** Casos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Cargo.toml, Makefile; API de IA: no; Entorno compatible con NautilusTrader y datos históricos de una muestra..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://evan-kolberg.github.io/prediction-market-backtesting/license/
+- **Primera prueba propuesta (no ejecutada):** Ejecuta el ejemplo introductorio con pocos datos históricos y sin credenciales de trading. Éxito: Obtienes un resultado reproducible para el conjunto de datos utilizado.
+- **Combina con:** `nautilus-trader`
+- **Riesgos y avisos:** GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Usa solo simulación. La licencia y atribuciones tienen alcances distintos por componente; lee las notas antes de redistribuir.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

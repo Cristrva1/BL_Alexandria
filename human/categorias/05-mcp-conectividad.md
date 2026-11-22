@@ -4,7 +4,7 @@
 
 SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.
 
-25 repos · 3 secciones
+27 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -21,7 +21,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [SDKs y frameworks para crear MCP](#sdks-y-frameworks-para-crear-mcp) — 5 repos
-- [Servidores MCP destacados](#servidores-mcp-destacados) — 15 repos
+- [Servidores MCP destacados](#servidores-mcp-destacados) — 17 repos
 - [Directorios, clientes y aprendizaje](#directorios-clientes-y-aprendizaje) — 5 repos
 
 ## SDKs y frameworks para crear MCP
@@ -48,8 +48,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [MCP Toolbox for Databases](../fichas/mcp-toolbox.md) | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un framework para definir consultas seguras para agentes. | Tu objetivo encaja con estos ejemplos: consultar y explorar el esquema de una base PostgreSQL desde tu agente de código; dar a un agente en producción consultas parametrizadas en lugar de SQL libre | Sin clave propia de API de IA en la ruta básica |
 | [Figma Context MCP](../fichas/figma-context-mcp.md) | Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. | Tu objetivo encaja con estos ejemplos: Implementar una tarjeta a partir de un diseño; Consultar tipografía y espaciado de una pantalla | Sin clave propia de API de IA en la ruta básica |
 | [unity-mcp](../fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Tu objetivo encaja con estos ejemplos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente | Sin clave propia de API de IA en la ruta básica |
+| [Claude Context](../fichas/claude-context.md) | Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP. | Tu objetivo encaja con estos ejemplos: Encontrar archivos relacionados con la autenticación en un proyecto de ejemplo.; Indexar una biblioteca ficticia y comprobar qué resultado devuelve por función. | API de IA necesaria |
 | [GhidraMCP](../fichas/ghidramcp.md) | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio | Sin clave propia de API de IA en la ruta básica |
 | [MCP servers for AWS](../fichas/aws-mcp.md) | Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, EKS, ECS, serverless y otros servicios. | Tu objetivo encaja con estos ejemplos: consultar la documentación actualizada de AWS desde tu agente de código; revisar y generar plantillas de CloudFormation o CDK con validación de seguridad | Sin clave propia de API de IA en la ruta básica |
+| [Home Assistant MCP](../fichas/ha-mcp.md) | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica. | Tu objetivo encaja con estos ejemplos: Consultar qué sensores aparecen en el demo.; Revisar como borrador la automatización de una luz virtual. | Sin clave propia de API de IA en la ruta básica |
 | [annas-mcp](../fichas/annas-mcp.md) | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. | Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP | Sin clave propia de API de IA en la ruta básica |
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. | Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones | Sin clave propia de API de IA en la ruta básica |
 | [Neo4j MCP (oficial)](../fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Tu objetivo encaja con estos ejemplos: Preguntar en lenguaje natural por el esquema de un grafo de prueba; Consultar relaciones con Cypher de solo lectura desde el agente | Sin clave propia de API de IA en la ruta básica |

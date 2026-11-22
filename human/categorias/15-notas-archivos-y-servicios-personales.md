@@ -4,7 +4,7 @@
 
 Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar.
 
-50 repos · 7 secciones
+51 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -21,7 +21,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Credenciales y privacidad](#credenciales-y-privacidad) — 10 repos
 - [Libros, podcasts y bibliotecas personales](#libros-podcasts-y-bibliotecas-personales) — 4 repos
 - [Automatización del hogar](#automatización-del-hogar) — 4 repos
-- [Herramientas y organización personal](#herramientas-y-organización-personal) — 8 repos
+- [Herramientas y organización personal](#herramientas-y-organización-personal) — 9 repos
 - [Aprendizaje asistido](#aprendizaje-asistido) — 1 repos
 
 ## Notas, bóvedas y conocimiento personal
@@ -101,6 +101,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [optimizerDuck](../fichas/optimizerduck.md) | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | Tu objetivo encaja con estos ejemplos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento | Sin clave propia de API de IA en la ruta básica |
 | [universal-android-debloater-next-generation](../fichas/universal-android-debloater-next-generation.md) | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | Tu objetivo encaja con estos ejemplos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo | Sin clave propia de API de IA en la ruta básica |
 | [Ghostfolio](../fichas/ghostfolio.md) | Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube. | Tu objetivo encaja con estos ejemplos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker | Sin clave propia de API de IA en la ruta básica |
+| [iSponsorBlockTV](../fichas/isponsorblocktv.md) | Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles. | Tu objetivo encaja con estos ejemplos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba. | Sin clave propia de API de IA en la ruta básica |
 | [40-questions](../fichas/40-questions.md) | Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales. | Tu objetivo encaja con estos ejemplos: Preparar una revisión anual; Explorar prioridades y hábitos personales | Sin clave propia de API de IA en la ruta básica |
 
 ## Aprendizaje asistido

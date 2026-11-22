@@ -4,7 +4,7 @@
 
 Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores.
 
-23 repos · 3 secciones
+25 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -19,8 +19,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Motores de video y escenas por código](#motores-de-video-y-escenas-por-código) — 8 repos
-- [Skills y métodos de producción audiovisual](#skills-y-métodos-de-producción-audiovisual) — 14 repos
-- [Aplicaciones y flujos de producción](#aplicaciones-y-flujos-de-producción) — 1 repos
+- [Skills y métodos de producción audiovisual](#skills-y-métodos-de-producción-audiovisual) — 15 repos
+- [Aplicaciones y flujos de producción](#aplicaciones-y-flujos-de-producción) — 2 repos
 
 ## Motores de video y escenas por código
 
@@ -45,6 +45,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [brag](../fichas/brag.md) | Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | Tu objetivo encaja con estos ejemplos: Presentar una demo de producto; Preparar una pieza de lanzamiento | API de IA opcional |
 | [video-shotcraft](../fichas/video-shotcraft.md) | Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido. | Tu objetivo encaja con estos ejemplos: Preparar una promo de producto; Organizar planos sincronizados con sonido | API de IA opcional |
 | [lemo-opuscar](../fichas/lemo-opuscar.md) | Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y medios. | Tu objetivo encaja con estos ejemplos: Explorar una dirección visual para un video; Preparar una pieza por código | API de IA opcional |
+| [FFmpeg Skill](../fichas/ffmpeg-skill.md) | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables. | Tu objetivo encaja con estos ejemplos: Recortar un anuncio de prueba a quince segundos.; Reencuadrar una toma propia para formato vertical. | Sin clave propia de API de IA en la ruta básica |
 | [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | Tu objetivo encaja con estos ejemplos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio | API de IA opcional |
 | [openfilm](../fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | Tu objetivo encaja con estos ejemplos: Preparar un video editable; Revisar el resultado de un agente en un editor | API de IA opcional |
 | [srt-whiteboard-animation](../fichas/srt-whiteboard-animation.md) | Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT. | Tu objetivo encaja con estos ejemplos: Crear una explicación de pizarra; Prototipar una secuencia narrada | Sin clave propia de API de IA en la ruta básica |
@@ -58,6 +59,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [HyperFrames Launches](../fichas/hyperframes-launches.md) | Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones. | Tu objetivo encaja con estos ejemplos: Estudiar el ritmo de un lanzamiento de producto.; Tomar de referencia la organización de textos y gráficos de una escena. | Sin clave propia de API de IA en la ruta básica |
 | [videofy_minimal](../fichas/videofy-minimal.md) | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. | Tu objetivo encaja con estos ejemplos: Preparar una noticia para señalización; Probar una pieza informativa breve | API de IA necesaria |
 
 ## Recetas relacionadas

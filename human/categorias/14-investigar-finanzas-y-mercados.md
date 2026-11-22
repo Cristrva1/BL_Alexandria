@@ -4,7 +4,7 @@
 
 Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.
 
-23 repos · 4 secciones
+25 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,8 +19,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Agentes de investigación financiera](#agentes-de-investigación-financiera) — 8 repos
-- [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 8 repos
+- [Agentes de investigación financiera](#agentes-de-investigación-financiera) — 9 repos
+- [Modelos y backtesting cuantitativo](#modelos-y-backtesting-cuantitativo) — 9 repos
 - [Bots y conexiones a exchanges](#bots-y-conexiones-a-exchanges) — 6 repos
 - [Ejemplos y aprendizaje](#ejemplos-y-aprendizaje) — 1 repos
 
@@ -36,6 +36,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [FinGPT](../fichas/fingpt.md) | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. | Tu objetivo encaja con estos ejemplos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación | API de IA opcional |
 | [AutoHedge](../fichas/autohedge.md) | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. | Tu objetivo encaja con estos ejemplos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading | API de IA necesaria |
 | [QuantHarness](../fichas/quantharness.md) | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. | Tu objetivo encaja con estos ejemplos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental | API de IA necesaria |
+| [PolyWeather](../fichas/polyweather.md) | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima. | Tu objetivo encaja con estos ejemplos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones. | Sin clave propia de API de IA en la ruta básica |
 
 ## Modelos y backtesting cuantitativo
 
@@ -49,6 +50,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [vectorbt](../fichas/vectorbt.md) | Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. | Tu objetivo encaja con estos ejemplos: Comparar indicadores en una serie; Explorar sensibilidad de una regla histórica | Sin clave propia de API de IA en la ruta básica |
 | [Backtesting.py](../fichas/backtesting-py.md) | Framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. | Tu objetivo encaja con estos ejemplos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo | Sin clave propia de API de IA en la ruta básica |
 | [lumibot](../fichas/lumibot.md) | Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers. | Tu objetivo encaja con estos ejemplos: Comparar una estrategia de reglas; Estudiar decisiones de una estrategia AI en backtest | API de IA opcional |
+| [Prediction Market Backtesting](../fichas/prediction-market-backtesting.md) | Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas. | Tu objetivo encaja con estos ejemplos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba. | Sin clave propia de API de IA en la ruta básica |
 
 ## Bots y conexiones a exchanges
 

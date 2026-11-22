@@ -443,6 +443,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mlflow`, `langfuse`, `ragas`, `hermes-agent-self-evolution`, `opik`
 **Alternativas (elige una):** `promptfoo`
 
+## `eve`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La primera prueba documentada necesita autenticación de un proveedor o de la pasarela del modelo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Ejecución con modelos locales por confirmar. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. La licencia de código no incluye llamadas a modelos, despliegue ni almacenamiento.
+- Equipo: Equipo normal; revisar dependencias. Node.js/npm y autenticación para el proveedor o AI Gateway documentado; hosting opcional.
+**Repo:** https://github.com/vercel/eve
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://eve.dev/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un agente de preguntas sobre una tarea ficticia.; Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio.
+**Qué comprobar:** La interfaz de terminal inicia y responde con el proveedor elegido.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `haystack`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,local · tags=rag,agents,python
 
@@ -989,6 +1018,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langfuse`, `fastmcp`, `ollama`, `browser-use`, `loguru`, `mcp-python-sdk`
 **Alternativas (elige una):** `openai-agents-python`, `smolagents`, `langgraph`
+
+## `semantic-router`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.
+**Stack:** Python, Makefile, compose.yaml, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.
+- Equipo: Equipo normal; revisar dependencias. Python, una versión actual de la rama 1.x y un codificador compatible.
+**Repo:** https://github.com/aurelio-labs/semantic-router
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.; Separar solicitudes sobre facturación de solicitudes de soporte.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea dos rutas con frases ficticias y usa un codificador local documentado.
+**Qué comprobar:** Frases similares llegan a la ruta esperada y puedes revisar las que no encajan.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `sim`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,local · tags=agents,automation,typescript

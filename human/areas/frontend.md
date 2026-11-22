@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-74 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+76 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Opciones para empezar
 
@@ -33,11 +33,12 @@ Diseñar y construir pantallas desde una interfaz visual.
 
 Piezas de interfaz y CSS para construir una web.
 
-[Explorar 18 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
+[Explorar 19 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Ant Design](../fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Sin clave propia de API de IA en la ruta básica |
+| [Astryx](../fichas/astryx.md) | Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero. | Sin clave propia de API de IA en la ruta básica |
 | [Chakra UI](../fichas/chakra-ui.md) | Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC. | Sin clave propia de API de IA en la ruta básica |
 | [daisyUI](../fichas/daisyui.md) | La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. | Sin clave propia de API de IA en la ruta básica |
 | [flexoki](../fichas/flexoki.md) | Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual. | Sin clave propia de API de IA en la ruta básica |
@@ -121,7 +122,7 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -132,6 +133,7 @@ Pruebas de navegador y herramientas para alojar la aplicación.
 | [Cypress](../fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica |
 | [Dokploy](../fichas/dokploy.md) | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. | Sin clave propia de API de IA en la ruta básica |
 | [FlareSolverr](../fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica |
+| [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
 | [playwright](../fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica |
 | [Playwright MCP](../fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
 | [Portainer CE](../fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Sin clave propia de API de IA en la ruta básica |

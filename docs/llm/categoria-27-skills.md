@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills de diseño para agentes
 
-Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `skills`. 21 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 27 «Skills de diseño, contenido y especialidades» › subcategoría `skills`. 22 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=27&sub=skills · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -39,6 +39,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `dream-loop` | Skill que combina Blender, generación de imágenes y revisión por un agente para… | 2 Intermedio | 43 | MIT (OSI permisiva) | sin grupo |
 | `motion-design-skill` | Skill con principios de ritmo, transiciones y composición del movimiento para… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
 | `creative-architect` | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y… | 1 Básico | 41 | MIT (OSI permisiva) | sin grupo |
+| `android-skills` | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -295,6 +296,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Prepara la dirección de arte y revisa modelo, coste y referencia antes de generar una pieza Éxito: Puedes identificar proveedor y resultado y decidir una iteración concreta
 - **Combina con:** `claude-code` [20/terminal], `hyperframes` [30/motores], `remotion` [30/motores]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. El README dice que el repositorio es privado, pero es público en GitHub: documentación desactualizada. Los proveedores son de pago. No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes.
+
+### Android Skills (`android-skills`)
+
+- **Repo:** https://github.com/android/skills · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Una colección oficial de instrucciones de desarrollo Android para asistentes compatibles con Agent Skills.
+- **Cuándo elegirlo:** Casos: Pedir una revisión de cómo maneja una pantalla los bordes del sistema.; Examinar en un proyecto de ejemplo por qué R8 conserva clases que se esperaban eliminar. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Kotlin; API de IA: no; Claude Code, Codex o Antigravity con skills o plugins habilitados.; Proyecto Android de prueba y herramientas indicadas por la skill seleccionada..
+- **Instalación (documentada en la fuente; no ejecutada):** `android skills add r8-analyzer --project=.` — fuente: https://developer.android.com/tools/agents/android-skills
+- **Primera prueba propuesta (no ejecutada):** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada. Éxito: El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
+- **Combina con:** `codex` [20/terminal]
+- **Riesgos y avisos:** Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

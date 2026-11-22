@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-17 · 921 repos curados · Documento 100% para IA.
+> Generado: 2026-11-22 · 961 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **921 repos** de IA y
+proyecto concreto. Tienes un menú curado de **961 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -216,7 +216,7 @@ Formato: `id` [role|exec|setup|inst] — one — tags:… — prov:… — tools
 - `guia` [D|loc|E|?] — Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo. — tags: learning
 - `tools` [D|loc|E|?] — Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar. — tags: skills
 
-### 1. Automatizar procesos y crear herramientas internas (18)
+### 1. Automatizar procesos y crear herramientas internas (19)
 Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.md`
 
 - `activepieces` [P|hyb|M|+] — Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flu — tags: automation,typescript,docker
@@ -224,21 +224,22 @@ Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.m
 - `appsmith` [P|loc|M|+] — Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. — tags: ui,automation,typescript,docker — alt: tooljet,budibase,nocodb
 - `baserow` [P|hyb|E|+] — Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashbo — tags: data,no-code,python,docker — alt: grist-core,teable,nocodb
 - `budibase` [P|loc|M|+] — Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. — tags: automation,agents,docker — alt: appsmith,tooljet,nocodb
+- `celery` [L|loc|M|?] — Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar
 - `dagger` [A|loc|M|+] — Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría O — tags: ci,containers
-- `dagster` [L|loc|M|+] — Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster  — tags: automation,data,python — alt: airflow,prefect,kestra
-- `grist-core` [P|hyb|E|+] — Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en  — tags: data,spreadsheet,docker,python — alt: baserow,teable,nocodb
+- `dagster` [L|loc|M|+] — Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster — tags: automation,data,python — alt: airflow,prefect,kestra
+- `grist-core` [P|hyb|E|+] — Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en — tags: data,spreadsheet,docker,python — alt: baserow,teable,nocodb
 - `huginn` [P|loc|M|+] — Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como u — tags: automation,ruby,docker — alt: node-red
 - `kestra` [P|loc|M|+] — Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. — tags: automation,data,java,docker — alt: windmill,trigger-dev,airflow,prefect,dagster
 - `nocodb` [P|loc|E|+] — Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas. — tags: data,automation,docker — alt: appsmith,budibase,grist-core,baserow,teable
 - `node-red` [P|loc|E|?] — Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. — tags: automation,javascript,docker — alt: huginn
 - `prefect` [L|loc|E|+] — Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programac — tags: automation,data,python — alt: airflow,dagster,kestra
-- `teable` [P|hyb|M|?] — Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y  — tags: data,no-code,typescript,docker — alt: grist-core,baserow,nocodb
-- `temporal` [P|loc|M|+] — Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores  — tags: automation,go,server,agents
+- `teable` [P|hyb|M|?] — Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y — tags: data,no-code,typescript,docker — alt: grist-core,baserow,nocodb
+- `temporal` [P|loc|M|+] — Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores — tags: automation,go,server,agents
 - `tooljet` [P|loc|M|+] — Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. — tags: ui,automation,docker — alt: appsmith,budibase
 - `trigger-dev` [P|hyb|M|?] — Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. — tags: automation,agents,typescript — alt: windmill,kestra
 - `windmill` [P|loc|M|+] — Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. — tags: automation,agents,rust,docker — alt: kestra,trigger-dev
 
-### 2. Skills, plugins y métodos para agentes (30)
+### 2. Skills, plugins y métodos para agentes (34)
 Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 
 - `agent-skills` [S|loc|E|+] — Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar — tags: skills,coding-agent — alt: superpowers
@@ -250,11 +251,13 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `awesome-agent-skills` [D|hyb|E|?] — Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comu — tags: skills,coding-agent,agents — alt: antigravity-awesome-skills,awesome-claude-skills
 - `awesome-agents` [D|hyb|E|?] — Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. — tags: catalogos
 - `awesome-claude-code` [D|cld|E|?] — Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alter — tags: coding-agent,skills,agents — prov: anthropic — alt: awesome-claude-skills
+- `awesome-claude-code-subagents` [D|loc|M|?] — Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio pr
 - `awesome-claude-skills` [D|cld|E|?] — Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para con — tags: skills,automation,coding-agent — prov: anthropic — alt: awesome-agent-skills,antigravity-awesome-skills,awesome-claude-code
 - `awesome-copilot` [S|cld|E|+] — Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub C — tags: skills,coding-agent,prompts,mcp
 - `bmad-method` [S|loc|E|+] — Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. — tags: coding-agent,skills,agents — alt: spec-kit
 - `book-to-skill` [S|loc|M|+] — Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trab — tags: metodologia,skill,python
 - `claude-code-hooks-mastery` [D|loc|E|?] — Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de t — tags: metodologia,reference,python
+- `claude-code-templates` [D|loc|M|?] — Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herra
 - `claude-plugins-official` [S|cld|E|?] — Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. — tags: skills,coding-agent,mcp — prov: anthropic — alt: wshobson-agents
 - `claude-token-efficient` [S|loc|E|+] — Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. — tags: metodologia,python — tools: claude-code
 - `codex-plugin-cc` [S|cld|E|+] — Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. — tags: metodologia,javascript — prov: openai — tools: claude-code
@@ -263,32 +266,35 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `gemini-skills` [S|hyb|E|+] — Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. — tags: catalogos,gemini,gemini-api,skills,python — prov: google
 - `google-skills` [S|loc|M|+] — Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatib — tags: catalogos,skill,python
 - `grok-plugin-claude-code` [S|cld|E|+] — Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. — tags: metodologia,ai-agents,claude-code,grok,grok-cli,plugin,xai,javascript — prov: xai — tools: claude-code
-- `gstack` [S|loc|M|+] — Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude  — tags: metodologia,skill,typescript — alt: superclaude-framework,superpowers,ecc
+- `gstack` [S|loc|M|+] — Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude — tags: metodologia,skill,typescript — alt: superclaude-framework,superpowers,ecc
+- `humans-md-plugins` [S|loc|M|?] — Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el p
 - `plugins` [D|loc|E|?] — Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. — tags: catalogos,reference,typescript
 - `ponytail` [S|loc|E|+] — Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribe — tags: skills,coding-agent
+- `shadcn-improve` [S|loc|M|?] — Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión
 - `skills` [S|cld|E|+] — Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plu — tags: skills,coding-agent
 - `spec-kit` [S|loc|E|+] — Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. — tags: coding-agent,skills,python — alt: bmad-method,claude-task-master
 - `superclaude-framework` [S|hyb|M|+] — Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. — tags: metodologia,python — tools: claude-code — alt: superpowers,ecc,gstack
 - `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills,superclaude-framework,ecc,gstack
 - `wshobson-agents` [S|hyb|E|+] — Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otr — tags: skills,coding-agent,agents,python — alt: claude-plugins-official,antigravity-awesome-skills,agency-agents
 
-### 3. Construir agentes y coordinar equipos de IA (34)
+### 3. Construir agentes y coordinar equipos de IA (36)
 Detalle: `REPO_MENU_cats/03-construir-agentes-y-coordinar-equipos-de-ia.md`
 
 - `adk-python` [L|hyb|E|+] — Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. — tags: agents,python — prov: google,openai,anthropic — alt: langgraph,openai-agents-python
-- `ag2` [L|cld|M|+] — Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API  — tags: automation,agents,python
+- `ag2` [L|cld|M|+] — Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API — tags: automation,agents,python
 - `agent-framework` [R|hyb|M|+] — Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Ke — tags: agents,python — prov: openai,anthropic
 - `agentscope` [L|hyb|M|+] — Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz e — tags: agents,python,mcp,framework
 - `agno` [R|hyb|E|?] — Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. — tags: agents,memory,python — prov: openai,anthropic,google,local — alt: crewai,langgraph
 - `autogpt` [P|hyb|H|+] — Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. — tags: agents,automation,python — prov: openai,anthropic — alt: sim,langflow
 - `awesome-langgraph` [D|cld|E|?] — Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. — tags: automation,agents,javascript
-- `camel` [L|hyb|E|+] — Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades  — tags: agents,python,research,framework
-- `chatdev` [A|hyb|M|+] — Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba  — tags: agents,python,research
-- `claude-agent-sdk-python` [L|hyb|M|+] — SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación  — tags: py,framework,python
+- `camel` [L|hyb|E|+] — Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades — tags: agents,python,research,framework
+- `chatdev` [A|hyb|M|+] — Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba — tags: agents,python,research
+- `claude-agent-sdk-python` [L|hyb|M|+] — SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación — tags: py,framework,python
 - `crewai` [L|cld|E|+] — Framework para orquestar "crews" de agentes con roles y tareas. — tags: automation,agents,python — alt: langgraph,agno,metagpt
 - `deepagents` [R|hyb|E|+] — Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. — tags: agents,python — prov: anthropic,openai — alt: openai-agents-python
 - `dify` [P|hyb|M|+] — Plataforma integral para construir apps de IA con backend y UI listos. — tags: automation,agents,python,docker — alt: sim,ragflow
 - `dspy` [L|hyb|M|+] — Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano. — tags: prompts,evaluation,python — prov: openai,anthropic,local — alt: promptfoo
+- `eve` [L|hyb|M|?] — Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes
 - `haystack` [L|hyb|M|+] — Framework de deepset para pipelines de RAG y agentes listos para producción. — tags: rag,agents,python — prov: openai,anthropic,local — alt: llama-index,langchain
 - `hermes-agent-self-evolution` [L|cld|M|+] — Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GE — tags: experimentos,python
 - `jev-fraud` [L|hyb|M|+] — Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude. — tags: experimentos,template,typescript
@@ -301,11 +307,12 @@ Detalle: `REPO_MENU_cats/03-construir-agentes-y-coordinar-equipos-de-ia.md`
 - `llm-council` [P|hyb|M|+] — "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. — tags: agents,python
 - `mastra` [L|hyb|E|+] — Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. — tags: agents,rag,typescript — prov: openai,anthropic,google,local — alt: langgraphjs,vercel-ai
 - `metagpt` [R|cld|M|+] — Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. — tags: py,agent,gpt,llm,metagpt,multi-agent,python — alt: crewai
-- `mirofish` [P|hyb|H|+] — Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar  — tags: agents,python
+- `mirofish` [P|hyb|H|+] — Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar — tags: agents,python
 - `openai-agents-python` [L|hyb|E|+] — SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. — tags: agents,python — prov: openai — alt: pydantic-ai,langgraph,smolagents,deepagents,adk-python
 - `openevolve` [R|cld|H|+] — Agente de codificación evolutivo que optimiza algoritmos por simulación genética. — tags: automation,agents,python
 - `openmanus` [A|hyb|M|+] — Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos media — tags: agents,python,browser
 - `pydantic-ai` [L|hyb|E|+] — Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. — tags: agents,python — prov: openai,anthropic,google,local — alt: openai-agents-python,smolagents,langgraph
+- `semantic-router` [L|hyb|M|?] — Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de
 - `sim` [P|hyb|M|+] — Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. — tags: agents,automation,typescript — prov: openai,anthropic,local — alt: langflow,dify,autogpt
 - `smolagents` [L|hyb|E|+] — Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. — tags: agents,python — prov: openai,local — alt: pydantic-ai,openai-agents-python
 - `vercel-ai` [L|hyb|E|+] — Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. — tags: agents,ui,typescript,react — prov: openai,anthropic,google,local — alt: langgraphjs,mastra
@@ -324,17 +331,17 @@ Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 - `defuddle` [L|loc|M|+] — Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. — tags: crawlers,library,typescript
 - `firecrawl` [P|cld|M|+] — Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio — tags: scraping,typescript,docker — alt: jina-reader
 - `freshrss` [P|loc|E|?] — Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción po — tags: research,rss,php,docker — alt: miniflux
-- `gallery-dl` [A|loc|E|+] — Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres  — tags: scraping,python,image,cli
-- `instaloader` [L|loc|E|+] — Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles,  — tags: vision,scraping,python
+- `gallery-dl` [A|loc|E|+] — Programa de línea de comandos para descargar galerías y colecciones de imágenes de muchos sitios, con nombres — tags: scraping,python,image,cli
+- `instaloader` [L|loc|E|+] — Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, — tags: vision,scraping,python
 - `jina-reader` [P|cld|E|+] — Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. — tags: scraping,rag,typescript — alt: firecrawl,crawl4ai
 - `katana` [A|loc|E|+] — Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con análisis de JavaScript, control de alc — tags: scraping,go,security,cli
 - `last30days-skill` [S|cld|E|+] — Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días — tags: research,skills,python — alt: social-media-research-skills
 - `llm-scraper` [L|hyb|E|+] — Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el — tags: scraping,typescript — alt: maxun
 - `maxun` [P|loc|M|+] — Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. — tags: scraping,automation,typescript — alt: scrapegraph-ai,llm-scraper
-- `miniflux` [P|loc|E|?] — Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más  — tags: research,rss,go,docker — alt: freshrss
+- `miniflux` [P|loc|E|?] — Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad, búsqueda de texto completo y más — tags: research,rss,go,docker — alt: freshrss
 - `rsshub` [P|loc|E|+] — Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia pública o autoalojada con Docker. — tags: research,rss,typescript,docker
 - `scrapegraph-ai` [L|hyb|M|+] — Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué e — tags: scraping,python — alt: maxun
-- `scrapling` [L|loc|M|+] — Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica  — tags: automation,scraping,python
+- `scrapling` [L|loc|M|+] — Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica — tags: automation,scraping,python
 - `scrapy` [L|loc|M|+] — Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesam — tags: scraping,python
 - `searxng` [P|loc|E|?] — Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. — tags: search,research,python,docker
 - `spotdl` [A|loc|E|+] — CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y las descarga con carátula, letras — tags: audio,python,cli
@@ -342,20 +349,22 @@ Detalle: `REPO_MENU_cats/04-buscar-extraer-y-monitorear-informaci-n-web.md`
 - `wallabag` [P|loc|M|+] — Aplicación autoalojada para guardar páginas web y leerlas más tarde sin distracciones, con apps móviles y exte — tags: research,read-later,php,docker
 - `yt-dlp` [A|loc|E|+] — Descargador de audio y video por línea de comandos compatible con miles de sitios. — tags: video,audio,scraping,python
 
-### 5. Conectar herramientas con MCP (25)
+### 5. Conectar herramientas con MCP (27)
 Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 
 - `annas-mcp` [R|hyb|M|?] — Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. — tags: servidores,annas-archive,cli,mcp-server,go
 - `awesome-mcp-clients` [D|loc|E|?] — Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes. — tags: mcp
-- `awesome-mcp-servers` [D|hyb|E|?] — Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos  — tags: automation,mcp
+- `awesome-mcp-servers` [D|hyb|E|?] — Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos — tags: automation,mcp
 - `aws-mcp` [R|loc|M|+] — Colección oficial de AWS Labs con decenas de servidores MCP para documentación, infraestructura como código, E — tags: mcp,python,cloud,aws
 - `blender-mcp` [R|loc|E|+] — Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. — tags: mcp,design,python — prov: mcp
 - `chrome-devtools-mcp` [R|loc|E|+] — Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. — tags: mcp,browser,typescript — prov: mcp — alt: playwright-mcp,browser-harness
+- `claude-context` [R|hyb|M|?] — Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un cone
 - `context7` [R|cld|E|+] — Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. — tags: mcp,docs,typescript — prov: mcp
 - `fastmcp` [L|loc|E|+] — La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. — tags: mcp,python — prov: mcp — alt: mcp-python-sdk
 - `figma-context-mcp` [R|hyb|E|?] — Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. — tags: mcp,design,ui,typescript — prov: mcp
 - `ghidramcp` [R|loc|M|+] — Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. — tags: servidores,mcp,java
 - `github-mcp-server` [R|hyb|E|+] — Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. — tags: mcp,code,go — prov: mcp
+- `ha-mcp` [R|loc|M|?] — Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones
 - `mcp` [D|hyb|M|?] — Directorio de servidores MCP oficiales de Google, ejemplos y orientación para desplegarlos en Google Cloud. — tags: mcp
 - `mcp-for-beginners` [D|loc|E|+] — Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. — tags: mcp,learning
 - `mcp-inspector` [A|loc|E|+] — Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. — tags: mcp,evaluation,typescript
@@ -371,21 +380,23 @@ Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 - `servers` [D|hyb|M|?] — Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enl — tags: mcp,typescript
 - `unity-mcp` [R|loc|M|?] — Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Un — tags: servidores,mcp,c
 
-### 6. Memoria, RAG y búsqueda de conocimiento (28)
+### 6. Memoria, RAG y búsqueda de conocimiento (30)
 Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 
 - `agentic-rag-for-dummies` [L|hyb|M|+] — Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. — tags: rag,template,jupyter-notebook — prov: local
-- `agentmemory` [L|hyb|E|+] — Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida  — tags: agents,memory,typescript — alt: engram,supermemory,claude-mem
+- `agentmemory` [L|hyb|E|+] — Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida — tags: agents,memory,typescript — alt: engram,supermemory,claude-mem
+- `chonkie` [L|hyb|M|?] — Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas
 - `chroma` [R|loc|E|+] — Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. — tags: vector-db,rag,rust — alt: qdrant,pgvector,milvus,faiss,lancedb
 - `claude-mem` [S|loc|E|+] — Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. — tags: memory,coding-agent,mcp,typescript — prov: anthropic,mcp — alt: engram,agentmemory
 - `cognee` [L|hyb|E|+] — Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. — tags: memory,rag,python — prov: openai,local — alt: graphiti,mem0,graphrag,letta
 - `dsh-noema` [L|loc|M|?] — Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. — tags: memoria,plugin,typescript
 - `engram` [R|loc|E|+] — Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. — tags: memory,mcp,coding-agent,go — prov: mcp — alt: claude-mem,agentmemory
 - `faiss` [L|loc|M|?] — Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. — tags: vector-db,python,cpp — alt: qdrant,chroma
+- `flagembedding` [L|loc|M|?] — Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de
 - `graphiti` [L|hyb|M|+] — Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. — tags: memory,rag,python — prov: openai,anthropic — alt: cognee,graphrag
 - `graphrag` [L|hyb|M|+] — Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lu — tags: rag,python — alt: graphiti,cognee,lightrag
 - `kotaemon` [A|hyb|M|+] — Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de G — tags: rag,python,docs,local
-- `lancedb` [L|loc|E|+] — Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL  — tags: vector-db,rag,rust,library — alt: chroma
+- `lancedb` [L|loc|E|+] — Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL — tags: vector-db,rag,rust,library — alt: chroma
 - `letta` [P|hyb|M|+] — Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente ree — tags: memory,agents,typescript — prov: openai,anthropic,local — alt: mem0,cognee
 - `lightrag` [L|hyb|M|+] — RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. — tags: rag,python — prov: openai,local — alt: graphrag,ragflow,pageindex
 - `meilisearch` [P|hyb|E|+] — Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a errat — tags: rag,search,rust,docker
@@ -399,27 +410,32 @@ Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 - `qdrant` [R|loc|E|+] — Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. — tags: vector-db,rag,rust,docker — alt: milvus,chroma,pgvector,faiss,weaviate
 - `ragflow` [P|loc|H|+] — Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. — tags: rag,docs,agents,docker — prov: openai,local — alt: dify,lightrag
 - `supermemory` [P|hyb|E|+] — Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. — tags: memory,rag,typescript — alt: mem0,agentmemory
-- `turbovec` [L|loc|E|+] — Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación  — tags: automation,vector-db,rust
+- `turbovec` [L|loc|E|+] — Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación — tags: automation,vector-db,rust
 - `txtai` [L|hyb|E|+] — Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base d — tags: rag,python,library,mcp
-- `weaviate` [P|hyb|M|+] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y  — tags: vector-db,rag,go,docker — alt: qdrant,milvus
+- `weaviate` [P|hyb|M|+] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y — tags: vector-db,rag,go,docker — alt: qdrant,milvus
 
-### 7. Entender código y comprobar su calidad (20)
+### 7. Entender código y comprobar su calidad (25)
 Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 
+- `apscheduler` [L|loc|M|?] — Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
 - `ast-grep` [A|loc|E|+] — CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. — tags: code,security,rust — alt: semgrep
 - `biome` [A|loc|E|+] — Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por — tags: code,javascript,typescript,rust
 - `cli` [A|cld|E|+] — CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. — tags: code,go
-- `codebase-memory-mcp` [R|loc|E|+] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para  — tags: code,mcp,memory — prov: mcp — alt: codegraph,gitnexus,serena,graphify
+- `codebase-memory-mcp` [R|loc|E|+] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para — tags: code,mcp,memory — prov: mcp — alt: codegraph,gitnexus,serena,graphify
 - `codegraph` [R|loc|E|+] — CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada arc — tags: code,typescript — alt: codebase-memory-mcp,serena,gitnexus,graphify
 - `floorplan` [S|loc|M|+] — Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un pr — tags: codigo,skill,javascript
 - `fzf` [A|loc|E|+] — Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cu — tags: cli,go,terminal
 - `gitleaks` [A|loc|E|+] — Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como h — tags: security,go,cli,code — alt: trufflehog
-- `gitnexus` [A|hyb|E|+] — Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar  — tags: code,typescript — alt: repomix,codebase-memory-mcp,serena,codegraph,graphify
+- `gitnexus` [A|hyb|E|+] — Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar — tags: code,typescript — alt: repomix,codebase-memory-mcp,serena,codegraph,graphify
 - `graphify` [R|hyb|M|+] — CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AS — tags: code,python — alt: codegraph,gitnexus,serena,codebase-memory-mcp
+- `hishel` [L|loc|M|?] — Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizab
 - `lazygit` [A|loc|E|+] — Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestió — tags: cli,go,git,terminal
+- `npkill` [A|loc|E|?] — Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de
 - `openai-python` [L|cld|E|+] — SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. — tags: code,python
-- `pre-commit` [A|loc|E|?] — Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y  — tags: code,python,cli,git
+- `pre-commit` [A|loc|E|?] — Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y — tags: code,python,cli,git
+- `pybreaker` [L|loc|M|?] — Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comp
 - `repomix` [A|loc|E|+] — Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. — tags: code,coding-agent,typescript — alt: gitnexus
+- `requests-cache` [L|loc|M|?] — Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un
 - `ripgrep` [A|loc|E|+] — Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocult — tags: cli,rust,code,search
 - `ruff` [A|loc|E|+] — Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, co — tags: code,python,rust,cli
 - `sonarqube` [P|loc|M|?] — Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidad — tags: code,java,security,docker — alt: semgrep
@@ -427,16 +443,18 @@ Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 - `tree-sitter` [L|loc|M|?] — Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. — tags: code,rust
 - `trufflehog` [A|loc|E|+] — Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y — tags: security,go,cli,code — alt: gitleaks
 
-### 8. Chats, modelos locales y espacios privados (31)
+### 8. Chats, modelos locales y espacios privados (33)
 Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 
 - `airllm` [R|loc|H|+] — Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus compon — tags: motores,engine,jupyter-notebook — prov: local
 - `anything-llm` [A|loc|E|?] — App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. — tags: rag,agents,local,javascript — prov: openai,anthropic,local — alt: open-webui,khoj,private-gpt,onyx
 - `chatbox` [A|hyb|E|+] — Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz comú — tags: chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek — alt: jan,nextchat,lobehub
 - `cherry-studio` [A|hyb|E|?] — App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. — tags: chatbot,agents,typescript — prov: openai,anthropic,google,local — alt: jan,lobehub
+- `claude-second-brain` [L|loc|M|?] — Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda lo
 - `exo` [R|loc|M|+] — Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina. — tags: inference,local,python — prov: local
 - `freetoken` [R|loc|H|+] — Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del pr — tags: motores,engine,python — prov: local
 - `hermes-desktop` [A|loc|E|+] — App de escritorio que envuelve al agente Hermes en una interfaz nativa. — tags: agents,ui,typescript
+- `inferssd` [R|loc|H|?] — Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memo
 - `jan` [A|loc|E|+] — Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma i — tags: chatbot,local,rust — prov: local,openai — alt: cherry-studio,textgen,chatbox
 - `khoj` [A|hyb|M|+] — Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. — tags: research,rag,agents,python — prov: openai,anthropic,local — alt: anything-llm,surfsense
 - `koboldcpp` [R|loc|E|+] — Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs c — tags: inference,cpp,local,app — alt: llamafile
@@ -449,7 +467,7 @@ Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 - `magnitude` [R|loc|H|+] — Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. — tags: motores,engine,rust — prov: local
 - `mlc-llm` [R|loc|H|+] — Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y na — tags: inference,python,local,model
 - `mlx-lm` [R|loc|E|+] — Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantizac — tags: inference,python,local,training
-- `nextchat` [A|hyb|E|?] — Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y  — tags: chatbot,typescript,app,mcp — alt: lobehub,chatbox
+- `nextchat` [A|hyb|E|?] — Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y — tags: chatbot,typescript,app,mcp — alt: lobehub,chatbox
 - `notebooklm-mcp-cli` [R|cld|E|+] — CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde termi — tags: mcp,notebooks,python
 - `notebooklm-py` [L|cld|E|+] — API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuen — tags: notebooks,research,python
 - `odysseus` [P|loc|H|+] — Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por age — tags: agents,local,python,docker
@@ -457,18 +475,19 @@ Detalle: `REPO_MENU_cats/08-chats-modelos-locales-y-espacios-privados.md`
 - `open-notebook` [A|loc|M|+] — Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y ge — tags: notebooks,research,typescript,docker — alt: deeptutor,surfsense
 - `open-webui` [A|loc|E|+] — Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. — tags: chatbot,local,rag,docker — prov: openai,local — alt: librechat,lobehub,anything-llm,textgen
 - `private-gpt` [P|loc|M|+] — Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. — tags: rag,local,python — prov: local,openai — alt: anything-llm
-- `sillytavern` [A|hyb|M|+] — Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y  — tags: chatbot,javascript,local,app
+- `sillytavern` [A|hyb|M|+] — Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y — tags: chatbot,javascript,local,app
 - `surfsense` [A|hyb|M|+] — Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. — tags: research,rag,notebooks,python — prov: openai,local — alt: open-notebook,khoj
 - `textgen` [A|loc|M|+] — App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. — tags: chatbot,local,inference,python — prov: local — alt: jan,open-webui
 - `transformers.js` [L|loc|M|+] — Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. — tags: motores,browser,javascript,transformers,webml
 
-### 9. Diseñar y construir interfaces web (32)
+### 9. Diseñar y construir interfaces web (33)
 Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 
 - `ai-website-cloner-template` [L|loc|M|+] — Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interf — tags: ia-ui,template,typescript
 - `ant-design` [L|loc|E|+] — Lenguaje de diseño empresarial y librería de componentes React de Ant Group. — tags: ui,react,typescript — alt: mui,ui
 - `assistant-ui` [L|loc|E|+] — Librería React y TypeScript para interfaces de chat con IA de calidad producción. — tags: ui,chatbot,react,typescript — alt: copilotkit
-- `chakra-ui` [L|loc|E|+] — Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con  — tags: ui,typescript,react,library — alt: mantine,mui
+- `astryx` [L|loc|M|?] — Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento des
+- `chakra-ui` [L|loc|E|+] — Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con — tags: ui,typescript,react,library — alt: mantine,mui
 - `copilotkit` [L|hyb|E|+] — Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. — tags: ui,agents,react,typescript — prov: openai,anthropic — alt: assistant-ui
 - `daisyui` [L|loc|E|+] — La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. — tags: ui,design,javascript — alt: ui
 - `excalidraw` [A|loc|E|?] — Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. — tags: design,docs,typescript — alt: tldraw,mermaid
@@ -490,7 +509,7 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `react-bits` [L|loc|E|+] — La mayor colección open source de componentes React animados e interactivos para webs llamativas. — tags: ui,react,javascript — alt: magicui
 - `screenshot-to-code` [A|cld|E|+] — Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. — tags: ui,vision,code,python — prov: openai,anthropic,google — alt: stitch-sdk
 - `stitch-sdk` [L|cld|E|+] — SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. — tags: ui,design,typescript — prov: google — alt: screenshot-to-code
-- `storybook` [A|loc|E|?] — Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React,  — tags: ui,typescript,javascript,docs
+- `storybook` [A|loc|E|?] — Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, — tags: ui,typescript,javascript,docs
 - `swr` [L|loc|E|?] — Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los reva — tags: ui,typescript — alt: tanstack-query
 - `tailwindcss` [L|loc|E|?] — Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directame — tags: ui,design,typescript
 - `tanstack-query` [L|loc|E|?] — Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, An — tags: frontend,data-fetching,cache,typescript — alt: swr
@@ -510,12 +529,12 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 - `evidence` [A|loc|E|+] — BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados — tags: dataviz,analytics,typescript,app
 - `gods-eye-view` [A|loc|M|+] — Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el na — tags: osint,app,javascript — alt: osiris
 - `grafana` [P|loc|E|?] — Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. — tags: observability,dataviz,typescript,docker
-- `kepler.gl` [A|loc|E|+] — Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente  — tags: dataviz,typescript,app,maps
-- `leaflet` [L|loc|E|+] — Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y  — tags: dataviz,javascript,library,maps — alt: maplibre
+- `kepler.gl` [A|loc|E|+] — Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente — tags: dataviz,typescript,app,maps
+- `leaflet` [L|loc|E|+] — Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y — tags: dataviz,javascript,library,maps — alt: maplibre
 - `maigret` [A|loc|E|+] — Recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayend — tags: osint,python,cli,security — alt: sherlock
-- `maplibre` [L|loc|E|?] — Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de  — tags: dataviz,typescript,library,maps — alt: leaflet
+- `maplibre` [L|loc|E|?] — Biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de — tags: dataviz,typescript,library,maps — alt: leaflet
 - `matomo` [P|loc|M|+] — Alternativa open source a Google Analytics con control total de los datos. — tags: analytics,php — alt: umami,plausible
-- `metabase` [P|hyb|M|+] — Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos  — tags: analytics,dataviz,docker — alt: superset,redash
+- `metabase` [P|hyb|M|+] — Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos — tags: analytics,dataviz,docker — alt: superset,redash
 - `odm` [A|loc|M|+] — Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. — tags: geoespacial,app,python
 - `osiris` [A|hyb|M|+] — Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. — tags: osint,typescript — alt: gods-eye-view
 - `plausible` [P|hyb|M|?] — Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. — tags: analytics,docker — alt: umami,matomo
@@ -529,7 +548,7 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 - `superset` [P|loc|M|+] — Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. — tags: analytics,dataviz,python,docker — alt: metabase,redash
 - `theharvester` [A|loc|E|+] — Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y nombres de un dominio desde buscadore — tags: osint,python,security,cli
 - `umami` [P|loc|E|+] — Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. — tags: analytics,typescript,docker — alt: plausible,matomo
-- `uplot` [L|loc|E|?] — Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a renderizar datos con Canvas y  — tags: dataviz,javascript
+- `uplot` [L|loc|E|?] — Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a renderizar datos con Canvas y — tags: dataviz,javascript
 - `webodm` [P|loc|H|+] — Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. — tags: geoespacial,server,python
 - `wrenai` [P|hyb|M|+] — BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. — tags: analytics,data,agents,python — prov: openai,local
 
@@ -556,7 +575,7 @@ Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 - `ffmpeg` [A|loc|E|?] — Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier forma — tags: video,audio,automation,cpp
 - `handbrake` [A|loc|E|?] — Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo — tags: video,c,app
 - `hunyuanvideo` [R|loc|H|+] — Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de infere — tags: video,inference,local,python — prov: local — alt: wan2-2,hunyuanvideo-1-5
-- `hunyuanvideo-1-5` [R|hyb|H|+] — Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de  — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,wan2-2
+- `hunyuanvideo-1-5` [R|hyb|H|+] — Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,wan2-2
 - `kdenlive` [A|loc|E|?] — Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por — tags: video,cpp,app,edicion — alt: shotcut,opencut
 - `lossless-cut` [A|loc|E|?] — App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. — tags: video,audio,ui,typescript
 - `ltx-2` [R|loc|H|+] — Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera víde — tags: video,python,model,local
@@ -589,14 +608,14 @@ Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 - `pdfding` [A|loc|E|+] — Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lec — tags: pdf,docker
 - `pdfmathtranslate` [A|hyb|E|+] — Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. — tags: pdf,docs,python — prov: openai,google,local
 - `stirling-pdf` [A|loc|E|+] — Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. — tags: pdf,docker — alt: pdfcraft
-- `surya` [R|loc|M|+] — OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de  — tags: ocr,python,pdf,model
+- `surya` [R|loc|M|+] — OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de — tags: ocr,python,pdf,model
 - `tesseract` [A|loc|E|+] — Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idio — tags: ocr,cpp — alt: paddleocr
-- `tika` [P|hyb|M|+] — Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown  — tags: docs,java,pdf,server — alt: xberg,unstructured
+- `tika` [P|hyb|M|+] — Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown — tags: docs,java,pdf,server — alt: xberg,unstructured
 - `unlimited-ocr` [L|loc|H|+] — Modelo de Baidu para parsear documentos largos de una sola pasada con visión. — tags: ocr,docs,python — alt: olmocr,paddleocr
 - `unstructured` [L|hyb|M|+] — ETL open source que transforma documentos complejos en datos estructurados para LLM. — tags: docs,data,python — alt: docling,xberg,tika
 - `xberg` [L|hyb|E|+] — Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de 100 formatos, con OCR, transcri — tags: docs,rust,pdf,mcp — alt: tika,unstructured
 
-### 14. Investigar finanzas y mercados (23)
+### 14. Investigar finanzas y mercados (25)
 Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 
 - `autohedge` [R|cld|H|+] — Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. — tags: finanzas,ai,blackrock,finance,goldmansachs,hedgefund,jpmorgan,ml
@@ -606,7 +625,7 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `daily-stock-analysis` [A|cld|M|+] — Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario. — tags: analytics,agents,python — prov: openai,google
 - `dexter` [A|cld|M|+] — Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. — tags: finanzas,typescript
 - `finceptterminal` [A|hyb|H|?] — Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. — tags: finanzas,ai-agents,algorithmic-trading,bloomberg-terminal,cpp,finance,financial-markets,fintech
-- `fingpt` [R|hyb|H|+] — Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis  — tags: finanzas,python,model,training
+- `fingpt` [R|hyb|H|+] — Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis — tags: finanzas,python,model,training
 - `finrl` [L|loc|H|+] — Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones. — tags: cuant,framework,jupyter-notebook — prov: local
 - `freqtrade` [A|loc|M|+] — Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simu — tags: bots,app,python
 - `hummingbot` [A|loc|M|+] — Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias config — tags: bots,app,python
@@ -614,7 +633,9 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `machine-learning-for-trading` [D|hyb|H|+] — Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,artificial-intelligence,backtesting,data-science,deep-learning,finance,investment
 - `nautilus-trader` [L|loc|M|+] — Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias. — tags: cuant,framework,rust
 - `open-sol-bot` [P|hyb|H|+] — Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. — tags: finanzas,blockchain,solana,telegram-bot,trader,transaction,python
-- `openbb` [L|loc|E|+] — Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a  — tags: finanzas,python,data,mcp
+- `openbb` [L|loc|E|+] — Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con licencia una vez y las expone a — tags: finanzas,python,data,mcp
+- `polyweather` [A|loc|E|?] — Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos
+- `prediction-market-backtesting` [L|loc|M|?] — Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias histó
 - `py-sdk` [L|loc|M|+] — SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondi — tags: bots,library,python
 - `qlib` [P|loc|H|+] — Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. — tags: finanzas,algorithmic-trading,auto-quant,deep-learning,finance,fintech,investment,machine-learning
 - `quantharness` [R|cld|M|+] — Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de t — tags: finanzas,agentic-ai,large-language-models,html
@@ -623,7 +644,7 @@ Detalle: `REPO_MENU_cats/14-investigar-finanzas-y-mercados.md`
 - `vibe-trading` [A|hyb|M|+] — Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. — tags: agentes,agent,python — prov: local
 - `yfinance` [L|loc|E|+] — Biblioteca Python no oficial para descargar datos de mercado y fundamentales de Yahoo! Finance en DataFrames d — tags: finanzas,python,library,data
 
-### 15. Organizar notas, archivos y servicios personales (50)
+### 15. Organizar notas, archivos y servicios personales (51)
 Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 
 - `40-questions` [D|loc|E|?] — Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones pe — tags: personal,reference
@@ -632,19 +653,20 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `age` [A|loc|E|+] — Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña y auditable. — tags: security
 - `ai-job-search` [S|loc|M|?] — Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de e — tags: personal,skill,python
 - `anytype-ts` [A|loc|E|+] — Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento pers — tags: notas,app,typescript — alt: appflowy
-- `appflowy` [A|hyb|E|?] — Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento  — tags: notas,app,dart — alt: anytype-ts
+- `appflowy` [A|hyb|E|?] — Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento — tags: notas,app,dart — alt: anytype-ts
 - `audiobookshelf` [P|loc|H|?] — Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reprodu — tags: lectura,server,javascript
 - `authentik` [P|loc|-|+] — IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. — tags: idp,sso — alt: keycloak
 - `bitwarden-clients` [A|loc|E|+] — Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información co — tags: privacidad,app,typescript
 - `calibre-web` [P|loc|E|+] — Aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuari — tags: self-hosted,python,server,reading — alt: kavita
 - `claude-obsidian` [S|loc|M|+] — Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsi — tags: notas,skill,python — alt: obsidian-second-brain
-- `cleanyourtv` [A|loc|M|+] — Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante  — tags: personal,app,python
+- `cleanyourtv` [A|loc|M|+] — Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante — tags: personal,app,python
 - `esphome` [A|loc|M|?] — Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros microcontroladores con archivos YAML y controlar — tags: automation,python,iot,cpp
-- `firefly-iii` [P|loc|M|+] — Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y  — tags: personal,php,self-hosted,finance — alt: actual
+- `firefly-iii` [P|loc|M|+] — Gestor autoalojado de finanzas personales con contabilidad de doble entrada, presupuestos, reglas, informes y — tags: personal,php,self-hosted,finance — alt: actual
 - `frigate` [P|loc|H|+] — Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado — tags: vision,python,docker,self-hosted
 - `ghostfolio` [P|loc|M|+] — Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimient — tags: personal,typescript,self-hosted,finance
 - `home-assistant` [P|loc|H|?] — Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. — tags: domotica,server,python
 - `immich` [P|loc|M|?] — Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google Photos, con copia automática d — tags: self-hosted,typescript,docker,image — alt: photoprism
+- `isponsorblocktv` [A|loc|E|?] — Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores c
 - `jellyfin` [P|loc|E|+] — Sistema multimedia libre para gestionar y transmitir películas, series, música y libros desde tu servidor, alt — tags: self-hosted,csharp,video,server
 - `joplin` [A|loc|E|?] — App de notas y tareas centrada en la privacidad, offline first, con sincronización cifrada de extremo a extrem — tags: notas,typescript,app — alt: trilium,siyuan,logseq
 - `jsoncanvas` [D|loc|E|?] — Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. — tags: notas,reference,javascript
@@ -675,15 +697,15 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `universal-android-debloater-next-generation` [A|loc|M|?] — Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplica — tags: personal,app,rust
 - `vault` [P|loc|-|?] — Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. BSL 1.1 desde 1.15+ (IBM); no es OSI open sou — tags: security
 - `vaultwarden` [P|loc|H|+] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
-- `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable  — tags: automation,typescript,iot,self-hosted
+- `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable — tags: automation,typescript,iot,self-hosted
 
 ### 16. Analizar software y comprobar su seguridad (141)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 
 - `aflplusplus` [A|loc|-|+] — Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. — tags: security
 - `aircrack-ng` [A|loc|M|+] — Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas. — tags: security
-- `aisvs` [D|loc|E|?] — Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos,  — tags: security,ai,standard,requirements
-- `amass` [A|loc|M|?] — Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT  — tags: security,osint,recon,go
+- `aisvs` [D|loc|E|?] — Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos verificables para datos, modelos, — tags: security,ai,standard,requirements
+- `amass` [A|loc|M|?] — Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts descubiertos a partir de OSINT — tags: security,osint,recon,go
 - `angr` [L|loc|M|+] — Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de — tags: reversing,library,python
 - `apktool` [A|loc|M|?] — Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicac — tags: reversing,app,java
 - `arkime` [A|loc|-|+] — Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red. — tags: security
@@ -693,7 +715,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `awesome-ai-reverse-engineering` [D|loc|E|?] — Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. — tags: referencias,reference
 - `awesome-reverse-engineering` [D|loc|E|?] — Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. — tags: referencias,reference,python
 - `bettercap` [A|loc|M|?] — Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita. — tags: security
-- `bla` [A|loc|M|+] — Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por  — tags: defensa,app,typescript
+- `bla` [A|loc|M|+] — Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por — tags: defensa,app,typescript
 - `bloodhound` [P|loc|M|?] — Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de — tags: pruebas,go,security,graph
 - `caido` [A|loc|E|?] — Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pag — tags: security — alt: zaproxy
 - `caldera` [A|loc|-|+] — Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controlada — tags: security,attack,purple
@@ -702,14 +724,14 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `certipy` [A|loc|M|+] — Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados. — tags: security
 - `cheatsheetseries` [D|loc|E|?] — Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores. — tags: security
 - `checkov` [A|loc|E|+] — SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y — tags: security,iac,terraform
-- `coraza` [L|loc|M|?] — WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como  — tags: security,waf,go,seclang — alt: modsecurity
+- `coraza` [L|loc|M|?] — WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como — tags: security,waf,go,seclang — alt: modsecurity
 - `coreruleset` [D|loc|M|?] — Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. — tags: security
 - `cosign` [A|loc|M|+] — Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC. — tags: security
 - `craft-anything` [A|hyb|M|+] — Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con age — tags: agentes,app,rust — prov: local
 - `crapi` [A|loc|M|?] — API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Securit — tags: security,api,training,vulnerable-app
 - `crowdsec` [P|loc|M|?] — IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Wind — tags: security,go,server,self-hosted — alt: fail2ban
 - `cybersecurity-skills` [S|hyb|E|+] — Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Co — tags: cybersecurity,seguridad,skills,claude-code,codex,comunidad
-- `defectdojo` [P|loc|M|+] — Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos  — tags: security,vulnerability-management,devsecops,aspm,python
+- `defectdojo` [P|loc|M|+] — Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos — tags: security,vulnerability-management,devsecops,aspm,python
 - `defending-code-reference-harness` [S|cld|M|+] — Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilid — tags: security,skills,coding-agent — prov: anthropic
 - `dep-scan` [A|loc|E|+] — Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SB — tags: security,sca,sbom,vex,python
 - `dependency-check` [A|loc|E|+] — Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, Jav — tags: security,sca,dependencies,cve,java
@@ -717,13 +739,13 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `detection-rules` [D|loc|M|+] — Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. — tags: security
 - `dirsearch` [A|loc|E|+] — Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio. — tags: security — alt: gobuster,feroxbuster
 - `dnspy` [A|loc|E|+] — Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. — tags: depuracion,app,c
-- `dnsx` [A|loc|E|+] — Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder  — tags: security
+- `dnsx` [A|loc|E|+] — Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder — tags: security
 - `empire` [A|loc|-|+] — Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. — tags: security — alt: mythic,sliver
 - `evilginx2` [A|loc|-|?] — Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en simulaciones de ingeniería soci — tags: security,phishing,redteam
 - `fail2ban` [A|loc|M|+] — Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. — tags: security — alt: crowdsec
 - `falco` [A|loc|-|?] — Runtime security para contenedores y Linux: reglas que alertan sobre syscalls anómalas en nodos y clústeres Ku — tags: security,k8s,runtime
 - `feroxbuster` [A|loc|E|+] — Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. — tags: security — alt: gobuster,dirsearch,ffuf
-- `ffuf` [A|loc|E|+] — Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo  — tags: pruebas,go,security,cli — alt: gobuster,feroxbuster
+- `ffuf` [A|loc|E|+] — Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo — tags: pruebas,go,security,cli — alt: gobuster,feroxbuster
 - `frida` [A|loc|M|?] — Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su e — tags: reversing,app,meson
 - `garak` [A|hyb|M|+] — Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucina — tags: security,llm,python,evaluation
 - `ghidra` [A|loc|M|+] — Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. — tags: reversing,app,java — alt: radare2
@@ -735,7 +757,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `hayabusa` [A|loc|E|?] — Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR. — tags: security
 - `httpx` [A|loc|E|+] — Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para f — tags: security,http,recon,go — alt: naabu
 - `ilspy` [A|loc|E|?] — Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles. — tags: reversing,app,c
-- `imhex` [A|loc|E|+] — Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante  — tags: reversing,app,c
+- `imhex` [A|loc|E|+] — Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante — tags: reversing,app,c
 - `impacket` [L|loc|M|+] — Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Act — tags: security,ad,python,library
 - `interactsh` [A|loc|M|+] — Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP. — tags: security
 - `jadx` [A|loc|M|+] — Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android. — tags: reversing,app,java
@@ -772,7 +794,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `owasp-java-encoder` [L|loc|E|?] — Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI) que previene XSS, sin dependenci — tags: security,xss,encoding,java
 - `owasp-llm-top10` [D|loc|E|?] — Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de prompts, fuga de datos, agencia e — tags: security,llm,genai,awareness
 - `owasp-top10` [D|loc|E|?] — Documento de concienciación de OWASP con los diez riesgos más críticos en aplicaciones web, con ejemplos, prev — tags: security,awareness,web,standard
-- `owtf` [A|loc|M|+] — Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde  — tags: security,pentest,web,python
+- `owtf` [A|loc|M|+] — Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde — tags: security,pentest,web,python
 - `pacu` [A|loc|M|+] — Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas. — tags: security
 - `payloadsallthethings` [D|loc|E|?] — Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest. — tags: security,web,cheatsheet — alt: seclists
 - `peass-ng` [A|loc|E|?] — LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS — tags: security,privesc
@@ -784,7 +806,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `raddebugger` [A|loc|E|?] — Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas. — tags: depuracion,app,c
 - `rea` [S|loc|M|+] — Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de c — tags: agentes,skill,typescript
 - `responder` [A|loc|M|+] — Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio. — tags: security
-- `rizin` [A|loc|M|+] — Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones  — tags: reversing,app,c — alt: radare2
+- `rizin` [A|loc|M|+] — Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones — tags: reversing,app,c — alt: radare2
 - `rubeus` [A|loc|M|?] — Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados. — tags: security
 - `rustscan` [A|loc|E|+] — Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap para el detalle de servicios. — tags: security
 - `scubagear` [A|loc|M|+] — Auditoría PowerShell de configuración Microsoft 365 (CISA SCuBA) contra baselines de seguridad. — tags: security
@@ -807,7 +829,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `syft` [A|loc|E|+] — Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes para alimentar Grype u otros scan — tags: security — alt: cdxgen
 - `syzkaller` [A|loc|-|+] — Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada. — tags: security
 - `thc-hydra` [A|loc|E|+] — Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con autorización explícita. — tags: security
-- `threat-dragon` [A|loc|E|+] — Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en  — tags: security,threat-modeling,stride,javascript — alt: pytm
+- `threat-dragon` [A|loc|E|+] — Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en — tags: security,threat-modeling,stride,javascript — alt: pytm
 - `trivy` [A|loc|E|+] — Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, r — tags: security,go,cli,devops — alt: grype
 - `velociraptor` [A|loc|-|+] — EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS. — tags: security,ir,edr
 - `volatility3` [A|loc|M|+] — Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para procesos, redes y malware. — tags: security,forensics,memory
@@ -827,19 +849,19 @@ Detalle: `REPO_MENU_cats/17-whatsapp-mensajer-a-y-chatbots.md`
 
 - `baileys` [L|loc|E|?] — Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. — tags: whatsapp,chatbot,typescript — alt: whatsapp-web-js,waha
 - `botpress` [L|hyb|M|+] — Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. — tags: chatbot,agents,typescript
-- `discord-js` [L|loc|E|+] — Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST  — tags: chatbots,javascript,library,discord
+- `discord-js` [L|loc|E|+] — Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST — tags: chatbots,javascript,library,discord
 - `element-web` [A|loc|M|+] — Cliente web Matrix (Element): chats, salas y cifrado E2E contra un homeserver como Synapse. — tags: matrix,chat
 - `evolution-api` [P|loc|H|+] — API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. — tags: automation,whatsapp,typescript,docker — alt: whatsapp-web-js,waha
 - `fluxer` [P|hyb|M|+] — Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de aloj — tags: whatsapp,chatbot,typescript
 - `mattermost` [P|loc|M|?] — Plataforma de colaboración autoalojada y open core, alternativa a Slack: chat, automatización de flujos, llama — tags: chat,self-hosted,go,server — alt: rocket-chat,zulip
 - `openwa` [P|loc|E|+] — Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndhar — tags: whatsapp,chatbot,typescript
-- `python-telegram-bot` [L|loc|E|+] — Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y  — tags: chatbots,python,library,telegram
+- `python-telegram-bot` [L|loc|E|+] — Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y — tags: chatbots,python,library,telegram
 - `rocket-chat` [P|loc|M|+] — Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, om — tags: chat,self-hosted,typescript,server — alt: mattermost,zulip
-- `signal-cli` [A|loc|M|?] — Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir  — tags: messaging,java,cli
-- `synapse` [P|loc|H|?] — Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que  — tags: chat,python,self-hosted,server
+- `signal-cli` [A|loc|M|?] — Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir — tags: messaging,java,cli
+- `synapse` [P|loc|H|?] — Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que — tags: chat,python,self-hosted,server
 - `typebot` [P|loc|M|+] — Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. — tags: chatbot,automation,typescript
 - `waha` [P|loc|E|+] — API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. — tags: whatsapp,automation,docker — alt: evolution-api,whatsapp-web-js,baileys
-- `whatsapp-agentkit` [S|hyb|E|+] — Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita  — tags: agents,automation,python
+- `whatsapp-agentkit` [S|hyb|E|+] — Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita — tags: agents,automation,python
 - `whatsapp-web-js` [L|loc|E|+] — Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. — tags: whatsapp,chatbot,javascript — alt: baileys,waha,evolution-api
 - `whatsmeow` [L|hyb|M|?] — Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. — tags: whatsapp,go,golang,whatsapp-web
 - `zulip` [P|loc|-|+] — Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. — tags: chat,self-hosted — alt: mattermost,rocket-chat
@@ -849,7 +871,7 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 
 - `cal.diy` [P|hyb|H|+] — Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. — tags: motores,next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss — alt: easyappointments
 - `chatwoot` [P|loc|H|?] — Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, e — tags: automation,crm,ruby,docker
-- `cloud-mail` [P|loc|H|?] — Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un  — tags: marketing,server,javascript
+- `cloud-mail` [P|loc|H|?] — Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un — tags: marketing,server,javascript
 - `compai-crm` [P|cld|H|+] — CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. — tags: crm,typescript
 - `easyappointments` [P|loc|M|+] — Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedore — tags: booking,php,self-hosted,server — alt: cal.diy
 - `erpnext` [P|loc|H|+] — ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. — tags: crm,python — alt: odoo
@@ -870,10 +892,10 @@ Detalle: `REPO_MENU_cats/18-crm-ventas-y-marketing.md`
 ### 19. Aprender IA y escribir mejores prompts (30)
 Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 
-- `12-factor-agents` [D|hyb|E|?] — Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12  — tags: agents,learning,prompts,typescript
+- `12-factor-agents` [D|hyb|E|?] — Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 — tags: agents,learning,prompts,typescript
 - `500-ai-agents-projects` [D|hyb|E|+] — Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas. — tags: guias,ai-agents,genai,python
 - `agents-course` [D|loc|E|?] — Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaI — tags: learning,agents,python
-- `agents-towards-production` [D|cld|M|+] — Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad,  — tags: agents,learning,notebooks,python — prov: openai,local
+- `agents-towards-production` [D|cld|M|+] — Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, — tags: agents,learning,notebooks,python — prov: openai,local
 - `ai-agents-for-beginners` [D|cld|M|?] — Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, tra — tags: agents,learning,notebooks,python — prov: openai,local
 - `ai-engineering-hub` [D|hyb|E|?] — Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificia — tags: guias,agents,ai,llms,machine-learning,mcp,rag,jupyter notebook
 - `annotated-dl-papers` [D|loc|E|+] — Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con notas explicativas lado a lado: — tags: learning,python,pytorch
@@ -889,7 +911,7 @@ Detalle: `REPO_MENU_cats/19-aprender-ia-y-escribir-mejores-prompts.md`
 - `generative-ai-for-beginners` [D|cld|E|?] — Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificia — tags: learning,prompts,python — alt: llm-course
 - `how-to-train-your-gpt` [D|loc|E|+] — Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librerí — tags: learning
 - `llm-course` [D|loc|E|?] — Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. — tags: learning,training,notebooks — alt: llms-from-scratch,generative-ai-for-beginners
-- `llm.c` [L|loc|H|?] — Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados,  — tags: learning
+- `llm.c` [L|loc|H|?] — Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, — tags: learning
 - `llms-from-scratch` [D|loc|M|+] — Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. — tags: learning,training,python — alt: llm-course
 - `loop-engineering` [S|loc|E|+] — Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. — tags: coding-agent,skills,typescript
 - `ml-for-beginners` [D|loc|E|+] — Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning clásico, con cuestionarios, en Py — tags: learning,notebooks,python
@@ -924,9 +946,9 @@ Detalle: `REPO_MENU_cats/20-programar-con-agentes-de-c-digo.md`
 - `openidea` [A|loc|E|?] — Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguaje — tags: coding,app,typescript
 - `qwen-code` [A|hyb|E|+] — Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI, Anthropic, Gemini, Qwen o modelos locale — tags: coding,agent,cli,typescript — alt: gemini-cli
 - `t3code` [A|loc|E|+] — Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. — tags: coding-agent,ui,typescript — alt: opencode-manager
-- `zed` [A|hyb|E|+] — Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada  — tags: editor,rust,coding,app
+- `zed` [A|hyb|E|+] — Editor de código de alto rendimiento y multijugador, de los creadores de Atom y Tree-sitter, con IA integrada — tags: editor,rust,coding,app
 
-### 21. Asistentes e investigación con agentes (17)
+### 21. Asistentes e investigación con agentes (18)
 Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
 
 - `agentes-chat` [A|hyb|M|+] — Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas — tags: asistentes,agent,typescript
@@ -936,24 +958,25 @@ Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
 - `gpt-researcher` [P|hyb|M|+] — Agente autónomo que investiga en línea y consolida reportes citados y estructurados. — tags: automation,research,python,docker — alt: storm,vane,local-deep-research
 - `hello-halo` [A|hyb|E|+] — Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores AP — tags: asistentes,agent,typescript
 - `hermes-agent` [A|loc|M|+] — Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales con — tags: agents,python — alt: openclaw,mercury-agent
-- `local-deep-research` [P|hyb|M|+] — Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes  — tags: research,academia,anthropic,arxiv,brave,deep-research,encryption,home-automation — alt: gpt-researcher
+- `local-deep-research` [P|hyb|M|+] — Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes — tags: research,academia,anthropic,arxiv,brave,deep-research,encryption,home-automation — alt: gpt-researcher
 - `mercury-agent` [A|hyb|E|+] — Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. — tags: agents,chatbot,typescript — alt: openclaw,hermes-agent
 - `multica` [P|hyb|M|+] — Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. — tags: agents,go — alt: paperclip
 - `openbot` [A|hyb|H|+] — Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y audito — tags: agents,computer-use,ag-ui,mcp,typescript — prov: openai,anthropic,google,local — alt: opendots
 - `openclaw` [A|hyb|M|+] — Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. — tags: agents,chatbot,typescript — prov: anthropic,openai,local — alt: hermes-agent,mercury-agent
 - `opendots` [A|hyb|M|+] — Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente — tags: asistentes,agent,typescript — alt: openbot
+- `openjarvis` [A|hyb|M|?] — Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para t
 - `paperclip` [P|hyb|H|+] — Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. — tags: asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance — alt: multica
 - `ruflo` [P|hyb|H|+] — Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude — tags: automation,agents,typescript
 - `social-media-agent` [R|cld|M|+] — Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de pu — tags: asistentes,typescript
 - `storm` [R|hyb|M|+] — Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. — tags: research,agents,python — prov: openai — alt: gpt-researcher
 
-### 22. Infraestructura, despliegue y herramientas para agentes (26)
+### 22. Infraestructura, despliegue y herramientas para agentes (27)
 Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agentes.md`
 
 - `agent-desktop` [A|loc|M|+] — CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. — tags: infra,accessibility,accessibility-api,ai-agents,automation,cli,computer-use,computer-use-agent
 - `agent-protocol` [D|loc|E|?] — Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. — tags: agents,python
 - `appwrite` [P|loc|M|+] — Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenami — tags: backend,self-hosted,docker,mcp — alt: supabase
-- `caddy` [P|loc|E|+] — Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y  — tags: web,go,self-hosted,server — alt: traefik
+- `caddy` [P|loc|E|+] — Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y — tags: web,go,self-hosted,server — alt: traefik
 - `casaos` [P|loc|H|+] — Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos doméstic — tags: infraestructura,server,go — alt: coolify
 - `claude-task-master` [A|hyb|M|+] — Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. — tags: infra,agent,javascript — alt: spec-kit
 - `composio` [P|cld|E|+] — Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps real — tags: agents,mcp,automation,typescript — prov: openai,anthropic,mcp
@@ -965,6 +988,7 @@ Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agent
 - `freedomain` [D|cld|E|?] — Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. — tags: recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
 - `frp` [A|loc|M|?] — Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTT — tags: network,go,self-hosted,cli
 - `headscale` [P|loc|M|?] — Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada Wir — tags: network,go,self-hosted,vpn — alt: netbird
+- `libretranslate` [P|loc|M|+] — Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Ar — tags: traducción,argos,autoalojado — prov: local
 - `masterdnsvpn` [A|hyb|M|+] — Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. — tags: redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
 - `nemoclaw` [P|hyb|H|+] — Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. — tags: agents,security,typescript — alt: sandbox
 - `netbird` [P|loc|M|+] — Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nu — tags: network,go,self-hosted,vpn — alt: headscale
@@ -977,27 +1001,31 @@ Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agent
 - `uptime-kuma` [P|loc|E|+] — Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 c — tags: monitoring,self-hosted,javascript,docker
 - `wg-easy` [P|loc|E|+] — La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadíst — tags: network,self-hosted,docker,vpn
 
-### 23. Operar, evaluar y medir modelos de IA (26)
+### 23. Operar, evaluar y medir modelos de IA (30)
 Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 
 - `backdoor` [R|hyb|M|+] — Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. — tags: serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama — alt: omniroute,claude-code-router,litellm
 - `bentoml` [L|loc|M|+] — Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes D — tags: serving,python,ml,docker
+- `ccusage` [A|loc|M|+] — Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus ter — tags: consumo,tokens,costos
 - `claude-code-router` [P|hyb|H|+] — Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control lo — tags: serving,server,typescript — alt: omniroute,backdoor,litellm
 - `claude-code-usage-monitor` [A|loc|M|+] — Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible — tags: observabilidad,app,python
 - `deepeval` [L|hyb|E|+] — Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. — tags: evaluation,python — prov: openai — alt: ragas,promptfoo
+- `gptcache` [L|hyb|M|?] — Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación
 - `gpustack` [P|loc|H|+] — Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compa — tags: serving,python,gpu,self-hosted
 - `guardrails` [L|hyb|M|+] — Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. — tags: security,chatbot,python
-- `headroom` [L|hyb|E|+] — Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder  — tags: automation,llmops,python — alt: rtk
+- `headroom` [L|hyb|E|+] — Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder — tags: automation,llmops,python — alt: rtk
 - `helicone` [P|loc|M|+] — Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestion — tags: observability,typescript,llm,self-hosted — alt: langfuse
 - `langfuse` [P|hyb|M|+] — Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llama — tags: automation,observability,typescript,docker — alt: phoenix,opik,mlflow,helicone
 - `litellm` [L|hyb|E|+] — Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato d — tags: inference,llmops,python,docker — alt: omniroute,claude-code-router,backdoor
+- `llmlingua` [L|loc|M|?] — Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el
 - `lm-eval-harness` [L|hyb|M|+] — Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends — tags: evaluation,python,llm,benchmark
-- `loguru` [L|loc|E|+] — Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin  — tags: observability,evaluation,python
+- `loguru` [L|loc|E|+] — Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin — tags: observability,evaluation,python
 - `mlflow` [P|loc|E|+] — Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. — tags: observability,training,evaluation,python — alt: langfuse
 - `omniroute` [P|hyb|H|+] — Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acces — tags: serving,server,typescript — prov: local — alt: claude-code-router,backdoor,litellm
 - `openllmetry` [L|loc|E|+] — Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vect — tags: observability,python,llm,opentelemetry
 - `opik` [P|loc|M|+] — Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. — tags: observability,evaluation,python — alt: langfuse,phoenix
 - `phoenix` [P|loc|E|+] — Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. — tags: observability,evaluation,python — alt: langfuse,opik
+- `portkey-gateway` [P|hyb|H|?] — Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos
 - `promptfoo` [A|loc|E|+] — CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. — tags: evaluation,security,typescript — prov: openai,anthropic,google,local — alt: deepeval,ragas,dspy
 - `ragas` [L|hyb|E|+] — Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. — tags: evaluation,rag,python — prov: openai — alt: deepeval,promptfoo
 - `ray` [L|loc|M|+] — Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, e — tags: distributed,python,serving,ml
@@ -1010,11 +1038,11 @@ Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 ### 24. Modelos abiertos y entrenamiento (25)
 Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 
-- `accelerate` [L|loc|E|+] — Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y  — tags: training,python,pytorch
+- `accelerate` [L|loc|E|+] — Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y — tags: training,python,pytorch
 - `axolotl` [L|loc|H|+] — Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimod — tags: training,python,llm,gpu — alt: torchtune,llama-factory,unsloth
 - `bionemo-recipes` [D|loc|H|?] — Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. — tags: entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
 - `cosmos` [R|hyb|H|?] — Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos — tags: inference
-- `deepseek-v3` [R|hyb|H|+] — Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su  — tags: llm,inference,python
+- `deepseek-v3` [R|hyb|H|+] — Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su — tags: llm,inference,python
 - `deepspeed` [L|loc|H|+] — Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descar — tags: training,python,gpu,distributed
 - `gemma` [L|loc|H|+] — Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo — tags: model,python,jax,llm
 - `jax` [L|loc|M|+] — Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y — tags: ml,python,library,numerical — alt: pytorch,tensorflow
@@ -1030,7 +1058,7 @@ Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 - `scikit-learn` [L|loc|E|+] — La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimens — tags: ml,python,library,data
 - `tensorflow` [L|loc|H|+] — Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entor — tags: entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python — alt: pytorch,jax
 - `timesfm` [L|loc|M|+] — Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por v — tags: data,analytics,python
-- `torchtune` [L|loc|H|+] — Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y  — tags: training,python,pytorch,llm — alt: axolotl,llama-factory,unsloth
+- `torchtune` [L|loc|H|+] — Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y — tags: training,python,pytorch,llm — alt: axolotl,llama-factory,unsloth
 - `transformers` [L|loc|E|+] — Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. — tags: training,inference,python
 - `trl` [L|loc|M|+] — Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. — tags: training,python
 - `unsloth` [A|loc|M|+] — App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcional — tags: training,local,python — prov: local — alt: llama-factory,axolotl,torchtune
@@ -1063,13 +1091,13 @@ Detalle: `REPO_MENU_cats/25-procesar-datos-y-trabajar-con-notebooks.md`
 - `spark` [R|loc|-|?] — Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine l — tags: data,bigdata,sql,streaming
 - `streamlit` [L|loc|E|+] — Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin t — tags: ui,dataviz,python — alt: gradio,reflex,nicegui,panel
 
-### 26. Animación, gráficos y creación 3D (28)
+### 26. Animación, gráficos y creación 3D (32)
 Detalle: `REPO_MENU_cats/26-animaci-n-gr-ficos-y-creaci-n-3d.md`
 
 - `animejs` [L|loc|E|?] — Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. — tags: ui,design,javascript — alt: gsap,motion
 - `awesome-cad` [D|loc|E|?] — Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialida — tags: creacion-3d,reference
-- `babylonjs` [L|loc|E|+] — Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos  — tags: javascript,3d,webgl,webxr — alt: three.js,playcanvas
-- `bevy` [L|loc|M|+] — Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones  — tags: rust,gamedev,ecs,3d — alt: godot
+- `babylonjs` [L|loc|E|+] — Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos — tags: javascript,3d,webgl,webxr — alt: three.js,playcanvas
+- `bevy` [L|loc|M|+] — Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o Apache-2.0), modular y con funciones — tags: rust,gamedev,ecs,3d — alt: godot
 - `blender` [A|loc|E|?] — Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. — tags: creacion-3d,app,c
 - `filament` [L|loc|M|?] — Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio — tags: creacion-3d,library,c
 - `freecad` [A|loc|E|?] — Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con plan — tags: cad,3d,cpp,app
@@ -1078,7 +1106,9 @@ Detalle: `REPO_MENU_cats/26-animaci-n-gr-ficos-y-creaci-n-3d.md`
 - `gsap` [L|loc|M|+] — Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincro — tags: ui,design,javascript — alt: animejs
 - `meshoptimizer` [L|loc|M|+] — Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. — tags: creacion-3d,library,c
 - `motion` [L|loc|E|+] — Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteraccio — tags: ui,design,typescript — alt: animejs
+- `motionbricks` [R|loc|H|?] — Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostr
 - `mujoco` [L|loc|M|+] — Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, bi — tags: simulation,robotics,physics,python
+- `openreality` [R|loc|M|?] — Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucció
 - `openscad` [A|loc|E|?] — CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (S — tags: cad,3d,code,app
 - `ozz-animation` [L|loc|M|?] — Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicacione — tags: creacion-3d,library,c
 - `pencil` [A|loc|E|?] — Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. — tags: edicion,app,c
@@ -1089,20 +1119,24 @@ Detalle: `REPO_MENU_cats/26-animaci-n-gr-ficos-y-creaci-n-3d.md`
 - `react-three-fiber` [L|loc|M|+] — Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. — tags: ui,design,typescript
 - `react-three-rapier` [L|loc|M|?] — Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales — tags: animacion,library,typescript
 - `regl` [L|loc|M|+] — Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicac — tags: animacion,library,javascript
+- `robotics-antigravity-plugin` [S|hyb|M|?] — Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulac
 - `scenejs` [L|loc|M|+] — Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. — tags: animacion,library,typescript
 - `three.js` [L|loc|M|+] — Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. — tags: ui,design,javascript — alt: babylonjs,playcanvas
+- `video2threejs` [D|loc|M|?] — Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
 - `warp` [L|loc|H|+] — Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. — tags: entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
 - `webgl-noise` [L|loc|M|?] — Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo rea — tags: animacion,library,c
 - `zdog` [L|loc|M|+] — Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. — tags: animacion,library,javascript
 
-### 27. Skills de diseño, contenido y especialidades (36)
+### 27. Skills de diseño, contenido y especialidades (40)
 Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 
 - `3dviz-pro-max` [S|loc|M|+] — Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. — tags: skills,skill,javascript — alt: threejs-skills
 - `agency-agents` [S|hyb|E|+] — Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Co — tags: agents,prompts,skills,coding-agent — alt: wshobson-agents
 - `anatomy` [S|loc|M|+] — Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales op — tags: skills,skill,javascript
+- `android-skills` [S|loc|M|+] — Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicacion — tags: android,skills,móvil
 - `arcads-claude-code` [S|cld|M|+] — Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, S — tags: video,image,skills,python
 - `blender-skills` [S|loc|M|+] — Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexio — tags: creacion-3d,skill,typescript
+- `claude-ads` [S|loc|M|?] — Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.
 - `claude-seo` [S|loc|M|+] — Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de u — tags: dominio,skill,python — alt: geo-seo-claude
 - `creative-architect` [S|hyb|E|+] — Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de ima — tags: direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect — prov: anthropic,openai
 - `design-dna` [S|loc|M|+] — Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo cohe — tags: skills,skill,javascript
@@ -1117,15 +1151,17 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `humanizer` [S|hyb|E|+] — Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. — tags: skills,prompts,docs — alt: stop-slop,no-ai-slop
 - `i-have-adhd` [S|loc|M|+] — Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. — tags: escritura,skill,python
 - `impeccable` [S|cld|E|+] — Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. — tags: skills,design,rust — alt: ui-ux-pro-max-skill,taste-skill,hallmark
-- `instagram-agent-skill` [S|loc|M|+] — Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de  — tags: dominio,skill,python
+- `instagram-agent-skill` [S|loc|M|+] — Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de — tags: dominio,skill,python
+- `knowledge-work-plugins` [S|loc|M|?] — Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organiza
 - `linkedin-agent-skill` [S|loc|M|+] — Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de Linke — tags: dominio,skill,python
 - `logo-design-skill` [S|loc|M|+] — Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de dise — tags: skills,skill,html
-- `marketingskills` [S|hyb|E|+] — Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code,  — tags: skills,analytics,email,search
+- `marketingskills` [S|hyb|E|+] — Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, — tags: skills,analytics,email,search
 - `minimalist-entrepreneur-skills` [S|loc|M|+] — Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con u — tags: dominio,skill,reference
 - `modern-web-guidance` [S|loc|M|+] — Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. — tags: skills,skill,reference
 - `motion-design-skill` [S|loc|M|+] — Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interface — tags: skills,skill,reference
 - `no-ai-slop` [S|loc|M|+] — Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con — tags: escritura,skill,python — alt: humanizer,stop-slop
 - `scientific-agent-skills` [S|loc|M|+] — Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas d — tags: dominio,skill,python
+- `shopify-ai-toolkit` [S|loc|M|?] — Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabr
 - `skills-emil` [S|cld|E|+] — Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrolla — tags: skills,design
 - `social-media-research-skills` [S|cld|M|+] — Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. — tags: dominio,agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor — tools: claude-code,codex — alt: last30days-skill
 - `stitch-skills` [S|cld|E|+] — Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. — tags: skills,design,ui
@@ -1133,12 +1169,12 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `taste-skill` [S|cld|E|+] — Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movie — tags: skills,design,javascript — alt: ui-ux-pro-max-skill,impeccable,hallmark
 - `threejs-game-skills` [S|loc|M|+] — Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros o — tags: skills,skill,python
 - `threejs-skills` [S|loc|M|+] — Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. — tags: skills,skill,reference — alt: 3dviz-pro-max
-- `ui-ux-pro-max-skill` [S|cld|E|+] — Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para  — tags: skills,design,python — alt: taste-skill,impeccable,hallmark
+- `ui-ux-pro-max-skill` [S|cld|E|+] — Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para — tags: skills,design,python — alt: taste-skill,impeccable,hallmark
 
 ### 28. Visión artificial, rostros y percepción (21)
 Detalle: `REPO_MENU_cats/28-visi-n-artificial-rostros-y-percepci-n.md`
 
-- `4d-humans` [R|loc|H|+] — Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de  — tags: vision,model,python — prov: local
+- `4d-humans` [R|loc|H|+] — Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de — tags: vision,model,python — prov: local
 - `cvat` [P|loc|M|+] — Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y export — tags: annotation,vision,dataset,self-hosted — alt: label-studio
 - `deep-live-cam` [R|loc|H|+] — Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. — tags: vision,image,python — alt: facefusion
 - `deepface` [L|loc|E|+] — Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve — tags: face,python,vision,biometrics
@@ -1160,12 +1196,13 @@ Detalle: `REPO_MENU_cats/28-visi-n-artificial-rostros-y-percepci-n.md`
 - `ultralytics` [L|loc|E|+] — Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. — tags: vision,training,python
 - `wham` [R|loc|H|+] — Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de vi — tags: vision,model,python — prov: local
 
-### 29. Audio, transcripción, voz y música (33)
+### 29. Audio, transcripción, voz y música (34)
 Detalle: `REPO_MENU_cats/29-audio-transcripci-n-voz-y-m-sica.md`
 
 - `ace-step-1.5` [P|loc|H|+] — Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tam — tags: musica,text2music,python — alt: yue,audiocraft
 - `audacity` [A|loc|E|?] — Editor y grabador de audio multipista libre para Windows, macOS y Linux, con efectos, análisis y plugins, incl — tags: audio,editor,cpp,app
 - `audiocraft` [L|loc|M|+] — Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códe — tags: audio,inference,training,python — prov: local — alt: yue,ace-step-1.5
+- `buzz` [A|hyb|E|+] — Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propi — tags: whisper,subtítulos,transcripción — prov: local
 - `cosyvoice` [L|loc|M|+] — Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. — tags: tts,audio,python — prov: local — alt: fish-speech,index-tts,f5-tts
 - `demucs` [L|loc|E|+] — Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación ma — tags: audio,music,separation,pytorch
 - `dograh` [A|hyb|M|+] — Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configu — tags: voz-agentes,agent,python — alt: pipecat,livekit-agents,ten-framework
@@ -1197,13 +1234,15 @@ Detalle: `REPO_MENU_cats/29-audio-transcripci-n-voz-y-m-sica.md`
 - `whisperx` [R|loc|M|+] — Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. — tags: stt,audio,python — alt: nemo
 - `yue` [R|loc|-|+] — Modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con par — tags: music,generation,audio,model — alt: ace-step-1.5,audiocraft
 
-### 30. Video con código y agentes creativos (23)
+### 30. Video con código y agentes creativos (25)
 Detalle: `REPO_MENU_cats/30-video-con-c-digo-y-agentes-creativos.md`
 
 - `brag` [S|loc|M|+] — Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y mús — tags: programatico,skill,python
 - `claude-animated-shorts` [S|loc|M|?] — Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. — tags: programatico,skill,typescript
+- `ffmpeg-skill` [S|loc|M|?] — Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con
 - `huashu-motion` [S|loc|M|+] — Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión v — tags: programatico,skill,javascript
 - `hyperframes` [R|loc|E|+] — Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo use — tags: video,agents,skills,typescript — prov: mcp — alt: remotion,moviepy
+- `hyperframes-launches` [D|loc|M|?] — Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escena
 - `lemo-opuscar` [S|loc|M|+] — Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y me — tags: programatico,skill,javascript
 - `manim` [L|loc|M|+] — Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenG — tags: video,dataviz,learning,python — alt: manim-community
 - `manim-community` [L|loc|M|+] — Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. — tags: programatico,animations,hacktoberfest,manim,math,python — alt: manim
@@ -1219,7 +1258,7 @@ Detalle: `REPO_MENU_cats/30-video-con-c-digo-y-agentes-creativos.md`
 - `remotion-superpowers` [S|loc|E|+] — Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por et — tags: video,skills,coding-agent — alt: openmontage,video-use
 - `revideo` [L|loc|M|+] — Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz desde una API, con reproductor Reac — tags: video,typescript,rendering,code — alt: motion-canvas,remotion
 - `skills-remotion` [S|loc|E|+] — Skills oficiales de Remotion para que tu agente de código cree videos con React. — tags: video,skills
-- `srt-whiteboard-animation` [S|loc|M|?] — Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos  — tags: programatico,skill,python
+- `srt-whiteboard-animation` [S|loc|M|?] — Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos — tags: programatico,skill,python
 - `video-shotcraft` [S|loc|M|+] — Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de son — tags: programatico,skill,typescript
 - `video-use` [S|loc|E|+] — Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. — tags: video,coding-agent,skills,python — alt: remotion-superpowers
 - `videofy-minimal` [A|loc|E|+] — Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revis — tags: video,typescript — alt: moneyprinterturbo
@@ -1230,31 +1269,32 @@ Detalle: `REPO_MENU_cats/31-presentaciones-diagramas-y-explicaci-n-visual.md`
 - `archify` [S|loc|E|?] — Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. — tags: diagramas,agent-skills,ai-agents,architecture-diagram,claude-code,claude-skills,codex,coding-agents — tools: claude-code,codex — alt: diagram-design
 - `d2` [A|loc|E|+] — Lenguaje declarativo de diagramas que convierte texto en diagramas SVG, PNG, PDF o PPTX, con temas, modo bocet — tags: diagrams,go,cli,docs-as-code — alt: plantuml,mermaid
 - `diagram-design` [S|loc|M|+] — Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilida — tags: diagramas,skill,html — alt: archify
-- `drawio` [A|loc|E|?] — Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura  — tags: diagrams,editor,javascript,app
+- `drawio` [A|loc|E|?] — Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura — tags: diagrams,editor,javascript,app
 - `kroki` [P|loc|E|+] — Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de — tags: diagrams,api,self-hosted,docker
 - `marp` [D|loc|E|+] — Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separad — tags: slides,typescript — alt: slidev,reveal.js
 - `mermaid` [L|loc|E|+] — Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. — tags: docs,dataviz,typescript — alt: excalidraw,d2,plantuml
-- `plantuml` [A|loc|E|+] — Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales)  — tags: diagrams,uml,java,docs-as-code — alt: d2,mermaid
+- `plantuml` [A|loc|E|+] — Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) — tags: diagrams,uml,java,docs-as-code — alt: d2,mermaid
 - `ppt-master` [S|hyb|E|+] — Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documento — tags: slides,python — alt: presenton
 - `presenton` [A|hyb|E|+] — Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. — tags: slides,agents,typescript — prov: openai,google,local — alt: ppt-master
 - `reveal.js` [L|loc|E|+] — Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orad — tags: slides,javascript — alt: slidev,marp
 - `slidev` [A|loc|E|+] — Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. — tags: slides,typescript — alt: marp,reveal.js
 
-### 32. Navegadores y automatización web (19)
+### 32. Navegadores y automatización web (20)
 Detalle: `REPO_MENU_cats/32-navegadores-y-automatizaci-n-web.md`
 
 - `agent-browser` [A|loc|E|+] — CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. — tags: navegador,rust — alt: playwright-cli
 - `awesome-chrome-devtools` [D|loc|E|?] — Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. — tags: navegador,awesome,awesome-list
 - `browser-harness` [R|loc|E|?] — Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. — tags: browser,coding-agent,python — alt: playwright-mcp,chrome-devtools-mcp,browser-use
 - `browser-use` [L|hyb|M|+] — Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. — tags: automation,browser,python — alt: computer-use-preview,stagehand,skyvern,playwright-mcp,browser-harness
-- `camoufox` [L|loc|M|+] — Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada  — tags: browser,scraping,firefox,playwright
+- `camoufox` [L|loc|M|+] — Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada — tags: browser,scraping,firefox,playwright
 - `cypress` [L|loc|E|+] — Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interac — tags: testing,e2e,javascript,browser — alt: webdriverio,playwright,selenium,puppeteer
 - `flaresolverr` [P|loc|E|+] — Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el — tags: scraping,proxy,cloudflare,docker
+- `kitesurf` [R|hyb|H|?] — Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramienta
 - `ladybird` [A|loc|-|?] — Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Ch — tags: browser,engine,cpp,independent — alt: servo
 - `lightpanda` [R|loc|E|+] — Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. — tags: browser,scraping
 - `nanobrowser` [A|hyb|E|+] — Extensión de Chrome con un agente de IA que navega, hace clic y rellena formularios en tu propio navegador, co — tags: browser,agent,chrome,extension
 - `playwright` [L|hyb|M|+] — Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola A — tags: automation,browser,typescript — alt: puppeteer,selenium,cypress,webdriverio
-- `playwright-cli` [S|hyb|E|+] — Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador  — tags: browser,typescript — alt: agent-browser
+- `playwright-cli` [S|hyb|E|+] — Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador — tags: browser,typescript — alt: agent-browser
 - `puppeteer` [L|loc|E|+] — Librería de Google para controlar Chrome y Firefox desde Node.js. — tags: browser,scraping,typescript — alt: playwright,selenium,cypress,webdriverio
 - `selenium` [L|loc|M|?] — Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. — tags: browser,java,python — alt: playwright,puppeteer,cypress,webdriverio
 - `servo` [R|loc|-|?] — Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar tecnologías web en aplicaciones; — tags: browser,engine,rust,embedding — alt: ladybird

@@ -78,7 +78,7 @@ def _icon(map_: dict, value: str | None) -> str:
 def _oneline(text: str, limit: int = 120) -> str:
     text = (text or "").strip().replace("\n", " ")
     text = re.sub(r"\s+", " ", text)
-    return text[:limit]
+    return text[:limit].rstrip()
 
 
 def _is_meaningful(text: str, name: str) -> bool:

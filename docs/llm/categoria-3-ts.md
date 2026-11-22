@@ -1,6 +1,6 @@
 # Alexandría para agentes · Frameworks en TypeScript y multi-lenguaje
 
-Categoría 3 «Construir agentes y coordinar equipos de IA» › subcategoría `ts`. 5 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 3 «Construir agentes y coordinar equipos de IA» › subcategoría `ts`. 6 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3&sub=ts · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -23,6 +23,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `mastra` | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los… | 2 Intermedio | 65 | Apache-2.0 + licencia Enterprise (ee/) (open-core) | alternativa |
 | `langgraphjs` | Versión TypeScript de LangGraph para agentes con estado como grafos en Node o… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
 | `langchain4j` | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `eve` | Ayuda a construir agentes con estado usando archivos de configuración… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -91,6 +92,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Integra un chat que consulta un objeto de inventario de prueba en Java Éxito: El resultado devuelve el dato del objeto y puede validarse con un test
 - **Combina con:** `ollama` [8/motores], `qdrant` [6/vectores], `pgvector` [6/vectores], `milvus` [6/vectores]
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo (spring-ai no figura). Qdrant, pgvector y milvus son alternativas entre sí: elige uno. Es una biblioteca Java independiente; no es un port con las mismas versiones o API que LangChain Python.
+
+### Eve (`eve`)
+
+- **Repo:** https://github.com/vercel/eve · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.
+- **Cuándo elegirlo:** Casos: Probar un agente de preguntas sobre una tarea ficticia.; Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js/npm y autenticación para el proveedor o AI Gateway documentado; hosting opcional..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://eve.dev/
+- **Primera prueba propuesta (no ejecutada):** Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio. Éxito: La interfaz de terminal inicia y responde con el proveedor elegido.
+- **Riesgos y avisos:** La licencia del framework no cubre AI Gateway, tokens ni despliegue; no asumas que tu suscripción de Codex o Claude Code concede acceso al modelo de Eve.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

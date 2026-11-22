@@ -1,6 +1,6 @@
 # Alexandría para agentes · Operar, evaluar y medir modelos de IA
 
-Categoría 23 completa (26 repos, 3 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 23 completa (30 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=23 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,8 +29,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `bentoml` | serving | Framework Python para convertir modelos y pipelines de IA en APIs de… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-code-router` | serving | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 57 | MIT (OSI permisiva) | alternativa |
 | `backdoor` | serving | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo… | 2 Intermedio | 36 | MIT (OSI permisiva) | alternativa |
+| `portkey-gateway` | serving | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | — | MIT | sin grupo |
 | `rtk` | tokens | Proxy de terminal que compacta salidas de comandos para reducir el contexto que… | 1 Básico | 69 | Apache-2.0 (OSI permisiva) | recomendado |
 | `headroom` | tokens | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
+| `gptcache` | tokens | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | — | MIT | sin grupo |
+| `llmlingua` | tokens | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | — | MIT | sin grupo |
 | `langfuse` | observabilidad | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM… | 2 Intermedio | 79 | MIT + licencia Enterprise (ee/) (open-core) | recomendado |
 | `promptfoo` | observabilidad | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de… | 1 Básico | 79 | MIT (OSI permisiva) | recomendado |
 | `opik` | observabilidad | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -44,6 +47,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `phoenix` | observabilidad | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM… | 1 Básico | 53 | Elastic-2.0 (source-available) | alternativa |
 | `ragas` | observabilidad | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos… | 2 Intermedio | 51 | Apache-2.0 (OSI permisiva) | alternativa |
 | `helicone` | observabilidad | Pasarela de IA y plataforma de observabilidad de LLM abierta: registra… | 2 Intermedio | 50 | Apache-2.0 (OSI permisiva) | alternativa |
+| `ccusage` | observabilidad | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -196,6 +200,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `litellm`, `omniroute`, `claude-code-router`
 - **Riesgos y avisos:** Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo.
 
+### Portkey AI Gateway (`portkey-gateway`)
+
+- **Repo:** https://github.com/Portkey-AI/gateway · MIT · nivel 3 · —/100
+- **Qué es:** Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.
+- **Cuándo elegirlo:** Casos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada.
+- **Requisitos:** nivel 3: preparación pesada, requiere clave de API; TypeScript, Dockerfile, package.json; API de IA: sí; Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido. Éxito: Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba.
+- **Riesgos y avisos:** Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.
+
 ### rtk (`rtk`)
 
 - **Repo:** https://github.com/rtk-ai/rtk · Apache-2.0 · nivel 1 · 69/100 · recomendado en «Compactar contexto y tokens»
@@ -219,6 +233,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `litellm` [23/serving], `context-engineering` [19/guias], `codegraph` [7/codigo], `claude-code-usage-monitor` [23/observabilidad], `mimo-code` [20/terminal]
 - **Alternativas:** `rtk`
 - **Riesgos y avisos:** Alternativas (elige una): rtk. El número de estrellas crece de forma inusual para un proyecto tan joven; los ahorros son mediciones del propio proyecto. Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea.
+
+### GPTCache (`gptcache`)
+
+- **Repo:** https://github.com/zilliztech/GPTCache · MIT · nivel 2 · —/100
+- **Qué es:** Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.
+- **Cuándo elegirlo:** Casos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, requirements.txt, setup.py; API de IA: opcional; Python y un componente de embeddings y almacenamiento compatible; entorno de prueba con consultas ficticias..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://gptcache.readthedocs.io
+- **Primera prueba propuesta (no ejecutada):** Configura el ejemplo en un entorno aislado y manda dos consultas de ejemplo similares. Éxito: Puedes observar cuándo se reutiliza una respuesta y cuándo se vuelve a calcular.
+- **Riesgos y avisos:** Los ejemplos con OpenAI requieren su clave. No compartas entradas y respuestas privadas entre usuarios de distintas cuentas.
+
+### LLMLingua (`llmlingua`)
+
+- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · —/100
+- **Qué es:** Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.
+- **Cuándo elegirlo:** Casos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; hardware model_dependent; API de IA: no; Python, PyTorch y un modelo de compresión compatible con el hardware..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://llmlingua.com/
+- **Primera prueba propuesta (no ejecutada):** Comprime un texto público breve con un modelo local pequeño del proyecto. Éxito: Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas.
+- **Riesgos y avisos:** Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.
 
 ### langfuse (`langfuse`)
 
@@ -402,6 +436,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `litellm` [23/serving], `langchain` [3/py], `open-webui` [8/chats]
 - **Alternativas:** `langfuse`, `opik`, `mlflow`, `phoenix`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): langfuse. Al usar la pasarela, las peticiones pasan por Helicone: valora la privacidad.
+
+### ccusage (`ccusage`)
+
+- **Repo:** https://github.com/ccusage/ccusage · MIT · nivel 2 · —/100
+- **Qué es:** Una utilidad de terminal para medir el uso registrado por asistentes de programación.
+- **Cuándo elegirlo:** Casos: Identificar el día con más tokens en Claude Code.; Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan.
+- **Requisitos:** nivel 2: preparación media; Rust, package.json; API de IA: no; Node.js y npm compatibles con la versión que elijas, u otro ejecutor indicado en la guía.; Registros locales de al menos un cliente compatible; el modo offline requiere precios disponibles en caché..
+- **Instalación (documentada en la fuente; no ejecutada):** `npx ccusage@latest` — fuente: https://ccusage.com/guide/installation
+- **Primera prueba propuesta (no ejecutada):** Usa la ruta oficial de instalación, abre el informe diario de un cliente con actividad previa y fíjate en el periodo. Éxito: Aparece una tabla de tokens por día para ese cliente; la cifra de coste es una estimación.
+- **Combina con:** `claude-code` [20/terminal]
+- **Riesgos y avisos:** Puede leer registros de sesión. Usa un perfil de prueba para una primera revisión, un paquete de versión identificada y no publiques los registros.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

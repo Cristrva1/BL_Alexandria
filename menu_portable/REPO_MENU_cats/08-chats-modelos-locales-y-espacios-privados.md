@@ -126,6 +126,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `playwright-mcp`
 **Alternativas (elige una):** `jan`, `lobehub`
 
+## `claude-second-brain`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Claude Code, Obsidian y una bóveda nueva; consulta la guía para qmd y dependencias.
+**Repo:** https://github.com/jessepinkman9900/claude-second-brain
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/jessepinkman9900/claude-second-brain/blob/599f55ad50afceb9eae4f31746aa37274087d239/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar una wiki personal con notas ficticias.; Buscar referencias locales a un tema en una bóveda de demostración.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Prepara una bóveda desechable con tres notas y siembra una consulta a partir del ejemplo.
+**Qué comprobar:** El asistente encuentra la nota relevante y muestra qué documento utilizó.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `exo`
 role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=inference,local,python
 
@@ -215,6 +244,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La interfaz muestra el backend y devuelve una respuesta del proveedor elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `hermes-agent`, `ollama`, `mem0`, `vllm`
+
+## `inferssd`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La prueba con los modelos locales indicados no necesita contratar una API de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.
+- Coste: Sin pago a un modelo en la ruta básica. La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.
+- Equipo: Memoria y GPU según el modelo. SSD y un modelo MoE compatible; backend de sistema y GPU según las guías de la variante.
+**Repo:** https://github.com/wici-ai/inferssd
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/wici-ai/inferssd/blob/910afae91c3c2578f890df7ffd9a1e55b6237680/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Medir si un modelo compatible arranca con la memoria disponible.; Comparar tiempos de respuesta con dos tamaños de contexto.
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Selecciona un modelo de prueba compatible y registra carga, latencia y memoria con una pregunta corta.
+**Qué comprobar:** Obtienes una respuesta y medidas de rendimiento que puedes cotejar con tu equipo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `jan`
 role=app · exec=local · setup=easy · mcp=False · prov=local,openai · tags=chatbot,local,rust

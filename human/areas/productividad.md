@@ -4,7 +4,7 @@
 
 Organiza información, sincroniza archivos y prepara herramientas para tu trabajo cotidiano y tu hogar.
 
-54 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/productividad).
+56 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/productividad).
 
 ## Opciones para empezar
 
@@ -82,7 +82,7 @@ Herramientas personales para gestionar credenciales y proteger datos.
 
 Automatización doméstica y herramientas para tus equipos.
 
-[Explorar 12 repos](../../docs/index.html#/explorar?area=productividad&topic=personal-hogar)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=productividad&topic=personal-hogar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -95,6 +95,8 @@ Automatización doméstica y herramientas para tus equipos.
 | [Frigate NVR](../fichas/frigate.md) | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo real para cámaras IP, integrado con Home Assistant. | Sin clave propia de API de IA en la ruta básica |
 | [Ghostfolio](../fichas/ghostfolio.md) | Software abierto de gestión de patrimonio para seguir acciones, ETF y criptomonedas con métricas de rendimiento, autoalojado o en la nube. | Sin clave propia de API de IA en la ruta básica |
 | [Home Assistant](../fichas/home-assistant.md) | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | API de IA opcional |
+| [Home Assistant MCP](../fichas/ha-mcp.md) | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica. | Sin clave propia de API de IA en la ruta básica |
+| [iSponsorBlockTV](../fichas/isponsorblocktv.md) | Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles. | Sin clave propia de API de IA en la ruta básica |
 | [optimizerDuck](../fichas/optimizerduck.md) | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | Sin clave propia de API de IA en la ruta básica |
 | [universal-android-debloater-next-generation](../fichas/universal-android-debloater-next-generation.md) | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [Zigbee2MQTT](../fichas/zigbee2mqtt.md) | Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable con Home Assistant y otros. | Sin clave propia de API de IA en la ruta básica |

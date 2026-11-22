@@ -1,6 +1,6 @@
 # Alexandría para agentes · Creación, renderizado y animación 3D
 
-Categoría 26 «Animación, gráficos y creación 3D» › subcategoría `creacion-3d`. 9 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 26 «Animación, gráficos y creación 3D» › subcategoría `creacion-3d`. 11 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=26&sub=creacion-3d · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -27,6 +27,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `openscad` | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la… | 1 Básico | 59 | GPL-2.0 (con excepción CGAL) (OSI copyleft) | sin grupo |
 | `ozz-animation` | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
 | `awesome-cad` | Directorio de programas, bibliotecas y recursos de diseño asistido por… | 1 Básico | 34 | MIT (OSI permisiva) | sin grupo |
+| `openreality` | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP… | 3 Avanzado | — | BSD-2-Clause | sin grupo |
+| `video2threejs` | Explica con un caso cómo reconstruir la apariencia de un video como una escena… | 1 Básico | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -130,6 +132,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida Éxito: Puedes explicar cuál se ajusta al objeto que quieres diseñar
 - **Combina con:** `blender`, `three.js` [26/animacion], `filament`, `freecad`, `openscad`
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD.
+
+### Open Reality (`openreality`)
+
+- **Repo:** https://github.com/reality-opened/openreality · BSD-2-Clause · nivel 3 · —/100
+- **Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
+- **Cuándo elegirlo:** Casos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 3: preparación media, se instala dentro de un agente (skill, plugin o MCP), necesita GPU; Python; API de IA: no; Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://open-reality.io/mcp
+- **Primera prueba propuesta (no ejecutada):** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado. Éxito: Puedes abrir la escena o consultar un elemento sin compartir datos privados.
+- **Riesgos y avisos:** Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.
+
+### video2threejs (`video2threejs`)
+
+- **Repo:** https://github.com/cpppppp7/video2threejs · MIT · nivel 1 · —/100
+- **Qué es:** Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
+- **Cuándo elegirlo:** Casos: Comparar el encuadre de una escena y su referencia.; Estudiar cómo combinar geometría y textura en una recreación sencilla.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; JavaScript; API de IA: no; Navegador para leer el caso y, si adaptas la técnica, una escena de prueba en Three.js..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre el caso y localiza un punto de vista reconstruido para compararlo con su referencia. Éxito: Puedes identificar una diferencia visible y el principio que la guía usa para reducirla.
+- **Riesgos y avisos:** Es un caso técnico, no se verificó una app capaz de reconstruir cualquier clip. Revisión documental; no acredita binarios ni una instalación probada.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

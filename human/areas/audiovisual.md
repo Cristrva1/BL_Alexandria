@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-111 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+118 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -57,14 +57,16 @@ Crear clips y organizar flujos de video generativo.
 
 Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
-[Explorar 24 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-codigo)
+[Explorar 26 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-codigo)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [brag](../fichas/brag.md) | Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | API de IA opcional |
 | [claude-animated-shorts](../fichas/claude-animated-shorts.md) | Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | Sin clave propia de API de IA en la ruta básica |
+| [FFmpeg Skill](../fichas/ffmpeg-skill.md) | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables. | Sin clave propia de API de IA en la ruta básica |
 | [huashu-motion](../fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Sin clave propia de API de IA en la ruta básica |
 | [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | API de IA opcional |
+| [HyperFrames Launches](../fichas/hyperframes-launches.md) | Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones. | Sin clave propia de API de IA en la ruta básica |
 | [lemo-opuscar](../fichas/lemo-opuscar.md) | Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y medios. | API de IA opcional |
 | [manim](../fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | Sin clave propia de API de IA en la ruta básica |
 | [Manim (ManimGL)](../fichas/manim.md) | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | Sin clave propia de API de IA en la ruta básica |
@@ -112,10 +114,11 @@ Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
 Transcribir, alinear y aprovechar grabaciones de voz.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-transcripcion)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-transcripcion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Buzz](../fichas/buzz.md) | Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propio equipo. | API de IA opcional |
 | [faster-whisper](../fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Sin clave propia de API de IA en la ruta básica |
 | [NeMo Speech](../fichas/nemo.md) | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. | Sin clave propia de API de IA en la ruta básica |
 | [sherpa-onnx](../fichas/sherpa-onnx.md) | Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor. | Sin clave propia de API de IA en la ruta básica |
@@ -197,7 +200,7 @@ Animación de retratos y herramientas para personajes.
 
 Crear objetos, escenas y recursos tridimensionales.
 
-[Explorar 12 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-3d)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-3d)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -211,21 +214,25 @@ Crear objetos, escenas y recursos tridimensionales.
 | [FreeCAD](../fichas/freecad.md) | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica y arquitectura (BIM), con planos técnicos, FEM, CAM y Python. | Sin clave propia de API de IA en la ruta básica |
 | [Godot Engine](../fichas/godot.md) | Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en GDScript o C# y exportación a escritorio, móvil, web y consolas. | Sin clave propia de API de IA en la ruta básica |
 | [meshoptimizer](../fichas/meshoptimizer.md) | Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. | Sin clave propia de API de IA en la ruta básica |
+| [Open Reality](../fichas/openreality.md) | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente. | Sin clave propia de API de IA en la ruta básica |
 | [OpenSCAD](../fichas/openscad.md) | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas. | Sin clave propia de API de IA en la ruta básica |
 | [ozz-animation](../fichas/ozz-animation.md) | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
+| [video2threejs](../fichas/video2threejs.md) | Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js. | Sin clave propia de API de IA en la ruta básica |
 
 ### Física y simulación
 
 Simular cuerpos,colisiones y sistemas físicos.
 
-[Explorar 5 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-simulacion)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-simulacion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Genesis World](../fichas/genesis-world.md) | Plataforma de simulación para IA física y robótica con motor multifísica unificado (rígidos, FEM, MPM, fluidos), render fotorrealista y paralelismo masivo en GPU. | Sin clave propia de API de IA en la ruta básica |
+| [MotionBricks](../fichas/motionbricks.md) | Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración. | Sin clave propia de API de IA en la ruta básica |
 | [MuJoCo](../fichas/mujoco.md) | Motor de física de Google DeepMind para simular estructuras articuladas con contacto, estándar en robótica, biomecánica y aprendizaje por refuerzo. | Sin clave propia de API de IA en la ruta básica |
 | [planck.js](../fichas/planck-js.md) | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | Sin clave propia de API de IA en la ruta básica |
 | [react-three-rapier](../fichas/react-three-rapier.md) | Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | Sin clave propia de API de IA en la ruta básica |
+| [Robotics for Antigravity](../fichas/robotics-antigravity-plugin.md) | Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo. | Depende de la ruta elegida |
 | [warp](../fichas/warp.md) | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

@@ -95,6 +95,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `langgraph`, `ui`
 **Alternativas (elige una):** `copilotkit`
 
+## `astryx`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Proyecto web React compatible con los paquetes de Astryx y StyleX.
+**Repo:** https://github.com/meta/astryx
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir una pantalla con botones y campos coherentes.; Probar un tema neutro y después ajustar tipografía y color.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba.
+**Qué comprobar:** Los componentes aparecen con el tema aplicado y puedes navegar con teclado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `chakra-ui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript,react,library
 
