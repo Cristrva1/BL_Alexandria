@@ -2,7 +2,7 @@
 
 Generado desde `data/handbook.json`. Guías de orientación documental; no acreditan instalación ni rendimiento. Las plantillas son originales de Alexandría.
 
-Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
+Revisión: 2026-11-22. Los precios, planes y versiones pueden cambiar.
 
 ## Índice
 
@@ -20,6 +20,7 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [Aider](#aider)
 - [Cline](#cline)
 - [Cursor](#cursor)
+- [DeepAI Code](#deepai-code)
 
 ### Modelos y proveedores
 
@@ -28,6 +29,9 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [MiniMax](#minimax)
 - [GLM / Z.AI](#glm)
 - [Grok: API de modelos](#grok-api)
+- [Jev de TypeSafe AI](#jev-typesafe)
+- [Gemini 4 Carbon](#gemini-carbon)
+- [OpenAI Responses API en segundo plano](#openai-background)
 
 ### Agentes personales y trabajo delegado
 
@@ -36,6 +40,9 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [Muse de Meta](#muse)
 - [Grok Bot](#grok-bot)
 - [OpenClaw](#openclaw)
+- [agentes.chat Cloud](#agentes-chat-servicio)
+- [Hermes Plugin Hackathon](#hermes-plugin-hackathon)
+- [Tabletop de Google Labs](#google-tabletop)
 
 ### IA local y servidores de modelos
 
@@ -44,6 +51,9 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [llama.cpp](#llamacpp)
 - [LM Studio](#lmstudio)
 - [Open WebUI](#openwebui)
+- [Arete-27B de Nous Research](#nous-arete-27b)
+- [Qwen3.8-27B adaptado para pi y OpenCode](#qwen-harness-adapters)
+- [NVIDIA Nemotron 3.5 Bolt E4B](#nemotron-bolt)
 
 ### Android, iPhone y automatizaciones
 
@@ -66,6 +76,10 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [Vercel](#vercel)
 - [Railway](#railway)
 - [Cloudflare](#cloudflare)
+- [Modulify](#modulify)
+- [Cloudflare for Startups](#cloudflare-startups)
+- [DNSHE](#dnshe)
+- [WebMCP y MCP según Chrome](#chrome-webmcp)
 
 ### Datos, usuarios e integraciones
 
@@ -73,6 +87,7 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [Activepieces: flujos e integraciones](#activepieces-servicio)
 - [Neon](#neon)
 - [Redis](#redis)
+- [treg Jobs API](#treg-jobs-api)
 
 ### Servidores y contenedores
 
@@ -82,6 +97,7 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [Docker Compose](#compose)
 - [Caddy](#caddy)
 - [Coolify](#coolify)
+- [Boat](#boat-sandboxes)
 
 ### Acceso remoto, copias y operación
 
@@ -89,6 +105,20 @@ Revisión: 2026-11-15. Los precios, planes y versiones pueden cambiar.
 - [OpenSSH](#openssh)
 - [Uptime Kuma](#uptime-kuma)
 - [Restic](#restic)
+- [Tailscale con Grok Bot y MCP privado](#tailscale-grok-mcp)
+
+### Cursos y diseño de sistemas
+
+- [AI Harness Crash Course de Google Cloud Tech](#google-ai-harness-curso)
+- [Designed to Scale](#designed-to-scale)
+
+### Seguridad defensiva y análisis
+
+- [OWASP Cheat Sheet Series](#owasp-cheat-sheets)
+- [VirusTotal para agentes](#virustotal-ai)
+- [roadmap.sh Cyber Security](#roadmap-ciberseguridad)
+- [PortSwigger Web Security Academy](#portswigger-academy)
+- [MITRE ATT&CK](#mitre-attack-defensa)
 
 ## Mi primer proyecto con un agente
 
@@ -178,6 +208,18 @@ Poder desplegar, observar y recuperar una aplicación con datos.
 **Comprueba:** El servicio responde y una restauración reproduce sus datos de prueba.
 
 Una VPS requiere mantenimiento continuo; si no quieres operarlo, compara una plataforma administrada.
+
+## Revisar permisos y alertas de mi aplicación
+
+Identifica qué puede ver cada rol, documenta controles y decide qué registros servirían para revisar un incidente.
+
+1. [OWASP Cheat Sheet Series](#owasp-cheat-sheets): Elige un control y escribe qué debe poder hacer cada rol.
+2. [PortSwigger Web Security Academy](#portswigger-academy): Convierte las reglas de autenticación y permisos en criterios de aceptación.
+3. [MITRE ATT&CK](#mitre-attack-defensa): Con un registro ficticio, relaciona una señal conocida con una acción de revisión.
+
+**Comprueba:** Puedes mostrar cómo comprobar cada control y quién revisaría una alerta.
+
+Haz el ejercicio con una app propia o ficticia y datos de muestra.
 
 <a id="codex"></a>
 
@@ -1097,23 +1139,26 @@ Agentes con una computadora cloud para realizar tareas en servicios y aplicacion
 
 **Qué comprobar:** La tarea deja una salida comprobable y el consumo aparece en la cuenta correcta.
 
-**Cuenta y compatibilidad:** La elegibilidad y facturación pueden depender de The X Subscription o cuentas Cursor heredadas; sigue la FAQ actual.
+**Cuenta y compatibilidad:** Según la FAQ, The X Subscription incluye Grok Bot en Premium, Super y Ultra. También admite algunos planes heredados de Cursor. Comprueba el acceso de tu cuenta.
 
-**Costes:** Hay límites semanales y posibles consumos adicionales según cuenta. No se conserva el precio de publicaciones sociales.
+**Costes:** En The X Subscription usa la cuota semanal compartida con Cursor y las apps de Grok. La FAQ describe prepago para consumo adicional. En planes heredados, el sobreconsumo depende de la configuración de Cursor.
 
 ### Mejoras después de la primera prueba
 
 - Sustituye sondeos innecesarios por eventos cuando el servicio lo permita.
 - Da una condición de parada y un formato de entrega.
 - Revisa consumo por Bot antes de ampliar tareas recurrentes.
+- Usa el directorio comunitario para descubrir ideas y comprueba el autor, las conexiones solicitadas y los permisos antes de importar un bot.
 
 ### Límites
 
 - Los Bots de una cuenta pueden compartir su computadora cloud; revisa esa frontera al conectar cuentas.
+- Las entradas del directorio son aportaciones de terceros. Empieza con una tarea ficticia y una cuenta de prueba si decides importar una.
 
 ### Fuentes
 
-- [Documentación oficial del proyecto o servicio](https://docs.x.ai/grok-bot/faq) · 2026-11-15
+- [Documentación oficial del proyecto o servicio](https://docs.x.ai/grok-bot/faq) · 2026-11-22
+- [Directorio comunitario de bots y apps](https://grok-bot.directory/) · 2026-11-22
 
 <a id="openclaw"></a>
 
@@ -1930,14 +1975,19 @@ Publica frontends y aplicaciones compatibles con servicios de despliegue y ejecu
 - Separa preview y producción.
 - Prueba variables y conexiones reales, no solo el build.
 - Conserva una versión a la que puedas volver.
+- Si eliges eve, compara por separado ejecución, Sandbox, Workflow y uso de modelos por AI Gateway. Prueba primero con un flujo pequeño.
 
 ### Límites
 
 - Comprueba las capacidades del runtime antes de mover procesos persistentes o tareas pesadas.
 
+Fichas del catálogo: [eve](fichas/eve.md)
+
 ### Fuentes
 
 - [Documentación oficial del proyecto o servicio](https://vercel.com/docs) · 2026-11-15
+- [Presentación oficial de eve 1.0](https://vercel.com/blog/eve-is-now-generally-available) · 2026-11-22
+- [Medición y precios de Vercel](https://vercel.com/pricing) · 2026-11-22
 
 <a id="railway"></a>
 
@@ -2603,6 +2653,925 @@ Puede apoyar caché, colas y estados temporales de una aplicación; define prime
 ### Fuentes
 
 - [Documentación oficial del proyecto o servicio](https://redis.io/docs/latest/) · 2026-11-15
+
+<a id="agentes-chat-servicio"></a>
+
+## agentes.chat Cloud
+
+**Tipo:** Espacio de trabajo con IA
+
+Reúne al equipo y a sus agentes en canales con memoria compartida y aprobación humana para acciones delicadas.
+
+### Antes de empezar
+
+- Una cuenta de agentes.chat y un canal de ensayo
+- Un proveedor de IA admitido, con su sesión o clave según la opción
+
+### Primera prueba
+
+1. Crea un espacio privado de prueba y pega una política ficticia de tres párrafos en su wiki.
+2. Configura un agente para responder preguntas sobre la política y limita sus herramientas.
+3. Pide una respuesta en el canal y valida con el texto que guardaste.
+
+**Qué comprobar:** El agente responde en el canal correcto usando la política ficticia como fuente.
+
+**Cuenta y compatibilidad:** Servicio web con clientes de escritorio y móvil. El proveedor documenta conexión desde Claude y otros clientes MCP. Consulta la opción de autenticación de cada modelo. El proyecto ofrece autoalojamiento.
+
+**Costes:** Personal desde USD 29/mes en pago mensual o USD 288/año. El consumo de IA se paga por separado. El software autoalojado se ofrece gratis y requiere equipo propio.
+
+### Mejoras después de la primera prueba
+
+- Comprueba quién puede ver lo que el agente guarda antes de invitar a otras personas.
+
+### Límites
+
+- La memoria y los permisos del espacio abarcan a varias personas. Empieza con material ficticio.
+
+Fichas del catálogo: [agentes-chat](fichas/agentes-chat.md)
+
+### Fuentes
+
+- [Producto](https://agentes.chat/) · 2026-11-22
+- [Guías de acceso y autoalojamiento](https://agentes.chat/docs) · 2026-11-22
+- [Precios de la nube](https://agentes.chat/pricing) · 2026-11-22
+
+<a id="boat-sandboxes"></a>
+
+## Boat
+
+**Tipo:** Máquinas virtuales para desarrollo
+
+Ofrece máquinas Ubuntu que puedes detener, reanudar o clonar para probar código en un entorno separado.
+
+### Antes de empezar
+
+- Cuenta de Boat y un medio de pago para activar la prueba
+- Cliente oficial y proyecto de muestra sin credenciales
+
+### Primera prueba
+
+1. Lee la tabla de precios y consulta el tiempo disponible en tu cuenta.
+2. Sigue el inicio oficial para crear una sola VM. Ejecuta una prueba pequeña del proyecto y conserva el resultado.
+3. Detén la VM y comprueba en el panel el estado y el tiempo facturado.
+
+**Qué comprobar:** La prueba termina en la VM y el panel muestra el entorno detenido.
+
+**Cuenta y compatibilidad:** El proveedor documenta CLI para Windows, macOS y Linux, API para automatizar y uso de Claude Code, Codex u OpenCode dentro de Ubuntu. Autoriza el agente con su proveedor correspondiente.
+
+**Costes:** Prueba de 7 días y 25 horas de cómputo con tarjeta. Mínimo mensual publicado de USD 20. La VM de 4 vCPU y 8 GB figura en USD 0.036/h. La IA tiene su propia facturación.
+
+### Mejoras después de la primera prueba
+
+- Revisa región, red y retención de snapshots antes de guardar código de un equipo.
+
+### Límites
+
+- Las máquinas anunciadas son CPU. Revisa los cargos por arranques adicionales y el alcance de red de la VM.
+
+### Fuentes
+
+- [Producto y compatibilidad](https://boat.dev/) · 2026-11-22
+- [Tarifas y medición](https://docs.boat.dev/pricing) · 2026-11-22
+
+<a id="hermes-plugin-hackathon"></a>
+
+## Hermes Plugin Hackathon
+
+**Tipo:** Directorio comunitario
+
+Reúne proyectos del hackathon de Hermes Agent con filtros por función, plataforma, estado y tipo de permiso.
+
+### Antes de empezar
+
+- Navegador para explorar
+- Hermes Agent y un perfil de prueba si más adelante evalúas un plugin
+
+### Primera prueba
+
+1. Elige una tarea pequeña como organizar notas ficticias.
+2. Filtra por plataforma y abre el pull request del plugin que te interese.
+3. Revisa qué archivos toca, qué servicio contacta y qué claves solicita antes de decidir.
+
+**Qué comprobar:** Puedes identificar al autor, el código y los permisos de un candidato a partir de su pull request.
+
+**Cuenta y compatibilidad:** Directorio para Hermes Agent. Cada proyecto declara sus plataformas, servicios y dependencias. Los resultados del directorio se pueden leer sin el agente.
+
+**Costes:** La galería se puede consultar gratis. El coste de un plugin depende del servicio, modelo o clave que use.
+
+### Mejoras después de la primera prueba
+
+- Compara el pull request con la versión que planeas instalar.
+
+### Límites
+
+- La aparición en el hackathon y la integración en el catálogo del evento son señales de procedencia. La revisión de permisos queda a cargo de quien instala.
+
+Fichas del catálogo: [hermes-agent](fichas/hermes-agent.md)
+
+### Fuentes
+
+- [Galería y pull requests](https://aaddrick.com/hermespluginhackathon) · 2026-11-22
+
+<a id="modulify"></a>
+
+## Modulify
+
+**Tipo:** Constructor web con IA
+
+Genera y edita sitios y aplicaciones web desde una descripción y ofrece vista previa y publicación.
+
+### Antes de empezar
+
+- Cuenta de Modulify y navegador
+- Texto y recursos de ejemplo para una página sencilla
+
+### Primera prueba
+
+1. Abre un espacio de prueba y elige un sitio de una página.
+2. Describe el negocio ficticio, sus secciones y la acción principal que debe verse en el móvil.
+3. Comprueba la vista previa y las opciones de publicación antes de asociar un dominio.
+
+**Qué comprobar:** La vista previa muestra las secciones pedidas y la acción principal funciona en una pantalla pequeña.
+
+**Cuenta y compatibilidad:** Editor web con IA y créditos gestionados por Modulify. El flujo de la ficha usa la cuenta del servicio desde el navegador.
+
+**Costes:** Plan gratuito para un sitio con créditos iniciales de una sola vez. La página de precios indica 35 y la documentación 50. Confirma el saldo en tu panel. Starter publica USD 25 al mes o USD 240 al año.
+
+### Mejoras después de la primera prueba
+
+- Anota cuántos créditos consume cada cambio y reutiliza imágenes propias para evitar generaciones innecesarias.
+
+### Límites
+
+- Dominio propio, equipo, publicación y funciones de datos dependen del plan. Consulta el desglose del espacio antes de pagar.
+
+### Fuentes
+
+- [Planes comerciales](https://modulify.ai/pricing) · 2026-11-22
+- [Documentación del espacio y créditos](https://modulify.ai/docs/plans/plans) · 2026-11-22
+
+<a id="tailscale-grok-mcp"></a>
+
+## Tailscale con Grok Bot y MCP privado
+
+**Tipo:** Integración de red
+
+Permite a Grok Bot llegar a un servidor MCP dentro de una red Tailscale con autorización ligada al usuario.
+
+### Antes de empezar
+
+- Red Tailscale que administras y acceso a la integración en Grok Bot
+- Un servidor MCP de prueba con datos ficticios y una función de solo lectura
+
+### Primera prueba
+
+1. Configura una regla de acceso limitada al servicio de prueba y revisa los recursos visibles para el usuario.
+2. Autoriza Tailscale desde las integraciones de Grok Bot. Comprueba el nuevo dispositivo en la red.
+3. Pide una consulta de solo lectura y verifica los registros. Revoca la conexión al terminar la prueba.
+
+**Qué comprobar:** La consulta al recurso permitido funciona y el bot carece de acceso a otros recursos de la red de prueba.
+
+**Cuenta y compatibilidad:** Tailscale documenta esta integración en Grok Bot vía OAuth. El servidor MCP puede vivir en un equipo propio. Cada cliente MCP necesita su propia ruta de red y autorización.
+
+**Costes:** Aplican las cuotas del plan Tailscale y las del plan Grok Bot. Tailscale documenta el control por postura personalizada en Premium o Enterprise y reglas por etiqueta en otros planes.
+
+### Mejoras después de la primera prueba
+
+- Limita por servicio, usa una red de prueba y comprueba el efecto de revocar el dispositivo.
+
+### Límites
+
+- El dispositivo hereda la identidad y las políticas del usuario. Revisa el alcance de esas políticas antes de conceder acceso.
+
+Fichas del catálogo: [mcp-inspector](fichas/mcp-inspector.md)
+
+### Fuentes
+
+- [Integración oficial y permisos](https://tailscale.com/blog/oauth-apps-ga) · 2026-11-22
+- [Planes de Tailscale](https://tailscale.com/pricing) · 2026-11-22
+
+<a id="cloudflare-startups"></a>
+
+## Cloudflare for Startups
+
+**Tipo:** Programa de créditos
+
+Programa para empresas que quieren financiar consumo inicial de infraestructura Cloudflare.
+
+### Antes de empezar
+
+- Empresa elegible con sitio público y correo del dominio corporativo
+- Una estimación de uso y la información que pide el formulario
+
+### Primera prueba
+
+1. Compara los requisitos de tu empresa con los niveles de financiación publicados.
+2. Estima qué gastarías en Workers, almacenamiento o entrega y comprueba cuáles están cubiertos.
+3. Si cumples los requisitos, solicita acceso y espera el resultado antes de contar con el crédito.
+
+**Qué comprobar:** Puedes identificar tu nivel, servicios cubiertos, vencimiento y cargos que quedarían fuera.
+
+**Cuenta y compatibilidad:** Solicitud web y cuenta de Cloudflare para consumir los créditos aprobados. Workers, Pages y servicios de datos siguen teniendo requisitos propios.
+
+**Costes:** Cloudflare publica créditos de USD 10 000, 100 000 y hasta 350 000 por un año, según nivel y aprobación. Hay límites por producto y cargos por consumo fuera de cobertura.
+
+### Mejoras después de la primera prueba
+
+- Programa una revisión de gasto y el plan después del vencimiento.
+
+### Límites
+
+- La asignación y el uso dependen de criterios, aprobación y términos vigentes.
+
+### Fuentes
+
+- [Niveles, requisitos y usos cubiertos](https://www.cloudflare.com/startups/) · 2026-11-22
+
+<a id="deepai-code"></a>
+
+## DeepAI Code
+
+**Tipo:** Agente de programación
+
+Aplicación de escritorio que lee y edita proyectos con modelos servidos por DeepAI.
+
+### Antes de empezar
+
+- Instalador oficial para macOS, Windows o Linux
+- Una copia de un proyecto pequeño y una cuenta DeepAI para los créditos de la cuenta
+
+### Primera prueba
+
+1. Descarga desde la página del producto la versión que corresponde a tu equipo.
+2. Abre una copia de prueba. Pide explicar un archivo de configuración y después proponer un cambio pequeño.
+3. Comprueba el diff y el gasto de créditos antes de aplicar cambios al proyecto original.
+
+**Qué comprobar:** Puedes asociar una edición con el archivo correcto y verificarla antes de integrarla.
+
+**Cuenta y compatibilidad:** Cliente local con modelos hospedados por DeepAI. La aplicación documenta uso sin clave de API propia. Tu acceso y cuota dependen de la cuenta DeepAI.
+
+**Costes:** Nivel gratuito financiado con anuncios. La página anuncia hasta 250 Theos diarios en la cuenta gratuita para modelos medidos. Los planes de pago amplían la cuota y tienen su propia tarifa.
+
+### Mejoras después de la primera prueba
+
+- Abre una carpeta que solo incluya los archivos de prueba y comprueba qué comandos ejecuta el agente.
+
+### Límites
+
+- La lista de modelos, anuncios, cuotas y disponibilidad pueden cambiar. Revisa el tratamiento de archivos y prompts antes de usar código privado.
+
+### Fuentes
+
+- [Descargas, modelos y créditos](https://deepai.org/chat/ai-code) · 2026-11-22
+- [Planes DeepAI](https://deepai.org/pricing) · 2026-11-22
+
+<a id="nous-arete-27b"></a>
+
+## Arete-27B de Nous Research
+
+**Tipo:** Modelo de pesos abiertos
+
+Versión de Qwen3.8-27B ajustada por Nous Research. Su ficha documenta las preferencias incorporadas y permite comparar sus respuestas con las del modelo base.
+
+### Antes de empezar
+
+- Un equipo con memoria y disco suficientes para el formato elegido
+- Ficha del modelo, licencia Apache 2.0 y un motor compatible con el formato
+
+### Primera prueba
+
+1. Lee el objetivo del ajuste publicado por Nous y elige un conjunto de preguntas de prueba.
+2. Elige los pesos oficiales y fija su revisión. Empieza con un contexto pequeño en un motor que soporte el checkpoint.
+3. Compara el resultado con Qwen base usando los mismos datos y condiciones.
+
+**Qué comprobar:** Puedes identificar qué pesos se cargaron y detectar diferencias de comportamiento en tus propios ejemplos.
+
+**Cuenta y compatibilidad:** Pesos Safetensors para ejecución propia con un motor que admita la arquitectura. Verifica de forma independiente cualquier conversión para Ollama, llama.cpp o LM Studio.
+
+**Costes:** Pesos publicados bajo Apache 2.0. La ejecución paga el equipo, electricidad o GPU alquilada. En BF16, 27 mil millones de parámetros ocupan alrededor de 54 GB solo en pesos.
+
+### Mejoras después de la primera prueba
+
+- Lee las limitaciones de la evaluación del autor y conserva tus propios casos de comparación.
+
+### Límites
+
+- Las versiones cuantizadas de terceros requieren verificar su procedencia y pueden cambiar las respuestas. El contexto también ocupa memoria.
+
+### Fuentes
+
+- [Ficha y pesos del editor](https://huggingface.co/NousResearch/Arete-27B) · 2026-11-22
+- [Objetivo de entrenamiento y evaluación](https://nousresearch.com/arete) · 2026-11-22
+
+<a id="jev-typesafe"></a>
+
+## Jev de TypeSafe AI
+
+**Tipo:** API de clasificación
+
+Evalúa texto con preguntas numeradas y devuelve respuestas estructuradas que sirven para clasificar tickets, documentos y otros datos.
+
+### Antes de empezar
+
+- Cuenta, clave API de TypeSafe y saldo prepago
+- Mensajes ficticios con su categoría esperada
+
+### Primera prueba
+
+1. Prepara tres mensajes inventados de soporte y una pregunta cerrada sobre si hablan de cobros.
+2. Sigue System One para enviar el lote de preguntas sobre un solo mensaje y guarda la respuesta.
+3. Compara las respuestas con tus etiquetas y revisa el campo de uso.
+
+**Qué comprobar:** La respuesta trae la clave de cada pregunta y el número de tokens de entrada y salida.
+
+**Cuenta y compatibilidad:** API HTTP de TypeSafe con token Bearer. Un agente de código puede ayudarte a integrar la llamada. Jev se autentica con su propia clave y ejecuta en la nube del proveedor.
+
+**Costes:** USD 0.042 por millón de tokens de entrada. TypeSafe publica salida sin cargo y sin crédito de prueba.
+
+### Mejoras después de la primera prueba
+
+- Añade casos ambiguos y un umbral con revisión humana antes de clasificar tickets reales.
+
+### Límites
+
+- Mantén la clave en el servidor y empieza con datos sintéticos. La salida es una predicción que puedes contrastar con etiquetas humanas.
+
+### Fuentes
+
+- [Producto](https://typesafe.ai/) · 2026-11-22
+- [System One](https://docs.typesafe.ai/api/system-one) · 2026-11-22
+- [Tarifa oficial](https://help.typesafe.ai/articles/5187202169-how-much-does-jev-cost) · 2026-11-22
+
+<a id="dnshe"></a>
+
+## DNSHE
+
+**Tipo:** Subdominios y DNS
+
+Gestiona subdominios para demostraciones y registros DNS desde el panel del proveedor.
+
+### Antes de empezar
+
+- Cuenta DNSHE y un nombre disponible en una zona ofrecida
+- Destino de prueba que admita el subdominio
+
+### Primera prueba
+
+1. Lee los términos de subdominios y comprueba el nombre y periodo ofrecidos.
+2. Apunta el subdominio a una demostración pública sin datos personales.
+3. Verifica que resuelve y que HTTPS responde si el alojamiento lo admite. Guarda la fecha de renovación.
+
+**Qué comprobar:** El nombre resuelve al destino correcto y conoces cómo renovarlo o quitarlo.
+
+**Cuenta y compatibilidad:** Panel DNS en navegador. La ruta de prueba usa DNS estándar y puedes seguirla con cualquier alojamiento que permita configurar ese nombre.
+
+**Costes:** DNSHE anuncia subdominios y DNS gratuitos. El aviso vigente describe un periodo anual para altas gratuitas y renovación manual dentro de los 180 días previos al vencimiento. Cómputo y otros productos se cotizan aparte.
+
+### Mejoras después de la primera prueba
+
+- Usa un dominio bajo control propio cuando la continuidad de la dirección sea crítica.
+
+### Límites
+
+- DNSHE conserva control del dominio principal. Sus términos permiten cambiar o suspender el servicio gratuito.
+
+### Fuentes
+
+- [Servicio](https://www.dnshe.com/) · 2026-11-22
+- [Términos del servicio](https://www.dnshe.com/tos.html) · 2026-11-22
+- [Renovación anual](https://my.dnshe.com/announcements/6/DNSHE-Free-Domain-Registration-Duration-Adjustment-Notice-Introduction-of-an-Annual-Registration-System.html) · 2026-11-22
+
+<a id="google-tabletop"></a>
+
+## Tabletop de Google Labs
+
+**Tipo:** Experimento colaborativo
+
+Permite proponer una votación o un itinerario interactivo en un espacio compartido de Google Labs.
+
+### Antes de empezar
+
+- Navegador, cuenta Google y acceso aprobado
+- La oferta anunciada es para mayores de 18 años en EE. UU. mediante lista de espera
+
+### Primera prueba
+
+1. Abre la página oficial y comprueba si tu cuenta tiene acceso.
+2. Empieza con una encuesta ficticia de horarios usando una plantilla.
+3. Revisa el alcance del enlace de invitación y comprueba el voto con un colaborador de prueba.
+
+**Qué comprobar:** Las personas autorizadas pueden entrar a la encuesta y ver su actualización.
+
+**Cuenta y compatibilidad:** Experimento web de Google Labs con despliegue por cuenta y región. El flujo documentado usa el navegador y su herramienta integrada.
+
+**Costes:** El anuncio permite solicitar acceso y omite una tarifa pública. Verifica las condiciones que aparezcan en tu cuenta.
+
+### Mejoras después de la primera prueba
+
+- Prueba permisos y visibilidad con material poco sensible antes de adjuntar enlaces o archivos.
+
+### Límites
+
+- La lista de espera, disponibilidad y funciones pueden variar durante el experimento.
+
+### Fuentes
+
+- [Sitio del experimento](https://tabletop.google/about) · 2026-11-22
+- [Anuncio y acceso](https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/) · 2026-11-22
+
+<a id="google-ai-harness-curso"></a>
+
+## AI Harness Crash Course de Google Cloud Tech
+
+**Tipo:** Curso en video
+
+Introducción al entorno que conecta un modelo con instrucciones, herramientas y controles para completar una tarea.
+
+### Antes de empezar
+
+- Navegador con acceso a YouTube
+- Conocer la idea básica de un agente de IA
+
+### Primera prueba
+
+1. Abre el video del canal Google Cloud Tech y anota qué hace cada parte del sistema.
+2. Dibuja un ejemplo con una tarea, una herramienta de lectura y una condición de parada.
+3. Explica con palabras tuyas cómo comprobarías el resultado antes de permitir otra acción.
+
+**Qué comprobar:** Tu esquema indica qué recibe el agente, qué puede hacer y cómo compruebas su salida.
+
+**Cuenta y compatibilidad:** Video público. El ejercicio sugerido se hace en papel o en un editor y funciona con cualquier agente como referencia.
+
+**Costes:** Consulta del video sin tarifa de API. Si montas un ejemplo en la nube por tu cuenta, sus recursos y modelos pueden tener coste.
+
+### Mejoras después de la primera prueba
+
+- Distingue en el esquema el entorno que ejecuta herramientas y el modelo que decide.
+
+### Límites
+
+- El video es material formativo. Verifica versiones y precios en las guías de cada producto cuando implementes un flujo.
+
+### Fuentes
+
+- [Video de Google Cloud Tech](https://www.youtube.com/watch?v=2C_CefSQEAQ) · 2026-11-22
+
+<a id="designed-to-scale"></a>
+
+## Designed to Scale
+
+**Tipo:** Curso interactivo
+
+Explica conceptos de diseño de sistemas con diagramas animados que recorres paso a paso.
+
+### Antes de empezar
+
+- Navegador con JavaScript habilitado
+- Una libreta para dibujar el flujo de un ejemplo
+
+### Primera prueba
+
+1. Abre el curso y avanza por un diagrama.
+2. Dibuja una petición de usuario e identifica dónde vive cada componente.
+3. Cambia una condición, como que un componente se caiga, y explica qué tendría que pasar.
+
+**Qué comprobar:** Puedes recorrer la solicitud desde el navegador y explicar una decisión de diseño con el diagrama.
+
+**Cuenta y compatibilidad:** Lectura interactiva en navegador. El ejercicio se puede completar con papel y lápiz.
+
+**Costes:** Portada pública sin registro ni muro de pago observado. No se encontró una tarifa publicada para recorrer el curso.
+
+### Mejoras después de la primera prueba
+
+- Repite el ejercicio con tu proyecto y explica qué parte sigue sin cubrir.
+
+### Límites
+
+- El ejemplo sirve para aprender conceptos. Las decisiones de producción necesitan datos de carga y restricciones de tu proyecto.
+
+### Fuentes
+
+- [Curso y diagramas](https://designed-to-scale.vercel.app/) · 2026-11-22
+
+<a id="treg-jobs-api"></a>
+
+## treg Jobs API
+
+**Tipo:** API de vacantes
+
+Consulta vacantes públicas de empleadores y agrega información de empleo de varios proveedores en un servicio alojado.
+
+### Antes de empezar
+
+- Cuenta de treg y credencial propia del servicio
+- Nombre de una empresa de prueba y un límite de gasto
+
+### Primera prueba
+
+1. Consulta el precio de la operación para leer el tablón público de un único empleador.
+2. Lee una página de resultados y guarda el enlace a la vacante original.
+3. Comprueba que sigue abierta en el sitio del empleador y revisa en el panel si hubo un cargo.
+
+**Qué comprobar:** Cada resultado de prueba se puede contrastar con el anuncio original y puedes distinguir las operaciones facturadas.
+
+**Cuenta y compatibilidad:** Servicio de treg con credencial propia. Su documentación presenta uso desde Claude Code y Codex. Para esta ficha basta la consulta de vacantes públicas en el servicio alojado.
+
+**Costes:** Prepago por operación. Publica algunos tablones por USD 0, USD 0.0015 por vacante en búsquedas agregadas y USD 0.01 por consulta de percentiles salariales. Verifica la tarifa de la operación antes de llamarla.
+
+### Mejoras después de la primera prueba
+
+- Guarda el origen y la fecha de cada vacante antes de comparar resultados.
+
+### Límites
+
+- Empieza con anuncios públicos. Evita entregar currículos o información sobre personas al evaluar si el servicio te sirve.
+
+### Fuentes
+
+- [Jobs API y tarifas publicadas](https://treg.to/jobs-api) · 2026-11-22
+
+<a id="qwen-harness-adapters"></a>
+
+## Qwen3.8-27B adaptado para pi y OpenCode
+
+**Tipo:** Adaptadores LoRA
+
+Dos conjuntos de pesos adicionales ajustan el mismo modelo base para clientes distintos de programación asistida.
+
+### Antes de empezar
+
+- Qwen3.8-27B base y el adaptador que corresponda al cliente
+- Un servidor compatible, espacio y memoria para base, adaptador y contexto
+
+### Primera prueba
+
+1. Elige pi u OpenCode y abre la ficha correspondiente. Fija la revisión del modelo base y el adaptador.
+2. Sigue la ruta documentada para servirlo, por ejemplo con vLLM. Conecta el cliente a la dirección de prueba.
+3. Pide una edición inocua en una carpeta temporal y compara el diff con el que propone el modelo base.
+
+**Qué comprobar:** El servidor reporta el adaptador correcto y el cliente modifica únicamente el archivo de prueba esperado.
+
+**Cuenta y compatibilidad:** Las fichas documentan vLLM y llama.cpp con su cliente correspondiente. La ruta con descarga y cómputo propios usa modelos locales. La compatibilidad documentada en estas fuentes cubre pi y OpenCode.
+
+**Costes:** Adaptadores bajo Apache 2.0. Revisa también la licencia del modelo base. Operar el servidor usa disco y equipo o GPU alquilada. Los pesos base BF16 ocupan alrededor de 54 GB antes del contexto.
+
+### Mejoras después de la primera prueba
+
+- Compara resultados y memoria con el modelo base usando la misma tarea y la misma configuración.
+
+### Límites
+
+- El adaptador depende del checkpoint base. Los resultados publicados dependen del cliente y de los parámetros de evaluación.
+
+Fichas del catálogo: [vllm](fichas/vllm.md) · [opencode](fichas/opencode.md) · [llama-cpp](fichas/llama-cpp.md)
+
+### Fuentes
+
+- [Ficha y pasos para pi](https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted) · 2026-11-22
+- [Ficha y pasos para OpenCode](https://huggingface.co/harness-hub/Qwen3.8-27B-opencode-adapted) · 2026-11-22
+
+<a id="nemotron-bolt"></a>
+
+## NVIDIA Nemotron 3.5 Bolt E4B
+
+**Tipo:** Modelo de pesos abiertos
+
+Modelo multimodal pequeño en parámetros activos con pesos publicados por NVIDIA. Admite ensayos de preguntas sobre imágenes y texto.
+
+### Antes de empezar
+
+- Pesos oficiales y entorno compatible con la variante seleccionada
+- Equipo con memoria y disco suficientes y una imagen ficticia o pública
+
+### Primera prueba
+
+1. Abre la ficha oficial y revisa la licencia y variantes. Elige la guía para Transformers o vLLM según tu equipo.
+2. Descarga la revisión que usarás y realiza una prueba con una imagen de ejemplo.
+3. Limita el contexto y comprueba qué modelo se cargó, cuánta memoria consume y si interpreta bien la imagen.
+
+**Qué comprobar:** La respuesta describe una característica observable de la imagen de prueba y puedes repetirla con los mismos pesos.
+
+**Cuenta y compatibilidad:** La ficha BF16 documenta Transformers y vLLM. El acceso local depende del motor, versión y formato. Revisa una variante oficial específica si vas a usar otro motor.
+
+**Costes:** Pesos sujetos a OpenMDW 1.1. El coste de usar un equipo propio o GPU alquilada es independiente de la descarga.
+
+### Mejoras después de la primera prueba
+
+- Compara la memoria del formato BF16 con una variante compatible de menor precisión antes de cambiar de equipo.
+
+### Límites
+
+- E4B describe parámetros activos. Para estimar memoria cuenta todos los pesos y el contexto de la variante elegida.
+
+Fichas del catálogo: [vllm](fichas/vllm.md)
+
+### Fuentes
+
+- [Ficha oficial, licencia y ejecución](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16) · 2026-11-22
+
+<a id="chrome-webmcp"></a>
+
+## WebMCP y MCP según Chrome
+
+**Tipo:** Guía de integración web
+
+Ayuda a elegir cómo exponer una función de una página a un agente o cómo ofrecer herramientas desde un servidor MCP.
+
+### Antes de empezar
+
+- Navegador para leer y un sitio de prueba si quieres experimentar
+- Chrome compatible con la prueba de origen o configuración de desarrollo descrita por Google
+
+### Primera prueba
+
+1. Lee la comparación y elige una función sencilla, como filtrar un listado público.
+2. Decide si necesita el estado de la página abierta o si puede ejecutarse desde un servidor independiente.
+3. Si pruebas WebMCP, registra solo una acción sin escritura y comprueba en Chrome que se descubre y devuelve el resultado esperado.
+
+**Qué comprobar:** Puedes explicar por qué la acción va en la página o en un servidor y qué cliente puede invocarla.
+
+**Cuenta y compatibilidad:** WebMCP sigue como propuesta con prueba de origen desde Chrome 149 según la guía. Comprueba soporte del navegador y del cliente. MCP de servidor tiene su propia ruta de conexión para cada agente.
+
+**Costes:** Guías y experimento de navegador sin tarifa de lectura. Si usas un modelo hospedado o un servidor MCP externo, estima su gasto por separado.
+
+### Mejoras después de la primera prueba
+
+- Reserva confirmaciones para operaciones con efectos y deja que el sitio siga funcionando para personas sin un agente.
+
+### Límites
+
+- Versiones, permisos y disponibilidad varían según navegador. Revisa la documentación antes de diseñar una dependencia de producción.
+
+Fichas del catálogo: [mcp-inspector](fichas/mcp-inspector.md)
+
+### Fuentes
+
+- [Cuándo usar WebMCP y MCP](https://developer.chrome.com/docs/ai/webmcp/compare-mcp) · 2026-11-22
+- [Requisitos y estado en Chrome](https://developer.chrome.com/docs/ai/webmcp) · 2026-11-22
+
+<a id="gemini-carbon"></a>
+
+## Gemini 4 Carbon
+
+**Tipo:** Modelo hospedado
+
+Modelo de Google para tareas largas de razonamiento y desarrollo. Puedes evaluarlo en un problema acotado antes de incorporarlo a un flujo habitual.
+
+### Antes de empezar
+
+- Cuenta de Google con acceso al modelo
+- Para API, proyecto con facturación y clave. Para uso en Antigravity, acceso del plan Google AI Ultra según disponibilidad
+
+### Primera prueba
+
+1. Elige si vas a usar la sesión de Antigravity o consumir la API desde tu código.
+2. Pide a Carbon revisar un diseño ficticio y devolver tres decisiones con su justificación.
+3. Si usas API, revisa el identificador de modelo, uso facturado y límite del proyecto.
+
+**Qué comprobar:** Puedes documentar qué modelo se usó y qué cuenta, cuota o proyecto cubrió esa petición.
+
+**Cuenta y compatibilidad:** Google documenta Gemini API de pago y disponibilidad para Google AI Ultra en Antigravity. El servicio ejecuta el modelo en Google. Claude Code, Codex y los motores locales tienen rutas de acceso propias.
+
+**Costes:** Google anunció una tarifa introductoria de USD 2 por millón de tokens de entrada y USD 10 de salida para la API. Confirma el precio vigente en tu proyecto. La suscripción tiene sus propias cuotas.
+
+### Mejoras después de la primera prueba
+
+- Compara Carbon y un modelo más económico sobre el mismo resultado esperado antes de elegir uno para tareas habituales.
+
+### Límites
+
+- La disponibilidad depende de cuenta, región y plan. Una promoción puede terminar y algunos trabajos consumen tokens de razonamiento.
+
+### Fuentes
+
+- [Guía del desarrollador](https://aistudio.google.com/learn/gemini-4-carbon-developer-guide) · 2026-11-22
+- [Anuncio de acceso para desarrolladores](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/) · 2026-11-22
+- [Información oficial de precio introductorio](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/) · 2026-11-22
+
+<a id="openai-background"></a>
+
+## OpenAI Responses API en segundo plano
+
+**Tipo:** Guía de API
+
+Inicia una respuesta larga en la API y recupera su estado y resultado desde tu aplicación.
+
+### Antes de empezar
+
+- Proyecto OpenAI API, clave restringida y acceso a un modelo compatible
+- Una app de prueba que pueda guardar el identificador de la respuesta
+
+### Primera prueba
+
+1. Con datos ficticios, crea una respuesta con la opción de segundo plano de la guía.
+2. Guarda el identificador y consulta el estado con espera entre intentos.
+3. Muestra el resultado cuando finalice y conserva los estados de error o cancelación para que puedan revisarse.
+
+**Qué comprobar:** La aplicación guarda un identificador, distingue estados intermedios y finales y muestra una sola respuesta.
+
+**Cuenta y compatibilidad:** Función de la API Responses que requiere acceso con un proyecto API. Un agente de código puede ayudar a integrarla. El modelo se ejecuta en OpenAI.
+
+**Costes:** Consulta las tarifas del modelo, tokens y herramientas elegidas en la API. La sesión de Codex usa su propio acceso. Comprueba créditos aplicables en la facturación del proyecto.
+
+### Mejoras después de la primera prueba
+
+- Cuando la aplicación madure, evalúa eventos de finalización con verificación de firma y manejo de reintentos.
+
+### Límites
+
+- La guía vigente indica almacenamiento temporal de datos, incluso con `store: false` o configuración Zero Data Retention. Revisa las ventanas y controles antes de enviar contenido sensible.
+
+Fichas del catálogo: [openai-python](fichas/openai-python.md)
+
+### Fuentes
+
+- [Modo en segundo plano](https://developers.openai.com/api/docs/guides/background) · 2026-11-22
+- [Tarifas de la API](https://developers.openai.com/api/docs/pricing) · 2026-11-22
+
+<a id="owasp-cheat-sheets"></a>
+
+## OWASP Cheat Sheet Series
+
+**Tipo:** Listas de comprobación defensiva
+
+Guías concretas para diseñar autenticación, registros, gestión de secretos y otros controles de seguridad.
+
+### Antes de empezar
+
+- Navegador y un flujo propio que quieras documentar
+
+### Primera prueba
+
+1. Elige una guía, por ejemplo la de autenticación.
+2. Toma un control relevante y compáralo con tu diseño. Documenta quién lo aplica y qué evidencia lo demostraría.
+3. Añade una prueba pequeña con datos de ejemplo para evitar regresiones.
+
+**Qué comprobar:** La revisión identifica el control, su ubicación y una evidencia que otra persona puede comprobar.
+
+**Cuenta y compatibilidad:** Documentación pública aplicable a distintos lenguajes y marcos. Puedes usarla en el navegador o como referencia al revisar código.
+
+**Costes:** Lectura gratuita. El sitio publica la licencia de sus materiales. No exige una cuenta de IA.
+
+### Mejoras después de la primera prueba
+
+- Convierte los controles que aplican a tu proyecto en parte de la revisión de cambios.
+
+### Límites
+
+- Ajusta cada control al riesgo real y comprueba también la configuración del entorno donde despliegas.
+
+### Fuentes
+
+- [Índice de guías OWASP](https://cheatsheetseries.owasp.org/) · 2026-11-22
+- [Guía de autenticación](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) · 2026-11-22
+
+<a id="virustotal-ai"></a>
+
+## VirusTotal para agentes
+
+**Tipo:** Conector MCP de análisis defensivo
+
+Consulta informes existentes sobre archivos, dominios o IP y muestra las señales que VirusTotal tiene registradas.
+
+### Antes de empezar
+
+- Cuenta Google para VirusTotal AI y un cliente compatible
+- Un dominio público conocido o un hash público que ya tenga informe
+
+### Primera prueba
+
+1. Abre la guía específica de tu cliente y concede solo lectura de informes.
+2. Solicita el informe de un dominio público y confirma que la actividad indique una llamada al conector.
+3. Revisa la fecha y el enlace del informe. Comprueba dónde se revoca el acceso.
+
+**Qué comprobar:** Ves un informe real devuelto por el conector y puedes identificar la conexión que lo consultó.
+
+**Cuenta y compatibilidad:** VirusTotal publica guías para Claude, Claude Code, Codex y Antigravity CLI, con estado de validación por cliente. OAuth usa cuenta Google. No se necesita clave de la API clásica de VirusTotal.
+
+**Costes:** Cuotas gratuitas publicadas de 60 consultas por minuto y 1 000 por día UTC por cuenta OAuth o token. Hasta los informes repetidos cuentan. El cliente de IA puede tener sus propias cuotas.
+
+### Mejoras después de la primera prueba
+
+- Conserva el hash y la fecha de consulta para que otra persona pueda revisar la misma evidencia.
+
+### Límites
+
+- Empieza con lectura. Subir archivos y enviar URL usan otros permisos y el esquema de compartición estándar de VirusTotal.
+- Una detección es una señal que debes interpretar con la procedencia y el comportamiento del archivo.
+
+### Fuentes
+
+- [VirusTotal AI, clientes, cuotas y privacidad](https://ai.virustotal.com/) · 2026-11-22
+
+<a id="roadmap-ciberseguridad"></a>
+
+## roadmap.sh Cyber Security
+
+**Tipo:** Mapa de estudio
+
+Ordena los conceptos de seguridad en un mapa que puedes usar para preparar un plan de estudio.
+
+### Antes de empezar
+
+- Navegador y un tema inicial como redes, autenticación o registros
+
+### Primera prueba
+
+1. Abre el mapa y elige tres conceptos de redes o seguridad defensiva.
+2. Anota para qué sirve cada concepto y aplícalo a un sistema ficticio.
+3. Marca como siguiente tema aquello que todavía no puedas explicar.
+
+**Qué comprobar:** Tienes un plan corto con orden, ejemplos propios y un criterio de avance.
+
+**Cuenta y compatibilidad:** Mapa público en navegador. La cuenta sirve para guardar avance si quieres usar esa función.
+
+**Costes:** Consulta pública del mapa sin clave de IA. Otros planes o materiales enlazados pueden tener condiciones propias.
+
+### Mejoras después de la primera prueba
+
+- Cruza los temas de autenticación con la lista de comprobación de OWASP cuando revises tu propia aplicación.
+
+### Límites
+
+- Revisa la actualidad de cada recurso externo y enfoca la ruta inicial en protección y monitoreo.
+
+### Fuentes
+
+- [Mapa público](https://roadmap.sh/cyber-security) · 2026-11-22
+
+<a id="portswigger-academy"></a>
+
+## PortSwigger Web Security Academy
+
+**Tipo:** Formación en seguridad web
+
+Material de referencia de PortSwigger para reconocer problemas de autenticación y diseño de permisos en aplicaciones web.
+
+### Antes de empezar
+
+- Navegador y una aplicación propia o ficticia para diseñar su lista de controles
+
+### Primera prueba
+
+1. Escoge en el temario autenticación o control de acceso e identifica qué activo debe protegerse.
+2. Dibuja dos roles en una app ficticia y escribe qué acción debe poder realizar cada uno.
+3. Convierte cada regla en un criterio de aceptación, incluyendo la respuesta esperada al faltar permisos.
+
+**Qué comprobar:** Tienes una lista de controles y criterios para revisar la autenticación y los roles de tu propia app.
+
+**Cuenta y compatibilidad:** Material público en navegador. La prueba documental usa la aplicación ficticia. Una cuenta de la Academy permite llevar el progreso.
+
+**Costes:** Academy se anuncia gratuita. Las licencias comerciales de Burp Suite son un producto aparte.
+
+### Mejoras después de la primera prueba
+
+- Contrasta tus criterios con las recomendaciones de autenticación y control de acceso de OWASP.
+
+### Límites
+
+- Usa esta ficha para diseño de controles y validación autorizada de tus aplicaciones.
+
+### Fuentes
+
+- [Temario y condiciones de la Academy](https://portswigger.net/web-security) · 2026-11-22
+- [Lista defensiva de OWASP para autenticación](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) · 2026-11-22
+
+<a id="mitre-attack-defensa"></a>
+
+## MITRE ATT&CK
+
+**Tipo:** Base de conocimiento defensiva
+
+Usa un vocabulario común para relacionar casos de detección con comportamientos observados y comprobar qué señales cubre tu equipo.
+
+### Antes de empezar
+
+- Navegador y un registro de seguridad de ejemplo
+- Una hoja para anotar qué señal existe y qué falta
+
+### Primera prueba
+
+1. Elige un caso defensivo, como una alerta de uso anómalo de cuenta.
+2. Busca el identificador de la técnica que describe la señal y lee sus mitigaciones.
+3. Documenta qué registro de tu ejemplo permite detectarla y qué revisión humana harías.
+
+**Qué comprobar:** Cada relación entre señal y técnica trae identificador, fuente del registro y acción defensiva.
+
+**Cuenta y compatibilidad:** Referencia pública usable por equipos con SIEM o con una hoja de cálculo. Para leer y preparar la matriz no necesitas una API.
+
+**Costes:** Consulta web sin cargo. Cualquier coste de almacenamiento, SIEM o monitoreo depende de tu infraestructura.
+
+### Mejoras después de la primera prueba
+
+- Registra versión de la matriz y revisa cambios antes de actualizar una regla.
+
+### Límites
+
+- La terminología organiza observaciones. El contexto y la evidencia siguen siendo necesarios para concluir qué pasó.
+
+### Fuentes
+
+- [Base oficial ATT&CK](https://attack.mitre.org/) · 2026-11-22
 
 ## Prompts
 
