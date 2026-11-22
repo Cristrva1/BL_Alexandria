@@ -1,0 +1,2024 @@
+{
+ "lote": "drive-2026-11-22",
+ "fecha": "2026-11-22",
+ "metodo": "Revisión documental individual. Identidad, README, licencia, distribución y avisos públicos; sin instalación ni ejecución de terceros.",
+ "repos": [
+  {
+   "gh": "chidiwilliams/buzz",
+   "id": "buzz",
+   "cat": 29,
+   "sub": "stt",
+   "kind": "app",
+   "name": "Buzz",
+   "one": "Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propio equipo.",
+   "how": "Importa un audio o video, ejecuta el modelo elegido y permite revisar el texto junto a la grabación antes de exportar TXT, SRT o VTT.",
+   "ready": true,
+   "setup": "easy",
+   "goals": [
+    "voz",
+    "local"
+   ],
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "whisper",
+    "subtítulos",
+    "transcripción"
+   ],
+   "steps": [
+    "Abre la distribución enlazada por el proyecto y elige la versión de tu sistema; en Linux hay Flatpak.",
+    "En Windows el proyecto avisa que el instalador no está firmado. No desactives las protecciones: coteja el archivo y su SHA-256 con el release, o elige otra distribución.",
+    "Alternativa documentada: instala el paquete oficial de PyPI 1.4.5 en un entorno de Python 3.12 con FFmpeg. Su metadato admite 3.12 y difiere de la rama de desarrollo.",
+    "Abre un audio breve, selecciona Whisper local y descarga los pesos si los necesita; revisa el resultado y expórtalo."
+   ],
+   "examples": [
+    "Convertir una nota de voz propia en texto editable.",
+    "Crear subtítulos en SRT para una demostración grabada."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "optional",
+    "local_model": "supported",
+    "cost": "choice",
+    "hardware": "model_dependent",
+    "api_note": "Whisper local no requiere clave de OpenAI; las opciones remotas se configuran aparte.",
+    "local_note": "Elige explícitamente un backend local. La descarga inicial de pesos usa internet.",
+    "cost_note": "La app es MIT y no hay pago por transcribir con Whisper local. Las opciones de API se cobran según su proveedor.",
+    "hardware_note": "El tamaño del modelo y el backend determinan memoria, disco y velocidad.",
+    "sources": [
+     "https://github.com/chidiwilliams/buzz/blob/ac3d9da57dd155c8f8fba5f40644392e38423e6f/README.md",
+     "https://flathub.org/apps/io.github.chidiwilliams.Buzz",
+     "https://github.com/chidiwilliams/buzz/releases",
+     "https://pypi.org/project/buzz-captions/1.4.5/",
+     "https://github.com/chidiwilliams/buzz/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://flathub.org/apps/io.github.chidiwilliams.Buzz",
+   "caveat": "Instalador Windows sin firma según el autor; GitHub publica digests para los archivos del release revisado. El digest permite cotejar integridad, no prueba ausencia de malware.",
+   "note": "Instalador Windows sin firma según el autor; GitHub publica digests para los archivos del release revisado. El digest permite cotejar integridad, no prueba ausencia de malware.",
+   "try": [
+    "Importa diez segundos de audio propio y elige un modelo Whisper local pequeño.",
+    "Aparece una transcripción que puedes revisar y exportar como SRT."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "LibreTranslate/LibreTranslate",
+   "id": "libretranslate",
+   "cat": 22,
+   "sub": "infraestructura",
+   "kind": "server",
+   "name": "LibreTranslate",
+   "one": "Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos.",
+   "how": "Recibe texto, elige el par de idiomas y lo traduce con Argos Translate en la instancia que configuraste.",
+   "goals": [
+    "servicios",
+    "local"
+   ],
+   "mcp": true,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "traducción",
+    "argos",
+    "autoalojado"
+   ],
+   "steps": [
+    "Elige una versión y prepara un entorno Python aislado o Docker; abre la guía de instalación.",
+    "Para una prueba en Python instala libretranslate y carga solo los idiomas necesarios. Limita el servicio al equipo de prueba.",
+    "Abre la interfaz local y traduce una frase pública. Si después usas la instancia alojada o MCP, revisa la URL y la clave de esa instancia."
+   ],
+   "examples": [
+    "Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.",
+    "Conectar una aplicación interna a una instancia de traducción administrada por tu equipo."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "local_model": "supported",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "api_note": "La instancia propia no necesita clave de un proveedor de IA. El servicio alojado sí exige su propia clave para integrar la API.",
+    "local_note": "Argos ejecuta los modelos de traducción en la instancia; estos no son un chat ni un LLM de propósito general.",
+    "cost_note": "Código AGPL-3.0 y consumo de tu equipo al autoalojar; alojamiento y API gestionada tienen condiciones propias.",
+    "subscription_note": "El proyecto documenta un conector MCP para Claude y OpenCode. No se verificó configuración específica de Claude Code, Codex o Antigravity; un plan no incluye acceso a la instancia alojada.",
+    "other_access": "MCP oficial documentado para Claude y OpenCode. Revisa el endpoint: el ejemplo apunta al servicio alojado.",
+    "hardware_note": "CPU y disco para modelos de idiomas. La aceleración CUDA es una opción distinta.",
+    "sources": [
+     "https://github.com/LibreTranslate/LibreTranslate/blob/84cd56c061a7ba3955b49efdaee2ac54dcbca07f/README.md",
+     "https://docs.libretranslate.com/guides/installation/",
+     "https://docs.libretranslate.com/guides/mcp_server/",
+     "https://docs.libretranslate.com/",
+     "https://pypi.org/project/libretranslate/1.9.6/",
+     "https://github.com/LibreTranslate/LibreTranslate/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://docs.libretranslate.com/guides/installation/",
+   "caveat": "En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.",
+   "note": "En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.",
+   "try": [
+    "Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning».",
+    "La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "ccusage/ccusage",
+   "id": "ccusage",
+   "cat": 23,
+   "sub": "observabilidad",
+   "kind": "app",
+   "name": "ccusage",
+   "one": "Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales.",
+   "how": "Lee archivos locales de sesiones, agrupa tokens por asistente y periodo, y les aplica precios de referencia para estimar importes.",
+   "goals": [
+    "programar"
+   ],
+   "mcp": true,
+   "tags": [
+    "consumo",
+    "tokens",
+    "costos"
+   ],
+   "steps": [
+    "Comprueba que el cliente que quieres medir ya generó sesiones y que la guía lo reconoce como fuente.",
+    "Elige el paquete oficial en la guía. Para la primera revisión limita el informe a un cliente y usa datos de precios en caché si quieres trabajar sin red.",
+    "Compara tokens por día y valida facturación o cuotas en el proveedor, no en la estimación de ccusage."
+   ],
+   "examples": [
+    "Identificar el día con más tokens en Claude Code.",
+    "Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "project_integration",
+    "codex": "project_integration",
+    "antigravity": "project_integration",
+    "api_note": "El informe usa registros existentes y no llama a un LLM. Puede consultar precios si no usas el modo offline.",
+    "cost_note": "El paquete es MIT. La estimación por tarifas no representa la factura, el saldo ni los límites de tu plan.",
+    "subscription_note": "Compatibilidad como lector de registros locales de los tres clientes; no inicia sesión ni ejecuta modelos con su suscripción.",
+    "sources": [
+     "https://github.com/ccusage/ccusage/blob/8fd41cd10e595cd4231a5627427d1725112ad718/README.md",
+     "https://ccusage.com/guide/installation",
+     "https://ccusage.com/guide/",
+     "https://www.npmjs.com/package/ccusage/v/20.0.51",
+     "https://github.com/ccusage/ccusage/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://ccusage.com/guide/installation",
+   "caveat": "Puede leer registros de sesión. Usa un perfil de prueba para una primera revisión, un paquete de versión identificada y no publiques los registros.",
+   "note": "Puede leer registros de sesión. Usa un perfil de prueba para una primera revisión, un paquete de versión identificada y no publiques los registros.",
+   "try": [
+    "Usa la ruta oficial de instalación, abre el informe diario de un cliente con actividad previa y fíjate en el periodo.",
+    "Aparece una tabla de tokens por día para ese cliente; la cifra de coste es una estimación."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "android/skills",
+   "id": "android-skills",
+   "cat": 27,
+   "sub": "skills",
+   "kind": "skill",
+   "name": "Android Skills",
+   "one": "Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android.",
+   "how": "El cliente carga la skill relacionada con la tarea y aplica las guías y herramientas de Android disponibles en el proyecto.",
+   "goals": [
+    "skills",
+    "programar"
+   ],
+   "tags": [
+    "android",
+    "skills",
+    "móvil"
+   ],
+   "steps": [
+    "Confirma el asistente que usas y abre la instalación para ese cliente.",
+    "Instala solo la skill que necesitas, en un proyecto Android de ejemplo. Prepara Android CLI, el SDK o el emulador si la tarea lo requiere.",
+    "Pide una revisión de un archivo sin autorizar cambios amplios. Comprueba las herramientas que pide y el resultado antes de ampliar el alcance."
+   ],
+   "examples": [
+    "Pedir una revisión de cómo maneja una pantalla los bordes del sistema.",
+    "Examinar en un proyecto de ejemplo por qué R8 conserva clases que se esperaban eliminar."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "host",
+    "antigravity": "host",
+    "local_model": "not_documented",
+    "api_note": "Las instrucciones no necesitan una clave propia. Usan el acceso del asistente; los servicios opcionales tienen requisitos separados.",
+    "cost_note": "Skills Apache-2.0. El consumo del asistente y cualquier dispositivo o servicio remoto siguen sus propias condiciones.",
+    "local_note": "El SDK o emulador puede correr localmente; eso no implica que el modelo del asistente sea local.",
+    "other_access": "Google documenta Android CLI y Gemini como rutas adicionales.",
+    "sources": [
+     "https://github.com/android/skills/blob/c72942584fff970dac86ced78b367fce0c441e52/README.md",
+     "https://developer.android.com/tools/agents/android-skills",
+     "https://developer.android.com/tools/agents/android-cli",
+     "https://github.com/android/skills/blob/main/LICENSE.txt"
+    ]
+   },
+   "url": "https://developer.android.com/tools/agents/android-skills",
+   "caveat": "Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.",
+   "note": "Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.",
+   "try": [
+    "En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada.",
+    "El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "AgriciDaniel/claude-ads",
+   "id": "claude-ads",
+   "cat": 27,
+   "sub": "dominio",
+   "kind": "skill",
+   "name": "Claude Ads",
+   "one": "Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.",
+   "how": "Contrasta métricas con reglas por plataforma y conserva un informe con lo que pudo comprobar.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "Añade el marketplace y el plugin de Claude Ads desde las instrucciones de Quickstart; abre el apartado de auditoría sin habilitar acciones de escritura.",
+    "Selecciona la skill de auditoría y entrega métricas ficticias, sin conectar cuentas.",
+    "Comprueba el resultado: el informe separa hallazgos, evidencia y datos que faltan."
+   ],
+   "examples": [
+    "Crear una lista de comprobaciones para una campaña ficticia.",
+    "Preparar un informe a partir de un CSV de métricas inventadas."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Claude Code, una cuenta de prueba y Python 3.11 o 3.12 si activas dependencias gestionadas.",
+    "sources": [
+     "https://github.com/AgriciDaniel/claude-ads/blob/fc3908e786c318776df89a3a098333da377364be/README.md",
+     "https://github.com/AgriciDaniel/claude-ads/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/AgriciDaniel/claude-ads/blob/fc3908e786c318776df89a3a098333da377364be/README.md",
+   "caveat": "Las operaciones que cambian cuentas dependen de conectores y permisos; el catálogo recomienda empezar solo con datos de muestra.",
+   "note": "Las operaciones que cambian cuentas dependen de conectores y permisos; el catálogo recomienda empezar solo con datos de muestra.",
+   "try": [
+    "Selecciona la skill de auditoría y entrega métricas ficticias, sin conectar cuentas.",
+    "El informe separa hallazgos, evidencia y datos que faltan."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "agronholm/apscheduler",
+   "id": "apscheduler",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "library",
+   "name": "APScheduler",
+   "one": "Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.",
+   "how": "Un planificador conserva los disparadores y llama a funciones cuando llega su hora.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Instala APScheduler 3.x en el entorno de prueba siguiendo el tutorial y configura el planificador en segundo plano de esa rama.",
+    "Sigue la guía 3.x y programa una función de prueba que imprima la hora.",
+    "Comprueba el resultado: la función se ejecuta en el intervalo elegido y deja una marca visible."
+   ],
+   "examples": [
+    "Actualizar un dato local cada minuto.",
+    "Programar un recordatorio interno una vez al día."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Python y una versión estable 3.x conforme a su guía.",
+    "sources": [
+     "https://github.com/agronholm/apscheduler/blob/a37e6c970419a29588818dd91bd2052776849b2b/README.rst",
+     "https://apscheduler.readthedocs.io/en/3.x/userguide.html",
+     "https://github.com/advisories/GHSA-9cfw-f3f9-7mm7",
+     "https://github.com/agronholm/apscheduler/blob/master/LICENSE.txt"
+    ]
+   },
+   "url": "https://apscheduler.readthedocs.io/en/3.x/userguide.html",
+   "caveat": "Haz la primera prueba solo con el almacén en memoria. GHSA-2r6w-vc63-g3hx afecta a los almacenes persistentes de 3.x y no indica parche; las preversiones 4.0.0a1 a 4.0.0a6 tienen un aviso distinto.",
+   "note": "Haz la primera prueba solo con el almacén en memoria. GHSA-2r6w-vc63-g3hx afecta a los almacenes persistentes de 3.x y no indica parche; las preversiones 4.0.0a1 a 4.0.0a6 tienen un aviso distinto.",
+   "try": [
+    "Sigue la guía 3.x y programa una función de prueba que imprima la hora.",
+    "La función se ejecuta en el intervalo elegido y deja una marca visible."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "anthropics/knowledge-work-plugins",
+   "id": "knowledge-work-plugins",
+   "cat": 27,
+   "sub": "dominio",
+   "kind": "skill",
+   "name": "Knowledge Work Plugins",
+   "one": "Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.",
+   "how": "Cada plugin agrupa instrucciones, comandos y conectores relacionados con el trabajo.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "En Cowork abre el catálogo oficial; en Claude Code añade el marketplace del repositorio e instala solo el plugin de ventas.",
+    "Elige un plugin de ventas desde el marketplace y prepara un brief sobre una empresa ficticia.",
+    "Comprueba el resultado: claude devuelve objetivos y preguntas sin conectarse a sistemas reales."
+   ],
+   "examples": [
+    "Preparar preguntas para una reunión ficticia.",
+    "Clasificar tres tickets inventados sin abrir un CRM."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Claude Cowork o Claude Code y, solo para conectores, cuentas de prueba y permisos limitados.",
+    "sources": [
+     "https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md",
+     "https://claude.com/plugins",
+     "https://github.com/anthropics/knowledge-work-plugins/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://claude.com/plugins",
+   "caveat": "El anfitrión consume su propio plan; los conectores de trabajo pueden requerir otra cuenta. Revisa cada plugin por separado.",
+   "note": "El anfitrión consume su propio plan; los conectores de trabajo pueden requerir otra cuenta. Revisa cada plugin por separado.",
+   "try": [
+    "Elige un plugin de ventas desde el marketplace y prepara un brief sobre una empresa ficticia.",
+    "Claude devuelve objetivos y preguntas sin conectarse a sistemas reales."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "aurelio-labs/semantic-router",
+   "id": "semantic-router",
+   "cat": 3,
+   "sub": "py",
+   "kind": "library",
+   "name": "Semantic Router",
+   "one": "Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.",
+   "how": "Compara la representación de la consulta con frases que ilustran cada intención.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "steps": [
+    "En un entorno Python instala la rama 1.x documentada y prepara un codificador local compatible, como el adaptador FastEmbed descrito.",
+    "Crea dos rutas con frases ficticias y usa un codificador local documentado.",
+    "Comprueba el resultado: frases similares llegan a la ruta esperada y puedes revisar las que no encajan."
+   ],
+   "examples": [
+    "Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.",
+    "Separar solicitudes sobre facturación de solicitudes de soporte."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "optional",
+    "cost": "choice",
+    "local_model": "supported",
+    "api_note": "La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.",
+    "cost_note": "La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.",
+    "local_note": "La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.",
+    "hardware_note": "Python, una versión actual de la rama 1.x y un codificador compatible.",
+    "sources": [
+     "https://github.com/aurelio-labs/semantic-router/blob/168d9381b0311f4be048db03603a86f7ccfce451/README.md",
+     "https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction",
+     "https://github.com/advisories/GHSA-98x5-vq43-vc5p",
+     "https://github.com/aurelio-labs/semantic-router/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction",
+   "caveat": "El aviso por una dependencia comprometida afecta a versiones 0.1.8 a anteriores a 0.1.15. Evita esas versiones y revisa las dependencias fijadas.",
+   "note": "El aviso por una dependencia comprometida afecta a versiones 0.1.8 a anteriores a 0.1.15. Evita esas versiones y revisa las dependencias fijadas.",
+   "try": [
+    "Crea dos rutas con frases ficticias y usa un codificador local documentado.",
+    "Frases similares llegan a la ruta esperada y puedes revisar las que no encajan."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "celery/celery",
+   "id": "celery",
+   "cat": 1,
+   "sub": "motores",
+   "kind": "framework",
+   "name": "Celery",
+   "one": "Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.",
+   "how": "El intermediario entrega mensajes a los trabajadores, que consumen la cola fuera del proceso de la aplicación.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "automatizar"
+   ],
+   "license": "BSD-3-Clause",
+   "steps": [
+    "Instala la versión estable en un entorno Python, prepara Redis o RabbitMQ y crea el archivo del tutorial con un proceso trabajador separado.",
+    "Completa el tutorial con una tarea que sume dos números y un intermediario local.",
+    "Comprueba el resultado: el proceso trabajador recibe la tarea y el resultado contiene la suma esperada."
+   ],
+   "examples": [
+    "Procesar una miniatura de prueba en segundo plano.",
+    "Generar un informe de ejemplo en una cola distinta a la interfaz web."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Python compatible con la versión estable elegida y un intermediario local como Redis o RabbitMQ.",
+    "sources": [
+     "https://github.com/celery/celery/blob/29b14de6d95de5aa9032ca2c364e23b8979e8642/README.rst",
+     "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
+     "https://github.com/celery/celery/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
+   "caveat": "Mantén el intermediario fuera de internet y usa cargas de prueba. Si lo alojas, cuenta procesos, memoria y persistencia.",
+   "note": "Mantén el intermediario fuera de internet y usa cargas de prueba. Si lo alojas, cuenta procesos, memoria y persistencia.",
+   "try": [
+    "Completa el tutorial con una tarea que sume dos números y un intermediario local.",
+    "El proceso trabajador recibe la tarea y el resultado contiene la suma esperada."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "cloudflare/kitesurf",
+   "id": "kitesurf",
+   "cat": 32,
+   "sub": "motores-web",
+   "kind": "engine",
+   "name": "Kitesurf",
+   "one": "Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.",
+   "how": "El motor renderiza páginas en un entorno experimental, con rutas separadas para la prueba local y Workers.",
+   "ready": false,
+   "setup": "heavy",
+   "goals": [
+    "web"
+   ],
+   "steps": [
+    "Elige la sección Run with Docker de la guía para una prueba solo local y conserva la dirección de escucha en loopback.",
+    "Usa el ejemplo local enlazado y abre una página de prueba sin cuentas ni cookies.",
+    "Comprueba el resultado: se obtiene una captura o HTML del ejemplo y puedes compararlo con tu navegador."
+   ],
+   "examples": [
+    "Capturar una página estática de prueba.",
+    "Comparar cómo se renderiza un componente en un entorno aislado."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "La demo local consume equipo; el uso hospedado de Dynamic Workers depende de Cloudflare Workers Paid.",
+    "hardware_note": "Contenedor local para el ejemplo o Cloudflare Workers con los servicios que indique su guía.",
+    "sources": [
+     "https://github.com/cloudflare/kitesurf/blob/9295cc263b0a74fb17048462504c16bdcf363589/README.md",
+     "https://kitesurf.dev/",
+     "https://github.com/cloudflare/kitesurf/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://kitesurf.dev/",
+   "caveat": "El motor es experimental. Workers y Dynamic Workers pueden requerir planes de Cloudflare; la demo local no exige cuenta.",
+   "note": "El motor es experimental. Workers y Dynamic Workers pueden requerir planes de Cloudflare; la demo local no exige cuenta.",
+   "try": [
+    "Usa el ejemplo local enlazado y abre una página de prueba sin cuentas ni cookies.",
+    "Se obtiene una captura o HTML del ejemplo y puedes compararlo con tu navegador."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "cmdai-hq/humans-md-plugins",
+   "id": "humans-md-plugins",
+   "cat": 2,
+   "sub": "metodologia",
+   "kind": "skill",
+   "name": "HUMANS.md Plugins",
+   "one": "Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.",
+   "how": "El plugin lee el archivo de preferencias y añade su contenido al contexto de una sesión.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "Crea un perfil de prueba desde el ejemplo y sigue la instalación de tu cliente. En Codex revisa el hook antes de confiar en él.",
+    "Crea un perfil con una sola preferencia ficticia y abre una nueva sesión.",
+    "Comprueba el resultado: el agente puede leer y explicar esa preferencia sin cargar notas reales."
+   ],
+   "examples": [
+    "Pedir que el agente avise antes de modificar archivos de configuración.",
+    "Reutilizar preferencias de comunicación entre dos clientes compatibles."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "host",
+    "antigravity": "host",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Node.js 22.18 o posterior según el README, un anfitrión compatible y perfil de prueba.",
+    "sources": [
+     "https://github.com/cmdai-hq/humans-md-plugins/blob/fab03e3c81544d418349b6c477049e31ab9bed1b/README.md",
+     "https://humansmd.dev/",
+     "https://github.com/cmdai-hq/humans-md-plugins/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://humansmd.dev/",
+   "caveat": "El autor indica pruebas solo en macOS. El proveedor del agente puede procesar el perfil; no guardes contraseñas ni datos sensibles.",
+   "note": "El autor indica pruebas solo en macOS. El proveedor del agente puede procesar el perfil; no guardes contraseñas ni datos sensibles.",
+   "try": [
+    "Crea un perfil con una sola preferencia ficticia y abre una nueva sesión.",
+    "El agente puede leer y explicar esa preferencia sin cargar notas reales."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "cpppppp7/video2threejs",
+   "id": "video2threejs",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "kind": "reference",
+   "name": "video2threejs",
+   "one": "Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.",
+   "how": "Descompone la referencia en geometría, cámara, luz y recursos que luego se ajustan por separado.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "3d"
+   ],
+   "steps": [
+    "Abre el README y el código de la escena publicada. Para aplicar la técnica, usa una pequeña escena propia en Three.js.",
+    "Abre el caso y localiza un punto de vista reconstruido para compararlo con su referencia.",
+    "Comprueba el resultado: puedes identificar una diferencia visible y el principio que la guía usa para reducirla."
+   ],
+   "examples": [
+    "Comparar el encuadre de una escena y su referencia.",
+    "Estudiar cómo combinar geometría y textura en una recreación sencilla."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "reference",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.",
+    "cost_note": "Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.",
+    "hardware_note": "Navegador para leer el caso y, si adaptas la técnica, una escena de prueba en Three.js.",
+    "sources": [
+     "https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md",
+     "https://github.com/cpppppp7/video2threejs/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md",
+   "caveat": "Es un caso técnico, no se verificó una app capaz de reconstruir cualquier clip.",
+   "note": "Es un caso técnico, no se verificó una app capaz de reconstruir cualquier clip.",
+   "try": [
+    "Abre el caso y localiza un punto de vista reconstruido para compararlo con su referencia.",
+    "Puedes identificar una diferencia visible y el principio que la guía usa para reducirla."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "danielfm/pybreaker",
+   "id": "pybreaker",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "library",
+   "name": "PyBreaker",
+   "one": "Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.",
+   "how": "Cuenta fallos y controla cuándo se dejan pasar nuevas llamadas y cuándo se comprueba la recuperación.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Instala pybreaker en un entorno Python de prueba y decora una función local siguiendo Usage.",
+    "Configura un ejemplo con una función local que falle repetidamente.",
+    "Comprueba el resultado: el interruptor abre y deja de invocar la función hasta el periodo de recuperación."
+   ],
+   "examples": [
+    "Evitar que una integración lenta bloquee todos los trabajos.",
+    "Probar cómo se recupera un cliente tras una caída ficticia."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Un entorno Python con una función ficticia que pueda fallar.",
+    "sources": [
+     "https://github.com/danielfm/pybreaker/blob/2b0b965fcfc7705ca9a776c614ea6cb3ec3fe783/README.rst",
+     "https://github.com/danielfm/pybreaker/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/danielfm/pybreaker/blob/2b0b965fcfc7705ca9a776c614ea6cb3ec3fe783/README.rst",
+   "caveat": "Redis es opcional para guardar el estado compartido; no sirve por sí solo para reintentos ni para definir tiempos de espera.",
+   "note": "Redis es opcional para guardar el estado compartido; no sirve por sí solo para reintentos ni para definir tiempos de espera.",
+   "try": [
+    "Configura un ejemplo con una función local que falle repetidamente.",
+    "El interruptor abre y deja de invocar la función hasta el periodo de recuperación."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "davila7/claude-code-templates",
+   "id": "claude-code-templates",
+   "cat": 2,
+   "sub": "catalogos",
+   "kind": "reference",
+   "name": "Claude Code Templates",
+   "one": "Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.",
+   "how": "Indexa recursos de distintas fuentes y los organiza como componentes instalables.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "Abre el catálogo web de AITMPL y navega por la sección Skills; esta primera prueba es de consulta.",
+    "Navega el catálogo y revisa los archivos y la licencia de una sola skill.",
+    "Comprueba el resultado: puedes explicar qué instalaría y detectar si añade scripts o conexiones."
+   ],
+   "examples": [
+    "Comparar dos plantillas de revisión de UI.",
+    "Encontrar un componente y revisar su procedencia antes de importarlo."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "reference",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "reference",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.",
+    "cost_note": "Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.",
+    "hardware_note": "Navegador; para una eventual adopción, Claude Code y una carpeta limpia.",
+    "sources": [
+     "https://github.com/davila7/claude-code-templates/blob/44fd6fda16f51e5accdde254d5f530fb45de7390/README.md",
+     "https://www.aitmpl.com",
+     "https://github.com/advisories/GHSA-79wm-x847-7cvg",
+     "https://github.com/davila7/claude-code-templates/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://www.aitmpl.com",
+   "caveat": "Se ficha como referencia. Para su CLI, la publicación 1.29.7 es posterior a la corrección de GHSA-79wm-x847-7cvg; revisa también los otros avisos y cada componente.",
+   "note": "Se ficha como referencia. Para su CLI, la publicación 1.29.7 es posterior a la corrección de GHSA-79wm-x847-7cvg; revisa también los otros avisos y cada componente.",
+   "try": [
+    "Navega el catálogo y revisa los archivos y la licencia de una sola skill.",
+    "Puedes explicar qué instalaría y detectar si añade scripts o conexiones."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "dmunozv04/iSponsorBlockTV",
+   "id": "isponsorblocktv",
+   "cat": 15,
+   "sub": "personal",
+   "kind": "app",
+   "name": "iSponsorBlockTV",
+   "one": "Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.",
+   "how": "El cliente consulta los segmentos de SponsorBlock y controla la reproducción en el dispositivo emparejado.",
+   "ready": true,
+   "setup": "easy",
+   "goals": [],
+   "steps": [
+    "Abre Installation, elige la distribución oficial v2.11.0 o superior y usa el emparejamiento de su guía con un televisor de prueba.",
+    "Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía.",
+    "Comprueba el resultado: un video con un segmento etiquetado lo salta según la configuración."
+   ],
+   "examples": [
+    "Probar el salto de una introducción marcada.",
+    "Configurar solo las categorías que quieres omitir en un televisor de prueba."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente.",
+    "sources": [
+     "https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md",
+     "https://github.com/advisories/GHSA-56v3-jrq2-4q9m",
+     "https://github.com/dmunozv04/iSponsorBlockTV/blob/main/LICENSE.md"
+    ]
+   },
+   "url": "https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md",
+   "caveat": "Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.",
+   "note": "Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.",
+   "try": [
+    "Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía.",
+    "Un video con un segmento etiquetado lo salta según la configuración."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "evan-kolberg/prediction-market-backtesting",
+   "id": "prediction-market-backtesting",
+   "cat": 14,
+   "sub": "cuant",
+   "kind": "library",
+   "name": "Prediction Market Backtesting",
+   "one": "Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.",
+   "how": "Convierte datos históricos en eventos que el simulador usa para evaluar una estrategia.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "finanzas"
+   ],
+   "steps": [
+    "Sigue Setup para preparar la versión de NautilusTrader que especifica el proyecto y descarga una muestra histórica del ejemplo.",
+    "Ejecuta el ejemplo introductorio con pocos datos históricos y sin credenciales de trading.",
+    "Comprueba el resultado: obtienes un resultado reproducible para el conjunto de datos utilizado."
+   ],
+   "examples": [
+    "Comparar dos supuestos de comisiones con datos pasados.",
+    "Medir cómo cambia una simulación si mueves el intervalo de prueba."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Entorno compatible con NautilusTrader y datos históricos de una muestra.",
+    "sources": [
+     "https://github.com/evan-kolberg/prediction-market-backtesting/blob/c76e77af00ef53472a9da8f66dae7fdd2d3e5928/README.md",
+     "https://evan-kolberg.github.io/prediction-market-backtesting/license/",
+     "https://github.com/evan-kolberg/prediction-market-backtesting/blob/v4.1-alpha/LICENSE"
+    ]
+   },
+   "url": "https://evan-kolberg.github.io/prediction-market-backtesting/license/",
+   "caveat": "Usa solo simulación. La licencia y atribuciones tienen alcances distintos por componente; lee las notas antes de redistribuir.",
+   "note": "Usa solo simulación. La licencia y atribuciones tienen alcances distintos por componente; lee las notas antes de redistribuir.",
+   "try": [
+    "Ejecuta el ejemplo introductorio con pocos datos históricos y sin credenciales de trading.",
+    "Obtienes un resultado reproducible para el conjunto de datos utilizado."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "feyninc/chonkie",
+   "id": "chonkie",
+   "cat": 6,
+   "sub": "rag",
+   "kind": "library",
+   "name": "Chonkie",
+   "one": "Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.",
+   "how": "Sus fragmentadores dividen texto por tamaño o señales semánticas para facilitar el índice posterior.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "documentos"
+   ],
+   "steps": [
+    "Instala el paquete base en un entorno Python y empieza por el ejemplo de fragmentación por tokens sin usar la API gestionada.",
+    "Instala la variante básica y divide dos párrafos de prueba con una estrategia simple.",
+    "Comprueba el resultado: obtienes fragmentos cuyo contenido y tamaño se pueden comprobar."
+   ],
+   "examples": [
+    "Dividir un manual por bloques para una búsqueda posterior.",
+    "Comparar fragmentos por tamaño fijo con los de una estrategia semántica."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "optional",
+    "cost": "choice",
+    "local_model": "supported",
+    "api_note": "La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.",
+    "cost_note": "La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.",
+    "local_note": "La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.",
+    "hardware_note": "Entorno Python y un archivo de texto sintético.",
+    "sources": [
+     "https://github.com/feyninc/chonkie/blob/664454b689d68614bcfc0b1d57fc2a28b5862825/README.md",
+     "https://docs.chonkie.ai",
+     "https://github.com/feyninc/chonkie/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://docs.chonkie.ai",
+   "caveat": "El corte básico no necesita IA. Algunos fragmentadores, modelos o la API alojada tienen dependencias, credenciales y costes propios.",
+   "note": "El corte básico no necesita IA. Algunos fragmentadores, modelos o la API alojada tienen dependencias, credenciales y costes propios.",
+   "try": [
+    "Instala la variante básica y divide dos párrafos de prueba con una estrategia simple.",
+    "Obtienes fragmentos cuyo contenido y tamaño se pueden comprobar."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "FlagOpen/FlagEmbedding",
+   "id": "flagembedding",
+   "cat": 6,
+   "sub": "vectores",
+   "kind": "library",
+   "name": "FlagEmbedding",
+   "one": "Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.",
+   "how": "Un modelo convierte textos en vectores o asigna puntuaciones a pares de consulta y documento.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "documentos"
+   ],
+   "steps": [
+    "Instala el paquete FlagEmbedding y elige el ejemplo de inferencia de un modelo pequeño de la familia BGE.",
+    "Selecciona un modelo local pequeño en la guía y compara una consulta con tres frases.",
+    "Comprueba el resultado: la salida contiene puntuaciones o vectores y permite ordenar las frases de prueba."
+   ],
+   "examples": [
+    "Encontrar el párrafo más relevante en un manual ficticio.",
+    "Comparar el orden de tres documentos antes y después de un reranker."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "supported",
+    "hardware": "model_dependent",
+    "api_note": "La prueba con los modelos locales indicados no necesita contratar una API de IA.",
+    "local_note": "La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.",
+    "cost_note": "La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.",
+    "hardware_note": "Python, dependencias del proyecto y pesos compatibles con la licencia y memoria de tu equipo.",
+    "sources": [
+     "https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md",
+     "https://github.com/FlagOpen/FlagEmbedding/blob/master/LICENSE"
+    ]
+   },
+   "url": "https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md",
+   "caveat": "El código es MIT; revisa la licencia y requisitos de cada conjunto de pesos. No necesitas una API de IA para el ejemplo local.",
+   "note": "El código es MIT; revisa la licencia y requisitos de cada conjunto de pesos. No necesitas una API de IA para el ejemplo local.",
+   "try": [
+    "Selecciona un modelo local pequeño en la guía y compara una consulta con tres frases.",
+    "La salida contiene puntuaciones o vectores y permite ordenar las frases de prueba."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "google-deepmind/robotics-antigravity-plugin",
+   "id": "robotics-antigravity-plugin",
+   "cat": 26,
+   "sub": "simulacion",
+   "kind": "skill",
+   "name": "Robotics for Antigravity",
+   "one": "Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.",
+   "how": "Las skills guían al asistente en el uso de simuladores y herramientas definidas para cada ejercicio.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "3d"
+   ],
+   "steps": [
+    "Sigue la ruta oficial para agregar únicamente los recursos de simulación; prepara la escena de ejemplo y MuJoCo si lo solicita la guía.",
+    "Selecciona un ejemplo de solo simulación y revisa qué herramientas pide antes de autorizarlo.",
+    "Comprueba el resultado: se observa el comportamiento de la escena virtual y queda un resultado que puedes comparar."
+   ],
+   "examples": [
+    "Abrir un escenario de simulación y cambiar la posición de un objeto virtual.",
+    "Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "host",
+    "mode": "agent_extension",
+    "api": "depends",
+    "cost": "choice",
+    "local_model": "not_documented",
+    "api_note": "La simulación y las skills se preparan aparte de las funciones que llamen a Gemini API.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Antigravity, dependencias de simulación indicadas y una escena de ejemplo sin robot físico.",
+    "sources": [
+     "https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md",
+     "https://github.com/google-deepmind/robotics-antigravity-plugin/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md",
+   "caveat": "Gemini API, hardware y componentes externos pueden tener costes y requisitos aparte. Alcance de la ficha: simulación, sin control de hardware.",
+   "note": "Gemini API, hardware y componentes externos pueden tener costes y requisitos aparte. Alcance de la ficha: simulación, sin control de hardware.",
+   "try": [
+    "Selecciona un ejemplo de solo simulación y revisa qué herramientas pide antes de autorizarlo.",
+    "Se observa el comportamiento de la escena virtual y queda un resultado que puedes comparar."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "heygen-com/hyperframes-launches",
+   "id": "hyperframes-launches",
+   "cat": 30,
+   "sub": "aplicaciones",
+   "kind": "reference",
+   "name": "HyperFrames Launches",
+   "one": "Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.",
+   "how": "Cada carpeta conserva la composición y los recursos con los que se construyó el video.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "video"
+   ],
+   "steps": [
+    "Lee el ejemplo en GitHub; si quieres previsualizarlo, prepara Git LFS y sigue el README de la composición elegida.",
+    "Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto.",
+    "Comprueba el resultado: puedes describir qué archivo controla la escena y qué elementos son recursos externos."
+   ],
+   "examples": [
+    "Estudiar el ritmo de un lanzamiento de producto.",
+    "Tomar de referencia la organización de textos y gráficos de una escena."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "reference",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.",
+    "cost_note": "Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.",
+    "hardware_note": "Navegador; para previsualizar código, HyperFrames, dependencias del ejemplo y Git LFS para sus archivos grandes.",
+    "sources": [
+     "https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md",
+     "https://github.com/heygen-com/hyperframes-launches/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md",
+   "caveat": "El código propio indicado usa Apache-2.0; marcas, audio, imágenes y otros materiales requieren comprobar derechos aparte.",
+   "note": "El código propio indicado usa Apache-2.0; marcas, audio, imágenes y otros materiales requieren comprobar derechos aparte.",
+   "try": [
+    "Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto.",
+    "Puedes describir qué archivo controla la escena y qué elementos son recursos externos."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "homeassistant-ai/ha-mcp",
+   "id": "ha-mcp",
+   "cat": 5,
+   "sub": "servidores",
+   "kind": "mcp",
+   "name": "Home Assistant MCP",
+   "one": "Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.",
+   "how": "El conector presenta entidades y acciones como herramientas MCP con el alcance de la conexión.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "mcp"
+   ],
+   "steps": [
+    "Abre la guía Get Started y elige su servidor demo antes de cambiar la instalación real de Home Assistant.",
+    "Inicia con el demo y pide una consulta sin cambios sobre una entidad ficticia.",
+    "Comprueba el resultado: la herramienta devuelve el estado de la entidad sin accionar dispositivos."
+   ],
+   "examples": [
+    "Consultar qué sensores aparecen en el demo.",
+    "Revisar como borrador la automatización de una luz virtual."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "connector",
+    "codex": "connector",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "supported",
+    "api_note": "El servidor MCP no llama a un LLM por sí solo. Usa un cliente compatible, con modelo local o remoto, para controlarlo.",
+    "cost_note": "El acceso al cliente y el coste del backend, datos o cómputo se evalúan por separado.",
+    "local_note": "El README describe clientes conectados a modelos locales; la calidad depende del modelo y del contexto.",
+    "hardware_note": "Home Assistant compatible o el demo oficial, y un cliente MCP de prueba.",
+    "sources": [
+     "https://github.com/homeassistant-ai/ha-mcp/blob/d068d1218983a369d8082ec923c14445cd462393/README.md",
+     "https://homeassistant-ai.github.io/ha-mcp/",
+     "https://github.com/advisories/GHSA-q855-8rh5-jfgq",
+     "https://github.com/homeassistant-ai/ha-mcp/blob/master/LICENSE"
+    ]
+   },
+   "url": "https://homeassistant-ai.github.io/ha-mcp/",
+   "caveat": "Hay avisos públicos: el release revisado v9.2.0 es posterior a los pisos publicados para el paquete. Mantén endpoint y token privados y prueba con permisos mínimos.",
+   "note": "Hay avisos públicos: el release revisado v9.2.0 es posterior a los pisos publicados para el paquete. Mantén endpoint y token privados y prueba con permisos mínimos.",
+   "try": [
+    "Inicia con el demo y pide una consulta sin cambios sobre una entidad ficticia.",
+    "La herramienta devuelve el estado de la entidad sin accionar dispositivos."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "jessepinkman9900/claude-second-brain",
+   "id": "claude-second-brain",
+   "cat": 8,
+   "sub": "workspaces",
+   "kind": "template",
+   "name": "Claude Second Brain",
+   "one": "Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.",
+   "how": "Combina notas versionadas, búsqueda local y skills que dan contexto a Claude Code.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "local",
+    "notas"
+   ],
+   "steps": [
+    "Desde la guía prepara una bóveda nueva y revisa el inicializador antes de que instale dependencias o escriba configuración.",
+    "Prepara una bóveda desechable con tres notas y siembra una consulta a partir del ejemplo.",
+    "Comprueba el resultado: el asistente encuentra la nota relevante y muestra qué documento utilizó."
+   ],
+   "examples": [
+    "Probar una wiki personal con notas ficticias.",
+    "Buscar referencias locales a un tema en una bóveda de demostración."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Claude Code, Obsidian y una bóveda nueva; consulta la guía para qmd y dependencias.",
+    "sources": [
+     "https://github.com/jessepinkman9900/claude-second-brain/blob/599f55ad50afceb9eae4f31746aa37274087d239/README.md",
+     "https://github.com/jessepinkman9900/claude-second-brain/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/jessepinkman9900/claude-second-brain/blob/599f55ad50afceb9eae4f31746aa37274087d239/README.md",
+   "caveat": "El inicio instala dependencias y crea archivos. Búsqueda local no significa que el contexto enviado a Claude sea local.",
+   "note": "El inicio instala dependencias y crea archivos. Búsqueda local no significa que el contexto enviado a Claude sea local.",
+   "try": [
+    "Prepara una bóveda desechable con tres notas y siembra una consulta a partir del ejemplo.",
+    "El asistente encuentra la nota relevante y muestra qué documento utilizó."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "kajisho5/ffmpeg-skill",
+   "id": "ffmpeg-skill",
+   "cat": 30,
+   "sub": "skills-video",
+   "kind": "skill",
+   "name": "FFmpeg Skill",
+   "one": "Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.",
+   "how": "Ejecuta operaciones de video y audio mediante herramientas que convierten parámetros en llamadas a FFmpeg.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "video"
+   ],
+   "steps": [
+    "Instala FFmpeg desde su distribución para tu sistema y revisa en Quick start la comprobación de codecs y la ruta de integración del cliente.",
+    "Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo.",
+    "Comprueba el resultado: el archivo resultante tiene la duración esperada y el original sigue intacto."
+   ],
+   "examples": [
+    "Recortar un anuncio de prueba a quince segundos.",
+    "Reencuadrar una toma propia para formato vertical."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "host",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "FFmpeg 6.1 o posterior con los codecs y filtros de la operación; entorno del agente para la skill.",
+    "sources": [
+     "https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md",
+     "https://github.com/kajisho5/ffmpeg-skill/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md",
+   "caveat": "FFmpeg no necesita una API de modelo. Subtítulos, plugins y ejecución del agente pueden tener requisitos y cobros aparte.",
+   "note": "FFmpeg no necesita una API de modelo. Subtítulos, plugins y ejecución del agente pueden tener requisitos y cobros aparte.",
+   "try": [
+    "Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo.",
+    "El archivo resultante tiene la duración esperada y el original sigue intacto."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "karpetrosyan/hishel",
+   "id": "hishel",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "library",
+   "name": "Hishel",
+   "one": "Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.",
+   "how": "Aplica reglas de caché HTTP y escribe las respuestas elegibles en el almacenamiento configurado.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Sigue la instalación del sitio de Hishel y elige el adaptador que corresponda a tu cliente HTTP.",
+    "Crea dos consultas iguales al ejemplo de prueba usando el adaptador de la guía.",
+    "Comprueba el resultado: la segunda consulta se sirve de la caché cuando las reglas lo permiten."
+   ],
+   "examples": [
+    "Evitar pedir varias veces un catálogo público de prueba.",
+    "Probar una política de expiración con respuestas de un servidor local."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Python y el cliente HTTP soportado por el adaptador elegido.",
+    "sources": [
+     "https://github.com/karpetrosyan/hishel/blob/a2afd91ad34c25f2ace1e1b804e9d7bcbd1e2724/README.md",
+     "https://hishel.com",
+     "https://github.com/karpetrosyan/hishel/blob/master/LICENSE"
+    ]
+   },
+   "url": "https://hishel.com",
+   "caveat": "No compartas una caché que contenga respuestas privadas entre usuarios. El tráfico remoto conserva sus propias cuotas.",
+   "note": "No compartas una caché que contenga respuestas privadas entre usuarios. El tráfico remoto conserva sus propias cuotas.",
+   "try": [
+    "Crea dos consultas iguales al ejemplo de prueba usando el adaptador de la guía.",
+    "La segunda consulta se sirve de la caché cuando las reglas lo permiten."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "meta/astryx",
+   "id": "astryx",
+   "cat": 9,
+   "sub": "componentes",
+   "kind": "library",
+   "name": "Astryx",
+   "one": "Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.",
+   "how": "Los componentes usan temas y estilos que puedes configurar de forma compartida.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "web"
+   ],
+   "steps": [
+    "En un proyecto React de prueba añade los paquetes de Astryx, el tema neutral y StyleX según Getting Started.",
+    "Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba.",
+    "Comprueba el resultado: los componentes aparecen con el tema aplicado y puedes navegar con teclado."
+   ],
+   "examples": [
+    "Construir una pantalla con botones y campos coherentes.",
+    "Probar un tema neutro y después ajustar tipografía y color."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Proyecto web React compatible con los paquetes de Astryx y StyleX.",
+    "sources": [
+     "https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md",
+     "https://github.com/meta/astryx/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md",
+   "caveat": "La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado.",
+   "note": "La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado.",
+   "try": [
+    "Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba.",
+    "Los componentes aparecen con el tema aplicado y puedes navegar con teclado."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "microsoft/LLMLingua",
+   "id": "llmlingua",
+   "cat": 23,
+   "sub": "tokens",
+   "kind": "library",
+   "name": "LLMLingua",
+   "one": "Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.",
+   "how": "El compresor usa un modelo local para conservar términos relevantes y retirar partes menos útiles.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Prepara Python con PyTorch, instala llmlingua y sigue Quick Start para elegir un modelo de compresión pequeño.",
+    "Comprime un texto público breve con un modelo local pequeño del proyecto.",
+    "Comprueba el resultado: obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas."
+   ],
+   "examples": [
+    "Comparar un prompt largo con su versión comprimida.",
+    "Medir tokens ahorrados y revisar si mantuvo una restricción importante."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "supported",
+    "hardware": "model_dependent",
+    "api_note": "La prueba con los modelos locales indicados no necesita contratar una API de IA.",
+    "local_note": "La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.",
+    "cost_note": "La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.",
+    "hardware_note": "Python, PyTorch y un modelo de compresión compatible con el hardware.",
+    "sources": [
+     "https://github.com/microsoft/LLMLingua/blob/01b9e9481d7395e1e83a48df4a062b11f6304325/README.md",
+     "https://llmlingua.com/",
+     "https://github.com/microsoft/LLMLingua/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://llmlingua.com/",
+   "caveat": "Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.",
+   "note": "Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.",
+   "try": [
+    "Comprime un texto público breve con un modelo local pequeño del proyecto.",
+    "Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "NVlabs/motionbricks",
+   "id": "motionbricks",
+   "cat": 26,
+   "sub": "simulacion",
+   "kind": "engine",
+   "name": "MotionBricks",
+   "one": "Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.",
+   "how": "Un modelo latente genera movimiento entre metas y combina primitivas según la demostración.",
+   "ready": false,
+   "setup": "heavy",
+   "goals": [
+    "3d"
+   ],
+   "license": "Apache-2.0",
+   "steps": [
+    "Sigue Setup para descargar solo los pesos autorizados y elige la demostración que requiera el menor conjunto de recursos.",
+    "Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados.",
+    "Comprueba el resultado: ves el movimiento entre las poses y puedes revisar cambios de trayectoria."
+   ],
+   "examples": [
+    "Completar fotogramas entre dos poses de un personaje de prueba.",
+    "Comparar un giro de personaje con dos recorridos virtuales."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "supported",
+    "hardware": "model_dependent",
+    "api_note": "La prueba con los modelos locales indicados no necesita contratar una API de IA.",
+    "local_note": "La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.",
+    "cost_note": "La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.",
+    "hardware_note": "GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090.",
+    "sources": [
+     "https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md",
+     "https://github.com/NVlabs/motionbricks/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md",
+   "caveat": "El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.",
+   "note": "El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.",
+   "try": [
+    "Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados.",
+    "Ves el movimiento entre las poses y puedes revisar cambios de trayectoria."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "open-jarvis/OpenJarvis",
+   "id": "openjarvis",
+   "cat": 21,
+   "sub": "asistentes",
+   "kind": "agent",
+   "name": "OpenJarvis",
+   "one": "Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.",
+   "how": "El asistente combina motores de inferencia con perfiles de conversación y, si los habilitas, herramientas y memoria.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "local"
+   ],
+   "steps": [
+    "Desde Releases elige la distribución para tu sistema y abre el chat básico; confirma motor y modelo antes de activar skills.",
+    "Elige una distribución oficial y empieza con el chat básico sin conectores.",
+    "Comprueba el resultado: el modelo configurado responde a una pregunta y puedes identificar si la ruta usada fue local."
+   ],
+   "examples": [
+    "Conversar con un modelo descargado sin conectar cuentas.",
+    "Probar búsqueda sobre un pequeño conjunto de documentos ficticios."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "optional",
+    "cost": "choice",
+    "local_model": "supported",
+    "api_note": "La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.",
+    "cost_note": "La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.",
+    "local_note": "La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.",
+    "hardware_note": "Distribución oficial para tu sistema, memoria para el modelo inicial y espacio para pesos; Node.js 22+ si usas la interfaz desde el código.",
+    "sources": [
+     "https://github.com/open-jarvis/OpenJarvis/blob/c05ebe99e524a269a08d017ce3730a436ab4c46b/README.md",
+     "https://github.com/open-jarvis/OpenJarvis/releases",
+     "https://github.com/open-jarvis/OpenJarvis/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/open-jarvis/OpenJarvis/releases",
+   "caveat": "Evita pegar instaladores remotos directamente en la terminal. Revisar por separado las funciones que leen cuentas o envían datos externos.",
+   "note": "Evita pegar instaladores remotos directamente en la terminal. Revisar por separado las funciones que leen cuentas o envían datos externos.",
+   "try": [
+    "Elige una distribución oficial y empieza con el chat básico sin conectores.",
+    "El modelo configurado responde a una pregunta y puedes identificar si la ruta usada fue local."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "Portkey-AI/gateway",
+   "id": "portkey-gateway",
+   "cat": 23,
+   "sub": "serving",
+   "kind": "server",
+   "name": "Portkey AI Gateway",
+   "one": "Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.",
+   "how": "La pasarela decide a qué backend enviar cada solicitud y puede aplicar presupuestos y reglas de reintento.",
+   "ready": false,
+   "setup": "heavy",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Abre Quickstart, selecciona una versión corregida desde el canal oficial y configura una sola ruta de proveedor usando una clave de prueba.",
+    "Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido.",
+    "Comprueba el resultado: puedes identificar el proveedor utilizado en la respuesta o el registro de prueba."
+   ],
+   "examples": [
+    "Hacer una llamada pequeña a un solo proveedor y medir latencia.",
+    "Comparar dos rutas ante un error simulado sin enviar información privada."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "required",
+    "cost": "usage_based",
+    "local_model": "unconfirmed",
+    "api_note": "La primera prueba documentada necesita autenticación de un proveedor o de la pasarela del modelo.",
+    "cost_note": "La licencia de código no incluye llamadas a modelos, despliegue ni almacenamiento.",
+    "hardware_note": "Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba.",
+    "sources": [
+     "https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md",
+     "https://github.com/advisories/GHSA-hhh5-2cvx-vmfp",
+     "https://github.com/Portkey-AI/gateway/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md",
+   "caveat": "Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.",
+   "note": "Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.",
+   "try": [
+    "Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido.",
+    "Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "reality-opened/openreality",
+   "id": "openreality",
+   "cat": 26,
+   "sub": "creacion-3d",
+   "kind": "mcp",
+   "name": "Open Reality",
+   "one": "Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.",
+   "how": "Un motor de reconstrucción procesa video y el conector expone operaciones de consulta sobre la escena.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "3d"
+   ],
+   "steps": [
+    "Prepara el backend que describe la guía y configura solo un cliente MCP; para la primera prueba utiliza una escena sin personas ni datos reales.",
+    "Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado.",
+    "Comprueba el resultado: puedes abrir la escena o consultar un elemento sin compartir datos privados."
+   ],
+   "examples": [
+    "Explorar un objeto propio grabado desde varios ángulos.",
+    "Comprobar la representación 3D de un elemento de una escena de ejemplo."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "connector",
+    "codex": "connector",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_documented",
+    "api_note": "El cliente MCP utiliza su modelo; el backend necesita cómputo para reconstruir la escena, que puede alojarse en equipo propio.",
+    "cost_note": "La reconstrucción puede usar GPU propia o alquilada. El servicio alojado, el cliente y los pesos tienen condiciones independientes.",
+    "hardware_note": "Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte.",
+    "sources": [
+     "https://github.com/reality-opened/openreality/blob/86f545d1ff1c9191cedc3e85dbae9b65fec29ced/README.md",
+     "https://open-reality.io/mcp",
+     "https://github.com/reality-opened/openreality/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://open-reality.io/mcp",
+   "caveat": "Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.",
+   "note": "Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.",
+   "try": [
+    "Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado.",
+    "Puedes abrir la escena o consultar un elemento sin compartir datos privados."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "requests-cache/requests-cache",
+   "id": "requests-cache",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "library",
+   "name": "Requests Cache",
+   "one": "Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.",
+   "how": "Un adaptador guarda respuestas y las reutiliza mientras sean válidas según la política elegida.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Instala requests-cache en el entorno de prueba y sigue Quickstart para crear una sesión con almacenamiento local.",
+    "Configura una sesión de caché en un ejemplo con dos lecturas de la misma página de prueba.",
+    "Comprueba el resultado: la primera lectura consulta el servidor y la siguiente puede reutilizar la respuesta guardada."
+   ],
+   "examples": [
+    "Evitar repetir la descarga de una lista pública durante pruebas.",
+    "Medir cuántas veces una tarea de ejemplo vuelve a consultar el servidor."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Python y una aplicación que use requests; SQLite disponible para un ejemplo local.",
+    "sources": [
+     "https://github.com/requests-cache/requests-cache/blob/b6dedd798c231aecd5f13e1010a9373cea81528a/README.md",
+     "https://requests-cache.readthedocs.io/",
+     "https://github.com/requests-cache/requests-cache/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://requests-cache.readthedocs.io/",
+   "caveat": "Expira la caché según los datos y evita almacenar respuestas con credenciales o información privada.",
+   "note": "Expira la caché según los datos y evita almacenar respuestas con credenciales o información privada.",
+   "try": [
+    "Configura una sesión de caché en un ejemplo con dos lecturas de la misma página de prueba.",
+    "La primera lectura consulta el servidor y la siguiente puede reutilizar la respuesta guardada."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "shadcn/improve",
+   "id": "shadcn-improve",
+   "cat": 2,
+   "sub": "metodologia",
+   "kind": "skill",
+   "name": "Improve de shadcn",
+   "one": "Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.",
+   "how": "Da un método para separar diagnóstico, plan e implementación y transferir el plan entre sesiones.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "Lee la skill en el README y carga únicamente Improve en una carpeta de prueba con tu cliente de skills.",
+    "Revisa un módulo pequeño con la skill y solicita solo el plan, sin aplicar cambios.",
+    "Comprueba el resultado: el plan nombra archivos, cambios propuestos y una forma de comprobarlos."
+   ],
+   "examples": [
+    "Separar el análisis de un formulario y su corrección.",
+    "Convertir un diagnóstico de rendimiento en tareas verificables."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Un agente con soporte de skills y un repositorio desechable o una copia de prueba.",
+    "sources": [
+     "https://github.com/shadcn/improve/blob/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/README.md",
+     "https://github.com/shadcn/improve/blob/main/LICENSE.md"
+    ]
+   },
+   "url": "https://github.com/shadcn/improve/blob/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/README.md",
+   "caveat": "Los modelos se pagan o limitan por el anfitrión; el proyecto no incluye un modelo ni promete ahorro fijo.",
+   "note": "Los modelos se pagan o limitan por el anfitrión; el proyecto no incluye un modelo ni promete ahorro fijo.",
+   "try": [
+    "Revisa un módulo pequeño con la skill y solicita solo el plan, sin aplicar cambios.",
+    "El plan nombra archivos, cambios propuestos y una forma de comprobarlos."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "Shopify/Shopify-AI-Toolkit",
+   "id": "shopify-ai-toolkit",
+   "cat": 27,
+   "sub": "dominio",
+   "kind": "skill",
+   "name": "Shopify AI Toolkit",
+   "one": "Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.",
+   "how": "El plugin reúne skills y herramientas que consultan la documentación y APIs de Shopify.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "Sigue Install para el cliente elegido, revisa la opción de desactivar telemetría y empieza con documentación sin conectar tiendas reales.",
+    "Instala la integración para tu cliente en un proyecto de ejemplo y prueba una consulta de documentación.",
+    "Comprueba el resultado: el asistente enlaza la guía de Shopify o devuelve la estructura esperada para el ejemplo."
+   ],
+   "examples": [
+    "Consultar cómo se organiza una sección de tema de prueba.",
+    "Preparar una consulta de catálogo para una tienda de desarrollo."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "host",
+    "codex": "host",
+    "antigravity": "host",
+    "mode": "agent_extension",
+    "api": "not_required",
+    "cost": "host_plan",
+    "local_model": "not_documented",
+    "api_note": "El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.",
+    "cost_note": "El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.",
+    "hardware_note": "Un cliente admitido y, si consultas una tienda, una cuenta de desarrollo con alcance mínimo.",
+    "sources": [
+     "https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md",
+     "https://github.com/Shopify/Shopify-AI-Toolkit/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md",
+   "caveat": "El README declara telemetría activada por defecto y documenta desactivarla. Operar tiendas y usar modelos puede requerir cuentas o planes separados.",
+   "note": "El README declara telemetría activada por defecto y documenta desactivarla. Operar tiendas y usar modelos puede requerir cuentas o planes separados.",
+   "try": [
+    "Instala la integración para tu cliente en un proyecto de ejemplo y prueba una consulta de documentación.",
+    "El asistente enlaza la guía de Shopify o devuelve la estructura esperada para el ejemplo."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "vercel/eve",
+   "id": "eve",
+   "cat": 3,
+   "sub": "ts",
+   "kind": "framework",
+   "name": "Eve",
+   "one": "Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.",
+   "how": "Organiza cada agente en archivos que definen instrucciones, estado, herramientas y funciones.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "automatizar",
+    "programar"
+   ],
+   "steps": [
+    "Lee Quick start y autentica el proveedor antes de usar el inicializador en una carpeta temporal.",
+    "Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio.",
+    "Comprueba el resultado: la interfaz de terminal inicia y responde con el proveedor elegido."
+   ],
+   "examples": [
+    "Probar un agente de preguntas sobre una tarea ficticia.",
+    "Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "required",
+    "cost": "usage_based",
+    "local_model": "unconfirmed",
+    "api_note": "La primera prueba documentada necesita autenticación de un proveedor o de la pasarela del modelo.",
+    "cost_note": "La licencia de código no incluye llamadas a modelos, despliegue ni almacenamiento.",
+    "hardware_note": "Node.js/npm y autenticación para el proveedor o AI Gateway documentado; hosting opcional.",
+    "sources": [
+     "https://github.com/vercel/eve/blob/5c52fbff40d90e55ef1aa27daa467c298479b374/README.md",
+     "https://eve.dev/",
+     "https://github.com/vercel/eve/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://eve.dev/",
+   "caveat": "La licencia del framework no cubre AI Gateway, tokens ni despliegue; no asumas que tu suscripción de Codex o Claude Code concede acceso al modelo de Eve.",
+   "note": "La licencia del framework no cubre AI Gateway, tokens ni despliegue; no asumas que tu suscripción de Codex o Claude Code concede acceso al modelo de Eve.",
+   "try": [
+    "Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio.",
+    "La interfaz de terminal inicia y responde con el proveedor elegido."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "VoltAgent/awesome-claude-code-subagents",
+   "id": "awesome-claude-code-subagents",
+   "cat": 2,
+   "sub": "catalogos",
+   "kind": "reference",
+   "name": "Awesome Claude Code Subagents",
+   "one": "Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.",
+   "how": "Cada perfil describe una especialidad, instrucciones y herramientas que Claude puede delegar.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "skills"
+   ],
+   "steps": [
+    "Abre la colección en GitHub y lee los perfiles antes de copiar uno en una carpeta de proyecto desechable.",
+    "Abre dos perfiles de una categoría y compara instrucciones, permisos y alcance.",
+    "Comprueba el resultado: puedes explicar qué haría cada perfil y cuál se ajusta a una tarea pequeña."
+   ],
+   "examples": [
+    "Comparar el perfil de un revisor de accesibilidad y uno de documentación.",
+    "Identificar las herramientas declaradas por una plantilla antes de copiarla."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "reference",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "mode": "reference",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.",
+    "cost_note": "Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.",
+    "hardware_note": "Navegador; para una eventual adopción, Claude Code y una carpeta de prueba.",
+    "sources": [
+     "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md",
+     "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md",
+   "caveat": "Es una colección comunitaria. Revisar cada perfil y sus herramientas antes de instalar; no asumir compatibilidad con otros clientes.",
+   "note": "Es una colección comunitaria. Revisar cada perfil y sus herramientas antes de instalar; no asumir compatibilidad con otros clientes.",
+   "try": [
+    "Abre dos perfiles de una categoría y compara instrucciones, permisos y alcance.",
+    "Puedes explicar qué haría cada perfil y cuál se ajusta a una tarea pequeña."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "wici-ai/inferssd",
+   "id": "inferssd",
+   "cat": 8,
+   "sub": "motores",
+   "kind": "engine",
+   "name": "InferSSD",
+   "one": "Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.",
+   "how": "Mantiene activos los pesos necesarios y lee desde SSD partes del modelo MoE cuando las solicita la inferencia.",
+   "ready": false,
+   "setup": "heavy",
+   "goals": [
+    "local",
+    "notas"
+   ],
+   "steps": [
+    "Abre Get started, elige la distribución compatible con tu GPU y descarga la variante de pesos que el proyecto documenta.",
+    "Selecciona un modelo de prueba compatible y registra carga, latencia y memoria con una pregunta corta.",
+    "Comprueba el resultado: obtienes una respuesta y medidas de rendimiento que puedes cotejar con tu equipo."
+   ],
+   "examples": [
+    "Medir si un modelo compatible arranca con la memoria disponible.",
+    "Comparar tiempos de respuesta con dos tamaños de contexto."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "supported",
+    "hardware": "model_dependent",
+    "api_note": "La prueba con los modelos locales indicados no necesita contratar una API de IA.",
+    "local_note": "La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.",
+    "cost_note": "La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.",
+    "hardware_note": "SSD y un modelo MoE compatible; backend de sistema y GPU según las guías de la variante.",
+    "sources": [
+     "https://github.com/wici-ai/inferssd/blob/910afae91c3c2578f890df7ffd9a1e55b6237680/README.md",
+     "https://github.com/wici-ai/inferssd/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/wici-ai/inferssd/blob/910afae91c3c2578f890df7ffd9a1e55b6237680/README.md",
+   "caveat": "No acelera cualquier modelo. La velocidad del SSD y la variante influyen; las licencias de los pesos se revisan por separado.",
+   "note": "No acelera cualquier modelo. La velocidad del SSD y la variante influyen; las licencias de los pesos se revisan por separado.",
+   "try": [
+    "Selecciona un modelo de prueba compatible y registra carga, latencia y memoria con una pregunta corta.",
+    "Obtienes una respuesta y medidas de rendimiento que puedes cotejar con tu equipo."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "yangyuan-zhen/PolyWeather",
+   "id": "polyweather",
+   "cat": 14,
+   "sub": "agentes",
+   "kind": "app",
+   "name": "PolyWeather",
+   "one": "Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.",
+   "how": "Alinea datos de clima y mercados por ubicación y fecha para compararlos en una misma interfaz.",
+   "ready": true,
+   "setup": "easy",
+   "goals": [
+    "finanzas"
+   ],
+   "steps": [
+    "Consulta el ejemplo del README para preparar las fuentes de datos y la interfaz local; no conectes credenciales de trading.",
+    "Abre una vista de datos de prueba y compara fechas de previsión y mercado.",
+    "Comprueba el resultado: puedes identificar la fuente, zona y fecha de los datos mostrados."
+   ],
+   "examples": [
+    "Contrastar una previsión con un mercado de ejemplo.",
+    "Comparar dos lugares con datos públicos sin abrir operaciones."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Autoalojar consume tu equipo; las fuentes y la edición o servicio alojado pueden exigir condiciones o tarifas propias.",
+    "hardware_note": "Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba.",
+    "sources": [
+     "https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md",
+     "https://github.com/yangyuan-zhen/PolyWeather/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md",
+   "caveat": "La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.",
+   "note": "La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.",
+   "try": [
+    "Abre una vista de datos de prueba y compara fechas de previsión y mercado.",
+    "Puedes identificar la fuente, zona y fecha de los datos mostrados."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "zilliztech/claude-context",
+   "id": "claude-context",
+   "cat": 5,
+   "sub": "servidores",
+   "kind": "mcp",
+   "name": "Claude Context",
+   "one": "Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.",
+   "how": "Fragmenta e indexa el código en una base vectorial para recuperar resultados por similitud.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "mcp"
+   ],
+   "steps": [
+    "Según Quick Start, prepara la colección de prueba en Milvus o Zilliz y la clave de embeddings, después añade el servidor al cliente.",
+    "Configura un índice de prueba sobre código público e intenta encontrar una función conocida.",
+    "Comprueba el resultado: la búsqueda devuelve el archivo y fragmento esperado, y puedes comprobar el proveedor de embeddings utilizado."
+   ],
+   "examples": [
+    "Encontrar archivos relacionados con la autenticación en un proyecto de ejemplo.",
+    "Indexar una biblioteca ficticia y comprobar qué resultado devuelve por función."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "connector",
+    "codex": "connector",
+    "antigravity": "not_documented",
+    "mode": "agent_extension",
+    "api": "required",
+    "cost": "choice",
+    "local_model": "not_documented",
+    "api_note": "El arranque revisado configura una clave de OpenAI para embeddings y una base Milvus o Zilliz. No se afirmó otra ruta en la ficha.",
+    "cost_note": "La indexación consume embeddings y almacenamiento; no los cubre el plan del agente.",
+    "hardware_note": "Node.js 20+, un cliente MCP, base vectorial y una configuración de embeddings según el proveedor escogido.",
+    "sources": [
+     "https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md",
+     "https://github.com/zilliztech/claude-context/blob/master/LICENSE"
+    ]
+   },
+   "url": "https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md",
+   "caveat": "Los embeddings y almacenamiento pueden ser servicios externos. La cuenta del cliente no cubre esos cargos; no enviar código sensible sin revisar destino y retención.",
+   "note": "Los embeddings y almacenamiento pueden ser servicios externos. La cuenta del cliente no cubre esos cargos; no enviar código sensible sin revisar destino y retención.",
+   "try": [
+    "Configura un índice de prueba sobre código público e intenta encontrar una función conocida.",
+    "La búsqueda devuelve el archivo y fragmento esperado, y puedes comprobar el proveedor de embeddings utilizado."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "zilliztech/GPTCache",
+   "id": "gptcache",
+   "cat": 23,
+   "sub": "tokens",
+   "kind": "library",
+   "name": "GPTCache",
+   "one": "Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.",
+   "how": "Compara representaciones de las preguntas para decidir si conserva o vuelve a calcular una respuesta.",
+   "ready": false,
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Instala el paquete en un entorno Python y empieza por un ejemplo de caché con almacenamiento local y texto sintético.",
+    "Configura el ejemplo en un entorno aislado y manda dos consultas de ejemplo similares.",
+    "Comprueba el resultado: puedes observar cuándo se reutiliza una respuesta y cuándo se vuelve a calcular."
+   ],
+   "examples": [
+    "Evitar recalcular preguntas repetidas en un prototipo.",
+    "Comparar falsos aciertos de caché con dos preguntas casi iguales."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "optional",
+    "cost": "choice",
+    "local_model": "supported",
+    "api_note": "La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.",
+    "cost_note": "La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.",
+    "local_note": "La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.",
+    "hardware_note": "Python y un componente de embeddings y almacenamiento compatible; entorno de prueba con consultas ficticias.",
+    "sources": [
+     "https://github.com/zilliztech/GPTCache/blob/a74ac654473f7bf4109118e8576945161616e17a/README.md",
+     "https://gptcache.readthedocs.io",
+     "https://github.com/zilliztech/GPTCache/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://gptcache.readthedocs.io",
+   "caveat": "Los ejemplos con OpenAI requieren su clave. No compartas entradas y respuestas privadas entre usuarios de distintas cuentas.",
+   "note": "Los ejemplos con OpenAI requieren su clave. No compartas entradas y respuestas privadas entre usuarios de distintas cuentas.",
+   "try": [
+    "Configura el ejemplo en un entorno aislado y manda dos consultas de ejemplo similares.",
+    "Puedes observar cuándo se reutiliza una respuesta y cuándo se vuelve a calcular."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "voidcosmos/npkill",
+   "id": "npkill",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "app",
+   "name": "npkill",
+   "one": "Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.",
+   "how": "Escanea rutas según perfiles de desarrollo y muestra el espacio de cada candidato antes del borrado.",
+   "ready": false,
+   "setup": "easy",
+   "goals": [
+    "programar"
+   ],
+   "steps": [
+    "Abre Usage, elige el paquete oficial y limita el directorio a una carpeta de prueba con el modo de simulación.",
+    "Usa el modo documentado de simulación dentro de la carpeta de prueba, sin confirmar eliminaciones.",
+    "Comprueba el resultado: ves una lista de candidatos y los archivos del ejemplo siguen presentes."
+   ],
+   "examples": [
+    "Medir el tamaño de node_modules en un proyecto de ejemplo.",
+    "Revisar sin borrar los residuos de un directorio de pruebas."
+   ],
+   "ligero": true,
+   "access": {
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.",
+    "cost_note": "Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.",
+    "hardware_note": "Node.js/npm para la distribución oficial y una carpeta de prueba sin datos importantes.",
+    "sources": [
+     "https://github.com/voidcosmos/npkill/blob/ca908483869c51ccf81dcde05a717c165b053785/README.md",
+     "https://npkill.js.org",
+     "https://github.com/voidcosmos/npkill#usage",
+     "https://github.com/voidcosmos/npkill/blob/main/LICENSE"
+    ]
+   },
+   "url": "https://npkill.js.org",
+   "caveat": "Una eliminación real puede ser irreversible. Verifica la ruta y el modo antes de confirmar; no barrer todo el disco para la primera prueba.",
+   "note": "Una eliminación real puede ser irreversible. Verifica la ruta y el modo antes de confirmar; no barrer todo el disco para la primera prueba.",
+   "try": [
+    "Usa el modo documentado de simulación dentro de la carpeta de prueba, sin confirmar eliminaciones.",
+    "Ves una lista de candidatos y los archivos del ejemplo siguen presentes."
+   ],
+   "alt": []
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Dashboards, analítica y mapas
 
-Categoría 10 completa (31 repos, 6 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 10 completa (31 repos, 6 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=10 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

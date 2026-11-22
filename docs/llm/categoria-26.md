@@ -1,6 +1,6 @@
 # Alexandría para agentes · Animación, gráficos y creación 3D
 
-Categoría 26 completa (28 repos, 3 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 26 completa (32 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=26 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -41,11 +41,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `openscad` | creacion-3d | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la… | 1 Básico | 59 | GPL-2.0 (con excepción CGAL) (OSI copyleft) | sin grupo |
 | `ozz-animation` | creacion-3d | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
 | `awesome-cad` | creacion-3d | Directorio de programas, bibliotecas y recursos de diseño asistido por… | 1 Básico | 34 | MIT (OSI permisiva) | sin grupo |
+| `openreality` | creacion-3d | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP… | 3 Avanzado | — | BSD-2-Clause | sin grupo |
+| `video2threejs` | creacion-3d | Explica con un caso cómo reconstruir la apariencia de un video como una escena… | 1 Básico | — | MIT | sin grupo |
 | `genesis-world` | simulacion | Plataforma de simulación para IA física y robótica con motor multifísica… | 3 Avanzado | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `mujoco` | simulacion | Motor de física de Google DeepMind para simular estructuras articuladas con… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `warp` | simulacion | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `planck-js` | simulacion | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `react-three-rapier` | simulacion | Integración del motor de física Rapier con React Three Fiber para añadir… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
+| `motionbricks` | simulacion | Genera movimiento de personajes a partir de poses y objetivos mediante modelos… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `robotics-antigravity-plugin` | simulacion | Añade a Antigravity instrucciones para crear, probar y observar escenas de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -315,6 +319,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `blender`, `three.js` [26/animacion], `filament`, `freecad`, `openscad`
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD.
 
+### Open Reality (`openreality`)
+
+- **Repo:** https://github.com/reality-opened/openreality · BSD-2-Clause · nivel 3 · —/100
+- **Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
+- **Cuándo elegirlo:** Casos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 3: preparación media, se instala dentro de un agente (skill, plugin o MCP), necesita GPU; Python; API de IA: no; Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://open-reality.io/mcp
+- **Primera prueba propuesta (no ejecutada):** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado. Éxito: Puedes abrir la escena o consultar un elemento sin compartir datos privados.
+- **Riesgos y avisos:** Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.
+
+### video2threejs (`video2threejs`)
+
+- **Repo:** https://github.com/cpppppp7/video2threejs · MIT · nivel 1 · —/100
+- **Qué es:** Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
+- **Cuándo elegirlo:** Casos: Comparar el encuadre de una escena y su referencia.; Estudiar cómo combinar geometría y textura en una recreación sencilla.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; JavaScript; API de IA: no; Navegador para leer el caso y, si adaptas la técnica, una escena de prueba en Three.js..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre el caso y localiza un punto de vista reconstruido para compararlo con su referencia. Éxito: Puedes identificar una diferencia visible y el principio que la guía usa para reducirla.
+- **Riesgos y avisos:** Es un caso técnico, no se verificó una app capaz de reconstruir cualquier clip. Revisión documental; no acredita binarios ni una instalación probada.
+
 ### Genesis World (`genesis-world`)
 
 - **Repo:** https://github.com/Genesis-Embodied-AI/genesis-world · Apache-2.0 · nivel 3 · 74/100
@@ -368,6 +392,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Añade un cuerpo y un suelo con debug visible y comprueba la colisión Éxito: Puedes relacionar collider, geometría y movimiento
 - **Combina con:** `react-three-fiber` [26/animacion], `three.js` [26/animacion], `threejs-game-skills` [27/skills]
 - **Riesgos y avisos:** Sin alternativas declaradas. La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones.
+
+### MotionBricks (`motionbricks`)
+
+- **Repo:** https://github.com/NVlabs/motionbricks · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
+- **Cuándo elegirlo:** Casos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados. Éxito: Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
+- **Riesgos y avisos:** El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.
+
+### Robotics for Antigravity (`robotics-antigravity-plugin`)
+
+- **Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.
+- **Cuándo elegirlo:** Casos: Abrir un escenario de simulación y cambiar la posición de un objeto virtual.; Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python; API de IA: depends; Antigravity, dependencias de simulación indicadas y una escena de ejemplo sin robot físico..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona un ejemplo de solo simulación y revisa qué herramientas pide antes de autorizarlo. Éxito: Se observa el comportamiento de la escena virtual y queda un resultado que puedes comparar.
+- **Riesgos y avisos:** Gemini API, hardware y componentes externos pueden tener costes y requisitos aparte. Alcance de la ficha: simulación, sin control de hardware.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

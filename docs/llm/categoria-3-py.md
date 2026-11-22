@@ -1,6 +1,6 @@
 # Alexandría para agentes · Frameworks de agentes en Python
 
-Categoría 3 «Construir agentes y coordinar equipos de IA» › subcategoría `py`. 20 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 3 «Construir agentes y coordinar equipos de IA» › subcategoría `py`. 21 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3&sub=py · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -38,6 +38,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `claude-agent-sdk-python` | SDK oficial de Python para integrar el bucle de Claude Code, herramientas… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `smolagents` | Librería mínima de Hugging Face para agentes que razonan escribiendo y… | 2 Intermedio | 55 | Apache-2.0 (OSI permisiva) | alternativa |
 | `awesome-langgraph` | Repositorio de recursos, librerías y arquitecturas del ecosistema… | 1 Básico | 37 | CC0-1.0 (OSI permisiva) | sin grupo |
+| `semantic-router` | Clasifica consultas por intención y decide a qué función enviarlas usando… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -294,6 +295,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Busca una plantilla de aprobación humana y contrasta su versión con las guías oficiales Éxito: Tienes un candidato y sabes qué aporta al flujo
 - **Combina con:** `langgraph`, `langchain`, `deepagents`
 - **Riesgos y avisos:** Todavía recomienda langchain-mcp-adapters, archivado y retirado del catálogo (MCP pasó al paquete principal de LangChain): desactualización detectada. Las integraciones de los enlaces no acreditan compatibilidad del directorio completo.
+
+### Semantic Router (`semantic-router`)
+
+- **Repo:** https://github.com/aurelio-labs/semantic-router · MIT · nivel 2 · —/100
+- **Qué es:** Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.
+- **Cuándo elegirlo:** Casos: Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.; Separar solicitudes sobre facturación de solicitudes de soporte.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, compose.yaml, pyproject.toml; API de IA: opcional; Python, una versión actual de la rama 1.x y un codificador compatible..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction
+- **Primera prueba propuesta (no ejecutada):** Crea dos rutas con frases ficticias y usa un codificador local documentado. Éxito: Frases similares llegan a la ruta esperada y puedes revisar las que no encajan.
+- **Riesgos y avisos:** El aviso por una dependencia comprometida afecta a versiones 0.1.8 a anteriores a 0.1.15. Evita esas versiones y revisa las dependencias fijadas.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

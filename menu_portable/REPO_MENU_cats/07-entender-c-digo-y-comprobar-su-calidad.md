@@ -3,6 +3,35 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `apscheduler`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
+**Stack:** Python, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Python y una versión estable 3.x conforme a su guía.
+**Repo:** https://github.com/agronholm/apscheduler
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://apscheduler.readthedocs.io/en/3.x/userguide.html
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Actualizar un dato local cada minuto.; Programar un recordatorio interno una vez al día.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Sigue la guía 3.x y programa una función de prueba que imprima la hora.
+**Qué comprobar:** La función se ejecuta en el intervalo elegido y deja una marca visible.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `ast-grep`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=code,security,rust
 
@@ -315,6 +344,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tree-sitter`, `ollama`, `graphrag`
 **Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `codebase-memory-mcp`
 
+## `hishel`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.
+**Stack:** Python, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Python y el cliente HTTP soportado por el adaptador elegido.
+**Repo:** https://github.com/karpetrosyan/hishel
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://hishel.com
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Evitar pedir varias veces un catálogo público de prueba.; Probar una política de expiración con respuestas de un servidor local.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Crea dos consultas iguales al ejemplo de prueba usando el adaptador de la guía.
+**Qué comprobar:** La segunda consulta se sirve de la caché cuando las reglas lo permiten.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `lazygit`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cli,go,git,terminal
 
@@ -344,6 +402,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes preparar una sola línea y crear el commit desde la interfaz.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `aider`
+
+## `npkill`
+role=app · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Node.js/npm para la distribución oficial y una carpeta de prueba sin datos importantes.
+**Repo:** https://github.com/voidcosmos/npkill
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://npkill.js.org
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Medir el tamaño de node_modules en un proyecto de ejemplo.; Revisar sin borrar los residuos de un directorio de pruebas.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Usa el modo documentado de simulación dentro de la carpeta de prueba, sin confirmar eliminaciones.
+**Qué comprobar:** Ves una lista de candidatos y los archivos del ejemplo siguen presentes.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `openai-python`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,python
@@ -406,6 +493,35 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ruff`, `gitleaks`, `trufflehog`, `biome`, `semgrep`, `trivy`
 
+## `pybreaker`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Un entorno Python con una función ficticia que pueda fallar.
+**Repo:** https://github.com/danielfm/pybreaker
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/danielfm/pybreaker/blob/2b0b965fcfc7705ca9a776c614ea6cb3ec3fe783/README.rst
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Evitar que una integración lenta bloquee todos los trabajos.; Probar cómo se recupera un cliente tras una caída ficticia.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Configura un ejemplo con una función local que falle repetidamente.
+**Qué comprobar:** El interruptor abre y deja de invocar la función hasta el periodo de recuperación.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `repomix`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=code,coding-agent,typescript
 
@@ -436,6 +552,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tree-sitter`, `markitdown`, `tools`, `codebase-memory-mcp`
 **Alternativas (elige una):** `gitnexus`
+
+## `requests-cache`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.
+**Stack:** Python, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Python y una aplicación que use requests; SQLite disponible para un ejemplo local.
+**Repo:** https://github.com/requests-cache/requests-cache
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://requests-cache.readthedocs.io/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Evitar repetir la descarga de una lista pública durante pruebas.; Medir cuántas veces una tarea de ejemplo vuelve a consultar el servidor.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Configura una sesión de caché en un ejemplo con dos lecturas de la misma página de prueba.
+**Qué comprobar:** La primera lectura consulta el servidor y la siguiente puede reutilizar la respuesta guardada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `ripgrep`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cli,rust,code,search

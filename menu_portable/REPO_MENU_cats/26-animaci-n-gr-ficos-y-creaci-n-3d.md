@@ -370,6 +370,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `magicui`, `react-three-fiber`, `claude-code`, `gsap`, `motion-design-skill`, `skills-emil`
 **Alternativas (elige una):** `animejs`
 
+## `motionbricks`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La prueba con los modelos locales indicados no necesita contratar una API de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.
+- Coste: Sin pago a un modelo en la ruta básica. La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.
+- Equipo: Memoria y GPU según el modelo. GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090.
+**Repo:** https://github.com/NVlabs/motionbricks
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales.
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados.
+**Qué comprobar:** Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `mujoco`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=simulation,robotics,physics,python
 
@@ -399,6 +428,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Ves el modelo simulado en el visor interactivo.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `jax`, `warp`, `genesis-world`
+
+## `openreality`
+role=runtime · exec=local · setup=medium · mcp=True · prov=—
+
+**Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El cliente MCP utiliza su modelo; el backend necesita cómputo para reconstruir la escena, que puede alojarse en equipo propio.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. La reconstrucción puede usar GPU propia o alquilada. El servicio alojado, el cliente y los pesos tienen condiciones independientes.
+- Equipo: Equipo normal; revisar dependencias. Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte.
+**Repo:** https://github.com/reality-opened/openreality
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://open-reality.io/mcp
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado.
+**Qué comprobar:** Puedes abrir la escena o consultar un elemento sin compartir datos privados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `openscad`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=cad,3d,code,app
@@ -701,6 +759,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `webgl-noise`, `three.js`, `meshoptimizer`
 
+## `robotics-antigravity-plugin`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. La simulación y las skills se preparan aparte de las funciones que llamen a Gemini API.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: El coste depende del proveedor o la ruta. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Antigravity, dependencias de simulación indicadas y una escena de ejemplo sin robot físico.
+**Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Abrir un escenario de simulación y cambiar la posición de un objeto virtual.; Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Selecciona un ejemplo de solo simulación y revisa qué herramientas pide antes de autorizarlo.
+**Qué comprobar:** Se observa el comportamiento de la escena virtual y queda un resultado que puedes comparar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `scenejs`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
 
@@ -761,6 +848,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `react-three-fiber`, `gsap`, `threejs-skills`, `meshoptimizer`
 **Alternativas (elige una):** `babylonjs`, `playcanvas`
+
+## `video2threejs`
+role=directory · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.
+- Equipo: Equipo normal; revisar dependencias. Navegador para leer el caso y, si adaptas la técnica, una escena de prueba en Three.js.
+**Repo:** https://github.com/cpppppp7/video2threejs
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar el encuadre de una escena y su referencia.; Estudiar cómo combinar geometría y textura en una recreación sencilla.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre el caso y localiza un punto de vista reconstruido para compararlo con su referencia.
+**Qué comprobar:** Puedes identificar una diferencia visible y el principio que la guía usa para reducirla.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `warp`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python

@@ -101,6 +101,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ffmpeg`, `moviepy`, `remotion`, `rubberband`, `audacity`
 **Alternativas (elige una):** `yue`, `ace-step-1.5`
 
+## `buzz`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=local · tags=whisper,subtítulos,transcripción
+
+**Qué es:** Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propio equipo.
+**Stack:** Python, Makefile, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. Whisper local no requiere clave de OpenAI; las opciones remotas se configuran aparte.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Elige explícitamente un backend local. La descarga inicial de pesos usa internet.
+- Coste: El coste depende del proveedor o la ruta. La app es MIT y no hay pago por transcribir con Whisper local. Las opciones de API se cobran según su proveedor.
+- Equipo: Memoria y GPU según el modelo. El tamaño del modelo y el backend determinan memoria, disco y velocidad.
+**Repo:** https://github.com/chidiwilliams/buzz
+
+**Instalación** [+]:
+
+```
+pip install buzz-captions
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Convertir una nota de voz propia en texto editable.; Crear subtítulos en SRT para una demostración grabada.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Importa diez segundos de audio propio y elige un modelo Whisper local pequeño.
+**Qué comprobar:** Aparece una transcripción que puedes revisar y exportar como SRT.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`
+
 ## `cosyvoice`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 

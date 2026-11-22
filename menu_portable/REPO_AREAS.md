@@ -20,7 +20,7 @@ Diseñar y construir pantallas desde una interfaz visual.
 
 Piezas de interfaz y CSS para construir una web.
 
-`ant-design`, `chakra-ui`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mantine`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `storybook`, `swr`, `tailwindcss`, `tanstack-query`, `ui`
+`ant-design`, `astryx`, `chakra-ui`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mantine`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `storybook`, `swr`, `tailwindcss`, `tanstack-query`, `ui`
 
 ### Interfaces y páginas con IA
 
@@ -44,7 +44,7 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-`appwrite`, `caddy`, `casaos`, `coolify`, `cypress`, `dokploy`, `flaresolverr`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`, `webdriverio`
+`appwrite`, `caddy`, `casaos`, `coolify`, `cypress`, `dokploy`, `flaresolverr`, `libretranslate`, `playwright`, `playwright-mcp`, `portainer`, `puppeteer`, `selenium`, `supabase`, `traefik`, `uptime-kuma`, `webdriverio`
 
 ## Ciberseguridad
 
@@ -136,7 +136,7 @@ Crear clips y organizar flujos de video generativo.
 
 Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
-`brag`, `claude-animated-shorts`, `huashu-motion`, `hyperframes`, `lemo-opuscar`, `manim`, `manim-community`, `mediabunny`, `motion-canvas`, `motion-design-skill`, `motionmaxxing`, `moviepy`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `revideo`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
+`brag`, `claude-animated-shorts`, `ffmpeg-skill`, `huashu-motion`, `hyperframes`, `hyperframes-launches`, `lemo-opuscar`, `manim`, `manim-community`, `mediabunny`, `motion-canvas`, `motion-design-skill`, `motionmaxxing`, `moviepy`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `revideo`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
 
 ### Voz: narración, síntesis y clonación
 
@@ -148,7 +148,7 @@ Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
 Transcribir, alinear y aprovechar grabaciones de voz.
 
-`faster-whisper`, `nemo`, `sherpa-onnx`, `vibevoice`, `whisper`, `whisper-cpp`, `whisperx`
+`buzz`, `faster-whisper`, `nemo`, `sherpa-onnx`, `vibevoice`, `whisper`, `whisper-cpp`, `whisperx`
 
 ### Audio: limpieza, música y sonido
 
@@ -178,13 +178,13 @@ Animación de retratos y herramientas para personajes.
 
 Crear objetos, escenas y recursos tridimensionales.
 
-`3dviz-pro-max`, `awesome-cad`, `bevy`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `freecad`, `godot`, `meshoptimizer`, `openscad`, `ozz-animation`
+`3dviz-pro-max`, `awesome-cad`, `bevy`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `freecad`, `godot`, `meshoptimizer`, `openreality`, `openscad`, `ozz-animation`, `video2threejs`
 
 ### Física y simulación
 
 Simular cuerpos,colisiones y sistemas físicos.
 
-`genesis-world`, `mujoco`, `planck-js`, `react-three-rapier`, `warp`
+`genesis-world`, `motionbricks`, `mujoco`, `planck-js`, `react-three-rapier`, `robotics-antigravity-plugin`, `warp`
 
 ## Trading, inversión y finanzas
 
@@ -194,13 +194,13 @@ Investiga mercados, compara estrategias y conecta herramientas financieras. Las 
 
 Agentes que reúnen y analizan información financiera.
 
-`autohedge`, `daily-stock-analysis`, `dexter`, `financial-services`, `finceptterminal`, `fingpt`, `quantharness`, `tradingagents`, `vibe-trading`
+`autohedge`, `daily-stock-analysis`, `dexter`, `financial-services`, `finceptterminal`, `fingpt`, `polyweather`, `quantharness`, `tradingagents`, `vibe-trading`
 
 ### Estrategias y backtesting
 
 Analizar datos históricos y evaluar estrategias cuantitativas.
 
-`backtesting-py`, `finrl`, `lumibot`, `nautilus-trader`, `openbb`, `qlib`, `timesfm`, `vectorbt`, `yfinance`
+`backtesting-py`, `finrl`, `lumibot`, `nautilus-trader`, `openbb`, `prediction-market-backtesting`, `qlib`, `timesfm`, `vectorbt`, `yfinance`
 
 ### Bots, exchanges y conexiones
 
@@ -222,7 +222,7 @@ Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas 
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-`activepieces`, `airflow`, `dagger`, `dagster`, `huginn`, `kestra`, `node-red`, `prefect`, `temporal`, `trigger-dev`, `windmill`
+`activepieces`, `airflow`, `celery`, `dagger`, `dagster`, `huginn`, `kestra`, `node-red`, `prefect`, `temporal`, `trigger-dev`, `windmill`
 
 ### WhatsApp y pasarelas de mensajería
 
@@ -326,7 +326,7 @@ Construye un agente, delega investigación o dale acceso a páginas y herramient
 
 Bases para construir agentes y coordinar sus tareas.
 
-`adk-python`, `ag2`, `agent-framework`, `agentscope`, `agno`, `awesome-langgraph`, `camel`, `chatdev`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `openmanus`, `pydantic-ai`, `smolagents`, `vercel-ai`
+`adk-python`, `ag2`, `agent-framework`, `agentscope`, `agno`, `awesome-langgraph`, `camel`, `chatdev`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `eve`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `openmanus`, `pydantic-ai`, `semantic-router`, `smolagents`, `vercel-ai`
 
 ### Constructores visuales de agentes
 
@@ -338,7 +338,7 @@ Plataformas que permiten diseñar flujos de IA con una interfaz.
 
 Asistentes listos o adaptables para tareas de varias etapas.
 
-`agentes-chat`, `deeptutor`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openbot`, `openclaw`, `opendots`, `paperclip`, `ruflo`, `social-media-agent`
+`agentes-chat`, `deeptutor`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openbot`, `openclaw`, `opendots`, `openjarvis`, `paperclip`, `ruflo`, `social-media-agent`
 
 ### Investigación con fuentes
 
@@ -356,13 +356,13 @@ Convertir páginas y redes sociales en contenido o datos.
 
 Abrir páginas e interactuar con interfaces reales.
 
-`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `camoufox`, `cypress`, `flaresolverr`, `ladybird`, `lightpanda`, `nanobrowser`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `servo`, `skyvern`, `stagehand`, `steel-browser`, `webdriverio`
+`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `camoufox`, `cypress`, `flaresolverr`, `kitesurf`, `ladybird`, `lightpanda`, `nanobrowser`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `servo`, `skyvern`, `stagehand`, `steel-browser`, `webdriverio`
 
 ### MCP: conectar herramientas
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `aws-mcp`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-toolbox`, `mcp-typescript-sdk`, `mcp-use`, `neo4j-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `unity-mcp`
+`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `aws-mcp`, `blender-mcp`, `chrome-devtools-mcp`, `claude-context`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `ha-mcp`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-toolbox`, `mcp-typescript-sdk`, `mcp-use`, `neo4j-mcp`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `tooljet`, `unity-mcp`
 
 ## IA local, modelos y entrenamiento
 
@@ -372,13 +372,13 @@ Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para
 
 Interfaces de conversación y espacios de trabajo con tus fuentes.
 
-`anything-llm`, `chatbox`, `cherry-studio`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `nextchat`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `private-gpt`, `sillytavern`, `surfsense`, `textgen`
+`anything-llm`, `chatbox`, `cherry-studio`, `claude-second-brain`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `nextchat`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `openjarvis`, `private-gpt`, `sillytavern`, `surfsense`, `textgen`
 
 ### Motores para modelos locales
 
 Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
-`airllm`, `exo`, `freetoken`, `koboldcpp`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `mlc-llm`, `mlx-lm`, `ollama`, `transformers.js`
+`airllm`, `exo`, `freetoken`, `inferssd`, `koboldcpp`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `mlc-llm`, `mlx-lm`, `ollama`, `transformers.js`
 
 ### Modelos abiertos y pesos
 
@@ -396,7 +396,7 @@ Bibliotecas para entrenar o adaptar modelos a tus datos.
 
 Servir modelos y organizar el acceso de tus aplicaciones.
 
-`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `litellm`, `omniroute`, `ray`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
+`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `libretranslate`, `litellm`, `omniroute`, `portkey-gateway`, `ray`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Documentos, presentaciones y conocimiento
 
@@ -406,7 +406,7 @@ Lee y transforma archivos, crea explicaciones visuales y construye búsquedas so
 
 Leer, convertir, firmar y organizar archivos.
 
-`docling`, `docuseal`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `tika`, `unstructured`, `xberg`
+`docling`, `docuseal`, `libretranslate`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `tika`, `unstructured`, `xberg`
 
 ### OCR y documentos escaneados
 
@@ -430,7 +430,7 @@ Explicar sistemas e ideas mediante diagramas.
 
 Recuperar fuentes con RAG y búsqueda semántica.
 
-`agentic-rag-for-dummies`, `chroma`, `faiss`, `graphrag`, `kotaemon`, `lancedb`, `lightrag`, `meilisearch`, `milvus`, `onyx`, `pageindex`, `pgvector`, `qdrant`, `ragflow`, `turbovec`, `txtai`, `weaviate`
+`agentic-rag-for-dummies`, `chonkie`, `chroma`, `faiss`, `flagembedding`, `graphrag`, `kotaemon`, `lancedb`, `lightrag`, `meilisearch`, `milvus`, `onyx`, `pageindex`, `pgvector`, `qdrant`, `ragflow`, `turbovec`, `txtai`, `weaviate`
 
 ### Memoria y contexto para agentes
 
@@ -504,7 +504,7 @@ Herramientas personales para gestionar credenciales y proteger datos.
 
 Automatización doméstica y herramientas para tus equipos.
 
-`40-questions`, `actual`, `ai-job-search`, `cleanyourtv`, `esphome`, `firefly-iii`, `frigate`, `ghostfolio`, `home-assistant`, `optimizerduck`, `universal-android-debloater-next-generation`, `zigbee2mqtt`
+`40-questions`, `actual`, `ai-job-search`, `cleanyourtv`, `esphome`, `firefly-iii`, `frigate`, `ghostfolio`, `ha-mcp`, `home-assistant`, `isponsorblocktv`, `optimizerduck`, `universal-android-debloater-next-generation`, `zigbee2mqtt`
 
 ### Aprendizaje asistido
 
@@ -526,31 +526,31 @@ Elige un agente de código, comprende un proyecto y prepara su infraestructura, 
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-`aider`, `antigravity-cli`, `claude-code`, `cline`, `codex`, `deepseek-harness`, `gemini-cli`, `goose`, `kilocode`, `mimo-code`, `mini-swe-agent`, `open-interpreter`, `open-swe`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `qwen-code`, `t3code`, `zed`
+`aider`, `android-skills`, `antigravity-cli`, `claude-code`, `cline`, `codex`, `deepseek-harness`, `gemini-cli`, `goose`, `kilocode`, `mimo-code`, `mini-swe-agent`, `open-interpreter`, `open-swe`, `opencode`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `qwen-code`, `t3code`, `zed`
 
 ### Comprender y revisar código
 
 Índices y análisis para orientarte dentro de repositorios.
 
-`ast-grep`, `biome`, `cli`, `codebase-memory-mcp`, `codegraph`, `floorplan`, `fzf`, `gitleaks`, `gitnexus`, `graphify`, `lazygit`, `openai-python`, `pre-commit`, `repomix`, `ripgrep`, `ruff`, `sonarqube`, `swe-bench`, `tree-sitter`, `trufflehog`
+`apscheduler`, `ast-grep`, `biome`, `cli`, `codebase-memory-mcp`, `codegraph`, `floorplan`, `fzf`, `gitleaks`, `gitnexus`, `graphify`, `hishel`, `lazygit`, `npkill`, `openai-python`, `pre-commit`, `pybreaker`, `repomix`, `requests-cache`, `ripgrep`, `ruff`, `sonarqube`, `swe-bench`, `tree-sitter`, `trufflehog`
 
 ### Backend, alojamiento y despliegue
 
 Infraestructura, servicios y herramientas de operación.
 
-`agent-desktop`, `agent-protocol`, `appwrite`, `caddy`, `casaos`, `claude-task-master`, `composio`, `computer-use-preview`, `coolify`, `dokploy`, `e2b`, `free-for-dev`, `freedomain`, `frp`, `headscale`, `masterdnsvpn`, `nemoclaw`, `netbird`, `nodeterm`, `portainer`, `sandbox`, `shepherd`, `supabase`, `traefik`, `uptime-kuma`, `wg-easy`
+`agent-desktop`, `agent-protocol`, `appwrite`, `caddy`, `casaos`, `claude-task-master`, `composio`, `computer-use-preview`, `coolify`, `dokploy`, `e2b`, `free-for-dev`, `freedomain`, `frp`, `headscale`, `libretranslate`, `masterdnsvpn`, `nemoclaw`, `netbird`, `nodeterm`, `portainer`, `sandbox`, `shepherd`, `supabase`, `traefik`, `uptime-kuma`, `wg-easy`
 
 ### Evaluación, trazas y observabilidad
 
 Medir resultados y revisar lo que hace una aplicación de IA.
 
-`claude-code-usage-monitor`, `deepeval`, `guardrails`, `helicone`, `langfuse`, `lm-eval-harness`, `loguru`, `mlflow`, `openllmetry`, `opik`, `phoenix`, `promptfoo`, `ragas`
+`ccusage`, `claude-code-usage-monitor`, `deepeval`, `guardrails`, `helicone`, `langfuse`, `lm-eval-harness`, `loguru`, `mlflow`, `openllmetry`, `opik`, `phoenix`, `promptfoo`, `ragas`
 
 ### Contexto, consumo y enrutamiento
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `headroom`, `litellm`, `omniroute`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
+`backdoor`, `bentoml`, `claude-code-router`, `gptcache`, `gpustack`, `headroom`, `litellm`, `llmlingua`, `omniroute`, `portkey-gateway`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Visión artificial, mapas y percepción
 
@@ -600,13 +600,13 @@ Ejemplos de machine learning y entrenamiento desde cero.
 
 Explorar instrucciones generales y formas de trabajar con agentes.
 
-`agent-skills`, `agent-toolkit`, `andrej-karpathy-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `autoskills`, `awesome-agent-skills`, `awesome-agents`, `awesome-claude-code`, `awesome-claude-skills`, `awesome-copilot`, `bmad-method`, `book-to-skill`, `claude-code-hooks-mastery`, `claude-plugins-official`, `claude-token-efficient`, `codex-plugin-cc`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `google-skills`, `grok-plugin-claude-code`, `gstack`, `plugins`, `ponytail`, `skills`, `spec-kit`, `superclaude-framework`, `superpowers`, `wshobson-agents`
+`agent-skills`, `agent-toolkit`, `andrej-karpathy-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `autoskills`, `awesome-agent-skills`, `awesome-agents`, `awesome-claude-code`, `awesome-claude-code-subagents`, `awesome-claude-skills`, `awesome-copilot`, `bmad-method`, `book-to-skill`, `claude-code-hooks-mastery`, `claude-code-templates`, `claude-plugins-official`, `claude-token-efficient`, `codex-plugin-cc`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `google-skills`, `grok-plugin-claude-code`, `gstack`, `humans-md-plugins`, `plugins`, `ponytail`, `shadcn-improve`, `skills`, `spec-kit`, `superclaude-framework`, `superpowers`, `wshobson-agents`
 
 ### Skills por oficio y especialidad
 
 Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 
-`3dviz-pro-max`, `agency-agents`, `anatomy`, `arcads-claude-code`, `blender-skills`, `claude-seo`, `creative-architect`, `design-dna`, `design.md`, `dream-loop`, `financial-services`, `front-end-checklist`, `genjutsu`, `geo-seo-claude`, `gsap-skills`, `hallmark`, `humanizer`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `linkedin-agent-skill`, `logo-design-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `no-ai-slop`, `scientific-agent-skills`, `skills-emil`, `social-media-research-skills`, `stitch-skills`, `stop-slop`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `ui-ux-pro-max-skill`
+`3dviz-pro-max`, `agency-agents`, `anatomy`, `android-skills`, `arcads-claude-code`, `blender-skills`, `claude-ads`, `claude-seo`, `creative-architect`, `design-dna`, `design.md`, `dream-loop`, `financial-services`, `front-end-checklist`, `genjutsu`, `geo-seo-claude`, `gsap-skills`, `hallmark`, `humanizer`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `knowledge-work-plugins`, `linkedin-agent-skill`, `logo-design-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `no-ai-slop`, `scientific-agent-skills`, `shopify-ai-toolkit`, `skills-emil`, `social-media-research-skills`, `stitch-skills`, `stop-slop`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `ui-ux-pro-max-skill`
 
 ## Configuración de Claude Code
 
@@ -622,13 +622,13 @@ Cliente oficial y selección inicial de herramientas.
 
 Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
-`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `andrej-karpathy-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `arcads-claude-code`, `archify`, `autoresearch`, `autoskills`, `awesome-claude-skills`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-animated-shorts`, `claude-obsidian`, `claude-plugins-official`, `claude-seo`, `claude-token-efficient`, `cleanyourtv`, `codex-plugin-cc`, `context-engineering`, `creative-architect`, `crewai`, `cybersecurity-skills`, `deer-flow`, `defending-code-reference-harness`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `financial-services`, `floorplan`, `gemini-skills`, `genjutsu`, `geo-seo-claude`, `gitnexus`, `google-skills`, `gpt-researcher`, `gradio`, `graphify`, `grok-plugin-claude-code`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `hyperframes`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `last30days-skill`, `lemo-opuscar`, `linkedin-agent-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `nemotron`, `no-ai-slop`, `obsidian-second-brain`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `papermorph`, `pipecat`, `pixelfx`, `playwright-cli`, `ponytail`, `ppt-master`, `prompt-master`, `prompts-chat`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `semgrep`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `stop-slop`, `streamlit`, `strix`, `superclaude-framework`, `superpowers`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `vercel-ai`, `video-shotcraft`, `video-use`, `whatsapp-agentkit`, `wrenai`, `wshobson-agents`
+`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `andrej-karpathy-skills`, `android-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `arcads-claude-code`, `archify`, `autoresearch`, `autoskills`, `awesome-claude-skills`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-animated-shorts`, `claude-obsidian`, `claude-plugins-official`, `claude-seo`, `claude-token-efficient`, `cleanyourtv`, `codex-plugin-cc`, `context-engineering`, `creative-architect`, `crewai`, `cybersecurity-skills`, `deer-flow`, `defending-code-reference-harness`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `financial-services`, `floorplan`, `gemini-skills`, `genjutsu`, `geo-seo-claude`, `gitnexus`, `google-skills`, `gpt-researcher`, `gradio`, `graphify`, `grok-plugin-claude-code`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `last30days-skill`, `lemo-opuscar`, `linkedin-agent-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `nemotron`, `no-ai-slop`, `obsidian-second-brain`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `papermorph`, `pipecat`, `pixelfx`, `playwright-cli`, `ponytail`, `ppt-master`, `prompt-master`, `prompts-chat`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `semgrep`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `stop-slop`, `streamlit`, `strix`, `superclaude-framework`, `superpowers`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `vercel-ai`, `video-shotcraft`, `video-use`, `whatsapp-agentkit`, `wrenai`, `wshobson-agents`
 
 ### MCP y navegador
 
 Conectar documentación, repositorios y herramientas de navegador.
 
-`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `graphiti`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `lightpanda`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `presenton`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
+`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `claude-context`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `graphiti`, `ha-mcp`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `lightpanda`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `presenton`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
 
 ### Memoria y uso del contexto
 
@@ -646,13 +646,13 @@ Material de consulta con ejemplos de hooks y controles de Claude Code. Revisa ca
 
 Herramientas auxiliares para observar uso y estudiar el enrutamiento. No son una ampliación de tu plan.
 
-`claude-code-router`, `claude-code-usage-monitor`, `magnitude`, `ollama`
+`ccusage`, `claude-code-router`, `claude-code-usage-monitor`, `magnitude`, `ollama`
 
 ### Diseño, marketing y producción
 
 Skills de oficio documentadas para Claude Code.
 
-`creative-architect`, `cybersecurity-skills`, `impeccable`, `marketingskills`, `scientific-agent-skills`, `skills-remotion`, `taste-skill`
+`claude-ads`, `creative-architect`, `cybersecurity-skills`, `ffmpeg-skill`, `impeccable`, `knowledge-work-plugins`, `marketingskills`, `scientific-agent-skills`, `shopify-ai-toolkit`, `skills-remotion`, `taste-skill`
 
 ### Integraciones,proveedores y paneles
 
@@ -674,13 +674,13 @@ Cliente oficial y formas de empezar con un proyecto.
 
 Instrucciones y plugins documentados para Codex.
 
-`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `antigravity-awesome-skills`, `archify`, `autoresearch`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-obsidian`, `context-engineering`, `crewai`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `dream-loop`, `ecc`, `elephant-goldfish-model`, `floorplan`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `no-ai-slop`, `obsidian-second-brain`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `ppt-master`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `srt-whiteboard-animation`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `threejs-game-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-shotcraft`, `video-use`, `wrenai`, `wshobson-agents`
+`3dviz-pro-max`, `agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `ai-website-cloner-template`, `anatomy`, `android-skills`, `antigravity-awesome-skills`, `archify`, `autoresearch`, `awesome-llm-apps`, `blender-skills`, `bmad-method`, `book-to-skill`, `brag`, `browser-use`, `claude-obsidian`, `context-engineering`, `crewai`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `dream-loop`, `ecc`, `elephant-goldfish-model`, `floorplan`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `hallmark`, `huashu-motion`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `loop-engineering`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `no-ai-slop`, `obsidian-second-brain`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `ppt-master`, `rea-video`, `remotion`, `remotion-superpowers`, `scientific-agent-skills`, `security-audit-skill`, `skills`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `srt-whiteboard-animation`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `threejs-game-skills`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-shotcraft`, `video-use`, `wrenai`, `wshobson-agents`
 
 ### MCP y herramientas de navegador
 
 Conectar documentación, GitHub y navegación al agente.
 
-`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `gpt-researcher`, `graphiti`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `prompts-chat`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `ruflo`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
+`activepieces`, `agent-browser`, `agent-desktop`, `agno`, `annas-mcp`, `autogpt`, `bla`, `blender-mcp`, `browser-harness`, `ccxt`, `changedetection`, `chrome-devtools-mcp`, `claude-context`, `concat`, `context7`, `crawl4ai`, `davinci-resolve-mcp`, `docling`, `dograh`, `earshot`, `engram`, `figma-context-mcp`, `firecrawl`, `front-end-checklist`, `ghidramcp`, `github-mcp-server`, `gods-eye-view`, `gpt-researcher`, `graphiti`, `ha-mcp`, `haystack`, `heroui`, `kestra`, `langflow`, `langfuse`, `laya`, `livekit-agents`, `local-deep-research`, `lumibot`, `maxun`, `mcp-neo4j`, `mempalace`, `motion`, `mui`, `notebooklm-mcp-cli`, `notebooklm-py`, `onyx`, `open-design`, `open-seo`, `openwa`, `opik`, `osiris`, `pdfmathtranslate`, `penpot`, `phoenix`, `playwright`, `playwright-mcp`, `posthog`, `postiz-app`, `prompts-chat`, `puppeteer`, `pythia`, `rea`, `react-bits`, `repomix`, `ruflo`, `sandbox`, `scrapegraph-ai`, `scrapling`, `serena`, `sim`, `skillspector`, `stagehand`, `stitch-sdk`, `supabase`, `tooljet`, `ui`, `unity-mcp`, `vibe-trading`, `windmill`
 
 ### Memoria, contexto y sesiones
 
@@ -692,13 +692,13 @@ Mantener decisiones y organizar el contexto de trabajo.
 
 Skills y herramientas de oficio con acceso documentado desde Codex.
 
-`cybersecurity-skills`, `impeccable`, `marketingskills`, `ppt-master`, `skills-remotion`, `taste-skill`
+`cybersecurity-skills`, `ffmpeg-skill`, `impeccable`, `marketingskills`, `ppt-master`, `shopify-ai-toolkit`, `skills-remotion`, `taste-skill`
 
 ### Integraciones,proveedores y paneles
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-`agent-reach`, `agentes-chat`, `agentmemory`, `claude-code-router`, `claude-mem`, `claude-task-master`, `cleanyourtv`, `codebase-memory-mcp`, `codegraph`, `codex-plugin-cc`, `cognee`, `deeptutor`, `fabric`, `goose`, `headroom`, `hello-halo`, `hermes-agent`, `lightpanda`, `litellm`, `lobehub`, `magnitude`, `marimo`, `mimo-code`, `mlflow`, `moneyprinterturbo`, `multica`, `nodeterm`, `ollama`, `omniroute`, `open-interpreter`, `openclaw`, `opencode`, `opencursor`, `openevolve`, `openhands`, `openviking`, `paperclip`, `presenton`, `rtk`, `sellbird`, `shannon`, `supermemory`, `t3code`, `unsloth`, `wan2gp`
+`agent-reach`, `agentes-chat`, `agentmemory`, `ccusage`, `claude-code-router`, `claude-mem`, `claude-task-master`, `cleanyourtv`, `codebase-memory-mcp`, `codegraph`, `codex-plugin-cc`, `cognee`, `deeptutor`, `fabric`, `goose`, `headroom`, `hello-halo`, `hermes-agent`, `lightpanda`, `litellm`, `lobehub`, `magnitude`, `marimo`, `mimo-code`, `mlflow`, `moneyprinterturbo`, `multica`, `nodeterm`, `ollama`, `omniroute`, `open-interpreter`, `openclaw`, `opencode`, `opencursor`, `openevolve`, `openhands`, `openviking`, `paperclip`, `presenton`, `rtk`, `sellbird`, `shannon`, `supermemory`, `t3code`, `unsloth`, `wan2gp`
 
 ## Configuración de Antigravity
 
@@ -708,7 +708,7 @@ Distingue el cliente de Google, las skills compatibles y los recursos para dise�
 
 El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 
-`agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `anatomy`, `antigravity-awesome-skills`, `bmad-method`, `book-to-skill`, `claude-obsidian`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `humanizer`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `no-ai-slop`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `rea-video`, `remotion`, `remotion-superpowers`, `rtk`, `scientific-agent-skills`, `security-audit-skill`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-use`, `wrenai`, `wshobson-agents`
+`agency-agents`, `agent-framework`, `agent-skills`, `agent-toolkit`, `ai-job-search`, `anatomy`, `android-skills`, `antigravity-awesome-skills`, `bmad-method`, `book-to-skill`, `claude-obsidian`, `cybersecurity-skills`, `design-dna`, `diagram-design`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `gitnexus`, `google-skills`, `gradio`, `graphify`, `gsap-skills`, `gstack`, `humanizer`, `humans-md-plugins`, `hyperframes`, `i-have-adhd`, `impeccable`, `last30days-skill`, `logo-design-skill`, `marketingskills`, `mem0`, `mineru`, `modern-web-guidance`, `motion-design-skill`, `motionmaxxing`, `no-ai-slop`, `obsidian-skills`, `openfilm`, `openmaic`, `openmontage`, `openui`, `playwright-cli`, `ponytail`, `rea-video`, `remotion`, `remotion-superpowers`, `robotics-antigravity-plugin`, `rtk`, `scientific-agent-skills`, `security-audit-skill`, `shopify-ai-toolkit`, `skills-emil`, `skills-remotion`, `social-media-research-skills`, `spec-kit`, `stitch-skills`, `streamlit`, `strix`, `superpowers`, `taste-skill`, `twenty-main`, `ui-sdk`, `ui-ux-pro-max-skill`, `video-use`, `wrenai`, `wshobson-agents`
 
 ### Diseño y creación de interfaces
 
@@ -732,4 +732,4 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-`agentmemory`, `claude-mem`, `cleanyourtv`, `codebase-memory-mcp`, `codegraph`, `deeptutor`, `nodeterm`, `omniroute`, `opencursor`, `t3code`
+`agentmemory`, `ccusage`, `claude-mem`, `cleanyourtv`, `codebase-memory-mcp`, `codegraph`, `deeptutor`, `nodeterm`, `omniroute`, `opencursor`, `t3code`

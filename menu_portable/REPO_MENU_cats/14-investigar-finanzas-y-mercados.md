@@ -500,6 +500,65 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `jupyterlab`, `vectorbt`, `backtesting-py`
 
+## `polyweather`
+role=app · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. Autoalojar consume tu equipo; las fuentes y la edición o servicio alojado pueden exigir condiciones o tarifas propias.
+- Equipo: Equipo normal; revisar dependencias. Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba.
+**Repo:** https://github.com/yangyuan-zhen/PolyWeather
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Abre una vista de datos de prueba y compara fechas de previsión y mercado.
+**Qué comprobar:** Puedes identificar la fuente, zona y fecha de los datos mostrados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
+## `prediction-market-backtesting`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.
+**Stack:** Python, Cargo.toml, Makefile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Entorno compatible con NautilusTrader y datos históricos de una muestra.
+**Repo:** https://github.com/evan-kolberg/prediction-market-backtesting
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://evan-kolberg.github.io/prediction-market-backtesting/license/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Ejecuta el ejemplo introductorio con pocos datos históricos y sin credenciales de trading.
+**Qué comprobar:** Obtienes un resultado reproducible para el conjunto de datos utilizado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nautilus-trader`
+
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python
 

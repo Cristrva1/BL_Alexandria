@@ -1,6 +1,6 @@
 # Alexandría para agentes · Agentes de investigación financiera
 
-Categoría 14 «Investigar finanzas y mercados» › subcategoría `agentes`. 8 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 14 «Investigar finanzas y mercados» › subcategoría `agentes`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=14&sub=agentes · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -26,6 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `dexter` | Agente de investigación financiera que planifica consultas, obtiene datos de… | 2 Intermedio | 50 | — (sin licencia detectada) | sin grupo |
 | `autohedge` | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de… | 3 Avanzado | 45 | MIT (OSI permisiva) | sin grupo |
 | `quantharness` | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
+| `polyweather` | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las… | 2 Intermedio | — | AGPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -139,6 +140,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente Éxito: Puedes separar datos del periodo, análisis visual y decisión generada
 - **Combina con:** `langgraph` [3/py], `langchain` [3/py], `langfuse` [23/observabilidad]
 - **Riesgos y avisos:** Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión. El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo.
+
+### PolyWeather (`polyweather`)
+
+- **Repo:** https://github.com/yangyuan-zhen/PolyWeather · AGPL-3.0 · nivel 2 · —/100
+- **Qué es:** Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
+- **Cuándo elegirlo:** Casos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones.
+- **Requisitos:** nivel 2: preparación sencilla, app o instalador listo para usar, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre una vista de datos de prueba y compara fechas de previsión y mercado. Éxito: Puedes identificar la fuente, zona y fecha de los datos mostrados.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -185,6 +185,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `gemini-cli`, `mcp-inspector`, `puppeteer`, `agent-browser`, `awesome-chrome-devtools`
 **Alternativas (elige una):** `playwright-mcp`, `browser-harness`
 
+## `claude-context`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
+
+**Qué es:** Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. El arranque revisado configura una clave de OpenAI para embeddings y una base Milvus o Zilliz. No se afirmó otra ruta en la ficha.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. La indexación consume embeddings y almacenamiento; no los cubre el plan del agente.
+- Equipo: Equipo normal; revisar dependencias. Node.js 20+, un cliente MCP, base vectorial y una configuración de embeddings según el proveedor escogido.
+**Repo:** https://github.com/zilliztech/claude-context
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar archivos relacionados con la autenticación en un proyecto de ejemplo.; Indexar una biblioteca ficticia y comprobar qué resultado devuelve por función.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Configura un índice de prueba sobre código público e intenta encontrar una función conocida.
+**Qué comprobar:** La búsqueda devuelve el archivo y fragmento esperado, y puedes comprobar el proveedor de embeddings utilizado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `context7`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=mcp · tags=mcp,docs,typescript
 
@@ -335,6 +364,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El agente devuelve contenidos y enlaces del repositorio elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `strix`, `agentes-chat`, `awesome-copilot`, `cli`
+
+## `ha-mcp`
+role=runtime · exec=local · setup=medium · mcp=True · prov=—
+
+**Qué es:** Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El servidor MCP no llama a un LLM por sí solo. Usa un cliente compatible, con modelo local o remoto, para controlarlo.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El README describe clientes conectados a modelos locales; la calidad depende del modelo y del contexto.
+- Coste: El coste depende del proveedor o la ruta. El acceso al cliente y el coste del backend, datos o cómputo se evalúan por separado.
+- Equipo: Equipo normal; revisar dependencias. Home Assistant compatible o el demo oficial, y un cliente MCP de prueba.
+**Repo:** https://github.com/homeassistant-ai/ha-mcp
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://homeassistant-ai.github.io/ha-mcp/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar qué sensores aparecen en el demo.; Revisar como borrador la automatización de una luz virtual.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un cliente MCP
+**Primera prueba propuesta:** Inicia con el demo y pide una consulta sin cambios sobre una entidad ficticia.
+**Qué comprobar:** La herramienta devuelve el estado de la entidad sin accionar dispositivos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `home-assistant`
 
 ## `mcp`
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp

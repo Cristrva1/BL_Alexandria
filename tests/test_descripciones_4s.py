@@ -52,16 +52,22 @@ def test_four_sections_are_consistent(catalog):
 def test_ficha_renders_four_sections(tmp_path):
     for name in ("INDICE_IA.json", "INDICE_IA.detalle.json", "README.md", "AGENTS.md"):
         shutil.copy(ROOT / name, tmp_path / name)
+    detail_path = tmp_path / "INDICE_IA.detalle.json"
+    document = json.loads(detail_path.read_text(encoding="utf8"))
+    legacy_repo = document["repos"]["handbrake"]
+    for field in ("que_es", "que_hace", "como_lo_hace", "combina_con"):
+        legacy_repo.pop(field, None)
+    detail_path.write_text(json.dumps(document, ensure_ascii=False), encoding="utf8")
     render_all(tmp_path)
     text = (tmp_path / "human" / "fichas" / "ollama.md").read_text(encoding="utf8")
     for heading in ("## ¿Qué es?", "## ¿Qué hace?", "## ¿Cómo lo hace?", "## ¿Con qué otros repos se combina?"):
         assert heading in text
     assert "(open-webui.md)" in text
     assert "## Cómo funciona" not in text  # el texto genérico se sustituye
-    pending = [r for r in load_catalog(ROOT).repos if not r.get("combina_con") and not r.get("alias_of") and r.get("doc")]
-    if pending:  # sin datos curados, la ficha conserva el formato anterior
-        legacy = (tmp_path / pending[0]["doc"]).read_text(encoding="utf8")
-        assert "## ¿Qué es?" not in legacy
+    legacy = (tmp_path / "human" / "fichas" / "handbrake.md").read_text(encoding="utf8")
+    assert "## ¿Qué es?" not in legacy
+    lightweight = (tmp_path / "human" / "fichas" / "libretranslate.md").read_text(encoding="utf8")
+    assert "## ¿Qué es?" in lightweight
 
 
 def test_web_catalog_exposes_four_sections():

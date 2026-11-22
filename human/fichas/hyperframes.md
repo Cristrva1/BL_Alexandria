@@ -39,9 +39,9 @@ Requiere Node.js 22+ y FFmpeg. Las skills se instalan con `npx hyperframes skill
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Creative Architect](creative-architect.md) · [open-design](open-design.md)
+[Creative Architect](creative-architect.md) · [HyperFrames Launches](hyperframes-launches.md) · [open-design](open-design.md)
 
 **Notas:** Alternativas (elige una): remotion, moviepy. Su README compara explícitamente su licencia con la de Remotion.
 

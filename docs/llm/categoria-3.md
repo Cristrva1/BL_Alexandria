@@ -1,6 +1,6 @@
 # Alexandría para agentes · Construir agentes y coordinar equipos de IA
 
-Categoría 3 completa (34 repos, 4 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 3 completa (36 repos, 4 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -38,11 +38,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `claude-agent-sdk-python` | py | SDK oficial de Python para integrar el bucle de Claude Code, herramientas… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `smolagents` | py | Librería mínima de Hugging Face para agentes que razonan escribiendo y… | 2 Intermedio | 55 | Apache-2.0 (OSI permisiva) | alternativa |
 | `awesome-langgraph` | py | Repositorio de recursos, librerías y arquitecturas del ecosistema… | 1 Básico | 37 | CC0-1.0 (OSI permisiva) | sin grupo |
+| `semantic-router` | py | Clasifica consultas por intención y decide a qué función enviarlas usando… | 2 Intermedio | — | MIT | sin grupo |
 | `agent-framework` | ts | Framework de Microsoft para agentes y workflows multiagente en Python y .NET… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `vercel-ai` | ts | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | recomendado |
 | `mastra` | ts | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los… | 2 Intermedio | 65 | Apache-2.0 + licencia Enterprise (ee/) (open-core) | alternativa |
 | `langgraphjs` | ts | Versión TypeScript de LangGraph para agentes con estado como grafos en Node o… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
 | `langchain4j` | ts | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `eve` | ts | Ayuda a construir agentes con estado usando archivos de configuración… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 | `autogpt` | visual | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un… | 3 Avanzado | 70 | MIT + Polyform Shield (autogpt_platform/) (source-available) | alternativa |
 | `dify` | visual | Plataforma integral para construir apps de IA con backend y UI listos. | 2 Intermedio | 70 | Apache-2.0 modificada (condiciones adicionales) (source-available) | alternativa |
 | `langflow` | visual | Constructor visual de flujos LLM/agentes construido sobre LangChain. | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
@@ -309,6 +311,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `langgraph`, `langchain`, `deepagents`
 - **Riesgos y avisos:** Todavía recomienda langchain-mcp-adapters, archivado y retirado del catálogo (MCP pasó al paquete principal de LangChain): desactualización detectada. Las integraciones de los enlaces no acreditan compatibilidad del directorio completo.
 
+### Semantic Router (`semantic-router`)
+
+- **Repo:** https://github.com/aurelio-labs/semantic-router · MIT · nivel 2 · —/100
+- **Qué es:** Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.
+- **Cuándo elegirlo:** Casos: Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.; Separar solicitudes sobre facturación de solicitudes de soporte.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, compose.yaml, pyproject.toml; API de IA: opcional; Python, una versión actual de la rama 1.x y un codificador compatible..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction
+- **Primera prueba propuesta (no ejecutada):** Crea dos rutas con frases ficticias y usa un codificador local documentado. Éxito: Frases similares llegan a la ruta esperada y puedes revisar las que no encajan.
+- **Riesgos y avisos:** El aviso por una dependencia comprometida afecta a versiones 0.1.8 a anteriores a 0.1.15. Evita esas versiones y revisa las dependencias fijadas.
+
 ### Microsoft Agent Framework (`agent-framework`)
 
 - **Repo:** https://github.com/microsoft/agent-framework · MIT · nivel 2 · 67/100
@@ -372,6 +384,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Integra un chat que consulta un objeto de inventario de prueba en Java Éxito: El resultado devuelve el dato del objeto y puede validarse con un test
 - **Combina con:** `ollama` [8/motores], `qdrant` [6/vectores], `pgvector` [6/vectores], `milvus` [6/vectores]
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo (spring-ai no figura). Qdrant, pgvector y milvus son alternativas entre sí: elige uno. Es una biblioteca Java independiente; no es un port con las mismas versiones o API que LangChain Python.
+
+### Eve (`eve`)
+
+- **Repo:** https://github.com/vercel/eve · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.
+- **Cuándo elegirlo:** Casos: Probar un agente de preguntas sobre una tarea ficticia.; Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js/npm y autenticación para el proveedor o AI Gateway documentado; hosting opcional..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://eve.dev/
+- **Primera prueba propuesta (no ejecutada):** Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio. Éxito: La interfaz de terminal inicia y responde con el proveedor elegido.
+- **Riesgos y avisos:** La licencia del framework no cubre AI Gateway, tokens ni despliegue; no asumas que tu suscripción de Codex o Claude Code concede acceso al modelo de Eve.
 
 ### AutoGPT (`autogpt`)
 

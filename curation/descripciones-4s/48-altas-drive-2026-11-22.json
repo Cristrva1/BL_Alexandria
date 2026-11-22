@@ -1,0 +1,828 @@
+{
+ "batch": "altas-drive-2026-11-22",
+ "checked_at": "2026-11-22",
+ "method": "Revisión documental individual. Identidad, README, licencia, distribución y avisos públicos; sin instalación ni ejecución de terceros.",
+ "repos": {
+  "buzz": {
+   "que_es": "Una aplicación con interfaz para convertir voz grabada en texto, basada en Whisper y otros backends compatibles.",
+   "que_hace": "Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propio equipo.",
+   "como_lo_hace": "Importa un audio o video, ejecuta el modelo elegido y permite revisar el texto junto a la grabación antes de exportar TXT, SRT o VTT.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Prepara audio en un formato que la aplicación pueda importar."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/chidiwilliams/buzz/blob/ac3d9da57dd155c8f8fba5f40644392e38423e6f/README.md",
+    "https://flathub.org/apps/io.github.chidiwilliams.Buzz",
+    "https://github.com/chidiwilliams/buzz/releases",
+    "https://pypi.org/project/buzz-captions/1.4.5/",
+    "https://github.com/chidiwilliams/buzz/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "chidiwilliams/buzz",
+    "archived": false,
+    "pushed_at": "2026-11-20",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.4.5 (2026-08-23)"
+   }
+  },
+  "libretranslate": {
+   "que_es": "Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.",
+   "que_hace": "Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos.",
+   "como_lo_hace": "Recibe texto, elige el par de idiomas y lo traduce con Argos Translate en la instancia que configuraste.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/LibreTranslate/LibreTranslate/blob/84cd56c061a7ba3955b49efdaee2ac54dcbca07f/README.md",
+    "https://docs.libretranslate.com/guides/installation/",
+    "https://docs.libretranslate.com/guides/mcp_server/",
+    "https://docs.libretranslate.com/",
+    "https://pypi.org/project/libretranslate/1.9.6/",
+    "https://github.com/LibreTranslate/LibreTranslate/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "LibreTranslate/LibreTranslate",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.9.6 (2026-05-26)"
+   }
+  },
+  "ccusage": {
+   "que_es": "Una utilidad de terminal para medir el uso registrado por asistentes de programación.",
+   "que_hace": "Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales.",
+   "como_lo_hace": "Lee archivos locales de sesiones, agrupa tokens por asistente y periodo, y les aplica precios de referencia para estimar importes.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Lee los registros de sesión que genera este asistente."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/ccusage/ccusage/blob/8fd41cd10e595cd4231a5627427d1725112ad718/README.md",
+    "https://ccusage.com/guide/installation",
+    "https://ccusage.com/guide/",
+    "https://www.npmjs.com/package/ccusage/v/20.0.51",
+    "https://github.com/ccusage/ccusage/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "ccusage/ccusage",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-22",
+    "latest_release": "v20.0.51 (2026-11-14)"
+   }
+  },
+  "android-skills": {
+   "que_es": "Una colección oficial de instrucciones de desarrollo Android para asistentes compatibles con Agent Skills.",
+   "que_hace": "Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android.",
+   "como_lo_hace": "El cliente carga la skill relacionada con la tarea y aplica las guías y herramientas de Android disponibles en el proyecto.",
+   "combina_con": [
+    {
+     "id": "codex",
+     "motivo": "Anfitrión documentado de la colección para un proyecto Android."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/android/skills/blob/c72942584fff970dac86ced78b367fce0c441e52/README.md",
+    "https://developer.android.com/tools/agents/android-skills",
+    "https://developer.android.com/tools/agents/android-cli",
+    "https://github.com/android/skills/blob/main/LICENSE.txt"
+   ],
+   "github": {
+    "name_with_owner": "android/skills",
+    "archived": false,
+    "pushed_at": "2026-11-17",
+    "license": "Apache-2.0",
+    "primary_language": "Kotlin",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.0.23 (2026-11-15)"
+   }
+  },
+  "claude-ads": {
+   "que_es": "Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.",
+   "que_hace": "Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad.",
+   "como_lo_hace": "Contrasta métricas con reglas por plataforma y conserva un informe con lo que pudo comprobar.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/AgriciDaniel/claude-ads/blob/fc3908e786c318776df89a3a098333da377364be/README.md",
+    "https://github.com/AgriciDaniel/claude-ads/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "AgriciDaniel/claude-ads",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v2.1.0 (2026-10-16)"
+   }
+  },
+  "apscheduler": {
+   "que_es": "Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.",
+   "que_hace": "Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.",
+   "como_lo_hace": "Un planificador conserva los disparadores y llama a funciones cuando llega su hora.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/agronholm/apscheduler/blob/a37e6c970419a29588818dd91bd2052776849b2b/README.rst",
+    "https://apscheduler.readthedocs.io/en/3.x/userguide.html",
+    "https://github.com/advisories/GHSA-9cfw-f3f9-7mm7",
+    "https://github.com/agronholm/apscheduler/blob/master/LICENSE.txt"
+   ],
+   "github": {
+    "name_with_owner": "agronholm/apscheduler",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "3.11.3 (2026-06-28)"
+   }
+  },
+  "knowledge-work-plugins": {
+   "que_es": "Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.",
+   "que_hace": "Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.",
+   "como_lo_hace": "Cada plugin agrupa instrucciones, comandos y conectores relacionados con el trabajo.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md",
+    "https://claude.com/plugins",
+    "https://github.com/anthropics/knowledge-work-plugins/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "anthropics/knowledge-work-plugins",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "semantic-router": {
+   "que_es": "Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.",
+   "que_hace": "Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.",
+   "como_lo_hace": "Compara la representación de la consulta con frases que ilustran cada intención.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/aurelio-labs/semantic-router/blob/168d9381b0311f4be048db03603a86f7ccfce451/README.md",
+    "https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction",
+    "https://github.com/advisories/GHSA-98x5-vq43-vc5p",
+    "https://github.com/aurelio-labs/semantic-router/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "aurelio-labs/semantic-router",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.2.0 (2026-11-22)"
+   }
+  },
+  "celery": {
+   "que_es": "Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.",
+   "que_hace": "Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.",
+   "como_lo_hace": "El intermediario entrega mensajes a los trabajadores, que consumen la cola fuera del proceso de la aplicación.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/celery/celery/blob/29b14de6d95de5aa9032ca2c364e23b8979e8642/README.rst",
+    "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
+    "https://github.com/celery/celery/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "celery/celery",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v5.7.0 (2026-11-05)"
+   }
+  },
+  "kitesurf": {
+   "que_es": "Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.",
+   "que_hace": "Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.",
+   "como_lo_hace": "El motor renderiza páginas en un entorno experimental, con rutas separadas para la prueba local y Workers.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/cloudflare/kitesurf/blob/9295cc263b0a74fb17048462504c16bdcf363589/README.md",
+    "https://kitesurf.dev/",
+    "https://github.com/cloudflare/kitesurf/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "cloudflare/kitesurf",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "humans-md-plugins": {
+   "que_es": "Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.",
+   "que_hace": "Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.",
+   "como_lo_hace": "El plugin lee el archivo de preferencias y añade su contenido al contexto de una sesión.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/cmdai-hq/humans-md-plugins/blob/fab03e3c81544d418349b6c477049e31ab9bed1b/README.md",
+    "https://humansmd.dev/",
+    "https://github.com/cmdai-hq/humans-md-plugins/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "cmdai-hq/humans-md-plugins",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.3.2 (2026-10-18)"
+   }
+  },
+  "video2threejs": {
+   "que_es": "Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.",
+   "que_hace": "Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.",
+   "como_lo_hace": "Descompone la referencia en geometría, cámara, luz y recursos que luego se ajustan por separado.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md",
+    "https://github.com/cpppppp7/video2threejs/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "cpppppp7/video2threejs",
+    "archived": false,
+    "pushed_at": "2026-09-04",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "pybreaker": {
+   "que_es": "Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.",
+   "que_hace": "Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.",
+   "como_lo_hace": "Cuenta fallos y controla cuándo se dejan pasar nuevas llamadas y cuándo se comprueba la recuperación.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/danielfm/pybreaker/blob/2b0b965fcfc7705ca9a776c614ea6cb3ec3fe783/README.rst",
+    "https://github.com/danielfm/pybreaker/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "danielfm/pybreaker",
+    "archived": false,
+    "pushed_at": "2026-09-25",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.4.1 (2025-09-21)"
+   }
+  },
+  "claude-code-templates": {
+   "que_es": "Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.",
+   "que_hace": "Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.",
+   "como_lo_hace": "Indexa recursos de distintas fuentes y los organiza como componentes instalables.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/davila7/claude-code-templates/blob/44fd6fda16f51e5accdde254d5f530fb45de7390/README.md",
+    "https://www.aitmpl.com",
+    "https://github.com/advisories/GHSA-79wm-x847-7cvg",
+    "https://github.com/davila7/claude-code-templates/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "davila7/claude-code-templates",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.29.7 (2026-10-09)"
+   }
+  },
+  "isponsorblocktv": {
+   "que_es": "Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.",
+   "que_hace": "Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.",
+   "como_lo_hace": "El cliente consulta los segmentos de SponsorBlock y controla la reproducción en el dispositivo emparejado.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md",
+    "https://github.com/advisories/GHSA-56v3-jrq2-4q9m",
+    "https://github.com/dmunozv04/iSponsorBlockTV/blob/main/LICENSE.md"
+   ],
+   "github": {
+    "name_with_owner": "dmunozv04/iSponsorBlockTV",
+    "archived": false,
+    "pushed_at": "2026-11-19",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v2.11.0 (2026-08-21)"
+   }
+  },
+  "prediction-market-backtesting": {
+   "que_es": "Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.",
+   "que_hace": "Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.",
+   "como_lo_hace": "Convierte datos históricos en eventos que el simulador usa para evaluar una estrategia.",
+   "combina_con": [
+    {
+     "id": "nautilus-trader",
+     "motivo": "Motor que ejecuta los ejemplos de simulación."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/evan-kolberg/prediction-market-backtesting/blob/c76e77af00ef53472a9da8f66dae7fdd2d3e5928/README.md",
+    "https://evan-kolberg.github.io/prediction-market-backtesting/license/",
+    "https://github.com/evan-kolberg/prediction-market-backtesting/blob/v4.1-alpha/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "evan-kolberg/prediction-market-backtesting",
+    "archived": false,
+    "pushed_at": "2026-05-16",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "chonkie": {
+   "que_es": "Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.",
+   "que_hace": "Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.",
+   "como_lo_hace": "Sus fragmentadores dividen texto por tamaño o señales semánticas para facilitar el índice posterior.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/feyninc/chonkie/blob/664454b689d68614bcfc0b1d57fc2a28b5862825/README.md",
+    "https://docs.chonkie.ai",
+    "https://github.com/feyninc/chonkie/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "feyninc/chonkie",
+    "archived": false,
+    "pushed_at": "2026-11-19",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.7.0 (2026-07-07)"
+   }
+  },
+  "flagembedding": {
+   "que_es": "Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.",
+   "que_hace": "Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.",
+   "como_lo_hace": "Un modelo convierte textos en vectores o asigna puntuaciones a pares de consulta y documento.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md",
+    "https://github.com/FlagOpen/FlagEmbedding/blob/master/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "FlagOpen/FlagEmbedding",
+    "archived": false,
+    "pushed_at": "2026-10-27",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.4.2 (2026-08-24)"
+   }
+  },
+  "robotics-antigravity-plugin": {
+   "que_es": "Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.",
+   "que_hace": "Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.",
+   "como_lo_hace": "Las skills guían al asistente en el uso de simuladores y herramientas definidas para cada ejercicio.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md",
+    "https://github.com/google-deepmind/robotics-antigravity-plugin/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "google-deepmind/robotics-antigravity-plugin",
+    "archived": false,
+    "pushed_at": "2026-11-20",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "hyperframes-launches": {
+   "que_es": "Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.",
+   "que_hace": "Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.",
+   "como_lo_hace": "Cada carpeta conserva la composición y los recursos con los que se construyó el video.",
+   "combina_con": [
+    {
+     "id": "hyperframes",
+     "motivo": "Motor usado para las composiciones publicadas."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md",
+    "https://github.com/heygen-com/hyperframes-launches/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "heygen-com/hyperframes-launches",
+    "archived": false,
+    "pushed_at": "2026-10-04",
+    "license": "Apache-2.0",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "ha-mcp": {
+   "que_es": "Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.",
+   "que_hace": "Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.",
+   "como_lo_hace": "El conector presenta entidades y acciones como herramientas MCP con el alcance de la conexión.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Expone entidades de esa instalación mediante MCP."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/homeassistant-ai/ha-mcp/blob/d068d1218983a369d8082ec923c14445cd462393/README.md",
+    "https://homeassistant-ai.github.io/ha-mcp/",
+    "https://github.com/advisories/GHSA-q855-8rh5-jfgq",
+    "https://github.com/homeassistant-ai/ha-mcp/blob/master/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "homeassistant-ai/ha-mcp",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v9.2.0 (2026-11-11)"
+   }
+  },
+  "claude-second-brain": {
+   "que_es": "Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.",
+   "que_hace": "Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.",
+   "como_lo_hace": "Combina notas versionadas, búsqueda local y skills que dan contexto a Claude Code.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/jessepinkman9900/claude-second-brain/blob/599f55ad50afceb9eae4f31746aa37274087d239/README.md",
+    "https://github.com/jessepinkman9900/claude-second-brain/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "jessepinkman9900/claude-second-brain",
+    "archived": false,
+    "pushed_at": "2026-04-20",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.1.0 (2026-04-20)"
+   }
+  },
+  "ffmpeg-skill": {
+   "que_es": "Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.",
+   "que_hace": "Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.",
+   "como_lo_hace": "Ejecuta operaciones de video y audio mediante herramientas que convierten parámetros en llamadas a FFmpeg.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Ejecuta las operaciones de video y audio que solicita la skill."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md",
+    "https://github.com/kajisho5/ffmpeg-skill/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "kajisho5/ffmpeg-skill",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v4.7.0 (2026-11-22)"
+   }
+  },
+  "hishel": {
+   "que_es": "Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.",
+   "que_hace": "Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.",
+   "como_lo_hace": "Aplica reglas de caché HTTP y escribe las respuestas elegibles en el almacenamiento configurado.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/karpetrosyan/hishel/blob/a2afd91ad34c25f2ace1e1b804e9d7bcbd1e2724/README.md",
+    "https://hishel.com",
+    "https://github.com/karpetrosyan/hishel/blob/master/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "karpetrosyan/hishel",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "BSD-3-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "2.0.0 (2026-11-05)"
+   }
+  },
+  "astryx": {
+   "que_es": "Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.",
+   "que_hace": "Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.",
+   "como_lo_hace": "Los componentes usan temas y estilos que puedes configurar de forma compartida.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md",
+    "https://github.com/meta/astryx/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "meta/astryx",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.7.17 (2026-11-20)"
+   }
+  },
+  "llmlingua": {
+   "que_es": "Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.",
+   "que_hace": "Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.",
+   "como_lo_hace": "El compresor usa un modelo local para conservar términos relevantes y retirar partes menos útiles.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/microsoft/LLMLingua/blob/01b9e9481d7395e1e83a48df4a062b11f6304325/README.md",
+    "https://llmlingua.com/",
+    "https://github.com/microsoft/LLMLingua/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "microsoft/LLMLingua",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.2.2 (2024-04-09)"
+   }
+  },
+  "motionbricks": {
+   "que_es": "Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.",
+   "que_hace": "Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.",
+   "como_lo_hace": "Un modelo latente genera movimiento entre metas y combina primitivas según la demostración.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md",
+    "https://github.com/NVlabs/motionbricks/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "NVlabs/motionbricks",
+    "archived": false,
+    "pushed_at": "2026-10-26",
+    "license": "NOASSERTION",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "openjarvis": {
+   "que_es": "Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.",
+   "que_hace": "Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.",
+   "como_lo_hace": "El asistente combina motores de inferencia con perfiles de conversación y, si los habilitas, herramientas y memoria.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/open-jarvis/OpenJarvis/blob/c05ebe99e524a269a08d017ce3730a436ab4c46b/README.md",
+    "https://github.com/open-jarvis/OpenJarvis/releases",
+    "https://github.com/open-jarvis/OpenJarvis/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "open-jarvis/OpenJarvis",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "desktop-v1.0.5 (2026-11-11)"
+   }
+  },
+  "portkey-gateway": {
+   "que_es": "Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.",
+   "que_hace": "Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.",
+   "como_lo_hace": "La pasarela decide a qué backend enviar cada solicitud y puede aplicar presupuestos y reglas de reintento.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md",
+    "https://github.com/advisories/GHSA-hhh5-2cvx-vmfp",
+    "https://github.com/Portkey-AI/gateway/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "Portkey-AI/gateway",
+    "archived": false,
+    "pushed_at": "2026-11-20",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.15.2 (2026-01-12)"
+   }
+  },
+  "openreality": {
+   "que_es": "Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.",
+   "que_hace": "Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.",
+   "como_lo_hace": "Un motor de reconstrucción procesa video y el conector expone operaciones de consulta sobre la escena.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/reality-opened/openreality/blob/86f545d1ff1c9191cedc3e85dbae9b65fec29ced/README.md",
+    "https://open-reality.io/mcp",
+    "https://github.com/reality-opened/openreality/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "reality-opened/openreality",
+    "archived": false,
+    "pushed_at": "2026-11-18",
+    "license": "BSD-2-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.4.0 (2026-10-20)"
+   }
+  },
+  "requests-cache": {
+   "que_es": "Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.",
+   "que_hace": "Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.",
+   "como_lo_hace": "Un adaptador guarda respuestas y las reutiliza mientras sean válidas según la política elegida.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/requests-cache/requests-cache/blob/b6dedd798c231aecd5f13e1010a9373cea81528a/README.md",
+    "https://requests-cache.readthedocs.io/",
+    "https://github.com/requests-cache/requests-cache/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "requests-cache/requests-cache",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "BSD-2-Clause",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.3.0 (2026-02-02)"
+   }
+  },
+  "shadcn-improve": {
+   "que_es": "Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.",
+   "que_hace": "Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.",
+   "como_lo_hace": "Da un método para separar diagnóstico, plan e implementación y transferir el plan entre sesiones.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/shadcn/improve/blob/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/README.md",
+    "https://github.com/shadcn/improve/blob/main/LICENSE.md"
+   ],
+   "github": {
+    "name_with_owner": "shadcn/improve",
+    "archived": false,
+    "pushed_at": "2026-09-12",
+    "license": "MIT",
+    "primary_language": null,
+    "checked_at": "2026-11-22"
+   }
+  },
+  "shopify-ai-toolkit": {
+   "que_es": "Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.",
+   "que_hace": "Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.",
+   "como_lo_hace": "El plugin reúne skills y herramientas que consultan la documentación y APIs de Shopify.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md",
+    "https://github.com/Shopify/Shopify-AI-Toolkit/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "Shopify/Shopify-AI-Toolkit",
+    "archived": false,
+    "pushed_at": "2026-11-17",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "v2.4.0 (2026-11-17)"
+   }
+  },
+  "eve": {
+   "que_es": "Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.",
+   "que_hace": "Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.",
+   "como_lo_hace": "Organiza cada agente en archivos que definen instrucciones, estado, herramientas y funciones.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/vercel/eve/blob/5c52fbff40d90e55ef1aa27daa467c298479b374/README.md",
+    "https://eve.dev/",
+    "https://github.com/vercel/eve/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "vercel/eve",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "eve@1.3.0 (2026-11-20)"
+   }
+  },
+  "awesome-claude-code-subagents": {
+   "que_es": "Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.",
+   "que_hace": "Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.",
+   "como_lo_hace": "Cada perfil describe una especialidad, instrucciones y herramientas que Claude puede delegar.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md",
+    "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "VoltAgent/awesome-claude-code-subagents",
+    "archived": false,
+    "pushed_at": "2026-11-02",
+    "license": "MIT",
+    "primary_language": "Shell",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "inferssd": {
+   "que_es": "Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.",
+   "que_hace": "Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.",
+   "como_lo_hace": "Mantiene activos los pesos necesarios y lee desde SSD partes del modelo MoE cuando las solicita la inferencia.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/wici-ai/inferssd/blob/910afae91c3c2578f890df7ffd9a1e55b6237680/README.md",
+    "https://github.com/wici-ai/inferssd/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "wici-ai/inferssd",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-22",
+    "latest_release": "261122.341 (2026-11-22)"
+   }
+  },
+  "polyweather": {
+   "que_es": "Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.",
+   "que_hace": "Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.",
+   "como_lo_hace": "Alinea datos de clima y mercados por ubicación y fecha para compararlos en una misma interfaz.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md",
+    "https://github.com/yangyuan-zhen/PolyWeather/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "yangyuan-zhen/PolyWeather",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "AGPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "claude-context": {
+   "que_es": "Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.",
+   "que_hace": "Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.",
+   "como_lo_hace": "Fragmenta e indexa el código en una base vectorial para recuperar resultados por similitud.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md",
+    "https://github.com/zilliztech/claude-context/blob/master/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "zilliztech/claude-context",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22"
+   }
+  },
+  "gptcache": {
+   "que_es": "Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.",
+   "que_hace": "Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.",
+   "como_lo_hace": "Compara representaciones de las preguntas para decidir si conserva o vuelve a calcular una respuesta.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/zilliztech/GPTCache/blob/a74ac654473f7bf4109118e8576945161616e17a/README.md",
+    "https://gptcache.readthedocs.io",
+    "https://github.com/zilliztech/GPTCache/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "zilliztech/GPTCache",
+    "archived": false,
+    "pushed_at": "2026-09-22",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-22",
+    "latest_release": "0.1.44 (2024-08-01)"
+   }
+  },
+  "npkill": {
+   "que_es": "Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.",
+   "que_hace": "Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.",
+   "como_lo_hace": "Escanea rutas según perfiles de desarrollo y muestra el espacio de cada candidato antes del borrado.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/voidcosmos/npkill/blob/ca908483869c51ccf81dcde05a717c165b053785/README.md",
+    "https://npkill.js.org",
+    "https://github.com/voidcosmos/npkill#usage",
+    "https://github.com/voidcosmos/npkill/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "voidcosmos/npkill",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.0.0 (2026-11-12)"
+   }
+  }
+ }
+}

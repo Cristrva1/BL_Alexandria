@@ -1,6 +1,6 @@
 # Alexandría para agentes · Bases vectoriales y búsqueda semántica
 
-Categoría 6 «Memoria, RAG y búsqueda de conocimiento» › subcategoría `vectores`. 8 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 6 «Memoria, RAG y búsqueda de conocimiento» › subcategoría `vectores`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6&sub=vectores · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -26,6 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6
 | `weaviate` | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con… | 2 Intermedio | 59 | BSD-3-Clause (open-core) | alternativa |
 | `faiss` | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en… | 2 Intermedio | 56 | MIT (OSI permisiva) | alternativa |
 | `turbovec` | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
+| `flagembedding` | Calcula representaciones y relevancia de textos con modelos BGE para ordenar… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -125,6 +126,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Indexa un conjunto pequeño y compara vecinos antes y después de cuantizar Éxito: Puedes medir memoria, tiempo y coincidencia en tus propios datos
 - **Combina con:** `langchain` [3/py], `llama-index` [3/py], `haystack` [3/py]
 - **Riesgos y avisos:** Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus.
+
+### FlagEmbedding (`flagembedding`)
+
+- **Repo:** https://github.com/FlagOpen/FlagEmbedding · MIT · nivel 2 · —/100
+- **Qué es:** Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.
+- **Cuándo elegirlo:** Casos: Encontrar el párrafo más relevante en un manual ficticio.; Comparar el orden de tres documentos antes y después de un reranker.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, setup.py; hardware model_dependent; API de IA: no; Python, dependencias del proyecto y pesos compatibles con la licencia y memoria de tu equipo..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona un modelo local pequeño en la guía y compara una consulta con tres frases. Éxito: La salida contiene puntuaciones o vectores y permite ordenar las frases de prueba.
+- **Riesgos y avisos:** El código es MIT; revisa la licencia y requisitos de cada conjunto de pesos. No necesitas una API de IA para el ejemplo local.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

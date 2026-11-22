@@ -4,7 +4,7 @@
 
 Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta.
 
-33 repos · 5 secciones
+34 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 6 repos
+- [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 7 repos
 - [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 13 repos
 - [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 4 repos
 - [Música y audio generativo](#música-y-audio-generativo) — 3 repos
@@ -33,6 +33,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [whisper](../fichas/whisper.md) | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. | Tu objetivo encaja con estos ejemplos: Preparar una transcripción local; Traducir habla al inglés como borrador | Sin clave propia de API de IA en la ruta básica |
 | [faster-whisper](../fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU | Sin clave propia de API de IA en la ruta básica |
 | [whisperX](../fichas/whisperx.md) | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. | Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista | Sin clave propia de API de IA en la ruta básica |
+| [Buzz](../fichas/buzz.md) | Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que puede usar Whisper en tu propio equipo. | Tu objetivo encaja con estos ejemplos: Convertir una nota de voz propia en texto editable.; Crear subtítulos en SRT para una demostración grabada. | API de IA opcional |
 | [NeMo Speech](../fichas/nemo.md) | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. | Tu objetivo encaja con estos ejemplos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR | Sin clave propia de API de IA en la ruta básica |
 | [sherpa-onnx](../fichas/sherpa-onnx.md) | Motor de voz offline con ONNX Runtime: reconocimiento, síntesis, VAD, diarización e identificación de hablante en móvil, embebido, escritorio y servidor. | Tu objetivo encaja con estos ejemplos: añadir dictado o transcripción sin conexión a una app Android o iOS; poner reconocimiento y síntesis de voz en una Raspberry Pi sin nube | Sin clave propia de API de IA en la ruta básica |
 

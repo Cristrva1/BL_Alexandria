@@ -1,6 +1,6 @@
 # Alexandría para agentes · Video con código y agentes creativos
 
-Categoría 30 completa (23 repos, 3 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 30 completa (25 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=30 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -40,7 +40,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `huashu-motion` | skills-video | Skill para crear videos de presentación de productos con un agente de código… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
 | `skills-remotion` | skills-video | Skills oficiales de Remotion para que tu agente de código cree videos con React. | 1 Básico | 45 | — (sin licencia detectada) | sin grupo |
 | `motionmaxxing` | skills-video | Skill para mejorar composición, ritmo y movimiento de videos creados con… | 2 Intermedio | 38 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `ffmpeg-skill` | skills-video | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar… | 2 Intermedio | — | MIT | sin grupo |
 | `videofy-minimal` | aplicaciones | Aplicación local que transforma artículos de noticias en videos breves mediante… | 2 Intermedio | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `hyperframes-launches` | aplicaciones | Publica composiciones con código usadas en videos de lanzamiento de HeyGen para… | 1 Básico | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -327,6 +329,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `gsap` [26/animacion], `claude-code` [20/terminal], `ffmpeg` [12/edicion]
 - **Riesgos y avisos:** Sin alternativas declaradas. El skill admite hosts que leen SKILL.md pero las funciones dependen de herramientas disponibles; no garantiza una valoración profesional por sus puntuaciones.
 
+### FFmpeg Skill (`ffmpeg-skill`)
+
+- **Repo:** https://github.com/kajisho5/ffmpeg-skill · MIT · nivel 2 · —/100
+- **Qué es:** Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.
+- **Cuándo elegirlo:** Casos: Recortar un anuncio de prueba a quince segundos.; Reencuadrar una toma propia para formato vertical. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, package.json; API de IA: no; FFmpeg 6.1 o posterior con los codecs y filtros de la operación; entorno del agente para la skill..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md
+- **Primera prueba propuesta (no ejecutada):** Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo. Éxito: El archivo resultante tiene la duración esperada y el original sigue intacto.
+- **Combina con:** `ffmpeg` [12/edicion]
+- **Riesgos y avisos:** FFmpeg no necesita una API de modelo. Subtítulos, plugins y ejecución del agente pueden tener requisitos y cobros aparte.
+
 ### videofy_minimal (`videofy-minimal`)
 
 - **Repo:** https://github.com/schibsted/videofy_minimal · Apache-2.0 · nivel 2 · 42/100
@@ -343,6 +356,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `remotion` [30/motores], `whisper` [29/stt], `ffmpeg` [12/edicion]
 - **Alternativas:** `moneyprinterturbo`
 - **Riesgos y avisos:** Alternativas (elige una): moneyprinterturbo. La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión.
+
+### HyperFrames Launches (`hyperframes-launches`)
+
+- **Repo:** https://github.com/heygen-com/hyperframes-launches · Apache-2.0 · nivel 1 · —/100
+- **Qué es:** Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.
+- **Cuándo elegirlo:** Casos: Estudiar el ritmo de un lanzamiento de producto.; Tomar de referencia la organización de textos y gráficos de una escena.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML; API de IA: no; Navegador; para previsualizar código, HyperFrames, dependencias del ejemplo y Git LFS para sus archivos grandes..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto. Éxito: Puedes describir qué archivo controla la escena y qué elementos son recursos externos.
+- **Combina con:** `hyperframes` [30/motores]
+- **Riesgos y avisos:** El código propio indicado usa Apache-2.0; marcas, audio, imágenes y otros materiales requieren comprobar derechos aparte.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

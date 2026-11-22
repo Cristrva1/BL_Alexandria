@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-64 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+65 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -18,12 +18,13 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 11 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [activepieces](../fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
 | [Apache Airflow](../fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Sin clave propia de API de IA en la ruta básica |
+| [Celery](../fichas/celery.md) | Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar. | Sin clave propia de API de IA en la ruta básica |
 | [Dagger](../fichas/dagger.md) | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry. | Sin clave propia de API de IA en la ruta básica |
 | [Dagster](../fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica |
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |

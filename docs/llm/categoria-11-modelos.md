@@ -1,6 +1,6 @@
 # Alexandría para agentes · Modelos, librerías y control
 
-Categoría 11 «Generar y editar imágenes con IA» › subcategoría `modelos`. 2 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 11 «Generar y editar imágenes con IA» › subcategoría `modelos`. 2 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=11&sub=modelos · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

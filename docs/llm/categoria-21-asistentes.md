@@ -1,6 +1,6 @@
 # Alexandría para agentes · Asistentes autónomos y equipos de agentes
 
-Categoría 21 «Asistentes e investigación con agentes» › subcategoría `asistentes`. 12 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 21 «Asistentes e investigación con agentes» › subcategoría `asistentes`. 13 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=21&sub=asistentes · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -30,6 +30,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `mercury-agent` | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por… | 1 Básico | 49 | MIT (OSI permisiva) | alternativa |
 | `opendots` | Interfaz abierta de asistentes persistentes que requiere CopilotKit… | 2 Intermedio | 48 | MIT (OSI permisiva) | alternativa |
 | `social-media-agent` | Agente de LangChain que convierte enlaces en publicaciones para redes sociales… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
+| `openjarvis` | Crea un asistente personal con chat y flujos que pueden usar modelos locales… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -195,6 +196,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Genera un borrador desde un enlace propio y recházalo o edítalo sin publicarlo Éxito: Puedes revisar texto y aprobación antes de cualquier publicación
 - **Combina con:** `langgraphjs` [3/ts], `firecrawl` [4/crawlers], `supabase` [22/infraestructura]
 - **Riesgos y avisos:** Sin alternativas declaradas. Publica en cuentas reales: revisa siempre antes de aprobar. El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones.
+
+### OpenJarvis (`openjarvis`)
+
+- **Repo:** https://github.com/open-jarvis/OpenJarvis · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.
+- **Cuándo elegirlo:** Casos: Conversar con un modelo descargado sin conectar cuentas.; Probar búsqueda sobre un pequeño conjunto de documentos ficticios. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
+- **Requisitos:** nivel 2: preparación media; Python, Makefile, pyproject.toml; API de IA: opcional; Distribución oficial para tu sistema, memoria para el modelo inicial y espacio para pesos; Node.js 22+ si usas la interfaz desde el código..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/open-jarvis/OpenJarvis/releases
+- **Primera prueba propuesta (no ejecutada):** Elige una distribución oficial y empieza con el chat básico sin conectores. Éxito: El modelo configurado responde a una pregunta y puedes identificar si la ruta usada fue local.
+- **Riesgos y avisos:** Evita pegar instaladores remotos directamente en la terminal. Revisar por separado las funciones que leen cuentas o envían datos externos.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

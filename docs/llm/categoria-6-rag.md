@@ -1,6 +1,6 @@
 # Alexandría para agentes · RAG y motores de conocimiento
 
-Categoría 6 «Memoria, RAG y búsqueda de conocimiento» › subcategoría `rag`. 9 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 6 «Memoria, RAG y búsqueda de conocimiento» › subcategoría `rag`. 10 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6&sub=rag · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -27,6 +27,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6
 | `meilisearch` | Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e… | 1 Básico | 56 | MIT (source-available) | sin grupo |
 | `graphrag` | Sistema de RAG de Microsoft que recupera información sobre un grafo de… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `agentic-rag-for-dummies` | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
+| `chonkie` | Divide textos largos en fragmentos para indexarlos o recuperarlos, con… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -144,6 +145,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Coloca un PDF breve en docs y pregunta por un dato de una página concreta Éxito: Puedes ver documentos recuperados y aclarar una consulta ambigua
 - **Combina con:** `langgraph` [3/py], `ollama` [8/motores], `qdrant` [6/vectores], `langfuse` [23/observabilidad], `ragas` [23/observabilidad]
 - **Riesgos y avisos:** Es material de aprendizaje y referencia, no un producto para producción. No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook.
+
+### Chonkie (`chonkie`)
+
+- **Repo:** https://github.com/feyninc/chonkie · MIT · nivel 2 · —/100
+- **Qué es:** Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.
+- **Cuándo elegirlo:** Casos: Dividir un manual por bloques para una búsqueda posterior.; Comparar fragmentos por tamaño fijo con los de una estrategia semántica.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: opcional; Entorno Python y un archivo de texto sintético..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.chonkie.ai
+- **Primera prueba propuesta (no ejecutada):** Instala la variante básica y divide dos párrafos de prueba con una estrategia simple. Éxito: Obtienes fragmentos cuyo contenido y tamaño se pueden comprobar.
+- **Riesgos y avisos:** El corte básico no necesita IA. Algunos fragmentadores, modelos o la API alojada tienen dependencias, credenciales y costes propios.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

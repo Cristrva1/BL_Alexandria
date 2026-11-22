@@ -1,6 +1,6 @@
 # Alexandría para agentes · Componentes, iconos y sistemas de diseño
 
-Categoría 9 «Diseñar y construir interfaces web» › subcategoría `componentes`. 14 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 9 «Diseñar y construir interfaces web» › subcategoría `componentes`. 15 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9&sub=componentes · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -32,6 +32,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | `mantine` | Biblioteca de componentes React completa con más de 100 componentes, hooks… | 2 Intermedio | 58 | MIT (OSI permisiva) | alternativa |
 | `radix-primitives` | Componentes React sin estilos y accesibles para construir sistemas de diseño… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
 | `magicui` | Librería de componentes UI visualmente atractivos (animaciones, efectos… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
+| `astryx` | Añade a una web componentes y temas de un sistema de diseño que puedes adaptar… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -200,6 +201,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ui`, `tailwindcss` [9/estilos], `motion` [26/animacion], `claude-code` [20/terminal], `animejs` [26/animacion]
 - **Alternativas:** `react-bits`
 - **Riesgos y avisos:** Alternativas (elige una): react-bits. Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos.
+
+### Astryx (`astryx`)
+
+- **Repo:** https://github.com/meta/astryx · MIT · nivel 2 · —/100
+- **Qué es:** Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.
+- **Cuándo elegirlo:** Casos: Construir una pantalla con botones y campos coherentes.; Probar un tema neutro y después ajustar tipografía y color.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Proyecto web React compatible con los paquetes de Astryx y StyleX..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba. Éxito: Los componentes aparecen con el tema aplicado y puedes navegar con teclado.
+- **Riesgos y avisos:** La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -35,6 +35,12 @@ Se instala con `pip install -U nautilus_trader` (estable) o con `--pre` para la 
 | [ccxt](ccxt.md) | Comparar o completar datos de exchanges sin adaptador. (combinación por arquitectura) | Descarga datos con CCXT para pruebas. |
 | [py-sdk](py-sdk.md) | Combinación recíproca: py-sdk lo enlaza como «NautilusTrader documenta una integración con Polymarket para backtesting y ejecución; usa los clientes de Polymarket, no necesariamente este SDK. (combinación por arquitectura)». | Orden indicado desde py-sdk: Elige uno como capa de ejecución; prueba primero en modo simulado. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Prediction Market Backtesting](prediction-market-backtesting.md)
+
 **Notas:** Sin alternativas declaradas. Curva de aprendizaje alta; la rama 2.0 aún es prerelease.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.231.0 (2026-08-02) · licencia declarada LGPL-3.0 (consultado el 2026-11-15).

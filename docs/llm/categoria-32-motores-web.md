@@ -1,6 +1,6 @@
 # Alexandría para agentes · Navegadores y servidores de ejecución
 
-Categoría 32 «Navegadores y automatización web» › subcategoría `motores-web`. 4 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 32 «Navegadores y automatización web» › subcategoría `motores-web`. 5 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=32&sub=motores-web · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -22,6 +22,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `lightpanda` | Navegador headless escrito en Zig para IA y automatización, mucho más ligero… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `servo` | Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar… | 4 Experto | 58 | MPL-2.0 (OSI copyleft) | alternativa |
 | `camoufox` | Navegador basado en Firefox para scraping y agentes que genera una identidad de… | 2 Intermedio | 48 | MPL-2.0 (navegador) y MIT (paquetes de Python) (OSI copyleft) | sin grupo |
+| `kitesurf` | Explora un motor experimental para renderizar páginas en Workers y obtener… | 3 Avanzado | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -71,6 +72,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install -U "camoufox[geoip]"` — fuente: https://github.com/daijro/camoufox/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `pip install -U "camoufox[geoip]"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README. Éxito: Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.
 - **Combina con:** `playwright` [32/bibliotecas], `crawlee-python` [4/crawlers], `crawlee` [4/crawlers]
+
+### Kitesurf (`kitesurf`)
+
+- **Repo:** https://github.com/cloudflare/kitesurf · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.
+- **Cuándo elegirlo:** Casos: Capturar una página estática de prueba.; Comparar cómo se renderiza un componente en un entorno aislado. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada; TypeScript, Cargo.toml, package.json; hardware model_dependent; API de IA: no; Contenedor local para el ejemplo o Cloudflare Workers con los servicios que indique su guía..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://kitesurf.dev/
+- **Primera prueba propuesta (no ejecutada):** Usa el ejemplo local enlazado y abre una página de prueba sin cuentas ni cookies. Éxito: Se obtiene una captura o HTML del ejemplo y puedes compararlo con tu navegador.
+- **Riesgos y avisos:** El motor es experimental. Workers y Dynamic Workers pueden requerir planes de Cloudflare; la demo local no exige cuenta.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

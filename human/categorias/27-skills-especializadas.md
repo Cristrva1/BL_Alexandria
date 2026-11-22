@@ -4,7 +4,7 @@
 
 Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales.
 
-36 repos · 3 secciones
+40 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -18,9 +18,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Skills de diseño para agentes](#skills-de-diseño-para-agentes) — 21 repos
+- [Skills de diseño para agentes](#skills-de-diseño-para-agentes) — 22 repos
 - [Escritura y calidad de texto](#escritura-y-calidad-de-texto) — 4 repos
-- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 11 repos
+- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 14 repos
 
 ## Skills de diseño para agentes
 
@@ -37,6 +37,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [anatomy](../fichas/anatomy.md) | Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | Tu objetivo encaja con estos ejemplos: Explicar un mecanismo; Crear una ilustración isométrica | Sin clave propia de API de IA en la ruta básica |
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Tu objetivo encaja con estos ejemplos: Preparar una transición web; Revisar uso de ScrollTrigger | Sin clave propia de API de IA en la ruta básica |
 | [modern-web-guidance](../fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Tu objetivo encaja con estos ejemplos: Consultar APIs web actuales; Revisar patrones heredados | Sin clave propia de API de IA en la ruta básica |
+| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Tu objetivo encaja con estos ejemplos: Pedir una revisión de cómo maneja una pantalla los bordes del sistema.; Examinar en un proyecto de ejemplo por qué R8 conserva clases que se esperaban eliminar. | Sin clave propia de API de IA en la ruta básica |
 | [logo-design-skill](../fichas/logo-design-skill.md) | Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño. | Tu objetivo encaja con estos ejemplos: Explorar un logotipo; Preparar variantes monocromas | Sin clave propia de API de IA en la ruta básica |
 | [threejs-skills](../fichas/threejs-skills.md) | Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. | Tu objetivo encaja con estos ejemplos: Preparar una escena web; Revisar migraciones de Three.js | Sin clave propia de API de IA en la ruta básica |
 | [blender-skills](../fichas/blender-skills.md) | Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP. | Tu objetivo encaja con estos ejemplos: Preparar un objeto para un juego; Revisar un pipeline de assets 3D | Sin clave propia de API de IA en la ruta básica |
@@ -65,13 +66,16 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [The Agency (agency-agents)](../fichas/agency-agents.md) | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. | Tu objetivo encaja con estos ejemplos: Seleccionar un perfil de frontend; Revisar un brief de marketing | Sin clave propia de API de IA en la ruta básica |
 | [scientific-agent-skills](../fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | Tu objetivo encaja con estos ejemplos: Explorar un dataset científico; Preparar una revisión bibliográfica | API de IA opcional |
 | [financial-services](../fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | Tu objetivo encaja con estos ejemplos: Preparar un análisis de empresa; Estudiar conciliación de registros ficticios | API de IA opcional |
+| [Knowledge Work Plugins](../fichas/knowledge-work-plugins.md) | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte. | Tu objetivo encaja con estos ejemplos: Preparar preguntas para una reunión ficticia.; Clasificar tres tickets inventados sin abrir un CRM. | Sin clave propia de API de IA en la ruta básica |
 | [claude-seo](../fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | Tu objetivo encaja con estos ejemplos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing | API de IA opcional |
 | [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial | API de IA opcional |
+| [Claude Ads](../fichas/claude-ads.md) | Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad. | Tu objetivo encaja con estos ejemplos: Crear una lista de comprobaciones para una campaña ficticia.; Preparar un informe a partir de un CSV de métricas inventadas. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/minimalist-entrepreneur-skills.md) | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | Tu objetivo encaja con estos ejemplos: Explorar un problema de cliente; Preparar preguntas de validación | Sin clave propia de API de IA en la ruta básica |
 | [instagram-agent-skill](../fichas/instagram-agent-skill.md) | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | Tu objetivo encaja con estos ejemplos: Preparar un Reel; Revisar un caption | Sin clave propia de API de IA en la ruta básica |
 | [social-media-research-skills](../fichas/social-media-research-skills.md) | Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. | Tu objetivo encaja con estos ejemplos: Comparar temas de contenido; Analizar comentarios públicos de una marca | Sin clave propia de API de IA en la ruta básica |
 | [linkedin-agent-skill](../fichas/linkedin-agent-skill.md) | Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. | Tu objetivo encaja con estos ejemplos: Planificar una semana de contenido; Revisar un perfil profesional | Sin clave propia de API de IA en la ruta básica |
 | [Arcads AI Video Skill Pack](../fichas/arcads-claude-code.md) | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling). | Tu objetivo encaja con estos ejemplos: Prototipar un anuncio vertical; Preparar variantes de una imagen de producto | API de IA necesaria |
+| [Shopify AI Toolkit](../fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Tu objetivo encaja con estos ejemplos: Consultar cómo se organiza una sección de tema de prueba.; Preparar una consulta de catálogo para una tienda de desarrollo. | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

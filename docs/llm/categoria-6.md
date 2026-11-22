@@ -1,6 +1,6 @@
 # Alexandría para agentes · Memoria, RAG y búsqueda de conocimiento
 
-Categoría 6 completa (28 repos, 3 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 6 completa (30 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -38,6 +38,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6
 | `meilisearch` | rag | Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e… | 1 Básico | 56 | MIT (source-available) | sin grupo |
 | `graphrag` | rag | Sistema de RAG de Microsoft que recupera información sobre un grafo de… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `agentic-rag-for-dummies` | rag | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
+| `chonkie` | rag | Divide textos largos en fragmentos para indexarlos o recuperarlos, con… | 2 Intermedio | — | MIT | sin grupo |
 | `milvus` | vectores | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de… | 3 Avanzado | 77 | Apache-2.0 (OSI permisiva) | recomendado |
 | `qdrant` | vectores | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | alternativa |
 | `chroma` | vectores | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -46,6 +47,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6
 | `weaviate` | vectores | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con… | 2 Intermedio | 59 | BSD-3-Clause (open-core) | alternativa |
 | `faiss` | vectores | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en… | 2 Intermedio | 56 | MIT (OSI permisiva) | alternativa |
 | `turbovec` | vectores | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
+| `flagembedding` | vectores | Calcula representaciones y relevancia de textos con modelos BGE para ordenar… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -298,6 +300,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `langgraph` [3/py], `ollama` [8/motores], `qdrant` [6/vectores], `langfuse` [23/observabilidad], `ragas` [23/observabilidad]
 - **Riesgos y avisos:** Es material de aprendizaje y referencia, no un producto para producción. No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook.
 
+### Chonkie (`chonkie`)
+
+- **Repo:** https://github.com/feyninc/chonkie · MIT · nivel 2 · —/100
+- **Qué es:** Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.
+- **Cuándo elegirlo:** Casos: Dividir un manual por bloques para una búsqueda posterior.; Comparar fragmentos por tamaño fijo con los de una estrategia semántica.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: opcional; Entorno Python y un archivo de texto sintético..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.chonkie.ai
+- **Primera prueba propuesta (no ejecutada):** Instala la variante básica y divide dos párrafos de prueba con una estrategia simple. Éxito: Obtienes fragmentos cuyo contenido y tamaño se pueden comprobar.
+- **Riesgos y avisos:** El corte básico no necesita IA. Algunos fragmentadores, modelos o la API alojada tienen dependencias, credenciales y costes propios.
+
 ### Milvus (`milvus`)
 
 - **Repo:** https://github.com/milvus-io/milvus · Apache-2.0 · nivel 3 · 77/100 · recomendado en «Bases y librerías vectoriales»
@@ -392,6 +404,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Indexa un conjunto pequeño y compara vecinos antes y después de cuantizar Éxito: Puedes medir memoria, tiempo y coincidencia en tus propios datos
 - **Combina con:** `langchain` [3/py], `llama-index` [3/py], `haystack` [3/py]
 - **Riesgos y avisos:** Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus.
+
+### FlagEmbedding (`flagembedding`)
+
+- **Repo:** https://github.com/FlagOpen/FlagEmbedding · MIT · nivel 2 · —/100
+- **Qué es:** Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.
+- **Cuándo elegirlo:** Casos: Encontrar el párrafo más relevante en un manual ficticio.; Comparar el orden de tres documentos antes y después de un reranker.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, setup.py; hardware model_dependent; API de IA: no; Python, dependencias del proyecto y pesos compatibles con la licencia y memoria de tu equipo..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona un modelo local pequeño en la guía y compara una consulta con tres frases. Éxito: La salida contiene puntuaciones o vectores y permite ordenar las frases de prueba.
+- **Riesgos y avisos:** El código es MIT; revisa la licencia y requisitos de cada conjunto de pesos. No necesitas una API de IA para el ejemplo local.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

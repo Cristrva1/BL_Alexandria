@@ -284,6 +284,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `claude-plugins-official`, `skillspector`
 **Alternativas (elige una):** `awesome-claude-skills`
 
+## `awesome-claude-code-subagents`
+role=directory · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.
+**Stack:** Shell
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.
+- Claude Code: Referencia para la herramienta; no es una integración
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.
+- Equipo: Equipo normal; revisar dependencias. Navegador; para una eventual adopción, Claude Code y una carpeta de prueba.
+**Repo:** https://github.com/VoltAgent/awesome-claude-code-subagents
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar el perfil de un revisor de accesibilidad y uno de documentación.; Identificar las herramientas declaradas por una plantilla antes de copiarla.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Abre dos perfiles de una categoría y compara instrucciones, permisos y alcance.
+**Qué comprobar:** Puedes explicar qué haría cada perfil y cuál se ajusta a una tarea pequeña.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `awesome-claude-skills`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=skills,automation,coding-agent
 
@@ -437,6 +466,35 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** El hook produce el evento o registro esperado al activar esa fase de la sesión
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `ecc`, `claude-code-router`
+
+## `claude-code-templates`
+role=directory · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el material no necesita una clave de IA. Los ejemplos y extensiones se evalúan por separado.
+- Claude Code: Referencia para la herramienta; no es una integración
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Lectura sin pago al modelo; revisar licencias y requisitos de cualquier material que se use.
+- Equipo: Equipo normal; revisar dependencias. Navegador; para una eventual adopción, Claude Code y una carpeta limpia.
+**Repo:** https://github.com/davila7/claude-code-templates
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar dos plantillas de revisión de UI.; Encontrar un componente y revisar su procedencia antes de importarlo.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Primera prueba propuesta:** Navega el catálogo y revisa los archivos y la licencia de una sola skill.
+**Qué comprobar:** Puedes explicar qué instalaría y detectar si añade scripts o conexiones.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `claude-plugins-official`
 role=skill · exec=cloud · setup=easy · mcp=True · prov=anthropic · tags=skills,coding-agent,mcp
@@ -722,6 +780,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
 **Alternativas (elige una):** `superclaude-framework`, `superpowers`, `ecc`
 
+## `humans-md-plugins`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Node.js 22.18 o posterior según el README, un anfitrión compatible y perfil de prueba.
+**Repo:** https://github.com/cmdai-hq/humans-md-plugins
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://humansmd.dev/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Pedir que el agente avise antes de modificar archivos de configuración.; Reutilizar preferencias de comunicación entre dos clientes compatibles.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Crea un perfil con una sola preferencia ficticia y abre una nueva sesión.
+**Qué comprobar:** El agente puede leer y explicar esa preferencia sin cargar notas reales.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `plugins`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=catalogos,reference,typescript
 
@@ -783,6 +870,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La propuesta explica qué reutiliza y presenta un diff limitado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `andrej-karpathy-skills`
+
+## `shadcn-improve`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El componente se usa dentro del agente. El modelo y los conectores externos se contratan por separado.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. El código o las instrucciones no incluyen el consumo del agente ni de los servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Un agente con soporte de skills y un repositorio desechable o una copia de prueba.
+**Repo:** https://github.com/shadcn/improve
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/shadcn/improve/blob/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Separar el análisis de un formulario y su corrección.; Convertir un diagnóstico de rendimiento en tareas verificables.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Revisa un módulo pequeño con la skill y solicita solo el plan, sin aplicar cambios.
+**Qué comprobar:** El plan nombra archivos, cambios propuestos y una forma de comprobarlos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `skills`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent

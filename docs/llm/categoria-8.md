@@ -1,6 +1,6 @@
 # Alexandría para agentes · Chats, modelos locales y espacios privados
 
-Categoría 8 completa (31 repos, 4 subcategorías). Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 8 completa (33 repos, 4 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -31,6 +31,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 | `llamafile` | motores | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier… | 1 Básico | 52 | Apache-2.0 (OSI permisiva) | alternativa |
 | `airllm` | motores | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante… | 3 Avanzado | 51 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `koboldcpp` | motores | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con… | 3 Avanzado | 46 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `inferssd` | motores | Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD… | 3 Avanzado | — | Apache-2.0 | sin grupo |
 | `open-webui` | chats | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI… | 1 Básico | 74 | Open WebUI License (BSD-3-Clause + cláusula de marca) (source-available) | recomendado |
 | `cherry-studio` | chats | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de… | 1 Básico | 72 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `lobehub` | chats | Espacio de trabajo con super-agentes y una interfaz de chat moderna… | 2 Intermedio | 70 | LobeHub Community License (Apache-2.0 + condiciones) (source-available) | alternativa |
@@ -45,6 +46,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 | `private-gpt` | workspaces | Capa de API completa para apps de IA privadas sobre modelos locales: RAG… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | alternativa |
 | `hermes-desktop` | workspaces | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
 | `khoj` | workspaces | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con… | 2 Intermedio | 48 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `claude-second-brain` | workspaces | Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas… | 2 Intermedio | — | MIT | sin grupo |
 | `open-notebook` | notebooklm | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes… | 2 Intermedio | 67 | MIT (OSI permisiva) | recomendado |
 | `surfsense` | notebooklm | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `notebooklm-py` | notebooklm | API Python no oficial para interactuar programáticamente con NotebookLM de… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
@@ -201,6 +203,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `sillytavern` [8/chats], `open-webui` [8/chats], `kokoro` [29/tts]
 - **Alternativas:** `ollama`, `llama-cpp`, `localai`, `llamafile`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): llamafile. Ajusta capas de GPU y contexto si te quedas sin memoria.
+
+### InferSSD (`inferssd`)
+
+- **Repo:** https://github.com/wici-ai/inferssd · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.
+- **Cuándo elegirlo:** Casos: Medir si un modelo compatible arranca con la memoria disponible.; Comparar tiempos de respuesta con dos tamaños de contexto. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada; C++, CMakeLists.txt; hardware model_dependent; API de IA: no; SSD y un modelo MoE compatible; backend de sistema y GPU según las guías de la variante..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/wici-ai/inferssd/blob/910afae91c3c2578f890df7ffd9a1e55b6237680/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona un modelo de prueba compatible y registra carga, latencia y memoria con una pregunta corta. Éxito: Obtienes una respuesta y medidas de rendimiento que puedes cotejar con tu equipo.
+- **Riesgos y avisos:** No acelera cualquier modelo. La velocidad del SSD y la variante influyen; las licencias de los pesos se revisan por separado.
 
 ### Open WebUI (`open-webui`)
 
@@ -383,6 +395,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `markitdown` [13/conversion]
 - **Alternativas:** `anything-llm`, `private-gpt`, `surfsense`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): anything-llm, surfsense. Tiene plugin oficial para Obsidian. El README admite LLM locales y remotos; no mezcles la instalación de Khoj con su proyecto relacionado Pipali.
+
+### Claude Second Brain (`claude-second-brain`)
+
+- **Repo:** https://github.com/jessepinkman9900/claude-second-brain · MIT · nivel 2 · —/100
+- **Qué es:** Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.
+- **Cuándo elegirlo:** Casos: Probar una wiki personal con notas ficticias.; Buscar referencias locales a un tema en una bóveda de demostración.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere programar con él; JavaScript, package.json; API de IA: no; Claude Code, Obsidian y una bóveda nueva; consulta la guía para qmd y dependencias..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/jessepinkman9900/claude-second-brain/blob/599f55ad50afceb9eae4f31746aa37274087d239/README.md
+- **Primera prueba propuesta (no ejecutada):** Prepara una bóveda desechable con tres notas y siembra una consulta a partir del ejemplo. Éxito: El asistente encuentra la nota relevante y muestra qué documento utilizó.
+- **Riesgos y avisos:** El inicio instala dependencias y crea archivos. Búsqueda local no significa que el contexto enviado a Claude sea local.
 
 ### open-notebook (`open-notebook`)
 

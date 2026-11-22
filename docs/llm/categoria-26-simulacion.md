@@ -1,6 +1,6 @@
 # Alexandría para agentes · Física y simulación
 
-Categoría 26 «Animación, gráficos y creación 3D» › subcategoría `simulacion`. 5 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 26 «Animación, gráficos y creación 3D» › subcategoría `simulacion`. 7 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=26&sub=simulacion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -23,6 +23,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `warp` | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `planck-js` | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `react-three-rapier` | Integración del motor de física Rapier con React Three Fiber para añadir… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
+| `motionbricks` | Genera movimiento de personajes a partir de poses y objetivos mediante modelos… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `robotics-antigravity-plugin` | Añade a Antigravity instrucciones para crear, probar y observar escenas de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -81,6 +83,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Añade un cuerpo y un suelo con debug visible y comprueba la colisión Éxito: Puedes relacionar collider, geometría y movimiento
 - **Combina con:** `react-three-fiber` [26/animacion], `three.js` [26/animacion], `threejs-game-skills` [27/skills]
 - **Riesgos y avisos:** Sin alternativas declaradas. La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones.
+
+### MotionBricks (`motionbricks`)
+
+- **Repo:** https://github.com/NVlabs/motionbricks · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
+- **Cuándo elegirlo:** Casos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados. Éxito: Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
+- **Riesgos y avisos:** El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.
+
+### Robotics for Antigravity (`robotics-antigravity-plugin`)
+
+- **Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.
+- **Cuándo elegirlo:** Casos: Abrir un escenario de simulación y cambiar la posición de un objeto virtual.; Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python; API de IA: depends; Antigravity, dependencias de simulación indicadas y una escena de ejemplo sin robot físico..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona un ejemplo de solo simulación y revisa qué herramientas pide antes de autorizarlo. Éxito: Se observa el comportamiento de la escena virtual y queda un resultado que puedes comparar.
+- **Riesgos y avisos:** Gemini API, hardware y componentes externos pueden tener costes y requisitos aparte. Alcance de la ficha: simulación, sin control de hardware.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

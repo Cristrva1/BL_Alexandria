@@ -1,6 +1,6 @@
 # Alexandría para agentes · Observabilidad, evaluación y guardrails
 
-Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `observabilidad`. 13 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `observabilidad`. 14 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=23&sub=observabilidad · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -31,6 +31,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `phoenix` | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM… | 1 Básico | 53 | Elastic-2.0 (source-available) | alternativa |
 | `ragas` | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos… | 2 Intermedio | 51 | Apache-2.0 (OSI permisiva) | alternativa |
 | `helicone` | Pasarela de IA y plataforma de observabilidad de LLM abierta: registra… | 2 Intermedio | 50 | Apache-2.0 (OSI permisiva) | alternativa |
+| `ccusage` | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -218,6 +219,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `litellm` [23/serving], `langchain` [3/py], `open-webui` [8/chats]
 - **Alternativas:** `langfuse`, `opik`, `mlflow`, `phoenix`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): langfuse. Al usar la pasarela, las peticiones pasan por Helicone: valora la privacidad.
+
+### ccusage (`ccusage`)
+
+- **Repo:** https://github.com/ccusage/ccusage · MIT · nivel 2 · —/100
+- **Qué es:** Una utilidad de terminal para medir el uso registrado por asistentes de programación.
+- **Cuándo elegirlo:** Casos: Identificar el día con más tokens en Claude Code.; Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan.
+- **Requisitos:** nivel 2: preparación media; Rust, package.json; API de IA: no; Node.js y npm compatibles con la versión que elijas, u otro ejecutor indicado en la guía.; Registros locales de al menos un cliente compatible; el modo offline requiere precios disponibles en caché..
+- **Instalación (documentada en la fuente; no ejecutada):** `npx ccusage@latest` — fuente: https://ccusage.com/guide/installation
+- **Primera prueba propuesta (no ejecutada):** Usa la ruta oficial de instalación, abre el informe diario de un cliente con actividad previa y fíjate en el periodo. Éxito: Aparece una tabla de tokens por día para ese cliente; la cifra de coste es una estimación.
+- **Combina con:** `claude-code` [20/terminal]
+- **Riesgos y avisos:** Puede leer registros de sesión. Usa un perfil de prueba para una primera revisión, un paquete de versión identificada y no publiques los registros.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

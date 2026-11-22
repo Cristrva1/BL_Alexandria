@@ -4,7 +4,7 @@
 
 Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.
 
-34 repos · 4 secciones
+36 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,8 +19,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Frameworks de agentes en Python](#frameworks-de-agentes-en-python) — 20 repos
-- [Frameworks en TypeScript y multi-lenguaje](#frameworks-en-typescript-y-multi-lenguaje) — 5 repos
+- [Frameworks de agentes en Python](#frameworks-de-agentes-en-python) — 21 repos
+- [Frameworks en TypeScript y multi-lenguaje](#frameworks-en-typescript-y-multi-lenguaje) — 6 repos
 - [Builders visuales y plataformas de agentes](#builders-visuales-y-plataformas-de-agentes) — 4 repos
 - [Simulación, evolución y debate entre modelos](#simulación-evolución-y-debate-entre-modelos) — 5 repos
 
@@ -47,6 +47,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [CAMEL](../fichas/camel.md) | Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores. | Tu objetivo encaja con estos ejemplos: generar datos sintéticos con agentes que dialogan en roles; montar un experimento de simulación con muchos agentes y medir su comportamiento | API de IA opcional |
 | [claude-agent-sdk-python](../fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio | API de IA necesaria |
 | [ag2](../fichas/ag2.md) | Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen. | Tu objetivo encaja con estos ejemplos: Coordinar redactor y verificador; Incluir intervención humana en un equipo | Depende de la ruta elegida |
+| [Semantic Router](../fichas/semantic-router.md) | Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada. | Tu objetivo encaja con estos ejemplos: Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.; Separar solicitudes sobre facturación de solicitudes de soporte. | API de IA opcional |
 | [awesome-LangGraph](../fichas/awesome-langgraph.md) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | Tu objetivo encaja con estos ejemplos: Encontrar un flujo con memoria; Localizar evaluadores de agentes | Sin clave propia de API de IA en la ruta básica |
 
 ## Frameworks en TypeScript y multi-lenguaje
@@ -57,6 +58,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. | Tu objetivo encaja con estos ejemplos: Construir una interfaz de chat; Extraer datos tipados de un mensaje | Depende de la ruta elegida |
 | [Microsoft Agent Framework](../fichas/agent-framework.md) | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. | Tu objetivo encaja con estos ejemplos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito | Depende de la ruta elegida |
 | [langchain4j](../fichas/langchain4j.md) | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM. | Tu objetivo encaja con estos ejemplos: Añadir IA a Spring Boot; Recuperar documentos desde una aplicación JVM | Depende de la ruta elegida |
+| [Eve](../fichas/eve.md) | Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git. | Tu objetivo encaja con estos ejemplos: Probar un agente de preguntas sobre una tarea ficticia.; Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones. | API de IA necesaria |
 | [LangGraph.js](../fichas/langgraphjs.md) | Versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. | Tu objetivo encaja con estos ejemplos: Controlar aprobación de una solicitud; Reanudar un agente en una app JavaScript | API de IA opcional |
 
 ## Builders visuales y plataformas de agentes

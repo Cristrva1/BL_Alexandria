@@ -4,7 +4,7 @@
 
 Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.
 
-31 repos · 4 secciones
+33 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -20,9 +20,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 13 repos
+- [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 14 repos
 - [Interfaces de chat auto-hospedadas](#interfaces-de-chat-auto-hospedadas) — 9 repos
-- [Workspaces privados y segundos cerebros](#workspaces-privados-y-segundos-cerebros) — 5 repos
+- [Workspaces privados y segundos cerebros](#workspaces-privados-y-segundos-cerebros) — 6 repos
 - [NotebookLM: alternativas y clientes](#notebooklm-alternativas-y-clientes) — 4 repos
 
 ## Motores para correr modelos en local
@@ -42,6 +42,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [KoboldCpp](../fichas/koboldcpp.md) | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama. | Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama | Sin clave propia de API de IA en la ruta básica |
 | [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Tu objetivo encaja con estos ejemplos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo | Sin clave propia de API de IA en la ruta básica |
 | [MLX LM](../fichas/mlx-lm.md) | Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP. | Tu objetivo encaja con estos ejemplos: ejecutar un LLM local optimizado en un Mac con chip Apple; afinar un modelo con LoRA en un Mac sin GPU NVIDIA | Sin clave propia de API de IA en la ruta básica |
+| [InferSSD](../fichas/inferssd.md) | Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM. | Tu objetivo encaja con estos ejemplos: Medir si un modelo compatible arranca con la memoria disponible.; Comparar tiempos de respuesta con dos tamaños de contexto. | Sin clave propia de API de IA en la ruta básica |
 
 ## Interfaces de chat auto-hospedadas
 
@@ -66,6 +67,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [PrivateGPT](../fichas/private-gpt.md) | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. | Tu objetivo encaja con estos ejemplos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación | Depende de la ruta elegida |
 | [Khoj](../fichas/khoj.md) | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. | Tu objetivo encaja con estos ejemplos: Consultar notas desde Obsidian; Crear un asistente de investigación personal | Depende de la ruta elegida |
 | [Hermes Desktop](../fichas/hermes-desktop.md) | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes | Depende de la ruta elegida |
+| [Claude Second Brain](../fichas/claude-second-brain.md) | Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local. | Tu objetivo encaja con estos ejemplos: Probar una wiki personal con notas ficticias.; Buscar referencias locales a un tema en una bóveda de demostración. | Sin clave propia de API de IA en la ruta básica |
 
 ## NotebookLM: alternativas y clientes
 

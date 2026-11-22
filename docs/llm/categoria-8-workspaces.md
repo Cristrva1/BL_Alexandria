@@ -1,6 +1,6 @@
 # Alexandría para agentes · Workspaces privados y segundos cerebros
 
-Categoría 8 «Chats, modelos locales y espacios privados» › subcategoría `workspaces`. 5 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 8 «Chats, modelos locales y espacios privados» › subcategoría `workspaces`. 6 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8&sub=workspaces · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -23,6 +23,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 | `private-gpt` | Capa de API completa para apps de IA privadas sobre modelos locales: RAG… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | alternativa |
 | `hermes-desktop` | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
 | `khoj` | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con… | 2 Intermedio | 48 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `claude-second-brain` | Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -92,6 +93,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `markitdown` [13/conversion]
 - **Alternativas:** `anything-llm`, `private-gpt`, `surfsense`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): anything-llm, surfsense. Tiene plugin oficial para Obsidian. El README admite LLM locales y remotos; no mezcles la instalación de Khoj con su proyecto relacionado Pipali.
+
+### Claude Second Brain (`claude-second-brain`)
+
+- **Repo:** https://github.com/jessepinkman9900/claude-second-brain · MIT · nivel 2 · —/100
+- **Qué es:** Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.
+- **Cuándo elegirlo:** Casos: Probar una wiki personal con notas ficticias.; Buscar referencias locales a un tema en una bóveda de demostración.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere programar con él; JavaScript, package.json; API de IA: no; Claude Code, Obsidian y una bóveda nueva; consulta la guía para qmd y dependencias..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/jessepinkman9900/claude-second-brain/blob/599f55ad50afceb9eae4f31746aa37274087d239/README.md
+- **Primera prueba propuesta (no ejecutada):** Prepara una bóveda desechable con tres notas y siembra una consulta a partir del ejemplo. Éxito: El asistente encuentra la nota relevante y muestra qué documento utilizó.
+- **Riesgos y avisos:** El inicio instala dependencias y crea archivos. Búsqueda local no significa que el contexto enviado a Claude sea local.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

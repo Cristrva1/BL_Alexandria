@@ -4,7 +4,7 @@
 
 Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot.
 
-18 repos · 2 secciones
+19 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -16,7 +16,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Motores de workflow y automatización](#motores-de-workflow-y-automatización) — 11 repos
+- [Motores de workflow y automatización](#motores-de-workflow-y-automatización) — 12 repos
 - [Apps internas y bases de datos no-code](#apps-internas-y-bases-de-datos-no-code) — 7 repos
 
 ## Motores de workflow y automatización
@@ -26,6 +26,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Tu objetivo encaja con estos ejemplos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes | Sin clave propia de API de IA en la ruta básica |
 | [Apache Airflow](../fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Tu objetivo encaja con estos ejemplos: programar un ETL diario que descarga, transforma y carga datos en un almacén; coordinar entrenamientos y despliegues de modelos con dependencias y reintentos | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | Tu objetivo encaja con estos ejemplos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama | API de IA opcional |
+| [Celery](../fichas/celery.md) | Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar. | Tu objetivo encaja con estos ejemplos: Procesar una miniatura de prueba en segundo plano.; Generar un informe de ejemplo en una cola distinta a la interfaz web. | Sin clave propia de API de IA en la ruta básica |
 | [activepieces](../fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización | API de IA opcional |
 | [Temporal](../fichas/temporal.md) | Plataforma de ejecución duradera: workflows en código que sobreviven a fallos, con reintentos, temporizadores y estado persistido por el servidor. | Tu objetivo encaja con estos ejemplos: procesos de negocio largos como pagos o altas que deben completarse aunque caiga un servicio; agentes de IA con pasos largos que necesitan reintentos y reanudación | Sin clave propia de API de IA en la ruta básica |
 | [Prefect](../fichas/prefect.md) | Framework de orquestación en Python: convierte scripts en flujos con decoradores, reintentos, caché, programación y servidor de monitorización. | Tu objetivo encaja con estos ejemplos: convertir un script de ingesta en un flujo con reintentos y ejecución programada; encadenar pasos de datos o ML con dependencias dinámicas y observabilidad | Sin clave propia de API de IA en la ruta básica |

@@ -4,7 +4,7 @@
 
 Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas.
 
-26 repos · 3 secciones
+30 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -18,9 +18,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 11 repos
-- [Ahorro de contexto y tokens](#ahorro-de-contexto-y-tokens) — 2 repos
-- [Observabilidad, evaluación y guardrails](#observabilidad-evaluación-y-guardrails) — 13 repos
+- [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 12 repos
+- [Ahorro de contexto y tokens](#ahorro-de-contexto-y-tokens) — 4 repos
+- [Observabilidad, evaluación y guardrails](#observabilidad-evaluación-y-guardrails) — 14 repos
 
 ## Serving y gateways de LLM
 
@@ -33,6 +33,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [SGLang](../fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Tu objetivo encaja con estos ejemplos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex | Depende de la ruta elegida |
 | [TensorRT-LLM](../fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Tu objetivo encaja con estos ejemplos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA | Sin clave propia de API de IA en la ruta básica |
+| [Portkey AI Gateway](../fichas/portkey-gateway.md) | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes. | Tu objetivo encaja con estos ejemplos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada. | API de IA necesaria |
 | [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Tu objetivo encaja con estos ejemplos: servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor; conectar Dify, LangChain o LlamaIndex a modelos propios | Sin clave propia de API de IA en la ruta básica |
 | [BentoML](../fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Tu objetivo encaja con estos ejemplos: publicar un modelo de Transformers como API REST; empaquetar un LLM servido con vLLM en una imagen desplegable | Sin clave propia de API de IA en la ruta básica |
 | [GPUStack](../fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios | Sin clave propia de API de IA en la ruta básica |
@@ -44,6 +45,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [headroom](../fichas/headroom.md) | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | Tu objetivo encaja con estos ejemplos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión | API de IA opcional |
 | [rtk](../fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | Tu objetivo encaja con estos ejemplos: Reducir salida repetitiva de comandos; Estudiar consumo de contexto por tarea | API de IA opcional |
+| [GPTCache](../fichas/gptcache.md) | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables. | Tu objetivo encaja con estos ejemplos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales. | API de IA opcional |
+| [LLMLingua](../fichas/llmlingua.md) | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt. | Tu objetivo encaja con estos ejemplos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante. | Sin clave propia de API de IA en la ruta básica |
 
 ## Observabilidad, evaluación y guardrails
 
@@ -54,6 +57,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [MLflow](../fichas/mlflow.md) | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. | Tu objetivo encaja con estos ejemplos: Registrar experimentos de ML; Añadir trazas a una app de IA | API de IA opcional |
 | [loguru](../fichas/loguru.md) | Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa. | Tu objetivo encaja con estos ejemplos: Depurar una automatización; Añadir logs legibles a una app | Sin clave propia de API de IA en la ruta básica |
 | [Opik](../fichas/opik.md) | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. | Tu objetivo encaja con estos ejemplos: Depurar una cadena RAG; Revisar fallos con un agente de código | API de IA opcional |
+| [ccusage](../fichas/ccusage.md) | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales. | Tu objetivo encaja con estos ejemplos: Identificar el día con más tokens en Claude Code.; Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan. | Sin clave propia de API de IA en la ruta básica |
 | [DeepEval](../fichas/deepeval.md) | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | Tu objetivo encaja con estos ejemplos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG | API de IA opcional |
 | [Ragas](../fichas/ragas.md) | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. | Tu objetivo encaja con estos ejemplos: Medir un RAG con datos controlados; Comparar versiones de una cadena | Depende de la ruta elegida |
 | [LM Evaluation Harness](../fichas/lm-eval-harness.md) | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs. | Tu objetivo encaja con estos ejemplos: comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K; reproducir resultados de tablas de clasificación con la misma configuración | API de IA opcional |

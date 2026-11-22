@@ -4,7 +4,7 @@
 
 Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo.
 
-26 repos · 4 secciones
+27 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Infraestructura: sandboxes, herramientas y protocolos](#infraestructura-sandboxes-herramientas-y-protocolos) — 10 repos
 - [Dominios y recursos de infraestructura](#dominios-y-recursos-de-infraestructura) — 2 repos
 - [Redes y transporte](#redes-y-transporte) — 5 repos
-- [Alojamiento y backend](#alojamiento-y-backend) — 9 repos
+- [Alojamiento y backend](#alojamiento-y-backend) — 10 repos
 
 ## Infraestructura: sandboxes, herramientas y protocolos
 
@@ -67,6 +67,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Portainer CE](../fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Tu objetivo encaja con estos ejemplos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica | Sin clave propia de API de IA en la ruta básica |
 | [Dokploy](../fichas/dokploy.md) | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. | Tu objetivo encaja con estos ejemplos: desplegar tus aplicaciones y bases de datos en un VPS propio con interfaz web; levantar con un clic plantillas como Plausible o Cal.com | Sin clave propia de API de IA en la ruta básica |
 | [CasaOS](../fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal | Sin clave propia de API de IA en la ruta básica |
+| [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Tu objetivo encaja con estos ejemplos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo. | Sin clave propia de API de IA en la ruta básica |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 

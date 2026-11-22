@@ -583,6 +583,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `nextcloud-server`, `syncthing`, `coolify`
 **Alternativas (elige una):** `photoprism`
 
+## `isponsorblocktv`
+role=app · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba descrita no llama a un modelo generativo ni exige una clave de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. Sin pago a un modelo en esta ruta; los recursos, cuentas externas o despliegue elegidos pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente.
+**Repo:** https://github.com/dmunozv04/iSponsorBlockTV
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía.
+**Qué comprobar:** Un video con un segmento etiquetado lo salta según la configuración.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `jellyfin`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=self-hosted,csharp,video,server
 

@@ -4,7 +4,7 @@
 
 Distingue el cliente de Google, las skills compatibles y los recursos para diseño y prompting.
 
-159 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
+164 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-antigravity).
 
 ## Primera configuración, paso a paso
 
@@ -29,7 +29,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 
-[Explorar 63 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-skills)
+[Explorar 67 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -38,6 +38,7 @@ El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 | [Agentic Awesome Skills (AAS)](../fichas/antigravity-awesome-skills.md) | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. | Sin clave propia de API de IA en la ruta básica |
 | [ai-job-search](../fichas/ai-job-search.md) | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo. | Sin clave propia de API de IA en la ruta básica |
 | [anatomy](../fichas/anatomy.md) | Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | Sin clave propia de API de IA en la ruta básica |
+| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [BMAD Method](../fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Sin clave propia de API de IA en la ruta básica |
 | [book-to-skill](../fichas/book-to-skill.md) | Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | Sin clave propia de API de IA en la ruta básica |
 | [claude-obsidian](../fichas/claude-obsidian.md) | Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. | Sin clave propia de API de IA en la ruta básica |
@@ -53,6 +54,7 @@ El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin clave propia de API de IA en la ruta básica |
 | [gstack](../fichas/gstack.md) | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. | Sin clave propia de API de IA en la ruta básica |
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica |
+| [HUMANS.md Plugins](../fichas/humans-md-plugins.md) | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin. | Sin clave propia de API de IA en la ruta básica |
 | [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | API de IA opcional |
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
@@ -77,9 +79,11 @@ El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
 | [remotion](../fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | API de IA opcional |
 | [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | API de IA opcional |
 | [Remotion Superpowers](../fichas/remotion-superpowers.md) | Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. | API de IA necesaria |
+| [Robotics for Antigravity](../fichas/robotics-antigravity-plugin.md) | Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo. | Depende de la ruta elegida |
 | [rtk](../fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | API de IA opcional |
 | [scientific-agent-skills](../fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | API de IA opcional |
 | [security-audit-skill](../fichas/security-audit-skill.md) | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. | Sin clave propia de API de IA en la ruta básica |
+| [Shopify AI Toolkit](../fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/google-skills.md) | Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | Sin clave propia de API de IA en la ruta básica |
 | [skills_emil](../fichas/skills-emil.md) | Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering). | Sin clave propia de API de IA en la ruta básica |
 | [social-media-research-skills](../fichas/social-media-research-skills.md) | Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. | Sin clave propia de API de IA en la ruta básica |
@@ -215,11 +219,12 @@ Conectar herramientas por MCP; cada servidor conserva sus permisos y costes.
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-[Explorar 10 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-integraciones)
+[Explorar 11 repos](../../docs/index.html#/explorar?area=configurar-antigravity&topic=antigravity-integraciones)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | API de IA opcional |
+| [ccusage](../fichas/ccusage.md) | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales. | Sin clave propia de API de IA en la ruta básica |
 | [claude-mem](../fichas/claude-mem.md) | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | API de IA opcional |
 | [cleanyourtv](../fichas/cleanyourtv.md) | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB. | Sin clave propia de API de IA en la ruta básica |
 | [codebase-memory-mcp](../fichas/codebase-memory-mcp.md) | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. | API de IA opcional |
@@ -391,5 +396,10 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [Windmill](https://github.com/windmill-labs/windmill/blob/main/README.md), revisado el 2026-11-15.
 - [WrenAI](https://github.com/Canner/WrenAI/blob/main/README.md), revisado el 2026-11-15.
 - [wshobson/agents](https://github.com/wshobson/agents/blob/main/README.md), revisado el 2026-11-15.
+- [Android Skills](https://github.com/android/skills/blob/c72942584fff970dac86ced78b367fce0c441e52/README.md), revisado el 2026-11-22.
+- [ccusage](https://github.com/ccusage/ccusage/blob/8fd41cd10e595cd4231a5627427d1725112ad718/README.md), revisado el 2026-11-22.
+- [HUMANS.md Plugins](https://github.com/cmdai-hq/humans-md-plugins/blob/fab03e3c81544d418349b6c477049e31ab9bed1b/README.md), revisado el 2026-11-22.
+- [Robotics for Antigravity](https://github.com/google-deepmind/robotics-antigravity-plugin/blob/3dde33820355c70fe8d8e33e42707cdcb742ceb4/README.md), revisado el 2026-11-22.
+- [Shopify AI Toolkit](https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md), revisado el 2026-11-22.
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

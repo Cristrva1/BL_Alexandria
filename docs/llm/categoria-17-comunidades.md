@@ -1,6 +1,6 @@
 # Alexandría para agentes · Comunidades,chat y llamadas
 
-Categoría 17 «WhatsApp, mensajería y chatbots» › subcategoría `comunidades`. 6 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 17 «WhatsApp, mensajería y chatbots» › subcategoría `comunidades`. 6 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=17&sub=comunidades · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

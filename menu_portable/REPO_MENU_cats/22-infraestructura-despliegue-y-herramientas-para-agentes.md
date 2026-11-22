@@ -469,6 +469,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `caddy`, `grafana`, `uptime-kuma`
 **Alternativas (elige una):** `netbird`
 
+## `libretranslate`
+role=platform · exec=local · setup=medium · mcp=True · prov=local · tags=traducción,argos,autoalojado
+
+**Qué es:** Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos.
+**Stack:** Python, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La instancia propia no necesita clave de un proveedor de IA. El servicio alojado sí exige su propia clave para integrar la API.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Argos ejecuta los modelos de traducción en la instancia; estos no son un chat ni un LLM de propósito general.
+- Coste: El coste depende del proveedor o la ruta. Código AGPL-3.0 y consumo de tu equipo al autoalojar; alojamiento y API gestionada tienen condiciones propias.
+- Equipo: Preparación según la ruta elegida. CPU y disco para modelos de idiomas. La aceleración CUDA es una opción distinta.
+- Otras rutas: MCP oficial documentado para Claude y OpenCode. Revisa el endpoint: el ejemplo apunta al servicio alojado.
+**Repo:** https://github.com/LibreTranslate/LibreTranslate
+
+**Instalación** [+]:
+
+```
+pip install libretranslate
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo.
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning».
+**Qué comprobar:** La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `masterdnsvpn`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
 

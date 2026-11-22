@@ -1,6 +1,6 @@
 # Alexandría para agentes · Catálogos y marketplaces de skills
 
-Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `catalogos`. 13 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `catalogos`. 15 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2&sub=catalogos · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -31,6 +31,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `plugins` | Especificación y colección oficial de plugins de Cursor para estudiar e… | 1 Básico | 48 | — (sin licencia detectada) | sin grupo |
 | `awesome-agents` | Directorio de herramientas y proyectos abiertos para construir y operar agentes… | 1 Básico | 41 | — (sin licencia detectada) | sin grupo |
 | `autoskills` | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un… | 1 Básico | 39 | CC-BY-NC-4.0 (source-available) | sin grupo |
+| `awesome-claude-code-subagents` | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes… | 1 Básico | — | MIT | sin grupo |
+| `claude-code-templates` | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes… | 1 Básico | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -209,6 +211,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Revisa la selección que propone para tu stack antes de permitir la instalación Éxito: La lista corresponde a tus tecnologías y queda un registro de las skills instaladas
 - **Combina con:** `claude-code` [20/terminal], `skillspector` [16/skills], `codex` [20/terminal]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). La licencia CC BY-NC impide el uso comercial. Se quitó awesome-agent-skills porque no hay integración. Se corrige la API inferida por menciones a tecnologías de autenticación y pagos: no son proveedores requeridos por el CLI.
+
+### Awesome Claude Code Subagents (`awesome-claude-code-subagents`)
+
+- **Repo:** https://github.com/VoltAgent/awesome-claude-code-subagents · MIT · nivel 1 · —/100
+- **Qué es:** Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.
+- **Cuándo elegirlo:** Casos: Comparar el perfil de un revisor de accesibilidad y uno de documentación.; Identificar las herramientas declaradas por una plantilla antes de copiarla.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Shell; API de IA: no; Navegador; para una eventual adopción, Claude Code y una carpeta de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre dos perfiles de una categoría y compara instrucciones, permisos y alcance. Éxito: Puedes explicar qué haría cada perfil y cuál se ajusta a una tarea pequeña.
+- **Riesgos y avisos:** Es una colección comunitaria. Revisar cada perfil y sus herramientas antes de instalar; no asumir compatibilidad con otros clientes.
+
+### Claude Code Templates (`claude-code-templates`)
+
+- **Repo:** https://github.com/davila7/claude-code-templates · MIT · nivel 1 · —/100
+- **Qué es:** Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.
+- **Cuándo elegirlo:** Casos: Comparar dos plantillas de revisión de UI.; Encontrar un componente y revisar su procedencia antes de importarlo.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, package.json; API de IA: no; Navegador; para una eventual adopción, Claude Code y una carpeta limpia..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://www.aitmpl.com
+- **Primera prueba propuesta (no ejecutada):** Navega el catálogo y revisa los archivos y la licencia de una sola skill. Éxito: Puedes explicar qué instalaría y detectar si añade scripts o conexiones.
+- **Riesgos y avisos:** Se ficha como referencia. Para su CLI, la publicación 1.29.7 es posterior a la corrección de GHSA-79wm-x847-7cvg; revisa también los otros avisos y cada….
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

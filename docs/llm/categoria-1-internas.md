@@ -1,6 +1,6 @@
 # Alexandría para agentes · Apps internas y bases de datos no-code
 
-Categoría 1 «Automatizar procesos y crear herramientas internas» › subcategoría `internas`. 7 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 1 «Automatizar procesos y crear herramientas internas» › subcategoría `internas`. 7 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1&sub=internas · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

@@ -4,7 +4,7 @@
 
 Prepara el cliente de Codex y reúne skills, contexto y conexiones que tienen compatibilidad documentada.
 
-207 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-codex).
+214 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-codex).
 
 ## Primera configuración, paso a paso
 
@@ -39,7 +39,7 @@ Cliente oficial y formas de empezar con un proyecto.
 
 Instrucciones y plugins documentados para Codex.
 
-[Explorar 83 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-skills)
+[Explorar 85 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -50,6 +50,7 @@ Instrucciones y plugins documentados para Codex.
 | [ai-job-search](../fichas/ai-job-search.md) | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo. | Sin clave propia de API de IA en la ruta básica |
 | [ai-website-cloner-template](../fichas/ai-website-cloner-template.md) | Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz. | Sin clave propia de API de IA en la ruta básica |
 | [anatomy](../fichas/anatomy.md) | Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | Sin clave propia de API de IA en la ruta básica |
+| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [archify](../fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | Sin clave propia de API de IA en la ruta básica |
 | [autoresearch](../fichas/autoresearch.md) | Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome LLM Apps](../fichas/awesome-llm-apps.md) | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. | API de IA opcional |
@@ -77,6 +78,7 @@ Instrucciones y plugins documentados para Codex.
 | [hallmark](../fichas/hallmark.md) | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. | Sin clave propia de API de IA en la ruta básica |
 | [huashu-motion](../fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Sin clave propia de API de IA en la ruta básica |
 | [Humanizer](../fichas/humanizer.md) | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Sin clave propia de API de IA en la ruta básica |
+| [HUMANS.md Plugins](../fichas/humans-md-plugins.md) | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin. | Sin clave propia de API de IA en la ruta básica |
 | [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | API de IA opcional |
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
@@ -131,7 +133,7 @@ Instrucciones y plugins documentados para Codex.
 
 Conectar documentación, GitHub y navegación al agente.
 
-[Explorar 78 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-mcp)
+[Explorar 80 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -147,6 +149,7 @@ Conectar documentación, GitHub y navegación al agente.
 | [ccxt](../fichas/ccxt.md) | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. | Sin clave propia de API de IA en la ruta básica |
 | [changedetection.io](../fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | API de IA opcional |
 | [Chrome DevTools MCP](../fichas/chrome-devtools-mcp.md) | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. | Sin clave propia de API de IA en la ruta básica |
+| [Claude Context](../fichas/claude-context.md) | Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP. | API de IA necesaria |
 | [Concat](../fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin clave propia de API de IA en la ruta básica |
 | [Context7](../fichas/context7.md) | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. | Sin clave propia de API de IA en la ruta básica |
 | [crawl4ai](../fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | API de IA opcional |
@@ -165,6 +168,7 @@ Conectar documentación, GitHub y navegación al agente.
 | [Graphiti](../fichas/graphiti.md) | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. | Depende de la ruta elegida |
 | [Haystack](../fichas/haystack.md) | Framework de deepset para pipelines de RAG y agentes listos para producción. | Depende de la ruta elegida |
 | [heroui](../fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica |
+| [Home Assistant MCP](../fichas/ha-mcp.md) | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica. | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
 | [langflow](../fichas/langflow.md) | Constructor visual de flujos LLM/agentes construido sobre LangChain. | Depende de la ruta elegida |
 | [langfuse](../fichas/langfuse.md) | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. | API de IA opcional |
@@ -245,28 +249,31 @@ Mantener decisiones y organizar el contexto de trabajo.
 
 Skills y herramientas de oficio con acceso documentado desde Codex.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-especialidades)
+[Explorar 8 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-especialidades)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Cybersecurity Skills (comunidad)](../fichas/cybersecurity-skills.md) | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica |
+| [FFmpeg Skill](../fichas/ffmpeg-skill.md) | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
 | [Marketing Skills](../fichas/marketingskills.md) | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | API de IA opcional |
 | [ppt-master](../fichas/ppt-master.md) | Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. | API de IA opcional |
 | [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | API de IA opcional |
+| [Shopify AI Toolkit](../fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Sin clave propia de API de IA en la ruta básica |
 | [taste-skill](../fichas/taste-skill.md) | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. | Sin clave propia de API de IA en la ruta básica |
 
 ### Integraciones,proveedores y paneles
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-[Explorar 45 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-integraciones)
+[Explorar 46 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-integraciones)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Agent-Reach](../fichas/agent-reach.md) | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. | API de IA opcional |
 | [agentes-chat](../fichas/agentes-chat.md) | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas. | API de IA opcional |
 | [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | API de IA opcional |
+| [ccusage](../fichas/ccusage.md) | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
 | [claude-mem](../fichas/claude-mem.md) | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | API de IA opcional |
 | [claude-task-master](../fichas/claude-task-master.md) | Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. | API de IA opcional |

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Serving y gateways de LLM
 
-Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `serving`. 11 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 23 «Operar, evaluar y medir modelos de IA» › subcategoría `serving`. 12 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=23&sub=serving · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,6 +29,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `bentoml` | Framework Python para convertir modelos y pipelines de IA en APIs de… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-code-router` | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 57 | MIT (OSI permisiva) | alternativa |
 | `backdoor` | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo… | 2 Intermedio | 36 | MIT (OSI permisiva) | alternativa |
+| `portkey-gateway` | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -180,6 +181,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `ollama` [8/motores], `vllm`
 - **Alternativas:** `litellm`, `omniroute`, `claude-code-router`
 - **Riesgos y avisos:** Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo.
+
+### Portkey AI Gateway (`portkey-gateway`)
+
+- **Repo:** https://github.com/Portkey-AI/gateway · MIT · nivel 3 · —/100
+- **Qué es:** Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.
+- **Cuándo elegirlo:** Casos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada.
+- **Requisitos:** nivel 3: preparación pesada, requiere clave de API; TypeScript, Dockerfile, package.json; API de IA: sí; Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido. Éxito: Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba.
+- **Riesgos y avisos:** Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

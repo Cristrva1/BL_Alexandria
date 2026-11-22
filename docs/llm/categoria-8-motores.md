@@ -1,6 +1,6 @@
 # Alexandría para agentes · Motores para correr modelos en local
 
-Categoría 8 «Chats, modelos locales y espacios privados» › subcategoría `motores`. 13 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 8 «Chats, modelos locales y espacios privados» › subcategoría `motores`. 14 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8&sub=motores · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -31,6 +31,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 | `llamafile` | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier… | 1 Básico | 52 | Apache-2.0 (OSI permisiva) | alternativa |
 | `airllm` | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante… | 3 Avanzado | 51 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `koboldcpp` | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con… | 3 Avanzado | 46 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `inferssd` | Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD… | 3 Avanzado | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -183,6 +184,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `sillytavern` [8/chats], `open-webui` [8/chats], `kokoro` [29/tts]
 - **Alternativas:** `ollama`, `llama-cpp`, `localai`, `llamafile`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): llamafile. Ajusta capas de GPU y contexto si te quedas sin memoria.
+
+### InferSSD (`inferssd`)
+
+- **Repo:** https://github.com/wici-ai/inferssd · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.
+- **Cuándo elegirlo:** Casos: Medir si un modelo compatible arranca con la memoria disponible.; Comparar tiempos de respuesta con dos tamaños de contexto. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada; C++, CMakeLists.txt; hardware model_dependent; API de IA: no; SSD y un modelo MoE compatible; backend de sistema y GPU según las guías de la variante..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/wici-ai/inferssd/blob/910afae91c3c2578f890df7ffd9a1e55b6237680/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona un modelo de prueba compatible y registra carga, latencia y memoria con una pregunta corta. Éxito: Obtienes una respuesta y medidas de rendimiento que puedes cotejar con tu equipo.
+- **Riesgos y avisos:** No acelera cualquier modelo. La velocidad del SSD y la variante influyen; las licencias de los pesos se revisan por separado.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

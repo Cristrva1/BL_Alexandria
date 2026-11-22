@@ -412,6 +412,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `copilotkit`, `composio`, `servers`
 **Alternativas (elige una):** `openbot`
 
+## `openjarvis`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.
+**Stack:** Python, Makefile, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.
+- Equipo: Equipo normal; revisar dependencias. Distribución oficial para tu sistema, memoria para el modelo inicial y espacio para pesos; Node.js 22+ si usas la interfaz desde el código.
+**Repo:** https://github.com/open-jarvis/OpenJarvis
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/open-jarvis/OpenJarvis/releases
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Conversar con un modelo descargado sin conectar cuentas.; Probar búsqueda sobre un pequeño conjunto de documentos ficticios.
+**Evita si:** necesitas una herramienta estable y auditada para datos sensibles
+**Primera prueba propuesta:** Elige una distribución oficial y empieza con el chat básico sin conectores.
+**Qué comprobar:** El modelo configurado responde a una pregunta y puedes identificar si la ruta usada fue local.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `paperclip`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance
 

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Aprender LLMs desde cero
 
-Categoría 19 «Aprender IA y escribir mejores prompts» › subcategoría `aprender`. 9 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 19 «Aprender IA y escribir mejores prompts» › subcategoría `aprender`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=19&sub=aprender · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

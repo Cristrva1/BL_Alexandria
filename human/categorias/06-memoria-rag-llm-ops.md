@@ -4,7 +4,7 @@
 
 Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda.
 
-28 repos · 3 secciones
+30 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -19,8 +19,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Memoria persistente para agentes](#memoria-persistente-para-agentes) — 11 repos
-- [RAG y motores de conocimiento](#rag-y-motores-de-conocimiento) — 9 repos
-- [Bases vectoriales y búsqueda semántica](#bases-vectoriales-y-búsqueda-semántica) — 8 repos
+- [RAG y motores de conocimiento](#rag-y-motores-de-conocimiento) — 10 repos
+- [Bases vectoriales y búsqueda semántica](#bases-vectoriales-y-búsqueda-semántica) — 9 repos
 
 ## Memoria persistente para agentes
 
@@ -50,6 +50,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código | Depende de la ruta elegida |
 | [kotaemon](../fichas/kotaemon.md) | Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG. | Tu objetivo encaja con estos ejemplos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus | API de IA opcional |
 | [txtai](../fichas/txtai.md) | Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia. | Tu objetivo encaja con estos ejemplos: indexar documentos y hacer búsqueda semántica con SQL en local; montar un RAG o un grafo de conocimiento sin desplegar varios servicios | API de IA opcional |
+| [Chonkie](../fichas/chonkie.md) | Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos. | Tu objetivo encaja con estos ejemplos: Dividir un manual por bloques para una búsqueda posterior.; Comparar fragmentos por tamaño fijo con los de una estrategia semántica. | API de IA opcional |
 | [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | Tu objetivo encaja con estos ejemplos: Aprender RAG por pasos; Comparar un pipeline local con otro proveedor | Depende de la ruta elegida |
 
 ## Bases vectoriales y búsqueda semántica
@@ -63,6 +64,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [pgvector](../fichas/pgvector.md) | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. | Tu objetivo encaja con estos ejemplos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio | Sin clave propia de API de IA en la ruta básica |
 | [turbovec](../fichas/turbovec.md) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | Tu objetivo encaja con estos ejemplos: Explorar índices vectoriales embebidos; Reducir memoria de una búsqueda local | Sin clave propia de API de IA en la ruta básica |
 | [Weaviate](../fichas/weaviate.md) | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada. | Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida | API de IA opcional |
+| [FlagEmbedding](../fichas/flagembedding.md) | Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda. | Tu objetivo encaja con estos ejemplos: Encontrar el párrafo más relevante en un manual ficticio.; Comparar el orden de tres documentos antes y después de un reranker. | Sin clave propia de API de IA en la ruta básica |
 | [LanceDB](../fichas/lancedb.md) | Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener. | Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas

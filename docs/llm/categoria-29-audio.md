@@ -1,6 +1,6 @@
 # Alexandría para agentes · Procesamiento y limpieza de audio
 
-Categoría 29 «Audio, transcripción, voz y música» › subcategoría `audio`. 7 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 29 «Audio, transcripción, voz y música» › subcategoría `audio`. 7 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=29&sub=audio · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

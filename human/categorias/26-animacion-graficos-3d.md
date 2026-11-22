@@ -4,7 +4,7 @@
 
 Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario.
 
-28 repos · 3 secciones
+32 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -17,8 +17,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Animación y 3D](#animación-y-3d) — 14 repos
-- [Creación, renderizado y animación 3D](#creación-renderizado-y-animación-3d) — 9 repos
-- [Física y simulación](#física-y-simulación) — 5 repos
+- [Creación, renderizado y animación 3D](#creación-renderizado-y-animación-3d) — 11 repos
+- [Física y simulación](#física-y-simulación) — 7 repos
 
 ## Animación y 3D
 
@@ -51,7 +51,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [OpenSCAD](../fichas/openscad.md) | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la compila a un sólido exportable (STL, 3MF), ideal para piezas paramétricas. | Tu objetivo encaja con estos ejemplos: diseñar piezas paramétricas para impresión 3D cambiando variables; generar variantes de una pieza (tamaños, agujeros) desde el mismo script | Sin clave propia de API de IA en la ruta básica |
 | [meshoptimizer](../fichas/meshoptimizer.md) | Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. | Tu objetivo encaja con estos ejemplos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real | Sin clave propia de API de IA en la ruta básica |
 | [ozz-animation](../fichas/ozz-animation.md) | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones. | Tu objetivo encaja con estos ejemplos: Reproducir animaciones de personajes; Combinar clips en un motor propio | Sin clave propia de API de IA en la ruta básica |
+| [Open Reality](../fichas/openreality.md) | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente. | Tu objetivo encaja con estos ejemplos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-cad](../fichas/awesome-cad.md) | Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad. | Tu objetivo encaja con estos ejemplos: Encontrar software CAD; Comparar bibliotecas de geometría | Sin clave propia de API de IA en la ruta básica |
+| [video2threejs](../fichas/video2threejs.md) | Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js. | Tu objetivo encaja con estos ejemplos: Comparar el encuadre de una escena y su referencia.; Estudiar cómo combinar geometría y textura en una recreación sencilla. | Sin clave propia de API de IA en la ruta básica |
 
 ## Física y simulación
 
@@ -62,6 +64,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [warp](../fichas/warp.md) | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. | Tu objetivo encaja con estos ejemplos: Estudiar simulación física; Prototipar cómputo para robótica | Sin clave propia de API de IA en la ruta básica |
 | [planck.js](../fichas/planck-js.md) | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | Tu objetivo encaja con estos ejemplos: Prototipar física de un juego 2D; Explicar gravedad con una simulación | Sin clave propia de API de IA en la ruta básica |
 | [react-three-rapier](../fichas/react-three-rapier.md) | Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | Tu objetivo encaja con estos ejemplos: Crear una escena física React; Prototipar interacción con objetos 3D | Sin clave propia de API de IA en la ruta básica |
+| [MotionBricks](../fichas/motionbricks.md) | Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración. | Tu objetivo encaja con estos ejemplos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. | Sin clave propia de API de IA en la ruta básica |
+| [Robotics for Antigravity](../fichas/robotics-antigravity-plugin.md) | Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo. | Tu objetivo encaja con estos ejemplos: Abrir un escenario de simulación y cambiar la posición de un objeto virtual.; Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo. | Depende de la ruta elegida |
 
 ## Recetas relacionadas
 

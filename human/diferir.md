@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**93 repos.**
+**97 repos.**
 
 ## ⏳ Diferir
 
@@ -25,6 +25,7 @@ _Pesado: solo si llega a finalista._
 | [MLC LLM](fichas/mlc-llm.md) | 🏠 Chats, modelos locales y espacios privados | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. |
 | [FreeToken](fichas/freetoken.md) | 🏠 Chats, modelos locales y espacios privados | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. |
 | [magnitude](fichas/magnitude.md) | 🏠 Chats, modelos locales y espacios privados | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. |
+| [InferSSD](fichas/inferssd.md) | 🏠 Chats, modelos locales y espacios privados | Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM. |
 | [penpot](fichas/penpot.md) | 🎨 Diseñar y construir interfaces web | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |
 | [WebODM](fichas/webodm.md) | 📊 Dashboards, analítica y mapas | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
 | [Pythia](fichas/pythia.md) | 📊 Dashboards, analítica y mapas | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. |
@@ -78,6 +79,7 @@ _Pesado: solo si llega a finalista._
 | [SGLang](fichas/sglang.md) | 🧬 Operar, evaluar y medir modelos de IA | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 | [claude-code-router](fichas/claude-code-router.md) | 🧬 Operar, evaluar y medir modelos de IA | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
 | [TensorRT-LLM](fichas/tensorrt-llm.md) | 🧬 Operar, evaluar y medir modelos de IA | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. |
+| [Portkey AI Gateway](fichas/portkey-gateway.md) | 🧬 Operar, evaluar y medir modelos de IA | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes. |
 | [GPUStack](fichas/gpustack.md) | 🧬 Operar, evaluar y medir modelos de IA | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. |
 | [tensorflow](fichas/tensorflow.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 | [DeepSeek-V3](fichas/deepseek-v3.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. |
@@ -92,6 +94,7 @@ _Pesado: solo si llega a finalista._
 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. |
 | [hudi](fichas/hudi.md) | 🧑‍💻 Procesar datos y trabajar con notebooks | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 | [warp](fichas/warp.md) | 🎨 Animación, gráficos y creación 3D | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. |
+| [MotionBricks](fichas/motionbricks.md) | 🎨 Animación, gráficos y creación 3D | Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración. |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | 🖼️ Visión artificial, rostros y percepción | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 | [openpose](fichas/openpose.md) | 🖼️ Visión artificial, rostros y percepción | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. |
 | [LivePortrait](fichas/liveportrait.md) | 🖼️ Visión artificial, rostros y percepción | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). |
@@ -105,6 +108,7 @@ _Pesado: solo si llega a finalista._
 | [VoxCPM](fichas/voxcpm.md) | 🎬 Audio, transcripción, voz y música | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. |
 | [NeMo Speech](fichas/nemo.md) | 🎬 Audio, transcripción, voz y música | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
 | [ACE-Step-1.5](fichas/ace-step-1-5.md) | 🎬 Audio, transcripción, voz y música | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
+| [Kitesurf](fichas/kitesurf.md) | 🕷️ Navegadores y automatización web | Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles. |
 
 ---
 

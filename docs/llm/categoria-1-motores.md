@@ -1,6 +1,6 @@
 # Alexandría para agentes · Motores de workflow y automatización
 
-Categoría 1 «Automatizar procesos y crear herramientas internas» › subcategoría `motores`. 11 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 1 «Automatizar procesos y crear herramientas internas» › subcategoría `motores`. 12 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1&sub=motores · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,6 +29,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `huginn` | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
 | `windmill` | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y… | 2 Intermedio | 61 | AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) (open-core) | alternativa |
 | `dagster` | Orquestador de datos orientado a activos: declaras tablas, modelos o informes… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | alternativa |
+| `celery` | Envía trabajos Python a una cola para que procesos separados los ejecuten y la… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -184,6 +185,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `duckdb` [25/datos], `polars` [25/datos], `mlflow` [23/observabilidad], `claude-code` [20/terminal], `dbt` [25/datos], `dlt` [25/datos]
 - **Alternativas:** `airflow`, `kestra`, `prefect`, `trigger-dev`, `windmill`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): airflow, prefect, kestra.
+
+### Celery (`celery`)
+
+- **Repo:** https://github.com/celery/celery · BSD-3-Clause · nivel 2 · —/100
+- **Qué es:** Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.
+- **Cuándo elegirlo:** Casos: Procesar una miniatura de prueba en segundo plano.; Generar un informe de ejemplo en una cola distinta a la interfaz web.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; API de IA: no; Python compatible con la versión estable elegida y un intermediario local como Redis o RabbitMQ..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html
+- **Primera prueba propuesta (no ejecutada):** Completa el tutorial con una tarea que sume dos números y un intermediario local. Éxito: El proceso trabajador recibe la tarea y el resultado contiene la suma esperada.
+- **Riesgos y avisos:** Mantén el intermediario fuera de internet y usa cargas de prueba. Si lo alojas, cuenta procesos, memoria y persistencia.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

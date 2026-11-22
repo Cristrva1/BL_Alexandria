@@ -1,6 +1,6 @@
 # Alexandría para agentes · Transcripción (voz a texto)
 
-Categoría 29 «Audio, transcripción, voz y música» › subcategoría `stt`. 6 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 29 «Audio, transcripción, voz y música» › subcategoría `stt`. 7 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=29&sub=stt · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -24,6 +24,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `whisper` | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución… | 2 Intermedio | 67 | MIT (OSI permisiva) | alternativa |
 | `whisperx` | Pipeline de transcripción que añade alineación temporal de palabras y funciones… | 2 Intermedio | 67 | BSD-2-Clause (OSI permisiva) | recomendado |
 | `nemo` | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con… | 3 Avanzado | 66 | Apache-2.0 (OSI permisiva) | alternativa |
+| `buzz` | Transcribe grabaciones y exporta subtítulos en una aplicación de escritorio que… | 1 Básico | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -105,6 +106,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nemotron` [24/modelos], `pipecat` [29/voz-agentes], `pytorch` [24/entrenamiento], `sherpa-onnx`
 - **Alternativas:** `whisperx`
 - **Riesgos y avisos:** Alternativas (elige una): whisperx. El repositorio actual es NeMo Speech; las guías nightly y 3.0 estable son distintas y deben alinearse con la versión instalada.
+
+### Buzz (`buzz`)
+
+- **Repo:** https://github.com/chidiwilliams/buzz · MIT · nivel 1 · —/100
+- **Qué es:** Una aplicación con interfaz para convertir voz grabada en texto, basada en Whisper y otros backends compatibles.
+- **Cuándo elegirlo:** Casos: Convertir una nota de voz propia en texto editable.; Crear subtítulos en SRT para una demostración grabada.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Python, Makefile, pyproject.toml; hardware model_dependent; API de IA: opcional; Distribución para tu sistema. En versiones recientes de macOS consulta la distinción entre Apple Silicon e Intel.; Espacio para el modelo y un audio de prueba; CPU o GPU según el backend..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install buzz-captions` — fuente: https://github.com/chidiwilliams/buzz/blob/ac3d9da57dd155c8f8fba5f40644392e38423e6f/README.md
+- **Primera prueba propuesta (no ejecutada):** Importa diez segundos de audio propio y elige un modelo Whisper local pequeño. Éxito: Aparece una transcripción que puedes revisar y exportar como SRT.
+- **Combina con:** `ffmpeg` [12/edicion]
+- **Riesgos y avisos:** Instalador Windows sin firma según el autor; GitHub publica digests para los archivos del release revisado.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

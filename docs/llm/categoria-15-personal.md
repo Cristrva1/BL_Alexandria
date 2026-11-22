@@ -1,6 +1,6 @@
 # Alexandría para agentes · Herramientas y organización personal
 
-Categoría 15 «Organizar notas, archivos y servicios personales» › subcategoría `personal`. 8 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 15 «Organizar notas, archivos y servicios personales» › subcategoría `personal`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=15&sub=personal · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -26,6 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `optimizerduck` | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `universal-android-debloater-next-generation` | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 48 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `40-questions` | Colección de preguntas para revisar un año o una década y reflexionar sobre… | 1 Básico | 28 | — (sin licencia detectada) | sin grupo |
+| `isponsorblocktv` | Usa la base de SponsorBlock para saltar segmentos marcados durante la… | 1 Básico | — | GPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -120,6 +121,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Responde tres preguntas de la lista con ejemplos del año y una acción concreta Éxito: Obtienes una nota propia que puedes retomar más adelante
 - **Combina con:** `kepano-obsidian` [15/notas], `obsidian-minimal` [15/notas], `obsidian-second-brain` [15/notas]
 - **Riesgos y avisos:** Sin alternativas declaradas. Sin licencia: no lo redistribuyas sin permiso. Es un recurso de reflexión con traducciones; no necesita instalar software ni usar IA.
+
+### iSponsorBlockTV (`isponsorblocktv`)
+
+- **Repo:** https://github.com/dmunozv04/iSponsorBlockTV · GPL-3.0 · nivel 1 · —/100
+- **Qué es:** Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
+- **Cuándo elegirlo:** Casos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md
+- **Primera prueba propuesta (no ejecutada):** Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía. Éxito: Un video con un segmento etiquetado lo salta según la configuración.
+- **Riesgos y avisos:** Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -64,6 +64,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `gemini-cli`, `hermes-agent`, `deepseek-harness`
 **Alternativas (elige una):** `engram`, `supermemory`, `claude-mem`
 
+## `chonkie`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.
+- Equipo: Equipo normal; revisar dependencias. Entorno Python y un archivo de texto sintético.
+**Repo:** https://github.com/feyninc/chonkie
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.chonkie.ai
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Dividir un manual por bloques para una búsqueda posterior.; Comparar fragmentos por tamaño fijo con los de una estrategia semántica.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala la variante básica y divide dos párrafos de prueba con una estrategia simple.
+**Qué comprobar:** Obtienes fragmentos cuyo contenido y tamaño se pueden comprobar.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `chroma`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust
 
@@ -248,6 +277,35 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `llama-index`, `transformers`
 **Alternativas (elige una):** `qdrant`, `chroma`
+
+## `flagembedding`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.
+**Stack:** Python, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La prueba con los modelos locales indicados no necesita contratar una API de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.
+- Coste: Sin pago a un modelo en la ruta básica. La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.
+- Equipo: Memoria y GPU según el modelo. Python, dependencias del proyecto y pesos compatibles con la licencia y memoria de tu equipo.
+**Repo:** https://github.com/FlagOpen/FlagEmbedding
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar el párrafo más relevante en un manual ficticio.; Comparar el orden de tres documentos antes y después de un reranker.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Selecciona un modelo local pequeño en la guía y compara una consulta con tres frases.
+**Qué comprobar:** La salida contiene puntuaciones o vectores y permite ordenar las frases de prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `graphiti`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic · tags=memory,rag,python

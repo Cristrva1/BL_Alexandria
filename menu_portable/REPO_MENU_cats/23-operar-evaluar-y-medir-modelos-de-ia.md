@@ -66,6 +66,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vllm`, `transformers`, `pytorch`
 
+## `ccusage`
+role=app · exec=local · setup=medium · mcp=True · prov=— · tags=consumo,tokens,costos
+
+**Qué es:** Resume los tokens y estima el coste de tus sesiones de asistentes a partir de los registros locales de sus terminales.
+**Stack:** Rust, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El informe usa registros existentes y no llama a un LLM. Puede consultar precios si no usas el modo offline.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración documentada por el proyecto
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. El paquete es MIT. La estimación por tarifas no representa la factura, el saldo ni los límites de tu plan.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ccusage/ccusage
+
+**Instalación** [+]:
+
+```
+npx ccusage@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Identificar el día con más tokens en Claude Code.; Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Usa la ruta oficial de instalación, abre el informe diario de un cliente con actividad previa y fíjate en el periodo.
+**Qué comprobar:** Aparece una tabla de tokens por día para ese cliente; la cifra de coste es una estimación.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`
+
 ## `claude-code-router`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=serving,server,typescript
 
@@ -162,6 +192,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `llama-index`, `mlflow`, `langfuse`
 **Alternativas (elige una):** `ragas`, `promptfoo`
+
+## `gptcache`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.
+**Stack:** Python, Makefile, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: API de IA opcional. La ruta local o básica no necesita una clave de LLM alojado. Las modalidades remotas se configuran aparte.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La guía del proyecto documenta componentes locales. Confirma qué parte corre en tu equipo y la licencia de los modelos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume equipo; proveedores, servicios alojados y bases remotas pueden cobrar.
+- Equipo: Equipo normal; revisar dependencias. Python y un componente de embeddings y almacenamiento compatible; entorno de prueba con consultas ficticias.
+**Repo:** https://github.com/zilliztech/GPTCache
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://gptcache.readthedocs.io
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Configura el ejemplo en un entorno aislado y manda dos consultas de ejemplo similares.
+**Qué comprobar:** Puedes observar cuándo se reutiliza una respuesta y cuándo se vuelve a calcular.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `gpustack`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=serving,python,gpu,self-hosted
@@ -351,6 +410,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `open-webui`, `langfuse`, `claude-code`
 **Alternativas (elige una):** `omniroute`, `claude-code-router`, `backdoor`
+
+## `llmlingua`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.
+**Stack:** Python, Makefile, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La prueba con los modelos locales indicados no necesita contratar una API de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La inferencia usa pesos compatibles en el equipo; comprueba memoria, acelerador y licencia.
+- Coste: Sin pago a un modelo en la ruta básica. La inferencia local usa hardware, energía y almacenamiento. Una GPU alquilada y una licencia de pesos pueden tener costes aparte.
+- Equipo: Memoria y GPU según el modelo. Python, PyTorch y un modelo de compresión compatible con el hardware.
+**Repo:** https://github.com/microsoft/LLMLingua
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://llmlingua.com/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Comprime un texto público breve con un modelo local pequeño del proyecto.
+**Qué comprobar:** Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `lm-eval-harness`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=evaluation,python,llm,benchmark
@@ -567,6 +655,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`, `langgraph`, `ollama`, `claude-code`
 **Alternativas (elige una):** `langfuse`, `opik`
+
+## `portkey-gateway`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La primera prueba documentada necesita autenticación de un proveedor o de la pasarela del modelo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Ejecución con modelos locales por confirmar. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. La licencia de código no incluye llamadas a modelos, despliegue ni almacenamiento.
+- Equipo: Equipo normal; revisar dependencias. Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba.
+**Repo:** https://github.com/Portkey-AI/gateway
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada.
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido.
+**Qué comprobar:** Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `promptfoo`
 role=app · exec=local · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=evaluation,security,typescript

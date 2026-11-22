@@ -1,6 +1,6 @@
 # Alexandría para agentes · Alojamiento y backend
 
-Categoría 22 «Infraestructura, despliegue y herramientas para agentes» › subcategoría `infraestructura`. 9 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 22 «Infraestructura, despliegue y herramientas para agentes» › subcategoría `infraestructura`. 10 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=22&sub=infraestructura · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -27,6 +27,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `dokploy` | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku… | 2 Intermedio | 67 | Apache-2.0 + licencia propietaria (/proprietary) (open-core) | alternativa |
 | `portainer` | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman… | 1 Básico | 66 | Zlib (OSI permisiva) | sin grupo |
 | `casaos` | Entorno para administrar un servidor personal, instalar aplicaciones y… | 1 Básico | 52 | Apache-2.0 (OSI permisiva) | alternativa |
+| `libretranslate` | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo… | 3 Avanzado | — | AGPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -141,6 +142,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nextcloud-server` [15/archivos], `adguardhome` [15/privacidad], `activepieces` [1/motores], `masterdnsvpn` [22/redes]
 - **Alternativas:** `coolify`, `dokploy`
 - **Riesgos y avisos:** Alternativa (elige una): coolify. Ritmo de releases lento. La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes.
+
+### LibreTranslate (`libretranslate`)
+
+- **Repo:** https://github.com/LibreTranslate/LibreTranslate · AGPL-3.0 · nivel 3 · —/100
+- **Qué es:** Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.
+- **Cuándo elegirlo:** Casos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo.
+- **Requisitos:** nivel 3: preparación media, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware prerequisites; API de IA: no; Entorno Python compatible con la versión elegida o Docker.; Conexión para descargar paquetes y modelos de idiomas; espacio para los idiomas seleccionados..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install libretranslate` — fuente: https://docs.libretranslate.com/guides/installation/
+- **Primera prueba propuesta (no ejecutada):** Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning». Éxito: La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

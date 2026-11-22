@@ -1,6 +1,6 @@
 # Alexandría para agentes · Edición, grabación y subtítulos
 
-Categoría 12 «Editar, grabar y generar video» › subcategoría `edicion`. 11 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 12 «Editar, grabar y generar video» › subcategoría `edicion`. 11 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=12&sub=edicion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

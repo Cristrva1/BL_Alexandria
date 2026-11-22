@@ -1,6 +1,6 @@
 # Alexandría para agentes · Aplicaciones y flujos de producción
 
-Categoría 30 «Video con código y agentes creativos» › subcategoría `aplicaciones`. 1 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 30 «Video con código y agentes creativos» › subcategoría `aplicaciones`. 2 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=30&sub=aplicaciones · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -19,6 +19,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `videofy-minimal` | Aplicación local que transforma artículos de noticias en videos breves mediante… | 2 Intermedio | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `hyperframes-launches` | Publica composiciones con código usadas en videos de lanzamiento de HeyGen para… | 1 Básico | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -40,6 +41,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `remotion` [30/motores], `whisper` [29/stt], `ffmpeg` [12/edicion]
 - **Alternativas:** `moneyprinterturbo`
 - **Riesgos y avisos:** Alternativas (elige una): moneyprinterturbo. La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión.
+
+### HyperFrames Launches (`hyperframes-launches`)
+
+- **Repo:** https://github.com/heygen-com/hyperframes-launches · Apache-2.0 · nivel 1 · —/100
+- **Qué es:** Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.
+- **Cuándo elegirlo:** Casos: Estudiar el ritmo de un lanzamiento de producto.; Tomar de referencia la organización de textos y gráficos de una escena.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML; API de IA: no; Navegador; para previsualizar código, HyperFrames, dependencias del ejemplo y Git LFS para sus archivos grandes..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto. Éxito: Puedes describir qué archivo controla la escena y qué elementos son recursos externos.
+- **Combina con:** `hyperframes` [30/motores]
+- **Riesgos y avisos:** El código propio indicado usa Apache-2.0; marcas, audio, imágenes y otros materiales requieren comprobar derechos aparte.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

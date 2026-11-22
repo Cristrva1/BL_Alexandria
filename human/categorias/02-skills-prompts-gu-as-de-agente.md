@@ -4,7 +4,7 @@
 
 Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.
 
-30 repos · 2 secciones
+34 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,8 +18,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 13 repos
-- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 17 repos
+- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 15 repos
+- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 19 repos
 
 ## Catálogos y marketplaces de skills
 
@@ -33,6 +33,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [wshobson/agents](../fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores | Sin clave propia de API de IA en la ruta básica |
 | [Awesome GitHub Copilot](../fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | Tu objetivo encaja con estos ejemplos: Añadir instrucciones de equipo al asistente de programación; Estudiar un agente especializado antes de adaptarlo a un proyecto | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | Tu objetivo encaja con estos ejemplos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor | Sin clave propia de API de IA en la ruta básica |
+| [Claude Code Templates](../fichas/claude-code-templates.md) | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas. | Tu objetivo encaja con estos ejemplos: Comparar dos plantillas de revisión de UI.; Encontrar un componente y revisar su procedencia antes de importarlo. | Sin clave propia de API de IA en la ruta básica |
+| [Awesome Claude Code Subagents](../fichas/awesome-claude-code-subagents.md) | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto. | Tu objetivo encaja con estos ejemplos: Comparar el perfil de un revisor de accesibilidad y uno de documentación.; Identificar las herramientas declaradas por una plantilla antes de copiarla. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/google-skills.md) | Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | Tu objetivo encaja con estos ejemplos: Revisar la configuración de un servicio Cloud en un entorno de prueba; Aprender a consultar métricas de Ads sin crear campañas | Sin clave propia de API de IA en la ruta básica |
 | [plugins](../fichas/plugins.md) | Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. | Tu objetivo encaja con estos ejemplos: Encontrar una integración de un servicio que ya utiliza tu equipo; Estudiar cómo empaquetar reglas y skills para Cursor | Sin clave propia de API de IA en la ruta básica |
 | [autoskills](../fichas/autoskills.md) | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. | Tu objetivo encaja con estos ejemplos: Encontrar skills adecuadas para un proyecto React existente; Revisar qué archivos de skills se incorporarían sin descargarlos todos | Sin clave propia de API de IA en la ruta básica |
@@ -56,10 +58,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [codex-plugin-cc](../fichas/codex-plugin-cc.md) | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. | Tu objetivo encaja con estos ejemplos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal | API de IA opcional |
 | [SuperClaude_Framework](../fichas/superclaude-framework.md) | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. | Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes | Sin clave propia de API de IA en la ruta básica |
 | [elephant-goldfish-model](../fichas/elephant-goldfish-model.md) | Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias. | Tu objetivo encaja con estos ejemplos: Documentar alternativas para una funcionalidad antes de elegir una; Revisar una especificación con un contexto de lectura renovado | Sin clave propia de API de IA en la ruta básica |
+| [Improve de shadcn](../fichas/shadcn-improve.md) | Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana. | Tu objetivo encaja con estos ejemplos: Separar el análisis de un formulario y su corrección.; Convertir un diagnóstico de rendimiento en tareas verificables. | Sin clave propia de API de IA en la ruta básica |
 | [claude-token-efficient](../fichas/claude-token-efficient.md) | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. | Tu objetivo encaja con estos ejemplos: Reducir respuestas repetitivas en una sesión larga; Mantener un estilo de comunicación conciso para tareas de código | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-hooks-mastery](../fichas/claude-code-hooks-mastery.md) | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | Tu objetivo encaja con estos ejemplos: Registrar cuándo empieza y termina una sesión de trabajo; Comprender un control que revisa una acción antes de ejecutarla | API de IA opcional |
 | [agent-toolkit](../fichas/agent-toolkit.md) | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. | Tu objetivo encaja con estos ejemplos: Aclarar una petición ambigua antes de programar; Documentar el contrato entre frontend y backend | Sin clave propia de API de IA en la ruta básica |
 | [grok-plugin-claude-code](../fichas/grok-plugin-claude-code.md) | Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. | Tu objetivo encaja con estos ejemplos: Solicitar una segunda opinión sobre un cambio pequeño usando Grok; Delegar una tarea acotada desde una sesión de Claude Code | API: por confirmar |
+| [HUMANS.md Plugins](../fichas/humans-md-plugins.md) | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin. | Tu objetivo encaja con estos ejemplos: Pedir que el agente avise antes de modificar archivos de configuración.; Reutilizar preferencias de comunicación entre dos clientes compatibles. | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

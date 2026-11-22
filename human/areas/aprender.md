@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-96 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+104 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -75,7 +75,7 @@ Ejemplos de machine learning y entrenamiento desde cero.
 
 Explorar instrucciones generales y formas de trabajar con agentes.
 
-[Explorar 30 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-metodos)
+[Explorar 34 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-metodos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -87,12 +87,14 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 | [autoskills](../fichas/autoskills.md) | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Claude Code](../fichas/awesome-claude-code.md) | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | Sin clave propia de API de IA en la ruta básica |
+| [Awesome Claude Code Subagents](../fichas/awesome-claude-code-subagents.md) | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome GitHub Copilot](../fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-agents](../fichas/awesome-agents.md) | Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. | Sin clave propia de API de IA en la ruta básica |
 | [BMAD Method](../fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Sin clave propia de API de IA en la ruta básica |
 | [book-to-skill](../fichas/book-to-skill.md) | Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | Sin clave propia de API de IA en la ruta básica |
 | [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Sin clave propia de API de IA en la ruta básica |
+| [Claude Code Templates](../fichas/claude-code-templates.md) | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-hooks-mastery](../fichas/claude-code-hooks-mastery.md) | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | API de IA opcional |
 | [claude-token-efficient](../fichas/claude-token-efficient.md) | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. | Sin clave propia de API de IA en la ruta básica |
 | [codex-plugin-cc](../fichas/codex-plugin-cc.md) | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. | API de IA opcional |
@@ -101,6 +103,8 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 | [gemini-skills](../fichas/gemini-skills.md) | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. | Sin clave propia de API de IA en la ruta básica |
 | [grok-plugin-claude-code](../fichas/grok-plugin-claude-code.md) | Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. | API: por confirmar |
 | [gstack](../fichas/gstack.md) | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. | Sin clave propia de API de IA en la ruta básica |
+| [HUMANS.md Plugins](../fichas/humans-md-plugins.md) | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin. | Sin clave propia de API de IA en la ruta básica |
+| [Improve de shadcn](../fichas/shadcn-improve.md) | Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana. | Sin clave propia de API de IA en la ruta básica |
 | [plugins](../fichas/plugins.md) | Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. | Sin clave propia de API de IA en la ruta básica |
 | [Ponytail](../fichas/ponytail.md) | Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/google-skills.md) | Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | Sin clave propia de API de IA en la ruta básica |
@@ -114,14 +118,16 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 
 Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 
-[Explorar 36 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-especialidades)
+[Explorar 40 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-especialidades)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [3dviz-pro-max](../fichas/3dviz-pro-max.md) | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. | Sin clave propia de API de IA en la ruta básica |
 | [anatomy](../fichas/anatomy.md) | Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | Sin clave propia de API de IA en la ruta básica |
+| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [Arcads AI Video Skill Pack](../fichas/arcads-claude-code.md) | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling). | API de IA necesaria |
 | [blender-skills](../fichas/blender-skills.md) | Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP. | Sin clave propia de API de IA en la ruta básica |
+| [Claude Ads](../fichas/claude-ads.md) | Audita campañas de publicidad con Claude Code y organiza los hallazgos por plataforma, evidencia y prioridad. | Sin clave propia de API de IA en la ruta básica |
 | [claude-seo](../fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | API de IA opcional |
 | [Creative Architect](../fichas/creative-architect.md) | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video. | API de IA opcional |
 | [design-dna](../fichas/design-dna.md) | Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente. | Sin clave propia de API de IA en la ruta básica |
@@ -137,6 +143,7 @@ Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 | [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](../fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
 | [instagram-agent-skill](../fichas/instagram-agent-skill.md) | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | Sin clave propia de API de IA en la ruta básica |
+| [Knowledge Work Plugins](../fichas/knowledge-work-plugins.md) | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte. | Sin clave propia de API de IA en la ruta básica |
 | [linkedin-agent-skill](../fichas/linkedin-agent-skill.md) | Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. | Sin clave propia de API de IA en la ruta básica |
 | [logo-design-skill](../fichas/logo-design-skill.md) | Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño. | Sin clave propia de API de IA en la ruta básica |
 | [Marketing Skills](../fichas/marketingskills.md) | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | API de IA opcional |
@@ -144,6 +151,7 @@ Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
 | [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [scientific-agent-skills](../fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | API de IA opcional |
+| [Shopify AI Toolkit](../fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/minimalist-entrepreneur-skills.md) | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | Sin clave propia de API de IA en la ruta básica |
 | [skills_emil](../fichas/skills-emil.md) | Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering). | Sin clave propia de API de IA en la ruta básica |
 | [social-media-research-skills](../fichas/social-media-research-skills.md) | Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. | Sin clave propia de API de IA en la ruta básica |

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Metodologías y harness para agentes de código
 
-Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `metodologia`. 17 repos. Generado el 2026-11-16 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `metodologia`. 19 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2&sub=metodologia · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -35,6 +35,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `agent-toolkit` | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code… | 1 Básico | 45 | MIT (OSI permisiva) | sin grupo |
 | `grok-plugin-claude-code` | Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante… | 1 Básico | 36 | MIT (OSI permisiva) | sin grupo |
 | `claude-code-hooks-mastery` | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar… | 1 Básico | 30 | — (sin licencia detectada) | sin grupo |
+| `humans-md-plugins` | Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `shadcn-improve` | Organiza una auditoría de código en un plan que un modelo diferente puede… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -295,6 +297,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Estudia un hook sencillo de sesión y adapta una comprobación en una carpeta de prueba Éxito: El hook produce el evento o registro esperado al activar esa fase de la sesión
 - **Combina con:** `claude-code` [20/terminal], `ecc`, `claude-code-router` [23/serving]
 - **Riesgos y avisos:** Sin licencia: úsalo como referencia didáctica. Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales.
+
+### HUMANS.md Plugins (`humans-md-plugins`)
+
+- **Repo:** https://github.com/cmdai-hq/humans-md-plugins · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el plugin.
+- **Cuándo elegirlo:** Casos: Pedir que el agente avise antes de modificar archivos de configuración.; Reutilizar preferencias de comunicación entre dos clientes compatibles. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); JavaScript, package.json; API de IA: no; Node.js 22.18 o posterior según el README, un anfitrión compatible y perfil de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://humansmd.dev/
+- **Primera prueba propuesta (no ejecutada):** Crea un perfil con una sola preferencia ficticia y abre una nueva sesión. Éxito: El agente puede leer y explicar esa preferencia sin cargar notas reales.
+- **Riesgos y avisos:** El autor indica pruebas solo en macOS. El proveedor del agente puede procesar el perfil; no guardes contraseñas ni datos sensibles.
+
+### Improve de shadcn (`shadcn-improve`)
+
+- **Repo:** https://github.com/shadcn/improve · MIT · nivel 2 · —/100
+- **Qué es:** Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana.
+- **Cuándo elegirlo:** Casos: Separar el análisis de un formulario y su corrección.; Convertir un diagnóstico de rendimiento en tareas verificables. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); API de IA: no; Un agente con soporte de skills y un repositorio desechable o una copia de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/shadcn/improve/blob/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/README.md
+- **Primera prueba propuesta (no ejecutada):** Revisa un módulo pequeño con la skill y solicita solo el plan, sin aplicar cambios. Éxito: El plan nombra archivos, cambios propuestos y una forma de comprobarlos.
+- **Riesgos y avisos:** Los modelos se pagan o limitan por el anfitrión; el proyecto no incluye un modelo ni promete ahorro fijo.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 
