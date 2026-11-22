@@ -266,7 +266,7 @@
   ],
   "handbook": {
     "schema_version": 1,
-    "updated_at": "2026-11-15",
+    "updated_at": "2026-11-22",
     "groups": [
       {
         "id": "agentes",
@@ -321,6 +321,18 @@
         "title": "Acceso remoto, copias y operación",
         "section": "servicios",
         "description": "Conectar, observar y recuperar un sistema ya instalado."
+      },
+      {
+        "id": "aprendizaje",
+        "title": "Cursos y diseño de sistemas",
+        "section": "servicios",
+        "description": "Entender cómo se organizan aplicaciones y agentes con ejercicios que puedes hacer desde el navegador."
+      },
+      {
+        "id": "seguridad",
+        "title": "Seguridad defensiva y análisis",
+        "section": "servicios",
+        "description": "Revisar permisos, informes y controles defensivos en aplicaciones propias."
       }
     ],
     "resources": [
@@ -1206,26 +1218,34 @@
           "Revisa su trabajo, el registro y el uso antes de programar una rutina."
         ],
         "verify": "La tarea deja una salida comprobable y el consumo aparece en la cuenta correcta.",
-        "access": "La elegibilidad y facturación pueden depender de The X Subscription o cuentas Cursor heredadas; sigue la FAQ actual.",
-        "cost": "Hay límites semanales y posibles consumos adicionales según cuenta. No se conserva el precio de publicaciones sociales.",
+        "access": "Según la FAQ, The X Subscription incluye Grok Bot en Premium, Super y Ultra. También admite algunos planes heredados de Cursor. Comprueba el acceso de tu cuenta.",
+        "cost": "En The X Subscription usa la cuota semanal compartida con Cursor y las apps de Grok. La FAQ describe prepago para consumo adicional. En planes heredados, el sobreconsumo depende de la configuración de Cursor.",
         "improve": [
           "Sustituye sondeos innecesarios por eventos cuando el servicio lo permita.",
           "Da una condición de parada y un formato de entrega.",
-          "Revisa consumo por Bot antes de ampliar tareas recurrentes."
+          "Revisa consumo por Bot antes de ampliar tareas recurrentes.",
+          "Usa el directorio comunitario para descubrir ideas y comprueba el autor, las conexiones solicitadas y los permisos antes de importar un bot."
         ],
         "limits": [
-          "Los Bots de una cuenta pueden compartir su computadora cloud; revisa esa frontera al conectar cuentas."
+          "Los Bots de una cuenta pueden compartir su computadora cloud; revisa esa frontera al conectar cuentas.",
+          "Las entradas del directorio son aportaciones de terceros. Empieza con una tarea ficticia y una cuenta de prueba si decides importar una."
         ],
         "sources": [
           {
             "title": "Documentación oficial del proyecto o servicio",
             "url": "https://docs.x.ai/grok-bot/faq",
-            "checked_at": "2026-11-15"
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Directorio comunitario de bots y apps",
+            "url": "https://grok-bot.directory/",
+            "checked_at": "2026-11-22"
           }
         ],
         "repo_ids": [],
         "aliases": [
-          "GrokBot"
+          "GrokBot",
+          "Grok Bot Directory"
         ],
         "commands": []
       },
@@ -2006,7 +2026,8 @@
         "improve": [
           "Separa preview y producción.",
           "Prueba variables y conexiones reales, no solo el build.",
-          "Conserva una versión a la que puedas volver."
+          "Conserva una versión a la que puedas volver.",
+          "Si eliges eve, compara por separado ejecución, Sandbox, Workflow y uso de modelos por AI Gateway. Prueba primero con un flujo pequeño."
         ],
         "limits": [
           "Comprueba las capacidades del runtime antes de mover procesos persistentes o tareas pesadas."
@@ -2016,10 +2037,25 @@
             "title": "Documentación oficial del proyecto o servicio",
             "url": "https://vercel.com/docs",
             "checked_at": "2026-11-15"
+          },
+          {
+            "title": "Presentación oficial de eve 1.0",
+            "url": "https://vercel.com/blog/eve-is-now-generally-available",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Medición y precios de Vercel",
+            "url": "https://vercel.com/pricing",
+            "checked_at": "2026-11-22"
           }
         ],
-        "repo_ids": [],
-        "aliases": [],
+        "repo_ids": [
+          "eve"
+        ],
+        "aliases": [
+          "Vercel eve",
+          "eve 1.0"
+        ],
         "commands": []
       },
       {
@@ -2658,6 +2694,1056 @@
         ],
         "repo_ids": [],
         "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "agentes-chat-servicio",
+        "name": "agentes.chat Cloud",
+        "group": "personales",
+        "kind": "Espacio de trabajo con IA",
+        "summary": "Reúne al equipo y a sus agentes en canales con memoria compartida y aprobación humana para acciones delicadas.",
+        "prepare": [
+          "Una cuenta de agentes.chat y un canal de ensayo",
+          "Un proveedor de IA admitido, con su sesión o clave según la opción"
+        ],
+        "steps": [
+          "Crea un espacio privado de prueba y pega una política ficticia de tres párrafos en su wiki.",
+          "Configura un agente para responder preguntas sobre la política y limita sus herramientas.",
+          "Pide una respuesta en el canal y valida con el texto que guardaste."
+        ],
+        "verify": "El agente responde en el canal correcto usando la política ficticia como fuente.",
+        "access": "Servicio web con clientes de escritorio y móvil. El proveedor documenta conexión desde Claude y otros clientes MCP. Consulta la opción de autenticación de cada modelo. El proyecto ofrece autoalojamiento.",
+        "cost": "Personal desde USD 29/mes en pago mensual o USD 288/año. El consumo de IA se paga por separado. El software autoalojado se ofrece gratis y requiere equipo propio.",
+        "improve": [
+          "Comprueba quién puede ver lo que el agente guarda antes de invitar a otras personas."
+        ],
+        "limits": [
+          "La memoria y los permisos del espacio abarcan a varias personas. Empieza con material ficticio."
+        ],
+        "sources": [
+          {
+            "title": "Producto",
+            "url": "https://agentes.chat/",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Guías de acceso y autoalojamiento",
+            "url": "https://agentes.chat/docs",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Precios de la nube",
+            "url": "https://agentes.chat/pricing",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "agentes-chat"
+        ],
+        "aliases": [
+          "agentes.chat",
+          "chat de equipo"
+        ],
+        "commands": []
+      },
+      {
+        "id": "boat-sandboxes",
+        "name": "Boat",
+        "group": "infra",
+        "kind": "Máquinas virtuales para desarrollo",
+        "summary": "Ofrece máquinas Ubuntu que puedes detener, reanudar o clonar para probar código en un entorno separado.",
+        "prepare": [
+          "Cuenta de Boat y un medio de pago para activar la prueba",
+          "Cliente oficial y proyecto de muestra sin credenciales"
+        ],
+        "steps": [
+          "Lee la tabla de precios y consulta el tiempo disponible en tu cuenta.",
+          "Sigue el inicio oficial para crear una sola VM. Ejecuta una prueba pequeña del proyecto y conserva el resultado.",
+          "Detén la VM y comprueba en el panel el estado y el tiempo facturado."
+        ],
+        "verify": "La prueba termina en la VM y el panel muestra el entorno detenido.",
+        "access": "El proveedor documenta CLI para Windows, macOS y Linux, API para automatizar y uso de Claude Code, Codex u OpenCode dentro de Ubuntu. Autoriza el agente con su proveedor correspondiente.",
+        "cost": "Prueba de 7 días y 25 horas de cómputo con tarjeta. Mínimo mensual publicado de USD 20. La VM de 4 vCPU y 8 GB figura en USD 0.036/h. La IA tiene su propia facturación.",
+        "improve": [
+          "Revisa región, red y retención de snapshots antes de guardar código de un equipo."
+        ],
+        "limits": [
+          "Las máquinas anunciadas son CPU. Revisa los cargos por arranques adicionales y el alcance de red de la VM."
+        ],
+        "sources": [
+          {
+            "title": "Producto y compatibilidad",
+            "url": "https://boat.dev/",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Tarifas y medición",
+            "url": "https://docs.boat.dev/pricing",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "sandbox",
+          "VM Ubuntu"
+        ],
+        "commands": []
+      },
+      {
+        "id": "hermes-plugin-hackathon",
+        "name": "Hermes Plugin Hackathon",
+        "group": "personales",
+        "kind": "Directorio comunitario",
+        "summary": "Reúne proyectos del hackathon de Hermes Agent con filtros por función, plataforma, estado y tipo de permiso.",
+        "prepare": [
+          "Navegador para explorar",
+          "Hermes Agent y un perfil de prueba si más adelante evalúas un plugin"
+        ],
+        "steps": [
+          "Elige una tarea pequeña como organizar notas ficticias.",
+          "Filtra por plataforma y abre el pull request del plugin que te interese.",
+          "Revisa qué archivos toca, qué servicio contacta y qué claves solicita antes de decidir."
+        ],
+        "verify": "Puedes identificar al autor, el código y los permisos de un candidato a partir de su pull request.",
+        "access": "Directorio para Hermes Agent. Cada proyecto declara sus plataformas, servicios y dependencias. Los resultados del directorio se pueden leer sin el agente.",
+        "cost": "La galería se puede consultar gratis. El coste de un plugin depende del servicio, modelo o clave que use.",
+        "improve": [
+          "Compara el pull request con la versión que planeas instalar."
+        ],
+        "limits": [
+          "La aparición en el hackathon y la integración en el catálogo del evento son señales de procedencia. La revisión de permisos queda a cargo de quien instala."
+        ],
+        "sources": [
+          {
+            "title": "Galería y pull requests",
+            "url": "https://aaddrick.com/hermespluginhackathon",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "hermes-agent"
+        ],
+        "aliases": [
+          "plugins hermes",
+          "hackathon nous"
+        ],
+        "commands": []
+      },
+      {
+        "id": "modulify",
+        "name": "Modulify",
+        "group": "publicar",
+        "kind": "Constructor web con IA",
+        "summary": "Genera y edita sitios y aplicaciones web desde una descripción y ofrece vista previa y publicación.",
+        "prepare": [
+          "Cuenta de Modulify y navegador",
+          "Texto y recursos de ejemplo para una página sencilla"
+        ],
+        "steps": [
+          "Abre un espacio de prueba y elige un sitio de una página.",
+          "Describe el negocio ficticio, sus secciones y la acción principal que debe verse en el móvil.",
+          "Comprueba la vista previa y las opciones de publicación antes de asociar un dominio."
+        ],
+        "verify": "La vista previa muestra las secciones pedidas y la acción principal funciona en una pantalla pequeña.",
+        "access": "Editor web con IA y créditos gestionados por Modulify. El flujo de la ficha usa la cuenta del servicio desde el navegador.",
+        "cost": "Plan gratuito para un sitio con créditos iniciales de una sola vez. La página de precios indica 35 y la documentación 50. Confirma el saldo en tu panel. Starter publica USD 25 al mes o USD 240 al año.",
+        "improve": [
+          "Anota cuántos créditos consume cada cambio y reutiliza imágenes propias para evitar generaciones innecesarias."
+        ],
+        "limits": [
+          "Dominio propio, equipo, publicación y funciones de datos dependen del plan. Consulta el desglose del espacio antes de pagar."
+        ],
+        "sources": [
+          {
+            "title": "Planes comerciales",
+            "url": "https://modulify.ai/pricing",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Documentación del espacio y créditos",
+            "url": "https://modulify.ai/docs/plans/plans",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "constructor de páginas",
+          "sitio web sin código"
+        ],
+        "commands": []
+      },
+      {
+        "id": "tailscale-grok-mcp",
+        "name": "Tailscale con Grok Bot y MCP privado",
+        "group": "operacion",
+        "kind": "Integración de red",
+        "summary": "Permite a Grok Bot llegar a un servidor MCP dentro de una red Tailscale con autorización ligada al usuario.",
+        "prepare": [
+          "Red Tailscale que administras y acceso a la integración en Grok Bot",
+          "Un servidor MCP de prueba con datos ficticios y una función de solo lectura"
+        ],
+        "steps": [
+          "Configura una regla de acceso limitada al servicio de prueba y revisa los recursos visibles para el usuario.",
+          "Autoriza Tailscale desde las integraciones de Grok Bot. Comprueba el nuevo dispositivo en la red.",
+          "Pide una consulta de solo lectura y verifica los registros. Revoca la conexión al terminar la prueba."
+        ],
+        "verify": "La consulta al recurso permitido funciona y el bot carece de acceso a otros recursos de la red de prueba.",
+        "access": "Tailscale documenta esta integración en Grok Bot vía OAuth. El servidor MCP puede vivir en un equipo propio. Cada cliente MCP necesita su propia ruta de red y autorización.",
+        "cost": "Aplican las cuotas del plan Tailscale y las del plan Grok Bot. Tailscale documenta el control por postura personalizada en Premium o Enterprise y reglas por etiqueta en otros planes.",
+        "improve": [
+          "Limita por servicio, usa una red de prueba y comprueba el efecto de revocar el dispositivo."
+        ],
+        "limits": [
+          "El dispositivo hereda la identidad y las políticas del usuario. Revisa el alcance de esas políticas antes de conceder acceso."
+        ],
+        "sources": [
+          {
+            "title": "Integración oficial y permisos",
+            "url": "https://tailscale.com/blog/oauth-apps-ga",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Planes de Tailscale",
+            "url": "https://tailscale.com/pricing",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "mcp-inspector"
+        ],
+        "aliases": [
+          "grok bot",
+          "oauth apps",
+          "mcp privado"
+        ],
+        "commands": []
+      },
+      {
+        "id": "cloudflare-startups",
+        "name": "Cloudflare for Startups",
+        "group": "publicar",
+        "kind": "Programa de créditos",
+        "summary": "Programa para empresas que quieren financiar consumo inicial de infraestructura Cloudflare.",
+        "prepare": [
+          "Empresa elegible con sitio público y correo del dominio corporativo",
+          "Una estimación de uso y la información que pide el formulario"
+        ],
+        "steps": [
+          "Compara los requisitos de tu empresa con los niveles de financiación publicados.",
+          "Estima qué gastarías en Workers, almacenamiento o entrega y comprueba cuáles están cubiertos.",
+          "Si cumples los requisitos, solicita acceso y espera el resultado antes de contar con el crédito."
+        ],
+        "verify": "Puedes identificar tu nivel, servicios cubiertos, vencimiento y cargos que quedarían fuera.",
+        "access": "Solicitud web y cuenta de Cloudflare para consumir los créditos aprobados. Workers, Pages y servicios de datos siguen teniendo requisitos propios.",
+        "cost": "Cloudflare publica créditos de USD 10 000, 100 000 y hasta 350 000 por un año, según nivel y aprobación. Hay límites por producto y cargos por consumo fuera de cobertura.",
+        "improve": [
+          "Programa una revisión de gasto y el plan después del vencimiento."
+        ],
+        "limits": [
+          "La asignación y el uso dependen de criterios, aprobación y términos vigentes."
+        ],
+        "sources": [
+          {
+            "title": "Niveles, requisitos y usos cubiertos",
+            "url": "https://www.cloudflare.com/startups/",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "créditos cloudflare",
+          "startups",
+          "workers"
+        ],
+        "commands": []
+      },
+      {
+        "id": "deepai-code",
+        "name": "DeepAI Code",
+        "group": "agentes",
+        "kind": "Agente de programación",
+        "summary": "Aplicación de escritorio que lee y edita proyectos con modelos servidos por DeepAI.",
+        "prepare": [
+          "Instalador oficial para macOS, Windows o Linux",
+          "Una copia de un proyecto pequeño y una cuenta DeepAI para los créditos de la cuenta"
+        ],
+        "steps": [
+          "Descarga desde la página del producto la versión que corresponde a tu equipo.",
+          "Abre una copia de prueba. Pide explicar un archivo de configuración y después proponer un cambio pequeño.",
+          "Comprueba el diff y el gasto de créditos antes de aplicar cambios al proyecto original."
+        ],
+        "verify": "Puedes asociar una edición con el archivo correcto y verificarla antes de integrarla.",
+        "access": "Cliente local con modelos hospedados por DeepAI. La aplicación documenta uso sin clave de API propia. Tu acceso y cuota dependen de la cuenta DeepAI.",
+        "cost": "Nivel gratuito financiado con anuncios. La página anuncia hasta 250 Theos diarios en la cuenta gratuita para modelos medidos. Los planes de pago amplían la cuota y tienen su propia tarifa.",
+        "improve": [
+          "Abre una carpeta que solo incluya los archivos de prueba y comprueba qué comandos ejecuta el agente."
+        ],
+        "limits": [
+          "La lista de modelos, anuncios, cuotas y disponibilidad pueden cambiar. Revisa el tratamiento de archivos y prompts antes de usar código privado."
+        ],
+        "sources": [
+          {
+            "title": "Descargas, modelos y créditos",
+            "url": "https://deepai.org/chat/ai-code",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Planes DeepAI",
+            "url": "https://deepai.org/pricing",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "code ai",
+          "theos"
+        ],
+        "commands": []
+      },
+      {
+        "id": "nous-arete-27b",
+        "name": "Arete-27B de Nous Research",
+        "group": "local",
+        "kind": "Modelo de pesos abiertos",
+        "summary": "Versión de Qwen3.8-27B ajustada por Nous Research. Su ficha documenta las preferencias incorporadas y permite comparar sus respuestas con las del modelo base.",
+        "prepare": [
+          "Un equipo con memoria y disco suficientes para el formato elegido",
+          "Ficha del modelo, licencia Apache 2.0 y un motor compatible con el formato"
+        ],
+        "steps": [
+          "Lee el objetivo del ajuste publicado por Nous y elige un conjunto de preguntas de prueba.",
+          "Elige los pesos oficiales y fija su revisión. Empieza con un contexto pequeño en un motor que soporte el checkpoint.",
+          "Compara el resultado con Qwen base usando los mismos datos y condiciones."
+        ],
+        "verify": "Puedes identificar qué pesos se cargaron y detectar diferencias de comportamiento en tus propios ejemplos.",
+        "access": "Pesos Safetensors para ejecución propia con un motor que admita la arquitectura. Verifica de forma independiente cualquier conversión para Ollama, llama.cpp o LM Studio.",
+        "cost": "Pesos publicados bajo Apache 2.0. La ejecución paga el equipo, electricidad o GPU alquilada. En BF16, 27 mil millones de parámetros ocupan alrededor de 54 GB solo en pesos.",
+        "improve": [
+          "Lee las limitaciones de la evaluación del autor y conserva tus propios casos de comparación."
+        ],
+        "limits": [
+          "Las versiones cuantizadas de terceros requieren verificar su procedencia y pueden cambiar las respuestas. El contexto también ocupa memoria."
+        ],
+        "sources": [
+          {
+            "title": "Ficha y pesos del editor",
+            "url": "https://huggingface.co/NousResearch/Arete-27B",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Objetivo de entrenamiento y evaluación",
+            "url": "https://nousresearch.com/arete",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "qwen",
+          "nous",
+          "safetensors"
+        ],
+        "commands": []
+      },
+      {
+        "id": "jev-typesafe",
+        "name": "Jev de TypeSafe AI",
+        "group": "modelos",
+        "kind": "API de clasificación",
+        "summary": "Evalúa texto con preguntas numeradas y devuelve respuestas estructuradas que sirven para clasificar tickets, documentos y otros datos.",
+        "prepare": [
+          "Cuenta, clave API de TypeSafe y saldo prepago",
+          "Mensajes ficticios con su categoría esperada"
+        ],
+        "steps": [
+          "Prepara tres mensajes inventados de soporte y una pregunta cerrada sobre si hablan de cobros.",
+          "Sigue System One para enviar el lote de preguntas sobre un solo mensaje y guarda la respuesta.",
+          "Compara las respuestas con tus etiquetas y revisa el campo de uso."
+        ],
+        "verify": "La respuesta trae la clave de cada pregunta y el número de tokens de entrada y salida.",
+        "access": "API HTTP de TypeSafe con token Bearer. Un agente de código puede ayudarte a integrar la llamada. Jev se autentica con su propia clave y ejecuta en la nube del proveedor.",
+        "cost": "USD 0.042 por millón de tokens de entrada. TypeSafe publica salida sin cargo y sin crédito de prueba.",
+        "improve": [
+          "Añade casos ambiguos y un umbral con revisión humana antes de clasificar tickets reales."
+        ],
+        "limits": [
+          "Mantén la clave en el servidor y empieza con datos sintéticos. La salida es una predicción que puedes contrastar con etiquetas humanas."
+        ],
+        "sources": [
+          {
+            "title": "Producto",
+            "url": "https://typesafe.ai/",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "System One",
+            "url": "https://docs.typesafe.ai/api/system-one",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Tarifa oficial",
+            "url": "https://help.typesafe.ai/articles/5187202169-how-much-does-jev-cost",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "clasificación de texto",
+          "system one",
+          "jev"
+        ],
+        "commands": []
+      },
+      {
+        "id": "dnshe",
+        "name": "DNSHE",
+        "group": "publicar",
+        "kind": "Subdominios y DNS",
+        "summary": "Gestiona subdominios para demostraciones y registros DNS desde el panel del proveedor.",
+        "prepare": [
+          "Cuenta DNSHE y un nombre disponible en una zona ofrecida",
+          "Destino de prueba que admita el subdominio"
+        ],
+        "steps": [
+          "Lee los términos de subdominios y comprueba el nombre y periodo ofrecidos.",
+          "Apunta el subdominio a una demostración pública sin datos personales.",
+          "Verifica que resuelve y que HTTPS responde si el alojamiento lo admite. Guarda la fecha de renovación."
+        ],
+        "verify": "El nombre resuelve al destino correcto y conoces cómo renovarlo o quitarlo.",
+        "access": "Panel DNS en navegador. La ruta de prueba usa DNS estándar y puedes seguirla con cualquier alojamiento que permita configurar ese nombre.",
+        "cost": "DNSHE anuncia subdominios y DNS gratuitos. El aviso vigente describe un periodo anual para altas gratuitas y renovación manual dentro de los 180 días previos al vencimiento. Cómputo y otros productos se cotizan aparte.",
+        "improve": [
+          "Usa un dominio bajo control propio cuando la continuidad de la dirección sea crítica."
+        ],
+        "limits": [
+          "DNSHE conserva control del dominio principal. Sus términos permiten cambiar o suspender el servicio gratuito."
+        ],
+        "sources": [
+          {
+            "title": "Servicio",
+            "url": "https://www.dnshe.com/",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Términos del servicio",
+            "url": "https://www.dnshe.com/tos.html",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Renovación anual",
+            "url": "https://my.dnshe.com/announcements/6/DNSHE-Free-Domain-Registration-Duration-Adjustment-Notice-Introduction-of-an-Annual-Registration-System.html",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "dns gratis",
+          "subdominio",
+          "nombre web"
+        ],
+        "commands": []
+      },
+      {
+        "id": "google-tabletop",
+        "name": "Tabletop de Google Labs",
+        "group": "personales",
+        "kind": "Experimento colaborativo",
+        "summary": "Permite proponer una votación o un itinerario interactivo en un espacio compartido de Google Labs.",
+        "prepare": [
+          "Navegador, cuenta Google y acceso aprobado",
+          "La oferta anunciada es para mayores de 18 años en EE. UU. mediante lista de espera"
+        ],
+        "steps": [
+          "Abre la página oficial y comprueba si tu cuenta tiene acceso.",
+          "Empieza con una encuesta ficticia de horarios usando una plantilla.",
+          "Revisa el alcance del enlace de invitación y comprueba el voto con un colaborador de prueba."
+        ],
+        "verify": "Las personas autorizadas pueden entrar a la encuesta y ver su actualización.",
+        "access": "Experimento web de Google Labs con despliegue por cuenta y región. El flujo documentado usa el navegador y su herramienta integrada.",
+        "cost": "El anuncio permite solicitar acceso y omite una tarifa pública. Verifica las condiciones que aparezcan en tu cuenta.",
+        "improve": [
+          "Prueba permisos y visibilidad con material poco sensible antes de adjuntar enlaces o archivos."
+        ],
+        "limits": [
+          "La lista de espera, disponibilidad y funciones pueden variar durante el experimento."
+        ],
+        "sources": [
+          {
+            "title": "Sitio del experimento",
+            "url": "https://tabletop.google/about",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Anuncio y acceso",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "planificar en grupo",
+          "google labs",
+          "encuestas"
+        ],
+        "commands": []
+      },
+      {
+        "id": "google-ai-harness-curso",
+        "name": "AI Harness Crash Course de Google Cloud Tech",
+        "group": "aprendizaje",
+        "kind": "Curso en video",
+        "summary": "Introducción al entorno que conecta un modelo con instrucciones, herramientas y controles para completar una tarea.",
+        "prepare": [
+          "Navegador con acceso a YouTube",
+          "Conocer la idea básica de un agente de IA"
+        ],
+        "steps": [
+          "Abre el video del canal Google Cloud Tech y anota qué hace cada parte del sistema.",
+          "Dibuja un ejemplo con una tarea, una herramienta de lectura y una condición de parada.",
+          "Explica con palabras tuyas cómo comprobarías el resultado antes de permitir otra acción."
+        ],
+        "verify": "Tu esquema indica qué recibe el agente, qué puede hacer y cómo compruebas su salida.",
+        "access": "Video público. El ejercicio sugerido se hace en papel o en un editor y funciona con cualquier agente como referencia.",
+        "cost": "Consulta del video sin tarifa de API. Si montas un ejemplo en la nube por tu cuenta, sus recursos y modelos pueden tener coste.",
+        "improve": [
+          "Distingue en el esquema el entorno que ejecuta herramientas y el modelo que decide."
+        ],
+        "limits": [
+          "El video es material formativo. Verifica versiones y precios en las guías de cada producto cuando implementes un flujo."
+        ],
+        "sources": [
+          {
+            "title": "Video de Google Cloud Tech",
+            "url": "https://www.youtube.com/watch?v=2C_CefSQEAQ",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "harness engineering",
+          "google cloud tech",
+          "crash course"
+        ],
+        "commands": []
+      },
+      {
+        "id": "designed-to-scale",
+        "name": "Designed to Scale",
+        "group": "aprendizaje",
+        "kind": "Curso interactivo",
+        "summary": "Explica conceptos de diseño de sistemas con diagramas animados que recorres paso a paso.",
+        "prepare": [
+          "Navegador con JavaScript habilitado",
+          "Una libreta para dibujar el flujo de un ejemplo"
+        ],
+        "steps": [
+          "Abre el curso y avanza por un diagrama.",
+          "Dibuja una petición de usuario e identifica dónde vive cada componente.",
+          "Cambia una condición, como que un componente se caiga, y explica qué tendría que pasar."
+        ],
+        "verify": "Puedes recorrer la solicitud desde el navegador y explicar una decisión de diseño con el diagrama.",
+        "access": "Lectura interactiva en navegador. El ejercicio se puede completar con papel y lápiz.",
+        "cost": "Portada pública sin registro ni muro de pago observado. No se encontró una tarifa publicada para recorrer el curso.",
+        "improve": [
+          "Repite el ejercicio con tu proyecto y explica qué parte sigue sin cubrir."
+        ],
+        "limits": [
+          "El ejemplo sirve para aprender conceptos. Las decisiones de producción necesitan datos de carga y restricciones de tu proyecto."
+        ],
+        "sources": [
+          {
+            "title": "Curso y diagramas",
+            "url": "https://designed-to-scale.vercel.app/",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "system design",
+          "arquitectura",
+          "diagramas"
+        ],
+        "commands": []
+      },
+      {
+        "id": "treg-jobs-api",
+        "name": "treg Jobs API",
+        "group": "datos",
+        "kind": "API de vacantes",
+        "summary": "Consulta vacantes públicas de empleadores y agrega información de empleo de varios proveedores en un servicio alojado.",
+        "prepare": [
+          "Cuenta de treg y credencial propia del servicio",
+          "Nombre de una empresa de prueba y un límite de gasto"
+        ],
+        "steps": [
+          "Consulta el precio de la operación para leer el tablón público de un único empleador.",
+          "Lee una página de resultados y guarda el enlace a la vacante original.",
+          "Comprueba que sigue abierta en el sitio del empleador y revisa en el panel si hubo un cargo."
+        ],
+        "verify": "Cada resultado de prueba se puede contrastar con el anuncio original y puedes distinguir las operaciones facturadas.",
+        "access": "Servicio de treg con credencial propia. Su documentación presenta uso desde Claude Code y Codex. Para esta ficha basta la consulta de vacantes públicas en el servicio alojado.",
+        "cost": "Prepago por operación. Publica algunos tablones por USD 0, USD 0.0015 por vacante en búsquedas agregadas y USD 0.01 por consulta de percentiles salariales. Verifica la tarifa de la operación antes de llamarla.",
+        "improve": [
+          "Guarda el origen y la fecha de cada vacante antes de comparar resultados."
+        ],
+        "limits": [
+          "Empieza con anuncios públicos. Evita entregar currículos o información sobre personas al evaluar si el servicio te sirve."
+        ],
+        "sources": [
+          {
+            "title": "Jobs API y tarifas publicadas",
+            "url": "https://treg.to/jobs-api",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "búsqueda empleo",
+          "vacantes",
+          "jobs api"
+        ],
+        "commands": []
+      },
+      {
+        "id": "qwen-harness-adapters",
+        "name": "Qwen3.8-27B adaptado para pi y OpenCode",
+        "group": "local",
+        "kind": "Adaptadores LoRA",
+        "summary": "Dos conjuntos de pesos adicionales ajustan el mismo modelo base para clientes distintos de programación asistida.",
+        "prepare": [
+          "Qwen3.8-27B base y el adaptador que corresponda al cliente",
+          "Un servidor compatible, espacio y memoria para base, adaptador y contexto"
+        ],
+        "steps": [
+          "Elige pi u OpenCode y abre la ficha correspondiente. Fija la revisión del modelo base y el adaptador.",
+          "Sigue la ruta documentada para servirlo, por ejemplo con vLLM. Conecta el cliente a la dirección de prueba.",
+          "Pide una edición inocua en una carpeta temporal y compara el diff con el que propone el modelo base."
+        ],
+        "verify": "El servidor reporta el adaptador correcto y el cliente modifica únicamente el archivo de prueba esperado.",
+        "access": "Las fichas documentan vLLM y llama.cpp con su cliente correspondiente. La ruta con descarga y cómputo propios usa modelos locales. La compatibilidad documentada en estas fuentes cubre pi y OpenCode.",
+        "cost": "Adaptadores bajo Apache 2.0. Revisa también la licencia del modelo base. Operar el servidor usa disco y equipo o GPU alquilada. Los pesos base BF16 ocupan alrededor de 54 GB antes del contexto.",
+        "improve": [
+          "Compara resultados y memoria con el modelo base usando la misma tarea y la misma configuración."
+        ],
+        "limits": [
+          "El adaptador depende del checkpoint base. Los resultados publicados dependen del cliente y de los parámetros de evaluación."
+        ],
+        "sources": [
+          {
+            "title": "Ficha y pasos para pi",
+            "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Ficha y pasos para OpenCode",
+            "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-opencode-adapted",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "vllm",
+          "opencode",
+          "llama-cpp"
+        ],
+        "aliases": [
+          "lora",
+          "pi",
+          "harness hub",
+          "opencode"
+        ],
+        "commands": []
+      },
+      {
+        "id": "nemotron-bolt",
+        "name": "NVIDIA Nemotron 3.5 Bolt E4B",
+        "group": "local",
+        "kind": "Modelo de pesos abiertos",
+        "summary": "Modelo multimodal pequeño en parámetros activos con pesos publicados por NVIDIA. Admite ensayos de preguntas sobre imágenes y texto.",
+        "prepare": [
+          "Pesos oficiales y entorno compatible con la variante seleccionada",
+          "Equipo con memoria y disco suficientes y una imagen ficticia o pública"
+        ],
+        "steps": [
+          "Abre la ficha oficial y revisa la licencia y variantes. Elige la guía para Transformers o vLLM según tu equipo.",
+          "Descarga la revisión que usarás y realiza una prueba con una imagen de ejemplo.",
+          "Limita el contexto y comprueba qué modelo se cargó, cuánta memoria consume y si interpreta bien la imagen."
+        ],
+        "verify": "La respuesta describe una característica observable de la imagen de prueba y puedes repetirla con los mismos pesos.",
+        "access": "La ficha BF16 documenta Transformers y vLLM. El acceso local depende del motor, versión y formato. Revisa una variante oficial específica si vas a usar otro motor.",
+        "cost": "Pesos sujetos a OpenMDW 1.1. El coste de usar un equipo propio o GPU alquilada es independiente de la descarga.",
+        "improve": [
+          "Compara la memoria del formato BF16 con una variante compatible de menor precisión antes de cambiar de equipo."
+        ],
+        "limits": [
+          "E4B describe parámetros activos. Para estimar memoria cuenta todos los pesos y el contexto de la variante elegida."
+        ],
+        "sources": [
+          {
+            "title": "Ficha oficial, licencia y ejecución",
+            "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "vllm"
+        ],
+        "aliases": [
+          "nvidia",
+          "visión",
+          "nemotron",
+          "vllm"
+        ],
+        "commands": []
+      },
+      {
+        "id": "chrome-webmcp",
+        "name": "WebMCP y MCP según Chrome",
+        "group": "publicar",
+        "kind": "Guía de integración web",
+        "summary": "Ayuda a elegir cómo exponer una función de una página a un agente o cómo ofrecer herramientas desde un servidor MCP.",
+        "prepare": [
+          "Navegador para leer y un sitio de prueba si quieres experimentar",
+          "Chrome compatible con la prueba de origen o configuración de desarrollo descrita por Google"
+        ],
+        "steps": [
+          "Lee la comparación y elige una función sencilla, como filtrar un listado público.",
+          "Decide si necesita el estado de la página abierta o si puede ejecutarse desde un servidor independiente.",
+          "Si pruebas WebMCP, registra solo una acción sin escritura y comprueba en Chrome que se descubre y devuelve el resultado esperado."
+        ],
+        "verify": "Puedes explicar por qué la acción va en la página o en un servidor y qué cliente puede invocarla.",
+        "access": "WebMCP sigue como propuesta con prueba de origen desde Chrome 149 según la guía. Comprueba soporte del navegador y del cliente. MCP de servidor tiene su propia ruta de conexión para cada agente.",
+        "cost": "Guías y experimento de navegador sin tarifa de lectura. Si usas un modelo hospedado o un servidor MCP externo, estima su gasto por separado.",
+        "improve": [
+          "Reserva confirmaciones para operaciones con efectos y deja que el sitio siga funcionando para personas sin un agente."
+        ],
+        "limits": [
+          "Versiones, permisos y disponibilidad varían según navegador. Revisa la documentación antes de diseñar una dependencia de producción."
+        ],
+        "sources": [
+          {
+            "title": "Cuándo usar WebMCP y MCP",
+            "url": "https://developer.chrome.com/docs/ai/webmcp/compare-mcp",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Requisitos y estado en Chrome",
+            "url": "https://developer.chrome.com/docs/ai/webmcp",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "mcp-inspector"
+        ],
+        "aliases": [
+          "webmcp",
+          "chrome",
+          "mcp",
+          "frontend"
+        ],
+        "commands": []
+      },
+      {
+        "id": "gemini-carbon",
+        "name": "Gemini 4 Carbon",
+        "group": "modelos",
+        "kind": "Modelo hospedado",
+        "summary": "Modelo de Google para tareas largas de razonamiento y desarrollo. Puedes evaluarlo en un problema acotado antes de incorporarlo a un flujo habitual.",
+        "prepare": [
+          "Cuenta de Google con acceso al modelo",
+          "Para API, proyecto con facturación y clave. Para uso en Antigravity, acceso del plan Google AI Ultra según disponibilidad"
+        ],
+        "steps": [
+          "Elige si vas a usar la sesión de Antigravity o consumir la API desde tu código.",
+          "Pide a Carbon revisar un diseño ficticio y devolver tres decisiones con su justificación.",
+          "Si usas API, revisa el identificador de modelo, uso facturado y límite del proyecto."
+        ],
+        "verify": "Puedes documentar qué modelo se usó y qué cuenta, cuota o proyecto cubrió esa petición.",
+        "access": "Google documenta Gemini API de pago y disponibilidad para Google AI Ultra en Antigravity. El servicio ejecuta el modelo en Google. Claude Code, Codex y los motores locales tienen rutas de acceso propias.",
+        "cost": "Google anunció una tarifa introductoria de USD 2 por millón de tokens de entrada y USD 10 de salida para la API. Confirma el precio vigente en tu proyecto. La suscripción tiene sus propias cuotas.",
+        "improve": [
+          "Compara Carbon y un modelo más económico sobre el mismo resultado esperado antes de elegir uno para tareas habituales."
+        ],
+        "limits": [
+          "La disponibilidad depende de cuenta, región y plan. Una promoción puede terminar y algunos trabajos consumen tokens de razonamiento."
+        ],
+        "sources": [
+          {
+            "title": "Guía del desarrollador",
+            "url": "https://aistudio.google.com/learn/gemini-4-carbon-developer-guide",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Anuncio de acceso para desarrolladores",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Información oficial de precio introductorio",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "google ai studio",
+          "gemini api",
+          "antigravity",
+          "carbon"
+        ],
+        "commands": []
+      },
+      {
+        "id": "openai-background",
+        "name": "OpenAI Responses API en segundo plano",
+        "group": "modelos",
+        "kind": "Guía de API",
+        "summary": "Inicia una respuesta larga en la API y recupera su estado y resultado desde tu aplicación.",
+        "prepare": [
+          "Proyecto OpenAI API, clave restringida y acceso a un modelo compatible",
+          "Una app de prueba que pueda guardar el identificador de la respuesta"
+        ],
+        "steps": [
+          "Con datos ficticios, crea una respuesta con la opción de segundo plano de la guía.",
+          "Guarda el identificador y consulta el estado con espera entre intentos.",
+          "Muestra el resultado cuando finalice y conserva los estados de error o cancelación para que puedan revisarse."
+        ],
+        "verify": "La aplicación guarda un identificador, distingue estados intermedios y finales y muestra una sola respuesta.",
+        "access": "Función de la API Responses que requiere acceso con un proyecto API. Un agente de código puede ayudar a integrarla. El modelo se ejecuta en OpenAI.",
+        "cost": "Consulta las tarifas del modelo, tokens y herramientas elegidas en la API. La sesión de Codex usa su propio acceso. Comprueba créditos aplicables en la facturación del proyecto.",
+        "improve": [
+          "Cuando la aplicación madure, evalúa eventos de finalización con verificación de firma y manejo de reintentos."
+        ],
+        "limits": [
+          "La guía vigente indica almacenamiento temporal de datos, incluso con `store: false` o configuración Zero Data Retention. Revisa las ventanas y controles antes de enviar contenido sensible."
+        ],
+        "sources": [
+          {
+            "title": "Modo en segundo plano",
+            "url": "https://developers.openai.com/api/docs/guides/background",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Tarifas de la API",
+            "url": "https://developers.openai.com/api/docs/pricing",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [
+          "openai-python"
+        ],
+        "aliases": [
+          "responses api",
+          "background mode",
+          "webhooks",
+          "tareas largas"
+        ],
+        "commands": []
+      },
+      {
+        "id": "owasp-cheat-sheets",
+        "name": "OWASP Cheat Sheet Series",
+        "group": "seguridad",
+        "kind": "Listas de comprobación defensiva",
+        "summary": "Guías concretas para diseñar autenticación, registros, gestión de secretos y otros controles de seguridad.",
+        "prepare": [
+          "Navegador y un flujo propio que quieras documentar"
+        ],
+        "steps": [
+          "Elige una guía, por ejemplo la de autenticación.",
+          "Toma un control relevante y compáralo con tu diseño. Documenta quién lo aplica y qué evidencia lo demostraría.",
+          "Añade una prueba pequeña con datos de ejemplo para evitar regresiones."
+        ],
+        "verify": "La revisión identifica el control, su ubicación y una evidencia que otra persona puede comprobar.",
+        "access": "Documentación pública aplicable a distintos lenguajes y marcos. Puedes usarla en el navegador o como referencia al revisar código.",
+        "cost": "Lectura gratuita. El sitio publica la licencia de sus materiales. No exige una cuenta de IA.",
+        "improve": [
+          "Convierte los controles que aplican a tu proyecto en parte de la revisión de cambios."
+        ],
+        "limits": [
+          "Ajusta cada control al riesgo real y comprueba también la configuración del entorno donde despliegas."
+        ],
+        "sources": [
+          {
+            "title": "Índice de guías OWASP",
+            "url": "https://cheatsheetseries.owasp.org/",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Guía de autenticación",
+            "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "owasp",
+          "checklist",
+          "secretos",
+          "autenticación"
+        ],
+        "commands": []
+      },
+      {
+        "id": "virustotal-ai",
+        "name": "VirusTotal para agentes",
+        "group": "seguridad",
+        "kind": "Conector MCP de análisis defensivo",
+        "summary": "Consulta informes existentes sobre archivos, dominios o IP y muestra las señales que VirusTotal tiene registradas.",
+        "prepare": [
+          "Cuenta Google para VirusTotal AI y un cliente compatible",
+          "Un dominio público conocido o un hash público que ya tenga informe"
+        ],
+        "steps": [
+          "Abre la guía específica de tu cliente y concede solo lectura de informes.",
+          "Solicita el informe de un dominio público y confirma que la actividad indique una llamada al conector.",
+          "Revisa la fecha y el enlace del informe. Comprueba dónde se revoca el acceso."
+        ],
+        "verify": "Ves un informe real devuelto por el conector y puedes identificar la conexión que lo consultó.",
+        "access": "VirusTotal publica guías para Claude, Claude Code, Codex y Antigravity CLI, con estado de validación por cliente. OAuth usa cuenta Google. No se necesita clave de la API clásica de VirusTotal.",
+        "cost": "Cuotas gratuitas publicadas de 60 consultas por minuto y 1 000 por día UTC por cuenta OAuth o token. Hasta los informes repetidos cuentan. El cliente de IA puede tener sus propias cuotas.",
+        "improve": [
+          "Conserva el hash y la fecha de consulta para que otra persona pueda revisar la misma evidencia."
+        ],
+        "limits": [
+          "Empieza con lectura. Subir archivos y enviar URL usan otros permisos y el esquema de compartición estándar de VirusTotal.",
+          "Una detección es una señal que debes interpretar con la procedencia y el comportamiento del archivo."
+        ],
+        "sources": [
+          {
+            "title": "VirusTotal AI, clientes, cuotas y privacidad",
+            "url": "https://ai.virustotal.com/",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "virustotal",
+          "mcp",
+          "claude",
+          "codex",
+          "antigravity",
+          "hash sha-256"
+        ],
+        "commands": []
+      },
+      {
+        "id": "roadmap-ciberseguridad",
+        "name": "roadmap.sh Cyber Security",
+        "group": "seguridad",
+        "kind": "Mapa de estudio",
+        "summary": "Ordena los conceptos de seguridad en un mapa que puedes usar para preparar un plan de estudio.",
+        "prepare": [
+          "Navegador y un tema inicial como redes, autenticación o registros"
+        ],
+        "steps": [
+          "Abre el mapa y elige tres conceptos de redes o seguridad defensiva.",
+          "Anota para qué sirve cada concepto y aplícalo a un sistema ficticio.",
+          "Marca como siguiente tema aquello que todavía no puedas explicar."
+        ],
+        "verify": "Tienes un plan corto con orden, ejemplos propios y un criterio de avance.",
+        "access": "Mapa público en navegador. La cuenta sirve para guardar avance si quieres usar esa función.",
+        "cost": "Consulta pública del mapa sin clave de IA. Otros planes o materiales enlazados pueden tener condiciones propias.",
+        "improve": [
+          "Cruza los temas de autenticación con la lista de comprobación de OWASP cuando revises tu propia aplicación."
+        ],
+        "limits": [
+          "Revisa la actualidad de cada recurso externo y enfoca la ruta inicial en protección y monitoreo."
+        ],
+        "sources": [
+          {
+            "title": "Mapa público",
+            "url": "https://roadmap.sh/cyber-security",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "roadmap",
+          "plan de estudio",
+          "ciberseguridad"
+        ],
+        "commands": []
+      },
+      {
+        "id": "portswigger-academy",
+        "name": "PortSwigger Web Security Academy",
+        "group": "seguridad",
+        "kind": "Formación en seguridad web",
+        "summary": "Material de referencia de PortSwigger para reconocer problemas de autenticación y diseño de permisos en aplicaciones web.",
+        "prepare": [
+          "Navegador y una aplicación propia o ficticia para diseñar su lista de controles"
+        ],
+        "steps": [
+          "Escoge en el temario autenticación o control de acceso e identifica qué activo debe protegerse.",
+          "Dibuja dos roles en una app ficticia y escribe qué acción debe poder realizar cada uno.",
+          "Convierte cada regla en un criterio de aceptación, incluyendo la respuesta esperada al faltar permisos."
+        ],
+        "verify": "Tienes una lista de controles y criterios para revisar la autenticación y los roles de tu propia app.",
+        "access": "Material público en navegador. La prueba documental usa la aplicación ficticia. Una cuenta de la Academy permite llevar el progreso.",
+        "cost": "Academy se anuncia gratuita. Las licencias comerciales de Burp Suite son un producto aparte.",
+        "improve": [
+          "Contrasta tus criterios con las recomendaciones de autenticación y control de acceso de OWASP."
+        ],
+        "limits": [
+          "Usa esta ficha para diseño de controles y validación autorizada de tus aplicaciones."
+        ],
+        "sources": [
+          {
+            "title": "Temario y condiciones de la Academy",
+            "url": "https://portswigger.net/web-security",
+            "checked_at": "2026-11-22"
+          },
+          {
+            "title": "Lista defensiva de OWASP para autenticación",
+            "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "seguridad web",
+          "autenticación",
+          "control de acceso"
+        ],
+        "commands": []
+      },
+      {
+        "id": "mitre-attack-defensa",
+        "name": "MITRE ATT&CK",
+        "group": "seguridad",
+        "kind": "Base de conocimiento defensiva",
+        "summary": "Usa un vocabulario común para relacionar casos de detección con comportamientos observados y comprobar qué señales cubre tu equipo.",
+        "prepare": [
+          "Navegador y un registro de seguridad de ejemplo",
+          "Una hoja para anotar qué señal existe y qué falta"
+        ],
+        "steps": [
+          "Elige un caso defensivo, como una alerta de uso anómalo de cuenta.",
+          "Busca el identificador de la técnica que describe la señal y lee sus mitigaciones.",
+          "Documenta qué registro de tu ejemplo permite detectarla y qué revisión humana harías."
+        ],
+        "verify": "Cada relación entre señal y técnica trae identificador, fuente del registro y acción defensiva.",
+        "access": "Referencia pública usable por equipos con SIEM o con una hoja de cálculo. Para leer y preparar la matriz no necesitas una API.",
+        "cost": "Consulta web sin cargo. Cualquier coste de almacenamiento, SIEM o monitoreo depende de tu infraestructura.",
+        "improve": [
+          "Registra versión de la matriz y revisa cambios antes de actualizar una regla."
+        ],
+        "limits": [
+          "La terminología organiza observaciones. El contexto y la evidencia siguen siendo necesarios para concluir qué pasó."
+        ],
+        "sources": [
+          {
+            "title": "Base oficial ATT&CK",
+            "url": "https://attack.mitre.org/",
+            "checked_at": "2026-11-22"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "mitre",
+          "siem",
+          "registros",
+          "detección"
+        ],
         "commands": []
       }
     ],
@@ -3856,6 +4942,28 @@
         ],
         "verify": "El servicio responde y una restauración reproduce sus datos de prueba.",
         "limit": "Una VPS requiere mantenimiento continuo; si no quieres operarlo, compara una plataforma administrada."
+      },
+      {
+        "id": "ruta-revisar-seguridad-web",
+        "title": "Revisar permisos y alertas de mi aplicación",
+        "section": "servicios",
+        "goal": "Identifica qué puede ver cada rol, documenta controles y decide qué registros servirían para revisar un incidente.",
+        "steps": [
+          {
+            "resource": "owasp-cheat-sheets",
+            "text": "Elige un control y escribe qué debe poder hacer cada rol."
+          },
+          {
+            "resource": "portswigger-academy",
+            "text": "Convierte las reglas de autenticación y permisos en criterios de aceptación."
+          },
+          {
+            "resource": "mitre-attack-defensa",
+            "text": "Con un registro ficticio, relaciona una señal conocida con una acción de revisión."
+          }
+        ],
+        "verify": "Puedes mostrar cómo comprobar cada control y quién revisaría una alerta.",
+        "limit": "Haz el ejercicio con una app propia o ficticia y datos de muestra."
       }
     ]
   },
