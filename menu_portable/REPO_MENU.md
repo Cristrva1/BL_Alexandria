@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-22 · 961 repos curados · Documento 100% para IA.
+> Generado: 2026-11-22 · 968 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **961 repos** de IA y
+proyecto concreto. Tienes un menú curado de **968 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -414,7 +414,7 @@ Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 - `txtai` [L|hyb|E|+] — Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base d — tags: rag,python,library,mcp
 - `weaviate` [P|hyb|M|+] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y — tags: vector-db,rag,go,docker — alt: qdrant,milvus
 
-### 7. Entender código y comprobar su calidad (25)
+### 7. Entender código y comprobar su calidad (26)
 Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 
 - `apscheduler` [L|loc|M|?] — Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
@@ -431,6 +431,7 @@ Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 - `hishel` [L|loc|M|?] — Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizab
 - `lazygit` [A|loc|E|+] — Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestió — tags: cli,go,git,terminal
 - `npkill` [A|loc|E|?] — Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de
+- `open-code-review` [S|hyb|M|?] — Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de pr
 - `openai-python` [L|cld|E|+] — SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. — tags: code,python
 - `pre-commit` [A|loc|E|?] — Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y — tags: code,python,cli,git
 - `pybreaker` [L|loc|M|?] — Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comp
@@ -699,7 +700,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `vaultwarden` [P|loc|H|+] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
 - `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable — tags: automation,typescript,iot,self-hosted
 
-### 16. Analizar software y comprobar su seguridad (141)
+### 16. Analizar software y comprobar su seguridad (142)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 
 - `aflplusplus` [A|loc|-|+] — Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. — tags: security
@@ -798,6 +799,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `pacu` [A|loc|M|+] — Framework de explotación AWS (Rhino Security Labs) para auditorías ofensivas en cuentas de prueba dedicadas. — tags: security
 - `payloadsallthethings` [D|loc|E|?] — Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest. — tags: security,web,cheatsheet — alt: seclists
 - `peass-ng` [A|loc|E|?] — LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS — tags: security,privesc
+- `pi-alert-leiweibau` [P|loc|H|?] — Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno
 - `prowler` [A|loc|M|+] — Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos CIS: CLI Apache-2.0; Cloud/Priv — tags: security,cloud,aws
 - `pwndbg` [A|loc|M|+] — Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más. — tags: security
 - `pwntools` [L|loc|M|+] — Framework Python para CTF y desarrollo de exploits: tubos, packing, ROP y utilidades de binarios. — tags: security
@@ -970,11 +972,12 @@ Detalle: `REPO_MENU_cats/21-asistentes-e-investigaci-n-con-agentes.md`
 - `social-media-agent` [R|cld|M|+] — Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de pu — tags: asistentes,typescript
 - `storm` [R|hyb|M|+] — Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. — tags: research,agents,python — prov: openai — alt: gpt-researcher
 
-### 22. Infraestructura, despliegue y herramientas para agentes (27)
+### 22. Infraestructura, despliegue y herramientas para agentes (32)
 Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agentes.md`
 
 - `agent-desktop` [A|loc|M|+] — CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. — tags: infra,accessibility,accessibility-api,ai-agents,automation,cli,computer-use,computer-use-agent
 - `agent-protocol` [D|loc|E|?] — Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. — tags: agents,python
+- `agent-substrate` [P|loc|H|?] — Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separad
 - `appwrite` [P|loc|M|+] — Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenami — tags: backend,self-hosted,docker,mcp — alt: supabase
 - `caddy` [P|loc|E|+] — Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y — tags: web,go,self-hosted,server — alt: traefik
 - `casaos` [P|loc|H|+] — Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos doméstic — tags: infraestructura,server,go — alt: coolify
@@ -988,15 +991,19 @@ Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agent
 - `freedomain` [D|cld|E|?] — Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. — tags: recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
 - `frp` [A|loc|M|?] — Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTT — tags: network,go,self-hosted,cli
 - `headscale` [P|loc|M|?] — Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada Wir — tags: network,go,self-hosted,vpn — alt: netbird
+- `kiri` [A|loc|M|?] — Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio cont
 - `libretranslate` [P|loc|M|+] — Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Ar — tags: traducción,argos,autoalojado — prov: local
 - `masterdnsvpn` [A|hyb|M|+] — Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. — tags: redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
 - `nemoclaw` [P|hyb|H|+] — Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. — tags: agents,security,typescript — alt: sandbox
 - `netbird` [P|loc|M|+] — Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nu — tags: network,go,self-hosted,vpn — alt: headscale
 - `nodeterm` [A|loc|M|+] — Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. — tags: infra,adhd,agent-orchestration,ai-agents,canvas,claude-code,codex,coding-agents
+- `pangolin` [P|hyb|H|?] — Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas
 - `portainer` [P|loc|E|?] — Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition) — tags: containers,go,self-hosted,docker
 - `sandbox` [P|hyb|M|+] — Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un m — tags: agents,automation,python,docker — alt: nemoclaw,e2b
+- `screen-relay` [A|loc|H|?] — Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio persona
 - `shepherd` [L|loc|M|+] — Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus — tags: infra,framework,python
 - `supabase` [P|loc|H|?] — Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplic — tags: infraestructura,server,typescript — alt: appwrite
+- `tailcat` [A|hyb|M|?] — Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremo
 - `traefik` [P|loc|M|+] — Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticame — tags: network,go,self-hosted,server — alt: caddy
 - `uptime-kuma` [P|loc|E|+] — Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 c — tags: monitoring,self-hosted,javascript,docker
 - `wg-easy` [P|loc|E|+] — La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadíst — tags: network,self-hosted,docker,vpn

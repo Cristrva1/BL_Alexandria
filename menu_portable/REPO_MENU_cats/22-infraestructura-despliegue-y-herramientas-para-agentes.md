@@ -65,6 +65,35 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `langgraphjs`, `deepagents`
 
+## `agent-substrate`
+role=platform · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba no llama a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función descrita no depende de un modelo de IA.
+- Coste: El coste depende del proveedor o la ruta. El ejemplo Counter no usa modelos, suscripciones de IA ni claves de proveedor. Kubernetes gestionado, almacenamiento y modelos de otras cargas se pagan aparte.
+- Equipo: Preparación según la ruta elegida. Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind.
+**Repo:** https://github.com/agent-substrate/substrate
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local.
+**Qué comprobar:** El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `appwrite`
 role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=backend,self-hosted,docker,mcp
 
@@ -469,6 +498,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `caddy`, `grafana`, `uptime-kuma`
 **Alternativas (elige una):** `netbird`
 
+## `kiri`
+role=app · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker.
+**Stack:** Rust, Cargo.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba no llama a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función descrita no depende de un modelo de IA.
+- Coste: El coste depende del proveedor o la ruta. Código Apache-2.0. El uso local no llama a ningún modelo; almacenamiento, hardware y opciones remotas se evalúan aparte.
+- Equipo: Preparación según la ruta elegida. En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto.
+**Repo:** https://github.com/libracoder/kiri
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/libracoder/kiri/releases/tag/v0.2.2
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles.
+**Qué comprobar:** La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `libretranslate`
 role=platform · exec=local · setup=medium · mcp=True · prov=local · tags=traducción,argos,autoalojado
 
@@ -621,6 +679,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
 
+## `pangolin`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo.
+**Stack:** TypeScript, Dockerfile, Makefile, compose.yaml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba no llama a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función descrita no depende de un modelo de IA.
+- Coste: El coste depende del proveedor o la ruta. Community Edition se puede autoalojar sin pagar una licencia comercial por esa edición; VPS, dominio y operación pueden costar. Cloud y Enterprise tienen condiciones aparte. El proxy de prueba no usa IA.
+- Equipo: Preparación según la ruta elegida. Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración.
+**Repo:** https://github.com/fosrl/pangolin
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.pangolin.net/self-host/quick-install
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso.
+**Qué comprobar:** La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `portainer`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=containers,go,self-hosted,docker
 
@@ -687,6 +774,35 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openhands`, `browser-use`, `deer-flow`, `computer-use-preview`
 **Alternativas (elige una):** `nemoclaw`, `e2b`
 
+## `screen-relay`
+role=app · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal.
+**Stack:** C++, Dockerfile, Makefile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba no llama a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función descrita no depende de un modelo de IA.
+- Coste: El coste depende del proveedor o la ruta. El visor local no necesita un modelo; consume memoria y almacenamiento. Una máquina alquilada, Vercel Sandbox o un agente externo se pagan por separado.
+- Equipo: Preparación según la ruta elegida. Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor.
+**Repo:** https://github.com/vercel-labs/screen-relay
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales.
+**Qué comprobar:** El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `shepherd`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=infra,framework,python
 
@@ -747,6 +863,35 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `pgvector`, `activepieces`, `coolify`
 **Alternativas (elige una):** `appwrite`
+
+## `tailcat`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos.
+**Stack:** Go, Makefile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba no llama a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función descrita no depende de un modelo de IA.
+- Coste: El coste depende del proveedor o la ruta. Código BSD-3-Clause y sin IA. El proyecto describe relés DERP gratuitos con límites; un relé propio requiere infraestructura.
+- Equipo: Preparación según la ruta elegida. Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé.
+**Repo:** https://github.com/tailscale/tailcat
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Enviar una línea de texto ficticio entre dos equipos propios.; Comprobar si un laboratorio de red local consigue una conexión directa o vía relé.
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Elige solo el ejemplo de texto entre terminales; cierra ambas instancias tras recibir la línea.
+**Qué comprobar:** La misma línea aparece en la otra terminal sin exponer directorios ni servicios.
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `traefik`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=network,go,self-hosted,server

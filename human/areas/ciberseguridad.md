@@ -4,7 +4,7 @@
 
 Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
 
-152 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
+153 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
 
 ## Opciones para empezar
 
@@ -157,7 +157,7 @@ Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -170,6 +170,7 @@ SIEM, IDS y bloqueo de ataques en sistemas propios.
 | [osquery](../fichas/osquery.md) | Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Coraza](../fichas/coraza.md) | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP CRS](../fichas/coreruleset.md) | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. | Sin clave propia de API de IA en la ruta básica |
+| [Pi.Alert](../fichas/pi-alert-leiweibau.md) | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido. | Sin clave propia de API de IA en la ruta básica |
 | [Security Onion](../fichas/securityonion.md) | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. | Sin clave propia de API de IA en la ruta básica |
 | [Shuffle](../fichas/shuffle.md) | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. | Sin clave propia de API de IA en la ruta básica |
 | [Sigma](../fichas/sigma.md) | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. | Sin clave propia de API de IA en la ruta básica |

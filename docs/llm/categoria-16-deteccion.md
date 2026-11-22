@@ -1,6 +1,6 @@
 # Alexandría para agentes · Detección, SIEM e IDS
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `deteccion`. 15 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `deteccion`. 16 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=deteccion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -33,6 +33,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `securityonion` | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y… | 4 Experto | 52 | Elastic-2.0 (source-available) | sin grupo |
 | `detection-rules` | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 48 | Elastic-2.0 (source-available) | sin grupo |
 | `loki` | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints… | 1 Básico | 41 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pi-alert-leiweibau` | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece… | 3 Avanzado | — | GPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -200,6 +201,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Neo23x0/Loki/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba. Éxito: Hits de IOC en consola.
 - **Combina con:** `yara` [16/reversing], `misp` [16/inteligencia-amenazas]
+
+### Pi.Alert (`pi-alert-leiweibau`)
+
+- **Repo:** https://github.com/leiweibau/Pi.Alert · GPL-3.0 · nivel 3 · —/100
+- **Qué es:** Monitor de dispositivos para una red propia que muestra cambios en su interfaz web.
+- **Cuándo elegirlo:** Casos: Identificar un dispositivo nuevo en una red de prueba.; Verificar si se registra la desconexión de un dispositivo ya conocido.
+- **Requisitos:** nivel 3: preparación pesada; PHP; hardware prerequisites; API de IA: no; Equipo Debian compatible en la red propia, acceso administrativo para preparar el servidor y un segmento de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md
+- **Primera prueba propuesta (no ejecutada):** Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido. Éxito: El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada.
+- **Riesgos y avisos:** El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento….
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

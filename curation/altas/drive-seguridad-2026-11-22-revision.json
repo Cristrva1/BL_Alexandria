@@ -1,0 +1,967 @@
+{
+ "checked_at": "2026-11-22",
+ "previous_report": "reports/drive-2026-11-22.md",
+ "reviewed": 23,
+ "added": 7,
+ "excluded": 16,
+ "withheld_link_count": 1,
+ "records": [
+  {
+   "gh": "agent-substrate/substrate",
+   "github_id": 1238047523,
+   "decision": "added",
+   "id": "agent-substrate",
+   "reason": "La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de terceros; el modelo de amenazas no acredita aislamiento en producción.",
+   "checked_commit": "20778a6dbb01f13024642851bb592bf67c9fec05",
+   "release": {
+    "version": "v1.0.1",
+    "url": "https://github.com/agent-substrate/substrate/releases/tag/v1.0.1",
+    "assets": 8,
+    "with_digest": 8
+   },
+   "commit_signature_verified_by_github": true,
+   "license_source": "https://github.com/agent-substrate/substrate/blob/main/LICENSE",
+   "readme_blob_sha": "4832f4b9302c24ea4d7329a83a0ac754fe170723",
+   "permission_sources": [
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/security/threat-model.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/network-egress.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/authorization.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "alibaba/open-code-review",
+   "github_id": 1241960226,
+   "decision": "added",
+   "id": "open-code-review",
+   "reason": "GHSA-wwg6-qfxw-xffj afecta versiones anteriores a 1.11.1; el tag 1.14.1 incluye la corrección. Usa solo repositorios propios o de confianza. Si el modelo es remoto, el cliente puede enviar fragmentos del código. El ajuste de telemetría de la CLI está apagado por defecto.",
+   "checked_commit": "284ff013f0705ae6cac4c8dfbffa2f2551886d56",
+   "release": {
+    "version": "v1.14.1",
+    "url": "https://github.com/alibaba/open-code-review/releases/tag/v1.14.1",
+    "assets": 7,
+    "with_digest": 7
+   },
+   "commit_signature_verified_by_github": true,
+   "license_source": "https://github.com/alibaba/open-code-review/blob/main/LICENSE",
+   "readme_blob_sha": "8728015fc50b50da660a793da84694df9652aa80",
+   "permission_sources": [
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/.github/SECURITY.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/package.json",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/pages/src/content/docs/en/telemetry.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md"
+   ],
+   "advisories": [
+    {
+     "id": "GHSA-wwg6-qfxw-xffj",
+     "severity": "medium",
+     "url": "https://github.com/alibaba/open-code-review/security/advisories/GHSA-wwg6-qfxw-xffj",
+     "versions": [
+      [
+       "github.com/alibaba/open-code-review",
+       "< 1.11.1",
+       "1.11.1"
+      ]
+     ]
+    }
+   ],
+   "package_queries": [
+    "npm:@alibaba-group/open-code-review:reviewed",
+    "npm:@alibaba-group/open-code-review:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "d0uble3L/CyberSHIELD-Labs",
+   "github_id": 732821286,
+   "decision": "excluded",
+   "id": null,
+   "reason": "Material de práctica ofensiva; no se propone instalarlo. La identidad y licencia no equivalen a una recomendación.",
+   "checked_commit": "762c206f72318604abb460280e98eb373ea03f66",
+   "release": null,
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/d0uble3L/CyberSHIELD-Labs/blob/master/LICENSE",
+   "readme_blob_sha": "a1b5e4a9ab4066b4a4dcb9fed910a6536c954454",
+   "permission_sources": [],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "edison-land/paragravity",
+   "github_id": 1381229689,
+   "decision": "excluded",
+   "id": null,
+   "reason": "Lanza Antigravity con perfiles separados por ruta y usa el inicio de sesión de Google. Esa separación de datos no acredita una barrera de permisos frente a procesos del mismo usuario. Hay v1.2.0 con digest para su activo; falta validar el artefacto y sus efectos sobre sesiones.",
+   "checked_commit": "d553e1815587c636ac9dae1bbf3ae274ea49b0ea",
+   "release": {
+    "version": "v1.2.0",
+    "url": "https://github.com/edison-land/paragravity/releases/tag/v1.2.0",
+    "assets": 1,
+    "with_digest": 1
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/edison-land/paragravity/blob/main/LICENSE",
+   "readme_blob_sha": "d0f1162bd4f3b9f643ed59545be94c80d4bf78a2",
+   "permission_sources": [
+    "https://github.com/edison-land/paragravity/blob/d553e1815587c636ac9dae1bbf3ae274ea49b0ea/README.md",
+    "https://github.com/edison-land/paragravity/blob/d553e1815587c636ac9dae1bbf3ae274ea49b0ea/install.sh"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "fosrl/pangolin",
+   "github_id": 863835427,
+   "decision": "added",
+   "id": "pangolin",
+   "reason": "Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión. Si activas Gerbil, su contenedor solicita NET_ADMIN. Mantén el token de instalación privado y revisa por separado las versiones de Gerbil, Traefik y clientes.",
+   "checked_commit": "0e011f57f751c77a906eba7fde3cd8765290ab01",
+   "release": {
+    "version": "1.27.1",
+    "url": "https://github.com/fosrl/pangolin/releases/tag/1.27.1",
+    "assets": 2,
+    "with_digest": 2
+   },
+   "commit_signature_verified_by_github": true,
+   "license_source": "https://github.com/fosrl/pangolin/blob/main/LICENSE",
+   "readme_blob_sha": "d79ee6f0166a75d1e40774cd9a1a1b4bf72962da",
+   "permission_sources": [
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/LICENSE",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/SECURITY.md",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config.go",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/config.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/crowdsec/docker-compose.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/crowdsec/dynamic_config.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/crowdsec/traefik_config.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/docker-compose.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/privateConfig.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/traefik/dynamic_config.yml",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/traefik/traefik_config.yml"
+   ],
+   "advisories": [
+    {
+     "id": "GHSA-3cxv-w5ph-7p6h",
+     "severity": "high",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cxv-w5ph-7p6h",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-9784-q2hc-2qqq",
+     "severity": "high",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-9784-q2hc-2qqq",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-v6q2-c45v-8vx8",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-v6q2-c45v-8vx8",
+     "versions": [
+      [
+       "pangolin",
+       ">= 1.19.0, < 1.26.0",
+       "1.26.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-hpcv-689w-jrg3",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-hpcv-689w-jrg3",
+     "versions": [
+      [
+       "pangolin",
+       ">= 1.10.0, < 1.26.0",
+       "1.26.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-w92q-9g55-f4r2",
+     "severity": "high",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-w92q-9g55-f4r2",
+     "versions": [
+      [
+       "pangolin",
+       ">= 1.10.0, < 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-fhv5-xx8r-wxfg",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-fhv5-xx8r-wxfg",
+     "versions": [
+      [
+       "pangolin",
+       ">= 1.0.0-beta.9, < 1.26.0",
+       "1.26.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-3cfx-v2f2-3mqq",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cfx-v2f2-3mqq",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-9vcq-r7wr-9r3r",
+     "severity": "medium",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-9vcq-r7wr-9r3r",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-5ph5-x9xv-86fv",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-5ph5-x9xv-86fv",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.22.0",
+       "1.22.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-5772-vhpw-ppr8",
+     "severity": "high",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-5772-vhpw-ppr8",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-m664-jx49-xhw7",
+     "severity": "medium",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-m664-jx49-xhw7",
+     "versions": [
+      [
+       "pangolin",
+       ">= 1.0.0-beta.9, < 1.25.0",
+       "1.25.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-5h3v-3645-78xj",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-5h3v-3645-78xj",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.21.0",
+       "1.21.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-9xxh-cx3p-fx3m",
+     "severity": "critical",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-9xxh-cx3p-fx3m",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-3pr6-pcvv-9jrp",
+     "severity": "high",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-3pr6-pcvv-9jrp",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-j32m-3vr4-9ghw",
+     "severity": "medium",
+     "url": "https://github.com/fosrl/pangolin/security/advisories/GHSA-j32m-3vr4-9ghw",
+     "versions": [
+      [
+       "pangolin",
+       "< 1.27.0",
+       "1.27.0"
+      ]
+     ]
+    }
+   ],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "gosom/google-maps-scraper",
+   "github_id": 631285104,
+   "decision": "excluded",
+   "id": null,
+   "reason": "El extractor recoge datos de Maps y admite proxies con credenciales. El permiso bajo la licencia MIT del programa no concede derechos sobre los datos de Maps. Google publica restricciones de extracción para su plataforma; no se identificó una ruta apropiada para recomendarlo en el catálogo.",
+   "checked_commit": "038b601a44792dc86ff44bc273633d934afd4359",
+   "release": {
+    "version": "v1.19.2",
+    "url": "https://github.com/gosom/google-maps-scraper/releases/tag/v1.19.2",
+    "assets": 6,
+    "with_digest": 6
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/gosom/google-maps-scraper/blob/main/LICENSE",
+   "readme_blob_sha": "973c3b0ab59a4a4be0f6afaa0efbc150a0c7052d",
+   "permission_sources": [
+    "https://github.com/gosom/google-maps-scraper/blob/038b601a44792dc86ff44bc273633d934afd4359/README.md",
+    "https://github.com/gosom/google-maps-scraper/blob/038b601a44792dc86ff44bc273633d934afd4359/SECURITY.md",
+    "https://github.com/gosom/google-maps-scraper/blob/038b601a44792dc86ff44bc273633d934afd4359/Dockerfile",
+    "https://cloud.google.com/maps-platform/terms"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "interplains/Zero-Breach-Toolkit",
+   "github_id": 1433297111,
+   "decision": "excluded",
+   "id": null,
+   "reason": "El release publica manifiestos firmados con GPG, pero no se verificaron la clave por un canal independiente ni los binarios. La herramienta puede pedir acceso completo al disco en macOS y su política distingue el guard de la aplicación de un aislamiento del sistema. No se recomienda usarlo sobre respaldos personales.",
+   "checked_commit": "fe32f95446c320a5f5c14cca92ca432ca91ed451",
+   "release": {
+    "version": "v3.0.2",
+    "url": "https://github.com/interplains/Zero-Breach-Toolkit/releases/tag/v3.0.2",
+    "assets": 11,
+    "with_digest": 11
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/interplains/Zero-Breach-Toolkit/blob/main/LICENSE",
+   "readme_blob_sha": "02538f7f9615ded7e698a55b435815a7f7a322d3",
+   "permission_sources": [
+    "https://github.com/interplains/Zero-Breach-Toolkit/blob/fe32f95446c320a5f5c14cca92ca432ca91ed451/README.md",
+    "https://github.com/interplains/Zero-Breach-Toolkit/blob/fe32f95446c320a5f5c14cca92ca432ca91ed451/SECURITY.md",
+    "https://github.com/interplains/Zero-Breach-Toolkit/blob/fe32f95446c320a5f5c14cca92ca432ca91ed451/scan/README.md",
+    "https://github.com/interplains/Zero-Breach-Toolkit/blob/fe32f95446c320a5f5c14cca92ca432ca91ed451/PRIVACY.md"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "leiweibau/Pi.Alert",
+   "github_id": 494412947,
+   "decision": "added",
+   "id": "pi-alert-leiweibau",
+   "reason": "El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento GHSA-66mg-wpcq-2phq fija v2026-08-14 como corregida. La etiqueta v2026-10-16 la incorpora. No publiques la interfaz en internet.",
+   "checked_commit": "850e40a90871816161559e136e703cf68c1c994a",
+   "release": {
+    "version": "v2026-10-16",
+    "url": "https://github.com/leiweibau/Pi.Alert/releases/tag/v2026-10-16",
+    "assets": 0,
+    "with_digest": 0
+   },
+   "commit_signature_verified_by_github": true,
+   "license_source": "https://github.com/leiweibau/Pi.Alert/blob/main/LICENSE.txt",
+   "readme_blob_sha": "61c55ab950979eb4888d0cfc437c3895c3924249",
+   "permission_sources": [
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/NETWORK_RELATIONSHIP.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/install/pialert_install.sh"
+   ],
+   "advisories": [
+    {
+     "id": "GHSA-vmjp-664r-67rw",
+     "severity": "high",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vmjp-664r-67rw",
+     "versions": [
+      [
+       "leiweibau/Pi.Alert",
+       "< v2026-08-14",
+       "v2026-08-14"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-f58p-mp38-66qv",
+     "severity": "high",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-f58p-mp38-66qv",
+     "versions": [
+      [
+       "leiweibau/Pi.Alert",
+       "< v2026-08-14",
+       "v2026-08-14"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-ff6r-j7j6-gfx8",
+     "severity": "medium",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-ff6r-j7j6-gfx8",
+     "versions": [
+      [
+       "",
+       "< v2026-08-14",
+       "v2026-08-14"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-vp5h-q268-p65m",
+     "severity": "medium",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vp5h-q268-p65m",
+     "versions": [
+      [
+       "",
+       "< v2026-08-14",
+       "v2026-08-14"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-66mg-wpcq-2phq",
+     "severity": "high",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-66mg-wpcq-2phq",
+     "versions": [
+      [
+       "",
+       "< v2026-08-14",
+       "v2026-08-14"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-xg85-f8qw-7c5f",
+     "severity": "critical",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-xg85-f8qw-7c5f",
+     "versions": [
+      [
+       "Pi.Alert",
+       "all",
+       "2026-05-07"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-r59g-5wf9-f7vv",
+     "severity": "critical",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-r59g-5wf9-f7vv",
+     "versions": [
+      [
+       "Pi.Alert",
+       "all",
+       "2026-05-07"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-m929-j7w8-334j",
+     "severity": "high",
+     "url": "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-m929-j7w8-334j",
+     "versions": [
+      [
+       "",
+       ">=2024-06-29",
+       "2026-05-07"
+      ]
+     ]
+    }
+   ],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "libracoder/kiri",
+   "github_id": 1443186633,
+   "decision": "added",
+   "id": "kiri",
+   "reason": "Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales. No uses esta ficha para alojar imágenes de origen desconocido ni abrir túneles públicos.",
+   "checked_commit": "686bffa5f38ba6ecc3d086c36ec7148cd7fb976a",
+   "release": {
+    "version": "v0.2.2",
+    "url": "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+    "assets": 16,
+    "with_digest": 16
+   },
+   "commit_signature_verified_by_github": true,
+   "license_source": "https://github.com/libracoder/kiri/blob/main/LICENSE",
+   "readme_blob_sha": "82a2cea073f0e04932af3d9ebd35113e3297052a",
+   "permission_sources": [
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/SECURITY.md",
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/crates/kiri/src/daemon/seccomp_docker_default.json"
+   ],
+   "advisories": [
+    {
+     "id": "GHSA-wpff-823r-3w23",
+     "severity": "high",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-wpff-823r-3w23",
+     "versions": [
+      [
+       "kiri",
+       "<= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-qf7g-72mh-h4fp",
+     "severity": "low",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-qf7g-72mh-h4fp",
+     "versions": [
+      [
+       "kiri",
+       "<= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-59gg-7j35-5826",
+     "severity": "high",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-59gg-7j35-5826",
+     "versions": [
+      [
+       "kiri",
+       "<= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-4g46-535w-4v45",
+     "severity": "medium",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-4g46-535w-4v45",
+     "versions": [
+      [
+       "kiri",
+       ">= 0.1.14, <= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-pcqf-qg5g-c5j8",
+     "severity": "critical",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-pcqf-qg5g-c5j8",
+     "versions": [
+      [
+       "kiri",
+       "<= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-rprm-mrvg-qp96",
+     "severity": "high",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-rprm-mrvg-qp96",
+     "versions": [
+      [
+       "kiri",
+       "<= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    },
+    {
+     "id": "GHSA-4xv7-3m63-r6jv",
+     "severity": "medium",
+     "url": "https://github.com/libracoder/kiri/security/advisories/GHSA-4xv7-3m63-r6jv",
+     "versions": [
+      [
+       "kiri",
+       "<= 0.2.1",
+       "0.2.2"
+      ]
+     ]
+    }
+   ],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "lihanyu81/polymarket_lp_tool",
+   "github_id": 1198550148,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La documentación describe claves de mercado, ajustes de órdenes y controles de Telegram. No se identificó un archivo de licencia ni un modo de prueba verificado sin acceso a fondos.",
+   "checked_commit": "32f779950de360d4a77187db89e0a1a1500da5d3",
+   "release": null,
+   "commit_signature_verified_by_github": null,
+   "license_source": null,
+   "readme_blob_sha": "f5933b1ee354f36ffaeccf511a0c43b89f1cafd7",
+   "permission_sources": [
+    "https://github.com/lihanyu81/polymarket_lp_tool/blob/32f779950de360d4a77187db89e0a1a1500da5d3/README.md",
+    "https://github.com/lihanyu81/polymarket_lp_tool/blob/32f779950de360d4a77187db89e0a1a1500da5d3/README_EN.md",
+    "https://github.com/lihanyu81/polymarket_lp_tool/blob/32f779950de360d4a77187db89e0a1a1500da5d3/passive_liquidity/config_manager.py"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "lm-sys/RouteLLM",
+   "github_id": 809559722,
+   "decision": "excluded",
+   "id": null,
+   "reason": "Último commit de la rama principal: 2024-08-10, sin release estable en GitHub. La guía pide credenciales de proveedor y algunos enrutadores requieren embeddings de OpenAI. Se mantiene como antecedente de investigación y no como receta de instalación.",
+   "checked_commit": "0b64fdafe049e596a3f5657c219329f24af24198",
+   "release": null,
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/lm-sys/RouteLLM/blob/main/LICENSE",
+   "readme_blob_sha": "45cbe52c3d430869c3b0e7b07dadba7628bc17e6",
+   "permission_sources": [
+    "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/README.md",
+    "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/config.example.yaml",
+    "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/pyproject.toml"
+   ],
+   "advisories": [],
+   "package_queries": [
+    "pip:routellm:reviewed",
+    "pip:routellm:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "n2ns/antigravity-panel",
+   "github_id": 1113373470,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La extensión usa datos de cuota y contexto, puede borrar caché y autoaceptar acciones. La función de mensajes de commit puede enviar el diff al endpoint elegido. La v2.8.5 tiene VSIX con digest, pero no se acreditó la equivalencia del paquete con el código ni una barrera para sus funciones sensibles.",
+   "checked_commit": "5caad5a634c053abce5da3eaacf24c0bf8270d74",
+   "release": {
+    "version": "v2.8.5",
+    "url": "https://github.com/n2ns/antigravity-panel/releases/tag/v2.8.5",
+    "assets": 1,
+    "with_digest": 1
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/n2ns/antigravity-panel/blob/main/LICENSE",
+   "readme_blob_sha": "92a1817be570fb94cbef92faa7537958788c309f",
+   "permission_sources": [
+    "https://github.com/n2ns/antigravity-panel/blob/5caad5a634c053abce5da3eaacf24c0bf8270d74/README.md",
+    "https://github.com/n2ns/antigravity-panel/blob/5caad5a634c053abce5da3eaacf24c0bf8270d74/package.json",
+    "https://github.com/n2ns/antigravity-panel/blob/5caad5a634c053abce5da3eaacf24c0bf8270d74/docs/FEATURES.md",
+    "https://github.com/n2ns/antigravity-panel/blob/5caad5a634c053abce5da3eaacf24c0bf8270d74/src/shared/config/config_manager.ts"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "openai/codex-security",
+   "github_id": 1299769220,
+   "decision": "excluded",
+   "id": null,
+   "reason": "Identidad oficial y release localizado. Se mantiene fuera de la selección por combinar revisión defensiva con validación automatizada y ejecución de herramientas; no se recomienda un flujo de validación ofensiva.",
+   "checked_commit": "35373239d9319e5f5ada1f135f13a7da5c01c909",
+   "release": {
+    "version": "npm-v0.10.1",
+    "url": null,
+    "assets": 1,
+    "with_digest": 1
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/openai/codex-security/blob/main/LICENSE",
+   "readme_blob_sha": "985e1e45098f5a02d7ef3932ae164823e9435acb",
+   "permission_sources": [],
+   "advisories": [],
+   "package_queries": [
+    "npm:@openai/codex-security:reviewed",
+    "npm:@openai/codex-security:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "openclaw/wacli",
+   "github_id": 1115165326,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La sesión vinculada y el índice de mensajes se guardan localmente en bases separadas. El modo de lectura reduce cambios, pero no evita la custodia de una credencial de dispositivo ni acredita aprobación de WhatsApp. La v0.26.1 no cambia este alcance.",
+   "checked_commit": "81ae2b4ff6f13960f20716eca01a3b31858944f9",
+   "release": {
+    "version": "v0.26.1",
+    "url": "https://github.com/openclaw/wacli/releases/tag/v0.26.1",
+    "assets": 10,
+    "with_digest": 10
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/openclaw/wacli/blob/main/LICENSE",
+   "readme_blob_sha": "8ded15b9f3449a017367f08cd806789b1a29e198",
+   "permission_sources": [
+    "https://github.com/openclaw/wacli/blob/81ae2b4ff6f13960f20716eca01a3b31858944f9/README.md",
+    "https://github.com/openclaw/wacli/blob/81ae2b4ff6f13960f20716eca01a3b31858944f9/docs/auth.md",
+    "https://github.com/openclaw/wacli/blob/81ae2b4ff6f13960f20716eca01a3b31858944f9/docs/profile.md",
+    "https://github.com/openclaw/wacli/blob/81ae2b4ff6f13960f20716eca01a3b31858944f9/cmd/wacli/auth_status_readonly.go",
+    "https://github.com/openclaw/wacli/blob/81ae2b4ff6f13960f20716eca01a3b31858944f9/internal/app/session_state.go",
+    "https://www.whatsapp.com/legal/terms-of-service"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "reacherhq/check-if-email-exists",
+   "github_id": 89359792,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La ruta descrita puede consultar servidores SMTP externos y enviarles la dirección consultada. No acredita consentimiento ni exactitud de verificación; el tag hallado es beta. Queda fuera de una recomendación para listas de terceros.",
+   "checked_commit": "906dc8a9b12728ac04fff4e8c4568f336c7e0c1f",
+   "release": {
+    "version": "v0.11.12-beta.0",
+    "url": "https://github.com/reacherhq/check-if-email-exists/releases/tag/v0.11.12-beta.0",
+    "assets": 4,
+    "with_digest": 4
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/reacherhq/check-if-email-exists/blob/master/LICENSE.md",
+   "readme_blob_sha": "5967c528f6be025f3b1f6e4f92e08e8a310c99f1",
+   "permission_sources": [
+    "https://github.com/reacherhq/check-if-email-exists/blob/906dc8a9b12728ac04fff4e8c4568f336c7e0c1f/README.md",
+    "https://github.com/reacherhq/check-if-email-exists/blob/906dc8a9b12728ac04fff4e8c4568f336c7e0c1f/backend/README.md",
+    "https://github.com/reacherhq/check-if-email-exists/blob/906dc8a9b12728ac04fff4e8c4568f336c7e0c1f/cli/README.md"
+   ],
+   "advisories": [],
+   "package_queries": [
+    "rust:check-if-email-exists:reviewed",
+    "rust:check-if-email-exists:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "recogardtech/AutoPilotPM",
+   "github_id": 1393228406,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La documentación incluye conexión a cuentas, credenciales, órdenes y transacciones. Simulación y controles declarados no acreditan que los efectos queden aislados; no se encontró release estable publicado en GitHub.",
+   "checked_commit": "f3612cc3188802d722bc047d037abb69fabf97e8",
+   "release": null,
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/recogardtech/AutoPilotPM/blob/main/LICENSE",
+   "readme_blob_sha": "e49daa7363e1dbd0995cc6d9f2d6451d9d9fcf0f",
+   "permission_sources": [
+    "https://github.com/recogardtech/AutoPilotPM/blob/f3612cc3188802d722bc047d037abb69fabf97e8/README.md",
+    "https://github.com/recogardtech/AutoPilotPM/blob/f3612cc3188802d722bc047d037abb69fabf97e8/docs/AUTHENTICATION.md",
+    "https://github.com/recogardtech/AutoPilotPM/blob/f3612cc3188802d722bc047d037abb69fabf97e8/docs/TELEMETRY.md",
+    "https://github.com/recogardtech/AutoPilotPM/blob/f3612cc3188802d722bc047d037abb69fabf97e8/SECURITY.md",
+    "https://github.com/recogardtech/AutoPilotPM/blob/f3612cc3188802d722bc047d037abb69fabf97e8/docker-compose.yml"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "remoteintech/remote-jobs",
+   "github_id": 44150497,
+   "decision": "excluded",
+   "id": null,
+   "reason": "El archivo LICENSE distingue código bajo ISC y componentes MIT y SIL. La consulta del directorio no requiere permisos de aplicación; aun así es un listado laboral, fuera del alcance de herramientas de Alexandría.",
+   "checked_commit": "155939ad935d22afa8edbaaf0770b99f9d0dbf0d",
+   "release": null,
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/remoteintech/remote-jobs/blob/main/LICENSE",
+   "readme_blob_sha": "90e4aeabbb4e6c906d98f92900e6c6e4d108dfc9",
+   "permission_sources": [
+    "https://github.com/remoteintech/remote-jobs/blob/155939ad935d22afa8edbaaf0770b99f9d0dbf0d/README.md",
+    "https://github.com/remoteintech/remote-jobs/blob/155939ad935d22afa8edbaaf0770b99f9d0dbf0d/LICENSE",
+    "https://github.com/remoteintech/remote-jobs/blob/155939ad935d22afa8edbaaf0770b99f9d0dbf0d/SECURITY.md"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "tailscale/tailcat",
+   "github_id": 880414192,
+   "decision": "added",
+   "id": "tailcat",
+   "reason": "GHSA-w496-344h-g2vv afecta al modo de recepción de 0.4.0 y se corrigió en 0.5.0; 0.7.0 incluye cambios posteriores. El fabricante describe el producto como experimental y pensado para extremos de confianza. Esta ficha no recomienda shells, directorios de escritura ni nodos de salida.",
+   "checked_commit": "15ab9e68bfc6534a61797d7af28cedd42b54a3a5",
+   "release": {
+    "version": "v0.7.0",
+    "url": "https://github.com/tailscale/tailcat/releases/tag/v0.7.0",
+    "assets": 12,
+    "with_digest": 12
+   },
+   "commit_signature_verified_by_github": false,
+   "license_source": "https://github.com/tailscale/tailcat/blob/main/LICENSE",
+   "readme_blob_sha": "40ef3805ed6c024191491026c349508aea3ad7f8",
+   "permission_sources": [
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/SECURITY.md"
+   ],
+   "advisories": [
+    {
+     "id": "GHSA-w496-344h-g2vv",
+     "severity": "low",
+     "url": "https://github.com/tailscale/tailcat/security/advisories/GHSA-w496-344h-g2vv",
+     "versions": [
+      [
+       "",
+       "0.4.0",
+       "0.5.0"
+      ]
+     ]
+    }
+   ],
+   "package_queries": [
+    "go:github.com/tailscale/tailcat:reviewed",
+    "go:github.com/tailscale/tailcat:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "tarpboi/Prediction-Markets-Trading-Bot-Toolkits",
+   "github_id": 1066504944,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La versión 0.2.0 publica hashes y declara ejecución en seco por defecto. Tiene un camino real de trading y configuración de credenciales; el valor por defecto no acredita que toda estrategia o integración permanezca en simulación.",
+   "checked_commit": "71c0e4ff9e299f9a4d81757fd6b15cf54da69b38",
+   "release": {
+    "version": "v0.2.0",
+    "url": "https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/releases/tag/v0.2.0",
+    "assets": 10,
+    "with_digest": 10
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/blob/main/LICENSE",
+   "readme_blob_sha": "26eee66c3e05f7803e17009b2225166aed0ea9cd",
+   "permission_sources": [
+    "https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/blob/71c0e4ff9e299f9a4d81757fd6b15cf54da69b38/README.md",
+    "https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/blob/71c0e4ff9e299f9a4d81757fd6b15cf54da69b38/SECURITY.md",
+    "https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/blob/71c0e4ff9e299f9a4d81757fd6b15cf54da69b38/config.yaml.example",
+    "https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/blob/71c0e4ff9e299f9a4d81757fd6b15cf54da69b38/src/config.rs"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  },
+  {
+   "gh": "Tencent/BrowserSkill",
+   "github_id": 1276665883,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La configuración de la extensión declara debugger y acceso a todos los sitios. Los perfiles permiten separar sesiones; no reducen esos permisos ni protegen por sí solos una cuenta ya iniciada. Se difiere hasta disponer de una ruta con menor alcance.",
+   "checked_commit": "dca6048e9b3281ca6e2eb0ccf14c156b92aaf180",
+   "release": {
+    "version": "cli-v0.5.0",
+    "url": "https://github.com/Tencent/BrowserSkill/releases/tag/cli-v0.5.0",
+    "assets": 6,
+    "with_digest": 6
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/Tencent/BrowserSkill/blob/main/LICENSE",
+   "readme_blob_sha": "569200c9d68c4150263cdf6cf90c79a7025025d7",
+   "permission_sources": [
+    "https://github.com/Tencent/BrowserSkill/blob/dca6048e9b3281ca6e2eb0ccf14c156b92aaf180/README.md",
+    "https://github.com/Tencent/BrowserSkill/blob/dca6048e9b3281ca6e2eb0ccf14c156b92aaf180/docs/browser-profiles.md",
+    "https://github.com/Tencent/BrowserSkill/blob/dca6048e9b3281ca6e2eb0ccf14c156b92aaf180/docs/local-pairing.md",
+    "https://github.com/Tencent/BrowserSkill/blob/dca6048e9b3281ca6e2eb0ccf14c156b92aaf180/docs/sandboxed-agents.md",
+    "https://github.com/Tencent/BrowserSkill/blob/dca6048e9b3281ca6e2eb0ccf14c156b92aaf180/apps/extension/src/transport/generated/manifest.json",
+    "https://github.com/Tencent/BrowserSkill/blob/dca6048e9b3281ca6e2eb0ccf14c156b92aaf180/apps/extension/wxt.config.ts"
+   ],
+   "advisories": [],
+   "package_queries": [
+    "npm:@wxg-prc-cpg/browser-skill-dsh-plugin:reviewed",
+    "npm:@wxg-prc-cpg/browser-skill-dsh-plugin:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "vercel-labs/screen-relay",
+   "github_id": 1436507514,
+   "decision": "added",
+   "id": "screen-relay",
+   "reason": "El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token. No expongas el puerto ni des acceso a una sesión personal.",
+   "checked_commit": "47719f164a7b5230369c8219579da3d1d3d9733e",
+   "release": {
+    "version": "v0.1.5",
+    "url": "https://github.com/vercel-labs/screen-relay/releases/tag/v0.1.5",
+    "assets": 0,
+    "with_digest": 0
+   },
+   "commit_signature_verified_by_github": true,
+   "license_source": "https://github.com/vercel-labs/screen-relay/blob/main/LICENSE",
+   "readme_blob_sha": "bbcda0011186c073c55737e9c6592501e9fca68e",
+   "permission_sources": [
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/configuration.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/vercel-sandbox.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/config.example.yaml",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/getting-started.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/remote-access.mdx"
+   ],
+   "advisories": [],
+   "package_queries": [
+    "npm:screen-relay:reviewed",
+    "npm:screen-relay:malware"
+   ],
+   "package_alerts": []
+  },
+  {
+   "gh": "yiheng8023/antigravity-chinese",
+   "github_id": 1334699730,
+   "decision": "excluded",
+   "id": null,
+   "reason": "La documentación describe cambios en archivos internos de aplicación y extensiones, con respaldo y reversión dependientes de versión. No se comprobó reversión ni correspondencia entre el parche y cada binario de cliente.",
+   "checked_commit": "3cf80cbb42c4d08acb067621ead9c4be9a2c76c8",
+   "release": {
+    "version": "v3.3.60",
+    "url": "https://github.com/yiheng8023/antigravity-chinese/releases/tag/v3.3.60",
+    "assets": 0,
+    "with_digest": 0
+   },
+   "commit_signature_verified_by_github": null,
+   "license_source": "https://github.com/yiheng8023/antigravity-chinese/blob/main/LICENSE",
+   "readme_blob_sha": "d6fb9c540accf5188235dd1f25efd3582bb6369d",
+   "permission_sources": [
+    "https://github.com/yiheng8023/antigravity-chinese/blob/3cf80cbb42c4d08acb067621ead9c4be9a2c76c8/README.md",
+    "https://github.com/yiheng8023/antigravity-chinese/blob/3cf80cbb42c4d08acb067621ead9c4be9a2c76c8/SECURITY.md",
+    "https://github.com/yiheng8023/antigravity-chinese/blob/3cf80cbb42c4d08acb067621ead9c4be9a2c76c8/docs/maintenance/linux-portable-install.md",
+    "https://github.com/yiheng8023/antigravity-chinese/blob/3cf80cbb42c4d08acb067621ead9c4be9a2c76c8/README.en.md"
+   ],
+   "advisories": [],
+   "package_queries": [],
+   "package_alerts": []
+  }
+ ]
+}

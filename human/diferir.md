@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**97 repos.**
+**101 repos.**
 
 ## ⏳ Diferir
 
@@ -56,6 +56,7 @@ _Pesado: solo si llega a finalista._
 | [karakeep](fichas/karakeep.md) | 🗂️ Organizar notas, archivos y servicios personales | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. |
 | [audiobookshelf](fichas/audiobookshelf.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. |
 | [Wazuh](fichas/wazuh.md) | 🔍 Analizar software y comprobar su seguridad | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. |
+| [Pi.Alert](fichas/pi-alert-leiweibau.md) | 🔍 Analizar software y comprobar su seguridad | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido. |
 | [Synapse](fichas/synapse.md) | 🤖 WhatsApp, mensajería y chatbots | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. |
 | [twenty-main](fichas/twenty-main.md) | 🤖 CRM, ventas y marketing | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 | [Odoo](fichas/odoo.md) | 🤖 CRM, ventas y marketing | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
@@ -73,7 +74,10 @@ _Pesado: solo si llega a finalista._
 | [supabase](fichas/supabase.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. |
 | [coolify](fichas/coolify.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. |
 | [CasaOS](fichas/casaos.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
+| [Pangolin Community Edition](fichas/pangolin.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo. |
 | [NemoClaw](fichas/nemoclaw.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
+| [Agent Substrate](fichas/agent-substrate.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados. |
+| [Screen Relay](fichas/screen-relay.md) | 🕸️ Infraestructura, despliegue y herramientas para agentes | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal. |
 | [vLLM](fichas/vllm.md) | 🧬 Operar, evaluar y medir modelos de IA | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
 | [OmniRoute](fichas/omniroute.md) | 🧬 Operar, evaluar y medir modelos de IA | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
 | [SGLang](fichas/sglang.md) | 🧬 Operar, evaluar y medir modelos de IA | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |

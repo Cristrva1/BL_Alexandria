@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-959 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+966 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -24,7 +24,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
 | [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 76 |
-| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 152 |
+| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 153 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 118 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 27 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 65 |
@@ -34,11 +34,11 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 66 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 40 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 56 |
-| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 104 |
+| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 110 |
 | [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 35 |
 | [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 104 |
-| [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 251 |
-| [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 214 |
+| [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 252 |
+| [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 215 |
 | [Configuración de Antigravity](areas/configurar-antigravity.md) | Instalar y seleccionar skills, Diseño y creación de interfaces, Prompts y organización del trabajo, MCP y herramientas conectadas, Integraciones,proveedores y paneles | 164 |
 
 ## Índice técnico por tipo de herramienta
@@ -51,7 +51,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 4 | [🕷️ Buscar, extraer y monitorear información web](categorias/04-scraping-b-squeda-research-web.md) | 28 | [firecrawl](fichas/firecrawl.md), [Scrapegraph-ai](fichas/scrapegraph-ai.md), [SearXNG](fichas/searxng.md), [yt-dlp](fichas/yt-dlp.md) |
 | 5 | [🔌 Conectar herramientas con MCP](categorias/05-mcp-conectividad.md) | 27 | [FastMCP](fichas/fastmcp.md), [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md), [Context7](fichas/context7.md), [Playwright MCP](fichas/playwright-mcp.md), [MCP for Beginners](fichas/mcp-for-beginners.md) |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](categorias/06-memoria-rag-llm-ops.md) | 30 | [claude-mem](fichas/claude-mem.md), [RAGFlow](fichas/ragflow.md), [Qdrant](fichas/qdrant.md) |
-| 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 25 | [Repomix](fichas/repomix.md), [ast-grep](fichas/ast-grep.md), [GitHub CLI](fichas/cli.md) |
+| 7 | [🧑‍💻 Entender código y comprobar su calidad](categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) | 26 | [Repomix](fichas/repomix.md), [ast-grep](fichas/ast-grep.md), [GitHub CLI](fichas/cli.md) |
 | 8 | [🏠 Chats, modelos locales y espacios privados](categorias/08-ia-local-modelos-chats-workspaces.md) | 33 | [Ollama](fichas/ollama.md), [Open WebUI](fichas/open-webui.md), [Jan](fichas/jan.md), [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
 | 9 | [🎨 Diseñar y construir interfaces web](categorias/09-dise-o-ui-frontend.md) | 33 | [ui](fichas/ui.md), [daisyUI](fichas/daisyui.md), [Excalidraw](fichas/excalidraw.md), [CopilotKit](fichas/copilotkit.md) |
 | 10 | [📊 Dashboards, analítica y mapas](categorias/10-anal-tica-visualizaci-n.md) | 31 | [Umami](fichas/umami.md), [Apache Superset](fichas/superset.md), [WrenAI](fichas/wrenai.md), [Recharts](fichas/recharts.md) |
@@ -60,13 +60,13 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 13 | [📄 PDF, OCR y procesamiento de documentos](categorias/13-documentos-presentaciones.md) | 22 | [Docling](fichas/docling.md), [PaddleOCR](fichas/paddleocr.md), [OCRmyPDF](fichas/ocrmypdf.md), [Stirling-PDF](fichas/stirling-pdf.md) |
 | 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 25 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md), [machine-learning-for-trading](fichas/machine-learning-for-trading.md) |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](categorias/15-notas-archivos-y-servicios-personales.md) | 51 | [Anytype Desktop](fichas/anytype-ts.md) |
-| 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 141 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
+| 16 | [🔍 Analizar software y comprobar su seguridad](categorias/16-analisis-de-software-y-seguridad.md) | 142 | [ghidra](fichas/ghidra.md), [Semgrep](fichas/semgrep.md) |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](categorias/17-mensajeria-chatbots.md) | 18 | [whatsapp-web.js](fichas/whatsapp-web-js.md), [Typebot](fichas/typebot.md) |
 | 18 | [🤖 CRM, ventas y marketing](categorias/18-crm-ventas-marketing.md) | 19 | [Odoo](fichas/odoo.md), [novu](fichas/novu.md) |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](categorias/19-aprender-ia-prompts.md) | 30 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md), [Fabric](fichas/fabric.md), [Generative AI for Beginners](fichas/generative-ai-for-beginners.md), [AI Agents for Beginners](fichas/ai-agents-for-beginners.md), [LLM Course](fichas/llm-course.md) |
 | 20 | [🕸️ Programar con agentes de código](categorias/20-agentes-de-codigo.md) | 21 | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md) |
 | 21 | [🕸️ Asistentes e investigación con agentes](categorias/21-asistentes-investigacion.md) | 18 | [OpenClaw](fichas/openclaw.md), [autoresearch](fichas/autoresearch.md) |
-| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 27 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |
+| 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 32 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |
 | 23 | [🧬 Operar, evaluar y medir modelos de IA](categorias/23-operacion-evaluacion-modelos.md) | 30 | [vLLM](fichas/vllm.md), [headroom](fichas/headroom.md), [promptfoo](fichas/promptfoo.md) |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](categorias/24-modelos-entrenamiento.md) | 25 | [Unsloth](fichas/unsloth.md), [TimesFM](fichas/timesfm.md) |
 | 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](categorias/25-datos-notebooks.md) | 23 | [DuckDB](fichas/duckdb.md), [marimo](fichas/marimo.md), [Gradio](fichas/gradio.md) |

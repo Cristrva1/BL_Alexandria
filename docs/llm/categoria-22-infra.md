@@ -1,6 +1,6 @@
 # Alexandría para agentes · Infraestructura: sandboxes, herramientas y protocolos
 
-Categoría 22 «Infraestructura, despliegue y herramientas para agentes» › subcategoría `infra`. 10 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 22 «Infraestructura, despliegue y herramientas para agentes» › subcategoría `infra`. 13 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=22&sub=infra · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -28,6 +28,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `nodeterm` | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con… | 2 Intermedio | 48 | BUSL-1.1 (source-available) | sin grupo |
 | `computer-use-preview` | Implementación de referencia de Google para que Gemini vea la pantalla y opere… | 2 Intermedio | 45 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-task-master` | Sistema de gestión de tareas con IA que prepara y organiza trabajo de… | 2 Intermedio | 42 | MIT + Commons Clause (source-available) | sin grupo |
+| `agent-substrate` | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `kiri` | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `screen-relay` | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica… | 3 Avanzado | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -171,6 +174,36 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
 - **Alternativas:** `spec-kit`
 - **Riesgos y avisos:** Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativa (elige una): spec-kit. Actividad reciente baja. Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la….
+
+### Agent Substrate (`agent-substrate`)
+
+- **Repo:** https://github.com/agent-substrate/substrate · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.
+- **Cuándo elegirlo:** Casos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.
+- **Requisitos:** nivel 3: preparación pesada, despliegue con Kubernetes/Helm; Go, go.mod; hardware prerequisites; API de IA: no; Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md
+- **Primera prueba propuesta (no ejecutada):** Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local. Éxito: El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado.
+- **Riesgos y avisos:** La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de….
+
+### Kiri (`kiri`)
+
+- **Repo:** https://github.com/libracoder/kiri · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Un motor con interfaz para contenedores de desarrollo en un equipo personal.
+- **Cuándo elegirlo:** Casos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.
+- **Requisitos:** nivel 2: preparación media; Rust, Cargo.toml; hardware prerequisites; API de IA: no; En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/libracoder/kiri/releases/tag/v0.2.2
+- **Primera prueba propuesta (no ejecutada):** En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles. Éxito: La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri.
+- **Riesgos y avisos:** Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales.
+
+### Screen Relay (`screen-relay`)
+
+- **Repo:** https://github.com/vercel-labs/screen-relay · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.
+- **Cuándo elegirlo:** Casos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado.
+- **Requisitos:** nivel 3: preparación pesada; C++, Dockerfile, Makefile, package.json; hardware prerequisites; API de IA: no; Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx
+- **Primera prueba propuesta (no ejecutada):** Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales. Éxito: El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno.
+- **Riesgos y avisos:** El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

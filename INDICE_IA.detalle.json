@@ -199840,6 +199840,1190 @@
     "origen": "auto",
     "auto": 1
    }
+  },
+  "agent-substrate": {
+   "name": "Agent Substrate",
+   "cat": 22,
+   "sub": "infra",
+   "desc": "Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados.",
+   "how": "El plano de control asigna cada tarea a un entorno y guarda su estado para poder reanudarla; las reglas de identidad y red se configuran por separado.",
+   "install": "Abre la guía del tag v1.0.1 y prepara su clúster desechable de kind. Cambia al contexto de prueba antes de instalar el plano de control.",
+   "cases": [
+    "Comparar dos llamadas al contador de demostración.",
+    "Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende."
+   ],
+   "stack": "Go, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de terceros; el modelo de amenazas no acredita aislamiento en producción. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/agent-substrate/substrate",
+   "homepage": "https://ate.dev/",
+   "license": "Apache-2.0",
+   "lang": "Go",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/agent-substrate.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "cost_note": "El ejemplo Counter no usa modelos, suscripciones de IA ni claves de proveedor. Kubernetes gestionado, almacenamiento y modelos de otras cargas se pagan aparte.",
+    "hardware_note": "Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/security/threat-model.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/authorization.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/network-egress.md",
+     "https://github.com/agent-substrate/substrate/releases/tag/v1.0.1",
+     "https://github.com/agent-substrate/substrate/blob/main/LICENSE"
+    ],
+    "mode": "software",
+    "source_blob_sha": "4832f4b9302c24ea4d7329a83a0ac754fe170723"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind."
+    ],
+    "steps": [
+     "Abre la guía del tag v1.0.1 y prepara su clúster desechable de kind. Cambia al contexto de prueba antes de instalar el plano de control.",
+     "Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local.",
+     "Comprueba el resultado: el contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+    "source": "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Abre la guía del tag v1.0.1 y prepara su clúster desechable de kind. Cambia al contexto de prueba antes de instalar el plano de control.",
+   "sources": {
+    "readme_blob_sha": "4832f4b9302c24ea4d7329a83a0ac754fe170723",
+    "root_tree_sha": "4d42178b6303f0a7f16082e96fc10d0f2042bf35",
+    "readme_url": "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "20778a6dbb01f13024642851bb592bf67c9fec05",
+    "reviewed_release": "https://github.com/agent-substrate/substrate/releases/tag/v1.0.1"
+   },
+   "why": "Usos propuestos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende..",
+   "models": "La función descrita no depende de un modelo de IA.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Comparar dos llamadas al contador de demostración.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local.",
+    "success": "El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+    "source_blob_sha": "4832f4b9302c24ea4d7329a83a0ac754fe170723",
+    "previous_category": [
+     22,
+     "infra"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de terceros; el modelo de amenazas no acredita aislamiento en producción.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.",
+   "que_hace": "Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados.",
+   "como_lo_hace": "El plano de control asigna cada tarea a un entorno y guarda su estado para poder reanudarla; las reglas de identidad y red se configuran por separado.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/security/threat-model.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/authorization.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/network-egress.md",
+    "https://github.com/agent-substrate/substrate/releases/tag/v1.0.1",
+    "https://github.com/agent-substrate/substrate/blob/main/LICENSE"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "agent-substrate/substrate",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.0.1 (2026-11-20)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 3,
+    "nombre": "Avanzado",
+    "motivos": [
+     "preparación pesada",
+     "despliegue con Kubernetes/Helm"
+    ],
+    "origen": "auto",
+    "auto": 3
+   }
+  },
+  "open-code-review": {
+   "name": "Open Code Review",
+   "cat": 7,
+   "sub": "calidad",
+   "desc": "Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes.",
+   "how": "El modo delegado organiza los archivos, las reglas y la cobertura; el análisis lo realiza Claude Code, Codex u otro cliente admitido.",
+   "install": "Prepara Git 2.41 o superior; elige la CLI del release v1.14.1 y sigue la instalación de la skill delegada para tu cliente.",
+   "cases": [
+    "Revisar condiciones de error en un cambio de ejemplo.",
+    "Preparar una lista de comprobaciones para una PR de un proyecto propio."
+   ],
+   "stack": "Go, Makefile, go.mod, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar condiciones de error en un cambio de ejemplo.; Preparar una lista de comprobaciones para una PR de un proyecto propio.",
+   "avoid_if": "no usas un agente compatible con skills",
+   "limits": "GHSA-wwg6-qfxw-xffj afecta versiones anteriores a 1.11.1; el tag 1.14.1 incluye la corrección. Usa solo repositorios propios o de confianza. Si el modelo es remoto, el cliente puede enviar fragmentos del código. El ajuste de telemetría de la CLI está apagado por defecto. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/alibaba/open-code-review",
+   "homepage": "https://open-codereview.ai",
+   "license": "Apache-2.0",
+   "lang": "Go",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/open-code-review.md",
+   "access": {
+    "api": "optional",
+    "local_model": "unconfirmed",
+    "claude_code": "host",
+    "codex": "host",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "El modo delegado usa el acceso del asistente. Para el modo nativo se configura y autentica un proveedor aparte.",
+    "subscription_note": "La skill delegada está documentada para Claude Code y Codex; esto no otorga una credencial para el modo nativo de OCR.",
+    "local_note": "No se ha comprobado una ruta local completa; la ficha se limita al modo delegado.",
+    "cost_note": "En modo delegado consumes el acceso y los límites de Claude Code o Codex. En modo nativo se configura el proveedor de OCR y su facturación por separado.",
+    "hardware_note": "Git 2.41 o superior, la CLI ocr y un cliente apropiado para la ruta delegada.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/pages/src/content/docs/en/telemetry.md",
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/.github/SECURITY.md",
+     "https://github.com/alibaba/open-code-review/releases/tag/v1.14.1",
+     "https://github.com/alibaba/open-code-review/blob/main/LICENSE",
+     "https://github.com/alibaba/open-code-review/security/advisories/GHSA-wwg6-qfxw-xffj"
+    ],
+    "mode": "agent_extension",
+    "source_blob_sha": "8728015fc50b50da660a793da84694df9652aa80"
+   },
+   "getting_started": {
+    "kind": "skill",
+    "audience": "agent",
+    "prerequisites": [
+     "Git 2.41 o superior, la CLI ocr y un cliente apropiado para la ruta delegada."
+    ],
+    "steps": [
+     "Prepara Git 2.41 o superior; elige la CLI del release v1.14.1 y sigue la instalación de la skill delegada para tu cliente.",
+     "Pide que revise un cambio ficticio de un proyecto propio, sin permitir escrituras ni cargar un repositorio de origen desconocido.",
+     "Comprueba el resultado: el informe nombra archivos, hallazgos y comprobaciones sin modificar el proyecto de ejemplo."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+    "source": "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Prepara Git 2.41 o superior; elige la CLI del release v1.14.1 y sigue la instalación de la skill delegada para tu cliente.",
+   "sources": {
+    "readme_blob_sha": "8728015fc50b50da660a793da84694df9652aa80",
+    "root_tree_sha": "2a4d7055db8bd0f2a23e34e8157e2a23e3922581",
+    "readme_url": "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "284ff013f0705ae6cac4c8dfbffa2f2551886d56",
+    "reviewed_release": "https://github.com/alibaba/open-code-review/releases/tag/v1.14.1"
+   },
+   "why": "Usos propuestos: Revisar condiciones de error en un cambio de ejemplo.; Preparar una lista de comprobaciones para una PR de un proyecto propio..",
+   "models": "No se ha comprobado una ruta local completa; la ficha se limita al modo delegado.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Revisar condiciones de error en un cambio de ejemplo.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Preparar una lista de comprobaciones para una PR de un proyecto propio.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Pide que revise un cambio ficticio de un proyecto propio, sin permitir escrituras ni cargar un repositorio de origen desconocido.",
+    "success": "El informe nombra archivos, hallazgos y comprobaciones sin modificar el proyecto de ejemplo.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+    "source_blob_sha": "8728015fc50b50da660a793da84694df9652aa80",
+    "previous_category": [
+     7,
+     "calidad"
+    ],
+    "category_verdict": "confirmed",
+    "note": "GHSA-wwg6-qfxw-xffj afecta versiones anteriores a 1.11.1; el tag 1.14.1 incluye la corrección. Usa solo repositorios propios o de confianza. Si el modelo es remoto, el cliente puede enviar fragmentos del código. El ajuste de telemetría de la CLI está apagado por defecto.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Una herramienta de revisión defensiva de código para cambios propios antes de fusionarlos.",
+   "que_hace": "Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes.",
+   "como_lo_hace": "El modo delegado organiza los archivos, las reglas y la cobertura; el análisis lo realiza Claude Code, Codex u otro cliente admitido.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/pages/src/content/docs/en/telemetry.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/.github/SECURITY.md",
+    "https://github.com/alibaba/open-code-review/releases/tag/v1.14.1",
+    "https://github.com/alibaba/open-code-review/blob/main/LICENSE",
+    "https://github.com/alibaba/open-code-review/security/advisories/GHSA-wwg6-qfxw-xffj"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "alibaba/open-code-review",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.14.1 (2026-11-22)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 2,
+    "nombre": "Intermedio",
+    "motivos": [
+     "preparación media",
+     "se instala dentro de un agente (skill, plugin o MCP)"
+    ],
+    "origen": "auto",
+    "auto": 2
+   }
+  },
+  "pangolin": {
+   "name": "Pangolin Community Edition",
+   "cat": 22,
+   "sub": "redes",
+   "desc": "Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo.",
+   "how": "El servidor recibe la conexión, comprueba quién puede usar el recurso y lo redirige hacia la aplicación configurada.",
+   "install": "Sigue la guía para Community Edition en un servidor de prueba y confirma que la imagen del servidor corresponde al release 1.27.1 o posterior.",
+   "cases": [
+    "Comprobar el acceso de una cuenta de prueba a una web ficticia.",
+    "Comparar qué ven dos cuentas con roles distintos."
+   ],
+   "stack": "TypeScript, Dockerfile, Makefile, compose.yaml, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión. Si activas Gerbil, su contenedor solicita NET_ADMIN. Mantén el token de instalación privado y revisa por separado las versiones de Gerbil, Traefik y clientes. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/fosrl/pangolin",
+   "homepage": "https://pangolin.net",
+   "license": "NOASSERTION",
+   "lang": "TypeScript",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/pangolin.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "cost_note": "Community Edition se puede autoalojar sin pagar una licencia comercial por esa edición; VPS, dominio y operación pueden costar. Cloud y Enterprise tienen condiciones aparte. El proxy de prueba no usa IA.",
+    "hardware_note": "Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+     "https://docs.pangolin.net/self-host/quick-install",
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/LICENSE",
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/SECURITY.md",
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/docker-compose.yml",
+     "https://docs.pangolin.net/self-host/how-to-update",
+     "https://github.com/fosrl/pangolin/releases/tag/1.27.1",
+     "https://github.com/fosrl/pangolin/blob/main/LICENSE",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cxv-w5ph-7p6h",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-9784-q2hc-2qqq",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-v6q2-c45v-8vx8",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-hpcv-689w-jrg3",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-w92q-9g55-f4r2",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-fhv5-xx8r-wxfg",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cfx-v2f2-3mqq",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-9vcq-r7wr-9r3r",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-5ph5-x9xv-86fv",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-5772-vhpw-ppr8",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-m664-jx49-xhw7",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-5h3v-3645-78xj",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-9xxh-cx3p-fx3m",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-3pr6-pcvv-9jrp",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-j32m-3vr4-9ghw"
+    ],
+    "mode": "software",
+    "source_blob_sha": "d79ee6f0166a75d1e40774cd9a1a1b4bf72962da"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración."
+    ],
+    "steps": [
+     "Sigue la guía para Community Edition en un servidor de prueba y confirma que la imagen del servidor corresponde al release 1.27.1 o posterior.",
+     "Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso.",
+     "Comprueba el resultado: la cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://docs.pangolin.net/self-host/quick-install",
+    "source": "https://docs.pangolin.net/self-host/quick-install",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Sigue la guía para Community Edition en un servidor de prueba y confirma que la imagen del servidor corresponde al release 1.27.1 o posterior.",
+   "sources": {
+    "readme_blob_sha": "d79ee6f0166a75d1e40774cd9a1a1b4bf72962da",
+    "root_tree_sha": "35f518366743bb16b492665ff716dcbe8263c350",
+    "readme_url": "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "0e011f57f751c77a906eba7fde3cd8765290ab01",
+    "reviewed_release": "https://github.com/fosrl/pangolin/releases/tag/1.27.1"
+   },
+   "why": "Usos propuestos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos..",
+   "models": "La función descrita no depende de un modelo de IA.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Comprobar el acceso de una cuenta de prueba a una web ficticia.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Comparar qué ven dos cuentas con roles distintos.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso.",
+    "success": "La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+    "source_blob_sha": "d79ee6f0166a75d1e40774cd9a1a1b4bf72962da",
+    "previous_category": [
+     22,
+     "redes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión. Si activas Gerbil, su contenedor solicita NET_ADMIN. Mantén el token de instalación privado y revisa por separado las versiones de Gerbil, Traefik y clientes.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Una plataforma para dar acceso identificado a aplicaciones y servicios propios.",
+   "que_hace": "Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo.",
+   "como_lo_hace": "El servidor recibe la conexión, comprueba quién puede usar el recurso y lo redirige hacia la aplicación configurada.",
+   "combina_con": [],
+   "licencia_nota": "Alcance de la recomendación: Community Edition (AGPL-3.0). El repositorio incluye archivos bajo la Fossorial Commercial License; no se extiende a ellos la licencia comunitaria.",
+   "descripcion_fuentes": [
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+    "https://docs.pangolin.net/self-host/quick-install",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/LICENSE",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/SECURITY.md",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/docker-compose.yml",
+    "https://docs.pangolin.net/self-host/how-to-update",
+    "https://github.com/fosrl/pangolin/releases/tag/1.27.1",
+    "https://github.com/fosrl/pangolin/blob/main/LICENSE",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cxv-w5ph-7p6h",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-9784-q2hc-2qqq",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-v6q2-c45v-8vx8",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-hpcv-689w-jrg3",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-w92q-9g55-f4r2",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-fhv5-xx8r-wxfg",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cfx-v2f2-3mqq",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-9vcq-r7wr-9r3r",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-5ph5-x9xv-86fv",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-5772-vhpw-ppr8",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-m664-jx49-xhw7",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-5h3v-3645-78xj",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-9xxh-cx3p-fx3m",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-3pr6-pcvv-9jrp",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-j32m-3vr4-9ghw"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "fosrl/pangolin",
+    "archived": false,
+    "pushed_at": "2026-11-20",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "1.27.1 (2026-11-20)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 3,
+    "nombre": "Avanzado",
+    "motivos": [
+     "preparación pesada"
+    ],
+    "origen": "auto",
+    "auto": 3
+   }
+  },
+  "pi-alert-leiweibau": {
+   "name": "Pi.Alert",
+   "cat": 16,
+   "sub": "deteccion",
+   "desc": "Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.",
+   "how": "Usa métodos de descubrimiento de red como ARP y puede importar datos de otros servicios; guarda el inventario y los eventos en el servidor.",
+   "install": "Revisa el instalador de la etiqueta v2026-10-16 y la guía de seguridad. Prepara un equipo Debian dedicado en una red de prueba.",
+   "cases": [
+    "Identificar un dispositivo nuevo en una red de prueba.",
+    "Verificar si se registra la desconexión de un dispositivo ya conocido."
+   ],
+   "stack": "PHP",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Identificar un dispositivo nuevo en una red de prueba.; Verificar si se registra la desconexión de un dispositivo ya conocido.",
+   "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+   "limits": "El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento GHSA-66mg-wpcq-2phq fija v2026-08-14 como corregida. La etiqueta v2026-10-16 la incorpora. No publiques la interfaz en internet. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/leiweibau/Pi.Alert",
+   "homepage": "https://leiweibau.net",
+   "license": "GPL-3.0",
+   "lang": "PHP",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/pi-alert-leiweibau.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "cost_note": "Código GPL-3.0 y sin API ni modelo de IA. Consume el equipo del monitor; los canales o servicios de aviso que conectes pueden tener costes propios.",
+    "hardware_note": "Equipo Debian compatible en la red propia, acceso administrativo para preparar el servidor y un segmento de prueba.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/install/pialert_install.sh",
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/NETWORK_RELATIONSHIP.md",
+     "https://github.com/leiweibau/Pi.Alert/releases/tag/v2026-10-16",
+     "https://github.com/leiweibau/Pi.Alert/blob/main/LICENSE.txt",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vmjp-664r-67rw",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-f58p-mp38-66qv",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-ff6r-j7j6-gfx8",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vp5h-q268-p65m",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-66mg-wpcq-2phq",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-xg85-f8qw-7c5f",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-r59g-5wf9-f7vv",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-m929-j7w8-334j"
+    ],
+    "mode": "software",
+    "source_blob_sha": "61c55ab950979eb4888d0cfc437c3895c3924249"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Equipo Debian compatible en la red propia, acceso administrativo para preparar el servidor y un segmento de prueba."
+    ],
+    "steps": [
+     "Revisa el instalador de la etiqueta v2026-10-16 y la guía de seguridad. Prepara un equipo Debian dedicado en una red de prueba.",
+     "Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido.",
+     "Comprueba el resultado: el evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+    "source": "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Revisa el instalador de la etiqueta v2026-10-16 y la guía de seguridad. Prepara un equipo Debian dedicado en una red de prueba.",
+   "sources": {
+    "readme_blob_sha": "61c55ab950979eb4888d0cfc437c3895c3924249",
+    "root_tree_sha": "347cd1d94df3518de0ab3632c34e367c0b356429",
+    "readme_url": "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "850e40a90871816161559e136e703cf68c1c994a",
+    "reviewed_release": "https://github.com/leiweibau/Pi.Alert/releases/tag/v2026-10-16"
+   },
+   "why": "Usos propuestos: Identificar un dispositivo nuevo en una red de prueba.; Verificar si se registra la desconexión de un dispositivo ya conocido..",
+   "models": "La función descrita no depende de un modelo de IA.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Identificar un dispositivo nuevo en una red de prueba.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Verificar si se registra la desconexión de un dispositivo ya conocido.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido.",
+    "success": "El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+    "source_blob_sha": "61c55ab950979eb4888d0cfc437c3895c3924249",
+    "previous_category": [
+     16,
+     "deteccion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento GHSA-66mg-wpcq-2phq fija v2026-08-14 como corregida. La etiqueta v2026-10-16 la incorpora. No publiques la interfaz en internet.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Monitor de dispositivos para una red propia que muestra cambios en su interfaz web.",
+   "que_hace": "Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.",
+   "como_lo_hace": "Usa métodos de descubrimiento de red como ARP y puede importar datos de otros servicios; guarda el inventario y los eventos en el servidor.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/install/pialert_install.sh",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/NETWORK_RELATIONSHIP.md",
+    "https://github.com/leiweibau/Pi.Alert/releases/tag/v2026-10-16",
+    "https://github.com/leiweibau/Pi.Alert/blob/main/LICENSE.txt",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vmjp-664r-67rw",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-f58p-mp38-66qv",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-ff6r-j7j6-gfx8",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vp5h-q268-p65m",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-66mg-wpcq-2phq",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-xg85-f8qw-7c5f",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-r59g-5wf9-f7vv",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-m929-j7w8-334j"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "leiweibau/Pi.Alert",
+    "archived": false,
+    "pushed_at": "2026-10-16",
+    "license": "GPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-22",
+    "latest_release": "v2026-10-16 (2026-10-16)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 3,
+    "nombre": "Avanzado",
+    "motivos": [
+     "preparación pesada"
+    ],
+    "origen": "auto",
+    "auto": 3
+   }
+  },
+  "kiri": {
+   "name": "Kiri",
+   "cat": 22,
+   "sub": "infra",
+   "desc": "Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker.",
+   "how": "Crea un contexto de Docker propio y, según el sistema, utiliza una máquina virtual o un entorno Linux para los contenedores.",
+   "install": "Selecciona el artefacto de tu plataforma en el release v0.2.2 o posterior y revisa la procedencia y el SHA-256 publicados.",
+   "cases": [
+    "Arrancar un contenedor de demostración sin montar carpetas personales.",
+    "Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual."
+   ],
+   "stack": "Rust, Cargo.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales. No uses esta ficha para alojar imágenes de origen desconocido ni abrir túneles públicos. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/libracoder/kiri",
+   "homepage": "https://runkiri.com",
+   "license": "Apache-2.0",
+   "lang": "Rust",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/kiri.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "cost_note": "Código Apache-2.0. El uso local no llama a ningún modelo; almacenamiento, hardware y opciones remotas se evalúan aparte.",
+    "hardware_note": "En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+     "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+     "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/SECURITY.md",
+     "https://github.com/libracoder/kiri/blob/main/LICENSE",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-wpff-823r-3w23",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-qf7g-72mh-h4fp",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-59gg-7j35-5826",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-4g46-535w-4v45",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-pcqf-qg5g-c5j8",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-rprm-mrvg-qp96",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-4xv7-3m63-r6jv"
+    ],
+    "mode": "software",
+    "source_blob_sha": "82a2cea073f0e04932af3d9ebd35113e3297052a"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto."
+    ],
+    "steps": [
+     "Selecciona el artefacto de tu plataforma en el release v0.2.2 o posterior y revisa la procedencia y el SHA-256 publicados.",
+     "En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles.",
+     "Comprueba el resultado: la salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+    "source": "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Selecciona el artefacto de tu plataforma en el release v0.2.2 o posterior y revisa la procedencia y el SHA-256 publicados.",
+   "sources": {
+    "readme_blob_sha": "82a2cea073f0e04932af3d9ebd35113e3297052a",
+    "root_tree_sha": "858869faffe88f22f34377a7d47323be3b0cc78b",
+    "readme_url": "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "686bffa5f38ba6ecc3d086c36ec7148cd7fb976a",
+    "reviewed_release": "https://github.com/libracoder/kiri/releases/tag/v0.2.2"
+   },
+   "why": "Usos propuestos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual..",
+   "models": "La función descrita no depende de un modelo de IA.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Arrancar un contenedor de demostración sin montar carpetas personales.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles.",
+    "success": "La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+    "source_blob_sha": "82a2cea073f0e04932af3d9ebd35113e3297052a",
+    "previous_category": [
+     22,
+     "infra"
+    ],
+    "category_verdict": "confirmed",
+    "note": "Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales. No uses esta ficha para alojar imágenes de origen desconocido ni abrir túneles públicos.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Un motor con interfaz para contenedores de desarrollo en un equipo personal.",
+   "que_hace": "Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker.",
+   "como_lo_hace": "Crea un contexto de Docker propio y, según el sistema, utiliza una máquina virtual o un entorno Linux para los contenedores.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+    "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/SECURITY.md",
+    "https://github.com/libracoder/kiri/blob/main/LICENSE",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-wpff-823r-3w23",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-qf7g-72mh-h4fp",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-59gg-7j35-5826",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-4g46-535w-4v45",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-pcqf-qg5g-c5j8",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-rprm-mrvg-qp96",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-4xv7-3m63-r6jv"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "libracoder/kiri",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.2.2 (2026-11-19)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 2,
+    "nombre": "Intermedio",
+    "motivos": [
+     "preparación media"
+    ],
+    "origen": "auto",
+    "auto": 2
+   }
+  },
+  "tailcat": {
+   "name": "Tailcat",
+   "cat": 22,
+   "sub": "redes",
+   "desc": "Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos.",
+   "how": "Las dos instancias negocian una conexión cifrada; si no se establece un camino directo pueden usar relés DERP.",
+   "install": "Abre la guía de instalación para v0.7.0 o posterior. Usa dos equipos propios y conserva la dirección de la sesión como dato privado.",
+   "cases": [
+    "Enviar una línea de texto ficticio entre dos equipos propios.",
+    "Comprobar si un laboratorio de red local consigue una conexión directa o vía relé."
+   ],
+   "stack": "Go, Makefile, go.mod",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Enviar una línea de texto ficticio entre dos equipos propios.; Comprobar si un laboratorio de red local consigue una conexión directa o vía relé.",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "GHSA-w496-344h-g2vv afecta al modo de recepción de 0.4.0 y se corrigió en 0.5.0; 0.7.0 incluye cambios posteriores. El fabricante describe el producto como experimental y pensado para extremos de confianza. Esta ficha no recomienda shells, directorios de escritura ni nodos de salida. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/tailscale/tailcat",
+   "homepage": "https://tailscale.com/tailcat",
+   "license": "BSD-3-Clause",
+   "lang": "Go",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/tailcat.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "cost_note": "Código BSD-3-Clause y sin IA. El proyecto describe relés DERP gratuitos con límites; un relé propio requiere infraestructura.",
+    "hardware_note": "Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+     "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+     "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/SECURITY.md",
+     "https://tailscale.com/tailcat",
+     "https://github.com/tailscale/tailcat/releases/tag/v0.7.0",
+     "https://github.com/tailscale/tailcat/blob/main/LICENSE",
+     "https://github.com/tailscale/tailcat/security/advisories/GHSA-w496-344h-g2vv"
+    ],
+    "mode": "software",
+    "source_blob_sha": "40ef3805ed6c024191491026c349508aea3ad7f8"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé."
+    ],
+    "steps": [
+     "Abre la guía de instalación para v0.7.0 o posterior. Usa dos equipos propios y conserva la dirección de la sesión como dato privado.",
+     "Elige solo el ejemplo de texto entre terminales; cierra ambas instancias tras recibir la línea.",
+     "Comprueba el resultado: la misma línea aparece en la otra terminal sin exponer directorios ni servicios."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+    "source": "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Abre la guía de instalación para v0.7.0 o posterior. Usa dos equipos propios y conserva la dirección de la sesión como dato privado.",
+   "sources": {
+    "readme_blob_sha": "40ef3805ed6c024191491026c349508aea3ad7f8",
+    "root_tree_sha": "9b37472a3454a83848385c4148240603817d71b0",
+    "readme_url": "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "15ab9e68bfc6534a61797d7af28cedd42b54a3a5",
+    "reviewed_release": "https://github.com/tailscale/tailcat/releases/tag/v0.7.0"
+   },
+   "why": "Usos propuestos: Enviar una línea de texto ficticio entre dos equipos propios.; Comprobar si un laboratorio de red local consigue una conexión directa o vía relé..",
+   "models": "La función descrita no depende de un modelo de IA.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Enviar una línea de texto ficticio entre dos equipos propios.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Comprobar si un laboratorio de red local consigue una conexión directa o vía relé.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Elige solo el ejemplo de texto entre terminales; cierra ambas instancias tras recibir la línea.",
+    "success": "La misma línea aparece en la otra terminal sin exponer directorios ni servicios.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+    "source_blob_sha": "40ef3805ed6c024191491026c349508aea3ad7f8",
+    "previous_category": [
+     22,
+     "redes"
+    ],
+    "category_verdict": "confirmed",
+    "note": "GHSA-w496-344h-g2vv afecta al modo de recepción de 0.4.0 y se corrigió en 0.5.0; 0.7.0 incluye cambios posteriores. El fabricante describe el producto como experimental y pensado para extremos de confianza. Esta ficha no recomienda shells, directorios de escritura ni nodos de salida.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Una herramienta experimental de terminal para unir dos extremos bajo control de la misma persona.",
+   "que_hace": "Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos.",
+   "como_lo_hace": "Las dos instancias negocian una conexión cifrada; si no se establece un camino directo pueden usar relés DERP.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/SECURITY.md",
+    "https://tailscale.com/tailcat",
+    "https://github.com/tailscale/tailcat/releases/tag/v0.7.0",
+    "https://github.com/tailscale/tailcat/blob/main/LICENSE",
+    "https://github.com/tailscale/tailcat/security/advisories/GHSA-w496-344h-g2vv"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "tailscale/tailcat",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "BSD-3-Clause",
+    "primary_language": "Go",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.7.0 (2026-09-20)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 2,
+    "nombre": "Intermedio",
+    "motivos": [
+     "preparación media"
+    ],
+    "origen": "auto",
+    "auto": 2
+   }
+  },
+  "screen-relay": {
+   "name": "Screen Relay",
+   "cat": 22,
+   "sub": "infra",
+   "desc": "Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal.",
+   "how": "El motor sirve la pantalla y los eventos de entrada; la configuración decide dónde escucha y cuándo necesita un token.",
+   "install": "Usa la guía Docker del tag v0.1.5 en una máquina de prueba: publica el puerto solo en loopback y conserva privado el enlace que entrega el motor.",
+   "cases": [
+    "Mirar la interfaz de una aplicación de prueba en un escritorio vacío.",
+    "Capturar una ventana de demostración en un entorno separado."
+   ],
+   "stack": "C++, Dockerfile, Makefile, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado.",
+   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
+   "limits": "El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token. No expongas el puerto ni des acceso a una sesión personal. La revisión no acredita ausencia de fallos ni una instalación probada.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/vercel-labs/screen-relay",
+   "homepage": "https://screen-relay.dev",
+   "license": "Apache-2.0",
+   "lang": "C++",
+   "updated": "2026-11-22",
+   "doc": "human/fichas/screen-relay.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "choice",
+    "hardware": "prerequisites",
+    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "cost_note": "El visor local no necesita un modelo; consume memoria y almacenamiento. Una máquina alquilada, Vercel Sandbox o un agente externo se pagan por separado.",
+    "hardware_note": "Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor.",
+    "checked_at": "2026-11-22",
+    "review": "documented",
+    "sources": [
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/configuration.mdx",
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/getting-started.mdx",
+     "https://registry.npmjs.org/screen-relay/0.1.5",
+     "https://github.com/vercel-labs/screen-relay/releases/tag/v0.1.5",
+     "https://github.com/vercel-labs/screen-relay/blob/main/LICENSE"
+    ],
+    "mode": "software",
+    "source_blob_sha": "bbcda0011186c073c55737e9c6592501e9fca68e"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor."
+    ],
+    "steps": [
+     "Usa la guía Docker del tag v0.1.5 en una máquina de prueba: publica el puerto solo en loopback y conserva privado el enlace que entrega el motor.",
+     "Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales.",
+     "Comprueba el resultado: el visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+    "source": "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+    "checked_at": "2026-11-22",
+    "note": "Consulta la guía vinculada y la versión revisada. No se ejecutó el proyecto."
+   },
+   "first_step": "Usa la guía Docker del tag v0.1.5 en una máquina de prueba: publica el puerto solo en loopback y conserva privado el enlace que entrega el motor.",
+   "sources": {
+    "readme_blob_sha": "bbcda0011186c073c55737e9c6592501e9fca68e",
+    "root_tree_sha": "c7c88cae71a2748d9e78a43bd0f51552119e2883",
+    "readme_url": "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+    "github_checked": "2026-11-22",
+    "collection": "altas-drive-seguridad-2026-11-22",
+    "commit_sha": "47719f164a7b5230369c8219579da3d1d3d9733e",
+    "reviewed_release": "https://github.com/vercel-labs/screen-relay/releases/tag/v0.1.5"
+   },
+   "why": "Usos propuestos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado..",
+   "models": "La función descrita no depende de un modelo de IA.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Mirar la interfaz de una aplicación de prueba en un escritorio vacío.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Capturar una ventana de demostración en un entorno separado.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales.",
+    "success": "El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-22",
+    "source": "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+    "source_blob_sha": "bbcda0011186c073c55737e9c6592501e9fca68e",
+    "previous_category": [
+     22,
+     "infra"
+    ],
+    "category_verdict": "confirmed",
+    "note": "El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token. No expongas el puerto ni des acceso a una sesión personal.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.",
+   "que_hace": "Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal.",
+   "como_lo_hace": "El motor sirve la pantalla y los eventos de entrada; la configuración decide dónde escucha y cuándo necesita un token.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/configuration.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/getting-started.mdx",
+    "https://registry.npmjs.org/screen-relay/0.1.5",
+    "https://github.com/vercel-labs/screen-relay/releases/tag/v0.1.5",
+    "https://github.com/vercel-labs/screen-relay/blob/main/LICENSE"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-seguridad-2026-11-22",
+    "checked_at": "2026-11-22",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "vercel-labs/screen-relay",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.1.5 (2026-11-22)"
+   },
+   "description_security_scope": "reviewed_public_evidence",
+   "complejidad_detalle": {
+    "nivel": 3,
+    "nombre": "Avanzado",
+    "motivos": [
+     "preparación pesada"
+    ],
+    "origen": "auto",
+    "auto": 3
+   }
   }
  },
  "meta": {

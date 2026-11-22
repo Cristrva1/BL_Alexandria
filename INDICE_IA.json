@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 961 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 968 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -446,7 +446,7 @@
    "title": "Entender código y comprobar su calidad",
    "desc": "Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-   "count": 25,
+   "count": 26,
    "subs": [
     {
      "key": "codigo",
@@ -751,7 +751,7 @@
      "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 141,
+   "count": 142,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -894,7 +894,7 @@
      "title": "Alojamiento y backend"
     }
    ],
-   "count": 27
+   "count": 32
   },
   {
    "num": 23,
@@ -40517,6 +40517,243 @@
     "no_api"
    ],
    "complejidad": 1
+  },
+  {
+   "id": "agent-substrate",
+   "name": "Agent Substrate",
+   "cat": 22,
+   "sub": "infra",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 8145,
+   "gh": "agent-substrate/substrate",
+   "lib": false,
+   "pick": false,
+   "one": "Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados.",
+   "alt": [],
+   "doc": "human/fichas/agent-substrate.md",
+   "github_id": 1238047523,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "open-code-review",
+   "name": "Open Code Review",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "skill",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 55324,
+   "gh": "alibaba/open-code-review",
+   "lib": false,
+   "pick": false,
+   "one": "Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes.",
+   "alt": [],
+   "doc": "human/fichas/open-code-review.md",
+   "github_id": 1241960226,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar",
+    "skills"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "pangolin",
+   "name": "Pangolin Community Edition",
+   "cat": 22,
+   "sub": "redes",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 23938,
+   "gh": "fosrl/pangolin",
+   "lib": false,
+   "pick": false,
+   "one": "Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo.",
+   "alt": [],
+   "doc": "human/fichas/pangolin.md",
+   "github_id": 863835427,
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "pi-alert-leiweibau",
+   "name": "Pi.Alert",
+   "cat": 16,
+   "sub": "deteccion",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 1366,
+   "gh": "leiweibau/Pi.Alert",
+   "lib": false,
+   "pick": false,
+   "one": "Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.",
+   "alt": [],
+   "doc": "human/fichas/pi-alert-leiweibau.md",
+   "github_id": 494412947,
+   "lang": "PHP",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "seguridad"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 3
+  },
+  {
+   "id": "kiri",
+   "name": "Kiri",
+   "cat": 22,
+   "sub": "infra",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 12240,
+   "gh": "libracoder/kiri",
+   "lib": false,
+   "pick": false,
+   "one": "Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker.",
+   "alt": [],
+   "doc": "human/fichas/kiri.md",
+   "github_id": 1443186633,
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "servicios",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "tailcat",
+   "name": "Tailcat",
+   "cat": 22,
+   "sub": "redes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 10146,
+   "gh": "tailscale/tailcat",
+   "lib": false,
+   "pick": false,
+   "one": "Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos.",
+   "alt": [],
+   "doc": "human/fichas/tailcat.md",
+   "github_id": 880414192,
+   "lang": "Go",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "screen-relay",
+   "name": "Screen Relay",
+   "cat": 22,
+   "sub": "infra",
+   "role": "app",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [],
+   "stars": 354,
+   "gh": "vercel-labs/screen-relay",
+   "lib": false,
+   "pick": false,
+   "one": "Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal.",
+   "alt": [],
+   "doc": "human/fichas/screen-relay.md",
+   "github_id": 1436507514,
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-22",
+   "github_checked": "2026-11-22",
+   "goals": [
+    "programar",
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 3
   }
  ],
  "discovery": {
@@ -41110,6 +41347,7 @@
     ],
     "categories": [
      2,
+     7,
      16,
      19,
      27,
@@ -43347,7 +43585,8 @@
        "wrenai",
        "wshobson-agents",
        "android-skills",
-       "humans-md-plugins"
+       "humans-md-plugins",
+       "open-code-review"
       ],
       "keywords": [],
       "reference_repos": [
@@ -45414,7 +45653,8 @@
        "wrenai",
        "wshobson-agents",
        "android-skills",
-       "humans-md-plugins"
+       "humans-md-plugins",
+       "open-code-review"
       ],
       "keywords": [],
       "reference_repos": []
@@ -48491,10 +48731,10 @@
    }
   ],
   "editorial_review": {
-   "total": 959,
-   "reviewed": 959,
+   "total": 966,
+   "reviewed": 966,
    "date": "2026-11-22",
-   "report": "reports/drive-2026-11-22.md",
+   "report": "reports/drive-seguridad-2026-11-22.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."
   },
   "goal_groups": [
