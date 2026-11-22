@@ -14,12 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_handbook_is_separate_from_repository_inventory_and_keeps_verified_identities():
     catalog = build_catalog(ROOT)
     h = catalog['handbook']
-    assert len(h['resources']) == 57
+    assert len(h['resources']) == 81
     assert len(h['prompts']) == 48
     topics = {p['topic'] for p in h['prompts']}
     assert {'disenar', 'lanzar', 'contenido', 'negocio', 'aprender', 'diagnosticar'} <= topics
     assert all('docs.google.com' not in p.get('inspired_by', {}).get('url', '') for p in h['prompts'])
-    assert len(h['paths']) == 8
+    assert len(h['paths']) == 9
     assert catalog['counts']['repos'] == len(catalog['repos'])
     by_id = {r['id']: r for r in h['resources']}
     assert by_id['muse']['sources'][0]['url'] == 'https://muse.ai/'
@@ -74,12 +74,16 @@ assert.ok(h.selectResources(c,'configurar','movil','iPhone').some(r=>r.id==='ata
 assert.ok(!h.selectResources(c,'servicios').some(r=>r.id==='codex'));
 assert.equal(h.sectionOf(c,'supabase'),'servicios');
 assert.equal(h.sectionOf(c,'ruta-android'),'configurar');
+assert.equal(h.sectionOf(c,'ruta-revisar-seguridad-web'),'servicios');
+assert.deepEqual(h.selectResources(c,'servicios','seguridad','virustotal').map(r=>r.id),['virustotal-ai']);
 const dangerous='<img src=x onerror=alert(1)>';
 for (const render of [()=>h.index(c,'configurar',new URLSearchParams({q:dangerous})),()=>h.prompts(c,new URLSearchParams({q:dangerous}))]){
  const html=render();assert.ok(!html.includes(dangerous));assert.ok(html.includes('&lt;img'));
 }
 for(const resource of c.handbook.resources){
- const html=h.detail(c,resource.id);assert.ok(html.includes(resource.name));
+ const html=h.detail(c,resource.id);
+ const name=resource.name.replaceAll('&','&amp;');
+ assert.ok(html.includes('<h1>'+name+'</h1>'),resource.id);
  assert.ok(html.includes('manual-sources'));assert.ok(html.includes('manual-start'));
 }
 for(const path of c.handbook.paths)assert.ok(h.detail(c,path.id).includes('Recorrido sugerido'));
