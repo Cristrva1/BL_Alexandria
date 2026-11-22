@@ -1,0 +1,437 @@
+{
+ "lote": "drive-seguridad-2026-11-22",
+ "fecha": "2026-11-22",
+ "metodo": "Contraste documental por etiqueta de publicación, permisos, configuración y avisos del fabricante. Sin instalación, escaneo de binarios ni pruebas activas.",
+ "repos": [
+  {
+   "gh": "agent-substrate/substrate",
+   "id": "agent-substrate",
+   "name": "Agent Substrate",
+   "cat": 22,
+   "sub": "infra",
+   "kind": "server",
+   "one": "Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados.",
+   "how": "El plano de control asigna cada tarea a un entorno y guarda su estado para poder reanudarla; las reglas de identidad y red se configuran por separado.",
+   "examples": [
+    "Comparar dos llamadas al contador de demostración.",
+    "Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende."
+   ],
+   "steps": [
+    "Abre la guía del tag v1.0.1 y prepara su clúster desechable de kind. Cambia al contexto de prueba antes de instalar el plano de control.",
+    "Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local.",
+    "Comprueba el resultado: el contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado."
+   ],
+   "ligero": true,
+   "url": "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+   "setup": "heavy",
+   "goals": [
+    "servicios"
+   ],
+   "license": "Apache-2.0",
+   "caveat": "La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de terceros; el modelo de amenazas no acredita aislamiento en producción.",
+   "note": "La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de terceros; el modelo de amenazas no acredita aislamiento en producción.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "cost_note": "El ejemplo Counter no usa modelos, suscripciones de IA ni claves de proveedor. Kubernetes gestionado, almacenamiento y modelos de otras cargas se pagan aparte.",
+    "hardware": "prerequisites",
+    "hardware_note": "Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/security/threat-model.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/authorization.md",
+     "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/network-egress.md",
+     "https://github.com/agent-substrate/substrate/releases/tag/v1.0.1",
+     "https://github.com/agent-substrate/substrate/blob/main/LICENSE"
+    ]
+   },
+   "try": [
+    "Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local.",
+    "El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "alibaba/open-code-review",
+   "id": "open-code-review",
+   "name": "Open Code Review",
+   "cat": 7,
+   "sub": "calidad",
+   "kind": "skill",
+   "one": "Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes.",
+   "how": "El modo delegado organiza los archivos, las reglas y la cobertura; el análisis lo realiza Claude Code, Codex u otro cliente admitido.",
+   "examples": [
+    "Revisar condiciones de error en un cambio de ejemplo.",
+    "Preparar una lista de comprobaciones para una PR de un proyecto propio."
+   ],
+   "steps": [
+    "Prepara Git 2.41 o superior; elige la CLI del release v1.14.1 y sigue la instalación de la skill delegada para tu cliente.",
+    "Pide que revise un cambio ficticio de un proyecto propio, sin permitir escrituras ni cargar un repositorio de origen desconocido.",
+    "Comprueba el resultado: el informe nombra archivos, hallazgos y comprobaciones sin modificar el proyecto de ejemplo."
+   ],
+   "ligero": true,
+   "url": "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+   "setup": "medium",
+   "goals": [
+    "programar",
+    "skills"
+   ],
+   "license": "Apache-2.0",
+   "caveat": "GHSA-wwg6-qfxw-xffj afecta versiones anteriores a 1.11.1; el tag 1.14.1 incluye la corrección. Usa solo repositorios propios o de confianza. Si el modelo es remoto, el cliente puede enviar fragmentos del código. El ajuste de telemetría de la CLI está apagado por defecto.",
+   "note": "GHSA-wwg6-qfxw-xffj afecta versiones anteriores a 1.11.1; el tag 1.14.1 incluye la corrección. Usa solo repositorios propios o de confianza. Si el modelo es remoto, el cliente puede enviar fragmentos del código. El ajuste de telemetría de la CLI está apagado por defecto.",
+   "access": {
+    "mode": "agent_extension",
+    "api": "optional",
+    "cost": "choice",
+    "local_model": "unconfirmed",
+    "api_note": "El modo delegado usa el acceso del asistente. Para el modo nativo se configura y autentica un proveedor aparte.",
+    "cost_note": "En modo delegado consumes el acceso y los límites de Claude Code o Codex. En modo nativo se configura el proveedor de OCR y su facturación por separado.",
+    "hardware": "prerequisites",
+    "hardware_note": "Git 2.41 o superior, la CLI ocr y un cliente apropiado para la ruta delegada.",
+    "local_note": "No se ha comprobado una ruta local completa; la ficha se limita al modo delegado.",
+    "subscription_note": "La skill delegada está documentada para Claude Code y Codex; esto no otorga una credencial para el modo nativo de OCR.",
+    "claude_code": "host",
+    "codex": "host",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/pages/src/content/docs/en/telemetry.md",
+     "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/.github/SECURITY.md",
+     "https://github.com/alibaba/open-code-review/releases/tag/v1.14.1",
+     "https://github.com/alibaba/open-code-review/blob/main/LICENSE",
+     "https://github.com/alibaba/open-code-review/security/advisories/GHSA-wwg6-qfxw-xffj"
+    ]
+   },
+   "try": [
+    "Pide que revise un cambio ficticio de un proyecto propio, sin permitir escrituras ni cargar un repositorio de origen desconocido.",
+    "El informe nombra archivos, hallazgos y comprobaciones sin modificar el proyecto de ejemplo."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "fosrl/pangolin",
+   "id": "pangolin",
+   "name": "Pangolin Community Edition",
+   "cat": 22,
+   "sub": "redes",
+   "kind": "server",
+   "one": "Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo.",
+   "how": "El servidor recibe la conexión, comprueba quién puede usar el recurso y lo redirige hacia la aplicación configurada.",
+   "examples": [
+    "Comprobar el acceso de una cuenta de prueba a una web ficticia.",
+    "Comparar qué ven dos cuentas con roles distintos."
+   ],
+   "steps": [
+    "Sigue la guía para Community Edition en un servidor de prueba y confirma que la imagen del servidor corresponde al release 1.27.1 o posterior.",
+    "Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso.",
+    "Comprueba el resultado: la cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso."
+   ],
+   "ligero": true,
+   "url": "https://docs.pangolin.net/self-host/quick-install",
+   "setup": "heavy",
+   "goals": [
+    "servicios"
+   ],
+   "license": "NOASSERTION",
+   "caveat": "Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión. Si activas Gerbil, su contenedor solicita NET_ADMIN. Mantén el token de instalación privado y revisa por separado las versiones de Gerbil, Traefik y clientes.",
+   "note": "Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión. Si activas Gerbil, su contenedor solicita NET_ADMIN. Mantén el token de instalación privado y revisa por separado las versiones de Gerbil, Traefik y clientes.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "cost_note": "Community Edition se puede autoalojar sin pagar una licencia comercial por esa edición; VPS, dominio y operación pueden costar. Cloud y Enterprise tienen condiciones aparte. El proxy de prueba no usa IA.",
+    "hardware": "prerequisites",
+    "hardware_note": "Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+     "https://docs.pangolin.net/self-host/quick-install",
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/LICENSE",
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/SECURITY.md",
+     "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/docker-compose.yml",
+     "https://docs.pangolin.net/self-host/how-to-update",
+     "https://github.com/fosrl/pangolin/releases/tag/1.27.1",
+     "https://github.com/fosrl/pangolin/blob/main/LICENSE",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cxv-w5ph-7p6h",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-9784-q2hc-2qqq",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-v6q2-c45v-8vx8",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-hpcv-689w-jrg3",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-w92q-9g55-f4r2",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-fhv5-xx8r-wxfg",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cfx-v2f2-3mqq",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-9vcq-r7wr-9r3r",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-5ph5-x9xv-86fv",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-5772-vhpw-ppr8",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-m664-jx49-xhw7",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-5h3v-3645-78xj",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-9xxh-cx3p-fx3m",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-3pr6-pcvv-9jrp",
+     "https://github.com/fosrl/pangolin/security/advisories/GHSA-j32m-3vr4-9ghw"
+    ]
+   },
+   "try": [
+    "Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso.",
+    "La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso."
+   ],
+   "licencia_nota": "Alcance de la recomendación: Community Edition (AGPL-3.0). El repositorio incluye archivos bajo la Fossorial Commercial License; no se extiende a ellos la licencia comunitaria.",
+   "alt": []
+  },
+  {
+   "gh": "leiweibau/Pi.Alert",
+   "id": "pi-alert-leiweibau",
+   "name": "Pi.Alert",
+   "cat": 16,
+   "sub": "deteccion",
+   "kind": "server",
+   "one": "Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.",
+   "how": "Usa métodos de descubrimiento de red como ARP y puede importar datos de otros servicios; guarda el inventario y los eventos en el servidor.",
+   "examples": [
+    "Identificar un dispositivo nuevo en una red de prueba.",
+    "Verificar si se registra la desconexión de un dispositivo ya conocido."
+   ],
+   "steps": [
+    "Revisa el instalador de la etiqueta v2026-10-16 y la guía de seguridad. Prepara un equipo Debian dedicado en una red de prueba.",
+    "Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido.",
+    "Comprueba el resultado: el evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada."
+   ],
+   "ligero": true,
+   "url": "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+   "setup": "heavy",
+   "goals": [
+    "seguridad"
+   ],
+   "license": "GPL-3.0",
+   "caveat": "El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento GHSA-66mg-wpcq-2phq fija v2026-08-14 como corregida. La etiqueta v2026-10-16 la incorpora. No publiques la interfaz en internet.",
+   "note": "El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento GHSA-66mg-wpcq-2phq fija v2026-08-14 como corregida. La etiqueta v2026-10-16 la incorpora. No publiques la interfaz en internet.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "cost_note": "Código GPL-3.0 y sin API ni modelo de IA. Consume el equipo del monitor; los canales o servicios de aviso que conectes pueden tener costes propios.",
+    "hardware": "prerequisites",
+    "hardware_note": "Equipo Debian compatible en la red propia, acceso administrativo para preparar el servidor y un segmento de prueba.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/install/pialert_install.sh",
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/NETWORK_RELATIONSHIP.md",
+     "https://github.com/leiweibau/Pi.Alert/releases/tag/v2026-10-16",
+     "https://github.com/leiweibau/Pi.Alert/blob/main/LICENSE.txt",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vmjp-664r-67rw",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-f58p-mp38-66qv",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-ff6r-j7j6-gfx8",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vp5h-q268-p65m",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-66mg-wpcq-2phq",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-xg85-f8qw-7c5f",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-r59g-5wf9-f7vv",
+     "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-m929-j7w8-334j"
+    ]
+   },
+   "try": [
+    "Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido.",
+    "El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "libracoder/kiri",
+   "id": "kiri",
+   "name": "Kiri",
+   "cat": 22,
+   "sub": "infra",
+   "kind": "app",
+   "one": "Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker.",
+   "how": "Crea un contexto de Docker propio y, según el sistema, utiliza una máquina virtual o un entorno Linux para los contenedores.",
+   "examples": [
+    "Arrancar un contenedor de demostración sin montar carpetas personales.",
+    "Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual."
+   ],
+   "steps": [
+    "Selecciona el artefacto de tu plataforma en el release v0.2.2 o posterior y revisa la procedencia y el SHA-256 publicados.",
+    "En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles.",
+    "Comprueba el resultado: la salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri."
+   ],
+   "ligero": true,
+   "url": "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+   "setup": "medium",
+   "goals": [
+    "servicios",
+    "programar"
+   ],
+   "license": "Apache-2.0",
+   "caveat": "Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales. No uses esta ficha para alojar imágenes de origen desconocido ni abrir túneles públicos.",
+   "note": "Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales. No uses esta ficha para alojar imágenes de origen desconocido ni abrir túneles públicos.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "cost_note": "Código Apache-2.0. El uso local no llama a ningún modelo; almacenamiento, hardware y opciones remotas se evalúan aparte.",
+    "hardware": "prerequisites",
+    "hardware_note": "En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+     "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+     "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/SECURITY.md",
+     "https://github.com/libracoder/kiri/blob/main/LICENSE",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-wpff-823r-3w23",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-qf7g-72mh-h4fp",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-59gg-7j35-5826",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-4g46-535w-4v45",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-pcqf-qg5g-c5j8",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-rprm-mrvg-qp96",
+     "https://github.com/libracoder/kiri/security/advisories/GHSA-4xv7-3m63-r6jv"
+    ]
+   },
+   "try": [
+    "En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles.",
+    "La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "tailscale/tailcat",
+   "id": "tailcat",
+   "name": "Tailcat",
+   "cat": 22,
+   "sub": "redes",
+   "kind": "app",
+   "one": "Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos.",
+   "how": "Las dos instancias negocian una conexión cifrada; si no se establece un camino directo pueden usar relés DERP.",
+   "examples": [
+    "Enviar una línea de texto ficticio entre dos equipos propios.",
+    "Comprobar si un laboratorio de red local consigue una conexión directa o vía relé."
+   ],
+   "steps": [
+    "Abre la guía de instalación para v0.7.0 o posterior. Usa dos equipos propios y conserva la dirección de la sesión como dato privado.",
+    "Elige solo el ejemplo de texto entre terminales; cierra ambas instancias tras recibir la línea.",
+    "Comprueba el resultado: la misma línea aparece en la otra terminal sin exponer directorios ni servicios."
+   ],
+   "ligero": true,
+   "url": "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+   "setup": "medium",
+   "goals": [
+    "servicios"
+   ],
+   "license": "BSD-3-Clause",
+   "caveat": "GHSA-w496-344h-g2vv afecta al modo de recepción de 0.4.0 y se corrigió en 0.5.0; 0.7.0 incluye cambios posteriores. El fabricante describe el producto como experimental y pensado para extremos de confianza. Esta ficha no recomienda shells, directorios de escritura ni nodos de salida.",
+   "note": "GHSA-w496-344h-g2vv afecta al modo de recepción de 0.4.0 y se corrigió en 0.5.0; 0.7.0 incluye cambios posteriores. El fabricante describe el producto como experimental y pensado para extremos de confianza. Esta ficha no recomienda shells, directorios de escritura ni nodos de salida.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "cost_note": "Código BSD-3-Clause y sin IA. El proyecto describe relés DERP gratuitos con límites; un relé propio requiere infraestructura.",
+    "hardware": "prerequisites",
+    "hardware_note": "Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+     "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+     "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/SECURITY.md",
+     "https://tailscale.com/tailcat",
+     "https://github.com/tailscale/tailcat/releases/tag/v0.7.0",
+     "https://github.com/tailscale/tailcat/blob/main/LICENSE",
+     "https://github.com/tailscale/tailcat/security/advisories/GHSA-w496-344h-g2vv"
+    ]
+   },
+   "try": [
+    "Elige solo el ejemplo de texto entre terminales; cierra ambas instancias tras recibir la línea.",
+    "La misma línea aparece en la otra terminal sin exponer directorios ni servicios."
+   ],
+   "alt": []
+  },
+  {
+   "gh": "vercel-labs/screen-relay",
+   "id": "screen-relay",
+   "name": "Screen Relay",
+   "cat": 22,
+   "sub": "infra",
+   "kind": "app",
+   "one": "Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal.",
+   "how": "El motor sirve la pantalla y los eventos de entrada; la configuración decide dónde escucha y cuándo necesita un token.",
+   "examples": [
+    "Mirar la interfaz de una aplicación de prueba en un escritorio vacío.",
+    "Capturar una ventana de demostración en un entorno separado."
+   ],
+   "steps": [
+    "Usa la guía Docker del tag v0.1.5 en una máquina de prueba: publica el puerto solo en loopback y conserva privado el enlace que entrega el motor.",
+    "Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales.",
+    "Comprueba el resultado: el visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno."
+   ],
+   "ligero": true,
+   "url": "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+   "setup": "heavy",
+   "goals": [
+    "programar",
+    "servicios"
+   ],
+   "license": "Apache-2.0",
+   "caveat": "El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token. No expongas el puerto ni des acceso a una sesión personal.",
+   "note": "El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token. No expongas el puerto ni des acceso a una sesión personal.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "choice",
+    "local_model": "not_applicable",
+    "api_note": "La primera prueba no llama a un modelo de IA.",
+    "cost_note": "El visor local no necesita un modelo; consume memoria y almacenamiento. Una máquina alquilada, Vercel Sandbox o un agente externo se pagan por separado.",
+    "hardware": "prerequisites",
+    "hardware_note": "Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor.",
+    "local_note": "La función descrita no depende de un modelo de IA.",
+    "subscription_note": "La ruta descrita no utiliza una suscripción de IA.",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "sources": [
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/configuration.mdx",
+     "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/getting-started.mdx",
+     "https://registry.npmjs.org/screen-relay/0.1.5",
+     "https://github.com/vercel-labs/screen-relay/releases/tag/v0.1.5",
+     "https://github.com/vercel-labs/screen-relay/blob/main/LICENSE"
+    ]
+   },
+   "try": [
+    "Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales.",
+    "El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno."
+   ],
+   "alt": []
+  }
+ ]
+}

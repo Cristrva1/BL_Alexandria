@@ -2915,6 +2915,35 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `metasploit`, `bloodhound`, `lynis`
 
+## `pi-alert-leiweibau`
+role=platform · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.
+**Stack:** PHP
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La primera prueba no llama a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función descrita no depende de un modelo de IA.
+- Coste: El coste depende del proveedor o la ruta. Código GPL-3.0 y sin API ni modelo de IA. Consume el equipo del monitor; los canales o servicios de aviso que conectes pueden tener costes propios.
+- Equipo: Preparación según la ruta elegida. Equipo Debian compatible en la red propia, acceso administrativo para preparar el servidor y un segmento de prueba.
+**Repo:** https://github.com/leiweibau/Pi.Alert
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Identificar un dispositivo nuevo en una red de prueba.; Verificar si se registra la desconexión de un dispositivo ya conocido.
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido.
+**Qué comprobar:** El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `prowler`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security,cloud,aws
 

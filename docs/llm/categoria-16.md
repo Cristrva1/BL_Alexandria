@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad
 
-Categoría 16 completa (141 repos, 14 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -104,6 +104,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `securityonion` | deteccion | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y… | 4 Experto | 52 | Elastic-2.0 (source-available) | sin grupo |
 | `detection-rules` | deteccion | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 48 | Elastic-2.0 (source-available) | sin grupo |
 | `loki` | deteccion | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints… | 1 Básico | 41 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pi-alert-leiweibau` | deteccion | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece… | 3 Avanzado | — | GPL-3.0 | sin grupo |
 | `osv-scanner` | nube-contenedores | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `trivy` | nube-contenedores | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `syft` | nube-contenedores | Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes… | 1 Básico | 77 | Apache-2.0 (OSI permisiva) | recomendado |
@@ -167,8 +168,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 Este tema supera ~25k tokens, así que las fichas están en partes. Carga solo la parte que contiene los repos de la tabla que te interesan:
 
 - `categoria-16-parte-1.md`: `angr`, `ghidra`, `ilspy`, `radare2`, `apktool`, `imhex`, `jadx`, `capa`, `frida`, `yara`, `rizin`, `x64dbg`, `pwndbg`, `raddebugger`, `dnspy`, `nuclei`, `mitmproxy`, `locust`, `juice-shop`, `zaproxy`, `sqlmap`, `wireshark`, `k6`, `ffuf`, `pwntools`, `aflplusplus`, `bettercap`, `hashcat`, `webgoat`, `wrongsecrets`, `dirsearch`, `nettacker`, `gobuster`, `feroxbuster`, `securecodebox`, `syzkaller`, `thc-hydra`, `owtf`, `john`, `wpscan`, `aircrack-ng`, `crapi`, `caido`, `httpx`, `subfinder`, `amass`, `interactsh`, `naabu`, `rustscan`, `dnsx`, `noir`, `nmap`
-- `categoria-16-parte-2.md`: `masscan`, `metasploit`, `peass-ng`, `sliver`, `atomic-red-team`, `caldera`, `empire`, `evilginx2`, `mythic`, `social-engineer-toolkit`, `ligolo-ng`, `netexec`, `bloodhound`, `impacket`, `goad`, `certipy`, `responder`, `mimikatz`, `rubeus`, `crowdsec`, `wazuh`, `osquery`, `zeek`, `modsecurity`, `coreruleset`, `arkime`, `coraza`, `fail2ban`, `suricata`, `sigma`, `shuffle`, `securityonion`, `detection-rules`, `loki`, `osv-scanner`, `trivy`, `syft`, `falco`, `checkov`, `cosign`, `grype`, `prowler`, `kube-bench`, `scubagear`, `pacu`, `rea`, `strix`, `shannon`, `garak`, `craft-anything`, `defectdojo`, `semgrep`, `bla`, `dependency-track`, `threat-dragon`
-- `categoria-16-parte-3.md`: `dependency-check`, `cdxgen`, `java-html-sanitizer`, `pytm`, `dep-scan`, `lynis`, `owasp-java-encoder`, `cheatsheetseries`, `wstg`, `mastg`, `seclists`, `payloadsallthethings`, `hacktricks`, `awesome-reverse-engineering`, `asvs`, `masvs`, `owasp-top10`, `aisvs`, `owasp-llm-top10`, `owasp-devguide`, `owasp-api-security`, `awesome-ai-reverse-engineering`, `owasp-ai-testing-guide`, `skillspector`, `cybersecurity-skills`, `security-audit-skill`, `defending-code-reference-harness`, `hayabusa`, `velociraptor`, `volatility3`, `autopsy`, `sleuthkit`, `opencti`, `misp`
+- `categoria-16-parte-2.md`: `masscan`, `metasploit`, `peass-ng`, `sliver`, `atomic-red-team`, `caldera`, `empire`, `evilginx2`, `mythic`, `social-engineer-toolkit`, `ligolo-ng`, `netexec`, `bloodhound`, `impacket`, `goad`, `certipy`, `responder`, `mimikatz`, `rubeus`, `crowdsec`, `wazuh`, `osquery`, `zeek`, `modsecurity`, `coreruleset`, `arkime`, `coraza`, `fail2ban`, `suricata`, `sigma`, `shuffle`, `securityonion`, `detection-rules`, `loki`, `pi-alert-leiweibau`, `osv-scanner`, `trivy`, `syft`, `falco`, `checkov`, `cosign`, `grype`, `prowler`, `kube-bench`, `scubagear`, `pacu`, `rea`, `strix`, `shannon`, `garak`, `craft-anything`, `defectdojo`, `semgrep`, `bla`
+- `categoria-16-parte-3.md`: `dependency-track`, `threat-dragon`, `dependency-check`, `cdxgen`, `java-html-sanitizer`, `pytm`, `dep-scan`, `lynis`, `owasp-java-encoder`, `cheatsheetseries`, `wstg`, `mastg`, `seclists`, `payloadsallthethings`, `hacktricks`, `awesome-reverse-engineering`, `asvs`, `masvs`, `owasp-top10`, `aisvs`, `owasp-llm-top10`, `owasp-devguide`, `owasp-api-security`, `awesome-ai-reverse-engineering`, `owasp-ai-testing-guide`, `skillspector`, `cybersecurity-skills`, `security-audit-skill`, `defending-code-reference-harness`, `hayabusa`, `velociraptor`, `volatility3`, `autopsy`, `sleuthkit`, `opencti`, `misp`
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

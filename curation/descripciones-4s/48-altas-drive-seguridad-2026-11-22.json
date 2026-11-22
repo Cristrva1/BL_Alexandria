@@ -1,0 +1,202 @@
+{
+ "batch": "altas-drive-seguridad-2026-11-22",
+ "checked_at": "2026-11-22",
+ "method": "Contraste documental por etiqueta de publicación, permisos, configuración y avisos del fabricante. Sin instalación, escaneo de binarios ni pruebas activas.",
+ "repos": {
+  "agent-substrate": {
+   "que_es": "Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.",
+   "que_hace": "Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados.",
+   "como_lo_hace": "El plano de control asigna cada tarea a un entorno y guarda su estado para poder reanudarla; las reglas de identidad y red se configuran por separado.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/README.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/security/threat-model.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/authorization.md",
+    "https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/guides/network-egress.md",
+    "https://github.com/agent-substrate/substrate/releases/tag/v1.0.1",
+    "https://github.com/agent-substrate/substrate/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "agent-substrate/substrate",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.0.1 (2026-11-20)"
+   }
+  },
+  "open-code-review": {
+   "que_es": "Una herramienta de revisión defensiva de código para cambios propios antes de fusionarlos.",
+   "que_hace": "Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes.",
+   "como_lo_hace": "El modo delegado organiza los archivos, las reglas y la cobertura; el análisis lo realiza Claude Code, Codex u otro cliente admitido.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/README.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/pages/src/content/docs/en/telemetry.md",
+    "https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/.github/SECURITY.md",
+    "https://github.com/alibaba/open-code-review/releases/tag/v1.14.1",
+    "https://github.com/alibaba/open-code-review/blob/main/LICENSE",
+    "https://github.com/alibaba/open-code-review/security/advisories/GHSA-wwg6-qfxw-xffj"
+   ],
+   "github": {
+    "name_with_owner": "alibaba/open-code-review",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-22",
+    "latest_release": "v1.14.1 (2026-11-22)"
+   }
+  },
+  "pangolin": {
+   "que_es": "Una plataforma para dar acceso identificado a aplicaciones y servicios propios.",
+   "que_hace": "Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo.",
+   "como_lo_hace": "El servidor recibe la conexión, comprueba quién puede usar el recurso y lo redirige hacia la aplicación configurada.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/README.md",
+    "https://docs.pangolin.net/self-host/quick-install",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/LICENSE",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/SECURITY.md",
+    "https://github.com/fosrl/pangolin/blob/0e011f57f751c77a906eba7fde3cd8765290ab01/install/config/docker-compose.yml",
+    "https://docs.pangolin.net/self-host/how-to-update",
+    "https://github.com/fosrl/pangolin/releases/tag/1.27.1",
+    "https://github.com/fosrl/pangolin/blob/main/LICENSE",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cxv-w5ph-7p6h",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-9784-q2hc-2qqq",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-v6q2-c45v-8vx8",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-hpcv-689w-jrg3",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-w92q-9g55-f4r2",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-fhv5-xx8r-wxfg",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-3cfx-v2f2-3mqq",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-9vcq-r7wr-9r3r",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-5ph5-x9xv-86fv",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-5772-vhpw-ppr8",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-m664-jx49-xhw7",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-5h3v-3645-78xj",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-9xxh-cx3p-fx3m",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-3pr6-pcvv-9jrp",
+    "https://github.com/fosrl/pangolin/security/advisories/GHSA-j32m-3vr4-9ghw"
+   ],
+   "github": {
+    "name_with_owner": "fosrl/pangolin",
+    "archived": false,
+    "pushed_at": "2026-11-20",
+    "license": "NOASSERTION",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-22",
+    "latest_release": "1.27.1 (2026-11-20)"
+   }
+  },
+  "pi-alert-leiweibau": {
+   "que_es": "Monitor de dispositivos para una red propia que muestra cambios en su interfaz web.",
+   "que_hace": "Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.",
+   "como_lo_hace": "Usa métodos de descubrimiento de red como ARP y puede importar datos de otros servicios; guarda el inventario y los eventos en el servidor.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/install/pialert_install.sh",
+    "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/NETWORK_RELATIONSHIP.md",
+    "https://github.com/leiweibau/Pi.Alert/releases/tag/v2026-10-16",
+    "https://github.com/leiweibau/Pi.Alert/blob/main/LICENSE.txt",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vmjp-664r-67rw",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-f58p-mp38-66qv",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-ff6r-j7j6-gfx8",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-vp5h-q268-p65m",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-66mg-wpcq-2phq",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-xg85-f8qw-7c5f",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-r59g-5wf9-f7vv",
+    "https://github.com/leiweibau/Pi.Alert/security/advisories/GHSA-m929-j7w8-334j"
+   ],
+   "github": {
+    "name_with_owner": "leiweibau/Pi.Alert",
+    "archived": false,
+    "pushed_at": "2026-10-16",
+    "license": "GPL-3.0",
+    "primary_language": "PHP",
+    "checked_at": "2026-11-22",
+    "latest_release": "v2026-10-16 (2026-10-16)"
+   }
+  },
+  "kiri": {
+   "que_es": "Un motor con interfaz para contenedores de desarrollo en un equipo personal.",
+   "que_hace": "Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker.",
+   "como_lo_hace": "Crea un contexto de Docker propio y, según el sistema, utiliza una máquina virtual o un entorno Linux para los contenedores.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/README.md",
+    "https://github.com/libracoder/kiri/releases/tag/v0.2.2",
+    "https://github.com/libracoder/kiri/blob/686bffa5f38ba6ecc3d086c36ec7148cd7fb976a/SECURITY.md",
+    "https://github.com/libracoder/kiri/blob/main/LICENSE",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-wpff-823r-3w23",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-qf7g-72mh-h4fp",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-59gg-7j35-5826",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-4g46-535w-4v45",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-pcqf-qg5g-c5j8",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-rprm-mrvg-qp96",
+    "https://github.com/libracoder/kiri/security/advisories/GHSA-4xv7-3m63-r6jv"
+   ],
+   "github": {
+    "name_with_owner": "libracoder/kiri",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.2.2 (2026-11-19)"
+   }
+  },
+  "tailcat": {
+   "que_es": "Una herramienta experimental de terminal para unir dos extremos bajo control de la misma persona.",
+   "que_hace": "Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos.",
+   "como_lo_hace": "Las dos instancias negocian una conexión cifrada; si no se establece un camino directo pueden usar relés DERP.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/README.md",
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md",
+    "https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/SECURITY.md",
+    "https://tailscale.com/tailcat",
+    "https://github.com/tailscale/tailcat/releases/tag/v0.7.0",
+    "https://github.com/tailscale/tailcat/blob/main/LICENSE",
+    "https://github.com/tailscale/tailcat/security/advisories/GHSA-w496-344h-g2vv"
+   ],
+   "github": {
+    "name_with_owner": "tailscale/tailcat",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "BSD-3-Clause",
+    "primary_language": "Go",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.7.0 (2026-09-20)"
+   }
+  },
+  "screen-relay": {
+   "que_es": "Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.",
+   "que_hace": "Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal.",
+   "como_lo_hace": "El motor sirve la pantalla y los eventos de entrada; la configuración decide dónde escucha y cuándo necesita un token.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/README.md",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/configuration.mdx",
+    "https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/getting-started.mdx",
+    "https://registry.npmjs.org/screen-relay/0.1.5",
+    "https://github.com/vercel-labs/screen-relay/releases/tag/v0.1.5",
+    "https://github.com/vercel-labs/screen-relay/blob/main/LICENSE"
+   ],
+   "github": {
+    "name_with_owner": "vercel-labs/screen-relay",
+    "archived": false,
+    "pushed_at": "2026-11-22",
+    "license": "Apache-2.0",
+    "primary_language": "C++",
+    "checked_at": "2026-11-22",
+    "latest_release": "v0.1.5 (2026-11-22)"
+   }
+  }
+ }
+}

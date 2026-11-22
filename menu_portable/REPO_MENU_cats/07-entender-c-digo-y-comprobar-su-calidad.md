@@ -432,6 +432,35 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Ves una lista de candidatos y los archivos del ejemplo siguen presentes.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 
+## `open-code-review`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes.
+**Stack:** Go, Makefile, go.mod, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El modo delegado usa el acceso del asistente. Para el modo nativo se configura y autentica un proveedor aparte.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Integración no documentada
+- Modelos locales: Ejecución con modelos locales por confirmar. No se ha comprobado una ruta local completa; la ficha se limita al modo delegado.
+- Coste: El coste depende del proveedor o la ruta. En modo delegado consumes el acceso y los límites de Claude Code o Codex. En modo nativo se configura el proveedor de OCR y su facturación por separado.
+- Equipo: Preparación según la ruta elegida. Git 2.41 o superior, la CLI ocr y un cliente apropiado para la ruta delegada.
+**Repo:** https://github.com/alibaba/open-code-review
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar condiciones de error en un cambio de ejemplo.; Preparar una lista de comprobaciones para una PR de un proyecto propio.
+**Evita si:** no usas un agente compatible con skills
+**Primera prueba propuesta:** Pide que revise un cambio ficticio de un proyecto propio, sin permitir escrituras ni cargar un repositorio de origen desconocido.
+**Qué comprobar:** El informe nombra archivos, hallazgos y comprobaciones sin modificar el proyecto de ejemplo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `openai-python`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,python
 

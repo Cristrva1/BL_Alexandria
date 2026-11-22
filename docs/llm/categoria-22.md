@@ -1,6 +1,6 @@
 # Alexandría para agentes · Infraestructura, despliegue y herramientas para agentes
 
-Categoría 22 completa (27 repos, 4 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 22 completa (32 repos, 4 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=22 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -28,6 +28,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `nodeterm` | infra | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con… | 2 Intermedio | 48 | BUSL-1.1 (source-available) | sin grupo |
 | `computer-use-preview` | infra | Implementación de referencia de Google para que Gemini vea la pantalla y opere… | 2 Intermedio | 45 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-task-master` | infra | Sistema de gestión de tareas con IA que prepara y organiza trabajo de… | 2 Intermedio | 42 | MIT + Commons Clause (source-available) | sin grupo |
+| `agent-substrate` | infra | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `kiri` | infra | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `screen-relay` | infra | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica… | 3 Avanzado | — | Apache-2.0 | sin grupo |
 | `freedomain` | recursos | Recursos de registro de dominios y aprendizaje práctico de DNS publicados por… | 1 Básico | 57 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `free-for-dev` | recursos | Directorio de servicios de infraestructura y desarrollo que ofrecen planes o… | 1 Básico | 47 | — (sin licencia detectada) | sin grupo |
 | `headscale` | redes | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 69 | BSD-3-Clause (OSI permisiva) | recomendado |
@@ -35,6 +38,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `netbird` | redes | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso… | 2 Intermedio | 63 | BSD-3-Clause + AGPL-3.0 (management, signal, relay) (OSI copyleft) | alternativa |
 | `wg-easy` | redes | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `masterdnsvpn` | redes | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
+| `pangolin` | redes | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y… | 3 Avanzado | — | NOASSERTION | sin grupo |
+| `tailcat` | redes | Conecta dos equipos propios para el intercambio temporal de datos mediante un… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
 | `supabase` | infraestructura | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras… | 3 Avanzado | 76 | Apache-2.0 (OSI permisiva) | recomendado |
 | `coolify` | infraestructura | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
 | `appwrite` | infraestructura | Plataforma de backend abierta orientada a agentes y desarrolladores… | 2 Intermedio | 73 | BSD-3-Clause (OSI permisiva) | alternativa |
@@ -189,6 +194,36 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `spec-kit`
 - **Riesgos y avisos:** Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativa (elige una): spec-kit. Actividad reciente baja. Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la….
 
+### Agent Substrate (`agent-substrate`)
+
+- **Repo:** https://github.com/agent-substrate/substrate · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.
+- **Cuándo elegirlo:** Casos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.
+- **Requisitos:** nivel 3: preparación pesada, despliegue con Kubernetes/Helm; Go, go.mod; hardware prerequisites; API de IA: no; Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md
+- **Primera prueba propuesta (no ejecutada):** Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local. Éxito: El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado.
+- **Riesgos y avisos:** La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de….
+
+### Kiri (`kiri`)
+
+- **Repo:** https://github.com/libracoder/kiri · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Un motor con interfaz para contenedores de desarrollo en un equipo personal.
+- **Cuándo elegirlo:** Casos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.
+- **Requisitos:** nivel 2: preparación media; Rust, Cargo.toml; hardware prerequisites; API de IA: no; En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/libracoder/kiri/releases/tag/v0.2.2
+- **Primera prueba propuesta (no ejecutada):** En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles. Éxito: La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri.
+- **Riesgos y avisos:** Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales.
+
+### Screen Relay (`screen-relay`)
+
+- **Repo:** https://github.com/vercel-labs/screen-relay · Apache-2.0 · nivel 3 · —/100
+- **Qué es:** Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.
+- **Cuándo elegirlo:** Casos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado.
+- **Requisitos:** nivel 3: preparación pesada; C++, Dockerfile, Makefile, package.json; hardware prerequisites; API de IA: no; Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx
+- **Primera prueba propuesta (no ejecutada):** Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales. Éxito: El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno.
+- **Riesgos y avisos:** El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token.
+
 ### FreeDomain (`freedomain`)
 
 - **Repo:** https://github.com/DigitalPlatDev/FreeDomain · AGPL-3.0 · nivel 1 · 57/100
@@ -271,6 +306,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Revisa la delegación DNS y prepara una prueba entre equipos propios antes de sustituir una conexión habitual Éxito: Puedes identificar servidor, resolver y túnel y comprobar conectividad básica
 - **Combina con:** `freedomain` [22/recursos], `free-for-dev` [22/recursos], `casaos` [22/infraestructura]
 - **Riesgos y avisos:** Sin alternativas declaradas. Herramienta de doble uso con implicaciones legales según el país; no se probó. Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers.
+
+### Pangolin Community Edition (`pangolin`)
+
+- **Repo:** https://github.com/fosrl/pangolin · NOASSERTION · nivel 3 · —/100
+- **Qué es:** Una plataforma para dar acceso identificado a aplicaciones y servicios propios.
+- **Cuándo elegirlo:** Casos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.
+- **Requisitos:** nivel 3: preparación pesada; TypeScript, Dockerfile, Makefile, compose.yaml, package.json; hardware prerequisites; API de IA: no; Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.pangolin.net/self-host/quick-install
+- **Primera prueba propuesta (no ejecutada):** Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso. Éxito: La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión.
+
+### Tailcat (`tailcat`)
+
+- **Repo:** https://github.com/tailscale/tailcat · BSD-3-Clause · nivel 2 · —/100
+- **Qué es:** Una herramienta experimental de terminal para unir dos extremos bajo control de la misma persona.
+- **Cuándo elegirlo:** Casos: Enviar una línea de texto ficticio entre dos equipos propios.; Comprobar si un laboratorio de red local consigue una conexión directa o vía relé.
+- **Requisitos:** nivel 2: preparación media; Go, Makefile, go.mod; hardware prerequisites; API de IA: no; Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/tailscale/tailcat/blob/15ab9e68bfc6534a61797d7af28cedd42b54a3a5/INSTALL.md
+- **Primera prueba propuesta (no ejecutada):** Elige solo el ejemplo de texto entre terminales; cierra ambas instancias tras recibir la línea. Éxito: La misma línea aparece en la otra terminal sin exponer directorios ni servicios.
+- **Riesgos y avisos:** GHSA-w496-344h-g2vv afecta al modo de recepción de 0.4.0 y se corrigió en 0.5.0; 0.7.0 incluye cambios posteriores.
 
 ### supabase (`supabase`)
 

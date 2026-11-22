@@ -232,10 +232,10 @@
    "cat": 7,
    "sub": "calidad",
    "titulo": "Calidad, seguridad y benchmarks de código",
-   "repos": 8,
+   "repos": 9,
    "archivo": "categoria-7-calidad.md",
-   "caracteres": 13809,
-   "tokens_estimados": 3946
+   "caracteres": 15307,
+   "tokens_estimados": 4374
   },
   {
    "cat": 7,
@@ -250,10 +250,10 @@
    "cat": 7,
    "sub": null,
    "titulo": "Entender código y comprobar su calidad",
-   "repos": 25,
+   "repos": 26,
    "archivo": "categoria-7.md",
-   "caracteres": 38634,
-   "tokens_estimados": 11039
+   "caracteres": 40142,
+   "tokens_estimados": 11470
   },
   {
    "cat": 8,
@@ -691,10 +691,10 @@
    "cat": 16,
    "sub": "deteccion",
    "titulo": "Detección, SIEM e IDS",
-   "repos": 15,
+   "repos": 16,
    "archivo": "categoria-16-deteccion.md",
-   "caracteres": 19740,
-   "tokens_estimados": 5641
+   "caracteres": 21060,
+   "tokens_estimados": 6018
   },
   {
    "cat": 16,
@@ -763,21 +763,21 @@
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 141,
+   "repos": 142,
    "archivo": "categoria-16.md",
    "partes": [
     "categoria-16-parte-1.md",
     "categoria-16-parte-2.md",
     "categoria-16-parte-3.md"
    ],
-   "caracteres": 28444,
-   "tokens_estimados": 8127
+   "caracteres": 28622,
+   "tokens_estimados": 8178
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 141,
+   "repos": 142,
    "archivo": "categoria-16-parte-1.md",
    "parte": 1,
    "caracteres": 61317,
@@ -787,21 +787,21 @@
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 141,
+   "repos": 142,
    "archivo": "categoria-16-parte-2.md",
    "parte": 2,
-   "caracteres": 61570,
-   "tokens_estimados": 17592
+   "caracteres": 60448,
+   "tokens_estimados": 17271
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 141,
+   "repos": 142,
    "archivo": "categoria-16-parte-3.md",
    "parte": 3,
-   "caracteres": 39730,
-   "tokens_estimados": 11352
+   "caracteres": 42028,
+   "tokens_estimados": 12009
   },
   {
    "cat": 17,
@@ -987,10 +987,10 @@
    "cat": 22,
    "sub": "infra",
    "titulo": "Infraestructura: sandboxes, herramientas y protocolos",
-   "repos": 10,
+   "repos": 13,
    "archivo": "categoria-22-infra.md",
-   "caracteres": 19746,
-   "tokens_estimados": 5642
+   "caracteres": 23896,
+   "tokens_estimados": 6828
   },
   {
    "cat": 22,
@@ -1005,10 +1005,10 @@
    "cat": 22,
    "sub": "redes",
    "titulo": "Redes y transporte",
-   "repos": 5,
+   "repos": 7,
    "archivo": "categoria-22-redes.md",
-   "caracteres": 10238,
-   "tokens_estimados": 2926
+   "caracteres": 12956,
+   "tokens_estimados": 3702
   },
   {
    "cat": 22,
@@ -1023,10 +1023,10 @@
    "cat": 22,
    "sub": null,
    "titulo": "Infraestructura, despliegue y herramientas para agentes",
-   "repos": 27,
+   "repos": 32,
    "archivo": "categoria-22.md",
-   "caracteres": 45142,
-   "tokens_estimados": 12898
+   "caracteres": 52050,
+   "tokens_estimados": 14872
   },
   {
    "cat": 23,

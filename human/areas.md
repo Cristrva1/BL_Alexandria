@@ -11,7 +11,7 @@ Elige un área, después una tarea y por último una ficha. Un repositorio puede
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
 | [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 76 |
-| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 152 |
+| [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 153 |
 | [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 118 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 27 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 65 |
@@ -21,7 +21,7 @@ Elige un área, después una tarea y por último una ficha. Un repositorio puede
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 66 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 40 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 56 |
-| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 104 |
+| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 110 |
 | [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 35 |
 | [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 104 |
 
@@ -29,8 +29,8 @@ Elige un área, después una tarea y por último una ficha. Un repositorio puede
 
 | Área | Subcategorías | Repos únicos |
 |---|---|---:|
-| [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 251 |
-| [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 214 |
+| [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 252 |
+| [Configuración de Codex](areas/configurar-codex.md) | Instalación y primeros pasos, Skills y método de trabajo, MCP y herramientas de navegador, Memoria, contexto y sesiones, Diseño, documentos y seguridad, Integraciones,proveedores y paneles | 215 |
 | [Configuración de Antigravity](areas/configurar-antigravity.md) | Instalar y seleccionar skills, Diseño y creación de interfaces, Prompts y organización del trabajo, MCP y herramientas conectadas, Integraciones,proveedores y paneles | 164 |
 
 Estas colecciones reúnen recursos para preparar el cliente. No convierten su suscripción en una API para cualquier aplicación.

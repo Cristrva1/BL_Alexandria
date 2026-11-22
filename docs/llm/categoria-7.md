@@ -1,6 +1,6 @@
 # Alexandría para agentes · Entender código y comprobar su calidad
 
-Categoría 7 completa (25 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 7 completa (26 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -33,6 +33,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7
 | `ast-grep` | calidad | CLI en Rust para búsqueda estructural, lint y reescritura de código usando… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
 | `sonarqube` | calidad | Plataforma de inspección continua de calidad y seguridad del código: análisis… | 2 Intermedio | 54 | LGPL-3.0 (OSI copyleft) | sin grupo |
 | `swe-bench` | calidad | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | 3 Avanzado | 51 | MIT (OSI permisiva) | sin grupo |
+| `open-code-review` | calidad | Revisa cambios de código con reglas y un informe guiado, usando su propio… | 2 Intermedio | — | Apache-2.0 | sin grupo |
 | `lazygit` | herramientas | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase… | 1 Básico | 71 | MIT (OSI permisiva) | sin grupo |
 | `cli` | herramientas | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
 | `openai-python` | herramientas | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -245,6 +246,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Evalúa una predicción ya preparada sobre una tarea pequeña antes de generar nuevas soluciones Éxito: El informe muestra si las pruebas del entorno aceptan el parche
 - **Combina con:** `openhands` [20/ingenieria], `aider` [20/terminal], `codex` [20/terminal]
 - **Riesgos y avisos:** Sin alternativas declaradas. Muy exigente en disco y CPU. El benchmark no demuestra que un agente resuelva cualquier issue real; usa el conjunto y la versión de tareas correspondientes.
+
+### Open Code Review (`open-code-review`)
+
+- **Repo:** https://github.com/alibaba/open-code-review · Apache-2.0 · nivel 2 · —/100
+- **Qué es:** Una herramienta de revisión defensiva de código para cambios propios antes de fusionarlos.
+- **Cuándo elegirlo:** Casos: Revisar condiciones de error en un cambio de ejemplo.; Preparar una lista de comprobaciones para una PR de un proyecto propio. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Go, Makefile, go.mod, package.json; hardware prerequisites; API de IA: opcional; Git 2.41 o superior, la CLI ocr y un cliente apropiado para la ruta delegada..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/alibaba/open-code-review/blob/284ff013f0705ae6cac4c8dfbffa2f2551886d56/skills/open-code-review-delegate/SKILL.md
+- **Primera prueba propuesta (no ejecutada):** Pide que revise un cambio ficticio de un proyecto propio, sin permitir escrituras ni cargar un repositorio de origen desconocido. Éxito: El informe nombra archivos, hallazgos y comprobaciones sin modificar el proyecto de ejemplo.
+- **Riesgos y avisos:** GHSA-wwg6-qfxw-xffj afecta versiones anteriores a 1.11.1; el tag 1.14.1 incluye la corrección. Usa solo repositorios propios o de confianza.
 
 ### lazygit (`lazygit`)
 

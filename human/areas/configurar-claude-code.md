@@ -4,7 +4,7 @@
 
 Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un proyecto real.
 
-251 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
+252 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
 
 ## Primera configuración, paso a paso
 
@@ -39,7 +39,7 @@ Cliente oficial y selección inicial de herramientas.
 
 Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
-[Explorar 118 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
+[Explorar 119 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -118,6 +118,7 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin clave propia de API de IA en la ruta básica |
 | [obsidian-second-brain](../fichas/obsidian-second-brain.md) | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. | API de IA opcional |
 | [obsidian-skills](../fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Sin clave propia de API de IA en la ruta básica |
+| [Open Code Review](../fichas/open-code-review.md) | Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes. | API de IA opcional |
 | [openfilm](../fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | API de IA opcional |
 | [OpenMAIC](../fichas/openmaic.md) | Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | Depende de la ruta elegida |
 | [OpenMontage](../fichas/openmontage.md) | Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. | API de IA opcional |

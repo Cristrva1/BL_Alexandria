@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-104 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+110 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -49,7 +49,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Índices y análisis para orientarte dentro de repositorios.
 
-[Explorar 25 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-comprender)
+[Explorar 26 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-comprender)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -67,6 +67,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 | [Hishel](../fichas/hishel.md) | Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables. | Sin clave propia de API de IA en la ruta básica |
 | [lazygit](../fichas/lazygit.md) | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos. | Sin clave propia de API de IA en la ruta básica |
 | [npkill](../fichas/npkill.md) | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos. | Sin clave propia de API de IA en la ruta básica |
+| [Open Code Review](../fichas/open-code-review.md) | Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes. | API de IA opcional |
 | [openai-python](../fichas/openai-python.md) | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. | API de IA necesaria |
 | [pre-commit](../fichas/pre-commit.md) | Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y escáneres declarados en YAML. | Sin clave propia de API de IA en la ruta básica |
 | [PyBreaker](../fichas/pybreaker.md) | Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio. | Sin clave propia de API de IA en la ruta básica |
@@ -83,11 +84,12 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Infraestructura, servicios y herramientas de operación.
 
-[Explorar 27 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-infra)
+[Explorar 32 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-infra)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Agent Protocol](../fichas/agent-protocol.md) | Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. | Sin clave propia de API de IA en la ruta básica |
+| [Agent Substrate](../fichas/agent-substrate.md) | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados. | Sin clave propia de API de IA en la ruta básica |
 | [agent-desktop](../fichas/agent-desktop.md) | CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. | Sin clave propia de API de IA en la ruta básica |
 | [Appwrite](../fichas/appwrite.md) | Plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. | Sin clave propia de API de IA en la ruta básica |
 | [Caddy](../fichas/caddy.md) | Servidor web y proxy inverso extensible con HTTPS automático por defecto, configurable con Caddyfile o JSON y API. | Sin clave propia de API de IA en la ruta básica |
@@ -102,15 +104,19 @@ Infraestructura, servicios y herramientas de operación.
 | [frp](../fichas/frp.md) | Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P. | Sin clave propia de API de IA en la ruta básica |
 | [Gemini Computer Use (preview)](../fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | API de IA necesaria |
 | [Headscale](../fichas/headscale.md) | Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. | Sin clave propia de API de IA en la ruta básica |
+| [Kiri](../fichas/kiri.md) | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker. | Sin clave propia de API de IA en la ruta básica |
 | [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
 | [MasterDnsVPN](../fichas/masterdnsvpn.md) | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. | Sin clave propia de API de IA en la ruta básica |
 | [NemoClaw](../fichas/nemoclaw.md) | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. | Depende de la ruta elegida |
 | [NetBird](../fichas/netbird.md) | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. | Sin clave propia de API de IA en la ruta básica |
 | [nodeterm](../fichas/nodeterm.md) | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. | API de IA opcional |
+| [Pangolin Community Edition](../fichas/pangolin.md) | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo. | Sin clave propia de API de IA en la ruta básica |
 | [Portainer CE](../fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Sin clave propia de API de IA en la ruta básica |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Sin clave propia de API de IA en la ruta básica |
+| [Screen Relay](../fichas/screen-relay.md) | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal. | Sin clave propia de API de IA en la ruta básica |
 | [shepherd](../fichas/shepherd.md) | Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos. | API de IA opcional |
 | [supabase](../fichas/supabase.md) | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | Sin clave propia de API de IA en la ruta básica |
+| [Tailcat](../fichas/tailcat.md) | Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos. | Sin clave propia de API de IA en la ruta básica |
 | [Traefik Proxy](../fichas/traefik.md) | Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. | Sin clave propia de API de IA en la ruta básica |
 | [Uptime Kuma](../fichas/uptime-kuma.md) | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado. | Sin clave propia de API de IA en la ruta básica |
 | [WireGuard Easy](../fichas/wg-easy.md) | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA. | Sin clave propia de API de IA en la ruta básica |

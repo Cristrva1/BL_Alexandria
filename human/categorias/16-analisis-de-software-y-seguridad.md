@@ -4,7 +4,7 @@
 
 Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.
 
-141 repos · 14 secciones
+142 repos · 14 secciones
 
 ## Puntos de partida
 
@@ -23,7 +23,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Reconocimiento y superficie de ataque](#reconocimiento-y-superficie-de-ataque) — 10 repos
 - [Explotación, C2 y post-explotación](#explotación-c2-y-post-explotación) — 10 repos
 - [Active Directory y red interna](#active-directory-y-red-interna) — 8 repos
-- [Detección, SIEM e IDS](#detección-siem-e-ids) — 15 repos
+- [Detección, SIEM e IDS](#detección-siem-e-ids) — 16 repos
 - [Nube, contenedores e IaC](#nube-contenedores-e-iac) — 11 repos
 - [Análisis y pruebas con agentes](#análisis-y-pruebas-con-agentes) — 5 repos
 - [Protección y verificación de software](#protección-y-verificación-de-software) — 12 repos
@@ -152,6 +152,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [OWASP CRS](../fichas/coreruleset.md) | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. | Tu objetivo encaja con estos ejemplos: proteger un reverse proxy propio; ajustar falsos positivos de CRS | Sin clave propia de API de IA en la ruta básica |
 | [Elastic detection-rules](../fichas/detection-rules.md) | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. | Tu objetivo encaja con estos ejemplos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica | Sin clave propia de API de IA en la ruta básica |
 | [Shuffle](../fichas/shuffle.md) | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. | Tu objetivo encaja con estos ejemplos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab | Sin clave propia de API de IA en la ruta básica |
+| [Pi.Alert](../fichas/pi-alert-leiweibau.md) | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido. | Tu objetivo encaja con estos ejemplos: Identificar un dispositivo nuevo en una red de prueba.; Verificar si se registra la desconexión de un dispositivo ya conocido. | Sin clave propia de API de IA en la ruta básica |
 
 ## Nube, contenedores e IaC
 

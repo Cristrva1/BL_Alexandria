@@ -4,7 +4,7 @@
 
 Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.
 
-25 repos · 3 secciones
+26 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Entender y empaquetar código para agentes](#entender-y-empaquetar-código-para-agentes) — 7 repos
-- [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 8 repos
+- [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 9 repos
 - [CLIs y SDKs de desarrollo](#clis-y-sdks-de-desarrollo) — 10 repos
 
 ## Entender y empaquetar código para agentes
@@ -39,6 +39,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [ast-grep](../fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Tu objetivo encaja con estos ejemplos: Migrar llamadas de una API; Aplicar reglas de lint personalizadas | Sin clave propia de API de IA en la ruta básica |
+| [Open Code Review](../fichas/open-code-review.md) | Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes. | Tu objetivo encaja con estos ejemplos: Revisar condiciones de error en un cambio de ejemplo.; Preparar una lista de comprobaciones para una PR de un proyecto propio. | API de IA opcional |
 | [Ruff](../fichas/ruff.md) | Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas. | Tu objetivo encaja con estos ejemplos: sustituir Flake8, isort y Black por una sola herramienta en un proyecto; revisar y corregir el código que genera un agente antes de cada commit | Sin clave propia de API de IA en la ruta básica |
 | [Gitleaks](../fichas/gitleaks.md) | Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. | Tu objetivo encaja con estos ejemplos: revisar el historial de un repositorio antes de hacerlo público; bloquear commits que contengan claves con un hook pre-commit | Sin clave propia de API de IA en la ruta básica |
 | [TruffleHog](../fichas/trufflehog.md) | Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. | Tu objetivo encaja con estos ejemplos: auditar los repositorios de una organización en busca de claves activas; revisar buckets o logs exportados antes de compartirlos | Sin clave propia de API de IA en la ruta básica |

@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**959 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**966 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -14,7 +14,7 @@
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 28
 5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 27
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 30
-7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 25
+7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 26
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 33
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 33
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 31
@@ -23,13 +23,13 @@
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 25
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 51
-16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 141
+16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 142
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 18
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 19
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 30
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
 21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 18
-22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 27
+22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 32
 23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 30
 24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 25
 25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 23
@@ -349,6 +349,7 @@ _Índices de código, análisis, calidad, benchmarks y herramientas de desarroll
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [ast-grep](human/fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Open Code Review](human/fichas/open-code-review.md) | Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de programación que ya tienes. | API de IA opcional | 🎨 skill/prompt | 🟡 medio |
 | [Ruff](human/fichas/ruff.md) | Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, con más de 800 reglas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Gitleaks](human/fichas/gitleaks.md) | Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [TruffleHog](human/fichas/trufflehog.md) | Busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
@@ -922,6 +923,7 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [OWASP CRS](human/fichas/coreruleset.md) | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Elastic detection-rules](human/fichas/detection-rules.md) | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Shuffle](human/fichas/shuffle.md) | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
+| [Pi.Alert](human/fichas/pi-alert-leiweibau.md) | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
 ### Nube, contenedores e IaC
 
@@ -1227,11 +1229,14 @@ _Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de inf
 | [claude-task-master](human/fichas/claude-task-master.md) | Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. | API de IA opcional | 🖥️ app | 🟡 medio |
 | [agent-desktop](human/fichas/agent-desktop.md) | CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [NemoClaw](human/fichas/nemoclaw.md) | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. | Depende de la ruta elegida | ⚙️ plataforma | 🔴 pesado |
+| [Kiri](human/fichas/kiri.md) | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [Agent Substrate](human/fichas/agent-substrate.md) | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y reanudan dentro de entornos separados. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [sandbox](human/fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Gemini Computer Use (preview)](human/fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | API de IA necesaria | 🧩 motor/runtime | 🟡 medio |
 | [shepherd](human/fichas/shepherd.md) | Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [nodeterm](human/fichas/nodeterm.md) | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. | API de IA opcional | 🖥️ app | 🟡 medio |
 | [Agent Protocol](human/fichas/agent-protocol.md) | Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [Screen Relay](human/fichas/screen-relay.md) | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica sin usar tu escritorio personal. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🔴 pesado |
 
 ### Dominios y recursos de infraestructura
 
@@ -1248,6 +1253,8 @@ _Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de inf
 | [Headscale](human/fichas/headscale.md) | Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [NetBird](human/fichas/netbird.md) | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [WireGuard Easy](human/fichas/wg-easy.md) | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadísticas y 2FA. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟢 fácil |
+| [Pangolin Community Edition](human/fichas/pangolin.md) | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y reglas de acceso administradas por tu equipo. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Tailcat](human/fichas/tailcat.md) | Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [MasterDnsVPN](human/fichas/masterdnsvpn.md) | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ### Alojamiento y backend
