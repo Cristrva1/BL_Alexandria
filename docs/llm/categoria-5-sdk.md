@@ -1,6 +1,6 @@
 # Alexandría para agentes · SDKs y frameworks para crear MCP
 
-Categoría 5 «Conectar herramientas con MCP» › subcategoría `sdk`. 5 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 5 «Conectar herramientas con MCP» › subcategoría `sdk`. 5 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5&sub=sdk · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-24",
   "groups": [
     {
       "id": "agentes",
@@ -4526,6 +4526,44 @@
       },
       "authorship": "Plantilla original de Alexandría",
       "checked_at": "2026-11-15"
+    },
+    {
+      "id": "decidir-que-automatizar",
+      "title": "Decidir qué partes de un proceso automatizar",
+      "topic": "operar",
+      "level": "inicial",
+      "when": "Antes de conectar un agente a un proceso que hoy hace una persona.",
+      "inputs": [
+        "Pasos del proceso, frecuencia y minutos aproximados",
+        "Datos que toca y efectos difíciles de revertir"
+      ],
+      "body": "Mi proceso es [pasos]. Cada paso ocurre [frecuencia], tarda [tiempo] y usa [datos]. Indica qué dejar manual, qué convertir en plantilla, qué preparar como borrador con IA y qué automatizar con reglas. Para cada paso explica el ahorro estimado, qué pasaría si falla y quién puede corregirlo. Conserva aprobación para cambios de dinero, permisos, envíos o borrados. Propón una prueba con datos inventados y un criterio de parada. Haz el análisis por escrito sin conectar sistemas ni ejecutar acciones.",
+      "expect": "Una tabla por paso y un piloto pequeño con resultado esperado, encargado de revisión y condición de parada.",
+      "authorship": "Plantilla original de Alexandría",
+      "inspired_by": {
+        "title": "Cuándo conviene usar un agente",
+        "url": "https://www.anthropic.com/research/building-effective-agents"
+      },
+      "checked_at": "2026-11-24"
+    },
+    {
+      "id": "medir-cache-prefijo",
+      "title": "Medir si tu agente reutiliza la caché del contexto",
+      "topic": "diagnosticar",
+      "level": "intermedio",
+      "when": "Cuando el agente tarda al abrir respuestas pese a repetir instrucciones y contexto.",
+      "inputs": [
+        "Motor o proveedor y versión",
+        "Dos solicitudes de prueba con el mismo contexto y métricas disponibles"
+      ],
+      "body": "Uso [motor, versión y modelo]. Mis dos solicitudes sintéticas son [ejemplos]. Separa las instrucciones estables del texto que cambia por petición. Diseña una comparación en frío y otra con el prefijo repetido, manteniendo iguales el modelo, las herramientas y el tamaño esperado de salida. Indica qué métricas de aciertos de caché y tiempo hasta el primer token expone este motor. Si no hay métricas, infórmalo y separa las hipótesis de los hechos. Propón una forma de conservar permisos, separación entre usuarios y trazabilidad. No ejecutes ni envíes datos del proyecto.",
+      "expect": "Protocolo de comparación con campos de registro y un criterio para decidir si el cambio produjo una mejora.",
+      "authorship": "Plantilla original de Alexandría",
+      "inspired_by": {
+        "title": "Caché automática de prefijos de vLLM",
+        "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/"
+      },
+      "checked_at": "2026-11-24"
     }
   ],
   "paths": [

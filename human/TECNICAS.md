@@ -2,7 +2,7 @@
 
 Generado desde `data/techniques.json`. Textos propios de Alexandría a partir de publicaciones y documentación pública; las cifras citadas por terceros no se verificaron y ninguna técnica se ejecutó aquí.
 
-Revisión: 2026-11-15.
+Revisión: 2026-11-24.
 
 ## Diez reglas para empezar
 
@@ -648,6 +648,22 @@ pip install typesafe-sdk
 Descarga e instala el SDK de Python de TypeSafe AI para llamar al modelo Jev.
 
 Fuentes: [Anuncio de Gemini Decisions API](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api) · [Documentación de la API de TypeSafe AI](https://docs.typesafe.ai/api) · [Ejemplo de clasificación con Jev y Kimi K3](https://github.com/Nutlope/jev-fraud) · [Repositorio de Laya](https://github.com/NandhaKishorM/laya)
+
+### Medir el ahorro real de repetir un prefijo
+
+*Técnica · nivel intermedio*
+
+Compara solicitudes con el mismo inicio para saber si el motor reutiliza el cálculo de sus instrucciones y documentos.
+
+1. Construye dos entradas ficticias que repitan las mismas instrucciones y un texto base, con una pregunta distinta al final.
+2. Compara un arranque en frío con una repetición usando el mismo modelo y configuración. Registra el tiempo hasta el primer token y los aciertos que reporte el motor.
+3. Mueve al final los detalles que cambian cuando no afecten el significado. Repite la prueba y conserva los datos de ambas rondas.
+
+**Por qué ayuda:** La caché de vLLM puede evitar recalcular la parte repetida de la entrada. Una medición ayuda a separar esa ventaja del tiempo de generar la respuesta.
+
+**Antes de usarla:** Los requisitos y tarifas varían por motor y proveedor. Mantén los límites entre cuentas y conserva las instrucciones de seguridad que deban cambiar.
+
+Fuentes: [Caché de prefijos automática de vLLM](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/) · [Caché de prompts en la API de Claude](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
 
 
 ## 🎨 Diseño e interfaces
@@ -1738,6 +1754,22 @@ Herramientas abiertas permiten desactivar apps de fábrica en Android o Android 
 **Antes de usarla:** Quitar paquetes del sistema puede romper funciones o actualizaciones; avanza paquete por paquete.
 
 Fuentes: [Repositorio de UAD-ng](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) · [Repositorio de cleanyourtv](https://github.com/gathin23/cleanyourtv) · [Repositorio de OptimizerDuck](https://github.com/itsfatduck/optimizerDuck)
+
+### Elegir entre plantilla, borrador y automatización
+
+*Técnica · nivel inicial*
+
+Clasifica cada paso por frecuencia, tiempo y daño posible para empezar por un cambio fácil de revisar.
+
+1. Mide durante varios casos cuánto tarda cada paso y quién puede corregir un error.
+2. Usa una plantilla si el resultado siempre tiene la misma forma. Pide un borrador con revisión si necesita criterio.
+3. Automatiza primero un paso repetitivo, reversible y fácil de comprobar. Ensaya con entradas ficticias y guarda el resultado esperado.
+
+**Por qué ayuda:** La frecuencia ayuda a detectar ahorro y la facilidad de revertir define cuánto control necesita el paso.
+
+**Antes de usarla:** Antes de conectar cuentas, ensaya con datos inventados. Revisa por separado los cambios de permisos, envíos, borrados y pagos.
+
+Fuentes: [Cuándo conviene usar un agente](https://www.anthropic.com/research/building-effective-agents)
 
 ## Sitios y servicios útiles
 

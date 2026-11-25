@@ -1,6 +1,6 @@
 # Actualización diaria de Alexandría
 
-La tarea diaria de Codex consulta las stars públicas de **Cristrva1**, revisa individualmente los repos que falten y publica los cambios verificados en GitHub Pages. Horario configurado: **08:00, America/Mexico_City**. La programación se administra en Codex; este documento describe el procedimiento, no sustituye al programador.
+Procedimiento para revisar manualmente las stars públicas de **Cristrva1**. La revisión programada consulta la carpeta de recursos de Drive y sigue [DAILY_DRIVE.md](DAILY_DRIVE.md).
 
 La ejecución es local: conserva disponible este checkout, `uv`, Git, GitHub CLI autenticado y conexión a internet. No se configura una API de IA de pago para esta tarea. La revisión editorial la realiza el agente de Codex; el detector de stars solo prepara sus fuentes. La biblioteca pública sigue disponible aunque el equipo esté apagado.
 

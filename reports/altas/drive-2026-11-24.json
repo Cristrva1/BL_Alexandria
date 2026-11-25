@@ -1,0 +1,64 @@
+{
+  "lote": "drive-2026-11-24",
+  "checked_at": "2026-11-24",
+  "added": [
+    {
+      "id": "pysubs2",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "tkarabela/pysubs2",
+      "github_id": 22663580,
+      "stars": 455,
+      "license": "MIT",
+      "pushed_at": "2026-11-10",
+      "archived": false,
+      "topics": [
+        "closed-captions",
+        "microdvd",
+        "mpl2",
+        "openai-whisper",
+        "python",
+        "sami",
+        "srt",
+        "substation-alpha",
+        "subtitles",
+        "subtitles-parsing",
+        "ttml",
+        "webvtt"
+      ],
+      "homepage": "http://pysubs2.readthedocs.io",
+      "default_branch": "master",
+      "language": "Python",
+      "description": "A Python library for editing subtitle files"
+    },
+    {
+      "id": "toon-format",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "toon-format/toon",
+      "github_id": 1081397957,
+      "stars": 25656,
+      "license": "MIT",
+      "pushed_at": "2026-11-24",
+      "archived": false,
+      "topics": [
+        "data-format",
+        "llm",
+        "serialization",
+        "tokenization"
+      ],
+      "homepage": "https://toonformat.dev",
+      "default_branch": "main",
+      "language": "TypeScript",
+      "description": "🎒 Token-Oriented Object Notation (TOON) – compact, human-readable serialization of JSON data for LLM prompts. TypeScript SDK, CLI, benchmarks."
+    }
+  ],
+  "skipped": [],
+  "warnings": [],
+  "reciprocal": {},
+  "new_subs": [],
+  "notes": [
+    "No se instaló ni se ejecutó ningún proyecto del catálogo.",
+    "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
+  ]
+}

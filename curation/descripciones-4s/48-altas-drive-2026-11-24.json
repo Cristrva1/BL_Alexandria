@@ -1,0 +1,48 @@
+{
+ "batch": "altas-drive-2026-11-24",
+ "checked_at": "2026-11-24",
+ "method": "Contraste documental de licencia, distribución, avisos y ejecución de CI oficial vinculada a la versión revisada.",
+ "repos": {
+  "pysubs2": {
+   "que_es": "pysubs2 es una biblioteca Python y una utilidad de terminal para transformar archivos de subtítulos.",
+   "que_hace": "Convierte formatos y permite ajustar tiempos o editar texto de subtítulos ya existentes.",
+   "como_lo_hace": "Carga los bloques como eventos con texto y tiempos, aplica el ajuste y guarda una nueva salida en el formato elegido.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+    "https://pysubs2.readthedocs.io/en/latest/",
+    "https://pypi.org/project/pysubs2/1.9.1/",
+    "https://github.com/tkarabela/pysubs2/actions/runs/40979280401"
+   ],
+   "github": {
+    "name_with_owner": "tkarabela/pysubs2",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-24"
+   }
+  },
+  "toon-format": {
+   "que_es": "TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.",
+   "que_hace": "Representa listas uniformes con una cabecera común y filas para dejar más visible la forma de los datos.",
+   "como_lo_hace": "Conserva el modelo de datos de JSON e identifica conjuntos de objetos compatibles con una representación tabular.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+    "https://registry.npmjs.org/@toon-format%2Ftoon/4.4.0",
+    "https://github.com/toon-format/toon/actions/runs/37839997802",
+    "https://github.com/toon-format/toon/security/advisories/GHSA-p95v-992w-h6c3"
+   ],
+   "github": {
+    "name_with_owner": "toon-format/toon",
+    "archived": false,
+    "pushed_at": "2026-11-24",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-24",
+    "latest_release": "v4.4.0 (2026-10-08)"
+   }
+  }
+ }
+}

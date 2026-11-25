@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-24",
   "areas": [
     {
       "id": "agentes",
@@ -3237,6 +3237,68 @@
         }
       ],
       "commands": []
+    },
+    {
+      "id": "decidir-automatizacion-por-paso",
+      "title": "Elegir entre plantilla, borrador y automatización",
+      "area": "automatizar",
+      "kind": "Técnica",
+      "level": "inicial",
+      "summary": "Clasifica cada paso por frecuencia, tiempo y daño posible para empezar por un cambio fácil de revisar.",
+      "steps": [
+        "Mide durante varios casos cuánto tarda cada paso y quién puede corregir un error.",
+        "Usa una plantilla si el resultado siempre tiene la misma forma. Pide un borrador con revisión si necesita criterio.",
+        "Automatiza primero un paso repetitivo, reversible y fácil de comprobar. Ensaya con entradas ficticias y guarda el resultado esperado."
+      ],
+      "why": "La frecuencia ayuda a detectar ahorro y la facilidad de revertir define cuánto control necesita el paso.",
+      "caution": "Antes de conectar cuentas, ensaya con datos inventados. Revisa por separado los cambios de permisos, envíos, borrados y pagos.",
+      "tools": [
+        "Hoja de cálculo",
+        "Agente de código opcional"
+      ],
+      "github": [],
+      "sources": [
+        {
+          "title": "Cuándo conviene usar un agente",
+          "url": "https://www.anthropic.com/research/building-effective-agents"
+        }
+      ],
+      "commands": [],
+      "featured": false
+    },
+    {
+      "id": "medir-reuso-prefijo",
+      "title": "Medir el ahorro real de repetir un prefijo",
+      "area": "contexto",
+      "kind": "Técnica",
+      "level": "intermedio",
+      "summary": "Compara solicitudes con el mismo inicio para saber si el motor reutiliza el cálculo de sus instrucciones y documentos.",
+      "steps": [
+        "Construye dos entradas ficticias que repitan las mismas instrucciones y un texto base, con una pregunta distinta al final.",
+        "Compara un arranque en frío con una repetición usando el mismo modelo y configuración. Registra el tiempo hasta el primer token y los aciertos que reporte el motor.",
+        "Mueve al final los detalles que cambian cuando no afecten el significado. Repite la prueba y conserva los datos de ambas rondas."
+      ],
+      "why": "La caché de vLLM puede evitar recalcular la parte repetida de la entrada. Una medición ayuda a separar esa ventaja del tiempo de generar la respuesta.",
+      "caution": "Los requisitos y tarifas varían por motor y proveedor. Mantén los límites entre cuentas y conserva las instrucciones de seguridad que deban cambiar.",
+      "tools": [
+        "vLLM",
+        "Métricas del servidor"
+      ],
+      "github": [
+        "vllm-project/vllm"
+      ],
+      "sources": [
+        {
+          "title": "Caché de prefijos automática de vLLM",
+          "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/"
+        },
+        {
+          "title": "Caché de prompts en la API de Claude",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching"
+        }
+      ],
+      "commands": [],
+      "featured": false
     }
   ],
   "sites": [

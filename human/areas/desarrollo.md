@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-110 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+111 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -148,7 +148,7 @@ Medir resultados y revisar lo que hace una aplicación de IA.
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-[Explorar 16 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-contexto)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-contexto)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -166,6 +166,7 @@ Reducir contexto innecesario y organizar el acceso a modelos.
 | [rtk](../fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | API de IA opcional |
 | [SGLang](../fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Sin clave propia de API de IA en la ruta básica |
 | [TensorRT-LLM](../fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Sin clave propia de API de IA en la ruta básica |
+| [TOON](../fichas/toon-format.md) | Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos. | Sin clave propia de API de IA en la ruta básica |
 | [vLLM](../fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica |
 | [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica |
 

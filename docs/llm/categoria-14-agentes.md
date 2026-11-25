@@ -1,6 +1,6 @@
 # Alexandría para agentes · Agentes de investigación financiera
 
-Categoría 14 «Investigar finanzas y mercados» › subcategoría `agentes`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 14 «Investigar finanzas y mercados» › subcategoría `agentes`. 9 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=14&sub=agentes · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

@@ -124,7 +124,7 @@ Encuentra las piezas para producir imágenes, audio y video: desde una voz o un 
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-`concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `rea-video`, `shotcut`, `video-use`, `videolingo`
+`concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `pysubs2`, `rea-video`, `shotcut`, `video-use`, `videolingo`
 
 ### Video: generación con IA
 
@@ -550,7 +550,7 @@ Medir resultados y revisar lo que hace una aplicación de IA.
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-`backdoor`, `bentoml`, `claude-code-router`, `gptcache`, `gpustack`, `headroom`, `litellm`, `llmlingua`, `omniroute`, `portkey-gateway`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
+`backdoor`, `bentoml`, `claude-code-router`, `gptcache`, `gpustack`, `headroom`, `litellm`, `llmlingua`, `omniroute`, `portkey-gateway`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `toon-format`, `vllm`, `xinference`
 
 ## Visión artificial, mapas y percepción
 

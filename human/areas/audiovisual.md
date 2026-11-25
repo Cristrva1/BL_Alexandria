@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-118 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+119 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-edicion)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-edicion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -31,6 +31,7 @@ Montar material existente, capturar pantalla y preparar subtítulos.
 | [OBS Studio](../fichas/obs-studio.md) | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | Sin clave propia de API de IA en la ruta básica |
 | [OpenCut](../fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Sin clave propia de API de IA en la ruta básica |
 | [OpenRV](../fichas/openrv.md) | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | Sin clave propia de API de IA en la ruta básica |
+| [pysubs2](../fichas/pysubs2.md) | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA. | Sin clave propia de API de IA en la ruta básica |
 | [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | API de IA opcional |
 | [Shotcut](../fichas/shotcut.md) | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. | Sin clave propia de API de IA en la ruta básica |
 | [video-use](../fichas/video-use.md) | Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. | API de IA necesaria |

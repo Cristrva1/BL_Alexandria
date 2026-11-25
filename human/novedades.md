@@ -6,6 +6,8 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 
 | Añadido | Repo | Qué hace | Acceso básico |
 |---|---|---|---|
+| 2026-11-24 | [TOON](fichas/toon-format.md) | Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-24 | [pysubs2](fichas/pysubs2.md) | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-22 | [video2threejs](fichas/video2threejs.md) | Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-22 | [Tailcat](fichas/tailcat.md) | Conecta dos equipos propios para el intercambio temporal de datos mediante un enlace cifrado entre los extremos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-22 | [Shopify AI Toolkit](fichas/shopify-ai-toolkit.md) | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante. | Sin clave propia de API de IA en la ruta básica |
