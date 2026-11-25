@@ -266,7 +266,7 @@
   ],
   "handbook": {
     "schema_version": 1,
-    "updated_at": "2026-11-24",
+    "updated_at": "2026-11-25",
     "groups": [
       {
         "id": "agentes",
@@ -3745,6 +3745,99 @@
           "detección"
         ],
         "commands": []
+      },
+      {
+        "id": "gemma-local",
+        "name": "Gemma 4 en tu equipo",
+        "group": "local",
+        "kind": "Guía de modelos locales",
+        "summary": "Elige una variante de Gemma 4 y pruébala en Ollama para responder preguntas de texto desde tu computadora.",
+        "prepare": [
+          "Ollama compatible con Gemma 4.",
+          "Espacio de disco para la descarga y RAM para el modelo y el contexto. Consulta la tabla de variantes antes de elegir."
+        ],
+        "steps": [
+          "Abre la guía de Gemma para Ollama y busca una variante que quepa con margen en tu equipo.",
+          "Descarga la variante elegida desde la biblioteca de Ollama y abre su chat siguiendo la guía.",
+          "Pide que extraiga tres datos de un párrafo ficticio. Valida cada dato contra el original."
+        ],
+        "verify": "El cliente muestra la variante elegida y la respuesta contiene tres datos que se pueden comprobar en el texto.",
+        "access": "Ollama ejecuta la variante admitida en el equipo. La guía de Google también documenta llama.cpp y otros motores. Comprueba formatos y versiones para cada ruta.",
+        "cost": "La prueba local usa los pesos descargados y tu equipo, sin clave de API. La nube y los servicios de inferencia tienen sus propios planes y tarifas.",
+        "improve": [
+          "Empieza con un contexto corto y anota memoria y tiempo para comparar variantes con el mismo ejemplo."
+        ],
+        "limits": [
+          "El tamaño descargado no equivale a memoria en ejecución. Comprueba versión, variante y contexto antes de comparar resultados."
+        ],
+        "sources": [
+          {
+            "title": "Gemma con Ollama",
+            "url": "https://gemma.ai/deployment/ollama/",
+            "checked_at": "2026-11-25"
+          },
+          {
+            "title": "Variantes y condiciones de Gemma 4",
+            "url": "https://gemma.ai/models/gemma-4/",
+            "checked_at": "2026-11-25"
+          },
+          {
+            "title": "Etiquetas en Ollama",
+            "url": "https://ollama.com/library/gemma4",
+            "checked_at": "2026-11-25"
+          }
+        ],
+        "repo_ids": [
+          "ollama",
+          "llama-cpp"
+        ],
+        "aliases": [
+          "gemma",
+          "google gemma",
+          "gemma 4",
+          "modelo local"
+        ],
+        "commands": []
+      },
+      {
+        "id": "karpathy-zero-to-hero",
+        "name": "Neural Networks: Zero to Hero",
+        "group": "aprendizaje",
+        "kind": "Curso público",
+        "summary": "Curso de Andrej Karpathy para entender cómo aprende una red y cómo se construye un modelo de lenguaje básico.",
+        "prepare": [
+          "Navegador para consultar el curso.",
+          "Nociones de Python y derivadas para seguir las partes de código."
+        ],
+        "steps": [
+          "Abre la primera lección y elige una operación de la explicación de micrograd.",
+          "Dibuja cómo el resultado cambia al modificar un número de entrada.",
+          "Explica con tus palabras por qué ese cambio sirve para ajustar un modelo."
+        ],
+        "verify": "Puedes explicar qué representa la derivada de tu ejemplo y cómo orienta un ajuste.",
+        "access": "Curso en video con recursos de práctica. Puedes seguir la primera actividad con papel o en un cuaderno de Python.",
+        "cost": "Consulta del temario y videos sin compra obligatoria. Un servicio de cómputo o materiales adicionales pueden tener costes propios.",
+        "improve": [
+          "Si ya manejas derivadas, continúa con makemore y anota qué diferencia hay entre predecir un carácter y entrenar un modelo completo."
+        ],
+        "limits": [
+          "Las prácticas posteriores requieren preparación en Python y pueden depender de bibliotecas y versiones distintas."
+        ],
+        "sources": [
+          {
+            "title": "Temario y requisitos del autor",
+            "url": "https://karpathy.ai/zero-to-hero.html",
+            "checked_at": "2026-11-25"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "karpathy",
+          "micrograd",
+          "educación",
+          "redes neuronales"
+        ],
+        "commands": []
       }
     ],
     "prompts": [
@@ -4830,6 +4923,25 @@
           "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/"
         },
         "checked_at": "2026-11-24"
+      },
+      {
+        "id": "evaluar-lista-de-herramientas-del-agente",
+        "title": "Medir si tu agente elige la herramienta correcta",
+        "topic": "diagnosticar",
+        "level": "intermedio",
+        "when": "Cuando un agente mezcla herramientas parecidas o consume mucho contexto al cargar su catálogo.",
+        "inputs": [
+          "Lista de herramientas, propósitos y permisos",
+          "Tres tareas ficticias con resultado esperado"
+        ],
+        "body": "Mi agente ofrece [herramientas y permisos]. Con [tareas ficticias], prepara una tabla con la herramienta esperada, las que se le parecen y el permiso mínimo. Diseña una comparación entre mostrar todas y seleccionar un conjunto reducido por tarea. Define cómo contar aciertos, omisiones y pasos extra. Elige una prueba sin acceso real a cuentas. No ejecutes herramientas ni uses datos privados.",
+        "expect": "Una matriz de casos y un criterio para elegir el catálogo con menos errores y menos pasos.",
+        "authorship": "Plantilla original de Alexandría",
+        "inspired_by": {
+          "title": "Tool Retrieval de Gemini",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        },
+        "checked_at": "2026-11-25"
       }
     ],
     "paths": [
@@ -5007,7 +5119,7 @@
   },
   "techniques": {
     "schema_version": 1,
-    "updated_at": "2026-11-24",
+    "updated_at": "2026-11-25",
     "areas": [
       {
         "id": "agentes",
@@ -8496,6 +8608,35 @@
         "repo_ids": [
           "vllm"
         ]
+      },
+      {
+        "id": "cargar-esquemas-de-herramientas-a-demanda",
+        "title": "Cargar herramientas de un agente según la tarea",
+        "area": "contexto",
+        "kind": "Técnica",
+        "level": "intermedio",
+        "summary": "Selecciona un grupo pequeño de herramientas autorizadas antes de entregar sus parámetros al agente.",
+        "steps": [
+          "Clasifica las herramientas por propósito. Prepara casos ficticios de consulta donde sepas cuál es la herramienta correcta.",
+          "Compara una lista completa con una selección por tarea usando el mismo modelo. Registra elecciones correctas, llamadas adicionales y latencia.",
+          "Si hay omisiones, conserva visibles las herramientas necesarias y revisa los permisos en el punto de ejecución."
+        ],
+        "why": "Los esquemas que se envían al modelo ocupan contexto. Si solo necesita unas pocas herramientas, seleccionar antes de cargarlas puede reducir ese trabajo.",
+        "caution": "La selección no concede permisos. El sistema debe comprobarlos antes de ejecutar cualquier acción. La vista previa de Gemini factura tokens del modelo según su tabla.",
+        "tools": [
+          "Catálogo de herramientas",
+          "Gemini Interactions API como referencia opcional"
+        ],
+        "github": [],
+        "sources": [
+          {
+            "title": "Tool Retrieval en Gemini",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          }
+        ],
+        "commands": [],
+        "featured": false,
+        "repo_ids": []
       }
     ],
     "sites": [

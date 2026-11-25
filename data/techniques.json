@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "areas": [
     {
       "id": "agentes",
@@ -3295,6 +3295,34 @@
         {
           "title": "Caché de prompts en la API de Claude",
           "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching"
+        }
+      ],
+      "commands": [],
+      "featured": false
+    },
+    {
+      "id": "cargar-esquemas-de-herramientas-a-demanda",
+      "title": "Cargar herramientas de un agente según la tarea",
+      "area": "contexto",
+      "kind": "Técnica",
+      "level": "intermedio",
+      "summary": "Selecciona un grupo pequeño de herramientas autorizadas antes de entregar sus parámetros al agente.",
+      "steps": [
+        "Clasifica las herramientas por propósito. Prepara casos ficticios de consulta donde sepas cuál es la herramienta correcta.",
+        "Compara una lista completa con una selección por tarea usando el mismo modelo. Registra elecciones correctas, llamadas adicionales y latencia.",
+        "Si hay omisiones, conserva visibles las herramientas necesarias y revisa los permisos en el punto de ejecución."
+      ],
+      "why": "Los esquemas que se envían al modelo ocupan contexto. Si solo necesita unas pocas herramientas, seleccionar antes de cargarlas puede reducir ese trabajo.",
+      "caution": "La selección no concede permisos. El sistema debe comprobarlos antes de ejecutar cualquier acción. La vista previa de Gemini factura tokens del modelo según su tabla.",
+      "tools": [
+        "Catálogo de herramientas",
+        "Gemini Interactions API como referencia opcional"
+      ],
+      "github": [],
+      "sources": [
+        {
+          "title": "Tool Retrieval en Gemini",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
         }
       ],
       "commands": [],

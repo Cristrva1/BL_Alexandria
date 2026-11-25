@@ -2,7 +2,7 @@
 
 Generado desde `data/techniques.json`. Textos propios de Alexandría a partir de publicaciones y documentación pública; las cifras citadas por terceros no se verificaron y ninguna técnica se ejecutó aquí.
 
-Revisión: 2026-11-24.
+Revisión: 2026-11-25.
 
 ## Diez reglas para empezar
 
@@ -664,6 +664,22 @@ Compara solicitudes con el mismo inicio para saber si el motor reutiliza el cál
 **Antes de usarla:** Los requisitos y tarifas varían por motor y proveedor. Mantén los límites entre cuentas y conserva las instrucciones de seguridad que deban cambiar.
 
 Fuentes: [Caché de prefijos automática de vLLM](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/) · [Caché de prompts en la API de Claude](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
+
+### Cargar herramientas de un agente según la tarea
+
+*Técnica · nivel intermedio*
+
+Selecciona un grupo pequeño de herramientas autorizadas antes de entregar sus parámetros al agente.
+
+1. Clasifica las herramientas por propósito. Prepara casos ficticios de consulta donde sepas cuál es la herramienta correcta.
+2. Compara una lista completa con una selección por tarea usando el mismo modelo. Registra elecciones correctas, llamadas adicionales y latencia.
+3. Si hay omisiones, conserva visibles las herramientas necesarias y revisa los permisos en el punto de ejecución.
+
+**Por qué ayuda:** Los esquemas que se envían al modelo ocupan contexto. Si solo necesita unas pocas herramientas, seleccionar antes de cargarlas puede reducir ese trabajo.
+
+**Antes de usarla:** La selección no concede permisos. El sistema debe comprobarlos antes de ejecutar cualquier acción. La vista previa de Gemini factura tokens del modelo según su tabla.
+
+Fuentes: [Tool Retrieval en Gemini](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/)
 
 
 ## 🎨 Diseño e interfaces
