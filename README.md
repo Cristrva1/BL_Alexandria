@@ -73,6 +73,12 @@ Las [recetas](human/playbooks/README.md) ordenan pocas piezas por función: What
 - [Menú portable](menu_portable/REPO_MENU.md): copia el índice a otro proyecto.
 - [Mantenimiento editorial](human/mantenimiento.md): cómo incorporar, verificar y regenerar.
 
+## Revisión diaria desde Drive
+
+La tarea de Codex revisa archivos nuevos, cambios y candidatos pendientes. El registro privado de revisiones e identidades evita repetir incorporaciones. Consulta el [procedimiento de revisión y publicación](DAILY_DRIVE.md).
+
+Para recomendar un repositorio se exige una ruta útil sin pago obligatorio, revisión de procedencia y avisos y evidencia de funcionamiento de la versión. El mismo proceso incorpora prompts, técnicas y consejos con fuentes públicas.
+
 ## Cómo agregar un repo
 
 Un solo comando lee la identidad en GitHub (`gh api`), rechaza archivados, duplicados y retirados, y escribe la entrada en los dos índices:

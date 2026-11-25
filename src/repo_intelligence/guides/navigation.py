@@ -62,6 +62,17 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
         readme[i:i]=['## Explora por área de trabajo', '', 'Empieza por [Frontend y páginas web](human/areas/frontend.md), [Ciberseguridad](human/areas/ciberseguridad.md), [Producción audiovisual](human/areas/audiovisual.md) o [Trading y finanzas](human/areas/trading.md). Consulta las demás áreas y sus subcategorías en [el mapa práctico](human/areas.md).', '', 'Para preparar tu agente: [Configuración de Claude Code](human/areas/configurar-claude-code.md) · [Configuración de Codex](human/areas/configurar-codex.md) · [Configuración de Antigravity](human/areas/configurar-antigravity.md).', '']
     start=readme.index('1. En esta página de GitHub pulsa **Code → Download ZIP**.')
     readme[start:start]=['Si prefieres guardar una copia para consultar en tu equipo:', '']
+    if (root / 'DAILY_DRIVE.md').is_file():
+        i = readme.index('## Cómo agregar un repo')
+        readme[i:i] = [
+            '## Revisión diaria desde Drive', '',
+            'La tarea de Codex revisa archivos nuevos, cambios y candidatos pendientes. '
+            'El registro privado de revisiones e identidades evita repetir incorporaciones. '
+            'Consulta el [procedimiento de revisión y publicación](DAILY_DRIVE.md).', '',
+            'Para recomendar un repositorio se exige una ruta útil sin pago obligatorio, '
+            'revisión de procedencia y avisos y evidencia de funcionamiento de la versión. '
+            'El mismo proceso incorpora prompts, técnicas y consejos con fuentes públicas.', '',
+        ]
     # Binarias Labs logo: web/build.py copies it to docs/marca when the explorer is built.
     readme[0:0]=['<p align="center"><a href="https://cristrva1.github.io/BL_Alexandria/"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/marca/binarias-labs-dark.png"><img src="docs/marca/binarias-labs.png" alt="Binarias Labs" width="246" height="62"></picture></a></p>', '']
     i=readme.index('**[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.')
