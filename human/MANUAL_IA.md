@@ -2,7 +2,7 @@
 
 Generado desde `data/handbook.json`. Guías de orientación documental; no acreditan instalación ni rendimiento. Las plantillas son originales de Alexandría.
 
-Revisión: 2026-11-24. Los precios, planes y versiones pueden cambiar.
+Revisión: 2026-11-25. Los precios, planes y versiones pueden cambiar.
 
 ## Índice
 
@@ -54,6 +54,7 @@ Revisión: 2026-11-24. Los precios, planes y versiones pueden cambiar.
 - [Arete-27B de Nous Research](#nous-arete-27b)
 - [Qwen3.8-27B adaptado para pi y OpenCode](#qwen-harness-adapters)
 - [NVIDIA Nemotron 3.5 Bolt E4B](#nemotron-bolt)
+- [Gemma 4 en tu equipo](#gemma-local)
 
 ### Android, iPhone y automatizaciones
 
@@ -111,6 +112,7 @@ Revisión: 2026-11-24. Los precios, planes y versiones pueden cambiar.
 
 - [AI Harness Crash Course de Google Cloud Tech](#google-ai-harness-curso)
 - [Designed to Scale](#designed-to-scale)
+- [Neural Networks: Zero to Hero](#karpathy-zero-to-hero)
 
 ### Seguridad defensiva y análisis
 
@@ -3573,6 +3575,84 @@ Usa un vocabulario común para relacionar casos de detección con comportamiento
 
 - [Base oficial ATT&CK](https://attack.mitre.org/) · 2026-11-22
 
+<a id="gemma-local"></a>
+
+## Gemma 4 en tu equipo
+
+**Tipo:** Guía de modelos locales
+
+Elige una variante de Gemma 4 y pruébala en Ollama para responder preguntas de texto desde tu computadora.
+
+### Antes de empezar
+
+- Ollama compatible con Gemma 4.
+- Espacio de disco para la descarga y RAM para el modelo y el contexto. Consulta la tabla de variantes antes de elegir.
+
+### Primera prueba
+
+1. Abre la guía de Gemma para Ollama y busca una variante que quepa con margen en tu equipo.
+2. Descarga la variante elegida desde la biblioteca de Ollama y abre su chat siguiendo la guía.
+3. Pide que extraiga tres datos de un párrafo ficticio. Valida cada dato contra el original.
+
+**Qué comprobar:** El cliente muestra la variante elegida y la respuesta contiene tres datos que se pueden comprobar en el texto.
+
+**Cuenta y compatibilidad:** Ollama ejecuta la variante admitida en el equipo. La guía de Google también documenta llama.cpp y otros motores. Comprueba formatos y versiones para cada ruta.
+
+**Costes:** La prueba local usa los pesos descargados y tu equipo, sin clave de API. La nube y los servicios de inferencia tienen sus propios planes y tarifas.
+
+### Mejoras después de la primera prueba
+
+- Empieza con un contexto corto y anota memoria y tiempo para comparar variantes con el mismo ejemplo.
+
+### Límites
+
+- El tamaño descargado no equivale a memoria en ejecución. Comprueba versión, variante y contexto antes de comparar resultados.
+
+Fichas del catálogo: [ollama](fichas/ollama.md) · [llama-cpp](fichas/llama-cpp.md)
+
+### Fuentes
+
+- [Gemma con Ollama](https://gemma.ai/deployment/ollama/) · 2026-11-25
+- [Variantes y condiciones de Gemma 4](https://gemma.ai/models/gemma-4/) · 2026-11-25
+- [Etiquetas en Ollama](https://ollama.com/library/gemma4) · 2026-11-25
+
+<a id="karpathy-zero-to-hero"></a>
+
+## Neural Networks: Zero to Hero
+
+**Tipo:** Curso público
+
+Curso de Andrej Karpathy para entender cómo aprende una red y cómo se construye un modelo de lenguaje básico.
+
+### Antes de empezar
+
+- Navegador para consultar el curso.
+- Nociones de Python y derivadas para seguir las partes de código.
+
+### Primera prueba
+
+1. Abre la primera lección y elige una operación de la explicación de micrograd.
+2. Dibuja cómo el resultado cambia al modificar un número de entrada.
+3. Explica con tus palabras por qué ese cambio sirve para ajustar un modelo.
+
+**Qué comprobar:** Puedes explicar qué representa la derivada de tu ejemplo y cómo orienta un ajuste.
+
+**Cuenta y compatibilidad:** Curso en video con recursos de práctica. Puedes seguir la primera actividad con papel o en un cuaderno de Python.
+
+**Costes:** Consulta del temario y videos sin compra obligatoria. Un servicio de cómputo o materiales adicionales pueden tener costes propios.
+
+### Mejoras después de la primera prueba
+
+- Si ya manejas derivadas, continúa con makemore y anota qué diferencia hay entre predecir un carácter y entrenar un modelo completo.
+
+### Límites
+
+- Las prácticas posteriores requieren preparación en Python y pueden depender de bibliotecas y versiones distintas.
+
+### Fuentes
+
+- [Temario y requisitos del autor](https://karpathy.ai/zero-to-hero.html) · 2026-11-25
+
 ## Prompts
 
 Sustituye los campos entre corchetes. Revisa la respuesta antes de ejecutar acciones.
@@ -4329,3 +4409,15 @@ Uso [motor, versión y modelo]. Mis dos solicitudes sintéticas son [ejemplos]. 
 **Resultado esperado:** Protocolo de comparación con campos de registro y un criterio para decidir si el cambio produjo una mejora.
 
 Idea de partida: [Caché automática de prefijos de vLLM](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/). Texto reescrito por Alexandría.
+
+### Medir si tu agente elige la herramienta correcta
+
+Cuando un agente mezcla herramientas parecidas o consume mucho contexto al cargar su catálogo.
+
+```text
+Mi agente ofrece [herramientas y permisos]. Con [tareas ficticias], prepara una tabla con la herramienta esperada, las que se le parecen y el permiso mínimo. Diseña una comparación entre mostrar todas y seleccionar un conjunto reducido por tarea. Define cómo contar aciertos, omisiones y pasos extra. Elige una prueba sin acceso real a cuentas. No ejecutes herramientas ni uses datos privados.
+```
+
+**Resultado esperado:** Una matriz de casos y un criterio para elegir el catálogo con menos errores y menos pasos.
+
+Idea de partida: [Tool Retrieval de Gemini](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/). Texto reescrito por Alexandría.
