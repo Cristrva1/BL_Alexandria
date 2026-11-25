@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-22 · 968 repos curados · Documento 100% para IA.
+> Generado: 2026-11-25 · 970 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **968 repos** de IA y
+proyecto concreto. Tienes un menú curado de **970 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -567,7 +567,7 @@ Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 - `rembg` [L|loc|E|+] — Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. — tags: image,python
 - `upscayl` [A|loc|E|+] — Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux — tags: image,typescript,app,local
 
-### 12. Editar, grabar y generar video (19)
+### 12. Editar, grabar y generar video (20)
 Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 
 - `ai-youtube-shorts-generator` [A|hyb|M|+] — Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de mome — tags: generativo,2short-ai-alternative,ai-clip-generator,ai-clipping,auto-clip,auto-crop,highlight-detection,klap-alternative
@@ -584,6 +584,7 @@ Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 - `obs-studio` [A|loc|E|?] — App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio e — tags: video,audio,ui,cpp
 - `opencut` [A|hyb|M|?] — Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescr — tags: video,ui,typescript,rust — alt: shotcut,kdenlive
 - `openrv` [A|loc|E|+] — Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. — tags: edicion,app,c
+- `pysubs2` [L|loc|E|+] — Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video — tags: subtítulos,srt,webvtt,python
 - `short-video-factory` [A|hyb|M|?] — Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. — tags: generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux — alt: moneyprinterturbo
 - `shotcut` [A|loc|E|?] — Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de fo — tags: video,cpp,app,edicion — alt: kdenlive,opencut
 - `videolingo` [A|hyb|M|+] — App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores config — tags: video,stt,tts,python — prov: openai — alt: omnivoice-studio
@@ -1008,7 +1009,7 @@ Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agent
 - `uptime-kuma` [P|loc|E|+] — Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 c — tags: monitoring,self-hosted,javascript,docker
 - `wg-easy` [P|loc|E|+] — La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadíst — tags: network,self-hosted,docker,vpn
 
-### 23. Operar, evaluar y medir modelos de IA (30)
+### 23. Operar, evaluar y medir modelos de IA (31)
 Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 
 - `backdoor` [R|hyb|M|+] — Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. — tags: serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama — alt: omniroute,claude-code-router,litellm
@@ -1039,6 +1040,7 @@ Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 - `rtk` [A|loc|E|+] — Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código — tags: tokens,agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction — alt: headroom
 - `sglang` [R|loc|H|+] — Framework de servicio de alto rendimiento para LLM y modelos multimodales. — tags: inference,python — prov: local — alt: vllm
 - `tensorrt-llm` [L|loc|H|+] — Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes esp — tags: serving,blackwell,cuda,llm-serving,moe,pytorch,python
+- `toon-format` [L|loc|M|+] — Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compacta — tags: json,tokens,typescript,contexto
 - `vllm` [R|loc|H|+] — Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. — tags: inference,python — prov: local — alt: sglang
 - `xinference` [P|loc|M|+] — Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y víde — tags: serving,python,llm,self-hosted
 

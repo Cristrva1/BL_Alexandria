@@ -72,7 +72,7 @@
     {
       "num": 12,
       "title": "Editar, grabar y generar video",
-      "count": 19
+      "count": 20
     },
     {
       "num": 13,
@@ -127,7 +127,7 @@
     {
       "num": 23,
       "title": "Operar, evaluar y medir modelos de IA",
-      "count": 30
+      "count": 31
     },
     {
       "num": 24,
@@ -2330,12 +2330,13 @@
             "obs-studio",
             "opencut",
             "openrv",
+            "pysubs2",
             "rea-video",
             "shotcut",
             "video-use",
             "videolingo"
           ],
-          "count": 13
+          "count": 14
         },
         {
           "id": "av-video-ia",
@@ -2736,6 +2737,7 @@
         "pipecat",
         "planck-js",
         "pyannote-audio",
+        "pysubs2",
         "rea-video",
         "react-three-rapier",
         "real-esrgan",
@@ -2770,7 +2772,7 @@
         "whisperx",
         "yue"
       ],
-      "count": 118
+      "count": 119
     },
     {
       "id": "trading",
@@ -5139,10 +5141,11 @@
             "rtk",
             "sglang",
             "tensorrt-llm",
+            "toon-format",
             "vllm",
             "xinference"
           ],
-          "count": 16
+          "count": 17
         }
       ],
       "repo_ids": [
@@ -5248,6 +5251,7 @@
         "t3code",
         "tailcat",
         "tensorrt-llm",
+        "toon-format",
         "traefik",
         "tree-sitter",
         "trufflehog",
@@ -5257,7 +5261,7 @@
         "xinference",
         "zed"
       ],
-      "count": 110
+      "count": 111
     },
     {
       "id": "vision",
@@ -51961,6 +51965,123 @@
         "ffmpeg",
         "comfyui"
       ],
+      "alt": []
+    },
+    {
+      "id": "pysubs2",
+      "name": "pysubs2",
+      "cat": 12,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 2,
+      "puntuacion": null,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "subtítulos",
+        "srt",
+        "webvtt",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Ruta local básica con datos de ejemplo.",
+        "api_note": "Carga y transformación de archivos de subtítulos en Python.",
+        "subscription_note": "La ruta básica funciona sin iniciar sesión en un agente de IA.",
+        "local_note": "La ruta básica procesa los datos en tu equipo sin un modelo.",
+        "cost_note": "Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.",
+        "hardware_note": "Python 3.12 o posterior. La distribución comprobada declara cero dependencias de ejecución.",
+        "checked_at": "2026-11-24",
+        "review": "documented",
+        "sources": [
+          "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+          "https://pysubs2.readthedocs.io/en/latest/",
+          "https://pypi.org/project/pysubs2/1.9.1/",
+          "https://github.com/tkarabela/pysubs2/actions/runs/40979280401",
+          "https://github.com/tkarabela/pysubs2/security/advisories"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1dfe9cb4638de7b01d1f72e170be004fe48d354d"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Python 3.12 o posterior y entorno virtual.",
+          "Un archivo de subtítulos de ejemplo."
+        ],
+        "steps": [
+          "Prepara Python 3.12 o posterior en un entorno virtual y una copia de un archivo ASS pequeño.",
+          "Consulta la instalación para la versión 1.9.1 en PyPI. Para convertir una sola copia, sigue el ejemplo de terminal del README con el nombre de ese archivo.",
+          "Abre el SRT generado y comprueba cantidad de bloques y tiempos antes de procesar un lote."
+        ],
+        "command": "pip install pysubs2",
+        "command_status": "documented",
+        "entry_url": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+        "source": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+        "checked_at": "2026-11-24",
+        "note": "El README muestra el comando general. Selecciona la versión revisada 1.9.1 en el registro oficial y sigue los pasos."
+      },
+      "first_try": {
+        "action": "Convierte una copia de un ASS de dos líneas a SRT siguiendo el ejemplo del README fijado.",
+        "success": "Abre el SRT y comprueba que conserva las dos líneas y sus tiempos.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Corregir un desfase constante de los subtítulos en varios clips propios.",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-24",
+        "source": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+        "source_blob_sha": "1dfe9cb4638de7b01d1f72e170be004fe48d354d",
+        "previous_category": [
+          12,
+          "edicion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Versión revisada 1.9.1. GitHub Actions del proyecto registró pytest sobre fuente, sdist y wheel para Python 3.12 a 3.15 en el commit de la etiqueta. La prueba de Alexandría se describe para repetirla.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA.",
+      "desc": "Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/tkarabela/pysubs2",
+      "install": "pip install pysubs2",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.; Corregir un desfase constante de los subtítulos en varios clips propios.",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -101509,6 +101630,122 @@
         "deepseek-v3",
         "gpustack"
       ],
+      "alt": []
+    },
+    {
+      "id": "toon-format",
+      "name": "TOON",
+      "cat": 23,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": null,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "json",
+        "tokens",
+        "typescript",
+        "contexto"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Ruta local básica con datos de ejemplo.",
+        "api_note": "Codificar un objeto en el equipo no necesita un modelo. Invocar uno después tiene su propia cuota.",
+        "subscription_note": "La ruta básica funciona sin iniciar sesión en un agente de IA.",
+        "local_note": "La ruta básica procesa los datos en tu equipo sin un modelo.",
+        "cost_note": "Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.",
+        "hardware_note": "Node.js con npm y proyecto que pueda importar módulos ES.",
+        "checked_at": "2026-11-24",
+        "review": "documented",
+        "sources": [
+          "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+          "https://registry.npmjs.org/@toon-format%2Ftoon/4.4.0",
+          "https://github.com/toon-format/toon/actions/runs/37839997802",
+          "https://github.com/toon-format/toon/security/advisories/GHSA-p95v-992w-h6c3"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2232604dccd6ab1f85b7cc0ce3e1410b84481d96"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Node.js con npm y un proyecto con módulos ES.",
+          "Dos registros JSON ficticios con los mismos campos."
+        ],
+        "steps": [
+          "Prepara Node.js con npm y un proyecto de prueba que admita módulos ES.",
+          "Consulta el README de v4.4.0 e instala la versión revisada del paquete oficial. Usa el ejemplo de encode con dos objetos de muestra.",
+          "Comprueba que el texto contiene los dos objetos y conserva los valores. Mide el tamaño con el tokenizador de tu modelo si después quieres compararlos."
+        ],
+        "command": "npm install @toon-format/toon",
+        "command_status": "documented",
+        "entry_url": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+        "source": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+        "checked_at": "2026-11-24",
+        "note": "El README muestra el comando general. Selecciona la versión revisada 4.4.0 en el registro oficial y sigue los pasos."
+      },
+      "first_try": {
+        "action": "Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0.",
+        "success": "La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON original.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Representar un inventario ficticio de productos con los mismos tres campos en cada fila.",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-24",
+        "source": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+        "source_blob_sha": "2232604dccd6ab1f85b7cc0ce3e1410b84481d96",
+        "previous_category": [
+          23,
+          "tokens"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Versión revisada 4.4.0. El CI oficial ejecutó su etapa Test con éxito en el commit de la etiqueta. La ruta propuesta usa codificación local de una muestra propia.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos.",
+      "desc": "Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/toon-format/toon",
+      "install": "npm install @toon-format/toon",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [],
       "alt": []
     },
     {

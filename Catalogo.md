@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**966 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**968 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -19,7 +19,7 @@
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 33
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 31
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 10
-12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 19
+12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 20
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 25
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 51
@@ -30,7 +30,7 @@
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
 21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 18
 22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 32
-23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 30
+23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 31
 24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 25
 25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 23
 26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 32
@@ -600,6 +600,7 @@ _Editores, grabadores, utilidades de medios y modelos de video generativo. La ed
 | [Kdenlive](human/fichas/kdenlive.md) | Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [DaVinci Resolve MCP](human/fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [OpenRV](human/fichas/openrv.md) | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [pysubs2](human/fichas/pysubs2.md) | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 
 ### Video generativo y pipelines automáticos
 
@@ -1299,6 +1300,7 @@ _Servidores de inferencia, gateways, evaluación, trazas y control de contexto. 
 |---|---|---|---|---|
 | ⭐ [headroom](human/fichas/headroom.md) | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [rtk](human/fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [TOON](human/fichas/toon-format.md) | Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [GPTCache](human/fichas/gptcache.md) | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [LLMLingua](human/fichas/llmlingua.md) | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 

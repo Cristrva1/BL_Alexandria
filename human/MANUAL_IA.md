@@ -2,7 +2,7 @@
 
 Generado desde `data/handbook.json`. Guías de orientación documental; no acreditan instalación ni rendimiento. Las plantillas son originales de Alexandría.
 
-Revisión: 2026-11-22. Los precios, planes y versiones pueden cambiar.
+Revisión: 2026-11-24. Los precios, planes y versiones pueden cambiar.
 
 ## Índice
 
@@ -4305,3 +4305,27 @@ Cierra con una recomendación de una línea y el dato concreto que la haría cam
 **Resultado esperado:** Un informe con afirmaciones enlazadas, una tabla con datos marcados y una recomendación que dice qué la cambiaría.
 
 Idea de partida: [Prompts prácticos con herramientas de un asistente](https://x.com/free_ai_guides/status/2118991880914645303). Texto reescrito por Alexandría.
+
+### Decidir qué partes de un proceso automatizar
+
+Antes de conectar un agente a un proceso que hoy hace una persona.
+
+```text
+Mi proceso es [pasos]. Cada paso ocurre [frecuencia], tarda [tiempo] y usa [datos]. Indica qué dejar manual, qué convertir en plantilla, qué preparar como borrador con IA y qué automatizar con reglas. Para cada paso explica el ahorro estimado, qué pasaría si falla y quién puede corregirlo. Conserva aprobación para cambios de dinero, permisos, envíos o borrados. Propón una prueba con datos inventados y un criterio de parada. Haz el análisis por escrito sin conectar sistemas ni ejecutar acciones.
+```
+
+**Resultado esperado:** Una tabla por paso y un piloto pequeño con resultado esperado, encargado de revisión y condición de parada.
+
+Idea de partida: [Cuándo conviene usar un agente](https://www.anthropic.com/research/building-effective-agents). Texto reescrito por Alexandría.
+
+### Medir si tu agente reutiliza la caché del contexto
+
+Cuando el agente tarda al abrir respuestas pese a repetir instrucciones y contexto.
+
+```text
+Uso [motor, versión y modelo]. Mis dos solicitudes sintéticas son [ejemplos]. Separa las instrucciones estables del texto que cambia por petición. Diseña una comparación en frío y otra con el prefijo repetido, manteniendo iguales el modelo, las herramientas y el tamaño esperado de salida. Indica qué métricas de aciertos de caché y tiempo hasta el primer token expone este motor. Si no hay métricas, infórmalo y separa las hipótesis de los hechos. Propón una forma de conservar permisos, separación entre usuarios y trazabilidad. No ejecutes ni envíes datos del proyecto.
+```
+
+**Resultado esperado:** Protocolo de comparación con campos de registro y un criterio para decidir si el cambio produjo una mejora.
+
+Idea de partida: [Caché automática de prefijos de vLLM](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/). Texto reescrito por Alexandría.

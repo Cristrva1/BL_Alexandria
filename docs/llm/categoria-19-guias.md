@@ -1,6 +1,6 @@
 # Alexandría para agentes · Guías, cursos y cookbooks
 
-Categoría 19 «Aprender IA y escribir mejores prompts» › subcategoría `guias`. 14 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 19 «Aprender IA y escribir mejores prompts» › subcategoría `guias`. 14 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=19&sub=guias · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

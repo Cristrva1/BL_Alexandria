@@ -201024,6 +201024,314 @@
     "origen": "auto",
     "auto": 3
    }
+  },
+  "pysubs2": {
+   "name": "pysubs2",
+   "cat": 12,
+   "sub": "edicion",
+   "desc": "Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA.",
+   "how": "Lee el archivo de subtítulos, representa cada bloque con texto y tiempos de inicio y fin y escribe formatos como SRT, ASS o WebVTT.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/tkarabela/pysubs2/blob/master/README.md",
+   "cases": [
+    "Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.",
+    "Corregir un desfase constante de los subtítulos en varios clips propios."
+   ],
+   "stack": "Python, pyproject.toml",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.; Corregir un desfase constante de los subtítulos en varios clips propios.",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. La conversión a SRT puede perder estilos propios de ASS. Empieza con una copia y elige UTF-8 para preservar acentos.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/tkarabela/pysubs2",
+   "homepage": "http://pysubs2.readthedocs.io",
+   "license": "MIT",
+   "lang": "Python",
+   "updated": "2026-11-24",
+   "doc": "human/fichas/pysubs2.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Ruta local básica con datos de ejemplo.",
+    "api_note": "Carga y transformación de archivos de subtítulos en Python.",
+    "subscription_note": "La ruta básica funciona sin iniciar sesión en un agente de IA.",
+    "local_note": "La ruta básica procesa los datos en tu equipo sin un modelo.",
+    "cost_note": "Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.",
+    "hardware_note": "Python 3.12 o posterior. La distribución comprobada declara cero dependencias de ejecución.",
+    "checked_at": "2026-11-24",
+    "review": "documented",
+    "sources": [
+     "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+     "https://pysubs2.readthedocs.io/en/latest/",
+     "https://pypi.org/project/pysubs2/1.9.1/",
+     "https://github.com/tkarabela/pysubs2/actions/runs/40979280401",
+     "https://github.com/tkarabela/pysubs2/security/advisories"
+    ],
+    "mode": "software",
+    "source_blob_sha": "1dfe9cb4638de7b01d1f72e170be004fe48d354d"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Python 3.12 o posterior y entorno virtual.",
+     "Un archivo de subtítulos de ejemplo."
+    ],
+    "steps": [
+     "Prepara Python 3.12 o posterior en un entorno virtual y una copia de un archivo ASS pequeño.",
+     "Consulta la instalación para la versión 1.9.1 en PyPI. Para convertir una sola copia, sigue el ejemplo de terminal del README con el nombre de ese archivo.",
+     "Abre el SRT generado y comprueba cantidad de bloques y tiempos antes de procesar un lote."
+    ],
+    "command": "pip install pysubs2",
+    "command_status": "documented",
+    "entry_url": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+    "source": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+    "checked_at": "2026-11-24",
+    "note": "El README muestra el comando general. Selecciona la versión revisada 1.9.1 en el registro oficial y sigue los pasos."
+   },
+   "first_step": "Prepara Python 3.12 o posterior en un entorno virtual y una copia de un archivo ASS pequeño.",
+   "sources": {
+    "readme_blob_sha": "1dfe9cb4638de7b01d1f72e170be004fe48d354d",
+    "root_tree_sha": "6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5",
+    "readme_url": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+    "github_checked": "2026-11-24",
+    "collection": "altas-drive-2026-11-24"
+   },
+   "why": "Usos propuestos: Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.; Corregir un desfase constante de los subtítulos en varios clips propios..",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Corregir un desfase constante de los subtítulos en varios clips propios.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Convierte una copia de un ASS de dos líneas a SRT siguiendo el ejemplo del README fijado.",
+    "success": "Abre el SRT y comprueba que conserva las dos líneas y sus tiempos.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-24",
+    "source": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+    "source_blob_sha": "1dfe9cb4638de7b01d1f72e170be004fe48d354d",
+    "previous_category": [
+     12,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "Versión revisada 1.9.1. GitHub Actions del proyecto registró pytest sobre fuente, sdist y wheel para Python 3.12 a 3.15 en el commit de la etiqueta. La prueba de Alexandría se describe para repetirla.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "pysubs2 es una biblioteca Python y una utilidad de terminal para transformar archivos de subtítulos.",
+   "que_hace": "Convierte formatos y permite ajustar tiempos o editar texto de subtítulos ya existentes.",
+   "como_lo_hace": "Carga los bloques como eventos con texto y tiempos, aplica el ajuste y guarda una nueva salida en el formato elegido.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+    "https://pysubs2.readthedocs.io/en/latest/",
+    "https://pypi.org/project/pysubs2/1.9.1/",
+    "https://github.com/tkarabela/pysubs2/actions/runs/40979280401"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-2026-11-24",
+    "checked_at": "2026-11-24",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "tkarabela/pysubs2",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-24"
+   },
+   "complejidad_detalle": {
+    "nivel": 2,
+    "nombre": "Intermedio",
+    "motivos": [
+     "preparación sencilla",
+     "requiere programar con él"
+    ],
+    "origen": "auto",
+    "auto": 2
+   }
+  },
+  "toon-format": {
+   "name": "TOON",
+   "cat": 23,
+   "sub": "tokens",
+   "desc": "Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos.",
+   "how": "Codifica el mismo modelo de datos de JSON. En listas uniformes escribe los campos una vez y representa los valores de cada objeto como fila.",
+   "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/toon-format/toon/blob/main/README.md",
+   "cases": [
+    "Representar un inventario ficticio de productos con los mismos tres campos en cada fila.",
+    "Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto."
+   ],
+   "stack": "TypeScript, package.json",
+   "choose_if": "Tu objetivo encaja con estos ejemplos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.",
+   "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Usa v4.4.0 para seguir la ruta revisada. El aviso GHSA-p95v-992w-h6c3 afecta a versiones anteriores a 2.3.1. Probar solo con datos propios y medir el tamaño con tu modelo.",
+   "combines_with": [],
+   "alternatives": [],
+   "repo": "https://github.com/toon-format/toon",
+   "homepage": "https://toonformat.dev",
+   "license": "MIT",
+   "lang": "TypeScript",
+   "updated": "2026-11-24",
+   "doc": "human/fichas/toon-format.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Ruta local básica con datos de ejemplo.",
+    "api_note": "Codificar un objeto en el equipo no necesita un modelo. Invocar uno después tiene su propia cuota.",
+    "subscription_note": "La ruta básica funciona sin iniciar sesión en un agente de IA.",
+    "local_note": "La ruta básica procesa los datos en tu equipo sin un modelo.",
+    "cost_note": "Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.",
+    "hardware_note": "Node.js con npm y proyecto que pueda importar módulos ES.",
+    "checked_at": "2026-11-24",
+    "review": "documented",
+    "sources": [
+     "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+     "https://registry.npmjs.org/@toon-format%2Ftoon/4.4.0",
+     "https://github.com/toon-format/toon/actions/runs/37839997802",
+     "https://github.com/toon-format/toon/security/advisories/GHSA-p95v-992w-h6c3"
+    ],
+    "mode": "software",
+    "source_blob_sha": "2232604dccd6ab1f85b7cc0ce3e1410b84481d96"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "developer",
+    "prerequisites": [
+     "Node.js con npm y un proyecto con módulos ES.",
+     "Dos registros JSON ficticios con los mismos campos."
+    ],
+    "steps": [
+     "Prepara Node.js con npm y un proyecto de prueba que admita módulos ES.",
+     "Consulta el README de v4.4.0 e instala la versión revisada del paquete oficial. Usa el ejemplo de encode con dos objetos de muestra.",
+     "Comprueba que el texto contiene los dos objetos y conserva los valores. Mide el tamaño con el tokenizador de tu modelo si después quieres compararlos."
+    ],
+    "command": "npm install @toon-format/toon",
+    "command_status": "documented",
+    "entry_url": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+    "source": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+    "checked_at": "2026-11-24",
+    "note": "El README muestra el comando general. Selecciona la versión revisada 4.4.0 en el registro oficial y sigue los pasos."
+   },
+   "first_step": "Prepara Node.js con npm y un proyecto de prueba que admita módulos ES.",
+   "sources": {
+    "readme_blob_sha": "2232604dccd6ab1f85b7cc0ce3e1410b84481d96",
+    "root_tree_sha": "e172b0e7873260c0a500cfd0905162ef6348de55",
+    "readme_url": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+    "github_checked": "2026-11-24",
+    "collection": "altas-drive-2026-11-24"
+   },
+   "why": "Usos propuestos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto..",
+   "models": "No usa LLM ni API de IA",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Representar un inventario ficticio de productos con los mismos tres campos en cada fila.",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0.",
+    "success": "La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON original.",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-24",
+    "source": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+    "source_blob_sha": "2232604dccd6ab1f85b7cc0ce3e1410b84481d96",
+    "previous_category": [
+     23,
+     "tokens"
+    ],
+    "category_verdict": "confirmed",
+    "note": "Versión revisada 4.4.0. El CI oficial ejecutó su etapa Test con éxito en el commit de la etiqueta. La ruta propuesta usa codificación local de una muestra propia.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.",
+   "que_hace": "Representa listas uniformes con una cabecera común y filas para dejar más visible la forma de los datos.",
+   "como_lo_hace": "Conserva el modelo de datos de JSON e identifica conjuntos de objetos compatibles con una representación tabular.",
+   "combina_con": [],
+   "descripcion_fuentes": [
+    "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+    "https://registry.npmjs.org/@toon-format%2Ftoon/4.4.0",
+    "https://github.com/toon-format/toon/actions/runs/37839997802",
+    "https://github.com/toon-format/toon/security/advisories/GHSA-p95v-992w-h6c3"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-2026-11-24",
+    "checked_at": "2026-11-24",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "toon-format/toon",
+    "archived": false,
+    "pushed_at": "2026-11-24",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-24",
+    "latest_release": "v4.4.0 (2026-10-08)"
+   },
+   "complejidad_detalle": {
+    "nivel": 2,
+    "nombre": "Intermedio",
+    "motivos": [
+     "preparación media",
+     "requiere programar con él"
+    ],
+    "origen": "auto",
+    "auto": 2
+   }
   }
  },
  "meta": {

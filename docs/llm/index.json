@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-22",
+ "fecha": "2026-11-24",
  "max_tokens": 25000,
  "estimacion": "caracteres / 3.5",
  "archivos": [
@@ -448,10 +448,10 @@
    "cat": 12,
    "sub": "edicion",
    "titulo": "Edición, grabación y subtítulos",
-   "repos": 11,
+   "repos": 12,
    "archivo": "categoria-12-edicion.md",
-   "caracteres": 19505,
-   "tokens_estimados": 5573
+   "caracteres": 20629,
+   "tokens_estimados": 5895
   },
   {
    "cat": 12,
@@ -466,10 +466,10 @@
    "cat": 12,
    "sub": null,
    "titulo": "Editar, grabar y generar video",
-   "repos": 19,
+   "repos": 20,
    "archivo": "categoria-12.md",
-   "caracteres": 34245,
-   "tokens_estimados": 9785
+   "caracteres": 35379,
+   "tokens_estimados": 10109
   },
   {
    "cat": 13,
@@ -1041,10 +1041,10 @@
    "cat": 23,
    "sub": "tokens",
    "titulo": "Ahorro de contexto y tokens",
-   "repos": 4,
+   "repos": 5,
    "archivo": "categoria-23-tokens.md",
-   "caracteres": 9000,
-   "tokens_estimados": 2572
+   "caracteres": 10253,
+   "tokens_estimados": 2930
   },
   {
    "cat": 23,
@@ -1059,10 +1059,10 @@
    "cat": 23,
    "sub": null,
    "titulo": "Operar, evaluar y medir modelos de IA",
-   "repos": 30,
+   "repos": 31,
    "archivo": "categoria-23.md",
-   "caracteres": 50985,
-   "tokens_estimados": 14568
+   "caracteres": 52247,
+   "tokens_estimados": 14928
   },
   {
    "cat": 24,

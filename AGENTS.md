@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**966 repos curados** · **14 áreas de trabajo** · **3 colecciones de configuración** · **110 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
+**968 repos curados** · **14 áreas de trabajo** · **3 colecciones de configuración** · **110 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
@@ -89,7 +89,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 9 | 🎨 Diseñar y construir interfaces web | 33 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
 | 10 | 📊 Dashboards, analítica y mapas | 31 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
 | 11 | 🖼️ Generar y editar imágenes con IA | 10 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | 🎬 Editar, grabar y generar video | 19 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
+| 12 | 🎬 Editar, grabar y generar video | 20 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
 | 13 | 📄 PDF, OCR y procesamiento de documentos | 22 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 25 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
 | 15 | 🗂️ Organizar notas, archivos y servicios personales | 51 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
@@ -100,7 +100,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 20 | 🕸️ Programar con agentes de código | 21 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones | `human/categorias/20-agentes-de-codigo.md` |
 | 21 | 🕸️ Asistentes e investigación con agentes | 18 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
 | 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 32 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |
-| 23 | 🧬 Operar, evaluar y medir modelos de IA | 30 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
+| 23 | 🧬 Operar, evaluar y medir modelos de IA | 31 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
 | 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 25 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
 | 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 23 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
 | 26 | 🎨 Animación, gráficos y creación 3D | 32 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
@@ -180,7 +180,7 @@ Ese flujo sirve cuando existe un clon. Para nuevas stars sin clones, usa fuentes
 
 La revisión individual de los 679 proyectos está en `curation/review-679-2026-11-14/` y `reports/review-679-2026-11-14.json`. `scripts/apply_review_679.py --apply` exige cobertura total y las instantáneas locales de esa revisión; es una migración fechada,no un auditor automático de proyectos nuevos. Conserva la incertidumbre y el SHA anterior al actualizar una fuente. No publiques el documento privado de importación ni las instantáneas completas de README.
 
-Para la actualización diaria desde stars, sigue [DAILY_STARS.md](DAILY_STARS.md). `uv run python scripts/daily_stars.py` detecta ids públicos faltantes y guarda fuentes en la carpeta ignorada `data/reviews/daily-stars/`; no clasifica ni incorpora automáticamente. La tarea programada de Codex realiza la revisión editorial y la publicación. No recrees clones, no dupliques renombrados y no borres fichas al retirar una star.
+Para la revisión diaria de la carpeta de recursos, sigue [DAILY_DRIVE.md](DAILY_DRIVE.md). Conserva el registro privado de revisiones y candidatos fuera de Git y actualiza el catálogo solo con material verificado. El [detector de stars](DAILY_STARS.md) queda disponible para consultas manuales.
 
 Los repos obsoletos se retiran con aprobación y quedan registrados en `data/retired.json`; el detector de stars los omite. Consulta el procedimiento en [mantenimiento editorial](human/mantenimiento.md#retirar-repos-obsoletos).
 

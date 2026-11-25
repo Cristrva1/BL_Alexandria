@@ -1,6 +1,6 @@
 # Alexandría para agentes · Calidad, seguridad y benchmarks de código
 
-Categoría 7 «Entender código y comprobar su calidad» › subcategoría `calidad`. 9 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 7 «Entender código y comprobar su calidad» › subcategoría `calidad`. 9 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7&sub=calidad · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

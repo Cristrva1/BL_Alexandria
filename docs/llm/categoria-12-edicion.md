@@ -1,6 +1,6 @@
 # Alexandría para agentes · Edición, grabación y subtítulos
 
-Categoría 12 «Editar, grabar y generar video» › subcategoría `edicion`. 11 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 12 «Editar, grabar y generar video» › subcategoría `edicion`. 12 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=12&sub=edicion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,6 +29,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `shotcut` | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | alternativa |
 | `handbrake` | Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz… | 1 Básico | 58 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `openrv` | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y… | 1 Básico | 44 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `pysubs2` | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -163,6 +164,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Abre dos versiones de una toma y compara fotogramas en el mismo punto Éxito: Puedes observar diferencias de imagen sin desalinear el tiempo
 - **Combina con:** `blender` [26/creacion-3d], `ffmpeg`, `comfyui` [11/interfaces]
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo.
+
+### pysubs2 (`pysubs2`)
+
+- **Repo:** https://github.com/tkarabela/pysubs2 · MIT · nivel 2 · —/100
+- **Qué es:** pysubs2 es una biblioteca Python y una utilidad de terminal para transformar archivos de subtítulos.
+- **Cuándo elegirlo:** Casos: Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.; Corregir un desfase constante de los subtítulos en varios clips propios.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; API de IA: no; Python 3.12 o posterior y entorno virtual.; Un archivo de subtítulos de ejemplo..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install pysubs2` — fuente: https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md
+- **Primera prueba propuesta (no ejecutada):** Convierte una copia de un ASS de dos líneas a SRT siguiendo el ejemplo del README fijado. Éxito: Abre el SRT y comprueba que conserva las dos líneas y sus tiempos.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Operar, evaluar y medir modelos de IA
 
-Categoría 23 completa (30 repos, 3 subcategorías). Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 23 completa (31 repos, 3 subcategorías). Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=23 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -34,6 +34,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `headroom` | tokens | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `gptcache` | tokens | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | — | MIT | sin grupo |
 | `llmlingua` | tokens | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | — | MIT | sin grupo |
+| `toon-format` | tokens | Convierte listas de objetos JSON a un texto con encabezado y filas para… | 2 Intermedio | — | MIT | sin grupo |
 | `langfuse` | observabilidad | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM… | 2 Intermedio | 79 | MIT + licencia Enterprise (ee/) (open-core) | recomendado |
 | `promptfoo` | observabilidad | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de… | 1 Básico | 79 | MIT (OSI permisiva) | recomendado |
 | `opik` | observabilidad | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -253,6 +254,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://llmlingua.com/
 - **Primera prueba propuesta (no ejecutada):** Comprime un texto público breve con un modelo local pequeño del proyecto. Éxito: Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas.
 - **Riesgos y avisos:** Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.
+
+### TOON (`toon-format`)
+
+- **Repo:** https://github.com/toon-format/toon · MIT · nivel 2 · —/100
+- **Qué es:** TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.
+- **Cuándo elegirlo:** Casos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Node.js con npm y un proyecto con módulos ES.; Dos registros JSON ficticios con los mismos campos..
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install @toon-format/toon` — fuente: https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md
+- **Primera prueba propuesta (no ejecutada):** Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0. Éxito: La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON…
 
 ### langfuse (`langfuse`)
 

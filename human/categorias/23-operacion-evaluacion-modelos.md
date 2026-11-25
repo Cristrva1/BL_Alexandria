@@ -4,7 +4,7 @@
 
 Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas.
 
-30 repos · 3 secciones
+31 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 12 repos
-- [Ahorro de contexto y tokens](#ahorro-de-contexto-y-tokens) — 4 repos
+- [Ahorro de contexto y tokens](#ahorro-de-contexto-y-tokens) — 5 repos
 - [Observabilidad, evaluación y guardrails](#observabilidad-evaluación-y-guardrails) — 14 repos
 
 ## Serving y gateways de LLM
@@ -45,6 +45,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [headroom](../fichas/headroom.md) | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | Tu objetivo encaja con estos ejemplos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión | API de IA opcional |
 | [rtk](../fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | Tu objetivo encaja con estos ejemplos: Reducir salida repetitiva de comandos; Estudiar consumo de contexto por tarea | API de IA opcional |
+| [TOON](../fichas/toon-format.md) | Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos. | Tu objetivo encaja con estos ejemplos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto. | Sin clave propia de API de IA en la ruta básica |
 | [GPTCache](../fichas/gptcache.md) | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables. | Tu objetivo encaja con estos ejemplos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales. | API de IA opcional |
 | [LLMLingua](../fichas/llmlingua.md) | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt. | Tu objetivo encaja con estos ejemplos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante. | Sin clave propia de API de IA en la ruta básica |
 

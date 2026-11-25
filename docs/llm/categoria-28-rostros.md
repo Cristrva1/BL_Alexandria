@@ -1,6 +1,6 @@
 # Alexandría para agentes · Rostros y retratos animados
 
-Categoría 28 «Visión artificial, rostros y percepción» › subcategoría `rostros`. 5 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 28 «Visión artificial, rostros y percepción» › subcategoría `rostros`. 5 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=28&sub=rostros · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

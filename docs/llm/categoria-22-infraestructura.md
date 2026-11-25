@@ -1,6 +1,6 @@
 # Alexandría para agentes · Alojamiento y backend
 
-Categoría 22 «Infraestructura, despliegue y herramientas para agentes» › subcategoría `infraestructura`. 10 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 22 «Infraestructura, despliegue y herramientas para agentes» › subcategoría `infraestructura`. 10 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=22&sub=infraestructura · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

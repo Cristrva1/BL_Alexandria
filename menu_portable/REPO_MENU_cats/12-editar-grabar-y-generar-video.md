@@ -434,6 +434,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `blender`, `ffmpeg`, `comfyui`
 
+## `pysubs2`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=subtítulos,srt,webvtt,python
+
+**Qué es:** Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Carga y transformación de archivos de subtítulos en Python.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La ruta básica procesa los datos en tu equipo sin un modelo.
+- Coste: Sin pago a un modelo en la ruta básica. Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.
+- Equipo: Equipo normal; revisar dependencias. Python 3.12 o posterior. La distribución comprobada declara cero dependencias de ejecución.
+**Repo:** https://github.com/tkarabela/pysubs2
+
+**Instalación** [+]:
+
+```
+pip install pysubs2
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.; Corregir un desfase constante de los subtítulos en varios clips propios.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Convierte una copia de un ASS de dos líneas a SRT siguiendo el ejemplo del README fijado.
+**Qué comprobar:** Abre el SRT y comprueba que conserva las dos líneas y sus tiempos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `short-video-factory`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux
 

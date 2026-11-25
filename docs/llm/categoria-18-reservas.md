@@ -1,6 +1,6 @@
 # Alexandría para agentes · Reservas y programación de citas
 
-Categoría 18 «CRM, ventas y marketing» › subcategoría `reservas`. 3 repos. Generado el 2026-11-22 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 18 «CRM, ventas y marketing» › subcategoría `reservas`. 3 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=18&sub=reservas · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

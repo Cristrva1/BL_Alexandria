@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 968 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 970 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -171,7 +171,7 @@
     ]
    }
   ],
-  "updated": "2026-11-22",
+  "updated": "2026-11-24",
   "local_inventory": {
    "checked_at": "2026-11-14",
    "status": "library_deleted_by_user",
@@ -581,7 +581,7 @@
    "title": "Editar, grabar y generar video",
    "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 19,
+   "count": 20,
    "subs": [
     {
      "key": "edicion",
@@ -917,7 +917,7 @@
      "title": "Observabilidad, evaluación y guardrails"
     }
    ],
-   "count": 30
+   "count": 31
   },
   {
    "num": 24,
@@ -40754,6 +40754,82 @@
     "no_api"
    ],
    "complejidad": 3
+  },
+  {
+   "id": "pysubs2",
+   "name": "pysubs2",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "subtítulos",
+    "srt",
+    "webvtt",
+    "python"
+   ],
+   "stars": 455,
+   "gh": "tkarabela/pysubs2",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA.",
+   "alt": [],
+   "doc": "human/fichas/pysubs2.md",
+   "github_id": 22663580,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-24",
+   "github_checked": "2026-11-24",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
+  },
+  {
+   "id": "toon-format",
+   "name": "TOON",
+   "cat": 23,
+   "sub": "tokens",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "json",
+    "tokens",
+    "typescript",
+    "contexto"
+   ],
+   "stars": 25656,
+   "gh": "toon-format/toon",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos.",
+   "alt": [],
+   "doc": "human/fichas/toon-format.md",
+   "github_id": 1081397957,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-24",
+   "github_checked": "2026-11-24",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "complejidad": 2
   }
  ],
  "discovery": {
@@ -48731,10 +48807,10 @@
    }
   ],
   "editorial_review": {
-   "total": 966,
-   "reviewed": 966,
-   "date": "2026-11-22",
-   "report": "reports/drive-seguridad-2026-11-22.md",
+   "total": 968,
+   "reviewed": 968,
+   "date": "2026-11-24",
+   "report": "reports/drive-2026-11-24.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."
   },
   "goal_groups": [

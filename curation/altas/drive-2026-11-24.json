@@ -1,0 +1,134 @@
+{
+ "lote": "drive-2026-11-24",
+ "fecha": "2026-11-24",
+ "metodo": "Contraste documental de licencia, distribución, avisos y ejecución de CI oficial vinculada a la versión revisada.",
+ "repos": [
+  {
+   "gh": "tkarabela/pysubs2",
+   "id": "pysubs2",
+   "name": "pysubs2",
+   "cat": 12,
+   "sub": "edicion",
+   "kind": "library",
+   "one": "Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA.",
+   "how": "Lee el archivo de subtítulos, representa cada bloque con texto y tiempos de inicio y fin y escribe formatos como SRT, ASS o WebVTT.",
+   "examples": [
+    "Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.",
+    "Corregir un desfase constante de los subtítulos en varios clips propios."
+   ],
+   "try": [
+    "Convierte una copia de un ASS de dos líneas a SRT siguiendo el ejemplo del README fijado.",
+    "Abre el SRT y comprueba que conserva las dos líneas y sus tiempos."
+   ],
+   "steps": [
+    "Prepara Python 3.12 o posterior en un entorno virtual y una copia de un archivo ASS pequeño.",
+    "Consulta la instalación para la versión 1.9.1 en PyPI. Para convertir una sola copia, sigue el ejemplo de terminal del README con el nombre de ese archivo.",
+    "Abre el SRT generado y comprueba cantidad de bloques y tiempos antes de procesar un lote."
+   ],
+   "ligero": true,
+   "ai": "local",
+   "license": "MIT",
+   "setup": "easy",
+   "goals": [
+    "video"
+   ],
+   "tags": [
+    "subtítulos",
+    "srt",
+    "webvtt",
+    "python"
+   ],
+   "url": "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+   "cmd": "pip install pysubs2",
+   "caveat": "La conversión a SRT puede perder estilos propios de ASS. Empieza con una copia y elige UTF-8 para preservar acentos.",
+   "note": "Versión revisada 1.9.1. GitHub Actions del proyecto registró pytest sobre fuente, sdist y wheel para Python 3.12 a 3.15 en el commit de la etiqueta. La prueba de Alexandría se describe para repetirla.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "La ruta básica funciona sin iniciar sesión en un agente de IA.",
+    "local_note": "La ruta básica procesa los datos en tu equipo sin un modelo.",
+    "scope": "Ruta local básica con datos de ejemplo.",
+    "cost_note": "Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.",
+    "api_note": "Carga y transformación de archivos de subtítulos en Python.",
+    "hardware_note": "Python 3.12 o posterior. La distribución comprobada declara cero dependencias de ejecución.",
+    "sources": [
+     "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md",
+     "https://pysubs2.readthedocs.io/en/latest/",
+     "https://pypi.org/project/pysubs2/1.9.1/",
+     "https://github.com/tkarabela/pysubs2/actions/runs/40979280401",
+     "https://github.com/tkarabela/pysubs2/security/advisories"
+    ]
+   },
+   "alt": []
+  },
+  {
+   "gh": "toon-format/toon",
+   "id": "toon-format",
+   "name": "TOON",
+   "cat": 23,
+   "sub": "tokens",
+   "kind": "library",
+   "one": "Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos.",
+   "how": "Codifica el mismo modelo de datos de JSON. En listas uniformes escribe los campos una vez y representa los valores de cada objeto como fila.",
+   "examples": [
+    "Representar un inventario ficticio de productos con los mismos tres campos en cada fila.",
+    "Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto."
+   ],
+   "try": [
+    "Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0.",
+    "La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON original."
+   ],
+   "steps": [
+    "Prepara Node.js con npm y un proyecto de prueba que admita módulos ES.",
+    "Consulta el README de v4.4.0 e instala la versión revisada del paquete oficial. Usa el ejemplo de encode con dos objetos de muestra.",
+    "Comprueba que el texto contiene los dos objetos y conserva los valores. Mide el tamaño con el tokenizador de tu modelo si después quieres compararlos."
+   ],
+   "ligero": true,
+   "ai": "local",
+   "license": "MIT",
+   "setup": "medium",
+   "goals": [
+    "programar"
+   ],
+   "tags": [
+    "json",
+    "tokens",
+    "typescript",
+    "contexto"
+   ],
+   "url": "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+   "cmd": "npm install @toon-format/toon",
+   "caveat": "Usa v4.4.0 para seguir la ruta revisada. El aviso GHSA-p95v-992w-h6c3 afecta a versiones anteriores a 2.3.1. Probar solo con datos propios y medir el tamaño con tu modelo.",
+   "note": "Versión revisada 4.4.0. El CI oficial ejecutó su etapa Test con éxito en el commit de la etiqueta. La ruta propuesta usa codificación local de una muestra propia.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "La ruta básica funciona sin iniciar sesión en un agente de IA.",
+    "local_note": "La ruta básica procesa los datos en tu equipo sin un modelo.",
+    "scope": "Ruta local básica con datos de ejemplo.",
+    "cost_note": "Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.",
+    "api_note": "Codificar un objeto en el equipo no necesita un modelo. Invocar uno después tiene su propia cuota.",
+    "hardware_note": "Node.js con npm y proyecto que pueda importar módulos ES.",
+    "sources": [
+     "https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md",
+     "https://registry.npmjs.org/@toon-format%2Ftoon/4.4.0",
+     "https://github.com/toon-format/toon/actions/runs/37839997802",
+     "https://github.com/toon-format/toon/security/advisories/GHSA-p95v-992w-h6c3"
+    ]
+   },
+   "alt": []
+  }
+ ]
+}

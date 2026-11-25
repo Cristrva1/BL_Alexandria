@@ -870,6 +870,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `open-webui`, `transformers`, `deepseek-v3`, `gpustack`
 
+## `toon-format`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=json,tokens,typescript,contexto
+
+**Qué es:** Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. Codificar un objeto en el equipo no necesita un modelo. Invocar uno después tiene su propia cuota.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La ruta básica procesa los datos en tu equipo sin un modelo.
+- Coste: Sin pago a un modelo en la ruta básica. Código MIT. La tarea de ejemplo se ejecuta con herramientas gratuitas en tu equipo.
+- Equipo: Equipo normal; revisar dependencias. Node.js con npm y proyecto que pueda importar módulos ES.
+**Repo:** https://github.com/toon-format/toon
+
+**Instalación** [+]:
+
+```
+npm install @toon-format/toon
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0.
+**Qué comprobar:** La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON original.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `vllm`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python
 
