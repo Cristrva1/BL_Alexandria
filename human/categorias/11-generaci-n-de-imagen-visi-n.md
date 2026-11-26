@@ -4,7 +4,7 @@
 
 Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.
 
-10 repos · 3 secciones
+11 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Interfaces para generar imágenes](#interfaces-para-generar-imágenes) — 3 repos
 - [Modelos, librerías y control](#modelos-librerías-y-control) — 2 repos
-- [Restauración, upscaling y edición](#restauración-upscaling-y-edición) — 5 repos
+- [Restauración, upscaling y edición](#restauración-upscaling-y-edición) — 6 repos
 
 ## Interfaces para generar imágenes
 
@@ -45,6 +45,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Upscayl](../fichas/upscayl.md) | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows. | Tu objetivo encaja con estos ejemplos: ampliar fotos antiguas o de baja resolución para imprimirlas; escalar en lote una carpeta de imágenes para una web | Sin clave propia de API de IA en la ruta básica |
 | [Real-ESRGAN](../fichas/real-esrgan.md) | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. | Tu objetivo encaja con estos ejemplos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución | Sin clave propia de API de IA en la ruta básica |
 | [CodeFormer](../fichas/codeformer.md) | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio | Sin clave propia de API de IA en la ruta básica |
+| [ImageMagick](../fichas/imagemagick.md) | Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA. | Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles. | Sin clave propia de API de IA en la ruta básica |
 | [chaiNNer](../fichas/chainner.md) | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux. | Tu objetivo encaja con estos ejemplos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas

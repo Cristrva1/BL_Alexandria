@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 40/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 41/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** S-Lab License 1.0 (no comercial). Redistribución y uso solo con fines no comerciales. Fuente: [LICENSE](https://github.com/sczhou/CodeFormer/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 

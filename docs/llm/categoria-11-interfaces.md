@@ -1,6 +1,6 @@
 # Alexandría para agentes · Interfaces para generar imágenes
 
-Categoría 11 «Generar y editar imágenes con IA» › subcategoría `interfaces`. 3 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 11 «Generar y editar imágenes con IA» › subcategoría `interfaces`. 3 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=11&sub=interfaces · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,7 +18,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `comfyui` | Motor local para crear pipelines de generación de imagen y video con IA… | 3 Avanzado | 82 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `comfyui` | Motor local para crear pipelines de generación de imagen y video con IA… | 3 Avanzado | 81 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `invokeai` | Suite profesional y unificada para Stable Diffusion que combina una UI web… | 3 Avanzado | 73 | Apache-2.0 (OSI permisiva) | recomendado |
 | `krita-ai-diffusion` | Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | alternativa |
 
@@ -28,7 +28,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ComfyUI (`comfyui`)
 
-- **Repo:** https://github.com/Comfy-Org/ComfyUI · GPL-3.0 · nivel 3 · 82/100
+- **Repo:** https://github.com/Comfy-Org/ComfyUI · GPL-3.0 · nivel 3 · 81/100
 - **Qué es:** ComfyUI, motor modular de creación con IA basado en grafos de nodos, mantenido por Comfy Org. Licencia GPL-3.0. Es uno de los proyectos de IA generativa más populares (~147k estrellas, v0.45.0).
 - **Cuándo elegirlo:** Casos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo.
 - **Requisitos:** nivel 3: preparación pesada; Python o distribución elegida; modelo; RAM y GPU según workflow; hardware prerequisites; API de IA: opcional; Python o distribución elegida; modelo; RAM y GPU según workflow.

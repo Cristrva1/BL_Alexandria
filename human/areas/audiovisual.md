@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-119 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+120 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -164,7 +164,7 @@ Construir conversaciones por audio con procesamiento y respuesta en directo.
 
 Generar imágenes, ampliar, recortar o restaurar fotografías.
 
-[Explorar 12 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-imagen)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-imagen)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -174,6 +174,7 @@ Generar imágenes, ampliar, recortar o restaurar fotografías.
 | [Creative Architect](../fichas/creative-architect.md) | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video. | API de IA opcional |
 | [diffusers](../fichas/diffusers.md) | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. | Sin clave propia de API de IA en la ruta básica |
 | [FLUX.2](../fichas/flux2.md) | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágenes, con variantes rápidas para GPU domésticas. | API de IA opcional |
+| [ImageMagick](../fichas/imagemagick.md) | Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA. | Sin clave propia de API de IA en la ruta básica |
 | [InvokeAI](../fichas/invokeai.md) | Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. | Sin clave propia de API de IA en la ruta básica |
 | [Krita AI Diffusion](../fichas/krita-ai-diffusion.md) | Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. | API de IA opcional |
 | [logo-design-skill](../fichas/logo-design-skill.md) | Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño. | Sin clave propia de API de IA en la ruta básica |

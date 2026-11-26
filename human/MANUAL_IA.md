@@ -2,7 +2,7 @@
 
 Generado desde `data/handbook.json`. Guías de orientación documental; no acreditan instalación ni rendimiento. Las plantillas son originales de Alexandría.
 
-Revisión: 2026-11-25. Los precios, planes y versiones pueden cambiar.
+Revisión: 2026-11-26. Los precios, planes y versiones pueden cambiar.
 
 ## Índice
 
@@ -3286,19 +3286,20 @@ Ayuda a elegir cómo exponer una función de una página a un agente o cómo ofr
 
 ### Primera prueba
 
-1. Lee la comparación y elige una función sencilla, como filtrar un listado público.
-2. Decide si necesita el estado de la página abierta o si puede ejecutarse desde un servidor independiente.
-3. Si pruebas WebMCP, registra solo una acción sin escritura y comprueba en Chrome que se descubre y devuelve el resultado esperado.
+1. Elige una función de una página propia, como filtrar un catálogo de prueba. Decide si necesita el estado de la página abierta o si puede ejecutarse desde un servidor MCP independiente.
+2. Prueba el formulario HTML con etiquetas visibles, campos con nombre y botón de envío. Establece qué sucede si se deja un campo requerido vacío.
+3. En un perfil de prueba de Chrome compatible, añade el nombre y la descripción de la herramienta al formulario y usa datos ficticios. Mantén la revisión manual y prueba el envío desde el botón.
+4. Si la acción necesita JavaScript más allá del formulario, consulta la interfaz imperativa. Comprueba que la página también funciona con la función experimental desactivada.
 
-**Qué comprobar:** Puedes explicar por qué la acción va en la página o en un servidor y qué cliente puede invocarla.
+**Qué comprobar:** En la demostración, el navegador admite que el agente rellene un campo, deja el borrador visible para revisión y el filtro funciona también al usarlo a mano.
 
-**Cuenta y compatibilidad:** WebMCP sigue como propuesta con prueba de origen desde Chrome 149 según la guía. Comprueba soporte del navegador y del cliente. MCP de servidor tiene su propia ruta de conexión para cada agente.
+**Cuenta y compatibilidad:** WebMCP sigue como propuesta con prueba de origen desde Chrome 149 según Google. Para probar el rellenado asistido necesitas un navegador y un cliente compatibles. El formulario básico y la lectura se pueden probar sin suscripción.
 
-**Costes:** Guías y experimento de navegador sin tarifa de lectura. Si usas un modelo hospedado o un servidor MCP externo, estima su gasto por separado.
+**Costes:** La lectura y la prueba manual del formulario son gratuitas. Comprueba por separado el precio y los requisitos de un agente, un modelo hospedado o un servidor MCP externo.
 
 ### Mejoras después de la primera prueba
 
-- Reserva confirmaciones para operaciones con efectos y deja que el sitio siga funcionando para personas sin un agente.
+- Mantén la confirmación manual para operaciones con efectos. En el ensayo evita el atributo toolautosubmit y deja visible lo que se va a enviar.
 
 ### Límites
 
@@ -3308,8 +3309,13 @@ Fichas del catálogo: [mcp-inspector](fichas/mcp-inspector.md)
 
 ### Fuentes
 
-- [Cuándo usar WebMCP y MCP](https://developer.chrome.com/docs/ai/webmcp/compare-mcp) · 2026-11-22
-- [Requisitos y estado en Chrome](https://developer.chrome.com/docs/ai/webmcp) · 2026-11-22
+- [Comparación entre WebMCP y MCP](https://developer.chrome.com/docs/ai/webmcp/compare-mcp) · 2026-11-26
+- [Requisitos y estado en Chrome](https://developer.chrome.com/docs/ai/webmcp) · 2026-11-26
+- [Interfaz declarativa con HTML](https://developer.chrome.com/docs/ai/webmcp/declarative-api) · 2026-11-26
+- [Formularios para agentes](https://developer.chrome.com/docs/modern-web-guidance/guides/webmcp/agentic-forms) · 2026-11-26
+- [Herramientas de agente en JavaScript](https://developer.chrome.com/docs/modern-web-guidance/guides/webmcp/agentic-javascript-tools) · 2026-11-26
+- [Fundamentos de formularios](https://developer.chrome.com/docs/modern-web-guidance/guides/forms/forms) · 2026-11-26
+- [Activación de guías experimentales](https://developer.chrome.com/docs/modern-web-guidance/get-started#enable_guidance_for_features_in_origin_trial) · 2026-11-26
 
 <a id="gemini-carbon"></a>
 
@@ -4421,3 +4427,15 @@ Mi agente ofrece [herramientas y permisos]. Con [tareas ficticias], prepara una 
 **Resultado esperado:** Una matriz de casos y un criterio para elegir el catálogo con menos errores y menos pasos.
 
 Idea de partida: [Tool Retrieval de Gemini](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/). Texto reescrito por Alexandría.
+
+### Planear tres piezas que acompañen una decisión de compra
+
+Cuando tienes una oferta y quieres que cada publicación ayude a dar un paso concreto.
+
+```text
+Tengo [oferta] para [público]. La pregunta frecuente es [pregunta]. Prepara tres piezas para [canal], una para descubrir la solución, otra para compararla y otra para decidir. Para cada pieza indica la duda a resolver, un ejemplo de título, una sola acción siguiente y una señal observable. Conecta la segunda con la primera y la tercera con la segunda. Prioriza el tiempo y presupuesto [recursos]. Incluye una forma de anotar resultados en una hoja y señala qué supuestos debo comprobar. Evita inventar precios, cifras o testimonios.
+```
+
+**Resultado esperado:** Una tabla con tres piezas conectadas. Si ofreces reparación de bicicletas, puedes empezar con una lista de síntomas, seguir con una comparación de reparaciones y terminar con una solicitud de presupuesto. Puedes anotar guardados, consultas y solicitudes en una hoja.
+
+Idea de partida: [Curso de HubSpot Academy sobre contenido para el recorrido de compra](https://academy.hubspot.com/lessons/creating-content-for-the-buyers-journey). Texto reescrito por Alexandría.

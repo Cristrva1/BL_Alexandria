@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-968 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+969 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -25,7 +25,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 |---|---|---:|
 | [Frontend y creación de páginas web](areas/frontend.md) | Crear páginas con editores visuales, Componentes, iconos y estilos, Interfaces y páginas con IA, Skills de diseño y UX, Animación e interacción web, Probar y publicar una web | 76 |
 | [Ciberseguridad](areas/ciberseguridad.md) | Auditoría y análisis con IA, Ingeniería inversa y binarios, Depuración e inspección, Tráfico, pruebas y protección, Pruebas de intrusión autorizadas, Detección y respuesta, Nube, contenedores e IaC, Credenciales y privacidad, Aprender ciberseguridad, Respuesta a incidentes y forense, Inteligencia de amenazas | 153 |
-| [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 119 |
+| [Producción audiovisual](areas/audiovisual.md) | Video: edición, grabación y subtítulos, Video: generación con IA, Video: código y motion graphics, Voz: narración, síntesis y clonación, Transcripción: audio a texto, Audio: limpieza, música y sonido, Voz: agentes en tiempo real, Imagen: generación y edición, Avatares, rostros y personajes, Modelado y animación 3D, Física y simulación | 120 |
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 27 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 65 |
 | [Marketing y Redes Sociales](areas/marketing-redes-sociales.md) | Estrategia, copy y conversión, Gestión y publicación en redes sociales, Tendencias, audiencias y competencia, SEO y buscadores con IA, Email, newsletters y campañas, Contenido visual, videos y anuncios, Analítica web y conversión | 25 |
@@ -55,7 +55,7 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 8 | [🏠 Chats, modelos locales y espacios privados](categorias/08-ia-local-modelos-chats-workspaces.md) | 33 | [Ollama](fichas/ollama.md), [Open WebUI](fichas/open-webui.md), [Jan](fichas/jan.md), [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
 | 9 | [🎨 Diseñar y construir interfaces web](categorias/09-dise-o-ui-frontend.md) | 33 | [ui](fichas/ui.md), [daisyUI](fichas/daisyui.md), [Excalidraw](fichas/excalidraw.md), [CopilotKit](fichas/copilotkit.md) |
 | 10 | [📊 Dashboards, analítica y mapas](categorias/10-anal-tica-visualizaci-n.md) | 31 | [Umami](fichas/umami.md), [Apache Superset](fichas/superset.md), [WrenAI](fichas/wrenai.md), [Recharts](fichas/recharts.md) |
-| 11 | [🖼️ Generar y editar imágenes con IA](categorias/11-generaci-n-de-imagen-visi-n.md) | 10 | [ComfyUI](fichas/comfyui.md), [FLUX.2](fichas/flux2.md), [rembg](fichas/rembg.md) |
+| 11 | [🖼️ Generar y editar imágenes con IA](categorias/11-generaci-n-de-imagen-visi-n.md) | 11 | [ComfyUI](fichas/comfyui.md), [FLUX.2](fichas/flux2.md), [rembg](fichas/rembg.md) |
 | 12 | [🎬 Editar, grabar y generar video](categorias/12-audio-voz-video.md) | 20 | [FFmpeg](fichas/ffmpeg.md), [MoneyPrinterTurbo](fichas/moneyprinterturbo.md), [Wan2.2](fichas/wan2-2.md) |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](categorias/13-documentos-presentaciones.md) | 22 | [Docling](fichas/docling.md), [PaddleOCR](fichas/paddleocr.md), [OCRmyPDF](fichas/ocrmypdf.md), [Stirling-PDF](fichas/stirling-pdf.md) |
 | 14 | [📈 Investigar finanzas y mercados](categorias/14-investigar-finanzas-y-mercados.md) | 25 | [daily_stock_analysis](fichas/daily-stock-analysis.md), [dexter](fichas/dexter.md), [qlib](fichas/qlib.md), [machine-learning-for-trading](fichas/machine-learning-for-trading.md) |

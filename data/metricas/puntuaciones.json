@@ -4922,10 +4922,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "chainner": {
-   "puntuacion": 55.3,
+   "puntuacion": 53.0,
    "ejes": {
-    "adopcion": 2.2,
-    "mantenimiento": 17.5,
+    "adopcion": 1.9,
+    "mantenimiento": 15.6,
     "madurez": 8.0,
     "licencia": 12.0,
     "respaldo": 8.0,
@@ -4933,13 +4933,13 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.075,
-    "estrellas": 0.125,
-    "commits_90d": 0.725,
-    "releases_365d": 0.575,
-    "primera_respuesta_dias": 0.925,
-    "ratio_cerradas": 0.475,
-    "bus_factor": 0.775
+    "estrellas_anio": 0.064,
+    "estrellas": 0.11,
+    "commits_90d": 0.625,
+    "releases_365d": 0.496,
+    "primera_respuesta_dias": 0.807,
+    "ratio_cerradas": 0.413,
+    "bus_factor": 0.799
    },
    "licencia": {
     "clase": "osi_copyleft",
@@ -6299,10 +6299,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "codeformer": {
-   "puntuacion": 40.2,
+   "puntuacion": 41.4,
    "ejes": {
-    "adopcion": 10.8,
-    "mantenimiento": 5.0,
+    "adopcion": 12.6,
+    "mantenimiento": 4.3,
     "madurez": 5.0,
     "licencia": 5.0,
     "respaldo": 5.0,
@@ -6310,13 +6310,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.475,
-    "estrellas": 0.325,
-    "commits_90d": 0.25,
-    "releases_365d": 0.25,
-    "primera_respuesta_dias": 0.075,
-    "ratio_cerradas": 0.275,
-    "bus_factor": 0.075
+    "estrellas_anio": 0.542,
+    "estrellas": 0.413,
+    "commits_90d": 0.216,
+    "releases_365d": 0.216,
+    "primera_respuesta_dias": 0.064,
+    "ratio_cerradas": 0.239,
+    "bus_factor": 0.064
    },
    "licencia": {
     "clase": "source_available",
@@ -6510,10 +6510,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "comfyui": {
-   "puntuacion": 81.6,
+   "puntuacion": 80.8,
    "ejes": {
-    "adopcion": 23.7,
-    "mantenimiento": 18.4,
+    "adopcion": 23.9,
+    "mantenimiento": 17.4,
     "madurez": 10.0,
     "licencia": 12.0,
     "respaldo": 8.0,
@@ -6521,13 +6521,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.95,
-    "estrellas": 0.95,
-    "commits_90d": 0.85,
-    "releases_365d": 0.95,
-    "primera_respuesta_dias": 0.75,
-    "ratio_cerradas": 0.35,
-    "bus_factor": 0.55
+    "estrellas_anio": 0.955,
+    "estrellas": 0.955,
+    "commits_90d": 0.773,
+    "releases_365d": 0.955,
+    "primera_respuesta_dias": 0.682,
+    "ratio_cerradas": 0.318,
+    "bus_factor": 0.591
    },
    "licencia": {
     "clase": "osi_copyleft",
@@ -8600,10 +8600,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "diffusers": {
-   "puntuacion": 78.1,
+   "puntuacion": 77.6,
    "ejes": {
-    "adopcion": 18.8,
-    "mantenimiento": 18.4,
+    "adopcion": 19.0,
+    "mantenimiento": 17.7,
     "madurez": 8.0,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -8611,14 +8611,14 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.75,
+    "estrellas_anio": 0.761,
     "descargas_mes": 0.782,
-    "estrellas": 0.7,
-    "commits_90d": 0.75,
-    "releases_365d": 0.65,
-    "primera_respuesta_dias": 0.8,
-    "ratio_cerradas": 0.65,
-    "bus_factor": 0.85
+    "estrellas": 0.716,
+    "commits_90d": 0.716,
+    "releases_365d": 0.625,
+    "primera_respuesta_dias": 0.761,
+    "ratio_cerradas": 0.625,
+    "bus_factor": 0.852
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -10834,10 +10834,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "flux2": {
-   "puntuacion": 46.2,
+   "puntuacion": 46.7,
    "ejes": {
-    "adopcion": 4.6,
-    "mantenimiento": 6.2,
+    "adopcion": 5.3,
+    "mantenimiento": 6.1,
     "madurez": 2.8,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -10845,13 +10845,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.2,
-    "estrellas": 0.15,
-    "commits_90d": 0.225,
-    "releases_365d": 0.225,
-    "primera_respuesta_dias": 0.2,
-    "ratio_cerradas": 0.2,
-    "bus_factor": 0.5
+    "estrellas_anio": 0.239,
+    "estrellas": 0.148,
+    "commits_90d": 0.216,
+    "releases_365d": 0.216,
+    "primera_respuesta_dias": 0.193,
+    "ratio_cerradas": 0.193,
+    "bus_factor": 0.511
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -13835,6 +13835,40 @@
    "fecha_metricas": "2026-11-16",
    "fecha_puntuacion": "2026-11-26"
   },
+  "imagemagick": {
+   "puntuacion": 54.7,
+   "ejes": {
+    "adopcion": 5.5,
+    "mantenimiento": 19.8,
+    "madurez": 10.0,
+    "licencia": 5.0,
+    "respaldo": 8.0,
+    "seguridad": 4.4,
+    "encaje": 2.0
+   },
+   "percentiles": {
+    "estrellas_anio": 0.193,
+    "estrellas": 0.284,
+    "commits_90d": 0.89,
+    "releases_365d": 0.845,
+    "primera_respuesta_dias": 0.936,
+    "ratio_cerradas": 0.678,
+    "bus_factor": 0.367
+   },
+   "licencia": {
+    "clase": "desconocida",
+    "detalle": "NOASSERTION: texto de licencia no reconocido"
+   },
+   "respaldo": "organizacion",
+   "encaje": [
+    "se ejecuta en local"
+   ],
+   "notas": [
+    "Adopción: sin dato de descargas_mes (se reparte el peso)"
+   ],
+   "fecha_metricas": "2026-11-26",
+   "fecha_puntuacion": "2026-11-26"
+  },
   "imhex": {
    "puntuacion": 63.6,
    "ejes": {
@@ -14191,10 +14225,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "invokeai": {
-   "puntuacion": 73.2,
+   "puntuacion": 73.3,
    "ejes": {
-    "adopcion": 13.1,
-    "mantenimiento": 17.6,
+    "adopcion": 13.4,
+    "mantenimiento": 17.4,
     "madurez": 10.0,
     "licencia": 15.0,
     "respaldo": 8.0,
@@ -14202,14 +14236,14 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.65,
+    "estrellas_anio": 0.67,
     "descargas_mes": 0.251,
-    "estrellas": 0.65,
-    "commits_90d": 0.85,
-    "releases_365d": 0.8,
-    "primera_respuesta_dias": 0.4,
-    "ratio_cerradas": 0.6,
-    "bus_factor": 0.8
+    "estrellas": 0.67,
+    "commits_90d": 0.852,
+    "releases_365d": 0.807,
+    "primera_respuesta_dias": 0.375,
+    "ratio_cerradas": 0.568,
+    "bus_factor": 0.807
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -15493,10 +15527,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "krita-ai-diffusion": {
-   "puntuacion": 55.1,
+   "puntuacion": 54.9,
    "ejes": {
-    "adopcion": 6.2,
-    "mantenimiento": 12.3,
+    "adopcion": 6.8,
+    "mantenimiento": 11.7,
     "madurez": 10.0,
     "licencia": 12.0,
     "respaldo": 5.0,
@@ -15504,13 +15538,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.25,
-    "estrellas": 0.25,
-    "commits_90d": 0.45,
-    "releases_365d": 0.45,
-    "primera_respuesta_dias": 0.7,
-    "ratio_cerradas": 0.6,
-    "bus_factor": 0.2
+    "estrellas_anio": 0.284,
+    "estrellas": 0.239,
+    "commits_90d": 0.42,
+    "releases_365d": 0.42,
+    "primera_respuesta_dias": 0.67,
+    "ratio_cerradas": 0.568,
+    "bus_factor": 0.193
    },
    "licencia": {
     "clase": "osi_copyleft",
@@ -26361,10 +26395,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "real-esrgan": {
-   "puntuacion": 56.3,
+   "puntuacion": 56.6,
    "ejes": {
-    "adopcion": 17.2,
-    "mantenimiento": 5.8,
+    "adopcion": 18.2,
+    "mantenimiento": 5.0,
     "madurez": 5.0,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -26372,13 +26406,13 @@
     "encaje": 7.0
    },
    "percentiles": {
-    "estrellas_anio": 0.675,
-    "estrellas": 0.725,
-    "commits_90d": 0.25,
-    "releases_365d": 0.25,
-    "primera_respuesta_dias": 0.275,
-    "ratio_cerradas": 0.075,
-    "bus_factor": 0.275
+    "estrellas_anio": 0.716,
+    "estrellas": 0.761,
+    "commits_90d": 0.216,
+    "releases_365d": 0.216,
+    "primera_respuesta_dias": 0.239,
+    "ratio_cerradas": 0.064,
+    "bus_factor": 0.239
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -26573,10 +26607,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "rembg": {
-   "puntuacion": 67.9,
+   "puntuacion": 68.0,
    "ejes": {
-    "adopcion": 12.1,
-    "mantenimiento": 16.6,
+    "adopcion": 13.5,
+    "mantenimiento": 15.3,
     "madurez": 7.0,
     "licencia": 15.0,
     "respaldo": 5.0,
@@ -26584,14 +26618,14 @@
     "encaje": 10.0
    },
    "percentiles": {
-    "estrellas_anio": 0.325,
+    "estrellas_anio": 0.413,
     "descargas_mes": 0.734,
-    "estrellas": 0.475,
-    "commits_90d": 0.575,
-    "releases_365d": 0.825,
-    "primera_respuesta_dias": 0.575,
-    "ratio_cerradas": 0.925,
-    "bus_factor": 0.425
+    "estrellas": 0.542,
+    "commits_90d": 0.496,
+    "releases_365d": 0.716,
+    "primera_respuesta_dias": 0.496,
+    "ratio_cerradas": 0.936,
+    "bus_factor": 0.496
    },
    "licencia": {
     "clase": "osi_permisiva",
@@ -32160,10 +32194,10 @@
    "fecha_puntuacion": "2026-11-26"
   },
   "upscayl": {
-   "puntuacion": 69.6,
+   "puntuacion": 69.5,
    "ejes": {
-    "adopcion": 21.9,
-    "mantenimiento": 10.2,
+    "adopcion": 22.3,
+    "mantenimiento": 9.7,
     "madurez": 10.0,
     "licencia": 12.0,
     "respaldo": 8.0,
@@ -32171,13 +32205,13 @@
     "encaje": 5.0
    },
    "percentiles": {
-    "estrellas_anio": 0.875,
-    "estrellas": 0.875,
-    "commits_90d": 0.25,
-    "releases_365d": 0.25,
-    "primera_respuesta_dias": 0.425,
-    "ratio_cerradas": 0.775,
-    "bus_factor": 0.575
+    "estrellas_anio": 0.89,
+    "estrellas": 0.89,
+    "commits_90d": 0.216,
+    "releases_365d": 0.216,
+    "primera_respuesta_dias": 0.367,
+    "ratio_cerradas": 0.807,
+    "bus_factor": 0.625
    },
    "licencia": {
     "clase": "osi_copyleft",

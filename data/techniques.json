@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "areas": [
     {
       "id": "agentes",
@@ -3323,6 +3323,38 @@
         {
           "title": "Tool Retrieval en Gemini",
           "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        }
+      ],
+      "commands": [],
+      "featured": false
+    },
+    {
+      "id": "probar-formulario-asistido",
+      "title": "Probar un formulario asistido antes de publicarlo",
+      "area": "diseno",
+      "kind": "Técnica",
+      "level": "inicial",
+      "summary": "Ensaya un formulario en una página de prueba y comprueba que la persona puede corregir un borrador antes de enviarlo.",
+      "steps": [
+        "Define una acción pequeña, como filtrar un catálogo de seis productos inventados. Escribe un resultado esperado para una búsqueda que funciona y otra sin resultados.",
+        "Recorre el formulario con el teclado sin un asistente. Comprueba que cada etiqueta se entiende, que los errores indican cómo corregirlos y que existe un botón de envío explícito.",
+        "Si tienes un cliente WebMCP compatible, usa el perfil de prueba del navegador para rellenar un campo. Verifica que puedes cambiar el valor antes del envío y que el resultado coincide con el recorrido manual."
+      ],
+      "why": "La prueba separa la validez del formulario de la integración con el agente. Los dos recorridos dejan un resultado que puedes comprobar.",
+      "caution": "Haz la primera prueba con datos ficticios. Conserva el envío manual y el acceso directo para navegadores sin la función experimental.",
+      "tools": [
+        "Navegador",
+        "Página de prueba"
+      ],
+      "github": [],
+      "sources": [
+        {
+          "title": "Fundamentos de formularios en Chrome",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance/guides/forms/forms"
+        },
+        {
+          "title": "WebMCP declarativo en Chrome",
+          "url": "https://developer.chrome.com/docs/ai/webmcp/declarative-api"
         }
       ],
       "commands": [],
