@@ -56,7 +56,7 @@ Grupo **Frameworks de deep learning**: PyTorch ocupa la posición 2 de 3 (altern
 |---:|---|---:|---|
 | 1 | [tensorflow](tensorflow.md) ⭐ recomendado | 79 | Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 | 2 | **PyTorch** (esta ficha) | 78 | Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
-| 3 | [JAX](jax.md) | 64 | Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
+| 3 | [JAX](jax.md) | 65 | Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
 
 ## Acceso, coste y equipo
 

@@ -495,8 +495,8 @@
    "titulo": "Herramientas PDF",
    "repos": 5,
    "archivo": "categoria-13-pdf.md",
-   "caracteres": 11604,
-   "tokens_estimados": 3316
+   "caracteres": 11621,
+   "tokens_estimados": 3321
   },
   {
    "cat": 13,
@@ -513,8 +513,8 @@
    "titulo": "PDF, OCR y procesamiento de documentos",
    "repos": 22,
    "archivo": "categoria-13.md",
-   "caracteres": 39787,
-   "tokens_estimados": 11368
+   "caracteres": 39804,
+   "tokens_estimados": 11373
   },
   {
    "cat": 14,
@@ -1079,8 +1079,8 @@
    "titulo": "Modelos abiertos y fundacionales",
    "repos": 7,
    "archivo": "categoria-24-modelos.md",
-   "caracteres": 14241,
-   "tokens_estimados": 4069
+   "caracteres": 14262,
+   "tokens_estimados": 4075
   },
   {
    "cat": 24,
@@ -1088,8 +1088,8 @@
    "titulo": "Modelos abiertos y entrenamiento",
    "repos": 25,
    "archivo": "categoria-24.md",
-   "caracteres": 41279,
-   "tokens_estimados": 11795
+   "caracteres": 41300,
+   "tokens_estimados": 11801
   },
   {
    "cat": 25,

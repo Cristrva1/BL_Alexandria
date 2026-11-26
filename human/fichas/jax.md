@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; requiere programar con él; dominio especializado
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,7 +49,7 @@ Grupo **Frameworks de deep learning**: JAX ocupa la posición 3 de 3 (alternativ
 |---:|---|---:|---|
 | 1 | [tensorflow](tensorflow.md) ⭐ recomendado | 79 | Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 | 2 | [PyTorch](pytorch.md) | 78 | Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
-| 3 | **JAX** (esta ficha) | 64 | Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
+| 3 | **JAX** (esta ficha) | 65 | Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. |
 
 ## Acceso, coste y equipo
 

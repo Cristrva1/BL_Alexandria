@@ -20,9 +20,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `stirling-pdf` | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar… | 1 Básico | 76 | MIT + licencia propietaria (app/proprietary/, app/saas/) (open-core) | recomendado |
 | `pdfmathtranslate` | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `docuseal` | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `docuseal` | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `pdfcraft` | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 54 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `pdfding` | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | — | AGPL-3.0 | sin grupo |
+| `pdfding` | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 46 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -58,7 +58,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### docuseal (`docuseal`)
 
-- **Repo:** https://github.com/docusealco/docuseal · AGPL-3.0 · nivel 3 · 56/100
+- **Repo:** https://github.com/docusealco/docuseal · AGPL-3.0 · nivel 3 · 60/100
 - **Qué es:** Plataforma de código abierto (AGPL-3.0) para rellenar y firmar documentos, de DocuSeal. Activa (3.3.6), con nube de pago y funciones Pro.
 - **Cuándo elegirlo:** Casos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental.
 - **Requisitos:** nivel 3: preparación pesada; Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios; hardware prerequisites; API de IA: no; Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios.
@@ -81,7 +81,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PdfDing (`pdfding`)
 
-- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · —/100
+- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · 46/100
 - **Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de…
 - **Cuándo elegirlo:** Casos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
 - **Requisitos:** nivel 1: preparación sencilla; Docker o entorno de la guía; volumen para documentos; cuenta de prueba; hardware prerequisites; API de IA: no; Docker o entorno de la guía; volumen para documentos; cuenta de prueba.

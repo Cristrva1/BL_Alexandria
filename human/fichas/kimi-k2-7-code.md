@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
+**Puntuación de calidad** 34/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Kimi K2.7 Code, modelo de pesos abiertos de Moonshot AI orientado a programación agéntica, construido sobre Kimi K2.6. Se publica en Hugging Face (moonshotai/Kimi-K2.7-Code), no en GitHub. Licencia «Modified MIT»: los productos con más de 100 M de usuarios activos mensuales o más de 20 M USD de ingresos mensuales deben mostrar «Kimi K2.7 Code» en su interfaz.

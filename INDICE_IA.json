@@ -11129,7 +11129,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -11164,7 +11164,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 66,
+   "puntuacion": 67,
    "complejidad": 3
   },
   {
@@ -11198,7 +11198,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 61,
    "complejidad": 3
   },
   {
@@ -11237,7 +11237,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 46,
    "complejidad": 1
   },
   {
@@ -17031,7 +17031,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 1
   },
   {
@@ -17310,7 +17310,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 46
   },
   {
    "id": "slidev",
@@ -21937,7 +21938,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 60,
    "complejidad": 3
   },
   {
@@ -25179,7 +25180,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 76,
+   "puntuacion": 77,
    "complejidad": 2
   },
   {
@@ -26875,7 +26876,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 34
   },
   {
    "id": "neo4j-mcp",
@@ -32901,7 +32903,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 3,
    "grupo": "g-frameworks-de-deep-learning"
   },
@@ -33060,7 +33062,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 3
   },
   {

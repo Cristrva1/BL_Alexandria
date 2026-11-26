@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; necesita GPU
 
-**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** OpenMDW-1.1. Licencia de NVIDIA para modelos y materiales asociados. Fuente: [LICENSE](https://github.com/NVIDIA/cosmos/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

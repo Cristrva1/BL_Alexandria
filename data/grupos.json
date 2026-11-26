@@ -854,7 +854,7 @@
     {
      "id": "docling",
      "posicion": 1,
-     "puntuacion": 77.5,
+     "puntuacion": 77.7,
      "papel": "recomendado",
      "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local.",
      "cuando_origen": "curado",
@@ -863,7 +863,7 @@
     {
      "id": "mineru",
      "posicion": 2,
-     "puntuacion": 67.6,
+     "puntuacion": 67.7,
      "papel": "alternativa",
      "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja.",
      "cuando_origen": "curado",
@@ -872,7 +872,7 @@
     {
      "id": "xberg",
      "posicion": 3,
-     "puntuacion": 62.7,
+     "puntuacion": 63.0,
      "papel": "alternativa",
      "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario.",
      "cuando_origen": "curado",
@@ -881,7 +881,7 @@
     {
      "id": "marker",
      "posicion": 4,
-     "puntuacion": 60.0,
+     "puntuacion": 60.2,
      "papel": "alternativa",
      "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional.",
      "cuando_origen": "curado",
@@ -890,7 +890,7 @@
     {
      "id": "tika",
      "posicion": 5,
-     "puntuacion": 58.7,
+     "puntuacion": 59.2,
      "papel": "alternativa",
      "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado.",
      "cuando_origen": "curado",
@@ -899,7 +899,7 @@
     {
      "id": "unstructured",
      "posicion": 6,
-     "puntuacion": 57.6,
+     "puntuacion": 58.1,
      "papel": "alternativa",
      "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG.",
      "cuando_origen": "curado",
@@ -1656,7 +1656,7 @@
     {
      "id": "unsloth",
      "posicion": 1,
-     "puntuacion": 81.6,
+     "puntuacion": 81.8,
      "papel": "recomendado",
      "cuando": "Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU.",
      "cuando_origen": "curado",
@@ -1665,7 +1665,7 @@
     {
      "id": "axolotl",
      "posicion": 2,
-     "puntuacion": 64.6,
+     "puntuacion": 64.9,
      "papel": "alternativa",
      "cuando": "Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU.",
      "cuando_origen": "curado",
@@ -1674,7 +1674,7 @@
     {
      "id": "llama-factory",
      "posicion": 3,
-     "puntuacion": 60.4,
+     "puntuacion": 60.5,
      "papel": "alternativa",
      "cuando": "Si quieres una interfaz web para afinar cientos de modelos sin programar.",
      "cuando_origen": "curado",
@@ -1683,7 +1683,7 @@
     {
      "id": "torchtune",
      "posicion": 4,
-     "puntuacion": 52.2,
+     "puntuacion": 52.4,
      "papel": "alternativa",
      "cuando": "Si prefieres recetas nativas de PyTorch fáciles de modificar.",
      "cuando_origen": "curado",
@@ -2160,7 +2160,7 @@
     {
      "id": "paddleocr",
      "posicion": 1,
-     "puntuacion": 72.4,
+     "puntuacion": 72.5,
      "papel": "recomendado",
      "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación.",
      "cuando_origen": "curado",
@@ -2169,7 +2169,7 @@
     {
      "id": "tesseract",
      "posicion": 2,
-     "puntuacion": 63.5,
+     "puntuacion": 63.9,
      "papel": "alternativa",
      "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes.",
      "cuando_origen": "curado",
@@ -2178,7 +2178,7 @@
     {
      "id": "unlimited-ocr",
      "posicion": 3,
-     "puntuacion": 62.0,
+     "puntuacion": 62.4,
      "papel": "alternativa",
      "cuando": "Si quieres parsear documentos largos de una sola pasada con visión.",
      "cuando_origen": "curado",
@@ -2187,7 +2187,7 @@
     {
      "id": "olmocr",
      "posicion": 4,
-     "puntuacion": 50.2,
+     "puntuacion": 50.3,
      "papel": "alternativa",
      "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU).",
      "cuando_origen": "curado",
@@ -3160,7 +3160,7 @@
     {
      "id": "tensorflow",
      "posicion": 1,
-     "puntuacion": 79.1,
+     "puntuacion": 79.2,
      "papel": "recomendado",
      "cuando": "Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
      "cuando_origen": "plantilla",
@@ -3169,7 +3169,7 @@
     {
      "id": "pytorch",
      "posicion": 2,
-     "puntuacion": 77.5,
+     "puntuacion": 77.6,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
      "cuando_origen": "plantilla",
@@ -3178,7 +3178,7 @@
     {
      "id": "jax",
      "posicion": 3,
-     "puntuacion": 64.4,
+     "puntuacion": 64.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
      "cuando_origen": "plantilla",
@@ -5717,7 +5717,7 @@
     {
      "id": "verl",
      "posicion": 1,
-     "puntuacion": 67.6,
+     "puntuacion": 67.7,
      "papel": "recomendado",
      "cuando": "Si buscas esto: framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
      "cuando_origen": "plantilla",
@@ -5726,7 +5726,7 @@
     {
      "id": "openrlhf",
      "posicion": 2,
-     "puntuacion": 57.9,
+     "puntuacion": 58.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
      "cuando_origen": "plantilla",
@@ -5785,7 +5785,7 @@
     {
      "id": "stirling-pdf",
      "posicion": 1,
-     "puntuacion": 75.5,
+     "puntuacion": 75.7,
      "papel": "recomendado",
      "cuando": "Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs.",
      "cuando_origen": "plantilla",
@@ -5794,7 +5794,7 @@
     {
      "id": "pdfcraft",
      "posicion": 2,
-     "puntuacion": 54.0,
+     "puntuacion": 54.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.",
      "cuando_origen": "plantilla",
