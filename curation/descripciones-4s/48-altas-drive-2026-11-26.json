@@ -1,0 +1,32 @@
+{
+ "batch": "altas-drive-2026-11-26",
+ "checked_at": "2026-11-26",
+ "method": "Revisión de licencia, distribución oficial y avisos de la versión. Pruebas funcionales del proyecto en el commit de la publicación.",
+ "repos": {
+  "imagemagick": {
+   "que_es": "Herramienta de terminal y biblioteca de código abierto para transformar imágenes.",
+   "que_hace": "Crea miniaturas, convierte formatos y aplica cambios repetibles a colecciones de imágenes.",
+   "como_lo_hace": "El comando magick abre la entrada, encadena operaciones como redimensionar y genera un archivo de salida.",
+   "combina_con": [],
+   "fuentes": [
+    "https://github.com/ImageMagick/ImageMagick/blob/dcec873ede2912a1b045a50fd54cd138ee5f3fa4/README.md",
+    "https://imagemagick.org/download/",
+    "https://imagemagick.org/license/",
+    "https://github.com/ImageMagick/ImageMagick/releases/tag/7.1.2-36",
+    "https://github.com/ImageMagick/ImageMagick/actions/runs/43933165128/job/133530749467",
+    "https://github.com/ImageMagick/ImageMagick/security/advisories",
+    "https://imagemagick.org/security-policy/",
+    "https://imagemagick.org/command-line-options/#resize"
+   ],
+   "github": {
+    "name_with_owner": "ImageMagick/ImageMagick",
+    "archived": false,
+    "pushed_at": "2026-11-26",
+    "license": "NOASSERTION",
+    "primary_language": "C",
+    "checked_at": "2026-11-26",
+    "latest_release": "7.1.2-36 (2026-11-16)"
+   }
+  }
+ }
+}

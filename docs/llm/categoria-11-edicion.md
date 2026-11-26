@@ -1,6 +1,6 @@
 # Alexandría para agentes · Restauración, upscaling y edición
 
-Categoría 11 «Generar y editar imágenes con IA» › subcategoría `edicion`. 5 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 11 «Generar y editar imágenes con IA» › subcategoría `edicion`. 6 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=11&sub=edicion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -20,9 +20,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `upscayl` | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `rembg` | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
-| `real-esrgan` | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 56 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `chainner` | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `codeformer` | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 40 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
+| `real-esrgan` | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 57 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `imagemagick` | Convierte, redimensiona y prepara imágenes desde la terminal. | 1 Básico | 55 | ImageMagick (sin licencia detectada) | sin grupo |
+| `chainner` | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico… | 2 Intermedio | 53 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `codeformer` | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 41 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -52,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Real-ESRGAN (`real-esrgan`)
 
-- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 56/100
+- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 57/100
 - **Qué es:** Real-ESRGAN, modelo y herramientas de superresolución de imágenes y vídeo, de @xinntao (Tencent ARC). Licencia BSD-3-Clause. Es muy popular (~38k estrellas, v0.3.0), pero su último cambio es de agosto de 2024.
 - **Cuándo elegirlo:** Casos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución.
 - **Requisitos:** nivel 2: preparación media; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba; hardware prerequisites; API de IA: no; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba.
@@ -75,9 +76,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `codeformer`, `comfyui` [11/interfaces], `rembg`
 - **Riesgos y avisos:** Sin alternativas declaradas. Sin mantenimiento activo desde 2024. La superresolución generativa puede añadir detalles; no recupera de forma verificable información ausente en la imagen.
 
+### ImageMagick (`imagemagick`)
+
+- **Repo:** https://github.com/ImageMagick/ImageMagick · ImageMagick · nivel 1 · 55/100
+- **Qué es:** Herramienta de terminal y biblioteca de código abierto para transformar imágenes.
+- **Cuándo elegirlo:** Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles. Evítalo si Prefieres un editor visual o necesitas generar una imagen con IA.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C; API de IA: no; Sistema compatible y terminal; Paquete oficial para tu arquitectura; Un PNG propio de 800 × 800 píxeles.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://imagemagick.org/download/
+- **Primera prueba propuesta (no ejecutada):** En una carpeta temporal con una imagen cuadrada propia llamada muestra.png, ejecuta magick muestra.png -resize 320x320 miniatura.png. Éxito: Se crea miniatura.png. Con una entrada cuadrada de 800 × 800 píxeles, la salida mide 320 × 320.
+
 ### chaiNNer (`chainner`)
 
-- **Repo:** https://github.com/chaiNNer-org/chaiNNer · GPL-3.0 · nivel 2 · 55/100
+- **Repo:** https://github.com/chaiNNer-org/chaiNNer · GPL-3.0 · nivel 2 · 53/100
 - **Qué es:** Aplicación de código abierto (GPL-3.0) de la organización chaiNNer, nacida como herramienta de escalado con IA. Activa y multiplataforma.
 - **Cuándo elegirlo:** Casos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes.
 - **Requisitos:** nivel 2: preparación media, app o instalador listo para usar; Python, package.json, pyproject.toml, requirements.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -88,7 +98,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CodeFormer (`codeformer`)
 
-- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 40/100
+- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 41/100
 - **Qué es:** CodeFormer, modelo de restauración ciega de rostros (NeurIPS 2022) de S-Lab, Nanyang Technological University. Licencia NTU S-Lab License 1.0, solo uso no comercial (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba; hardware prerequisites; API de IA: no; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba.

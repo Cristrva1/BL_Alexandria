@@ -1,0 +1,75 @@
+{
+ "lote": "drive-2026-11-26",
+ "fecha": "2026-11-26",
+ "metodo": "Revisión de licencia, distribución oficial y avisos de la versión. Pruebas funcionales del proyecto en el commit de la publicación.",
+ "repos": [
+  {
+   "gh": "ImageMagick/ImageMagick",
+   "id": "imagemagick",
+   "name": "ImageMagick",
+   "cat": 11,
+   "sub": "edicion",
+   "kind": "app",
+   "one": "Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA.",
+   "how": "La orden magick lee un archivo, aplica operaciones en secuencia y guarda una copia en el formato elegido por la extensión de salida.",
+   "examples": [
+    "Crear imágenes PNG de 320 píxeles de ancho para una galería interna.",
+    "Convertir copias de JPG a WebP para reducir el peso antes de subirlas a un sitio."
+   ],
+   "try": [
+    "En una carpeta temporal con una imagen cuadrada propia llamada muestra.png, ejecuta magick muestra.png -resize 320x320 miniatura.png. En el paquete portable, usa la ruta del ejecutable en lugar de magick",
+    "Se crea miniatura.png. Con una entrada cuadrada de 800 × 800 píxeles, la salida mide 320 × 320. El archivo de origen se conserva"
+   ],
+   "steps": [
+    "Prepara una copia de un PNG propio de 800 × 800 píxeles en una carpeta de prueba. Confirma si tu equipo usa x64 o ARM64.",
+    "Desde las descargas oficiales elige la publicación 7.1.2-36 o una estable posterior con los avisos revisados. En Linux x64 puedes usar el archivo portable tar.xz. Extráelo y abre una terminal en la carpeta de prueba. En Windows, la versión portable oficial se distribuye en 7z.",
+    "Ejecuta el archivo magick de la carpeta extraída con -version para confirmar la versión. Luego usa la primera prueba de la ficha y abre la miniatura en el visor de tu equipo."
+   ],
+   "ligero": true,
+   "ai": "local",
+   "license": "ImageMagick",
+   "setup": "easy",
+   "goals": [
+    "imagenes"
+   ],
+   "tags": [
+    "imágenes",
+    "conversión",
+    "miniaturas",
+    "webp",
+    "terminal"
+   ],
+   "url": "https://imagemagick.org/download/",
+   "caveat": "Usa copias de archivos propios en la primera prueba. Antes de aceptar archivos de terceros en un servicio, aplica una política de formatos y límites de recursos adecuada y aísla el proceso.",
+   "note": "La edición 7.1.2-36 incluye las correcciones de los avisos revisados. El commit de la etiqueta ejecutó con éxito Test ImageMagick en Linux y macOS ARM64. La guía indica una prueba local para repetir.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Claude Code, Codex y Antigravity pueden ayudarte a preparar el comando. La tarea de imagen se ejecuta con la herramienta local y funciona sin cuenta de IA.",
+    "local_note": "La conversión y el redimensionado son operaciones locales de imagen.",
+    "scope": "Conversión local de imágenes propias con la distribución oficial.",
+    "cost_note": "Descarga y uso local sin pago obligatorio bajo la licencia ImageMagick. La práctica no requiere contratar alojamiento.",
+    "api_note": "La CLI trabaja sobre archivos del equipo y funciona sin clave de API.",
+    "hardware_note": "Linux, macOS o Windows con un paquete de la arquitectura correspondiente. Para la muestra basta un equipo de uso general.",
+    "sources": [
+     "https://github.com/ImageMagick/ImageMagick/blob/dcec873ede2912a1b045a50fd54cd138ee5f3fa4/README.md",
+     "https://imagemagick.org/download/",
+     "https://imagemagick.org/license/",
+     "https://github.com/ImageMagick/ImageMagick/releases/tag/7.1.2-36",
+     "https://github.com/ImageMagick/ImageMagick/actions/runs/43933165128/job/133530749467",
+     "https://github.com/ImageMagick/ImageMagick/security/advisories",
+     "https://imagemagick.org/security-policy/",
+     "https://imagemagick.org/command-line-options/#resize"
+    ]
+   },
+   "alt": [],
+   "avoid": "Prefieres un editor visual o necesitas generar una imagen con IA."
+  }
+ ]
+}

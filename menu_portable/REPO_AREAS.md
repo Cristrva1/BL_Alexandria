@@ -166,7 +166,7 @@ Construir conversaciones por audio con procesamiento y respuesta en directo.
 
 Generar imágenes, ampliar, recortar o restaurar fotografías.
 
-`chainner`, `codeformer`, `comfyui`, `creative-architect`, `diffusers`, `flux2`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `real-esrgan`, `rembg`, `upscayl`
+`chainner`, `codeformer`, `comfyui`, `creative-architect`, `diffusers`, `flux2`, `imagemagick`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `real-esrgan`, `rembg`, `upscayl`
 
 ### Avatares, rostros y personajes
 

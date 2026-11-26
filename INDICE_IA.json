@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 968 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 969 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -171,7 +171,7 @@
     ]
    }
   ],
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "local_inventory": {
    "checked_at": "2026-11-14",
    "status": "library_deleted_by_user",
@@ -558,7 +558,7 @@
    "title": "Generar y editar imágenes con IA",
    "desc": "Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-   "count": 10,
+   "count": 11,
    "subs": [
     {
      "key": "interfaces",
@@ -14516,7 +14516,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 82,
+   "puntuacion": 81,
    "complejidad": 3
   },
   {
@@ -14635,7 +14635,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 46,
+   "puntuacion": 47,
    "complejidad": 3
   },
   {
@@ -14742,7 +14742,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 57,
    "complejidad": 2
   },
   {
@@ -14778,7 +14778,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 40,
+   "puntuacion": 41,
    "complejidad": 2
   },
   {
@@ -29655,7 +29655,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55,
+   "puntuacion": 53,
    "complejidad": 2
   },
   {
@@ -40908,6 +40908,46 @@
    ],
    "complejidad": 2,
    "puntuacion": 72
+  },
+  {
+   "id": "imagemagick",
+   "name": "ImageMagick",
+   "cat": 11,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "imágenes",
+    "conversión",
+    "miniaturas",
+    "webp",
+    "terminal"
+   ],
+   "stars": 17945,
+   "gh": "ImageMagick/ImageMagick",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA.",
+   "alt": [],
+   "doc": "human/fichas/imagemagick.md",
+   "github_id": 35780977,
+   "lang": "C",
+   "license": "ImageMagick",
+   "added_at": "2026-11-26",
+   "github_checked": "2026-11-26",
+   "goals": [
+    "imagenes"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 55,
+   "complejidad": 1
   }
  ],
  "discovery": {
@@ -48897,10 +48937,10 @@
    }
   ],
   "editorial_review": {
-   "total": 968,
-   "reviewed": 968,
-   "date": "2026-11-24",
-   "report": "reports/drive-2026-11-24.md",
+   "total": 969,
+   "reviewed": 969,
+   "date": "2026-11-26",
+   "report": "reports/drive-2026-11-26.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."
   },
   "goal_groups": [

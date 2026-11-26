@@ -67,7 +67,7 @@
     {
       "num": 11,
       "title": "Generar y editar imágenes con IA",
-      "count": 10
+      "count": 11
     },
     {
       "num": 12,
@@ -2545,6 +2545,7 @@
             "creative-architect",
             "diffusers",
             "flux2",
+            "imagemagick",
             "invokeai",
             "krita-ai-diffusion",
             "logo-design-skill",
@@ -2552,7 +2553,7 @@
             "rembg",
             "upscayl"
           ],
-          "count": 12
+          "count": 13
         },
         {
           "id": "av-personajes",
@@ -2699,6 +2700,7 @@
         "hunyuanvideo-1-5",
         "hyperframes",
         "hyperframes-launches",
+        "imagemagick",
         "index-tts",
         "insightface",
         "invokeai",
@@ -2772,7 +2774,7 @@
         "whisperx",
         "yue"
       ],
-      "count": 119
+      "count": 120
     },
     {
       "id": "trading",
@@ -48924,7 +48926,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 55,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -49040,7 +49042,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 40,
+      "puntuacion": 41,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -49166,7 +49168,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 82,
+      "puntuacion": 81,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -49411,7 +49413,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 46,
+      "puntuacion": 47,
       "grupo": null,
       "mcp": false,
       "prov": [
@@ -49523,6 +49525,128 @@
         "invokeai",
         "krita-ai-diffusion"
       ],
+      "alt": []
+    },
+    {
+      "id": "imagemagick",
+      "name": "ImageMagick",
+      "cat": 11,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 55,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "imágenes",
+        "conversión",
+        "miniaturas",
+        "webp",
+        "terminal"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Conversión local de imágenes propias con la distribución oficial.",
+        "api_note": "La CLI trabaja sobre archivos del equipo y funciona sin clave de API.",
+        "subscription_note": "Claude Code, Codex y Antigravity pueden ayudarte a preparar el comando. La tarea de imagen se ejecuta con la herramienta local y funciona sin cuenta de IA.",
+        "local_note": "La conversión y el redimensionado son operaciones locales de imagen.",
+        "cost_note": "Descarga y uso local sin pago obligatorio bajo la licencia ImageMagick. La práctica no requiere contratar alojamiento.",
+        "hardware_note": "Linux, macOS o Windows con un paquete de la arquitectura correspondiente. Para la muestra basta un equipo de uso general.",
+        "checked_at": "2026-11-26",
+        "review": "documented",
+        "sources": [
+          "https://github.com/ImageMagick/ImageMagick/blob/dcec873ede2912a1b045a50fd54cd138ee5f3fa4/README.md",
+          "https://imagemagick.org/download/",
+          "https://imagemagick.org/license/",
+          "https://github.com/ImageMagick/ImageMagick/releases/tag/7.1.2-36",
+          "https://github.com/ImageMagick/ImageMagick/actions/runs/43933165128/job/133530749467",
+          "https://github.com/ImageMagick/ImageMagick/security/advisories",
+          "https://imagemagick.org/security-policy/",
+          "https://imagemagick.org/command-line-options/#resize"
+        ],
+        "mode": "software",
+        "source_blob_sha": "66c4b2c6f2cc87b8b67dac6040093f8848580028"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Sistema compatible y terminal",
+          "Paquete oficial para tu arquitectura",
+          "Un PNG propio de 800 × 800 píxeles"
+        ],
+        "steps": [
+          "Prepara una copia de un PNG propio de 800 × 800 píxeles en una carpeta de prueba. Confirma si tu equipo usa x64 o ARM64.",
+          "Desde las descargas oficiales elige la publicación 7.1.2-36 o una estable posterior con los avisos revisados. En Linux x64 puedes usar el archivo portable tar.xz. Extráelo y abre una terminal en la carpeta de prueba. En Windows, la versión portable oficial se distribuye en 7z.",
+          "Ejecuta el archivo magick de la carpeta extraída con -version para confirmar la versión. Luego usa la primera prueba de la ficha y abre la miniatura en el visor de tu equipo."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://imagemagick.org/download/",
+        "source": "https://imagemagick.org/download/",
+        "checked_at": "2026-11-26",
+        "note": "La documentación oficial enlaza los paquetes preparados para cada sistema y muestra cómo verificar una instalación."
+      },
+      "first_try": {
+        "action": "En una carpeta temporal con una imagen cuadrada propia llamada muestra.png, ejecuta magick muestra.png -resize 320x320 miniatura.png. En el paquete portable, usa la ruta del ejecutable en lugar de magick",
+        "success": "Se crea miniatura.png. Con una entrada cuadrada de 800 × 800 píxeles, la salida mide 320 × 320. El archivo de origen se conserva",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Crear imágenes PNG de 320 píxeles de ancho para una galería interna.",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Convertir copias de JPG a WebP para reducir el peso antes de subirlas a un sitio.",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-26",
+        "source": "https://github.com/ImageMagick/ImageMagick/blob/dcec873ede2912a1b045a50fd54cd138ee5f3fa4/README.md",
+        "source_blob_sha": "66c4b2c6f2cc87b8b67dac6040093f8848580028",
+        "previous_category": [
+          11,
+          "edicion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La edición 7.1.2-36 incluye las correcciones de los avisos revisados. El commit de la etiqueta ejecutó con éxito Test ImageMagick en Linux y macOS ARM64. La guía indica una prueba local para repetir.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA.",
+      "desc": "Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA.",
+      "stack": "C",
+      "repo": "https://github.com/ImageMagick/ImageMagick",
+      "install": "Seguir la instalación original: https://imagemagick.org/download/",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles.",
+      "avoid_if": "Prefieres un editor visual o necesitas generar una imagen con IA.",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -49780,7 +49904,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],

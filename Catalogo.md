@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**968 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**969 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -18,7 +18,7 @@
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 33
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 33
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 31
-11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 10
+11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 11
 12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 20
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 25
@@ -579,6 +579,7 @@ _Interfaces y modelos de generación, recorte, restauración y ampliación. Dist
 | [Upscayl](human/fichas/upscayl.md) | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux, macOS y Windows. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Real-ESRGAN](human/fichas/real-esrgan.md) | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🟡 medio |
 | [CodeFormer](human/fichas/codeformer.md) | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [ImageMagick](human/fichas/imagemagick.md) | Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [chaiNNer](human/fichas/chainner.md) | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversión y lotes, en Windows, macOS y Linux. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ## 🎬 12. Editar, grabar y generar video

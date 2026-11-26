@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-24",
+ "fecha": "2026-11-26",
  "max_tokens": 25000,
  "estimacion": "caracteres / 3.5",
  "archivos": [
@@ -430,19 +430,19 @@
    "cat": 11,
    "sub": "edicion",
    "titulo": "Restauración, upscaling y edición",
-   "repos": 5,
+   "repos": 6,
    "archivo": "categoria-11-edicion.md",
-   "caracteres": 10706,
-   "tokens_estimados": 3059
+   "caracteres": 11856,
+   "tokens_estimados": 3388
   },
   {
    "cat": 11,
    "sub": null,
    "titulo": "Generar y editar imágenes con IA",
-   "repos": 10,
+   "repos": 11,
    "archivo": "categoria-11.md",
-   "caracteres": 18756,
-   "tokens_estimados": 5359
+   "caracteres": 19916,
+   "tokens_estimados": 5691
   },
   {
    "cat": 12,

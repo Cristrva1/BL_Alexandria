@@ -1,6 +1,6 @@
 # Alexandría para agentes · Diagramas y documentación
 
-Categoría 31 «Presentaciones, diagramas y explicación visual» › subcategoría `diagramas`. 7 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 31 «Presentaciones, diagramas y explicación visual» › subcategoría `diagramas`. 7 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=31&sub=diagramas · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

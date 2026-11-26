@@ -1,6 +1,6 @@
 # Alexandría para agentes · Agentes de research autónomo
 
-Categoría 21 «Asistentes e investigación con agentes» › subcategoría `research`. 5 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 21 «Asistentes e investigación con agentes» › subcategoría `research`. 5 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=21&sub=research · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

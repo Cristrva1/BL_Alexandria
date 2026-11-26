@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Revisión del índice: 2026-11-25 · 968 repos curados · Documento 100% para IA.
+> Revisión del índice: 2026-11-26 · 969 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **968 repos** de IA y
+proyecto concreto. Tienes un menú curado de **969 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -548,7 +548,7 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 - `webodm` [P|loc|H|+] — Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. — tags: geoespacial,server,python
 - `wrenai` [P|hyb|M|+] — BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. — tags: analytics,data,agents,python — prov: openai,local
 
-### 11. Generar y editar imágenes con IA (10)
+### 11. Generar y editar imágenes con IA (11)
 Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 
 - `chainner` [A|loc|M|?] — Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico: escalado, restauración, conversi — tags: image,python,app,local
@@ -556,6 +556,7 @@ Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 - `comfyui` [R|loc|H|+] — Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. — tags: image,python — alt: wan2gp
 - `diffusers` [L|loc|H|+] — Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. — tags: image,python
 - `flux2` [R|loc|H|+] — Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest Labs para generar y editar imágene — tags: image,python — prov: local
+- `imagemagick` [A|loc|E|?] — Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu — tags: imágenes,conversión,miniaturas,webp,terminal
 - `invokeai` [A|loc|H|?] — Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpain — tags: image,typescript — alt: krita-ai-diffusion
 - `krita-ai-diffusion` [A|loc|M|?] — Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting. — tags: image,design,python — prov: local — alt: invokeai
 - `real-esrgan` [R|loc|M|+] — Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible gene — tags: image,python

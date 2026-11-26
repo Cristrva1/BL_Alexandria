@@ -5037,7 +5037,7 @@
     {
      "id": "invokeai",
      "posicion": 1,
-     "puntuacion": 73.2,
+     "puntuacion": 73.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables.",
      "cuando_origen": "plantilla",
@@ -5046,7 +5046,7 @@
     {
      "id": "krita-ai-diffusion",
      "posicion": 2,
-     "puntuacion": 55.1,
+     "puntuacion": 54.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting.",
      "cuando_origen": "plantilla",

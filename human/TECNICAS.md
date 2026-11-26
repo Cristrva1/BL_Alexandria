@@ -2,7 +2,7 @@
 
 Generado desde `data/techniques.json`. Textos propios de Alexandría a partir de publicaciones y documentación pública; las cifras citadas por terceros no se verificaron y ninguna técnica se ejecutó aquí.
 
-Revisión: 2026-11-25.
+Revisión: 2026-11-26.
 
 ## Diez reglas para empezar
 
@@ -811,6 +811,22 @@ npx modern-web-guidance@latest install
 Descarga el instalador y añade las guías y skills de Modern Web Guidance para tu agente.
 
 Fuentes: [Blog de Chrome: resumen de Modern Web Guidance](https://developer.chrome.com/blog/modern-web-guidance-recap) · [Repositorio de Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance)
+
+### Probar un formulario asistido antes de publicarlo
+
+*Técnica · nivel inicial*
+
+Ensaya un formulario en una página de prueba y comprueba que la persona puede corregir un borrador antes de enviarlo.
+
+1. Define una acción pequeña, como filtrar un catálogo de seis productos inventados. Escribe un resultado esperado para una búsqueda que funciona y otra sin resultados.
+2. Recorre el formulario con el teclado sin un asistente. Comprueba que cada etiqueta se entiende, que los errores indican cómo corregirlos y que existe un botón de envío explícito.
+3. Si tienes un cliente WebMCP compatible, usa el perfil de prueba del navegador para rellenar un campo. Verifica que puedes cambiar el valor antes del envío y que el resultado coincide con el recorrido manual.
+
+**Por qué ayuda:** La prueba separa la validez del formulario de la integración con el agente. Los dos recorridos dejan un resultado que puedes comprobar.
+
+**Antes de usarla:** Haz la primera prueba con datos ficticios. Conserva el envío manual y el acceso directo para navegadores sin la función experimental.
+
+Fuentes: [Fundamentos de formularios en Chrome](https://developer.chrome.com/docs/modern-web-guidance/guides/forms/forms) · [WebMCP declarativo en Chrome](https://developer.chrome.com/docs/ai/webmcp/declarative-api)
 
 
 ## 🚀 Calidad, seguridad y lanzamiento

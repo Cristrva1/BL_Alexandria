@@ -157,6 +157,35 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `comfyui`, `diffusers`, `real-esrgan`, `invokeai`, `krita-ai-diffusion`
 
+## `imagemagick`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=imágenes,conversión,miniaturas,webp,terminal
+
+**Qué es:** Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La CLI trabaja sobre archivos del equipo y funciona sin clave de API.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La conversión y el redimensionado son operaciones locales de imagen.
+- Coste: Sin pago a un modelo en la ruta básica. Descarga y uso local sin pago obligatorio bajo la licencia ImageMagick. La práctica no requiere contratar alojamiento.
+- Equipo: Equipo normal; revisar dependencias. Linux, macOS o Windows con un paquete de la arquitectura correspondiente. Para la muestra basta un equipo de uso general.
+**Repo:** https://github.com/ImageMagick/ImageMagick
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://imagemagick.org/download/
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles.
+**Evita si:** Prefieres un editor visual o necesitas generar una imagen con IA.
+**Primera prueba propuesta:** En una carpeta temporal con una imagen cuadrada propia llamada muestra.png, ejecuta magick muestra.png -resize 320x320 miniatura.png. En el paquete portable, usa la ruta del ejecutable en lugar de magick
+**Qué comprobar:** Se crea miniatura.png. Con una entrada cuadrada de 800 × 800 píxeles, la salida mide 320 × 320. El archivo de origen se conserva
+Revisión documental individual; instalación no ejecutada por Alexandría.
+
 ## `invokeai`
 role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
 

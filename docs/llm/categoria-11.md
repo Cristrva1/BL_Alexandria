@@ -1,6 +1,6 @@
 # Alexandría para agentes · Generar y editar imágenes con IA
 
-Categoría 11 completa (10 repos, 3 subcategorías). Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 11 completa (11 repos, 3 subcategorías). Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=11 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,16 +18,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `comfyui` | interfaces | Motor local para crear pipelines de generación de imagen y video con IA… | 3 Avanzado | 82 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `comfyui` | interfaces | Motor local para crear pipelines de generación de imagen y video con IA… | 3 Avanzado | 81 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `invokeai` | interfaces | Suite profesional y unificada para Stable Diffusion que combina una UI web… | 3 Avanzado | 73 | Apache-2.0 (OSI permisiva) | recomendado |
 | `krita-ai-diffusion` | interfaces | Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | alternativa |
 | `diffusers` | modelos | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de… | 3 Avanzado | 78 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `flux2` | modelos | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest… | 3 Avanzado | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `flux2` | modelos | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest… | 3 Avanzado | 47 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `upscayl` | edicion | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `rembg` | edicion | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
-| `real-esrgan` | edicion | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 56 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `chainner` | edicion | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `codeformer` | edicion | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 40 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
+| `real-esrgan` | edicion | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 57 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `imagemagick` | edicion | Convierte, redimensiona y prepara imágenes desde la terminal. | 1 Básico | 55 | ImageMagick (sin licencia detectada) | sin grupo |
+| `chainner` | edicion | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico… | 2 Intermedio | 53 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `codeformer` | edicion | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 41 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -35,7 +36,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ComfyUI (`comfyui`)
 
-- **Repo:** https://github.com/Comfy-Org/ComfyUI · GPL-3.0 · nivel 3 · 82/100
+- **Repo:** https://github.com/Comfy-Org/ComfyUI · GPL-3.0 · nivel 3 · 81/100
 - **Qué es:** ComfyUI, motor modular de creación con IA basado en grafos de nodos, mantenido por Comfy Org. Licencia GPL-3.0. Es uno de los proyectos de IA generativa más populares (~147k estrellas, v0.45.0).
 - **Cuándo elegirlo:** Casos: Crear un pipeline reproducible de imagen; Comparar dos ajustes del mismo modelo.
 - **Requisitos:** nivel 3: preparación pesada; Python o distribución elegida; modelo; RAM y GPU según workflow; hardware prerequisites; API de IA: opcional; Python o distribución elegida; modelo; RAM y GPU según workflow.
@@ -87,7 +88,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FLUX.2 (`flux2`)
 
-- **Repo:** https://github.com/black-forest-labs/flux2 · Apache-2.0 · nivel 3 · 46/100
+- **Repo:** https://github.com/black-forest-labs/flux2 · Apache-2.0 · nivel 3 · 47/100
 - **Qué es:** Código oficial de inferencia de los modelos FLUX.2 de Black Forest Labs. El código es Apache-2.0, pero los pesos tienen licencias distintas: los modelos 4B [klein] son Apache-2.0 y los 9B y FLUX.2 [dev] (32B) usan la FLUX Non-Commercial…
 - **Cuándo elegirlo:** Casos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia. Evítalo si Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face; hardware gpu; API de IA: opcional; Python 3.12; GPU NVIDIA con CUDA; memoria de vídeo según la variante; pesos desde Hugging Face.
@@ -126,7 +127,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Real-ESRGAN (`real-esrgan`)
 
-- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 56/100
+- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 57/100
 - **Qué es:** Real-ESRGAN, modelo y herramientas de superresolución de imágenes y vídeo, de @xinntao (Tencent ARC). Licencia BSD-3-Clause. Es muy popular (~38k estrellas, v0.3.0), pero su último cambio es de agosto de 2024.
 - **Cuándo elegirlo:** Casos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución.
 - **Requisitos:** nivel 2: preparación media; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba; hardware prerequisites; API de IA: no; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba.
@@ -149,9 +150,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `codeformer`, `comfyui` [11/interfaces], `rembg`
 - **Riesgos y avisos:** Sin alternativas declaradas. Sin mantenimiento activo desde 2024. La superresolución generativa puede añadir detalles; no recupera de forma verificable información ausente en la imagen.
 
+### ImageMagick (`imagemagick`)
+
+- **Repo:** https://github.com/ImageMagick/ImageMagick · ImageMagick · nivel 1 · 55/100
+- **Qué es:** Herramienta de terminal y biblioteca de código abierto para transformar imágenes.
+- **Cuándo elegirlo:** Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles. Evítalo si Prefieres un editor visual o necesitas generar una imagen con IA.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C; API de IA: no; Sistema compatible y terminal; Paquete oficial para tu arquitectura; Un PNG propio de 800 × 800 píxeles.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://imagemagick.org/download/
+- **Primera prueba propuesta (no ejecutada):** En una carpeta temporal con una imagen cuadrada propia llamada muestra.png, ejecuta magick muestra.png -resize 320x320 miniatura.png. Éxito: Se crea miniatura.png. Con una entrada cuadrada de 800 × 800 píxeles, la salida mide 320 × 320.
+
 ### chaiNNer (`chainner`)
 
-- **Repo:** https://github.com/chaiNNer-org/chaiNNer · GPL-3.0 · nivel 2 · 55/100
+- **Repo:** https://github.com/chaiNNer-org/chaiNNer · GPL-3.0 · nivel 2 · 53/100
 - **Qué es:** Aplicación de código abierto (GPL-3.0) de la organización chaiNNer, nacida como herramienta de escalado con IA. Activa y multiplataforma.
 - **Cuándo elegirlo:** Casos: escalar y restaurar lotes de imágenes con varios modelos en cadena; crear flujos repetibles de conversión y retoque de imágenes.
 - **Requisitos:** nivel 2: preparación media, app o instalador listo para usar; Python, package.json, pyproject.toml, requirements.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -162,7 +172,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CodeFormer (`codeformer`)
 
-- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 40/100
+- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 41/100
 - **Qué es:** CodeFormer, modelo de restauración ciega de rostros (NeurIPS 2022) de S-Lab, Nanyang Technological University. Licencia NTU S-Lab License 1.0, solo uso no comercial (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba; hardware prerequisites; API de IA: no; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba.

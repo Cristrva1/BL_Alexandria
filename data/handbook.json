@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "groups": [
     {
       "id": "agentes",
@@ -3139,29 +3139,55 @@
         "Chrome compatible con la prueba de origen o configuración de desarrollo descrita por Google"
       ],
       "steps": [
-        "Lee la comparación y elige una función sencilla, como filtrar un listado público.",
-        "Decide si necesita el estado de la página abierta o si puede ejecutarse desde un servidor independiente.",
-        "Si pruebas WebMCP, registra solo una acción sin escritura y comprueba en Chrome que se descubre y devuelve el resultado esperado."
+        "Elige una función de una página propia, como filtrar un catálogo de prueba. Decide si necesita el estado de la página abierta o si puede ejecutarse desde un servidor MCP independiente.",
+        "Prueba el formulario HTML con etiquetas visibles, campos con nombre y botón de envío. Establece qué sucede si se deja un campo requerido vacío.",
+        "En un perfil de prueba de Chrome compatible, añade el nombre y la descripción de la herramienta al formulario y usa datos ficticios. Mantén la revisión manual y prueba el envío desde el botón.",
+        "Si la acción necesita JavaScript más allá del formulario, consulta la interfaz imperativa. Comprueba que la página también funciona con la función experimental desactivada."
       ],
-      "verify": "Puedes explicar por qué la acción va en la página o en un servidor y qué cliente puede invocarla.",
-      "access": "WebMCP sigue como propuesta con prueba de origen desde Chrome 149 según la guía. Comprueba soporte del navegador y del cliente. MCP de servidor tiene su propia ruta de conexión para cada agente.",
-      "cost": "Guías y experimento de navegador sin tarifa de lectura. Si usas un modelo hospedado o un servidor MCP externo, estima su gasto por separado.",
+      "verify": "En la demostración, el navegador admite que el agente rellene un campo, deja el borrador visible para revisión y el filtro funciona también al usarlo a mano.",
+      "access": "WebMCP sigue como propuesta con prueba de origen desde Chrome 149 según Google. Para probar el rellenado asistido necesitas un navegador y un cliente compatibles. El formulario básico y la lectura se pueden probar sin suscripción.",
+      "cost": "La lectura y la prueba manual del formulario son gratuitas. Comprueba por separado el precio y los requisitos de un agente, un modelo hospedado o un servidor MCP externo.",
       "improve": [
-        "Reserva confirmaciones para operaciones con efectos y deja que el sitio siga funcionando para personas sin un agente."
+        "Mantén la confirmación manual para operaciones con efectos. En el ensayo evita el atributo toolautosubmit y deja visible lo que se va a enviar."
       ],
       "limits": [
         "Versiones, permisos y disponibilidad varían según navegador. Revisa la documentación antes de diseñar una dependencia de producción."
       ],
       "sources": [
         {
-          "title": "Cuándo usar WebMCP y MCP",
+          "title": "Comparación entre WebMCP y MCP",
           "url": "https://developer.chrome.com/docs/ai/webmcp/compare-mcp",
-          "checked_at": "2026-11-22"
+          "checked_at": "2026-11-26"
         },
         {
           "title": "Requisitos y estado en Chrome",
           "url": "https://developer.chrome.com/docs/ai/webmcp",
-          "checked_at": "2026-11-22"
+          "checked_at": "2026-11-26"
+        },
+        {
+          "title": "Interfaz declarativa con HTML",
+          "url": "https://developer.chrome.com/docs/ai/webmcp/declarative-api",
+          "checked_at": "2026-11-26"
+        },
+        {
+          "title": "Formularios para agentes",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance/guides/webmcp/agentic-forms",
+          "checked_at": "2026-11-26"
+        },
+        {
+          "title": "Herramientas de agente en JavaScript",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance/guides/webmcp/agentic-javascript-tools",
+          "checked_at": "2026-11-26"
+        },
+        {
+          "title": "Fundamentos de formularios",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance/guides/forms/forms",
+          "checked_at": "2026-11-26"
+        },
+        {
+          "title": "Activación de guías experimentales",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance/get-started#enable_guidance_for_features_in_origin_trial",
+          "checked_at": "2026-11-26"
         }
       ],
       "repo_ids": [
@@ -4676,6 +4702,25 @@
         "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
       },
       "checked_at": "2026-11-25"
+    },
+    {
+      "id": "plan-de-contenido-por-etapas",
+      "title": "Planear tres piezas que acompañen una decisión de compra",
+      "topic": "negocio",
+      "level": "inicial",
+      "when": "Cuando tienes una oferta y quieres que cada publicación ayude a dar un paso concreto.",
+      "inputs": [
+        "Oferta y pregunta habitual del público",
+        "Canal disponible, tiempo y presupuesto"
+      ],
+      "body": "Tengo [oferta] para [público]. La pregunta frecuente es [pregunta]. Prepara tres piezas para [canal], una para descubrir la solución, otra para compararla y otra para decidir. Para cada pieza indica la duda a resolver, un ejemplo de título, una sola acción siguiente y una señal observable. Conecta la segunda con la primera y la tercera con la segunda. Prioriza el tiempo y presupuesto [recursos]. Incluye una forma de anotar resultados en una hoja y señala qué supuestos debo comprobar. Evita inventar precios, cifras o testimonios.",
+      "expect": "Una tabla con tres piezas conectadas. Si ofreces reparación de bicicletas, puedes empezar con una lista de síntomas, seguir con una comparación de reparaciones y terminar con una solicitud de presupuesto. Puedes anotar guardados, consultas y solicitudes en una hoja.",
+      "authorship": "Plantilla original de Alexandría",
+      "inspired_by": {
+        "title": "Curso de HubSpot Academy sobre contenido para el recorrido de compra",
+        "url": "https://academy.hubspot.com/lessons/creating-content-for-the-buyers-journey"
+      },
+      "checked_at": "2026-11-26"
     }
   ],
   "paths": [

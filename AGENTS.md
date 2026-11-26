@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**968 repos curados** · **14 áreas de trabajo** · **3 colecciones de configuración** · **110 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
+**969 repos curados** · **14 áreas de trabajo** · **3 colecciones de configuración** · **110 subcategorías prácticas** · **32 categorías técnicas** · **117 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
@@ -88,7 +88,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 | 8 | 🏠 Chats, modelos locales y espacios privados | 33 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
 | 9 | 🎨 Diseñar y construir interfaces web | 33 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
 | 10 | 📊 Dashboards, analítica y mapas | 31 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
-| 11 | 🖼️ Generar y editar imágenes con IA | 10 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
+| 11 | 🖼️ Generar y editar imágenes con IA | 11 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
 | 12 | 🎬 Editar, grabar y generar video | 20 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
 | 13 | 📄 PDF, OCR y procesamiento de documentos | 22 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 25 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |

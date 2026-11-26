@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **968 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **969 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -22,7 +22,7 @@ Las **968 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 33 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
 | 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 33 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
 | 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 31 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
-| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 10 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
+| 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 11 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
 | 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 20 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 25 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
@@ -3395,6 +3395,14 @@ pip install -e . --extra-index-url https://download.pytorch.org/whl/cu129 --no-c
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Real-ESRGAN](human/fichas/real-esrgan.md) · [ComfyUI](human/fichas/comfyui.md) · [rembg](human/fichas/rembg.md) · [Deep-Live-Cam](human/fichas/deep-live-cam.md) · [Upscayl](human/fichas/upscayl.md) · [chaiNNer](human/fichas/chainner.md)<br>
 **Más:** [ficha completa](human/fichas/codeformer.md) · [GitHub](https://github.com/sczhou/CodeFormer)
+
+#### 🖥️ ImageMagick
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 17.9k<br>
+**Qué es:** Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://imagemagick.org/download/); no se deduce un paquete por el nombre.<br>
+**Elige si:** Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles — **Evita si:** Prefieres un editor visual o necesitas generar una imagen con IA<br>
+**Más:** [ficha completa](human/fichas/imagemagick.md) · [GitHub](https://github.com/ImageMagick/ImageMagick)
 
 #### 🖥️ chaiNNer
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.2k<br>

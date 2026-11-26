@@ -1,6 +1,6 @@
 # Alexandría para agentes · Catálogos y marketplaces de skills
 
-Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `catalogos`. 15 repos. Generado el 2026-11-24 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `catalogos`. 15 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2&sub=catalogos · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
