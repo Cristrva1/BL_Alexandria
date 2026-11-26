@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.

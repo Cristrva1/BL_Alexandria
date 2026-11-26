@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -54,7 +54,7 @@ Grupo **Componentes de chat y copilotos para React**: CopilotKit ocupa la posici
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **CopilotKit** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
+| 1 | **CopilotKit** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
 | 2 | [assistant-ui](assistant-ui.md) | 62 | Si buscas esto: librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Acceso, coste y equipo

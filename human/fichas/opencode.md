@@ -54,14 +54,14 @@ Grupo **Agentes de programación en terminal**: OpenCode ocupa la posición 1 de
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **OpenCode** (esta ficha) ⭐ recomendado | 82 | Si quieres un agente de terminal independiente del proveedor, con TUI cuidada y muchos modelos. |
-| 2 | [Codex CLI](codex.md) | 71 | Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox. |
+| 2 | [Codex CLI](codex.md) | 68 | Si tienes ChatGPT Plus/Pro o API de OpenAI y quieres un agente de terminal abierto en Rust con sandbox. |
 | 3 | [Gemini CLI](gemini-cli.md) | 65 | Si trabajas con Google Code Assist empresarial; para uso individual Google remite a Antigravity CLI. |
 | 4 | [Qwen Code](qwen-code.md) | 64 | Si quieres un agente de terminal que hable con varios protocolos (OpenAI, Anthropic, Gemini) o con modelos locales. |
 | 5 | [goose](goose.md) | 62 | Si quieres un agente local extensible por MCP, con app de escritorio además de la CLI. |
 | 6 | [Claude Code](claude-code.md) | 58 | Si usas Claude (Pro/Max o API) y quieres el agente de terminal más maduro con skills, hooks y subagentes. |
 | 7 | [MiMo-Code](mimo-code.md) | 50 | Si quieres probar el agente de Xiaomi MiMo con memoria persistente. |
 | 8 | [Aider](aider.md) | 49 | Si prefieres pair programming por git: cambios pequeños, commits automáticos y cualquier modelo. |
-| 9 | [Antigravity CLI](antigravity-cli.md) | 27 | Si usas Antigravity de Google y quieres su agente desde la terminal. |
+| 9 | [Antigravity CLI](antigravity-cli.md) | 24 | Si usas Antigravity de Google y quieres su agente desde la terminal. |
 
 ## Acceso, coste y equipo
 
@@ -141,7 +141,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 | [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
 | [MiMo-Code](mimo-code.md) | 13.8k | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. |

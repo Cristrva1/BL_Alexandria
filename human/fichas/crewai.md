@@ -60,7 +60,7 @@ Grupo **Frameworks de agentes en Python**: crewAI ocupa la posición 2 de 8 (alt
 | 3 | [Deep Agents](deepagents.md) | 70 | Si quieres agentes de largo recorrido con planificación, subagentes y sistema de archivos sobre LangGraph. |
 | 4 | [OpenAI Agents SDK](openai-agents-python.md) | 67 | Si usas la API de OpenAI y quieres handoffs, guardrails y trazas oficiales. |
 | 5 | [Pydantic AI](pydantic-ai.md) | 66 | Si quieres salidas tipadas y validadas con Pydantic y un estilo cercano a FastAPI. |
-| 6 | [Agent Development Kit (ADK)](adk-python.md) | 65 | Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google. |
+| 6 | [Agent Development Kit (ADK)](adk-python.md) | 66 | Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google. |
 | 7 | [Agno](agno.md) | 61 | Si quieres un runtime de agentes con memoria, conocimiento y equipos listo para servir por API. |
 | 8 | [smolagents](smolagents.md) | 55 | Si quieres agentes mínimos que escriben código Python como acciones, de Hugging Face. |
 

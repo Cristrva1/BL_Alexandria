@@ -18,15 +18,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `daily-stock-analysis` | Sistema que analiza acciones de varios mercados con LLM y envía un tablero de… | 2 Intermedio | 78 | MIT (OSI permisiva) | sin grupo |
+| `daily-stock-analysis` | Sistema que analiza acciones de varios mercados con LLM y envía un tablero de… | 2 Intermedio | 79 | MIT (OSI permisiva) | sin grupo |
 | `tradingagents` | Framework experimental que organiza agentes de análisis financiero, debate y… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `vibe-trading` | Agente de investigación y trabajo con estrategias de trading que utiliza… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
-| `finceptterminal` | Terminal de análisis financiero que reúne datos, investigación, paneles y… | 3 Avanzado | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `fingpt` | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA… | 3 Avanzado | 54 | MIT (OSI permisiva) | sin grupo |
-| `dexter` | Agente de investigación financiera que planifica consultas, obtiene datos de… | 2 Intermedio | 50 | — (sin licencia detectada) | sin grupo |
-| `autohedge` | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de… | 3 Avanzado | 45 | MIT (OSI permisiva) | sin grupo |
-| `quantharness` | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
-| `polyweather` | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las… | 2 Intermedio | — | AGPL-3.0 | sin grupo |
+| `vibe-trading` | Agente de investigación y trabajo con estrategias de trading que utiliza… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
+| `finceptterminal` | Terminal de análisis financiero que reúne datos, investigación, paneles y… | 3 Avanzado | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `fingpt` | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA… | 3 Avanzado | 55 | MIT (OSI permisiva) | sin grupo |
+| `dexter` | Agente de investigación financiera que planifica consultas, obtiene datos de… | 2 Intermedio | 49 | — (sin licencia detectada) | sin grupo |
+| `autohedge` | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de… | 3 Avanzado | 46 | MIT (OSI permisiva) | sin grupo |
+| `polyweather` | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las… | 2 Intermedio | 44 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `quantharness` | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -34,7 +34,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### daily_stock_analysis (`daily-stock-analysis`)
 
-- **Repo:** https://github.com/ZhuLinsen/daily_stock_analysis · MIT · nivel 2 · 78/100
+- **Repo:** https://github.com/ZhuLinsen/daily_stock_analysis · MIT · nivel 2 · 79/100
 - **Qué es:** Sistema de análisis inteligente de acciones con LLM (股票智能分析系统), de @ZhuLinsen. Licencia MIT. Es muy popular (~73k estrellas, v3.34.0) y su README, principalmente en chino, incluye patrocinios de proveedores de modelos.
 - **Cuándo elegirlo:** Casos: Preparar un resumen de investigación; Comparar noticias y datos de una lista de seguimiento.
 - **Requisitos:** nivel 2: preparación media; Python; proveedor LLM u Ollama; fuentes de datos; notificaciones solo si las configuras; hardware prerequisites; API de IA: depends; Python; proveedor LLM u Ollama; fuentes de datos; notificaciones solo si las configuras.
@@ -43,7 +43,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   # 克隆项目
   git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis
-  
+
   # 安装依赖
   pip install -r requirements.txt
   ```
@@ -62,7 +62,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/TauricResearch/TradingAgents.git
   cd TradingAgents
-  
+
   pip install .
   ```
 - **Primera prueba propuesta (no ejecutada):** Analiza un periodo histórico pequeño y revisa fuentes y mensajes de cada especialista Éxito: Puedes identificar qué evidencia apoya cada conclusión y el coste de llamadas
@@ -71,7 +71,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Vibe-Trading (`vibe-trading`)
 
-- **Repo:** https://github.com/HKUDS/Vibe-Trading · MIT · nivel 2 · 71/100
+- **Repo:** https://github.com/HKUDS/Vibe-Trading · MIT · nivel 2 · 72/100
 - **Qué es:** Vibe-Trading, agente personal de investigación de trading de la organización HKUDS. Licencia MIT. Es muy activo (~38k estrellas, v0.1.19).
 - **Cuándo elegirlo:** Casos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles.
 - **Requisitos:** nivel 2: preparación media; Python; proveedor o modelo local; fuente de datos; entorno de investigación; hardware prerequisites; API de IA: depends; Python; proveedor o modelo local; fuente de datos; entorno de investigación.
@@ -88,7 +88,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FinceptTerminal (`finceptterminal`)
 
-- **Repo:** https://github.com/Fincept-Corporation/FinceptTerminal · AGPL-3.0 · nivel 3 · 63/100
+- **Repo:** https://github.com/Fincept-Corporation/FinceptTerminal · AGPL-3.0 · nivel 3 · 64/100
 - **Qué es:** Fincept Terminal, terminal nativo de escritorio para investigación financiera, de Fincept Corporation. Licencia AGPL-3.0 o posterior, con una edición Enterprise propietaria de pago. Es popular (~34k estrellas, v4.5.2).
 - **Cuándo elegirlo:** Casos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas.
 - **Requisitos:** nivel 3: preparación pesada; Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba; hardware prerequisites; API de IA: opcional; Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba.
@@ -99,7 +99,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FinGPT (`fingpt`)
 
-- **Repo:** https://github.com/AI4Finance-Foundation/FinGPT · MIT · nivel 3 · 54/100
+- **Repo:** https://github.com/AI4Finance-Foundation/FinGPT · MIT · nivel 3 · 55/100
 - **Qué es:** Proyecto de código abierto (MIT) de la AI4Finance Foundation, ligado a investigación académica. Activo, aunque gran parte del contenido son cuadernos y recetas.
 - **Cuándo elegirlo:** Casos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación. Evítalo si no tienes el hardware o no aceptas la licencia de los pesos.
 - **Requisitos:** nivel 3: preparación pesada; Jupyter Notebook, requirements.txt, setup.py; hardware model_dependent; API de IA: opcional; Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida..
@@ -110,7 +110,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### dexter (`dexter`)
 
-- **Repo:** https://github.com/virattt/dexter · — · nivel 2 · 50/100
+- **Repo:** https://github.com/virattt/dexter · — · nivel 2 · 49/100
 - **Qué es:** Dexter, agente autónomo de investigación financiera de @virattt. El README declara MIT, pero GitHub no detecta licencia. Es popular (~28k estrellas, v1.1.0).
 - **Cuándo elegirlo:** Casos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente.
 - **Requisitos:** nivel 2: preparación media; Runtime y gestor de la guía; proveedor u Ollama; acceso a datos financieros; hardware prerequisites; API de IA: depends; Runtime y gestor de la guía; proveedor u Ollama; acceso a datos financieros.
@@ -121,7 +121,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AutoHedge (`autohedge`)
 
-- **Repo:** https://github.com/The-Swarm-Corporation/AutoHedge · MIT · nivel 3 · 45/100
+- **Repo:** https://github.com/The-Swarm-Corporation/AutoHedge · MIT · nivel 3 · 46/100
 - **Qué es:** AutoHedge, «fondo de cobertura autónomo» de agentes de The Swarm Corporation. Licencia MIT. Tiene ~7k estrellas (sin releases) y su último cambio es de mayo de 2026.
 - **Cuándo elegirlo:** Casos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading.
 - **Requisitos:** nivel 3: preparación pesada, requiere clave de API; Python; credenciales de modelo y herramientas; entorno de investigación sin fondos; hardware prerequisites; API de IA: sí; Python; credenciales de modelo y herramientas; entorno de investigación sin fondos.
@@ -130,9 +130,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ccxt` [14/bots], `langgraph` [3/py], `vectorbt` [14/cuant]
 - **Riesgos y avisos:** Sin alternativas declaradas. Riesgo muy alto: opera con una clave privada real de forma autónoma. Riesgo financiero: no es asesoramiento de inversión. El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada.
 
+### PolyWeather (`polyweather`)
+
+- **Repo:** https://github.com/yangyuan-zhen/PolyWeather · AGPL-3.0 · nivel 2 · 44/100
+- **Qué es:** Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
+- **Cuándo elegirlo:** Casos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones.
+- **Requisitos:** nivel 2: preparación sencilla, app o instalador listo para usar, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre una vista de datos de prueba y compara fechas de previsión y mercado. Éxito: Puedes identificar la fuente, zona y fecha de los datos mostrados.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.
+
 ### QuantHarness (`quantharness`)
 
-- **Repo:** https://github.com/Y-Research-SBU/QuantHarness · MIT · nivel 2 · 45/100
+- **Repo:** https://github.com/Y-Research-SBU/QuantHarness · MIT · nivel 2 · 44/100
 - **Qué es:** QuantHarness, sistema multiagente con LLM para trading de alta frecuencia guiado por precios, de investigadores de Stony Brook, CMU, UBC, Yale y Fudan. Licencia MIT.
 - **Cuándo elegirlo:** Casos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental.
 - **Requisitos:** nivel 2: preparación media, requiere clave de API; Python; checkout; datos; modelo con entrada de imagen y credenciales; hardware prerequisites; API de IA: sí; Python; checkout; datos; modelo con entrada de imagen y credenciales.
@@ -140,16 +150,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente Éxito: Puedes separar datos del periodo, análisis visual y decisión generada
 - **Combina con:** `langgraph` [3/py], `langchain` [3/py], `langfuse` [23/observabilidad]
 - **Riesgos y avisos:** Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión. El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo.
-
-### PolyWeather (`polyweather`)
-
-- **Repo:** https://github.com/yangyuan-zhen/PolyWeather · AGPL-3.0 · nivel 2 · —/100
-- **Qué es:** Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
-- **Cuándo elegirlo:** Casos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones.
-- **Requisitos:** nivel 2: preparación sencilla, app o instalador listo para usar, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre una vista de datos de prueba y compara fechas de previsión y mercado. Éxito: Puedes identificar la fuente, zona y fecha de los datos mostrados.
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

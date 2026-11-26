@@ -18,12 +18,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `playwright` | Framework de Microsoft para automatización y testing de navegadores Chromium… | 2 Intermedio | 78 | Apache-2.0 (OSI permisiva) | recomendado |
+| `playwright` | Framework de Microsoft para automatización y testing de navegadores Chromium… | 2 Intermedio | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `puppeteer` | Librería de Google para controlar Chrome y Firefox desde Node.js. | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | alternativa |
 | `cypress` | Framework de pruebas end-to-end y de componentes para todo lo que corre en un… | 2 Intermedio | 65 | MIT (OSI permisiva) | alternativa |
 | `selenium` | Framework veterano de automatización de navegadores con soporte para casi todos… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `webdriverio` | Framework de automatización de navegadores y apps móviles para Node.js basado… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `flaresolverr` | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `flaresolverr` | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un… | 1 Básico | 55 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -31,7 +31,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### playwright (`playwright`)
 
-- **Repo:** https://github.com/microsoft/playwright · Apache-2.0 · nivel 2 · 78/100 · recomendado en «Automatización de navegador y pruebas E2E»
+- **Repo:** https://github.com/microsoft/playwright · Apache-2.0 · nivel 2 · 79/100 · recomendado en «Automatización de navegador y pruebas E2E»
 - **Qué es:** Playwright, framework de automatización y pruebas web de Microsoft. Licencia Apache-2.0. Es maduro y estándar en la industria (~100k estrellas, v1.65.1).
 - **Cuándo elegirlo:** Casos: Probar un formulario; Crear regresiones de una web.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Node; navegadores descargados; aplicación de prueba; hardware prerequisites; API de IA: no; Node; navegadores descargados; aplicación de prueba.
@@ -96,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FlareSolverr (`flaresolverr`)
 
-- **Repo:** https://github.com/FlareSolverr/FlareSolverr · MIT · nivel 1 · 58/100
+- **Repo:** https://github.com/FlareSolverr/FlareSolverr · MIT · nivel 1 · 55/100
 - **Qué es:** Servidor de código abierto (MIT) mantenido por la comunidad (ngosang y colaboradores), muy usado junto a indexadores multimedia. Activo, aunque depende de que Cloudflare no cambie sus desafíos.
 - **Cuándo elegirlo:** Casos: dar acceso a indexadores (como Prowlarr o Jackett) a sitios propios o autorizados detrás de Cloudflare; obtener cookies válidas para que un scraper autorizado continúe con un cliente HTTP….
 - **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.

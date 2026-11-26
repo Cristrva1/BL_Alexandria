@@ -52,7 +52,7 @@ Grupo **Asistentes personales autónomos**: hermes-agent ocupa la posición 2 de
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [OpenClaw](openclaw.md) ⭐ recomendado | 82 | Si buscas esto: asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
+| 1 | [OpenClaw](openclaw.md) ⭐ recomendado | 83 | Si buscas esto: asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
 | 2 | **hermes-agent** (esta ficha) | 74 | Si buscas esto: asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
 | 3 | [Mercury Agent](mercury-agent.md) | 49 | Si buscas esto: agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** GPL-3.0-or-later (SolidLSP: MIT). Fuente: [LICENSE](https://github.com/oraios/serena/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

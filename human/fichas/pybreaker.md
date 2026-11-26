@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
+**Puntuación de calidad** 43/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.

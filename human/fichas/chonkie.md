@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,9 +46,9 @@ Grupo **Workspaces privados con documentos y chat**: Khoj ocupa la posición 3 d
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [AnythingLLM](anything-llm.md) ⭐ recomendado | 78 | Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
-| 2 | [PrivateGPT](private-gpt.md) | 67 | Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
-| 3 | **Khoj** (esta ficha) | 48 | Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
+| 1 | [AnythingLLM](anything-llm.md) ⭐ recomendado | 79 | Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
+| 2 | [PrivateGPT](private-gpt.md) | 68 | Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
+| 3 | **Khoj** (esta ficha) | 49 | Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
 
 ## Acceso, coste y equipo
 

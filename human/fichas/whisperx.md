@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,12 +49,12 @@ Estado en GitHub: activo · último push 2026-11-12 · última versión publicad
 
 ## Ver similares
 
-Grupo **Transcripción con modelos NVIDIA y alineación**: whisperX ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Transcripción con modelos NVIDIA y alineación**: whisperX ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **whisperX** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
-| 2 | [NeMo Speech](nemo.md) | 66 | Si buscas esto: framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
+| 1 | [NeMo Speech](nemo.md) ⭐ recomendado | 66 | Si buscas esto: framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
+| 2 | **whisperX** (esta ficha) | 64 | Si buscas esto: pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Acceso, coste y equipo
 

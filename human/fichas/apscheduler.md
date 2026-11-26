@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.

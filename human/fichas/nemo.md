@@ -43,12 +43,12 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Transcripción con modelos NVIDIA y alineación**: NeMo Speech ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Transcripción con modelos NVIDIA y alineación**: NeMo Speech ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [whisperX](whisperx.md) ⭐ recomendado | 67 | Si buscas esto: pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
-| 2 | **NeMo Speech** (esta ficha) | 66 | Si buscas esto: framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
+| 1 | **NeMo Speech** (esta ficha) ⭐ recomendado | 66 | Si buscas esto: framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
+| 2 | [whisperX](whisperx.md) | 64 | Si buscas esto: pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Acceso, coste y equipo
 

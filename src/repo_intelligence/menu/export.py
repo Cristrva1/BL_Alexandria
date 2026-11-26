@@ -22,8 +22,8 @@ from __future__ import annotations
 import json
 import re
 from repo_intelligence.core.access import access_facts, access_routes, access_rows
-from repo_intelligence.core.taxonomy import build_areas
-from datetime import datetime, timezone
+from repo_intelligence.core.taxonomy import build_areas, goal_memberships
+from repo_intelligence.core.catalog import is_public_repo, read_indices
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -147,11 +147,8 @@ def _slugify(text: str) -> str:
 
 def export_menu(project_root: Path, output_dir: Path | None = None) -> dict:
     """Build the portable menu package. Returns stats dict."""
-    scan_path = project_root / "INDICE_IA.json"
-    detail_path = project_root / "INDICE_IA.detalle.json"
-    scan = json.loads(scan_path.read_text(encoding="utf-8"))
-    detail = json.loads(detail_path.read_text(encoding="utf-8"))
-    detail_repos = detail.get("repos", {})
+    scan, detail = read_indices(project_root)
+    detail_repos = detail["repos"]
 
     categories = scan.get("categories", [])
     recipes = scan.get("recipes", [])
@@ -161,17 +158,17 @@ def export_menu(project_root: Path, output_dir: Path | None = None) -> dict:
     # Merge compact + detail into a unified view keyed by id.
     merged: dict[str, dict] = {}
     for r in compact_repos:
-        rid = r.get("id") or r.get("name")
-        merged[rid] = dict(r)
-    for rid, d in detail_repos.items():
-        if rid in merged:
-            merged[rid].update({k: v for k, v in d.items() if v})
-        else:
-            merged[rid] = dict(d)
-            merged[rid]["id"] = rid
+        if is_public_repo(r):
+            rid = r["id"]
+            merged[rid] = {**r, **{k: v for k, v in detail_repos[rid].items() if v}}
+
+    internal = {r["id"] for r in compact_repos if not is_public_repo(r)}
+    memberships = goal_memberships(scan)
 
     # Attach derived install.
     for rid, r in merged.items():
+        r["goals"] = memberships[rid]
+        r["combines_with"] = [cid for cid in r.get("combines_with", []) if cid not in internal]
         cmd, conf, note = derive_install(r)
         r["_install"] = cmd
         r["_install_conf"] = conf
@@ -225,12 +222,12 @@ def export_menu(project_root: Path, output_dir: Path | None = None) -> dict:
 def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
                  cat_meta: dict, recipes: list, model_guidance: dict) -> None:
     lines: list[str] = []
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    now = scan.get("meta", {}).get("updated") or "sin fecha"
     n = len(merged)
 
     lines.append("# REPO_MENU — Menú portable de la biblioteca de repositorios")
     lines.append("")
-    lines.append(f"> Generado: {now} · {n} repos curados · Documento 100% para IA.")
+    lines.append(f"> Revisión del índice: {now} · {n} repos curados · Documento 100% para IA.")
     lines.append("> COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y")
     lines.append("> referencia este archivo desde tu AGENTS.md / system prompt.")
     lines.append("")

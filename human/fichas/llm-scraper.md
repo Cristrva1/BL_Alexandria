@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 44/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,7 +49,7 @@ Grupo **Scraping guiado por LLM**: llm-scraper ocupa la posición 3 de 3 (altern
 |---:|---|---:|---|
 | 1 | [Scrapegraph-ai](scrapegraph-ai.md) ⭐ recomendado | 70 | Si buscas esto: framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. |
 | 2 | [Maxun](maxun.md) | 70 | Si buscas esto: plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. |
-| 3 | **llm-scraper** (esta ficha) | 47 | Si buscas esto: librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. |
+| 3 | **llm-scraper** (esta ficha) | 44 | Si buscas esto: librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. |
 
 ## Acceso, coste y equipo
 

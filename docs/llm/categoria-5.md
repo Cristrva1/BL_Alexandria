@@ -19,32 +19,32 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
 | `fastmcp` | sdk | La forma rápida y pythónica de crear servidores y clientes MCP, con auth… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
-| `mcp-inspector` | sdk | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | 1 Básico | 69 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
+| `mcp-inspector` | sdk | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | 1 Básico | 68 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
 | `mcp-use` | sdk | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o… | 2 Intermedio | 64 | MIT (OSI permisiva) | recomendado |
-| `mcp-python-sdk` | sdk | SDK oficial de Python para crear servidores y clientes del Model Context… | 2 Intermedio | 61 | MIT (OSI permisiva) | alternativa |
+| `mcp-python-sdk` | sdk | SDK oficial de Python para crear servidores y clientes del Model Context… | 2 Intermedio | 62 | MIT (OSI permisiva) | alternativa |
 | `mcp-typescript-sdk` | sdk | SDK oficial de TypeScript para crear servidores y clientes del Model Context… | 2 Intermedio | 60 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | alternativa |
-| `servers` | servidores | Colección oficial de implementaciones de referencia de servidores MCP mantenida… | 1 Básico | 80 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
+| `servers` | servidores | Colección oficial de implementaciones de referencia de servidores MCP mantenida… | 1 Básico | 79 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
 | `context7` | servidores | Servidor MCP que trae documentación actualizada y por versión de librerías al… | 1 Básico | 75 | MIT (OSI permisiva) | sin grupo |
 | `chrome-devtools-mcp` | servidores | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red… | 1 Básico | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `github-mcp-server` | servidores | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
-| `serena` | servidores | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un… | 1 Básico | 64 | GPL-3.0-or-later (SolidLSP: MIT) (open-core) | sin grupo |
-| `unity-mcp` | servidores | Servidor MCP que permite a un asistente operar escenas, scripts y recursos… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
-| `mcp-toolbox` | servidores | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `playwright-mcp` | servidores | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar… | 1 Básico | 62 | Apache-2.0 (OSI permisiva) | alternativa |
+| `github-mcp-server` | servidores | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen… | 1 Básico | 68 | MIT (OSI permisiva) | sin grupo |
+| `ha-mcp` | servidores | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
+| `unity-mcp` | servidores | Servidor MCP que permite a un asistente operar escenas, scripts y recursos… | 2 Intermedio | 66 | MIT (OSI permisiva) | sin grupo |
+| `serena` | servidores | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un… | 1 Básico | 65 | GPL-3.0-or-later (SolidLSP: MIT) (open-core) | sin grupo |
+| `mcp-toolbox` | servidores | Servidor MCP de Google para bases de datos: herramientas genéricas listas y un… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `playwright-mcp` | servidores | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `aws-mcp` | servidores | Colección oficial de AWS Labs con decenas de servidores MCP para documentación… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `neo4j-mcp` | servidores | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo… | 2 Intermedio | 60 | GPL-3.0 (OSI copyleft) | recomendado |
 | `blender-mcp` | servidores | Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
-| `figma-context-mcp` | servidores | Servidor MCP que entrega a los agentes de código el layout de tus diseños de… | 1 Básico | 52 | MIT (OSI permisiva) | sin grupo |
+| `figma-context-mcp` | servidores | Servidor MCP que entrega a los agentes de código el layout de tus diseños de… | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
 | `mcp-neo4j` | servidores | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y… | 2 Intermedio | 52 | MIT (OSI permisiva) | alternativa |
+| `claude-context` | servidores | Permite que asistentes busquen funciones y conceptos por significado en una… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `ghidramcp` | servidores | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y… | 2 Intermedio | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `annas-mcp` | servidores | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's… | 2 Intermedio | 27 | — (sin licencia detectada) | sin grupo |
-| `claude-context` | servidores | Permite que asistentes busquen funciones y conceptos por significado en una… | 2 Intermedio | — | MIT | sin grupo |
-| `ha-mcp` | servidores | Conecta Home Assistant con un asistente mediante MCP para consultar entidades y… | 2 Intermedio | — | MIT | sin grupo |
 | `public-apis` | directorios | Directorio masivo y muy popular que lista por categorías miles de APIs públicas… | 1 Básico | 73 | MIT (OSI permisiva) | sin grupo |
 | `awesome-mcp-servers` | directorios | Directorio curado de la comunidad que cataloga por categorías cientos de… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
-| `mcp-for-beginners` | directorios | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
+| `mcp-for-beginners` | directorios | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
 | `awesome-mcp-clients` | directorios | Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y… | 1 Básico | 42 | MIT (OSI permisiva) | sin grupo |
-| `mcp` | directorios | Directorio de servidores MCP oficiales de Google, ejemplos y orientación para… | 1 Básico | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `mcp` | directorios | Directorio de servidores MCP oficiales de Google, ejemplos y orientación para… | 1 Básico | 39 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -64,7 +64,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MCP Inspector (`mcp-inspector`)
 
-- **Repo:** https://github.com/modelcontextprotocol/inspector · Apache-2.0 (en transición desde MIT) · nivel 1 · 69/100
+- **Repo:** https://github.com/modelcontextprotocol/inspector · Apache-2.0 (en transición desde MIT) · nivel 1 · 68/100
 - **Qué es:** Herramienta oficial para inspeccionar servidores del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es activa (~11k estrellas, 2.15.0).
 - **Cuándo elegirlo:** Casos: Depurar un esquema MCP; Reproducir un fallo de una herramienta.
 - **Requisitos:** nivel 1: preparación sencilla; Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba; hardware prerequisites; API de IA: no; Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba.
@@ -87,7 +87,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MCP Python SDK (`mcp-python-sdk`)
 
-- **Repo:** https://github.com/modelcontextprotocol/python-sdk · MIT · nivel 2 · 61/100 · alternativa en «SDKs de MCP en Python»
+- **Repo:** https://github.com/modelcontextprotocol/python-sdk · MIT · nivel 2 · 62/100 · alternativa en «SDKs de MCP en Python»
 - **Qué es:** SDK oficial en Python del Model Context Protocol. Licencia MIT (el proyecto MCP está migrando a Apache-2.0). Es muy usado (~25k estrellas, v2.3.0).
 - **Cuándo elegirlo:** Casos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.11+; uv; directorio de proyecto; hardware prerequisites; API de IA: no; Python 3.11+; uv; directorio de proyecto.
@@ -111,7 +111,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### servers (`servers`)
 
-- **Repo:** https://github.com/modelcontextprotocol/servers · Apache-2.0 (en transición desde MIT) · nivel 1 · 80/100
+- **Repo:** https://github.com/modelcontextprotocol/servers · Apache-2.0 (en transición desde MIT) · nivel 1 · 79/100
 - **Qué es:** Repositorio oficial de servidores de referencia del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es muy popular (~92k estrellas, v2.4.0).
 - **Cuándo elegirlo:** Casos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Node o Python según el servidor elegido; hardware prerequisites; API de IA: no; Navegador; Node o Python según el servidor elegido.
@@ -145,7 +145,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GitHub MCP Server (`github-mcp-server`)
 
-- **Repo:** https://github.com/github/github-mcp-server · MIT · nivel 1 · 70/100
+- **Repo:** https://github.com/github/github-mcp-server · MIT · nivel 1 · 68/100
 - **Qué es:** Servidor MCP oficial de GitHub que conecta herramientas de IA con la plataforma. Licencia MIT. Es muy activo (~35k estrellas, v2.1.0).
 - **Cuándo elegirlo:** Casos: Explorar una base de código; Revisar el estado de una pull request.
 - **Requisitos:** nivel 1: preparación sencilla; Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota; hardware prerequisites; API de IA: no; Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota.
@@ -158,9 +158,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `strix` [16/agentes], `agentes-chat` [21/asistentes], `awesome-copilot` [2/catalogos], `cli` [7/herramientas]
 - **Riesgos y avisos:** Sin alternativas declaradas. Usa el modo de solo lectura cuando no necesites escribir. Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales.
 
+### Home Assistant MCP (`ha-mcp`)
+
+- **Repo:** https://github.com/homeassistant-ai/ha-mcp · MIT · nivel 2 · 68/100
+- **Qué es:** Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.
+- **Cuándo elegirlo:** Casos: Consultar qué sensores aparecen en el demo.; Revisar como borrador la automatización de una luz virtual. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no; Home Assistant compatible o el demo oficial, y un cliente MCP de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://homeassistant-ai.github.io/ha-mcp/
+- **Primera prueba propuesta (no ejecutada):** Inicia con el demo y pide una consulta sin cambios sobre una entidad ficticia. Éxito: La herramienta devuelve el estado de la entidad sin accionar dispositivos.
+- **Combina con:** `home-assistant` [15/domotica]
+- **Riesgos y avisos:** Hay avisos públicos: el release revisado v9.2.0 es posterior a los pisos publicados para el paquete.
+
+### unity-mcp (`unity-mcp`)
+
+- **Repo:** https://github.com/CoplayDev/unity-mcp · MIT · nivel 2 · 66/100
+- **Qué es:** MCP for Unity, puente entre asistentes de IA y el editor de Unity, de Coplay (patrocinado y mantenido por Aura). Licencia MIT. Es activo (~16k estrellas, v10.3.0).
+- **Cuándo elegirlo:** Casos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente.
+- **Requisitos:** nivel 2: preparación media; Unity 2021.3 LTS a 6.x; Python 3.10+ mediante uv; cliente MCP; hardware prerequisites; API de IA: no; Unity 2021.3 LTS a 6.x; Python 3.10+ mediante uv; cliente MCP.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/CoplayDev/unity-mcp/blob/beta/README.md
+- **Primera prueba propuesta (no ejecutada):** En un proyecto vacío pide crear un cubo en el origen con un Rigidbody Éxito: El cubo aparece y puedes inspeccionar el componente en Unity
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `blender` [26/creacion-3d], `blender-mcp`
+- **Riesgos y avisos:** Sin alternativas declaradas. Usa control de versiones: el agente puede modificar escenas y scripts. Instala el paquete desde Package Manager y configura el cliente; guarda una copia del proyecto antes de automatizar ediciones.
+
 ### Serena (`serena`)
 
-- **Repo:** https://github.com/oraios/serena · GPL-3.0-or-later (SolidLSP: MIT) · nivel 1 · 64/100
+- **Repo:** https://github.com/oraios/serena · GPL-3.0-or-later (SolidLSP: MIT) · nivel 1 · 65/100
 - **Qué es:** Serena, un kit de herramientas de código semántico para agentes («el IDE de tu agente»), de Oraios AI. La aplicación es GPL-3.0-or-later y el componente SolidLSP es MIT (GitHub muestra NOASSERTION). Es muy activa (~31k estrellas, v2.1.0).
 - **Cuándo elegirlo:** Casos: Navegar una base de código grande; Refactorizar un símbolo con contexto semántico.
 - **Requisitos:** nivel 1: preparación sencilla; uv; servidor de lenguaje del proyecto; repositorio de prueba; hardware prerequisites; API de IA: no; uv; servidor de lenguaje del proyecto; repositorio de prueba.
@@ -170,20 +192,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `codegraph`, `gitnexus`, `codebase-memory-mcp`, `graphify`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify. El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado.
 
-### unity-mcp (`unity-mcp`)
-
-- **Repo:** https://github.com/CoplayDev/unity-mcp · MIT · nivel 2 · 64/100
-- **Qué es:** MCP for Unity, puente entre asistentes de IA y el editor de Unity, de Coplay (patrocinado y mantenido por Aura). Licencia MIT. Es activo (~16k estrellas, v10.3.0).
-- **Cuándo elegirlo:** Casos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente.
-- **Requisitos:** nivel 2: preparación media; Unity 2021.3 LTS a 6.x; Python 3.10+ mediante uv; cliente MCP; hardware prerequisites; API de IA: no; Unity 2021.3 LTS a 6.x; Python 3.10+ mediante uv; cliente MCP.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/CoplayDev/unity-mcp/blob/beta/README.md
-- **Primera prueba propuesta (no ejecutada):** En un proyecto vacío pide crear un cubo en el origen con un Rigidbody Éxito: El cubo aparece y puedes inspeccionar el componente en Unity
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `blender` [26/creacion-3d], `blender-mcp`
-- **Riesgos y avisos:** Sin alternativas declaradas. Usa control de versiones: el agente puede modificar escenas y scripts. Instala el paquete desde Package Manager y configura el cliente; guarda una copia del proyecto antes de automatizar ediciones.
-
 ### MCP Toolbox for Databases (`mcp-toolbox`)
 
-- **Repo:** https://github.com/googleapis/mcp-toolbox · Apache-2.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/googleapis/mcp-toolbox · Apache-2.0 · nivel 2 · 64/100
 - **Qué es:** Servidor MCP de código abierto (Apache-2.0) mantenido por Google (organización googleapis). El repositorio se llamaba genai-toolbox y se renombró a mcp-toolbox; publica versiones frecuentes y SDK oficiales.
 - **Cuándo elegirlo:** Casos: consultar y explorar el esquema de una base PostgreSQL desde tu agente de código; dar a un agente en producción consultas parametrizadas en lugar de SQL libre. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Go, Dockerfile, go.mod; API de IA: no; Un cliente MCP compatible y el programa o servicio que va a controlar la herramienta..
@@ -194,7 +205,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Playwright MCP (`playwright-mcp`)
 
-- **Repo:** https://github.com/microsoft/playwright-mcp · Apache-2.0 · nivel 1 · 62/100 · alternativa en «Servidores MCP de navegador»
+- **Repo:** https://github.com/microsoft/playwright-mcp · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Servidores MCP de navegador»
 - **Qué es:** Servidor MCP oficial de Microsoft que da a los LLM automatización de navegador con Playwright. Licencia Apache-2.0. Es muy popular y activo (~40k estrellas, v0.0.85, aún 0.x).
 - **Cuándo elegirlo:** Casos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo.
 - **Requisitos:** nivel 1: preparación sencilla; Node.js; npm; cliente MCP; navegador de prueba; hardware prerequisites; API de IA: no; Node.js; npm; cliente MCP; navegador de prueba.
@@ -245,7 +256,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Figma Context MCP (`figma-context-mcp`)
 
-- **Repo:** https://github.com/GLips/Figma-Context-MCP · MIT · nivel 1 · 52/100
+- **Repo:** https://github.com/GLips/Figma-Context-MCP · MIT · nivel 1 · 54/100
 - **Qué es:** Framelink MCP for Figma, servidor que da a los agentes de programación acceso a los datos de Figma, de @GLips. Licencia MIT. Es popular (~16k estrellas, v0.13.2).
 - **Cuándo elegirlo:** Casos: Implementar una tarjeta a partir de un diseño; Consultar tipografía y espaciado de una pantalla.
 - **Requisitos:** nivel 1: preparación sencilla; Node.js; token Figma; archivo de diseño accesible; cliente MCP; hardware prerequisites; API de IA: no; Node.js; token Figma; archivo de diseño accesible; cliente MCP.
@@ -265,6 +276,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `graphrag` [6/rag], `graphiti` [6/memoria]
 - **Alternativas:** `neo4j-mcp`
 - **Riesgos y avisos:** Alternativa (elige una): neo4j-mcp. Para producción, valora el servidor oficial neo4j/mcp (neo4j-mcp). El servidor Cypher puede escribir: limita permisos. Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio.
+
+### Claude Context (`claude-context`)
+
+- **Repo:** https://github.com/zilliztech/claude-context · MIT · nivel 2 · 48/100
+- **Qué es:** Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.
+- **Cuándo elegirlo:** Casos: Encontrar archivos relacionados con la autenticación en un proyecto de ejemplo.; Indexar una biblioteca ficticia y comprobar qué resultado devuelve por función. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js 20+, un cliente MCP, base vectorial y una configuración de embeddings según el proveedor escogido..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md
+- **Primera prueba propuesta (no ejecutada):** Configura un índice de prueba sobre código público e intenta encontrar una función conocida. Éxito: La búsqueda devuelve el archivo y fragmento esperado, y puedes comprobar el proveedor de embeddings utilizado.
+- **Riesgos y avisos:** Los embeddings y almacenamiento pueden ser servicios externos. La cuenta del cliente no cubre esos cargos; no enviar código sensible sin revisar destino y….
 
 ### GhidraMCP (`ghidramcp`)
 
@@ -287,27 +308,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Busca un documento que puedas utilizar legalmente y revisa los metadatos antes de descargar Éxito: La búsqueda muestra título y origen sin necesitar clave de descarga
 - **Combina con:** `claude-code` [20/terminal], `markitdown` [13/conversion], `docling` [13/conversion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Riesgo legal: descargar obras protegidas puede infringir derechos de autor según tu país. Sin licencia declarada. Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos.
-
-### Claude Context (`claude-context`)
-
-- **Repo:** https://github.com/zilliztech/claude-context · MIT · nivel 2 · —/100
-- **Qué es:** Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.
-- **Cuándo elegirlo:** Casos: Encontrar archivos relacionados con la autenticación en un proyecto de ejemplo.; Indexar una biblioteca ficticia y comprobar qué resultado devuelve por función. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js 20+, un cliente MCP, base vectorial y una configuración de embeddings según el proveedor escogido..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zilliztech/claude-context/blob/64a87f9b31b0c983f731c91242322562ffd91c7d/README.md
-- **Primera prueba propuesta (no ejecutada):** Configura un índice de prueba sobre código público e intenta encontrar una función conocida. Éxito: La búsqueda devuelve el archivo y fragmento esperado, y puedes comprobar el proveedor de embeddings utilizado.
-- **Riesgos y avisos:** Los embeddings y almacenamiento pueden ser servicios externos. La cuenta del cliente no cubre esos cargos; no enviar código sensible sin revisar destino y….
-
-### Home Assistant MCP (`ha-mcp`)
-
-- **Repo:** https://github.com/homeassistant-ai/ha-mcp · MIT · nivel 2 · —/100
-- **Qué es:** Conecta Home Assistant con un asistente mediante MCP para consultar entidades y trabajar con automatizaciones de domótica.
-- **Cuándo elegirlo:** Casos: Consultar qué sensores aparecen en el demo.; Revisar como borrador la automatización de una luz virtual. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no; Home Assistant compatible o el demo oficial, y un cliente MCP de prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://homeassistant-ai.github.io/ha-mcp/
-- **Primera prueba propuesta (no ejecutada):** Inicia con el demo y pide una consulta sin cambios sobre una entidad ficticia. Éxito: La herramienta devuelve el estado de la entidad sin accionar dispositivos.
-- **Combina con:** `home-assistant` [15/domotica]
-- **Riesgos y avisos:** Hay avisos públicos: el release revisado v9.2.0 es posterior a los pisos publicados para el paquete.
 
 ### public-apis (`public-apis`)
 
@@ -333,7 +333,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MCP for Beginners (`mcp-for-beginners`)
 
-- **Repo:** https://github.com/microsoft/mcp-for-beginners · MIT · nivel 1 · 62/100
+- **Repo:** https://github.com/microsoft/mcp-for-beginners · MIT · nivel 1 · 59/100
 - **Qué es:** Curso de Microsoft para aprender Model Context Protocol con ejemplos prácticos en C#, Java, JavaScript, Rust, Python y TypeScript. Licencia MIT. Es popular (~18k estrellas, sin releases) y tiene más de 50 traducciones automáticas.
 - **Cuándo elegirlo:** Casos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; lenguaje elegido para los ejercicios; hardware prerequisites; API de IA: no; Navegador; lenguaje elegido para los ejercicios.
@@ -355,7 +355,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Google MCP (`mcp`)
 
-- **Repo:** https://github.com/google/mcp · Apache-2.0 · nivel 1 · 42/100
+- **Repo:** https://github.com/google/mcp · Apache-2.0 · nivel 1 · 39/100
 - **Qué es:** Repositorio de Google con la lista de sus servidores MCP oficiales, guías para desplegar servidores en Google Cloud y ejemplos. Licencia Apache-2.0. Es pequeño (~5k estrellas) y su último cambio es de agosto de 2026.
 - **Cuándo elegirlo:** Casos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; servicio Google objetivo; hardware prerequisites; API de IA: no; Navegador; servicio Google objetivo.

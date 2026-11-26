@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -52,8 +52,8 @@ Grupo **Detección de secretos en repos**: TruffleHog ocupa la posición 2 de 2 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Gitleaks](gitleaks.md) ⭐ recomendado | 61 | Si buscas esto: detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. |
-| 2 | **TruffleHog** (esta ficha) | 60 | Si buscas esto: busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. |
+| 1 | [Gitleaks](gitleaks.md) ⭐ recomendado | 63 | Si buscas esto: detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI. |
+| 2 | **TruffleHog** (esta ficha) | 61 | Si buscas esto: busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos. |
 
 ## Acceso, coste y equipo
 

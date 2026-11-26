@@ -18,15 +18,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `openbb` | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con… | 2 Intermedio | 73 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `nautilus-trader` | Motor de trading y backtesting con arquitectura orientada a eventos para… | 2 Intermedio | 70 | LGPL-3.0 (OSI copyleft) | sin grupo |
-| `yfinance` | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `qlib` | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y… | 3 Avanzado | 64 | MIT (OSI permisiva) | sin grupo |
+| `openbb` | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `nautilus-trader` | Motor de trading y backtesting con arquitectura orientada a eventos para… | 2 Intermedio | 71 | LGPL-3.0 (OSI copyleft) | sin grupo |
+| `yfinance` | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `qlib` | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y… | 3 Avanzado | 65 | MIT (OSI permisiva) | sin grupo |
 | `lumibot` | Framework de Python para desarrollar estrategias, realizar backtesting y… | 2 Intermedio | 56 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `vectorbt` | Biblioteca de análisis cuantitativo para explorar señales y comparar… | 2 Intermedio | 56 | Apache-2.0 + Commons Clause (source-available) | recomendado |
-| `finrl` | Biblioteca y ejemplos para investigar estrategias de trading mediante… | 3 Avanzado | 53 | MIT (OSI permisiva) | sin grupo |
-| `backtesting-py` | Framework ligero de Python para hacer backtesting de estrategias de trading… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `prediction-market-backtesting` | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | — | NOASSERTION | sin grupo |
+| `finrl` | Biblioteca y ejemplos para investigar estrategias de trading mediante… | 3 Avanzado | 54 | MIT (OSI permisiva) | sin grupo |
+| `backtesting-py` | Framework ligero de Python para hacer backtesting de estrategias de trading… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `prediction-market-backtesting` | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | 32 | NOASSERTION (sin confirmar) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -34,7 +34,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenBB Open Data Platform (`openbb`)
 
-- **Repo:** https://github.com/openbq-org/OpenBB · Apache-2.0 · nivel 2 · 73/100
+- **Repo:** https://github.com/openbq-org/OpenBB · Apache-2.0 · nivel 2 · 74/100
 - **Qué es:** Conjunto de herramientas de datos de código abierto (Apache-2.0) creado por OpenBB. Desde octubre de 2026 lo custodia OpenBQ, una organización sin ánimo de lucro anunciada por OpenBB y liderada desde BrightQuery; por eso el repositorio…
 - **Cuándo elegirlo:** Casos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -45,7 +45,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### nautilus_trader (`nautilus-trader`)
 
-- **Repo:** https://github.com/nautechsystems/nautilus_trader · LGPL-3.0 · nivel 2 · 70/100
+- **Repo:** https://github.com/nautechsystems/nautilus_trader · LGPL-3.0 · nivel 2 · 71/100
 - **Qué es:** NautilusTrader, motor de trading y backtesting de alto rendimiento nativo en Rust con API de Python, de Nautech Systems. Licencia LGPL-3.0. Es muy activo (~32k estrellas, v1.231.0).
 - **Cuándo elegirlo:** Casos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba; hardware prerequisites; API de IA: no; CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba.
@@ -56,7 +56,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### yfinance (`yfinance`)
 
-- **Repo:** https://github.com/ranaroussi/yfinance · Apache-2.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/ranaroussi/yfinance · Apache-2.0 · nivel 2 · 70/100
 - **Qué es:** Biblioteca de código abierto (Apache-2.0) creada por Ran Aroussi, muy usada en investigación y educación. No está afiliada ni respaldada por Yahoo, Inc.
 - **Cuándo elegirlo:** Casos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -67,7 +67,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### qlib (`qlib`)
 
-- **Repo:** https://github.com/microsoft/qlib · MIT · nivel 3 · 64/100
+- **Repo:** https://github.com/microsoft/qlib · MIT · nivel 3 · 65/100
 - **Qué es:** Qlib, plataforma de investigación cuantitativa orientada a IA de Microsoft. Licencia MIT. Es madura (~50k estrellas, v0.9.8).
 - **Cuándo elegirlo:** Casos: Comparar modelos sobre datos temporales; Investigar un pipeline cuantitativo reproducible.
 - **Requisitos:** nivel 3: preparación pesada; Python compatible con baseline; datos históricos; dependencias del modelo; hardware prerequisites; API de IA: opcional; Python compatible con baseline; datos históricos; dependencias del modelo.
@@ -101,7 +101,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FinRL (`finrl`)
 
-- **Repo:** https://github.com/AI4Finance-Foundation/FinRL · MIT · nivel 3 · 53/100
+- **Repo:** https://github.com/AI4Finance-Foundation/FinRL · MIT · nivel 3 · 54/100
 - **Qué es:** FinRL, el framework open source de aprendizaje por refuerzo para finanzas, de AI4Finance Foundation. Licencia MIT; la marca FinRL pertenece a FinRL LLC.
 - **Cuándo elegirlo:** Casos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Python y dependencias de la guía; datos; entorno de entrenamiento; hardware prerequisites; API de IA: no; Python y dependencias de la guía; datos; entorno de entrenamiento.
@@ -110,7 +110,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/AI4Finance-Foundation/FinRL.git
   cd FinRL
-  
+
   pip install -e .
   ```
 - **Primera prueba propuesta (no ejecutada):** Ejecuta un ejemplo pequeño de aprendizaje por refuerzo y evalúa en un periodo distinto Éxito: Puedes contrastar recompensas, operaciones simuladas y datos de prueba
@@ -119,7 +119,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Backtesting.py (`backtesting-py`)
 
-- **Repo:** https://github.com/kernc/backtesting.py · AGPL-3.0 · nivel 2 · 51/100 · alternativa en «Backtesting en Python»
+- **Repo:** https://github.com/kernc/backtesting.py · AGPL-3.0 · nivel 2 · 52/100 · alternativa en «Backtesting en Python»
 - **Qué es:** Biblioteca de backtesting de código abierto (AGPL-3.0) creada por kernc. Madura, con ritmo de cambios bajo (último push en agosto de 2026).
 - **Cuándo elegirlo:** Casos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml, requirements.txt, setup.py; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -131,7 +131,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Prediction Market Backtesting (`prediction-market-backtesting`)
 
-- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · NOASSERTION · nivel 2 · —/100
+- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · NOASSERTION · nivel 2 · 32/100
 - **Qué es:** Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.
 - **Cuándo elegirlo:** Casos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Cargo.toml, Makefile; API de IA: no; Entorno compatible con NautilusTrader y datos históricos de una muestra..

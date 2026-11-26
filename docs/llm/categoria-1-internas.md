@@ -21,9 +21,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `tooljet` | Plataforma low-code para herramientas internas, dashboards y flujos, con… | 2 Intermedio | 75 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `appsmith` | Plataforma low-code para crear paneles de administración y herramientas… | 3 Avanzado | 72 | Apache-2.0 (OSI permisiva) | alternativa |
 | `nocodb` | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de… | 1 Básico | 70 | Sustainable Use License (no OSI) (source-available) | alternativa |
-| `budibase` | Plataforma open source para apps internas, automatizaciones y agentes de IA… | 2 Intermedio | 62 | GPL-3.0 + BSL (packages/pro) (source-available) | alternativa |
+| `budibase` | Plataforma open source para apps internas, automatizaciones y agentes de IA… | 2 Intermedio | 63 | GPL-3.0 + BSL (packages/pro) (source-available) | alternativa |
 | `teable` | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja… | 2 Intermedio | 56 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `grist-core` | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | alternativa |
+| `grist-core` | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas… | 1 Básico | 54 | Apache-2.0 (OSI permisiva) | alternativa |
 | `baserow` | Base de datos sin código autoalojable (Django y Vue) con constructor de… | 1 Básico | 50 | MIT (open-core) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -84,7 +84,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Budibase (`budibase`)
 
-- **Repo:** https://github.com/Budibase/budibase · GPL-3.0 + BSL (packages/pro) · nivel 2 · 62/100 · alternativa en «Herramientas internas y bases de datos no-code»
+- **Repo:** https://github.com/Budibase/budibase · GPL-3.0 + BSL (packages/pro) · nivel 2 · 63/100 · alternativa en «Herramientas internas y bases de datos no-code»
 - **Qué es:** Plataforma de operaciones de código abierto para crear agentes, apps y automatizaciones, de Budibase Ltd. El núcleo tiene licencia GPL v3, las librerías de cliente y componentes MPL (las apps que construyes pueden tener la licencia que…
 - **Cuándo elegirlo:** Casos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA.
 - **Requisitos:** nivel 2: preparación media; Cuenta o instancia Budibase;  datos de ejemplo para una aplicación; hardware prerequisites; API de IA: opcional; Cuenta o instancia Budibase; datos de ejemplo para una aplicación.
@@ -108,7 +108,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Grist (`grist-core`)
 
-- **Repo:** https://github.com/gristlabs/grist-core · Apache-2.0 · nivel 1 · 53/100 · alternativa en «Herramientas internas y bases de datos no-code»
+- **Repo:** https://github.com/gristlabs/grist-core · Apache-2.0 · nivel 1 · 54/100 · alternativa en «Herramientas internas y bases de datos no-code»
 - **Qué es:** Servidor de la edición Community de Grist (Apache-2.0), mantenido por Grist Labs (Nueva York) con contribuciones relevantes de organismos públicos franceses.
 - **Cuándo elegirlo:** Casos: sustituir una hoja compartida por tablas relacionadas con permisos por fila; montar un inventario o CRM ligero en tu propio servidor.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile, package.json; API de IA: opcional.

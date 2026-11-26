@@ -51,9 +51,9 @@ Grupo **Herramientas internas y bases de datos no-code**: NocoDB ocupa la posici
 | 1 | [ToolJet](tooljet.md) ⭐ recomendado | 75 | Si quieres un builder de apps internas con muchos conectores y opciones de IA. |
 | 2 | [Appsmith](appsmith.md) | 72 | Si construyes paneles internos arrastrando componentes sobre APIs y bases de datos. |
 | 3 | **NocoDB** (esta ficha) | 70 | Si quieres una interfaz tipo Airtable sobre tu base de datos SQL existente. |
-| 4 | [Budibase](budibase.md) | 62 | Si quieres formularios, portales y automatizaciones internas con poco código. |
+| 4 | [Budibase](budibase.md) | 63 | Si quieres formularios, portales y automatizaciones internas con poco código. |
 | 5 | [Teable](teable.md) | 56 | Si quieres una hoja-base de datos rápida sobre PostgreSQL con buen rendimiento en tablas grandes. |
-| 6 | [Grist](grist-core.md) | 53 | Si necesitas una hoja de cálculo relacional con fórmulas en Python. |
+| 6 | [Grist](grist-core.md) | 54 | Si necesitas una hoja de cálculo relacional con fórmulas en Python. |
 | 7 | [Baserow](baserow.md) | 50 | Si buscas una alternativa a Airtable auto-hospedada y fácil de usar. |
 
 ## Acceso, coste y equipo

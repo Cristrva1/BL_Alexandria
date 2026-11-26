@@ -33,31 +33,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio. Éxito: Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.
 - **Combina con:** `cdxgen`, `syft` [16/nube-contenedores], `defectdojo`, `dependency-check`
 
-### OWASP Threat Dragon (`threat-dragon`)
-
-- **Repo:** https://github.com/OWASP/threat-dragon · Apache-2.0 · nivel 1 · 65/100 · recomendado en «Modelado de amenazas»
-- **Qué es:** Proyecto OWASP de código abierto para modelado de amenazas con diagramas.
-- **Cuándo elegirlo:** Casos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura.
-- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull threatdragon/owasp-threat-dragon:stable` — fuente: https://github.com/OWASP/threat-dragon/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo. Éxito: Obtienes un diagrama con amenazas asociadas y un informe exportable.
-- **Combina con:** `asvs` [16/referencias], `cheatsheetseries` [16/referencias], `owasp-top10` [16/referencias]
-- **Alternativas:** `pytm`
-
-### OWASP Dependency-Check (`dependency-check`)
-
-- **Repo:** https://github.com/dependency-check/DependencyCheck · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
-- **Qué es:** Herramienta OWASP de análisis de composición de software que busca vulnerabilidades conocidas en las dependencias de un proyecto.
-- **Cuándo elegirlo:** Casos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría.
-- **Requisitos:** nivel 1: preparación sencilla; Java, Dockerfile, pom.xml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew update && brew install dependency-check` — fuente: https://github.com/dependency-check/DependencyCheck/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio. Éxito: Obtienes un informe HTML con las dependencias y los CVE asociados.
-- **Combina con:** `dependency-track`, `defectdojo`, `osv-scanner` [16/nube-contenedores]
-- **Alternativas:** `osv-scanner`, `dep-scan`
-
 ### cdxgen (`cdxgen`)
 
-- **Repo:** https://github.com/cdxgen/cdxgen · Apache-2.0 · nivel 1 · 62/100 · alternativa en «Generadores de SBOM»
+- **Repo:** https://github.com/cdxgen/cdxgen · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Generadores de SBOM»
 - **Qué es:** Herramienta del proyecto OWASP CycloneDX para generar listas de materiales de software (SBOM) y otras BOM.
 - **Cuándo elegirlo:** Casos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia.
 - **Requisitos:** nivel 1: preparación sencilla; JavaScript, docker-compose.yml, package.json, pyproject.toml; API de IA: no.
@@ -66,9 +44,31 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `dependency-track`
 - **Alternativas:** `syft`
 
+### OWASP Dependency-Check (`dependency-check`)
+
+- **Repo:** https://github.com/dependency-check/DependencyCheck · Apache-2.0 · nivel 1 · 60/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
+- **Qué es:** Herramienta OWASP de análisis de composición de software que busca vulnerabilidades conocidas en las dependencias de un proyecto.
+- **Cuándo elegirlo:** Casos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría.
+- **Requisitos:** nivel 1: preparación sencilla; Java, Dockerfile, pom.xml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew update && brew install dependency-check` — fuente: https://github.com/dependency-check/DependencyCheck/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio. Éxito: Obtienes un informe HTML con las dependencias y los CVE asociados.
+- **Combina con:** `dependency-track`, `defectdojo`, `osv-scanner` [16/nube-contenedores]
+- **Alternativas:** `osv-scanner`, `dep-scan`
+
+### OWASP dep-scan (`dep-scan`)
+
+- **Repo:** https://github.com/owasp-dep-scan/dep-scan · MIT · nivel 1 · 58/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
+- **Qué es:** Proyecto OWASP de auditoría de seguridad y riesgo de dependencias.
+- **Cuándo elegirlo:** Casos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript.
+- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install owasp-depscan` — fuente: https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio. Éxito: Obtienes un informe de vulnerabilidades y riesgos de dependencias.
+- **Combina con:** `cdxgen`, `dependency-track`
+- **Alternativas:** `osv-scanner`, `dependency-check`
+
 ### OWASP Java HTML Sanitizer (`java-html-sanitizer`)
 
-- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 61/100
+- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 58/100
 - **Qué es:** Proyecto OWASP: un saneador de HTML para aplicaciones Java.
 - **Cuándo elegirlo:** Casos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -78,7 +78,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### OWASP pytm (`pytm`)
 
-- **Repo:** https://github.com/OWASP/pytm · MIT · nivel 2 · 60/100 · alternativa en «Modelado de amenazas»
+- **Repo:** https://github.com/OWASP/pytm · MIT · nivel 2 · 58/100 · alternativa en «Modelado de amenazas»
 - **Qué es:** Proyecto OWASP para modelado de amenazas como código en Python.
 - **Cuándo elegirlo:** Casos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Dockerfile, Makefile, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -88,20 +88,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `threat-dragon`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### OWASP dep-scan (`dep-scan`)
-
-- **Repo:** https://github.com/owasp-dep-scan/dep-scan · MIT · nivel 1 · 59/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
-- **Qué es:** Proyecto OWASP de auditoría de seguridad y riesgo de dependencias.
-- **Cuándo elegirlo:** Casos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript.
-- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install owasp-depscan` — fuente: https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio. Éxito: Obtienes un informe de vulnerabilidades y riesgos de dependencias.
-- **Combina con:** `cdxgen`, `dependency-track`
-- **Alternativas:** `osv-scanner`, `dependency-check`
-
 ### Lynis (`lynis`)
 
-- **Repo:** https://github.com/CISOfy/lynis · GPL-3.0 · nivel 1 · 56/100
+- **Repo:** https://github.com/CISOfy/lynis · GPL-3.0 · nivel 1 · 55/100
 - **Qué es:** Herramienta de auditoría de código abierto (GPL-3.0) de CISOfy, con versión Enterprise de pago. Muy madura; ritmo de cambios moderado (último push en septiembre de 2026).
 - **Cuándo elegirlo:** Casos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA).
 - **Requisitos:** nivel 1: preparación sencilla; Shell; API de IA: no.
@@ -112,7 +101,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### OWASP Java Encoder (`owasp-java-encoder`)
 
-- **Repo:** https://github.com/OWASP/owasp-java-encoder · BSD-3-Clause · nivel 2 · 56/100
+- **Repo:** https://github.com/OWASP/owasp-java-encoder · BSD-3-Clause · nivel 2 · 54/100
 - **Qué es:** Proyecto OWASP: un codificador de salida contextual para Java.
 - **Cuándo elegirlo:** Casos: codificar datos de usuario al renderizar plantillas JSP; escapar valores insertados en JavaScript en línea.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -193,16 +182,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `rea` [16/agentes], `ghidra` [16/reversing], `frida` [16/reversing]
 - **Riesgos y avisos:** Sin alternativas declaradas. Ten en cuenta que promociona REA, de los mismos autores. La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces.
 
-### OWASP ASVS (`asvs`)
-
-- **Repo:** https://github.com/OWASP/ASVS · CC-BY-SA-4.0 · nivel 1 · 56/100
-- **Qué es:** Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.
-- **Cuándo elegirlo:** Casos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/ASVS/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto. Éxito: Obtienes la lista de requisitos aplicables con sus identificadores.
-- **Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon` [16/defensa], `owasp-top10`
-
 ### OWASP MASVS (`masvs`)
 
 - **Repo:** https://github.com/OWASP/masvs · CC-BY-SA-4.0 · nivel 1 · 56/100
@@ -213,9 +192,19 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Abre mas.owasp.org/MASVS y revisa el grupo MASVS-STORAGE. Éxito: Obtienes los controles y enlaces a sus pruebas en el MASTG.
 - **Combina con:** `mastg`
 
+### OWASP ASVS (`asvs`)
+
+- **Repo:** https://github.com/OWASP/ASVS · CC-BY-SA-4.0 · nivel 1 · 53/100
+- **Qué es:** Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.
+- **Cuándo elegirlo:** Casos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/ASVS/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto. Éxito: Obtienes la lista de requisitos aplicables con sus identificadores.
+- **Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon` [16/defensa], `owasp-top10`
+
 ### OWASP Top 10 (`owasp-top10`)
 
-- **Repo:** https://github.com/OWASP/Top10 · CC-BY-SA-4.0 · nivel 1 · 56/100
+- **Repo:** https://github.com/OWASP/Top10 · CC-BY-SA-4.0 · nivel 1 · 53/100
 - **Qué es:** Proyecto insignia de OWASP: el documento de referencia sobre los riesgos de seguridad más críticos en aplicaciones web.
 - **Cuándo elegirlo:** Casos: formar a un equipo de desarrollo en los riesgos web más comunes; priorizar una revisión de código por categorías de riesgo.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile, package.json, requirements.txt; API de IA: no.
@@ -223,16 +212,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Abre la edición vigente en owasp.org/Top10 y lee la categoría de control de acceso roto. Éxito: Obtienes la descripción, ejemplos de ataque, prevención y CWE relacionados.
 - **Combina con:** `asvs`, `cheatsheetseries`, `juice-shop` [16/pruebas], `threat-dragon` [16/defensa]
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
-### OWASP AISVS (`aisvs`)
-
-- **Repo:** https://github.com/OWASP/AISVS · CC-BY-SA-4.0 · nivel 1 · 54/100
-- **Qué es:** Proyecto OWASP: el estándar de verificación de seguridad para sistemas de inteligencia artificial.
-- **Cuándo elegirlo:** Casos: definir requisitos de seguridad para una aplicación con LLM y agentes; auditar controles de un pipeline de ML.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/AISVS/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre el repositorio y revisa los capítulos de AISVS aplicables a un proyecto con LLM. Éxito: Obtienes una lista de requisitos con identificadores para verificar.
-- **Combina con:** `asvs`
 
 ### OWASP Top 10 for LLM Applications (`owasp-llm-top10`)
 
@@ -244,6 +223,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Abre la edición vigente en genai.owasp.org y revisa el riesgo de inyección de prompts. Éxito: Obtienes escenarios de ataque y medidas de mitigación.
 - **Combina con:** `garak` [16/agentes], `promptfoo` [23/observabilidad]
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### OWASP AISVS (`aisvs`)
+
+- **Repo:** https://github.com/OWASP/AISVS · CC-BY-SA-4.0 · nivel 1 · 51/100
+- **Qué es:** Proyecto OWASP: el estándar de verificación de seguridad para sistemas de inteligencia artificial.
+- **Cuándo elegirlo:** Casos: definir requisitos de seguridad para una aplicación con LLM y agentes; auditar controles de un pipeline de ML.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/AISVS/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre el repositorio y revisa los capítulos de AISVS aplicables a un proyecto con LLM. Éxito: Obtienes una lista de requisitos con identificadores para verificar.
+- **Combina con:** `asvs`
 
 ### OWASP Developer Guide (`owasp-devguide`)
 
@@ -279,7 +268,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### OWASP AI Testing Guide (`owasp-ai-testing-guide`)
 
-- **Repo:** https://github.com/OWASP/www-project-ai-testing-guide · CC-BY-SA-4.0 · nivel 1 · 42/100
+- **Repo:** https://github.com/OWASP/www-project-ai-testing-guide · CC-BY-SA-4.0 · nivel 1 · 39/100
 - **Qué es:** Proyecto OWASP de documentación: la guía de pruebas para sistemas de inteligencia artificial.
 - **Cuándo elegirlo:** Casos: planificar una evaluación de seguridad de un chatbot con LLM; verificar controles de un pipeline de entrenamiento.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, Gemfile; API de IA: no.
@@ -300,11 +289,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
   # Clone the repository
   git clone https://github.com/NVIDIA/skillspector.git
   cd skillspector
-  
+
   # Create and activate virtual environment
   uv venv .venv && source .venv/bin/activate
   # or: python3 -m venv .venv && source .venv/bin/activate
-  
+
   # Install for production use
   make install
   ```
@@ -330,7 +319,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### security-audit-skill (`security-audit-skill`)
 
-- **Repo:** https://github.com/cloudflare/security-audit-skill · MIT · nivel 2 · 62/100
+- **Repo:** https://github.com/cloudflare/security-audit-skill · MIT · nivel 2 · 60/100
 - **Qué es:** Skill de auditoría de seguridad para agentes de programación, de Cloudflare. Licencia MIT. Es muy popular (~73k estrellas, sin releases) y fue el germen del arnés de descubrimiento de vulnerabilidades que Cloudflare describe en su blog.
 - **Cuándo elegirlo:** Casos: Organizar una revisión de código autorizada; Evaluar la calidad de hallazgos generados por un agente.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente con herramientas y subagentes paralelos; proyecto propio de prueba; hardware prerequisites; API de IA: no; Agente con herramientas y subagentes paralelos; proyecto propio de prueba.
@@ -363,7 +352,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Hayabusa (`hayabusa`)
 
-- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 64/100
+- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 61/100
 - **Qué es:** DFIR timeline/rules (AGPL) de Yamato Security.
 - **Cuándo elegirlo:** Casos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; Rust, Cargo.toml; API de IA: no.

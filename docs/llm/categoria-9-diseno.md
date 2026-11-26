@@ -22,8 +22,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | `excalidraw` | Pizarra virtual open source para diagramas con estilo dibujado a mano… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
 | `penpot` | Plataforma open-source de diseño y prototipado colaborativo, pensada para… | 3 Avanzado | 68 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `onlook` | Editor visual con IA para construir, estilar y editar apps React y Tailwind… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | alternativa |
-| `tldraw` | SDK para construir apps de lienzo infinito en React, como pizarras y… | 2 Intermedio | 55 | tldraw license (no OSI) (source-available) | alternativa |
 | `plasmic` | Builder visual para apps y sitios conectado a tu propia base de código, que… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
+| `tldraw` | SDK para construir apps de lienzo infinito en React, como pizarras y… | 2 Intermedio | 54 | tldraw license (no OSI) (source-available) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -85,18 +85,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `open-design`
 - **Riesgos y avisos:** Alternativas (elige una): open-design. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado.
 
-### tldraw (`tldraw`)
-
-- **Repo:** https://github.com/tldraw/tldraw · tldraw license (no OSI) · nivel 2 · 55/100 · alternativa en «Pizarras y diagramas a mano alzada»
-- **Qué es:** SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open…
-- **Cuándo elegirlo:** Casos: Construir una pizarra de colaboración; Crear un editor de diagramas propio.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; Node; estilos del SDK; licencia para producción según condiciones; hardware prerequisites; API de IA: no; React; Node; estilos del SDK; licencia para producción según condiciones.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm i tldraw` — fuente: https://github.com/tldraw/tldraw/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Muestra un lienzo y añade una forma personalizada en un proyecto de prueba Éxito: Puedes mover, editar y guardar el estado de la forma
-- **Combina con:** `vercel-ai` [3/ts], `ui` [9/componentes], `supabase` [22/infraestructura]
-- **Alternativas:** `excalidraw`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): excalidraw. Licencia: requiere clave para producción. No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia.
-
 ### plasmic (`plasmic`)
 
 - **Repo:** https://github.com/plasmicapp/plasmic · MIT · nivel 2 · 54/100
@@ -107,6 +95,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Diseña una sección de prueba y cárgala desde la aplicación conectada Éxito: Ves el contenido visual y puedes inspeccionar la integración en el código
 - **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `supabase` [22/infraestructura]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Licencia AGPL en `platform/`: revisa obligaciones si la modificas y la ofreces como servicio. El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL.
+
+### tldraw (`tldraw`)
+
+- **Repo:** https://github.com/tldraw/tldraw · tldraw license (no OSI) · nivel 2 · 54/100 · alternativa en «Pizarras y diagramas a mano alzada»
+- **Qué es:** SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open…
+- **Cuándo elegirlo:** Casos: Construir una pizarra de colaboración; Crear un editor de diagramas propio.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; Node; estilos del SDK; licencia para producción según condiciones; hardware prerequisites; API de IA: no; React; Node; estilos del SDK; licencia para producción según condiciones.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm i tldraw` — fuente: https://github.com/tldraw/tldraw/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Muestra un lienzo y añade una forma personalizada en un proyecto de prueba Éxito: Puedes mover, editar y guardar el estado de la forma
+- **Combina con:** `vercel-ai` [3/ts], `ui` [9/componentes], `supabase` [22/infraestructura]
+- **Alternativas:** `excalidraw`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): excalidraw. Licencia: requiere clave para producción. No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

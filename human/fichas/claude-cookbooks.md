@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **Cookbooks y ejemplos de apps con LLM**: Claude Cookbooks ocupa la posici
 |---:|---|---:|---|
 | 1 | [Awesome LLM Apps](awesome-llm-apps.md) ⭐ recomendado | 75 | Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
 | 2 | [OpenAI Cookbook](openai-cookbook.md) | 58 | Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. |
-| 3 | **Claude Cookbooks** (esta ficha) | 56 | Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
+| 3 | **Claude Cookbooks** (esta ficha) | 53 | Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
 
 ## Acceso, coste y equipo
 

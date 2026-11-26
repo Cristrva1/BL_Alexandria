@@ -23,8 +23,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `baileys` | whatsapp | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin… | 2 Intermedio | 67 | MIT (OSI permisiva) | alternativa |
 | `waha` | whatsapp | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | 1 Básico | 62 | Apache-2.0 (OSI permisiva) | alternativa |
 | `evolution-api` | whatsapp | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con… | 3 Avanzado | 54 | Apache-2.0 con condiciones adicionales (source-available) | alternativa |
-| `signal-cli` | whatsapp | Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para… | 2 Intermedio | 50 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `whatsmeow` | whatsapp | Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp… | 2 Intermedio | 49 | MPL-2.0 (OSI copyleft) | alternativa |
+| `signal-cli` | whatsapp | Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `whatsapp-agentkit` | whatsapp | Instrucciones y scripts que guían a Claude Code para construir un bot de… | 2 Intermedio | 41 | MIT (OSI permisiva) | sin grupo |
 | `discord-js` | chatbots | Módulo Node.js de referencia para interactuar con la API de Discord y crear… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `python-telegram-bot` | chatbots | Biblioteca Python asíncrona de referencia para crear bots de Telegram, con… | 2 Intermedio | 68 | LGPL-3.0 (OSI copyleft) | sin grupo |
@@ -54,7 +54,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   git clone https://github.com/rmyndharis/OpenWA.git
   cd OpenWA
   docker compose -f docker-compose.dev.yml up -d
-  
+
   # Access (the dashboard is bundled into the API image and served on the same port)
   # Dashboard: http://localhost:2785
   # API: http://localhost:2785/api
@@ -112,17 +112,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `whatsapp-web-js`, `baileys`, `waha`, `whatsmeow`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): whatsapp-web-js, waha. La conexión Baileys usa WhatsApp Web de forma no oficial: riesgo de bloqueo del número y de incumplir los…. La conexión WhatsApp Web y Meta Cloud API tienen requisitos distintos; una clave apikey de Evolution no es una clave de modelo.
 
-### signal-cli (`signal-cli`)
-
-- **Repo:** https://github.com/AsamK/signal-cli · GPL-3.0 · nivel 2 · 50/100
-- **Qué es:** Cliente no oficial de código abierto (GPL-3.0) mantenido por AsamK. Maduro y activo; sigue los cambios del protocolo de Signal.
-- **Cuándo elegirlo:** Casos: enviar avisos de un servidor a tu móvil por Signal; conectar un asistente o bot a Signal mediante su API JSON-RPC.
-- **Requisitos:** nivel 2: preparación media; Java; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/AsamK/signal-cli/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga la release (JRE 25 o binario nativo), vincula signal-cli como dispositivo secundario y envía un mensaje de prueba a ti mismo. Éxito: El mensaje llega a tu app de Signal.
-- **Combina con:** `openclaw` [21/asistentes], `activepieces` [1/motores], `uptime-kuma` [22/infraestructura]
-- **Riesgos y avisos:** Hay envoltorios REST de la comunidad (no catalogados) sobre signal-cli.
-
 ### whatsmeow (`whatsmeow`)
 
 - **Repo:** https://github.com/tulir/whatsmeow · MPL-2.0 · nivel 2 · 49/100 · alternativa en «APIs y librerías no oficiales de WhatsApp»
@@ -134,6 +123,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `activepieces` [1/motores], `ollama` [8/motores], `chatwoot` [18/crm]
 - **Alternativas:** `whatsapp-web-js`, `baileys`, `waha`, `evolution-api`
 - **Riesgos y avisos:** Cliente no oficial: no lo uses para mensajes masivos ni no solicitados. Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta.
+
+### signal-cli (`signal-cli`)
+
+- **Repo:** https://github.com/AsamK/signal-cli · GPL-3.0 · nivel 2 · 47/100
+- **Qué es:** Cliente no oficial de código abierto (GPL-3.0) mantenido por AsamK. Maduro y activo; sigue los cambios del protocolo de Signal.
+- **Cuándo elegirlo:** Casos: enviar avisos de un servidor a tu móvil por Signal; conectar un asistente o bot a Signal mediante su API JSON-RPC.
+- **Requisitos:** nivel 2: preparación media; Java; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/AsamK/signal-cli/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga la release (JRE 25 o binario nativo), vincula signal-cli como dispositivo secundario y envía un mensaje de prueba a ti mismo. Éxito: El mensaje llega a tu app de Signal.
+- **Combina con:** `openclaw` [21/asistentes], `activepieces` [1/motores], `uptime-kuma` [22/infraestructura]
+- **Riesgos y avisos:** Hay envoltorios REST de la comunidad (no catalogados) sobre signal-cli.
 
 ### whatsapp-agentkit (`whatsapp-agentkit`)
 

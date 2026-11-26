@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.

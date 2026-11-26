@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 > ⚠️ **Licencia y costes:** Alcance de la recomendación: Community Edition (AGPL-3.0). El repositorio incluye archivos bajo la Fossorial Commercial License; no se extiende a ellos la licencia comunitaria.
 
 ## ¿Qué es?

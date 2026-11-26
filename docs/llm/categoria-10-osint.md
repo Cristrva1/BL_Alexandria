@@ -23,8 +23,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `theharvester` | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 2 Intermedio | 66 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `maigret` | Recopila un dossier sobre una persona a partir de un nombre de usuario… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
 | `osiris` | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
-| `pythia` | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 50 | MIT (OSI permisiva) | sin grupo |
-| `recon-ng` | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pythia` | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 47 | MIT (OSI permisiva) | sin grupo |
+| `recon-ng` | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 44 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -106,7 +106,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Pythia (`pythia`)
 
-- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 50/100
+- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 47/100
 - **Qué es:** PYTHIA, plataforma local de predicción geopolítica de @jangles-byte que fusiona MiroFish (motor de predicción por inteligencia de enjambre) y Osiris (panel de inteligencia global). Licencia MIT.
 - **Cuándo elegirlo:** Casos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos.
 - **Requisitos:** nivel 3: preparación pesada; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script; hardware prerequisites; API de IA: no; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script.
@@ -123,7 +123,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Recon-ng (`recon-ng`)
 
-- **Repo:** https://github.com/lanmaster53/recon-ng · GPL-3.0 · nivel 2 · 47/100
+- **Repo:** https://github.com/lanmaster53/recon-ng · GPL-3.0 · nivel 2 · 44/100
 - **Qué es:** Framework de reconocimiento de código abierto (GPL-3.0) creado por Tim Tomes (lanmaster53). Maduro, con ritmo de cambios bajo (último push en octubre de 2026).
 - **Cuándo elegirlo:** Casos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API.
 - **Requisitos:** nivel 2: preparación media; Python, Dockerfile, docker-compose.yml; API de IA: no.

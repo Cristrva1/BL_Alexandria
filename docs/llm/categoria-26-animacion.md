@@ -20,18 +20,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `motion` | Librería de animación declarativa para React/JS (antes Framer Motion) que añade… | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
 | `react-three-fiber` | Renderer de React para three.js que expresa escenas 3D como componentes… | 2 Intermedio | 76 | MIT (OSI permisiva) | sin grupo |
-| `pixijs` | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
-| `three.js` | Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y… | 3 Avanzado | 69 | MIT (OSI permisiva) | recomendado |
+| `pixijs` | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para… | 2 Intermedio | 73 | MIT (OSI permisiva) | sin grupo |
+| `three.js` | Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y… | 3 Avanzado | 70 | MIT (OSI permisiva) | recomendado |
 | `babylonjs` | Motor 3D completo para la web de Microsoft y la comunidad, con física… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `playcanvas` | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y… | 2 Intermedio | 65 | MIT (OSI permisiva) | alternativa |
-| `pixelfx` | Colección de efectos de pixel art hechos con código y una skill para ayudar a… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
-| `animejs` | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `regl` | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
+| `playcanvas` | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y… | 2 Intermedio | 66 | MIT (OSI permisiva) | alternativa |
+| `pixelfx` | Colección de efectos de pixel art hechos con código y una skill para ayudar a… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `animejs` | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | 2 Intermedio | 61 | MIT (OSI permisiva) | alternativa |
+| `regl` | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
 | `gsap` | Librería de animación de alto rendimiento para la web, capaz de orquestar… | 2 Intermedio | 55 | — (sin licencia detectada) | alternativa |
 | `scenejs` | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de… | 2 Intermedio | 50 | MIT (OSI permisiva) | sin grupo |
-| `pencil` | Aplicación para crear animación 2D dibujada a mano mediante herramientas de… | 1 Básico | 47 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `pencil` | Aplicación para crear animación 2D dibujada a mano mediante herramientas de… | 1 Básico | 48 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `zdog` | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones… | 2 Intermedio | 47 | — (sin licencia detectada) | sin grupo |
 | `webgl-noise` | Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
-| `zdog` | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones… | 2 Intermedio | 46 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -67,7 +67,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PixiJS (`pixijs`)
 
-- **Repo:** https://github.com/pixijs/pixijs · MIT · nivel 2 · 72/100
+- **Repo:** https://github.com/pixijs/pixijs · MIT · nivel 2 · 73/100
 - **Qué es:** Biblioteca de código abierto (MIT) para gráficos 2D en la web, una de las más usadas para juegos y experiencias interactivas en navegador. Activa (v8 con WebGPU).
 - **Cuándo elegirlo:** Casos: crear un juego 2D o una experiencia interactiva para navegador; dibujar miles de elementos animados en una visualización web.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -78,7 +78,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### three.js (`three.js`)
 
-- **Repo:** https://github.com/mrdoob/three.js · MIT · nivel 3 · 69/100 · recomendado en «Motores 3D para la web»
+- **Repo:** https://github.com/mrdoob/three.js · MIT · nivel 3 · 70/100 · recomendado en «Motores 3D para la web»
 - **Qué es:** three.js, biblioteca JavaScript 3D de propósito general, de @mrdoob y comunidad. Licencia MIT. Es muy madura (~119k estrellas, r187).
 - **Cuándo elegirlo:** Casos: Crear un visor 3D web; Prototipar una escena interactiva.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, necesita GPU; Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible; hardware prerequisites; API de IA: no; Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible.
@@ -102,7 +102,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PlayCanvas Engine (`playcanvas`)
 
-- **Repo:** https://github.com/playcanvas/engine · MIT · nivel 2 · 65/100 · alternativa en «Motores 3D para la web»
+- **Repo:** https://github.com/playcanvas/engine · MIT · nivel 2 · 66/100 · alternativa en «Motores 3D para la web»
 - **Qué es:** Motor gráfico de código abierto (MIT) de PlayCanvas (propiedad de Snap Inc.). Lo acompañan un editor colaborativo en la nube (servicio con planes) y herramientas como SuperSplat. Activo.
 - **Cuándo elegirlo:** Casos: publicar una escena 3D o un escaneo con Gaussian splats en una web; crear un juego ligero que funcione en cualquier navegador y móvil.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -114,7 +114,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### pixelfx (`pixelfx`)
 
-- **Repo:** https://github.com/patch-gg/pixelfx · MIT · nivel 2 · 63/100
+- **Repo:** https://github.com/patch-gg/pixelfx · MIT · nivel 2 · 64/100
 - **Qué es:** pixelfx, colección de 244 efectos y animaciones de pixel art hechos con código, de patch-gg. Licencia MIT. Es muy reciente (octubre de 2026) y ya tiene ~7.6k estrellas.
 - **Cuándo elegirlo:** Casos: Añadir un efecto a un juego; Preparar una hoja de sprites.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Proyecto JavaScript o motor que admita sprites; Claude Code opcional; hardware prerequisites; API de IA: opcional; Proyecto JavaScript o motor que admita sprites; Claude Code opcional.
@@ -125,7 +125,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Anime.js (`animejs`)
 
-- **Repo:** https://github.com/juliangarnier/anime · MIT · nivel 2 · 60/100 · alternativa en «Animación web en JavaScript»
+- **Repo:** https://github.com/juliangarnier/anime · MIT · nivel 2 · 61/100 · alternativa en «Animación web en JavaScript»
 - **Qué es:** Anime.js, motor de animación JavaScript ligero, de @juliangarnier. Licencia MIT. Es maduro (~75k estrellas, v4.5.0) y se financia con patrocinios.
 - **Cuándo elegirlo:** Casos: Mostrar una transición de estado; Animar un SVG sencillo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Proyecto JavaScript; DOM o SVG de prueba; hardware prerequisites; API de IA: no; Proyecto JavaScript; DOM o SVG de prueba.
@@ -137,7 +137,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### regl (`regl`)
 
-- **Repo:** https://github.com/regl-project/regl · MIT · nivel 2 · 57/100
+- **Repo:** https://github.com/regl-project/regl · MIT · nivel 2 · 58/100
 - **Qué es:** regl, biblioteca funcional para WebGL, de regl-project. Licencia MIT. Es madura y estable (~5.6k estrellas).
 - **Cuándo elegirlo:** Casos: Prototipar visualización acelerada; Aprender render funcional.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Node; proyecto WebGL; nociones de shaders; hardware prerequisites; API de IA: no; Node; proyecto WebGL; nociones de shaders.
@@ -171,7 +171,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### pencil (`pencil`)
 
-- **Repo:** https://github.com/pencil2d/pencil · GPL-2.0 · nivel 1 · 47/100
+- **Repo:** https://github.com/pencil2d/pencil · GPL-2.0 · nivel 1 · 48/100
 - **Qué es:** Pencil2D, software libre de animación 2D tradicional dibujada a mano, desarrollado por voluntarios. Licencia GPL-2.0. Tiene ~1.9k estrellas y su última release es v0.7.2 (marzo de 2026).
 - **Cuándo elegirlo:** Casos: Aprender animación dibujada a mano; Crear una prueba de movimiento 2D.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Instalador de tu sistema; tableta opcional; carpeta de proyecto; hardware prerequisites; API de IA: no; Instalador de tu sistema; tableta opcional; carpeta de proyecto.
@@ -179,6 +179,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Dibuja tres fotogramas sencillos, ajusta su duración y reproduce el movimiento Éxito: Puedes guardar el proyecto y exportar una animación corta
 - **Combina con:** `ffmpeg` [12/edicion], `blender` [26/creacion-3d], `pixelfx`
 - **Riesgos y avisos:** Sin alternativas declaradas. Pencil2D es un editor de animación 2D tradicional; no debe confundirse con herramientas IA o editores de UI que comparten nombre.
+
+### zdog (`zdog`)
+
+- **Repo:** https://github.com/metafizzy/zdog · — · nivel 2 · 47/100
+- **Qué es:** Zdog, motor pseudo-3D «redondo, plano y amigable para diseñadores», de Metafizzy. El README indica licencia MIT, pero GitHub no detecta archivo de licencia. Tiene ~11k estrellas y no se actualiza desde julio de 2023 (v1.1.1).
+- **Cuándo elegirlo:** Casos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Página de prueba; JavaScript; canvas o SVG; hardware prerequisites; API de IA: no; Página de prueba; JavaScript; canvas o SVG.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install zdog` — fuente: https://github.com/metafizzy/zdog/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente Éxito: Puedes reconocer las formas y su orden
+- **Combina con:** `animejs`, `gsap`, `three.js`, `scenejs`
+- **Riesgos y avisos:** Sin alternativas declaradas. Inactivo. Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado.
 
 ### webgl-noise (`webgl-noise`)
 
@@ -190,17 +201,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Integra una función de ruido y cambia su escala para observar el patrón Éxito: Puedes reconocer un patrón procedural sin cargar una textura
 - **Combina con:** `three.js`, `regl`, `react-three-fiber`
 - **Riesgos y avisos:** Sin alternativas declaradas. El autor remite a su clon stegu/webgl-noise para mantenimiento; es código de shader y no una aplicación generativa de IA.
-
-### zdog (`zdog`)
-
-- **Repo:** https://github.com/metafizzy/zdog · — · nivel 2 · 46/100
-- **Qué es:** Zdog, motor pseudo-3D «redondo, plano y amigable para diseñadores», de Metafizzy. El README indica licencia MIT, pero GitHub no detecta archivo de licencia. Tiene ~11k estrellas y no se actualiza desde julio de 2023 (v1.1.1).
-- **Cuándo elegirlo:** Casos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Página de prueba; JavaScript; canvas o SVG; hardware prerequisites; API de IA: no; Página de prueba; JavaScript; canvas o SVG.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install zdog` — fuente: https://github.com/metafizzy/zdog/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente Éxito: Puedes reconocer las formas y su orden
-- **Combina con:** `animejs`, `gsap`, `three.js`, `scenejs`
-- **Riesgos y avisos:** Sin alternativas declaradas. Inactivo. Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

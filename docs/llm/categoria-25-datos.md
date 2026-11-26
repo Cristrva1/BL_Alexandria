@@ -34,7 +34,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `ibis` | Biblioteca Python de dataframes portable: escribe la consulta una vez y… | 2 Intermedio | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `hudi` | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas… | 3 Avanzado | 51 | Apache-2.0 (OSI permisiva) | alternativa |
 | `awesome-bigdata` | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 46 | MIT (OSI permisiva) | sin grupo |
-| `globalbuildingatlas` | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 35 | MIT + Commons Clause (source-available) | sin grupo |
+| `globalbuildingatlas` | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 32 | MIT + Commons Clause (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -224,7 +224,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GlobalBuildingAtlas (`globalbuildingatlas`)
 
-- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 35/100
+- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 32/100
 - **Qué es:** GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra…
 - **Cuándo elegirlo:** Casos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa; hardware prerequisites; API de IA: no; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa.

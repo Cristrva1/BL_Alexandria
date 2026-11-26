@@ -18,37 +18,20 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=4
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `last30days-skill` | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket… | 1 Básico | 73 | MIT (OSI permisiva) | sin grupo |
 | `rsshub` | Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia… | 1 Básico | 73 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `changedetection` | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | 1 Básico | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `last30days-skill` | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
 | `searxng` | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal… | 1 Básico | 69 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `agent-reach` | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
 | `archivebox` | Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
 | `freshrss` | Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps… | 1 Básico | 65 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `agent-reach` | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube… | 1 Básico | 64 | MIT (OSI permisiva) | sin grupo |
 | `miniflux` | Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad… | 1 Básico | 58 | Apache-2.0 (OSI permisiva) | alternativa |
 | `wallabag` | Aplicación autoalojada para guardar páginas web y leerlas más tarde sin… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `vane` | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
+| `vane` | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity… | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
-
-### last30days (`last30days-skill`)
-
-- **Repo:** https://github.com/mvanhorn/last30days-skill · MIT · nivel 1 · 73/100
-- **Qué es:** Skill de investigación que resume lo ocurrido en los últimos 30 días sobre un tema a partir de señales sociales (votos, likes, mercados de predicción), de @mvanhorn. Licencia MIT. Es muy popular y activa (~68k estrellas, v4.0.5).
-- **Cuándo elegirlo:** Casos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta.
-- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; dependencias de los canales; credenciales solo donde se indiquen; hardware prerequisites; API de IA: opcional; Agente compatible; dependencias de los canales; credenciales solo donde se indiquen.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/mvanhorn/last30days-skill/blob/main/README.md
-
-  ```bash
-  /plugin marketplace add mvanhorn/last30days-skill
-  /plugin install last30days
-  ```
-- **Primera prueba propuesta (no ejecutada):** Investiga un tema concreto y exige fechas, enlaces y distinción entre opinión y evidencia Éxito: Puedes abrir las fuentes y verificar que corresponden al periodo solicitado
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `agent-reach`
-- **Alternativas:** `social-media-research-skills`
-- **Riesgos y avisos:** Alternativas (elige una): social-media-research-skills. Investigar a personas concretas exige cuidado con la privacidad. No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM.
 
 ### RSSHub (`rsshub`)
 
@@ -76,6 +59,23 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `claude-code` [20/terminal], `activepieces` [1/motores], `archivebox`, `cloud-mail` [18/marketing], `huginn` [1/motores]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas. MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros.
 
+### last30days (`last30days-skill`)
+
+- **Repo:** https://github.com/mvanhorn/last30days-skill · MIT · nivel 1 · 70/100
+- **Qué es:** Skill de investigación que resume lo ocurrido en los últimos 30 días sobre un tema a partir de señales sociales (votos, likes, mercados de predicción), de @mvanhorn. Licencia MIT. Es muy popular y activa (~68k estrellas, v4.0.5).
+- **Cuándo elegirlo:** Casos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta.
+- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; dependencias de los canales; credenciales solo donde se indiquen; hardware prerequisites; API de IA: opcional; Agente compatible; dependencias de los canales; credenciales solo donde se indiquen.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/mvanhorn/last30days-skill/blob/main/README.md
+
+  ```bash
+  /plugin marketplace add mvanhorn/last30days-skill
+  /plugin install last30days
+  ```
+- **Primera prueba propuesta (no ejecutada):** Investiga un tema concreto y exige fechas, enlaces y distinción entre opinión y evidencia Éxito: Puedes abrir las fuentes y verificar que corresponden al periodo solicitado
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `agent-reach`
+- **Alternativas:** `social-media-research-skills`
+- **Riesgos y avisos:** Alternativas (elige una): social-media-research-skills. Investigar a personas concretas exige cuidado con la privacidad. No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM.
+
 ### SearXNG (`searxng`)
 
 - **Repo:** https://github.com/searxng/searxng · AGPL-3.0 · nivel 1 · 69/100
@@ -86,17 +86,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Realiza una búsqueda y compara las fuentes de dos resultados Éxito: Ves resultados agregados y puedes abrir su origen
 - **Combina con:** `gpt-researcher` [21/research], `open-webui` [8/chats], `vane`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. No expongas tu instancia sin limitación de peticiones. La privacidad del metabuscador no vuelve locales las consultas enviadas a motores externos.
-
-### Agent-Reach (`agent-reach`)
-
-- **Repo:** https://github.com/Panniantong/Agent-Reach · MIT · nivel 1 · 67/100
-- **Qué es:** Herramienta para que agentes de IA de línea de comandos busquen y lean plataformas a las que no llegan solos (X, Reddit, YouTube, Xiaohongshu y otras), de @Panniantong. Licencia MIT.
-- **Cuándo elegirlo:** Casos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido.
-- **Requisitos:** nivel 1: preparación sencilla; Agente con terminal; uv; sesiones de sitios solo cuando corresponda; hardware prerequisites; API de IA: opcional; Agente con terminal; uv; sesiones de sitios solo cuando corresponda.
-- **Instalación (documentada en la fuente; no ejecutada):** `uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip` — fuente: https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md
-- **Primera prueba propuesta (no ejecutada):** Lista los canales y lee un README público de GitHub antes de añadir canales opcionales Éxito: Puedes distinguir canales disponibles, autenticados y experimentales
-- **Combina con:** `claude-code` [20/terminal], `openclaw` [21/asistentes], `last30days-skill`
-- **Riesgos y avisos:** Sin alternativas declaradas. Instala solo desde GitHub (hay un paquete homónimo en PyPI que no es este). El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial.
 
 ### ArchiveBox (`archivebox`)
 
@@ -120,6 +109,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `rsshub`, `wallabag`, `coolify` [22/infraestructura]
 - **Alternativas:** `miniflux`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): miniflux.
+
+### Agent-Reach (`agent-reach`)
+
+- **Repo:** https://github.com/Panniantong/Agent-Reach · MIT · nivel 1 · 64/100
+- **Qué es:** Herramienta para que agentes de IA de línea de comandos busquen y lean plataformas a las que no llegan solos (X, Reddit, YouTube, Xiaohongshu y otras), de @Panniantong. Licencia MIT.
+- **Cuándo elegirlo:** Casos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido.
+- **Requisitos:** nivel 1: preparación sencilla; Agente con terminal; uv; sesiones de sitios solo cuando corresponda; hardware prerequisites; API de IA: opcional; Agente con terminal; uv; sesiones de sitios solo cuando corresponda.
+- **Instalación (documentada en la fuente; no ejecutada):** `uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip` — fuente: https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md
+- **Primera prueba propuesta (no ejecutada):** Lista los canales y lee un README público de GitHub antes de añadir canales opcionales Éxito: Puedes distinguir canales disponibles, autenticados y experimentales
+- **Combina con:** `claude-code` [20/terminal], `openclaw` [21/asistentes], `last30days-skill`
+- **Riesgos y avisos:** Sin alternativas declaradas. Instala solo desde GitHub (hay un paquete homónimo en PyPI que no es este). El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial.
 
 ### Miniflux (`miniflux`)
 
@@ -146,7 +146,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Vane (`vane`)
 
-- **Repo:** https://github.com/ItzCrazyKns/Vane · MIT · nivel 1 · 57/100
+- **Repo:** https://github.com/ItzCrazyKns/Vane · MIT · nivel 1 · 54/100
 - **Qué es:** Motor de respuestas con IA centrado en la privacidad que se ejecuta en tu propio equipo, de @ItzCrazyKns. Licencia MIT. Es popular (~38k estrellas, v1.12.2) y su último cambio es de septiembre de 2026.
 - **Cuándo elegirlo:** Casos: Investigar un tema con citas; Consultar la web usando Ollama.
 - **Requisitos:** nivel 1: preparación sencilla; Docker; modelo local accesible o clave de proveedor; hardware prerequisites; API de IA: depends; Docker; modelo local accesible o clave de proveedor.

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **Animación web en JavaScript**: Anime.js ocupa la posición 2 de 3 (alte
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [motion](motion.md) ⭐ recomendado | 77 | Si buscas esto: librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
-| 2 | **Anime.js** (esta ficha) | 60 | Si buscas esto: motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
+| 2 | **Anime.js** (esta ficha) | 61 | Si buscas esto: motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
 | 3 | [GSAP](gsap.md) | 55 | Si buscas esto: librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
 ## Acceso, coste y equipo

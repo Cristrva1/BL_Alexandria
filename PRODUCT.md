@@ -40,7 +40,7 @@ Nombre: Biblioteca de Alexandría. Contenido en español claro, orientado a pers
 
 ## Evidence on Hand
 
-El catálogo contiene 679 proyectos y tres entradas auxiliares. La entrada principal muestra 13 áreas de trabajo y tres colecciones de configuración (Claude Code, Codex y Antigravity), con 92 subcategorías prácticas. El usuario pidió priorizar las áreas de trabajo en la portada. Se conservan las 32 secciones técnicas, sus enlaces y las 22 rutas por objetivo. Los proyectos pueden aparecer en varios temas sin duplicar sus fichas; las cifras por área no se suman para obtener el total. Las fuentes primarias y los perfiles de acceso se conservan. La revisión documental no equivale a pruebas de instalación, rendimiento o funcionamiento de todos los proyectos.
+Al corte del 25 de noviembre de 2026 hay 968 proyectos públicos y dos entradas auxiliares. La portada reúne 14 áreas de trabajo y tres colecciones de configuración con 110 temas prácticos. Cada proyecto puede aparecer en varias áreas. El índice técnico conserva sus 32 categorías y hay 22 rutas por objetivo. Los totales vigentes se generan desde los índices y se muestran en el README. Cada ficha conserva sus fuentes y el alcance de la revisión.
 
 ## Product Principles
 

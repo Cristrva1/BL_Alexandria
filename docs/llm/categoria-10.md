@@ -32,16 +32,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `d3` | graficos | Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y… | 2 Intermedio | 70 | ISC (OSI permisiva) | alternativa |
 | `recharts` | graficos | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 69 | MIT (OSI permisiva) | alternativa |
 | `chart-js` | graficos | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
-| `uplot` | graficos | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
+| `uplot` | graficos | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `awesome-dataviz` | recursos | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 58 | CC-BY-4.0 (OSI permisiva) | sin grupo |
-| `data-analyst-roadmap` | recursos | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 41 | MIT (OSI permisiva) | sin grupo |
+| `data-analyst-roadmap` | recursos | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 38 | MIT (OSI permisiva) | sin grupo |
 | `gods-eye-view` | osint | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 68 | MIT (solo código) (OSI permisiva) | recomendado |
 | `sherlock` | osint | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios… | 1 Básico | 67 | MIT (OSI permisiva) | recomendado |
 | `theharvester` | osint | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 2 Intermedio | 66 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `maigret` | osint | Recopila un dossier sobre una persona a partir de un nombre de usuario… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
 | `osiris` | osint | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
-| `pythia` | osint | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 50 | MIT (OSI permisiva) | sin grupo |
-| `recon-ng` | osint | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pythia` | osint | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 47 | MIT (OSI permisiva) | sin grupo |
+| `recon-ng` | osint | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 44 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `leaflet` | geoespacial | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de… | 2 Intermedio | 70 | BSD-2-Clause (OSI permisiva) | recomendado |
 | `maplibre` | geoespacial | Biblioteca abierta de mapas vectoriales interactivos en el navegador con… | 2 Intermedio | 67 | BSD-3-Clause (OSI permisiva) | alternativa |
 | `kepler.gl` | geoespacial | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
@@ -175,7 +175,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   pip install wrenai
-  
+
   npx skills add Canner/WrenAI
   ```
 - **Primera prueba propuesta (no ejecutada):** Pide usar la muestra jaffle_shop y explica una métrica antes de generar su consulta Éxito: Puedes revisar definición, SQL y resultado sobre la muestra
@@ -237,7 +237,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### uPlot (`uplot`)
 
-- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 59/100
+- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 56/100
 - **Qué es:** μPlot, librería compacta de gráficos de series temporales sobre Canvas 2D, de @leeoniya. Licencia MIT. Es madura (~11k estrellas, 1.6.32).
 - **Cuándo elegirlo:** Casos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript; datos temporales ordenados; estilos y build distribuidos; hardware prerequisites; API de IA: no; JavaScript; datos temporales ordenados; estilos y build distribuidos.
@@ -259,7 +259,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### data-analyst-roadmap (`data-analyst-roadmap`)
 
-- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 41/100
+- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 38/100
 - **Qué es:** Hoja de ruta para aprender análisis de datos, de @mtahiraslan. Licencia MIT. Es pequeña (~1k estrellas) y su último cambio es de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tiempo de estudio; una tabla pequeña de práctica; hardware prerequisites; API de IA: no; Navegador; tiempo de estudio; una tabla pequeña de práctica.
@@ -344,7 +344,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Pythia (`pythia`)
 
-- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 50/100
+- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 47/100
 - **Qué es:** PYTHIA, plataforma local de predicción geopolítica de @jangles-byte que fusiona MiroFish (motor de predicción por inteligencia de enjambre) y Osiris (panel de inteligencia global). Licencia MIT.
 - **Cuándo elegirlo:** Casos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos.
 - **Requisitos:** nivel 3: preparación pesada; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script; hardware prerequisites; API de IA: no; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script.
@@ -361,7 +361,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Recon-ng (`recon-ng`)
 
-- **Repo:** https://github.com/lanmaster53/recon-ng · GPL-3.0 · nivel 2 · 47/100
+- **Repo:** https://github.com/lanmaster53/recon-ng · GPL-3.0 · nivel 2 · 44/100
 - **Qué es:** Framework de reconocimiento de código abierto (GPL-3.0) creado por Tim Tomes (lanmaster53). Maduro, con ritmo de cambios bajo (último push en octubre de 2026).
 - **Cuándo elegirlo:** Casos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API.
 - **Requisitos:** nivel 2: preparación media; Python, Dockerfile, docker-compose.yml; API de IA: no.

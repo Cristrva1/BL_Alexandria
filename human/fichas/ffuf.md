@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -54,10 +54,10 @@ Grupo **Fuzzing de rutas y contenido web**: ffuf ocupa la posición 1 de 4 (reco
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **ffuf** (esta ficha) ⭐ recomendado | 69 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
-| 2 | [dirsearch](dirsearch.md) | 61 | Si prefieres una herramienta en Python con listas y reportes listos. |
-| 3 | [Gobuster](gobuster.md) | 59 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
-| 4 | [feroxbuster](feroxbuster.md) | 58 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
+| 1 | **ffuf** (esta ficha) ⭐ recomendado | 66 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
+| 2 | [dirsearch](dirsearch.md) | 58 | Si prefieres una herramienta en Python con listas y reportes listos. |
+| 3 | [feroxbuster](feroxbuster.md) | 58 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
+| 4 | [Gobuster](gobuster.md) | 56 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
 
 ## Acceso, coste y equipo
 

@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación media; se instala dentro de un agente (skill, plugin o MCP); necesita GPU
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.

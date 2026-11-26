@@ -96,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```shell
   # Download the compose file to the current directory.
   curl -LO https://github.com/knadh/listmonk/raw/master/docker-compose.yml
-  
+
   # Run the services in the background.
   docker compose up -d
   ```

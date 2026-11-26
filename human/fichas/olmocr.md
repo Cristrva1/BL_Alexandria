@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; necesita GPU
 
-**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,9 +47,9 @@ Grupo **OCR de documentos**: olmOCR ocupa la posición 4 de 4 (alternativa). Ord
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [PaddleOCR](paddleocr.md) ⭐ recomendado | 72 | Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación. |
-| 2 | [Unlimited-OCR](unlimited-ocr.md) | 65 | Si quieres parsear documentos largos de una sola pasada con visión. |
-| 3 | [Tesseract](tesseract.md) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
-| 4 | **olmOCR** (esta ficha) | 53 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
+| 2 | [Tesseract](tesseract.md) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
+| 3 | [Unlimited-OCR](unlimited-ocr.md) | 62 | Si quieres parsear documentos largos de una sola pasada con visión. |
+| 4 | **olmOCR** (esta ficha) | 50 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
 
 ## Acceso, coste y equipo
 

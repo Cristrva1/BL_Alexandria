@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Una aplicación con interfaz para convertir voz grabada en texto, basada en Whisper y otros backends compatibles.

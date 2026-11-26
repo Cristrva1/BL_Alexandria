@@ -18,12 +18,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `storybook` | componentes | Taller de frontend para construir, documentar y probar componentes y páginas de… | 2 Intermedio | 81 | MIT (OSI permisiva) | sin grupo |
+| `storybook` | componentes | Taller de frontend para construir, documentar y probar componentes y páginas de… | 2 Intermedio | 80 | MIT (OSI permisiva) | sin grupo |
 | `ant-design` | componentes | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
 | `tanstack-query` | componentes | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor… | 2 Intermedio | 74 | MIT (OSI permisiva) | recomendado |
 | `ui` | componentes | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives… | 2 Intermedio | 73 | MIT (OSI permisiva) | alternativa |
+| `astryx` | componentes | Añade a una web componentes y temas de un sistema de diseño que puedes adaptar… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
 | `mui` | componentes | Librería de componentes React completa que implementa Material Design de Google. | 2 Intermedio | 70 | MIT (OSI permisiva) | alternativa |
-| `lucide` | componentes | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y… | 2 Intermedio | 66 | ISC (OSI permisiva) | sin grupo |
+| `lucide` | componentes | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y… | 2 Intermedio | 65 | ISC (OSI permisiva) | sin grupo |
 | `chakra-ui` | componentes | Sistema de componentes React accesibles para crear productos y sistemas de… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
 | `heroui` | componentes | Librería de componentes React accesibles y lista para producción (React Aria +… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | alternativa |
 | `react-bits` | componentes | La mayor colección open source de componentes React animados e interactivos… | 2 Intermedio | 59 | MIT + Commons Clause (source-available) | recomendado |
@@ -32,8 +33,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | `mantine` | componentes | Biblioteca de componentes React completa con más de 100 componentes, hooks… | 2 Intermedio | 58 | MIT (OSI permisiva) | alternativa |
 | `radix-primitives` | componentes | Componentes React sin estilos y accesibles para construir sistemas de diseño… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
 | `magicui` | componentes | Librería de componentes UI visualmente atractivos (animaciones, efectos… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
-| `astryx` | componentes | Añade a una web componentes y temas de un sistema de diseño que puedes adaptar… | 2 Intermedio | — | MIT | sin grupo |
-| `tailwindcss` | estilos | Framework CSS utility-first para construir interfaces rápido y consistente… | 2 Intermedio | 77 | MIT (OSI permisiva) | sin grupo |
+| `tailwindcss` | estilos | Framework CSS utility-first para construir interfaces rápido y consistente… | 2 Intermedio | 76 | MIT (OSI permisiva) | sin grupo |
 | `daisyui` | estilos | La librería de componentes más popular para Tailwind CSS, con clases semánticas… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
 | `normalize.css` | estilos | Hoja de estilos que normaliza los defaults entre navegadores para partir de una… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
 | `flexoki` | estilos | Paleta de color para texto, código e interfaces que puede servir de referencia… | 1 Básico | 45 | MIT (OSI permisiva) | sin grupo |
@@ -41,9 +41,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | `excalidraw` | diseno | Pizarra virtual open source para diagramas con estilo dibujado a mano… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
 | `penpot` | diseno | Plataforma open-source de diseño y prototipado colaborativo, pensada para… | 3 Avanzado | 68 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `onlook` | diseno | Editor visual con IA para construir, estilar y editar apps React y Tailwind… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | alternativa |
-| `tldraw` | diseno | SDK para construir apps de lienzo infinito en React, como pizarras y… | 2 Intermedio | 55 | tldraw license (no OSI) (source-available) | alternativa |
 | `plasmic` | diseno | Builder visual para apps y sitios conectado a tu propia base de código, que… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
-| `copilotkit` | ia-ui | Stack frontend para agentes y UI generativa en React, creadores del protocolo… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
+| `tldraw` | diseno | SDK para construir apps de lienzo infinito en React, como pizarras y… | 2 Intermedio | 54 | tldraw license (no OSI) (source-available) | alternativa |
+| `copilotkit` | ia-ui | Stack frontend para agentes y UI generativa en React, creadores del protocolo… | 2 Intermedio | 69 | MIT (OSI permisiva) | recomendado |
 | `ai-website-cloner-template` | ia-ui | Plantilla para que un agente de código estudie una web de referencia y prepare… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
 | `screenshot-to-code` | ia-ui | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind… | 2 Intermedio | 63 | MIT (OSI permisiva) | recomendado |
 | `assistant-ui` | ia-ui | Librería React y TypeScript para interfaces de chat con IA de calidad… | 2 Intermedio | 62 | MIT (OSI permisiva) | alternativa |
@@ -58,7 +58,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Storybook (`storybook`)
 
-- **Repo:** https://github.com/storybookjs/storybook · MIT · nivel 2 · 81/100
+- **Repo:** https://github.com/storybookjs/storybook · MIT · nivel 2 · 80/100
 - **Qué es:** Herramienta de código abierto (MIT) mantenida por Chromatic y la comunidad Storybook. Estándar de la industria para desarrollo de componentes, muy maduro y con un ecosistema amplio de addons.
 - **Cuándo elegirlo:** Casos: documentar el sistema de diseño de un producto con ejemplos interactivos; probar estados límite de componentes sin montar toda la aplicación.
 - **Requisitos:** nivel 2: se añade a un proyecto frontend existente; TypeScript, package.json; API de IA: no.
@@ -103,6 +103,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `ant-design`, `mui`, `chakra-ui`, `heroui`, `mantine`, `daisyui`
 - **Riesgos y avisos:** Alternativas (elige una): mui, ant-design, daisyui. Combinación anterior con plasmic eliminada: sin integración documentada. El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación.
 
+### Astryx (`astryx`)
+
+- **Repo:** https://github.com/meta/astryx · MIT · nivel 2 · 72/100
+- **Qué es:** Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.
+- **Cuándo elegirlo:** Casos: Construir una pantalla con botones y campos coherentes.; Probar un tema neutro y después ajustar tipografía y color.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Proyecto web React compatible con los paquetes de Astryx y StyleX..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba. Éxito: Los componentes aparecen con el tema aplicado y puedes navegar con teclado.
+- **Riesgos y avisos:** La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado.
+
 ### Material UI (`mui`)
 
 - **Repo:** https://github.com/mui/material-ui · MIT · nivel 2 · 70/100 · alternativa en «Bibliotecas de componentes React»
@@ -117,7 +127,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Lucide (`lucide`)
 
-- **Repo:** https://github.com/lucide-icons/lucide · ISC · nivel 2 · 66/100
+- **Repo:** https://github.com/lucide-icons/lucide · ISC · nivel 2 · 65/100
 - **Qué es:** Biblioteca open source de más de 1.600 iconos SVG consistentes. El LICENSE es ISC (GitHub lo marca NOASSERTION porque incluye partes heredadas de Feather). Es muy activa (1.73.0).
 - **Cuándo elegirlo:** Casos: Unificar iconos de navegación; Ilustrar acciones en una interfaz.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Paquete para tu framework o archivos SVG; proyecto web; hardware prerequisites; API de IA: no; Paquete para tu framework o archivos SVG; proyecto web.
@@ -220,19 +230,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `react-bits`
 - **Riesgos y avisos:** Alternativas (elige una): react-bits. Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos.
 
-### Astryx (`astryx`)
-
-- **Repo:** https://github.com/meta/astryx · MIT · nivel 2 · —/100
-- **Qué es:** Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.
-- **Cuándo elegirlo:** Casos: Construir una pantalla con botones y campos coherentes.; Probar un tema neutro y después ajustar tipografía y color.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Proyecto web React compatible con los paquetes de Astryx y StyleX..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md
-- **Primera prueba propuesta (no ejecutada):** Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba. Éxito: Los componentes aparecen con el tema aplicado y puedes navegar con teclado.
-- **Riesgos y avisos:** La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado.
-
 ### tailwindcss (`tailwindcss`)
 
-- **Repo:** https://github.com/tailwindlabs/tailwindcss · MIT · nivel 2 · 77/100
+- **Repo:** https://github.com/tailwindlabs/tailwindcss · MIT · nivel 2 · 76/100
 - **Qué es:** Framework CSS utility-first (MIT) de Tailwind Labs. Es el estándar de facto en muchos stacks modernos de frontend, muy maduro y activo (v4.3.5).
 - **Cuándo elegirlo:** Casos: Diseñar un formulario responsive; Definir colores y espaciado consistentes.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Proyecto Vite u otra integración elegida; Node; hardware prerequisites; API de IA: no; Proyecto Vite u otra integración elegida; Node.
@@ -331,18 +331,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `open-design`
 - **Riesgos y avisos:** Alternativas (elige una): open-design. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado.
 
-### tldraw (`tldraw`)
-
-- **Repo:** https://github.com/tldraw/tldraw · tldraw license (no OSI) · nivel 2 · 55/100 · alternativa en «Pizarras y diagramas a mano alzada»
-- **Qué es:** SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open…
-- **Cuándo elegirlo:** Casos: Construir una pizarra de colaboración; Crear un editor de diagramas propio.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; Node; estilos del SDK; licencia para producción según condiciones; hardware prerequisites; API de IA: no; React; Node; estilos del SDK; licencia para producción según condiciones.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm i tldraw` — fuente: https://github.com/tldraw/tldraw/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Muestra un lienzo y añade una forma personalizada en un proyecto de prueba Éxito: Puedes mover, editar y guardar el estado de la forma
-- **Combina con:** `vercel-ai` [3/ts], `ui` [9/componentes], `supabase` [22/infraestructura]
-- **Alternativas:** `excalidraw`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): excalidraw. Licencia: requiere clave para producción. No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia.
-
 ### plasmic (`plasmic`)
 
 - **Repo:** https://github.com/plasmicapp/plasmic · MIT · nivel 2 · 54/100
@@ -354,9 +342,21 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `tailwindcss` [9/estilos], `ui` [9/componentes], `supabase` [22/infraestructura]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Licencia AGPL en `platform/`: revisa obligaciones si la modificas y la ofreces como servicio. El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL.
 
+### tldraw (`tldraw`)
+
+- **Repo:** https://github.com/tldraw/tldraw · tldraw license (no OSI) · nivel 2 · 54/100 · alternativa en «Pizarras y diagramas a mano alzada»
+- **Qué es:** SDK de tldraw para construir apps de lienzo infinito en React. Usa una licencia propia (GitHub la marca NOASSERTION): se puede usar libremente en desarrollo, pero **producción requiere una clave de licencia** de tldraw, así que no es open…
+- **Cuándo elegirlo:** Casos: Construir una pizarra de colaboración; Crear un editor de diagramas propio.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; Node; estilos del SDK; licencia para producción según condiciones; hardware prerequisites; API de IA: no; React; Node; estilos del SDK; licencia para producción según condiciones.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm i tldraw` — fuente: https://github.com/tldraw/tldraw/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Muestra un lienzo y añade una forma personalizada en un proyecto de prueba Éxito: Puedes mover, editar y guardar el estado de la forma
+- **Combina con:** `vercel-ai` [3/ts], `ui` [9/componentes], `supabase` [22/infraestructura]
+- **Alternativas:** `excalidraw`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): excalidraw. Licencia: requiere clave para producción. No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia.
+
 ### CopilotKit (`copilotkit`)
 
-- **Repo:** https://github.com/CopilotKit/CopilotKit · MIT · nivel 2 · 70/100 · recomendado en «Componentes de chat y copilotos para React»
+- **Repo:** https://github.com/CopilotKit/CopilotKit · MIT · nivel 2 · 69/100 · recomendado en «Componentes de chat y copilotos para React»
 - **Qué es:** Stack open source (MIT) para poner agentes de IA frente a usuarios reales en React, de CopilotKit, el equipo creador del protocolo AG-UI. Es muy activo (v1.88.0).
 - **Cuándo elegirlo:** Casos: Añadir asistencia contextual a una app; Mostrar componentes generados a partir de respuestas.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node; framework compatible; backend de agente; proveedor del modelo; hardware prerequisites; API de IA: depends; Node; framework compatible; backend de agente; proveedor del modelo.

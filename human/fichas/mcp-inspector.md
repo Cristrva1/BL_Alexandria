@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** Apache-2.0 (en transición desde MIT). Documentación bajo CC-BY-4.0. Fuente: [LICENSE](https://github.com/modelcontextprotocol/inspector/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

@@ -19,7 +19,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `awesome-dataviz` | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 58 | CC-BY-4.0 (OSI permisiva) | sin grupo |
-| `data-analyst-roadmap` | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 41 | MIT (OSI permisiva) | sin grupo |
+| `data-analyst-roadmap` | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 38 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -38,7 +38,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### data-analyst-roadmap (`data-analyst-roadmap`)
 
-- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 41/100
+- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 38/100
 - **Qué es:** Hoja de ruta para aprender análisis de datos, de @mtahiraslan. Licencia MIT. Es pequeña (~1k estrellas) y su último cambio es de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tiempo de estudio; una tabla pequeña de práctica; hardware prerequisites; API de IA: no; Navegador; tiempo de estudio; una tabla pequeña de práctica.

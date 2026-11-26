@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -52,9 +52,9 @@ Grupo **Transcripción con Whisper**: whisper ocupa la posición 3 de 3 (alterna
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [whisper.cpp](whisper-cpp.md) ⭐ recomendado | 73 | Si buscas esto: port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
-| 2 | [faster-whisper](faster-whisper.md) | 70 | Si buscas esto: runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
-| 3 | **whisper** (esta ficha) | 67 | Si buscas esto: modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
+| 1 | [whisper.cpp](whisper-cpp.md) ⭐ recomendado | 70 | Si buscas esto: port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
+| 2 | [faster-whisper](faster-whisper.md) | 66 | Si buscas esto: runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. |
+| 3 | **whisper** (esta ficha) | 64 | Si buscas esto: modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
 
 ## Acceso, coste y equipo
 

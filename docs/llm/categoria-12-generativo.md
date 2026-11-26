@@ -18,14 +18,14 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `moneyprinterturbo` | App que genera videos cortos a partir de un tema: guion con LLM, material de… | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
+| `moneyprinterturbo` | App que genera videos cortos a partir de un tema: guion con LLM, material de… | 2 Intermedio | 74 | MIT (OSI permisiva) | recomendado |
 | `ltx-2` | Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `wan2-2` | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | recomendado |
 | `hunyuanvideo` | Modelo abierto de Tencent de 13B parámetros para generar video a partir de… | 3 Avanzado | 57 | Tencent Hunyuan Community License (source-available) | alternativa |
-| `wan2gp` | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan… | 3 Avanzado | 56 | WanGP Community License 2.0 (no OSI) (source-available) | sin grupo |
+| `wan2gp` | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan… | 3 Avanzado | 53 | WanGP Community License 2.0 (no OSI) (source-available) | sin grupo |
 | `ai-youtube-shorts-generator` | Pipeline de Python que extrae clips verticales de videos de YouTube mediante… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
-| `short-video-factory` | Aplicación de escritorio para crear videos cortos de producto combinando guion… | 2 Intermedio | 46 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `hunyuanvideo-1-5` | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o… | 3 Avanzado | 41 | Tencent Hunyuan Community License (source-available) | alternativa |
+| `short-video-factory` | Aplicación de escritorio para crear videos cortos de producto combinando guion… | 2 Intermedio | 47 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `hunyuanvideo-1-5` | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o… | 3 Avanzado | 42 | Tencent Hunyuan Community License (source-available) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -33,7 +33,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MoneyPrinterTurbo (`moneyprinterturbo`)
 
-- **Repo:** https://github.com/harry0703/MoneyPrinterTurbo · MIT · nivel 2 · 77/100 · recomendado en «Generación automática de videos cortos»
+- **Repo:** https://github.com/harry0703/MoneyPrinterTurbo · MIT · nivel 2 · 74/100 · recomendado en «Generación automática de videos cortos»
 - **Qué es:** MoneyPrinterTurbo, app para generar vídeos cortos a partir de un tema o palabra clave, de @harry0703. Licencia MIT. Es muy popular (~144k estrellas, v1.3.10) y su README está lleno de patrocinios y enlaces de afiliado a proveedores de…
 - **Cuándo elegirlo:** Casos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio.
 - **Requisitos:** nivel 2: preparación media; Python; FFmpeg; proveedores de guion, voz e imágenes; material propio o autorizado; hardware prerequisites; API de IA: depends; Python; FFmpeg; proveedores de guion, voz e imágenes; material propio o autorizado.
@@ -70,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```sh
   git clone https://github.com/Wan-Video/Wan2.2.git
   cd Wan2.2
-  
+
   # Ensure torch >= 2.4.0
   # If the installation of `flash_attn` fails, try installing the other packages first and install `flash_attn` last
   pip install -r requirements.txt
@@ -94,7 +94,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### WanGP (`wan2gp`)
 
-- **Repo:** https://github.com/deepbeepmeep/WanGP · WanGP Community License 2.0 (no OSI) · nivel 3 · 56/100
+- **Repo:** https://github.com/deepbeepmeep/WanGP · WanGP Community License 2.0 (no OSI) · nivel 3 · 53/100
 - **Qué es:** WanGP, superapp local para modelos generativos abiertos «para GPU modestas», de @deepbeepmeep. Usa la WanGP Community License 2.0, propia (GitHub muestra NOASSERTION), y es gratuita para uso local, también en el trabajo.
 - **Cuándo elegirlo:** Casos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada.
 - **Requisitos:** nivel 3: preparación pesada; GPU compatible; Python y PyTorch según guía; pesos del modelo elegido; hardware prerequisites; API de IA: opcional; GPU compatible; Python y PyTorch según guía; pesos del modelo elegido.
@@ -115,7 +115,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator.git
      cd AI-Youtube-Shorts-Generator
-  
+
   pip install -r requirements.txt
      # Only if you plan to use --mode local:
      pip install -r requirements-local.txt
@@ -126,7 +126,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### short-video-factory (`short-video-factory`)
 
-- **Repo:** https://github.com/YILS-LIN/short-video-factory · AGPL-3.0 · nivel 2 · 46/100 · alternativa en «Generación automática de videos cortos»
+- **Repo:** https://github.com/YILS-LIN/short-video-factory · AGPL-3.0 · nivel 2 · 47/100 · alternativa en «Generación automática de videos cortos»
 - **Qué es:** Short Video Factory (短视频工厂), app de escritorio para crear vídeos cortos de producto y contenido general, de @YILS-LIN. Licencia AGPL-3.0. Tiene ~6k estrellas (v1.4.0) y su README está principalmente en chino.
 - **Cuándo elegirlo:** Casos: Crear un borrador de producto; Preparar variantes de un anuncio propio.
 - **Requisitos:** nivel 2: preparación media; App de escritorio; proveedores de guion y voz; clips e imágenes propios; hardware prerequisites; API de IA: depends; App de escritorio; proveedores de guion y voz; clips e imágenes propios.
@@ -138,7 +138,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### HunyuanVideo 1.5 (`hunyuanvideo-1-5`)
 
-- **Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5 · Tencent Hunyuan Community License · nivel 3 · 41/100 · alternativa en «Modelos abiertos de video generativo»
+- **Repo:** https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5 · Tencent Hunyuan Community License · nivel 3 · 42/100 · alternativa en «Modelos abiertos de video generativo»
 - **Qué es:** Modelo de generación de video de Tencent Hunyuan, publicado en noviembre de 2025 con código de inferencia y entrenamiento en Python. Usa la Tencent Hunyuan Community License (GitHub muestra NOASSERTION), que no se aplica en la UE, el Reino…
 - **Cuándo elegirlo:** Casos: Generar un clip corto desde texto con GPU de consumo; Animar una imagen fija en 480p. Evítalo si no tienes una GPU NVIDIA con memoria suficiente o te afecta la exclusión territorial de la licencia.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, requirements.txt; hardware gpu; API de IA: opcional; Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida..

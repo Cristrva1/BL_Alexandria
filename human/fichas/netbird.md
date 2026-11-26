@@ -46,7 +46,7 @@ Grupo **Redes privadas tipo mesh (WireGuard)**: NetBird ocupa la posición 2 de 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Headscale](headscale.md) ⭐ recomendado | 69 | Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. |
+| 1 | [Headscale](headscale.md) ⭐ recomendado | 67 | Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. |
 | 2 | **NetBird** (esta ficha) | 63 | Si buscas esto: red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. |
 
 ## Acceso, coste y equipo

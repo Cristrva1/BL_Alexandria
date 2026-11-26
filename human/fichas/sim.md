@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,9 +48,9 @@ Grupo **Builders visuales de agentes**: Sim ocupa la posición 4 de 4 (alternati
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [langflow](langflow.md) ⭐ recomendado | 70 | Si quieres diseñar flujos de LangChain visualmente y exportarlos. |
-| 2 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
-| 3 | [dify](dify.md) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
-| 4 | **Sim** (esta ficha) | 61 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
+| 2 | [dify](dify.md) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
+| 3 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
+| 4 | **Sim** (esta ficha) | 62 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
 
 ## Acceso, coste y equipo
 

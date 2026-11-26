@@ -50,7 +50,7 @@ Grupo **Frameworks de agentes en TypeScript**: Mastra ocupa la posición 2 de 3 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [AI SDK (Vercel)](vercel-ai.md) ⭐ recomendado | 67 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
+| 1 | [AI SDK (Vercel)](vercel-ai.md) ⭐ recomendado | 68 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
 | 2 | **Mastra** (esta ficha) | 65 | Si buscas esto: framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
 | 3 | [LangGraph.js](langgraphjs.md) | 60 | Si buscas esto: versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
 

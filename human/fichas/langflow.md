@@ -48,9 +48,9 @@ Grupo **Builders visuales de agentes**: langflow ocupa la posición 1 de 4 (reco
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **langflow** (esta ficha) ⭐ recomendado | 70 | Si quieres diseñar flujos de LangChain visualmente y exportarlos. |
-| 2 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
-| 3 | [dify](dify.md) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
-| 4 | [Sim](sim.md) | 61 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
+| 2 | [dify](dify.md) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
+| 3 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
+| 4 | [Sim](sim.md) | 62 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
 
 ## Acceso, coste y equipo
 

@@ -18,7 +18,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `copilotkit` | Stack frontend para agentes y UI generativa en React, creadores del protocolo… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
+| `copilotkit` | Stack frontend para agentes y UI generativa en React, creadores del protocolo… | 2 Intermedio | 69 | MIT (OSI permisiva) | recomendado |
 | `ai-website-cloner-template` | Plantilla para que un agente de código estudie una web de referencia y prepare… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
 | `screenshot-to-code` | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind… | 2 Intermedio | 63 | MIT (OSI permisiva) | recomendado |
 | `assistant-ui` | Librería React y TypeScript para interfaces de chat con IA de calidad… | 2 Intermedio | 62 | MIT (OSI permisiva) | alternativa |
@@ -33,7 +33,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CopilotKit (`copilotkit`)
 
-- **Repo:** https://github.com/CopilotKit/CopilotKit · MIT · nivel 2 · 70/100 · recomendado en «Componentes de chat y copilotos para React»
+- **Repo:** https://github.com/CopilotKit/CopilotKit · MIT · nivel 2 · 69/100 · recomendado en «Componentes de chat y copilotos para React»
 - **Qué es:** Stack open source (MIT) para poner agentes de IA frente a usuarios reales en React, de CopilotKit, el equipo creador del protocolo AG-UI. Es muy activo (v1.88.0).
 - **Cuándo elegirlo:** Casos: Añadir asistencia contextual a una app; Mostrar componentes generados a partir de respuestas.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node; framework compatible; backend de agente; proveedor del modelo; hardware prerequisites; API de IA: depends; Node; framework compatible; backend de agente; proveedor del modelo.

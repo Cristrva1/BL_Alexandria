@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
+**Puntuación de calidad** 61/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.

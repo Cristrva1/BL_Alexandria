@@ -21,7 +21,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `autogpt` | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un… | 3 Avanzado | 70 | MIT + Polyform Shield (autogpt_platform/) (source-available) | alternativa |
 | `dify` | Plataforma integral para construir apps de IA con backend y UI listos. | 2 Intermedio | 70 | Apache-2.0 modificada (condiciones adicionales) (source-available) | alternativa |
 | `langflow` | Constructor visual de flujos LLM/agentes construido sobre LangChain. | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
-| `sim` | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | alternativa |
+| `sim` | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -76,24 +76,24 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```shell
   uv pip install langflow -U
-  
+
   uv run langflow run
   ```
 - **Primera prueba propuesta (no ejecutada):** Abre Simple Agent y conecta un modelo y una herramienta de cálculo Éxito: Puedes ejecutar una pregunta y revisar el recorrido por los componentes
 - **Combina con:** `langfuse` [23/observabilidad], `ollama` [8/motores], `claude-code` [20/terminal], `langchain` [3/py]
-- **Alternativas:** `autogpt`, `dify`, `sim`
+- **Alternativas:** `dify`, `autogpt`, `sim`
 - **Riesgos y avisos:** Alternativas (elige una): sim, autogpt. Combinación anterior con dify eliminada: plataformas solapadas sin integración documentada. Configura la contraseña antes de iniciar; las herramientas de autoría MCP pueden crear componentes que ejecutan código en el servidor.
 
 ### Sim (`sim`)
 
-- **Repo:** https://github.com/simstudioai/sim · Apache-2.0 · nivel 2 · 61/100 · alternativa en «Builders visuales de agentes»
+- **Repo:** https://github.com/simstudioai/sim · Apache-2.0 · nivel 2 · 62/100 · alternativa en «Builders visuales de agentes»
 - **Qué es:** Plataforma open source (Apache-2.0) de Sim Studio para construir, desplegar y monitorizar agentes y workflows de IA con un lienzo visual. Hay versión cloud (sim.ai) y autoalojada.
 - **Cuándo elegirlo:** Casos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API.
 - **Requisitos:** nivel 2: preparación media; Node.js 20+; Docker; proveedor o modelo local; hardware prerequisites; API de IA: depends; Node.js 20+; Docker; proveedor o modelo local.
 - **Instalación (documentada en la fuente; no ejecutada):** `npx sim-setup` — fuente: https://github.com/simstudioai/sim/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Construye un flujo visual que recibe texto, lo resume y registra la salida Éxito: La ejecución muestra cada bloque y el resumen final
 - **Combina con:** `ollama` [8/motores], `vllm` [23/serving], `claude-code` [20/terminal], `codex` [20/terminal]
-- **Alternativas:** `langflow`, `autogpt`, `dify`
+- **Alternativas:** `langflow`, `dify`, `autogpt`
 - **Riesgos y avisos:** Alternativas (elige una): langflow, dify, autogpt. Combinación anterior con langfuse eliminada: no se encontró integración documentada en el README ni en la…. MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md

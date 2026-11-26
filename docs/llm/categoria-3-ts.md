@@ -18,20 +18,32 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `agent-framework` | Framework de Microsoft para agentes y workflows multiagente en Python y .NET… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
-| `vercel-ai` | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | recomendado |
+| `vercel-ai` | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | recomendado |
+| `agent-framework` | Framework de Microsoft para agentes y workflows multiagente en Python y .NET… | 2 Intermedio | 66 | MIT (OSI permisiva) | sin grupo |
 | `mastra` | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los… | 2 Intermedio | 65 | Apache-2.0 + licencia Enterprise (ee/) (open-core) | alternativa |
+| `eve` | Ayuda a construir agentes con estado usando archivos de configuración… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `langgraphjs` | Versión TypeScript de LangGraph para agentes con estado como grafos en Node o… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `langchain4j` | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `eve` | Ayuda a construir agentes con estado usando archivos de configuración… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `langchain4j` | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes… | 2 Intermedio | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
 
+### AI SDK (Vercel) (`vercel-ai`)
+
+- **Repo:** https://github.com/vercel/ai · Apache-2.0 · nivel 2 · 68/100 · recomendado en «Frameworks de agentes en TypeScript»
+- **Qué es:** Toolkit TypeScript de Vercel (AI SDK) para construir aplicaciones y agentes con IA. El LICENSE es Apache-2.0 aunque GitHub no reconozca la licencia (NOASSERTION).
+- **Cuándo elegirlo:** Casos: Construir una interfaz de chat; Extraer datos tipados de un mensaje.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node.js; proyecto TypeScript; paquete del proveedor; hardware prerequisites; API de IA: depends; Node.js; proyecto TypeScript; paquete del proveedor.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install ai` — fuente: https://github.com/vercel/ai/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Añade una respuesta de chat en streaming y una herramienta de consulta de estado Éxito: El texto llega por partes y la llamada devuelve el estado ficticio
+- **Combina con:** `assistant-ui` [9/ia-ui], `ui` [9/componentes], `langfuse` [23/observabilidad], `ollama` [8/motores], `mem0` [6/memoria]
+- **Alternativas:** `mastra`, `langgraphjs`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): langgraphjs, mastra. Ojo: algunos ejemplos del README usan modelos vía AI Gateway que requieren cuenta de Vercel. El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación.
+
 ### Microsoft Agent Framework (`agent-framework`)
 
-- **Repo:** https://github.com/microsoft/agent-framework · MIT · nivel 2 · 67/100
+- **Repo:** https://github.com/microsoft/agent-framework · MIT · nivel 2 · 66/100
 - **Qué es:** Framework open source (MIT) de Microsoft para construir, orquestar y desplegar agentes y workflows multiagente. Lo presentan como sucesor de AutoGen y Semantic Kernel, con guías oficiales de migración desde ambos.
 - **Cuándo elegirlo:** Casos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito.
 - **Requisitos:** nivel 2: preparación media; Python o .NET; proveedor configurado; hardware prerequisites; API de IA: depends; Python o .NET; proveedor configurado.
@@ -46,18 +58,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `langfuse` [23/observabilidad], `copilotkit` [9/ia-ui], `ag2` [3/py], `ollama` [8/motores], `ai-agents-for-beginners` [19/guias]
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo; frameworks comparables: langgraph, crewai, openai-agents-python. La skill de construcción usa el agente; el runtime tiene autenticación y costes propios; módulos Lab son experimentales.
 
-### AI SDK (Vercel) (`vercel-ai`)
-
-- **Repo:** https://github.com/vercel/ai · Apache-2.0 · nivel 2 · 67/100 · recomendado en «Frameworks de agentes en TypeScript»
-- **Qué es:** Toolkit TypeScript de Vercel (AI SDK) para construir aplicaciones y agentes con IA. El LICENSE es Apache-2.0 aunque GitHub no reconozca la licencia (NOASSERTION).
-- **Cuándo elegirlo:** Casos: Construir una interfaz de chat; Extraer datos tipados de un mensaje.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node.js; proyecto TypeScript; paquete del proveedor; hardware prerequisites; API de IA: depends; Node.js; proyecto TypeScript; paquete del proveedor.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install ai` — fuente: https://github.com/vercel/ai/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Añade una respuesta de chat en streaming y una herramienta de consulta de estado Éxito: El texto llega por partes y la llamada devuelve el estado ficticio
-- **Combina con:** `assistant-ui` [9/ia-ui], `ui` [9/componentes], `langfuse` [23/observabilidad], `ollama` [8/motores], `mem0` [6/memoria]
-- **Alternativas:** `mastra`, `langgraphjs`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): langgraphjs, mastra. Ojo: algunos ejemplos del README usan modelos vía AI Gateway que requieren cuenta de Vercel. El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación.
-
 ### Mastra (`mastra`)
 
 - **Repo:** https://github.com/mastra-ai/mastra · Apache-2.0 + licencia Enterprise (ee/) · nivel 2 · 65/100 · alternativa en «Frameworks de agentes en TypeScript»
@@ -69,6 +69,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `copilotkit` [9/ia-ui], `langfuse` [23/observabilidad], `ollama` [8/motores], `composio` [22/infra], `openbot` [21/asistentes]
 - **Alternativas:** `vercel-ai`, `langgraphjs`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): langgraphjs, vercel-ai. Las funciones de `ee/` requieren licencia comercial para producción. No copies el bloque de prompt del README como comando de terminal; el instalador es npm create mastra.
+
+### Eve (`eve`)
+
+- **Repo:** https://github.com/vercel/eve · Apache-2.0 · nivel 2 · 63/100
+- **Qué es:** Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.
+- **Cuándo elegirlo:** Casos: Probar un agente de preguntas sobre una tarea ficticia.; Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js/npm y autenticación para el proveedor o AI Gateway documentado; hosting opcional..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://eve.dev/
+- **Primera prueba propuesta (no ejecutada):** Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio. Éxito: La interfaz de terminal inicia y responde con el proveedor elegido.
+- **Riesgos y avisos:** La licencia del framework no cubre AI Gateway, tokens ni despliegue; no asumas que tu suscripción de Codex o Claude Code concede acceso al modelo de Eve.
 
 ### LangGraph.js (`langgraphjs`)
 
@@ -84,7 +94,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### langchain4j (`langchain4j`)
 
-- **Repo:** https://github.com/langchain4j/langchain4j · Apache-2.0 · nivel 2 · 52/100
+- **Repo:** https://github.com/langchain4j/langchain4j · Apache-2.0 · nivel 2 · 53/100
 - **Qué es:** Biblioteca open source (Apache-2.0) para integrar LLMs en aplicaciones Java y de la JVM. Pese al nombre, es un proyecto independiente de LangChain Inc. Es madura y activa (1.23.0) y se publica en Maven Central.
 - **Cuándo elegirlo:** Casos: Añadir IA a Spring Boot; Recuperar documentos desde una aplicación JVM.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; JDK y Maven o Gradle según la integración; modelo; hardware prerequisites; API de IA: depends; JDK y Maven o Gradle según la integración; modelo.
@@ -92,16 +102,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Integra un chat que consulta un objeto de inventario de prueba en Java Éxito: El resultado devuelve el dato del objeto y puede validarse con un test
 - **Combina con:** `ollama` [8/motores], `qdrant` [6/vectores], `pgvector` [6/vectores], `milvus` [6/vectores]
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo (spring-ai no figura). Qdrant, pgvector y milvus son alternativas entre sí: elige uno. Es una biblioteca Java independiente; no es un port con las mismas versiones o API que LangChain Python.
-
-### Eve (`eve`)
-
-- **Repo:** https://github.com/vercel/eve · Apache-2.0 · nivel 2 · —/100
-- **Qué es:** Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.
-- **Cuándo elegirlo:** Casos: Probar un agente de preguntas sobre una tarea ficticia.; Versionar una habilidad de un asistente y revisar un cambio en sus instrucciones.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; TypeScript, package.json; API de IA: sí; Node.js/npm y autenticación para el proveedor o AI Gateway documentado; hosting opcional..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://eve.dev/
-- **Primera prueba propuesta (no ejecutada):** Lee la guía rápida, elige un proveedor y crea un agente en un proyecto temporal con texto ficticio. Éxito: La interfaz de terminal inicia y responde con el proveedor elegido.
-- **Riesgos y avisos:** La licencia del framework no cubre AI Gateway, tokens ni despliegue; no asumas que tu suscripción de Codex o Claude Code concede acceso al modelo de Eve.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -19,10 +19,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `mirofish` | Motor de inteligencia colectiva/predicción que construye mundos digitales con… | 3 Avanzado | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `openevolve` | Agente de codificación evolutivo que optimiza algoritmos por simulación… | 3 Avanzado | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `llm-council` | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. | 2 Intermedio | 43 | — (sin licencia detectada) | sin grupo |
-| `hermes-agent-self-evolution` | Herramientas para optimizar skills, prompts y código de Hermes Agent mediante… | 2 Intermedio | 37 | — (sin licencia detectada) | sin grupo |
+| `openevolve` | Agente de codificación evolutivo que optimiza algoritmos por simulación… | 3 Avanzado | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `llm-council` | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. | 2 Intermedio | 40 | — (sin licencia detectada) | sin grupo |
 | `jev-fraud` | Demostración de clasificación con modelos y servicios de IA para estudiar un… | 2 Intermedio | 36 | MIT (OSI permisiva) | sin grupo |
+| `hermes-agent-self-evolution` | Herramientas para optimizar skills, prompts y código de Hermes Agent mediante… | 2 Intermedio | 34 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -39,7 +39,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   # 1. Configure environment variables (same as source deployment)
   cp .env.example .env
-  
+
   # 2. Pull image and start
   docker compose up -d
   ```
@@ -49,7 +49,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### openevolve (`openevolve`)
 
-- **Repo:** https://github.com/algorithmicsuperintelligence/openevolve · Apache-2.0 · nivel 3 · 56/100
+- **Repo:** https://github.com/algorithmicsuperintelligence/openevolve · Apache-2.0 · nivel 3 · 53/100
 - **Qué es:** Implementación open source (Apache-2.0) de AlphaEvolve de Google DeepMind, mantenida por algorithmicsuperintelligence. Es activa (v0.4.1) y el README lista artículos científicos que la han usado para obtener nuevos resultados.
 - **Cuándo elegirlo:** Casos: Optimizar una función medible; Buscar mejores reglas de ordenación.
 - **Requisitos:** nivel 3: preparación pesada; Python 3.10+; evaluador de calidad; API o CLI compatible autenticado; hardware prerequisites; API de IA: depends; Python 3.10+; evaluador de calidad; API o CLI compatible autenticado.
@@ -66,7 +66,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### llm-council (`llm-council`)
 
-- **Repo:** https://github.com/karpathy/llm-council · — · nivel 2 · 43/100
+- **Repo:** https://github.com/karpathy/llm-council · — · nivel 2 · 40/100
 - **Qué es:** Experimento personal de Andrej Karpathy, 'vibe coded' en un sábado según el propio README. El autor avisa de que no lo mantendrá ni lo soportará. No tiene archivo de licencia, así que legalmente no hay permiso de reutilización explícito, y…
 - **Cuándo elegirlo:** Casos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica.
 - **Requisitos:** nivel 2: preparación media, requiere clave de API; Python y uv; Node.js; clave OpenRouter; hardware prerequisites; API de IA: sí; Python y uv; Node.js; clave OpenRouter.
@@ -74,7 +74,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   uv sync
-  
+
   cd frontend
   npm install
   cd ..
@@ -82,24 +82,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Envía una pregunta acotada y compara las respuestas y las revisiones entre modelos Éxito: Se distinguen propuestas iniciales, evaluaciones y síntesis final
 - **Combina con:** `litellm` [23/serving], `ollama` [8/motores], `promptfoo` [23/observabilidad]
 - **Riesgos y avisos:** Sin alternativas declaradas. Sin licencia: no reutilices el código en proyectos distribuidos sin permiso. Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes.
-
-### hermes-agent-self-evolution (`hermes-agent-self-evolution`)
-
-- **Repo:** https://github.com/NousResearch/hermes-agent-self-evolution · — · nivel 2 · 37/100
-- **Qué es:** Herramienta de Nous Research para mejorar automáticamente Hermes Agent mediante evolución de prompts con DSPy y GEPA. El repositorio no tiene archivo LICENSE: la mención 'MIT licensed' del README parece referirse a GEPA [DATO NO…
-- **Cuándo elegirlo:** Casos: Refinar una skill de revisión de código; Comparar instrucciones con fallos observados.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación; hardware prerequisites; API de IA: sí; Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/NousResearch/hermes-agent-self-evolution/blob/main/README.md
-
-  ```bash
-  # Install
-  git clone https://github.com/NousResearch/hermes-agent-self-evolution.git
-  cd hermes-agent-self-evolution
-  pip install -e ".[dev]"
-  ```
-- **Primera prueba propuesta (no ejecutada):** Optimiza una skill pequeña con datos sintéticos y compara el candidato antes de aceptarlo Éxito: Puedes revisar diferencias y puntuaciones manteniendo la versión inicial
-- **Combina con:** `hermes-agent` [21/asistentes], `dspy` [3/py], `claude-code` [20/terminal]
-- **Riesgos y avisos:** Sin alternativas declaradas. Sin archivo de licencia en el repositorio. Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como….
 
 ### jev-fraud (`jev-fraud`)
 
@@ -114,12 +96,30 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
      cd jev-fraud
      npm install
      cp .env.example .env.local
-  
+
   npm run dev -- --port 3017
   ```
 - **Primera prueba propuesta (no ejecutada):** Abre la aplicación y usa primero 10s replay sobre la grabación incluida Éxito: Ves la demostración grabada sin lanzar una clasificación nueva
 - **Combina con:** `vercel-ai` [3/ts], `promptfoo` [23/observabilidad], `ui` [9/componentes]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Jev (typesafe.ai) y Kimi K3 son modelos comerciales; resultados no verificados de forma independiente. Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción.
+
+### hermes-agent-self-evolution (`hermes-agent-self-evolution`)
+
+- **Repo:** https://github.com/NousResearch/hermes-agent-self-evolution · — · nivel 2 · 34/100
+- **Qué es:** Herramienta de Nous Research para mejorar automáticamente Hermes Agent mediante evolución de prompts con DSPy y GEPA. El repositorio no tiene archivo LICENSE: la mención 'MIT licensed' del README parece referirse a GEPA [DATO NO…
+- **Cuándo elegirlo:** Casos: Refinar una skill de revisión de código; Comparar instrucciones con fallos observados.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación; hardware prerequisites; API de IA: sí; Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/NousResearch/hermes-agent-self-evolution/blob/main/README.md
+
+  ```bash
+  # Install
+  git clone https://github.com/NousResearch/hermes-agent-self-evolution.git
+  cd hermes-agent-self-evolution
+  pip install -e ".[dev]"
+  ```
+- **Primera prueba propuesta (no ejecutada):** Optimiza una skill pequeña con datos sintéticos y compara el candidato antes de aceptarlo Éxito: Puedes revisar diferencias y puntuaciones manteniendo la versión inicial
+- **Combina con:** `hermes-agent` [21/asistentes], `dspy` [3/py], `claude-code` [20/terminal]
+- **Riesgos y avisos:** Sin alternativas declaradas. Sin archivo de licencia en el repositorio. Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como….
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

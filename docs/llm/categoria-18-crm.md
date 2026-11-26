@@ -55,7 +55,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```sh
   git clone https://github.com/frappe/frappe_docker
   cd frappe_docker
-  
+
   docker compose -f pwd.yml up -d
   ```
 - **Primera prueba propuesta (no ejecutada):** Usa la demo Docker y crea un artículo y una oportunidad ficticios antes de configurar una empresa real Éxito: Puedes inspeccionar módulos y flujo de documentos de la demo
@@ -75,9 +75,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   git clone https://github.com/trycompai/crm.git && cd crm
   cp .env.example .env          # then fill in the values below
   bun install
-  
+
   docker compose up -d          # Postgres on :5432
-  
+
   bun run db:deploy             # apply migrations
   bun run db:seed               # optional: a believable pipeline to look at
   bun run dev

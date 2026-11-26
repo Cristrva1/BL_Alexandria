@@ -48,7 +48,7 @@ Grupo **Pizarras y diagramas a mano alzada**: Excalidraw ocupa la posición 1 de
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Excalidraw** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
-| 2 | [tldraw](tldraw.md) | 55 | Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
+| 2 | [tldraw](tldraw.md) | 54 | Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
 
 ## Acceso, coste y equipo
 

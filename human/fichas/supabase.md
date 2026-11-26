@@ -53,7 +53,7 @@ Grupo **Backends como servicio auto-hospedados**: supabase ocupa la posición 1 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **supabase** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. |
-| 2 | [Appwrite](appwrite.md) | 73 | Si buscas esto: plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. |
+| 2 | [Appwrite](appwrite.md) | 72 | Si buscas esto: plataforma de backend abierta orientada a agentes y desarrolladores: autenticación, bases de datos, almacenamiento, funciones, mensajería, tiempo real y hosting, con MCP. |
 
 ## Acceso, coste y equipo
 

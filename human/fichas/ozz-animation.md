@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 44/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT. Fuente: [LICENSE](https://github.com/guillaumeblanc/ozz-animation/blob/master/LICENSE.md). GitHub la marca como NOASSERTION.
 

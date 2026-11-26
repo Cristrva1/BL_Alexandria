@@ -50,7 +50,7 @@ Grupo **RAG con grafos e índices de conocimiento**: RAGFlow ocupa la posición 
 | 1 | **RAGFlow** (esta ficha) ⭐ recomendado | 82 | Si quieres un motor de RAG completo con comprensión profunda de documentos e interfaz. |
 | 2 | [LightRAG](lightrag.md) | 66 | Si quieres RAG con grafo de conocimiento ligero y rápido de indexar. |
 | 3 | [PageIndex](pageindex.md) | 60 | Si quieres RAG sin vectores que razona sobre la tabla de contenidos de documentos largos. |
-| 4 | [graphrag](graphrag.md) | 54 | Si necesitas la metodología GraphRAG de Microsoft para preguntas globales sobre un corpus. |
+| 4 | [graphrag](graphrag.md) | 55 | Si necesitas la metodología GraphRAG de Microsoft para preguntas globales sobre un corpus. |
 
 ## Acceso, coste y equipo
 

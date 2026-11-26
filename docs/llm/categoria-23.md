@@ -18,37 +18,37 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `vllm` | serving | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de… | 3 Avanzado | 78 | Apache-2.0 (OSI permisiva) | recomendado |
-| `litellm` | serving | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola… | 2 Intermedio | 77 | MIT + licencia Enterprise (litellm/enterprise/) (open-core) | recomendado |
+| `vllm` | serving | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de… | 3 Avanzado | 79 | Apache-2.0 (OSI permisiva) | recomendado |
+| `litellm` | serving | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola… | 2 Intermedio | 78 | MIT + licencia Enterprise (litellm/enterprise/) (open-core) | recomendado |
+| `tensorrt-llm` | serving | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de… | 3 Avanzado | 77 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `omniroute` | serving | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar… | 3 Avanzado | 76 | MIT (OSI permisiva) | alternativa |
-| `tensorrt-llm` | serving | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de… | 3 Avanzado | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `ray` | serving | Motor de cómputo distribuido para IA: escala Python de un portátil a un… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `sglang` | serving | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `xinference` | serving | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings… | 3 Avanzado | 66 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `gpustack` | serving | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `bentoml` | serving | Framework Python para convertir modelos y pipelines de IA en APIs de… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `claude-code-router` | serving | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 57 | MIT (OSI permisiva) | alternativa |
-| `backdoor` | serving | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo… | 2 Intermedio | 36 | MIT (OSI permisiva) | alternativa |
-| `portkey-gateway` | serving | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | — | MIT | sin grupo |
+| `ray` | serving | Motor de cómputo distribuido para IA: escala Python de un portátil a un… | 2 Intermedio | 76 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `sglang` | serving | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | alternativa |
+| `xinference` | serving | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `gpustack` | serving | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o… | 3 Avanzado | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `bentoml` | serving | Framework Python para convertir modelos y pipelines de IA en APIs de… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `claude-code-router` | serving | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 58 | MIT (OSI permisiva) | alternativa |
+| `portkey-gateway` | serving | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | 51 | MIT (OSI permisiva) | sin grupo |
+| `backdoor` | serving | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo… | 2 Intermedio | 34 | MIT (OSI permisiva) | alternativa |
+| `toon-format` | tokens | Convierte listas de objetos JSON a un texto con encabezado y filas para… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
 | `rtk` | tokens | Proxy de terminal que compacta salidas de comandos para reducir el contexto que… | 1 Básico | 69 | Apache-2.0 (OSI permisiva) | recomendado |
-| `headroom` | tokens | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
-| `gptcache` | tokens | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | — | MIT | sin grupo |
-| `llmlingua` | tokens | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | — | MIT | sin grupo |
-| `toon-format` | tokens | Convierte listas de objetos JSON a un texto con encabezado y filas para… | 2 Intermedio | — | MIT | sin grupo |
+| `headroom` | tokens | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | alternativa |
+| `gptcache` | tokens | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `llmlingua` | tokens | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
 | `langfuse` | observabilidad | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM… | 2 Intermedio | 79 | MIT + licencia Enterprise (ee/) (open-core) | recomendado |
 | `promptfoo` | observabilidad | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de… | 1 Básico | 79 | MIT (OSI permisiva) | recomendado |
 | `opik` | observabilidad | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | alternativa |
+| `ccusage` | observabilidad | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
 | `mlflow` | observabilidad | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM… | 1 Básico | 70 | Apache-2.0 (OSI permisiva) | alternativa |
-| `deepeval` | observabilidad | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | alternativa |
-| `loguru` | observabilidad | Librería de logging para Python centrada en la simplicidad ("logging that… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
-| `openllmetry` | observabilidad | Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `lm-eval-harness` | observabilidad | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
-| `claude-code-usage-monitor` | observabilidad | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a… | 2 Intermedio | 53 | MIT (OSI permisiva) | sin grupo |
-| `guardrails` | observabilidad | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales… | 2 Intermedio | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `deepeval` | observabilidad | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | alternativa |
+| `loguru` | observabilidad | Librería de logging para Python centrada en la simplicidad ("logging that… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
+| `openllmetry` | observabilidad | Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `lm-eval-harness` | observabilidad | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
 | `phoenix` | observabilidad | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM… | 1 Básico | 53 | Elastic-2.0 (source-available) | alternativa |
-| `ragas` | observabilidad | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos… | 2 Intermedio | 51 | Apache-2.0 (OSI permisiva) | alternativa |
+| `guardrails` | observabilidad | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `ragas` | observabilidad | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
+| `claude-code-usage-monitor` | observabilidad | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a… | 2 Intermedio | 51 | MIT (OSI permisiva) | sin grupo |
 | `helicone` | observabilidad | Pasarela de IA y plataforma de observabilidad de LLM abierta: registra… | 2 Intermedio | 50 | Apache-2.0 (OSI permisiva) | alternativa |
-| `ccusage` | observabilidad | Resume los tokens y estima el coste de tus sesiones de asistentes a partir de… | 2 Intermedio | — | MIT | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -56,7 +56,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### vLLM (`vllm`)
 
-- **Repo:** https://github.com/vllm-project/vllm · Apache-2.0 · nivel 3 · 78/100 · recomendado en «Servidores de inferencia de alto rendimiento»
+- **Repo:** https://github.com/vllm-project/vllm · Apache-2.0 · nivel 3 · 79/100 · recomendado en «Servidores de inferencia de alto rendimiento»
 - **Qué es:** vLLM, motor de inferencia y servicio de LLM nacido en el Sky Computing Lab de UC Berkeley y mantenido por una comunidad amplia. Licencia Apache-2.0.
 - **Cuándo elegirlo:** Casos: Servir un modelo propio; Estudiar rendimiento de inferencia.
 - **Requisitos:** nivel 3: preparación pesada; uv y Python compatibles; hardware soportado; pesos y memoria del modelo; hardware prerequisites; API de IA: no; uv y Python compatibles; hardware soportado; pesos y memoria del modelo.
@@ -73,7 +73,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### litellm (`litellm`)
 
-- **Repo:** https://github.com/BerriAI/litellm · MIT + licencia Enterprise (litellm/enterprise/) · nivel 2 · 77/100 · recomendado en «Pasarelas y routers de proveedores LLM»
+- **Repo:** https://github.com/BerriAI/litellm · MIT + licencia Enterprise (litellm/enterprise/) · nivel 2 · 78/100 · recomendado en «Pasarelas y routers de proveedores LLM»
 - **Qué es:** LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra…
 - **Cuándo elegirlo:** Casos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python y uv; proveedor o endpoint local; presupuesto de prueba; hardware prerequisites; API de IA: opcional; Python y uv; proveedor o endpoint local; presupuesto de prueba.
@@ -82,6 +82,21 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `open-webui` [8/chats], `langfuse` [23/observabilidad], `claude-code` [20/terminal]
 - **Alternativas:** `omniroute`, `claude-code-router`, `backdoor`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o…. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos.
+
+### TensorRT-LLM (`tensorrt-llm`)
+
+- **Repo:** https://github.com/NVIDIA/TensorRT-LLM · Apache-2.0 · nivel 3 · 77/100
+- **Qué es:** TensorRT LLM, la librería de NVIDIA para optimizar inferencia de LLM y modelos de generación visual en GPU NVIDIA. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activa (~15k estrellas, v1.2.1).
+- **Cuándo elegirlo:** Casos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA.
+- **Requisitos:** nivel 3: preparación pesada, requiere programar con él; GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado; hardware prerequisites; API de IA: no; GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/deployment-guide/deployment-guide-for-glm-5-on-trtllm.md
+
+  ```bash
+  docker run --rm -it --ipc=host --gpus all -p 8000:8000 -v "$HOST_MODELS_DIR":/models --name tensorrt_llm nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc25 /bin/bash
+  ```
+- **Primera prueba propuesta (no ejecutada):** Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar Éxito: Puedes relacionar motor, modelo y configuración de memoria
+- **Combina con:** `litellm`, `open-webui` [8/chats], `transformers` [24/entrenamiento], `deepseek-v3` [24/modelos], `gpustack`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA. Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU.
 
 ### OmniRoute (`omniroute`)
 
@@ -95,24 +110,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `litellm`, `claude-code-router`, `backdoor`
 - **Riesgos y avisos:** Alternativas (elige una): claude-code-router, backdoor, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM…. Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor.
 
-### TensorRT-LLM (`tensorrt-llm`)
-
-- **Repo:** https://github.com/NVIDIA/TensorRT-LLM · Apache-2.0 · nivel 3 · 75/100
-- **Qué es:** TensorRT LLM, la librería de NVIDIA para optimizar inferencia de LLM y modelos de generación visual en GPU NVIDIA. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activa (~15k estrellas, v1.2.1).
-- **Cuándo elegirlo:** Casos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA.
-- **Requisitos:** nivel 3: preparación pesada, requiere programar con él; GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado; hardware prerequisites; API de IA: no; GPU NVIDIA compatible; CUDA y dependencias según versión; modelo soportado.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/deployment-guide/deployment-guide-for-glm-5-on-trtllm.md
-
-  ```bash
-  docker run --rm -it --ipc=host --gpus all -p 8000:8000 -v "$HOST_MODELS_DIR":/models --name tensorrt_llm nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc25 /bin/bash
-  ```
-- **Primera prueba propuesta (no ejecutada):** Comprueba la matriz de hardware y ejecuta el ejemplo mínimo de inferencia antes de optimizar Éxito: Puedes relacionar motor, modelo y configuración de memoria
-- **Combina con:** `litellm`, `open-webui` [8/chats], `transformers` [24/entrenamiento], `deepseek-v3` [24/modelos], `gpustack`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA. Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU.
-
 ### Ray (`ray`)
 
-- **Repo:** https://github.com/ray-project/ray · Apache-2.0 · nivel 2 · 74/100
+- **Repo:** https://github.com/ray-project/ray · Apache-2.0 · nivel 2 · 76/100
 - **Qué es:** Framework de código abierto (Apache-2.0) creado en UC Berkeley y mantenido por Anyscale, que ofrece una plataforma gestionada. Muy maduro y usado a gran escala.
 - **Cuándo elegirlo:** Casos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -123,7 +123,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SGLang (`sglang`)
 
-- **Repo:** https://github.com/sgl-project/sglang · Apache-2.0 · nivel 3 · 67/100 · alternativa en «Servidores de inferencia de alto rendimiento»
+- **Repo:** https://github.com/sgl-project/sglang · Apache-2.0 · nivel 3 · 68/100 · alternativa en «Servidores de inferencia de alto rendimiento»
 - **Qué es:** SGLang, framework de inferencia para modelos de lenguaje, visión-lenguaje y difusión, de la comunidad sgl-project (LMSYS). Licencia Apache-2.0. Es muy activo (~39k estrellas, v0.5.23).
 - **Cuándo elegirlo:** Casos: Servir un modelo para una aplicación; Estudiar inferencia multimodal.
 - **Requisitos:** nivel 3: preparación pesada; uv; hardware y drivers compatibles; modelo con memoria suficiente; hardware prerequisites; API de IA: no; uv; hardware y drivers compatibles; modelo con memoria suficiente.
@@ -135,7 +135,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Xinference (`xinference`)
 
-- **Repo:** https://github.com/xorbitsai/inference · Apache-2.0 · nivel 3 · 66/100
+- **Repo:** https://github.com/xorbitsai/inference · Apache-2.0 · nivel 3 · 67/100
 - **Qué es:** Plataforma de inferencia de código abierto (Apache-2.0) de Xorbits, con edición Enterprise aparte. Activa.
 - **Cuándo elegirlo:** Casos: servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor; conectar Dify, LangChain o LlamaIndex a modelos propios.
 - **Requisitos:** nivel 3: preparación media, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no.
@@ -146,7 +146,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GPUStack (`gpustack`)
 
-- **Repo:** https://github.com/gpustack/gpustack · Apache-2.0 · nivel 3 · 62/100
+- **Repo:** https://github.com/gpustack/gpustack · Apache-2.0 · nivel 3 · 64/100
 - **Qué es:** Gestor de clústeres de GPU de código abierto (Apache-2.0) del equipo GPUStack (Seal). Activo.
 - **Cuándo elegirlo:** Casos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no.
@@ -157,7 +157,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### BentoML (`bentoml`)
 
-- **Repo:** https://github.com/bentoml/BentoML · Apache-2.0 · nivel 2 · 57/100
+- **Repo:** https://github.com/bentoml/BentoML · Apache-2.0 · nivel 2 · 59/100
 - **Qué es:** Framework de serving de código abierto (Apache-2.0) de BentoML, que ofrece la plataforma BentoCloud. Maduro.
 - **Cuándo elegirlo:** Casos: publicar un modelo de Transformers como API REST; empaquetar un LLM servido con vLLM en una imagen desplegable.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -168,7 +168,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-code-router (`claude-code-router`)
 
-- **Repo:** https://github.com/musistudio/claude-code-router · MIT · nivel 3 · 57/100 · alternativa en «Pasarelas y routers de proveedores LLM»
+- **Repo:** https://github.com/musistudio/claude-code-router · MIT · nivel 3 · 58/100 · alternativa en «Pasarelas y routers de proveedores LLM»
 - **Qué es:** Claude Code Router (CCR), pasarela local y plano de control para agentes de programación, de @musistudio. Licencia MIT. Es muy popular (~38k estrellas, v3.1.4).
 - **Cuándo elegirlo:** Casos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex.
 - **Requisitos:** nivel 3: preparación pesada; Node 22+ o app; proveedor y credenciales; agente de prueba; hardware prerequisites; API de IA: depends; Node 22+ o app; proveedor y credenciales; agente de prueba.
@@ -183,9 +183,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `litellm`, `omniroute`, `backdoor`
 - **Riesgos y avisos:** Alternativas (elige una): omniroute, backdoor, litellm. Usar modelos de terceros con Claude Code puede no estar soportado por Anthropic. Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada….
 
+### Portkey AI Gateway (`portkey-gateway`)
+
+- **Repo:** https://github.com/Portkey-AI/gateway · MIT · nivel 3 · 51/100
+- **Qué es:** Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.
+- **Cuándo elegirlo:** Casos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada.
+- **Requisitos:** nivel 3: preparación pesada, requiere clave de API; TypeScript, Dockerfile, package.json; API de IA: sí; Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido. Éxito: Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba.
+- **Riesgos y avisos:** Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.
+
 ### backdoor (`backdoor`)
 
-- **Repo:** https://github.com/ajsai47/backdoor · MIT · nivel 2 · 36/100 · alternativa en «Pasarelas y routers de proveedores LLM»
+- **Repo:** https://github.com/ajsai47/backdoor · MIT · nivel 2 · 34/100 · alternativa en «Pasarelas y routers de proveedores LLM»
 - **Qué es:** Backdoor, proxy de terceros de @ajsai47 que permite usar Claude Code con otros proveedores de modelos. Licencia MIT. Es pequeño (~300 estrellas, sin releases) y su último cambio es de mayo de 2026.
 - **Cuándo elegirlo:** Casos: Probar un backend local con Claude Code; Comparar proveedores compatibles.
 - **Requisitos:** nivel 2: preparación media; Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba; hardware prerequisites; API de IA: opcional; Sistema compatible; Claude Code; proveedor u Ollama; carpeta de prueba.
@@ -201,15 +211,14 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `litellm`, `omniroute`, `claude-code-router`
 - **Riesgos y avisos:** Alternativas (elige una): omniroute, claude-code-router, litellm. Proyecto pequeño y sin mantenimiento reciente. Es un adaptador independiente; afirmar privacidad local requiere revisar también búsquedas, telemetría y otras herramientas y no solo el endpoint del modelo.
 
-### Portkey AI Gateway (`portkey-gateway`)
+### TOON (`toon-format`)
 
-- **Repo:** https://github.com/Portkey-AI/gateway · MIT · nivel 3 · —/100
-- **Qué es:** Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.
-- **Cuándo elegirlo:** Casos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada.
-- **Requisitos:** nivel 3: preparación pesada, requiere clave de API; TypeScript, Dockerfile, package.json; API de IA: sí; Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Portkey-AI/gateway/blob/669825cbe89ee51569918b8f78a9db486fd69dd4/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala una versión posterior al mínimo corregido y prueba una llamada con texto ficticio y presupuesto reducido. Éxito: Puedes identificar el proveedor utilizado en la respuesta o el registro de prueba.
-- **Riesgos y avisos:** Usa 1.14.0 o posterior por el aviso; la versión publicada verificada fue 1.15.2. El modo gestionado y los proveedores tienen facturación independiente.
+- **Repo:** https://github.com/toon-format/toon · MIT · nivel 2 · 72/100
+- **Qué es:** TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.
+- **Cuándo elegirlo:** Casos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Node.js con npm y un proyecto con módulos ES.; Dos registros JSON ficticios con los mismos campos..
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install @toon-format/toon` — fuente: https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md
+- **Primera prueba propuesta (no ejecutada):** Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0. Éxito: La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON…
 
 ### rtk (`rtk`)
 
@@ -225,7 +234,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### headroom (`headroom`)
 
-- **Repo:** https://github.com/headroomlabs-ai/headroom · Apache-2.0 · nivel 2 · 60/100 · alternativa en «Compactar contexto y tokens»
+- **Repo:** https://github.com/headroomlabs-ai/headroom · Apache-2.0 · nivel 2 · 61/100 · alternativa en «Compactar contexto y tokens»
 - **Qué es:** Headroom, capa de compresión de contexto para agentes y LLM de Headroom Labs (paquete `headroom-ai` en PyPI y npm). Licencia Apache-2.0. Es muy activo (~80k estrellas, v0.44.0).
 - **Cuándo elegirlo:** Casos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python compatible; contenido de prueba; agente o cliente MCP si lo conectas; hardware prerequisites; API de IA: opcional; Python compatible; contenido de prueba; agente o cliente MCP si lo conectas.
@@ -237,7 +246,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GPTCache (`gptcache`)
 
-- **Repo:** https://github.com/zilliztech/GPTCache · MIT · nivel 2 · —/100
+- **Repo:** https://github.com/zilliztech/GPTCache · MIT · nivel 2 · 58/100
 - **Qué es:** Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.
 - **Cuándo elegirlo:** Casos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, requirements.txt, setup.py; API de IA: opcional; Python y un componente de embeddings y almacenamiento compatible; entorno de prueba con consultas ficticias..
@@ -247,22 +256,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LLMLingua (`llmlingua`)
 
-- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · —/100
+- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · 49/100
 - **Qué es:** Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.
 - **Cuándo elegirlo:** Casos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; hardware model_dependent; API de IA: no; Python, PyTorch y un modelo de compresión compatible con el hardware..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://llmlingua.com/
 - **Primera prueba propuesta (no ejecutada):** Comprime un texto público breve con un modelo local pequeño del proyecto. Éxito: Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas.
 - **Riesgos y avisos:** Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.
-
-### TOON (`toon-format`)
-
-- **Repo:** https://github.com/toon-format/toon · MIT · nivel 2 · —/100
-- **Qué es:** TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.
-- **Cuándo elegirlo:** Casos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Node.js con npm y un proyecto con módulos ES.; Dos registros JSON ficticios con los mismos campos..
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install @toon-format/toon` — fuente: https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md
-- **Primera prueba propuesta (no ejecutada):** Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0. Éxito: La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON…
 
 ### langfuse (`langfuse`)
 
@@ -276,7 +276,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   # Get a copy of the latest Langfuse repository
     git clone --depth=1 https://github.com/langfuse/langfuse.git
     cd langfuse
-  
+
     # Run the langfuse docker compose
     docker compose up
   ```
@@ -319,6 +319,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `langfuse`, `mlflow`, `phoenix`, `helicone`
 - **Riesgos y avisos:** Alternativas (elige una): langfuse, phoenix. Documenta configuración MCP para Claude Code, Codex y otros clientes; puede registrar Ollama, pero no sirve el modelo por sí mismo.
 
+### ccusage (`ccusage`)
+
+- **Repo:** https://github.com/ccusage/ccusage · MIT · nivel 2 · 71/100
+- **Qué es:** Una utilidad de terminal para medir el uso registrado por asistentes de programación.
+- **Cuándo elegirlo:** Casos: Identificar el día con más tokens en Claude Code.; Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan.
+- **Requisitos:** nivel 2: preparación media; Rust, package.json; API de IA: no; Node.js y npm compatibles con la versión que elijas, u otro ejecutor indicado en la guía.; Registros locales de al menos un cliente compatible; el modo offline requiere precios disponibles en caché..
+- **Instalación (documentada en la fuente; no ejecutada):** `npx ccusage@latest` — fuente: https://ccusage.com/guide/installation
+- **Primera prueba propuesta (no ejecutada):** Usa la ruta oficial de instalación, abre el informe diario de un cliente con actividad previa y fíjate en el periodo. Éxito: Aparece una tabla de tokens por día para ese cliente; la cifra de coste es una estimación.
+- **Combina con:** `claude-code` [20/terminal]
+- **Riesgos y avisos:** Puede leer registros de sesión. Usa un perfil de prueba para una primera revisión, un paquete de versión identificada y no publiques los registros.
+
 ### MLflow (`mlflow`)
 
 - **Repo:** https://github.com/mlflow/mlflow · Apache-2.0 · nivel 1 · 70/100 · alternativa en «Observabilidad y trazas de LLM»
@@ -333,7 +344,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### DeepEval (`deepeval`)
 
-- **Repo:** https://github.com/confident-ai/deepeval · Apache-2.0 · nivel 2 · 63/100 · alternativa en «Evaluación y pruebas de LLM»
+- **Repo:** https://github.com/confident-ai/deepeval · Apache-2.0 · nivel 2 · 64/100 · alternativa en «Evaluación y pruebas de LLM»
 - **Qué es:** DeepEval, framework open source de evaluación de LLM al estilo pytest, de Confident AI. Licencia Apache-2.0. Es muy activo (~19k estrellas, python-v4.2.4).
 - **Cuándo elegirlo:** Casos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; casos con respuestas conocidas; modelo evaluador y embeddings si se usan; hardware prerequisites; API de IA: opcional; Python; casos con respuestas conocidas; modelo evaluador y embeddings si se usan.
@@ -345,7 +356,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### loguru (`loguru`)
 
-- **Repo:** https://github.com/Delgan/loguru · MIT · nivel 2 · 63/100
+- **Repo:** https://github.com/Delgan/loguru · MIT · nivel 2 · 62/100
 - **Qué es:** Loguru, librería de logging para Python de @Delgan. Licencia MIT. Es madura y muy usada (~24k estrellas, 0.8.0).
 - **Cuándo elegirlo:** Casos: Depurar una automatización; Añadir logs legibles a una app.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; script de prueba; hardware prerequisites; API de IA: no; Python; script de prueba.
@@ -356,7 +367,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenLLMetry (`openllmetry`)
 
-- **Repo:** https://github.com/traceloop/openllmetry · Apache-2.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/traceloop/openllmetry · Apache-2.0 · nivel 2 · 62/100
 - **Qué es:** Conjunto de extensiones de OpenTelemetry de código abierto (Apache-2.0) de Traceloop, empresa que ofrece una plataforma comercial. Sus convenciones semánticas se han incorporado a OpenTelemetry. Activo.
 - **Cuándo elegirlo:** Casos: trazar llamadas a OpenAI, LangChain o Ollama en Grafana o Datadog; añadir observabilidad de LLM a una pila OpenTelemetry existente.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -367,7 +378,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LM Evaluation Harness (`lm-eval-harness`)
 
-- **Repo:** https://github.com/EleutherAI/lm-evaluation-harness · MIT · nivel 2 · 57/100
+- **Repo:** https://github.com/EleutherAI/lm-evaluation-harness · MIT · nivel 2 · 58/100
 - **Qué es:** Framework de evaluación de código abierto (MIT) de EleutherAI. Estándar de facto: es el motor del Open LLM Leaderboard de Hugging Face y lo usan muchos laboratorios. Activo.
 - **Cuándo elegirlo:** Casos: comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K; reproducir resultados de tablas de clasificación con la misma configuración.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; hardware model_dependent; API de IA: opcional; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -375,36 +386,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala con `pip install "lm_eval[hf]"` y evalúa un modelo pequeño de Hugging Face en una tarea ligera con `lm_eval --model hf --tasks ...`. Éxito: Obtienes una tabla con la métrica de la tarea y su error estándar.
 - **Combina con:** `vllm` [23/serving], `sglang` [23/serving], `transformers` [24/entrenamiento], `torchtune` [24/entrenamiento], `gemma` [24/modelos]
 - **Riesgos y avisos:** Las puntuaciones dependen de la versión de la tarea y del prompt; regístralas junto a los resultados.
-
-### Claude-Code-Usage-Monitor (`claude-code-usage-monitor`)
-
-- **Repo:** https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor · MIT · nivel 2 · 53/100
-- **Qué es:** Claude Code Usage Monitor (`claude-monitor` en PyPI), monitor de terminal del uso de Claude Code, de @Maciek-roboblog. Licencia MIT. Es popular (~9k estrellas, v4.0.0) y su último cambio es de julio de 2026.
-- **Cuándo elegirlo:** Casos: Revisar el uso de una sesión; Estudiar alertas y proyecciones de cuota.
-- **Requisitos:** nivel 2: preparación media; uv o Python compatible; datos de uso de Claude Code; hardware prerequisites; API de IA: no; uv o Python compatible; datos de uso de Claude Code.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md
-
-  ```bash
-  # Install directly from PyPI with uv (easiest)
-  uv tool install claude-monitor
-  
-  # Run from anywhere
-  claude-monitor  # or cmonitor, ccmonitor for short
-  ```
-- **Primera prueba propuesta (no ejecutada):** Abre el monitor y compara una cifra con su etiqueta de procedencia y fecha Éxito: Puedes distinguir consumo observado, estado oficial y previsión
-- **Combina con:** `claude-code` [20/terminal], `rtk` [23/tokens], `headroom` [23/tokens], `claude-token-efficient` [2/metodologia]
-- **Riesgos y avisos:** Sin alternativas declaradas. Los límites por plan son estimaciones si no hay datos oficiales. Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo.
-
-### NeMo Guardrails (`guardrails`)
-
-- **Repo:** https://github.com/NVIDIA-NeMo/Guardrails · Apache-2.0 · nivel 2 · 53/100
-- **Qué es:** NeMo Guardrails, toolkit open source de NVIDIA para añadir barreras programables a aplicaciones conversacionales con LLM. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activo (~7.5k estrellas, v0.24.1).
-- **Cuándo elegirlo:** Casos: Guiar un asistente de soporte; Evaluar controles de una app propia.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; app conversacional; configuración Colang; modelo según rails; hardware prerequisites; API de IA: depends; Python; app conversacional; configuración Colang; modelo según rails.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install nemoguardrails` — fuente: https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/README.md
-- **Primera prueba propuesta (no ejecutada):** Define un flujo de tema permitido y prueba una pregunta dentro y otra fuera de ese tema Éxito: Puedes comprobar la regla aplicada y registrar sus límites
-- **Combina con:** `langchain` [3/py], `promptfoo`, `vllm` [23/serving]
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. No confundir con Guardrails AI (otro proyecto, no catalogado). Telemetría activa por defecto. NeMo Guardrails no garantiza seguridad total ni adecuación a todo sector; develop es desarrollo y la versión publicada debe elegirse de forma explícita.
 
 ### Phoenix (`phoenix`)
 
@@ -423,9 +404,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `langfuse`, `opik`, `mlflow`, `helicone`
 - **Riesgos y avisos:** Elastic License 2.0 (source-available, no OSI): limita ofrecerlo como servicio gestionado. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): langfuse, opik. La licencia ELv2 prohíbe ofrecerlo como servicio gestionado a terceros. El README declara Elastic License 2.0, por lo que no debe etiquetarse como licencia abierta sin restricciones; ofrece MCP y plugins Claude Code y Codex.
 
+### NeMo Guardrails (`guardrails`)
+
+- **Repo:** https://github.com/NVIDIA-NeMo/Guardrails · Apache-2.0 · nivel 2 · 52/100
+- **Qué es:** NeMo Guardrails, toolkit open source de NVIDIA para añadir barreras programables a aplicaciones conversacionales con LLM. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activo (~7.5k estrellas, v0.24.1).
+- **Cuándo elegirlo:** Casos: Guiar un asistente de soporte; Evaluar controles de una app propia.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; app conversacional; configuración Colang; modelo según rails; hardware prerequisites; API de IA: depends; Python; app conversacional; configuración Colang; modelo según rails.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install nemoguardrails` — fuente: https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/README.md
+- **Primera prueba propuesta (no ejecutada):** Define un flujo de tema permitido y prueba una pregunta dentro y otra fuera de ese tema Éxito: Puedes comprobar la regla aplicada y registrar sus límites
+- **Combina con:** `langchain` [3/py], `promptfoo`, `vllm` [23/serving]
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. No confundir con Guardrails AI (otro proyecto, no catalogado). Telemetría activa por defecto. NeMo Guardrails no garantiza seguridad total ni adecuación a todo sector; develop es desarrollo y la versión publicada debe elegirse de forma explícita.
+
 ### Ragas (`ragas`)
 
-- **Repo:** https://github.com/vibrantlabsai/ragas · Apache-2.0 · nivel 2 · 51/100 · alternativa en «Evaluación y pruebas de LLM»
+- **Repo:** https://github.com/vibrantlabsai/ragas · Apache-2.0 · nivel 2 · 52/100 · alternativa en «Evaluación y pruebas de LLM»
 - **Qué es:** Ragas, librería para evaluar y optimizar aplicaciones de LLM y RAG, ahora bajo la organización vibrantlabsai. Licencia Apache-2.0. Es activa (~16k estrellas, v0.4.4).
 - **Cuándo elegirlo:** Casos: Medir un RAG con datos controlados; Comparar versiones de una cadena.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; dataset de evaluación; modelo y embeddings configurados; hardware prerequisites; API de IA: depends; Python; dataset de evaluación; modelo y embeddings configurados.
@@ -434,6 +426,25 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `llama-index` [3/py], `langfuse`, `langchain` [3/py], `opik`
 - **Alternativas:** `promptfoo`, `deepeval`
 - **Riesgos y avisos:** Alternativas (elige una): deepeval, promptfoo. El repo se movió de explodinggradients/ragas a vibrantlabsai/ragas (GitHub redirige). El ejemplo usa OpenAI y algunas métricas consumen modelos y embeddings; el proveedor y coste dependen de la métrica elegida y deben configurarse explícitamente.
+
+### Claude-Code-Usage-Monitor (`claude-code-usage-monitor`)
+
+- **Repo:** https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor · MIT · nivel 2 · 51/100
+- **Qué es:** Claude Code Usage Monitor (`claude-monitor` en PyPI), monitor de terminal del uso de Claude Code, de @Maciek-roboblog. Licencia MIT. Es popular (~9k estrellas, v4.0.0) y su último cambio es de julio de 2026.
+- **Cuándo elegirlo:** Casos: Revisar el uso de una sesión; Estudiar alertas y proyecciones de cuota.
+- **Requisitos:** nivel 2: preparación media; uv o Python compatible; datos de uso de Claude Code; hardware prerequisites; API de IA: no; uv o Python compatible; datos de uso de Claude Code.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md
+
+  ```bash
+  # Install directly from PyPI with uv (easiest)
+  uv tool install claude-monitor
+
+  # Run from anywhere
+  claude-monitor  # or cmonitor, ccmonitor for short
+  ```
+- **Primera prueba propuesta (no ejecutada):** Abre el monitor y compara una cifra con su etiqueta de procedencia y fecha Éxito: Puedes distinguir consumo observado, estado oficial y previsión
+- **Combina con:** `claude-code` [20/terminal], `rtk` [23/tokens], `headroom` [23/tokens], `claude-token-efficient` [2/metodologia]
+- **Riesgos y avisos:** Sin alternativas declaradas. Los límites por plan son estimaciones si no hay datos oficiales. Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo.
 
 ### Helicone (`helicone`)
 
@@ -446,17 +457,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `litellm` [23/serving], `langchain` [3/py], `open-webui` [8/chats]
 - **Alternativas:** `langfuse`, `opik`, `mlflow`, `phoenix`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): langfuse. Al usar la pasarela, las peticiones pasan por Helicone: valora la privacidad.
-
-### ccusage (`ccusage`)
-
-- **Repo:** https://github.com/ccusage/ccusage · MIT · nivel 2 · —/100
-- **Qué es:** Una utilidad de terminal para medir el uso registrado por asistentes de programación.
-- **Cuándo elegirlo:** Casos: Identificar el día con más tokens en Claude Code.; Comparar sesiones registradas por Codex y Antigravity sin confundir la estimación con cargos del plan.
-- **Requisitos:** nivel 2: preparación media; Rust, package.json; API de IA: no; Node.js y npm compatibles con la versión que elijas, u otro ejecutor indicado en la guía.; Registros locales de al menos un cliente compatible; el modo offline requiere precios disponibles en caché..
-- **Instalación (documentada en la fuente; no ejecutada):** `npx ccusage@latest` — fuente: https://ccusage.com/guide/installation
-- **Primera prueba propuesta (no ejecutada):** Usa la ruta oficial de instalación, abre el informe diario de un cliente con actividad previa y fíjate en el periodo. Éxito: Aparece una tabla de tokens por día para ese cliente; la cifra de coste es una estimación.
-- **Combina con:** `claude-code` [20/terminal]
-- **Riesgos y avisos:** Puede leer registros de sesión. Usa un perfil de prueba para una primera revisión, un paquete de versión identificada y no publiques los registros.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP); requiere clave de API
 
+**Puntuación de calidad** 48/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Permite que asistentes busquen funciones y conceptos por significado en una base de código a través de un conector MCP.

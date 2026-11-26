@@ -18,15 +18,24 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `toon-format` | Convierte listas de objetos JSON a un texto con encabezado y filas para… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
 | `rtk` | Proxy de terminal que compacta salidas de comandos para reducir el contexto que… | 1 Básico | 69 | Apache-2.0 (OSI permisiva) | recomendado |
-| `headroom` | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
-| `gptcache` | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | — | MIT | sin grupo |
-| `llmlingua` | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | — | MIT | sin grupo |
-| `toon-format` | Convierte listas de objetos JSON a un texto con encabezado y filas para… | 2 Intermedio | — | MIT | sin grupo |
+| `headroom` | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | alternativa |
+| `gptcache` | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `llmlingua` | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### TOON (`toon-format`)
+
+- **Repo:** https://github.com/toon-format/toon · MIT · nivel 2 · 72/100
+- **Qué es:** TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.
+- **Cuándo elegirlo:** Casos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Node.js con npm y un proyecto con módulos ES.; Dos registros JSON ficticios con los mismos campos..
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install @toon-format/toon` — fuente: https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md
+- **Primera prueba propuesta (no ejecutada):** Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0. Éxito: La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON…
 
 ### rtk (`rtk`)
 
@@ -42,7 +51,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### headroom (`headroom`)
 
-- **Repo:** https://github.com/headroomlabs-ai/headroom · Apache-2.0 · nivel 2 · 60/100 · alternativa en «Compactar contexto y tokens»
+- **Repo:** https://github.com/headroomlabs-ai/headroom · Apache-2.0 · nivel 2 · 61/100 · alternativa en «Compactar contexto y tokens»
 - **Qué es:** Headroom, capa de compresión de contexto para agentes y LLM de Headroom Labs (paquete `headroom-ai` en PyPI y npm). Licencia Apache-2.0. Es muy activo (~80k estrellas, v0.44.0).
 - **Cuándo elegirlo:** Casos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python compatible; contenido de prueba; agente o cliente MCP si lo conectas; hardware prerequisites; API de IA: opcional; Python compatible; contenido de prueba; agente o cliente MCP si lo conectas.
@@ -54,7 +63,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GPTCache (`gptcache`)
 
-- **Repo:** https://github.com/zilliztech/GPTCache · MIT · nivel 2 · —/100
+- **Repo:** https://github.com/zilliztech/GPTCache · MIT · nivel 2 · 58/100
 - **Qué es:** Reutiliza respuestas de consultas parecidas a un modelo mediante una caché semántica con reglas de comparación configurables.
 - **Cuándo elegirlo:** Casos: Evitar recalcular preguntas repetidas en un prototipo.; Comparar falsos aciertos de caché con dos preguntas casi iguales.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, requirements.txt, setup.py; API de IA: opcional; Python y un componente de embeddings y almacenamiento compatible; entorno de prueba con consultas ficticias..
@@ -64,22 +73,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LLMLingua (`llmlingua`)
 
-- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · —/100
+- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · 49/100
 - **Qué es:** Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.
 - **Cuándo elegirlo:** Casos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; hardware model_dependent; API de IA: no; Python, PyTorch y un modelo de compresión compatible con el hardware..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://llmlingua.com/
 - **Primera prueba propuesta (no ejecutada):** Comprime un texto público breve con un modelo local pequeño del proyecto. Éxito: Obtienes dos textos y puedes comparar tamaño, instrucciones conservadas y pérdidas.
 - **Riesgos y avisos:** Menos tokens no garantiza la misma calidad; si después llamas a un LLM remoto, su tarifa es independiente.
-
-### TOON (`toon-format`)
-
-- **Repo:** https://github.com/toon-format/toon · MIT · nivel 2 · —/100
-- **Qué es:** TOON es un formato de texto y una biblioteca JavaScript de referencia para codificar datos JSON.
-- **Cuándo elegirlo:** Casos: Representar un inventario ficticio de productos con los mismos tres campos en cada fila.; Preparar una tabla de registros con idéntica estructura para comparar el tamaño con JSON compacto.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Node.js con npm y un proyecto con módulos ES.; Dos registros JSON ficticios con los mismos campos..
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install @toon-format/toon` — fuente: https://github.com/toon-format/toon/blob/92d7fc6d8af920afc99d1b6533cfc976c472fe7d/README.md
-- **Primera prueba propuesta (no ejecutada):** Usa encode con dos registros ficticios que compartan campos, siguiendo el ejemplo del README de la versión 4.4.0. Éxito: La salida conserva ambos registros y enumera los campos en el encabezado. Revisa los valores y compárala con el JSON…
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

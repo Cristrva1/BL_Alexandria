@@ -23,25 +23,25 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=4
 | `firecrawl` | crawlers | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a… | 2 Intermedio | 71 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `scrapling` | crawlers | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de… | 2 Intermedio | 69 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `crawlee-python` | crawlers | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y… | 2 Intermedio | 66 | Apache-2.0 (OSI permisiva) | recomendado |
-| `katana` | crawlers | Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
 | `crawlee` | crawlers | Framework moderno de crawling para Node.js con antibloqueo integrado, que… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | alternativa |
+| `katana` | crawlers | Crawler web de ProjectDiscovery en Go, en modo estándar o headless, con… | 1 Básico | 63 | MIT (OSI permisiva) | sin grupo |
 | `defuddle` | crawlers | Biblioteca para extraer el contenido principal de una página y convertirlo en… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
 | `colly` | crawlers | Framework de scraping y crawling para Go: callbacks por selector, límites por… | 2 Intermedio | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `jina-reader` | crawlers | Servicio que convierte cualquier URL en Markdown listo para LLM con solo… | 1 Básico | 52 | Apache-2.0 (OSI permisiva) | alternativa |
-| `awesome-web-scraping` | crawlers | Directorio de bibliotecas, herramientas y recursos para scraping web y… | 1 Básico | 48 | CC-BY-4.0 (OSI permisiva) | sin grupo |
+| `awesome-web-scraping` | crawlers | Directorio de bibliotecas, herramientas y recursos para scraping web y… | 1 Básico | 45 | CC-BY-4.0 (OSI permisiva) | sin grupo |
 | `maxun` | llm | Plataforma sin código para convertir sitios web en APIs y hojas de datos… | 2 Intermedio | 70 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `scrapegraph-ai` | llm | Framework de scraping en Python basado en grafos potenciado por LLM, donde… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
-| `llm-scraper` | llm | Librería TypeScript que convierte cualquier página web en datos estructurados… | 2 Intermedio | 47 | MIT (OSI permisiva) | alternativa |
-| `last30days-skill` | busqueda | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket… | 1 Básico | 73 | MIT (OSI permisiva) | sin grupo |
+| `llm-scraper` | llm | Librería TypeScript que convierte cualquier página web en datos estructurados… | 2 Intermedio | 44 | MIT (OSI permisiva) | alternativa |
 | `rsshub` | busqueda | Generador de feeds RSS para miles de webs y redes sin RSS propio; instancia… | 1 Básico | 73 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `changedetection` | busqueda | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | 1 Básico | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `last30days-skill` | busqueda | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
 | `searxng` | busqueda | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal… | 1 Básico | 69 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `agent-reach` | busqueda | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
 | `archivebox` | busqueda | Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
 | `freshrss` | busqueda | Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps… | 1 Básico | 65 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `agent-reach` | busqueda | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube… | 1 Básico | 64 | MIT (OSI permisiva) | sin grupo |
 | `miniflux` | busqueda | Lector de feeds minimalista y rápido en Go sobre PostgreSQL, con privacidad… | 1 Básico | 58 | Apache-2.0 (OSI permisiva) | alternativa |
 | `wallabag` | busqueda | Aplicación autoalojada para guardar páginas web y leerlas más tarde sin… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `vane` | busqueda | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
+| `vane` | busqueda | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity… | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
 | `yt-dlp` | social | Descargador de audio y video por línea de comandos compatible con miles de… | 1 Básico | 80 | Unlicense (OSI permisiva) | sin grupo |
 | `spotdl` | social | CLI que toma listas y canciones de Spotify, busca coincidencias en YouTube y… | 1 Básico | 64 | MIT (OSI permisiva) | sin grupo |
 | `instaloader` | social | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
@@ -75,7 +75,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   crawl4ai-setup        # installs the browser, once
   ```
 - **Primera prueba propuesta (no ejecutada):** Convierte una página de prueba a Markdown y después extrae dos campos sin LLM Éxito: Puedes comparar texto y campos con la página
-- **Combina con:** `ollama` [8/motores], `qdrant` [6/vectores], `litellm` [23/serving], `tools` [0/hub]
+- **Combina con:** `ollama` [8/motores], `qdrant` [6/vectores], `litellm` [23/serving]
 - **Alternativas:** `firecrawl`, `jina-reader`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): jina-reader. firecrawl cumple una función parecida. gpt-researcher no trae un scraper de Crawl4AI (su carpeta de scrapers incluye…. La lectura básica no necesita modelo; no confundas la clave del servicio de crawling con una clave del proveedor LLM.
 
@@ -101,7 +101,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   pip install "scrapling[fetchers]"
-      
+
       scrapling install           # normal install
   ```
 - **Primera prueba propuesta (no ejecutada):** Extrae nombre y precio de tres productos de una página de prueba mediante selectores Éxito: Obtienes tres registros que coinciden con el HTML
@@ -120,17 +120,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `crawlee`
 - **Riesgos y avisos:** Sin alternativas declaradas. Se quita la combinación con scrapy por ser frameworks equivalentes. Respeta los términos de uso y robots.txt de cada sitio y la…. No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping.
 
-### Katana (`katana`)
-
-- **Repo:** https://github.com/projectdiscovery/katana · MIT · nivel 1 · 66/100
-- **Qué es:** Crawler de código abierto (MIT) de ProjectDiscovery, el equipo de nuclei y subfinder. Muy activo y orientado a reconocimiento de seguridad.
-- **Cuándo elegirlo:** Casos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas.
-- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `go install github.com/projectdiscovery/katana/cmd/katana@latest` — fuente: https://github.com/projectdiscovery/katana/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** Ejecuta la imagen Docker oficial contra el sitio de ejemplo books.toscrape.com que usa el README. Éxito: Katana lista las URLs descubiertas sin errores.
-- **Combina con:** `mitmproxy` [16/pruebas], `duckdb` [25/datos], `claude-code` [20/terminal], `theharvester` [10/osint], `nuclei` [16/pruebas], `subfinder` [16/reconocimiento]
-- **Riesgos y avisos:** Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.
-
 ### crawlee (`crawlee`)
 
 - **Repo:** https://github.com/apify/crawlee · Apache-2.0 · nivel 2 · 65/100 · alternativa en «Crawlee (Node.js y Python)»
@@ -142,6 +131,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `playwright` [32/bibliotecas], `defuddle`, `llm-scraper` [4/llm], `awesome-web-scraping`, `camoufox` [32/motores-web]
 - **Alternativas:** `crawlee-python`
 - **Riesgos y avisos:** Sin alternativas declaradas. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales. El generador ofrece plantillas; elige HTTP para HTML sencillo y navegador cuando sea necesario.
+
+### Katana (`katana`)
+
+- **Repo:** https://github.com/projectdiscovery/katana · MIT · nivel 1 · 63/100
+- **Qué es:** Crawler de código abierto (MIT) de ProjectDiscovery, el equipo de nuclei y subfinder. Muy activo y orientado a reconocimiento de seguridad.
+- **Cuándo elegirlo:** Casos: descubrir los endpoints de una aplicación propia antes de una auditoría autorizada; mapear rutas generadas por JavaScript en un sitio de pruebas.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `go install github.com/projectdiscovery/katana/cmd/katana@latest` — fuente: https://github.com/projectdiscovery/katana/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** Ejecuta la imagen Docker oficial contra el sitio de ejemplo books.toscrape.com que usa el README. Éxito: Katana lista las URLs descubiertas sin errores.
+- **Combina con:** `mitmproxy` [16/pruebas], `duckdb` [25/datos], `claude-code` [20/terminal], `theharvester` [10/osint], `nuclei` [16/pruebas], `subfinder` [16/reconocimiento]
+- **Riesgos y avisos:** Herramienta de reconocimiento: define siempre el alcance permitido antes de ejecutarla.
 
 ### defuddle (`defuddle`)
 
@@ -184,7 +184,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-web-scraping (`awesome-web-scraping`)
 
-- **Repo:** https://github.com/lorien/awesome-web-scraping · CC-BY-4.0 · nivel 1 · 48/100
+- **Repo:** https://github.com/lorien/awesome-web-scraping · CC-BY-4.0 · nivel 1 · 45/100
 - **Qué es:** Lista de paquetes, servicios y manuales de web scraping, de @lorien. GitHub muestra licencia NOASSERTION. Es una lista veterana (~8k estrellas) que se sigue actualizando.
 - **Cuándo elegirlo:** Casos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; lenguaje o formato objetivo; hardware prerequisites; API de IA: no; Navegador; lenguaje o formato objetivo.
@@ -215,7 +215,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   pip install scrapegraphai
-  
+
   # IMPORTANT (for fetching websites content)
   playwright install
   ```
@@ -226,7 +226,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### llm-scraper (`llm-scraper`)
 
-- **Repo:** https://github.com/mishushakov/llm-scraper · MIT · nivel 2 · 47/100 · alternativa en «Scraping guiado por LLM»
+- **Repo:** https://github.com/mishushakov/llm-scraper · MIT · nivel 2 · 44/100 · alternativa en «Scraping guiado por LLM»
 - **Qué es:** Librería TypeScript para extraer datos estructurados de cualquier página web con LLM, de @mishushakov. Licencia MIT. Es estable (~7k estrellas, sin releases) y su versión 2.0 usa el Vercel AI SDK 6.
 - **Cuándo elegirlo:** Casos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node.js; Playwright; esquema Zod; modelo elegido; hardware prerequisites; API de IA: depends; Node.js; Playwright; esquema Zod; modelo elegido.
@@ -235,23 +235,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `playwright` [32/bibliotecas], `vercel-ai` [3/ts], `ollama` [8/motores], `crawlee` [4/crawlers]
 - **Alternativas:** `scrapegraph-ai`, `maxun`
 - **Riesgos y avisos:** Alternativas (elige una): maxun. Se quita la combinación con firecrawl por no estar documentada. Respeta los términos de uso y robots.txt de cada sitio y la…. Instala el adaptador del proveedor además de llm-scraper y descarga el navegador de Playwright.
-
-### last30days (`last30days-skill`)
-
-- **Repo:** https://github.com/mvanhorn/last30days-skill · MIT · nivel 1 · 73/100
-- **Qué es:** Skill de investigación que resume lo ocurrido en los últimos 30 días sobre un tema a partir de señales sociales (votos, likes, mercados de predicción), de @mvanhorn. Licencia MIT. Es muy popular y activa (~68k estrellas, v4.0.5).
-- **Cuándo elegirlo:** Casos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta.
-- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; dependencias de los canales; credenciales solo donde se indiquen; hardware prerequisites; API de IA: opcional; Agente compatible; dependencias de los canales; credenciales solo donde se indiquen.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/mvanhorn/last30days-skill/blob/main/README.md
-
-  ```bash
-  /plugin marketplace add mvanhorn/last30days-skill
-  /plugin install last30days
-  ```
-- **Primera prueba propuesta (no ejecutada):** Investiga un tema concreto y exige fechas, enlaces y distinción entre opinión y evidencia Éxito: Puedes abrir las fuentes y verificar que corresponden al periodo solicitado
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `agent-reach`
-- **Alternativas:** `social-media-research-skills`
-- **Riesgos y avisos:** Alternativas (elige una): social-media-research-skills. Investigar a personas concretas exige cuidado con la privacidad. No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM.
 
 ### RSSHub (`rsshub`)
 
@@ -279,6 +262,23 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `claude-code` [20/terminal], `activepieces` [1/motores], `archivebox`, `cloud-mail` [18/marketing], `huginn` [1/motores]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas. MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros.
 
+### last30days (`last30days-skill`)
+
+- **Repo:** https://github.com/mvanhorn/last30days-skill · MIT · nivel 1 · 70/100
+- **Qué es:** Skill de investigación que resume lo ocurrido en los últimos 30 días sobre un tema a partir de señales sociales (votos, likes, mercados de predicción), de @mvanhorn. Licencia MIT. Es muy popular y activa (~68k estrellas, v4.0.5).
+- **Cuándo elegirlo:** Casos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta.
+- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; dependencias de los canales; credenciales solo donde se indiquen; hardware prerequisites; API de IA: opcional; Agente compatible; dependencias de los canales; credenciales solo donde se indiquen.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/mvanhorn/last30days-skill/blob/main/README.md
+
+  ```bash
+  /plugin marketplace add mvanhorn/last30days-skill
+  /plugin install last30days
+  ```
+- **Primera prueba propuesta (no ejecutada):** Investiga un tema concreto y exige fechas, enlaces y distinción entre opinión y evidencia Éxito: Puedes abrir las fuentes y verificar que corresponden al periodo solicitado
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `agent-reach`
+- **Alternativas:** `social-media-research-skills`
+- **Riesgos y avisos:** Alternativas (elige una): social-media-research-skills. Investigar a personas concretas exige cuidado con la privacidad. No todas las fuentes están activas ni disponibles sin clave; compatibilidad por Agent Skills y no por compartir proveedor LLM.
+
 ### SearXNG (`searxng`)
 
 - **Repo:** https://github.com/searxng/searxng · AGPL-3.0 · nivel 1 · 69/100
@@ -289,17 +289,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Realiza una búsqueda y compara las fuentes de dos resultados Éxito: Ves resultados agregados y puedes abrir su origen
 - **Combina con:** `gpt-researcher` [21/research], `open-webui` [8/chats], `vane`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. No expongas tu instancia sin limitación de peticiones. La privacidad del metabuscador no vuelve locales las consultas enviadas a motores externos.
-
-### Agent-Reach (`agent-reach`)
-
-- **Repo:** https://github.com/Panniantong/Agent-Reach · MIT · nivel 1 · 67/100
-- **Qué es:** Herramienta para que agentes de IA de línea de comandos busquen y lean plataformas a las que no llegan solos (X, Reddit, YouTube, Xiaohongshu y otras), de @Panniantong. Licencia MIT.
-- **Cuándo elegirlo:** Casos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido.
-- **Requisitos:** nivel 1: preparación sencilla; Agente con terminal; uv; sesiones de sitios solo cuando corresponda; hardware prerequisites; API de IA: opcional; Agente con terminal; uv; sesiones de sitios solo cuando corresponda.
-- **Instalación (documentada en la fuente; no ejecutada):** `uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip` — fuente: https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md
-- **Primera prueba propuesta (no ejecutada):** Lista los canales y lee un README público de GitHub antes de añadir canales opcionales Éxito: Puedes distinguir canales disponibles, autenticados y experimentales
-- **Combina con:** `claude-code` [20/terminal], `openclaw` [21/asistentes], `last30days-skill`
-- **Riesgos y avisos:** Sin alternativas declaradas. Instala solo desde GitHub (hay un paquete homónimo en PyPI que no es este). El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial.
 
 ### ArchiveBox (`archivebox`)
 
@@ -323,6 +312,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `rsshub`, `wallabag`, `coolify` [22/infraestructura]
 - **Alternativas:** `miniflux`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): miniflux.
+
+### Agent-Reach (`agent-reach`)
+
+- **Repo:** https://github.com/Panniantong/Agent-Reach · MIT · nivel 1 · 64/100
+- **Qué es:** Herramienta para que agentes de IA de línea de comandos busquen y lean plataformas a las que no llegan solos (X, Reddit, YouTube, Xiaohongshu y otras), de @Panniantong. Licencia MIT.
+- **Cuándo elegirlo:** Casos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido.
+- **Requisitos:** nivel 1: preparación sencilla; Agente con terminal; uv; sesiones de sitios solo cuando corresponda; hardware prerequisites; API de IA: opcional; Agente con terminal; uv; sesiones de sitios solo cuando corresponda.
+- **Instalación (documentada en la fuente; no ejecutada):** `uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip` — fuente: https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md
+- **Primera prueba propuesta (no ejecutada):** Lista los canales y lee un README público de GitHub antes de añadir canales opcionales Éxito: Puedes distinguir canales disponibles, autenticados y experimentales
+- **Combina con:** `claude-code` [20/terminal], `openclaw` [21/asistentes], `last30days-skill`
+- **Riesgos y avisos:** Sin alternativas declaradas. Instala solo desde GitHub (hay un paquete homónimo en PyPI que no es este). El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial.
 
 ### Miniflux (`miniflux`)
 
@@ -349,7 +349,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Vane (`vane`)
 
-- **Repo:** https://github.com/ItzCrazyKns/Vane · MIT · nivel 1 · 57/100
+- **Repo:** https://github.com/ItzCrazyKns/Vane · MIT · nivel 1 · 54/100
 - **Qué es:** Motor de respuestas con IA centrado en la privacidad que se ejecuta en tu propio equipo, de @ItzCrazyKns. Licencia MIT. Es popular (~38k estrellas, v1.12.2) y su último cambio es de septiembre de 2026.
 - **Cuándo elegirlo:** Casos: Investigar un tema con citas; Consultar la web usando Ollama.
 - **Requisitos:** nivel 1: preparación sencilla; Docker; modelo local accesible o clave de proveedor; hardware prerequisites; API de IA: depends; Docker; modelo local accesible o clave de proveedor.

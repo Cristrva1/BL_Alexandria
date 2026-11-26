@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -53,7 +53,7 @@ Grupo **Automatización de navegador y pruebas E2E**: playwright ocupa la posici
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **playwright** (esta ficha) ⭐ recomendado | 78 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
+| 1 | **playwright** (esta ficha) ⭐ recomendado | 79 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
 | 2 | [Puppeteer](puppeteer.md) | 72 | Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas. |
 | 3 | [Cypress](cypress.md) | 65 | Si haces pruebas de componentes y E2E de frontend dentro del navegador. |
 | 4 | [WebdriverIO](webdriverio.md) | 60 | Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js. |

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

@@ -47,13 +47,13 @@ Grupo **Bases y librerías vectoriales**: LanceDB ocupa la posición 4 de 7 (alt
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Milvus](milvus.md) ⭐ recomendado | 77 | Si necesitas escala de miles de millones de vectores y despliegue distribuido. |
-| 2 | [Qdrant](qdrant.md) | 65 | Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local. |
-| 3 | [Chroma](chroma.md) | 63 | Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG. |
+| 1 | [Milvus](milvus.md) ⭐ recomendado | 78 | Si necesitas escala de miles de millones de vectores y despliegue distribuido. |
+| 2 | [Qdrant](qdrant.md) | 66 | Si buscas un servidor vectorial rápido en Rust con filtros ricos y buena experiencia local. |
+| 3 | [Chroma](chroma.md) | 64 | Si quieres empezar en minutos con una base vectorial embebida para prototipos de RAG. |
 | 4 | **LanceDB** (esta ficha) | 62 | Si quieres una base vectorial embebida sobre archivos, sin servidor. |
-| 5 | [pgvector](pgvector.md) | 59 | Si ya usas PostgreSQL y quieres vectores en la misma base. |
-| 6 | [Weaviate](weaviate.md) | 59 | Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados. |
-| 7 | [Faiss](faiss.md) | 56 | Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU. |
+| 5 | [Weaviate](weaviate.md) | 59 | Si quieres búsqueda híbrida (vectorial + palabras) y módulos de vectorización integrados. |
+| 6 | [Faiss](faiss.md) | 57 | Si necesitas una librería de búsqueda de similitud dentro de tu código, en CPU o GPU. |
+| 7 | [pgvector](pgvector.md) | 57 | Si ya usas PostgreSQL y quieres vectores en la misma base. |
 
 ## Acceso, coste y equipo
 

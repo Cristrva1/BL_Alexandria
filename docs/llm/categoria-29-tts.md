@@ -19,18 +19,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `omnivoice-studio` | App local de voz con modelos descargables,edición AGPL y una oferta comercial… | 2 Intermedio | 76 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `gpt-sovits` | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y… | 2 Intermedio | 72 | MIT (OSI permisiva) | recomendado |
+| `gpt-sovits` | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y… | 2 Intermedio | 69 | MIT (OSI permisiva) | recomendado |
 | `voxcpm` | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `elevenlabs-python` | SDK oficial de Python para la API de pago de ElevenLabs: voz sintética… | 2 Intermedio | 66 | MIT (OSI permisiva) | sin grupo |
-| `f5-tts` | Síntesis de voz con clonación a partir de pocos segundos de audio de… | 3 Avanzado | 63 | MIT (OSI permisiva) | alternativa |
-| `vibevoice` | Familia de modelos de voz de Microsoft con herramientas para generación y… | 3 Avanzado | 62 | MIT (OSI permisiva) | sin grupo |
+| `f5-tts` | Síntesis de voz con clonación a partir de pocos segundos de audio de… | 3 Avanzado | 64 | MIT (OSI permisiva) | alternativa |
 | `cosyvoice` | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | alternativa |
 | `fish-speech` | Herramientas y modelos de voz Fish Audio con licencias Community o Research… | 3 Avanzado | 61 | Fish Audio Community License 1.0 (no OSI) (source-available) | alternativa |
-| `rvc` | Interfaz y herramientas para convertir una grabación a otra voz mediante… | 2 Intermedio | 61 | MIT (OSI permisiva) | sin grupo |
+| `vibevoice` | Familia de modelos de voz de Microsoft con herramientas para generación y… | 3 Avanzado | 61 | MIT (OSI permisiva) | sin grupo |
 | `edge-tts` | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado… | 2 Intermedio | 60 | LGPL-3.0 (un archivo MIT) (OSI copyleft) | recomendado |
-| `index-tts` | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | 2 Intermedio | 56 | bilibili Model Use License (source-available) | alternativa |
-| `luxtts` | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | alternativa |
-| `kokoro` | Modelo y biblioteca de texto a voz para generar narración localmente con… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
+| `rvc` | Interfaz y herramientas para convertir una grabación a otra voz mediante… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `index-tts` | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | 2 Intermedio | 53 | bilibili Model Use License (source-available) | alternativa |
+| `luxtts` | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
+| `kokoro` | Modelo y biblioteca de texto a voz para generar narración localmente con… | 2 Intermedio | 48 | Apache-2.0 (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -50,7 +50,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### GPT-SoVITS (`gpt-sovits`)
 
-- **Repo:** https://github.com/RVC-Boss/GPT-SoVITS · MIT · nivel 2 · 72/100 · recomendado en «Clonación de voz y TTS multilingüe»
+- **Repo:** https://github.com/RVC-Boss/GPT-SoVITS · MIT · nivel 2 · 69/100 · recomendado en «Clonación de voz y TTS multilingüe»
 - **Qué es:** GPT-SoVITS, WebUI de TTS y conversión de voz con pocos ejemplos, de @RVC-Boss. Licencia MIT. Es muy popular (~65k estrellas, release 20250606v2pro).
 - **Cuándo elegirlo:** Casos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos.
 - **Requisitos:** nivel 2: preparación media; Conda; Python 3.10; PyTorch compatible; modelos; audio con permiso; GPU según tarea; hardware prerequisites; API de IA: no; Conda; Python 3.10; PyTorch compatible; modelos; audio con permiso; GPU según tarea.
@@ -59,7 +59,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   conda create -n GPTSoVits python=3.10
   conda activate GPTSoVits
-  
+
   pip install -r extra-req.txt --no-deps
   pip install -r requirements.txt
   ```
@@ -92,7 +92,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### F5-TTS (`f5-tts`)
 
-- **Repo:** https://github.com/SWivid/F5-TTS · MIT · nivel 3 · 63/100 · alternativa en «Clonación de voz y TTS multilingüe»
+- **Repo:** https://github.com/SWivid/F5-TTS · MIT · nivel 3 · 64/100 · alternativa en «Clonación de voz y TTS multilingüe»
 - **Qué es:** Proyecto de investigación de código abierto (código MIT) del equipo SWivid, publicado con su artículo en arXiv. Los pesos preentrenados son CC-BY-NC. Activo (modelo base v1 en marzo de 2025).
 - **Cuándo elegirlo:** Casos: generar narración con tu propia voz a partir de una muestra corta; prototipar voces para un proyecto de investigación sin uso comercial. Evítalo si no tienes el hardware o no aceptas la licencia de los pesos.
 - **Requisitos:** nivel 3: preparación media, necesita GPU; Python, Dockerfile, pyproject.toml; hardware model_dependent; API de IA: no; Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida..
@@ -101,17 +101,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `pytorch` [24/entrenamiento], `ffmpeg` [12/edicion], `gradio` [25/apps]
 - **Alternativas:** `gpt-sovits`, `cosyvoice`, `fish-speech`, `index-tts`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa de Fish Speech y CosyVoice para clonación de voz; revisa siempre la licencia de los pesos antes de usos comerciales.
-
-### VibeVoice (`vibevoice`)
-
-- **Repo:** https://github.com/microsoft/VibeVoice · MIT · nivel 3 · 62/100
-- **Qué es:** VibeVoice, familia de modelos de voz open source de Microsoft (TTS y ASR). Licencia MIT. Tiene ~57k estrellas; en septiembre de 2025 Microsoft desactivó el código de VibeVoice-TTS-1.5B tras detectar usos indebidos.
-- **Cuándo elegirlo:** Casos: Estudiar transcripción por hablantes; Probar generación de voz.
-- **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Modelo y guía específicos; Python y GPU según variante; audio autorizado; hardware prerequisites; API de IA: no; Modelo y guía específicos; Python y GPU según variante; audio autorizado.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/microsoft/VibeVoice.git` — fuente: https://github.com/microsoft/VibeVoice/blob/main/docs/setup_gradio_demo.md
-- **Primera prueba propuesta (no ejecutada):** Elige ASR o TTS y prueba una muestra corta siguiendo esa guía Éxito: Puedes distinguir transcripción, generación y variante del modelo
-- **Combina con:** `transformers` [24/entrenamiento], `open-notebook` [8/notebooklm], `pipecat` [29/voz-agentes], `ten-framework` [29/voz-agentes]
-- **Riesgos y avisos:** Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido. Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal.
 
 ### CosyVoice (`cosyvoice`)
 
@@ -148,9 +137,32 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `gpt-sovits`, `f5-tts`, `cosyvoice`, `index-tts`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): cosyvoice, gpt-sovits. Licencia no OSI: revisa los términos. La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida.
 
+### VibeVoice (`vibevoice`)
+
+- **Repo:** https://github.com/microsoft/VibeVoice · MIT · nivel 3 · 61/100
+- **Qué es:** VibeVoice, familia de modelos de voz open source de Microsoft (TTS y ASR). Licencia MIT. Tiene ~57k estrellas; en septiembre de 2025 Microsoft desactivó el código de VibeVoice-TTS-1.5B tras detectar usos indebidos.
+- **Cuándo elegirlo:** Casos: Estudiar transcripción por hablantes; Probar generación de voz.
+- **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Modelo y guía específicos; Python y GPU según variante; audio autorizado; hardware prerequisites; API de IA: no; Modelo y guía específicos; Python y GPU según variante; audio autorizado.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/microsoft/VibeVoice.git` — fuente: https://github.com/microsoft/VibeVoice/blob/main/docs/setup_gradio_demo.md
+- **Primera prueba propuesta (no ejecutada):** Elige ASR o TTS y prueba una muestra corta siguiendo esa guía Éxito: Puedes distinguir transcripción, generación y variante del modelo
+- **Combina con:** `transformers` [24/entrenamiento], `open-notebook` [8/notebooklm], `pipecat` [29/voz-agentes], `ten-framework` [29/voz-agentes]
+- **Riesgos y avisos:** Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido. Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal.
+
+### edge-tts (`edge-tts`)
+
+- **Repo:** https://github.com/rany2/edge-tts · LGPL-3.0 (un archivo MIT) · nivel 2 · 60/100 · recomendado en «TTS ligero y rápido»
+- **Qué es:** edge-tts, módulo Python y CLI no oficial para usar el servicio TTS en línea de Microsoft Edge, de @rany2. Licencia LGPL-3.0, salvo un archivo bajo MIT (GitHub muestra NOASSERTION). Es maduro (~13k estrellas, 7.3.1).
+- **Cuándo elegirlo:** Casos: Preparar una voz de prueba online; Explorar voces disponibles.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python y pipx; internet; texto no sensible; hardware prerequisites; API de IA: no; Python y pipx; internet; texto no sensible.
+- **Instalación (documentada en la fuente; no ejecutada):** `pipx install edge-tts` — fuente: https://github.com/rany2/edge-tts/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Genera un audio y subtítulos de una frase y escucha pronunciación y pausas Éxito: Puedes localizar MP3 y SRT y comprobar su contenido
+- **Combina con:** `moviepy` [30/motores], `whisper` [29/stt], `ffmpeg` [12/edicion], `short-video-factory` [12/generativo]
+- **Alternativas:** `luxtts`, `kokoro`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad. No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz.
+
 ### RVC WebUI (`rvc`)
 
-- **Repo:** https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI · MIT · nivel 2 · 61/100
+- **Repo:** https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI · MIT · nivel 2 · 58/100
 - **Qué es:** RVC (Retrieval-based Voice Conversion WebUI), framework para convertir el timbre de voz, de RVC-Project. Licencia MIT. Es muy popular (~39k estrellas, 2.3.260718); el README principal está en chino.
 - **Cuándo elegirlo:** Casos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS.
 - **Requisitos:** nivel 2: preparación media; Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo; hardware prerequisites; API de IA: no; Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo.
@@ -165,21 +177,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `gpt-sovits`, `ffmpeg` [12/edicion], `obs-studio` [12/edicion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Riesgo de suplantación de voz. RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal.
 
-### edge-tts (`edge-tts`)
-
-- **Repo:** https://github.com/rany2/edge-tts · LGPL-3.0 (un archivo MIT) · nivel 2 · 60/100 · recomendado en «TTS ligero y rápido»
-- **Qué es:** edge-tts, módulo Python y CLI no oficial para usar el servicio TTS en línea de Microsoft Edge, de @rany2. Licencia LGPL-3.0, salvo un archivo bajo MIT (GitHub muestra NOASSERTION). Es maduro (~13k estrellas, 7.3.1).
-- **Cuándo elegirlo:** Casos: Preparar una voz de prueba online; Explorar voces disponibles.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python y pipx; internet; texto no sensible; hardware prerequisites; API de IA: no; Python y pipx; internet; texto no sensible.
-- **Instalación (documentada en la fuente; no ejecutada):** `pipx install edge-tts` — fuente: https://github.com/rany2/edge-tts/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Genera un audio y subtítulos de una frase y escucha pronunciación y pausas Éxito: Puedes localizar MP3 y SRT y comprobar su contenido
-- **Combina con:** `moviepy` [30/motores], `whisper` [29/stt], `ffmpeg` [12/edicion], `short-video-factory` [12/generativo]
-- **Alternativas:** `luxtts`, `kokoro`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): kokoro. Servicio no oficial: riesgo de términos de uso y disponibilidad. No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz.
-
 ### IndexTTS (`index-tts`)
 
-- **Repo:** https://github.com/index-tts/index-tts · bilibili Model Use License · nivel 2 · 56/100 · alternativa en «Clonación de voz y TTS multilingüe»
+- **Repo:** https://github.com/index-tts/index-tts · bilibili Model Use License · nivel 2 · 53/100 · alternativa en «Clonación de voz y TTS multilingüe»
 - **Qué es:** IndexTTS, sistema de TTS zero-shot «de nivel industrial» con control de duración y emoción, de bilibili (organización index-tts). Usa el «bilibili Model Use License Agreement» propio (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Prototipar narración con duración controlada; Estudiar expresión de voz.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; uv; entorno compatible; pesos; GPU según configuración; audio autorizado; hardware prerequisites; API de IA: no; uv; entorno compatible; pesos; GPU según configuración; audio autorizado.
@@ -187,7 +187,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   git clone https://github.com/index-tts/index-tts.git && cd index-tts
-  
+
   pip install -U uv  # or see the link above for other install methods
   ```
 - **Primera prueba propuesta (no ejecutada):** Sintetiza una frase con duración acotada y comprueba pronunciación y tiempo real obtenido Éxito: Puedes identificar controles que afectaron al resultado
@@ -197,7 +197,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LuxTTS (`luxtts`)
 
-- **Repo:** https://github.com/ysharma3501/LuxTTS · Apache-2.0 · nivel 2 · 56/100 · alternativa en «TTS ligero y rápido»
+- **Repo:** https://github.com/ysharma3501/LuxTTS · Apache-2.0 · nivel 2 · 52/100 · alternativa en «TTS ligero y rápido»
 - **Qué es:** LuxTTS, modelo TTS ligero basado en ZipVoice para clonar voces, de @ysharma3501. Licencia Apache-2.0 para modelo y código. Es reciente (enero de 2026, ~5.6k estrellas) y no cambia desde junio de 2026.
 - **Cuándo elegirlo:** Casos: Preparar una narración local; Explorar adaptación de voz consentida.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; dependencias; modelo; equipo; voz con permiso; hardware prerequisites; API de IA: no; Python; dependencias; modelo; equipo; voz con permiso.
@@ -215,7 +215,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Kokoro (`kokoro`)
 
-- **Repo:** https://github.com/hexgrad/kokoro · Apache-2.0 · nivel 2 · 52/100 · alternativa en «TTS ligero y rápido»
+- **Repo:** https://github.com/hexgrad/kokoro · Apache-2.0 · nivel 2 · 48/100 · alternativa en «TTS ligero y rápido»
 - **Qué es:** kokoro, librería de inferencia para Kokoro-82M, modelo TTS de pesos abiertos de 82 millones de parámetros, de @hexgrad. Licencia Apache-2.0. Tiene ~10k estrellas, pero no cambia desde agosto de 2025.
 - **Cuándo elegirlo:** Casos: Narrar una nota propia; Probar una voz para una demo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; Kokoro y soundfile; espeak-ng según idioma; pesos; hardware prerequisites; API de IA: no; Python; Kokoro y soundfile; espeak-ng según idioma; pesos.

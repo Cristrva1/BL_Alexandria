@@ -18,12 +18,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `playwright` | bibliotecas | Framework de Microsoft para automatización y testing de navegadores Chromium… | 2 Intermedio | 78 | Apache-2.0 (OSI permisiva) | recomendado |
+| `playwright` | bibliotecas | Framework de Microsoft para automatización y testing de navegadores Chromium… | 2 Intermedio | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `puppeteer` | bibliotecas | Librería de Google para controlar Chrome y Firefox desde Node.js. | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | alternativa |
 | `cypress` | bibliotecas | Framework de pruebas end-to-end y de componentes para todo lo que corre en un… | 2 Intermedio | 65 | MIT (OSI permisiva) | alternativa |
 | `selenium` | bibliotecas | Framework veterano de automatización de navegadores con soporte para casi todos… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `webdriverio` | bibliotecas | Framework de automatización de navegadores y apps móviles para Node.js basado… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `flaresolverr` | bibliotecas | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `flaresolverr` | bibliotecas | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un… | 1 Básico | 55 | MIT (OSI permisiva) | sin grupo |
 | `browser-use` | agentes-web | Librería Python para que los LLM usen un navegador real y actúen en páginas sin… | 2 Intermedio | 73 | MIT (OSI permisiva) | recomendado |
 | `agent-browser` | agentes-web | CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | recomendado |
 | `stagehand` | agentes-web | SDK de Browserbase para automatizar el navegador mezclando código con acciones… | 2 Intermedio | 61 | MIT (OSI permisiva) | alternativa |
@@ -32,11 +32,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `nanobrowser` | agentes-web | Extensión de Chrome con un agente de IA que navega, hace clic y rellena… | 1 Básico | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `playwright-cli` | agentes-web | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les… | 1 Básico | 57 | Apache-2.0 (OSI permisiva) | alternativa |
 | `steel-browser` | agentes-web | API de navegador autoalojable para agentes y apps: sesiones de Chrome con… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `lightpanda` | motores-web | Navegador headless escrito en Zig para IA y automatización, mucho más ligero… | 1 Básico | 73 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `ladybird` | motores-web | Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado… | 4 Experto | 72 | BSD-2-Clause (OSI permisiva) | recomendado |
-| `lightpanda` | motores-web | Navegador headless escrito en Zig para IA y automatización, mucho más ligero… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `servo` | motores-web | Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar… | 4 Experto | 58 | MPL-2.0 (OSI copyleft) | alternativa |
-| `camoufox` | motores-web | Navegador basado en Firefox para scraping y agentes que genera una identidad de… | 2 Intermedio | 48 | MPL-2.0 (navegador) y MIT (paquetes de Python) (OSI copyleft) | sin grupo |
-| `kitesurf` | motores-web | Explora un motor experimental para renderizar páginas en Workers y obtener… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `kitesurf` | motores-web | Explora un motor experimental para renderizar páginas en Workers y obtener… | 3 Avanzado | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `camoufox` | motores-web | Navegador basado en Firefox para scraping y agentes que genera una identidad de… | 2 Intermedio | 49 | MPL-2.0 (navegador) y MIT (paquetes de Python) (OSI copyleft) | sin grupo |
 | `awesome-chrome-devtools` | recursos-web | Directorio de herramientas, clientes y recursos del ecosistema de Chrome… | 1 Básico | 43 | CC0-1.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -45,7 +45,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### playwright (`playwright`)
 
-- **Repo:** https://github.com/microsoft/playwright · Apache-2.0 · nivel 2 · 78/100 · recomendado en «Automatización de navegador y pruebas E2E»
+- **Repo:** https://github.com/microsoft/playwright · Apache-2.0 · nivel 2 · 79/100 · recomendado en «Automatización de navegador y pruebas E2E»
 - **Qué es:** Playwright, framework de automatización y pruebas web de Microsoft. Licencia Apache-2.0. Es maduro y estándar en la industria (~100k estrellas, v1.65.1).
 - **Cuándo elegirlo:** Casos: Probar un formulario; Crear regresiones de una web.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Node; navegadores descargados; aplicación de prueba; hardware prerequisites; API de IA: no; Node; navegadores descargados; aplicación de prueba.
@@ -110,7 +110,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FlareSolverr (`flaresolverr`)
 
-- **Repo:** https://github.com/FlareSolverr/FlareSolverr · MIT · nivel 1 · 58/100
+- **Repo:** https://github.com/FlareSolverr/FlareSolverr · MIT · nivel 1 · 55/100
 - **Qué es:** Servidor de código abierto (MIT) mantenido por la comunidad (ngosang y colaboradores), muy usado junto a indexadores multimedia. Activo, aunque depende de que Cloudflare no cambie sus desafíos.
 - **Cuándo elegirlo:** Casos: dar acceso a indexadores (como Prowlarr o Jackett) a sitios propios o autorizados detrás de Cloudflare; obtener cookies válidas para que un scraper autorizado continúe con un cliente HTTP….
 - **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
@@ -222,6 +222,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `puppeteer` [32/bibliotecas], `playwright` [32/bibliotecas], `selenium` [32/bibliotecas], `browser-use`, `stagehand`, `webdriverio` [32/bibliotecas]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
 
+### Lightpanda (`lightpanda`)
+
+- **Repo:** https://github.com/lightpanda-io/browser · AGPL-3.0 · nivel 1 · 73/100
+- **Qué es:** Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).
+- **Cuándo elegirlo:** Casos: Preparar navegación headless; Explorar un agente con modelo local.
+- **Requisitos:** nivel 1: preparación sencilla; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba; hardware prerequisites; API de IA: opcional; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install lightpanda-io/browser/lightpanda` — fuente: https://github.com/lightpanda-io/browser/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Ejecuta una consulta simple sin LLM y compara el DOM con la página esperada Éxito: Puedes identificar la sesión y el resultado antes de probar autonomía
+- **Combina con:** `puppeteer` [32/bibliotecas], `playwright` [32/bibliotecas], `stagehand` [32/agentes-web], `agent-browser` [32/agentes-web], `awesome-chrome-devtools` [32/recursos-web]
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto. Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web.
+
 ### Ladybird (`ladybird`)
 
 - **Repo:** https://github.com/LadybirdBrowser/ladybird · BSD-2-Clause · nivel 4 · 72/100 · recomendado en «Motores de navegador independientes»
@@ -233,17 +244,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `selenium` [32/bibliotecas], `webdriverio` [32/bibliotecas], `ffmpeg` [12/edicion]
 - **Alternativas:** `servo`
 - **Riesgos y avisos:** Alternativa de Servo como motor de navegador independiente.
-
-### Lightpanda (`lightpanda`)
-
-- **Repo:** https://github.com/lightpanda-io/browser · AGPL-3.0 · nivel 1 · 70/100
-- **Qué es:** Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).
-- **Cuándo elegirlo:** Casos: Preparar navegación headless; Explorar un agente con modelo local.
-- **Requisitos:** nivel 1: preparación sencilla; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba; hardware prerequisites; API de IA: opcional; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install lightpanda-io/browser/lightpanda` — fuente: https://github.com/lightpanda-io/browser/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Ejecuta una consulta simple sin LLM y compara el DOM con la página esperada Éxito: Puedes identificar la sesión y el resultado antes de probar autonomía
-- **Combina con:** `puppeteer` [32/bibliotecas], `playwright` [32/bibliotecas], `stagehand` [32/agentes-web], `agent-browser` [32/agentes-web], `awesome-chrome-devtools` [32/recursos-web]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto. Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web.
 
 ### Servo (`servo`)
 
@@ -257,25 +257,25 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `ladybird`
 - **Riesgos y avisos:** Alternativa de Ladybird como motor independiente; Servo se orienta más a incrustar que a ser un navegador completo.
 
-### Camoufox (`camoufox`)
-
-- **Repo:** https://github.com/daijro/camoufox · MPL-2.0 (navegador) y MIT (paquetes de Python) · nivel 2 · 48/100
-- **Qué es:** Navegador antidetección de código abierto creado por daijro. El navegador es MPL-2.0 y los paquetes de lanzamiento de Python son MIT. Muy activo; el propio README avisa de que está en desarrollo.
-- **Cuándo elegirlo:** Casos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install -U "camoufox[geoip]"` — fuente: https://github.com/daijro/camoufox/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `pip install -U "camoufox[geoip]"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README. Éxito: Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.
-- **Combina con:** `playwright` [32/bibliotecas], `crawlee-python` [4/crawlers], `crawlee` [4/crawlers]
-
 ### Kitesurf (`kitesurf`)
 
-- **Repo:** https://github.com/cloudflare/kitesurf · Apache-2.0 · nivel 3 · —/100
+- **Repo:** https://github.com/cloudflare/kitesurf · Apache-2.0 · nivel 3 · 57/100
 - **Qué es:** Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.
 - **Cuándo elegirlo:** Casos: Capturar una página estática de prueba.; Comparar cómo se renderiza un componente en un entorno aislado. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
 - **Requisitos:** nivel 3: preparación pesada; TypeScript, Cargo.toml, package.json; hardware model_dependent; API de IA: no; Contenedor local para el ejemplo o Cloudflare Workers con los servicios que indique su guía..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://kitesurf.dev/
 - **Primera prueba propuesta (no ejecutada):** Usa el ejemplo local enlazado y abre una página de prueba sin cuentas ni cookies. Éxito: Se obtiene una captura o HTML del ejemplo y puedes compararlo con tu navegador.
 - **Riesgos y avisos:** El motor es experimental. Workers y Dynamic Workers pueden requerir planes de Cloudflare; la demo local no exige cuenta.
+
+### Camoufox (`camoufox`)
+
+- **Repo:** https://github.com/daijro/camoufox · MPL-2.0 (navegador) y MIT (paquetes de Python) · nivel 2 · 49/100
+- **Qué es:** Navegador antidetección de código abierto creado por daijro. El navegador es MPL-2.0 y los paquetes de lanzamiento de Python son MIT. Muy activo; el propio README avisa de que está en desarrollo.
+- **Cuándo elegirlo:** Casos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install -U "camoufox[geoip]"` — fuente: https://github.com/daijro/camoufox/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `pip install -U "camoufox[geoip]"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README. Éxito: Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.
+- **Combina con:** `playwright` [32/bibliotecas], `crawlee-python` [4/crawlers], `crawlee` [4/crawlers]
 
 ### awesome-chrome-devtools (`awesome-chrome-devtools`)
 

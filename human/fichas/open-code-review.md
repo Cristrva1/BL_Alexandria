@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Una herramienta de revisión defensiva de código para cambios propios antes de fusionarlos.

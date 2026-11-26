@@ -20,7 +20,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `ace-step-1.5` | Modelo y herramientas para generar música localmente a partir de instrucciones… | 3 Avanzado | 70 | MIT (OSI permisiva) | recomendado |
 | `yue` | Modelo abierto de generación de canciones completas (voz y acompañamiento) a… | 4 Experto | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `audiocraft` | Librería PyTorch de Meta para generar música y efectos de sonido desde texto… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
+| `audiocraft` | Librería PyTorch de Meta para generar música y efectos de sonido desde texto… | 2 Intermedio | 52 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -39,7 +39,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   git clone https://github.com/ACE-Step/ACE-Step-1.5.git
   cd ACE-Step-1.5
   uv sync
-  
+
   # 3. Launch Gradio UI (models auto-download on first run)
   uv run acestep
   ```
@@ -62,7 +62,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AudioCraft (`audiocraft`)
 
-- **Repo:** https://github.com/facebookresearch/audiocraft · MIT · nivel 2 · 54/100 · alternativa en «Generación de música»
+- **Repo:** https://github.com/facebookresearch/audiocraft · MIT · nivel 2 · 52/100 · alternativa en «Generación de música»
 - **Qué es:** AudioCraft, librería PyTorch de Meta para investigación en generación de audio (MusicGen y AudioGen). El código es MIT y los pesos son CC-BY-NC 4.0 (no comercial). Tiene ~24k estrellas y no cambia desde marzo de 2026.
 - **Cuándo elegirlo:** Casos: Explorar generación de música; Estudiar sonidos a partir de texto.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python 3.9 y PyTorch 2.1 según guía; modelo; GPU según tamaño; texto propio; hardware prerequisites; API de IA: no; Python 3.9 y PyTorch 2.1 según guía; modelo; GPU según tamaño; texto propio.

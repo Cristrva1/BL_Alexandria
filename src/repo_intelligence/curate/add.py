@@ -24,6 +24,7 @@ import base64
 import glob
 import importlib
 import json
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -33,7 +34,10 @@ from pathlib import Path
 from typing import Any, Callable
 
 from repo_intelligence.analysis.combina_policy import HUB_THRESHOLD, MAX_COMBOS, MIN_COMBOS, classify, combo_map, inbound
-from repo_intelligence.core.access import access_routes
+from repo_intelligence.core.io import catalog_update, write_catalog_batch
+from repo_intelligence.core.catalog import is_public_repo, read_indices, slug
+from repo_intelligence.core.taxonomy import goal_memberships
+from repo_intelligence.core.access import access_facts, access_routes
 
 PENDING = "PENDIENTE"
 LIGERO = "ligero"
@@ -99,6 +103,37 @@ def fetch_identity(full_name: str, gh: GhFn = gh_api) -> dict:
     except AddError:
         pass
     return out
+
+
+def revision_source(spec: dict, fetched: dict, gh: GhFn) -> tuple[dict, str]:
+    """Prefer the README, then an explicitly cited file pinned to this repository."""
+    readme = fetched.get("readme") or {}
+    full = fetched["metadata"]["full_name"]
+    pattern = rf"https://github\.com/{re.escape(full)}/blob/([0-9a-f]{{40}})/([^?#]+)"
+
+    def decoded(document: dict) -> str:
+        if not document.get("sha") or not document.get("html_url"):
+            return ""
+        try:
+            return base64.b64decode("".join((document.get("content") or "").split()), validate=True).decode("utf8").strip()
+        except (ValueError, UnicodeError):
+            return ""
+
+    text = decoded(readme)
+    if text:
+        return readme, text
+    for url in spec.get("fuentes") or []:
+        match = re.fullmatch(pattern, url, re.IGNORECASE)
+        if match:
+            revision, path = match.groups()
+            try:
+                document = gh(f"repos/{full}/contents/{path}?ref={revision}")
+            except AddError:
+                continue
+            text = decoded(document) if isinstance(document, dict) else ""
+            if text:
+                return {**document, "html_url": url}, text
+    return {}, ""
 
 
 def summary(meta: dict) -> dict:
@@ -237,8 +272,8 @@ def build_entries(spec: dict, fetched: dict, root: Path, date: str, lote: str) -
     """Entrada compacta + ficha de detalle a partir de la spec y la identidad leída."""
     base = _curation_base(root, date)
     meta = fetched["metadata"]
-    readme = fetched.get("readme") or {"html_url": meta.get("html_url"), "sha": None, "content": ""}
-    text = base64.b64decode(readme.get("content") or "").decode("utf8", errors="replace")
+    readme, text = fetched["revision_source"]
+    readme = readme or {"html_url": meta["html_url"], "sha": None}
     rid = spec["id"]
     entry = {"id": rid, "kind": spec["kind"], "cat": int(spec["cat"]), "sub": spec["sub"], "one": spec["one"]}
     groups = {"local": base.LOCAL, "local_choice": base.LOCAL_CHOICE, "optional": base.OPTIONAL, "required": base.REQUIRED,
@@ -250,13 +285,21 @@ def build_entries(spec: dict, fetched: dict, root: Path, date: str, lote: str) -
         base.ENTRY_COMMANDS[rid] = spec["cmd"]
     else:
         base.ENTRY_COMMANDS.pop(rid, None)
-    access = base.access_profile(entry, readme, text)
-    access["antigravity"] = "not_documented"
-    access.update(spec.get("access") or {})
-    start = base.starting(entry, readme, text, access, meta)
-    if spec.get("url"):
+    if text:
+        access = base.access_profile(entry, readme, text)
+        access["antigravity"] = "not_documented"
+        access.update(spec.get("access") or {})
+    else:
+        access = access_facts({})
+    if text:
+        start = base.starting(entry, readme, text, access, meta)
+    else:
+        start = {"audience": "unconfirmed", "kind": "unconfirmed", "command": "", "command_status": "unconfirmed",
+                 "prerequisites": [], "steps": ["Completar la revisión de la documentación original."],
+                 "entry_url": "", "source": None, "checked_at": date}
+    if text and spec.get("url"):
         start["entry_url"] = spec["url"]
-    if spec.get("steps"):
+    if text and spec.get("steps"):
         start["steps"] = list(spec["steps"])
     lic = spec.get("license") or (meta.get("license") or {}).get("spdx_id")
     ligero = bool(spec.get("ligero"))
@@ -264,7 +307,7 @@ def build_entries(spec: dict, fetched: dict, root: Path, date: str, lote: str) -
             "exec": "hybrid" if access.get("api") in {"optional", "required", "depends"} else "local",
             "setup": spec.get("setup", "medium"), "mcp": spec["kind"] == "mcp" or bool(spec.get("mcp")),
             "prov": list(spec.get("prov") or []), "tags": list(spec.get("tags") or []), "stars": meta.get("stargazers_count", 0),
-            "gh": meta["full_name"], "lib": False, "pick": False, "one": spec["one"], "alt": [], "doc": f"human/fichas/{rid}.md",
+            "gh": meta["full_name"], "lib": False, "pick": False, "one": spec["one"], "alt": [], "doc": f"human/fichas/{slug(rid)}.md",
             "github_id": meta["id"], "lang": meta.get("language"), "license": lic, "added_at": date, "github_checked": date,
             "goals": list(spec.get("goals") or []), "source_archived": False}
     if ligero:
@@ -287,11 +330,11 @@ def build_entries(spec: dict, fetched: dict, root: Path, date: str, lote: str) -
         "cases": scenarios or [spec["one"]], "stack": ", ".join([v for v in [meta.get("language"), *manifests] if v]),
         "choose_if": "Tu objetivo encaja con estos ejemplos: " + "; ".join(scenarios), "avoid_if": spec.get("avoid") or AVOID[spec["kind"]],
         "limits": limits, "combines_with": [], "alternatives": [], "repo": meta.get("html_url"), "homepage": meta.get("homepage") or None,
-        "license": lic, "lang": meta.get("language"), "updated": date, "doc": f"human/fichas/{rid}.md",
+        "license": lic, "lang": meta.get("language"), "updated": date, "doc": f"human/fichas/{slug(rid)}.md",
         "access": access, "getting_started": start, "first_step": start["steps"][0],
-        "sources": {"readme_blob_sha": readme.get("sha"), "root_tree_sha": (fetched.get("tree") or {}).get("sha"),
-                    "readme_url": readme.get("html_url"), "github_checked": date, "collection": f"altas-{lote}"},
-        "why": "Usos propuestos: " + "; ".join(scenarios) + ".", "models": spec.get("models") or "No usa LLM ni API de IA",
+        "sources": {"readme_blob_sha": (fetched.get("readme") or {}).get("sha"), "root_tree_sha": (fetched.get("tree") or {}).get("sha"),
+                    "readme_url": (fetched.get("readme") or {}).get("html_url"), "github_checked": date, "collection": f"altas-{lote}"},
+        "why": "Usos propuestos: " + "; ".join(scenarios) + ".", "models": spec.get("models") or access["api_note"],
         "source_archived": False,
         "practical_examples": [{"scenario": s, "status": "illustrative"} for s in scenarios],
         "first_try": {"action": action, "success": success, "execution": "proposed_not_executed"},
@@ -302,11 +345,18 @@ def build_entries(spec: dict, fetched: dict, root: Path, date: str, lote: str) -
                              "checks": ["identity", "category", "examples", "installation_source", "api_costs", "claude_code", "codex",
                                         "antigravity", "local_model"], "installation_tested": False},
     }
+    if not text:
+        detail["editorial_review"].update(status="pending", checks=["identity"], source=None, category_verdict="pending")
+        detail["install"] = start["steps"][0]
+        detail["models"] = access["api_note"]
+        detail["limits"] = "Documentación de acceso e instalación pendiente de revisión."
     if ligero:
         detail["nivel"] = LIGERO
     if spec.get("cmd") and spec["cmd"] not in text:
         detail.setdefault("_avisos", []).append(f"el comando de entrada «{spec['cmd']}» no aparece en el README")
     apply_four_sections(detail, spec, fetched, date, lote)
+    if not text:
+        detail["descripcion_revision"]["status"] = "pending"
     return repo, detail
 
 
@@ -489,10 +539,11 @@ def _declare_subs(compact: dict, subs: list[dict], result: AddResult) -> None:
 def recount(compact: dict, date: str) -> None:
     for cat in compact["categories"]:
         cat["count"] = sum(int(r["cat"]) == int(cat["num"]) and not r.get("alias_of") for r in compact["repos"])
+    memberships = goal_memberships(compact)
     for goal in (compact.get("discovery") or {}).get("goals", []):
-        members = [r for r in compact["repos"] if goal["id"] in r.get("goals", []) or r["id"] in goal.get("starters", []) + goal.get("guided", [])]
+        members = [r for r in compact["repos"] if goal["id"] in memberships[r["id"]]]
         goal["categories"] = sorted({r["cat"] for r in members})
-    total = sum(not r.get("alias_of") for r in compact["repos"])
+    total = sum(is_public_repo(r) for r in compact["repos"])
     compact["meta"]["updated"] = date
     compact["meta"]["title"] = f"Índice IA — {total} repos curados de IA, automatización y herramientas"
 
@@ -500,10 +551,15 @@ def recount(compact: dict, date: str) -> None:
 def run_add(root: Path, batch: dict, *, gh: GhFn = gh_api, force: bool = False, ligero: bool = False, simulate: bool = False,
             date: str | None = None, fetched_cache: dict[str, dict] | None = None) -> AddResult:
     """Da de alta un lote. Si cualquier repo falla la validación, no escribe nada."""
+    with catalog_update(root):
+        return _add(root, batch, gh, force, ligero, simulate, date, fetched_cache)
+
+
+def _add(root: Path, batch: dict, gh: GhFn, force: bool, ligero: bool, simulate: bool,
+         date: str | None, fetched_cache: dict | None) -> AddResult:
     date = date or batch.get("fecha") or today()
     lote = batch.get("lote") or f"manual-{date}"
-    compact = json.loads((root / "INDICE_IA.json").read_text(encoding="utf8"))
-    detail_doc = json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf8"))
+    compact, detail_doc = read_indices(root)
     detail = detail_doc["repos"]
     retired = json.loads((root / "data/retired.json").read_text(encoding="utf8")) if (root / "data/retired.json").exists() else {"repos": []}
     result = AddResult()
@@ -515,6 +571,7 @@ def run_add(root: Path, batch: dict, *, gh: GhFn = gh_api, force: bool = False, 
     skipped_ids: set[str] = set()
     errors: list[str] = []
     built: list[tuple[dict, dict, dict, dict]] = []
+    known = {"repos": list(compact["repos"])}
     for spec in specs:
         full = spec.get("gh") or ""
         try:
@@ -527,15 +584,25 @@ def run_add(root: Path, batch: dict, *, gh: GhFn = gh_api, force: bool = False, 
         if meta.get("full_name", "").lower() != full.lower():
             result.warnings.append(f"{full}: el nombre canónico es {meta.get('full_name')}; se usa ese")
             spec["gh"] = meta["full_name"]
-        errs, warns = check_identity(meta, spec.get("id") or "", compact, retired, force=force, now=date)
+        errs, warns = check_identity(meta, spec.get("id") or "", known, retired, force=force, now=date)
         result.warnings += warns
         if errs:
             result.skipped.append({"gh": full, "motivo": "; ".join(errs), **summary(meta)})
             skipped_ids.add(spec.get("id"))
             continue
+        if not spec.get("id"):
+            errors.append(f"{full}: falta el id editorial")
+            continue
+        evidence = revision_source(spec, fetched, gh)
+        fetched = {**fetched, "revision_source": evidence}
+        if not evidence[1]:
+            spec["borrador"] = True
+            result.warnings.append(f"{full}: pendiente de documentación con contenido y revisión identificable.")
+        known["repos"].append({"id": spec["id"], "github_id": meta["id"], "gh": meta["full_name"]})
         built.append((spec, fetched, meta, {}))
     # validación con los ids del lote que sí pasan
     kept_ids = {s["id"] for s, *_ in built}
+    skipped_ids -= {r["id"] for r in known["repos"]}
     for spec, *_ in built:
         dropped = [c["id"] for c in spec.get("combina_con") or [] if c.get("id") in skipped_ids]
         if dropped:
@@ -572,6 +639,8 @@ def run_add(root: Path, batch: dict, *, gh: GhFn = gh_api, force: bool = False, 
                 alts = by_id[left].setdefault("alt", [])
                 if right not in alts:
                     alts.append(right)
+                if len(alts) > 5:
+                    raise AddError(f"{left}: se admiten hasta cinco alternativas.")
                 detail[left]["alternatives"] = list(alts)
                 if right in detail[left].get("combines_with", []):
                     raise AddError(f"{left}: «{right}» es alternativa y combinación a la vez")
@@ -588,34 +657,29 @@ def run_add(root: Path, batch: dict, *, gh: GhFn = gh_api, force: bool = False, 
         return result
     four_path = root / f"curation/descripciones-4s/48-altas-{lote}.json"
     files = sync_four_files(root, adds, {str(four_path): four_doc})
-    (root / "INDICE_IA.json").write_text(json.dumps(compact, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
-    (root / "INDICE_IA.detalle.json").write_text(json.dumps(detail_doc, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
-    result.written += ["INDICE_IA.json", "INDICE_IA.detalle.json"]
-    for f, doc in files.items():
-        Path(f).parent.mkdir(parents=True, exist_ok=True)
-        Path(f).write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
-        result.written.append(str(Path(f).relative_to(root)))
     spec_path = root / f"curation/altas/{lote}.json"
-    spec_path.parent.mkdir(parents=True, exist_ok=True)
     stored = {k: v for k, v in batch.items() if k != "repos"}
     stored.update(lote=lote, fecha=date, repos=[{k: v for k, v in s.items() if k not in {"que_es", "que_hace", "como_lo_hace", "combina_con",
                                                                                          "notas", "fuentes"}} for s, *_ in built])
-    spec_path.write_text(json.dumps(stored, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
     report = root / "reports/altas" / f"{lote}.json"
-    report.parent.mkdir(parents=True, exist_ok=True)
-    report.write_text(json.dumps({"lote": lote, "checked_at": date, "added": result.added, "skipped": result.skipped,
-                                  "warnings": result.warnings, "reciprocal": result.reciprocal, "new_subs": result.new_subs,
-                                  "notes": ["No se instaló ni se ejecutó ningún proyecto del catálogo.",
-                                            "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."]},
-                                 ensure_ascii=False, indent=2) + "\n", encoding="utf8")
-    result.written += [str(spec_path.relative_to(root)), str(report.relative_to(root))]
+    audit = {"lote": lote, "checked_at": date, "added": result.added, "skipped": result.skipped,
+             "warnings": result.warnings, "reciprocal": result.reciprocal, "new_subs": result.new_subs,
+             "notes": ["Identidades consultadas en GitHub. Las pruebas de instalación se registran por separado."]}
+    documents = {root / "INDICE_IA.json": compact, root / "INDICE_IA.detalle.json": detail_doc,
+                 **{Path(f): doc for f, doc in files.items()}, spec_path: stored, report: audit}
+    write_catalog_batch(root, documents)
+    result.written = [str(path.relative_to(root)) for path in documents]
     return result
 
 
 def apply_suggested(root: Path, rid: str, picks: list[dict], date: str | None = None) -> dict[str, list[str]]:
     """Escribe combinaciones sugeridas en ``rid`` (hasta 6) y completa la reciprocidad."""
-    compact = json.loads((root / "INDICE_IA.json").read_text(encoding="utf8"))
-    doc = json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf8"))
+    with catalog_update(root):
+        return _apply_suggested(root, rid, picks, date)
+
+
+def _apply_suggested(root: Path, rid: str, picks: list[dict], date: str | None) -> dict[str, list[str]]:
+    compact, doc = read_indices(root)
     detail = doc["repos"]
     current = list(detail[rid].get("combina_con") or [])
     room = MAX_COMBOS - len(current)
@@ -633,7 +697,5 @@ def apply_suggested(root: Path, rid: str, picks: list[dict], date: str | None = 
         d = files.setdefault(last, json.loads(Path(last).read_text(encoding="utf8")))
         have = {c["id"] for c in d["repos"][rid].get("combina_con") or []}
         d["repos"][rid]["combina_con"] = list(d["repos"][rid].get("combina_con") or []) + [c for c in new if c["id"] not in have]
-    (root / "INDICE_IA.detalle.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
-    for f, d in files.items():
-        Path(f).write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+    write_catalog_batch(root, {root / "INDICE_IA.detalle.json": doc, **{Path(f): d for f, d in files.items()}})
     return {"añadidas": [c["id"] for c in new], **{f"recíproca en {b}": [c["id"] for c in v] for b, v in adds.items()}}

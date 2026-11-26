@@ -42,12 +42,12 @@ Estado en GitHub: activo · último push 2026-11-07 · licencia declarada MIT (c
 
 ## Ver similares
 
-Grupo **Cursos de Microsoft para principiantes**: AI Agents for Beginners ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Cursos de Microsoft para principiantes**: AI Agents for Beginners ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Generative AI for Beginners](generative-ai-for-beginners.md) ⭐ recomendado | 68 | Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. |
-| 2 | **AI Agents for Beginners** (esta ficha) | 65 | Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
+| 1 | **AI Agents for Beginners** (esta ficha) ⭐ recomendado | 65 | Si buscas esto: curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
+| 2 | [Generative AI for Beginners](generative-ai-for-beginners.md) | 65 | Si buscas esto: curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. |
 
 ## Acceso, coste y equipo
 

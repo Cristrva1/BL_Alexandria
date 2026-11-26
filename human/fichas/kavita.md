@@ -47,7 +47,7 @@ Grupo **Bibliotecas de libros y cómics**: Kavita ocupa la posición 1 de 2 (rec
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Kavita** (esta ficha) ⭐ recomendado | 57 | Si buscas esto: servidor de lectura rápido y multiplataforma para manga, cómics y libros, con lector web, usuarios, OPDS y metadatos. |
-| 2 | [Calibre-Web](calibre-web.md) | 45 | Si buscas esto: aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador. |
+| 2 | [Calibre-Web](calibre-web.md) | 42 | Si buscas esto: aplicación web para explorar, leer y descargar libros electrónicos de una base de datos de Calibre, con usuarios, OPDS y lector en el navegador. |
 
 ## Acceso, coste y equipo
 

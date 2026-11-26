@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** MIT + Onyx Enterprise License (ee/). Fuente: [LICENSE](https://github.com/onyx-dot-app/onyx/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

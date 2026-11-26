@@ -46,7 +46,7 @@ Grupo **Componentes de chat y copilotos para React**: assistant-ui ocupa la posi
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [CopilotKit](copilotkit.md) ⭐ recomendado | 70 | Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
+| 1 | [CopilotKit](copilotkit.md) ⭐ recomendado | 69 | Si buscas esto: stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
 | 2 | **assistant-ui** (esta ficha) | 62 | Si buscas esto: librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Acceso, coste y equipo

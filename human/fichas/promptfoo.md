@@ -53,8 +53,8 @@ Grupo **Evaluación y pruebas de LLM**: promptfoo ocupa la posición 1 de 3 (rec
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **promptfoo** (esta ficha) ⭐ recomendado | 79 | Si buscas esto: cLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
-| 2 | [DeepEval](deepeval.md) | 63 | Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. |
-| 3 | [Ragas](ragas.md) | 51 | Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
+| 2 | [DeepEval](deepeval.md) | 64 | Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. |
+| 3 | [Ragas](ragas.md) | 52 | Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
 
 ## Acceso, coste y equipo
 

@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
+**Puntuación de calidad** 52/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Ejecuta modelos locales de tipo MoE leyendo partes de sus pesos desde un SSD cuando no caben completos en memoria o VRAM.

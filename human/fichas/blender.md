@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 76/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** GPL-2.0-or-later. COPYING remite al texto GPL v2 de doc/license/GPL-license.txt. Fuente: [LICENSE](https://github.com/blender/blender/blob/main/COPYING). GitHub la marca como NOASSERTION.
 

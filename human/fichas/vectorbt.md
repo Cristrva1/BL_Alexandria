@@ -55,7 +55,7 @@ Grupo **Backtesting en Python**: vectorbt ocupa la posición 1 de 2 (recomendado
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **vectorbt** (esta ficha) ⭐ recomendado | 56 | Si buscas esto: biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. |
-| 2 | [Backtesting.py](backtesting-py.md) | 51 | Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
+| 2 | [Backtesting.py](backtesting-py.md) | 52 | Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
 
 ## Acceso, coste y equipo
 

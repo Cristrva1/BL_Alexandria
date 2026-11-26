@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 39/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 40/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** CC-BY-NC-4.0. Solo uso no comercial. Fuente: [LICENSE](https://github.com/midudev/autoskills/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

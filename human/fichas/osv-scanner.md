@@ -50,8 +50,8 @@ Grupo **Análisis de dependencias vulnerables (SCA)**: OSV-Scanner ocupa la posi
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **OSV-Scanner** (esta ficha) ⭐ recomendado | 79 | Si quieres consultar la base OSV desde lockfiles con una CLI ligera en Go. |
-| 2 | [OWASP Dependency-Check](dependency-check.md) | 63 | Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins. |
-| 3 | [OWASP dep-scan](dep-scan.md) | 59 | Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI. |
+| 2 | [OWASP Dependency-Check](dependency-check.md) | 60 | Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins. |
+| 3 | [OWASP dep-scan](dep-scan.md) | 58 | Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI. |
 
 ## Acceso, coste y equipo
 

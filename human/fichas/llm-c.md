@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; requiere programar con él; necesita GPU
 
-**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

@@ -21,9 +21,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `hyperframes` | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4… | 1 Básico | 73 | Apache-2.0 (OSI permisiva) | recomendado |
 | `manim-community` | Motor de animación de Python para producir videos explicativos de matemáticas… | 2 Intermedio | 71 | MIT (OSI permisiva) | recomendado |
 | `remotion` | Framework de React para crear videos por código y renderizar composiciones con… | 2 Intermedio | 68 | Remotion License (no OSI) (source-available) | alternativa |
-| `mediabunny` | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video… | 2 Intermedio | 64 | MPL-2.0 (OSI copyleft) | sin grupo |
-| `manim` | Motor de animación en Python para videos matemáticos explicativos, creado por… | 2 Intermedio | 57 | MIT (OSI permisiva) | alternativa |
+| `mediabunny` | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video… | 2 Intermedio | 65 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `motion-canvas` | Biblioteca TypeScript para crear animaciones y vídeos explicativos con código… | 2 Intermedio | 56 | MIT (OSI permisiva) | alternativa |
+| `manim` | Motor de animación en Python para videos matemáticos explicativos, creado por… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `moviepy` | Librería Python para editar video por código: cortes, concatenaciones, títulos… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `revideo` | Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz… | 2 Intermedio | 51 | MIT (OSI permisiva) | alternativa |
 
@@ -69,7 +69,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### mediabunny (`mediabunny`)
 
-- **Repo:** https://github.com/Vanilagy/mediabunny · MPL-2.0 · nivel 2 · 64/100
+- **Repo:** https://github.com/Vanilagy/mediabunny · MPL-2.0 · nivel 2 · 65/100
 - **Qué es:** Mediabunny, librería JavaScript para leer, escribir y convertir medios (MP4, WebM, MP3, HLS) directamente en el navegador, de @Vanilagy. Licencia MPL-2.0. Es activa (~7.5k estrellas, v1.66.0) y la patrocina, entre otros, Remotion.
 - **Cuándo elegirlo:** Casos: Procesar video dentro de una aplicación web; Construir una herramienta de conversión en navegador.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; JavaScript ES2021+; navegador moderno; TypeScript >=5.7 para tipos; medio de prueba; hardware prerequisites; API de IA: no; JavaScript ES2021+; navegador moderno; TypeScript >=5.7 para tipos; medio de prueba.
@@ -77,26 +77,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Lee duración y pistas de un archivo y convierte una copia a un formato admitido Éxito: Puedes contrastar metadatos y reproducir la salida
 - **Combina con:** `remotion`, `ffmpeg` [12/edicion], `openfilm` [30/skills-video], `pixijs` [26/animacion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Es una biblioteca de medios, no una app de edición completa; comprueba soporte de codecs y destino en los navegadores de tus usuarios.
-
-### Manim (ManimGL) (`manim`)
-
-- **Repo:** https://github.com/3b1b/manim · MIT · nivel 2 · 57/100 · alternativa en «Animaciones matemáticas (Manim)»
-- **Qué es:** ManimGL, motor de animación programática para vídeos matemáticos explicativos, creado por el autor de 3Blue1Brown (@3b1b). Licencia MIT. Tiene ~97k estrellas (v1.7.2); es la versión personal del autor, distinta de la edición comunitaria.
-- **Cuándo elegirlo:** Casos: Explicar una transformación matemática; Preparar una animación geométrica.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña; hardware prerequisites; API de IA: no; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/3b1b/manim/blob/master/README.md
-
-  ```sh
-  # Install manimgl
-  pip install manimgl
-  
-  # Try it out
-  manimgl
-  ```
-- **Primera prueba propuesta (no ejecutada):** Ejecuta una escena de ejemplo y cambia una forma o texto Éxito: Puedes abrir la animación y localizar su código
-- **Combina con:** `ffmpeg` [12/edicion], `kokoro` [29/tts], `moviepy`
-- **Alternativas:** `manim-community`
-- **Riesgos y avisos:** Alternativas (elige una): manim-community. Para documentación y estabilidad, la comunidad recomienda ManimCE. Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community.
 
 ### Motion Canvas (`motion-canvas`)
 
@@ -109,6 +89,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ffmpeg` [12/edicion], `kokoro` [29/tts], `claude-code` [20/terminal]
 - **Alternativas:** `hyperframes`, `remotion`, `moviepy`, `revideo`
 - **Riesgos y avisos:** Alternativa de Revideo (fork orientado a renderizado programático) y Remotion (React).
+
+### Manim (ManimGL) (`manim`)
+
+- **Repo:** https://github.com/3b1b/manim · MIT · nivel 2 · 54/100 · alternativa en «Animaciones matemáticas (Manim)»
+- **Qué es:** ManimGL, motor de animación programática para vídeos matemáticos explicativos, creado por el autor de 3Blue1Brown (@3b1b). Licencia MIT. Tiene ~97k estrellas (v1.7.2); es la versión personal del autor, distinta de la edición comunitaria.
+- **Cuándo elegirlo:** Casos: Explicar una transformación matemática; Preparar una animación geométrica.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña; hardware prerequisites; API de IA: no; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/3b1b/manim/blob/master/README.md
+
+  ```sh
+  # Install manimgl
+  pip install manimgl
+
+  # Try it out
+  manimgl
+  ```
+- **Primera prueba propuesta (no ejecutada):** Ejecuta una escena de ejemplo y cambia una forma o texto Éxito: Puedes abrir la animación y localizar su código
+- **Combina con:** `ffmpeg` [12/edicion], `kokoro` [29/tts], `moviepy`
+- **Alternativas:** `manim-community`
+- **Riesgos y avisos:** Alternativas (elige una): manim-community. Para documentación y estabilidad, la comunidad recomienda ManimCE. Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community.
 
 ### MoviePy (`moviepy`)
 

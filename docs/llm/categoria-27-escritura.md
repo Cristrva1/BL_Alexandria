@@ -21,7 +21,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `humanizer` | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba… | 1 Básico | 72 | MIT (OSI permisiva) | recomendado |
 | `i-have-adhd` | Skill para que un agente presente primero la respuesta y organice su salida con… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `no-ai-slop` | Skill para revisar escritura y eliminar patrones repetitivos o frases poco… | 2 Intermedio | 55 | MIT (OSI permisiva) | alternativa |
-| `stop-slop` | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas… | 1 Básico | 43 | MIT (OSI permisiva) | alternativa |
+| `stop-slop` | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas… | 1 Básico | 40 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -64,7 +64,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Stop Slop (`stop-slop`)
 
-- **Repo:** https://github.com/hardikpandya/stop-slop · MIT · nivel 1 · 43/100 · alternativa en «Skills para quitar el tono de IA a los textos»
+- **Repo:** https://github.com/hardikpandya/stop-slop · MIT · nivel 1 · 40/100 · alternativa en «Skills para quitar el tono de IA a los textos»
 - **Qué es:** Skill de código abierto (MIT) de Hardik Pandya para eliminar marcas de IA en la prosa. Sin releases y con último cambio en marzo de 2026.
 - **Cuándo elegirlo:** Casos: Reducir frases vagas; Revisar un borrador antes de publicarlo.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude con skills o instrucciones pegadas en otro modelo; texto propio; hardware prerequisites; API de IA: no; Claude con skills o instrucciones pegadas en otro modelo; texto propio.

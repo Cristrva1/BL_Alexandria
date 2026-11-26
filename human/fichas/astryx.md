@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
+**Puntuación de calidad** 72/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.

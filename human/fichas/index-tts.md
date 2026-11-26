@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** bilibili Model Use License. Licencia de uso del modelo, no OSI. Fuente: [LICENSE](https://github.com/index-tts/index-tts/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -48,11 +48,11 @@ Grupo **Clonación de voz y TTS multilingüe**: IndexTTS ocupa la posición 5 de
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 72 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
-| 2 | [F5-TTS](f5-tts.md) | 63 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
+| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 69 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
+| 2 | [F5-TTS](f5-tts.md) | 64 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
 | 3 | [CosyVoice](cosyvoice.md) | 61 | Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino. |
 | 4 | [Fish Speech](fish-speech.md) | 61 | Si buscas TTS multilingüe con clonación y buena latencia. |
-| 5 | **IndexTTS** (esta ficha) | 56 | Si necesitas controlar duración y emoción de la voz sintetizada. |
+| 5 | **IndexTTS** (esta ficha) | 53 | Si necesitas controlar duración y emoción de la voz sintetizada. |
 
 ## Acceso, coste y equipo
 

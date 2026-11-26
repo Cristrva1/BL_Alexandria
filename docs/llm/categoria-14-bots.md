@@ -19,11 +19,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `ccxt` | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar… | 2 Intermedio | 81 | MIT (OSI permisiva) | sin grupo |
-| `freqtrade` | Bot de trading de criptomonedas con herramientas para preparar estrategias… | 2 Intermedio | 78 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `hummingbot` | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `freqtrade` | Bot de trading de criptomonedas con herramientas para preparar estrategias… | 2 Intermedio | 79 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `hummingbot` | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `py-sdk` | SDK Python de Polymarket para integrar funciones de su plataforma mediante las… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
-| `open-sol-bot` | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de… | 3 Avanzado | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `binance-trader` | Bot experimental de Python para estudiar estrategias y automatización con la… | 2 Intermedio | 36 | — (sin licencia detectada) | sin grupo |
+| `open-sol-bot` | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de… | 3 Avanzado | 43 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `binance-trader` | Bot experimental de Python para estudiar estrategias y automatización con la… | 2 Intermedio | 33 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -42,7 +42,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### freqtrade (`freqtrade`)
 
-- **Repo:** https://github.com/freqtrade/freqtrade · GPL-3.0 · nivel 2 · 78/100
+- **Repo:** https://github.com/freqtrade/freqtrade · GPL-3.0 · nivel 2 · 79/100
 - **Qué es:** Freqtrade, bot de trading de criptomonedas en Python. Licencia GPL-3.0. Es muy maduro (~57k estrellas, 2026.10).
 - **Cuándo elegirlo:** Casos: Comparar una regla en datos históricos; Evaluar una estrategia en simulación.
 - **Requisitos:** nivel 2: preparación media; Docker o entorno de la guía; datos; estrategia de ejemplo; modo dry-run; hardware prerequisites; API de IA: opcional; Docker o entorno de la guía; datos; estrategia de ejemplo; modo dry-run.
@@ -53,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### hummingbot (`hummingbot`)
 
-- **Repo:** https://github.com/hummingbot/hummingbot · Apache-2.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/hummingbot/hummingbot · Apache-2.0 · nivel 2 · 69/100
 - **Qué es:** Hummingbot, framework open source para diseñar y ejecutar bots de trading en exchanges centralizados y descentralizados. Licencia Apache-2.0. Es maduro (~21k estrellas, v2.17.0) y recibe patrocinio de exchanges mediante acuerdos de broker.
 - **Cuándo elegirlo:** Casos: Estudiar un conector de exchange; Evaluar un bot en un entorno de práctica.
 - **Requisitos:** nivel 2: preparación media; Conda o Docker; dependencias de compilación; conector y estrategia de prueba; hardware prerequisites; API de IA: no; Conda o Docker; dependencias de compilación; conector y estrategia de prueba.
@@ -63,10 +63,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   # Clone the repository
   git clone https://github.com/hummingbot/hummingbot.git
   cd hummingbot
-  
+
   # Create the conda environment, build extensions, and expose the `hbot` CLI
   make install
-  
+
   # Activate the environment
   conda activate hummingbot
   hbot --help
@@ -88,7 +88,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### open-sol-bot (`open-sol-bot`)
 
-- **Repo:** https://github.com/ChainBuff/open-sol-bot · Apache-2.0 · nivel 3 · 46/100
+- **Repo:** https://github.com/ChainBuff/open-sol-bot · Apache-2.0 · nivel 3 · 43/100
 - **Qué es:** OpenSolBot, bot de trading en la cadena Solana, de ChainBuff. Licencia Apache-2.0. Es pequeño (~400 estrellas, v0.2.1) y su último cambio es de diciembre de 2025; su README está en chino.
 - **Cuándo elegirlo:** Casos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain.
 - **Requisitos:** nivel 3: preparación pesada, varios servicios con Docker Compose; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones; hardware prerequisites; API de IA: no; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones.
@@ -99,7 +99,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### binance-trader (`binance-trader`)
 
-- **Repo:** https://github.com/yasinkuyu/binance-trader · — · nivel 2 · 36/100
+- **Repo:** https://github.com/yasinkuyu/binance-trader · — · nivel 2 · 33/100
 - **Qué es:** Binance Trader, bot experimental de Python para operar en Binance, de @yasinkuyu. El README declara MIT pero el repo no tiene archivo de licencia que GitHub detecte. Tiene ~3k estrellas y su última versión (v1.1.0) es de enero de 2026.
 - **Cuándo elegirlo:** Casos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange.
 - **Requisitos:** nivel 2: preparación media; Python y dependencias históricas; API Binance solo para funciones privadas; entorno aislado; hardware prerequisites; API de IA: no; Python y dependencias históricas; API Binance solo para funciones privadas; entorno aislado.

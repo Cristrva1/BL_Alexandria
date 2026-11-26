@@ -19,14 +19,14 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `llms-from-scratch` | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en… | 1 Básico | 71 | Apache-2.0 (OSI permisiva) | recomendado |
-| `ml-for-beginners` | Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
-| `nanochat` | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
+| `ml-for-beginners` | Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
+| `nanochat` | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
 | `annotated-dl-papers` | Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
 | `train-llm-from-scratch` | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
-| `awesome-machine-learning` | Directorio de frameworks, bibliotecas y recursos de machine learning organizado… | 1 Básico | 58 | CC0-1.0 (texto incompleto en LICENSE) (OSI permisiva) | sin grupo |
+| `awesome-machine-learning` | Directorio de frameworks, bibliotecas y recursos de machine learning organizado… | 1 Básico | 55 | CC0-1.0 (texto incompleto en LICENSE) (OSI permisiva) | sin grupo |
 | `llm-course` | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | alternativa |
-| `llm.c` | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin… | 3 Avanzado | 52 | MIT (OSI permisiva) | sin grupo |
-| `how-to-train-your-gpt` | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material… | 1 Básico | 48 | MIT (OSI permisiva) | sin grupo |
+| `llm.c` | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin… | 3 Avanzado | 49 | MIT (OSI permisiva) | sin grupo |
+| `how-to-train-your-gpt` | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material… | 1 Básico | 45 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -46,7 +46,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ML for Beginners (`ml-for-beginners`)
 
-- **Repo:** https://github.com/microsoft/ML-For-Beginners · MIT · nivel 1 · 70/100
+- **Repo:** https://github.com/microsoft/ML-For-Beginners · MIT · nivel 1 · 67/100
 - **Qué es:** Currículo educativo de código abierto (MIT) de Microsoft (serie «for Beginners»). Muy popular; mantenimiento continuo con traducciones automáticas.
 - **Cuándo elegirlo:** Casos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Jupyter Notebook, package.json; API de IA: no.
@@ -57,7 +57,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### nanochat (`nanochat`)
 
-- **Repo:** https://github.com/karpathy/nanochat · MIT · nivel 2 · 65/100
+- **Repo:** https://github.com/karpathy/nanochat · MIT · nivel 2 · 62/100
 - **Qué es:** Arnés experimental mínimo (MIT) de Andrej Karpathy para entrenar LLMs de principio a fin en un solo nodo de GPU. Es experimental pero muy seguido (~61k estrellas); último push en septiembre de 2026. Sucede conceptualmente a nanoGPT.
 - **Cuándo elegirlo:** Casos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; uv; Python; CPU o GPU según ruta; presupuesto de cómputo; hardware prerequisites; API de IA: no; uv; Python; CPU o GPU según ruta; presupuesto de cómputo.
@@ -96,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-machine-learning (`awesome-machine-learning`)
 
-- **Repo:** https://github.com/josephmisiti/awesome-machine-learning · CC0-1.0 (texto incompleto en LICENSE) · nivel 1 · 58/100
+- **Repo:** https://github.com/josephmisiti/awesome-machine-learning · CC0-1.0 (texto incompleto en LICENSE) · nivel 1 · 55/100
 - **Qué es:** Lista curada clásica de frameworks, bibliotecas y software de machine learning organizada por lenguaje, mantenida por Joseph Misiti e inspirada en awesome-php. GitHub marca su licencia como NOASSERTION.
 - **Cuándo elegirlo:** Casos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; lenguaje y problema de interés; hardware prerequisites; API de IA: no; Navegador; lenguaje y problema de interés.
@@ -119,7 +119,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### llm.c (`llm.c`)
 
-- **Repo:** https://github.com/karpathy/llm.c · MIT · nivel 3 · 52/100
+- **Repo:** https://github.com/karpathy/llm.c · MIT · nivel 3 · 49/100
 - **Qué es:** Implementación de entrenamiento de LLMs en C/CUDA puro (MIT) de Andrej Karpathy, sin PyTorch ni Python. Es un proyecto educativo y de investigación de rendimiento, poco activo: el último push es de junio de 2025.
 - **Cuándo elegirlo:** Casos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él, necesita GPU; Compilador C; Python para preparación; CUDA y GPU para las rutas aceleradas; hardware prerequisites; API de IA: no; Compilador C; Python para preparación; CUDA y GPU para las rutas aceleradas.
@@ -130,7 +130,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### how-to-train-your-gpt (`how-to-train-your-gpt`)
 
-- **Repo:** https://github.com/raiyanyahya/how-to-train-your-gpt · MIT · nivel 1 · 48/100
+- **Repo:** https://github.com/raiyanyahya/how-to-train-your-gpt · MIT · nivel 1 · 45/100
 - **Qué es:** Libro de texto interactivo (MIT) de @raiyanyahya para construir, entrenar y ejecutar un modelo de lenguaje moderno desde cero. El autor declara que lo escribió para aprender y que usó IA para entender y verificar conceptos, así que…
 - **Cuándo elegirlo:** Casos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; Jupyter; entorno PyTorch; equipo adecuado al experimento; hardware prerequisites; API de IA: no; Python; Jupyter; entorno PyTorch; equipo adecuado al experimento.
@@ -139,7 +139,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   # Install everything you need
   pip install jupyter tiktoken torch numpy datasets matplotlib --index-url https://download.pytorch.org/whl/cpu
-  
+
   # Start with chapter 2 (tokenization)
   jupyter notebook notebooks/02_tokenization.ipynb
   ```

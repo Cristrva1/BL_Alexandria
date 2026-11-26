@@ -270,13 +270,13 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Cline](fichas/cline.md) | [Aider](fichas/aider.md), [Kilo Code](fichas/kilocode.md) |
 | [Codex CLI](fichas/codex.md) | [Claude Code](fichas/claude-code.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md) |
 | [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md), [Antigravity CLI](fichas/antigravity-cli.md), [Qwen Code](fichas/qwen-code.md) |
-| [goose](fichas/goose.md) | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md), [Open Interpreter](fichas/open-interpreter.md) |
+| [goose](fichas/goose.md) | [Claude Code](fichas/claude-code.md), [Open Interpreter](fichas/open-interpreter.md) |
 | [Kilo Code](fichas/kilocode.md) | [Cline](fichas/cline.md) |
 | [MiMo-Code](fichas/mimo-code.md) | [OpenCode](fichas/opencode.md) |
 | [mini-swe-agent](fichas/mini-swe-agent.md) | [OpenHands](fichas/openhands.md) |
 | [Open Interpreter](fichas/open-interpreter.md) | [goose](fichas/goose.md) |
 | [Open SWE](fichas/open-swe.md) | [OpenHands](fichas/openhands.md) |
-| [OpenCode](fichas/opencode.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [goose](fichas/goose.md), [Gemini CLI](fichas/gemini-cli.md), [Aider](fichas/aider.md), [MiMo-Code](fichas/mimo-code.md) |
+| [OpenCode](fichas/opencode.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [Gemini CLI](fichas/gemini-cli.md), [Aider](fichas/aider.md), [MiMo-Code](fichas/mimo-code.md) |
 | [opencode-manager](fichas/opencode-manager.md) | [T3 Code](fichas/t3code.md) |
 | [OpenHands](fichas/openhands.md) | [Open SWE](fichas/open-swe.md), [mini-swe-agent](fichas/mini-swe-agent.md) |
 | [Qwen Code](fichas/qwen-code.md) | [Gemini CLI](fichas/gemini-cli.md) |

@@ -56,7 +56,7 @@ Grupo **Servidores MCP de navegador**: Chrome DevTools MCP ocupa la posición 1 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Chrome DevTools MCP** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
-| 2 | [Playwright MCP](playwright-mcp.md) | 62 | Si buscas esto: servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| 2 | [Playwright MCP](playwright-mcp.md) | 63 | Si buscas esto: servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 
 ## Acceso, coste y equipo
 

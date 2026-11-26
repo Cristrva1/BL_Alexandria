@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** GPL-2.0 o GPL-3.0. A elección del usuario. Fuente: [LICENSE](https://github.com/keepassxreboot/keepassxc/blob/develop/COPYING). GitHub la marca como NOASSERTION.
 
@@ -44,8 +44,8 @@ Grupo **Gestores de contraseñas**: KeePassXC ocupa la posición 2 de 2 (alterna
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [vaultwarden](vaultwarden.md) ⭐ recomendado | 67 | Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
-| 2 | **KeePassXC** (esta ficha) | 54 | Si buscas esto: gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. |
+| 1 | [vaultwarden](vaultwarden.md) ⭐ recomendado | 68 | Si buscas esto: servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
+| 2 | **KeePassXC** (esta ficha) | 55 | Si buscas esto: gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con TOTP, SSH agent y navegador. |
 
 ## Acceso, coste y equipo
 

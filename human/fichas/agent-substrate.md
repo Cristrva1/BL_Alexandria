@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; despliegue con Kubernetes/Helm
 
+**Puntuación de calidad** 69/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.

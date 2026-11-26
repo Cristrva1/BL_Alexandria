@@ -46,12 +46,12 @@ Estado en GitHub: activo · último push 2026-10-12 · última versión publicad
 
 ## Ver similares
 
-Grupo **Emulación de adversarios**: CALDERA ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Emulación de adversarios**: CALDERA ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Atomic Red Team](atomic-red-team.md) ⭐ recomendado | 65 | Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. |
-| 2 | **CALDERA** (esta ficha) | 64 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
+| 1 | **CALDERA** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
+| 2 | [Atomic Red Team](atomic-red-team.md) | 62 | Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. |
 
 ## Acceso, coste y equipo
 

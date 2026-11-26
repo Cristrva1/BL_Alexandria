@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 59/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -44,8 +44,8 @@ Grupo **WAF compatibles con SecLang y el OWASP CRS**: OWASP Coraza ocupa la posi
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [ModSecurity](modsecurity.md) ⭐ recomendado | 66 | Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores. |
-| 2 | **OWASP Coraza** (esta ficha) | 62 | Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido. |
+| 1 | [ModSecurity](modsecurity.md) ⭐ recomendado | 70 | Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores. |
+| 2 | **OWASP Coraza** (esta ficha) | 59 | Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido. |
 
 ## Acceso, coste y equipo
 

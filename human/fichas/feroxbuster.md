@@ -39,14 +39,14 @@ Estado en GitHub: activo · último push 2026-11-12 · última versión publicad
 
 ## Ver similares
 
-Grupo **Fuzzing de rutas y contenido web**: feroxbuster ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Fuzzing de rutas y contenido web**: feroxbuster ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [ffuf](ffuf.md) ⭐ recomendado | 69 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
-| 2 | [dirsearch](dirsearch.md) | 61 | Si prefieres una herramienta en Python con listas y reportes listos. |
-| 3 | [Gobuster](gobuster.md) | 59 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
-| 4 | **feroxbuster** (esta ficha) | 58 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
+| 1 | [ffuf](ffuf.md) ⭐ recomendado | 66 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
+| 2 | [dirsearch](dirsearch.md) | 58 | Si prefieres una herramienta en Python con listas y reportes listos. |
+| 3 | **feroxbuster** (esta ficha) | 58 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
+| 4 | [Gobuster](gobuster.md) | 56 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
 
 ## Acceso, coste y equipo
 

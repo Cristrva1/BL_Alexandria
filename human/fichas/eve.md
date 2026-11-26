@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él; requiere clave de API
 
+**Puntuación de calidad** 63/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git.

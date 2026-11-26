@@ -18,7 +18,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `tailwindcss` | Framework CSS utility-first para construir interfaces rápido y consistente… | 2 Intermedio | 77 | MIT (OSI permisiva) | sin grupo |
+| `tailwindcss` | Framework CSS utility-first para construir interfaces rápido y consistente… | 2 Intermedio | 76 | MIT (OSI permisiva) | sin grupo |
 | `daisyui` | La librería de componentes más popular para Tailwind CSS, con clases semánticas… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
 | `normalize.css` | Hoja de estilos que normaliza los defaults entre navegadores para partir de una… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
 | `flexoki` | Paleta de color para texto, código e interfaces que puede servir de referencia… | 1 Básico | 45 | MIT (OSI permisiva) | sin grupo |
@@ -29,7 +29,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### tailwindcss (`tailwindcss`)
 
-- **Repo:** https://github.com/tailwindlabs/tailwindcss · MIT · nivel 2 · 77/100
+- **Repo:** https://github.com/tailwindlabs/tailwindcss · MIT · nivel 2 · 76/100
 - **Qué es:** Framework CSS utility-first (MIT) de Tailwind Labs. Es el estándar de facto en muchos stacks modernos de frontend, muy maduro y activo (v4.3.5).
 - **Cuándo elegirlo:** Casos: Diseñar un formulario responsive; Definir colores y espaciado consistentes.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Proyecto Vite u otra integración elegida; Node; hardware prerequisites; API de IA: no; Proyecto Vite u otra integración elegida; Node.

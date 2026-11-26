@@ -22,7 +22,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `d3` | Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y… | 2 Intermedio | 70 | ISC (OSI permisiva) | alternativa |
 | `recharts` | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 69 | MIT (OSI permisiva) | alternativa |
 | `chart-js` | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
-| `uplot` | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
+| `uplot` | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -83,7 +83,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### uPlot (`uplot`)
 
-- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 59/100
+- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 56/100
 - **Qué es:** μPlot, librería compacta de gráficos de series temporales sobre Canvas 2D, de @leeoniya. Licencia MIT. Es madura (~11k estrellas, 1.6.32).
 - **Cuándo elegirlo:** Casos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript; datos temporales ordenados; estilos y build distribuidos; hardware prerequisites; API de IA: no; JavaScript; datos temporales ordenados; estilos y build distribuidos.

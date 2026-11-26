@@ -20,36 +20,36 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---|---:|---|---|
 | `motion` | animacion | Librería de animación declarativa para React/JS (antes Framer Motion) que añade… | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
 | `react-three-fiber` | animacion | Renderer de React para three.js que expresa escenas 3D como componentes… | 2 Intermedio | 76 | MIT (OSI permisiva) | sin grupo |
-| `pixijs` | animacion | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
-| `three.js` | animacion | Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y… | 3 Avanzado | 69 | MIT (OSI permisiva) | recomendado |
+| `pixijs` | animacion | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para… | 2 Intermedio | 73 | MIT (OSI permisiva) | sin grupo |
+| `three.js` | animacion | Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y… | 3 Avanzado | 70 | MIT (OSI permisiva) | recomendado |
 | `babylonjs` | animacion | Motor 3D completo para la web de Microsoft y la comunidad, con física… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `playcanvas` | animacion | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y… | 2 Intermedio | 65 | MIT (OSI permisiva) | alternativa |
-| `pixelfx` | animacion | Colección de efectos de pixel art hechos con código y una skill para ayudar a… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
-| `animejs` | animacion | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `regl` | animacion | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
+| `playcanvas` | animacion | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y… | 2 Intermedio | 66 | MIT (OSI permisiva) | alternativa |
+| `pixelfx` | animacion | Colección de efectos de pixel art hechos con código y una skill para ayudar a… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `animejs` | animacion | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | 2 Intermedio | 61 | MIT (OSI permisiva) | alternativa |
+| `regl` | animacion | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
 | `gsap` | animacion | Librería de animación de alto rendimiento para la web, capaz de orquestar… | 2 Intermedio | 55 | — (sin licencia detectada) | alternativa |
 | `scenejs` | animacion | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de… | 2 Intermedio | 50 | MIT (OSI permisiva) | sin grupo |
-| `pencil` | animacion | Aplicación para crear animación 2D dibujada a mano mediante herramientas de… | 1 Básico | 47 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `pencil` | animacion | Aplicación para crear animación 2D dibujada a mano mediante herramientas de… | 1 Básico | 48 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `zdog` | animacion | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones… | 2 Intermedio | 47 | — (sin licencia detectada) | sin grupo |
 | `webgl-noise` | animacion | Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
-| `zdog` | animacion | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones… | 2 Intermedio | 46 | — (sin licencia detectada) | sin grupo |
+| `blender` | creacion-3d | Código de Blender, la aplicación para modelar, animar, renderizar y editar… | 1 Básico | 77 | GPL-2.0-or-later (OSI copyleft) | sin grupo |
 | `godot` | creacion-3d | Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en… | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
-| `blender` | creacion-3d | Código de Blender, la aplicación para modelar, animar, renderizar y editar… | 1 Básico | 76 | GPL-2.0-or-later (OSI copyleft) | sin grupo |
-| `freecad` | creacion-3d | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica… | 1 Básico | 71 | LGPL-2.1 (OSI copyleft) | sin grupo |
-| `filament` | creacion-3d | Motor de renderizado físicamente basado para integrar gráficos 3D en… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `freecad` | creacion-3d | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica… | 1 Básico | 72 | LGPL-2.1 (OSI copyleft) | sin grupo |
+| `filament` | creacion-3d | Motor de renderizado físicamente basado para integrar gráficos 3D en… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `bevy` | creacion-3d | Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o… | 2 Intermedio | 66 | MIT OR Apache-2.0 (OSI permisiva) | alternativa |
-| `meshoptimizer` | creacion-3d | Biblioteca para optimizar geometría y reducir el coste de almacenar y… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
-| `openscad` | creacion-3d | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la… | 1 Básico | 59 | GPL-2.0 (con excepción CGAL) (OSI copyleft) | sin grupo |
-| `ozz-animation` | creacion-3d | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
-| `awesome-cad` | creacion-3d | Directorio de programas, bibliotecas y recursos de diseño asistido por… | 1 Básico | 34 | MIT (OSI permisiva) | sin grupo |
-| `openreality` | creacion-3d | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP… | 3 Avanzado | — | BSD-2-Clause | sin grupo |
-| `video2threejs` | creacion-3d | Explica con un caso cómo reconstruir la apariencia de un video como una escena… | 1 Básico | — | MIT | sin grupo |
-| `genesis-world` | simulacion | Plataforma de simulación para IA física y robótica con motor multifísica… | 3 Avanzado | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `mujoco` | simulacion | Motor de física de Google DeepMind para simular estructuras articuladas con… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `warp` | simulacion | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `planck-js` | simulacion | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
-| `react-three-rapier` | simulacion | Integración del motor de física Rapier con React Three Fiber para añadir… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
-| `motionbricks` | simulacion | Genera movimiento de personajes a partir de poses y objetivos mediante modelos… | 3 Avanzado | — | Apache-2.0 | sin grupo |
-| `robotics-antigravity-plugin` | simulacion | Añade a Antigravity instrucciones para crear, probar y observar escenas de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `meshoptimizer` | creacion-3d | Biblioteca para optimizar geometría y reducir el coste de almacenar y… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `openscad` | creacion-3d | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la… | 1 Básico | 61 | GPL-2.0 (con excepción CGAL) (OSI copyleft) | sin grupo |
+| `openreality` | creacion-3d | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP… | 3 Avanzado | 57 | BSD-2-Clause (OSI permisiva) | sin grupo |
+| `ozz-animation` | creacion-3d | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
+| `awesome-cad` | creacion-3d | Directorio de programas, bibliotecas y recursos de diseño asistido por… | 1 Básico | 36 | MIT (OSI permisiva) | sin grupo |
+| `video2threejs` | creacion-3d | Explica con un caso cómo reconstruir la apariencia de un video como una escena… | 1 Básico | 35 | MIT (OSI permisiva) | sin grupo |
+| `genesis-world` | simulacion | Plataforma de simulación para IA física y robótica con motor multifísica… | 3 Avanzado | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `mujoco` | simulacion | Motor de física de Google DeepMind para simular estructuras articuladas con… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `warp` | simulacion | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un… | 3 Avanzado | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `planck-js` | simulacion | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `motionbricks` | simulacion | Genera movimiento de personajes a partir de poses y objetivos mediante modelos… | 3 Avanzado | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `react-three-rapier` | simulacion | Integración del motor de física Rapier con React Three Fiber para añadir… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
+| `robotics-antigravity-plugin` | simulacion | Añade a Antigravity instrucciones para crear, probar y observar escenas de… | 2 Intermedio | 48 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -85,7 +85,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PixiJS (`pixijs`)
 
-- **Repo:** https://github.com/pixijs/pixijs · MIT · nivel 2 · 72/100
+- **Repo:** https://github.com/pixijs/pixijs · MIT · nivel 2 · 73/100
 - **Qué es:** Biblioteca de código abierto (MIT) para gráficos 2D en la web, una de las más usadas para juegos y experiencias interactivas en navegador. Activa (v8 con WebGPU).
 - **Cuándo elegirlo:** Casos: crear un juego 2D o una experiencia interactiva para navegador; dibujar miles de elementos animados en una visualización web.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -96,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### three.js (`three.js`)
 
-- **Repo:** https://github.com/mrdoob/three.js · MIT · nivel 3 · 69/100 · recomendado en «Motores 3D para la web»
+- **Repo:** https://github.com/mrdoob/three.js · MIT · nivel 3 · 70/100 · recomendado en «Motores 3D para la web»
 - **Qué es:** three.js, biblioteca JavaScript 3D de propósito general, de @mrdoob y comunidad. Licencia MIT. Es muy madura (~119k estrellas, r187).
 - **Cuándo elegirlo:** Casos: Crear un visor 3D web; Prototipar una escena interactiva.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, necesita GPU; Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible; hardware prerequisites; API de IA: no; Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible.
@@ -120,7 +120,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PlayCanvas Engine (`playcanvas`)
 
-- **Repo:** https://github.com/playcanvas/engine · MIT · nivel 2 · 65/100 · alternativa en «Motores 3D para la web»
+- **Repo:** https://github.com/playcanvas/engine · MIT · nivel 2 · 66/100 · alternativa en «Motores 3D para la web»
 - **Qué es:** Motor gráfico de código abierto (MIT) de PlayCanvas (propiedad de Snap Inc.). Lo acompañan un editor colaborativo en la nube (servicio con planes) y herramientas como SuperSplat. Activo.
 - **Cuándo elegirlo:** Casos: publicar una escena 3D o un escaneo con Gaussian splats en una web; crear un juego ligero que funcione en cualquier navegador y móvil.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -132,7 +132,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### pixelfx (`pixelfx`)
 
-- **Repo:** https://github.com/patch-gg/pixelfx · MIT · nivel 2 · 63/100
+- **Repo:** https://github.com/patch-gg/pixelfx · MIT · nivel 2 · 64/100
 - **Qué es:** pixelfx, colección de 244 efectos y animaciones de pixel art hechos con código, de patch-gg. Licencia MIT. Es muy reciente (octubre de 2026) y ya tiene ~7.6k estrellas.
 - **Cuándo elegirlo:** Casos: Añadir un efecto a un juego; Preparar una hoja de sprites.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Proyecto JavaScript o motor que admita sprites; Claude Code opcional; hardware prerequisites; API de IA: opcional; Proyecto JavaScript o motor que admita sprites; Claude Code opcional.
@@ -143,7 +143,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Anime.js (`animejs`)
 
-- **Repo:** https://github.com/juliangarnier/anime · MIT · nivel 2 · 60/100 · alternativa en «Animación web en JavaScript»
+- **Repo:** https://github.com/juliangarnier/anime · MIT · nivel 2 · 61/100 · alternativa en «Animación web en JavaScript»
 - **Qué es:** Anime.js, motor de animación JavaScript ligero, de @juliangarnier. Licencia MIT. Es maduro (~75k estrellas, v4.5.0) y se financia con patrocinios.
 - **Cuándo elegirlo:** Casos: Mostrar una transición de estado; Animar un SVG sencillo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Proyecto JavaScript; DOM o SVG de prueba; hardware prerequisites; API de IA: no; Proyecto JavaScript; DOM o SVG de prueba.
@@ -155,7 +155,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### regl (`regl`)
 
-- **Repo:** https://github.com/regl-project/regl · MIT · nivel 2 · 57/100
+- **Repo:** https://github.com/regl-project/regl · MIT · nivel 2 · 58/100
 - **Qué es:** regl, biblioteca funcional para WebGL, de regl-project. Licencia MIT. Es madura y estable (~5.6k estrellas).
 - **Cuándo elegirlo:** Casos: Prototipar visualización acelerada; Aprender render funcional.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Node; proyecto WebGL; nociones de shaders; hardware prerequisites; API de IA: no; Node; proyecto WebGL; nociones de shaders.
@@ -189,7 +189,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### pencil (`pencil`)
 
-- **Repo:** https://github.com/pencil2d/pencil · GPL-2.0 · nivel 1 · 47/100
+- **Repo:** https://github.com/pencil2d/pencil · GPL-2.0 · nivel 1 · 48/100
 - **Qué es:** Pencil2D, software libre de animación 2D tradicional dibujada a mano, desarrollado por voluntarios. Licencia GPL-2.0. Tiene ~1.9k estrellas y su última release es v0.7.2 (marzo de 2026).
 - **Cuándo elegirlo:** Casos: Aprender animación dibujada a mano; Crear una prueba de movimiento 2D.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Instalador de tu sistema; tableta opcional; carpeta de proyecto; hardware prerequisites; API de IA: no; Instalador de tu sistema; tableta opcional; carpeta de proyecto.
@@ -197,6 +197,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Dibuja tres fotogramas sencillos, ajusta su duración y reproduce el movimiento Éxito: Puedes guardar el proyecto y exportar una animación corta
 - **Combina con:** `ffmpeg` [12/edicion], `blender` [26/creacion-3d], `pixelfx`
 - **Riesgos y avisos:** Sin alternativas declaradas. Pencil2D es un editor de animación 2D tradicional; no debe confundirse con herramientas IA o editores de UI que comparten nombre.
+
+### zdog (`zdog`)
+
+- **Repo:** https://github.com/metafizzy/zdog · — · nivel 2 · 47/100
+- **Qué es:** Zdog, motor pseudo-3D «redondo, plano y amigable para diseñadores», de Metafizzy. El README indica licencia MIT, pero GitHub no detecta archivo de licencia. Tiene ~11k estrellas y no se actualiza desde julio de 2023 (v1.1.1).
+- **Cuándo elegirlo:** Casos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Página de prueba; JavaScript; canvas o SVG; hardware prerequisites; API de IA: no; Página de prueba; JavaScript; canvas o SVG.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install zdog` — fuente: https://github.com/metafizzy/zdog/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente Éxito: Puedes reconocer las formas y su orden
+- **Combina con:** `animejs`, `gsap`, `three.js`, `scenejs`
+- **Riesgos y avisos:** Sin alternativas declaradas. Inactivo. Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado.
 
 ### webgl-noise (`webgl-noise`)
 
@@ -209,16 +220,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `three.js`, `regl`, `react-three-fiber`
 - **Riesgos y avisos:** Sin alternativas declaradas. El autor remite a su clon stegu/webgl-noise para mantenimiento; es código de shader y no una aplicación generativa de IA.
 
-### zdog (`zdog`)
+### blender (`blender`)
 
-- **Repo:** https://github.com/metafizzy/zdog · — · nivel 2 · 46/100
-- **Qué es:** Zdog, motor pseudo-3D «redondo, plano y amigable para diseñadores», de Metafizzy. El README indica licencia MIT, pero GitHub no detecta archivo de licencia. Tiene ~11k estrellas y no se actualiza desde julio de 2023 (v1.1.1).
-- **Cuándo elegirlo:** Casos: Diseñar un icono pseudo-3D; Preparar una ilustración interactiva.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Página de prueba; JavaScript; canvas o SVG; hardware prerequisites; API de IA: no; Página de prueba; JavaScript; canvas o SVG.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install zdog` — fuente: https://github.com/metafizzy/zdog/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Crea una ilustración pequeña y cambia su rotación para observar la profundidad aparente Éxito: Puedes reconocer las formas y su orden
-- **Combina con:** `animejs`, `gsap`, `three.js`, `scenejs`
-- **Riesgos y avisos:** Sin alternativas declaradas. Inactivo. Es pseudo-3D para ilustraciones simples y no un motor de modelado o render físicamente basado.
+- **Repo:** https://github.com/blender/blender · GPL-2.0-or-later · nivel 1 · 77/100
+- **Qué es:** Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION).
+- **Cuándo elegirlo:** Casos: Modelar un objeto sencillo; Preparar una escena de presentación.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Aplicación Blender para tu sistema; equipo adecuado a la escena; hardware prerequisites; API de IA: no; Aplicación Blender para tu sistema; equipo adecuado a la escena.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/blender/blender/blob/main/.github/README.md
+- **Primera prueba propuesta (no ejecutada):** Usa una escena nueva con un cubo y prueba mover, iluminar y renderizar una imagen Éxito: Puedes guardar el proyecto y localizar el render
+- **Combina con:** `blender-mcp` [5/servidores], `3dviz-pro-max` [27/skills], `three.js` [26/animacion]
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Este repositorio es un espejo del código; para utilizar Blender elige la distribución de la aplicación y no compiles todo el espejo; los conectores AI son….
 
 ### Godot Engine (`godot`)
 
@@ -232,20 +243,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `bevy`
 - **Riesgos y avisos:** Alternativa de Bevy (motor en Rust con ECS y sin editor visual completo).
 
-### blender (`blender`)
-
-- **Repo:** https://github.com/blender/blender · GPL-2.0-or-later · nivel 1 · 76/100
-- **Qué es:** Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION).
-- **Cuándo elegirlo:** Casos: Modelar un objeto sencillo; Preparar una escena de presentación.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Aplicación Blender para tu sistema; equipo adecuado a la escena; hardware prerequisites; API de IA: no; Aplicación Blender para tu sistema; equipo adecuado a la escena.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/blender/blender/blob/main/.github/README.md
-- **Primera prueba propuesta (no ejecutada):** Usa una escena nueva con un cubo y prueba mover, iluminar y renderizar una imagen Éxito: Puedes guardar el proyecto y localizar el render
-- **Combina con:** `blender-mcp` [5/servidores], `3dviz-pro-max` [27/skills], `three.js` [26/animacion]
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Este repositorio es un espejo del código; para utilizar Blender elige la distribución de la aplicación y no compiles todo el espejo; los conectores AI son….
-
 ### FreeCAD (`freecad`)
 
-- **Repo:** https://github.com/FreeCAD/FreeCAD · LGPL-2.1 · nivel 1 · 71/100
+- **Repo:** https://github.com/FreeCAD/FreeCAD · LGPL-2.1 · nivel 1 · 72/100
 - **Qué es:** Modelador 3D paramétrico de código abierto (LGPL-2.1) desarrollado por la comunidad, con financiación de la FreeCAD Project Association. Activo; versión 1.x estable.
 - **Cuándo elegirlo:** Casos: diseñar una pieza mecánica paramétrica y exportarla a STL para impresión 3D; generar planos técnicos acotados a partir de un modelo 3D.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -255,7 +255,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### filament (`filament`)
 
-- **Repo:** https://github.com/google/filament · Apache-2.0 · nivel 2 · 69/100
+- **Repo:** https://github.com/google/filament · Apache-2.0 · nivel 2 · 70/100
 - **Qué es:** Filament, motor de renderizado físicamente basado (PBR) en tiempo real de Google. Licencia Apache-2.0. Es maduro (~21k estrellas, v1.80.1).
 - **Cuándo elegirlo:** Casos: Integrar un visor 3D móvil; Estudiar render físicamente basado.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Plataforma de destino; runtime y herramientas de la misma release; modelo glTF de prueba; hardware prerequisites; API de IA: no; Plataforma de destino; runtime y herramientas de la misma release; modelo glTF de prueba.
@@ -278,7 +278,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### meshoptimizer (`meshoptimizer`)
 
-- **Repo:** https://github.com/zeux/meshoptimizer · MIT · nivel 2 · 62/100
+- **Repo:** https://github.com/zeux/meshoptimizer · MIT · nivel 2 · 64/100
 - **Qué es:** meshoptimizer, biblioteca para optimizar mallas de triángulos para GPU, de @zeux. Licencia MIT. Es madura y muy usada en la industria (~8.9k estrellas, v1.3).
 - **Cuándo elegirlo:** Casos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Entorno de desarrollo compatible; malla pequeña; copia del original; hardware prerequisites; API de IA: no; Entorno de desarrollo compatible; malla pequeña; copia del original.
@@ -289,7 +289,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenSCAD (`openscad`)
 
-- **Repo:** https://github.com/openscad/openscad · GPL-2.0 (con excepción CGAL) · nivel 1 · 59/100
+- **Repo:** https://github.com/openscad/openscad · GPL-2.0 (con excepción CGAL) · nivel 1 · 61/100
 - **Qué es:** Programa libre (GPL-2.0 con excepción para CGAL) para crear modelos CAD sólidos, disponible para Linux, Windows y macOS. Muy usado en impresión 3D (p. ej. el personalizador de Thingiverse).
 - **Cuándo elegirlo:** Casos: diseñar piezas paramétricas para impresión 3D cambiando variables; generar variantes de una pieza (tamaños, agujeros) desde el mismo script.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -297,9 +297,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala OpenSCAD, escribe `cube(10); translate([5,5,5]) sphere(6);`, renderiza con F6 y exporta a STL. Éxito: Obtienes un archivo STL listo para el laminador de la impresora.
 - **Combina con:** `freecad`, `awesome-cad`, `claude-code` [20/terminal]
 
+### Open Reality (`openreality`)
+
+- **Repo:** https://github.com/reality-opened/openreality · BSD-2-Clause · nivel 3 · 57/100
+- **Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
+- **Cuándo elegirlo:** Casos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 3: preparación media, se instala dentro de un agente (skill, plugin o MCP), necesita GPU; Python; API de IA: no; Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://open-reality.io/mcp
+- **Primera prueba propuesta (no ejecutada):** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado. Éxito: Puedes abrir la escena o consultar un elemento sin compartir datos privados.
+- **Riesgos y avisos:** Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.
+
 ### ozz-animation (`ozz-animation`)
 
-- **Repo:** https://github.com/guillaumeblanc/ozz-animation · MIT · nivel 2 · 42/100
+- **Repo:** https://github.com/guillaumeblanc/ozz-animation · MIT · nivel 2 · 44/100
 - **Qué es:** ozz-animation, biblioteca C++ open source de animación esquelética 3D con herramientas, de @guillaumeblanc. El README indica licencia MIT (GitHub muestra NOASSERTION). Es madura (~3.1k estrellas, 0.17.0).
 - **Cuándo elegirlo:** Casos: Reproducir animaciones de personajes; Combinar clips en un motor propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Entorno C++; modelo con esqueleto; herramientas de conversión compatibles; hardware prerequisites; API de IA: no; Entorno C++; modelo con esqueleto; herramientas de conversión compatibles.
@@ -310,7 +320,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-cad (`awesome-cad`)
 
-- **Repo:** https://github.com/mlightcad/awesome-cad · MIT · nivel 1 · 34/100
+- **Repo:** https://github.com/mlightcad/awesome-cad · MIT · nivel 1 · 36/100
 - **Qué es:** Awesome CAD, lista curada de software, librerías y herramientas CAD open source, de mlightcad. Licencia MIT. Es reciente (enero de 2026) y de nicho (~240 estrellas).
 - **Cuándo elegirlo:** Casos: Encontrar software CAD; Comparar bibliotecas de geometría.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tipo de diseño que necesitas; hardware prerequisites; API de IA: no; Navegador; tipo de diseño que necesitas.
@@ -319,19 +329,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `blender`, `three.js` [26/animacion], `filament`, `freecad`, `openscad`
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD.
 
-### Open Reality (`openreality`)
-
-- **Repo:** https://github.com/reality-opened/openreality · BSD-2-Clause · nivel 3 · —/100
-- **Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
-- **Cuándo elegirlo:** Casos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
-- **Requisitos:** nivel 3: preparación media, se instala dentro de un agente (skill, plugin o MCP), necesita GPU; Python; API de IA: no; Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://open-reality.io/mcp
-- **Primera prueba propuesta (no ejecutada):** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado. Éxito: Puedes abrir la escena o consultar un elemento sin compartir datos privados.
-- **Riesgos y avisos:** Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.
-
 ### video2threejs (`video2threejs`)
 
-- **Repo:** https://github.com/cpppppp7/video2threejs · MIT · nivel 1 · —/100
+- **Repo:** https://github.com/cpppppp7/video2threejs · MIT · nivel 1 · 35/100
 - **Qué es:** Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
 - **Cuándo elegirlo:** Casos: Comparar el encuadre de una escena y su referencia.; Estudiar cómo combinar geometría y textura en una recreación sencilla.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; JavaScript; API de IA: no; Navegador para leer el caso y, si adaptas la técnica, una escena de prueba en Three.js..
@@ -341,7 +341,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Genesis World (`genesis-world`)
 
-- **Repo:** https://github.com/Genesis-Embodied-AI/genesis-world · Apache-2.0 · nivel 3 · 74/100
+- **Repo:** https://github.com/Genesis-Embodied-AI/genesis-world · Apache-2.0 · nivel 3 · 75/100
 - **Qué es:** Plataforma de simulación de código abierto (Apache-2.0), antes llamada Genesis, que nació como proyecto académico en diciembre de 2024 y ahora cuenta con el apoyo de la empresa Genesis AI. Muy activa (Genesis World 1.0).
 - **Cuándo elegirlo:** Casos: entrenar políticas de robots con miles de entornos paralelos en GPU; generar datos sintéticos de manipulación con cuerpos rígidos y deformables.
 - **Requisitos:** nivel 3: pip install; simulación física con GPU; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -352,7 +352,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MuJoCo (`mujoco`)
 
-- **Repo:** https://github.com/google-deepmind/mujoco · Apache-2.0 · nivel 2 · 74/100
+- **Repo:** https://github.com/google-deepmind/mujoco · Apache-2.0 · nivel 2 · 75/100
 - **Qué es:** Motor de física de código abierto (Apache-2.0) mantenido por Google DeepMind, que lo adquirió en 2021 y lo liberó en 2022. Referencia en investigación de robótica y aprendizaje por refuerzo. Muy activo.
 - **Cuándo elegirlo:** Casos: simular un robot o un brazo para probar controladores antes del hardware; entrenar políticas de aprendizaje por refuerzo en entornos físicos.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; C++, CMakeLists.txt; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -362,7 +362,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### warp (`warp`)
 
-- **Repo:** https://github.com/NVIDIA/warp · Apache-2.0 · nivel 3 · 68/100
+- **Repo:** https://github.com/NVIDIA/warp · Apache-2.0 · nivel 3 · 70/100
 - **Qué es:** NVIDIA Warp, framework Python para simulación, robótica y ML acelerados por GPU. Licencia Apache-2.0. Es maduro (~7.3k estrellas, v1.19.0).
 - **Cuándo elegirlo:** Casos: Estudiar simulación física; Prototipar cómputo para robótica.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Python 3.11+; CPU o GPU soportada; ejemplo pequeño; hardware prerequisites; API de IA: no; Python 3.11+; CPU o GPU soportada; ejemplo pequeño.
@@ -373,7 +373,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### planck.js (`planck-js`)
 
-- **Repo:** https://github.com/piqnt/planck.js · MIT · nivel 2 · 56/100
+- **Repo:** https://github.com/piqnt/planck.js · MIT · nivel 2 · 58/100
 - **Qué es:** Planck.js, reescritura en JavaScript/TypeScript del motor de física 2D Box2D, de piqnt. Licencia MIT. Es madura (~5.3k estrellas) y está activa.
 - **Cuándo elegirlo:** Casos: Prototipar física de un juego 2D; Explicar gravedad con una simulación.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Proyecto JavaScript; escena 2D de prueba; hardware prerequisites; API de IA: no; Proyecto JavaScript; escena 2D de prueba.
@@ -382,9 +382,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `pixelfx` [26/animacion], `threejs-game-skills` [27/skills], `three.js` [26/animacion], `pixijs` [26/animacion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Es un motor de física 2D basado en Box2D y corresponde a simulación; no genera animaciones por instrucciones de IA.
 
+### MotionBricks (`motionbricks`)
+
+- **Repo:** https://github.com/NVlabs/motionbricks · Apache-2.0 · nivel 3 · 55/100
+- **Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
+- **Cuándo elegirlo:** Casos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados. Éxito: Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
+- **Riesgos y avisos:** El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.
+
 ### react-three-rapier (`react-three-rapier`)
 
-- **Repo:** https://github.com/pmndrs/react-three-rapier · MIT · nivel 2 · 47/100
+- **Repo:** https://github.com/pmndrs/react-three-rapier · MIT · nivel 2 · 49/100
 - **Qué es:** @react-three/rapier, wrapper del motor de física Rapier (WASM) para react-three-fiber, de pmndrs. Licencia MIT. Tiene ~1.7k estrellas (v2.2.0).
 - **Cuándo elegirlo:** Casos: Crear una escena física React; Prototipar interacción con objetos 3D.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; React y Fiber compatibles; escena 3D; Rapier; hardware prerequisites; API de IA: no; React y Fiber compatibles; escena 3D; Rapier.
@@ -393,19 +403,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `react-three-fiber` [26/animacion], `three.js` [26/animacion], `threejs-game-skills` [27/skills]
 - **Riesgos y avisos:** Sin alternativas declaradas. La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones.
 
-### MotionBricks (`motionbricks`)
-
-- **Repo:** https://github.com/NVlabs/motionbricks · Apache-2.0 · nivel 3 · —/100
-- **Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
-- **Cuándo elegirlo:** Casos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
-- **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
-- **Primera prueba propuesta (no ejecutada):** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados. Éxito: Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
-- **Riesgos y avisos:** El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.
-
 ### Robotics for Antigravity (`robotics-antigravity-plugin`)
 
-- **Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin · Apache-2.0 · nivel 2 · —/100
+- **Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin · Apache-2.0 · nivel 2 · 48/100
 - **Qué es:** Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.
 - **Cuándo elegirlo:** Casos: Abrir un escenario de simulación y cambiar la posición de un objeto virtual.; Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo. Evítalo si no usas un agente compatible con skills.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python; API de IA: depends; Antigravity, dependencias de simulación indicadas y una escena de ejemplo sin robot físico..

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 65/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -44,8 +44,8 @@ Grupo **Modelado de amenazas**: OWASP Threat Dragon ocupa la posición 1 de 2 (r
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **OWASP Threat Dragon** (esta ficha) ⭐ recomendado | 65 | Si prefieres dibujar el diagrama en una aplicación de escritorio o web. |
-| 2 | [OWASP pytm](pytm.md) | 60 | Si quieres el modelo como código Python versionado junto al proyecto y generado en CI. |
+| 1 | **OWASP Threat Dragon** (esta ficha) ⭐ recomendado | 70 | Si prefieres dibujar el diagrama en una aplicación de escritorio o web. |
+| 2 | [OWASP pytm](pytm.md) | 58 | Si quieres el modelo como código Python versionado junto al proyecto y generado en CI. |
 
 ## Acceso, coste y equipo
 

@@ -53,11 +53,11 @@ Grupo **Motores para correr LLM en local**: llama.cpp ocupa la posición 2 de 5 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Ollama](ollama.md) ⭐ recomendado | 84 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
+| 1 | [Ollama](ollama.md) ⭐ recomendado | 85 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
 | 2 | **llama.cpp** (esta ficha) | 78 | Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento. |
 | 3 | [LocalAI](localai.md) | 72 | Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor. |
-| 4 | [llamafile](llamafile.md) | 52 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
-| 5 | [KoboldCpp](koboldcpp.md) | 46 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
+| 4 | [llamafile](llamafile.md) | 53 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
+| 5 | [KoboldCpp](koboldcpp.md) | 47 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
 
 ## Acceso, coste y equipo
 

@@ -19,16 +19,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `awesome-llm-apps` | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos… | 1 Básico | 75 | Apache-2.0 (OSI permisiva) | recomendado |
-| `generative-ai-for-beginners` | Curso de Microsoft para aprender los conceptos y construir ejemplos de… | 1 Básico | 68 | MIT (OSI permisiva) | recomendado |
 | `loop-engineering` | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
-| `ai-agents-for-beginners` | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar… | 1 Básico | 65 | MIT (OSI permisiva) | alternativa |
+| `ai-agents-for-beginners` | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar… | 1 Básico | 65 | MIT (OSI permisiva) | recomendado |
+| `generative-ai-for-beginners` | Curso de Microsoft para aprender los conceptos y construir ejemplos de… | 1 Básico | 65 | MIT (OSI permisiva) | alternativa |
 | `500-ai-agents-projects` | Colección de casos de uso y agentes autocontenidos, junto con enlaces a… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
-| `agents-course` | Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a… | 1 Básico | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `agents-course` | Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a… | 1 Básico | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ai-engineering-hub` | Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
 | `openai-cookbook` | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
-| `claude-cookbooks` | Recetario oficial de Anthropic con notebooks de Python para la API de Claude… | 1 Básico | 56 | MIT (OSI permisiva) | alternativa |
-| `claude-quickstarts` | Ejemplos oficiales de Anthropic para construir aplicaciones con Claude… | 1 Básico | 56 | MIT (OSI permisiva) | sin grupo |
-| `12-factor-agents` | Guía de 12 principios de ingeniería para construir agentes con LLM fiables en… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `claude-cookbooks` | Recetario oficial de Anthropic con notebooks de Python para la API de Claude… | 1 Básico | 53 | MIT (OSI permisiva) | alternativa |
+| `claude-quickstarts` | Ejemplos oficiales de Anthropic para construir aplicaciones con Claude… | 1 Básico | 53 | MIT (OSI permisiva) | sin grupo |
+| `12-factor-agents` | Guía de 12 principios de ingeniería para construir agentes con LLM fiables en… | 1 Básico | 50 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `agents-towards-production` | Colección de 28 tutoriales con código para llevar agentes de IA a producción… | 1 Básico | 49 | Licencia propia no comercial (source-available) | sin grupo |
 | `awesome-harness-engineering` | Directorio de herramientas y patrones para diseñar el entorno, memoria… | 1 Básico | 49 | CC0-1.0 (OSI permisiva) | sin grupo |
 | `context-engineering` | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la… | 1 Básico | 44 | MIT (OSI permisiva) | sin grupo |
@@ -49,18 +49,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `openai-cookbook`, `claude-cookbooks`
 - **Riesgos y avisos:** Alternativas (elige una): openai-cookbook, claude-cookbooks. Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación.
 
-### Generative AI for Beginners (`generative-ai-for-beginners`)
-
-- **Repo:** https://github.com/microsoft/generative-ai-for-beginners · MIT · nivel 1 · 68/100 · recomendado en «Cursos de Microsoft para principiantes»
-- **Qué es:** Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.
-- **Cuándo elegirlo:** Casos: Empezar a construir una app generativa; Comparar nube con Foundry Local.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección; hardware prerequisites; API de IA: opcional; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico Éxito: Puedes distinguir modelo, aplicación y proveedor y localizar las dependencias de ese ejemplo
-- **Combina con:** `ai-agents-for-beginners`, `mcp-for-beginners` [5/directorios], `openai-cookbook`
-- **Alternativas:** `ai-agents-for-beginners`, `llm-course`
-- **Riesgos y avisos:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependían de GitHub Models, retirado a finales de julio de 2026; usa Microsoft Foundry Models o…. No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local.
-
 ### Loop Engineering (`loop-engineering`)
 
 - **Repo:** https://github.com/cobusgreyling/loop-engineering · MIT · nivel 1 · 67/100
@@ -79,7 +67,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AI Agents for Beginners (`ai-agents-for-beginners`)
 
-- **Repo:** https://github.com/microsoft/ai-agents-for-beginners · MIT · nivel 1 · 65/100 · alternativa en «Cursos de Microsoft para principiantes»
+- **Repo:** https://github.com/microsoft/ai-agents-for-beginners · MIT · nivel 1 · 65/100 · recomendado en «Cursos de Microsoft para principiantes»
 - **Qué es:** Curso gratuito de Microsoft (MIT) para empezar a construir agentes de IA. Tiene unas 18 lecciones con texto, vídeo y código Python, y está traducido a más de 50 idiomas. Es activo y muy popular (~80k estrellas).
 - **Cuándo elegirlo:** Casos: Aprender patrones de agentes; Estudiar herramientas y memoria con ejemplos.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python y cuenta Azure para los ejercicios principales; hardware prerequisites; API de IA: opcional; Navegador; Python y cuenta Azure para los ejercicios principales.
@@ -88,6 +76,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `agent-framework` [3/ts], `generative-ai-for-beginners`, `mcp-for-beginners` [5/directorios]
 - **Alternativas:** `generative-ai-for-beginners`
 - **Riesgos y avisos:** Sin alternativas declaradas. Requiere cuenta de Azure para los ejemplos tal como están. El README actual usa Agent Framework y Foundry Agent Service V2; algunos ejemplos aceptan otros proveedores compatibles y no se presupone ejecución local.
+
+### Generative AI for Beginners (`generative-ai-for-beginners`)
+
+- **Repo:** https://github.com/microsoft/generative-ai-for-beginners · MIT · nivel 1 · 65/100 · alternativa en «Cursos de Microsoft para principiantes»
+- **Qué es:** Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.
+- **Cuándo elegirlo:** Casos: Empezar a construir una app generativa; Comparar nube con Foundry Local.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección; hardware prerequisites; API de IA: opcional; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico Éxito: Puedes distinguir modelo, aplicación y proveedor y localizar las dependencias de ese ejemplo
+- **Combina con:** `ai-agents-for-beginners`, `mcp-for-beginners` [5/directorios], `openai-cookbook`
+- **Alternativas:** `ai-agents-for-beginners`, `llm-course`
+- **Riesgos y avisos:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependían de GitHub Models, retirado a finales de julio de 2026; usa Microsoft Foundry Models o…. No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local.
 
 ### 500-AI-Agents-Projects (`500-ai-agents-projects`)
 
@@ -102,7 +102,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Hugging Face Agents Course (`agents-course`)
 
-- **Repo:** https://github.com/huggingface/agents-course · Apache-2.0 · nivel 1 · 60/100
+- **Repo:** https://github.com/huggingface/agents-course · Apache-2.0 · nivel 1 · 58/100
 - **Qué es:** Curso de código abierto (Apache-2.0) de Hugging Face. Muy popular; contenido estable con unidades extra añadidas con el tiempo.
 - **Cuándo elegirlo:** Casos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; MDX; API de IA: no.
@@ -136,7 +136,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Claude Cookbooks (`claude-cookbooks`)
 
-- **Repo:** https://github.com/anthropics/claude-cookbooks · MIT · nivel 1 · 56/100 · alternativa en «Cookbooks y ejemplos de apps con LLM»
+- **Repo:** https://github.com/anthropics/claude-cookbooks · MIT · nivel 1 · 53/100 · alternativa en «Cookbooks y ejemplos de apps con LLM»
 - **Qué es:** Recetario oficial de Anthropic (MIT) con notebooks y guías para construir con la API de Claude. Antes se llamaba anthropic-cookbook, nombre que aún aparece en muchos enlaces del README. Es activo (último push en noviembre de 2026).
 - **Cuándo elegirlo:** Casos: Clasificar tickets ficticios; Estudiar llamadas a herramientas.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python y clave Anthropic para ejecutar ejemplos; hardware prerequisites; API de IA: opcional; Navegador; Python y clave Anthropic para ejecutar ejemplos.
@@ -148,7 +148,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-quickstarts (`claude-quickstarts`)
 
-- **Repo:** https://github.com/anthropics/claude-quickstarts · MIT · nivel 1 · 56/100
+- **Repo:** https://github.com/anthropics/claude-quickstarts · MIT · nivel 1 · 53/100
 - **Qué es:** Colección oficial de Anthropic (MIT) de proyectos de inicio para construir aplicaciones con la API de Claude. Es activa (último push en noviembre de 2026) y se amplía con las novedades de la plataforma.
 - **Cuándo elegirlo:** Casos: Prototipar soporte con Claude; Estudiar una demo de uso de computadora.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python o TypeScript según proyecto; clave Anthropic; servicios del ejemplo; hardware prerequisites; API de IA: opcional; Python o TypeScript según proyecto; clave Anthropic; servicios del ejemplo.
@@ -159,7 +159,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### 12-Factor Agents (`12-factor-agents`)
 
-- **Repo:** https://github.com/humanlayer/12-factor-agents · Apache-2.0 · nivel 1 · 53/100
+- **Repo:** https://github.com/humanlayer/12-factor-agents · Apache-2.0 · nivel 1 · 50/100
 - **Qué es:** Guía de 12 principios para construir aplicaciones con LLM fiables, escrita por Dex (HumanLayer) a imagen de las '12 Factor Apps'. El código es Apache 2.0 y el contenido CC BY-SA 4.0 (GitHub lo marca NOASSERTION).
 - **Cuándo elegirlo:** Casos: Revisar un diseño antes de programar; Estudiar recuperación de errores en agentes.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; flujo de agente dibujado; hardware prerequisites; API de IA: no; Navegador; flujo de agente dibujado.

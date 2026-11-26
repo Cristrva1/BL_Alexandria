@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -55,8 +55,8 @@ Grupo **Servidores de inferencia de alto rendimiento**: SGLang ocupa la posició
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [vLLM](vllm.md) ⭐ recomendado | 78 | Si buscas esto: motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
-| 2 | **SGLang** (esta ficha) | 67 | Si buscas esto: framework de servicio de alto rendimiento para LLM y modelos multimodales. |
+| 1 | [vLLM](vllm.md) ⭐ recomendado | 79 | Si buscas esto: motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
+| 2 | **SGLang** (esta ficha) | 68 | Si buscas esto: framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 
 ## Acceso, coste y equipo
 

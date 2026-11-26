@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 58/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT. Fuente: [LICENSE](https://github.com/OWASP/pytm/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -44,8 +44,8 @@ Grupo **Modelado de amenazas**: OWASP pytm ocupa la posición 2 de 2 (alternativ
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [OWASP Threat Dragon](threat-dragon.md) ⭐ recomendado | 65 | Si prefieres dibujar el diagrama en una aplicación de escritorio o web. |
-| 2 | **OWASP pytm** (esta ficha) | 60 | Si quieres el modelo como código Python versionado junto al proyecto y generado en CI. |
+| 1 | [OWASP Threat Dragon](threat-dragon.md) ⭐ recomendado | 70 | Si prefieres dibujar el diagrama en una aplicación de escritorio o web. |
+| 2 | **OWASP pytm** (esta ficha) | 58 | Si quieres el modelo como código Python versionado junto al proyecto y generado en CI. |
 
 ## Acceso, coste y equipo
 

@@ -7,15 +7,17 @@ so that ordering, labels and derived fields are identical everywhere.
 """
 from __future__ import annotations
 
+import json
 import re
 import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from repo_intelligence.core.io import catalog_update
+from repo_intelligence.core.taxonomy import goal_memberships
 from repo_intelligence.core.install_mode import decision as _decision
 from repo_intelligence.core.install_mode import install_mode as _install_mode
-from repo_intelligence.core.io import read_json
 from repo_intelligence.core.access import access_facts, access_routes
 
 EXEC_LABELS: dict[str, tuple[str, str]] = {
@@ -183,14 +185,44 @@ def merge_repo(compact: dict[str, Any], detail: dict[str, Any]) -> dict[str, Any
     return merged
 
 
+def is_public_repo(repo: dict) -> bool:
+    return int(repo.get("cat") or 0) > 0 and not repo.get("alias_of")
+
+
+def read_indices(root: Path) -> tuple[dict, dict]:
+    """Validate both canonical inputs before replacing generated documents."""
+    with catalog_update(root):
+        compact = json.loads((root / "INDICE_IA.json").read_text(encoding="utf-8"))
+        detail = json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf-8"))
+    entries = compact.get("repos") if isinstance(compact, dict) else None
+    cards = detail.get("repos") if isinstance(detail, dict) else None
+    if not isinstance(entries, list) or not entries or not isinstance(cards, dict) or not cards:
+        raise ValueError("Los índices deben contener un catálogo y fichas de detalle.")
+    categories = compact.get("categories")
+    if not isinstance(categories, list) or not categories:
+        raise ValueError("Faltan las categorías del catálogo.")
+    numbers = {int(category["num"]) for category in categories}
+    ids = set()
+    for entry in entries:
+        rid = entry.get("id") if isinstance(entry, dict) else None
+        if not isinstance(rid, str) or not rid.strip() or rid in ids:
+            raise ValueError(f"Identificador ausente o repetido en el índice compacto: {rid}")
+        if int(entry["cat"]) not in numbers or not isinstance(cards.get(rid), dict) or not cards[rid]:
+            raise ValueError(f"Falta la categoría o la ficha de detalle de {rid}.")
+        ids.add(rid)
+    if ids != cards.keys():
+        raise ValueError("Los identificadores de ambos índices deben coincidir.")
+    return compact, detail
+
+
 def load_catalog(project_root: Path | str) -> Catalog:
     root = Path(project_root)
-    compact = read_json(root / "INDICE_IA.json", {})
-    detail = read_json(root / "INDICE_IA.detalle.json", {})
-    detail_repos: dict[str, Any] = detail.get("repos", {}) if isinstance(detail.get("repos"), dict) else {}
-    repos = [merge_repo(entry, detail_repos.get(entry.get("id"), {})) for entry in compact.get("repos", []) if entry.get("id")]
+    compact, detail = read_indices(root)
+    repos = [merge_repo(entry, detail["repos"][entry["id"]]) for entry in compact["repos"]]
     by_id: dict[str, dict[str, Any]] = {}
+    memberships = goal_memberships(compact)
     for repo in repos:
+        repo["goals"] = memberships[repo["id"]]
         by_id[repo["id"]] = repo
         by_id.setdefault(norm_id(repo["id"]), repo)
     categories = sorted(compact.get("categories", []), key=lambda c: int(c.get("num", 0)))

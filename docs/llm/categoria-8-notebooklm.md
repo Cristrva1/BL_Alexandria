@@ -18,10 +18,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `open-notebook` | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes… | 2 Intermedio | 67 | MIT (OSI permisiva) | recomendado |
-| `surfsense` | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | alternativa |
+| `open-notebook` | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes… | 2 Intermedio | 68 | MIT (OSI permisiva) | recomendado |
+| `surfsense` | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | alternativa |
 | `notebooklm-py` | API Python no oficial para interactuar programáticamente con NotebookLM de… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
-| `notebooklm-mcp-cli` | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar… | 1 Básico | 51 | MIT (OSI permisiva) | sin grupo |
+| `notebooklm-mcp-cli` | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar… | 1 Básico | 49 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -29,7 +29,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### open-notebook (`open-notebook`)
 
-- **Repo:** https://github.com/lfnovo/open-notebook · MIT · nivel 2 · 67/100 · recomendado en «Alternativas a NotebookLM»
+- **Repo:** https://github.com/lfnovo/open-notebook · MIT · nivel 2 · 68/100 · recomendado en «Alternativas a NotebookLM»
 - **Qué es:** Alternativa de código abierto (MIT) a NotebookLM de Google, centrada en la privacidad y creada por Luis Novo (lfnovo). Activa (v1.15.1), con interfaz en 14 idiomas.
 - **Cuándo elegirlo:** Casos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba; hardware prerequisites; API de IA: depends; Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba.
@@ -41,7 +41,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SurfSense (`surfsense`)
 
-- **Repo:** https://github.com/MODSetter/SurfSense · Apache-2.0 · nivel 2 · 64/100 · alternativa en «Alternativas a NotebookLM»
+- **Repo:** https://github.com/MODSetter/SurfSense · Apache-2.0 · nivel 2 · 65/100 · alternativa en «Alternativas a NotebookLM»
 - **Qué es:** Aplicación de escritorio de código abierto (Apache 2.0) de MODSetter, alternativa a NotebookLM que puede funcionar sin conexión («air-gapped») para documentos que no puedes subir.
 - **Cuándo elegirlo:** Casos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio.
 - **Requisitos:** nivel 2: preparación media; Instalador para tu sistema; modelo local o remoto; LibreOffice solo para conversiones Office; hardware prerequisites; API de IA: depends; Instalador para tu sistema; modelo local o remoto; LibreOffice solo para conversiones Office.
@@ -64,7 +64,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### notebooklm-mcp-cli (`notebooklm-mcp-cli`)
 
-- **Repo:** https://github.com/jacob-bd/gemini-notebook-mcp-cli · MIT · nivel 1 · 51/100
+- **Repo:** https://github.com/jacob-bd/gemini-notebook-mcp-cli · MIT · nivel 1 · 49/100
 - **Qué es:** CLI y servidor MCP no oficiales para Gemini Notebook (antes Google NotebookLM), de jacob-bd. MIT y muy activo (v0.16.5); el repositorio se renombró a `gemini-notebook-mcp-cli`.
 - **Cuándo elegirlo:** Casos: Administrar fuentes desde un agente; Exportar contenido generado por NotebookLM.
 - **Requisitos:** nivel 1: preparación sencilla; Python; cuenta Google; cliente MCP; sesión del navegador; hardware prerequisites; API de IA: no; Python; cuenta Google; cliente MCP; sesión del navegador.

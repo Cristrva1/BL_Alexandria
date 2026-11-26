@@ -19,14 +19,14 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `actual` | App de finanzas personales local-first basada en presupuesto por sobres, con… | 2 Intermedio | 73 | MIT (OSI permisiva) | recomendado |
-| `ai-job-search` | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
+| `ai-job-search` | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y… | 2 Intermedio | 73 | MIT (OSI permisiva) | sin grupo |
 | `cleanyourtv` | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
-| `ghostfolio` | Software abierto de gestión de patrimonio para seguir acciones, ETF y… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `ghostfolio` | Software abierto de gestión de patrimonio para seguir acciones, ETF y… | 2 Intermedio | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `firefly-iii` | Gestor autoalojado de finanzas personales con contabilidad de doble entrada… | 2 Intermedio | 62 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `optimizerduck` | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `universal-android-debloater-next-generation` | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 48 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `optimizerduck` | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 58 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `universal-android-debloater-next-generation` | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 49 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `isponsorblocktv` | Usa la base de SponsorBlock para saltar segmentos marcados durante la… | 1 Básico | 46 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `40-questions` | Colección de preguntas para revisar un año o una década y reflexionar sobre… | 1 Básico | 28 | — (sin licencia detectada) | sin grupo |
-| `isponsorblocktv` | Usa la base de SponsorBlock para saltar segmentos marcados durante la… | 1 Básico | — | GPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -46,7 +46,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ai-job-search (`ai-job-search`)
 
-- **Repo:** https://github.com/ai-job-search-dev/ai-job-search · MIT · nivel 2 · 72/100
+- **Repo:** https://github.com/ai-job-search-dev/ai-job-search · MIT · nivel 2 · 73/100
 - **Qué es:** Marco de búsqueda de empleo asistida por IA construido sobre Claude Code, creado por un geofísico que lo usó en su propia búsqueda. Licencia MIT. Ha crecido muy rápido (~72k estrellas, v1.7.5). No está afiliado a Anthropic.
 - **Cuándo elegirlo:** Casos: Adaptar un CV a una oferta; Preparar preguntas para una entrevista.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; perfil ficticio para ensayo; LaTeX y fuentes si generas PDFs; hardware prerequisites; API de IA: no; Agente compatible; perfil ficticio para ensayo; LaTeX y fuentes si generas PDFs.
@@ -68,7 +68,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Ghostfolio (`ghostfolio`)
 
-- **Repo:** https://github.com/ghostfolio/ghostfolio · AGPL-3.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/ghostfolio/ghostfolio · AGPL-3.0 · nivel 2 · 67/100
 - **Qué es:** Software de gestión de patrimonio de código abierto (AGPL-3.0) del proyecto Ghostfolio, con oferta comercial en la nube (Premium). Activo.
 - **Cuándo elegirlo:** Casos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; TypeScript, Dockerfile, package.json; API de IA: no.
@@ -91,7 +91,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### optimizerDuck (`optimizerduck`)
 
-- **Repo:** https://github.com/itsfatduck/optimizerDuck · GPL-3.0 · nivel 1 · 57/100
+- **Repo:** https://github.com/itsfatduck/optimizerDuck · GPL-3.0 · nivel 1 · 58/100
 - **Qué es:** Herramienta gratuita y open source para optimizar Windows en rendimiento, privacidad y simplicidad, de @itsfatduck. El archivo LICENSE es GPL-3.0, aunque GitHub muestra NOASSERTION. Es activa (~12k estrellas, v2.29.0).
 - **Cuándo elegirlo:** Casos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Windows compatible; administrador para cambios; respaldo y conocimiento del ajuste elegido; hardware prerequisites; API de IA: no; Windows compatible; administrador para cambios; respaldo y conocimiento del ajuste elegido.
@@ -102,7 +102,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### universal-android-debloater-next-generation (`universal-android-debloater-next-generation`)
 
-- **Repo:** https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation · GPL-3.0 · nivel 2 · 48/100
+- **Repo:** https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation · GPL-3.0 · nivel 2 · 49/100
 - **Qué es:** Fork independiente y mantenido de Universal Android Debloater (UAD), de la Universal-Debloater-Alliance. Licencia GPL-3.0. Es activo (~10k estrellas, v1.3.1).
 - **Cuándo elegirlo:** Casos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo.
 - **Requisitos:** nivel 2: preparación media; Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes; hardware prerequisites; API de IA: no; Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes.
@@ -110,6 +110,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Conecta un dispositivo de prueba y revisa una entrada y su explicación sin aplicar una selección masiva Éxito: Puedes identificar paquete, función y posibilidad de restauración documentada
 - **Combina con:** `adguardhome` [15/privacidad], `cleanyourtv`, `optimizerduck`
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo. El README recomienda Canta (Shizuku, desde el propio móvil) como opción complementaria. Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto.
+
+### iSponsorBlockTV (`isponsorblocktv`)
+
+- **Repo:** https://github.com/dmunozv04/iSponsorBlockTV · GPL-3.0 · nivel 1 · 46/100
+- **Qué es:** Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
+- **Cuándo elegirlo:** Casos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md
+- **Primera prueba propuesta (no ejecutada):** Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía. Éxito: Un video con un segmento etiquetado lo salta según la configuración.
+- **Riesgos y avisos:** Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.
 
 ### 40-questions (`40-questions`)
 
@@ -121,16 +131,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Responde tres preguntas de la lista con ejemplos del año y una acción concreta Éxito: Obtienes una nota propia que puedes retomar más adelante
 - **Combina con:** `kepano-obsidian` [15/notas], `obsidian-minimal` [15/notas], `obsidian-second-brain` [15/notas]
 - **Riesgos y avisos:** Sin alternativas declaradas. Sin licencia: no lo redistribuyas sin permiso. Es un recurso de reflexión con traducciones; no necesita instalar software ni usar IA.
-
-### iSponsorBlockTV (`isponsorblocktv`)
-
-- **Repo:** https://github.com/dmunozv04/iSponsorBlockTV · GPL-3.0 · nivel 1 · —/100
-- **Qué es:** Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
-- **Cuándo elegirlo:** Casos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md
-- **Primera prueba propuesta (no ejecutada):** Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía. Éxito: Un video con un segmento etiquetado lo salta según la configuración.
-- **Riesgos y avisos:** Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

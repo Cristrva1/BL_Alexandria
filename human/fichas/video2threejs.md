@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
+**Puntuación de calidad** 35/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.

@@ -18,13 +18,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `genesis-world` | Plataforma de simulación para IA física y robótica con motor multifísica… | 3 Avanzado | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `mujoco` | Motor de física de Google DeepMind para simular estructuras articuladas con… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `warp` | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `planck-js` | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
-| `react-three-rapier` | Integración del motor de física Rapier con React Three Fiber para añadir… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
-| `motionbricks` | Genera movimiento de personajes a partir de poses y objetivos mediante modelos… | 3 Avanzado | — | Apache-2.0 | sin grupo |
-| `robotics-antigravity-plugin` | Añade a Antigravity instrucciones para crear, probar y observar escenas de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `genesis-world` | Plataforma de simulación para IA física y robótica con motor multifísica… | 3 Avanzado | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `mujoco` | Motor de física de Google DeepMind para simular estructuras articuladas con… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `warp` | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un… | 3 Avanzado | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `planck-js` | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `motionbricks` | Genera movimiento de personajes a partir de poses y objetivos mediante modelos… | 3 Avanzado | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `react-three-rapier` | Integración del motor de física Rapier con React Three Fiber para añadir… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
+| `robotics-antigravity-plugin` | Añade a Antigravity instrucciones para crear, probar y observar escenas de… | 2 Intermedio | 48 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -32,7 +32,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Genesis World (`genesis-world`)
 
-- **Repo:** https://github.com/Genesis-Embodied-AI/genesis-world · Apache-2.0 · nivel 3 · 74/100
+- **Repo:** https://github.com/Genesis-Embodied-AI/genesis-world · Apache-2.0 · nivel 3 · 75/100
 - **Qué es:** Plataforma de simulación de código abierto (Apache-2.0), antes llamada Genesis, que nació como proyecto académico en diciembre de 2024 y ahora cuenta con el apoyo de la empresa Genesis AI. Muy activa (Genesis World 1.0).
 - **Cuándo elegirlo:** Casos: entrenar políticas de robots con miles de entornos paralelos en GPU; generar datos sintéticos de manipulación con cuerpos rígidos y deformables.
 - **Requisitos:** nivel 3: pip install; simulación física con GPU; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -43,7 +43,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MuJoCo (`mujoco`)
 
-- **Repo:** https://github.com/google-deepmind/mujoco · Apache-2.0 · nivel 2 · 74/100
+- **Repo:** https://github.com/google-deepmind/mujoco · Apache-2.0 · nivel 2 · 75/100
 - **Qué es:** Motor de física de código abierto (Apache-2.0) mantenido por Google DeepMind, que lo adquirió en 2021 y lo liberó en 2022. Referencia en investigación de robótica y aprendizaje por refuerzo. Muy activo.
 - **Cuándo elegirlo:** Casos: simular un robot o un brazo para probar controladores antes del hardware; entrenar políticas de aprendizaje por refuerzo en entornos físicos.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; C++, CMakeLists.txt; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -53,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### warp (`warp`)
 
-- **Repo:** https://github.com/NVIDIA/warp · Apache-2.0 · nivel 3 · 68/100
+- **Repo:** https://github.com/NVIDIA/warp · Apache-2.0 · nivel 3 · 70/100
 - **Qué es:** NVIDIA Warp, framework Python para simulación, robótica y ML acelerados por GPU. Licencia Apache-2.0. Es maduro (~7.3k estrellas, v1.19.0).
 - **Cuándo elegirlo:** Casos: Estudiar simulación física; Prototipar cómputo para robótica.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Python 3.11+; CPU o GPU soportada; ejemplo pequeño; hardware prerequisites; API de IA: no; Python 3.11+; CPU o GPU soportada; ejemplo pequeño.
@@ -64,7 +64,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### planck.js (`planck-js`)
 
-- **Repo:** https://github.com/piqnt/planck.js · MIT · nivel 2 · 56/100
+- **Repo:** https://github.com/piqnt/planck.js · MIT · nivel 2 · 58/100
 - **Qué es:** Planck.js, reescritura en JavaScript/TypeScript del motor de física 2D Box2D, de piqnt. Licencia MIT. Es madura (~5.3k estrellas) y está activa.
 - **Cuándo elegirlo:** Casos: Prototipar física de un juego 2D; Explicar gravedad con una simulación.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Proyecto JavaScript; escena 2D de prueba; hardware prerequisites; API de IA: no; Proyecto JavaScript; escena 2D de prueba.
@@ -73,9 +73,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `pixelfx` [26/animacion], `threejs-game-skills` [27/skills], `three.js` [26/animacion], `pixijs` [26/animacion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Es un motor de física 2D basado en Box2D y corresponde a simulación; no genera animaciones por instrucciones de IA.
 
+### MotionBricks (`motionbricks`)
+
+- **Repo:** https://github.com/NVlabs/motionbricks · Apache-2.0 · nivel 3 · 55/100
+- **Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
+- **Cuándo elegirlo:** Casos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
+- **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados. Éxito: Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
+- **Riesgos y avisos:** El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.
+
 ### react-three-rapier (`react-three-rapier`)
 
-- **Repo:** https://github.com/pmndrs/react-three-rapier · MIT · nivel 2 · 47/100
+- **Repo:** https://github.com/pmndrs/react-three-rapier · MIT · nivel 2 · 49/100
 - **Qué es:** @react-three/rapier, wrapper del motor de física Rapier (WASM) para react-three-fiber, de pmndrs. Licencia MIT. Tiene ~1.7k estrellas (v2.2.0).
 - **Cuándo elegirlo:** Casos: Crear una escena física React; Prototipar interacción con objetos 3D.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; React y Fiber compatibles; escena 3D; Rapier; hardware prerequisites; API de IA: no; React y Fiber compatibles; escena 3D; Rapier.
@@ -84,19 +94,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `react-three-fiber` [26/animacion], `three.js` [26/animacion], `threejs-game-skills` [27/skills]
 - **Riesgos y avisos:** Sin alternativas declaradas. La versión 2 documenta React 19 y Fiber 9, mientras React 18 requiere la versión 1 y Fiber 8; no mezcles las líneas de versiones.
 
-### MotionBricks (`motionbricks`)
-
-- **Repo:** https://github.com/NVlabs/motionbricks · Apache-2.0 · nivel 3 · —/100
-- **Qué es:** Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.
-- **Cuándo elegirlo:** Casos: Completar fotogramas entre dos poses de un personaje de prueba.; Comparar un giro de personaje con dos recorridos virtuales. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
-- **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; GPU NVIDIA con TensorRT, entorno x86-64 compatible y pesos para el ejemplo. Las pruebas del autor se hicieron con RTX 4090..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/NVlabs/motionbricks/blob/54fc563aeaaf819a753d72cc9fdc6713989cdd43/README.md
-- **Primera prueba propuesta (no ejecutada):** Sigue Setup y abre el ejemplo de poses recomendado con sus pesos autorizados. Éxito: Ves el movimiento entre las poses y puedes revisar cambios de trayectoria.
-- **Riesgos y avisos:** El código, los modelos y los movimientos de ejemplo tienen licencias diferentes; revisa la tabla del README antes de usar o redistribuir.
-
 ### Robotics for Antigravity (`robotics-antigravity-plugin`)
 
-- **Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin · Apache-2.0 · nivel 2 · —/100
+- **Repo:** https://github.com/google-deepmind/robotics-antigravity-plugin · Apache-2.0 · nivel 2 · 48/100
 - **Qué es:** Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo.
 - **Cuándo elegirlo:** Casos: Abrir un escenario de simulación y cambiar la posición de un objeto virtual.; Documentar cómo medir el recorrido de un brazo virtual en una escena de ejemplo. Evítalo si no usas un agente compatible con skills.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python; API de IA: depends; Antigravity, dependencias de simulación indicadas y una escena de ejemplo sin robot físico..

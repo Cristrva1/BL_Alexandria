@@ -47,14 +47,14 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Builders visuales de agentes**: dify ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Builders visuales de agentes**: dify ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [langflow](langflow.md) ⭐ recomendado | 70 | Si quieres diseñar flujos de LangChain visualmente y exportarlos. |
-| 2 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
-| 3 | **dify** (esta ficha) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
-| 4 | [Sim](sim.md) | 61 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
+| 2 | **dify** (esta ficha) | 70 | Si quieres construir apps de LLM y RAG con interfaz visual y despliegue completo. |
+| 3 | [AutoGPT](autogpt.md) | 70 | Si quieres una plataforma de agentes continuos con marketplace de bloques. |
+| 4 | [Sim](sim.md) | 62 | Si quieres un lienzo colaborativo para agentes y workflows con monitorización. |
 
 ## Acceso, coste y equipo
 

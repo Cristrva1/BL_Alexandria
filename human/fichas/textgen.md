@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — instaladores de un clic por sistema · corregido a mano
 
-**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -43,18 +43,18 @@ Estado en GitHub: activo · último push 2026-08-17 · última versión publicad
 
 ## Ver similares
 
-Grupo **Interfaces de chat con LLM**: Text Generation WebUI ocupa la posición 7 de 8 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Interfaces de chat con LLM**: Text Generation WebUI ocupa la posición 8 de 8 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Open WebUI](open-webui.md) ⭐ recomendado | 74 | Si quieres la interfaz más completa para Ollama o APIs, multiusuario y con RAG. |
 | 2 | [Cherry Studio](cherry-studio.md) | 72 | Si quieres un cliente de escritorio para muchos proveedores con asistentes predefinidos. |
 | 3 | [LobeHub](lobehub.md) | 70 | Si quieres una interfaz moderna con plugins, agentes y despliegue sencillo. |
-| 4 | [LibreChat](librechat.md) | 68 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
-| 5 | [Jan](jan.md) | 65 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
-| 6 | [NextChat](nextchat.md) | 63 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
-| 7 | **Text Generation WebUI** (esta ficha) | 53 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
-| 8 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
+| 4 | [LibreChat](librechat.md) | 69 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
+| 5 | [Jan](jan.md) | 66 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
+| 6 | [NextChat](nextchat.md) | 64 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
+| 7 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
+| 8 | **Text Generation WebUI** (esta ficha) | 51 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
 
 ## Acceso, coste y equipo
 

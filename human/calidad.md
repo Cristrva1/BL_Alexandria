@@ -20,6 +20,7 @@ Cada repo recibe una puntuación de 0 a 100 calculada con métricas públicas (G
 - Primera respuesta: mediana, en las 40 issues más recientes, del primer comentario de otra persona (sin bots) o del cierre. Las issues sin respuesta cuentan con el tiempo transcurrido hasta hoy.
 - Repos derivados que fusionan su upstream: solo cuentan los commits del propietario y los contribuidores propios.
 - Licencia: si GitHub no reconoce el SPDX se lee el archivo LICENSE; hay correcciones manuales en `config/calidad.yaml`.
+- Madurez documental: los tres puntos requieren una página externa declarada por el proyecto en las métricas. La ficha interna de Alexandría queda fuera del cálculo.
 - Sin Scorecard publicado, el eje de seguridad queda neutral (2,5).
 
 ## Grupos de similares

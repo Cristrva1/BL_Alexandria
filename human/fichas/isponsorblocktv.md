@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
+**Puntuación de calidad** 46/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
