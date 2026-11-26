@@ -29,8 +29,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `peft` | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `verl` | Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM… | 4 Experto | 68 | Apache-2.0 (OSI permisiva) | recomendado |
 | `axolotl` | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo… | 3 Avanzado | 65 | Apache-2.0 (OSI permisiva) | alternativa |
-| `jax` | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy… | 3 Avanzado | 64 | Apache-2.0 (OSI permisiva) | alternativa |
-| `accelerate` | Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU… | 3 Avanzado | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `jax` | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy… | 3 Avanzado | 65 | Apache-2.0 (OSI permisiva) | alternativa |
+| `accelerate` | Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU… | 3 Avanzado | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `llama-factory` | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web… | 3 Avanzado | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `pytorch-lightning` | Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a… | 3 Avanzado | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `openrlhf` | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO… | 4 Experto | 58 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -174,7 +174,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### JAX (`jax`)
 
-- **Repo:** https://github.com/jax-ml/jax · Apache-2.0 · nivel 3 · 64/100 · alternativa en «Frameworks de deep learning»
+- **Repo:** https://github.com/jax-ml/jax · Apache-2.0 · nivel 3 · 65/100 · alternativa en «Frameworks de deep learning»
 - **Qué es:** Biblioteca de código abierto (Apache-2.0) de Google. Muy madura y base de gran parte de la investigación de Google DeepMind.
 - **Cuándo elegirlo:** Casos: entrenar modelos o simulaciones científicas en GPU o TPU; calcular derivadas de funciones numéricas complejas.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; Python, pyproject.toml, setup.py; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -186,7 +186,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Accelerate (`accelerate`)
 
-- **Repo:** https://github.com/huggingface/accelerate · Apache-2.0 · nivel 3 · 63/100
+- **Repo:** https://github.com/huggingface/accelerate · Apache-2.0 · nivel 3 · 64/100
 - **Qué es:** Biblioteca de código abierto (Apache-2.0) de Hugging Face. Muy madura; base del Trainer de Transformers.
 - **Cuándo elegirlo:** Casos: convertir un bucle de entrenamiento de PyTorch a multi-GPU sin reescribirlo; lanzar un entrenamiento con DeepSpeed desde un archivo de configuración.
 - **Requisitos:** nivel 3: preparación sencilla, requiere programar con él, dominio especializado; Python, pyproject.toml, setup.py; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..

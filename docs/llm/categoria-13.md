@@ -28,7 +28,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `pandoc` | conversion | Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y… | 1 Básico | 56 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `pdf-inspector` | conversion | Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `paddleocr` | ocr | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `ocrmypdf` | ocr | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 64 | MPL-2.0 (OSI copyleft) | sin grupo |
+| `ocrmypdf` | ocr | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 65 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `tesseract` | ocr | Motor de OCR de código abierto que reconoce texto en imágenes y documentos… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `surya` | ocr | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `unlimited-ocr` | ocr | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 62 | MIT (OSI permisiva) | alternativa |
@@ -36,10 +36,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `olmocr` | ocr | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 50 | Apache-2.0 (OSI permisiva) | alternativa |
 | `stirling-pdf` | pdf | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar… | 1 Básico | 76 | MIT + licencia propietaria (app/proprietary/, app/saas/) (open-core) | recomendado |
 | `pdfmathtranslate` | pdf | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `pdfcraft` | pdf | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 54 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `pdfding` | pdf | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | — | AGPL-3.0 | sin grupo |
-| `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 76 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pdfding` | pdf | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 46 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 77 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -164,7 +164,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OCRmyPDF (`ocrmypdf`)
 
-- **Repo:** https://github.com/ocrmypdf/OCRmyPDF · MPL-2.0 · nivel 1 · 64/100
+- **Repo:** https://github.com/ocrmypdf/OCRmyPDF · MPL-2.0 · nivel 1 · 65/100
 - **Qué es:** Herramienta de línea de comandos de código abierto (MPL-2.0) que añade una capa de texto OCR a PDF escaneados. Muy madura (v17.14) y probada en millones de PDF.
 - **Cuándo elegirlo:** Casos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación.
 - **Requisitos:** nivel 1: preparación sencilla; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba; hardware prerequisites; API de IA: no; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba.
@@ -267,7 +267,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### docuseal (`docuseal`)
 
-- **Repo:** https://github.com/docusealco/docuseal · AGPL-3.0 · nivel 3 · 56/100
+- **Repo:** https://github.com/docusealco/docuseal · AGPL-3.0 · nivel 3 · 60/100
 - **Qué es:** Plataforma de código abierto (AGPL-3.0) para rellenar y firmar documentos, de DocuSeal. Activa (3.3.6), con nube de pago y funciones Pro.
 - **Cuándo elegirlo:** Casos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental.
 - **Requisitos:** nivel 3: preparación pesada; Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios; hardware prerequisites; API de IA: no; Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios.
@@ -290,7 +290,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PdfDing (`pdfding`)
 
-- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · —/100
+- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · 46/100
 - **Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de…
 - **Cuándo elegirlo:** Casos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
 - **Requisitos:** nivel 1: preparación sencilla; Docker o entorno de la guía; volumen para documentos; cuenta de prueba; hardware prerequisites; API de IA: no; Docker o entorno de la guía; volumen para documentos; cuenta de prueba.
@@ -311,7 +311,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### paperless-ngx (`paperless-ngx`)
 
-- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 76/100
+- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 77/100
 - **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
 - **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
 - **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.

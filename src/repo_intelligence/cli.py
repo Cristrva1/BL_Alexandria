@@ -156,7 +156,7 @@ def score_command(
 ) -> None:
     """Métricas públicas + rúbrica de calidad (0-100) para cada repo del catálogo.
 
-    Fuentes: GitHub (GraphQL y REST vía gh), pypistats, npm, Docker Hub y OpenSSF Scorecard.
+    Fuentes: GitHub, Codeberg, Hugging Face, pypistats, npm, Docker Hub y OpenSSF Scorecard.
     Caché en data/metricas/cache/<id>.json; resultado en data/metricas/puntuaciones.json,
     `puntuacion` en INDICE_IA.json y `calidad` en INDICE_IA.detalle.json. No instala nada.
     """

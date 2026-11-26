@@ -19,7 +19,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `paddleocr` | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `ocrmypdf` | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 64 | MPL-2.0 (OSI copyleft) | sin grupo |
+| `ocrmypdf` | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 65 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `tesseract` | Motor de OCR de código abierto que reconoce texto en imágenes y documentos… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `surya` | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `unlimited-ocr` | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 62 | MIT (OSI permisiva) | alternativa |
@@ -44,7 +44,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OCRmyPDF (`ocrmypdf`)
 
-- **Repo:** https://github.com/ocrmypdf/OCRmyPDF · MPL-2.0 · nivel 1 · 64/100
+- **Repo:** https://github.com/ocrmypdf/OCRmyPDF · MPL-2.0 · nivel 1 · 65/100
 - **Qué es:** Herramienta de línea de comandos de código abierto (MPL-2.0) que añade una capa de texto OCR a PDF escaneados. Muy madura (v17.14) y probada en millones de PDF.
 - **Cuándo elegirlo:** Casos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación.
 - **Requisitos:** nivel 1: preparación sencilla; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba; hardware prerequisites; API de IA: no; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba.

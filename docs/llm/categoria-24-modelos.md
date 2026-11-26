@@ -18,32 +18,21 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `timesfm` | Modelos preentrenados de Google para pronóstico de series temporales; las… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `laya` | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos… | 3 Avanzado | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `timesfm` | Modelos preentrenados de Google para pronóstico de series temporales; las… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `deepseek-v3` | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código… | 3 Avanzado | 66 | MIT (OSI permisiva) | sin grupo |
-| `cosmos` | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment… | 3 Avanzado | 59 | OpenMDW-1.1 (OSI permisiva) | sin grupo |
+| `deepseek-v3` | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código… | 3 Avanzado | 67 | MIT (OSI permisiva) | sin grupo |
+| `cosmos` | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment… | 3 Avanzado | 61 | OpenMDW-1.1 (OSI permisiva) | sin grupo |
 | `gemma` | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos… | 3 Avanzado | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `nemotron` | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron… | 1 Básico | 45 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `kimi-k2-7-code` | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos… | 3 Avanzado | — | Modified MIT; revisar condiciones | sin grupo |
+| `nemotron` | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron… | 1 Básico | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `kimi-k2-7-code` | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos… | 3 Avanzado | 34 | Modified MIT; revisar condiciones (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
 
-### laya (`laya`)
-
-- **Repo:** https://github.com/NandhaKishorM/laya · Apache-2.0 · nivel 3 · 69/100
-- **Qué es:** laya, motor de decisión multilingüe no autoregresivo de @NandhaKishorM, con preprint asociado («From Laya to Vega»). Licencia Apache-2.0. Es muy reciente (septiembre de 2026, v0.4.34) y ya tiene ~36k estrellas, una cifra inusual…
-- **Cuándo elegirlo:** Casos: Clasificar consultas por intención; Elegir una opción estructurada.
-- **Requisitos:** nivel 3: preparación pesada; Python 3.10+; pesos del checkpoint para inferencia real; memoria del modelo; hardware prerequisites; API de IA: no; Python 3.10+; pesos del checkpoint para inferencia real; memoria del modelo.
-- **Instalación (documentada en la fuente; no ejecutada):** `python -m pip install laya` — fuente: https://github.com/NandhaKishorM/laya/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Prueba una decisión entre categorías de soporte y comprueba si usas routing offline o inferencia con pesos Éxito: Puedes distinguir una regla de enrutamiento de una predicción del modelo
-- **Combina con:** `langgraph` [3/py], `llama-index` [3/py], `crewai` [3/py]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Recuento de estrellas inusual para su edad. Ofrece MCP stdio opcional; el ejemplo offline sin descarga es routing y no demuestra que se haya cargado un modelo; las probabilidades requieren evaluación….
-
 ### TimesFM (`timesfm`)
 
-- **Repo:** https://github.com/google-research/timesfm · Apache-2.0 · nivel 2 · 69/100
+- **Repo:** https://github.com/google-research/timesfm · Apache-2.0 · nivel 2 · 70/100
 - **Qué es:** TimesFM, modelo fundacional preentrenado de Google Research para pronóstico de series temporales (artículo en ICML 2024). El código es Apache-2.0 y la licencia de los pesos cambia por versión.
 - **Cuándo elegirlo:** Casos: Estudiar demanda con series temporales; Comparar un baseline de pronóstico.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; serie numérica ordenada; backend PyTorch o MLX; pesos permitidos; hardware prerequisites; API de IA: opcional; Python; serie numérica ordenada; backend PyTorch o MLX; pesos permitidos.
@@ -57,9 +46,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `polars` [25/datos], `duckdb` [25/datos], `pytorch` [24/entrenamiento]
 - **Riesgos y avisos:** Sin alternativas declaradas. Código y pesos hasta 2.5 son Apache; pesos 3.0 autoalojados no permiten uso comercial o productivo, que sí se ofrece mediante servicios Google autorizados.
 
+### laya (`laya`)
+
+- **Repo:** https://github.com/NandhaKishorM/laya · Apache-2.0 · nivel 3 · 69/100
+- **Qué es:** laya, motor de decisión multilingüe no autoregresivo de @NandhaKishorM, con preprint asociado («From Laya to Vega»). Licencia Apache-2.0. Es muy reciente (septiembre de 2026, v0.4.34) y ya tiene ~36k estrellas, una cifra inusual…
+- **Cuándo elegirlo:** Casos: Clasificar consultas por intención; Elegir una opción estructurada.
+- **Requisitos:** nivel 3: preparación pesada; Python 3.10+; pesos del checkpoint para inferencia real; memoria del modelo; hardware prerequisites; API de IA: no; Python 3.10+; pesos del checkpoint para inferencia real; memoria del modelo.
+- **Instalación (documentada en la fuente; no ejecutada):** `python -m pip install laya` — fuente: https://github.com/NandhaKishorM/laya/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Prueba una decisión entre categorías de soporte y comprueba si usas routing offline o inferencia con pesos Éxito: Puedes distinguir una regla de enrutamiento de una predicción del modelo
+- **Combina con:** `langgraph` [3/py], `llama-index` [3/py], `crewai` [3/py]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Recuento de estrellas inusual para su edad. Ofrece MCP stdio opcional; el ejemplo offline sin descarga es routing y no demuestra que se haya cargado un modelo; las probabilidades requieren evaluación….
+
 ### DeepSeek-V3 (`deepseek-v3`)
 
-- **Repo:** https://github.com/deepseek-ai/DeepSeek-V3 · MIT · nivel 3 · 66/100
+- **Repo:** https://github.com/deepseek-ai/DeepSeek-V3 · MIT · nivel 3 · 67/100
 - **Qué es:** DeepSeek-V3, modelo de lenguaje MoE de DeepSeek con 671B parámetros totales y 37B activos por token. El código es MIT y los pesos usan un Model Agreement propio.
 - **Cuándo elegirlo:** Casos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang. Evítalo si Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM; hardware gpu; API de IA: opcional; cuenta en la plataforma de DeepSeek para la API; o un servidor con varias GPU para la ruta local; un motor de inferencia como SGLang o vLLM.
@@ -70,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### cosmos (`cosmos`)
 
-- **Repo:** https://github.com/NVIDIA/cosmos · OpenMDW-1.1 · nivel 3 · 59/100
+- **Repo:** https://github.com/NVIDIA/cosmos · OpenMDW-1.1 · nivel 3 · 61/100
 - **Qué es:** NVIDIA Cosmos, plataforma de modelos fundacionales de mundo (world foundation models) para IA física: robótica, vehículos autónomos, industria y más. Código y modelos con licencia OpenMDW-1.1 (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Explorar datos sintéticos para robótica; Estudiar generación de escenas físicas.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; GPU compatible; entorno de la receta; acceso aprobado a pesos restringidos; token HF de lectura; hardware prerequisites; API de IA: opcional; GPU compatible; entorno de la receta; acceso aprobado a pesos restringidos; token HF de lectura.
@@ -92,7 +92,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Nemotron (NVIDIA) (`nemotron`)
 
-- **Repo:** https://github.com/NVIDIA-NeMo/Nemotron · Apache-2.0 · nivel 1 · 45/100
+- **Repo:** https://github.com/NVIDIA-NeMo/Nemotron · Apache-2.0 · nivel 1 · 46/100
 - **Qué es:** Repositorio para desarrolladores de NVIDIA Nemotron, familia de modelos abiertos para IA agéntica: recetas de entrenamiento, guías de despliegue y ejemplos. Licencia Apache-2.0 (los pesos tienen sus propias licencias).
 - **Cuándo elegirlo:** Casos: Explorar modelos abiertos de NVIDIA; Preparar un pipeline guiado de adaptación.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin; hardware prerequisites; API de IA: opcional; Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin.
@@ -103,7 +103,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Kimi K2.7 Code (`kimi-k2-7-code`)
 
-- **Repo:** https://huggingface.co/moonshotai/Kimi-K2.7-Code · Modified MIT; revisar condiciones · nivel 3 · —/100
+- **Repo:** https://huggingface.co/moonshotai/Kimi-K2.7-Code · Modified MIT; revisar condiciones · nivel 3 · 34/100
 - **Qué es:** Kimi K2.7 Code, modelo de pesos abiertos de Moonshot AI orientado a programación agéntica, construido sobre Kimi K2.6. Se publica en Hugging Face (moonshotai/Kimi-K2.7-Code), no en GitHub.
 - **Cuándo elegirlo:** Casos: Comparar generación de código; Estudiar uso de herramientas con un modelo abierto.
 - **Requisitos:** nivel 3: preparación pesada; Servicio Moonshot o infraestructura de inferencia adecuada; licencia Modified MIT; proyecto de prueba; hardware prerequisites; API de IA: opcional; Servicio Moonshot o infraestructura de inferencia adecuada; licencia Modified MIT; proyecto de prueba.

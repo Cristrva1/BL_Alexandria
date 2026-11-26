@@ -14688,7 +14688,7 @@
    "calidad": {
     "puntuacion": 64.7,
     "ejes": {
-     "adopcion": 17.0,
+     "adopcion": 17.1,
      "mantenimiento": 13.0,
      "madurez": 6.1,
      "licencia": 15.0,
@@ -45074,9 +45074,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 81.6,
+    "puntuacion": 81.8,
     "ejes": {
-     "adopcion": 20.1,
+     "adopcion": 20.3,
      "mantenimiento": 20.6,
      "madurez": 8.5,
      "licencia": 15.0,
@@ -45109,28 +45109,28 @@
      {
       "id": "unsloth",
       "posicion": 1,
-      "puntuacion": 81.6,
+      "puntuacion": 81.8,
       "papel": "recomendado",
       "cuando": "Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU."
      },
      {
       "id": "axolotl",
       "posicion": 2,
-      "puntuacion": 64.6,
+      "puntuacion": 64.9,
       "papel": "alternativa",
       "cuando": "Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU."
      },
      {
       "id": "llama-factory",
       "posicion": 3,
-      "puntuacion": 60.4,
+      "puntuacion": 60.5,
       "papel": "alternativa",
       "cuando": "Si quieres una interfaz web para afinar cientos de modelos sin programar."
      },
      {
       "id": "torchtune",
       "posicion": 4,
-      "puntuacion": 52.2,
+      "puntuacion": 52.4,
       "papel": "alternativa",
       "cuando": "Si prefieres recetas nativas de PyTorch fáciles de modificar."
      }
@@ -45299,10 +45299,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 85.7,
+    "puntuacion": 85.8,
     "ejes": {
      "adopcion": 22.2,
-     "mantenimiento": 20.2,
+     "mantenimiento": 20.3,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -45484,7 +45484,7 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 77.5,
+    "puntuacion": 77.6,
     "ejes": {
      "adopcion": 12.0,
      "mantenimiento": 17.3,
@@ -45536,21 +45536,21 @@
      {
       "id": "tensorflow",
       "posicion": 1,
-      "puntuacion": 79.1,
+      "puntuacion": 79.2,
       "papel": "recomendado",
       "cuando": "Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos."
      },
      {
       "id": "pytorch",
       "posicion": 2,
-      "puntuacion": 77.5,
+      "puntuacion": 77.6,
       "papel": "alternativa",
       "cuando": "Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU."
      },
      {
       "id": "jax",
       "posicion": 3,
-      "puntuacion": 64.4,
+      "puntuacion": 64.7,
       "papel": "alternativa",
       "cuando": "Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU."
      }
@@ -45729,10 +45729,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 60.4,
+    "puntuacion": 60.5,
     "ejes": {
      "adopcion": 13.0,
-     "mantenimiento": 6.9,
+     "mantenimiento": 7.0,
      "madurez": 8.0,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -45766,28 +45766,28 @@
      {
       "id": "unsloth",
       "posicion": 1,
-      "puntuacion": 81.6,
+      "puntuacion": 81.8,
       "papel": "recomendado",
       "cuando": "Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU."
      },
      {
       "id": "axolotl",
       "posicion": 2,
-      "puntuacion": 64.6,
+      "puntuacion": 64.9,
       "papel": "alternativa",
       "cuando": "Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU."
      },
      {
       "id": "llama-factory",
       "posicion": 3,
-      "puntuacion": 60.4,
+      "puntuacion": 60.5,
       "papel": "alternativa",
       "cuando": "Si quieres una interfaz web para afinar cientos de modelos sin programar."
      },
      {
       "id": "torchtune",
       "posicion": 4,
-      "puntuacion": 52.2,
+      "puntuacion": 52.4,
       "papel": "alternativa",
       "cuando": "Si prefieres recetas nativas de PyTorch fáciles de modificar."
      }
@@ -45971,10 +45971,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 68.1,
+    "puntuacion": 68.5,
     "ejes": {
-     "adopcion": 12.9,
-     "mantenimiento": 14.7,
+     "adopcion": 13.1,
+     "mantenimiento": 14.9,
      "madurez": 8.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -46176,9 +46176,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 72.1,
+    "puntuacion": 72.3,
     "ejes": {
-     "adopcion": 7.6,
+     "adopcion": 7.7,
      "mantenimiento": 19.1,
      "madurez": 10.0,
      "licencia": 15.0,
@@ -47391,10 +47391,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 68.9,
+    "puntuacion": 70.1,
     "ejes": {
-     "adopcion": 16.1,
-     "mantenimiento": 10.9,
+     "adopcion": 16.9,
+     "mantenimiento": 11.3,
      "madurez": 9.4,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -47581,10 +47581,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 59.4,
+    "puntuacion": 61.0,
     "ejes": {
-     "adopcion": 11.5,
-     "mantenimiento": 13.3,
+     "adopcion": 12.8,
+     "mantenimiento": 13.7,
      "madurez": 7.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -47792,10 +47792,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 44.6,
+    "puntuacion": 45.6,
     "ejes": {
-     "adopcion": 2.6,
-     "mantenimiento": 7.1,
+     "adopcion": 3.0,
+     "mantenimiento": 7.6,
      "madurez": 5.5,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -76699,10 +76699,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 77.5,
+    "puntuacion": 77.7,
     "ejes": {
      "adopcion": 20.5,
-     "mantenimiento": 15.4,
+     "mantenimiento": 15.5,
      "madurez": 9.1,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -76736,42 +76736,42 @@
      {
       "id": "docling",
       "posicion": 1,
-      "puntuacion": 77.5,
+      "puntuacion": 77.7,
       "papel": "recomendado",
       "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local."
      },
      {
       "id": "mineru",
       "posicion": 2,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "alternativa",
       "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja."
      },
      {
       "id": "xberg",
       "posicion": 3,
-      "puntuacion": 62.7,
+      "puntuacion": 63.0,
       "papel": "alternativa",
       "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario."
      },
      {
       "id": "marker",
       "posicion": 4,
-      "puntuacion": 60.0,
+      "puntuacion": 60.2,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional."
      },
      {
       "id": "tika",
       "posicion": 5,
-      "puntuacion": 58.7,
+      "puntuacion": 59.2,
       "papel": "alternativa",
       "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado."
      },
      {
       "id": "unstructured",
       "posicion": 6,
-      "puntuacion": 57.6,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG."
      }
@@ -76934,10 +76934,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 67.1,
+    "puntuacion": 67.2,
     "ejes": {
      "adopcion": 22.2,
-     "mantenimiento": 10.6,
+     "mantenimiento": 10.8,
      "madurez": 3.7,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -77128,10 +77128,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 67.6,
+    "puntuacion": 67.7,
     "ejes": {
-     "adopcion": 17.4,
-     "mantenimiento": 18.0,
+     "adopcion": 17.5,
+     "mantenimiento": 18.1,
      "madurez": 9.6,
      "licencia": 5.0,
      "respaldo": 8.0,
@@ -77172,42 +77172,42 @@
      {
       "id": "docling",
       "posicion": 1,
-      "puntuacion": 77.5,
+      "puntuacion": 77.7,
       "papel": "recomendado",
       "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local."
      },
      {
       "id": "mineru",
       "posicion": 2,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "alternativa",
       "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja."
      },
      {
       "id": "xberg",
       "posicion": 3,
-      "puntuacion": 62.7,
+      "puntuacion": 63.0,
       "papel": "alternativa",
       "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario."
      },
      {
       "id": "marker",
       "posicion": 4,
-      "puntuacion": 60.0,
+      "puntuacion": 60.2,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional."
      },
      {
       "id": "tika",
       "posicion": 5,
-      "puntuacion": 58.7,
+      "puntuacion": 59.2,
       "papel": "alternativa",
       "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado."
      },
      {
       "id": "unstructured",
       "posicion": 6,
-      "puntuacion": 57.6,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG."
      }
@@ -77387,9 +77387,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 55.5,
+    "puntuacion": 55.8,
     "ejes": {
-     "adopcion": 6.7,
+     "adopcion": 7.1,
      "mantenimiento": 16.9,
      "madurez": 10.0,
      "licencia": 12.0,
@@ -77585,10 +77585,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 60.0,
+    "puntuacion": 60.2,
     "ejes": {
-     "adopcion": 11.4,
-     "mantenimiento": 6.1,
+     "adopcion": 11.5,
+     "mantenimiento": 6.2,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -77622,42 +77622,42 @@
      {
       "id": "docling",
       "posicion": 1,
-      "puntuacion": 77.5,
+      "puntuacion": 77.7,
       "papel": "recomendado",
       "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local."
      },
      {
       "id": "mineru",
       "posicion": 2,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "alternativa",
       "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja."
      },
      {
       "id": "xberg",
       "posicion": 3,
-      "puntuacion": 62.7,
+      "puntuacion": 63.0,
       "papel": "alternativa",
       "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario."
      },
      {
       "id": "marker",
       "posicion": 4,
-      "puntuacion": 60.0,
+      "puntuacion": 60.2,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional."
      },
      {
       "id": "tika",
       "posicion": 5,
-      "puntuacion": 58.7,
+      "puntuacion": 59.2,
       "papel": "alternativa",
       "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado."
      },
      {
       "id": "unstructured",
       "posicion": 6,
-      "puntuacion": 57.6,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG."
      }
@@ -77825,9 +77825,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 55.7,
+    "puntuacion": 55.8,
     "ejes": {
-     "adopcion": 12.5,
+     "adopcion": 12.6,
      "mantenimiento": 6.7,
      "madurez": 7.0,
      "licencia": 15.0,
@@ -78011,10 +78011,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 57.6,
+    "puntuacion": 58.1,
     "ejes": {
-     "adopcion": 10.4,
-     "mantenimiento": 11.7,
+     "adopcion": 10.7,
+     "mantenimiento": 11.9,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -78056,42 +78056,42 @@
      {
       "id": "docling",
       "posicion": 1,
-      "puntuacion": 77.5,
+      "puntuacion": 77.7,
       "papel": "recomendado",
       "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local."
      },
      {
       "id": "mineru",
       "posicion": 2,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "alternativa",
       "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja."
      },
      {
       "id": "xberg",
       "posicion": 3,
-      "puntuacion": 62.7,
+      "puntuacion": 63.0,
       "papel": "alternativa",
       "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario."
      },
      {
       "id": "marker",
       "posicion": 4,
-      "puntuacion": 60.0,
+      "puntuacion": 60.2,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional."
      },
      {
       "id": "tika",
       "posicion": 5,
-      "puntuacion": 58.7,
+      "puntuacion": 59.2,
       "papel": "alternativa",
       "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado."
      },
      {
       "id": "unstructured",
       "posicion": 6,
-      "puntuacion": 57.6,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG."
      }
@@ -78263,9 +78263,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 72.4,
+    "puntuacion": 72.5,
     "ejes": {
-     "adopcion": 18.0,
+     "adopcion": 18.1,
      "mantenimiento": 12.3,
      "madurez": 10.0,
      "licencia": 15.0,
@@ -78306,28 +78306,28 @@
      {
       "id": "paddleocr",
       "posicion": 1,
-      "puntuacion": 72.4,
+      "puntuacion": 72.5,
       "papel": "recomendado",
       "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación."
      },
      {
       "id": "tesseract",
       "posicion": 2,
-      "puntuacion": 63.5,
+      "puntuacion": 63.9,
       "papel": "alternativa",
       "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes."
      },
      {
       "id": "unlimited-ocr",
       "posicion": 3,
-      "puntuacion": 62.0,
+      "puntuacion": 62.4,
       "papel": "alternativa",
       "cuando": "Si quieres parsear documentos largos de una sola pasada con visión."
      },
      {
       "id": "olmocr",
       "posicion": 4,
-      "puntuacion": 50.2,
+      "puntuacion": 50.3,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU)."
      }
@@ -78506,10 +78506,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 64.5,
+    "puntuacion": 65.1,
     "ejes": {
-     "adopcion": 10.8,
-     "mantenimiento": 14.2,
+     "adopcion": 11.1,
+     "mantenimiento": 14.4,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -78711,10 +78711,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 63.5,
+    "puntuacion": 63.9,
     "ejes": {
-     "adopcion": 9.4,
-     "mantenimiento": 14.3,
+     "adopcion": 9.7,
+     "mantenimiento": 14.4,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -78755,28 +78755,28 @@
      {
       "id": "paddleocr",
       "posicion": 1,
-      "puntuacion": 72.4,
+      "puntuacion": 72.5,
       "papel": "recomendado",
       "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación."
      },
      {
       "id": "tesseract",
       "posicion": 2,
-      "puntuacion": 63.5,
+      "puntuacion": 63.9,
       "papel": "alternativa",
       "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes."
      },
      {
       "id": "unlimited-ocr",
       "posicion": 3,
-      "puntuacion": 62.0,
+      "puntuacion": 62.4,
       "papel": "alternativa",
       "cuando": "Si quieres parsear documentos largos de una sola pasada con visión."
      },
      {
       "id": "olmocr",
       "posicion": 4,
-      "puntuacion": 50.2,
+      "puntuacion": 50.3,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU)."
      }
@@ -78941,10 +78941,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 62.0,
+    "puntuacion": 62.4,
     "ejes": {
-     "adopcion": 19.0,
-     "mantenimiento": 7.0,
+     "adopcion": 19.1,
+     "mantenimiento": 7.2,
      "madurez": 3.6,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -78980,28 +78980,28 @@
      {
       "id": "paddleocr",
       "posicion": 1,
-      "puntuacion": 72.4,
+      "puntuacion": 72.5,
       "papel": "recomendado",
       "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación."
      },
      {
       "id": "tesseract",
       "posicion": 2,
-      "puntuacion": 63.5,
+      "puntuacion": 63.9,
       "papel": "alternativa",
       "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes."
      },
      {
       "id": "unlimited-ocr",
       "posicion": 3,
-      "puntuacion": 62.0,
+      "puntuacion": 62.4,
       "papel": "alternativa",
       "cuando": "Si quieres parsear documentos largos de una sola pasada con visión."
      },
      {
       "id": "olmocr",
       "posicion": 4,
-      "puntuacion": 50.2,
+      "puntuacion": 50.3,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU)."
      }
@@ -79167,10 +79167,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 50.2,
+    "puntuacion": 50.3,
     "ejes": {
-     "adopcion": 7.5,
-     "mantenimiento": 6.3,
+     "adopcion": 7.7,
+     "mantenimiento": 6.2,
      "madurez": 3.9,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -79204,28 +79204,28 @@
      {
       "id": "paddleocr",
       "posicion": 1,
-      "puntuacion": 72.4,
+      "puntuacion": 72.5,
       "papel": "recomendado",
       "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación."
      },
      {
       "id": "tesseract",
       "posicion": 2,
-      "puntuacion": 63.5,
+      "puntuacion": 63.9,
       "papel": "alternativa",
       "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes."
      },
      {
       "id": "unlimited-ocr",
       "posicion": 3,
-      "puntuacion": 62.0,
+      "puntuacion": 62.4,
       "papel": "alternativa",
       "cuando": "Si quieres parsear documentos largos de una sola pasada con visión."
      },
      {
       "id": "olmocr",
       "posicion": 4,
-      "puntuacion": 50.2,
+      "puntuacion": 50.3,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU)."
      }
@@ -79396,10 +79396,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 75.5,
+    "puntuacion": 75.7,
     "ejes": {
-     "adopcion": 19.3,
-     "mantenimiento": 16.6,
+     "adopcion": 19.4,
+     "mantenimiento": 16.7,
      "madurez": 10.0,
      "licencia": 10.0,
      "respaldo": 8.0,
@@ -79439,14 +79439,14 @@
      {
       "id": "stirling-pdf",
       "posicion": 1,
-      "puntuacion": 75.5,
+      "puntuacion": 75.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs."
      },
      {
       "id": "pdfcraft",
       "posicion": 2,
-      "puntuacion": 54.0,
+      "puntuacion": 54.5,
       "papel": "alternativa",
       "cuando": "Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada."
      }
@@ -79609,10 +79609,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 66.7,
+    "puntuacion": 67.4,
     "ejes": {
-     "adopcion": 17.5,
-     "mantenimiento": 12.8,
+     "adopcion": 18.7,
+     "mantenimiento": 12.3,
      "madurez": 8.9,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -79793,10 +79793,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 54.0,
+    "puntuacion": 54.5,
     "ejes": {
-     "adopcion": 8.6,
-     "mantenimiento": 10.8,
+     "adopcion": 8.9,
+     "mantenimiento": 10.9,
      "madurez": 7.2,
      "licencia": 12.0,
      "respaldo": 5.0,
@@ -79839,14 +79839,14 @@
      {
       "id": "stirling-pdf",
       "posicion": 1,
-      "puntuacion": 75.5,
+      "puntuacion": 75.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs."
      },
      {
       "id": "pdfcraft",
       "posicion": 2,
-      "puntuacion": 54.0,
+      "puntuacion": 54.5,
       "papel": "alternativa",
       "cuando": "Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada."
      }
@@ -80036,6 +80036,26 @@
     "origen": "doc oficial enlazada",
     "seccion": "Docker",
     "fuente": "https://docs.pdfding.com/getting_started/docker/"
+   },
+   "calidad": {
+    "puntuacion": 46.3,
+    "ejes": {
+     "adopcion": 2.4,
+     "mantenimiento": 10.1,
+     "madurez": 6.3,
+     "licencia": 12.0,
+     "respaldo": 5.0,
+     "seguridad": 2.5,
+     "encaje": 8.0
+    },
+    "licencia": "osi_copyleft",
+    "notas": [
+     "Estrellas y antigüedad desde el alta en Codeberg. El historial importado cuenta para la actividad.",
+     "Primera respuesta: 3 de 40 incidencias recientes con identidades reconocibles para el cálculo.",
+     "Adopción: sin dato de descargas_mes (se reparte el peso)",
+     "Sin medición de OpenSSF Scorecard en esta fuente: seguridad neutral"
+    ],
+    "fecha": "2026-11-26"
    }
   },
   "slidev": {
@@ -87821,10 +87841,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 37.1,
+    "puntuacion": 37.3,
     "ejes": {
-     "adopcion": 1.0,
-     "mantenimiento": 3.7,
+     "adopcion": 0.9,
+     "mantenimiento": 3.8,
      "madurez": 10.0,
      "licencia": 5.0,
      "respaldo": 8.0,
@@ -93125,7 +93145,7 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 79.1,
+    "puntuacion": 79.2,
     "ejes": {
      "adopcion": 20.8,
      "mantenimiento": 14.4,
@@ -93164,21 +93184,21 @@
      {
       "id": "tensorflow",
       "posicion": 1,
-      "puntuacion": 79.1,
+      "puntuacion": 79.2,
       "papel": "recomendado",
       "cuando": "Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos."
      },
      {
       "id": "pytorch",
       "posicion": 2,
-      "puntuacion": 77.5,
+      "puntuacion": 77.6,
       "papel": "alternativa",
       "cuando": "Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU."
      },
      {
       "id": "jax",
       "posicion": 3,
-      "puntuacion": 64.4,
+      "puntuacion": 64.7,
       "papel": "alternativa",
       "cuando": "Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU."
      }
@@ -103492,10 +103512,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 56.1,
+    "puntuacion": 59.7,
     "ejes": {
-     "adopcion": 6.1,
-     "mantenimiento": 12.5,
+     "adopcion": 8.5,
+     "mantenimiento": 13.7,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -116822,8 +116842,8 @@
    "calidad": {
     "puntuacion": 69.1,
     "ejes": {
-     "adopcion": 17.3,
-     "mantenimiento": 18.1,
+     "adopcion": 17.0,
+     "mantenimiento": 18.4,
      "madurez": 4.2,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -119454,10 +119474,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 57.9,
+    "puntuacion": 58.4,
     "ejes": {
-     "adopcion": 5.7,
-     "mantenimiento": 13.4,
+     "adopcion": 6.0,
+     "mantenimiento": 13.6,
      "madurez": 8.3,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -120462,10 +120482,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 76.0,
+    "puntuacion": 76.7,
     "ejes": {
-     "adopcion": 13.9,
-     "mantenimiento": 19.6,
+     "adopcion": 14.4,
+     "mantenimiento": 19.8,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -129335,6 +129355,26 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md"
+   },
+   "calidad": {
+    "puntuacion": 34.0,
+    "ejes": {
+     "adopcion": 8.3,
+     "mantenimiento": 3.1,
+     "madurez": 5.1,
+     "licencia": 5.0,
+     "respaldo": 8.0,
+     "seguridad": 2.5,
+     "encaje": 2.0
+    },
+    "licencia": "source_available",
+    "notas": [
+     "Adopción: los «me gusta» del Hub se usan como señal comparable a estrellas, junto con las descargas de 30 días.",
+     "El historial corresponde a la publicación de los pesos. Las discusiones del Hub y las versiones comerciales quedan fuera de los indicadores de incidencias y lanzamientos.",
+     "Mantenimiento: sin dato de releases_365d, primera_respuesta_dias, ratio_cerradas (se reparte el peso)",
+     "Sin medición de OpenSSF Scorecard en esta fuente: seguridad neutral"
+    ],
+    "fecha": "2026-11-26"
    }
   },
   "sam3": {
@@ -129889,10 +129929,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 66.0,
+    "puntuacion": 66.8,
     "ejes": {
-     "adopcion": 21.4,
-     "mantenimiento": 9.4,
+     "adopcion": 21.8,
+     "mantenimiento": 9.8,
      "madurez": 5.5,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -142404,10 +142444,10 @@
     "latest_release": "v0.24.0 (2026-11-13)"
    },
    "calidad": {
-    "puntuacion": 61.9,
+    "puntuacion": 62.0,
     "ejes": {
-     "adopcion": 13.3,
-     "mantenimiento": 8.3,
+     "adopcion": 13.5,
+     "mantenimiento": 8.2,
      "madurez": 7.8,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -145131,9 +145171,9 @@
     "latest_release": "v1.4.0 (2026-11-13)"
    },
    "calidad": {
-    "puntuacion": 62.7,
+    "puntuacion": 63.0,
     "ejes": {
-     "adopcion": 8.5,
+     "adopcion": 8.8,
      "mantenimiento": 20.3,
      "madurez": 8.4,
      "licencia": 15.0,
@@ -145168,42 +145208,42 @@
      {
       "id": "docling",
       "posicion": 1,
-      "puntuacion": 77.5,
+      "puntuacion": 77.7,
       "papel": "recomendado",
       "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local."
      },
      {
       "id": "mineru",
       "posicion": 2,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "alternativa",
       "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja."
      },
      {
       "id": "xberg",
       "posicion": 3,
-      "puntuacion": 62.7,
+      "puntuacion": 63.0,
       "papel": "alternativa",
       "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario."
      },
      {
       "id": "marker",
       "posicion": 4,
-      "puntuacion": 60.0,
+      "puntuacion": 60.2,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional."
      },
      {
       "id": "tika",
       "posicion": 5,
-      "puntuacion": 58.7,
+      "puntuacion": 59.2,
       "papel": "alternativa",
       "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado."
      },
      {
       "id": "unstructured",
       "posicion": 6,
-      "puntuacion": 57.6,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG."
      }
@@ -145371,10 +145411,10 @@
     "checked_at": "2026-11-16"
    },
    "calidad": {
-    "puntuacion": 58.7,
+    "puntuacion": 59.2,
     "ejes": {
-     "adopcion": 5.4,
-     "mantenimiento": 12.1,
+     "adopcion": 5.8,
+     "mantenimiento": 12.2,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 10.0,
@@ -145415,42 +145455,42 @@
      {
       "id": "docling",
       "posicion": 1,
-      "puntuacion": 77.5,
+      "puntuacion": 77.7,
       "papel": "recomendado",
       "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local."
      },
      {
       "id": "mineru",
       "posicion": 2,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "alternativa",
       "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja."
      },
      {
       "id": "xberg",
       "posicion": 3,
-      "puntuacion": 62.7,
+      "puntuacion": 63.0,
       "papel": "alternativa",
       "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario."
      },
      {
       "id": "marker",
       "posicion": 4,
-      "puntuacion": 60.0,
+      "puntuacion": 60.2,
       "papel": "alternativa",
       "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional."
      },
      {
       "id": "tika",
       "posicion": 5,
-      "puntuacion": 58.7,
+      "puntuacion": 59.2,
       "papel": "alternativa",
       "cuando": "Si necesitas extraer texto y metadatos de más de mil formatos en un servidor Java probado."
      },
      {
       "id": "unstructured",
       "posicion": 6,
-      "puntuacion": 57.6,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG."
      }
@@ -159490,9 +159530,9 @@
     "latest_release": "1.9.1 (2026-09-11)"
    },
    "calidad": {
-    "puntuacion": 74.2,
+    "puntuacion": 74.5,
     "ejes": {
-     "adopcion": 16.9,
+     "adopcion": 17.1,
      "mantenimiento": 12.6,
      "madurez": 10.0,
      "licencia": 15.0,
@@ -159685,10 +159725,10 @@
     "latest_release": "v0.21.1 (2026-10-27)"
    },
    "calidad": {
-    "puntuacion": 64.6,
+    "puntuacion": 64.9,
     "ejes": {
-     "adopcion": 7.7,
-     "mantenimiento": 14.5,
+     "adopcion": 7.9,
+     "mantenimiento": 14.6,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -159735,28 +159775,28 @@
      {
       "id": "unsloth",
       "posicion": 1,
-      "puntuacion": 81.6,
+      "puntuacion": 81.8,
       "papel": "recomendado",
       "cuando": "Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU."
      },
      {
       "id": "axolotl",
       "posicion": 2,
-      "puntuacion": 64.6,
+      "puntuacion": 64.9,
       "papel": "alternativa",
       "cuando": "Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU."
      },
      {
       "id": "llama-factory",
       "posicion": 3,
-      "puntuacion": 60.4,
+      "puntuacion": 60.5,
       "papel": "alternativa",
       "cuando": "Si quieres una interfaz web para afinar cientos de modelos sin programar."
      },
      {
       "id": "torchtune",
       "posicion": 4,
-      "puntuacion": 52.2,
+      "puntuacion": 52.4,
       "papel": "alternativa",
       "cuando": "Si prefieres recetas nativas de PyTorch fáciles de modificar."
      }
@@ -161112,10 +161152,10 @@
     "latest_release": "v3.12.4 (2026-07-29)"
    },
    "calidad": {
-    "puntuacion": 73.8,
+    "puntuacion": 74.1,
     "ejes": {
-     "adopcion": 16.1,
-     "mantenimiento": 16.0,
+     "adopcion": 16.3,
+     "mantenimiento": 16.1,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -161311,10 +161351,10 @@
     "latest_release": "v0.20.0 (2026-11-12)"
    },
    "calidad": {
-    "puntuacion": 67.7,
+    "puntuacion": 68.0,
     "ejes": {
-     "adopcion": 13.8,
-     "mantenimiento": 13.4,
+     "adopcion": 14.0,
+     "mantenimiento": 13.5,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -161507,10 +161547,10 @@
     "latest_release": "jax-v0.12.0.1 (2026-10-22)"
    },
    "calidad": {
-    "puntuacion": 64.4,
+    "puntuacion": 64.7,
     "ejes": {
-     "adopcion": 10.6,
-     "mantenimiento": 13.3,
+     "adopcion": 10.8,
+     "mantenimiento": 13.4,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -161545,21 +161585,21 @@
      {
       "id": "tensorflow",
       "posicion": 1,
-      "puntuacion": 79.1,
+      "puntuacion": 79.2,
       "papel": "recomendado",
       "cuando": "Si buscas esto: framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos."
      },
      {
       "id": "pytorch",
       "posicion": 2,
-      "puntuacion": 77.5,
+      "puntuacion": 77.6,
       "papel": "alternativa",
       "cuando": "Si buscas esto: framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU."
      },
      {
       "id": "jax",
       "posicion": 3,
-      "puntuacion": 64.4,
+      "puntuacion": 64.7,
       "papel": "alternativa",
       "cuando": "Si buscas esto: biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU."
      }
@@ -161724,10 +161764,10 @@
     "latest_release": "2.6.6 (2026-09-10)"
    },
    "calidad": {
-    "puntuacion": 60.0,
+    "puntuacion": 60.4,
     "ejes": {
-     "adopcion": 10.6,
-     "mantenimiento": 8.5,
+     "adopcion": 10.9,
+     "mantenimiento": 8.6,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -161917,7 +161957,7 @@
     "latest_release": "v0.9.1 (2026-09-20)"
    },
    "calidad": {
-    "puntuacion": 67.6,
+    "puntuacion": 67.7,
     "ejes": {
      "adopcion": 13.1,
      "mantenimiento": 14.8,
@@ -161962,14 +162002,14 @@
      {
       "id": "verl",
       "posicion": 1,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang."
      },
      {
       "id": "openrlhf",
       "posicion": 2,
-      "puntuacion": 57.9,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono."
      }
@@ -162137,10 +162177,10 @@
     "latest_release": "v0.11.2 (2026-09-14)"
    },
    "calidad": {
-    "puntuacion": 57.9,
+    "puntuacion": 58.1,
     "ejes": {
      "adopcion": 6.4,
-     "mantenimiento": 9.1,
+     "mantenimiento": 9.2,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -162185,14 +162225,14 @@
      {
       "id": "verl",
       "posicion": 1,
-      "puntuacion": 67.6,
+      "puntuacion": 67.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang."
      },
      {
       "id": "openrlhf",
       "posicion": 2,
-      "puntuacion": 57.9,
+      "puntuacion": 58.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono."
      }
@@ -162357,10 +162397,10 @@
     "latest_release": "v1.15.0 (2026-09-09)"
    },
    "calidad": {
-    "puntuacion": 63.4,
+    "puntuacion": 63.6,
     "ejes": {
-     "adopcion": 8.5,
-     "mantenimiento": 10.6,
+     "adopcion": 8.6,
+     "mantenimiento": 10.7,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -162546,10 +162586,10 @@
     "latest_release": "v0.6.1 (2025-04-07)"
    },
    "calidad": {
-    "puntuacion": 52.2,
+    "puntuacion": 52.4,
     "ejes": {
      "adopcion": 5.8,
-     "mantenimiento": 5.9,
+     "mantenimiento": 6.1,
      "madurez": 8.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -162588,28 +162628,28 @@
      {
       "id": "unsloth",
       "posicion": 1,
-      "puntuacion": 81.6,
+      "puntuacion": 81.8,
       "papel": "recomendado",
       "cuando": "Si quieres afinar LLM con menos VRAM y más velocidad en una sola GPU."
      },
      {
       "id": "axolotl",
       "posicion": 2,
-      "puntuacion": 64.6,
+      "puntuacion": 64.9,
       "papel": "alternativa",
       "cuando": "Si quieres configuraciones YAML reproducibles para fine-tuning en varias GPU."
      },
      {
       "id": "llama-factory",
       "posicion": 3,
-      "puntuacion": 60.4,
+      "puntuacion": 60.5,
       "papel": "alternativa",
       "cuando": "Si quieres una interfaz web para afinar cientos de modelos sin programar."
      },
      {
       "id": "torchtune",
       "posicion": 4,
-      "puntuacion": 52.2,
+      "puntuacion": 52.4,
       "papel": "alternativa",
       "cuando": "Si prefieres recetas nativas de PyTorch fáciles de modificar."
      }
@@ -162775,10 +162815,10 @@
     "latest_release": "v4.0.1 (2026-05-20)"
    },
    "calidad": {
-    "puntuacion": 52.6,
+    "puntuacion": 53.1,
     "ejes": {
-     "adopcion": 4.8,
-     "mantenimiento": 5.7,
+     "adopcion": 4.7,
+     "mantenimiento": 6.2,
      "madurez": 9.7,
      "licencia": 15.0,
      "respaldo": 8.0,

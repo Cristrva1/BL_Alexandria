@@ -75,6 +75,8 @@ def backer_class(m: dict, config: dict) -> str:
 
 
 def effective_downloads(m: dict) -> float | None:
+    if m.get("huggingface_mes") is not None:
+        return m["huggingface_mes"]
     vals = [m.get("pypi_mes"), m.get("npm_mes")]
     if m.get("docker_pulls"):
         vals.append(m["docker_pulls"] / max(m.get("edad_dias", 30) / 30.4, 1))  # media mensual aproximada
@@ -121,6 +123,8 @@ METRICS = {  # métrica -> (eje, mayor_es_mejor)
 def metric_value(name: str, m: dict) -> float | None:
     if m.get("error"):
         return None
+    if m.get("proveedor_metricas") == "huggingface" and name in {"estrellas", "estrellas_anio"}:
+        return m.get("likes" if name == "estrellas" else "likes_anio")
     if name == "descargas_mes":
         return effective_downloads(m)
     if name == "bus_factor":
@@ -172,7 +176,7 @@ def score_all(metrics: dict[str, dict], compact: dict, detail: dict, config: dic
     out: dict[str, dict] = {}
     for i in ids:
         m, e, d = metrics[i], entries[i], detail.get(i, {})
-        notes: list[str] = []
+        notes: list[str] = list(m.get("notas_fuente", []))
         axes: dict[str, float] = {}
         for axis in ("adopcion", "mantenimiento"):
             parts = {k: w for k, w in sub[axis].items() if k in pct[i]}
@@ -209,7 +213,8 @@ def score_all(metrics: dict[str, dict], compact: dict, detail: dict, config: dic
         sc = m.get("scorecard")
         axes["seguridad"] = W["seguridad"] * sc / 10 if sc is not None else W["seguridad"] / 2
         if sc is None:
-            notes.append("Sin OpenSSF Scorecard publicado: seguridad neutral")
+            notes.append("Sin medición de OpenSSF Scorecard en esta fuente: seguridad neutral" if m.get("proveedor_metricas")
+                         else "Sin OpenSSF Scorecard publicado: seguridad neutral")
         fit, why = stack_fit(i, e, d, m)
         axes["encaje"] = fit
         if m.get("derivado_de"):

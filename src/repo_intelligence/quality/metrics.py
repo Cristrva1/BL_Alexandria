@@ -469,9 +469,18 @@ def scorecard(full_name: str, http: Callable = _http_json) -> dict:
 def catalog_targets(compact: dict, detail: dict) -> list[dict]:
     out = []
     for r in compact["repos"]:
-        if r.get("alias_of") or not r.get("gh") or r.get("repository_host") not in (None, "github", "github.com"):
+        if r.get("alias_of") or not r.get("cat", 1):
             continue
         d = detail.get(r["id"], {})
+        host = r.get("repository_host")
+        if host in {"codeberg", "huggingface"}:
+            source = r.get("source_repo" if host == "codeberg" else "model_id")
+            if not source or not re.fullmatch(r"[\w.-]+/[\w.-]+", source) or any(part in {".", ".."} for part in source.split("/")):
+                raise ValueError(f"Identidad canónica inválida para {r['id']} en {host}")
+            out.append({"id": r["id"], "provider": host, "source": source, "homepage": d.get("homepage")})
+            continue
+        if not r.get("gh") or host not in (None, "github", "github.com"):
+            continue
         gs = d.get("getting_started") or {}
         texts = [gs.get("command") or "", " ".join(str(s) for s in (gs.get("steps") or []) if isinstance(s, str)), d.get("install") or ""]
         out.append({"id": r["id"], "gh": r["gh"], "texts": texts})
@@ -556,7 +565,18 @@ def collect(root: Path, targets: list[dict], *, config: dict, refresh: bool = Fa
             results.append((t["id"], m))
         return results
 
-    chunks = [pending[i:i + batch] for i in range(0, len(pending), batch)]
+    from .forges import collect_native
+
+    for target in pending:
+        if "provider" not in target:
+            continue
+        # Una consulta incompleta deja intacta la última captura válida.
+        result = collect_native(target, now)
+        save_cache(root, target["id"], result)
+        out[target["id"]] = result
+
+    github_targets = [t for t in pending if "provider" not in t]
+    chunks = [github_targets[i:i + batch] for i in range(0, len(github_targets), batch)]
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
         for res in pool.map(work, chunks):

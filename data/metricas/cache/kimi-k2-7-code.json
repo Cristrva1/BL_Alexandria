@@ -1,0 +1,37 @@
+{
+ "commits_365d": 4,
+ "commits_90d": 0,
+ "contribuidores_top100": 3,
+ "creado": "2026-06-11",
+ "cuota_principal": 0.5,
+ "edad_dias": 167,
+ "fecha": "2026-11-26",
+ "fuentes": {
+  "commits": "https://huggingface.co/api/models/moonshotai/Kimi-K2.7-Code/commits/74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "descargas": "https://huggingface.co/docs/hub/models-download-stats",
+  "ficha": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/raw/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md",
+  "licencia": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/LICENSE",
+  "modelo": "https://huggingface.co/api/models/moonshotai/Kimi-K2.7-Code",
+  "organizacion": "https://huggingface.co/api/organizations/moonshotai/overview"
+ },
+ "full_name": "moonshotai/Kimi-K2.7-Code",
+ "homepage": "https://www.kimi.com/code",
+ "huggingface_mes": 327197,
+ "id": "kimi-k2-7-code",
+ "licencia_clase_auto": "source_available",
+ "licencia_motivo_auto": "Modified MIT según la ficha y licencia de los pesos.",
+ "licencia_spdx": "OTHER",
+ "likes": 1434,
+ "likes_anio": 3134.2,
+ "nombre_licencia": "modified-mit",
+ "notas_fuente": [
+  "Adopción: los «me gusta» del Hub se usan como señal comparable a estrellas, junto con las descargas de 30 días.",
+  "El historial corresponde a la publicación de los pesos. Las discusiones del Hub y las versiones comerciales quedan fuera de los indicadores de incidencias y lanzamientos."
+ ],
+ "observado_en": "2026-11-26T01:52:43+00:00",
+ "propietario": "moonshotai",
+ "propietario_tipo": "Organization",
+ "proveedor_metricas": "huggingface",
+ "revision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+ "ultimo_push": "2026-06-15"
+}

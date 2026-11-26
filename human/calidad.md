@@ -2,7 +2,7 @@
 
 # Puntuación de calidad y grupos de similares
 
-Cada repo recibe una puntuación de 0 a 100 calculada con métricas públicas (GitHub, PyPI, npm, Docker Hub y OpenSSF Scorecard). Se recalcula una vez al mes. Sirve para ordenar opciones parecidas, no para decidir por ti: revisa siempre «Cuándo elegirlo».
+Cada repo recibe una puntuación de 0 a 100 calculada con métricas públicas (GitHub, Codeberg, Hugging Face, PyPI, npm, Docker Hub y OpenSSF Scorecard). Se recalcula una vez al mes. Sirve para ordenar opciones parecidas, no para decidir por ti: revisa siempre «Cuándo elegirlo».
 
 | Eje | Puntos | Señales |
 |---|---:|---|
@@ -18,6 +18,8 @@ Cada repo recibe una puntuación de 0 a 100 calculada con métricas públicas (G
 
 - Las métricas numéricas se convierten en percentiles: la mitad frente a la categoría técnica y la mitad frente al grupo de similares. El último de un grupo pequeño no queda en cero y un valor extremo no deforma la escala.
 - Primera respuesta: mediana, en las 40 issues más recientes, del primer comentario de otra persona (sin bots) o del cierre. Las issues sin respuesta cuentan con el tiempo transcurrido hasta hoy.
+- PdfDing usa las estrellas de [Codeberg](https://codeberg.org/mrmn/PdfDing), los commits importados y las publicaciones estables. La antigüedad se cuenta desde el alta en esa forja. La primera respuesta se calcula sobre incidencias con participantes identificables.
+- Kimi usa los «me gusta» de [Hugging Face](https://huggingface.co/moonshotai/Kimi-K2.7-Code) en los indicadores de popularidad y las [descargas de los últimos 30 días](https://huggingface.co/docs/hub/models-download-stats). El mantenimiento mide los commits del repositorio de pesos. El peso de incidencias y lanzamientos se reparte entre las señales de mantenimiento disponibles.
 - Repos derivados que fusionan su upstream: solo cuentan los commits del propietario y los contribuidores propios.
 - Licencia: si GitHub no reconoce el SPDX se lee el archivo LICENSE; hay correcciones manuales en `config/calidad.yaml`.
 - Madurez documental: los tres puntos requieren una página externa declarada por el proyecto en las métricas. La ficha interna de Alexandría queda fuera del cálculo.
