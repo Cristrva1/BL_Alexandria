@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -53,7 +53,7 @@ Grupo **Servidores MCP de navegador**: Playwright MCP ocupa la posición 2 de 2 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Chrome DevTools MCP](chrome-devtools-mcp.md) ⭐ recomendado | 72 | Si buscas esto: servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
-| 2 | **Playwright MCP** (esta ficha) | 62 | Si buscas esto: servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| 2 | **Playwright MCP** (esta ficha) | 63 | Si buscas esto: servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 
 ## Acceso, coste y equipo
 

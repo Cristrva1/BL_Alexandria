@@ -56,10 +56,10 @@ Grupo **Orquestadores de workflows de datos y tareas**: Apache Airflow ocupa la 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Apache Airflow** (esta ficha) ⭐ recomendado | 81 | Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores. |
-| 2 | [Kestra](kestra.md) | 80 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
-| 3 | [Prefect](prefect.md) | 68 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
+| 2 | [Kestra](kestra.md) | 81 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
+| 3 | [Prefect](prefect.md) | 69 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
 | 4 | [Trigger.dev](trigger-dev.md) | 68 | Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas. |
-| 5 | [Windmill](windmill.md) | 61 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
+| 5 | [Windmill](windmill.md) | 62 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
 | 6 | [Dagster](dagster.md) | 57 | Si piensas en activos de datos (tablas, modelos) con linaje y pruebas. |
 
 ## Acceso, coste y equipo

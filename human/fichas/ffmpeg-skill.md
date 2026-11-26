@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
+**Puntuación de calidad** 70/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.

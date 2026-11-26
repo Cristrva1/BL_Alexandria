@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** Elastic-2.0. Source-available (ELv2): no permite ofrecerlo como servicio gestionado. Fuente: [LICENSE](https://github.com/elastic/detection-rules/blob/main/LICENSE.txt). GitHub la marca como NOASSERTION.
 

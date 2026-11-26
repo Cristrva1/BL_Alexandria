@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -54,7 +54,7 @@ Grupo **Frameworks de agentes en Python**: Agent Development Kit (ADK) ocupa la 
 | 3 | [Deep Agents](deepagents.md) | 70 | Si quieres agentes de largo recorrido con planificación, subagentes y sistema de archivos sobre LangGraph. |
 | 4 | [OpenAI Agents SDK](openai-agents-python.md) | 67 | Si usas la API de OpenAI y quieres handoffs, guardrails y trazas oficiales. |
 | 5 | [Pydantic AI](pydantic-ai.md) | 66 | Si quieres salidas tipadas y validadas con Pydantic y un estilo cercano a FastAPI. |
-| 6 | **Agent Development Kit (ADK)** (esta ficha) | 65 | Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google. |
+| 6 | **Agent Development Kit (ADK)** (esta ficha) | 66 | Si despliegas en Google Cloud/Vertex o usas Gemini y quieres el kit oficial de Google. |
 | 7 | [Agno](agno.md) | 61 | Si quieres un runtime de agentes con memoria, conocimiento y equipos listo para servir por API. |
 | 8 | [smolagents](smolagents.md) | 55 | Si quieres agentes mínimos que escriben código Python como acciones, de Hugging Face. |
 

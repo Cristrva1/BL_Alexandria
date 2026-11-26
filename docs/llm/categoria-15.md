@@ -20,54 +20,54 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---|---:|---|---|
 | `memos` | notas | App de notas rápidas autoalojada con línea temporal personal, Markdown… | 1 Básico | 82 | MIT (OSI permisiva) | sin grupo |
 | `siyuan` | notas | Espacio de conocimiento por bloques, local-first y autoalojable, con… | 1 Básico | 79 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `karakeep` | notas | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones… | 2 Intermedio | 68 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `karakeep` | notas | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones… | 2 Intermedio | 69 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `trilium` | notas | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas… | 1 Básico | 65 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `appflowy` | notas | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `trilium` | notas | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `obsidian-skills` | notas | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
 | `obsidian-second-brain` | notas | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre… | 2 Intermedio | 62 | MIT (OSI permisiva) | recomendado |
 | `claude-obsidian` | notas | Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
 | `obsidian-releases` | notas | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no… | 1 Básico | 60 | — (sin licencia detectada) | sin grupo |
 | `logseq` | notas | Plataforma de gestión del conocimiento local-first en forma de esquema, con… | 1 Básico | 59 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `joplin` | notas | App de notas y tareas centrada en la privacidad, offline first, con… | 1 Básico | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `obsidian-importer` | notas | Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
-| `joplin` | notas | App de notas y tareas centrada en la privacidad, offline first, con… | 1 Básico | 57 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `obsidian-clipper` | notas | Extensión oficial para capturar páginas y fragmentos de la web y guardarlos… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
 | `kepano-obsidian` | notas | Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
 | `jsoncanvas` | notas | Especificación abierta de JSON Canvas para describir nodos y conexiones de un… | 1 Básico | 50 | MIT (OSI permisiva) | sin grupo |
 | `obsidian-sample-plugin` | notas | Plantilla oficial para programar un plugin de Obsidian con una estructura… | 2 Intermedio | 50 | 0BSD (OSI permisiva) | sin grupo |
 | `anytype-ts` | notas | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en… | 1 Básico | 48 | Any Source Available License 1.0 (no OSI) (source-available) | alternativa |
 | `obsidian-minimal` | notas | Tema configurable de Obsidian para ajustar la apariencia y reducir… | 1 Básico | 48 | MIT (OSI permisiva) | sin grupo |
-| `obsidian-help` | notas | Documentación oficial de Obsidian para aprender sus funciones, configuración y… | 1 Básico | 42 | — (sin licencia detectada) | sin grupo |
+| `obsidian-help` | notas | Documentación oficial de Obsidian para aprender sus funciones, configuración y… | 1 Básico | 43 | — (sin licencia detectada) | sin grupo |
 | `immich` | archivos | Gestión autoalojada de fotos y vídeos de alto rendimiento, alternativa a Google… | 2 Intermedio | 81 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `syncthing` | archivos | Aplicación para sincronizar archivos entre dispositivos directamente y… | 1 Básico | 72 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `photoprism` | archivos | App de fotos con IA y privacidad primero para explorar, organizar y compartir… | 2 Intermedio | 66 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `nextcloud-server` | archivos | Servidor de Nextcloud para almacenar y compartir archivos, contactos y… | 3 Avanzado | 59 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `authentik` | privacidad | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 68 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | alternativa |
+| `keycloak` | privacidad | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | recomendado |
 | `pi-hole` | privacidad | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar… | 1 Básico | 68 | EUPL-1.2 (OSI copyleft) | recomendado |
-| `authentik` | privacidad | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 67 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | recomendado |
-| `keycloak` | privacidad | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `vaultwarden` | privacidad | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 67 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `vault` | privacidad | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. | 3 Avanzado | 64 | BUSL-1.1 (source-available) | sin grupo |
-| `age` | privacidad | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña… | 1 Básico | 61 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `vaultwarden` | privacidad | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 68 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `vault` | privacidad | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. | 3 Avanzado | 65 | BUSL-1.1 (source-available) | sin grupo |
+| `age` | privacidad | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña… | 1 Básico | 62 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `bitwarden-clients` | privacidad | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar… | 1 Básico | 61 | GPL-3.0 + Bitwarden License (bitwarden_license/) (OSI copyleft) | sin grupo |
 | `adguardhome` | privacidad | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | alternativa |
+| `keepassxc` | privacidad | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con… | 1 Básico | 55 | GPL-2.0 o GPL-3.0 (OSI copyleft) | alternativa |
 | `sops` | privacidad | Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS… | 1 Básico | 55 | MPL-2.0 (OSI copyleft) | sin grupo |
-| `keepassxc` | privacidad | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con… | 1 Básico | 54 | GPL-2.0 o GPL-3.0 (OSI copyleft) | alternativa |
 | `jellyfin` | lectura | Sistema multimedia libre para gestionar y transmitir películas, series, música… | 1 Básico | 75 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `kavita` | lectura | Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | recomendado |
 | `audiobookshelf` | lectura | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y… | 3 Avanzado | 53 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `calibre-web` | lectura | Aplicación web para explorar, leer y descargar libros electrónicos de una base… | 1 Básico | 45 | GPL-3.0 (OSI copyleft) | alternativa |
+| `calibre-web` | lectura | Aplicación web para explorar, leer y descargar libros electrónicos de una base… | 1 Básico | 42 | GPL-3.0 (OSI copyleft) | alternativa |
 | `home-assistant` | domotica | Motor de Home Assistant para conectar dispositivos y automatizar acciones del… | 2 Intermedio | 83 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `frigate` | domotica | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo… | 3 Avanzado | 69 | MIT (OSI permisiva) | sin grupo |
-| `esphome` | domotica | Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros… | 2 Intermedio | 60 | MIT + GPL-3.0 (OSI copyleft) | sin grupo |
+| `frigate` | domotica | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo… | 3 Avanzado | 70 | MIT (OSI permisiva) | sin grupo |
+| `esphome` | domotica | Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros… | 2 Intermedio | 61 | MIT + GPL-3.0 (OSI copyleft) | sin grupo |
 | `zigbee2mqtt` | domotica | Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin… | 2 Intermedio | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `actual` | personal | App de finanzas personales local-first basada en presupuesto por sobres, con… | 2 Intermedio | 73 | MIT (OSI permisiva) | recomendado |
-| `ai-job-search` | personal | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
+| `ai-job-search` | personal | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y… | 2 Intermedio | 73 | MIT (OSI permisiva) | sin grupo |
 | `cleanyourtv` | personal | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
-| `ghostfolio` | personal | Software abierto de gestión de patrimonio para seguir acciones, ETF y… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `ghostfolio` | personal | Software abierto de gestión de patrimonio para seguir acciones, ETF y… | 2 Intermedio | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `firefly-iii` | personal | Gestor autoalojado de finanzas personales con contabilidad de doble entrada… | 2 Intermedio | 62 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `optimizerduck` | personal | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `universal-android-debloater-next-generation` | personal | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 48 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `optimizerduck` | personal | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y… | 1 Básico | 58 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `universal-android-debloater-next-generation` | personal | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android… | 2 Intermedio | 49 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `isponsorblocktv` | personal | Usa la base de SponsorBlock para saltar segmentos marcados durante la… | 1 Básico | 46 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `40-questions` | personal | Colección de preguntas para revisar un año o una década y reflexionar sobre… | 1 Básico | 28 | — (sin licencia detectada) | sin grupo |
-| `isponsorblocktv` | personal | Usa la base de SponsorBlock para saltar segmentos marcados durante la… | 1 Básico | — | GPL-3.0 | sin grupo |
 | `openmaic` | aprendizaje | Aplicación educativa con varios agentes que prepara clases y actividades… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -103,7 +103,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### karakeep (`karakeep`)
 
-- **Repo:** https://github.com/karakeep-app/karakeep · AGPL-3.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/karakeep-app/karakeep · AGPL-3.0 · nivel 2 · 69/100
 - **Qué es:** Gestor de marcadores autoalojado «guárdalo todo» (antes Hoarder) con etiquetado por IA, de Localhost Labs Ltd. Licencia AGPL-3.0. Es activo y popular (~31k estrellas, v0.35.0).
 - **Cuándo elegirlo:** Casos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local.
 - **Requisitos:** nivel 2: Docker Compose documentado; Docker; volumen persistente; modelo solo para etiquetado AI; hardware prerequisites; API de IA: opcional; Docker; volumen persistente; modelo solo para etiquetado AI.
@@ -111,6 +111,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Guarda dos enlaces de prueba y comprueba búsqueda y etiquetas antes de activar resúmenes AI Éxito: Puedes abrir origen, nota y etiquetas de cada marcador
 - **Combina con:** `ollama` [8/motores], `coolify` [22/infraestructura], `claude-code` [20/terminal], `archivebox` [4/busqueda]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre. Antes Hoarder; el modo de lectura offline no significa que un proveedor AI remoto procese localmente los artículos.
+
+### Trilium Notes (`trilium`)
+
+- **Repo:** https://github.com/TriliumNext/Trilium · AGPL-3.0 · nivel 1 · 65/100 · alternativa en «Notas y bases de conocimiento personales»
+- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0) mantenida por la comunidad TriliumNext, continuación del Trilium original de zadam. Muy activa, con versiones estables y nightly.
+- **Cuándo elegirlo:** Casos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, docker-compose.yml, package.json; API de IA: opcional.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/TriliumNext/Trilium.git` — fuente: https://github.com/TriliumNext/Trilium/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la release de escritorio o el servidor Docker, crea un árbol de notas y clona una nota en dos ramas. Éxito: La nota clonada aparece en ambas ramas y los cambios se reflejan en las dos.
+- **Combina con:** `coolify` [22/infraestructura], `claude-code` [20/terminal], `pandoc` [13/conversion]
+- **Alternativas:** `siyuan`, `logseq`, `joplin`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): joplin, siyuan, logseq.
 
 ### AppFlowy (`appflowy`)
 
@@ -123,18 +135,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `coolify` [22/infraestructura], `markitdown` [13/conversion]
 - **Alternativas:** `anytype-ts`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): anytype-ts. Usa el instalador para empezar; la guía from-source es de desarrollo; no se confirma aquí una ruta completa de modelo local.
-
-### Trilium Notes (`trilium`)
-
-- **Repo:** https://github.com/TriliumNext/Trilium · AGPL-3.0 · nivel 1 · 64/100 · alternativa en «Notas y bases de conocimiento personales»
-- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0) mantenida por la comunidad TriliumNext, continuación del Trilium original de zadam. Muy activa, con versiones estables y nightly.
-- **Cuándo elegirlo:** Casos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, docker-compose.yml, package.json; API de IA: opcional.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/TriliumNext/Trilium.git` — fuente: https://github.com/TriliumNext/Trilium/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la release de escritorio o el servidor Docker, crea un árbol de notas y clona una nota en dos ramas. Éxito: La nota clonada aparece en ambas ramas y los cambios se reflejan en las dos.
-- **Combina con:** `coolify` [22/infraestructura], `claude-code` [20/terminal], `pandoc` [13/conversion]
-- **Alternativas:** `siyuan`, `logseq`, `joplin`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): joplin, siyuan, logseq.
 
 ### obsidian-skills (`obsidian-skills`)
 
@@ -209,6 +209,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `siyuan`, `trilium`, `joplin`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): joplin, trilium, siyuan. La migración a la versión con base de datos puede cambiar el formato de almacenamiento.
 
+### Joplin (`joplin`)
+
+- **Repo:** https://github.com/laurent22/joplin · AGPL-3.0 · nivel 1 · 58/100 · alternativa en «Notas y bases de conocimiento personales»
+- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.
+- **Cuándo elegirlo:** Casos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; TypeScript, package.json; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/laurent22/joplin/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala Joplin, crea una libreta con notas y configura la sincronización con una carpeta o WebDAV de prueba. Éxito: Las notas aparecen en un segundo dispositivo tras sincronizar.
+- **Combina con:** `nextcloud-server` [15/archivos], `syncthing` [15/archivos], `pandoc` [13/conversion]
+- **Alternativas:** `siyuan`, `trilium`, `logseq`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): trilium, siyuan, logseq.
+
 ### obsidian-importer (`obsidian-importer`)
 
 - **Repo:** https://github.com/obsidianmd/obsidian-importer · MIT · nivel 1 · 58/100
@@ -219,18 +231,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Importa dos notas ficticias a una bóveda nueva y revisa enlaces y adjuntos Éxito: Puedes comparar las notas de origen y destino sin mezclar toda tu colección
 - **Combina con:** `obsidian-help`, `obsidian-releases`, `markitdown` [13/conversion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Los comandos npm son para desarrollar el plugin; usa el flujo de instalación de Obsidian para importaciones normales.
-
-### Joplin (`joplin`)
-
-- **Repo:** https://github.com/laurent22/joplin · AGPL-3.0 · nivel 1 · 57/100 · alternativa en «Notas y bases de conocimiento personales»
-- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.
-- **Cuándo elegirlo:** Casos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; TypeScript, package.json; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/laurent22/joplin/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Joplin, crea una libreta con notas y configura la sincronización con una carpeta o WebDAV de prueba. Éxito: Las notas aparecen en un segundo dispositivo tras sincronizar.
-- **Combina con:** `nextcloud-server` [15/archivos], `syncthing` [15/archivos], `pandoc` [13/conversion]
-- **Alternativas:** `siyuan`, `trilium`, `logseq`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): trilium, siyuan, logseq.
 
 ### obsidian-clipper (`obsidian-clipper`)
 
@@ -301,7 +301,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### obsidian-help (`obsidian-help`)
 
-- **Repo:** https://github.com/obsidianmd/obsidian-help · — · nivel 1 · 42/100
+- **Repo:** https://github.com/obsidianmd/obsidian-help · — · nivel 1 · 43/100
 - **Qué es:** Fuente de la documentación oficial de ayuda de Obsidian y sus traducciones. El repo no tiene archivo de licencia. Lo mantiene Obsidian y es activo (~2k estrellas).
 - **Cuándo elegirlo:** Casos: Aprender funciones básicas de Obsidian; Consultar cómo configurar una bóveda.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Obsidian solo para practicar; hardware prerequisites; API de IA: no; Navegador; Obsidian solo para practicar.
@@ -356,6 +356,29 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `coolify` [22/infraestructura], `home-assistant` [15/domotica], `ollama` [8/motores], `casaos` [22/infraestructura], `immich`, `photoprism`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento. Su función principal es almacenamiento y colaboración, por eso pasa al área de organización de archivos; IA es una extensión opcional.
 
+### authentik (`authentik`)
+
+- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 68/100 · alternativa en «Proveedores de identidad y SSO»
+- **Qué es:** Identity provider (MIT + enterprise/ propietaria).
+- **Cuándo elegirlo:** Casos: SSO delante de apps autoalojadas; MFA centralizado para el lab.
+- **Requisitos:** nivel 3: proveedor de identidad con Docker Compose y flujos a configurar; Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/goauthentik/authentik/blob/main/website/docs/install-config/install/docker-compose.mdx
+- **Primera prueba propuesta (no ejecutada):** Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba. Éxito: Login SSO funcionando.
+- **Combina con:** `vaultwarden`, `caddy` [22/infraestructura]
+- **Alternativas:** `keycloak`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### Keycloak (`keycloak`)
+
+- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 68/100 · recomendado en «Proveedores de identidad y SSO»
+- **Qué es:** IdP Apache-2.0 de Keycloak.
+- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
+- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
+- **Combina con:** `vault`, `caddy` [22/infraestructura]
+- **Alternativas:** `authentik`
+
 ### Pi-hole (`pi-hole`)
 
 - **Repo:** https://github.com/pi-hole/pi-hole · EUPL-1.2 · nivel 1 · 68/100 · recomendado en «Bloqueo de anuncios por DNS»
@@ -368,32 +391,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `adguardhome`
 - **Riesgos y avisos:** Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.
 
-### authentik (`authentik`)
-
-- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 67/100 · recomendado en «Proveedores de identidad y SSO»
-- **Qué es:** Identity provider (MIT + enterprise/ propietaria).
-- **Cuándo elegirlo:** Casos: SSO delante de apps autoalojadas; MFA centralizado para el lab.
-- **Requisitos:** nivel 3: proveedor de identidad con Docker Compose y flujos a configurar; Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/goauthentik/authentik/blob/main/website/docs/install-config/install/docker-compose.mdx
-- **Primera prueba propuesta (no ejecutada):** Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba. Éxito: Login SSO funcionando.
-- **Combina con:** `vaultwarden`, `caddy` [22/infraestructura]
-- **Alternativas:** `keycloak`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
-### Keycloak (`keycloak`)
-
-- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 67/100 · alternativa en «Proveedores de identidad y SSO»
-- **Qué es:** IdP Apache-2.0 de Keycloak.
-- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
-- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
-- **Combina con:** `vault`, `caddy` [22/infraestructura]
-- **Alternativas:** `authentik`
-
 ### vaultwarden (`vaultwarden`)
 
-- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 67/100 · recomendado en «Gestores de contraseñas»
+- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 68/100 · recomendado en «Gestores de contraseñas»
 - **Qué es:** Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5).
 - **Cuándo elegirlo:** Casos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
 - **Requisitos:** nivel 2: un contenedor; requiere HTTPS y copias de seguridad; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia; hardware prerequisites; API de IA: no; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia.
@@ -405,7 +405,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### HashiCorp Vault (`vault`)
 
-- **Repo:** https://github.com/hashicorp/vault · BUSL-1.1 · nivel 3 · 64/100
+- **Repo:** https://github.com/hashicorp/vault · BUSL-1.1 · nivel 3 · 65/100
 - **Qué es:** Gestor de secretos de HashiCorp/IBM bajo Business Source License 1.1 desde la 1.15 (source-available, no OSI); cada versión pasa a MPL-2.0 a los 4 años. OpenBao es el fork MPL-2.0.
 - **Cuándo elegirlo:** Casos: centralizar secretos de un entorno propio; emitir credenciales dinámicas de DB de lab.
 - **Requisitos:** nivel 3: gestión de secretos: unseal, políticas y almacenamiento; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -416,7 +416,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### age (`age`)
 
-- **Repo:** https://github.com/FiloSottile/age · BSD-3-Clause · nivel 1 · 61/100
+- **Repo:** https://github.com/FiloSottile/age · BSD-3-Clause · nivel 1 · 62/100
 - **Qué es:** Herramienta de cifrado de FiloSottile (BSD-3).
 - **Cuándo elegirlo:** Casos: cifrar un backup antes de subirlo; claves age para SOPS.
 - **Requisitos:** nivel 1: preparación sencilla; Go, go.mod; API de IA: no.
@@ -447,6 +447,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `pi-hole`
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador. El filtrado DNS no bloquea todo anuncio ni sustituye otras protecciones; no cambies toda la red para la primera prueba.
 
+### KeePassXC (`keepassxc`)
+
+- **Repo:** https://github.com/keepassxreboot/keepassxc · GPL-2.0 o GPL-3.0 · nivel 1 · 55/100 · alternativa en «Gestores de contraseñas»
+- **Qué es:** Password manager local (GPL según COPYING; API NOASSERTION).
+- **Cuándo elegirlo:** Casos: cofre local para el equipo de lab; TOTP + contraseñas sin nube.
+- **Requisitos:** nivel 1: preparación sencilla; C++, CMakeLists.txt; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/keepassxreboot/keepassxc.git` — fuente: https://github.com/keepassxreboot/keepassxc/blob/develop/INSTALL.md
+- **Primera prueba propuesta (no ejecutada):** Instala KeePassXC desde keepassxc.org y crea una base .kdbx de prueba. Éxito: Entradas guardadas y desbloqueables.
+- **Combina con:** `sops`
+- **Alternativas:** `vaultwarden`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
 ### SOPS (`sops`)
 
 - **Repo:** https://github.com/getsops/sops · MPL-2.0 · nivel 1 · 55/100
@@ -456,18 +468,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/getsops/sops/blob/main/README.rst
 - **Primera prueba propuesta (no ejecutada):** Instala sops (release) y cifra un YAML de lab con age. Éxito: El fichero en Git permanece cifrado.
 - **Combina con:** `age`, `vault`
-
-### KeePassXC (`keepassxc`)
-
-- **Repo:** https://github.com/keepassxreboot/keepassxc · GPL-2.0 o GPL-3.0 · nivel 1 · 54/100 · alternativa en «Gestores de contraseñas»
-- **Qué es:** Password manager local (GPL según COPYING; API NOASSERTION).
-- **Cuándo elegirlo:** Casos: cofre local para el equipo de lab; TOTP + contraseñas sin nube.
-- **Requisitos:** nivel 1: preparación sencilla; C++, CMakeLists.txt; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/keepassxreboot/keepassxc.git` — fuente: https://github.com/keepassxreboot/keepassxc/blob/develop/INSTALL.md
-- **Primera prueba propuesta (no ejecutada):** Instala KeePassXC desde keepassxc.org y crea una base .kdbx de prueba. Éxito: Entradas guardadas y desbloqueables.
-- **Combina con:** `sops`
-- **Alternativas:** `vaultwarden`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ### Jellyfin (`jellyfin`)
 
@@ -505,7 +505,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Calibre-Web (`calibre-web`)
 
-- **Repo:** https://github.com/janeczku/calibre-web · GPL-3.0 · nivel 1 · 45/100 · alternativa en «Bibliotecas de libros y cómics»
+- **Repo:** https://github.com/janeczku/calibre-web · GPL-3.0 · nivel 1 · 42/100 · alternativa en «Bibliotecas de libros y cómics»
 - **Qué es:** Aplicación de código abierto (GPL-3.0) de janeczku, fork del proyecto library de mutschler. Madura y activa; requiere una base de datos de Calibre válida.
 - **Cuándo elegirlo:** Casos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas.
 - **Requisitos:** nivel 1: preparación sencilla; Fluent, pyproject.toml, requirements.txt; API de IA: no.
@@ -528,7 +528,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Frigate NVR (`frigate`)
 
-- **Repo:** https://github.com/blakeblackshear/frigate · MIT · nivel 3 · 69/100
+- **Repo:** https://github.com/blakeblackshear/frigate · MIT · nivel 3 · 70/100
 - **Qué es:** NVR de código abierto (MIT para código y documentación) de Blake Blackshear; los nombres y el logotipo de Frigate son marcas de Frigate, Inc. Muy maduro y activo, con suscripción opcional Frigate+.
 - **Cuándo elegirlo:** Casos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware model_dependent; API de IA: no.
@@ -539,7 +539,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ESPHome (`esphome`)
 
-- **Repo:** https://github.com/esphome/esphome · MIT + GPL-3.0 · nivel 2 · 60/100
+- **Repo:** https://github.com/esphome/esphome · MIT + GPL-3.0 · nivel 2 · 61/100
 - **Qué es:** Proyecto de código abierto de la Open Home Foundation. La licencia combina MIT (código Python) y GPL-3.0 (código C++ del firmware) según su archivo de licencia. Muy maduro.
 - **Cuándo elegirlo:** Casos: construir sensores de temperatura o presencia caseros sin programar en C++; integrar placas ESP32 con Home Assistant mediante su API nativa.
 - **Requisitos:** nivel 2: preparación media; C++, pyproject.toml, requirements.txt; API de IA: no.
@@ -573,7 +573,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ai-job-search (`ai-job-search`)
 
-- **Repo:** https://github.com/ai-job-search-dev/ai-job-search · MIT · nivel 2 · 72/100
+- **Repo:** https://github.com/ai-job-search-dev/ai-job-search · MIT · nivel 2 · 73/100
 - **Qué es:** Marco de búsqueda de empleo asistida por IA construido sobre Claude Code, creado por un geofísico que lo usó en su propia búsqueda. Licencia MIT. Ha crecido muy rápido (~72k estrellas, v1.7.5). No está afiliado a Anthropic.
 - **Cuándo elegirlo:** Casos: Adaptar un CV a una oferta; Preparar preguntas para una entrevista.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; perfil ficticio para ensayo; LaTeX y fuentes si generas PDFs; hardware prerequisites; API de IA: no; Agente compatible; perfil ficticio para ensayo; LaTeX y fuentes si generas PDFs.
@@ -595,7 +595,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Ghostfolio (`ghostfolio`)
 
-- **Repo:** https://github.com/ghostfolio/ghostfolio · AGPL-3.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/ghostfolio/ghostfolio · AGPL-3.0 · nivel 2 · 67/100
 - **Qué es:** Software de gestión de patrimonio de código abierto (AGPL-3.0) del proyecto Ghostfolio, con oferta comercial en la nube (Premium). Activo.
 - **Cuándo elegirlo:** Casos: seguir el rendimiento de una cartera de inversión diversificada; analizar asignación, dividendos y riesgo sin entregar datos a un broker.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; TypeScript, Dockerfile, package.json; API de IA: no.
@@ -618,7 +618,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### optimizerDuck (`optimizerduck`)
 
-- **Repo:** https://github.com/itsfatduck/optimizerDuck · GPL-3.0 · nivel 1 · 57/100
+- **Repo:** https://github.com/itsfatduck/optimizerDuck · GPL-3.0 · nivel 1 · 58/100
 - **Qué es:** Herramienta gratuita y open source para optimizar Windows en rendimiento, privacidad y simplicidad, de @itsfatduck. El archivo LICENSE es GPL-3.0, aunque GitHub muestra NOASSERTION. Es activa (~12k estrellas, v2.29.0).
 - **Cuándo elegirlo:** Casos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Windows compatible; administrador para cambios; respaldo y conocimiento del ajuste elegido; hardware prerequisites; API de IA: no; Windows compatible; administrador para cambios; respaldo y conocimiento del ajuste elegido.
@@ -629,7 +629,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### universal-android-debloater-next-generation (`universal-android-debloater-next-generation`)
 
-- **Repo:** https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation · GPL-3.0 · nivel 2 · 48/100
+- **Repo:** https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation · GPL-3.0 · nivel 2 · 49/100
 - **Qué es:** Fork independiente y mantenido de Universal Android Debloater (UAD), de la Universal-Debloater-Alliance. Licencia GPL-3.0. Es activo (~10k estrellas, v1.3.1).
 - **Cuándo elegirlo:** Casos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo.
 - **Requisitos:** nivel 2: preparación media; Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes; hardware prerequisites; API de IA: no; Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes.
@@ -637,6 +637,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Conecta un dispositivo de prueba y revisa una entrada y su explicación sin aplicar una selección masiva Éxito: Puedes identificar paquete, función y posibilidad de restauración documentada
 - **Combina con:** `adguardhome` [15/privacidad], `cleanyourtv`, `optimizerduck`
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo. El README recomienda Canta (Shizuku, desde el propio móvil) como opción complementaria. Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto.
+
+### iSponsorBlockTV (`isponsorblocktv`)
+
+- **Repo:** https://github.com/dmunozv04/iSponsorBlockTV · GPL-3.0 · nivel 1 · 46/100
+- **Qué es:** Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
+- **Cuándo elegirlo:** Casos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md
+- **Primera prueba propuesta (no ejecutada):** Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía. Éxito: Un video con un segmento etiquetado lo salta según la configuración.
+- **Riesgos y avisos:** Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.
 
 ### 40-questions (`40-questions`)
 
@@ -648,16 +658,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Responde tres preguntas de la lista con ejemplos del año y una acción concreta Éxito: Obtienes una nota propia que puedes retomar más adelante
 - **Combina con:** `kepano-obsidian` [15/notas], `obsidian-minimal` [15/notas], `obsidian-second-brain` [15/notas]
 - **Riesgos y avisos:** Sin alternativas declaradas. Sin licencia: no lo redistribuyas sin permiso. Es un recurso de reflexión con traducciones; no necesita instalar software ni usar IA.
-
-### iSponsorBlockTV (`isponsorblocktv`)
-
-- **Repo:** https://github.com/dmunozv04/iSponsorBlockTV · GPL-3.0 · nivel 1 · —/100
-- **Qué es:** Usa la base de SponsorBlock para saltar segmentos marcados durante la reproducción de YouTube en televisores compatibles.
-- **Cuándo elegirlo:** Casos: Probar el salto de una introducción marcada.; Configurar solo las categorías que quieres omitir en un televisor de prueba.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Dispositivo compatible con YouTube en TV y un equipo en esa red para alojar el cliente..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/dmunozv04/iSponsorBlockTV/blob/6a73a2d9e590f0cc7684036ca8fbf26812ceca0a/README.md
-- **Primera prueba propuesta (no ejecutada):** Lee la instalación, elige una versión actual y empareja un dispositivo de prueba con la guía. Éxito: Un video con un segmento etiquetado lo salta según la configuración.
-- **Riesgos y avisos:** Usa 2.11.0 o posterior por el aviso de seguridad. Depende de servicios de red y marcas de la comunidad.
 
 ### OpenMAIC (`openmaic`)
 

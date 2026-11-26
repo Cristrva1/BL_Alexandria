@@ -49,7 +49,7 @@ Grupo **Skills y flujos de producción de video**: OpenMontage ocupa la posició
 |---:|---|---:|---|
 | 1 | **OpenMontage** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. |
 | 2 | [video-use](video-use.md) | 60 | Si buscas esto: edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. |
-| 3 | [Remotion Superpowers](remotion-superpowers.md) | 48 | Si buscas esto: orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. |
+| 3 | [Remotion Superpowers](remotion-superpowers.md) | 47 | Si buscas esto: orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. |
 
 ## Acceso, coste y equipo
 

@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
+**Puntuación de calidad** 47/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Monitor de dispositivos para una red propia que muestra cambios en su interfaz web.

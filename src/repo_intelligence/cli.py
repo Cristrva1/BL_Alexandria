@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import shutil
+from functools import wraps
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Annotated
@@ -17,7 +18,7 @@ from repo_intelligence.analysis.reports import (
     build_score_report,
     render_decision,
 )
-from repo_intelligence.core.io import read_json, read_yaml, write_json, write_yaml
+from repo_intelligence.core.io import catalog_update, read_json, read_yaml, write_json, write_yaml
 from repo_intelligence.core.paths import ProjectPaths
 from repo_intelligence.git.discover import discover_repos
 from repo_intelligence.git.snapshots import write_snapshot
@@ -44,6 +45,14 @@ app.add_typer(menu_app, name="menu")
 app.add_typer(web_app, name="web")
 app.add_typer(llm_app, name="llm")
 console = Console()
+
+
+def catalog_command(function):
+    @wraps(function)
+    def locked(*args, **kwargs):
+        with catalog_update(ProjectPaths.load().project_root):
+            return function(*args, **kwargs)
+    return locked
 
 
 @app.command()
@@ -138,6 +147,7 @@ def scan_score() -> None:
 
 
 @app.command("score")
+@catalog_command
 def score_command(
     refrescar: Annotated[bool, typer.Option("--refrescar", help="Vuelve a pedir todas las métricas aunque la caché esté vigente.")] = False,
     sin_red: Annotated[bool, typer.Option("--sin-red", help="Solo puntúa con la caché de data/metricas/cache (no llama a ninguna API).")] = False,
@@ -203,6 +213,7 @@ def candidatos_retiro_command(
 
 
 @app.command("grupos")
+@catalog_command
 def grupos_command(
     proponer: Annotated[bool, typer.Option("--proponer", help="Muestra grupos que la similitud propone y que no están curados.")] = False,
 ) -> None:
@@ -232,6 +243,7 @@ def grupos_command(
 
 
 @app.command("complejidad")
+@catalog_command
 def complejidad_command(
     mostrar: Annotated[str | None, typer.Option("--mostrar", help="Muestra nivel y motivos de un id.")] = None,
 ) -> None:
@@ -277,7 +289,7 @@ def recommend_project(
     project: Annotated[str, typer.Option("--project", "-p", help="Describe the project you want to build.")] = "",
     project_file: Annotated[Path | None, typer.Option("--project-file", help="Markdown/text file with a long project brief.")] = None,
     tool: Annotated[str, typer.Option("--tool", help="Tool hint: auto, codex, claude-code, claude, antigravity, grok-build, open-code.")] = "auto",
-    max_repos: Annotated[int, typer.Option("--max-repos", help="Maximum repositories to recommend.")] = 5,
+    max_repos: Annotated[int, typer.Option("--max-repos", min=1, help="Maximum repositories to recommend.")] = 5,
     route: Annotated[str, typer.Option("--route", help="Access: no_api, claude, codex, local_model, api, reference, review.")] = "",
 ) -> None:
     """Recommend repositories and install modes for a concrete project."""
@@ -301,6 +313,7 @@ def recommend_project(
 
 
 @guide_app.command("build")
+@catalog_command
 def guide_build(
     changed_only: Annotated[
         bool, typer.Option("--changed-only", help="Accepted for compatibility; V1 always rebuilds.")
@@ -320,6 +333,7 @@ def guide_build(
 
 
 @menu_app.command("export")
+@catalog_command
 def menu_export(
     output: Annotated[Path | None, typer.Option("--output", "-o", help="Output directory (default: menu_portable/ in project root).")] = None,
 ) -> None:
@@ -341,6 +355,7 @@ def menu_export(
 
 
 @web_app.command("build")
+@catalog_command
 def web_build(
     output: Annotated[Path | None, typer.Option("--output", "-o", help="Output directory (default: web/).")] = None,
 ) -> None:
@@ -356,6 +371,7 @@ def web_build(
 
 
 @llm_app.command("export")
+@catalog_command
 def llm_export(
     output: Annotated[Path | None, typer.Option("--output", "-o", help="Carpeta de salida (por defecto: docs/llm/).")] = None,
 ) -> None:
@@ -380,7 +396,8 @@ def web_serve(
 
     paths = ProjectPaths.load()
     out_dir = output or (paths.project_root / "web")
-    stats = build_site(paths.project_root, out_dir)
+    with catalog_update(paths.project_root):
+        stats = build_site(paths.project_root, out_dir)
     httpd, url = make_server(Path(stats["output_dir"]), port)
     console.print(
         f"Alejandría en {url} — {stats['repos']} repos, "
@@ -402,7 +419,7 @@ def context_build(
     query: Annotated[str, typer.Option("--query")] = "",
     project_file: Annotated[Path | None, typer.Option("--project-file")] = None,
     tool: Annotated[str, typer.Option("--tool")] = "auto",
-    max_repos: Annotated[int, typer.Option("--max-repos")] = 3,
+    max_repos: Annotated[int, typer.Option("--max-repos", min=1)] = 3,
 ) -> None:
     """Create a portable AI context pack for a project/query."""
     paths = ProjectPaths.load()
@@ -474,6 +491,7 @@ def analyze(
 
 
 @app.command()
+@catalog_command
 def enrich(
     new: Annotated[bool, typer.Option("--new", help="Only new (not yet curated) repos")] = True,
     ids: Annotated[list[str], typer.Option("--id")] = None,
@@ -506,6 +524,7 @@ def enrich(
 
 
 @app.command("add")
+@catalog_command
 def add_command(
     repo: Annotated[str | None, typer.Argument(help="owner/repo de GitHub (o id del catálogo con --sugerir-combos).")] = None,
     categoria: Annotated[int | None, typer.Option("--categoria", help="Número de categoría técnica (INDICE_IA.json).")] = None,
@@ -617,6 +636,8 @@ def add_command(
         for a in result.added:
             show_suggestions(a["id"])
     if construir and not simular and result.added:
+        if any(repo.get("borrador") for repo in result.compact["repos"]):
+            raise typer.BadParameter("El catálogo contiene borradores pendientes de revisión. Completa sus fichas antes de construir.")
         render_all(root)
         export_menu(root, root / "menu_portable")
         build_site(root, root / "web")

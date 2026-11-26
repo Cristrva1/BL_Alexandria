@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; requiere clave de API
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.

@@ -1,0 +1,87 @@
+name: Métricas mensuales de calidad
+
+on:
+  schedule:
+    - cron: "17 9 1 * *"
+  workflow_dispatch:
+    inputs:
+      refrescar:
+        description: Volver a consultar también las métricas que siguen en caché
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: metricas-mensuales
+  cancel-in-progress: false
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      BASE: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - name: Preparar la rama mensual
+        run: |
+          set -euo pipefail
+          BRANCH="metricas/$(date -u +%Y-%m)"
+          echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+            git switch --track "origin/$BRANCH"
+            git merge --no-edit "origin/$BASE"
+          else
+            git switch -c "$BRANCH"
+          fi
+
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - name: Recalcular métricas y puntuación
+        env:
+          GH_TOKEN: ${{ secrets.METRICAS_TOKEN || secrets.GITHUB_TOKEN }}
+          REFRESCAR: ${{ github.event_name == 'schedule' || inputs.refrescar }}
+        run: |
+          if [ "$REFRESCAR" = true ]; then
+            uv run --frozen repo-intelligence score --refrescar
+          else
+            uv run --frozen repo-intelligence score
+          fi
+
+      - name: Regenerar publicaciones y verificar todas las fichas
+        run: |
+          uv run --frozen repo-intelligence guide build
+          uv run --frozen repo-intelligence menu export
+          uv run --frozen repo-intelligence web build
+          uv run --frozen pytest -q
+          uv run --frozen playwright install --with-deps chromium
+          uv run --frozen python scripts/verificar_fichas.py
+
+      - name: Proponer la actualización
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git add -u
+          git add -- data/metricas/cache/ docs/llm/ human/ menu_portable/
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar métricas de calidad del $(date -u +%F)"
+          fi
+          if git diff --quiet "origin/$BASE" HEAD; then
+            echo "El catálogo ya está actualizado."
+            exit 0
+          fi
+          git push origin "$BRANCH"
+          if [ -z "$(gh pr list --base "$BASE" --head "$BRANCH" --state open --json number --jq '.[0].number')" ]; then
+            gh pr create --base "$BASE" --head "$BRANCH" \
+              --title "Métricas mensuales de calidad $(date -u +%Y-%m)" \
+              --body "Actualización de las métricas y de la puntuación del catálogo. Las pruebas del catálogo y las fichas del explorador se verificaron en este flujo."
+          fi

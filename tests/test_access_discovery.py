@@ -122,3 +122,18 @@ console.log(JSON.stringify({voice:voice.length,presentation:presentation.length,
     from repo_intelligence.web.catalog import build_catalog
     result=subprocess.run(["node","-e",script,str(ROOT/"src/repo_intelligence/web/assets/search.js")],input=json.dumps(build_catalog(ROOT)),capture_output=True,text=True,encoding="utf-8")
     assert result.returncode==0,result.stderr
+
+
+def test_guided_starters_and_minimum_recipe_steps_are_in_the_explorer():
+    from repo_intelligence.core.taxonomy import goal_memberships
+    from repo_intelligence.web.catalog import build_catalog
+
+    compact = {"repos": [{"id": "a"}, {"id": "b"}, {"id": "c"}],
+               "recipes": [{"id": "example", "repos": ["b", "c"], "plan": {"minimum": ["b"]}}],
+               "discovery": {"goals": [{"id": "work", "guided": ["a"], "recipe_ids": ["example"]}]}}
+    assert goal_memberships(compact) == {"a": ["work"], "b": ["work"], "c": []}
+    published = {r["id"]: r for r in build_catalog(Path(__file__).resolve().parents[1])["repos"]}
+    assert {"automatizar", "whatsapp"} <= set(published["dify"]["goals"])
+    for card in published.values():
+        assert set(card.get("combines_with", [])) <= published.keys()
+        assert {item["id"] for item in card.get("combina_con", [])} <= published.keys()

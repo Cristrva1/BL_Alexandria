@@ -18,46 +18,24 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `lazygit` | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase… | 1 Básico | 71 | MIT (OSI permisiva) | sin grupo |
-| `cli` | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
-| `openai-python` | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `fzf` | Buscador difuso de línea de comandos y kit de interfaces de terminal para… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
-| `ripgrep` | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta… | 1 Básico | 53 | Unlicense (OSI permisiva) | sin grupo |
-| `apscheduler` | Programa funciones Python para un horario, un intervalo o una fecha concreta… | 2 Intermedio | — | MIT | sin grupo |
-| `hishel` | Añade caché a peticiones HTTP de Python con políticas de expiración y… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
-| `npkill` | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo… | 1 Básico | — | MIT | sin grupo |
-| `pybreaker` | Protege una integración Python con un interruptor que pausa llamadas tras… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
-| `requests-cache` | Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas… | 2 Intermedio | — | BSD-2-Clause | sin grupo |
+| `openai-python` | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `cli` | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la… | 1 Básico | 74 | MIT (OSI permisiva) | sin grupo |
+| `lazygit` | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
+| `fzf` | Buscador difuso de línea de comandos y kit de interfaces de terminal para… | 1 Básico | 68 | MIT (OSI permisiva) | sin grupo |
+| `requests-cache` | Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas… | 2 Intermedio | 59 | BSD-2-Clause (OSI permisiva) | sin grupo |
+| `apscheduler` | Programa funciones Python para un horario, un intervalo o una fecha concreta… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `npkill` | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `hishel` | Añade caché a peticiones HTTP de Python con políticas de expiración y… | 2 Intermedio | 53 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `ripgrep` | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta… | 1 Básico | 52 | Unlicense (OSI permisiva) | sin grupo |
+| `pybreaker` | Protege una integración Python con un interruptor que pausa llamadas tras… | 2 Intermedio | 43 | BSD-3-Clause (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
 
-### lazygit (`lazygit`)
-
-- **Repo:** https://github.com/jesseduffield/lazygit · MIT · nivel 1 · 71/100
-- **Qué es:** Interfaz de terminal para git de código abierto (MIT) creada por Jesse Duffield y mantenida con la comunidad y patrocinadores. Muy popular y activa.
-- **Cuándo elegirlo:** Casos: revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos; hacer rebases interactivos y deshacer operaciones sin recordar comandos.
-- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install lazygit` — fuente: https://github.com/jesseduffield/lazygit/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala lazygit y ábrelo en un repositorio de prueba con cambios sin confirmar. Éxito: Puedes preparar una sola línea y crear el commit desde la interfaz.
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `aider` [20/terminal]
-- **Riesgos y avisos:** Lazygit ejecuta comandos git reales: las operaciones destructivas (reset, force push) siguen siendo destructivas.
-
-### GitHub CLI (`cli`)
-
-- **Repo:** https://github.com/cli/cli · MIT · nivel 1 · 70/100
-- **Qué es:** GitHub CLI (`gh`), la herramienta oficial de GitHub para la terminal. Licencia MIT. Es madura y muy activa (~47k estrellas, v2.104.0).
-- **Cuándo elegirlo:** Casos: Consultar issues desde terminal; Revisar ejecuciones de Actions.
-- **Requisitos:** nivel 1: preparación sencilla; Binario gh oficial; cuenta GitHub para operaciones autenticadas; hardware prerequisites; API de IA: no; Binario gh oficial; cuenta GitHub para operaciones autenticadas.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/cli/cli.git gh-cli` — fuente: https://github.com/cli/cli/blob/trunk/docs/install_source.md
-- **Primera prueba propuesta (no ejecutada):** Autentica tu cuenta y consulta el estado de una pull request de un repositorio de prueba Éxito: Ves el estado que coincide con la interfaz de GitHub
-- **Combina con:** `claude-code` [20/terminal], `github-mcp-server` [5/servidores], `activepieces` [1/motores], `antigravity-awesome-skills` [2/catalogos], `awesome-copilot` [2/catalogos]
-- **Riesgos y avisos:** Sin alternativas declaradas. Limita los scopes del token que uses con agentes. Instala gh antes de instalar su skill opcional; los comandos que escriben o publican afectan la cuenta autenticada.
-
 ### openai-python (`openai-python`)
 
-- **Repo:** https://github.com/openai/openai-python · Apache-2.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/openai/openai-python · Apache-2.0 · nivel 2 · 75/100
 - **Qué es:** SDK oficial de OpenAI para Python. Licencia Apache-2.0. Es madura y muy activa (~32k estrellas, v3.51.0) y se genera a partir de la especificación OpenAPI de OpenAI.
 - **Cuándo elegirlo:** Casos: Integrar respuestas de IA en una app Python; Procesar audio o imágenes desde código.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él, requiere clave de API; Python 3.10+; entorno virtual; clave de proyecto API; hardware prerequisites; API de IA: sí; Python 3.10+; entorno virtual; clave de proyecto API.
@@ -71,9 +49,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `litellm` [23/serving], `vllm` [23/serving], `langchain` [3/py], `openai-agents-python` [3/py], `openai-cookbook` [19/guias]
 - **Riesgos y avisos:** Sin alternativas declaradas. Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales.
 
+### GitHub CLI (`cli`)
+
+- **Repo:** https://github.com/cli/cli · MIT · nivel 1 · 74/100
+- **Qué es:** GitHub CLI (`gh`), la herramienta oficial de GitHub para la terminal. Licencia MIT. Es madura y muy activa (~47k estrellas, v2.104.0).
+- **Cuándo elegirlo:** Casos: Consultar issues desde terminal; Revisar ejecuciones de Actions.
+- **Requisitos:** nivel 1: preparación sencilla; Binario gh oficial; cuenta GitHub para operaciones autenticadas; hardware prerequisites; API de IA: no; Binario gh oficial; cuenta GitHub para operaciones autenticadas.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/cli/cli.git gh-cli` — fuente: https://github.com/cli/cli/blob/trunk/docs/install_source.md
+- **Primera prueba propuesta (no ejecutada):** Autentica tu cuenta y consulta el estado de una pull request de un repositorio de prueba Éxito: Ves el estado que coincide con la interfaz de GitHub
+- **Combina con:** `claude-code` [20/terminal], `github-mcp-server` [5/servidores], `activepieces` [1/motores], `antigravity-awesome-skills` [2/catalogos], `awesome-copilot` [2/catalogos]
+- **Riesgos y avisos:** Sin alternativas declaradas. Limita los scopes del token que uses con agentes. Instala gh antes de instalar su skill opcional; los comandos que escriben o publican afectan la cuenta autenticada.
+
+### lazygit (`lazygit`)
+
+- **Repo:** https://github.com/jesseduffield/lazygit · MIT · nivel 1 · 72/100
+- **Qué es:** Interfaz de terminal para git de código abierto (MIT) creada por Jesse Duffield y mantenida con la comunidad y patrocinadores. Muy popular y activa.
+- **Cuándo elegirlo:** Casos: revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos; hacer rebases interactivos y deshacer operaciones sin recordar comandos.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install lazygit` — fuente: https://github.com/jesseduffield/lazygit/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala lazygit y ábrelo en un repositorio de prueba con cambios sin confirmar. Éxito: Puedes preparar una sola línea y crear el commit desde la interfaz.
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `aider` [20/terminal]
+- **Riesgos y avisos:** Lazygit ejecuta comandos git reales: las operaciones destructivas (reset, force push) siguen siendo destructivas.
+
 ### fzf (`fzf`)
 
-- **Repo:** https://github.com/junegunn/fzf · MIT · nivel 1 · 61/100
+- **Repo:** https://github.com/junegunn/fzf · MIT · nivel 1 · 68/100
 - **Qué es:** Buscador difuso de propósito general de código abierto (MIT) creado y mantenido por Junegunn Choi desde 2013. Muy maduro y extendido.
 - **Cuándo elegirlo:** Casos: buscar archivos y comandos del historial al instante en la terminal; construir menús interactivos en scripts de shell.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Gemfile, go.mod; API de IA: no.
@@ -82,9 +82,49 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ripgrep`, `claude-code` [20/terminal], `codex` [20/terminal]
 - **Riesgos y avisos:** Es una herramienta de uso diario: no requiere servidor ni configuración para empezar.
 
+### Requests Cache (`requests-cache`)
+
+- **Repo:** https://github.com/requests-cache/requests-cache · BSD-2-Clause · nivel 2 · 59/100
+- **Qué es:** Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.
+- **Cuándo elegirlo:** Casos: Evitar repetir la descarga de una lista pública durante pruebas.; Medir cuántas veces una tarea de ejemplo vuelve a consultar el servidor.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, docker-compose.yml, pyproject.toml; API de IA: no; Python y una aplicación que use requests; SQLite disponible para un ejemplo local..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://requests-cache.readthedocs.io/
+- **Primera prueba propuesta (no ejecutada):** Configura una sesión de caché en un ejemplo con dos lecturas de la misma página de prueba. Éxito: La primera lectura consulta el servidor y la siguiente puede reutilizar la respuesta guardada.
+- **Riesgos y avisos:** Expira la caché según los datos y evita almacenar respuestas con credenciales o información privada.
+
+### APScheduler (`apscheduler`)
+
+- **Repo:** https://github.com/agronholm/apscheduler · MIT · nivel 2 · 58/100
+- **Qué es:** Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
+- **Cuándo elegirlo:** Casos: Actualizar un dato local cada minuto.; Programar un recordatorio interno una vez al día.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, docker-compose.yml, pyproject.toml; API de IA: no; Python y una versión estable 3.x conforme a su guía..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://apscheduler.readthedocs.io/en/3.x/userguide.html
+- **Primera prueba propuesta (no ejecutada):** Sigue la guía 3.x y programa una función de prueba que imprima la hora. Éxito: La función se ejecuta en el intervalo elegido y deja una marca visible.
+- **Riesgos y avisos:** Haz la primera prueba solo con el almacén en memoria. GHSA-2r6w-vc63-g3hx afecta a los almacenes persistentes de 3.x y no indica parche; las preversiones….
+
+### npkill (`npkill`)
+
+- **Repo:** https://github.com/voidcosmos/npkill · MIT · nivel 1 · 58/100
+- **Qué es:** Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.
+- **Cuándo elegirlo:** Casos: Medir el tamaño de node_modules en un proyecto de ejemplo.; Revisar sin borrar los residuos de un directorio de pruebas.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no; Node.js/npm para la distribución oficial y una carpeta de prueba sin datos importantes..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://npkill.js.org
+- **Primera prueba propuesta (no ejecutada):** Usa el modo documentado de simulación dentro de la carpeta de prueba, sin confirmar eliminaciones. Éxito: Ves una lista de candidatos y los archivos del ejemplo siguen presentes.
+- **Riesgos y avisos:** Una eliminación real puede ser irreversible. Verifica la ruta y el modo antes de confirmar; no barrer todo el disco para la primera prueba.
+
+### Hishel (`hishel`)
+
+- **Repo:** https://github.com/karpetrosyan/hishel · BSD-3-Clause · nivel 2 · 53/100
+- **Qué es:** Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.
+- **Cuándo elegirlo:** Casos: Evitar pedir varias veces un catálogo público de prueba.; Probar una política de expiración con respuestas de un servidor local.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, package.json, pyproject.toml; API de IA: no; Python y el cliente HTTP soportado por el adaptador elegido..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://hishel.com
+- **Primera prueba propuesta (no ejecutada):** Crea dos consultas iguales al ejemplo de prueba usando el adaptador de la guía. Éxito: La segunda consulta se sirve de la caché cuando las reglas lo permiten.
+- **Riesgos y avisos:** No compartas una caché que contenga respuestas privadas entre usuarios. El tráfico remoto conserva sus propias cuotas.
+
 ### ripgrep (`ripgrep`)
 
-- **Repo:** https://github.com/BurntSushi/ripgrep · Unlicense · nivel 1 · 53/100
+- **Repo:** https://github.com/BurntSushi/ripgrep · Unlicense · nivel 1 · 52/100
 - **Qué es:** Herramienta de búsqueda de código abierto con doble licencia MIT o Unlicense, creada por Andrew Gallant (BurntSushi). Muy madura; la usan editores como VS Code y muchos agentes de código.
 - **Cuándo elegirlo:** Casos: localizar todas las apariciones de una función en un repositorio grande; buscar texto en miles de archivos de logs o notas en segundos.
 - **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml; API de IA: no.
@@ -93,55 +133,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `fzf`, `claude-code` [20/terminal], `opencode` [20/terminal]
 - **Riesgos y avisos:** Es la herramienta de búsqueda que asumen muchos agentes de terminal; conviene tenerla instalada.
 
-### APScheduler (`apscheduler`)
-
-- **Repo:** https://github.com/agronholm/apscheduler · MIT · nivel 2 · —/100
-- **Qué es:** Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
-- **Cuándo elegirlo:** Casos: Actualizar un dato local cada minuto.; Programar un recordatorio interno una vez al día.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, docker-compose.yml, pyproject.toml; API de IA: no; Python y una versión estable 3.x conforme a su guía..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://apscheduler.readthedocs.io/en/3.x/userguide.html
-- **Primera prueba propuesta (no ejecutada):** Sigue la guía 3.x y programa una función de prueba que imprima la hora. Éxito: La función se ejecuta en el intervalo elegido y deja una marca visible.
-- **Riesgos y avisos:** Haz la primera prueba solo con el almacén en memoria. GHSA-2r6w-vc63-g3hx afecta a los almacenes persistentes de 3.x y no indica parche; las preversiones….
-
-### Hishel (`hishel`)
-
-- **Repo:** https://github.com/karpetrosyan/hishel · BSD-3-Clause · nivel 2 · —/100
-- **Qué es:** Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizables.
-- **Cuándo elegirlo:** Casos: Evitar pedir varias veces un catálogo público de prueba.; Probar una política de expiración con respuestas de un servidor local.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, package.json, pyproject.toml; API de IA: no; Python y el cliente HTTP soportado por el adaptador elegido..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://hishel.com
-- **Primera prueba propuesta (no ejecutada):** Crea dos consultas iguales al ejemplo de prueba usando el adaptador de la guía. Éxito: La segunda consulta se sirve de la caché cuando las reglas lo permiten.
-- **Riesgos y avisos:** No compartas una caché que contenga respuestas privadas entre usuarios. El tráfico remoto conserva sus propias cuotas.
-
-### npkill (`npkill`)
-
-- **Repo:** https://github.com/voidcosmos/npkill · MIT · nivel 1 · —/100
-- **Qué es:** Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.
-- **Cuándo elegirlo:** Casos: Medir el tamaño de node_modules en un proyecto de ejemplo.; Revisar sin borrar los residuos de un directorio de pruebas.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no; Node.js/npm para la distribución oficial y una carpeta de prueba sin datos importantes..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://npkill.js.org
-- **Primera prueba propuesta (no ejecutada):** Usa el modo documentado de simulación dentro de la carpeta de prueba, sin confirmar eliminaciones. Éxito: Ves una lista de candidatos y los archivos del ejemplo siguen presentes.
-- **Riesgos y avisos:** Una eliminación real puede ser irreversible. Verifica la ruta y el modo antes de confirmar; no barrer todo el disco para la primera prueba.
-
 ### PyBreaker (`pybreaker`)
 
-- **Repo:** https://github.com/danielfm/pybreaker · BSD-3-Clause · nivel 2 · —/100
+- **Repo:** https://github.com/danielfm/pybreaker · BSD-3-Clause · nivel 2 · 43/100
 - **Qué es:** Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.
 - **Cuándo elegirlo:** Casos: Evitar que una integración lenta bloquee todos los trabajos.; Probar cómo se recupera un cliente tras una caída ficticia.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno Python con una función ficticia que pueda fallar..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/danielfm/pybreaker/blob/2b0b965fcfc7705ca9a776c614ea6cb3ec3fe783/README.rst
 - **Primera prueba propuesta (no ejecutada):** Configura un ejemplo con una función local que falle repetidamente. Éxito: El interruptor abre y deja de invocar la función hasta el periodo de recuperación.
 - **Riesgos y avisos:** Redis es opcional para guardar el estado compartido; no sirve por sí solo para reintentos ni para definir tiempos de espera.
-
-### Requests Cache (`requests-cache`)
-
-- **Repo:** https://github.com/requests-cache/requests-cache · BSD-2-Clause · nivel 2 · —/100
-- **Qué es:** Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un servicio HTTP.
-- **Cuándo elegirlo:** Casos: Evitar repetir la descarga de una lista pública durante pruebas.; Medir cuántas veces una tarea de ejemplo vuelve a consultar el servidor.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, docker-compose.yml, pyproject.toml; API de IA: no; Python y una aplicación que use requests; SQLite disponible para un ejemplo local..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://requests-cache.readthedocs.io/
-- **Primera prueba propuesta (no ejecutada):** Configura una sesión de caché en un ejemplo con dos lecturas de la misma página de prueba. Éxito: La primera lectura consulta el servidor y la siguiente puede reutilizar la respuesta guardada.
-- **Riesgos y avisos:** Expira la caché según los datos y evita almacenar respuestas con credenciales o información privada.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

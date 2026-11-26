@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 43/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 40/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **Skills para quitar el tono de IA a los textos**: Stop Slop ocupa la posi
 |---:|---|---:|---|
 | 1 | [Humanizer](humanizer.md) ⭐ recomendado | 72 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
 | 2 | [no-ai-slop](no-ai-slop.md) | 55 | Si buscas esto: skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. |
-| 3 | **Stop Slop** (esta ficha) | 43 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
+| 3 | **Stop Slop** (esta ficha) | 40 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
 ## Acceso, coste y equipo
 

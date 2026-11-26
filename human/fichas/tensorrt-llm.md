@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; requiere programar con él
 
-**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** Apache-2.0. Componentes de terceros con sus licencias (BSD-3, MIT…). Fuente: [LICENSE](https://github.com/NVIDIA/TensorRT-LLM/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

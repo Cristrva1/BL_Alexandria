@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — instalación simple, pero se usa con opciones de línea de comandos · corregido a mano
 
-**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later). Fuente: [LICENSE](https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md). GitHub la marca como NOASSERTION.
 

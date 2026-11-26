@@ -21,28 +21,28 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `hyperframes` | motores | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4… | 1 Básico | 73 | Apache-2.0 (OSI permisiva) | recomendado |
 | `manim-community` | motores | Motor de animación de Python para producir videos explicativos de matemáticas… | 2 Intermedio | 71 | MIT (OSI permisiva) | recomendado |
 | `remotion` | motores | Framework de React para crear videos por código y renderizar composiciones con… | 2 Intermedio | 68 | Remotion License (no OSI) (source-available) | alternativa |
-| `mediabunny` | motores | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video… | 2 Intermedio | 64 | MPL-2.0 (OSI copyleft) | sin grupo |
-| `manim` | motores | Motor de animación en Python para videos matemáticos explicativos, creado por… | 2 Intermedio | 57 | MIT (OSI permisiva) | alternativa |
+| `mediabunny` | motores | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video… | 2 Intermedio | 65 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `motion-canvas` | motores | Biblioteca TypeScript para crear animaciones y vídeos explicativos con código… | 2 Intermedio | 56 | MIT (OSI permisiva) | alternativa |
+| `manim` | motores | Motor de animación en Python para videos matemáticos explicativos, creado por… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `moviepy` | motores | Librería Python para editar video por código: cortes, concatenaciones, títulos… | 2 Intermedio | 54 | MIT (OSI permisiva) | alternativa |
 | `revideo` | motores | Motor TypeScript para crear vídeos con código y renderizarlos sin interfaz… | 2 Intermedio | 51 | MIT (OSI permisiva) | alternativa |
 | `openmontage` | skills-video | Pipelines y herramientas para producir video con un agente,recursos… | 2 Intermedio | 72 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `brag` | skills-video | Skills para que un agente convierta un proyecto o sitio en un video breve de… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
-| `openfilm` | skills-video | Herramientas y skill para que un agente cree proyectos de video y permita… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
+| `brag` | skills-video | Skills para que un agente convierta un proyecto o sitio en un video breve de… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
+| `ffmpeg-skill` | skills-video | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `video-shotcraft` | skills-video | Skill para crear videos de producto editables con Remotion, composición de… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `openfilm` | skills-video | Herramientas y skill para que un agente cree proyectos de video y permita… | 2 Intermedio | 66 | MIT (OSI permisiva) | sin grupo |
 | `lemo-opuscar` | skills-video | Biblioteca de estilos para video por código orientada a Claude,con licencias… | 2 Intermedio | 65 | MIT (código) + CC-BY-NC-4.0 (docs) + CC-BY-4.0 (demos) (source-available) | sin grupo |
-| `rea-video` | skills-video | Herramienta y skills para descomponer un video plano por plano y documentar… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `rea-video` | skills-video | Herramienta y skills para descomponer un video plano por plano y documentar… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `video-use` | skills-video | Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `papermorph` | skills-video | Skill que convierte libros en experiencias web animadas y narradas, con… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `remotion-superpowers` | skills-video | Orquestación de video con Remotion y servicios audiovisuales externos; requiere… | 2 Intermedio | 48 | MIT (OSI permisiva) | alternativa |
+| `papermorph` | skills-video | Skill que convierte libros en experiencias web animadas y narradas, con… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
 | `srt-whiteboard-animation` | skills-video | Skill para crear animaciones de pizarra con trazos y contenido organizados a… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `claude-animated-shorts` | skills-video | Skill de Claude para crear cortos animados por código combinando personajes y… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
-| `huashu-motion` | skills-video | Skill para crear videos de presentación de productos con un agente de código… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
-| `skills-remotion` | skills-video | Skills oficiales de Remotion para que tu agente de código cree videos con React. | 1 Básico | 45 | — (sin licencia detectada) | sin grupo |
+| `remotion-superpowers` | skills-video | Orquestación de video con Remotion y servicios audiovisuales externos; requiere… | 2 Intermedio | 47 | MIT (OSI permisiva) | alternativa |
+| `huashu-motion` | skills-video | Skill para crear videos de presentación de productos con un agente de código… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
+| `skills-remotion` | skills-video | Skills oficiales de Remotion para que tu agente de código cree videos con React. | 1 Básico | 42 | — (sin licencia detectada) | sin grupo |
 | `motionmaxxing` | skills-video | Skill para mejorar composición, ritmo y movimiento de videos creados con… | 2 Intermedio | 38 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `ffmpeg-skill` | skills-video | Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar… | 2 Intermedio | — | MIT | sin grupo |
+| `hyperframes-launches` | aplicaciones | Publica composiciones con código usadas en videos de lanzamiento de HeyGen para… | 1 Básico | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `videofy-minimal` | aplicaciones | Aplicación local que transforma artículos de noticias en videos breves mediante… | 2 Intermedio | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `hyperframes-launches` | aplicaciones | Publica composiciones con código usadas en videos de lanzamiento de HeyGen para… | 1 Básico | — | Apache-2.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -86,7 +86,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### mediabunny (`mediabunny`)
 
-- **Repo:** https://github.com/Vanilagy/mediabunny · MPL-2.0 · nivel 2 · 64/100
+- **Repo:** https://github.com/Vanilagy/mediabunny · MPL-2.0 · nivel 2 · 65/100
 - **Qué es:** Mediabunny, librería JavaScript para leer, escribir y convertir medios (MP4, WebM, MP3, HLS) directamente en el navegador, de @Vanilagy. Licencia MPL-2.0. Es activa (~7.5k estrellas, v1.66.0) y la patrocina, entre otros, Remotion.
 - **Cuándo elegirlo:** Casos: Procesar video dentro de una aplicación web; Construir una herramienta de conversión en navegador.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; JavaScript ES2021+; navegador moderno; TypeScript >=5.7 para tipos; medio de prueba; hardware prerequisites; API de IA: no; JavaScript ES2021+; navegador moderno; TypeScript >=5.7 para tipos; medio de prueba.
@@ -94,26 +94,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Lee duración y pistas de un archivo y convierte una copia a un formato admitido Éxito: Puedes contrastar metadatos y reproducir la salida
 - **Combina con:** `remotion`, `ffmpeg` [12/edicion], `openfilm` [30/skills-video], `pixijs` [26/animacion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Es una biblioteca de medios, no una app de edición completa; comprueba soporte de codecs y destino en los navegadores de tus usuarios.
-
-### Manim (ManimGL) (`manim`)
-
-- **Repo:** https://github.com/3b1b/manim · MIT · nivel 2 · 57/100 · alternativa en «Animaciones matemáticas (Manim)»
-- **Qué es:** ManimGL, motor de animación programática para vídeos matemáticos explicativos, creado por el autor de 3Blue1Brown (@3b1b). Licencia MIT. Tiene ~97k estrellas (v1.7.2); es la versión personal del autor, distinta de la edición comunitaria.
-- **Cuándo elegirlo:** Casos: Explicar una transformación matemática; Preparar una animación geométrica.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña; hardware prerequisites; API de IA: no; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/3b1b/manim/blob/master/README.md
-
-  ```sh
-  # Install manimgl
-  pip install manimgl
-  
-  # Try it out
-  manimgl
-  ```
-- **Primera prueba propuesta (no ejecutada):** Ejecuta una escena de ejemplo y cambia una forma o texto Éxito: Puedes abrir la animación y localizar su código
-- **Combina con:** `ffmpeg` [12/edicion], `kokoro` [29/tts], `moviepy`
-- **Alternativas:** `manim-community`
-- **Riesgos y avisos:** Alternativas (elige una): manim-community. Para documentación y estabilidad, la comunidad recomienda ManimCE. Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community.
 
 ### Motion Canvas (`motion-canvas`)
 
@@ -126,6 +106,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ffmpeg` [12/edicion], `kokoro` [29/tts], `claude-code` [20/terminal]
 - **Alternativas:** `hyperframes`, `remotion`, `moviepy`, `revideo`
 - **Riesgos y avisos:** Alternativa de Revideo (fork orientado a renderizado programático) y Remotion (React).
+
+### Manim (ManimGL) (`manim`)
+
+- **Repo:** https://github.com/3b1b/manim · MIT · nivel 2 · 54/100 · alternativa en «Animaciones matemáticas (Manim)»
+- **Qué es:** ManimGL, motor de animación programática para vídeos matemáticos explicativos, creado por el autor de 3Blue1Brown (@3b1b). Licencia MIT. Tiene ~97k estrellas (v1.7.2); es la versión personal del autor, distinta de la edición comunitaria.
+- **Cuándo elegirlo:** Casos: Explicar una transformación matemática; Preparar una animación geométrica.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña; hardware prerequisites; API de IA: no; Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/3b1b/manim/blob/master/README.md
+
+  ```sh
+  # Install manimgl
+  pip install manimgl
+
+  # Try it out
+  manimgl
+  ```
+- **Primera prueba propuesta (no ejecutada):** Ejecuta una escena de ejemplo y cambia una forma o texto Éxito: Puedes abrir la animación y localizar su código
+- **Combina con:** `ffmpeg` [12/edicion], `kokoro` [29/tts], `moviepy`
+- **Alternativas:** `manim-community`
+- **Riesgos y avisos:** Alternativas (elige una): manim-community. Para documentación y estabilidad, la comunidad recomienda ManimCE. Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community.
 
 ### MoviePy (`moviepy`)
 
@@ -171,7 +171,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### brag (`brag`)
 
-- **Repo:** https://github.com/latent-spaces/brag · MIT · nivel 2 · 70/100
+- **Repo:** https://github.com/latent-spaces/brag · MIT · nivel 2 · 71/100
 - **Qué es:** /brag, skill que convierte el proyecto que has construido en un vídeo de lanzamiento corto y compartible, con música, movimiento y textos para redes, de latent-spaces. Licencia MIT. Creado en junio de 2026, tiene ~22k estrellas (v0.6.0).
 - **Cuándo elegirlo:** Casos: Presentar una demo de producto; Preparar una pieza de lanzamiento.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente; runtime y FFmpeg según variante; sitio propio de prueba; hardware prerequisites; API de IA: opcional; Agente; runtime y FFmpeg según variante; sitio propio de prueba.
@@ -180,16 +180,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `hyperframes` [30/motores], `claude-code` [20/terminal], `gsap` [26/animacion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Brag-slim y el flujo clásico tienen dependencias distintas; documenta plugins Claude Code y Codex y no garantiza resultados iguales con todos los modelos.
 
-### openfilm (`openfilm`)
+### FFmpeg Skill (`ffmpeg-skill`)
 
-- **Repo:** https://github.com/openfilm/openfilm · MIT · nivel 2 · 68/100
-- **Qué es:** OpenFilm, «agente de vídeo con IA open source»: formato, CLI, Studio y app de escritorio, de openfilm. Licencia MIT (el nombre y el logo son marcas). Creado en octubre de 2026, tiene ~7.6k estrellas (v0.3.2).
-- **Cuándo elegirlo:** Casos: Preparar un video editable; Revisar el resultado de un agente en un editor.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Node 22.2+; FFmpeg; Git para versiones; agente; recursos propios; hardware prerequisites; API de IA: opcional; Node 22.2+; FFmpeg; Git para versiones; agente; recursos propios.
-- **Instalación (documentada en la fuente; no ejecutada):** `npx skills add openfilm/openfilm` — fuente: https://github.com/openfilm/openfilm/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre un ejemplo y modifica un título en Studio antes de exportar un clip corto Éxito: Puedes inspeccionar el proyecto editable y el MP4
-- **Combina con:** `claude-code` [20/terminal], `gsap` [26/animacion], `three.js` [26/animacion], `mediabunny` [30/motores]
-- **Riesgos y avisos:** Sin alternativas declaradas. El video se describe como páginas web y puede editarse; instalar la skill y abrir Studio son pasos distintos y el nombre y logo conservan reglas de marca.
+- **Repo:** https://github.com/kajisho5/ffmpeg-skill · MIT · nivel 2 · 70/100
+- **Qué es:** Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.
+- **Cuándo elegirlo:** Casos: Recortar un anuncio de prueba a quince segundos.; Reencuadrar una toma propia para formato vertical. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, package.json; API de IA: no; FFmpeg 6.1 o posterior con los codecs y filtros de la operación; entorno del agente para la skill..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md
+- **Primera prueba propuesta (no ejecutada):** Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo. Éxito: El archivo resultante tiene la duración esperada y el original sigue intacto.
+- **Combina con:** `ffmpeg` [12/edicion]
+- **Riesgos y avisos:** FFmpeg no necesita una API de modelo. Subtítulos, plugins y ejecución del agente pueden tener requisitos y cobros aparte.
 
 ### video-shotcraft (`video-shotcraft`)
 
@@ -201,6 +201,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Captura una pantalla propia y crea un plano corto verificando legibilidad, tiempo y audio Éxito: Puedes revisar composición editable y exportación
 - **Combina con:** `remotion` [30/motores], `claude-code` [20/terminal], `codex` [20/terminal]
 - **Riesgos y avisos:** Sin alternativas declaradas. Documenta Claude Code y Codex; los servicios de publicación son opcionales y no se deben activar al preparar un borrador.
+
+### openfilm (`openfilm`)
+
+- **Repo:** https://github.com/openfilm/openfilm · MIT · nivel 2 · 66/100
+- **Qué es:** OpenFilm, «agente de vídeo con IA open source»: formato, CLI, Studio y app de escritorio, de openfilm. Licencia MIT (el nombre y el logo son marcas). Creado en octubre de 2026, tiene ~7.6k estrellas (v0.3.2).
+- **Cuándo elegirlo:** Casos: Preparar un video editable; Revisar el resultado de un agente en un editor.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Node 22.2+; FFmpeg; Git para versiones; agente; recursos propios; hardware prerequisites; API de IA: opcional; Node 22.2+; FFmpeg; Git para versiones; agente; recursos propios.
+- **Instalación (documentada en la fuente; no ejecutada):** `npx skills add openfilm/openfilm` — fuente: https://github.com/openfilm/openfilm/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre un ejemplo y modifica un título en Studio antes de exportar un clip corto Éxito: Puedes inspeccionar el proyecto editable y el MP4
+- **Combina con:** `claude-code` [20/terminal], `gsap` [26/animacion], `three.js` [26/animacion], `mediabunny` [30/motores]
+- **Riesgos y avisos:** Sin alternativas declaradas. El video se describe como páginas web y puede editarse; instalar la skill y abrir Studio son pasos distintos y el nombre y logo conservan reglas de marca.
 
 ### lemo-opuscar (`lemo-opuscar`)
 
@@ -220,7 +231,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### rea-video (`rea-video`)
 
-- **Repo:** https://github.com/JuneYaooo/rea-video · Apache-2.0 · nivel 2 · 63/100
+- **Repo:** https://github.com/JuneYaooo/rea-video · Apache-2.0 · nivel 2 · 62/100
 - **Qué es:** rea-video, herramienta y skill para hacer ingeniería inversa de vídeos plano a plano, de @JuneYaooo. Licencia Apache-2.0. Es muy reciente (octubre de 2026, ~9.3k estrellas, v0.1.0).
 - **Cuándo elegirlo:** Casos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python >=3.10; FFmpeg; video autorizado; modelo con visión solo si eliges revisión AI; hardware prerequisites; API de IA: opcional; Python >=3.10; FFmpeg; video autorizado; modelo con visión solo si eliges revisión AI.
@@ -243,7 +254,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Papermorph (`papermorph`)
 
-- **Repo:** https://github.com/DozenTwelve/Papermorph · MIT · nivel 2 · 58/100
+- **Repo:** https://github.com/DozenTwelve/Papermorph · MIT · nivel 2 · 57/100
 - **Qué es:** Papermorph, skill para agentes que convierte libros de texto en lecciones web narradas e interactivas, historias en películas de títeres de papel y libros en documentales o cortos verticales, de @DozenTwelve.
 - **Cuándo elegirlo:** Casos: Preparar una lección animada; Explorar una historia interactiva.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); uv; FFmpeg; navegadores Playwright; libro propio o autorizado; voz local o remota; hardware prerequisites; API de IA: opcional; uv; FFmpeg; navegadores Playwright; libro propio o autorizado; voz local o remota.
@@ -251,23 +262,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Transforma una página breve autorizada en una lección y comprueba texto, narración y controles Éxito: Puedes contrastar el contenido con la página original
 - **Combina con:** `claude-code` [20/terminal], `opencode` [20/terminal], `kokoro` [29/tts]
 - **Riesgos y avisos:** Sin alternativas declaradas. Documenta Claude Code y OpenCode; sus ejemplos de coste son de producciones concretas y los recursos del sitio conservan licencias separadas del código.
-
-### Remotion Superpowers (`remotion-superpowers`)
-
-- **Repo:** https://github.com/DojoCodingLabs/remotion-superpowers · MIT · nivel 2 · 48/100 · alternativa en «Skills y flujos de producción de video»
-- **Qué es:** Remotion Superpowers, plugin que conecta voz en off, música, efectos, material de archivo, imágenes y clips de IA, subtítulos y un ciclo de revisión con Remotion a través del agente, de DojoCodingLabs. Licencia MIT.
-- **Cuándo elegirlo:** Casos: Preparar un video narrado; Combinar clips y subtítulos.
-- **Requisitos:** nivel 2: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP), requiere clave de API; Node 22.18+; Remotion; skills oficiales; claves de medios; uv para MCP opcional; hardware prerequisites; API de IA: sí; Node 22.18+; Remotion; skills oficiales; claves de medios; uv para MCP opcional.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/DojoCodingLabs/remotion-superpowers/blob/main/README.md
-
-  ```bash
-  codex plugin marketplace add DojoCodingLabs/remotion-superpowers
-  codex plugin add remotion-superpowers@remotion-superpowers
-  ```
-- **Primera prueba propuesta (no ejecutada):** Ejecuta setup y prepara un guion corto con estimación de servicios antes de generar Éxito: Puedes identificar claves, proveedores y resultado de cada etapa
-- **Combina con:** `remotion` [30/motores], `skills-remotion`, `claude-code` [20/terminal], `elevenlabs-python` [29/tts]
-- **Alternativas:** `openmontage`, `video-use`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): openmontage, video-use. Depende de servicios de pago. Las captions pueden usar Whisper local pero el conjunto no es enteramente local; hooks y subagentes son extras de Claude Code y no se heredan en todos los hosts.
 
 ### srt-whiteboard-animation (`srt-whiteboard-animation`)
 
@@ -291,9 +285,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `remotion` [30/motores], `three.js` [26/animacion], `claude-code` [20/terminal]
 - **Riesgos y avisos:** Sin alternativas declaradas. Proyecto de un solo autor ligado a un vídeo. Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía.
 
+### Remotion Superpowers (`remotion-superpowers`)
+
+- **Repo:** https://github.com/DojoCodingLabs/remotion-superpowers · MIT · nivel 2 · 47/100 · alternativa en «Skills y flujos de producción de video»
+- **Qué es:** Remotion Superpowers, plugin que conecta voz en off, música, efectos, material de archivo, imágenes y clips de IA, subtítulos y un ciclo de revisión con Remotion a través del agente, de DojoCodingLabs. Licencia MIT.
+- **Cuándo elegirlo:** Casos: Preparar un video narrado; Combinar clips y subtítulos.
+- **Requisitos:** nivel 2: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP), requiere clave de API; Node 22.18+; Remotion; skills oficiales; claves de medios; uv para MCP opcional; hardware prerequisites; API de IA: sí; Node 22.18+; Remotion; skills oficiales; claves de medios; uv para MCP opcional.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/DojoCodingLabs/remotion-superpowers/blob/main/README.md
+
+  ```bash
+  codex plugin marketplace add DojoCodingLabs/remotion-superpowers
+  codex plugin add remotion-superpowers@remotion-superpowers
+  ```
+- **Primera prueba propuesta (no ejecutada):** Ejecuta setup y prepara un guion corto con estimación de servicios antes de generar Éxito: Puedes identificar claves, proveedores y resultado de cada etapa
+- **Combina con:** `remotion` [30/motores], `skills-remotion`, `claude-code` [20/terminal], `elevenlabs-python` [29/tts]
+- **Alternativas:** `openmontage`, `video-use`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): openmontage, video-use. Depende de servicios de pago. Las captions pueden usar Whisper local pero el conjunto no es enteramente local; hooks y subagentes son extras de Claude Code y no se heredan en todos los hosts.
+
 ### huashu-motion (`huashu-motion`)
 
-- **Repo:** https://github.com/alchaincyf/huashu-motion · MIT · nivel 2 · 47/100
+- **Repo:** https://github.com/alchaincyf/huashu-motion · MIT · nivel 2 · 46/100
 - **Qué es:** huashu-motion, skill para generar vídeos de lanzamiento de producto «de calidad comercial» con un agente, de @alchaincyf (花叔). Licencia MIT; incluye GSAP (licencia Standard de GSAP) y fuentes SIL OFL.
 - **Cuándo elegirlo:** Casos: Prototipar una presentación de producto; Explorar estilos de motion graphics.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; dependencias del runtime; brief y recursos propios; hardware prerequisites; API de IA: no; Agente compatible; dependencias del runtime; brief y recursos propios.
@@ -304,7 +315,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Remotion Agent Skills (`skills-remotion`)
 
-- **Repo:** https://github.com/remotion-dev/skills · — · nivel 1 · 45/100
+- **Repo:** https://github.com/remotion-dev/skills · — · nivel 1 · 42/100
 - **Qué es:** Remotion Agent Skills, skills oficiales de Remotion con buenas prácticas para que agentes de código (Claude Code, Codex, Kimi Code, Cursor) trabajen en proyectos Remotion. GitHub no detecta licencia. Tiene ~7.3k estrellas.
 - **Cuándo elegirlo:** Casos: Aprender Remotion con un agente; Preparar una plantilla de video.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; proyecto Remotion; Node; recursos propios; hardware prerequisites; API de IA: opcional; Agente compatible; proyecto Remotion; Node; recursos propios.
@@ -329,16 +340,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `gsap` [26/animacion], `claude-code` [20/terminal], `ffmpeg` [12/edicion]
 - **Riesgos y avisos:** Sin alternativas declaradas. El skill admite hosts que leen SKILL.md pero las funciones dependen de herramientas disponibles; no garantiza una valoración profesional por sus puntuaciones.
 
-### FFmpeg Skill (`ffmpeg-skill`)
+### HyperFrames Launches (`hyperframes-launches`)
 
-- **Repo:** https://github.com/kajisho5/ffmpeg-skill · MIT · nivel 2 · —/100
-- **Qué es:** Da a agentes herramientas locales de FFmpeg para recortar, reencuadrar, normalizar audio y exportar video con pasos trazables.
-- **Cuándo elegirlo:** Casos: Recortar un anuncio de prueba a quince segundos.; Reencuadrar una toma propia para formato vertical. Evítalo si no usas un agente compatible con skills.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python, package.json; API de IA: no; FFmpeg 6.1 o posterior con los codecs y filtros de la operación; entorno del agente para la skill..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/kajisho5/ffmpeg-skill/blob/c559cb5fcbfbb37b8a48165b0c49e6bdfa674883/README.md
-- **Primera prueba propuesta (no ejecutada):** Comprueba los filtros, prepara un clip propio y prueba un recorte con un archivo de salida nuevo. Éxito: El archivo resultante tiene la duración esperada y el original sigue intacto.
-- **Combina con:** `ffmpeg` [12/edicion]
-- **Riesgos y avisos:** FFmpeg no necesita una API de modelo. Subtítulos, plugins y ejecución del agente pueden tener requisitos y cobros aparte.
+- **Repo:** https://github.com/heygen-com/hyperframes-launches · Apache-2.0 · nivel 1 · 55/100
+- **Qué es:** Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.
+- **Cuándo elegirlo:** Casos: Estudiar el ritmo de un lanzamiento de producto.; Tomar de referencia la organización de textos y gráficos de una escena.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML; API de IA: no; Navegador; para previsualizar código, HyperFrames, dependencias del ejemplo y Git LFS para sus archivos grandes..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto. Éxito: Puedes describir qué archivo controla la escena y qué elementos son recursos externos.
+- **Combina con:** `hyperframes` [30/motores]
+- **Riesgos y avisos:** El código propio indicado usa Apache-2.0; marcas, audio, imágenes y otros materiales requieren comprobar derechos aparte.
 
 ### videofy_minimal (`videofy-minimal`)
 
@@ -356,17 +367,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `remotion` [30/motores], `whisper` [29/stt], `ffmpeg` [12/edicion]
 - **Alternativas:** `moneyprinterturbo`
 - **Riesgos y avisos:** Alternativas (elige una): moneyprinterturbo. La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión.
-
-### HyperFrames Launches (`hyperframes-launches`)
-
-- **Repo:** https://github.com/heygen-com/hyperframes-launches · Apache-2.0 · nivel 1 · —/100
-- **Qué es:** Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.
-- **Cuándo elegirlo:** Casos: Estudiar el ritmo de un lanzamiento de producto.; Tomar de referencia la organización de textos y gráficos de una escena.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML; API de IA: no; Navegador; para previsualizar código, HyperFrames, dependencias del ejemplo y Git LFS para sus archivos grandes..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre un proyecto de ejemplo y rastrea el código de una transición o cambio de texto. Éxito: Puedes describir qué archivo controla la escena y qué elementos son recursos externos.
-- **Combina con:** `hyperframes` [30/motores]
-- **Riesgos y avisos:** El código propio indicado usa Apache-2.0; marcas, audio, imágenes y otros materiales requieren comprobar derechos aparte.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

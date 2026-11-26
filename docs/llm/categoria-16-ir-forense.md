@@ -18,7 +18,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `hayabusa` | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `hayabusa` | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 61 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `velociraptor` | EDR/IR open source para recolección forense a escala: consultas VQL sobre… | 4 Experto | 58 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `volatility3` | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para… | 3 Avanzado | 48 | Volatility Software License 1.0 (no OSI) (source-available) | sin grupo |
 | `autopsy` | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para… | 3 Avanzado | 46 | — (sin licencia detectada) | recomendado |
@@ -30,7 +30,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Hayabusa (`hayabusa`)
 
-- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 64/100
+- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 61/100
 - **Qué es:** DFIR timeline/rules (AGPL) de Yamato Security.
 - **Cuándo elegirlo:** Casos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; Rust, Cargo.toml; API de IA: no.

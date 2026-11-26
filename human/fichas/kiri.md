@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
+**Puntuación de calidad** 64/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Un motor con interfaz para contenedores de desarrollo en un equipo personal.

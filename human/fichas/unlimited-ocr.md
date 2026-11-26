@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; requiere programar con él; necesita GPU
 
-**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -42,14 +42,14 @@ Estado en GitHub: activo · último push 2026-11-09 · licencia declarada MIT (c
 
 ## Ver similares
 
-Grupo **OCR de documentos**: Unlimited-OCR ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **OCR de documentos**: Unlimited-OCR ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [PaddleOCR](paddleocr.md) ⭐ recomendado | 72 | Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación. |
-| 2 | **Unlimited-OCR** (esta ficha) | 65 | Si quieres parsear documentos largos de una sola pasada con visión. |
-| 3 | [Tesseract](tesseract.md) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
-| 4 | [olmOCR](olmocr.md) | 53 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
+| 2 | [Tesseract](tesseract.md) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
+| 3 | **Unlimited-OCR** (esta ficha) | 62 | Si quieres parsear documentos largos de una sola pasada con visión. |
+| 4 | [olmOCR](olmocr.md) | 50 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
 
 ## Acceso, coste y equipo
 

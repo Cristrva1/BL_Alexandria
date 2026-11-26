@@ -49,7 +49,7 @@ Grupo **Agentes de investigación autónoma**: gpt-researcher ocupa la posición
 |---:|---|---:|---|
 | 1 | **gpt-researcher** (esta ficha) ⭐ recomendado | 61 | Si buscas esto: agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 | 2 | [STORM](storm.md) | 60 | Si buscas esto: sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
-| 3 | [local-deep-research](local-deep-research.md) | 58 | Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
+| 3 | [local-deep-research](local-deep-research.md) | 56 | Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
 
 ## Acceso, coste y equipo
 

@@ -185,7 +185,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Nuclei (`nuclei`)
 
-- **Repo:** https://github.com/projectdiscovery/nuclei · MIT · nivel 1 · 86/100
+- **Repo:** https://github.com/projectdiscovery/nuclei · MIT · nivel 1 · 85/100
 - **Qué es:** Escáner de vulnerabilidades de código abierto (MIT) de ProjectDiscovery, con ediciones Pro y Enterprise de pago. Muy activo; las plantillas las aporta una comunidad grande.
 - **Cuándo elegirlo:** Casos: revisar tus propios servicios expuestos frente a CVE recientes; añadir pruebas de regresión de seguridad a un pipeline de CI.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
@@ -275,21 +275,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `locust`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. No lances pruebas de carga contra servicios ajenos. El ejemplo del README aumenta usuarios; no lo ejecutes contra un servicio ajeno ni lo trates como una prueba sin impacto.
 
-### ffuf (`ffuf`)
-
-- **Repo:** https://github.com/ffuf/ffuf · MIT · nivel 1 · 69/100 · recomendado en «Fuzzing de rutas y contenido web»
-- **Qué es:** Fuzzer web de código abierto (MIT) creado por Joona Hoikkala (joohoi). Maduro; ritmo de cambios moderado (último push en septiembre de 2026).
-- **Cuándo elegirlo:** Casos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada.
-- **Requisitos:** nivel 1: preparación sencilla; Go, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install ffuf` — fuente: https://github.com/ffuf/ffuf/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `brew install ffuf` o `go install` y lanza un descubrimiento de directorios contra un servidor de laboratorio. Éxito: ffuf lista las rutas que responden con códigos de interés.
-- **Combina con:** `subfinder` [16/reconocimiento], `mitmproxy`, `nuclei`, `sqlmap`, `seclists` [16/referencias]
-- **Alternativas:** `dirsearch`, `gobuster`, `feroxbuster`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Ajusta la tasa de peticiones para no saturar el servidor objetivo.
-
 ### pwntools (`pwntools`)
 
-- **Repo:** https://github.com/Gallopsled/pwntools · MIT (partes GPL-2.0 y BSD) · nivel 2 · 67/100
+- **Repo:** https://github.com/Gallopsled/pwntools · MIT (partes GPL-2.0 y BSD) · nivel 2 · 68/100
 - **Qué es:** Framework CTF/exploit-dev (MIT mayoritario).
 - **Cuándo elegirlo:** Casos: escribir un exploit de un challenge CTF; automatizar I/O con un servicio de lab.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml, setup.py; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -308,6 +296,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** `docker pull aflplusplus/aflplusplus` y monta el target según la guía. Éxito: Campañas de fuzz generan crashes.
 - **Combina con:** `semgrep` [16/defensa], `pwntools`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
+
+### ffuf (`ffuf`)
+
+- **Repo:** https://github.com/ffuf/ffuf · MIT · nivel 1 · 66/100 · recomendado en «Fuzzing de rutas y contenido web»
+- **Qué es:** Fuzzer web de código abierto (MIT) creado por Joona Hoikkala (joohoi). Maduro; ritmo de cambios moderado (último push en septiembre de 2026).
+- **Cuándo elegirlo:** Casos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada.
+- **Requisitos:** nivel 1: preparación sencilla; Go, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install ffuf` — fuente: https://github.com/ffuf/ffuf/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `brew install ffuf` o `go install` y lanza un descubrimiento de directorios contra un servidor de laboratorio. Éxito: ffuf lista las rutas que responden con códigos de interés.
+- **Combina con:** `subfinder` [16/reconocimiento], `mitmproxy`, `nuclei`, `sqlmap`, `seclists` [16/referencias]
+- **Alternativas:** `dirsearch`, `feroxbuster`, `gobuster`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Ajusta la tasa de peticiones para no saturar el servidor objetivo.
 
 ### bettercap (`bettercap`)
 
@@ -332,18 +332,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `john`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Alternativas (elige una): john.
 
-### WebGoat (`webgoat`)
-
-- **Repo:** https://github.com/WebGoat/WebGoat · GPL-2.0-or-later · nivel 1 · 62/100 · alternativa en «Aplicaciones web vulnerables para practicar»
-- **Qué es:** Proyecto OWASP de formación: una aplicación web con vulnerabilidades intencionadas y lecciones para explotarlas y corregirlas.
-- **Cuándo elegirlo:** Casos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web.
-- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, pom.xml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat` — fuente: https://github.com/WebGoat/WebGoat/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Ejecuta la imagen Docker oficial ligada a 127.0.0.1 como indica el README y abre WebGoat en el navegador. Éxito: Accedes a las lecciones y completas la primera.
-- **Combina con:** `zaproxy`, `caido`, `wstg` [16/referencias]
-- **Alternativas:** `juice-shop`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
 ### OWASP WrongSecrets (`wrongsecrets`)
 
 - **Repo:** https://github.com/OWASP/wrongsecrets · AGPL-3.0 · nivel 1 · 62/100
@@ -355,21 +343,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `gitleaks` [7/calidad], `trufflehog` [7/calidad]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
 
-### dirsearch (`dirsearch`)
-
-- **Repo:** https://github.com/maurosoria/dirsearch · — · nivel 1 · 61/100 · alternativa en «Fuzzing de rutas y contenido web»
-- **Qué es:** Dirbuster Python (GPL-2 según README; API sin SPDX).
-- **Cuándo elegirlo:** Casos: enumerar paneles admin en un lab; fuzzear extensiones de ficheros.
-- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, pyproject.toml, requirements.txt, setup.py; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip3 install git+https://github.com/maurosoria/dirsearch.git` — fuente: https://github.com/maurosoria/dirsearch/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona el repo o `pip3 install git+https://github.com/maurosoria/dirsearch.git` y apunta a un lab. Éxito: Lista paths descubiertos.
-- **Combina con:** `seclists` [16/referencias], `ffuf`
-- **Alternativas:** `ffuf`, `gobuster`, `feroxbuster`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
 ### OWASP Nettacker (`nettacker`)
 
-- **Repo:** https://github.com/OWASP/Nettacker · Apache-2.0 · nivel 1 · 60/100
+- **Repo:** https://github.com/OWASP/Nettacker · Apache-2.0 · nivel 1 · 61/100
 - **Qué es:** Proyecto OWASP de pruebas de penetración automatizadas y recopilación de información.
 - **Cuándo elegirlo:** Casos: inventariar puertos y servicios de una red de laboratorio; detectar cambios en la superficie expuesta entre dos escaneos autorizados.
 - **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, Makefile, docker-compose.yml, pyproject.toml; API de IA: no.
@@ -378,16 +354,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `nmap` [16/reconocimiento], `nuclei`, `defectdojo` [16/defensa]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### Gobuster (`gobuster`)
+### dirsearch (`dirsearch`)
 
-- **Repo:** https://github.com/OJ/gobuster · Apache-2.0 · nivel 1 · 59/100 · alternativa en «Fuzzing de rutas y contenido web»
-- **Qué es:** Dirbuster/fuzzer en Go muy usado en pentest.
-- **Cuándo elegirlo:** Casos: descubrir rutas ocultas en una app de lab; enumerar vhosts de un dominio propio.
-- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `go install github.com/OJ/gobuster/v3@latest` — fuente: https://github.com/OJ/gobuster/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `go install github.com/OJ/gobuster/v3@latest` y lanza modo dir contra un lab. Éxito: Listas rutas encontradas.
-- **Combina con:** `seclists` [16/referencias], `nuclei`
-- **Alternativas:** `ffuf`, `dirsearch`, `feroxbuster`
+- **Repo:** https://github.com/maurosoria/dirsearch · — · nivel 1 · 58/100 · alternativa en «Fuzzing de rutas y contenido web»
+- **Qué es:** Dirbuster Python (GPL-2 según README; API sin SPDX).
+- **Cuándo elegirlo:** Casos: enumerar paneles admin en un lab; fuzzear extensiones de ficheros.
+- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, pyproject.toml, requirements.txt, setup.py; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip3 install git+https://github.com/maurosoria/dirsearch.git` — fuente: https://github.com/maurosoria/dirsearch/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona el repo o `pip3 install git+https://github.com/maurosoria/dirsearch.git` y apunta a un lab. Éxito: Lista paths descubiertos.
+- **Combina con:** `seclists` [16/referencias], `ffuf`
+- **Alternativas:** `ffuf`, `feroxbuster`, `gobuster`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### feroxbuster (`feroxbuster`)
@@ -413,31 +389,33 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `defectdojo` [16/defensa], `nuclei`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### syzkaller (`syzkaller`)
+### WebGoat (`webgoat`)
 
-- **Repo:** https://github.com/google/syzkaller · Apache-2.0 · nivel 4 · 57/100
-- **Qué es:** Kernel fuzzer de Google (Apache-2.0).
-- **Cuándo elegirlo:** Casos: fuzzear un driver out-of-tree en lab; reproducir un crash de kernel reportado.
-- **Requisitos:** nivel 4: preparación difícil; Go, Makefile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/google/syzkaller` — fuente: https://github.com/google/syzkaller/blob/master/docs/linux/setup.md
-- **Primera prueba propuesta (no ejecutada):** Sigue docs/setup.md en un entorno con VMs dedicadas. Éxito: Manager e instancias fuzzando.
-- **Combina con:** `aflplusplus`, `radare2` [16/reversing]
+- **Repo:** https://github.com/WebGoat/WebGoat · GPL-2.0-or-later · nivel 1 · 58/100 · alternativa en «Aplicaciones web vulnerables para practicar»
+- **Qué es:** Proyecto OWASP de formación: una aplicación web con vulnerabilidades intencionadas y lecciones para explotarlas y corregirlas.
+- **Cuándo elegirlo:** Casos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web.
+- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, pom.xml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat` — fuente: https://github.com/WebGoat/WebGoat/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Ejecuta la imagen Docker oficial ligada a 127.0.0.1 como indica el README y abre WebGoat en el navegador. Éxito: Accedes a las lecciones y completas la primera.
+- **Combina con:** `zaproxy`, `caido`, `wstg` [16/referencias]
+- **Alternativas:** `juice-shop`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### Gobuster (`gobuster`)
+
+- **Repo:** https://github.com/OJ/gobuster · Apache-2.0 · nivel 1 · 56/100 · alternativa en «Fuzzing de rutas y contenido web»
+- **Qué es:** Dirbuster/fuzzer en Go muy usado en pentest.
+- **Cuándo elegirlo:** Casos: descubrir rutas ocultas en una app de lab; enumerar vhosts de un dominio propio.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `go install github.com/OJ/gobuster/v3@latest` — fuente: https://github.com/OJ/gobuster/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `go install github.com/OJ/gobuster/v3@latest` y lanza modo dir contra un lab. Éxito: Listas rutas encontradas.
+- **Combina con:** `seclists` [16/referencias], `nuclei`
+- **Alternativas:** `ffuf`, `dirsearch`, `feroxbuster`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
-### THC Hydra (`thc-hydra`)
-
-- **Repo:** https://github.com/vanhauser-thc/thc-hydra · AGPL-3.0 · nivel 1 · 56/100
-- **Qué es:** Login cracker multi-protocolo (AGPL).
-- **Cuándo elegirlo:** Casos: probar passwords de un lab SSH; validar lockout de un portal de prueba.
-- **Requisitos:** nivel 1: preparación sencilla; C, Dockerfile, Makefile; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull vanhauser/hydra` — fuente: https://github.com/vanhauser-thc/thc-hydra/blob/master/README
-- **Primera prueba propuesta (no ejecutada):** `docker pull vanhauser/hydra` o compila y lanza un ataque de diccionario contra un servicio de lab. Éxito: Éxitos/fracasos según el diccionario.
-- **Combina con:** `seclists` [16/referencias], `nmap` [16/reconocimiento]
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
 
 ### OWASP OWTF (`owtf`)
 
-- **Repo:** https://github.com/owtf/owtf · BSD-3-Clause · nivel 2 · 55/100
+- **Repo:** https://github.com/owtf/owtf · BSD-3-Clause · nivel 2 · 56/100
 - **Qué es:** Proyecto insignia de OWASP: un framework de pruebas ofensivas web orientado a la WSTG y PTES.
 - **Cuándo elegirlo:** Casos: coordinar varias herramientas en un pentest web autorizado; seguir casos de la WSTG con una sola interfaz.
 - **Requisitos:** nivel 2: preparación media; Python, Makefile, pyproject.toml, setup.py; API de IA: no.
@@ -454,7 +432,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### John the Ripper (jumbo) (`john`)
 
-- **Repo:** https://github.com/openwall/john · GPL-2.0 (con partes bajo otras licencias) · nivel 2 · 54/100 · alternativa en «Cracking de contraseñas»
+- **Repo:** https://github.com/openwall/john · GPL-2.0 (con partes bajo otras licencias) · nivel 2 · 55/100 · alternativa en «Cracking de contraseñas»
 - **Qué es:** Crackeador de contraseñas de Openwall (Solar Designer); esta es la versión jumbo con aportes de la comunidad. Licencia GPL-2.0 con archivos bajo licencias más permisivas (ver doc/LICENSE).
 - **Cuándo elegirlo:** Casos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo.
 - **Requisitos:** nivel 2: preparación media; C; API de IA: no.
@@ -464,9 +442,31 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `hashcat`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Alternativas (elige una): hashcat.
 
+### syzkaller (`syzkaller`)
+
+- **Repo:** https://github.com/google/syzkaller · Apache-2.0 · nivel 4 · 55/100
+- **Qué es:** Kernel fuzzer de Google (Apache-2.0).
+- **Cuándo elegirlo:** Casos: fuzzear un driver out-of-tree en lab; reproducir un crash de kernel reportado.
+- **Requisitos:** nivel 4: preparación difícil; Go, Makefile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/google/syzkaller` — fuente: https://github.com/google/syzkaller/blob/master/docs/linux/setup.md
+- **Primera prueba propuesta (no ejecutada):** Sigue docs/setup.md en un entorno con VMs dedicadas. Éxito: Manager e instancias fuzzando.
+- **Combina con:** `aflplusplus`, `radare2` [16/reversing]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
+### THC Hydra (`thc-hydra`)
+
+- **Repo:** https://github.com/vanhauser-thc/thc-hydra · AGPL-3.0 · nivel 1 · 53/100
+- **Qué es:** Login cracker multi-protocolo (AGPL).
+- **Cuándo elegirlo:** Casos: probar passwords de un lab SSH; validar lockout de un portal de prueba.
+- **Requisitos:** nivel 1: preparación sencilla; C, Dockerfile, Makefile; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull vanhauser/hydra` — fuente: https://github.com/vanhauser-thc/thc-hydra/blob/master/README
+- **Primera prueba propuesta (no ejecutada):** `docker pull vanhauser/hydra` o compila y lanza un ataque de diccionario contra un servicio de lab. Éxito: Éxitos/fracasos según el diccionario.
+- **Combina con:** `seclists` [16/referencias], `nmap` [16/reconocimiento]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
+
 ### WPScan (`wpscan`)
 
-- **Repo:** https://github.com/wpscanteam/wpscan · WPScan Public Source License (no OSI) · nivel 2 · 52/100
+- **Repo:** https://github.com/wpscanteam/wpscan · WPScan Public Source License (no OSI) · nivel 2 · 53/100
 - **Qué es:** Escáner de WordPress (WPScan Public Source License, source-available con cláusula comercial). La base de vulnerabilidades depende de la API de wpscan.com: 25 peticiones/día gratis; Enterprise de pago.
 - **Cuándo elegirlo:** Casos: auditar un WordPress de staging propio; enumerar plugins desactualizados.
 - **Requisitos:** nivel 2: preparación media; Ruby, Dockerfile, Gemfile; API de IA: no.
@@ -488,7 +488,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### OWASP crAPI (`crapi`)
 
-- **Repo:** https://github.com/OWASP/crAPI · Apache-2.0 · nivel 2 · 46/100
+- **Repo:** https://github.com/OWASP/crAPI · Apache-2.0 · nivel 2 · 44/100
 - **Qué es:** Proyecto OWASP de formación: una API vulnerable a propósito.
 - **Cuándo elegirlo:** Casos: practicar ataques de autorización a nivel de objeto en una API; formar a un equipo en pruebas de seguridad de API.
 - **Requisitos:** nivel 2: preparación media; Java; API de IA: no.
@@ -566,17 +566,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### RustScan (`rustscan`)
-
-- **Repo:** https://github.com/bee-san/RustScan · GPL-3.0 · nivel 1 · 63/100
-- **Qué es:** Port scanner Rust que complementa Nmap.
-- **Cuándo elegirlo:** Casos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV.
-- **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml, Makefile; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install rustscan` — fuente: https://github.com/bee-san/RustScan/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `brew install rustscan` y escanea un host de lab. Éxito: Lista puertos y, si configuras, salida Nmap.
-- **Combina con:** `nmap`, `naabu`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
 ### dnsx (`dnsx`)
 
 - **Repo:** https://github.com/projectdiscovery/dnsx · MIT · nivel 1 · 62/100
@@ -597,6 +586,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
 - **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
+### RustScan (`rustscan`)
+
+- **Repo:** https://github.com/bee-san/RustScan · GPL-3.0 · nivel 1 · 60/100
+- **Qué es:** Port scanner Rust que complementa Nmap.
+- **Cuándo elegirlo:** Casos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV.
+- **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml, Makefile; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install rustscan` — fuente: https://github.com/bee-san/RustScan/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `brew install rustscan` y escanea un host de lab. Éxito: Lista puertos y, si configuras, salida Nmap.
+- **Combina con:** `nmap`, `naabu`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### Nmap (`nmap`)

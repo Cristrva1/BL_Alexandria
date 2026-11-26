@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,7 +46,7 @@ Grupo **Redes privadas tipo mesh (WireGuard)**: Headscale ocupa la posición 1 d
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Headscale** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. |
+| 1 | **Headscale** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. |
 | 2 | [NetBird](netbird.md) | 63 | Si buscas esto: red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso granular, autoalojable o en la nube. |
 
 ## Acceso, coste y equipo

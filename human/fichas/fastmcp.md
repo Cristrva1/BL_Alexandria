@@ -53,7 +53,7 @@ Grupo **SDKs de MCP en Python**: FastMCP ocupa la posición 1 de 2 (recomendado)
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **FastMCP** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: la forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
-| 2 | [MCP Python SDK](mcp-python-sdk.md) | 61 | Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
+| 2 | [MCP Python SDK](mcp-python-sdk.md) | 62 | Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
 
 ## Acceso, coste y equipo
 

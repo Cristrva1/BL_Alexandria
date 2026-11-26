@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** tldraw license (no OSI). Source-available; tldraw ofrece licencias comerciales alternativas. Revisa las condiciones de uso en producción. Fuente: [LICENSE](https://github.com/tldraw/tldraw/blob/main/LICENSE.md). GitHub la marca como NOASSERTION.
 
@@ -49,7 +49,7 @@ Grupo **Pizarras y diagramas a mano alzada**: tldraw ocupa la posición 2 de 2 (
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Excalidraw](excalidraw.md) ⭐ recomendado | 70 | Si buscas esto: pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
-| 2 | **tldraw** (esta ficha) | 55 | Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
+| 2 | **tldraw** (esta ficha) | 54 | Si buscas esto: sDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
 
 ## Acceso, coste y equipo
 

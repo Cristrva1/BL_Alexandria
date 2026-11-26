@@ -19,12 +19,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `paddleocr` | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `unlimited-ocr` | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 65 | MIT (OSI permisiva) | alternativa |
 | `ocrmypdf` | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 64 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `tesseract` | Motor de OCR de código abierto que reconoce texto en imágenes y documentos… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `surya` | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `unlimited-ocr` | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 62 | MIT (OSI permisiva) | alternativa |
 | `pdf-craft` | Herramienta para convertir libros escaneados en PDF a documentos editables… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `olmocr` | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 53 | Apache-2.0 (OSI permisiva) | alternativa |
+| `olmocr` | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 50 | Apache-2.0 (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -39,25 +39,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `python -m pip install paddleocr` — fuente: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.md
 - **Primera prueba propuesta (no ejecutada):** Reconoce una página con texto y tabla y compara palabras y coordenadas con la imagen Éxito: Puedes medir errores sobre un fragmento conocido
 - **Combina con:** `pdf-inspector` [13/conversion], `ragflow` [6/rag], `dify` [3/visual], `vllm` [23/serving]
-- **Alternativas:** `unlimited-ocr`, `tesseract`, `olmocr`
+- **Alternativas:** `tesseract`, `unlimited-ocr`, `olmocr`
 - **Riesgos y avisos:** Alternativas (elige una): tesseract, olmocr, unlimited-ocr. Se retiró docling por no estar documentado. Elige OCR clásico, estructura o VLM según la tarea; no todos los pipelines tienen la misma instalación y memoria.
-
-### Unlimited-OCR (`unlimited-ocr`)
-
-- **Repo:** https://github.com/baidu/Unlimited-OCR · MIT · nivel 3 · 65/100 · alternativa en «OCR de documentos»
-- **Qué es:** Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay…
-- **Cuándo elegirlo:** Casos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor.
-- **Requisitos:** nivel 3: preparación pesada, requiere programar con él, necesita GPU; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo; hardware prerequisites; API de IA: no; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/baidu/Unlimited-OCR/blob/main/README.md
-
-  ```shell
-  pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \
-    tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13
-  ```
-- **Primera prueba propuesta (no ejecutada):** Prueba un documento corto antes de procesar uno largo y compara texto y tablas Éxito: Puedes identificar errores y consumo de memoria en tu muestra
-- **Combina con:** `sglang` [23/serving], `vllm` [23/serving], `transformers` [24/entrenamiento]
-- **Alternativas:** `paddleocr`, `tesseract`, `olmocr`
-- **Riesgos y avisos:** Alternativas (elige una): olmocr, paddleocr. Se retiraron litellm, cosmos y comfyui por no tener relación documentada. La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo.
 
 ### OCRmyPDF (`ocrmypdf`)
 
@@ -93,6 +76,23 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `vllm` [23/serving], `llama-cpp` [8/motores], `marker` [13/conversion]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para usos comerciales por encima de los umbrales de la licencia de pesos, contacta con Datalab.
 
+### Unlimited-OCR (`unlimited-ocr`)
+
+- **Repo:** https://github.com/baidu/Unlimited-OCR · MIT · nivel 3 · 62/100 · alternativa en «OCR de documentos»
+- **Qué es:** Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay…
+- **Cuándo elegirlo:** Casos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor.
+- **Requisitos:** nivel 3: preparación pesada, requiere programar con él, necesita GPU; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo; hardware prerequisites; API de IA: no; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/baidu/Unlimited-OCR/blob/main/README.md
+
+  ```shell
+  pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \
+    tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13
+  ```
+- **Primera prueba propuesta (no ejecutada):** Prueba un documento corto antes de procesar uno largo y compara texto y tablas Éxito: Puedes identificar errores y consumo de memoria en tu muestra
+- **Combina con:** `sglang` [23/serving], `vllm` [23/serving], `transformers` [24/entrenamiento]
+- **Alternativas:** `paddleocr`, `tesseract`, `olmocr`
+- **Riesgos y avisos:** Alternativas (elige una): olmocr, paddleocr. Se retiraron litellm, cosmos y comfyui por no tener relación documentada. La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo.
+
 ### pdf-craft (`pdf-craft`)
 
 - **Repo:** https://github.com/oomol-lab/pdf-craft · MIT · nivel 2 · 58/100
@@ -107,14 +107,14 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### olmOCR (`olmocr`)
 
-- **Repo:** https://github.com/allenai/olmocr · Apache-2.0 · nivel 3 · 53/100 · alternativa en «OCR de documentos»
+- **Repo:** https://github.com/allenai/olmocr · Apache-2.0 · nivel 3 · 50/100 · alternativa en «OCR de documentos»
 - **Qué es:** Kit del Allen Institute for AI (Apache 2.0) para convertir PDF y documentos de imagen en texto limpio. Versión v0.4.27; el último push es de marzo de 2026 y el último modelo anunciado en el README, de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF; hardware prerequisites; API de IA: opcional; Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install olmocr` — fuente: https://github.com/allenai/olmocr/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Convierte unas páginas con texto conocido y revisa orden de lectura y símbolos Éxito: Puedes comparar la salida con la página original y detectar omisiones
 - **Combina con:** `vllm` [23/serving], `lightrag` [6/rag], `open-notebook` [8/notebooklm]
-- **Alternativas:** `paddleocr`, `unlimited-ocr`, `tesseract`, `docling`
+- **Alternativas:** `paddleocr`, `tesseract`, `unlimited-ocr`, `docling`
 - **Riesgos y avisos:** Alternativas (elige una): paddleocr, docling, unlimited-ocr. Instalar el paquete cliente no proporciona por sí solo GPU ni créditos remotos; comienza con pocas páginas.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md

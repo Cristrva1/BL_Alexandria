@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** WanGP Community License 2.0 (no OSI). Uso gratuito incluso en empresas y venta de los resultados permitida; condiciones para redistribuir el software. Fuente: [LICENSE](https://github.com/deepbeepmeep/WanGP/blob/main/LICENSE.txt). GitHub la marca como NOASSERTION.
 

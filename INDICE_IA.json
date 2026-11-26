@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 970 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 968 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -22,7 +22,7 @@
    "exec": "local/cloud/hybrid",
    "setup": "easy/medium/heavy",
    "mcp": "expone/consume MCP",
-   "prov": "openai/anthropic/google/local/mcp; []=no usa LLM o no aplica",
+   "prov": "Proveedores declarados. Una lista vacía indica que no se especificaron. Consulta access para saber si se requiere una API y qué coste puede tener.",
    "stars": "estrellas de GitHub en meta.stars_checked",
    "gh": "owner/repo en GitHub",
    "lib": "clon confirmado en la ruta configurada; false cuando la ruta no está disponible",
@@ -171,7 +171,7 @@
     ]
    }
   ],
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "local_inventory": {
    "checked_at": "2026-11-14",
    "status": "library_deleted_by_user",
@@ -2394,9 +2394,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
-   "grupo": "g-automatizacion-por-eventos-auto-hospedada",
-   "complejidad": 2
+   "puntuacion": 60,
+   "complejidad": 2,
+   "grupo": "g-automatizacion-por-eventos-auto-hospedada"
   },
   {
    "id": "kestra",
@@ -2442,9 +2442,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 80,
-   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas",
-   "complejidad": 2
+   "puntuacion": 81,
+   "complejidad": 2,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "activepieces",
@@ -2522,8 +2522,8 @@
    ],
    "source_archived": false,
    "puntuacion": 64,
-   "grupo": "g-automatizacion-por-eventos-auto-hospedada",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-automatizacion-por-eventos-auto-hospedada"
   },
   {
    "id": "windmill",
@@ -2565,9 +2565,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
-   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas",
-   "complejidad": 2
+   "puntuacion": 62,
+   "complejidad": 2,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "trigger-dev",
@@ -2606,8 +2606,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "whatsapp-web-js",
@@ -2646,8 +2646,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "openwa",
@@ -2724,8 +2724,8 @@
    ],
    "source_archived": false,
    "puntuacion": 67,
-   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "fluxer",
@@ -2794,7 +2794,8 @@
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
-    "whatsapp"
+    "whatsapp",
+    "automatizar"
    ],
    "routes": [
     "no_api",
@@ -2802,8 +2803,8 @@
    ],
    "source_archived": false,
    "puntuacion": 54,
-   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "waha",
@@ -2842,8 +2843,8 @@
    ],
    "source_archived": false,
    "puntuacion": 62,
-   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "whatsapp-agentkit",
@@ -2993,8 +2994,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-crm-y-erp-auto-hospedados",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "twenty-main",
@@ -3039,8 +3040,8 @@
    ],
    "source_archived": false,
    "puntuacion": 75,
-   "grupo": "g-crm-y-erp-auto-hospedados",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "erpnext",
@@ -3076,8 +3077,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-crm-y-erp-auto-hospedados",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "chatwoot",
@@ -3107,7 +3108,8 @@
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
-    "whatsapp"
+    "whatsapp",
+    "automatizar"
    ],
    "routes": [
     "no_api",
@@ -3257,8 +3259,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "tooljet",
@@ -3301,8 +3303,8 @@
    ],
    "source_archived": false,
    "puntuacion": 75,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "appsmith",
@@ -3344,8 +3346,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "budibase",
@@ -3385,9 +3387,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 2
+   "puntuacion": 63,
+   "complejidad": 2,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "anthropic-skills",
@@ -3427,7 +3429,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 52,
    "complejidad": 1
   },
   {
@@ -3469,9 +3471,9 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 61,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-   "complejidad": 1
+   "puntuacion": 62,
+   "complejidad": 1,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "awesome-claude-skills",
@@ -3514,9 +3516,9 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 50,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-   "complejidad": 1
+   "puntuacion": 48,
+   "complejidad": 1,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "awesome-claude-code",
@@ -3557,9 +3559,9 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 50,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-   "complejidad": 1
+   "puntuacion": 48,
+   "complejidad": 1,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "antigravity-awesome-skills",
@@ -3604,8 +3606,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "wshobson-agents",
@@ -3647,9 +3649,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 49,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-   "complejidad": 1
+   "puntuacion": 51,
+   "complejidad": 1,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "awesome-copilot",
@@ -3685,7 +3687,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 65,
+   "puntuacion": 68,
    "complejidad": 1
   },
   {
@@ -3726,9 +3728,9 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 53,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-   "complejidad": 1
+   "puntuacion": 54,
+   "complejidad": 1,
+   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
   {
    "id": "agent-skills",
@@ -3766,9 +3768,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 63,
-   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
-   "complejidad": 1
+   "puntuacion": 64,
+   "complejidad": 1,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "skills",
@@ -3805,7 +3807,7 @@
     "codex"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -3839,7 +3841,8 @@
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
-    "skills"
+    "skills",
+    "programar"
    ],
    "routes": [
     "no_api",
@@ -3848,9 +3851,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 62,
-   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
-   "complejidad": 1
+   "puntuacion": 59,
+   "complejidad": 1,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "ecc",
@@ -3893,8 +3896,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "andrej-karpathy-skills",
@@ -3929,7 +3932,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 49,
+   "puntuacion": 46,
    "complejidad": 1
   },
   {
@@ -3967,7 +3970,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 74,
    "complejidad": 1
   },
   {
@@ -4010,8 +4013,8 @@
    ],
    "source_archived": false,
    "puntuacion": 76,
-   "grupo": "g-desarrollo-guiado-por-especificaciones",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-desarrollo-guiado-por-especificaciones"
   },
   {
    "id": "bmad-method",
@@ -4050,9 +4053,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 60,
-   "grupo": "g-desarrollo-guiado-por-especificaciones",
-   "complejidad": 1
+   "puntuacion": 58,
+   "complejidad": 1,
+   "grupo": "g-desarrollo-guiado-por-especificaciones"
   },
   {
    "id": "skillspector",
@@ -4131,7 +4134,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 43,
    "complejidad": 1
   },
   {
@@ -4174,8 +4177,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "stop-slop",
@@ -4214,9 +4217,9 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 43,
-   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
-   "complejidad": 1
+   "puntuacion": 40,
+   "complejidad": 1,
+   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "marketingskills",
@@ -4256,7 +4259,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71,
+   "puntuacion": 72,
    "complejidad": 1
   },
   {
@@ -4298,7 +4301,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 66,
    "complejidad": 1
   },
   {
@@ -4342,8 +4345,8 @@
    ],
    "source_archived": false,
    "puntuacion": 49,
-   "grupo": "g-skills-de-seo-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-skills-de-seo-para-agentes"
   },
   {
    "id": "arcads-claude-code",
@@ -4380,7 +4383,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 39,
+   "puntuacion": 37,
    "complejidad": 2
   },
   {
@@ -4463,8 +4466,8 @@
    ],
    "source_archived": false,
    "puntuacion": 63,
-   "grupo": "g-colecciones-de-prompts",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-colecciones-de-prompts"
   },
   {
    "id": "prompts-chat",
@@ -4504,8 +4507,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-colecciones-de-prompts",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-colecciones-de-prompts"
   },
   {
    "id": "prompt-master",
@@ -4541,7 +4544,7 @@
    ],
    "desc": "Skill que recopila contexto y restricciones para redactar prompts destinados a herramientas de código, imagen y otros servicios. La instalación documentada corresponde a Claude; los nombres de otros productos describen destinos de los prompts generados.",
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 51,
    "complejidad": 1
   },
   {
@@ -4581,9 +4584,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
-   "grupo": "g-cursos-de-microsoft-para-principiantes",
-   "complejidad": 1
+   "puntuacion": 65,
+   "complejidad": 1,
+   "grupo": "g-cursos-de-microsoft-para-principiantes"
   },
   {
    "id": "ai-agents-for-beginners",
@@ -4625,8 +4628,8 @@
    ],
    "source_archived": false,
    "puntuacion": 65,
-   "grupo": "g-cursos-de-microsoft-para-principiantes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-cursos-de-microsoft-para-principiantes"
   },
   {
    "id": "awesome-llm-apps",
@@ -4676,8 +4679,8 @@
    ],
    "source_archived": false,
    "puntuacion": 75,
-   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm"
   },
   {
    "id": "openai-cookbook",
@@ -4718,8 +4721,8 @@
    ],
    "source_archived": false,
    "puntuacion": 58,
-   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm"
   },
   {
    "id": "claude-cookbooks",
@@ -4762,9 +4765,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
-   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm",
-   "complejidad": 1
+   "puntuacion": 53,
+   "complejidad": 1,
+   "grupo": "g-cookbooks-y-ejemplos-de-apps-con-llm"
   },
   {
    "id": "12-factor-agents",
@@ -4801,7 +4804,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 50,
    "complejidad": 1
   },
   {
@@ -4953,7 +4956,6 @@
    "alt": [
     "claude-code",
     "codex",
-    "goose",
     "gemini-cli",
     "aider",
     "mimo-code"
@@ -4974,8 +4976,8 @@
    ],
    "source_archived": false,
    "puntuacion": 82,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "claude-code",
@@ -5015,7 +5017,8 @@
    "added_at": "2026-11-10",
    "goals": [
     "programar",
-    "mcp"
+    "mcp",
+    "skills"
    ],
    "routes": [
     "no_api",
@@ -5025,8 +5028,8 @@
    ],
    "source_archived": false,
    "puntuacion": 58,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "codex",
@@ -5072,9 +5075,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "puntuacion": 68,
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "gemini-cli",
@@ -5121,8 +5124,8 @@
    "desc": "Agente de terminal de Google. Su aviso actual diferencia el acceso empresarial de Gemini Code Assist, Antigravity CLI para usuarios individuales y Gemini API CLI para llamadas sin estado. Revisa esa distinción antes de instalar o asumir una cuota gratuita.",
    "source_archived": false,
    "puntuacion": 65,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "openhands",
@@ -5165,8 +5168,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-agentes-que-resuelven-issues-de-software",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-que-resuelven-issues-de-software"
   },
   {
    "id": "cline",
@@ -5212,8 +5215,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-agentes-de-codigo-en-el-editor",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-codigo-en-el-editor"
   },
   {
    "id": "open-interpreter",
@@ -5284,7 +5287,6 @@
    "pick": false,
    "one": "Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.",
    "alt": [
-    "opencode",
     "claude-code",
     "open-interpreter"
    ],
@@ -5304,8 +5306,8 @@
    ],
    "source_archived": false,
    "puntuacion": 62,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "t3code",
@@ -5346,8 +5348,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo"
   },
   {
    "id": "aider",
@@ -5390,8 +5392,8 @@
    ],
    "source_archived": false,
    "puntuacion": 49,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "open-swe",
@@ -5432,8 +5434,8 @@
    ],
    "source_archived": false,
    "puntuacion": 61,
-   "grupo": "g-agentes-que-resuelven-issues-de-software",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-que-resuelven-issues-de-software"
   },
   {
    "id": "langgraph",
@@ -5479,8 +5481,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "langchain",
@@ -5518,8 +5520,8 @@
    ],
    "source_archived": false,
    "puntuacion": 80,
-   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm"
   },
   {
    "id": "crewai",
@@ -5560,8 +5562,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "llama-index",
@@ -5595,15 +5597,17 @@
    "doc": "human/fichas/llama-index.md",
    "github_id": 560704231,
    "added_at": "2026-11-10",
-   "goals": [],
+   "goals": [
+    "documentos"
+   ],
    "routes": [
     "local_model",
     "api"
    ],
    "source_archived": false,
    "puntuacion": 63,
-   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm"
   },
   {
    "id": "agno",
@@ -5647,8 +5651,8 @@
    ],
    "source_archived": false,
    "puntuacion": 61,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "dspy",
@@ -5727,8 +5731,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "openai-agents-python",
@@ -5771,8 +5775,8 @@
    ],
    "source_archived": false,
    "puntuacion": 67,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "smolagents",
@@ -5811,8 +5815,8 @@
    ],
    "source_archived": false,
    "puntuacion": 55,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "haystack",
@@ -5856,8 +5860,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-rag-y-orquestacion-de-llm"
   },
   {
    "id": "adk-python",
@@ -5895,9 +5899,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 2
+   "puntuacion": 66,
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "pydantic-ai",
@@ -5939,8 +5943,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-frameworks-de-agentes-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-python"
   },
   {
    "id": "ag2",
@@ -5974,7 +5978,7 @@
    ],
    "desc": "AG2 v1 utiliza import ag2 y su propia arquitectura de agentes y redes. Los proyectos con ConversableAgent, GroupChat e import autogen deben seguir la distribución ag2-classic y su documentación de migración.",
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 2
   },
   {
@@ -6011,7 +6015,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 37,
+   "puntuacion": 34,
    "complejidad": 1
   },
   {
@@ -6055,8 +6059,8 @@
    ],
    "source_archived": false,
    "puntuacion": 65,
-   "grupo": "g-frameworks-de-agentes-en-typescript",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-typescript"
   },
   {
    "id": "vercel-ai",
@@ -6092,15 +6096,17 @@
    "doc": "human/fichas/vercel-ai.md",
    "github_id": 644461337,
    "added_at": "2026-11-10",
-   "goals": [],
+   "goals": [
+    "web"
+   ],
    "routes": [
     "claude",
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-frameworks-de-agentes-en-typescript",
-   "complejidad": 2
+   "puntuacion": 68,
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-typescript"
   },
   {
    "id": "agent-framework",
@@ -6138,7 +6144,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -6177,8 +6183,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-frameworks-de-agentes-en-typescript",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-frameworks-de-agentes-en-typescript"
   },
   {
    "id": "sim",
@@ -6222,9 +6228,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
-   "grupo": "g-builders-visuales-de-agentes",
-   "complejidad": 2
+   "puntuacion": 62,
+   "complejidad": 2,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "autogpt",
@@ -6267,8 +6273,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-builders-visuales-de-agentes",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "dify",
@@ -6300,15 +6306,18 @@
    "github_id": 626805178,
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
-   "goals": [],
+   "goals": [
+    "automatizar",
+    "whatsapp"
+   ],
    "routes": [
     "local_model",
     "api"
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-builders-visuales-de-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "langflow",
@@ -6350,8 +6359,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-builders-visuales-de-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-builders-visuales-de-agentes"
   },
   {
    "id": "openclaw",
@@ -6397,9 +6406,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 82,
-   "grupo": "g-asistentes-personales-autonomos",
-   "complejidad": 2
+   "puntuacion": 83,
+   "complejidad": 2,
+   "grupo": "g-asistentes-personales-autonomos"
   },
   {
    "id": "hermes-agent",
@@ -6438,8 +6447,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-asistentes-personales-autonomos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-asistentes-personales-autonomos"
   },
   {
    "id": "ruflo",
@@ -6477,7 +6486,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 71,
    "complejidad": 3
   },
   {
@@ -6522,7 +6531,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 72,
    "complejidad": 2
   },
   {
@@ -6560,9 +6569,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
-   "grupo": "g-paneles-para-coordinar-equipos-de-agentes",
-   "complejidad": 2
+   "puntuacion": 57,
+   "complejidad": 2,
+   "grupo": "g-paneles-para-coordinar-equipos-de-agentes"
   },
   {
    "id": "mercury-agent",
@@ -6601,8 +6610,8 @@
    ],
    "source_archived": false,
    "puntuacion": 49,
-   "grupo": "g-asistentes-personales-autonomos",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-asistentes-personales-autonomos"
   },
   {
    "id": "autoresearch",
@@ -6640,7 +6649,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 45,
    "complejidad": 3
   },
   {
@@ -6678,7 +6687,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
+   "puntuacion": 68,
    "complejidad": 2
   },
   {
@@ -6718,8 +6727,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-agentes-de-investigacion-autonoma",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-investigacion-autonoma"
   },
   {
    "id": "gpt-researcher",
@@ -6765,8 +6774,8 @@
    ],
    "source_archived": false,
    "puntuacion": 61,
-   "grupo": "g-agentes-de-investigacion-autonoma",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-investigacion-autonoma"
   },
   {
    "id": "composio",
@@ -6842,8 +6851,8 @@
    ],
    "source_archived": false,
    "puntuacion": 65,
-   "grupo": "g-sandboxes-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-sandboxes-para-agentes"
   },
   {
    "id": "nemoclaw",
@@ -6879,8 +6888,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-sandboxes-para-agentes",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-sandboxes-para-agentes"
   },
   {
    "id": "sandbox",
@@ -6923,8 +6932,8 @@
    ],
    "source_archived": false,
    "puntuacion": 52,
-   "grupo": "g-sandboxes-para-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-sandboxes-para-agentes"
   },
   {
    "id": "computer-use-preview",
@@ -6962,7 +6971,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 42,
    "complejidad": 2
   },
   {
@@ -6998,7 +7007,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 47,
    "complejidad": 1
   },
   {
@@ -7064,7 +7073,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 43,
+   "puntuacion": 40,
    "complejidad": 2
   },
   {
@@ -7100,7 +7109,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 3
   },
   {
@@ -7144,8 +7153,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm"
   },
   {
    "id": "scrapling",
@@ -7226,8 +7235,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm"
   },
   {
    "id": "scrapy",
@@ -7296,8 +7305,8 @@
    ],
    "source_archived": false,
    "puntuacion": 65,
-   "grupo": "g-crawlee-node-js-y-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-crawlee-node-js-y-python"
   },
   {
    "id": "jina-reader",
@@ -7335,8 +7344,8 @@
    ],
    "source_archived": false,
    "puntuacion": 52,
-   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-crawlers-que-entregan-contenido-listo-para-llm"
   },
   {
    "id": "crawlee-python",
@@ -7372,8 +7381,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-crawlee-node-js-y-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-crawlee-node-js-y-python"
   },
   {
    "id": "scrapegraph-ai",
@@ -7414,8 +7423,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-scraping-guiado-por-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-scraping-guiado-por-llm"
   },
   {
    "id": "maxun",
@@ -7458,8 +7467,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-scraping-guiado-por-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-scraping-guiado-por-llm"
   },
   {
    "id": "llm-scraper",
@@ -7496,9 +7505,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 47,
-   "grupo": "g-scraping-guiado-por-llm",
-   "complejidad": 2
+   "puntuacion": 44,
+   "complejidad": 2,
+   "grupo": "g-scraping-guiado-por-llm"
   },
   {
    "id": "stagehand",
@@ -7540,8 +7549,8 @@
    ],
    "source_archived": false,
    "puntuacion": 61,
-   "grupo": "g-agentes-que-navegan-la-web",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "browser-use",
@@ -7586,8 +7595,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-agentes-que-navegan-la-web",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "playwright",
@@ -7629,9 +7638,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 78,
-   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e",
-   "complejidad": 2
+   "puntuacion": 79,
+   "complejidad": 2,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "puppeteer",
@@ -7672,8 +7681,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "lightpanda",
@@ -7709,7 +7718,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 73,
    "complejidad": 1
   },
   {
@@ -7748,8 +7757,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "skyvern",
@@ -7791,8 +7800,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-agentes-que-navegan-la-web",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "browser-harness",
@@ -7833,8 +7842,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-agentes-que-navegan-la-web",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-que-navegan-la-web"
   },
   {
    "id": "playwright-cli",
@@ -7872,8 +7881,8 @@
    ],
    "source_archived": false,
    "puntuacion": 57,
-   "grupo": "g-clis-de-navegador-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-clis-de-navegador-para-agentes"
   },
   {
    "id": "searxng",
@@ -7946,7 +7955,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
+   "puntuacion": 64,
    "complejidad": 1
   },
   {
@@ -7988,7 +7997,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73,
+   "puntuacion": 70,
    "complejidad": 1
   },
   {
@@ -8030,7 +8039,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 54,
    "complejidad": 1
   },
   {
@@ -8215,8 +8224,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-sdks-de-mcp-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-sdks-de-mcp-en-python"
   },
   {
    "id": "mcp-typescript-sdk",
@@ -8254,8 +8263,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-sdks-de-mcp-en-typescript",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-sdks-de-mcp-en-typescript"
   },
   {
    "id": "mcp-python-sdk",
@@ -8292,9 +8301,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
-   "grupo": "g-sdks-de-mcp-en-python",
-   "complejidad": 2
+   "puntuacion": 62,
+   "complejidad": 2,
+   "grupo": "g-sdks-de-mcp-en-python"
   },
   {
    "id": "mcp-inspector",
@@ -8328,7 +8337,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 68,
    "complejidad": 1
   },
   {
@@ -8367,8 +8376,8 @@
    ],
    "source_archived": false,
    "puntuacion": 64,
-   "grupo": "g-sdks-de-mcp-en-typescript",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-sdks-de-mcp-en-typescript"
   },
   {
    "id": "context7",
@@ -8452,9 +8461,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 62,
-   "grupo": "g-servidores-mcp-de-navegador",
-   "complejidad": 1
+   "puntuacion": 63,
+   "complejidad": 1,
+   "grupo": "g-servidores-mcp-de-navegador"
   },
   {
    "id": "servers",
@@ -8490,7 +8499,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 80,
+   "puntuacion": 79,
    "complejidad": 1
   },
   {
@@ -8535,8 +8544,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-servidores-mcp-de-navegador",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-servidores-mcp-de-navegador"
   },
   {
    "id": "github-mcp-server",
@@ -8576,7 +8585,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 68,
    "complejidad": 1
   },
   {
@@ -8663,7 +8672,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 1
   },
   {
@@ -8704,7 +8713,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 54,
    "complejidad": 1
   },
   {
@@ -8746,8 +8755,8 @@
    "desc": "Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto.",
    "source_archived": false,
    "puntuacion": 52,
-   "grupo": "g-servidores-mcp-de-neo4j",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-servidores-mcp-de-neo4j"
   },
   {
    "id": "mcp-for-beginners",
@@ -8782,7 +8791,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 59,
    "complejidad": 1
   },
   {
@@ -8928,7 +8937,7 @@
    ],
    "desc": "Reúne servidores MCP de servicios Google y ejemplos de despliegue. Sirve para elegir una conexión y revisar sus credenciales y costes. No es el repositorio de la especificación general de MCP.",
    "source_archived": false,
-   "puntuacion": 42,
+   "puntuacion": 39,
    "complejidad": 1
   },
   {
@@ -8976,8 +8985,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-memoria-persistente-para-agentes-de-codigo",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-memoria-persistente-para-agentes-de-codigo"
   },
   {
    "id": "mem0",
@@ -9017,9 +9026,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 76,
-   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
-   "complejidad": 2
+   "puntuacion": 77,
+   "complejidad": 2,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "mempalace",
@@ -9103,8 +9112,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "graphiti",
@@ -9146,9 +9155,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
-   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
-   "complejidad": 2
+   "puntuacion": 62,
+   "complejidad": 2,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "supermemory",
@@ -9187,9 +9196,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
-   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
-   "complejidad": 1
+   "puntuacion": 62,
+   "complejidad": 1,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "agentmemory",
@@ -9233,9 +9242,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 52,
-   "grupo": "g-memoria-persistente-para-agentes-de-codigo",
-   "complejidad": 2
+   "puntuacion": 53,
+   "complejidad": 2,
+   "grupo": "g-memoria-persistente-para-agentes-de-codigo"
   },
   {
    "id": "letta",
@@ -9271,12 +9280,13 @@
    "added_at": "2026-11-10",
    "goals": [],
    "routes": [
+    "local_model",
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 55,
-   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia",
-   "complejidad": 2
+   "puntuacion": 57,
+   "complejidad": 2,
+   "grupo": "g-capas-de-memoria-para-apps-y-agentes-de-ia"
   },
   {
    "id": "engram",
@@ -9320,9 +9330,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 62,
-   "grupo": "g-memoria-persistente-para-agentes-de-codigo",
-   "complejidad": 1
+   "puntuacion": 63,
+   "complejidad": 1,
+   "grupo": "g-memoria-persistente-para-agentes-de-codigo"
   },
   {
    "id": "ragflow",
@@ -9365,8 +9375,8 @@
    ],
    "source_archived": false,
    "puntuacion": 82,
-   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "lightrag",
@@ -9408,8 +9418,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "pageindex",
@@ -9449,8 +9459,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "graphrag",
@@ -9488,9 +9498,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 54,
-   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento",
-   "complejidad": 2
+   "puntuacion": 55,
+   "complejidad": 2,
+   "grupo": "g-rag-con-grafos-e-indices-de-conocimiento"
   },
   {
    "id": "qdrant",
@@ -9531,9 +9541,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 65,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 1
+   "puntuacion": 66,
+   "complejidad": 1,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "milvus",
@@ -9573,9 +9583,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 77,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 3
+   "puntuacion": 78,
+   "complejidad": 3,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "faiss",
@@ -9612,9 +9622,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 2
+   "puntuacion": 57,
+   "complejidad": 2,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "chroma",
@@ -9654,9 +9664,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 1
+   "puntuacion": 64,
+   "complejidad": 1,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "pgvector",
@@ -9695,9 +9705,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 59,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 2
+   "puntuacion": 57,
+   "complejidad": 2,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "turbovec",
@@ -9732,7 +9742,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -9770,9 +9780,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 78,
-   "grupo": "g-servidores-de-inferencia-de-alto-rendimiento",
-   "complejidad": 3
+   "puntuacion": 79,
+   "complejidad": 3,
+   "grupo": "g-servidores-de-inferencia-de-alto-rendimiento"
   },
   {
    "id": "litellm",
@@ -9814,9 +9824,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 77,
-   "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
-   "complejidad": 2
+   "puntuacion": 78,
+   "complejidad": 2,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "sglang",
@@ -9852,9 +9862,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-servidores-de-inferencia-de-alto-rendimiento",
-   "complejidad": 3
+   "puntuacion": 68,
+   "complejidad": 3,
+   "grupo": "g-servidores-de-inferencia-de-alto-rendimiento"
   },
   {
    "id": "headroom",
@@ -9893,9 +9903,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 60,
-   "grupo": "g-compactar-contexto-y-tokens",
-   "complejidad": 2
+   "puntuacion": 61,
+   "complejidad": 2,
+   "grupo": "g-compactar-contexto-y-tokens"
   },
   {
    "id": "promptfoo",
@@ -9939,8 +9949,8 @@
    ],
    "source_archived": false,
    "puntuacion": 79,
-   "grupo": "g-evaluacion-y-pruebas-de-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-evaluacion-y-pruebas-de-llm"
   },
   {
    "id": "langfuse",
@@ -9985,8 +9995,8 @@
    ],
    "source_archived": false,
    "puntuacion": 79,
-   "grupo": "g-observabilidad-y-trazas-de-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "mlflow",
@@ -10025,8 +10035,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-observabilidad-y-trazas-de-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "loguru",
@@ -10059,7 +10069,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 62,
    "complejidad": 2
   },
   {
@@ -10101,8 +10111,8 @@
    ],
    "source_archived": false,
    "puntuacion": 75,
-   "grupo": "g-observabilidad-y-trazas-de-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "deepeval",
@@ -10140,9 +10150,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
-   "grupo": "g-evaluacion-y-pruebas-de-llm",
-   "complejidad": 2
+   "puntuacion": 64,
+   "complejidad": 2,
+   "grupo": "g-evaluacion-y-pruebas-de-llm"
   },
   {
    "id": "ragas",
@@ -10179,9 +10189,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 51,
-   "grupo": "g-evaluacion-y-pruebas-de-llm",
-   "complejidad": 2
+   "puntuacion": 52,
+   "complejidad": 2,
+   "grupo": "g-evaluacion-y-pruebas-de-llm"
   },
   {
    "id": "phoenix",
@@ -10222,8 +10232,8 @@
    ],
    "source_archived": false,
    "puntuacion": 53,
-   "grupo": "g-observabilidad-y-trazas-de-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "guardrails",
@@ -10256,7 +10266,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 52,
    "complejidad": 2
   },
   {
@@ -10298,9 +10308,9 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 52,
-   "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
-   "complejidad": 1
+   "puntuacion": 53,
+   "complejidad": 1,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "graphify",
@@ -10345,9 +10355,9 @@
    ],
    "desc": "Permite consultar símbolos y relaciones de una base de código desde distintos agentes. El análisis de código es determinista y local; documentos, PDFs, imágenes y video requieren la ruta semántica y sus dependencias. Ofrece adaptadores documentados para Claude Code, Codex y Antigravity.",
    "source_archived": false,
-   "puntuacion": 75,
-   "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
-   "complejidad": 2
+   "puntuacion": 74,
+   "complejidad": 2,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "codegraph",
@@ -10391,9 +10401,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
-   "complejidad": 1
+   "puntuacion": 66,
+   "complejidad": 1,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "codebase-memory-mcp",
@@ -10442,8 +10452,8 @@
    ],
    "source_archived": false,
    "puntuacion": 58,
-   "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "gitnexus",
@@ -10487,8 +10497,8 @@
    ],
    "source_archived": false,
    "puntuacion": 51,
-   "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
   {
    "id": "tree-sitter",
@@ -10521,7 +10531,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 60,
    "complejidad": 2
   },
   {
@@ -10559,7 +10569,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 73,
+   "puntuacion": 71,
    "complejidad": 1
   },
   {
@@ -10596,7 +10606,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 60,
    "complejidad": 1
   },
   {
@@ -10673,7 +10683,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 52,
    "complejidad": 3
   },
   {
@@ -10718,8 +10728,8 @@
    ],
    "source_archived": false,
    "puntuacion": 82,
-   "grupo": "g-fine-tuning-de-llm",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "transformers",
@@ -10789,8 +10799,8 @@
    ],
    "source_archived": false,
    "puntuacion": 78,
-   "grupo": "g-frameworks-de-deep-learning",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-frameworks-de-deep-learning"
   },
   {
    "id": "llama-factory",
@@ -10829,8 +10839,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-fine-tuning-de-llm",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "peft",
@@ -10937,8 +10947,8 @@
    ],
    "source_archived": false,
    "puntuacion": 53,
-   "grupo": "g-aprender-llm-desde-cero",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-aprender-llm-desde-cero"
   },
   {
    "id": "llms-from-scratch",
@@ -10977,8 +10987,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-aprender-llm-desde-cero",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-aprender-llm-desde-cero"
   },
   {
    "id": "nanochat",
@@ -11013,7 +11023,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 65,
+   "puntuacion": 62,
    "complejidad": 2
   },
   {
@@ -11048,7 +11058,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 49,
    "complejidad": 3
   },
   {
@@ -11083,7 +11093,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 45,
    "complejidad": 1
   },
   {
@@ -11154,7 +11164,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 66,
    "complejidad": 3
   },
   {
@@ -11259,7 +11269,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 74,
    "complejidad": 1
   },
   {
@@ -11292,7 +11302,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 75,
    "complejidad": 2
   },
   {
@@ -11330,8 +11340,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-procesamiento-de-datos-tabulares",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-procesamiento-de-datos-tabulares"
   },
   {
    "id": "marimo",
@@ -11372,8 +11382,8 @@
    ],
    "source_archived": false,
    "puntuacion": 76,
-   "grupo": "g-notebooks",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-notebooks"
   },
   {
    "id": "polars",
@@ -11411,8 +11421,8 @@
    ],
    "source_archived": false,
    "puntuacion": 67,
-   "grupo": "g-procesamiento-de-datos-tabulares",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-procesamiento-de-datos-tabulares"
   },
   {
    "id": "awesome-bigdata",
@@ -11482,7 +11492,9 @@
    "github_id": 658928958,
    "added_at": "2026-11-10",
    "goals": [
-    "local"
+    "local",
+    "documentos",
+    "notas"
    ],
    "routes": [
     "no_api",
@@ -11492,9 +11504,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 84,
-   "grupo": "g-motores-para-correr-llm-en-local",
-   "complejidad": 1
+   "puntuacion": 85,
+   "complejidad": 1,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "llama-cpp",
@@ -11536,8 +11548,8 @@
    ],
    "source_archived": false,
    "puntuacion": 78,
-   "grupo": "g-motores-para-correr-llm-en-local",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "localai",
@@ -11579,8 +11591,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-motores-para-correr-llm-en-local",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "exo",
@@ -11617,7 +11629,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -11654,7 +11666,7 @@
    ],
    "desc": "Inspecciona el hardware y recomienda modelos según memoria, aceleradores y estimaciones de velocidad. Ayuda a elegir antes de descargar; no evalúa la calidad del modelo en una tarea de negocio.",
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -11696,9 +11708,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 52,
-   "grupo": "g-motores-para-correr-llm-en-local",
-   "complejidad": 1
+   "puntuacion": 53,
+   "complejidad": 1,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "open-webui",
@@ -11746,8 +11758,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "jan",
@@ -11790,9 +11802,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 65,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 1
+   "puntuacion": 66,
+   "complejidad": 1,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "lobehub",
@@ -11842,8 +11854,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "cherry-studio",
@@ -11889,8 +11901,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "textgen",
@@ -11931,9 +11943,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 53,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 2
+   "puntuacion": 51,
+   "complejidad": 2,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "librechat",
@@ -11979,9 +11991,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 2
+   "puntuacion": 69,
+   "complejidad": 2,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "anything-llm",
@@ -12029,9 +12041,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78,
-   "grupo": "g-workspaces-privados-con-documentos-y-chat",
-   "complejidad": 1
+   "puntuacion": 79,
+   "complejidad": 1,
+   "grupo": "g-workspaces-privados-con-documentos-y-chat"
   },
   {
    "id": "odysseus",
@@ -12062,14 +12074,15 @@
    "added_at": "2026-06-23",
    "goals": [
     "documentos",
-    "local"
+    "local",
+    "notas"
    ],
    "routes": [
     "local_model",
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 73,
+   "puntuacion": 75,
    "complejidad": 3
   },
   {
@@ -12112,9 +12125,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-workspaces-privados-con-documentos-y-chat",
-   "complejidad": 2
+   "puntuacion": 68,
+   "complejidad": 2,
+   "grupo": "g-workspaces-privados-con-documentos-y-chat"
   },
   {
    "id": "khoj",
@@ -12158,9 +12171,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 48,
-   "grupo": "g-workspaces-privados-con-documentos-y-chat",
-   "complejidad": 2
+   "puntuacion": 49,
+   "complejidad": 2,
+   "grupo": "g-workspaces-privados-con-documentos-y-chat"
   },
   {
    "id": "hermes-desktop",
@@ -12196,7 +12209,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 60,
    "complejidad": 1
   },
   {
@@ -12240,9 +12253,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 64,
-   "grupo": "g-alternativas-a-notebooklm",
-   "complejidad": 2
+   "puntuacion": 65,
+   "complejidad": 2,
+   "grupo": "g-alternativas-a-notebooklm"
   },
   {
    "id": "open-notebook",
@@ -12284,9 +12297,9 @@
    ],
    "desc": "Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración.",
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-alternativas-a-notebooklm",
-   "complejidad": 2
+   "puntuacion": 68,
+   "complejidad": 2,
+   "grupo": "g-alternativas-a-notebooklm"
   },
   {
    "id": "notebooklm-py",
@@ -12366,7 +12379,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 49,
    "complejidad": 1
   },
   {
@@ -12409,8 +12422,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-bibliotecas-de-componentes-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "ant-design",
@@ -12448,8 +12461,8 @@
    ],
    "source_archived": false,
    "puntuacion": 77,
-   "grupo": "g-bibliotecas-de-componentes-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "mui",
@@ -12493,8 +12506,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-bibliotecas-de-componentes-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "react-bits",
@@ -12534,8 +12547,8 @@
    ],
    "source_archived": false,
    "puntuacion": 59,
-   "grupo": "g-componentes-animados-para-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-componentes-animados-para-react"
   },
   {
    "id": "swr",
@@ -12572,8 +12585,8 @@
    ],
    "source_archived": false,
    "puntuacion": 59,
-   "grupo": "g-obtencion-de-datos-en-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-obtencion-de-datos-en-react"
   },
   {
    "id": "heroui",
@@ -12613,8 +12626,8 @@
    ],
    "source_archived": false,
    "puntuacion": 62,
-   "grupo": "g-bibliotecas-de-componentes-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "lucide",
@@ -12648,7 +12661,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 66,
+   "puntuacion": 65,
    "complejidad": 2
   },
   {
@@ -12684,8 +12697,8 @@
    ],
    "source_archived": false,
    "puntuacion": 53,
-   "grupo": "g-componentes-animados-para-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-componentes-animados-para-react"
   },
   {
    "id": "radix-primitives",
@@ -12792,7 +12805,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 77,
+   "puntuacion": 76,
    "complejidad": 2
   },
   {
@@ -12866,9 +12879,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
-   "grupo": "g-motores-3d-para-la-web",
-   "complejidad": 3
+   "puntuacion": 70,
+   "complejidad": 3,
+   "grupo": "g-motores-3d-para-la-web"
   },
   {
    "id": "animejs",
@@ -12905,9 +12918,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 60,
-   "grupo": "g-animacion-web-en-javascript",
-   "complejidad": 2
+   "puntuacion": 61,
+   "complejidad": 2,
+   "grupo": "g-animacion-web-en-javascript"
   },
   {
    "id": "motion",
@@ -12948,8 +12961,8 @@
    ],
    "source_archived": false,
    "puntuacion": 77,
-   "grupo": "g-animacion-web-en-javascript",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-animacion-web-en-javascript"
   },
   {
    "id": "react-three-fiber",
@@ -13022,8 +13035,8 @@
    ],
    "source_archived": false,
    "puntuacion": 55,
-   "grupo": "g-animacion-web-en-javascript",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-animacion-web-en-javascript"
   },
   {
    "id": "excalidraw",
@@ -13062,8 +13075,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-pizarras-y-diagramas-a-mano-alzada",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-pizarras-y-diagramas-a-mano-alzada"
   },
   {
    "id": "open-design",
@@ -13106,8 +13119,8 @@
    ],
    "source_archived": false,
    "puntuacion": 78,
-   "grupo": "g-editores-visuales-de-diseno-con-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-editores-visuales-de-diseno-con-ia"
   },
   {
    "id": "penpot",
@@ -13182,9 +13195,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 55,
-   "grupo": "g-pizarras-y-diagramas-a-mano-alzada",
-   "complejidad": 2
+   "puntuacion": 54,
+   "complejidad": 2,
+   "grupo": "g-pizarras-y-diagramas-a-mano-alzada"
   },
   {
    "id": "onlook",
@@ -13224,8 +13237,8 @@
    ],
    "source_archived": false,
    "puntuacion": 56,
-   "grupo": "g-editores-visuales-de-diseno-con-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-editores-visuales-de-diseno-con-ia"
   },
   {
    "id": "plasmic",
@@ -13299,9 +13312,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70,
-   "grupo": "g-componentes-de-chat-y-copilotos-para-react",
-   "complejidad": 2
+   "puntuacion": 69,
+   "complejidad": 2,
+   "grupo": "g-componentes-de-chat-y-copilotos-para-react"
   },
   {
    "id": "screenshot-to-code",
@@ -13343,8 +13356,8 @@
    ],
    "source_archived": false,
    "puntuacion": 63,
-   "grupo": "g-de-diseno-o-captura-a-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-de-diseno-o-captura-a-codigo"
   },
   {
    "id": "openui",
@@ -13421,8 +13434,8 @@
    ],
    "source_archived": false,
    "puntuacion": 62,
-   "grupo": "g-componentes-de-chat-y-copilotos-para-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-componentes-de-chat-y-copilotos-para-react"
   },
   {
    "id": "stitch-sdk",
@@ -13466,8 +13479,8 @@
    ],
    "source_archived": false,
    "puntuacion": 49,
-   "grupo": "g-de-diseno-o-captura-a-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-de-diseno-o-captura-a-codigo"
   },
   {
    "id": "stitch-skills",
@@ -13507,7 +13520,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -13552,8 +13565,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "taste-skill",
@@ -13597,8 +13610,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "impeccable",
@@ -13643,8 +13656,8 @@
    ],
    "source_archived": false,
    "puntuacion": 63,
-   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "skills-emil",
@@ -13758,8 +13771,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-analitica-web-auto-hospedada",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-analitica-web-auto-hospedada"
   },
   {
    "id": "posthog",
@@ -13836,8 +13849,8 @@
    ],
    "source_archived": false,
    "puntuacion": 59,
-   "grupo": "g-analitica-web-auto-hospedada",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-analitica-web-auto-hospedada"
   },
   {
    "id": "matomo",
@@ -13875,8 +13888,8 @@
    ],
    "source_archived": false,
    "puntuacion": 57,
-   "grupo": "g-analitica-web-auto-hospedada",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-analitica-web-auto-hospedada"
   },
   {
    "id": "superset",
@@ -13915,8 +13928,8 @@
    ],
    "source_archived": false,
    "puntuacion": 82,
-   "grupo": "g-bi-y-dashboards",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bi-y-dashboards"
   },
   {
    "id": "wrenai",
@@ -14033,8 +14046,8 @@
    ],
    "source_archived": false,
    "puntuacion": 67,
-   "grupo": "g-bi-y-dashboards",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bi-y-dashboards"
   },
   {
    "id": "redash",
@@ -14072,8 +14085,8 @@
    ],
    "source_archived": false,
    "puntuacion": 57,
-   "grupo": "g-bi-y-dashboards",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bi-y-dashboards"
   },
   {
    "id": "recharts",
@@ -14111,8 +14124,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-librerias-de-graficos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "d3",
@@ -14148,8 +14161,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-librerias-de-graficos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "chart-js",
@@ -14186,8 +14199,8 @@
    ],
    "source_archived": false,
    "puntuacion": 64,
-   "grupo": "g-librerias-de-graficos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "echarts",
@@ -14225,8 +14238,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-librerias-de-graficos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-librerias-de-graficos"
   },
   {
    "id": "uplot",
@@ -14261,7 +14274,7 @@
    ],
    "desc": "Permite visualizar series temporales, líneas, áreas y otros formatos en una página. Su rendimiento depende del volumen, configuración, navegador y equipo; conviene medirlo con una muestra representativa.",
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 56,
    "complejidad": 2
   },
   {
@@ -14306,8 +14319,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-apps-web-de-datos-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "streamlit",
@@ -14351,8 +14364,8 @@
    ],
    "source_archived": false,
    "puntuacion": 76,
-   "grupo": "g-apps-web-de-datos-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "dash",
@@ -14426,7 +14439,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78,
+   "puntuacion": 79,
    "complejidad": 2
   },
   {
@@ -14542,8 +14555,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-interfaces-de-creacion-de-imagenes",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-interfaces-de-creacion-de-imagenes"
   },
   {
    "id": "krita-ai-diffusion",
@@ -14584,8 +14597,8 @@
    ],
    "source_archived": false,
    "puntuacion": 55,
-   "grupo": "g-interfaces-de-creacion-de-imagenes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-interfaces-de-creacion-de-imagenes"
   },
   {
    "id": "flux2",
@@ -14622,7 +14635,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 49,
+   "puntuacion": 46,
    "complejidad": 3
   },
   {
@@ -14694,7 +14707,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 71,
+   "puntuacion": 68,
    "complejidad": 2
   },
   {
@@ -14729,7 +14742,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 56,
    "complejidad": 2
   },
   {
@@ -14765,7 +14778,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 43,
+   "puntuacion": 40,
    "complejidad": 2
   },
   {
@@ -14805,8 +14818,8 @@
    ],
    "source_archived": false,
    "puntuacion": 75,
-   "grupo": "g-intercambio-de-rostros",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-intercambio-de-rostros"
   },
   {
    "id": "facefusion",
@@ -14845,8 +14858,8 @@
    ],
    "source_archived": false,
    "puntuacion": 56,
-   "grupo": "g-intercambio-de-rostros",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-intercambio-de-rostros"
   },
   {
    "id": "insightface",
@@ -15101,8 +15114,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-etiquetado-de-datos-para-vision",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-etiquetado-de-datos-para-vision"
   },
   {
    "id": "whisper-cpp",
@@ -15143,9 +15156,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 73,
-   "grupo": "g-transcripcion-con-whisper",
-   "complejidad": 1
+   "puntuacion": 70,
+   "complejidad": 1,
+   "grupo": "g-transcripcion-con-whisper"
   },
   {
    "id": "whisper",
@@ -15183,9 +15196,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-transcripcion-con-whisper",
-   "complejidad": 2
+   "puntuacion": 64,
+   "complejidad": 2,
+   "grupo": "g-transcripcion-con-whisper"
   },
   {
    "id": "faster-whisper",
@@ -15215,16 +15228,17 @@
    "github_id": 600368121,
    "added_at": "2026-06-23",
    "goals": [
-    "voz"
+    "voz",
+    "narrar"
    ],
    "routes": [
     "no_api",
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 70,
-   "grupo": "g-transcripcion-con-whisper",
-   "complejidad": 2
+   "puntuacion": 66,
+   "complejidad": 2,
+   "grupo": "g-transcripcion-con-whisper"
   },
   {
    "id": "whisperx",
@@ -15262,9 +15276,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-transcripcion-con-modelos-nvidia-y-alineacion",
-   "complejidad": 2
+   "puntuacion": 64,
+   "complejidad": 2,
+   "grupo": "g-transcripcion-con-modelos-nvidia-y-alineacion"
   },
   {
    "id": "nemo",
@@ -15303,8 +15317,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-transcripcion-con-modelos-nvidia-y-alineacion",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-transcripcion-con-modelos-nvidia-y-alineacion"
   },
   {
    "id": "kokoro",
@@ -15337,16 +15351,19 @@
    "github_id": 915054134,
    "added_at": "2026-11-10",
    "goals": [
-    "narrar"
+    "narrar",
+    "video",
+    "voz",
+    "imagenes"
    ],
    "routes": [
     "no_api",
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 52,
-   "grupo": "g-tts-ligero-y-rapido",
-   "complejidad": 2
+   "puntuacion": 48,
+   "complejidad": 2,
+   "grupo": "g-tts-ligero-y-rapido"
   },
   {
    "id": "omnivoice-studio",
@@ -15424,9 +15441,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 72,
-   "grupo": "g-clonacion-de-voz-y-tts-multilingue",
-   "complejidad": 2
+   "puntuacion": 69,
+   "complejidad": 2,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "vibevoice",
@@ -15464,7 +15481,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 61,
    "complejidad": 3
   },
   {
@@ -15539,7 +15556,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 61,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -15582,8 +15599,8 @@
    ],
    "source_archived": false,
    "puntuacion": 61,
-   "grupo": "g-clonacion-de-voz-y-tts-multilingue",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "index-tts",
@@ -15622,9 +15639,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 56,
-   "grupo": "g-clonacion-de-voz-y-tts-multilingue",
-   "complejidad": 2
+   "puntuacion": 53,
+   "complejidad": 2,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "cosyvoice",
@@ -15666,8 +15683,8 @@
    ],
    "source_archived": false,
    "puntuacion": 61,
-   "grupo": "g-clonacion-de-voz-y-tts-multilingue",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "luxtts",
@@ -15707,9 +15724,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 56,
-   "grupo": "g-tts-ligero-y-rapido",
-   "complejidad": 2
+   "puntuacion": 52,
+   "complejidad": 2,
+   "grupo": "g-tts-ligero-y-rapido"
   },
   {
    "id": "pipecat",
@@ -15746,7 +15763,10 @@
    "doc": "human/fichas/pipecat.md",
    "github_id": 736272311,
    "added_at": "2026-11-10",
-   "goals": [],
+   "goals": [
+    "voz",
+    "narrar"
+   ],
    "routes": [
     "no_api",
     "claude",
@@ -15755,8 +15775,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-agentes-de-voz-en-tiempo-real",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "livekit-agents",
@@ -15803,8 +15823,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-agentes-de-voz-en-tiempo-real",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "ffmpeg",
@@ -15834,13 +15854,16 @@
    "starred_by": "Cristrva1",
    "added_at": "2026-06-24",
    "goals": [
-    "video"
+    "video",
+    "voz",
+    "narrar",
+    "imagenes"
    ],
    "routes": [
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -15880,8 +15903,8 @@
    ],
    "source_archived": false,
    "puntuacion": 54,
-   "grupo": "g-video-y-escenas-por-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "opencut",
@@ -15920,9 +15943,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 62,
-   "grupo": "g-editores-de-video",
-   "complejidad": 2
+   "puntuacion": 63,
+   "complejidad": 2,
+   "grupo": "g-editores-de-video"
   },
   {
    "id": "obs-studio",
@@ -15957,7 +15980,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 70,
    "complejidad": 1
   },
   {
@@ -15993,7 +16016,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
+   "puntuacion": 63,
    "complejidad": 1
   },
   {
@@ -16035,7 +16058,7 @@
    ],
    "desc": "Combina reconocimiento de voz, alineación, traducción, segmentación y doblaje. La ruta revisada utiliza Qwen3-ASR y ForcedAligner localmente por defecto; traducción y TTS tienen requisitos y costes distintos según proveedor.",
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -16078,7 +16101,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 59,
    "complejidad": 2
   },
   {
@@ -16126,8 +16149,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-video-y-escenas-por-codigo",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "skills-remotion",
@@ -16166,7 +16189,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 42,
    "complejidad": 1
   },
   {
@@ -16204,9 +16227,9 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 57,
-   "grupo": "g-animaciones-matematicas-manim",
-   "complejidad": 2
+   "puntuacion": 54,
+   "complejidad": 2,
+   "grupo": "g-animaciones-matematicas-manim"
   },
   {
    "id": "remotion",
@@ -16239,7 +16262,10 @@
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
-    "video"
+    "video",
+    "voz",
+    "narrar",
+    "imagenes"
    ],
    "routes": [
     "no_api",
@@ -16250,8 +16276,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-video-y-escenas-por-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "video-use",
@@ -16294,8 +16320,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-skills-y-flujos-de-produccion-de-video",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-y-flujos-de-produccion-de-video"
   },
   {
    "id": "videofy-minimal",
@@ -16374,9 +16400,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 48,
-   "grupo": "g-skills-y-flujos-de-produccion-de-video",
-   "complejidad": 2
+   "puntuacion": 47,
+   "complejidad": 2,
+   "grupo": "g-skills-y-flujos-de-produccion-de-video"
   },
   {
    "id": "openmontage",
@@ -16421,8 +16447,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-skills-y-flujos-de-produccion-de-video",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-y-flujos-de-produccion-de-video"
   },
   {
    "id": "moneyprinterturbo",
@@ -16468,9 +16494,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 77,
-   "grupo": "g-generacion-automatica-de-videos-cortos",
-   "complejidad": 2
+   "puntuacion": 74,
+   "complejidad": 2,
+   "grupo": "g-generacion-automatica-de-videos-cortos"
   },
   {
    "id": "wan2-2",
@@ -16513,8 +16539,8 @@
    ],
    "source_archived": false,
    "puntuacion": 67,
-   "grupo": "g-modelos-abiertos-de-video-generativo",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-modelos-abiertos-de-video-generativo"
   },
   {
    "id": "hunyuanvideo",
@@ -16556,8 +16582,8 @@
    ],
    "source_archived": false,
    "puntuacion": 57,
-   "grupo": "g-modelos-abiertos-de-video-generativo",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-modelos-abiertos-de-video-generativo"
   },
   {
    "id": "wan2gp",
@@ -16604,7 +16630,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 3
   },
   {
@@ -16644,9 +16670,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 54,
-   "grupo": "g-generacion-de-musica",
-   "complejidad": 2
+   "puntuacion": 52,
+   "complejidad": 2,
+   "grupo": "g-generacion-de-musica"
   },
   {
    "id": "docling",
@@ -16693,8 +16719,8 @@
    ],
    "source_archived": false,
    "puntuacion": 78,
-   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "markitdown",
@@ -16722,14 +16748,15 @@
    "starred_by": "Cristrva1",
    "added_at": "2026-06-23",
    "goals": [
-    "documentos"
+    "documentos",
+    "presentaciones"
    ],
    "routes": [
     "no_api",
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -16774,8 +16801,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "pandoc",
@@ -16849,8 +16876,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "pdf-inspector",
@@ -16927,8 +16954,8 @@
    ],
    "source_archived": false,
    "puntuacion": 58,
-   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "paddleocr",
@@ -16968,8 +16995,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-ocr-de-documentos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "ocrmypdf",
@@ -17042,8 +17069,8 @@
    ],
    "source_archived": false,
    "puntuacion": 64,
-   "grupo": "g-ocr-de-documentos",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "unlimited-ocr",
@@ -17082,9 +17109,9 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 65,
-   "grupo": "g-ocr-de-documentos",
-   "complejidad": 3
+   "puntuacion": 62,
+   "complejidad": 3,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "olmocr",
@@ -17126,9 +17153,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 53,
-   "grupo": "g-ocr-de-documentos",
-   "complejidad": 3
+   "puntuacion": 50,
+   "complejidad": 3,
+   "grupo": "g-ocr-de-documentos"
   },
   {
    "id": "stirling-pdf",
@@ -17164,8 +17191,8 @@
    ],
    "source_archived": false,
    "puntuacion": 76,
-   "grupo": "g-suites-de-herramientas-pdf",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-suites-de-herramientas-pdf"
   },
   {
    "id": "pdfmathtranslate",
@@ -17245,8 +17272,8 @@
    ],
    "source_archived": false,
    "puntuacion": 54,
-   "grupo": "g-suites-de-herramientas-pdf",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-suites-de-herramientas-pdf"
   },
   {
    "id": "pdfding",
@@ -17320,8 +17347,8 @@
    ],
    "source_archived": false,
    "puntuacion": 73,
-   "grupo": "g-presentaciones-desde-markdown",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-presentaciones-desde-markdown"
   },
   {
    "id": "ppt-master",
@@ -17361,8 +17388,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-generacion-de-presentaciones-con-ia",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-generacion-de-presentaciones-con-ia"
   },
   {
    "id": "reveal.js",
@@ -17399,8 +17426,8 @@
    ],
    "source_archived": false,
    "puntuacion": 59,
-   "grupo": "g-presentaciones-desde-markdown",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-presentaciones-desde-markdown"
   },
   {
    "id": "marp",
@@ -17437,8 +17464,8 @@
    ],
    "source_archived": false,
    "puntuacion": 47,
-   "grupo": "g-presentaciones-desde-markdown",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-presentaciones-desde-markdown"
   },
   {
    "id": "presenton",
@@ -17484,8 +17511,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-generacion-de-presentaciones-con-ia",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-generacion-de-presentaciones-con-ia"
   },
   {
    "id": "mermaid",
@@ -17524,8 +17551,8 @@
    ],
    "source_archived": false,
    "puntuacion": 78,
-   "grupo": "g-diagramas-como-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-diagramas-como-codigo"
   },
   {
    "id": "guia",
@@ -17616,8 +17643,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-reservas-y-citas",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-reservas-y-citas"
   },
   {
    "id": "compai-crm",
@@ -17690,8 +17717,8 @@
    ],
    "source_archived": false,
    "puntuacion": 49,
-   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apis-y-librerias-no-oficiales-de-whatsapp"
   },
   {
    "id": "500-ai-agents-projects",
@@ -17810,7 +17837,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 39,
+   "puntuacion": 40,
    "complejidad": 1
   },
   {
@@ -17846,7 +17873,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 41,
+   "puntuacion": 39,
    "complejidad": 1
   },
   {
@@ -17888,7 +17915,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 33,
+   "puntuacion": 30,
    "complejidad": 1
   },
   {
@@ -17928,7 +17955,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 50,
    "complejidad": 1
   },
   {
@@ -17967,7 +17994,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 1
   },
   {
@@ -18006,7 +18033,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 47,
    "complejidad": 1
   },
   {
@@ -18049,7 +18076,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -18088,7 +18115,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 61,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -18131,7 +18158,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 55,
    "complejidad": 1
   },
   {
@@ -18178,7 +18205,7 @@
     "review"
    ],
    "source_archived": false,
-   "puntuacion": 36,
+   "puntuacion": 34,
    "complejidad": 1
   },
   {
@@ -18216,7 +18243,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 60,
    "complejidad": 2
   },
   {
@@ -18266,7 +18293,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 52,
    "complejidad": 2
   },
   {
@@ -18310,8 +18337,8 @@
    ],
    "source_archived": false,
    "puntuacion": 49,
-   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "system-prompts-and-models-of-ai-tools",
@@ -18353,7 +18380,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 61,
+   "puntuacion": 58,
    "complejidad": 1
   },
   {
@@ -18395,7 +18422,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 65,
+   "puntuacion": 63,
    "complejidad": 2
   },
   {
@@ -18429,7 +18456,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 37,
+   "puntuacion": 34,
    "complejidad": 2
   },
   {
@@ -18471,7 +18498,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 53,
    "complejidad": 2
   },
   {
@@ -18519,9 +18546,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 58,
-   "grupo": "g-agentes-de-investigacion-autonoma",
-   "complejidad": 2
+   "puntuacion": 56,
+   "complejidad": 2,
+   "grupo": "g-agentes-de-investigacion-autonoma"
   },
   {
    "id": "metagpt",
@@ -18607,8 +18634,8 @@
    ],
    "source_archived": false,
    "puntuacion": 50,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "nodeterm",
@@ -18742,9 +18769,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-paneles-para-coordinar-equipos-de-agentes",
-   "complejidad": 3
+   "puntuacion": 68,
+   "complejidad": 3,
+   "grupo": "g-paneles-para-coordinar-equipos-de-agentes"
   },
   {
    "id": "social-media-agent",
@@ -18776,7 +18803,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 46,
+   "puntuacion": 42,
    "complejidad": 2
   },
   {
@@ -18815,8 +18842,8 @@
    ],
    "source_archived": false,
    "puntuacion": 63,
-   "grupo": "g-clis-de-navegador-para-agentes",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-clis-de-navegador-para-agentes"
   },
   {
    "id": "awesome-chrome-devtools",
@@ -18895,7 +18922,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 45,
    "complejidad": 1
   },
   {
@@ -19059,7 +19086,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 55,
+   "puntuacion": 54,
    "complejidad": 2
   },
   {
@@ -19105,9 +19132,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 36,
-   "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
-   "complejidad": 2
+   "puntuacion": 34,
+   "complejidad": 2,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "rtk",
@@ -19152,8 +19179,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-compactar-contexto-y-tokens",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-compactar-contexto-y-tokens"
   },
   {
    "id": "tensorrt-llm",
@@ -19191,7 +19218,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 75,
+   "puntuacion": 77,
    "complejidad": 3
   },
   {
@@ -19227,7 +19254,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 55,
    "complejidad": 1
   },
   {
@@ -19303,7 +19330,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 35,
+   "puntuacion": 32,
    "complejidad": 1
   },
   {
@@ -19348,8 +19375,8 @@
    ],
    "source_archived": false,
    "puntuacion": 51,
-   "grupo": "g-formatos-de-tabla-para-data-lakes",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-formatos-de-tabla-para-data-lakes"
   },
   {
    "id": "tensorflow",
@@ -19392,8 +19419,8 @@
    ],
    "source_archived": false,
    "puntuacion": 79,
-   "grupo": "g-frameworks-de-deep-learning",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-frameworks-de-deep-learning"
   },
   {
    "id": "train-llm-from-scratch",
@@ -19473,7 +19500,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 70,
    "complejidad": 3
   },
   {
@@ -19521,8 +19548,8 @@
    ],
    "source_archived": false,
    "puntuacion": 52,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "nextcloud-server",
@@ -19602,7 +19629,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 60,
    "complejidad": 2
   },
   {
@@ -19689,7 +19716,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 46,
    "complejidad": 3
   },
   {
@@ -19730,7 +19757,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 36,
+   "puntuacion": 33,
    "complejidad": 2
   },
   {
@@ -19773,7 +19800,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 41,
+   "puntuacion": 38,
    "complejidad": 1
   },
   {
@@ -19809,7 +19836,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 49,
    "complejidad": 2
   },
   {
@@ -19852,7 +19879,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 3
   },
   {
@@ -19896,7 +19923,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 1
   },
   {
@@ -19936,7 +19963,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 46,
+   "puntuacion": 43,
    "complejidad": 3
   },
   {
@@ -19978,8 +20005,8 @@
    ],
    "source_archived": false,
    "puntuacion": 53,
-   "grupo": "g-paneles-osint-sobre-globo-3d",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-paneles-osint-sobre-globo-3d"
   },
   {
    "id": "pythia",
@@ -20017,7 +20044,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 47,
    "complejidad": 3
   },
   {
@@ -20060,7 +20087,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 3
   },
   {
@@ -20097,7 +20124,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 44,
    "complejidad": 2
   },
   {
@@ -20177,8 +20204,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-generacion-de-musica",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-generacion-de-musica"
   },
   {
    "id": "ai-youtube-shorts-generator",
@@ -20260,8 +20287,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-tts-ligero-y-rapido",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-tts-ligero-y-rapido"
   },
   {
    "id": "manim-community",
@@ -20302,8 +20329,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-animaciones-matematicas-manim",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-animaciones-matematicas-manim"
   },
   {
    "id": "rea-video",
@@ -20348,7 +20375,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 62,
    "complejidad": 2
   },
   {
@@ -20391,9 +20418,9 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 46,
-   "grupo": "g-generacion-automatica-de-videos-cortos",
-   "complejidad": 2
+   "puntuacion": 47,
+   "complejidad": 2,
+   "grupo": "g-generacion-automatica-de-videos-cortos"
   },
   {
    "id": "archify",
@@ -20442,8 +20469,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-skills-de-diagramas-de-arquitectura",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-skills-de-diagramas-de-arquitectura"
   },
   {
    "id": "openrv",
@@ -20478,7 +20505,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 44,
+   "puntuacion": 46,
    "complejidad": 1
   },
   {
@@ -20518,7 +20545,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 43,
+   "puntuacion": 42,
    "complejidad": 2
   },
   {
@@ -20557,8 +20584,8 @@
    ],
    "source_archived": false,
    "puntuacion": 59,
-   "grupo": "g-bloqueo-de-anuncios-por-dns",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-bloqueo-de-anuncios-por-dns"
   },
   {
    "id": "audiobookshelf",
@@ -20672,8 +20699,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-obsidian-como-segundo-cerebro-para-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-obsidian-como-segundo-cerebro-para-agentes"
   },
   {
    "id": "claude-seo",
@@ -20713,8 +20740,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-skills-de-seo-para-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-de-seo-para-agentes"
   },
   {
    "id": "awesome-harness-engineering",
@@ -20788,7 +20815,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 2
   },
   {
@@ -20827,7 +20854,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 54,
    "complejidad": 3
   },
   {
@@ -20866,7 +20893,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 47,
+   "puntuacion": 46,
    "complejidad": 2
   },
   {
@@ -20937,7 +20964,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 57,
    "complejidad": 2
   },
   {
@@ -20976,8 +21003,8 @@
    ],
    "source_archived": false,
    "puntuacion": 48,
-   "grupo": "g-espacios-de-trabajo-local-first-tipo-notion",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-espacios-de-trabajo-local-first-tipo-notion"
   },
   {
    "id": "appflowy",
@@ -21016,8 +21043,8 @@
    ],
    "source_archived": false,
    "puntuacion": 64,
-   "grupo": "g-espacios-de-trabajo-local-first-tipo-notion",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-espacios-de-trabajo-local-first-tipo-notion"
   },
   {
    "id": "blender-skills",
@@ -21055,7 +21082,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 49,
+   "puntuacion": 48,
    "complejidad": 2
   },
   {
@@ -21129,7 +21156,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 55,
    "complejidad": 2
   },
   {
@@ -21211,8 +21238,8 @@
    ],
    "source_archived": false,
    "puntuacion": 68,
-   "grupo": "g-paneles-osint-sobre-globo-3d",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-paneles-osint-sobre-globo-3d"
   },
   {
    "id": "bitwarden-clients",
@@ -21282,7 +21309,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 76,
+   "puntuacion": 77,
    "complejidad": 1
   },
   {
@@ -21360,8 +21387,8 @@
    ],
    "source_archived": false,
    "puntuacion": 56,
-   "grupo": "g-skills-de-diagramas-de-arquitectura",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-de-diagramas-de-arquitectura"
   },
   {
    "id": "ccxt",
@@ -21445,8 +21472,8 @@
    "goals": [],
    "source_archived": false,
    "puntuacion": 76,
-   "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "opencode-manager",
@@ -21484,8 +21511,8 @@
    ],
    "source_archived": false,
    "puntuacion": 44,
-   "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo"
   },
   {
    "id": "threejs-skills",
@@ -21526,8 +21553,8 @@
    ],
    "source_archived": false,
    "puntuacion": 53,
-   "grupo": "g-skills-de-visualizacion-3d",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-de-visualizacion-3d"
   },
   {
    "id": "openpose",
@@ -21605,8 +21632,8 @@
    ],
    "source_archived": false,
    "puntuacion": 74,
-   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
   },
   {
    "id": "opendots",
@@ -21642,8 +21669,8 @@
    "goals": [],
    "source_archived": false,
    "puntuacion": 48,
-   "grupo": "g-espacios-de-asistentes-de-copilotkit",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-espacios-de-asistentes-de-copilotkit"
   },
   {
    "id": "unity-mcp",
@@ -21683,7 +21710,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -21759,9 +21786,9 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 67,
-   "grupo": "g-gestores-de-contrasenas",
-   "complejidad": 2
+   "puntuacion": 68,
+   "complejidad": 2,
+   "grupo": "g-gestores-de-contrasenas"
   },
   {
    "id": "scenejs",
@@ -21837,7 +21864,7 @@
     "aprender"
    ],
    "source_archived": false,
-   "puntuacion": 30,
+   "puntuacion": 31,
    "complejidad": 1
   },
   {
@@ -21954,8 +21981,8 @@
    ],
    "source_archived": false,
    "puntuacion": 62,
-   "grupo": "g-agentes-de-voz-en-tiempo-real",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "papermorph",
@@ -21994,7 +22021,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 57,
    "complejidad": 2
   },
   {
@@ -22109,8 +22136,8 @@
    ],
    "source_archived": false,
    "puntuacion": 62,
-   "grupo": "g-obsidian-como-segundo-cerebro-para-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-obsidian-como-segundo-cerebro-para-agentes"
   },
   {
    "id": "open-seo",
@@ -22190,7 +22217,7 @@
     "mcp"
    ],
    "source_archived": false,
-   "puntuacion": 42,
+   "puntuacion": 43,
    "complejidad": 2
   },
   {
@@ -22267,7 +22294,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 78,
+   "puntuacion": 79,
    "complejidad": 2
   },
   {
@@ -22347,8 +22374,8 @@
    ],
    "source_archived": false,
    "puntuacion": 66,
-   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
   {
    "id": "cleanyourtv",
@@ -22461,7 +22488,7 @@
     "documentos"
    ],
    "source_archived": false,
-   "puntuacion": 45,
+   "puntuacion": 47,
    "complejidad": 2
   },
   {
@@ -22579,7 +22606,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 65,
+   "puntuacion": 68,
    "complejidad": 2
   },
   {
@@ -22616,7 +22643,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -22655,7 +22682,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 59,
    "complejidad": 2
   },
   {
@@ -22696,7 +22723,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 66,
+   "puntuacion": 65,
    "complejidad": 2
   },
   {
@@ -22735,8 +22762,8 @@
    ],
    "source_archived": false,
    "puntuacion": 70,
-   "grupo": "g-pruebas-de-carga",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-pruebas-de-carga"
   },
   {
    "id": "gsap-skills",
@@ -22812,7 +22839,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 42,
+   "puntuacion": 44,
    "complejidad": 2
   },
   {
@@ -22850,7 +22877,7 @@
     "programar"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -22892,7 +22919,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 71,
+   "puntuacion": 72,
    "complejidad": 2
   },
   {
@@ -22965,7 +22992,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 69,
    "complejidad": 2
   },
   {
@@ -23040,8 +23067,8 @@
    ],
    "source_archived": false,
    "puntuacion": 52,
-   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
   },
   {
    "id": "ilspy",
@@ -23110,7 +23137,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 58,
    "complejidad": 1
   },
   {
@@ -23148,8 +23175,8 @@
    ],
    "source_archived": false,
    "puntuacion": 56,
-   "grupo": "g-skills-para-redes-sociales",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-para-redes-sociales"
   },
   {
    "id": "linkedin-agent-skill",
@@ -23186,8 +23213,8 @@
    ],
    "source_archived": false,
    "puntuacion": 47,
-   "grupo": "g-skills-para-redes-sociales",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-para-redes-sociales"
   },
   {
    "id": "ai-website-cloner-template",
@@ -23304,7 +23331,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 71,
+   "puntuacion": 73,
    "complejidad": 2
   },
   {
@@ -23383,7 +23410,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 69,
    "complejidad": 2
   },
   {
@@ -23608,8 +23635,8 @@
    ],
    "source_archived": false,
    "puntuacion": 63,
-   "grupo": "g-pentesting-autonomo-con-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-pentesting-autonomo-con-agentes"
   },
   {
    "id": "konva",
@@ -23759,7 +23786,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 2
   },
   {
@@ -23922,7 +23949,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 42,
+   "puntuacion": 41,
    "complejidad": 2
   },
   {
@@ -24001,7 +24028,7 @@
     "local"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 52,
    "complejidad": 3
   },
   {
@@ -24036,7 +24063,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 53,
+   "puntuacion": 51,
    "complejidad": 2
   },
   {
@@ -24077,7 +24104,7 @@
     "local"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 3
   },
   {
@@ -24190,7 +24217,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 46,
+   "puntuacion": 47,
    "complejidad": 2
   },
   {
@@ -24264,7 +24291,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 34,
+   "puntuacion": 36,
    "complejidad": 1
   },
   {
@@ -24419,9 +24446,9 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 57,
-   "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
-   "complejidad": 3
+   "puntuacion": 58,
+   "complejidad": 3,
+   "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
   {
    "id": "laya",
@@ -24499,8 +24526,8 @@
    ],
    "source_archived": false,
    "puntuacion": 71,
-   "grupo": "g-ingenieria-inversa-y-desensambladores",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-ingenieria-inversa-y-desensambladores"
   },
   {
    "id": "nautilus-trader",
@@ -24535,7 +24562,7 @@
     "finanzas"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 2
   },
   {
@@ -24579,8 +24606,8 @@
    ],
    "source_archived": false,
    "puntuacion": 51,
-   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
   {
    "id": "jev-fraud",
@@ -24728,7 +24755,7 @@
     "notas"
    ],
    "source_archived": false,
-   "puntuacion": 42,
+   "puntuacion": 43,
    "complejidad": 1
   },
   {
@@ -24920,7 +24947,7 @@
     "mcp"
    ],
    "source_archived": false,
-   "puntuacion": 69,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -25037,8 +25064,8 @@
    ],
    "source_archived": false,
    "puntuacion": 58,
-   "grupo": "g-fotogrametria-con-drones",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-fotogrametria-con-drones"
   },
   {
    "id": "openfilm",
@@ -25078,7 +25105,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -25190,7 +25217,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -25226,7 +25253,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 1
   },
   {
@@ -25269,8 +25296,8 @@
    ],
    "source_archived": false,
    "puntuacion": 55,
-   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
   {
    "id": "planck-js",
@@ -25305,7 +25332,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -25341,7 +25368,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 47,
+   "puntuacion": 49,
    "complejidad": 2
   },
   {
@@ -25380,8 +25407,8 @@
    ],
    "source_archived": false,
    "puntuacion": 56,
-   "grupo": "g-backtesting-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-backtesting-en-python"
   },
   {
    "id": "py-sdk",
@@ -25456,7 +25483,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 68,
    "complejidad": 2
   },
   {
@@ -25496,8 +25523,8 @@
    ],
    "source_archived": false,
    "puntuacion": 69,
-   "grupo": "g-ingenieria-inversa-y-desensambladores",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-ingenieria-inversa-y-desensambladores"
   },
   {
    "id": "regl",
@@ -25532,7 +25559,7 @@
     "web"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -25571,8 +25598,8 @@
    ],
    "source_archived": false,
    "puntuacion": 48,
-   "grupo": "g-ingenieria-inversa-y-desensambladores",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-ingenieria-inversa-y-desensambladores"
   },
   {
    "id": "shepherd",
@@ -25607,7 +25634,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 49,
+   "puntuacion": 47,
    "complejidad": 2
   },
   {
@@ -25719,7 +25746,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 36,
+   "puntuacion": 37,
    "complejidad": 2
   },
   {
@@ -25802,8 +25829,8 @@
    ],
    "source_archived": false,
    "puntuacion": 76,
-   "grupo": "g-backends-como-servicio-auto-hospedados",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-backends-como-servicio-auto-hospedados"
   },
   {
    "id": "syncthing",
@@ -25990,7 +26017,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 49,
    "complejidad": 2
   },
   {
@@ -26035,8 +26062,8 @@
    ],
    "source_archived": false,
    "puntuacion": 72,
-   "grupo": "g-pentesting-autonomo-con-agentes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-pentesting-autonomo-con-agentes"
   },
   {
    "id": "mediabunny",
@@ -26071,7 +26098,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 2
   },
   {
@@ -26190,8 +26217,8 @@
    ],
    "source_archived": false,
    "puntuacion": 53,
-   "grupo": "g-skills-de-visualizacion-3d",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-skills-de-visualizacion-3d"
   },
   {
    "id": "video-shotcraft",
@@ -26269,7 +26296,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -26345,8 +26372,8 @@
    ],
    "source_archived": false,
    "puntuacion": 60,
-   "grupo": "g-fotogrametria-con-drones",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-fotogrametria-con-drones"
   },
   {
    "id": "imhex",
@@ -26613,7 +26640,7 @@
     "3d"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -26723,7 +26750,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 2
   },
   {
@@ -26767,7 +26794,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 41,
+   "puntuacion": 40,
    "complejidad": 1
   },
   {
@@ -26892,8 +26919,8 @@
     "antigravity"
    ],
    "puntuacion": 60,
-   "grupo": "g-servidores-mcp-de-neo4j",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-servidores-mcp-de-neo4j"
   },
   {
    "id": "deepseek-harness",
@@ -26978,8 +27005,8 @@
     "no_api"
    ],
    "puntuacion": 74,
-   "grupo": "g-obtencion-de-datos-en-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-obtencion-de-datos-en-react"
   },
   {
    "id": "antigravity-cli",
@@ -27024,9 +27051,9 @@
     "no_api",
     "antigravity"
    ],
-   "puntuacion": 27,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "puntuacion": 24,
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "openbot",
@@ -27074,8 +27101,8 @@
     "api"
    ],
    "puntuacion": 70,
-   "grupo": "g-espacios-de-asistentes-de-copilotkit",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-espacios-de-asistentes-de-copilotkit"
   },
   {
    "id": "hunyuanvideo-1-5",
@@ -27119,9 +27146,9 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 41,
-   "grupo": "g-modelos-abiertos-de-video-generativo",
-   "complejidad": 3
+   "puntuacion": 42,
+   "complejidad": 3,
+   "grupo": "g-modelos-abiertos-de-video-generativo"
   },
   {
    "id": "apache-iceberg",
@@ -27162,8 +27189,8 @@
     "no_api"
    ],
    "puntuacion": 62,
-   "grupo": "g-formatos-de-tabla-para-data-lakes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-formatos-de-tabla-para-data-lakes"
   },
   {
    "id": "delta-lake",
@@ -27204,8 +27231,8 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "grupo": "g-formatos-de-tabla-para-data-lakes",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-formatos-de-tabla-para-data-lakes"
   },
   {
    "id": "jupyterlab",
@@ -27245,8 +27272,8 @@
     "no_api"
    ],
    "puntuacion": 66,
-   "grupo": "g-notebooks",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-notebooks"
   },
   {
    "id": "pyannote-audio",
@@ -27370,9 +27397,9 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 53,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 1
+   "puntuacion": 54,
+   "complejidad": 1,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "airflow",
@@ -27414,8 +27441,8 @@
     "no_api"
    ],
    "puntuacion": 81,
-   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "temporal",
@@ -27496,8 +27523,8 @@
     "api"
    ],
    "puntuacion": 56,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "baserow",
@@ -27540,8 +27567,8 @@
     "api"
    ],
    "puntuacion": 50,
-   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-herramientas-internas-y-bases-de-datos-no-code"
   },
   {
    "id": "prefect",
@@ -27581,9 +27608,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68,
-   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas",
-   "complejidad": 2
+   "puntuacion": 69,
+   "complejidad": 2,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "dagster",
@@ -27624,8 +27651,8 @@
     "no_api"
    ],
    "puntuacion": 57,
-   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-orquestadores-de-workflows-de-datos-y-tareas"
   },
   {
    "id": "agentscope",
@@ -27664,7 +27691,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 2
   },
   {
@@ -27778,7 +27805,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 59,
+   "puntuacion": 60,
    "complejidad": 2
   },
   {
@@ -27895,8 +27922,8 @@
     "no_api"
    ],
    "puntuacion": 65,
-   "grupo": "g-lectores-rss-auto-hospedados",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-lectores-rss-auto-hospedados"
   },
   {
    "id": "wallabag",
@@ -27974,8 +28001,8 @@
     "no_api"
    ],
    "puntuacion": 58,
-   "grupo": "g-lectores-rss-auto-hospedados",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-lectores-rss-auto-hospedados"
   },
   {
    "id": "colly",
@@ -28049,7 +28076,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 66,
+   "puntuacion": 63,
    "complejidad": 1
   },
   {
@@ -28126,7 +28153,7 @@
     "claude",
     "codex"
    ],
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -28210,8 +28237,8 @@
     "api"
    ],
    "puntuacion": 59,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "meilisearch",
@@ -28249,7 +28276,7 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 56,
+   "puntuacion": 58,
    "complejidad": 1
   },
   {
@@ -28289,7 +28316,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 59,
+   "puntuacion": 61,
    "complejidad": 2
   },
   {
@@ -28329,7 +28356,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -28370,8 +28397,8 @@
     "no_api"
    ],
    "puntuacion": 62,
-   "grupo": "g-bases-y-librerias-vectoriales",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bases-y-librerias-vectoriales"
   },
   {
    "id": "ruff",
@@ -28448,9 +28475,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
-   "grupo": "g-deteccion-de-secretos-en-repos",
-   "complejidad": 1
+   "puntuacion": 63,
+   "complejidad": 1,
+   "grupo": "g-deteccion-de-secretos-en-repos"
   },
   {
    "id": "trufflehog",
@@ -28489,9 +28516,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
-   "grupo": "g-deteccion-de-secretos-en-repos",
-   "complejidad": 1
+   "puntuacion": 61,
+   "complejidad": 1,
+   "grupo": "g-deteccion-de-secretos-en-repos"
   },
   {
    "id": "biome",
@@ -28528,7 +28555,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 1
   },
   {
@@ -28566,7 +28593,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -28606,7 +28633,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
+   "puntuacion": 57,
    "complejidad": 2
   },
   {
@@ -28643,7 +28670,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 68,
    "complejidad": 1
   },
   {
@@ -28681,7 +28708,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71,
+   "puntuacion": 72,
    "complejidad": 1
   },
   {
@@ -28719,7 +28746,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 53,
+   "puntuacion": 52,
    "complejidad": 1
   },
   {
@@ -28759,7 +28786,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 51,
+   "puntuacion": 52,
    "complejidad": 2
   },
   {
@@ -28800,9 +28827,9 @@
    "routes": [
     "api"
    ],
-   "puntuacion": 63,
-   "grupo": "g-interfaces-de-chat-con-llm",
-   "complejidad": 2
+   "puntuacion": 64,
+   "complejidad": 2,
+   "grupo": "g-interfaces-de-chat-con-llm"
   },
   {
    "id": "mlc-llm",
@@ -28840,7 +28867,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 56,
+   "puntuacion": 57,
    "complejidad": 3
   },
   {
@@ -28881,9 +28908,9 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 46,
-   "grupo": "g-motores-para-correr-llm-en-local",
-   "complejidad": 3
+   "puntuacion": 47,
+   "complejidad": 3,
+   "grupo": "g-motores-para-correr-llm-en-local"
   },
   {
    "id": "mlx-lm",
@@ -28921,7 +28948,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 59,
+   "puntuacion": 56,
    "complejidad": 3
   },
   {
@@ -28959,7 +28986,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 81,
+   "puntuacion": 80,
    "complejidad": 2
   },
   {
@@ -29000,8 +29027,8 @@
     "no_api"
    ],
    "puntuacion": 70,
-   "grupo": "g-mapas-web-interactivos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-mapas-web-interactivos"
   },
   {
    "id": "sherlock",
@@ -29041,8 +29068,8 @@
     "no_api"
    ],
    "puntuacion": 67,
-   "grupo": "g-busqueda-de-usuarios-en-redes-sociales",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-busqueda-de-usuarios-en-redes-sociales"
   },
   {
    "id": "maigret",
@@ -29082,8 +29109,8 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "grupo": "g-busqueda-de-usuarios-en-redes-sociales",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-busqueda-de-usuarios-en-redes-sociales"
   },
   {
    "id": "upscayl",
@@ -29157,7 +29184,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 60,
    "complejidad": 1
   },
   {
@@ -29277,8 +29304,8 @@
     "no_api"
    ],
    "puntuacion": 64,
-   "grupo": "g-bibliotecas-de-componentes-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "mantine",
@@ -29319,8 +29346,8 @@
     "no_api"
    ],
    "puntuacion": 58,
-   "grupo": "g-bibliotecas-de-componentes-react",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bibliotecas-de-componentes-react"
   },
   {
    "id": "evidence",
@@ -29420,7 +29447,7 @@
    "pick": false,
    "one": "Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D.",
    "alt": [],
-   "doc": "human/fichas/deck.gl.md",
+   "doc": "human/fichas/deck-gl.md",
    "github_id": 48030204,
    "lang": "TypeScript",
    "license": "MIT",
@@ -29474,8 +29501,8 @@
     "no_api"
    ],
    "puntuacion": 67,
-   "grupo": "g-mapas-web-interactivos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-mapas-web-interactivos"
   },
   {
    "id": "kepler.gl",
@@ -29499,7 +29526,7 @@
    "pick": false,
    "one": "Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter.",
    "alt": [],
-   "doc": "human/fichas/kepler.gl.md",
+   "doc": "human/fichas/kepler-gl.md",
    "github_id": 123345344,
    "lang": "TypeScript",
    "license": "MIT",
@@ -29588,7 +29615,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 47,
+   "puntuacion": 44,
    "complejidad": 2
   },
   {
@@ -29667,9 +29694,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59,
-   "grupo": "g-editores-de-video",
-   "complejidad": 1
+   "puntuacion": 60,
+   "complejidad": 1,
+   "grupo": "g-editores-de-video"
   },
   {
    "id": "kdenlive",
@@ -29710,8 +29737,8 @@
     "no_api"
    ],
    "puntuacion": 59,
-   "grupo": "g-editores-de-video",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-editores-de-video"
   },
   {
    "id": "xberg",
@@ -29753,8 +29780,8 @@
     "api"
    ],
    "puntuacion": 63,
-   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "tika",
@@ -29796,8 +29823,8 @@
     "api"
    ],
    "puntuacion": 59,
-   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-conversion-de-documentos-a-markdown-json-para-ia"
   },
   {
    "id": "openbb",
@@ -29834,7 +29861,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73,
+   "puntuacion": 74,
    "complejidad": 2
   },
   {
@@ -29876,8 +29903,8 @@
     "local_model"
    ],
    "puntuacion": 81,
-   "grupo": "g-gestion-de-fotos-auto-hospedada",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-gestion-de-fotos-auto-hospedada"
   },
   {
    "id": "frigate",
@@ -29915,7 +29942,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 69,
+   "puntuacion": 70,
    "complejidad": 3
   },
   {
@@ -30032,8 +30059,8 @@
     "no_api"
    ],
    "puntuacion": 68,
-   "grupo": "g-bloqueo-de-anuncios-por-dns",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-bloqueo-de-anuncios-por-dns"
   },
   {
    "id": "fingpt",
@@ -30072,7 +30099,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 54,
+   "puntuacion": 55,
    "complejidad": 3
   },
   {
@@ -30110,7 +30137,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -30149,9 +30176,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51,
-   "grupo": "g-backtesting-en-python",
-   "complejidad": 2
+   "puntuacion": 52,
+   "complejidad": 2,
+   "grupo": "g-backtesting-en-python"
   },
   {
    "id": "photoprism",
@@ -30192,8 +30219,8 @@
     "local_model"
    ],
    "puntuacion": 66,
-   "grupo": "g-gestion-de-fotos-auto-hospedada",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-gestion-de-fotos-auto-hospedada"
   },
   {
    "id": "zigbee2mqtt",
@@ -30268,7 +30295,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 61,
    "complejidad": 2
   },
   {
@@ -30308,9 +30335,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 45,
-   "grupo": "g-bibliotecas-de-libros-y-comics",
-   "complejidad": 1
+   "puntuacion": 42,
+   "complejidad": 1,
+   "grupo": "g-bibliotecas-de-libros-y-comics"
   },
   {
    "id": "kavita",
@@ -30350,8 +30377,8 @@
     "no_api"
    ],
    "puntuacion": 57,
-   "grupo": "g-bibliotecas-de-libros-y-comics",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-bibliotecas-de-libros-y-comics"
   },
   {
    "id": "joplin",
@@ -30391,9 +30418,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57,
-   "grupo": "g-notas-y-bases-de-conocimiento-personales",
-   "complejidad": 1
+   "puntuacion": 58,
+   "complejidad": 1,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "siyuan",
@@ -30436,8 +30463,8 @@
     "api"
    ],
    "puntuacion": 79,
-   "grupo": "g-notas-y-bases-de-conocimiento-personales",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "logseq",
@@ -30479,8 +30506,8 @@
     "no_api"
    ],
    "puntuacion": 59,
-   "grupo": "g-notas-y-bases-de-conocimiento-personales",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "trilium",
@@ -30522,9 +30549,9 @@
     "no_api",
     "api"
    ],
-   "puntuacion": 64,
-   "grupo": "g-notas-y-bases-de-conocimiento-personales",
-   "complejidad": 1
+   "puntuacion": 65,
+   "complejidad": 1,
+   "grupo": "g-notas-y-bases-de-conocimiento-personales"
   },
   {
    "id": "actual",
@@ -30564,8 +30591,8 @@
     "no_api"
    ],
    "puntuacion": 73,
-   "grupo": "g-finanzas-personales",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-finanzas-personales"
   },
   {
    "id": "firefly-iii",
@@ -30605,8 +30632,8 @@
     "no_api"
    ],
    "puntuacion": 62,
-   "grupo": "g-finanzas-personales",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-finanzas-personales"
   },
   {
    "id": "ghostfolio",
@@ -30643,7 +30670,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -30725,8 +30752,8 @@
     "no_api"
    ],
    "puntuacion": 79,
-   "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores"
   },
   {
    "id": "metasploit",
@@ -30839,7 +30866,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 86,
+   "puntuacion": 85,
    "complejidad": 1
   },
   {
@@ -30915,7 +30942,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 70,
+   "puntuacion": 67,
    "complejidad": 1
   },
   {
@@ -30953,7 +30980,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 60,
+   "puntuacion": 58,
    "complejidad": 1
   },
   {
@@ -30991,7 +31018,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 75,
    "complejidad": 3
   },
   {
@@ -31028,7 +31055,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56,
+   "puntuacion": 55,
    "complejidad": 1
   },
   {
@@ -31070,8 +31097,8 @@
     "no_api"
    ],
    "puntuacion": 76,
-   "grupo": "g-bloqueo-de-ip-por-comportamiento",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bloqueo-de-ip-por-comportamiento"
   },
   {
    "id": "locust",
@@ -31111,8 +31138,8 @@
     "no_api"
    ],
    "puntuacion": 78,
-   "grupo": "g-pruebas-de-carga",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-pruebas-de-carga"
   },
   {
    "id": "hashcat",
@@ -31152,8 +31179,8 @@
     "no_api"
    ],
    "puntuacion": 62,
-   "grupo": "g-cracking-de-contrasenas",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-cracking-de-contrasenas"
   },
   {
    "id": "ffuf",
@@ -31193,9 +31220,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 69,
-   "grupo": "g-fuzzing-de-rutas-y-contenido-web",
-   "complejidad": 1
+   "puntuacion": 66,
+   "complejidad": 1,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "zaproxy",
@@ -31235,8 +31262,8 @@
     "no_api"
    ],
    "puntuacion": 74,
-   "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-proxies-de-pruebas-de-aplicaciones-web"
   },
   {
    "id": "subfinder",
@@ -31314,9 +31341,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
-   "grupo": "g-cracking-de-contrasenas",
-   "complejidad": 2
+   "puntuacion": 55,
+   "complejidad": 2,
+   "grupo": "g-cracking-de-contrasenas"
   },
   {
    "id": "wireshark",
@@ -31509,8 +31536,8 @@
     "api"
    ],
    "puntuacion": 60,
-   "grupo": "g-agentes-de-codigo-en-el-editor",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-agentes-de-codigo-en-el-editor"
   },
   {
    "id": "qwen-code",
@@ -31552,8 +31579,8 @@
     "api"
    ],
    "puntuacion": 64,
-   "grupo": "g-agentes-de-programacion-en-terminal",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-de-programacion-en-terminal"
   },
   {
    "id": "uptime-kuma",
@@ -31590,7 +31617,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 76,
    "complejidad": 1
   },
   {
@@ -31631,8 +31658,8 @@
     "no_api"
    ],
    "puntuacion": 67,
-   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-paneles-de-auto-hospedaje-y-paas-propios"
   },
   {
    "id": "frp",
@@ -31669,7 +31696,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 59,
    "complejidad": 2
   },
   {
@@ -31709,9 +31736,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 69,
-   "grupo": "g-redes-privadas-tipo-mesh-wireguard",
-   "complejidad": 2
+   "puntuacion": 67,
+   "complejidad": 2,
+   "grupo": "g-redes-privadas-tipo-mesh-wireguard"
   },
   {
    "id": "discord-js",
@@ -31791,8 +31818,8 @@
     "no_api"
    ],
    "puntuacion": 75,
-   "grupo": "g-chat-de-equipo-auto-hospedado",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-chat-de-equipo-auto-hospedado"
   },
   {
    "id": "mattermost",
@@ -31833,8 +31860,8 @@
     "no_api"
    ],
    "puntuacion": 71,
-   "grupo": "g-chat-de-equipo-auto-hospedado",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-chat-de-equipo-auto-hospedado"
   },
   {
    "id": "synapse",
@@ -31908,7 +31935,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 50,
+   "puntuacion": 47,
    "complejidad": 2
   },
   {
@@ -31949,8 +31976,8 @@
     "no_api"
    ],
    "puntuacion": 58,
-   "grupo": "g-help-desk-y-tickets",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-help-desk-y-tickets"
   },
   {
    "id": "freescout",
@@ -31990,8 +32017,8 @@
     "no_api"
    ],
    "puntuacion": 59,
-   "grupo": "g-help-desk-y-tickets",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-help-desk-y-tickets"
   },
   {
    "id": "espocrm",
@@ -32033,8 +32060,8 @@
     "no_api"
    ],
    "puntuacion": 53,
-   "grupo": "g-crm-y-erp-auto-hospedados",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "easyappointments",
@@ -32074,8 +32101,8 @@
     "no_api"
    ],
    "puntuacion": 47,
-   "grupo": "g-reservas-y-citas",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-reservas-y-citas"
   },
   {
    "id": "zed",
@@ -32156,8 +32183,8 @@
     "api"
    ],
    "puntuacion": 52,
-   "grupo": "g-agentes-que-resuelven-issues-de-software",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-agentes-que-resuelven-issues-de-software"
   },
   {
    "id": "caddy",
@@ -32197,8 +32224,8 @@
     "no_api"
    ],
    "puntuacion": 70,
-   "grupo": "g-proxies-inversos-con-https-automatico",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-proxies-inversos-con-https-automatico"
   },
   {
    "id": "traefik",
@@ -32238,8 +32265,8 @@
     "no_api"
    ],
    "puntuacion": 70,
-   "grupo": "g-proxies-inversos-con-https-automatico",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-proxies-inversos-con-https-automatico"
   },
   {
    "id": "appwrite",
@@ -32279,9 +32306,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73,
-   "grupo": "g-backends-como-servicio-auto-hospedados",
-   "complejidad": 2
+   "puntuacion": 72,
+   "complejidad": 2,
+   "grupo": "g-backends-como-servicio-auto-hospedados"
   },
   {
    "id": "portainer",
@@ -32318,7 +32345,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 66,
+   "puntuacion": 71,
    "complejidad": 1
   },
   {
@@ -32359,8 +32386,8 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "grupo": "g-redes-privadas-tipo-mesh-wireguard",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-redes-privadas-tipo-mesh-wireguard"
   },
   {
    "id": "wg-easy",
@@ -32397,7 +32424,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -32438,7 +32465,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -32522,8 +32549,8 @@
     "local_model"
    ],
    "puntuacion": 65,
-   "grupo": "g-fine-tuning-de-llm",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "openllmetry",
@@ -32560,7 +32587,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 62,
    "complejidad": 2
   },
   {
@@ -32601,8 +32628,8 @@
     "no_api"
    ],
    "puntuacion": 50,
-   "grupo": "g-observabilidad-y-trazas-de-llm",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-observabilidad-y-trazas-de-llm"
   },
   {
    "id": "ray",
@@ -32640,7 +32667,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74,
+   "puntuacion": 76,
    "complejidad": 2
   },
   {
@@ -32679,7 +32706,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 66,
+   "puntuacion": 67,
    "complejidad": 3
   },
   {
@@ -32717,7 +32744,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 59,
    "complejidad": 2
   },
   {
@@ -32756,7 +32783,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 62,
+   "puntuacion": 64,
    "complejidad": 3
   },
   {
@@ -32875,8 +32902,8 @@
     "no_api"
    ],
    "puntuacion": 64,
-   "grupo": "g-frameworks-de-deep-learning",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-frameworks-de-deep-learning"
   },
   {
    "id": "pytorch-lightning",
@@ -32954,8 +32981,8 @@
     "local_model"
    ],
    "puntuacion": 68,
-   "grupo": "g-aprendizaje-por-refuerzo-para-llm",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-aprendizaje-por-refuerzo-para-llm"
   },
   {
    "id": "openrlhf",
@@ -32996,8 +33023,8 @@
     "local_model"
    ],
    "puntuacion": 58,
-   "grupo": "g-aprendizaje-por-refuerzo-para-llm",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-aprendizaje-por-refuerzo-para-llm"
   },
   {
    "id": "accelerate",
@@ -33077,8 +33104,8 @@
     "local_model"
    ],
    "puntuacion": 52,
-   "grupo": "g-fine-tuning-de-llm",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-fine-tuning-de-llm"
   },
   {
    "id": "gemma",
@@ -33159,8 +33186,8 @@
     "no_api"
    ],
    "puntuacion": 77,
-   "grupo": "g-procesamiento-de-datos-tabulares",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-procesamiento-de-datos-tabulares"
   },
   {
    "id": "dbt",
@@ -33242,8 +33269,8 @@
     "no_api"
    ],
    "puntuacion": 71,
-   "grupo": "g-apps-web-de-datos-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "nicegui",
@@ -33287,8 +33314,8 @@
     "no_api"
    ],
    "puntuacion": 68,
-   "grupo": "g-apps-web-de-datos-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "panel",
@@ -33332,8 +33359,8 @@
     "no_api"
    ],
    "puntuacion": 55,
-   "grupo": "g-apps-web-de-datos-en-python",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-apps-web-de-datos-en-python"
   },
   {
    "id": "clickhouse",
@@ -33606,8 +33633,8 @@
     "no_api"
    ],
    "puntuacion": 77,
-   "grupo": "g-motores-de-videojuegos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-motores-de-videojuegos"
   },
   {
    "id": "pixijs",
@@ -33645,7 +33672,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 2
   },
   {
@@ -33688,8 +33715,8 @@
     "no_api"
    ],
    "puntuacion": 67,
-   "grupo": "g-motores-3d-para-la-web",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-motores-3d-para-la-web"
   },
   {
    "id": "playcanvas",
@@ -33730,9 +33757,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65,
-   "grupo": "g-motores-3d-para-la-web",
-   "complejidad": 2
+   "puntuacion": 66,
+   "complejidad": 2,
+   "grupo": "g-motores-3d-para-la-web"
   },
   {
    "id": "bevy",
@@ -33773,8 +33800,8 @@
     "no_api"
    ],
    "puntuacion": 66,
-   "grupo": "g-motores-de-videojuegos",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-motores-de-videojuegos"
   },
   {
    "id": "freecad",
@@ -33811,7 +33838,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71,
+   "puntuacion": 72,
    "complejidad": 1
   },
   {
@@ -33849,7 +33876,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59,
+   "puntuacion": 61,
    "complejidad": 1
   },
   {
@@ -33888,7 +33915,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74,
+   "puntuacion": 75,
    "complejidad": 3
   },
   {
@@ -33927,7 +33954,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74,
+   "puntuacion": 75,
    "complejidad": 2
   },
   {
@@ -34049,8 +34076,8 @@
     "no_api"
    ],
    "puntuacion": 68,
-   "grupo": "g-etiquetado-de-datos-para-vision",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-etiquetado-de-datos-para-vision"
   },
   {
    "id": "dlib",
@@ -34128,7 +34155,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 61,
+   "puntuacion": 58,
    "complejidad": 3
   },
   {
@@ -34168,7 +34195,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 67,
+   "puntuacion": 65,
    "complejidad": 3
   },
   {
@@ -34211,9 +34238,9 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 63,
-   "grupo": "g-clonacion-de-voz-y-tts-multilingue",
-   "complejidad": 3
+   "puntuacion": 64,
+   "complejidad": 3,
+   "grupo": "g-clonacion-de-voz-y-tts-multilingue"
   },
   {
    "id": "audacity",
@@ -34289,7 +34316,7 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 59,
+   "puntuacion": 56,
    "complejidad": 3
   },
   {
@@ -34332,8 +34359,8 @@
     "local_model"
    ],
    "puntuacion": 67,
-   "grupo": "g-generacion-de-musica",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-generacion-de-musica"
   },
   {
    "id": "ten-framework",
@@ -34376,8 +34403,8 @@
     "api"
    ],
    "puntuacion": 46,
-   "grupo": "g-agentes-de-voz-en-tiempo-real",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-agentes-de-voz-en-tiempo-real"
   },
   {
    "id": "motion-canvas",
@@ -34419,8 +34446,8 @@
     "no_api"
    ],
    "puntuacion": 56,
-   "grupo": "g-video-y-escenas-por-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "revideo",
@@ -34462,8 +34489,8 @@
     "no_api"
    ],
    "puntuacion": 51,
-   "grupo": "g-video-y-escenas-por-codigo",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-video-y-escenas-por-codigo"
   },
   {
    "id": "d2",
@@ -34505,8 +34532,8 @@
     "no_api"
    ],
    "puntuacion": 58,
-   "grupo": "g-diagramas-como-codigo",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-diagramas-como-codigo"
   },
   {
    "id": "drawio",
@@ -34586,8 +34613,8 @@
     "no_api"
    ],
    "puntuacion": 55,
-   "grupo": "g-diagramas-como-codigo",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-diagramas-como-codigo"
   },
   {
    "id": "kroki",
@@ -34664,7 +34691,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 55,
    "complejidad": 1
   },
   {
@@ -34703,7 +34730,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48,
+   "puntuacion": 49,
    "complejidad": 2
   },
   {
@@ -34828,8 +34855,8 @@
     "no_api"
    ],
    "puntuacion": 65,
-   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "webdriverio",
@@ -34873,8 +34900,8 @@
     "no_api"
    ],
    "puntuacion": 60,
-   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-automatizacion-de-navegador-y-pruebas-e2e"
   },
   {
    "id": "ladybird",
@@ -34915,8 +34942,8 @@
     "no_api"
    ],
    "puntuacion": 72,
-   "grupo": "g-motores-de-navegador-independientes",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-motores-de-navegador-independientes"
   },
   {
    "id": "servo",
@@ -34958,8 +34985,8 @@
     "local_model"
    ],
    "puntuacion": 58,
-   "grupo": "g-motores-de-navegador-independientes",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-motores-de-navegador-independientes"
   },
   {
    "id": "amass",
@@ -35037,8 +35064,8 @@
     "no_api"
    ],
    "puntuacion": 77,
-   "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-sondeo-y-escaneo-de-reconocimiento"
   },
   {
    "id": "naabu",
@@ -35077,8 +35104,8 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-sondeo-y-escaneo-de-reconocimiento"
   },
   {
    "id": "impacket",
@@ -35192,9 +35219,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
-   "grupo": "g-frameworks-de-c2-y-post-explotacion",
-   "complejidad": 4
+   "puntuacion": 68,
+   "complejidad": 4,
+   "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
   {
    "id": "atomic-red-team",
@@ -35231,9 +35258,9 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 65,
-   "grupo": "g-emulacion-de-adversarios",
-   "complejidad": 1
+   "puntuacion": 62,
+   "complejidad": 1,
+   "grupo": "g-emulacion-de-adversarios"
   },
   {
    "id": "caldera",
@@ -35270,8 +35297,8 @@
     "no_api"
    ],
    "puntuacion": 64,
-   "grupo": "g-emulacion-de-adversarios",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-emulacion-de-adversarios"
   },
   {
    "id": "falco",
@@ -35307,7 +35334,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 74,
+   "puntuacion": 76,
    "complejidad": 4
   },
   {
@@ -35344,7 +35371,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 71,
    "complejidad": 2
   },
   {
@@ -35381,7 +35408,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73,
+   "puntuacion": 74,
    "complejidad": 1
   },
   {
@@ -35420,9 +35447,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71,
-   "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores",
-   "complejidad": 1
+   "puntuacion": 68,
+   "complejidad": 1,
+   "grupo": "g-escaneres-de-vulnerabilidades-de-contenedores"
   },
   {
    "id": "suricata",
@@ -35458,7 +35485,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 4
   },
   {
@@ -35758,8 +35785,8 @@
     "reference"
    ],
    "puntuacion": 66,
-   "grupo": "g-listas-de-payloads-y-diccionarios",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-listas-de-payloads-y-diccionarios"
   },
   {
    "id": "payloadsallthethings",
@@ -35799,8 +35826,8 @@
     "reference"
    ],
    "puntuacion": 63,
-   "grupo": "g-listas-de-payloads-y-diccionarios",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-listas-de-payloads-y-diccionarios"
   },
   {
    "id": "evilginx2",
@@ -35836,7 +35863,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55,
+   "puntuacion": 52,
    "complejidad": 4
   },
   {
@@ -36021,9 +36048,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59,
-   "grupo": "g-fuzzing-de-rutas-y-contenido-web",
-   "complejidad": 1
+   "puntuacion": 56,
+   "complejidad": 1,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "feroxbuster",
@@ -36063,8 +36090,8 @@
     "no_api"
    ],
    "puntuacion": 58,
-   "grupo": "g-fuzzing-de-rutas-y-contenido-web",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "dirsearch",
@@ -36102,9 +36129,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
-   "grupo": "g-fuzzing-de-rutas-y-contenido-web",
-   "complejidad": 1
+   "puntuacion": 58,
+   "complejidad": 1,
+   "grupo": "g-fuzzing-de-rutas-y-contenido-web"
   },
   {
    "id": "rustscan",
@@ -36139,7 +36166,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
+   "puntuacion": 60,
    "complejidad": 1
   },
   {
@@ -36175,7 +36202,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
+   "puntuacion": 52,
    "complejidad": 2
   },
   {
@@ -36211,7 +36238,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52,
+   "puntuacion": 53,
    "complejidad": 2
   },
   {
@@ -36250,8 +36277,8 @@
     "no_api"
    ],
    "puntuacion": 75,
-   "grupo": "g-aplicaciones-web-vulnerables-para-practicar",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-aplicaciones-web-vulnerables-para-practicar"
   },
   {
    "id": "certipy",
@@ -36286,7 +36313,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
+   "puntuacion": 50,
    "complejidad": 3
   },
   {
@@ -36322,7 +36349,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48,
+   "puntuacion": 45,
    "complejidad": 3
   },
   {
@@ -36394,7 +36421,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52,
+   "puntuacion": 49,
    "complejidad": 3
   },
   {
@@ -36469,9 +36496,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 51,
-   "grupo": "g-frameworks-de-c2-y-post-explotacion",
-   "complejidad": 4
+   "puntuacion": 48,
+   "complejidad": 4,
+   "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
   {
    "id": "empire",
@@ -36510,8 +36537,8 @@
     "no_api"
    ],
    "puntuacion": 60,
-   "grupo": "g-frameworks-de-c2-y-post-explotacion",
-   "complejidad": 4
+   "complejidad": 4,
+   "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
   {
    "id": "kube-bench",
@@ -36546,7 +36573,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 56,
    "complejidad": 2
   },
   {
@@ -36584,9 +36611,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 77,
-   "grupo": "g-generadores-de-sbom",
-   "complejidad": 1
+   "puntuacion": 71,
+   "complejidad": 1,
+   "grupo": "g-generadores-de-sbom"
   },
   {
    "id": "cosign",
@@ -36621,7 +36648,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 71,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -36658,8 +36685,8 @@
     "no_api"
    ],
    "puntuacion": 79,
-   "grupo": "g-analisis-de-dependencias-vulnerables",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-analisis-de-dependencias-vulnerables"
   },
   {
    "id": "pacu",
@@ -36766,7 +36793,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 4
   },
   {
@@ -36802,7 +36829,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 61,
    "complejidad": 3
   },
   {
@@ -36841,8 +36868,8 @@
     "no_api"
    ],
    "puntuacion": 42,
-   "grupo": "g-analisis-forense-de-discos",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-analisis-forense-de-discos"
   },
   {
    "id": "autopsy",
@@ -36880,8 +36907,8 @@
     "no_api"
    ],
    "puntuacion": 46,
-   "grupo": "g-analisis-forense-de-discos",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-analisis-forense-de-discos"
   },
   {
    "id": "capa",
@@ -36952,7 +36979,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67,
+   "puntuacion": 68,
    "complejidad": 2
   },
   {
@@ -37060,7 +37087,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 57,
+   "puntuacion": 55,
    "complejidad": 4
   },
   {
@@ -37168,7 +37195,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 1
   },
   {
@@ -37207,8 +37234,8 @@
     "no_api"
    ],
    "puntuacion": 62,
-   "grupo": "g-bloqueo-de-ip-por-comportamiento",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-bloqueo-de-ip-por-comportamiento"
   },
   {
    "id": "coreruleset",
@@ -37244,7 +37271,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 1
   },
   {
@@ -37280,7 +37307,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 52,
+   "puntuacion": 53,
    "complejidad": 2
   },
   {
@@ -37317,7 +37344,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 1
   },
   {
@@ -37430,8 +37457,8 @@
     "no_api"
    ],
    "puntuacion": 39,
-   "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
-   "complejidad": 1
+   "complejidad": 1,
+   "grupo": "g-proxies-de-pruebas-de-aplicaciones-web"
   },
   {
    "id": "loki",
@@ -37466,7 +37493,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 41,
+   "puntuacion": 42,
    "complejidad": 1
   },
   {
@@ -37503,7 +37530,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 48,
+   "puntuacion": 49,
    "complejidad": 1
   },
   {
@@ -37539,7 +37566,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55,
+   "puntuacion": 56,
    "complejidad": 3
   },
   {
@@ -37575,7 +37602,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 48,
+   "puntuacion": 45,
    "complejidad": 3
   },
   {
@@ -37611,7 +37638,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 3
   },
   {
@@ -37683,7 +37710,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -37721,9 +37748,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
-   "grupo": "g-gestores-de-contrasenas",
-   "complejidad": 1
+   "puntuacion": 55,
+   "complejidad": 1,
+   "grupo": "g-gestores-de-contrasenas"
   },
   {
    "id": "formbricks",
@@ -37801,8 +37828,8 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "grupo": "g-chat-de-equipo-auto-hospedado",
-   "complejidad": 3
+   "complejidad": 3,
+   "grupo": "g-chat-de-equipo-auto-hospedado"
   },
   {
    "id": "element-web",
@@ -37877,9 +37904,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67,
-   "grupo": "g-proveedores-de-identidad-y-sso",
-   "complejidad": 3
+   "puntuacion": 68,
+   "complejidad": 3,
+   "grupo": "g-proveedores-de-identidad-y-sso"
   },
   {
    "id": "keycloak",
@@ -37917,9 +37944,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 67,
-   "grupo": "g-proveedores-de-identidad-y-sso",
-   "complejidad": 3
+   "puntuacion": 68,
+   "complejidad": 3,
+   "grupo": "g-proveedores-de-identidad-y-sso"
   },
   {
    "id": "dagger",
@@ -37956,7 +37983,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -37997,8 +38024,8 @@
     "no_api"
    ],
    "puntuacion": 45,
-   "grupo": "g-crm-y-erp-auto-hospedados",
-   "complejidad": 2
+   "complejidad": 2,
+   "grupo": "g-crm-y-erp-auto-hospedados"
   },
   {
    "id": "dependency-track",
@@ -38076,7 +38103,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 73,
+   "puntuacion": 72,
    "complejidad": 2
   },
   {
@@ -38115,9 +38142,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 63,
-   "grupo": "g-analisis-de-dependencias-vulnerables",
-   "complejidad": 1
+   "puntuacion": 60,
+   "complejidad": 1,
+   "grupo": "g-analisis-de-dependencias-vulnerables"
   },
   {
    "id": "modsecurity",
@@ -38158,9 +38185,9 @@
     "no_api",
     "local_model"
    ],
-   "puntuacion": 66,
-   "grupo": "g-waf-compatibles-con-seclang",
-   "complejidad": 4
+   "puntuacion": 70,
+   "complejidad": 4,
+   "grupo": "g-waf-compatibles-con-seclang"
   },
   {
    "id": "coraza",
@@ -38199,9 +38226,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
-   "grupo": "g-waf-compatibles-con-seclang",
-   "complejidad": 2
+   "puntuacion": 59,
+   "complejidad": 2,
+   "grupo": "g-waf-compatibles-con-seclang"
   },
   {
    "id": "nettacker",
@@ -38238,7 +38265,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 61,
    "complejidad": 1
   },
   {
@@ -38278,9 +38305,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65,
-   "grupo": "g-modelado-de-amenazas",
-   "complejidad": 1
+   "puntuacion": 70,
+   "complejidad": 1,
+   "grupo": "g-modelado-de-amenazas"
   },
   {
    "id": "webgoat",
@@ -38320,9 +38347,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
-   "grupo": "g-aplicaciones-web-vulnerables-para-practicar",
-   "complejidad": 1
+   "puntuacion": 58,
+   "complejidad": 1,
+   "grupo": "g-aplicaciones-web-vulnerables-para-practicar"
   },
   {
    "id": "wstg",
@@ -38441,7 +38468,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 1
   },
   {
@@ -38481,7 +38508,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 56,
+   "puntuacion": 53,
    "complejidad": 1
   },
   {
@@ -38564,7 +38591,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 42,
+   "puntuacion": 39,
    "complejidad": 1
   },
   {
@@ -38604,7 +38631,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 54,
+   "puntuacion": 51,
    "complejidad": 1
   },
   {
@@ -38762,7 +38789,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55,
+   "puntuacion": 56,
    "complejidad": 2
   },
   {
@@ -38842,9 +38869,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59,
-   "grupo": "g-analisis-de-dependencias-vulnerables",
-   "complejidad": 1
+   "puntuacion": 58,
+   "complejidad": 1,
+   "grupo": "g-analisis-de-dependencias-vulnerables"
   },
   {
    "id": "cdxgen",
@@ -38885,9 +38912,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
-   "grupo": "g-generadores-de-sbom",
-   "complejidad": 1
+   "puntuacion": 63,
+   "complejidad": 1,
+   "grupo": "g-generadores-de-sbom"
   },
   {
    "id": "securecodebox",
@@ -38966,7 +38993,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 46,
+   "puntuacion": 44,
    "complejidad": 2
   },
   {
@@ -39047,9 +39074,9 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
-   "grupo": "g-modelado-de-amenazas",
-   "complejidad": 2
+   "puntuacion": 58,
+   "complejidad": 2,
+   "grupo": "g-modelado-de-amenazas"
   },
   {
    "id": "java-html-sanitizer",
@@ -39087,7 +39114,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -39126,7 +39153,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 56,
+   "puntuacion": 54,
    "complejidad": 2
   },
   {
@@ -39169,7 +39196,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 64
   },
   {
    "id": "libretranslate",
@@ -39210,7 +39238,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 57
   },
   {
    "id": "ccusage",
@@ -39250,7 +39279,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 71
   },
   {
    "id": "android-skills",
@@ -39291,7 +39321,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 63
   },
   {
    "id": "claude-ads",
@@ -39325,7 +39356,8 @@
     "no_api",
     "claude"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 57
   },
   {
    "id": "apscheduler",
@@ -39358,7 +39390,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 58
   },
   {
    "id": "knowledge-work-plugins",
@@ -39392,7 +39425,8 @@
     "no_api",
     "claude"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 62
   },
   {
    "id": "semantic-router",
@@ -39428,7 +39462,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 55
   },
   {
    "id": "celery",
@@ -39461,7 +39496,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 60
   },
   {
    "id": "kitesurf",
@@ -39494,7 +39530,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 57
   },
   {
    "id": "humans-md-plugins",
@@ -39530,7 +39567,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 43
   },
   {
    "id": "video2threejs",
@@ -39564,7 +39602,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 35
   },
   {
    "id": "pybreaker",
@@ -39597,7 +39636,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 43
   },
   {
    "id": "claude-code-templates",
@@ -39631,7 +39671,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 61
   },
   {
    "id": "isponsorblocktv",
@@ -39662,7 +39703,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 46
   },
   {
    "id": "prediction-market-backtesting",
@@ -39695,7 +39737,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 32
   },
   {
    "id": "chonkie",
@@ -39730,7 +39773,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 51
   },
   {
    "id": "flagembedding",
@@ -39764,7 +39808,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 57
   },
   {
    "id": "robotics-antigravity-plugin",
@@ -39798,7 +39843,8 @@
     "antigravity",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 48
   },
   {
    "id": "hyperframes-launches",
@@ -39832,7 +39878,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 55
   },
   {
    "id": "ha-mcp",
@@ -39868,7 +39915,8 @@
     "codex",
     "local_model"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 68
   },
   {
    "id": "claude-second-brain",
@@ -39903,7 +39951,8 @@
     "no_api",
     "claude"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 41
   },
   {
    "id": "ffmpeg-skill",
@@ -39938,7 +39987,8 @@
     "claude",
     "codex"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 70
   },
   {
    "id": "hishel",
@@ -39971,7 +40021,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 53
   },
   {
    "id": "astryx",
@@ -40004,7 +40055,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 72
   },
   {
    "id": "llmlingua",
@@ -40038,7 +40090,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 49
   },
   {
    "id": "motionbricks",
@@ -40072,7 +40125,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 55
   },
   {
    "id": "openjarvis",
@@ -40107,7 +40161,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 58
   },
   {
    "id": "portkey-gateway",
@@ -40140,7 +40195,8 @@
    "routes": [
     "api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 51
   },
   {
    "id": "openreality",
@@ -40175,7 +40231,8 @@
     "claude",
     "codex"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 57
   },
   {
    "id": "requests-cache",
@@ -40208,7 +40265,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 59
   },
   {
    "id": "shadcn-improve",
@@ -40241,7 +40299,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 45
   },
   {
    "id": "shopify-ai-toolkit",
@@ -40277,7 +40336,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 48
   },
   {
    "id": "eve",
@@ -40311,7 +40371,8 @@
    "routes": [
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 63
   },
   {
    "id": "awesome-claude-code-subagents",
@@ -40345,7 +40406,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 52
   },
   {
    "id": "inferssd",
@@ -40380,7 +40442,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 52
   },
   {
    "id": "polyweather",
@@ -40413,7 +40476,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 44
   },
   {
    "id": "claude-context",
@@ -40448,7 +40512,8 @@
     "codex",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 48
   },
   {
    "id": "gptcache",
@@ -40483,7 +40548,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 58
   },
   {
    "id": "npkill",
@@ -40516,7 +40582,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 1
+   "complejidad": 1,
+   "puntuacion": 58
   },
   {
    "id": "agent-substrate",
@@ -40549,7 +40616,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 69
   },
   {
    "id": "open-code-review",
@@ -40586,7 +40654,8 @@
     "codex",
     "api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 71
   },
   {
    "id": "pangolin",
@@ -40619,7 +40688,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 72
   },
   {
    "id": "pi-alert-leiweibau",
@@ -40652,7 +40722,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 47
   },
   {
    "id": "kiri",
@@ -40686,7 +40757,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 64
   },
   {
    "id": "tailcat",
@@ -40719,7 +40791,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 51
   },
   {
    "id": "screen-relay",
@@ -40753,7 +40826,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3
+   "complejidad": 3,
+   "puntuacion": 50
   },
   {
    "id": "pysubs2",
@@ -40791,7 +40865,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 50
   },
   {
    "id": "toon-format",
@@ -40829,7 +40904,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2
+   "complejidad": 2,
+   "puntuacion": 72
   }
  ],
  "discovery": {
@@ -40851,6 +40927,7 @@
     ],
     "categories": [
      1,
+     2,
      3,
      7,
      16,
@@ -40975,6 +41052,7 @@
      "pageindex"
     ],
     "categories": [
+     3,
      6,
      8,
      13,
@@ -41092,6 +41170,7 @@
      "assistant-ui"
     ],
     "categories": [
+     3,
      9,
      18,
      26,
@@ -41171,7 +41250,9 @@
      "whisper"
     ],
     "categories": [
-     29
+     12,
+     29,
+     30
     ],
     "keywords": [
      "audio",
@@ -41202,7 +41283,9 @@
      "omnivoice-studio"
     ],
     "categories": [
-     29
+     12,
+     29,
+     30
     ],
     "keywords": [
      "voz",
@@ -41235,9 +41318,12 @@
     ],
     "categories": [
      11,
+     12,
      26,
      27,
-     28
+     28,
+     29,
+     30
     ],
     "keywords": [
      "imagenes",
@@ -41272,6 +41358,7 @@
      "reveal.js"
     ],
     "categories": [
+     13,
      31
     ],
     "keywords": [
@@ -41426,6 +41513,7 @@
      7,
      16,
      19,
+     20,
      27,
      30
     ],

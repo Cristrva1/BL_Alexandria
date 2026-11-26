@@ -19,15 +19,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `supabase` | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras… | 3 Avanzado | 76 | Apache-2.0 (OSI permisiva) | recomendado |
+| `uptime-kuma` | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y… | 1 Básico | 76 | MIT (OSI permisiva) | sin grupo |
 | `coolify` | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
-| `appwrite` | Plataforma de backend abierta orientada a agentes y desarrolladores… | 2 Intermedio | 73 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `uptime-kuma` | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
+| `appwrite` | Plataforma de backend abierta orientada a agentes y desarrolladores… | 2 Intermedio | 72 | BSD-3-Clause (OSI permisiva) | alternativa |
+| `portainer` | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman… | 1 Básico | 71 | Zlib (OSI permisiva) | sin grupo |
 | `caddy` | Servidor web y proxy inverso extensible con HTTPS automático por defecto… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | recomendado |
 | `traefik` | Proxy inverso y balanceador de carga dinámico para contenedores y… | 2 Intermedio | 70 | MIT (OSI permisiva) | alternativa |
 | `dokploy` | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku… | 2 Intermedio | 67 | Apache-2.0 + licencia propietaria (/proprietary) (open-core) | alternativa |
-| `portainer` | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman… | 1 Básico | 66 | Zlib (OSI permisiva) | sin grupo |
+| `libretranslate` | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo… | 3 Avanzado | 57 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `casaos` | Entorno para administrar un servidor personal, instalar aplicaciones y… | 1 Básico | 52 | Apache-2.0 (OSI permisiva) | alternativa |
-| `libretranslate` | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo… | 3 Avanzado | — | AGPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -45,6 +45,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `appwrite`
 - **Riesgos y avisos:** Sin alternativas declaradas. El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas.
 
+### Uptime Kuma (`uptime-kuma`)
+
+- **Repo:** https://github.com/louislam/uptime-kuma · MIT · nivel 1 · 76/100
+- **Qué es:** Herramienta de monitorización de código abierto (MIT) creada por Louis Lam. Uno de los proyectos autoalojados más populares; activa.
+- **Cuándo elegirlo:** Casos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios.
+- **Requisitos:** nivel 1: preparación sencilla; JavaScript, compose.yaml, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2` — fuente: https://github.com/louislam/uptime-kuma/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación. Éxito: El panel muestra el monitor en verde y el historial de tiempos de respuesta.
+- **Combina con:** `grafana` [10/bi], `coolify`, `caddy`
+- **Riesgos y avisos:** No sustituye a una monitorización completa de métricas y registros.
+
 ### coolify (`coolify`)
 
 - **Repo:** https://github.com/coollabsio/coolify · Apache-2.0 · nivel 2 · 74/100 · recomendado en «Paneles de auto-hospedaje y PaaS propios»
@@ -59,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Appwrite (`appwrite`)
 
-- **Repo:** https://github.com/appwrite/appwrite · BSD-3-Clause · nivel 2 · 73/100 · alternativa en «Backends como servicio auto-hospedados»
+- **Repo:** https://github.com/appwrite/appwrite · BSD-3-Clause · nivel 2 · 72/100 · alternativa en «Backends como servicio auto-hospedados»
 - **Qué es:** Plataforma de backend de código abierto (BSD-3-Clause) de Appwrite, que ofrece también una nube gestionada. Muy popular y activa.
 - **Cuándo elegirlo:** Casos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP.
 - **Requisitos:** nivel 2: preparación media; TypeScript, Cargo.toml, Dockerfile, composer.json, docker-compose.yml, package.json; API de IA: no.
@@ -73,16 +84,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `supabase`
 - **Riesgos y avisos:** Alternativas (elige una): supabase.
 
-### Uptime Kuma (`uptime-kuma`)
+### Portainer CE (`portainer`)
 
-- **Repo:** https://github.com/louislam/uptime-kuma · MIT · nivel 1 · 72/100
-- **Qué es:** Herramienta de monitorización de código abierto (MIT) creada por Louis Lam. Uno de los proyectos autoalojados más populares; activa.
-- **Cuándo elegirlo:** Casos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios.
-- **Requisitos:** nivel 1: preparación sencilla; JavaScript, compose.yaml, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2` — fuente: https://github.com/louislam/uptime-kuma/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación. Éxito: El panel muestra el monitor en verde y el historial de tiempos de respuesta.
-- **Combina con:** `grafana` [10/bi], `coolify`, `caddy`
-- **Riesgos y avisos:** No sustituye a una monitorización completa de métricas y registros.
+- **Repo:** https://github.com/portainer/portainer · Zlib · nivel 1 · 71/100
+- **Qué es:** Gestor de contenedores de código abierto (zlib) de Portainer.io. La Community Edition es gratuita y la Business Edition añade funciones de pago sobre la misma base. Muy maduro.
+- **Cuándo elegirlo:** Casos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, go.mod, package.json; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/portainer/portainer/blob/release/2.45/README.md
+- **Primera prueba propuesta (no ejecutada):** Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales. Éxito: El panel lista los contenedores con su estado y registros.
+- **Combina con:** `traefik`, `uptime-kuma`, `wg-easy` [22/redes]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.
 
 ### Caddy (`caddy`)
 
@@ -120,16 +131,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `coolify`, `casaos`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): coolify. Instalar con `curl | bash` ejecuta un script remoto con privilegios: revísalo antes.
 
-### Portainer CE (`portainer`)
+### LibreTranslate (`libretranslate`)
 
-- **Repo:** https://github.com/portainer/portainer · Zlib · nivel 1 · 66/100
-- **Qué es:** Gestor de contenedores de código abierto (zlib) de Portainer.io. La Community Edition es gratuita y la Business Edition añade funciones de pago sobre la misma base. Muy maduro.
-- **Cuándo elegirlo:** Casos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, go.mod, package.json; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/portainer/portainer/blob/release/2.45/README.md
-- **Primera prueba propuesta (no ejecutada):** Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales. Éxito: El panel lista los contenedores con su estado y registros.
-- **Combina con:** `traefik`, `uptime-kuma`, `wg-easy` [22/redes]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.
+- **Repo:** https://github.com/LibreTranslate/LibreTranslate · AGPL-3.0 · nivel 3 · 57/100
+- **Qué es:** Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.
+- **Cuándo elegirlo:** Casos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo.
+- **Requisitos:** nivel 3: preparación media, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware prerequisites; API de IA: no; Entorno Python compatible con la versión elegida o Docker.; Conexión para descargar paquetes y modelos de idiomas; espacio para los idiomas seleccionados..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install libretranslate` — fuente: https://docs.libretranslate.com/guides/installation/
+- **Primera prueba propuesta (no ejecutada):** Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning». Éxito: La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.
 
 ### CasaOS (`casaos`)
 
@@ -142,16 +152,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nextcloud-server` [15/archivos], `adguardhome` [15/privacidad], `activepieces` [1/motores], `masterdnsvpn` [22/redes]
 - **Alternativas:** `coolify`, `dokploy`
 - **Riesgos y avisos:** Alternativa (elige una): coolify. Ritmo de releases lento. La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes.
-
-### LibreTranslate (`libretranslate`)
-
-- **Repo:** https://github.com/LibreTranslate/LibreTranslate · AGPL-3.0 · nivel 3 · —/100
-- **Qué es:** Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.
-- **Cuándo elegirlo:** Casos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo.
-- **Requisitos:** nivel 3: preparación media, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware prerequisites; API de IA: no; Entorno Python compatible con la versión elegida o Docker.; Conexión para descargar paquetes y modelos de idiomas; espacio para los idiomas seleccionados..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install libretranslate` — fuente: https://docs.libretranslate.com/guides/installation/
-- **Primera prueba propuesta (no ejecutada):** Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning». Éxito: La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia.
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

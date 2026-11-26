@@ -309,7 +309,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función
 **Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`, `codex`, `tools`
+**Combina con:** `claude-code`, `opencode`, `codex`
 **Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`, `codegraph`, `graphify`
 
 ## `graphify`
@@ -579,7 +579,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empaqueta una carpeta pequeña y abre el resultado antes de entregarlo a una IA
 **Qué comprobar:** Puedes comprobar archivos incluidos, tamaño y exclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `tree-sitter`, `markitdown`, `tools`, `codebase-memory-mcp`
+**Combina con:** `claude-code`, `tree-sitter`, `markitdown`, `codebase-memory-mcp`
 **Alternativas (elige una):** `gitnexus`
 
 ## `requests-cache`

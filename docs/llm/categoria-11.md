@@ -22,12 +22,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `invokeai` | interfaces | Suite profesional y unificada para Stable Diffusion que combina una UI web… | 3 Avanzado | 73 | Apache-2.0 (OSI permisiva) | recomendado |
 | `krita-ai-diffusion` | interfaces | Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | alternativa |
 | `diffusers` | modelos | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de… | 3 Avanzado | 78 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `flux2` | modelos | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest… | 3 Avanzado | 49 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `rembg` | edicion | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
+| `flux2` | modelos | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest… | 3 Avanzado | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `upscayl` | edicion | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `real-esrgan` | edicion | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 59 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `rembg` | edicion | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
+| `real-esrgan` | edicion | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 56 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `chainner` | edicion | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `codeformer` | edicion | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 43 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
+| `codeformer` | edicion | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 40 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -87,7 +87,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FLUX.2 (`flux2`)
 
-- **Repo:** https://github.com/black-forest-labs/flux2 · Apache-2.0 · nivel 3 · 49/100
+- **Repo:** https://github.com/black-forest-labs/flux2 · Apache-2.0 · nivel 3 · 46/100
 - **Qué es:** Código oficial de inferencia de los modelos FLUX.2 de Black Forest Labs. El código es Apache-2.0, pero los pesos tienen licencias distintas: los modelos 4B [klein] son Apache-2.0 y los 9B y FLUX.2 [dev] (32B) usan la FLUX Non-Commercial…
 - **Cuándo elegirlo:** Casos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia. Evítalo si Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face; hardware gpu; API de IA: opcional; Python 3.12; GPU NVIDIA con CUDA; memoria de vídeo según la variante; pesos desde Hugging Face.
@@ -102,17 +102,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `comfyui` [11/interfaces], `diffusers`, `real-esrgan` [11/edicion], `invokeai` [11/interfaces], `krita-ai-diffusion` [11/interfaces]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Revisa la licencia de cada peso: varios no permiten uso comercial. La licencia del código no cubre todos los pesos: revisa la de cada variante antes de un uso comercial.
 
-### rembg (`rembg`)
-
-- **Repo:** https://github.com/danielgatis/rembg · MIT · nivel 2 · 71/100
-- **Qué es:** rembg, herramienta para quitar el fondo de imágenes en local, de @danielgatis. Licencia MIT. Es madura (~26k estrellas, v2.0.87) y la patrocina PhotoRoom.
-- **Cuándo elegirlo:** Casos: Preparar una foto de producto; Crear un recorte para una composición.
-- **Requisitos:** nivel 2: pip o CLI; GPU opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo; hardware prerequisites; API de IA: opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install "rembg[cpu,cli]" # for library + cli` — fuente: https://github.com/danielgatis/rembg/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Quita el fondo de una imagen simple y guarda un PNG con transparencia Éxito: Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
-- **Combina con:** `comfyui` [11/interfaces], `real-esrgan`, `gradio` [25/apps], `codeformer`
-- **Riesgos y avisos:** Sin alternativas declaradas. Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local.
-
 ### Upscayl (`upscayl`)
 
 - **Repo:** https://github.com/upscayl/upscayl · AGPL-3.0 · nivel 1 · 70/100
@@ -124,9 +113,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `real-esrgan`, `gallery-dl` [4/social], `codeformer`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La IA inventa detalles plausibles: no uses el resultado como evidencia documental.
 
+### rembg (`rembg`)
+
+- **Repo:** https://github.com/danielgatis/rembg · MIT · nivel 2 · 68/100
+- **Qué es:** rembg, herramienta para quitar el fondo de imágenes en local, de @danielgatis. Licencia MIT. Es madura (~26k estrellas, v2.0.87) y la patrocina PhotoRoom.
+- **Cuándo elegirlo:** Casos: Preparar una foto de producto; Crear un recorte para una composición.
+- **Requisitos:** nivel 2: pip o CLI; GPU opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo; hardware prerequisites; API de IA: opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install "rembg[cpu,cli]" # for library + cli` — fuente: https://github.com/danielgatis/rembg/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Quita el fondo de una imagen simple y guarda un PNG con transparencia Éxito: Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
+- **Combina con:** `comfyui` [11/interfaces], `real-esrgan`, `gradio` [25/apps], `codeformer`
+- **Riesgos y avisos:** Sin alternativas declaradas. Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local.
+
 ### Real-ESRGAN (`real-esrgan`)
 
-- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 59/100
+- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 56/100
 - **Qué es:** Real-ESRGAN, modelo y herramientas de superresolución de imágenes y vídeo, de @xinntao (Tencent ARC). Licencia BSD-3-Clause. Es muy popular (~38k estrellas, v0.3.0), pero su último cambio es de agosto de 2024.
 - **Cuándo elegirlo:** Casos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución.
 - **Requisitos:** nivel 2: preparación media; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba; hardware prerequisites; API de IA: no; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba.
@@ -135,7 +135,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/xinntao/Real-ESRGAN.git
       cd Real-ESRGAN
-  
+
   # Install basicsr - https://github.com/xinntao/BasicSR
       # We use BasicSR for both training and inference
       pip install basicsr
@@ -162,7 +162,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CodeFormer (`codeformer`)
 
-- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 43/100
+- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 40/100
 - **Qué es:** CodeFormer, modelo de restauración ciega de rostros (NeurIPS 2022) de S-Lab, Nanyang Technological University. Licencia NTU S-Lab License 1.0, solo uso no comercial (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba; hardware prerequisites; API de IA: no; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba.

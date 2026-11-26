@@ -56,7 +56,7 @@ Grupo **Escáneres de vulnerabilidades de contenedores**: Trivy ocupa la posici�
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Trivy** (esta ficha) ⭐ recomendado | 79 | Si buscas esto: escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. |
-| 2 | [Grype](grype.md) | 71 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
+| 2 | [Grype](grype.md) | 68 | Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación. |
 
 ## Acceso, coste y equipo
 

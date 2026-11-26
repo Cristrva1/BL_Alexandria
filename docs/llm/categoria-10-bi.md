@@ -97,7 +97,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   pip install wrenai
-  
+
   npx skills add Canner/WrenAI
   ```
 - **Primera prueba propuesta (no ejecutada):** Pide usar la muestra jaffle_shop y explica una métrica antes de generar su consulta Éxito: Puedes revisar definición, SQL y resultado sobre la muestra

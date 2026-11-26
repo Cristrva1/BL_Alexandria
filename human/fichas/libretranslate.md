@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación media; necesita GPU
 
+**Puntuación de calidad** 57/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.

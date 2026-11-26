@@ -36,9 +36,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `openrlhf` | entrenamiento | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO… | 4 Experto | 58 | Apache-2.0 (OSI permisiva) | alternativa |
 | `torchtune` | entrenamiento | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de… | 3 Avanzado | 52 | BSD-3-Clause (OSI permisiva) | alternativa |
 | `bionemo-recipes` | entrenamiento | Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales… | 1 Básico | 37 | — (sin licencia detectada) | sin grupo |
-| `deepseek-v3` | modelos | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código… | 3 Avanzado | 69 | MIT (OSI permisiva) | sin grupo |
 | `laya` | modelos | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos… | 3 Avanzado | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `timesfm` | modelos | Modelos preentrenados de Google para pronóstico de series temporales; las… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `deepseek-v3` | modelos | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código… | 3 Avanzado | 66 | MIT (OSI permisiva) | sin grupo |
 | `cosmos` | modelos | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment… | 3 Avanzado | 59 | OpenMDW-1.1 (OSI permisiva) | sin grupo |
 | `gemma` | modelos | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos… | 3 Avanzado | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `nemotron` | modelos | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron… | 1 Básico | 45 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -267,17 +267,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `transformers`, `pytorch`, `peft`
 - **Riesgos y avisos:** Sin alternativas declaradas. No es un framework único listo para usar; algunas recetas requieren Hopper o Blackwell y sus resultados no son evidencia clínica.
 
-### DeepSeek-V3 (`deepseek-v3`)
-
-- **Repo:** https://github.com/deepseek-ai/DeepSeek-V3 · MIT · nivel 3 · 69/100
-- **Qué es:** DeepSeek-V3, modelo de lenguaje MoE de DeepSeek con 671B parámetros totales y 37B activos por token. El código es MIT y los pesos usan un Model Agreement propio.
-- **Cuándo elegirlo:** Casos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang. Evítalo si Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo.
-- **Requisitos:** nivel 3: preparación pesada, necesita GPU; API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM; hardware gpu; API de IA: opcional; cuenta en la plataforma de DeepSeek para la API; o un servidor con varias GPU para la ruta local; un motor de inferencia como SGLang o vLLM.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/deepseek-ai/DeepSeek-V3.git` — fuente: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta Éxito: Recibes la respuesta y ves en tu panel el consumo de esa llamada
-- **Combina con:** `sglang` [23/serving], `vllm` [23/serving], `litellm` [23/serving], `tensorrt-llm` [23/serving]
-- **Riesgos y avisos:** Sin alternativas declaradas. Repo histórico: conviene evaluar las versiones más nuevas de DeepSeek. No cabe en un equipo doméstico: la demo oficial usa dos nodos de 8 GPU. No es un IDE ni una integración nativa con Claude Code, Codex o Antigravity.
-
 ### laya (`laya`)
 
 - **Repo:** https://github.com/NandhaKishorM/laya · Apache-2.0 · nivel 3 · 69/100
@@ -304,6 +293,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Pronostica un tramo reservado de una serie de ejemplo y compáralo con datos que no diste al modelo Éxito: Puedes medir error fuera de la muestra
 - **Combina con:** `polars` [25/datos], `duckdb` [25/datos], `pytorch` [24/entrenamiento]
 - **Riesgos y avisos:** Sin alternativas declaradas. Código y pesos hasta 2.5 son Apache; pesos 3.0 autoalojados no permiten uso comercial o productivo, que sí se ofrece mediante servicios Google autorizados.
+
+### DeepSeek-V3 (`deepseek-v3`)
+
+- **Repo:** https://github.com/deepseek-ai/DeepSeek-V3 · MIT · nivel 3 · 66/100
+- **Qué es:** DeepSeek-V3, modelo de lenguaje MoE de DeepSeek con 671B parámetros totales y 37B activos por token. El código es MIT y los pesos usan un Model Agreement propio.
+- **Cuándo elegirlo:** Casos: Conectar un modelo abierto potente a un agente mediante la API de DeepSeek; Estudiar cómo se sirve un modelo MoE grande con vLLM o SGLang. Evítalo si Quieres correr un modelo en un equipo doméstico; elige un modelo pequeño con Ollama y revisa los límites antes de elegirlo.
+- **Requisitos:** nivel 3: preparación pesada, necesita GPU; API: cuenta en platform.deepseek.com; local: servidor con varias GPU y un motor como SGLang o vLLM; hardware gpu; API de IA: opcional; cuenta en la plataforma de DeepSeek para la API; o un servidor con varias GPU para la ruta local; un motor de inferencia como SGLang o vLLM.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/deepseek-ai/DeepSeek-V3.git` — fuente: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Envía una petición de prueba a la API de DeepSeek desde un cliente compatible con OpenAI y pide completar una función corta Éxito: Recibes la respuesta y ves en tu panel el consumo de esa llamada
+- **Combina con:** `sglang` [23/serving], `vllm` [23/serving], `litellm` [23/serving], `tensorrt-llm` [23/serving]
+- **Riesgos y avisos:** Sin alternativas declaradas. Repo histórico: conviene evaluar las versiones más nuevas de DeepSeek. No cabe en un equipo doméstico: la demo oficial usa dos nodos de 8 GPU. No es un IDE ni una integración nativa con Claude Code, Codex o Antigravity.
 
 ### cosmos (`cosmos`)
 

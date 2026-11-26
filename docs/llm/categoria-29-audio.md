@@ -20,8 +20,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `audacity` | Editor y grabador de audio multipista libre para Windows, macOS y Linux, con… | 1 Básico | 67 | GPL-3.0 (mayoría de archivos GPL-2.0-or-later) (OSI copyleft) | sin grupo |
 | `pyannote-audio` | Kit de PyTorch para diarización de hablantes (quién habla y cuándo) con modelos… | 3 Avanzado | 64 | MIT (OSI permisiva) | sin grupo |
-| `ultimate-vocal-remover` | Aplicación de escritorio para separar voz e instrumentos de canciones con… | 3 Avanzado | 61 | MIT (OSI permisiva) | sin grupo |
-| `demucs` | Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con… | 3 Avanzado | 59 | MIT (OSI permisiva) | sin grupo |
+| `ultimate-vocal-remover` | Aplicación de escritorio para separar voz e instrumentos de canciones con… | 3 Avanzado | 58 | MIT (OSI permisiva) | sin grupo |
+| `demucs` | Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con… | 3 Avanzado | 56 | MIT (OSI permisiva) | sin grupo |
 | `earshot` | Herramientas locales de audio para que un agente escuche, analice y revise… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
 | `rubberband` | Biblioteca de audio para modificar duración y tono de una grabación, integrada… | 2 Intermedio | 42 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `rnnoise` | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para… | 2 Intermedio | 41 | BSD-3-Clause (OSI permisiva) | sin grupo |
@@ -53,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Ultimate Vocal Remover (UVR) (`ultimate-vocal-remover`)
 
-- **Repo:** https://github.com/Anjok07/ultimatevocalremovergui · MIT · nivel 3 · 61/100
+- **Repo:** https://github.com/Anjok07/ultimatevocalremovergui · MIT · nivel 3 · 58/100
 - **Qué es:** Aplicación de código abierto (MIT) de Anjok07 y aufr33, referencia popular para separar voces. La última versión publicada es la v5.6 (2023); el README remite a una actualización de desarrollo de octubre de 2026.
 - **Cuándo elegirlo:** Casos: obtener la pista instrumental o la voz aislada de una canción propia; preparar stems para remezclar o practicar con una canción.
 - **Requisitos:** nivel 3: preparación sencilla, app o instalador listo para usar, necesita GPU; Python, requirements.txt; hardware model_dependent; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -63,7 +63,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Demucs (`demucs`)
 
-- **Repo:** https://github.com/adefossez/demucs · MIT · nivel 3 · 59/100
+- **Repo:** https://github.com/adefossez/demucs · MIT · nivel 3 · 56/100
 - **Qué es:** Versión mantenida oficialmente por Alexandre Défossez, autor de Demucs, tras dejar Meta (y archivarse facebookresearch/demucs). El código es MIT. El propio autor avisa de que no trabaja activamente en él: respuestas lentas y sin funciones…
 - **Cuándo elegirlo:** Casos: separar la voz y la batería de una canción propia para remezclar; generar stems para karaoke o práctica musical.
 - **Requisitos:** nivel 3: preparación sencilla, requiere programar con él, necesita GPU; Python, pyproject.toml; hardware model_dependent; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..

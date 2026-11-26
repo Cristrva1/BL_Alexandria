@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from repo_intelligence.analysis.recommend import _effective_max_repos, _infer_required_capabilities, recommend
+from repo_intelligence.analysis.recommend import _infer_required_capabilities, recommend
 from repo_intelligence.core.io import write_json
 
 
@@ -96,11 +96,18 @@ def test_infer_required_capabilities_detects_product_needs() -> None:
     assert caps["ui"] > 0
 
 
-def test_effective_max_repos_scales_for_complex_projects() -> None:
-    caps = _infer_required_capabilities(
-        "whatsapp crm dashboard web analitica mcp agentes docs rag"
-    )
-    assert _effective_max_repos(5, caps) >= 6
+def test_complex_projects_respect_limit_and_alternatives(tmp_path: Path) -> None:
+    import shutil
+    root = Path(__file__).resolve().parents[1]
+    for name in ("INDICE_IA.json", "INDICE_IA.detalle.json"):
+        shutil.copy(root / name, tmp_path / name)
+    query = "whatsapp crm dashboard web analitica mcp agentes docs rag"
+    for limit in (1, 2, 7):
+        result = recommend(tmp_path, query, max_repos=limit)
+        rows = result["recommended_repos"]
+        assert 0 < len(rows) <= limit
+        ids = {repo["id"] for repo in rows}
+        assert all(not ids.intersection(repo["alt"]) for repo in rows)
 
 
 def test_auto_without_tool_phrase_does_not_assume_codex(tmp_path: Path) -> None:

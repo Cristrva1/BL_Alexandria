@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,8 +49,8 @@ Grupo **Generadores de SBOM**: Syft ocupa la posición 1 de 2 (recomendado). Ord
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Syft** (esta ficha) ⭐ recomendado | 77 | Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX. |
-| 2 | [cdxgen](cdxgen.md) | 62 | Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad. |
+| 1 | **Syft** (esta ficha) ⭐ recomendado | 71 | Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX. |
+| 2 | [cdxgen](cdxgen.md) | 63 | Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad. |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **Backtesting en Python**: Backtesting.py ocupa la posición 2 de 2 (alter
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [vectorbt](vectorbt.md) ⭐ recomendado | 56 | Si buscas esto: biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado. |
-| 2 | **Backtesting.py** (esta ficha) | 51 | Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
+| 2 | **Backtesting.py** (esta ficha) | 52 | Si buscas esto: framework ligero de Python para hacer backtesting de estrategias de trading sobre datos OHLC, con optimización y gráficos interactivos. |
 
 ## Acceso, coste y equipo
 

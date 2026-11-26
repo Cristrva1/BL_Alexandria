@@ -662,7 +662,7 @@ ${llmDownload(category,params.get("sub"))}
 
   function fourSections(item) {
     if (!hasFour(item)) return "";
-    const combos = item.combina_con.filter((combo) => repo(combo.id)).map((combo) => `<li><a href="#/repo/${encodeURIComponent(combo.id)}"><strong>${esc(repo(combo.id).name)}</strong></a>: ${esc(combo.motivo || "")}${combo.orden_instalacion ? `<br><span class="meta">Orden y cuidados: ${esc(combo.orden_instalacion)}</span>` : ""}</li>`).join("");
+    const combos = (item.combina_con || []).filter((combo) => repo(combo.id)).map((combo) => `<li><a href="#/repo/${encodeURIComponent(combo.id)}"><strong>${esc(repo(combo.id).name)}</strong></a>: ${esc(combo.motivo || "")}${combo.orden_instalacion ? `<br><span class="meta">Orden y cuidados: ${esc(combo.orden_instalacion)}</span>` : ""}</li>`).join("");
     const sources = (item.descripcion_fuentes || []).map((url, index) => `<a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index + 1}</a>`).join(" · ");
     const checked = (item.descripcion_revision || {}).checked_at || "fecha por confirmar";
     const gh = item.descripcion_github || {};

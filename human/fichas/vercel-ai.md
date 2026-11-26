@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/vercel/ai/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -56,7 +56,7 @@ Grupo **Frameworks de agentes en TypeScript**: AI SDK (Vercel) ocupa la posició
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **AI SDK (Vercel)** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
+| 1 | **AI SDK (Vercel)** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
 | 2 | [Mastra](mastra.md) | 65 | Si buscas esto: framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
 | 3 | [LangGraph.js](langgraphjs.md) | 60 | Si buscas esto: versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
 

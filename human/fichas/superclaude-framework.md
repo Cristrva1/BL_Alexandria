@@ -48,8 +48,8 @@ Grupo **Metodologías y harness para agentes de código**: SuperClaude_Framework
 |---:|---|---:|---|
 | 1 | [ECC](ecc.md) ⭐ recomendado | 72 | Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes. |
 | 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
-| 3 | [Agent Skills (Addy Osmani)](agent-skills.md) | 63 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
-| 4 | [superpowers](superpowers.md) | 62 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
+| 3 | [Agent Skills (Addy Osmani)](agent-skills.md) | 64 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
+| 4 | [superpowers](superpowers.md) | 59 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
 | 5 | **SuperClaude_Framework** (esta ficha) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo

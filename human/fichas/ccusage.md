@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
+**Puntuación de calidad** 71/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Una utilidad de terminal para medir el uso registrado por asistentes de programación.

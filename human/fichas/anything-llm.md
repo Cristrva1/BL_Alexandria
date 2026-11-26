@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -55,9 +55,9 @@ Grupo **Workspaces privados con documentos y chat**: AnythingLLM ocupa la posici
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **AnythingLLM** (esta ficha) ⭐ recomendado | 78 | Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
-| 2 | [PrivateGPT](private-gpt.md) | 67 | Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
-| 3 | [Khoj](khoj.md) | 48 | Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
+| 1 | **AnythingLLM** (esta ficha) ⭐ recomendado | 79 | Si buscas esto: app todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
+| 2 | [PrivateGPT](private-gpt.md) | 68 | Si buscas esto: capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
+| 3 | [Khoj](khoj.md) | 49 | Si buscas esto: segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
 
 ## Acceso, coste y equipo
 

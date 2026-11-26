@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
+**Puntuación de calidad** 51/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Una herramienta experimental de terminal para unir dos extremos bajo control de la misma persona.

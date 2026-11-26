@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT. Incluye componentes de terceros con sus licencias. Fuente: [LICENSE](https://github.com/AThevon/genjutsu/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

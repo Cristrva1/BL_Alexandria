@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 35/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 32/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** MIT + Commons Clause. No permite vender el software. Fuente: [LICENSE](https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

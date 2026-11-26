@@ -39,6 +39,7 @@ from repo_intelligence.core.catalog import (
     fmt_stars,
     gh_anchor,
     load_catalog,
+    is_public_repo,
     md_cell,
     slug,
 )
@@ -87,7 +88,7 @@ def render_all(project_root: Path) -> dict[str, int]:
     _update_root_docs(project_root, cat)
 
     return {
-        "repos": len(cat.repos),
+        "repos": sum(is_public_repo(r) for r in cat.repos),
         "categories": len(cat.public_categories()),
         "cards": len(cat.repos),
         "comparisons": comparisons,
@@ -477,6 +478,7 @@ def _render_quality_page(project_root: Path) -> None:
              "Las issues sin respuesta cuentan con el tiempo transcurrido hasta hoy.",
              "- Repos derivados que fusionan su upstream: solo cuentan los commits del propietario y los contribuidores propios.",
              "- Licencia: si GitHub no reconoce el SPDX se lee el archivo LICENSE; hay correcciones manuales en `config/calidad.yaml`.",
+             "- Madurez documental: los tres puntos requieren una página externa declarada por el proyecto en las métricas. La ficha interna de Alexandría queda fuera del cálculo.",
              "- Sin Scorecard publicado, el eje de seguridad queda neutral (2,5).", "",
              "## Grupos de similares", "",
              "Los grupos (`curation/grupos.yaml`) reúnen repos que resuelven lo mismo dentro de una subcategoría. Se sembraron por similitud de texto "

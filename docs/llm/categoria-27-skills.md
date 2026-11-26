@@ -21,25 +21,25 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `ui-ux-pro-max-skill` | Conjunto de skills que dotan al asistente de código de inteligencia de diseño… | 1 Básico | 73 | MIT (OSI permisiva) | recomendado |
 | `anatomy` | Skill para crear ilustraciones isométricas e interactivas de máquinas y… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
 | `taste-skill` | Skill design-taste-frontend para dirección visual y revisión de sitios; otros… | 1 Básico | 70 | MIT (OSI permisiva) | alternativa |
-| `modern-web-guidance` | Herramienta y skill para que un agente consulte documentación actual sobre… | 2 Intermedio | 66 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `modern-web-guidance` | Herramienta y skill para que un agente consulte documentación actual sobre… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `design.md` | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `android-skills` | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `impeccable` | Vocabulario y playbooks de diseño para agentes, con detector determinista y… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `skills-emil` | Colección de skills enfocada en diseño de interfaces y en mejorar la… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `logo-design-skill` | Skill para diseñar logotipos con un agente, desde la idea y las referencias… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
 | `front-end-checklist` | Checklist y recursos para revisar aspectos de calidad de un frontend antes de… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
-| `stitch-skills` | Colección de skills de agente para trabajar con el servidor MCP de Google… | 1 Básico | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `genjutsu` | Skills de diseño y animación para agentes que trabajan con interfaces web… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
+| `stitch-skills` | Colección de skills de agente para trabajar con el servidor MCP de Google… | 1 Básico | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `genjutsu` | Skills de diseño y animación para agentes que trabajan con interfaces web… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
 | `3dviz-pro-max` | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o… | 2 Intermedio | 53 | MIT (OSI permisiva) | recomendado |
 | `threejs-skills` | Colección de instrucciones para que agentes programen escenas y experiencias 3D… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
 | `gsap-skills` | Skills oficiales con instrucciones y ejemplos para que agentes creen… | 2 Intermedio | 51 | MIT (OSI permisiva) | sin grupo |
 | `hallmark` | Skill de diseño para agentes que ayuda a construir interfaces con decisiones… | 2 Intermedio | 51 | MIT (OSI permisiva) | alternativa |
-| `blender-skills` | Skills para guiar a un agente por modelado y preparación de escenas en Blender… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
+| `blender-skills` | Skills para guiar a un agente por modelado y preparación de escenas en Blender… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `design-dna` | Skill para analizar referencias visuales, extraer decisiones de diseño y… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
 | `threejs-game-skills` | Skills para que un agente construya juegos de navegador con Three.js, interfaz… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
-| `dream-loop` | Skill que combina Blender, generación de imágenes y revisión por un agente para… | 2 Intermedio | 43 | MIT (OSI permisiva) | sin grupo |
-| `motion-design-skill` | Skill con principios de ritmo, transiciones y composición del movimiento para… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
-| `creative-architect` | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y… | 1 Básico | 41 | MIT (OSI permisiva) | sin grupo |
-| `android-skills` | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `dream-loop` | Skill que combina Blender, generación de imágenes y revisión por un agente para… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
+| `motion-design-skill` | Skill con principios de ritmo, transiciones y composición del movimiento para… | 2 Intermedio | 41 | MIT (OSI permisiva) | sin grupo |
+| `creative-architect` | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y… | 1 Básico | 40 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -87,7 +87,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### modern-web-guidance (`modern-web-guidance`)
 
-- **Repo:** https://github.com/GoogleChrome/modern-web-guidance · Apache-2.0 · nivel 2 · 66/100
+- **Repo:** https://github.com/GoogleChrome/modern-web-guidance · Apache-2.0 · nivel 2 · 65/100
 - **Qué es:** Conjunto de skills (Apache 2.0) de Google Chrome, mantenido junto con los equipos de Microsoft Edge, Mozilla Firefox y MDN, que lleva al agente de código pautas de la plataforma web y datos de compatibilidad. Versión v1.0.0.
 - **Cuándo elegirlo:** Casos: Consultar APIs web actuales; Revisar patrones heredados.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Node; agente compatible; pregunta concreta de plataforma web; hardware prerequisites; API de IA: no; Node; agente compatible; pregunta concreta de plataforma web.
@@ -106,6 +106,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
 - **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
 - **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
+
+### Android Skills (`android-skills`)
+
+- **Repo:** https://github.com/android/skills · Apache-2.0 · nivel 2 · 63/100
+- **Qué es:** Una colección oficial de instrucciones de desarrollo Android para asistentes compatibles con Agent Skills.
+- **Cuándo elegirlo:** Casos: Pedir una revisión de cómo maneja una pantalla los bordes del sistema.; Examinar en un proyecto de ejemplo por qué R8 conserva clases que se esperaban eliminar. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Kotlin; API de IA: no; Claude Code, Codex o Antigravity con skills o plugins habilitados.; Proyecto Android de prueba y herramientas indicadas por la skill seleccionada..
+- **Instalación (documentada en la fuente; no ejecutada):** `android skills add r8-analyzer --project=.` — fuente: https://developer.android.com/tools/agents/android-skills
+- **Primera prueba propuesta (no ejecutada):** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada. Éxito: El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
+- **Combina con:** `codex` [20/terminal]
+- **Riesgos y avisos:** Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.
 
 ### impeccable (`impeccable`)
 
@@ -154,7 +165,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Stitch Skills (`stitch-skills`)
 
-- **Repo:** https://github.com/google-labs-code/stitch-skills · Apache-2.0 · nivel 1 · 57/100
+- **Repo:** https://github.com/google-labs-code/stitch-skills · Apache-2.0 · nivel 1 · 56/100
 - **Qué es:** Colección oficial de Google Labs (Apache 2.0) de skills y plugins de agente para Google Stitch, la herramienta de diseño de interfaces con IA, que sigue el estándar abierto Agent Skills. Tiene release v1.0; último cambio en agosto de 2026.
 - **Cuándo elegirlo:** Casos: Explorar una interfaz con Stitch; Convertir una pantalla en componentes.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; Stitch MCP autenticado; proyecto de diseño de prueba; hardware prerequisites; API de IA: opcional; Agente compatible; Stitch MCP autenticado; proyecto de diseño de prueba.
@@ -165,7 +176,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### genjutsu (`genjutsu`)
 
-- **Repo:** https://github.com/AThevon/genjutsu · MIT · nivel 2 · 56/100
+- **Repo:** https://github.com/AThevon/genjutsu · MIT · nivel 2 · 55/100
 - **Qué es:** Skills para Claude Code de AThevon para animación y diseño de interfaces; el README declara MIT, aunque GitHub no reconoce la licencia como estándar. Activo (v4.2.1).
 - **Cuándo elegirlo:** Casos: Diseñar una microinteracción; Planificar movimiento en una app.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code; proyecto o pantalla de prueba; herramientas de navegador según tarea; hardware prerequisites; API de IA: no; Claude Code; proyecto o pantalla de prueba; herramientas de navegador según tarea.
@@ -223,7 +234,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### blender-skills (`blender-skills`)
 
-- **Repo:** https://github.com/arjun988/blender-skills · MIT · nivel 2 · 49/100
+- **Repo:** https://github.com/arjun988/blender-skills · MIT · nivel 2 · 48/100
 - **Qué es:** Paquete de 94 skills (MIT) de arjun988 para artistas de Blender, que se presenta como un equipo de arte técnico senior. Sin releases; su ficha en el marketplace de Anthropic estaba en revisión según el README.
 - **Cuándo elegirlo:** Casos: Preparar un objeto para un juego; Revisar un pipeline de assets 3D.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Blender; agente; conexión MCP o scripting; escena de prueba; hardware prerequisites; API de IA: no; Blender; agente; conexión MCP o scripting; escena de prueba.
@@ -261,7 +272,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### dream-loop (`dream-loop`)
 
-- **Repo:** https://github.com/achimala/dream-loop · MIT · nivel 2 · 43/100
+- **Repo:** https://github.com/achimala/dream-loop · MIT · nivel 2 · 42/100
 - **Qué es:** Skill de agente (MIT) de achimala (@anshuc) para construir juegos, apps o escenas con visuales de alto nivel. Sin releases; probada solo con GPT-6 Astra en Codex según su README.
 - **Cuándo elegirlo:** Casos: Prototipar una escena 3D; Comparar dirección visual de un juego.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente con visión y generación de imagen; Blender para modelado propio; presupuesto; hardware prerequisites; API de IA: opcional; Agente con visión y generación de imagen; Blender para modelado propio; presupuesto.
@@ -272,7 +283,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### motion-design-skill (`motion-design-skill`)
 
-- **Repo:** https://github.com/LottieFiles/motion-design-skill · MIT · nivel 2 · 42/100
+- **Repo:** https://github.com/LottieFiles/motion-design-skill · MIT · nivel 2 · 41/100
 - **Qué es:** Skill de LottieFiles (MIT) con principios universales de diseño de movimiento para agentes; parte de la filosofía y no depende de la implementación. Sin releases; último cambio en mayo de 2026.
 - **Cuándo elegirlo:** Casos: Planificar movimiento de un componente; Revisar una transición de interfaz.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente con skills; interacción y propósito definidos; hardware prerequisites; API de IA: no; Agente con skills; interacción y propósito definidos.
@@ -283,7 +294,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Creative Architect (`creative-architect`)
 
-- **Repo:** https://github.com/Hainrixz/creative-architect · MIT · nivel 1 · 41/100
+- **Repo:** https://github.com/Hainrixz/creative-architect · MIT · nivel 1 · 40/100
 - **Qué es:** Plugin para Claude Code (MIT) de Hainrixz, documentado en español, que actúa como director de arte y productor de imagen y video con IA. Muy nuevo y con poca adopción (v1.0.1, 24 estrellas).
 - **Cuándo elegirlo:** Casos: Preparar una foto de producto; Planificar un anuncio UGC.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude Code; brief; proveedor de imagen o video solo al generar; presupuesto; hardware prerequisites; API de IA: opcional; Claude Code; brief; proveedor de imagen o video solo al generar; presupuesto.
@@ -296,17 +307,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Prepara la dirección de arte y revisa modelo, coste y referencia antes de generar una pieza Éxito: Puedes identificar proveedor y resultado y decidir una iteración concreta
 - **Combina con:** `claude-code` [20/terminal], `hyperframes` [30/motores], `remotion` [30/motores]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. El README dice que el repositorio es privado, pero es público en GitHub: documentación desactualizada. Los proveedores son de pago. No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes.
-
-### Android Skills (`android-skills`)
-
-- **Repo:** https://github.com/android/skills · Apache-2.0 · nivel 2 · —/100
-- **Qué es:** Una colección oficial de instrucciones de desarrollo Android para asistentes compatibles con Agent Skills.
-- **Cuándo elegirlo:** Casos: Pedir una revisión de cómo maneja una pantalla los bordes del sistema.; Examinar en un proyecto de ejemplo por qué R8 conserva clases que se esperaban eliminar. Evítalo si no usas un agente compatible con skills.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Kotlin; API de IA: no; Claude Code, Codex o Antigravity con skills o plugins habilitados.; Proyecto Android de prueba y herramientas indicadas por la skill seleccionada..
-- **Instalación (documentada en la fuente; no ejecutada):** `android skills add r8-analyzer --project=.` — fuente: https://developer.android.com/tools/agents/android-skills
-- **Primera prueba propuesta (no ejecutada):** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada. Éxito: El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
-- **Combina con:** `codex` [20/terminal]
-- **Riesgos y avisos:** Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

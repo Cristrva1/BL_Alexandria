@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.

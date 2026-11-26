@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,11 +48,11 @@ Grupo **Capas de memoria para apps y agentes de IA**: Graphiti ocupa la posició
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [mem0](mem0.md) ⭐ recomendado | 76 | Si tu app necesita memoria de usuario a largo plazo con una API sencilla. |
+| 1 | [mem0](mem0.md) ⭐ recomendado | 77 | Si tu app necesita memoria de usuario a largo plazo con una API sencilla. |
 | 2 | [cognee](cognee.md) | 68 | Si quieres convertir documentos en un grafo de conocimiento consultable por agentes. |
-| 3 | **Graphiti** (esta ficha) | 61 | Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo. |
-| 4 | [supermemory](supermemory.md) | 61 | Si buscas una API de memoria y contexto rápida orientada a productos. |
-| 5 | [Letta](letta.md) | 55 | Si quieres agentes con estado gestionados por un servidor (antes MemGPT). |
+| 3 | **Graphiti** (esta ficha) | 62 | Si necesitas un grafo temporal que registre cómo cambian los hechos en el tiempo. |
+| 4 | [supermemory](supermemory.md) | 62 | Si buscas una API de memoria y contexto rápida orientada a productos. |
+| 5 | [Letta](letta.md) | 57 | Si quieres agentes con estado gestionados por un servidor (antes MemGPT). |
 
 ## Acceso, coste y equipo
 

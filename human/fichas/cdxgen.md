@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,8 +48,8 @@ Grupo **Generadores de SBOM**: cdxgen ocupa la posición 2 de 2 (alternativa). O
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Syft](syft.md) ⭐ recomendado | 77 | Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX. |
-| 2 | **cdxgen** (esta ficha) | 62 | Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad. |
+| 1 | [Syft](syft.md) ⭐ recomendado | 71 | Si tu prioridad son imágenes de contenedor y sistemas de archivos, con salida SPDX o CycloneDX. |
+| 2 | **cdxgen** (esta ficha) | 63 | Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad. |
 
 ## Acceso, coste y equipo
 

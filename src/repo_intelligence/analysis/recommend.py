@@ -8,6 +8,7 @@ from typing import Any
 from repo_intelligence.core.access import API_LABELS, COST_LABELS, ROUTE_LABELS, access_facts, access_routes
 
 from repo_intelligence.core.install_mode import install_mode as _install_mode
+from repo_intelligence.core.taxonomy import goal_memberships
 from repo_intelligence.core.io import read_json, write_json
 
 
@@ -339,6 +340,8 @@ INSTALL_HINTS = {
 
 
 def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: str = "auto", access_route: str = "") -> dict[str, Any]:
+    if max_repos < 1:
+        raise ValueError("El máximo de repositorios debe ser positivo.")
     if access_route and access_route not in ROUTE_LABELS:
         raise ValueError("Unknown access route: " + access_route)
     scan = read_json(project_root / "ai_index" / "REPOS.scan.json", {"repos": []})
@@ -351,7 +354,6 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     effective_tool = _detect_effective_tool(project, build_tool)
     intents = _detect_intents(project)
     required_capabilities = _infer_required_capabilities(project)
-    effective_max_repos = _effective_max_repos(max_repos, required_capabilities)
 
     scored = []
     for repo in scan.get("repos", []):
@@ -373,8 +375,8 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         scored.append(enriched)
 
     scored.sort(key=lambda item: (item["score"], _mode_priority(item["install_mode"])), reverse=True)
-    selected = _dedupe_alternatives(scored, effective_max_repos)
-    selected = _ensure_capability_coverage(required_capabilities, scored, selected, effective_max_repos)
+    selected = _dedupe_alternatives(scored, max_repos)
+    selected = _ensure_capability_coverage(required_capabilities, scored, selected, max_repos)
     selected = [_enrich_recommendation(item, position=index + 1) for index, item in enumerate(selected)]
     capability_coverage = _capability_coverage(required_capabilities, selected)
 
@@ -395,7 +397,7 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         "detected_intents": sorted(intents),
         "detected_capabilities": [cap for cap, _ in required_capabilities.most_common()],
         "requested_max_repos": max_repos,
-        "effective_max_repos": effective_max_repos,
+        "effective_max_repos": max_repos,
         "capability_coverage": capability_coverage,
         "superguide_file": f"ai_index/SUPERGUIAS/{safe_name}.md",
         "latest_superguide_file": "ai_index/CONTEXT_PACKS/latest.md",
@@ -442,16 +444,19 @@ def _merge_curated_index(project_root: Path, scan: dict[str, Any], detail_by_id:
         curated_by_id = {rid: {"id": rid, **item} for rid, item in raw_detail.items()}
     else:
         curated_by_id = {item["id"]: item for item in raw_detail}
-    known = {item["id"] for item in scan.get("repos", [])}
+    memberships = goal_memberships(compact)
+    known = {item["id"]: item for item in scan.get("repos", [])}
     repos = scan.setdefault("repos", [])
     for entry in compact.get("repos", []):
         if entry.get("alias_of"):
             continue
         rid = entry["id"]
+        entry = {**entry, "goals": memberships[rid]}
         extra = curated_by_id.get(rid, {})
         if extra:
-            detail_by_id[rid] = {**detail_by_id.get(rid, {}), **extra}
+            detail_by_id[rid] = {**detail_by_id.get(rid, {}), **extra, "goals": memberships[rid], "alt": entry.get("alt", [])}
         if rid in known:
+            known[rid].update(entry)
             continue
         repos.append({**entry, "alternatives": list(entry.get("alt") or extra.get("alternatives") or [])})
 
@@ -492,7 +497,7 @@ def _render_superguide(result: dict[str, Any]) -> str:
         f"- Herramienta efectiva inferida: `{result.get('build_tool', '')}`",
         f"- Intenciones detectadas: {', '.join(result.get('detected_intents', [])) or 'general'}",
         f"- Capacidades detectadas del proyecto: {', '.join(result.get('detected_capabilities', [])) or 'general'}",
-        f"- Finalistas solicitados: `{result.get('requested_max_repos', '')}` | Finalistas efectivos por complejidad: `{result.get('effective_max_repos', '')}`",
+        f"- Máximo solicitado: {result['requested_max_repos']}. Finalistas seleccionados: {len(result['recommended_repos'])}.",
         "- Regla aplicada: la herramienta con la que construyes no siempre es el proveedor LLM de la app; se prioriza la herramienta declarada en el proyecto.",
         f"- Archivo estable de esta recomendacion: `{_public_label(result.get('superguide_file', ''))}`",
         f"- Alias siempre actualizado: `{_public_label(result.get('latest_superguide_file', 'latest.md'))}`",
@@ -712,18 +717,22 @@ def score_repo(
     return score, reasons
 
 
+def _compatible(candidate: dict, selected: list[dict]) -> bool:
+    def alternatives(repo: dict) -> set[str]:
+        return {_norm_id(rid) for rid in (*repo.get("alt", []), *repo.get("alternatives", []))}
+
+    rid = _norm_id(candidate["id"])
+    excluded = alternatives(candidate) | {rid}
+    return all(_norm_id(other["id"]) not in excluded and rid not in alternatives(other) for other in selected)
+
+
 def _dedupe_alternatives(scored: list[dict[str, Any]], max_repos: int) -> list[dict[str, Any]]:
-    selected: list[dict[str, Any]] = []
-    blocked: set[str] = set()
+    selected = []
     for repo in scored:
-        repo_id = repo["id"]
-        if _norm_id(repo_id) in blocked:
-            continue
-        selected.append(repo)
-        for alt in repo.get("alt", []) + repo.get("alternatives", []):
-            blocked.add(_norm_id(alt))
-        if len(selected) >= max_repos:
-            break
+        if _compatible(repo, selected):
+            selected.append(repo)
+            if len(selected) == max_repos:
+                break
     return selected
 
 
@@ -1043,19 +1052,6 @@ def _infer_required_capabilities(project: str) -> Counter[str]:
     return capabilities
 
 
-def _effective_max_repos(max_repos: int, required_capabilities: Counter[str]) -> int:
-    if max_repos >= 8:
-        return max_repos
-    strong_caps = [cap for cap, weight in required_capabilities.items() if weight >= 2]
-    if len(required_capabilities) >= 7:
-        return max(max_repos, 8)
-    if len(strong_caps) >= 5:
-        return max(max_repos, 8)
-    if len(strong_caps) >= 3:
-        return max(max_repos, 6)
-    return max_repos
-
-
 def _repo_capabilities(repo: dict[str, Any]) -> set[str]:
     haystack = _norm_text(
         " ".join(
@@ -1101,73 +1097,24 @@ def _ensure_capability_coverage(
     if not required_capabilities:
         return selected[:max_repos]
 
-    selected_ids = {item["id"] for item in selected}
-    repo_caps = {item["id"]: _repo_capabilities(item) for item in scored}
-    strong_caps = [cap for cap, weight in required_capabilities.most_common() if weight >= 2]
-    if not strong_caps:
-        strong_caps = [cap for cap, _ in required_capabilities.most_common(3)]
-    secondary_caps = [cap for cap, _ in required_capabilities.most_common() if cap not in strong_caps]
-    target_capabilities = strong_caps + secondary_caps
+    repo_caps = {repo["id"]: _repo_capabilities(repo) & required_capabilities.keys() for repo in scored}
 
-    for capability in target_capabilities:
-        covered = any(capability in repo_caps.get(item["id"], set()) for item in selected)
-        if covered:
+    def coverage(repos: list[dict]) -> set[str]:
+        return {cap for repo in repos for cap in repo_caps[repo["id"]]}
+
+    for capability, _ in required_capabilities.most_common():
+        covered = coverage(selected)
+        if capability in covered:
             continue
-
-        candidate = next(
-            (
-                item
-                for item in scored
-                if item["id"] not in selected_ids and capability in repo_caps.get(item["id"], set())
-            ),
-            None,
-        )
-        if not candidate:
-            continue
-
-        if len(selected) < max_repos:
-            selected.append(candidate)
-            selected_ids.add(candidate["id"])
-            continue
-
-        replace_index = _replacement_slot(selected, repo_caps, required_capabilities)
-        if replace_index is None:
-            continue
-        selected_ids.discard(selected[replace_index]["id"])
-        selected[replace_index] = candidate
-        selected_ids.add(candidate["id"])
-
-    selected.sort(key=lambda item: (item["score"], _mode_priority(item.get("install_mode", "reference_only"))), reverse=True)
-    return selected[:max_repos]
-
-
-def _replacement_slot(
-    selected: list[dict[str, Any]],
-    repo_caps: dict[str, set[str]],
-    required_capabilities: Counter[str],
-) -> int | None:
-    candidates: list[tuple[int, int]] = []
-    top_required = {cap for cap, _ in required_capabilities.most_common(5)}
-
-    for index, item in enumerate(selected):
-        item_id = item.get("id")
-        if item_id in {"superpowers", "agent-toolkit", "claude-plugins-official"}:
-            continue
-
-        caps = repo_caps.get(item_id, set())
-        protected = len(caps & top_required)
-        penalty = 0
-        if item.get("role") in {"skill", "directory"}:
-            penalty += 2
-        if item.get("install_mode") == "reference_only":
-            penalty += 1
-
-        effective_score = int(item.get("score", 0)) + (protected * 3) - penalty
-        candidates.append((effective_score, index))
-
-    if not candidates:
-        return None
-    candidates.sort(key=lambda pair: pair[0])
-    return candidates[0][1]
-
-
+        # Try the lowest-ranked slot first. A replacement must retain all
+        # capabilities already represented and satisfy both directions of alt.
+        for index in reversed(range(len(selected) + int(len(selected) < max_repos))):
+            retained = selected[:index] + selected[index + 1:]
+            needed = (covered - coverage(retained)) | {capability}
+            candidate = next((repo for repo in scored if needed <= repo_caps[repo["id"]]
+                              and _compatible(repo, retained)), None)
+            if candidate:
+                selected = retained + [candidate]
+                selected.sort(key=lambda item: (item["score"], _mode_priority(item["install_mode"])), reverse=True)
+                break
+    return selected

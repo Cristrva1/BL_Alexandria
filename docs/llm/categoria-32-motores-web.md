@@ -18,15 +18,26 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `lightpanda` | Navegador headless escrito en Zig para IA y automatización, mucho más ligero… | 1 Básico | 73 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `ladybird` | Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado… | 4 Experto | 72 | BSD-2-Clause (OSI permisiva) | recomendado |
-| `lightpanda` | Navegador headless escrito en Zig para IA y automatización, mucho más ligero… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `servo` | Motor de navegador escrito en Rust, ligero y paralelo, pensado para incrustar… | 4 Experto | 58 | MPL-2.0 (OSI copyleft) | alternativa |
-| `camoufox` | Navegador basado en Firefox para scraping y agentes que genera una identidad de… | 2 Intermedio | 48 | MPL-2.0 (navegador) y MIT (paquetes de Python) (OSI copyleft) | sin grupo |
-| `kitesurf` | Explora un motor experimental para renderizar páginas en Workers y obtener… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `kitesurf` | Explora un motor experimental para renderizar páginas en Workers y obtener… | 3 Avanzado | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `camoufox` | Navegador basado en Firefox para scraping y agentes que genera una identidad de… | 2 Intermedio | 49 | MPL-2.0 (navegador) y MIT (paquetes de Python) (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### Lightpanda (`lightpanda`)
+
+- **Repo:** https://github.com/lightpanda-io/browser · AGPL-3.0 · nivel 1 · 73/100
+- **Qué es:** Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).
+- **Cuándo elegirlo:** Casos: Preparar navegación headless; Explorar un agente con modelo local.
+- **Requisitos:** nivel 1: preparación sencilla; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba; hardware prerequisites; API de IA: opcional; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install lightpanda-io/browser/lightpanda` — fuente: https://github.com/lightpanda-io/browser/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Ejecuta una consulta simple sin LLM y compara el DOM con la página esperada Éxito: Puedes identificar la sesión y el resultado antes de probar autonomía
+- **Combina con:** `puppeteer` [32/bibliotecas], `playwright` [32/bibliotecas], `stagehand` [32/agentes-web], `agent-browser` [32/agentes-web], `awesome-chrome-devtools` [32/recursos-web]
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto. Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web.
 
 ### Ladybird (`ladybird`)
 
@@ -40,17 +51,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `servo`
 - **Riesgos y avisos:** Alternativa de Servo como motor de navegador independiente.
 
-### Lightpanda (`lightpanda`)
-
-- **Repo:** https://github.com/lightpanda-io/browser · AGPL-3.0 · nivel 1 · 70/100
-- **Qué es:** Lightpanda, navegador headless escrito desde cero en Zig para agentes de IA y automatización; no es un fork de Chromium ni de WebKit. Licencia AGPL-3.0. Tiene ~42k estrellas (v1.0.4).
-- **Cuándo elegirlo:** Casos: Preparar navegación headless; Explorar un agente con modelo local.
-- **Requisitos:** nivel 1: preparación sencilla; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba; hardware prerequisites; API de IA: opcional; Binario compatible o Docker; agente o proveedor opcional; sitio de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install lightpanda-io/browser/lightpanda` — fuente: https://github.com/lightpanda-io/browser/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Ejecuta una consulta simple sin LLM y compara el DOM con la página esperada Éxito: Puedes identificar la sesión y el resultado antes de probar autonomía
-- **Combina con:** `puppeteer` [32/bibliotecas], `playwright` [32/bibliotecas], `stagehand` [32/agentes-web], `agent-browser` [32/agentes-web], `awesome-chrome-devtools` [32/recursos-web]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La cobertura de APIs web aún es menor que la de Chromium. Telemetría activa por defecto. Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web.
-
 ### Servo (`servo`)
 
 - **Repo:** https://github.com/servo/servo · MPL-2.0 · nivel 4 · 58/100 · alternativa en «Motores de navegador independientes»
@@ -63,25 +63,25 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `ladybird`
 - **Riesgos y avisos:** Alternativa de Ladybird como motor independiente; Servo se orienta más a incrustar que a ser un navegador completo.
 
-### Camoufox (`camoufox`)
-
-- **Repo:** https://github.com/daijro/camoufox · MPL-2.0 (navegador) y MIT (paquetes de Python) · nivel 2 · 48/100
-- **Qué es:** Navegador antidetección de código abierto creado por daijro. El navegador es MPL-2.0 y los paquetes de lanzamiento de Python son MIT. Muy activo; el propio README avisa de que está en desarrollo.
-- **Cuándo elegirlo:** Casos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install -U "camoufox[geoip]"` — fuente: https://github.com/daijro/camoufox/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `pip install -U "camoufox[geoip]"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README. Éxito: Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.
-- **Combina con:** `playwright` [32/bibliotecas], `crawlee-python` [4/crawlers], `crawlee` [4/crawlers]
-
 ### Kitesurf (`kitesurf`)
 
-- **Repo:** https://github.com/cloudflare/kitesurf · Apache-2.0 · nivel 3 · —/100
+- **Repo:** https://github.com/cloudflare/kitesurf · Apache-2.0 · nivel 3 · 57/100
 - **Qué es:** Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles.
 - **Cuándo elegirlo:** Casos: Capturar una página estática de prueba.; Comparar cómo se renderiza un componente en un entorno aislado. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
 - **Requisitos:** nivel 3: preparación pesada; TypeScript, Cargo.toml, package.json; hardware model_dependent; API de IA: no; Contenedor local para el ejemplo o Cloudflare Workers con los servicios que indique su guía..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://kitesurf.dev/
 - **Primera prueba propuesta (no ejecutada):** Usa el ejemplo local enlazado y abre una página de prueba sin cuentas ni cookies. Éxito: Se obtiene una captura o HTML del ejemplo y puedes compararlo con tu navegador.
 - **Riesgos y avisos:** El motor es experimental. Workers y Dynamic Workers pueden requerir planes de Cloudflare; la demo local no exige cuenta.
+
+### Camoufox (`camoufox`)
+
+- **Repo:** https://github.com/daijro/camoufox · MPL-2.0 (navegador) y MIT (paquetes de Python) · nivel 2 · 49/100
+- **Qué es:** Navegador antidetección de código abierto creado por daijro. El navegador es MPL-2.0 y los paquetes de lanzamiento de Python son MIT. Muy activo; el propio README avisa de que está en desarrollo.
+- **Cuándo elegirlo:** Casos: automatizar navegación en sitios propios o autorizados que bloquean navegadores headless; probar cómo responde tu web a distintas huellas de navegador.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install -U "camoufox[geoip]"` — fuente: https://github.com/daijro/camoufox/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `pip install -U "camoufox[geoip]"`, descarga el navegador con su comando `fetch` y abre una página con el ejemplo del README. Éxito: Obtienes un objeto `Browser` de Playwright normal controlando Camoufox.
+- **Combina con:** `playwright` [32/bibliotecas], `crawlee-python` [4/crawlers], `crawlee` [4/crawlers]
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -18,21 +18,32 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `blender` | Código de Blender, la aplicación para modelar, animar, renderizar y editar… | 1 Básico | 77 | GPL-2.0-or-later (OSI copyleft) | sin grupo |
 | `godot` | Motor de videojuegos 2D y 3D libre (MIT) con editor integrado, scripting en… | 2 Intermedio | 77 | MIT (OSI permisiva) | recomendado |
-| `blender` | Código de Blender, la aplicación para modelar, animar, renderizar y editar… | 1 Básico | 76 | GPL-2.0-or-later (OSI copyleft) | sin grupo |
-| `freecad` | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica… | 1 Básico | 71 | LGPL-2.1 (OSI copyleft) | sin grupo |
-| `filament` | Motor de renderizado físicamente basado para integrar gráficos 3D en… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `freecad` | Modelador CAD 3D paramétrico libre para diseño de producto, ingeniería mecánica… | 1 Básico | 72 | LGPL-2.1 (OSI copyleft) | sin grupo |
+| `filament` | Motor de renderizado físicamente basado para integrar gráficos 3D en… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `bevy` | Motor de juegos en Rust basado en datos y en el patrón ECS, libre (MIT o… | 2 Intermedio | 66 | MIT OR Apache-2.0 (OSI permisiva) | alternativa |
-| `meshoptimizer` | Biblioteca para optimizar geometría y reducir el coste de almacenar y… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
-| `openscad` | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la… | 1 Básico | 59 | GPL-2.0 (con excepción CGAL) (OSI copyleft) | sin grupo |
-| `ozz-animation` | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
-| `awesome-cad` | Directorio de programas, bibliotecas y recursos de diseño asistido por… | 1 Básico | 34 | MIT (OSI permisiva) | sin grupo |
-| `openreality` | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP… | 3 Avanzado | — | BSD-2-Clause | sin grupo |
-| `video2threejs` | Explica con un caso cómo reconstruir la apariencia de un video como una escena… | 1 Básico | — | MIT | sin grupo |
+| `meshoptimizer` | Biblioteca para optimizar geometría y reducir el coste de almacenar y… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `openscad` | CAD 3D por código: describes la pieza en un lenguaje de script y OpenSCAD la… | 1 Básico | 61 | GPL-2.0 (con excepción CGAL) (OSI copyleft) | sin grupo |
+| `openreality` | Convierte video propio en escenas 3D consultables y ofrece herramientas MCP… | 3 Avanzado | 57 | BSD-2-Clause (OSI permisiva) | sin grupo |
+| `ozz-animation` | Biblioteca C++ y herramientas para preparar y reproducir animación esquelética… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
+| `awesome-cad` | Directorio de programas, bibliotecas y recursos de diseño asistido por… | 1 Básico | 36 | MIT (OSI permisiva) | sin grupo |
+| `video2threejs` | Explica con un caso cómo reconstruir la apariencia de un video como una escena… | 1 Básico | 35 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### blender (`blender`)
+
+- **Repo:** https://github.com/blender/blender · GPL-2.0-or-later · nivel 1 · 77/100
+- **Qué es:** Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION).
+- **Cuándo elegirlo:** Casos: Modelar un objeto sencillo; Preparar una escena de presentación.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Aplicación Blender para tu sistema; equipo adecuado a la escena; hardware prerequisites; API de IA: no; Aplicación Blender para tu sistema; equipo adecuado a la escena.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/blender/blender/blob/main/.github/README.md
+- **Primera prueba propuesta (no ejecutada):** Usa una escena nueva con un cubo y prueba mover, iluminar y renderizar una imagen Éxito: Puedes guardar el proyecto y localizar el render
+- **Combina con:** `blender-mcp` [5/servidores], `3dviz-pro-max` [27/skills], `three.js` [26/animacion]
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Este repositorio es un espejo del código; para utilizar Blender elige la distribución de la aplicación y no compiles todo el espejo; los conectores AI son….
 
 ### Godot Engine (`godot`)
 
@@ -46,20 +57,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `bevy`
 - **Riesgos y avisos:** Alternativa de Bevy (motor en Rust con ECS y sin editor visual completo).
 
-### blender (`blender`)
-
-- **Repo:** https://github.com/blender/blender · GPL-2.0-or-later · nivel 1 · 76/100
-- **Qué es:** Blender, suite libre de creación 3D, de la Blender Foundation. Licencia GPL-3.0 en conjunto, con algunos archivos bajo licencias compatibles (GitHub muestra NOASSERTION).
-- **Cuándo elegirlo:** Casos: Modelar un objeto sencillo; Preparar una escena de presentación.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Aplicación Blender para tu sistema; equipo adecuado a la escena; hardware prerequisites; API de IA: no; Aplicación Blender para tu sistema; equipo adecuado a la escena.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/blender/blender/blob/main/.github/README.md
-- **Primera prueba propuesta (no ejecutada):** Usa una escena nueva con un cubo y prueba mover, iluminar y renderizar una imagen Éxito: Puedes guardar el proyecto y localizar el render
-- **Combina con:** `blender-mcp` [5/servidores], `3dviz-pro-max` [27/skills], `three.js` [26/animacion]
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Este repositorio es un espejo del código; para utilizar Blender elige la distribución de la aplicación y no compiles todo el espejo; los conectores AI son….
-
 ### FreeCAD (`freecad`)
 
-- **Repo:** https://github.com/FreeCAD/FreeCAD · LGPL-2.1 · nivel 1 · 71/100
+- **Repo:** https://github.com/FreeCAD/FreeCAD · LGPL-2.1 · nivel 1 · 72/100
 - **Qué es:** Modelador 3D paramétrico de código abierto (LGPL-2.1) desarrollado por la comunidad, con financiación de la FreeCAD Project Association. Activo; versión 1.x estable.
 - **Cuándo elegirlo:** Casos: diseñar una pieza mecánica paramétrica y exportarla a STL para impresión 3D; generar planos técnicos acotados a partir de un modelo 3D.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -69,7 +69,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### filament (`filament`)
 
-- **Repo:** https://github.com/google/filament · Apache-2.0 · nivel 2 · 69/100
+- **Repo:** https://github.com/google/filament · Apache-2.0 · nivel 2 · 70/100
 - **Qué es:** Filament, motor de renderizado físicamente basado (PBR) en tiempo real de Google. Licencia Apache-2.0. Es maduro (~21k estrellas, v1.80.1).
 - **Cuándo elegirlo:** Casos: Integrar un visor 3D móvil; Estudiar render físicamente basado.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Plataforma de destino; runtime y herramientas de la misma release; modelo glTF de prueba; hardware prerequisites; API de IA: no; Plataforma de destino; runtime y herramientas de la misma release; modelo glTF de prueba.
@@ -92,7 +92,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### meshoptimizer (`meshoptimizer`)
 
-- **Repo:** https://github.com/zeux/meshoptimizer · MIT · nivel 2 · 62/100
+- **Repo:** https://github.com/zeux/meshoptimizer · MIT · nivel 2 · 64/100
 - **Qué es:** meshoptimizer, biblioteca para optimizar mallas de triángulos para GPU, de @zeux. Licencia MIT. Es madura y muy usada en la industria (~8.9k estrellas, v1.3).
 - **Cuándo elegirlo:** Casos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Entorno de desarrollo compatible; malla pequeña; copia del original; hardware prerequisites; API de IA: no; Entorno de desarrollo compatible; malla pequeña; copia del original.
@@ -103,7 +103,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenSCAD (`openscad`)
 
-- **Repo:** https://github.com/openscad/openscad · GPL-2.0 (con excepción CGAL) · nivel 1 · 59/100
+- **Repo:** https://github.com/openscad/openscad · GPL-2.0 (con excepción CGAL) · nivel 1 · 61/100
 - **Qué es:** Programa libre (GPL-2.0 con excepción para CGAL) para crear modelos CAD sólidos, disponible para Linux, Windows y macOS. Muy usado en impresión 3D (p. ej. el personalizador de Thingiverse).
 - **Cuándo elegirlo:** Casos: diseñar piezas paramétricas para impresión 3D cambiando variables; generar variantes de una pieza (tamaños, agujeros) desde el mismo script.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -111,9 +111,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala OpenSCAD, escribe `cube(10); translate([5,5,5]) sphere(6);`, renderiza con F6 y exporta a STL. Éxito: Obtienes un archivo STL listo para el laminador de la impresora.
 - **Combina con:** `freecad`, `awesome-cad`, `claude-code` [20/terminal]
 
+### Open Reality (`openreality`)
+
+- **Repo:** https://github.com/reality-opened/openreality · BSD-2-Clause · nivel 3 · 57/100
+- **Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
+- **Cuándo elegirlo:** Casos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
+- **Requisitos:** nivel 3: preparación media, se instala dentro de un agente (skill, plugin o MCP), necesita GPU; Python; API de IA: no; Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://open-reality.io/mcp
+- **Primera prueba propuesta (no ejecutada):** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado. Éxito: Puedes abrir la escena o consultar un elemento sin compartir datos privados.
+- **Riesgos y avisos:** Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.
+
 ### ozz-animation (`ozz-animation`)
 
-- **Repo:** https://github.com/guillaumeblanc/ozz-animation · MIT · nivel 2 · 42/100
+- **Repo:** https://github.com/guillaumeblanc/ozz-animation · MIT · nivel 2 · 44/100
 - **Qué es:** ozz-animation, biblioteca C++ open source de animación esquelética 3D con herramientas, de @guillaumeblanc. El README indica licencia MIT (GitHub muestra NOASSERTION). Es madura (~3.1k estrellas, 0.17.0).
 - **Cuándo elegirlo:** Casos: Reproducir animaciones de personajes; Combinar clips en un motor propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Entorno C++; modelo con esqueleto; herramientas de conversión compatibles; hardware prerequisites; API de IA: no; Entorno C++; modelo con esqueleto; herramientas de conversión compatibles.
@@ -124,7 +134,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-cad (`awesome-cad`)
 
-- **Repo:** https://github.com/mlightcad/awesome-cad · MIT · nivel 1 · 34/100
+- **Repo:** https://github.com/mlightcad/awesome-cad · MIT · nivel 1 · 36/100
 - **Qué es:** Awesome CAD, lista curada de software, librerías y herramientas CAD open source, de mlightcad. Licencia MIT. Es reciente (enero de 2026) y de nicho (~240 estrellas).
 - **Cuándo elegirlo:** Casos: Encontrar software CAD; Comparar bibliotecas de geometría.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tipo de diseño que necesitas; hardware prerequisites; API de IA: no; Navegador; tipo de diseño que necesitas.
@@ -133,19 +143,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `blender`, `three.js` [26/animacion], `filament`, `freecad`, `openscad`
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD.
 
-### Open Reality (`openreality`)
-
-- **Repo:** https://github.com/reality-opened/openreality · BSD-2-Clause · nivel 3 · —/100
-- **Qué es:** Convierte video propio en escenas 3D consultables y ofrece herramientas MCP para trabajar con la reconstrucción desde un asistente.
-- **Cuándo elegirlo:** Casos: Explorar un objeto propio grabado desde varios ángulos.; Comprobar la representación 3D de un elemento de una escena de ejemplo. Evítalo si necesitas un producto autónomo y esta pieza requiere un cliente MCP.
-- **Requisitos:** nivel 3: preparación media, se instala dentro de un agente (skill, plugin o MCP), necesita GPU; Python; API de IA: no; Node.js para el conector, datos propios y un servidor que pueda procesar el video; la ruta alojada y la GPU tienen requisitos aparte..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://open-reality.io/mcp
-- **Primera prueba propuesta (no ejecutada):** Prueba primero un ejemplo de escena y distingue si lo procesa el servidor propio o el servicio alojado. Éxito: Puedes abrir la escena o consultar un elemento sin compartir datos privados.
-- **Riesgos y avisos:** Los pesos mencionados pueden estar limitados a usos no comerciales. Alojamiento y cómputo GPU no están incluidos por instalar el conector.
-
 ### video2threejs (`video2threejs`)
 
-- **Repo:** https://github.com/cpppppp7/video2threejs · MIT · nivel 1 · —/100
+- **Repo:** https://github.com/cpppppp7/video2threejs · MIT · nivel 1 · 35/100
 - **Qué es:** Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
 - **Cuándo elegirlo:** Casos: Comparar el encuadre de una escena y su referencia.; Estudiar cómo combinar geometría y textura en una recreación sencilla.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; JavaScript; API de IA: no; Navegador para leer el caso y, si adaptas la técnica, una escena de prueba en Three.js..

@@ -21,7 +21,7 @@ Codex revisa a diario a las 08:00, hora de Ciudad de México, la carpeta de recu
 ## PR, merge y publicación
 
 1. Revisa PR abiertas, bases y ramas con trabajo sin integrar. Resuelve primero las dependencias autorizadas y retoma la PR propia de Drive si sigue pendiente.
-2. Aplica cambios en las fuentes canónicas. Regenera `guide build`, `menu export` y `web build` con `uv run repo-intelligence`. Ejecuta `uv run pytest -q` y `git diff --check`.
+2. Aplica cambios en las fuentes canónicas. Regenera `guide build`, `menu export` y `web build` con `uv run repo-intelligence`. Ejecuta `uv run pytest -q`, `uv run python scripts/verificar_fichas.py` y `git diff --check`.
 3. Sube una rama `codex/drive-AAAA-MM-DD`, comprueba el SHA y los checks de la PR y fusiónala a `main` cuando esté lista. Respeta las protecciones de GitHub y las ramas ajenas.
 4. Espera el despliegue de Pages del commit exacto. Compara de forma anónima `catalog.json` con `docs/catalog.json` y comprueba cada ficha nueva. Marca la publicación en el registro privado una vez verificada. Si el inventario no produce cambios verificados, termina sin commits vacíos.
 

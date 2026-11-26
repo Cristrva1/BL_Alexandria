@@ -18,12 +18,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `anything-llm` | App todo en uno para chatear con tus documentos y usar agentes con modelos… | 1 Básico | 78 | MIT (OSI permisiva) | recomendado |
-| `odysseus` | Workspace auto-hospedado que unifica chats, research, documentos, correo… | 3 Avanzado | 73 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `private-gpt` | Capa de API completa para apps de IA privadas sobre modelos locales: RAG… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `hermes-desktop` | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
-| `khoj` | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con… | 2 Intermedio | 48 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `claude-second-brain` | Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas… | 2 Intermedio | — | MIT | sin grupo |
+| `anything-llm` | App todo en uno para chatear con tus documentos y usar agentes con modelos… | 1 Básico | 79 | MIT (OSI permisiva) | recomendado |
+| `odysseus` | Workspace auto-hospedado que unifica chats, research, documentos, correo… | 3 Avanzado | 75 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `private-gpt` | Capa de API completa para apps de IA privadas sobre modelos locales: RAG… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | alternativa |
+| `hermes-desktop` | App de escritorio que envuelve al agente Hermes en una interfaz nativa. | 1 Básico | 60 | MIT (OSI permisiva) | sin grupo |
+| `khoj` | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con… | 2 Intermedio | 49 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `claude-second-brain` | Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas… | 2 Intermedio | 41 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -31,7 +31,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AnythingLLM (`anything-llm`)
 
-- **Repo:** https://github.com/Mintplex-Labs/anything-llm · MIT · nivel 1 · 78/100 · recomendado en «Workspaces privados con documentos y chat»
+- **Repo:** https://github.com/Mintplex-Labs/anything-llm · MIT · nivel 1 · 79/100 · recomendado en «Workspaces privados con documentos y chat»
 - **Qué es:** Aplicación de IA «todo en uno» de código abierto (MIT) de Mintplex Labs, con versión de escritorio (Mac, Windows, Linux), Docker multiusuario, instancia alojada y app Android. Madura y activa (v1.19.0).
 - **Cuándo elegirlo:** Casos: Consultar documentación propia; Separar bases de conocimiento por proyecto.
 - **Requisitos:** nivel 1: preparación sencilla; App de escritorio o Docker; LLM y embeddings; documento de prueba; hardware prerequisites; API de IA: opcional; App de escritorio o Docker; LLM y embeddings; documento de prueba.
@@ -43,7 +43,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### odysseus (`odysseus`)
 
-- **Repo:** https://github.com/odysseus-dev/odysseus · AGPL-3.0 · nivel 3 · 73/100
+- **Repo:** https://github.com/odysseus-dev/odysseus · AGPL-3.0 · nivel 3 · 75/100
 - **Qué es:** Espacio de trabajo de IA autoalojado de código abierto (AGPL-3.0) de odysseus-dev que reúne chat, agentes, investigación, documentos, correo, notas, calendario y flujos con modelos locales.
 - **Cuándo elegirlo:** Casos: Organizar notas y tareas con IA; Comparar respuestas de modelos desde un workspace.
 - **Requisitos:** nivel 3: preparación pesada, varios servicios con Docker Compose; Docker; configuración .env; proveedor o modelos locales; hardware prerequisites; API de IA: depends; Docker; configuración .env; proveedor o modelos locales.
@@ -61,7 +61,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PrivateGPT (`private-gpt`)
 
-- **Repo:** https://github.com/zylon-ai/private-gpt · Apache-2.0 · nivel 2 · 67/100 · alternativa en «Workspaces privados con documentos y chat»
+- **Repo:** https://github.com/zylon-ai/private-gpt · Apache-2.0 · nivel 2 · 68/100 · alternativa en «Workspaces privados con documentos y chat»
 - **Qué es:** Capa de API de código abierto (Apache 2.0) de Zylon que convierte modelos locales en aplicaciones de IA para producción; es la base de la plataforma on-premise Zylon. Versión 1.0.1 publicada en 2026.
 - **Cuándo elegirlo:** Casos: Construir una API privada sobre documentos; Usar un modelo local como backend de programación.
 - **Requisitos:** nivel 2: preparación media; Servidor LLM compatible OpenAI; Python 3.11 o distribución adecuada; documentos de prueba; hardware prerequisites; API de IA: depends; Servidor LLM compatible OpenAI; Python 3.11 o distribución adecuada; documentos de prueba.
@@ -73,7 +73,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Hermes Desktop (`hermes-desktop`)
 
-- **Repo:** https://github.com/fathah/hermes-desktop · MIT · nivel 1 · 54/100
+- **Repo:** https://github.com/fathah/hermes-desktop · MIT · nivel 1 · 60/100
 - **Qué es:** Aplicación de escritorio nativa mantenida por la comunidad (Hermes One, de fathah) para instalar, configurar y usar Hermes Agent de Nous Research. Licencia MIT; en desarrollo activo (v0.7.8), con funciones que pueden cambiar.
 - **Cuándo elegirlo:** Casos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local; hardware prerequisites; API de IA: depends; Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local.
@@ -84,7 +84,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Khoj (`khoj`)
 
-- **Repo:** https://github.com/khoj-ai/khoj · AGPL-3.0 · nivel 2 · 48/100 · alternativa en «Workspaces privados con documentos y chat»
+- **Repo:** https://github.com/khoj-ai/khoj · AGPL-3.0 · nivel 2 · 49/100 · alternativa en «Workspaces privados con documentos y chat»
 - **Qué es:** Aplicación de IA personal («segundo cerebro») de código abierto (AGPL-3.0) y autoalojable de Khoj, que escala de un uso individual en el dispositivo a IA empresarial.
 - **Cuándo elegirlo:** Casos: Consultar notas desde Obsidian; Crear un asistente de investigación personal.
 - **Requisitos:** nivel 2: preparación media; Ruta self-host o cuenta Cloud; modelo; notas de prueba; hardware prerequisites; API de IA: depends; Ruta self-host o cuenta Cloud; modelo; notas de prueba.
@@ -96,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Claude Second Brain (`claude-second-brain`)
 
-- **Repo:** https://github.com/jessepinkman9900/claude-second-brain · MIT · nivel 2 · —/100
+- **Repo:** https://github.com/jessepinkman9900/claude-second-brain · MIT · nivel 2 · 41/100
 - **Qué es:** Organiza una bóveda de Obsidian para que Claude Code consulte y mantenga notas con instrucciones y búsqueda local.
 - **Cuándo elegirlo:** Casos: Probar una wiki personal con notas ficticias.; Buscar referencias locales a un tema en una bóveda de demostración.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere programar con él; JavaScript, package.json; API de IA: no; Claude Code, Obsidian y una bóveda nueva; consulta la guía para qmd y dependencias..

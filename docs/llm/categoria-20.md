@@ -20,7 +20,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---|---:|---|---|
 | `opencode` | terminal | Agente de código open source para la terminal, compatible con más de 75… | 1 Básico | 82 | MIT (OSI permisiva) | recomendado |
 | `deepseek-harness` | terminal | Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins… | 2 Intermedio | 74 | MIT (OSI permisiva) | sin grupo |
-| `codex` | terminal | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open… | 1 Básico | 71 | Apache-2.0 (OSI permisiva) | alternativa |
+| `codex` | terminal | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open… | 1 Básico | 68 | Apache-2.0 (OSI permisiva) | alternativa |
 | `gemini-cli` | terminal | CLI de Google orientado actualmente a Code Assist empresarial; el README remite… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | alternativa |
 | `qwen-code` | terminal | Agente de código de terminal del equipo Qwen, multiprotocolo (OpenAI… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `goose` | terminal | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y… | 1 Básico | 62 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -28,7 +28,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `open-interpreter` | terminal | Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con… | 1 Básico | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `mimo-code` | terminal | Asistente de código de Xiaomi MiMo para la terminal con herramientas de… | 2 Intermedio | 50 | MIT (OSI permisiva) | alternativa |
 | `aider` | terminal | Programación en pareja con IA en la terminal que edita tu repo y hace commits… | 1 Básico | 49 | Apache-2.0 (OSI permisiva) | alternativa |
-| `antigravity-cli` | terminal | Agente de programación de Google para la terminal (agy), con subagentes, MCP y… | 1 Básico | 27 | Propietaria (sin licencia en el repositorio) (propietaria) | alternativa |
+| `antigravity-cli` | terminal | Agente de programación de Google para la terminal (agy), con subagentes, MCP y… | 1 Básico | 24 | Propietaria (sin licencia en el repositorio) (propietaria) | alternativa |
 | `cline` | editor | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con… | 1 Básico | 66 | Apache-2.0 (OSI permisiva) | recomendado |
 | `zed` | editor | Editor de código de alto rendimiento y multijugador, de los creadores de Atom y… | 1 Básico | 64 | GPL-3.0 (Apache-2.0 en componentes marcados) (OSI permisiva) | sin grupo |
 | `openidea` | editor | Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -69,7 +69,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Codex CLI (`codex`)
 
-- **Repo:** https://github.com/openai/codex · Apache-2.0 · nivel 1 · 71/100 · alternativa en «Agentes de programación en terminal»
+- **Repo:** https://github.com/openai/codex · Apache-2.0 · nivel 1 · 68/100 · alternativa en «Agentes de programación en terminal»
 - **Qué es:** Codex CLI, agente de programación de OpenAI que se ejecuta en local, escrito en Rust. Licencia Apache-2.0. Es muy activo (~135k estrellas, rust-v0.169.0).
 - **Cuándo elegirlo:** Casos: Explorar un proyecto; Preparar un cambio y revisar su diff.
 - **Requisitos:** nivel 1: preparación sencilla; Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local; hardware prerequisites; API de IA: opcional; Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local.
@@ -180,7 +180,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Antigravity CLI (`antigravity-cli`)
 
-- **Repo:** https://github.com/google-antigravity/antigravity-cli · Propietaria (sin licencia en el repositorio) · nivel 1 · 27/100 · alternativa en «Agentes de programación en terminal»
+- **Repo:** https://github.com/google-antigravity/antigravity-cli · Propietaria (sin licencia en el repositorio) · nivel 1 · 24/100 · alternativa en «Agentes de programación en terminal»
 - **Qué es:** CLI oficial de Google Antigravity (`agy`), producto propietario. El repositorio google-antigravity/antigravity-cli solo contiene README, CHANGELOG, ejemplos y releases con binarios; no publica código fuente ni licencia.
 - **Cuándo elegirlo:** Casos: Pedir cambios a un proyecto desde la terminal o por SSH; Delegar tareas paralelas en subagentes.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..

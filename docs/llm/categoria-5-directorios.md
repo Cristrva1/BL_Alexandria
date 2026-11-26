@@ -20,9 +20,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5
 |---|---|---|---:|---|---|
 | `public-apis` | Directorio masivo y muy popular que lista por categorías miles de APIs públicas… | 1 Básico | 73 | MIT (OSI permisiva) | sin grupo |
 | `awesome-mcp-servers` | Directorio curado de la comunidad que cataloga por categorías cientos de… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
-| `mcp-for-beginners` | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
+| `mcp-for-beginners` | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
 | `awesome-mcp-clients` | Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y… | 1 Básico | 42 | MIT (OSI permisiva) | sin grupo |
-| `mcp` | Directorio de servidores MCP oficiales de Google, ejemplos y orientación para… | 1 Básico | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `mcp` | Directorio de servidores MCP oficiales de Google, ejemplos y orientación para… | 1 Básico | 39 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -52,7 +52,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MCP for Beginners (`mcp-for-beginners`)
 
-- **Repo:** https://github.com/microsoft/mcp-for-beginners · MIT · nivel 1 · 62/100
+- **Repo:** https://github.com/microsoft/mcp-for-beginners · MIT · nivel 1 · 59/100
 - **Qué es:** Curso de Microsoft para aprender Model Context Protocol con ejemplos prácticos en C#, Java, JavaScript, Rust, Python y TypeScript. Licencia MIT. Es popular (~18k estrellas, sin releases) y tiene más de 50 traducciones automáticas.
 - **Cuándo elegirlo:** Casos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; lenguaje elegido para los ejercicios; hardware prerequisites; API de IA: no; Navegador; lenguaje elegido para los ejercicios.
@@ -74,7 +74,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Google MCP (`mcp`)
 
-- **Repo:** https://github.com/google/mcp · Apache-2.0 · nivel 1 · 42/100
+- **Repo:** https://github.com/google/mcp · Apache-2.0 · nivel 1 · 39/100
 - **Qué es:** Repositorio de Google con la lista de sus servidores MCP oficiales, guías para desplegar servidores en Google Cloud y ejemplos. Licencia Apache-2.0. Es pequeño (~5k estrellas) y su último cambio es de agosto de 2026.
 - **Cuándo elegirlo:** Casos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; servicio Google objetivo; hardware prerequisites; API de IA: no; Navegador; servicio Google objetivo.

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -50,7 +50,7 @@ Grupo **Compactar contexto y tokens**: headroom ocupa la posición 2 de 2 (alter
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [rtk](rtk.md) ⭐ recomendado | 69 | Si buscas esto: proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. |
-| 2 | **headroom** (esta ficha) | 60 | Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
+| 2 | **headroom** (esta ficha) | 61 | Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Acceso, coste y equipo
 

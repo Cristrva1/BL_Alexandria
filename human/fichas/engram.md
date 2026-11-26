@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,8 +49,8 @@ Grupo **Memoria persistente para agentes de código**: Engram ocupa la posición
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [claude-mem](claude-mem.md) ⭐ recomendado | 74 | Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más. |
-| 2 | **Engram** (esta ficha) | 62 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
-| 3 | [agentmemory](agentmemory.md) | 52 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
+| 2 | **Engram** (esta ficha) | 63 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
+| 3 | [agentmemory](agentmemory.md) | 53 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
 
 ## Acceso, coste y equipo
 

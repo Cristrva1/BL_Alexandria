@@ -157,10 +157,23 @@ def test_catalog_scores_are_synced_and_documented():
 
 
 def test_monthly_workflow_opens_a_pr_and_never_pushes_to_main():
-    active = ROOT / ".github" / "workflows" / "metricas-mensuales.yml"
-    wf = (active if active.exists() else ROOT / "infra" / "github-actions" / "metricas-mensuales.yml").read_text(encoding="utf8")
+    wf = (ROOT / ".github/workflows/metricas-mensuales.yml").read_text(encoding="utf8")
     spec = yaml.safe_load(wf)
     assert spec[True]["schedule"][0]["cron"].split()[2:] == ["1", "*", "*"]  # mensual
     assert spec["permissions"] == {"contents": "write", "pull-requests": "write"}
     assert "gh pr create" in wf and "repo-intelligence score --refrescar" in wf
     assert "push origin main" not in wf and "push --force" not in wf and 'git push origin "$BRANCH"' in wf
+
+
+def test_only_upstream_website_counts_toward_documentation():
+    compact = _compact(["a"])
+    config = S.load_config(ROOT)
+
+    def maturity(homepage, editorial):
+        metrics = {"a": _metrics("a", 3000, 40, 2, homepage=homepage)}
+        return S.score_all(metrics, compact, {"a": {"doc": editorial}}, config)["a"]["ejes"]["madurez"]
+
+    baseline = maturity("", "")
+    assert maturity("", "human/fichas/a.md") == baseline
+    assert maturity("https://github.com/acme/a", "") == baseline
+    assert maturity("https://docs.example.org", "") > baseline

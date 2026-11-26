@@ -85,7 +85,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/KlingTeam/LivePortrait
   cd LivePortrait
-  
+
   # create env using conda
   conda create -n LivePortrait python=3.10
   conda activate LivePortrait

@@ -18,17 +18,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=6
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `mem0` | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y… | 2 Intermedio | 76 | Apache-2.0 (OSI permisiva) | recomendado |
+| `mem0` | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y… | 2 Intermedio | 77 | Apache-2.0 (OSI permisiva) | recomendado |
 | `claude-mem` | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes… | 1 Básico | 74 | Apache-2.0 (OSI permisiva) | recomendado |
 | `openviking` | Base de contexto para agentes que organiza memoria, documentos y skills y… | 3 Avanzado | 69 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `cognee` | Plataforma de memoria para agentes que combina grafos de conocimiento y… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | alternativa |
 | `mempalace` | Memoria de IA local-first con almacenamiento verbatim y backend conectable… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
-| `engram` | Memoria persistente para agentes de código en un solo binario Go con SQLite… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
-| `graphiti` | Librería de Zep para construir grafos de conocimiento temporales en tiempo real… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | alternativa |
-| `supermemory` | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia… | 1 Básico | 61 | MIT (OSI permisiva) | alternativa |
-| `letta` | Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y… | 2 Intermedio | 55 | Apache-2.0 (OSI permisiva) | alternativa |
-| `agentmemory` | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
-| `dsh-noema` | Plugin de memoria persistente para DeepSeek Harness con herramientas de… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
+| `engram` | Memoria persistente para agentes de código en un solo binario Go con SQLite… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
+| `graphiti` | Librería de Zep para construir grafos de conocimiento temporales en tiempo real… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | alternativa |
+| `supermemory` | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
+| `letta` | Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | alternativa |
+| `agentmemory` | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor… | 2 Intermedio | 53 | Apache-2.0 (OSI permisiva) | alternativa |
+| `dsh-noema` | Plugin de memoria persistente para DeepSeek Harness con herramientas de… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -36,7 +36,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### mem0 (`mem0`)
 
-- **Repo:** https://github.com/mem0ai/mem0 · Apache-2.0 · nivel 2 · 76/100 · recomendado en «Capas de memoria para apps y agentes de IA»
+- **Repo:** https://github.com/mem0ai/mem0 · Apache-2.0 · nivel 2 · 77/100 · recomendado en «Capas de memoria para apps y agentes de IA»
 - **Qué es:** Capa de memoria para asistentes y agentes de IA de Mem0 («mem-zero»), de código abierto (Apache 2.0) con plataforma gestionada de pago. Muy activa; en abril de 2026 publicó un nuevo algoritmo de memoria y su evaluación es reproducible con…
 - **Cuándo elegirlo:** Casos: Recordar preferencias de atención; Mantener contexto de una app entre conversaciones.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; LLM; embeddings; almacén; identificador ficticio de usuario; hardware prerequisites; API de IA: depends; Python; LLM; embeddings; almacén; identificador ficticio de usuario.
@@ -99,7 +99,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Engram (`engram`)
 
-- **Repo:** https://github.com/Gentleman-Programming/engram · MIT · nivel 1 · 62/100 · alternativa en «Memoria persistente para agentes de código»
+- **Repo:** https://github.com/Gentleman-Programming/engram · MIT · nivel 1 · 63/100 · alternativa en «Memoria persistente para agentes de código»
 - **Qué es:** Memoria persistente para agentes de código de Gentleman-Programming, de código abierto (MIT) y financiada por donaciones, sin funciones de pago. Muy activa (v3.7.2) y parte del ecosistema Gentle-AI.
 - **Cuándo elegirlo:** Casos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones.
 - **Requisitos:** nivel 1: preparación sencilla; Binario oficial o Go; cliente MCP; directorio de memoria de prueba; hardware prerequisites; API de IA: no; Binario oficial o Go; cliente MCP; directorio de memoria de prueba.
@@ -111,7 +111,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Graphiti (`graphiti`)
 
-- **Repo:** https://github.com/getzep/graphiti · Apache-2.0 · nivel 2 · 61/100 · alternativa en «Capas de memoria para apps y agentes de IA»
+- **Repo:** https://github.com/getzep/graphiti · Apache-2.0 · nivel 2 · 62/100 · alternativa en «Capas de memoria para apps y agentes de IA»
 - **Qué es:** Framework de código abierto (Apache 2.0) de Zep para construir y consultar grafos de contexto temporales para agentes de IA. Activo (v0.31.2); Zep ofrece una plataforma empresarial gestionada sobre el mismo concepto.
 - **Cuándo elegirlo:** Casos: Representar cambios de una relación comercial; Conservar hechos de conversaciones con fechas.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; Neo4j o FalkorDB; LLM y embeddings configurados; hardware prerequisites; API de IA: depends; Python; Neo4j o FalkorDB; LLM y embeddings configurados.
@@ -123,7 +123,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### supermemory (`supermemory`)
 
-- **Repo:** https://github.com/supermemoryai/supermemory · MIT · nivel 1 · 61/100 · alternativa en «Capas de memoria para apps y agentes de IA»
+- **Repo:** https://github.com/supermemoryai/supermemory · MIT · nivel 1 · 62/100 · alternativa en «Capas de memoria para apps y agentes de IA»
 - **Qué es:** Motor de memoria y contexto para IA de Supermemory, que se define como laboratorio de investigación. El repositorio es MIT (servidor en versión 0.0.x) y el servicio principal es una API alojada; afirma ser el n.º 1 en LongMemEval, LoCoMo y…
 - **Cuándo elegirlo:** Casos: Conservar contexto entre agentes; Buscar documentos y recuerdos de un proyecto.
 - **Requisitos:** nivel 1: preparación sencilla; Node.js para ruta local; modelo elegido; cuenta para Cloud; hardware prerequisites; API de IA: depends; Node.js para ruta local; modelo elegido; cuenta para Cloud.
@@ -135,7 +135,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Letta (`letta`)
 
-- **Repo:** https://github.com/letta-ai/letta-code · Apache-2.0 · nivel 2 · 55/100 · alternativa en «Capas de memoria para apps y agentes de IA»
+- **Repo:** https://github.com/letta-ai/letta-code · Apache-2.0 · nivel 2 · 57/100 · alternativa en «Capas de memoria para apps y agentes de IA»
 - **Qué es:** Letta Code es el harness de agentes con estado de Letta (los creadores de MemGPT y de «sleep-time compute»), con licencia Apache 2.0, escrito en TypeScript.
 - **Cuándo elegirlo:** Casos: Estudiar un agente con memoria persistente; Crear un asistente que conserve preferencias.
 - **Requisitos:** nivel 2: preparación media; Node.js y npm, o Python 3.9+ con uv/pipx; credenciales del proveedor de modelos o cuenta de Letta; hardware prerequisites; API de IA: depends; Node.js y npm, o Python 3.9+ con uv/pipx; credenciales del proveedor de modelos o cuenta de Letta.
@@ -147,7 +147,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### agentmemory (`agentmemory`)
 
-- **Repo:** https://github.com/rohitg00/agentmemory · Apache-2.0 · nivel 2 · 52/100 · alternativa en «Memoria persistente para agentes de código»
+- **Repo:** https://github.com/rohitg00/agentmemory · Apache-2.0 · nivel 2 · 53/100 · alternativa en «Memoria persistente para agentes de código»
 - **Qué es:** Memoria persistente de código abierto (Apache 2.0) para sesiones de programación y agentes, de rohitg00, que se presenta como implementación del patrón «LLM Wiki» de Karpathy con puntuación de confianza, ciclo de vida, grafos y búsqueda…
 - **Cuándo elegirlo:** Casos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node.js >=20; servidor local; hooks revisados en el cliente; hardware prerequisites; API de IA: opcional; Node.js >=20; servidor local; hooks revisados en el cliente.
@@ -159,7 +159,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### dsh-noema (`dsh-noema`)
 
-- **Repo:** https://github.com/ZSeven-W/dsh-noema · MIT · nivel 2 · 47/100
+- **Repo:** https://github.com/ZSeven-W/dsh-noema · MIT · nivel 2 · 48/100
 - **Qué es:** Plugin de código abierto (MIT) de ZSeven-W que añade memoria a largo plazo a DeepSeek Harness usando Noema, un sistema de memoria local sin vectores.
 - **Cuándo elegirlo:** Casos: Dar memoria a DeepSeek Harness; Importar una nota propia de otro agente.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; DeepSeek Harness compatible; plugin Noema; directorio de prueba; hardware prerequisites; API de IA: no; DeepSeek Harness compatible; plugin Noema; directorio de prueba.

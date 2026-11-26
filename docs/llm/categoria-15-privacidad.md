@@ -18,20 +18,43 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `authentik` | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 68 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | alternativa |
+| `keycloak` | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | recomendado |
 | `pi-hole` | Sumidero DNS para bloquear anuncios y rastreadores en toda la red sin instalar… | 1 Básico | 68 | EUPL-1.2 (OSI copyleft) | recomendado |
-| `authentik` | IdP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2… | 3 Avanzado | 67 | MIT + licencia Enterprise (authentik/enterprise/) (open-core) | recomendado |
-| `keycloak` | IdP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | alternativa |
-| `vaultwarden` | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 67 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `vault` | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. | 3 Avanzado | 64 | BUSL-1.1 (source-available) | sin grupo |
-| `age` | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña… | 1 Básico | 61 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `vaultwarden` | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de… | 2 Intermedio | 68 | AGPL-3.0 (OSI copyleft) | recomendado |
+| `vault` | Gestión de secretos y cifrado como servicio: dinámicos, KV, PKI. | 3 Avanzado | 65 | BUSL-1.1 (source-available) | sin grupo |
+| `age` | Cifrado de ficheros moderno y simple (clave/recipient) sin OpenPGP: CLI pequeña… | 1 Básico | 62 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `bitwarden-clients` | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar… | 1 Básico | 61 | GPL-3.0 + Bitwarden License (bitwarden_license/) (OSI copyleft) | sin grupo |
 | `adguardhome` | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | alternativa |
+| `keepassxc` | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con… | 1 Básico | 55 | GPL-2.0 o GPL-3.0 (OSI copyleft) | alternativa |
 | `sops` | Cifra secretos en YAML/JSON/ENV para GitOps con claves age, PGP o KMS… | 1 Básico | 55 | MPL-2.0 (OSI copyleft) | sin grupo |
-| `keepassxc` | Gestor de contraseñas local multiplataforma (fork comunitario de KeePassX) con… | 1 Básico | 54 | GPL-2.0 o GPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### authentik (`authentik`)
+
+- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 68/100 · alternativa en «Proveedores de identidad y SSO»
+- **Qué es:** Identity provider (MIT + enterprise/ propietaria).
+- **Cuándo elegirlo:** Casos: SSO delante de apps autoalojadas; MFA centralizado para el lab.
+- **Requisitos:** nivel 3: proveedor de identidad con Docker Compose y flujos a configurar; Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/goauthentik/authentik/blob/main/website/docs/install-config/install/docker-compose.mdx
+- **Primera prueba propuesta (no ejecutada):** Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba. Éxito: Login SSO funcionando.
+- **Combina con:** `vaultwarden`, `caddy` [22/infraestructura]
+- **Alternativas:** `keycloak`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### Keycloak (`keycloak`)
+
+- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 68/100 · recomendado en «Proveedores de identidad y SSO»
+- **Qué es:** IdP Apache-2.0 de Keycloak.
+- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
+- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
+- **Combina con:** `vault`, `caddy` [22/infraestructura]
+- **Alternativas:** `authentik`
 
 ### Pi-hole (`pi-hole`)
 
@@ -45,32 +68,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `adguardhome`
 - **Riesgos y avisos:** Alternativas (elige una): adguardhome. Instalar con `curl | bash` ejecuta un script remoto: revísalo antes.
 
-### authentik (`authentik`)
-
-- **Repo:** https://github.com/goauthentik/authentik · MIT + licencia Enterprise (authentik/enterprise/) · nivel 3 · 67/100 · recomendado en «Proveedores de identidad y SSO»
-- **Qué es:** Identity provider (MIT + enterprise/ propietaria).
-- **Cuándo elegirlo:** Casos: SSO delante de apps autoalojadas; MFA centralizado para el lab.
-- **Requisitos:** nivel 3: proveedor de identidad con Docker Compose y flujos a configurar; Python, Cargo.toml, Makefile, go.mod, package.json, pyproject.toml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/goauthentik/authentik/blob/main/website/docs/install-config/install/docker-compose.mdx
-- **Primera prueba propuesta (no ejecutada):** Despliega con el Compose de docs.goauthentik.io y crea una aplicación de prueba. Éxito: Login SSO funcionando.
-- **Combina con:** `vaultwarden`, `caddy` [22/infraestructura]
-- **Alternativas:** `keycloak`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
-
-### Keycloak (`keycloak`)
-
-- **Repo:** https://github.com/keycloak/keycloak · Apache-2.0 · nivel 3 · 67/100 · alternativa en «Proveedores de identidad y SSO»
-- **Qué es:** IdP Apache-2.0 de Keycloak.
-- **Cuándo elegirlo:** Casos: OIDC para un cluster de apps propias; federar un LDAP existente.
-- **Requisitos:** nivel 3: servidor de identidad: realms, clientes y certificados; Java, pom.xml; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/keycloak/keycloak/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Arranca el contenedor oficial de Keycloak en modo dev y abre la admin console. Éxito: Realm de prueba creado.
-- **Combina con:** `vault`, `caddy` [22/infraestructura]
-- **Alternativas:** `authentik`
-
 ### vaultwarden (`vaultwarden`)
 
-- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 67/100 · recomendado en «Gestores de contraseñas»
+- **Repo:** https://github.com/dani-garcia/vaultwarden · AGPL-3.0 · nivel 2 · 68/100 · recomendado en «Gestores de contraseñas»
 - **Qué es:** Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5).
 - **Cuándo elegirlo:** Casos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden.
 - **Requisitos:** nivel 2: un contenedor; requiere HTTPS y copias de seguridad; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia; hardware prerequisites; API de IA: no; Docker o binario; dominio y HTTPS; volumen persistente; copias; bóveda ficticia.
@@ -82,7 +82,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### HashiCorp Vault (`vault`)
 
-- **Repo:** https://github.com/hashicorp/vault · BUSL-1.1 · nivel 3 · 64/100
+- **Repo:** https://github.com/hashicorp/vault · BUSL-1.1 · nivel 3 · 65/100
 - **Qué es:** Gestor de secretos de HashiCorp/IBM bajo Business Source License 1.1 desde la 1.15 (source-available, no OSI); cada versión pasa a MPL-2.0 a los 4 años. OpenBao es el fork MPL-2.0.
 - **Cuándo elegirlo:** Casos: centralizar secretos de un entorno propio; emitir credenciales dinámicas de DB de lab.
 - **Requisitos:** nivel 3: gestión de secretos: unseal, políticas y almacenamiento; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -93,7 +93,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### age (`age`)
 
-- **Repo:** https://github.com/FiloSottile/age · BSD-3-Clause · nivel 1 · 61/100
+- **Repo:** https://github.com/FiloSottile/age · BSD-3-Clause · nivel 1 · 62/100
 - **Qué es:** Herramienta de cifrado de FiloSottile (BSD-3).
 - **Cuándo elegirlo:** Casos: cifrar un backup antes de subirlo; claves age para SOPS.
 - **Requisitos:** nivel 1: preparación sencilla; Go, go.mod; API de IA: no.
@@ -124,6 +124,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `pi-hole`
 - **Riesgos y avisos:** Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador. El filtrado DNS no bloquea todo anuncio ni sustituye otras protecciones; no cambies toda la red para la primera prueba.
 
+### KeePassXC (`keepassxc`)
+
+- **Repo:** https://github.com/keepassxreboot/keepassxc · GPL-2.0 o GPL-3.0 · nivel 1 · 55/100 · alternativa en «Gestores de contraseñas»
+- **Qué es:** Password manager local (GPL según COPYING; API NOASSERTION).
+- **Cuándo elegirlo:** Casos: cofre local para el equipo de lab; TOTP + contraseñas sin nube.
+- **Requisitos:** nivel 1: preparación sencilla; C++, CMakeLists.txt; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/keepassxreboot/keepassxc.git` — fuente: https://github.com/keepassxreboot/keepassxc/blob/develop/INSTALL.md
+- **Primera prueba propuesta (no ejecutada):** Instala KeePassXC desde keepassxc.org y crea una base .kdbx de prueba. Éxito: Entradas guardadas y desbloqueables.
+- **Combina con:** `sops`
+- **Alternativas:** `vaultwarden`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
 ### SOPS (`sops`)
 
 - **Repo:** https://github.com/getsops/sops · MPL-2.0 · nivel 1 · 55/100
@@ -133,18 +145,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/getsops/sops/blob/main/README.rst
 - **Primera prueba propuesta (no ejecutada):** Instala sops (release) y cifra un YAML de lab con age. Éxito: El fichero en Git permanece cifrado.
 - **Combina con:** `age`, `vault`
-
-### KeePassXC (`keepassxc`)
-
-- **Repo:** https://github.com/keepassxreboot/keepassxc · GPL-2.0 o GPL-3.0 · nivel 1 · 54/100 · alternativa en «Gestores de contraseñas»
-- **Qué es:** Password manager local (GPL según COPYING; API NOASSERTION).
-- **Cuándo elegirlo:** Casos: cofre local para el equipo de lab; TOTP + contraseñas sin nube.
-- **Requisitos:** nivel 1: preparación sencilla; C++, CMakeLists.txt; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/keepassxreboot/keepassxc.git` — fuente: https://github.com/keepassxreboot/keepassxc/blob/develop/INSTALL.md
-- **Primera prueba propuesta (no ejecutada):** Instala KeePassXC desde keepassxc.org y crea una base .kdbx de prueba. Éxito: Entradas guardadas y desbloqueables.
-- **Combina con:** `sops`
-- **Alternativas:** `vaultwarden`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

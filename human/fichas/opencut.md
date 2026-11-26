@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; app o instalador listo para usar
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,8 +46,8 @@ Grupo **Editores de video**: OpenCut ocupa la posición 1 de 3 (recomendado). Or
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **OpenCut** (esta ficha) ⭐ recomendado | 62 | Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. |
-| 2 | [Shotcut](shotcut.md) | 59 | Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. |
+| 1 | **OpenCut** (esta ficha) ⭐ recomendado | 63 | Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. |
+| 2 | [Shotcut](shotcut.md) | 60 | Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. |
 | 3 | [Kdenlive](kdenlive.md) | 59 | Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. |
 
 ## Acceso, coste y equipo

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 46/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,8 +46,8 @@ Grupo **Generación automática de videos cortos**: short-video-factory ocupa la
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [MoneyPrinterTurbo](moneyprinterturbo.md) ⭐ recomendado | 77 | Si buscas esto: app que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
-| 2 | **short-video-factory** (esta ficha) | 46 | Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. |
+| 1 | [MoneyPrinterTurbo](moneyprinterturbo.md) ⭐ recomendado | 74 | Si buscas esto: app que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
+| 2 | **short-video-factory** (esta ficha) | 47 | Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. |
 
 ## Acceso, coste y equipo
 

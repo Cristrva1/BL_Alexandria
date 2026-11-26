@@ -48,7 +48,7 @@ Grupo **Automatización por eventos auto-hospedada**: Node-RED ocupa la posició
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Node-RED** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. |
-| 2 | [huginn](huginn.md) | 63 | Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". |
+| 2 | [huginn](huginn.md) | 60 | Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". |
 
 ## Acceso, coste y equipo
 

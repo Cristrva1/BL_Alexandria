@@ -20,23 +20,23 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `memos` | App de notas rápidas autoalojada con línea temporal personal, Markdown… | 1 Básico | 82 | MIT (OSI permisiva) | sin grupo |
 | `siyuan` | Espacio de conocimiento por bloques, local-first y autoalojable, con… | 1 Básico | 79 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `karakeep` | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones… | 2 Intermedio | 68 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `karakeep` | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones… | 2 Intermedio | 69 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `trilium` | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas… | 1 Básico | 65 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `appflowy` | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | recomendado |
-| `trilium` | App de notas jerárquicas para bases de conocimiento grandes: clonado de notas… | 1 Básico | 64 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `obsidian-skills` | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
 | `obsidian-second-brain` | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre… | 2 Intermedio | 62 | MIT (OSI permisiva) | recomendado |
 | `claude-obsidian` | Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
 | `obsidian-releases` | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no… | 1 Básico | 60 | — (sin licencia detectada) | sin grupo |
 | `logseq` | Plataforma de gestión del conocimiento local-first en forma de esquema, con… | 1 Básico | 59 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `joplin` | App de notas y tareas centrada en la privacidad, offline first, con… | 1 Básico | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `obsidian-importer` | Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
-| `joplin` | App de notas y tareas centrada en la privacidad, offline first, con… | 1 Básico | 57 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `obsidian-clipper` | Extensión oficial para capturar páginas y fragmentos de la web y guardarlos… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
 | `kepano-obsidian` | Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
 | `jsoncanvas` | Especificación abierta de JSON Canvas para describir nodos y conexiones de un… | 1 Básico | 50 | MIT (OSI permisiva) | sin grupo |
 | `obsidian-sample-plugin` | Plantilla oficial para programar un plugin de Obsidian con una estructura… | 2 Intermedio | 50 | 0BSD (OSI permisiva) | sin grupo |
 | `anytype-ts` | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en… | 1 Básico | 48 | Any Source Available License 1.0 (no OSI) (source-available) | alternativa |
 | `obsidian-minimal` | Tema configurable de Obsidian para ajustar la apariencia y reducir… | 1 Básico | 48 | MIT (OSI permisiva) | sin grupo |
-| `obsidian-help` | Documentación oficial de Obsidian para aprender sus funciones, configuración y… | 1 Básico | 42 | — (sin licencia detectada) | sin grupo |
+| `obsidian-help` | Documentación oficial de Obsidian para aprender sus funciones, configuración y… | 1 Básico | 43 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -71,7 +71,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### karakeep (`karakeep`)
 
-- **Repo:** https://github.com/karakeep-app/karakeep · AGPL-3.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/karakeep-app/karakeep · AGPL-3.0 · nivel 2 · 69/100
 - **Qué es:** Gestor de marcadores autoalojado «guárdalo todo» (antes Hoarder) con etiquetado por IA, de Localhost Labs Ltd. Licencia AGPL-3.0. Es activo y popular (~31k estrellas, v0.35.0).
 - **Cuándo elegirlo:** Casos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local.
 - **Requisitos:** nivel 2: Docker Compose documentado; Docker; volumen persistente; modelo solo para etiquetado AI; hardware prerequisites; API de IA: opcional; Docker; volumen persistente; modelo solo para etiquetado AI.
@@ -79,6 +79,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Guarda dos enlaces de prueba y comprueba búsqueda y etiquetas antes de activar resúmenes AI Éxito: Puedes abrir origen, nota y etiquetas de cada marcador
 - **Combina con:** `ollama` [8/motores], `coolify` [22/infraestructura], `claude-code` [20/terminal], `archivebox` [4/busqueda]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre. Antes Hoarder; el modo de lectura offline no significa que un proveedor AI remoto procese localmente los artículos.
+
+### Trilium Notes (`trilium`)
+
+- **Repo:** https://github.com/TriliumNext/Trilium · AGPL-3.0 · nivel 1 · 65/100 · alternativa en «Notas y bases de conocimiento personales»
+- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0) mantenida por la comunidad TriliumNext, continuación del Trilium original de zadam. Muy activa, con versiones estables y nightly.
+- **Cuándo elegirlo:** Casos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, docker-compose.yml, package.json; API de IA: opcional.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/TriliumNext/Trilium.git` — fuente: https://github.com/TriliumNext/Trilium/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la release de escritorio o el servidor Docker, crea un árbol de notas y clona una nota en dos ramas. Éxito: La nota clonada aparece en ambas ramas y los cambios se reflejan en las dos.
+- **Combina con:** `coolify` [22/infraestructura], `claude-code` [20/terminal], `pandoc` [13/conversion]
+- **Alternativas:** `siyuan`, `logseq`, `joplin`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): joplin, siyuan, logseq.
 
 ### AppFlowy (`appflowy`)
 
@@ -91,18 +103,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ollama` [8/motores], `coolify` [22/infraestructura], `markitdown` [13/conversion]
 - **Alternativas:** `anytype-ts`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): anytype-ts. Usa el instalador para empezar; la guía from-source es de desarrollo; no se confirma aquí una ruta completa de modelo local.
-
-### Trilium Notes (`trilium`)
-
-- **Repo:** https://github.com/TriliumNext/Trilium · AGPL-3.0 · nivel 1 · 64/100 · alternativa en «Notas y bases de conocimiento personales»
-- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0) mantenida por la comunidad TriliumNext, continuación del Trilium original de zadam. Muy activa, con versiones estables y nightly.
-- **Cuándo elegirlo:** Casos: construir una base de conocimiento personal grande con jerarquías y atributos; sincronizar notas entre escritorio y navegador con tu propio servidor.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, docker-compose.yml, package.json; API de IA: opcional.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/TriliumNext/Trilium.git` — fuente: https://github.com/TriliumNext/Trilium/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la release de escritorio o el servidor Docker, crea un árbol de notas y clona una nota en dos ramas. Éxito: La nota clonada aparece en ambas ramas y los cambios se reflejan en las dos.
-- **Combina con:** `coolify` [22/infraestructura], `claude-code` [20/terminal], `pandoc` [13/conversion]
-- **Alternativas:** `siyuan`, `logseq`, `joplin`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): joplin, siyuan, logseq.
 
 ### obsidian-skills (`obsidian-skills`)
 
@@ -177,6 +177,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `siyuan`, `trilium`, `joplin`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): joplin, trilium, siyuan. La migración a la versión con base de datos puede cambiar el formato de almacenamiento.
 
+### Joplin (`joplin`)
+
+- **Repo:** https://github.com/laurent22/joplin · AGPL-3.0 · nivel 1 · 58/100 · alternativa en «Notas y bases de conocimiento personales»
+- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.
+- **Cuándo elegirlo:** Casos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; TypeScript, package.json; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/laurent22/joplin/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala Joplin, crea una libreta con notas y configura la sincronización con una carpeta o WebDAV de prueba. Éxito: Las notas aparecen en un segundo dispositivo tras sincronizar.
+- **Combina con:** `nextcloud-server` [15/archivos], `syncthing` [15/archivos], `pandoc` [13/conversion]
+- **Alternativas:** `siyuan`, `trilium`, `logseq`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): trilium, siyuan, logseq.
+
 ### obsidian-importer (`obsidian-importer`)
 
 - **Repo:** https://github.com/obsidianmd/obsidian-importer · MIT · nivel 1 · 58/100
@@ -187,18 +199,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Importa dos notas ficticias a una bóveda nueva y revisa enlaces y adjuntos Éxito: Puedes comparar las notas de origen y destino sin mezclar toda tu colección
 - **Combina con:** `obsidian-help`, `obsidian-releases`, `markitdown` [13/conversion]
 - **Riesgos y avisos:** Sin alternativas declaradas. Los comandos npm son para desarrollar el plugin; usa el flujo de instalación de Obsidian para importaciones normales.
-
-### Joplin (`joplin`)
-
-- **Repo:** https://github.com/laurent22/joplin · AGPL-3.0 · nivel 1 · 57/100 · alternativa en «Notas y bases de conocimiento personales»
-- **Qué es:** Aplicación de notas de código abierto (AGPL-3.0 según el archivo de licencia) creada por Laurent Cozic. Muy madura, con ingresos por Joplin Cloud y donaciones.
-- **Cuándo elegirlo:** Casos: sustituir Evernote importando tus notas a una app abierta; mantener notas cifradas sincronizadas entre el móvil y el ordenador.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; TypeScript, package.json; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/laurent22/joplin/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Joplin, crea una libreta con notas y configura la sincronización con una carpeta o WebDAV de prueba. Éxito: Las notas aparecen en un segundo dispositivo tras sincronizar.
-- **Combina con:** `nextcloud-server` [15/archivos], `syncthing` [15/archivos], `pandoc` [13/conversion]
-- **Alternativas:** `siyuan`, `trilium`, `logseq`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): trilium, siyuan, logseq.
 
 ### obsidian-clipper (`obsidian-clipper`)
 
@@ -269,7 +269,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### obsidian-help (`obsidian-help`)
 
-- **Repo:** https://github.com/obsidianmd/obsidian-help · — · nivel 1 · 42/100
+- **Repo:** https://github.com/obsidianmd/obsidian-help · — · nivel 1 · 43/100
 - **Qué es:** Fuente de la documentación oficial de ayuda de Obsidian y sus traducciones. El repo no tiene archivo de licencia. Lo mantiene Obsidian y es activo (~2k estrellas).
 - **Cuándo elegirlo:** Casos: Aprender funciones básicas de Obsidian; Consultar cómo configurar una bóveda.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Obsidian solo para practicar; hardware prerequisites; API de IA: no; Navegador; Obsidian solo para practicar.

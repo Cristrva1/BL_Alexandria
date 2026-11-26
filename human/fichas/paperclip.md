@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,8 +47,8 @@ Grupo **Paneles para coordinar equipos de agentes**: paperclip ocupa la posició
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **paperclip** (esta ficha) ⭐ recomendado | 67 | Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
-| 2 | [multica](multica.md) | 56 | Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. |
+| 1 | **paperclip** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
+| 2 | [multica](multica.md) | 57 | Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. |
 
 ## Acceso, coste y equipo
 

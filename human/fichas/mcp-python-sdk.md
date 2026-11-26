@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **SDKs de MCP en Python**: MCP Python SDK ocupa la posición 2 de 2 (alter
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [FastMCP](fastmcp.md) ⭐ recomendado | 74 | Si buscas esto: la forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
-| 2 | **MCP Python SDK** (esta ficha) | 61 | Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
+| 2 | **MCP Python SDK** (esta ficha) | 62 | Si buscas esto: sDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
 
 ## Acceso, coste y equipo
 

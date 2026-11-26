@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **Automatización por eventos auto-hospedada**: huginn ocupa la posición 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Node-RED](node-red.md) ⭐ recomendado | 64 | Si buscas esto: editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. |
-| 2 | **huginn** (esta ficha) | 63 | Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". |
+| 2 | **huginn** (esta ficha) | 60 | Si buscas esto: sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -39,14 +39,14 @@ Estado en GitHub: activo · último push 2026-11-12 · última versión publicad
 
 ## Ver similares
 
-Grupo **Fuzzing de rutas y contenido web**: Gobuster ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Fuzzing de rutas y contenido web**: Gobuster ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [ffuf](ffuf.md) ⭐ recomendado | 69 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
-| 2 | [dirsearch](dirsearch.md) | 61 | Si prefieres una herramienta en Python con listas y reportes listos. |
-| 3 | **Gobuster** (esta ficha) | 59 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
-| 4 | [feroxbuster](feroxbuster.md) | 58 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
+| 1 | [ffuf](ffuf.md) ⭐ recomendado | 66 | Si quieres el fuzzer web más versátil (rutas, parámetros, vhosts) y rápido en Go. |
+| 2 | [dirsearch](dirsearch.md) | 58 | Si prefieres una herramienta en Python con listas y reportes listos. |
+| 3 | [feroxbuster](feroxbuster.md) | 58 | Si quieres descubrimiento recursivo de contenido automático en Rust. |
+| 4 | **Gobuster** (esta ficha) | 56 | Si quieres un enumerador simple de directorios, DNS y vhosts. |
 
 ## Acceso, coste y equipo
 

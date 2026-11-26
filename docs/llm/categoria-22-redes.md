@@ -18,21 +18,31 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `headscale` | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 69 | BSD-3-Clause (OSI permisiva) | recomendado |
-| `frp` | Proxy inverso rápido para exponer servidores locales detrás de NAT o… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `pangolin` | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y… | 3 Avanzado | 72 | NOASSERTION → open-core según el texto | sin grupo |
+| `headscale` | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 67 | BSD-3-Clause (OSI permisiva) | recomendado |
+| `wg-easy` | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `netbird` | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso… | 2 Intermedio | 63 | BSD-3-Clause + AGPL-3.0 (management, signal, relay) (OSI copyleft) | alternativa |
-| `wg-easy` | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `masterdnsvpn` | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
-| `pangolin` | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y… | 3 Avanzado | — | NOASSERTION | sin grupo |
-| `tailcat` | Conecta dos equipos propios para el intercambio temporal de datos mediante un… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
+| `frp` | Proxy inverso rápido para exponer servidores locales detrás de NAT o… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `masterdnsvpn` | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
+| `tailcat` | Conecta dos equipos propios para el intercambio temporal de datos mediante un… | 2 Intermedio | 51 | BSD-3-Clause (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
 
+### Pangolin Community Edition (`pangolin`)
+
+- **Repo:** https://github.com/fosrl/pangolin · NOASSERTION · nivel 3 · 72/100
+- **Qué es:** Una plataforma para dar acceso identificado a aplicaciones y servicios propios.
+- **Cuándo elegirlo:** Casos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.
+- **Requisitos:** nivel 3: preparación pesada; TypeScript, Dockerfile, Makefile, compose.yaml, package.json; hardware prerequisites; API de IA: no; Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.pangolin.net/self-host/quick-install
+- **Primera prueba propuesta (no ejecutada):** Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso. Éxito: La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión.
+
 ### Headscale (`headscale`)
 
-- **Repo:** https://github.com/juanfont/headscale · BSD-3-Clause · nivel 2 · 69/100 · recomendado en «Redes privadas tipo mesh (WireGuard)»
+- **Repo:** https://github.com/juanfont/headscale · BSD-3-Clause · nivel 2 · 67/100 · recomendado en «Redes privadas tipo mesh (WireGuard)»
 - **Qué es:** Servidor de control de código abierto (BSD-3-Clause) mantenido por la comunidad (Juan Font, Kristoffer Dalby y otros). Maduro; alcance deliberadamente acotado a una sola tailnet para uso personal o pequeñas organizaciones.
 - **Cuándo elegirlo:** Casos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio.
 - **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
@@ -42,16 +52,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `netbird`
 - **Riesgos y avisos:** Alternativas (elige una): netbird. No es un producto oficial de Tailscale.
 
-### frp (`frp`)
+### WireGuard Easy (`wg-easy`)
 
-- **Repo:** https://github.com/fatedier/frp · Apache-2.0 · nivel 2 · 64/100
-- **Qué es:** Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.
-- **Cuándo elegirlo:** Casos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS.
-- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/fatedier/frp/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README. Éxito: Puedes conectar por SSH al equipo local a través del puerto del VPS.
-- **Combina con:** `caddy` [22/infraestructura], `uptime-kuma` [22/infraestructura], `home-assistant` [15/domotica]
-- **Riesgos y avisos:** Alternativas cercanas: headscale o netbird si prefieres una red privada en lugar de publicar servicios.
+- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 2 · 64/100
+- **Qué es:** Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.
+- **Cuándo elegirlo:** Casos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `sudo docker compose up / down` — fuente: https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md
+- **Primera prueba propuesta (no ejecutada):** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard. Éxito: El cliente se conecta y aparece activo en el panel.
+- **Combina con:** `grafana` [10/bi], `caddy` [22/infraestructura], `pi-hole` [15/privacidad], `portainer` [22/infraestructura]
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Para redes malladas con muchos nodos, headscale o netbird encajan mejor.
 
 ### NetBird (`netbird`)
 
@@ -65,20 +75,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `headscale`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): headscale.
 
-### WireGuard Easy (`wg-easy`)
+### frp (`frp`)
 
-- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 2 · 63/100
-- **Qué es:** Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.
-- **Cuándo elegirlo:** Casos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.
-- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `sudo docker compose up / down` — fuente: https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md
-- **Primera prueba propuesta (no ejecutada):** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard. Éxito: El cliente se conecta y aparece activo en el panel.
-- **Combina con:** `grafana` [10/bi], `caddy` [22/infraestructura], `pi-hole` [15/privacidad], `portainer` [22/infraestructura]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Para redes malladas con muchos nodos, headscale o netbird encajan mejor.
+- **Repo:** https://github.com/fatedier/frp · Apache-2.0 · nivel 2 · 59/100
+- **Qué es:** Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.
+- **Cuándo elegirlo:** Casos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS.
+- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/fatedier/frp/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README. Éxito: Puedes conectar por SSH al equipo local a través del puerto del VPS.
+- **Combina con:** `caddy` [22/infraestructura], `uptime-kuma` [22/infraestructura], `home-assistant` [15/domotica]
+- **Riesgos y avisos:** Alternativas cercanas: headscale o netbird si prefieres una red privada en lugar de publicar servicios.
 
 ### MasterDnsVPN (`masterdnsvpn`)
 
-- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 55/100
+- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 54/100
 - **Qué es:** MasterDnsVPN, proyecto de investigación en Go para transportar tráfico TCP mediante consultas y respuestas DNS, de @masterking32. Licencia MIT. Tiene ~7.3k estrellas y existe una versión legacy en Python.
 - **Cuándo elegirlo:** Casos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio.
 - **Requisitos:** nivel 2: preparación media; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio; hardware prerequisites; API de IA: no; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio.
@@ -91,19 +101,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `freedomain` [22/recursos], `free-for-dev` [22/recursos], `casaos` [22/infraestructura]
 - **Riesgos y avisos:** Sin alternativas declaradas. Herramienta de doble uso con implicaciones legales según el país; no se probó. Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers.
 
-### Pangolin Community Edition (`pangolin`)
-
-- **Repo:** https://github.com/fosrl/pangolin · NOASSERTION · nivel 3 · —/100
-- **Qué es:** Una plataforma para dar acceso identificado a aplicaciones y servicios propios.
-- **Cuándo elegirlo:** Casos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.
-- **Requisitos:** nivel 3: preparación pesada; TypeScript, Dockerfile, Makefile, compose.yaml, package.json; hardware prerequisites; API de IA: no; Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.pangolin.net/self-host/quick-install
-- **Primera prueba propuesta (no ejecutada):** Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso. Éxito: La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión.
-
 ### Tailcat (`tailcat`)
 
-- **Repo:** https://github.com/tailscale/tailcat · BSD-3-Clause · nivel 2 · —/100
+- **Repo:** https://github.com/tailscale/tailcat · BSD-3-Clause · nivel 2 · 51/100
 - **Qué es:** Una herramienta experimental de terminal para unir dos extremos bajo control de la misma persona.
 - **Cuándo elegirlo:** Casos: Enviar una línea de texto ficticio entre dos equipos propios.; Comprobar si un laboratorio de red local consigue una conexión directa o vía relé.
 - **Requisitos:** nivel 2: preparación media; Go, Makefile, go.mod; hardware prerequisites; API de IA: no; Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé..

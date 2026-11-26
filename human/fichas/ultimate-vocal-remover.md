@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación sencilla; app o instalador listo para usar; necesita GPU
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

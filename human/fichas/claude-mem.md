@@ -48,8 +48,8 @@ Grupo **Memoria persistente para agentes de código**: claude-mem ocupa la posic
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **claude-mem** (esta ficha) ⭐ recomendado | 74 | Si usas Claude Code y quieres que recuerde sesiones anteriores sin configurar nada más. |
-| 2 | [Engram](engram.md) | 62 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
-| 3 | [agentmemory](agentmemory.md) | 52 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
+| 2 | [Engram](engram.md) | 63 | Si quieres memoria para agentes en un único binario Go con SQLite, sin servicios extra. |
+| 3 | [agentmemory](agentmemory.md) | 53 | Si alternas entre varios agentes de código y quieres una memoria compartida entre ellos. |
 
 ## Acceso, coste y equipo
 

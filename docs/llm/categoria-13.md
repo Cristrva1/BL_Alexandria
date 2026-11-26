@@ -19,8 +19,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
 | `docling` | conversion | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON… | 2 Intermedio | 78 | MIT (OSI permisiva) | recomendado |
-| `markitdown` | conversion | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `mineru` | conversion | Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos… | 2 Intermedio | 68 | Apache-2.0 con condiciones adicionales (source-available) | alternativa |
+| `markitdown` | conversion | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `xberg` | conversion | Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
 | `marker` | conversion | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `tika` | conversion | Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -28,12 +28,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `pandoc` | conversion | Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y… | 1 Básico | 56 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `pdf-inspector` | conversion | Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `paddleocr` | ocr | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | recomendado |
-| `unlimited-ocr` | ocr | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 65 | MIT (OSI permisiva) | alternativa |
 | `ocrmypdf` | ocr | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 64 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `tesseract` | ocr | Motor de OCR de código abierto que reconoce texto en imágenes y documentos… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `surya` | ocr | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `unlimited-ocr` | ocr | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 62 | MIT (OSI permisiva) | alternativa |
 | `pdf-craft` | ocr | Herramienta para convertir libros escaneados en PDF a documentos editables… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `olmocr` | ocr | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 53 | Apache-2.0 (OSI permisiva) | alternativa |
+| `olmocr` | ocr | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 50 | Apache-2.0 (OSI permisiva) | alternativa |
 | `stirling-pdf` | pdf | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar… | 1 Básico | 76 | MIT + licencia propietaria (app/proprietary/, app/saas/) (open-core) | recomendado |
 | `pdfmathtranslate` | pdf | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
@@ -57,17 +57,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `mineru`, `xberg`, `marker`, `tika`, `unstructured`, `olmocr`
 - **Riesgos y avisos:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones. MCP es un paquete complementario y convierte localmente por defecto; configura explícitamente cualquier delegación a un servicio remoto.
 
-### markitdown (`markitdown`)
-
-- **Repo:** https://github.com/microsoft/markitdown · MIT · nivel 2 · 70/100
-- **Qué es:** Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.
-- **Cuándo elegirlo:** Casos: Preparar documentos Office para consulta; Crear una copia textual de un informe.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.10–3.14; entorno virtual; extras del formato elegido; hardware prerequisites; API de IA: opcional; Python 3.10–3.14; entorno virtual; extras del formato elegido.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install 'markitdown[all]'` — fuente: https://github.com/microsoft/markitdown/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas Éxito: El texto y el orden se pueden contrastar con el documento
-- **Combina con:** `claude-code` [20/terminal], `khoj` [8/workspaces], `pandoc`
-- **Riesgos y avisos:** Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original.
-
 ### MinerU (`mineru`)
 
 - **Repo:** https://github.com/opendatalab/MinerU · Apache-2.0 con condiciones adicionales · nivel 2 · 68/100 · alternativa en «Conversión de documentos a Markdown/JSON para IA»
@@ -79,6 +68,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `lightrag` [6/rag], `vllm` [23/serving], `claude-code` [20/terminal]
 - **Alternativas:** `docling`, `xberg`, `marker`, `tika`, `unstructured`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): docling, marker. Revisa las condiciones adicionales de su licencia antes de uso comercial. Se retiró ragflow por no estar documentado. La skill ayuda al agente a operar la herramienta; no es un modelo incluido en la suscripción del cliente; la telemetría tiene configuración propia.
+
+### markitdown (`markitdown`)
+
+- **Repo:** https://github.com/microsoft/markitdown · MIT · nivel 2 · 67/100
+- **Qué es:** Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.
+- **Cuándo elegirlo:** Casos: Preparar documentos Office para consulta; Crear una copia textual de un informe.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.10–3.14; entorno virtual; extras del formato elegido; hardware prerequisites; API de IA: opcional; Python 3.10–3.14; entorno virtual; extras del formato elegido.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install 'markitdown[all]'` — fuente: https://github.com/microsoft/markitdown/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas Éxito: El texto y el orden se pueden contrastar con el documento
+- **Combina con:** `claude-code` [20/terminal], `khoj` [8/workspaces], `pandoc`
+- **Riesgos y avisos:** Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original.
 
 ### Xberg (antes Kreuzberg) (`xberg`)
 
@@ -159,25 +159,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `python -m pip install paddleocr` — fuente: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.md
 - **Primera prueba propuesta (no ejecutada):** Reconoce una página con texto y tabla y compara palabras y coordenadas con la imagen Éxito: Puedes medir errores sobre un fragmento conocido
 - **Combina con:** `pdf-inspector` [13/conversion], `ragflow` [6/rag], `dify` [3/visual], `vllm` [23/serving]
-- **Alternativas:** `unlimited-ocr`, `tesseract`, `olmocr`
+- **Alternativas:** `tesseract`, `unlimited-ocr`, `olmocr`
 - **Riesgos y avisos:** Alternativas (elige una): tesseract, olmocr, unlimited-ocr. Se retiró docling por no estar documentado. Elige OCR clásico, estructura o VLM según la tarea; no todos los pipelines tienen la misma instalación y memoria.
-
-### Unlimited-OCR (`unlimited-ocr`)
-
-- **Repo:** https://github.com/baidu/Unlimited-OCR · MIT · nivel 3 · 65/100 · alternativa en «OCR de documentos»
-- **Qué es:** Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay…
-- **Cuándo elegirlo:** Casos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor.
-- **Requisitos:** nivel 3: preparación pesada, requiere programar con él, necesita GPU; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo; hardware prerequisites; API de IA: no; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/baidu/Unlimited-OCR/blob/main/README.md
-
-  ```shell
-  pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \
-    tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13
-  ```
-- **Primera prueba propuesta (no ejecutada):** Prueba un documento corto antes de procesar uno largo y compara texto y tablas Éxito: Puedes identificar errores y consumo de memoria en tu muestra
-- **Combina con:** `sglang` [23/serving], `vllm` [23/serving], `transformers` [24/entrenamiento]
-- **Alternativas:** `paddleocr`, `tesseract`, `olmocr`
-- **Riesgos y avisos:** Alternativas (elige una): olmocr, paddleocr. Se retiraron litellm, cosmos y comfyui por no tener relación documentada. La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo.
 
 ### OCRmyPDF (`ocrmypdf`)
 
@@ -213,6 +196,23 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `vllm` [23/serving], `llama-cpp` [8/motores], `marker` [13/conversion]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para usos comerciales por encima de los umbrales de la licencia de pesos, contacta con Datalab.
 
+### Unlimited-OCR (`unlimited-ocr`)
+
+- **Repo:** https://github.com/baidu/Unlimited-OCR · MIT · nivel 3 · 62/100 · alternativa en «OCR de documentos»
+- **Qué es:** Proyecto de investigación de Baidu (MIT) sobre análisis de documentos ultralargos, con la serie de modelos Unlimited OCR. Unlimited OCR 2 se publicó el 27 de octubre de 2026 junto con un artículo y el benchmark MarathonDocBench; no hay…
+- **Cuándo elegirlo:** Casos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor.
+- **Requisitos:** nivel 3: preparación pesada, requiere programar con él, necesita GPU; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo; hardware prerequisites; API de IA: no; Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/baidu/Unlimited-OCR/blob/main/README.md
+
+  ```shell
+  pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \
+    tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13
+  ```
+- **Primera prueba propuesta (no ejecutada):** Prueba un documento corto antes de procesar uno largo y compara texto y tablas Éxito: Puedes identificar errores y consumo de memoria en tu muestra
+- **Combina con:** `sglang` [23/serving], `vllm` [23/serving], `transformers` [24/entrenamiento]
+- **Alternativas:** `paddleocr`, `tesseract`, `olmocr`
+- **Riesgos y avisos:** Alternativas (elige una): olmocr, paddleocr. Se retiraron litellm, cosmos y comfyui por no tener relación documentada. La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo.
+
 ### pdf-craft (`pdf-craft`)
 
 - **Repo:** https://github.com/oomol-lab/pdf-craft · MIT · nivel 2 · 58/100
@@ -227,14 +227,14 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### olmOCR (`olmocr`)
 
-- **Repo:** https://github.com/allenai/olmocr · Apache-2.0 · nivel 3 · 53/100 · alternativa en «OCR de documentos»
+- **Repo:** https://github.com/allenai/olmocr · Apache-2.0 · nivel 3 · 50/100 · alternativa en «OCR de documentos»
 - **Qué es:** Kit del Allen Institute for AI (Apache 2.0) para convertir PDF y documentos de imagen en texto limpio. Versión v0.4.27; el último push es de marzo de 2026 y el último modelo anunciado en el README, de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF; hardware prerequisites; API de IA: opcional; Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install olmocr` — fuente: https://github.com/allenai/olmocr/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Convierte unas páginas con texto conocido y revisa orden de lectura y símbolos Éxito: Puedes comparar la salida con la página original y detectar omisiones
 - **Combina con:** `vllm` [23/serving], `lightrag` [6/rag], `open-notebook` [8/notebooklm]
-- **Alternativas:** `paddleocr`, `unlimited-ocr`, `tesseract`, `docling`
+- **Alternativas:** `paddleocr`, `tesseract`, `unlimited-ocr`, `docling`
 - **Riesgos y avisos:** Alternativas (elige una): paddleocr, docling, unlimited-ocr. Instalar el paquete cliente no proporciona por sí solo GPU ni créditos remotos; comienza con pocas páginas.
 
 ### Stirling-PDF (`stirling-pdf`)

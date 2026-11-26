@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; requiere programar con él; necesita GPU
 
-**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -53,9 +53,9 @@ Grupo **Motores 3D para la web**: three.js ocupa la posición 1 de 3 (recomendad
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **three.js** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
+| 1 | **three.js** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
 | 2 | [Babylon.js](babylonjs.md) | 67 | Si buscas esto: motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. |
-| 3 | [PlayCanvas Engine](playcanvas.md) | 65 | Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
+| 3 | [PlayCanvas Engine](playcanvas.md) | 66 | Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
 
 ## Acceso, coste y equipo
 

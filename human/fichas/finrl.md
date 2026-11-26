@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; requiere programar con él
 
-**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

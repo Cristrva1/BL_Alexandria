@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; necesita GPU
 
-**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,11 +46,11 @@ Grupo **Clonación de voz y TTS multilingüe**: F5-TTS ocupa la posición 2 de 5
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 72 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
-| 2 | **F5-TTS** (esta ficha) | 63 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
+| 1 | [GPT-SoVITS](gpt-sovits.md) ⭐ recomendado | 69 | Si quieres entrenar una voz propia con pocos minutos de audio y una interfaz web. |
+| 2 | **F5-TTS** (esta ficha) | 64 | Si quieres clonación de voz zero-shot con pocos segundos de audio. |
 | 3 | [CosyVoice](cosyvoice.md) | 61 | Si necesitas clonación de voz multilingüe de calidad, con soporte fuerte de chino. |
 | 4 | [Fish Speech](fish-speech.md) | 61 | Si buscas TTS multilingüe con clonación y buena latencia. |
-| 5 | [IndexTTS](index-tts.md) | 56 | Si necesitas controlar duración y emoción de la voz sintetizada. |
+| 5 | [IndexTTS](index-tts.md) | 53 | Si necesitas controlar duración y emoción de la voz sintetizada. |
 
 ## Acceso, coste y equipo
 

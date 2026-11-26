@@ -20,7 +20,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=4
 |---|---|---|---:|---|---|
 | `maxun` | Plataforma sin código para convertir sitios web en APIs y hojas de datos… | 2 Intermedio | 70 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `scrapegraph-ai` | Framework de scraping en Python basado en grafos potenciado por LLM, donde… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
-| `llm-scraper` | Librería TypeScript que convierte cualquier página web en datos estructurados… | 2 Intermedio | 47 | MIT (OSI permisiva) | alternativa |
+| `llm-scraper` | Librería TypeScript que convierte cualquier página web en datos estructurados… | 2 Intermedio | 44 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -48,7 +48,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   pip install scrapegraphai
-  
+
   # IMPORTANT (for fetching websites content)
   playwright install
   ```
@@ -59,7 +59,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### llm-scraper (`llm-scraper`)
 
-- **Repo:** https://github.com/mishushakov/llm-scraper · MIT · nivel 2 · 47/100 · alternativa en «Scraping guiado por LLM»
+- **Repo:** https://github.com/mishushakov/llm-scraper · MIT · nivel 2 · 44/100 · alternativa en «Scraping guiado por LLM»
 - **Qué es:** Librería TypeScript para extraer datos estructurados de cualquier página web con LLM, de @mishushakov. Licencia MIT. Es estable (~7k estrellas, sin releases) y su versión 2.0 usa el Vercel AI SDK 6.
 - **Cuándo elegirlo:** Casos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node.js; Playwright; esquema Zod; modelo elegido; hardware prerequisites; API de IA: depends; Node.js; Playwright; esquema Zod; modelo elegido.

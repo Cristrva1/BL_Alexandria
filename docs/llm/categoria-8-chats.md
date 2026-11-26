@@ -21,12 +21,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=8
 | `open-webui` | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI… | 1 Básico | 74 | Open WebUI License (BSD-3-Clause + cláusula de marca) (source-available) | recomendado |
 | `cherry-studio` | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de… | 1 Básico | 72 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `lobehub` | Espacio de trabajo con super-agentes y una interfaz de chat moderna… | 2 Intermedio | 70 | LobeHub Community License (Apache-2.0 + condiciones) (source-available) | alternativa |
-| `librechat` | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola… | 2 Intermedio | 68 | MIT (OSI permisiva) | alternativa |
-| `jan` | Aplicación de escritorio para conversar con modelos locales y configurar… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | alternativa |
-| `nextchat` | Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
-| `textgen` | App open source para LLM locales con texto, visión, herramientas y API… | 2 Intermedio | 53 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `librechat` | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola… | 2 Intermedio | 69 | MIT (OSI permisiva) | alternativa |
+| `jan` | Aplicación de escritorio para conversar con modelos locales y configurar… | 1 Básico | 66 | Apache-2.0 (OSI permisiva) | alternativa |
+| `nextchat` | Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
 | `chatbox` | Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos… | 1 Básico | 52 | GPL-3.0 (OSI copyleft) | alternativa |
-| `sillytavern` | Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `sillytavern` | Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `textgen` | App open source para LLM locales con texto, visión, herramientas y API… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -45,7 +45,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Conecta un modelo y conversa sobre un texto ficticio antes de cargar documentos privados Éxito: Puedes ver el modelo seleccionado y conservar una conversación
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `searxng` [4/busqueda]
-- **Alternativas:** `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `textgen`, `chatbox`, `anything-llm`
+- **Alternativas:** `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`, `textgen`, `anything-llm`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): librechat, lobehub, anything-llm, textgen. La cláusula de marca limita el rebranding: revisa LICENSE antes de redistribuirlo con otra…. Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia.
 
 ### Cherry Studio (`cherry-studio`)
@@ -57,7 +57,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://cherryai.com/docs/en/getting-started/quick-start/
 - **Primera prueba propuesta (no ejecutada):** Configura un modelo y prueba una pregunta sobre una nota ficticia en un espacio de trabajo Éxito: Puedes comprobar el proveedor y la respuesta usada en la conversación
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `playwright-mcp` [5/servidores]
-- **Alternativas:** `open-webui`, `lobehub`, `librechat`, `jan`, `nextchat`, `textgen`, `chatbox`
+- **Alternativas:** `open-webui`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`, `textgen`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): jan, lobehub. Los agentes pueden ejecutar comandos: revisa sus permisos. Es una app multiproveedor; escoger Anthropic u OpenAI no la convierte en sesión de Claude Code o Codex.
 
 ### LobeHub (`lobehub`)
@@ -75,56 +75,44 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Crea un asistente de prueba y distingue su modelo del agente externo que puedas conectar Éxito: Puedes identificar qué proveedor atiende cada conversación
 - **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `playwright-mcp` [5/servidores]
-- **Alternativas:** `open-webui`, `cherry-studio`, `librechat`, `jan`, `nextchat`, `textgen`, `chatbox`
+- **Alternativas:** `open-webui`, `cherry-studio`, `librechat`, `jan`, `nextchat`, `chatbox`, `textgen`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): open-webui, librechat, cherry-studio. SearXNG ya viene en su Compose; no instales otro aparte. Las skills portables y conectar un agente externo son funciones distintas; la página de integración consultada aún está en migración documental.
 
 ### LibreChat (`librechat`)
 
-- **Repo:** https://github.com/LibreChat-AI/LibreChat · MIT · nivel 2 · 68/100 · alternativa en «Interfaces de chat con LLM»
+- **Repo:** https://github.com/LibreChat-AI/LibreChat · MIT · nivel 2 · 69/100 · alternativa en «Interfaces de chat con LLM»
 - **Qué es:** Plataforma de chat con IA de código abierto (MIT) y autoalojable, del equipo LibreChat-AI, con agentes, MCP y autenticación multiusuario empresarial. Muy activa (v0.8.8 descrita en el README; sin releases formales en GitHub).
 - **Cuándo elegirlo:** Casos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos.
 - **Requisitos:** nivel 2: preparación media; Ruta de despliegue elegida; base de datos; proveedor u Ollama; hardware prerequisites; API de IA: opcional; Ruta de despliegue elegida; base de datos; proveedor u Ollama.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://www.librechat.ai/docs
 - **Primera prueba propuesta (no ejecutada):** Conecta un proveedor y prueba un agente sin herramientas antes de añadir archivos Éxito: Puedes identificar el modelo y revisar la conversación
 - **Combina con:** `litellm` [23/serving], `ollama` [8/motores], `langfuse` [23/observabilidad], `llama-cpp` [8/motores], `pgvector` [6/vectores], `exo` [8/motores]
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `jan`, `nextchat`, `textgen`, `chatbox`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `jan`, `nextchat`, `chatbox`, `textgen`
 - **Riesgos y avisos:** Alternativas (elige una): open-webui, lobehub. Meilisearch, pgvector y RAG API ya vienen en su Compose. Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo.
 
 ### Jan (`jan`)
 
-- **Repo:** https://github.com/janhq/jan · Apache-2.0 · nivel 1 · 65/100 · alternativa en «Interfaces de chat con LLM»
+- **Repo:** https://github.com/janhq/jan · Apache-2.0 · nivel 1 · 66/100 · alternativa en «Interfaces de chat con LLM»
 - **Qué es:** Aplicación de escritorio de código abierto presentada como reemplazo de ChatGPT, de Menlo Research (janhq). Licencia Apache 2.0 según su README (GitHub no la detecta como estándar); activa, con versiones frecuentes (v0.8.8).
 - **Cuándo elegirlo:** Casos: Conversar con un modelo privado; Comparar un modelo local con una API.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Instalador de escritorio oficial; RAM y disco; modelo compatible; hardware prerequisites; API de IA: opcional; Instalador de escritorio oficial; RAM y disco; modelo compatible.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/janhq/jan` — fuente: https://github.com/janhq/jan/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Desde la app descarga un modelo pequeño y prueba una conversación local Éxito: Ves el modelo cargado y puedes repetir la consulta sin proveedor remoto
 - **Combina con:** `llmfit` [8/motores], `ollama` [8/motores], `playwright-mcp` [5/servidores]
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `nextchat`, `textgen`, `chatbox`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `nextchat`, `chatbox`, `textgen`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): cherry-studio, textgen, chatbox. Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan.
 
 ### NextChat (`nextchat`)
 
-- **Repo:** https://github.com/ChatGPTNextWeb/NextChat · MIT · nivel 2 · 63/100 · alternativa en «Interfaces de chat con LLM»
+- **Repo:** https://github.com/ChatGPTNextWeb/NextChat · MIT · nivel 2 · 64/100 · alternativa en «Interfaces de chat con LLM»
 - **Qué es:** Cliente de chat de código abierto (MIT), antes ChatGPT-Next-Web, muy popular. Su organización ofrece además un servicio SaaS de pago por uso; el repositorio sigue siendo el cliente autoalojable.
 - **Cuándo elegirlo:** Casos: desplegar un chat privado con tu propia clave para un equipo pequeño; usar un modelo autoalojado compatible con OpenAI desde una interfaz web ligera.
 - **Requisitos:** nivel 2: preparación sencilla, requiere clave de API; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: sí.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/ChatGPTNextWeb/NextChat/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Despliega NextChat con Docker o Vercel usando tu clave de API y abre un chat. Éxito: El chat responde con el modelo configurado y el historial queda en el navegador.
 - **Combina con:** `localai` [8/motores], `litellm` [23/serving], `fastmcp` [5/sdk]
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `textgen`, `chatbox`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `chatbox`, `textgen`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): lobehub, chatbox. Protege el despliegue con la variable CODE si es público.
-
-### Text Generation WebUI (`textgen`)
-
-- **Repo:** https://github.com/oobabooga/textgen · AGPL-3.0 · nivel 2 · 53/100 · alternativa en «Interfaces de chat con LLM»
-- **Qué es:** Aplicación de escritorio para LLM locales, de código abierto (AGPL-3.0) y sin telemetría, de oobabooga (antes text-generation-webui). Madura y con versiones regulares (v4.9).
-- **Cuándo elegirlo:** Casos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app.
-- **Requisitos:** nivel 2: instaladores de un clic por sistema; Distribución portable apropiada a tu GPU o CPU; modelo GGUF; hardware prerequisites; API de IA: no; Distribución portable apropiada a tu GPU o CPU; modelo GGUF.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build` — fuente: https://github.com/oobabooga/textgen/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Carga un modelo pequeño en la app y revisa texto generado y consumo de memoria Éxito: Puedes identificar backend, modelo y memoria utilizada
-- **Combina con:** `librechat`, `llmfit` [8/motores], `unsloth` [24/entrenamiento], `sillytavern`
-- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): jan, open-webui. Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación.
 
 ### chatbox (`chatbox`)
 
@@ -140,7 +128,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### SillyTavern (`sillytavern`)
 
-- **Repo:** https://github.com/SillyTavern/SillyTavern · AGPL-3.0 · nivel 2 · 51/100
+- **Repo:** https://github.com/SillyTavern/SillyTavern · AGPL-3.0 · nivel 2 · 52/100
 - **Qué es:** Interfaz de usuario local de código abierto (AGPL-3.0), nacida en 2023 como fork de TavernAI 1.2.8 y mantenida por una comunidad de más de 300 contribuyentes. No ofrece servicios alojados ni rastrea datos de usuario según el proyecto.
 - **Cuándo elegirlo:** Casos: escribir historias o partidas de rol con personajes y memoria persistente; probar el mismo prompt contra varios modelos locales y remotos.
 - **Requisitos:** nivel 2: preparación media; JavaScript, Dockerfile, package.json; hardware model_dependent; API de IA: opcional.
@@ -148,6 +136,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala SillyTavern con Node.js 20+, conéctalo a un backend local como KoboldCpp u Ollama y abre un chat. Éxito: El chat responde con el modelo conectado y la conversación se guarda en tu equipo.
 - **Combina con:** `koboldcpp` [8/motores], `ollama` [8/motores], `comfyui` [11/interfaces], `kokoro` [29/tts], `textgen`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La curva de aprendizaje es alta por diseño; las tarjetas de personaje de terceros pueden contener prompts no deseados.
+
+### Text Generation WebUI (`textgen`)
+
+- **Repo:** https://github.com/oobabooga/textgen · AGPL-3.0 · nivel 2 · 51/100 · alternativa en «Interfaces de chat con LLM»
+- **Qué es:** Aplicación de escritorio para LLM locales, de código abierto (AGPL-3.0) y sin telemetría, de oobabooga (antes text-generation-webui). Madura y con versiones regulares (v4.9).
+- **Cuándo elegirlo:** Casos: Probar modelos GGUF sin una API remota; Servir un endpoint local para otra app.
+- **Requisitos:** nivel 2: instaladores de un clic por sistema; Distribución portable apropiada a tu GPU o CPU; modelo GGUF; hardware prerequisites; API de IA: no; Distribución portable apropiada a tu GPU o CPU; modelo GGUF.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up --build` — fuente: https://github.com/oobabooga/textgen/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Carga un modelo pequeño en la app y revisa texto generado y consumo de memoria Éxito: Puedes identificar backend, modelo y memoria utilizada
+- **Combina con:** `librechat`, `llmfit` [8/motores], `unsloth` [24/entrenamiento], `sillytavern`
+- **Alternativas:** `open-webui`, `cherry-studio`, `lobehub`, `librechat`, `jan`, `nextchat`, `chatbox`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativas (elige una): jan, open-webui. Antes conocida por rutas text-generation-webui; usa la distribución que corresponda a tu hardware y distingue API de inferencia de token de autenticación.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -197,7 +197,7 @@ def score_all(metrics: dict[str, dict], compact: dict, detail: dict, config: dic
             sem = 1 / 3
         else:
             sem = 0.5
-        home = (m.get("homepage") or e.get("doc") or "")
+        home = m.get("homepage") or ""
         docs = 1.0 if home and "github.com/" + (e.get("gh") or "").lower() not in home.lower() else 0.0
         sm = sub["madurez"]
         axes["madurez"] = age * sm["edad"] + sem * sm["semver"] + docs * sm["docs"]

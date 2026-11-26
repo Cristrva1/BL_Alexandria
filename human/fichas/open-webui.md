@@ -57,11 +57,11 @@ Grupo **Interfaces de chat con LLM**: Open WebUI ocupa la posición 1 de 8 (reco
 | 1 | **Open WebUI** (esta ficha) ⭐ recomendado | 74 | Si quieres la interfaz más completa para Ollama o APIs, multiusuario y con RAG. |
 | 2 | [Cherry Studio](cherry-studio.md) | 72 | Si quieres un cliente de escritorio para muchos proveedores con asistentes predefinidos. |
 | 3 | [LobeHub](lobehub.md) | 70 | Si quieres una interfaz moderna con plugins, agentes y despliegue sencillo. |
-| 4 | [LibreChat](librechat.md) | 68 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
-| 5 | [Jan](jan.md) | 65 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
-| 6 | [NextChat](nextchat.md) | 63 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
-| 7 | [Text Generation WebUI](textgen.md) | 53 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
-| 8 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
+| 4 | [LibreChat](librechat.md) | 69 | Si necesitas un clon de ChatGPT multiusuario con muchos proveedores, agentes y control de acceso. |
+| 5 | [Jan](jan.md) | 66 | Si prefieres una app de escritorio que funcione sin conexión con modelos locales. |
+| 6 | [NextChat](nextchat.md) | 64 | Si quieres desplegar una interfaz ligera en Vercel con un clic. |
+| 7 | [chatbox](chatbox.md) | 52 | Si quieres un cliente de escritorio y móvil sencillo para tus claves de API. |
+| 8 | [Text Generation WebUI](textgen.md) | 51 | Si quieres experimentar con muchos backends y formatos de modelos locales (GGUF, EXL2, Transformers). |
 
 ## Acceso, coste y equipo
 

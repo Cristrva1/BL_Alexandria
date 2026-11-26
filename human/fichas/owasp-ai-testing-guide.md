@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 42/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 39/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** CC-BY-SA-4.0. Fuente: [LICENSE](https://github.com/OWASP/www-project-ai-testing-guide/blob/main/LICENSE.md). GitHub la marca como NOASSERTION.
 

@@ -21,7 +21,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `jellyfin` | Sistema multimedia libre para gestionar y transmitir películas, series, música… | 1 Básico | 75 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `kavita` | Servidor de lectura rápido y multiplataforma para manga, cómics y libros, con… | 1 Básico | 57 | GPL-3.0 (OSI copyleft) | recomendado |
 | `audiobookshelf` | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y… | 3 Avanzado | 53 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `calibre-web` | Aplicación web para explorar, leer y descargar libros electrónicos de una base… | 1 Básico | 45 | GPL-3.0 (OSI copyleft) | alternativa |
+| `calibre-web` | Aplicación web para explorar, leer y descargar libros electrónicos de una base… | 1 Básico | 42 | GPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -63,7 +63,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Calibre-Web (`calibre-web`)
 
-- **Repo:** https://github.com/janeczku/calibre-web · GPL-3.0 · nivel 1 · 45/100 · alternativa en «Bibliotecas de libros y cómics»
+- **Repo:** https://github.com/janeczku/calibre-web · GPL-3.0 · nivel 1 · 42/100 · alternativa en «Bibliotecas de libros y cómics»
 - **Qué es:** Aplicación de código abierto (GPL-3.0) de janeczku, fork del proyecto library de mutschler. Madura y activa; requiere una base de datos de Calibre válida.
 - **Cuándo elegirlo:** Casos: acceder a tu biblioteca de Calibre desde el móvil o el e-reader; compartir una biblioteca de libros con la familia con cuentas separadas.
 - **Requisitos:** nivel 1: preparación sencilla; Fluent, pyproject.toml, requirements.txt; API de IA: no.

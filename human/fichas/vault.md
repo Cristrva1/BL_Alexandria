@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — gestión de secretos: unseal, políticas y almacenamiento · corregido a mano
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia y costes:** Vault no es open source según la definición OSI: desde la versión 1.15.0 usa Business Source License 1.1 (licenciante IBM). Permite uso en producción salvo ofrecerlo a terceros como servicio que compita con las versiones de pago; cada versión pasa a MPL-2.0 a los 4 años de publicarse. Alternativa con licencia abierta: OpenBao (openbao/openbao, fork MPL-2.0 de la Linux Foundation, ~9.000★), que aún no está en el catálogo.
 

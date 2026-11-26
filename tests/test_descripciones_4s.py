@@ -91,7 +91,6 @@ def test_reenrich_keeps_curated_sections(tmp_path):
 def test_combination_symmetry_report():
     """El informe carga y sus enlaces unidireccionales son todos aceptados (hub o saturado)."""
     import importlib.util
-    import warnings
 
     spec = importlib.util.spec_from_file_location("simetria", ROOT / "scripts" / "report_combina_simetria.py")
     module = importlib.util.module_from_spec(spec)
@@ -101,6 +100,6 @@ def test_combination_symmetry_report():
     assert all(a != b for a, b in pairs)
     from repo_intelligence.analysis.combina_policy import classify, combo_map
 
-    violations = classify(combo_map(detail["repos"]))["violation"]
-    if violations:
-        warnings.warn(f"{len(violations)} combinaciones fuera de política (ver scripts/report_combina_simetria.py)", UserWarning)
+    compact = json.loads((ROOT / "INDICE_IA.json").read_text(encoding="utf8"))
+    ligero = {r["id"] for r in compact["repos"] if r.get("nivel") == "ligero"}
+    assert not classify(combo_map(detail["repos"]), exempt=ligero)["violation"]

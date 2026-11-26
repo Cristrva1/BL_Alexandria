@@ -19,9 +19,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `fastmcp` | La forma rápida y pythónica de crear servidores y clientes MCP, con auth… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
-| `mcp-inspector` | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | 1 Básico | 69 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
+| `mcp-inspector` | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | 1 Básico | 68 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | sin grupo |
 | `mcp-use` | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o… | 2 Intermedio | 64 | MIT (OSI permisiva) | recomendado |
-| `mcp-python-sdk` | SDK oficial de Python para crear servidores y clientes del Model Context… | 2 Intermedio | 61 | MIT (OSI permisiva) | alternativa |
+| `mcp-python-sdk` | SDK oficial de Python para crear servidores y clientes del Model Context… | 2 Intermedio | 62 | MIT (OSI permisiva) | alternativa |
 | `mcp-typescript-sdk` | SDK oficial de TypeScript para crear servidores y clientes del Model Context… | 2 Intermedio | 60 | Apache-2.0 (en transición desde MIT) (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -42,7 +42,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MCP Inspector (`mcp-inspector`)
 
-- **Repo:** https://github.com/modelcontextprotocol/inspector · Apache-2.0 (en transición desde MIT) · nivel 1 · 69/100
+- **Repo:** https://github.com/modelcontextprotocol/inspector · Apache-2.0 (en transición desde MIT) · nivel 1 · 68/100
 - **Qué es:** Herramienta oficial para inspeccionar servidores del Model Context Protocol. El proyecto MCP está pasando de MIT a Apache-2.0 (GitHub muestra NOASSERTION). Es activa (~11k estrellas, 2.15.0).
 - **Cuándo elegirlo:** Casos: Depurar un esquema MCP; Reproducir un fallo de una herramienta.
 - **Requisitos:** nivel 1: preparación sencilla; Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba; hardware prerequisites; API de IA: no; Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba.
@@ -65,7 +65,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### MCP Python SDK (`mcp-python-sdk`)
 
-- **Repo:** https://github.com/modelcontextprotocol/python-sdk · MIT · nivel 2 · 61/100 · alternativa en «SDKs de MCP en Python»
+- **Repo:** https://github.com/modelcontextprotocol/python-sdk · MIT · nivel 2 · 62/100 · alternativa en «SDKs de MCP en Python»
 - **Qué es:** SDK oficial en Python del Model Context Protocol. Licencia MIT (el proyecto MCP está migrando a Apache-2.0). Es muy usado (~25k estrellas, v2.3.0).
 - **Cuándo elegirlo:** Casos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.11+; uv; directorio de proyecto; hardware prerequisites; API de IA: no; Python 3.11+; uv; directorio de proyecto.

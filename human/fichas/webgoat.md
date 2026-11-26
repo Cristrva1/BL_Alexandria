@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 58/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** GPL-2.0-or-later. SPDX-License-Identifier en LICENSE.txt. Fuente: [LICENSE](https://github.com/WebGoat/WebGoat/blob/main/LICENSE.txt). GitHub la marca como NOASSERTION.
 
@@ -47,7 +47,7 @@ Grupo **Aplicaciones web vulnerables para practicar**: WebGoat ocupa la posició
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [OWASP Juice Shop](juice-shop.md) ⭐ recomendado | 75 | Si quieres retos tipo CTF sobre una tienda moderna en JavaScript. |
-| 2 | **WebGoat** (esta ficha) | 62 | Si prefieres lecciones guiadas paso a paso sobre una aplicación Java. |
+| 2 | **WebGoat** (esta ficha) | 58 | Si prefieres lecciones guiadas paso a paso sobre una aplicación Java. |
 
 ## Acceso, coste y equipo
 

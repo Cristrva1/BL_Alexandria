@@ -18,31 +18,31 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `daily-stock-analysis` | agentes | Sistema que analiza acciones de varios mercados con LLM y envía un tablero de… | 2 Intermedio | 78 | MIT (OSI permisiva) | sin grupo |
+| `daily-stock-analysis` | agentes | Sistema que analiza acciones de varios mercados con LLM y envía un tablero de… | 2 Intermedio | 79 | MIT (OSI permisiva) | sin grupo |
 | `tradingagents` | agentes | Framework experimental que organiza agentes de análisis financiero, debate y… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `vibe-trading` | agentes | Agente de investigación y trabajo con estrategias de trading que utiliza… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
-| `finceptterminal` | agentes | Terminal de análisis financiero que reúne datos, investigación, paneles y… | 3 Avanzado | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `fingpt` | agentes | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA… | 3 Avanzado | 54 | MIT (OSI permisiva) | sin grupo |
-| `dexter` | agentes | Agente de investigación financiera que planifica consultas, obtiene datos de… | 2 Intermedio | 50 | — (sin licencia detectada) | sin grupo |
-| `autohedge` | agentes | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de… | 3 Avanzado | 45 | MIT (OSI permisiva) | sin grupo |
-| `quantharness` | agentes | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
-| `polyweather` | agentes | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las… | 2 Intermedio | — | AGPL-3.0 | sin grupo |
-| `openbb` | cuant | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con… | 2 Intermedio | 73 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `nautilus-trader` | cuant | Motor de trading y backtesting con arquitectura orientada a eventos para… | 2 Intermedio | 70 | LGPL-3.0 (OSI copyleft) | sin grupo |
-| `yfinance` | cuant | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `qlib` | cuant | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y… | 3 Avanzado | 64 | MIT (OSI permisiva) | sin grupo |
+| `vibe-trading` | agentes | Agente de investigación y trabajo con estrategias de trading que utiliza… | 2 Intermedio | 72 | MIT (OSI permisiva) | sin grupo |
+| `finceptterminal` | agentes | Terminal de análisis financiero que reúne datos, investigación, paneles y… | 3 Avanzado | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `fingpt` | agentes | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA… | 3 Avanzado | 55 | MIT (OSI permisiva) | sin grupo |
+| `dexter` | agentes | Agente de investigación financiera que planifica consultas, obtiene datos de… | 2 Intermedio | 49 | — (sin licencia detectada) | sin grupo |
+| `autohedge` | agentes | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de… | 3 Avanzado | 46 | MIT (OSI permisiva) | sin grupo |
+| `polyweather` | agentes | Reúne datos meteorológicos y de mercados de predicción para explorar cómo las… | 2 Intermedio | 44 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `quantharness` | agentes | Sistema experimental de agentes LLM que combina indicadores técnicos, patrones… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
+| `openbb` | cuant | Plataforma abierta de datos financieros (ODP): conecta fuentes públicas y con… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `nautilus-trader` | cuant | Motor de trading y backtesting con arquitectura orientada a eventos para… | 2 Intermedio | 71 | LGPL-3.0 (OSI copyleft) | sin grupo |
+| `yfinance` | cuant | Biblioteca Python no oficial para descargar datos de mercado y fundamentales de… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `qlib` | cuant | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y… | 3 Avanzado | 65 | MIT (OSI permisiva) | sin grupo |
 | `lumibot` | cuant | Framework de Python para desarrollar estrategias, realizar backtesting y… | 2 Intermedio | 56 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `vectorbt` | cuant | Biblioteca de análisis cuantitativo para explorar señales y comparar… | 2 Intermedio | 56 | Apache-2.0 + Commons Clause (source-available) | recomendado |
-| `finrl` | cuant | Biblioteca y ejemplos para investigar estrategias de trading mediante… | 3 Avanzado | 53 | MIT (OSI permisiva) | sin grupo |
-| `backtesting-py` | cuant | Framework ligero de Python para hacer backtesting de estrategias de trading… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `prediction-market-backtesting` | cuant | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | — | NOASSERTION | sin grupo |
+| `finrl` | cuant | Biblioteca y ejemplos para investigar estrategias de trading mediante… | 3 Avanzado | 54 | MIT (OSI permisiva) | sin grupo |
+| `backtesting-py` | cuant | Framework ligero de Python para hacer backtesting de estrategias de trading… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `prediction-market-backtesting` | cuant | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | 32 | NOASSERTION (sin confirmar) | sin grupo |
 | `ccxt` | bots | Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar… | 2 Intermedio | 81 | MIT (OSI permisiva) | sin grupo |
-| `freqtrade` | bots | Bot de trading de criptomonedas con herramientas para preparar estrategias… | 2 Intermedio | 78 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `hummingbot` | bots | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `freqtrade` | bots | Bot de trading de criptomonedas con herramientas para preparar estrategias… | 2 Intermedio | 79 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `hummingbot` | bots | Software para desarrollar y ejecutar bots de trading de criptomonedas mediante… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `py-sdk` | bots | SDK Python de Polymarket para integrar funciones de su plataforma mediante las… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
-| `open-sol-bot` | bots | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de… | 3 Avanzado | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `binance-trader` | bots | Bot experimental de Python para estudiar estrategias y automatización con la… | 2 Intermedio | 36 | — (sin licencia detectada) | sin grupo |
-| `machine-learning-for-trading` | aprender | Material y código de Machine Learning for Trading para estudiar datos, modelos… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
+| `open-sol-bot` | bots | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de… | 3 Avanzado | 43 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `binance-trader` | bots | Bot experimental de Python para estudiar estrategias y automatización con la… | 2 Intermedio | 33 | — (sin licencia detectada) | sin grupo |
+| `machine-learning-for-trading` | aprender | Material y código de Machine Learning for Trading para estudiar datos, modelos… | 1 Básico | 63 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -50,7 +50,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### daily_stock_analysis (`daily-stock-analysis`)
 
-- **Repo:** https://github.com/ZhuLinsen/daily_stock_analysis · MIT · nivel 2 · 78/100
+- **Repo:** https://github.com/ZhuLinsen/daily_stock_analysis · MIT · nivel 2 · 79/100
 - **Qué es:** Sistema de análisis inteligente de acciones con LLM (股票智能分析系统), de @ZhuLinsen. Licencia MIT. Es muy popular (~73k estrellas, v3.34.0) y su README, principalmente en chino, incluye patrocinios de proveedores de modelos.
 - **Cuándo elegirlo:** Casos: Preparar un resumen de investigación; Comparar noticias y datos de una lista de seguimiento.
 - **Requisitos:** nivel 2: preparación media; Python; proveedor LLM u Ollama; fuentes de datos; notificaciones solo si las configuras; hardware prerequisites; API de IA: depends; Python; proveedor LLM u Ollama; fuentes de datos; notificaciones solo si las configuras.
@@ -59,7 +59,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   # 克隆项目
   git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis
-  
+
   # 安装依赖
   pip install -r requirements.txt
   ```
@@ -78,7 +78,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/TauricResearch/TradingAgents.git
   cd TradingAgents
-  
+
   pip install .
   ```
 - **Primera prueba propuesta (no ejecutada):** Analiza un periodo histórico pequeño y revisa fuentes y mensajes de cada especialista Éxito: Puedes identificar qué evidencia apoya cada conclusión y el coste de llamadas
@@ -87,7 +87,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Vibe-Trading (`vibe-trading`)
 
-- **Repo:** https://github.com/HKUDS/Vibe-Trading · MIT · nivel 2 · 71/100
+- **Repo:** https://github.com/HKUDS/Vibe-Trading · MIT · nivel 2 · 72/100
 - **Qué es:** Vibe-Trading, agente personal de investigación de trading de la organización HKUDS. Licencia MIT. Es muy activo (~38k estrellas, v0.1.19).
 - **Cuándo elegirlo:** Casos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles.
 - **Requisitos:** nivel 2: preparación media; Python; proveedor o modelo local; fuente de datos; entorno de investigación; hardware prerequisites; API de IA: depends; Python; proveedor o modelo local; fuente de datos; entorno de investigación.
@@ -104,7 +104,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FinceptTerminal (`finceptterminal`)
 
-- **Repo:** https://github.com/Fincept-Corporation/FinceptTerminal · AGPL-3.0 · nivel 3 · 63/100
+- **Repo:** https://github.com/Fincept-Corporation/FinceptTerminal · AGPL-3.0 · nivel 3 · 64/100
 - **Qué es:** Fincept Terminal, terminal nativo de escritorio para investigación financiera, de Fincept Corporation. Licencia AGPL-3.0 o posterior, con una edición Enterprise propietaria de pago. Es popular (~34k estrellas, v4.5.2).
 - **Cuándo elegirlo:** Casos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas.
 - **Requisitos:** nivel 3: preparación pesada; Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba; hardware prerequisites; API de IA: opcional; Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba.
@@ -115,7 +115,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FinGPT (`fingpt`)
 
-- **Repo:** https://github.com/AI4Finance-Foundation/FinGPT · MIT · nivel 3 · 54/100
+- **Repo:** https://github.com/AI4Finance-Foundation/FinGPT · MIT · nivel 3 · 55/100
 - **Qué es:** Proyecto de código abierto (MIT) de la AI4Finance Foundation, ligado a investigación académica. Activo, aunque gran parte del contenido son cuadernos y recetas.
 - **Cuándo elegirlo:** Casos: clasificar el sentimiento de noticias financieras con un modelo ajustado; reproducir un ajuste LoRA barato sobre datos financieros para investigación. Evítalo si no tienes el hardware o no aceptas la licencia de los pesos.
 - **Requisitos:** nivel 3: preparación pesada; Jupyter Notebook, requirements.txt, setup.py; hardware model_dependent; API de IA: opcional; Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida..
@@ -126,7 +126,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### dexter (`dexter`)
 
-- **Repo:** https://github.com/virattt/dexter · — · nivel 2 · 50/100
+- **Repo:** https://github.com/virattt/dexter · — · nivel 2 · 49/100
 - **Qué es:** Dexter, agente autónomo de investigación financiera de @virattt. El README declara MIT, pero GitHub no detecta licencia. Es popular (~28k estrellas, v1.1.0).
 - **Cuándo elegirlo:** Casos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente.
 - **Requisitos:** nivel 2: preparación media; Runtime y gestor de la guía; proveedor u Ollama; acceso a datos financieros; hardware prerequisites; API de IA: depends; Runtime y gestor de la guía; proveedor u Ollama; acceso a datos financieros.
@@ -137,7 +137,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AutoHedge (`autohedge`)
 
-- **Repo:** https://github.com/The-Swarm-Corporation/AutoHedge · MIT · nivel 3 · 45/100
+- **Repo:** https://github.com/The-Swarm-Corporation/AutoHedge · MIT · nivel 3 · 46/100
 - **Qué es:** AutoHedge, «fondo de cobertura autónomo» de agentes de The Swarm Corporation. Licencia MIT. Tiene ~7k estrellas (sin releases) y su último cambio es de mayo de 2026.
 - **Cuándo elegirlo:** Casos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading.
 - **Requisitos:** nivel 3: preparación pesada, requiere clave de API; Python; credenciales de modelo y herramientas; entorno de investigación sin fondos; hardware prerequisites; API de IA: sí; Python; credenciales de modelo y herramientas; entorno de investigación sin fondos.
@@ -146,9 +146,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `ccxt` [14/bots], `langgraph` [3/py], `vectorbt` [14/cuant]
 - **Riesgos y avisos:** Sin alternativas declaradas. Riesgo muy alto: opera con una clave privada real de forma autónoma. Riesgo financiero: no es asesoramiento de inversión. El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada.
 
+### PolyWeather (`polyweather`)
+
+- **Repo:** https://github.com/yangyuan-zhen/PolyWeather · AGPL-3.0 · nivel 2 · 44/100
+- **Qué es:** Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
+- **Cuándo elegirlo:** Casos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones.
+- **Requisitos:** nivel 2: preparación sencilla, app o instalador listo para usar, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre una vista de datos de prueba y compara fechas de previsión y mercado. Éxito: Puedes identificar la fuente, zona y fecha de los datos mostrados.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.
+
 ### QuantHarness (`quantharness`)
 
-- **Repo:** https://github.com/Y-Research-SBU/QuantHarness · MIT · nivel 2 · 45/100
+- **Repo:** https://github.com/Y-Research-SBU/QuantHarness · MIT · nivel 2 · 44/100
 - **Qué es:** QuantHarness, sistema multiagente con LLM para trading de alta frecuencia guiado por precios, de investigadores de Stony Brook, CMU, UBC, Yale y Fudan. Licencia MIT.
 - **Cuándo elegirlo:** Casos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental.
 - **Requisitos:** nivel 2: preparación media, requiere clave de API; Python; checkout; datos; modelo con entrada de imagen y credenciales; hardware prerequisites; API de IA: sí; Python; checkout; datos; modelo con entrada de imagen y credenciales.
@@ -157,19 +167,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `langgraph` [3/py], `langchain` [3/py], `langfuse` [23/observabilidad]
 - **Riesgos y avisos:** Sin alternativas declaradas. Prototipo académico. Riesgo financiero: no es asesoramiento de inversión. El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo.
 
-### PolyWeather (`polyweather`)
-
-- **Repo:** https://github.com/yangyuan-zhen/PolyWeather · AGPL-3.0 · nivel 2 · —/100
-- **Qué es:** Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
-- **Cuándo elegirlo:** Casos: Contrastar una previsión con un mercado de ejemplo.; Comparar dos lugares con datos públicos sin abrir operaciones.
-- **Requisitos:** nivel 2: preparación sencilla, app o instalador listo para usar, varios servicios con Docker Compose; Python, Dockerfile, docker-compose.yml, pyproject.toml, requirements.txt; API de IA: no; Docker Compose o el entorno documentado y fuentes meteorológicas o de mercado de prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/yangyuan-zhen/PolyWeather/blob/d3a02039208f88860cbe02e0846a8a23783b220a/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre una vista de datos de prueba y compara fechas de previsión y mercado. Éxito: Puedes identificar la fuente, zona y fecha de los datos mostrados.
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La ficha se limita al análisis; datos, servicios externos y condiciones comerciales se revisan por separado. El código indicado es AGPL-3.0.
-
 ### OpenBB Open Data Platform (`openbb`)
 
-- **Repo:** https://github.com/openbq-org/OpenBB · Apache-2.0 · nivel 2 · 73/100
+- **Repo:** https://github.com/openbq-org/OpenBB · Apache-2.0 · nivel 2 · 74/100
 - **Qué es:** Conjunto de herramientas de datos de código abierto (Apache-2.0) creado por OpenBB. Desde octubre de 2026 lo custodia OpenBQ, una organización sin ánimo de lucro anunciada por OpenBB y liderada desde BrightQuery; por eso el repositorio…
 - **Cuándo elegirlo:** Casos: descargar series de precios o datos macro en un DataFrame para análisis; dar a un agente acceso a datos financieros mediante el servidor MCP de OpenBB.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -180,7 +180,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### nautilus_trader (`nautilus-trader`)
 
-- **Repo:** https://github.com/nautechsystems/nautilus_trader · LGPL-3.0 · nivel 2 · 70/100
+- **Repo:** https://github.com/nautechsystems/nautilus_trader · LGPL-3.0 · nivel 2 · 71/100
 - **Qué es:** NautilusTrader, motor de trading y backtesting de alto rendimiento nativo en Rust con API de Python, de Nautech Systems. Licencia LGPL-3.0. Es muy activo (~32k estrellas, v1.231.0).
 - **Cuándo elegirlo:** Casos: Estudiar un motor orientado a eventos; Comparar simulaciones con datos registrados.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba; hardware prerequisites; API de IA: no; CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba.
@@ -191,7 +191,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### yfinance (`yfinance`)
 
-- **Repo:** https://github.com/ranaroussi/yfinance · Apache-2.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/ranaroussi/yfinance · Apache-2.0 · nivel 2 · 70/100
 - **Qué es:** Biblioteca de código abierto (Apache-2.0) creada por Ran Aroussi, muy usada en investigación y educación. No está afiliada ni respaldada por Yahoo, Inc.
 - **Cuándo elegirlo:** Casos: descargar históricos de precios para un estudio o backtest; obtener fundamentales y dividendos de una cartera en un cuaderno.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -202,7 +202,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### qlib (`qlib`)
 
-- **Repo:** https://github.com/microsoft/qlib · MIT · nivel 3 · 64/100
+- **Repo:** https://github.com/microsoft/qlib · MIT · nivel 3 · 65/100
 - **Qué es:** Qlib, plataforma de investigación cuantitativa orientada a IA de Microsoft. Licencia MIT. Es madura (~50k estrellas, v0.9.8).
 - **Cuándo elegirlo:** Casos: Comparar modelos sobre datos temporales; Investigar un pipeline cuantitativo reproducible.
 - **Requisitos:** nivel 3: preparación pesada; Python compatible con baseline; datos históricos; dependencias del modelo; hardware prerequisites; API de IA: opcional; Python compatible con baseline; datos históricos; dependencias del modelo.
@@ -236,7 +236,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FinRL (`finrl`)
 
-- **Repo:** https://github.com/AI4Finance-Foundation/FinRL · MIT · nivel 3 · 53/100
+- **Repo:** https://github.com/AI4Finance-Foundation/FinRL · MIT · nivel 3 · 54/100
 - **Qué es:** FinRL, el framework open source de aprendizaje por refuerzo para finanzas, de AI4Finance Foundation. Licencia MIT; la marca FinRL pertenece a FinRL LLC.
 - **Cuándo elegirlo:** Casos: Estudiar entornos de RL financiero; Comparar políticas en simulación histórica.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Python y dependencias de la guía; datos; entorno de entrenamiento; hardware prerequisites; API de IA: no; Python y dependencias de la guía; datos; entorno de entrenamiento.
@@ -245,7 +245,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/AI4Finance-Foundation/FinRL.git
   cd FinRL
-  
+
   pip install -e .
   ```
 - **Primera prueba propuesta (no ejecutada):** Ejecuta un ejemplo pequeño de aprendizaje por refuerzo y evalúa en un periodo distinto Éxito: Puedes contrastar recompensas, operaciones simuladas y datos de prueba
@@ -254,7 +254,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Backtesting.py (`backtesting-py`)
 
-- **Repo:** https://github.com/kernc/backtesting.py · AGPL-3.0 · nivel 2 · 51/100 · alternativa en «Backtesting en Python»
+- **Repo:** https://github.com/kernc/backtesting.py · AGPL-3.0 · nivel 2 · 52/100 · alternativa en «Backtesting en Python»
 - **Qué es:** Biblioteca de backtesting de código abierto (AGPL-3.0) creada por kernc. Madura, con ritmo de cambios bajo (último push en agosto de 2026).
 - **Cuándo elegirlo:** Casos: probar una estrategia de cruce de medias sobre datos históricos; optimizar parámetros de una estrategia y ver el resultado en un gráfico interactivo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml, requirements.txt, setup.py; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -266,7 +266,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Prediction Market Backtesting (`prediction-market-backtesting`)
 
-- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · NOASSERTION · nivel 2 · —/100
+- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · NOASSERTION · nivel 2 · 32/100
 - **Qué es:** Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.
 - **Cuándo elegirlo:** Casos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Cargo.toml, Makefile; API de IA: no; Entorno compatible con NautilusTrader y datos históricos de una muestra..
@@ -288,7 +288,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### freqtrade (`freqtrade`)
 
-- **Repo:** https://github.com/freqtrade/freqtrade · GPL-3.0 · nivel 2 · 78/100
+- **Repo:** https://github.com/freqtrade/freqtrade · GPL-3.0 · nivel 2 · 79/100
 - **Qué es:** Freqtrade, bot de trading de criptomonedas en Python. Licencia GPL-3.0. Es muy maduro (~57k estrellas, 2026.10).
 - **Cuándo elegirlo:** Casos: Comparar una regla en datos históricos; Evaluar una estrategia en simulación.
 - **Requisitos:** nivel 2: preparación media; Docker o entorno de la guía; datos; estrategia de ejemplo; modo dry-run; hardware prerequisites; API de IA: opcional; Docker o entorno de la guía; datos; estrategia de ejemplo; modo dry-run.
@@ -299,7 +299,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### hummingbot (`hummingbot`)
 
-- **Repo:** https://github.com/hummingbot/hummingbot · Apache-2.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/hummingbot/hummingbot · Apache-2.0 · nivel 2 · 69/100
 - **Qué es:** Hummingbot, framework open source para diseñar y ejecutar bots de trading en exchanges centralizados y descentralizados. Licencia Apache-2.0. Es maduro (~21k estrellas, v2.17.0) y recibe patrocinio de exchanges mediante acuerdos de broker.
 - **Cuándo elegirlo:** Casos: Estudiar un conector de exchange; Evaluar un bot en un entorno de práctica.
 - **Requisitos:** nivel 2: preparación media; Conda o Docker; dependencias de compilación; conector y estrategia de prueba; hardware prerequisites; API de IA: no; Conda o Docker; dependencias de compilación; conector y estrategia de prueba.
@@ -309,10 +309,10 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   # Clone the repository
   git clone https://github.com/hummingbot/hummingbot.git
   cd hummingbot
-  
+
   # Create the conda environment, build extensions, and expose the `hbot` CLI
   make install
-  
+
   # Activate the environment
   conda activate hummingbot
   hbot --help
@@ -334,7 +334,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### open-sol-bot (`open-sol-bot`)
 
-- **Repo:** https://github.com/ChainBuff/open-sol-bot · Apache-2.0 · nivel 3 · 46/100
+- **Repo:** https://github.com/ChainBuff/open-sol-bot · Apache-2.0 · nivel 3 · 43/100
 - **Qué es:** OpenSolBot, bot de trading en la cadena Solana, de ChainBuff. Licencia Apache-2.0. Es pequeño (~400 estrellas, v0.2.1) y su último cambio es de diciembre de 2025; su README está en chino.
 - **Cuándo elegirlo:** Casos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain.
 - **Requisitos:** nivel 3: preparación pesada, varios servicios con Docker Compose; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones; hardware prerequisites; API de IA: no; Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones.
@@ -345,7 +345,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### binance-trader (`binance-trader`)
 
-- **Repo:** https://github.com/yasinkuyu/binance-trader · — · nivel 2 · 36/100
+- **Repo:** https://github.com/yasinkuyu/binance-trader · — · nivel 2 · 33/100
 - **Qué es:** Binance Trader, bot experimental de Python para operar en Binance, de @yasinkuyu. El README declara MIT pero el repo no tiene archivo de licencia que GitHub detecte. Tiene ~3k estrellas y su última versión (v1.1.0) es de enero de 2026.
 - **Cuándo elegirlo:** Casos: Estudiar una estrategia de ejemplo; Analizar cómo se conecta un bot a un exchange.
 - **Requisitos:** nivel 2: preparación media; Python y dependencias históricas; API Binance solo para funciones privadas; entorno aislado; hardware prerequisites; API de IA: no; Python y dependencias históricas; API Binance solo para funciones privadas; entorno aislado.
@@ -356,7 +356,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### machine-learning-for-trading (`machine-learning-for-trading`)
 
-- **Repo:** https://github.com/stefan-jansen/machine-learning-for-trading · MIT · nivel 1 · 62/100
+- **Repo:** https://github.com/stefan-jansen/machine-learning-for-trading · MIT · nivel 1 · 63/100
 - **Qué es:** Código de *Machine Learning for Trading* (3.ª edición) de Stefan Jansen: 27 capítulos y nueve casos de estudio. El código es MIT; el contenido del libro está protegido. Es muy popular (~22k estrellas, v3.1.0-artifacts).
 - **Cuándo elegirlo:** Casos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Docker o entorno del capítulo; datasets; cuaderno elegido; hardware prerequisites; API de IA: opcional; Docker o entorno del capítulo; datasets; cuaderno elegido.

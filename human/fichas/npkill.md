@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.

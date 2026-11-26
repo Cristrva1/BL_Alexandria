@@ -48,7 +48,7 @@ Grupo **Automatización de navegador y pruebas E2E**: Puppeteer ocupa la posici�
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [playwright](playwright.md) ⭐ recomendado | 78 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
+| 1 | [playwright](playwright.md) ⭐ recomendado | 79 | Si empiezas hoy: pruebas E2E y automatización multi-navegador con la mejor experiencia. |
 | 2 | **Puppeteer** (esta ficha) | 72 | Si solo necesitas Chrome/Firefox desde Node.js para scraping o capturas. |
 | 3 | [Cypress](cypress.md) | 65 | Si haces pruebas de componentes y E2E de frontend dentro del navegador. |
 | 4 | [WebdriverIO](webdriverio.md) | 60 | Si quieres WebDriver y móvil (Appium) desde un mismo framework en Node.js. |

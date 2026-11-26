@@ -18,19 +18,19 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `openclaw` | Asistente personal de IA que corre en tus dispositivos y te atiende por… | 2 Intermedio | 82 | MIT (OSI permisiva) | recomendado |
+| `openclaw` | Asistente personal de IA que corre en tus dispositivos y te atiende por… | 2 Intermedio | 83 | MIT (OSI permisiva) | recomendado |
 | `hermes-agent` | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores… | 2 Intermedio | 74 | MIT (OSI permisiva) | alternativa |
+| `deeptutor` | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `ruflo` | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes… | 3 Avanzado | 71 | MIT (OSI permisiva) | sin grupo |
 | `openbot` | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
-| `deeptutor` | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `ruflo` | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes… | 3 Avanzado | 69 | MIT (OSI permisiva) | sin grupo |
-| `paperclip` | Servidor y panel para organizar equipos de agentes con objetivos, tareas… | 3 Avanzado | 67 | MIT (OSI permisiva) | recomendado |
-| `multica` | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI… | 2 Intermedio | 56 | Apache-2.0 con condiciones adicionales (open-core) | alternativa |
+| `paperclip` | Servidor y panel para organizar equipos de agentes con objetivos, tareas… | 3 Avanzado | 68 | MIT (OSI permisiva) | recomendado |
+| `openjarvis` | Crea un asistente personal con chat y flujos que pueden usar modelos locales… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `multica` | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI… | 2 Intermedio | 57 | Apache-2.0 con condiciones adicionales (open-core) | alternativa |
 | `agentes-chat` | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que… | 2 Intermedio | 50 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `hello-halo` | Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con… | 1 Básico | 50 | MIT con términos adicionales (OSI permisiva) | sin grupo |
 | `mercury-agent` | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por… | 1 Básico | 49 | MIT (OSI permisiva) | alternativa |
 | `opendots` | Interfaz abierta de asistentes persistentes que requiere CopilotKit… | 2 Intermedio | 48 | MIT (OSI permisiva) | alternativa |
-| `social-media-agent` | Agente de LangChain que convierte enlaces en publicaciones para redes sociales… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
-| `openjarvis` | Crea un asistente personal con chat y flujos que pueden usar modelos locales… | 2 Intermedio | — | Apache-2.0 | sin grupo |
+| `social-media-agent` | Agente de LangChain que convierte enlaces en publicaciones para redes sociales… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -38,7 +38,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OpenClaw (`openclaw`)
 
-- **Repo:** https://github.com/openclaw/openclaw · MIT · nivel 2 · 82/100 · recomendado en «Asistentes personales autónomos»
+- **Repo:** https://github.com/openclaw/openclaw · MIT · nivel 2 · 83/100 · recomendado en «Asistentes personales autónomos»
 - **Qué es:** OpenClaw, asistente de IA personal open source que corre en tu equipo y atiende en tus canales de chat. Licencia MIT. Lo desarrolla la OpenClaw Foundation, una organización 501(c)(3) independiente, y es el repo con más estrellas del…
 - **Cuándo elegirlo:** Casos: Probar un asistente personal; Conectar un agente a un canal propio.
 - **Requisitos:** nivel 2: preparación media; Node compatible o instalador; proveedor o harness; canal de prueba opcional; hardware prerequisites; API de IA: opcional; Node compatible o instalador; proveedor o harness; canal de prueba opcional.
@@ -60,21 +60,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `openclaw`, `mercury-agent`
 - **Riesgos y avisos:** Alternativas (elige una): openclaw, mercury-agent. Importar ajustes e historial de Claude Code no equivale a usar su plan como motor; las herramientas de búsqueda, voz e imagen tienen proveedores separados.
 
-### OpenBot (`openbot`)
-
-- **Repo:** https://github.com/CopilotKit/OpenBot · MIT · nivel 2 · 70/100 · recomendado en «Espacios de asistentes de CopilotKit»
-- **Qué es:** Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba…
-- **Cuándo elegirlo:** Casos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
-- **Requisitos:** nivel 2: preparación pesada, app o instalador listo para usar; TypeScript, docker-compose.yml, package.json; hardware prerequisites; API de IA: depends; Un sistema compatible y una copia de datos o archivos para la primera prueba..
-- **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest` — fuente: https://github.com/CopilotKit/OpenBot/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación Éxito: La acción queda pendiente de tu aprobación y aparece en la auditoría
-- **Combina con:** `copilotkit` [9/ia-ui], `langgraph` [3/py], `mastra` [3/ts], `crewai` [3/py], `firecrawl` [4/crawlers], `composio` [22/infra]
-- **Alternativas:** `opendots`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad.
-
 ### DeepTutor (`deeptutor`)
 
-- **Repo:** https://github.com/HKUDS/DeepTutor · Apache-2.0 · nivel 2 · 69/100
+- **Repo:** https://github.com/HKUDS/DeepTutor · Apache-2.0 · nivel 2 · 72/100
 - **Qué es:** DeepTutor, sistema de tutoría personalizada con agentes, de la organización HKUDS. Licencia Apache-2.0. Es muy activo, con releases casi semanales (v1.7.3), tiene ~60k estrellas y busca mantenedores.
 - **Cuándo elegirlo:** Casos: Estudiar un tema desde apuntes propios; Preparar preguntas de repaso.
 - **Requisitos:** nivel 2: preparación media; Python y paquete completo o Docker; modelo y embeddings; documento corto propio; hardware prerequisites; API de IA: opcional; Python y paquete completo o Docker; modelo y embeddings; documento corto propio.
@@ -93,7 +81,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ruflo (`ruflo`)
 
-- **Repo:** https://github.com/ruvnet/ruflo · MIT · nivel 3 · 69/100
+- **Repo:** https://github.com/ruvnet/ruflo · MIT · nivel 3 · 71/100
 - **Qué es:** Ruflo, meta-harness de agentes para Claude Code y Codex, de @ruvnet. Licencia MIT. Tiene ~82k estrellas y está activo; el README es muy promocional (swarms, federación, ruOS).
 - **Cuándo elegirlo:** Casos: Coordinar tareas de código; Estudiar memoria compartida entre agentes.
 - **Requisitos:** nivel 3: preparación pesada; Node; carpeta de proyecto; Claude Code o cliente MCP; modelo para agentes; hardware prerequisites; API de IA: opcional; Node; carpeta de proyecto; Claude Code o cliente MCP; modelo para agentes.
@@ -102,9 +90,21 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
 - **Riesgos y avisos:** Sin alternativas declaradas. Se quita mem0 de las combinaciones porque ruflo trae su propia memoria. Cuidado con las afirmaciones de marketing. Claude Code tiene integración de proyecto; otros clientes usan el servidor MCP estándar y no heredan necesariamente sus hooks ni todas las funciones.
 
+### OpenBot (`openbot`)
+
+- **Repo:** https://github.com/CopilotKit/OpenBot · MIT · nivel 2 · 70/100 · recomendado en «Espacios de asistentes de CopilotKit»
+- **Qué es:** Plataforma de CopilotKit (creadores de AG-UI) para «compañeros de trabajo» de IA autoalojables, en TypeScript. La plantilla es MIT, pero necesita CopilotKit Intelligence, con licencia aparte: gratuita en local para uso personal, de prueba…
+- **Cuándo elegirlo:** Casos: Dar a un asistente un navegador propio con aprobaciones; Conectar un agente existente por AG-UI a un espacio común. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
+- **Requisitos:** nivel 2: preparación pesada, app o instalador listo para usar; TypeScript, docker-compose.yml, package.json; hardware prerequisites; API de IA: depends; Un sistema compatible y una copia de datos o archivos para la primera prueba..
+- **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 3001:3001 --env-file .env -e EMBEDDED_POSTGRES=on -v openbot-data:/var/lib/postgresql ghcr.io/copilotkit/openbot:latest` — fuente: https://github.com/CopilotKit/OpenBot/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la app de escritorio, configura un modelo y pide una búsqueda web que requiera aprobación Éxito: La acción queda pendiente de tu aprobación y aparece en la auditoría
+- **Combina con:** `copilotkit` [9/ia-ui], `langgraph` [3/py], `mastra` [3/ts], `crewai` [3/py], `firecrawl` [4/crawlers], `composio` [22/infra]
+- **Alternativas:** `opendots`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): opendots. OpenDots es ahora una «skin» de OpenBot y su repositorio queda como starter mantenido por la comunidad.
+
 ### paperclip (`paperclip`)
 
-- **Repo:** https://github.com/paperclipai/paperclip · MIT · nivel 3 · 67/100 · recomendado en «Paneles para coordinar equipos de agentes»
+- **Repo:** https://github.com/paperclipai/paperclip · MIT · nivel 3 · 68/100 · recomendado en «Paneles para coordinar equipos de agentes»
 - **Qué es:** Paperclip, servidor Node.js con interfaz React para orquestar equipos de agentes de IA como si fueran una empresa. Licencia MIT. Creado en marzo de 2026, ya tiene ~114k estrellas; hay lista de espera para un servicio cloud.
 - **Cuándo elegirlo:** Casos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla.
 - **Requisitos:** nivel 3: preparación pesada; Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba; hardware prerequisites; API de IA: opcional; Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba.
@@ -114,9 +114,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `multica`
 - **Riesgos y avisos:** Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos. El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas.
 
+### OpenJarvis (`openjarvis`)
+
+- **Repo:** https://github.com/open-jarvis/OpenJarvis · Apache-2.0 · nivel 2 · 58/100
+- **Qué es:** Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.
+- **Cuándo elegirlo:** Casos: Conversar con un modelo descargado sin conectar cuentas.; Probar búsqueda sobre un pequeño conjunto de documentos ficticios. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
+- **Requisitos:** nivel 2: preparación media; Python, Makefile, pyproject.toml; API de IA: opcional; Distribución oficial para tu sistema, memoria para el modelo inicial y espacio para pesos; Node.js 22+ si usas la interfaz desde el código..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/open-jarvis/OpenJarvis/releases
+- **Primera prueba propuesta (no ejecutada):** Elige una distribución oficial y empieza con el chat básico sin conectores. Éxito: El modelo configurado responde a una pregunta y puedes identificar si la ruta usada fue local.
+- **Riesgos y avisos:** Evita pegar instaladores remotos directamente en la terminal. Revisar por separado las funciones que leen cuentas o envían datos externos.
+
 ### multica (`multica`)
 
-- **Repo:** https://github.com/multica-ai/multica · Apache-2.0 con condiciones adicionales · nivel 2 · 56/100 · alternativa en «Paneles para coordinar equipos de agentes»
+- **Repo:** https://github.com/multica-ai/multica · Apache-2.0 con condiciones adicionales · nivel 2 · 57/100 · alternativa en «Paneles para coordinar equipos de agentes»
 - **Qué es:** Multica, workspace para asignar trabajo a agentes de programación como si fueran compañeros de equipo, de multica-ai, escrito en Go. Es source-available: «Multica License», Apache-2.0 con condiciones adicionales sobre servicios alojados…
 - **Cuándo elegirlo:** Casos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido.
 - **Requisitos:** nivel 2: preparación media; Un CLI de agente instalado y autenticado; Docker si autoalojas servidor; hardware prerequisites; API de IA: opcional; Un CLI de agente instalado y autenticado; Docker si autoalojas servidor.
@@ -182,7 +192,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### social-media-agent (`social-media-agent`)
 
-- **Repo:** https://github.com/langchain-ai/social-media-agent · MIT · nivel 2 · 46/100
+- **Repo:** https://github.com/langchain-ai/social-media-agent · MIT · nivel 2 · 42/100
 - **Qué es:** Social Media Agent, agente de ejemplo de LangChain que convierte una URL en publicaciones para X y LinkedIn. Licencia MIT. Tiene ~3k estrellas; es más una plantilla que un producto.
 - **Cuándo elegirlo:** Casos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto.
 - **Requisitos:** nivel 2: preparación media, requiere clave de API; Node y Yarn; claves de modelo y servicios; cuentas sociales solo al conectar publicación; hardware prerequisites; API de IA: sí; Node y Yarn; claves de modelo y servicios; cuentas sociales solo al conectar publicación.
@@ -190,22 +200,12 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
   ```bash
   git clone https://github.com/langchain-ai/social-media-agent.git
-  
+
   yarn install
   ```
 - **Primera prueba propuesta (no ejecutada):** Genera un borrador desde un enlace propio y recházalo o edítalo sin publicarlo Éxito: Puedes revisar texto y aprobación antes de cualquier publicación
 - **Combina con:** `langgraphjs` [3/ts], `firecrawl` [4/crawlers], `supabase` [22/infraestructura]
 - **Riesgos y avisos:** Sin alternativas declaradas. Publica en cuentas reales: revisa siempre antes de aprobar. El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones.
-
-### OpenJarvis (`openjarvis`)
-
-- **Repo:** https://github.com/open-jarvis/OpenJarvis · Apache-2.0 · nivel 2 · —/100
-- **Qué es:** Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.
-- **Cuándo elegirlo:** Casos: Conversar con un modelo descargado sin conectar cuentas.; Probar búsqueda sobre un pequeño conjunto de documentos ficticios. Evítalo si necesitas una herramienta estable y auditada para datos sensibles.
-- **Requisitos:** nivel 2: preparación media; Python, Makefile, pyproject.toml; API de IA: opcional; Distribución oficial para tu sistema, memoria para el modelo inicial y espacio para pesos; Node.js 22+ si usas la interfaz desde el código..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/open-jarvis/OpenJarvis/releases
-- **Primera prueba propuesta (no ejecutada):** Elige una distribución oficial y empieza con el chat básico sin conectores. Éxito: El modelo configurado responde a una pregunta y puedes identificar si la ruta usada fue local.
-- **Riesgos y avisos:** Evita pegar instaladores remotos directamente en la terminal. Revisar por separado las funciones que leen cuentas o envían datos externos.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

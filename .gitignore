@@ -21,6 +21,7 @@ data/decisions/
 data/reports/
 data/snapshots/
 data/*.bak
+data/.alta-*/
 data/readmes_backup.zip
 data/reviews/
 tmp_*.py

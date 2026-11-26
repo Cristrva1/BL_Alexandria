@@ -19,8 +19,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `home-assistant` | Motor de Home Assistant para conectar dispositivos y automatizar acciones del… | 2 Intermedio | 83 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `frigate` | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo… | 3 Avanzado | 69 | MIT (OSI permisiva) | sin grupo |
-| `esphome` | Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros… | 2 Intermedio | 60 | MIT + GPL-3.0 (OSI copyleft) | sin grupo |
+| `frigate` | Grabador de vídeo en red (NVR) local con detección de objetos por IA en tiempo… | 3 Avanzado | 70 | MIT (OSI permisiva) | sin grupo |
+| `esphome` | Sistema para crear firmware de ESP32, ESP8266, RP2040 y otros… | 2 Intermedio | 61 | MIT + GPL-3.0 (OSI copyleft) | sin grupo |
 | `zigbee2mqtt` | Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin… | 2 Intermedio | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -40,7 +40,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Frigate NVR (`frigate`)
 
-- **Repo:** https://github.com/blakeblackshear/frigate · MIT · nivel 3 · 69/100
+- **Repo:** https://github.com/blakeblackshear/frigate · MIT · nivel 3 · 70/100
 - **Qué es:** NVR de código abierto (MIT para código y documentación) de Blake Blackshear; los nombres y el logotipo de Frigate son marcas de Frigate, Inc. Muy maduro y activo, con suscripción opcional Frigate+.
 - **Cuándo elegirlo:** Casos: grabar solo cuando aparecen personas o coches en las cámaras de casa; disparar automatizaciones de Home Assistant cuando se detecta un objeto.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware model_dependent; API de IA: no.
@@ -51,7 +51,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ESPHome (`esphome`)
 
-- **Repo:** https://github.com/esphome/esphome · MIT + GPL-3.0 · nivel 2 · 60/100
+- **Repo:** https://github.com/esphome/esphome · MIT + GPL-3.0 · nivel 2 · 61/100
 - **Qué es:** Proyecto de código abierto de la Open Home Foundation. La licencia combina MIT (código Python) y GPL-3.0 (código C++ del firmware) según su archivo de licencia. Muy maduro.
 - **Cuándo elegirlo:** Casos: construir sensores de temperatura o presencia caseros sin programar en C++; integrar placas ESP32 con Home Assistant mediante su API nativa.
 - **Requisitos:** nivel 2: preparación media; C++, pyproject.toml, requirements.txt; API de IA: no.

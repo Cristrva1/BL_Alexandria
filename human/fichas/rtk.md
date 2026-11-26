@@ -49,7 +49,7 @@ Grupo **Compactar contexto y tokens**: rtk ocupa la posición 1 de 2 (recomendad
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **rtk** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. |
-| 2 | [headroom](headroom.md) | 60 | Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
+| 2 | [headroom](headroom.md) | 61 | Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Acceso, coste y equipo
 

@@ -18,18 +18,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `defectdojo` | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200… | 2 Intermedio | 73 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `semgrep` | Análisis estático ligero para muchos lenguajes con reglas que se parecen al… | 1 Básico | 73 | LGPL-2.1 (OSI copyleft) | sin grupo |
-| `bla` | Herramientas para aplicar protecciones y comprobar superficies de software… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
+| `defectdojo` | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200… | 2 Intermedio | 72 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `semgrep` | Análisis estático ligero para muchos lenguajes con reglas que se parecen al… | 1 Básico | 71 | LGPL-2.1 (OSI copyleft) | sin grupo |
+| `threat-dragon` | Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con… | 1 Básico | 70 | Apache-2.0 (OSI permisiva) | recomendado |
+| `bla` | Herramientas para aplicar protecciones y comprobar superficies de software… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
 | `dependency-track` | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `threat-dragon` | Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | recomendado |
-| `dependency-check` | Análisis de composición de software (SCA) de OWASP: detecta dependencias con… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
-| `cdxgen` | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente… | 1 Básico | 62 | Apache-2.0 (OSI permisiva) | alternativa |
-| `java-html-sanitizer` | Biblioteca Java de OWASP que limpia HTML de terceros con políticas… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `pytm` | Modelado de amenazas como código en Python: describe el sistema y obtén… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `dep-scan` | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias… | 1 Básico | 59 | MIT (OSI permisiva) | alternativa |
-| `lynis` | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y… | 1 Básico | 56 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `owasp-java-encoder` | Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI)… | 2 Intermedio | 56 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `cdxgen` | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
+| `dependency-check` | Análisis de composición de software (SCA) de OWASP: detecta dependencias con… | 1 Básico | 60 | Apache-2.0 (OSI permisiva) | alternativa |
+| `dep-scan` | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
+| `java-html-sanitizer` | Biblioteca Java de OWASP que limpia HTML de terceros con políticas… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `pytm` | Modelado de amenazas como código en Python: describe el sistema y obtén… | 2 Intermedio | 58 | MIT (OSI permisiva) | alternativa |
+| `lynis` | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y… | 1 Básico | 55 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `owasp-java-encoder` | Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI)… | 2 Intermedio | 54 | BSD-3-Clause (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -37,7 +37,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### DefectDojo (`defectdojo`)
 
-- **Repo:** https://github.com/DefectDojo/django-DefectDojo · BSD-3-Clause · nivel 2 · 73/100
+- **Repo:** https://github.com/DefectDojo/django-DefectDojo · BSD-3-Clause · nivel 2 · 72/100
 - **Qué es:** Proyecto insignia de OWASP para gestión unificada de vulnerabilidades y seguridad de aplicaciones (ASPM), con edición comunitaria de código abierto.
 - **Cuándo elegirlo:** Casos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Python, docker-compose.yml, requirements.txt; API de IA: no.
@@ -47,7 +47,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Semgrep (`semgrep`)
 
-- **Repo:** https://github.com/semgrep/semgrep · LGPL-2.1 · nivel 1 · 73/100
+- **Repo:** https://github.com/semgrep/semgrep · LGPL-2.1 · nivel 1 · 71/100
 - **Qué es:** Herramienta de análisis estático rápida y open source para buscar código, encontrar bugs y aplicar normas de seguridad. La edición comunitaria es LGPL-2.1; la empresa Semgrep vende la AppSec Platform con reglas y análisis propietarios.
 - **Cuándo elegirlo:** Casos: Detectar patrones inseguros repetidos; Aplicar reglas de calidad en CI.
 - **Requisitos:** nivel 1: preparación sencilla; Python mediante uv o pipx; carpeta de prueba; WSL si tu ruta Windows lo necesita; hardware prerequisites; API de IA: no; Python mediante uv o pipx; carpeta de prueba; WSL si tu ruta Windows lo necesita.
@@ -57,9 +57,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `ast-grep`, `sonarqube`
 - **Riesgos y avisos:** Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura. El README documenta plugin de Claude Code; un hallazgo estático necesita revisión y no demuestra por sí solo una vulnerabilidad explotable.
 
+### OWASP Threat Dragon (`threat-dragon`)
+
+- **Repo:** https://github.com/OWASP/threat-dragon · Apache-2.0 · nivel 1 · 70/100 · recomendado en «Modelado de amenazas»
+- **Qué es:** Proyecto OWASP de código abierto para modelado de amenazas con diagramas.
+- **Cuándo elegirlo:** Casos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura.
+- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull threatdragon/owasp-threat-dragon:stable` — fuente: https://github.com/OWASP/threat-dragon/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo. Éxito: Obtienes un diagrama con amenazas asociadas y un informe exportable.
+- **Combina con:** `asvs` [16/referencias], `cheatsheetseries` [16/referencias], `owasp-top10` [16/referencias]
+- **Alternativas:** `pytm`
+
 ### bla (`bla`)
 
-- **Repo:** https://github.com/qybaihe/bla · MIT · nivel 2 · 70/100
+- **Repo:** https://github.com/qybaihe/bla · MIT · nivel 2 · 68/100
 - **Qué es:** BLA (Blind LLM Agents), servidor MCP y CLI de defensa para proteger releases de software frente a agentes de ingeniería inversa con IA, como REA. Lo crea @qybaihe. Licencia MIT.
 - **Cuándo elegirlo:** Casos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas.
 - **Requisitos:** nivel 2: preparación media; Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba; hardware prerequisites; API de IA: no; Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba.
@@ -83,31 +94,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio. Éxito: Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.
 - **Combina con:** `cdxgen`, `syft` [16/nube-contenedores], `defectdojo`, `dependency-check`
 
-### OWASP Threat Dragon (`threat-dragon`)
-
-- **Repo:** https://github.com/OWASP/threat-dragon · Apache-2.0 · nivel 1 · 65/100 · recomendado en «Modelado de amenazas»
-- **Qué es:** Proyecto OWASP de código abierto para modelado de amenazas con diagramas.
-- **Cuándo elegirlo:** Casos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura.
-- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull threatdragon/owasp-threat-dragon:stable` — fuente: https://github.com/OWASP/threat-dragon/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo. Éxito: Obtienes un diagrama con amenazas asociadas y un informe exportable.
-- **Combina con:** `asvs` [16/referencias], `cheatsheetseries` [16/referencias], `owasp-top10` [16/referencias]
-- **Alternativas:** `pytm`
-
-### OWASP Dependency-Check (`dependency-check`)
-
-- **Repo:** https://github.com/dependency-check/DependencyCheck · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
-- **Qué es:** Herramienta OWASP de análisis de composición de software que busca vulnerabilidades conocidas en las dependencias de un proyecto.
-- **Cuándo elegirlo:** Casos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría.
-- **Requisitos:** nivel 1: preparación sencilla; Java, Dockerfile, pom.xml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew update && brew install dependency-check` — fuente: https://github.com/dependency-check/DependencyCheck/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio. Éxito: Obtienes un informe HTML con las dependencias y los CVE asociados.
-- **Combina con:** `dependency-track`, `defectdojo`, `osv-scanner` [16/nube-contenedores]
-- **Alternativas:** `osv-scanner`, `dep-scan`
-
 ### cdxgen (`cdxgen`)
 
-- **Repo:** https://github.com/cdxgen/cdxgen · Apache-2.0 · nivel 1 · 62/100 · alternativa en «Generadores de SBOM»
+- **Repo:** https://github.com/cdxgen/cdxgen · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Generadores de SBOM»
 - **Qué es:** Herramienta del proyecto OWASP CycloneDX para generar listas de materiales de software (SBOM) y otras BOM.
 - **Cuándo elegirlo:** Casos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia.
 - **Requisitos:** nivel 1: preparación sencilla; JavaScript, docker-compose.yml, package.json, pyproject.toml; API de IA: no.
@@ -116,9 +105,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `dependency-track`
 - **Alternativas:** `syft`
 
+### OWASP Dependency-Check (`dependency-check`)
+
+- **Repo:** https://github.com/dependency-check/DependencyCheck · Apache-2.0 · nivel 1 · 60/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
+- **Qué es:** Herramienta OWASP de análisis de composición de software que busca vulnerabilidades conocidas en las dependencias de un proyecto.
+- **Cuándo elegirlo:** Casos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría.
+- **Requisitos:** nivel 1: preparación sencilla; Java, Dockerfile, pom.xml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew update && brew install dependency-check` — fuente: https://github.com/dependency-check/DependencyCheck/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la CLI con Homebrew como indica el README y analiza el directorio de un proyecto propio. Éxito: Obtienes un informe HTML con las dependencias y los CVE asociados.
+- **Combina con:** `dependency-track`, `defectdojo`, `osv-scanner` [16/nube-contenedores]
+- **Alternativas:** `osv-scanner`, `dep-scan`
+
+### OWASP dep-scan (`dep-scan`)
+
+- **Repo:** https://github.com/owasp-dep-scan/dep-scan · MIT · nivel 1 · 58/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
+- **Qué es:** Proyecto OWASP de auditoría de seguridad y riesgo de dependencias.
+- **Cuándo elegirlo:** Casos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript.
+- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install owasp-depscan` — fuente: https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio. Éxito: Obtienes un informe de vulnerabilidades y riesgos de dependencias.
+- **Combina con:** `cdxgen`, `dependency-track`
+- **Alternativas:** `osv-scanner`, `dependency-check`
+
 ### OWASP Java HTML Sanitizer (`java-html-sanitizer`)
 
-- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 61/100
+- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 58/100
 - **Qué es:** Proyecto OWASP: un saneador de HTML para aplicaciones Java.
 - **Cuándo elegirlo:** Casos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -128,7 +139,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OWASP pytm (`pytm`)
 
-- **Repo:** https://github.com/OWASP/pytm · MIT · nivel 2 · 60/100 · alternativa en «Modelado de amenazas»
+- **Repo:** https://github.com/OWASP/pytm · MIT · nivel 2 · 58/100 · alternativa en «Modelado de amenazas»
 - **Qué es:** Proyecto OWASP para modelado de amenazas como código en Python.
 - **Cuándo elegirlo:** Casos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Dockerfile, Makefile, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -138,20 +149,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `threat-dragon`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### OWASP dep-scan (`dep-scan`)
-
-- **Repo:** https://github.com/owasp-dep-scan/dep-scan · MIT · nivel 1 · 59/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
-- **Qué es:** Proyecto OWASP de auditoría de seguridad y riesgo de dependencias.
-- **Cuándo elegirlo:** Casos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript.
-- **Requisitos:** nivel 1: preparación sencilla; Python, Dockerfile, docker-compose.yml, pyproject.toml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install owasp-depscan` — fuente: https://github.com/owasp-dep-scan/dep-scan/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio. Éxito: Obtienes un informe de vulnerabilidades y riesgos de dependencias.
-- **Combina con:** `cdxgen`, `dependency-track`
-- **Alternativas:** `osv-scanner`, `dependency-check`
-
 ### Lynis (`lynis`)
 
-- **Repo:** https://github.com/CISOfy/lynis · GPL-3.0 · nivel 1 · 56/100
+- **Repo:** https://github.com/CISOfy/lynis · GPL-3.0 · nivel 1 · 55/100
 - **Qué es:** Herramienta de auditoría de código abierto (GPL-3.0) de CISOfy, con versión Enterprise de pago. Muy madura; ritmo de cambios moderado (último push en septiembre de 2026).
 - **Cuándo elegirlo:** Casos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA).
 - **Requisitos:** nivel 1: preparación sencilla; Shell; API de IA: no.
@@ -162,7 +162,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OWASP Java Encoder (`owasp-java-encoder`)
 
-- **Repo:** https://github.com/OWASP/owasp-java-encoder · BSD-3-Clause · nivel 2 · 56/100
+- **Repo:** https://github.com/OWASP/owasp-java-encoder · BSD-3-Clause · nivel 2 · 54/100
 - **Qué es:** Proyecto OWASP: un codificador de salida contextual para Java.
 - **Cuándo elegirlo:** Casos: codificar datos de usuario al renderizar plantillas JSP; escapar valores insertados en JavaScript en línea.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..

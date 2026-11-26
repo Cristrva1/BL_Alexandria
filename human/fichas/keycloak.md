@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — servidor de identidad: realms, clientes y certificados · corregido a mano
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -39,12 +39,12 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Proveedores de identidad y SSO**: Keycloak ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Proveedores de identidad y SSO**: Keycloak ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [authentik](authentik.md) ⭐ recomendado | 67 | Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. |
-| 2 | **Keycloak** (esta ficha) | 67 | Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. |
+| 1 | **Keycloak** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: idP estándar de la industria (Red Hat/CNCF): OIDC, SAML, federación y admin amplio en Java. |
+| 2 | [authentik](authentik.md) | 68 | Si buscas esto: idP/SSO open source (MIT núcleo; enterprise/ bajo licencia distinta): OAuth2, SAML, LDAP y flujos visuales. |
 
 ## Acceso, coste y equipo
 

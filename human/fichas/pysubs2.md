@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
+**Puntuación de calidad** 50/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 pysubs2 es una biblioteca Python y una utilidad de terminal para transformar archivos de subtítulos.

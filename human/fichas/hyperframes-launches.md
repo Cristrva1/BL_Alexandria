@@ -12,6 +12,8 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.

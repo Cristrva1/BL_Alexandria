@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** CC0-1.0 (texto incompleto en LICENSE). El archivo LICENSE solo contiene «Creative Commons Legal Code No need»; la licencia efectiva no es concluyente. Fuente: [LICENSE](https://github.com/josephmisiti/awesome-machine-learning/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 

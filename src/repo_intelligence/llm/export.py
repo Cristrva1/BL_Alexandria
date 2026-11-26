@@ -11,6 +11,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
+from repo_intelligence.core.catalog import read_indices
+
 SITE = "https://cristrva1.github.io/BL_Alexandria/"
 MAX_TOKENS = 25_000
 CHARS_PER_TOKEN = 3.5  # estimación conservadora para español con tokenizadores o200k/cl100k
@@ -79,11 +81,11 @@ def _clean_when(text: str) -> str:
 
 class _Ctx:
     def __init__(self, root: Path):
-        self.compact = json.loads((root / "INDICE_IA.json").read_text(encoding="utf-8"))
-        self.detail = json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf-8"))["repos"]
+        self.compact, detail = read_indices(root)
+        self.detail = detail["repos"]
         self.repos = [r for r in self.compact["repos"] if not r.get("alias_of") and int(r.get("cat") or 0) > 0]
         self.names = {r["id"]: r.get("name") or r["id"] for r in self.compact["repos"]}
-        self.where = {r["id"]: (int(r["cat"]), r.get("sub")) for r in self.compact["repos"]}
+        self.where = {r["id"]: (int(r["cat"]), r.get("sub")) for r in self.repos}
         freq = Counter(v for x in self.detail.values() for v in (x.get("avoid_if"), x.get("limits")) if isinstance(v, str))
         self.generic = {v for v, n in freq.items() if n >= 15}
         dates = [(x.get("getting_started") or {}).get("checked_at") or "" for x in self.detail.values()]
@@ -165,7 +167,7 @@ def _ficha(ctx: _Ctx, r: dict, cat: int, sub: str) -> list[str]:
     if cmd and gs.get("command_status") == "documented":
         lang = gs.get("command_language") or "bash"
         if "\n" in cmd or len(cmd) > 140:
-            L += [f"- **Instalación (documentada en la fuente; no ejecutada):** fuente {src}", "", f"  ```{lang}", *[f"  {x}" for x in cmd.splitlines()], "  ```"]
+            L += [f"- **Instalación (documentada en la fuente; no ejecutada):** fuente {src}", "", f"  ```{lang}", *[f"  {x}" if x.strip() else "" for x in cmd.splitlines()], "  ```"]
         else:
             L.append(f"- **Instalación (documentada en la fuente; no ejecutada):** `{cmd}` — fuente: {src}")
     else:

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP); requiere clave de API
 
-**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,7 +49,7 @@ Grupo **Skills y flujos de producción de video**: Remotion Superpowers ocupa la
 |---:|---|---:|---|
 | 1 | [OpenMontage](openmontage.md) ⭐ recomendado | 72 | Si buscas esto: pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. |
 | 2 | [video-use](video-use.md) | 60 | Si buscas esto: edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. |
-| 3 | **Remotion Superpowers** (esta ficha) | 48 | Si buscas esto: orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. |
+| 3 | **Remotion Superpowers** (esta ficha) | 47 | Si buscas esto: orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. |
 
 ## Acceso, coste y equipo
 

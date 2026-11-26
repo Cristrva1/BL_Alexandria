@@ -12,6 +12,8 @@
 
 **Nivel:** 3 Avanzado — preparación pesada; necesita GPU
 
+**Puntuación de calidad** 55/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Genera movimiento de personajes a partir de poses y objetivos mediante modelos locales y una escena de demostración.

@@ -8,6 +8,20 @@ from copy import deepcopy
 from repo_intelligence.core.access import SUPPORTED_CLIENT
 
 
+def goal_memberships(compact: dict) -> dict[str, list[str]]:
+    """Combine direct editorial goals, guided starters and the minimum recipe steps."""
+    memberships = {r["id"]: list(r.get("goals", [])) for r in compact.get("repos", [])}
+    recipes = {r["id"]: r for r in compact.get("recipes", [])}
+    for goal in compact.get("discovery", {}).get("goals", []):
+        members = set(goal.get("guided", [])) | set(goal.get("starters", []))
+        for recipe_id in goal.get("recipe_ids", []):
+            members.update(recipes.get(recipe_id, {}).get("plan", {}).get("minimum", []))
+        for rid in members & memberships.keys():
+            if goal["id"] not in memberships[rid]:
+                memberships[rid].append(goal["id"])
+    return memberships
+
+
 def build_areas(compact: dict, repos: list[dict]) -> list[dict]:
     sources = compact.get("discovery", {}).get("areas", [])
     if not sources:

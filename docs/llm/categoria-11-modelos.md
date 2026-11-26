@@ -19,7 +19,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `diffusers` | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de… | 3 Avanzado | 78 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `flux2` | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest… | 3 Avanzado | 49 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `flux2` | Código oficial de inferencia de los modelos abiertos FLUX.2 de Black Forest… | 3 Avanzado | 46 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -38,7 +38,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FLUX.2 (`flux2`)
 
-- **Repo:** https://github.com/black-forest-labs/flux2 · Apache-2.0 · nivel 3 · 49/100
+- **Repo:** https://github.com/black-forest-labs/flux2 · Apache-2.0 · nivel 3 · 46/100
 - **Qué es:** Código oficial de inferencia de los modelos FLUX.2 de Black Forest Labs. El código es Apache-2.0, pero los pesos tienen licencias distintas: los modelos 4B [klein] son Apache-2.0 y los 9B y FLUX.2 [dev] (32B) usan la FLUX Non-Commercial…
 - **Cuándo elegirlo:** Casos: Generar imágenes de producto en tu propia GPU; Editar una foto combinando varias imágenes de referencia. Evítalo si Necesitas uso comercial con las variantes 9B o [dev] sin licencia, o no tienes GPU; revisa los límites antes de elegirlo.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python 3.12; GPU NVIDIA con CUDA; unos 8 GB de VRAM para klein 4B y bastante más para FLUX.2 [dev]; pesos desde Hugging Face; hardware gpu; API de IA: opcional; Python 3.12; GPU NVIDIA con CUDA; memoria de vídeo según la variante; pesos desde Hugging Face.

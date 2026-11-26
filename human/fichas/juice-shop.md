@@ -50,7 +50,7 @@ Grupo **Aplicaciones web vulnerables para practicar**: OWASP Juice Shop ocupa la
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **OWASP Juice Shop** (esta ficha) ⭐ recomendado | 75 | Si quieres retos tipo CTF sobre una tienda moderna en JavaScript. |
-| 2 | [WebGoat](webgoat.md) | 62 | Si prefieres lecciones guiadas paso a paso sobre una aplicación Java. |
+| 2 | [WebGoat](webgoat.md) | 58 | Si prefieres lecciones guiadas paso a paso sobre una aplicación Java. |
 
 ## Acceso, coste y equipo
 

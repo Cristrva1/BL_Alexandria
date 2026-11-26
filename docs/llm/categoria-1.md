@@ -19,23 +19,23 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
 | `airflow` | motores | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con… | 3 Avanzado | 81 | Apache-2.0 (OSI permisiva) | recomendado |
-| `kestra` | motores | Orquestador declarativo de workflows en YAML para datos, infraestructura y… | 2 Intermedio | 80 | Apache-2.0 (OSI permisiva) | alternativa |
-| `prefect` | motores | Framework de orquestación en Python: convierte scripts en flujos con… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | alternativa |
+| `kestra` | motores | Orquestador declarativo de workflows en YAML para datos, infraestructura y… | 2 Intermedio | 81 | Apache-2.0 (OSI permisiva) | alternativa |
+| `prefect` | motores | Framework de orquestación en Python: convierte scripts en flujos con… | 2 Intermedio | 69 | Apache-2.0 (OSI permisiva) | alternativa |
 | `trigger-dev` | motores | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | alternativa |
 | `temporal` | motores | Plataforma de ejecución duradera: workflows en código que sobreviven a fallos… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
+| `dagger` | motores | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache… | 2 Intermedio | 66 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `activepieces` | motores | Plataforma open-source de automatización con IA, alternativa extensible a… | 2 Intermedio | 64 | MIT + licencia Enterprise (packages/ee/) (open-core) | sin grupo |
-| `dagger` | motores | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `node-red` | motores | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | recomendado |
-| `huginn` | motores | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
-| `windmill` | motores | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y… | 2 Intermedio | 61 | AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) (open-core) | alternativa |
+| `windmill` | motores | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y… | 2 Intermedio | 62 | AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) (open-core) | alternativa |
+| `celery` | motores | Envía trabajos Python a una cola para que procesos separados los ejecuten y la… | 2 Intermedio | 60 | BSD-3-Clause (OSI copyleft) | sin grupo |
+| `huginn` | motores | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
 | `dagster` | motores | Orquestador de datos orientado a activos: declaras tablas, modelos o informes… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | alternativa |
-| `celery` | motores | Envía trabajos Python a una cola para que procesos separados los ejecuten y la… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
 | `tooljet` | internas | Plataforma low-code para herramientas internas, dashboards y flujos, con… | 2 Intermedio | 75 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `appsmith` | internas | Plataforma low-code para crear paneles de administración y herramientas… | 3 Avanzado | 72 | Apache-2.0 (OSI permisiva) | alternativa |
 | `nocodb` | internas | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de… | 1 Básico | 70 | Sustainable Use License (no OSI) (source-available) | alternativa |
-| `budibase` | internas | Plataforma open source para apps internas, automatizaciones y agentes de IA… | 2 Intermedio | 62 | GPL-3.0 + BSL (packages/pro) (source-available) | alternativa |
+| `budibase` | internas | Plataforma open source para apps internas, automatizaciones y agentes de IA… | 2 Intermedio | 63 | GPL-3.0 + BSL (packages/pro) (source-available) | alternativa |
 | `teable` | internas | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja… | 2 Intermedio | 56 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `grist-core` | internas | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | alternativa |
+| `grist-core` | internas | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas… | 1 Básico | 54 | Apache-2.0 (OSI permisiva) | alternativa |
 | `baserow` | internas | Base de datos sin código autoalojable (Django y Vue) con constructor de… | 1 Básico | 50 | MIT (open-core) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -56,7 +56,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Kestra (`kestra`)
 
-- **Repo:** https://github.com/kestra-io/kestra · Apache-2.0 · nivel 2 · 80/100 · alternativa en «Orquestadores de workflows de datos y tareas»
+- **Repo:** https://github.com/kestra-io/kestra · Apache-2.0 · nivel 2 · 81/100 · alternativa en «Orquestadores de workflows de datos y tareas»
 - **Qué es:** Plataforma de orquestación de código abierto (Apache 2.0) para flujos de datos, IA e infraestructura, mantenida por Kestra Technologies. Existe desde 2019, publicó la serie 2.0 en 2026 y tiene una edición Enterprise con RBAC y políticas de…
 - **Cuándo elegirlo:** Casos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama.
 - **Requisitos:** nivel 2: preparación media; Docker;  directorio temporal y volúmenes de prueba; hardware prerequisites; API de IA: opcional; Docker; directorio temporal y volúmenes de prueba.
@@ -79,7 +79,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Prefect (`prefect`)
 
-- **Repo:** https://github.com/PrefectHQ/prefect · Apache-2.0 · nivel 2 · 68/100 · alternativa en «Orquestadores de workflows de datos y tareas»
+- **Repo:** https://github.com/PrefectHQ/prefect · Apache-2.0 · nivel 2 · 69/100 · alternativa en «Orquestadores de workflows de datos y tareas»
 - **Qué es:** Framework de orquestación de workflows de Prefect Technologies (Apache-2.0), con servidor autoalojable y una nube comercial (Prefect Cloud). Proyecto maduro en su serie 3.x; requiere Python 3.11 o superior según el README.
 - **Cuándo elegirlo:** Casos: convertir un script de ingesta en un flujo con reintentos y ejecución programada; encadenar pasos de datos o ML con dependencias dinámicas y observabilidad.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, Dockerfile, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -112,6 +112,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `openai-agents-python` [3/py], `pydantic-ai` [3/py], `langgraph` [3/py], `grafana` [10/bi], `claude-code` [20/terminal]
 - **Riesgos y avisos:** Temporal no es un orquestador de datos por calendario como Airflow: modela procesos de aplicación duraderos.
 
+### Dagger (`dagger`)
+
+- **Repo:** https://github.com/dagger/dagger · Apache-2.0 · nivel 2 · 66/100
+- **Qué es:** Motor de pipelines portable (Apache-2.0).
+- **Cuándo elegirlo:** Casos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI.
+- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install dagger/tap/dagger` — fuente: https://github.com/dagger/dagger/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** `brew install dagger/tap/dagger` y ejecuta el quickstart del README. Éxito: Pipeline de ejemplo termina en local.
+- **Combina con:** `coolify` [22/infraestructura], `portainer` [22/infraestructura]
+
 ### activepieces (`activepieces`)
 
 - **Repo:** https://github.com/activepieces/activepieces · MIT + licencia Enterprise (packages/ee/) · nivel 2 · 64/100
@@ -127,16 +137,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nocodb` [1/internas], `claude-code` [20/terminal], `litellm` [23/serving]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Antes de usarlo comercialmente, revisa qué funciones caen en la licencia Enterprise. El MCP documentado usa un endpoint de la instancia y autenticación; hay que conceder acceso al cliente y las piezas y servicios conservan sus propios requisitos.
 
-### Dagger (`dagger`)
-
-- **Repo:** https://github.com/dagger/dagger · Apache-2.0 · nivel 2 · 64/100
-- **Qué es:** Motor de pipelines portable (Apache-2.0).
-- **Cuándo elegirlo:** Casos: reemplazar un script CI frágil; correr el mismo pipeline en laptop y CI.
-- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install dagger/tap/dagger` — fuente: https://github.com/dagger/dagger/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** `brew install dagger/tap/dagger` y ejecuta el quickstart del README. Éxito: Pipeline de ejemplo termina en local.
-- **Combina con:** `coolify` [22/infraestructura], `portainer` [22/infraestructura]
-
 ### Node-RED (`node-red`)
 
 - **Repo:** https://github.com/node-red/node-red · Apache-2.0 · nivel 1 · 64/100 · recomendado en «Automatización por eventos auto-hospedada»
@@ -149,21 +149,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `huginn`
 - **Riesgos y avisos:** Alternativas (elige una): huginn. Los nodos comunitarios son de terceros: revisa su mantenimiento antes de usarlos en producción. En Windows la guía indica omitir sudo; la instalación es de Node-RED, no de un modelo.
 
-### huginn (`huginn`)
-
-- **Repo:** https://github.com/huginn/huginn · MIT · nivel 2 · 63/100 · alternativa en «Automatización por eventos auto-hospedada»
-- **Qué es:** Sistema de agentes autoalojado para automatizar tareas en línea, descrito por sus autores como una versión «hackeable» de IFTTT o Zapier en tu propio servidor.
-- **Cuándo elegirlo:** Casos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes.
-- **Requisitos:** nivel 2: preparación media; Docker;  una fuente RSS pública para la prueba; hardware prerequisites; API de IA: no; Docker; una fuente RSS pública para la prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker run -it -p 3000:3000 ghcr.io/huginn/huginn` — fuente: https://github.com/huginn/huginn/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Configura un agente RSS y observa los eventos que produce Éxito: Aparece un evento con el título y enlace de una publicación
-- **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `coolify` [22/infraestructura], `changedetection` [4/busqueda]
-- **Alternativas:** `node-red`
-- **Riesgos y avisos:** Alternativas (elige una): node-red. Son agentes de eventos, no agentes que requieren un modelo de lenguaje.
-
 ### Windmill (`windmill`)
 
-- **Repo:** https://github.com/windmill-labs/windmill · AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) · nivel 2 · 61/100 · alternativa en «Orquestadores de workflows de datos y tareas»
+- **Repo:** https://github.com/windmill-labs/windmill · AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise) · nivel 2 · 62/100 · alternativa en «Orquestadores de workflows de datos y tareas»
 - **Qué es:** Plataforma «code-first» autoalojable para flujos de trabajo, apps internas y agentes de IA, de Windmill Labs. El código es abierto bajo AGPLv3 y la empresa vende instancias dedicadas, soporte y licencias comerciales; publica versiones casi…
 - **Cuándo elegirlo:** Casos: Convertir un script de conciliación en una herramienta interna con formulario; Programar una consulta de datos como tarea recurrente.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Docker Compose;  espacio para la base y los trabajadores; hardware prerequisites; API de IA: opcional; Docker Compose; espacio para la base y los trabajadores.
@@ -173,13 +161,35 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   curl https://raw.githubusercontent.com/windmill-labs/windmill/main/docker-compose.yml -o docker-compose.yml
   curl https://raw.githubusercontent.com/windmill-labs/windmill/main/Caddyfile -o Caddyfile
   curl https://raw.githubusercontent.com/windmill-labs/windmill/main/.env -o .env
-  
+
   docker compose up -d
   ```
 - **Primera prueba propuesta (no ejecutada):** Crea un script que reciba un nombre y devuelva un saludo Éxito: La ejecución guarda el resultado del script y sus logs
 - **Combina con:** `duckdb` [25/datos], `claude-code` [20/terminal], `polars` [25/datos], `coolify` [22/infraestructura]
 - **Alternativas:** `airflow`, `kestra`, `prefect`, `trigger-dev`, `dagster`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio. Ofrece MCP remoto autenticado para operar un workspace; conectar Claude Code, Codex o Antigravity no incluye el modelo ni autoriza todas las acciones del….
+
+### Celery (`celery`)
+
+- **Repo:** https://github.com/celery/celery · BSD-3-Clause · nivel 2 · 60/100
+- **Qué es:** Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.
+- **Cuándo elegirlo:** Casos: Procesar una miniatura de prueba en segundo plano.; Generar un informe de ejemplo en una cola distinta a la interfaz web.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; API de IA: no; Python compatible con la versión estable elegida y un intermediario local como Redis o RabbitMQ..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html
+- **Primera prueba propuesta (no ejecutada):** Completa el tutorial con una tarea que sume dos números y un intermediario local. Éxito: El proceso trabajador recibe la tarea y el resultado contiene la suma esperada.
+- **Riesgos y avisos:** Mantén el intermediario fuera de internet y usa cargas de prueba. Si lo alojas, cuenta procesos, memoria y persistencia.
+
+### huginn (`huginn`)
+
+- **Repo:** https://github.com/huginn/huginn · MIT · nivel 2 · 60/100 · alternativa en «Automatización por eventos auto-hospedada»
+- **Qué es:** Sistema de agentes autoalojado para automatizar tareas en línea, descrito por sus autores como una versión «hackeable» de IFTTT o Zapier en tu propio servidor.
+- **Cuándo elegirlo:** Casos: Vigilar novedades de un sitio que publica una fuente RSS; Transformar un webhook entrante en un evento para otros agentes.
+- **Requisitos:** nivel 2: preparación media; Docker;  una fuente RSS pública para la prueba; hardware prerequisites; API de IA: no; Docker; una fuente RSS pública para la prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker run -it -p 3000:3000 ghcr.io/huginn/huginn` — fuente: https://github.com/huginn/huginn/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Configura un agente RSS y observa los eventos que produce Éxito: Aparece un evento con el título y enlace de una publicación
+- **Combina con:** `ollama` [8/motores], `litellm` [23/serving], `coolify` [22/infraestructura], `changedetection` [4/busqueda]
+- **Alternativas:** `node-red`
+- **Riesgos y avisos:** Alternativas (elige una): node-red. Son agentes de eventos, no agentes que requieren un modelo de lenguaje.
 
 ### Dagster (`dagster`)
 
@@ -192,16 +202,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `duckdb` [25/datos], `polars` [25/datos], `mlflow` [23/observabilidad], `claude-code` [20/terminal], `dbt` [25/datos], `dlt` [25/datos]
 - **Alternativas:** `airflow`, `kestra`, `prefect`, `trigger-dev`, `windmill`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): airflow, prefect, kestra.
-
-### Celery (`celery`)
-
-- **Repo:** https://github.com/celery/celery · BSD-3-Clause · nivel 2 · —/100
-- **Qué es:** Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar.
-- **Cuándo elegirlo:** Casos: Procesar una miniatura de prueba en segundo plano.; Generar un informe de ejemplo en una cola distinta a la interfaz web.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; API de IA: no; Python compatible con la versión estable elegida y un intermediario local como Redis o RabbitMQ..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html
-- **Primera prueba propuesta (no ejecutada):** Completa el tutorial con una tarea que sume dos números y un intermediario local. Éxito: El proceso trabajador recibe la tarea y el resultado contiene la suma esperada.
-- **Riesgos y avisos:** Mantén el intermediario fuera de internet y usa cargas de prueba. Si lo alojas, cuenta procesos, memoria y persistencia.
 
 ### ToolJet (`tooljet`)
 
@@ -257,7 +257,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Budibase (`budibase`)
 
-- **Repo:** https://github.com/Budibase/budibase · GPL-3.0 + BSL (packages/pro) · nivel 2 · 62/100 · alternativa en «Herramientas internas y bases de datos no-code»
+- **Repo:** https://github.com/Budibase/budibase · GPL-3.0 + BSL (packages/pro) · nivel 2 · 63/100 · alternativa en «Herramientas internas y bases de datos no-code»
 - **Qué es:** Plataforma de operaciones de código abierto para crear agentes, apps y automatizaciones, de Budibase Ltd. El núcleo tiene licencia GPL v3, las librerías de cliente y componentes MPL (las apps que construyes pueden tener la licencia que…
 - **Cuándo elegirlo:** Casos: Registrar solicitudes internas y seguir su estado; Montar un proceso que combina formulario, automatización y agente de IA.
 - **Requisitos:** nivel 2: preparación media; Cuenta o instancia Budibase;  datos de ejemplo para una aplicación; hardware prerequisites; API de IA: opcional; Cuenta o instancia Budibase; datos de ejemplo para una aplicación.
@@ -281,7 +281,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Grist (`grist-core`)
 
-- **Repo:** https://github.com/gristlabs/grist-core · Apache-2.0 · nivel 1 · 53/100 · alternativa en «Herramientas internas y bases de datos no-code»
+- **Repo:** https://github.com/gristlabs/grist-core · Apache-2.0 · nivel 1 · 54/100 · alternativa en «Herramientas internas y bases de datos no-code»
 - **Qué es:** Servidor de la edición Community de Grist (Apache-2.0), mantenido por Grist Labs (Nueva York) con contribuciones relevantes de organismos públicos franceses.
 - **Cuándo elegirlo:** Casos: sustituir una hoja compartida por tablas relacionadas con permisos por fila; montar un inventario o CRM ligero en tu propio servidor.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, Dockerfile, package.json; API de IA: opcional.

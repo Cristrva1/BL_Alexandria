@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** AGPL-3.0 / Apache-2.0 + licencia propietaria (enterprise). La mayoría de archivos AGPL; algunas partes Apache-2.0; funciones enterprise propietarias. Fuente: [LICENSE](https://github.com/windmill-labs/windmill/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -50,10 +50,10 @@ Grupo **Orquestadores de workflows de datos y tareas**: Windmill ocupa la posici
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Apache Airflow](airflow.md) ⭐ recomendado | 81 | Si necesitas el estándar de la industria para pipelines por lotes con un ecosistema enorme de operadores. |
-| 2 | [Kestra](kestra.md) | 80 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
-| 3 | [Prefect](prefect.md) | 68 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
+| 2 | [Kestra](kestra.md) | 81 | Si prefieres definir flujos en YAML con interfaz web y disparadores por eventos. |
+| 3 | [Prefect](prefect.md) | 69 | Si quieres convertir funciones Python en flujos observables con muy poco código. |
 | 4 | [Trigger.dev](trigger-dev.md) | 68 | Si trabajas en TypeScript y quieres tareas de fondo largas sin gestionar colas. |
-| 5 | **Windmill** (esta ficha) | 61 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
+| 5 | **Windmill** (esta ficha) | 62 | Si quieres scripts en varios lenguajes convertidos en flujos y apps internas rápidas. |
 | 6 | [Dagster](dagster.md) | 57 | Si piensas en activos de datos (tablas, modelos) con linaje y pruebas. |
 
 ## Acceso, coste y equipo

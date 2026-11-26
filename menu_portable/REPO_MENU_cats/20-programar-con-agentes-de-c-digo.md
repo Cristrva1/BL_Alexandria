@@ -251,7 +251,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes reconocer herramientas y contexto usados en la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `playwright-mcp`, `github-mcp-server`
-**Alternativas (elige una):** `opencode`, `claude-code`, `open-interpreter`
+**Alternativas (elige una):** `claude-code`, `open-interpreter`
 
 ## `kilocode`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=coding,agent,typescript,vscode
@@ -437,7 +437,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes una explicación contrastable antes de permitir ediciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `opencode-manager`, `t3code`
-**Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`, `mimo-code`
+**Alternativas (elige una):** `claude-code`, `codex`, `gemini-cli`, `aider`, `mimo-code`
 
 ## `opencode-manager`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,agent,typescript

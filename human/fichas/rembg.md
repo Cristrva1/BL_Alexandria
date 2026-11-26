@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — pip o CLI; GPU opcional · corregido a mano
 
-**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

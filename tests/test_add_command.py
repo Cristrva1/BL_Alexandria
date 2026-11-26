@@ -241,3 +241,72 @@ def test_catalog_has_no_pending_drafts():
     for rid, d in detail.items():
         for f in ("que_es", "que_hace", "como_lo_hace", "desc"):
             assert add_mod.PENDING + ":" not in (d.get(f) or ""), (rid, f)
+
+
+def test_repeated_identity_and_id_in_one_batch(project):
+    full = "acme/example"
+    other = "acme/other"
+    renamed = "acme/renamed"
+    gh = fake_gh({full: _meta(full, 990031), other: _meta(other, 990032), renamed: _meta(renamed, 990031)})
+    specs = [_spec("example", full), _spec("copy", full), _spec("example", other), _spec("alias", renamed)]
+    result = add_mod.run_add(project, {"repos": specs}, gh=gh, simulate=True)
+    assert [a["id"] for a in result.added] == ["example"]
+    assert len(result.skipped) == 3
+
+
+@pytest.mark.parametrize("fallback", [False, True])
+def test_documentary_evidence_required(project, fallback):
+    full = "acme/example"
+    gh = fake_gh({full: _meta(full, 990031)})
+    revision = "a" * 40
+    url = f"https://github.com/{full}/blob/{revision}/docs/start.md"
+    spec = _spec("example", full, fuentes=[url])
+
+    def without_readme(path):
+        if path.endswith("/readme"):
+            raise add_mod.AddError("README ausente")
+        if "/contents/" in path:
+            assert path == f"repos/{full}/contents/docs/start.md?ref={revision}"
+            if fallback:
+                return {"html_url": url, "sha": "b" * 40, "content": base64.b64encode(README.encode()).decode()}
+            raise add_mod.AddError("Fuente ausente")
+        return gh(path)
+
+    result = add_mod.run_add(project, {"repos": [spec]}, gh=without_readme, simulate=True)
+    card = result.detail["example"]
+    assert not card["sources"]["readme_blob_sha"]
+    if fallback:
+        assert card["editorial_review"]["source"] == url
+        assert card["editorial_review"]["source_blob_sha"] == "b" * 40
+        assert card["editorial_review"]["status"] == "source_reviewed"
+    else:
+        assert result.added[0]["borrador"]
+        assert card["access"]["api"] == "unconfirmed"
+        assert card["getting_started"]["command"] == ""
+        assert card["editorial_review"]["checks"] == ["identity"]
+        assert card["descripcion_revision"]["status"] == card["editorial_review"]["status"] == "pending"
+        assert result.compact["repos"][-1]["routes"] == ["review"]
+
+
+def test_interrupted_batch_is_completed_before_retry(project, monkeypatch):
+    full = "acme/example"
+    gh = fake_gh({full: _meta(full, 990031)})
+    batch = {"lote": "recuperar", "repos": [_spec("example", full)]}
+    replace = Path.replace
+
+    def interrupted(source, target):
+        if Path(target).name == "INDICE_IA.detalle.json":
+            raise OSError("interrupción simulada")
+        return replace(source, target)
+
+    with monkeypatch.context() as patch:
+        patch.setattr(Path, "replace", interrupted)
+        with pytest.raises(OSError, match="interrupción simulada"):
+            add_mod.run_add(project, batch, gh=gh)
+    result = add_mod.run_add(project, batch, gh=gh)
+    assert not result.added and len(result.skipped) == 1
+    compact, detail = _load(project)
+    assert sum(r["id"] == "example" for r in compact["repos"]) == 1
+    assert detail["example"]["repo"] == "https://github.com/acme/example"
+    assert (project / "reports/altas/recuperar.json").is_file()
+    assert not (project / "data/.alta-pendiente").exists()

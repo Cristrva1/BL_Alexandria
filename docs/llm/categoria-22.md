@@ -19,37 +19,37 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
 | `composio` | infra | Plataforma con más de 1000 integraciones con autenticación gestionada para que… | 1 Básico | 74 | MIT (OSI permisiva) | sin grupo |
+| `agent-substrate` | infra | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y… | 3 Avanzado | 69 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `nemoclaw` | infra | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de… | 3 Avanzado | 69 | Apache-2.0 (OSI permisiva) | recomendado |
-| `agent-desktop` | infra | CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `e2b` | infra | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | alternativa |
+| `kiri` | infra | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `agent-desktop` | infra | CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `sandbox` | infra | Entorno sandbox all-in-one para agentes que reúne navegador, terminal… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
-| `shepherd` | infra | Capa de ejecución que registra acciones y estado de un agente para permitir… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
-| `agent-protocol` | infra | Especificación de LangChain para exponer cualquier agente con una API estándar… | 1 Básico | 48 | MIT (OSI permisiva) | sin grupo |
+| `screen-relay` | infra | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica… | 3 Avanzado | 50 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `nodeterm` | infra | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con… | 2 Intermedio | 48 | BUSL-1.1 (source-available) | sin grupo |
-| `computer-use-preview` | infra | Implementación de referencia de Google para que Gemini vea la pantalla y opere… | 2 Intermedio | 45 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `claude-task-master` | infra | Sistema de gestión de tareas con IA que prepara y organiza trabajo de… | 2 Intermedio | 42 | MIT + Commons Clause (source-available) | sin grupo |
-| `agent-substrate` | infra | Aloja tareas con estado en Kubernetes y permite probar cómo se suspenden y… | 3 Avanzado | — | Apache-2.0 | sin grupo |
-| `kiri` | infra | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de… | 2 Intermedio | — | Apache-2.0 | sin grupo |
-| `screen-relay` | infra | Muestra en el navegador un escritorio de prueba para ver una aplicación gráfica… | 3 Avanzado | — | Apache-2.0 | sin grupo |
+| `agent-protocol` | infra | Especificación de LangChain para exponer cualquier agente con una API estándar… | 1 Básico | 47 | MIT (OSI permisiva) | sin grupo |
+| `shepherd` | infra | Capa de ejecución que registra acciones y estado de un agente para permitir… | 2 Intermedio | 47 | MIT (OSI permisiva) | sin grupo |
+| `claude-task-master` | infra | Sistema de gestión de tareas con IA que prepara y organiza trabajo de… | 2 Intermedio | 43 | MIT + Commons Clause (source-available) | sin grupo |
+| `computer-use-preview` | infra | Implementación de referencia de Google para que Gemini vea la pantalla y opere… | 2 Intermedio | 42 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `freedomain` | recursos | Recursos de registro de dominios y aprendizaje práctico de DNS publicados por… | 1 Básico | 57 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `free-for-dev` | recursos | Directorio de servicios de infraestructura y desarrollo que ofrecen planes o… | 1 Básico | 47 | — (sin licencia detectada) | sin grupo |
-| `headscale` | redes | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 69 | BSD-3-Clause (OSI permisiva) | recomendado |
-| `frp` | redes | Proxy inverso rápido para exponer servidores locales detrás de NAT o… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `pangolin` | redes | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y… | 3 Avanzado | 72 | NOASSERTION → open-core según el texto | sin grupo |
+| `headscale` | redes | Implementación abierta y autoalojada del servidor de control de Tailscale para… | 2 Intermedio | 67 | BSD-3-Clause (OSI permisiva) | recomendado |
+| `wg-easy` | redes | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `netbird` | redes | Red privada superpuesta basada en WireGuard con SSO, MFA y control de acceso… | 2 Intermedio | 63 | BSD-3-Clause + AGPL-3.0 (management, signal, relay) (OSI copyleft) | alternativa |
-| `wg-easy` | redes | La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `masterdnsvpn` | redes | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
-| `pangolin` | redes | Controla qué personas pueden entrar a aplicaciones propias mediante un proxy y… | 3 Avanzado | — | NOASSERTION | sin grupo |
-| `tailcat` | redes | Conecta dos equipos propios para el intercambio temporal de datos mediante un… | 2 Intermedio | — | BSD-3-Clause | sin grupo |
+| `frp` | redes | Proxy inverso rápido para exponer servidores locales detrás de NAT o… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `masterdnsvpn` | redes | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
+| `tailcat` | redes | Conecta dos equipos propios para el intercambio temporal de datos mediante un… | 2 Intermedio | 51 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `supabase` | infraestructura | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras… | 3 Avanzado | 76 | Apache-2.0 (OSI permisiva) | recomendado |
+| `uptime-kuma` | infraestructura | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y… | 1 Básico | 76 | MIT (OSI permisiva) | sin grupo |
 | `coolify` | infraestructura | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
-| `appwrite` | infraestructura | Plataforma de backend abierta orientada a agentes y desarrolladores… | 2 Intermedio | 73 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `uptime-kuma` | infraestructura | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
+| `appwrite` | infraestructura | Plataforma de backend abierta orientada a agentes y desarrolladores… | 2 Intermedio | 72 | BSD-3-Clause (OSI permisiva) | alternativa |
+| `portainer` | infraestructura | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman… | 1 Básico | 71 | Zlib (OSI permisiva) | sin grupo |
 | `caddy` | infraestructura | Servidor web y proxy inverso extensible con HTTPS automático por defecto… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | recomendado |
 | `traefik` | infraestructura | Proxy inverso y balanceador de carga dinámico para contenedores y… | 2 Intermedio | 70 | MIT (OSI permisiva) | alternativa |
 | `dokploy` | infraestructura | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku… | 2 Intermedio | 67 | Apache-2.0 + licencia propietaria (/proprietary) (open-core) | alternativa |
-| `portainer` | infraestructura | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman… | 1 Básico | 66 | Zlib (OSI permisiva) | sin grupo |
+| `libretranslate` | infraestructura | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo… | 3 Avanzado | 57 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `casaos` | infraestructura | Entorno para administrar un servidor personal, instalar aplicaciones y… | 1 Básico | 52 | Apache-2.0 (OSI permisiva) | alternativa |
-| `libretranslate` | infraestructura | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo… | 3 Avanzado | — | AGPL-3.0 | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -66,6 +66,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `openai-agents-python` [3/py], `langgraph` [3/py], `mastra` [3/ts], `claude-code` [20/terminal], `awesome-claude-skills` [2/catalogos], `openbot` [21/asistentes]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Dependencia de un servicio comercial para las credenciales de terceros. El CLI ofrece una superficie local para Claude Code; el SDK de Claude Agent no equivale a incluir créditos o plan de Claude Code.
 
+### Agent Substrate (`agent-substrate`)
+
+- **Repo:** https://github.com/agent-substrate/substrate · Apache-2.0 · nivel 3 · 69/100
+- **Qué es:** Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.
+- **Cuándo elegirlo:** Casos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.
+- **Requisitos:** nivel 3: preparación pesada, despliegue con Kubernetes/Helm; Go, go.mod; hardware prerequisites; API de IA: no; Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md
+- **Primera prueba propuesta (no ejecutada):** Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local. Éxito: El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado.
+- **Riesgos y avisos:** La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de….
+
 ### NemoClaw (`nemoclaw`)
 
 - **Repo:** https://github.com/NVIDIA/NemoClaw · Apache-2.0 · nivel 3 · 69/100 · recomendado en «Sandboxes para agentes»
@@ -78,9 +88,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `e2b`, `sandbox`
 - **Riesgos y avisos:** Alternativas (elige una): sandbox. El prompt para que Claude Code o Codex ayude a instalar es una guía de instalación asistida y no una integración runtime de sus planes.
 
+### E2B (`e2b`)
+
+- **Repo:** https://github.com/e2b-dev/E2B · Apache-2.0 · nivel 1 · 65/100 · alternativa en «Sandboxes para agentes»
+- **Qué es:** E2B, infraestructura open source para ejecutar código generado por IA en sandboxes aislados en la nube. Licencia Apache-2.0. Es maduro y activo (~15k estrellas).
+- **Cuándo elegirlo:** Casos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente.
+- **Requisitos:** nivel 1: preparación sencilla; Node o Python; cuenta E2B y clave; presupuesto de sandbox; hardware prerequisites; API de IA: no; Node o Python; cuenta E2B y clave; presupuesto de sandbox.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm i e2b` — fuente: https://github.com/e2b-dev/E2B/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Crea un sandbox de prueba, ejecuta una operación de texto inocua y ciérralo Éxito: Puedes revisar resultado y ciclo de vida del sandbox
+- **Combina con:** `smolagents` [3/py], `open-swe` [20/ingenieria], `computer-use-preview`
+- **Alternativas:** `nemoclaw`, `sandbox`
+- **Riesgos y avisos:** Alternativas (elige una): sandbox. Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA.
+
+### Kiri (`kiri`)
+
+- **Repo:** https://github.com/libracoder/kiri · Apache-2.0 · nivel 2 · 64/100
+- **Qué es:** Un motor con interfaz para contenedores de desarrollo en un equipo personal.
+- **Cuándo elegirlo:** Casos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.
+- **Requisitos:** nivel 2: preparación media; Rust, Cargo.toml; hardware prerequisites; API de IA: no; En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/libracoder/kiri/releases/tag/v0.2.2
+- **Primera prueba propuesta (no ejecutada):** En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles. Éxito: La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri.
+- **Riesgos y avisos:** Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales.
+
 ### agent-desktop (`agent-desktop`)
 
-- **Repo:** https://github.com/vercel-labs/agent-desktop · Apache-2.0 · nivel 2 · 65/100
+- **Repo:** https://github.com/vercel-labs/agent-desktop · Apache-2.0 · nivel 2 · 63/100
 - **Qué es:** agent-desktop, CLI y biblioteca de Vercel Labs para que un agente use apps de escritorio en macOS, Windows y Linux a través del árbol de accesibilidad del sistema. Licencia Apache-2.0. Tiene ~24k estrellas y está activo.
 - **Cuándo elegirlo:** Casos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz.
 - **Requisitos:** nivel 2: preparación media; Node; permisos de accesibilidad del sistema; cliente de agente opcional; hardware prerequisites; API de IA: no; Node; permisos de accesibilidad del sistema; cliente de agente opcional.
@@ -94,18 +126,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Ejecuta status y permissions --guide y obtén una captura de una ventana de prueba sin pulsar controles Éxito: Puedes comprobar plataforma, permisos y referencias de accesibilidad
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `playwright-mcp` [5/servidores]
 - **Riesgos y avisos:** Sin alternativas declaradas; enfoque complementario al de computer-use-preview (accesibilidad frente a píxeles). Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación.
-
-### E2B (`e2b`)
-
-- **Repo:** https://github.com/e2b-dev/E2B · Apache-2.0 · nivel 1 · 65/100 · alternativa en «Sandboxes para agentes»
-- **Qué es:** E2B, infraestructura open source para ejecutar código generado por IA en sandboxes aislados en la nube. Licencia Apache-2.0. Es maduro y activo (~15k estrellas).
-- **Cuándo elegirlo:** Casos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente.
-- **Requisitos:** nivel 1: preparación sencilla; Node o Python; cuenta E2B y clave; presupuesto de sandbox; hardware prerequisites; API de IA: no; Node o Python; cuenta E2B y clave; presupuesto de sandbox.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm i e2b` — fuente: https://github.com/e2b-dev/E2B/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Crea un sandbox de prueba, ejecuta una operación de texto inocua y ciérralo Éxito: Puedes revisar resultado y ciclo de vida del sandbox
-- **Combina con:** `smolagents` [3/py], `open-swe` [20/ingenieria], `computer-use-preview`
-- **Alternativas:** `nemoclaw`, `sandbox`
-- **Riesgos y avisos:** Alternativas (elige una): sandbox. Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA.
 
 ### sandbox (`sandbox`)
 
@@ -128,27 +148,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `nemoclaw`, `e2b`
 - **Riesgos y avisos:** Alternativas (elige una): nemoclaw, e2b. Se quita ecc (sin relación documentada). Riesgo: sin API key, todo queda expuesto. Expone MCP en /mcp; sin SANDBOX_API_KEY los servicios quedan abiertos y el ejemplo usa seccomp unconfined, por lo que no es una garantía absoluta de aislamiento.
 
-### shepherd (`shepherd`)
+### Screen Relay (`screen-relay`)
 
-- **Repo:** https://github.com/shepherd-agents/shepherd · MIT · nivel 2 · 49/100
-- **Qué es:** Shepherd, sustrato de ejecución para meta-agentes programables con trazas de ejecución reversibles, de shepherd-agents. Licencia MIT. Está en alfa temprana con APIs cambiantes, tiene ~2.6k estrellas y artículo citado.
-- **Cuándo elegirlo:** Casos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python 3.11+; entorno compatible; Claude CLI solo para ejemplo con modelo; hardware prerequisites; API de IA: opcional; Python 3.11+; entorno compatible; Claude CLI solo para ejemplo con modelo.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install shepherd-ai` — fuente: https://github.com/shepherd-agents/shepherd/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Empieza por Offline Quickstart para observar una traza reversible sin llamar un modelo Éxito: Puedes inspeccionar estados y bifurcaciones de la demostración
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
-- **Riesgos y avisos:** Sin alternativas declaradas. Es alfa. La reversibilidad afecta al estado capturado por el runtime y no promete deshacer cualquier efecto externo; la demo offline no es un LLM local.
-
-### Agent Protocol (`agent-protocol`)
-
-- **Repo:** https://github.com/langchain-ai/agent-protocol · MIT · nivel 1 · 48/100
-- **Qué es:** Agent Protocol, especificación de LangChain de APIs independientes del framework para servir agentes LLM en producción. Licencia MIT. Es una especificación de nicho (~700 estrellas).
-- **Cuándo elegirlo:** Casos: Diseñar una API de agentes; Comparar protocolos antes de implementar.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; nociones de HTTP; hardware prerequisites; API de IA: no; Navegador; nociones de HTTP.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/langchain-ai/agent-protocol/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Lee las rutas threads y runs y dibuja cómo una aplicación inicia y consulta una ejecución Éxito: Puedes distinguir estado del hilo y ejecución del agente
-- **Combina con:** `langgraph` [3/py], `langgraphjs` [3/ts], `deepagents` [3/py]
-- **Riesgos y avisos:** Sin alternativas declaradas. Es una especificación de API y no MCP ni un servidor instalable; los bloques Hurl ilustran peticiones y no son comandos de terminal normales.
+- **Repo:** https://github.com/vercel-labs/screen-relay · Apache-2.0 · nivel 3 · 50/100
+- **Qué es:** Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.
+- **Cuándo elegirlo:** Casos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado.
+- **Requisitos:** nivel 3: preparación pesada; C++, Dockerfile, Makefile, package.json; hardware prerequisites; API de IA: no; Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx
+- **Primera prueba propuesta (no ejecutada):** Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales. Éxito: El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno.
+- **Riesgos y avisos:** El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token.
 
 ### nodeterm (`nodeterm`)
 
@@ -161,30 +169,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
 - **Riesgos y avisos:** BSL (source-available): no es OSI; revisa usos comerciales y la fecha de cambio de licencia. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Licencia BUSL: revisa las restricciones de uso. Documenta Claude Code, Codex y Antigravity; la licencia BUSL-1.1 y sus límites no deben presentarse como MIT sin restricciones; local aquí incluye dictado, no….
 
-### Gemini Computer Use (preview) (`computer-use-preview`)
+### Agent Protocol (`agent-protocol`)
 
-- **Repo:** https://github.com/google-gemini/computer-use-preview · Apache-2.0 · nivel 2 · 45/100
-- **Qué es:** Computer Use Preview, implementación de referencia de Google para que Gemini controle un navegador. Licencia Apache-2.0. Tiene ~3.3k estrellas y no cambia desde julio de 2026.
-- **Cuándo elegirlo:** Casos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios.
-- **Requisitos:** nivel 2: preparación media, requiere clave de API; Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba; hardware prerequisites; API de IA: sí; Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/google-gemini/computer-use-preview/blob/main/README.md
+- **Repo:** https://github.com/langchain-ai/agent-protocol · MIT · nivel 1 · 47/100
+- **Qué es:** Agent Protocol, especificación de LangChain de APIs independientes del framework para servir agentes LLM en producción. Licencia MIT. Es una especificación de nicho (~700 estrellas).
+- **Cuándo elegirlo:** Casos: Diseñar una API de agentes; Comparar protocolos antes de implementar.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; nociones de HTTP; hardware prerequisites; API de IA: no; Navegador; nociones de HTTP.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/langchain-ai/agent-protocol/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Lee las rutas threads y runs y dibuja cómo una aplicación inicia y consulta una ejecución Éxito: Puedes distinguir estado del hilo y ejecución del agente
+- **Combina con:** `langgraph` [3/py], `langgraphjs` [3/ts], `deepagents` [3/py]
+- **Riesgos y avisos:** Sin alternativas declaradas. Es una especificación de API y no MCP ni un servidor instalable; los bloques Hurl ilustran peticiones y no son comandos de terminal normales.
 
-  ```bash
-  git clone https://github.com/google-gemini/computer-use-preview.git
-  cd computer-use-preview
-  
-  python3 -m venv .venv
-  source .venv/bin/activate
-  pip install -r requirements.txt
-  ```
-- **Primera prueba propuesta (no ejecutada):** Usa una página de prueba y solicita localizar un elemento sin cuentas personales ni acciones reales Éxito: Puedes comparar la captura y la acción propuesta
-- **Combina con:** `playwright` [32/bibliotecas], `sandbox`, `e2b`
-- **Alternativas:** `browser-use`, `skyvern`
-- **Riesgos y avisos:** Alternativas (elige una): browser-use, skyvern. Es una referencia, no un producto. Es una implementación de referencia y no un servidor genérico que se instala automáticamente en Claude Code, Codex o Antigravity.
+### shepherd (`shepherd`)
+
+- **Repo:** https://github.com/shepherd-agents/shepherd · MIT · nivel 2 · 47/100
+- **Qué es:** Shepherd, sustrato de ejecución para meta-agentes programables con trazas de ejecución reversibles, de shepherd-agents. Licencia MIT. Está en alfa temprana con APIs cambiantes, tiene ~2.6k estrellas y artículo citado.
+- **Cuándo elegirlo:** Casos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python 3.11+; entorno compatible; Claude CLI solo para ejemplo con modelo; hardware prerequisites; API de IA: opcional; Python 3.11+; entorno compatible; Claude CLI solo para ejemplo con modelo.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install shepherd-ai` — fuente: https://github.com/shepherd-agents/shepherd/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Empieza por Offline Quickstart para observar una traza reversible sin llamar un modelo Éxito: Puedes inspeccionar estados y bifurcaciones de la demostración
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
+- **Riesgos y avisos:** Sin alternativas declaradas. Es alfa. La reversibilidad afecta al estado capturado por el runtime y no promete deshacer cualquier efecto externo; la demo offline no es un LLM local.
 
 ### claude-task-master (`claude-task-master`)
 
-- **Repo:** https://github.com/eyaltoledano/claude-task-master · MIT + Commons Clause · nivel 2 · 42/100
+- **Repo:** https://github.com/eyaltoledano/claude-task-master · MIT + Commons Clause · nivel 2 · 43/100
 - **Qué es:** Taskmaster, sistema de gestión de tareas para desarrollo con IA, de @eyaltoledano y @RalphEcom. Licencia MIT con Commons Clause (no OSI; GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Descomponer un proyecto web; Revisar orden y dependencias de tareas.
 - **Requisitos:** nivel 2: preparación media; Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio; hardware prerequisites; API de IA: opcional; Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio.
@@ -194,35 +203,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `spec-kit`
 - **Riesgos y avisos:** Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativa (elige una): spec-kit. Actividad reciente baja. Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la….
 
-### Agent Substrate (`agent-substrate`)
+### Gemini Computer Use (preview) (`computer-use-preview`)
 
-- **Repo:** https://github.com/agent-substrate/substrate · Apache-2.0 · nivel 3 · —/100
-- **Qué es:** Una plataforma de infraestructura para ejecutar trabajos con estado en Kubernetes.
-- **Cuándo elegirlo:** Casos: Comparar dos llamadas al contador de demostración.; Estudiar en un clúster de prueba qué datos se guardan cuando una tarea se suspende.
-- **Requisitos:** nivel 3: preparación pesada, despliegue con Kubernetes/Helm; Go, go.mod; hardware prerequisites; API de IA: no; Go, kubectl, Docker y un equipo capaz de ejecutar un clúster local de kind..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/agent-substrate/substrate/blob/20778a6dbb01f13024642851bb592bf67c9fec05/docs/get-started/quickstart.md
-- **Primera prueba propuesta (no ejecutada):** Despliega el contador oficial sin cuentas de nube ni secretos reales y haz dos consultas mediante su proxy local. Éxito: El contador aumenta y responde de nuevo tras reanudar la tarea, con el estado de prueba conservado.
-- **Riesgos y avisos:** La instalación crea recursos del clúster, controladores y almacenamiento de instantáneas. Usa un clúster de prueba sin credenciales reales ni cargas de….
+- **Repo:** https://github.com/google-gemini/computer-use-preview · Apache-2.0 · nivel 2 · 42/100
+- **Qué es:** Computer Use Preview, implementación de referencia de Google para que Gemini controle un navegador. Licencia Apache-2.0. Tiene ~3.3k estrellas y no cambia desde julio de 2026.
+- **Cuándo elegirlo:** Casos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios.
+- **Requisitos:** nivel 2: preparación media, requiere clave de API; Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba; hardware prerequisites; API de IA: sí; Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/google-gemini/computer-use-preview/blob/main/README.md
 
-### Kiri (`kiri`)
+  ```bash
+  git clone https://github.com/google-gemini/computer-use-preview.git
+  cd computer-use-preview
 
-- **Repo:** https://github.com/libracoder/kiri · Apache-2.0 · nivel 2 · —/100
-- **Qué es:** Un motor con interfaz para contenedores de desarrollo en un equipo personal.
-- **Cuándo elegirlo:** Casos: Arrancar un contenedor de demostración sin montar carpetas personales.; Comprobar que un proyecto de ejemplo usa el contexto de Kiri en lugar del de Docker habitual.
-- **Requisitos:** nivel 2: preparación media; Rust, Cargo.toml; hardware prerequisites; API de IA: no; En Windows requiere WSL 2; en macOS, macOS 14 o posterior según el README; en Linux, la distribución indicada por el proyecto..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/libracoder/kiri/releases/tag/v0.2.2
-- **Primera prueba propuesta (no ejecutada):** En un equipo o entorno de prueba, ejecuta un contenedor de imagen conocida, sin montar archivos del anfitrión ni activar túneles. Éxito: La salida del contenedor es visible y el contexto seleccionado sigue siendo el de Kiri.
-- **Riesgos y avisos:** Los siete avisos publicados señalan v0.2.2 como corregida. El motor tiene permisos sobre red y volúmenes; también puede crear una CA para los dominios locales.
-
-### Screen Relay (`screen-relay`)
-
-- **Repo:** https://github.com/vercel-labs/screen-relay · Apache-2.0 · nivel 3 · —/100
-- **Qué es:** Una herramienta para transmitir y controlar pantallas de trabajo propias, pensada también para escritorios de prueba.
-- **Cuándo elegirlo:** Casos: Mirar la interfaz de una aplicación de prueba en un escritorio vacío.; Capturar una ventana de demostración en un entorno separado.
-- **Requisitos:** nivel 3: preparación pesada; C++, Dockerfile, Makefile, package.json; hardware prerequisites; API de IA: no; Docker en una máquina de prueba; Node.js 22 o posterior si eliges la CLI npm en vez de la ruta de contenedor..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/vercel-labs/screen-relay/blob/47719f164a7b5230369c8219579da3d1d3d9733e/docs/content/docs/docker.mdx
-- **Primera prueba propuesta (no ejecutada):** Abre el visor local con un escritorio vacío. No montes el directorio personal ni conectes cuentas reales. Éxito: El visor muestra el escritorio de prueba en el navegador y deja de estar disponible al cerrar el entorno.
-- **Riesgos y avisos:** El visor puede ver pantalla y enviar teclado y ratón. La configuración del tag escucha en loopback por defecto; un bind distinto genera un token.
+  python3 -m venv .venv
+  source .venv/bin/activate
+  pip install -r requirements.txt
+  ```
+- **Primera prueba propuesta (no ejecutada):** Usa una página de prueba y solicita localizar un elemento sin cuentas personales ni acciones reales Éxito: Puedes comparar la captura y la acción propuesta
+- **Combina con:** `playwright` [32/bibliotecas], `sandbox`, `e2b`
+- **Alternativas:** `browser-use`, `skyvern`
+- **Riesgos y avisos:** Alternativas (elige una): browser-use, skyvern. Es una referencia, no un producto. Es una implementación de referencia y no un servidor genérico que se instala automáticamente en Claude Code, Codex o Antigravity.
 
 ### FreeDomain (`freedomain`)
 
@@ -246,9 +246,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `freedomain`, `supabase` [22/infraestructura], `coolify` [22/infraestructura], `masterdnsvpn` [22/redes]
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. Es un directorio de servicios as-a-Service, no software autoalojado ni una garantía permanente de gratuidad.
 
+### Pangolin Community Edition (`pangolin`)
+
+- **Repo:** https://github.com/fosrl/pangolin · NOASSERTION · nivel 3 · 72/100
+- **Qué es:** Una plataforma para dar acceso identificado a aplicaciones y servicios propios.
+- **Cuándo elegirlo:** Casos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.
+- **Requisitos:** nivel 3: preparación pesada; TypeScript, Dockerfile, Makefile, compose.yaml, package.json; hardware prerequisites; API de IA: no; Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.pangolin.net/self-host/quick-install
+- **Primera prueba propuesta (no ejecutada):** Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso. Éxito: La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión.
+
 ### Headscale (`headscale`)
 
-- **Repo:** https://github.com/juanfont/headscale · BSD-3-Clause · nivel 2 · 69/100 · recomendado en «Redes privadas tipo mesh (WireGuard)»
+- **Repo:** https://github.com/juanfont/headscale · BSD-3-Clause · nivel 2 · 67/100 · recomendado en «Redes privadas tipo mesh (WireGuard)»
 - **Qué es:** Servidor de control de código abierto (BSD-3-Clause) mantenido por la comunidad (Juan Font, Kristoffer Dalby y otros). Maduro; alcance deliberadamente acotado a una sola tailnet para uso personal o pequeñas organizaciones.
 - **Cuándo elegirlo:** Casos: conectar tus equipos y servidores en una red privada sin depender del servicio de Tailscale; dar acceso remoto a una red doméstica o de laboratorio.
 - **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
@@ -258,16 +268,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `netbird`
 - **Riesgos y avisos:** Alternativas (elige una): netbird. No es un producto oficial de Tailscale.
 
-### frp (`frp`)
+### WireGuard Easy (`wg-easy`)
 
-- **Repo:** https://github.com/fatedier/frp · Apache-2.0 · nivel 2 · 64/100
-- **Qué es:** Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.
-- **Cuándo elegirlo:** Casos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS.
-- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/fatedier/frp/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README. Éxito: Puedes conectar por SSH al equipo local a través del puerto del VPS.
-- **Combina con:** `caddy` [22/infraestructura], `uptime-kuma` [22/infraestructura], `home-assistant` [15/domotica]
-- **Riesgos y avisos:** Alternativas cercanas: headscale o netbird si prefieres una red privada en lugar de publicar servicios.
+- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 2 · 64/100
+- **Qué es:** Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.
+- **Cuándo elegirlo:** Casos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.
+- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `sudo docker compose up / down` — fuente: https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md
+- **Primera prueba propuesta (no ejecutada):** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard. Éxito: El cliente se conecta y aparece activo en el panel.
+- **Combina con:** `grafana` [10/bi], `caddy` [22/infraestructura], `pi-hole` [15/privacidad], `portainer` [22/infraestructura]
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Para redes malladas con muchos nodos, headscale o netbird encajan mejor.
 
 ### NetBird (`netbird`)
 
@@ -281,20 +291,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `headscale`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): headscale.
 
-### WireGuard Easy (`wg-easy`)
+### frp (`frp`)
 
-- **Repo:** https://github.com/wg-easy/wg-easy · AGPL-3.0 · nivel 2 · 63/100
-- **Qué es:** Proyecto de código abierto (AGPL-3.0) de la comunidad wg-easy. Maduro y activo; no está afiliado a WireGuard.
-- **Cuándo elegirlo:** Casos: montar una VPN para acceder a tu red de casa desde el móvil; gestionar clientes de WireGuard sin editar archivos a mano.
-- **Requisitos:** nivel 2: preparación sencilla, varios servicios con Docker Compose; TypeScript, Dockerfile, docker-compose.yml, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `sudo docker compose up / down` — fuente: https://github.com/wg-easy/wg-easy/blob/master/docs/content/getting-started.md
-- **Primera prueba propuesta (no ejecutada):** Despliega wg-easy con Docker Compose según su documentación, crea un cliente y escanea el QR con la app de WireGuard. Éxito: El cliente se conecta y aparece activo en el panel.
-- **Combina con:** `grafana` [10/bi], `caddy` [22/infraestructura], `pi-hole` [15/privacidad], `portainer` [22/infraestructura]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Para redes malladas con muchos nodos, headscale o netbird encajan mejor.
+- **Repo:** https://github.com/fatedier/frp · Apache-2.0 · nivel 2 · 59/100
+- **Qué es:** Proxy inverso de código abierto (Apache-2.0) creado por fatedier. Muy popular y maduro; el README anuncia una arquitectura v2 en desarrollo.
+- **Cuándo elegirlo:** Casos: acceder por SSH a un equipo de casa detrás de NAT; publicar temporalmente un servicio web local usando tu propio VPS.
+- **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/fatedier/frp/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** En un VPS propio arranca frps y en tu equipo frpc con un proxy TCP para SSH, siguiendo el ejemplo del README. Éxito: Puedes conectar por SSH al equipo local a través del puerto del VPS.
+- **Combina con:** `caddy` [22/infraestructura], `uptime-kuma` [22/infraestructura], `home-assistant` [15/domotica]
+- **Riesgos y avisos:** Alternativas cercanas: headscale o netbird si prefieres una red privada en lugar de publicar servicios.
 
 ### MasterDnsVPN (`masterdnsvpn`)
 
-- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 55/100
+- **Repo:** https://github.com/masterking32/MasterDnsVPN · MIT · nivel 2 · 54/100
 - **Qué es:** MasterDnsVPN, proyecto de investigación en Go para transportar tráfico TCP mediante consultas y respuestas DNS, de @masterking32. Licencia MIT. Tiene ~7.3k estrellas y existe una versión legacy en Python.
 - **Cuándo elegirlo:** Casos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio.
 - **Requisitos:** nivel 2: preparación media; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio; hardware prerequisites; API de IA: no; Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio.
@@ -307,19 +317,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `freedomain` [22/recursos], `free-for-dev` [22/recursos], `casaos` [22/infraestructura]
 - **Riesgos y avisos:** Sin alternativas declaradas. Herramienta de doble uso con implicaciones legales según el país; no se probó. Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers.
 
-### Pangolin Community Edition (`pangolin`)
-
-- **Repo:** https://github.com/fosrl/pangolin · NOASSERTION · nivel 3 · —/100
-- **Qué es:** Una plataforma para dar acceso identificado a aplicaciones y servicios propios.
-- **Cuándo elegirlo:** Casos: Comprobar el acceso de una cuenta de prueba a una web ficticia.; Comparar qué ven dos cuentas con roles distintos.
-- **Requisitos:** nivel 3: preparación pesada; TypeScript, Dockerfile, Makefile, compose.yaml, package.json; hardware prerequisites; API de IA: no; Servidor Linux de prueba, Docker, configuración de DNS y TLS según la guía, y una cuenta inicial de administración..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.pangolin.net/self-host/quick-install
-- **Primera prueba propuesta (no ejecutada):** Configura un recurso web de ejemplo con autenticación; prueba una cuenta autorizada y otra sin acceso. Éxito: La cuenta autorizada abre la web de ejemplo y a la otra se le deniega el acceso.
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Los 15 avisos publicados del servidor indican correcciones hasta 1.27.0; el tag 1.27.1 desciende de esa versión.
-
 ### Tailcat (`tailcat`)
 
-- **Repo:** https://github.com/tailscale/tailcat · BSD-3-Clause · nivel 2 · —/100
+- **Repo:** https://github.com/tailscale/tailcat · BSD-3-Clause · nivel 2 · 51/100
 - **Qué es:** Una herramienta experimental de terminal para unir dos extremos bajo control de la misma persona.
 - **Cuándo elegirlo:** Casos: Enviar una línea de texto ficticio entre dos equipos propios.; Comprobar si un laboratorio de red local consigue una conexión directa o vía relé.
 - **Requisitos:** nivel 2: preparación media; Go, Makefile, go.mod; hardware prerequisites; API de IA: no; Dos equipos propios, una distribución compatible y conectividad entre los extremos o a través del relé..
@@ -339,6 +339,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `appwrite`
 - **Riesgos y avisos:** Sin alternativas declaradas. El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas.
 
+### Uptime Kuma (`uptime-kuma`)
+
+- **Repo:** https://github.com/louislam/uptime-kuma · MIT · nivel 1 · 76/100
+- **Qué es:** Herramienta de monitorización de código abierto (MIT) creada por Louis Lam. Uno de los proyectos autoalojados más populares; activa.
+- **Cuándo elegirlo:** Casos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios.
+- **Requisitos:** nivel 1: preparación sencilla; JavaScript, compose.yaml, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2` — fuente: https://github.com/louislam/uptime-kuma/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación. Éxito: El panel muestra el monitor en verde y el historial de tiempos de respuesta.
+- **Combina con:** `grafana` [10/bi], `coolify`, `caddy`
+- **Riesgos y avisos:** No sustituye a una monitorización completa de métricas y registros.
+
 ### coolify (`coolify`)
 
 - **Repo:** https://github.com/coollabsio/coolify · Apache-2.0 · nivel 2 · 74/100 · recomendado en «Paneles de auto-hospedaje y PaaS propios»
@@ -353,7 +364,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Appwrite (`appwrite`)
 
-- **Repo:** https://github.com/appwrite/appwrite · BSD-3-Clause · nivel 2 · 73/100 · alternativa en «Backends como servicio auto-hospedados»
+- **Repo:** https://github.com/appwrite/appwrite · BSD-3-Clause · nivel 2 · 72/100 · alternativa en «Backends como servicio auto-hospedados»
 - **Qué es:** Plataforma de backend de código abierto (BSD-3-Clause) de Appwrite, que ofrece también una nube gestionada. Muy popular y activa.
 - **Cuándo elegirlo:** Casos: dar backend completo a una app web o móvil sin escribir servidor; dejar que un agente de código opere un proyecto de backend vía MCP.
 - **Requisitos:** nivel 2: preparación media; TypeScript, Cargo.toml, Dockerfile, composer.json, docker-compose.yml, package.json; API de IA: no.
@@ -367,16 +378,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `supabase`
 - **Riesgos y avisos:** Alternativas (elige una): supabase.
 
-### Uptime Kuma (`uptime-kuma`)
+### Portainer CE (`portainer`)
 
-- **Repo:** https://github.com/louislam/uptime-kuma · MIT · nivel 1 · 72/100
-- **Qué es:** Herramienta de monitorización de código abierto (MIT) creada por Louis Lam. Uno de los proyectos autoalojados más populares; activa.
-- **Cuándo elegirlo:** Casos: recibir un aviso en Telegram cuando tu web o servidor cae; publicar una página de estado de tus servicios.
-- **Requisitos:** nivel 1: preparación sencilla; JavaScript, compose.yaml, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2` — fuente: https://github.com/louislam/uptime-kuma/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Arranca Uptime Kuma con el `docker run` del README, añade un monitor HTTP para una web propia y configura una notificación. Éxito: El panel muestra el monitor en verde y el historial de tiempos de respuesta.
-- **Combina con:** `grafana` [10/bi], `coolify`, `caddy`
-- **Riesgos y avisos:** No sustituye a una monitorización completa de métricas y registros.
+- **Repo:** https://github.com/portainer/portainer · Zlib · nivel 1 · 71/100
+- **Qué es:** Gestor de contenedores de código abierto (zlib) de Portainer.io. La Community Edition es gratuita y la Business Edition añade funciones de pago sobre la misma base. Muy maduro.
+- **Cuándo elegirlo:** Casos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, go.mod, package.json; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/portainer/portainer/blob/release/2.45/README.md
+- **Primera prueba propuesta (no ejecutada):** Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales. Éxito: El panel lista los contenedores con su estado y registros.
+- **Combina con:** `traefik`, `uptime-kuma`, `wg-easy` [22/redes]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.
 
 ### Caddy (`caddy`)
 
@@ -414,16 +425,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `coolify`, `casaos`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): coolify. Instalar con `curl | bash` ejecuta un script remoto con privilegios: revísalo antes.
 
-### Portainer CE (`portainer`)
+### LibreTranslate (`libretranslate`)
 
-- **Repo:** https://github.com/portainer/portainer · Zlib · nivel 1 · 66/100
-- **Qué es:** Gestor de contenedores de código abierto (zlib) de Portainer.io. La Community Edition es gratuita y la Business Edition añade funciones de pago sobre la misma base. Muy maduro.
-- **Cuándo elegirlo:** Casos: administrar los contenedores de tu homelab desde el navegador; desplegar stacks de Docker Compose con interfaz gráfica.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, go.mod, package.json; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/portainer/portainer/blob/release/2.45/README.md
-- **Primera prueba propuesta (no ejecutada):** Despliega Portainer CE con Docker según su guía, crea el usuario administrador y revisa los contenedores locales. Éxito: El panel lista los contenedores con su estado y registros.
-- **Combina con:** `traefik`, `uptime-kuma`, `wg-easy` [22/redes]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Dar a Portainer acceso al socket de Docker equivale a acceso de administrador al host.
+- **Repo:** https://github.com/LibreTranslate/LibreTranslate · AGPL-3.0 · nivel 3 · 57/100
+- **Qué es:** Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.
+- **Cuándo elegirlo:** Casos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo.
+- **Requisitos:** nivel 3: preparación media, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware prerequisites; API de IA: no; Entorno Python compatible con la versión elegida o Docker.; Conexión para descargar paquetes y modelos de idiomas; espacio para los idiomas seleccionados..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install libretranslate` — fuente: https://docs.libretranslate.com/guides/installation/
+- **Primera prueba propuesta (no ejecutada):** Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning». Éxito: La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia.
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.
 
 ### CasaOS (`casaos`)
 
@@ -436,16 +446,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nextcloud-server` [15/archivos], `adguardhome` [15/privacidad], `activepieces` [1/motores], `masterdnsvpn` [22/redes]
 - **Alternativas:** `coolify`, `dokploy`
 - **Riesgos y avisos:** Alternativa (elige una): coolify. Ritmo de releases lento. La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes.
-
-### LibreTranslate (`libretranslate`)
-
-- **Repo:** https://github.com/LibreTranslate/LibreTranslate · AGPL-3.0 · nivel 3 · —/100
-- **Qué es:** Un servicio de traducción que ofrece una interfaz web y una API HTTP para aplicaciones.
-- **Cuándo elegirlo:** Casos: Traducir un borrador de una ficha entre español e inglés sin enviarla a un proveedor de LLM.; Conectar una aplicación interna a una instancia de traducción administrada por tu equipo.
-- **Requisitos:** nivel 3: preparación media, necesita GPU; Python, docker-compose.yml, pyproject.toml; hardware prerequisites; API de IA: no; Entorno Python compatible con la versión elegida o Docker.; Conexión para descargar paquetes y modelos de idiomas; espacio para los idiomas seleccionados..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install libretranslate` — fuente: https://docs.libretranslate.com/guides/installation/
-- **Primera prueba propuesta (no ejecutada):** Abre la interfaz de una instancia local, elige inglés a español y escribe «Good morning». Éxito: La interfaz muestra la traducción al español; el navegador sigue conectado a tu propia instancia.
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. En un despliegue de red, configurar autenticación y límites; el endpoint MCP de ejemplo envía texto a la instancia alojada.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

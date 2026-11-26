@@ -1,0 +1,29 @@
+name: Integridad del catálogo
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - run: uv run --frozen playwright install --with-deps chromium
+      - name: Regenerar las publicaciones
+        run: |
+          uv run --frozen repo-intelligence guide build
+          uv run --frozen repo-intelligence menu export
+          uv run --frozen repo-intelligence web build
+      - name: Comprobar las salidas versionadas
+        run: |
+          git diff --ignore-space-at-eol --exit-code --stat
+          test -z "$(git ls-files --others --exclude-standard)"
+      - run: uv run --frozen pytest -q
+      - run: uv run --frozen python scripts/verificar_fichas.py

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import shutil
 from pathlib import Path
@@ -93,9 +94,11 @@ def test_generated_markdown_has_no_broken_relative_links(built):
 
 def test_ficha_file_names_match_slugs(built, catalog):
     root, _ = built
-    for repo in catalog.repos[:50]:
+    for repo in catalog.repos:
         if not repo.get("alias_of"):
             assert (root / "human" / "fichas" / f"{slug(repo['id'])}.md").exists()
+            if repo.get("doc"):
+                assert (root / repo["doc"].split("#")[0]).exists()
 
 
 def test_short_install_prefers_real_commands():
@@ -113,3 +116,25 @@ def test_recommend_works_from_curated_index_without_local_scan(tmp_path):
     ids = [item["id"] for item in result["recommended_repos"]]
     assert ids, "sin escaneo local también debe recomendar desde el índice curado"
     assert "evolution-api" in ids or "whatsapp-web-js" in ids
+
+
+@pytest.mark.parametrize("bad_input", ["absent_compact", "absent_detail", "empty_compact", "wrong_ids", "repeated_id"])
+def test_invalid_indices_preserve_existing_outputs(tmp_path, bad_input):
+    compact = {"categories": [{"num": 1}], "repos": [{"id": "example", "cat": 1}]}
+    detail = {"repos": {"example": {"name": "Example"}}}
+    if bad_input == "wrong_ids":
+        detail["repos"]["extra"] = {"name": "Extra"}
+    if bad_input == "empty_compact":
+        compact["repos"] = []
+    if bad_input == "repeated_id":
+        compact["repos"] *= 2
+    if bad_input != "absent_compact":
+        (tmp_path / "INDICE_IA.json").write_text(json.dumps(compact), encoding="utf8")
+    if bad_input != "absent_detail":
+        (tmp_path / "INDICE_IA.detalle.json").write_text(json.dumps(detail), encoding="utf8")
+    orphan = tmp_path / "human/fichas/preexistente.md"
+    orphan.parent.mkdir(parents=True)
+    orphan.write_text("conservar", encoding="utf8")
+    with pytest.raises((ValueError, FileNotFoundError)):
+        render_all(tmp_path)
+    assert orphan.read_text(encoding="utf8") == "conservar"

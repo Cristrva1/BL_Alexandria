@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
+**Puntuación de calidad** 58/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios.

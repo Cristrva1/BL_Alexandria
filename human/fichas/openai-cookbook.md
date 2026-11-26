@@ -49,7 +49,7 @@ Grupo **Cookbooks y ejemplos de apps con LLM**: OpenAI Cookbook ocupa la posici�
 |---:|---|---:|---|
 | 1 | [Awesome LLM Apps](awesome-llm-apps.md) ⭐ recomendado | 75 | Si buscas esto: colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
 | 2 | **OpenAI Cookbook** (esta ficha) | 58 | Si buscas esto: ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. |
-| 3 | [Claude Cookbooks](claude-cookbooks.md) | 56 | Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
+| 3 | [Claude Cookbooks](claude-cookbooks.md) | 53 | Si buscas esto: recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,8 +48,8 @@ Grupo **Evaluación y pruebas de LLM**: DeepEval ocupa la posición 2 de 3 (alte
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [promptfoo](promptfoo.md) ⭐ recomendado | 79 | Si buscas esto: cLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
-| 2 | **DeepEval** (esta ficha) | 63 | Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. |
-| 3 | [Ragas](ragas.md) | 51 | Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
+| 2 | **DeepEval** (esta ficha) | 64 | Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. |
+| 3 | [Ragas](ragas.md) | 52 | Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. |
 
 ## Acceso, coste y equipo
 

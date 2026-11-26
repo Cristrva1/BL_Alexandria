@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-25 · 970 repos curados · Documento 100% para IA.
+> Revisión del índice: 2026-11-25 · 968 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **970 repos** de IA y
+proyecto concreto. Tienes un menú curado de **968 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -210,11 +210,6 @@ Empieza por medición; SQL, dashboards y preguntas con IA son ampliaciones con c
 ## ÍNDICE COMPACTO (1 línea por repo)
 
 Formato: `id` [role|exec|setup|inst] — one — tags:… — prov:… — tools:… — alt:…
-
-### Sin categoría
-
-- `guia` [D|loc|E|?] — Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo. — tags: learning
-- `tools` [D|loc|E|?] — Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar. — tags: skills
 
 ### 1. Automatizar procesos y crear herramientas internas (19)
 Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.md`
@@ -936,13 +931,13 @@ Detalle: `REPO_MENU_cats/20-programar-con-agentes-de-c-digo.md`
 - `codex` [R|cld|E|+] — Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. — tags: coding-agent,agents,rust — prov: openai,mcp — alt: claude-code,gemini-cli,opencode,antigravity-cli
 - `deepseek-harness` [A|hyb|M|+] — Harness de agentes de DeepSeek en vista previa, con arquitectura de plugins, Web UI local y proveedores de mod — tags: agents,coding,plugins,typescript — prov: deepseek,anthropic,openai,local
 - `gemini-cli` [R|cld|E|+] — CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigra — tags: coding-agent,agents,typescript — prov: google,mcp — alt: claude-code,codex,opencode,antigravity-cli,qwen-code
-- `goose` [R|hyb|E|+] — Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. — tags: coding-agent,agents,mcp,rust — prov: openai,anthropic,google,local — alt: opencode,claude-code,open-interpreter
+- `goose` [R|hyb|E|+] — Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. — tags: coding-agent,agents,mcp,rust — prov: openai,anthropic,google,local — alt: claude-code,open-interpreter
 - `kilocode` [A|hyb|E|+] — Agente de código abierto para VS Code, JetBrains y la terminal, con más de 500 modelos, modos de trabajo y mar — tags: coding,agent,typescript,vscode — alt: cline
 - `mimo-code` [A|hyb|M|?] — Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria pers — tags: coding,ai,ai-agents,cli,mimo,mimo-code,typescript — alt: opencode
 - `mini-swe-agent` [A|hyb|E|+] — Agente de ingeniería de software mínimo (unas 100 líneas) del equipo de SWE-bench y SWE-agent: solo usa bash y — tags: coding,agent,python,research — alt: openhands
 - `open-interpreter` [R|loc|E|+] — Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. — tags: coding-agent,local,rust — prov: openai,local — alt: goose
 - `open-swe` [R|cld|M|+] — Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisab — tags: coding-agent,agents,python — prov: anthropic,openai — alt: openhands
-- `opencode` [R|hyb|E|+] — Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. — tags: coding-agent,agents,typescript — prov: openai,anthropic,google,local — alt: claude-code,codex,goose,gemini-cli,aider,mimo-code
+- `opencode` [R|hyb|E|+] — Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. — tags: coding-agent,agents,typescript — prov: openai,anthropic,google,local — alt: claude-code,codex,gemini-cli,aider,mimo-code
 - `opencode-manager` [A|hyb|M|+] — Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. — tags: coding,agent,typescript — alt: t3code
 - `opencursor` [A|hyb|M|+] — Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. — tags: coding,agent,ai,code,coder,cursor,extension,ide
 - `openhands` [P|hyb|M|+] — Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. — tags: agents,automation,typescript,docker — alt: open-swe,mini-swe-agent

@@ -46,9 +46,9 @@ Grupo **Motores 3D para la web**: Babylon.js ocupa la posición 2 de 3 (alternat
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [three.js](three-js.md) ⭐ recomendado | 69 | Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
+| 1 | [three.js](three-js.md) ⭐ recomendado | 70 | Si buscas esto: biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
 | 2 | **Babylon.js** (esta ficha) | 67 | Si buscas esto: motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. |
-| 3 | [PlayCanvas Engine](playcanvas.md) | 65 | Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
+| 3 | [PlayCanvas Engine](playcanvas.md) | 66 | Si buscas esto: motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. |
 
 ## Acceso, coste y equipo
 

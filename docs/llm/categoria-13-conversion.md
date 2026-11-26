@@ -19,8 +19,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `docling` | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON… | 2 Intermedio | 78 | MIT (OSI permisiva) | recomendado |
-| `markitdown` | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
 | `mineru` | Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos… | 2 Intermedio | 68 | Apache-2.0 con condiciones adicionales (source-available) | alternativa |
+| `markitdown` | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `xberg` | Motor de extracción de documentos en Rust: texto, tablas y metadatos de más de… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
 | `marker` | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `tika` | Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -44,17 +44,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `mineru`, `xberg`, `marker`, `tika`, `unstructured`, `olmocr`
 - **Riesgos y avisos:** Alternativas (elige una): marker, mineru, unstructured, olmocr. ragflow trae su propio analizador de documentos, por eso se retiró de las combinaciones. MCP es un paquete complementario y convierte localmente por defecto; configura explícitamente cualquier delegación a un servicio remoto.
 
-### markitdown (`markitdown`)
-
-- **Repo:** https://github.com/microsoft/markitdown · MIT · nivel 2 · 70/100
-- **Qué es:** Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.
-- **Cuándo elegirlo:** Casos: Preparar documentos Office para consulta; Crear una copia textual de un informe.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.10–3.14; entorno virtual; extras del formato elegido; hardware prerequisites; API de IA: opcional; Python 3.10–3.14; entorno virtual; extras del formato elegido.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install 'markitdown[all]'` — fuente: https://github.com/microsoft/markitdown/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas Éxito: El texto y el orden se pueden contrastar con el documento
-- **Combina con:** `claude-code` [20/terminal], `khoj` [8/workspaces], `pandoc`
-- **Riesgos y avisos:** Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original.
-
 ### MinerU (`mineru`)
 
 - **Repo:** https://github.com/opendatalab/MinerU · Apache-2.0 con condiciones adicionales · nivel 2 · 68/100 · alternativa en «Conversión de documentos a Markdown/JSON para IA»
@@ -66,6 +55,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `lightrag` [6/rag], `vllm` [23/serving], `claude-code` [20/terminal]
 - **Alternativas:** `docling`, `xberg`, `marker`, `tika`, `unstructured`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): docling, marker. Revisa las condiciones adicionales de su licencia antes de uso comercial. Se retiró ragflow por no estar documentado. La skill ayuda al agente a operar la herramienta; no es un modelo incluido en la suscripción del cliente; la telemetría tiene configuración propia.
+
+### markitdown (`markitdown`)
+
+- **Repo:** https://github.com/microsoft/markitdown · MIT · nivel 2 · 67/100
+- **Qué es:** Utilidad Python ligera de Microsoft (MIT) para convertir archivos a Markdown destinado a LLM y análisis de texto. Activa (v0.1.9); el repositorio incluye también un servidor MCP, un complemento de OCR y un complemento de ejemplo.
+- **Cuándo elegirlo:** Casos: Preparar documentos Office para consulta; Crear una copia textual de un informe.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.10–3.14; entorno virtual; extras del formato elegido; hardware prerequisites; API de IA: opcional; Python 3.10–3.14; entorno virtual; extras del formato elegido.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install 'markitdown[all]'` — fuente: https://github.com/microsoft/markitdown/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas Éxito: El texto y el orden se pueden contrastar con el documento
+- **Combina con:** `claude-code` [20/terminal], `khoj` [8/workspaces], `pandoc`
+- **Riesgos y avisos:** Se retiraron las combinaciones antiguas con ppt-master y open-notebook por falta de relación documentada. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original.
 
 ### Xberg (antes Kreuzberg) (`xberg`)
 

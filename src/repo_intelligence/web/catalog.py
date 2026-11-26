@@ -6,7 +6,8 @@ from repo_intelligence.analysis.combina_policy import combo_map, used_by
 
 import re
 from pathlib import Path
-from repo_intelligence.core.taxonomy import attach_areas, build_areas
+from repo_intelligence.core.catalog import is_public_repo, read_indices
+from repo_intelligence.core.taxonomy import attach_areas, build_areas, goal_memberships
 from repo_intelligence.core.access import access_facts, access_routes, API_LABELS, CLIENT_LABELS, LOCAL_LABELS, COST_LABELS, HARDWARE_LABELS, ROUTE_LABELS
 from repo_intelligence.core.reading import GUIDES
 from repo_intelligence.core.handbook import load_handbook
@@ -163,27 +164,18 @@ def _add_pair(labs: list[dict[str, str]], seen: set[tuple[str, str]], left: str 
     labs.append({"a": key[0], "b": key[1]})
 
 
-def _load_json(path: Path) -> dict:
-    import json
-
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
 def build_catalog(project_root: Path) -> dict:
     """Merge the compact index, the detail index and the teaching layer."""
     root = Path(project_root)
-    compact = _load_json(root / "INDICE_IA.json")
-    detalle = _load_json(root / "INDICE_IA.detalle.json")
-    raw_details = detalle.get("repos") or {}
-    if isinstance(raw_details, list):
-        details = {item.get("id") or item.get("name"): item for item in raw_details}
-    else:
-        details = raw_details
+    compact, detalle = read_indices(root)
+    details = detalle["repos"]
 
+    memberships = goal_memberships(compact)
+    internal = {r["id"] for r in compact["repos"] if not is_public_repo(r)}
     draft: list[dict] = []
     for source in compact.get("repos") or []:
         repo_id = source.get("id")
-        if not repo_id or source.get("alias_of") or int(source.get("cat") or 0) == 0:
+        if not repo_id or not is_public_repo(source):
             continue
         detail = details.get(repo_id) or {}
         alt = source.get("alt") or detail.get("alternatives") or []
@@ -201,7 +193,7 @@ def build_catalog(project_root: Path) -> dict:
             "desc": detail.get("desc") or "",
             "choose_if": detail.get("choose_if") or "",
             "avoid_if": detail.get("avoid_if") or "",
-            "combines_with": list(detail.get("combines_with") or []),
+            "combines_with": [rid for rid in detail.get("combines_with") or [] if rid not in internal],
             "alt": list(alt),
             "stack": detail.get("stack") or "",
             "repo_url": detail.get("repo") or "",
@@ -219,7 +211,7 @@ def build_catalog(project_root: Path) -> dict:
             "editorial_review": detail.get("editorial_review") or {},
             "access": access_facts(detail),
             "routes": access_routes(detail),
-            "goals": source.get("goals") or [],
+            "goals": memberships[repo_id],
             "added_at": source.get("added_at") or "",
             "status": source.get("status") or "",
             "pick": bool(source.get("pick")),
@@ -228,7 +220,7 @@ def build_catalog(project_root: Path) -> dict:
             "homepage": detail.get("homepage") or "",
         }
         # 4-section description: only emitted when curated, to keep catalog.json small.
-        combos = [dict(item) for item in detail.get("combina_con") or [] if isinstance(item, dict) and item.get("id")]
+        combos = [dict(item) for item in detail.get("combina_con") or [] if isinstance(item, dict) and item.get("id") and item["id"] not in internal]
         if combos:
             merged["combina_con"] = combos
         if source.get("nivel"):

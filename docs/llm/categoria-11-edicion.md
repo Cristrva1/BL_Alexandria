@@ -18,26 +18,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `rembg` | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
 | `upscayl` | Aplicación de escritorio libre para ampliar y mejorar imágenes con IA… | 1 Básico | 70 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `real-esrgan` | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 59 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `rembg` | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
+| `real-esrgan` | Modelo y herramientas de superresolución para ampliar y mejorar visualmente… | 2 Intermedio | 56 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `chainner` | Interfaz por nodos para encadenar procesamiento de imágenes con IA y clásico… | 2 Intermedio | 55 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `codeformer` | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 43 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
+| `codeformer` | Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas. | 2 Intermedio | 40 | S-Lab License 1.0 (no comercial) (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
-
-### rembg (`rembg`)
-
-- **Repo:** https://github.com/danielgatis/rembg · MIT · nivel 2 · 71/100
-- **Qué es:** rembg, herramienta para quitar el fondo de imágenes en local, de @danielgatis. Licencia MIT. Es madura (~26k estrellas, v2.0.87) y la patrocina PhotoRoom.
-- **Cuándo elegirlo:** Casos: Preparar una foto de producto; Crear un recorte para una composición.
-- **Requisitos:** nivel 2: pip o CLI; GPU opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo; hardware prerequisites; API de IA: opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install "rembg[cpu,cli]" # for library + cli` — fuente: https://github.com/danielgatis/rembg/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Quita el fondo de una imagen simple y guarda un PNG con transparencia Éxito: Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
-- **Combina con:** `comfyui` [11/interfaces], `real-esrgan`, `gradio` [25/apps], `codeformer`
-- **Riesgos y avisos:** Sin alternativas declaradas. Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local.
 
 ### Upscayl (`upscayl`)
 
@@ -50,9 +39,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `real-esrgan`, `gallery-dl` [4/social], `codeformer`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. La IA inventa detalles plausibles: no uses el resultado como evidencia documental.
 
+### rembg (`rembg`)
+
+- **Repo:** https://github.com/danielgatis/rembg · MIT · nivel 2 · 68/100
+- **Qué es:** rembg, herramienta para quitar el fondo de imágenes en local, de @danielgatis. Licencia MIT. Es madura (~26k estrellas, v2.0.87) y la patrocina PhotoRoom.
+- **Cuándo elegirlo:** Casos: Preparar una foto de producto; Crear un recorte para una composición.
+- **Requisitos:** nivel 2: pip o CLI; GPU opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo; hardware prerequisites; API de IA: opcional; Python compatible; CPU o backend GPU elegido; imagen propia; descarga inicial de modelo.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install "rembg[cpu,cli]" # for library + cli` — fuente: https://github.com/danielgatis/rembg/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Quita el fondo de una imagen simple y guarda un PNG con transparencia Éxito: Puedes abrir el PNG y revisar bordes sobre fondos claro y oscuro
+- **Combina con:** `comfyui` [11/interfaces], `real-esrgan`, `gradio` [25/apps], `codeformer`
+- **Riesgos y avisos:** Sin alternativas declaradas. Elige CPU o GPU según tu entorno y comprueba el modelo activo; ejecutar rembg no implica que hayas elegido siempre una ruta local.
+
 ### Real-ESRGAN (`real-esrgan`)
 
-- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 59/100
+- **Repo:** https://github.com/xinntao/Real-ESRGAN · BSD-3-Clause · nivel 2 · 56/100
 - **Qué es:** Real-ESRGAN, modelo y herramientas de superresolución de imágenes y vídeo, de @xinntao (Tencent ARC). Licencia BSD-3-Clause. Es muy popular (~38k estrellas, v0.3.0), pero su último cambio es de agosto de 2024.
 - **Cuándo elegirlo:** Casos: Preparar una ilustración para mayor tamaño; Mejorar visualmente una copia de material de baja resolución.
 - **Requisitos:** nivel 2: preparación media; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba; hardware prerequisites; API de IA: no; Python y PyTorch o binario ncnn compatible; modelo; imagen de prueba.
@@ -61,7 +61,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   git clone https://github.com/xinntao/Real-ESRGAN.git
       cd Real-ESRGAN
-  
+
   # Install basicsr - https://github.com/xinntao/BasicSR
       # We use BasicSR for both training and inference
       pip install basicsr
@@ -88,7 +88,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CodeFormer (`codeformer`)
 
-- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 43/100
+- **Repo:** https://github.com/sczhou/CodeFormer · S-Lab License 1.0 (no comercial) · nivel 2 · 40/100
 - **Qué es:** CodeFormer, modelo de restauración ciega de rostros (NeurIPS 2022) de S-Lab, Nanyang Technological University. Licencia NTU S-Lab License 1.0, solo uso no comercial (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba; hardware prerequisites; API de IA: no; Python y entorno indicado; PyTorch; pesos; imagen propia de prueba.

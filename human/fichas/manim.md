@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,7 +47,7 @@ Grupo **Animaciones matemáticas (Manim)**: Manim (ManimGL) ocupa la posición 2
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [manim](manim-community.md) ⭐ recomendado | 71 | Si buscas esto: motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. |
-| 2 | **Manim (ManimGL)** (esta ficha) | 57 | Si buscas esto: motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. |
+| 2 | **Manim (ManimGL)** (esta ficha) | 54 | Si buscas esto: motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. |
 
 ## Acceso, coste y equipo
 

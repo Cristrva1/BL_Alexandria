@@ -12,7 +12,7 @@
 
 **Nivel:** 4 Experto — preparación difícil; necesita GPU
 
-**Puntuación de calidad** 66/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -44,8 +44,8 @@ Grupo **WAF compatibles con SecLang y el OWASP CRS**: ModSecurity ocupa la posic
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **ModSecurity** (esta ficha) ⭐ recomendado | 66 | Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores. |
-| 2 | [OWASP Coraza](coraza.md) | 62 | Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido. |
+| 1 | **ModSecurity** (esta ficha) ⭐ recomendado | 70 | Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores. |
+| 2 | [OWASP Coraza](coraza.md) | 59 | Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido. |
 
 ## Acceso, coste y equipo
 

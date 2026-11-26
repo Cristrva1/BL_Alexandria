@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 52/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/mozilla-ai/llamafile/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -48,11 +48,11 @@ Grupo **Motores para correr LLM en local**: llamafile ocupa la posición 4 de 5 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Ollama](ollama.md) ⭐ recomendado | 84 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
+| 1 | [Ollama](ollama.md) ⭐ recomendado | 85 | Si quieres la forma más sencilla de descargar y servir modelos locales con API compatible. |
 | 2 | [llama.cpp](llama-cpp.md) | 78 | Si necesitas el motor base con máximo control de cuantización, CPU/GPU y rendimiento. |
 | 3 | [LocalAI](localai.md) | 72 | Si quieres un servidor compatible con OpenAI para texto, imagen y voz en un contenedor. |
-| 4 | **llamafile** (esta ficha) | 52 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
-| 5 | [KoboldCpp](koboldcpp.md) | 46 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
+| 4 | **llamafile** (esta ficha) | 53 | Si quieres distribuir un modelo como un solo ejecutable que funciona en cualquier sistema. |
+| 5 | [KoboldCpp](koboldcpp.md) | 47 | Si quieres un ejecutable con interfaz para escritura creativa y rol sobre modelos GGUF. |
 
 ## Acceso, coste y equipo
 

@@ -20,34 +20,34 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---|---:|---|---|
 | `prompts-chat` | prompts | La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts)… | 1 Básico | 69 | MIT (código) + CC0-1.0 (prompts) (OSI permisiva) | recomendado |
 | `fabric` | prompts | CLI con cientos de patrones de prompts para resumir, extraer y transformar… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `system-prompts-and-models-of-ai-tools` | prompts | Colección de prompts y configuraciones atribuidos a herramientas de IA para… | 1 Básico | 61 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `system-prompts-and-models-of-ai-tools` | prompts | Colección de prompts y configuraciones atribuidos a herramientas de IA para… | 1 Básico | 58 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `prompt-engineering-guide` | prompts | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y… | 1 Básico | 56 | MIT (OSI permisiva) | sin grupo |
-| `prompt-master` | prompts | Skill de Claude que ayuda a formular encargos para distintas herramientas de… | 1 Básico | 54 | MIT (OSI permisiva) | sin grupo |
-| `chatgpt-system-prompt` | prompts | Colección de prompts de GPT y recursos sobre instrucciones de sistema y… | 1 Básico | 52 | MIT (OSI permisiva) | sin grupo |
-| `chatgpt-dan` | prompts | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones… | 1 Básico | 33 | — (sin licencia detectada) | sin grupo |
+| `prompt-master` | prompts | Skill de Claude que ayuda a formular encargos para distintas herramientas de… | 1 Básico | 51 | MIT (OSI permisiva) | sin grupo |
+| `chatgpt-system-prompt` | prompts | Colección de prompts de GPT y recursos sobre instrucciones de sistema y… | 1 Básico | 50 | MIT (OSI permisiva) | sin grupo |
+| `chatgpt-dan` | prompts | Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones… | 1 Básico | 30 | — (sin licencia detectada) | sin grupo |
 | `awesome-llm-apps` | guias | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos… | 1 Básico | 75 | Apache-2.0 (OSI permisiva) | recomendado |
-| `generative-ai-for-beginners` | guias | Curso de Microsoft para aprender los conceptos y construir ejemplos de… | 1 Básico | 68 | MIT (OSI permisiva) | recomendado |
 | `loop-engineering` | guias | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
-| `ai-agents-for-beginners` | guias | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar… | 1 Básico | 65 | MIT (OSI permisiva) | alternativa |
+| `ai-agents-for-beginners` | guias | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar… | 1 Básico | 65 | MIT (OSI permisiva) | recomendado |
+| `generative-ai-for-beginners` | guias | Curso de Microsoft para aprender los conceptos y construir ejemplos de… | 1 Básico | 65 | MIT (OSI permisiva) | alternativa |
 | `500-ai-agents-projects` | guias | Colección de casos de uso y agentes autocontenidos, junto con enlaces a… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
-| `agents-course` | guias | Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a… | 1 Básico | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `agents-course` | guias | Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a… | 1 Básico | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ai-engineering-hub` | guias | Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
 | `openai-cookbook` | guias | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
-| `claude-cookbooks` | guias | Recetario oficial de Anthropic con notebooks de Python para la API de Claude… | 1 Básico | 56 | MIT (OSI permisiva) | alternativa |
-| `claude-quickstarts` | guias | Ejemplos oficiales de Anthropic para construir aplicaciones con Claude… | 1 Básico | 56 | MIT (OSI permisiva) | sin grupo |
-| `12-factor-agents` | guias | Guía de 12 principios de ingeniería para construir agentes con LLM fiables en… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `claude-cookbooks` | guias | Recetario oficial de Anthropic con notebooks de Python para la API de Claude… | 1 Básico | 53 | MIT (OSI permisiva) | alternativa |
+| `claude-quickstarts` | guias | Ejemplos oficiales de Anthropic para construir aplicaciones con Claude… | 1 Básico | 53 | MIT (OSI permisiva) | sin grupo |
+| `12-factor-agents` | guias | Guía de 12 principios de ingeniería para construir agentes con LLM fiables en… | 1 Básico | 50 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `agents-towards-production` | guias | Colección de 28 tutoriales con código para llevar agentes de IA a producción… | 1 Básico | 49 | Licencia propia no comercial (source-available) | sin grupo |
 | `awesome-harness-engineering` | guias | Directorio de herramientas y patrones para diseñar el entorno, memoria… | 1 Básico | 49 | CC0-1.0 (OSI permisiva) | sin grupo |
 | `context-engineering` | guias | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la… | 1 Básico | 44 | MIT (OSI permisiva) | sin grupo |
 | `llms-from-scratch` | aprender | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en… | 1 Básico | 71 | Apache-2.0 (OSI permisiva) | recomendado |
-| `ml-for-beginners` | aprender | Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning… | 1 Básico | 70 | MIT (OSI permisiva) | sin grupo |
-| `nanochat` | aprender | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
+| `ml-for-beginners` | aprender | Curso gratuito de Microsoft de 12 semanas y 26 lecciones de machine learning… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
+| `nanochat` | aprender | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
 | `annotated-dl-papers` | aprender | Más de 60 implementaciones sencillas en PyTorch de papers de deep learning con… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
 | `train-llm-from-scratch` | aprender | Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
-| `awesome-machine-learning` | aprender | Directorio de frameworks, bibliotecas y recursos de machine learning organizado… | 1 Básico | 58 | CC0-1.0 (texto incompleto en LICENSE) (OSI permisiva) | sin grupo |
+| `awesome-machine-learning` | aprender | Directorio de frameworks, bibliotecas y recursos de machine learning organizado… | 1 Básico | 55 | CC0-1.0 (texto incompleto en LICENSE) (OSI permisiva) | sin grupo |
 | `llm-course` | aprender | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender… | 1 Básico | 53 | Apache-2.0 (OSI permisiva) | alternativa |
-| `llm.c` | aprender | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin… | 3 Avanzado | 52 | MIT (OSI permisiva) | sin grupo |
-| `how-to-train-your-gpt` | aprender | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material… | 1 Básico | 48 | MIT (OSI permisiva) | sin grupo |
+| `llm.c` | aprender | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin… | 3 Avanzado | 49 | MIT (OSI permisiva) | sin grupo |
+| `how-to-train-your-gpt` | aprender | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material… | 1 Básico | 45 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -79,7 +79,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### system-prompts-and-models-of-ai-tools (`system-prompts-and-models-of-ai-tools`)
 
-- **Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools · GPL-3.0 · nivel 1 · 61/100
+- **Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools · GPL-3.0 · nivel 1 · 58/100
 - **Qué es:** Colección (GPL-3.0) de @x1xhlol con system prompts, definiciones de herramientas y modelos atribuidos a herramientas de IA comerciales como Cursor, Devin, v0, Lovable o Windsurf. Es muy popular (~145k estrellas).
 - **Cuándo elegirlo:** Casos: Estudiar instrucciones de herramientas de código; Preparar una plantilla propia de sistema.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; interés en diseño de instrucciones; hardware prerequisites; API de IA: no; Navegador; interés en diseño de instrucciones.
@@ -101,7 +101,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### prompt-master (`prompt-master`)
 
-- **Repo:** https://github.com/nidhinjs/prompt-master · MIT · nivel 1 · 54/100
+- **Repo:** https://github.com/nidhinjs/prompt-master · MIT · nivel 1 · 51/100
 - **Qué es:** Skill para Claude (MIT) de nidhinjs que redacta prompts optimizados para otras herramientas de IA. Es un proyecto individual y reciente (último push en octubre de 2026), sin releases.
 - **Cuándo elegirlo:** Casos: Redactar un encargo de programación; Preparar un prompt de imagen con requisitos concretos.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude con skills o Claude Code; descripción de una tarea; hardware prerequisites; API de IA: no; Claude con skills o Claude Code; descripción de una tarea.
@@ -117,7 +117,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### chatgpt_system_prompt (`chatgpt-system-prompt`)
 
-- **Repo:** https://github.com/LouisShark/chatgpt_system_prompt · MIT · nivel 1 · 52/100
+- **Repo:** https://github.com/LouisShark/chatgpt_system_prompt · MIT · nivel 1 · 50/100
 - **Qué es:** Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026).
 - **Cuándo elegirlo:** Casos: Aprender estructura de instrucciones; Diseñar límites para un asistente propio.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; ejemplo propio de instrucciones; hardware prerequisites; API de IA: no; Navegador; ejemplo propio de instrucciones.
@@ -128,7 +128,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ChatGPT_DAN (`chatgpt-dan`)
 
-- **Repo:** https://github.com/0xk1h0/ChatGPT_DAN · — · nivel 1 · 33/100
+- **Repo:** https://github.com/0xk1h0/ChatGPT_DAN · — · nivel 1 · 30/100
 - **Qué es:** Archivo de prompts de 'jailbreak' (DAN y otros) para ChatGPT, mantenido por @0xk1h0. No tiene licencia declarada. Es contenido histórico: la última nota de funcionamiento del README es de julio de 2023 (DAN 12.0 con GPT-3.5), aunque el…
 - **Cuándo elegirlo:** Casos: Estudiar la historia de prompts de roleplay; Reconocer intentos de manipulación de instrucciones.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; criterio de lectura histórica; hardware prerequisites; API de IA: no; Navegador; criterio de lectura histórica.
@@ -149,18 +149,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `openai-cookbook`, `claude-cookbooks`
 - **Riesgos y avisos:** Alternativas (elige una): openai-cookbook, claude-cookbooks. Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación.
 
-### Generative AI for Beginners (`generative-ai-for-beginners`)
-
-- **Repo:** https://github.com/microsoft/generative-ai-for-beginners · MIT · nivel 1 · 68/100 · recomendado en «Cursos de Microsoft para principiantes»
-- **Qué es:** Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.
-- **Cuándo elegirlo:** Casos: Empezar a construir una app generativa; Comparar nube con Foundry Local.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección; hardware prerequisites; API de IA: opcional; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico Éxito: Puedes distinguir modelo, aplicación y proveedor y localizar las dependencias de ese ejemplo
-- **Combina con:** `ai-agents-for-beginners`, `mcp-for-beginners` [5/directorios], `openai-cookbook`
-- **Alternativas:** `ai-agents-for-beginners`, `llm-course`
-- **Riesgos y avisos:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependían de GitHub Models, retirado a finales de julio de 2026; usa Microsoft Foundry Models o…. No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local.
-
 ### Loop Engineering (`loop-engineering`)
 
 - **Repo:** https://github.com/cobusgreyling/loop-engineering · MIT · nivel 1 · 67/100
@@ -179,7 +167,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AI Agents for Beginners (`ai-agents-for-beginners`)
 
-- **Repo:** https://github.com/microsoft/ai-agents-for-beginners · MIT · nivel 1 · 65/100 · alternativa en «Cursos de Microsoft para principiantes»
+- **Repo:** https://github.com/microsoft/ai-agents-for-beginners · MIT · nivel 1 · 65/100 · recomendado en «Cursos de Microsoft para principiantes»
 - **Qué es:** Curso gratuito de Microsoft (MIT) para empezar a construir agentes de IA. Tiene unas 18 lecciones con texto, vídeo y código Python, y está traducido a más de 50 idiomas. Es activo y muy popular (~80k estrellas).
 - **Cuándo elegirlo:** Casos: Aprender patrones de agentes; Estudiar herramientas y memoria con ejemplos.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python y cuenta Azure para los ejercicios principales; hardware prerequisites; API de IA: opcional; Navegador; Python y cuenta Azure para los ejercicios principales.
@@ -188,6 +176,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `agent-framework` [3/ts], `generative-ai-for-beginners`, `mcp-for-beginners` [5/directorios]
 - **Alternativas:** `generative-ai-for-beginners`
 - **Riesgos y avisos:** Sin alternativas declaradas. Requiere cuenta de Azure para los ejemplos tal como están. El README actual usa Agent Framework y Foundry Agent Service V2; algunos ejemplos aceptan otros proveedores compatibles y no se presupone ejecución local.
+
+### Generative AI for Beginners (`generative-ai-for-beginners`)
+
+- **Repo:** https://github.com/microsoft/generative-ai-for-beginners · MIT · nivel 1 · 65/100 · alternativa en «Cursos de Microsoft para principiantes»
+- **Qué es:** Curso gratuito de Microsoft (MIT) para aprender a construir aplicaciones de IA generativa, ahora en su versión 3. Es muy popular (~124k estrellas), se mantiene activo y está traducido a más de 50 idiomas mediante Co-op Translator.
+- **Cuándo elegirlo:** Casos: Empezar a construir una app generativa; Comparar nube con Foundry Local.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección; hardware prerequisites; API de IA: opcional; Navegador; Python para los laboratorios; proveedor o Foundry Local según lección.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico Éxito: Puedes distinguir modelo, aplicación y proveedor y localizar las dependencias de ese ejemplo
+- **Combina con:** `ai-agents-for-beginners`, `mcp-for-beginners` [5/directorios], `openai-cookbook`
+- **Alternativas:** `ai-agents-for-beginners`, `llm-course`
+- **Riesgos y avisos:** Alternativas (elige una): llm-course. Aviso: algunas lecciones dependían de GitHub Models, retirado a finales de julio de 2026; usa Microsoft Foundry Models o…. No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local.
 
 ### 500-AI-Agents-Projects (`500-ai-agents-projects`)
 
@@ -202,7 +202,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Hugging Face Agents Course (`agents-course`)
 
-- **Repo:** https://github.com/huggingface/agents-course · Apache-2.0 · nivel 1 · 60/100
+- **Repo:** https://github.com/huggingface/agents-course · Apache-2.0 · nivel 1 · 58/100
 - **Qué es:** Curso de código abierto (Apache-2.0) de Hugging Face. Muy popular; contenido estable con unidades extra añadidas con el tiempo.
 - **Cuándo elegirlo:** Casos: aprender a construir agentes con distintos frameworks de forma guiada; obtener un certificado tras un proyecto evaluado automáticamente.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; MDX; API de IA: no.
@@ -236,7 +236,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Claude Cookbooks (`claude-cookbooks`)
 
-- **Repo:** https://github.com/anthropics/claude-cookbooks · MIT · nivel 1 · 56/100 · alternativa en «Cookbooks y ejemplos de apps con LLM»
+- **Repo:** https://github.com/anthropics/claude-cookbooks · MIT · nivel 1 · 53/100 · alternativa en «Cookbooks y ejemplos de apps con LLM»
 - **Qué es:** Recetario oficial de Anthropic (MIT) con notebooks y guías para construir con la API de Claude. Antes se llamaba anthropic-cookbook, nombre que aún aparece en muchos enlaces del README. Es activo (último push en noviembre de 2026).
 - **Cuándo elegirlo:** Casos: Clasificar tickets ficticios; Estudiar llamadas a herramientas.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; Python y clave Anthropic para ejecutar ejemplos; hardware prerequisites; API de IA: opcional; Navegador; Python y clave Anthropic para ejecutar ejemplos.
@@ -248,7 +248,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-quickstarts (`claude-quickstarts`)
 
-- **Repo:** https://github.com/anthropics/claude-quickstarts · MIT · nivel 1 · 56/100
+- **Repo:** https://github.com/anthropics/claude-quickstarts · MIT · nivel 1 · 53/100
 - **Qué es:** Colección oficial de Anthropic (MIT) de proyectos de inicio para construir aplicaciones con la API de Claude. Es activa (último push en noviembre de 2026) y se amplía con las novedades de la plataforma.
 - **Cuándo elegirlo:** Casos: Prototipar soporte con Claude; Estudiar una demo de uso de computadora.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python o TypeScript según proyecto; clave Anthropic; servicios del ejemplo; hardware prerequisites; API de IA: opcional; Python o TypeScript según proyecto; clave Anthropic; servicios del ejemplo.
@@ -259,7 +259,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### 12-Factor Agents (`12-factor-agents`)
 
-- **Repo:** https://github.com/humanlayer/12-factor-agents · Apache-2.0 · nivel 1 · 53/100
+- **Repo:** https://github.com/humanlayer/12-factor-agents · Apache-2.0 · nivel 1 · 50/100
 - **Qué es:** Guía de 12 principios para construir aplicaciones con LLM fiables, escrita por Dex (HumanLayer) a imagen de las '12 Factor Apps'. El código es Apache 2.0 y el contenido CC BY-SA 4.0 (GitHub lo marca NOASSERTION).
 - **Cuándo elegirlo:** Casos: Revisar un diseño antes de programar; Estudiar recuperación de errores en agentes.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; flujo de agente dibujado; hardware prerequisites; API de IA: no; Navegador; flujo de agente dibujado.
@@ -320,7 +320,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ML for Beginners (`ml-for-beginners`)
 
-- **Repo:** https://github.com/microsoft/ML-For-Beginners · MIT · nivel 1 · 70/100
+- **Repo:** https://github.com/microsoft/ML-For-Beginners · MIT · nivel 1 · 67/100
 - **Qué es:** Currículo educativo de código abierto (MIT) de Microsoft (serie «for Beginners»). Muy popular; mantenimiento continuo con traducciones automáticas.
 - **Cuándo elegirlo:** Casos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Jupyter Notebook, package.json; API de IA: no.
@@ -331,7 +331,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### nanochat (`nanochat`)
 
-- **Repo:** https://github.com/karpathy/nanochat · MIT · nivel 2 · 65/100
+- **Repo:** https://github.com/karpathy/nanochat · MIT · nivel 2 · 62/100
 - **Qué es:** Arnés experimental mínimo (MIT) de Andrej Karpathy para entrenar LLMs de principio a fin en un solo nodo de GPU. Es experimental pero muy seguido (~61k estrellas); último push en septiembre de 2026. Sucede conceptualmente a nanoGPT.
 - **Cuándo elegirlo:** Casos: Estudiar una cadena de entrenamiento a chat; Reproducir un experimento con presupuesto delimitado.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; uv; Python; CPU o GPU según ruta; presupuesto de cómputo; hardware prerequisites; API de IA: no; uv; Python; CPU o GPU según ruta; presupuesto de cómputo.
@@ -370,7 +370,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-machine-learning (`awesome-machine-learning`)
 
-- **Repo:** https://github.com/josephmisiti/awesome-machine-learning · CC0-1.0 (texto incompleto en LICENSE) · nivel 1 · 58/100
+- **Repo:** https://github.com/josephmisiti/awesome-machine-learning · CC0-1.0 (texto incompleto en LICENSE) · nivel 1 · 55/100
 - **Qué es:** Lista curada clásica de frameworks, bibliotecas y software de machine learning organizada por lenguaje, mantenida por Joseph Misiti e inspirada en awesome-php. GitHub marca su licencia como NOASSERTION.
 - **Cuándo elegirlo:** Casos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; lenguaje y problema de interés; hardware prerequisites; API de IA: no; Navegador; lenguaje y problema de interés.
@@ -393,7 +393,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### llm.c (`llm.c`)
 
-- **Repo:** https://github.com/karpathy/llm.c · MIT · nivel 3 · 52/100
+- **Repo:** https://github.com/karpathy/llm.c · MIT · nivel 3 · 49/100
 - **Qué es:** Implementación de entrenamiento de LLMs en C/CUDA puro (MIT) de Andrej Karpathy, sin PyTorch ni Python. Es un proyecto educativo y de investigación de rendimiento, poco activo: el último push es de junio de 2025.
 - **Cuándo elegirlo:** Casos: Estudiar entrenamiento sin un framework pesado; Comparar una implementación C con PyTorch.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él, necesita GPU; Compilador C; Python para preparación; CUDA y GPU para las rutas aceleradas; hardware prerequisites; API de IA: no; Compilador C; Python para preparación; CUDA y GPU para las rutas aceleradas.
@@ -404,7 +404,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### how-to-train-your-gpt (`how-to-train-your-gpt`)
 
-- **Repo:** https://github.com/raiyanyahya/how-to-train-your-gpt · MIT · nivel 1 · 48/100
+- **Repo:** https://github.com/raiyanyahya/how-to-train-your-gpt · MIT · nivel 1 · 45/100
 - **Qué es:** Libro de texto interactivo (MIT) de @raiyanyahya para construir, entrenar y ejecutar un modelo de lenguaje moderno desde cero. El autor declara que lo escribió para aprender y que usó IA para entender y verificar conceptos, así que…
 - **Cuándo elegirlo:** Casos: Aprender tokenización paso a paso; Comprender atención con ejemplos pequeños.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; Jupyter; entorno PyTorch; equipo adecuado al experimento; hardware prerequisites; API de IA: no; Python; Jupyter; entorno PyTorch; equipo adecuado al experimento.
@@ -413,7 +413,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```bash
   # Install everything you need
   pip install jupyter tiktoken torch numpy datasets matplotlib --index-url https://download.pytorch.org/whl/cpu
-  
+
   # Start with chapter 2 (tokenization)
   jupyter notebook notebooks/02_tokenization.ipynb
   ```

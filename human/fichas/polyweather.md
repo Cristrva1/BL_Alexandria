@@ -12,6 +12,8 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; app o instalador listo para usar; varios servicios con Docker Compose
 
+**Puntuación de calidad** 44/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+
 ## ¿Qué es?
 
 Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.

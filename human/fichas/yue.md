@@ -48,7 +48,7 @@ Grupo **Generación de música**: YuE2 ocupa la posición 2 de 3 (alternativa). 
 |---:|---|---:|---|
 | 1 | [ACE-Step-1.5](ace-step-1-5.md) ⭐ recomendado | 70 | Si buscas esto: modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
 | 2 | **YuE2** (esta ficha) | 67 | Si buscas esto: modelo abierto de generación de canciones completas (voz y acompañamiento) a partir de letra y estilo, con partitura editable, covers y una skill para agentes. |
-| 3 | [AudioCraft](audiocraft.md) | 54 | Si buscas esto: librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. |
+| 3 | [AudioCraft](audiocraft.md) | 52 | Si buscas esto: librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. |
 
 ## Acceso, coste y equipo
 

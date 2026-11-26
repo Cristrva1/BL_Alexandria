@@ -49,7 +49,7 @@ Grupo **Scraping guiado por LLM**: Scrapegraph-ai ocupa la posición 1 de 3 (rec
 |---:|---|---:|---|
 | 1 | **Scrapegraph-ai** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. |
 | 2 | [Maxun](maxun.md) | 70 | Si buscas esto: plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. |
-| 3 | [llm-scraper](llm-scraper.md) | 47 | Si buscas esto: librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. |
+| 3 | [llm-scraper](llm-scraper.md) | 44 | Si buscas esto: librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. |
 
 ## Acceso, coste y equipo
 

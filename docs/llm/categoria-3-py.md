@@ -21,24 +21,24 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=3
 | `langchain` | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG… | 2 Intermedio | 80 | MIT (OSI permisiva) | recomendado |
 | `crewai` | Framework para orquestar "crews" de agentes con roles y tareas. | 2 Intermedio | 72 | MIT (OSI permisiva) | alternativa |
 | `langgraph` | Framework de LangChain para agentes con estado como grafos, con persistencia… | 2 Intermedio | 72 | MIT (OSI permisiva) | recomendado |
-| `agentscope` | Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `agentscope` | Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `deepagents` | Arnés de agentes de LangChain listo para usar, con planificación, subagentes y… | 1 Básico | 70 | MIT (OSI permisiva) | alternativa |
 | `dspy` | Framework de Stanford para programar modelos de lenguaje en vez de escribir… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `openai-agents-python` | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas… | 2 Intermedio | 67 | MIT (OSI permisiva) | alternativa |
+| `adk-python` | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado… | 2 Intermedio | 66 | Apache-2.0 (OSI permisiva) | alternativa |
 | `haystack` | Framework de deepset para pipelines de RAG y agentes listos para producción. | 2 Intermedio | 66 | Apache-2.0 (OSI permisiva) | alternativa |
 | `pydantic-ai` | Framework de agentes del equipo de Pydantic, tipado de punta a punta y… | 2 Intermedio | 66 | MIT (OSI permisiva) | alternativa |
-| `adk-python` | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | alternativa |
 | `chatdev` | Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `ag2` | Framework AG2 actual para agentes y redes de colaboración en Python; AG2… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `llama-index` | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes… | 2 Intermedio | 63 | MIT (OSI permisiva) | alternativa |
-| `ag2` | Framework AG2 actual para agentes y redes de colaboración en Python; AG2… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `agno` | Framework y runtime de agentes en Python con memoria, conocimiento y equipos… | 1 Básico | 61 | Apache-2.0 (OSI permisiva) | alternativa |
 | `metagpt` | Framework de agentes que representa roles de un equipo de software para… | 2 Intermedio | 61 | MIT (OSI permisiva) | sin grupo |
 | `openmanus` | Agente general de código abierto inspirado en Manus: planifica tareas y usa… | 2 Intermedio | 61 | MIT (OSI permisiva) | sin grupo |
-| `camel` | Framework multiagente de investigación para generar datos sintéticos… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `claude-agent-sdk-python` | SDK oficial de Python para integrar el bucle de Claude Code, herramientas… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
+| `camel` | Framework multiagente de investigación para generar datos sintéticos… | 2 Intermedio | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `claude-agent-sdk-python` | SDK oficial de Python para integrar el bucle de Claude Code, herramientas… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
+| `semantic-router` | Clasifica consultas por intención y decide a qué función enviarlas usando… | 2 Intermedio | 55 | MIT (OSI permisiva) | sin grupo |
 | `smolagents` | Librería mínima de Hugging Face para agentes que razonan escribiendo y… | 2 Intermedio | 55 | Apache-2.0 (OSI permisiva) | alternativa |
-| `awesome-langgraph` | Repositorio de recursos, librerías y arquitecturas del ecosistema… | 1 Básico | 37 | CC0-1.0 (OSI permisiva) | sin grupo |
-| `semantic-router` | Clasifica consultas por intención y decide a qué función enviarlas usando… | 2 Intermedio | — | MIT | sin grupo |
+| `awesome-langgraph` | Repositorio de recursos, librerías y arquitecturas del ecosistema… | 1 Básico | 34 | CC0-1.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -82,7 +82,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AgentScope (`agentscope`)
 
-- **Repo:** https://github.com/agentscope-ai/agentscope · Apache-2.0 · nivel 2 · 70/100
+- **Repo:** https://github.com/agentscope-ai/agentscope · Apache-2.0 · nivel 2 · 71/100
 - **Qué es:** Framework de agentes de código abierto (Apache-2.0) desarrollado por el equipo de AgentScope (origen en Alibaba/Tongyi). La versión 2.0 se presenta como lista para producción; requiere Python 3.11 o superior y tiene desarrollo muy activo.
 - **Cuándo elegirlo:** Casos: construir un agente con herramientas MCP y memoria que puedas inspeccionar paso a paso; orquestar un equipo de agentes con un líder que delega tareas.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; hardware model_dependent; API de IA: opcional; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -132,6 +132,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `langgraph`, `crewai`, `deepagents`, `pydantic-ai`, `adk-python`, `agno`, `smolagents`
 - **Riesgos y avisos:** Alternativas (elige una): pydantic-ai, langgraph, smolagents, deepagents, adk-python. Las trazas están activadas por defecto y van al panel de OpenAI; se…. Es una biblioteca de aplicaciones; la disponibilidad de adaptadores no confirma por sí sola una ruta local completa.
 
+### Agent Development Kit (ADK) (`adk-python`)
+
+- **Repo:** https://github.com/google/adk-python · Apache-2.0 · nivel 2 · 66/100 · alternativa en «Frameworks de agentes en Python»
+- **Qué es:** Agent Development Kit (ADK) 2.0 de Google (Apache 2.0): framework Python «code-first» para construir, evaluar y desplegar agentes. Muy activo (v2.14.1), con versiones en Java, Kotlin, Go y TypeScript.
+- **Cuándo elegirlo:** Casos: Consultar información de negocio; Evaluar la selección de herramientas.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.11+; entorno virtual; modelo configurado; hardware prerequisites; API de IA: depends; Python 3.11+; entorno virtual; modelo configurado.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install google-adk` — fuente: https://github.com/google/adk-python/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Consulta el horario de una tienda ficticia mediante una herramienta del agente Éxito: El agente devuelve el dato de la herramienta
+- **Combina con:** `litellm` [23/serving], `fastmcp` [5/sdk], `langfuse` [23/observabilidad], `google-skills` [2/catalogos], `awesome-llm-apps` [19/guias], `gemini-skills` [2/catalogos]
+- **Alternativas:** `langgraph`, `crewai`, `deepagents`, `openai-agents-python`, `pydantic-ai`, `agno`, `smolagents`
+- **Riesgos y avisos:** Alternativas (elige una): langgraph, openai-agents-python. Se quitó gemini-cli: no es una integración. Que Google publique ADK no lo convierte en configuración de Antigravity.
+
 ### Haystack (`haystack`)
 
 - **Repo:** https://github.com/deepset-ai/haystack · Apache-2.0 · nivel 2 · 66/100 · alternativa en «Frameworks de RAG y orquestación de LLM»
@@ -156,18 +168,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `langgraph`, `crewai`, `deepagents`, `openai-agents-python`, `adk-python`, `agno`, `smolagents`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): openai-agents-python, smolagents, langgraph. Empieza con el paquete base; el harness de programación es un componente adicional.
 
-### Agent Development Kit (ADK) (`adk-python`)
-
-- **Repo:** https://github.com/google/adk-python · Apache-2.0 · nivel 2 · 65/100 · alternativa en «Frameworks de agentes en Python»
-- **Qué es:** Agent Development Kit (ADK) 2.0 de Google (Apache 2.0): framework Python «code-first» para construir, evaluar y desplegar agentes. Muy activo (v2.14.1), con versiones en Java, Kotlin, Go y TypeScript.
-- **Cuándo elegirlo:** Casos: Consultar información de negocio; Evaluar la selección de herramientas.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python 3.11+; entorno virtual; modelo configurado; hardware prerequisites; API de IA: depends; Python 3.11+; entorno virtual; modelo configurado.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install google-adk` — fuente: https://github.com/google/adk-python/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Consulta el horario de una tienda ficticia mediante una herramienta del agente Éxito: El agente devuelve el dato de la herramienta
-- **Combina con:** `litellm` [23/serving], `fastmcp` [5/sdk], `langfuse` [23/observabilidad], `google-skills` [2/catalogos], `awesome-llm-apps` [19/guias], `gemini-skills` [2/catalogos]
-- **Alternativas:** `langgraph`, `crewai`, `deepagents`, `openai-agents-python`, `pydantic-ai`, `agno`, `smolagents`
-- **Riesgos y avisos:** Alternativas (elige una): langgraph, openai-agents-python. Se quitó gemini-cli: no es una integración. Que Google publique ADK no lo convierte en configuración de Antigravity.
-
 ### ChatDev (`chatdev`)
 
 - **Repo:** https://github.com/OpenBMB/ChatDev · Apache-2.0 · nivel 2 · 64/100
@@ -178,6 +178,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Arranca la aplicación con `docker compose up --build`, configura una clave de modelo y ejecuta un flujo de ejemplo. Éxito: El flujo termina y muestra los mensajes entre agentes y el artefacto generado.
 - **Combina con:** `blender` [26/creacion-3d], `blender-mcp` [5/servidores], `litellm` [23/serving]
 - **Riesgos y avisos:** El código generado por agentes debe revisarse antes de usarse; ejecútalo en contenedores.
+
+### ag2 (`ag2`)
+
+- **Repo:** https://github.com/ag2ai/ag2 · Apache-2.0 · nivel 2 · 63/100
+- **Qué es:** AG2 (Apache 2.0), «AgentOS de código abierto» surgido de AutoGen y mantenido por un grupo de voluntarios de varias organizaciones (administradores: Chi Wang y Qingyun Wu).
+- **Cuándo elegirlo:** Casos: Coordinar redactor y verificador; Incluir intervención humana en un equipo.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python 3.11+; extra del proveedor elegido; hardware prerequisites; API de IA: depends; Python 3.11+; extra del proveedor elegido.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install ag2[openai]` — fuente: https://github.com/ag2ai/ag2/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Haz que un agente resuma una conversación y otro revise las omisiones Éxito: Se registran los intercambios usando import ag2
+- **Combina con:** `ollama` [8/motores], `langfuse` [23/observabilidad], `agent-framework` [3/ts]
+- **Riesgos y avisos:** Se quitó langchain porque no hay integración documentada. Si tu código usa `import autogen`, instala ag2-classic. AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen.
 
 ### LlamaIndex (`llama-index`)
 
@@ -198,17 +209,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `qdrant` [6/vectores], `docling` [13/conversion], `ragas` [23/observabilidad], `ollama` [8/motores]
 - **Alternativas:** `langchain`, `haystack`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): haystack, langchain. Ten en cuenta el cambio de foco de la empresa al planificar proyectos largos. Configura también embeddings locales si quieres que todo el procesamiento sea local.
-
-### ag2 (`ag2`)
-
-- **Repo:** https://github.com/ag2ai/ag2 · Apache-2.0 · nivel 2 · 62/100
-- **Qué es:** AG2 (Apache 2.0), «AgentOS de código abierto» surgido de AutoGen y mantenido por un grupo de voluntarios de varias organizaciones (administradores: Chi Wang y Qingyun Wu).
-- **Cuándo elegirlo:** Casos: Coordinar redactor y verificador; Incluir intervención humana en un equipo.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python 3.11+; extra del proveedor elegido; hardware prerequisites; API de IA: depends; Python 3.11+; extra del proveedor elegido.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install ag2[openai]` — fuente: https://github.com/ag2ai/ag2/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Haz que un agente resuma una conversación y otro revise las omisiones Éxito: Se registran los intercambios usando import ag2
-- **Combina con:** `ollama` [8/motores], `langfuse` [23/observabilidad], `agent-framework` [3/ts]
-- **Riesgos y avisos:** Se quitó langchain porque no hay integración documentada. Si tu código usa `import autogen`, instala ag2-classic. AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen.
 
 ### Agno (`agno`)
 
@@ -253,7 +253,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CAMEL (`camel`)
 
-- **Repo:** https://github.com/camel-ai/camel · Apache-2.0 · nivel 2 · 59/100
+- **Repo:** https://github.com/camel-ai/camel · Apache-2.0 · nivel 2 · 60/100
 - **Qué es:** Framework multiagente de código abierto (Apache-2.0) de la comunidad CAMEL-AI, nacido del artículo «CAMEL: Communicative Agents» (2023). Orientado a investigación sobre las leyes de escala de los agentes; desarrollo activo.
 - **Cuándo elegirlo:** Casos: generar datos sintéticos con agentes que dialogan en roles; montar un experimento de simulación con muchos agentes y medir su comportamiento.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; hardware model_dependent; API de IA: opcional; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -264,7 +264,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-agent-sdk-python (`claude-agent-sdk-python`)
 
-- **Repo:** https://github.com/anthropics/claude-agent-sdk-python · MIT · nivel 2 · 56/100
+- **Repo:** https://github.com/anthropics/claude-agent-sdk-python · MIT · nivel 2 · 57/100
 - **Qué es:** SDK oficial de Anthropic (MIT) para usar desde Python el bucle de agente de Claude Code. Es muy activo (v0.2.182), con publicaciones casi a diario, pero sigue en 0.x y su API puede cambiar.
 - **Cuándo elegirlo:** Casos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él, requiere clave de API; Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba; hardware prerequisites; API de IA: sí; Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba.
@@ -272,6 +272,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Configura un agente con permiso de lectura y pídele localizar un fallo en un archivo ficticio Éxito: Puedes ver herramientas llamadas y contrastar el fallo antes de permitir ediciones
 - **Combina con:** `claude-code` [20/terminal], `fastmcp` [5/sdk], `langfuse` [23/observabilidad], `e2b` [22/infra], `agno`, `pageindex` [6/rag]
 - **Riesgos y avisos:** Sin alternativas declaradas; comparable a openai-agents-python (otro proveedor). Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa.
+
+### Semantic Router (`semantic-router`)
+
+- **Repo:** https://github.com/aurelio-labs/semantic-router · MIT · nivel 2 · 55/100
+- **Qué es:** Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.
+- **Cuándo elegirlo:** Casos: Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.; Separar solicitudes sobre facturación de solicitudes de soporte.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, compose.yaml, pyproject.toml; API de IA: opcional; Python, una versión actual de la rama 1.x y un codificador compatible..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction
+- **Primera prueba propuesta (no ejecutada):** Crea dos rutas con frases ficticias y usa un codificador local documentado. Éxito: Frases similares llegan a la ruta esperada y puedes revisar las que no encajan.
+- **Riesgos y avisos:** El aviso por una dependencia comprometida afecta a versiones 0.1.8 a anteriores a 0.1.15. Evita esas versiones y revisa las dependencias fijadas.
 
 ### smolagents (`smolagents`)
 
@@ -287,7 +297,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-LangGraph (`awesome-langgraph`)
 
-- **Repo:** https://github.com/vonzosten/awesome-LangGraph · CC0-1.0 · nivel 1 · 37/100
+- **Repo:** https://github.com/vonzosten/awesome-LangGraph · CC0-1.0 · nivel 1 · 34/100
 - **Qué es:** Índice curado (CC0) de vonzosten sobre el ecosistema LangChain y LangGraph: frameworks, plantillas y proyectos reales. Activo; último cambio en octubre de 2026.
 - **Cuándo elegirlo:** Casos: Encontrar un flujo con memoria; Localizar evaluadores de agentes.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; necesidad concreta; hardware prerequisites; API de IA: no; Navegador; necesidad concreta.
@@ -295,16 +305,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Busca una plantilla de aprobación humana y contrasta su versión con las guías oficiales Éxito: Tienes un candidato y sabes qué aporta al flujo
 - **Combina con:** `langgraph`, `langchain`, `deepagents`
 - **Riesgos y avisos:** Todavía recomienda langchain-mcp-adapters, archivado y retirado del catálogo (MCP pasó al paquete principal de LangChain): desactualización detectada. Las integraciones de los enlaces no acreditan compatibilidad del directorio completo.
-
-### Semantic Router (`semantic-router`)
-
-- **Repo:** https://github.com/aurelio-labs/semantic-router · MIT · nivel 2 · —/100
-- **Qué es:** Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada.
-- **Cuándo elegirlo:** Casos: Rutar consultas ficticias a preguntas frecuentes o ayuda técnica.; Separar solicitudes sobre facturación de solicitudes de soporte.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, compose.yaml, pyproject.toml; API de IA: opcional; Python, una versión actual de la rama 1.x y un codificador compatible..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://docs.aurelio.ai/docs/semantic-router/v1/get-started/introduction
-- **Primera prueba propuesta (no ejecutada):** Crea dos rutas con frases ficticias y usa un codificador local documentado. Éxito: Frases similares llegan a la ruta esperada y puedes revisar las que no encajan.
-- **Riesgos y avisos:** El aviso por una dependencia comprometida afecta a versiones 0.1.8 a anteriores a 0.1.15. Evita esas versiones y revisa las dependencias fijadas.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

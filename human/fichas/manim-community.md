@@ -47,7 +47,7 @@ Grupo **Animaciones matemáticas (Manim)**: manim ocupa la posición 1 de 2 (rec
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **manim** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. |
-| 2 | [Manim (ManimGL)](manim.md) | 57 | Si buscas esto: motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. |
+| 2 | [Manim (ManimGL)](manim.md) | 54 | Si buscas esto: motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. |
 
 ## Acceso, coste y equipo
 

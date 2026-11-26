@@ -19,21 +19,21 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `crowdsec` | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de… | 2 Intermedio | 76 | MIT (OSI permisiva) | recomendado |
-| `wazuh` | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos… | 3 Avanzado | 76 | GPL-2.0 + AGPL-3.0 (partes) (OSI copyleft) | sin grupo |
+| `wazuh` | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos… | 3 Avanzado | 75 | GPL-2.0 + AGPL-3.0 (partes) (OSI copyleft) | sin grupo |
 | `osquery` | Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base… | 2 Intermedio | 73 | Apache-2.0 OR GPL-2.0-only (OSI permisiva) | sin grupo |
 | `zeek` | Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza… | 4 Experto | 71 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `modsecurity` | Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP… | 4 Experto | 66 | Apache-2.0 (OSI permisiva) | recomendado |
-| `coreruleset` | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `arkime` | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para… | 4 Experto | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `coraza` | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | alternativa |
+| `modsecurity` | Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP… | 4 Experto | 70 | Apache-2.0 (OSI permisiva) | recomendado |
+| `coreruleset` | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `arkime` | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para… | 4 Experto | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `suricata` | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas… | 4 Experto | 63 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `fail2ban` | Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…)… | 2 Intermedio | 62 | GPL-2.0 (OSI copyleft) | alternativa |
-| `suricata` | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas… | 4 Experto | 62 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `coraza` | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | alternativa |
 | `sigma` | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a… | 1 Básico | 58 | DRL-1.1 (reglas); especificación de dominio público (sin licencia detectada) | sin grupo |
-| `shuffle` | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de… | 3 Avanzado | 55 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `shuffle` | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `securityonion` | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y… | 4 Experto | 52 | Elastic-2.0 (source-available) | sin grupo |
-| `detection-rules` | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 48 | Elastic-2.0 (source-available) | sin grupo |
-| `loki` | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints… | 1 Básico | 41 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `pi-alert-leiweibau` | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece… | 3 Avanzado | — | GPL-3.0 | sin grupo |
+| `detection-rules` | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 49 | Elastic-2.0 (source-available) | sin grupo |
+| `pi-alert-leiweibau` | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece… | 3 Avanzado | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `loki` | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints… | 1 Básico | 42 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -53,7 +53,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Wazuh (`wazuh`)
 
-- **Repo:** https://github.com/wazuh/wazuh · GPL-2.0 + AGPL-3.0 (partes) · nivel 3 · 76/100
+- **Repo:** https://github.com/wazuh/wazuh · GPL-2.0 + AGPL-3.0 (partes) · nivel 3 · 75/100
 - **Qué es:** Plataforma de seguridad de código abierto de Wazuh Inc. (GPL-2.0 en su mayor parte, con componentes bajo otras licencias, como AGPL). Muy madura; la empresa vende cloud y soporte.
 - **Cuándo elegirlo:** Casos: vigilar los servidores de tu laboratorio o pyme con alertas centralizadas; auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos.
 - **Requisitos:** nivel 3: preparación pesada; C++; API de IA: no.
@@ -86,7 +86,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ModSecurity (`modsecurity`)
 
-- **Repo:** https://github.com/owasp-modsecurity/ModSecurity · Apache-2.0 · nivel 4 · 66/100 · recomendado en «WAF compatibles con SecLang y el OWASP CRS»
+- **Repo:** https://github.com/owasp-modsecurity/ModSecurity · Apache-2.0 · nivel 4 · 70/100 · recomendado en «WAF compatibles con SecLang y el OWASP CRS»
 - **Qué es:** Motor de firewall de aplicaciones web (WAF) multiplataforma, hoy bajo la organización OWASP, en su versión libmodsecurity 3.
 - **Cuándo elegirlo:** Casos: proteger una aplicación web con el OWASP CRS en modo detección antes de bloquear; registrar intentos de inyección SQL y XSS para un SOC. Evítalo si no quieres preparar modelos, dependencias y hardware propios.
 - **Requisitos:** nivel 4: preparación difícil, necesita GPU; C++; hardware model_dependent; API de IA: no; Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida..
@@ -97,7 +97,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OWASP CRS (`coreruleset`)
 
-- **Repo:** https://github.com/coreruleset/coreruleset · Apache-2.0 · nivel 1 · 64/100
+- **Repo:** https://github.com/coreruleset/coreruleset · Apache-2.0 · nivel 1 · 65/100
 - **Qué es:** OWASP Core Rule Set (Apache-2.0).
 - **Cuándo elegirlo:** Casos: proteger un reverse proxy propio; ajustar falsos positivos de CRS.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; API de IA: no.
@@ -107,7 +107,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Arkime (`arkime`)
 
-- **Repo:** https://github.com/arkime/arkime · Apache-2.0 · nivel 4 · 62/100
+- **Repo:** https://github.com/arkime/arkime · Apache-2.0 · nivel 4 · 63/100
 - **Qué es:** Full packet capture indexado (Apache-2.0).
 - **Cuándo elegirlo:** Casos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto.
 - **Requisitos:** nivel 4: preparación difícil; C, package.json; API de IA: no.
@@ -115,16 +115,15 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala desde https://arkime.com/downloads siguiendo la guía simple. Éxito: UI muestra sesiones capturadas.
 - **Combina con:** `wireshark` [16/pruebas], `suricata`
 
-### OWASP Coraza (`coraza`)
+### Suricata (`suricata`)
 
-- **Repo:** https://github.com/corazawaf/coraza · Apache-2.0 · nivel 2 · 62/100 · alternativa en «WAF compatibles con SecLang y el OWASP CRS»
-- **Qué es:** Proyecto OWASP de nivel producción: un framework WAF en Go compatible con ModSecurity y el OWASP CRS.
-- **Cuándo elegirlo:** Casos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Go, go.mod; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/corazawaf/coraza/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Sigue el ejemplo de uso de Coraza del README en un programa Go de prueba con una regla sencilla. Éxito: La transacción con la carga de prueba queda interrumpida por la regla.
-- **Combina con:** `coreruleset`, `caddy` [22/infraestructura], `traefik` [22/infraestructura]
-- **Alternativas:** `modsecurity`
+- **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 63/100
+- **Qué es:** Motor IDS/IPS open source de la OISF, estándar de facto junto a Zeek en SOC.
+- **Cuándo elegirlo:** Casos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team.
+- **Requisitos:** nivel 4: preparación difícil; C; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OISF/suricata/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo. Éxito: Con tráfico de prueba ves alertas en eve.json o el SIEM.
+- **Combina con:** `wazuh`, `wireshark` [16/pruebas], `zeek`
 
 ### Fail2ban (`fail2ban`)
 
@@ -138,15 +137,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `crowdsec`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### Suricata (`suricata`)
+### OWASP Coraza (`coraza`)
 
-- **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 62/100
-- **Qué es:** Motor IDS/IPS open source de la OISF, estándar de facto junto a Zeek en SOC.
-- **Cuándo elegirlo:** Casos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team.
-- **Requisitos:** nivel 4: preparación difícil; C; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OISF/suricata/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo. Éxito: Con tráfico de prueba ves alertas en eve.json o el SIEM.
-- **Combina con:** `wazuh`, `wireshark` [16/pruebas], `zeek`
+- **Repo:** https://github.com/corazawaf/coraza · Apache-2.0 · nivel 2 · 59/100 · alternativa en «WAF compatibles con SecLang y el OWASP CRS»
+- **Qué es:** Proyecto OWASP de nivel producción: un framework WAF en Go compatible con ModSecurity y el OWASP CRS.
+- **Cuándo elegirlo:** Casos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Go, go.mod; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/corazawaf/coraza/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue el ejemplo de uso de Coraza del README en un programa Go de prueba con una regla sencilla. Éxito: La transacción con la carga de prueba queda interrumpida por la regla.
+- **Combina con:** `coreruleset`, `caddy` [22/infraestructura], `traefik` [22/infraestructura]
+- **Alternativas:** `modsecurity`
 
 ### Sigma (`sigma`)
 
@@ -161,7 +161,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Shuffle (`shuffle`)
 
-- **Repo:** https://github.com/Shuffle/Shuffle · AGPL-3.0 · nivel 3 · 55/100
+- **Repo:** https://github.com/Shuffle/Shuffle · AGPL-3.0 · nivel 3 · 56/100
 - **Qué es:** SOAR AGPL.
 - **Cuándo elegirlo:** Casos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab.
 - **Requisitos:** nivel 3: SOAR con Docker Compose; flujos visuales; JavaScript, docker-compose.yml; API de IA: no.
@@ -183,7 +183,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Elastic detection-rules (`detection-rules`)
 
-- **Repo:** https://github.com/elastic/detection-rules · Elastic-2.0 · nivel 1 · 48/100
+- **Repo:** https://github.com/elastic/detection-rules · Elastic-2.0 · nivel 1 · 49/100
 - **Qué es:** Detection rules Elastic (Elastic License 2.0).
 - **Cuándo elegirlo:** Casos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, Makefile, pyproject.toml; API de IA: no.
@@ -192,25 +192,25 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `sigma`, `wazuh`
 - **Riesgos y avisos:** Elastic License 2.0 (source-available, no OSI): limita ofrecerlo como servicio gestionado. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### LOKI (`loki`)
-
-- **Repo:** https://github.com/Neo23x0/Loki · GPL-3.0 · nivel 1 · 41/100
-- **Qué es:** IOC scanner de Neo23x0 (GPL-3).
-- **Cuándo elegirlo:** Casos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP.
-- **Requisitos:** nivel 1: preparación sencilla; Python, requirements.txt; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Neo23x0/Loki/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba. Éxito: Hits de IOC en consola.
-- **Combina con:** `yara` [16/reversing], `misp` [16/inteligencia-amenazas]
-
 ### Pi.Alert (`pi-alert-leiweibau`)
 
-- **Repo:** https://github.com/leiweibau/Pi.Alert · GPL-3.0 · nivel 3 · —/100
+- **Repo:** https://github.com/leiweibau/Pi.Alert · GPL-3.0 · nivel 3 · 47/100
 - **Qué es:** Monitor de dispositivos para una red propia que muestra cambios en su interfaz web.
 - **Cuándo elegirlo:** Casos: Identificar un dispositivo nuevo en una red de prueba.; Verificar si se registra la desconexión de un dispositivo ya conocido.
 - **Requisitos:** nivel 3: preparación pesada; PHP; hardware prerequisites; API de IA: no; Equipo Debian compatible en la red propia, acceso administrativo para preparar el servidor y un segmento de prueba..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md
 - **Primera prueba propuesta (no ejecutada):** Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido. Éxito: El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada.
 - **Riesgos y avisos:** El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento….
+
+### LOKI (`loki`)
+
+- **Repo:** https://github.com/Neo23x0/Loki · GPL-3.0 · nivel 1 · 42/100
+- **Qué es:** IOC scanner de Neo23x0 (GPL-3).
+- **Cuándo elegirlo:** Casos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP.
+- **Requisitos:** nivel 1: preparación sencilla; Python, requirements.txt; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Neo23x0/Loki/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba. Éxito: Hits de IOC en consola.
+- **Combina con:** `yara` [16/reversing], `misp` [16/inteligencia-amenazas]
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

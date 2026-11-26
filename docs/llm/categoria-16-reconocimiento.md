@@ -23,11 +23,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `amass` | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `interactsh` | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
 | `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `rustscan` | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 63 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `dnsx` | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `noir` | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
+| `rustscan` | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `nmap` | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 59 | NPSL (no OSI) (OSI copyleft) | sin grupo |
-| `masscan` | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 54 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `masscan` | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -90,17 +90,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### RustScan (`rustscan`)
-
-- **Repo:** https://github.com/bee-san/RustScan · GPL-3.0 · nivel 1 · 63/100
-- **Qué es:** Port scanner Rust que complementa Nmap.
-- **Cuándo elegirlo:** Casos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV.
-- **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml, Makefile; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install rustscan` — fuente: https://github.com/bee-san/RustScan/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `brew install rustscan` y escanea un host de lab. Éxito: Lista puertos y, si configuras, salida Nmap.
-- **Combina con:** `nmap`, `naabu`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
 ### dnsx (`dnsx`)
 
 - **Repo:** https://github.com/projectdiscovery/dnsx · MIT · nivel 1 · 62/100
@@ -123,6 +112,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
+### RustScan (`rustscan`)
+
+- **Repo:** https://github.com/bee-san/RustScan · GPL-3.0 · nivel 1 · 60/100
+- **Qué es:** Port scanner Rust que complementa Nmap.
+- **Cuándo elegirlo:** Casos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV.
+- **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml, Makefile; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install rustscan` — fuente: https://github.com/bee-san/RustScan/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `brew install rustscan` y escanea un host de lab. Éxito: Lista puertos y, si configuras, salida Nmap.
+- **Combina con:** `nmap`, `naabu`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
 ### Nmap (`nmap`)
 
 - **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 59/100
@@ -136,7 +136,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### masscan (`masscan`)
 
-- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 54/100
+- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 52/100
 - **Qué es:** Port scanner asíncrono de Robert David Graham.
 - **Cuándo elegirlo:** Casos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio.
 - **Requisitos:** nivel 2: preparación media; C, Makefile; API de IA: no.

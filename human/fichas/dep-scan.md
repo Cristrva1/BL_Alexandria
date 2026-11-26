@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 59/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 58/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -44,8 +44,8 @@ Grupo **Análisis de dependencias vulnerables (SCA)**: OWASP dep-scan ocupa la p
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [OSV-Scanner](osv-scanner.md) ⭐ recomendado | 79 | Si quieres consultar la base OSV desde lockfiles con una CLI ligera en Go. |
-| 2 | [OWASP Dependency-Check](dependency-check.md) | 63 | Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins. |
-| 3 | **OWASP dep-scan** (esta ficha) | 59 | Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI. |
+| 2 | [OWASP Dependency-Check](dependency-check.md) | 60 | Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins. |
+| 3 | **OWASP dep-scan** (esta ficha) | 58 | Si quieres auditoría de riesgo con SBOM, alcanzabilidad y VEX en una sola CLI. |
 
 ## Acceso, coste y equipo
 
