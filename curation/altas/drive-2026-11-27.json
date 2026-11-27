@@ -1,0 +1,76 @@
+{
+ "lote": "drive-2026-11-27",
+ "fecha": "2026-11-27",
+ "metodo": "Revisión de licencia, publicación y avisos. Pruebas funcionales públicas sobre el commit de la versión.",
+ "repos": [
+  {
+   "gh": "libass/libass",
+   "id": "libass",
+   "name": "libass",
+   "cat": 12,
+   "sub": "edicion",
+   "kind": "library",
+   "one": "Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles.",
+   "how": "Interpreta eventos y estilos de un archivo ASS o SSA y devuelve imágenes con el texto colocado en el instante solicitado.",
+   "examples": [
+    "Comprobar si dos líneas con tamaños y posiciones distintos quedan legibles sobre un fotograma",
+    "Integrar subtítulos con estilos en un editor propio que necesite renderizar ASS"
+   ],
+   "try": [
+    "En una compilación Autotools con el programa de prueba habilitado, ejecuta ./test/test subtitulo.png muestra.ass 1.0 con una línea ASS propia activa durante el segundo 1",
+    "Abre subtitulo.png. La imagen muestra el texto con el estilo del archivo y la línea original se conserva"
+   ],
+   "steps": [
+    "Prepara un entorno Linux de prueba con compilador C, make, pkg-config y bibliotecas de desarrollo de FreeType, FriBidi, HarfBuzz y libpng. El flujo oficial enumera las dependencias por plataforma.",
+    "Extrae el archivo fuente de la publicación oficial 0.17.5 y abre una terminal en la carpeta extraída. Ejecuta ./configure --enable-test y luego make. En x86, usa NASM si la configuración lo solicita.",
+    "Prepara un archivo ASS propio con una línea activa entre 0 y 2 segundos. Sigue la primera prueba para dibujarla en un PNG. Abre el PNG y verifica el estilo y la posición."
+   ],
+   "ligero": true,
+   "ai": "local",
+   "setup": "heavy",
+   "license": "ISC",
+   "goals": [
+    "video"
+   ],
+   "tags": [
+    "subtítulos",
+    "ass",
+    "ssa",
+    "renderizado",
+    "c"
+   ],
+   "url": "https://github.com/libass/libass/releases/tag/0.17.5",
+   "caveat": "Esta compilación de prueba es independiente de la versión que incluya tu reproductor. Empieza con un archivo propio. Comprueba la versión real de la biblioteca antes de procesar archivos ajenos.",
+   "note": "La 0.17.5 corrige los dos avisos altos publicados. Autotools completó las pruebas oficiales en Ubuntu y el proyecto pasó regresiones en máquinas virtuales del mismo commit. La ejecución separada de Meson falló al instalar dependencias en una variante. La práctica de esta ficha usa Autotools.",
+   "avoid": "Prefieres editar o sincronizar subtítulos desde una interfaz gráfica.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Los agentes de código pueden ayudarte a preparar la compilación. La biblioteca se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+    "local_note": "Dibuja texto por reglas de tipografía y estilos. Funciona sin un modelo de IA.",
+    "scope": "Compilación local de Autotools y prueba con subtítulo propio.",
+    "cost_note": "Biblioteca ISC, sin pago obligatorio para compilar o ejecutar el ejemplo local.",
+    "api_note": "El programa lee subtítulos locales y escribe un PNG.",
+    "hardware_note": "Equipo de uso general con Linux y herramientas de compilación. Para generar el PNG necesitas libpng y fuentes disponibles para el texto.",
+    "sources": [
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/COPYING",
+     "https://github.com/libass/libass/releases/tag/0.17.5",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/configure.ac",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/test/test.c",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/.github/workflows/ghci.yml",
+     "https://github.com/libass/libass/actions/runs/28071659368",
+     "https://github.com/libass/libass/actions/runs/28071659370",
+     "https://github.com/libass/libass/security/advisories"
+    ]
+   },
+   "alt": []
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "batch": "altas-drive-2026-11-27",
+ "checked_at": "2026-11-27",
+ "method": "Revisión de licencia, publicación y avisos. Pruebas funcionales públicas sobre el commit de la versión.",
+ "repos": {
+  "libass": {
+   "que_es": "Biblioteca en C para renderizar subtítulos con formato ASS y SSA.",
+   "que_hace": "Convierte el contenido de un subtítulo en imagen y conserva estilos, tiempos y posiciones.",
+   "como_lo_hace": "Lee estilos y eventos, compone glifos con fuentes del sistema y devuelve imagen para el fotograma que pide la aplicación.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesa video con un filtro de subtítulos cuando la compilación incorpora una versión revisada de libass."
+    },
+    {
+     "id": "pysubs2",
+     "motivo": "Convierte y ajusta el archivo de subtítulos antes de revisar cómo se dibuja."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/COPYING",
+    "https://github.com/libass/libass/releases/tag/0.17.5",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/configure.ac",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/test/test.c",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/.github/workflows/ghci.yml",
+    "https://github.com/libass/libass/actions/runs/28071659368",
+    "https://github.com/libass/libass/actions/runs/28071659370",
+    "https://github.com/libass/libass/security/advisories"
+   ],
+   "github": {
+    "name_with_owner": "libass/libass",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "ISC",
+    "primary_language": "C",
+    "checked_at": "2026-11-27",
+    "latest_release": "0.17.5 (2026-06-24)"
+   }
+  }
+ }
+}

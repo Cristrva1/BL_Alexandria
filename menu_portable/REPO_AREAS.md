@@ -124,7 +124,7 @@ Encuentra las piezas para producir imágenes, audio y video: desde una voz o un 
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-`concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `pysubs2`, `rea-video`, `shotcut`, `video-use`, `videolingo`
+`concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `libass`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `pysubs2`, `rea-video`, `shotcut`, `video-use`, `videolingo`
 
 ### Video: generación con IA
 

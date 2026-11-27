@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "areas": [
     {
       "id": "agentes",
@@ -3355,6 +3355,36 @@
         {
           "title": "WebMCP declarativo en Chrome",
           "url": "https://developer.chrome.com/docs/ai/webmcp/declarative-api"
+        }
+      ],
+      "commands": [],
+      "featured": false
+    },
+    {
+      "id": "revisar-video-en-mosaico",
+      "title": "Revisar un video con un mosaico de fotogramas",
+      "area": "contenido",
+      "kind": "Técnica",
+      "level": "inicial",
+      "summary": "Reúne muestras de un clip corto en un PNG para revisar encuadres, márgenes y legibilidad en una sola mirada.",
+      "steps": [
+        "Elige ocho segundos de un clip propio. Selecciona un fotograma por segundo con el filtro fps de FFmpeg.",
+        "Escala las muestras a 160 × 90 píxeles si el clip es 16:9. Con tile, colócalas en cuatro columnas y dos filas y guarda un PNG.",
+        "Abre el archivo. Comprueba que las ocho muestras están en orden y marca dos instantes para revisar dentro del video. El ensayo con un patrón generado produjo un PNG de 640 × 180."
+      ],
+      "why": "Una vista de conjunto ayuda a comparar cambios de encuadre, márgenes y contraste entre momentos del mismo clip.",
+      "caution": "El mosaico muestra una selección de fotogramas. Reproduce el video para evaluar el movimiento, los intervalos entre muestras y el audio.",
+      "tools": [
+        "FFmpeg",
+        "Visor de imágenes"
+      ],
+      "github": [
+        "FFmpeg/FFmpeg"
+      ],
+      "sources": [
+        {
+          "title": "Filtros de FFmpeg",
+          "url": "https://ffmpeg.org/ffmpeg-filters.html#tile"
         }
       ],
       "commands": [],

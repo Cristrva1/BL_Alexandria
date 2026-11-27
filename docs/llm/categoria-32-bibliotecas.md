@@ -1,6 +1,6 @@
 # Alexandría para agentes · Automatización y pruebas por código
 
-Categoría 32 «Navegadores y automatización web» › subcategoría `bibliotecas`. 6 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 32 «Navegadores y automatización web» › subcategoría `bibliotecas`. 6 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=32&sub=bibliotecas · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

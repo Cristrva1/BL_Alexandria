@@ -26,6 +26,12 @@ Convierte formatos y permite ajustar tiempos o editar texto de subtítulos ya ex
 
 Carga los bloques como eventos con texto y tiempos, aplica el ajuste y guarda una nueva salida en el formato elegido.
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[libass](libass.md)
+
 Estado en GitHub: activo · último push 2026-11-10 · licencia declarada MIT (consultado el 2026-11-24).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-24); no se instaló ni ejecutó. Fuentes: [1](https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md) · [2](https://pysubs2.readthedocs.io/en/latest/) · [3](https://pypi.org/project/pysubs2/1.9.1/) · [4](https://github.com/tkarabela/pysubs2/actions/runs/40979280401)</sub>

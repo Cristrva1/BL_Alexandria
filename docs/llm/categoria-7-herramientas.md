@@ -1,6 +1,6 @@
 # Alexandría para agentes · CLIs y SDKs de desarrollo
 
-Categoría 7 «Entender código y comprobar su calidad» › subcategoría `herramientas`. 10 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 7 «Entender código y comprobar su calidad» › subcategoría `herramientas`. 10 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7&sub=herramientas · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

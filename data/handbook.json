@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "groups": [
     {
       "id": "agentes",
@@ -3598,6 +3598,52 @@
         "redes neuronales"
       ],
       "commands": []
+    },
+    {
+      "id": "stanford-cs336",
+      "name": "Stanford CS336: entender modelos de lenguaje",
+      "group": "aprendizaje",
+      "kind": "Curso público",
+      "summary": "Material universitario para entender tokenización, arquitectura, entrenamiento y evaluación de modelos de lenguaje.",
+      "prepare": [
+        "Navegador y una hoja para el primer ejercicio.",
+        "Para realizar las tareas completas, prepara Python, PyTorch y bases de matemáticas y aprendizaje automático."
+      ],
+      "steps": [
+        "Abre la primera clase de la edición 2026 y localiza la explicación de tokenización.",
+        "Escribe las palabras sol, sola y solar. Propón dos maneras de dividirlas en piezas, asigna números a las piezas y cuenta cuántas usa cada palabra.",
+        "Explica en una frase qué cambia si tu vocabulario incluye sol como pieza reutilizable. Después abre la tarea inicial para ver cómo esa idea se convierte en código."
+      ],
+      "verify": "Puedes mostrar dos listas de piezas, su diccionario de números y el recuento de cada palabra.",
+      "access": "El temario y las grabaciones públicas se pueden consultar desde el navegador. El primer ejercicio se puede hacer a mano y funciona sin Claude Code, Codex, Antigravity ni un modelo local.",
+      "cost": "La consulta y el ejercicio inicial no requieren compra. Algunas prácticas completas usan GPU. El alojamiento de GPU y los servicios externos tienen tarifas propias.",
+      "improve": [
+        "Si haces la parte de programación, prueba primero la corrección con ejemplos pequeños en CPU, como sugiere el equipo del curso."
+      ],
+      "limits": [
+        "El curso completo es avanzado y está principalmente en inglés. La actividad inicial de la ficha es una práctica breve diseñada por Alexandría.",
+        "Para tareas evaluadas, consulta la política del curso antes de usar asistentes."
+      ],
+      "sources": [
+        {
+          "title": "Temario y requisitos de Stanford",
+          "url": "https://cs336.stanford.edu/",
+          "checked_at": "2026-11-27"
+        },
+        {
+          "title": "Archivo de la edición 2025",
+          "url": "https://cs336.stanford.edu/spring2025/",
+          "checked_at": "2026-11-27"
+        }
+      ],
+      "repo_ids": [],
+      "aliases": [
+        "cs336",
+        "stanford",
+        "tokenización",
+        "entrenamiento"
+      ],
+      "commands": []
     }
   ],
   "prompts": [
@@ -4721,6 +4767,25 @@
         "url": "https://academy.hubspot.com/lessons/creating-content-for-the-buyers-journey"
       },
       "checked_at": "2026-11-26"
+    },
+    {
+      "id": "explicar-tokens-con-un-ejemplo",
+      "title": "Entender los tokens con un ejemplo que puedas comprobar",
+      "topic": "aprender",
+      "level": "inicial",
+      "when": "Cuando quieras entender cómo un texto se convierte en números antes de entrar en un modelo.",
+      "inputs": [
+        "Tres palabras que compartan letras",
+        "Dos maneras posibles de dividirlas"
+      ],
+      "body": "Usa [tres palabras] para mostrarme qué es un token. Haz una tabla con [dos reglas de división], las piezas de cada palabra y su recuento. Asigna un número fijo a cada pieza. Pídeme reconstruir una palabra desde su lista de números y comprueba mi respuesta. Aclara que las reglas y los números son didácticos. No atribuyas la división a un modelo comercial sin consultarlo.",
+      "expect": "Dos divisiones que puedes comparar y un ejercicio pequeño de reconstrucción. Basta una conversación o una hoja.",
+      "authorship": "Plantilla original de Alexandría",
+      "inspired_by": {
+        "title": "Primera clase de Stanford CS336",
+        "url": "https://cs336.stanford.edu/"
+      },
+      "checked_at": "2026-11-27"
     }
   ],
   "paths": [

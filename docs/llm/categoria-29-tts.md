@@ -1,6 +1,6 @@
 # Alexandría para agentes · Síntesis y clonación de voz
 
-Categoría 29 «Audio, transcripción, voz y música» › subcategoría `tts`. 13 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 29 «Audio, transcripción, voz y música» › subcategoría `tts`. 13 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=29&sub=tts · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26",
+ "fecha": "2026-11-27",
  "max_tokens": 25000,
  "estimacion": "caracteres / 3.5",
  "archivos": [
@@ -432,8 +432,8 @@
    "titulo": "Restauración, upscaling y edición",
    "repos": 6,
    "archivo": "categoria-11-edicion.md",
-   "caracteres": 11856,
-   "tokens_estimados": 3388
+   "caracteres": 11822,
+   "tokens_estimados": 3378
   },
   {
    "cat": 11,
@@ -441,17 +441,17 @@
    "titulo": "Generar y editar imágenes con IA",
    "repos": 11,
    "archivo": "categoria-11.md",
-   "caracteres": 19916,
-   "tokens_estimados": 5691
+   "caracteres": 19882,
+   "tokens_estimados": 5681
   },
   {
    "cat": 12,
    "sub": "edicion",
    "titulo": "Edición, grabación y subtítulos",
-   "repos": 12,
+   "repos": 13,
    "archivo": "categoria-12-edicion.md",
-   "caracteres": 20647,
-   "tokens_estimados": 5900
+   "caracteres": 21938,
+   "tokens_estimados": 6269
   },
   {
    "cat": 12,
@@ -466,10 +466,10 @@
    "cat": 12,
    "sub": null,
    "titulo": "Editar, grabar y generar video",
-   "repos": 20,
+   "repos": 21,
    "archivo": "categoria-12.md",
-   "caracteres": 35393,
-   "tokens_estimados": 10113
+   "caracteres": 36694,
+   "tokens_estimados": 10485
   },
   {
    "cat": 13,

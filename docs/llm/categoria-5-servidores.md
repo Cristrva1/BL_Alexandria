@@ -1,6 +1,6 @@
 # Alexandría para agentes · Servidores MCP destacados
 
-Categoría 5 «Conectar herramientas con MCP» › subcategoría `servidores`. 17 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 5 «Conectar herramientas con MCP» › subcategoría `servidores`. 17 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=5&sub=servidores · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente

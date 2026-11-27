@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26",
+ "fecha": "2026-11-27",
  "nota": "Generado desde curation/grupos.yaml y data/metricas/puntuaciones.json. No editar a mano.",
  "grupos": [
   {
@@ -3124,7 +3124,7 @@
     {
      "id": "hunyuanvideo",
      "posicion": 2,
-     "puntuacion": 56.9,
+     "puntuacion": 57.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.",
      "cuando_origen": "plantilla",
@@ -3133,7 +3133,7 @@
     {
      "id": "hunyuanvideo-1-5",
      "posicion": 3,
-     "puntuacion": 41.5,
+     "puntuacion": 41.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
      "cuando_origen": "plantilla",
@@ -3205,7 +3205,7 @@
     {
      "id": "opencut",
      "posicion": 1,
-     "puntuacion": 62.6,
+     "puntuacion": 62.7,
      "papel": "recomendado",
      "cuando": "Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.",
      "cuando_origen": "plantilla",
@@ -3214,7 +3214,7 @@
     {
      "id": "shotcut",
      "posicion": 2,
-     "puntuacion": 59.9,
+     "puntuacion": 60.3,
      "papel": "alternativa",
      "cuando": "Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.",
      "cuando_origen": "plantilla",
@@ -3223,7 +3223,7 @@
     {
      "id": "kdenlive",
      "posicion": 3,
-     "puntuacion": 59.3,
+     "puntuacion": 59.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.",
      "cuando_origen": "plantilla",
@@ -5454,7 +5454,7 @@
     {
      "id": "short-video-factory",
      "posicion": 2,
-     "puntuacion": 46.7,
+     "puntuacion": 47.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.",
      "cuando_origen": "plantilla",

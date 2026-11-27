@@ -4,7 +4,7 @@
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
 
-20 repos · 2 secciones
+21 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 12 repos
+- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 13 repos
 - [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 8 repos
 
 ## Edición, grabación y subtítulos
@@ -35,6 +35,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Shotcut](../fichas/shotcut.md) | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. | Tu objetivo encaja con estos ejemplos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo | Sin clave propia de API de IA en la ruta básica |
 | [Kdenlive](../fichas/kdenlive.md) | Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. | Tu objetivo encaja con estos ejemplos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales | Sin clave propia de API de IA en la ruta básica |
 | [DaVinci Resolve MCP](../fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | Tu objetivo encaja con estos ejemplos: Organizar material desde un agente; Preparar ajustes de render con revisión | Sin clave propia de API de IA en la ruta básica |
+| [libass](../fichas/libass.md) | Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles. | Necesitas dibujar subtítulos ASS o SSA con estilos y posiciones desde una biblioteca o una integración. | Sin clave propia de API de IA en la ruta básica |
 | [OpenRV](../fichas/openrv.md) | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | Tu objetivo encaja con estos ejemplos: Revisar una entrega de animación; Comparar versiones de un efecto visual | Sin clave propia de API de IA en la ruta básica |
 | [pysubs2](../fichas/pysubs2.md) | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA. | Tu objetivo encaja con estos ejemplos: Convertir un archivo ASS de edición a SRT para compartirlo con un reproductor.; Corregir un desfase constante de los subtítulos en varios clips propios. | Sin clave propia de API de IA en la ruta básica |
 

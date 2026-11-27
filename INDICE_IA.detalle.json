@@ -72345,10 +72345,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 70.5,
+    "puntuacion": 71.6,
     "ejes": {
-     "adopcion": 13.8,
-     "mantenimiento": 22.1,
+     "adopcion": 14.6,
+     "mantenimiento": 22.4,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -72783,7 +72783,7 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 62.6,
+    "puntuacion": 62.7,
     "ejes": {
      "adopcion": 22.0,
      "mantenimiento": 6.3,
@@ -72826,21 +72826,21 @@
      {
       "id": "opencut",
       "posicion": 1,
-      "puntuacion": 62.6,
+      "puntuacion": 62.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe."
      },
      {
       "id": "shotcut",
       "posicion": 2,
-      "puntuacion": 59.9,
+      "puntuacion": 60.3,
       "papel": "alternativa",
       "cuando": "Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz."
      },
      {
       "id": "kdenlive",
       "posicion": 3,
-      "puntuacion": 59.3,
+      "puntuacion": 59.9,
       "papel": "alternativa",
       "cuando": "Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz."
      }
@@ -73023,9 +73023,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 69.7,
+    "puntuacion": 70.2,
     "ejes": {
-     "adopcion": 18.1,
+     "adopcion": 18.6,
      "mantenimiento": 16.5,
      "madurez": 10.0,
      "licencia": 12.0,
@@ -73230,10 +73230,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 62.6,
+    "puntuacion": 63.6,
     "ejes": {
-     "adopcion": 15.1,
-     "mantenimiento": 13.7,
+     "adopcion": 15.8,
+     "mantenimiento": 13.9,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 5.0,
@@ -73422,10 +73422,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 64.3,
+    "puntuacion": 65.4,
     "ejes": {
-     "adopcion": 18.1,
-     "mantenimiento": 9.7,
+     "adopcion": 18.6,
+     "mantenimiento": 10.3,
      "madurez": 9.0,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -73607,10 +73607,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 58.7,
+    "puntuacion": 59.4,
     "ejes": {
-     "adopcion": 7.0,
-     "mantenimiento": 18.9,
+     "adopcion": 7.9,
+     "mantenimiento": 18.8,
      "madurez": 5.2,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -75558,7 +75558,7 @@
     "puntuacion": 74.1,
     "ejes": {
      "adopcion": 20.7,
-     "mantenimiento": 19.3,
+     "mantenimiento": 19.2,
      "madurez": 6.6,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -75599,7 +75599,7 @@
      {
       "id": "short-video-factory",
       "posicion": 2,
-      "puntuacion": 46.7,
+      "puntuacion": 47.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos."
      }
@@ -75780,7 +75780,7 @@
    "calidad": {
     "puntuacion": 67.3,
     "ejes": {
-     "adopcion": 20.0,
+     "adopcion": 20.1,
      "mantenimiento": 8.5,
      "madurez": 6.2,
      "licencia": 15.0,
@@ -75822,14 +75822,14 @@
      {
       "id": "hunyuanvideo",
       "posicion": 2,
-      "puntuacion": 56.9,
+      "puntuacion": 57.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia."
      },
      {
       "id": "hunyuanvideo-1-5",
       "posicion": 3,
-      "puntuacion": 41.5,
+      "puntuacion": 41.7,
       "papel": "alternativa",
       "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más."
      }
@@ -75995,10 +75995,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 56.9,
+    "puntuacion": 57.1,
     "ejes": {
-     "adopcion": 13.5,
-     "mantenimiento": 10.8,
+     "adopcion": 13.8,
+     "mantenimiento": 10.7,
      "madurez": 7.1,
      "licencia": 5.0,
      "respaldo": 8.0,
@@ -76055,14 +76055,14 @@
      {
       "id": "hunyuanvideo",
       "posicion": 2,
-      "puntuacion": 56.9,
+      "puntuacion": 57.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia."
      },
      {
       "id": "hunyuanvideo-1-5",
       "posicion": 3,
-      "puntuacion": 41.5,
+      "puntuacion": 41.7,
       "papel": "alternativa",
       "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más."
      }
@@ -76246,10 +76246,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 53.0,
+    "puntuacion": 53.3,
     "ejes": {
-     "adopcion": 15.0,
-     "mantenimiento": 15.3,
+     "adopcion": 15.2,
+     "mantenimiento": 15.2,
      "madurez": 3.3,
      "licencia": 5.0,
      "respaldo": 5.0,
@@ -82705,10 +82705,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 48.3,
+    "puntuacion": 48.6,
     "ejes": {
-     "adopcion": 6.0,
-     "mantenimiento": 7.2,
+     "adopcion": 6.4,
+     "mantenimiento": 7.0,
      "madurez": 7.7,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -83309,9 +83309,9 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 46.7,
+    "puntuacion": 47.1,
     "ejes": {
-     "adopcion": 8.1,
+     "adopcion": 8.4,
      "mantenimiento": 8.3,
      "madurez": 7.8,
      "licencia": 12.0,
@@ -83358,7 +83358,7 @@
      {
       "id": "short-video-factory",
       "posicion": 2,
-      "puntuacion": 46.7,
+      "puntuacion": 47.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos."
      }
@@ -95818,10 +95818,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 46.4,
+    "puntuacion": 48.0,
     "ejes": {
-     "adopcion": 3.0,
-     "mantenimiento": 8.9,
+     "adopcion": 4.1,
+     "mantenimiento": 9.5,
      "madurez": 7.0,
      "licencia": 15.0,
      "respaldo": 8.0,
@@ -110655,10 +110655,10 @@
     "checked_at": "2026-11-15"
    },
    "calidad": {
-    "puntuacion": 62.5,
+    "puntuacion": 62.8,
     "ejes": {
-     "adopcion": 20.5,
-     "mantenimiento": 14.3,
+     "adopcion": 20.8,
+     "mantenimiento": 14.2,
      "madurez": 4.3,
      "licencia": 12.0,
      "respaldo": 5.0,
@@ -131275,10 +131275,10 @@
     "installation_tested": false
    },
    "calidad": {
-    "puntuacion": 41.5,
+    "puntuacion": 41.7,
     "ejes": {
-     "adopcion": 7.4,
-     "mantenimiento": 7.8,
+     "adopcion": 7.7,
+     "mantenimiento": 7.7,
      "madurez": 5.8,
      "licencia": 5.0,
      "respaldo": 8.0,
@@ -131328,14 +131328,14 @@
      {
       "id": "hunyuanvideo",
       "posicion": 2,
-      "puntuacion": 56.9,
+      "puntuacion": 57.1,
       "papel": "alternativa",
       "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia."
      },
      {
       "id": "hunyuanvideo-1-5",
       "posicion": 3,
-      "puntuacion": 41.5,
+      "puntuacion": 41.7,
       "papel": "alternativa",
       "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más."
      }
@@ -142057,10 +142057,10 @@
     "latest_release": "1.11.2 (2026-06-07)"
    },
    "calidad": {
-    "puntuacion": 59.6,
+    "puntuacion": 61.0,
     "ejes": {
-     "adopcion": 9.3,
-     "mantenimiento": 15.5,
+     "adopcion": 10.5,
+     "mantenimiento": 15.8,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -142251,9 +142251,9 @@
     "latest_release": "v1.6.2 (2026-11-12)"
    },
    "calidad": {
-    "puntuacion": 68.3,
+    "puntuacion": 68.5,
     "ejes": {
-     "adopcion": 17.4,
+     "adopcion": 17.6,
      "mantenimiento": 11.2,
      "madurez": 7.2,
      "licencia": 15.0,
@@ -144710,10 +144710,10 @@
     "latest_release": "v26.9.27 (2026-09-28)"
    },
    "calidad": {
-    "puntuacion": 59.9,
+    "puntuacion": 60.3,
     "ejes": {
-     "adopcion": 9.7,
-     "mantenimiento": 15.7,
+     "adopcion": 10.2,
+     "mantenimiento": 15.6,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 8.0,
@@ -144753,21 +144753,21 @@
      {
       "id": "opencut",
       "posicion": 1,
-      "puntuacion": 62.6,
+      "puntuacion": 62.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe."
      },
      {
       "id": "shotcut",
       "posicion": 2,
-      "puntuacion": 59.9,
+      "puntuacion": 60.3,
       "papel": "alternativa",
       "cuando": "Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz."
      },
      {
       "id": "kdenlive",
       "posicion": 3,
-      "puntuacion": 59.3,
+      "puntuacion": 59.9,
       "papel": "alternativa",
       "cuando": "Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz."
      }
@@ -144946,10 +144946,10 @@
     "checked_at": "2026-11-16"
    },
    "calidad": {
-    "puntuacion": 59.3,
+    "puntuacion": 59.9,
     "ejes": {
-     "adopcion": 4.0,
-     "mantenimiento": 19.0,
+     "adopcion": 4.5,
+     "mantenimiento": 19.1,
      "madurez": 10.0,
      "licencia": 12.0,
      "respaldo": 10.0,
@@ -144989,21 +144989,21 @@
      {
       "id": "opencut",
       "posicion": 1,
-      "puntuacion": 62.6,
+      "puntuacion": 62.7,
       "papel": "recomendado",
       "cuando": "Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe."
      },
      {
       "id": "shotcut",
       "posicion": 2,
-      "puntuacion": 59.9,
+      "puntuacion": 60.3,
       "papel": "alternativa",
       "cuando": "Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz."
      },
      {
       "id": "kdenlive",
       "posicion": 3,
-      "puntuacion": 59.3,
+      "puntuacion": 59.9,
       "papel": "alternativa",
       "cuando": "Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz."
      }
@@ -202036,10 +202036,10 @@
     "auto": 2
    },
    "calidad": {
-    "puntuacion": 50.3,
+    "puntuacion": 50.5,
     "ejes": {
-     "adopcion": 5.8,
-     "mantenimiento": 6.8,
+     "adopcion": 5.7,
+     "mantenimiento": 7.0,
      "madurez": 10.0,
      "licencia": 15.0,
      "respaldo": 5.0,
@@ -202395,11 +202395,205 @@
     "nivel": 1,
     "nombre": "Básico",
     "motivos": [
-     "preparación sencilla",
-     "app o instalador listo para usar"
+     "preparación sencilla"
     ],
     "origen": "auto",
     "auto": 1
+   }
+  },
+  "libass": {
+   "name": "libass",
+   "cat": 12,
+   "sub": "edicion",
+   "desc": "Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles.",
+   "how": "Interpreta eventos y estilos de un archivo ASS o SSA y devuelve imágenes con el texto colocado en el instante solicitado.",
+   "install": "Descarga el código fuente de la publicación 0.17.5 y compílalo en un entorno Linux de prueba con Autotools.",
+   "cases": [
+    "Comprobar si dos líneas con tamaños y posiciones distintos quedan legibles sobre un fotograma",
+    "Integrar subtítulos con estilos en un editor propio que necesite renderizar ASS"
+   ],
+   "stack": "C",
+   "choose_if": "Necesitas dibujar subtítulos ASS o SSA con estilos y posiciones desde una biblioteca o una integración.",
+   "avoid_if": "Prefieres editar o sincronizar subtítulos desde una interfaz gráfica.",
+   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Esta compilación de prueba es independiente de la versión que incluya tu reproductor. Empieza con un archivo propio. Comprueba la versión real de la biblioteca antes de procesar archivos ajenos.",
+   "combines_with": [
+    "ffmpeg",
+    "pysubs2"
+   ],
+   "alternatives": [],
+   "repo": "https://github.com/libass/libass",
+   "homepage": null,
+   "license": "ISC",
+   "lang": "C",
+   "updated": "2026-11-27",
+   "doc": "human/fichas/libass.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "scope": "Compilación local de Autotools y prueba con subtítulo propio.",
+    "api_note": "El programa lee subtítulos locales y escribe un PNG.",
+    "subscription_note": "Los agentes de código pueden ayudarte a preparar la compilación. La biblioteca se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+    "local_note": "Dibuja texto por reglas de tipografía y estilos. Funciona sin un modelo de IA.",
+    "cost_note": "Biblioteca ISC, sin pago obligatorio para compilar o ejecutar el ejemplo local.",
+    "hardware_note": "Equipo de uso general con Linux y herramientas de compilación. Para generar el PNG necesitas libpng y fuentes disponibles para el texto.",
+    "checked_at": "2026-11-27",
+    "review": "documented",
+    "sources": [
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/COPYING",
+     "https://github.com/libass/libass/releases/tag/0.17.5",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/configure.ac",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/test/test.c",
+     "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/.github/workflows/ghci.yml",
+     "https://github.com/libass/libass/actions/runs/28071659368",
+     "https://github.com/libass/libass/actions/runs/28071659370",
+     "https://github.com/libass/libass/security/advisories"
+    ],
+    "mode": "software",
+    "source_blob_sha": "889bb6e033b01e5c30bccca45dfab5815dc25920"
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Linux y terminal",
+     "Compilador C, make y pkg-config",
+     "Bibliotecas de desarrollo FreeType, FriBidi, HarfBuzz y libpng",
+     "Un ASS propio con un subtítulo activo durante el segundo 1"
+    ],
+    "steps": [
+     "Prepara un entorno Linux de prueba con compilador C, make, pkg-config y bibliotecas de desarrollo de FreeType, FriBidi, HarfBuzz y libpng. El flujo oficial enumera las dependencias por plataforma.",
+     "Extrae el archivo fuente de la publicación oficial 0.17.5 y abre una terminal en la carpeta extraída. Ejecuta ./configure --enable-test y luego make. En x86, usa NASM si la configuración lo solicita.",
+     "Prepara un archivo ASS propio con una línea activa entre 0 y 2 segundos. Sigue la primera prueba para dibujarla en un PNG. Abre el PNG y verifica el estilo y la posición."
+    ],
+    "command": "",
+    "command_status": "readme",
+    "entry_url": "https://github.com/libass/libass/releases/tag/0.17.5",
+    "source": "https://github.com/libass/libass/releases/tag/0.17.5",
+    "checked_at": "2026-11-27",
+    "note": "El archivo fuente oficial incluye configuración Autotools. Revisa las dependencias en el flujo oficial antes de compilar."
+   },
+   "first_step": "Prepara un entorno Linux de prueba con compilador C, make, pkg-config y bibliotecas de desarrollo de FreeType, FriBidi, HarfBuzz y libpng. El flujo oficial enumera las dependencias por plataforma.",
+   "sources": {
+    "readme_blob_sha": "ff4ad926f012b83091160f09b2ccf2ada1b968f4",
+    "root_tree_sha": "841c52561c39df6767e3948efa8e5307efb11f1f",
+    "readme_url": "https://github.com/libass/libass/blob/master/README.md",
+    "github_checked": "2026-11-27",
+    "collection": "altas-drive-2026-11-27"
+   },
+   "why": "Usos propuestos: Comprobar si dos líneas con tamaños y posiciones distintos quedan legibles sobre un fotograma; Integrar subtítulos con estilos en un editor propio que necesite renderizar ASS.",
+   "models": "El programa lee subtítulos locales y escribe un PNG.",
+   "source_archived": false,
+   "practical_examples": [
+    {
+     "scenario": "Comprobar si dos líneas con tamaños y posiciones distintos quedan legibles sobre un fotograma",
+     "status": "illustrative"
+    },
+    {
+     "scenario": "Integrar subtítulos con estilos en un editor propio que necesite renderizar ASS",
+     "status": "illustrative"
+    }
+   ],
+   "first_try": {
+    "action": "En una compilación Autotools con el programa de prueba habilitado, ejecuta ./test/test subtitulo.png muestra.ass 1.0 con una línea ASS propia activa durante el segundo 1",
+    "success": "Abre subtitulo.png. La imagen muestra el texto con el estilo del archivo y la línea original se conserva",
+    "execution": "proposed_not_executed"
+   },
+   "editorial_review": {
+    "status": "source_reviewed",
+    "checked_at": "2026-11-27",
+    "source": "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+    "source_blob_sha": "889bb6e033b01e5c30bccca45dfab5815dc25920",
+    "previous_category": [
+     12,
+     "edicion"
+    ],
+    "category_verdict": "confirmed",
+    "note": "La 0.17.5 corrige los dos avisos altos publicados. Autotools completó las pruebas oficiales en Ubuntu y el proyecto pasó regresiones en máquinas virtuales del mismo commit. La ejecución separada de Meson falló al instalar dependencias en una variante. La práctica de esta ficha usa Autotools.",
+    "checks": [
+     "identity",
+     "category",
+     "examples",
+     "installation_source",
+     "api_costs",
+     "claude_code",
+     "codex",
+     "antigravity",
+     "local_model"
+    ],
+    "installation_tested": false
+   },
+   "nivel": "ligero",
+   "que_es": "Biblioteca en C para renderizar subtítulos con formato ASS y SSA.",
+   "que_hace": "Convierte el contenido de un subtítulo en imagen y conserva estilos, tiempos y posiciones.",
+   "como_lo_hace": "Lee estilos y eventos, compone glifos con fuentes del sistema y devuelve imagen para el fotograma que pide la aplicación.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Procesa video con un filtro de subtítulos cuando la compilación incorpora una versión revisada de libass."
+    },
+    {
+     "id": "pysubs2",
+     "motivo": "Convierte y ajusta el archivo de subtítulos antes de revisar cómo se dibuja."
+    }
+   ],
+   "descripcion_fuentes": [
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/COPYING",
+    "https://github.com/libass/libass/releases/tag/0.17.5",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/configure.ac",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/test/test.c",
+    "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/.github/workflows/ghci.yml",
+    "https://github.com/libass/libass/actions/runs/28071659368",
+    "https://github.com/libass/libass/actions/runs/28071659370",
+    "https://github.com/libass/libass/security/advisories"
+   ],
+   "descripcion_revision": {
+    "batch": "altas-drive-2026-11-27",
+    "checked_at": "2026-11-27",
+    "status": "source_reviewed",
+    "installation_tested": false
+   },
+   "descripcion_github": {
+    "name_with_owner": "libass/libass",
+    "archived": false,
+    "pushed_at": "2026-11-21",
+    "license": "ISC",
+    "primary_language": "C",
+    "checked_at": "2026-11-27",
+    "latest_release": "0.17.5 (2026-06-24)"
+   },
+   "calidad": {
+    "puntuacion": 47.4,
+    "ejes": {
+     "adopcion": 3.3,
+     "mantenimiento": 11.1,
+     "madurez": 5.0,
+     "licencia": 15.0,
+     "respaldo": 8.0,
+     "seguridad": 3.0,
+     "encaje": 2.0
+    },
+    "licencia": "osi_permisiva",
+    "notas": [
+     "Adopción: sin dato de descargas_mes (se reparte el peso)"
+    ],
+    "fecha": "2026-11-27"
+   },
+   "complejidad_detalle": {
+    "nivel": 3,
+    "nombre": "Avanzado",
+    "motivos": [
+     "preparación pesada",
+     "requiere programar con él"
+    ],
+    "origen": "auto",
+    "auto": 3
    }
   }
  },
