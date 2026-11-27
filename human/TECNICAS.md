@@ -2,7 +2,7 @@
 
 Generado desde `data/techniques.json`. Textos propios de Alexandría a partir de publicaciones y documentación pública; las cifras citadas por terceros no se verificaron y ninguna técnica se ejecutó aquí.
 
-Revisión: 2026-11-26.
+Revisión: 2026-11-27.
 
 ## Diez reglas para empezar
 
@@ -1287,6 +1287,22 @@ Usa skills para escribir publicaciones, planificar la semana y auditar tu perfil
 **Antes de usarla:** LinkedIn prohíbe los bots y otras redes limitan la automatización; las funciones que comentan o responden solas pueden provocar bloqueos.
 
 Fuentes: [Repositorio de LinkedIn Agent](https://github.com/Jakeschincariol/linkedin-agent-skill) · [Repositorio de instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) · [Repositorio de Postiz](https://github.com/gitroomhq/postiz-app)
+
+### Revisar un video con un mosaico de fotogramas
+
+*Técnica · nivel inicial*
+
+Reúne muestras de un clip corto en un PNG para revisar encuadres, márgenes y legibilidad en una sola mirada.
+
+1. Elige ocho segundos de un clip propio. Selecciona un fotograma por segundo con el filtro fps de FFmpeg.
+2. Escala las muestras a 160 × 90 píxeles si el clip es 16:9. Con tile, colócalas en cuatro columnas y dos filas y guarda un PNG.
+3. Abre el archivo. Comprueba que las ocho muestras están en orden y marca dos instantes para revisar dentro del video. El ensayo con un patrón generado produjo un PNG de 640 × 180.
+
+**Por qué ayuda:** Una vista de conjunto ayuda a comparar cambios de encuadre, márgenes y contraste entre momentos del mismo clip.
+
+**Antes de usarla:** El mosaico muestra una selección de fotogramas. Reproduce el video para evaluar el movimiento, los intervalos entre muestras y el audio.
+
+Fuentes: [Filtros de FFmpeg](https://ffmpeg.org/ffmpeg-filters.html#tile)
 
 
 ## 📣 Marketing, SEO y ventas

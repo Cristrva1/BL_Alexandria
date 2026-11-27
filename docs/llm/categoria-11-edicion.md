@@ -1,6 +1,6 @@
 # Alexandría para agentes · Restauración, upscaling y edición
 
-Categoría 11 «Generar y editar imágenes con IA» › subcategoría `edicion`. 6 repos. Generado el 2026-11-26 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 11 «Generar y editar imágenes con IA» › subcategoría `edicion`. 6 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=11&sub=edicion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -81,7 +81,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/ImageMagick/ImageMagick · ImageMagick · nivel 1 · 55/100
 - **Qué es:** Herramienta de terminal y biblioteca de código abierto para transformar imágenes.
 - **Cuándo elegirlo:** Quieres convertir o preparar imágenes propias en tu equipo con acciones repetibles. Evítalo si Prefieres un editor visual o necesitas generar una imagen con IA.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C; API de IA: no; Sistema compatible y terminal; Paquete oficial para tu arquitectura; Un PNG propio de 800 × 800 píxeles.
+- **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no; Sistema compatible y terminal; Paquete oficial para tu arquitectura; Un PNG propio de 800 × 800 píxeles.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://imagemagick.org/download/
 - **Primera prueba propuesta (no ejecutada):** En una carpeta temporal con una imagen cuadrada propia llamada muestra.png, ejecuta magick muestra.png -resize 320x320 miniatura.png. Éxito: Se crea miniatura.png. Con una entrada cuadrada de 800 × 800 píxeles, la salida mide 320 × 320.
 

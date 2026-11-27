@@ -251,6 +251,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ffmpeg`, `whisper`, `obs-studio`
 **Alternativas (elige una):** `shotcut`, `opencut`
 
+## `libass`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=subtítulos,ass,ssa,renderizado,c
+
+**Qué es:** Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El programa lee subtítulos locales y escribe un PNG.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Dibuja texto por reglas de tipografía y estilos. Funciona sin un modelo de IA.
+- Coste: Sin pago a un modelo en la ruta básica. Biblioteca ISC, sin pago obligatorio para compilar o ejecutar el ejemplo local.
+- Equipo: Equipo normal; revisar dependencias. Equipo de uso general con Linux y herramientas de compilación. Para generar el PNG necesitas libpng y fuentes disponibles para el texto.
+**Repo:** https://github.com/libass/libass
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/libass/libass/releases/tag/0.17.5
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Necesitas dibujar subtítulos ASS o SSA con estilos y posiciones desde una biblioteca o una integración.
+**Evita si:** Prefieres editar o sincronizar subtítulos desde una interfaz gráfica.
+**Primera prueba propuesta:** En una compilación Autotools con el programa de prueba habilitado, ejecuta ./test/test subtitulo.png muestra.ass 1.0 con una línea ASS propia activa durante el segundo 1
+**Qué comprobar:** Abre subtitulo.png. La imagen muestra el texto con el estilo del archivo y la línea original se conserva
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `pysubs2`
+
 ## `lossless-cut`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,typescript
 

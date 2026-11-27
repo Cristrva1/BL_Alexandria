@@ -48,7 +48,7 @@ Grupo **Editores de video**: OpenCut ocupa la posición 1 de 3 (recomendado). Or
 |---:|---|---:|---|
 | 1 | **OpenCut** (esta ficha) ⭐ recomendado | 63 | Si buscas esto: editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. |
 | 2 | [Shotcut](shotcut.md) | 60 | Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. |
-| 3 | [Kdenlive](kdenlive.md) | 59 | Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. |
+| 3 | [Kdenlive](kdenlive.md) | 60 | Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz. |
 
 ## Acceso, coste y equipo
 

@@ -2,7 +2,7 @@
 
 Generado desde `data/handbook.json`. Guías de orientación documental; no acreditan instalación ni rendimiento. Las plantillas son originales de Alexandría.
 
-Revisión: 2026-11-26. Los precios, planes y versiones pueden cambiar.
+Revisión: 2026-11-27. Los precios, planes y versiones pueden cambiar.
 
 ## Índice
 
@@ -113,6 +113,7 @@ Revisión: 2026-11-26. Los precios, planes y versiones pueden cambiar.
 - [AI Harness Crash Course de Google Cloud Tech](#google-ai-harness-curso)
 - [Designed to Scale](#designed-to-scale)
 - [Neural Networks: Zero to Hero](#karpathy-zero-to-hero)
+- [Stanford CS336: entender modelos de lenguaje](#stanford-cs336)
 
 ### Seguridad defensiva y análisis
 
@@ -3659,6 +3660,45 @@ Curso de Andrej Karpathy para entender cómo aprende una red y cómo se construy
 
 - [Temario y requisitos del autor](https://karpathy.ai/zero-to-hero.html) · 2026-11-25
 
+<a id="stanford-cs336"></a>
+
+## Stanford CS336: entender modelos de lenguaje
+
+**Tipo:** Curso público
+
+Material universitario para entender tokenización, arquitectura, entrenamiento y evaluación de modelos de lenguaje.
+
+### Antes de empezar
+
+- Navegador y una hoja para el primer ejercicio.
+- Para realizar las tareas completas, prepara Python, PyTorch y bases de matemáticas y aprendizaje automático.
+
+### Primera prueba
+
+1. Abre la primera clase de la edición 2026 y localiza la explicación de tokenización.
+2. Escribe las palabras sol, sola y solar. Propón dos maneras de dividirlas en piezas, asigna números a las piezas y cuenta cuántas usa cada palabra.
+3. Explica en una frase qué cambia si tu vocabulario incluye sol como pieza reutilizable. Después abre la tarea inicial para ver cómo esa idea se convierte en código.
+
+**Qué comprobar:** Puedes mostrar dos listas de piezas, su diccionario de números y el recuento de cada palabra.
+
+**Cuenta y compatibilidad:** El temario y las grabaciones públicas se pueden consultar desde el navegador. El primer ejercicio se puede hacer a mano y funciona sin Claude Code, Codex, Antigravity ni un modelo local.
+
+**Costes:** La consulta y el ejercicio inicial no requieren compra. Algunas prácticas completas usan GPU. El alojamiento de GPU y los servicios externos tienen tarifas propias.
+
+### Mejoras después de la primera prueba
+
+- Si haces la parte de programación, prueba primero la corrección con ejemplos pequeños en CPU, como sugiere el equipo del curso.
+
+### Límites
+
+- El curso completo es avanzado y está principalmente en inglés. La actividad inicial de la ficha es una práctica breve diseñada por Alexandría.
+- Para tareas evaluadas, consulta la política del curso antes de usar asistentes.
+
+### Fuentes
+
+- [Temario y requisitos de Stanford](https://cs336.stanford.edu/) · 2026-11-27
+- [Archivo de la edición 2025](https://cs336.stanford.edu/spring2025/) · 2026-11-27
+
 ## Prompts
 
 Sustituye los campos entre corchetes. Revisa la respuesta antes de ejecutar acciones.
@@ -4439,3 +4479,15 @@ Tengo [oferta] para [público]. La pregunta frecuente es [pregunta]. Prepara tre
 **Resultado esperado:** Una tabla con tres piezas conectadas. Si ofreces reparación de bicicletas, puedes empezar con una lista de síntomas, seguir con una comparación de reparaciones y terminar con una solicitud de presupuesto. Puedes anotar guardados, consultas y solicitudes en una hoja.
 
 Idea de partida: [Curso de HubSpot Academy sobre contenido para el recorrido de compra](https://academy.hubspot.com/lessons/creating-content-for-the-buyers-journey). Texto reescrito por Alexandría.
+
+### Entender los tokens con un ejemplo que puedas comprobar
+
+Cuando quieras entender cómo un texto se convierte en números antes de entrar en un modelo.
+
+```text
+Usa [tres palabras] para mostrarme qué es un token. Haz una tabla con [dos reglas de división], las piezas de cada palabra y su recuento. Asigna un número fijo a cada pieza. Pídeme reconstruir una palabra desde su lista de números y comprueba mi respuesta. Aclara que las reglas y los números son didácticos. No atribuyas la división a un modelo comercial sin consultarlo.
+```
+
+**Resultado esperado:** Dos divisiones que puedes comparar y un ejercicio pequeño de reconstrucción. Basta una conversación o una hoja.
+
+Idea de partida: [Primera clase de Stanford CS336](https://cs336.stanford.edu/). Texto reescrito por Alexandría.

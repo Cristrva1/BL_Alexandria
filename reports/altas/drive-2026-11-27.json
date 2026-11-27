@@ -1,0 +1,40 @@
+{
+  "lote": "drive-2026-11-27",
+  "checked_at": "2026-11-27",
+  "added": [
+    {
+      "id": "libass",
+      "nivel": "ligero",
+      "borrador": false,
+      "full_name": "libass/libass",
+      "github_id": 11696642,
+      "stars": 1209,
+      "license": "ISC",
+      "pushed_at": "2026-11-21",
+      "archived": false,
+      "topics": [
+        "advanced-substation-alpha",
+        "ass",
+        "c",
+        "cross-platform",
+        "libass",
+        "ssa",
+        "substation-alpha",
+        "subtitle-format",
+        "subtitle-formats",
+        "subtitles"
+      ],
+      "homepage": null,
+      "default_branch": "master",
+      "language": "C",
+      "description": "libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format."
+    }
+  ],
+  "skipped": [],
+  "warnings": [],
+  "reciprocal": {},
+  "new_subs": [],
+  "notes": [
+    "Identidades consultadas en GitHub. Las pruebas de instalación se registran por separado."
+  ]
+}

@@ -72,7 +72,7 @@
     {
       "num": 12,
       "title": "Editar, grabar y generar video",
-      "count": 20
+      "count": 21
     },
     {
       "num": 13,
@@ -2326,6 +2326,7 @@
             "ffmpeg",
             "handbrake",
             "kdenlive",
+            "libass",
             "lossless-cut",
             "obs-studio",
             "opencut",
@@ -2336,7 +2337,7 @@
             "video-use",
             "videolingo"
           ],
-          "count": 14
+          "count": 15
         },
         {
           "id": "av-video-ia",
@@ -2708,6 +2709,7 @@
         "kokoro",
         "krita-ai-diffusion",
         "lemo-opuscar",
+        "libass",
         "livekit-agents",
         "liveportrait",
         "logo-design-skill",
@@ -2774,7 +2776,7 @@
         "whisperx",
         "yue"
       ],
-      "count": 120
+      "count": 121
     },
     {
       "id": "trading",
@@ -50264,7 +50266,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 48,
+      "puntuacion": 49,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -50391,7 +50393,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -50643,7 +50645,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -50762,7 +50764,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 61,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -51129,7 +51131,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 59,
+      "puntuacion": 60,
       "grupo": "g-editores-de-video",
       "mcp": false,
       "prov": [],
@@ -51241,6 +51243,133 @@
       ]
     },
     {
+      "id": "libass",
+      "name": "libass",
+      "cat": 12,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "complejidad": 3,
+      "puntuacion": 47,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "subtítulos",
+        "ass",
+        "ssa",
+        "renderizado",
+        "c"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Compilación local de Autotools y prueba con subtítulo propio.",
+        "api_note": "El programa lee subtítulos locales y escribe un PNG.",
+        "subscription_note": "Los agentes de código pueden ayudarte a preparar la compilación. La biblioteca se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+        "local_note": "Dibuja texto por reglas de tipografía y estilos. Funciona sin un modelo de IA.",
+        "cost_note": "Biblioteca ISC, sin pago obligatorio para compilar o ejecutar el ejemplo local.",
+        "hardware_note": "Equipo de uso general con Linux y herramientas de compilación. Para generar el PNG necesitas libpng y fuentes disponibles para el texto.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+          "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/COPYING",
+          "https://github.com/libass/libass/releases/tag/0.17.5",
+          "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/configure.ac",
+          "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/test/test.c",
+          "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/.github/workflows/ghci.yml",
+          "https://github.com/libass/libass/actions/runs/28071659368",
+          "https://github.com/libass/libass/actions/runs/28071659370",
+          "https://github.com/libass/libass/security/advisories"
+        ],
+        "mode": "software",
+        "source_blob_sha": "889bb6e033b01e5c30bccca45dfab5815dc25920"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Linux y terminal",
+          "Compilador C, make y pkg-config",
+          "Bibliotecas de desarrollo FreeType, FriBidi, HarfBuzz y libpng",
+          "Un ASS propio con un subtítulo activo durante el segundo 1"
+        ],
+        "steps": [
+          "Prepara un entorno Linux de prueba con compilador C, make, pkg-config y bibliotecas de desarrollo de FreeType, FriBidi, HarfBuzz y libpng. El flujo oficial enumera las dependencias por plataforma.",
+          "Extrae el archivo fuente de la publicación oficial 0.17.5 y abre una terminal en la carpeta extraída. Ejecuta ./configure --enable-test y luego make. En x86, usa NASM si la configuración lo solicita.",
+          "Prepara un archivo ASS propio con una línea activa entre 0 y 2 segundos. Sigue la primera prueba para dibujarla en un PNG. Abre el PNG y verifica el estilo y la posición."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/libass/libass/releases/tag/0.17.5",
+        "source": "https://github.com/libass/libass/releases/tag/0.17.5",
+        "checked_at": "2026-11-27",
+        "note": "El archivo fuente oficial incluye configuración Autotools. Revisa las dependencias en el flujo oficial antes de compilar."
+      },
+      "first_try": {
+        "action": "En una compilación Autotools con el programa de prueba habilitado, ejecuta ./test/test subtitulo.png muestra.ass 1.0 con una línea ASS propia activa durante el segundo 1",
+        "success": "Abre subtitulo.png. La imagen muestra el texto con el estilo del archivo y la línea original se conserva",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Comprobar si dos líneas con tamaños y posiciones distintos quedan legibles sobre un fotograma",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Integrar subtítulos con estilos en un editor propio que necesite renderizar ASS",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/libass/libass/blob/4a05d8127f525943ebf45fdc6497c9e665947f0d/README.md",
+        "source_blob_sha": "889bb6e033b01e5c30bccca45dfab5815dc25920",
+        "previous_category": [
+          12,
+          "edicion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La 0.17.5 corrige los dos avisos altos publicados. Autotools completó las pruebas oficiales en Ubuntu y el proyecto pasó regresiones en máquinas virtuales del mismo commit. La ejecución separada de Meson falló al instalar dependencias en una variante. La práctica de esta ficha usa Autotools.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles.",
+      "desc": "Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles.",
+      "stack": "C",
+      "repo": "https://github.com/libass/libass",
+      "install": "Seguir la instalación original: https://github.com/libass/libass/releases/tag/0.17.5",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Necesitas dibujar subtítulos ASS o SSA con estilos y posiciones desde una biblioteca o una integración.",
+      "avoid_if": "Prefieres editar o sincronizar subtítulos desde una interfaz gráfica.",
+      "combines_with": [
+        "ffmpeg",
+        "pysubs2"
+      ],
+      "alt": []
+    },
+    {
       "id": "lossless-cut",
       "name": "LosslessCut",
       "cat": 12,
@@ -51248,7 +51377,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 63,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -51866,7 +51995,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 46,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -52346,7 +52475,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 969 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 970 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -171,7 +171,7 @@
     ]
    }
   ],
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "local_inventory": {
    "checked_at": "2026-11-14",
    "status": "library_deleted_by_user",
@@ -581,7 +581,7 @@
    "title": "Editar, grabar y generar video",
    "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 20,
+   "count": 21,
    "subs": [
     {
      "key": "edicion",
@@ -15863,7 +15863,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 72,
    "complejidad": 2
   },
   {
@@ -16016,7 +16016,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 64,
    "complejidad": 1
   },
   {
@@ -16058,7 +16058,7 @@
    ],
    "desc": "Combina reconocimiento de voz, alineación, traducción, segmentación y doblaje. La ruta revisada utiliza Qwen3-ASR y ForcedAligner localmente por defecto; traducción y TTS tienen requisitos y costes distintos según proveedor.",
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 65,
    "complejidad": 2
   },
   {
@@ -20247,7 +20247,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 49,
    "complejidad": 2
   },
   {
@@ -20506,7 +20506,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 46,
+   "puntuacion": 48,
    "complejidad": 1
   },
   {
@@ -23292,7 +23292,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 2
   },
   {
@@ -29186,7 +29186,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 61,
    "complejidad": 1
   },
   {
@@ -29738,7 +29738,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 59,
+   "puntuacion": 60,
    "complejidad": 1,
    "grupo": "g-editores-de-video"
   },
@@ -40948,6 +40948,46 @@
    ],
    "puntuacion": 55,
    "complejidad": 1
+  },
+  {
+   "id": "libass",
+   "name": "libass",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "subtítulos",
+    "ass",
+    "ssa",
+    "renderizado",
+    "c"
+   ],
+   "stars": 1209,
+   "gh": "libass/libass",
+   "lib": false,
+   "pick": false,
+   "one": "Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles.",
+   "alt": [],
+   "doc": "human/fichas/libass.md",
+   "github_id": 11696642,
+   "lang": "C",
+   "license": "ISC",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 47,
+   "complejidad": 3
   }
  ],
  "discovery": {
@@ -48937,10 +48977,10 @@
    }
   ],
   "editorial_review": {
-   "total": 969,
-   "reviewed": 969,
-   "date": "2026-11-26",
-   "report": "reports/drive-2026-11-26.md",
+   "total": 970,
+   "reviewed": 970,
+   "date": "2026-11-27",
+   "report": "reports/drive-2026-11-27.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."
   },
   "goal_groups": [
