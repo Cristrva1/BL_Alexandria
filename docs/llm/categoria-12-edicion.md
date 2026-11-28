@@ -1,6 +1,6 @@
 # Alexandría para agentes · Edición, grabación y subtítulos
 
-Categoría 12 «Editar, grabar y generar video» › subcategoría `edicion`. 13 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 12 «Editar, grabar y generar video» › subcategoría `edicion`. 14 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=12&sub=edicion · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,19 +18,20 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `ffmpeg` | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio… | 2 Intermedio | 72 | LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later) (OSI copyleft) | sin grupo |
-| `obs-studio` | App de escritorio libre para grabar pantalla y transmitir en directo, con… | 1 Básico | 70 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `ffmpeg` | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio… | 2 Intermedio | 70 | LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later) (OSI copyleft) | sin grupo |
+| `obs-studio` | App de escritorio libre para grabar pantalla y transmitir en directo, con… | 1 Básico | 69 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `cap` | Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos… | 1 Básico | 68 | AGPL-3.0 (partes MIT) (open-core) | sin grupo |
 | `videolingo` | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `lossless-cut` | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en… | 1 Básico | 64 | GPL-2.0 (OSI copyleft) | sin grupo |
-| `concat` | Editor de video local con interfaz y mecanismos de automatización mediante… | 2 Intermedio | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `lossless-cut` | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en… | 1 Básico | 63 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `opencut` | Editor de video abierto cuya versión clásica puede probarse en la web mientras… | 2 Intermedio | 63 | MIT (OSI permisiva) | recomendado |
-| `handbrake` | Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
-| `kdenlive` | Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | alternativa |
+| `concat` | Editor de video local con interfaz y mecanismos de automatización mediante… | 2 Intermedio | 62 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `handbrake` | Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz… | 1 Básico | 60 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `shotcut` | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | alternativa |
 | `davinci-resolve-mcp` | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
+| `kdenlive` | Editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | alternativa |
 | `pysubs2` | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la… | 2 Intermedio | 50 | MIT (OSI permisiva) | sin grupo |
-| `openrv` | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y… | 1 Básico | 48 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `libass` | Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de… | 3 Avanzado | 47 | ISC (OSI permisiva) | sin grupo |
+| `openrv` | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y… | 1 Básico | 47 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -38,7 +39,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### FFmpeg (`ffmpeg`)
 
-- **Repo:** https://github.com/FFmpeg/FFmpeg · LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later) · nivel 2 · 72/100
+- **Repo:** https://github.com/FFmpeg/FFmpeg · LGPL-2.1-or-later (partes opcionales GPL-2.0-or-later) · nivel 2 · 70/100
 - **Qué es:** FFmpeg, conjunto de librerías y herramientas para procesar contenido multimedia. Licencia mayoritariamente LGPL con componentes opcionales GPL (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Convertir un video para una plataforma; Extraer audio de una grabación propia.
 - **Requisitos:** nivel 2: instalación simple, pero se usa con opciones de línea de comandos; Binario apropiado al sistema; archivo de video propio; espacio de salida; hardware prerequisites; API de IA: no; Binario apropiado al sistema; archivo de video propio; espacio de salida.
@@ -49,14 +50,27 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OBS Studio (`obs-studio`)
 
-- **Repo:** https://github.com/obsproject/obs-studio · GPL-2.0 · nivel 1 · 70/100
+- **Repo:** https://github.com/obsproject/obs-studio · GPL-2.0 · nivel 1 · 69/100
 - **Qué es:** OBS Studio, software libre para grabar y transmitir vídeo en directo. Licencia GPL-2.0 o posterior. Es muy maduro (~80k estrellas, 33.0.1).
 - **Cuándo elegirlo:** Casos: Grabar una explicación de pantalla; Preparar escenas para una transmisión.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Instalador oficial; permisos de captura; micrófono opcional; disco; hardware prerequisites; API de IA: no; Instalador oficial; permisos de captura; micrófono opcional; disco.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://obsproject.com/download
 - **Primera prueba propuesta (no ejecutada):** Crea una escena con pantalla y micrófono y graba veinte segundos Éxito: El archivo tiene imagen, audio y niveles aceptables
 - **Combina con:** `lossless-cut`, `opencut`, `faster-whisper` [29/stt], `rnnoise` [29/audio], `deep-live-cam` [28/rostros], `rvc` [29/tts]
+- **Alternativas:** `cap`
 - **Riesgos y avisos:** Sin alternativas declaradas. Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado.
+
+### Cap (`cap`)
+
+- **Repo:** https://github.com/CapSoftware/Cap · AGPL-3.0 (partes MIT) · nivel 1 · 68/100
+- **Qué es:** App de escritorio de código abierto para grabar la pantalla y compartir los videos, pensada como alternativa a Loom.
+- **Cuándo elegirlo:** Casos: Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4; Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada. Evítalo si necesitas transmitir en directo con escenas y varias fuentes, o vas a grabar para un uso comercial sin pagar la licencia.
+- **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml, docker-compose.yml, package.json; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/CapSoftware/Cap/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** En el modo Studio, sin iniciar sesión, graba 15 segundos de una ventana con un documento de prueba propio mientras dices una frase al micrófono Éxito: Al detener la grabación se abre el editor. Exporta a MP4, abre el archivo en tu reproductor y comprueba que se ve la…
+- **Combina con:** `ffmpeg`, `lossless-cut`, `handbrake`
+- **Alternativas:** `obs-studio`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
 
 ### VideoLingo (`videolingo`)
 
@@ -77,7 +91,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LosslessCut (`lossless-cut`)
 
-- **Repo:** https://github.com/mifi/lossless-cut · GPL-2.0 · nivel 1 · 64/100
+- **Repo:** https://github.com/mifi/lossless-cut · GPL-2.0 · nivel 1 · 63/100
 - **Qué es:** LosslessCut, app de escritorio para editar vídeo y audio sin pérdida mediante FFmpeg, de @mifi. Licencia GPL-2.0. Es madura (~46k estrellas, v3.70.2) y la mantiene una sola persona.
 - **Cuándo elegirlo:** Casos: Quitar una parte de una grabación; Separar o unir medios compatibles.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Distribución para tu sistema; archivo compatible; espacio de salida; hardware prerequisites; API de IA: no; Distribución para tu sistema; archivo compatible; espacio de salida.
@@ -85,17 +99,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Marca dos puntos de un video propio y exporta el segmento sin recodificar Éxito: Compruebas duración, comienzo, final y pistas del clip
 - **Combina con:** `ffmpeg`, `yt-dlp` [4/social], `whisperx` [29/stt], `moviepy` [30/motores], `obs-studio`, `opencut`
 - **Riesgos y avisos:** Sin alternativas declaradas. Descarga solo desde las fuentes oficiales. Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo.
-
-### Concat (`concat`)
-
-- **Repo:** https://github.com/jub0t/Concat · AGPL-3.0 · nivel 2 · 63/100
-- **Qué es:** Concat, editor de vídeo libre y multiplataforma, de @jub0t. Licencia AGPL-3.0 o posterior, con licencia comercial disponible. Es reciente (~18k estrellas, v0.2.11).
-- **Cuándo elegirlo:** Casos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP.
-- **Requisitos:** nivel 2: preparación media; Distribución compatible; clip propio; modelos opcionales descargados; permisos de automatización para MCP; hardware prerequisites; API de IA: no; Distribución compatible; clip propio; modelos opcionales descargados; permisos de automatización para MCP.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/jub0t/Concat/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Recorta una copia de un clip y añade subtítulos locales antes de exportar Éxito: Puedes revisar texto, puntos de corte y archivo final
-- **Combina con:** `claude-code` [20/terminal], `ffmpeg`, `yt-dlp` [4/social]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Está en beta; MCP puede usar la ventana o un proceso separado y sus modos tienen límites distintos al editar el mismo proyecto.
 
 ### OpenCut (`opencut`)
 
@@ -109,9 +112,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `shotcut`, `kdenlive`
 - **Riesgos y avisos:** Sin alternativas declaradas. En reescritura: el código del repo principal aún no es un editor utilizable. El proyecto se reescribe; la versión clásica web y la rama principal no tienen necesariamente las mismas funciones ni instalación.
 
+### Concat (`concat`)
+
+- **Repo:** https://github.com/jub0t/Concat · AGPL-3.0 · nivel 2 · 62/100
+- **Qué es:** Concat, editor de vídeo libre y multiplataforma, de @jub0t. Licencia AGPL-3.0 o posterior, con licencia comercial disponible. Es reciente (~18k estrellas, v0.2.11).
+- **Cuándo elegirlo:** Casos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP.
+- **Requisitos:** nivel 2: preparación media; Distribución compatible; clip propio; modelos opcionales descargados; permisos de automatización para MCP; hardware prerequisites; API de IA: no; Distribución compatible; clip propio; modelos opcionales descargados; permisos de automatización para MCP.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/jub0t/Concat/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Recorta una copia de un clip y añade subtítulos locales antes de exportar Éxito: Puedes revisar texto, puntos de corte y archivo final
+- **Combina con:** `claude-code` [20/terminal], `ffmpeg`, `yt-dlp` [4/social]
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Sin alternativas declaradas. Está en beta; MCP puede usar la ventana o un proceso separado y sus modos tienen límites distintos al editar el mismo proyecto.
+
 ### HandBrake (`handbrake`)
 
-- **Repo:** https://github.com/HandBrake/HandBrake · GPL-2.0 · nivel 1 · 61/100
+- **Repo:** https://github.com/HandBrake/HandBrake · GPL-2.0 · nivel 1 · 60/100
 - **Qué es:** Transcodificador de vídeo de código abierto (GPL-2.0 en la mayoría de archivos) mantenido por el HandBrake Team desde 2003. Muy maduro.
 - **Cuándo elegirlo:** Casos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad.
 - **Requisitos:** nivel 1: app de escritorio con instalador para Windows, macOS y Linux; C; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -119,18 +133,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala HandBrake, abre un vídeo corto y conviértelo con un preset de 1080p. Éxito: Obtienes un MP4 reproducible en el móvil con menor tamaño que el original.
 - **Combina con:** `ffmpeg`, `obs-studio`, `lossless-cut`, `jellyfin` [15/lectura]
 - **Riesgos y avisos:** No elimina protecciones anticopia; respeta los derechos del material que conviertes.
-
-### Kdenlive (`kdenlive`)
-
-- **Repo:** https://github.com/KDE/kdenlive · GPL-3.0 · nivel 1 · 60/100 · alternativa en «Editores de video»
-- **Qué es:** Editor de vídeo de código abierto (GPL-3.0 según GitHub) desarrollado por la comunidad KDE. El repositorio de GitHub es un espejo: el desarrollo canónico vive en invent.kde.org (multimedia/kdenlive). Maduro, con versiones trimestrales.
-- **Cuándo elegirlo:** Casos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/KDE/kdenlive/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Kdenlive desde kdenlive.org, crea un proyecto, añade clips a la línea de tiempo y renderiza un MP4. Éxito: El render termina y el archivo reproduce el montaje.
-- **Combina con:** `ffmpeg`, `whisper` [29/stt], `obs-studio`
-- **Alternativas:** `opencut`, `shotcut`
-- **Riesgos y avisos:** Alternativas (elige una): shotcut, opencut. Reporta incidencias y contribuye en invent.kde.org, no en el espejo de GitHub.
 
 ### Shotcut (`shotcut`)
 
@@ -155,6 +157,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `ffmpeg`, `whisper` [29/stt]
 - **Riesgos y avisos:** Sin alternativas declaradas. Trabaja sobre copias de proyectos: el agente puede modificar la línea de tiempo. Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve.
 
+### Kdenlive (`kdenlive`)
+
+- **Repo:** https://github.com/KDE/kdenlive · GPL-3.0 · nivel 1 · 59/100 · alternativa en «Editores de video»
+- **Qué es:** Editor de vídeo de código abierto (GPL-3.0 según GitHub) desarrollado por la comunidad KDE. El repositorio de GitHub es un espejo: el desarrollo canónico vive en invent.kde.org (multimedia/kdenlive). Maduro, con versiones trimestrales.
+- **Cuándo elegirlo:** Casos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/KDE/kdenlive/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala Kdenlive desde kdenlive.org, crea un proyecto, añade clips a la línea de tiempo y renderiza un MP4. Éxito: El render termina y el archivo reproduce el montaje.
+- **Combina con:** `ffmpeg`, `whisper` [29/stt], `obs-studio`
+- **Alternativas:** `opencut`, `shotcut`
+- **Riesgos y avisos:** Alternativas (elige una): shotcut, opencut. Reporta incidencias y contribuye en invent.kde.org, no en el espejo de GitHub.
+
 ### pysubs2 (`pysubs2`)
 
 - **Repo:** https://github.com/tkarabela/pysubs2 · MIT · nivel 2 · 50/100
@@ -163,17 +177,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; API de IA: no; Python 3.12 o posterior y entorno virtual.; Un archivo de subtítulos de ejemplo..
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install pysubs2` — fuente: https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md
 - **Primera prueba propuesta (no ejecutada):** Convierte una copia de un ASS de dos líneas a SRT siguiendo el ejemplo del README fijado. Éxito: Abre el SRT y comprueba que conserva las dos líneas y sus tiempos.
-
-### OpenRV (`openrv`)
-
-- **Repo:** https://github.com/AcademySoftwareFoundation/OpenRV · Apache-2.0 · nivel 1 · 48/100
-- **Qué es:** Open RV, visor de imágenes y secuencias para artistas de VFX y animación, de la Academy Software Foundation. Licencia Apache-2.0 con componentes bajo otras licencias (GitHub muestra NOASSERTION). Tiene ~800 estrellas (v4.0.2).
-- **Cuándo elegirlo:** Casos: Revisar una entrega de animación; Comparar versiones de un efecto visual.
-- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Build compatible o herramientas de compilación; secuencia o video de prueba; hardware prerequisites; API de IA: no; Build compatible o herramientas de compilación; secuencia o video de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone --recursive https://github.com/AcademySoftwareFoundation/OpenRV.git` — fuente: https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre dos versiones de una toma y compara fotogramas en el mismo punto Éxito: Puedes observar diferencias de imagen sin desalinear el tiempo
-- **Combina con:** `blender` [26/creacion-3d], `ffmpeg`, `comfyui` [11/interfaces]
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo.
 
 ### libass (`libass`)
 
@@ -184,6 +187,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/libass/libass/releases/tag/0.17.5
 - **Primera prueba propuesta (no ejecutada):** En una compilación Autotools con el programa de prueba habilitado, ejecuta ./test/test subtitulo.png muestra.ass 1.0 con una línea ASS propia activa durante el segundo 1 Éxito: Abre subtitulo.png. La imagen muestra el texto con el estilo del archivo y la línea original se conserva
 - **Combina con:** `ffmpeg`, `pysubs2`
+
+### OpenRV (`openrv`)
+
+- **Repo:** https://github.com/AcademySoftwareFoundation/OpenRV · Apache-2.0 · nivel 1 · 47/100
+- **Qué es:** Open RV, visor de imágenes y secuencias para artistas de VFX y animación, de la Academy Software Foundation. Licencia Apache-2.0 con componentes bajo otras licencias (GitHub muestra NOASSERTION). Tiene ~800 estrellas (v4.0.2).
+- **Cuándo elegirlo:** Casos: Revisar una entrega de animación; Comparar versiones de un efecto visual.
+- **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; Build compatible o herramientas de compilación; secuencia o video de prueba; hardware prerequisites; API de IA: no; Build compatible o herramientas de compilación; secuencia o video de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone --recursive https://github.com/AcademySoftwareFoundation/OpenRV.git` — fuente: https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre dos versiones de una toma y compara fotogramas en el mismo punto Éxito: Puedes observar diferencias de imagen sin desalinear el tiempo
+- **Combina con:** `blender` [26/creacion-3d], `ffmpeg`, `comfyui` [11/interfaces]
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

@@ -35,9 +35,9 @@ go install / releases.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OWASP Dependency-Check](dependency-check.md)
+[Brakeman](brakeman.md) · [CodeQL](codeql.md) · [gosec](gosec.md) · [OWASP Dependency-Check](dependency-check.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.7.1 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-16).
 

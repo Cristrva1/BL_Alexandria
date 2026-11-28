@@ -47,8 +47,8 @@ Grupo **Analítica web auto-hospedada**: Umami ocupa la posición 1 de 3 (recome
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Umami** (esta ficha) ⭐ recomendado | 74 | Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
-| 2 | [Plausible Analytics](plausible.md) | 59 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
-| 3 | [Matomo](matomo.md) | 57 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
+| 2 | [Plausible Analytics](plausible.md) | 60 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
+| 3 | [Matomo](matomo.md) | 58 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
 
 ## Acceso, coste y equipo
 

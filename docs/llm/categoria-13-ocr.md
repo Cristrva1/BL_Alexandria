@@ -18,13 +18,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `paddleocr` | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos… | 2 Intermedio | 72 | Apache-2.0 (OSI permisiva) | recomendado |
+| `paddleocr` | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos… | 2 Intermedio | 73 | Apache-2.0 (OSI permisiva) | recomendado |
 | `ocrmypdf` | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | 1 Básico | 65 | MPL-2.0 (OSI copyleft) | sin grupo |
 | `tesseract` | Motor de OCR de código abierto que reconoce texto en imágenes y documentos… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `surya` | OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de… | 3 Avanzado | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `unlimited-ocr` | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | 3 Avanzado | 62 | MIT (OSI permisiva) | alternativa |
 | `pdf-craft` | Herramienta para convertir libros escaneados en PDF a documentos editables… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `olmocr` | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 50 | Apache-2.0 (OSI permisiva) | alternativa |
+| `olmocr` | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 51 | Apache-2.0 (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -32,7 +32,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PaddleOCR (`paddleocr`)
 
-- **Repo:** https://github.com/PaddlePaddle/PaddleOCR · Apache-2.0 · nivel 2 · 72/100 · recomendado en «OCR de documentos»
+- **Repo:** https://github.com/PaddlePaddle/PaddleOCR · Apache-2.0 · nivel 2 · 73/100 · recomendado en «OCR de documentos»
 - **Qué es:** Kit de OCR y motor de IA documental de Baidu sobre PaddlePaddle, Apache 2.0. Muy usado (más de 6.000 repositorios dependientes según su insignia) y activo (v3.7.0, último push en septiembre de 2026).
 - **Cuándo elegirlo:** Casos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba; hardware prerequisites; API de IA: no; Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba.
@@ -107,7 +107,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### olmOCR (`olmocr`)
 
-- **Repo:** https://github.com/allenai/olmocr · Apache-2.0 · nivel 3 · 50/100 · alternativa en «OCR de documentos»
+- **Repo:** https://github.com/allenai/olmocr · Apache-2.0 · nivel 3 · 51/100 · alternativa en «OCR de documentos»
 - **Qué es:** Kit del Allen Institute for AI (Apache 2.0) para convertir PDF y documentos de imagen en texto limpio. Versión v0.4.27; el último push es de marzo de 2026 y el último modelo anunciado en el README, de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM.
 - **Requisitos:** nivel 3: preparación pesada, necesita GPU; Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF; hardware prerequisites; API de IA: opcional; Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF.

@@ -4,7 +4,7 @@
 
 Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.
 
-21 repos · 2 secciones
+22 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 13 repos
+- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 14 repos
 - [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 8 repos
 
 ## Edición, grabación y subtítulos
@@ -29,6 +29,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [OpenCut](../fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Tu objetivo encaja con estos ejemplos: Evaluar una alternativa de edición abierta; Estudiar la arquitectura de un editor con plugins | Sin clave propia de API de IA en la ruta básica |
 | [OBS Studio](../fichas/obs-studio.md) | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | Tu objetivo encaja con estos ejemplos: Grabar una explicación de pantalla; Preparar escenas para una transmisión | Sin clave propia de API de IA en la ruta básica |
 | [LosslessCut](../fichas/lossless-cut.md) | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | Tu objetivo encaja con estos ejemplos: Quitar una parte de una grabación; Separar o unir medios compatibles | Sin clave propia de API de IA en la ruta básica |
+| [Cap](../fichas/cap.md) | Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace. | Tu objetivo encaja con estos ejemplos: Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4; Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada | Sin clave propia de API de IA en la ruta básica |
 | [HandBrake](../fichas/handbrake.md) | Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo. | Tu objetivo encaja con estos ejemplos: convertir grabaciones de cámara o pantalla a MP4 compatibles con móviles y webs; reducir el tamaño de una videoteca manteniendo la calidad | Sin clave propia de API de IA en la ruta básica |
 | [VideoLingo](../fichas/videolingo.md) | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa. | Tu objetivo encaja con estos ejemplos: Subtitular un tutorial propio; Preparar una traducción de una demostración | Depende de la ruta elegida |
 | [Concat](../fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Tu objetivo encaja con estos ejemplos: Editar un video sin subir el material; Automatizar una variante de montaje mediante MCP | Sin clave propia de API de IA en la ruta básica |

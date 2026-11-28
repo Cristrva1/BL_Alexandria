@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 59/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,8 +47,8 @@ Grupo **Analítica web auto-hospedada**: Plausible Analytics ocupa la posición 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Umami](umami.md) ⭐ recomendado | 74 | Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
-| 2 | **Plausible Analytics** (esta ficha) | 59 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
-| 3 | [Matomo](matomo.md) | 57 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
+| 2 | **Plausible Analytics** (esta ficha) | 60 | Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. |
+| 3 | [Matomo](matomo.md) | 58 | Si buscas esto: alternativa open source a Google Analytics con control total de los datos. |
 
 ## Acceso, coste y equipo
 

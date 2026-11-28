@@ -48,10 +48,10 @@ Grupo **OCR de documentos**: Tesseract ocupa la posición 2 de 4 (alternativa). 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [PaddleOCR](paddleocr.md) ⭐ recomendado | 72 | Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación. |
+| 1 | [PaddleOCR](paddleocr.md) ⭐ recomendado | 73 | Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación. |
 | 2 | **Tesseract** (esta ficha) | 64 | Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes. |
 | 3 | [Unlimited-OCR](unlimited-ocr.md) | 62 | Si quieres parsear documentos largos de una sola pasada con visión. |
-| 4 | [olmOCR](olmocr.md) | 50 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
+| 4 | [olmOCR](olmocr.md) | 51 | Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU). |
 
 ## Acceso, coste y equipo
 

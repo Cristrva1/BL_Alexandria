@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**964 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**973 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -9,21 +9,21 @@
 ## Índice
 
 1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 19
-2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 33
+2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 34
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 36
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 28
 5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 27
 6. [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) — 30
-7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 26
+7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 27
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 33
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 33
 10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 33
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 11
-12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 21
-13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 22
+12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 22
+13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 23
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 25
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 51
-16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 141
+16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 146
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 18
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 19
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 30
@@ -87,6 +87,7 @@ _Catálogos de skills, plugins y métodos generales de desarrollo. Elige según 
 | [Awesome Claude Code](human/fichas/awesome-claude-code.md) | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md) | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | [wshobson/agents](human/fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
+| [Skills CLI (Vercel Labs)](human/fichas/vercel-skills.md) | Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [Awesome GitHub Copilot](human/fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | [Awesome Agent Skills](human/fichas/awesome-agent-skills.md) | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [Claude Code Templates](human/fichas/claude-code-templates.md) | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
@@ -365,6 +366,7 @@ _Índices de código, análisis, calidad, benchmarks y herramientas de desarroll
 | [fzf](human/fichas/fzf.md) | Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [lazygit](human/fichas/lazygit.md) | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [ripgrep](human/fichas/ripgrep.md) | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Pake](human/fichas/pake.md) | Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [openai-python](human/fichas/openai-python.md) | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. | API de IA necesaria | 📚 librería/SDK | 🟢 fácil |
 | [npkill](human/fichas/npkill.md) | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [APScheduler](human/fichas/apscheduler.md) | Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
@@ -595,6 +597,7 @@ _Editores, grabadores, utilidades de medios y modelos de video generativo. La ed
 | [OpenCut](human/fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [OBS Studio](human/fichas/obs-studio.md) | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [LosslessCut](human/fichas/lossless-cut.md) | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Cap](human/fichas/cap.md) | Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [HandBrake](human/fichas/handbrake.md) | Transcodificador de vídeo libre para Linux, macOS y Windows con interfaz gráfica, CLI, presets por dispositivo y colas de trabajo. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [VideoLingo](human/fichas/videolingo.md) | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa. | Depende de la ruta elegida | 🖥️ app | 🟡 medio |
 | [Concat](human/fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
@@ -655,6 +658,7 @@ _Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el format
 | ⭐ [Stirling-PDF](human/fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [PDFMathTranslate](human/fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida | 🖥️ app | 🟢 fácil |
 | [docuseal](human/fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [Documenso](human/fichas/documenso.md) | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. | API de IA opcional | 🖥️ app | 🔴 pesado |
 | [pdfcraft](human/fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Gestión y archivo de documentos
@@ -958,8 +962,13 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [Semgrep](human/fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [MobSF (Mobile Security Framework)](human/fichas/mobsf.md) | Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Lynis](human/fichas/lynis.md) | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [CodeQL](human/fichas/codeql.md) | Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [gosec](human/fichas/gosec.md) | Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código. | API de IA opcional | 🖥️ app | 🟢 fácil |
+| [Bandit](human/fichas/bandit.md) | Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [OWASP Dependency-Check](human/fichas/dependency-check.md) | Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [Brakeman](human/fichas/brakeman.md) | Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [bla](human/fichas/bla.md) | Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [DefectDojo](human/fichas/defectdojo.md) | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Dependency-Track](human/fichas/dependency-track.md) | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |

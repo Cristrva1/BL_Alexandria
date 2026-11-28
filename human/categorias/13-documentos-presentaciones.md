@@ -4,7 +4,7 @@
 
 Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.
 
-22 repos · 4 secciones
+23 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -21,7 +21,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Conversión de documentos para IA](#conversión-de-documentos-para-ia) — 9 repos
 - [OCR](#ocr) — 7 repos
-- [Herramientas PDF](#herramientas-pdf) — 4 repos
+- [Herramientas PDF](#herramientas-pdf) — 5 repos
 - [Gestión y archivo de documentos](#gestión-y-archivo-de-documentos) — 2 repos
 
 ## Conversión de documentos para IA
@@ -57,6 +57,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Stirling-PDF](../fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz | Sin clave propia de API de IA en la ruta básica |
 | [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Tu objetivo encaja con estos ejemplos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia | Depende de la ruta elegida |
 | [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental | Sin clave propia de API de IA en la ruta básica |
+| [Documenso](../fichas/documenso.md) | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. | Tu objetivo encaja con estos ejemplos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla | API de IA opcional |
 | [pdfcraft](../fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba | Sin clave propia de API de IA en la ruta básica |
 
 ## Gestión y archivo de documentos

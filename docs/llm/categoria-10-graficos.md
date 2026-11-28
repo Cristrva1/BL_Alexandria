@@ -20,9 +20,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `echarts` | Librería de visualización potente para gráficos y dashboards web (proyecto… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | recomendado |
 | `d3` | Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y… | 2 Intermedio | 70 | ISC (OSI permisiva) | alternativa |
-| `recharts` | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 69 | MIT (OSI permisiva) | alternativa |
-| `chart-js` | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
-| `uplot` | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
+| `recharts` | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 70 | MIT (OSI permisiva) | alternativa |
+| `chart-js` | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 65 | MIT (OSI permisiva) | alternativa |
+| `uplot` | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -54,7 +54,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Recharts (`recharts`)
 
-- **Repo:** https://github.com/recharts/recharts · MIT · nivel 2 · 69/100 · alternativa en «Librerías de gráficos»
+- **Repo:** https://github.com/recharts/recharts · MIT · nivel 2 · 70/100 · alternativa en «Librerías de gráficos»
 - **Qué es:** Recharts, librería de gráficos para React construida con D3. Licencia MIT. Es madura (~28k estrellas, v3.10.1).
 - **Cuándo elegirlo:** Casos: Visualizar una serie de ventas; Comparar categorías en un dashboard React.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; Node; react-is compatible; datos de prueba; hardware prerequisites; API de IA: no; React; Node; react-is compatible; datos de prueba.
@@ -71,7 +71,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Chart.js (`chart-js`)
 
-- **Repo:** https://github.com/chartjs/Chart.js · MIT · nivel 2 · 64/100 · alternativa en «Librerías de gráficos»
+- **Repo:** https://github.com/chartjs/Chart.js · MIT · nivel 2 · 65/100 · alternativa en «Librerías de gráficos»
 - **Qué es:** Chart.js, librería JavaScript de gráficos sobre Canvas para diseñadores y desarrolladores. Licencia MIT. Es muy madura (~68k estrellas, v4.6.1).
 - **Cuándo elegirlo:** Casos: Añadir gráficos a una página sencilla; Comparar resultados por periodo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript; canvas; gestor npm o script distribuido; hardware prerequisites; API de IA: no; JavaScript; canvas; gestor npm o script distribuido.
@@ -83,7 +83,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### uPlot (`uplot`)
 
-- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 56/100
+- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 57/100
 - **Qué es:** μPlot, librería compacta de gráficos de series temporales sobre Canvas 2D, de @leeoniya. Licencia MIT. Es madura (~11k estrellas, 1.6.32).
 - **Cuándo elegirlo:** Casos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript; datos temporales ordenados; estilos y build distribuidos; hardware prerequisites; API de IA: no; JavaScript; datos temporales ordenados; estilos y build distribuidos.

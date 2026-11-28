@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; requiere programar con él
 
-**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,9 +47,9 @@ Grupo **Formatos de tabla para data lakes**: Apache Iceberg ocupa la posición 2
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Delta Lake](delta-lake.md) ⭐ recomendado | 63 | Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. |
-| 2 | **Apache Iceberg** (esta ficha) | 62 | Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. |
-| 3 | [hudi](hudi.md) | 51 | Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
+| 1 | [Delta Lake](delta-lake.md) ⭐ recomendado | 61 | Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. |
+| 2 | **Apache Iceberg** (esta ficha) | 61 | Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. |
+| 3 | [hudi](hudi.md) | 50 | Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 
 ## Acceso, coste y equipo
 

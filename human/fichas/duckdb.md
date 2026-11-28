@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -55,7 +55,7 @@ Grupo **Procesamiento de datos tabulares**: DuckDB ocupa la posición 2 de 3 (al
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [pandas](pandas.md) ⭐ recomendado | 77 | Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
-| 2 | **DuckDB** (esta ficha) | 68 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| 2 | **DuckDB** (esta ficha) | 67 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 | 3 | [Polars](polars.md) | 67 | Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Acceso, coste y equipo

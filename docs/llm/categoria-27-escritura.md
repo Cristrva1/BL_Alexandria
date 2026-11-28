@@ -18,8 +18,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `humanizer` | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba… | 1 Básico | 72 | MIT (OSI permisiva) | recomendado |
-| `i-have-adhd` | Skill para que un agente presente primero la respuesta y organice su salida con… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
+| `humanizer` | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
+| `i-have-adhd` | Skill para que un agente presente primero la respuesta y organice su salida con… | 2 Intermedio | 66 | MIT (OSI permisiva) | sin grupo |
 | `stop-slop` | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas… | 1 Básico | 40 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -28,7 +28,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Humanizer (`humanizer`)
 
-- **Repo:** https://github.com/blader/humanizer · MIT · nivel 1 · 72/100 · recomendado en «Skills para quitar el tono de IA a los textos»
+- **Repo:** https://github.com/blader/humanizer · MIT · nivel 1 · 70/100 · recomendado en «Skills para quitar el tono de IA a los textos»
 - **Qué es:** Skill de escritura de código abierto (MIT) de blader que hace que un texto escrito por IA suene a persona sin cambiar su contenido. Muy popular y activa (v4.0.0); el README lleva un patrocinio.
 - **Cuándo elegirlo:** Casos: Mejorar claridad de un correo; Revisar prosa repetitiva.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente con skills; texto propio breve; hardware prerequisites; API de IA: no; Agente con skills; texto propio breve.
@@ -40,7 +40,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### i-have-adhd (`i-have-adhd`)
 
-- **Repo:** https://github.com/ayghri/i-have-adhd · MIT · nivel 2 · 67/100
+- **Repo:** https://github.com/ayghri/i-have-adhd · MIT · nivel 2 · 66/100
 - **Qué es:** Skill/plugin de código abierto (MIT) de ayghri que hace las respuestas de los asistentes de código más directas («apto para TDAH, sin diagnóstico necesario»). Popular y activo (v0.4.1).
 - **Cuándo elegirlo:** Casos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente soportado; preferencia personal de presentación; hardware prerequisites; API de IA: no; Agente soportado; preferencia personal de presentación.

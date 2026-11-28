@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT (solo código). Los datos y recursos de terceros incluidos tienen restricciones, algunas no comerciales. Fuente: [LICENSE](https://github.com/bilawalsidhu/gods-eye-view/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -48,7 +48,7 @@ Grupo **Paneles OSINT sobre globo 3D**: gods-eye-view ocupa la posición 1 de 2 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **gods-eye-view** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
+| 1 | **gods-eye-view** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
 | 2 | [osiris](osiris.md) | 53 | Si buscas esto: panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. |
 
 ## Acceso, coste y equipo

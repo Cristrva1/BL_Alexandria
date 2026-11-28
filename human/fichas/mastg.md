@@ -35,6 +35,12 @@ Contenido Markdown publicado como sitio MkDocs en mas.owasp.org, con identificad
 | [Apktool](apktool.md) | Apktool descompila APK para las pruebas estáticas de Android. | Descompila la APK propia con Apktool y revisa según el MASTG. |
 | [jadx](jadx.md) | jadx decompila a Java para revisar la lógica de la app. | Abre la APK en jadx durante las pruebas estáticas. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[MobSF (Mobile Security Framework)](mobsf.md)
+
 Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v2.0.0 (2026-06-30) · licencia declarada CC-BY-SA-4.0 (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OWASP/mastg#readme) · [2](https://mas.owasp.org/MASTG/)</sub>

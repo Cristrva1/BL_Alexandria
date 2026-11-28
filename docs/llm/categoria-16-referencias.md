@@ -26,8 +26,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `hacktricks` | Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con… | 1 Básico | 61 | — (sin licencia detectada) | sin grupo |
 | `awesome-reverse-engineering` | Directorio de herramientas y recursos para aprender análisis de binarios… | 1 Básico | 57 | CC0-1.0 (OSI permisiva) | sin grupo |
 | `masvs` | Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles… | 1 Básico | 56 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
-| `asvs` | Estándar OWASP de verificación de seguridad de aplicaciones: requisitos… | 1 Básico | 53 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
 | `owasp-top10` | Documento de concienciación de OWASP con los diez riesgos más críticos en… | 1 Básico | 53 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
+| `asvs` | Estándar OWASP de verificación de seguridad de aplicaciones: requisitos… | 1 Básico | 52 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
 | `owasp-llm-top10` | Top 10 de riesgos de seguridad en aplicaciones con LLM y GenAI (inyección de… | 1 Básico | 52 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
 | `aisvs` | Estándar OWASP de verificación de seguridad para sistemas de IA: requisitos… | 1 Básico | 51 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
 | `owasp-devguide` | Guía OWASP para desarrolladores: principios de seguridad, requisitos, diseño… | 1 Básico | 50 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
@@ -122,16 +122,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Abre mas.owasp.org/MASVS y revisa el grupo MASVS-STORAGE. Éxito: Obtienes los controles y enlaces a sus pruebas en el MASTG.
 - **Combina con:** `mastg`
 
-### OWASP ASVS (`asvs`)
-
-- **Repo:** https://github.com/OWASP/ASVS · CC-BY-SA-4.0 · nivel 1 · 53/100
-- **Qué es:** Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.
-- **Cuándo elegirlo:** Casos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/ASVS/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto. Éxito: Obtienes la lista de requisitos aplicables con sus identificadores.
-- **Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon` [16/defensa], `owasp-top10`
-
 ### OWASP Top 10 (`owasp-top10`)
 
 - **Repo:** https://github.com/OWASP/Top10 · CC-BY-SA-4.0 · nivel 1 · 53/100
@@ -142,6 +132,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Abre la edición vigente en owasp.org/Top10 y lee la categoría de control de acceso roto. Éxito: Obtienes la descripción, ejemplos de ataque, prevención y CWE relacionados.
 - **Combina con:** `asvs`, `cheatsheetseries`, `juice-shop` [16/pruebas], `threat-dragon` [16/defensa]
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### OWASP ASVS (`asvs`)
+
+- **Repo:** https://github.com/OWASP/ASVS · CC-BY-SA-4.0 · nivel 1 · 52/100
+- **Qué es:** Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.
+- **Cuándo elegirlo:** Casos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/ASVS/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto. Éxito: Obtienes la lista de requisitos aplicables con sus identificadores.
+- **Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon` [16/defensa], `owasp-top10`
 
 ### OWASP Top 10 for LLM Applications (`owasp-llm-top10`)
 

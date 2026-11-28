@@ -775,7 +775,7 @@
     {
      "id": "antigravity-awesome-skills",
      "posicion": 1,
-     "puntuacion": 68.2,
+     "puntuacion": 68.5,
      "papel": "recomendado",
      "cuando": "Si quieres el catálogo más grande de skills instalables para varios agentes.",
      "cuando_origen": "curado",
@@ -784,7 +784,7 @@
     {
      "id": "claude-plugins-official",
      "posicion": 2,
-     "puntuacion": 62.0,
+     "puntuacion": 62.8,
      "papel": "alternativa",
      "cuando": "Si quieres solo plugins publicados por Anthropic.",
      "cuando_origen": "curado",
@@ -793,7 +793,7 @@
     {
      "id": "awesome-agent-skills",
      "posicion": 3,
-     "puntuacion": 53.8,
+     "puntuacion": 53.3,
      "papel": "alternativa",
      "cuando": "Si quieres skills en formato portable para varios agentes.",
      "cuando_origen": "curado",
@@ -802,7 +802,7 @@
     {
      "id": "wshobson-agents",
      "posicion": 4,
-     "puntuacion": 50.6,
+     "puntuacion": 49.6,
      "papel": "alternativa",
      "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad.",
      "cuando_origen": "curado",
@@ -811,7 +811,7 @@
     {
      "id": "awesome-claude-code",
      "posicion": 5,
-     "puntuacion": 48.0,
+     "puntuacion": 47.9,
      "papel": "alternativa",
      "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos.",
      "cuando_origen": "curado",
@@ -843,7 +843,7 @@
     {
      "id": "docling",
      "posicion": 1,
-     "puntuacion": 77.7,
+     "puntuacion": 77.9,
      "papel": "recomendado",
      "cuando": "Si necesitas PDF, DOCX y PPTX a Markdown/JSON con estructura, tablas y uso local.",
      "cuando_origen": "curado",
@@ -852,7 +852,7 @@
     {
      "id": "mineru",
      "posicion": 2,
-     "puntuacion": 67.7,
+     "puntuacion": 68.0,
      "papel": "alternativa",
      "cuando": "Si procesas PDF científicos o en chino con fórmulas y maquetación compleja.",
      "cuando_origen": "curado",
@@ -861,7 +861,7 @@
     {
      "id": "xberg",
      "posicion": 3,
-     "puntuacion": 63.0,
+     "puntuacion": 63.3,
      "papel": "alternativa",
      "cuando": "Si quieres un extractor en Rust con OCR, transcripción y MCP en un solo binario.",
      "cuando_origen": "curado",
@@ -870,7 +870,7 @@
     {
      "id": "marker",
      "posicion": 4,
-     "puntuacion": 60.2,
+     "puntuacion": 60.5,
      "papel": "alternativa",
      "cuando": "Si conviertes PDF a Markdown con tablas, fórmulas y código, con GPU opcional.",
      "cuando_origen": "curado",
@@ -888,7 +888,7 @@
     {
      "id": "unstructured",
      "posicion": 6,
-     "puntuacion": 58.1,
+     "puntuacion": 58.3,
      "papel": "alternativa",
      "cuando": "Si quieres particionar muchos formatos en elementos para pipelines de RAG.",
      "cuando_origen": "curado",
@@ -919,7 +919,7 @@
     {
      "id": "ecc",
      "posicion": 1,
-     "puntuacion": 71.9,
+     "puntuacion": 69.6,
      "papel": "recomendado",
      "cuando": "Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes.",
      "cuando_origen": "curado",
@@ -928,7 +928,7 @@
     {
      "id": "gstack",
      "posicion": 2,
-     "puntuacion": 66.3,
+     "puntuacion": 63.8,
      "papel": "alternativa",
      "cuando": "Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code.",
      "cuando_origen": "curado",
@@ -937,7 +937,7 @@
     {
      "id": "agent-skills",
      "posicion": 3,
-     "puntuacion": 63.6,
+     "puntuacion": 60.7,
      "papel": "alternativa",
      "cuando": "Si quieres skills de ingeniería portables en el formato Agent Skills.",
      "cuando_origen": "curado",
@@ -946,7 +946,7 @@
     {
      "id": "superpowers",
      "posicion": 4,
-     "puntuacion": 59.4,
+     "puntuacion": 57.0,
      "papel": "alternativa",
      "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada.",
      "cuando_origen": "curado",
@@ -1042,7 +1042,7 @@
     {
      "id": "graphify",
      "posicion": 1,
-     "puntuacion": 74.2,
+     "puntuacion": 74.9,
      "papel": "recomendado",
      "cuando": "Si quieres convertir carpetas de código y documentos en un grafo navegable.",
      "cuando_origen": "curado",
@@ -1051,7 +1051,7 @@
     {
      "id": "codegraph",
      "posicion": 2,
-     "puntuacion": 66.4,
+     "puntuacion": 66.1,
      "papel": "alternativa",
      "cuando": "Si quieres un grafo de código local para que el agente navegue símbolos y dependencias.",
      "cuando_origen": "curado",
@@ -1060,7 +1060,7 @@
     {
      "id": "codebase-memory-mcp",
      "posicion": 3,
-     "puntuacion": 58.4,
+     "puntuacion": 58.2,
      "papel": "alternativa",
      "cuando": "Si quieres un índice persistente del código servido por MCP con poco consumo de tokens.",
      "cuando_origen": "curado",
@@ -1069,7 +1069,7 @@
     {
      "id": "repomix",
      "posicion": 4,
-     "puntuacion": 52.9,
+     "puntuacion": 53.1,
      "papel": "alternativa",
      "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo.",
      "cuando_origen": "curado",
@@ -1300,34 +1300,34 @@
     {
      "id": "streamlit",
      "posicion": 1,
-     "puntuacion": 76.1,
+     "puntuacion": 75.6,
      "papel": "recomendado",
      "cuando": "Si quieres convertir un script de datos en app web con la menor curva.",
      "cuando_origen": "curado",
      "caso_unico": false
     },
     {
-     "id": "gradio",
-     "posicion": 2,
-     "puntuacion": 71.0,
-     "papel": "alternativa",
-     "cuando": "Si quieres una demo de un modelo de IA con entradas y salidas en minutos.",
-     "cuando_origen": "curado",
-     "caso_unico": false
-    },
-    {
      "id": "reflex",
-     "posicion": 3,
-     "puntuacion": 71.0,
+     "posicion": 2,
+     "puntuacion": 70.5,
      "papel": "alternativa",
      "cuando": "Si quieres una app web completa (frontend y backend) solo en Python.",
      "cuando_origen": "curado",
      "caso_unico": false
     },
     {
+     "id": "gradio",
+     "posicion": 3,
+     "puntuacion": 70.4,
+     "papel": "alternativa",
+     "cuando": "Si quieres una demo de un modelo de IA con entradas y salidas en minutos.",
+     "cuando_origen": "curado",
+     "caso_unico": false
+    },
+    {
      "id": "nicegui",
      "posicion": 4,
-     "puntuacion": 68.3,
+     "puntuacion": 67.6,
      "papel": "alternativa",
      "cuando": "Si quieres una interfaz web en Python con control fino de componentes.",
      "cuando_origen": "curado",
@@ -1336,7 +1336,7 @@
     {
      "id": "panel",
      "posicion": 5,
-     "puntuacion": 55.2,
+     "puntuacion": 54.7,
      "papel": "alternativa",
      "cuando": "Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos.",
      "cuando_origen": "curado",
@@ -1345,8 +1345,8 @@
    ],
    "recomendado": "streamlit",
    "alternativas": [
-    "gradio",
     "reflex",
+    "gradio",
     "nicegui",
     "panel"
    ]
@@ -1367,7 +1367,7 @@
     {
      "id": "langfuse",
      "posicion": 1,
-     "puntuacion": 79.3,
+     "puntuacion": 79.2,
      "papel": "recomendado",
      "cuando": "Si quieres trazas, prompts y evaluaciones de LLM auto-hospedables con la comunidad más grande.",
      "cuando_origen": "curado",
@@ -1376,7 +1376,7 @@
     {
      "id": "opik",
      "posicion": 2,
-     "puntuacion": 75.1,
+     "puntuacion": 74.9,
      "papel": "alternativa",
      "cuando": "Si quieres trazas y evaluación de LLM con integración en pruebas.",
      "cuando_origen": "curado",
@@ -1385,7 +1385,7 @@
     {
      "id": "mlflow",
      "posicion": 3,
-     "puntuacion": 70.5,
+     "puntuacion": 70.3,
      "papel": "alternativa",
      "cuando": "Si ya gestionas experimentos y modelos de ML clásico y quieres sumar trazas de LLM.",
      "cuando_origen": "curado",
@@ -1394,7 +1394,7 @@
     {
      "id": "phoenix",
      "posicion": 4,
-     "puntuacion": 53.4,
+     "puntuacion": 53.1,
      "papel": "alternativa",
      "cuando": "Si quieres observabilidad basada en OpenTelemetry y evaluación local en notebooks.",
      "cuando_origen": "curado",
@@ -1403,7 +1403,7 @@
     {
      "id": "helicone",
      "posicion": 5,
-     "puntuacion": 50.2,
+     "puntuacion": 49.8,
      "papel": "alternativa",
      "cuando": "Si quieres observabilidad como proxy con solo cambiar la URL base.",
      "cuando_origen": "curado",
@@ -1678,7 +1678,7 @@
     {
      "id": "litellm",
      "posicion": 1,
-     "puntuacion": 77.5,
+     "puntuacion": 75.4,
      "papel": "recomendado",
      "cuando": "Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves.",
      "cuando_origen": "curado",
@@ -1687,7 +1687,7 @@
     {
      "id": "omniroute",
      "posicion": 2,
-     "puntuacion": 75.9,
+     "puntuacion": 74.5,
      "papel": "alternativa",
      "cuando": "Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores.",
      "cuando_origen": "curado",
@@ -1696,7 +1696,7 @@
     {
      "id": "claude-code-router",
      "posicion": 3,
-     "puntuacion": 57.9,
+     "puntuacion": 54.8,
      "papel": "alternativa",
      "cuando": "Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea.",
      "cuando_origen": "curado",
@@ -1780,7 +1780,7 @@
     {
      "id": "echarts",
      "posicion": 1,
-     "puntuacion": 70.6,
+     "puntuacion": 70.9,
      "papel": "recomendado",
      "cuando": "Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas.",
      "cuando_origen": "curado",
@@ -1789,7 +1789,7 @@
     {
      "id": "d3",
      "posicion": 2,
-     "puntuacion": 70.0,
+     "puntuacion": 70.2,
      "papel": "alternativa",
      "cuando": "Si necesitas visualizaciones a medida y control total sobre SVG.",
      "cuando_origen": "curado",
@@ -1798,7 +1798,7 @@
     {
      "id": "recharts",
      "posicion": 3,
-     "puntuacion": 69.0,
+     "puntuacion": 69.5,
      "papel": "alternativa",
      "cuando": "Si usas React y quieres gráficos declarativos con pocas líneas.",
      "cuando_origen": "curado",
@@ -1807,7 +1807,7 @@
     {
      "id": "chart-js",
      "posicion": 4,
-     "puntuacion": 64.2,
+     "puntuacion": 64.7,
      "papel": "alternativa",
      "cuando": "Si quieres gráficos clásicos en canvas sin framework y con poca configuración.",
      "cuando_origen": "curado",
@@ -1845,7 +1845,7 @@
     {
      "id": "dirsearch",
      "posicion": 2,
-     "puntuacion": 57.9,
+     "puntuacion": 57.7,
      "papel": "alternativa",
      "cuando": "Si prefieres una herramienta en Python con listas y reportes listos.",
      "cuando_origen": "curado",
@@ -1863,7 +1863,7 @@
     {
      "id": "gobuster",
      "posicion": 4,
-     "puntuacion": 55.7,
+     "puntuacion": 55.6,
      "papel": "alternativa",
      "cuando": "Si quieres un enumerador simple de directorios, DNS y vhosts.",
      "cuando_origen": "curado",
@@ -2004,7 +2004,7 @@
     {
      "id": "ui-ux-pro-max-skill",
      "posicion": 1,
-     "puntuacion": 73.4,
+     "puntuacion": 73.3,
      "papel": "recomendado",
      "cuando": "Si quieres una skill con bases de estilos, paletas y tipografías para generar UI.",
      "cuando_origen": "curado",
@@ -2013,7 +2013,7 @@
     {
      "id": "taste-skill",
      "posicion": 2,
-     "puntuacion": 70.3,
+     "puntuacion": 70.1,
      "papel": "alternativa",
      "cuando": "Si quieres que el agente evite el aspecto genérico en las interfaces.",
      "cuando_origen": "curado",
@@ -2022,7 +2022,7 @@
     {
      "id": "impeccable",
      "posicion": 3,
-     "puntuacion": 63.3,
+     "puntuacion": 63.2,
      "papel": "alternativa",
      "cuando": "Si quieres vocabulario y playbooks de diseño con detector y hooks.",
      "cuando_origen": "curado",
@@ -2031,7 +2031,7 @@
     {
      "id": "hallmark",
      "posicion": 4,
-     "puntuacion": 50.8,
+     "puntuacion": 50.5,
      "papel": "alternativa",
      "cuando": "Si quieres decisiones visuales más concretas y coherentes al construir interfaces.",
      "cuando_origen": "curado",
@@ -2116,7 +2116,7 @@
     {
      "id": "paddleocr",
      "posicion": 1,
-     "puntuacion": 72.5,
+     "puntuacion": 72.7,
      "papel": "recomendado",
      "cuando": "Si necesitas OCR multilingüe de producción con modelos ligeros y análisis de maquetación.",
      "cuando_origen": "curado",
@@ -2125,7 +2125,7 @@
     {
      "id": "tesseract",
      "posicion": 2,
-     "puntuacion": 63.9,
+     "puntuacion": 64.3,
      "papel": "alternativa",
      "cuando": "Si quieres el OCR clásico en CPU, sin GPU ni modelos grandes.",
      "cuando_origen": "curado",
@@ -2134,7 +2134,7 @@
     {
      "id": "unlimited-ocr",
      "posicion": 3,
-     "puntuacion": 62.4,
+     "puntuacion": 62.3,
      "papel": "alternativa",
      "cuando": "Si quieres parsear documentos largos de una sola pasada con visión.",
      "cuando_origen": "curado",
@@ -2143,7 +2143,7 @@
     {
      "id": "olmocr",
      "posicion": 4,
-     "puntuacion": 50.3,
+     "puntuacion": 50.6,
      "papel": "alternativa",
      "cuando": "Si conviertes PDF escaneados a texto limpio con un modelo de visión (GPU).",
      "cuando_origen": "curado",
@@ -2306,7 +2306,7 @@
     {
      "id": "delta-lake",
      "posicion": 1,
-     "puntuacion": 62.7,
+     "puntuacion": 61.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores.",
      "cuando_origen": "plantilla",
@@ -2315,7 +2315,7 @@
     {
      "id": "apache-iceberg",
      "posicion": 2,
-     "puntuacion": 61.5,
+     "puntuacion": 60.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java.",
      "cuando_origen": "plantilla",
@@ -2324,7 +2324,7 @@
     {
      "id": "hudi",
      "posicion": 3,
-     "puntuacion": 50.6,
+     "puntuacion": 49.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
      "cuando_origen": "plantilla",
@@ -2576,7 +2576,7 @@
     {
      "id": "promptfoo",
      "posicion": 1,
-     "puntuacion": 79.2,
+     "puntuacion": 79.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: cLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad.",
      "cuando_origen": "plantilla",
@@ -2585,7 +2585,7 @@
     {
      "id": "deepeval",
      "posicion": 2,
-     "puntuacion": 63.9,
+     "puntuacion": 63.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework de evaluación de LLM al estilo pytest, con decenas de métricas listas.",
      "cuando_origen": "plantilla",
@@ -2594,7 +2594,7 @@
     {
      "id": "ragas",
      "posicion": 3,
-     "puntuacion": 52.4,
+     "puntuacion": 52.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos.",
      "cuando_origen": "plantilla",
@@ -2621,7 +2621,7 @@
     {
      "id": "pandas",
      "posicion": 1,
-     "puntuacion": 77.4,
+     "puntuacion": 76.9,
      "papel": "recomendado",
      "cuando": "Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S.",
      "cuando_origen": "plantilla",
@@ -2630,7 +2630,7 @@
     {
      "id": "duckdb",
      "posicion": 2,
-     "puntuacion": 67.5,
+     "puntuacion": 67.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL.",
      "cuando_origen": "plantilla",
@@ -2639,7 +2639,7 @@
     {
      "id": "polars",
      "posicion": 3,
-     "puntuacion": 67.2,
+     "puntuacion": 66.6,
      "papel": "alternativa",
      "cuando": "Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.",
      "cuando_origen": "plantilla",
@@ -2765,7 +2765,7 @@
     {
      "id": "empire",
      "posicion": 2,
-     "puntuacion": 60.0,
+     "puntuacion": 59.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados.",
      "cuando_origen": "plantilla",
@@ -2774,7 +2774,7 @@
     {
      "id": "mythic",
      "posicion": 3,
-     "puntuacion": 48.4,
+     "puntuacion": 48.2,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli.",
      "cuando_origen": "plantilla",
@@ -2864,7 +2864,7 @@
     {
      "id": "rizin",
      "posicion": 3,
-     "puntuacion": 48.0,
+     "puntuacion": 47.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
      "cuando_origen": "plantilla",
@@ -2891,7 +2891,7 @@
     {
      "id": "gpt-researcher",
      "posicion": 1,
-     "puntuacion": 61.2,
+     "puntuacion": 60.9,
      "papel": "recomendado",
      "cuando": "Si buscas esto: agente autónomo que investiga en línea y consolida reportes citados y estructurados.",
      "cuando_origen": "plantilla",
@@ -2909,7 +2909,7 @@
     {
      "id": "local-deep-research",
      "posicion": 3,
-     "puntuacion": 55.6,
+     "puntuacion": 55.4,
      "papel": "alternativa",
      "cuando": "Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
      "cuando_origen": "plantilla",
@@ -2990,7 +2990,7 @@
     {
      "id": "hermes-agent",
      "posicion": 2,
-     "puntuacion": 74.4,
+     "puntuacion": 74.3,
      "papel": "alternativa",
      "cuando": "Si buscas esto: asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados.",
      "cuando_origen": "plantilla",
@@ -2999,7 +2999,7 @@
     {
      "id": "mercury-agent",
      "posicion": 3,
-     "puntuacion": 49.0,
+     "puntuacion": 48.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web.",
      "cuando_origen": "plantilla",
@@ -3025,7 +3025,7 @@
     {
      "id": "humanizer",
      "posicion": 1,
-     "puntuacion": 72.2,
+     "puntuacion": 70.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.",
      "cuando_origen": "plantilla",
@@ -3034,7 +3034,7 @@
     {
      "id": "stop-slop",
      "posicion": 2,
-     "puntuacion": 40.4,
+     "puntuacion": 40.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
      "cuando_origen": "plantilla",
@@ -3060,7 +3060,7 @@
     {
      "id": "wan2-2",
      "posicion": 1,
-     "puntuacion": 67.3,
+     "puntuacion": 67.2,
      "papel": "recomendado",
      "cuando": "Si buscas esto: familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0.",
      "cuando_origen": "plantilla",
@@ -3069,7 +3069,7 @@
     {
      "id": "hunyuanvideo",
      "posicion": 2,
-     "puntuacion": 57.1,
+     "puntuacion": 56.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.",
      "cuando_origen": "plantilla",
@@ -3078,7 +3078,7 @@
     {
      "id": "hunyuanvideo-1-5",
      "posicion": 3,
-     "puntuacion": 41.7,
+     "puntuacion": 41.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más.",
      "cuando_origen": "plantilla",
@@ -3159,7 +3159,7 @@
     {
      "id": "shotcut",
      "posicion": 2,
-     "puntuacion": 60.3,
+     "puntuacion": 59.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz.",
      "cuando_origen": "plantilla",
@@ -3168,7 +3168,7 @@
     {
      "id": "kdenlive",
      "posicion": 3,
-     "puntuacion": 59.9,
+     "puntuacion": 59.4,
      "papel": "alternativa",
      "cuando": "Si buscas esto: editor de vídeo no lineal libre de KDE basado en MLT: multipista, efectos, titulación, proxys y subtítulos por reconocimiento de voz.",
      "cuando_origen": "plantilla",
@@ -3330,7 +3330,7 @@
     {
      "id": "umami",
      "posicion": 1,
-     "puntuacion": 74.2,
+     "puntuacion": 74.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics.",
      "cuando_origen": "plantilla",
@@ -3339,7 +3339,7 @@
     {
      "id": "plausible",
      "posicion": 2,
-     "puntuacion": 59.4,
+     "puntuacion": 59.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada.",
      "cuando_origen": "plantilla",
@@ -3348,7 +3348,7 @@
     {
      "id": "matomo",
      "posicion": 3,
-     "puntuacion": 57.2,
+     "puntuacion": 57.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: alternativa open source a Google Analytics con control total de los datos.",
      "cuando_origen": "plantilla",
@@ -3420,7 +3420,7 @@
     {
      "id": "superset",
      "posicion": 1,
-     "puntuacion": 82.3,
+     "puntuacion": 82.5,
      "papel": "recomendado",
      "cuando": "Si buscas esto: plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau.",
      "cuando_origen": "plantilla",
@@ -3429,7 +3429,7 @@
     {
      "id": "metabase",
      "posicion": 2,
-     "puntuacion": 66.7,
+     "puntuacion": 67.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.",
      "cuando_origen": "plantilla",
@@ -3438,7 +3438,7 @@
     {
      "id": "redash",
      "posicion": 3,
-     "puntuacion": 57.1,
+     "puntuacion": 58.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards.",
      "cuando_origen": "plantilla",
@@ -3971,7 +3971,7 @@
     {
      "id": "bmad-method",
      "posicion": 2,
-     "puntuacion": 57.9,
+     "puntuacion": 56.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.",
      "cuando_origen": "plantilla",
@@ -4039,7 +4039,7 @@
     {
      "id": "caido",
      "posicion": 2,
-     "puntuacion": 39.1,
+     "puntuacion": 38.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.",
      "cuando_origen": "plantilla",
@@ -4540,7 +4540,7 @@
     {
      "id": "gitleaks",
      "posicion": 1,
-     "puntuacion": 63.2,
+     "puntuacion": 63.0,
      "papel": "recomendado",
      "cuando": "Si buscas esto: detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como hook o acción de CI.",
      "cuando_origen": "plantilla",
@@ -4549,7 +4549,7 @@
     {
      "id": "trufflehog",
      "posicion": 2,
-     "puntuacion": 61.1,
+     "puntuacion": 61.3,
      "papel": "alternativa",
      "cuando": "Si buscas esto: busca, clasifica, verifica y analiza credenciales filtradas en git, chats, wikis, logs, almacenes de objetos y sistemas de archivos.",
      "cuando_origen": "plantilla",
@@ -4574,7 +4574,7 @@
     {
      "id": "gods-eye-view",
      "posicion": 1,
-     "puntuacion": 68.3,
+     "puntuacion": 68.6,
      "papel": "recomendado",
      "cuando": "Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
      "cuando_origen": "plantilla",
@@ -4583,7 +4583,7 @@
     {
      "id": "osiris",
      "posicion": 2,
-     "puntuacion": 52.8,
+     "puntuacion": 53.2,
      "papel": "alternativa",
      "cuando": "Si buscas esto: panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
      "cuando_origen": "plantilla",
@@ -4617,7 +4617,7 @@
     {
      "id": "grype",
      "posicion": 2,
-     "puntuacion": 67.6,
+     "puntuacion": 67.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediación.",
      "cuando_origen": "plantilla",
@@ -4651,7 +4651,7 @@
     {
      "id": "john",
      "posicion": 2,
-     "puntuacion": 54.6,
+     "puntuacion": 54.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.",
      "cuando_origen": "plantilla",
@@ -4676,7 +4676,7 @@
     {
      "id": "rtk",
      "posicion": 1,
-     "puntuacion": 69.4,
+     "puntuacion": 69.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código.",
      "cuando_origen": "plantilla",
@@ -4685,7 +4685,7 @@
     {
      "id": "headroom",
      "posicion": 2,
-     "puntuacion": 60.9,
+     "puntuacion": 60.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.",
      "cuando_origen": "plantilla",
@@ -4812,7 +4812,7 @@
     {
      "id": "instagram-agent-skill",
      "posicion": 1,
-     "puntuacion": 55.5,
+     "puntuacion": 55.4,
      "papel": "recomendado",
      "cuando": "Si buscas esto: skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.",
      "cuando_origen": "plantilla",
@@ -4821,7 +4821,7 @@
     {
      "id": "linkedin-agent-skill",
      "posicion": 2,
-     "puntuacion": 47.4,
+     "puntuacion": 47.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.",
      "cuando_origen": "plantilla",
@@ -4880,7 +4880,7 @@
     {
      "id": "marimo",
      "posicion": 1,
-     "puntuacion": 76.1,
+     "puntuacion": 75.7,
      "papel": "recomendado",
      "cuando": "Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.",
      "cuando_origen": "plantilla",
@@ -4889,7 +4889,7 @@
     {
      "id": "jupyterlab",
      "posicion": 2,
-     "puntuacion": 65.9,
+     "puntuacion": 65.0,
      "papel": "alternativa",
      "cuando": "Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones.",
      "cuando_origen": "plantilla",
@@ -4923,7 +4923,7 @@
     {
      "id": "k6",
      "posicion": 2,
-     "puntuacion": 70.1,
+     "puntuacion": 70.2,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.",
      "cuando_origen": "plantilla",
@@ -5016,7 +5016,7 @@
     {
      "id": "leaflet",
      "posicion": 1,
-     "puntuacion": 70.4,
+     "puntuacion": 70.8,
      "papel": "recomendado",
      "cuando": "Si buscas esto: biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins.",
      "cuando_origen": "plantilla",
@@ -5025,7 +5025,7 @@
     {
      "id": "maplibre",
      "posicion": 2,
-     "puntuacion": 67.1,
+     "puntuacion": 67.5,
      "papel": "alternativa",
      "cuando": "Si buscas esto: biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia.",
      "cuando_origen": "plantilla",
@@ -5118,7 +5118,7 @@
     {
      "id": "sherlock",
      "posicion": 1,
-     "puntuacion": 66.7,
+     "puntuacion": 67.1,
      "papel": "recomendado",
      "cuando": "Si buscas esto: cLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios para localizar cuentas asociadas.",
      "cuando_origen": "plantilla",
@@ -5127,7 +5127,7 @@
     {
      "id": "maigret",
      "posicion": 2,
-     "puntuacion": 63.0,
+     "puntuacion": 63.3,
      "papel": "alternativa",
      "cuando": "Si buscas esto: recopila un dossier sobre una persona a partir de un nombre de usuario comprobando miles de sitios y extrayendo datos públicos de los perfiles.",
      "cuando_origen": "plantilla",
@@ -5254,7 +5254,7 @@
     {
      "id": "moneyprinterturbo",
      "posicion": 1,
-     "puntuacion": 74.1,
+     "puntuacion": 73.9,
      "papel": "recomendado",
      "cuando": "Si buscas esto: app que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso.",
      "cuando_origen": "plantilla",
@@ -5263,7 +5263,7 @@
     {
      "id": "short-video-factory",
      "posicion": 2,
-     "puntuacion": 47.1,
+     "puntuacion": 46.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.",
      "cuando_origen": "plantilla",
@@ -5288,7 +5288,7 @@
     {
      "id": "paperclip",
      "posicion": 1,
-     "puntuacion": 67.5,
+     "puntuacion": 67.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.",
      "cuando_origen": "plantilla",
@@ -5297,7 +5297,7 @@
     {
      "id": "multica",
      "posicion": 2,
-     "puntuacion": 56.8,
+     "puntuacion": 56.4,
      "papel": "alternativa",
      "cuando": "Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.",
      "cuando_origen": "plantilla",
@@ -5356,7 +5356,7 @@
     {
      "id": "webodm",
      "posicion": 1,
-     "puntuacion": 60.0,
+     "puntuacion": 60.3,
      "papel": "recomendado",
      "cuando": "Si buscas esto: interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
      "cuando_origen": "plantilla",
@@ -5365,7 +5365,7 @@
     {
      "id": "odm",
      "posicion": 2,
-     "puntuacion": 57.8,
+     "puntuacion": 58.1,
      "papel": "alternativa",
      "cuando": "Si buscas esto: herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
      "cuando_origen": "plantilla",
@@ -5535,7 +5535,7 @@
     {
      "id": "payloadsallthethings",
      "posicion": 2,
-     "puntuacion": 62.9,
+     "puntuacion": 62.8,
      "papel": "alternativa",
      "cuando": "Si buscas esto: enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida por la comunidad de pentest.",
      "cuando_origen": "plantilla",
@@ -5560,7 +5560,7 @@
     {
      "id": "stirling-pdf",
      "posicion": 1,
-     "puntuacion": 75.7,
+     "puntuacion": 75.9,
      "papel": "recomendado",
      "cuando": "Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs.",
      "cuando_origen": "plantilla",
@@ -5569,7 +5569,7 @@
     {
      "id": "pdfcraft",
      "posicion": 2,
-     "puntuacion": 54.5,
+     "puntuacion": 54.7,
      "papel": "alternativa",
      "cuando": "Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.",
      "cuando_origen": "plantilla",
@@ -5662,7 +5662,7 @@
     {
      "id": "vllm",
      "posicion": 1,
-     "puntuacion": 78.7,
+     "puntuacion": 78.6,
      "papel": "recomendado",
      "cuando": "Si buscas esto: motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU.",
      "cuando_origen": "plantilla",
@@ -5671,7 +5671,7 @@
     {
      "id": "sglang",
      "posicion": 2,
-     "puntuacion": 67.7,
+     "puntuacion": 67.6,
      "papel": "alternativa",
      "cuando": "Si buscas esto: framework de servicio de alto rendimiento para LLM y modelos multimodales.",
      "cuando_origen": "plantilla",
@@ -5705,7 +5705,7 @@
     {
      "id": "shannon",
      "posicion": 2,
-     "puntuacion": 63.0,
+     "puntuacion": 62.9,
      "papel": "alternativa",
      "cuando": "Si buscas esto: agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.",
      "cuando_origen": "plantilla",
@@ -5764,7 +5764,7 @@
     {
      "id": "modsecurity",
      "posicion": 1,
-     "puntuacion": 69.8,
+     "puntuacion": 69.7,
      "papel": "recomendado",
      "cuando": "Si usas Nginx o Apache y quieres el motor WAF de referencia con sus conectores.",
      "cuando_origen": "curado",
@@ -5773,7 +5773,7 @@
     {
      "id": "coraza",
      "posicion": 2,
-     "puntuacion": 58.9,
+     "puntuacion": 58.8,
      "papel": "alternativa",
      "cuando": "Si tu servicio o proxy está en Go (Caddy, Traefik, Envoy vía proxy-wasm) y quieres el WAF embebido.",
      "cuando_origen": "curado",
@@ -5798,7 +5798,7 @@
     {
      "id": "threat-dragon",
      "posicion": 1,
-     "puntuacion": 70.4,
+     "puntuacion": 70.3,
      "papel": "recomendado",
      "cuando": "Si prefieres dibujar el diagrama en una aplicación de escritorio o web.",
      "cuando_origen": "curado",
@@ -5807,7 +5807,7 @@
     {
      "id": "pytm",
      "posicion": 2,
-     "puntuacion": 58.0,
+     "puntuacion": 57.8,
      "papel": "alternativa",
      "cuando": "Si quieres el modelo como código Python versionado junto al proyecto y generado en CI.",
      "cuando_origen": "curado",
@@ -5832,7 +5832,7 @@
     {
      "id": "juice-shop",
      "posicion": 1,
-     "puntuacion": 74.7,
+     "puntuacion": 74.6,
      "papel": "recomendado",
      "cuando": "Si quieres retos tipo CTF sobre una tienda moderna en JavaScript.",
      "cuando_origen": "curado",
@@ -5841,7 +5841,7 @@
     {
      "id": "webgoat",
      "posicion": 2,
-     "puntuacion": 58.2,
+     "puntuacion": 57.9,
      "papel": "alternativa",
      "cuando": "Si prefieres lecciones guiadas paso a paso sobre una aplicación Java.",
      "cuando_origen": "curado",
@@ -5875,7 +5875,7 @@
     {
      "id": "cdxgen",
      "posicion": 2,
-     "puntuacion": 62.9,
+     "puntuacion": 62.8,
      "papel": "alternativa",
      "cuando": "Si necesitas BOM CycloneDX de código fuente en muchos lenguajes, con evidencia y alcanzabilidad.",
      "cuando_origen": "curado",
@@ -5910,7 +5910,7 @@
     {
      "id": "dependency-check",
      "posicion": 2,
-     "puntuacion": 60.2,
+     "puntuacion": 60.0,
      "papel": "alternativa",
      "cuando": "Si trabajas con Java/.NET y quieres plugins de Maven, Gradle o Jenkins.",
      "cuando_origen": "curado",

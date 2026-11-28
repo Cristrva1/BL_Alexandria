@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -113,6 +113,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador oficial; permisos de captura; micrófono opcional; disco
 - **Etiquetas:** `video` `audio` `ui` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Cap](cap.md) | 25.7k | Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace. |
 
 ## Enlaces
 

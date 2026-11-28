@@ -23,11 +23,13 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Windmill](fichas/windmill.md) | [Kestra](fichas/kestra.md), [Trigger.dev](fichas/trigger-dev.md) |
 | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) | [superpowers](fichas/superpowers.md) |
 | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [wshobson/agents](fichas/wshobson-agents.md) |
+| [autoskills](fichas/autoskills.md) | [Skills CLI (Vercel Labs)](fichas/vercel-skills.md) |
 | [Awesome Agent Skills](fichas/awesome-agent-skills.md) | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) |
 | [BMAD Method](fichas/bmad-method.md) | [Spec Kit](fichas/spec-kit.md) |
 | [Claude Code Plugins Directory](fichas/claude-plugins-official.md) | [wshobson/agents](fichas/wshobson-agents.md) |
 | [ECC](fichas/ecc.md) | [superpowers](fichas/superpowers.md), [gstack](fichas/gstack.md) |
 | [gstack](fichas/gstack.md) | [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md) |
+| [Skills CLI (Vercel Labs)](fichas/vercel-skills.md) | [autoskills](fichas/autoskills.md) |
 | [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md), [claude-task-master](fichas/claude-task-master.md) |
 | [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
 | [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
@@ -153,10 +155,12 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [ComfyUI](fichas/comfyui.md) | [WanGP](fichas/wan2gp.md) |
 | [InvokeAI](fichas/invokeai.md) | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) |
 | [Krita AI Diffusion](fichas/krita-ai-diffusion.md) | [InvokeAI](fichas/invokeai.md) |
+| [Cap](fichas/cap.md) | [OBS Studio](fichas/obs-studio.md) |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md), [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) |
 | [HunyuanVideo 1.5](fichas/hunyuanvideo-1-5.md) | [HunyuanVideo](fichas/hunyuanvideo.md), [Wan2.2](fichas/wan2-2.md) |
 | [Kdenlive](fichas/kdenlive.md) | [Shotcut](fichas/shotcut.md), [OpenCut](fichas/opencut.md) |
 | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md), [short-video-factory](fichas/short-video-factory.md) |
+| [OBS Studio](fichas/obs-studio.md) | [Cap](fichas/cap.md) |
 | [OpenCut](fichas/opencut.md) | [Shotcut](fichas/shotcut.md), [Kdenlive](fichas/kdenlive.md) |
 | [short-video-factory](fichas/short-video-factory.md) | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
 | [Shotcut](fichas/shotcut.md) | [Kdenlive](fichas/kdenlive.md), [OpenCut](fichas/opencut.md) |
@@ -165,6 +169,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [WanGP](fichas/wan2gp.md) | [ComfyUI](fichas/comfyui.md) |
 | [Apache Tika](fichas/tika.md) | [Xberg (antes Kreuzberg)](fichas/xberg.md), [Unstructured](fichas/unstructured.md) |
 | [Docling](fichas/docling.md) | [Marker](fichas/marker.md), [MinerU](fichas/mineru.md), [Unstructured](fichas/unstructured.md), [olmOCR](fichas/olmocr.md) |
+| [Documenso](fichas/documenso.md) | [docuseal](fichas/docuseal.md) |
+| [docuseal](fichas/docuseal.md) | [Documenso](fichas/documenso.md) |
 | [Marker](fichas/marker.md) | [Docling](fichas/docling.md), [MinerU](fichas/mineru.md), [pdf-craft](fichas/pdf-craft.md) |
 | [MinerU](fichas/mineru.md) | [Docling](fichas/docling.md), [Marker](fichas/marker.md) |
 | [olmOCR](fichas/olmocr.md) | [PaddleOCR](fichas/paddleocr.md), [Docling](fichas/docling.md), [Unlimited-OCR](fichas/unlimited-ocr.md) |
@@ -200,6 +206,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [vaultwarden](fichas/vaultwarden.md) | [KeePassXC](fichas/keepassxc.md) |
 | [Caido](fichas/caido.md) | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) |
 | [cdxgen](fichas/cdxgen.md) | [Syft](fichas/syft.md) |
+| [CodeQL](fichas/codeql.md) | [Semgrep](fichas/semgrep.md) |
 | [CrowdSec](fichas/crowdsec.md) | [Fail2ban](fichas/fail2ban.md) |
 | [dirsearch](fichas/dirsearch.md) | [Gobuster](fichas/gobuster.md), [feroxbuster](fichas/feroxbuster.md) |
 | [Empire](fichas/empire.md) | [Mythic](fichas/mythic.md), [Sliver](fichas/sliver.md) |
@@ -223,7 +230,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
 | [SecLists](fichas/seclists.md) | [PayloadsAllTheThings](fichas/payloadsallthethings.md) |
-| [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md), [SonarQube Community Build](fichas/sonarqube.md) |
+| [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md), [SonarQube Community Build](fichas/sonarqube.md), [CodeQL](fichas/codeql.md) |
 | [shannon](fichas/shannon.md) | [strix](fichas/strix.md) |
 | [Sliver](fichas/sliver.md) | [Mythic](fichas/mythic.md), [Empire](fichas/empire.md) |
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |

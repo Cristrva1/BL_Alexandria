@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -39,9 +39,9 @@ Es una app Electron que usa FFmpeg, para Windows, macOS y Linux. Las descargas o
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (3). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[HandBrake](handbrake.md) · [WanGP](wan2gp.md)
+[Cap](cap.md) · [HandBrake](handbrake.md) · [WanGP](wan2gp.md)
 
 **Notas:** Sin alternativas declaradas. Descarga solo desde las fuentes oficiales.
 

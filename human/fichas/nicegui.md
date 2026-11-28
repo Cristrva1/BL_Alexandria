@@ -48,8 +48,8 @@ Grupo **Apps web de datos en Python**: NiceGUI ocupa la posición 4 de 5 (altern
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [streamlit](streamlit.md) ⭐ recomendado | 76 | Si quieres convertir un script de datos en app web con la menor curva. |
-| 2 | [Gradio](gradio.md) | 71 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
-| 3 | [Reflex](reflex.md) | 71 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 2 | [Reflex](reflex.md) | 70 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 3 | [Gradio](gradio.md) | 70 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
 | 4 | **NiceGUI** (esta ficha) | 68 | Si quieres una interfaz web en Python con control fino de componentes. |
 | 5 | [Panel](panel.md) | 55 | Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos. |
 

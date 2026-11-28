@@ -18,7 +18,7 @@ Revisión documental del 2026-11-27. [Fuente 1](https://github.com/PDFCraftTool/
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -53,7 +53,7 @@ Grupo **Suites de herramientas PDF**: pdfcraft ocupa la posición 2 de 2 (altern
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Stirling-PDF](stirling-pdf.md) ⭐ recomendado | 76 | Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
-| 2 | **pdfcraft** (esta ficha) | 54 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
+| 2 | **pdfcraft** (esta ficha) | 55 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
 
 ## Acceso, coste y equipo
 

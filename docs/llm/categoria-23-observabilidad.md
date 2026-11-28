@@ -26,7 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `deepeval` | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | alternativa |
 | `loguru` | Librería de logging para Python centrada en la simplicidad ("logging that… | 2 Intermedio | 62 | MIT (OSI permisiva) | sin grupo |
 | `openllmetry` | Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `lm-eval-harness` | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `lm-eval-harness` | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
 | `phoenix` | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM… | 1 Básico | 53 | Elastic-2.0 (source-available) | alternativa |
 | `guardrails` | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ragas` | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos… | 2 Intermedio | 52 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -151,7 +151,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LM Evaluation Harness (`lm-eval-harness`)
 
-- **Repo:** https://github.com/EleutherAI/lm-evaluation-harness · MIT · nivel 2 · 58/100
+- **Repo:** https://github.com/EleutherAI/lm-evaluation-harness · MIT · nivel 2 · 57/100
 - **Qué es:** Framework de evaluación de código abierto (MIT) de EleutherAI. Estándar de facto: es el motor del Open LLM Leaderboard de Hugging Face y lo usan muchos laboratorios. Activo.
 - **Cuándo elegirlo:** Casos: comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K; reproducir resultados de tablas de clasificación con la misma configuración.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; hardware model_dependent; API de IA: opcional; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..

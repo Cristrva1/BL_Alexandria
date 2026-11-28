@@ -1,0 +1,439 @@
+{
+ "batch": "altas-drive-2026-11-27-lote",
+ "checked_at": "2026-11-27",
+ "method": "Revisión de origen, licencia, paquete publicado, avisos de seguridad y CI sobre el commit de cada versión con la API de GitHub autenticada y la documentación oficial. No se instaló ni ejecutó ningún proyecto; las primeras pruebas quedan propuestas.",
+ "repos": {
+  "vercel-skills": {
+   "que_es": "Herramienta de línea de comandos de Vercel Labs para gestionar skills de agentes de código.",
+   "que_hace": "Instala, actualiza y elimina skills en las carpetas que leen Claude Code, Codex, Cursor y otros agentes.",
+   "como_lo_hace": "Descarga o lee la fuente indicada, valida los archivos SKILL.md y los copia o enlaza en cada agente. Guarda el origen y una huella del contenido para comprobar después si algo cambió.",
+   "combina_con": [
+    {
+     "id": "skillspector",
+     "motivo": "Analiza una skill de terceros antes de instalarla y avisa de comandos peligrosos, exfiltración o instrucciones ocultas."
+    },
+    {
+     "id": "awesome-agent-skills",
+     "motivo": "Ayuda a encontrar repositorios de skills; la CLI los instala después en el agente elegido."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Lee las skills que la CLI deja en la carpeta .claude/skills del proyecto."
+    },
+    {
+     "id": "codex",
+     "motivo": "Lee las skills que la CLI deja en la carpeta .agents/skills del proyecto."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/README.md",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/LICENSE",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/package.json",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/commands.md",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/agents.md",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/troubleshooting.md",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/src/telemetry.ts",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/.github/workflows/ci.yml",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/.github/workflows/e2e.yml",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/.github/workflows/publish.yml",
+    "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/e2e/github.e2e.ts",
+    "https://github.com/vercel-labs/skills/releases/tag/v1.9.1",
+    "https://github.com/vercel-labs/skills/actions/runs/45941358982",
+    "https://github.com/vercel-labs/skills/actions/runs/45941359000",
+    "https://github.com/vercel-labs/skills/actions/runs/45952567515",
+    "https://github.com/vercel-labs/skills/actions/runs/45943719278",
+    "https://www.npmjs.com/package/skills/v/1.9.1",
+    "https://github.com/vercel-labs/skills/security/advisories"
+   ],
+   "github": {
+    "name_with_owner": "vercel-labs/skills",
+    "archived": false,
+    "pushed_at": "2026-11-27",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-27",
+    "latest_release": "v1.9.1 (2026-11-27)"
+   }
+  },
+  "documenso": {
+   "que_es": "Alternativa de código abierto a DocuSign para gestionar firmas electrónicas de documentos PDF.",
+   "que_hace": "Permite subir un PDF, colocar campos, enviar enlaces de firma, seguir su estado y descargar el documento firmado con la auditoría.",
+   "como_lo_hace": "Combina una aplicación web en TypeScript con PostgreSQL y un servidor de correo. Al completarse las firmas, sella el PDF con un certificado .p12 propio o con un servicio de firma externo.",
+   "combina_con": [
+    {
+     "id": "stirling-pdf",
+     "motivo": "Une, comprime o convierte el PDF antes de subirlo para firma."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Archiva y busca los PDF firmados y sus registros de auditoría."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Recibe los webhooks de Documenso para avisar o archivar cuando un documento queda firmado."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/README.md",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/LICENSE",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/packages/ee/LICENSE",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/.github/workflows/ci.yml",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/.github/workflows/e2e-tests.yml",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/.github/workflows/publish.yml",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/.env.example",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/docker/development/compose.yml",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/packages/signing/transports/local.ts",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/deployment/docker-compose.mdx",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/configuration/telemetry.mdx",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/compliance/signature-levels.mdx",
+    "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/policies/licenses.mdx",
+    "https://github.com/documenso/documenso/releases/tag/v2.22.0",
+    "https://github.com/documenso/documenso/actions/runs/43345864857",
+    "https://github.com/documenso/documenso/actions/runs/43345864965",
+    "https://github.com/documenso/documenso/actions/runs/43345916435",
+    "https://github.com/documenso/documenso/security/advisories/GHSA-3494-9j87-fj64",
+    "https://hub.docker.com/r/documenso/documenso",
+    "https://documenso.com/pricing"
+   ],
+   "github": {
+    "name_with_owner": "documenso/documenso",
+    "archived": false,
+    "pushed_at": "2026-11-27",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-27",
+    "latest_release": "v2.22.0 (2026-11-13)"
+   }
+  },
+  "cap": {
+   "que_es": "App de escritorio de código abierto para grabar la pantalla y compartir los videos, pensada como alternativa a Loom.",
+   "que_hace": "Graba pantalla, cámara y micrófono, permite editar el resultado y exportarlo como archivo o compartirlo con un enlace.",
+   "como_lo_hace": "Captura con las interfaces de grabación de cada sistema operativo y procesa el video en tu equipo. El modo Instant y los enlaces usan la nube de Cap o un servidor que tú alojes.",
+   "combina_con": [
+    {
+     "id": "ffmpeg",
+     "motivo": "Convierte o comprime el MP4 exportado a otros formatos cuando lo necesites."
+    },
+    {
+     "id": "lossless-cut",
+     "motivo": "Corta o une las grabaciones exportadas sin volver a codificarlas."
+    },
+    {
+     "id": "handbrake",
+     "motivo": "Reduce el tamaño del video exportado con ajustes predefinidos antes de enviarlo."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/README.md",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/LICENSE",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/licenses/LICENSE-MIT",
+    "https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/apps/desktop-gpui/locales/es.toml",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/engine-verify.yml",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/recording-reliability.yml",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/verify-recording.yml",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/publish.yml",
+    "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/desktop-release.yml",
+    "https://github.com/CapSoftware/Cap/actions/runs/43092047100",
+    "https://github.com/CapSoftware/Cap/actions/runs/43092046841",
+    "https://github.com/CapSoftware/Cap/actions/runs/43099158030",
+    "https://github.com/CapSoftware/Cap/actions/runs/43150140258",
+    "https://github.com/CapSoftware/Cap/security/advisories",
+    "https://cap.so/download",
+    "https://cap.so/download/versions",
+    "https://cap.so/pricing"
+   ],
+   "github": {
+    "name_with_owner": "CapSoftware/Cap",
+    "archived": false,
+    "pushed_at": "2026-11-27",
+    "license": "NOASSERTION",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-27",
+    "latest_release": "cap-v0.6.3 (2026-11-11)"
+   }
+  },
+  "pake": {
+   "que_es": "Herramienta de línea de comandos que empaqueta páginas web como apps de escritorio.",
+   "que_hace": "Crea un instalador para macOS, Windows o Linux que abre una web o tus archivos HTML en una ventana propia.",
+   "como_lo_hace": "Usa Tauri y el visor web del sistema operativo en lugar de incluir Chromium; por eso los instaladores ocupan poco.",
+   "combina_con": [
+    {
+     "id": "slidev",
+     "motivo": "Empaqueta la carpeta que genera slidev build como app para presentar sin navegador."
+    },
+    {
+     "id": "tailwindcss",
+     "motivo": "Da estilo a la página propia antes de empaquetarla."
+    },
+    {
+     "id": "excalidraw",
+     "motivo": "Abre la pizarra en una ventana propia, separada de las pestañas del navegador."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/README.md",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/LICENSE",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/LICENSE-EXCEPTION",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/TRADEMARK.md",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/docs/cli-usage.md",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/docs/faq.md",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/.github/workflows/quality-and-test.yml",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/.github/workflows/npm-publish.yml",
+    "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/plugins/pake/skills/pake/SKILL.md",
+    "https://github.com/tw93/Pake/releases/tag/V3.21.0",
+    "https://github.com/tw93/Pake/actions/runs/45192308113",
+    "https://github.com/tw93/Pake/actions/runs/45195435888",
+    "https://github.com/tw93/Pake/security/advisories/GHSA-vq4w-55rh-9ff3",
+    "https://github.com/tw93/Pake/security/advisories/GHSA-6c7f-87jf-wg9w",
+    "https://www.npmjs.com/package/pake-cli/v/3.21.0",
+    "https://pake.run/"
+   ],
+   "github": {
+    "name_with_owner": "tw93/Pake",
+    "archived": false,
+    "pushed_at": "2026-11-25",
+    "license": "GPL-3.0",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-27",
+    "latest_release": "V3.21.0 (2026-11-23)"
+   }
+  },
+  "codeql": {
+   "que_es": "Colección abierta de consultas y bibliotecas con la que GitHub busca vulnerabilidades en el código.",
+   "que_hace": "Señala en tu repositorio los puntos donde datos de fuera llegan a operaciones peligrosas, como comandos del sistema o consultas a bases de datos.",
+   "como_lo_hace": "Extrae el código a una base de datos consultable, ejecuta consultas QL que rastrean el flujo de datos y publica los resultados como alertas de code scanning en formato SARIF.",
+   "combina_con": [
+    {
+     "id": "github-mcp-server",
+     "motivo": "Permite que un agente lea y resuma las alertas de code scanning del repositorio mediante sus herramientas code_security."
+    },
+    {
+     "id": "osv-scanner",
+     "motivo": "Revisa las dependencias contra vulnerabilidades publicadas; CodeQL revisa el código que escribes tú."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "Importa el informe SARIF para seguir los hallazgos junto con los de otros escáneres."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/github/codeql/blob/ddc0325ff08acb437bfaf503904ab96360fb169a/README.md",
+    "https://github.com/github/codeql/blob/ddc0325ff08acb437bfaf503904ab96360fb169a/LICENSE",
+    "https://github.com/github/codeql-cli-binaries/blob/9d0dcfbe60daef8e62688852c0977065865c80a0/LICENSE.md",
+    "https://github.com/github/codeql-cli-binaries/blob/9d0dcfbe60daef8e62688852c0977065865c80a0/README.md",
+    "https://github.com/github/codeql-cli-binaries/releases/tag/v2.27.6",
+    "https://github.com/github/codeql-action/releases/tag/codeql-bundle-v2.27.6",
+    "https://github.com/github/codeql-action/releases/tag/v4.39.5",
+    "https://github.com/github/codeql-action/blob/38112626f97ac1fd7acf3df7ebca51f4677c1b38/README.md",
+    "https://github.com/github/codeql-action/blob/915412ff23e8b7659517e607487dbeae018f2934/src/defaults.json",
+    "https://github.com/github/codeql-action/blob/915412ff23e8b7659517e607487dbeae018f2934/.github/workflows/__multi-language-autodetect.yml",
+    "https://github.com/github/codeql-action/actions/runs/45419775563",
+    "https://github.com/github/codeql/blob/ddc0325ff08acb437bfaf503904ab96360fb169a/python/ql/src/Security/CWE-078/CommandInjection.ql",
+    "https://github.com/github/codeql/blob/ddc0325ff08acb437bfaf503904ab96360fb169a/python/ql/test/query-tests/Security/CWE-078-CommandInjection/command_injection.py",
+    "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/content/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning.md",
+    "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/data/reusables/gated-features/code-scanning.md",
+    "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/content/billing/concepts/product-billing/github-actions.md",
+    "https://github.com/github/codeql-cli-binaries/security/advisories",
+    "https://github.com/github/codeql-action/security/advisories",
+    "https://github.com/github/codeql/security/advisories",
+    "https://github.com/github/github-mcp-server/blob/1a3b6a7a9151343200f3566ac24ea5db29f7319e/README.md",
+    "https://github.com/DefectDojo/django-DefectDojo/tree/cd0a4483a224707f72a0fc3112359089c1446b55/dojo/tools/sarif"
+   ],
+   "github": {
+    "name_with_owner": "github/codeql",
+    "archived": false,
+    "pushed_at": "2026-11-27",
+    "license": "MIT",
+    "primary_language": "CodeQL",
+    "checked_at": "2026-11-27"
+   }
+  },
+  "bandit": {
+   "que_es": "Analizador de seguridad para código Python mantenido por la comunidad PyCQA.",
+   "que_hace": "Detecta patrones de riesgo como comandos con shell, deserialización insegura, contraseñas escritas en el código o criptografía débil.",
+   "como_lo_hace": "Recorre el árbol de sintaxis de cada archivo con complementos identificados por códigos (B101, B602, B506…) y clasifica cada hallazgo por gravedad y confianza.",
+   "combina_con": [
+    {
+     "id": "pre-commit",
+     "motivo": "Ejecuta Bandit antes de cada commit con el gancho que publica el propio repositorio."
+    },
+    {
+     "id": "gitleaks",
+     "motivo": "Busca claves y contraseñas filtradas en todo el historial de git, que Bandit no revisa."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "Importa los informes de Bandit para seguir y deduplicar hallazgos junto con los de otros escáneres."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/README.rst",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/LICENSE",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/doc/source/start.rst",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/bandit/plugins/injection_shell.py",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/bandit/plugins/yaml_load.py",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/.github/workflows/pythonpackage.yml",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/tox.ini",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/tests/functional/test_functional.py",
+    "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/.pre-commit-hooks.yaml",
+    "https://github.com/PyCQA/bandit/actions/runs/22385359689",
+    "https://github.com/PyCQA/bandit/actions/runs/22385508641",
+    "https://github.com/PyCQA/bandit/releases/tag/1.9.4",
+    "https://pypi.org/project/bandit/1.9.4/",
+    "https://github.com/PyCQA/bandit/security/advisories",
+    "https://github.com/DefectDojo/django-DefectDojo/tree/cd0a4483a224707f72a0fc3112359089c1446b55/dojo/tools/bandit"
+   ],
+   "github": {
+    "name_with_owner": "PyCQA/bandit",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-27",
+    "latest_release": "1.9.4 (2026-02-25)"
+   }
+  },
+  "gosec": {
+   "que_es": "Analizador de seguridad de código fuente para Go, del proyecto securego.",
+   "que_hace": "Encuentra patrones de riesgo en programas Go, los relaciona con categorías CWE y los entrega en texto, JSON, SARIF y otros formatos.",
+   "como_lo_hace": "Combina reglas sobre el árbol de sintaxis, analizadores sobre la forma SSA del programa y un análisis de contaminación que sigue datos de entrada hasta llamadas peligrosas.",
+   "combina_con": [
+    {
+     "id": "osv-scanner",
+     "motivo": "Revisa las dependencias de go.mod contra vulnerabilidades publicadas; gosec revisa tu propio código."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "Importa los informes de gosec para seguir y deduplicar hallazgos junto con los de otros escáneres."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/README.md",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/LICENSE.txt",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/RULES.md",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/go.mod",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/rules/weakcrypto.go",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/autofix/ai.go",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/.github/workflows/ci.yml",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/Makefile",
+    "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/.goreleaser.yml",
+    "https://github.com/securego/gosec/actions/runs/39929569892",
+    "https://github.com/securego/gosec/actions/runs/39930030604",
+    "https://github.com/securego/gosec/releases/tag/v2.30.0",
+    "https://pkg.go.dev/github.com/securego/gosec/v2",
+    "https://formulae.brew.sh/formula/gosec",
+    "https://github.com/securego/gosec/security/advisories",
+    "https://github.com/DefectDojo/django-DefectDojo/tree/cd0a4483a224707f72a0fc3112359089c1446b55/dojo/tools/gosec"
+   ],
+   "github": {
+    "name_with_owner": "securego/gosec",
+    "archived": false,
+    "pushed_at": "2026-11-28",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "checked_at": "2026-11-27",
+    "latest_release": "v2.30.0 (2026-10-23)"
+   }
+  },
+  "brakeman": {
+   "que_es": "Analizador estático de seguridad para aplicaciones Ruby on Rails.",
+   "que_hace": "Encuentra inyección SQL y de comandos, XSS, redirecciones abiertas, asignación masiva y otras debilidades, con un nivel de confianza por aviso.",
+   "como_lo_hace": "Interpreta el código Ruby de la aplicación sin ejecutarlo, rastrea qué datos provienen de la petición y aplica comprobaciones por tipo de vulnerabilidad; el informe sale en texto, HTML, JSON, SARIF y otros formatos.",
+   "combina_con": [
+    {
+     "id": "osv-scanner",
+     "motivo": "Revisa las gemas de Gemfile.lock contra vulnerabilidades publicadas; Brakeman revisa el código de la aplicación."
+    },
+    {
+     "id": "zaproxy",
+     "motivo": "Prueba la aplicación en marcha en tu equipo para confirmar con tráfico real lo que Brakeman señala en el código."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "Importa los informes de Brakeman para seguir los hallazgos junto con los de otros escáneres."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/README.md",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/LICENSE.md",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/COPYING.md",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/OPTIONS.md",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/lib/brakeman/checks/check_execute.rb",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/lib/brakeman/scanner.rb",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/.circleci/config.yml",
+    "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/Rakefile",
+    "https://github.com/presidentbeef/brakeman/runs/136439493013",
+    "https://github.com/presidentbeef/brakeman/actions/runs/44796664587",
+    "https://github.com/presidentbeef/brakeman/releases/tag/v8.1.1",
+    "https://rubygems.org/gems/brakeman/versions/8.1.1",
+    "https://hub.docker.com/r/presidentbeef/brakeman/tags",
+    "https://github.com/presidentbeef/brakeman/security/advisories",
+    "https://github.com/DefectDojo/django-DefectDojo/tree/cd0a4483a224707f72a0fc3112359089c1446b55/dojo/tools/brakeman"
+   ],
+   "github": {
+    "name_with_owner": "presidentbeef/brakeman",
+    "archived": false,
+    "pushed_at": "2026-11-20",
+    "license": "NOASSERTION",
+    "primary_language": "Ruby",
+    "checked_at": "2026-11-27",
+    "latest_release": "v8.1.1 (2026-11-20)"
+   }
+  },
+  "mobsf": {
+   "que_es": "Plataforma de código abierto para evaluar la seguridad de aplicaciones móviles Android, iOS y Windows.",
+   "que_hace": "Genera informes de análisis estático de archivos APK, IPA, APPX o del código fuente y, con un emulador o dispositivo preparado, observa la app mientras se ejecuta.",
+   "como_lo_hace": "Descompila la app con herramientas como jadx y apktool, revisa manifiesto, binarios y código con reglas propias y presenta los hallazgos en una interfaz web y una API REST.",
+   "combina_con": [
+    {
+     "id": "mastg",
+     "motivo": "La guía de pruebas móviles de OWASP explica cómo interpretar y ampliar cada hallazgo del informe."
+    },
+    {
+     "id": "jadx",
+     "motivo": "Abre el código descompilado de la misma APK para revisar a mano las líneas que señala el informe."
+    },
+    {
+     "id": "defectdojo",
+     "motivo": "Importa los informes de MobSF para seguir los hallazgos junto con los de otros escáneres."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/README.md",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/LICENSE",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/.github/SECURITY.md",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/Dockerfile",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/scripts/entrypoint.sh",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/mobsf/MobSF/settings.py",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/mobsf/MalwareAnalyzer/views/MalwareDomainCheck.py",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/.github/workflows/mobsf-test.yml",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/.github/workflows/docker-release.yml",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/mobsf/StaticAnalyzer/tests.py",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/actions/runs/44250422514",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/actions/runs/44358831543",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.6.9",
+    "https://github.com/MobSF/Mobile-Security-Framework-MobSF/security/advisories",
+    "https://hub.docker.com/r/opensecurity/mobile-security-framework-mobsf/tags",
+    "https://pypi.org/project/mobsf/4.6.9/",
+    "https://github.com/MobSF/docs/blob/545d88f9c19a97933ba36e60fdb9c6946d7aa9e2/docker_options.md",
+    "https://github.com/MobSF/docs/blob/545d88f9c19a97933ba36e60fdb9c6946d7aa9e2/running_mobsf_docker.md",
+    "https://github.com/MobSF/docs/blob/545d88f9c19a97933ba36e60fdb9c6946d7aa9e2/configurations.md",
+    "https://github.com/OWASP/mastg/blob/c80a12abf2ece138fbd906e90c325ccca2754a4f/Crackmes/README.md",
+    "https://github.com/OWASP/mastg/blob/c80a12abf2ece138fbd906e90c325ccca2754a4f/Crackmes/Android/Level_01/UnCrackable-Level1.apk",
+    "https://github.com/OWASP/mastg/blob/c80a12abf2ece138fbd906e90c325ccca2754a4f/License.md",
+    "https://github.com/OWASP/mastg/blob/c80a12abf2ece138fbd906e90c325ccca2754a4f/techniques/android/MASTG-TECH-0043.md",
+    "https://github.com/DefectDojo/django-DefectDojo/tree/cd0a4483a224707f72a0fc3112359089c1446b55/dojo/tools/mobsf"
+   ],
+   "github": {
+    "name_with_owner": "MobSF/Mobile-Security-Framework-MobSF",
+    "archived": false,
+    "pushed_at": "2026-11-25",
+    "license": "GPL-3.0",
+    "primary_language": "Python",
+    "checked_at": "2026-11-27",
+    "latest_release": "v4.6.9 (2026-11-18)"
+   }
+  }
+ }
+}

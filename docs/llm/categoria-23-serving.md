@@ -19,16 +19,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `vllm` | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de… | 3 Avanzado | 79 | Apache-2.0 (OSI permisiva) | recomendado |
-| `litellm` | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola… | 2 Intermedio | 78 | MIT + licencia Enterprise (litellm/enterprise/) (open-core) | recomendado |
 | `tensorrt-llm` | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de… | 3 Avanzado | 77 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `omniroute` | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar… | 3 Avanzado | 76 | MIT (OSI permisiva) | alternativa |
-| `ray` | Motor de cómputo distribuido para IA: escala Python de un portátil a un… | 2 Intermedio | 76 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `litellm` | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola… | 2 Intermedio | 75 | MIT + licencia Enterprise (litellm/enterprise/) (open-core) | recomendado |
+| `ray` | Motor de cómputo distribuido para IA: escala Python de un portátil a un… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `omniroute` | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar… | 3 Avanzado | 74 | MIT (OSI permisiva) | alternativa |
 | `sglang` | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | 3 Avanzado | 68 | Apache-2.0 (OSI permisiva) | alternativa |
 | `xinference` | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `gpustack` | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o… | 3 Avanzado | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `bentoml` | Framework Python para convertir modelos y pipelines de IA en APIs de… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `claude-code-router` | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 58 | MIT (OSI permisiva) | alternativa |
-| `portkey-gateway` | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | 51 | MIT (OSI permisiva) | sin grupo |
+| `claude-code-router` | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes… | 3 Avanzado | 55 | MIT (OSI permisiva) | alternativa |
+| `portkey-gateway` | Centraliza llamadas a distintos proveedores de modelos mediante una pasarela… | 3 Avanzado | 50 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -51,18 +51,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `sglang`
 - **Riesgos y avisos:** Alternativas (elige una): sglang. Es un motor de serving y no una app de chat; confirma la matriz de hardware y versión antes de instalar.
 
-### litellm (`litellm`)
-
-- **Repo:** https://github.com/BerriAI/litellm · MIT + licencia Enterprise (litellm/enterprise/) · nivel 2 · 78/100 · recomendado en «Pasarelas y routers de proveedores LLM»
-- **Qué es:** LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra…
-- **Cuándo elegirlo:** Casos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python y uv; proveedor o endpoint local; presupuesto de prueba; hardware prerequisites; API de IA: opcional; Python y uv; proveedor o endpoint local; presupuesto de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `uv add litellm` — fuente: https://github.com/BerriAI/litellm/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Configura un único proveedor y envía una petición breve antes de activar fallback y balanceo Éxito: Puedes identificar el proveedor real y su consumo
-- **Combina con:** `ollama` [8/motores], `open-webui` [8/chats], `langfuse` [23/observabilidad], `claude-code` [20/terminal]
-- **Alternativas:** `omniroute`, `claude-code-router`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): omniroute, claude-code-router. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota…. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos.
-
 ### TensorRT-LLM (`tensorrt-llm`)
 
 - **Repo:** https://github.com/NVIDIA/TensorRT-LLM · Apache-2.0 · nivel 3 · 77/100
@@ -78,9 +66,32 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `litellm`, `open-webui` [8/chats], `transformers` [24/entrenamiento], `deepseek-v3` [24/modelos], `gpustack`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA. Es infraestructura especializada y no una instalación universal para cualquier portátil o GPU.
 
+### litellm (`litellm`)
+
+- **Repo:** https://github.com/BerriAI/litellm · MIT + licencia Enterprise (litellm/enterprise/) · nivel 2 · 75/100 · recomendado en «Pasarelas y routers de proveedores LLM»
+- **Qué es:** LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra…
+- **Cuándo elegirlo:** Casos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python y uv; proveedor o endpoint local; presupuesto de prueba; hardware prerequisites; API de IA: opcional; Python y uv; proveedor o endpoint local; presupuesto de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `uv add litellm` — fuente: https://github.com/BerriAI/litellm/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Configura un único proveedor y envía una petición breve antes de activar fallback y balanceo Éxito: Puedes identificar el proveedor real y su consumo
+- **Combina con:** `ollama` [8/motores], `open-webui` [8/chats], `langfuse` [23/observabilidad], `claude-code` [20/terminal]
+- **Alternativas:** `omniroute`, `claude-code-router`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): omniroute, claude-code-router. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota…. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos.
+
+### Ray (`ray`)
+
+- **Repo:** https://github.com/ray-project/ray · Apache-2.0 · nivel 2 · 75/100
+- **Qué es:** Framework de código abierto (Apache-2.0) creado en UC Berkeley y mantenido por Anyscale, que ofrece una plataforma gestionada. Muy maduro y usado a gran escala.
+- **Cuándo elegirlo:** Casos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install ray` — fuente: https://github.com/ray-project/ray/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo. Éxito: Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso.
+- **Combina con:** `vllm`, `pytorch` [24/entrenamiento], `verl` [24/entrenamiento], `openrlhf` [24/entrenamiento]
+- **Riesgos y avisos:** Para un solo equipo, la complejidad de Ray puede no compensar.
+
 ### OmniRoute (`omniroute`)
 
-- **Repo:** https://github.com/cheaper-inference/OmniRoute · MIT · nivel 3 · 76/100 · alternativa en «Pasarelas y routers de proveedores LLM»
+- **Repo:** https://github.com/cheaper-inference/OmniRoute · MIT · nivel 3 · 74/100 · alternativa en «Pasarelas y routers de proveedores LLM»
 - **Qué es:** OmniRoute, pasarela local de IA gratuita creada por @diegosouzapw. Licencia MIT. Tiene un recuento de estrellas inusualmente alto (~88k) y publica versiones casi a diario (v3.8.53).
 - **Cuándo elegirlo:** Casos: Centralizar proveedores de un agente; Comparar rutas y límites de consumo.
 - **Requisitos:** nivel 3: preparación pesada; Node o distribución compatible; cuentas de proveedores o backend local; agente opcional; hardware prerequisites; API de IA: opcional; Node o distribución compatible; cuentas de proveedores o backend local; agente opcional.
@@ -89,17 +100,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `cline` [20/editor], `ollama` [8/motores]
 - **Alternativas:** `litellm`, `claude-code-router`
 - **Riesgos y avisos:** Alternativas (elige una): claude-code-router, litellm. Combinar cuentas gratuitas puede incumplir las condiciones de algunos proveedores; el MITM implica…. Documenta Claude Code, Codex y un adaptador Antigravity; OAuth y automatización de terceros dependen de permisos y términos de cada proveedor.
-
-### Ray (`ray`)
-
-- **Repo:** https://github.com/ray-project/ray · Apache-2.0 · nivel 2 · 76/100
-- **Qué es:** Framework de código abierto (Apache-2.0) creado en UC Berkeley y mantenido por Anyscale, que ofrece una plataforma gestionada. Muy maduro y usado a gran escala.
-- **Cuándo elegirlo:** Casos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install ray` — fuente: https://github.com/ray-project/ray/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo. Éxito: Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso.
-- **Combina con:** `vllm`, `pytorch` [24/entrenamiento], `verl` [24/entrenamiento], `openrlhf` [24/entrenamiento]
-- **Riesgos y avisos:** Para un solo equipo, la complejidad de Ray puede no compensar.
 
 ### SGLang (`sglang`)
 
@@ -148,7 +148,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-code-router (`claude-code-router`)
 
-- **Repo:** https://github.com/musistudio/claude-code-router · MIT · nivel 3 · 58/100 · alternativa en «Pasarelas y routers de proveedores LLM»
+- **Repo:** https://github.com/musistudio/claude-code-router · MIT · nivel 3 · 55/100 · alternativa en «Pasarelas y routers de proveedores LLM»
 - **Qué es:** Claude Code Router (CCR), pasarela local y plano de control para agentes de programación, de @musistudio. Licencia MIT. Es muy popular (~38k estrellas, v3.1.4).
 - **Cuándo elegirlo:** Casos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex.
 - **Requisitos:** nivel 3: preparación pesada; Node 22+ o app; proveedor y credenciales; agente de prueba; hardware prerequisites; API de IA: depends; Node 22+ o app; proveedor y credenciales; agente de prueba.
@@ -165,7 +165,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Portkey AI Gateway (`portkey-gateway`)
 
-- **Repo:** https://github.com/Portkey-AI/gateway · MIT · nivel 3 · 51/100
+- **Repo:** https://github.com/Portkey-AI/gateway · MIT · nivel 3 · 50/100
 - **Qué es:** Centraliza llamadas a distintos proveedores de modelos mediante una pasarela con reglas de ruta, presupuestos y registro de solicitudes.
 - **Cuándo elegirlo:** Casos: Hacer una llamada pequeña a un solo proveedor y medir latencia.; Comparar dos rutas ante un error simulado sin enviar información privada.
 - **Requisitos:** nivel 3: preparación pesada, requiere clave de API; TypeScript, Dockerfile, package.json; API de IA: sí; Node.js/npm o un contenedor compatible; para inferencia, un proveedor habilitado y una clave propia de prueba..

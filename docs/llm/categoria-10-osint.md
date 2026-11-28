@@ -18,12 +18,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `gods-eye-view` | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 68 | MIT (solo código) (OSI permisiva) | recomendado |
+| `gods-eye-view` | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 69 | MIT (solo código) (OSI permisiva) | recomendado |
 | `sherlock` | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios… | 1 Básico | 67 | MIT (OSI permisiva) | recomendado |
 | `theharvester` | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 2 Intermedio | 66 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `maigret` | Recopila un dossier sobre una persona a partir de un nombre de usuario… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
 | `osiris` | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
-| `pythia` | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 47 | MIT (OSI permisiva) | sin grupo |
+| `pythia` | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 48 | MIT (OSI permisiva) | sin grupo |
 | `recon-ng` | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 44 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -32,7 +32,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### gods-eye-view (`gods-eye-view`)
 
-- **Repo:** https://github.com/bilawalsidhu/gods-eye-view · MIT (solo código) · nivel 2 · 68/100 · recomendado en «Paneles OSINT sobre globo 3D»
+- **Repo:** https://github.com/bilawalsidhu/gods-eye-view · MIT (solo código) · nivel 2 · 69/100 · recomendado en «Paneles OSINT sobre globo 3D»
 - **Qué es:** God's Eye View, visualizador geoespacial en un globo 3D que reúne datos abiertos en tiempo real, de @bilawalsidhu. Licencia MIT (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP.
 - **Requisitos:** nivel 2: preparación media; Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP; hardware prerequisites; API de IA: opcional; Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP.
@@ -106,7 +106,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Pythia (`pythia`)
 
-- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 47/100
+- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 48/100
 - **Qué es:** PYTHIA, plataforma local de predicción geopolítica de @jangles-byte que fusiona MiroFish (motor de predicción por inteligencia de enjambre) y Osiris (panel de inteligencia global). Licencia MIT.
 - **Cuándo elegirlo:** Casos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos.
 - **Requisitos:** nivel 3: preparación pesada; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script; hardware prerequisites; API de IA: no; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script.

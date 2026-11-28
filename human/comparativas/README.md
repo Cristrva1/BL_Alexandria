@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-60 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -74,6 +74,7 @@
 
 ## 🔍 Analizar software y comprobar su seguridad
 
+- [CodeQL vs Semgrep](codeql-vs-semgrep.md)
 - [ghidra vs radare2](ghidra-vs-radare2.md)
 
 ## 🤖 WhatsApp, mensajería y chatbots

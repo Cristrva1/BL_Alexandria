@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,8 +47,8 @@ Grupo **Mapas web interactivos**: Leaflet ocupa la posición 1 de 2 (recomendado
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Leaflet** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. |
-| 2 | [MapLibre GL JS](maplibre.md) | 67 | Si buscas esto: biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia. |
+| 1 | **Leaflet** (esta ficha) ⭐ recomendado | 71 | Si buscas esto: biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. |
+| 2 | [MapLibre GL JS](maplibre.md) | 68 | Si buscas esto: biblioteca abierta de mapas vectoriales interactivos en el navegador con renderizado GPU, nacida como fork de Mapbox GL JS antes de su cambio de licencia. |
 
 ## Acceso, coste y equipo
 

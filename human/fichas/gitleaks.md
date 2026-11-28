@@ -36,9 +36,9 @@ Escrito en Go; se instala con Homebrew, Docker, Go o binarios. Se usa como CLI, 
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OWASP WrongSecrets](wrongsecrets.md)
+[Bandit](bandit.md) · [OWASP WrongSecrets](wrongsecrets.md)
 
 **Notas:** Alternativas (elige una): trufflehog. Sucesor declarado por el autor: Betterleaks.
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -126,6 +126,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [ast-grep](ast-grep.md) | 16.6k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
 | [SonarQube Community Build](sonarqube.md) | 11.2k | Plataforma de inspección continua de calidad y seguridad del código: análisis estático de bugs, vulnerabilidades y mantenibilidad en muchos lenguajes. |
+| [CodeQL](codeql.md) | 10.4k | Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub. |
 
 ## Enlaces
 

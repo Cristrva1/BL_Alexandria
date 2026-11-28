@@ -18,7 +18,7 @@ Revisión documental del 2026-11-27. [Fuente 1](https://github.com/sleuthkit/sle
 
 **Nivel:** 3 Avanzado — preparación media; requiere programar con él; dominio especializado
 
-**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 38/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

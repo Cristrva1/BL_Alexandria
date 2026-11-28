@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 3 de 3)
 
-Categoría 16 completa (141 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (146 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,6 +18,55 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ## Fichas
 
+### OWASP Threat Dragon (`threat-dragon`)
+
+- **Repo:** https://github.com/OWASP/threat-dragon · Apache-2.0 · nivel 1 · 70/100 · recomendado en «Modelado de amenazas»
+- **Qué es:** Proyecto OWASP de código abierto para modelado de amenazas con diagramas.
+- **Cuándo elegirlo:** Casos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura.
+- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull threatdragon/owasp-threat-dragon:stable` — fuente: https://github.com/OWASP/threat-dragon/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo. Éxito: Obtienes un diagrama con amenazas asociadas y un informe exportable.
+- **Combina con:** `asvs` [16/referencias], `cheatsheetseries` [16/referencias], `owasp-top10` [16/referencias]
+- **Alternativas:** `pytm`
+
+### bla (`bla`)
+
+- **Repo:** https://github.com/qybaihe/bla · MIT · nivel 2 · 69/100
+- **Qué es:** BLA (Blind LLM Agents), servidor MCP y CLI de defensa para proteger releases de software frente a agentes de ingeniería inversa con IA, como REA. Lo crea @qybaihe. Licencia MIT.
+- **Cuándo elegirlo:** Casos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas.
+- **Requisitos:** nivel 2: preparación media; Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba; hardware prerequisites; API de IA: no; Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `npx bla-agents setup` — fuente: https://github.com/qybaihe/bla/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Inspecciona una protección en una copia pequeña y compara comportamiento y diferencias antes de adoptarla Éxito: Puedes identificar qué transforma y qué pruebas conservarían la función original
+- **Combina con:** `rea` [16/agentes], `claude-code` [20/terminal], `frida` [16/reversing]
+- **Riesgos y avisos:** Sin alternativas declaradas. Mide si la ofuscación compensa su coste de mantenimiento. Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso.
+
+### CodeQL (`codeql`)
+
+- **Repo:** https://github.com/github/codeql · MIT (consultas y bibliotecas); CodeQL CLI con términos propios de GitHub · nivel 2 · 67/100
+- **Qué es:** Colección abierta de consultas y bibliotecas con la que GitHub busca vulnerabilidades en el código.
+- **Cuándo elegirlo:** Casos: Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión; Comprobar si un cambio en una pequeña aplicación Flask abre una inyección…. Evítalo si Necesitas analizar código privado o de clientes sin licencia de pago de GitHub, o prefieres reglas sencillas que puedas escribir sin aprender el lenguaje QL.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; CodeQL, Cargo.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/github/codeql/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** En un repositorio público propio con licencia MIT, sube app.py con una ruta Flask que lee carpeta = request.args.get('carpeta') y ejecuta subprocess.Popen('ls ' + carpeta, shell=True). Éxito: Cuando termina el flujo CodeQL en la pestaña Actions, el apartado Code scanning de la pestaña de seguridad muestra la…
+- **Combina con:** `github-mcp-server` [5/servidores], `osv-scanner` [16/nube-contenedores], `defectdojo`
+- **Alternativas:** `semgrep`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
+
+### Dependency-Track (`dependency-track`)
+
+- **Repo:** https://github.com/DependencyTrack/dependency-track · Apache-2.0 · nivel 2 · 64/100
+- **Qué es:** Proyecto insignia de OWASP para análisis continuo de componentes (Component Analysis) a partir de listas de materiales de software (SBOM).
+- **Cuándo elegirlo:** Casos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Java, Makefile, pom.xml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://docs.dependencytrack.org/getting-started/deploy-docker/
+
+  ```bash
+  curl -LO https://dependencytrack.org/docker-compose.yml
+  docker compose up -d
+  ```
+- **Primera prueba propuesta (no ejecutada):** Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio. Éxito: Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.
+- **Combina con:** `cdxgen`, `syft` [16/nube-contenedores], `defectdojo`, `dependency-check`
+
 ### cdxgen (`cdxgen`)
 
 - **Repo:** https://github.com/cdxgen/cdxgen · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Generadores de SBOM»
@@ -29,15 +78,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `dependency-track`
 - **Alternativas:** `syft`
 
-### OWASP Noir (`noir`)
+### Bandit (`bandit`)
 
-- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 61/100
-- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
-- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
-- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
-- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
+- **Repo:** https://github.com/PyCQA/bandit · Apache-2.0 · nivel 1 · 62/100
+- **Qué es:** Analizador de seguridad para código Python mantenido por la comunidad PyCQA.
+- **Cuándo elegirlo:** Casos: Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema; Añadir una comprobación de seguridad antes de cada commit en un proyecto Python…. Evítalo si Tu proyecto no está escrito en Python o necesitas seguir el recorrido de los datos entre varios archivos.
+- **Requisitos:** nivel 1: preparación sencilla; Python, requirements.txt, setup.py; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/PyCQA/bandit/blob/main/README.rst
+- **Primera prueba propuesta (no ejecutada):** Crea prueba.py con import subprocess y subprocess.call(input('Carpeta: '), shell=True) y ejecuta bandit prueba.py Éxito: El informe muestra el hallazgo B602 (subprocess_popen_with_shell_equals_true) con gravedad High y confianza High en la…
+- **Combina con:** `pre-commit` [7/calidad], `gitleaks` [7/calidad], `defectdojo`
 
 ### OWASP Dependency-Check (`dependency-check`)
 
@@ -50,6 +99,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `dependency-track`, `defectdojo`, `osv-scanner` [16/nube-contenedores]
 - **Alternativas:** `osv-scanner`, `dep-scan`
 
+### OWASP Noir (`noir`)
+
+- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 59/100
+- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
+- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
+- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
+- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
+
 ### OWASP dep-scan (`dep-scan`)
 
 - **Repo:** https://github.com/owasp-dep-scan/dep-scan · MIT · nivel 1 · 58/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
@@ -60,16 +119,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio. Éxito: Obtienes un informe de vulnerabilidades y riesgos de dependencias.
 - **Combina con:** `cdxgen`, `dependency-track`
 - **Alternativas:** `osv-scanner`, `dependency-check`
-
-### OWASP Java HTML Sanitizer (`java-html-sanitizer`)
-
-- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 58/100
-- **Qué es:** Proyecto OWASP: un saneador de HTML para aplicaciones Java.
-- **Cuándo elegirlo:** Casos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/java-html-sanitizer/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida. Éxito: El HTML con scripts queda saneado.
-- **Combina con:** `owasp-java-encoder`, `cheatsheetseries` [16/referencias]
 
 ### OWASP pytm (`pytm`)
 
@@ -83,9 +132,19 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `threat-dragon`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
+### OWASP Java HTML Sanitizer (`java-html-sanitizer`)
+
+- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 57/100
+- **Qué es:** Proyecto OWASP: un saneador de HTML para aplicaciones Java.
+- **Cuándo elegirlo:** Casos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/java-html-sanitizer/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida. Éxito: El HTML con scripts queda saneado.
+- **Combina con:** `owasp-java-encoder`, `cheatsheetseries` [16/referencias]
+
 ### Lynis (`lynis`)
 
-- **Repo:** https://github.com/CISOfy/lynis · GPL-3.0 · nivel 1 · 55/100
+- **Repo:** https://github.com/CISOfy/lynis · GPL-3.0 · nivel 1 · 56/100
 - **Qué es:** Herramienta de auditoría de código abierto (GPL-3.0) de CISOfy, con versión Enterprise de pago. Muy madura; ritmo de cambios moderado (último push en septiembre de 2026).
 - **Cuándo elegirlo:** Casos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA).
 - **Requisitos:** nivel 1: preparación sencilla; Shell; API de IA: no.
@@ -103,6 +162,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/owasp-java-encoder/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Añade la dependencia Maven del README a un proyecto Java de prueba y usa Encode.forHtml. Éxito: La salida queda codificada para el contexto HTML.
 - **Combina con:** `java-html-sanitizer`, `cheatsheetseries` [16/referencias]
+
+### Brakeman (`brakeman`)
+
+- **Repo:** https://github.com/presidentbeef/brakeman · Brakeman Public Use License · nivel 1 · 44/100
+- **Qué es:** Analizador estático de seguridad para aplicaciones Ruby on Rails.
+- **Cuándo elegirlo:** Casos: Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario; Comparar el informe JSON actual con el anterior para ver qué avisos se…. Evítalo si Tu aplicación no usa Ruby on Rails o quieres integrarlo en un producto o servicio comercial para terceros sin comprar la licencia.
+- **Requisitos:** nivel 1: preparación sencilla; Ruby, Dockerfile, Gemfile; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `gem install brakeman` — fuente: https://github.com/presidentbeef/brakeman/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Crea demo/app/controllers/archivos_controller.rb con una clase ArchivosController cuyo método index ejecute system("ls #{params[:carpeta]}") y ejecuta brakeman demo Éxito: El informe muestra un aviso Command Injection de la comprobación Execute, con confianza High, el archivo y la línea de…
+- **Combina con:** `osv-scanner` [16/nube-contenedores], `zaproxy` [16/pruebas], `defectdojo`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
 
 ### OWASP CheatSheet Series (`cheatsheetseries`)
 
@@ -187,16 +257,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Abre mas.owasp.org/MASVS y revisa el grupo MASVS-STORAGE. Éxito: Obtienes los controles y enlaces a sus pruebas en el MASTG.
 - **Combina con:** `mastg`
 
-### OWASP ASVS (`asvs`)
-
-- **Repo:** https://github.com/OWASP/ASVS · CC-BY-SA-4.0 · nivel 1 · 53/100
-- **Qué es:** Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.
-- **Cuándo elegirlo:** Casos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/ASVS/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto. Éxito: Obtienes la lista de requisitos aplicables con sus identificadores.
-- **Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon` [16/defensa], `owasp-top10`
-
 ### OWASP Top 10 (`owasp-top10`)
 
 - **Repo:** https://github.com/OWASP/Top10 · CC-BY-SA-4.0 · nivel 1 · 53/100
@@ -207,6 +267,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Abre la edición vigente en owasp.org/Top10 y lee la categoría de control de acceso roto. Éxito: Obtienes la descripción, ejemplos de ataque, prevención y CWE relacionados.
 - **Combina con:** `asvs`, `cheatsheetseries`, `juice-shop` [16/pruebas], `threat-dragon` [16/defensa]
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### OWASP ASVS (`asvs`)
+
+- **Repo:** https://github.com/OWASP/ASVS · CC-BY-SA-4.0 · nivel 1 · 52/100
+- **Qué es:** Proyecto insignia de OWASP: el estándar de verificación de seguridad de aplicaciones web.
+- **Cuándo elegirlo:** Casos: definir los requisitos de seguridad de un proyecto según su nivel de riesgo; usar los requisitos como lista de verificación en una auditoría.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; HTML, Makefile; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/ASVS/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga la última versión estable de ASVS desde el repositorio o el sitio de OWASP y elige el nivel 1 para un proyecto. Éxito: Obtienes la lista de requisitos aplicables con sus identificadores.
+- **Combina con:** `wstg`, `cheatsheetseries`, `threat-dragon` [16/defensa], `owasp-top10`
 
 ### OWASP Top 10 for LLM Applications (`owasp-llm-top10`)
 
@@ -298,7 +368,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Cybersecurity Skills (comunidad) (`cybersecurity-skills`)
 
-- **Repo:** https://github.com/mukul975/Anthropic-Cybersecurity-Skills · Apache-2.0 · nivel 1 · 64/100
+- **Repo:** https://github.com/mukul975/Anthropic-Cybersecurity-Skills · Apache-2.0 · nivel 1 · 63/100
 - **Qué es:** Biblioteca comunitaria de skills de ciberseguridad para agentes, de @mukul975. Licencia Apache-2.0. No está afiliada a Anthropic pese a su nombre. Tiene ~36k estrellas (v1.3.0) y su último cambio es de agosto de 2026.
 - **Cuándo elegirlo:** Casos: Organizar una revisión de configuración; Preparar un ejercicio de respuesta defensiva.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; herramientas de la skill elegida; entorno propio de práctica; hardware prerequisites; API de IA: no; Agente compatible; herramientas de la skill elegida; entorno propio de práctica.
@@ -314,7 +384,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### security-audit-skill (`security-audit-skill`)
 
-- **Repo:** https://github.com/cloudflare/security-audit-skill · MIT · nivel 2 · 60/100
+- **Repo:** https://github.com/cloudflare/security-audit-skill · MIT · nivel 2 · 59/100
 - **Qué es:** Skill de auditoría de seguridad para agentes de programación, de Cloudflare. Licencia MIT. Es muy popular (~73k estrellas, sin releases) y fue el germen del arnés de descubrimiento de vulnerabilidades que Cloudflare describe en su blog.
 - **Cuándo elegirlo:** Casos: Organizar una revisión de código autorizada; Evaluar la calidad de hallazgos generados por un agente.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente con herramientas y subagentes paralelos; proyecto propio de prueba; hardware prerequisites; API de IA: no; Agente con herramientas y subagentes paralelos; proyecto propio de prueba.
@@ -347,7 +417,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Hayabusa (`hayabusa`)
 
-- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 61/100
+- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 63/100
 - **Qué es:** DFIR timeline/rules (AGPL) de Yamato Security.
 - **Cuándo elegirlo:** Casos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; Rust, Cargo.toml; API de IA: no.
@@ -358,7 +428,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Velociraptor (`velociraptor`)
 
-- **Repo:** https://github.com/Velocidex/velociraptor · AGPL-3.0 · nivel 4 · 58/100
+- **Repo:** https://github.com/Velocidex/velociraptor · AGPL-3.0 · nivel 4 · 63/100
 - **Qué es:** Plataforma AGPL de Velocidex para respuesta a incidentes y caza en endpoints.
 - **Cuándo elegirlo:** Casos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Makefile, go.mod; API de IA: no.
@@ -369,7 +439,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Volatility 3 (`volatility3`)
 
-- **Repo:** https://github.com/volatilityfoundation/volatility3 · Volatility Software License 1.0 (no OSI) · nivel 3 · 48/100
+- **Repo:** https://github.com/volatilityfoundation/volatility3 · Volatility Software License 1.0 (no OSI) · nivel 3 · 53/100
 - **Qué es:** Volatility 3 de Volatility Foundation; licencia propia (Volatility Software License) aunque la API marca NOASSERTION.
 - **Cuándo elegirlo:** Casos: listar procesos ocultos en un dump de lab; extraer conexiones de red desde memoria.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, pyproject.toml; API de IA: no.
@@ -380,7 +450,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Autopsy (`autopsy`)
 
-- **Repo:** https://github.com/sleuthkit/autopsy · — · nivel 3 · 46/100
+- **Repo:** https://github.com/sleuthkit/autopsy · — · nivel 3 · 38/100
 - **Qué es:** GUI forense (Apache-2.0 en LICENSE-2.0.txt; API sin SPDX).
 - **Cuándo elegirlo:** Casos: abrir un caso forense de lab; generar timeline de un disco de prueba.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Java; API de IA: no.
@@ -390,7 +460,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### The Sleuth Kit (`sleuthkit`)
 
-- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 42/100
+- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 38/100
 - **Qué es:** TSK: toolkit forense de FS (licencias mixtas).
 - **Cuándo elegirlo:** Casos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -400,7 +470,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### OpenCTI (`opencti`)
 
-- **Repo:** https://github.com/OpenCTI-Platform/opencti · Apache-2.0 (Community) + licencia Enterprise · nivel 3 · 75/100
+- **Repo:** https://github.com/OpenCTI-Platform/opencti · Apache-2.0 (Community) + licencia Enterprise · nivel 3 · 76/100
 - **Qué es:** Plataforma de threat intel de Filigran. Open-core: Community Edition Apache-2.0; Enterprise Edition (playbooks, SSO por UI, IA/NLP, PIR, auditoría) con licencia de pago.
 - **Cuándo elegirlo:** Casos: modelar una campaña APT con relaciones STIX; centralizar feeds y casos de amenaza del SOC.
 - **Requisitos:** nivel 3: Docker Compose con varios servicios (Elastic, Redis, RabbitMQ); TypeScript, package.json; API de IA: no.

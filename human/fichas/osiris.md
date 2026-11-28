@@ -46,7 +46,7 @@ Grupo **Paneles OSINT sobre globo 3D**: osiris ocupa la posición 2 de 2 (altern
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [gods-eye-view](gods-eye-view.md) ⭐ recomendado | 68 | Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
+| 1 | [gods-eye-view](gods-eye-view.md) ⭐ recomendado | 69 | Si buscas esto: visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. |
 | 2 | **osiris** (esta ficha) | 53 | Si buscas esto: panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. |
 
 ## Acceso, coste y equipo

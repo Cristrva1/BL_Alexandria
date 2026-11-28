@@ -28,7 +28,7 @@ Los componentes usan temas y estilos que puedes configurar de forma compartida.
 
 Estado en GitHub: activo · último push 2026-11-22 · última versión publicada v0.7.17 (2026-11-20) · licencia declarada MIT (consultado el 2026-11-22).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-22); no se instaló ni ejecutó. Fuentes: [1](https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md) · [2](https://github.com/meta/astryx/blob/main/LICENSE)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-22); no se instaló ni ejecutó. Fuentes: [1](https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md) · [2](https://github.com/meta/astryx/blob/main/LICENSE) · [3](https://github.com/meta/astryx/blob/653ffa09ff327307c6f58c7fb7ab41ec0a58b935/packages/core/package.json) · [4](https://registry.npmjs.org/@astryxdesign/core)</sub>
 
 ## Acceso, coste y equipo
 
@@ -52,7 +52,7 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Proyecto web React compatible con los paquetes de Astryx y StyleX.
+- Proyecto web con React 19 o posterior y StyleX 0.19, como pide el paquete @astryxdesign/core.
 
 1. En un proyecto React de prueba añade los paquetes de Astryx, el tema neutral y StyleX según Getting Started.
 2. Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba.
@@ -87,7 +87,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---|
 | Tu objetivo encaja con estos ejemplos: Construir una pantalla con botones y campos coherentes.; Probar un tema neutro y después ajustar tipografía y color. | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
-**Limitaciones:** La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado. Revisión documental; no acredita binarios ni una instalación probada.
+**Limitaciones:** La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado. La versión publicada es 0.7.17: la API puede cambiar entre versiones, así que fija la versión en tu proyecto. Revisión documental; no acredita binarios ni una instalación probada.
 
 ## Stack y modelos
 

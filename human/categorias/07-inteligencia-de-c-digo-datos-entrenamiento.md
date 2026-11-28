@@ -4,7 +4,7 @@
 
 Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.
 
-26 repos · 3 secciones
+27 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Entender y empaquetar código para agentes](#entender-y-empaquetar-código-para-agentes) — 7 repos
 - [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 9 repos
-- [CLIs y SDKs de desarrollo](#clis-y-sdks-de-desarrollo) — 10 repos
+- [CLIs y SDKs de desarrollo](#clis-y-sdks-de-desarrollo) — 11 repos
 
 ## Entender y empaquetar código para agentes
 
@@ -56,6 +56,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [fzf](../fichas/fzf.md) | Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cualquier lista de forma interactiva. | Tu objetivo encaja con estos ejemplos: buscar archivos y comandos del historial al instante en la terminal; construir menús interactivos en scripts de shell | Sin clave propia de API de IA en la ruta básica |
 | [lazygit](../fichas/lazygit.md) | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestión de ramas con atajos. | Tu objetivo encaja con estos ejemplos: revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos; hacer rebases interactivos y deshacer operaciones sin recordar comandos | Sin clave propia de API de IA en la ruta básica |
 | [ripgrep](../fichas/ripgrep.md) | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocultos y binarios. | Tu objetivo encaja con estos ejemplos: localizar todas las apariciones de una función en un repositorio grande; buscar texto en miles de archivos de logs o notas en segundos | Sin clave propia de API de IA en la ruta básica |
+| [Pake](../fichas/pake.md) | Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando. | Tu objetivo encaja con estos ejemplos: Convertir una página de inicio propia en una app con icono y ventana propios; Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador | Sin clave propia de API de IA en la ruta básica |
 | [openai-python](../fichas/openai-python.md) | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. | Tu objetivo encaja con estos ejemplos: Integrar respuestas de IA en una app Python; Procesar audio o imágenes desde código | API de IA necesaria |
 | [npkill](../fichas/npkill.md) | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos. | Tu objetivo encaja con estos ejemplos: Medir el tamaño de node_modules en un proyecto de ejemplo.; Revisar sin borrar los residuos de un directorio de pruebas. | Sin clave propia de API de IA en la ruta básica |
 | [APScheduler](../fichas/apscheduler.md) | Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia. | Tu objetivo encaja con estos ejemplos: Actualizar un dato local cada minuto.; Programar un recordatorio interno una vez al día. | Sin clave propia de API de IA en la ruta básica |

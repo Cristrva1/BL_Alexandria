@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,10 +47,10 @@ Grupo **Metodologías y harness para agentes de código**: Agent Skills (Addy Os
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [ECC](ecc.md) ⭐ recomendado | 72 | Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes. |
-| 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
-| 3 | **Agent Skills (Addy Osmani)** (esta ficha) | 64 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
-| 4 | [superpowers](superpowers.md) | 59 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
+| 1 | [ECC](ecc.md) ⭐ recomendado | 70 | Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes. |
+| 2 | [gstack](gstack.md) | 64 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
+| 3 | **Agent Skills (Addy Osmani)** (esta ficha) | 61 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
+| 4 | [superpowers](superpowers.md) | 57 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
 
 ## Acceso, coste y equipo
 

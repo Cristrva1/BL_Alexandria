@@ -59,7 +59,7 @@ Grupo **Notebooks**: marimo ocupa la posición 1 de 2 (recomendado). Orden por p
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **marimo** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
-| 2 | [JupyterLab](jupyterlab.md) | 66 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
+| 2 | [JupyterLab](jupyterlab.md) | 65 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
 
 ## Acceso, coste y equipo
 

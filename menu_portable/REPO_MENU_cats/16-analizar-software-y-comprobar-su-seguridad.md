@@ -363,6 +363,36 @@ _Una referencia no se instala como un servicio único._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `rea`, `ghidra`, `frida`
 
+## `bandit`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=python,análisis estático,seguridad,cli
+
+**Qué es:** Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo.
+**Stack:** Python, requirements.txt, setup.py
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita clave de API ni conexión durante el análisis.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Aplica reglas fijas sobre el código. No usa modelos de IA.
+- Coste: Sin pago a un modelo en la ruta básica. Licencia Apache-2.0, sin pago para instalarlo ni ejecutarlo.
+- Equipo: Equipo normal; revisar dependencias. Cualquier equipo con Python 3.10 o posterior.
+**Repo:** https://github.com/PyCQA/bandit
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/PyCQA/bandit/blob/main/README.rst
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema; Añadir una comprobación de seguridad antes de cada commit en un proyecto Python mediante pre-commit
+**Evita si:** Tu proyecto no está escrito en Python o necesitas seguir el recorrido de los datos entre varios archivos.
+**Primera prueba propuesta:** Crea prueba.py con import subprocess y subprocess.call(input('Carpeta: '), shell=True) y ejecuta bandit prueba.py
+**Qué comprobar:** El informe muestra el hallazgo B602 (subprocess_popen_with_shell_equals_true) con gravedad High y confianza High en la línea de la llamada
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `pre-commit`, `gitleaks`, `defectdojo`
+
 ## `bettercap`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 
@@ -452,6 +482,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El grafo muestra rutas de ataque entre usuarios, grupos y equipos.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `hashcat`, `john`, `metasploit`, `impacket`, `netexec`, `peass-ng`
+
+## `brakeman`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ruby,rails,análisis estático,seguridad
+
+**Qué es:** Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo.
+**Stack:** Ruby, Dockerfile, Gemfile
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita clave de API ni conexión durante el análisis.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Aplica comprobaciones fijas sobre el código. No usa modelos de IA.
+- Coste: Sin pago a un modelo en la ruta básica. Gratis para analizar tu propio software y para uso no comercial. Los usos comerciales que define la licencia (SaaS, producto comercial o servicio de valor añadido) requieren licencia de pago.
+- Equipo: Equipo normal; revisar dependencias. Cualquier equipo con Ruby 3.2 o posterior.
+**Repo:** https://github.com/presidentbeef/brakeman
+
+**Instalación** [+]:
+
+```
+gem install brakeman
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario; Comparar el informe JSON actual con el anterior para ver qué avisos se corrigieron y cuáles son nuevos
+**Evita si:** Tu aplicación no usa Ruby on Rails o quieres integrarlo en un producto o servicio comercial para terceros sin comprar la licencia.
+**Primera prueba propuesta:** Crea demo/app/controllers/archivos_controller.rb con una clase ArchivosController cuyo método index ejecute system("ls #{params[:carpeta]}") y ejecuta brakeman demo
+**Qué comprobar:** El informe muestra un aviso Command Injection de la comprobación Execute, con confianza High, el archivo y la línea de system
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `osv-scanner`, `zaproxy`, `defectdojo`
 
 ## `caido`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
@@ -664,6 +724,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes checks fallidos con archivo y línea.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `trivy`, `semgrep`, `prowler`, `grype`
+
+## `codeql`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=análisis estático,flujo de datos,github,sarif,seguridad
+
+**Qué es:** Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub.
+**Stack:** CodeQL, Cargo.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita clave de API de IA, solo una cuenta gratuita de GitHub.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El análisis no usa modelos de IA: aplica consultas al código.
+- Coste: Sin pago a un modelo en la ruta básica. Code scanning y los ejecutores estándar de GitHub Actions son gratuitos en repositorios públicos. En repositorios privados de organizaciones hace falta GitHub Code Security, de pago. El CLI no puede usarse gratis con código cerrado.
+- Equipo: Equipo normal; revisar dependencias. Con la configuración predeterminada basta un navegador: el análisis corre en servidores de GitHub. El paquete local pesa entre 400 y 700 MB comprimido según el sistema, y necesita las herramientas de compilación de los lenguajes que lo requieran.
+**Repo:** https://github.com/github/codeql
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/github/codeql/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión; Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo
+**Evita si:** Necesitas analizar código privado o de clientes sin licencia de pago de GitHub, o prefieres reglas sencillas que puedas escribir sin aprender el lenguaje QL.
+**Primera prueba propuesta:** En un repositorio público propio con licencia MIT, sube app.py con una ruta Flask que lee carpeta = request.args.get('carpeta') y ejecuta subprocess.Popen('ls ' + carpeta, shell=True). Activa CodeQL en Settings > Advanced Security > CodeQL analysis > Set up > Default
+**Qué comprobar:** Cuando termina el flujo CodeQL en la pestaña Actions, el apartado Code scanning de la pestaña de seguridad muestra la alerta «Uncontrolled command line» con la regla py/command-line-injection en la línea de Popen
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `github-mcp-server`, `osv-scanner`, `defectdojo`
+**Alternativas (elige una):** `semgrep`
 
 ## `coraza`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=security,waf,go,seclang
@@ -1491,6 +1582,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `seclists`, `nuclei`
 **Alternativas (elige una):** `feroxbuster`, `dirsearch`, `ffuf`
 
+## `gosec`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=go,análisis estático,seguridad,sarif
+
+**Qué es:** Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código.
+**Stack:** Go, Dockerfile, Makefile, go.mod
+**Acceso y costes:**
+- API de IA: API de IA opcional. El análisis no necesita API. Las sugerencias de corrección admiten Atlas Cloud, Gemini, Claude, OpenAI o un servicio compatible con OpenAI, cada uno con su clave.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El análisis es local y no usa modelos. Para las sugerencias opcionales, el README admite una URL compatible con OpenAI, como Ollama o LocalAI.
+- Coste: El coste depende del proveedor o la ruta. gosec es Apache-2.0 y gratuito. Solo las sugerencias opcionales consumen la API del proveedor elegido; el README incluye promoción comercial de un proveedor patrocinador.
+- Equipo: Equipo normal; revisar dependencias. Cualquier equipo con Go 1.26 o posterior.
+**Repo:** https://github.com/securego/gosec
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/securego/gosec/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar; Generar un informe SARIF en GitHub Actions y verlo junto con las demás alertas de code scanning
+**Evita si:** Tu código no está escrito en Go o buscas revisar dependencias en lugar de tu propio código.
+**Primera prueba propuesta:** En una carpeta nueva ejecuta go mod init ejemplo y crea main.go que importe crypto/md5 y fmt e imprima md5.Sum([]byte("hola")); después ejecuta gosec ./...
+**Qué comprobar:** El informe lista G401 (uso de MD5 o SHA1) y G501 (importación bloqueada de crypto/md5) con archivo y línea, y el comando termina con código de salida 1
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `osv-scanner`, `defectdojo`
+
 ## `grype`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,containers,sbom
 
@@ -2246,6 +2367,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes reconocer origen, destino y contenido capturado
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `frida`, `playwright`, `k6`, `apktool`, `selenium`, `shannon`
+
+## `mobsf`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=móvil,android,ios,análisis estático,seguridad
+
+**Qué es:** Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa API de IA. VirusTotal es opcional, está desactivado por defecto y necesita clave propia; con MOBSF_VT_UPLOAD=1 subiría los archivos a ese servicio.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El análisis estático corre en tu equipo sin modelos de IA. Algunas comprobaciones usan la red: resuelven por DNS los dominios hallados en la app y descargan listas de amenazas. MOBSF_DOMAIN_MALWARE_SCAN=0 desactiva esa comprobación.
+- Coste: Sin pago a un modelo en la ruta básica. Licencia GPL-3.0, sin pago para la ruta descrita. El soporte empresarial y los cursos del autor son opcionales y de pago.
+- Equipo: Preparación según la ruta elegida. Docker en un equipo de 64 bits (imágenes amd64 y arm64). El análisis dinámico requiere además un emulador, simulador o dispositivo preparado.
+**Repo:** https://github.com/MobSF/Mobile-Security-Framework-MobSF
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código; Practicar con una app de entrenamiento de OWASP y comparar el informe con las pruebas de la guía MASTG
+**Evita si:** Quieres analizar apps de terceros sin permiso o compartir el servidor en una red sin reforzar su configuración.
+**Primera prueba propuesta:** Con MobSF 4.6.9 publicado solo en 127.0.0.1, sube UnCrackable-Level1.apk, la app de práctica con licencia CC BY-SA 4.0 del repositorio OWASP/mastg (Crackmes/Android/Level_01)
+**Qué comprobar:** Al terminar el análisis estático se abre el informe del paquete owasp.mstg.uncrackable1 con su puntuación de seguridad y las secciones de permisos, manifiesto y código con sus hallazgos
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mastg`, `jadx`, `defectdojo`
 
 ## `modsecurity`
 role=runtime · exec=local · setup=hard · mcp=False · prov=— · tags=security,waf,http,nginx,c++
@@ -3425,7 +3576,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El hallazgo señala la línea y puedes comprobarlo manualmente
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `security-audit-skill`, `strix`, `defending-code-reference-harness`, `raddebugger`, `shannon`
-**Alternativas (elige una):** `ast-grep`, `sonarqube`
+**Alternativas (elige una):** `ast-grep`, `sonarqube`, `codeql`
 
 ## `shannon`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agentes,agent,typescript

@@ -19,9 +19,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `umami` | Analítica web y de producto respetuosa con la privacidad, sin cookies… | 1 Básico | 74 | MIT (OSI permisiva) | recomendado |
-| `posthog` | Plataforma de product analytics y eventos para entender el comportamiento de… | 3 Avanzado | 71 | MIT + licencia Enterprise (ee/) (open-core) | sin grupo |
-| `plausible` | Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o… | 2 Intermedio | 59 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `matomo` | Alternativa open source a Google Analytics con control total de los datos. | 2 Intermedio | 57 | GPL-3.0 (OSI copyleft) | alternativa |
+| `posthog` | Plataforma de product analytics y eventos para entender el comportamiento de… | 3 Avanzado | 72 | MIT + licencia Enterprise (ee/) (open-core) | sin grupo |
+| `plausible` | Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o… | 2 Intermedio | 60 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `matomo` | Alternativa open source a Google Analytics con control total de los datos. | 2 Intermedio | 58 | GPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -47,7 +47,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### posthog (`posthog`)
 
-- **Repo:** https://github.com/PostHog/posthog · MIT + licencia Enterprise (ee/) · nivel 3 · 71/100
+- **Repo:** https://github.com/PostHog/posthog · MIT + licencia Enterprise (ee/) · nivel 3 · 72/100
 - **Qué es:** PostHog, plataforma de analítica de producto y capa de datos para producto y agentes. Licencia MIT salvo la carpeta `ee` (GitHub muestra NOASSERTION). Es muy activa (~41k estrellas).
 - **Cuándo elegirlo:** Casos: Entender abandono en un flujo de registro; Revisar errores y sesiones de una app.
 - **Requisitos:** nivel 3: preparación pesada; Cuenta y región de datos; SDK o snippet; cliente MCP opcional; hardware prerequisites; API de IA: opcional; Cuenta y región de datos; SDK o snippet; cliente MCP opcional.
@@ -58,7 +58,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Plausible Analytics (`plausible`)
 
-- **Repo:** https://github.com/plausible/analytics · AGPL-3.0 · nivel 2 · 59/100 · alternativa en «Analítica web auto-hospedada»
+- **Repo:** https://github.com/plausible/analytics · AGPL-3.0 · nivel 2 · 60/100 · alternativa en «Analítica web auto-hospedada»
 - **Qué es:** Plausible Analytics, analítica web ligera y sin cookies hecha y alojada en la UE. Plausible CE es AGPL-3.0 o posterior y el script de seguimiento es MIT. Es madura (~30k estrellas, v3.2.1).
 - **Cuándo elegirlo:** Casos: Medir una web de contenido; Comparar conversiones de una landing.
 - **Requisitos:** nivel 2: preparación media; Cuenta Cloud o servidor CE; web propia para el script; hardware prerequisites; API de IA: no; Cuenta Cloud o servidor CE; web propia para el script.
@@ -70,7 +70,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Matomo (`matomo`)
 
-- **Repo:** https://github.com/matomo-org/matomo · GPL-3.0 · nivel 2 · 57/100 · alternativa en «Analítica web auto-hospedada»
+- **Repo:** https://github.com/matomo-org/matomo · GPL-3.0 · nivel 2 · 58/100 · alternativa en «Analítica web auto-hospedada»
 - **Qué es:** Matomo (antes Piwik), plataforma de analítica web libre y autoalojable. Licencia GPL-3.0 o posterior. Es muy madura (~22k estrellas, 5.14.2) y el README cita más de 1,4 millones de sitios.
 - **Cuándo elegirlo:** Casos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web.
 - **Requisitos:** nivel 2: preparación media; Servidor PHP y MySQL compatibles; web de prueba; configuración de privacidad; hardware prerequisites; API de IA: no; Servidor PHP y MySQL compatibles; web de prueba; configuración de privacidad.

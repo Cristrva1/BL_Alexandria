@@ -18,9 +18,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `awesome-dataviz` | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 58 | CC-BY-4.0 (OSI permisiva) | sin grupo |
-| `awesome-bigdata` | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 46 | MIT (OSI permisiva) | sin grupo |
-| `data-analyst-roadmap` | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 38 | MIT (OSI permisiva) | sin grupo |
+| `awesome-dataviz` | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 57 | CC-BY-4.0 (OSI permisiva) | sin grupo |
+| `awesome-bigdata` | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 55 | MIT (OSI permisiva) | sin grupo |
+| `data-analyst-roadmap` | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 37 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -28,7 +28,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-dataviz (`awesome-dataviz`)
 
-- **Repo:** https://github.com/hal9ai/awesome-dataviz · CC-BY-4.0 · nivel 1 · 58/100
+- **Repo:** https://github.com/hal9ai/awesome-dataviz · CC-BY-4.0 · nivel 1 · 57/100
 - **Qué es:** Awesome Dataviz, lista curada de frameworks, librerías y software de visualización open source, creada por @fasouto y mantenida con patrocinio de Hal9. Licencia CC BY 4.0 (GitHub muestra NOASSERTION). Tiene ~4.5k estrellas.
 - **Cuándo elegirlo:** Casos: Encontrar una biblioteca de mapas; Comparar gráficos para React y JavaScript.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tipo de gráfico y framework objetivo; hardware prerequisites; API de IA: no; Navegador; tipo de gráfico y framework objetivo.
@@ -39,7 +39,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-bigdata (`awesome-bigdata`)
 
-- **Repo:** https://github.com/oxnr/awesome-bigdata · MIT · nivel 1 · 46/100
+- **Repo:** https://github.com/oxnr/awesome-bigdata · MIT · nivel 1 · 55/100
 - **Qué es:** Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.
 - **Cuándo elegirlo:** Casos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; problema de datos definido; hardware prerequisites; API de IA: no; Navegador; problema de datos definido.
@@ -50,7 +50,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### data-analyst-roadmap (`data-analyst-roadmap`)
 
-- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 38/100
+- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 37/100
 - **Qué es:** Hoja de ruta para aprender análisis de datos, de @mtahiraslan. Licencia MIT. Es pequeña (~1k estrellas) y su último cambio es de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tiempo de estudio; una tabla pequeña de práctica; hardware prerequisites; API de IA: no; Navegador; tiempo de estudio; una tabla pequeña de práctica.

@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,7 +47,7 @@ Grupo **Skills para quitar el tono de IA a los textos**: Humanizer ocupa la posi
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Humanizer** (esta ficha) ⭐ recomendado | 72 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
+| 1 | **Humanizer** (esta ficha) ⭐ recomendado | 70 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
 | 2 | [Stop Slop](stop-slop.md) | 40 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
 ## Acceso, coste y equipo

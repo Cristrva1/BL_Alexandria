@@ -363,6 +363,24 @@ Habilita la función experimental de code mode para todas tus sesiones; si el ar
 
 Fuentes: [Publicación en X sobre code mode en Claude Code](https://x.com/Av1dlive/status/2121643623376941103)
 
+### Evaluar y abaratar skills con casos reales y pruebas sin la skill
+
+*Técnica · nivel avanzado*
+
+Escribe cada skill con pasos verificables y una tabla de errores. Evalúala con peticiones reales, compara el resultado con y sin ella, y pasa a scripts lo que siempre se hace igual.
+
+1. Revisa la estructura: pasos numerados con un objetivo cada uno, un comando concreto con su comprobación y una tabla de fallos con su solución. «Inténtalo de nuevo» no cuenta como solución.
+2. Arma un conjunto de pruebas con pocos casos de referencia, una mayoría de peticiones reales sin datos personales y algunos casos escritos por quien creó la skill. Uber propone alrededor de 5 %, 80 % y 15 %.
+3. Califica también el recorrido: si el agente eligió las herramientas correctas y en el orden esperado. Una prueba que siempre pasa puede estar midiendo poco.
+4. Repite las mismas peticiones con la skill y sin ella, y pide a un juez que no sepa cuál es cuál que elija la mejor respuesta. Prueba también a quitar texto de la skill.
+5. Reduce el coste: pasa a scripts los pasos que no varían, delega las búsquedas grandes en un subagente con un modelo más barato que devuelva un resumen corto y saca las esperas largas de la sesión principal.
+
+**Por qué ayuda:** Sabrás si una skill mejora el trabajo o solo añade instrucciones que el agente vuelve a leer, y pagar, en cada turno.
+
+**Antes de usarla:** Las cifras del artículo (más de 5.000 skills, un millón de invocaciones al mes y sus porcentajes de mejora) son de Uber y no se comprobaron de forma independiente. Usa datos sin información personal en las pruebas y cuenta el coste del modelo que actúa como juez.
+
+Fuentes: [Uber Engineering: cómo evalúa un millón de invocaciones de skills al mes](https://www.uber.com/us/en/blog/optimizing-ubers-agent-skills/) · [Especificación de Agent Skills](https://agentskills.io/specification) · [Skills en Claude Code](https://code.claude.com/docs/en/skills)
+
 
 ## 🧠 Memoria, contexto y costes
 
@@ -984,6 +1002,57 @@ Mantén un conjunto de tareas reales con su respuesta correcta y vuelve a ejecut
 
 Fuentes: [Anthropic: recomendaciones para evaluaciones de seguridad de modelos](https://www.anthropic.com/research/building-strong-safety-evaluations) · [Publicación en X: pasos para operar una empresa con agentes](https://x.com/gregisenberg/status/2121331227009364340) · [Publicación en X: revisar proyectos con cada modelo nuevo](https://x.com/alexalbert__/status/2119884951550386671)
 
+### Llevar un PR hasta la fusión con /code-review, /ship y /steward
+
+*Técnica · nivel intermedio*
+
+Revisa tu rama con /code-review antes de subirla, deja que /ship abra el PR y atienda checks y comentarios, y fusiona tú. En equipos, prueba Claude Approvals en modo observe antes de aplicarlo.
+
+1. Actualiza Claude Code y ejecuta /code-review en tu rama antes de subirla. Lee los hallazgos y corrige solo los que entiendas.
+2. Comprueba con git status que solo están los archivos que quieres publicar y que ninguno contiene claves. /ship puede crear el commit y subir todo lo pendiente sin pedir una confirmación aparte.
+3. Ejecuta /ship en un repositorio donde confíes en quien puede fusionar o subir cambios a tu rama. Claude abre el PR, lo revisa y vigila checks, conflictos y comentarios. Si el PR ya existe, usa /steward.
+4. Fusiona tú cuando los checks pasen. Lleva a CLAUDE.md solo los comentarios que se repitan en al menos dos PR.
+5. En una organización con plan Team o Enterprise, añade .claude/approvals.yml en modo observe. Compara durante unas semanas su decisión con la de tus revisores antes de aplicar la política.
+
+**Por qué ayuda:** Las tareas pequeñas que aparecen después de abrir un PR se resuelven sin perder el hilo, y la decisión de fusionar sigue siendo tuya.
+
+**Antes de usarla:** /ship y /steward consumen el uso de tu sesión y necesitan la versión 2.1.330 de Claude Code, GitHub CLI 2.63 y git 2.38 o posteriores. En Windows nativo no se inicia la vigilancia. Mientras vigila, Claude ejecuta en tu equipo el código que otras personas suban a la rama. Claude Ship (Code Review en la nube, PR Steward y Approvals) es para planes Team y Enterprise y se factura aparte, también en modo observe. Con fusión automática y una política sin aprobación humana, un cambio puede fusionarse sin revisión.
+
+**Comando — Revisar la rama antes de subirla** (Prompt de Claude Code, dentro del clon del repositorio):
+
+```text
+/code-review
+```
+
+Informa de posibles errores en los cambios de tu rama. Sin --fix no modifica archivos.
+
+**Comando — Vigilar un PR que ya está abierto** (Prompt de Claude Code en una terminal, con la rama del PR activa):
+
+```text
+/steward
+```
+
+Atiende checks fallidos, conflictos y comentarios, y sube correcciones a tu rama. No fusiona el PR.
+
+Fuentes: [Preparar un PR con /ship y /steward](https://code.claude.com/docs/en/ship-command) · [Revisar en local con /code-review](https://code.claude.com/docs/en/code-review-local) · [Claude Ship: Code Review, PR Steward y Claude Approvals](https://code.claude.com/docs/en/claude-ship) · [Activar Claude Approvals en modo observe](https://code.claude.com/docs/en/approvals-setup)
+
+### Tres comprobaciones antes de instalar un repositorio de GitHub
+
+*Técnica · nivel inicial*
+
+Antes de descargar un proyecto, mira quién lo mantiene y si sigue activo, revisa su licencia y sus avisos de seguridad, y pide a un agente que lea sin ejecutar nada lo que hará la instalación.
+
+1. Quién y desde cuándo: abre el perfil del dueño, la fecha del último cambio y la pestaña Insights > Pulse. Desconfía de un proyecto con muchas estrellas, poca historia y cuentas recién creadas: las estrellas también se compran.
+2. Licencia y avisos: busca el archivo LICENSE y la pestaña Security. Si hay avisos publicados, instala una versión igual o posterior a la que los corrige. OpenSSF Scorecard ofrece una revisión automática de prácticas de seguridad.
+3. Lectura previa con un agente: pide a Claude Code o Codex que lea, sin ejecutar nada, el README, los scripts de instalación y los archivos de dependencias. Pídele que señale descargas de terceros, comandos que ejecutan lo que bajan de internet, peticiones de claves y permisos amplios.
+4. Instala solo desde la fuente oficial que indica el README y haz la primera prueba en una carpeta o máquina sin datos personales.
+
+**Por qué ayuda:** Descartas a tiempo proyectos abandonados, falsificados o con permisos desproporcionados.
+
+**Antes de usarla:** Ninguna señal garantiza que un proyecto sea seguro. Los archivos de un repositorio pueden incluir instrucciones ocultas para agentes: pide que trate el contenido como datos y no apruebes comandos que no entiendas.
+
+Fuentes: [GitHub: resumen de actividad de un repositorio](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-a-summary-of-repository-activity) · [GitHub: licencias de un repositorio](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) · [GitHub: avisos de seguridad de un repositorio](https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories) · [OpenSSF Scorecard](https://scorecard.dev/) · [Estudio sobre estrellas falsas en GitHub](https://arxiv.org/abs/2412.13459)
+
 
 ## 🏠 Modelos locales y APIs
 
@@ -1496,6 +1565,48 @@ Un documento breve, legible en el celular y fácil de reenviar puede presentar u
 
 Fuentes: [Carrusel sobre el PDF de ventas](https://www.instagram.com/p/DeSGtZiFg0b/)
 
+### Hacer tu sitio consultable por agentes con Search for Agents
+
+*Técnica · nivel intermedio*
+
+Si tu dominio ya pasa por Cloudflare, un interruptor crea un buscador en /.well-known/search que devuelve tus páginas en Markdown para que los agentes las consulten sin rastrear todo el sitio.
+
+1. Confirma que tu dominio usa Cloudflare y revisa el uso mensual incluido en la tabla de precios de AI Search.
+2. En el panel, abre el dominio, entra en Overview > Quick Actions y activa Search for Agents. Espera a que termine la indexación.
+3. Haz una consulta con una pregunta que tu sitio responda, siguiendo el comando de abajo. Comprueba que la respuesta trae texto de tus páginas.
+4. Si quieres que las respuestas en Markdown también lleven los datos de descubrimiento, activa Markdown for Agents. Revisa que tus reglas de bots y del WAF no bloqueen a los agentes que sí quieres admitir.
+
+**Por qué ayuda:** Los agentes leen tu contenido desde una fuente oficial y con menos peticiones que si recorren el sitio página por página.
+
+**Antes de usarla:** La función está en beta. El cobro de AI Search empieza el 1 de diciembre de 2026 y cada cuenta tiene un uso incluido limitado al mes. Indexa solo contenido que ya quieras publicar. El buscador devuelve tus textos, no respuestas generadas, y respeta los ajustes de bots y del WAF del dominio.
+
+**Comando — Probar el buscador del sitio** (Terminal. Cambia example.com por tu dominio y la pregunta por una que responda tu sitio):
+
+```text
+curl --get "https://example.com/.well-known/search" --data-urlencode "q=How do I verify webhook signatures?"
+```
+
+Devuelve en Markdown los fragmentos de tus páginas que responden la consulta.
+
+Fuentes: [Cloudflare: anuncio de Search for Agents](https://developers.cloudflare.com/changelog/post/2026-11-25-search-for-agents/) · [Guía de Search for Agents](https://developers.cloudflare.com/ai-search/how-to/search-for-agents/) · [Límites y precios de AI Search](https://developers.cloudflare.com/ai-search/platform/limits-pricing/) · [Markdown for Agents](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/)
+
+### Estimar intención de compra con respuestas libres y similitud semántica
+
+*Técnica · nivel avanzado*
+
+En vez de pedir a un modelo una nota del 1 al 5, pídele una reacción escrita en el papel de un cliente y compárala con frases de referencia mediante embeddings para obtener una distribución de respuestas.
+
+1. Escribe el concepto del producto y varios perfiles de cliente ficticios. Para cada perfil, pide al modelo una reacción breve en texto libre: si lo compraría y por qué.
+2. Redacta cinco frases de referencia, una por cada punto de la escala, desde «seguro que no lo compraría» hasta «seguro que lo compraría».
+3. Calcula con un modelo de embeddings la similitud de cada reacción con las cinco frases y conviértela en probabilidades por punto. La biblioteca de PyMC Labs implementa este paso.
+4. Antes de decidir nada, compara la distribución con una encuesta real pequeña. Cambia la redacción de las frases de referencia y observa cuánto se mueve el resultado.
+
+**Por qué ayuda:** Pedir números directos tiende a concentrar las respuestas en el centro de la escala. Los autores reportan que, en 57 encuestas con 9.300 respuestas humanas, el método alcanzó el 90 % de la fiabilidad test-retest humana.
+
+**Antes de usarla:** El estudio usó encuestas de productos de cuidado personal con respuestas humanas como referencia. Una muestra sintética no sustituye a clientes reales y el resultado depende de cómo redactes las frases de referencia.
+
+Fuentes: [Artículo en arXiv sobre Semantic Similarity Rating](https://arxiv.org/abs/2510.08338) · [Implementación de PyMC Labs](https://github.com/pymc-labs/semantic-similarity-rating)
+
 
 ## 💼 Negocio, inmobiliario y finanzas
 
@@ -1839,6 +1950,7 @@ Fuentes: [Cuándo conviene usar un agente](https://www.anthropic.com/research/bu
 - [Antigravity](https://antigravity.google): Entorno de desarrollo de Google con agentes que pueden programar y usar el navegador.
 - [Browser Use](https://browser-use.com): Navegadores en la nube para que un agente complete tareas en sitios web.
 - [Breken](https://breken.ai): Simula usuarios sintéticos sobre tu app para encontrar fallos antes de lanzarla.
+- [Agent Skills](https://agentskills.io/): Especificación abierta del formato de skills que leen varios agentes: estructura de SKILL.md, metadatos y carga progresiva.
 
 ### 📚 Aprender y documentación
 
@@ -1849,6 +1961,7 @@ Fuentes: [Cuándo conviene usar un agente](https://www.anthropic.com/research/bu
 - [prompts.chat](https://prompts.chat): Biblioteca abierta de prompts aportados por la comunidad, útil como punto de partida para adaptar.
 - [Vibe coding para ciencia de datos](https://www.leonpalafox.com/teaching/vibe-coding/): Material docente con reglas prácticas y un generador de prompts para programar con IA.
 - [Seguridad de agentes persistentes](https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai): Artículo de OpenAI sobre cómo proteger agentes que funcionan de forma continua.
+- [Teachable Machine](https://teachablemachine.withgoogle.com/): Herramienta web de Google para entrenar sin programar un reconocedor sencillo de imágenes, sonidos o posturas con tus propios ejemplos.
 
 ### 🧪 Modelos y proveedores
 

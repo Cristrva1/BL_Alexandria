@@ -4,7 +4,7 @@
 
 Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.
 
-141 repos · 14 secciones
+146 repos · 14 secciones
 
 ## Puntos de partida
 
@@ -26,7 +26,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Detección, SIEM e IDS](#detección-siem-e-ids) — 15 repos
 - [Nube, contenedores e IaC](#nube-contenedores-e-iac) — 11 repos
 - [Análisis y pruebas con agentes](#análisis-y-pruebas-con-agentes) — 5 repos
-- [Protección y verificación de software](#protección-y-verificación-de-software) — 13 repos
+- [Protección y verificación de software](#protección-y-verificación-de-software) — 18 repos
 - [Directorios y aprendizaje](#directorios-y-aprendizaje) — 16 repos
 - [Skills de análisis y seguridad](#skills-de-análisis-y-seguridad) — 4 repos
 - [Respuesta a incidentes y forense](#respuesta-a-incidentes-y-forense) — 5 repos
@@ -183,8 +183,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [Semgrep](../fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Tu objetivo encaja con estos ejemplos: Detectar patrones inseguros repetidos; Aplicar reglas de calidad en CI | Sin clave propia de API de IA en la ruta básica |
+| [MobSF (Mobile Security Framework)](../fichas/mobsf.md) | Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo. | Tu objetivo encaja con estos ejemplos: Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código; Practicar con una app de entrenamiento de OWASP y comparar el informe con las pruebas de la guía MASTG | Sin clave propia de API de IA en la ruta básica |
 | [Lynis](../fichas/lynis.md) | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas. | Tu objetivo encaja con estos ejemplos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA) | Sin clave propia de API de IA en la ruta básica |
+| [CodeQL](../fichas/codeql.md) | Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub. | Tu objetivo encaja con estos ejemplos: Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión; Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo | Sin clave propia de API de IA en la ruta básica |
+| [gosec](../fichas/gosec.md) | Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código. | Tu objetivo encaja con estos ejemplos: Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar; Generar un informe SARIF en GitHub Actions y verlo junto con las demás alertas de code scanning | API de IA opcional |
+| [Bandit](../fichas/bandit.md) | Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo. | Tu objetivo encaja con estos ejemplos: Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema; Añadir una comprobación de seguridad antes de cada commit en un proyecto Python mediante pre-commit | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Dependency-Check](../fichas/dependency-check.md) | Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más. | Tu objetivo encaja con estos ejemplos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría | Sin clave propia de API de IA en la ruta básica |
+| [Brakeman](../fichas/brakeman.md) | Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo. | Tu objetivo encaja con estos ejemplos: Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario; Comparar el informe JSON actual con el anterior para ver qué avisos se corrigieron y cuáles son nuevos | Sin clave propia de API de IA en la ruta básica |
 | [bla](../fichas/bla.md) | Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes. | Tu objetivo encaja con estos ejemplos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas | Sin clave propia de API de IA en la ruta básica |
 | [DefectDojo](../fichas/defectdojo.md) | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección. | Tu objetivo encaja con estos ejemplos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto | Sin clave propia de API de IA en la ruta básica |
 | [Dependency-Track](../fichas/dependency-track.md) | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos. | Tu objetivo encaja con estos ejemplos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones | Sin clave propia de API de IA en la ruta básica |

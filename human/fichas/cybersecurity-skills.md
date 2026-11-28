@@ -20,7 +20,7 @@ Revisión documental del 2026-11-27. [Fuente 1](https://github.com/mukul975/Anth
 
 **Nivel:** 1 Básico — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-121 repos únicos · 14 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+122 repos únicos · 14 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -18,10 +18,11 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-edicion)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-edicion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [Cap](../fichas/cap.md) | Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace. | Sin clave propia de API de IA en la ruta básica |
 | [Concat](../fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin clave propia de API de IA en la ruta básica |
 | [DaVinci Resolve MCP](../fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | Sin clave propia de API de IA en la ruta básica |
 | [FFmpeg](../fichas/ffmpeg.md) | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | Sin clave propia de API de IA en la ruta básica |

@@ -491,6 +491,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `vllm`, `langchain`, `openai-agents-python`, `openai-cookbook`
 
+## `pake`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=apps de escritorio,tauri,empaquetar web,cli
+
+**Qué es:** Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando.
+**Stack:** Rust, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita clave de API. Al empaquetar una URL descarga el icono del sitio, y la app resultante carga esa web.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Empaquetar no usa modelos de IA.
+- Coste: Sin pago a un modelo en la ruta básica. CLI GPL-3.0 gratuita. La app gráfica de pake.run cobra a partir de la tercera app y no es necesaria.
+- Equipo: Preparación según la ruta elegida. Node.js 22.12 o posterior, Rust 1.85 o posterior y herramientas de compilación del sistema. La primera compilación descarga dependencias.
+**Repo:** https://github.com/tw93/Pake
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/tw93/Pake/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Convertir una página de inicio propia en una app con icono y ventana propios; Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador
+**Evita si:** no quieres instalar Node.js, Rust y herramientas de compilación, o necesitas que la app acceda a funciones del sistema más allá de mostrar la web.
+**Primera prueba propuesta:** Crea hola.html con un título y un párrafo propios y ejecuta pake ./hola.html --name HolaPake
+**Qué comprobar:** En la carpeta aparece un instalador (.dmg, .msi, .deb o AppImage). Instálalo y abre HolaPake: la ventana muestra tu título y tu párrafo
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `slidev`, `tailwindcss`, `excalidraw`
+
 ## `pre-commit`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=code,python,cli,git
 

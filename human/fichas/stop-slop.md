@@ -54,7 +54,7 @@ Grupo **Skills para quitar el tono de IA a los textos**: Stop Slop ocupa la posi
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Humanizer](humanizer.md) ⭐ recomendado | 72 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
+| 1 | [Humanizer](humanizer.md) ⭐ recomendado | 70 | Si buscas esto: skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
 | 2 | **Stop Slop** (esta ficha) | 40 | Si buscas esto: skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
 ## Acceso, coste y equipo

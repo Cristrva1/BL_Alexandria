@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** Apache-2.0. Fuente: [LICENSE](https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

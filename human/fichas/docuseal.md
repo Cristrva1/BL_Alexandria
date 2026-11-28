@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 62/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -111,6 +111,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios
 - **Etiquetas:** `pdf` `server` `ruby`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Documenso](documenso.md) | 15.9k | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. |
 
 ## Enlaces
 

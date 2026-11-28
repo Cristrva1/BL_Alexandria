@@ -20,18 +20,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `crowdsec` | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de… | 2 Intermedio | 76 | MIT (OSI permisiva) | recomendado |
 | `wazuh` | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos… | 3 Avanzado | 75 | GPL-2.0 + AGPL-3.0 (partes) (OSI copyleft) | sin grupo |
-| `osquery` | Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base… | 2 Intermedio | 73 | Apache-2.0 OR GPL-2.0-only (OSI permisiva) | sin grupo |
+| `osquery` | Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base… | 2 Intermedio | 72 | Apache-2.0 OR GPL-2.0-only (OSI permisiva) | sin grupo |
 | `zeek` | Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza… | 4 Experto | 71 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `modsecurity` | Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP… | 4 Experto | 70 | Apache-2.0 (OSI permisiva) | recomendado |
-| `coreruleset` | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `arkime` | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para… | 4 Experto | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `suricata` | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas… | 4 Experto | 63 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `coreruleset` | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con… | 1 Básico | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `arkime` | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para… | 4 Experto | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `fail2ban` | Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…)… | 2 Intermedio | 62 | GPL-2.0 (OSI copyleft) | alternativa |
+| `suricata` | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas… | 4 Experto | 62 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `coraza` | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | alternativa |
-| `sigma` | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a… | 1 Básico | 58 | DRL-1.1 (reglas); especificación de dominio público (sin licencia detectada) | sin grupo |
-| `shuffle` | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `sigma` | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a… | 1 Básico | 57 | DRL-1.1 (reglas); especificación de dominio público (sin licencia detectada) | sin grupo |
+| `shuffle` | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de… | 3 Avanzado | 55 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `securityonion` | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y… | 4 Experto | 52 | Elastic-2.0 (source-available) | sin grupo |
-| `detection-rules` | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 49 | Elastic-2.0 (source-available) | sin grupo |
+| `detection-rules` | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 48 | Elastic-2.0 (source-available) | sin grupo |
 | `pi-alert-leiweibau` | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece… | 3 Avanzado | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -63,7 +63,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### osquery (`osquery`)
 
-- **Repo:** https://github.com/osquery/osquery · Apache-2.0 OR GPL-2.0-only · nivel 2 · 73/100
+- **Repo:** https://github.com/osquery/osquery · Apache-2.0 OR GPL-2.0-only · nivel 2 · 72/100
 - **Qué es:** Framework de instrumentación de SO con SQL, usado como agente de visibilidad.
 - **Cuándo elegirlo:** Casos: consultar procesos escuchando puertos en flotas de lab; montar hunts SQL sobre cambios de persistencia.
 - **Requisitos:** nivel 2: preparación media; C++, CMakeLists.txt, Makefile; API de IA: no.
@@ -96,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OWASP CRS (`coreruleset`)
 
-- **Repo:** https://github.com/coreruleset/coreruleset · Apache-2.0 · nivel 1 · 65/100
+- **Repo:** https://github.com/coreruleset/coreruleset · Apache-2.0 · nivel 1 · 64/100
 - **Qué es:** OWASP Core Rule Set (Apache-2.0).
 - **Cuándo elegirlo:** Casos: proteger un reverse proxy propio; ajustar falsos positivos de CRS.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; API de IA: no.
@@ -106,23 +106,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Arkime (`arkime`)
 
-- **Repo:** https://github.com/arkime/arkime · Apache-2.0 · nivel 4 · 63/100
+- **Repo:** https://github.com/arkime/arkime · Apache-2.0 · nivel 4 · 62/100
 - **Qué es:** Full packet capture indexado (Apache-2.0).
 - **Cuándo elegirlo:** Casos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto.
 - **Requisitos:** nivel 4: preparación difícil; C, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/arkime/arkime` — fuente: https://github.com/arkime/arkime/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala desde https://arkime.com/downloads siguiendo la guía simple. Éxito: UI muestra sesiones capturadas.
 - **Combina con:** `wireshark` [16/pruebas], `suricata`
-
-### Suricata (`suricata`)
-
-- **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 63/100
-- **Qué es:** Motor IDS/IPS open source de la OISF, estándar de facto junto a Zeek en SOC.
-- **Cuándo elegirlo:** Casos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team.
-- **Requisitos:** nivel 4: preparación difícil; C; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OISF/suricata/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo. Éxito: Con tráfico de prueba ves alertas en eve.json o el SIEM.
-- **Combina con:** `wazuh`, `wireshark` [16/pruebas], `zeek`
 
 ### Fail2ban (`fail2ban`)
 
@@ -135,6 +125,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `wazuh`
 - **Alternativas:** `crowdsec`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### Suricata (`suricata`)
+
+- **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 62/100
+- **Qué es:** Motor IDS/IPS open source de la OISF, estándar de facto junto a Zeek en SOC.
+- **Cuándo elegirlo:** Casos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team.
+- **Requisitos:** nivel 4: preparación difícil; C; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OISF/suricata/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo. Éxito: Con tráfico de prueba ves alertas en eve.json o el SIEM.
+- **Combina con:** `wazuh`, `wireshark` [16/pruebas], `zeek`
 
 ### OWASP Coraza (`coraza`)
 
@@ -149,7 +149,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Sigma (`sigma`)
 
-- **Repo:** https://github.com/SigmaHQ/sigma · DRL-1.1 (reglas); especificación de dominio público · nivel 1 · 58/100
+- **Repo:** https://github.com/SigmaHQ/sigma · DRL-1.1 (reglas); especificación de dominio público · nivel 1 · 57/100
 - **Qué es:** Estándar abierto de reglas de detección; especificación en dominio público y reglas bajo Detection Rule License 1.1.
 - **Cuándo elegirlo:** Casos: portar una detección a varios SIEM sin reescribirla; cubrir técnicas ATT&CK con reglas comunitarias.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; API de IA: no.
@@ -160,7 +160,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Shuffle (`shuffle`)
 
-- **Repo:** https://github.com/Shuffle/Shuffle · AGPL-3.0 · nivel 3 · 56/100
+- **Repo:** https://github.com/Shuffle/Shuffle · AGPL-3.0 · nivel 3 · 55/100
 - **Qué es:** SOAR AGPL.
 - **Cuándo elegirlo:** Casos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab.
 - **Requisitos:** nivel 3: SOAR con Docker Compose; flujos visuales; JavaScript, docker-compose.yml; API de IA: no.
@@ -182,7 +182,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Elastic detection-rules (`detection-rules`)
 
-- **Repo:** https://github.com/elastic/detection-rules · Elastic-2.0 · nivel 1 · 49/100
+- **Repo:** https://github.com/elastic/detection-rules · Elastic-2.0 · nivel 1 · 48/100
 - **Qué es:** Detection rules Elastic (Elastic License 2.0).
 - **Cuándo elegirlo:** Casos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, Makefile, pyproject.toml; API de IA: no.

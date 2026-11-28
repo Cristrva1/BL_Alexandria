@@ -57,7 +57,7 @@ Grupo **BI y dashboards**: Apache Superset ocupa la posición 1 de 3 (recomendad
 |---:|---|---:|---|
 | 1 | **Apache Superset** (esta ficha) ⭐ recomendado | 82 | Si buscas esto: plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
 | 2 | [metabase](metabase.md) | 67 | Si buscas esto: herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
-| 3 | [Redash](redash.md) | 57 | Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
+| 3 | [Redash](redash.md) | 58 | Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
 
 ## Acceso, coste y equipo
 

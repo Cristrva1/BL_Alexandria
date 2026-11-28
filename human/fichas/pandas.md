@@ -56,7 +56,7 @@ Grupo **Procesamiento de datos tabulares**: pandas ocupa la posición 1 de 3 (re
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **pandas** (esta ficha) ⭐ recomendado | 77 | Si buscas esto: biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. |
-| 2 | [DuckDB](duckdb.md) | 68 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| 2 | [DuckDB](duckdb.md) | 67 | Si buscas esto: base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 | 3 | [Polars](polars.md) | 67 | Si buscas esto: motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Acceso, coste y equipo

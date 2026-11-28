@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
-**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,7 +48,7 @@ Grupo **BI y dashboards**: Redash ocupa la posición 3 de 3 (alternativa). Orden
 |---:|---|---:|---|
 | 1 | [Apache Superset](superset.md) ⭐ recomendado | 82 | Si buscas esto: plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
 | 2 | [metabase](metabase.md) | 67 | Si buscas esto: herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
-| 3 | **Redash** (esta ficha) | 57 | Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
+| 3 | **Redash** (esta ficha) | 58 | Si buscas esto: herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
 
 ## Acceso, coste y equipo
 

@@ -18,8 +18,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `paperless-ngx` | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 77 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `pdfding` | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 46 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `paperless-ngx` | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 79 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pdfding` | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 45 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -27,7 +27,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### paperless-ngx (`paperless-ngx`)
 
-- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 77/100
+- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 79/100
 - **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
 - **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
 - **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.
@@ -38,7 +38,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PdfDing (`pdfding`)
 
-- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · 46/100
+- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · 45/100
 - **Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de…
 - **Cuándo elegirlo:** Casos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
 - **Requisitos:** nivel 1: preparación sencilla; Docker o entorno de la guía; volumen para documentos; cuenta de prueba; hardware prerequisites; API de IA: no; Docker o entorno de la guía; volumen para documentos; cuenta de prueba.

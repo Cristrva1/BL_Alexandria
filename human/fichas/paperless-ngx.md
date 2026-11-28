@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — Docker Compose con script de instalación · corregido a mano
 
-**Puntuación de calidad** 77/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 79/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -36,9 +36,9 @@ Aplicación Django con Celery y Redis/Valkey; el OCR se hace con OCRmyPDF (depen
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Apache Tika](tika.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [Stirling-PDF](stirling-pdf.md) · [syncthing](syncthing.md)
+[Apache Tika](tika.md) · [Documenso](documenso.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [Stirling-PDF](stirling-pdf.md) · [syncthing](syncthing.md)
 
 **Notas:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki.
 

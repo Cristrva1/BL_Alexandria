@@ -18,7 +18,7 @@ Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Anil-matcha/A
 
 **Nivel:** 2 Intermedio — preparación media; requiere clave de API
 
-**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

@@ -18,7 +18,7 @@ Revisión documental del 2026-11-27. [Fuente 1](https://github.com/google-labs-c
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

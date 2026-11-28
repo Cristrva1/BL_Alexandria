@@ -4,7 +4,7 @@
 
 Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.
 
-33 repos · 2 secciones
+34 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -18,7 +18,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 15 repos
+- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 16 repos
 - [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 18 repos
 
 ## Catálogos y marketplaces de skills
@@ -31,6 +31,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Awesome Claude Code](../fichas/awesome-claude-code.md) | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | Tu objetivo encaja con estos ejemplos: Encontrar ejemplos para personalizar una sesión de Claude Code; Comparar herramientas que muestran el uso del agente | Sin clave propia de API de IA en la ruta básica |
 | [Agentic Awesome Skills (AAS)](../fichas/antigravity-awesome-skills.md) | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. | Tu objetivo encaja con estos ejemplos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad | Sin clave propia de API de IA en la ruta básica |
 | [wshobson/agents](../fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores | Sin clave propia de API de IA en la ruta básica |
+| [Skills CLI (Vercel Labs)](../fichas/vercel-skills.md) | Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes. | Tu objetivo encaja con estos ejemplos: Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano; Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa | Sin clave propia de API de IA en la ruta básica |
 | [Awesome GitHub Copilot](../fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | Tu objetivo encaja con estos ejemplos: Añadir instrucciones de equipo al asistente de programación; Estudiar un agente especializado antes de adaptarlo a un proyecto | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | Tu objetivo encaja con estos ejemplos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor | Sin clave propia de API de IA en la ruta básica |
 | [Claude Code Templates](../fichas/claude-code-templates.md) | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas. | Tu objetivo encaja con estos ejemplos: Comparar dos plantillas de revisión de UI.; Encontrar un componente y revisar su procedencia antes de importarlo. | Sin clave propia de API de IA en la ruta básica |

@@ -18,7 +18,7 @@ Revisión documental del 2026-11-27. [Fuente 1](https://github.com/PDFMathTransl
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 67/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

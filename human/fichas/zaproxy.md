@@ -37,9 +37,9 @@ Escrito en Java; se instala con los instaladores multiplataforma, paquetes o im�
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (5). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[DefectDojo](defectdojo.md) · [OWASP Juice Shop](juice-shop.md) · [OWASP Noir](noir.md) · [OWASP Web Security Testing Guide](wstg.md) · [WebGoat](webgoat.md)
+[Brakeman](brakeman.md) · [DefectDojo](defectdojo.md) · [OWASP Juice Shop](juice-shop.md) · [OWASP Noir](noir.md) · [OWASP Web Security Testing Guide](wstg.md) · [WebGoat](webgoat.md)
 
 **Notas:** No hay alternativa equivalente abierta en el catálogo (Burp Suite es propietario); mitmproxy es un proxy de depuración, no un escáner.
 

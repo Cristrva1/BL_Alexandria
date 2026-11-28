@@ -48,7 +48,7 @@ Grupo **Agentes de investigación autónoma**: STORM ocupa la posición 2 de 3 (
 |---:|---|---:|---|
 | 1 | [gpt-researcher](gpt-researcher.md) ⭐ recomendado | 61 | Si buscas esto: agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 | 2 | **STORM** (esta ficha) | 60 | Si buscas esto: sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
-| 3 | [local-deep-research](local-deep-research.md) | 56 | Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
+| 3 | [local-deep-research](local-deep-research.md) | 55 | Si buscas esto: agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. |
 
 ## Acceso, coste y equipo
 

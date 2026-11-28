@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 49/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT con términos adicionales. Añade una cláusula de interpretación final a favor del autor. Fuente: [LICENSE](https://github.com/openkursar/hello-halo/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

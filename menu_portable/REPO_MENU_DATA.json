@@ -22,7 +22,7 @@
     {
       "num": 2,
       "title": "Skills, plugins y métodos para agentes",
-      "count": 33
+      "count": 34
     },
     {
       "num": 3,
@@ -47,7 +47,7 @@
     {
       "num": 7,
       "title": "Entender código y comprobar su calidad",
-      "count": 26
+      "count": 27
     },
     {
       "num": 8,
@@ -72,12 +72,12 @@
     {
       "num": 12,
       "title": "Editar, grabar y generar video",
-      "count": 21
+      "count": 22
     },
     {
       "num": 13,
       "title": "PDF, OCR y procesamiento de documentos",
-      "count": 22
+      "count": 23
     },
     {
       "num": 14,
@@ -92,7 +92,7 @@
     {
       "num": 16,
       "title": "Analizar software y comprobar su seguridad",
-      "count": 141
+      "count": 146
     },
     {
       "num": 17,
@@ -2001,10 +2001,13 @@
           "repo_ids": [
             "aflplusplus",
             "aircrack-ng",
+            "bandit",
             "bettercap",
             "bla",
+            "brakeman",
             "caido",
             "cdxgen",
+            "codeql",
             "crapi",
             "defectdojo",
             "dep-scan",
@@ -2014,6 +2017,7 @@
             "feroxbuster",
             "ffuf",
             "gobuster",
+            "gosec",
             "hashcat",
             "java-html-sanitizer",
             "john",
@@ -2022,6 +2026,7 @@
             "locust",
             "lynis",
             "mitmproxy",
+            "mobsf",
             "nettacker",
             "noir",
             "nuclei",
@@ -2041,7 +2046,7 @@
             "wrongsecrets",
             "zaproxy"
           ],
-          "count": 41
+          "count": 46
         },
         {
           "id": "seguridad-ofensiva",
@@ -2380,10 +2385,12 @@
         "autopsy",
         "awesome-ai-reverse-engineering",
         "awesome-reverse-engineering",
+        "bandit",
         "bettercap",
         "bitwarden-clients",
         "bla",
         "bloodhound",
+        "brakeman",
         "caido",
         "caldera",
         "capa",
@@ -2391,6 +2398,7 @@
         "certipy",
         "cheatsheetseries",
         "checkov",
+        "codeql",
         "coraza",
         "coreruleset",
         "cosign",
@@ -2419,6 +2427,7 @@
         "ghidramcp",
         "goad",
         "gobuster",
+        "gosec",
         "grype",
         "hacktricks",
         "hashcat",
@@ -2446,6 +2455,7 @@
         "mimikatz",
         "misp",
         "mitmproxy",
+        "mobsf",
         "modsecurity",
         "mythic",
         "naabu",
@@ -2518,7 +2528,7 @@
         "zaproxy",
         "zeek"
       ],
-      "count": 152
+      "count": 157
     },
     {
       "id": "audiovisual",
@@ -2559,6 +2569,7 @@
             "lossless-cut"
           ],
           "repo_ids": [
+            "cap",
             "concat",
             "davinci-resolve-mcp",
             "ffmpeg",
@@ -2574,7 +2585,7 @@
             "video-use",
             "videolingo"
           ],
-          "count": 14
+          "count": 15
         },
         {
           "id": "av-video-ia",
@@ -3019,6 +3030,7 @@
         "blender-skills",
         "brag",
         "buzz",
+        "cap",
         "chainner",
         "claude-animated-shorts",
         "codeformer",
@@ -3129,7 +3141,7 @@
         "whisperx",
         "yue"
       ],
-      "count": 121
+      "count": 122
     },
     {
       "id": "trading",
@@ -4887,6 +4899,7 @@
           ],
           "repo_ids": [
             "docling",
+            "documenso",
             "docuseal",
             "marker",
             "markitdown",
@@ -4902,7 +4915,7 @@
             "unstructured",
             "xberg"
           ],
-          "count": 15
+          "count": 16
         },
         {
           "id": "docs-ocr",
@@ -5165,6 +5178,7 @@
         "d2",
         "diagram-design",
         "docling",
+        "documenso",
         "docuseal",
         "drawio",
         "dsh-noema",
@@ -5223,7 +5237,7 @@
         "weaviate",
         "xberg"
       ],
-      "count": 67
+      "count": 68
     },
     {
       "id": "datos",
@@ -5892,6 +5906,7 @@
             "npkill",
             "open-code-review",
             "openai-python",
+            "pake",
             "pre-commit",
             "pybreaker",
             "repomix",
@@ -5903,7 +5918,7 @@
             "tree-sitter",
             "trufflehog"
           ],
-          "count": 26
+          "count": 27
         },
         {
           "id": "dev-infra",
@@ -6156,6 +6171,7 @@
         "openidea",
         "openllmetry",
         "opik",
+        "pake",
         "pangolin",
         "phoenix",
         "portainer",
@@ -6191,7 +6207,7 @@
         "xinference",
         "zed"
       ],
-      "count": 111
+      "count": 112
     },
     {
       "id": "vision",
@@ -6516,9 +6532,10 @@
             "skills",
             "spec-kit",
             "superpowers",
+            "vercel-skills",
             "wshobson-agents"
           ],
-          "count": 32
+          "count": 33
         },
         {
           "id": "aprender-especialidades",
@@ -6676,9 +6693,10 @@
         "threejs-skills",
         "train-llm-from-scratch",
         "ui-ux-pro-max-skill",
+        "vercel-skills",
         "wshobson-agents"
       ],
-      "count": 101
+      "count": 102
     },
     {
       "id": "configurar-claude-code",
@@ -15762,7 +15780,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 64,
+      "puntuacion": 61,
       "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
       "mcp": false,
       "prov": [],
@@ -16385,7 +16403,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 40,
+      "puntuacion": 39,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -16493,7 +16511,9 @@
         "skillspector",
         "codex"
       ],
-      "alt": []
+      "alt": [
+        "vercel-skills"
+      ]
     },
     {
       "id": "awesome-agent-skills",
@@ -16503,7 +16523,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 54,
+      "puntuacion": 53,
       "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
       "mcp": false,
       "prov": [],
@@ -16861,7 +16881,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 52,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -16970,7 +16990,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 48,
+      "puntuacion": 47,
       "grupo": null,
       "mcp": false,
       "prov": [
@@ -17091,7 +17111,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 68,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -17210,7 +17230,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": "g-desarrollo-guiado-por-especificaciones",
       "mcp": false,
       "prov": [],
@@ -17579,7 +17599,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -17690,7 +17710,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 62,
+      "puntuacion": 63,
       "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
       "mcp": true,
       "prov": [
@@ -18062,7 +18082,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 72,
+      "puntuacion": 70,
       "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
       "mcp": false,
       "prov": [],
@@ -18190,7 +18210,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -18312,7 +18332,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 55,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [
@@ -18438,7 +18458,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 59,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -18692,7 +18712,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 66,
+      "puntuacion": 64,
       "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
       "mcp": false,
       "prov": [],
@@ -18929,7 +18949,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 48,
+      "puntuacion": 47,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -19047,7 +19067,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 74,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -19525,7 +19545,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 59,
+      "puntuacion": 57,
       "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
       "mcp": false,
       "prov": [],
@@ -19645,6 +19665,132 @@
       ]
     },
     {
+      "id": "vercel-skills",
+      "name": "Skills CLI (Vercel Labs)",
+      "cat": 2,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 72,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "skills",
+        "instalador",
+        "agentes de código",
+        "npm"
+      ],
+      "routes": [
+        "no_api",
+        "claude",
+        "codex",
+        "antigravity"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "project_integration",
+        "codex": "project_integration",
+        "antigravity": "project_integration",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Instalación en el ámbito del proyecto con una skill propia. Compatibilidad según la tabla documentada de agentes; no se probó en cada cliente.",
+        "api_note": "No necesita clave de API de IA. Consulta GitHub y skills.sh para descargar fuentes, buscar skills y mostrar auditorías. DISABLE_TELEMETRY=1 o DO_NOT_TRACK=1 desactivan la telemetría y las consultas de auditoría.",
+        "subscription_note": "La CLI no usa ningún modelo. Coloca archivos en las carpetas que leen Claude Code (.claude/skills), Codex (.agents/skills) o Antigravity (.agents/skills). Usar después la skill consume el plan o la cuenta de ese agente.",
+        "local_note": "No ejecuta modelos. La skill instalada funciona con el agente elegido, que usará un modelo local solo si su propia configuración lo permite.",
+        "cost_note": "Paquete MIT sin pago. Las fuentes remotas se descargan de GitHub u otros servidores Git; un token de GitHub es opcional.",
+        "hardware_note": "Equipo de uso general con Node.js 22.20 o posterior, y Git para fuentes remotas. Si el sistema no permite enlaces simbólicos, copia los archivos y lo avisa.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/README.md",
+          "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/agents.md",
+          "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/commands.md",
+          "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/troubleshooting.md",
+          "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/package.json"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2751989c138ac2dd5a6ba65d053c2329d992dcd3"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Instala Node.js 22.20 o posterior y abre una terminal en una carpeta de prueba vacía. Para no enviar datos de uso, define antes DISABLE_TELEMETRY=1 (en PowerShell: $env:DISABLE_TELEMETRY=1).",
+          "Usa el paquete npm skills en su versión 1.9.1, publicado desde este repositorio: escribe siempre npx skills@1.9.1. No añadas -g, -y ni --all, así todo queda dentro de la carpeta de prueba y la herramienta te pregunta antes de escribir.",
+          "Crea la skill con init, instálala con add y la ruta local, y compruébala con list. Al terminar, quítala con npx skills@1.9.1 remove saludo y verifica que la carpeta .claude/skills/saludo desaparece."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/vercel-labs/skills/releases/tag/v1.9.1",
+        "source": "https://github.com/vercel-labs/skills/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En una carpeta de prueba, crea una skill con npx skills@1.9.1 init saludo, escribe en saludo/SKILL.md una instrucción breve propia e instálala con npx skills@1.9.1 add ./saludo -a claude-code",
+        "success": "npx skills@1.9.1 list muestra la skill saludo y existe .claude/skills/saludo/SKILL.md con tu texto dentro de la carpeta de prueba",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/README.md",
+        "source_blob_sha": "2751989c138ac2dd5a6ba65d053c2329d992dcd3",
+        "previous_category": [
+          2,
+          "catalogos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La 1.9.1 se publicó en npm desde el flujo Publish (ejecución 45943719278) con procedencia SLSA y gitHead e7fd0e9. Ese commit solo cambia la versión de package.json respecto a 3c917b6, donde CI (45941358982: compilación y pruebas unitarias en Ubuntu y Windows con Node 22.20, 24 y 26) y E2E (45941359000) terminaron en success. La ejecución programada E2E 45952567515 sobre e7fd0e9 también terminó en success en Ubuntu y macOS: instala, enlaza, lista, restaura y quita skills reales, también en modo global. No se instaló ni ejecutó la CLI en esta revisión, ni se comprobaron todos los agentes de la lista.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes.",
+      "desc": "Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/vercel-labs/skills",
+      "install": "Seguir la instalación original: https://github.com/vercel-labs/skills/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano; Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa",
+      "avoid_if": "Solo quieres leer una skill sin instalarla, o no puedes revisar el contenido de las skills que vas a añadir.",
+      "combines_with": [
+        "skillspector",
+        "awesome-agent-skills",
+        "claude-code",
+        "codex"
+      ],
+      "alt": [
+        "autoskills"
+      ]
+    },
+    {
       "id": "wshobson-agents",
       "name": "wshobson/agents",
       "cat": 2,
@@ -19652,7 +19798,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 51,
+      "puntuacion": 50,
       "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
       "mcp": false,
       "prov": [],
@@ -34740,7 +34886,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -35464,7 +35610,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 58,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -35585,7 +35731,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 68,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -35818,7 +35964,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 51,
+      "puntuacion": 56,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -35938,7 +36084,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 74,
+      "puntuacion": 75,
       "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
       "mcp": false,
       "prov": [],
@@ -36176,7 +36322,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 72,
+      "puntuacion": 71,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -36292,7 +36438,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 56,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -36632,6 +36778,139 @@
       "alt": []
     },
     {
+      "id": "pake",
+      "name": "Pake",
+      "cat": 7,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 60,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "apps de escritorio",
+        "tauri",
+        "empaquetar web",
+        "cli"
+      ],
+      "routes": [
+        "no_api",
+        "claude",
+        "codex"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "project_integration",
+        "codex": "project_integration",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "CLI pake-cli 3.21.0 instalada desde npm y empaquetado de un archivo HTML propio.",
+        "api_note": "No necesita clave de API. Al empaquetar una URL descarga el icono del sitio, y la app resultante carga esa web.",
+        "subscription_note": "El repositorio incluye un plugin oficial para Claude Code y Codex que enseña al agente a usar la CLI con --json. Pake no usa la suscripción del agente: la CLI compila en tu equipo.",
+        "local_note": "Empaquetar no usa modelos de IA.",
+        "cost_note": "CLI GPL-3.0 gratuita. La app gráfica de pake.run cobra a partir de la tercera app y no es necesaria.",
+        "hardware_note": "Node.js 22.12 o posterior, Rust 1.85 o posterior y herramientas de compilación del sistema. La primera compilación descarga dependencias.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/README.md",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/LICENSE",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/LICENSE-EXCEPTION",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/TRADEMARK.md",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/docs/cli-usage.md",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/docs/faq.md",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/.github/workflows/quality-and-test.yml",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/.github/workflows/npm-publish.yml",
+          "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/plugins/pake/skills/pake/SKILL.md",
+          "https://github.com/tw93/Pake/releases/tag/V3.21.0",
+          "https://github.com/tw93/Pake/actions/runs/45192308113",
+          "https://github.com/tw93/Pake/actions/runs/45195435888",
+          "https://github.com/tw93/Pake/security/advisories/GHSA-vq4w-55rh-9ff3",
+          "https://github.com/tw93/Pake/security/advisories/GHSA-6c7f-87jf-wg9w",
+          "https://www.npmjs.com/package/pake-cli/v/3.21.0",
+          "https://pake.run/"
+        ],
+        "mode": "software",
+        "source_blob_sha": "0bcb5d9a8ca8d735b5b5cba341b46365df17f9bc"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Instala Node.js 22.12 o posterior, Rust 1.85 o posterior y las herramientas de compilación de tu sistema: Xcode Command Line Tools en macOS, Visual Studio Build Tools en Windows o las bibliotecas de WebKitGTK que indica la guía en Linux.",
+          "Instala la versión revisada con npm install -g pake-cli@3.21.0 y comprueba que pake --version muestra 3.21.0. No uses versiones anteriores a la 3.17.3.",
+          "Ejecuta la primera prueba con tu archivo hola.html. La primera compilación tarda más porque prepara el entorno. Abre la app generada y comprueba el contenido."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/tw93/Pake/releases/tag/V3.21.0",
+        "source": "https://github.com/tw93/Pake/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea hola.html con un título y un párrafo propios y ejecuta pake ./hola.html --name HolaPake",
+        "success": "En la carpeta aparece un instalador (.dmg, .msi, .deb o AppImage). Instálalo y abre HolaPake: la ventana muestra tu título y tu párrafo",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Convertir una página de inicio propia en una app con icono y ventana propios",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/README.md",
+        "source_blob_sha": "0bcb5d9a8ca8d735b5b5cba341b46365df17f9bc",
+        "previous_category": [
+          7,
+          "herramientas"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Sobre el commit de V3.21.0 (705f738), «Quality & Testing» 45192308113 pasó clippy y las pruebas de Rust, la validación rápida de la CLI y la compilación completa de Tauri con sus pruebas en Ubuntu, Windows y macOS, además del empaquetado en Docker. El paquete npm pake-cli 3.21.0 tiene procedencia SLSA de la ejecución 45195435888 sobre ese commit. No se instaló ni se ejecutó.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando.",
+      "desc": "Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando.",
+      "stack": "Rust, Dockerfile, package.json",
+      "repo": "https://github.com/tw93/Pake",
+      "install": "Seguir la instalación original: https://github.com/tw93/Pake/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Convertir una página de inicio propia en una app con icono y ventana propios; Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador",
+      "avoid_if": "no quieres instalar Node.js, Rust y herramientas de compilación, o necesitas que la app acceda a funciones del sistema más allá de mostrar la web.",
+      "combines_with": [
+        "slidev",
+        "tailwindcss",
+        "excalidraw"
+      ],
+      "alt": []
+    },
+    {
       "id": "pre-commit",
       "name": "pre-commit",
       "cat": 7,
@@ -36758,7 +37037,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 43,
+      "puntuacion": 44,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -37569,7 +37848,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 60,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -42323,7 +42602,7 @@
         "kind": "source",
         "audience": "developer",
         "prerequisites": [
-          "Proyecto web React compatible con los paquetes de Astryx y StyleX."
+          "Proyecto web con React 19 o posterior y StyleX 0.19, como pide el paquete @astryxdesign/core."
         ],
         "steps": [
           "En un proyecto React de prueba añade los paquetes de Astryx, el tema neutral y StyleX según Getting Started.",
@@ -42354,7 +42633,7 @@
       ],
       "editorial_review": {
         "status": "source_reviewed",
-        "checked_at": "2026-11-22",
+        "checked_at": "2026-11-27",
         "source": "https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md",
         "source_blob_sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
         "previous_category": [
@@ -45958,7 +46237,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 46,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46074,7 +46353,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46192,7 +46471,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 65,
       "grupo": "g-librerias-de-graficos",
       "mcp": false,
       "prov": [],
@@ -46433,7 +46712,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 38,
+      "puntuacion": 37,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46557,7 +46836,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 65,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46800,7 +47079,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46917,7 +47196,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 1,
-      "puntuacion": 32,
+      "puntuacion": 33,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -47035,7 +47314,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 69,
       "grupo": "g-paneles-osint-sobre-globo-3d",
       "mcp": true,
       "prov": [],
@@ -47282,7 +47561,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 66,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -47400,7 +47679,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 71,
       "grupo": "g-mapas-web-interactivos",
       "mcp": false,
       "prov": [],
@@ -47638,7 +47917,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 67,
+      "puntuacion": 68,
       "grupo": "g-mapas-web-interactivos",
       "mcp": false,
       "prov": [],
@@ -47756,7 +48035,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": "g-analitica-web-auto-hospedada",
       "mcp": false,
       "prov": [],
@@ -48243,7 +48522,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 59,
+      "puntuacion": 60,
       "grupo": "g-analitica-web-auto-hospedada",
       "mcp": false,
       "prov": [],
@@ -48362,7 +48641,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 71,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -48489,7 +48768,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -48615,7 +48894,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -48733,7 +49012,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 69,
+      "puntuacion": 70,
       "grupo": "g-librerias-de-graficos",
       "mcp": false,
       "prov": [],
@@ -48974,7 +49253,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": "g-bi-y-dashboards",
       "mcp": false,
       "prov": [],
@@ -49582,7 +49861,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -51288,7 +51567,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 49,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -51408,6 +51687,141 @@
       "alt": []
     },
     {
+      "id": "cap",
+      "name": "Cap",
+      "cat": 12,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 68,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "grabar pantalla",
+        "edición de video",
+        "tutoriales",
+        "enlaces para compartir"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "App oficial 0.6.3 en modo Studio, sin cuenta y para uso personal. No cubre el modo Instant, la nube ni el autoalojamiento.",
+        "api_note": "El modo Studio graba y exporta en el equipo. El modo Instant, los enlaces compartidos y Cap AI usan la nube de Cap o un servidor propio.",
+        "subscription_note": "Un agente de código puede ayudarte a instalarla, pero Cap no se ejecuta dentro de Claude Code, Codex ni Antigravity. Para grabar y editar en tu equipo basta la app.",
+        "local_note": "Grabar y editar no necesita un modelo de IA. Las notas de la 0.6.3 describen una transcripción en el equipo con modelos que se descargan aparte; no se comprobó en el plan gratuito.",
+        "cost_note": "Gratis para uso personal. La licencia de escritorio para uso comercial y Cap Pro, con nube, funciones de IA y enlaces ilimitados, son de pago según la página de precios consultada el 27 de noviembre de 2026.",
+        "hardware_note": "macOS 13.1 o posterior recomendado, Windows, o Linux con glibc 2.39 o posterior. Ubuntu 22.04 no está soportado.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/README.md",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/LICENSE",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/licenses/LICENSE-MIT",
+          "https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/apps/desktop-gpui/locales/es.toml",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/engine-verify.yml",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/recording-reliability.yml",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/verify-recording.yml",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/publish.yml",
+          "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/desktop-release.yml",
+          "https://github.com/CapSoftware/Cap/actions/runs/43092047100",
+          "https://github.com/CapSoftware/Cap/actions/runs/43092046841",
+          "https://github.com/CapSoftware/Cap/actions/runs/43099158030",
+          "https://github.com/CapSoftware/Cap/actions/runs/43150140258",
+          "https://github.com/CapSoftware/Cap/security/advisories",
+          "https://cap.so/download",
+          "https://cap.so/download/versions",
+          "https://cap.so/pricing"
+        ],
+        "mode": "software",
+        "source_blob_sha": "c1e2d45b3578e872ae318ec7f3e5c4c581d1caa4"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Usa macOS (se recomienda 13.1 o posterior), Windows o Linux con glibc 2.39 o posterior, por ejemplo Ubuntu 24.04. Ubuntu 22.04 no está soportado. El modo Studio no necesita cuenta.",
+          "Descarga Cap 0.6.3 desde cap.so/download, la página de descarga que enlaza el README oficial. Instálalo y concede los permisos de grabación de pantalla y micrófono que pida el sistema. Si quieres, desactiva la telemetría anónima en Ajustes.",
+          "Si aparece el aviso para iniciar sesión, elige «Usar Studio» o «Ahora no». Haz la grabación de prueba, expórtala a MP4 desde el editor y reprodúcela para comprobar imagen y sonido."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3",
+        "source": "https://github.com/CapSoftware/Cap/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En el modo Studio, sin iniciar sesión, graba 15 segundos de una ventana con un documento de prueba propio mientras dices una frase al micrófono",
+        "success": "Al detener la grabación se abre el editor. Exporta a MP4, abre el archivo en tu reproductor y comprueba que se ve la ventana y se oye la frase",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/README.md",
+        "source_blob_sha": "c1e2d45b3578e872ae318ec7f3e5c4c581d1caa4",
+        "previous_category": [
+          12,
+          "edicion"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Sobre el commit de la 0.6.3 (029aa29), «Engine verify» 43092047100 pasó en Linux, macOS y Windows las suites de exportación, reproducción, audio, edición y subtítulos, y «publish» 43099158030 compiló los instaladores de cuatro plataformas. «Verify recording» con captura real no se ejecutó en ese commit. La nocturna 43150140258, 50 commits después, pasó en tres equipos macOS, falló en macOS 26 y se canceló en Windows. No se instaló ni se probó la app.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace.",
+      "desc": "Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace.",
+      "stack": "Rust, Cargo.toml, docker-compose.yml, package.json",
+      "repo": "https://github.com/CapSoftware/Cap",
+      "install": "Seguir la instalación original: https://github.com/CapSoftware/Cap/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4; Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada",
+      "avoid_if": "necesitas transmitir en directo con escenas y varias fuentes, o vas a grabar para un uso comercial sin pagar la licencia.",
+      "combines_with": [
+        "ffmpeg",
+        "lossless-cut",
+        "handbrake"
+      ],
+      "alt": [
+        "obs-studio"
+      ]
+    },
+    {
       "id": "concat",
       "name": "Concat",
       "cat": 12,
@@ -51415,7 +51829,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -51667,7 +52081,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 72,
+      "puntuacion": 70,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -51786,7 +52200,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -52153,7 +52567,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 59,
       "grupo": "g-editores-de-video",
       "mcp": false,
       "prov": [],
@@ -52399,7 +52813,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 64,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -52773,7 +53187,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 70,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -52886,7 +53300,9 @@
         "deep-live-cam",
         "rvc"
       ],
-      "alt": []
+      "alt": [
+        "cap"
+      ]
     },
     {
       "id": "opencut",
@@ -53017,7 +53433,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 48,
+      "puntuacion": 47,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -54014,6 +54430,132 @@
       ]
     },
     {
+      "id": "documenso",
+      "name": "Documenso",
+      "cat": 13,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "complejidad": 3,
+      "puntuacion": 53,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "firma electrónica",
+        "pdf",
+        "autoalojado",
+        "docker",
+        "auditoría"
+      ],
+      "routes": [
+        "no_api",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "not_documented",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Entorno local de desarrollo v2.22.0 con un PDF propio y un firmante ficticio. La producción con dominio, SMTP y certificado propio queda fuera de la prueba.",
+        "api_note": "La detección con IA necesita una clave de Google Vertex AI con facturación activa. La imagen Docker envía telemetría anónima salvo que definas DOCUMENSO_DISABLE_TELEMETRY=true.",
+        "subscription_note": "No requiere suscripciones de IA. El AGENTS.md del repositorio orienta a agentes que contribuyen al código; no es una integración para usar la aplicación.",
+        "local_note": "Firmar y sellar no usa modelos. La detección automática de destinatarios y campos es opcional y solo documenta Google Vertex AI; no hay ruta con modelos locales.",
+        "cost_note": "La edición Community autoalojada es gratuita bajo AGPL-3.0. La nube de Documenso ofrece un plan gratuito con 5 documentos al mes y planes de pago (consultado el 27 nov 2026). Enterprise y Vertex AI son de pago.",
+        "hardware_note": "Equipo con Docker, Node.js 24 o posterior y al menos 2 GB de RAM libres. La ruta de desarrollo levanta cuatro contenedores.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/README.md",
+          "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/.env.example",
+          "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/docker/development/compose.yml",
+          "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/deployment/docker-compose.mdx",
+          "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/configuration/advanced/ai-features.mdx",
+          "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/configuration/telemetry.mdx",
+          "https://documenso.com/pricing"
+        ],
+        "mode": "software",
+        "source_blob_sha": "397a76f4ca44d7778d5f8bd2a208c75ff941fef7"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Prepara un equipo con Git, Docker y Docker Compose, Node.js 24 o posterior y npm 11.17 o posterior. La ruta de desarrollo levanta en contenedores PostgreSQL, Inbucket (un buzón de correo local), Redis y Gotenberg.",
+          "Clona el repositorio en la etiqueta v2.22.0, copia .env.example a .env y ejecuta npm run d. Abre http://localhost:3000. Los correos salientes se leen en http://localhost:9000.",
+          "Haz la prueba con un PDF propio y un firmante ficticio. Comprueba el estado completado y la firma del PDF descargado. Al terminar, detén los contenedores."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/documenso/documenso/releases/tag/v2.22.0",
+        "source": "https://github.com/documenso/documenso/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En la instalación local de desarrollo, crea una cuenta con un correo ficticio y confírmala desde http://localhost:9000. Sube un PDF propio de una página, añade como firmante a «Firmante Ficticio» <firmante@example.com> con un campo de firma y envíalo.",
+        "success": "En http://localhost:9000 abre el correo del firmante y firma. El documento pasa a completado y el PDF descargado muestra una firma digital hecha con el certificado de ejemplo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Preparar una plantilla con campos de firma y fecha para reutilizarla",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/README.md",
+        "source_blob_sha": "397a76f4ca44d7778d5f8bd2a208c75ff941fef7",
+        "previous_category": [
+          13,
+          "pdf"
+        ],
+        "category_verdict": "confirmed",
+        "note": "Sobre d32d049, el commit de v2.22.0, terminaron en success Continuous Integration 43345864857 (compila la app y la imagen Docker), Playwright Tests 43345864965 (pruebas e2e de API y de interfaz en siete fragmentos, con PostgreSQL, correo local y el certificado de ejemplo) y Publish Docker 43345916435 (publica documenso/documenso:v2.22.0 para amd64 y arm64). No se ejecutó la aplicación en esta revisión.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría.",
+      "desc": "Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría.",
+      "stack": "TypeScript, package.json",
+      "repo": "https://github.com/documenso/documenso",
+      "install": "Seguir la instalación original: https://github.com/documenso/documenso/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla",
+      "avoid_if": "solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo.",
+      "combines_with": [
+        "stirling-pdf",
+        "paperless-ngx",
+        "activepieces"
+      ],
+      "alt": [
+        "docuseal"
+      ]
+    },
+    {
       "id": "docuseal",
       "name": "docuseal",
       "cat": 13,
@@ -54021,7 +54563,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 60,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -54131,7 +54673,9 @@
         "stirling-pdf",
         "pdfcraft"
       ],
-      "alt": []
+      "alt": [
+        "documenso"
+      ]
     },
     {
       "id": "marker",
@@ -54644,7 +55188,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 50,
+      "puntuacion": 51,
       "grupo": "g-ocr-de-documentos",
       "mcp": false,
       "prov": [
@@ -54772,7 +55316,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 72,
+      "puntuacion": 73,
       "grupo": "g-ocr-de-documentos",
       "mcp": false,
       "prov": [],
@@ -55017,7 +55561,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 77,
+      "puntuacion": 79,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -55386,7 +55930,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 54,
+      "puntuacion": 55,
       "grupo": "g-suites-de-herramientas-pdf",
       "mcp": false,
       "prov": [],
@@ -55506,7 +56050,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 46,
+      "puntuacion": 45,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -55626,7 +56170,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 67,
+      "puntuacion": 68,
       "grupo": null,
       "mcp": true,
       "prov": [
@@ -65740,7 +66284,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 66,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66439,7 +66983,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 63,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66553,7 +67097,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 53,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66671,7 +67215,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 62,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -66788,7 +67332,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 46,
+      "puntuacion": 38,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -67130,6 +67674,125 @@
       "alt": []
     },
     {
+      "id": "bandit",
+      "name": "Bandit",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 62,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "python",
+        "análisis estático",
+        "seguridad",
+        "cli"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Instalación desde PyPI y análisis local de un archivo Python propio.",
+        "api_note": "No necesita clave de API ni conexión durante el análisis.",
+        "subscription_note": "Un agente de código puede ayudarte a instalar Bandit y a interpretar el informe, pero Bandit se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+        "local_note": "Aplica reglas fijas sobre el código. No usa modelos de IA.",
+        "cost_note": "Licencia Apache-2.0, sin pago para instalarlo ni ejecutarlo.",
+        "hardware_note": "Cualquier equipo con Python 3.10 o posterior.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/README.rst",
+          "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/doc/source/start.rst",
+          "https://pypi.org/project/bandit/1.9.4/"
+        ],
+        "mode": "software",
+        "source_blob_sha": "79615fffc3e851a1d5a4bc50bd377d3ae7be569b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Instala Python 3.10 o posterior, que Bandit 1.9.4 exige. En una carpeta de prueba crea un entorno virtual con python -m venv bandit-env y actívalo.",
+          "Instala la versión revisada desde PyPI con pip install bandit==1.9.4 y comprueba que bandit --version muestra 1.9.4. También existe una imagen oficial firmada en ghcr.io/pycqa/bandit/bandit.",
+          "Crea prueba.py con la llamada de la primera prueba, ejecuta bandit prueba.py y localiza B602. Cambia la llamada a subprocess.call(['ls', carpeta]) sin shell=True y repite: B602 desaparece y solo quedan avisos informativos de gravedad Low, como B404 o B603."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://bandit.readthedocs.io/en/latest/start.html",
+        "source": "https://github.com/PyCQA/bandit/blob/main/README.rst",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea prueba.py con import subprocess y subprocess.call(input('Carpeta: '), shell=True) y ejecuta bandit prueba.py",
+        "success": "El informe muestra el hallazgo B602 (subprocess_popen_with_shell_equals_true) con gravedad High y confianza High en la línea de la llamada",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Añadir una comprobación de seguridad antes de cada commit en un proyecto Python mediante pre-commit",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/README.rst",
+        "source_blob_sha": "79615fffc3e851a1d5a4bc50bd377d3ae7be569b",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La ejecución 22385359689 de «Build and Test Bandit» terminó en success sobre el commit de la etiqueta 1.9.4 (92ae8b8): formato, pep8 y pruebas con stestr en Python 3.10 a 3.14 en Ubuntu y macOS, incluidas pruebas funcionales que analizan los ejemplos subprocess_shell.py y yaml_load.py. El paquete 1.9.4 de PyPI tiene atestación de procedencia del flujo publish-to-pypi.yml de PyCQA/bandit. No se ejecutó la primera prueba.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo.",
+      "desc": "Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo.",
+      "stack": "Python, requirements.txt, setup.py",
+      "repo": "https://github.com/PyCQA/bandit",
+      "install": "Seguir la instalación original: https://github.com/PyCQA/bandit/blob/main/README.rst",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema; Añadir una comprobación de seguridad antes de cada commit en un proyecto Python mediante pre-commit",
+      "avoid_if": "Tu proyecto no está escrito en Python o necesitas seguir el recorrido de los datos entre varios archivos.",
+      "combines_with": [
+        "pre-commit",
+        "gitleaks",
+        "defectdojo"
+      ],
+      "alt": []
+    },
+    {
       "id": "bettercap",
       "name": "bettercap",
       "cat": 16,
@@ -67250,7 +67913,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -67485,6 +68148,126 @@
       "alt": []
     },
     {
+      "id": "brakeman",
+      "name": "Brakeman",
+      "cat": 16,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 44,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "ruby",
+        "rails",
+        "análisis estático",
+        "seguridad"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Instalación desde RubyGems y análisis local de una carpeta Rails mínima propia.",
+        "api_note": "No necesita clave de API ni conexión durante el análisis.",
+        "subscription_note": "Un agente de código puede ayudarte a instalar Brakeman y a interpretar los avisos, pero Brakeman se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+        "local_note": "Aplica comprobaciones fijas sobre el código. No usa modelos de IA.",
+        "cost_note": "Gratis para analizar tu propio software y para uso no comercial. Los usos comerciales que define la licencia (SaaS, producto comercial o servicio de valor añadido) requieren licencia de pago.",
+        "hardware_note": "Cualquier equipo con Ruby 3.2 o posterior.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/README.md",
+          "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/LICENSE.md",
+          "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/COPYING.md",
+          "https://rubygems.org/gems/brakeman/versions/8.1.1"
+        ],
+        "mode": "software",
+        "source_blob_sha": "ede49eb7395d04911215867b2861ebcbc4ad54d2"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Instala Ruby 3.2 o posterior: Brakeman 8.1.1 lo exige para ejecutarse y analiza aplicaciones Rails de la 2.3 a la 8. No necesitas instalar Rails para la prueba.",
+          "Instala la versión revisada desde RubyGems con gem install brakeman -v 8.1.1 y comprueba brakeman --version. La imagen Docker presidentbeef/brakeman sigue en 8.1.0 porque su publicación automática para 8.1.1 falló al arrancar.",
+          "Prepara la carpeta demo de la primera prueba y ejecuta brakeman demo. Cambia la llamada a system(\"ls\", params[:carpeta]), que no pasa por un intérprete de comandos, y repite: el aviso desaparece."
+        ],
+        "command": "gem install brakeman",
+        "command_status": "documented",
+        "entry_url": "https://github.com/presidentbeef/brakeman/releases/tag/v8.1.1",
+        "source": "https://github.com/presidentbeef/brakeman/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Crea demo/app/controllers/archivos_controller.rb con una clase ArchivosController cuyo método index ejecute system(\"ls #{params[:carpeta]}\") y ejecuta brakeman demo",
+        "success": "El informe muestra un aviso Command Injection de la comprobación Execute, con confianza High, el archivo y la línea de system",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Comparar el informe JSON actual con el anterior para ver qué avisos se corrigieron y cuáles son nuevos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/README.md",
+        "source_blob_sha": "ede49eb7395d04911215867b2861ebcbc4ad54d2",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "CircleCI ejecutó el flujo de pruebas sobre el commit de la etiqueta v8.1.1 (9080ba4) con resultado success: bundle exec rake, que analiza aplicaciones Rails de ejemplo de las versiones 2 a 8, en Ruby 3.2, 3.3, 3.4 y 4.0. GitHub lo registra como comprobación 136439493013. En GitHub Actions no hay pruebas: el único flujo publica la imagen Docker y falló al arrancar para 8.1.1 (ejecución 44796664587). No se ejecutó la primera prueba.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo.",
+      "desc": "Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo.",
+      "stack": "Ruby, Dockerfile, Gemfile",
+      "repo": "https://github.com/presidentbeef/brakeman",
+      "install": "gem install brakeman",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario; Comparar el informe JSON actual con el anterior para ver qué avisos se corrigieron y cuáles son nuevos",
+      "avoid_if": "Tu aplicación no usa Ruby on Rails o quieres integrarlo en un producto o servicio comercial para terceros sin comprar la licencia.",
+      "combines_with": [
+        "osv-scanner",
+        "zaproxy",
+        "defectdojo"
+      ],
+      "alt": []
+    },
+    {
       "id": "caido",
       "name": "Caido",
       "cat": 16,
@@ -67607,7 +68390,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 64,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -68292,6 +69075,131 @@
       "alt": []
     },
     {
+      "id": "codeql",
+      "name": "CodeQL",
+      "cat": 16,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "complejidad": 2,
+      "puntuacion": 67,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "análisis estático",
+        "flujo de datos",
+        "github",
+        "sarif",
+        "seguridad"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Configuración predeterminada de code scanning en un repositorio público propio. El CLI local queda como ruta avanzada con los mismos términos de licencia.",
+        "api_note": "No necesita clave de API de IA, solo una cuenta gratuita de GitHub.",
+        "subscription_note": "Un agente de código puede ayudarte a preparar el repositorio o a leer las alertas, por ejemplo con el servidor MCP de GitHub. CodeQL se ejecuta en GitHub Actions o en tu equipo sin suscripción de IA. Las sugerencias de corrección con IA de GitHub (Copilot Autofix) son un servicio aparte y opcional.",
+        "local_note": "El análisis no usa modelos de IA: aplica consultas al código.",
+        "cost_note": "Code scanning y los ejecutores estándar de GitHub Actions son gratuitos en repositorios públicos. En repositorios privados de organizaciones hace falta GitHub Code Security, de pago. El CLI no puede usarse gratis con código cerrado.",
+        "hardware_note": "Con la configuración predeterminada basta un navegador: el análisis corre en servidores de GitHub. El paquete local pesa entre 400 y 700 MB comprimido según el sistema, y necesita las herramientas de compilación de los lenguajes que lo requieran.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/github/codeql-cli-binaries/blob/9d0dcfbe60daef8e62688852c0977065865c80a0/LICENSE.md",
+          "https://github.com/github/codeql-action/blob/38112626f97ac1fd7acf3df7ebca51f4677c1b38/README.md",
+          "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/data/reusables/gated-features/code-scanning.md",
+          "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/content/billing/concepts/product-billing/github-actions.md",
+          "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/data/reusables/rai/code-scanning/gated-feature-autofix.md",
+          "https://github.com/github/codeql-cli-binaries/releases/tag/v2.27.6"
+        ],
+        "mode": "software",
+        "source_blob_sha": "d738adcab68f9e5dbceebacc3ce637e80ec006a0"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Crea una cuenta gratuita de GitHub y un repositorio público nuevo de prueba con licencia MIT u otra aprobada por la OSI. Los términos de CodeQL solo permiten el uso gratuito sobre código abierto publicado así o para investigación académica.",
+          "No instales nada: en Settings > Advanced Security, junto a «CodeQL analysis», elige Set up > Default y pulsa Enable CodeQL. GitHub ejecuta en sus servidores el paquete vigente (codeql-action v4.39.5 usa CodeQL 2.27.6 por defecto), sin coste en repositorios públicos.",
+          "Sube el app.py de la primera prueba, espera a que el flujo CodeQL termine en Actions y abre Code scanning en la pestaña de seguridad. Para usarlo en tu equipo, descarga el CLI 2.27.6 desde github/codeql-cli-binaries; se aplican las mismas condiciones de licencia."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning",
+        "source": "https://github.com/github/codeql/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En un repositorio público propio con licencia MIT, sube app.py con una ruta Flask que lee carpeta = request.args.get('carpeta') y ejecuta subprocess.Popen('ls ' + carpeta, shell=True). Activa CodeQL en Settings > Advanced Security > CodeQL analysis > Set up > Default",
+        "success": "Cuando termina el flujo CodeQL en la pestaña Actions, el apartado Code scanning de la pestaña de seguridad muestra la alerta «Uncontrolled command line» con la regla py/command-line-injection en la línea de Popen",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/github/codeql-action/blob/38112626f97ac1fd7acf3df7ebca51f4677c1b38/README.md",
+        "source_blob_sha": "d738adcab68f9e5dbceebacc3ce637e80ec006a0",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La versión v4.39.5 de codeql-action (commit 915412ff), que usa CodeQL 2.27.6 por defecto, pasó «PR Check - Multi-language repository» (ejecución 45419775563): crea bases de datos y analiza C/C++, C#, Go, Java, JavaScript, Python y Ruby en Ubuntu y macOS, también con la versión predeterminada. En github/codeql, el commit de codeql-cli/v2.27.6 (ddc0325f) solo muestra en Actions la construcción de la lista de consultas; el PR de preparación (#23184) pasó pruebas públicas de Go, Swift y Rust, y las de Python no son visibles. La consulta py/command-line-injection y su caso de prueba con Flask existen en ese commit. No se ejecutó la primera prueba.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub.",
+      "desc": "Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub.",
+      "stack": "CodeQL, Cargo.toml",
+      "repo": "https://github.com/github/codeql",
+      "install": "Seguir la instalación original: https://github.com/github/codeql/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión; Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo",
+      "avoid_if": "Necesitas analizar código privado o de clientes sin licencia de pago de GitHub, o prefieres reglas sencillas que puedas escribir sin aprender el lenguaje QL.",
+      "combines_with": [
+        "github-mcp-server",
+        "osv-scanner",
+        "defectdojo"
+      ],
+      "alt": [
+        "semgrep"
+      ]
+    },
+    {
       "id": "coraza",
       "name": "OWASP Coraza",
       "cat": 16,
@@ -68418,7 +69326,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 65,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69007,7 +69915,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 64,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69134,7 +70042,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 72,
+      "puntuacion": 70,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69616,7 +70524,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 65,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69737,7 +70645,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 49,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70085,7 +70993,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 62,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70314,7 +71222,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 52,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70544,7 +71452,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 76,
+      "puntuacion": 75,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71483,6 +72391,126 @@
       ]
     },
     {
+      "id": "gosec",
+      "name": "gosec",
+      "cat": 16,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 71,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "go",
+        "análisis estático",
+        "seguridad",
+        "sarif"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "ordinary",
+        "scope": "Instalación con go install y análisis local de un módulo Go propio, sin la función de IA.",
+        "api_note": "El análisis no necesita API. Las sugerencias de corrección admiten Atlas Cloud, Gemini, Claude, OpenAI o un servicio compatible con OpenAI, cada uno con su clave.",
+        "subscription_note": "Una suscripción de Claude Code o Codex no activa las sugerencias de gosec: requieren una clave de API propia. Un agente puede ayudarte a instalar gosec y a leer el informe.",
+        "local_note": "El análisis es local y no usa modelos. Para las sugerencias opcionales, el README admite una URL compatible con OpenAI, como Ollama o LocalAI.",
+        "cost_note": "gosec es Apache-2.0 y gratuito. Solo las sugerencias opcionales consumen la API del proveedor elegido; el README incluye promoción comercial de un proveedor patrocinador.",
+        "hardware_note": "Cualquier equipo con Go 1.26 o posterior.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/README.md",
+          "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/autofix/ai.go",
+          "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/go.mod"
+        ],
+        "mode": "software",
+        "source_blob_sha": "83eabd3c23245d36855310cfe113e5879eba66d7"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Instala Go 1.26 o posterior desde go.dev: el go.mod de v2.30.0 declara go 1.26.0, aunque el README todavía indica 1.25.",
+          "Instala la versión revisada con go install github.com/securego/gosec/v2/cmd/gosec@v2.30.0 y comprueba gosec -version. Otras vías: los binarios de la publicación v2.30.0, con sumas de verificación y firmas cosign, o la fórmula gosec de Homebrew, que mantiene Homebrew y el README no menciona.",
+          "Prepara el módulo de la primera prueba y ejecuta gosec ./... para ver G401 y G501. Cambia a crypto/sha256 con sha256.Sum256 y repite: los dos hallazgos desaparecen."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/securego/gosec/releases/tag/v2.30.0",
+        "source": "https://github.com/securego/gosec/blob/master/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "En una carpeta nueva ejecuta go mod init ejemplo y crea main.go que importe crypto/md5 y fmt e imprima md5.Sum([]byte(\"hola\")); después ejecuta gosec ./...",
+        "success": "El informe lista G401 (uso de MD5 o SHA1) y G501 (importación bloqueada de crypto/md5) con archivo y línea, y el comando termina con código de salida 1",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Generar un informe SARIF en GitHub Actions y verlo junto con las demás alertas de code scanning",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/README.md",
+        "source_blob_sha": "83eabd3c23245d36855310cfe113e5879eba66d7",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La ejecución 39929569892 del flujo CI terminó en success sobre el commit de v2.30.0 (5eb1d10): golangci-lint, el propio gosec y make test (ginkgo, fmt, vet y govulncheck) con Go 1.26.10 y 1.27.3. La ejecución 39930030604 publicó los binarios con sumas, firmas cosign y SBOM. No se ejecutaron la primera prueba ni las sugerencias con IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código.",
+      "desc": "Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código.",
+      "stack": "Go, Dockerfile, Makefile, go.mod",
+      "repo": "https://github.com/securego/gosec",
+      "install": "Seguir la instalación original: https://github.com/securego/gosec/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar; Generar un informe SARIF en GitHub Actions y verlo junto con las demás alertas de code scanning",
+      "avoid_if": "Tu código no está escrito en Go o buscas revisar dependencias en lugar de tu propio código.",
+      "combines_with": [
+        "osv-scanner",
+        "defectdojo"
+      ],
+      "alt": []
+    },
+    {
       "id": "grype",
       "name": "Grype",
       "cat": 16,
@@ -71841,7 +72869,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 3,
-      "puntuacion": 61,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72425,7 +73453,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72659,7 +73687,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72775,7 +73803,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 55,
+      "puntuacion": 54,
       "grupo": "g-cracking-de-contrasenas",
       "mcp": false,
       "prov": [],
@@ -73243,7 +74271,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73475,7 +74503,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 55,
+      "puntuacion": 56,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73593,7 +74621,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 52,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -74401,6 +75429,127 @@
       "alt": []
     },
     {
+      "id": "mobsf",
+      "name": "MobSF (Mobile Security Framework)",
+      "cat": 16,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "complejidad": 2,
+      "puntuacion": 72,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "móvil",
+        "android",
+        "ios",
+        "análisis estático",
+        "seguridad"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "Análisis estático en Docker local de una APK de práctica de OWASP. No cubre el análisis dinámico.",
+        "api_note": "No usa API de IA. VirusTotal es opcional, está desactivado por defecto y necesita clave propia; con MOBSF_VT_UPLOAD=1 subiría los archivos a ese servicio.",
+        "subscription_note": "Un agente de código puede ayudarte a lanzar el contenedor o a usar la API REST, pero MobSF no necesita ninguna suscripción de IA.",
+        "local_note": "El análisis estático corre en tu equipo sin modelos de IA. Algunas comprobaciones usan la red: resuelven por DNS los dominios hallados en la app y descargan listas de amenazas. MOBSF_DOMAIN_MALWARE_SCAN=0 desactiva esa comprobación.",
+        "cost_note": "Licencia GPL-3.0, sin pago para la ruta descrita. El soporte empresarial y los cursos del autor son opcionales y de pago.",
+        "hardware_note": "Docker en un equipo de 64 bits (imágenes amd64 y arm64). El análisis dinámico requiere además un emulador, simulador o dispositivo preparado.",
+        "checked_at": "2026-11-27",
+        "review": "documented",
+        "sources": [
+          "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/README.md",
+          "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/Dockerfile",
+          "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/mobsf/MobSF/settings.py",
+          "https://github.com/MobSF/docs/blob/545d88f9c19a97933ba36e60fdb9c6946d7aa9e2/configurations.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "3c1d725619ccce0e6a10d7665bbde849a7871359"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
+          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
+        ],
+        "steps": [
+          "Instala Docker (Docker Desktop en Windows o macOS, o Docker Engine en Linux). La descarga comprimida de la imagen v4.6.9 ronda los 750 MB. Docker Desktop tiene condiciones de licencia propias para empresas grandes.",
+          "Arranca la versión fijada solo para tu equipo: docker run -it --rm -p 127.0.0.1:8000:8000 -e DJANGO_SUPERUSER_PASSWORD=una-clave-tuya opensecurity/mobile-security-framework-mobsf:v4.6.9. Abre http://127.0.0.1:8000 e inicia sesión con el usuario mobsf y esa clave.",
+          "Descarga UnCrackable-Level1.apk de OWASP/mastg, súbela en la página principal y espera el informe. Para terminar, pulsa Ctrl+C en la terminal: con --rm se borran el contenedor y sus resultados."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.6.9",
+        "source": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/master/README.md",
+        "checked_at": "2026-11-27",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Con MobSF 4.6.9 publicado solo en 127.0.0.1, sube UnCrackable-Level1.apk, la app de práctica con licencia CC BY-SA 4.0 del repositorio OWASP/mastg (Crackmes/Android/Level_01)",
+        "success": "Al terminar el análisis estático se abre el informe del paquete owasp.mstg.uncrackable1 con su puntuación de seguridad y las secciones de permisos, manifiesto y código con sus hallazgos",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Practicar con una app de entrenamiento de OWASP y comparar el informe con las pruebas de la guía MASTG",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/README.md",
+        "source_blob_sha": "3c1d725619ccce0e6a10d7665bbde849a7871359",
+        "previous_category": [
+          16,
+          "defensa"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La ejecución 44250422514 de «MobSF tests» terminó en success sobre el commit de v4.6.9 (fa87c37): lint, migraciones y pruebas que suben y analizan los archivos de ejemplo del submódulo MobSF/test_files (APK, IPA, APPX y otros) en Ubuntu, macOS y Windows con Python 3.12 y 3.13, además de instalar el paquete. La ejecución 44358831543 publicó la imagen v4.6.9 en Docker Hub. No se ejecutaron la primera prueba ni el análisis dinámico.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo.",
+      "desc": "Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo.",
+      "stack": "Python, Dockerfile, pyproject.toml",
+      "repo": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+      "install": "Seguir la instalación original: https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/master/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código; Practicar con una app de entrenamiento de OWASP y comparar el informe con las pruebas de la guía MASTG",
+      "avoid_if": "Quieres analizar apps de terceros sin permiso o compartir el servidor en una red sin reforzar su configuración.",
+      "combines_with": [
+        "mastg",
+        "jadx",
+        "defectdojo"
+      ],
+      "alt": []
+    },
+    {
       "id": "modsecurity",
       "name": "ModSecurity",
       "cat": 16,
@@ -74646,7 +75795,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 63,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -74996,7 +76145,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 59,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -75113,7 +76262,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -75350,7 +76499,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 75,
+      "puntuacion": 76,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -75467,7 +76616,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 73,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -76738,7 +77887,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 3,
-      "puntuacion": 72,
+      "puntuacion": 73,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -78147,7 +79296,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -78608,7 +79757,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 60,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -78844,7 +79993,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 71,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -78958,7 +80107,8 @@
       ],
       "alt": [
         "ast-grep",
-        "sonarqube"
+        "sonarqube",
+        "codeql"
       ]
     },
     {
@@ -79097,7 +80247,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 56,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79211,7 +80361,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79454,7 +80604,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 42,
+      "puntuacion": 38,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79687,7 +80837,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 45,
+      "puntuacion": 46,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80167,7 +81317,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 63,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80867,7 +82017,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 58,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80984,7 +82134,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 48,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -81457,7 +82607,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 53,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -81925,7 +83075,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 55,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -93071,7 +94221,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 50,
+      "puntuacion": 49,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -93449,7 +94599,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -93705,7 +94855,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 50,
+      "puntuacion": 49,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -93954,7 +95104,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 55,
       "grupo": "g-agentes-de-investigacion-autonoma",
       "mcp": true,
       "prov": [],
@@ -94212,7 +95362,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 57,
+      "puntuacion": 56,
       "grupo": "g-paneles-para-coordinar-equipos-de-agentes",
       "mcp": false,
       "prov": [],
@@ -94336,7 +95486,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": true,
       "prov": [
@@ -94708,7 +95858,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 68,
+      "puntuacion": 67,
       "grupo": "g-paneles-para-coordinar-equipos-de-agentes",
       "mcp": false,
       "prov": [],
@@ -94966,7 +96116,7 @@
       "exec": "cloud",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 42,
+      "puntuacion": 41,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -99324,7 +100474,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 58,
+      "puntuacion": 55,
       "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
       "mcp": false,
       "prov": [],
@@ -100428,7 +101578,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 78,
+      "puntuacion": 75,
       "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
       "mcp": false,
       "prov": [],
@@ -100557,7 +101707,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 49,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -100667,7 +101817,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -101034,7 +102184,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 76,
+      "puntuacion": 74,
       "grupo": "g-pasarelas-y-routers-de-proveedores-llm",
       "mcp": false,
       "prov": [
@@ -101540,7 +102690,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 51,
+      "puntuacion": 50,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -101908,7 +103058,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 76,
+      "puntuacion": 75,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -105826,7 +106976,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 61,
       "grupo": "g-formatos-de-tabla-para-data-lakes",
       "mcp": false,
       "prov": [],
@@ -105946,7 +107096,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106063,7 +107213,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 80,
+      "puntuacion": 79,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106182,7 +107332,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 69,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106300,7 +107450,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 66,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106419,7 +107569,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 61,
       "grupo": "g-formatos-de-tabla-para-data-lakes",
       "mcp": false,
       "prov": [],
@@ -106540,7 +107690,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106658,7 +107808,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 67,
       "grupo": "g-procesamiento-de-datos-tabulares",
       "mcp": false,
       "prov": [],
@@ -106779,7 +107929,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 71,
+      "puntuacion": 70,
       "grupo": "g-apps-web-de-datos-en-python",
       "mcp": false,
       "prov": [],
@@ -106908,7 +108058,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 51,
+      "puntuacion": 50,
       "grupo": "g-formatos-de-tabla-para-data-lakes",
       "mcp": false,
       "prov": [],
@@ -107036,7 +108186,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 55,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -107155,7 +108305,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 66,
+      "puntuacion": 65,
       "grupo": "g-notebooks",
       "mcp": false,
       "prov": [],
@@ -107893,7 +109043,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -108011,7 +109161,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 71,
+      "puntuacion": 70,
       "grupo": "g-apps-web-de-datos-en-python",
       "mcp": false,
       "prov": [],
@@ -108132,7 +109282,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 76,
+      "puntuacion": 74,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -112657,7 +113807,7 @@
       "exec": "cloud",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 37,
+      "puntuacion": 36,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -113012,7 +114162,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -113386,7 +114536,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -114124,7 +115274,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 51,
+      "puntuacion": 50,
       "grupo": "g-skills-de-diseno-de-interfaces-para-agentes",
       "mcp": false,
       "prov": [],
@@ -114250,7 +115400,7 @@
       "exec": "hybrid",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 72,
+      "puntuacion": 70,
       "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
       "mcp": false,
       "prov": [],
@@ -114375,7 +115525,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 67,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -114626,7 +115776,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 55,
       "grupo": "g-skills-para-redes-sociales",
       "mcp": false,
       "prov": [],
@@ -114747,7 +115897,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 61,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -114857,7 +116007,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": "g-skills-para-redes-sociales",
       "mcp": false,
       "prov": [],
@@ -115230,7 +116380,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 37,
+      "puntuacion": 36,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -115956,7 +117106,7 @@
       "exec": "cloud",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 52,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -122940,6 +124090,7 @@
         "checked_at": "2026-11-15",
         "review": "documented",
         "sources": [
+          "https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/README.md",
           "https://github.com/microsoft/VibeVoice/blob/main/README.md"
         ],
         "source_blob_sha": "57496590b0380d521cdddeff613d776466a86381",
@@ -122968,8 +124119,8 @@
         "checked_at": "2026-11-16"
       },
       "first_try": {
-        "action": "Elige ASR o TTS y prueba una muestra corta siguiendo esa guía",
-        "success": "Puedes distinguir transcripción, generación y variante del modelo",
+        "action": "Transcribe un audio propio corto con VibeVoice-ASR o genera una frase con VibeVoice-Realtime-0.5B siguiendo su guía",
+        "success": "Obtienes el texto o el audio y sabes qué variante del modelo usaste",
         "execution": "proposed_not_executed"
       },
       "practical_examples": [
@@ -122984,8 +124135,8 @@
       ],
       "editorial_review": {
         "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/microsoft/VibeVoice/blob/main/README.md",
+        "checked_at": "2026-11-27",
+        "source": "https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/README.md",
         "source_blob_sha": "57496590b0380d521cdddeff613d776466a86381",
         "previous_source_blob_sha": "57496590b0380d521cdddeff613d776466a86381",
         "previous_category": [
@@ -122993,7 +124144,7 @@
           "tts"
         ],
         "category_verdict": "confirmed",
-        "note": "Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal",
+        "note": "Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal. El código de VibeVoice-TTS (1.5B) se retiró del repositorio en septiembre de 2025 y su prueba rápida figura como desactivada. Para generar voz queda VibeVoice-Realtime-0.5B; para transcribir, los modelos ASR.",
         "checks": [
           "identity",
           "category",

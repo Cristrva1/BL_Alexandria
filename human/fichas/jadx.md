@@ -37,6 +37,12 @@ Es Java (requiere Java 11+); se instala desde las releases, con `brew install ja
 | [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Herramienta móvil de la lista. (combinación por arquitectura)». | Orden indicado desde awesome-ai-reverse-engineering: Úsalo con un servidor MCP de Android si lo necesitas. |
 | [OWASP MASTG](mastg.md) | Combinación recíproca: OWASP MASTG lo enlaza como «jadx decompila a Java para revisar la lógica de la app». | Orden indicado desde OWASP MASTG: Abre la APK en jadx durante las pruebas estáticas. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[MobSF (Mobile Security Framework)](mobsf.md)
+
 **Notas:** Sin alternativas declaradas. Úsalo solo con software y sistemas que tengas derecho a analizar.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.5.6 (2026-07-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

@@ -20,13 +20,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `httpx` | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
 | `subfinder` | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
+| `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
 | `amass` | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `interactsh` | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
-| `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | sin grupo |
-| `dnsx` | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
-| `rustscan` | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `nmap` | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 59 | NPSL (no OSI) (OSI copyleft) | sin grupo |
-| `masscan` | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `interactsh` | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
+| `nmap` | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 60 | NPSL (no OSI) (OSI copyleft) | sin grupo |
+| `dnsx` | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
+| `rustscan` | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 59 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `masscan` | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 51 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -54,6 +54,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nuclei` [16/pruebas], `katana` [4/crawlers], `ffuf` [16/pruebas], `amass`, `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Cercano a theharvester (que además recoge correos y otros datos); subfinder se centra solo en subdominios.
 
+### Naabu (`naabu`)
+
+- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 67/100
+- **Qué es:** Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
+- **Cuándo elegirlo:** Casos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` — fuente: https://github.com/projectdiscovery/naabu/blob/dev/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio. Éxito: Obtienes puertos abiertos listos para Nmap o httpx.
+- **Combina con:** `nmap`, `amass`, `nuclei` [16/pruebas]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
 ### Amass (`amass`)
 
 - **Repo:** https://github.com/owasp-amass/amass · Apache-2.0 · nivel 2 · 63/100
@@ -67,7 +78,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### interactsh (`interactsh`)
 
-- **Repo:** https://github.com/projectdiscovery/interactsh · MIT · nivel 2 · 63/100
+- **Repo:** https://github.com/projectdiscovery/interactsh · MIT · nivel 2 · 60/100
 - **Qué es:** Plataforma OOB de ProjectDiscovery.
 - **Cuándo elegirlo:** Casos: confirmar SSRF ciega en una API de lab; validar plantillas Nuclei con OOB.
 - **Requisitos:** nivel 2: preparación media; Go, go.mod; API de IA: no.
@@ -76,20 +87,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nuclei` [16/pruebas], `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### Naabu (`naabu`)
+### Nmap (`nmap`)
 
-- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 63/100
-- **Qué es:** Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
-- **Cuándo elegirlo:** Casos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios.
-- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` — fuente: https://github.com/projectdiscovery/naabu/blob/dev/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio. Éxito: Obtienes puertos abiertos listos para Nmap o httpx.
-- **Combina con:** `nmap`, `amass`, `nuclei` [16/pruebas]
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 60/100
+- **Qué es:** Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para…
+- **Cuándo elegirlo:** Casos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.
+- **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nmap/nmap/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`. Éxito: Obtienes la lista de puertos abiertos y los servicios detectados.
+- **Combina con:** `metasploit` [16/explotacion-c2], `nuclei` [16/pruebas], `wireshark` [16/pruebas]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
 
 ### dnsx (`dnsx`)
 
-- **Repo:** https://github.com/projectdiscovery/dnsx · MIT · nivel 1 · 62/100
+- **Repo:** https://github.com/projectdiscovery/dnsx · MIT · nivel 1 · 59/100
 - **Qué es:** Herramienta DNS del ecosistema ProjectDiscovery.
 - **Cuándo elegirlo:** Casos: resolver un listado de FQDN de lab; detectar wildcards antes de escanear.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -100,7 +111,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### RustScan (`rustscan`)
 
-- **Repo:** https://github.com/bee-san/RustScan · GPL-3.0 · nivel 1 · 60/100
+- **Repo:** https://github.com/bee-san/RustScan · GPL-3.0 · nivel 1 · 59/100
 - **Qué es:** Port scanner Rust que complementa Nmap.
 - **Cuándo elegirlo:** Casos: barrido rápido de un segmento de lab; pasar abiertos a Nmap -sV.
 - **Requisitos:** nivel 1: preparación sencilla; Rust, Cargo.toml, Makefile; API de IA: no.
@@ -109,20 +120,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `nmap`, `naabu`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### Nmap (`nmap`)
-
-- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 59/100
-- **Qué es:** Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para…
-- **Cuándo elegirlo:** Casos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.
-- **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nmap/nmap/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`. Éxito: Obtienes la lista de puertos abiertos y los servicios detectados.
-- **Combina con:** `metasploit` [16/explotacion-c2], `nuclei` [16/pruebas], `wireshark` [16/pruebas]
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
-
 ### masscan (`masscan`)
 
-- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 52/100
+- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 51/100
 - **Qué es:** Port scanner asíncrono de Robert David Graham.
 - **Cuándo elegirlo:** Casos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio.
 - **Requisitos:** nivel 2: preparación media; C, Makefile; API de IA: no.

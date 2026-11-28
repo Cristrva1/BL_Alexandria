@@ -37,6 +37,12 @@ Escrito en Python; se instala con pip o gestores de paquetes y se activa con `pr
 | [Semgrep](semgrep.md) | Semgrep ofrece un hook de pre-commit para analizar los archivos modificados. | pre-commit instalado; después añade el hook de Semgrep con su configuración. |
 | [Trivy](trivy.md) | Combinación recíproca: Trivy lo enlaza como «Un hook local de pre-commit puede lanzar `trivy fs` o el escaneo de secretos antes de cada commit (combinación por arquitectura)». | Orden indicado desde Trivy: Instala Trivy; después define un hook local en .pre-commit-config.yaml. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Bandit](bandit.md)
+
 **Notas:** Los hooks se descargan de repositorios externos: fija revisiones y revisa su origen.
 
 Estado en GitHub: activo · último push 2026-11-09 · última versión publicada v4.7.0 (2026-10-13) · licencia declarada MIT (consultado el 2026-11-16).

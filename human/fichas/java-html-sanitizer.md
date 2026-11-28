@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 58/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 57/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
