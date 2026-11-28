@@ -59,7 +59,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `x64dbg`, `imhex` [16/reversing], `semgrep` [16/defensa]
 - **Riesgos y avisos:** Sin alternativas declaradas. Software en alfa: reporta los fallos con volcados. Está en alpha; Windows y Linux no tienen la misma madurez; la guía de uso viene con la release o build.
 
-### dnSpy (`dnspy`)
+### dnSpyEx (`dnspy`)
 
 - **Repo:** https://github.com/dnSpyEx/dnSpy · GPL-3.0 · nivel 3 · 51/100
 - **Qué es:** dnSpyEx, continuación no oficial del proyecto dnSpy (archivado): depurador y editor de ensamblados .NET. Licencia GPL-3.0. Es activo (~11k estrellas, v6.6.0).

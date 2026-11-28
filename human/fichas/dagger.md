@@ -4,6 +4,12 @@
 
 > Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry.
 
+## Cuándo elegir esta ficha
+
+Se perderían ejecución de pipelines con contenedores y soporte de SDKs/entornos de CI. Prefect y Kestra sirven otros flujos y no sustituyen la portabilidad del pipeline de build.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/dagger/dagger/blob/HEAD/README.md) · [Fuente 2](https://github.com/dagger/dagger/commit/221d0a272f912a78bbc52d5b5aba130ae9facddb)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 16.6k | Apache-2.0 | Go | 2026-11-16 |

@@ -4,6 +4,14 @@
 
 > Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.
 
+## Cuándo elegir esta ficha
+
+Mantener visible para búsqueda semántica y ruta Ollama/llama.cpp documentadas. Se solapa en chat y edición agéntica dentro de VS Code. En el corte, la extensión y el README ofrecen una diferencia verificable sin asumir igual flujo ni igual seguridad por defecto.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/PawanOsman/OpenCursor) · [Fuente 2](https://github.com/cline/cline) · [Fuente 3](https://github.com/Kilo-Org/kilocode)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 6.1k | MIT | TypeScript | 2026-11-14 |

@@ -4,6 +4,12 @@
 
 > Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.
 
+## Cuándo elegir esta ficha
+
+La plataforma aporta datos de proveedor y MCP, distintos de la auditoría sobre HTML de Claude SEO. Mantener referencia desde marketing. Quitarla perdería consultas SERP y estimaciones del proveedor.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/every-app/open-seo/blob/HEAD/README.md) · [Fuente 2](https://github.com/every-app/open-seo/commit/6f68494e92a695db17f4b22da25e84b9bf1e582c)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 27.7k | MIT | TypeScript | 2026-11-14 |

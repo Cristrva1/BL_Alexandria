@@ -4,6 +4,14 @@
 
 > Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.
 
+## Cuándo elegir esta ficha
+
+El último commit de la rama predeterminada es de 2022 aunque la ficha histórica registra un push en 2023. Se perdería la proyección pseudo-3D nativa en Canvas o SVG. Three.js cubre escenas 3D, con otro modelo y coste. SVG/CSS propios son una aproximación para iconos simples.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/metafizzy/zdog) · [Fuente 2](https://zzz.dog/) · [Fuente 3](https://threejs.org/docs/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 10.7k | — | JavaScript | 2026-11-14 |

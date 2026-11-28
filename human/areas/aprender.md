@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-100 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+101 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Material para empezar a construir y entender aplicaciones de IA.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-cursos)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-cursos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -34,6 +34,7 @@ Material para empezar a construir y entender aplicaciones de IA.
 | [Context-Engineering](../fichas/context-engineering.md) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | Sin clave propia de API de IA en la ruta básica |
 | [Generative AI for Beginners](../fichas/generative-ai-for-beginners.md) | Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. | API de IA opcional |
 | [Hugging Face Agents Course](../fichas/agents-course.md) | Curso oficial y gratuito de agentes de IA de Hugging Face: de los fundamentos a smolagents, LangGraph y LlamaIndex, con proyecto final certificable. | Sin clave propia de API de IA en la ruta básica |
+| [jev-fraud](../fichas/jev-fraud.md) | Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude. | API de IA opcional |
 | [Loop Engineering](../fichas/loop-engineering.md) | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. | Sin clave propia de API de IA en la ruta básica |
 | [OpenAI Cookbook](../fichas/openai-cookbook.md) | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. | API de IA opcional |
 

@@ -4,6 +4,14 @@
 
 > Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.
 
+## Cuándo elegir esta ficha
+
+Su índice enlaza frameworks, plataformas e infraestructura. Su unidad no es una skill instalable. Mover la entrada de navegación, manteniendo el permalink.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/kyrolabs/awesome-agents/blob/28f095d81e77043cd0e8b161017796397a64142f/README.md) · [Fuente 2](https://github.com/kyrolabs/awesome-agents/blob/main/README.md) · [Fuente 3](https://github.com/kyrolabs/awesome-agents)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3k | — | — | 2026-11-14 |

@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-110 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+111 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -18,12 +18,11 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Herramientas de terminal, IDE y sesiones de desarrollo.
 
-[Explorar 22 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-codigo)
+[Explorar 21 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-codigo)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Aider](../fichas/aider.md) | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. | API de IA opcional |
-| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [Antigravity CLI](../fichas/antigravity-cli.md) | Agente de programación de Google para la terminal (agy), con subagentes, MCP y skills; se distribuye en binarios, sin código fuente. | Sin clave propia de API de IA en la ruta básica |
 | [Claude Code](../fichas/claude-code.md) | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | API de IA opcional |
 | [Cline](../fichas/cline.md) | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. | API de IA opcional |
@@ -84,7 +83,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Infraestructura, servicios y herramientas de operación.
 
-[Explorar 32 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-infra)
+[Explorar 31 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-infra)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -102,7 +101,6 @@ Infraestructura, servicios y herramientas de operación.
 | [free-for-dev](../fichas/free-for-dev.md) | Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. | Sin clave propia de API de IA en la ruta básica |
 | [FreeDomain](../fichas/freedomain.md) | Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. | Sin clave propia de API de IA en la ruta básica |
 | [frp](../fichas/frp.md) | Proxy inverso rápido para exponer servidores locales detrás de NAT o cortafuegos a internet, con TCP, UDP, HTTP, HTTPS y modo P2P. | Sin clave propia de API de IA en la ruta básica |
-| [Gemini Computer Use (preview)](../fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | API de IA necesaria |
 | [Headscale](../fichas/headscale.md) | Implementación abierta y autoalojada del servidor de control de Tailscale para crear tu propia red privada WireGuard con los clientes oficiales. | Sin clave propia de API de IA en la ruta básica |
 | [Kiri](../fichas/kiri.md) | Ejecuta contenedores de desarrollo y permite verlos desde una aplicación de escritorio que crea su propio contexto de Docker. | Sin clave propia de API de IA en la ruta básica |
 | [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
@@ -168,5 +166,26 @@ Reducir contexto innecesario y organizar el acceso a modelos.
 | [TOON](../fichas/toon-format.md) | Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos. | Sin clave propia de API de IA en la ruta básica |
 | [vLLM](../fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica |
 | [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica |
+
+### Desarrollo móvil
+
+Aprender y aplicar flujos específicos de desarrollo móvil.
+
+[Explorar 1 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-movil)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Android Skills](../fichas/android-skills.md) | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
+
+### Integración continua y entrega
+
+Preparar pipelines de CI y controles antes de publicar.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-entrega)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Dagger](../fichas/dagger.md) | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry. | Sin clave propia de API de IA en la ruta básica |
+| [Front-End-Checklist](../fichas/front-end-checklist.md) | Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. | API de IA opcional |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

@@ -56,21 +56,35 @@
     if(goal.id==='video'&&/grabar (?:mi |la )?pantalla|capturar pantalla/.test(task))return /grabar|grabacion|captura/.test(purpose);
     return true;
   }
+  function webProject(catalog, profile) {
+    const rules=catalog.web_project_rules;
+    const text=clean(profile.project);
+    if(!rules||!text||new RegExp(rules.exclusions).test(text))return null;
+    const request=text.replace(new RegExp(rules.negations,'g'),'');
+    for(const id of ['ia','cms','panel']){
+      const route=catalog.web_projects.find(item=>item.id===id);
+      if(!route||!new RegExp(route.match).test(request))continue;
+      const variant=Object.values(route.variants||{}).find(item=>new RegExp(item.match).test(request));
+      return {...route,...variant};
+    }
+    return new RegExp(rules.context).test(text)?catalog.web_projects.find(item=>item.id==='informativa'):null;
+  }
   function recommend(catalog,input) {
     const profile=normalize(input);
     const editorialGroups=new Map((catalog.guided_groups||[]).map(group=>[group.id,group]));
     const selectedGroup=editorialGroups.get(profile.group);
     const area=(catalog.discovery.areas||[]).find(item=>item.topics.some(topic=>topic.id===profile.topic));
     const topic=area?.topics.find(item=>item.id===profile.topic);
+    const webIntent=!profile.goal&&!topic&&!selectedGroup&&catalog.web_project_rules&&new RegExp(catalog.web_project_rules.context).test(clean(profile.project))&&webProject(catalog,profile);
     const intent=selectedGroup
       ? {kind:'group',goal:{id:selectedGroup.id,title:selectedGroup.title,starters:[],guided:selectedGroup.members},suggestions:[]}
       : topic
-      ? {kind:'topic',goal:{id:topic.id,title:topic.title,starters:[],guided:topic.repo_ids},area:area.id,suggestions:[]}
-      : inferGoal(profile.project,catalog.discovery.goals,profile.goal);
+      ? {kind:'topic',goal:{id:topic.id,title:topic.title,starters:topic.guided_starters||[],guided:topic.repo_ids},area:area.id,suggestions:[]}
+      : webIntent ? {...inferGoal(profile.project,catalog.discovery.goals,'web'),kind:'detected'} : inferGoal(profile.project,catalog.discovery.goals,profile.goal);
     if(!intent.goal)return {profile,intent,picks:[],excluded:{},notices:[]};
     const goal=intent.goal,eligible=new Set(goal.guided||goal.starters),excluded={access:0,device:0,preparation:0,function:0};
     const wantsLocal=profile.mode==='local',terms=tokens(profile.project),notices=[];
-    if(selectedGroup?.reference_only){
+    if(selectedGroup?.reference_only||topic?.reference_only){
       return {profile,intent,picks:[],excluded,notices,referenceOnly:true};
     }
     if(!selectedGroup&&!topic){
@@ -85,6 +99,7 @@
     const audienceScores={beginner:{ready_app:55,agent:25,reading:30,setup:0,developer:-30},intermediate:{ready_app:25,agent:25,reading:10,setup:20,developer:5},developer:{ready_app:5,agent:20,reading:5,setup:25,developer:45},unknown:{ready_app:30,agent:20,reading:15,setup:5,developer:0}};
     const ranked=catalog.repos.filter(item=>eligible.has(item.id)&&!item.status).flatMap(item=>{
       const editorial=item.guided_editorial;
+      if(item.audit_guidance?.reference_only){excluded.function++;return [];}
       if(editorial&&(editorialGroups.get(editorial.group)?.reference_only||!['principal','alternative'].includes(editorial.role))){
         excluded.function++;return [];
       }
@@ -128,6 +143,7 @@
       if(wantsLocal&&!useBrowser&&cpuRoute&&requirements.note)warnings.push(requirements.note);
       if(useBrowser)warnings.push('La web alojada puede tener cuenta, límites o plan propios. No hereda automáticamente la licencia o el precio del software local.');
       if(['required','unconfirmed','depends'].includes(a.api))warnings.push('Revisa la cuenta y el proveedor de la aplicación: tu suscripción del agente no los incluye automáticamente.');
+      if(topic?.guided_starters?.includes(item.id))reasons.push("La revisión de este tema lo propone como punto de partida.");
       if(!reasons.length)reasons.push(`El catálogo lo incluye en «${goal.title}».`);
       return [{item,score,reasons:reasons.slice(0,3),warnings,matched,useBrowser,audienceFit,osFit,taskFit:matchedTerms.length}];
     }).sort((a,b)=>b.score-a.score||a.item.name.localeCompare(b.item.name,'es'));
@@ -183,6 +199,6 @@
     else setup='Elige una sola ruta de ejecución de la ficha. Configura su cuenta, modelo o proveedor según la guía y revisa los posibles costes antes de continuar.';
     return [first,{text:setup},{text:firstTry(pick).action||'Ejecuta una prueba mínima de la documentación original.'}];
   }
-  const api={normalize,inferGoal,recommend,startSteps,firstTry,matchedClients,labels,clientNames};
+  const api={normalize,inferGoal,recommend,startSteps,firstTry,matchedClients,webProject,labels,clientNames};
   if(typeof module==='object'&&module.exports)module.exports=api;else root.AlexandriaGuide=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

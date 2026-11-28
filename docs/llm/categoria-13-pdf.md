@@ -1,6 +1,6 @@
 # Alexandría para agentes · Herramientas PDF
 
-Categoría 13 «PDF, OCR y procesamiento de documentos» › subcategoría `pdf`. 5 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 13 «PDF, OCR y procesamiento de documentos» › subcategoría `pdf`. 4 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=13&sub=pdf · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -22,7 +22,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `pdfmathtranslate` | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `docuseal` | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `pdfcraft` | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 54 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `pdfding` | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 46 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -78,27 +77,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `coolify` [22/infraestructura], `docuseal`, `paperless-ngx` [13/gestion]
 - **Alternativas:** `stirling-pdf`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativa (elige una): stirling-pdf. Se retiró markitdown por falta de relación. La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web.
-
-### PdfDing (`pdfding`)
-
-- **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · 46/100
-- **Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0), creado por mrmn y financiado por el NGI0 Commons Fund de NLnet. Su repositorio canónico es Codeberg (codeberg.org/mrmn/PdfDing), donde sigue activo con la v1.15.0 del 1 de noviembre de…
-- **Cuándo elegirlo:** Casos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
-- **Requisitos:** nivel 1: preparación sencilla; Docker o entorno de la guía; volumen para documentos; cuenta de prueba; hardware prerequisites; API de IA: no; Docker o entorno de la guía; volumen para documentos; cuenta de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://docs.pdfding.com/getting_started/docker/
-
-  ```bash
-  docker run --name pdfding \
-      -p 8000:8000 \
-      -v sqlite_data:/home/nonroot/pdfding/db -v media:/home/nonroot/pdfding/media \
-      -e HOST_NAME=127.0.0.1 -e SECRET_KEY=some_secret \
-      -e CSRF_COOKIE_SECURE=FALSE -e SESSION_COOKIE_SECURE=FALSE \
-      -d \
-      mrmn/pdfding:latest
-  ```
-- **Primera prueba propuesta (no ejecutada):** Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión Éxito: Puedes encontrar el documento y su progreso guardado
-- **Combina con:** `ocrmypdf` [13/ocr], `paperless-ngx` [13/gestion], `coolify` [22/infraestructura]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las…. El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia. Sin OCR ni IA integrados.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

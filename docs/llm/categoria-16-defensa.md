@@ -1,6 +1,6 @@
 # Alexandría para agentes · Protección y verificación de software
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `defensa`. 12 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `defensa`. 13 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=defensa · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -24,6 +24,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `bla` | Herramientas para aplicar protecciones y comprobar superficies de software… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
 | `dependency-track` | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `cdxgen` | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
+| `noir` | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
 | `dependency-check` | Análisis de composición de software (SCA) de OWASP: detecta dependencias con… | 1 Básico | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `dep-scan` | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
 | `java-html-sanitizer` | Biblioteca Java de OWASP que limpia HTML de terceros con políticas… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -104,6 +105,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala con npm como indica el README y ejecuta cdxgen en el directorio de un proyecto propio. Éxito: Obtienes un archivo bom.json en formato CycloneDX.
 - **Combina con:** `dependency-track`
 - **Alternativas:** `syft`
+
+### OWASP Noir (`noir`)
+
+- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 61/100
+- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
+- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
+- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
+- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
 
 ### OWASP Dependency-Check (`dependency-check`)
 

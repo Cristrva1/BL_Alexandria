@@ -4,6 +4,14 @@
 
 > Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.
 
+## Cuándo elegir esta ficha
+
+Separar sustitución en webcam de la edición offline con FaceFusion y de la animación con LivePortrait. Mantener enlace de consulta si se necesita flujo en vivo autorizado y documentar qué funciones requieren la edición de pago.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/hacksider/Deep-Live-Cam/blob/08896a51c9a6198f50dc9f7508acf39fc460c8f1/README.md) · [Fuente 2](https://github.com/hacksider/Deep-Live-Cam/commit/08896a51c9a6198f50dc9f7508acf39fc460c8f1) · [Fuente 3](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 98.1k | AGPL-3.0 | Python | 2026-06-23 |

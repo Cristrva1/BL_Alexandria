@@ -557,7 +557,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta el ejemplo introductorio con pocos datos históricos y sin credenciales de trading.
 **Qué comprobar:** Obtienes un resultado reproducible para el conjunto de datos utilizado.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `nautilus-trader`
 
 ## `py-sdk`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=bots,library,python

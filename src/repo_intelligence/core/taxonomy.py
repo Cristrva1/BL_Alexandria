@@ -56,6 +56,11 @@ def build_areas(compact: dict, repos: list[dict]) -> list[dict]:
             selected.difference_update(topic.get("exclude", []))
             if not selected:
                 raise ValueError(f"Empty practical topic: {tid}")
+            starters = topic.get("guided_starters", [])
+            if len(starters) > 3 or len(starters) != len(set(starters)) or set(starters) - selected:
+                raise ValueError(f"{tid}: invalid guided starters {starters}")
+            if topic.get("reference_only") and starters:
+                raise ValueError(f"{tid}: a reference topic cannot have guided starters")
             topic["repo_ids"] = sorted(selected)
             topic["count"] = len(selected)
             members.update(selected)

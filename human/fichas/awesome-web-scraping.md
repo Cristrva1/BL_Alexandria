@@ -4,6 +4,14 @@
 
 > Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos.
 
+## Cuándo elegir esta ficha
+
+El README agrega herramientas y material. Marcarlo como lectura de herramientas para extracción y mantener permalink.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/lorien/awesome-web-scraping/blob/0ea172fdb8876ed66f88da06974da5be6c6c4e42/README.md) · [Fuente 2](https://github.com/lorien/awesome-web-scraping/blob/master/README.md) · [Fuente 3](https://github.com/lorien/awesome-web-scraping)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 8.2k | CC-BY-4.0 | JavaScript | 2026-11-14 |

@@ -4,7 +4,7 @@
 
 Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
 
-121 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
+121 repos únicos · 14 subcategorías. [Ver en el explorador](../../docs/index.html#/area/audiovisual).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-edicion)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-edicion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -33,7 +33,6 @@ Montar material existente, capturar pantalla y preparar subtítulos.
 | [OpenCut](../fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | Sin clave propia de API de IA en la ruta básica |
 | [OpenRV](../fichas/openrv.md) | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | Sin clave propia de API de IA en la ruta básica |
 | [pysubs2](../fichas/pysubs2.md) | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA. | Sin clave propia de API de IA en la ruta básica |
-| [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | API de IA opcional |
 | [Shotcut](../fichas/shotcut.md) | Editor de vídeo libre y multiplataforma basado en Qt y MLT, con línea de tiempo, filtros, amplio soporte de formatos y subtítulos por voz. | Sin clave propia de API de IA en la ruta básica |
 | [video-use](../fichas/video-use.md) | Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. | API de IA necesaria |
 | [VideoLingo](../fichas/videolingo.md) | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa. | Depende de la ruta elegida |
@@ -42,11 +41,10 @@ Montar material existente, capturar pantalla y preparar subtítulos.
 
 Crear clips y organizar flujos de video generativo.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-ia)
+[Explorar 7 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-video-ia)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | API de IA necesaria |
 | [HunyuanVideo](../fichas/hunyuanvideo.md) | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | Sin clave propia de API de IA en la ruta básica |
 | [HunyuanVideo 1.5](../fichas/hunyuanvideo-1-5.md) | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o imagen en 480p y 720p con GPU de 14 GB o más. | API de IA opcional |
 | [LTX-2](../fichas/ltx-2.md) | Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera vídeo con audio sincronizado. | Sin clave propia de API de IA en la ruta básica |
@@ -94,7 +92,7 @@ Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
 
 Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-voz)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-voz)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -107,7 +105,6 @@ Convertir texto en voz y preparar locuciones en los idiomas compatibles.
 | [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Sin clave propia de API de IA en la ruta básica |
 | [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | Sin clave propia de API de IA en la ruta básica |
 | [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Sin clave propia de API de IA en la ruta básica |
-| [RVC WebUI](../fichas/rvc.md) | Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. | Sin clave propia de API de IA en la ruta básica |
 | [VibeVoice](../fichas/vibevoice.md) | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. | Sin clave propia de API de IA en la ruta básica |
 | [VoiceStudio](../fichas/omnivoice-studio.md) | App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. | Sin clave propia de API de IA en la ruta básica |
 | [VoxCPM](../fichas/voxcpm.md) | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. | Sin clave propia de API de IA en la ruta básica |
@@ -187,7 +184,7 @@ Generar imágenes, ampliar, recortar o restaurar fotografías.
 
 Animación de retratos y herramientas para personajes.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-personajes)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-personajes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -195,7 +192,6 @@ Animación de retratos y herramientas para personajes.
 | [Deep-Live-Cam](../fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica |
 | [DeepFace](../fichas/deepface.md) | Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face. | Sin clave propia de API de IA en la ruta básica |
 | [FaceFusion](../fichas/facefusion.md) | Plataforma para intercambio y mejora de rostros en imágenes y video. | Sin clave propia de API de IA en la ruta básica |
-| [genjutsu](../fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin clave propia de API de IA en la ruta básica |
 | [InsightFace](../fichas/insightface.md) | Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. | Sin clave propia de API de IA en la ruta básica |
 | [LivePortrait](../fichas/liveportrait.md) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | Sin clave propia de API de IA en la ruta básica |
 
@@ -237,5 +233,39 @@ Simular cuerpos,colisiones y sistemas físicos.
 | [react-three-rapier](../fichas/react-three-rapier.md) | Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | Sin clave propia de API de IA en la ruta básica |
 | [Robotics for Antigravity](../fichas/robotics-antigravity-plugin.md) | Añade a Antigravity instrucciones para crear, probar y observar escenas de robótica con flujos como la simulación en MuJoCo. | Depende de la ruta elegida |
 | [warp](../fichas/warp.md) | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. | Sin clave propia de API de IA en la ruta básica |
+
+### Preproducción y reencuadre
+
+Analizar una referencia autorizada, planear planos y adaptar material propio a otro formato.
+
+[Explorar 3 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-preproduccion)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | API de IA necesaria |
+| [FFmpeg](../fichas/ffmpeg.md) | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | Sin clave propia de API de IA en la ruta básica |
+| [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | API de IA opcional |
+
+### Conversión de voz
+
+Transformar una voz de entrada con material propio o autorizado.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-conversion-voz)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [GPT-SoVITS](../fichas/gpt-sovits.md) | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. | Sin clave propia de API de IA en la ruta básica |
+| [RVC WebUI](../fichas/rvc.md) | Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. | Sin clave propia de API de IA en la ruta básica |
+
+### Animación 2D cuadro a cuadro
+
+Dibujar y montar una secuencia 2D editable.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=audiovisual&topic=av-animacion-2d)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [blender](../fichas/blender.md) | Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. | Sin clave propia de API de IA en la ruta básica |
+| [pencil](../fichas/pencil.md) | Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

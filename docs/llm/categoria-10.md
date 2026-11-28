@@ -1,6 +1,6 @@
 # Alexandría para agentes · Dashboards, analítica y mapas
 
-Categoría 10 completa (31 repos, 6 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 10 completa (33 repos, 6 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=10 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -34,6 +34,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `chart-js` | graficos | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
 | `uplot` | graficos | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
 | `awesome-dataviz` | recursos | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 58 | CC-BY-4.0 (OSI permisiva) | sin grupo |
+| `awesome-bigdata` | recursos | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 46 | MIT (OSI permisiva) | sin grupo |
 | `data-analyst-roadmap` | recursos | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 38 | MIT (OSI permisiva) | sin grupo |
 | `gods-eye-view` | osint | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 68 | MIT (solo código) (OSI permisiva) | recomendado |
 | `sherlock` | osint | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios… | 1 Básico | 67 | MIT (OSI permisiva) | recomendado |
@@ -49,6 +50,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `qgis` | geoespacial | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `webodm` | geoespacial | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `odm` | geoespacial | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `globalbuildingatlas` | geoespacial | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 32 | MIT + Commons Clause (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -202,7 +204,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; JavaScript; HTML/SVG o Canvas; datos de prueba; hardware prerequisites; API de IA: no; JavaScript; HTML/SVG o Canvas; datos de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `yarn add d3` — fuente: https://github.com/d3/d3/blob/main/docs/getting-started.md
 - **Primera prueba propuesta (no ejecutada):** Construye un gráfico de barras de tres categorías con escala y ejes explícitos Éxito: Cada barra y etiqueta corresponde a su valor
-- **Combina con:** `recharts`, `awesome-dataviz` [10/recursos], `marimo` [25/datos]
+- **Combina con:** `recharts`, `awesome-dataviz` [10/recursos], `marimo` [25/apps]
 - **Alternativas:** `echarts`, `recharts`, `chart-js`
 - **Riesgos y avisos:** Alternativas (elige una): echarts. Curva de aprendizaje alta. Ofrece piezas de bajo nivel; exige más programación que una biblioteca de gráficos ya montados.
 
@@ -254,8 +256,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tipo de gráfico y framework objetivo; hardware prerequisites; API de IA: no; Navegador; tipo de gráfico y framework objetivo.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/hal9ai/awesome-dataviz/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Selecciona dos bibliotecas de un mismo tipo y compara licencia, accesibilidad y formato de datos Éxito: Tienes candidatos con documentación original y requisitos identificados
-- **Combina con:** `echarts` [10/graficos], `d3` [10/graficos], `awesome-bigdata` [25/datos]
+- **Combina con:** `echarts` [10/graficos], `d3` [10/graficos], `awesome-bigdata`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. El directorio reúne opciones; no se instala completo ni verifica automáticamente la calidad de cada enlace.
+
+### awesome-bigdata (`awesome-bigdata`)
+
+- **Repo:** https://github.com/oxnr/awesome-bigdata · MIT · nivel 1 · 46/100
+- **Qué es:** Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.
+- **Cuándo elegirlo:** Casos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; problema de datos definido; hardware prerequisites; API de IA: no; Navegador; problema de datos definido.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/oxnr/awesome-bigdata/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una Éxito: Puedes elegir candidatos complementarios
+- **Combina con:** `awesome-dataviz`, `duckdb` [25/datos], `hudi` [25/datos]
+- **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces.
 
 ### data-analyst-roadmap (`data-analyst-roadmap`)
 
@@ -265,7 +278,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tiempo de estudio; una tabla pequeña de práctica; hardware prerequisites; API de IA: no; Navegador; tiempo de estudio; una tabla pequeña de práctica.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Elige SQL o una hoja de cálculo y resuelve una pregunta con una tabla ficticia Éxito: Puedes explicar dato de entrada, cálculo y resultado
-- **Combina con:** `duckdb` [25/datos], `marimo` [25/datos], `metabase` [10/bi]
+- **Combina con:** `duckdb` [25/datos], `marimo` [25/apps], `metabase` [10/bi]
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso introductorio, sin mantenimiento reciente. Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero.
 
 ### gods-eye-view (`gods-eye-view`)
@@ -435,7 +448,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
 - **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps], `leaflet`, `qgis`
 - **Alternativas:** `odm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
 
@@ -452,9 +465,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --project-path /datasets project
   ```
 - **Primera prueba propuesta (no ejecutada):** Procesa un lote pequeño de imágenes de prueba y abre la ortofoto y nube de puntos Éxito: Puedes inspeccionar alineación, cobertura y errores visibles
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos]
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps]
 - **Alternativas:** `webodm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm). El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas.
+
+### GlobalBuildingAtlas (`globalbuildingatlas`)
+
+- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 32/100
+- **Qué es:** GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra…
+- **Cuándo elegirlo:** Casos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa; hardware prerequisites; API de IA: no; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa Éxito: Puedes identificar formato, licencia y escala del dato
+- **Combina con:** `three.js` [26/animacion], `duckdb` [25/datos], `3dviz-pro-max` [27/skills]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

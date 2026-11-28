@@ -4,6 +4,14 @@
 
 > Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes.
 
+## Cuándo elegir esta ficha
+
+La colección comunitaria abarca dominios heterogéneos y el nombre del repo puede confundirse con autoría de Anthropic. El flujo inicial más delimitado es inspeccionar archivos y seguir un método de seguridad de código.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) · [Fuente 2](https://github.com/mukul975/Anthropic-Cybersecurity-Skills/commit/54a798831d2266a3ca61ce68a7acb80b81160d57) · [Fuente 3](https://docs.nvidia.com/skills/scanning-agent-skills)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 36.2k | Apache-2.0 | Python | 2026-11-14 |

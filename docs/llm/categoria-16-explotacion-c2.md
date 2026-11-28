@@ -21,8 +21,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `metasploit` | Framework de referencia para pruebas de penetración: módulos de exploits… | 3 Avanzado | 73 | BSD-3-Clause (OSI copyleft) | sin grupo |
 | `peass-ng` | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de… | 3 Avanzado | 72 | GPL-2.0-or-later (con aclaraciones) (OSI copyleft) | sin grupo |
 | `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 68 | GPL-3.0 (OSI copyleft) | recomendado |
-| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 64 | Apache-2.0 (OSI permisiva) | recomendado |
-| `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
+| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `empire` | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma… | 4 Experto | 60 | BSD-3-Clause (OSI permisiva) | alternativa |
 | `evilginx2` | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 52 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `mythic` | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía… | 4 Experto | 48 | BSD-3-Clause (OSI permisiva) | alternativa |
@@ -69,26 +69,24 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` — fuente: https://github.com/apache/caldera/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Arranca con `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` y abre la UI en el puerto 8888. Éxito: Accedes a la consola para crear una operación de lab.
 - **Combina con:** `atomic-red-team`, `wazuh` [16/deteccion], `metasploit`
-- **Alternativas:** `atomic-red-team`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Atomic Red Team (`atomic-red-team`)
 
-- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 62/100 · alternativa en «Emulación de adversarios»
+- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 62/100
 - **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
 - **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
 - **Combina con:** `wazuh` [16/deteccion], `sigma` [16/deteccion], `caldera`, `evilginx2`
-- **Alternativas:** `caldera`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Empire (`empire`)

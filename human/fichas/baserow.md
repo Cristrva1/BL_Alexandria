@@ -4,6 +4,12 @@
 
 > Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first.
 
+## Cuándo elegir esta ficha
+
+El README aclara que la migración fue de GitLab a GitHub. Conservar GitHub y rotular enlaces históricos GitLab como tales. Se perderían API, tablas y constructor si se retirara la ficha.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/baserow/baserow/blob/HEAD/README.md) · [Fuente 2](https://gitlab.com/baserow/baserow) · [Fuente 3](https://github.com/baserow/baserow/commit/aed826c2bd20a13127b1f47a1b42a05a874e6434)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 6.3k | MIT | Python | 2026-11-16 |

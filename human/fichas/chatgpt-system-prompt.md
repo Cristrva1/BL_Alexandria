@@ -4,6 +4,14 @@
 
 > Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts.
 
+## Cuándo elegir esta ficha
+
+Dejar como consulta histórica con autoría atribuida. Se perdería el enfoque en GPTs concretos. La guía tiene técnicas reproducibles y el segundo archivo aporta amplitud entre herramientas, con procedencia también por verificar.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/LouisShark/chatgpt_system_prompt/9f6274a26eccebcd279ba2ae3f03bc2658632a31/README.md) · [Fuente 2](https://api.github.com/repos/LouisShark/chatgpt_system_prompt) · [Fuente 3](https://github.com/LouisShark/chatgpt_system_prompt/commit/9f6274a26eccebcd279ba2ae3f03bc2658632a31)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 10.9k | MIT | HTML | 2026-11-14 |

@@ -4,6 +4,14 @@
 
 > Bot experimental de Python para estudiar estrategias y automatización con la API de Binance.
 
+## Cuándo elegir esta ficha
+
+Conservar la muestra de implementación Binance en Python y balances como lectura. Freqtrade cubre aprendizaje por estrategia y dry-run; CCXT, integración genérica. El último commit disponible data de enero y la documentación del ejemplo se centra en una cuenta. Ello no acredita abandono.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/yasinkuyu/binance-trader/blob/HEAD/README.md) · [Fuente 2](https://github.com/yasinkuyu/binance-trader/commit/a2997e717501b43ee3cfb6399b1d62f4dabbf415)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 2.8k | — | Python | 2026-11-14 |

@@ -4,7 +4,7 @@
 
 Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
 
-131 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
+131 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/agentes).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Bases para construir agentes y coordinar sus tareas.
 
-[Explorar 32 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-frameworks)
+[Explorar 28 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-frameworks)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -27,9 +27,7 @@ Bases para construir agentes y coordinar sus tareas.
 | [AgentScope](../fichas/agentscope.md) | Framework de agentes en Python de origen Alibaba: agentes ReAct, multiagente, herramientas MCP, sandbox, voz en tiempo real y servicio desplegable. | API de IA opcional |
 | [Agno](../fichas/agno.md) | Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. | Depende de la ruta elegida |
 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. | Depende de la ruta elegida |
-| [awesome-LangGraph](../fichas/awesome-langgraph.md) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | Sin clave propia de API de IA en la ruta básica |
 | [CAMEL](../fichas/camel.md) | Framework multiagente de investigación para generar datos sintéticos, automatizar tareas y simular sociedades de agentes con muchos proveedores. | API de IA opcional |
-| [ChatDev](../fichas/chatdev.md) | Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software. | API de IA necesaria |
 | [claude-agent-sdk-python](../fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | API de IA necesaria |
 | [crewAI](../fichas/crewai.md) | Framework para orquestar "crews" de agentes con roles y tareas. | Depende de la ruta elegida |
 | [Deep Agents](../fichas/deepagents.md) | Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. | Depende de la ruta elegida |
@@ -37,7 +35,6 @@ Bases para construir agentes y coordinar sus tareas.
 | [Eve](../fichas/eve.md) | Ayuda a construir agentes con estado usando archivos de configuración, instrucciones y herramientas que puedes versionar con Git. | API de IA necesaria |
 | [Haystack](../fichas/haystack.md) | Framework de deepset para pipelines de RAG y agentes listos para producción. | Depende de la ruta elegida |
 | [hermes-agent-self-evolution](../fichas/hermes-agent-self-evolution.md) | Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA. | API de IA necesaria |
-| [jev-fraud](../fichas/jev-fraud.md) | Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude. | API de IA opcional |
 | [langchain](../fichas/langchain.md) | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). | Depende de la ruta elegida |
 | [langchain4j](../fichas/langchain4j.md) | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM. | Depende de la ruta elegida |
 | [LangGraph](../fichas/langgraph.md) | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. | API de IA opcional |
@@ -50,7 +47,6 @@ Bases para construir agentes y coordinar sus tareas.
 | [MiroFish](../fichas/mirofish.md) | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. | API de IA necesaria |
 | [OpenAI Agents SDK](../fichas/openai-agents-python.md) | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. | Depende de la ruta elegida |
 | [openevolve](../fichas/openevolve.md) | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. | Depende de la ruta elegida |
-| [OpenManus](../fichas/openmanus.md) | Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP. | API de IA necesaria |
 | [Pydantic AI](../fichas/pydantic-ai.md) | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. | Depende de la ruta elegida |
 | [Semantic Router](../fichas/semantic-router.md) | Clasifica consultas por intención y decide a qué función enviarlas usando similitud entre ejemplos y texto de entrada. | API de IA opcional |
 | [smolagents](../fichas/smolagents.md) | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. | Depende de la ruta elegida |
@@ -59,11 +55,12 @@ Bases para construir agentes y coordinar sus tareas.
 
 Plataformas que permiten diseñar flujos de IA con una interfaz.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-visuales)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-visuales)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [AutoGPT](../fichas/autogpt.md) | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. | Depende de la ruta elegida |
+| [ChatDev](../fichas/chatdev.md) | Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software. | API de IA necesaria |
 | [dify](../fichas/dify.md) | Plataforma integral para construir apps de IA con backend y UI listos. | Depende de la ruta elegida |
 | [langflow](../fichas/langflow.md) | Constructor visual de flujos LLM/agentes construido sobre LangChain. | Depende de la ruta elegida |
 | [Sim](../fichas/sim.md) | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. | Depende de la ruta elegida |
@@ -72,7 +69,7 @@ Plataformas que permiten diseñar flujos de IA con una interfaz.
 
 Asistentes listos o adaptables para tareas de varias etapas.
 
-[Explorar 12 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-asistentes)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-asistentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -85,6 +82,7 @@ Asistentes listos o adaptables para tareas de varias etapas.
 | [OpenBot](../fichas/openbot.md) | Espacio autoalojable de CopilotKit para compañeros de IA con navegador propio, permisos, aprobaciones y auditoría, conectables por AG-UI. | Depende de la ruta elegida |
 | [OpenClaw](../fichas/openclaw.md) | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. | API de IA opcional |
 | [OpenJarvis](../fichas/openjarvis.md) | Crea un asistente personal con chat y flujos que pueden usar modelos locales, con conectores opcionales para tus servicios. | API de IA opcional |
+| [OpenManus](../fichas/openmanus.md) | Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP. | API de IA necesaria |
 | [paperclip](../fichas/paperclip.md) | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. | API de IA opcional |
 | [ruflo](../fichas/ruflo.md) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | API de IA opcional |
 | [social-media-agent](../fichas/social-media-agent.md) | Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. | API de IA necesaria |
@@ -93,13 +91,12 @@ Asistentes listos o adaptables para tareas de varias etapas.
 
 Agentes y herramientas de búsqueda para investigar una pregunta.
 
-[Explorar 15 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-investigar)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-investigar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Agent-Reach](../fichas/agent-reach.md) | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. | API de IA opcional |
 | [ArchiveBox](../fichas/archivebox.md) | Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios. | Sin clave propia de API de IA en la ruta básica |
-| [autoresearch](../fichas/autoresearch.md) | Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA. | Sin clave propia de API de IA en la ruta básica |
 | [changedetection.io](../fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | API de IA opcional |
 | [deer-flow](../fichas/deer-flow.md) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | Depende de la ruta elegida |
 | [FreshRSS](../fichas/freshrss.md) | Agregador de noticias RSS autoalojado, ligero y multiusuario, con API para apps móviles, WebSub, extracción por XPath y extensiones. | Sin clave propia de API de IA en la ruta básica |
@@ -117,11 +114,10 @@ Agentes y herramientas de búsqueda para investigar una pregunta.
 
 Convertir páginas y redes sociales en contenido o datos.
 
-[Explorar 18 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-extraccion)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-extraccion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Sin clave propia de API de IA en la ruta básica |
 | [Colly](../fichas/colly.md) | Framework de scraping y crawling para Go: callbacks por selector, límites por dominio, caché, cookies y ejecución paralela. | Sin clave propia de API de IA en la ruta básica |
 | [crawl4ai](../fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | API de IA opcional |
 | [crawlee](../fichas/crawlee.md) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | Sin clave propia de API de IA en la ruta básica |
@@ -144,7 +140,7 @@ Convertir páginas y redes sociales en contenido o datos.
 
 Abrir páginas e interactuar con interfaces reales.
 
-[Explorar 20 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-navegacion)
+[Explorar 21 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-navegacion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -155,6 +151,7 @@ Abrir páginas e interactuar con interfaces reales.
 | [Camoufox](../fichas/camoufox.md) | Navegador basado en Firefox para scraping y agentes que genera una identidad de dispositivo coherente en cada arranque y se controla con Playwright. | Sin clave propia de API de IA en la ruta básica |
 | [Cypress](../fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica |
 | [FlareSolverr](../fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica |
+| [Gemini Computer Use (preview)](../fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | API de IA necesaria |
 | [Kitesurf](../fichas/kitesurf.md) | Explora un motor experimental para renderizar páginas en Workers y obtener capturas desde código o herramientas compatibles. | Sin clave propia de API de IA en la ruta básica |
 | [Ladybird](../fichas/ladybird.md) | Navegador web realmente independiente con motor propio (LibWeb y LibJS) basado en estándares, sin código de Chromium, WebKit ni Gecko; aún en pre-alfa. | Sin clave propia de API de IA en la ruta básica |
 | [Lightpanda](../fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional |
@@ -173,7 +170,7 @@ Abrir páginas e interactuar con interfaces reales.
 
 Servidores, clientes y SDKs para dar herramientas a un agente.
 
-[Explorar 30 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
+[Explorar 29 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -202,10 +199,45 @@ Servidores, clientes y SDKs para dar herramientas a un agente.
 | [mcp-use](../fichas/mcp-use.md) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | API de IA opcional |
 | [Neo4j MCP (oficial)](../fichas/neo4j-mcp.md) | Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de lectura o escritura. | Sin clave propia de API de IA en la ruta básica |
 | [Playwright MCP](../fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
-| [public-apis](../fichas/public-apis.md) | Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos. | Sin clave propia de API de IA en la ruta básica |
 | [Serena](../fichas/serena.md) | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. | Sin clave propia de API de IA en la ruta básica |
 | [servers](../fichas/servers.md) | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. | Sin clave propia de API de IA en la ruta básica |
 | [ToolJet](../fichas/tooljet.md) | Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. | API de IA opcional |
 | [unity-mcp](../fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin clave propia de API de IA en la ruta básica |
+
+### Ejecución de navegadores
+
+Distinguir un servicio que abre sesiones de un cliente, un ejecutor de pruebas o un proxy especializado.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-navegadores)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Lightpanda](../fichas/lightpanda.md) | Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome. | API de IA opcional |
+| [Steel Browser](../fichas/steel-browser.md) | API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium. | Sin clave propia de API de IA en la ruta básica |
+
+### Diagnóstico de MCP
+
+Inspeccionar un servidor y comprobar sus capacidades en un entorno de prueba.
+
+[Explorar 3 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-mcp-pruebas)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [FastMCP](../fichas/fastmcp.md) | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. | Sin clave propia de API de IA en la ruta básica |
+| [MCP Inspector](../fichas/mcp-inspector.md) | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. | Sin clave propia de API de IA en la ruta básica |
+| [MCP Python SDK](../fichas/mcp-python-sdk.md) | SDK oficial de Python para crear servidores y clientes del Model Context Protocol. | Sin clave propia de API de IA en la ruta básica |
+
+### Directorios de frameworks y APIs
+
+Buscar documentación, implementaciones, APIs o recursos de un ecosistema.
+
+[Explorar 4 repos](../../docs/index.html#/explorar?area=agentes&topic=agentes-directorios)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [awesome-agents](../fichas/awesome-agents.md) | Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. | Sin clave propia de API de IA en la ruta básica |
+| [awesome-LangGraph](../fichas/awesome-langgraph.md) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | Sin clave propia de API de IA en la ruta básica |
+| [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Sin clave propia de API de IA en la ruta básica |
+| [public-apis](../fichas/public-apis.md) | Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 966 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 964 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -522,7 +522,7 @@
    "title": "Dashboards, analítica y mapas",
    "desc": "Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.",
    "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-   "count": 31,
+   "count": 33,
    "subs": [
     {
      "key": "producto",
@@ -546,7 +546,7 @@
     },
     {
      "key": "geoespacial",
-     "title": "Fotogrametría y mapas desde imágenes"
+     "title": "Datos geoespaciales, fotogrametría y mapas"
     }
    ],
    "question": "¿Quieres visualizar datos, medir un producto o explorar un mapa?"
@@ -750,7 +750,7 @@
      "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 142,
+   "count": 141,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -795,6 +795,10 @@
     {
      "key": "reservas",
      "title": "Reservas y programación de citas"
+    },
+    {
+     "key": "encuestas",
+     "title": "Encuestas y feedback"
     }
    ],
    "count": 19
@@ -954,7 +958,7 @@
      "title": "Apps de datos en Python"
     }
    ],
-   "count": 23
+   "count": 21
   },
   {
    "num": 26,
@@ -11281,7 +11285,7 @@
    "name": "marimo",
    "emoji": "🗃️",
    "cat": 25,
-   "sub": "datos",
+   "sub": "apps",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -11361,8 +11365,8 @@
    "id": "awesome-bigdata",
    "name": "awesome-bigdata",
    "emoji": "🗄️",
-   "cat": 25,
-   "sub": "datos",
+   "cat": 10,
+   "sub": "recursos",
    "role": "directory",
    "exec": "cloud",
    "setup": "easy",
@@ -13638,7 +13642,7 @@
    "cat": 27,
    "sub": "skills",
    "role": "library",
-   "exec": "cloud",
+   "exec": "local",
    "setup": "easy",
    "mcp": false,
    "prov": [],
@@ -14733,7 +14737,7 @@
    "stars": 98120,
    "gh": "hacksider/Deep-Live-Cam",
    "lib": false,
-   "pick": true,
+   "pick": false,
    "one": "Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.",
    "alt": [
     "facefusion"
@@ -17213,7 +17217,7 @@
    "name": "PdfDing",
    "emoji": "📑",
    "cat": 13,
-   "sub": "pdf",
+   "sub": "gestion",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -19144,8 +19148,8 @@
    "id": "globalbuildingatlas",
    "name": "GlobalBuildingAtlas",
    "emoji": "🧑‍💻",
-   "cat": 25,
-   "sub": "datos",
+   "cat": 10,
+   "sub": "geoespacial",
    "role": "directory",
    "exec": "local",
    "setup": "heavy",
@@ -21671,7 +21675,7 @@
   },
   {
    "id": "dnspy",
-   "name": "dnSpy",
+   "name": "dnSpyEx",
    "cat": 16,
    "sub": "depuracion",
    "role": "app",
@@ -34802,9 +34806,7 @@
    "lib": false,
    "pick": false,
    "one": "Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
-   "alt": [
-    "naabu"
-   ],
+   "alt": [],
    "doc": "human/fichas/httpx.md",
    "github_id": 267713284,
    "lang": "Go",
@@ -34819,8 +34821,7 @@
     "no_api"
    ],
    "puntuacion": 77,
-   "complejidad": 1,
-   "grupo": "g-sondeo-y-escaneo-de-reconocimiento"
+   "complejidad": 1
   },
   {
    "id": "naabu",
@@ -34842,9 +34843,7 @@
    "lib": false,
    "pick": false,
    "one": "Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
-   "alt": [
-    "httpx"
-   ],
+   "alt": [],
    "doc": "human/fichas/naabu.md",
    "github_id": 235320869,
    "lang": "Go",
@@ -34859,8 +34858,7 @@
     "no_api"
    ],
    "puntuacion": 63,
-   "complejidad": 1,
-   "grupo": "g-sondeo-y-escaneo-de-reconocimiento"
+   "complejidad": 1
   },
   {
    "id": "impacket",
@@ -35014,8 +35012,7 @@
     "reference"
    ],
    "puntuacion": 62,
-   "complejidad": 1,
-   "grupo": "g-emulacion-de-adversarios"
+   "complejidad": 1
   },
   {
    "id": "caldera",
@@ -35052,8 +35049,7 @@
     "no_api"
    ],
    "puntuacion": 64,
-   "complejidad": 4,
-   "grupo": "g-emulacion-de-adversarios"
+   "complejidad": 4
   },
   {
    "id": "falco",
@@ -36605,9 +36601,7 @@
    "lib": false,
    "pick": false,
    "one": "Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
-   "alt": [
-    "autopsy"
-   ],
+   "alt": [],
    "doc": "human/fichas/sleuthkit.md",
    "github_id": 2562873,
    "lang": "C",
@@ -36623,8 +36617,7 @@
     "no_api"
    ],
    "puntuacion": 42,
-   "complejidad": 3,
-   "grupo": "g-analisis-forense-de-discos"
+   "complejidad": 3
   },
   {
    "id": "autopsy",
@@ -36644,9 +36637,7 @@
    "lib": false,
    "pick": false,
    "one": "GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
-   "alt": [
-    "sleuthkit"
-   ],
+   "alt": [],
    "doc": "human/fichas/autopsy.md",
    "github_id": 2516243,
    "lang": "Java",
@@ -36662,8 +36653,7 @@
     "no_api"
    ],
    "puntuacion": 46,
-   "complejidad": 3,
-   "grupo": "g-analisis-forense-de-discos"
+   "complejidad": 3
   },
   {
    "id": "capa",
@@ -37216,42 +37206,6 @@
    "grupo": "g-proxies-de-pruebas-de-aplicaciones-web"
   },
   {
-   "id": "loki",
-   "name": "LOKI",
-   "cat": 16,
-   "sub": "deteccion",
-   "role": "app",
-   "exec": "local",
-   "setup": "easy",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "security"
-   ],
-   "stars": 3804,
-   "gh": "Neo23x0/Loki",
-   "lib": false,
-   "pick": false,
-   "one": "Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.",
-   "alt": [],
-   "doc": "human/fichas/loki.md",
-   "github_id": 29420337,
-   "lang": "Python",
-   "license": "GPL-3.0",
-   "added_at": "2026-11-16",
-   "github_checked": "2026-11-16",
-   "goals": [
-    "seguridad"
-   ],
-   "source_archived": false,
-   "nivel": "ligero",
-   "routes": [
-    "no_api"
-   ],
-   "puntuacion": 42,
-   "complejidad": 1
-  },
-  {
    "id": "detection-rules",
    "name": "Elastic detection-rules",
    "cat": 16,
@@ -37511,7 +37465,7 @@
    "id": "formbricks",
    "name": "Formbricks",
    "cat": 18,
-   "sub": "reservas",
+   "sub": "encuestas",
    "role": "app",
    "exec": "local",
    "setup": "medium",
@@ -37543,7 +37497,8 @@
     "no_api"
    ],
    "puntuacion": 66,
-   "complejidad": 2
+   "complejidad": 2,
+   "nivel": "ligero"
   },
   {
    "id": "zulip",
@@ -38551,7 +38506,7 @@
    "id": "noir",
    "name": "OWASP Noir",
    "cat": 16,
-   "sub": "reconocimiento",
+   "sub": "defensa",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -39480,8 +39435,8 @@
    "alt": [],
    "doc": "human/fichas/prediction-market-backtesting.md",
    "github_id": 1156777542,
-   "lang": "Python",
-   "license": "NOASSERTION",
+   "lang": "Python y Rust",
+   "license": "MIT y LGPL-3.0-or-later según archivo",
    "added_at": "2026-11-22",
    "github_checked": "2026-11-22",
    "goals": [
@@ -41046,7 +41001,6 @@
     ],
     "guided": [
      "lossless-cut",
-     "opencut",
      "obs-studio",
      "remotion",
      "hyperframes",
@@ -41403,7 +41357,6 @@
      19,
      22,
      24,
-     25,
      26,
      27,
      32
@@ -41458,12 +41411,10 @@
     "title": "Organizar notas y conocimiento",
     "description": "Elegir una aplicación o un conjunto pequeño de extensiones para guardar, enlazar y consultar información.",
     "starters": [
-     "obsidian-releases",
      "anytype-ts",
      "appflowy"
     ],
     "guided": [
-     "obsidian-releases",
      "anytype-ts",
      "appflowy",
      "claude-obsidian",
@@ -41528,16 +41479,17 @@
     "title": "Analizar software y su seguridad",
     "description": "Escoger entre inspeccionar código, estudiar un binario o ejecutar pruebas en un entorno autorizado.",
     "starters": [
-     "ghidra",
-     "jadx",
-     "shannon"
+     "semgrep",
+     "trivy",
+     "wazuh"
     ],
     "guided": [
-     "ghidra",
-     "jadx",
-     "imhex",
-     "shannon",
-     "strix"
+     "semgrep",
+     "trivy",
+     "wazuh",
+     "noir",
+     "autopsy",
+     "yara"
     ],
     "categories": [
      10,
@@ -41630,7 +41582,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "tldraw"
+      ],
+      "guided_starters": [
+       "penpot",
+       "plasmic",
+       "onlook"
+      ]
      },
      {
       "id": "web-componentes",
@@ -41645,9 +41605,22 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "ui-sdk"
+      ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "swr",
+       "tanstack-query",
+       "storybook",
+       "konva"
+      ],
+      "guided_starters": [
+       "ui",
+       "ant-design",
+       "daisyui"
+      ]
      },
      {
       "id": "web-ia",
@@ -41663,7 +41636,16 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "ai-website-cloner-template",
+       "ui-sdk"
+      ],
+      "guided_starters": [
+       "assistant-ui",
+       "stitch-sdk",
+       "copilotkit"
+      ]
      },
      {
       "id": "web-skills",
@@ -41683,7 +41665,12 @@
        "design.md"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "impeccable",
+       "taste-skill",
+       "modern-web-guidance"
+      ]
      },
      {
       "id": "web-movimiento",
@@ -41699,10 +41686,20 @@
       ],
       "repos": [
        "gsap-skills",
-       "threejs-skills"
+       "threejs-skills",
+       "genjutsu",
+       "motion-design-skill"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "pencil"
+      ],
+      "guided_starters": [
+       "motion",
+       "gsap",
+       "three.js"
+      ]
      },
      {
       "id": "web-pruebas",
@@ -41726,7 +41723,81 @@
        "playwright-mcp"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "flaresolverr",
+       "libretranslate"
+      ],
+      "guided_starters": [
+       "playwright"
+      ]
+     },
+     {
+      "id": "web-datos",
+      "title": "Datos del frontend",
+      "description": "Consultar, actualizar y revalidar datos desde una interfaz web.",
+      "selectors": [],
+      "repos": [
+       "tanstack-query",
+       "swr"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "tanstack-query",
+       "swr"
+      ]
+     },
+     {
+      "id": "web-ui-pruebas",
+      "title": "Componentes aislados y pruebas de interfaz",
+      "description": "Desarrollar estados aislados y verificar recorridos sobre una aplicación propia.",
+      "selectors": [],
+      "repos": [
+       "storybook",
+       "playwright"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "storybook",
+       "playwright"
+      ]
+     },
+     {
+      "id": "web-lienzos",
+      "title": "Lienzos interactivos",
+      "description": "Construir un editor o pizarra interactiva en una aplicación web.",
+      "selectors": [],
+      "repos": [
+       "tldraw",
+       "konva"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "tldraw",
+       "konva"
+      ]
+     },
+     {
+      "id": "web-referencias",
+      "title": "Referencias y prototipado web",
+      "description": "Analizar diseños y prototipar con proyectos, capturas y activos propios o autorizados.",
+      "selectors": [],
+      "repos": [
+       "penpot",
+       "design-dna",
+       "design.md",
+       "ai-website-cloner-template",
+       "screenshot-to-code"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "penpot",
+       "screenshot-to-code"
+      ]
      }
     ]
    },
@@ -41742,7 +41813,6 @@
      "pentesting"
     ],
     "starters": [
-     "cybersecurity-skills",
      "semgrep",
      "ghidra"
     ],
@@ -41766,7 +41836,15 @@
        "skillspector"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "cybersecurity-skills"
+      ],
+      "guided_starters": [
+       "semgrep",
+       "skillspector",
+       "security-audit-skill"
+      ]
      },
      {
       "id": "seguridad-inversa",
@@ -41782,7 +41860,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "ghidra",
+       "imhex",
+       "jadx"
+      ]
      },
      {
       "id": "seguridad-depuracion",
@@ -41800,7 +41883,12 @@
        "ghidramcp"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "raddebugger",
+       "x64dbg",
+       "dnspy"
+      ]
      },
      {
       "id": "seguridad-pruebas",
@@ -41817,7 +41905,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "wireshark",
+       "semgrep",
+       "k6"
+      ]
      },
      {
       "id": "seguridad-ofensiva",
@@ -41839,7 +41932,12 @@
        "red team",
        "c2"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "noir"
+      ],
+      "reference_only": true,
+      "guided_starters": []
      },
      {
       "id": "seguridad-deteccion",
@@ -41859,7 +41957,12 @@
        "ids",
        "blue team"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "wazuh",
+       "suricata",
+       "sigma"
+      ]
      },
      {
       "id": "seguridad-nube",
@@ -41879,7 +41982,12 @@
        "kubernetes",
        "iac"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "trivy",
+       "checkov",
+       "grype"
+      ]
      },
      {
       "id": "seguridad-privacidad",
@@ -41895,7 +42003,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "keepassxc",
+       "bitwarden-clients",
+       "vaultwarden"
+      ]
      },
      {
       "id": "seguridad-recursos",
@@ -41913,7 +42026,12 @@
        "cybersecurity-skills"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "asvs",
+       "cheatsheetseries",
+       "owasp-api-security"
+      ]
      },
      {
       "id": "seguridad-ir",
@@ -41933,7 +42051,12 @@
        "IR",
        "EDR"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "autopsy",
+       "hayabusa",
+       "volatility3"
+      ]
      },
      {
       "id": "seguridad-ti",
@@ -41953,7 +42076,43 @@
        "MISP",
        "STIX"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "misp",
+       "opencti"
+      ]
+     },
+     {
+      "id": "seguridad-estatico",
+      "title": "Revisar código y dependencias propias",
+      "description": "Revisar rutas, reglas y dependencias en código que se administra.",
+      "selectors": [],
+      "repos": [
+       "noir",
+       "semgrep",
+       "trivy"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "semgrep",
+       "trivy",
+       "noir"
+      ]
+     },
+     {
+      "id": "seguridad-red-local",
+      "title": "Inventario de red local",
+      "description": "Consultar presencia y disponibilidad de dispositivos propios.",
+      "selectors": [],
+      "repos": [
+       "pi-alert-leiweibau"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "pi-alert-leiweibau"
+      ]
      }
     ]
    },
@@ -41986,11 +42145,15 @@
        }
       ],
       "repos": [
-       "video-use",
-       "rea-video"
+       "video-use"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "kdenlive",
+       "shotcut",
+       "lossless-cut"
+      ]
      },
      {
       "id": "av-video-ia",
@@ -42006,7 +42169,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "ai-youtube-shorts-generator"
+      ],
+      "guided_starters": [
+       "wan2-2",
+       "hunyuanvideo-1-5",
+       "ltx-2"
+      ]
      },
      {
       "id": "av-video-codigo",
@@ -42021,7 +42192,12 @@
        "motion-design-skill"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "hyperframes",
+       "remotion",
+       "motion-canvas"
+      ]
      },
      {
       "id": "av-voz",
@@ -42037,7 +42213,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "rvc"
+      ],
+      "guided_starters": [
+       "kokoro",
+       "cosyvoice",
+       "elevenlabs-python"
+      ]
      },
      {
       "id": "av-transcripcion",
@@ -42055,7 +42239,12 @@
        "vibevoice"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "buzz",
+       "whisper-cpp",
+       "whisperx"
+      ]
      },
      {
       "id": "av-audio",
@@ -42072,7 +42261,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "audacity",
+       "ultimate-vocal-remover",
+       "rnnoise"
+      ]
      },
      {
       "id": "av-conversacion",
@@ -42088,7 +42282,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "pipecat",
+       "livekit-agents",
+       "dograh"
+      ]
      },
      {
       "id": "av-imagen",
@@ -42104,7 +42303,12 @@
        "logo-design-skill"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "krita-ai-diffusion",
+       "comfyui",
+       "invokeai"
+      ]
      },
      {
       "id": "av-personajes",
@@ -42119,11 +42323,15 @@
        }
       ],
       "repos": [
-       "genjutsu",
        "claude-animated-shorts"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "liveportrait",
+       "insightface",
+       "facefusion"
+      ]
      },
      {
       "id": "av-3d",
@@ -42143,7 +42351,12 @@
        "3dviz-pro-max"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "blender",
+       "freecad",
+       "godot"
+      ]
      },
      {
       "id": "av-simulacion",
@@ -42163,7 +42376,60 @@
        "warp"
       ],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "planck-js",
+       "react-three-rapier",
+       "mujoco"
+      ]
+     },
+     {
+      "id": "av-preproduccion",
+      "title": "Preproducción y reencuadre",
+      "description": "Analizar una referencia autorizada, planear planos y adaptar material propio a otro formato.",
+      "selectors": [],
+      "repos": [
+       "rea-video",
+       "ai-youtube-shorts-generator",
+       "ffmpeg"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "ffmpeg"
+      ]
+     },
+     {
+      "id": "av-conversion-voz",
+      "title": "Conversión de voz",
+      "description": "Transformar una voz de entrada con material propio o autorizado.",
+      "selectors": [],
+      "repos": [
+       "rvc",
+       "gpt-sovits"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "rvc",
+       "gpt-sovits"
+      ]
+     },
+     {
+      "id": "av-animacion-2d",
+      "title": "Animación 2D cuadro a cuadro",
+      "description": "Dibujar y montar una secuencia 2D editable.",
+      "selectors": [],
+      "repos": [
+       "pencil",
+       "blender"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "pencil",
+       "blender"
+      ]
      }
     ]
    },
@@ -42201,7 +42467,12 @@
        "financial-services"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "dexter",
+       "finceptterminal",
+       "polyweather"
+      ]
      },
      {
       "id": "trading-backtesting",
@@ -42219,7 +42490,12 @@
        "timesfm"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "backtesting-py",
+       "vectorbt",
+       "nautilus-trader"
+      ]
      },
      {
       "id": "trading-bots",
@@ -42235,7 +42511,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "freqtrade",
+       "hummingbot",
+       "ccxt"
+      ]
      },
      {
       "id": "trading-aprender",
@@ -42251,7 +42532,10 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "machine-learning-for-trading"
+      ]
      }
     ]
    },
@@ -42289,7 +42573,15 @@
        "awesome-claude-skills"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "dagger"
+      ],
+      "guided_starters": [
+       "activepieces",
+       "node-red",
+       "prefect"
+      ]
      },
      {
       "id": "negocio-whatsapp",
@@ -42305,7 +42597,16 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "signal-cli",
+       "whatsapp-agentkit"
+      ],
+      "guided_starters": [
+       "evolution-api",
+       "waha",
+       "openwa"
+      ]
      },
      {
       "id": "negocio-crm",
@@ -42321,7 +42622,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "espocrm",
+       "chatwoot",
+       "erpnext"
+      ]
      },
      {
       "id": "negocio-campanas",
@@ -42337,7 +42643,16 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "cloud-mail",
+       "open-seo"
+      ],
+      "guided_starters": [
+       "listmonk",
+       "mautic",
+       "novu"
+      ]
      },
      {
       "id": "negocio-marketing",
@@ -42355,7 +42670,12 @@
        "minimalist-entrepreneur-skills"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "marketingskills",
+       "claude-seo",
+       "social-media-research-skills"
+      ]
      },
      {
       "id": "negocio-apps",
@@ -42371,7 +42691,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "tooljet",
+       "appsmith",
+       "budibase"
+      ]
      },
      {
       "id": "negocio-reservas",
@@ -42389,7 +42714,14 @@
        "cal.diy"
       ],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "exclude": [
+       "formbricks"
+      ],
+      "guided_starters": [
+       "easyappointments",
+       "cal.diy"
+      ]
      },
      {
       "id": "negocio-chatbots",
@@ -42403,9 +42735,16 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "whatsapp-agentkit"
+      ],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "typebot",
+       "botpress",
+       "python-telegram-bot"
+      ]
      },
      {
       "id": "negocio-comunidades",
@@ -42421,7 +42760,42 @@
       ],
       "repos": [],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "zulip",
+       "mattermost",
+       "element-web"
+      ]
+     },
+     {
+      "id": "negocio-encuestas",
+      "title": "Encuestas y feedback",
+      "description": "Recoger y analizar respuestas sin gestionar disponibilidad de agenda.",
+      "selectors": [],
+      "repos": [
+       "formbricks"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "formbricks"
+      ]
+     },
+     {
+      "id": "negocio-canales",
+      "title": "Pasarelas y transporte de mensajes",
+      "description": "Conectar canales de mensajería, buzones y transporte según el servicio.",
+      "selectors": [],
+      "repos": [
+       "signal-cli",
+       "cloud-mail"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "signal-cli",
+       "cloud-mail"
+      ]
      }
     ]
    },
@@ -42463,7 +42837,12 @@
        "campañas",
        "conversión"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "marketingskills",
+       "minimalist-entrepreneur-skills",
+       "agency-agents"
+      ]
      },
      {
       "id": "marketing-redes",
@@ -42483,7 +42862,12 @@
        "linkedin",
        "social media"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "postiz-app",
+       "social-media-agent",
+       "linkedin-agent-skill"
+      ]
      },
      {
       "id": "marketing-investigacion",
@@ -42501,7 +42885,12 @@
        "competidores",
        "investigación de redes"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "last30days-skill",
+       "social-media-research-skills",
+       "instaloader"
+      ]
      },
      {
       "id": "marketing-seo",
@@ -42518,7 +42907,11 @@
        "posicionamiento",
        "buscadores"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "claude-seo",
+       "open-seo"
+      ]
      },
      {
       "id": "marketing-email",
@@ -42536,7 +42929,12 @@
        "correo",
        "segmentación"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "listmonk",
+       "mautic",
+       "sellbird"
+      ]
      },
      {
       "id": "marketing-contenido",
@@ -42557,7 +42955,12 @@
        "tiktok",
        "video de producto"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "brag",
+       "ai-youtube-shorts-generator",
+       "arcads-claude-code"
+      ]
      },
      {
       "id": "marketing-analitica",
@@ -42578,7 +42981,12 @@
        "conversiones",
        "embudos"
       ],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "umami",
+       "posthog",
+       "matomo"
+      ]
      }
     ]
    },
@@ -42616,7 +43024,18 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "chatdev",
+       "openmanus",
+       "awesome-langgraph",
+       "jev-fraud"
+      ],
+      "guided_starters": [
+       "langgraph",
+       "openai-agents-python",
+       "crewai"
+      ]
      },
      {
       "id": "agentes-visuales",
@@ -42630,9 +43049,16 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "chatdev"
+      ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "dify",
+       "langflow",
+       "sim"
+      ]
      },
      {
       "id": "agentes-asistentes",
@@ -42646,9 +43072,16 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "openmanus"
+      ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "hermes-agent",
+       "openclaw",
+       "deeptutor"
+      ]
      },
      {
       "id": "agentes-investigar",
@@ -42670,7 +43103,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "autoresearch"
+      ],
+      "guided_starters": [
+       "gpt-researcher",
+       "local-deep-research",
+       "searxng"
+      ]
      },
      {
       "id": "agentes-extraccion",
@@ -42688,7 +43129,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "awesome-web-scraping"
+      ],
+      "guided_starters": [
+       "crawl4ai",
+       "scrapy",
+       "firecrawl"
+      ]
      },
      {
       "id": "agentes-navegacion",
@@ -42699,9 +43148,16 @@
         "cat": 32
        }
       ],
-      "repos": [],
+      "repos": [
+       "computer-use-preview"
+      ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "playwright",
+       "playwright-cli",
+       "stagehand"
+      ]
      },
      {
       "id": "agentes-mcp",
@@ -42716,6 +43172,61 @@
        "tooljet",
        "composio",
        "awesome-claude-skills"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "exclude": [
+       "public-apis"
+      ],
+      "guided_starters": [
+       "context7",
+       "fastmcp",
+       "composio"
+      ]
+     },
+     {
+      "id": "agentes-navegadores",
+      "title": "Ejecución de navegadores",
+      "description": "Distinguir un servicio que abre sesiones de un cliente, un ejecutor de pruebas o un proxy especializado.",
+      "selectors": [],
+      "repos": [
+       "steel-browser",
+       "lightpanda"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "steel-browser",
+       "lightpanda"
+      ]
+     },
+     {
+      "id": "agentes-mcp-pruebas",
+      "title": "Diagnóstico de MCP",
+      "description": "Inspeccionar un servidor y comprobar sus capacidades en un entorno de prueba.",
+      "selectors": [],
+      "repos": [
+       "mcp-inspector",
+       "fastmcp",
+       "mcp-python-sdk"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "mcp-inspector",
+       "fastmcp"
+      ]
+     },
+     {
+      "id": "agentes-directorios",
+      "title": "Directorios de frameworks y APIs",
+      "description": "Buscar documentación, implementaciones, APIs o recursos de un ecosistema.",
+      "selectors": [],
+      "repos": [
+       "awesome-agents",
+       "awesome-langgraph",
+       "awesome-web-scraping",
+       "public-apis"
       ],
       "keywords": [],
       "reference_repos": []
@@ -42773,7 +43284,10 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "llmfit"
+      ]
      },
      {
       "id": "local-modelos",
@@ -42789,7 +43303,10 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "laya"
+      ]
      },
      {
       "id": "local-entrenamiento",
@@ -42824,6 +43341,37 @@
       ],
       "keywords": [],
       "reference_repos": []
+     },
+     {
+      "id": "local-hardware",
+      "title": "Elegir equipo y modelo",
+      "description": "Estimar memoria y comprobar qué modelo cabe antes de descargar.",
+      "selectors": [],
+      "repos": [
+       "llmfit",
+       "ollama"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "llmfit",
+       "ollama"
+      ]
+     },
+     {
+      "id": "local-experimentos",
+      "title": "Experimentos de entrenamiento",
+      "description": "Consultar ejemplos reproducibles de evaluación y entrenamiento de modelos.",
+      "selectors": [],
+      "repos": [
+       "autoresearch",
+       "nanochat"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "nanochat"
+      ]
      }
     ]
    },
@@ -42859,11 +43407,14 @@
         ]
        }
       ],
-      "repos": [
-       "libretranslate"
-      ],
+      "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "docling",
+       "markitdown",
+       "stirling-pdf"
+      ]
      },
      {
       "id": "docs-ocr",
@@ -42879,7 +43430,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "ocrmypdf",
+       "paddleocr",
+       "tesseract"
+      ]
      },
      {
       "id": "docs-slides",
@@ -42895,7 +43451,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "ppt-master",
+       "presenton",
+       "marp"
+      ]
      },
      {
       "id": "docs-diagramas",
@@ -42910,10 +43471,16 @@
        }
       ],
       "repos": [
-       "excalidraw"
+       "excalidraw",
+       "jsoncanvas"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "drawio",
+       "mermaid",
+       "excalidraw"
+      ]
      },
      {
       "id": "docs-rag",
@@ -42930,7 +43497,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "agentic-rag-for-dummies"
+      ],
+      "guided_starters": [
+       "ragflow",
+       "kotaemon",
+       "onyx"
+      ]
      },
      {
       "id": "docs-memoria",
@@ -42946,7 +43521,65 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "engram",
+       "mem0",
+       "graphiti"
+      ]
+     },
+     {
+      "id": "docs-lectura",
+      "title": "Lectura y archivo de PDF",
+      "description": "Leer, anotar y organizar PDF o mantener un archivo documental.",
+      "selectors": [],
+      "repos": [
+       "pdfding",
+       "paperless-ngx"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "pdfding",
+       "paperless-ngx"
+      ]
+     },
+     {
+      "id": "docs-traduccion",
+      "title": "Traducción de texto y documentos",
+      "description": "Traducir texto por API o traducir contenido de un PDF.",
+      "selectors": [],
+      "repos": [
+       "libretranslate",
+       "pdfmathtranslate"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "libretranslate",
+       "pdfmathtranslate"
+      ]
+     },
+     {
+      "id": "docs-rag-aprender",
+      "title": "Aprender a preparar una búsqueda documental",
+      "description": "Entender conversión, fragmentación, embeddings y recuperación como pasos distintos.",
+      "selectors": [],
+      "repos": [
+       "agentic-rag-for-dummies",
+       "chonkie",
+       "flagembedding",
+       "meilisearch",
+       "docling",
+       "qdrant"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "docling",
+       "chonkie",
+       "qdrant"
+      ]
      }
     ]
    },
@@ -42981,7 +43614,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "globalbuildingatlas",
+       "marimo",
+       "awesome-bigdata"
+      ]
      },
      {
       "id": "datos-apps",
@@ -43061,9 +43699,41 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "awesome-bigdata"
+      ],
       "keywords": [],
       "reference_repos": []
+     },
+     {
+      "id": "datos-geoespacial",
+      "title": "Datos y capas geoespaciales",
+      "description": "Descargar conjuntos geoespaciales y visualizar capas o mapas.",
+      "selectors": [],
+      "repos": [
+       "globalbuildingatlas",
+       "qgis"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "qgis",
+       "globalbuildingatlas"
+      ]
+     },
+     {
+      "id": "datos-decision",
+      "title": "Clasificación y salidas estructuradas",
+      "description": "Integrar clasificación o decisiones en una aplicación y comprobar su resultado.",
+      "selectors": [],
+      "repos": [
+       "laya"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "laya"
+      ]
      }
     ]
    },
@@ -43099,7 +43769,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "joplin",
+       "logseq",
+       "appflowy"
+      ]
      },
      {
       "id": "personal-archivos",
@@ -43116,7 +43791,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "syncthing",
+       "nextcloud-server",
+       "calibre-web"
+      ]
      },
      {
       "id": "personal-privacidad",
@@ -43132,7 +43812,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "keepassxc",
+       "bitwarden-clients",
+       "vaultwarden"
+      ]
      },
      {
       "id": "personal-hogar",
@@ -43151,7 +43836,12 @@
        "ha-mcp"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "home-assistant",
+       "esphome",
+       "zigbee2mqtt"
+      ]
      },
      {
       "id": "personal-aprender",
@@ -43167,7 +43857,10 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "openmaic"
+      ]
      },
      {
       "id": "personal-escritura",
@@ -43183,7 +43876,31 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "humanizer",
+       "i-have-adhd"
+      ]
+     },
+     {
+      "id": "personal-obsidian",
+      "title": "Documentación y complementos de Obsidian",
+      "description": "Encontrar la ayuda, distribución oficial, temas y ejemplos de plugins de Obsidian.",
+      "selectors": [],
+      "repos": [
+       "obsidian-help",
+       "obsidian-releases",
+       "obsidian-minimal",
+       "obsidian-sample-plugin",
+       "kepano-obsidian",
+       "obsidian-second-brain",
+       "jsoncanvas"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "obsidian-second-brain"
+      ]
      }
     ]
    },
@@ -43214,11 +43931,14 @@
         "cat": 20
        }
       ],
-      "repos": [
-       "android-skills"
-      ],
+      "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "codex",
+       "claude-code",
+       "opencode"
+      ]
      },
      {
       "id": "dev-comprender",
@@ -43231,7 +43951,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "codegraph",
+       "repomix",
+       "ripgrep"
+      ]
      },
      {
       "id": "dev-infra",
@@ -43244,7 +43969,15 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "computer-use-preview"
+      ],
+      "guided_starters": [
+       "coolify",
+       "supabase",
+       "e2b"
+      ]
      },
      {
       "id": "dev-evaluar",
@@ -43260,7 +43993,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "promptfoo",
+       "deepeval",
+       "langfuse"
+      ]
      },
      {
       "id": "dev-contexto",
@@ -43277,7 +44015,41 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "litellm",
+       "vllm",
+       "rtk"
+      ]
+     },
+     {
+      "id": "dev-movil",
+      "title": "Desarrollo móvil",
+      "description": "Aprender y aplicar flujos específicos de desarrollo móvil.",
+      "selectors": [],
+      "repos": [
+       "android-skills"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "android-skills"
+      ]
+     },
+     {
+      "id": "dev-entrega",
+      "title": "Integración continua y entrega",
+      "description": "Preparar pipelines de CI y controles antes de publicar.",
+      "selectors": [],
+      "repos": [
+       "dagger",
+       "front-end-checklist"
+      ],
+      "keywords": [],
+      "reference_repos": [],
+      "guided_starters": [
+       "dagger"
+      ]
      }
     ]
    },
@@ -43313,7 +44085,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "mediapipe",
+       "ultralytics",
+       "sam3"
+      ]
      },
      {
       "id": "vision-rostros",
@@ -43329,7 +44106,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "insightface",
+       "deepface",
+       "liveportrait"
+      ]
      },
      {
       "id": "vision-mapas",
@@ -43346,7 +44128,12 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "qgis",
+       "webodm",
+       "maplibre"
+      ]
      }
     ]
    },
@@ -43380,7 +44167,9 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "jev-fraud"
+      ],
       "keywords": [],
       "reference_repos": []
      },
@@ -43472,7 +44261,10 @@
        "claude-code"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "claude-code"
+      ]
      },
      {
       "id": "claude-skills",
@@ -43596,7 +44388,12 @@
        "open-code-review"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "superpowers",
+       "claude-plugins-official",
+       "agent-skills"
+      ]
      },
      {
       "id": "claude-mcp",
@@ -43685,7 +44482,12 @@
        "claude-context"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "context7",
+       "playwright-mcp",
+       "github-mcp-server"
+      ]
      },
      {
       "id": "claude-memoria",
@@ -43710,7 +44512,12 @@
        "supermemory"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "claude-mem",
+       "codegraph",
+       "rtk"
+      ]
      },
      {
       "id": "claude-hooks",
@@ -43722,6 +44529,10 @@
       "reference_repos": [
        "awesome-claude-code",
        "claude-code-hooks-mastery"
+      ],
+      "guided_starters": [
+       "claude-code-hooks-mastery",
+       "awesome-claude-code"
       ]
      },
      {
@@ -43737,7 +44548,12 @@
        "ccusage"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "ccusage",
+       "claude-code-usage-monitor",
+       "ollama"
+      ]
      },
      {
       "id": "claude-especialidades",
@@ -43758,7 +44574,12 @@
        "shopify-ai-toolkit"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "marketingskills",
+       "impeccable",
+       "skills-remotion"
+      ]
      },
      {
       "id": "claude-integraciones",
@@ -43819,7 +44640,12 @@
        "claude-code-hooks-mastery",
        "awesome-claude-skills"
       ],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "composio",
+       "litellm",
+       "claude-agent-sdk-python"
+      ]
      }
     ],
     "client": "claude_code",
@@ -45539,7 +46365,10 @@
        "codex"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "codex"
+      ]
      },
      {
       "id": "codex-skills",
@@ -45633,7 +46462,12 @@
        "open-code-review"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "superpowers",
+       "spec-kit",
+       "antigravity-awesome-skills"
+      ]
      },
      {
       "id": "codex-mcp",
@@ -45723,7 +46557,12 @@
        "claude-context"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "context7",
+       "playwright-mcp",
+       "github-mcp-server"
+      ]
      },
      {
       "id": "codex-contexto",
@@ -45751,7 +46590,12 @@
        "t3code"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "codegraph",
+       "t3code",
+       "agentmemory"
+      ]
      },
      {
       "id": "codex-especialidades",
@@ -45769,7 +46613,12 @@
        "shopify-ai-toolkit"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "impeccable",
+       "ppt-master",
+       "skills-remotion"
+      ]
      },
      {
       "id": "codex-integraciones",
@@ -45825,7 +46674,12 @@
        "ccusage"
       ],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "ccusage",
+       "litellm",
+       "paperclip"
+      ]
      }
     ],
     "client": "codex",
@@ -47299,8 +48153,7 @@
     ],
     "starters": [
      "antigravity-awesome-skills",
-     "stitch-skills",
-     "prompt-master"
+     "stitch-skills"
     ],
     "topics": [
      {
@@ -47376,7 +48229,12 @@
        "shopify-ai-toolkit"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "antigravity-awesome-skills",
+       "wshobson-agents",
+       "superpowers"
+      ]
      },
      {
       "id": "antigravity-diseno",
@@ -47387,7 +48245,10 @@
        "stitch-skills"
       ],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "guided_starters": [
+       "stitch-skills"
+      ]
      },
      {
       "id": "antigravity-prompts",
@@ -47493,7 +48354,12 @@
        "windmill"
       ],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "context7",
+       "chrome-devtools-mcp",
+       "supabase"
+      ]
      },
      {
       "id": "antigravity-integraciones",
@@ -47514,7 +48380,12 @@
        "ccusage"
       ],
       "reference_repos": [],
-      "keywords": []
+      "keywords": [],
+      "guided_starters": [
+       "codegraph",
+       "ccusage",
+       "omniroute"
+      ]
      }
     ],
     "client": "antigravity",
@@ -48677,8 +49548,8 @@
    }
   ],
   "editorial_review": {
-   "total": 966,
-   "reviewed": 966,
+   "total": 964,
+   "reviewed": 964,
    "date": "2026-11-27",
    "report": "reports/drive-2026-11-27.md",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."

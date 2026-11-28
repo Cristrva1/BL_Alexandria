@@ -4,6 +4,12 @@
 
 > Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas.
 
+## Cuándo elegir esta ficha
+
+Usar como índice de ideas y enlaces externos. Se perderían amplitud de dominios y referencias, pero el curso cubre orden didáctico y Awesome LLM Apps ofrece demos con su propio código. Mantener la muestra sin prometer que todos los enlaces son ejecutables.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/ashishpatel26/500-AI-Agents-Projects/e48f78ccf182746d4f01e2093fe2ccd884269656/README.md) · [Fuente 2](https://api.github.com/repos/ashishpatel26/500-AI-Agents-Projects) · [Fuente 3](https://github.com/ashishpatel26/500-AI-Agents-Projects/commit/e48f78ccf182746d4f01e2093fe2ccd884269656)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 39.9k | MIT | Python | 2026-11-14 |

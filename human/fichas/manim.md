@@ -4,6 +4,14 @@
 
 > Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL.
 
+## Cuándo elegir esta ficha
+
+Community es la ruta pedagógica general de Python. Conservar ManimGL para escenas como las de 3Blue1Brown, con CLI, paquete e imports separados según ambos upstreams.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/3b1b/manim/blob/fafa083a4fb274bba9cabde0b6e2f50ba6da0622/README.md) · [Fuente 2](https://github.com/3b1b/manim/commit/fafa083a4fb274bba9cabde0b6e2f50ba6da0622) · [Fuente 3](https://github.com/3b1b/manim/blob/master/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 96.5k | MIT | Python | 2026-11-10 |

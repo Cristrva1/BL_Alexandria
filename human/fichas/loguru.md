@@ -4,6 +4,12 @@
 
 > Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa.
 
+## Cuándo elegir esta ficha
+
+Recomendar como apoyo de logging Python. Se perdería un API simple de logs locales si se retira. OpenLLMetry y Langfuse cubren instrumentación y análisis de trazas, complementarios a los logs y sin sustitución directa.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/Delgan/loguru/1b5edc5b0075804770f881db0d3589ac460ee290/README.md) · [Fuente 2](https://api.github.com/repos/Delgan/loguru) · [Fuente 3](https://github.com/Delgan/loguru/commit/1b5edc5b0075804770f881db0d3589ac460ee290)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 24.2k | MIT | Python | 2026-06-23 |

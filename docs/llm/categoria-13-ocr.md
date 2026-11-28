@@ -50,7 +50,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: preparación sencilla; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba; hardware prerequisites; API de IA: no; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `brew install ocrmypdf` — fuente: https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Añade OCR a una copia escaneada y busca una palabra que conoces Éxito: Puedes seleccionar y buscar texto manteniendo la imagen de la página
-- **Combina con:** `tesseract`, `paperless-ngx` [13/gestion], `stirling-pdf` [13/pdf], `pdf-inspector` [13/conversion], `pdfding` [13/pdf]
+- **Combina con:** `tesseract`, `paperless-ngx` [13/gestion], `stirling-pdf` [13/pdf], `pdf-inspector` [13/conversion], `pdfding` [13/gestion]
 - **Riesgos y avisos:** Se retiró docling por no estar documentado. La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original.
 
 ### Tesseract (`tesseract`)

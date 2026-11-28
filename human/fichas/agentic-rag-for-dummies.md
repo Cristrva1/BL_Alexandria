@@ -4,6 +4,14 @@
 
 > Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.
 
+## Cuándo elegir esta ficha
+
+RAGFlow ofrece la ruta de aplicación documental. La ficha de ejemplos merece conservarse al aprender la arquitectura de LangGraph y Ollama.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/c1b339b54f0927bd0b469fcce70f3cd5de4e918d/README.md) · [Fuente 2](https://api.github.com/repos/GiovanniPasq/agentic-rag-for-dummies) · [Fuente 3](https://github.com/GiovanniPasq/agentic-rag-for-dummies/commit/c1b339b54f0927bd0b469fcce70f3cd5de4e918d)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 4.4k | MIT | Jupyter Notebook | 2026-11-14 |

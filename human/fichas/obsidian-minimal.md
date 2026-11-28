@@ -4,6 +4,14 @@
 
 > Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas.
 
+## Cuándo elegir esta ficha
+
+El registro mantiene la ruta para descubrir temas. La función de Minimal sigue identificada como tema concreto.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/kepano/obsidian-minimal/blob/6d260b4e0ce60e9563b2d9a268310b88934d0384/README.md) · [Fuente 2](https://api.github.com/repos/kepano/obsidian-minimal) · [Fuente 3](https://github.com/kepano/obsidian-minimal/commit/6d260b4e0ce60e9563b2d9a268310b88934d0384)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 5.7k | MIT | CSS | 2026-11-14 |

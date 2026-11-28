@@ -4,6 +4,12 @@
 
 > Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU.
 
+## Cuándo elegir esta ficha
+
+Pasar a consultor previo de hardware dentro de IA local. Se perdería el inventario comparativo de cuantizaciones si se retira. Su README al corte también documenta que el modo benchmark coordina un proveedor en ejecución. Ollama y llama.cpp cubren la etapa de inferencia y permiten medir el uso real. Mantener como referencia visible antes de descargar.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/AlexsJones/llmfit/57048e7f888082da0e6b24cbbf4013feebfcef1a/README.md) · [Fuente 2](https://api.github.com/repos/AlexsJones/llmfit) · [Fuente 3](https://github.com/AlexsJones/llmfit/commit/57048e7f888082da0e6b24cbbf4013feebfcef1a)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 39k | MIT | Rust | 2026-06-23 |

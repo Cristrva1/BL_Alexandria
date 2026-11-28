@@ -4,6 +4,14 @@
 
 > Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.
 
+## Cuándo elegir esta ficha
+
+Solapa dirección visual y revisión con las dos primeras opciones. Dejar consulta para la rúbrica, ejemplos y flujo propio. Retirarlo quita ese flujo y las instrucciones adaptadas a sus clientes.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Nutlope/hallmark) · [Fuente 2](https://github.com/Leonxlnx/taste-skill) · [Fuente 3](https://github.com/pbakaus/impeccable)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 55.1k | MIT | CSS | 2026-11-14 |

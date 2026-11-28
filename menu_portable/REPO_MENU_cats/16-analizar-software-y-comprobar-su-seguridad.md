@@ -301,8 +301,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala el paquete Windows desde el sitio oficial o sigue README.txt y abre un caso de lab.
 **Qué comprobar:** UI de Autopsy con el disco cargado.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `hayabusa`, `wazuh`
-**Alternativas (elige una):** `sleuthkit`
+**Combina con:** `hayabusa`, `wazuh`, `sleuthkit`
 
 ## `awesome-ai-reverse-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=referencias,reference
@@ -1643,7 +1642,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes líneas con código, título y URL final.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `subfinder`, `nuclei`, `amass`
-**Alternativas (elige una):** `naabu`
 
 ## `ilspy`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=reversing,app,c
@@ -2009,36 +2007,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `grafana`, `playwright`, `claude-code`
 **Alternativas (elige una):** `k6`
 
-## `loki`
-role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security
-
-**Qué es:** Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.
-**Stack:** Python, requirements.txt
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-**Repo:** https://github.com/Neo23x0/Loki
-
-**Instalación** [?]:
-
-```
-Seguir la instalación original: https://github.com/Neo23x0/Loki/blob/master/README.md
-```
-
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP
-**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
-**Primera prueba propuesta:** Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba.
-**Qué comprobar:** Hits de IOC en consola.
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `yara`, `misp`
-
 ## `lynis`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,shell,cli
 
@@ -2370,7 +2338,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Obtienes puertos abiertos listos para Nmap o httpx.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `nmap`, `amass`, `nuclei`
-**Alternativas (elige una):** `httpx`
 
 ## `netexec`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security,ad,python
@@ -3618,8 +3585,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Compila/instala según INSTALL.txt y ejecuta `fls` sobre una imagen de laboratorio.
 **Qué comprobar:** Listas inodos/nombres de fichero.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `velociraptor`, `volatility3`
-**Alternativas (elige una):** `autopsy`
+**Combina con:** `velociraptor`, `volatility3`, `autopsy`
 
 ## `sliver`
 role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security,c2,redteam

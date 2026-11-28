@@ -48,7 +48,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; JavaScript; HTML/SVG o Canvas; datos de prueba; hardware prerequisites; API de IA: no; JavaScript; HTML/SVG o Canvas; datos de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `yarn add d3` — fuente: https://github.com/d3/d3/blob/main/docs/getting-started.md
 - **Primera prueba propuesta (no ejecutada):** Construye un gráfico de barras de tres categorías con escala y ejes explícitos Éxito: Cada barra y etiqueta corresponde a su valor
-- **Combina con:** `recharts`, `awesome-dataviz` [10/recursos], `marimo` [25/datos]
+- **Combina con:** `recharts`, `awesome-dataviz` [10/recursos], `marimo` [25/apps]
 - **Alternativas:** `echarts`, `recharts`, `chart-js`
 - **Riesgos y avisos:** Alternativas (elige una): echarts. Curva de aprendizaje alta. Ofrece piezas de bajo nivel; exige más programación que una biblioteca de gráficos ya montados.
 

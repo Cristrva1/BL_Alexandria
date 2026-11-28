@@ -1,6 +1,6 @@
 # Alexandría para agentes · Recursos y casos de uso
 
-Categoría 10 «Dashboards, analítica y mapas» › subcategoría `recursos`. 2 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 10 «Dashboards, analítica y mapas» › subcategoría `recursos`. 3 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=10&sub=recursos · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -19,6 +19,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `awesome-dataviz` | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 58 | CC-BY-4.0 (OSI permisiva) | sin grupo |
+| `awesome-bigdata` | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 46 | MIT (OSI permisiva) | sin grupo |
 | `data-analyst-roadmap` | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 38 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -33,8 +34,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tipo de gráfico y framework objetivo; hardware prerequisites; API de IA: no; Navegador; tipo de gráfico y framework objetivo.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/hal9ai/awesome-dataviz/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Selecciona dos bibliotecas de un mismo tipo y compara licencia, accesibilidad y formato de datos Éxito: Tienes candidatos con documentación original y requisitos identificados
-- **Combina con:** `echarts` [10/graficos], `d3` [10/graficos], `awesome-bigdata` [25/datos]
+- **Combina con:** `echarts` [10/graficos], `d3` [10/graficos], `awesome-bigdata`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. El directorio reúne opciones; no se instala completo ni verifica automáticamente la calidad de cada enlace.
+
+### awesome-bigdata (`awesome-bigdata`)
+
+- **Repo:** https://github.com/oxnr/awesome-bigdata · MIT · nivel 1 · 46/100
+- **Qué es:** Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.
+- **Cuándo elegirlo:** Casos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; problema de datos definido; hardware prerequisites; API de IA: no; Navegador; problema de datos definido.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/oxnr/awesome-bigdata/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una Éxito: Puedes elegir candidatos complementarios
+- **Combina con:** `awesome-dataviz`, `duckdb` [25/datos], `hudi` [25/datos]
+- **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces.
 
 ### data-analyst-roadmap (`data-analyst-roadmap`)
 
@@ -44,7 +56,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tiempo de estudio; una tabla pequeña de práctica; hardware prerequisites; API de IA: no; Navegador; tiempo de estudio; una tabla pequeña de práctica.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Elige SQL o una hoja de cálculo y resuelve una pregunta con una tabla ficticia Éxito: Puedes explicar dato de entrada, cálculo y resultado
-- **Combina con:** `duckdb` [25/datos], `marimo` [25/datos], `metabase` [10/bi]
+- **Combina con:** `duckdb` [25/datos], `marimo` [25/apps], `metabase` [10/bi]
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso introductorio, sin mantenimiento reciente. Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md

@@ -4,6 +4,12 @@
 
 > Herramienta oficial para probar y depurar servidores MCP desde una interfaz web.
 
+## Cuándo elegir esta ficha
+
+Preservar en la técnica MCP con un tipo propio o un enlace claro desde SDK. Es cliente diagnóstico interactivo y no crea servidores.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/modelcontextprotocol/inspector/blob/2069a1a4d8c777360621f4c90c04017012bd5fae/README.md) · [Fuente 2](https://github.com/modelcontextprotocol/inspector/blob/main/README.md) · [Fuente 3](https://github.com/modelcontextprotocol/inspector)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 11.3k | Apache-2.0 (en transición desde MIT) | TypeScript | 2026-11-10 |

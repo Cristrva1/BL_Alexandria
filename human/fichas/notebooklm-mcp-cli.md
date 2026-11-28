@@ -4,6 +4,12 @@
 
 > CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP.
 
+## Cuándo elegir esta ficha
+
+Cliente no oficial con MCP y terminal para NotebookLM. Depende del servicio remoto y de una sesión compatible.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/jacob-bd/gemini-notebook-mcp-cli/ef3bb8e76a7678f4177ce5d0f5e317da6b34029d/README.md) · [Fuente 2](https://api.github.com/repos/jacob-bd/gemini-notebook-mcp-cli) · [Fuente 3](https://github.com/jacob-bd/gemini-notebook-mcp-cli/commit/ef3bb8e76a7678f4177ce5d0f5e317da6b34029d)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 6.5k | MIT | Python | 2026-06-23 |

@@ -720,21 +720,11 @@ grupos:
   miembros:
   - assistant-ui
   - copilotkit
-- id: g-emulacion-de-adversarios
-  titulo: Emulación de adversarios
-  miembros:
-  - atomic-red-team
-  - caldera
 - id: g-proveedores-de-identidad-y-sso
   titulo: Proveedores de identidad y SSO
   miembros:
   - authentik
   - keycloak
-- id: g-analisis-forense-de-discos
-  titulo: Análisis forense de discos
-  miembros:
-  - autopsy
-  - sleuthkit
 - id: g-backtesting-en-python
   titulo: Backtesting en Python
   miembros:
@@ -860,11 +850,6 @@ grupos:
   miembros:
   - headscale
   - netbird
-- id: g-sondeo-y-escaneo-de-reconocimiento
-  titulo: Sondeo y escaneo de reconocimiento
-  miembros:
-  - httpx
-  - naabu
 - id: g-automatizacion-por-eventos-auto-hospedada
   titulo: Automatización por eventos auto-hospedada
   miembros:

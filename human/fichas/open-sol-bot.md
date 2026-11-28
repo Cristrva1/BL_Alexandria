@@ -4,6 +4,14 @@
 
 > Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.
 
+## Cuándo elegir esta ficha
+
+Referencia de investigación especializada sobre software y datos de Solana.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/ChainBuff/open-sol-bot/blob/HEAD/README.md) · [Fuente 2](https://github.com/ChainBuff/open-sol-bot/commit/b85c3e94b69af4fc07b2f8967fff997f96cb44b2)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 406 | Apache-2.0 | Python | 2026-11-14 |

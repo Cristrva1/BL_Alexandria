@@ -193,7 +193,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI; hardware prerequisites; API de IA: opcional; Cuenta o despliegue; bloques y canal elegidos; proveedor solo para AI.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker-compose up -d` — fuente: https://github.com/baptisteArno/typebot.io/blob/main/apps/docs/self-hosting/deploy/docker.mdx
 - **Primera prueba propuesta (no ejecutada):** Crea un flujo de dos preguntas con respuestas fijas y comprueba la rama elegida Éxito: El resultado guarda respuestas y recorre el camino esperado
-- **Combina con:** `evolution-api` [17/whatsapp], `chatwoot` [18/crm], `openwa` [17/whatsapp], `waha` [17/whatsapp], `formbricks` [18/reservas]
+- **Combina con:** `evolution-api` [17/whatsapp], `chatwoot` [18/crm], `openwa` [17/whatsapp], `waha` [17/whatsapp], `formbricks` [18/encuestas]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Revisa la FSL antes de ofrecer Typebot como servicio a terceros. Es fair-source con condiciones específicas; no se debe presentar toda modalidad como software sin restricciones comerciales.
 
 ### Rocket.Chat (`rocket-chat`)

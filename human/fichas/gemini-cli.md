@@ -4,6 +4,12 @@
 
 > CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI.
 
+## Cuándo elegir esta ficha
+
+La ruta Google individual aparece derivada a Antigravity CLI. Retirar Gemini CLI quitaría el flujo de Code Assist empresarial y su cliente abierto. Separar licencia de cliente, plan empresarial y acceso de modelos. No inferir que la migración conserva configuración o automatizaciones.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/google-gemini/gemini-cli) · [Fuente 2](https://github.com/google-antigravity/antigravity-cli) · [Fuente 3](https://github.com/google-gemini/gemini-cli/commit/60f8082b14ffa7f10b608270232f3f57b5abbec8)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 109k | Apache-2.0 | TypeScript | 2026-11-10 |

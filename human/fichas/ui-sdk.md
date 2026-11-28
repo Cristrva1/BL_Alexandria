@@ -4,6 +4,12 @@
 
 > Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
 
+## Cuándo elegir esta ficha
+
+El upstream se presenta como biblioteca de comportamientos para construir y manejar UI. Sin la ficha se pierde una ruta específica a sus comportamientos y recetas. Radix cubre muchas primitivas React como referencia funcional; hace falta comparar APIs para sustituir un comportamiento.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/vercel-labs/ui) · [Fuente 2](https://www.radix-ui.com/primitives/docs/overview/introduction) · [Fuente 3](https://github.com/vercel-labs/ui/commit/8c5d8cf22854bad67389fb342bdeca2fd7c37539)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 4.6k | Apache-2.0 | TypeScript | 2026-11-14 |

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad
 
-Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (141 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -61,21 +61,20 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `aircrack-ng` | pruebas | Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre… | 2 Intermedio | 51 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `crapi` | pruebas | API deliberadamente vulnerable de OWASP (completely ridiculous API) para… | 2 Intermedio | 44 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `caido` | pruebas | Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic)… | 1 Básico | 39 | — (propietaria) | alternativa |
-| `httpx` | reconocimiento | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 77 | MIT (OSI permisiva) | recomendado |
+| `httpx` | reconocimiento | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
 | `subfinder` | reconocimiento | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
 | `amass` | reconocimiento | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `interactsh` | reconocimiento | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
-| `naabu` | reconocimiento | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
+| `naabu` | reconocimiento | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | sin grupo |
 | `dnsx` | reconocimiento | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
-| `noir` | reconocimiento | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
 | `rustscan` | reconocimiento | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `nmap` | reconocimiento | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 59 | NPSL (no OSI) (OSI copyleft) | sin grupo |
 | `masscan` | reconocimiento | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `metasploit` | explotacion-c2 | Framework de referencia para pruebas de penetración: módulos de exploits… | 3 Avanzado | 73 | BSD-3-Clause (OSI copyleft) | sin grupo |
 | `peass-ng` | explotacion-c2 | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de… | 3 Avanzado | 72 | GPL-2.0-or-later (con aclaraciones) (OSI copyleft) | sin grupo |
 | `sliver` | explotacion-c2 | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 68 | GPL-3.0 (OSI copyleft) | recomendado |
-| `caldera` | explotacion-c2 | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 64 | Apache-2.0 (OSI permisiva) | recomendado |
-| `atomic-red-team` | explotacion-c2 | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
+| `caldera` | explotacion-c2 | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `atomic-red-team` | explotacion-c2 | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `empire` | explotacion-c2 | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma… | 4 Experto | 60 | BSD-3-Clause (OSI permisiva) | alternativa |
 | `evilginx2` | explotacion-c2 | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 52 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `mythic` | explotacion-c2 | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía… | 4 Experto | 48 | BSD-3-Clause (OSI permisiva) | alternativa |
@@ -104,7 +103,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `securityonion` | deteccion | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y… | 4 Experto | 52 | Elastic-2.0 (source-available) | sin grupo |
 | `detection-rules` | deteccion | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM… | 1 Básico | 49 | Elastic-2.0 (source-available) | sin grupo |
 | `pi-alert-leiweibau` | deteccion | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece… | 3 Avanzado | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `loki` | deteccion | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints… | 1 Básico | 42 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `osv-scanner` | nube-contenedores | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `trivy` | nube-contenedores | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `falco` | nube-contenedores | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls… | 4 Experto | 76 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -127,6 +125,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `bla` | defensa | Herramientas para aplicar protecciones y comprobar superficies de software… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
 | `dependency-track` | defensa | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `cdxgen` | defensa | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
+| `noir` | defensa | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
 | `dependency-check` | defensa | Análisis de composición de software (SCA) de OWASP: detecta dependencias con… | 1 Básico | 60 | Apache-2.0 (OSI permisiva) | alternativa |
 | `dep-scan` | defensa | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
 | `java-html-sanitizer` | defensa | Biblioteca Java de OWASP que limpia HTML de terceros con políticas… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -156,8 +155,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `hayabusa` | ir-forense | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 61 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `velociraptor` | ir-forense | EDR/IR open source para recolección forense a escala: consultas VQL sobre… | 4 Experto | 58 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `volatility3` | ir-forense | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para… | 3 Avanzado | 48 | Volatility Software License 1.0 (no OSI) (source-available) | sin grupo |
-| `autopsy` | ir-forense | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para… | 3 Avanzado | 46 | — (sin licencia detectada) | recomendado |
-| `sleuthkit` | ir-forense | Toolkit forense de sistemas de archivos: recupera y analiza particiones… | 3 Avanzado | 42 | — (sin licencia detectada) | alternativa |
+| `autopsy` | ir-forense | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para… | 3 Avanzado | 46 | — (sin licencia detectada) | sin grupo |
+| `sleuthkit` | ir-forense | Toolkit forense de sistemas de archivos: recupera y analiza particiones… | 3 Avanzado | 42 | — (sin licencia detectada) | sin grupo |
 | `opencti` | inteligencia-amenazas | Plataforma de threat intel orientada a grafos (Filigran): Community Edition… | 3 Avanzado | 75 | Apache-2.0 (Community) + licencia Enterprise (open-core) | sin grupo |
 | `misp` | inteligencia-amenazas | Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y… | 3 Avanzado | 51 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
@@ -167,9 +166,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 Este tema supera ~25k tokens, así que las fichas están en partes. Carga solo la parte que contiene los repos de la tabla que te interesan:
 
-- `categoria-16-parte-1.md`: `angr`, `ghidra`, `ilspy`, `radare2`, `apktool`, `imhex`, `jadx`, `capa`, `frida`, `yara`, `rizin`, `x64dbg`, `pwndbg`, `raddebugger`, `dnspy`, `nuclei`, `mitmproxy`, `locust`, `juice-shop`, `zaproxy`, `sqlmap`, `wireshark`, `k6`, `pwntools`, `aflplusplus`, `ffuf`, `bettercap`, `hashcat`, `wrongsecrets`, `nettacker`, `dirsearch`, `feroxbuster`, `securecodebox`, `webgoat`, `gobuster`, `owtf`, `john`, `syzkaller`, `thc-hydra`, `wpscan`, `aircrack-ng`, `crapi`, `caido`, `httpx`, `subfinder`, `amass`, `interactsh`, `naabu`, `dnsx`, `noir`, `rustscan`, `nmap`
-- `categoria-16-parte-2.md`: `masscan`, `metasploit`, `peass-ng`, `sliver`, `caldera`, `atomic-red-team`, `empire`, `evilginx2`, `mythic`, `ligolo-ng`, `social-engineer-toolkit`, `netexec`, `bloodhound`, `impacket`, `goad`, `certipy`, `mimikatz`, `responder`, `rubeus`, `crowdsec`, `wazuh`, `osquery`, `zeek`, `modsecurity`, `coreruleset`, `arkime`, `suricata`, `fail2ban`, `coraza`, `sigma`, `shuffle`, `securityonion`, `detection-rules`, `pi-alert-leiweibau`, `loki`, `osv-scanner`, `trivy`, `falco`, `checkov`, `prowler`, `syft`, `cosign`, `grype`, `kube-bench`, `scubagear`, `pacu`, `rea`, `strix`, `shannon`, `garak`, `craft-anything`, `defectdojo`, `semgrep`, `threat-dragon`, `bla`
-- `categoria-16-parte-3.md`: `dependency-track`, `cdxgen`, `dependency-check`, `dep-scan`, `java-html-sanitizer`, `pytm`, `lynis`, `owasp-java-encoder`, `cheatsheetseries`, `wstg`, `mastg`, `seclists`, `payloadsallthethings`, `hacktricks`, `awesome-reverse-engineering`, `masvs`, `asvs`, `owasp-top10`, `owasp-llm-top10`, `aisvs`, `owasp-devguide`, `owasp-api-security`, `awesome-ai-reverse-engineering`, `owasp-ai-testing-guide`, `skillspector`, `cybersecurity-skills`, `security-audit-skill`, `defending-code-reference-harness`, `hayabusa`, `velociraptor`, `volatility3`, `autopsy`, `sleuthkit`, `opencti`, `misp`
+- `categoria-16-parte-1.md`: `angr`, `ghidra`, `ilspy`, `radare2`, `apktool`, `imhex`, `jadx`, `capa`, `frida`, `yara`, `rizin`, `x64dbg`, `pwndbg`, `raddebugger`, `dnspy`, `nuclei`, `mitmproxy`, `locust`, `juice-shop`, `zaproxy`, `sqlmap`, `wireshark`, `k6`, `pwntools`, `aflplusplus`, `ffuf`, `bettercap`, `hashcat`, `wrongsecrets`, `nettacker`, `dirsearch`, `feroxbuster`, `securecodebox`, `webgoat`, `gobuster`, `owtf`, `john`, `syzkaller`, `thc-hydra`, `wpscan`, `aircrack-ng`, `crapi`, `caido`, `httpx`, `subfinder`, `amass`, `interactsh`, `naabu`, `dnsx`, `rustscan`, `nmap`, `masscan`
+- `categoria-16-parte-2.md`: `metasploit`, `peass-ng`, `sliver`, `caldera`, `atomic-red-team`, `empire`, `evilginx2`, `mythic`, `ligolo-ng`, `social-engineer-toolkit`, `netexec`, `bloodhound`, `impacket`, `goad`, `certipy`, `mimikatz`, `responder`, `rubeus`, `crowdsec`, `wazuh`, `osquery`, `zeek`, `modsecurity`, `coreruleset`, `arkime`, `suricata`, `fail2ban`, `coraza`, `sigma`, `shuffle`, `securityonion`, `detection-rules`, `pi-alert-leiweibau`, `osv-scanner`, `trivy`, `falco`, `checkov`, `prowler`, `syft`, `cosign`, `grype`, `kube-bench`, `scubagear`, `pacu`, `rea`, `strix`, `shannon`, `garak`, `craft-anything`, `defectdojo`, `semgrep`, `threat-dragon`, `bla`, `dependency-track`
+- `categoria-16-parte-3.md`: `cdxgen`, `noir`, `dependency-check`, `dep-scan`, `java-html-sanitizer`, `pytm`, `lynis`, `owasp-java-encoder`, `cheatsheetseries`, `wstg`, `mastg`, `seclists`, `payloadsallthethings`, `hacktricks`, `awesome-reverse-engineering`, `masvs`, `asvs`, `owasp-top10`, `owasp-llm-top10`, `aisvs`, `owasp-devguide`, `owasp-api-security`, `awesome-ai-reverse-engineering`, `owasp-ai-testing-guide`, `skillspector`, `cybersecurity-skills`, `security-audit-skill`, `defending-code-reference-harness`, `hayabusa`, `velociraptor`, `volatility3`, `autopsy`, `sleuthkit`, `opencti`, `misp`
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

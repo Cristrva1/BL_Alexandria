@@ -4,7 +4,7 @@
 
 Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.
 
-31 repos · 6 secciones
+33 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -22,9 +22,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Analítica web y de producto](#analítica-web-y-de-producto) — 4 repos
 - [BI, dashboards y chat con datos](#bi-dashboards-y-chat-con-datos) — 6 repos
 - [Librerías de gráficos](#librerías-de-gráficos) — 5 repos
-- [Recursos y casos de uso](#recursos-y-casos-de-uso) — 2 repos
+- [Recursos y casos de uso](#recursos-y-casos-de-uso) — 3 repos
 - [Inteligencia de fuentes abiertas y mapas](#inteligencia-de-fuentes-abiertas-y-mapas) — 7 repos
-- [Fotogrametría y mapas desde imágenes](#fotogrametría-y-mapas-desde-imágenes) — 7 repos
+- [Datos geoespaciales, fotogrametría y mapas](#datos-geoespaciales-fotogrametría-y-mapas) — 8 repos
 
 ## Analítica web y de producto
 
@@ -60,6 +60,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [awesome-bigdata](../fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura | Sin clave propia de API de IA en la ruta básica |
 | [awesome-dataviz](../fichas/awesome-dataviz.md) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | Tu objetivo encaja con estos ejemplos: Encontrar una biblioteca de mapas; Comparar gráficos para React y JavaScript | Sin clave propia de API de IA en la ruta básica |
 | [data-analyst-roadmap](../fichas/data-analyst-roadmap.md) | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. | Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto | Sin clave propia de API de IA en la ruta básica |
 
@@ -75,7 +76,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Recon-ng](../fichas/recon-ng.md) | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit. | Tu objetivo encaja con estos ejemplos: organizar un reconocimiento OSINT autorizado en espacios de trabajo reproducibles; automatizar consultas a varias fuentes con módulos y claves de API | Sin clave propia de API de IA en la ruta básica |
 | [Pythia](../fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Tu objetivo encaja con estos ejemplos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos | Sin clave propia de API de IA en la ruta básica |
 
-## Fotogrametría y mapas desde imágenes
+## Datos geoespaciales, fotogrametría y mapas
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
@@ -86,6 +87,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [kepler.gl](../fichas/kepler-gl.md) | Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter. | Tu objetivo encaja con estos ejemplos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno | Sin clave propia de API de IA en la ruta básica |
 | [ODM](../fichas/odm.md) | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. | Tu objetivo encaja con estos ejemplos: Crear un mapa a partir de fotos de dron; Producir una nube de puntos para inspección | Sin clave propia de API de IA en la ruta básica |
 | [WebODM](../fichas/webodm.md) | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. | Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica | Sin clave propia de API de IA en la ruta básica |
+| [GlobalBuildingAtlas](../fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

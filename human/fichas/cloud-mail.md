@@ -4,6 +4,12 @@
 
 > Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.
 
+## Cuándo elegir esta ficha
+
+Se perderían buzones y enrutamiento basados en Cloudflare. Listmonk, Mautic y Novu solo sustituyen etapas de campañas/notificaciones y necesitan transporte. No hay reemplazo de buzón en esas tres fichas.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/maillab/cloud-mail/blob/HEAD/README.md) · [Fuente 2](https://github.com/maillab/cloud-mail/commit/152b890b3350faf40a9c7739f02bc13f03a93bf6)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 16k | MIT | JavaScript | 2026-11-14 |

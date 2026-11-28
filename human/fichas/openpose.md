@@ -4,6 +4,14 @@
 
 > Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.
 
+## Cuándo elegir esta ficha
+
+La referencia aporta esquemas de puntos y compatibilidad con datasets históricos. Para nuevas integraciones, MediaPipe o MMPose tienen pipelines distintos y no deben asumir compatibilidad de índices. La licencia académica y actividad efectivamente observada desaconsejan usarlo como predeterminado.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/5c5d96523ef917bd30301245fdc8343937cae48d/README.md) · [Fuente 2](https://github.com/CMU-Perceptual-Computing-Lab/openpose/commit/5c5d96523ef917bd30301245fdc8343937cae48d) · [Fuente 3](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 34.6k | Licencia académica no comercial | C++ | 2026-11-14 |

@@ -4,6 +4,14 @@
 
 > Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos.
 
+## Cuándo elegir esta ficha
+
+El último commit comprobado de la rama predeterminada es de 2023. Se perdería la ruta concreta de timelines JS/CSS y el flujo de exportación descrito por el autor. Anime.js y GSAP cubren secuencias JS, no una migración de la API ni todos los exportadores.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/daybrush/scenejs) · [Fuente 2](https://daybrush.com/scenejs/features.html) · [Fuente 3](https://animejs.com/documentation/timeline/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 2.8k | MIT | TypeScript | 2026-11-14 |

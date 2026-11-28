@@ -4,6 +4,12 @@
 
 > Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.
 
+## Cuándo elegir esta ficha
+
+Mover la exposición de SWR de componentes a obtención de datos. Al retirarlo se perdería una ruta React sencilla con su API de claves y revalidación. TanStack Query cubre datos, mutaciones e invalidación con contratos distintos, sin migración automática.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://swr.vercel.app/docs/getting-started) · [Fuente 2](https://tanstack.com/query/latest/docs/framework/react/overview) · [Fuente 3](https://github.com/vercel/swr/commit/8148ef012fd5b317d1e8ec2da4b2ca0673f63c0f)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 32.5k | MIT | TypeScript | 2026-06-23 |

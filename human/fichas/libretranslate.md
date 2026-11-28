@@ -4,6 +4,12 @@
 
 > Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos.
 
+## Cuándo elegir esta ficha
+
+Conservar la ficha técnica externa y mover solo su presentación práctica a traducción. Se perdería una API de traducción especializada, sin equivalencia exacta con Ollama: el motor conversacional es una ruta distinta para texto general.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/LibreTranslate/LibreTranslate/b25f0b139430371119ad824c8daac36a61f02849/README.md) · [Fuente 2](https://api.github.com/repos/LibreTranslate/LibreTranslate) · [Fuente 3](https://github.com/LibreTranslate/LibreTranslate/commit/b25f0b139430371119ad824c8daac36a61f02849)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 17.8k | AGPL-3.0 | Python | 2026-11-22 |

@@ -4,6 +4,14 @@
 
 > Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño.
 
+## Cuándo elegir esta ficha
+
+Presentar como archivo de comparación con procedencia incierta. Se perdería amplitud entre distintas interfaces si se retira. La guía enseña escritura verificable y el otro archivo concentra ejemplos de GPTs.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/162db92f54d717d8ebd12292e155aeef32bb4b3c/README.md) · [Fuente 2](https://api.github.com/repos/x1xhlol/system-prompts-and-models-of-ai-tools) · [Fuente 3](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/commit/162db92f54d717d8ebd12292e155aeef32bb4b3c)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 145k | GPL-3.0 | — | 2026-11-14 |

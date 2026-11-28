@@ -4,6 +4,14 @@
 
 > Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal.
 
+## Cuándo elegir esta ficha
+
+La ayuda cubre el primer acceso y el ejemplo enseña una organización específica. Conservar juntos como referencias de aprendizaje.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/kepano/kepano-obsidian/blob/473697347a0eaac790a6596229c741b3915f3b77/Readme.md) · [Fuente 2](https://api.github.com/repos/kepano/kepano-obsidian) · [Fuente 3](https://github.com/kepano/kepano-obsidian/commit/473697347a0eaac790a6596229c741b3915f3b77)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 6k | MIT | — | 2026-11-14 |

@@ -311,7 +311,7 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `design.md`, `figma-context-mcp`
 
 ## `design.md`
-role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,typescript
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=skills,design,typescript
 
 **Qué es:** Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.
 **Stack:** Node para CLI; archivo DESIGN.md de prueba

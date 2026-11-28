@@ -4,7 +4,7 @@
 
 Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.
 
-35 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
+36 repos únicos · 3 subcategorías. [Ver en el explorador](../../docs/index.html#/area/vision).
 
 ## Opciones para empezar
 
@@ -57,11 +57,12 @@ Herramientas especializadas en caras y retratos.
 
 Crear y explorar mapas con imágenes o fuentes abiertas.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=vision&topic=vision-mapas)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=vision&topic=vision-mapas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [deck.gl](../fichas/deck-gl.md) | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y vistas 3D. | Sin clave propia de API de IA en la ruta básica |
+| [GlobalBuildingAtlas](../fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica |
 | [gods-eye-view](../fichas/gods-eye-view.md) | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. | API de IA opcional |
 | [kepler.gl](../fichas/kepler-gl.md) | Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter. | Sin clave propia de API de IA en la ruta básica |
 | [Leaflet](../fichas/leaflet.md) | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de teselas, marcadores, GeoJSON y un ecosistema enorme de plugins. | Sin clave propia de API de IA en la ruta básica |

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 2 de 3)
 
-Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (141 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -17,17 +17,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 Índice y tabla de decisión completa: `categoria-16.md`.
 
 ## Fichas
-
-### masscan (`masscan`)
-
-- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 52/100
-- **Qué es:** Port scanner asíncrono de Robert David Graham.
-- **Cuándo elegirlo:** Casos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio.
-- **Requisitos:** nivel 2: preparación media; C, Makefile; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/robertdavidgraham/masscan/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Compila con `make` tras clonar o usa el paquete, y escanea solo un rango de laboratorio. Éxito: Obtienes puertos abiertos a alta velocidad.
-- **Combina con:** `nmap`, `rustscan`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
 
 ### Metasploit Framework (`metasploit`)
 
@@ -65,26 +54,24 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` — fuente: https://github.com/apache/caldera/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Arranca con `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` y abre la UI en el puerto 8888. Éxito: Accedes a la consola para crear una operación de lab.
 - **Combina con:** `atomic-red-team`, `wazuh` [16/deteccion], `metasploit`
-- **Alternativas:** `atomic-red-team`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Atomic Red Team (`atomic-red-team`)
 
-- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 62/100 · alternativa en «Emulación de adversarios»
+- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 62/100
 - **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
 - **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
 - **Combina con:** `wazuh` [16/deteccion], `sigma` [16/deteccion], `caldera`, `evilginx2`
-- **Alternativas:** `caldera`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Empire (`empire`)
@@ -395,16 +382,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido. Éxito: El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada.
 - **Riesgos y avisos:** El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento….
 
-### LOKI (`loki`)
-
-- **Repo:** https://github.com/Neo23x0/Loki · GPL-3.0 · nivel 1 · 42/100
-- **Qué es:** IOC scanner de Neo23x0 (GPL-3).
-- **Cuándo elegirlo:** Casos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP.
-- **Requisitos:** nivel 1: preparación sencilla; Python, requirements.txt; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Neo23x0/Loki/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba. Éxito: Hits de IOC en consola.
-- **Combina con:** `yara` [16/reversing], `misp` [16/inteligencia-amenazas]
-
 ### OSV-Scanner (`osv-scanner`)
 
 - **Repo:** https://github.com/google/osv-scanner · Apache-2.0 · nivel 1 · 79/100 · recomendado en «Análisis de dependencias vulnerables (SCA)»
@@ -628,6 +605,21 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Inspecciona una protección en una copia pequeña y compara comportamiento y diferencias antes de adoptarla Éxito: Puedes identificar qué transforma y qué pruebas conservarían la función original
 - **Combina con:** `rea` [16/agentes], `claude-code` [20/terminal], `frida` [16/reversing]
 - **Riesgos y avisos:** Sin alternativas declaradas. Mide si la ofuscación compensa su coste de mantenimiento. Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso.
+
+### Dependency-Track (`dependency-track`)
+
+- **Repo:** https://github.com/DependencyTrack/dependency-track · Apache-2.0 · nivel 2 · 65/100
+- **Qué es:** Proyecto insignia de OWASP para análisis continuo de componentes (Component Analysis) a partir de listas de materiales de software (SBOM).
+- **Cuándo elegirlo:** Casos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Java, Makefile, pom.xml; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://docs.dependencytrack.org/getting-started/deploy-docker/
+
+  ```bash
+  curl -LO https://dependencytrack.org/docker-compose.yml
+  docker compose up -d
+  ```
+- **Primera prueba propuesta (no ejecutada):** Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio. Éxito: Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.
+- **Combina con:** `cdxgen`, `syft` [16/nube-contenedores], `defectdojo`, `dependency-check`
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

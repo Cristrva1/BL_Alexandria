@@ -38,8 +38,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `pdfmathtranslate` | pdf | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 67 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `pdfcraft` | pdf | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 54 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `pdfding` | pdf | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 46 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 77 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pdfding` | gestion | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 46 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -170,7 +170,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: preparación sencilla; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba; hardware prerequisites; API de IA: no; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `brew install ocrmypdf` — fuente: https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Añade OCR a una copia escaneada y busca una palabra que conoces Éxito: Puedes seleccionar y buscar texto manteniendo la imagen de la página
-- **Combina con:** `tesseract`, `paperless-ngx` [13/gestion], `stirling-pdf` [13/pdf], `pdf-inspector` [13/conversion], `pdfding` [13/pdf]
+- **Combina con:** `tesseract`, `paperless-ngx` [13/gestion], `stirling-pdf` [13/pdf], `pdf-inspector` [13/conversion], `pdfding` [13/gestion]
 - **Riesgos y avisos:** Se retiró docling por no estar documentado. La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original.
 
 ### Tesseract (`tesseract`)
@@ -288,6 +288,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `stirling-pdf`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativa (elige una): stirling-pdf. Se retiró markitdown por falta de relación. La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web.
 
+### paperless-ngx (`paperless-ngx`)
+
+- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 77/100
+- **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
+- **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
+- **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/setup.md
+- **Primera prueba propuesta (no ejecutada):** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta Éxito: Puedes abrir el original y localizarlo con su texto OCR
+- **Combina con:** `ocrmypdf` [13/ocr], `tesseract` [13/ocr], `erpnext` [18/crm]
+- **Riesgos y avisos:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real.
+
 ### PdfDing (`pdfding`)
 
 - **Repo:** https://github.com/mrmn2/PdfDing · AGPL-3.0 · nivel 1 · 46/100
@@ -306,19 +317,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
       mrmn/pdfding:latest
   ```
 - **Primera prueba propuesta (no ejecutada):** Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión Éxito: Puedes encontrar el documento y su progreso guardado
-- **Combina con:** `ocrmypdf` [13/ocr], `paperless-ngx` [13/gestion], `coolify` [22/infraestructura]
+- **Combina con:** `ocrmypdf` [13/ocr], `paperless-ngx`, `coolify` [22/infraestructura]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las…. El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia. Sin OCR ni IA integrados.
-
-### paperless-ngx (`paperless-ngx`)
-
-- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 77/100
-- **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
-- **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
-- **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/setup.md
-- **Primera prueba propuesta (no ejecutada):** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta Éxito: Puedes abrir el original y localizarlo con su texto OCR
-- **Combina con:** `ocrmypdf` [13/ocr], `tesseract` [13/ocr], `erpnext` [18/crm]
-- **Riesgos y avisos:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

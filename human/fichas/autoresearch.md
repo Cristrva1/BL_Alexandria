@@ -4,6 +4,12 @@
 
 > Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA.
 
+## Cuándo elegir esta ficha
+
+Su bucle mide mejoras en entrenamiento nanochat, con presupuesto de GPU. Research de fuentes tiene otra salida. El uso en un agente de código depende de las instrucciones del proyecto.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/karpathy/autoresearch/blob/228791fb499afffb54b46200aca536f79142f117/README.md) · [Fuente 2](https://github.com/karpathy/autoresearch/blob/master/README.md) · [Fuente 3](https://github.com/karpathy/autoresearch)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 100k | — | Python | 2026-06-23 |

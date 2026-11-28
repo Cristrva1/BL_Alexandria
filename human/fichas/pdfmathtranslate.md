@@ -4,6 +4,12 @@
 
 > Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe.
 
+## Cuándo elegir esta ficha
+
+El ID conserva identidad tras cambio de slug. El README apunta a otro repo para v2 y el original aún tiene actividad. Conservar la ficha de tarea y etiquetar rutas.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/PDFMathTranslate/PDFMathTranslate/blob/4d707315ed99b6c29571d5b24e2f3723c337955c/README.md) · [Fuente 2](https://api.github.com/repos/PDFMathTranslate/PDFMathTranslate) · [Fuente 3](https://github.com/PDFMathTranslate/PDFMathTranslate/commit/4d707315ed99b6c29571d5b24e2f3723c337955c)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 38.4k | AGPL-3.0 | Python | 2026-11-10 |

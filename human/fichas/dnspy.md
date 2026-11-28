@@ -1,8 +1,14 @@
 [🏠 Inicio](../README.md) › [🔍 Analizar software y comprobar su seguridad](../categorias/16-analisis-de-software-y-seguridad.md) › Depuración e inspección de procesos
 
-# 🖥️ dnSpy
+# 🖥️ dnSpyEx
 
 > Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.
+
+## Cuándo elegir esta ficha
+
+El upstream de la ficha es dnSpyEx y se declara continuación no oficial. El identificador confirma qué proyecto está catalogado.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/dnSpyEx/dnSpy/blob/bb09d2c54718e0f73d01d2e1085ddb8772aee555/README.md) · [Fuente 2](https://github.com/dnSpyEx/dnSpy/commit/bb09d2c54718e0f73d01d2e1085ddb8772aee555)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -81,7 +87,7 @@ Comando copiado literalmente de el README (sección «Building»); revisado el 2
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar dnSpy para mi objetivo y necesito pasos guiados. Lee https://github.com/dnSpyEx/dnSpy/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar dnSpyEx para mi objetivo y necesito pasos guiados. Lee https://github.com/dnSpyEx/dnSpy/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

@@ -1,0 +1,3129 @@
+{
+ "checked_at": "2026-11-27",
+ "relations": [
+  {
+   "ids": [
+    "ace-step-1.5",
+    "audacity"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Genere un WAV con modelo autorizado e impórtelo para editar y mezclar en Audacity. Compruebe clipping, muestreo y coherencia de la letra.",
+     "sources": [
+      "https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md",
+      "https://github.com/audacity/audacity/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "activepieces",
+    "baserow"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Activepieces lista la pieza Baserow. El flujo procesa el aviso y Baserow conserva la fila. Verificar credenciales, permisos de tabla y versión de pieza. Un evento de muestra produce una fila y deja trazabilidad.",
+     "sources": [
+      "https://github.com/activepieces/activepieces/blob/HEAD/README.md",
+      "https://github.com/activepieces/activepieces",
+      "https://www.activepieces.com/pieces"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "activepieces",
+    "formbricks"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "El catálogo de Activepieces lista Formbricks. La encuesta conserva respuestas y el flujo puede procesar el evento si la pieza/versión ofrece el disparador requerido. Confirmar campos, clave y reintentos.",
+     "sources": [
+      "https://github.com/activepieces/activepieces/blob/HEAD/README.md",
+      "https://github.com/activepieces/activepieces",
+      "https://www.activepieces.com/pieces"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "activepieces",
+    "prefect"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Coinciden para procesos programados con entradas y salidas simples. Activepieces usa piezas visuales; Prefect código Python. Un flujo de importación es comparable si ambos producen el mismo recuento y registro de fallos.",
+     "sources": [
+      "https://github.com/activepieces/activepieces/blob/HEAD/README.md",
+      "https://github.com/activepieces/activepieces",
+      "https://www.activepieces.com/pieces"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "actual",
+    "firefly-iii"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "No se estableció sincronización bidireccional oficial que preserve reglas, categorías y saldos. Compartir un CSV es un flujo de migración condicionado a mapeo y conciliación.",
+     "sources": [
+      "https://github.com/actualbudget/actual/blob/9084b2f0852dc49f118b435abd9f7f2f6322b46c/README.md",
+      "https://github.com/firefly-iii/firefly-iii/blob/498b66c758e219d2b21f61f037dbce1b8479e01e/readme.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "adguardhome",
+    "pi-hole"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos filtran DNS. Comparar administración, registros y cifrado o DHCP por versión. En una red de prueba validar resolución esperada con un cliente cuyo DNS se pueda revertir.",
+     "sources": [
+      "https://github.com/AdguardTeam/AdGuardHome/blob/82ddec5822ee73b42d26bfc51e9ceab4934d243f/README.md",
+      "https://github.com/pi-hole/pi-hole/blob/f7c0220e63e753c664a1ec08d42d6b647b86005d/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "age",
+    "sops"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "SOPS cifra valores de configuración y usa destinatarios age para proteger la clave de datos. Verificar descifrado solo con destinatario de pruebas.",
+     "sources": [
+      "https://github.com/getsops/sops",
+      "https://github.com/FiloSottile/age/blob/b74dce4cdbe35b5e5f66c06d9612b72f89028758/README.md",
+      "https://github.com/getsops/sops/blob/5032a7184f1a1cac0f8cf3bc6b680b339a500395/README.rst"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ant-design",
+    "ui"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Elegir biblioteca principal de React. shadcn copia código y Ant Design ofrece componentes empaquetados. Migrar tokens, API y estados de tabla exige cambios propios.",
+     "sources": [
+      "https://ui.shadcn.com/docs/registry",
+      "https://ant.design/components/table/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "antigravity-awesome-skills",
+    "awesome-agent-skills"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Alternativas para descubrir una skill. VoltAgent localiza upstream y Agentic Awesome Skills puede distribuir una copia. Contrastar versión y licencia al cambiar de ruta.",
+     "sources": [
+      "https://github.com/VoltAgent/awesome-agent-skills",
+      "https://github.com/sickn33/agentic-awesome-skills"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "apache-iceberg",
+    "delta-lake"
+   ],
+   "findings": [
+    {
+     "kind": "conflicto confirmado",
+     "note": "Sus metadatos transaccionales nativos son distintos. Un directorio Parquet o su contrato de tabla Iceberg no se abre como una tabla Delta intacta sin conversión o mecanismo de interoperabilidad con versiones y gobernanza verificadas. Éxito tras conversión si coinciden esquema, filas y estado esperado.",
+     "sources": [
+      "https://iceberg.apache.org/spec/",
+      "https://raw.githubusercontent.com/delta-io/delta/master/PROTOCOL.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "apache-iceberg",
+    "spark"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Spark ejecuta SQL. Iceberg gestiona metadatos y snapshots. Elegir un catálogo y librerías compatibles con Spark y Scala. Éxito si una tabla de juguete permite leer un snapshot anterior y otro actual distinguibles.",
+     "sources": [
+      "https://iceberg.apache.org/spark-quickstart/",
+      "https://iceberg.apache.org/spec/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "appsmith",
+    "tooljet"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Ambos construyen paneles sobre datos existentes. Elegir una superficie de operación. Confirmar conector SQL/REST, widget y Git por plan. La prueba es que ambos puedan reproducir el panel de ejemplo limitado al mismo esquema.",
+     "sources": [
+      "https://github.com/appsmithorg/appsmith/blob/HEAD/README.md",
+      "https://docs.appsmith.com/getting-started/setup/manage-plans/downgrade-plan?downgrade-plan-type=remove-license-key",
+      "https://docs.appsmith.com/advanced-concepts/version-control-with-git"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "appwrite",
+    "supabase"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Backends con SDK, autenticación y almacenamiento. Supabase requiere diseñar PostgreSQL y políticas RLS. Appwrite utiliza sus propias APIs de tablas y control de acceso. Comparar permisos por operación antes de comprometer migración.",
+     "sources": [
+      "https://supabase.com/docs/guides/database/postgres/row-level-security",
+      "https://appwrite.io/docs/products/databases"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "assistant-ui",
+    "copilotkit"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Solapan chat. assistant-ui prioriza superficie de chat, CopilotKit es preferible para estado y acciones de agente con AG-UI. Revisar el protocolo del backend antes de escoger.",
+     "sources": [
+      "https://www.assistant-ui.com/docs/installation",
+      "https://github.com/CopilotKit/CopilotKit"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "assistant-ui",
+    "vercel-ai"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Adaptador AI SDK para la interfaz, transporte compatible y ruta del lado servidor. El frontend pinta mensajes, el servidor transmite y guarda claves y verifica permisos. Primera prueba con proveedor simulado.",
+     "sources": [
+      "https://www.assistant-ui.com/docs/runtimes/ai-sdk/overview",
+      "https://ai-sdk.dev/docs/ai-sdk-ui/chatbot",
+      "https://ai-sdk.dev/docs/ai-sdk-core/testing"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "audacity",
+    "rnnoise"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Adapte a PCM crudo mono de 16 bits a 48 kHz para la demo de RNNoise y luego importe WAV a Audacity para comparar. El catálogo no acredita un plugin directo instalado. Revise silencios y sibilantes.",
+     "sources": [
+      "https://github.com/xiph/rnnoise/blob/main/README",
+      "https://github.com/audacity/audacity/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "audacity",
+    "rubberband"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Intercambie WAV PCM entre editor y CLI; revise sample rate, canales y duración. Integrar la biblioteca en un producto distribuido añade revisión de licencia y no es necesaria para el intercambio.",
+     "sources": [
+      "https://github.com/audacity/audacity/blob/master/README.md",
+      "https://github.com/breakfastquay/rubberband/blob/default/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "audiobookshelf",
+    "jellyfin"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Posible solapamiento en audio reproducible, y Audiobookshelf cubre biblioteca y progreso de audiolibros/podcast. Mantener Jellyfin para medios generales. Comparar marcador y compatibilidad del cliente.",
+     "sources": [
+      "https://github.com/jellyfin/jellyfin/blob/51a3e2d462f9417ab9302b07e220b3eceb503143/README.md",
+      "https://github.com/advplyr/audiobookshelf/blob/5de038dafda294d13ca48861eda7d4405bbd7368/readme.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "awesome-claude-skills",
+    "composio"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La skill orienta la tarea. Rube MCP descubre y ejecuta operaciones del servicio conectado. Requiere cuenta correspondiente y autorización acotada. Evidencia documental: guía Calendar identifica la conexión y operaciones.",
+     "sources": [
+      "https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "awesome-claude-skills",
+    "wshobson-agents"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "Se inspeccionaron mecanismos de instalación y alcance. No hay evidencia de que un paquete de wshobson incluya las guías Rube de esa colección y preserve autenticación y herramientas.",
+     "sources": [
+      "https://github.com/wshobson/agents",
+      "https://github.com/ComposioHQ/awesome-claude-skills"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "backtesting-py",
+    "freqtrade"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Coinciden en validación histórica por barras en un caso reducido. Framework, modelo de tarifas y operaciones difieren. Un fixture y supuestos fijados permiten interpretar divergencias.",
+     "sources": [
+      "https://github.com/freqtrade/freqtrade/blob/HEAD/README.md",
+      "https://www.freqtrade.io/en/stable/configuration/",
+      "https://www.freqtrade.io/en/stable/lookahead-analysis/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "backtesting-py",
+    "openbb"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Preparar OHLC para el motor desde un proveedor OpenBB compatible. Alinear símbolos, ajuste, zona, moneda, campo Volume y derecho de uso. Aceptar solo si el CSV fixture conserva conteos y orden temporal.",
+     "sources": [
+      "https://github.com/openbq-org/OpenBB/blob/HEAD/README.md",
+      "https://docs.openbb.co/odp",
+      "https://github.com/kernc/backtesting.py/blob/HEAD/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "backtesting-py",
+    "timesfm"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Usar predicciones producidas únicamente con información anterior al instante simulado y fijar versión/pesos. El dataframe de señales es el contrato propio. Validar ausencia de fuga y baseline simple.",
+     "sources": [
+      "https://github.com/google-research/timesfm/blob/HEAD/README.md",
+      "https://github.com/kernc/backtesting.py/blob/HEAD/README.md",
+      "https://kernc.github.io/backtesting.py/doc/backtesting/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "biome",
+    "pre-commit",
+    "ruff"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "pre-commit orquesta hooks configurados por lenguaje. Biome procesa JS/TS y Ruff Python. Validar dos fixtures de formato y evitar dos autocorrecciones de la misma extensión.",
+     "sources": [
+      "https://biomejs.dev/recipes/git-hooks/",
+      "https://docs.astral.sh/ruff/integrations/",
+      "https://pre-commit.com/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "bitwarden-clients",
+    "vaultwarden"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Configurar la URL del servidor no oficial en un cliente compatible. Probar credenciales desechables y exportación/restauración. Validar funciones particulares por versión.",
+     "sources": [
+      "https://github.com/dani-garcia/vaultwarden",
+      "https://github.com/bitwarden/clients/blob/e3d37ad43e1cbf3780728890f9979436b380b21a/README.md",
+      "https://github.com/dani-garcia/vaultwarden/blob/dbd7829ed140ae3458abc97dedec9a4421ddff42/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "blender",
+    "godot"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Blender exporta glTF/GLB y Godot importa. Pruebe transformaciones, escala, animaciones y material, y confirme que los elementos exclusivos se hornearon.",
+     "sources": [
+      "https://docs.blender.org/manual/en/4.5/addons/import_export/scene_gltf2.html",
+      "https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/available_formats.html",
+      "https://github.com/blender/blender/blob/main/.github/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "blender",
+    "meshoptimizer"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Malla exportada susceptible de compresión, si pipeline y visor soportan la extensión del asset. No dependa del archivo .blend para consumir la compresión.",
+     "sources": [
+      "https://github.com/blender/blender/blob/main/.github/README.md",
+      "https://github.com/zeux/meshoptimizer/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "blender",
+    "meshoptimizer",
+    "three.js"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Blender exporta glTF/GLB. Optimización agrega extensión o modifica geometría. El visor Three.js debe cargar el decodificador indicado si hay EXT_meshopt_compression. Comparar carga, visibilidad y peso del archivo.",
+     "sources": [
+      "https://github.com/KhronosGroup/glTF-Blender-IO",
+      "https://github.com/zeux/meshoptimizer",
+      "https://threejs.org/docs/#GLTFLoader"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "buzz",
+    "kdenlive",
+    "pysubs2"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Buzz exporta SRT, pysubs2 ajusta tiempos o formato y Kdenlive importa la pista. Verifique codificación UTF-8, fps de origen y timecode. El texto básico se conserva, los estilos pueden cambiar.",
+     "sources": [
+      "https://pysubs2.readthedocs.io/en/latest/",
+      "https://docs.kdenlive.org/en/effects_and_filters/subtitles.html",
+      "https://github.com/chidiwilliams/buzz/blob/ac3d9da57dd155c8f8fba5f40644392e38423e6f/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "buzz",
+    "remotion"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Buzz exporta SRT. El paquete de Remotion documenta parseSrt() y devuelve captions para componer en React. Ajuste UTF-8 y marcas a la línea de tiempo de la composición.",
+     "sources": [
+      "https://github.com/chidiwilliams/buzz/blob/ac3d9da57dd155c8f8fba5f40644392e38423e6f/README.md",
+      "https://www.remotion.dev/docs/captions/parse-srt"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "buzz",
+    "whisper-cpp"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La GUI permite elegir el backend whisper.cpp en versiones documentadas. Preserve el idioma/modelo local y exporte SRT con acentos y duración.",
+     "sources": [
+      "https://github.com/chidiwilliams/buzz/blob/ac3d9da57dd155c8f8fba5f40644392e38423e6f/README.md",
+      "https://github.com/ggml-org/whisper.cpp/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "caddy",
+    "traefik"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Elegir un punto de entrada por dominio. Caddy funciona con configuración explícita y HTTPS automático. Traefik usa proveedores y descubrimiento dinámico. Configurar puerto, red y certificación según propiedad.",
+     "sources": [
+      "https://caddyserver.com/docs/automatic-https",
+      "https://doc.traefik.io/traefik/providers/docker/"
+     ]
+    },
+    {
+     "kind": "conflicto confirmado",
+     "note": "Dos procesos intentando enlazar simultáneamente la misma dirección TCP y puerto de escucha habitual en un host sin compartir socket. Se evita con distintos puertos/IP o delegando la entrada a uno. No implica incompatibilidad general.",
+     "sources": [
+      "https://learn.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2",
+      "https://caddyserver.com/docs/automatic-https",
+      "https://doc.traefik.io/traefik/routing/entrypoints/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "calibre-web",
+    "kavita"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos sirven lectura web/OPDS, pero Calibre-Web lee metadata.db de Calibre y Kavita organiza archivos y su propia biblioteca. No esperar migración de usuarios, etiquetas o progreso.",
+     "sources": [
+      "https://github.com/janeczku/calibre-web",
+      "https://github.com/janeczku/calibre-web/blob/79d35711d73491881ecd2b13ded02c277543dbcb/README.md",
+      "https://github.com/Kareadita/Kavita/blob/7fcf1085a5355a8c592d17adcfbb28b69276ae40/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "calibre-web",
+    "syncthing"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Sincronizar copia coherente o exportación de la colección con un escritor y política de restore. No abrir la base viva en ambos extremos a la vez; verificar inventario y hash antes de servir.",
+     "sources": [
+      "https://manual.calibre-ebook.com/faq.html#i-am-getting-errors-with-my-calibre-library-on-a-networked-drive-nas",
+      "https://docs.syncthing.net/users/faq.html#is-syncthing-my-ideal-backup-application",
+      "https://github.com/janeczku/calibre-web/blob/79d35711d73491881ecd2b13ded02c277543dbcb/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ccusage",
+    "litellm"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "ccusage lee registros disponibles y LiteLLM metrifica consumo de su pasarela. La equivalencia exacta por sesión, cuenta e importe queda sin evidencia común.",
+     "sources": [
+      "https://github.com/ccusage/ccusage",
+      "https://docs.litellm.ai/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ccxt",
+    "nautilus-trader"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "No se comprobó un adaptador CCXT directo para la versión y venue concretos. La coincidencia de nombre del exchange no acredita compatibilidad. Revisar lista de adapters. Diseñar un contrato solo tras identificar tipos y permisos.",
+     "sources": [
+      "https://github.com/ccxt/ccxt/blob/HEAD/README.md",
+      "https://github.com/ccxt/ccxt/wiki/Manual",
+      "https://github.com/nautechsystems/nautilus_trader/blob/HEAD/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "chatwoot",
+    "espocrm"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Contacto y oportunidades pertenecen al CRM y mensajes a la bandeja. Un mapeo REST/webhook debe deduplicar por CRM ID e inbox/conversation ID. Resultado de diseño: un solo contacto con vínculo de conversación.",
+     "sources": [
+      "https://github.com/espocrm/espocrm/blob/HEAD/README.md",
+      "https://github.com/chatwoot/chatwoot/blob/HEAD/README.md",
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "chatwoot",
+    "evolution-api"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La documentación/README de Evolution enumera Chatwoot. El gateway transporta el mensaje y Chatwoot asigna la conversación. Confirmar modo y versión de ambos. Comparar ID externo e inbox con un payload ficticio antes de cualquier conexión.",
+     "sources": [
+      "https://github.com/evolution-foundation/evolution-api/blob/HEAD/README.md",
+      "https://github.com/evolution-foundation/evolution-api",
+      "https://github.com/evolution-foundation/evolution-api/blob/main/src/api/controllers/instance.controller.ts"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "chatwoot",
+    "typebot"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Bot conversa y equipo humano recibe derivación. Comparar webhook/API, continuidad de IDs y quién controla el envío. La prueba de papel mapea una conversación y el estado de pausa del bot.",
+     "sources": [
+      "https://github.com/chatwoot/chatwoot/blob/HEAD/README.md",
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+      "https://developers.chatwoot.com/api-reference/introduction"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "chonkie",
+    "docling",
+    "qdrant"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Exportar Markdown/JSON, adaptar a texto y adjuntar página, fragmentar con Chonkie, calcular vectores y guardarlos en Qdrant mediante cliente. Un resultado útil apunta al original. La integración Docling-Qdrant tiene ruta aparte y no documenta el encadenamiento completo con Chonkie.",
+     "sources": [
+      "https://github.com/docling-project/docling/blob/40e490c8d93ef51e4f270feb02c3bb14851f0405/README.md",
+      "https://github.com/feyninc/chonkie/blob/664454b689d68614bcfc0b1d57fc2a28b5862825/README.md",
+      "https://github.com/qdrant/qdrant/blob/23065a0bf6857c3e5da45f6c8939cc746cc0580e/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-agent-sdk-python",
+    "openai-agents-python"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Implementan bucles de agente para aplicaciones Python. Elegir por herramientas, proveedor, autenticación, trazas y política de ejecución. Una migración requiere convertir estado y contrato de herramientas.",
+     "sources": [
+      "https://openai.github.io/openai-agents-python/",
+      "https://platform.claude.com/docs/en/agent-sdk/overview"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "codegraph"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "CodeGraph documenta integración con Claude Code y otros anfitriones. El índice se construye en local y el agente consulta símbolos por nombre. Revisar directorios incluidos y confirmar el resultado contra el archivo.",
+     "sources": [
+      "https://github.com/colbymchenry/codegraph"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "codex"
+   ],
+   "findings": [
+    {
+     "kind": "conflicto confirmado",
+     "note": "El cargador nativo de cada cliente exige su manifiesto. Un paquete que solo tiene .claude-plugin/plugin.json carece del manifiesto requerido por un plugin de Codex. Compatibilidad de texto SKILL.md se evalúa aparte.",
+     "sources": [
+      "https://code.claude.com/docs/en/plugins/overview",
+      "https://learn.chatgpt.com/docs/changelog?type=chatgpt-desktop-app"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "codex",
+    "codex-plugin-cc"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Claude Code aloja el plugin y delega a un proceso Codex con su propia autenticación. Revisar salida de diagnóstico del cliente y pedir una revisión de un diff ficticio.",
+     "sources": [
+      "https://github.com/openai/codex-plugin-cc"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "codex",
+    "opencode"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Elegir un agente primario por autenticación, permisos y repositorio. El cliente alternativo puede revisar un diff portable por Git. No hay garantía de compartir historial, herramientas ni políticas.",
+     "sources": [
+      "https://github.com/openai/codex",
+      "https://code.claude.com/docs/en/setup",
+      "https://opencode.ai/docs/providers/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "codex",
+    "superpowers"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "La metodología puede servir a ambos. Seleccionar la ruta publicada para cada cliente, comprobar descubrimiento y que un plan generado llegue a sus pruebas. Los loaders y permisos se mantienen separados.",
+     "sources": [
+      "https://github.com/obra/superpowers",
+      "https://agentskills.io/specification"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "context7"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Claude selecciona herramientas y Context7 devuelve documentación por biblioteca y versión. La edición remota puede imponer autenticación, cuota o plan.",
+     "sources": [
+      "https://github.com/upstash/context7",
+      "https://code.claude.com/docs/en/mcp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "langflow"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Langflow publica flujos como tools. Claude Code actúa como cliente. Confirmar proyecto, endpoint, forma de autenticar y tool visible antes de autorizar acciones.",
+     "sources": [
+      "https://docs.langflow.org/mcp-server",
+      "https://code.claude.com/docs/en/mcp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-code",
+    "wshobson-agents"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "El catálogo de wshobson actúa como marketplace de Claude Code. Instalar solo el paquete de la etapa. Aceptación: el comando aparece desde el paquete correcto.",
+     "sources": [
+      "https://github.com/wshobson/agents",
+      "https://code.claude.com/docs/en/discover-plugins"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-mem",
+    "t3code"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "T3 Code presenta sesiones de distintos agentes y Claude-Mem publica adaptadores de memoria por cliente. Para afirmar que ambos recuperan el mismo contexto se necesitaría versión, ruta de sesiones y una prueba común de alias.",
+     "sources": [
+      "https://github.com/thedotmack/claude-mem",
+      "https://t3.codes/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "claude-seo",
+    "open-seo"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Extraer indicadores de DataForSEO mediante Open SEO y adjuntarlos como insumo fechado de una auditoría HTML. Su API/MCP añade permisos y costes. Conservar trazabilidad y versión.",
+     "sources": [
+      "https://github.com/AgriciDaniel/claude-seo/blob/HEAD/README.md",
+      "https://github.com/every-app/open-seo/blob/HEAD/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "codegraph",
+    "repomix"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "El índice ayuda a ubicar archivos y el empaquetador prepara una selección portable. Handoff por rutas explícitas e inspección del documento, sin suponer integración nativa.",
+     "sources": [
+      "https://github.com/colbymchenry/codegraph",
+      "https://github.com/yamadashy/repomix"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "codex",
+    "context7"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Codex consume Context7 por el endpoint o proceso documentado. Resultado útil: referencia con versión coincidente y procedencia de la biblioteca.",
+     "sources": [
+      "https://github.com/upstash/context7",
+      "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "codex",
+    "fastmcp"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Servidor Python de lectura y cliente Codex mediante STDIO o HTTP configurado con TOML. Éxito si el runtime del cliente muestra la herramienta y su esquema.",
+     "sources": [
+      "https://gofastmcp.com/servers/server",
+      "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "codex",
+    "litellm"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "La puerta de enlace requiere que la variante compatible de Codex configure proveedor, Responses API y credenciales. Un inicio de sesión ChatGPT no autoriza la pasarela de terceros. Revisar un fixture de esquema y un error de autenticación esperado.",
+     "sources": [
+      "https://learn.chatgpt.com/docs/config-reference",
+      "https://docs.litellm.ai/docs/providers/openai"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "codex",
+    "sim"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Sim despliega el flujo como herramienta MCP por HTTP. Codex configura endpoint y autenticación compatible. Útil si la llamada a un flujo eco aislado produce solo el resultado previsto.",
+     "sources": [
+      "https://docs.sim.ai/workflows/deployment/mcp",
+      "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "codex",
+    "wshobson-agents"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Los adaptadores de wshobson generan artefactos para Codex CLI y su marketplace. Confirmar manifiesto y versión. La misma fuente Markdown genera formatos diferentes.",
+     "sources": [
+      "https://github.com/wshobson/agents",
+      "https://learn.chatgpt.com/docs/plugins"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "comfyui",
+    "krita-ai-diffusion"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Krita gestiona lienzo y máscara, ComfyUI ejecuta el workflow. Seleccione backend local administrado o enlace remoto y revise que la máscara solo cambie la región prevista.",
+     "sources": [
+      "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+      "https://github.com/Acly/krita-ai-diffusion/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "comfyui",
+    "wan2-2"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Workflow oficial de nodos Wan2.2: ComfyUI administra el grafo y Wan ejecuta el checkpoint compatible. Compruebe que el video se exporta con resolución, fps y duración declarados.",
+     "sources": [
+      "https://docs.comfy.org/tutorials/video/wan/wan2_2",
+      "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+      "https://github.com/Wan-Video/Wan2.2/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "coolify",
+    "dokploy"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Cada uno gestiona despliegue sobre Linux/Docker. Comparar volúmenes, backups, proxy y alcance de edición. Ejecutar dos controladores sobre la misma app sin propiedad explícita aumenta ambigüedad operativa.",
+     "sources": [
+      "https://coolify.io/docs/start-with-self-hosted",
+      "https://docs.dokploy.com/docs/core"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "coolify",
+    "uptime-kuma"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Coolify despliega, Uptime Kuma observa el HTTP público o interno autorizado. Entregar URL de salud y estado esperado. Alojar el monitor fuera del mismo fallo si se necesita señal externa.",
+     "sources": [
+      "https://coolify.io/docs/",
+      "https://github.com/louislam/uptime-kuma"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "crawl4ai",
+    "firecrawl"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Conversión de páginas accesibles en Markdown. El primero se usa desde Python y Firecrawl ofrece API gestionada u opciones propias. Comparar URL de origen, precisión, créditos y retención.",
+     "sources": [
+      "https://github.com/unclecode/crawl4ai",
+      "https://docs.firecrawl.dev/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "cvat",
+    "detectron2"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "CVAT exporta COCO y Detectron2 puede registrar COCO JSON. Mapee clases e identificadores, resolución y coordenadas; pruebe una máscara de la misma imagen.",
+     "sources": [
+      "https://docs.cvat.ai/docs/dataset_management/formats/format-coco/",
+      "https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html",
+      "https://github.com/cvat-ai/cvat/blob/develop/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "cvat",
+    "label-studio"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Para anotar imágenes en equipo, compare trazabilidad y exportación, sobre todo COCO. Label Studio conserva alcance multimodal, CVAT es más específico para video y tracks.",
+     "sources": [
+      "https://github.com/cvat-ai/cvat/blob/develop/README.md",
+      "https://github.com/HumanSignal/label-studio/blob/develop/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "cypress",
+    "playwright"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Para el mismo escenario E2E elegir uno por cobertura, trazas y mantenimiento. Conservar Cypress si ya aporta pruebas de componentes distintas.",
+     "sources": [
+      "https://playwright.dev/docs/intro",
+      "https://docs.cypress.io/app/get-started/why-cypress"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "daisyui",
+    "tailwindcss"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "daisyUI se declara como plugin Tailwind, que compila sus clases. Revisar la versión correspondiente y un tema claro/oscuro.",
+     "sources": [
+      "https://daisyui.com/docs/install/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "deepagents",
+    "langchain",
+    "langgraph"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "LangChain aporta bloques y conectores, LangGraph runtime de grafos y Deep Agents trae un arnés con planificación. Seleccionar la API de la capa necesaria. Si el arnés ya da la función, no reimplementar el bucle.",
+     "sources": [
+      "https://docs.langchain.com/oss/python/deepagents/overview"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "demucs",
+    "ultimate-vocal-remover"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "UVR documenta selección de modelos Demucs; El identificador del modelo, frecuencia y mezcla por stems condicionan equivalencia. Compare duración y filtración con audio propio.",
+     "sources": [
+      "https://github.com/Anjok07/ultimatevocalremovergui/blob/master/README.md",
+      "https://github.com/adefossez/demucs/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "design-dna",
+    "design.md"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "JSON de Design DNA y documento DESIGN.md son formatos distintos. No se verificó un puente directo. Una persona puede redactar tokens a partir de las referencias y validarlos en el CLI de DESIGN.md.",
+     "sources": [
+      "https://github.com/zanwei/design-dna",
+      "https://github.com/google-labs-code/design.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "diffusers",
+    "flux2"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Diffusers aporta pipeline Python y FLUX.2 el checkpoint específico. Consulte integración, licencia y nombres de pesos correspondientes al modelo elegido antes de generar PNG.",
+     "sources": [
+      "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "https://huggingface.co/docs/diffusers/en/api/pipelines/flux2",
+      "https://github.com/huggingface/diffusers/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "dify",
+    "langflow",
+    "sim"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Los tres componen y despliegan flujos visuales. Dify sirve para app documental, Langflow para extensibilidad Python y Sim para conectores/desktop. Sus flujos y permisos no se consideran portables por compartir MCP.",
+     "sources": [
+      "https://www.dify.ai/workflows",
+      "https://docs.langflow.org/mcp-server",
+      "https://docs.sim.ai/workflows/deployment/mcp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "dlt",
+    "duckdb"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "dlt ingiere un conjunto de filas ficticias y DuckDB recibe y consulta la tabla. Definir clave o modo de carga para que la repetición tenga semántica conocida. Éxito si el total final coincide con el conjunto controlado.",
+     "sources": [
+      "https://dlthub.com/docs/dlt-ecosystem/destinations/duckdb"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "dlt",
+    "duckdb",
+    "wrenai"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "dlt carga datos en DuckDB y entrega un snapshot. Wren usa el archivo para configurar modelos semánticos y consultas. Material ficticio y copia local en una prueba posterior. La aceptación compara catálogo, relaciones y totales del snapshot contra SQL manual.",
+     "sources": [
+      "https://docs.getwren.ai/oss/reference/skills",
+      "https://dlthub.com/docs/dlt-ecosystem/destinations/duckdb"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "docling",
+    "markitdown"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Alternativas para extracción desde Office. Markdown de MarkItDown facilita lectura y Docling añade representación estructurada. Comparar una tabla y origen, sin exigir que el Markdown reconstruya Office.",
+     "sources": [
+      "https://github.com/docling-project/docling/blob/40e490c8d93ef51e4f270feb02c3bb14851f0405/README.md",
+      "https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "docling",
+    "ocrmypdf"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "OCRmyPDF entrega un PDF buscable y Docling lee el PDF para exportar Markdown o JSON. Decidir si desactivar el segundo OCR y comprobar una sola representación del texto por página.",
+     "sources": [
+      "https://github.com/ocrmypdf/OCRmyPDF/blob/2a34c21ee233fde8d5efef845f9afc34ef3aa3c1/README.md",
+      "https://github.com/docling-project/docling/blob/40e490c8d93ef51e4f270feb02c3bb14851f0405/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "docling",
+    "ppt-master"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Traspaso manual de un Markdown normalizado o extracto de tabla. El agente compone y exporta. Adjuntar páginas como metadatos o referencias y editar el dato en la presentación final.",
+     "sources": [
+      "https://github.com/docling-project/docling/blob/40e490c8d93ef51e4f270feb02c3bb14851f0405/README.md",
+      "https://github.com/hugohe3/ppt-master/blob/bb48b2b114256ae9734f84e8ff18cb050b6d27e0/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "docling",
+    "qdrant"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Docling extrae o fragmenta y el flujo documentado entrega texto y metadatos al índice Qdrant. Definir modelo de embeddings y conservar origen y página; una consulta devuelve el fragmento esperado.",
+     "sources": [
+      "https://docling-project.github.io/docling/_generated/examples/retrieval_qdrant/",
+      "https://github.com/docling-project/docling/blob/40e490c8d93ef51e4f270feb02c3bb14851f0405/README.md",
+      "https://github.com/qdrant/qdrant/blob/23065a0bf6857c3e5da45f6c8939cc746cc0580e/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "drawio",
+    "mermaid"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Insertar Mermaid como imagen o convertir a formas cuando el editor lo permite. Elegir si se editará el código o las formas. Criterio: modificar un rótulo por el mecanismo elegido.",
+     "sources": [
+      "https://www.drawio.com/blog/mermaid-diagrams",
+      "https://github.com/jgraph/drawio/blob/44dc33fb1ec64c9675b4346e667191a4e0de24de/README.md",
+      "https://github.com/mermaid-js/mermaid/blob/6374e521f43fde5cfc60d65410c1aa033af29aaf/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "duckdb",
+    "metabase"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Metabase documenta listado de drivers comunitarios, incluido DuckDB. Verificar edición, versión y política de plugins. Para una entrega reproducible, comprobar driver sobre una DB de muestra o transferir una tabla a una fuente soportada. Éxito si un total SQL coincide con el tablero.",
+     "sources": [
+      "https://www.metabase.com/docs/latest/developers-guide/community-drivers"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "duckdb",
+    "polars"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Un productor escribe Parquet y el otro lee el mismo archivo. Se puede pasar Arrow para un flujo Python compatible. Comprueba tipos, nulos, zonas horarias y versión de PyArrow si se usa intermediación en memoria. Éxito si esquema, filas y agregados se conservan.",
+     "sources": [
+      "https://duckdb.org/docs/stable/clients/python/data_ingestion",
+      "https://docs.pola.rs/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "duckdb",
+    "wrenai"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Wren OSS documenta DuckDB como conector incluido. DuckDB consulta datos con SQL y Wren añade capa semántica y generación. Comprueba edición, tipos y rutas. Éxito si SQL, unidad y resultado concuerdan con la consulta manual.",
+     "sources": [
+      "https://docs.getwren.ai/oss/guides/connect",
+      "https://docs.getwren.ai/oss/reference/architecture"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "easyappointments",
+    "formbricks"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Reserva y respuesta a encuesta se almacenan separadas. Un evento confirmado puede preparar un formulario con identificador opaco. Validar esquema, consentimiento y cancelación. No se verificó un conector nativo.",
+     "sources": [
+      "https://github.com/alextselegidis/easyappointments/blob/HEAD/README.md",
+      "https://easyappointments.org/documentation/",
+      "https://github.com/formbricks/formbricks/blob/HEAD/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "element-web",
+    "synapse"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Element Web consume la API cliente-servidor Matrix de Synapse. Se requiere URL/homeserver y autenticación. Confirmar que el flujo del cliente ubica correctamente cuenta, sala y servidor.",
+     "sources": [
+      "https://github.com/element-hq/element-web/blob/HEAD/README.md",
+      "https://spec.matrix.org/latest/client-server-api/",
+      "https://github.com/element-hq/synapse/blob/HEAD/README.rst"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "elevenlabs-python",
+    "ffmpeg",
+    "video-use"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La integración documentada es con FFmpeg y ElevenLabs Scribe vía API, aunque la instalación directa del SDK Python es opcional si el proyecto usa su cliente. El EDL y transcripción guiada permiten revisar cortes; audio sale del entorno al transcribir con Scribe.",
+     "sources": [
+      "https://github.com/browser-use/video-use/blob/main/README.md",
+      "https://github.com/FFmpeg/FFmpeg/blob/master/README.md",
+      "https://github.com/elevenlabs/elevenlabs-python/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "engram",
+    "mempalace"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Mismo objetivo de recuperar contexto en un flujo de código, con esquemas y captura diferentes. Validar recuperación y borrado con el anfitrión seleccionado.",
+     "sources": [
+      "https://github.com/MemPalace/mempalace/blob/87ae5024d8eef885536258f5cb74cc1de8dcf9fd/README.md",
+      "https://github.com/Gentleman-Programming/engram/blob/11521f4f3776db6d94dc17c11731bad35b71c7bc/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "engram",
+    "obsidian-second-brain"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "Repos distintos para memoria de agente y archivos Markdown. No hay contrato verificado que haga que ambos compartan almacenamiento, historia y borrado. Se precisaría adaptador o exportador explícito.",
+     "sources": [
+      "https://github.com/Gentleman-Programming/engram/blob/11521f4f3776db6d94dc17c11731bad35b71c7bc/README.md",
+      "https://github.com/eugeniughelbur/obsidian-second-brain/blob/bca5961e4b60eefd90a6e0c0f44cf3fe9aaf3cbc/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "erpnext",
+    "odoo"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Se solapan en ERP. Si ambas registran stock y facturas de la misma entidad como maestras, aparecen saldos divergentes. Elegir autoridad de documentos y limitar el otro sistema a consulta o migración.",
+     "sources": [
+      "https://github.com/frappe/erpnext/blob/HEAD/README.md",
+      "https://github.com/odoo/odoo/blob/HEAD/README.md",
+      "https://www.odoo.com/page/editions"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "esphome",
+    "home-assistant"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "ESPHome construye firmware y expone entidad mediante su API nativa. Home Assistant lee estado y ejecuta automatización. Consultar un sensor de ejemplo sin flashear.",
+     "sources": [
+      "https://www.home-assistant.io/integrations/esphome/",
+      "https://github.com/home-assistant/core/blob/f4cda918b24e911a180becb8f3cd00f9ae6e0908/README.rst",
+      "https://github.com/esphome/esphome/blob/6eadaff15596f1a0bcff2b90f12712a77f9fb55d/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "evolution-api",
+    "signal-cli"
+   ],
+   "findings": [
+    {
+     "kind": "conflicto confirmado",
+     "note": "Usar sin adaptador el cliente JSON-RPC/D-Bus de Signal como transporte de un destinatario WhatsApp falla por diferencia de protocolo e identidad. Pueden coexistir como canales distintos.",
+     "sources": [
+      "https://github.com/AsamK/signal-cli/blob/HEAD/README.md",
+      "https://github.com/evolution-foundation/evolution-api/blob/HEAD/README.md",
+      "https://github.com/evolution-foundation/evolution-api"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "evolution-api",
+    "waha"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Para cubrir la etapa gateway REST de una integración WhatsApp Web, comprobar motor, sesión y webhook. Los esquemas no son intercambiables sin adaptar. Separar la configuración de Cloud API oficial.",
+     "sources": [
+      "https://github.com/evolution-foundation/evolution-api/blob/HEAD/README.md",
+      "https://github.com/evolution-foundation/evolution-api",
+      "https://github.com/evolution-foundation/evolution-api/blob/main/src/api/controllers/instance.controller.ts"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "faster-whisper",
+    "pyannote-audio",
+    "whisperx"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "CTranslate2 transcribe vía faster-whisper, WhisperX alinea palabras y pyannote asigna turnos con el modelo y token indicados por WhisperX. Validar JSON con palabra, inicio, fin y turno.",
+     "sources": [
+      "https://huggingface.co/pyannote/speaker-diarization-community-1",
+      "https://github.com/SYSTRAN/faster-whisper/blob/master/README.md",
+      "https://github.com/m-bain/whisperX/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "fastmcp",
+    "mcp-inspector"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "FastMCP implementa una herramienta. Inspector actúa como cliente diagnóstico por STDIO o HTTP según el servidor. Aceptación: tools/list y esquema eco visibles.",
+     "sources": [
+      "https://gofastmcp.com/clients/inspector",
+      "https://github.com/modelcontextprotocol/inspector"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "fastmcp",
+    "mcp-python-sdk"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Elegir uno para definir herramientas Python y revisar API y versión. Un cliente de cualquiera puede interoperar mediante el protocolo si coinciden capacidades y transporte.",
+     "sources": [
+      "https://github.com/PrefectHQ/fastmcp",
+      "https://github.com/modelcontextprotocol/python-sdk"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ffmpeg",
+    "kdenlive",
+    "obs-studio"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "OBS graba una copia local, FFmpeg puede remuxar si el códec se admite en el nuevo contenedor y Kdenlive monta. Confirme audio y fps antes/después; un remux no convierte el códec.",
+     "sources": [
+      "https://obsproject.com/kb/standard-recording-output-guide",
+      "https://github.com/obsproject/obs-studio/blob/master/README.rst",
+      "https://github.com/FFmpeg/FFmpeg/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ffmpeg",
+    "libass",
+    "pysubs2"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "pysubs2 prepara ASS, libass dibuja los estilos y el filtro subtitles de FFmpeg los quema en video con build compatible y fuentes resolubles. Revise dos caracteres acentuados y una posición.",
+     "sources": [
+      "https://ffmpeg.org/ffmpeg-filters.html#subtitles-1",
+      "https://pysubs2.readthedocs.io/en/latest/",
+      "https://github.com/tkarabela/pysubs2/blob/6371ae8bc2f9fed19aeb51a8e09d920e8bb86ce5/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ffmpeg",
+    "whisper"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "FFmpeg decodifica audio para Whisper Python. Whisper produce texto con tiempos. Compruebe que se eligió el canal esperado y que el primer/último segmento coincide con la entrada.",
+     "sources": [
+      "https://github.com/openai/whisper/blob/main/README.md",
+      "https://github.com/FFmpeg/FFmpeg/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "flagembedding",
+    "pgvector"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Generar BGE embeddings en la app y guardarlos por driver SQL con dim y métrica apropiadas. El reranking recibe texto y query después de recuperar candidatos. Checar primer resultado con párrafos ficticios.",
+     "sources": [
+      "https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md",
+      "https://github.com/pgvector/pgvector/blob/26b1afd09e6c571820b7538451f5e21477bf700a/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "front-end-checklist",
+    "modern-web-guidance"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Primero surge el criterio de entrega y luego se consulta la guía de API del navegador para resolver dudas. Intercambio mediante especificación, no importación de reglas automática.",
+     "sources": [
+      "https://developer.chrome.com/docs/modern-web-guidance",
+      "https://github.com/thedaviddias/Front-End-Checklist"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "gpt-researcher",
+    "local-deep-research"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos redactan informe de investigación. Elegir por conectores, proveedor, control de datos y citas. Evitar duplicar redacción si solo se necesita un informe.",
+     "sources": [
+      "https://github.com/assafelovic/gpt-researcher",
+      "https://github.com/LearningCircuit/local-deep-research"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "gsap",
+    "gsap-skills"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Skill para el agente que escribe la timeline. GSAP la ejecuta en la web. El desarrollador conserva pruebas de fin de secuencia, reduce movimiento y comprueba licencia de runtime.",
+     "sources": [
+      "https://github.com/greensock/gsap-skills",
+      "https://gsap.com/docs/v3/",
+      "https://gsap.com/community/standard-license/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "gsap",
+    "motion"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Para la misma transición elegir un motor propietario de la propiedad animada. Motion cubre gestos y estado declarativo. GSAP facilita secuencias coordinadas. Evitar doble escritura sobre el mismo transform sin diseño explícito.",
+     "sources": [
+      "https://motion.dev/docs/react-accessibility",
+      "https://gsap.com/docs/v3/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ha-mcp",
+    "home-assistant"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "El servidor MCP usa la integración y credenciales documentadas para consultar entidades de Home Assistant. Consultar controles de alcance y validar esquema sin ejecutar llamadas.",
+     "sources": [
+      "https://github.com/homeassistant-ai/ha-mcp",
+      "https://github.com/home-assistant/core/blob/f4cda918b24e911a180becb8f3cd00f9ae6e0908/README.rst",
+      "https://github.com/homeassistant-ai/ha-mcp/blob/c8ea7ae269f4ec84d0055d70b1bc0c3cdf008310/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "hallmark",
+    "impeccable"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Solapamiento en crítica visual de una página. Escoger una rúbrica por iteración y comparar decisiones sobre una sola maqueta.",
+     "sources": [
+      "https://github.com/pbakaus/impeccable",
+      "https://github.com/Nutlope/hallmark"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "home-assistant",
+    "zigbee2mqtt"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Zigbee2MQTT requiere coordinador y broker MQTT. Home Assistant recibe entidades mediante discovery/configuración. Verificar el nombre y estado de una entidad de ejemplo.",
+     "sources": [
+      "https://www.zigbee2mqtt.io/guide/usage/integrations/home_assistant.html",
+      "https://github.com/home-assistant/core/blob/f4cda918b24e911a180becb8f3cd00f9ae6e0908/README.rst",
+      "https://github.com/Koenkk/zigbee2mqtt/blob/3c841fdfd66c92239921ef84fde8f039c64e1662/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "hunyuanvideo-1-5",
+    "wan2-2"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos generan clips desde texto o imagen en configuraciones concretas. Intercambie imagen y archivo final, nunca pesos entre modelos, y compare continuidad usando la misma imagen y resolución disponible.",
+     "sources": [
+      "https://github.com/Wan-Video/Wan2.2/blob/main/README.md",
+      "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "hyperframes",
+    "hyperframes-launches"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La composición de ejemplo aporta HTML/CSS/JS y recursos mediante Git LFS; el motor la previsualiza y renderiza. Verifique reset de timeline y que no falten recursos, y separe derechos de assets.",
+     "sources": [
+      "https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md",
+      "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "hyperframes",
+    "remotion"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos montan escenas por código en dos runtimes: HTML/CSS/JS y React. Use MP4 o secuencias renderizadas como intercambio. El código de composición requiere portabilidad explícita.",
+     "sources": [
+      "https://github.com/heygen-com/hyperframes/blob/main/README.md",
+      "https://github.com/remotion-dev/remotion/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "imagemagick",
+    "rembg"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "rembg crea PNG con alfa desde una foto, ImageMagick valida dimensiones y compone otra variante. Evite JPEG en la etapa que exige transparencia.",
+     "sources": [
+      "https://github.com/danielgatis/rembg/blob/main/README.md",
+      "https://github.com/ImageMagick/ImageMagick/blob/dcec873ede2912a1b045a50fd54cd138ee5f3fa4/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "immich",
+    "photoprism"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos organizan fotos, con diseño distinto de ingesta e indexación. Usar copia de muestra y comprobar qué migran etiquetas, álbumes y originales. Si se compara, dar montajes de solo lectura separados.",
+     "sources": [
+      "https://docs.immich.app/administration/backup-and-restore/",
+      "https://docs.photoprism.app/user-guide/library/",
+      "https://github.com/immich-app/immich/blob/24f34078cf61af0ba098fac691fb50131a26cdad/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "impeccable",
+    "taste-skill"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Taste prepara dirección inicial e Impeccable revisa mediante su rúbrica. Declarar prioridad del diseño aprobado si hay instrucciones competidoras. Su convivencia simultánea en todos los anfitriones queda sin validar.",
+     "sources": [
+      "https://github.com/Leonxlnx/taste-skill",
+      "https://github.com/pbakaus/impeccable"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "insightface",
+    "liveportrait"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "LivePortrait y ciertos flujos dependen del detector facial InsightFace. Audite versión del código y pesos. Use un rostro sintético y no confunda la salida animada con verificación biométrica.",
+     "sources": [
+      "https://github.com/KlingAIResearch/LivePortrait/blob/main/src/utils/face_analysis_diy.py",
+      "https://github.com/deepinsight/insightface/tree/master/python-package",
+      "https://github.com/KlingAIResearch/LivePortrait/blob/main/readme.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "joplin",
+    "obsidian-importer"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Una exportación Markdown consistente puede pasar a una bóveda; JEX requiere comprobar conversión y preservación. Reconciliar notas, enlaces, metadatos y adjuntos, con la fuente intacta.",
+     "sources": [
+      "https://joplinapp.org/help/apps/import_export/",
+      "https://github.com/laurent22/joplin/blob/1cf45816a05be674dd72c5928e3be147fb5137cf/README.md",
+      "https://github.com/obsidianmd/obsidian-importer/blob/fa9444a188459f227b07ec121ad03d26bd6b301a/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "json-render",
+    "openui"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Cada uno puede ser renderer con un catálogo permitido. El modelo produce los datos y el renderer valida su contrato. OpenUI Lang y JSON de json-render requieren límites propios.",
+     "sources": [
+      "https://github.com/thesysdev/openui",
+      "https://github.com/vercel-labs/json-render"
+     ]
+    },
+    {
+     "kind": "conflicto confirmado",
+     "note": "Conexión directa de OpenUI Lang como entrada JSON nativa de json-render sin adaptación. Son formatos separados según las especificaciones. Se evaluaría un adaptador por versión con ejemplos positivos y negativos.",
+     "sources": [
+      "https://github.com/thesysdev/openui",
+      "https://github.com/vercel-labs/json-render"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "jsoncanvas",
+    "obsidian-skills"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "El archivo .canvas implementa nodos y relaciones. La skill instruye al agente en el formato. Validar esquema y que dos nodos y una arista abran correctamente.",
+     "sources": [
+      "https://jsoncanvas.org/spec/1.0/",
+      "https://github.com/obsidianmd/jsoncanvas/blob/456f843cb293df4f4ab1763e22ccb46a80b307c8/readme.md",
+      "https://github.com/obsidianmd/obsidian-skills/blob/9c9560a870fd490b0e1a847f2c8401a50e2d931d/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "kavita",
+    "pdf-craft"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Exportar EPUB de un escaneo ficticio y añadirlo a una biblioteca de prueba de Kavita. Validar capítulo, portada, metadatos y página de lectura.",
+     "sources": [
+      "https://github.com/oomol-lab/pdf-craft/blob/177a9c2e0cc0dff02ddd874671bb21e1a5146c71/README.md",
+      "https://github.com/Kareadita/Kavita/blob/7fcf1085a5355a8c592d17adcfbb28b69276ae40/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "kdenlive",
+    "opencut"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "No se verificó intercambio de proyecto editable entre estas apps. Los archivos de medios pueden reutilizarse y el MP4 final no preserva las capas.",
+     "sources": [
+      "https://github.com/OpenCut-app/OpenCut/blob/main/README.md",
+      "https://github.com/KDE/kdenlive/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "kdenlive",
+    "shotcut"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Montaje de clips en escritorio; comparta fuentes y final MP4, con archivo de proyecto propio para cada editor. Verifique duración, audio y cortes.",
+     "sources": [
+      "https://www.shotcut.org/features/",
+      "https://docs.kdenlive.org/en/project_and_asset_management/project_settings/proxy_settings.html",
+      "https://github.com/KDE/kdenlive/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "kroki",
+    "mermaid"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Kroki recibe código Mermaid por HTTP y devuelve SVG/PNG según endpoint. Verificar que la versión de Mermaid soporte la sintaxis y no publicar fuentes privadas en un endpoint público.",
+     "sources": [
+      "https://kroki.io/",
+      "https://github.com/mermaid-js/mermaid/blob/6374e521f43fde5cfc60d65410c1aa033af29aaf/README.md",
+      "https://github.com/yuzutech/kroki/blob/aaa288dd1c262a52de9f55b67df0700d7d97ba1e/README.adoc"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "langfuse",
+    "openllmetry"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "La instrumentación OpenLLMetry exporta OTLP. Langfuse recibe OTLP con su endpoint y credenciales. Revisar traducción de atributos y exportar únicamente un ejemplo anonimizado. Éxito si la misma traza identifica inicio, modelo, latencia y estado.",
+     "sources": [
+      "https://github.com/traceloop/openllmetry",
+      "https://langfuse.com/integrations/native/opentelemetry"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "langfuse",
+    "promptfoo"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Evaluación por casos y trazas atienden tareas distintas. El equipo enlaza ID de caso y traza mediante metadatos autorizados. Se exige anonimizar respuestas y comprobar que se puede reproducir un fallo.",
+     "sources": [
+      "https://www.promptfoo.dev/docs/",
+      "https://langfuse.com/docs"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "leaflet",
+    "qgis"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "QGIS prepara y exporta la capa a GeoJSON WGS 84. Leaflet lee GeoJSON en navegador. Éxito si los rasgos conservan posición, etiquetas y conteo sin cambiar orden de coordenadas.",
+     "sources": [
+      "https://docs.qgis.org/",
+      "https://leafletjs.com/examples/geojson/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "lightpanda",
+    "playwright"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Lightpanda puede ofrecer CDP y Playwright dirigir ese motor. La cobertura de APIs y de representación no equivale a la matriz de navegadores; validar propiedad DOM exigida.",
+     "sources": [
+      "https://github.com/lightpanda-io/browser",
+      "https://playwright.dev/docs/api/class-browsertype#browser-type-connect-over-cdp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "listmonk",
+    "mautic"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Ambos cubren una campaña de correo simple. Para recorridos con reglas elegir Mautic. Para boletín, Listmonk. Si ambos participan, la baja debe impedir el envío en ambos y la campaña debe tener un solo ejecutor.",
+     "sources": [
+      "https://github.com/knadh/listmonk/blob/HEAD/README.md",
+      "https://listmonk.app/docs/configuration/",
+      "https://listmonk.app/docs/apis/subscribers/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "listmonk",
+    "novu"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Newsletter frente a alertas transaccionales. Pueden compartir proveedor SMTP con identidades/credenciales separadas y una política explícita de preferencias. Sin conector nativo comprobado en esta auditoría.",
+     "sources": [
+      "https://github.com/knadh/listmonk/blob/HEAD/README.md",
+      "https://listmonk.app/docs/configuration/",
+      "https://listmonk.app/docs/apis/subscribers/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "litellm",
+    "vllm"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "vLLM sirve un modelo con API compatible con OpenAI, LiteLLM enruta al endpoint como proveedor. Validar modelo, rutas, autenticación, timeout y streaming con una respuesta ficticia.",
+     "sources": [
+      "https://docs.litellm.ai/docs/providers/vllm",
+      "https://docs.vllm.ai/en/latest/serving/openai_compatible_server/"
+     ]
+    },
+    {
+     "kind": "complemento documentado",
+     "note": "vLLM carga pesos y sirve HTTP bajo /v1. LiteLLM consume el endpoint y expone un alias. Configurar api_base, credenciales cuando se usen y modelo. Éxito si /v1/models y una inferencia básica coinciden con el alias; probar streaming y herramientas por separado.",
+     "sources": [
+      "https://docs.litellm.ai/docs/providers/openai_compatible",
+      "https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "livekit-agents",
+    "pipecat"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Compare como frameworks de conversación. Pipecat puede usar distintos transportes y LiveKit Agents trabaja con LiveKit/WebRTC; configurar ambos no es requisito para una llamada. Valide cancelación de respuesta con adaptadores simulados.",
+     "sources": [
+      "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
+      "https://github.com/livekit/agents/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "llama-cpp",
+    "ollama"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Ambos pueden resolver inferencia de una arquitectura GGUF compatible. Comparar versión del artefacto, plantilla de chat y parámetros. Cada motor carga el modelo por su cuenta. Éxito si ambos exponen el modelo esperado y mantienen el mismo criterio de respuesta en entradas de control.",
+     "sources": [
+      "https://docs.ollama.com/modelfile",
+      "https://github.com/ggml-org/llama.cpp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "llama-cpp",
+    "transformers.js"
+   ],
+   "findings": [
+    {
+     "kind": "conflicto confirmado",
+     "note": "Pasar directamente un GGUF al flujo estándar ONNX de Transformers.js no satisface el contrato documentado. Se requieren artefactos compatibles con cada motor o una conversión validada de la misma base. Éxito si ambos cargan la variante esperada y el tokenizador coincide.",
+     "sources": [
+      "https://github.com/ggml-org/llama.cpp",
+      "https://huggingface.co/docs/transformers.js/index"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "llmfit",
+    "ollama"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "llmfit estima compatibilidad y su README documenta un benchmark sobre el proveedor en marcha. Ollama ejecuta y posee la caché del modelo. La señal útil separa valor proyectado, hardware detectado y tokens por segundo medidos, con contexto y cuantización identificados.",
+     "sources": [
+      "https://raw.githubusercontent.com/AlexsJones/llmfit/57048e7f888082da0e6b24cbbf4013feebfcef1a/README.md",
+      "https://docs.ollama.com/faq"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "local-deep-research",
+    "searxng"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "SearXNG aporta resultados mediante su API de búsqueda. El agente selecciona y cita las fuentes usando el modelo configurado. Verificar formato JSON habilitado y coincidencia entre afirmación y fuente.",
+     "sources": [
+      "https://docs.searxng.org/dev/search_api.html",
+      "https://github.com/LearningCircuit/local-deep-research"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "magicui",
+    "react-bits"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Pueden convivir en secciones distintas mediante registros, con dependencias de la variante elegida. Efectos equivalentes se sustituyen. Revisar reducción de movimiento y licencias.",
+     "sources": []
+    }
+   ]
+  },
+  {
+   "ids": [
+    "magicui",
+    "ui"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Registro compatible con CLI shadcn. El equipo integra código y dependencias en su framework React/Tailwind y verifica interacción y licencia por componente.",
+     "sources": [
+      "https://magicui.design/docs/installation",
+      "https://ui.shadcn.com/docs/registry"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "manim",
+    "manim-community"
+   ],
+   "findings": [
+    {
+     "kind": "conflicto confirmado",
+     "note": "Las instrucciones y paquetes no son intercambiables según ambos READMEs. ManimGL usa manimgl e imports propios; Community usa manim. Puede unir los videos renderizados.",
+     "sources": [
+      "https://docs.manim.community/en/stable/faq/installation.html",
+      "https://github.com/3b1b/manim/blob/master/README.md",
+      "https://github.com/ManimCommunity/manim/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "maplibre",
+    "qgis"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "QGIS exporta GeoJSON con CRS adecuado (GeoJSON web en WGS84) y MapLibre lo muestra con estilo y fuente. Verifique ejes, orden de coordenadas y atribución.",
+     "sources": [
+      "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html",
+      "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeoJSONSource/",
+      "https://github.com/qgis/QGIS/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "marimo",
+    "pygwalker"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "marimo calcula o carga un DataFrame y PyGWalker lo convierte en exploración visual dentro del cuaderno. Verificar versiones y el adaptador marimo documentado. Éxito si un filtro mantiene el agregado calculado manualmente.",
+     "sources": [
+      "https://docs.marimo.io/",
+      "https://github.com/Kanaries/pygwalker"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "marker",
+    "mineru"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Alternativas para parsear layout de PDF a Markdown o datos estructurados. Elegir por modalidad disponible, hardware, licencia de pesos y errores de tabla en el mismo archivo.",
+     "sources": [
+      "https://github.com/datalab-to/marker/blob/32c374bfa01fb74e7ded42fa09f80f1a3e7f8a29/README.md",
+      "https://github.com/opendatalab/MinerU/blob/097de7f63f54722c9b805ee1c9a14a0c5b02e078/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "marp",
+    "ppt-master"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos permiten entregar un deck. Marp CLI documenta PPTX estándar con imágenes y editable experimental con LibreOffice y navegador. PPT Master declara DrawingML nativo. Comparar texto, tabla y notas editables.",
+     "sources": [
+      "https://github.com/marp-team/marp-cli#convert-to-powerpoint-document---pptx",
+      "https://github.com/marp-team/marp/blob/95263d5a0df563633ef6611c986b34b55f936eaa/README.md",
+      "https://github.com/hugohe3/ppt-master/blob/bb48b2b114256ae9734f84e8ff18cb050b6d27e0/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mcp-inspector",
+    "mcp-typescript-sdk"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "El SDK implementa el servidor Node y el Inspector verifica lista de herramientas y el JSON de respuesta en entorno local.",
+     "sources": [
+      "https://github.com/modelcontextprotocol/typescript-sdk",
+      "https://github.com/modelcontextprotocol/inspector"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mcp-neo4j",
+    "neo4j-mcp"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Comparar únicamente consultas Cypher y lectura de esquema. El paquete experimental trae usos adicionales y el servidor oficial tiene contrato propio. Verificar versión de Neo4j, permisos y nombres de tools.",
+     "sources": [
+      "https://github.com/neo4j/mcp",
+      "https://github.com/neo4j-contrib/mcp-neo4j"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mediabunny",
+    "remotion"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Mediabunny maneja medios y Remotion compone o renderiza. En web, verifique el contenedor, códec y soporte WebCodecs antes de aprobar un preview.",
+     "sources": [
+      "https://www.remotion.dev/docs/mediabunny/",
+      "https://github.com/remotion-dev/remotion/blob/main/README.md",
+      "https://github.com/Vanilagy/mediabunny/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mediapipe",
+    "mmpose",
+    "openpose"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Pose 2D con diferentes esqueletos y entornos. Requiere un mapa de nombres, convención de origen y tratamiento de oclusión; no se mezclan índices por posición.",
+     "sources": [
+      "https://github.com/google-ai-edge/mediapipe/blob/master/README.md",
+      "https://github.com/open-mmlab/mmpose/blob/main/README.md",
+      "https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mediapipe",
+    "opencv"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "OpenCV lee cuadros y convierte BGR a RGB para el modelo; confirme color, dimensiones y convención de coordenadas antes de superponer los puntos.",
+     "sources": [
+      "https://github.com/opencv/opencv/blob/5.x/README.md",
+      "https://github.com/google-ai-edge/mediapipe/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mermaid",
+    "slidev"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Slidev documenta integración de Mermaid en Markdown. Abrir el diagrama en HTML y revisar qué se rasteriza en cada formato de exportación.",
+     "sources": [
+      "https://sli.dev/guide/syntax#diagrams",
+      "https://sli.dev/guide/exporting",
+      "https://github.com/slidevjs/slidev/blob/3de6c46befe3f003828e378408c48f21db16ea45/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "metabase",
+    "superset"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Elegir un BI para el mismo motor compartido cuando ambos tengan driver y autenticación adecuados. Cada uno arma su propia pregunta y tablero. Éxito si ambos aplican la misma métrica y filtro al conjunto común, sin inferir portabilidad de paneles.",
+     "sources": [
+      "https://www.metabase.com/docs/latest/",
+      "https://superset.apache.org/docs/intro"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "miniflux",
+    "rsshub"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "RSSHub aporta URL RSS y Miniflux suscribe y muestra entradas. Caso útil: una publicación local produce una sola entrada con enlace y fecha.",
+     "sources": [
+      "https://docs.rsshub.app/",
+      "https://miniflux.app/docs/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "mui",
+    "ui"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Elegir un sistema visual propietario del tema de la app. MUI Material y MUI X tienen ediciones separadas. Revisar dependencias CSS y React al migrar.",
+     "sources": [
+      "https://ui.shadcn.com/docs/registry",
+      "https://mui.com/material-ui/customization/theming/",
+      "https://mui.com/x/introduction/licensing/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "nautilus-trader",
+    "prediction-market-backtesting"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "El upstream acredita atribución/licencias relacionadas y dominio de predicción. Falta evidencia de interoperabilidad entre las versiones concretas y sus catálogos de datos. Reutilización de código no acredita conector directo.",
+     "sources": [
+      "https://github.com/nautechsystems/nautilus_trader/blob/HEAD/README.md",
+      "https://nautilustrader.io/docs/latest/concepts/backtesting/",
+      "https://nautilustrader.io/docs/latest/concepts/overview/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "nextcloud-server",
+    "syncthing"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Para replicar una carpeta cualquiera de las rutas puede cubrir la distribución según cliente. Nextcloud aporta usuarios, enlaces y servidor central. Evitar compartir la misma ruta viva sin acordar escritor y conflictos.",
+     "sources": [
+      "https://github.com/syncthing/syncthing/blob/1107b3cd11dbe267a8b80bbe1f89fb86a070b5c3/README.md",
+      "https://github.com/nextcloud/server/blob/0e4cdc51e6114ef9c5557bc5a0c2a9c42e35d1f5/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "nocodb",
+    "tooljet"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "NocoDB presenta tablas y ToolJet panel. Podrían leer una base común con usuarios separados, o ToolJet usar una API habilitada. Designar una autoridad de escritura por entidad y validar claves, permisos y versión.",
+     "sources": [
+      "https://github.com/nocodb/nocodb/blob/HEAD/README.md",
+      "https://nocodb.com/docs/product/integrations/data-sources/connect-to-data-source",
+      "https://github.com/ToolJet/ToolJet/blob/HEAD/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "normalize.css",
+    "tailwindcss"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Son capas CSS. Tailwind Preflight es una base con resets. Definir orden de capas u omitir Preflight si el proyecto requiere otra base. Verificar estilos computados de formularios y encabezados.",
+     "sources": [
+      "https://tailwindcss.com/docs/preflight",
+      "https://github.com/necolas/normalize.css"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "notebooklm-py",
+    "open-notebook"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "Las fuentes del cliente muestran un backend de Google y las de Open Notebook su propio despliegue. No hay integración directa verificada entre ambos. Una eventual migración necesitaría exportación e importación documentadas y comprobación de citas con archivos ficticios.",
+     "sources": [
+      "https://github.com/teng-lin/notebooklm-py",
+      "https://www.open-notebook.ai/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "obsidian-help",
+    "obsidian-importer"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La ayuda describe formatos de origen. El plugin convierte a notas locales. Verificar enlaces/adjuntos de una exportación ficticia en una bóveda vacía.",
+     "sources": [
+      "https://obsidian.md/help/import",
+      "https://github.com/obsidianmd/obsidian-help/blob/1a4e17ca0127317143947ca608d2774a48b927e3/README.md",
+      "https://github.com/obsidianmd/obsidian-importer/blob/fa9444a188459f227b07ec121ad03d26bd6b301a/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ocrmypdf",
+    "tesseract"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "OCRmyPDF coordina y rasteriza cuando procede. Tesseract reconoce con los datos del idioma. La salida es un PDF en el que se encuentra la cadena de prueba.",
+     "sources": [
+      "https://ocrmypdf.readthedocs.io/",
+      "https://github.com/ocrmypdf/OCRmyPDF/blob/2a34c21ee233fde8d5efef845f9afc34ef3aa3c1/README.md",
+      "https://github.com/tesseract-ocr/tesseract/blob/4292f6890aa86ef64eba32090358f40f69dd6d28/README.md"
+     ]
+    },
+    {
+     "kind": "conflicto confirmado",
+     "note": "Intentar pasar directamente el PDF de salida a la entrada de la CLI de Tesseract contradice su contrato de formatos. Se resuelve entregando PNG/TIFF u orquestando dentro de OCRmyPDF.",
+     "sources": [
+      "https://tesseract-ocr.github.io/tessdoc/InputFormats.html",
+      "https://github.com/ocrmypdf/OCRmyPDF/blob/2a34c21ee233fde8d5efef845f9afc34ef3aa3c1/README.md",
+      "https://github.com/tesseract-ocr/tesseract/blob/4292f6890aa86ef64eba32090358f40f69dd6d28/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ollama",
+    "open-webui"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Ollama carga el modelo y ofrece HTTP en 11434. Open WebUI proporciona interfaz y usa la URL de Ollama. Si está en contenedor, resolver correctamente la dirección del host. Éxito si aparece el modelo y la respuesta pasa por el servidor local identificado.",
+     "sources": [
+      "https://docs.openwebui.com/getting-started/quick-start/",
+      "https://docs.ollama.com/windows"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ollama",
+    "promptfoo"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Ollama sirve el modelo. El proveedor Ollama de Promptfoo ejecuta los casos y aplica aserciones. Fijar etiqueta de modelo y configuración. Éxito si se obtienen resultados repetibles y se detecta un caso deliberadamente incorrecto.",
+     "sources": [
+      "https://www.promptfoo.dev/docs/providers/ollama/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "onyx",
+    "ragflow"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Alternativas de interfaz de búsqueda/respuesta cuando coinciden fuentes y política. Comparar citas, ACL y sincronización fuente por fuente antes de elegir.",
+     "sources": [
+      "https://github.com/infiniflow/ragflow/blob/70ed4c95d7eb4af7d893da7d340a4a02550a3b50/README.md",
+      "https://github.com/onyx-dot-app/onyx/blob/0794d9205187e0c0e15adc97846a341c9ec6e4ea/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "opencode",
+    "opencode-manager"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "El cliente web administra las sesiones del servidor OpenCode con el alcance documentado. Verificar versión del cliente, servicio y autenticación desde una máquina de prueba propia.",
+     "sources": [
+      "https://github.com/chriswritescode-dev/opencode-manager",
+      "https://opencode.ai/docs/api"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "paddleocr",
+    "tesseract"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Ambos reconocen texto de una imagen. Tesseract ofrece salida documental como hOCR/TSV y PaddleOCR puede recuperar estructura en un pipeline diferente. Cotejar idioma y campos.",
+     "sources": [
+      "https://github.com/PaddlePaddle/PaddleOCR/blob/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/README.md",
+      "https://github.com/tesseract-ocr/tesseract/blob/4292f6890aa86ef64eba32090358f40f69dd6d28/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "pandoc",
+    "ppt-master"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La guía de PPT Master declara Pandoc para ciertos formatos de entrada como .doc, .odt, .rtf o .tex. Confirmar versiones soportadas en ambos antes de usar un .doc de muestra y cotejar el título en el PPTX.",
+     "sources": [
+      "https://github.com/hugohe3/ppt-master#installation",
+      "https://github.com/hugohe3/ppt-master/blob/bb48b2b114256ae9734f84e8ff18cb050b6d27e0/README.md",
+      "https://github.com/jgm/pandoc/blob/7dcbc37067d12a270160389d06fd29451c8e623c/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "paperless-ngx",
+    "pdfding"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "No se estableció un conector directo para trasladar subrayados, progreso y metadatos de archivo entre ambos. Una transferencia manual de un PDF sería una prueba diferente.",
+     "sources": [
+      "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+      "https://github.com/paperless-ngx/paperless-ngx/blob/bc9d45cecc52805a05cf3b3c677ddbc05e790e4d/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "paperless-ngx",
+    "tika"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Configurar la integración opcional Tika y Gotenberg de Paperless para MIME admitidos. Paperless conserva y organiza. Una muestra .docx se ingiere con metadatos y versión de archivo.",
+     "sources": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/configuration.md",
+      "https://github.com/paperless-ngx/paperless-ngx/blob/bc9d45cecc52805a05cf3b3c677ddbc05e790e4d/README.md",
+      "https://github.com/apache/tika/blob/bc502d9c81ae0cfea8c223bb907c5b61c4bc2133/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "pdf-inspector",
+    "pdfmathtranslate"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La opción ultrafast del README usa posiciones de texto en PDF nativos. Verificar que una cifra y fórmula sigan en su sitio. El modo experimental para escaneos es una ruta aparte.",
+     "sources": [
+      "https://github.com/PDFMathTranslate/PDFMathTranslate#2-recent-updates",
+      "https://github.com/firecrawl/pdf-inspector/blob/6723b39302ef21b48a8168546d50243a4aef4c12/README.md",
+      "https://github.com/PDFMathTranslate/PDFMathTranslate/blob/4d707315ed99b6c29571d5b24e2f3723c337955c/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "peft",
+    "transformers"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Transformers carga el checkpoint y tokenizador. PEFT añade LoRA y exporta el adaptador, que debe acompañarse del identificador y revisión de su base. Éxito si al recargar se reproduce la evaluación sobre datos apartados.",
+     "sources": [
+      "https://huggingface.co/docs/transformers/peft",
+      "https://huggingface.co/docs/peft/en/index"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "pipecat",
+    "rnnoise"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "PCM hace factible un adaptador, pero no se verificó integración nativa ni preservación de timing. No se deriva incompatibilidad.",
+     "sources": [
+      "https://github.com/pipecat-ai/pipecat/blob/main/README.md",
+      "https://github.com/xiph/rnnoise/blob/main/README"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "planck-js",
+    "react-three-rapier"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Comparables para validar colisión sencilla en representación 2D o 3D, no para cargar el mismo archivo de mundo. Compruebe paso de simulación, escala y resultado.",
+     "sources": [
+      "https://github.com/piqnt/planck.js/blob/master/README.md",
+      "https://github.com/pmndrs/react-three-rapier/blob/main/readme.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "playwright",
+    "playwright-mcp"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Playwright Test conserva casos ejecutables en CI. MCP ofrece exploración desde un agente con acceso al navegador. Revisar alcance, navegador y versión del servidor. El resultado del agente se convierte en aserciones repetibles.",
+     "sources": [
+      "https://github.com/microsoft/playwright-mcp",
+      "https://playwright.dev/docs/writing-tests"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "playwright",
+    "steel-browser"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Steel administra sesiones Chrome y expone un endpoint CDP. Playwright controla la sesión. Útil si abre un perfil aislado y el tester puede identificar la sesión y finalizarla.",
+     "sources": [
+      "https://github.com/steel-dev/steel-browser",
+      "https://playwright.dev/docs/api/class-browsertype#browser-type-connect-over-cdp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "playwright",
+    "storybook"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Storybook prepara estados aislados. Playwright puede visitar la historia publicada o probar el flujo real de la app. Mantener datos, url y assertions de cada entorno, fijar versión del complemento si se usa.",
+     "sources": [
+      "https://storybook.js.org/docs/writing-tests",
+      "https://playwright.dev/docs/test-fixtures"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "playwright-cli",
+    "playwright-mcp"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion para la misma etapa",
+     "note": "Para accionar la misma página desde un agente, escoger CLI o servidor MCP. Mantener la biblioteca Playwright en CI si se necesitan aserciones, ejecución repetible y trazas.",
+     "sources": [
+      "https://github.com/microsoft/playwright",
+      "https://github.com/microsoft/playwright-cli",
+      "https://github.com/microsoft/playwright-mcp"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "polyweather",
+    "py-sdk"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Se podrían comparar informes meteorológicos y lecturas públicas por mercado/fecha/estación con adaptador de datos propio. Separar explícitamente cualquier capacidad de firma u operación.",
+     "sources": [
+      "https://github.com/yangyuan-zhen/PolyWeather/blob/HEAD/README.md",
+      "https://github.com/Polymarket/py-sdk/blob/HEAD/README.md",
+      "https://docs.polymarket.com/api-reference/predictions/overview"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "posthog",
+    "umami"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Las vistas de páginas son comparables con el mismo denominador. Un único tracker maestro para el KPI. Si PostHog se suma para embudos, asignar una taxonomía transversal y evitar sumar sesiones entre fuentes.",
+     "sources": [
+      "https://github.com/umami-software/umami/blob/HEAD/README.md",
+      "https://github.com/PostHog/posthog/blob/HEAD/README.md",
+      "https://posthog.com/docs/product-analytics"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "postiz-app",
+    "social-media-agent"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "El agente produce un borrador aprobado y Postiz puede programar mediante su API. Requiere adaptador propio, cuenta OAuth por canal y clave de idempotencia. Evitar que el agente publique por su proveedor Arcade en paralelo.",
+     "sources": [
+      "https://github.com/gitroomhq/postiz-app/blob/HEAD/README.md",
+      "https://docs.postiz.com/self-host/providers/overview",
+      "https://docs.postiz.com/public-api/introduction"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "prediction-market-backtesting",
+    "py-sdk"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "Coinciden en Polymarket, pero no se comprobó importación directa ni equivalencia entre APIs/esquemas históricos. Exigir mapeo de token, mercado, resolución y procedencia.",
+     "sources": [
+      "https://github.com/Polymarket/py-sdk/blob/HEAD/README.md",
+      "https://docs.polymarket.com/api-reference/predictions/overview",
+      "https://docs.polymarket.com/getting-started/api#authentication"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "promptfoo",
+    "ragas"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Pueden cubrir el mismo caso de evaluación con diferentes métricas. Comparar mediante un archivo intermedio de casos con pregunta, evidencia esperada y salida. Verificar esquema propio de cada runner y el juez elegido. Éxito si se sabe cuál falló y por qué.",
+     "sources": [
+      "https://www.promptfoo.dev/docs/",
+      "https://docs.ragas.io/en/stable/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "pyannote-audio",
+    "whisper"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Puede juntar quién/cuándo con qué se dijo comparando marcas del mismo WAV; solapes requieren regla explícita y revisión humana. Use WhisperX si necesita una integración ya documentada.",
+     "sources": [
+      "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+      "https://github.com/openai/whisper/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "qgis",
+    "webodm"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "WebODM produce GeoTIFF y QGIS importa y comprueba su georreferencia. Confirme CRS, solape y puntos de control antes de publicar.",
+     "sources": [
+      "https://github.com/WebODM/WebODM/blob/master/README.md",
+      "https://github.com/qgis/QGIS/blob/master/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "radix-primitives",
+    "ui"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Elegir componente y preset compatibles. Las variantes de shadcn pueden elegir Radix o Base UI. Revisar imports y evitar dos propietarios del foco en el mismo diálogo.",
+     "sources": [
+      "https://ui.shadcn.com/docs/installation",
+      "https://www.radix-ui.com/primitives/docs/overview/introduction"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "react-three-fiber",
+    "react-three-rapier",
+    "three.js"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Three.js renderiza, Fiber ofrece renderer React y Rapier física. Coincidir versiones de React, Fiber y Rapier conforme a la matriz. Verificar colisión, tamaño y fallback WebGL.",
+     "sources": [
+      "https://r3f.docs.pmnd.rs/getting-started/introduction",
+      "https://github.com/pmndrs/react-three-rapier"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "real-esrgan",
+    "upscayl"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Upscayl empaqueta superresolución mediante NCNN/Vulkan; Real-ESRGAN aporta la familia, pero fije el identificador de modelo de la GUI. Compare contorno y tamaño de salida.",
+     "sources": [
+      "https://github.com/xinntao/Real-ESRGAN/blob/master/README.md",
+      "https://github.com/upscayl/upscayl/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "remotion",
+    "skills-remotion"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La skill orienta al agente, Remotion ejecuta la composición React/TS. El entregable verificable es el proyecto editable y un MP4 con tiempos cotejados.",
+     "sources": [
+      "https://github.com/remotion-dev/skills/blob/main/README.md",
+      "https://github.com/remotion-dev/remotion/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "remotion",
+    "video-shotcraft"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "La skill estructura la toma y genera el proyecto Remotion. Revise el componente y la duración de cada plano. La exportación JianYing CN es una ruta aparte que depende de versión y no prueba compatibilidad con CapCut global.",
+     "sources": [
+      "https://github.com/Vincentwei1021/video-shotcraft/blob/main/README.md",
+      "https://github.com/remotion-dev/remotion/blob/main/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "stitch-sdk",
+    "stitch-skills"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Comparten el servicio. La skill usa Stitch MCP y el SDK usa su interfaz programática. Diseñador exporta HTML o captura, desarrollador revisa el artefacto. La conexión exige verificar configuración y cuenta, sin asumir que SDK y MCP son intercambiables.",
+     "sources": [
+      "https://github.com/google-labs-code/stitch-skills",
+      "https://github.com/google-labs-code/stitch-sdk"
+     ]
+    },
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "Las skills organizan diseño y entrega con Stitch MCP. El SDK sirve para integrar Stitch desde código mediante su propia autenticación. El artefacto exportado o el identificador de proyecto es la interfaz con desarrollo. Verificar compatibilidad del servicio y cuenta.",
+     "sources": [
+      "https://github.com/google-labs-code/stitch-skills",
+      "https://stitch.withgoogle.com/docs/"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "supabase",
+    "tanstack-query"
+   ],
+   "findings": [
+    {
+     "kind": "compatibilidad condicionada",
+     "note": "El cliente de Supabase devuelve datos y error. El desarrollador envuelve la consulta y propaga el error al estado de TanStack Query. Probar permisos y caché con sesión ficticia y reinicio de sesión.",
+     "sources": [
+      "https://tanstack.com/query/latest/docs/framework/react/guides/query-functions",
+      "https://supabase.com/docs/reference/javascript/select"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "supervision",
+    "ultralytics"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Ultralytics predice boxes/clases, Supervision documenta importación desde resultados de Ultralytics. Confirme XYXY, clase, confianza e ID de track cuando el caso lo exige.",
+     "sources": [
+      "https://supervision.roboflow.com/latest/detection/core/#supervision.detection.core.Detections.from_ultralytics",
+      "https://github.com/ultralytics/ultralytics/blob/main/README.md",
+      "https://github.com/roboflow/supervision/blob/develop/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "swr",
+    "tanstack-query"
+   ],
+   "findings": [
+    {
+     "kind": "sustitucion misma etapa",
+     "note": "Para el mismo dato del servidor elegir caché y política de invalidación. Comparar claves, mutaciones y estado de espera. No suponer sincronía entre cachés ni reemplazo de línea a línea.",
+     "sources": [
+      "https://tanstack.com/query/latest/docs/framework/react/overview",
+      "https://swr.vercel.app/docs/getting-started"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "tailwindcss",
+    "ui"
+   ],
+   "findings": [
+    {
+     "kind": "complemento documentado",
+     "note": "Tailwind compila estilos y el registro copia código React al proyecto configurado. Validar el tema y comprobar una variante en el navegador.",
+     "sources": [
+      "https://ui.shadcn.com/docs/installation",
+      "https://tailwindcss.com/docs/installation/using-vite"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "ui-sdk",
+    "vercel-ai"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "Nombres similares. Las fuentes de AI SDK explican inferencia/transporte y ui-sdk describe comportamientos de UI. No se verificó un enlace obligatorio, una interoperabilidad adaptada o sustitución.",
+     "sources": [
+      "https://ai-sdk.dev/docs/introduction",
+      "https://github.com/vercel-labs/ui"
+     ]
+    }
+   ]
+  },
+  {
+   "ids": [
+    "video-use",
+    "whisper-cpp"
+   ],
+   "findings": [
+    {
+     "kind": "sin evidencia",
+     "note": "No se encontró un adaptador upstream que reemplace Scribe por whisper.cpp. Una coincidencia de SRT no cubre el esquema word/speaker/audio-event. Seguiría siendo posible un adaptador futuro.",
+     "sources": [
+      "https://github.com/browser-use/video-use/blob/main/README.md",
+      "https://github.com/ggml-org/whisper.cpp/blob/master/README.md"
+     ]
+    }
+   ]
+  }
+ ]
+}

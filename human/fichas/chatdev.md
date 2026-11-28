@@ -4,6 +4,12 @@
 
 > Plataforma multiagente sin código de OpenBMB: configura equipos de agentes por roles; la versión 1.0 simulaba una empresa de software.
 
+## Cuándo elegir esta ficha
+
+El README de ChatDev 2.0 describe plataforma para componer equipos o flujos sin código. Conservar el acceso al código fuente, pero orientar la primera entrada por la versión actual de la plataforma.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/OpenBMB/ChatDev/blob/464a681ba7bda869db97a50c5fa707c9a0fb57a0/README.md) · [Fuente 2](https://github.com/OpenBMB/ChatDev/blob/main/README.md) · [Fuente 3](https://github.com/OpenBMB/ChatDev)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 34.8k | Apache-2.0 | Python | 2026-11-16 |

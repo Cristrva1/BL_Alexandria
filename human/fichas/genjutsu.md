@@ -4,6 +4,12 @@
 
 > Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple.
 
+## Cuándo elegir esta ficha
+
+El README enseña motion de interfaces y muestra ejemplos web/SwiftUI, no un flujo de animación de caras. Mover de av-personajes a diseño de interacción preservando ficha y ejemplos. Motion Design Skill cubre principios; Claude Animated Shorts cubre personajes de un corto, con una especialidad distinta.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/AThevon/genjutsu/blob/a22540b623590505879d6489dd03d7f3072bce05/README.md) · [Fuente 2](https://github.com/AThevon/genjutsu/commit/a22540b623590505879d6489dd03d7f3072bce05) · [Fuente 3](https://github.com/AThevon/genjutsu/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 799 | MIT | Python | 2026-11-14 |

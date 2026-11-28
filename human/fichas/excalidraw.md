@@ -4,6 +4,12 @@
 
 > Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa.
 
+## Cuándo elegir esta ficha
+
+Mantener como pizarra con boceto dibujado y formatos propios. Penpot sustituye el prototipado de pantallas y tldraw ofrece un lienzo integrable con condiciones de licencia separadas. Retirarlo pierde diagramas editables y sus integraciones.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/excalidraw/excalidraw) · [Fuente 2](https://help.penpot.app/user-guide/) · [Fuente 3](https://tldraw.dev/community/license)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 136k | MIT | TypeScript | 2026-11-10 |

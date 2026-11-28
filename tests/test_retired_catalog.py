@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RETIRED_NOW = {'mvanhorn', 'python-machine-learning-book'}
+RETIRED_NOW = {'mvanhorn', 'python-machine-learning-book', 'loki'}
 
 
 def test_retired_repos_are_purged_everywhere():
@@ -10,6 +10,8 @@ def test_retired_repos_are_purged_everywhere():
     assert RETIRED_NOW <= set(retired)
     assert retired['mvanhorn']['reason'] == 'no-herramienta'
     assert retired['python-machine-learning-book']['reason'] == 'descontinuado'
+    assert retired['loki']['historical_url'] == 'https://github.com/Neo23x0/Loki'
+    assert retired['loki']['replaced_by'] == ['yara']
     index = json.loads((ROOT / 'INDICE_IA.json').read_text())
     detail = json.loads((ROOT / 'INDICE_IA.detalle.json').read_text())
     ids = {r['id'] for r in index['repos']}

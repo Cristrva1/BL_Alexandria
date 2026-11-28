@@ -4,6 +4,14 @@
 
 > Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.
 
+## Cuándo elegir esta ficha
+
+Conservar por restauración facial histórica no comercial. La superresolución general sirve como otra etapa si la necesidad es tamaño; no acredita reconstrucción facial comparable.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/sczhou/CodeFormer/blob/b33cc7d639d6545bfcccc7e0bc6ae51f24e79c2b/README.md) · [Fuente 2](https://github.com/sczhou/CodeFormer/commit/b33cc7d639d6545bfcccc7e0bc6ae51f24e79c2b) · [Fuente 3](https://github.com/sczhou/CodeFormer/blob/master/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 18.2k | S-Lab License 1.0 (no comercial) | Python | 2026-11-10 |

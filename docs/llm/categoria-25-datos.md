@@ -1,6 +1,6 @@
 # Alexandría para agentes · Datos y notebooks
 
-Categoría 25 «Procesar datos y trabajar con notebooks» › subcategoría `datos`. 17 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 25 «Procesar datos y trabajar con notebooks» › subcategoría `datos`. 14 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=25&sub=datos · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -20,7 +20,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 |---|---|---|---:|---|---|
 | `clickhouse` | Base de datos analítica columnar de código abierto para consultas SQL en tiempo… | 2 Intermedio | 80 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `pandas` | Biblioteca estándar de Python para analizar y transformar datos tabulares con… | 2 Intermedio | 77 | BSD-3-Clause (OSI permisiva) | recomendado |
-| `marimo` | Notebook reactivo de Python que se guarda como script, se versiona en Git y se… | 1 Básico | 76 | Apache-2.0 (OSI permisiva) | recomendado |
 | `spark` | Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y… | 3 Avanzado | 76 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `arrow` | Formato columnar en memoria y conjunto de bibliotecas multilenguaje para… | 2 Intermedio | 70 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `duckdb` | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y… | 2 Intermedio | 68 | MIT (OSI permisiva) | alternativa |
@@ -33,8 +32,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `pygwalker` | Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual… | 2 Intermedio | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `ibis` | Biblioteca Python de dataframes portable: escribe la consulta una vez y… | 2 Intermedio | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `hudi` | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas… | 3 Avanzado | 51 | Apache-2.0 (OSI permisiva) | alternativa |
-| `awesome-bigdata` | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 46 | MIT (OSI permisiva) | sin grupo |
-| `globalbuildingatlas` | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 32 | MIT + Commons Clause (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -62,18 +59,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `jupyterlab`, `duckdb`, `scikit-learn` [24/entrenamiento], `arrow`, `pygwalker`, `reflex` [25/apps]
 - **Alternativas:** `duckdb`, `polars`
 - **Riesgos y avisos:** Para volúmenes grandes, Polars (alternativa) o DuckDB suelen ser más rápidos y usan menos memoria; pandas sigue siendo la API más compatible con el ecosistema.
-
-### marimo (`marimo`)
-
-- **Repo:** https://github.com/marimo-team/marimo · Apache-2.0 · nivel 1 · 76/100 · recomendado en «Notebooks»
-- **Qué es:** marimo, notebook reactivo de Python que se guarda como script `.py`, de marimo-team. Licencia Apache-2.0. Es maduro y activo (~24k estrellas, 0.25.2).
-- **Cuándo elegirlo:** Casos: Explorar datos en un notebook; Convertir un análisis en una app.
-- **Requisitos:** nivel 1: preparación sencilla; Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI; hardware prerequisites; API de IA: opcional; Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI.
-- **Instalación (documentada en la fuente; no ejecutada):** `pip install marimo && marimo tutorial intro` — fuente: https://github.com/marimo-team/marimo/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Completa el tutorial intro y modifica una variable para ver qué celdas se recalculan Éxito: Puedes reconocer dependencias reactivas y el archivo Python guardado
-- **Combina con:** `duckdb`, `polars`, `ollama` [8/motores]
-- **Alternativas:** `jupyterlab`
-- **Riesgos y avisos:** Alternativa (elige una): jupyterlab. Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local.
 
 ### Apache Spark (`spark`)
 
@@ -105,7 +90,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; CLI o biblioteca para tu sistema; CSV pequeño; hardware prerequisites; API de IA: no; CLI o biblioteca para tu sistema; CSV pequeño.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://duckdb.org/docs/installation/
 - **Primera prueba propuesta (no ejecutada):** Abre un CSV ficticio y consulta el total de registros y una suma por categoría Éxito: Puedes comparar el resultado con las filas originales
-- **Combina con:** `marimo`, `superset` [10/bi], `timesfm` [24/modelos], `apache-iceberg`, `delta-lake`
+- **Combina con:** `marimo` [25/apps], `superset` [10/bi], `timesfm` [24/modelos], `apache-iceberg`, `delta-lake`
 - **Alternativas:** `pandas`, `polars`
 - **Riesgos y avisos:** Alternativas (elige una): polars. Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor.
 
@@ -117,7 +102,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python; CSV pequeño; memoria para los datos; hardware prerequisites; API de IA: no; Python; CSV pequeño; memoria para los datos.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install polars` — fuente: https://github.com/pola-rs/polars/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Lee un archivo y agrupa por una columna para sumar otra Éxito: Puedes contrastar el resultado con una muestra calculada a mano
-- **Combina con:** `marimo`, `timesfm` [24/modelos], `streamlit` [25/apps], `apache-iceberg`, `delta-lake`
+- **Combina con:** `marimo` [25/apps], `timesfm` [24/modelos], `streamlit` [25/apps], `apache-iceberg`, `delta-lake`
 - **Alternativas:** `pandas`, `duckdb`
 - **Riesgos y avisos:** Alternativas (elige una): duckdb. Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración.
 
@@ -152,7 +137,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install "dlt[duckdb]"` — fuente: https://github.com/dlt-hub/dlt/blob/devel/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `pip install "dlt[duckdb]"`, define una fuente REST pequeña y ejecuta el pipeline con destino DuckDB. Éxito: Obtienes un archivo DuckDB con tablas tipadas creadas por dlt.
-- **Combina con:** `duckdb`, `airflow` [1/motores], `ibis`, `marimo`, `dagster` [1/motores]
+- **Combina con:** `duckdb`, `airflow` [1/motores], `ibis`, `marimo` [25/apps], `dagster` [1/motores]
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
 
 ### Delta Lake (`delta-lake`)
@@ -207,31 +192,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños; hardware prerequisites; API de IA: no; Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/apache/hudi.git && cd hudi` — fuente: https://github.com/apache/hudi/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Inserta registros ficticios y actualiza uno para comparar estado y consulta incremental Éxito: Puedes comprobar la actualización sin reconstruir manualmente toda la tabla
-- **Combina con:** `duckdb`, `superset` [10/bi], `awesome-bigdata`, `spark`
+- **Combina con:** `duckdb`, `superset` [10/bi], `awesome-bigdata` [10/recursos], `spark`
 - **Alternativas:** `delta-lake`, `apache-iceberg`
 - **Riesgos y avisos:** Alternativas (elige una): apache-iceberg, delta-lake. Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados.
-
-### awesome-bigdata (`awesome-bigdata`)
-
-- **Repo:** https://github.com/oxnr/awesome-bigdata · MIT · nivel 1 · 46/100
-- **Qué es:** Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.
-- **Cuándo elegirlo:** Casos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; problema de datos definido; hardware prerequisites; API de IA: no; Navegador; problema de datos definido.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/oxnr/awesome-bigdata/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una Éxito: Puedes elegir candidatos complementarios
-- **Combina con:** `awesome-dataviz` [10/recursos], `duckdb`, `hudi`
-- **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces.
-
-### GlobalBuildingAtlas (`globalbuildingatlas`)
-
-- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 32/100
-- **Qué es:** GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra…
-- **Cuándo elegirlo:** Casos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa; hardware prerequisites; API de IA: no; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa Éxito: Puedes identificar formato, licencia y escala del dato
-- **Combina con:** `three.js` [26/animacion], `duckdb`, `3dviz-pro-max` [27/skills]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

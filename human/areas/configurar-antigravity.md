@@ -19,7 +19,7 @@ Esta colección reúne clientes, extensiones y material para configurar el agent
 
 ## Opciones para empezar
 
-[Agentic Awesome Skills (AAS)](../fichas/antigravity-awesome-skills.md), [Stitch Skills](../fichas/stitch-skills.md), [prompt-master](../fichas/prompt-master.md)
+[Agentic Awesome Skills (AAS)](../fichas/antigravity-awesome-skills.md), [Stitch Skills](../fichas/stitch-skills.md)
 
 Son opciones para comparar. No es necesario instalar todas.
 

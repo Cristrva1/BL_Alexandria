@@ -1,6 +1,6 @@
-# Alexandría para agentes · Fotogrametría y mapas desde imágenes
+# Alexandría para agentes · Datos geoespaciales, fotogrametría y mapas
 
-Categoría 10 «Dashboards, analítica y mapas» › subcategoría `geoespacial`. 7 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 10 «Dashboards, analítica y mapas» › subcategoría `geoespacial`. 8 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=10&sub=geoespacial · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -25,6 +25,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `qgis` | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `webodm` | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `odm` | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `globalbuildingatlas` | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 32 | MIT + Commons Clause (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -95,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
 - **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps], `leaflet`, `qgis`
 - **Alternativas:** `odm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
 
@@ -112,9 +113,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --project-path /datasets project
   ```
 - **Primera prueba propuesta (no ejecutada):** Procesa un lote pequeño de imágenes de prueba y abre la ortofoto y nube de puntos Éxito: Puedes inspeccionar alineación, cobertura y errores visibles
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos]
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps]
 - **Alternativas:** `webodm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm). El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas.
+
+### GlobalBuildingAtlas (`globalbuildingatlas`)
+
+- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 32/100
+- **Qué es:** GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra…
+- **Cuándo elegirlo:** Casos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa; hardware prerequisites; API de IA: no; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa Éxito: Puedes identificar formato, licencia y escala del dato
+- **Combina con:** `three.js` [26/animacion], `duckdb` [25/datos], `3dviz-pro-max` [27/skills]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 
@@ -122,7 +134,7 @@ Guarda este archivo como `docs/alexandria/categoria-10-geoespacial.md` y añade:
 
 ```markdown
 ## Herramientas externas
-Antes de proponer herramientas de «Fotogrametría y mapas desde imágenes», lee `docs/alexandria/categoria-10-geoespacial.md` y sigue sus
+Antes de proponer herramientas de «Datos geoespaciales, fotogrametría y mapas», lee `docs/alexandria/categoria-10-geoespacial.md` y sigue sus
 «Instrucciones para el agente». No instales ni ejecutes nada de esa lista sin mi aprobación explícita.
 ```
 
