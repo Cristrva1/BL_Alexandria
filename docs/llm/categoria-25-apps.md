@@ -1,6 +1,6 @@
 # Alexandría para agentes · Apps de datos en Python
 
-Categoría 25 «Procesar datos y trabajar con notebooks» › subcategoría `apps`. 6 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 25 «Procesar datos y trabajar con notebooks» › subcategoría `apps`. 7 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=25&sub=apps · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,6 +18,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `marimo` | Notebook reactivo de Python que se guarda como script, se versiona en Git y se… | 1 Básico | 76 | Apache-2.0 (OSI permisiva) | recomendado |
 | `streamlit` | Framework para levantar apps internas y prototipos de datos desde Python con… | 2 Intermedio | 76 | Apache-2.0 (OSI permisiva) | recomendado |
 | `gradio` | Librería Python para crear y compartir apps web de modelos de ML en minutos. | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | alternativa |
 | `reflex` | Framework para crear aplicaciones web completas (frontend y backend) solo con… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | alternativa |
@@ -28,6 +29,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### marimo (`marimo`)
+
+- **Repo:** https://github.com/marimo-team/marimo · Apache-2.0 · nivel 1 · 76/100 · recomendado en «Notebooks»
+- **Qué es:** marimo, notebook reactivo de Python que se guarda como script `.py`, de marimo-team. Licencia Apache-2.0. Es maduro y activo (~24k estrellas, 0.25.2).
+- **Cuándo elegirlo:** Casos: Explorar datos en un notebook; Convertir un análisis en una app.
+- **Requisitos:** nivel 1: preparación sencilla; Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI; hardware prerequisites; API de IA: opcional; Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI.
+- **Instalación (documentada en la fuente; no ejecutada):** `pip install marimo && marimo tutorial intro` — fuente: https://github.com/marimo-team/marimo/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Completa el tutorial intro y modifica una variable para ver qué celdas se recalculan Éxito: Puedes reconocer dependencias reactivas y el archivo Python guardado
+- **Combina con:** `duckdb` [25/datos], `polars` [25/datos], `ollama` [8/motores]
+- **Alternativas:** `jupyterlab`
+- **Riesgos y avisos:** Alternativa (elige una): jupyterlab. Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local.
 
 ### streamlit (`streamlit`)
 
@@ -96,7 +109,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install panel` — fuente: https://github.com/holoviz/panel/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `pip install panel`, crea `app.py` con un widget enlazado a un gráfico y ejecútalo con `panel serve app.py --dev`. Éxito: El dashboard se abre en el navegador y responde a los controles.
-- **Combina con:** `jupyterlab` [25/datos], `marimo` [25/datos], `claude-code` [20/terminal], `deck.gl` [10/geoespacial], `echarts` [10/graficos]
+- **Combina con:** `jupyterlab` [25/datos], `marimo`, `claude-code` [20/terminal], `deck.gl` [10/geoespacial], `echarts` [10/graficos]
 - **Alternativas:** `streamlit`, `gradio`, `reflex`, `nicegui`
 - **Riesgos y avisos:** Panel publica una comparación con Streamlit en su documentación; ambos están agrupados como alternativas.
 

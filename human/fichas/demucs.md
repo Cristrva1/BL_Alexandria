@@ -4,6 +4,12 @@
 
 > Modelo de separación de fuentes musicales (voz, batería, bajo y resto) con Hybrid Transformer; continuación mantenida por su autor tras archivarse el repo de Meta.
 
+## Cuándo elegir esta ficha
+
+El repositorio del autor enlazado en el índice no está archivado. Evitar una decisión de retirada derivada del archivo de la copia de Meta. UVR es alternativa visual, incluso puede elegir un modelo Demucs, no reemplaza una CLI por lotes.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/adefossez/demucs/blob/829d21890023800713e5dd231c67e43ecc06069b/README.md) · [Fuente 2](https://github.com/adefossez/demucs/commit/829d21890023800713e5dd231c67e43ecc06069b) · [Fuente 3](https://github.com/adefossez/demucs/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3.6k | MIT | Python | 2026-11-16 |

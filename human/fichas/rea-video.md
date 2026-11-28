@@ -4,6 +4,14 @@
 
 > Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md.
 
+## Cuándo elegir esta ficha
+
+El rumbo central es análisis de una referencia a VIDEO.md y lista de planos. Mantener en preproducción/análisis y evitar presentarlo como editor de una línea de tiempo. video-use y ffmpeg-skill cubren edición, no el dossier plano por plano.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/JuneYaooo/rea-video/blob/70a0d5ea314329a617d493ab5b4c9eddcdd1365c/README.md) · [Fuente 2](https://github.com/JuneYaooo/rea-video/commit/70a0d5ea314329a617d493ab5b4c9eddcdd1365c) · [Fuente 3](https://github.com/JuneYaooo/rea-video/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 8.6k | Apache-2.0 | Python | 2026-11-14 |

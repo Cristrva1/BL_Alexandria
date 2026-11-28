@@ -4,6 +4,14 @@
 
 > Explica con un caso cómo reconstruir la apariencia de un video como una escena navegable en Three.js.
 
+## Cuándo elegir esta ficha
+
+Publica un caso desglosado para reconstrucción manual/asistida en Three.js. Blender cubre recrear una escena y OpenReality ofrece una ruta distinta de reconstrucción; ninguno reemplaza el caso pedagógico íntegro.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md) · [Fuente 2](https://github.com/cpppppp7/video2threejs/commit/4c3869e2e4338283c32c56dc9f371fef371dd447) · [Fuente 3](https://github.com/blender/blender/blob/main/.github/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 63 | MIT | JavaScript | 2026-11-22 |

@@ -10,7 +10,10 @@ from repo_intelligence.core.access import API_LABELS, COST_LABELS, ROUTE_LABELS,
 from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.taxonomy import goal_memberships
 from repo_intelligence.core.io import read_json, write_json
-from repo_intelligence.core.web_projects import WEB_PROJECTS, WEB_PROJECT_GUIDE, WEB_PROJECT_RULES
+from repo_intelligence.core.web_projects import (
+    WEB_PROJECT_CONTEXT, WEB_PROJECT_EXCLUSIONS, WEB_PROJECT_GUIDE, WEB_PROJECT_NEGATIONS,
+    WEB_PROJECT_RULES, WEB_PROJECTS,
+)
 
 
 TAG_SYNONYMS = {
@@ -359,12 +362,12 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     effective_tool = _detect_effective_tool(project, build_tool)
     intents = _detect_intents(project)
     required_capabilities = _infer_required_capabilities(project)
-    web_project = _web_project_for(project) if task_goals == {"web"} and not access_route else None
+    web_project = _web_project_for(project) if task_goals <= {"web", "datos"} and not access_route else None
 
     scored = []
     for repo in scan.get("repos", []):
         candidate = {**repo, **detail_by_id.get(repo["id"], {})}
-        if candidate.get("alias_of") or candidate.get("cat") == 0:
+        if candidate.get("alias_of") or candidate.get("cat") == 0 or (candidate.get("audit_guidance") or {}).get("reference_only"):
             continue
         if (candidate["id"] in retired_ids or candidate.get("github_id") in retired_github_ids
                 or (candidate.get("gh") or "").lower() in retired_names):
@@ -373,7 +376,7 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
             continue
         if access_route and access_route not in access_routes(candidate):
             continue
-        if task_goals and "goals" in candidate and not task_goals.intersection(candidate["goals"]):
+        if web_project is None and task_goals and "goals" in candidate and not task_goals.intersection(candidate["goals"]):
             continue
         score, reasons = score_repo(project, repo, detail_by_id.get(repo["id"], {}), build_tool=effective_tool, intents=intents)
         if score <= 0 and web_project is None:
@@ -433,15 +436,14 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
 
 def _web_project_for(project: str) -> dict | None:
     text = _norm_text(project)
-    if not re.search(r"\b(?:paginas? web|sitios? web|web app|app web|aplicacion web|landing|frontend|panel web)\b", text):
+    if not re.search(WEB_PROJECT_CONTEXT, text) or re.search(WEB_PROJECT_EXCLUSIONS, text):
         return None
-    if re.search(r"\b(?:ecommerce|tienda|carrito|pasarela de pago|sin codigo|no[- ]code)\b", text):
-        return None
-    text = re.sub(r"\b(?:sin|no quiero|no necesito) (?:un )?(?:chat con ia|chat de ia|login)\b", "", text)
-    if re.search(r"\b(?:chat con ia|chat de ia|chatbot con ia|chatbot de ia)\b", text):
-        return WEB_PROJECTS["chat"]
-    if re.search(r"\b(?:web app|app web|aplicacion web|dashboard|panel|login|inicio de sesion|cuentas de usuario|base de datos)\b", text):
-        return WEB_PROJECTS["aplicacion"]
+    text = re.sub(WEB_PROJECT_NEGATIONS, "", text)
+    for key in ("ia", "cms", "panel"):
+        route = WEB_PROJECTS[key]
+        if re.search(route["match"], text):
+            variant = next((v for v in route.get("variants", {}).values() if re.search(v["match"], text)), {})
+            return {**route, **variant}
     return WEB_PROJECTS["informativa"]
 
 
@@ -522,6 +524,8 @@ def _render_superguide(result: dict[str, Any]) -> str:
             web_project["details"],
             "",
             f'**Primera prueba.** {web_project["trial"]}',
+            "",
+            f'**Qué comprobar.** {web_project["success"]}',
             "",
             f'[Guía oficial para empezar]({web_project["source"]})',
             "",

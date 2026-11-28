@@ -326,7 +326,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Jupyter Notebook, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/microsoft/ML-For-Beginners.git` — fuente: https://github.com/microsoft/ML-For-Beginners/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Clona el repositorio con la descarga dispersa del README (sin traducciones) y abre la primera lección en Jupyter. Éxito: El cuaderno se ejecuta y muestra el primer modelo de regresión.
-- **Combina con:** `jupyterlab` [25/datos], `marimo` [25/datos], `llm-course`, `scikit-learn` [24/entrenamiento]
+- **Combina con:** `jupyterlab` [25/datos], `marimo` [25/apps], `llm-course`, `scikit-learn` [24/entrenamiento]
 - **Riesgos y avisos:** No cubre deep learning; para ese tema Microsoft remite a otros cursos de la serie.
 
 ### nanochat (`nanochat`)
@@ -418,7 +418,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   jupyter notebook notebooks/02_tokenization.ipynb
   ```
 - **Primera prueba propuesta (no ejecutada):** Abre el notebook de tokenización y procesa una frase antes de pasar a entrenamiento Éxito: Puedes inspeccionar tokens y reconstrucción del texto
-- **Combina con:** `nanochat`, `pytorch` [24/entrenamiento], `marimo` [25/datos]
+- **Combina con:** `nanochat`, `pytorch` [24/entrenamiento], `marimo` [25/apps]
 - **Riesgos y avisos:** Sin alternativas declaradas. Material escrito con ayuda de IA según su autor: verifica las afirmaciones técnicas. Empieza por el capítulo de setup; los comandos del README ofrecen alternativas y no deben concatenarse como si todas fueran obligatorias.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md

@@ -1159,6 +1159,23 @@
         "ecc",
         "gstack"
       ]
+    },
+    {
+      "id": "loki",
+      "gh": "Neo23x0/Loki",
+      "github_id": 29420337,
+      "name": "LOKI Python",
+      "cat": 16,
+      "retired_at": "2026-11-27",
+      "reason": "descontinuado",
+      "evidence": "El mantenedor declara obsoleta la edición Python y enlaza LOKI RS. YARA cubre solo reglas. La paridad de migración queda por comprobar. https://github.com/Neo23x0/Loki/blob/7688421a7094e95453802d97484f2a0b8694a664/README.md",
+      "last_commit": "2026-01-09",
+      "archived": false,
+      "replaced_by": [
+        "yara"
+      ],
+      "historical_url": "https://github.com/Neo23x0/Loki",
+      "successor_url": "https://github.com/Neo23x0/Loki-RS"
     }
   ]
 }

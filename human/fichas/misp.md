@@ -36,9 +36,9 @@ Instalación documentada (bash guides/Docker); se opera vía UI y REST API.
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[LOKI](loki.md) · [Shuffle](shuffle.md)
+[Shuffle](shuffle.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.5.51 (2026-11-11) · licencia declarada AGPL-3.0 (consultado el 2026-11-16).
 

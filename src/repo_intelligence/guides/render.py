@@ -291,6 +291,19 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     if repo.get("one"):
         lines += [f"> {repo['one']}", ""]
 
+    audit = repo.get("audit_guidance") or {}
+    if audit.get("note"):
+        lines += ["## Cuándo elegir esta ficha", "", audit["note"], ""]
+        if audit.get("reference_only"):
+            lines += ["Referencia de consulta del catálogo.", ""]
+        sources = " · ".join(f"[Fuente {n}]({url})" for n, url in enumerate(audit.get("sources", []), 1))
+        lines += [f"Revisión documental del {audit['checked_at']}. {sources}".rstrip(), ""]
+
+    if audit.get("descriptive_only"):
+        lines += ["Referencia descriptiva de seguridad.", "", f"[Consultar la ficha original]({repo['repo']})", ""]
+        lines += licence_review_lines(repo)
+        return "\n".join(lines)
+
     local = _local_flag(repo, local_ids)
     local_text = {"📦": "📦 Sí", "🆕": "🆕 Aún no (sugerido)", "🧰": "🧰 Interna"}[local]
     lines += [

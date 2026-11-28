@@ -162,7 +162,10 @@ for(const area of c.discovery.areas) for(const topic of area.topics){
   assert.equal(result.intent.goal.id,topic.id);
   assert.ok(result.picks.length<=3,topic.id);
   assert.ok(result.picks.every(p=>topic.repo_ids.includes(p.item.id)));
-  if(!result.picks.length)assert.ok(Object.values(result.excluded).some(Boolean),topic.id);
+  if(topic.reference_only){
+    assert.equal(result.referenceOnly,true,topic.id);
+    assert.deepEqual(result.picks,[],topic.id);
+  } else if(!result.picks.length)assert.ok(Object.values(result.excluded).some(Boolean),topic.id);
 }
 ''',build_catalog(ROOT))
 

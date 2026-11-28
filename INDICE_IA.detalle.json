@@ -2903,6 +2903,14 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "La guía en español y scripts generan un proyecto con Claude Code. Conservar la receta. Typebot solo sustituye la etapa de diseñar un diálogo para un perfil visual. Se perderían el scaffolding y las instrucciones del proveedor del bot.",
+    "sources": [
+     "https://github.com/Hainrixz/whatsapp-agentkit/blob/HEAD/README.md",
+     "https://github.com/Hainrixz/whatsapp-agentkit/commit/e33eb6a35804c2122c1d0d711e2cc91cfaceac91"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "typebot": {
@@ -3303,6 +3311,14 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Conservar SDK, CLI e integraciones MIT de Botpress. Para construir un bot visual, dirigir a Botpress Studio bajo sus propias condiciones o a Typebot cuando basta el diseño conversacional.",
+    "sources": [
+     "https://github.com/botpress/botpress/blob/HEAD/readme.md",
+     "https://github.com/botpress/botpress/commit/2553cf21aeb8de684db9738e19bd9ad000cb36b2"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "odoo": {
@@ -6464,6 +6480,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Guíame ya desvía el repositorio a MCP y automatización. Conservar la ficha y su ID técnico estable. Corregir el tipo práctico de directorio cuando la tarea sea usar las guías incluidas.",
+    "sources": [
+     "https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/README.md",
+     "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md",
+     "https://github.com/ComposioHQ/awesome-claude-skills"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "awesome-claude-code": {
@@ -10105,6 +10130,16 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/hardikpandya/stop-slop/blob/main/README.md"
    },
+   "audit_guidance": {
+    "note": "Ambos cubren pulido de prosa. Preservar la rúbrica y lista de patrones de Stop Slop como opción. Humanizer cubre revisión práctica y pedidos de conservar hechos. Ninguno puede acreditar autoría humana.",
+    "sources": [
+     "https://github.com/hardikpandya/stop-slop",
+     "https://github.com/blader/humanizer",
+     "https://github.com/hardikpandya/stop-slop/commit/8da1f030185bdfe8471220585162991eaeb970e9"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
+   },
    "similares": {
     "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos",
     "titulo": "Skills para quitar el tono de IA a los textos",
@@ -11523,6 +11558,16 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "El README presenta una skill para Claude y una plantilla de salida orientada a Antigravity. El perfil de destino del prompt aporta una referencia para el tema de Antigravity.",
+    "sources": [
+     "https://github.com/nidhinjs/prompt-master/blob/49b3a72469b1e7287d66387004ccfcca90e5968a/README.md",
+     "https://github.com/nidhinjs/prompt-master/blob/main/README.md",
+     "https://github.com/nidhinjs/prompt-master"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "generative-ai-for-beginners": {
@@ -14371,6 +14416,15 @@
     "origen": "auto",
     "auto": 1
    },
+   "audit_guidance": {
+    "note": "La ruta Google individual aparece derivada a Antigravity CLI. Retirar Gemini CLI quitaría el flujo de Code Assist empresarial y su cliente abierto. Separar licencia de cliente, plan empresarial y acceso de modelos. No inferir que la migración conserva configuración o automatizaciones.",
+    "sources": [
+     "https://github.com/google-gemini/gemini-cli",
+     "https://github.com/google-antigravity/antigravity-cli",
+     "https://github.com/google-gemini/gemini-cli/commit/60f8082b14ffa7f10b608270232f3f57b5abbec8"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-agentes-de-programacion-en-terminal",
     "titulo": "Agentes de programación en terminal",
@@ -15552,6 +15606,15 @@
     "origen": "README",
     "seccion": "Desktop app",
     "fuente": "https://github.com/pingdotgg/t3code/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Conservar como cliente para modelos de trabajo con varios agentes según releases. Retirarlo pierde ese acceso desde distintos dispositivos. OpenCode Manager cubre la operación de sesiones del ecosistema OpenCode, con condiciones de cliente y autenticación distintas.",
+    "sources": [
+     "https://github.com/pingdotgg/t3code",
+     "https://github.com/chriswritescode-dev/opencode-manager",
+     "https://github.com/pingdotgg/t3code/commit/685b40de126f3c1ef4d12a03cf3720b9007538ff"
+    ],
+    "checked_at": "2026-11-27"
    },
    "similares": {
     "grupo": "g-gestores-de-sesiones-de-agentes-de-codigo",
@@ -19508,6 +19571,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "El README es un índice de recursos. Conservar enlace junto al framework en vez de tratarlo como otro framework Python.",
+    "sources": [
+     "https://github.com/vonzosten/awesome-LangGraph/blob/edd0fb9cf4f109c60a6196c36a44da9f8e81fa60/README.md",
+     "https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md",
+     "https://github.com/vonzosten/awesome-LangGraph"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "mastra": {
@@ -20187,6 +20260,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Microsoft Learn documenta los runtimes. El repositorio no respondió en la consulta directa. Verifica su disponibilidad antes de intentar instalar.",
+    "sources": [
+     "https://github.com/microsoft/agent-framework/blob/main/README.md",
+     "https://github.com/microsoft/agent-framework",
+     "https://learn.microsoft.com/en-us/agent-framework/overview/"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "langgraphjs": {
@@ -20625,6 +20708,15 @@
     "origen": "auto",
     "auto": 2
    },
+   "audit_guidance": {
+    "note": "La PR 118 conserva Sim por conectores y cliente de macOS que también documenta instancias propias. Recomendar Dify para una app documental y Langflow para componentes Python.",
+    "sources": [
+     "https://github.com/simstudioai/sim/blob/abc9e5c20bf781679848968403055ab55171b732/README.md",
+     "https://github.com/simstudioai/sim/blob/main/README.md",
+     "https://github.com/simstudioai/sim"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-builders-visuales-de-agentes",
     "titulo": "Builders visuales de agentes",
@@ -20858,6 +20950,15 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "El README del commit revisado se centra en especialistas y rutinas de la plataforma alojada de pago. Conserva un builder visual, una ruta propia con credenciales de modelo y Classic por separado. PolyForm Shield rige la plataforma y Classic usa MIT.",
+    "sources": [
+     "https://github.com/Significant-Gravitas/AutoGPT/blob/HEAD/README.md",
+     "https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md",
+     "https://github.com/Significant-Gravitas/AutoGPT"
+    ],
+    "checked_at": "2026-11-27"
    },
    "similares": {
     "grupo": "g-builders-visuales-de-agentes",
@@ -22861,6 +22962,15 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "note": "Su bucle mide mejoras en entrenamiento nanochat, con presupuesto de GPU. Research de fuentes tiene otra salida. El uso en un agente de código depende de las instrucciones del proyecto.",
+    "sources": [
+     "https://github.com/karpathy/autoresearch/blob/228791fb499afffb54b46200aca536f79142f117/README.md",
+     "https://github.com/karpathy/autoresearch/blob/master/README.md",
+     "https://github.com/karpathy/autoresearch"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "deer-flow": {
@@ -24567,6 +24677,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Ejemplo de una interfaz que opera por pantalla. Consulta los requisitos de su API y el alcance del acceso.",
+    "sources": [
+     "https://github.com/google-gemini/computer-use-preview",
+     "https://github.com/microsoft/playwright-mcp",
+     "https://github.com/google-gemini/computer-use-preview/commit/77c9797e943aad63bbc963b7fd092a9e51c07863"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "agent-protocol": {
@@ -31920,6 +32040,15 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "note": "Preservar en la técnica MCP con un tipo propio o un enlace claro desde SDK. Es cliente diagnóstico interactivo y no crea servidores.",
+    "sources": [
+     "https://github.com/modelcontextprotocol/inspector/blob/2069a1a4d8c777360621f4c90c04017012bd5fae/README.md",
+     "https://github.com/modelcontextprotocol/inspector/blob/main/README.md",
+     "https://github.com/modelcontextprotocol/inspector"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "mcp-use": {
@@ -34369,6 +34498,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/public-apis/public-apis/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Las entradas del índice sirven para encontrar APIs HTTP. Un cliente MCP necesita un servidor que encapsule cada API. Distinguir su enlace de la lista de clientes o servidores.",
+    "sources": [
+     "https://github.com/public-apis/public-apis/blob/1e4904643a17c7a12041c854a1caad3df663245e/README.md",
+     "https://github.com/public-apis/public-apis/blob/master/README.md",
+     "https://github.com/public-apis/public-apis"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "awesome-mcp-servers": {
@@ -41236,6 +41375,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Recomendar como apoyo de logging Python. Se perdería un API simple de logs locales si se retira. OpenLLMetry y Langfuse cubren instrumentación y análisis de trazas, complementarios a los logs y sin sustitución directa.",
+    "sources": [
+     "https://raw.githubusercontent.com/Delgan/loguru/1b5edc5b0075804770f881db0d3589ac460ee290/README.md",
+     "https://api.github.com/repos/Delgan/loguru",
+     "https://github.com/Delgan/loguru/commit/1b5edc5b0075804770f881db0d3589ac460ee290"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "Referencia de logging Python, enlazada desde observabilidad"
    }
   },
   "opik": {
@@ -43491,6 +43640,14 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "Preservar la referencia aplicada por PR 118. Si se ocultase se perdería la combinación de mapa de flujos y previsualización de renombrado sobre un índice, con visor conectado al servidor. Los sustitutos cubren principalmente navegación e impacto. PolyForm Noncommercial requiere valorar licencia comercial aparte.",
+    "sources": [
+     "https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/LICENSE",
+     "https://github.com/abhigyanpatwari/GitNexus/commit/acf755a1b70ea91208aac9437c2a552579a62b70"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "tree-sitter": {
@@ -48020,7 +48177,7 @@
   "marimo": {
    "name": "marimo",
    "cat": 25,
-   "sub": "datos",
+   "sub": "apps",
    "desc": "Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.",
    "why": "Usos propuestos: Explorar datos en un notebook; Convertir un análisis en una app.",
    "how": "Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local",
@@ -48200,6 +48357,16 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "Agrupar con notebooks y apps y mantener referencia desde procesamiento. JupyterLab cubre .ipynb. Al retirar marimo se perderían reactividad, código guardado como .py y posibilidad de servir el mismo cuaderno como app.",
+    "sources": [
+     "https://raw.githubusercontent.com/marimo-team/marimo/906e4c2f4aa22c8630f0081a3e4ca6f56c311b8f/README.md",
+     "https://api.github.com/repos/marimo-team/marimo",
+     "https://github.com/marimo-team/marimo/commit/906e4c2f4aa22c8630f0081a3e4ca6f56c311b8f"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "25/apps o un tema técnico específico de notebooks"
    },
    "similares": {
     "grupo": "g-notebooks",
@@ -48455,8 +48622,8 @@
   },
   "awesome-bigdata": {
    "name": "awesome-bigdata",
-   "cat": 25,
-   "sub": "datos",
+   "cat": 10,
+   "sub": "recursos",
    "desc": "Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.",
    "why": "Usos propuestos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.",
    "how": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
@@ -48634,6 +48801,17 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/oxnr/awesome-bigdata/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Mostrar en recursos como lectura sobre big data. Se perdería el directorio por clases de infraestructura si se retira. La hoja de ruta solo cubre la orientación para principiantes.",
+    "sources": [
+     "https://raw.githubusercontent.com/oxnr/awesome-bigdata/9eb86451dc5775c40939693820f2c8a74c31d01a/README.md",
+     "https://api.github.com/repos/oxnr/awesome-bigdata",
+     "https://github.com/oxnr/awesome-bigdata/commit/9eb86451dc5775c40939693820f2c8a74c31d01a"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "placement": "10/recursos"
    }
   },
   "ollama": {
@@ -49761,6 +49939,16 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "Pasar a consultor previo de hardware dentro de IA local. Se perdería el inventario comparativo de cuantizaciones si se retira. Su README al corte también documenta que el modo benchmark coordina un proveedor en ejecución. Ollama y llama.cpp cubren la etapa de inferencia y permiten medir el uso real. Mantener como referencia visible antes de descargar.",
+    "sources": [
+     "https://raw.githubusercontent.com/AlexsJones/llmfit/57048e7f888082da0e6b24cbbf4013feebfcef1a/README.md",
+     "https://api.github.com/repos/AlexsJones/llmfit",
+     "https://github.com/AlexsJones/llmfit/commit/57048e7f888082da0e6b24cbbf4013feebfcef1a"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "Herramientas previas de hardware en IA local"
    }
   },
   "llamafile": {
@@ -53325,6 +53513,16 @@
     "origen": "README",
     "seccion": "Installation",
     "fuente": "https://github.com/teng-lin/notebooklm-py/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Biblioteca Python y CLI no oficiales para NotebookLM. Depende del servicio remoto y de una sesión compatible.",
+    "sources": [
+     "https://raw.githubusercontent.com/teng-lin/notebooklm-py/159414513d6ce2bfcc22401b3f7c3ab9e7d9ccc1/README.md",
+     "https://api.github.com/repos/teng-lin/notebooklm-py",
+     "https://github.com/teng-lin/notebooklm-py/commit/159414513d6ce2bfcc22401b3f7c3ab9e7d9ccc1"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "8/notebooklm, como cliente remoto"
    }
   },
   "notebooklm-mcp-cli": {
@@ -53508,6 +53706,16 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "Cliente no oficial con MCP y terminal para NotebookLM. Depende del servicio remoto y de una sesión compatible.",
+    "sources": [
+     "https://raw.githubusercontent.com/jacob-bd/gemini-notebook-mcp-cli/ef3bb8e76a7678f4177ce5d0f5e317da6b34029d/README.md",
+     "https://api.github.com/repos/jacob-bd/gemini-notebook-mcp-cli",
+     "https://github.com/jacob-bd/gemini-notebook-mcp-cli/commit/ef3bb8e76a7678f4177ce5d0f5e317da6b34029d"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "8/notebooklm, como cliente remoto"
    }
   },
   "ui": {
@@ -54457,14 +54665,14 @@
     "posicion": 1,
     "total": 2,
     "papel": "recomendado",
-    "cuando": "Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas.",
+    "cuando": "Si buscas esto: efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React.",
     "ranking": [
      {
       "id": "react-bits",
       "posicion": 1,
       "puntuacion": 58.8,
       "papel": "recomendado",
-      "cuando": "Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas."
+      "cuando": "Si buscas esto: efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React."
      },
      {
       "id": "magicui",
@@ -54682,6 +54890,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://swr.vercel.app/docs/getting-started"
+   },
+   "audit_guidance": {
+    "note": "Mover la exposición de SWR de componentes a obtención de datos. Al retirarlo se perdería una ruta React sencilla con su API de claves y revalidación. TanStack Query cubre datos, mutaciones e invalidación con contratos distintos, sin migración automática.",
+    "sources": [
+     "https://swr.vercel.app/docs/getting-started",
+     "https://tanstack.com/query/latest/docs/framework/react/overview",
+     "https://github.com/vercel/swr/commit/8148ef012fd5b317d1e8ec2da4b2ca0673f63c0f"
+    ],
+    "checked_at": "2026-11-27"
    },
    "similares": {
     "grupo": "g-obtencion-de-datos-en-react",
@@ -55374,6 +55591,15 @@
     "resultado": "sin_comando",
     "fuente": "https://magicui.design/docs"
    },
+   "audit_guidance": {
+    "note": "Mantener la decisión de PR 118. Retirarlo quita Bento Grid, Hero Video Dialog y el registro MIT de secciones. React Bits sustituye el efecto elegido, con otra licencia y cláusula sobre redistribución separada. Los productos Pro tienen términos separados.",
+    "sources": [
+     "https://magicui.design/docs/components/bento-grid",
+     "https://magicui.design/docs/components/hero-video-dialog",
+     "https://raw.githubusercontent.com/DavidHDev/react-bits/a30a9da9b40a91c5672fc8cd77785719e8e5b1e6/LICENSE.md"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-componentes-animados-para-react",
     "titulo": "Componentes animados para React",
@@ -55387,7 +55613,7 @@
       "posicion": 1,
       "puntuacion": 58.8,
       "papel": "recomendado",
-      "cuando": "Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas."
+      "cuando": "Si buscas esto: efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React."
      },
      {
       "id": "magicui",
@@ -56150,6 +56376,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Conservar para CSS nativo donde interesa un baseline portátil. Tailwind Preflight ya aplica reglas de base en una pila Tailwind; combinar normalizaciones sin un motivo documentado duplica trabajo y puede cambiar la cascada.",
+    "sources": [
+     "https://github.com/necolas/normalize.css",
+     "https://tailwindcss.com/docs/preflight",
+     "https://github.com/necolas/normalize.css/commit/fc091cce1534909334c1911709a39c22d406977b"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "three.js": {
@@ -57444,6 +57679,15 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/excalidraw/excalidraw/blob/master/README.md"
    },
+   "audit_guidance": {
+    "note": "Mantener como pizarra con boceto dibujado y formatos propios. Penpot sustituye el prototipado de pantallas y tldraw ofrece un lienzo integrable con condiciones de licencia separadas. Retirarlo pierde diagramas editables y sus integraciones.",
+    "sources": [
+     "https://github.com/excalidraw/excalidraw",
+     "https://help.penpot.app/user-guide/",
+     "https://tldraw.dev/community/license"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-pizarras-y-diagramas-a-mano-alzada",
     "titulo": "Pizarras y diagramas a mano alzada",
@@ -58076,6 +58320,15 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "La ruta principal de tldraw es construir un lienzo React. Al retirarlo se pierde la integración y el modelo de lienzo del SDK. Konva ofrece primitivas Canvas 2D y Excalidraw ofrece pizarra editable. Las tres opciones tienen distintos términos y formatos.",
+    "sources": [
+     "https://github.com/tldraw/tldraw",
+     "https://tldraw.dev/community/license",
+     "https://konvajs.org/docs/"
+    ],
+    "checked_at": "2026-11-27"
    },
    "similares": {
     "grupo": "g-pizarras-y-diagramas-a-mano-alzada",
@@ -60757,8 +61010,8 @@
     },
     {
      "id": "design-dna",
-     "motivo": "Combinación recíproca: design-dna lo enlaza como «Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura)».",
-     "orden_instalacion": "Orden indicado desde design-dna: Extrae primero y valida después.",
+     "motivo": "Los formatos son distintos. Valida el documento después de redactar y mapear el perfil manualmente.",
+     "orden_instalacion": "Redacta el documento a partir del perfil y valida una copia de prueba.",
      "reciproca_de": "design-dna"
     },
     {
@@ -60819,6 +61072,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "La ficha compacta marca ejecución cloud, mientras el upstream ofrece especificación, validador y exportador ejecutables en Node. Conservar composición y linter. Quitar el formato pierde reglas de identidad versionables. Design DNA conserva parte de la información con otro esquema.",
+    "sources": [
+     "https://github.com/google-labs-code/design.md",
+     "https://github.com/zanwei/design-dna",
+     "https://github.com/google-labs-code/design.md/commit/db977b3c1d1f309269f43d5d17ae828d54bd6ae3"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "umami": {
@@ -66359,6 +66621,16 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "Conservar por restauración facial histórica no comercial. La superresolución general sirve como otra etapa si la necesidad es tamaño; no acredita reconstrucción facial comparable.",
+    "sources": [
+     "https://github.com/sczhou/CodeFormer/blob/b33cc7d639d6545bfcccc7e0bc6ae51f24e79c2b/README.md",
+     "https://github.com/sczhou/CodeFormer/commit/b33cc7d639d6545bfcccc7e0bc6ae51f24e79c2b",
+     "https://github.com/sczhou/CodeFormer/blob/master/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "deep-live-cam": {
@@ -66546,6 +66818,16 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "note": "Separar sustitución en webcam de la edición offline con FaceFusion y de la animación con LivePortrait. Mantener enlace de consulta si se necesita flujo en vivo autorizado y documentar qué funciones requieren la edición de pago.",
+    "sources": [
+     "https://github.com/hacksider/Deep-Live-Cam/blob/08896a51c9a6198f50dc9f7508acf39fc460c8f1/README.md",
+     "https://github.com/hacksider/Deep-Live-Cam/commit/08896a51c9a6198f50dc9f7508acf39fc460c8f1",
+     "https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    },
    "similares": {
     "grupo": "g-intercambio-de-rostros",
@@ -70334,6 +70616,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Puede seguir al lado de TTS con etiqueta audio-audio. GPT-SoVITS es una ruta si se parte de texto; el sustituto es parcial y no preserva interpretación y temporización de una toma real.",
+    "sources": [
+     "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/81eed5e8f68b6bed1789f682fe78cdd324495afc/README.md",
+     "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/commit/81eed5e8f68b6bed1789f682fe78cdd324495afc",
+     "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "fish-speech": {
@@ -72375,6 +72666,16 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/OpenCut-app/OpenCut/blob/main/README.md"
    },
+   "audit_guidance": {
+    "note": "El upstream dirige al navegador clásico mientras reescribe el núcleo. Preservar ese enlace como ruta explícita web; Shotcut/Kdenlive garantizan un camino documentado a la misma tarea de montaje local, con distinto acceso.",
+    "sources": [
+     "https://github.com/OpenCut-app/OpenCut/blob/e668010778568641babef2cc40be4703ae6916d6/README.md",
+     "https://github.com/OpenCut-app/OpenCut/commit/e668010778568641babef2cc40be4703ae6916d6",
+     "https://github.com/OpenCut-app/OpenCut/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
+   },
    "similares": {
     "grupo": "g-editores-de-video",
     "titulo": "Editores de video",
@@ -73191,6 +73492,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Presentarlo como integración de una instalación existente de Resolve. Mantener edición manual como punto de entrada y exigir edición/build para prometer scripts. Los editores citados cubren montaje, no las operaciones del servidor.",
+    "sources": [
+     "https://github.com/samuelgursky/davinci-resolve-mcp/blob/cafc7ad692e768aaeb5d0ea912f24ace08be545b/README.md",
+     "https://github.com/samuelgursky/davinci-resolve-mcp/commit/cafc7ad692e768aaeb5d0ea912f24ace08be545b",
+     "https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "hyperframes": {
@@ -73807,6 +74117,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Community es la ruta pedagógica general de Python. Conservar ManimGL para escenas como las de 3Blue1Brown, con CLI, paquete e imports separados según ambos upstreams.",
+    "sources": [
+     "https://github.com/3b1b/manim/blob/fafa083a4fb274bba9cabde0b6e2f50ba6da0622/README.md",
+     "https://github.com/3b1b/manim/commit/fafa083a4fb274bba9cabde0b6e2f50ba6da0622",
+     "https://github.com/3b1b/manim/blob/master/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    },
    "similares": {
     "grupo": "g-animaciones-matematicas-manim",
@@ -74497,6 +74817,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Mantener como herramienta de redacción y revisión CMS de una pieza de señalización. Su último commit ayuda a poner contexto, pero la decisión se apoya en el destino específico y sus conectores.",
+    "sources": [
+     "https://github.com/schibsted/videofy_minimal/blob/5652e70981b1f45df43d7e6c6f38793ed3a947ad/README.md",
+     "https://github.com/schibsted/videofy_minimal/commit/5652e70981b1f45df43d7e6c6f38793ed3a947ad",
+     "https://github.com/schibsted/videofy_minimal/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "remotion-superpowers": {
@@ -75596,6 +75926,16 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "El original 13B conserva checkpoint y ejemplos de investigación, con memoria mucho mayor para el flujo oficial. En nuevas pruebas priorizar 1.5 o Wan2.2 por la ruta concreta y licencia aplicable.",
+    "sources": [
+     "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/4eda9cb44c3be82a6b9c4261897cb6bd3cfb084e/README.md",
+     "https://github.com/Tencent-Hunyuan/HunyuanVideo/commit/4eda9cb44c3be82a6b9c4261897cb6bd3cfb084e",
+     "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    },
    "similares": {
     "grupo": "g-modelos-abiertos-de-video-generativo",
@@ -79194,6 +79534,15 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "El ID conserva identidad tras cambio de slug. El README apunta a otro repo para v2 y el original aún tiene actividad. Conservar la ficha de tarea y etiquetar rutas.",
+    "sources": [
+     "https://github.com/PDFMathTranslate/PDFMathTranslate/blob/4d707315ed99b6c29571d5b24e2f3723c337955c/README.md",
+     "https://api.github.com/repos/PDFMathTranslate/PDFMathTranslate",
+     "https://github.com/PDFMathTranslate/PDFMathTranslate/commit/4d707315ed99b6c29571d5b24e2f3723c337955c"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "pdfcraft": {
@@ -79388,6 +79737,15 @@
     "seccion": "Option 1: Use Pre-built Image",
     "fuente": "https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md"
    },
+   "audit_guidance": {
+    "note": "Ambos nombres se parecen, con IDs, upstreams, flujos y licencias distintos. El editor web cubre utilidades PDF, la librería prepara Markdown y EPUB desde escaneos.",
+    "sources": [
+     "https://github.com/PDFCraftTool/pdfcraft/blob/50aef68b77f7f6286862b3f648a8b49cde7cddad/README.md",
+     "https://api.github.com/repos/PDFCraftTool/pdfcraft",
+     "https://github.com/PDFCraftTool/pdfcraft/commit/50aef68b77f7f6286862b3f648a8b49cde7cddad"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-suites-de-herramientas-pdf",
     "titulo": "Suites de herramientas PDF",
@@ -79416,7 +79774,7 @@
   "pdfding": {
    "name": "PdfDing",
    "cat": 13,
-   "sub": "pdf",
+   "sub": "gestion",
    "desc": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
    "why": "Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.",
    "how": "Se instala con Docker siguiendo la guía oficial. El código y las versiones nuevas se publican en Codeberg; el repositorio de GitHub quedó archivado como copia antigua",
@@ -79541,8 +79899,8 @@
     },
     {
      "id": "paperless-ngx",
-     "motivo": "Paperless archiva y clasifica; PdfDing sirve para leer y anotar (combinación por arquitectura).",
-     "orden_instalacion": "Decide qué sistema guarda el original para no duplicar."
+     "motivo": "Paperless archiva y PdfDing ayuda a leer y anotar. Un traslado manual de PDF no transfiere automáticamente progreso, destacados ni metadatos.",
+     "orden_instalacion": "Prueba con una copia de PDF y revisa cada metadato antes de migrar."
     },
     {
      "id": "coolify",
@@ -79616,6 +79974,15 @@
      "Sin medición de OpenSSF Scorecard en esta fuente: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "La tarea principal es leer, anotar y organizar PDF. El archivo general se cubre con Paperless, mientras PdfDing merece conservarse como opción de lectura.",
+    "sources": [
+     "https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md",
+     "https://api.github.com/repos/mrmn2/PdfDing",
+     "https://github.com/mrmn2/PdfDing/commit/34d7e4ce0b28d0a146a731a628e28dd160594e0d"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "slidev": {
@@ -80484,6 +80851,15 @@
     "seccion": "Install to Node project",
     "fuente": "https://github.com/marp-team/marp/blob/main/website/docs/introduction/install.md"
    },
+   "audit_guidance": {
+    "note": "El repo funciona como puerta a los paquetes. Slidev sustituye parte de la autoría Markdown, con sintaxis y exportación diferentes.",
+    "sources": [
+     "https://github.com/marp-team/marp/blob/95263d5a0df563633ef6611c986b34b55f936eaa/README.md",
+     "https://api.github.com/repos/marp-team/marp",
+     "https://github.com/marp-team/marp/commit/95263d5a0df563633ef6611c986b34b55f936eaa"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-presentaciones-desde-markdown",
     "titulo": "Presentaciones desde Markdown",
@@ -81291,6 +81667,16 @@
     "origen": "doc del repo",
     "seccion": "安装（一次性）",
     "fuente": "https://github.com/JuneYaooo/rea-video/blob/main/skills/rea-video/references/setup.md"
+   },
+   "audit_guidance": {
+    "note": "El rumbo central es análisis de una referencia a VIDEO.md y lista de planos. Mantener en preproducción/análisis y evitar presentarlo como editor de una línea de tiempo. video-use y ffmpeg-skill cubren edición, no el dossier plano por plano.",
+    "sources": [
+     "https://github.com/JuneYaooo/rea-video/blob/70a0d5ea314329a617d493ab5b4c9eddcdd1365c/README.md",
+     "https://github.com/JuneYaooo/rea-video/commit/70a0d5ea314329a617d493ab5b4c9eddcdd1365c",
+     "https://github.com/JuneYaooo/rea-video/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "agent-desktop": {
@@ -82291,6 +82677,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Moverlo de síntesis de video y presentarlo como extracción de momentos/reencuadre de material propio o autorizado. Los alternativos montan clips, pero ninguna equivalencia cubre por sí sola selección automática y la heurística de puntuación.",
+    "sources": [
+     "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/4cfa5f00d65b4dca05bec92c67bfeb3af66cdfb3/README.md",
+     "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/commit/4cfa5f00d65b4dca05bec92c67bfeb3af66cdfb3",
+     "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "ace-step-1.5": {
@@ -85375,8 +85770,8 @@
   },
   "globalbuildingatlas": {
    "name": "GlobalBuildingAtlas",
-   "cat": 25,
-   "sub": "datos",
+   "cat": 10,
+   "sub": "geoespacial",
    "desc": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
    "why": "Usos propuestos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.",
    "how": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
@@ -85572,6 +85967,16 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "Presentar en geoespacial como conjunto de datos, con referencia desde procesamiento. QGIS abre y visualiza capas, pero no entrega las huellas, alturas ni LoD1 del Atlas. Preservar las capas ODbL y CC BY-NC 4.0 identificadas por separado en el aviso del mantenedor.",
+    "sources": [
+     "https://raw.githubusercontent.com/zhu-xlab/GlobalBuildingAtlas/d58507e22af2bd940de5f98da7ed6763bd32147c/README.md",
+     "https://api.github.com/repos/zhu-xlab/GlobalBuildingAtlas",
+     "https://github.com/zhu-xlab/GlobalBuildingAtlas/commit/d58507e22af2bd940de5f98da7ed6763bd32147c"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "10/geoespacial como dataset"
    }
   },
   "whatsmeow": {
@@ -87454,8 +87859,7 @@
     "activepieces",
     "twenty-main",
     "botpress",
-    "compai-crm",
-    "formbricks"
+    "compai-crm"
    ],
    "alternatives": [
     "easyappointments"
@@ -87582,12 +87986,6 @@
      "motivo": "Combinación recíproca: crm lo enlaza como «Las reuniones reservadas alimentan el historial que el agente lee (combinación por arquitectura)».",
      "orden_instalacion": "Orden indicado desde crm: Después del CRM; conecta las invitaciones al buzón sincronizado.",
      "reciproca_de": "compai-crm"
-    },
-    {
-     "id": "formbricks",
-     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Cal.diy agenda; Formbricks encuesta post-cita».",
-     "orden_instalacion": "Orden indicado desde Formbricks: Cal.diy → Formbricks.",
-     "reciproca_de": "formbricks"
     }
    ],
    "descripcion_fuentes": [
@@ -87642,6 +88040,14 @@
     "origen": "README",
     "seccion": "Setup",
     "fuente": "https://github.com/calcom/cal.diy/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "El proyecto recomienda su edición comunitaria MIT para uso personal y pruebas sin producción. Easy!Appointments cubre una agenda de proveedores/servicios. Se perderían particularidades del ecosistema Cal y su interfaz.",
+    "sources": [
+     "https://github.com/calcom/cal.diy/blob/HEAD/README.md",
+     "https://github.com/calcom/cal.diy/commit/ae027bb70e694e2d2c44569f398d6cbcee0389b1"
+    ],
+    "checked_at": "2026-11-27"
    },
    "similares": {
     "grupo": "g-reservas-y-citas",
@@ -89708,6 +90114,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/kyrolabs/awesome-agents/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Su índice enlaza frameworks, plataformas e infraestructura. Su unidad no es una skill instalable. Mover la entrada de navegación, manteniendo el permalink.",
+    "sources": [
+     "https://github.com/kyrolabs/awesome-agents/blob/28f095d81e77043cd0e8b161017796397a64142f/README.md",
+     "https://github.com/kyrolabs/awesome-agents/blob/main/README.md",
+     "https://github.com/kyrolabs/awesome-agents"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "500-ai-agents-projects": {
@@ -89904,6 +90320,16 @@
     "origen": "README",
     "seccion": "⚡ Quick Start",
     "fuente": "https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Usar como índice de ideas y enlaces externos. Se perderían amplitud de dominios y referencias, pero el curso cubre orden didáctico y Awesome LLM Apps ofrece demos con su propio código. Mantener la muestra sin prometer que todos los enlaces son ejecutables.",
+    "sources": [
+     "https://raw.githubusercontent.com/ashishpatel26/500-AI-Agents-Projects/e48f78ccf182746d4f01e2093fe2ccd884269656/README.md",
+     "https://api.github.com/repos/ashishpatel26/500-AI-Agents-Projects",
+     "https://github.com/ashishpatel26/500-AI-Agents-Projects/commit/e48f78ccf182746d4f01e2093fe2ccd884269656"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "19/guias como referencia de ideas"
    }
   },
   "autohedge": {
@@ -90092,6 +90518,15 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "note": "Referencia experimental. Si solo quieres investigar una empresa o una tesis, compara con Dexter o TradingAgents usando datos de prueba.",
+    "sources": [
+     "https://github.com/The-Swarm-Corporation/AutoHedge/blob/HEAD/README.md",
+     "https://github.com/The-Swarm-Corporation/AutoHedge/commit/c549c7950da112286e76725d49f6a25de8fa99bd"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "finceptterminal": {
@@ -90285,6 +90720,14 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Conservar terminal y binario Windows x64 documentado. La compilación AGPL y Enterprise privada operan sobre núcleo de datos común según el autor. Se perdería la distinción proveedor/terminal si se fusionara con OpenBB.",
+    "sources": [
+     "https://github.com/Fincept-Corporation/FinceptTerminal/blob/HEAD/README.md",
+     "https://github.com/Fincept-Corporation/FinceptTerminal/commit/914134de5fd227fe66969c4591ac9ca7e461cdf4"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "claude-token-efficient": {
@@ -90663,6 +91106,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Conservar como lista consultable por humanos. Si se oculta se pierde el índice transversal de criterios, útil sin instalar agente. Impeccable cubre parte de la revisión e información de interoperabilidad se puede consultar en Modern Web Guidance.",
+    "sources": [
+     "https://github.com/thedaviddias/Front-End-Checklist",
+     "https://github.com/pbakaus/impeccable",
+     "https://developer.chrome.com/docs/modern-web-guidance"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "qlib": {
@@ -91852,6 +92305,17 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Presentar como archivo de comparación con procedencia incierta. Se perdería amplitud entre distintas interfaces si se retira. La guía enseña escritura verificable y el otro archivo concentra ejemplos de GPTs.",
+    "sources": [
+     "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/162db92f54d717d8ebd12292e155aeef32bb4b3c/README.md",
+     "https://api.github.com/repos/x1xhlol/system-prompts-and-models-of-ai-tools",
+     "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/commit/162db92f54d717d8ebd12292e155aeef32bb4b3c"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "placement": "19/prompts como referencia atribuida"
    }
   },
   "autoskills": {
@@ -93128,6 +93592,15 @@
     "origen": "README",
     "seccion": "🚀 使用说明",
     "fuente": "https://github.com/ChainBuff/open-sol-bot/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Referencia de investigación especializada sobre software y datos de Solana.",
+    "sources": [
+     "https://github.com/ChainBuff/open-sol-bot/blob/HEAD/README.md",
+     "https://github.com/ChainBuff/open-sol-bot/commit/b85c3e94b69af4fc07b2f8967fff997f96cb44b2"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "binance-trader": {
@@ -93317,6 +93790,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/yasinkuyu/binance-trader/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Conservar la muestra de implementación Binance en Python y balances como lectura. Freqtrade cubre aprendizaje por estrategia y dry-run; CCXT, integración genérica. El último commit disponible data de enero y la documentación del ejemplo se centra en una cuenta. Ello no acredita abandono.",
+    "sources": [
+     "https://github.com/yasinkuyu/binance-trader/blob/HEAD/README.md",
+     "https://github.com/yasinkuyu/binance-trader/commit/a2997e717501b43ee3cfb6399b1d62f4dabbf415"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "data-analyst-roadmap": {
@@ -93895,6 +94377,17 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Dejar como consulta histórica con autoría atribuida. Se perdería el enfoque en GPTs concretos. La guía tiene técnicas reproducibles y el segundo archivo aporta amplitud entre herramientas, con procedencia también por verificar.",
+    "sources": [
+     "https://raw.githubusercontent.com/LouisShark/chatgpt_system_prompt/9f6274a26eccebcd279ba2ae3f03bc2658632a31/README.md",
+     "https://api.github.com/repos/LouisShark/chatgpt_system_prompt",
+     "https://github.com/LouisShark/chatgpt_system_prompt/commit/9f6274a26eccebcd279ba2ae3f03bc2658632a31"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "placement": "19/prompts como referencia atribuida"
    }
   },
   "chatbox": {
@@ -94351,6 +94844,17 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Archivo histórico de ejemplos de la época de GPT-3.5. Para aprender a redactar instrucciones, usa una guía didáctica.",
+    "sources": [
+     "https://raw.githubusercontent.com/0xk1h0/ChatGPT_DAN/2b1221c70732108df43e0656a1733083348b2720/README.md",
+     "https://api.github.com/repos/0xk1h0/ChatGPT_DAN",
+     "https://github.com/0xk1h0/ChatGPT_DAN/commit/2b1221c70732108df43e0656a1733083348b2720"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "placement": "19/prompts como archivo histórico fuera de elecciones iniciales"
    }
   },
   "opencursor": {
@@ -94549,6 +95053,16 @@
     "origen": "README",
     "seccion": "Development",
     "fuente": "https://github.com/PawanOsman/OpenCursor/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Mantener visible para búsqueda semántica y ruta Ollama/llama.cpp documentadas. Se solapa en chat y edición agéntica dentro de VS Code. En el corte, la extensión y el README ofrecen una diferencia verificable sin asumir igual flujo ni igual seguridad por defecto.",
+    "sources": [
+     "https://github.com/PawanOsman/OpenCursor",
+     "https://github.com/cline/cline",
+     "https://github.com/Kilo-Org/kilocode"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "awesome-web-scraping": {
@@ -94745,6 +95259,16 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "note": "El README agrega herramientas y material. Marcarlo como lectura de herramientas para extracción y mantener permalink.",
+    "sources": [
+     "https://github.com/lorien/awesome-web-scraping/blob/0ea172fdb8876ed66f88da06974da5be6c6c4e42/README.md",
+     "https://github.com/lorien/awesome-web-scraping/blob/master/README.md",
+     "https://github.com/lorien/awesome-web-scraping"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "openrv": {
@@ -96800,6 +97324,16 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "note": "FinRL mantiene el pipeline clásico y sus tutoriales de aprendizaje por refuerzo. FinRL-X, publicado en FinRL-Trading y fuera del bloque, es la ruta moderna según el autor con contratos diferentes. Cambiar el ID perdería referencias a benchmarks y código clásico.",
+    "sources": [
+     "https://github.com/AI4Finance-Foundation/FinRL/blob/HEAD/README.md",
+     "https://github.com/AI4Finance-Foundation/FinRL-Trading",
+     "https://github.com/AI4Finance-Foundation/FinRL/commit/d08e638dc7cafd374a631d48573ad354b37687ad"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "huashu-motion": {
@@ -98443,6 +98977,15 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "note": "El README enseña motion de interfaces y muestra ejemplos web/SwiftUI, no un flujo de animación de caras. Mover de av-personajes a diseño de interacción preservando ficha y ejemplos. Motion Design Skill cubre principios; Claude Animated Shorts cubre personajes de un corto, con una especialidad distinta.",
+    "sources": [
+     "https://github.com/AThevon/genjutsu/blob/a22540b623590505879d6489dd03d7f3072bce05/README.md",
+     "https://github.com/AThevon/genjutsu/commit/a22540b623590505879d6489dd03d7f3072bce05",
+     "https://github.com/AThevon/genjutsu/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "i-have-adhd": {
@@ -100747,6 +101290,16 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "La referencia aporta esquemas de puntos y compatibilidad con datasets históricos. Para nuevas integraciones, MediaPipe o MMPose tienen pipelines distintos y no deben asumir compatibilidad de índices. La licencia académica y actividad efectivamente observada desaconsejan usarlo como predeterminado.",
+    "sources": [
+     "https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/5c5d96523ef917bd30301245fdc8343937cae48d/README.md",
+     "https://github.com/CMU-Perceptual-Computing-Lab/openpose/commit/5c5d96523ef917bd30301245fdc8343937cae48d",
+     "https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "coolify": {
@@ -101794,6 +102347,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "El último commit comprobado de la rama predeterminada es de 2023. Se perdería la ruta concreta de timelines JS/CSS y el flujo de exportación descrito por el autor. Anime.js y GSAP cubren secuencias JS, no una migración de la API ni todos los exportadores.",
+    "sources": [
+     "https://github.com/daybrush/scenejs",
+     "https://daybrush.com/scenejs/features.html",
+     "https://animejs.com/documentation/timeline/"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "claude-code-hooks-mastery": {
@@ -101986,7 +102549,7 @@
    }
   },
   "dnspy": {
-   "name": "dnSpy",
+   "name": "dnSpyEx",
    "cat": 16,
    "sub": "depuracion",
    "desc": "Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.",
@@ -102181,6 +102744,14 @@
     "origen": "README",
     "seccion": "Building",
     "fuente": "https://github.com/dnSpyEx/dnSpy/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "El upstream de la ficha es dnSpyEx y se declara continuación no oficial. El identificador confirma qué proyecto está catalogado.",
+    "sources": [
+     "https://github.com/dnSpyEx/dnSpy/blob/bb09d2c54718e0f73d01d2e1085ddb8772aee555/README.md",
+     "https://github.com/dnSpyEx/dnSpy/commit/bb09d2c54718e0f73d01d2e1085ddb8772aee555"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "docuseal": {
@@ -103404,6 +103975,15 @@
     "origen": "auto",
     "auto": 2
    },
+   "audit_guidance": {
+    "note": "Ambos ofrecen un punto de partida según formatos y host, con distinto alcance. Conservar mientras exista una diferencia comprobable en su método de memoria.",
+    "sources": [
+     "https://github.com/eugeniughelbur/obsidian-second-brain/blob/bca5961e4b60eefd90a6e0c0f44cf3fe9aaf3cbc/README.md",
+     "https://api.github.com/repos/eugeniughelbur/obsidian-second-brain",
+     "https://github.com/eugeniughelbur/obsidian-second-brain/commit/bca5961e4b60eefd90a6e0c0f44cf3fe9aaf3cbc"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-obsidian-como-segundo-cerebro-para-agentes",
     "titulo": "Obsidian como segundo cerebro para agentes",
@@ -103637,6 +104217,14 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/every-app/open-seo/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "La plataforma aporta datos de proveedor y MCP, distintos de la auditoría sobre HTML de Claude SEO. Mantener referencia desde marketing. Quitarla perdería consultas SERP y estimaciones del proveedor.",
+    "sources": [
+     "https://github.com/every-app/open-seo/blob/HEAD/README.md",
+     "https://github.com/every-app/open-seo/commit/6f68494e92a695db17f4b22da25e84b9bf1e582c"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "claude-task-master": {
@@ -104876,6 +105464,15 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "note": "La etapa de revisión de apps ADB se solapa. Conservar el perfil TV mientras sus listas y flujo cubran dispositivos específicos.",
+    "sources": [
+     "https://github.com/Gathin23/cleanyourtv/blob/be6087056a1c7d4f08f3f1cc778d92374d86ef27/README.md",
+     "https://api.github.com/repos/Gathin23/cleanyourtv",
+     "https://github.com/Gathin23/cleanyourtv/commit/be6087056a1c7d4f08f3f1cc778d92374d86ef27"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "srt-whiteboard-animation": {
@@ -105274,6 +105871,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "RAGFlow ofrece la ruta de aplicación documental. La ficha de ejemplos merece conservarse al aprender la arquitectura de LangGraph y Ollama.",
+    "sources": [
+     "https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/c1b339b54f0927bd0b469fcce70f3cd5de4e918d/README.md",
+     "https://api.github.com/repos/GiovanniPasq/agentic-rag-for-dummies",
+     "https://github.com/GiovanniPasq/agentic-rag-for-dummies/commit/c1b339b54f0927bd0b469fcce70f3cd5de4e918d"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "postiz-app": {
@@ -107455,6 +108062,14 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Conservar por research, replay/paper documentado y tareas de cuenta. Dexter cubre research y vectorbt simulación histórica por señales. Ambos pierden el flujo unificado. HEAD y release instalable pueden divergir.",
+    "sources": [
+     "https://github.com/HKUDS/Vibe-Trading/blob/HEAD/README.md",
+     "https://github.com/HKUDS/Vibe-Trading/commit/a7ea2328337ee435fc7c25c0378d130dd038b63b"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "home-assistant": {
@@ -109314,6 +109929,16 @@
     "origen": "README",
     "seccion": "If using docker",
     "fuente": "https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Referencia de prototipado con diseños y activos propios o autorizados. Para diseñar desde cero, usa Penpot.",
+    "sources": [
+     "https://github.com/JCodesMore/ai-website-cloner-template",
+     "https://github.com/abi/screenshot-to-code",
+     "https://github.com/google-labs-code/stitch-sdk"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "concat": {
@@ -110906,6 +111531,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/kepano/kepano-obsidian/blob/main/Readme.md"
+   },
+   "audit_guidance": {
+    "note": "La ayuda cubre el primer acceso y el ejemplo enseña una organización específica. Conservar juntos como referencias de aprendizaje.",
+    "sources": [
+     "https://github.com/kepano/kepano-obsidian/blob/473697347a0eaac790a6596229c741b3915f3b77/Readme.md",
+     "https://api.github.com/repos/kepano/kepano-obsidian",
+     "https://github.com/kepano/kepano-obsidian/commit/473697347a0eaac790a6596229c741b3915f3b77"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "obsidian-minimal": {
@@ -111106,6 +111741,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://minimal.guide/"
+   },
+   "audit_guidance": {
+    "note": "El registro mantiene la ruta para descubrir temas. La función de Minimal sigue identificada como tema concreto.",
+    "sources": [
+     "https://github.com/kepano/obsidian-minimal/blob/6d260b4e0ce60e9563b2d9a268310b88934d0384/README.md",
+     "https://api.github.com/repos/kepano/obsidian-minimal",
+     "https://github.com/kepano/obsidian-minimal/commit/6d260b4e0ce60e9563b2d9a268310b88934d0384"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "shannon": {
@@ -111517,6 +112162,15 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "note": "Konva añade formas, eventos y capas Canvas 2D. Retirarlo pierde una biblioteca para crear editores específicos. tldraw cubre el lienzo de más alto nivel con licencia propia y PixiJS gráficos 2D con otra arquitectura.",
+    "sources": [
+     "https://konvajs.org/docs/",
+     "https://tldraw.dev/community/license",
+     "https://pixijs.com/8.x/guides/"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "kornia": {
@@ -111897,6 +112551,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/l0ng-ai/openidea/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Desplazar de comparaciones de extensiones al tema de editores completos. Zed es alternativa de editor, pero la retirada perdería el enfoque y mapa de teclas al estilo IntelliJ, depuración y herramientas integradas de OpenIDE.",
+    "sources": [
+     "https://github.com/l0ng-ai/openidea",
+     "https://github.com/zed-industries/zed",
+     "https://github.com/l0ng-ai/openidea/commit/ba880dac06a921162ae71c0f402c3655096bb1c2"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "brag": {
@@ -112483,6 +113146,16 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "note": "Útil como biblioteca de estilos para Claude con derechos separados; no ofrezca demos o guías para redistribuir por la licencia del código. Las alternativas son plantillas o pautas para producir, parciales respecto de su catálogo estético.",
+    "sources": [
+     "https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/README.md",
+     "https://github.com/lemomo-ai/lemo-opuscar/commit/439b98af08b04400f8fd8a8dd19cd773c0c96532",
+     "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "earshot": {
@@ -112881,6 +113554,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "En av-video-codigo se presenta mejor como lectura de ritmo, estados y easing. HyperFrames o Motion Canvas producen la salida de vídeo y pueden tomar los principios como insumo editorial.",
+    "sources": [
+     "https://github.com/LottieFiles/motion-design-skill/blob/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb/README.md",
+     "https://github.com/LottieFiles/motion-design-skill/commit/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb",
+     "https://github.com/LottieFiles/motion-design-skill/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "lumibot": {
@@ -113836,6 +114519,14 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/maillab/cloud-mail/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Se perderían buzones y enrutamiento basados en Cloudflare. Listmonk, Mautic y Novu solo sustituyen etapas de campañas/notificaciones y necesitan transporte. No hay reemplazo de buzón en esas tres fichas.",
+    "sources": [
+     "https://github.com/maillab/cloud-mail/blob/HEAD/README.md",
+     "https://github.com/maillab/cloud-mail/commit/152b890b3350faf40a9c7739f02bc13f03a93bf6"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "threejs-game-skills": {
@@ -114247,6 +114938,16 @@
     "origen": "README",
     "seccion": "Package managers",
     "fuente": "https://github.com/metafizzy/zdog/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "El último commit de la rama predeterminada es de 2022 aunque la ficha histórica registra un push en 2023. Se perdería la proyección pseudo-3D nativa en Canvas o SVG. Three.js cubre escenas 3D, con otro modelo y coste. SVG/CSS propios son una aproximación para iconos simples.",
+    "sources": [
+     "https://github.com/metafizzy/zdog",
+     "https://zzz.dog/",
+     "https://threejs.org/docs/"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "mitmproxy": {
@@ -115681,6 +116382,16 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "note": "Presentar principalmente como SDK de decisión estructurada y conservar referencia a sus checkpoints especializados desde modelos. LiteLLM cubre enrutamiento general de solicitudes. Se perderían clasificación, presets y conexión MCP, y la distinción entre modo offline por reglas y modo predictivo con descarga.",
+    "sources": [
+     "https://raw.githubusercontent.com/NandhaKishorM/laya/309f865eb2373ffaf1b9e375f30496841492d7b0/README.md",
+     "https://api.github.com/repos/NandhaKishorM/laya",
+     "https://github.com/NandhaKishorM/laya/commit/309f865eb2373ffaf1b9e375f30496841492d7b0"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "SDK de decisión y clasificación; referencia a checkpoints desde modelos"
    }
   },
   "ghidra": {
@@ -116058,8 +116769,8 @@
     },
     {
      "id": "ccxt",
-     "motivo": "Comparar o completar datos de exchanges sin adaptador. (combinación por arquitectura)",
-     "orden_instalacion": "Descarga datos con CCXT para pruebas."
+     "motivo": "Se pueden comparar fuentes de datos. La documentación revisada no acredita un adaptador CCXT directo para esa versión y mercado.",
+     "orden_instalacion": "Contrasta versiones y fuentes de datos antes de reutilizar resultados."
     },
     {
      "id": "py-sdk",
@@ -116306,6 +117017,16 @@
     "origen": "auto",
     "auto": 2
    },
+   "audit_guidance": {
+    "note": "Solapa dirección visual y revisión con las dos primeras opciones. Dejar consulta para la rúbrica, ejemplos y flujo propio. Retirarlo quita ese flujo y las instrucciones adaptadas a sus clientes.",
+    "sources": [
+     "https://github.com/Nutlope/hallmark",
+     "https://github.com/Leonxlnx/taste-skill",
+     "https://github.com/pbakaus/impeccable"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
+   },
    "similares": {
     "grupo": "g-skills-de-diseno-de-interfaces-para-agentes",
     "titulo": "Skills de diseño de interfaces para agentes",
@@ -116533,6 +117254,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "La fuente presenta un demostrador de clasificación de fraude y su pila. Ubicar como caso de uso aplicado o referencia de aprendizaje. La sección de simulación y debate puede enlazarlo si explica la métrica estudiada.",
+    "sources": [
+     "https://github.com/Nutlope/jev-fraud/blob/HEAD/README.md",
+     "https://github.com/Nutlope/jev-fraud/blob/main/README.md",
+     "https://github.com/Nutlope/jev-fraud"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "jsoncanvas": {
@@ -116725,6 +117456,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/obsidianmd/jsoncanvas/blob/main/readme.md"
+   },
+   "audit_guidance": {
+    "note": "El recurso define compatibilidad de formato. Mantener la referencia junto a herramientas que realmente leen .canvas.",
+    "sources": [
+     "https://github.com/obsidianmd/jsoncanvas/blob/456f843cb293df4f4ab1763e22ccb46a80b307c8/readme.md",
+     "https://api.github.com/repos/obsidianmd/jsoncanvas",
+     "https://github.com/obsidianmd/jsoncanvas/commit/456f843cb293df4f4ab1763e22ccb46a80b307c8"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "obsidian-clipper": {
@@ -117132,6 +117873,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/obsidianmd/obsidian-help/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Una ficha de entrada puede llevar a instalación oficial y a ayuda, conservando ambos IDs como recursos de distinto tipo.",
+    "sources": [
+     "https://github.com/obsidianmd/obsidian-help/blob/1a4e17ca0127317143947ca608d2774a48b927e3/README.md",
+     "https://api.github.com/repos/obsidianmd/obsidian-help",
+     "https://github.com/obsidianmd/obsidian-help/commit/1a4e17ca0127317143947ca608d2774a48b927e3"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "obsidian-importer": {
@@ -117518,6 +118269,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/obsidianmd/obsidian-releases/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Preserva el vínculo oficial para instalación de cliente y descubrimiento de extensiones.",
+    "sources": [
+     "https://github.com/obsidianmd/obsidian-releases/blob/2da968b2dc85222508f6140a7b288c9c9d628882/README.md",
+     "https://api.github.com/repos/obsidianmd/obsidian-releases",
+     "https://github.com/obsidianmd/obsidian-releases/commit/2da968b2dc85222508f6140a7b288c9c9d628882"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "obsidian-sample-plugin": {
@@ -117714,6 +118475,16 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Una plantilla TypeScript es útil para desarrollar. Las skills orientan el trabajo con formatos y cubren otro objetivo, así que conviene enlazar ambas por tarea.",
+    "sources": [
+     "https://github.com/obsidianmd/obsidian-sample-plugin/blob/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/README.md",
+     "https://api.github.com/repos/obsidianmd/obsidian-sample-plugin",
+     "https://github.com/obsidianmd/obsidian-sample-plugin/commit/07ceb81d1fb3384af611ebf665a1ec42a7e5926d"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "obsidian-skills": {
@@ -119733,6 +120504,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://www.pencil2d.org/download/"
+   },
+   "audit_guidance": {
+    "note": "Pencil2D es una aplicación de dibujo y timeline. Si se retira se pierde el recorrido para autoría cuadro a cuadro. Los motores de navegador del bloque permiten representar animaciones, con funciones distintas a dibujar y exportar material.",
+    "sources": [
+     "https://www.pencil2d.org/doc/user-manual",
+     "https://github.com/pencil2d/pencil",
+     "https://github.com/pencil2d/pencil/commit/7d1f719669526b71b6b66916cb50a72fbf95a3bd"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "planck-js": {
@@ -120728,6 +121508,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "La fuente acredita formatos declarados y propone protección de artefactos frente a agentes. Sus afirmaciones de efecto y equivalencia no se comprobaron. No sustituye controles del código y servidor.",
+    "sources": [
+     "https://github.com/qybaihe/bla",
+     "https://github.com/qybaihe/bla/commit/dd9e72f53ad97e3eb228523ad25295029107bb63"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "radare2": {
@@ -122365,6 +123154,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Referencia de análisis y creación de software. Su encaje específico requiere revisión adicional.",
+    "sources": [
+     "https://github.com/storytold/craft-anything",
+     "https://github.com/storytold/craft-anything/commit/14c502c55751b04a7ed15833cbd2cfe8296f60f0"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "supabase": {
@@ -122984,6 +123782,16 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Mantener como lista de criterios visuales. Para instrucciones ligadas a un motor o un CLI, recomendar las skills oficiales del motor o FFmpeg según tarea.",
+    "sources": [
+     "https://github.com/Tejashmakwana/motionmaxxing/blob/8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c/README.md",
+     "https://github.com/Tejashmakwana/motionmaxxing/commit/8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c",
+     "https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "tfjs-models": {
@@ -124376,6 +125184,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "El upstream se presenta como biblioteca de comportamientos para construir y manejar UI. Sin la ficha se pierde una ruta específica a sus comportamientos y recetas. Radix cubre muchas primitivas React como referencia funcional; hace falta comparar APIs para sustituir un comportamiento.",
+    "sources": [
+     "https://github.com/vercel-labs/ui",
+     "https://www.radix-ui.com/primitives/docs/overview/introduction",
+     "https://github.com/vercel-labs/ui/commit/8c5d8cf22854bad67389fb342bdeca2fd7c37539"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "3dviz-pro-max": {
@@ -126544,8 +127361,8 @@
     },
     {
      "id": "design.md",
-     "motivo": "Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura).",
-     "orden_instalacion": "Extrae primero y valida después."
+     "motivo": "El flujo requiere traducir manualmente un perfil JSON a DESIGN.md. No se confirmó un conversor directo.",
+     "orden_instalacion": "Revisa el perfil de ejemplo, adapta su contenido manualmente y valida el documento."
     },
     {
      "id": "figma-context-mcp",
@@ -126598,6 +127415,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Conservar como extracción de referencias propias hacia Design DNA JSON. Se perderían la estructura JSON específica y sus ejemplos. DESIGN.md conserva las decisiones, mientras Taste cubre dirección de arte. No se halló un conversor compatible en las páginas consultadas.",
+    "sources": [
+     "https://github.com/zanwei/design-dna",
+     "https://github.com/google-labs-code/design.md",
+     "https://github.com/Leonxlnx/taste-skill"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "meshoptimizer": {
@@ -127401,6 +128227,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/ZSeven-W/dsh-noema/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Su utilidad tiene un anfitrión específico. Engram cubre recuperación genérica por MCP según cliente.",
+    "sources": [
+     "https://github.com/ZSeven-W/dsh-noema/blob/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a/README.md",
+     "https://api.github.com/repos/ZSeven-W/dsh-noema",
+     "https://github.com/ZSeven-W/dsh-noema/commit/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "creative-architect": {
@@ -127783,6 +128618,16 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "La colección comunitaria abarca dominios heterogéneos y el nombre del repo puede confundirse con autoría de Anthropic. El flujo inicial más delimitado es inspeccionar archivos y seguir un método de seguridad de código.",
+    "sources": [
+     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/commit/54a798831d2266a3ca61ce68a7acb80b81160d57",
+     "https://docs.nvidia.com/skills/scanning-agent-skills"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "kimi-k2-7-code": {
@@ -129167,6 +130012,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/TanStack/query/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Conservar en un grupo de estado del servidor. Se perdería elección de varios frameworks y una ruta directa para mutación, claves e invalidación. SWR cubre lecturas simples de React y puede manejar mutaciones. Sustitución por tarea y proyecto.",
+    "sources": [
+     "https://tanstack.com/query/latest/docs/framework/react/overview",
+     "https://swr.vercel.app/docs/mutation",
+     "https://github.com/TanStack/query/commit/e7916a9e2eb695531fe3aa7bc9983e3bc734889a"
+    ],
+    "checked_at": "2026-11-27"
    },
    "similares": {
     "grupo": "g-obtencion-de-datos-en-react",
@@ -132173,6 +133027,15 @@
     "origen": "auto",
     "auto": 1
    },
+   "audit_guidance": {
+    "note": "El README aclara que la migración fue de GitLab a GitHub. Conservar GitHub y rotular enlaces históricos GitLab como tales. Se perderían API, tablas y constructor si se retirara la ficha.",
+    "sources": [
+     "https://github.com/baserow/baserow/blob/HEAD/README.md",
+     "https://gitlab.com/baserow/baserow",
+     "https://github.com/baserow/baserow/commit/aed826c2bd20a13127b1f47a1b42a05a874e6434"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-herramientas-internas-y-bases-de-datos-no-code",
     "titulo": "Herramientas internas y bases de datos no-code",
@@ -133121,6 +133984,15 @@
     "origen": "README",
     "seccion": "Method 1: Using conda",
     "fuente": "https://github.com/FoundationAgents/OpenManus/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "El upstream presenta una app de agente general, con código reutilizable para quien lo estudia. Su primer resultado pertenece a asistentes.",
+    "sources": [
+     "https://github.com/FoundationAgents/OpenManus/blob/3309bf4e416fb1c74b008f3e86494439a31bad53/README.md",
+     "https://github.com/FoundationAgents/OpenManus/blob/main/README.md",
+     "https://github.com/FoundationAgents/OpenManus"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "chatdev": {
@@ -133308,6 +134180,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "El README de ChatDev 2.0 describe plataforma para componer equipos o flujos sin código. Conservar el acceso al código fuente, pero orientar la primera entrada por la versión actual de la plataforma.",
+    "sources": [
+     "https://github.com/OpenBMB/ChatDev/blob/464a681ba7bda869db97a50c5fa707c9a0fb57a0/README.md",
+     "https://github.com/OpenBMB/ChatDev/blob/main/README.md",
+     "https://github.com/OpenBMB/ChatDev"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "camel": {
@@ -135940,6 +136821,15 @@
     "origen": "README",
     "seccion": "1. Get a Meilisearch instance",
     "fuente": "https://github.com/meilisearch/meilisearch/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "note": "Buscar y aplicar facetas es una etapa del flujo. Qdrant cubre recuperación vectorial con filtros; no se transfiere automáticamente el comportamiento de búsqueda textual.",
+    "sources": [
+     "https://github.com/meilisearch/meilisearch/blob/9fb6a904009c42a950c911592d96b0689e6f0c0e/README.md",
+     "https://api.github.com/repos/meilisearch/meilisearch",
+     "https://github.com/meilisearch/meilisearch/commit/9fb6a904009c42a950c911592d96b0689e6f0c0e"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "kotaemon": {
@@ -139619,6 +140509,15 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/storybookjs/storybook/blob/next/README.md"
+   },
+   "audit_guidance": {
+    "note": "Conservar la ficha bajo trabajo aislado y pruebas de componentes. Se perderían historias, variantes reutilizables y un inventario visual. Playwright cubre flujos completos y no aporta por sí solo el catálogo de historias.",
+    "sources": [
+     "https://storybook.js.org/docs/writing-tests",
+     "https://playwright.dev/docs/test-fixtures",
+     "https://github.com/storybookjs/storybook/commit/f5eb21772bbdc939a0f9cab5c8a21c85fa281de6"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "leaflet": {
@@ -147803,6 +148702,15 @@
     "seccion": "Code",
     "fuente": "https://github.com/TriliumNext/Trilium/blob/main/README.md"
    },
+   "audit_guidance": {
+    "note": "El repositorio de la estrella conserva el ID original pese al slug canónico TriliumNext/Trilium. El índice ya usa el slug canónico. Conservar compatibilidad de referencias históricas.",
+    "sources": [
+     "https://github.com/TriliumNext/Trilium/blob/ec6a675b4da78d06a2f20b7dfc3725a15ac44eed/README.md",
+     "https://api.github.com/repos/TriliumNext/Trilium",
+     "https://github.com/TriliumNext/Trilium/commit/ec6a675b4da78d06a2f20b7dfc3725a15ac44eed"
+    ],
+    "checked_at": "2026-11-27"
+   },
    "similares": {
     "grupo": "g-notas-y-bases-de-conocimiento-personales",
     "titulo": "Notas y bases de conocimiento personales",
@@ -149091,6 +149999,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/rapid7/metasploit-framework/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "sqlmap": {
@@ -149483,6 +150395,9 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "reference_only": true
    }
   },
   "nmap": {
@@ -149673,6 +150588,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/nmap/nmap/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "ml-for-beginners": {
@@ -151573,6 +152492,9 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/zaproxy/zaproxy/blob/main/README.md"
    },
+   "audit_guidance": {
+    "reference_only": true
+   },
    "similares": {
     "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
     "titulo": "Proxies de pruebas de aplicaciones web",
@@ -151793,6 +152715,10 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "john": {
@@ -152432,6 +153358,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/SpecterOps/BloodHound/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "annotated-dl-papers": {
@@ -155117,6 +156047,14 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/AsamK/signal-cli/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "note": "Se perdería la interfaz Signal CLI/JSON-RPC y D-Bus, un canal diferente. Las pasarelas WhatsApp cubren WhatsApp y aquí no hay sustituto Signal.",
+    "sources": [
+     "https://github.com/AsamK/signal-cli/blob/HEAD/README.md",
+     "https://github.com/AsamK/signal-cli/commit/d6ee1a8d5572341be4583c1946f26a9f9c4d7659"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "zammad": {
@@ -155806,8 +156744,7 @@
    "combines_with": [
     "espocrm",
     "activepieces",
-    "coolify",
-    "formbricks"
+    "coolify"
    ],
    "alternatives": [
     "cal.diy"
@@ -155927,12 +156864,6 @@
      "id": "coolify",
      "motivo": "Easy!Appointments se puede desplegar en contenedor desde Coolify (combinación por arquitectura).",
      "orden_instalacion": "Coolify primero; después crea el servicio con volúmenes persistentes."
-    },
-    {
-     "id": "formbricks",
-     "motivo": "Combinación recíproca: Formbricks lo enlaza como «Citas + encuesta de satisfacción».",
-     "orden_instalacion": "Orden indicado desde Formbricks: Easy!Appointments → Formbricks.",
-     "reciproca_de": "formbricks"
     }
    ],
    "descripcion_notas": "Alternativas (elige una): cal.diy.",
@@ -161183,6 +162114,17 @@
      "necesita GPU",
      "dominio especializado"
     ]
+   },
+   "audit_guidance": {
+    "note": "Dejar como referencia para reproducir recetas PyTorch existentes. El aviso del mantenedor pesa más que un commit aislado. PEFT cubre adaptadores y Axolotl recetas configurables. Se perderían configuraciones y conversiones del flujo torchtune para usuarios existentes si se retira.",
+    "sources": [
+     "https://raw.githubusercontent.com/meta-pytorch/torchtune/adf8db3311f433ad0cf1cd4cf2792e9aa284ea52/README.md",
+     "https://api.github.com/repos/meta-pytorch/torchtune",
+     "https://github.com/meta-pytorch/torchtune/commit/adf8db3311f433ad0cf1cd4cf2792e9aa284ea52"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "placement": "24/entrenamiento como referencia histórica para proyectos existentes"
    },
    "similares": {
     "grupo": "g-fine-tuning-de-llm",
@@ -167386,6 +168328,15 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "note": "El repositorio del autor enlazado en el índice no está archivado. Evitar una decisión de retirada derivada del archivo de la copia de Meta. UVR es alternativa visual, incluso puede elegir un modelo Demucs, no reemplaza una CLI por lotes.",
+    "sources": [
+     "https://github.com/adefossez/demucs/blob/829d21890023800713e5dd231c67e43ecc06069b/README.md",
+     "https://github.com/adefossez/demucs/commit/829d21890023800713e5dd231c67e43ecc06069b",
+     "https://github.com/adefossez/demucs/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "yue": {
@@ -169362,6 +170313,16 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "Referencia de infraestructura de navegación. Para probar el recorrido de una web propia, empieza con Playwright.",
+    "sources": [
+     "https://github.com/FlareSolverr/FlareSolverr/blob/cc2224b21e31c09a713eb25690a8e8dcdf50d8d8/README.md",
+     "https://github.com/FlareSolverr/FlareSolverr/blob/master/README.md",
+     "https://github.com/FlareSolverr/FlareSolverr"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "camoufox": {
@@ -169951,6 +170912,15 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Ofrece sesiones de Chrome para otros clientes. Aplicar referencia cruzada desde agentes web y conservar la ficha por ejecución autoalojable.",
+    "sources": [
+     "https://github.com/steel-dev/steel-browser/blob/e7e4a475550277e52bbe660f279584849e511271/README.md",
+     "https://github.com/steel-dev/steel-browser/blob/main/README.md",
+     "https://github.com/steel-dev/steel-browser"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "cypress": {
@@ -171073,6 +172043,10 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "httpx": {
@@ -171095,9 +172069,7 @@
     "nuclei",
     "amass"
    ],
-   "alternatives": [
-    "naabu"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/projectdiscovery/httpx",
    "homepage": "https://docs.projectdiscovery.io/tools/httpx",
    "license": "MIT",
@@ -171258,29 +172230,16 @@
     "origen": "auto",
     "auto": 1
    },
-   "similares": {
-    "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
-    "titulo": "Sondeo y escaneo de reconocimiento",
-    "posicion": 1,
-    "total": 2,
-    "papel": "recomendado",
-    "cuando": "Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
-    "ranking": [
-     {
-      "id": "httpx",
-      "posicion": 1,
-      "puntuacion": 77.0,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos."
-     },
-     {
-      "id": "naabu",
-      "posicion": 2,
-      "puntuacion": 62.9,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei."
-     }
-    ]
+   "audit_guidance": {
+    "note": "Herramienta de observación HTTP. Naabu aporta resultados de puertos y cubre otra función.",
+    "sources": [
+     "https://docs.projectdiscovery.io/opensource/httpx/overview",
+     "https://github.com/projectdiscovery/httpx/commit/f4c895f8540651c2377d21a9823331c9a47549a8",
+     "https://docs.projectdiscovery.io/opensource/naabu/overview"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "naabu": {
@@ -171303,9 +172262,7 @@
     "amass",
     "nuclei"
    ],
-   "alternatives": [
-    "httpx"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/projectdiscovery/naabu",
    "homepage": "https://projectdiscovery.io",
    "license": "MIT",
@@ -171466,29 +172423,16 @@
     "origen": "auto",
     "auto": 1
    },
-   "similares": {
-    "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
-    "titulo": "Sondeo y escaneo de reconocimiento",
-    "posicion": 2,
-    "total": 2,
-    "papel": "alternativa",
-    "cuando": "Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
-    "ranking": [
-     {
-      "id": "httpx",
-      "posicion": 1,
-      "puntuacion": 77.0,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos."
-     },
-     {
-      "id": "naabu",
-      "posicion": 2,
-      "puntuacion": 62.9,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei."
-     }
-    ]
+   "audit_guidance": {
+    "note": "Herramienta que informa de puertos. httpx describe servicios HTTP y cubre otra función.",
+    "sources": [
+     "https://docs.projectdiscovery.io/opensource/naabu/overview",
+     "https://github.com/projectdiscovery/naabu/commit/9ff7b1c114d80073b6156fa930260383ef8a75a0",
+     "https://docs.projectdiscovery.io/opensource/httpx/overview"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "impacket": {
@@ -171690,6 +172634,10 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "netexec": {
@@ -171876,6 +172824,10 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "sliver": {
@@ -172064,6 +173016,10 @@
     ],
     "origen": "auto",
     "auto": 4
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    },
    "similares": {
     "grupo": "g-frameworks-de-c2-y-post-explotacion",
@@ -172290,29 +173246,15 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/redcanaryco/atomic-red-team/blob/master/README.md"
    },
-   "similares": {
-    "grupo": "g-emulacion-de-adversarios",
-    "titulo": "Emulación de adversarios",
-    "posicion": 2,
-    "total": 2,
-    "papel": "alternativa",
-    "cuando": "Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
-    "ranking": [
-     {
-      "id": "caldera",
-      "posicion": 1,
-      "puntuacion": 63.5,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web."
-     },
-     {
-      "id": "atomic-red-team",
-      "posicion": 2,
-      "puntuacion": 62.4,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio."
-     }
-    ]
+   "audit_guidance": {
+    "note": "Biblioteca de casos documentados. El catálogo la conserva como consulta descriptiva.",
+    "sources": [
+     "https://github.com/redcanaryco/atomic-red-team",
+     "https://github.com/redcanaryco/atomic-red-team/commit/a0e3f9bc69fed2fd711bd1f1aa87a40c33482fe6"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "caldera": {
@@ -172500,29 +173442,15 @@
     "origen": "auto",
     "auto": 4
    },
-   "similares": {
-    "grupo": "g-emulacion-de-adversarios",
-    "titulo": "Emulación de adversarios",
-    "posicion": 1,
-    "total": 2,
-    "papel": "recomendado",
-    "cuando": "Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
-    "ranking": [
-     {
-      "id": "caldera",
-      "posicion": 1,
-      "puntuacion": 63.5,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web."
-     },
-     {
-      "id": "atomic-red-team",
-      "posicion": 2,
-      "puntuacion": 62.4,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio."
-     }
-    ]
+   "audit_guidance": {
+    "note": "Plataforma de emulación y referencia descriptiva para entender la categoría.",
+    "sources": [
+     "https://github.com/apache/caldera",
+     "https://github.com/apache/caldera/commit/cdb9e2ef2c77ec4b24e137dbcbda5ecf26c561d2"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "falco": {
@@ -175510,6 +176438,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/kgretzky/evilginx2/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "peass-ng": {
@@ -175708,6 +176640,10 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "osquery": {
@@ -176081,6 +177017,10 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "interactsh": {
@@ -176261,6 +177201,10 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "gobuster": {
@@ -177098,6 +178042,10 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "masscan": {
@@ -177281,6 +178229,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/robertdavidgraham/masscan/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "wpscan": {
@@ -177863,6 +178815,10 @@
     "origen": "doc oficial enlazada",
     "seccion": "🐧 Linux Installation",
     "fuente": "https://github.com/ly4k/Certipy/wiki/04-%E2%80%90-Installation"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "rubeus": {
@@ -178055,6 +179011,10 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "mimikatz": {
@@ -178240,6 +179200,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/gentilkiwi/mimikatz/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "responder": {
@@ -178419,6 +179383,10 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "ligolo-ng": {
@@ -178605,6 +179573,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/nicocha30/ligolo-ng/blob/master/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "mythic": {
@@ -178800,6 +179772,10 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": false
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    },
    "similares": {
     "grupo": "g-frameworks-de-c2-y-post-explotacion",
@@ -179015,6 +179991,10 @@
     ],
     "origen": "auto",
     "auto": 4
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    },
    "similares": {
     "grupo": "g-frameworks-de-c2-y-post-explotacion",
@@ -180599,11 +181579,10 @@
    "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas requieren un alcance autorizado y un entorno adecuado.",
    "combines_with": [
     "velociraptor",
-    "volatility3"
-   ],
-   "alternatives": [
+    "volatility3",
     "autopsy"
    ],
+   "alternatives": [],
    "repo": "https://github.com/sleuthkit/sleuthkit",
    "homepage": "http://www.sleuthkit.org/sleuthkit/",
    "license": null,
@@ -180715,6 +181694,12 @@
      "id": "volatility3",
      "motivo": "Memoria con Volatility; disco con TSK.",
      "orden_instalacion": "Complementarios."
+    },
+    {
+     "id": "autopsy",
+     "motivo": "Autopsy ofrece una interfaz gráfica que utiliza The Sleuth Kit.",
+     "orden_instalacion": "Consulta los componentes incluidos en la distribución oficial.",
+     "evidencia": "https://sleuthkit.org/autopsy/"
     }
    ],
    "descripcion_fuentes": [
@@ -180769,29 +181754,14 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/sleuthkit/sleuthkit/blob/develop-4.1x/README.md"
    },
-   "similares": {
-    "grupo": "g-analisis-forense-de-discos",
-    "titulo": "Análisis forense de discos",
-    "posicion": 2,
-    "total": 2,
-    "papel": "alternativa",
-    "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
-    "ranking": [
-     {
-      "id": "autopsy",
-      "posicion": 1,
-      "puntuacion": 46.5,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio."
-     },
-     {
-      "id": "sleuthkit",
-      "posicion": 2,
-      "puntuacion": 41.9,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco."
-     }
-    ]
+   "audit_guidance": {
+    "note": "Motor y herramientas para examinar imágenes de disco. Autopsy usa The Sleuth Kit y añade una interfaz gráfica.",
+    "sources": [
+     "https://github.com/sleuthkit/sleuthkit/blob/3dcb43668d811548206fbeaf5e0c9753202f672f/README.md",
+     "https://github.com/sleuthkit/sleuthkit/commit/3dcb43668d811548206fbeaf5e0c9753202f672f",
+     "https://www.sleuthkit.org/sleuthkit/download.php"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "autopsy": {
@@ -180811,11 +181781,10 @@
    "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas requieren un alcance autorizado y un entorno adecuado.",
    "combines_with": [
     "hayabusa",
-    "wazuh"
-   ],
-   "alternatives": [
+    "wazuh",
     "sleuthkit"
    ],
+   "alternatives": [],
    "repo": "https://github.com/sleuthkit/autopsy",
    "homepage": "http://www.sleuthkit.org/autopsy/",
    "license": null,
@@ -180927,6 +181896,12 @@
      "id": "wazuh",
      "motivo": "Tras el análisis forense, correlaciona con alertas Wazuh.",
      "orden_instalacion": "Autopsy + Wazuh."
+    },
+    {
+     "id": "sleuthkit",
+     "motivo": "Autopsy utiliza el motor forense The Sleuth Kit y añade la interfaz gráfica.",
+     "orden_instalacion": "Consulta los componentes incluidos en la distribución oficial.",
+     "evidencia": "https://sleuthkit.org/autopsy/"
     }
    ],
    "descripcion_fuentes": [
@@ -180980,29 +181955,14 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/sleuthkit/autopsy/blob/develop/README.txt"
    },
-   "similares": {
-    "grupo": "g-analisis-forense-de-discos",
-    "titulo": "Análisis forense de discos",
-    "posicion": 1,
-    "total": 2,
-    "papel": "recomendado",
-    "cuando": "Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
-    "ranking": [
-     {
-      "id": "autopsy",
-      "posicion": 1,
-      "puntuacion": 46.5,
-      "papel": "recomendado",
-      "cuando": "Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio."
-     },
-     {
-      "id": "sleuthkit",
-      "posicion": 2,
-      "puntuacion": 41.9,
-      "papel": "alternativa",
-      "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco."
-     }
-    ]
+   "audit_guidance": {
+    "note": "Interfaz gráfica forense que usa The Sleuth Kit. Úsala para explorar una imagen de ejemplo propia o autorizada.",
+    "sources": [
+     "https://www.autopsy.com/download/",
+     "https://github.com/sleuthkit/autopsy/commit/cb3dacdcad67abe7cf863c74f10dcdb8e25a5c21",
+     "https://sleuthkit.org/autopsy/"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "capa": {
@@ -183238,6 +184198,10 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/Orange-Cyberdefense/GOAD/blob/main/README.md"
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "hacktricks": {
@@ -183788,6 +184752,16 @@
     "resultado": "sin_comando",
     "fuente": "https://github.com/caido/caido/blob/main/README.md"
    },
+   "audit_guidance": {
+    "note": "El propio GitHub de Caido distribuye versiones y roadmap. Basic limita proyectos y flujos. Para funciones de suscripción la autenticación tiene dependencia de internet. El proveedor también documenta modo invitado.",
+    "sources": [
+     "https://www.caido.io/pricing/",
+     "https://github.com/caido/caido/commit/cb9d78c420e1493353bb975f6b3d31327a8cdc28",
+     "https://docs.caido.io/app/concepts/offline"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
+   },
    "similares": {
     "grupo": "g-proxies-de-pruebas-de-aplicaciones-web",
     "titulo": "Proxies de pruebas de aplicaciones web",
@@ -183811,189 +184785,6 @@
       "cuando": "Si buscas esto: proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source."
      }
     ]
-   }
-  },
-  "loki": {
-   "name": "LOKI",
-   "cat": 16,
-   "sub": "deteccion",
-   "desc": "Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.",
-   "how": "Script/binario Python; se ejecuta sobre rutas locales con reglas/IOCs.",
-   "install": "Ver README oficial (sin comando literal documentado). Sigue la instalación y el ejemplo mínimo en https://github.com/Neo23x0/Loki/blob/master/README.md",
-   "cases": [
-    "triar un servidor de lab tras alerta",
-    "buscar IOCs de un informe MISP"
-   ],
-   "stack": "Python, requirements.txt",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP",
-   "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
-   "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas requieren un alcance autorizado y un entorno adecuado.",
-   "combines_with": [
-    "yara",
-    "misp"
-   ],
-   "alternatives": [],
-   "repo": "https://github.com/Neo23x0/Loki",
-   "homepage": "https://www.nextron-systems.com/compare-our-scanners/",
-   "license": "GPL-3.0",
-   "lang": "Python",
-   "updated": "2026-11-16",
-   "doc": "human/fichas/loki.md",
-   "access": {
-    "api": "not_required",
-    "local_model": "not_applicable",
-    "claude_code": "not_documented",
-    "codex": "not_documented",
-    "antigravity": "not_documented",
-    "cost": "no_model_fee",
-    "hardware": "ordinary",
-    "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
-    "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
-    "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
-    "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
-    "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
-    "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
-    "checked_at": "2026-11-16",
-    "review": "documented",
-    "sources": [
-     "https://github.com/Neo23x0/Loki/blob/master/README.md"
-    ],
-    "mode": "software",
-    "source_blob_sha": "a9f691a2fb45dd5faeda3d7da495a077f971c3b8"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "setup",
-    "prerequisites": [
-     "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
-     "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
-    ],
-    "steps": [
-     "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
-     "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
-     "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
-    ],
-    "command": "",
-    "command_status": "readme",
-    "entry_url": "",
-    "source": "https://github.com/Neo23x0/Loki/blob/master/README.md",
-    "checked_at": "2026-11-16",
-    "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
-   },
-   "first_step": "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
-   "sources": {
-    "readme_blob_sha": "a9f691a2fb45dd5faeda3d7da495a077f971c3b8",
-    "root_tree_sha": "7688421a7094e95453802d97484f2a0b8694a664",
-    "readme_url": "https://github.com/Neo23x0/Loki/blob/master/README.md",
-    "github_checked": "2026-11-16",
-    "collection": "altas-ciber-segundo-2"
-   },
-   "why": "Usos propuestos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP.",
-   "models": "No usa LLM ni API de IA",
-   "source_archived": false,
-   "practical_examples": [
-    {
-     "scenario": "triar un servidor de lab tras alerta",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "buscar IOCs de un informe MISP",
-     "status": "illustrative"
-    }
-   ],
-   "first_try": {
-    "action": "Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba.",
-    "success": "Hits de IOC en consola.",
-    "execution": "proposed_not_executed"
-   },
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-16",
-    "source": "https://github.com/Neo23x0/Loki/blob/master/README.md",
-    "source_blob_sha": "a9f691a2fb45dd5faeda3d7da495a077f971c3b8",
-    "previous_category": [
-     16,
-     "deteccion"
-    ],
-    "category_verdict": "confirmed",
-    "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "nivel": "ligero",
-   "que_es": "IOC scanner de Neo23x0 (GPL-3).",
-   "que_hace": "Busca indicadores en el filesystem.",
-   "como_lo_hace": "Release / clone.",
-   "combina_con": [
-    {
-     "id": "yara",
-     "motivo": "Usa reglas YARA.",
-     "orden_instalacion": "YARA → LOKI."
-    },
-    {
-     "id": "misp",
-     "motivo": "IOCs desde MISP.",
-     "orden_instalacion": "MISP → LOKI."
-    }
-   ],
-   "descripcion_fuentes": [
-    "https://github.com/Neo23x0/Loki#readme"
-   ],
-   "descripcion_revision": {
-    "batch": "altas-ciber-segundo-2",
-    "checked_at": "2026-11-16",
-    "status": "source_reviewed",
-    "installation_tested": false
-   },
-   "descripcion_github": {
-    "name_with_owner": "Neo23x0/Loki",
-    "archived": false,
-    "pushed_at": "2026-01-12",
-    "license": "GPL-3.0",
-    "primary_language": "Python",
-    "checked_at": "2026-11-16",
-    "latest_release": "v0.51.0 (2023-05-18)"
-   },
-   "calidad": {
-    "puntuacion": 42.2,
-    "ejes": {
-     "adopcion": 4.5,
-     "mantenimiento": 6.4,
-     "madurez": 8.0,
-     "licencia": 12.0,
-     "respaldo": 5.0,
-     "seguridad": 1.4,
-     "encaje": 5.0
-    },
-    "licencia": "osi_copyleft",
-    "notas": [
-     "Adopción: sin dato de descargas_mes (se reparte el peso)"
-    ],
-    "fecha": "2026-11-16"
-   },
-   "complejidad_detalle": {
-    "nivel": 1,
-    "nombre": "Básico",
-    "motivos": [
-     "preparación sencilla"
-    ],
-    "origen": "auto",
-    "auto": 1
-   },
-   "revision_instalacion": {
-    "fecha": "2026-11-16",
-    "resultado": "sin_comando",
-    "fuente": "https://github.com/Neo23x0/Loki/blob/master/README.md"
    }
   },
   "detection-rules": {
@@ -184558,6 +185349,10 @@
     ],
     "origen": "auto",
     "auto": 3
+   },
+   "audit_guidance": {
+    "reference_only": true,
+    "descriptive_only": true
    }
   },
   "vault": {
@@ -185344,7 +186139,7 @@
   "formbricks": {
    "name": "Formbricks",
    "cat": 18,
-   "sub": "reservas",
+   "sub": "encuestas",
    "desc": "Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.",
    "how": "App Node/Next; Docker o cloud; módulos EE bajo licencia distinta, núcleo AGPL.",
    "install": "Comando documentado: `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp`. Fuente: https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx (sección «Claude Code»). Sigue la instalación y el ejemplo mínimo en https://github.com/formbricks/formbricks/blob/main/README.md",
@@ -185357,8 +186152,6 @@
    "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
    "limits": "Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Open-core: directorio apps/web/modules/ee con licencia Enterprise. Núcleo AGPL.",
    "combines_with": [
-    "cal.diy",
-    "easyappointments",
     "listmonk",
     "typebot"
    ],
@@ -185465,16 +186258,6 @@
    "como_lo_hace": "Docker/docs oficiales o cloud Formbricks.",
    "combina_con": [
     {
-     "id": "cal.diy",
-     "motivo": "Cal.diy agenda; Formbricks encuesta post-cita.",
-     "orden_instalacion": "Cal.diy → Formbricks."
-    },
-    {
-     "id": "easyappointments",
-     "motivo": "Citas + encuesta de satisfacción.",
-     "orden_instalacion": "Easy!Appointments → Formbricks."
-    },
-    {
      "id": "listmonk",
      "motivo": "Listmonk envía; Formbricks mide.",
      "orden_instalacion": "Listmonk ↔ Formbricks."
@@ -185543,7 +186326,17 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
-   }
+   },
+   "audit_guidance": {
+    "note": "Recoge respuestas y analiza encuestas. Para gestionar disponibilidad y reservas, usa Easy!Appointments.",
+    "sources": [
+     "https://github.com/formbricks/formbricks/blob/HEAD/README.md",
+     "https://formbricks.com/docs/platform/introduction",
+     "https://github.com/formbricks/formbricks/commit/8244052b68fa995a38c4d41d20ee99d0f2e55522"
+    ],
+    "checked_at": "2026-11-27"
+   },
+   "nivel": "ligero"
   },
   "zulip": {
    "name": "Zulip",
@@ -186563,6 +187356,14 @@
     ],
     "origen": "auto",
     "auto": 2
+   },
+   "audit_guidance": {
+    "note": "Se perderían ejecución de pipelines con contenedores y soporte de SDKs/entornos de CI. Prefect y Kestra sirven otros flujos y no sustituyen la portabilidad del pipeline de build.",
+    "sources": [
+     "https://github.com/dagger/dagger/blob/HEAD/README.md",
+     "https://github.com/dagger/dagger/commit/221d0a272f912a78bbc52d5b5aba130ae9facddb"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "suitecrm": {
@@ -190579,7 +191380,7 @@
   "noir": {
    "name": "OWASP Noir",
    "cat": 16,
-   "sub": "reconocimiento",
+   "sub": "defensa",
    "desc": "Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.",
    "how": "CLI en Crystal que analiza código de muchos frameworks, detecta rutas y parámetros y los envía a ZAP, Caido o Burp; análisis opcional con LLM.",
    "install": "Comando documentado: `brew install noir`. Fuente: https://github.com/owasp-noir/noir/blob/main/README.md (sección «Usage»). Sigue el resto de la instalación en la fuente.",
@@ -190762,6 +191563,15 @@
     ],
     "origen": "auto",
     "auto": 1
+   },
+   "audit_guidance": {
+    "note": "Analiza de forma estática rutas y parámetros del código propio. Sirve para contrastar el inventario de una API.",
+    "sources": [
+     "https://github.com/owasp-noir/noir/blob/6a8e52e301966f5b2784e5128f16ac2239a14e3a/README.md",
+     "https://github.com/owasp-noir/noir/commit/6a8e52e301966f5b2784e5128f16ac2239a14e3a",
+     "https://github.com/owasp-noir/noir/blob/1a83870b6b91a84386be73ccdeeac28707a65b6d/README.md"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "dep-scan": {
@@ -192688,6 +193498,16 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Conservar la ficha técnica externa y mover solo su presentación práctica a traducción. Se perdería una API de traducción especializada, sin equivalencia exacta con Ollama: el motor conversacional es una ruta distinta para texto general.",
+    "sources": [
+     "https://raw.githubusercontent.com/LibreTranslate/LibreTranslate/b25f0b139430371119ad824c8daac36a61f02849/README.md",
+     "https://api.github.com/repos/LibreTranslate/LibreTranslate",
+     "https://github.com/LibreTranslate/LibreTranslate/commit/b25f0b139430371119ad824c8daac36a61f02849"
+    ],
+    "checked_at": "2026-11-27",
+    "placement": "Tema práctico de traducción, coordinado con categoría técnica 22"
    }
   },
   "ccusage": {
@@ -193049,6 +193869,14 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Quitar de la entrada genérica a diseño web y conservar con Android nativo. Retirarlo perdería guías oficiales para flujos Android. El bloque no contiene sustituto directo.",
+    "sources": [
+     "https://github.com/android/skills",
+     "https://github.com/android/skills/commit/7f7b21730a605d112ca9f79b6e40105ce7b670ee"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "claude-ads": {
@@ -194399,6 +195227,16 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Publica un caso desglosado para reconstrucción manual/asistida en Three.js. Blender cubre recrear una escena y OpenReality ofrece una ruta distinta de reconstrucción; ninguno reemplaza el caso pedagógico íntegro.",
+    "sources": [
+     "https://github.com/cpppppp7/video2threejs/blob/4c3869e2e4338283c32c56dc9f371fef371dd447/README.md",
+     "https://github.com/cpppppp7/video2threejs/commit/4c3869e2e4338283c32c56dc9f371fef371dd447",
+     "https://github.com/blender/blender/blob/main/.github/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "pybreaker": {
@@ -194735,6 +195573,15 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Solapa descubrimiento con la lista y el mercado. Conservar su navegación e instalación granular como opción de configuración, sujeta a revisar los cambios que efectúa su CLI.",
+    "sources": [
+     "https://github.com/davila7/claude-code-templates/blob/0f656c8787b3e60862e8f054d268d060871aa0b4/README.md",
+     "https://github.com/davila7/claude-code-templates/blob/44fd6fda16f51e5accdde254d5f530fb45de7390/README.md",
+     "https://github.com/davila7/claude-code-templates"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "isponsorblocktv": {
@@ -194921,14 +195768,12 @@
    "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.",
    "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
    "limits": "Usa solo simulación. La licencia y atribuciones tienen alcances distintos por componente; lee las notas antes de redistribuir. Revisión documental; no acredita binarios ni una instalación probada.",
-   "combines_with": [
-    "nautilus-trader"
-   ],
+   "combines_with": [],
    "alternatives": [],
    "repo": "https://github.com/evan-kolberg/prediction-market-backtesting",
    "homepage": null,
-   "license": "NOASSERTION",
-   "lang": "Python",
+   "license": "MIT y LGPL-3.0-or-later según archivo",
+   "lang": "Python y Rust",
    "updated": "2026-11-22",
    "doc": "human/fichas/prediction-market-backtesting.md",
    "access": {
@@ -195028,12 +195873,7 @@
    "que_es": "Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.",
    "que_hace": "Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.",
    "como_lo_hace": "Convierte datos históricos en eventos que el simulador usa para evaluar una estrategia.",
-   "combina_con": [
-    {
-     "id": "nautilus-trader",
-     "motivo": "Motor que ejecuta los ejemplos de simulación."
-    }
-   ],
+   "combina_con": [],
    "descripcion_fuentes": [
     "https://github.com/evan-kolberg/prediction-market-backtesting/blob/c76e77af00ef53472a9da8f66dae7fdd2d3e5928/README.md",
     "https://evan-kolberg.github.io/prediction-market-backtesting/license/",
@@ -195080,6 +195920,14 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Extensión en Python con componentes Rust 2024. El alcance de MIT y LGPL depende del archivo. Comprueba el formato de datos y los adaptadores de la versión que usarás.",
+    "sources": [
+     "https://github.com/evan-kolberg/prediction-market-backtesting/blob/c76e77af00ef53472a9da8f66dae7fdd2d3e5928/Cargo.toml",
+     "https://evan-kolberg.github.io/prediction-market-backtesting/license/"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "chonkie": {
@@ -195250,6 +196098,15 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Presentar explícitamente en preparación para RAG, separado de motores completos. Unstructured cubre partición genérica según flujo.",
+    "sources": [
+     "https://github.com/feyninc/chonkie/blob/664454b689d68614bcfc0b1d57fc2a28b5862825/README.md",
+     "https://api.github.com/repos/feyninc/chonkie",
+     "https://github.com/feyninc/chonkie/commit/664454b689d68614bcfc0b1d57fc2a28b5862825"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "flagembedding": {
@@ -195417,6 +196274,15 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Vincular junto a la tarea de representar y reranquear. Weaviate con módulo compatible puede cubrir vectorización integrada en algunos casos, con otros modelos y requisitos.",
+    "sources": [
+     "https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md",
+     "https://api.github.com/repos/FlagOpen/FlagEmbedding",
+     "https://github.com/FlagOpen/FlagEmbedding/commit/897baa67c0ffddbfccf4e6776ff55310d67809d4"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "robotics-antigravity-plugin": {
@@ -195757,6 +196623,16 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "La unidad del repo es una composición de ejemplo para HyperFrames. Llevarlo a recursos del motor con su ficha y licencias de assets, en vez de ofrecer una app adicional.",
+    "sources": [
+     "https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md",
+     "https://github.com/heygen-com/hyperframes-launches/commit/d7ac35069d74a3a437780579b3b7fe2f3eeace5f",
+     "https://github.com/heygen-com/hyperframes/blob/main/README.md"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "ha-mcp": {
@@ -198297,6 +199173,16 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Hay trabajo duplicado al buscar perfiles de Claude Code. La colección explícita de perfiles sigue aportando valor. Bajar prioridad en Guíame general y ubicar con perfiles especializados.",
+    "sources": [
+     "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md",
+     "https://github.com/VoltAgent/awesome-claude-code-subagents",
+     "https://github.com/VoltAgent/awesome-claude-code-subagents/commit/ed74d115b7fb7026a22a4f816a8e3250f425e3b4"
+    ],
+    "checked_at": "2026-11-27",
+    "reference_only": true
    }
   },
   "inferssd": {
@@ -198632,6 +199518,14 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "Conservar la especialidad meteorológica, ciudades y lógica de evaluación. El propio README excluye del repo datos privados, reglas operativas y código de ejecución del negocio. No hay reemplazo exacto en el bloque.",
+    "sources": [
+     "https://github.com/yangyuan-zhen/PolyWeather/blob/HEAD/README.md",
+     "https://github.com/yangyuan-zhen/PolyWeather/commit/d3a02039208f88860cbe02e0846a8a23783b220a"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "claude-context": {
@@ -199903,6 +200797,14 @@
      "Sin OpenSSF Scorecard publicado: seguridad neutral"
     ],
     "fecha": "2026-11-26"
+   },
+   "audit_guidance": {
+    "note": "El README describe inventario de dispositivos, alertas de presencia y disponibilidad en Wi-Fi/LAN. Su objetivo es visibilidad de red y no gestión central de alertas de seguridad.",
+    "sources": [
+     "https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md",
+     "https://github.com/leiweibau/Pi.Alert/commit/850e40a90871816161559e136e703cf68c1c994a"
+    ],
+    "checked_at": "2026-11-27"
    }
   },
   "kiri": {
@@ -201165,6 +202067,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-15"
+  "updated": "2026-11-27"
  }
 }

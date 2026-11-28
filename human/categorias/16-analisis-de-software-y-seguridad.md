@@ -4,7 +4,7 @@
 
 Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa.
 
-142 repos · 14 secciones
+141 repos · 14 secciones
 
 ## Puntos de partida
 
@@ -20,13 +20,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Ingeniería inversa y formatos binarios](#ingeniería-inversa-y-formatos-binarios) — 11 repos
 - [Depuración e inspección de procesos](#depuración-e-inspección-de-procesos) — 4 repos
 - [Tráfico, rendimiento y pruebas](#tráfico-rendimiento-y-pruebas) — 28 repos
-- [Reconocimiento y superficie de ataque](#reconocimiento-y-superficie-de-ataque) — 10 repos
+- [Reconocimiento y superficie de ataque](#reconocimiento-y-superficie-de-ataque) — 9 repos
 - [Explotación, C2 y post-explotación](#explotación-c2-y-post-explotación) — 10 repos
 - [Active Directory y red interna](#active-directory-y-red-interna) — 8 repos
-- [Detección, SIEM e IDS](#detección-siem-e-ids) — 16 repos
+- [Detección, SIEM e IDS](#detección-siem-e-ids) — 15 repos
 - [Nube, contenedores e IaC](#nube-contenedores-e-iac) — 11 repos
 - [Análisis y pruebas con agentes](#análisis-y-pruebas-con-agentes) — 5 repos
-- [Protección y verificación de software](#protección-y-verificación-de-software) — 12 repos
+- [Protección y verificación de software](#protección-y-verificación-de-software) — 13 repos
 - [Directorios y aprendizaje](#directorios-y-aprendizaje) — 16 repos
 - [Skills de análisis y seguridad](#skills-de-análisis-y-seguridad) — 4 repos
 - [Respuesta a incidentes y forense](#respuesta-a-incidentes-y-forense) — 5 repos
@@ -53,7 +53,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [x64dbg](../fichas/x64dbg.md) | Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. | Tu objetivo encaja con estos ejemplos: Aprender depuración en Windows; Investigar un fallo reproducible de una app propia | Sin clave propia de API de IA en la ruta básica |
-| [dnSpy](../fichas/dnspy.md) | Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. | Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo | Sin clave propia de API de IA en la ruta básica |
+| [dnSpyEx](../fichas/dnspy.md) | Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. | Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo | Sin clave propia de API de IA en la ruta básica |
 | [pwndbg](../fichas/pwndbg.md) | Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más. | Tu objetivo encaja con estos ejemplos: depurar un binario vulnerable de lab; inspeccionar heap tras un overflow | Sin clave propia de API de IA en la ruta básica |
 | [raddebugger](../fichas/raddebugger.md) | Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas. | Tu objetivo encaja con estos ejemplos: Aprender depuración nativa; Inspeccionar un fallo de una app propia | Sin clave propia de API de IA en la ruta básica |
 
@@ -103,7 +103,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Naabu](../fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Tu objetivo encaja con estos ejemplos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios | Sin clave propia de API de IA en la ruta básica |
 | [interactsh](../fichas/interactsh.md) | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP. | Tu objetivo encaja con estos ejemplos: confirmar SSRF ciega en una API de lab; validar plantillas Nuclei con OOB | Sin clave propia de API de IA en la ruta básica |
 | [dnsx](../fichas/dnsx.md) | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx. | Tu objetivo encaja con estos ejemplos: resolver un listado de FQDN de lab; detectar wildcards antes de escanear | Sin clave propia de API de IA en la ruta básica |
-| [OWASP Noir](../fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado | Sin clave propia de API de IA en la ruta básica |
 
 ## Explotación, C2 y post-explotación
 
@@ -148,7 +147,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Suricata](../fichas/suricata.md) | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad. | Tu objetivo encaja con estos ejemplos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team | Sin clave propia de API de IA en la ruta básica |
 | [Security Onion](../fichas/securityonion.md) | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. | Tu objetivo encaja con estos ejemplos: levantar un SOC de lab; entrenar analistas con telemetría realista | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Coraza](../fichas/coraza.md) | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik. | Tu objetivo encaja con estos ejemplos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza | Sin clave propia de API de IA en la ruta básica |
-| [LOKI](../fichas/loki.md) | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos. | Tu objetivo encaja con estos ejemplos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP | Sin clave propia de API de IA en la ruta básica |
 | [OWASP CRS](../fichas/coreruleset.md) | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. | Tu objetivo encaja con estos ejemplos: proteger un reverse proxy propio; ajustar falsos positivos de CRS | Sin clave propia de API de IA en la ruta básica |
 | [Elastic detection-rules](../fichas/detection-rules.md) | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. | Tu objetivo encaja con estos ejemplos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica | Sin clave propia de API de IA en la ruta básica |
 | [Shuffle](../fichas/shuffle.md) | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. | Tu objetivo encaja con estos ejemplos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab | Sin clave propia de API de IA en la ruta básica |
@@ -191,6 +189,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [DefectDojo](../fichas/defectdojo.md) | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección. | Tu objetivo encaja con estos ejemplos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto | Sin clave propia de API de IA en la ruta básica |
 | [Dependency-Track](../fichas/dependency-track.md) | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos. | Tu objetivo encaja con estos ejemplos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Threat Dragon](../fichas/threat-dragon.md) | Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web. | Tu objetivo encaja con estos ejemplos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura | Sin clave propia de API de IA en la ruta básica |
+| [OWASP Noir](../fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado | Sin clave propia de API de IA en la ruta básica |
 | [OWASP dep-scan](../fichas/dep-scan.md) | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen. | Tu objetivo encaja con estos ejemplos: auditar las dependencias de un repositorio en CI; priorizar CVE alcanzables en un proyecto Java o JavaScript | Sin clave propia de API de IA en la ruta básica |
 | [OWASP pytm](../fichas/pytm.md) | Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas. | Tu objetivo encaja con estos ejemplos: versionar el modelo de amenazas junto al código de un servicio; generar informes de amenazas en CI | Sin clave propia de API de IA en la ruta básica |
 | [cdxgen](../fichas/cdxgen.md) | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes. | Tu objetivo encaja con estos ejemplos: generar el SBOM de cada release en CI; inventariar componentes de una imagen Docker propia | Sin clave propia de API de IA en la ruta básica |

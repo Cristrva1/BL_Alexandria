@@ -4,6 +4,12 @@
 
 > Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress.
 
+## Cuándo elegir esta ficha
+
+Conservar SDK, CLI e integraciones MIT de Botpress. Para construir un bot visual, dirigir a Botpress Studio bajo sus propias condiciones o a Typebot cuando basta el diseño conversacional.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/botpress/botpress/blob/HEAD/readme.md) · [Fuente 2](https://github.com/botpress/botpress/commit/2553cf21aeb8de684db9738e19bd9ad000cb36b2)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 15k | MIT | TypeScript | 2026-11-10 |

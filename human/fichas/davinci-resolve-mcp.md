@@ -4,6 +4,12 @@
 
 > Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render.
 
+## Cuándo elegir esta ficha
+
+Presentarlo como integración de una instalación existente de Resolve. Mantener edición manual como punto de entrada y exigir edición/build para prometer scripts. Los editores citados cubren montaje, no las operaciones del servidor.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/samuelgursky/davinci-resolve-mcp/blob/cafc7ad692e768aaeb5d0ea912f24ace08be545b/README.md) · [Fuente 2](https://github.com/samuelgursky/davinci-resolve-mcp/commit/cafc7ad692e768aaeb5d0ea912f24ace08be545b) · [Fuente 3](https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 4.1k | MIT | Python | 2026-08-23 |

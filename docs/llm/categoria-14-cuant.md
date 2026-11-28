@@ -26,7 +26,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `vectorbt` | Biblioteca de análisis cuantitativo para explorar señales y comparar… | 2 Intermedio | 56 | Apache-2.0 + Commons Clause (source-available) | recomendado |
 | `finrl` | Biblioteca y ejemplos para investigar estrategias de trading mediante… | 3 Avanzado | 54 | MIT (OSI permisiva) | sin grupo |
 | `backtesting-py` | Framework ligero de Python para hacer backtesting de estrategias de trading… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `prediction-market-backtesting` | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | 32 | NOASSERTION (sin confirmar) | sin grupo |
+| `prediction-market-backtesting` | Añade ejemplos y componentes de backtesting para analizar mercados de… | 2 Intermedio | 32 | MIT y LGPL-3.0-or-later según archivo (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -51,7 +51,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba; hardware prerequisites; API de IA: no; CPython 3.13–3.15 para wheels v2 revisadas; entorno virtual; datos de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install -U nautilus_trader --pre` — fuente: https://github.com/nautechsystems/nautilus_trader/blob/develop/README.md
 - **Primera prueba propuesta (no ejecutada):** Ejecuta un ejemplo de backtest de la misma versión v2 y revisa su secuencia de eventos Éxito: Puedes reproducir órdenes y fills simulados con configuración fija
-- **Combina con:** `polars` [25/datos], `marimo` [25/datos], `ccxt` [14/bots], `py-sdk` [14/bots]
+- **Combina con:** `polars` [25/datos], `marimo` [25/apps], `ccxt` [14/bots], `py-sdk` [14/bots]
 - **Riesgos y avisos:** Sin alternativas declaradas. Curva de aprendizaje alta; la rama 2.0 aún es prerelease. La rama y docs revisadas son v2 RC y piden --pre; sin él se instala v1 con otra API; el autor desaconseja RC para capital real.
 
 ### yfinance (`yfinance`)
@@ -73,7 +73,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Python compatible con baseline; datos históricos; dependencias del modelo; hardware prerequisites; API de IA: opcional; Python compatible con baseline; datos históricos; dependencias del modelo.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install pyqlib` — fuente: https://github.com/microsoft/qlib/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Ejecuta una baseline pequeña sobre un periodo de prueba separado y revisa predicciones y evaluación Éxito: Puedes reproducir resultados sin mezclar datos futuros
-- **Combina con:** `mlflow` [23/observabilidad], `finrl`, `marimo` [25/datos], `finceptterminal` [14/agentes], `machine-learning-for-trading` [14/aprender]
+- **Combina con:** `mlflow` [23/observabilidad], `finrl`, `marimo` [25/apps], `finceptterminal` [14/agentes], `machine-learning-for-trading` [14/aprender]
 - **Riesgos y avisos:** Sin alternativas declaradas. Revisa la guía de migración de artefactos antes de actualizar desde el código. Los baselines no comparten siempre versiones de Python; los cambios recientes del recorder requieren revisar la migración.
 
 ### lumibot (`lumibot`)
@@ -95,7 +95,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python; dependencias compatibles; serie histórica; comisiones y frecuencia definidas; hardware prerequisites; API de IA: no; Python; dependencias compatibles; serie histórica; comisiones y frecuencia definidas.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install -U vectorbt` — fuente: https://github.com/polakowo/vectorbt/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Evalúa unas pocas combinaciones y reserva un periodo fuera de muestra Éxito: Puedes revisar parámetros, operaciones y resultados separados de entrenamiento
-- **Combina con:** `ccxt` [14/bots], `freqtrade` [14/bots], `marimo` [25/datos]
+- **Combina con:** `ccxt` [14/bots], `freqtrade` [14/bots], `marimo` [25/apps]
 - **Alternativas:** `backtesting-py`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Commons Clause: no es open source según la OSI. Probar muchas combinaciones aumenta el riesgo de sobreajuste; sus mensajes comerciales no acreditan una ventaja en tu caso.
 
@@ -131,14 +131,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Prediction Market Backtesting (`prediction-market-backtesting`)
 
-- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · NOASSERTION · nivel 2 · 32/100
+- **Repo:** https://github.com/evan-kolberg/prediction-market-backtesting · MIT y LGPL-3.0-or-later según archivo · nivel 2 · 32/100
 - **Qué es:** Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.
 - **Cuándo elegirlo:** Casos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Cargo.toml, Makefile; API de IA: no; Entorno compatible con NautilusTrader y datos históricos de una muestra..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://evan-kolberg.github.io/prediction-market-backtesting/license/
 - **Primera prueba propuesta (no ejecutada):** Ejecuta el ejemplo introductorio con pocos datos históricos y sin credenciales de trading. Éxito: Obtienes un resultado reproducible para el conjunto de datos utilizado.
-- **Combina con:** `nautilus-trader`
-- **Riesgos y avisos:** GitHub no identifica la licencia (NOASSERTION): confírmala en el archivo LICENSE/COPYING. Usa solo simulación. La licencia y atribuciones tienen alcances distintos por componente; lee las notas antes de redistribuir.
+- **Riesgos y avisos:** Usa solo simulación. La licencia y atribuciones tienen alcances distintos por componente; lee las notas antes de redistribuir.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

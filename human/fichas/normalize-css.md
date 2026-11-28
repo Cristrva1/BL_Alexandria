@@ -4,6 +4,12 @@
 
 > Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme.
 
+## Cuándo elegir esta ficha
+
+Conservar para CSS nativo donde interesa un baseline portátil. Tailwind Preflight ya aplica reglas de base en una pila Tailwind; combinar normalizaciones sin un motivo documentado duplica trabajo y puede cambiar la cascada.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/necolas/normalize.css) · [Fuente 2](https://tailwindcss.com/docs/preflight) · [Fuente 3](https://github.com/necolas/normalize.css/commit/fc091cce1534909334c1911709a39c22d406977b)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 53.5k | MIT | CSS | 2026-06-24 |

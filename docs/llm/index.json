@@ -369,17 +369,17 @@
    "titulo": "Librerías de gráficos",
    "repos": 5,
    "archivo": "categoria-10-graficos.md",
-   "caracteres": 9983,
+   "caracteres": 9982,
    "tokens_estimados": 2853
   },
   {
    "cat": 10,
    "sub": "recursos",
    "titulo": "Recursos y casos de uso",
-   "repos": 2,
+   "repos": 3,
    "archivo": "categoria-10-recursos.md",
-   "caracteres": 5810,
-   "tokens_estimados": 1661
+   "caracteres": 7133,
+   "tokens_estimados": 2039
   },
   {
    "cat": 10,
@@ -393,20 +393,20 @@
   {
    "cat": 10,
    "sub": "geoespacial",
-   "titulo": "Fotogrametría y mapas desde imágenes",
-   "repos": 7,
+   "titulo": "Datos geoespaciales, fotogrametría y mapas",
+   "repos": 8,
    "archivo": "categoria-10-geoespacial.md",
-   "caracteres": 13218,
-   "tokens_estimados": 3777
+   "caracteres": 15069,
+   "tokens_estimados": 4306
   },
   {
    "cat": 10,
    "sub": null,
    "titulo": "Dashboards, analítica y mapas",
-   "repos": 31,
+   "repos": 33,
    "archivo": "categoria-10.md",
-   "caracteres": 50939,
-   "tokens_estimados": 14555
+   "caracteres": 54125,
+   "tokens_estimados": 15465
   },
   {
    "cat": 11,
@@ -486,26 +486,26 @@
    "titulo": "OCR",
    "repos": 7,
    "archivo": "categoria-13-ocr.md",
-   "caracteres": 14253,
-   "tokens_estimados": 4073
+   "caracteres": 14257,
+   "tokens_estimados": 4074
   },
   {
    "cat": 13,
    "sub": "pdf",
    "titulo": "Herramientas PDF",
-   "repos": 5,
+   "repos": 4,
    "archivo": "categoria-13-pdf.md",
-   "caracteres": 11621,
-   "tokens_estimados": 3321
+   "caracteres": 9657,
+   "tokens_estimados": 2760
   },
   {
    "cat": 13,
    "sub": "gestion",
    "titulo": "Gestión y archivo de documentos",
-   "repos": 1,
+   "repos": 2,
    "archivo": "categoria-13-gestion.md",
-   "caracteres": 4428,
-   "tokens_estimados": 1266
+   "caracteres": 6379,
+   "tokens_estimados": 1823
   },
   {
    "cat": 13,
@@ -513,8 +513,8 @@
    "titulo": "PDF, OCR y procesamiento de documentos",
    "repos": 22,
    "archivo": "categoria-13.md",
-   "caracteres": 39804,
-   "tokens_estimados": 11373
+   "caracteres": 39799,
+   "tokens_estimados": 11372
   },
   {
    "cat": 14,
@@ -531,8 +531,8 @@
    "titulo": "Modelos y backtesting cuantitativo",
    "repos": 9,
    "archivo": "categoria-14-cuant.md",
-   "caracteres": 16908,
-   "tokens_estimados": 4831
+   "caracteres": 16839,
+   "tokens_estimados": 4812
   },
   {
    "cat": 14,
@@ -549,8 +549,8 @@
    "titulo": "Ejemplos y aprendizaje",
    "repos": 1,
    "archivo": "categoria-14-aprender.md",
-   "caracteres": 4421,
-   "tokens_estimados": 1264
+   "caracteres": 4420,
+   "tokens_estimados": 1263
   },
   {
    "cat": 14,
@@ -558,8 +558,8 @@
    "titulo": "Investigar finanzas y mercados",
    "repos": 25,
    "archivo": "categoria-14.md",
-   "caracteres": 42693,
-   "tokens_estimados": 12199
+   "caracteres": 42623,
+   "tokens_estimados": 12179
   },
   {
    "cat": 15,
@@ -648,8 +648,8 @@
    "titulo": "Depuración e inspección de procesos",
    "repos": 4,
    "archivo": "categoria-16-depuracion.md",
-   "caracteres": 8479,
-   "tokens_estimados": 2423
+   "caracteres": 8481,
+   "tokens_estimados": 2424
   },
   {
    "cat": 16,
@@ -664,10 +664,10 @@
    "cat": 16,
    "sub": "reconocimiento",
    "titulo": "Reconocimiento y superficie de ataque",
-   "repos": 10,
+   "repos": 9,
    "archivo": "categoria-16-reconocimiento.md",
-   "caracteres": 14515,
-   "tokens_estimados": 4148
+   "caracteres": 13253,
+   "tokens_estimados": 3787
   },
   {
    "cat": 16,
@@ -675,8 +675,8 @@
    "titulo": "Explotación, C2 y post-explotación",
    "repos": 10,
    "archivo": "categoria-16-explotacion-c2.md",
-   "caracteres": 15281,
-   "tokens_estimados": 4367
+   "caracteres": 15121,
+   "tokens_estimados": 4321
   },
   {
    "cat": 16,
@@ -691,10 +691,10 @@
    "cat": 16,
    "sub": "deteccion",
    "titulo": "Detección, SIEM e IDS",
-   "repos": 16,
+   "repos": 15,
    "archivo": "categoria-16-deteccion.md",
-   "caracteres": 21077,
-   "tokens_estimados": 6023
+   "caracteres": 20240,
+   "tokens_estimados": 5783
   },
   {
    "cat": 16,
@@ -718,10 +718,10 @@
    "cat": 16,
    "sub": "defensa",
    "titulo": "Protección y verificación de software",
-   "repos": 12,
+   "repos": 13,
    "archivo": "categoria-16-defensa.md",
-   "caracteres": 18566,
-   "tokens_estimados": 5305
+   "caracteres": 19576,
+   "tokens_estimados": 5594
   },
   {
    "cat": 16,
@@ -747,8 +747,8 @@
    "titulo": "Respuesta a incidentes y forense",
    "repos": 5,
    "archivo": "categoria-16-ir-forense.md",
-   "caracteres": 8483,
-   "tokens_estimados": 2424
+   "caracteres": 8349,
+   "tokens_estimados": 2386
   },
   {
    "cat": 16,
@@ -763,45 +763,45 @@
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 141,
    "archivo": "categoria-16.md",
    "partes": [
     "categoria-16-parte-1.md",
     "categoria-16-parte-2.md",
     "categoria-16-parte-3.md"
    ],
-   "caracteres": 28638,
-   "tokens_estimados": 8183
+   "caracteres": 28455,
+   "tokens_estimados": 8131
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 141,
    "archivo": "categoria-16-parte-1.md",
    "parte": 1,
-   "caracteres": 61317,
-   "tokens_estimados": 17520
+   "caracteres": 61074,
+   "tokens_estimados": 17450
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 141,
    "archivo": "categoria-16-parte-2.md",
    "parte": 2,
-   "caracteres": 61529,
-   "tokens_estimados": 17580
+   "caracteres": 61030,
+   "tokens_estimados": 17438
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 141,
    "archivo": "categoria-16-parte-3.md",
    "parte": 3,
-   "caracteres": 40944,
-   "tokens_estimados": 11699
+   "caracteres": 40462,
+   "tokens_estimados": 11561
   },
   {
    "cat": 17,
@@ -818,8 +818,8 @@
    "titulo": "Chatbots y asistentes conversacionales",
    "repos": 4,
    "archivo": "categoria-17-chatbots.md",
-   "caracteres": 9292,
-   "tokens_estimados": 2655
+   "caracteres": 9293,
+   "tokens_estimados": 2656
   },
   {
    "cat": 17,
@@ -836,7 +836,7 @@
    "titulo": "WhatsApp, mensajería y chatbots",
    "repos": 18,
    "archivo": "categoria-17.md",
-   "caracteres": 31467,
+   "caracteres": 31468,
    "tokens_estimados": 8991
   },
   {
@@ -854,17 +854,26 @@
    "titulo": "Email, marketing y notificaciones",
    "repos": 7,
    "archivo": "categoria-18-marketing.md",
-   "caracteres": 14558,
+   "caracteres": 14559,
    "tokens_estimados": 4160
   },
   {
    "cat": 18,
    "sub": "reservas",
    "titulo": "Reservas y programación de citas",
-   "repos": 3,
+   "repos": 2,
    "archivo": "categoria-18-reservas.md",
-   "caracteres": 7213,
-   "tokens_estimados": 2061
+   "caracteres": 5819,
+   "tokens_estimados": 1663
+  },
+  {
+   "cat": 18,
+   "sub": "encuestas",
+   "titulo": "Encuestas y feedback",
+   "repos": 1,
+   "archivo": "categoria-18-encuestas.md",
+   "caracteres": 4171,
+   "tokens_estimados": 1192
   },
   {
    "cat": 18,
@@ -872,8 +881,8 @@
    "titulo": "CRM, ventas y marketing",
    "repos": 19,
    "archivo": "categoria-18.md",
-   "caracteres": 33493,
-   "tokens_estimados": 9570
+   "caracteres": 33436,
+   "tokens_estimados": 9554
   },
   {
    "cat": 19,
@@ -899,7 +908,7 @@
    "titulo": "Aprender LLMs desde cero",
    "repos": 9,
    "archivo": "categoria-19-aprender.md",
-   "caracteres": 17279,
+   "caracteres": 17277,
    "tokens_estimados": 4937
   },
   {
@@ -908,8 +917,8 @@
    "titulo": "Aprender IA y escribir mejores prompts",
    "repos": 30,
    "archivo": "categoria-19.md",
-   "caracteres": 52017,
-   "tokens_estimados": 14863
+   "caracteres": 52015,
+   "tokens_estimados": 14862
   },
   {
    "cat": 20,
@@ -1070,8 +1079,8 @@
    "titulo": "Entrenar y afinar modelos",
    "repos": 18,
    "archivo": "categoria-24-entrenamiento.md",
-   "caracteres": 29614,
-   "tokens_estimados": 8462
+   "caracteres": 29613,
+   "tokens_estimados": 8461
   },
   {
    "cat": 24,
@@ -1088,35 +1097,35 @@
    "titulo": "Modelos abiertos y entrenamiento",
    "repos": 25,
    "archivo": "categoria-24.md",
-   "caracteres": 41300,
-   "tokens_estimados": 11801
+   "caracteres": 41299,
+   "tokens_estimados": 11800
   },
   {
    "cat": 25,
    "sub": "datos",
    "titulo": "Datos y notebooks",
-   "repos": 17,
+   "repos": 14,
    "archivo": "categoria-25-datos.md",
-   "caracteres": 28013,
-   "tokens_estimados": 8004
+   "caracteres": 23462,
+   "tokens_estimados": 6704
   },
   {
    "cat": 25,
    "sub": "apps",
    "titulo": "Apps de datos en Python",
-   "repos": 6,
+   "repos": 7,
    "archivo": "categoria-25-apps.md",
-   "caracteres": 12299,
-   "tokens_estimados": 3515
+   "caracteres": 13748,
+   "tokens_estimados": 3929
   },
   {
    "cat": 25,
    "sub": null,
    "titulo": "Procesar datos y trabajar con notebooks",
-   "repos": 23,
+   "repos": 21,
    "archivo": "categoria-25.md",
-   "caracteres": 37645,
-   "tokens_estimados": 10756
+   "caracteres": 34526,
+   "tokens_estimados": 9865
   },
   {
    "cat": 26,
@@ -1160,8 +1169,8 @@
    "titulo": "Skills de diseño para agentes",
    "repos": 22,
    "archivo": "categoria-27-skills.md",
-   "caracteres": 37840,
-   "tokens_estimados": 10812
+   "caracteres": 37846,
+   "tokens_estimados": 10814
   },
   {
    "cat": 27,
@@ -1187,8 +1196,8 @@
    "titulo": "Skills de diseño, contenido y especialidades",
    "repos": 38,
    "archivo": "categoria-27.md",
-   "caracteres": 64160,
-   "tokens_estimados": 18332
+   "caracteres": 64166,
+   "tokens_estimados": 18334
   },
   {
    "cat": 28,

@@ -3848,40 +3848,6 @@
    ]
   },
   {
-   "id": "g-emulacion-de-adversarios",
-   "titulo": "Emulación de adversarios",
-   "cat": 16,
-   "sub": "explotacion-c2",
-   "miembros": [
-    "atomic-red-team",
-    "caldera"
-   ],
-   "ranking": [
-    {
-     "id": "caldera",
-     "posicion": 1,
-     "puntuacion": 63.5,
-     "papel": "recomendado",
-     "cuando": "Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
-     "id": "atomic-red-team",
-     "posicion": 2,
-     "puntuacion": 62.4,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    }
-   ],
-   "recomendado": "caldera",
-   "alternativas": [
-    "atomic-red-team"
-   ]
-  },
-  {
    "id": "g-proveedores-de-identidad-y-sso",
    "titulo": "Proveedores de identidad y SSO",
    "cat": 15,
@@ -3913,40 +3879,6 @@
    "recomendado": "keycloak",
    "alternativas": [
     "authentik"
-   ]
-  },
-  {
-   "id": "g-analisis-forense-de-discos",
-   "titulo": "Análisis forense de discos",
-   "cat": 16,
-   "sub": "ir-forense",
-   "miembros": [
-    "autopsy",
-    "sleuthkit"
-   ],
-   "ranking": [
-    {
-     "id": "autopsy",
-     "posicion": 1,
-     "puntuacion": 46.5,
-     "papel": "recomendado",
-     "cuando": "Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
-     "id": "sleuthkit",
-     "posicion": 2,
-     "puntuacion": 41.9,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    }
-   ],
-   "recomendado": "autopsy",
-   "alternativas": [
-    "sleuthkit"
    ]
   },
   {
@@ -4800,40 +4732,6 @@
    ]
   },
   {
-   "id": "g-sondeo-y-escaneo-de-reconocimiento",
-   "titulo": "Sondeo y escaneo de reconocimiento",
-   "cat": 16,
-   "sub": "reconocimiento",
-   "miembros": [
-    "httpx",
-    "naabu"
-   ],
-   "ranking": [
-    {
-     "id": "httpx",
-     "posicion": 1,
-     "puntuacion": 77.0,
-     "papel": "recomendado",
-     "cuando": "Si buscas esto: sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para filtrar activos vivos.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    },
-    {
-     "id": "naabu",
-     "posicion": 2,
-     "puntuacion": 62.9,
-     "papel": "alternativa",
-     "cuando": "Si buscas esto: escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei.",
-     "cuando_origen": "plantilla",
-     "caso_unico": false
-    }
-   ],
-   "recomendado": "httpx",
-   "alternativas": [
-    "naabu"
-   ]
-  },
-  {
    "id": "g-automatizacion-por-eventos-auto-hospedada",
    "titulo": "Automatización por eventos auto-hospedada",
    "cat": 1,
@@ -5188,7 +5086,7 @@
      "posicion": 1,
      "puntuacion": 58.8,
      "papel": "recomendado",
-     "cuando": "Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas.",
+     "cuando": "Si buscas esto: efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     },

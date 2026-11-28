@@ -4,6 +4,12 @@
 
 > GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio.
 
+## Cuándo elegir esta ficha
+
+Interfaz gráfica forense que usa The Sleuth Kit. Úsala para explorar una imagen de ejemplo propia o autorizada.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://www.autopsy.com/download/) · [Fuente 2](https://github.com/sleuthkit/autopsy/commit/cb3dacdcad67abe7cf863c74f10dcdb8e25a5c21) · [Fuente 3](https://sleuthkit.org/autopsy/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3.5k | — | Java | 2026-11-16 |
@@ -32,19 +38,11 @@ Instalador / build.
 |---|---|---|
 | [Hayabusa](hayabusa.md) | Hayabusa tria evtx; Autopsy el disco. | Complementarios en DFIR. |
 | [Wazuh](wazuh.md) | Tras el análisis forense, correlaciona con alertas Wazuh. | Autopsy + Wazuh. |
+| [The Sleuth Kit](sleuthkit.md) | Autopsy utiliza el motor forense The Sleuth Kit y añade la interfaz gráfica. | Consulta los componentes incluidos en la distribución oficial. |
 
 Estado en GitHub: activo · último push 2026-06-20 · última versión publicada autopsy-4.23.1 (2026-05-07) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sleuthkit/autopsy#readme) · [2](http://www.sleuthkit.org/autopsy/)</sub>
-
-## Ver similares
-
-Grupo **Análisis forense de discos**: Autopsy ocupa la posición 1 de 2 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
-
-| # | Repo | Puntuación | Cuándo elegirlo |
-|---:|---|---:|---|
-| 1 | **Autopsy** (esta ficha) ⭐ recomendado | 46 | Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. |
-| 2 | [The Sleuth Kit](sleuthkit.md) | 42 | Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
 
 ## Acceso, coste y equipo
 
@@ -109,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Java
 - **Etiquetas:** `security`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [The Sleuth Kit](sleuthkit.md) | 3.2k | Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
 
 ## Enlaces
 

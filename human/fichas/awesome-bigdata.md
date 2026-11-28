@@ -1,8 +1,16 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Procesar datos y trabajar con notebooks](../categorias/25-datos-notebooks.md) › Datos y notebooks
+[🏠 Inicio](../README.md) › [📊 Dashboards, analítica y mapas](../categorias/10-anal-tica-visualizaci-n.md) › Recursos y casos de uso
 
 # 🗄️ awesome-bigdata
 
 > Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
+
+## Cuándo elegir esta ficha
+
+Mostrar en recursos como lectura sobre big data. Se perdería el directorio por clases de infraestructura si se retira. La hoja de ruta solo cubre la orientación para principiantes.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/oxnr/awesome-bigdata/9eb86451dc5775c40939693820f2c8a74c31d01a/README.md) · [Fuente 2](https://api.github.com/repos/oxnr/awesome-bigdata) · [Fuente 3](https://github.com/oxnr/awesome-bigdata/commit/9eb86451dc5775c40939693820f2c8a74c31d01a)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|

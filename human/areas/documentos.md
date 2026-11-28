@@ -4,7 +4,7 @@
 
 Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
 
-66 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
+67 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/documentos).
 
 ## Opciones para empezar
 
@@ -18,14 +18,13 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Leer, convertir, firmar y organizar archivos.
 
-[Explorar 16 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-conversion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Apache Tika](../fichas/tika.md) | Kit de Apache que detecta y extrae texto y metadatos de más de mil tipos de archivo; desde 4.0 emite Markdown pensado para LLM y RAG. | API de IA opcional |
 | [Docling](../fichas/docling.md) | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | API de IA opcional |
 | [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica |
-| [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
 | [Marker](../fichas/marker.md) | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. | API de IA opcional |
 | [markitdown](../fichas/markitdown.md) | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. | API de IA opcional |
 | [MinerU](../fichas/mineru.md) | Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes. | API de IA opcional |
@@ -73,7 +72,7 @@ Preparar y exportar una presentación.
 
 Explicar sistemas e ideas mediante diagramas.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-diagramas)
+[Explorar 9 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-diagramas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -82,6 +81,7 @@ Explicar sistemas e ideas mediante diagramas.
 | [diagram-design](../fichas/diagram-design.md) | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | Sin clave propia de API de IA en la ruta básica |
 | [draw.io](../fichas/drawio.md) | Editor de diagramas en el navegador o escritorio, sin servidor: diagramas de flujo, redes, UML y arquitectura cloud, con importación de Mermaid y PlantUML. | Sin clave propia de API de IA en la ruta básica |
 | [Excalidraw](../fichas/excalidraw.md) | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. | Sin clave propia de API de IA en la ruta básica |
+| [jsoncanvas](../fichas/jsoncanvas.md) | Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. | Sin clave propia de API de IA en la ruta básica |
 | [Kroki](../fichas/kroki.md) | Servidor que unifica más de 25 lenguajes de diagramas (PlantUML, Mermaid, D2, Graphviz, Excalidraw…) detrás de una sola API HTTP que devuelve SVG o PNG. | Sin clave propia de API de IA en la ruta básica |
 | [Mermaid](../fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | Sin clave propia de API de IA en la ruta básica |
 | [PlantUML](../fichas/plantuml.md) | Herramienta clásica que genera diagramas UML y técnicos (secuencia, clases, actividad, Gantt, mapas mentales) a partir de descripciones de texto. | Sin clave propia de API de IA en la ruta básica |
@@ -90,11 +90,10 @@ Explicar sistemas e ideas mediante diagramas.
 
 Recuperar fuentes con RAG y búsqueda semántica.
 
-[Explorar 19 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag)
+[Explorar 18 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | Depende de la ruta elegida |
 | [Chonkie](../fichas/chonkie.md) | Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos. | API de IA opcional |
 | [Chroma](../fichas/chroma.md) | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. | Sin clave propia de API de IA en la ruta básica |
 | [Faiss](../fichas/faiss.md) | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. | Sin clave propia de API de IA en la ruta básica |
@@ -133,5 +132,42 @@ Conservar hechos y decisiones entre sesiones.
 | [mempalace](../fichas/mempalace.md) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | API de IA opcional |
 | [OpenViking](../fichas/openviking.md) | Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | Depende de la ruta elegida |
 | [supermemory](../fichas/supermemory.md) | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. | Depende de la ruta elegida |
+
+### Lectura y archivo de PDF
+
+Leer, anotar y organizar PDF o mantener un archivo documental.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-lectura)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [paperless-ngx](../fichas/paperless-ngx.md) | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | Sin clave propia de API de IA en la ruta básica |
+| [PdfDing](../fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Sin clave propia de API de IA en la ruta básica |
+
+### Traducción de texto y documentos
+
+Traducir texto por API o traducir contenido de un PDF.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-traduccion)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
+| [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | Depende de la ruta elegida |
+
+### Aprender a preparar una búsqueda documental
+
+Entender conversión, fragmentación, embeddings y recuperación como pasos distintos.
+
+[Explorar 6 repos](../../docs/index.html#/explorar?area=documentos&topic=docs-rag-aprender)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | Depende de la ruta elegida |
+| [Chonkie](../fichas/chonkie.md) | Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos. | API de IA opcional |
+| [Docling](../fichas/docling.md) | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | API de IA opcional |
+| [FlagEmbedding](../fichas/flagembedding.md) | Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda. | Sin clave propia de API de IA en la ruta básica |
+| [Meilisearch](../fichas/meilisearch.md) | Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla. | API de IA opcional |
+| [Qdrant](../fichas/qdrant.md) | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

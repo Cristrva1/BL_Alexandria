@@ -4,6 +4,12 @@
 
 > Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes.
 
+## Cuándo elegir esta ficha
+
+Conservar terminal y binario Windows x64 documentado. La compilación AGPL y Enterprise privada operan sobre núcleo de datos común según el autor. Se perdería la distinción proveedor/terminal si se fusionara con OpenBB.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Fincept-Corporation/FinceptTerminal/blob/HEAD/README.md) · [Fuente 2](https://github.com/Fincept-Corporation/FinceptTerminal/commit/914134de5fd227fe66969c4591ac9ca7e461cdf4)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 33.8k | AGPL-3.0 | C++ | 2026-11-14 |

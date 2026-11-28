@@ -4,6 +4,14 @@
 
 > Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes.
 
+## Cuándo elegir esta ficha
+
+Referencia de análisis y creación de software. Su encaje específico requiere revisión adicional.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/storytold/craft-anything) · [Fuente 2](https://github.com/storytold/craft-anything/commit/14c502c55751b04a7ed15833cbd2cfe8296f60f0)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 32.9k | Apache-2.0 | Rust | 2026-11-14 |

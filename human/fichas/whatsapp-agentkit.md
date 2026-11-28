@@ -4,6 +4,12 @@
 
 > Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales.
 
+## Cuándo elegir esta ficha
+
+La guía en español y scripts generan un proyecto con Claude Code. Conservar la receta. Typebot solo sustituye la etapa de diseñar un diálogo para un perfil visual. Se perderían el scaffolding y las instrucciones del proveedor del bot.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Hainrixz/whatsapp-agentkit/blob/HEAD/README.md) · [Fuente 2](https://github.com/Hainrixz/whatsapp-agentkit/commit/e33eb6a35804c2122c1d0d711e2cc91cfaceac91)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 567 | MIT | Python | 2026-06-23 |

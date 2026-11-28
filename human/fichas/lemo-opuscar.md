@@ -4,6 +4,14 @@
 
 > Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y medios.
 
+## Cuándo elegir esta ficha
+
+Útil como biblioteca de estilos para Claude con derechos separados; no ofrezca demos o guías para redistribuir por la licencia del código. Las alternativas son plantillas o pautas para producir, parciales respecto de su catálogo estético.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/lemomo-ai/lemo-opuscar/blob/439b98af08b04400f8fd8a8dd19cd773c0c96532/README.md) · [Fuente 2](https://github.com/lemomo-ai/lemo-opuscar/commit/439b98af08b04400f8fd8a8dd19cd773c0c96532) · [Fuente 3](https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 16.3k | MIT (código) + CC-BY-NC-4.0 (docs) + CC-BY-4.0 (demos) | JavaScript | 2026-11-14 |

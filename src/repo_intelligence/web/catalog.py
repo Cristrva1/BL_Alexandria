@@ -11,7 +11,9 @@ from repo_intelligence.core.io import read_json
 from repo_intelligence.core.taxonomy import attach_areas, build_areas, goal_memberships
 from repo_intelligence.core.access import access_facts, access_routes, API_LABELS, CLIENT_LABELS, LOCAL_LABELS, COST_LABELS, HARDWARE_LABELS, ROUTE_LABELS
 from repo_intelligence.core.reading import GUIDES
-from repo_intelligence.core.web_projects import WEB_PROJECTS
+from repo_intelligence.core.web_projects import (
+    WEB_PROJECT_CONTEXT, WEB_PROJECT_EXCLUSIONS, WEB_PROJECT_NEGATIONS, WEB_PROJECTS,
+)
 from repo_intelligence.core.handbook import load_handbook
 from repo_intelligence.core.techniques import load_techniques
 from repo_intelligence.core.access import AUDIENCE_LABELS
@@ -251,6 +253,8 @@ def build_catalog(project_root: Path) -> dict:
             merged["complejidad"] = {"nivel": cx["nivel"], "nombre": cx["nombre"], "motivos": cx.get("motivos") or [], "origen": cx.get("origen")}
         if detail.get("similares"):
             merged["similares"] = detail["similares"]
+        if guidance := detail.get("audit_guidance"):
+            merged["audit_guidance"] = guidance
         if repo_id in editorial_by_repo:
             merged["guided_editorial"] = editorial_by_repo[repo_id]
         for field in ("que_es", "que_hace", "como_lo_hace", "licencia_nota", "licencia_verificada", "descripcion_notas", "descripcion_fuentes", "descripcion_revision", "descripcion_github", "descripcion_origen"):
@@ -433,10 +437,18 @@ def build_catalog(project_root: Path) -> dict:
         "labels": {**LABELS, "api": API_LABELS, "client": CLIENT_LABELS, "local_model": LOCAL_LABELS, "cost": COST_LABELS, "hardware": HARDWARE_LABELS, "route": ROUTE_LABELS, "audience": AUDIENCE_LABELS},
         "reading": GUIDES,
         "guided_groups": editorial_groups,
-        "web_projects": [
-            {key: project[key] for key in ("title", "when", "stack")}
-            for project in WEB_PROJECTS.values()
-        ],
+        "audit_relations": read_json(root / "data" / "relaciones_editoriales.json", {}),
+        "historical_repos": {
+            entry["id"]: {key: entry[key] for key in ("name", "historical_url", "successor_url", "retired_at") if key in entry}
+            for entry in read_json(root / "data" / "retired.json", {}).get("repos", [])
+            if entry.get("historical_url")
+        },
+        "web_projects": [{"id": key, **project} for key, project in WEB_PROJECTS.items()],
+        "web_project_rules": {
+            "context": WEB_PROJECT_CONTEXT,
+            "exclusions": WEB_PROJECT_EXCLUSIONS,
+            "negations": WEB_PROJECT_NEGATIONS,
+        },
         "handbook": load_handbook(project_root, {repo['id'] for repo in repos}),
         "techniques": load_techniques(project_root, {repo["gh"]: repo["id"] for repo in repos if repo.get("gh")}),
         "discovery": {**(compact.get("discovery") or {"goals": []}), "areas": areas},

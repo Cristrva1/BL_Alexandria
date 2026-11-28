@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 3 de 3)
 
-Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (141 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,21 +18,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ## Fichas
 
-### Dependency-Track (`dependency-track`)
-
-- **Repo:** https://github.com/DependencyTrack/dependency-track · Apache-2.0 · nivel 2 · 65/100
-- **Qué es:** Proyecto insignia de OWASP para análisis continuo de componentes (Component Analysis) a partir de listas de materiales de software (SBOM).
-- **Cuándo elegirlo:** Casos: subir el SBOM de cada build en CI y recibir avisos cuando aparece un CVE nuevo en una dependencia; auditar licencias de componentes de toda la cartera de aplicaciones.
-- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Java, Makefile, pom.xml; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://docs.dependencytrack.org/getting-started/deploy-docker/
-
-  ```bash
-  curl -LO https://dependencytrack.org/docker-compose.yml
-  docker compose up -d
-  ```
-- **Primera prueba propuesta (no ejecutada):** Despliega el stack de prueba con el docker-compose.yml de la documentación oficial y sube un SBOM CycloneDX de un proyecto propio. Éxito: Ves el inventario de componentes con vulnerabilidades y licencias detectadas en la interfaz web.
-- **Combina con:** `cdxgen`, `syft` [16/nube-contenedores], `defectdojo`, `dependency-check`
-
 ### cdxgen (`cdxgen`)
 
 - **Repo:** https://github.com/cdxgen/cdxgen · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Generadores de SBOM»
@@ -43,6 +28,16 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Instala con npm como indica el README y ejecuta cdxgen en el directorio de un proyecto propio. Éxito: Obtienes un archivo bom.json en formato CycloneDX.
 - **Combina con:** `dependency-track`
 - **Alternativas:** `syft`
+
+### OWASP Noir (`noir`)
+
+- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 61/100
+- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
+- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
+- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
+- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
 
 ### OWASP Dependency-Check (`dependency-check`)
 
@@ -385,25 +380,23 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Autopsy (`autopsy`)
 
-- **Repo:** https://github.com/sleuthkit/autopsy · — · nivel 3 · 46/100 · recomendado en «Análisis forense de discos»
+- **Repo:** https://github.com/sleuthkit/autopsy · — · nivel 3 · 46/100
 - **Qué es:** GUI forense (Apache-2.0 en LICENSE-2.0.txt; API sin SPDX).
 - **Cuándo elegirlo:** Casos: abrir un caso forense de lab; generar timeline de un disco de prueba.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Java; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/sleuthkit/autopsy/blob/develop/README.txt
 - **Primera prueba propuesta (no ejecutada):** Instala el paquete Windows desde el sitio oficial o sigue README.txt y abre un caso de lab. Éxito: UI de Autopsy con el disco cargado.
-- **Combina con:** `hayabusa`, `wazuh` [16/deteccion]
-- **Alternativas:** `sleuthkit`
+- **Combina con:** `hayabusa`, `wazuh` [16/deteccion], `sleuthkit`
 
 ### The Sleuth Kit (`sleuthkit`)
 
-- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 42/100 · alternativa en «Análisis forense de discos»
+- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 42/100
 - **Qué es:** TSK: toolkit forense de FS (licencias mixtas).
 - **Cuándo elegirlo:** Casos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/sleuthkit/sleuthkit/blob/develop-4.1x/README.md
 - **Primera prueba propuesta (no ejecutada):** Compila/instala según INSTALL.txt y ejecuta `fls` sobre una imagen de laboratorio. Éxito: Listas inodos/nombres de fichero.
-- **Combina con:** `velociraptor`, `volatility3`
-- **Alternativas:** `autopsy`
+- **Combina con:** `velociraptor`, `volatility3`, `autopsy`
 
 ### OpenCTI (`opencti`)
 

@@ -4,6 +4,12 @@
 
 > Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido.
 
+## Cuándo elegir esta ficha
+
+El README describe inventario de dispositivos, alertas de presencia y disponibilidad en Wi-Fi/LAN. Su objetivo es visibilidad de red y no gestión central de alertas de seguridad.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/README.md) · [Fuente 2](https://github.com/leiweibau/Pi.Alert/commit/850e40a90871816161559e136e703cf68c1c994a)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 1.4k | GPL-3.0 | PHP | 2026-11-22 |

@@ -4,6 +4,14 @@
 
 > Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.
 
+## Cuándo elegir esta ficha
+
+Las entradas del índice sirven para encontrar APIs HTTP. Un cliente MCP necesita un servidor que encapsule cada API. Distinguir su enlace de la lista de clientes o servidores.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/public-apis/public-apis/blob/1e4904643a17c7a12041c854a1caad3df663245e/README.md) · [Fuente 2](https://github.com/public-apis/public-apis/blob/master/README.md) · [Fuente 3](https://github.com/public-apis/public-apis)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 499k | MIT | Python | 2026-06-23 |

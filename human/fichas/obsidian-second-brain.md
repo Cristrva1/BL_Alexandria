@@ -4,6 +4,12 @@
 
 > Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.
 
+## Cuándo elegir esta ficha
+
+Ambos ofrecen un punto de partida según formatos y host, con distinto alcance. Conservar mientras exista una diferencia comprobable en su método de memoria.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/eugeniughelbur/obsidian-second-brain/blob/bca5961e4b60eefd90a6e0c0f44cf3fe9aaf3cbc/README.md) · [Fuente 2](https://api.github.com/repos/eugeniughelbur/obsidian-second-brain) · [Fuente 3](https://github.com/eugeniughelbur/obsidian-second-brain/commit/bca5961e4b60eefd90a6e0c0f44cf3fe9aaf3cbc)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 5.3k | MIT | Python | 2026-11-14 |

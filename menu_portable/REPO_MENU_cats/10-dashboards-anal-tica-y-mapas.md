@@ -3,6 +3,36 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `awesome-bigdata`
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=data
+
+**Qué es:** Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
+**Stack:** Navegador; problema de datos definido
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
+- Coste: Sin pago a un modelo en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios
+- Equipo: Preparación según la ruta elegida. Navegador; problema de datos definido
+**Repo:** https://github.com/oxnr/awesome-bigdata
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una
+**Qué comprobar:** Puedes elegir candidatos complementarios
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `awesome-dataviz`, `duckdb`, `hudi`
+
 ## `awesome-dataviz`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,dataviz,javascript
 
@@ -215,6 +245,36 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Ves un informe con gráficos generados a partir de las consultas SQL del Markdown.
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `claude-code`, `supabase`
+
+## `globalbuildingatlas`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,python
+
+**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.
+**Stack:** Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial
+- Coste: Sin pago a un modelo en la ruta básica. No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes
+- Equipo: Preparación según la ruta elegida. Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa
+**Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas
+
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa
+**Qué comprobar:** Puedes identificar formato, licencia y escala del dato
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `three.js`, `duckdb`, `3dviz-pro-max`
 
 ## `gods-eye-view`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=osint,app,javascript

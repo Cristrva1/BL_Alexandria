@@ -4,6 +4,14 @@
 
 > Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.
 
+## Cuándo elegir esta ficha
+
+El upstream dirige al navegador clásico mientras reescribe el núcleo. Preservar ese enlace como ruta explícita web; Shotcut/Kdenlive garantizan un camino documentado a la misma tarea de montaje local, con distinto acceso.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/OpenCut-app/OpenCut/blob/e668010778568641babef2cc40be4703ae6916d6/README.md) · [Fuente 2](https://github.com/OpenCut-app/OpenCut/commit/e668010778568641babef2cc40be4703ae6916d6) · [Fuente 3](https://github.com/OpenCut-app/OpenCut/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 98.4k | MIT | TypeScript | 2026-06-23 |

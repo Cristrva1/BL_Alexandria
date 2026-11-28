@@ -4,6 +4,12 @@
 
 > Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.
 
+## Cuándo elegir esta ficha
+
+Presentar principalmente como SDK de decisión estructurada y conservar referencia a sus checkpoints especializados desde modelos. LiteLLM cubre enrutamiento general de solicitudes. Se perderían clasificación, presets y conexión MCP, y la distinción entre modo offline por reglas y modo predictivo con descarga.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/NandhaKishorM/laya/309f865eb2373ffaf1b9e375f30496841492d7b0/README.md) · [Fuente 2](https://api.github.com/repos/NandhaKishorM/laya) · [Fuente 3](https://github.com/NandhaKishorM/laya/commit/309f865eb2373ffaf1b9e375f30496841492d7b0)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 35.5k | Apache-2.0 | Python | 2026-11-14 |

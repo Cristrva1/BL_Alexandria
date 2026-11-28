@@ -4,7 +4,7 @@
 
 Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicación o negocio.
 
-40 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
+42 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/datos).
 
 ## Opciones para empezar
 
@@ -18,24 +18,21 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Motores de consulta, tablas y conjuntos de datos.
 
-[Explorar 17 repos](../../docs/index.html#/explorar?area=datos&topic=datos-procesar)
+[Explorar 14 repos](../../docs/index.html#/explorar?area=datos&topic=datos-procesar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Apache Arrow](../fichas/arrow.md) | Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas. | Sin clave propia de API de IA en la ruta básica |
 | [Apache Iceberg](../fichas/apache-iceberg.md) | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. | Sin clave propia de API de IA en la ruta básica |
 | [Apache Spark](../fichas/spark.md) | Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark. | Sin clave propia de API de IA en la ruta básica |
-| [awesome-bigdata](../fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica |
 | [ClickHouse](../fichas/clickhouse.md) | Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube. | Sin clave propia de API de IA en la ruta básica |
 | [dbt](../fichas/dbt.md) | Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software. | Sin clave propia de API de IA en la ruta básica |
 | [Delta Lake](../fichas/delta-lake.md) | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. | Sin clave propia de API de IA en la ruta básica |
 | [dlt (data load tool)](../fichas/dlt.md) | Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental. | Sin clave propia de API de IA en la ruta básica |
 | [DuckDB](../fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica |
-| [GlobalBuildingAtlas](../fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica |
 | [hudi](../fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica |
 | [Ibis](../fichas/ibis.md) | Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores. | Sin clave propia de API de IA en la ruta básica |
 | [JupyterLab](../fichas/jupyterlab.md) | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. | Sin clave propia de API de IA en la ruta básica |
-| [marimo](../fichas/marimo.md) | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. | API de IA opcional |
 | [pandas](../fichas/pandas.md) | Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. | Sin clave propia de API de IA en la ruta básica |
 | [Polars](../fichas/polars.md) | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. | Sin clave propia de API de IA en la ruta básica |
 | [PyGWalker](../fichas/pygwalker.md) | Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos. | Sin clave propia de API de IA en la ruta básica |
@@ -102,11 +99,33 @@ Medir visitas, uso y comportamiento de usuarios.
 
 Directorios, proyectos de práctica y hojas de ruta.
 
-[Explorar 2 repos](../../docs/index.html#/explorar?area=datos&topic=datos-recursos)
+[Explorar 3 repos](../../docs/index.html#/explorar?area=datos&topic=datos-recursos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
+| [awesome-bigdata](../fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-dataviz](../fichas/awesome-dataviz.md) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | Sin clave propia de API de IA en la ruta básica |
 | [data-analyst-roadmap](../fichas/data-analyst-roadmap.md) | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. | Sin clave propia de API de IA en la ruta básica |
+
+### Datos y capas geoespaciales
+
+Descargar conjuntos geoespaciales y visualizar capas o mapas.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=datos&topic=datos-geoespacial)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [GlobalBuildingAtlas](../fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica |
+| [QGIS](../fichas/qgis.md) | Sistema de información geográfica libre y multiplataforma: gestión de datos espaciales, cartografía, análisis, Python y QGIS Server. | Sin clave propia de API de IA en la ruta básica |
+
+### Clasificación y salidas estructuradas
+
+Integrar clasificación o decisiones en una aplicación y comprobar su resultado.
+
+[Explorar 1 repos](../../docs/index.html#/explorar?area=datos&topic=datos-decision)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [laya](../fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

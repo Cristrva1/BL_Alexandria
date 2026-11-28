@@ -4,6 +4,12 @@
 
 > Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM.
 
+## Cuándo elegir esta ficha
+
+Moverlo de síntesis de video y presentarlo como extracción de momentos/reencuadre de material propio o autorizado. Los alternativos montan clips, pero ninguna equivalencia cubre por sí sola selección automática y la heurística de puntuación.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/4cfa5f00d65b4dca05bec92c67bfeb3af66cdfb3/README.md) · [Fuente 2](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/commit/4cfa5f00d65b4dca05bec92c67bfeb3af66cdfb3) · [Fuente 3](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 6.1k | MIT | Python | 2026-11-14 |

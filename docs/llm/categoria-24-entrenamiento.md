@@ -77,7 +77,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: pip install; usarlo exige conocimientos de ML; Python; paquete y sistema compatibles; datos de ejemplo; hardware prerequisites; API de IA: no; Python; paquete y sistema compatibles; datos de ejemplo.
 - **Instalación (documentada en la fuente; no ejecutada):** `pip install tensorflow` — fuente: https://github.com/tensorflow/tensorflow/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Ejecuta una operación pequeña con tensores y comprueba el dispositivo antes de entrenar Éxito: Puedes verificar versión y resultado
-- **Combina con:** `transformers`, `mediapipe` [28/vision], `marimo` [25/datos], `jupyterlab` [25/datos], `tfjs-models` [28/vision], `keras`
+- **Combina con:** `transformers`, `mediapipe` [28/vision], `marimo` [25/apps], `jupyterlab` [25/datos], `tfjs-models` [28/vision], `keras`
 - **Alternativas:** `pytorch`, `jax`
 - **Riesgos y avisos:** Alternativa (elige una): pytorch. La instalación CPU y acelerada depende de plataforma y versión; usa el selector y guía oficiales en vez de asumir GPU en cualquier sistema.
 

@@ -198,7 +198,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [SiYuan](fichas/siyuan.md) | [Joplin](fichas/joplin.md), [Trilium Notes](fichas/trilium.md), [Logseq](fichas/logseq.md) |
 | [Trilium Notes](fichas/trilium.md) | [Joplin](fichas/joplin.md), [SiYuan](fichas/siyuan.md), [Logseq](fichas/logseq.md) |
 | [vaultwarden](fichas/vaultwarden.md) | [KeePassXC](fichas/keepassxc.md) |
-| [Autopsy](fichas/autopsy.md) | [The Sleuth Kit](fichas/sleuthkit.md) |
 | [Caido](fichas/caido.md) | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) |
 | [cdxgen](fichas/cdxgen.md) | [Syft](fichas/syft.md) |
 | [CrowdSec](fichas/crowdsec.md) | [Fail2ban](fichas/fail2ban.md) |
@@ -211,13 +210,11 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Gobuster](fichas/gobuster.md) | [feroxbuster](fichas/feroxbuster.md), [dirsearch](fichas/dirsearch.md), [ffuf](fichas/ffuf.md) |
 | [Grype](fichas/grype.md) | [Trivy](fichas/trivy.md) |
 | [hashcat](fichas/hashcat.md) | [John the Ripper (jumbo)](fichas/john.md) |
-| [httpx](fichas/httpx.md) | [Naabu](fichas/naabu.md) |
 | [John the Ripper (jumbo)](fichas/john.md) | [hashcat](fichas/hashcat.md) |
 | [k6](fichas/k6.md) | [Locust](fichas/locust.md) |
 | [Locust](fichas/locust.md) | [k6](fichas/k6.md) |
 | [ModSecurity](fichas/modsecurity.md) | [OWASP Coraza](fichas/coraza.md) |
 | [Mythic](fichas/mythic.md) | [Empire](fichas/empire.md), [Sliver](fichas/sliver.md) |
-| [Naabu](fichas/naabu.md) | [httpx](fichas/httpx.md) |
 | [OWASP Coraza](fichas/coraza.md) | [ModSecurity](fichas/modsecurity.md) |
 | [OWASP Juice Shop](fichas/juice-shop.md) | [WebGoat](fichas/webgoat.md) |
 | [OWASP pytm](fichas/pytm.md) | [OWASP Threat Dragon](fichas/threat-dragon.md) |
@@ -231,7 +228,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Sliver](fichas/sliver.md) | [Mythic](fichas/mythic.md), [Empire](fichas/empire.md) |
 | [strix](fichas/strix.md) | [shannon](fichas/shannon.md) |
 | [Syft](fichas/syft.md) | [cdxgen](fichas/cdxgen.md) |
-| [The Sleuth Kit](fichas/sleuthkit.md) | [Autopsy](fichas/autopsy.md) |
 | [Trivy](fichas/trivy.md) | [Grype](fichas/grype.md) |
 | [WebGoat](fichas/webgoat.md) | [OWASP Juice Shop](fichas/juice-shop.md) |
 | [ZAP (Zed Attack Proxy)](fichas/zaproxy.md) | [Caido](fichas/caido.md) |

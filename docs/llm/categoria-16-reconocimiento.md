@@ -1,6 +1,6 @@
 # Alexandría para agentes · Reconocimiento y superficie de ataque
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `reconocimiento`. 10 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `reconocimiento`. 9 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=reconocimiento · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,13 +18,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `httpx` | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 77 | MIT (OSI permisiva) | recomendado |
+| `httpx` | Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
 | `subfinder` | Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes… | 1 Básico | 77 | MIT (OSI permisiva) | sin grupo |
 | `amass` | Mapea la superficie de ataque externa: subdominios, ASNs, certificados y hosts… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `interactsh` | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con… | 2 Intermedio | 63 | MIT (OSI permisiva) | sin grupo |
-| `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
+| `naabu` | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con… | 1 Básico | 63 | MIT (OSI permisiva) | sin grupo |
 | `dnsx` | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
-| `noir` | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
 | `rustscan` | Escaneo de puertos ultrarrápido en Rust que encadena automáticamente a Nmap… | 1 Básico | 60 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `nmap` | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas… | 1 Básico | 59 | NPSL (no OSI) (OSI copyleft) | sin grupo |
 | `masscan` | Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso… | 2 Intermedio | 52 | AGPL-3.0 (OSI copyleft) | sin grupo |
@@ -35,14 +34,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### httpx (`httpx`)
 
-- **Repo:** https://github.com/projectdiscovery/httpx · MIT · nivel 1 · 77/100 · recomendado en «Sondeo y escaneo de reconocimiento»
+- **Repo:** https://github.com/projectdiscovery/httpx · MIT · nivel 1 · 77/100
 - **Qué es:** Toolkit HTTP multipropósito de ProjectDiscovery, pareja natural de Subfinder y Nuclei.
 - **Cuándo elegirlo:** Casos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest` — fuente: https://github.com/projectdiscovery/httpx/blob/dev/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest` y sonda un listado de hosts propios. Éxito: Obtienes líneas con código, título y URL final.
 - **Combina con:** `subfinder`, `nuclei` [16/pruebas], `amass`
-- **Alternativas:** `naabu`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### subfinder (`subfinder`)
@@ -80,14 +78,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Naabu (`naabu`)
 
-- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 63/100 · alternativa en «Sondeo y escaneo de reconocimiento»
+- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 63/100
 - **Qué es:** Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
 - **Cuándo elegirlo:** Casos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` — fuente: https://github.com/projectdiscovery/naabu/blob/dev/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio. Éxito: Obtienes puertos abiertos listos para Nmap o httpx.
 - **Combina con:** `nmap`, `amass`, `nuclei` [16/pruebas]
-- **Alternativas:** `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### dnsx (`dnsx`)
@@ -99,17 +96,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest` — fuente: https://github.com/projectdiscovery/dnsx/blob/dev/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest` y resuelve hosts de lab. Éxito: Obtienes registros DNS por host.
 - **Combina con:** `subfinder`, `httpx`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
-### OWASP Noir (`noir`)
-
-- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 61/100
-- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
-- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
-- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
-- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### RustScan (`rustscan`)

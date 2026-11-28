@@ -4,6 +4,12 @@
 
 > Añade guías oficiales de Android a Claude Code, Codex o Antigravity para revisar, compilar y probar aplicaciones Android.
 
+## Cuándo elegir esta ficha
+
+Quitar de la entrada genérica a diseño web y conservar con Android nativo. Retirarlo perdería guías oficiales para flujos Android. El bloque no contiene sustituto directo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/android/skills) · [Fuente 2](https://github.com/android/skills/commit/7f7b21730a605d112ca9f79b6e40105ce7b670ee)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 10.7k | Apache-2.0 | Kotlin | 2026-11-22 |

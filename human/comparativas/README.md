@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+60 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -126,10 +126,6 @@
 ## 🎨 Skills de diseño, contenido y especialidades
 
 - [Humanizer vs Stop Slop](humanizer-vs-stop-slop.md)
-
-## 🖼️ Visión artificial, rostros y percepción
-
-- [Deep-Live-Cam vs FaceFusion](deep-live-cam-vs-facefusion.md)
 
 ## 🎬 Audio, transcripción, voz y música
 

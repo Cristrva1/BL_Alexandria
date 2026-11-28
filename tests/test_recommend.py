@@ -120,6 +120,11 @@ def test_web_projects_start_with_the_pieces_the_first_version_needs(tmp_path: Pa
         ("Quiero hacer un panel web con login", "Next.js + Tailwind CSS + shadcn/ui", ["tailwindcss", "ui"]),
         ("Quiero crear una web app con chat con IA", "Next.js + AI SDK", ["vercel-ai"]),
         ("Quiero hacer una página web sin chat con IA", "HTML + CSS", []),
+        ("Quiero crear un sitio web corporativo con CMS y borradores", "Astro + Strapi 5", []),
+        ("Quiero un panel web para consultar métricas", "Metabase", ["metabase", "superset"]),
+        ("Quiero un panel web para editar registros", "ToolJet", ["tooljet", "appsmith"]),
+        ("Quiero una aplicación web con IA que genere cotizaciones", "Next.js + AI SDK con salida estructurada", ["vercel-ai"]),
+        ("Quiero una web con IA", "Next.js + AI SDK", ["vercel-ai"]),
     ]
     for query, stack, ids in scenarios:
         result = recommend(tmp_path, query, max_repos=7)

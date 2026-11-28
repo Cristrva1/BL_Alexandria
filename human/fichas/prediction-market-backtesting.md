@@ -4,9 +4,15 @@
 
 > Añade ejemplos y componentes de backtesting para analizar mercados de predicción con datos y estrategias históricas.
 
+## Cuándo elegir esta ficha
+
+Extensión en Python con componentes Rust 2024. El alcance de MIT y LGPL depende del archivo. Comprueba el formato de datos y los adaptadores de la versión que usarás.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/evan-kolberg/prediction-market-backtesting/blob/c76e77af00ef53472a9da8f66dae7fdd2d3e5928/Cargo.toml) · [Fuente 2](https://evan-kolberg.github.io/prediction-market-backtesting/license/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 1.3k | NOASSERTION | Python | 2026-11-22 |
+| 1.3k | MIT y LGPL-3.0-or-later según archivo | Python y Rust | 2026-11-22 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -25,12 +31,6 @@ Añade ejemplos y componentes de backtesting para analizar mercados de predicci�
 ## ¿Cómo lo hace?
 
 Convierte datos históricos en eventos que el simulador usa para evaluar una estrategia.
-
-## ¿Con qué otros repos se combina?
-
-| Repo | Para qué juntarlos | Orden de instalación y cuidados |
-|---|---|---|
-| [nautilus_trader](nautilus-trader.md) | Motor que ejecuta los ejemplos de simulación. | — |
 
 Estado en GitHub: activo · último push 2026-05-16 · licencia declarada NOASSERTION (consultado el 2026-11-22).
 

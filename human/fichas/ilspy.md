@@ -30,7 +30,7 @@ La interfaz de escritorio usa Avalonia y funciona en Windows, Linux y macOS; se 
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [dnSpy](dnspy.md) | dnSpyEx usa el motor de ILSpy y añade depuración y edición de ensamblados. | Decompila con ILSpy y pasa a dnSpyEx cuando necesites depurar o parchear. |
+| [dnSpyEx](dnspy.md) | dnSpyEx usa el motor de ILSpy y añade depuración y edición de ensamblados. | Decompila con ILSpy y pasa a dnSpyEx cuando necesites depurar o parchear. |
 | [Claude Code](claude-code.md) | Que un agente lea la salida de `ilspycmd` para entender una librería sin código fuente. (combinación por arquitectura) | Instala `ilspycmd` como herramienta dotnet y exporta el proyecto para el agente. |
 | [ImHex](imhex.md) | Inspeccionar recursos o formatos binarios incrustados. (combinación por arquitectura) | Extrae el recurso y ábrelo en ImHex. |
 

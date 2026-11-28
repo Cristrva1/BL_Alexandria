@@ -4,6 +4,12 @@
 
 > Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.
 
+## Cuándo elegir esta ficha
+
+Buscar y aplicar facetas es una etapa del flujo. Qdrant cubre recuperación vectorial con filtros; no se transfiere automáticamente el comportamiento de búsqueda textual.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/meilisearch/meilisearch/blob/9fb6a904009c42a950c911592d96b0689e6f0c0e/README.md) · [Fuente 2](https://api.github.com/repos/meilisearch/meilisearch) · [Fuente 3](https://github.com/meilisearch/meilisearch/commit/9fb6a904009c42a950c911592d96b0689e6f0c0e)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 59.9k | MIT | Rust | 2026-11-16 |

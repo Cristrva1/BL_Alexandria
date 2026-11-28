@@ -4,6 +4,14 @@
 
 > Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código.
 
+## Cuándo elegir esta ficha
+
+Mantener como lista de criterios visuales. Para instrucciones ligadas a un motor o un CLI, recomendar las skills oficiales del motor o FFmpeg según tarea.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Tejashmakwana/motionmaxxing/blob/8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c/README.md) · [Fuente 2](https://github.com/Tejashmakwana/motionmaxxing/commit/8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c) · [Fuente 3](https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 1.6k | Apache-2.0 | JavaScript | 2026-11-14 |

@@ -4,6 +4,14 @@
 
 > Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.
 
+## Cuándo elegir esta ficha
+
+El original 13B conserva checkpoint y ejemplos de investigación, con memoria mucho mayor para el flujo oficial. En nuevas pruebas priorizar 1.5 o Wan2.2 por la ruta concreta y licencia aplicable.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/4eda9cb44c3be82a6b9c4261897cb6bd3cfb084e/README.md) · [Fuente 2](https://github.com/Tencent-Hunyuan/HunyuanVideo/commit/4eda9cb44c3be82a6b9c4261897cb6bd3cfb084e) · [Fuente 3](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 12.8k | Tencent Hunyuan Community License | Python | 2026-11-10 |

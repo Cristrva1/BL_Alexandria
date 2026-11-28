@@ -4,6 +4,14 @@
 
 > Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.
 
+## Cuándo elegir esta ficha
+
+Dejar como referencia para reproducir recetas PyTorch existentes. El aviso del mantenedor pesa más que un commit aislado. PEFT cubre adaptadores y Axolotl recetas configurables. Se perderían configuraciones y conversiones del flujo torchtune para usuarios existentes si se retira.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/meta-pytorch/torchtune/adf8db3311f433ad0cf1cd4cf2792e9aa284ea52/README.md) · [Fuente 2](https://api.github.com/repos/meta-pytorch/torchtune) · [Fuente 3](https://github.com/meta-pytorch/torchtune/commit/adf8db3311f433ad0cf1cd4cf2792e9aa284ea52)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 5.8k | BSD-3-Clause | Python | 2026-11-16 |

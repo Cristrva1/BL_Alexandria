@@ -4,6 +4,14 @@
 
 > Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web.
 
+## Cuándo elegir esta ficha
+
+Ejemplo de una interfaz que opera por pantalla. Consulta los requisitos de su API y el alcance del acceso.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/google-gemini/computer-use-preview) · [Fuente 2](https://github.com/microsoft/playwright-mcp) · [Fuente 3](https://github.com/google-gemini/computer-use-preview/commit/77c9797e943aad63bbc963b7fd092a9e51c07863)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3.3k | Apache-2.0 | Python | 2026-08-23 |

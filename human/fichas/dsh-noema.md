@@ -4,6 +4,12 @@
 
 > Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración.
 
+## Cuándo elegir esta ficha
+
+Su utilidad tiene un anfitrión específico. Engram cubre recuperación genérica por MCP según cliente.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/ZSeven-W/dsh-noema/blob/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a/README.md) · [Fuente 2](https://api.github.com/repos/ZSeven-W/dsh-noema) · [Fuente 3](https://github.com/ZSeven-W/dsh-noema/commit/07d2fece531d11dbd5c420c5d44eaea12e6a9d7a)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 144 | MIT | TypeScript | 2026-11-14 |

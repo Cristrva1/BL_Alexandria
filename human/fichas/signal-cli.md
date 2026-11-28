@@ -4,6 +4,12 @@
 
 > Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal.
 
+## Cuándo elegir esta ficha
+
+Se perdería la interfaz Signal CLI/JSON-RPC y D-Bus, un canal diferente. Las pasarelas WhatsApp cubren WhatsApp y aquí no hay sustituto Signal.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/AsamK/signal-cli/blob/HEAD/README.md) · [Fuente 2](https://github.com/AsamK/signal-cli/commit/d6ee1a8d5572341be4583c1946f26a9f9c4d7659)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 5.1k | GPL-3.0 | Java | 2026-11-16 |

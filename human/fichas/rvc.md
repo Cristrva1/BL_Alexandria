@@ -4,6 +4,12 @@
 
 > Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales.
 
+## Cuándo elegir esta ficha
+
+Puede seguir al lado de TTS con etiqueta audio-audio. GPT-SoVITS es una ruta si se parte de texto; el sustituto es parcial y no preserva interpretación y temporización de una toma real.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/81eed5e8f68b6bed1789f682fe78cdd324495afc/README.md) · [Fuente 2](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/commit/81eed5e8f68b6bed1789f682fe78cdd324495afc) · [Fuente 3](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 39.3k | MIT | Python | 2026-11-10 |

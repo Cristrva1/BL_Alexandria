@@ -1,8 +1,14 @@
-[🏠 Inicio](../README.md) › [🔍 Analizar software y comprobar su seguridad](../categorias/16-analisis-de-software-y-seguridad.md) › Reconocimiento y superficie de ataque
+[🏠 Inicio](../README.md) › [🔍 Analizar software y comprobar su seguridad](../categorias/16-analisis-de-software-y-seguridad.md) › Protección y verificación de software
 
 # 🖥️ OWASP Noir
 
 > Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.
+
+## Cuándo elegir esta ficha
+
+Analiza de forma estática rutas y parámetros del código propio. Sirve para contrastar el inventario de una API.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/owasp-noir/noir/blob/6a8e52e301966f5b2784e5128f16ac2239a14e3a/README.md) · [Fuente 2](https://github.com/owasp-noir/noir/commit/6a8e52e301966f5b2784e5128f16ac2239a14e3a) · [Fuente 3](https://github.com/owasp-noir/noir/blob/1a83870b6b91a84386be73ccdeeac28707a65b6d/README.md)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|

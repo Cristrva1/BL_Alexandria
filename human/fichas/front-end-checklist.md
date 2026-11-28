@@ -4,6 +4,14 @@
 
 > Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.
 
+## Cuándo elegir esta ficha
+
+Conservar como lista consultable por humanos. Si se oculta se pierde el índice transversal de criterios, útil sin instalar agente. Impeccable cubre parte de la revisión e información de interoperabilidad se puede consultar en Modern Web Guidance.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/thedaviddias/Front-End-Checklist) · [Fuente 2](https://github.com/pbakaus/impeccable) · [Fuente 3](https://developer.chrome.com/docs/modern-web-guidance)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 74.7k | MIT | MDX | 2026-11-14 |

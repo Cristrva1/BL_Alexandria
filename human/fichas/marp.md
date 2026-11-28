@@ -4,6 +4,12 @@
 
 > Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado.
 
+## Cuándo elegir esta ficha
+
+El repo funciona como puerta a los paquetes. Slidev sustituye parte de la autoría Markdown, con sintaxis y exportación diferentes.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/marp-team/marp/blob/95263d5a0df563633ef6611c986b34b55f936eaa/README.md) · [Fuente 2](https://api.github.com/repos/marp-team/marp) · [Fuente 3](https://github.com/marp-team/marp/commit/95263d5a0df563633ef6611c986b34b55f936eaa)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 12.7k | MIT | TypeScript | 2026-11-10 |

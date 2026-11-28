@@ -4,6 +4,12 @@
 
 > Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.
 
+## Cuándo elegir esta ficha
+
+Conservar como cliente para modelos de trabajo con varios agentes según releases. Retirarlo pierde ese acceso desde distintos dispositivos. OpenCode Manager cubre la operación de sesiones del ecosistema OpenCode, con condiciones de cliente y autenticación distintas.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/pingdotgg/t3code) · [Fuente 2](https://github.com/chriswritescode-dev/opencode-manager) · [Fuente 3](https://github.com/pingdotgg/t3code/commit/685b40de126f3c1ef4d12a03cf3720b9007538ff)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 60.6k | MIT | TypeScript | 2026-08-23 |

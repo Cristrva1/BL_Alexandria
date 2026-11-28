@@ -4,6 +4,12 @@
 
 > Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.
 
+## Cuándo elegir esta ficha
+
+Mantener la decisión de PR 118. Retirarlo quita Bento Grid, Hero Video Dialog y el registro MIT de secciones. React Bits sustituye el efecto elegido, con otra licencia y cláusula sobre redistribución separada. Los productos Pro tienen términos separados.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://magicui.design/docs/components/bento-grid) · [Fuente 2](https://magicui.design/docs/components/hero-video-dialog) · [Fuente 3](https://raw.githubusercontent.com/DavidHDev/react-bits/a30a9da9b40a91c5672fc8cd77785719e8e5b1e6/LICENSE.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 23.3k | MIT | MDX | 2026-06-23 |
@@ -48,7 +54,7 @@ Grupo **Componentes animados para React**: magicui ocupa la posición 2 de 2 (al
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [React Bits](react-bits.md) ⭐ recomendado | 59 | Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas. |
+| 1 | [React Bits](react-bits.md) ⭐ recomendado | 59 | Si buscas esto: efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. |
 | 2 | **magicui** (esta ficha) | 53 | Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video. |
 
 ## Acceso, coste y equipo

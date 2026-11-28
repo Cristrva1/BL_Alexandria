@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 1 de 3)
 
-Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (141 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -172,7 +172,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `x64dbg`, `imhex` [16/reversing], `semgrep` [16/defensa]
 - **Riesgos y avisos:** Sin alternativas declaradas. Software en alfa: reporta los fallos con volcados. Está en alpha; Windows y Linux no tienen la misma madurez; la guía de uso viene con la release o build.
 
-### dnSpy (`dnspy`)
+### dnSpyEx (`dnspy`)
 
 - **Repo:** https://github.com/dnSpyEx/dnSpy · GPL-3.0 · nivel 3 · 51/100
 - **Qué es:** dnSpyEx, continuación no oficial del proyecto dnSpy (archivado): depurador y editor de ensamblados .NET. Licencia GPL-3.0. Es activo (~11k estrellas, v6.6.0).
@@ -511,14 +511,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### httpx (`httpx`)
 
-- **Repo:** https://github.com/projectdiscovery/httpx · MIT · nivel 1 · 77/100 · recomendado en «Sondeo y escaneo de reconocimiento»
+- **Repo:** https://github.com/projectdiscovery/httpx · MIT · nivel 1 · 77/100
 - **Qué es:** Toolkit HTTP multipropósito de ProjectDiscovery, pareja natural de Subfinder y Nuclei.
 - **Cuándo elegirlo:** Casos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest` — fuente: https://github.com/projectdiscovery/httpx/blob/dev/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest` y sonda un listado de hosts propios. Éxito: Obtienes líneas con código, título y URL final.
 - **Combina con:** `subfinder`, `nuclei` [16/pruebas], `amass`
-- **Alternativas:** `naabu`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### subfinder (`subfinder`)
@@ -556,14 +555,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Naabu (`naabu`)
 
-- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 63/100 · alternativa en «Sondeo y escaneo de reconocimiento»
+- **Repo:** https://github.com/projectdiscovery/naabu · MIT · nivel 1 · 63/100
 - **Qué es:** Escáner de puertos del ecosistema ProjectDiscovery, complemento de Nmap y Nuclei.
 - **Cuándo elegirlo:** Casos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` — fuente: https://github.com/projectdiscovery/naabu/blob/dev/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest` y escanea un host de laboratorio. Éxito: Obtienes puertos abiertos listos para Nmap o httpx.
 - **Combina con:** `nmap`, `amass`, `nuclei` [16/pruebas]
-- **Alternativas:** `httpx`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### dnsx (`dnsx`)
@@ -575,17 +573,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Instalación (documentada en la fuente; no ejecutada):** `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest` — fuente: https://github.com/projectdiscovery/dnsx/blob/dev/README.md
 - **Primera prueba propuesta (no ejecutada):** Instala con `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest` y resuelve hosts de lab. Éxito: Obtienes registros DNS por host.
 - **Combina con:** `subfinder`, `httpx`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
-### OWASP Noir (`noir`)
-
-- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 61/100
-- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
-- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
-- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
-- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
 ### RustScan (`rustscan`)
@@ -609,6 +596,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`. Éxito: Obtienes la lista de puertos abiertos y los servicios detectados.
 - **Combina con:** `metasploit` [16/explotacion-c2], `nuclei` [16/pruebas], `wireshark` [16/pruebas]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
+
+### masscan (`masscan`)
+
+- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 52/100
+- **Qué es:** Port scanner asíncrono de Robert David Graham.
+- **Cuándo elegirlo:** Casos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio.
+- **Requisitos:** nivel 2: preparación media; C, Makefile; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/robertdavidgraham/masscan/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Compila con `make` tras clonar o usa el paquete, y escanea solo un rango de laboratorio. Éxito: Obtienes puertos abiertos a alta velocidad.
+- **Combina con:** `nmap`, `rustscan`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

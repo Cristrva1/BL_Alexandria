@@ -193,7 +193,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Codex o Claude Code; Three.js o Blender según ruta; brief y escena pequeña; hardware prerequisites; API de IA: no; Codex o Claude Code; Three.js o Blender según ruta; brief y escena pequeña.
 - **Instalación (documentada en la fuente; no ejecutada):** `/plugin marketplace add viettranx/3dviz-pro-max` — fuente: https://github.com/viettranx/3dviz-pro-max/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Elige una receta sencilla y compara el render con un criterio de composición explícito Éxito: Puedes inspeccionar escena y resultados del ejemplo
-- **Combina con:** `three.js` [26/animacion], `claude-code` [20/terminal], `codex` [20/terminal], `blender` [26/creacion-3d], `globalbuildingatlas` [25/datos]
+- **Combina con:** `three.js` [26/animacion], `claude-code` [20/terminal], `codex` [20/terminal], `blender` [26/creacion-3d], `globalbuildingatlas` [10/geoespacial]
 - **Alternativas:** `threejs-skills`
 - **Riesgos y avisos:** Alternativa (elige una): threejs-skills. El video de cabecera es material previo del autor, no una demo de la skill (lo aclara el README). El autor separa demostraciones históricas, validación de plugins y pruebas de ejecución; no se debe atribuir todo video promocional a una prueba de la skill.
 

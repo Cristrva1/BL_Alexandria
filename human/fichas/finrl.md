@@ -4,6 +4,14 @@
 
 > Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones.
 
+## Cuándo elegir esta ficha
+
+FinRL mantiene el pipeline clásico y sus tutoriales de aprendizaje por refuerzo. FinRL-X, publicado en FinRL-Trading y fuera del bloque, es la ruta moderna según el autor con contratos diferentes. Cambiar el ID perdería referencias a benchmarks y código clásico.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/AI4Finance-Foundation/FinRL/blob/HEAD/README.md) · [Fuente 2](https://github.com/AI4Finance-Foundation/FinRL-Trading) · [Fuente 3](https://github.com/AI4Finance-Foundation/FinRL/commit/d08e638dc7cafd374a631d48573ad354b37687ad)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 17.1k | MIT | Jupyter Notebook | 2026-11-14 |

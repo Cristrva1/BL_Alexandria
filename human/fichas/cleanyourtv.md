@@ -4,6 +4,12 @@
 
 > Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB.
 
+## Cuándo elegir esta ficha
+
+La etapa de revisión de apps ADB se solapa. Conservar el perfil TV mientras sus listas y flujo cubran dispositivos específicos.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Gathin23/cleanyourtv/blob/be6087056a1c7d4f08f3f1cc778d92374d86ef27/README.md) · [Fuente 2](https://api.github.com/repos/Gathin23/cleanyourtv) · [Fuente 3](https://github.com/Gathin23/cleanyourtv/commit/be6087056a1c7d4f08f3f1cc778d92374d86ef27)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 57.9k | MIT | Python | 2026-11-14 |

@@ -4,6 +4,14 @@
 
 > Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión.
 
+## Cuándo elegir esta ficha
+
+Mantener como herramienta de redacción y revisión CMS de una pieza de señalización. Su último commit ayuda a poner contexto, pero la decisión se apoya en el destino específico y sus conectores.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/schibsted/videofy_minimal/blob/5652e70981b1f45df43d7e6c6f38793ed3a947ad/README.md) · [Fuente 2](https://github.com/schibsted/videofy_minimal/commit/5652e70981b1f45df43d7e6c6f38793ed3a947ad) · [Fuente 3](https://github.com/schibsted/videofy_minimal/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 656 | Apache-2.0 | TypeScript | 2026-06-23 |
