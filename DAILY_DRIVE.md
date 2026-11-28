@@ -4,16 +4,16 @@ Codex revisa a diario a las 08:00, hora de Ciudad de México, la carpeta de recu
 
 ## Cómo está organizada la biblioteca
 
-La carpeta usa la estructura v2 desde el 27 de noviembre de 2026. El contrato entre Grok Bot (guardados de X, 21:00), Muse AI (Instagram y Facebook, 23:00) y Codex (08:00) está en [`curation/drive/PROTOCOLO.md`](curation/drive/PROTOCOLO.md). En Drive se publica como `Biblioteca_v2/00_LEEME_PROTOCOLO.md`. Las instrucciones que se pegan en cada agente están en [`curation/drive/PROMPTS_AGENTES.md`](curation/drive/PROMPTS_AGENTES.md).
+La carpeta usa la estructura v2 desde el 28 de noviembre de 2026; la v1 se eliminó después de migrar sus 809 fichas. El contrato entre Grok Bot (guardados de X, 21:00), Muse AI (Instagram y Facebook, 23:00) y Codex (08:00) está en [`curation/drive/PROTOCOLO.md`](curation/drive/PROTOCOLO.md). En Drive se publica como `00_LEEME_PROTOCOLO.md`, en la raíz de la carpeta de la biblioteca. Las instrucciones que se pegan en cada agente están en [`curation/drive/PROMPTS_AGENTES.md`](curation/drive/PROMPTS_AGENTES.md).
 
 - Cada ficha tiene un ID estable derivado de su URL (`X-…`, `IG-…`, `FB-…`, `MSG-…`) y un bloque `ficha` con metadatos fijos.
 - Grok y Muse dejan un archivo por corrida en `90_Corridas/<agente>/AAAA-MM-DD.md`, con una fila por guardado: `nueva`, `fusion`, `pendiente_contenido`, `duplicado`, `omitida`, etc.
-- La v1 (los 23 archivos sueltos de la raíz) está congelada y no se vuelve a inventariar.
+- La v1 (los 23 archivos sueltos) ya no existe. Las entradas `files` antiguas del registro privado apuntan a archivos borrados y no se vuelven a buscar.
 
 ## Inventario y decisiones
 
 1. Actualiza `origin/main` y comprueba si hay una publicación incompleta antes de empezar otro lote. Usa un worktree limpio si el checkout principal contiene trabajo en curso.
-2. Lista `Biblioteca_v2/90_Corridas/grok/` y `…/muse/`. Procesa solo las corridas con `estado: terminada` posteriores a la última revisión registrada. Una corrida en `en_curso` espera a la mañana siguiente.
+2. Lista `90_Corridas/grok/` y `90_Corridas/muse/` en la raíz de la biblioteca. Procesa solo las corridas con `estado: terminada` posteriores a la última revisión registrada. Una corrida en `en_curso` espera a la mañana siguiente.
 3. Descarga los archivos de subcategoría que aparecen en las filas `nueva` y `fusion`, conservando sus rutas, y valídalos:
    `uv run python scripts/validar_biblioteca_drive.py <copia_local> --corridas-desde AAAA-MM-DD --terminos-privados data/reviews/drive/terminos_privados.txt`
    - Revisa solo las fichas que el validador lista como «a revisar».

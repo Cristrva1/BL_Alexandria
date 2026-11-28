@@ -1,7 +1,7 @@
 """Valida una copia local de la biblioteca de Drive (v2) contra `curation/drive/PROTOCOLO.md`.
 
 Uso:
-    uv run python scripts/validar_biblioteca_drive.py <carpeta_Biblioteca_v2>
+    uv run python scripts/validar_biblioteca_drive.py <copia_local_de_la_biblioteca>
         [--corridas-desde AAAA-MM-DD] [--terminos-privados archivo.txt] [--json informe.json]
 
 Sale con código 1 si hay errores. Los avisos no bloquean.
