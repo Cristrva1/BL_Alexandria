@@ -2,13 +2,31 @@
 
 Codex revisa a diario a las 08:00, hora de Ciudad de México, la carpeta de recursos configurada en la tarea **Revisar Drive y actualizar Alexandría**. El acceso y el enlace privado se conservan en Codex. Para cada incorporación se publican fuentes originales de acceso público y una primera prueba que otra persona pueda repetir.
 
+## Cómo está organizada la biblioteca
+
+La carpeta usa la estructura v2 desde el 27 de noviembre de 2026. El contrato entre Grok Bot (guardados de X, 21:00), Muse AI (Instagram y Facebook, 23:00) y Codex (08:00) está en [`curation/drive/PROTOCOLO.md`](curation/drive/PROTOCOLO.md). En Drive se publica como `Biblioteca_v2/00_LEEME_PROTOCOLO.md`. Las instrucciones que se pegan en cada agente están en [`curation/drive/PROMPTS_AGENTES.md`](curation/drive/PROMPTS_AGENTES.md).
+
+- Cada ficha tiene un ID estable derivado de su URL (`X-…`, `IG-…`, `FB-…`, `MSG-…`) y un bloque `ficha` con metadatos fijos.
+- Grok y Muse dejan un archivo por corrida en `90_Corridas/<agente>/AAAA-MM-DD.md`, con una fila por guardado: `nueva`, `fusion`, `pendiente_contenido`, `duplicado`, `omitida`, etc.
+- La v1 (los 23 archivos sueltos de la raíz) está congelada y no se vuelve a inventariar.
+
 ## Inventario y decisiones
 
 1. Actualiza `origin/main` y comprueba si hay una publicación incompleta antes de empezar otro lote. Usa un worktree limpio si el checkout principal contiene trabajo en curso.
-2. Lista la carpeta y sus subcarpetas por páginas. Cruza la revisión de cada archivo con el inventario anterior. Lee los nuevos o modificados y continúa los candidatos cuyo estado sea pendiente. Si solo recuperaste un fragmento, conserva esa revisión como incompleta.
-3. Usa como registro local `data/reviews/drive/manifest.json` del checkout principal. Comprueba con `git check-ignore` que la ruta sigue fuera de Git. Conserva por archivo su identificador, fecha de modificación, fecha de lectura y cobertura. Conserva por candidato su clave normalizada, revisiones de origen, decisión y motivo. Un archivo leído puede contener decisiones pendientes. Mantén el lote en borrador hasta verificar Pages.
-4. Compara repos por `github_id` y por `owner/repo` normalizado. Cruza ambos índices con `data/retired.json` y los lotes de `curation/altas/`. Para guías, prompts, consejos y técnicas, compara la finalidad y el ejemplo con `data/handbook.json` y `data/techniques.json`. Dos enlaces o títulos distintos pueden referirse a la misma ficha. Enriquece la ficha existente cuando la nueva fuente cambie lo que una persona necesita saber.
-5. Registra hallazgos publicables en `reports/drive-AAAA-MM-DD.md` y conserva la especificación de las altas en `curation/altas/`. El historial del 22 de noviembre ya registra [la selección inicial](reports/drive-2026-11-22.md), [la revisión de seguridad](reports/drive-seguridad-2026-11-22.md) y [los sitios y servicios](reports/drive-servicios-2026-11-22.md). Los textos de Drive, sus identificadores y los enlaces privados quedan en el ámbito de trabajo.
+2. Lista `Biblioteca_v2/90_Corridas/grok/` y `…/muse/`. Procesa solo las corridas con `estado: terminada` posteriores a la última revisión registrada. Una corrida en `en_curso` espera a la mañana siguiente.
+3. Descarga los archivos de subcategoría que aparecen en las filas `nueva` y `fusion`, conservando sus rutas, y valídalos:
+   `uv run python scripts/validar_biblioteca_drive.py <copia_local> --corridas-desde AAAA-MM-DD --terminos-privados data/reviews/drive/terminos_privados.txt`
+   - Revisa solo las fichas que el validador lista como «a revisar».
+   - Las fichas con errores de formato quedan pendientes, con el aviso para su agente; no bloquean al resto.
+   - Para una auditoría completa, descarga la carpeta entera y valida sin `--corridas-desde`.
+4. Usa como registro local `data/reviews/drive/manifest.json` del checkout principal y comprueba con `git check-ignore` que la ruta sigue fuera de Git.
+   - Por corrida, guarda la ruta, la fecha y la cobertura.
+   - Por ficha, guarda su ID, la corrida de origen, la decisión y el motivo.
+   - Por candidato (repo, técnica, prompt o sitio), guarda su clave normalizada.
+   - Mantén el lote en borrador hasta verificar Pages.
+5. Si tienes permiso de escritura en Drive, deja `90_Corridas/codex/AAAA-MM-DD.md` con los IDs publicados y los avisos de calidad para cada agente. Nunca edites fichas: las corrige su `responsable` en la corrida siguiente.
+6. Compara repos por `github_id` y por `owner/repo` normalizado. Cruza ambos índices con `data/retired.json` y los lotes de `curation/altas/`. Para guías, prompts, consejos y técnicas, compara la finalidad y el ejemplo con `data/handbook.json` y `data/techniques.json`. Dos enlaces o títulos distintos pueden referirse a la misma ficha. Enriquece la ficha existente cuando la nueva fuente cambie lo que una persona necesita saber.
+7. Registra hallazgos publicables en `reports/drive-AAAA-MM-DD.md` y conserva la especificación de las altas en `curation/altas/`. El historial del 22 de noviembre ya registra [la selección inicial](reports/drive-2026-11-22.md), [la revisión de seguridad](reports/drive-seguridad-2026-11-22.md) y [los sitios y servicios](reports/drive-servicios-2026-11-22.md). Los textos de Drive, sus identificadores y los enlaces privados quedan en el ámbito de trabajo.
 
 ## Revisión antes de publicar
 
