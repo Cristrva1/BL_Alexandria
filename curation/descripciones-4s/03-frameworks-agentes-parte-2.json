@@ -189,7 +189,9 @@
    "fuentes": [
     "https://github.com/simstudioai/sim/blob/main/README.md",
     "https://docs.sim.ai/mcp/overview",
-    "https://docs.sim.ai/self-hosting/docker"
+    "https://docs.sim.ai/self-hosting/docker",
+    "https://docs.sim.ai/desktop",
+    "https://docs.sim.ai/platform/self-hosting/desktop"
    ],
    "github": {
     "name_with_owner": "simstudioai/sim",

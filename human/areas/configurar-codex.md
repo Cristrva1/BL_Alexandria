@@ -4,7 +4,7 @@
 
 Prepara el cliente de Codex y reúne skills, contexto y conexiones que tienen compatibilidad documentada.
 
-214 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-codex).
+213 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-codex).
 
 ## Primera configuración, paso a paso
 
@@ -39,7 +39,7 @@ Cliente oficial y formas de empezar con un proyecto.
 
 Instrucciones y plugins documentados para Codex.
 
-[Explorar 85 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-skills)
+[Explorar 84 repos](../../docs/index.html#/explorar?area=configurar-codex&topic=codex-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -70,7 +70,6 @@ Instrucciones y plugins documentados para Codex.
 | [elephant-goldfish-model](../fichas/elephant-goldfish-model.md) | Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias. | Sin clave propia de API de IA en la ruta básica |
 | [floorplan](../fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Sin clave propia de API de IA en la ruta básica |
 | [gemini-skills](../fichas/gemini-skills.md) | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. | Sin clave propia de API de IA en la ruta básica |
-| [GitNexus](../fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica |
 | [Gradio](../fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | API de IA opcional |
 | [graphify](../fichas/graphify.md) | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. | API de IA opcional |
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin clave propia de API de IA en la ruta básica |
@@ -200,7 +199,7 @@ Conectar documentación, GitHub y navegación al agente.
 | [Puppeteer](../fichas/puppeteer.md) | Librería de Google para controlar Chrome y Firefox desde Node.js. | Sin clave propia de API de IA en la ruta básica |
 | [Pythia](../fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Sin clave propia de API de IA en la ruta básica |
 | [rea](../fichas/rea.md) | Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de código. | Sin clave propia de API de IA en la ruta básica |
-| [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica |
+| [React Bits](../fichas/react-bits.md) | Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. | Sin clave propia de API de IA en la ruta básica |
 | [Repomix](../fichas/repomix.md) | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. | Sin clave propia de API de IA en la ruta básica |
 | [ruflo](../fichas/ruflo.md) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | API de IA opcional |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Sin clave propia de API de IA en la ruta básica |
@@ -386,7 +385,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [gemini-skills](https://github.com/google-gemini/gemini-skills/blob/main/README.md), revisado el 2026-11-15.
 - [GhidraMCP](https://github.com/LaurieWired/GhidraMCP/blob/main/README.md), revisado el 2026-11-15.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server/blob/main/README.md), revisado el 2026-11-15.
-- [GitNexus](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md), revisado el 2026-11-15.
 - [gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md), revisado el 2026-11-15.
 - [skills](https://github.com/google/skills/blob/main/README.md), revisado el 2026-11-15.
 - [goose](https://github.com/aaif-goose/goose/blob/main/README.md), revisado el 2026-11-15.

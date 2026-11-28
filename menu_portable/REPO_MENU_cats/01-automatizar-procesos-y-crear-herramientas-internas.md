@@ -87,7 +87,7 @@ helm install appsmith appsmith/appsmith -n appsmith --wait --timeout 10m --set m
 
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API
+**Elige si:** Necesitas un panel interno sobre APIs o bases de datos, con lógica JavaScript, widgets propios o versionado con Git en el plan Free.
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Añade una tabla a una página y asóciala a una consulta de datos ficticios
 **Qué comprobar:** La tabla se actualiza al ejecutar la consulta y muestra los registros esperados

@@ -768,7 +768,6 @@
     "antigravity-awesome-skills",
     "awesome-agent-skills",
     "awesome-claude-code",
-    "awesome-claude-skills",
     "claude-plugins-official",
     "wshobson-agents"
    ],
@@ -810,17 +809,8 @@
      "caso_unico": false
     },
     {
-     "id": "awesome-claude-skills",
-     "posicion": 5,
-     "puntuacion": 48.2,
-     "papel": "alternativa",
-     "cuando": "Si buscas skills para Claude ordenadas por tema.",
-     "cuando_origen": "curado",
-     "caso_unico": false
-    },
-    {
      "id": "awesome-claude-code",
-     "posicion": 6,
+     "posicion": 5,
      "puntuacion": 48.0,
      "papel": "alternativa",
      "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos.",
@@ -833,7 +823,6 @@
     "claude-plugins-official",
     "awesome-agent-skills",
     "wshobson-agents",
-    "awesome-claude-skills",
     "awesome-claude-code"
    ]
   },
@@ -924,7 +913,6 @@
     "agent-skills",
     "ecc",
     "gstack",
-    "superclaude-framework",
     "superpowers"
    ],
    "ranking": [
@@ -963,23 +951,13 @@
      "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada.",
      "cuando_origen": "curado",
      "caso_unico": false
-    },
-    {
-     "id": "superclaude-framework",
-     "posicion": 5,
-     "puntuacion": 49.0,
-     "papel": "alternativa",
-     "cuando": "Si quieres comandos y personas para Claude Code organizados por fase.",
-     "cuando_origen": "curado",
-     "caso_unico": false
     }
    ],
    "recomendado": "ecc",
    "alternativas": [
     "gstack",
     "agent-skills",
-    "superpowers",
-    "superclaude-framework"
+    "superpowers"
    ]
   },
   {
@@ -1057,7 +1035,6 @@
    "miembros": [
     "codebase-memory-mcp",
     "codegraph",
-    "gitnexus",
     "graphify",
     "repomix"
    ],
@@ -1097,23 +1074,13 @@
      "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo.",
      "cuando_origen": "curado",
      "caso_unico": true
-    },
-    {
-     "id": "gitnexus",
-     "posicion": 5,
-     "puntuacion": 50.8,
-     "papel": "alternativa",
-     "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP.",
-     "cuando_origen": "curado",
-     "caso_unico": false
     }
    ],
    "recomendado": "graphify",
    "alternativas": [
     "codegraph",
     "codebase-memory-mcp",
-    "repomix",
-    "gitnexus"
+    "repomix"
    ]
   },
   {
@@ -5230,7 +5197,7 @@
      "posicion": 2,
      "puntuacion": 53.1,
      "papel": "alternativa",
-     "cuando": "Si buscas esto: librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.",
+     "cuando": "Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.",
      "cuando_origen": "plantilla",
      "caso_unico": false
     }

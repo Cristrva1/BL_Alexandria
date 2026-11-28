@@ -160,7 +160,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El destino contiene la skill seleccionada y puedes revisar los archivos añadidos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `codex`, `claude-code`, `cli`, `skillspector`, `antigravity-cli`
-**Alternativas (elige una):** `awesome-agent-skills`, `awesome-claude-skills`, `wshobson-agents`
+**Alternativas (elige una):** `awesome-agent-skills`, `wshobson-agents`
 
 ## `autoskills`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=catalogos,ruby
@@ -221,7 +221,7 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Puedes distinguir su autor, archivos y destino compatible
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `gemini-cli`, `skillspector`, `awesome-agents`
-**Alternativas (elige una):** `antigravity-awesome-skills`, `awesome-claude-skills`
+**Alternativas (elige una):** `antigravity-awesome-skills`
 
 ## `awesome-agents`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=catalogos
@@ -282,7 +282,6 @@ _Una referencia no se instala como un servicio único._
 **Qué comprobar:** Identificas su función, mantenimiento y requisitos antes de instalarlo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `claude-plugins-official`, `skillspector`
-**Alternativas (elige una):** `awesome-claude-skills`
 
 ## `awesome-claude-code-subagents`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
@@ -316,7 +315,7 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 ## `awesome-claude-skills`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=skills,automation,coding-agent
 
-**Qué es:** Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.
+**Qué es:** Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio.
 **Stack:** Navegador;  agente compatible solo al utilizar una skill seleccionada
 **Acceso y costes:**
 - API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el listado no exige LLM; usar skills consume el agente y el plugin Composio añade su cuenta y condiciones
@@ -336,13 +335,12 @@ Consultar el material original; elegir un ejemplo antes de instalar.
 
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas
+**Elige si:** Ya usas Composio y buscas una guía concreta para trabajar con un servicio como Calendar o Zoho Books.
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Elige una skill del listado y abre su archivo o repositorio de origen
 **Qué comprobar:** Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `composio`, `claude-code`, `skillspector`
-**Alternativas (elige una):** `awesome-agent-skills`, `antigravity-awesome-skills`, `awesome-claude-code`
 
 ## `awesome-copilot`
 role=skill · exec=cloud · setup=easy · mcp=True · prov=— · tags=skills,coding-agent,prompts,mcp
@@ -619,7 +617,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El informe muestra los componentes y archivos preparados para el cliente elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`, `gemini-cli`, `claude-code-hooks-mastery`, `hermes-agent`
-**Alternativas (elige una):** `superclaude-framework`, `superpowers`, `gstack`
+**Alternativas (elige una):** `superpowers`, `gstack`
 
 ## `elephant-goldfish-model`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=metodologia,skill,python
@@ -778,7 +776,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El estado indica el host y puedes revisar el resultado de la skill elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`
-**Alternativas (elige una):** `superclaude-framework`, `superpowers`, `ecc`
+**Alternativas (elige una):** `superpowers`, `ecc`
 
 ## `humans-md-plugins`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -961,41 +959,6 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `gemini-cli`, `awesome-copilot`, `elephant-goldfish-model`
 **Alternativas (elige una):** `bmad-method`, `claude-task-master`
 
-## `superclaude-framework`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,python · tools=claude-code
-
-**Qué es:** Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.
-**Stack:** Claude Code;  Python y pipx según la guía;  copia de configuración revisable
-**Acceso y costes:**
-- API de IA: Sin clave propia de API de IA en la ruta básica. El núcleo usa tu acceso a Claude; servidores opcionales como Tavily y otras integraciones pueden cobrar aparte
-- Claude Code: Dentro del agente: skills o instrucciones
-- Codex: Integración no documentada
-- Antigravity: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos
-- Coste: El coste depende del proveedor o la ruta. El núcleo usa tu acceso a Claude; servidores opcionales como Tavily y otras integraciones pueden cobrar aparte
-- Equipo: Preparación según la ruta elegida. Claude Code;  Python y pipx según la guía;  copia de configuración revisable
-**Repo:** https://github.com/SuperClaude-Org/SuperClaude_Framework
-
-**Instalación** [+]:
-
-```
-# Install from PyPI
-pipx install superclaude
-
-# Install commands (installs all 30 slash commands)
-superclaude install
-```
-
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes
-**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Instala la configuración básica y consulta la lista de comandos antes de añadir MCP opcionales
-**Qué comprobar:** Puedes identificar qué comandos se incorporaron y ejecutar el diagnóstico del proyecto
-Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `context7`, `serena`
-**Alternativas (elige una):** `superpowers`, `ecc`, `gstack`
-
 ## `superpowers`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
 
@@ -1025,7 +988,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** El agente muestra una propuesta acotada antes de cambiar archivos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-plugins-official`, `codex`, `gemini-cli`, `hermes-agent`, `claude-code`
-**Alternativas (elige una):** `agent-skills`, `superclaude-framework`, `ecc`, `gstack`
+**Alternativas (elige una):** `agent-skills`, `ecc`, `gstack`
 
 ## `wshobson-agents`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,coding-agent,agents,python

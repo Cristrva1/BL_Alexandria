@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-102 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+100 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -75,7 +75,7 @@ Ejemplos de machine learning y entrenamiento desde cero.
 
 Explorar instrucciones generales y formas de trabajar con agentes.
 
-[Explorar 34 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-metodos)
+[Explorar 32 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-metodos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -88,7 +88,6 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 | [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Claude Code](../fichas/awesome-claude-code.md) | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Claude Code Subagents](../fichas/awesome-claude-code-subagents.md) | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto. | Sin clave propia de API de IA en la ruta básica |
-| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome GitHub Copilot](../fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | Sin clave propia de API de IA en la ruta básica |
 | [awesome-agents](../fichas/awesome-agents.md) | Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. | Sin clave propia de API de IA en la ruta básica |
 | [BMAD Method](../fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Sin clave propia de API de IA en la ruta básica |
@@ -110,7 +109,6 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 | [skills](../fichas/google-skills.md) | Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/skills.md) | Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plugins para Claude Code y Codex. | Sin clave propia de API de IA en la ruta básica |
 | [Spec Kit](../fichas/spec-kit.md) | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. | Sin clave propia de API de IA en la ruta básica |
-| [SuperClaude_Framework](../fichas/superclaude-framework.md) | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. | Sin clave propia de API de IA en la ruta básica |
 | [superpowers](../fichas/superpowers.md) | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. | Sin clave propia de API de IA en la ruta básica |
 | [wshobson/agents](../fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Sin clave propia de API de IA en la ruta básica |
 

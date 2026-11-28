@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 GROUPS = [
     ["humanizer", "stop-slop"],
     ["ui-ux-pro-max-skill", "taste-skill", "impeccable", "hallmark"],
-    ["superclaude-framework", "superpowers", "ecc", "gstack"],
+    ["superpowers", "ecc", "gstack"],
 ]
 
 

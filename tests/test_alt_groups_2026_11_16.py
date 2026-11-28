@@ -3,7 +3,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-GROUPS = [["codegraph", "gitnexus", "serena", "codebase-memory-mcp", "graphify"], ["omniroute", "claude-code-router", "litellm"], ["osiris", "gods-eye-view"], ["crewai", "langgraph", "agno"], ["qdrant", "pgvector", "milvus"], ["shannon", "strix"], ["mimo-code", "opencode"], ["t3code", "opencode-manager"], ["paperclip", "multica"], ["local-deep-research", "gpt-researcher"], ["coolify", "casaos"], ["moneyprinterturbo", "short-video-factory"], ["claude-task-master", "spec-kit"], ["dograh", "pipecat", "livekit-agents"], ["pytorch", "tensorflow"], ["archify", "diagram-design"], ["openmontage", "remotion-superpowers"], ["browser-harness", "browser-use"]]
+# GitNexus pasó a referencia especializada en la revisión del 2026-11-27.
+GROUPS = [["codegraph", "serena", "codebase-memory-mcp", "graphify"], ["omniroute", "claude-code-router", "litellm"], ["osiris", "gods-eye-view"], ["crewai", "langgraph", "agno"], ["qdrant", "pgvector", "milvus"], ["shannon", "strix"], ["mimo-code", "opencode"], ["t3code", "opencode-manager"], ["paperclip", "multica"], ["local-deep-research", "gpt-researcher"], ["coolify", "casaos"], ["moneyprinterturbo", "short-video-factory"], ["claude-task-master", "spec-kit"], ["dograh", "pipecat", "livekit-agents"], ["pytorch", "tensorflow"], ["archify", "diagram-design"], ["openmontage", "remotion-superpowers"], ["browser-harness", "browser-use"]]
 
 
 def test_alt_groups_are_symmetric_and_have_no_internal_combinations():

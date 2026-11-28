@@ -24,7 +24,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7
 | `codebase-memory-mcp` | Motor local de inteligencia de código que conecta código, docs e… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
 | `floorplan` | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
 | `repomix` | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. | 1 Básico | 53 | MIT (OSI permisiva) | alternativa |
-| `gitnexus` | Herramienta visual para explorar y entender repositorios Git, mostrando… | 1 Básico | 51 | PolyForm-Noncommercial-1.0.0 (source-available) | alternativa |
+| `gitnexus` | Explora flujos de ejecución y previsualiza renombrados semánticos con el índice… | 1 Básico | 51 | PolyForm-Noncommercial-1.0.0 (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -44,8 +44,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Indexa primero solo código y consulta qué funciones dependen de un módulo Éxito: Cada relación se puede contrastar con un archivo o símbolo
 - **Combina con:** `claude-code` [20/terminal], `tree-sitter`, `ollama` [8/motores], `graphrag` [6/rag]
-- **Alternativas:** `codegraph`, `codebase-memory-mcp`, `repomix`, `gitnexus`, `serena`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido. El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes.
+- **Alternativas:** `codegraph`, `codebase-memory-mcp`, `repomix`, `serena`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): codegraph, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido. El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes.
 
 ### codegraph (`codegraph`)
 
@@ -56,8 +56,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `npm i -g @colbymchenry/codegraph` — fuente: https://github.com/colbymchenry/codegraph/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Indexa una carpeta y consulta quién llama a una función conocida Éxito: Los resultados identifican definiciones y relaciones comprobables
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `headroom` [23/tokens], `floorplan`
-- **Alternativas:** `graphify`, `codebase-memory-mcp`, `repomix`, `gitnexus`, `serena`
-- **Riesgos y avisos:** Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada. La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa.
+- **Alternativas:** `graphify`, `codebase-memory-mcp`, `repomix`, `serena`
+- **Riesgos y avisos:** Alternativas (elige una): codebase-memory-mcp, serena, graphify. Telemetría anónima activada. La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa.
 
 ### tree-sitter (`tree-sitter`)
 
@@ -79,8 +79,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash` — fuente: https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Indexa un proyecto pequeño y consulta el impacto de cambiar una función Éxito: Puedes abrir las referencias y relaciones del grafo
 - **Combina con:** `claude-code` [20/terminal], `repomix`, `codex` [20/terminal]
-- **Alternativas:** `graphify`, `codegraph`, `repomix`, `gitnexus`, `serena`
-- **Riesgos y avisos:** Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo. Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens.
+- **Alternativas:** `graphify`, `codegraph`, `repomix`, `serena`
+- **Riesgos y avisos:** Alternativas (elige una): codegraph, serena, graphify. Revisa el script de instalación antes de ejecutarlo. Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens.
 
 ### floorplan (`floorplan`)
 
@@ -107,14 +107,14 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `npx repomix@latest` — fuente: https://github.com/yamadashy/repomix/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Empaqueta una carpeta pequeña y abre el resultado antes de entregarlo a una IA Éxito: Puedes comprobar archivos incluidos, tamaño y exclusiones
 - **Combina con:** `claude-code` [20/terminal], `tree-sitter`, `markitdown` [13/conversion], `codebase-memory-mcp`
-- **Alternativas:** `graphify`, `codegraph`, `codebase-memory-mcp`, `gitnexus`
-- **Riesgos y avisos:** Alternativas (elige una): gitnexus. Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector.
+- **Alternativas:** `graphify`, `codegraph`, `codebase-memory-mcp`
+- **Riesgos y avisos:** Empaqueta archivos y contexto del repositorio para enviarlos al agente. Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector.
 
 ### GitNexus (`gitnexus`)
 
-- **Repo:** https://github.com/abhigyanpatwari/GitNexus · PolyForm-Noncommercial-1.0.0 · nivel 1 · 51/100 · alternativa en «Mapas e índices de código para agentes»
+- **Repo:** https://github.com/abhigyanpatwari/GitNexus · PolyForm-Noncommercial-1.0.0 · nivel 1 · 51/100
 - **Qué es:** GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION).
-- **Cuándo elegirlo:** Casos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización.
+- **Cuándo elegirlo:** Necesitas seguir un flujo de ejecución en el visor y revisar un renombrado semántico sobre el mismo índice.
 - **Requisitos:** nivel 1: preparación sencilla; Node 22.18+ en 22.x o 24.11+; repositorio de prueba; hardware prerequisites; API de IA: no; Node 22.18+ en 22.x o 24.11+; repositorio de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md
 
@@ -127,8 +127,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función Éxito: El mapa permite localizar los archivos reales y sus conexiones
 - **Combina con:** `claude-code` [20/terminal], `opencode` [20/terminal], `codex` [20/terminal]
-- **Alternativas:** `graphify`, `codegraph`, `codebase-memory-mcp`, `repomix`, `serena`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago. El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial.
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Referencia para explorar flujos y revisar renombrados con el mismo índice. Consulta la licencia no comercial y las condiciones del proveedor. El visor necesita el servidor del CLI. GitNexus publica PolyForm Noncommercial 1.0.0 y ofrece licenciamiento comercial por separado.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

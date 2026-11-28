@@ -34,7 +34,7 @@ Se clona en `~/.claude/skills/gstack` y se ejecuta `./setup`, que requiere Claud
 | [Codex CLI](codex.md) | Host experimental y segunda opinión documentada. | Codex CLI con sesión iniciada. |
 | [OpenCode](opencode.md) | Host experimental (`--host opencode`). | `./setup --host opencode`. |
 
-**Notas:** Alternativas (elige una): superclaude-framework, superpowers, ecc.
+**Notas:** Alternativas (elige una): superpowers, ecc.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.99.4.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -42,7 +42,7 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Metodologías y harness para agentes de código**: gstack ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Metodologías y harness para agentes de código**: gstack ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -50,7 +50,6 @@ Grupo **Metodologías y harness para agentes de código**: gstack ocupa la posic
 | 2 | **gstack** (esta ficha) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
 | 3 | [Agent Skills (Addy Osmani)](agent-skills.md) | 64 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
 | 4 | [superpowers](superpowers.md) | 59 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
-| 5 | [SuperClaude_Framework](superclaude-framework.md) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo
 
@@ -129,7 +128,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
 | [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 | [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
 

@@ -1142,6 +1142,23 @@
       "replaced_by": [
         "humanizer"
       ]
+    },
+    {
+      "id": "superclaude-framework",
+      "gh": "SuperClaude-Org/SuperClaude_Framework",
+      "github_id": 1006496207,
+      "name": "SuperClaude_Framework",
+      "cat": 2,
+      "retired_at": "2026-11-27",
+      "reason": "editorial",
+      "evidence": "Retiro por solapamiento con Superpowers, ECC y gstack en el flujo de desarrollo. El repo sigue activo y sus comandos permanecen enlazados desde la guía de Claude Code. https://github.com/SuperClaude-Org/SuperClaude_Framework/commit/82caa9e669217854692c8f9041e96503f39aff24",
+      "last_commit": "2026-11-27",
+      "archived": false,
+      "replaced_by": [
+        "superpowers",
+        "ecc",
+        "gstack"
+      ]
     }
   ]
 }

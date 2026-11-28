@@ -119,9 +119,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: preparación sencilla; uv; servidor de lenguaje del proyecto; repositorio de prueba; hardware prerequisites; API de IA: no; uv; servidor de lenguaje del proyecto; repositorio de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `uv tool install -p 3.13 serena-agent` — fuente: https://github.com/oraios/serena/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Pide localizar una función por símbolo y enumera sus referencias antes de editar Éxito: El agente identifica la definición y usos reales
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `context7`, `superclaude-framework` [2/metodologia]
-- **Alternativas:** `codegraph`, `gitnexus`, `codebase-memory-mcp`, `graphify`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify. El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado.
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `context7`
+- **Alternativas:** `codegraph`, `codebase-memory-mcp`, `graphify`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativas (elige una): codegraph, codebase-memory-mcp, graphify. El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado.
 
 ### MCP Toolbox for Databases (`mcp-toolbox`)
 

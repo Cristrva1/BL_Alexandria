@@ -10,7 +10,7 @@ Stacks completos ya pensados: parte de una receta cuando tu proyecto es un produ
 | [🎬 Pipeline de Reels / video corto](pipeline-de-reels-video-corto.md) | Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados. | 7 |
 | [🔎 Agente de research profundo](agente-de-research-profundo.md) | Investigar un tema en la web y entregar un informe estructurado con fuentes citadas. | 6 |
 | [🏠 Workspace privado local soberano](workspace-privado-local-soberano.md) | Preparar chat, documentos y memoria con rutas locales, comprobando por separado modelos, herramientas y conexiones externas. | 5 |
-| [🧠 Análisis de repos grandes](analisis-de-repos-grandes.md) | Que un agente de código entienda una base de código enorme sin gastar todo su contexto. | 5 |
+| [🧠 Análisis de repos grandes](analisis-de-repos-grandes.md) | Que un agente de código entienda una base de código enorme sin gastar todo su contexto. | 6 |
 | [📈 Marketing de agencia](marketing-de-agencia.md) | Operar campañas, contenido y email a escala con agentes y herramientas propias. | 5 |
 | [🌐 Web app moderna con IA](web-app-moderna-con-ia.md) | Construir un frontend pulido con chat o funciones de IA integradas. | 7 |
 | [🔌 Construir una app o servidor MCP](construir-una-appservidor-mcp.md) | Exponer tus datos o herramientas a Claude, ChatGPT, Cursor y otros agentes con Model Context Protocol. | 6 |

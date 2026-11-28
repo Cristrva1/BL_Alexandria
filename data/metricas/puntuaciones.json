@@ -29705,41 +29705,6 @@
    "fecha_metricas": "2026-11-16",
    "fecha_puntuacion": "2026-11-27"
   },
-  "superclaude-framework": {
-   "puntuacion": 49.0,
-   "ejes": {
-    "adopcion": 4.9,
-    "mantenimiento": 7.8,
-    "madurez": 7.9,
-    "licencia": 15.0,
-    "respaldo": 8.0,
-    "seguridad": 2.5,
-    "encaje": 3.0
-   },
-   "percentiles": {
-    "estrellas_anio": 0.175,
-    "descargas_mes": 0.208,
-    "estrellas": 0.219,
-    "commits_90d": 0.175,
-    "releases_365d": 0.329,
-    "primera_respuesta_dias": 0.118,
-    "ratio_cerradas": 0.415,
-    "bus_factor": 0.825
-   },
-   "licencia": {
-    "clase": "osi_permisiva",
-    "detalle": "MIT"
-   },
-   "respaldo": "organizacion",
-   "encaje": [
-    "lenguaje Python"
-   ],
-   "notas": [
-    "Sin OpenSSF Scorecard publicado: seguridad neutral"
-   ],
-   "fecha_metricas": "2026-11-16",
-   "fecha_puntuacion": "2026-11-27"
-  },
   "supermemory": {
    "puntuacion": 61.6,
    "ejes": {

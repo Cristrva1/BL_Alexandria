@@ -27,12 +27,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=9
 | `lucide` | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y… | 2 Intermedio | 65 | ISC (OSI permisiva) | sin grupo |
 | `chakra-ui` | Sistema de componentes React accesibles para crear productos y sistemas de… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
 | `heroui` | Librería de componentes React accesibles y lista para producción (React Aria +… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | alternativa |
-| `react-bits` | La mayor colección open source de componentes React animados e interactivos… | 2 Intermedio | 59 | MIT + Commons Clause (source-available) | recomendado |
+| `react-bits` | Efectos de texto, fondos gráficos y componentes interactivos para añadir… | 2 Intermedio | 59 | MIT + Commons Clause (source-available) | recomendado |
 | `swr` | Librería de data fetching para React (stale-while-revalidate) que sirve datos… | 2 Intermedio | 59 | MIT (OSI permisiva) | alternativa |
 | `konva` | Biblioteca de canvas para construir editores gráficos, diagramas e interfaces… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
 | `mantine` | Biblioteca de componentes React completa con más de 100 componentes, hooks… | 2 Intermedio | 58 | MIT (OSI permisiva) | alternativa |
 | `radix-primitives` | Componentes React sin estilos y accesibles para construir sistemas de diseño… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
-| `magicui` | Librería de componentes UI visualmente atractivos (animaciones, efectos… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
+| `magicui` | Componentes React para componer secciones de página con shadcn y Tailwind, como… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -204,13 +204,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/magicuidesign/magicui · MIT · nivel 2 · 53/100 · alternativa en «Componentes animados para React»
 - **Qué es:** Biblioteca de componentes UI animados (MIT) para 'design engineers', de Magic UI. Es popular (~23k estrellas) y activa.
-- **Cuándo elegirlo:** Casos: Prototipar una sección de landing; Añadir una interacción de presentación.
+- **Cuándo elegirlo:** Quieres componer una sección React con una cuadrícula de funcionalidades, un bloque de video o un registro de componentes bajo MIT.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; dependencias del componente elegido; proyecto de prueba; hardware prerequisites; API de IA: no; React; dependencias del componente elegido; proyecto de prueba.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://magicui.design/docs
 - **Primera prueba propuesta (no ejecutada):** Añade un componente visual pequeño y comprueba el diseño en móvil y con movimiento reducido Éxito: El contenido sigue siendo legible y el componente no desborda
 - **Combina con:** `ui`, `tailwindcss` [9/estilos], `motion` [26/animacion], `claude-code` [20/terminal], `animejs` [26/animacion]
 - **Alternativas:** `react-bits`
-- **Riesgos y avisos:** Alternativas (elige una): react-bits. Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos.
+- **Riesgos y avisos:** Alternativas (elige una): react-bits. El repositorio de componentes publica MIT. Magic UI Pro aplica sus propios términos a sus secciones y plantillas de pago.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

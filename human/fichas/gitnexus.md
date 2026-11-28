@@ -2,7 +2,7 @@
 
 # 🧭 GitNexus
 
-> Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.
+> Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -22,11 +22,11 @@ GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador w
 
 ## ¿Qué hace?
 
-Indexa símbolos, llamadas, dependencias y flujos de ejecución para responder preguntas como dónde se usa algo o qué afecta un cambio. Se usa desde las herramientas MCP del agente, la CLI o un explorador visual del grafo. Reporta ambigüedad y cobertura del índice.
+Indexa dependencias, referencias y flujos de ejecución. Permite recorrer el grafo en el navegador y previsualizar renombrados semánticos.
 
 ## ¿Cómo lo hace?
 
-Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+.
+Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+. El visor se conecta a gitnexus serve y reutiliza el índice existente.
 
 ## ¿Con qué otros repos se combina?
 
@@ -37,23 +37,11 @@ Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hook
 | [Codex CLI](codex.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c codex`. |
 | [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `gitnexus_runner.py`». | Orden indicado desde tools: Instala la CLI gitnexus. |
 
-**Notas:** Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.
+**Notas:** Referencia para explorar flujos y revisar renombrados con el mismo índice. Consulta la licencia no comercial y las condiciones del proveedor.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.12 (2026-09-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md)</sub>
-
-## Ver similares
-
-Grupo **Mapas e índices de código para agentes**: GitNexus ocupa la posición 5 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
-
-| # | Repo | Puntuación | Cuándo elegirlo |
-|---:|---|---:|---|
-| 1 | [graphify](graphify.md) ⭐ recomendado | 74 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
-| 2 | [codegraph](codegraph.md) | 66 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
-| 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
-| 4 | [Repomix](repomix.md) | 53 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
-| 5 | **GitNexus** (esta ficha) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md) · [2](https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/docs/deployment.md) · [3](https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/LICENSE)</sub>
 
 ## Acceso, coste y equipo
 
@@ -119,25 +107,15 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| Necesitas seguir un flujo de ejecución en el visor y revisar un renombrado semántico sobre el mismo índice. | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial
+**Limitaciones:** El visor necesita el servidor del CLI. GitNexus publica PolyForm Noncommercial 1.0.0 y ofrece licenciamiento comercial por separado.
 
 ## Stack y modelos
 
 - **Stack:** Node 22.18+ en 22.x o 24.11+; repositorio de prueba
 - **Etiquetas:** `code` `typescript`
 - **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Repomix](repomix.md) | 29.3k | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. |
-| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
-| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
-| [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
-| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 
 ## Enlaces
 

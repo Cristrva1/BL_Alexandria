@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-62 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+61 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -35,10 +35,6 @@
 - [claude-mem vs Engram](claude-mem-vs-engram.md)
 - [LightRAG vs RAGFlow](lightrag-vs-ragflow.md)
 - [Milvus vs Qdrant](milvus-vs-qdrant.md)
-
-## 🧑‍💻 Entender código y comprobar su calidad
-
-- [GitNexus vs Repomix](gitnexus-vs-repomix.md)
 
 ## 🏠 Chats, modelos locales y espacios privados
 

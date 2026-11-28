@@ -40,6 +40,8 @@ def render_area_guides(root: Path, catalog: Catalog) -> list[dict]:
             lines += ['## Primera configuración, paso a paso', '']
             for n, step in enumerate(area['guide'], 1):
                 lines += [f'{n}. **{step["title"]}.** {step["text"]}']
+                if link := step.get("link"):
+                    lines[-1] += f' [{link["label"]}]({link["url"]}).'
             lines += ['', f'[Fuente oficial del cliente]({area["official_url"]})', '', area['scope'], '']
         if area["id"] == "frontend":
             lines += ['## Qué usar para tu web', '', '[Elige una combinación para una página informativa, un panel o un chat con IA](../elegir-web.md).', '']

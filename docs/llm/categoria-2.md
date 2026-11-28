@@ -1,6 +1,6 @@
 # Alexandría para agentes · Skills, plugins y métodos para agentes
 
-Categoría 2 completa (34 repos, 2 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 completa (33 repos, 2 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,7 +29,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `awesome-claude-code-subagents` | catalogos | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes… | 1 Básico | 52 | MIT (OSI permisiva) | sin grupo |
 | `wshobson-agents` | catalogos | Colección de plugins, agentes y skills con adaptadores documentados para Claude… | 1 Básico | 51 | MIT (OSI permisiva) | alternativa |
 | `awesome-claude-code` | catalogos | Lista curada de recursos para Claude Code: skills, plugins, hooks, status… | 1 Básico | 48 | CC-BY-NC-ND-4.0 (source-available) | alternativa |
-| `awesome-claude-skills` | catalogos | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros… | 1 Básico | 48 | — (sin licencia detectada) | alternativa |
+| `awesome-claude-skills` | catalogos | Colección de guías para automatizar servicios como Google Calendar y Zoho Books… | 1 Básico | 48 | — (sin licencia detectada) | sin grupo |
 | `plugins` | catalogos | Especificación y colección oficial de plugins de Cursor para estudiar e… | 1 Básico | 48 | — (sin licencia detectada) | sin grupo |
 | `autoskills` | catalogos | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un… | 1 Básico | 40 | CC-BY-NC-4.0 (source-available) | sin grupo |
 | `awesome-agents` | catalogos | Directorio de herramientas y proyectos abiertos para construir y operar agentes… | 1 Básico | 39 | — (sin licencia detectada) | sin grupo |
@@ -44,7 +44,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `superpowers` | metodologia | Metodología completa de desarrollo para agentes construida sobre skills… | 1 Básico | 59 | MIT (OSI permisiva) | alternativa |
 | `bmad-method` | metodologia | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev)… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
 | `codex-plugin-cc` | metodologia | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y… | 1 Básico | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `superclaude-framework` | metodologia | Framework de configuración que añade comandos, roles y metodologías de trabajo… | 2 Intermedio | 49 | MIT (OSI permisiva) | alternativa |
 | `claude-token-efficient` | metodologia | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de… | 1 Básico | 47 | MIT (OSI permisiva) | sin grupo |
 | `andrej-karpathy-skills` | metodologia | Instrucciones para declarar supuestos, simplificar cambios y comprobar… | 1 Básico | 46 | — (sin licencia detectada) | sin grupo |
 | `shadcn-improve` | metodologia | Organiza una auditoría de código en un plan que un modelo diferente puede… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
@@ -71,8 +70,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Previsualiza una skill concreta y revisa el plan antes de instalarla en un agente Éxito: El destino contiene la skill seleccionada y puedes revisar los archivos añadidos
 - **Combina con:** `codex` [20/terminal], `claude-code` [20/terminal], `cli` [7/herramientas], `skillspector` [16/skills], `antigravity-cli` [20/terminal]
-- **Alternativas:** `claude-plugins-official`, `awesome-agent-skills`, `wshobson-agents`, `awesome-claude-skills`, `awesome-claude-code`
-- **Riesgos y avisos:** Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm. Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx.
+- **Alternativas:** `claude-plugins-official`, `awesome-agent-skills`, `wshobson-agents`, `awesome-claude-code`
+- **Riesgos y avisos:** Alternativas (elige una): awesome-agent-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm. Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx.
 
 ### Awesome GitHub Copilot (`awesome-copilot`)
 
@@ -94,7 +93,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://code.claude.com/docs/en/plugins
 - **Primera prueba propuesta (no ejecutada):** Busca un plugin del marketplace e instala solo el que corresponde a tu tarea Éxito: El plugin figura instalado y puedes consultar sus comandos o skills
 - **Combina con:** `claude-code` [20/terminal], `superpowers` [2/metodologia], `skills` [2/metodologia], `awesome-claude-code`
-- **Alternativas:** `antigravity-awesome-skills`, `awesome-agent-skills`, `wshobson-agents`, `awesome-claude-skills`, `awesome-claude-code`
+- **Alternativas:** `antigravity-awesome-skills`, `awesome-agent-skills`, `wshobson-agents`, `awesome-claude-code`
 - **Riesgos y avisos:** Alternativa (elige una): wshobson-agents. Se quitaron anthropic-skills y awesome-claude-code: son catálogos paralelos, no integraciones. Es un directorio gestionado por Anthropic; instalar un plugin no implica instalar todos los del repositorio.
 
 ### Claude Code Templates (`claude-code-templates`)
@@ -146,8 +145,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Abre una skill oficial de una tecnología que ya utilices y revisa su instalación Éxito: Puedes distinguir su autor, archivos y destino compatible
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `gemini-cli` [20/terminal], `skillspector` [16/skills], `awesome-agents`
-- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `wshobson-agents`, `awesome-claude-skills`, `awesome-claude-code`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados. El catálogo declara varios clientes, pero la compatibilidad y licencia se revisan por skill, no para todo el directorio en bloque.
+- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `wshobson-agents`, `awesome-claude-code`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): antigravity-awesome-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados. El catálogo declara varios clientes, pero la compatibilidad y licencia se revisan por skill, no para todo el directorio en bloque.
 
 ### Anthropic Skills (`anthropic-skills`)
 
@@ -191,7 +190,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Instala el plugin de desarrollo Python y pide revisar un caso de pruebas pequeño Éxito: El agente encuentra las instrucciones del plugin y propone una revisión sobre ese caso
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal], `plugins`
-- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `awesome-agent-skills`, `awesome-claude-skills`, `awesome-claude-code`, `agency-agents`
+- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `awesome-agent-skills`, `awesome-claude-code`, `agency-agents`
 - **Riesgos y avisos:** Alternativas (elige una): claude-plugins-official, antigravity-awesome-skills, agency-agents. Se quitó skillspector porque no hay integración (sigue siendo…. El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos.
 
 ### Awesome Claude Code (`awesome-claude-code`)
@@ -203,20 +202,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Localiza un recurso de hooks o status line y revisa su fuente original Éxito: Identificas su función, mantenimiento y requisitos antes de instalarlo
 - **Combina con:** `claude-code` [20/terminal], `claude-plugins-official`, `skillspector` [16/skills]
-- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `awesome-agent-skills`, `wshobson-agents`, `awesome-claude-skills`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativa (elige una): awesome-claude-skills. Se quitó superpowers porque no hay integración. Es una selección independiente; su nombre y enlaces a Anthropic no la convierten en un marketplace oficial.
+- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `awesome-agent-skills`, `wshobson-agents`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Directorio de hooks, comandos y flujos de Claude Code. Es una selección independiente; su nombre y enlaces a Anthropic no la convierten en un marketplace oficial.
 
 ### Awesome Claude Skills (`awesome-claude-skills`)
 
-- **Repo:** https://github.com/ComposioHQ/awesome-claude-skills · — · nivel 1 · 48/100 · alternativa en «Catálogos de skills y plugins para agentes»
-- **Qué es:** Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.
-- **Cuándo elegirlo:** Casos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas.
+- **Repo:** https://github.com/ComposioHQ/awesome-claude-skills · — · nivel 1 · 48/100
+- **Qué es:** Colección de ComposioHQ con un índice general de recursos y 832 archivos SKILL.md en la carpeta de automatizaciones publicada en el commit revisado.
+- **Cuándo elegirlo:** Ya usas Composio y buscas una guía concreta para trabajar con un servicio como Calendar o Zoho Books.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador;  agente compatible solo al utilizar una skill seleccionada; hardware prerequisites; API de IA: no; Navegador; agente compatible solo al utilizar una skill seleccionada.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md
 - **Primera prueba propuesta (no ejecutada):** Elige una skill del listado y abre su archivo o repositorio de origen Éxito: Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente
 - **Combina con:** `composio` [22/infra], `claude-code` [20/terminal], `skillspector` [16/skills]
-- **Alternativas:** `antigravity-awesome-skills`, `claude-plugins-official`, `awesome-agent-skills`, `wshobson-agents`, `awesome-claude-code`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): awesome-agent-skills, antigravity-awesome-skills, awesome-claude-code. Dar acceso a 1.000 apps amplía mucho lo que el agente puede…. El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos.
+- **Riesgos y avisos:** Referencia para quienes usan Composio. El README declara Apache 2.0 y señala que algunas skills tienen su propia licencia. Las guías de Rube MCP necesitan una conexión activa del servicio. El plugin connect-apps tiene su propia configuración. Consulta la licencia de cada skill.
 
 ### plugins (`plugins`)
 
@@ -289,8 +287,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `npx ecc-universal@2.2.3 setup` — fuente: https://github.com/affaan-m/ECC/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Ejecuta la configuración guiada en una carpeta de prueba y revisa el destino antes de confirmar Éxito: El informe muestra los componentes y archivos preparados para el cliente elegido
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal], `gemini-cli` [20/terminal], `claude-code-hooks-mastery`, `hermes-agent` [21/asistentes]
-- **Alternativas:** `gstack`, `agent-skills`, `superpowers`, `superclaude-framework`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm…. Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes.
+- **Alternativas:** `gstack`, `agent-skills`, `superpowers`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes.
 
 ### elephant-goldfish-model (`elephant-goldfish-model`)
 
@@ -323,8 +321,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Consulta el estado de instalación y prueba una revisión o planificación sobre un cambio pequeño Éxito: El estado indica el host y puedes revisar el resultado de la skill elegida
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
-- **Alternativas:** `ecc`, `agent-skills`, `superpowers`, `superclaude-framework`
-- **Riesgos y avisos:** Alternativas (elige una): superclaude-framework, superpowers, ecc. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code.
+- **Alternativas:** `ecc`, `agent-skills`, `superpowers`
+- **Riesgos y avisos:** Alternativas (elige una): superpowers, ecc. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code.
 
 ### Agent Skills (Addy Osmani) (`agent-skills`)
 
@@ -340,7 +338,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Pide una revisión de calidad sobre un cambio pequeño del proyecto Éxito: La revisión aplica los criterios de la skill y señala archivos concretos
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `gemini-cli` [20/terminal], `plugins` [2/catalogos]
-- **Alternativas:** `ecc`, `gstack`, `superpowers`, `superclaude-framework`
+- **Alternativas:** `ecc`, `gstack`, `superpowers`
 - **Riesgos y avisos:** Alternativa (elige una): superpowers. Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda.
 
 ### book-to-skill (`book-to-skill`)
@@ -379,8 +377,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `/plugin install superpowers@claude-plugins-official` — fuente: https://github.com/obra/superpowers/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Describe una mejora sencilla y revisa la fase de definición y planificación Éxito: El agente muestra una propuesta acotada antes de cambiar archivos
 - **Combina con:** `claude-plugins-official` [2/catalogos], `codex` [20/terminal], `gemini-cli` [20/terminal], `hermes-agent` [21/asistentes], `claude-code` [20/terminal]
-- **Alternativas:** `ecc`, `gstack`, `agent-skills`, `superclaude-framework`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README.
+- **Alternativas:** `ecc`, `gstack`, `agent-skills`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README.
 
 ### BMAD Method (`bmad-method`)
 
@@ -415,26 +413,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Pide revisar un diff pequeño mediante el comando del plugin y examina su informe Éxito: La delegación devuelve una revisión atribuible al proceso de Codex
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `grok-plugin-claude-code`
 - **Riesgos y avisos:** No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex.
-
-### SuperClaude_Framework (`superclaude-framework`)
-
-- **Repo:** https://github.com/SuperClaude-Org/SuperClaude_Framework · MIT · nivel 2 · 49/100 · alternativa en «Metodologías y harness para agentes de código»
-- **Qué es:** Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.
-- **Cuándo elegirlo:** Casos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code;  Python y pipx según la guía;  copia de configuración revisable; hardware prerequisites; API de IA: no; Claude Code; Python y pipx según la guía; copia de configuración revisable.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md
-
-  ```bash
-  # Install from PyPI
-  pipx install superclaude
-
-  # Install commands (installs all 30 slash commands)
-  superclaude install
-  ```
-- **Primera prueba propuesta (no ejecutada):** Instala la configuración básica y consulta la lista de comandos antes de añadir MCP opcionales Éxito: Puedes identificar qué comandos se incorporaron y ejecutar el diagnóstico del proyecto
-- **Combina con:** `claude-code` [20/terminal], `context7` [5/servidores], `serena` [5/servidores]
-- **Alternativas:** `ecc`, `gstack`, `agent-skills`, `superpowers`
-- **Riesgos y avisos:** Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos. Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos.
 
 ### claude-token-efficient (`claude-token-efficient`)
 

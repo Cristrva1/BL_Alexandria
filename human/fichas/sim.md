@@ -39,7 +39,7 @@ Hecho con Next.js y Bun sobre PostgreSQL (Drizzle ORM) y Better Auth. El autoalo
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.58 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/simstudioai/sim/blob/main/README.md) · [2](https://docs.sim.ai/mcp/overview) · [3](https://docs.sim.ai/self-hosting/docker)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/simstudioai/sim/blob/main/README.md) · [2](https://docs.sim.ai/mcp/overview) · [3](https://docs.sim.ai/self-hosting/docker) · [4](https://docs.sim.ai/desktop) · [5](https://docs.sim.ai/platform/self-hosting/desktop)</sub>
 
 ## Ver similares
 
@@ -114,9 +114,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| Buscas un constructor visual que pueda conectarse a servicios de trabajo y un cliente de macOS con navegador, terminal y acceso a carpetas autorizadas. | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo
+**Limitaciones:** Sim Desktop requiere macOS 12 o posterior y se conecta al despliegue de Sim. En otros sistemas se usa la app web.
 
 ## Stack y modelos
 

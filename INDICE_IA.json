@@ -223,7 +223,6 @@
      "claude-plugins-official",
      "superpowers",
      "awesome-claude-code",
-     "awesome-claude-skills",
      "claude-mem",
      "claude-seo",
      "agency-agents"
@@ -327,7 +326,7 @@
    "title": "Skills, plugins y métodos para agentes",
    "desc": "Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.",
    "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
-   "count": 34,
+   "count": 33,
    "subs": [
     {
      "key": "catalogos",
@@ -1488,6 +1487,7 @@
    "repos": [
     "repomix",
     "codegraph",
+    "codebase-memory-mcp",
     "gitnexus",
     "graphify",
     "claude-code"
@@ -1499,11 +1499,15 @@
     },
     {
      "id": "codegraph",
-     "role": "Grafo de código pre-indexado que se sincroniza con los cambios"
+     "role": "Índice principal para consultar símbolos y llamadas a medida que cambia el código"
+    },
+    {
+     "id": "codebase-memory-mcp",
+     "role": "Ampliación para revisar el impacto de cambios de Git y abrir el visor local CBM Lens en beta"
     },
     {
      "id": "gitnexus",
-     "role": "Explora dependencias y flujos sin servidor"
+     "role": "Referencia opcional para explorar flujos y renombrados. El visor se conecta a gitnexus serve. Licencia PolyForm Noncommercial 1.0.0"
     },
     {
      "id": "graphify",
@@ -1519,6 +1523,11 @@
      "Repositorio",
      "codegraph",
      "indexa"
+    ],
+    [
+     "Repositorio",
+     "codebase-memory-mcp",
+     "cambios de Git"
     ],
     [
      "Repositorio",
@@ -1539,15 +1548,10 @@
      "graphify",
      "claude-code",
      "contexto"
-    ],
-    [
-     "gitnexus",
-     "claude-code",
-     "navegación"
     ]
    ],
-   "how": "CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. Claude Code (o Codex) usa todo eso como contexto barato.",
-   "when_not": "Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con referencias directas a archivos basta.",
+   "how": "Empieza con Repomix para empaquetar una parte del repositorio y dársela al agente. Añade CodeGraph para consultas repetidas de símbolos y llamadas. Codebase Memory MCP ayuda a revisar el impacto de cambios en Git. Graphify incorpora documentación al grafo. GitNexus queda como referencia opcional para explorar flujos y previsualizar renombrados con el índice del CLI.",
+   "when_not": "Si el agente ya puede responder con referencias a unos pocos archivos, empieza con esos archivos directamente.",
    "plan": {
     "minimum": [
      "repomix",
@@ -1560,7 +1564,7 @@
      "success": "Puedes abrir los archivos citados y comprobar la explicación",
      "execution": "proposed_not_executed"
     },
-    "note": "Revisa exclusiones y secretos antes de compartir código; los grafos son otra ampliación y tienen sus propias licencias"
+    "note": "Revisa las exclusiones y los secretos antes de compartir archivos. Usa el índice o visor que responda a tu pregunta y revisa su licencia."
    }
   },
   {
@@ -3497,18 +3501,14 @@
    "gh": "ComposioHQ/awesome-claude-skills",
    "lib": false,
    "pick": false,
-   "one": "Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.",
-   "alt": [
-    "awesome-agent-skills",
-    "antigravity-awesome-skills",
-    "awesome-claude-code"
-   ],
+   "one": "Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio.",
+   "alt": [],
    "doc": "human/fichas/awesome-claude-skills.md",
    "github_id": 1078079172,
    "added_at": "2026-11-10",
    "goals": [
-    "skills",
-    "aprender"
+    "mcp",
+    "automatizar"
    ],
    "routes": [
     "no_api",
@@ -3517,8 +3517,7 @@
    ],
    "source_archived": false,
    "puntuacion": 48,
-   "complejidad": 1,
-   "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
+   "complejidad": 1
   },
   {
    "id": "awesome-claude-code",
@@ -3543,9 +3542,7 @@
    "lib": false,
    "pick": false,
    "one": "Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías.",
-   "alt": [
-    "awesome-claude-skills"
-   ],
+   "alt": [],
    "doc": "human/fichas/awesome-claude-code.md",
    "github_id": 969302809,
    "starred_by": "Cristrva1",
@@ -3587,7 +3584,6 @@
    "one": "Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills.",
    "alt": [
     "awesome-agent-skills",
-    "awesome-claude-skills",
     "wshobson-agents"
    ],
    "doc": "human/fichas/antigravity-awesome-skills.md",
@@ -3712,8 +3708,7 @@
    "pick": false,
    "one": "Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes.",
    "alt": [
-    "antigravity-awesome-skills",
-    "awesome-claude-skills"
+    "antigravity-awesome-skills"
    ],
    "doc": "human/fichas/awesome-agent-skills.md",
    "github_id": 1084853233,
@@ -3832,7 +3827,6 @@
    "one": "Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque.",
    "alt": [
     "agent-skills",
-    "superclaude-framework",
     "ecc",
     "gstack"
    ],
@@ -3877,7 +3871,6 @@
    "pick": false,
    "one": "Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente.",
    "alt": [
-    "superclaude-framework",
     "superpowers",
     "gstack"
    ],
@@ -8609,7 +8602,6 @@
    "one": "Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.",
    "alt": [
     "codegraph",
-    "gitnexus",
     "codebase-memory-mcp",
     "graphify"
    ],
@@ -10243,9 +10235,7 @@
    "lib": false,
    "pick": true,
    "one": "Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM.",
-   "alt": [
-    "gitnexus"
-   ],
+   "alt": [],
    "doc": "human/fichas/repomix.md",
    "github_id": 828119367,
    "starred_by": "Cristrva1",
@@ -10287,7 +10277,6 @@
    "one": "CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas.",
    "alt": [
     "codegraph",
-    "gitnexus",
     "serena",
     "codebase-memory-mcp"
    ],
@@ -10335,7 +10324,6 @@
    "alt": [
     "codebase-memory-mcp",
     "serena",
-    "gitnexus",
     "graphify"
    ],
    "doc": "human/fichas/codegraph.md",
@@ -10383,7 +10371,6 @@
    "one": "Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.",
    "alt": [
     "codegraph",
-    "gitnexus",
     "serena",
     "graphify"
    ],
@@ -10427,14 +10414,8 @@
    "gh": "abhigyanpatwari/GitNexus",
    "lib": false,
    "pick": false,
-   "one": "Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.",
-   "alt": [
-    "repomix",
-    "codebase-memory-mcp",
-    "serena",
-    "codegraph",
-    "graphify"
-   ],
+   "one": "Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI.",
+   "alt": [],
    "doc": "human/fichas/gitnexus.md",
    "github_id": 1031059905,
    "starred_by": "Cristrva1",
@@ -10450,8 +10431,7 @@
    ],
    "source_archived": false,
    "puntuacion": 51,
-   "complejidad": 1,
-   "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
+   "complejidad": 1
   },
   {
    "id": "tree-sitter",
@@ -12482,7 +12462,7 @@
    "gh": "DavidHDev/react-bits",
    "lib": false,
    "pick": false,
-   "one": "La mayor colección open source de componentes React animados e interactivos para webs llamativas.",
+   "one": "Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React.",
    "alt": [
     "magicui"
    ],
@@ -12635,7 +12615,7 @@
    "gh": "magicuidesign/magicui",
    "lib": false,
    "pick": false,
-   "one": "Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.",
+   "one": "Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.",
    "alt": [
     "react-bits"
    ],
@@ -18251,50 +18231,6 @@
    "complejidad": 2
   },
   {
-   "id": "superclaude-framework",
-   "name": "SuperClaude_Framework",
-   "emoji": "🧠",
-   "cat": 2,
-   "sub": "metodologia",
-   "role": "skill",
-   "exec": "hybrid",
-   "setup": "medium",
-   "mcp": false,
-   "prov": [],
-   "tags": [
-    "metodologia",
-    "python"
-   ],
-   "stars": 23937,
-   "gh": "SuperClaude-Org/SuperClaude_Framework",
-   "github_id": 1006496207,
-   "lib": false,
-   "pick": false,
-   "one": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
-   "alt": [
-    "superpowers",
-    "ecc",
-    "gstack"
-   ],
-   "doc": "human/fichas/superclaude-framework.md",
-   "agent_tools": [
-    "claude-code"
-   ],
-   "starred_by": "Cristrva1",
-   "added_at": "2026-11-14",
-   "goals": [
-    "skills"
-   ],
-   "routes": [
-    "no_api",
-    "claude"
-   ],
-   "source_archived": false,
-   "puntuacion": 49,
-   "complejidad": 2,
-   "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
-  },
-  {
    "id": "system-prompts-and-models-of-ai-tools",
    "name": "system-prompts-and-models-of-ai-tools",
    "emoji": "🧠",
@@ -22218,7 +22154,6 @@
    "pick": false,
    "one": "Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.",
    "alt": [
-    "superclaude-framework",
     "superpowers",
     "ecc"
    ],
@@ -40877,6 +40812,7 @@
     ],
     "categories": [
      1,
+     2,
      3,
      17,
      18,
@@ -42349,7 +42285,9 @@
         ]
        }
       ],
-      "repos": [],
+      "repos": [
+       "awesome-claude-skills"
+      ],
       "keywords": [],
       "reference_repos": []
      },
@@ -42775,7 +42713,9 @@
        }
       ],
       "repos": [
-       "tooljet"
+       "tooljet",
+       "composio",
+       "awesome-claude-skills"
       ],
       "keywords": [],
       "reference_repos": []
@@ -43487,7 +43427,10 @@
       ],
       "repos": [],
       "keywords": [],
-      "reference_repos": []
+      "reference_repos": [],
+      "exclude": [
+       "awesome-claude-skills"
+      ]
      },
      {
       "id": "aprender-especialidades",
@@ -43579,7 +43522,6 @@
        "floorplan",
        "gemini-skills",
        "genjutsu",
-       "gitnexus",
        "google-skills",
        "gpt-researcher",
        "gradio",
@@ -43636,7 +43578,6 @@
        "stop-slop",
        "streamlit",
        "strix",
-       "superclaude-framework",
        "superpowers",
        "taste-skill",
        "threejs-game-skills",
@@ -43655,9 +43596,7 @@
        "open-code-review"
       ],
       "keywords": [],
-      "reference_repos": [
-       "awesome-claude-skills"
-      ]
+      "reference_repos": []
      },
      {
       "id": "claude-mcp",
@@ -43877,7 +43816,8 @@
        "wan2gp"
       ],
       "reference_repos": [
-       "claude-code-hooks-mastery"
+       "claude-code-hooks-mastery",
+       "awesome-claude-skills"
       ],
       "keywords": []
      }
@@ -43900,6 +43840,14 @@
      {
       "title": "Comprueba el resultado y el consumo",
       "text": "Repite la tarea pequeña, revisa si la mejora ayuda y consulta el uso de tu cuenta. Los servicios externos tienen sus propios accesos y costes."
+     },
+     {
+      "title": "Consulta los comandos de SuperClaude",
+      "text": "Si tu instalación de Claude Code ya usa SuperClaude, la documentación del proyecto enumera sus comandos.",
+      "link": {
+       "label": "Ver los comandos /sc:* de SuperClaude",
+       "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/82caa9e669217854692c8f9041e96503f39aff24/docs/user-guide/commands.md"
+      }
      }
     ],
     "scope": "Esta colección reúne clientes, extensiones y material para configurar el agente. Cada ficha distingue su forma de uso. La compatibilidad con skills o MCP no implica que tu plan pague todas las APIs de las aplicaciones que construyas.",
@@ -44503,13 +44451,6 @@
       "repo_id": "github-mcp-server",
       "source": "https://github.com/github/github-mcp-server/blob/main/README.md",
       "readme_blob_sha": "1f297f7dd444698f4a9ede6e5f6186e0237e6d0f",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
-      "repo_id": "gitnexus",
-      "source": "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md",
-      "readme_blob_sha": "9c0eb862f8fc4e31ca3d17414d3ee2cf1bfcb1bf",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
      },
@@ -45417,13 +45358,6 @@
       "usage": "documented_integration"
      },
      {
-      "repo_id": "superclaude-framework",
-      "source": "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md",
-      "readme_blob_sha": "85f357dd8c17cfb8e2ba8ca3417aa673d9c9cc8d",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
       "repo_id": "supermemory",
       "source": "https://github.com/supermemoryai/supermemory/blob/main/README.md",
       "readme_blob_sha": "8c719544597ee0bc4efff8bc58c3fda9549b1c46",
@@ -45641,7 +45575,6 @@
        "elephant-goldfish-model",
        "floorplan",
        "gemini-skills",
-       "gitnexus",
        "google-skills",
        "gradio",
        "graphify",
@@ -46383,13 +46316,6 @@
       "repo_id": "github-mcp-server",
       "source": "https://github.com/github/github-mcp-server/blob/main/README.md",
       "readme_blob_sha": "1f297f7dd444698f4a9ede6e5f6186e0237e6d0f",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
-      "repo_id": "gitnexus",
-      "source": "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md",
-      "readme_blob_sha": "9c0eb862f8fc4e31ca3d17414d3ee2cf1bfcb1bf",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
      },
@@ -47399,7 +47325,6 @@
        "ecc",
        "elephant-goldfish-model",
        "gemini-skills",
-       "gitnexus",
        "google-skills",
        "gradio",
        "graphify",
@@ -47961,13 +47886,6 @@
       "repo_id": "github-mcp-server",
       "source": "https://github.com/github/github-mcp-server/blob/main/README.md",
       "readme_blob_sha": "1f297f7dd444698f4a9ede6e5f6186e0237e6d0f",
-      "checked_at": "2026-11-15",
-      "usage": "documented_integration"
-     },
-     {
-      "repo_id": "gitnexus",
-      "source": "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md",
-      "readme_blob_sha": "9c0eb862f8fc4e31ca3d17414d3ee2cf1bfcb1bf",
       "checked_at": "2026-11-15",
       "usage": "documented_integration"
      },

@@ -22,17 +22,14 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Trigger.dev](fichas/trigger-dev.md) | [Windmill](fichas/windmill.md), [Kestra](fichas/kestra.md) |
 | [Windmill](fichas/windmill.md) | [Kestra](fichas/kestra.md), [Trigger.dev](fichas/trigger-dev.md) |
 | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) | [superpowers](fichas/superpowers.md) |
-| [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md), [wshobson/agents](fichas/wshobson-agents.md) |
-| [Awesome Agent Skills](fichas/awesome-agent-skills.md) | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md) |
-| [Awesome Claude Code](fichas/awesome-claude-code.md) | [Awesome Claude Skills](fichas/awesome-claude-skills.md) |
-| [Awesome Claude Skills](fichas/awesome-claude-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [Awesome Claude Code](fichas/awesome-claude-code.md) |
+| [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [wshobson/agents](fichas/wshobson-agents.md) |
+| [Awesome Agent Skills](fichas/awesome-agent-skills.md) | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) |
 | [BMAD Method](fichas/bmad-method.md) | [Spec Kit](fichas/spec-kit.md) |
 | [Claude Code Plugins Directory](fichas/claude-plugins-official.md) | [wshobson/agents](fichas/wshobson-agents.md) |
-| [ECC](fichas/ecc.md) | [SuperClaude_Framework](fichas/superclaude-framework.md), [superpowers](fichas/superpowers.md), [gstack](fichas/gstack.md) |
-| [gstack](fichas/gstack.md) | [SuperClaude_Framework](fichas/superclaude-framework.md), [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md) |
+| [ECC](fichas/ecc.md) | [superpowers](fichas/superpowers.md), [gstack](fichas/gstack.md) |
+| [gstack](fichas/gstack.md) | [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md) |
 | [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md), [claude-task-master](fichas/claude-task-master.md) |
-| [SuperClaude_Framework](fichas/superclaude-framework.md) | [superpowers](fichas/superpowers.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
-| [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md), [SuperClaude_Framework](fichas/superclaude-framework.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
+| [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md), [ECC](fichas/ecc.md), [gstack](fichas/gstack.md) |
 | [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
 | [Agent Development Kit (ADK)](fichas/adk-python.md) | [LangGraph](fichas/langgraph.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
 | [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md), [LangGraph](fichas/langgraph.md) |
@@ -72,7 +69,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [mcp-use](fichas/mcp-use.md) | [MCP TypeScript SDK](fichas/mcp-typescript-sdk.md) |
 | [Neo4j MCP (oficial)](fichas/neo4j-mcp.md) | [mcp-neo4j](fichas/mcp-neo4j.md) |
 | [Playwright MCP](fichas/playwright-mcp.md) | [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md), [browser-use](fichas/browser-use.md), [Browser Harness](fichas/browser-harness.md) |
-| [Serena](fichas/serena.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [graphify](fichas/graphify.md) |
+| [Serena](fichas/serena.md) | [codegraph](fichas/codegraph.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [graphify](fichas/graphify.md) |
 | [agentmemory](fichas/agentmemory.md) | [Engram](fichas/engram.md), [supermemory](fichas/supermemory.md), [claude-mem](fichas/claude-mem.md) |
 | [Chroma](fichas/chroma.md) | [Qdrant](fichas/qdrant.md), [pgvector](fichas/pgvector.md), [Milvus](fichas/milvus.md), [Faiss](fichas/faiss.md), [LanceDB](fichas/lancedb.md) |
 | [claude-mem](fichas/claude-mem.md) | [Engram](fichas/engram.md), [agentmemory](fichas/agentmemory.md) |
@@ -94,12 +91,10 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [supermemory](fichas/supermemory.md) | [mem0](fichas/mem0.md), [agentmemory](fichas/agentmemory.md) |
 | [Weaviate](fichas/weaviate.md) | [Qdrant](fichas/qdrant.md), [Milvus](fichas/milvus.md) |
 | [ast-grep](fichas/ast-grep.md) | [Semgrep](fichas/semgrep.md) |
-| [codebase-memory-mcp](fichas/codebase-memory-mcp.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [Serena](fichas/serena.md), [graphify](fichas/graphify.md) |
-| [codegraph](fichas/codegraph.md) | [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [GitNexus](fichas/gitnexus.md), [graphify](fichas/graphify.md) |
+| [codebase-memory-mcp](fichas/codebase-memory-mcp.md) | [codegraph](fichas/codegraph.md), [Serena](fichas/serena.md), [graphify](fichas/graphify.md) |
+| [codegraph](fichas/codegraph.md) | [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [graphify](fichas/graphify.md) |
 | [Gitleaks](fichas/gitleaks.md) | [TruffleHog](fichas/trufflehog.md) |
-| [GitNexus](fichas/gitnexus.md) | [Repomix](fichas/repomix.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md), [codegraph](fichas/codegraph.md), [graphify](fichas/graphify.md) |
-| [graphify](fichas/graphify.md) | [codegraph](fichas/codegraph.md), [GitNexus](fichas/gitnexus.md), [Serena](fichas/serena.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md) |
-| [Repomix](fichas/repomix.md) | [GitNexus](fichas/gitnexus.md) |
+| [graphify](fichas/graphify.md) | [codegraph](fichas/codegraph.md), [Serena](fichas/serena.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md) |
 | [SonarQube Community Build](fichas/sonarqube.md) | [Semgrep](fichas/semgrep.md) |
 | [TruffleHog](fichas/trufflehog.md) | [Gitleaks](fichas/gitleaks.md) |
 | [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md), [onyx](fichas/onyx.md) |

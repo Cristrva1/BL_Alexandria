@@ -150,7 +150,8 @@
    "notas": "Alternativas (elige una): magicui. Licencia con Commons Clause: revísala antes de uso comercial que implique revender los componentes.",
    "fuentes": [
     "https://github.com/DavidHDev/react-bits/blob/main/README.md",
-    "https://reactbits.dev/get-started/mcp"
+    "https://reactbits.dev/get-started/mcp",
+    "https://github.com/DavidHDev/react-bits/blob/HEAD/LICENSE.md"
    ],
    "github": {
     "name_with_owner": "DavidHDev/react-bits",
@@ -347,7 +348,9 @@
    "fuentes": [
     "https://github.com/magicuidesign/magicui/blob/main/README.md",
     "https://magicui.design/docs/installation",
-    "https://magicui.design/docs/mcp"
+    "https://magicui.design/docs/mcp",
+    "https://magicui.design/docs/components/bento-grid",
+    "https://pro.magicui.design/license"
    ],
    "github": {
     "name_with_owner": "magicuidesign/magicui",

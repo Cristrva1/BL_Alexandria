@@ -273,41 +273,6 @@
     "checked_at": "2026-11-15"
    }
   },
-  "superclaude-framework": {
-   "que_es": "Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.",
-   "que_hace": "Convierte Claude Code en una plataforma de desarrollo estructurada mediante inyección de instrucciones de comportamiento: 30 comandos `/sc:*` que cubren de la lluvia de ideas al despliegue, 20 agentes especializados, 7 modos de comportamiento y 8 integraciones MCP. Por ejemplo, `/sc:research` hace investigación web profunda con Tavily.",
-   "como_lo_hace": "Se instala con pipx (`pipx install superclaude`), que despliega los componentes en Claude Code. `superclaude mcp` instala servidores MCP opcionales (Serena, Sequential, Tavily, Context7, Mindbase) mediante airis-mcp-gateway, con mejoras de velocidad y tokens declaradas por el proyecto [DATO NO VERIFICADO]. El instalador como plugin está previsto para la v5.0.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Plataforma que configura.",
-     "orden_instalacion": "Claude Code primero; luego `pipx install superclaude` y su instalador."
-    },
-    {
-     "id": "context7",
-     "motivo": "MCP opcional para consultar documentación oficial.",
-     "orden_instalacion": "`superclaude mcp --servers context7`."
-    },
-    {
-     "id": "serena",
-     "motivo": "MCP opcional de comprensión de código.",
-     "orden_instalacion": "Mediante airis-mcp-gateway."
-    }
-   ],
-   "notas": "Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos.",
-   "fuentes": [
-    "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
-   ],
-   "github": {
-    "name_with_owner": "SuperClaude-Org/SuperClaude_Framework",
-    "archived": false,
-    "pushed_at": "2026-09-27",
-    "license": "MIT",
-    "primary_language": "Python",
-    "latest_release": "v4.3.0 (2026-03-22)",
-    "checked_at": "2026-11-15"
-   }
-  },
   "plugins": {
    "que_es": "Repositorio oficial de Cursor con plugins para herramientas de desarrollo, frameworks y productos SaaS. Muy activo; GitHub no detecta licencia de repositorio.",
    "que_hace": "Contiene unos 130 plugins: propios de Cursor (teaching, continual-learning para actualizar AGENTS.md, cursor-team-kit, thermos para revisiones profundas de ramas, create-plugin, ralph-loop, agent-compatibility…) e integraciones de terceros como Ashby o Workable, organizados por categoría.",
@@ -407,7 +372,7 @@
     "latest_release": "v1.99.4.0 (2026-11-15)",
     "checked_at": "2026-11-15"
    },
-   "notas": "Alternativas (elige una): superclaude-framework, superpowers, ecc."
+   "notas": "Alternativas (elige una): superpowers, ecc."
   },
   "elephant-goldfish-model": {
    "que_es": "EGM, plugin de código abierto de Google (Apache 2.0) para asistentes de IA, que separa diseñar con contexto de revisar con ojos frescos. Muy reciente (v0.1.1).",

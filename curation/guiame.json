@@ -173,8 +173,8 @@
      "note": "Punto de partida para aplicaciones internas visuales sobre fuentes de datos."
     },
     "appsmith": {
-     "role": "pending",
-     "note": "Se solapa con ToolJet como constructor de paneles internos. Comparar los widgets y conectores que realmente usa el equipo y qué incluye cada edición antes de retirar la ficha."
+     "role": "alternative",
+     "note": "Elige Appsmith para paneles internos con JavaScript, widgets propios y control de versiones con Git. El plan Free admite hasta tres repos privados."
     },
     "budibase": {
      "role": "alternative",
@@ -315,10 +315,6 @@
     "awesome-agent-skills": {
      "role": "alternative",
      "note": "Directorio de enlaces a skills de sus autores y equipos oficiales. Conservar por esa forma de curación, junto a la colección de playbooks instalables."
-    },
-    "awesome-claude-skills": {
-     "role": "pending",
-     "note": "El directorio general y multiplataforma se solapa con las otras colecciones. Verificar cuántos enlaces o recursos propios de Composio se perderían antes de retirar."
     }
    }
   },
@@ -371,10 +367,6 @@
     "agent-skills": {
      "role": "reference",
      "note": "Material portable para elegir skills individuales. Separar del método de trabajo completo."
-    },
-    "superclaude-framework": {
-     "role": "pending",
-     "note": "Comandos y modos del framework se solapan con ECC y parte de Superpowers. Validar si alguien aprovecha sus personas o un flujo propio en Claude Code."
     }
    }
   },
@@ -418,11 +410,11 @@
     },
     "codebase-memory-mcp": {
      "role": "alternative",
-     "note": "Índice persistente accesible por MCP con foco en consultas compactas."
+     "note": "Elige Codebase Memory MCP para inspeccionar el impacto de cambios de Git con un índice persistente. Su visor local CBM Lens está en beta."
     },
     "gitnexus": {
-     "role": "pending",
-     "note": "El mapa general de código ya está cubierto. Valorar su análisis de flujos y la licencia no comercial de la edición revisada frente a un caso real antes de retirarlo."
+     "role": "reference",
+     "note": "Consulta GitNexus para explorar flujos y previsualizar renombrados con el mismo índice. Revisa PolyForm Noncommercial 1.0.0 si el uso es comercial."
     },
     "repomix": {
      "role": "reference",
@@ -629,8 +621,8 @@
      "note": "Plataforma de agentes y bloques reutilizables en su propio ecosistema."
     },
     "sim": {
-     "role": "pending",
-     "note": "La construcción visual y el despliegue de agentes solapan Dify y Langflow. Conservar si sus permisos por espacio de trabajo, cliente de escritorio o integraciones aportan una ruta propia."
+     "role": "alternative",
+     "note": "Elige Sim para flujos con conectores y un cliente de macOS con navegador, terminal y carpetas autorizadas. El cliente puede conectarse a una instancia propia."
     }
    }
   },
@@ -2098,11 +2090,11 @@
    "members": {
     "react-bits": {
      "role": "principal",
-     "note": "Fuente general de componentes de animación para React."
+     "note": "Empieza con React Bits para efectos puntuales de texto, fondos e interacciones. Si necesitas construir una sección de página, considera Magic UI."
     },
     "magicui": {
-     "role": "pending",
-     "note": "Sus componentes de efecto y secciones animadas se solapan con React Bits. Comparar su catálogo concreto, registro y condiciones de sus plantillas antes de decidir."
+     "role": "alternative",
+     "note": "Elige Magic UI para componer secciones React con cuadrículas de funcionalidades, bloques de video y componentes MIT."
     }
    }
   },
@@ -2457,6 +2449,20 @@
     "dep-scan": {
      "role": "alternative",
      "note": "Auditoría con SBOM, alcance y documentos de intercambio de vulnerabilidades."
+    }
+   }
+  },
+  {
+   "id": "g-conectar-servicios-con-composio",
+   "title": "Conectar servicios con Composio",
+   "members": {
+    "composio": {
+     "role": "principal",
+     "note": "Conecta las cuentas y proporciona las acciones que puede usar tu agente."
+    },
+    "awesome-claude-skills": {
+     "role": "reference",
+     "note": "Consulta las guías de automatización para conectar y usar un servicio mediante Rube MCP de Composio."
     }
    }
   }

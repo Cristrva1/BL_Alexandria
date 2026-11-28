@@ -88,13 +88,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/simstudioai/sim · Apache-2.0 · nivel 2 · 62/100 · alternativa en «Builders visuales de agentes»
 - **Qué es:** Plataforma open source (Apache-2.0) de Sim Studio para construir, desplegar y monitorizar agentes y workflows de IA con un lienzo visual. Hay versión cloud (sim.ai) y autoalojada.
-- **Cuándo elegirlo:** Casos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API.
+- **Cuándo elegirlo:** Buscas un constructor visual que pueda conectarse a servicios de trabajo y un cliente de macOS con navegador, terminal y acceso a carpetas autorizadas.
 - **Requisitos:** nivel 2: preparación media; Node.js 20+; Docker; proveedor o modelo local; hardware prerequisites; API de IA: depends; Node.js 20+; Docker; proveedor o modelo local.
 - **Instalación (documentada en la fuente; no ejecutada):** `npx sim-setup` — fuente: https://github.com/simstudioai/sim/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Construye un flujo visual que recibe texto, lo resume y registra la salida Éxito: La ejecución muestra cada bloque y el resumen final
 - **Combina con:** `ollama` [8/motores], `vllm` [23/serving], `claude-code` [20/terminal], `codex` [20/terminal]
 - **Alternativas:** `langflow`, `dify`, `autogpt`
-- **Riesgos y avisos:** Alternativas (elige una): langflow, dify, autogpt. Combinación anterior con langfuse eliminada: no se encontró integración documentada en el README ni en la…. MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo.
+- **Riesgos y avisos:** Alternativas (elige una): langflow, dify, autogpt. Combinación anterior con langfuse eliminada: no se encontró integración documentada en el README ni en la…. Sim Desktop requiere macOS 12 o posterior y se conecta al despliegue de Sim. En otros sistemas se usa la app web.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 
