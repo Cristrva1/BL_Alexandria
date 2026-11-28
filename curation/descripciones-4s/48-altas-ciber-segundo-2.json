@@ -510,35 +510,6 @@
    },
    "licencia_nota": "Caido no es open source: el repositorio de GitHub solo aloja roadmap, issues y plugins, no el código del producto. Plan Basic gratuito con límites (2 proyectos, 7 workflows, 3 plugins, sin asistente IA ni backups); planes Individual, Team y Enterprise de pago (caido.io/pricing, consultado 2026-11-16). Alternativa open source en el catálogo: ZAP."
   },
-  "loki": {
-   "que_es": "IOC scanner de Neo23x0 (GPL-3).",
-   "que_hace": "Busca indicadores en el filesystem.",
-   "como_lo_hace": "Release / clone.",
-   "combina_con": [
-    {
-     "id": "yara",
-     "motivo": "Usa reglas YARA.",
-     "orden_instalacion": "YARA → LOKI."
-    },
-    {
-     "id": "misp",
-     "motivo": "IOCs desde MISP.",
-     "orden_instalacion": "MISP → LOKI."
-    }
-   ],
-   "fuentes": [
-    "https://github.com/Neo23x0/Loki#readme"
-   ],
-   "github": {
-    "name_with_owner": "Neo23x0/Loki",
-    "archived": false,
-    "pushed_at": "2026-01-12",
-    "license": "GPL-3.0",
-    "primary_language": "Python",
-    "checked_at": "2026-11-16",
-    "latest_release": "v0.51.0 (2023-05-18)"
-   }
-  },
   "detection-rules": {
    "que_es": "Detection rules Elastic (Elastic License 2.0).",
    "que_hace": "Provee detecciones listas para Elastic Security.",

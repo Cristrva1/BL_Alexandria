@@ -4,6 +4,14 @@
 
 > Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.
 
+## Cuándo elegir esta ficha
+
+Una plantilla TypeScript es útil para desarrollar. Las skills orientan el trabajo con formatos y cubren otro objetivo, así que conviene enlazar ambas por tarea.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/obsidianmd/obsidian-sample-plugin/blob/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/README.md) · [Fuente 2](https://api.github.com/repos/obsidianmd/obsidian-sample-plugin) · [Fuente 3](https://github.com/obsidianmd/obsidian-sample-plugin/commit/07ceb81d1fb3384af611ebf665a1ec42a7e5926d)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 4.7k | 0BSD | TypeScript | 2026-11-14 |

@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Revisión del índice: 2026-11-27 · 974 repos curados · Documento 100% para IA.
+> Revisión del índice: 2026-11-27 · 973 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **974 repos** de IA y
+proyecto concreto. Tienes un menú curado de **973 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -514,9 +514,10 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `ui` [L|loc|E|?] — Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de in — tags: ui,typescript — alt: mui,ant-design,daisyui
 - `ui-sdk` [L|loc|M|+] — Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción def — tags: ia-ui,library,typescript
 
-### 10. Dashboards, analítica y mapas (31)
+### 10. Dashboards, analítica y mapas (33)
 Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 
+- `awesome-bigdata` [D|cld|E|?] — Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para des — tags: data
 - `awesome-dataviz` [D|cld|E|?] — Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad — tags: automation,dataviz,javascript
 - `chart-js` [L|loc|E|+] — Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. — tags: dataviz,javascript — alt: echarts,recharts
 - `d3` [L|loc|M|+] — Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML. — tags: dataviz,javascript — alt: echarts
@@ -524,6 +525,7 @@ Detalle: `REPO_MENU_cats/10-dashboards-anal-tica-y-mapas.md`
 - `deck.gl` [L|loc|E|+] — Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos, con capas apilables sobre mapas y — tags: dataviz,typescript,library,maps
 - `echarts` [L|loc|M|+] — Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gr — tags: dataviz,typescript — alt: d3,chart-js,recharts
 - `evidence` [A|loc|E|+] — BI como código: informes y visualizaciones interactivas escritos en SQL y Markdown, autoalojables o publicados — tags: dataviz,analytics,typescript,app
+- `globalbuildingatlas` [D|loc|H|?] — Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. — tags: datos,python
 - `gods-eye-view` [A|loc|M|+] — Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el na — tags: osint,app,javascript — alt: osiris
 - `grafana` [P|loc|E|?] — Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes. — tags: observability,dataviz,typescript,docker
 - `kepler.gl` [A|loc|E|+] — Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente — tags: dataviz,typescript,app,maps
@@ -701,7 +703,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `vaultwarden` [P|loc|H|+] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
 - `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable — tags: automation,typescript,iot,self-hosted
 
-### 16. Analizar software y comprobar su seguridad (147)
+### 16. Analizar software y comprobar su seguridad (146)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 
 - `aflplusplus` [A|loc|-|+] — Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. — tags: security
@@ -713,7 +715,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `arkime` [A|loc|-|+] — Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red. — tags: security
 - `asvs` [D|loc|E|?] — Estándar OWASP de verificación de seguridad de aplicaciones: requisitos verificables en tres niveles para dise — tags: security,standard,requirements,appsec
 - `atomic-red-team` [D|loc|M|?] — Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio pr — tags: security,attack,purple
-- `autopsy` [A|loc|M|?] — GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. — tags: security — alt: sleuthkit
+- `autopsy` [A|loc|M|?] — GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. — tags: security
 - `awesome-ai-reverse-engineering` [D|loc|E|?] — Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. — tags: referencias,reference
 - `awesome-reverse-engineering` [D|loc|E|?] — Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. — tags: referencias,reference,python
 - `bandit` [A|loc|E|?] — Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inse — tags: python,análisis estático,seguridad,cli
@@ -761,7 +763,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `hacktricks` [D|loc|E|+] — Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunid — tags: security
 - `hashcat` [A|loc|M|?] — Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos — tags: pruebas,c,security,cli — alt: john
 - `hayabusa` [A|loc|E|?] — Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y orientado a DFIR. — tags: security
-- `httpx` [A|loc|E|+] — Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para f — tags: security,http,recon,go — alt: naabu
+- `httpx` [A|loc|E|+] — Sondea URLs y hosts HTTP/HTTPS a gran velocidad: códigos, títulos, tecnologías y cadenas de redirección para f — tags: security,http,recon,go
 - `ilspy` [A|loc|E|?] — Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles. — tags: reversing,app,c
 - `imhex` [A|loc|E|+] — Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante — tags: reversing,app,c
 - `impacket` [L|loc|M|+] — Biblioteca Python de protocolos Windows (SMB, MSRPC, Kerberos…) usada como base de casi todo el tooling de Act — tags: security,ad,python,library
@@ -774,7 +776,6 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `kube-bench` [A|loc|M|+] — Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración. — tags: security
 - `ligolo-ng` [A|loc|M|?] — Túneles de pivoting modernos (agente/proxy) para moverse por redes de un alcance de pentest autorizado. — tags: security
 - `locust` [A|loc|E|+] — Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, co — tags: pruebas,python,app — alt: k6
-- `loki` [A|loc|E|?] — Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos. — tags: security
 - `lynis` [A|loc|E|?] — Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere — tags: security,shell,cli
 - `masscan` [A|loc|M|?] — Escáner de puertos a escala Internet (AGPL): asíncrono y muy rápido; peligroso si se apunta fuera de alcance. — tags: security
 - `mastg` [D|loc|E|?] — Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas, herramientas y casos de prueba l — tags: security,mobile,android,ios,guide
@@ -786,7 +787,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `mobsf` [P|loc|M|?] — Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, — tags: móvil,android,ios,análisis estático,seguridad
 - `modsecurity` [R|loc|-|+] — Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWA — tags: security,waf,http,nginx,c++ — alt: coraza
 - `mythic` [A|loc|-|?] — Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. — tags: security — alt: empire,sliver
-- `naabu` [A|loc|E|+] — Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. — tags: security,portscan,go — alt: httpx
+- `naabu` [A|loc|E|+] — Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. — tags: security,portscan,go
 - `netexec` [A|loc|M|+] — Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credencial — tags: security,ad,python
 - `nettacker` [A|loc|E|+] — Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilid — tags: security,pentest,scanner,python
 - `nmap` [A|loc|E|?] — El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE par — tags: pruebas,c,security,cli
@@ -827,7 +828,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `shuffle` [A|loc|-|+] — SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. — tags: security
 - `sigma` [D|loc|M|?] — Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. — tags: security,detection,siem
 - `skillspector` [A|cld|E|+] — Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. — tags: skills,coding-agent,python
-- `sleuthkit` [L|loc|M|?] — Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evid — tags: security — alt: autopsy
+- `sleuthkit` [L|loc|M|?] — Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evid — tags: security
 - `sliver` [A|loc|-|+] — Framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y can — tags: security,c2,redteam — alt: mythic,empire
 - `social-engineer-toolkit` [A|loc|M|+] — Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y vectores solo con consentimiento. — tags: security
 - `sqlmap` [A|loc|E|?] — Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el — tags: pruebas,python,security,cli
@@ -1076,19 +1077,17 @@ Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 - `unsloth` [A|loc|M|+] — App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcional — tags: training,local,python — prov: local — alt: llama-factory,axolotl,torchtune
 - `verl` [L|loc|H|+] — Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros alg — tags: training,python,rl,gpu — alt: openrlhf
 
-### 25. Procesar datos y trabajar con notebooks (23)
+### 25. Procesar datos y trabajar con notebooks (21)
 Detalle: `REPO_MENU_cats/25-procesar-datos-y-trabajar-con-notebooks.md`
 
 - `apache-iceberg` [L|loc|M|?] — Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación d — tags: data,lakehouse,table-format,java — alt: delta-lake,hudi
 - `arrow` [L|loc|E|?] — Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin cop — tags: data,columnar,python,cpp
-- `awesome-bigdata` [D|cld|E|?] — Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para des — tags: data
 - `clickhouse` [P|loc|M|+] — Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones d — tags: database,sql,analytics,cpp
 - `dash` [L|loc|M|?] — Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con compone — tags: automation,ui,python
 - `dbt` [A|loc|M|+] — Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y de — tags: data,sql,etl,analytics
 - `delta-lake` [L|loc|M|+] — Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y — tags: data,lakehouse,table-format,scala — alt: apache-iceberg,hudi
 - `dlt` [L|loc|E|+] — Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o alm — tags: data,etl,python,pipeline
 - `duckdb` [L|loc|E|?] — Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. — tags: data,analytics,cpp — alt: polars
-- `globalbuildingatlas` [D|loc|H|?] — Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. — tags: datos,python
 - `gradio` [L|loc|E|+] — Librería Python para crear y compartir apps web de modelos de ML en minutos. — tags: ui,python — alt: streamlit,reflex,nicegui,panel
 - `hudi` [P|hyb|H|+] — Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. — tags: datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi — alt: apache-iceberg,delta-lake
 - `ibis` [L|loc|E|+] — Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHous — tags: data,python,dataframe,sql
@@ -1152,7 +1151,7 @@ Detalle: `REPO_MENU_cats/27-skills-de-dise-o-contenido-y-especialidades.md`
 - `claude-seo` [S|loc|M|+] — Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de u — tags: dominio,skill,python
 - `creative-architect` [S|hyb|E|+] — Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de ima — tags: direccion-de-arte,fotos-producto,ugc,claude-code,creative-architect — prov: anthropic,openai
 - `design-dna` [S|loc|M|+] — Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo cohe — tags: skills,skill,javascript
-- `design.md` [L|cld|E|+] — Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones. — tags: skills,design,typescript
+- `design.md` [L|loc|E|+] — Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones. — tags: skills,design,typescript
 - `dream-loop` [S|loc|M|+] — Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimension — tags: skills,skill,javascript
 - `financial-services` [S|cld|M|+] — Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. — tags: dominio,python — prov: anthropic
 - `front-end-checklist` [D|loc|E|?] — Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. — tags: skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend

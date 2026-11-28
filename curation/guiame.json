@@ -1530,11 +1530,11 @@
    "members": {
     "atomic-red-team": {
      "role": "principal",
-     "note": "Ficha principal para documentación de validación de detecciones y controles."
+     "note": "Biblioteca de casos documentados. El catálogo la conserva como consulta descriptiva."
     },
     "caldera": {
      "role": "reference",
-     "note": "Conservar como referencia de laboratorio e inventario de emulación, fuera de flujos operativos recomendados."
+     "note": "Plataforma de emulación y referencia descriptiva para entender la categoría."
     }
    },
    "reference_only": true
@@ -1559,11 +1559,11 @@
    "members": {
     "autopsy": {
      "role": "principal",
-     "note": "Trabajo forense con interfaz, casos y módulos de ingestión."
+     "note": "Interfaz gráfica forense que usa The Sleuth Kit. Úsala para explorar una imagen de ejemplo propia o autorizada."
     },
     "sleuthkit": {
      "role": "reference",
-     "note": "Base de análisis de discos que usa Autopsy. Conservar como herramienta de consola y dependencia."
+     "note": "Motor y herramientas para examinar imágenes de disco. Autopsy usa The Sleuth Kit y añade una interfaz gráfica."
     }
    }
   },
@@ -1935,11 +1935,11 @@
    "members": {
     "httpx": {
      "role": "principal",
-     "note": "Ficha principal para inventario autorizado de servicios web propios."
+     "note": "Herramienta de observación HTTP. Naabu aporta resultados de puertos y cubre otra función."
     },
     "naabu": {
      "role": "reference",
-     "note": "Cubre inventario de puertos, distinto del inventario HTTP. Mantener como referencia defensiva en su propia ficha."
+     "note": "Herramienta que informa de puertos. httpx describe servicios HTTP y cubre otra función."
     }
    },
    "reference_only": true

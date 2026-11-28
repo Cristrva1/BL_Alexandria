@@ -4,6 +4,12 @@
 
 > Reúne datos meteorológicos y de mercados de predicción para explorar cómo las previsiones afectan a contratos relacionados con el clima.
 
+## Cuándo elegir esta ficha
+
+Conservar la especialidad meteorológica, ciudades y lógica de evaluación. El propio README excluye del repo datos privados, reglas operativas y código de ejecución del negocio. No hay reemplazo exacto en el bloque.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/yangyuan-zhen/PolyWeather/blob/HEAD/README.md) · [Fuente 2](https://github.com/yangyuan-zhen/PolyWeather/commit/d3a02039208f88860cbe02e0846a8a23783b220a)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 347 | AGPL-3.0 | Python | 2026-11-22 |

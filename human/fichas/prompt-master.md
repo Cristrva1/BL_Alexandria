@@ -4,6 +4,14 @@
 
 > Skill de Claude que ayuda a formular encargos para distintas herramientas de IA; no garantiza ahorro de tokens.
 
+## Cuándo elegir esta ficha
+
+El README presenta una skill para Claude y una plantilla de salida orientada a Antigravity. El perfil de destino del prompt aporta una referencia para el tema de Antigravity.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/nidhinjs/prompt-master/blob/49b3a72469b1e7287d66387004ccfcca90e5968a/README.md) · [Fuente 2](https://github.com/nidhinjs/prompt-master/blob/main/README.md) · [Fuente 3](https://github.com/nidhinjs/prompt-master)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 16k | MIT | — | 2026-06-23 |

@@ -57,8 +57,8 @@ Grupo **Librerías de gráficos**: echarts ocupa la posición 1 de 4 (recomendad
 |---:|---|---:|---|
 | 1 | **echarts** (esta ficha) ⭐ recomendado | 71 | Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas. |
 | 2 | [D3.js](d3.md) | 70 | Si necesitas visualizaciones a medida y control total sobre SVG. |
-| 3 | [Recharts](recharts.md) | 69 | Si usas React y quieres gráficos declarativos con pocas líneas. |
-| 4 | [Chart.js](chart-js.md) | 64 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
+| 3 | [Recharts](recharts.md) | 70 | Si usas React y quieres gráficos declarativos con pocas líneas. |
+| 4 | [Chart.js](chart-js.md) | 65 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
 
 ## Acceso, coste y equipo
 

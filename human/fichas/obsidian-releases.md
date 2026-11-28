@@ -4,6 +4,14 @@
 
 > Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación.
 
+## Cuándo elegir esta ficha
+
+Preserva el vínculo oficial para instalación de cliente y descubrimiento de extensiones.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/obsidianmd/obsidian-releases/blob/2da968b2dc85222508f6140a7b288c9c9d628882/README.md) · [Fuente 2](https://api.github.com/repos/obsidianmd/obsidian-releases) · [Fuente 3](https://github.com/obsidianmd/obsidian-releases/commit/2da968b2dc85222508f6140a7b288c9c9d628882)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 23.3k | — | — | 2026-11-14 |

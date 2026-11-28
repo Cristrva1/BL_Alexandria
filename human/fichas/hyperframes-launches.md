@@ -4,6 +4,14 @@
 
 > Publica composiciones con código usadas en videos de lanzamiento de HeyGen para estudiar cómo se montan escenas y animaciones.
 
+## Cuándo elegir esta ficha
+
+La unidad del repo es una composición de ejemplo para HyperFrames. Llevarlo a recursos del motor con su ficha y licencias de assets, en vez de ofrecer una app adicional.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/heygen-com/hyperframes-launches/blob/d7ac35069d74a3a437780579b3b7fe2f3eeace5f/README.md) · [Fuente 2](https://github.com/heygen-com/hyperframes-launches/commit/d7ac35069d74a3a437780579b3b7fe2f3eeace5f) · [Fuente 3](https://github.com/heygen-com/hyperframes/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 693 | Apache-2.0 | HTML | 2026-11-22 |

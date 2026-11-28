@@ -32,7 +32,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Docker o entorno del capítulo; datasets; cuaderno elegido; hardware prerequisites; API de IA: opcional; Docker o entorno del capítulo; datasets; cuaderno elegido.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up ml4t` — fuente: https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Reproduce un notebook introductorio con datos gratuitos y separa entrenamiento y prueba temporal Éxito: Puedes explicar los supuestos y reproducir una métrica fuera de muestra
-- **Combina con:** `qlib` [14/cuant], `vectorbt` [14/cuant], `marimo` [25/datos], `finrl` [14/cuant]
+- **Combina con:** `qlib` [14/cuant], `vectorbt` [14/cuant], `marimo` [25/apps], `finrl` [14/cuant]
 - **Riesgos y avisos:** Sin alternativas declaradas. Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md

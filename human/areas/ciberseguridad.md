@@ -4,11 +4,11 @@
 
 Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
 
-158 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
+157 repos únicos · 13 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
 
 ## Opciones para empezar
 
-[Cybersecurity Skills (comunidad)](../fichas/cybersecurity-skills.md), [Semgrep](../fichas/semgrep.md), [ghidra](../fichas/ghidra.md)
+[Semgrep](../fichas/semgrep.md), [ghidra](../fichas/ghidra.md)
 
 Son opciones para comparar. No es necesario instalar todas.
 
@@ -18,12 +18,11 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Agentes y skills que guían revisiones de seguridad.
 
-[Explorar 10 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-auditoria)
+[Explorar 9 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-auditoria)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [craft-anything](../fichas/craft-anything.md) | Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes. | Depende de la ruta elegida |
-| [Cybersecurity Skills (comunidad)](../fichas/cybersecurity-skills.md) | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica |
 | [Defending Code Reference Harness](../fichas/defending-code-reference-harness.md) | Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades. | Depende de la ruta elegida |
 | [garak](../fichas/garak.md) | Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas. | API de IA opcional |
 | [rea](../fichas/rea.md) | Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de código. | Sin clave propia de API de IA en la ruta básica |
@@ -61,7 +60,7 @@ Comprender procesos y examinar cómo se comporta el software.
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [dnSpy](../fichas/dnspy.md) | Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. | Sin clave propia de API de IA en la ruta básica |
+| [dnSpyEx](../fichas/dnspy.md) | Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. | Sin clave propia de API de IA en la ruta básica |
 | [GhidraMCP](../fichas/ghidramcp.md) | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | Sin clave propia de API de IA en la ruta básica |
 | [pwndbg](../fichas/pwndbg.md) | Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más. | Sin clave propia de API de IA en la ruta básica |
 | [raddebugger](../fichas/raddebugger.md) | Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas. | Sin clave propia de API de IA en la ruta básica |
@@ -71,7 +70,7 @@ Comprender procesos y examinar cómo se comporta el software.
 
 Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-[Explorar 45 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-pruebas)
+[Explorar 46 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -106,6 +105,7 @@ Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 | [OWASP Java HTML Sanitizer](../fichas/java-html-sanitizer.md) | Biblioteca Java de OWASP que limpia HTML de terceros con políticas configurables para incrustarlo sin riesgo de XSS. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Juice Shop](../fichas/juice-shop.md) | Aplicación web vulnerable oficial de OWASP para entrenar AppSec: cientos de retos y puntuación. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Nettacker](../fichas/nettacker.md) | Marco OWASP de pruebas de penetración automatizadas: escaneo de puertos, subdominios, servicios y vulnerabilidades con módulos YAML. | Sin clave propia de API de IA en la ruta básica |
+| [OWASP Noir](../fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP OWTF](../fichas/owtf.md) | Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web siguiendo la WSTG y PTES desde una interfaz web. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP pytm](../fichas/pytm.md) | Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP secureCodeBox](../fichas/securecodebox.md) | Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis continuos. | Sin clave propia de API de IA en la ruta básica |
@@ -125,7 +125,7 @@ Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
 Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
-[Explorar 28 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ofensiva)
+[Explorar 27 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-ofensiva)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -149,7 +149,6 @@ Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 | [Naabu](../fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Sin clave propia de API de IA en la ruta básica |
 | [NetExec](../fichas/netexec.md) | Suite de post-explotación y enumeración de redes Windows/AD (sucesora de CrackMapExec) para validar credenciales y movimientos laterales. | Sin clave propia de API de IA en la ruta básica |
 | [Nmap](../fichas/nmap.md) | El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada. | Sin clave propia de API de IA en la ruta básica |
-| [OWASP Noir](../fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Sin clave propia de API de IA en la ruta básica |
 | [PEASS-ng](../fichas/peass-ng.md) | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de privilegios en hosts Linux/Windows/macOS comprometidos. | Sin clave propia de API de IA en la ruta básica |
 | [Responder](../fichas/responder.md) | Envenena LLMNR/NBT-NS/mDNS y captura hashes en redes internas de laboratorio. | Sin clave propia de API de IA en la ruta básica |
 | [Rubeus](../fichas/rubeus.md) | Toolkit C# de abuso Kerberos (TGT/TGS, kerberoast, AS-REP) para laboratorios AD autorizados. | Sin clave propia de API de IA en la ruta básica |
@@ -162,7 +161,7 @@ Reconocimiento, explotación y Active Directory dentro de un alcance firmado.
 
 SIEM, IDS y bloqueo de ataques en sistemas propios.
 
-[Explorar 16 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-deteccion)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -170,7 +169,6 @@ SIEM, IDS y bloqueo de ataques en sistemas propios.
 | [CrowdSec](../fichas/crowdsec.md) | IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes. | Sin clave propia de API de IA en la ruta básica |
 | [Elastic detection-rules](../fichas/detection-rules.md) | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. | Sin clave propia de API de IA en la ruta básica |
 | [Fail2ban](../fichas/fail2ban.md) | Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…); defensa clásica de hosts. | Sin clave propia de API de IA en la ruta básica |
-| [LOKI](../fichas/loki.md) | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos. | Sin clave propia de API de IA en la ruta básica |
 | [ModSecurity](../fichas/modsecurity.md) | Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWASP Core Rule Set. | Sin clave propia de API de IA en la ruta básica |
 | [osquery](../fichas/osquery.md) | Instrumenta el endpoint como base SQL: procesos, sockets, usuarios y más, base de muchos EDR y hunts. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP Coraza](../fichas/coraza.md) | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik. | Sin clave propia de API de IA en la ruta básica |
@@ -272,5 +270,27 @@ Compartir IOCs, modelar campañas y enriquecer el SOC.
 |---|---|---|
 | [MISP](../fichas/misp.md) | Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizaciones. | Sin clave propia de API de IA en la ruta básica |
 | [OpenCTI](../fichas/opencti.md) | Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE. | Sin clave propia de API de IA en la ruta básica |
+
+### Revisar código y dependencias propias
+
+Revisar rutas, reglas y dependencias en código que se administra.
+
+[Explorar 3 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-estatico)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [OWASP Noir](../fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Sin clave propia de API de IA en la ruta básica |
+| [Semgrep](../fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Sin clave propia de API de IA en la ruta básica |
+| [Trivy](../fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Sin clave propia de API de IA en la ruta básica |
+
+### Inventario de red local
+
+Consultar presencia y disponibilidad de dispositivos propios.
+
+[Explorar 1 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-red-local)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Pi.Alert](../fichas/pi-alert-leiweibau.md) | Lleva un inventario de dispositivos de una red propia y avisa cuando aparece uno nuevo o deja de responder uno conocido. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

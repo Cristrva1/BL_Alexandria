@@ -4,6 +4,14 @@
 
 > Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain.
 
+## Cuándo elegir esta ficha
+
+El README es un índice de recursos. Conservar enlace junto al framework en vez de tratarlo como otro framework Python.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/vonzosten/awesome-LangGraph/blob/edd0fb9cf4f109c60a6196c36a44da9f8e81fa60/README.md) · [Fuente 2](https://github.com/vonzosten/awesome-LangGraph/blob/main/README.md) · [Fuente 3](https://github.com/vonzosten/awesome-LangGraph)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 2k | CC0-1.0 | JavaScript | 2026-06-23 |

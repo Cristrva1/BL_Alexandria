@@ -4,6 +4,12 @@
 
 > Agente general de código abierto inspirado en Manus: planifica tareas y usa navegador, Python y archivos mediante herramientas y MCP.
 
+## Cuándo elegir esta ficha
+
+El upstream presenta una app de agente general, con código reutilizable para quien lo estudia. Su primer resultado pertenece a asistentes.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/FoundationAgents/OpenManus/blob/3309bf4e416fb1c74b008f3e86494439a31bad53/README.md) · [Fuente 2](https://github.com/FoundationAgents/OpenManus/blob/main/README.md) · [Fuente 3](https://github.com/FoundationAgents/OpenManus)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 59k | MIT | Python | 2026-11-16 |

@@ -54,7 +54,7 @@ Grupo **Cracking de contraseñas**: hashcat ocupa la posición 1 de 2 (recomenda
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **hashcat** (esta ficha) ⭐ recomendado | 62 | Si buscas esto: utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. |
-| 2 | [John the Ripper (jumbo)](john.md) | 55 | Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. |
+| 2 | [John the Ripper (jumbo)](john.md) | 54 | Si buscas esto: crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. |
 
 ## Acceso, coste y equipo
 

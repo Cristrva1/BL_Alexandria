@@ -4,6 +4,12 @@
 
 > API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.
 
+## Cuándo elegir esta ficha
+
+Biblioteca Python y CLI no oficiales para NotebookLM. Depende del servicio remoto y de una sesión compatible.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/teng-lin/notebooklm-py/159414513d6ce2bfcc22401b3f7c3ab9e7d9ccc1/README.md) · [Fuente 2](https://api.github.com/repos/teng-lin/notebooklm-py) · [Fuente 3](https://github.com/teng-lin/notebooklm-py/commit/159414513d6ce2bfcc22401b3f7c3ab9e7d9ccc1)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 20.2k | MIT | Python | 2026-06-23 |

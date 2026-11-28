@@ -20,14 +20,14 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `metasploit` | Framework de referencia para pruebas de penetración: módulos de exploits… | 3 Avanzado | 73 | BSD-3-Clause (OSI copyleft) | sin grupo |
 | `peass-ng` | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de… | 3 Avanzado | 73 | GPL-2.0-or-later (con aclaraciones) (OSI copyleft) | sin grupo |
-| `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 69 | GPL-3.0 (OSI copyleft) | recomendado |
-| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 63 | Apache-2.0 (OSI permisiva) | recomendado |
-| `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
+| `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 68 | GPL-3.0 (OSI copyleft) | recomendado |
+| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `empire` | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma… | 4 Experto | 60 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `evilginx2` | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 52 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `evilginx2` | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 54 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `ligolo-ng` | Túneles de pivoting modernos (agente/proxy) para moverse por redes de un… | 3 Avanzado | 48 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `mythic` | Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía… | 4 Experto | 48 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `ligolo-ng` | Túneles de pivoting modernos (agente/proxy) para moverse por redes de un… | 3 Avanzado | 47 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `social-engineer-toolkit` | Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y… | 3 Avanzado | 45 | — (sin licencia detectada) | sin grupo |
+| `social-engineer-toolkit` | Toolkit clásico de ingeniería social (TrustedSec): plantillas de phishing y… | 3 Avanzado | 46 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -57,7 +57,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Sliver (`sliver`)
 
-- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 69/100 · recomendado en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 68/100 · recomendado en «Frameworks de C2 y post-explotación»
 - **Qué es:** C2 open source de Bishop Fox orientado a red team y emulación autorizada (alternativa a Cobalt Strike de pago).
 - **Cuándo elegirlo:** Casos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -69,26 +69,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 63/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 63/100
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` — fuente: https://github.com/apache/caldera/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Arranca con `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` y abre la UI en el puerto 8888. Éxito: Accedes a la consola para crear una operación de lab.
 - **Combina con:** `atomic-red-team`, `wazuh` [16/deteccion], `metasploit`
-- **Alternativas:** `atomic-red-team`
-- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
-
-### Atomic Red Team (`atomic-red-team`)
-
-- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 62/100 · alternativa en «Emulación de adversarios»
-- **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
-- **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
-- **Combina con:** `wazuh` [16/deteccion], `sigma` [16/deteccion], `caldera`, `evilginx2`
-- **Alternativas:** `caldera`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Empire (`empire`)
@@ -103,15 +90,37 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `sliver`, `mythic`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
+### Atomic Red Team (`atomic-red-team`)
+
+- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 58/100
+- **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
+- **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
+- **Combina con:** `wazuh` [16/deteccion], `sigma` [16/deteccion], `caldera`, `evilginx2`
+- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
+
 ### Evilginx2 (`evilginx2`)
 
-- **Repo:** https://github.com/kgretzky/evilginx2 · BSD-3-Clause · nivel 4 · 52/100
+- **Repo:** https://github.com/kgretzky/evilginx2 · BSD-3-Clause · nivel 4 · 54/100
 - **Qué es:** Framework MITM de phishing moderno (BSD-3-Clause) de kgretzky; sucesor de Evilginx 2017.
 - **Cuándo elegirlo:** Casos: entrenar al personal con un phishing MFA controlado; evaluar la detección de reverse-proxy phishing.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Makefile, go.mod; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/kgretzky/evilginx2/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Sigue la documentación oficial de Evilginx para instalar el release en un VPS de laboratorio aislado. Éxito: El phishlet de prueba captura una sesión de un usuario voluntario.
 - **Combina con:** `nuclei` [16/pruebas], `wazuh` [16/deteccion], `atomic-red-team`
+- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
+
+### Ligolo-ng (`ligolo-ng`)
+
+- **Repo:** https://github.com/nicocha30/ligolo-ng · GPL-3.0 · nivel 3 · 48/100
+- **Qué es:** Pivoting tunnel GPL-3.
+- **Cuándo elegirlo:** Casos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado.
+- **Requisitos:** nivel 3: preparación media, dominio especializado; Go, Makefile, go.mod; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nicocha30/ligolo-ng/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga agent y proxy desde Releases y sigue docs.ligolo.ng en un lab. Éxito: El túnel conecta las redes del ejercicio.
+- **Combina con:** `metasploit`, `sliver`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Mythic (`mythic`)
@@ -126,20 +135,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `sliver`, `empire`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### Ligolo-ng (`ligolo-ng`)
-
-- **Repo:** https://github.com/nicocha30/ligolo-ng · GPL-3.0 · nivel 3 · 47/100
-- **Qué es:** Pivoting tunnel GPL-3.
-- **Cuándo elegirlo:** Casos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado.
-- **Requisitos:** nivel 3: preparación media, dominio especializado; Go, Makefile, go.mod; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nicocha30/ligolo-ng/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga agent y proxy desde Releases y sigue docs.ligolo.ng en un lab. Éxito: El túnel conecta las redes del ejercicio.
-- **Combina con:** `metasploit`, `sliver`
-- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
-
 ### SET (`social-engineer-toolkit`)
 
-- **Repo:** https://github.com/trustedsec/social-engineer-toolkit · — · nivel 3 · 45/100
+- **Repo:** https://github.com/trustedsec/social-engineer-toolkit · — · nivel 3 · 46/100
 - **Qué es:** SET de TrustedSec (licencia en readme/LICENSE; API sin SPDX).
 - **Cuándo elegirlo:** Casos: simulación de phishing interna autorizada; entrenamiento de concienciación.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, Dockerfile, pyproject.toml, requirements.txt, setup.py; API de IA: no.

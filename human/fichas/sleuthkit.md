@@ -4,6 +4,12 @@
 
 > Toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco.
 
+## Cuándo elegir esta ficha
+
+Motor y herramientas para examinar imágenes de disco. Autopsy usa The Sleuth Kit y añade una interfaz gráfica.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/sleuthkit/sleuthkit/blob/3dcb43668d811548206fbeaf5e0c9753202f672f/README.md) · [Fuente 2](https://github.com/sleuthkit/sleuthkit/commit/3dcb43668d811548206fbeaf5e0c9753202f672f) · [Fuente 3](https://www.sleuthkit.org/sleuthkit/download.php)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3.2k | — | C | 2026-11-16 |
@@ -12,7 +18,7 @@
 
 **Nivel:** 3 Avanzado — preparación media; requiere programar con él; dominio especializado
 
-**Puntuación de calidad** 42/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 38/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -32,19 +38,11 @@ Build desde fuente / paquetes.
 |---|---|---|
 | [Velociraptor](velociraptor.md) | Velociraptor adquiere; TSK analiza discos. | Adquisición → TSK. |
 | [Volatility 3](volatility3.md) | Memoria con Volatility; disco con TSK. | Complementarios. |
+| [Autopsy](autopsy.md) | Autopsy ofrece una interfaz gráfica que utiliza The Sleuth Kit. | Consulta los componentes incluidos en la distribución oficial. |
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada sleuthkit-4.15.0 (2026-04-15) (consultado el 2026-11-16).
 
 <sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-16); no se instaló ni ejecutó. Fuentes: [1](https://github.com/sleuthkit/sleuthkit#readme) · [2](https://www.sleuthkit.org/sleuthkit/)</sub>
-
-## Ver similares
-
-Grupo **Análisis forense de discos**: The Sleuth Kit ocupa la posición 2 de 2 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
-
-| # | Repo | Puntuación | Cuándo elegirlo |
-|---:|---|---:|---|
-| 1 | [Autopsy](autopsy.md) ⭐ recomendado | 46 | Si buscas esto: gUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. |
-| 2 | **The Sleuth Kit** (esta ficha) | 42 | Si buscas esto: toolkit forense de sistemas de archivos: recupera y analiza particiones, ficheros borrados y metadatos en evidencias de disco. |
 
 ## Acceso, coste y equipo
 
@@ -109,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** C
 - **Etiquetas:** `security`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Autopsy](autopsy.md) | 3.5k | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. |
 
 ## Enlaces
 

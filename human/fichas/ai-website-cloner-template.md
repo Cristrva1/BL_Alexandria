@@ -4,6 +4,14 @@
 
 > Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
 
+## Cuándo elegir esta ficha
+
+Referencia de prototipado con diseños y activos propios o autorizados. Para diseñar desde cero, usa Penpot.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/JCodesMore/ai-website-cloner-template) · [Fuente 2](https://github.com/abi/screenshot-to-code) · [Fuente 3](https://github.com/google-labs-code/stitch-sdk)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 39.1k | MIT | TypeScript | 2026-11-14 |

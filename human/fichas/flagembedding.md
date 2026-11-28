@@ -4,6 +4,12 @@
 
 > Calcula representaciones y relevancia de textos con modelos BGE para ordenar documentos según una consulta de búsqueda.
 
+## Cuándo elegir esta ficha
+
+Vincular junto a la tarea de representar y reranquear. Weaviate con módulo compatible puede cubrir vectorización integrada en algunos casos, con otros modelos y requisitos.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/FlagOpen/FlagEmbedding/blob/897baa67c0ffddbfccf4e6776ff55310d67809d4/README.md) · [Fuente 2](https://api.github.com/repos/FlagOpen/FlagEmbedding) · [Fuente 3](https://github.com/FlagOpen/FlagEmbedding/commit/897baa67c0ffddbfccf4e6776ff55310d67809d4)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 12.4k | MIT | Python | 2026-11-22 |

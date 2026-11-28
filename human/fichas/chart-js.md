@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -48,8 +48,8 @@ Grupo **Librerías de gráficos**: Chart.js ocupa la posición 4 de 4 (alternati
 |---:|---|---:|---|
 | 1 | [echarts](echarts.md) ⭐ recomendado | 71 | Si necesitas muchos tipos de gráfico, grandes volúmenes de datos y mapas. |
 | 2 | [D3.js](d3.md) | 70 | Si necesitas visualizaciones a medida y control total sobre SVG. |
-| 3 | [Recharts](recharts.md) | 69 | Si usas React y quieres gráficos declarativos con pocas líneas. |
-| 4 | **Chart.js** (esta ficha) | 64 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
+| 3 | [Recharts](recharts.md) | 70 | Si usas React y quieres gráficos declarativos con pocas líneas. |
+| 4 | **Chart.js** (esta ficha) | 65 | Si quieres gráficos clásicos en canvas sin framework y con poca configuración. |
 
 ## Acceso, coste y equipo
 

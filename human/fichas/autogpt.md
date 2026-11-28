@@ -4,6 +4,12 @@
 
 > Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques.
 
+## Cuándo elegir esta ficha
+
+El README del commit revisado se centra en especialistas y rutinas de la plataforma alojada de pago. Conserva un builder visual, una ruta propia con credenciales de modelo y Classic por separado. PolyForm Shield rige la plataforma y Classic usa MIT.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Significant-Gravitas/AutoGPT/blob/HEAD/README.md) · [Fuente 2](https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md) · [Fuente 3](https://github.com/Significant-Gravitas/AutoGPT)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 188k | MIT + Polyform Shield (autogpt_platform/) | Python | 2026-11-10 |

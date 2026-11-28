@@ -4,6 +4,14 @@
 
 > Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado.
 
+## Cuándo elegir esta ficha
+
+Referencia experimental. Si solo quieres investigar una empresa o una tesis, compara con Dexter o TradingAgents usando datos de prueba.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/The-Swarm-Corporation/AutoHedge/blob/HEAD/README.md) · [Fuente 2](https://github.com/The-Swarm-Corporation/AutoHedge/commit/c549c7950da112286e76725d49f6a25de8fa99bd)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 6.7k | MIT | Python | 2026-11-14 |

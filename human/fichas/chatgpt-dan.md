@@ -4,6 +4,14 @@
 
 > Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT.
 
+## Cuándo elegir esta ficha
+
+Archivo histórico de ejemplos de la época de GPT-3.5. Para aprender a redactar instrucciones, usa una guía didáctica.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/0xk1h0/ChatGPT_DAN/2b1221c70732108df43e0656a1733083348b2720/README.md) · [Fuente 2](https://api.github.com/repos/0xk1h0/ChatGPT_DAN) · [Fuente 3](https://github.com/0xk1h0/ChatGPT_DAN/commit/2b1221c70732108df43e0656a1733083348b2720)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 13.2k | — | — | 2026-11-14 |

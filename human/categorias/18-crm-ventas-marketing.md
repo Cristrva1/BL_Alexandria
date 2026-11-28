@@ -4,7 +4,7 @@
 
 Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas.
 
-19 repos · 3 secciones
+19 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [CRM, ERP y soporte al cliente](#crm-erp-y-soporte-al-cliente) — 9 repos
 - [Email, marketing y notificaciones](#email-marketing-y-notificaciones) — 7 repos
-- [Reservas y programación de citas](#reservas-y-programación-de-citas) — 3 repos
+- [Reservas y programación de citas](#reservas-y-programación-de-citas) — 2 repos
+- [Encuestas y feedback](#encuestas-y-feedback) — 1 repos
 
 ## CRM, ERP y soporte al cliente
 
@@ -52,8 +53,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [cal.diy](../fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita | Sin clave propia de API de IA en la ruta básica |
-| [Formbricks](../fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados | Sin clave propia de API de IA en la ruta básica |
 | [Easy!Appointments](../fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios | Sin clave propia de API de IA en la ruta básica |
+
+## Encuestas y feedback
+
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [Formbricks](../fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

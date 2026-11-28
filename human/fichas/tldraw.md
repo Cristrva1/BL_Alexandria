@@ -4,6 +4,12 @@
 
 > SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas.
 
+## Cuándo elegir esta ficha
+
+La ruta principal de tldraw es construir un lienzo React. Al retirarlo se pierde la integración y el modelo de lienzo del SDK. Konva ofrece primitivas Canvas 2D y Excalidraw ofrece pizarra editable. Las tres opciones tienen distintos términos y formatos.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/tldraw/tldraw) · [Fuente 2](https://tldraw.dev/community/license) · [Fuente 3](https://konvajs.org/docs/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 51.4k | tldraw license (no OSI) | TypeScript | 2026-11-10 |

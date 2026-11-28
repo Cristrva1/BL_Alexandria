@@ -4,6 +4,12 @@
 
 > Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks.
 
+## Cuándo elegir esta ficha
+
+Conservar en un grupo de estado del servidor. Se perdería elección de varios frameworks y una ruta directa para mutación, claves e invalidación. SWR cubre lecturas simples de React y puede manejar mutaciones. Sustitución por tarea y proyecto.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://tanstack.com/query/latest/docs/framework/react/overview) · [Fuente 2](https://swr.vercel.app/docs/mutation) · [Fuente 3](https://github.com/TanStack/query/commit/e7916a9e2eb695531fe3aa7bc9983e3bc734889a)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 50.6k | MIT | TypeScript | 2026-11-16 |

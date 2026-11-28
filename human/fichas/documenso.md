@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 56/100 · métricas del 2026-11-28 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-28 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia y costes:** El núcleo es AGPL-3.0: si modificas Documenso y lo ofreces a otras personas por red, debes publicar tu código. La carpeta packages/ee tiene una licencia comercial; sus funciones (SSO, firma CSC, marca blanca) requieren suscripción Enterprise en producción. La prueba local no las usa.
 

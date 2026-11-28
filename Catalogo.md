@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**974 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**973 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -17,13 +17,13 @@
 7. [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) — 27
 8. [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) — 33
 9. [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) — 33
-10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 31
+10. [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) — 33
 11. [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) — 11
 12. [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) — 22
 13. [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) — 23
 14. [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) — 25
 15. [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) — 51
-16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 147
+16. [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) — 146
 17. [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) — 18
 18. [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) — 19
 19. [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) — 30
@@ -32,7 +32,7 @@
 22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 32
 23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 30
 24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 25
-25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 23
+25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 21
 26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 32
 27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 38
 28. [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) — 21
@@ -526,6 +526,7 @@ _Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, cons
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
+| [awesome-bigdata](human/fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [awesome-dataviz](human/fichas/awesome-dataviz.md) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [data-analyst-roadmap](human/fichas/data-analyst-roadmap.md) | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 
@@ -541,7 +542,7 @@ _Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, cons
 | [Recon-ng](human/fichas/recon-ng.md) | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de datos y módulos al estilo de Metasploit. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Pythia](human/fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 
-### Fotogrametría y mapas desde imágenes
+### Datos geoespaciales, fotogrametría y mapas
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
@@ -552,6 +553,7 @@ _Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, cons
 | [kepler.gl](human/fichas/kepler-gl.md) | Herramienta web de exploración visual de grandes datos geográficos sin código, también usable como componente React y widget de Jupyter. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [ODM](human/fichas/odm.md) | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [WebODM](human/fichas/webodm.md) | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [GlobalBuildingAtlas](human/fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🔴 pesado |
 
 ## 🖼️ 11. Generar y editar imágenes con IA
 
@@ -658,13 +660,13 @@ _Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el format
 | [docuseal](human/fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [Documenso](human/fichas/documenso.md) | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. | API de IA opcional | 🖥️ app | 🔴 pesado |
 | [pdfcraft](human/fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
-| [PdfDing](human/fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Gestión y archivo de documentos
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [paperless-ngx](human/fichas/paperless-ngx.md) | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
+| [PdfDing](human/fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ## 📈 14. Investigar finanzas y mercados
 
@@ -830,7 +832,7 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [x64dbg](human/fichas/x64dbg.md) | Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
-| [dnSpy](human/fichas/dnspy.md) | Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [dnSpyEx](human/fichas/dnspy.md) | Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [pwndbg](human/fichas/pwndbg.md) | Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [raddebugger](human/fichas/raddebugger.md) | Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
@@ -880,7 +882,6 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [Naabu](human/fichas/naabu.md) | Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [interactsh](human/fichas/interactsh.md) | Servidor de callbacks OOB para detectar SSRF, XXE y vulnerabilidades ciegas con correlaciones HTTP/DNS/SMTP. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [dnsx](human/fichas/dnsx.md) | Resolución DNS masiva del ecosistema ProjectDiscovery: A/AAAA/CNAME y más, lista para encadenar con Subfinder y httpx. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
-| [OWASP Noir](human/fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 
 ### Explotación, C2 y post-explotación
 
@@ -925,7 +926,6 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [Suricata](human/fichas/suricata.md) | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas, protocolos y captura a alta velocidad. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [Security Onion](human/fichas/securityonion.md) | Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
 | [OWASP Coraza](human/fichas/coraza.md) | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como Caddy, Envoy o Traefik. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
-| [LOKI](human/fichas/loki.md) | Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [OWASP CRS](human/fichas/coreruleset.md) | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Elastic detection-rules](human/fichas/detection-rules.md) | Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟡 medio |
 | [Shuffle](human/fichas/shuffle.md) | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | hard |
@@ -973,6 +973,7 @@ _Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, det
 | [DefectDojo](human/fichas/defectdojo.md) | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [Dependency-Track](human/fichas/dependency-track.md) | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [OWASP Threat Dragon](human/fichas/threat-dragon.md) | Herramienta OWASP de modelado de amenazas: diagramas de flujo de datos con amenazas STRIDE, LINDDUN o CIA, en escritorio o web. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [OWASP Noir](human/fichas/noir.md) | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [OWASP dep-scan](human/fichas/dep-scan.md) | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [OWASP pytm](human/fichas/pytm.md) | Modelado de amenazas como código en Python: describe el sistema y obtén diagramas de flujo, secuencia y un informe de amenazas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [cdxgen](human/fichas/cdxgen.md) | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
@@ -1098,8 +1099,13 @@ _Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | [cal.diy](human/fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
-| [Formbricks](human/fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Easy!Appointments](human/fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+
+### Encuestas y feedback
+
+| Repo | Qué hace | API de IA | Tipo | Preparación |
+|---|---|---|---|---|
+| [Formbricks](human/fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 
 ## 🧠 19. Aprender IA y escribir mejores prompts
 
@@ -1379,7 +1385,6 @@ _Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [DuckDB](human/fichas/duckdb.md) | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
-| ⭐ [marimo](human/fichas/marimo.md) | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [ClickHouse](human/fichas/clickhouse.md) | Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 | [pandas](human/fichas/pandas.md) | Biblioteca estándar de Python para analizar y transformar datos tabulares con DataFrame y Series: limpieza, agrupaciones, uniones, series temporales y E/S. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Apache Spark](human/fichas/spark.md) | Motor unificado de Apache para procesar datos a gran escala en clúster: SQL y DataFrames, streaming, machine learning (MLlib) y API de pandas sobre Spark. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | hard |
@@ -1387,20 +1392,19 @@ _Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un 
 | [Apache Arrow](human/fichas/arrow.md) | Formato columnar en memoria y conjunto de bibliotecas multilenguaje para intercambiar y analizar datos sin copias entre procesos y herramientas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [PyGWalker](human/fichas/pygwalker.md) | Convierte un DataFrame de pandas o Polars en una interfaz de exploración visual tipo Tableau dentro de Jupyter, Streamlit o marimo, arrastrando campos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [JupyterLab](human/fichas/jupyterlab.md) | Entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
-| [awesome-bigdata](human/fichas/awesome-bigdata.md) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [dbt](human/fichas/dbt.md) | Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [Apache Iceberg](human/fichas/apache-iceberg.md) | Formato abierto de tablas analíticas de la Apache Software Foundation; este repositorio es la implementación de referencia en Java. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [Delta Lake](human/fichas/delta-lake.md) | Capa de almacenamiento con transacciones ACID sobre Parquet para montar un lakehouse con Spark, Flink, Trino y otros motores. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [Ibis](human/fichas/ibis.md) | Biblioteca Python de dataframes portable: escribe la consulta una vez y ejecútala en DuckDB, Polars, ClickHouse, Spark, Postgres o más de 20 motores. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [hudi](human/fichas/hudi.md) | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [dlt (data load tool)](human/fichas/dlt.md) | Biblioteca Python para cargar datos de APIs, bases de datos y archivos en destinos como DuckDB, Postgres o almacenes en la nube, con esquema y carga incremental. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
-| [GlobalBuildingAtlas](human/fichas/globalbuildingatlas.md) | Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🔴 pesado |
 
 ### Apps de datos en Python
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
 | ⭐ [Gradio](human/fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
+| ⭐ [marimo](human/fichas/marimo.md) | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. | API de IA opcional | 🖥️ app | 🟢 fácil |
 | [streamlit](human/fichas/streamlit.md) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [Reflex](human/fichas/reflex.md) | Framework para crear aplicaciones web completas (frontend y backend) solo con Python, con estado en clases, componentes y despliegue propio o gestionado. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [dash](human/fichas/dash.md) | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
@@ -1523,7 +1527,7 @@ _Detección, seguimiento, segmentación, rostros y percepción espacial. Disting
 
 | Repo | Qué hace | API de IA | Tipo | Preparación |
 |---|---|---|---|---|
-| ⭐ [Deep-Live-Cam](human/fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
+| [Deep-Live-Cam](human/fichas/deep-live-cam.md) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [FaceFusion](human/fichas/facefusion.md) | Plataforma para intercambio y mejora de rostros en imágenes y video. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
 | [InsightFace](human/fichas/insightface.md) | Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [DeepFace](human/fichas/deepface.md) | Biblioteca Python ligera de reconocimiento facial y análisis de atributos (edad, género, emoción) que envuelve modelos como ArcFace, FaceNet o VGG-Face. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |

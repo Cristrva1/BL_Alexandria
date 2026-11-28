@@ -4,6 +4,14 @@
 
 > Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda.
 
+## Cuándo elegir esta ficha
+
+Una ficha de entrada puede llevar a instalación oficial y a ayuda, conservando ambos IDs como recursos de distinto tipo.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/obsidianmd/obsidian-help/blob/1a4e17ca0127317143947ca608d2774a48b927e3/README.md) · [Fuente 2](https://api.github.com/repos/obsidianmd/obsidian-help) · [Fuente 3](https://github.com/obsidianmd/obsidian-help/commit/1a4e17ca0127317143947ca608d2774a48b927e3)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 2k | — | JavaScript | 2026-11-14 |

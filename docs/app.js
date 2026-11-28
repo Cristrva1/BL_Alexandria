@@ -424,16 +424,17 @@
         :relation==='complement'?'Pieza complementaria'
         :item.guided_editorial?.group&&item.guided_editorial.group===primary.guided_editorial?.group?'Alternativa para esta tarea'
         :item.similares?.grupo&&item.similares.grupo===primary.similares?.grupo?'Funciones parecidas':'Otro enfoque para la tarea';
-      return `<li><p><strong>${esc(title)} · <a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></strong></p><p>${esc(item.guided_editorial?.note||item.similares?.cuando||item.choose_if||item.lead)}</p><p class="meta">${esc(pick.useBrowser?'Aplicación web oficial':preparation(item))} · ${esc(label('cost',item.access?.cost))}</p></li>`;
+      return `<li><p><strong>${esc(title)} · <a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></strong></p><p>${esc(item.audit_guidance?.note||item.guided_editorial?.note||item.similares?.cuando||item.choose_if||item.lead)}</p><p class="meta">${esc(pick.useBrowser?'Aplicación web oficial':preparation(item))} · ${esc(label('cost',item.access?.cost))}</p></li>`;
     };
     const visible=new Set(picks.map(pick=>pick.item.id));
     const combos=(primary.combina_con||[]).filter(combo=>{
       const item=repo(combo.id);
-      return item&&!item.status&&item.guided_editorial?.role!=='pending'&&!visible.has(combo.id)&&AlexandriaDecisions.relationship(primary,item)==='complement';
+      return item&&!item.status&&!item.audit_guidance?.reference_only&&item.guided_editorial?.role!=='pending'&&!visible.has(combo.id)&&AlexandriaDecisions.relationship(primary,item)==='complement';
     }).slice(0,2);
     return `<article class="decision-brief guided-primary">
       <h3><a href="#/repo/${esc(primary.id)}">${esc(primary.name)}</a></h3>
       <p>${esc(primary.lead)}</p>
+      ${primary.audit_guidance?.note?`<p>${esc(primary.audit_guidance.note)}</p>`:''}
       ${primary.guided_editorial?.note||primary.similares?.cuando?`<p>${esc(primary.guided_editorial?.note||primary.similares.cuando)}</p>`:''}
       <p class="meta">${esc(first.useBrowser?'Aplicación web oficial':preparation(primary))} · ${esc(label('cost',primary.access?.cost))}</p>
       <h4>Por qué empezaría aquí</h4>
@@ -459,15 +460,15 @@
   }
   function guidedResults(profile) {
     const result=AlexandriaGuide.recommend(catalog,profile),{intent,picks,notices,excluded,extra=[],referenceOnly}=result,l=AlexandriaGuide.labels;
-    const showWebProjects=intent.goal?.id==='web' && profile.os!=='browser' && ['any','api'].includes(profile.mode);
+    const showWebProjects=intent.goal?.id==='web';
     const summary=`<dl class="guided-summary"><div><dt>Experiencia</dt><dd>${esc(l.experience[profile.experience])}</dd></div><div><dt>Equipo</dt><dd>${esc([l.os[profile.os],l.ram[profile.ram],l.gpu[profile.gpu]].join(' · '))}</dd></div><div><dt>Acceso</dt><dd>${esc(profile.clients.map(id=>AlexandriaGuide.clientNames[id]).join(', ')||'Ningún agente confirmado')} · ${esc(l.mode[profile.mode])}</dd></div></dl>`;
     let body;
     if(!intent.goal){
       body=`<p>${intent.kind==='ambiguous'?'Tu descripción encaja en varios objetivos. Elige qué quieres resolver primero en «Tarea u objetivo».':'Elige una tarea en el formulario o describe el resultado que necesitas.'}</p>${intent.suggestions.length?`<ul>${intent.suggestions.map(g=>`<li>${esc(g.title)}</li>`).join('')}</ul>`:''}<button class="btn ghost" type="button" data-action="guided-objective">Elegir una tarea</button>`;
     }else if(showWebProjects){
-      body=`<div class="decision-brief">${webProjectOptions()}</div><div class="decision-actions"><button class="btn ghost" type="button" data-action="guided-edit">Cambiar mis respuestas</button><a href="#/area/frontend?section=topics">Explorar herramientas de frontend</a></div>`;
+      body=`<div class="decision-brief">${webProjectOptions(profile)}</div><div class="decision-actions"><button class="btn ghost" type="button" data-action="guided-edit">Cambiar mis respuestas</button><a href="#/area/frontend?section=topics">Explorar herramientas de frontend</a></div>`;
     }else if(referenceOnly){
-      body='<p>El informe conserva este grupo como referencia documental.</p><button class="btn ghost" type="button" data-action="guided-objective">Elegir otra tarea</button>';
+      body='<p>Esta selección se conserva para consulta documental.</p><button class="btn ghost" type="button" data-action="guided-objective">Elegir otra tarea</button>';
     }else if(!picks.length){
       body=`<p>No encontramos un punto de partida documentado con estas condiciones. Conservamos tus respuestas; puedes ajustar el perfil.</p><ul>${excluded.device?'<li>Solo navegador: no hay una aplicación web verificada en estos puntos de partida.</li>':''}${excluded.access?'<li>Revisa el acceso: una integración con tu agente, un modelo local y una API son rutas diferentes.</li>':''}${excluded.preparation?'<li>Se han apartado opciones con preparación pesada o requisitos documentados que superan el equipo indicado. Puedes revisar sus fichas si vas a usar otro entorno.</li>':''}</ul><button class="btn ghost" type="button" data-action="guided-edit">Ajustar mis respuestas</button>`;
     }else{
@@ -483,9 +484,9 @@
   }
   function renderGuided(params) {
     const state=guidedState(params),p=state.draft;
-    return `<h1>Elige una herramienta para tu tarea</h1><p class="lede">Describe lo que quieres lograr o elige una tarea. Te propondremos por dónde empezar y qué puede cambiar tu elección.</p>
+    return `<h1 id="guided-form-heading">Elige una herramienta para tu tarea</h1><p class="lede">Describe lo que quieres lograr o elige una tarea. Te propondremos por dónde empezar y qué puede cambiar tu elección.</p>
       ${state.submitted?guidedResults(state.submitted):''}
-      <form id="guided-start" class="guided-profile-form" action="#/empezar" method="post" aria-label="Tu proyecto y condiciones para empezar">
+      <form id="guided-start" class="guided-profile-form" action="#/empezar" method="post" aria-labelledby="guided-form-heading">
       <fieldset><legend>Qué quieres conseguir</legend><div class="guided-project-fields"><div><label for="guided-project">Describe tu tarea</label><textarea id="guided-project" name="project" rows="3" minlength="12" maxlength="800" aria-describedby="guided-project-help guided-validation">${esc(p.project)}</textarea><p id="guided-project-help" class="meta">Por ejemplo, «Quiero transcribir una reunión en mi equipo». Puedes dejarlo en blanco si eliges una tarea.</p></div><div><label for="guided-goal">Tarea u objetivo</label><select id="guided-goal" name="goal">${guidedScopeOptions(p)}</select></div></div></fieldset>
       <fieldset><legend>Tu experiencia</legend><div class="guided-radio-options">${Object.entries(AlexandriaGuide.labels.experience).map(([key,text])=>`<label><input type="radio" name="experience" value="${key}"${p.experience===key?' checked':''}> <span>${esc(text)}</span></label>`).join('')}</div><p class="meta">Al empezar se priorizan interfaces y rutas de aplicación; si programas, también piezas para integrar en código.</p></fieldset>
       <fieldset><legend>Tu equipo</legend><div class="guided-equipment"><div><label for="guided-os">Sistema o dispositivo</label>${profileSelect('os','guided-os','os',p.os)}</div><div><label for="guided-ram">Memoria RAM</label>${profileSelect('ram','guided-ram','ram',p.ram)}</div><div><label for="guided-gpu">GPU dedicada</label>${profileSelect('gpu','guided-gpu','gpu',p.gpu)}</div></div><p class="meta">Puedes dejar «por confirmar». RAM y GPU sirven para priorizar; los requisitos dependen del modelo y del flujo que elijas.</p></fieldset>
@@ -605,8 +606,21 @@
       <details class="technical-map"><summary>Ver el índice técnico de ${catalog.counts.categories} secciones</summary><p class="meta">Clasificación original por tipo de herramienta. Los enlaces anteriores siguen funcionando.</p>${technicalRooms()}</details>`;
   }
 
-  function webProjectOptions() {
-    const choices=catalog.web_projects.map((project,index)=>`<div><dt><a href="#/guia/elegir-web?section=${index}">${esc(project.title)}</a></dt><dd>${esc(project.when)} Empieza con <strong>${esc(project.stack)}</strong>.</dd></div>`);
+  function webProjectOptions(profile) {
+    const suggested=profile&&AlexandriaGuide.webProject(catalog,profile);
+    const choices=catalog.web_projects.map(project=>{
+      const selected=suggested?.id===project.id;
+      const route=selected?suggested:project;
+      const browser=profile?.os==='browser';
+      const limited=['existing','no_api','local'].includes(profile?.mode)&&route.id==='ia';
+      const source=safeUrl(route.source);
+      return `<div><dt><a href="#/guia/elegir-web?section=${route.guide_section}">${esc(route.title)}</a>${selected?' <span class="meta">· Encaja con tu descripción</span>':''}</dt><dd>
+        ${esc(route.when)}${browser||limited?'':` Empieza con <strong>${esc(route.stack)}</strong>.`}
+        ${browser?`<p>${esc(route.browser)}</p>`:''}
+        ${limited?'<p>Tu acceso a un asistente de código no acredita acceso al modelo de la aplicación. Para una ruta local, confirma equipo, proveedor y adaptador antes de conectar el modelo.</p>':''}
+        ${selected?`<p><strong>Primera prueba.</strong> ${esc(route.trial)}</p><p><strong>Qué comprobar.</strong> ${esc(route.success)}</p>${source?`<a href="${esc(source)}" target="_blank" rel="noreferrer">Consultar la fuente</a>`:''}`:''}
+      </dd></div>`;
+    });
     return `<dl>${choices.join("")}</dl><p><a href="#/guia/elegir-web">Qué combinar, qué reemplazar y cómo probarlo</a></p>`;
   }
 
@@ -773,7 +787,21 @@ ${llmDownload(category,params.get("sub"))}
 
   function renderRepo(id) {
     const item = repo(id);
-    if (!item) return missing("Ese repo no está en la biblioteca.", "#/explorar");
+    if (!item) {
+      const historical=Object.hasOwn(catalog.historical_repos||{},id)&&catalog.historical_repos[id];
+      if(!historical)return missing("Ese repo no está en la biblioteca.", "#/explorar");
+      const source=safeUrl(historical.historical_url), successor=safeUrl(historical.successor_url);
+      return `<h1>${esc(historical.name)}</h1><p>Referencia histórica. La ficha salió de la selección activa el ${esc(historical.retired_at)}.</p>
+        ${source?`<p><a href="${esc(source)}" target="_blank" rel="noreferrer">Abrir el repositorio histórico</a></p>`:''}
+        ${successor?`<p><a href="${esc(successor)}" target="_blank" rel="noreferrer">Consultar el proyecto sucesor indicado por su autor</a></p>`:''}
+        <p><a href="#/empezar?goal=seguridad">Ver rutas de revisión defensiva</a></p>`;
+    }
+    if(item.audit_guidance?.descriptive_only){
+      const source=safeUrl(item.repo_url);
+      return `<h1>${esc(item.name)}</h1><p>${esc(item.audit_guidance.note||item.one)}</p><p>Referencia descriptiva de seguridad.</p>
+        ${source?`<p><a href="${esc(source)}" target="_blank" rel="noreferrer">Consultar la ficha original</a></p>`:''}
+        <p><a href="#/empezar?goal=seguridad">Ver rutas de revisión defensiva</a></p>`;
+    }
     const compared = compareList().includes(item.id);
     const sameOpening=item.body && item.lead && item.body.toLowerCase().startsWith(item.lead.toLowerCase());
     const bodyText=sameOpening?item.body.slice(item.lead.length).trim():item.body;
@@ -795,6 +823,7 @@ ${llmDownload(category,params.get("sub"))}
       ${dek}
       ${badges(item)}
       <nav class="repo-toc" aria-label="En esta ficha"><a href="#/repo/${encodeURIComponent(item.id)}?section=examples">Ver ejemplos</a><a href="#/repo/${encodeURIComponent(item.id)}?section=access">Ver acceso y costes</a><a href="#/repo/${encodeURIComponent(item.id)}?section=start">Ir a los primeros pasos</a></nav>
+      ${item.audit_guidance?.note?`<section class="section"><h2>Cuándo elegir esta ficha</h2><p>${esc(item.audit_guidance.note)}</p>${item.audit_guidance.reference_only?'<p>Referencia de consulta del catálogo.</p>':''}<p class="meta">Revisión documental del ${esc(item.audit_guidance.checked_at)}. ${(item.audit_guidance.sources||[]).filter(safeUrl).map((url,index)=>`<a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index+1}</a>`).join(' · ')}</p></section>`:''}
       ${fourSections(item)}
       ${similarSection(item)}
       ${item.practical_examples?.length?`<section id="repo-examples" class="section"><h2>Para qué puedes usarlo</h2><ul>${item.practical_examples.map(example=>`<li>${esc(example.scenario)}</li>`).join("")}</ul><p class="meta">Ejemplos de uso propuestos para orientar tu elección.</p></section>`:""}
@@ -952,6 +981,26 @@ ${llmDownload(category,params.get("sub"))}
     const table=rows.length?`<div class="comparison-table-wrap" role="region" tabindex="0" aria-labelledby="comparison-${group.id}-caption"><table class="compare decision-table"><caption id="comparison-${group.id}-caption">${esc(group.title)} · ${items.length} ${items.length===1?"herramienta":"herramientas"}</caption><thead><tr><th scope="col">Criterio</th>${items.map(item=>`<th scope="col"><a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></th>`).join("")}</tr></thead><tbody>${rows.map(row=>`<tr><th scope="row">${esc(row.title)}</th>${items.map(item=>`<td data-label="${esc(item.name)}">${row.render?row.render(item):esc(row.value(item)||"No documentado")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:`<p class="meta">No hay diferencias en los criterios de esta sección. Desactiva el filtro para verlos.</p>`;
     return group.id==="functions"?`<section class="section comparison-section"><h2>${esc(group.title)}</h2>${table}</section>`:`<details id="compare-details-${group.id}" class="comparison-section comparison-details"><summary>${esc(group.title)} · ${rows.length} criterios${differences?" con diferencias":""}</summary>${table}</details>`;
   }
+  function auditedRelations(ids) {
+    const {checked_at,relations=[]}=catalog.audit_relations||{};
+    const rows=relations.filter(row=>row.ids.every(id=>ids.includes(id)));
+    if(!rows.length)return "";
+    const titles={
+      'complemento documentado':'Complemento documentado',
+      'compatibilidad condicionada':'Compatibilidad condicionada',
+      'sustitucion misma etapa':'Alternativa para esta etapa',
+      'sustitucion para la misma etapa':'Alternativa para esta etapa',
+      'conflicto confirmado':'Límite de compatibilidad',
+      'sin evidencia':'Integración por comprobar',
+    };
+    return `<section class="section"><h2>Condiciones documentadas</h2>
+      <p class="meta">Fuentes consultadas el ${esc(checked_at)}. La revisión documenta el alcance y las condiciones de cada caso.</p>
+      ${rows.map(row=>`<h3>${row.ids.map(id=>esc(repo(id)?.name||id)).join(' y ')}</h3><ul>
+        ${row.findings.map(item=>`<li><strong>${esc(titles[item.kind]||'Relación documentada')}.</strong> ${esc(item.note)}
+        ${item.sources.filter(safeUrl).map((url,index)=>`<a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index+1}</a>`).join(' · ')}</li>`).join('')}
+      </ul>`).join('')}
+    </section>`;
+  }
   function renderCompare(params) {
     const ids=compareList(),items=ids.map(repo),differences=params.get("diff")==="1"&&items.length>1;
     const row=(title,value,render)=>({title,value,render});
@@ -969,7 +1018,7 @@ ${llmDownload(category,params.get("sub"))}
     const presets=catalog.discovery.compare_presets||[];
     const selected=`<section class="section" aria-labelledby="selected-title"><div class="command-row"><h2 id="selected-title">Tu selección (${ids.length}/3)</h2>${ids.length?`<button class="btn small ghost" type="button" data-action="compare-clear">Vaciar comparación</button>`:""}</div>${items.length?`<ul class="compare-selection">${items.map(i=>`<li><div><a href="#/repo/${esc(i.id)}"><strong>${esc(i.name)}</strong></a><span class="meta">${esc(i.gh||i.id)}</span></div><button class="btn small ghost" type="button" data-action="compare" data-id="${esc(i.id)}" aria-label="Quitar ${esc(i.name)} de la comparación">Quitar</button></li>`).join("")}</ul>`:`<p>Busca por nombre, acota por objetivo o abre uno de los ejemplos de abajo. Las fichas también tienen un botón para añadirlas aquí.</p>`}${ids.length===3?`<p class="meta">Ya hay tres herramientas. Quita una antes de añadir otra; ninguna se reemplaza automáticamente.</p>`:""}</section>`;
     return `<h1>Compara funciones antes de elegir</h1><p class="lede">Pon hasta tres herramientas frente a frente. Primero sus funciones y diferencias técnicas; después, preparación, acceso y costes.</p>${selected}${items.length>1?`<details class="reading-details compare-edit" id="compare-editor"><summary>Buscar otra herramienta para la comparación</summary>${comparePicker(params,ids)}</details>`:comparePicker(params,ids)}
-      ${items.length?`<section class="section"><div class="comparison-controls"><label class="check"><input id="compare-differences" type="checkbox"${differences?" checked":""}${items.length<2?" disabled":""}> Mostrar solo diferencias</label><button class="btn small ghost" type="button" data-action="copy" data-copy-kind="link" data-text="${esc('https://cristrva1.github.io/BL_Alexandria/'+comparisonHref(ids))}">Copiar enlace público</button><span class="copy-status meta" role="status"></span></div>${items.length<2?`<p class="meta">Añade una segunda herramienta para contrastar sus funciones.</p>`:`<h2 class="compact-title">Cómo se relacionan estas piezas</h2><ul class="comparison-relations">${pairs.map(({a,b,kind})=>`<li><strong>${esc(a.name)} y ${esc(b.name)}:</strong> ${kind==="alternative"?"figuran como alternativas en las fichas. Contrasta sus funciones para elegir.":kind==="complement"?"figuran como complementarias. Pueden cubrir etapas distintas; no necesitas descartar una por compararlas.":"su relación no está documentada como alternativa ni complemento. Revisa qué tarea resuelve cada una."}</li>`).join("")}</ul>`}</section>${groups.map(g=>comparisonTable(g,items,differences)).join("")}<p class="meta">Revisión documental; no son pruebas de rendimiento ni una evaluación de cuál es mejor. No documentado no significa incompatible.</p>`:presets.length?`<section class="section"><h2>Empieza con una comparación concreta</h2><ul class="comparison-presets">${presets.map(p=>`<li><a href="${comparisonHref(p.repos)}"><strong>${esc(p.title)}</strong><span>${p.repos.map(id=>esc(repo(id)?.name||id)).join(" · ")}</span></a></li>`).join("")}</ul></section>`:""}`;
+      ${items.length?`<section class="section"><div class="comparison-controls"><label class="check"><input id="compare-differences" type="checkbox"${differences?" checked":""}${items.length<2?" disabled":""}> Mostrar solo diferencias</label><button class="btn small ghost" type="button" data-action="copy" data-copy-kind="link" data-text="${esc('https://cristrva1.github.io/BL_Alexandria/'+comparisonHref(ids))}">Copiar enlace público</button><span class="copy-status meta" role="status"></span></div>${items.length<2?`<p class="meta">Añade una segunda herramienta para contrastar sus funciones.</p>`:`<h2 class="compact-title">Cómo se relacionan estas piezas</h2><ul class="comparison-relations">${pairs.map(({a,b,kind})=>`<li><strong>${esc(a.name)} y ${esc(b.name)}:</strong> ${kind==="alternative"?"figuran como alternativas en las fichas. Contrasta sus funciones para elegir.":kind==="complement"?"figuran como complementarias. Pueden cubrir etapas distintas; no necesitas descartar una por compararlas.":"su relación no está documentada como alternativa ni complemento. Revisa qué tarea resuelve cada una."}</li>`).join("")}</ul>`}</section>${auditedRelations(ids)}${groups.map(g=>comparisonTable(g,items,differences)).join("")}<p class="meta">Revisión documental; no son pruebas de rendimiento ni una evaluación de cuál es mejor. No documentado no significa incompatible.</p>`:presets.length?`<section class="section"><h2>Empieza con una comparación concreta</h2><ul class="comparison-presets">${presets.map(p=>`<li><a href="${comparisonHref(p.repos)}"><strong>${esc(p.title)}</strong><span>${p.repos.map(id=>esc(repo(id)?.name||id)).join(" · ")}</span></a></li>`).join("")}</ul></section>`:""}`;
   }
 
   function missing(text, href) {
@@ -993,7 +1042,10 @@ ${llmDownload(category,params.get("sub"))}
     if (head === "area") return areaById[parts[1]]?.title || "Categoría";
     if (head === "tecnica") return AlexandriaTechniques.lookup(catalog,decodeURIComponent(parts[1]||''))?.title || "Técnica";
     if (head === "explorar") return topicById[params.get("topic")]?.title || areaById[params.get("area")]?.title || "Buscar";
-    if (head === "repo" && repo(decodeURIComponent(parts[1] || ""))) return repo(decodeURIComponent(parts[1])).name;
+    if (head === "repo") {
+      const id=decodeURIComponent(parts[1]||"");
+      return repo(id)?.name || (Object.hasOwn(catalog.historical_repos||{},id)&&catalog.historical_repos[id].name) || "Ficha";
+    }
     if (head === "receta") {
       const recipe = catalog.recipes.find((item) => item.id === parts[1]);
       return recipe ? recipe.title : "Receta";

@@ -1,8 +1,14 @@
-[🏠 Inicio](../README.md) › [📄 PDF, OCR y procesamiento de documentos](../categorias/13-documentos-presentaciones.md) › Herramientas PDF
+[🏠 Inicio](../README.md) › [📄 PDF, OCR y procesamiento de documentos](../categorias/13-documentos-presentaciones.md) › Gestión y archivo de documentos
 
 # 📑 PdfDing
 
 > Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.
+
+## Cuándo elegir esta ficha
+
+La tarea principal es leer, anotar y organizar PDF. El archivo general se cubre con Paperless, mientras PdfDing merece conservarse como opción de lectura.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://codeberg.org/mrmn/PdfDing/src/branch/master/README.md) · [Fuente 2](https://api.github.com/repos/mrmn2/PdfDing) · [Fuente 3](https://github.com/mrmn2/PdfDing/commit/34d7e4ce0b28d0a146a731a628e28dd160594e0d)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -31,7 +37,7 @@ Aplicación web en Python con Django (según su pyproject.toml en Codeberg, Pyth
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [OCRmyPDF](ocrmypdf.md) | Aplicar OCR a escaneados antes de subirlos para poder buscar y resaltar texto (combinación por arquitectura). | Procesa los archivos antes de importarlos. |
-| [paperless-ngx](paperless-ngx.md) | Paperless archiva y clasifica; PdfDing sirve para leer y anotar (combinación por arquitectura). | Decide qué sistema guarda el original para no duplicar. |
+| [paperless-ngx](paperless-ngx.md) | Paperless archiva y PdfDing ayuda a leer y anotar. Un traslado manual de PDF no transfiere automáticamente progreso, destacados ni metadatos. | Prueba con una copia de PDF y revisa cada metadato antes de migrar. |
 | [coolify](coolify.md) | Desplegar el contenedor con dominio y HTTPS (combinación por arquitectura). | Usa la imagen y la documentación de Codeberg. |
 
 **Notas:** Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las estrellas mostradas (~1,8k) son las de GitHub, Codeberg tiene muy pocas. Se retiraron markitdown, ppt-master y reveal.js por falta de relación. Licencia AGPL-3.0: si modificas el código y lo ofreces como servicio, debes publicar los cambios.

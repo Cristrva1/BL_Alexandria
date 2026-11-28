@@ -4,6 +4,12 @@
 
 > Divide textos largos en fragmentos para indexarlos o recuperarlos, con estrategias simples y opciones basadas en modelos.
 
+## Cuándo elegir esta ficha
+
+Presentar explícitamente en preparación para RAG, separado de motores completos. Unstructured cubre partición genérica según flujo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/feyninc/chonkie/blob/664454b689d68614bcfc0b1d57fc2a28b5862825/README.md) · [Fuente 2](https://api.github.com/repos/feyninc/chonkie) · [Fuente 3](https://github.com/feyninc/chonkie/commit/664454b689d68614bcfc0b1d57fc2a28b5862825)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 4.9k | MIT | Python | 2026-11-22 |

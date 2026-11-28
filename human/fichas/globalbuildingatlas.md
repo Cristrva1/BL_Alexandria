@@ -1,8 +1,14 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Procesar datos y trabajar con notebooks](../categorias/25-datos-notebooks.md) › Datos y notebooks
+[🏠 Inicio](../README.md) › [📊 Dashboards, analítica y mapas](../categorias/10-anal-tica-visualizaci-n.md) › Datos geoespaciales, fotogrametría y mapas
 
 # 🧑‍💻 GlobalBuildingAtlas
 
 > Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.
+
+## Cuándo elegir esta ficha
+
+Presentar en geoespacial como conjunto de datos, con referencia desde procesamiento. QGIS abre y visualiza capas, pero no entrega las huellas, alturas ni LoD1 del Atlas. Preservar las capas ODbL y CC BY-NC 4.0 identificadas por separado en el aviso del mantenedor.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/zhu-xlab/GlobalBuildingAtlas/d58507e22af2bd940de5f98da7ed6763bd32147c/README.md) · [Fuente 2](https://api.github.com/repos/zhu-xlab/GlobalBuildingAtlas) · [Fuente 3](https://github.com/zhu-xlab/GlobalBuildingAtlas/commit/d58507e22af2bd940de5f98da7ed6763bd32147c)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -12,7 +18,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 32/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 33/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** MIT + Commons Clause. No permite vender el software. Fuente: [LICENSE](https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 

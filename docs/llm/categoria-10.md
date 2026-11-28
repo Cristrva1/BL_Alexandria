@@ -1,6 +1,6 @@
 # Alexandría para agentes · Dashboards, analítica y mapas
 
-Categoría 10 completa (31 repos, 6 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 10 completa (33 repos, 6 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=10 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -19,36 +19,38 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
 | `umami` | producto | Analítica web y de producto respetuosa con la privacidad, sin cookies… | 1 Básico | 74 | MIT (OSI permisiva) | recomendado |
-| `posthog` | producto | Plataforma de product analytics y eventos para entender el comportamiento de… | 3 Avanzado | 71 | MIT + licencia Enterprise (ee/) (open-core) | sin grupo |
-| `plausible` | producto | Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o… | 2 Intermedio | 59 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `matomo` | producto | Alternativa open source a Google Analytics con control total de los datos. | 2 Intermedio | 57 | GPL-3.0 (OSI copyleft) | alternativa |
+| `posthog` | producto | Plataforma de product analytics y eventos para entender el comportamiento de… | 3 Avanzado | 72 | MIT + licencia Enterprise (ee/) (open-core) | sin grupo |
+| `plausible` | producto | Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o… | 2 Intermedio | 60 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `matomo` | producto | Alternativa open source a Google Analytics con control total de los datos. | 2 Intermedio | 58 | GPL-3.0 (OSI copyleft) | alternativa |
 | `superset` | bi | Plataforma de exploración y visualización de datos de Apache, alternativa… | 2 Intermedio | 82 | Apache-2.0 (OSI permisiva) | recomendado |
 | `grafana` | bi | Plataforma de visualización y observabilidad para métricas, logs y trazas de… | 2 Intermedio | 80 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `metabase` | bi | Herramienta de dashboards y BI para explorar métricas de negocio conectando… | 2 Intermedio | 67 | AGPL-3.0 + licencia comercial (enterprise/) (open-core) | alternativa |
-| `evidence` | bi | BI como código: informes y visualizaciones interactivas escritos en SQL y… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
-| `redash` | bi | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y… | 2 Intermedio | 57 | BSD-2-Clause (OSI permisiva) | alternativa |
+| `evidence` | bi | BI como código: informes y visualizaciones interactivas escritos en SQL y… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `redash` | bi | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y… | 2 Intermedio | 58 | BSD-2-Clause (OSI permisiva) | alternativa |
 | `wrenai` | bi | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica… | 2 Intermedio | 57 | Multilicencia por ruta (Apache-2.0, AGPL-3.0, CC-BY-4.0) (OSI copyleft) | sin grupo |
 | `echarts` | graficos | Librería de visualización potente para gráficos y dashboards web (proyecto… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | recomendado |
 | `d3` | graficos | Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y… | 2 Intermedio | 70 | ISC (OSI permisiva) | alternativa |
-| `recharts` | graficos | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 69 | MIT (OSI permisiva) | alternativa |
-| `chart-js` | graficos | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
-| `uplot` | graficos | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 56 | MIT (OSI permisiva) | sin grupo |
-| `awesome-dataviz` | recursos | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 58 | CC-BY-4.0 (OSI permisiva) | sin grupo |
-| `data-analyst-roadmap` | recursos | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 38 | MIT (OSI permisiva) | sin grupo |
-| `gods-eye-view` | osint | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 68 | MIT (solo código) (OSI permisiva) | recomendado |
+| `recharts` | graficos | Librería de gráficos para React construida con D3, declarativa y componible. | 2 Intermedio | 70 | MIT (OSI permisiva) | alternativa |
+| `chart-js` | graficos | Librería JavaScript para dibujar gráficos en canvas dentro de una página o… | 2 Intermedio | 65 | MIT (OSI permisiva) | alternativa |
+| `uplot` | graficos | Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
+| `awesome-dataviz` | recursos | Directorio curado de herramientas, librerías y recursos de visualización de… | 1 Básico | 57 | CC-BY-4.0 (OSI permisiva) | sin grupo |
+| `awesome-bigdata` | recursos | Directorio curado de frameworks, bases de datos y herramientas de big data… | 1 Básico | 55 | MIT (OSI permisiva) | sin grupo |
+| `data-analyst-roadmap` | recursos | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y… | 1 Básico | 37 | MIT (OSI permisiva) | sin grupo |
+| `gods-eye-view` | osint | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para… | 2 Intermedio | 69 | MIT (solo código) (OSI permisiva) | recomendado |
 | `sherlock` | osint | CLI OSINT que busca un nombre de usuario en más de 400 redes sociales y sitios… | 1 Básico | 67 | MIT (OSI permisiva) | recomendado |
 | `theharvester` | osint | Herramienta OSINT de reconocimiento que reúne correos, subdominios, IP y… | 2 Intermedio | 66 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `maigret` | osint | Recopila un dossier sobre una persona a partir de un nombre de usuario… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
 | `osiris` | osint | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
-| `pythia` | osint | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 47 | MIT (OSI permisiva) | sin grupo |
+| `pythia` | osint | Plataforma local que reúne fuentes de actualidad y genera escenarios con… | 3 Avanzado | 48 | MIT (OSI permisiva) | sin grupo |
 | `recon-ng` | osint | Framework modular de reconocimiento web OSINT con espacios de trabajo, base de… | 2 Intermedio | 44 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `leaflet` | geoespacial | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de… | 2 Intermedio | 70 | BSD-2-Clause (OSI permisiva) | recomendado |
-| `maplibre` | geoespacial | Biblioteca abierta de mapas vectoriales interactivos en el navegador con… | 2 Intermedio | 67 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `kepler.gl` | geoespacial | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
-| `deck.gl` | geoespacial | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
-| `qgis` | geoespacial | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `leaflet` | geoespacial | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de… | 2 Intermedio | 71 | BSD-2-Clause (OSI permisiva) | recomendado |
+| `deck.gl` | geoespacial | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos… | 2 Intermedio | 69 | MIT (OSI permisiva) | sin grupo |
+| `kepler.gl` | geoespacial | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 69 | MIT (OSI permisiva) | sin grupo |
+| `maplibre` | geoespacial | Biblioteca abierta de mapas vectoriales interactivos en el navegador con… | 2 Intermedio | 68 | BSD-3-Clause (OSI permisiva) | alternativa |
+| `qgis` | geoespacial | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 64 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `webodm` | geoespacial | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `odm` | geoespacial | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `globalbuildingatlas` | geoespacial | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 33 | MIT + Commons Clause (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -74,7 +76,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### posthog (`posthog`)
 
-- **Repo:** https://github.com/PostHog/posthog · MIT + licencia Enterprise (ee/) · nivel 3 · 71/100
+- **Repo:** https://github.com/PostHog/posthog · MIT + licencia Enterprise (ee/) · nivel 3 · 72/100
 - **Qué es:** PostHog, plataforma de analítica de producto y capa de datos para producto y agentes. Licencia MIT salvo la carpeta `ee` (GitHub muestra NOASSERTION). Es muy activa (~41k estrellas).
 - **Cuándo elegirlo:** Casos: Entender abandono en un flujo de registro; Revisar errores y sesiones de una app.
 - **Requisitos:** nivel 3: preparación pesada; Cuenta y región de datos; SDK o snippet; cliente MCP opcional; hardware prerequisites; API de IA: opcional; Cuenta y región de datos; SDK o snippet; cliente MCP opcional.
@@ -85,7 +87,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Plausible Analytics (`plausible`)
 
-- **Repo:** https://github.com/plausible/analytics · AGPL-3.0 · nivel 2 · 59/100 · alternativa en «Analítica web auto-hospedada»
+- **Repo:** https://github.com/plausible/analytics · AGPL-3.0 · nivel 2 · 60/100 · alternativa en «Analítica web auto-hospedada»
 - **Qué es:** Plausible Analytics, analítica web ligera y sin cookies hecha y alojada en la UE. Plausible CE es AGPL-3.0 o posterior y el script de seguimiento es MIT. Es madura (~30k estrellas, v3.2.1).
 - **Cuándo elegirlo:** Casos: Medir una web de contenido; Comparar conversiones de una landing.
 - **Requisitos:** nivel 2: preparación media; Cuenta Cloud o servidor CE; web propia para el script; hardware prerequisites; API de IA: no; Cuenta Cloud o servidor CE; web propia para el script.
@@ -97,7 +99,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Matomo (`matomo`)
 
-- **Repo:** https://github.com/matomo-org/matomo · GPL-3.0 · nivel 2 · 57/100 · alternativa en «Analítica web auto-hospedada»
+- **Repo:** https://github.com/matomo-org/matomo · GPL-3.0 · nivel 2 · 58/100 · alternativa en «Analítica web auto-hospedada»
 - **Qué es:** Matomo (antes Piwik), plataforma de analítica web libre y autoalojable. Licencia GPL-3.0 o posterior. Es muy madura (~22k estrellas, 5.14.2) y el README cita más de 1,4 millones de sitios.
 - **Cuándo elegirlo:** Casos: Gestionar analítica en servidor propio; Crear informes de comportamiento de una web.
 - **Requisitos:** nivel 2: preparación media; Servidor PHP y MySQL compatibles; web de prueba; configuración de privacidad; hardware prerequisites; API de IA: no; Servidor PHP y MySQL compatibles; web de prueba; configuración de privacidad.
@@ -144,7 +146,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Evidence (`evidence`)
 
-- **Repo:** https://github.com/evidence-dev/evidence · MIT · nivel 1 · 57/100
+- **Repo:** https://github.com/evidence-dev/evidence · MIT · nivel 1 · 58/100
 - **Qué es:** Herramienta de BI de código abierto (MIT) de Evidence (evidence.dev), con plataforma de publicación comercial (Evidence Studio). Activa.
 - **Cuándo elegirlo:** Casos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no.
@@ -155,7 +157,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Redash (`redash`)
 
-- **Repo:** https://github.com/getredash/redash · BSD-2-Clause · nivel 2 · 57/100 · alternativa en «BI y dashboards»
+- **Repo:** https://github.com/getredash/redash · BSD-2-Clause · nivel 2 · 58/100 · alternativa en «BI y dashboards»
 - **Qué es:** Redash, herramienta para consultar fuentes de datos con SQL, visualizar y compartir resultados. Licencia BSD-2-Clause. Es madura (~29k estrellas) y sigue publicando versiones (v26.9.0).
 - **Cuándo elegirlo:** Casos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Servidor según guía; fuente de datos; SQL básico; hardware prerequisites; API de IA: no; Servidor según guía; fuente de datos; SQL básico.
@@ -202,13 +204,13 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; JavaScript; HTML/SVG o Canvas; datos de prueba; hardware prerequisites; API de IA: no; JavaScript; HTML/SVG o Canvas; datos de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `yarn add d3` — fuente: https://github.com/d3/d3/blob/main/docs/getting-started.md
 - **Primera prueba propuesta (no ejecutada):** Construye un gráfico de barras de tres categorías con escala y ejes explícitos Éxito: Cada barra y etiqueta corresponde a su valor
-- **Combina con:** `recharts`, `awesome-dataviz` [10/recursos], `marimo` [25/datos]
+- **Combina con:** `recharts`, `awesome-dataviz` [10/recursos], `marimo` [25/apps]
 - **Alternativas:** `echarts`, `recharts`, `chart-js`
 - **Riesgos y avisos:** Alternativas (elige una): echarts. Curva de aprendizaje alta. Ofrece piezas de bajo nivel; exige más programación que una biblioteca de gráficos ya montados.
 
 ### Recharts (`recharts`)
 
-- **Repo:** https://github.com/recharts/recharts · MIT · nivel 2 · 69/100 · alternativa en «Librerías de gráficos»
+- **Repo:** https://github.com/recharts/recharts · MIT · nivel 2 · 70/100 · alternativa en «Librerías de gráficos»
 - **Qué es:** Recharts, librería de gráficos para React construida con D3. Licencia MIT. Es madura (~28k estrellas, v3.10.1).
 - **Cuándo elegirlo:** Casos: Visualizar una serie de ventas; Comparar categorías en un dashboard React.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; React; Node; react-is compatible; datos de prueba; hardware prerequisites; API de IA: no; React; Node; react-is compatible; datos de prueba.
@@ -225,7 +227,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Chart.js (`chart-js`)
 
-- **Repo:** https://github.com/chartjs/Chart.js · MIT · nivel 2 · 64/100 · alternativa en «Librerías de gráficos»
+- **Repo:** https://github.com/chartjs/Chart.js · MIT · nivel 2 · 65/100 · alternativa en «Librerías de gráficos»
 - **Qué es:** Chart.js, librería JavaScript de gráficos sobre Canvas para diseñadores y desarrolladores. Licencia MIT. Es muy madura (~68k estrellas, v4.6.1).
 - **Cuándo elegirlo:** Casos: Añadir gráficos a una página sencilla; Comparar resultados por periodo.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript; canvas; gestor npm o script distribuido; hardware prerequisites; API de IA: no; JavaScript; canvas; gestor npm o script distribuido.
@@ -237,7 +239,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### uPlot (`uplot`)
 
-- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 56/100
+- **Repo:** https://github.com/leeoniya/uPlot · MIT · nivel 2 · 57/100
 - **Qué es:** μPlot, librería compacta de gráficos de series temporales sobre Canvas 2D, de @leeoniya. Licencia MIT. Es madura (~11k estrellas, 1.6.32).
 - **Cuándo elegirlo:** Casos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript; datos temporales ordenados; estilos y build distribuidos; hardware prerequisites; API de IA: no; JavaScript; datos temporales ordenados; estilos y build distribuidos.
@@ -248,29 +250,40 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### awesome-dataviz (`awesome-dataviz`)
 
-- **Repo:** https://github.com/hal9ai/awesome-dataviz · CC-BY-4.0 · nivel 1 · 58/100
+- **Repo:** https://github.com/hal9ai/awesome-dataviz · CC-BY-4.0 · nivel 1 · 57/100
 - **Qué es:** Awesome Dataviz, lista curada de frameworks, librerías y software de visualización open source, creada por @fasouto y mantenida con patrocinio de Hal9. Licencia CC BY 4.0 (GitHub muestra NOASSERTION). Tiene ~4.5k estrellas.
 - **Cuándo elegirlo:** Casos: Encontrar una biblioteca de mapas; Comparar gráficos para React y JavaScript.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tipo de gráfico y framework objetivo; hardware prerequisites; API de IA: no; Navegador; tipo de gráfico y framework objetivo.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/hal9ai/awesome-dataviz/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Selecciona dos bibliotecas de un mismo tipo y compara licencia, accesibilidad y formato de datos Éxito: Tienes candidatos con documentación original y requisitos identificados
-- **Combina con:** `echarts` [10/graficos], `d3` [10/graficos], `awesome-bigdata` [25/datos]
+- **Combina con:** `echarts` [10/graficos], `d3` [10/graficos], `awesome-bigdata`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. El directorio reúne opciones; no se instala completo ni verifica automáticamente la calidad de cada enlace.
+
+### awesome-bigdata (`awesome-bigdata`)
+
+- **Repo:** https://github.com/oxnr/awesome-bigdata · MIT · nivel 1 · 55/100
+- **Qué es:** Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.
+- **Cuándo elegirlo:** Casos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; problema de datos definido; hardware prerequisites; API de IA: no; Navegador; problema de datos definido.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/oxnr/awesome-bigdata/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una Éxito: Puedes elegir candidatos complementarios
+- **Combina con:** `awesome-dataviz`, `duckdb` [25/datos], `hudi` [25/datos]
+- **Riesgos y avisos:** Sin alternativas declaradas. Recurso, no software. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces.
 
 ### data-analyst-roadmap (`data-analyst-roadmap`)
 
-- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 38/100
+- **Repo:** https://github.com/mtahiraslan/data-analyst-roadmap · MIT · nivel 1 · 37/100
 - **Qué es:** Hoja de ruta para aprender análisis de datos, de @mtahiraslan. Licencia MIT. Es pequeña (~1k estrellas) y su último cambio es de octubre de 2025.
 - **Cuándo elegirlo:** Casos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador; tiempo de estudio; una tabla pequeña de práctica; hardware prerequisites; API de IA: no; Navegador; tiempo de estudio; una tabla pequeña de práctica.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Elige SQL o una hoja de cálculo y resuelve una pregunta con una tabla ficticia Éxito: Puedes explicar dato de entrada, cálculo y resultado
-- **Combina con:** `duckdb` [25/datos], `marimo` [25/datos], `metabase` [10/bi]
+- **Combina con:** `duckdb` [25/datos], `marimo` [25/apps], `metabase` [10/bi]
 - **Riesgos y avisos:** Sin alternativas declaradas. Recurso introductorio, sin mantenimiento reciente. Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero.
 
 ### gods-eye-view (`gods-eye-view`)
 
-- **Repo:** https://github.com/bilawalsidhu/gods-eye-view · MIT (solo código) · nivel 2 · 68/100 · recomendado en «Paneles OSINT sobre globo 3D»
+- **Repo:** https://github.com/bilawalsidhu/gods-eye-view · MIT (solo código) · nivel 2 · 69/100 · recomendado en «Paneles OSINT sobre globo 3D»
 - **Qué es:** God's Eye View, visualizador geoespacial en un globo 3D que reúne datos abiertos en tiempo real, de @bilawalsidhu. Licencia MIT (GitHub muestra NOASSERTION).
 - **Cuándo elegirlo:** Casos: Explorar información geoespacial pública; Consultar el globo desde un agente MCP.
 - **Requisitos:** nivel 2: preparación media; Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP; hardware prerequisites; API de IA: opcional; Node y npm; WebGL; claves opcionales para datos o voz; app local para MCP.
@@ -344,7 +357,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Pythia (`pythia`)
 
-- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 47/100
+- **Repo:** https://github.com/jangles-byte/Pythia · MIT · nivel 3 · 48/100
 - **Qué es:** PYTHIA, plataforma local de predicción geopolítica de @jangles-byte que fusiona MiroFish (motor de predicción por inteligencia de enjambre) y Osiris (panel de inteligencia global). Licencia MIT.
 - **Cuándo elegirlo:** Casos: Resumir fuentes públicas con un LLM local; Comparar escenarios sobre un conjunto de eventos.
 - **Requisitos:** nivel 3: preparación pesada; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script; hardware prerequisites; API de IA: no; Ollama con modelo descargado; Python y uv; checkout Osiris; dependencias del script.
@@ -372,7 +385,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Leaflet (`leaflet`)
 
-- **Repo:** https://github.com/Leaflet/Leaflet · BSD-2-Clause · nivel 2 · 70/100 · recomendado en «Mapas web interactivos»
+- **Repo:** https://github.com/Leaflet/Leaflet · BSD-2-Clause · nivel 2 · 71/100 · recomendado en «Mapas web interactivos»
 - **Qué es:** Biblioteca de código abierto (BSD-2-Clause) creada en 2010 por Volodymyr Agafonkin y mantenida por la comunidad Leaflet. La biblioteca de mapas web interactivos más extendida; muy madura.
 - **Cuándo elegirlo:** Casos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -382,9 +395,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `maplibre`
 - **Riesgos y avisos:** Alternativas (elige una): maplibre (mapas vectoriales con WebGL).
 
+### deck.gl (`deck.gl`)
+
+- **Repo:** https://github.com/visgl/deck.gl · MIT · nivel 2 · 69/100
+- **Qué es:** Framework de visualización de código abierto (MIT) del grupo vis.gl de la OpenJS Foundation, creado originalmente en Uber. Maduro y activo.
+- **Cuándo elegirlo:** Casos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install deck.gl` — fuente: https://github.com/visgl/deck.gl/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo. Éxito: El mapa muestra los puntos y permite seleccionar uno con el ratón.
+- **Combina con:** `maplibre`, `kepler.gl`, `superset` [10/bi], `jupyterlab` [25/datos], `panel` [25/apps]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para mapas base comerciales revisa las condiciones y claves del proveedor.
+
+### kepler.gl (`kepler.gl`)
+
+- **Repo:** https://github.com/keplergl/kepler.gl · MIT · nivel 1 · 69/100
+- **Qué es:** Aplicación de análisis geoespacial de código abierto (MIT), creada en Uber y hoy proyecto de la OpenJS Foundation dentro del ecosistema vis.gl. Activa.
+- **Cuándo elegirlo:** Casos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install --save @kepler.gl/components maplibre-gl` — fuente: https://github.com/keplergl/kepler.gl/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud. Éxito: El mapa crea capas automáticamente y permite filtrar por tiempo.
+- **Combina con:** `deck.gl`, `maplibre`, `jupyterlab` [25/datos], `claude-code` [20/terminal]
+- **Riesgos y avisos:** La demo procesa los datos en el navegador; revisa memoria con conjuntos muy grandes.
+
 ### MapLibre GL JS (`maplibre`)
 
-- **Repo:** https://github.com/maplibre/maplibre-gl-js · BSD-3-Clause · nivel 2 · 67/100 · alternativa en «Mapas web interactivos»
+- **Repo:** https://github.com/maplibre/maplibre-gl-js · BSD-3-Clause · nivel 2 · 68/100 · alternativa en «Mapas web interactivos»
 - **Qué es:** Biblioteca de código abierto (BSD-3-Clause) de la organización MapLibre, creada como fork de mapbox-gl-js cuando este pasó a una licencia no libre en diciembre de 2020. Madura y con amplio respaldo.
 - **Cuándo elegirlo:** Casos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, docker-compose.yml, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -394,31 +429,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `leaflet`
 - **Riesgos y avisos:** Alternativas (elige una): leaflet.
 
-### kepler.gl (`kepler.gl`)
-
-- **Repo:** https://github.com/keplergl/kepler.gl · MIT · nivel 1 · 66/100
-- **Qué es:** Aplicación de análisis geoespacial de código abierto (MIT), creada en Uber y hoy proyecto de la OpenJS Foundation dentro del ecosistema vis.gl. Activa.
-- **Cuándo elegirlo:** Casos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install --save @kepler.gl/components maplibre-gl` — fuente: https://github.com/keplergl/kepler.gl/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud. Éxito: El mapa crea capas automáticamente y permite filtrar por tiempo.
-- **Combina con:** `deck.gl`, `maplibre`, `jupyterlab` [25/datos], `claude-code` [20/terminal]
-- **Riesgos y avisos:** La demo procesa los datos en el navegador; revisa memoria con conjuntos muy grandes.
-
-### deck.gl (`deck.gl`)
-
-- **Repo:** https://github.com/visgl/deck.gl · MIT · nivel 2 · 65/100
-- **Qué es:** Framework de visualización de código abierto (MIT) del grupo vis.gl de la OpenJS Foundation, creado originalmente en Uber. Maduro y activo.
-- **Cuándo elegirlo:** Casos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install deck.gl` — fuente: https://github.com/visgl/deck.gl/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo. Éxito: El mapa muestra los puntos y permite seleccionar uno con el ratón.
-- **Combina con:** `maplibre`, `kepler.gl`, `superset` [10/bi], `jupyterlab` [25/datos], `panel` [25/apps]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para mapas base comerciales revisa las condiciones y claves del proveedor.
-
 ### QGIS (`qgis`)
 
-- **Repo:** https://github.com/qgis/QGIS · GPL-2.0 · nivel 1 · 61/100
+- **Repo:** https://github.com/qgis/QGIS · GPL-2.0 · nivel 1 · 64/100
 - **Qué es:** SIG de escritorio de código abierto (GPL-2.0 o posterior) desarrollado por la comunidad QGIS y miembro de OSGeo. Muy maduro, con versiones LTR y regulares.
 - **Cuándo elegirlo:** Casos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt, requirements.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -435,7 +448,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
 - **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps], `leaflet`, `qgis`
 - **Alternativas:** `odm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
 
@@ -452,9 +465,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --project-path /datasets project
   ```
 - **Primera prueba propuesta (no ejecutada):** Procesa un lote pequeño de imágenes de prueba y abre la ortofoto y nube de puntos Éxito: Puedes inspeccionar alineación, cobertura y errores visibles
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos]
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps]
 - **Alternativas:** `webodm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm). El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas.
+
+### GlobalBuildingAtlas (`globalbuildingatlas`)
+
+- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 33/100
+- **Qué es:** GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra…
+- **Cuándo elegirlo:** Casos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa; hardware prerequisites; API de IA: no; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa Éxito: Puedes identificar formato, licencia y escala del dato
+- **Combina con:** `three.js` [26/animacion], `duckdb` [25/datos], `3dviz-pro-max` [27/skills]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

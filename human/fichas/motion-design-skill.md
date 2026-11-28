@@ -4,6 +4,14 @@
 
 > Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.
 
+## Cuándo elegir esta ficha
+
+En av-video-codigo se presenta mejor como lectura de ritmo, estados y easing. HyperFrames o Motion Canvas producen la salida de vídeo y pueden tomar los principios como insumo editorial.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/LottieFiles/motion-design-skill/blob/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb/README.md) · [Fuente 2](https://github.com/LottieFiles/motion-design-skill/commit/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb) · [Fuente 3](https://github.com/LottieFiles/motion-design-skill/blob/main/README.md)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3.1k | MIT | — | 2026-11-14 |

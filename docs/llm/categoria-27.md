@@ -21,9 +21,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `ui-ux-pro-max-skill` | skills | Conjunto de skills que dotan al asistente de código de inteligencia de diseño… | 1 Básico | 73 | MIT (OSI permisiva) | recomendado |
 | `anatomy` | skills | Skill para crear ilustraciones isométricas e interactivas de máquinas y… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
 | `taste-skill` | skills | Skill design-taste-frontend para dirección visual y revisión de sitios; otros… | 1 Básico | 70 | MIT (OSI permisiva) | alternativa |
+| `design.md` | skills | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `modern-web-guidance` | skills | Herramienta y skill para que un agente consulte documentación actual sobre… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `android-skills` | skills | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `design.md` | skills | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `impeccable` | skills | Vocabulario y playbooks de diseño para agentes, con detector determinista y… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `skills-emil` | skills | Colección de skills enfocada en diseño de interfaces y en mejorar la… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `logo-design-skill` | skills | Skill para diseñar logotipos con un agente, desde la idea y las referencias… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
@@ -101,6 +101,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `ui-ux-pro-max-skill`, `impeccable`, `hallmark`
 - **Riesgos y avisos:** Alternativas (elige una): ui-ux-pro-max-skill, impeccable, hallmark. Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual.
 
+### design.md (`design.md`)
+
+- **Repo:** https://github.com/google-labs-code/design.md · Apache-2.0 · nivel 2 · 65/100
+- **Qué es:** Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
+- **Cuándo elegirlo:** Casos: Documentar una identidad visual; Comparar dos versiones de tokens.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node para CLI; archivo DESIGN.md de prueba; hardware prerequisites; API de IA: no; Node para CLI; archivo DESIGN.md de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `npx @google/design.md lint DESIGN.md` — fuente: https://github.com/google-labs-code/design.md/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
+- **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
+- **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
+
 ### modern-web-guidance (`modern-web-guidance`)
 
 - **Repo:** https://github.com/GoogleChrome/modern-web-guidance · Apache-2.0 · nivel 2 · 65/100
@@ -122,17 +133,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada. Éxito: El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
 - **Combina con:** `codex` [20/terminal]
 - **Riesgos y avisos:** Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.
-
-### design.md (`design.md`)
-
-- **Repo:** https://github.com/google-labs-code/design.md · Apache-2.0 · nivel 2 · 63/100
-- **Qué es:** Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
-- **Cuándo elegirlo:** Casos: Documentar una identidad visual; Comparar dos versiones de tokens.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node para CLI; archivo DESIGN.md de prueba; hardware prerequisites; API de IA: no; Node para CLI; archivo DESIGN.md de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `npx @google/design.md lint DESIGN.md` — fuente: https://github.com/google-labs-code/design.md/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
-- **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
-- **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
 
 ### impeccable (`impeccable`)
 
@@ -209,7 +209,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Codex o Claude Code; Three.js o Blender según ruta; brief y escena pequeña; hardware prerequisites; API de IA: no; Codex o Claude Code; Three.js o Blender según ruta; brief y escena pequeña.
 - **Instalación (documentada en la fuente; no ejecutada):** `/plugin marketplace add viettranx/3dviz-pro-max` — fuente: https://github.com/viettranx/3dviz-pro-max/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Elige una receta sencilla y compara el render con un criterio de composición explícito Éxito: Puedes inspeccionar escena y resultados del ejemplo
-- **Combina con:** `three.js` [26/animacion], `claude-code` [20/terminal], `codex` [20/terminal], `blender` [26/creacion-3d], `globalbuildingatlas` [25/datos]
+- **Combina con:** `three.js` [26/animacion], `claude-code` [20/terminal], `codex` [20/terminal], `blender` [26/creacion-3d], `globalbuildingatlas` [10/geoespacial]
 - **Alternativas:** `threejs-skills`
 - **Riesgos y avisos:** Alternativa (elige una): threejs-skills. El video de cabecera es material previo del autor, no una demo de la skill (lo aclara el README). El autor separa demostraciones históricas, validación de plugins y pruebas de ejecución; no se debe atribuir todo video promocional a una prueba de la skill.
 

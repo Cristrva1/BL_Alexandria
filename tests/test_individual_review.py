@@ -25,7 +25,8 @@ def test_every_public_identity_has_one_individual_decision_and_current_evidence(
     # The dated ledger stays whole; repos retired later are listed with their reason in data/retired.json.
     retired={r['id'] for r in json.loads((ROOT/'data/retired.json').read_text(encoding='utf8'))['repos']}
     assert baseline - retired <= {r['id'] for r in catalog['repos']}
-    assert retired <= baseline
+    assert not (retired & {r['id'] for r in catalog['repos']})
+    # Entries added after the dated ledger can also be retired later.
     assert report['individually_reviewed']==report['total']==679 and not report['pending']
     ledger={r['id']:r for r in rows}
     for repo in catalog['repos']:

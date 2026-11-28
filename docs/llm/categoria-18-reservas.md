@@ -1,6 +1,6 @@
 # Alexandría para agentes · Reservas y programación de citas
 
-Categoría 18 «CRM, ventas y marketing» › subcategoría `reservas`. 3 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 18 «CRM, ventas y marketing» › subcategoría `reservas`. 2 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=18&sub=reservas · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -19,7 +19,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `cal.diy` | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una… | 3 Avanzado | 70 | MIT (OSI permisiva) | recomendado |
-| `formbricks` | Encuestas y experience management open source (alternativa a Qualtrics)… | 2 Intermedio | 66 | AGPL-3.0 + licencia Enterprise (ee/) (open-core) | sin grupo |
 | `easyappointments` | Aplicación web autoalojada de reserva de citas: clientes reservan online según… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -34,20 +33,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo; hardware prerequisites; API de IA: no; Node.js y Yarn según el proyecto; PostgreSQL; Docker para el entorno de desarrollo.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/calcom/cal.diy.git` — fuente: https://github.com/calcom/cal.diy/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Configura un evento personal de prueba y abre su página de reserva Éxito: Puedes elegir una franja disponible y revisar la reserva creada
-- **Combina con:** `activepieces` [1/motores], `twenty-main` [18/crm], `botpress` [17/chatbots], `compai-crm` [18/crm], `formbricks`
+- **Combina con:** `activepieces` [1/motores], `twenty-main` [18/crm], `botpress` [17/chatbots], `compai-crm` [18/crm]
 - **Alternativas:** `easyappointments`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas.
-
-### Formbricks (`formbricks`)
-
-- **Repo:** https://github.com/formbricks/formbricks · AGPL-3.0 + licencia Enterprise (ee/) · nivel 2 · 66/100
-- **Qué es:** Formbricks: experiencia/encuestas OS (AGPL núcleo; packages MIT; apps/web/modules/ee con licencia EE).
-- **Cuándo elegirlo:** Casos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados.
-- **Requisitos:** nivel 2: preparación media; TypeScript, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp` — fuente: https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx
-- **Primera prueba propuesta (no ejecutada):** Sigue https://formbricks.com docs para Docker Compose y abre la UI. Éxito: Creas una encuesta de prueba.
-- **Combina con:** `cal.diy`, `easyappointments`, `listmonk` [18/marketing], `typebot` [17/chatbots]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ### Easy!Appointments (`easyappointments`)
 
@@ -57,7 +45,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; PHP, composer.json, docker-compose.yml, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up` — fuente: https://github.com/alextselegidis/easyappointments/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba. Éxito: La cita aparece en el calendario del proveedor.
-- **Combina con:** `espocrm` [18/crm], `activepieces` [1/motores], `coolify` [22/infraestructura], `formbricks`
+- **Combina con:** `espocrm` [18/crm], `activepieces` [1/motores], `coolify` [22/infraestructura]
 - **Alternativas:** `cal.diy`
 - **Riesgos y avisos:** Alternativas (elige una): cal.diy.
 

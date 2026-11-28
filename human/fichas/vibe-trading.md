@@ -4,6 +4,12 @@
 
 > Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables.
 
+## Cuándo elegir esta ficha
+
+Conservar por research, replay/paper documentado y tareas de cuenta. Dexter cubre research y vectorbt simulación histórica por señales. Ambos pierden el flujo unificado. HEAD y release instalable pueden divergir.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/HKUDS/Vibe-Trading/blob/HEAD/README.md) · [Fuente 2](https://github.com/HKUDS/Vibe-Trading/commit/a7ea2328337ee435fc7c25c0378d130dd038b63b)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 38.2k | MIT | Python | 2026-11-14 |

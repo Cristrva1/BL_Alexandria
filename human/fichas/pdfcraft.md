@@ -4,6 +4,12 @@
 
 > Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.
 
+## Cuándo elegir esta ficha
+
+Ambos nombres se parecen, con IDs, upstreams, flujos y licencias distintos. El editor web cubre utilidades PDF, la librería prepara Markdown y EPUB desde escaneos.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/PDFCraftTool/pdfcraft/blob/50aef68b77f7f6286862b3f648a8b49cde7cddad/README.md) · [Fuente 2](https://api.github.com/repos/PDFCraftTool/pdfcraft) · [Fuente 3](https://github.com/PDFCraftTool/pdfcraft/commit/50aef68b77f7f6286862b3f648a8b49cde7cddad)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 9.8k | AGPL-3.0 | TypeScript | 2026-06-23 |

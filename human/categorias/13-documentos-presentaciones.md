@@ -21,8 +21,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 - [Conversión de documentos para IA](#conversión-de-documentos-para-ia) — 9 repos
 - [OCR](#ocr) — 7 repos
-- [Herramientas PDF](#herramientas-pdf) — 6 repos
-- [Gestión y archivo de documentos](#gestión-y-archivo-de-documentos) — 1 repos
+- [Herramientas PDF](#herramientas-pdf) — 5 repos
+- [Gestión y archivo de documentos](#gestión-y-archivo-de-documentos) — 2 repos
 
 ## Conversión de documentos para IA
 
@@ -59,13 +59,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental | Sin clave propia de API de IA en la ruta básica |
 | [Documenso](../fichas/documenso.md) | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. | Tu objetivo encaja con estos ejemplos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla | API de IA opcional |
 | [pdfcraft](../fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba | Sin clave propia de API de IA en la ruta básica |
-| [PdfDing](../fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos | Sin clave propia de API de IA en la ruta básica |
 
 ## Gestión y archivo de documentos
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [paperless-ngx](../fichas/paperless-ngx.md) | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable | Sin clave propia de API de IA en la ruta básica |
+| [PdfDing](../fichas/pdfding.md) | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg. | Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

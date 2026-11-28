@@ -4,6 +4,14 @@
 
 > Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source.
 
+## Cuándo elegir esta ficha
+
+El propio GitHub de Caido distribuye versiones y roadmap. Basic limita proyectos y flujos. Para funciones de suscripción la autenticación tiene dependencia de internet. El proveedor también documenta modo invitado.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://www.caido.io/pricing/) · [Fuente 2](https://github.com/caido/caido/commit/cb9d78c420e1493353bb975f6b3d31327a8cdc28) · [Fuente 3](https://docs.caido.io/app/concepts/offline)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 2.7k | — | Shell | 2026-11-16 |

@@ -1,6 +1,6 @@
-# Alexandría para agentes · Fotogrametría y mapas desde imágenes
+# Alexandría para agentes · Datos geoespaciales, fotogrametría y mapas
 
-Categoría 10 «Dashboards, analítica y mapas» › subcategoría `geoespacial`. 7 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 10 «Dashboards, analítica y mapas» › subcategoría `geoespacial`. 8 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=10&sub=geoespacial · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,13 +18,14 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `leaflet` | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de… | 2 Intermedio | 70 | BSD-2-Clause (OSI permisiva) | recomendado |
-| `maplibre` | Biblioteca abierta de mapas vectoriales interactivos en el navegador con… | 2 Intermedio | 67 | BSD-3-Clause (OSI permisiva) | alternativa |
-| `kepler.gl` | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
-| `deck.gl` | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos… | 2 Intermedio | 65 | MIT (OSI permisiva) | sin grupo |
-| `qgis` | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 61 | GPL-2.0 (OSI copyleft) | sin grupo |
+| `leaflet` | Biblioteca JavaScript ligera para mapas web interactivos: unos 40 kB, capas de… | 2 Intermedio | 71 | BSD-2-Clause (OSI permisiva) | recomendado |
+| `deck.gl` | Framework de visualización en WebGL2/WebGPU para grandes conjuntos de datos… | 2 Intermedio | 69 | MIT (OSI permisiva) | sin grupo |
+| `kepler.gl` | Herramienta web de exploración visual de grandes datos geográficos sin código… | 1 Básico | 69 | MIT (OSI permisiva) | sin grupo |
+| `maplibre` | Biblioteca abierta de mapas vectoriales interactivos en el navegador con… | 2 Intermedio | 68 | BSD-3-Clause (OSI permisiva) | alternativa |
+| `qgis` | Sistema de información geográfica libre y multiplataforma: gestión de datos… | 1 Básico | 64 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `webodm` | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el… | 3 Avanzado | 60 | AGPL-3.0 (OSI copyleft) | recomendado |
 | `odm` | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | alternativa |
+| `globalbuildingatlas` | Dataset global y código de procesamiento de edificios con polígonos, alturas y… | 1 Básico | 33 | MIT + Commons Clause (source-available) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -32,7 +33,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Leaflet (`leaflet`)
 
-- **Repo:** https://github.com/Leaflet/Leaflet · BSD-2-Clause · nivel 2 · 70/100 · recomendado en «Mapas web interactivos»
+- **Repo:** https://github.com/Leaflet/Leaflet · BSD-2-Clause · nivel 2 · 71/100 · recomendado en «Mapas web interactivos»
 - **Qué es:** Biblioteca de código abierto (BSD-2-Clause) creada en 2010 por Volodymyr Agafonkin y mantenida por la comunidad Leaflet. La biblioteca de mapas web interactivos más extendida; muy madura.
 - **Cuándo elegirlo:** Casos: añadir un mapa con marcadores y popups a una web; publicar datos GeoJSON propios sobre un mapa base de OpenStreetMap.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; JavaScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -42,9 +43,31 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `maplibre`
 - **Riesgos y avisos:** Alternativas (elige una): maplibre (mapas vectoriales con WebGL).
 
+### deck.gl (`deck.gl`)
+
+- **Repo:** https://github.com/visgl/deck.gl · MIT · nivel 2 · 69/100
+- **Qué es:** Framework de visualización de código abierto (MIT) del grupo vis.gl de la OpenJS Foundation, creado originalmente en Uber. Maduro y activo.
+- **Cuándo elegirlo:** Casos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install deck.gl` — fuente: https://github.com/visgl/deck.gl/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo. Éxito: El mapa muestra los puntos y permite seleccionar uno con el ratón.
+- **Combina con:** `maplibre`, `kepler.gl`, `superset` [10/bi], `jupyterlab` [25/datos], `panel` [25/apps]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para mapas base comerciales revisa las condiciones y claves del proveedor.
+
+### kepler.gl (`kepler.gl`)
+
+- **Repo:** https://github.com/keplergl/kepler.gl · MIT · nivel 1 · 69/100
+- **Qué es:** Aplicación de análisis geoespacial de código abierto (MIT), creada en Uber y hoy proyecto de la OpenJS Foundation dentro del ecosistema vis.gl. Activa.
+- **Cuándo elegirlo:** Casos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `npm install --save @kepler.gl/components maplibre-gl` — fuente: https://github.com/keplergl/kepler.gl/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud. Éxito: El mapa crea capas automáticamente y permite filtrar por tiempo.
+- **Combina con:** `deck.gl`, `maplibre`, `jupyterlab` [25/datos], `claude-code` [20/terminal]
+- **Riesgos y avisos:** La demo procesa los datos en el navegador; revisa memoria con conjuntos muy grandes.
+
 ### MapLibre GL JS (`maplibre`)
 
-- **Repo:** https://github.com/maplibre/maplibre-gl-js · BSD-3-Clause · nivel 2 · 67/100 · alternativa en «Mapas web interactivos»
+- **Repo:** https://github.com/maplibre/maplibre-gl-js · BSD-3-Clause · nivel 2 · 68/100 · alternativa en «Mapas web interactivos»
 - **Qué es:** Biblioteca de código abierto (BSD-3-Clause) de la organización MapLibre, creada como fork de mapbox-gl-js cuando este pasó a una licencia no libre en diciembre de 2020. Madura y con amplio respaldo.
 - **Cuándo elegirlo:** Casos: publicar mapas vectoriales con estilo propio sin depender de un proveedor; crear mapas 3D con edificios y terreno en una web.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, docker-compose.yml, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
@@ -54,31 +77,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `leaflet`
 - **Riesgos y avisos:** Alternativas (elige una): leaflet.
 
-### kepler.gl (`kepler.gl`)
-
-- **Repo:** https://github.com/keplergl/kepler.gl · MIT · nivel 1 · 66/100
-- **Qué es:** Aplicación de análisis geoespacial de código abierto (MIT), creada en Uber y hoy proyecto de la OpenJS Foundation dentro del ecosistema vis.gl. Activa.
-- **Cuándo elegirlo:** Casos: explorar millones de viajes o eventos geolocalizados en el navegador; incrustar un explorador de mapas en una aplicación React o en un cuaderno.
-- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install --save @kepler.gl/components maplibre-gl` — fuente: https://github.com/keplergl/kepler.gl/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Abre la demo de kepler.gl y carga un CSV con columnas de latitud y longitud. Éxito: El mapa crea capas automáticamente y permite filtrar por tiempo.
-- **Combina con:** `deck.gl`, `maplibre`, `jupyterlab` [25/datos], `claude-code` [20/terminal]
-- **Riesgos y avisos:** La demo procesa los datos en el navegador; revisa memoria con conjuntos muy grandes.
-
-### deck.gl (`deck.gl`)
-
-- **Repo:** https://github.com/visgl/deck.gl · MIT · nivel 2 · 65/100
-- **Qué es:** Framework de visualización de código abierto (MIT) del grupo vis.gl de la OpenJS Foundation, creado originalmente en Uber. Maduro y activo.
-- **Cuándo elegirlo:** Casos: visualizar millones de puntos geográficos con interacción fluida; crear mapas 3D de densidad o rutas en una web o cuaderno.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; TypeScript, package.json; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación (documentada en la fuente; no ejecutada):** `npm install deck.gl` — fuente: https://github.com/visgl/deck.gl/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala `npm install deck.gl` o `pip install pydeck` y dibuja una capa de puntos con datos de ejemplo. Éxito: El mapa muestra los puntos y permite seleccionar uno con el ratón.
-- **Combina con:** `maplibre`, `kepler.gl`, `superset` [10/bi], `jupyterlab` [25/datos], `panel` [25/apps]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para mapas base comerciales revisa las condiciones y claves del proveedor.
-
 ### QGIS (`qgis`)
 
-- **Repo:** https://github.com/qgis/QGIS · GPL-2.0 · nivel 1 · 61/100
+- **Repo:** https://github.com/qgis/QGIS · GPL-2.0 · nivel 1 · 64/100
 - **Qué es:** SIG de escritorio de código abierto (GPL-2.0 o posterior) desarrollado por la comunidad QGIS y miembro de OSGeo. Muy maduro, con versiones LTR y regulares.
 - **Cuándo elegirlo:** Casos: preparar y analizar capas geográficas para un estudio o mapa impreso; publicar servicios de mapas WMS/WFS con QGIS Server.
 - **Requisitos:** nivel 1: preparación sencilla, app o instalador listo para usar; C++, CMakeLists.txt, requirements.txt; API de IA: no; Un sistema compatible y una copia de datos o archivos para la primera prueba..
@@ -95,7 +96,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba; hardware prerequisites; API de IA: no; Instalador oficial o Docker; RAM y disco según fotografías; dataset de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/WebODM/WebODM --config core.autocrlf=input --depth 1` — fuente: https://docs.webodm.org/installation/#hardware-requirements
 - **Primera prueba propuesta (no ejecutada):** Carga un conjunto pequeño de fotos propias y revisa el informe de procesamiento Éxito: Puedes abrir ortofoto, nube y reporte de calidad del mismo trabajo
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos], `leaflet`, `qgis`
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps], `leaflet`, `qgis`
 - **Alternativas:** `odm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. La combinación previa webodm → odm queda obsoleta: WebODM usa ODX, no ODM. El autor distingue los instaladores actuales de productos cobrados por terceros; no extrapoles tutoriales antiguos sin comprobar el origen.
 
@@ -112,9 +113,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --project-path /datasets project
   ```
 - **Primera prueba propuesta (no ejecutada):** Procesa un lote pequeño de imágenes de prueba y abre la ortofoto y nube de puntos Éxito: Puedes inspeccionar alineación, cobertura y errores visibles
-- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/datos]
+- **Combina con:** `blender` [26/creacion-3d], `three.js` [26/animacion], `marimo` [25/apps]
 - **Alternativas:** `webodm`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Sin alternativas declaradas. Desde abril de 2026, WebODM ya no es su interfaz (ver ficha de webodm). El ejemplo Windows necesita sustituir la ruta del dataset y su carpeta de proyecto; el resultado depende de la calidad de las tomas.
+
+### GlobalBuildingAtlas (`globalbuildingatlas`)
+
+- **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas · MIT + Commons Clause · nivel 1 · 33/100
+- **Qué es:** GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra…
+- **Cuándo elegirlo:** Casos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa; hardware prerequisites; API de IA: no; Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa Éxito: Puedes identificar formato, licencia y escala del dato
+- **Combina con:** `three.js` [26/animacion], `duckdb` [25/datos], `3dviz-pro-max` [27/skills]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 
@@ -122,7 +134,7 @@ Guarda este archivo como `docs/alexandria/categoria-10-geoespacial.md` y añade:
 
 ```markdown
 ## Herramientas externas
-Antes de proponer herramientas de «Fotogrametría y mapas desde imágenes», lee `docs/alexandria/categoria-10-geoespacial.md` y sigue sus
+Antes de proponer herramientas de «Datos geoespaciales, fotogrametría y mapas», lee `docs/alexandria/categoria-10-geoespacial.md` y sigue sus
 «Instrucciones para el agente». No instales ni ejecutes nada de esa lista sin mi aprobación explícita.
 ```
 

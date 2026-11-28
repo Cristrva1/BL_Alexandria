@@ -4,7 +4,7 @@
 
 Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
 
-76 repos únicos · 6 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
+75 repos únicos · 10 subcategorías. [Ver en el explorador](../../docs/index.html#/area/frontend).
 
 ## Qué usar para tu web
 
@@ -16,7 +16,7 @@ Diseña una página, construye su interfaz y prepara su publicación. Empieza po
 
 Diseñar y construir pantallas desde una interfaz visual.
 
-[Explorar 6 repos](../../docs/index.html#/explorar?area=frontend&topic=web-editores)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=frontend&topic=web-editores)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -25,13 +25,12 @@ Diseñar y construir pantallas desde una interfaz visual.
 | [open-design](../fichas/open-design.md) | Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. | API de IA opcional |
 | [penpot](../fichas/penpot.md) | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. | Sin clave propia de API de IA en la ruta básica |
 | [plasmic](../fichas/plasmic.md) | Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real. | Sin clave propia de API de IA en la ruta básica |
-| [tldraw](../fichas/tldraw.md) | SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. | Sin clave propia de API de IA en la ruta básica |
 
 ### Componentes, iconos y estilos
 
 Piezas de interfaz y CSS para construir una web.
 
-[Explorar 19 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
+[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-componentes)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -41,7 +40,6 @@ Piezas de interfaz y CSS para construir una web.
 | [daisyUI](../fichas/daisyui.md) | La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. | Sin clave propia de API de IA en la ruta básica |
 | [flexoki](../fichas/flexoki.md) | Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual. | Sin clave propia de API de IA en la ruta básica |
 | [heroui](../fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica |
-| [konva](../fichas/konva.md) | Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos. | Sin clave propia de API de IA en la ruta básica |
 | [Lucide](../fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Sin clave propia de API de IA en la ruta básica |
 | [magicui](../fichas/magicui.md) | Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video. | Sin clave propia de API de IA en la ruta básica |
 | [Mantine](../fichas/mantine.md) | Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones. | Sin clave propia de API de IA en la ruta básica |
@@ -49,28 +47,24 @@ Piezas de interfaz y CSS para construir una web.
 | [normalize.css](../fichas/normalize-css.md) | Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. | Sin clave propia de API de IA en la ruta básica |
 | [Radix Primitives](../fichas/radix-primitives.md) | Componentes React sin estilos y accesibles para construir sistemas de diseño propios. | Sin clave propia de API de IA en la ruta básica |
 | [React Bits](../fichas/react-bits.md) | Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. | Sin clave propia de API de IA en la ruta básica |
-| [Storybook](../fichas/storybook.md) | Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros. | Sin clave propia de API de IA en la ruta básica |
-| [swr](../fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica |
 | [tailwindcss](../fichas/tailwindcss.md) | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. | Sin clave propia de API de IA en la ruta básica |
-| [TanStack Query](../fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica |
 | [ui](../fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Sin clave propia de API de IA en la ruta básica |
+| [UI SDK (Vercel)](../fichas/ui-sdk.md) | Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos. | Sin clave propia de API de IA en la ruta básica |
 
 ### Interfaces y páginas con IA
 
 Generar pantallas o añadir una experiencia de IA a tu aplicación.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=frontend&topic=web-ia)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=frontend&topic=web-ia)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [ai-website-cloner-template](../fichas/ai-website-cloner-template.md) | Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz. | Sin clave propia de API de IA en la ruta básica |
 | [assistant-ui](../fichas/assistant-ui.md) | Librería React y TypeScript para interfaces de chat con IA de calidad producción. | Depende de la ruta elegida |
 | [CopilotKit](../fichas/copilotkit.md) | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. | Depende de la ruta elegida |
 | [json-render](../fichas/json-render.md) | Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador. | API de IA opcional |
 | [OpenUI](../fichas/openui.md) | Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces, no solo texto. | Depende de la ruta elegida |
 | [screenshot-to-code](../fichas/screenshot-to-code.md) | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. | Depende de la ruta elegida |
 | [Stitch SDK](../fichas/stitch-sdk.md) | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. | API de IA necesaria |
-| [UI SDK (Vercel)](../fichas/ui-sdk.md) | Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos. | Sin clave propia de API de IA en la ruta básica |
 
 ### Skills de diseño y UX
 
@@ -95,16 +89,17 @@ Instrucciones de diseño, accesibilidad y calidad para tu agente.
 
 Movimiento, gráficos y escenas interactivas en el navegador.
 
-[Explorar 16 repos](../../docs/index.html#/explorar?area=frontend&topic=web-movimiento)
+[Explorar 17 repos](../../docs/index.html#/explorar?area=frontend&topic=web-movimiento)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Anime.js](../fichas/animejs.md) | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | Sin clave propia de API de IA en la ruta básica |
 | [Babylon.js](../fichas/babylonjs.md) | Motor 3D completo para la web de Microsoft y la comunidad, con física, materiales PBR, WebXR, editor de nodos y playground en línea. | Sin clave propia de API de IA en la ruta básica |
+| [genjutsu](../fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin clave propia de API de IA en la ruta básica |
 | [GSAP](../fichas/gsap.md) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | Sin clave propia de API de IA en la ruta básica |
 | [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin clave propia de API de IA en la ruta básica |
 | [motion](../fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | API de IA opcional |
-| [pencil](../fichas/pencil.md) | Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | Sin clave propia de API de IA en la ruta básica |
+| [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin clave propia de API de IA en la ruta básica |
 | [pixelfx](../fichas/pixelfx.md) | Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | API de IA opcional |
 | [PixiJS](../fichas/pixijs.md) | Motor de renderizado 2D para la web sobre WebGL y WebGPU, muy rápido, para juegos, gráficos interactivos y aplicaciones visuales en el navegador. | Sin clave propia de API de IA en la ruta básica |
 | [PlayCanvas Engine](../fichas/playcanvas.md) | Motor gráfico web de código abierto sobre WebGPU y WebGL2 para apps, juegos y visualizaciones 2D y 3D, con soporte de Gaussian splats y glTF. | Sin clave propia de API de IA en la ruta básica |
@@ -120,7 +115,7 @@ Movimiento, gráficos y escenas interactivas en el navegador.
 
 Pruebas de navegador y herramientas para alojar la aplicación.
 
-[Explorar 17 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
+[Explorar 15 repos](../../docs/index.html#/explorar?area=frontend&topic=web-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -130,8 +125,6 @@ Pruebas de navegador y herramientas para alojar la aplicación.
 | [coolify](../fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin clave propia de API de IA en la ruta básica |
 | [Cypress](../fichas/cypress.md) | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. | Sin clave propia de API de IA en la ruta básica |
 | [Dokploy](../fichas/dokploy.md) | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. | Sin clave propia de API de IA en la ruta básica |
-| [FlareSolverr](../fichas/flaresolverr.md) | Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP. | Sin clave propia de API de IA en la ruta básica |
-| [LibreTranslate](../fichas/libretranslate.md) | Traduce texto con una interfaz web y una API que puedes alojar en tu equipo usando modelos de traducción de Argos. | Sin clave propia de API de IA en la ruta básica |
 | [playwright](../fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica |
 | [Playwright MCP](../fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
 | [Portainer CE](../fichas/portainer.md) | Interfaz web ligera para gestionar contenedores en Docker, Swarm, Podman, Kubernetes y ACI (Community Edition). | Sin clave propia de API de IA en la ruta básica |
@@ -141,5 +134,52 @@ Pruebas de navegador y herramientas para alojar la aplicación.
 | [Traefik Proxy](../fichas/traefik.md) | Proxy inverso y balanceador de carga dinámico para contenedores y microservicios que se configura automáticamente desde Docker, Kubernetes y otros. | Sin clave propia de API de IA en la ruta básica |
 | [Uptime Kuma](../fichas/uptime-kuma.md) | Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 canales y publica páginas de estado. | Sin clave propia de API de IA en la ruta básica |
 | [WebdriverIO](../fichas/webdriverio.md) | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. | Sin clave propia de API de IA en la ruta básica |
+
+### Datos del frontend
+
+Consultar, actualizar y revalidar datos desde una interfaz web.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=frontend&topic=web-datos)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [swr](../fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica |
+| [TanStack Query](../fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica |
+
+### Componentes aislados y pruebas de interfaz
+
+Desarrollar estados aislados y verificar recorridos sobre una aplicación propia.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=frontend&topic=web-ui-pruebas)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [playwright](../fichas/playwright.md) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | Sin clave propia de API de IA en la ruta básica |
+| [Storybook](../fichas/storybook.md) | Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros. | Sin clave propia de API de IA en la ruta básica |
+
+### Lienzos interactivos
+
+Construir un editor o pizarra interactiva en una aplicación web.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=frontend&topic=web-lienzos)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [konva](../fichas/konva.md) | Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos. | Sin clave propia de API de IA en la ruta básica |
+| [tldraw](../fichas/tldraw.md) | SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. | Sin clave propia de API de IA en la ruta básica |
+
+### Referencias y prototipado web
+
+Analizar diseños y prototipar con proyectos, capturas y activos propios o autorizados.
+
+[Explorar 5 repos](../../docs/index.html#/explorar?area=frontend&topic=web-referencias)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [ai-website-cloner-template](../fichas/ai-website-cloner-template.md) | Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz. | Sin clave propia de API de IA en la ruta básica |
+| [design-dna](../fichas/design-dna.md) | Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente. | Sin clave propia de API de IA en la ruta básica |
+| [design.md](../fichas/design-md.md) | Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones. | Sin clave propia de API de IA en la ruta básica |
+| [penpot](../fichas/penpot.md) | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. | Sin clave propia de API de IA en la ruta básica |
+| [screenshot-to-code](../fichas/screenshot-to-code.md) | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. | Depende de la ruta elegida |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

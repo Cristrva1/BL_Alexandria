@@ -18,11 +18,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `hayabusa` | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 61 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `velociraptor` | EDR/IR open source para recolección forense a escala: consultas VQL sobre… | 4 Experto | 58 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `volatility3` | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para… | 3 Avanzado | 48 | Volatility Software License 1.0 (no OSI) (source-available) | sin grupo |
-| `autopsy` | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para… | 3 Avanzado | 46 | — (sin licencia detectada) | recomendado |
-| `sleuthkit` | Toolkit forense de sistemas de archivos: recupera y analiza particiones… | 3 Avanzado | 42 | — (sin licencia detectada) | alternativa |
+| `hayabusa` | Triaje forense de event logs Windows con reglas Sigma: rápido, firmado y… | 3 Avanzado | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `velociraptor` | EDR/IR open source para recolección forense a escala: consultas VQL sobre… | 4 Experto | 63 | AGPL-3.0 (OSI copyleft) | sin grupo |
+| `volatility3` | Framework forense de memoria RAM (v3): analiza dumps Windows/Linux/macOS para… | 3 Avanzado | 53 | Volatility Software License 1.0 (no OSI) (source-available) | sin grupo |
+| `autopsy` | GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para… | 3 Avanzado | 38 | — (sin licencia detectada) | sin grupo |
+| `sleuthkit` | Toolkit forense de sistemas de archivos: recupera y analiza particiones… | 3 Avanzado | 38 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -30,7 +30,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Hayabusa (`hayabusa`)
 
-- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 61/100
+- **Repo:** https://github.com/Yamato-Security/hayabusa · AGPL-3.0 · nivel 3 · 63/100
 - **Qué es:** DFIR timeline/rules (AGPL) de Yamato Security.
 - **Cuándo elegirlo:** Casos: triar logs de un endpoint Windows de lab; buscar técnicas ATT&CK en evtx.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; Rust, Cargo.toml; API de IA: no.
@@ -41,7 +41,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Velociraptor (`velociraptor`)
 
-- **Repo:** https://github.com/Velocidex/velociraptor · AGPL-3.0 · nivel 4 · 58/100
+- **Repo:** https://github.com/Velocidex/velociraptor · AGPL-3.0 · nivel 4 · 63/100
 - **Qué es:** Plataforma AGPL de Velocidex para respuesta a incidentes y caza en endpoints.
 - **Cuándo elegirlo:** Casos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Makefile, go.mod; API de IA: no.
@@ -52,7 +52,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Volatility 3 (`volatility3`)
 
-- **Repo:** https://github.com/volatilityfoundation/volatility3 · Volatility Software License 1.0 (no OSI) · nivel 3 · 48/100
+- **Repo:** https://github.com/volatilityfoundation/volatility3 · Volatility Software License 1.0 (no OSI) · nivel 3 · 53/100
 - **Qué es:** Volatility 3 de Volatility Foundation; licencia propia (Volatility Software License) aunque la API marca NOASSERTION.
 - **Cuándo elegirlo:** Casos: listar procesos ocultos en un dump de lab; extraer conexiones de red desde memoria.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, pyproject.toml; API de IA: no.
@@ -63,25 +63,23 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Autopsy (`autopsy`)
 
-- **Repo:** https://github.com/sleuthkit/autopsy · — · nivel 3 · 46/100 · recomendado en «Análisis forense de discos»
+- **Repo:** https://github.com/sleuthkit/autopsy · — · nivel 3 · 38/100
 - **Qué es:** GUI forense (Apache-2.0 en LICENSE-2.0.txt; API sin SPDX).
 - **Cuándo elegirlo:** Casos: abrir un caso forense de lab; generar timeline de un disco de prueba.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Java; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/sleuthkit/autopsy/blob/develop/README.txt
 - **Primera prueba propuesta (no ejecutada):** Instala el paquete Windows desde el sitio oficial o sigue README.txt y abre un caso de lab. Éxito: UI de Autopsy con el disco cargado.
-- **Combina con:** `hayabusa`, `wazuh` [16/deteccion]
-- **Alternativas:** `sleuthkit`
+- **Combina con:** `hayabusa`, `wazuh` [16/deteccion], `sleuthkit`
 
 ### The Sleuth Kit (`sleuthkit`)
 
-- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 42/100 · alternativa en «Análisis forense de discos»
+- **Repo:** https://github.com/sleuthkit/sleuthkit · — · nivel 3 · 38/100
 - **Qué es:** TSK: toolkit forense de FS (licencias mixtas).
 - **Cuándo elegirlo:** Casos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba.
 - **Requisitos:** nivel 3: preparación media, requiere programar con él, dominio especializado; C; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/sleuthkit/sleuthkit/blob/develop-4.1x/README.md
 - **Primera prueba propuesta (no ejecutada):** Compila/instala según INSTALL.txt y ejecuta `fls` sobre una imagen de laboratorio. Éxito: Listas inodos/nombres de fichero.
-- **Combina con:** `velociraptor`, `volatility3`
-- **Alternativas:** `autopsy`
+- **Combina con:** `velociraptor`, `volatility3`, `autopsy`
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

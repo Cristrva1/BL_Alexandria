@@ -38,7 +38,7 @@ Es una aplicación de escritorio en C++ (Dear ImGui) para Windows, macOS y Linux
 
 Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[dnSpy](dnspy.md) · [ILSpy](ilspy.md) · [raddebugger](raddebugger.md) · [rizin](rizin.md)
+[dnSpyEx](dnspy.md) · [ILSpy](ilspy.md) · [raddebugger](raddebugger.md) · [rizin](rizin.md)
 
 **Notas:** Sin alternativas declaradas.
 

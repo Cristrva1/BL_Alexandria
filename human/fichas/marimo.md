@@ -1,8 +1,14 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Procesar datos y trabajar con notebooks](../categorias/25-datos-notebooks.md) › Datos y notebooks
+[🏠 Inicio](../README.md) › [🧑‍💻 Procesar datos y trabajar con notebooks](../categorias/25-datos-notebooks.md) › Apps de datos en Python
 
 # 🗃️ marimo
 
 > Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.
+
+## Cuándo elegir esta ficha
+
+Agrupar con notebooks y apps y mantener referencia desde procesamiento. JupyterLab cubre .ipynb. Al retirar marimo se perderían reactividad, código guardado como .py y posibilidad de servir el mismo cuaderno como app.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://raw.githubusercontent.com/marimo-team/marimo/906e4c2f4aa22c8630f0081a3e4ca6f56c311b8f/README.md) · [Fuente 2](https://api.github.com/repos/marimo-team/marimo) · [Fuente 3](https://github.com/marimo-team/marimo/commit/906e4c2f4aa22c8630f0081a3e4ca6f56c311b8f)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -53,7 +59,7 @@ Grupo **Notebooks**: marimo ocupa la posición 1 de 2 (recomendado). Orden por p
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **marimo** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
-| 2 | [JupyterLab](jupyterlab.md) | 66 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
+| 2 | [JupyterLab](jupyterlab.md) | 65 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
 
 ## Acceso, coste y equipo
 

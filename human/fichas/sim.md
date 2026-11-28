@@ -4,6 +4,12 @@
 
 > Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual.
 
+## Cuándo elegir esta ficha
+
+La PR 118 conserva Sim por conectores y cliente de macOS que también documenta instancias propias. Recomendar Dify para una app documental y Langflow para componentes Python.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/simstudioai/sim/blob/abc9e5c20bf781679848968403055ab55171b732/README.md) · [Fuente 2](https://github.com/simstudioai/sim/blob/main/README.md) · [Fuente 3](https://github.com/simstudioai/sim)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 30.1k | Apache-2.0 | TypeScript | 2026-11-10 |

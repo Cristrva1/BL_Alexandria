@@ -4,6 +4,12 @@
 
 > Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo.
 
+## Cuándo elegir esta ficha
+
+Pencil2D es una aplicación de dibujo y timeline. Si se retira se pierde el recorrido para autoría cuadro a cuadro. Los motores de navegador del bloque permiten representar animaciones, con funciones distintas a dibujar y exportar material.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://www.pencil2d.org/doc/user-manual) · [Fuente 2](https://github.com/pencil2d/pencil) · [Fuente 3](https://github.com/pencil2d/pencil/commit/7d1f719669526b71b6b66916cb50a72fbf95a3bd)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 1.9k | GPL-2.0 | C++ | 2026-11-14 |

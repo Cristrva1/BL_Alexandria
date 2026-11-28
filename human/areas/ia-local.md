@@ -4,7 +4,7 @@
 
 Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
 
-71 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
+72 repos únicos · 7 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ia-local).
 
 ## Opciones para empezar
 
@@ -47,7 +47,7 @@ Interfaces de conversación y espacios de trabajo con tus fuentes.
 
 Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
-[Explorar 14 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-motores)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-motores)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -58,7 +58,6 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 | [KoboldCpp](../fichas/koboldcpp.md) | Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama. | Sin clave propia de API de IA en la ruta básica |
 | [llama.cpp](../fichas/llama-cpp.md) | Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. | Sin clave propia de API de IA en la ruta básica |
 | [llamafile](../fichas/llamafile.md) | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. | Sin clave propia de API de IA en la ruta básica |
-| [llmfit](../fichas/llmfit.md) | Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. | Sin clave propia de API de IA en la ruta básica |
 | [LocalAI](../fichas/localai.md) | Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. | Sin clave propia de API de IA en la ruta básica |
 | [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Sin clave propia de API de IA en la ruta básica |
 | [MLC LLM](../fichas/mlc-llm.md) | Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI. | Sin clave propia de API de IA en la ruta básica |
@@ -70,7 +69,7 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
 Modelos publicados por sus autores para evaluar e integrar.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-modelos)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-modelos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -78,7 +77,6 @@ Modelos publicados por sus autores para evaluar e integrar.
 | [DeepSeek-V3](../fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional |
 | [Gemma (biblioteca JAX)](../fichas/gemma.md) | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino. | Sin clave propia de API de IA en la ruta básica |
 | [Kimi K2.7 Code](../fichas/kimi-k2-7-code.md) | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. | API de IA opcional |
-| [laya](../fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin clave propia de API de IA en la ruta básica |
 | [Nemotron (NVIDIA)](../fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | API de IA opcional |
 | [TimesFM](../fichas/timesfm.md) | Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por versión. | API de IA opcional |
 
@@ -129,5 +127,27 @@ Servir modelos y organizar el acceso de tus aplicaciones.
 | [TensorRT-LLM](../fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Sin clave propia de API de IA en la ruta básica |
 | [vLLM](../fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica |
 | [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica |
+
+### Elegir equipo y modelo
+
+Estimar memoria y comprobar qué modelo cabe antes de descargar.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-hardware)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [llmfit](../fichas/llmfit.md) | Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU. | Sin clave propia de API de IA en la ruta básica |
+| [Ollama](../fichas/ollama.md) | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. | API de IA opcional |
+
+### Experimentos de entrenamiento
+
+Consultar ejemplos reproducibles de evaluación y entrenamiento de modelos.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=ia-local&topic=local-experimentos)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [autoresearch](../fichas/autoresearch.md) | Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA. | Sin clave propia de API de IA en la ruta básica |
+| [nanochat](../fichas/nanochat.md) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

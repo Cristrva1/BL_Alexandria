@@ -4,6 +4,12 @@
 
 > Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI.
 
+## Cuándo elegir esta ficha
+
+Preservar la referencia aplicada por PR 118. Si se ocultase se perdería la combinación de mapa de flujos y previsualización de renombrado sobre un índice, con visor conectado al servidor. Los sustitutos cubren principalmente navegación e impacto. PolyForm Noncommercial requiere valorar licencia comercial aparte.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/LICENSE) · [Fuente 2](https://github.com/abhigyanpatwari/GitNexus/commit/acf755a1b70ea91208aac9437c2a552579a62b70)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 48.5k | PolyForm-Noncommercial-1.0.0 | TypeScript | 2026-06-23 |

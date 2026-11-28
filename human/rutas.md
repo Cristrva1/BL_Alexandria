@@ -340,7 +340,6 @@ Elegir una aplicación o un conjunto pequeño de extensiones para guardar, enlaz
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
-| [Obsidian: distribución y extensiones](fichas/obsidian-releases.md) | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. | Sin clave propia de API de IA en la ruta básica |
 | [Anytype Desktop](fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin clave propia de API de IA en la ruta básica |
 | [AppFlowy](fichas/appflowy.md) | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | API de IA opcional |
 
@@ -376,9 +375,9 @@ Escoger entre inspeccionar código, estudiar un binario o ejecutar pruebas en un
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
-| [ghidra](fichas/ghidra.md) | Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. | Sin clave propia de API de IA en la ruta básica |
-| [jadx](fichas/jadx.md) | Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
-| [shannon](fichas/shannon.md) | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. | Depende de la ruta elegida |
+| [Semgrep](fichas/semgrep.md) | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. | Sin clave propia de API de IA en la ruta básica |
+| [Trivy](fichas/trivy.md) | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube. | Sin clave propia de API de IA en la ruta básica |
+| [Wazuh](fichas/wazuh.md) | Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento. | Sin clave propia de API de IA en la ruta básica |
 
 [Ver la ruta en el explorador](../docs/index.html#/rutas?goal=seguridad)
 

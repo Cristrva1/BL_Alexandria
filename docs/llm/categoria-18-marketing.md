@@ -101,7 +101,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   docker compose up -d
   ```
 - **Primera prueba propuesta (no ejecutada):** Crea una lista de prueba y revisa el preview de una campaña antes de un envío de ensayo propio Éxito: Puedes comprobar plantilla, destinatario y estado del trabajo
-- **Combina con:** `activepieces` [1/motores], `novu`, `postiz-app`, `formbricks` [18/reservas]
+- **Combina con:** `activepieces` [1/motores], `novu`, `postiz-app`, `formbricks` [18/encuestas]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email…. No incluye un servicio de entrega de correo gratuito por instalarlo; configura el proveedor y prueba con tu propio destinatario.
 
 ### sellbird (`sellbird`)

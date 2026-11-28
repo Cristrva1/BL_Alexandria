@@ -20,7 +20,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `skillspector` | Herramienta que audita skills de agentes y detecta comandos peligrosos… | 1 Básico | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `cybersecurity-skills` | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `security-audit-skill` | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
+| `security-audit-skill` | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación… | 2 Intermedio | 59 | MIT (OSI permisiva) | sin grupo |
 | `defending-code-reference-harness` | Arnés de referencia de Anthropic con skills para modelar amenazas, escanear… | 2 Intermedio | 49 | Apache-2.0 (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -69,7 +69,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### security-audit-skill (`security-audit-skill`)
 
-- **Repo:** https://github.com/cloudflare/security-audit-skill · MIT · nivel 2 · 60/100
+- **Repo:** https://github.com/cloudflare/security-audit-skill · MIT · nivel 2 · 59/100
 - **Qué es:** Skill de auditoría de seguridad para agentes de programación, de Cloudflare. Licencia MIT. Es muy popular (~73k estrellas, sin releases) y fue el germen del arnés de descubrimiento de vulnerabilidades que Cloudflare describe en su blog.
 - **Cuándo elegirlo:** Casos: Organizar una revisión de código autorizada; Evaluar la calidad de hallazgos generados por un agente.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente con herramientas y subagentes paralelos; proyecto propio de prueba; hardware prerequisites; API de IA: no; Agente con herramientas y subagentes paralelos; proyecto propio de prueba.

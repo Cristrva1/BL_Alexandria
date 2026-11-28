@@ -27,8 +27,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `wireshark` | Analizador de protocolos de red de referencia: captura y decodifica paquetes de… | 1 Básico | 72 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `k6` | Herramienta de pruebas de carga para medir cómo responden aplicaciones y… | 2 Intermedio | 70 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `pwntools` | Framework Python para CTF y desarrollo de exploits: tubos, packing, ROP y… | 2 Intermedio | 68 | MIT (partes GPL-2.0 y BSD) (OSI permisiva) | sin grupo |
-| `aflplusplus` | Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software… | 4 Experto | 66 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `ffuf` | Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros… | 1 Básico | 66 | MIT (OSI permisiva) | recomendado |
+| `aflplusplus` | Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software… | 4 Experto | 65 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `bettercap` | Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con… | 2 Intermedio | 64 | GPL-3.0 (OSI copyleft) | sin grupo |
 | `hashcat` | Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más… | 2 Intermedio | 62 | MIT (sin licencia detectada) | recomendado |
 | `wrongsecrets` | Aplicación vulnerable de OWASP con retos sobre cómo no gestionar secretos en… | 1 Básico | 62 | AGPL-3.0 (OSI copyleft) | sin grupo |
@@ -39,10 +39,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `webgoat` | Aplicación web deliberadamente insegura de OWASP con lecciones guiadas para… | 1 Básico | 58 | GPL-2.0-or-later (OSI copyleft) | alternativa |
 | `gobuster` | Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de… | 1 Básico | 56 | Apache-2.0 (OSI permisiva) | alternativa |
 | `owtf` | Offensive Web Testing Framework de OWASP: orquesta herramientas de pentest web… | 2 Intermedio | 56 | BSD-3-Clause (OSI permisiva) | sin grupo |
-| `john` | Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo… | 2 Intermedio | 55 | GPL-2.0 (con partes bajo otras licencias) (OSI copyleft) | alternativa |
 | `syzkaller` | Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran… | 4 Experto | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `john` | Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo… | 2 Intermedio | 54 | GPL-2.0 (con partes bajo otras licencias) (OSI copyleft) | alternativa |
 | `thc-hydra` | Fuerza bruta multi-protocolo (SSH, HTTP, FTP…) solo contra objetivos con… | 1 Básico | 53 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `wpscan` | Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día… | 2 Intermedio | 53 | WPScan Public Source License (no OSI) (source-available) | sin grupo |
+| `wpscan` | Escáner de WordPress: usuarios, temas, plugins y vulns vía API (25 req/día… | 2 Intermedio | 52 | WPScan Public Source License (no OSI) (source-available) | sin grupo |
 | `aircrack-ng` | Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre… | 2 Intermedio | 51 | GPL-2.0 (OSI copyleft) | sin grupo |
 | `crapi` | API deliberadamente vulnerable de OWASP (completely ridiculous API) para… | 2 Intermedio | 44 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `caido` | Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic)… | 1 Básico | 39 | — (propietaria) | alternativa |
@@ -154,17 +154,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `pwndbg` [16/depuracion], `ghidra` [16/reversing]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### AFL++ (`aflplusplus`)
-
-- **Repo:** https://github.com/AFLplusplus/AFLplusplus · AGPL-3.0 · nivel 4 · 66/100
-- **Qué es:** Fuzzer AFL++ (AGPL).
-- **Cuándo elegirlo:** Casos: fuzzear un parser interno; regresión de seguridad en CI de un proyecto propio.
-- **Requisitos:** nivel 4: preparación difícil; C, Dockerfile, Makefile; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull aflplusplus/aflplusplus` — fuente: https://github.com/AFLplusplus/AFLplusplus/blob/stable/README.md
-- **Primera prueba propuesta (no ejecutada):** `docker pull aflplusplus/aflplusplus` y monta el target según la guía. Éxito: Campañas de fuzz generan crashes.
-- **Combina con:** `semgrep` [16/defensa], `pwntools`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
-
 ### ffuf (`ffuf`)
 
 - **Repo:** https://github.com/ffuf/ffuf · MIT · nivel 1 · 66/100 · recomendado en «Fuzzing de rutas y contenido web»
@@ -176,6 +165,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `subfinder` [16/reconocimiento], `mitmproxy`, `nuclei`, `sqlmap`, `seclists` [16/referencias]
 - **Alternativas:** `dirsearch`, `feroxbuster`, `gobuster`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Ajusta la tasa de peticiones para no saturar el servidor objetivo.
+
+### AFL++ (`aflplusplus`)
+
+- **Repo:** https://github.com/AFLplusplus/AFLplusplus · AGPL-3.0 · nivel 4 · 65/100
+- **Qué es:** Fuzzer AFL++ (AGPL).
+- **Cuándo elegirlo:** Casos: fuzzear un parser interno; regresión de seguridad en CI de un proyecto propio.
+- **Requisitos:** nivel 4: preparación difícil; C, Dockerfile, Makefile; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker pull aflplusplus/aflplusplus` — fuente: https://github.com/AFLplusplus/AFLplusplus/blob/stable/README.md
+- **Primera prueba propuesta (no ejecutada):** `docker pull aflplusplus/aflplusplus` y monta el target según la guía. Éxito: Campañas de fuzz generan crashes.
+- **Combina con:** `semgrep` [16/defensa], `pwntools`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. AGPL: si lo modificas y lo expones en red, debes publicar tus cambios.
 
 ### bettercap (`bettercap`)
 
@@ -298,18 +298,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `wstg` [16/referencias]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
 
-### John the Ripper (jumbo) (`john`)
-
-- **Repo:** https://github.com/openwall/john · GPL-2.0 (con partes bajo otras licencias) · nivel 2 · 55/100 · alternativa en «Cracking de contraseñas»
-- **Qué es:** Crackeador de contraseñas de Openwall (Solar Designer); esta es la versión jumbo con aportes de la comunidad. Licencia GPL-2.0 con archivos bajo licencias más permisivas (ver doc/LICENSE).
-- **Cuándo elegirlo:** Casos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo.
-- **Requisitos:** nivel 2: preparación media; C; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/openwall/john/blob/bleeding-jumbo/README.md
-- **Primera prueba propuesta (no ejecutada):** Compila John desde `src/` según doc/INSTALL o usa los paquetes de john-packages y ejecuta `john --test`. Éxito: John muestra la velocidad de los formatos soportados en tu equipo.
-- **Combina con:** `metasploit` [16/explotacion-c2], `wireshark`, `bloodhound` [16/ad-interno]
-- **Alternativas:** `hashcat`
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Alternativas (elige una): hashcat.
-
 ### syzkaller (`syzkaller`)
 
 - **Repo:** https://github.com/google/syzkaller · Apache-2.0 · nivel 4 · 55/100
@@ -320,6 +308,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Sigue docs/setup.md en un entorno con VMs dedicadas. Éxito: Manager e instancias fuzzando.
 - **Combina con:** `aflplusplus`, `radare2` [16/reversing]
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
+
+### John the Ripper (jumbo) (`john`)
+
+- **Repo:** https://github.com/openwall/john · GPL-2.0 (con partes bajo otras licencias) · nivel 2 · 54/100 · alternativa en «Cracking de contraseñas»
+- **Qué es:** Crackeador de contraseñas de Openwall (Solar Designer); esta es la versión jumbo con aportes de la comunidad. Licencia GPL-2.0 con archivos bajo licencias más permisivas (ver doc/LICENSE).
+- **Cuándo elegirlo:** Casos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo.
+- **Requisitos:** nivel 2: preparación media; C; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/openwall/john/blob/bleeding-jumbo/README.md
+- **Primera prueba propuesta (no ejecutada):** Compila John desde `src/` según doc/INSTALL o usa los paquetes de john-packages y ejecuta `john --test`. Éxito: John muestra la velocidad de los formatos soportados en tu equipo.
+- **Combina con:** `metasploit` [16/explotacion-c2], `wireshark`, `bloodhound` [16/ad-interno]
+- **Alternativas:** `hashcat`
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Alternativas (elige una): hashcat.
 
 ### THC Hydra (`thc-hydra`)
 
@@ -334,7 +334,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### WPScan (`wpscan`)
 
-- **Repo:** https://github.com/wpscanteam/wpscan · WPScan Public Source License (no OSI) · nivel 2 · 53/100
+- **Repo:** https://github.com/wpscanteam/wpscan · WPScan Public Source License (no OSI) · nivel 2 · 52/100
 - **Qué es:** Escáner de WordPress (WPScan Public Source License, source-available con cláusula comercial). La base de vulnerabilidades depende de la API de wpscan.com: 25 peticiones/día gratis; Enterprise de pago.
 - **Cuándo elegirlo:** Casos: auditar un WordPress de staging propio; enumerar plugins desactualizados.
 - **Requisitos:** nivel 2: preparación media; Ruby, Dockerfile, Gemfile; API de IA: no.

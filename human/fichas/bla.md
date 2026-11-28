@@ -4,6 +4,14 @@
 
 > Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes.
 
+## Cuándo elegir esta ficha
+
+La fuente acredita formatos declarados y propone protección de artefactos frente a agentes. Sus afirmaciones de efecto y equivalencia no se comprobaron. No sustituye controles del código y servidor.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/qybaihe/bla) · [Fuente 2](https://github.com/qybaihe/bla/commit/dd9e72f53ad97e3eb228523ad25295029107bb63)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 5.7k | MIT | TypeScript | 2026-11-14 |

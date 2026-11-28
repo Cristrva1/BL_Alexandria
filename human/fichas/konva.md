@@ -4,6 +4,12 @@
 
 > Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.
 
+## Cuándo elegir esta ficha
+
+Konva añade formas, eventos y capas Canvas 2D. Retirarlo pierde una biblioteca para crear editores específicos. tldraw cubre el lienzo de más alto nivel con licencia propia y PixiJS gráficos 2D con otra arquitectura.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://konvajs.org/docs/) · [Fuente 2](https://tldraw.dev/community/license) · [Fuente 3](https://pixijs.com/8.x/guides/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 15k | MIT | TypeScript | 2026-11-14 |

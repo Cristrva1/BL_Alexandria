@@ -4,6 +4,14 @@
 
 > Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo.
 
+## Cuándo elegir esta ficha
+
+El recurso define compatibilidad de formato. Mantener la referencia junto a herramientas que realmente leen .canvas.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/obsidianmd/jsoncanvas/blob/456f843cb293df4f4ab1763e22ccb46a80b307c8/readme.md) · [Fuente 2](https://api.github.com/repos/obsidianmd/jsoncanvas) · [Fuente 3](https://github.com/obsidianmd/jsoncanvas/commit/456f843cb293df4f4ab1763e22ccb46a80b307c8)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 3.9k | MIT | JavaScript | 2026-11-14 |

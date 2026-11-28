@@ -4,6 +4,14 @@
 
 > Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
 
+## Cuándo elegir esta ficha
+
+La fuente presenta un demostrador de clasificación de fraude y su pila. Ubicar como caso de uso aplicado o referencia de aprendizaje. La sección de simulación y debate puede enlazarlo si explica la métrica estudiada.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/Nutlope/jev-fraud/blob/HEAD/README.md) · [Fuente 2](https://github.com/Nutlope/jev-fraud/blob/main/README.md) · [Fuente 3](https://github.com/Nutlope/jev-fraud)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 17 | MIT | TypeScript | 2026-11-14 |

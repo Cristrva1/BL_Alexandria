@@ -1,6 +1,6 @@
 # Alexandría para agentes · CRM, ventas y marketing
 
-Categoría 18 completa (19 repos, 3 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 18 completa (19 repos, 4 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=18 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -35,8 +35,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `listmonk` | marketing | Gestor self-hosted de newsletters y listas de correo de alto rendimiento… | 2 Intermedio | 58 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `sellbird` | marketing | Plataforma de prospección por correo que documenta el uso de sesiones de Claude… | 2 Intermedio | 48 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `cal.diy` | reservas | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una… | 3 Avanzado | 70 | MIT (OSI permisiva) | recomendado |
-| `formbricks` | reservas | Encuestas y experience management open source (alternativa a Qualtrics)… | 2 Intermedio | 66 | AGPL-3.0 + licencia Enterprise (ee/) (open-core) | sin grupo |
 | `easyappointments` | reservas | Aplicación web autoalojada de reserva de citas: clientes reservan online según… | 2 Intermedio | 47 | GPL-3.0 (OSI copyleft) | alternativa |
+| `formbricks` | encuestas | Encuestas y experience management open source (alternativa a Qualtrics)… | 2 Intermedio | 66 | AGPL-3.0 + licencia Enterprise (ee/) (open-core) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -238,7 +238,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   docker compose up -d
   ```
 - **Primera prueba propuesta (no ejecutada):** Crea una lista de prueba y revisa el preview de una campaña antes de un envío de ensayo propio Éxito: Puedes comprobar plantilla, destinatario y estado del trabajo
-- **Combina con:** `activepieces` [1/motores], `novu`, `postiz-app`, `formbricks` [18/reservas]
+- **Combina con:** `activepieces` [1/motores], `novu`, `postiz-app`, `formbricks` [18/encuestas]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Necesitas un proveedor SMTP con buena reputación (SPF, DKIM y DMARC configurados). mautic cubre automatización de marketing más amplia y se solapa en email…. No incluye un servicio de entrega de correo gratuito por instalarlo; configura el proveedor y prueba con tu propio destinatario.
 
 ### sellbird (`sellbird`)
@@ -265,20 +265,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 3: preparación pesada; Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo; hardware prerequisites; API de IA: no; Node.js y Yarn según el proyecto; PostgreSQL; Docker para el entorno de desarrollo.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/calcom/cal.diy.git` — fuente: https://github.com/calcom/cal.diy/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Configura un evento personal de prueba y abre su página de reserva Éxito: Puedes elegir una franja disponible y revisar la reserva creada
-- **Combina con:** `activepieces` [1/motores], `twenty-main` [18/crm], `botpress` [17/chatbots], `compai-crm` [18/crm], `formbricks`
+- **Combina con:** `activepieces` [1/motores], `twenty-main` [18/crm], `botpress` [17/chatbots], `compai-crm` [18/crm]
 - **Alternativas:** `easyappointments`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas.
-
-### Formbricks (`formbricks`)
-
-- **Repo:** https://github.com/formbricks/formbricks · AGPL-3.0 + licencia Enterprise (ee/) · nivel 2 · 66/100
-- **Qué es:** Formbricks: experiencia/encuestas OS (AGPL núcleo; packages MIT; apps/web/modules/ee con licencia EE).
-- **Cuándo elegirlo:** Casos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados.
-- **Requisitos:** nivel 2: preparación media; TypeScript, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp` — fuente: https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx
-- **Primera prueba propuesta (no ejecutada):** Sigue https://formbricks.com docs para Docker Compose y abre la UI. Éxito: Creas una encuesta de prueba.
-- **Combina con:** `cal.diy`, `easyappointments`, `listmonk` [18/marketing], `typebot` [17/chatbots]
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ### Easy!Appointments (`easyappointments`)
 
@@ -288,9 +277,20 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; PHP, composer.json, docker-compose.yml, package.json; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker compose up` — fuente: https://github.com/alextselegidis/easyappointments/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba. Éxito: La cita aparece en el calendario del proveedor.
-- **Combina con:** `espocrm` [18/crm], `activepieces` [1/motores], `coolify` [22/infraestructura], `formbricks`
+- **Combina con:** `espocrm` [18/crm], `activepieces` [1/motores], `coolify` [22/infraestructura]
 - **Alternativas:** `cal.diy`
 - **Riesgos y avisos:** Alternativas (elige una): cal.diy.
+
+### Formbricks (`formbricks`)
+
+- **Repo:** https://github.com/formbricks/formbricks · AGPL-3.0 + licencia Enterprise (ee/) · nivel 2 · 66/100
+- **Qué es:** Formbricks: experiencia/encuestas OS (AGPL núcleo; packages MIT; apps/web/modules/ee con licencia EE).
+- **Cuándo elegirlo:** Casos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados.
+- **Requisitos:** nivel 2: preparación media; TypeScript, package.json; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp` — fuente: https://github.com/formbricks/formbricks/blob/main/docs/platform/mcp/setup.mdx
+- **Primera prueba propuesta (no ejecutada):** Sigue https://formbricks.com docs para Docker Compose y abre la UI. Éxito: Creas una encuesta de prueba.
+- **Combina con:** `listmonk` [18/marketing], `typebot` [17/chatbots]
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

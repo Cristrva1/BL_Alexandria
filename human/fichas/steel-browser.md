@@ -4,6 +4,12 @@
 
 > API de navegador autoalojable para agentes y apps: sesiones de Chrome con cookies, proxies, extensiones y repetición, controlables por Puppeteer, Playwright o Selenium.
 
+## Cuándo elegir esta ficha
+
+Ofrece sesiones de Chrome para otros clientes. Aplicar referencia cruzada desde agentes web y conservar la ficha por ejecución autoalojable.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/steel-dev/steel-browser/blob/e7e4a475550277e52bbe660f279584849e511271/README.md) · [Fuente 2](https://github.com/steel-dev/steel-browser/blob/main/README.md) · [Fuente 3](https://github.com/steel-dev/steel-browser)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 8k | Apache-2.0 | TypeScript | 2026-11-16 |

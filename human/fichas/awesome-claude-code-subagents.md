@@ -4,6 +4,14 @@
 
 > Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.
 
+## Cuándo elegir esta ficha
+
+Hay trabajo duplicado al buscar perfiles de Claude Code. La colección explícita de perfiles sigue aportando valor. Bajar prioridad en Guíame general y ubicar con perfiles especializados.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/VoltAgent/awesome-claude-code-subagents/blob/ed74d115b7fb7026a22a4f816a8e3250f425e3b4/README.md) · [Fuente 2](https://github.com/VoltAgent/awesome-claude-code-subagents) · [Fuente 3](https://github.com/VoltAgent/awesome-claude-code-subagents/commit/ed74d115b7fb7026a22a4f816a8e3250f425e3b4)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 26.7k | MIT | Shell | 2026-11-22 |

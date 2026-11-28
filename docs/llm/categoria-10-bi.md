@@ -21,8 +21,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `superset` | Plataforma de exploración y visualización de datos de Apache, alternativa… | 2 Intermedio | 82 | Apache-2.0 (OSI permisiva) | recomendado |
 | `grafana` | Plataforma de visualización y observabilidad para métricas, logs y trazas de… | 2 Intermedio | 80 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `metabase` | Herramienta de dashboards y BI para explorar métricas de negocio conectando… | 2 Intermedio | 67 | AGPL-3.0 + licencia comercial (enterprise/) (open-core) | alternativa |
-| `evidence` | BI como código: informes y visualizaciones interactivas escritos en SQL y… | 1 Básico | 57 | MIT (OSI permisiva) | sin grupo |
-| `redash` | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y… | 2 Intermedio | 57 | BSD-2-Clause (OSI permisiva) | alternativa |
+| `evidence` | BI como código: informes y visualizaciones interactivas escritos en SQL y… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `redash` | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y… | 2 Intermedio | 58 | BSD-2-Clause (OSI permisiva) | alternativa |
 | `wrenai` | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica… | 2 Intermedio | 57 | Multilicencia por ruta (Apache-2.0, AGPL-3.0, CC-BY-4.0) (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -66,7 +66,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Evidence (`evidence`)
 
-- **Repo:** https://github.com/evidence-dev/evidence · MIT · nivel 1 · 57/100
+- **Repo:** https://github.com/evidence-dev/evidence · MIT · nivel 1 · 58/100
 - **Qué es:** Herramienta de BI de código abierto (MIT) de Evidence (evidence.dev), con plataforma de publicación comercial (Evidence Studio). Activa.
 - **Cuándo elegirlo:** Casos: publicar informes de negocio versionados en git; generar dashboards con SQL que un agente de código puede editar.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no.
@@ -77,7 +77,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Redash (`redash`)
 
-- **Repo:** https://github.com/getredash/redash · BSD-2-Clause · nivel 2 · 57/100 · alternativa en «BI y dashboards»
+- **Repo:** https://github.com/getredash/redash · BSD-2-Clause · nivel 2 · 58/100 · alternativa en «BI y dashboards»
 - **Qué es:** Redash, herramienta para consultar fuentes de datos con SQL, visualizar y compartir resultados. Licencia BSD-2-Clause. Es madura (~29k estrellas) y sigue publicando versiones (v26.9.0).
 - **Cuándo elegirlo:** Casos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL.
 - **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Servidor según guía; fuente de datos; SQL básico; hardware prerequisites; API de IA: no; Servidor según guía; fuente de datos; SQL básico.

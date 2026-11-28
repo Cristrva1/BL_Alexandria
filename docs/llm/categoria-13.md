@@ -36,11 +36,11 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `olmocr` | ocr | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión… | 3 Avanzado | 51 | Apache-2.0 (OSI permisiva) | alternativa |
 | `stirling-pdf` | pdf | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar… | 1 Básico | 76 | MIT + licencia propietaria (app/proprietary/, app/saas/) (open-core) | recomendado |
 | `pdfmathtranslate` | pdf | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión… | 1 Básico | 68 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 64 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `documenso` | pdf | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por… | 3 Avanzado | 56 | AGPL-3.0 (open-core) | sin grupo |
+| `docuseal` | pdf | Aplicación para preparar formularios y gestionar la firma electrónica de… | 3 Avanzado | 62 | AGPL-3.0 (OSI copyleft) | sin grupo |
 | `pdfcraft` | pdf | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para… | 1 Básico | 55 | AGPL-3.0 (OSI copyleft) | alternativa |
-| `pdfding` | pdf | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 45 | AGPL-3.0 (OSI copyleft) | sin grupo |
-| `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 77 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `documenso` | pdf | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por… | 3 Avanzado | 53 | AGPL-3.0 (open-core) | sin grupo |
+| `paperless-ngx` | gestion | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar… | 2 Intermedio | 79 | GPL-3.0 (OSI copyleft) | sin grupo |
+| `pdfding` | gestion | Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones… | 1 Básico | 45 | AGPL-3.0 (OSI copyleft) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -171,7 +171,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Requisitos:** nivel 1: preparación sencilla; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba; hardware prerequisites; API de IA: no; Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba.
 - **Instalación (documentada en la fuente; no ejecutada):** `brew install ocrmypdf` — fuente: https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Añade OCR a una copia escaneada y busca una palabra que conoces Éxito: Puedes seleccionar y buscar texto manteniendo la imagen de la página
-- **Combina con:** `tesseract`, `paperless-ngx` [13/gestion], `stirling-pdf` [13/pdf], `pdf-inspector` [13/conversion], `pdfding` [13/pdf]
+- **Combina con:** `tesseract`, `paperless-ngx` [13/gestion], `stirling-pdf` [13/pdf], `pdf-inspector` [13/conversion], `pdfding` [13/gestion]
 - **Riesgos y avisos:** Se retiró docling por no estar documentado. La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original.
 
 ### Tesseract (`tesseract`)
@@ -268,7 +268,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### docuseal (`docuseal`)
 
-- **Repo:** https://github.com/docusealco/docuseal · AGPL-3.0 · nivel 3 · 64/100
+- **Repo:** https://github.com/docusealco/docuseal · AGPL-3.0 · nivel 3 · 62/100
 - **Qué es:** Plataforma de código abierto (AGPL-3.0) para rellenar y firmar documentos, de DocuSeal. Activa (3.3.6), con nube de pago y funciones Pro.
 - **Cuándo elegirlo:** Casos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental.
 - **Requisitos:** nivel 3: preparación pesada; Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios; hardware prerequisites; API de IA: no; Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios.
@@ -277,18 +277,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `activepieces` [1/motores], `twenty-main` [18/crm], `stirling-pdf`, `pdfcraft`
 - **Alternativas:** `documenso`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Para producción usa PostgreSQL en lugar de SQLite y configura SMTP con SPF/DKIM. El ejemplo es para revisar la herramienta con datos de prueba; configura dominio, persistencia y permisos antes de un uso real.
-
-### Documenso (`documenso`)
-
-- **Repo:** https://github.com/documenso/documenso · AGPL-3.0 · nivel 3 · 56/100
-- **Qué es:** Alternativa de código abierto a DocuSign para gestionar firmas electrónicas de documentos PDF.
-- **Cuándo elegirlo:** Casos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla. Evítalo si solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo.
-- **Requisitos:** nivel 3: preparación pesada; TypeScript, package.json; hardware prerequisites; API de IA: opcional.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/documenso/documenso/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** En la instalación local de desarrollo, crea una cuenta con un correo ficticio y confírmala desde http://localhost:9000. Sube un PDF propio de una página, añade como firmante a «Firmante Ficticio»… Éxito: En http://localhost:9000 abre el correo del firmante y firma. El documento pasa a completado y el PDF descargado…
-- **Combina con:** `stirling-pdf`, `paperless-ngx` [13/gestion], `activepieces` [1/motores]
-- **Alternativas:** `docuseal`
-- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
 
 ### pdfcraft (`pdfcraft`)
 
@@ -301,6 +289,29 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `coolify` [22/infraestructura], `docuseal`, `paperless-ngx` [13/gestion]
 - **Alternativas:** `stirling-pdf`
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Alternativa (elige una): stirling-pdf. Se retiró markitdown por falta de relación. La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web.
+
+### Documenso (`documenso`)
+
+- **Repo:** https://github.com/documenso/documenso · AGPL-3.0 · nivel 3 · 53/100
+- **Qué es:** Alternativa de código abierto a DocuSign para gestionar firmas electrónicas de documentos PDF.
+- **Cuándo elegirlo:** Casos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla. Evítalo si solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo.
+- **Requisitos:** nivel 3: preparación pesada; TypeScript, package.json; hardware prerequisites; API de IA: opcional.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/documenso/documenso/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** En la instalación local de desarrollo, crea una cuenta con un correo ficticio y confírmala desde http://localhost:9000. Sube un PDF propio de una página, añade como firmante a «Firmante Ficticio»… Éxito: En http://localhost:9000 abre el correo del firmante y firma. El documento pasa a completado y el PDF descargado…
+- **Combina con:** `stirling-pdf`, `paperless-ngx` [13/gestion], `activepieces` [1/motores]
+- **Alternativas:** `docuseal`
+- **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Open-core o uso comercial limitado: parte de las funciones o datos son de pago.
+
+### paperless-ngx (`paperless-ngx`)
+
+- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 79/100
+- **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
+- **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
+- **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.
+- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/setup.md
+- **Primera prueba propuesta (no ejecutada):** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta Éxito: Puedes abrir el original y localizarlo con su texto OCR
+- **Combina con:** `ocrmypdf` [13/ocr], `tesseract` [13/ocr], `erpnext` [18/crm]
+- **Riesgos y avisos:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real.
 
 ### PdfDing (`pdfding`)
 
@@ -320,19 +331,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
       mrmn/pdfding:latest
   ```
 - **Primera prueba propuesta (no ejecutada):** Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión Éxito: Puedes encontrar el documento y su progreso guardado
-- **Combina con:** `ocrmypdf` [13/ocr], `paperless-ngx` [13/gestion], `coolify` [22/infraestructura]
+- **Combina con:** `ocrmypdf` [13/ocr], `paperless-ngx`, `coolify` [22/infraestructura]
 - **Riesgos y avisos:** AGPL: si lo modificas y lo expones en red, debes publicar tus cambios. Fuente canónica: Codeberg. El repositorio de GitHub está archivado y solo se conserva como identidad de la estrella en el catálogo (`gh`, `github_id`); las…. El repositorio de GitHub está archivado desde que el proyecto se mudó a Codeberg; usa Codeberg y docs.pdfding.com como referencia. Sin OCR ni IA integrados.
-
-### paperless-ngx (`paperless-ngx`)
-
-- **Repo:** https://github.com/paperless-ngx/paperless-ngx · GPL-3.0 · nivel 2 · 77/100
-- **Qué es:** Sistema de gestión documental de código abierto (GPL-3.0), sucesor oficial de Paperless y Paperless-ng, mantenido por una comunidad. Muy activo (v3.4.2), con demo pública.
-- **Cuándo elegirlo:** Casos: Organizar recibos de prueba; Construir un archivo documental buscable.
-- **Requisitos:** nivel 2: Docker Compose con script de instalación; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios; hardware prerequisites; API de IA: no; Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker compose up -d` — fuente: https://github.com/paperless-ngx/paperless-ngx/blob/dev/docs/setup.md
-- **Primera prueba propuesta (no ejecutada):** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta Éxito: Puedes abrir el original y localizarlo con su texto OCR
-- **Combina con:** `ocrmypdf` [13/ocr], `tesseract` [13/ocr], `erpnext` [18/crm]
-- **Riesgos y avisos:** Para varios usuarios usa la variante con PostgreSQL. La lista de proyectos relacionados está en su wiki. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

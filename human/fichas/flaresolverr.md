@@ -4,6 +4,14 @@
 
 > Servidor proxy que abre páginas protegidas por Cloudflare o DDoS-GUARD en un Chrome automatizado y devuelve el HTML y las cookies para otros clientes HTTP.
 
+## Cuándo elegir esta ficha
+
+Referencia de infraestructura de navegación. Para probar el recorrido de una web propia, empieza con Playwright.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/FlareSolverr/FlareSolverr/blob/cc2224b21e31c09a713eb25690a8e8dcdf50d8d8/README.md) · [Fuente 2](https://github.com/FlareSolverr/FlareSolverr/blob/master/README.md) · [Fuente 3](https://github.com/FlareSolverr/FlareSolverr)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 16.2k | MIT | Python | 2026-11-16 |

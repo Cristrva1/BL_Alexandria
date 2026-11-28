@@ -4,6 +4,12 @@
 
 > Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros.
 
+## Cuándo elegir esta ficha
+
+Conservar la ficha bajo trabajo aislado y pruebas de componentes. Se perderían historias, variantes reutilizables y un inventario visual. Playwright cubre flujos completos y no aporta por sí solo el catálogo de historias.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://storybook.js.org/docs/writing-tests) · [Fuente 2](https://playwright.dev/docs/test-fixtures) · [Fuente 3](https://github.com/storybookjs/storybook/commit/f5eb21772bbdc939a0f9cab5c8a21c85fa281de6)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 91.6k | MIT | TypeScript | 2026-11-16 |

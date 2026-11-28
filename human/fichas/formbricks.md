@@ -1,8 +1,14 @@
-[🏠 Inicio](../README.md) › [🤖 CRM, ventas y marketing](../categorias/18-crm-ventas-marketing.md) › Reservas y programación de citas
+[🏠 Inicio](../README.md) › [🤖 CRM, ventas y marketing](../categorias/18-crm-ventas-marketing.md) › Encuestas y feedback
 
 # 🖥️ Formbricks
 
 > Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.
+
+## Cuándo elegir esta ficha
+
+Recoge respuestas y analiza encuestas. Para gestionar disponibilidad y reservas, usa Easy!Appointments.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/formbricks/formbricks/blob/HEAD/README.md) · [Fuente 2](https://formbricks.com/docs/platform/introduction) · [Fuente 3](https://github.com/formbricks/formbricks/commit/8244052b68fa995a38c4d41d20ee99d0f2e55522)
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -32,8 +38,6 @@ Docker/docs oficiales o cloud Formbricks.
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [cal.diy](cal-diy.md) | Cal.diy agenda; Formbricks encuesta post-cita. | Cal.diy → Formbricks. |
-| [Easy!Appointments](easyappointments.md) | Citas + encuesta de satisfacción. | Easy!Appointments → Formbricks. |
 | [listmonk](listmonk.md) | Listmonk envía; Formbricks mide. | Listmonk ↔ Formbricks. |
 | [Typebot](typebot.md) | Typebot conversacional; Formbricks formularios clásicos. | Elige según UX. |
 

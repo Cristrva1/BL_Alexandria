@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; app o instalador listo para usar
 
-**Puntuación de calidad** 66/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -56,7 +56,7 @@ Grupo **Notebooks**: JupyterLab ocupa la posición 2 de 2 (alternativa). Orden p
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [marimo](marimo.md) ⭐ recomendado | 76 | Si buscas esto: notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
-| 2 | **JupyterLab** (esta ficha) | 66 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
+| 2 | **JupyterLab** (esta ficha) | 65 | Si buscas esto: entorno web de Project Jupyter con notebooks, terminal, editor de texto y explorador de archivos, ampliable mediante extensiones. |
 
 ## Acceso, coste y equipo
 

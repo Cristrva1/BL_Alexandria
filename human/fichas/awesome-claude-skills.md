@@ -4,6 +4,12 @@
 
 > Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio.
 
+## Cuándo elegir esta ficha
+
+Guíame ya desvía el repositorio a MCP y automatización. Conservar la ficha y su ID técnico estable. Corregir el tipo práctico de directorio cuando la tarea sea usar las guías incluidas.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/README.md) · [Fuente 2](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md) · [Fuente 3](https://github.com/ComposioHQ/awesome-claude-skills)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 79.5k | — | Python | 2026-11-10 |

@@ -4,6 +4,12 @@
 
 > App de notas jerárquicas para bases de conocimiento grandes: clonado de notas, scripts, relaciones, mapas y servidor de sincronización autoalojado.
 
+## Cuándo elegir esta ficha
+
+El repositorio de la estrella conserva el ID original pese al slug canónico TriliumNext/Trilium. El índice ya usa el slug canónico. Conservar compatibilidad de referencias históricas.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/TriliumNext/Trilium/blob/ec6a675b4da78d06a2f20b7dfc3725a15ac44eed/README.md) · [Fuente 2](https://api.github.com/repos/TriliumNext/Trilium) · [Fuente 3](https://github.com/TriliumNext/Trilium/commit/ec6a675b4da78d06a2f20b7dfc3725a15ac44eed)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 39k | AGPL-3.0 | TypeScript | 2026-11-16 |

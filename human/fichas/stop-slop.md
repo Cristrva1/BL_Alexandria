@@ -4,6 +4,14 @@
 
 > Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.
 
+## Cuándo elegir esta ficha
+
+Ambos cubren pulido de prosa. Preservar la rúbrica y lista de patrones de Stop Slop como opción. Humanizer cubre revisión práctica y pedidos de conservar hechos. Ninguno puede acreditar autoría humana.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/hardikpandya/stop-slop) · [Fuente 2](https://github.com/blader/humanizer) · [Fuente 3](https://github.com/hardikpandya/stop-slop/commit/8da1f030185bdfe8471220585162991eaeb970e9)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 18.9k | MIT | — | 2026-06-23 |

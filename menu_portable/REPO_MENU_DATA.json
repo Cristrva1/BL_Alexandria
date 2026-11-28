@@ -62,7 +62,7 @@
     {
       "num": 10,
       "title": "Dashboards, analítica y mapas",
-      "count": 31
+      "count": 33
     },
     {
       "num": 11,
@@ -92,7 +92,7 @@
     {
       "num": 16,
       "title": "Analizar software y comprobar su seguridad",
-      "count": 147
+      "count": 146
     },
     {
       "num": 17,
@@ -137,7 +137,7 @@
     {
       "num": 25,
       "title": "Procesar datos y trabajar con notebooks",
-      "count": 23
+      "count": 21
     },
     {
       "num": 26,
@@ -1448,15 +1448,22 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "tldraw"
+          ],
+          "guided_starters": [
+            "penpot",
+            "plasmic",
+            "onlook"
+          ],
           "repo_ids": [
             "excalidraw",
             "onlook",
             "open-design",
             "penpot",
-            "plasmic",
-            "tldraw"
+            "plasmic"
           ],
-          "count": 6
+          "count": 5
         },
         {
           "id": "web-componentes",
@@ -1471,9 +1478,22 @@
               ]
             }
           ],
-          "repos": [],
+          "repos": [
+            "ui-sdk"
+          ],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "swr",
+            "tanstack-query",
+            "storybook",
+            "konva"
+          ],
+          "guided_starters": [
+            "ui",
+            "ant-design",
+            "daisyui"
+          ],
           "repo_ids": [
             "ant-design",
             "astryx",
@@ -1481,7 +1501,6 @@
             "daisyui",
             "flexoki",
             "heroui",
-            "konva",
             "lucide",
             "magicui",
             "mantine",
@@ -1489,13 +1508,11 @@
             "normalize.css",
             "radix-primitives",
             "react-bits",
-            "storybook",
-            "swr",
             "tailwindcss",
-            "tanstack-query",
-            "ui"
+            "ui",
+            "ui-sdk"
           ],
-          "count": 19
+          "count": 16
         },
         {
           "id": "web-ia",
@@ -1512,17 +1529,24 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
-          "repo_ids": [
+          "exclude": [
             "ai-website-cloner-template",
+            "ui-sdk"
+          ],
+          "guided_starters": [
+            "assistant-ui",
+            "stitch-sdk",
+            "copilotkit"
+          ],
+          "repo_ids": [
             "assistant-ui",
             "copilotkit",
             "json-render",
             "openui",
             "screenshot-to-code",
-            "stitch-sdk",
-            "ui-sdk"
+            "stitch-sdk"
           ],
-          "count": 8
+          "count": 6
         },
         {
           "id": "web-skills",
@@ -1543,6 +1567,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "impeccable",
+            "taste-skill",
+            "modern-web-guidance"
+          ],
           "repo_ids": [
             "design-dna",
             "design.md",
@@ -1571,17 +1600,28 @@
           ],
           "repos": [
             "gsap-skills",
-            "threejs-skills"
+            "threejs-skills",
+            "genjutsu",
+            "motion-design-skill"
           ],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "pencil"
+          ],
+          "guided_starters": [
+            "motion",
+            "gsap",
+            "three.js"
+          ],
           "repo_ids": [
             "animejs",
             "babylonjs",
+            "genjutsu",
             "gsap",
             "gsap-skills",
             "motion",
-            "pencil",
+            "motion-design-skill",
             "pixelfx",
             "pixijs",
             "playcanvas",
@@ -1593,7 +1633,7 @@
             "webgl-noise",
             "zdog"
           ],
-          "count": 16
+          "count": 17
         },
         {
           "id": "web-pruebas",
@@ -1618,6 +1658,13 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "flaresolverr",
+            "libretranslate"
+          ],
+          "guided_starters": [
+            "playwright"
+          ],
           "repo_ids": [
             "appwrite",
             "caddy",
@@ -1625,8 +1672,6 @@
             "coolify",
             "cypress",
             "dokploy",
-            "flaresolverr",
-            "libretranslate",
             "playwright",
             "playwright-mcp",
             "portainer",
@@ -1637,7 +1682,97 @@
             "uptime-kuma",
             "webdriverio"
           ],
-          "count": 17
+          "count": 15
+        },
+        {
+          "id": "web-datos",
+          "title": "Datos del frontend",
+          "description": "Consultar, actualizar y revalidar datos desde una interfaz web.",
+          "selectors": [],
+          "repos": [
+            "tanstack-query",
+            "swr"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "tanstack-query",
+            "swr"
+          ],
+          "repo_ids": [
+            "swr",
+            "tanstack-query"
+          ],
+          "count": 2
+        },
+        {
+          "id": "web-ui-pruebas",
+          "title": "Componentes aislados y pruebas de interfaz",
+          "description": "Desarrollar estados aislados y verificar recorridos sobre una aplicación propia.",
+          "selectors": [],
+          "repos": [
+            "storybook",
+            "playwright"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "storybook",
+            "playwright"
+          ],
+          "repo_ids": [
+            "playwright",
+            "storybook"
+          ],
+          "count": 2
+        },
+        {
+          "id": "web-lienzos",
+          "title": "Lienzos interactivos",
+          "description": "Construir un editor o pizarra interactiva en una aplicación web.",
+          "selectors": [],
+          "repos": [
+            "tldraw",
+            "konva"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "tldraw",
+            "konva"
+          ],
+          "repo_ids": [
+            "konva",
+            "tldraw"
+          ],
+          "count": 2
+        },
+        {
+          "id": "web-referencias",
+          "title": "Referencias y prototipado web",
+          "description": "Analizar diseños y prototipar con proyectos, capturas y activos propios o autorizados.",
+          "selectors": [],
+          "repos": [
+            "penpot",
+            "design-dna",
+            "design.md",
+            "ai-website-cloner-template",
+            "screenshot-to-code"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "penpot",
+            "screenshot-to-code"
+          ],
+          "repo_ids": [
+            "ai-website-cloner-template",
+            "design-dna",
+            "design.md",
+            "penpot",
+            "screenshot-to-code"
+          ],
+          "count": 5
         }
       ],
       "repo_ids": [
@@ -1659,9 +1794,9 @@
         "design.md",
         "dokploy",
         "excalidraw",
-        "flaresolverr",
         "flexoki",
         "front-end-checklist",
+        "genjutsu",
         "gsap",
         "gsap-skills",
         "hallmark",
@@ -1669,18 +1804,17 @@
         "impeccable",
         "json-render",
         "konva",
-        "libretranslate",
         "lucide",
         "magicui",
         "mantine",
         "modern-web-guidance",
         "motion",
+        "motion-design-skill",
         "mui",
         "normalize.css",
         "onlook",
         "open-design",
         "openui",
-        "pencil",
         "penpot",
         "pixelfx",
         "pixijs",
@@ -1718,7 +1852,7 @@
         "webgl-noise",
         "zdog"
       ],
-      "count": 76
+      "count": 75
     },
     {
       "id": "ciberseguridad",
@@ -1732,7 +1866,6 @@
         "pentesting"
       ],
       "starters": [
-        "cybersecurity-skills",
         "semgrep",
         "ghidra"
       ],
@@ -1757,9 +1890,16 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "cybersecurity-skills"
+          ],
+          "guided_starters": [
+            "semgrep",
+            "skillspector",
+            "security-audit-skill"
+          ],
           "repo_ids": [
             "craft-anything",
-            "cybersecurity-skills",
             "defending-code-reference-harness",
             "garak",
             "rea",
@@ -1769,7 +1909,7 @@
             "skillspector",
             "strix"
           ],
-          "count": 10
+          "count": 9
         },
         {
           "id": "seguridad-inversa",
@@ -1786,6 +1926,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "ghidra",
+            "imhex",
+            "jadx"
+          ],
           "repo_ids": [
             "angr",
             "apktool",
@@ -1818,6 +1963,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "raddebugger",
+            "x64dbg",
+            "dnspy"
+          ],
           "repo_ids": [
             "dnspy",
             "ghidramcp",
@@ -1843,6 +1993,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "wireshark",
+            "semgrep",
+            "k6"
+          ],
           "repo_ids": [
             "aflplusplus",
             "aircrack-ng",
@@ -1873,6 +2028,7 @@
             "mitmproxy",
             "mobsf",
             "nettacker",
+            "noir",
             "nuclei",
             "owasp-java-encoder",
             "owtf",
@@ -1890,7 +2046,7 @@
             "wrongsecrets",
             "zaproxy"
           ],
-          "count": 45
+          "count": 46
         },
         {
           "id": "seguridad-ofensiva",
@@ -1913,6 +2069,11 @@
             "c2"
           ],
           "reference_repos": [],
+          "exclude": [
+            "noir"
+          ],
+          "reference_only": true,
+          "guided_starters": [],
           "repo_ids": [
             "amass",
             "atomic-red-team",
@@ -1934,7 +2095,6 @@
             "naabu",
             "netexec",
             "nmap",
-            "noir",
             "peass-ng",
             "responder",
             "rubeus",
@@ -1943,7 +2103,7 @@
             "social-engineer-toolkit",
             "subfinder"
           ],
-          "count": 28
+          "count": 27
         },
         {
           "id": "seguridad-deteccion",
@@ -1964,6 +2124,11 @@
             "blue team"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "wazuh",
+            "suricata",
+            "sigma"
+          ],
           "repo_ids": [
             "arkime",
             "coraza",
@@ -1971,7 +2136,6 @@
             "crowdsec",
             "detection-rules",
             "fail2ban",
-            "loki",
             "modsecurity",
             "osquery",
             "pi-alert-leiweibau",
@@ -1982,7 +2146,7 @@
             "wazuh",
             "zeek"
           ],
-          "count": 16
+          "count": 15
         },
         {
           "id": "seguridad-nube",
@@ -2003,6 +2167,11 @@
             "iac"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "trivy",
+            "checkov",
+            "grype"
+          ],
           "repo_ids": [
             "checkov",
             "cosign",
@@ -2033,6 +2202,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "keepassxc",
+            "bitwarden-clients",
+            "vaultwarden"
+          ],
           "repo_ids": [
             "adguardhome",
             "age",
@@ -2064,6 +2238,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "asvs",
+            "cheatsheetseries",
+            "owasp-api-security"
+          ],
           "repo_ids": [
             "aisvs",
             "asvs",
@@ -2104,6 +2283,11 @@
             "EDR"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "autopsy",
+            "hayabusa",
+            "volatility3"
+          ],
           "repo_ids": [
             "autopsy",
             "hayabusa",
@@ -2132,11 +2316,57 @@
             "STIX"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "misp",
+            "opencti"
+          ],
           "repo_ids": [
             "misp",
             "opencti"
           ],
           "count": 2
+        },
+        {
+          "id": "seguridad-estatico",
+          "title": "Revisar código y dependencias propias",
+          "description": "Revisar rutas, reglas y dependencias en código que se administra.",
+          "selectors": [],
+          "repos": [
+            "noir",
+            "semgrep",
+            "trivy"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "semgrep",
+            "trivy",
+            "noir"
+          ],
+          "repo_ids": [
+            "noir",
+            "semgrep",
+            "trivy"
+          ],
+          "count": 3
+        },
+        {
+          "id": "seguridad-red-local",
+          "title": "Inventario de red local",
+          "description": "Consultar presencia y disponibilidad de dispositivos propios.",
+          "selectors": [],
+          "repos": [
+            "pi-alert-leiweibau"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "pi-alert-leiweibau"
+          ],
+          "repo_ids": [
+            "pi-alert-leiweibau"
+          ],
+          "count": 1
         }
       ],
       "repo_ids": [
@@ -2217,7 +2447,6 @@
         "kube-bench",
         "ligolo-ng",
         "locust",
-        "loki",
         "lynis",
         "masscan",
         "mastg",
@@ -2299,7 +2528,7 @@
         "zaproxy",
         "zeek"
       ],
-      "count": 158
+      "count": 157
     },
     {
       "id": "audiovisual",
@@ -2330,11 +2559,15 @@
             }
           ],
           "repos": [
-            "video-use",
-            "rea-video"
+            "video-use"
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "kdenlive",
+            "shotcut",
+            "lossless-cut"
+          ],
           "repo_ids": [
             "cap",
             "concat",
@@ -2348,12 +2581,11 @@
             "opencut",
             "openrv",
             "pysubs2",
-            "rea-video",
             "shotcut",
             "video-use",
             "videolingo"
           ],
-          "count": 16
+          "count": 15
         },
         {
           "id": "av-video-ia",
@@ -2370,8 +2602,15 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "ai-youtube-shorts-generator"
+          ],
+          "guided_starters": [
+            "wan2-2",
+            "hunyuanvideo-1-5",
+            "ltx-2"
+          ],
           "repo_ids": [
-            "ai-youtube-shorts-generator",
             "hunyuanvideo",
             "hunyuanvideo-1-5",
             "ltx-2",
@@ -2380,7 +2619,7 @@
             "wan2-2",
             "wan2gp"
           ],
-          "count": 8
+          "count": 7
         },
         {
           "id": "av-video-codigo",
@@ -2396,6 +2635,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "hyperframes",
+            "remotion",
+            "motion-canvas"
+          ],
           "repo_ids": [
             "brag",
             "claude-animated-shorts",
@@ -2441,6 +2685,14 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "rvc"
+          ],
+          "guided_starters": [
+            "kokoro",
+            "cosyvoice",
+            "elevenlabs-python"
+          ],
           "repo_ids": [
             "cosyvoice",
             "edge-tts",
@@ -2452,11 +2704,10 @@
             "kokoro",
             "luxtts",
             "omnivoice-studio",
-            "rvc",
             "vibevoice",
             "voxcpm"
           ],
-          "count": 13
+          "count": 12
         },
         {
           "id": "av-transcripcion",
@@ -2475,6 +2726,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "buzz",
+            "whisper-cpp",
+            "whisperx"
+          ],
           "repo_ids": [
             "buzz",
             "faster-whisper",
@@ -2503,6 +2759,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "audacity",
+            "ultimate-vocal-remover",
+            "rnnoise"
+          ],
           "repo_ids": [
             "ace-step-1.5",
             "audacity",
@@ -2532,6 +2793,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "pipecat",
+            "livekit-agents",
+            "dograh"
+          ],
           "repo_ids": [
             "dograh",
             "livekit-agents",
@@ -2555,6 +2821,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "krita-ai-diffusion",
+            "comfyui",
+            "invokeai"
+          ],
           "repo_ids": [
             "chainner",
             "codeformer",
@@ -2585,21 +2856,24 @@
             }
           ],
           "repos": [
-            "genjutsu",
             "claude-animated-shorts"
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "liveportrait",
+            "insightface",
+            "facefusion"
+          ],
           "repo_ids": [
             "claude-animated-shorts",
             "deep-live-cam",
             "deepface",
             "facefusion",
-            "genjutsu",
             "insightface",
             "liveportrait"
           ],
-          "count": 7
+          "count": 6
         },
         {
           "id": "av-3d",
@@ -2620,6 +2894,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "blender",
+            "freecad",
+            "godot"
+          ],
           "repo_ids": [
             "3dviz-pro-max",
             "awesome-cad",
@@ -2657,6 +2936,11 @@
           ],
           "reference_repos": [],
           "keywords": [],
+          "guided_starters": [
+            "planck-js",
+            "react-three-rapier",
+            "mujoco"
+          ],
           "repo_ids": [
             "genesis-world",
             "motionbricks",
@@ -2667,6 +2951,70 @@
             "warp"
           ],
           "count": 7
+        },
+        {
+          "id": "av-preproduccion",
+          "title": "Preproducción y reencuadre",
+          "description": "Analizar una referencia autorizada, planear planos y adaptar material propio a otro formato.",
+          "selectors": [],
+          "repos": [
+            "rea-video",
+            "ai-youtube-shorts-generator",
+            "ffmpeg"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "ffmpeg"
+          ],
+          "repo_ids": [
+            "ai-youtube-shorts-generator",
+            "ffmpeg",
+            "rea-video"
+          ],
+          "count": 3
+        },
+        {
+          "id": "av-conversion-voz",
+          "title": "Conversión de voz",
+          "description": "Transformar una voz de entrada con material propio o autorizado.",
+          "selectors": [],
+          "repos": [
+            "rvc",
+            "gpt-sovits"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "rvc",
+            "gpt-sovits"
+          ],
+          "repo_ids": [
+            "gpt-sovits",
+            "rvc"
+          ],
+          "count": 2
+        },
+        {
+          "id": "av-animacion-2d",
+          "title": "Animación 2D cuadro a cuadro",
+          "description": "Dibujar y montar una secuencia 2D editable.",
+          "selectors": [],
+          "repos": [
+            "pencil",
+            "blender"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "pencil",
+            "blender"
+          ],
+          "repo_ids": [
+            "blender",
+            "pencil"
+          ],
+          "count": 2
         }
       ],
       "repo_ids": [
@@ -2709,7 +3057,6 @@
         "flux2",
         "freecad",
         "genesis-world",
-        "genjutsu",
         "godot",
         "gpt-sovits",
         "handbrake",
@@ -2755,6 +3102,7 @@
         "openscad",
         "ozz-animation",
         "papermorph",
+        "pencil",
         "pipecat",
         "planck-js",
         "pyannote-audio",
@@ -2830,6 +3178,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "dexter",
+            "finceptterminal",
+            "polyweather"
+          ],
           "repo_ids": [
             "autohedge",
             "daily-stock-analysis",
@@ -2861,6 +3214,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "backtesting-py",
+            "vectorbt",
+            "nautilus-trader"
+          ],
           "repo_ids": [
             "backtesting-py",
             "finrl",
@@ -2890,6 +3248,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "freqtrade",
+            "hummingbot",
+            "ccxt"
+          ],
           "repo_ids": [
             "binance-trader",
             "ccxt",
@@ -2915,6 +3278,9 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "machine-learning-for-trading"
+          ],
           "repo_ids": [
             "machine-learning-for-trading"
           ],
@@ -2987,12 +3353,19 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "dagger"
+          ],
+          "guided_starters": [
+            "activepieces",
+            "node-red",
+            "prefect"
+          ],
           "repo_ids": [
             "activepieces",
             "airflow",
             "awesome-claude-skills",
             "celery",
-            "dagger",
             "dagster",
             "huginn",
             "kestra",
@@ -3002,7 +3375,7 @@
             "trigger-dev",
             "windmill"
           ],
-          "count": 13
+          "count": 12
         },
         {
           "id": "negocio-whatsapp",
@@ -3019,17 +3392,24 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "signal-cli",
+            "whatsapp-agentkit"
+          ],
+          "guided_starters": [
+            "evolution-api",
+            "waha",
+            "openwa"
+          ],
           "repo_ids": [
             "baileys",
             "evolution-api",
             "openwa",
-            "signal-cli",
             "waha",
-            "whatsapp-agentkit",
             "whatsapp-web-js",
             "whatsmeow"
           ],
-          "count": 8
+          "count": 6
         },
         {
           "id": "negocio-crm",
@@ -3046,6 +3426,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "espocrm",
+            "chatwoot",
+            "erpnext"
+          ],
           "repo_ids": [
             "chatwoot",
             "compai-crm",
@@ -3074,16 +3459,23 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
-          "repo_ids": [
+          "exclude": [
             "cloud-mail",
+            "open-seo"
+          ],
+          "guided_starters": [
+            "listmonk",
+            "mautic",
+            "novu"
+          ],
+          "repo_ids": [
             "listmonk",
             "mautic",
             "novu",
-            "open-seo",
             "postiz-app",
             "sellbird"
           ],
-          "count": 7
+          "count": 5
         },
         {
           "id": "negocio-marketing",
@@ -3102,6 +3494,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "marketingskills",
+            "claude-seo",
+            "social-media-research-skills"
+          ],
           "repo_ids": [
             "agency-agents",
             "arcads-claude-code",
@@ -3129,6 +3526,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "tooljet",
+            "appsmith",
+            "budibase"
+          ],
           "repo_ids": [
             "appsmith",
             "baserow",
@@ -3157,12 +3559,18 @@
           ],
           "reference_repos": [],
           "keywords": [],
-          "repo_ids": [
-            "cal.diy",
-            "easyappointments",
+          "exclude": [
             "formbricks"
           ],
-          "count": 3
+          "guided_starters": [
+            "easyappointments",
+            "cal.diy"
+          ],
+          "repo_ids": [
+            "cal.diy",
+            "easyappointments"
+          ],
+          "count": 2
         },
         {
           "id": "negocio-chatbots",
@@ -3176,16 +3584,24 @@
               ]
             }
           ],
-          "repos": [],
+          "repos": [
+            "whatsapp-agentkit"
+          ],
           "reference_repos": [],
           "keywords": [],
+          "guided_starters": [
+            "typebot",
+            "botpress",
+            "python-telegram-bot"
+          ],
           "repo_ids": [
             "botpress",
             "discord-js",
             "python-telegram-bot",
-            "typebot"
+            "typebot",
+            "whatsapp-agentkit"
           ],
-          "count": 4
+          "count": 5
         },
         {
           "id": "negocio-comunidades",
@@ -3202,6 +3618,11 @@
           "repos": [],
           "reference_repos": [],
           "keywords": [],
+          "guided_starters": [
+            "zulip",
+            "mattermost",
+            "element-web"
+          ],
           "repo_ids": [
             "element-web",
             "fluxer",
@@ -3211,6 +3632,45 @@
             "zulip"
           ],
           "count": 6
+        },
+        {
+          "id": "negocio-encuestas",
+          "title": "Encuestas y feedback",
+          "description": "Recoger y analizar respuestas sin gestionar disponibilidad de agenda.",
+          "selectors": [],
+          "repos": [
+            "formbricks"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "formbricks"
+          ],
+          "repo_ids": [
+            "formbricks"
+          ],
+          "count": 1
+        },
+        {
+          "id": "negocio-canales",
+          "title": "Pasarelas y transporte de mensajes",
+          "description": "Conectar canales de mensajería, buzones y transporte según el servicio.",
+          "selectors": [],
+          "repos": [
+            "signal-cli",
+            "cloud-mail"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "signal-cli",
+            "cloud-mail"
+          ],
+          "repo_ids": [
+            "cloud-mail",
+            "signal-cli"
+          ],
+          "count": 2
         }
       ],
       "repo_ids": [
@@ -3230,7 +3690,6 @@
         "claude-seo",
         "cloud-mail",
         "compai-crm",
-        "dagger",
         "dagster",
         "discord-js",
         "easyappointments",
@@ -3255,7 +3714,6 @@
         "node-red",
         "novu",
         "odoo",
-        "open-seo",
         "openwa",
         "postiz-app",
         "prefect",
@@ -3280,7 +3738,7 @@
         "zammad",
         "zulip"
       ],
-      "count": 65
+      "count": 63
     },
     {
       "id": "marketing-redes-sociales",
@@ -3321,6 +3779,11 @@
             "conversión"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "marketingskills",
+            "minimalist-entrepreneur-skills",
+            "agency-agents"
+          ],
           "repo_ids": [
             "agency-agents",
             "marketingskills",
@@ -3347,6 +3810,11 @@
             "social media"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "postiz-app",
+            "social-media-agent",
+            "linkedin-agent-skill"
+          ],
           "repo_ids": [
             "instagram-agent-skill",
             "linkedin-agent-skill",
@@ -3372,6 +3840,11 @@
             "investigación de redes"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "last30days-skill",
+            "social-media-research-skills",
+            "instaloader"
+          ],
           "repo_ids": [
             "instaloader",
             "last30days-skill",
@@ -3395,6 +3868,10 @@
             "buscadores"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "claude-seo",
+            "open-seo"
+          ],
           "repo_ids": [
             "claude-seo",
             "open-seo"
@@ -3418,6 +3895,11 @@
             "segmentación"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "listmonk",
+            "mautic",
+            "sellbird"
+          ],
           "repo_ids": [
             "listmonk",
             "mautic",
@@ -3445,6 +3927,11 @@
             "video de producto"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "brag",
+            "ai-youtube-shorts-generator",
+            "arcads-claude-code"
+          ],
           "repo_ids": [
             "ai-youtube-shorts-generator",
             "arcads-claude-code",
@@ -3474,6 +3961,11 @@
             "embudos"
           ],
           "reference_repos": [],
+          "guided_starters": [
+            "umami",
+            "posthog",
+            "matomo"
+          ],
           "repo_ids": [
             "matomo",
             "plausible",
@@ -3546,15 +4038,24 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "chatdev",
+            "openmanus",
+            "awesome-langgraph",
+            "jev-fraud"
+          ],
+          "guided_starters": [
+            "langgraph",
+            "openai-agents-python",
+            "crewai"
+          ],
           "repo_ids": [
             "adk-python",
             "ag2",
             "agent-framework",
             "agentscope",
             "agno",
-            "awesome-langgraph",
             "camel",
-            "chatdev",
             "claude-agent-sdk-python",
             "crewai",
             "deepagents",
@@ -3562,7 +4063,6 @@
             "eve",
             "haystack",
             "hermes-agent-self-evolution",
-            "jev-fraud",
             "langchain",
             "langchain4j",
             "langgraph",
@@ -3574,13 +4074,12 @@
             "mirofish",
             "openai-agents-python",
             "openevolve",
-            "openmanus",
             "pydantic-ai",
             "semantic-router",
             "smolagents",
             "vercel-ai"
           ],
-          "count": 32
+          "count": 28
         },
         {
           "id": "agentes-visuales",
@@ -3594,16 +4093,24 @@
               ]
             }
           ],
-          "repos": [],
+          "repos": [
+            "chatdev"
+          ],
           "keywords": [],
           "reference_repos": [],
-          "repo_ids": [
-            "autogpt",
+          "guided_starters": [
             "dify",
             "langflow",
             "sim"
           ],
-          "count": 4
+          "repo_ids": [
+            "autogpt",
+            "chatdev",
+            "dify",
+            "langflow",
+            "sim"
+          ],
+          "count": 5
         },
         {
           "id": "agentes-asistentes",
@@ -3617,9 +4124,16 @@
               ]
             }
           ],
-          "repos": [],
+          "repos": [
+            "openmanus"
+          ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "hermes-agent",
+            "openclaw",
+            "deeptutor"
+          ],
           "repo_ids": [
             "agentes-chat",
             "deeptutor",
@@ -3630,11 +4144,12 @@
             "openbot",
             "openclaw",
             "openjarvis",
+            "openmanus",
             "paperclip",
             "ruflo",
             "social-media-agent"
           ],
-          "count": 12
+          "count": 13
         },
         {
           "id": "agentes-investigar",
@@ -3657,10 +4172,17 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "autoresearch"
+          ],
+          "guided_starters": [
+            "gpt-researcher",
+            "local-deep-research",
+            "searxng"
+          ],
           "repo_ids": [
             "agent-reach",
             "archivebox",
-            "autoresearch",
             "changedetection",
             "deer-flow",
             "freshrss",
@@ -3674,7 +4196,7 @@
             "vane",
             "wallabag"
           ],
-          "count": 15
+          "count": 14
         },
         {
           "id": "agentes-extraccion",
@@ -3693,8 +4215,15 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "awesome-web-scraping"
+          ],
+          "guided_starters": [
+            "crawl4ai",
+            "scrapy",
+            "firecrawl"
+          ],
           "repo_ids": [
-            "awesome-web-scraping",
             "colly",
             "crawl4ai",
             "crawlee",
@@ -3713,7 +4242,7 @@
             "spotdl",
             "yt-dlp"
           ],
-          "count": 18
+          "count": 17
         },
         {
           "id": "agentes-navegacion",
@@ -3724,15 +4253,23 @@
               "cat": 32
             }
           ],
-          "repos": [],
+          "repos": [
+            "computer-use-preview"
+          ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "playwright",
+            "playwright-cli",
+            "stagehand"
+          ],
           "repo_ids": [
             "agent-browser",
             "awesome-chrome-devtools",
             "browser-harness",
             "browser-use",
             "camoufox",
+            "computer-use-preview",
             "cypress",
             "flaresolverr",
             "kitesurf",
@@ -3749,7 +4286,7 @@
             "steel-browser",
             "webdriverio"
           ],
-          "count": 20
+          "count": 21
         },
         {
           "id": "agentes-mcp",
@@ -3767,6 +4304,14 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "public-apis"
+          ],
+          "guided_starters": [
+            "context7",
+            "fastmcp",
+            "composio"
+          ],
           "repo_ids": [
             "annas-mcp",
             "awesome-claude-skills",
@@ -3793,13 +4338,77 @@
             "mcp-use",
             "neo4j-mcp",
             "playwright-mcp",
-            "public-apis",
             "serena",
             "servers",
             "tooljet",
             "unity-mcp"
           ],
-          "count": 30
+          "count": 29
+        },
+        {
+          "id": "agentes-navegadores",
+          "title": "Ejecución de navegadores",
+          "description": "Distinguir un servicio que abre sesiones de un cliente, un ejecutor de pruebas o un proxy especializado.",
+          "selectors": [],
+          "repos": [
+            "steel-browser",
+            "lightpanda"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "steel-browser",
+            "lightpanda"
+          ],
+          "repo_ids": [
+            "lightpanda",
+            "steel-browser"
+          ],
+          "count": 2
+        },
+        {
+          "id": "agentes-mcp-pruebas",
+          "title": "Diagnóstico de MCP",
+          "description": "Inspeccionar un servidor y comprobar sus capacidades en un entorno de prueba.",
+          "selectors": [],
+          "repos": [
+            "mcp-inspector",
+            "fastmcp",
+            "mcp-python-sdk"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "mcp-inspector",
+            "fastmcp"
+          ],
+          "repo_ids": [
+            "fastmcp",
+            "mcp-inspector",
+            "mcp-python-sdk"
+          ],
+          "count": 3
+        },
+        {
+          "id": "agentes-directorios",
+          "title": "Directorios de frameworks y APIs",
+          "description": "Buscar documentación, implementaciones, APIs o recursos de un ecosistema.",
+          "selectors": [],
+          "repos": [
+            "awesome-agents",
+            "awesome-langgraph",
+            "awesome-web-scraping",
+            "public-apis"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-agents",
+            "awesome-langgraph",
+            "awesome-web-scraping",
+            "public-apis"
+          ],
+          "count": 4
         }
       ],
       "repo_ids": [
@@ -3814,7 +4423,7 @@
         "annas-mcp",
         "archivebox",
         "autogpt",
-        "autoresearch",
+        "awesome-agents",
         "awesome-chrome-devtools",
         "awesome-claude-skills",
         "awesome-langgraph",
@@ -3834,6 +4443,7 @@
         "claude-context",
         "colly",
         "composio",
+        "computer-use-preview",
         "context7",
         "crawl4ai",
         "crawlee",
@@ -3862,7 +4472,6 @@
         "hermes-agent",
         "hermes-agent-self-evolution",
         "instaloader",
-        "jev-fraud",
         "jina-reader",
         "katana",
         "kitesurf",
@@ -4012,6 +4621,9 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "llmfit"
+          ],
           "repo_ids": [
             "airllm",
             "exo",
@@ -4020,7 +4632,6 @@
             "koboldcpp",
             "llama-cpp",
             "llamafile",
-            "llmfit",
             "localai",
             "magnitude",
             "mlc-llm",
@@ -4028,7 +4639,7 @@
             "ollama",
             "transformers.js"
           ],
-          "count": 14
+          "count": 13
         },
         {
           "id": "local-modelos",
@@ -4045,16 +4656,18 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "laya"
+          ],
           "repo_ids": [
             "cosmos",
             "deepseek-v3",
             "gemma",
             "kimi-k2-7-code",
-            "laya",
             "nemotron",
             "timesfm"
           ],
-          "count": 7
+          "count": 6
         },
         {
           "id": "local-entrenamiento",
@@ -4125,12 +4738,54 @@
             "xinference"
           ],
           "count": 12
+        },
+        {
+          "id": "local-hardware",
+          "title": "Elegir equipo y modelo",
+          "description": "Estimar memoria y comprobar qué modelo cabe antes de descargar.",
+          "selectors": [],
+          "repos": [
+            "llmfit",
+            "ollama"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "llmfit",
+            "ollama"
+          ],
+          "repo_ids": [
+            "llmfit",
+            "ollama"
+          ],
+          "count": 2
+        },
+        {
+          "id": "local-experimentos",
+          "title": "Experimentos de entrenamiento",
+          "description": "Consultar ejemplos reproducibles de evaluación y entrenamiento de modelos.",
+          "selectors": [],
+          "repos": [
+            "autoresearch",
+            "nanochat"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "nanochat"
+          ],
+          "repo_ids": [
+            "autoresearch",
+            "nanochat"
+          ],
+          "count": 2
         }
       ],
       "repo_ids": [
         "accelerate",
         "airllm",
         "anything-llm",
+        "autoresearch",
         "axolotl",
         "bentoml",
         "bionemo-recipes",
@@ -4153,7 +4808,6 @@
         "khoj",
         "kimi-k2-7-code",
         "koboldcpp",
-        "laya",
         "librechat",
         "libretranslate",
         "litellm",
@@ -4166,6 +4820,7 @@
         "magnitude",
         "mlc-llm",
         "mlx-lm",
+        "nanochat",
         "nemotron",
         "nextchat",
         "notebooklm-mcp-cli",
@@ -4200,7 +4855,7 @@
         "vllm",
         "xinference"
       ],
-      "count": 71
+      "count": 72
     },
     {
       "id": "documentos",
@@ -4234,16 +4889,18 @@
               ]
             }
           ],
-          "repos": [
-            "libretranslate"
-          ],
+          "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "docling",
+            "markitdown",
+            "stirling-pdf"
+          ],
           "repo_ids": [
             "docling",
             "documenso",
             "docuseal",
-            "libretranslate",
             "marker",
             "markitdown",
             "mineru",
@@ -4258,7 +4915,7 @@
             "unstructured",
             "xberg"
           ],
-          "count": 17
+          "count": 16
         },
         {
           "id": "docs-ocr",
@@ -4275,6 +4932,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "ocrmypdf",
+            "paddleocr",
+            "tesseract"
+          ],
           "repo_ids": [
             "ocrmypdf",
             "olmocr",
@@ -4301,6 +4963,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "ppt-master",
+            "presenton",
+            "marp"
+          ],
           "repo_ids": [
             "marp",
             "ppt-master",
@@ -4323,21 +4990,28 @@
             }
           ],
           "repos": [
-            "excalidraw"
+            "excalidraw",
+            "jsoncanvas"
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "drawio",
+            "mermaid",
+            "excalidraw"
+          ],
           "repo_ids": [
             "archify",
             "d2",
             "diagram-design",
             "drawio",
             "excalidraw",
+            "jsoncanvas",
             "kroki",
             "mermaid",
             "plantuml"
           ],
-          "count": 8
+          "count": 9
         },
         {
           "id": "docs-rag",
@@ -4355,8 +5029,15 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "agentic-rag-for-dummies"
+          ],
+          "guided_starters": [
+            "ragflow",
+            "kotaemon",
+            "onyx"
+          ],
           "repo_ids": [
-            "agentic-rag-for-dummies",
             "chonkie",
             "chroma",
             "faiss",
@@ -4376,7 +5057,7 @@
             "txtai",
             "weaviate"
           ],
-          "count": 19
+          "count": 18
         },
         {
           "id": "docs-memoria",
@@ -4393,6 +5074,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "engram",
+            "mem0",
+            "graphiti"
+          ],
           "repo_ids": [
             "agentmemory",
             "claude-mem",
@@ -4407,6 +5093,78 @@
             "supermemory"
           ],
           "count": 11
+        },
+        {
+          "id": "docs-lectura",
+          "title": "Lectura y archivo de PDF",
+          "description": "Leer, anotar y organizar PDF o mantener un archivo documental.",
+          "selectors": [],
+          "repos": [
+            "pdfding",
+            "paperless-ngx"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "pdfding",
+            "paperless-ngx"
+          ],
+          "repo_ids": [
+            "paperless-ngx",
+            "pdfding"
+          ],
+          "count": 2
+        },
+        {
+          "id": "docs-traduccion",
+          "title": "Traducción de texto y documentos",
+          "description": "Traducir texto por API o traducir contenido de un PDF.",
+          "selectors": [],
+          "repos": [
+            "libretranslate",
+            "pdfmathtranslate"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "libretranslate",
+            "pdfmathtranslate"
+          ],
+          "repo_ids": [
+            "libretranslate",
+            "pdfmathtranslate"
+          ],
+          "count": 2
+        },
+        {
+          "id": "docs-rag-aprender",
+          "title": "Aprender a preparar una búsqueda documental",
+          "description": "Entender conversión, fragmentación, embeddings y recuperación como pasos distintos.",
+          "selectors": [],
+          "repos": [
+            "agentic-rag-for-dummies",
+            "chonkie",
+            "flagembedding",
+            "meilisearch",
+            "docling",
+            "qdrant"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "docling",
+            "chonkie",
+            "qdrant"
+          ],
+          "repo_ids": [
+            "agentic-rag-for-dummies",
+            "chonkie",
+            "docling",
+            "flagembedding",
+            "meilisearch",
+            "qdrant"
+          ],
+          "count": 6
         }
       ],
       "repo_ids": [
@@ -4430,6 +5188,7 @@
         "flagembedding",
         "graphiti",
         "graphrag",
+        "jsoncanvas",
         "kotaemon",
         "kroki",
         "lancedb",
@@ -4478,7 +5237,7 @@
         "weaviate",
         "xberg"
       ],
-      "count": 67
+      "count": 68
     },
     {
       "id": "datos",
@@ -4512,26 +5271,28 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "globalbuildingatlas",
+            "marimo",
+            "awesome-bigdata"
+          ],
           "repo_ids": [
             "apache-iceberg",
             "arrow",
-            "awesome-bigdata",
             "clickhouse",
             "dbt",
             "delta-lake",
             "dlt",
             "duckdb",
-            "globalbuildingatlas",
             "hudi",
             "ibis",
             "jupyterlab",
-            "marimo",
             "pandas",
             "polars",
             "pygwalker",
             "spark"
           ],
-          "count": 17
+          "count": 14
         },
         {
           "id": "datos-apps",
@@ -4645,14 +5406,56 @@
               ]
             }
           ],
-          "repos": [],
+          "repos": [
+            "awesome-bigdata"
+          ],
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
+            "awesome-bigdata",
             "awesome-dataviz",
             "data-analyst-roadmap"
           ],
+          "count": 3
+        },
+        {
+          "id": "datos-geoespacial",
+          "title": "Datos y capas geoespaciales",
+          "description": "Descargar conjuntos geoespaciales y visualizar capas o mapas.",
+          "selectors": [],
+          "repos": [
+            "globalbuildingatlas",
+            "qgis"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "qgis",
+            "globalbuildingatlas"
+          ],
+          "repo_ids": [
+            "globalbuildingatlas",
+            "qgis"
+          ],
           "count": 2
+        },
+        {
+          "id": "datos-decision",
+          "title": "Clasificación y salidas estructuradas",
+          "description": "Integrar clasificación o decisiones en una aplicación y comprobar su resultado.",
+          "selectors": [],
+          "repos": [
+            "laya"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "laya"
+          ],
+          "repo_ids": [
+            "laya"
+          ],
+          "count": 1
         }
       ],
       "repo_ids": [
@@ -4677,6 +5480,7 @@
         "hudi",
         "ibis",
         "jupyterlab",
+        "laya",
         "marimo",
         "matomo",
         "metabase",
@@ -4687,6 +5491,7 @@
         "polars",
         "posthog",
         "pygwalker",
+        "qgis",
         "recharts",
         "redash",
         "reflex",
@@ -4697,7 +5502,7 @@
         "uplot",
         "wrenai"
       ],
-      "count": 40
+      "count": 42
     },
     {
       "id": "productividad",
@@ -4732,6 +5537,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "joplin",
+            "logseq",
+            "appflowy"
+          ],
           "repo_ids": [
             "anytype-ts",
             "appflowy",
@@ -4771,6 +5581,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "syncthing",
+            "nextcloud-server",
+            "calibre-web"
+          ],
           "repo_ids": [
             "audiobookshelf",
             "calibre-web",
@@ -4798,6 +5613,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "keepassxc",
+            "bitwarden-clients",
+            "vaultwarden"
+          ],
           "repo_ids": [
             "adguardhome",
             "age",
@@ -4830,6 +5650,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "home-assistant",
+            "esphome",
+            "zigbee2mqtt"
+          ],
           "repo_ids": [
             "40-questions",
             "actual",
@@ -4863,6 +5688,9 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "openmaic"
+          ],
           "repo_ids": [
             "openmaic"
           ],
@@ -4883,12 +5711,46 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "humanizer",
+            "i-have-adhd"
+          ],
           "repo_ids": [
             "humanizer",
             "i-have-adhd",
             "stop-slop"
           ],
           "count": 3
+        },
+        {
+          "id": "personal-obsidian",
+          "title": "Documentación y complementos de Obsidian",
+          "description": "Encontrar la ayuda, distribución oficial, temas y ejemplos de plugins de Obsidian.",
+          "selectors": [],
+          "repos": [
+            "obsidian-help",
+            "obsidian-releases",
+            "obsidian-minimal",
+            "obsidian-sample-plugin",
+            "kepano-obsidian",
+            "obsidian-second-brain",
+            "jsoncanvas"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "obsidian-second-brain"
+          ],
+          "repo_ids": [
+            "jsoncanvas",
+            "kepano-obsidian",
+            "obsidian-help",
+            "obsidian-minimal",
+            "obsidian-releases",
+            "obsidian-sample-plugin",
+            "obsidian-second-brain"
+          ],
+          "count": 7
         }
       ],
       "repo_ids": [
@@ -4977,14 +5839,16 @@
               "cat": 20
             }
           ],
-          "repos": [
-            "android-skills"
-          ],
+          "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "codex",
+            "claude-code",
+            "opencode"
+          ],
           "repo_ids": [
             "aider",
-            "android-skills",
             "antigravity-cli",
             "claude-code",
             "cline",
@@ -5006,7 +5870,7 @@
             "t3code",
             "zed"
           ],
-          "count": 22
+          "count": 21
         },
         {
           "id": "dev-comprender",
@@ -5020,6 +5884,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "codegraph",
+            "repomix",
+            "ripgrep"
+          ],
           "repo_ids": [
             "apscheduler",
             "ast-grep",
@@ -5063,6 +5932,14 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "exclude": [
+            "computer-use-preview"
+          ],
+          "guided_starters": [
+            "coolify",
+            "supabase",
+            "e2b"
+          ],
           "repo_ids": [
             "agent-desktop",
             "agent-protocol",
@@ -5072,7 +5949,6 @@
             "casaos",
             "claude-task-master",
             "composio",
-            "computer-use-preview",
             "coolify",
             "dokploy",
             "e2b",
@@ -5097,7 +5973,7 @@
             "uptime-kuma",
             "wg-easy"
           ],
-          "count": 32
+          "count": 31
         },
         {
           "id": "dev-evaluar",
@@ -5114,6 +5990,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "promptfoo",
+            "deepeval",
+            "langfuse"
+          ],
           "repo_ids": [
             "ccusage",
             "claude-code-usage-monitor",
@@ -5148,6 +6029,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "litellm",
+            "vllm",
+            "rtk"
+          ],
           "repo_ids": [
             "bentoml",
             "claude-code-router",
@@ -5167,6 +6053,44 @@
             "xinference"
           ],
           "count": 16
+        },
+        {
+          "id": "dev-movil",
+          "title": "Desarrollo móvil",
+          "description": "Aprender y aplicar flujos específicos de desarrollo móvil.",
+          "selectors": [],
+          "repos": [
+            "android-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "android-skills"
+          ],
+          "repo_ids": [
+            "android-skills"
+          ],
+          "count": 1
+        },
+        {
+          "id": "dev-entrega",
+          "title": "Integración continua y entrega",
+          "description": "Preparar pipelines de CI y controles antes de publicar.",
+          "selectors": [],
+          "repos": [
+            "dagger",
+            "front-end-checklist"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "guided_starters": [
+            "dagger"
+          ],
+          "repo_ids": [
+            "dagger",
+            "front-end-checklist"
+          ],
+          "count": 2
         }
       ],
       "repo_ids": [
@@ -5194,8 +6118,8 @@
         "codegraph",
         "codex",
         "composio",
-        "computer-use-preview",
         "coolify",
+        "dagger",
         "deepeval",
         "deepseek-harness",
         "dokploy",
@@ -5203,6 +6127,7 @@
         "floorplan",
         "free-for-dev",
         "freedomain",
+        "front-end-checklist",
         "frp",
         "fzf",
         "gemini-cli",
@@ -5282,7 +6207,7 @@
         "xinference",
         "zed"
       ],
-      "count": 111
+      "count": 112
     },
     {
       "id": "vision",
@@ -5317,6 +6242,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "mediapipe",
+            "ultralytics",
+            "sam3"
+          ],
           "repo_ids": [
             "4d-humans",
             "cvat",
@@ -5352,6 +6282,11 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "insightface",
+            "deepface",
+            "liveportrait"
+          ],
           "repo_ids": [
             "deep-live-cam",
             "deepface",
@@ -5377,8 +6312,14 @@
           "repos": [],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "qgis",
+            "webodm",
+            "maplibre"
+          ],
           "repo_ids": [
             "deck.gl",
+            "globalbuildingatlas",
             "gods-eye-view",
             "kepler.gl",
             "leaflet",
@@ -5393,7 +6334,7 @@
             "theharvester",
             "webodm"
           ],
-          "count": 14
+          "count": 15
         }
       ],
       "repo_ids": [
@@ -5406,6 +6347,7 @@
         "dlib",
         "easymocap",
         "facefusion",
+        "globalbuildingatlas",
         "gods-eye-view",
         "insightface",
         "kepler.gl",
@@ -5433,7 +6375,7 @@
         "webodm",
         "wham"
       ],
-      "count": 35
+      "count": 36
     },
     {
       "id": "aprender",
@@ -5465,7 +6407,9 @@
               ]
             }
           ],
-          "repos": [],
+          "repos": [
+            "jev-fraud"
+          ],
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
@@ -5481,10 +6425,11 @@
             "claude-quickstarts",
             "context-engineering",
             "generative-ai-for-beginners",
+            "jev-fraud",
             "loop-engineering",
             "openai-cookbook"
           ],
-          "count": 14
+          "count": 15
         },
         {
           "id": "aprender-prompts",
@@ -5712,6 +6657,7 @@
         "i-have-adhd",
         "impeccable",
         "instagram-agent-skill",
+        "jev-fraud",
         "knowledge-work-plugins",
         "linkedin-agent-skill",
         "llm-course",
@@ -5750,7 +6696,7 @@
         "vercel-skills",
         "wshobson-agents"
       ],
-      "count": 101
+      "count": 102
     },
     {
       "id": "configurar-claude-code",
@@ -5778,6 +6724,9 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "claude-code"
+          ],
           "repo_ids": [
             "claude-code"
           ],
@@ -5906,6 +6855,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "superpowers",
+            "claude-plugins-official",
+            "agent-skills"
+          ],
           "repo_ids": [
             "3dviz-pro-max",
             "agency-agents",
@@ -6112,6 +7066,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "context7",
+            "playwright-mcp",
+            "github-mcp-server"
+          ],
           "repo_ids": [
             "activepieces",
             "agent-browser",
@@ -6219,6 +7178,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "claude-mem",
+            "codegraph",
+            "rtk"
+          ],
           "repo_ids": [
             "agentmemory",
             "claude-mem",
@@ -6249,6 +7213,10 @@
             "awesome-claude-code",
             "claude-code-hooks-mastery"
           ],
+          "guided_starters": [
+            "claude-code-hooks-mastery",
+            "awesome-claude-code"
+          ],
           "repo_ids": [
             "awesome-claude-code",
             "claude-code-hooks-mastery"
@@ -6269,6 +7237,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "ccusage",
+            "claude-code-usage-monitor",
+            "ollama"
+          ],
           "repo_ids": [
             "ccusage",
             "claude-code-router",
@@ -6298,6 +7271,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "marketingskills",
+            "impeccable",
+            "skills-remotion"
+          ],
           "repo_ids": [
             "claude-ads",
             "creative-architect",
@@ -6373,6 +7351,11 @@
             "awesome-claude-skills"
           ],
           "keywords": [],
+          "guided_starters": [
+            "composio",
+            "litellm",
+            "claude-agent-sdk-python"
+          ],
           "repo_ids": [
             "agent-reach",
             "agentes-chat",
@@ -8396,6 +9379,9 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "codex"
+          ],
           "repo_ids": [
             "codex"
           ],
@@ -8494,6 +9480,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "superpowers",
+            "spec-kit",
+            "antigravity-awesome-skills"
+          ],
           "repo_ids": [
             "3dviz-pro-max",
             "agency-agents",
@@ -8671,6 +9662,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "context7",
+            "playwright-mcp",
+            "github-mcp-server"
+          ],
           "repo_ids": [
             "activepieces",
             "agent-browser",
@@ -8782,6 +9778,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "codegraph",
+            "t3code",
+            "agentmemory"
+          ],
           "repo_ids": [
             "agentmemory",
             "claude-mem",
@@ -8821,6 +9822,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "impeccable",
+            "ppt-master",
+            "skills-remotion"
+          ],
           "repo_ids": [
             "cybersecurity-skills",
             "ffmpeg-skill",
@@ -8888,6 +9894,11 @@
           ],
           "reference_repos": [],
           "keywords": [],
+          "guided_starters": [
+            "ccusage",
+            "litellm",
+            "paperclip"
+          ],
           "repo_ids": [
             "agent-reach",
             "agentes-chat",
@@ -10626,8 +11637,7 @@
       ],
       "starters": [
         "antigravity-awesome-skills",
-        "stitch-skills",
-        "prompt-master"
+        "stitch-skills"
       ],
       "topics": [
         {
@@ -10704,6 +11714,11 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "antigravity-awesome-skills",
+            "wshobson-agents",
+            "superpowers"
+          ],
           "repo_ids": [
             "agency-agents",
             "agent-framework",
@@ -10783,6 +11798,9 @@
           ],
           "keywords": [],
           "reference_repos": [],
+          "guided_starters": [
+            "stitch-skills"
+          ],
           "repo_ids": [
             "stitch-skills"
           ],
@@ -10897,6 +11915,11 @@
           ],
           "reference_repos": [],
           "keywords": [],
+          "guided_starters": [
+            "context7",
+            "chrome-devtools-mcp",
+            "supabase"
+          ],
           "repo_ids": [
             "activepieces",
             "agent-browser",
@@ -11006,6 +12029,11 @@
           ],
           "reference_repos": [],
           "keywords": [],
+          "guided_starters": [
+            "codegraph",
+            "ccusage",
+            "omniroute"
+          ],
           "repo_ids": [
             "agentmemory",
             "ccusage",
@@ -45202,6 +46230,122 @@
       "alt": []
     },
     {
+      "id": "awesome-bigdata",
+      "name": "awesome-bigdata",
+      "cat": 10,
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "complejidad": 1,
+      "puntuacion": 55,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "data"
+      ],
+      "routes": [
+        "no_api",
+        "reference"
+      ],
+      "access": {
+        "mode": "reference",
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
+        "api_note": "El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios",
+        "subscription_note": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
+        "local_note": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
+        "cost_note": "El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios",
+        "hardware_note": "Navegador; problema de datos definido",
+        "checked_at": "2026-11-15",
+        "review": "documented",
+        "sources": [
+          "https://github.com/oxnr/awesome-bigdata/blob/master/README.md"
+        ],
+        "source_blob_sha": "44de6f6aa3e8fdf2836a43940c0613302e1f350a",
+        "antigravity": "not_documented"
+      },
+      "getting_started": {
+        "kind": "reference",
+        "audience": "reading",
+        "entry_url": "",
+        "prerequisites": [
+          "Navegador",
+          "problema de datos definido"
+        ],
+        "steps": [
+          "Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una.",
+          "Comprueba: Puedes elegir candidatos complementarios."
+        ],
+        "command": "",
+        "command_language": "",
+        "command_status": "reference",
+        "source": "https://github.com/oxnr/awesome-bigdata/blob/master/README.md",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
+      },
+      "first_try": {
+        "action": "Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una",
+        "success": "Puedes elegir candidatos complementarios",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Explorar el ecosistema de datos",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Comparar motores antes de montar infraestructura",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-15",
+        "source": "https://github.com/oxnr/awesome-bigdata/blob/master/README.md",
+        "source_blob_sha": "44de6f6aa3e8fdf2836a43940c0613302e1f350a",
+        "previous_source_blob_sha": "44de6f6aa3e8fdf2836a43940c0613302e1f350a",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.",
+      "desc": "Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.",
+      "stack": "Navegador; problema de datos definido",
+      "repo": "https://github.com/oxnr/awesome-bigdata",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura",
+      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
+      "combines_with": [
+        "awesome-dataviz",
+        "duckdb",
+        "hudi"
+      ],
+      "alt": []
+    },
+    {
       "id": "awesome-dataviz",
       "name": "awesome-dataviz",
       "cat": 10,
@@ -45209,7 +46353,7 @@
       "exec": "cloud",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -45327,7 +46471,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 65,
       "grupo": "g-librerias-de-graficos",
       "mcp": false,
       "prov": [],
@@ -45568,7 +46712,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 38,
+      "puntuacion": 37,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -45692,7 +46836,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 65,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -45935,7 +47079,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46045,6 +47189,124 @@
       "alt": []
     },
     {
+      "id": "globalbuildingatlas",
+      "name": "GlobalBuildingAtlas",
+      "cat": 10,
+      "role": "directory",
+      "exec": "local",
+      "setup": "heavy",
+      "complejidad": 1,
+      "puntuacion": 33,
+      "grupo": null,
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "datos",
+        "python"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "mode": "software",
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "prerequisites",
+        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
+        "api_note": "No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes",
+        "subscription_note": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
+        "local_note": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
+        "cost_note": "No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes",
+        "hardware_note": "Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa",
+        "checked_at": "2026-11-15",
+        "review": "documented",
+        "sources": [
+          "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md"
+        ],
+        "source_blob_sha": "e92c791fbd168360706fdf001dd022dd05c16215",
+        "antigravity": "not_documented"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "entry_url": "",
+        "prerequisites": [
+          "Navegador o GIS",
+          "espacio de descarga",
+          "zona pequeña",
+          "licencia de la capa"
+        ],
+        "steps": [
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
+          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+        ],
+        "command": "",
+        "command_language": "",
+        "command_status": "readme",
+        "source": "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md",
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
+      },
+      "first_try": {
+        "action": "Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa",
+        "success": "Puedes identificar formato, licencia y escala del dato",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "Explorar edificios en un GIS",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "Preparar una escena urbana de prueba",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-15",
+        "source": "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md",
+        "source_blob_sha": "e92c791fbd168360706fdf001dd022dd05c16215",
+        "previous_source_blob_sha": "e92c791fbd168360706fdf001dd022dd05c16215",
+        "previous_category": [
+          25,
+          "datos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
+      "desc": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
+      "stack": "Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa",
+      "repo": "https://github.com/zhu-xlab/GlobalBuildingAtlas",
+      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
+      "install_conf": "clone",
+      "install_note": "Una referencia no se instala como un servicio único.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba",
+      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
+      "combines_with": [
+        "three.js",
+        "duckdb",
+        "3dviz-pro-max"
+      ],
+      "alt": []
+    },
+    {
       "id": "gods-eye-view",
       "name": "gods-eye-view",
       "cat": 10,
@@ -46052,7 +47314,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 69,
       "grupo": "g-paneles-osint-sobre-globo-3d",
       "mcp": true,
       "prov": [],
@@ -46299,7 +47561,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 66,
+      "puntuacion": 69,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -46417,7 +47679,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 71,
       "grupo": "g-mapas-web-interactivos",
       "mcp": false,
       "prov": [],
@@ -46655,7 +47917,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 67,
+      "puntuacion": 68,
       "grupo": "g-mapas-web-interactivos",
       "mcp": false,
       "prov": [],
@@ -46773,7 +48035,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": "g-analitica-web-auto-hospedada",
       "mcp": false,
       "prov": [],
@@ -47260,7 +48522,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 59,
+      "puntuacion": 60,
       "grupo": "g-analitica-web-auto-hospedada",
       "mcp": false,
       "prov": [],
@@ -47379,7 +48641,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 71,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -47506,7 +48768,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": true,
       "prov": [],
@@ -47632,7 +48894,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -47750,7 +49012,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 69,
+      "puntuacion": 70,
       "grupo": "g-librerias-de-graficos",
       "mcp": false,
       "prov": [],
@@ -47991,7 +49253,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 57,
+      "puntuacion": 58,
       "grupo": "g-bi-y-dashboards",
       "mcp": false,
       "prov": [],
@@ -48599,7 +49861,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -53175,7 +54437,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 56,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -53301,7 +54563,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 64,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -54299,7 +55561,7 @@
       "exec": "local",
       "setup": "heavy",
       "complejidad": 2,
-      "puntuacion": 77,
+      "puntuacion": 79,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -58051,9 +59313,7 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba.",
       "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
-      "combines_with": [
-        "nautilus-trader"
-      ],
+      "combines_with": [],
       "alt": []
     },
     {
@@ -65024,7 +66284,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 66,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65723,7 +66983,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 63,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65837,7 +67097,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 53,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -65955,8 +67215,8 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 62,
-      "grupo": "g-emulacion-de-adversarios",
+      "puntuacion": 58,
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -66072,8 +67332,8 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 46,
-      "grupo": "g-analisis-forense-de-discos",
+      "puntuacion": 38,
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -66173,11 +67433,10 @@
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
         "hayabusa",
-        "wazuh"
-      ],
-      "alt": [
+        "wazuh",
         "sleuthkit"
-      ]
+      ],
+      "alt": []
     },
     {
       "id": "awesome-ai-reverse-engineering",
@@ -67132,7 +68391,7 @@
       "setup": "hard",
       "complejidad": 4,
       "puntuacion": 63,
-      "grupo": "g-emulacion-de-adversarios",
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -68067,7 +69326,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 65,
+      "puntuacion": 64,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69386,7 +70645,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 49,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69610,7 +70869,7 @@
     },
     {
       "id": "dnspy",
-      "name": "dnSpy",
+      "name": "dnSpyEx",
       "cat": 16,
       "role": "app",
       "exec": "local",
@@ -69734,7 +70993,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 62,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -69963,7 +71222,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 52,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -70079,7 +71338,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 62,
       "grupo": "g-bloqueo-de-ip-por-comportamiento",
       "mcp": false,
       "prov": [],
@@ -71377,7 +72636,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 62,
+      "puntuacion": 61,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71610,7 +72869,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 3,
-      "puntuacion": 61,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -71724,7 +72983,7 @@
       "setup": "easy",
       "complejidad": 1,
       "puntuacion": 77,
-      "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -71830,9 +73089,7 @@
         "nuclei",
         "amass"
       ],
-      "alt": [
-        "naabu"
-      ]
+      "alt": []
     },
     {
       "id": "ilspy",
@@ -72196,7 +73453,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72430,7 +73687,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -72546,7 +73803,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 55,
+      "puntuacion": 54,
       "grupo": "g-cracking-de-contrasenas",
       "mcp": false,
       "prov": [],
@@ -73014,7 +74271,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 47,
+      "puntuacion": 48,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -73239,119 +74496,6 @@
       ]
     },
     {
-      "id": "loki",
-      "name": "LOKI",
-      "cat": 16,
-      "role": "app",
-      "exec": "local",
-      "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 42,
-      "grupo": null,
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "security"
-      ],
-      "routes": [
-        "no_api"
-      ],
-      "access": {
-        "api": "not_required",
-        "local_model": "not_applicable",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "antigravity": "not_documented",
-        "cost": "no_model_fee",
-        "hardware": "ordinary",
-        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
-        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
-        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
-        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
-        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
-        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
-        "checked_at": "2026-11-16",
-        "review": "documented",
-        "sources": [
-          "https://github.com/Neo23x0/Loki/blob/master/README.md"
-        ],
-        "mode": "software",
-        "source_blob_sha": "a9f691a2fb45dd5faeda3d7da495a077f971c3b8"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "prerequisites": [
-          "Un entorno de instalación o servidor y las dependencias indicadas por el README.",
-          "Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real."
-        ],
-        "steps": [
-          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
-          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
-          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
-        ],
-        "command": "",
-        "command_status": "readme",
-        "entry_url": "",
-        "source": "https://github.com/Neo23x0/Loki/blob/master/README.md",
-        "checked_at": "2026-11-16",
-        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
-      },
-      "first_try": {
-        "action": "Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba.",
-        "success": "Hits de IOC en consola.",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "triar un servidor de lab tras alerta",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "buscar IOCs de un informe MISP",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-16",
-        "source": "https://github.com/Neo23x0/Loki/blob/master/README.md",
-        "source_blob_sha": "a9f691a2fb45dd5faeda3d7da495a077f971c3b8",
-        "previous_category": [
-          16,
-          "deteccion"
-        ],
-        "category_verdict": "confirmed",
-        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.",
-      "desc": "Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.",
-      "stack": "Python, requirements.txt",
-      "repo": "https://github.com/Neo23x0/Loki",
-      "install": "Seguir la instalación original: https://github.com/Neo23x0/Loki/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP",
-      "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
-      "combines_with": [
-        "yara",
-        "misp"
-      ],
-      "alt": []
-    },
-    {
       "id": "lynis",
       "name": "Lynis",
       "cat": 16,
@@ -73477,7 +74621,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 52,
+      "puntuacion": 51,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -74651,8 +75795,8 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 63,
-      "grupo": "g-sondeo-y-escaneo-de-reconocimiento",
+      "puntuacion": 67,
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -74757,9 +75901,7 @@
         "amass",
         "nuclei"
       ],
-      "alt": [
-        "httpx"
-      ]
+      "alt": []
     },
     {
       "id": "netexec",
@@ -75003,7 +76145,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 59,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -75120,7 +76262,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 61,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -75474,7 +76616,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 73,
+      "puntuacion": 72,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -76048,7 +77190,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 55,
+      "puntuacion": 54,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -78154,7 +79296,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 60,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -78615,7 +79757,7 @@
       "exec": "hybrid",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 60,
+      "puntuacion": 59,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79105,7 +80247,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 56,
+      "puntuacion": 55,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79219,7 +80361,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 1,
-      "puntuacion": 58,
+      "puntuacion": 57,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -79462,8 +80604,8 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 42,
-      "grupo": "g-analisis-forense-de-discos",
+      "puntuacion": 38,
+      "grupo": null,
       "mcp": false,
       "prov": [],
       "tags": [
@@ -79563,11 +80705,10 @@
       "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
       "combines_with": [
         "velociraptor",
-        "volatility3"
-      ],
-      "alt": [
+        "volatility3",
         "autopsy"
-      ]
+      ],
+      "alt": []
     },
     {
       "id": "sliver",
@@ -79577,7 +80718,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 69,
+      "puntuacion": 68,
       "grupo": "g-frameworks-de-c2-y-post-explotacion",
       "mcp": false,
       "prov": [],
@@ -79696,7 +80837,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 45,
+      "puntuacion": 46,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80176,7 +81317,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 63,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80876,7 +82017,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 4,
-      "puntuacion": 58,
+      "puntuacion": 63,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -80993,7 +82134,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 3,
-      "puntuacion": 48,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -81466,7 +82607,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 53,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -84557,8 +85698,7 @@
         "activepieces",
         "twenty-main",
         "botpress",
-        "compai-crm",
-        "formbricks"
+        "compai-crm"
       ],
       "alt": [
         "easyappointments"
@@ -85039,8 +86179,7 @@
       "combines_with": [
         "espocrm",
         "activepieces",
-        "coolify",
-        "formbricks"
+        "coolify"
       ],
       "alt": [
         "cal.diy"
@@ -85397,8 +86536,6 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
-        "cal.diy",
-        "easyappointments",
         "listmonk",
         "typebot"
       ],
@@ -105839,7 +106976,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 62,
+      "puntuacion": 61,
       "grupo": "g-formatos-de-tabla-para-data-lakes",
       "mcp": false,
       "prov": [],
@@ -105959,7 +107096,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 70,
+      "puntuacion": 66,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106069,122 +107206,6 @@
       "alt": []
     },
     {
-      "id": "awesome-bigdata",
-      "name": "awesome-bigdata",
-      "cat": 25,
-      "role": "directory",
-      "exec": "cloud",
-      "setup": "easy",
-      "complejidad": 1,
-      "puntuacion": 46,
-      "grupo": null,
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "data"
-      ],
-      "routes": [
-        "no_api",
-        "reference"
-      ],
-      "access": {
-        "mode": "reference",
-        "api": "not_required",
-        "local_model": "not_applicable",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "no_model_fee",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios",
-        "subscription_note": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
-        "local_note": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
-        "cost_note": "El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios",
-        "hardware_note": "Navegador; problema de datos definido",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/oxnr/awesome-bigdata/blob/master/README.md"
-        ],
-        "source_blob_sha": "44de6f6aa3e8fdf2836a43940c0613302e1f350a",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "reference",
-        "audience": "reading",
-        "entry_url": "",
-        "prerequisites": [
-          "Navegador",
-          "problema de datos definido"
-        ],
-        "steps": [
-          "Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una.",
-          "Comprueba: Puedes elegir candidatos complementarios."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "reference",
-        "source": "https://github.com/oxnr/awesome-bigdata/blob/master/README.md",
-        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
-        "checked_at": "2026-11-16"
-      },
-      "first_try": {
-        "action": "Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una",
-        "success": "Puedes elegir candidatos complementarios",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Explorar el ecosistema de datos",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Comparar motores antes de montar infraestructura",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/oxnr/awesome-bigdata/blob/master/README.md",
-        "source_blob_sha": "44de6f6aa3e8fdf2836a43940c0613302e1f350a",
-        "previous_source_blob_sha": "44de6f6aa3e8fdf2836a43940c0613302e1f350a",
-        "previous_category": [
-          25,
-          "datos"
-        ],
-        "category_verdict": "confirmed",
-        "note": "No se instala la colección entera ni se hereda la compatibilidad de sus enlaces",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.",
-      "desc": "Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.",
-      "stack": "Navegador; problema de datos definido",
-      "repo": "https://github.com/oxnr/awesome-bigdata",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "awesome-dataviz",
-        "duckdb",
-        "hudi"
-      ],
-      "alt": []
-    },
-    {
       "id": "clickhouse",
       "name": "ClickHouse",
       "cat": 25,
@@ -106192,7 +107213,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 80,
+      "puntuacion": 79,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106311,7 +107332,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 69,
+      "puntuacion": 67,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106429,7 +107450,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 66,
+      "puntuacion": 62,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106548,7 +107569,7 @@
       "exec": "local",
       "setup": "medium",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 61,
       "grupo": "g-formatos-de-tabla-para-data-lakes",
       "mcp": false,
       "prov": [],
@@ -106669,7 +107690,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 64,
+      "puntuacion": 60,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -106787,7 +107808,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 68,
+      "puntuacion": 67,
       "grupo": "g-procesamiento-de-datos-tabulares",
       "mcp": false,
       "prov": [],
@@ -106901,124 +107922,6 @@
       ]
     },
     {
-      "id": "globalbuildingatlas",
-      "name": "GlobalBuildingAtlas",
-      "cat": 25,
-      "role": "directory",
-      "exec": "local",
-      "setup": "heavy",
-      "complejidad": 1,
-      "puntuacion": 32,
-      "grupo": null,
-      "mcp": false,
-      "prov": [],
-      "tags": [
-        "datos",
-        "python"
-      ],
-      "routes": [
-        "no_api"
-      ],
-      "access": {
-        "mode": "software",
-        "api": "not_required",
-        "local_model": "not_applicable",
-        "claude_code": "not_documented",
-        "codex": "not_documented",
-        "cost": "no_model_fee",
-        "hardware": "prerequisites",
-        "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-        "api_note": "No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes",
-        "subscription_note": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
-        "local_note": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
-        "cost_note": "No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes",
-        "hardware_note": "Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa",
-        "checked_at": "2026-11-15",
-        "review": "documented",
-        "sources": [
-          "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md"
-        ],
-        "source_blob_sha": "e92c791fbd168360706fdf001dd022dd05c16215",
-        "antigravity": "not_documented"
-      },
-      "getting_started": {
-        "kind": "source",
-        "audience": "setup",
-        "entry_url": "",
-        "prerequisites": [
-          "Navegador o GIS",
-          "espacio de descarga",
-          "zona pequeña",
-          "licencia de la capa"
-        ],
-        "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
-        ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md",
-        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
-        "checked_at": "2026-11-16"
-      },
-      "first_try": {
-        "action": "Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa",
-        "success": "Puedes identificar formato, licencia y escala del dato",
-        "execution": "proposed_not_executed"
-      },
-      "practical_examples": [
-        {
-          "scenario": "Explorar edificios en un GIS",
-          "status": "illustrative"
-        },
-        {
-          "scenario": "Preparar una escena urbana de prueba",
-          "status": "illustrative"
-        }
-      ],
-      "editorial_review": {
-        "status": "source_reviewed",
-        "checked_at": "2026-11-15",
-        "source": "https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md",
-        "source_blob_sha": "e92c791fbd168360706fdf001dd022dd05c16215",
-        "previous_source_blob_sha": "e92c791fbd168360706fdf001dd022dd05c16215",
-        "previous_category": [
-          25,
-          "datos"
-        ],
-        "category_verdict": "confirmed",
-        "note": "GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial",
-        "checks": [
-          "identity",
-          "category",
-          "examples",
-          "installation_source",
-          "api_costs",
-          "claude_code",
-          "codex",
-          "antigravity",
-          "local_model"
-        ],
-        "installation_tested": false
-      },
-      "one": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
-      "desc": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
-      "stack": "Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa",
-      "repo": "https://github.com/zhu-xlab/GlobalBuildingAtlas",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
-      "choose_if": "Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba",
-      "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [
-        "three.js",
-        "duckdb",
-        "3dviz-pro-max"
-      ],
-      "alt": []
-    },
-    {
       "id": "gradio",
       "name": "Gradio",
       "cat": 25,
@@ -107026,7 +107929,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 71,
+      "puntuacion": 70,
       "grupo": "g-apps-web-de-datos-en-python",
       "mcp": false,
       "prov": [],
@@ -107155,7 +108058,7 @@
       "exec": "hybrid",
       "setup": "heavy",
       "complejidad": 3,
-      "puntuacion": 51,
+      "puntuacion": 50,
       "grupo": "g-formatos-de-tabla-para-data-lakes",
       "mcp": false,
       "prov": [],
@@ -107283,7 +108186,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 55,
+      "puntuacion": 52,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -107402,7 +108305,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 1,
-      "puntuacion": 66,
+      "puntuacion": 65,
       "grupo": "g-notebooks",
       "mcp": false,
       "prov": [],
@@ -108140,7 +109043,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 56,
+      "puntuacion": 53,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -108258,7 +109161,7 @@
       "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 71,
+      "puntuacion": 70,
       "grupo": "g-apps-web-de-datos-en-python",
       "mcp": false,
       "prov": [],
@@ -108379,7 +109282,7 @@
       "exec": "local",
       "setup": "hard",
       "complejidad": 3,
-      "puntuacion": 76,
+      "puntuacion": 74,
       "grupo": null,
       "mcp": false,
       "prov": [],
@@ -113630,10 +114533,10 @@
       "name": "design.md",
       "cat": 27,
       "role": "library",
-      "exec": "cloud",
+      "exec": "local",
       "setup": "easy",
       "complejidad": 2,
-      "puntuacion": 63,
+      "puntuacion": 65,
       "grupo": null,
       "mcp": false,
       "prov": [],

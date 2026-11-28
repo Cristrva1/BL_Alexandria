@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **974 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **973 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -21,13 +21,13 @@ Las **974 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 27 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 33 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
 | 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 33 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
-| 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 31 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
+| 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 33 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
 | 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 11 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
 | 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 22 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
 | 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 23 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 25 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 51 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
-| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 147 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
+| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 146 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 18 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 19 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 30 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
@@ -36,7 +36,7 @@ Las **974 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 32 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
 | 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 30 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
 | 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 25 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
-| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 23 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
+| 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 21 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
 | 26 | [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) | 32 | Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario. |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 38 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
 | 28 | [🖼️ Visión artificial, rostros y percepción](#️-28-visión-artificial-rostros-y-percepción) | 21 | Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes. |
@@ -3132,6 +3132,15 @@ npm install recharts react-is` (comprobar los pasos completos en la ficha).<br>
 
 ### Recursos y casos de uso
 
+#### 🗄️ awesome-bigdata
+**Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 14.7k<br>
+**Qué es:** Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/oxnr/awesome-bigdata/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [awesome-dataviz](human/fichas/awesome-dataviz.md) · [DuckDB](human/fichas/duckdb.md) · [hudi](human/fichas/hudi.md)<br>
+**Más:** [ficha completa](human/fichas/awesome-bigdata.md) · [GitHub](https://github.com/oxnr/awesome-bigdata)
+
 #### 🗂️ awesome-dataviz
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 4.5k<br>
 **Qué es:** Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.<br>
@@ -3224,7 +3233,7 @@ cp .env.example .env          # sensible defaults — no keys needed
 **Combina con:** [osiris](human/fichas/osiris.md) · [MiroFish](human/fichas/mirofish.md) · [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md) · [gods-eye-view](human/fichas/gods-eye-view.md)<br>
 **Más:** [ficha completa](human/fichas/pythia.md) · [GitHub](https://github.com/jangles-byte/Pythia)
 
-### Fotogrametría y mapas desde imágenes
+### Datos geoespaciales, fotogrametría y mapas
 
 #### 📚 Leaflet
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 45.9k<br>
@@ -3289,6 +3298,15 @@ docker run -ti --rm -v c:/Users/youruser/datasets:/datasets opendronemap/odm --p
 **Elige si:** Tu objetivo encaja con estos ejemplos: Procesar imágenes de dron desde una interfaz; Comparar resultados de dos vuelos de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [blender](human/fichas/blender.md) · [three.js](human/fichas/three-js.md) · [marimo](human/fichas/marimo.md) · [Leaflet](human/fichas/leaflet.md) · [QGIS](human/fichas/qgis.md)<br>
 **Más:** [ficha completa](human/fichas/webodm.md) · [GitHub](https://github.com/WebODM/WebODM)
+
+#### 🧑‍💻 GlobalBuildingAtlas
+**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 2.3k<br>
+**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [three.js](human/fichas/three-js.md) · [DuckDB](human/fichas/duckdb.md) · [3dviz-pro-max](human/fichas/3dviz-pro-max.md)<br>
+**Más:** [ficha completa](human/fichas/globalbuildingatlas.md) · [GitHub](https://github.com/zhu-xlab/GlobalBuildingAtlas)
 
 ---
 
@@ -3898,6 +3916,17 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Combina con:** [coolify](human/fichas/coolify.md) · [docuseal](human/fichas/docuseal.md) · [paperless-ngx](human/fichas/paperless-ngx.md)<br>
 **Más:** [ficha completa](human/fichas/pdfcraft.md) · [GitHub](https://github.com/PDFCraftTool/pdfcraft)
 
+### Gestión y archivo de documentos
+
+#### ⚙️ paperless-ngx
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 48.1k<br>
+**Qué es:** Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [Tesseract](human/fichas/tesseract.md) · [ERPNext](human/fichas/erpnext.md)<br>
+**Más:** [ficha completa](human/fichas/paperless-ngx.md) · [GitHub](https://github.com/paperless-ngx/paperless-ngx)
+
 #### 📑 PdfDing
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.8k<br>
 **Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.<br>
@@ -3912,17 +3941,6 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/pdfding.md) · [GitHub](https://codeberg.org/mrmn/PdfDing)
-
-### Gestión y archivo de documentos
-
-#### ⚙️ paperless-ngx
-**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 48.1k<br>
-**Qué es:** Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `docker compose up -d` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [Tesseract](human/fichas/tesseract.md) · [ERPNext](human/fichas/erpnext.md)<br>
-**Más:** [ficha completa](human/fichas/paperless-ngx.md) · [GitHub](https://github.com/paperless-ngx/paperless-ngx)
 
 ---
 
@@ -4111,7 +4129,6 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://evan-kolberg.github.io/prediction-market-backtesting/license/); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comparar dos supuestos de comisiones con datos pasados.; Medir cómo cambia una simulación si mueves el intervalo de prueba — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
-**Combina con:** [nautilus_trader](human/fichas/nautilus-trader.md)<br>
 **Más:** [ficha completa](human/fichas/prediction-market-backtesting.md) · [GitHub](https://github.com/evan-kolberg/prediction-market-backtesting)
 
 ### Bots y conexiones a exchanges
@@ -4789,13 +4806,6 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [OWASP Juice Shop](human/fichas/juice-shop.md) | Tu objetivo encaja con estos ejemplos: practicar OWASP Top 10 en local; validar un scanner contra retos conocidos | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [WebGoat](human/fichas/webgoat.md) | Tu objetivo encaja con estos ejemplos: practicar inyección SQL y XSS siguiendo lecciones paso a paso; formar a desarrolladores en errores comunes de seguridad web | necesitas una instalación sin cuentas ni dependencias adicionales |
 
-**⚖️ ¿Cuál elegir? — httpx, Naabu**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [httpx](human/fichas/httpx.md) | Tu objetivo encaja con estos ejemplos: filtrar qué hosts de un listado de recon responden HTTP; obtener títulos y tecnologías de un alcance autorizado | necesitas una instalación sin cuentas ni dependencias adicionales |
-| [Naabu](human/fichas/naabu.md) | Tu objetivo encaja con estos ejemplos: enumerar puertos abiertos de un segmento de laboratorio; combinar resultados con Nmap para fingerprint de servicios | necesitas una instalación sin cuentas ni dependencias adicionales |
-
 **⚖️ ¿Cuál elegir? — Sliver, Empire, Mythic**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -4860,13 +4870,6 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 | [PayloadsAllTheThings](human/fichas/payloadsallthethings.md) | Tu objetivo encaja con estos ejemplos: preparar payloads SSRF para un lab Juice Shop; repasar técnicas de una categoría OWASP antes de un ejercicio | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
 | [SecLists](human/fichas/seclists.md) | Tu objetivo encaja con estos ejemplos: fuzzear rutas de una app web de lab con la lista Discovery; probar contraseñas comunes solo contra cuentas de prueba | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
 
-**⚖️ ¿Cuál elegir? — Autopsy, The Sleuth Kit**
-
-| Repo | Elígelo si… | Evítalo si… |
-|---|---|---|
-| [Autopsy](human/fichas/autopsy.md) | Tu objetivo encaja con estos ejemplos: abrir un caso forense de lab; generar timeline de un disco de prueba | necesitas una instalación sin cuentas ni dependencias adicionales |
-| [The Sleuth Kit](human/fichas/sleuthkit.md) | Tu objetivo encaja con estos ejemplos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba | buscas una aplicación lista y no quieres preparar un proyecto de código |
-
 ### Ingeniería inversa y formatos binarios
 
 #### 🖥️ ghidra ⭐
@@ -4911,7 +4914,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/icsharpcode/ILSpy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [dnSpy](human/fichas/dnspy.md) · [Claude Code](human/fichas/claude-code.md) · [ImHex](human/fichas/imhex.md)<br>
+**Combina con:** [dnSpyEx](human/fichas/dnspy.md) · [Claude Code](human/fichas/claude-code.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/ilspy.md) · [GitHub](https://github.com/icsharpcode/ILSpy)
 
 #### 🖥️ radare2
@@ -4976,10 +4979,10 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/x64dbg/x64dbg/blob/development/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender depuración en Windows; Investigar un fallo reproducible de una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [ghidra](human/fichas/ghidra.md) · [ImHex](human/fichas/imhex.md) · [dnSpy](human/fichas/dnspy.md) · [raddebugger](human/fichas/raddebugger.md)<br>
+**Combina con:** [ghidra](human/fichas/ghidra.md) · [ImHex](human/fichas/imhex.md) · [dnSpyEx](human/fichas/dnspy.md) · [raddebugger](human/fichas/raddebugger.md)<br>
 **Más:** [ficha completa](human/fichas/x64dbg.md) · [GitHub](https://github.com/x64dbg/x64dbg)
 
-#### 🖥️ dnSpy
+#### 🖥️ dnSpyEx
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 11.5k<br>
 **Qué es:** Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
@@ -5345,15 +5348,6 @@ make compose-safe` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [subfinder](human/fichas/subfinder.md) · [httpx](human/fichas/httpx.md)<br>
 **Más:** [ficha completa](human/fichas/dnsx.md) · [GitHub](https://github.com/projectdiscovery/dnsx)
 
-#### 🖥️ OWASP Noir
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.5k<br>
-**Qué es:** Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `brew install noir` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [Caido](human/fichas/caido.md)<br>
-**Más:** [ficha completa](human/fichas/noir.md) · [GitHub](https://github.com/owasp-noir/noir)
-
 ### Explotación, C2 y post-explotación
 
 #### 📚 Metasploit Framework
@@ -5620,15 +5614,6 @@ make compose-safe` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: añadir un WAF con el CRS a un servicio escrito en Go; proteger un Caddy de laboratorio con el módulo de Coraza — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
 **Combina con:** [OWASP CRS](human/fichas/coreruleset.md) · [Caddy](human/fichas/caddy.md) · [Traefik Proxy](human/fichas/traefik.md)<br>
 **Más:** [ficha completa](human/fichas/coraza.md) · [GitHub](https://github.com/corazawaf/coraza)
-
-#### 🖥️ LOKI
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 3.8k<br>
-**Qué es:** Scanner IOC simple (YARA, hashes, filenames) para triaje rápido de endpoints sospechosos.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Neo23x0/Loki/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [YARA](human/fichas/yara.md) · [MISP](human/fichas/misp.md)<br>
-**Más:** [ficha completa](human/fichas/loki.md) · [GitHub](https://github.com/Neo23x0/Loki)
 
 #### 📂 OWASP CRS
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 3.4k<br>
@@ -5927,6 +5912,15 @@ docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [OWASP ASVS](human/fichas/asvs.md) · [OWASP CheatSheet Series](human/fichas/cheatsheetseries.md) · [OWASP Top 10](human/fichas/owasp-top10.md)<br>
 **Más:** [ficha completa](human/fichas/threat-dragon.md) · [GitHub](https://github.com/OWASP/threat-dragon)
 
+#### 🖥️ OWASP Noir
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.5k<br>
+**Qué es:** Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear la superficie de ataque y alimentar pruebas DAST.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `brew install noir` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [Caido](human/fichas/caido.md)<br>
+**Más:** [ficha completa](human/fichas/noir.md) · [GitHub](https://github.com/owasp-noir/noir)
+
 #### 🖥️ OWASP dep-scan
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.4k<br>
 **Qué es:** Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen.<br>
@@ -6204,7 +6198,7 @@ claude` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/sleuthkit/autopsy/blob/develop/README.txt); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: abrir un caso forense de lab; generar timeline de un disco de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [Hayabusa](human/fichas/hayabusa.md) · [Wazuh](human/fichas/wazuh.md)<br>
+**Combina con:** [Hayabusa](human/fichas/hayabusa.md) · [Wazuh](human/fichas/wazuh.md) · [The Sleuth Kit](human/fichas/sleuthkit.md)<br>
 **Más:** [ficha completa](human/fichas/autopsy.md) · [GitHub](https://github.com/sleuthkit/autopsy)
 
 #### 📚 The Sleuth Kit
@@ -6213,7 +6207,7 @@ claude` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/sleuthkit/sleuthkit/blob/develop-4.1x/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: listar ficheros de una imagen E01/raw de lab; recuperar un fichero borrado de un volume de prueba — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
-**Combina con:** [Velociraptor](human/fichas/velociraptor.md) · [Volatility 3](human/fichas/volatility3.md)<br>
+**Combina con:** [Velociraptor](human/fichas/velociraptor.md) · [Volatility 3](human/fichas/volatility3.md) · [Autopsy](human/fichas/autopsy.md)<br>
 **Más:** [ficha completa](human/fichas/sleuthkit.md) · [GitHub](https://github.com/sleuthkit/sleuthkit)
 
 ### Inteligencia de amenazas
@@ -6639,17 +6633,8 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `git clone https://github.com/calcom/cal.diy.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md) · [crm](human/fichas/compai-crm.md) · [Formbricks](human/fichas/formbricks.md)<br>
+**Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Botpress](human/fichas/botpress.md) · [crm](human/fichas/compai-crm.md)<br>
 **Más:** [ficha completa](human/fichas/cal-diy.md) · [GitHub](https://github.com/calcom/cal.diy)
-
-#### 🖥️ Formbricks
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.2k<br>
-**Qué es:** Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Comando documentado:** `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
-**Combina con:** [cal.diy](human/fichas/cal-diy.md) · [Easy!Appointments](human/fichas/easyappointments.md) · [listmonk](human/fichas/listmonk.md) · [Typebot](human/fichas/typebot.md)<br>
-**Más:** [ficha completa](human/fichas/formbricks.md) · [GitHub](https://github.com/formbricks/formbricks)
 
 #### ⚙️ Easy!Appointments
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 4.5k<br>
@@ -6657,8 +6642,19 @@ python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .` (comp
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `docker compose up` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: permitir a tus clientes reservar citas en tu web; gestionar la agenda de varios profesionales y servicios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
-**Combina con:** [EspoCRM](human/fichas/espocrm.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md) · [Formbricks](human/fichas/formbricks.md)<br>
+**Combina con:** [EspoCRM](human/fichas/espocrm.md) · [activepieces](human/fichas/activepieces.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/easyappointments.md) · [GitHub](https://github.com/alextselegidis/easyappointments)
+
+### Encuestas y feedback
+
+#### 🖥️ Formbricks
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 13.2k<br>
+**Qué es:** Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `claude mcp add --transport http formbricks https://app.formbricks.com/api/mcp` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: encuestas NPS in-app en un producto propio; formularios de onboarding autoalojados — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
+**Combina con:** [listmonk](human/fichas/listmonk.md) · [Typebot](human/fichas/typebot.md)<br>
+**Más:** [ficha completa](human/fichas/formbricks.md) · [GitHub](https://github.com/formbricks/formbricks)
 
 ---
 
@@ -8397,15 +8393,6 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Combina con:** [marimo](human/fichas/marimo.md) · [Apache Superset](human/fichas/superset.md) · [TimesFM](human/fichas/timesfm.md) · [Apache Iceberg](human/fichas/apache-iceberg.md) · [Delta Lake](human/fichas/delta-lake.md)<br>
 **Más:** [ficha completa](human/fichas/duckdb.md) · [GitHub](https://github.com/duckdb/duckdb)
 
-#### 🗃️ marimo ⭐
-**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 23.6k<br>
-**Qué es:** Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.<br>
-**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
-**Comando documentado:** `pip install marimo && marimo tutorial intro` (comprobar los pasos completos en la ficha).<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar datos en un notebook; Convertir un análisis en una app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Ollama](human/fichas/ollama.md)<br>
-**Más:** [ficha completa](human/fichas/marimo.md) · [GitHub](https://github.com/marimo-team/marimo)
-
 #### ⚙️ ClickHouse
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 51k<br>
 **Qué es:** Base de datos analítica columnar de código abierto para consultas SQL en tiempo real sobre miles de millones de filas, autoalojable o en la nube.<br>
@@ -8469,15 +8456,6 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Combina con:** [PyTorch](human/fichas/pytorch.md) · [tensorflow](human/fichas/tensorflow.md) · [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Apache Iceberg](human/fichas/apache-iceberg.md) · [Delta Lake](human/fichas/delta-lake.md)<br>
 **Más:** [ficha completa](human/fichas/jupyterlab.md) · [GitHub](https://github.com/jupyterlab/jupyterlab)
 
-#### 🗄️ awesome-bigdata
-**Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 14.7k<br>
-**Qué es:** Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/oxnr/awesome-bigdata/blob/master/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [awesome-dataviz](human/fichas/awesome-dataviz.md) · [DuckDB](human/fichas/duckdb.md) · [hudi](human/fichas/hudi.md)<br>
-**Más:** [ficha completa](human/fichas/awesome-bigdata.md) · [GitHub](https://github.com/oxnr/awesome-bigdata)
-
 #### 🖥️ dbt
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 14.2k<br>
 **Qué es:** Herramienta para transformar datos dentro del almacén con modelos SQL versionados, pruebas, documentación y dependencias, como se hace con el software.<br>
@@ -8532,15 +8510,6 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Combina con:** [DuckDB](human/fichas/duckdb.md) · [Apache Airflow](human/fichas/airflow.md) · [Ibis](human/fichas/ibis.md) · [marimo](human/fichas/marimo.md) · [Dagster](human/fichas/dagster.md)<br>
 **Más:** [ficha completa](human/fichas/dlt.md) · [GitHub](https://github.com/dlt-hub/dlt)
 
-#### 🧑‍💻 GlobalBuildingAtlas
-**Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 2.3k<br>
-**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.<br>
-**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md); no se deduce un paquete por el nombre.<br>
-**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [three.js](human/fichas/three-js.md) · [DuckDB](human/fichas/duckdb.md) · [3dviz-pro-max](human/fichas/3dviz-pro-max.md)<br>
-**Más:** [ficha completa](human/fichas/globalbuildingatlas.md) · [GitHub](https://github.com/zhu-xlab/GlobalBuildingAtlas)
-
 ### Apps de datos en Python
 
 #### 🧪 Gradio ⭐
@@ -8551,6 +8520,15 @@ Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un a
 **Elige si:** Tu objetivo encaja con estos ejemplos: Crear una demo de un modelo; Preparar una herramienta interna de texto — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Transformers](human/fichas/transformers.md) · [LLaMA-Factory](human/fichas/llama-factory.md) · [Ollama](human/fichas/ollama.md) · [rembg](human/fichas/rembg.md) · [F5-TTS](human/fichas/f5-tts.md)<br>
 **Más:** [ficha completa](human/fichas/gradio.md) · [GitHub](https://github.com/gradio-app/gradio)
+
+#### 🗃️ marimo ⭐
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 23.6k<br>
+**Qué es:** Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install marimo && marimo tutorial intro` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar datos en un notebook; Convertir un análisis en una app — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [DuckDB](human/fichas/duckdb.md) · [Polars](human/fichas/polars.md) · [Ollama](human/fichas/ollama.md)<br>
+**Más:** [ficha completa](human/fichas/marimo.md) · [GitHub](https://github.com/marimo-team/marimo)
 
 #### 📊 streamlit
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 46.4k<br>
@@ -9013,7 +8991,7 @@ npm install -g ui-ux-pro-max-cli` (comprobar los pasos completos en la ficha).<b
 **Más:** [ficha completa](human/fichas/hallmark.md) · [GitHub](https://github.com/Nutlope/hallmark)
 
 #### 📐 design.md
-**Etiquetas:** Ejecución ☁️ cloud/API · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 28.9k<br>
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 28.9k<br>
 **Qué es:** Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx @google/design.md lint DESIGN.md` (comprobar los pasos completos en la ficha).<br>
@@ -9326,7 +9304,7 @@ Detección, seguimiento, segmentación, rostros y percepción espacial. Distingu
 
 ### Rostros y retratos animados
 
-#### 🎭 Deep-Live-Cam ⭐
+#### 🎭 Deep-Live-Cam
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 98.1k<br>
 **Qué es:** Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>

@@ -31,7 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura un evento personal de prueba y abre su página de reserva
 **Qué comprobar:** Puedes elegir una franja disponible y revisar la reserva creada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `activepieces`, `twenty-main`, `botpress`, `compai-crm`, `formbricks`
+**Combina con:** `activepieces`, `twenty-main`, `botpress`, `compai-crm`
 **Alternativas (elige una):** `easyappointments`
 
 ## `chatwoot`
@@ -160,7 +160,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Levanta el entorno Docker Compose del repositorio, crea un servicio y un proveedor y haz una reserva de prueba.
 **Qué comprobar:** La cita aparece en el calendario del proveedor.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `espocrm`, `activepieces`, `coolify`, `formbricks`
+**Combina con:** `espocrm`, `activepieces`, `coolify`
 **Alternativas (elige una):** `cal.diy`
 
 ## `erpnext`
@@ -256,7 +256,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue https://formbricks.com docs para Docker Compose y abre la UI.
 **Qué comprobar:** Creas una encuesta de prueba.
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `cal.diy`, `easyappointments`, `listmonk`, `typebot`
+**Combina con:** `listmonk`, `typebot`
 
 ## `freescout`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=helpdesk,php,self-hosted,server

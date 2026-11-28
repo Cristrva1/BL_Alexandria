@@ -4,6 +4,12 @@
 
 > Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.
 
+## Cuándo elegir esta ficha
+
+Solapa descubrimiento con la lista y el mercado. Conservar su navegación e instalación granular como opción de configuración, sujeta a revisar los cambios que efectúa su CLI.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/davila7/claude-code-templates/blob/0f656c8787b3e60862e8f054d268d060871aa0b4/README.md) · [Fuente 2](https://github.com/davila7/claude-code-templates/blob/44fd6fda16f51e5accdde254d5f530fb45de7390/README.md) · [Fuente 3](https://github.com/davila7/claude-code-templates)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 34.1k | MIT | Python | 2026-11-22 |

@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
 
-65 repos únicos · 9 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
+63 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/automatizacion).
 
 ## Opciones para empezar
 
@@ -18,7 +18,7 @@ Son opciones para comparar. No es necesario instalar todas.
 
 Elegir el motor que coordina tareas entre aplicaciones.
 
-[Explorar 13 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
+[Explorar 12 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-flujos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -26,7 +26,6 @@ Elegir el motor que coordina tareas entre aplicaciones.
 | [Apache Airflow](../fichas/airflow.md) | Orquestador de workflows de la Apache Software Foundation: DAGs en Python con planificador, workers, reintentos e interfaz de monitorización. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio. | Sin clave propia de API de IA en la ruta básica |
 | [Celery](../fichas/celery.md) | Envía trabajos Python a una cola para que procesos separados los ejecuten y la aplicación no tenga que esperar. | Sin clave propia de API de IA en la ruta básica |
-| [Dagger](../fichas/dagger.md) | Pipelines de entrega como código con contenedores: SDKs en 8 lenguajes, cache content-addressed y telemetría OpenTelemetry. | Sin clave propia de API de IA en la ruta básica |
 | [Dagster](../fichas/dagster.md) | Orquestador de datos orientado a activos: declaras tablas, modelos o informes como funciones Python y Dagster los mantiene actualizados con linaje. | Sin clave propia de API de IA en la ruta básica |
 | [huginn](../fichas/huginn.md) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú". | Sin clave propia de API de IA en la ruta básica |
 | [Kestra](../fichas/kestra.md) | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. | API de IA opcional |
@@ -40,16 +39,14 @@ Elegir el motor que coordina tareas entre aplicaciones.
 
 Distinguir conexiones oficiales,pasarelas y bibliotecas de WhatsApp.
 
-[Explorar 8 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-whatsapp)
+[Explorar 6 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-whatsapp)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Baileys](../fichas/baileys.md) | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. | Sin clave propia de API de IA en la ruta básica |
 | [evolution-api](../fichas/evolution-api.md) | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. | API de IA opcional |
 | [OpenWA](../fichas/openwa.md) | Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA. | Sin clave propia de API de IA en la ruta básica |
-| [signal-cli](../fichas/signal-cli.md) | Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal. | Sin clave propia de API de IA en la ruta básica |
 | [WAHA](../fichas/waha.md) | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | Sin clave propia de API de IA en la ruta básica |
-| [whatsapp-agentkit](../fichas/whatsapp-agentkit.md) | Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales. | API de IA necesaria |
 | [whatsapp-web.js](../fichas/whatsapp-web-js.md) | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. | Sin clave propia de API de IA en la ruta básica |
 | [whatsmeow](../fichas/whatsmeow.md) | Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. | Sin clave propia de API de IA en la ruta básica |
 
@@ -75,15 +72,13 @@ Gestionar clientes, oportunidades y conversaciones con personas.
 
 Correo, notificaciones y programación de publicaciones.
 
-[Explorar 7 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-campanas)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-campanas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
-| [cloud-mail](../fichas/cloud-mail.md) | Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. | Sin clave propia de API de IA en la ruta básica |
 | [listmonk](../fichas/listmonk.md) | Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS. | Sin clave propia de API de IA en la ruta básica |
 | [mautic](../fichas/mautic.md) | Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. | Sin clave propia de API de IA en la ruta básica |
 | [novu](../fichas/novu.md) | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. | Sin clave propia de API de IA en la ruta básica |
-| [open-seo](../fichas/open-seo.md) | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. | Sin clave propia de API de IA en la ruta básica |
 | [postiz-app](../fichas/postiz-app.md) | Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA. | API de IA opcional |
 | [sellbird](../fichas/sellbird.md) | Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. | Sin clave propia de API de IA en la ruta básica |
 
@@ -124,19 +119,18 @@ Crear herramientas de operación y formularios sobre tus datos.
 
 Organizar disponibilidad y reserva de horarios.
 
-[Explorar 3 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-reservas)
+[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-reservas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [cal.diy](../fichas/cal-diy.md) | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. | Sin clave propia de API de IA en la ruta básica |
 | [Easy!Appointments](../fichas/easyappointments.md) | Aplicación web autoalojada de reserva de citas: clientes reservan online según la disponibilidad de proveedores y servicios, con sincronización con Google Calendar. | Sin clave propia de API de IA en la ruta básica |
-| [Formbricks](../fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Sin clave propia de API de IA en la ruta básica |
 
 ### Constructores de conversaciones
 
 Diseñar flujos conversacionales y conectar canales.
 
-[Explorar 4 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-chatbots)
+[Explorar 5 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-chatbots)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -144,6 +138,7 @@ Diseñar flujos conversacionales y conectar canales.
 | [discord.js](../fichas/discord-js.md) | Módulo Node.js de referencia para interactuar con la API de Discord y crear bots, con paquetes para voz, REST y gateway. | Sin clave propia de API de IA en la ruta básica |
 | [python-telegram-bot](../fichas/python-telegram-bot.md) | Biblioteca Python asíncrona de referencia para crear bots de Telegram, con cobertura completa de la Bot API y utilidades de alto nivel. | Sin clave propia de API de IA en la ruta básica |
 | [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | API de IA opcional |
+| [whatsapp-agentkit](../fichas/whatsapp-agentkit.md) | Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales. | API de IA necesaria |
 
 ### Comunidades,chat y llamadas
 
@@ -159,5 +154,26 @@ Organizar espacios compartidos de comunicación.
 | [Rocket.Chat](../fichas/rocket-chat.md) | Plataforma de comunicación autoalojable para equipos y atención al cliente, con chat, llamadas, federación, omnicanal y marketplace de apps. | Sin clave propia de API de IA en la ruta básica |
 | [Synapse](../fichas/synapse.md) | Servidor doméstico de Matrix de referencia, mantenido por Element: chat federado, abierto e interoperable que puedes alojar tú mismo. | Sin clave propia de API de IA en la ruta básica |
 | [Zulip](../fichas/zulip.md) | Chat de equipo open source con hilos por tema: combina lo mejor del email y del chat para trabajo remoto. | Sin clave propia de API de IA en la ruta básica |
+
+### Encuestas y feedback
+
+Recoger y analizar respuestas sin gestionar disponibilidad de agenda.
+
+[Explorar 1 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-encuestas)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [Formbricks](../fichas/formbricks.md) | Encuestas y experience management open source (alternativa a Qualtrics): formularios, in-app surveys y analitica autoalojable. | Sin clave propia de API de IA en la ruta básica |
+
+### Pasarelas y transporte de mensajes
+
+Conectar canales de mensajería, buzones y transporte según el servicio.
+
+[Explorar 2 repos](../../docs/index.html#/explorar?area=automatizacion&topic=negocio-canales)
+
+| Repositorio | Para qué sirve | API de IA |
+|---|---|---|
+| [cloud-mail](../fichas/cloud-mail.md) | Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. | Sin clave propia de API de IA en la ruta básica |
+| [signal-cli](../fichas/signal-cli.md) | Interfaz de línea de comandos y API (JSON-RPC y D-Bus) no oficial para registrar, verificar, enviar y recibir mensajes de Signal. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

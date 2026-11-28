@@ -4,6 +4,12 @@
 
 > Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.
 
+## Cuándo elegir esta ficha
+
+Desplazar de comparaciones de extensiones al tema de editores completos. Zed es alternativa de editor, pero la retirada perdería el enfoque y mapa de teclas al estilo IntelliJ, depuración y herramientas integradas de OpenIDE.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/l0ng-ai/openidea) · [Fuente 2](https://github.com/zed-industries/zed) · [Fuente 3](https://github.com/l0ng-ai/openidea/commit/ba880dac06a921162ae71c0f402c3655096bb1c2)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 9k | Apache-2.0 | TypeScript | 2026-11-14 |

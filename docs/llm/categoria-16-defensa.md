@@ -1,6 +1,6 @@
 # Alexandría para agentes · Protección y verificación de software
 
-Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `defensa`. 17 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 «Analizar software y comprobar su seguridad» › subcategoría `defensa`. 18 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16&sub=defensa · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,11 +29,12 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `cdxgen` | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `bandit` | Revisa código Python en busca de fallos de seguridad habituales, como comandos… | 1 Básico | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `dependency-check` | Análisis de composición de software (SCA) de OWASP: detecta dependencias con… | 1 Básico | 60 | Apache-2.0 (OSI permisiva) | alternativa |
+| `noir` | Descubre endpoints y parámetros en el código fuente (y API ocultas) para mapear… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
 | `dep-scan` | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
-| `java-html-sanitizer` | Biblioteca Java de OWASP que limpia HTML de terceros con políticas… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `pytm` | Modelado de amenazas como código en Python: describe el sistema y obtén… | 2 Intermedio | 58 | MIT (OSI permisiva) | alternativa |
+| `java-html-sanitizer` | Biblioteca Java de OWASP que limpia HTML de terceros con políticas… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `lynis` | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y… | 1 Básico | 56 | GPL-3.0 (OSI copyleft) | sin grupo |
-| `owasp-java-encoder` | Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI)… | 2 Intermedio | 55 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `owasp-java-encoder` | Codificación contextual de salida para Java (HTML, JavaScript, CSS, XML, URI)… | 2 Intermedio | 54 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `brakeman` | Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa… | 1 Básico | 44 | Brakeman Public Use License (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -163,6 +164,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `dependency-track`, `defectdojo`, `osv-scanner` [16/nube-contenedores]
 - **Alternativas:** `osv-scanner`, `dep-scan`
 
+### OWASP Noir (`noir`)
+
+- **Repo:** https://github.com/owasp-noir/noir · MIT · nivel 1 · 59/100
+- **Qué es:** Proyecto OWASP para descubrir endpoints a partir del código y mapear la superficie de ataque.
+- **Cuándo elegirlo:** Casos: listar todos los endpoints de un repositorio propio antes de un pentest; pasar endpoints descubiertos a ZAP para un escaneo autorizado.
+- **Requisitos:** nivel 1: preparación sencilla; Crystal; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `brew install noir` — fuente: https://github.com/owasp-noir/noir/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala con Homebrew como indica el README y analiza el directorio de una aplicación propia. Éxito: Obtienes la lista de endpoints, métodos y parámetros detectados.
+- **Combina con:** `zaproxy` [16/pruebas], `caido` [16/pruebas]
+
 ### OWASP dep-scan (`dep-scan`)
 
 - **Repo:** https://github.com/owasp-dep-scan/dep-scan · MIT · nivel 1 · 58/100 · alternativa en «Análisis de dependencias vulnerables (SCA)»
@@ -173,16 +184,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala con pip como indica el README y ejecuta depscan sobre un proyecto propio. Éxito: Obtienes un informe de vulnerabilidades y riesgos de dependencias.
 - **Combina con:** `cdxgen`, `dependency-track`
 - **Alternativas:** `osv-scanner`, `dependency-check`
-
-### OWASP Java HTML Sanitizer (`java-html-sanitizer`)
-
-- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 58/100
-- **Qué es:** Proyecto OWASP: un saneador de HTML para aplicaciones Java.
-- **Cuándo elegirlo:** Casos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/java-html-sanitizer/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida. Éxito: El HTML con scripts queda saneado.
-- **Combina con:** `owasp-java-encoder`, `cheatsheetseries` [16/referencias]
 
 ### OWASP pytm (`pytm`)
 
@@ -195,6 +196,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `asvs` [16/referencias]
 - **Alternativas:** `threat-dragon`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
+### OWASP Java HTML Sanitizer (`java-html-sanitizer`)
+
+- **Repo:** https://github.com/OWASP/java-html-sanitizer · Apache-2.0 · nivel 2 · 57/100
+- **Qué es:** Proyecto OWASP: un saneador de HTML para aplicaciones Java.
+- **Cuándo elegirlo:** Casos: permitir HTML enriquecido de usuarios en comentarios sin XSS; sanear contenido importado de fuentes externas.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OWASP/java-html-sanitizer/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Añade la dependencia de Maven Central indicada en el README a un proyecto Java de prueba y aplica una política predefinida. Éxito: El HTML con scripts queda saneado.
+- **Combina con:** `owasp-java-encoder`, `cheatsheetseries` [16/referencias]
 
 ### Lynis (`lynis`)
 
@@ -209,7 +220,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### OWASP Java Encoder (`owasp-java-encoder`)
 
-- **Repo:** https://github.com/OWASP/owasp-java-encoder · BSD-3-Clause · nivel 2 · 55/100
+- **Repo:** https://github.com/OWASP/owasp-java-encoder · BSD-3-Clause · nivel 2 · 54/100
 - **Qué es:** Proyecto OWASP: un codificador de salida contextual para Java.
 - **Cuándo elegirlo:** Casos: codificar datos de usuario al renderizar plantillas JSP; escapar valores insertados en JavaScript en línea.
 - **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Java, pom.xml; API de IA: no; Un entorno de desarrollo compatible con el lenguaje y los requisitos del README..

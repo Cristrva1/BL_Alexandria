@@ -4,6 +4,14 @@
 
 > Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel.
 
+## Cuándo elegir esta ficha
+
+Microsoft Learn documenta los runtimes. El repositorio no respondió en la consulta directa. Verifica su disponibilidad antes de intentar instalar.
+
+Referencia de consulta del catálogo.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/microsoft/agent-framework/blob/main/README.md) · [Fuente 2](https://github.com/microsoft/agent-framework) · [Fuente 3](https://learn.microsoft.com/en-us/agent-framework/overview/)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 14.7k | MIT | Python | 2026-11-10 |

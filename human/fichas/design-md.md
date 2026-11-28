@@ -4,15 +4,21 @@
 
 > Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.
 
+## Cuándo elegir esta ficha
+
+La ficha compacta marca ejecución cloud, mientras el upstream ofrece especificación, validador y exportador ejecutables en Node. Conservar composición y linter. Quitar el formato pierde reglas de identidad versionables. Design DNA conserva parte de la información con otro esquema.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/google-labs-code/design.md) · [Fuente 2](https://github.com/zanwei/design-dna) · [Fuente 3](https://github.com/google-labs-code/design.md/commit/db977b3c1d1f309269f43d5d17ae828d54bd6ae3)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 28.9k | Apache-2.0 | TypeScript | 2026-06-24 |
 
-**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 65/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -33,7 +39,7 @@ Paquete npm `@google/design.md` usado con `npx` (`lint`, `diff`, `export`), con 
 | [tailwindcss](tailwindcss.md) | Exporta temas para Tailwind v3 y v4. | Valida el DESIGN.md antes de exportar. |
 | [impeccable](impeccable.md) | Su comando `document` genera un DESIGN.md (combinación por arquitectura). | Genera con impeccable y valida con la CLI. |
 | [Claude Code](claude-code.md) | El agente lee el DESIGN.md como contexto persistente (combinación por arquitectura). | Coloca el archivo en la raíz del repositorio. |
-| [design-dna](design-dna.md) | Combinación recíproca: design-dna lo enlaza como «Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura)». | Orden indicado desde design-dna: Extrae primero y valida después. |
+| [design-dna](design-dna.md) | Los formatos son distintos. Valida el documento después de redactar y mapear el perfil manualmente. | Redacta el documento a partir del perfil y valida una copia de prueba. |
 | [open-design](open-design.md) | Combinación recíproca: open-design lo enlaza como «Formato `DESIGN.md` para describir el sistema de diseño que el agente sigue. (combinación por arquitectura) (OpenDesign usa archivos DESIGN.md; la compatibilidad exacta con la especificación de Google no está verificada)». | Orden indicado desde open-design: Redacta el DESIGN.md antes de generar prototipos. |
 | [Stitch SDK](stitch-sdk.md) | Combinación recíproca: Stitch SDK lo enlaza como «Especificación de sistema de diseño de Google Labs para guiar la generación. (combinación por arquitectura)». | Orden indicado desde Stitch SDK: Redacta el DESIGN.md e inclúyelo en los prompts. |
 

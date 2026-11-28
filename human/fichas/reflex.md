@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -42,13 +42,13 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Apps web de datos en Python**: Reflex ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Apps web de datos en Python**: Reflex ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [streamlit](streamlit.md) ⭐ recomendado | 76 | Si quieres convertir un script de datos en app web con la menor curva. |
-| 2 | [Gradio](gradio.md) | 71 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
-| 3 | **Reflex** (esta ficha) | 71 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 2 | **Reflex** (esta ficha) | 70 | Si quieres una app web completa (frontend y backend) solo en Python. |
+| 3 | [Gradio](gradio.md) | 70 | Si quieres una demo de un modelo de IA con entradas y salidas en minutos. |
 | 4 | [NiceGUI](nicegui.md) | 68 | Si quieres una interfaz web en Python con control fino de componentes. |
 | 5 | [Panel](panel.md) | 55 | Si trabajas con el ecosistema HoloViz y notebooks y quieres dashboards complejos. |
 

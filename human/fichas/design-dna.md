@@ -4,6 +4,12 @@
 
 > Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.
 
+## Cuándo elegir esta ficha
+
+Conservar como extracción de referencias propias hacia Design DNA JSON. Se perderían la estructura JSON específica y sus ejemplos. DESIGN.md conserva las decisiones, mientras Taste cubre dirección de arte. No se halló un conversor compatible en las páginas consultadas.
+
+Revisión documental del 2026-11-27. [Fuente 1](https://github.com/zanwei/design-dna) · [Fuente 2](https://github.com/google-labs-code/design.md) · [Fuente 3](https://github.com/Leonxlnx/taste-skill)
+
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 2.1k | MIT | JavaScript | 2026-11-14 |
@@ -31,7 +37,7 @@ Se instala con `npx skills add zanwei/design-dna` (también para un agente concr
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Claude Code](claude-code.md) | Agente documentado. | `-a claude-code -g -y`. |
-| [design.md](design-md.md) | Convertir el perfil extraído en un DESIGN.md validable (combinación por arquitectura). | Extrae primero y valida después. |
+| [design.md](design-md.md) | El flujo requiere traducir manualmente un perfil JSON a DESIGN.md. No se confirmó un conversor directo. | Revisa el perfil de ejemplo, adapta su contenido manualmente y valida el documento. |
 | [Figma Context MCP](figma-context-mcp.md) | Usar diseños de Figma como referencia (combinación por arquitectura). | Conecta el MCP de Figma antes del análisis. |
 
 **Notas:** Extraer la identidad de webs ajenas puede plantear problemas de propiedad intelectual.

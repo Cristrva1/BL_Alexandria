@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 2 de 3)
 
-Categoría 16 completa (147 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (146 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,20 +18,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ## Fichas
 
-### Nmap (`nmap`)
-
-- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 59/100
-- **Qué es:** Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para…
-- **Cuándo elegirlo:** Casos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.
-- **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nmap/nmap/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`. Éxito: Obtienes la lista de puertos abiertos y los servicios detectados.
-- **Combina con:** `metasploit` [16/explotacion-c2], `nuclei` [16/pruebas], `wireshark` [16/pruebas]
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
-
 ### masscan (`masscan`)
 
-- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 52/100
+- **Repo:** https://github.com/robertdavidgraham/masscan · AGPL-3.0 · nivel 2 · 51/100
 - **Qué es:** Port scanner asíncrono de Robert David Graham.
 - **Cuándo elegirlo:** Casos: barrer un rango RFC1918 de lab; validar exposición de un /24 propio.
 - **Requisitos:** nivel 2: preparación media; C, Makefile; API de IA: no.
@@ -64,7 +53,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Sliver (`sliver`)
 
-- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 69/100 · recomendado en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 68/100 · recomendado en «Frameworks de C2 y post-explotación»
 - **Qué es:** C2 open source de Bishop Fox orientado a red team y emulación autorizada (alternativa a Cobalt Strike de pago).
 - **Cuándo elegirlo:** Casos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -76,26 +65,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 63/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 63/100
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
 - **Instalación (documentada en la fuente; no ejecutada):** `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` — fuente: https://github.com/apache/caldera/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Arranca con `docker run -p 8888:8888 ghcr.io/apache/caldera:latest` y abre la UI en el puerto 8888. Éxito: Accedes a la consola para crear una operación de lab.
 - **Combina con:** `atomic-red-team`, `wazuh` [16/deteccion], `metasploit`
-- **Alternativas:** `atomic-red-team`
-- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
-
-### Atomic Red Team (`atomic-red-team`)
-
-- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 62/100 · alternativa en «Emulación de adversarios»
-- **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
-- **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
-- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
-- **Combina con:** `wazuh` [16/deteccion], `sigma` [16/deteccion], `caldera`, `evilginx2`
-- **Alternativas:** `caldera`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Empire (`empire`)
@@ -110,15 +86,37 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `sliver`, `mythic`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
+### Atomic Red Team (`atomic-red-team`)
+
+- **Repo:** https://github.com/redcanaryco/atomic-red-team · MIT · nivel 1 · 58/100
+- **Qué es:** Biblioteca open source de Red Canary con pruebas ATT&CK atómicas para emulación de adversario.
+- **Cuándo elegirlo:** Casos: validar una regla de detección con un atomic concreto; entrenar al SOC con técnicas ATT&CK controladas.
+- **Requisitos:** nivel 1: material de consulta: se lee, no se instala; C, Gemfile, pyproject.toml; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/redcanaryco/atomic-red-team/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio. Éxito: Observas el artefacto/comportamiento esperado y contrastas con tus alertas.
+- **Combina con:** `wazuh` [16/deteccion], `sigma` [16/deteccion], `caldera`, `evilginx2`
+- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
+
 ### Evilginx2 (`evilginx2`)
 
-- **Repo:** https://github.com/kgretzky/evilginx2 · BSD-3-Clause · nivel 4 · 52/100
+- **Repo:** https://github.com/kgretzky/evilginx2 · BSD-3-Clause · nivel 4 · 54/100
 - **Qué es:** Framework MITM de phishing moderno (BSD-3-Clause) de kgretzky; sucesor de Evilginx 2017.
 - **Cuándo elegirlo:** Casos: entrenar al personal con un phishing MFA controlado; evaluar la detección de reverse-proxy phishing.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Makefile, go.mod; API de IA: no.
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/kgretzky/evilginx2/blob/master/README.md
 - **Primera prueba propuesta (no ejecutada):** Sigue la documentación oficial de Evilginx para instalar el release en un VPS de laboratorio aislado. Éxito: El phishlet de prueba captura una sesión de un usuario voluntario.
 - **Combina con:** `nuclei` [16/pruebas], `wazuh` [16/deteccion], `atomic-red-team`
+- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
+
+### Ligolo-ng (`ligolo-ng`)
+
+- **Repo:** https://github.com/nicocha30/ligolo-ng · GPL-3.0 · nivel 3 · 48/100
+- **Qué es:** Pivoting tunnel GPL-3.
+- **Cuándo elegirlo:** Casos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado.
+- **Requisitos:** nivel 3: preparación media, dominio especializado; Go, Makefile, go.mod; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nicocha30/ligolo-ng/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Descarga agent y proxy desde Releases y sigue docs.ligolo.ng en un lab. Éxito: El túnel conecta las redes del ejercicio.
+- **Combina con:** `metasploit`, `sliver`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
 
 ### Mythic (`mythic`)
@@ -133,20 +131,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Alternativas:** `sliver`, `empire`
 - **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
-### Ligolo-ng (`ligolo-ng`)
-
-- **Repo:** https://github.com/nicocha30/ligolo-ng · GPL-3.0 · nivel 3 · 47/100
-- **Qué es:** Pivoting tunnel GPL-3.
-- **Cuándo elegirlo:** Casos: pivotar a una VLAN de lab tras compromiso; exponer un servicio interno en el ataque autorizado.
-- **Requisitos:** nivel 3: preparación media, dominio especializado; Go, Makefile, go.mod; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nicocha30/ligolo-ng/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga agent y proxy desde Releases y sigue docs.ligolo.ng en un lab. Éxito: El túnel conecta las redes del ejercicio.
-- **Combina con:** `metasploit`, `sliver`
-- **Riesgos y avisos:** Herramienta ofensiva: solo con autorización escrita y alcance definido.
-
 ### SET (`social-engineer-toolkit`)
 
-- **Repo:** https://github.com/trustedsec/social-engineer-toolkit · — · nivel 3 · 45/100
+- **Repo:** https://github.com/trustedsec/social-engineer-toolkit · — · nivel 3 · 46/100
 - **Qué es:** SET de TrustedSec (licencia en readme/LICENSE; API sin SPDX).
 - **Cuándo elegirlo:** Casos: simulación de phishing interna autorizada; entrenamiento de concienciación.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; Python, Dockerfile, pyproject.toml, requirements.txt, setup.py; API de IA: no.
@@ -268,7 +255,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### osquery (`osquery`)
 
-- **Repo:** https://github.com/osquery/osquery · Apache-2.0 OR GPL-2.0-only · nivel 2 · 73/100
+- **Repo:** https://github.com/osquery/osquery · Apache-2.0 OR GPL-2.0-only · nivel 2 · 72/100
 - **Qué es:** Framework de instrumentación de SO con SQL, usado como agente de visibilidad.
 - **Cuándo elegirlo:** Casos: consultar procesos escuchando puertos en flotas de lab; montar hunts SQL sobre cambios de persistencia.
 - **Requisitos:** nivel 2: preparación media; C++, CMakeLists.txt, Makefile; API de IA: no.
@@ -301,7 +288,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### OWASP CRS (`coreruleset`)
 
-- **Repo:** https://github.com/coreruleset/coreruleset · Apache-2.0 · nivel 1 · 65/100
+- **Repo:** https://github.com/coreruleset/coreruleset · Apache-2.0 · nivel 1 · 64/100
 - **Qué es:** OWASP Core Rule Set (Apache-2.0).
 - **Cuándo elegirlo:** Casos: proteger un reverse proxy propio; ajustar falsos positivos de CRS.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; API de IA: no.
@@ -311,7 +298,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Arkime (`arkime`)
 
-- **Repo:** https://github.com/arkime/arkime · Apache-2.0 · nivel 4 · 63/100
+- **Repo:** https://github.com/arkime/arkime · Apache-2.0 · nivel 4 · 62/100
 - **Qué es:** Full packet capture indexado (Apache-2.0).
 - **Cuándo elegirlo:** Casos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto.
 - **Requisitos:** nivel 4: preparación difícil; C, package.json; API de IA: no.
@@ -321,7 +308,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Fail2ban (`fail2ban`)
 
-- **Repo:** https://github.com/fail2ban/fail2ban · GPL-2.0 · nivel 2 · 63/100 · alternativa en «Bloqueo de IP por comportamiento»
+- **Repo:** https://github.com/fail2ban/fail2ban · GPL-2.0 · nivel 2 · 62/100 · alternativa en «Bloqueo de IP por comportamiento»
 - **Qué es:** Ban automático por logs (GPL según COPYING; API NOASSERTION).
 - **Cuándo elegirlo:** Casos: proteger SSH de un VPS propio; banear force brute a un panel web.
 - **Requisitos:** nivel 2: preparación media; Python, setup.py; API de IA: no.
@@ -333,7 +320,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Suricata (`suricata`)
 
-- **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 63/100
+- **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 62/100
 - **Qué es:** Motor IDS/IPS open source de la OISF, estándar de facto junto a Zeek en SOC.
 - **Cuándo elegirlo:** Casos: desplegar un sensor IDS en el perímetro de un lab; validar firmas contra tráfico de un ejercicio Red Team.
 - **Requisitos:** nivel 4: preparación difícil; C; API de IA: no.
@@ -354,7 +341,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Sigma (`sigma`)
 
-- **Repo:** https://github.com/SigmaHQ/sigma · DRL-1.1 (reglas); especificación de dominio público · nivel 1 · 58/100
+- **Repo:** https://github.com/SigmaHQ/sigma · DRL-1.1 (reglas); especificación de dominio público · nivel 1 · 57/100
 - **Qué es:** Estándar abierto de reglas de detección; especificación en dominio público y reglas bajo Detection Rule License 1.1.
 - **Cuándo elegirlo:** Casos: portar una detección a varios SIEM sin reescribirla; cubrir técnicas ATT&CK con reglas comunitarias.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python; API de IA: no.
@@ -365,7 +352,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Shuffle (`shuffle`)
 
-- **Repo:** https://github.com/Shuffle/Shuffle · AGPL-3.0 · nivel 3 · 56/100
+- **Repo:** https://github.com/Shuffle/Shuffle · AGPL-3.0 · nivel 3 · 55/100
 - **Qué es:** SOAR AGPL.
 - **Cuándo elegirlo:** Casos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab.
 - **Requisitos:** nivel 3: SOAR con Docker Compose; flujos visuales; JavaScript, docker-compose.yml; API de IA: no.
@@ -387,7 +374,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Elastic detection-rules (`detection-rules`)
 
-- **Repo:** https://github.com/elastic/detection-rules · Elastic-2.0 · nivel 1 · 49/100
+- **Repo:** https://github.com/elastic/detection-rules · Elastic-2.0 · nivel 1 · 48/100
 - **Qué es:** Detection rules Elastic (Elastic License 2.0).
 - **Cuándo elegirlo:** Casos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, Makefile, pyproject.toml; API de IA: no.
@@ -405,16 +392,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/leiweibau/Pi.Alert/blob/850e40a90871816161559e136e703cf68c1c994a/docs/SECURITY.md
 - **Primera prueba propuesta (no ejecutada):** Activa la protección de la interfaz y observa únicamente la llegada o salida de un equipo propio conocido. Éxito: El evento aparece en el inventario y la interfaz solo es accesible desde la red autorizada.
 - **Riesgos y avisos:** El instalador modifica servicios del sistema y el escaneo usa permisos elevados. La corrección inicial de mayo fue incompleta; el seguimiento….
-
-### LOKI (`loki`)
-
-- **Repo:** https://github.com/Neo23x0/Loki · GPL-3.0 · nivel 1 · 42/100
-- **Qué es:** IOC scanner de Neo23x0 (GPL-3).
-- **Cuándo elegirlo:** Casos: triar un servidor de lab tras alerta; buscar IOCs de un informe MISP.
-- **Requisitos:** nivel 1: preparación sencilla; Python, requirements.txt; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Neo23x0/Loki/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba. Éxito: Hits de IOC en consola.
-- **Combina con:** `yara` [16/reversing], `misp` [16/inteligencia-amenazas]
 
 ### OSV-Scanner (`osv-scanner`)
 
@@ -617,6 +594,26 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `claude-code` [20/terminal], `security-audit-skill` [16/skills], `strix` [16/agentes], `defending-code-reference-harness` [16/skills], `raddebugger` [16/depuracion], `shannon` [16/agentes]
 - **Alternativas:** `ast-grep`, `sonarqube`, `codeql`
 - **Riesgos y avisos:** Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura. El README documenta plugin de Claude Code; un hallazgo estático necesita revisión y no demuestra por sí solo una vulnerabilidad explotable.
+
+### gosec (`gosec`)
+
+- **Repo:** https://github.com/securego/gosec · Apache-2.0 · nivel 1 · 71/100
+- **Qué es:** Analizador de seguridad de código fuente para Go, del proyecto securego.
+- **Cuándo elegirlo:** Casos: Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar; Generar un informe SARIF en GitHub Actions y verlo junto con las…. Evítalo si Tu código no está escrito en Go o buscas revisar dependencias en lugar de tu propio código.
+- **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Makefile, go.mod; API de IA: opcional.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/securego/gosec/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** En una carpeta nueva ejecuta go mod init ejemplo y crea main.go que importe crypto/md5 y fmt e imprima md5.Sum([]byte("hola")); después ejecuta gosec ./... Éxito: El informe lista G401 (uso de MD5 o SHA1) y G501 (importación bloqueada de crypto/md5) con archivo y línea, y el…
+- **Combina con:** `osv-scanner` [16/nube-contenedores], `defectdojo`
+
+### DefectDojo (`defectdojo`)
+
+- **Repo:** https://github.com/DefectDojo/django-DefectDojo · BSD-3-Clause · nivel 2 · 70/100
+- **Qué es:** Proyecto insignia de OWASP para gestión unificada de vulnerabilidades y seguridad de aplicaciones (ASPM), con edición comunitaria de código abierto.
+- **Cuándo elegirlo:** Casos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto.
+- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Python, docker-compose.yml, requirements.txt; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up` — fuente: https://github.com/DefectDojo/django-DefectDojo/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Clona el repo y levanta la versión de prueba con Docker Compose como indica el README; importa un informe de un escáner propio. Éxito: Ves los hallazgos deduplicados asociados a un producto y a una prueba.
+- **Combina con:** `semgrep`, `zaproxy` [16/pruebas], `trivy` [16/nube-contenedores], `nuclei` [16/pruebas], `dependency-track`, `dependency-check`
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 
