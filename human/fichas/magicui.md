@@ -2,7 +2,7 @@
 
 # ✨ magicui
 
-> Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
+> Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Se distribuye como registro de shadcn: `npx shadcn@latest add @magicui/<componen
 
 Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MIT (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/magicuidesign/magicui/blob/main/README.md) · [2](https://magicui.design/docs/installation) · [3](https://magicui.design/docs/mcp)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/magicuidesign/magicui/blob/main/README.md) · [2](https://magicui.design/docs/installation) · [3](https://magicui.design/docs/mcp) · [4](https://magicui.design/docs/components/bento-grid) · [5](https://pro.magicui.design/license)</sub>
 
 ## Ver similares
 
@@ -49,7 +49,7 @@ Grupo **Componentes animados para React**: magicui ocupa la posición 2 de 2 (al
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [React Bits](react-bits.md) ⭐ recomendado | 59 | Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas. |
-| 2 | **magicui** (esta ficha) | 53 | Si buscas esto: librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
+| 2 | **magicui** (esta ficha) | 53 | Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video. |
 
 ## Acceso, coste y equipo
 
@@ -105,9 +105,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| Quieres componer una sección React con una cuadrícula de funcionalidades, un bloque de video o un registro de componentes bajo MIT. | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
+**Limitaciones:** El repositorio de componentes publica MIT. Magic UI Pro aplica sus propios términos a sus secciones y plantillas de pago.
 
 ## Stack y modelos
 
@@ -119,7 +119,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [React Bits](react-bits.md) | 52k | La mayor colección open source de componentes React animados e interactivos para webs llamativas. |
+| [React Bits](react-bits.md) | 52k | Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. |
 
 ## Enlaces
 

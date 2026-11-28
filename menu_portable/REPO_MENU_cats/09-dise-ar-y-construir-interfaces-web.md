@@ -403,7 +403,7 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 ## `magicui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui
 
-**Qué es:** Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
+**Qué es:** Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.
 **Stack:** React; dependencias del componente elegido; proyecto de prueba
 **Acceso y costes:**
 - API de IA: Sin clave propia de API de IA en la ruta básica. Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios
@@ -423,7 +423,7 @@ Seguir la instalación original: https://magicui.design/docs
 
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación
+**Elige si:** Quieres componer una sección React con una cuadrícula de funcionalidades, un bloque de video o un registro de componentes bajo MIT.
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Añade un componente visual pequeño y comprueba el diseño en móvil y con movimiento reducido
 **Qué comprobar:** El contenido sigue siendo legible y el componente no desborda
@@ -713,7 +713,7 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 ## `react-bits`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
 
-**Qué es:** La mayor colección open source de componentes React animados e interactivos para webs llamativas.
+**Qué es:** Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React.
 **Stack:** React o Next.js; Node; dependencias de la variante del componente
 **Acceso y costes:**
 - API de IA: Sin clave propia de API de IA en la ruta básica. El repositorio usa MIT más Commons Clause; Pro y productos externos se revisan por separado; no requiere modelo

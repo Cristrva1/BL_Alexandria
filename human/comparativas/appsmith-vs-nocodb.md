@@ -6,7 +6,7 @@
 |---|---|---|
 | Qué hace | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas. |
 | ⭐ Estrellas | 41.3k | 65.5k |
-| Elígelo si… | Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API | Tu objetivo encaja con estos ejemplos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular |
+| Elígelo si… | Necesitas un panel interno sobre APIs o bases de datos, con lógica JavaScript, widgets propios o versionado con Git en el plan Free. | Tu objetivo encaja con estos ejemplos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular |
 | Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
 | API de IA | API de IA opcional | Sin clave propia de API de IA en la ruta básica |
@@ -18,7 +18,7 @@
 
 ## Regla práctica
 
-- Elige **Appsmith** si Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API.
+- Elige **Appsmith** si Necesitas un panel interno sobre APIs o bases de datos, con lógica JavaScript, widgets propios o versionado con Git en el plan Free.
 - Elige **NocoDB** si Tu objetivo encaja con estos ejemplos: Mantener un inventario sencillo con vistas para distintas personas; Revisar datos de clientes en una interfaz tabular.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 

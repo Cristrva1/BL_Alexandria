@@ -43,7 +43,7 @@ Estado en GitHub: activo · último push 2026-11-14 · licencia declarada Apache
 
 ## Ver similares
 
-Grupo **Catálogos de skills y plugins para agentes**: Claude Code Plugins Directory ocupa la posición 2 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Catálogos de skills y plugins para agentes**: Claude Code Plugins Directory ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -51,8 +51,7 @@ Grupo **Catálogos de skills y plugins para agentes**: Claude Code Plugins Direc
 | 2 | **Claude Code Plugins Directory** (esta ficha) | 62 | Si quieres solo plugins publicados por Anthropic. |
 | 3 | [Awesome Agent Skills](awesome-agent-skills.md) | 54 | Si quieres skills en formato portable para varios agentes. |
 | 4 | [wshobson/agents](wshobson-agents.md) | 51 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
-| 5 | [Awesome Claude Skills](awesome-claude-skills.md) | 48 | Si buscas skills para Claude ordenadas por tema. |
-| 6 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
+| 5 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
 
 ## Acceso, coste y equipo
 

@@ -1071,7 +1071,7 @@ npx sim-setup
 
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API
+**Elige si:** Buscas un constructor visual que pueda conectarse a servicios de trabajo y un cliente de macOS con navegador, terminal y acceso a carpetas autorizadas.
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Construye un flujo visual que recibe texto, lo resume y registra la salida
 **Qué comprobar:** La ejecución muestra cada bloque y el resumen final

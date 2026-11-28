@@ -4,7 +4,7 @@
 
 Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un proyecto real.
 
-249 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
+247 repos únicos · 8 subcategorías. [Ver en el explorador](../../docs/index.html#/area/configurar-claude-code).
 
 ## Primera configuración, paso a paso
 
@@ -12,6 +12,7 @@ Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un p
 2. **Prueba un proyecto pequeño.** Abre una carpeta de prueba y pide al agente que explique un archivo. Confirma qué permisos solicita y que puedes revisar los cambios.
 3. **Añade una mejora concreta.** Elige una sola skill o conexión de las subcategorías. Abre su ficha, lee la fuente y sigue la instalación indicada para este cliente.
 4. **Comprueba el resultado y el consumo.** Repite la tarea pequeña, revisa si la mejora ayuda y consulta el uso de tu cuenta. Los servicios externos tienen sus propios accesos y costes.
+5. **Consulta los comandos de SuperClaude.** Si tu instalación de Claude Code ya usa SuperClaude, la documentación del proyecto enumera sus comandos. [Ver los comandos /sc:* de SuperClaude](https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/82caa9e669217854692c8f9041e96503f39aff24/docs/user-guide/commands.md).
 
 [Fuente oficial del cliente](https://github.com/anthropics/claude-code#readme)
 
@@ -39,7 +40,7 @@ Cliente oficial y selección inicial de herramientas.
 
 Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 
-[Explorar 117 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
+[Explorar 114 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-skills)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -58,7 +59,6 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [archify](../fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | Sin clave propia de API de IA en la ruta básica |
 | [autoresearch](../fichas/autoresearch.md) | Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA. | Sin clave propia de API de IA en la ruta básica |
 | [autoskills](../fichas/autoskills.md) | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. | Sin clave propia de API de IA en la ruta básica |
-| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome LLM Apps](../fichas/awesome-llm-apps.md) | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. | API de IA opcional |
 | [blender-skills](../fichas/blender-skills.md) | Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP. | Sin clave propia de API de IA en la ruta básica |
 | [BMAD Method](../fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Sin clave propia de API de IA en la ruta básica |
@@ -86,7 +86,6 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [floorplan](../fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Sin clave propia de API de IA en la ruta básica |
 | [gemini-skills](../fichas/gemini-skills.md) | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. | Sin clave propia de API de IA en la ruta básica |
 | [genjutsu](../fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin clave propia de API de IA en la ruta básica |
-| [GitNexus](../fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica |
 | [gpt-researcher](../fichas/gpt-researcher.md) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | API de IA opcional |
 | [Gradio](../fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | API de IA opcional |
 | [graphify](../fichas/graphify.md) | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. | API de IA opcional |
@@ -146,7 +145,6 @@ Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
 | [Stop Slop](../fichas/stop-slop.md) | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. | Sin clave propia de API de IA en la ruta básica |
 | [streamlit](../fichas/streamlit.md) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. | API de IA opcional |
 | [strix](../fichas/strix.md) | Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT. | Depende de la ruta elegida |
-| [SuperClaude_Framework](../fichas/superclaude-framework.md) | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. | Sin clave propia de API de IA en la ruta básica |
 | [superpowers](../fichas/superpowers.md) | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. | Sin clave propia de API de IA en la ruta básica |
 | [taste-skill](../fichas/taste-skill.md) | Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios. | Sin clave propia de API de IA en la ruta básica |
 | [The Agency (agency-agents)](../fichas/agency-agents.md) | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. | Sin clave propia de API de IA en la ruta básica |
@@ -232,7 +230,7 @@ Conectar documentación, repositorios y herramientas de navegador.
 | [Puppeteer](../fichas/puppeteer.md) | Librería de Google para controlar Chrome y Firefox desde Node.js. | Sin clave propia de API de IA en la ruta básica |
 | [Pythia](../fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | Sin clave propia de API de IA en la ruta básica |
 | [rea](../fichas/rea.md) | Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de código. | Sin clave propia de API de IA en la ruta básica |
-| [React Bits](../fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica |
+| [React Bits](../fichas/react-bits.md) | Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. | Sin clave propia de API de IA en la ruta básica |
 | [Repomix](../fichas/repomix.md) | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. | Sin clave propia de API de IA en la ruta básica |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | Sin clave propia de API de IA en la ruta básica |
 | [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Depende de la ruta elegida |
@@ -322,7 +320,7 @@ Skills de oficio documentadas para Claude Code.
 
 Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función usa realmente el plan.
 
-[Explorar 49 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-integraciones)
+[Explorar 50 repos](../../docs/index.html#/explorar?area=configurar-claude-code&topic=claude-integraciones)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -330,6 +328,7 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 | [agentes-chat](../fichas/agentes-chat.md) | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas. | API de IA opcional |
 | [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | API de IA opcional |
 | [autoskills](../fichas/autoskills.md) | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. | Sin clave propia de API de IA en la ruta básica |
+| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio. | Sin clave propia de API de IA en la ruta básica |
 | [claude-agent-sdk-python](../fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | API de IA necesaria |
 | [claude-code-hooks-mastery](../fichas/claude-code-hooks-mastery.md) | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | API de IA opcional |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
@@ -464,7 +463,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [genjutsu](https://github.com/AThevon/genjutsu/blob/main/README.md), revisado el 2026-11-15.
 - [GhidraMCP](https://github.com/LaurieWired/GhidraMCP/blob/main/README.md), revisado el 2026-11-15.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server/blob/main/README.md), revisado el 2026-11-15.
-- [GitNexus](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md), revisado el 2026-11-15.
 - [gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md), revisado el 2026-11-15.
 - [skills](https://github.com/google/skills/blob/main/README.md), revisado el 2026-11-15.
 - [goose](https://github.com/aaif-goose/goose/blob/main/README.md), revisado el 2026-11-15.
@@ -594,7 +592,6 @@ Adaptadores del proyecto para modelos,sesiones o servicios; revisa qué función
 - [streamlit](https://github.com/streamlit/streamlit/blob/develop/README.md), revisado el 2026-11-15.
 - [strix](https://github.com/usestrix/strix/blob/main/README.md), revisado el 2026-11-15.
 - [supabase](https://github.com/supabase/supabase/blob/master/README.md), revisado el 2026-11-15.
-- [SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md), revisado el 2026-11-15.
 - [supermemory](https://github.com/supermemoryai/supermemory/blob/main/README.md), revisado el 2026-11-15.
 - [superpowers](https://github.com/obra/superpowers/blob/main/README.md), revisado el 2026-11-15.
 - [T3 Code](https://github.com/pingdotgg/t3code/blob/main/README.md), revisado el 2026-11-15.

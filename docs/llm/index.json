@@ -18,8 +18,8 @@
    "titulo": "Apps internas y bases de datos no-code",
    "repos": 7,
    "archivo": "categoria-1-internas.md",
-   "caracteres": 15991,
-   "tokens_estimados": 4569
+   "caracteres": 16020,
+   "tokens_estimados": 4578
   },
   {
    "cat": 1,
@@ -27,8 +27,8 @@
    "titulo": "Automatizar procesos y crear herramientas internas",
    "repos": 19,
    "archivo": "categoria-1.md",
-   "caracteres": 36233,
-   "tokens_estimados": 10353
+   "caracteres": 36262,
+   "tokens_estimados": 10361
   },
   {
    "cat": 2,
@@ -36,26 +36,26 @@
    "titulo": "Catálogos y marketplaces de skills",
    "repos": 15,
    "archivo": "categoria-2-catalogos.md",
-   "caracteres": 28686,
-   "tokens_estimados": 8197
+   "caracteres": 28158,
+   "tokens_estimados": 8046
   },
   {
    "cat": 2,
    "sub": "metodologia",
    "titulo": "Metodologías y harness para agentes de código",
-   "repos": 19,
+   "repos": 18,
    "archivo": "categoria-2-metodologia.md",
-   "caracteres": 34949,
-   "tokens_estimados": 9986
+   "caracteres": 32797,
+   "tokens_estimados": 9371
   },
   {
    "cat": 2,
    "sub": null,
    "titulo": "Skills, plugins y métodos para agentes",
-   "repos": 34,
+   "repos": 33,
    "archivo": "categoria-2.md",
-   "caracteres": 61107,
-   "tokens_estimados": 17460
+   "caracteres": 58413,
+   "tokens_estimados": 16690
   },
   {
    "cat": 3,
@@ -81,8 +81,8 @@
    "titulo": "Builders visuales y plataformas de agentes",
    "repos": 4,
    "archivo": "categoria-3-visual.md",
-   "caracteres": 10386,
-   "tokens_estimados": 2968
+   "caracteres": 10433,
+   "tokens_estimados": 2981
   },
   {
    "cat": 3,
@@ -99,8 +99,8 @@
    "titulo": "Construir agentes y coordinar equipos de IA",
    "repos": 36,
    "archivo": "categoria-3.md",
-   "caracteres": 62665,
-   "tokens_estimados": 17905
+   "caracteres": 62712,
+   "tokens_estimados": 17918
   },
   {
    "cat": 4,
@@ -162,8 +162,8 @@
    "titulo": "Servidores MCP destacados",
    "repos": 17,
    "archivo": "categoria-5-servidores.md",
-   "caracteres": 30134,
-   "tokens_estimados": 8610
+   "caracteres": 30071,
+   "tokens_estimados": 8592
   },
   {
    "cat": 5,
@@ -180,8 +180,8 @@
    "titulo": "Conectar herramientas con MCP",
    "repos": 27,
    "archivo": "categoria-5.md",
-   "caracteres": 45387,
-   "tokens_estimados": 12968
+   "caracteres": 45324,
+   "tokens_estimados": 12950
   },
   {
    "cat": 6,
@@ -225,8 +225,8 @@
    "titulo": "Entender y empaquetar código para agentes",
    "repos": 7,
    "archivo": "categoria-7-codigo.md",
-   "caracteres": 14629,
-   "tokens_estimados": 4180
+   "caracteres": 14480,
+   "tokens_estimados": 4138
   },
   {
    "cat": 7,
@@ -252,8 +252,8 @@
    "titulo": "Entender código y comprobar su calidad",
    "repos": 26,
    "archivo": "categoria-7.md",
-   "caracteres": 40214,
-   "tokens_estimados": 11490
+   "caracteres": 40065,
+   "tokens_estimados": 11448
   },
   {
    "cat": 8,
@@ -306,8 +306,8 @@
    "titulo": "Componentes, iconos y sistemas de diseño",
    "repos": 15,
    "archivo": "categoria-9-componentes.md",
-   "caracteres": 25224,
-   "tokens_estimados": 7207
+   "caracteres": 25293,
+   "tokens_estimados": 7227
   },
   {
    "cat": 9,
@@ -342,8 +342,8 @@
    "titulo": "Diseñar y construir interfaces web",
    "repos": 33,
    "archivo": "categoria-9.md",
-   "caracteres": 54254,
-   "tokens_estimados": 15502
+   "caracteres": 54323,
+   "tokens_estimados": 15521
   },
   {
    "cat": 10,

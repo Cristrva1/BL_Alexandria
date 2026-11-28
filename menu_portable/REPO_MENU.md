@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Revisión del índice: 2026-11-27 · 966 repos curados · Documento 100% para IA.
+> Revisión del índice: 2026-11-27 · 965 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **966 repos** de IA y
+proyecto concreto. Tienes un menú curado de **965 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -52,7 +52,7 @@ LEYENDA de columnas del índice:
 
 | Herramienta | Repos que le sirven |
 |---|---|
-| Claude Code | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `claude-seo`, `agency-agents` |
+| Claude Code | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `claude-mem`, `claude-seo`, `agency-agents` |
 | Codex | `codex`, `agent-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`, `spec-kit`, `marketingskills`, `taste-skill` |
 | Antigravity | `antigravity-awesome-skills`, `awesome-agent-skills`, `prompt-master`, `stitch-skills` |
 | gemini-cli | `gemini-cli`, `awesome-agent-skills`, `antigravity-awesome-skills`, `stitch-skills` |
@@ -107,13 +107,13 @@ Configura y comprueba también embeddings, herramientas, memoria y búsqueda; lo
 
 ### Análisis de repos grandes
 **Meta:** Que un agente de código entienda una base de código enorme sin gastar todo su contexto.
-**Recursos del recorrido completo:** `repomix`, `codegraph`, `gitnexus`, `graphify`, `claude-code`
+**Recursos del recorrido completo:** `repomix`, `codegraph`, `codebase-memory-mcp`, `gitnexus`, `graphify`, `claude-code`
 **Empieza con:** `repomix`, `claude-code`
 **Prepara:** Un repo propio y una pregunta concreta sobre su código
 **Primera prueba propuesta:** Empaqueta solo una parte y pide ubicar una función con referencias
 **Qué comprobar:** Puedes abrir los archivos citados y comprobar la explicación
-Revisa exclusiones y secretos antes de compartir código; los grafos son otra ampliación y tienen sus propias licencias
-**Cómo:** CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. Claude Code (o Codex) usa todo eso como contexto barato.
+Revisa las exclusiones y los secretos antes de compartir archivos. Usa el índice o visor que responda a tu pregunta y revisa su licencia.
+**Cómo:** Empieza con Repomix para empaquetar una parte del repositorio y dársela al agente. Añade CodeGraph para consultas repetidas de símbolos y llamadas. Codebase Memory MCP ayuda a revisar el impacto de cambios en Git. Graphify incorpora documentación al grafo. GitNexus queda como referencia opcional para explorar flujos y previsualizar renombrados con el índice del CLI.
 
 ### Marketing de agencia
 **Meta:** Operar campañas, contenido y email a escala con agentes y herramientas propias.
@@ -234,20 +234,20 @@ Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.m
 - `trigger-dev` [P|hyb|M|?] — Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. — tags: automation,agents,typescript — alt: windmill,kestra
 - `windmill` [P|loc|M|+] — Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. — tags: automation,agents,rust,docker — alt: kestra,trigger-dev
 
-### 2. Skills, plugins y métodos para agentes (34)
+### 2. Skills, plugins y métodos para agentes (33)
 Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 
 - `agent-skills` [S|loc|E|+] — Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar — tags: skills,coding-agent — alt: superpowers
 - `agent-toolkit` [S|cld|E|+] — Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documen — tags: agents,skills,python
 - `andrej-karpathy-skills` [S|cld|E|+] — Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en o — tags: skills,coding-agent
 - `anthropic-skills` [S|cld|E|+] — Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especific — tags: skills,docs,pdf,coding-agent,python — prov: anthropic
-- `antigravity-awesome-skills` [S|hyb|E|+] — Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada An — tags: skills,coding-agent,mcp,javascript — alt: awesome-agent-skills,awesome-claude-skills,wshobson-agents
+- `antigravity-awesome-skills` [S|hyb|E|+] — Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada An — tags: skills,coding-agent,mcp,javascript — alt: awesome-agent-skills,wshobson-agents
 - `autoskills` [A|loc|E|+] — CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. — tags: catalogos,ruby
-- `awesome-agent-skills` [D|hyb|E|?] — Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comu — tags: skills,coding-agent,agents — alt: antigravity-awesome-skills,awesome-claude-skills
+- `awesome-agent-skills` [D|hyb|E|?] — Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comu — tags: skills,coding-agent,agents — alt: antigravity-awesome-skills
 - `awesome-agents` [D|hyb|E|?] — Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. — tags: catalogos
-- `awesome-claude-code` [D|cld|E|?] — Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alter — tags: coding-agent,skills,agents — prov: anthropic — alt: awesome-claude-skills
+- `awesome-claude-code` [D|cld|E|?] — Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alter — tags: coding-agent,skills,agents — prov: anthropic
 - `awesome-claude-code-subagents` [D|loc|M|?] — Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio pr
-- `awesome-claude-skills` [D|cld|E|?] — Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para con — tags: skills,automation,coding-agent — prov: anthropic — alt: awesome-agent-skills,antigravity-awesome-skills,awesome-claude-code
+- `awesome-claude-skills` [D|cld|E|?] — Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP d — tags: skills,automation,coding-agent — prov: anthropic
 - `awesome-copilot` [S|cld|E|+] — Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub C — tags: skills,coding-agent,prompts,mcp
 - `bmad-method` [S|loc|E|+] — Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. — tags: coding-agent,skills,agents — alt: spec-kit
 - `book-to-skill` [S|loc|M|+] — Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trab — tags: metodologia,skill,python
@@ -256,20 +256,19 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `claude-plugins-official` [S|cld|E|?] — Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. — tags: skills,coding-agent,mcp — prov: anthropic — alt: wshobson-agents
 - `claude-token-efficient` [S|loc|E|+] — Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. — tags: metodologia,python — tools: claude-code
 - `codex-plugin-cc` [S|cld|E|+] — Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. — tags: metodologia,javascript — prov: openai — tools: claude-code
-- `ecc` [S|loc|H|+] — Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacida — tags: automation,skills,javascript — alt: superclaude-framework,superpowers,gstack
+- `ecc` [S|loc|H|+] — Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacida — tags: automation,skills,javascript — alt: superpowers,gstack
 - `elephant-goldfish-model` [S|loc|M|+] — Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complem — tags: metodologia,skill,python
 - `gemini-skills` [S|hyb|E|+] — Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. — tags: catalogos,gemini,gemini-api,skills,python — prov: google
 - `google-skills` [S|loc|M|+] — Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatib — tags: catalogos,skill,python
 - `grok-plugin-claude-code` [S|cld|E|+] — Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. — tags: metodologia,ai-agents,claude-code,grok,grok-cli,plugin,xai,javascript — prov: xai — tools: claude-code
-- `gstack` [S|loc|M|+] — Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude — tags: metodologia,skill,typescript — alt: superclaude-framework,superpowers,ecc
+- `gstack` [S|loc|M|+] — Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude — tags: metodologia,skill,typescript — alt: superpowers,ecc
 - `humans-md-plugins` [S|loc|M|?] — Carga preferencias de trabajo de un archivo HUMANS.md al iniciar una sesión en asistentes compatibles con el p
 - `plugins` [D|loc|E|?] — Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. — tags: catalogos,reference,typescript
 - `ponytail` [S|loc|E|+] — Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribe — tags: skills,coding-agent
 - `shadcn-improve` [S|loc|M|?] — Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión
 - `skills` [S|cld|E|+] — Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plu — tags: skills,coding-agent
 - `spec-kit` [S|loc|E|+] — Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. — tags: coding-agent,skills,python — alt: bmad-method,claude-task-master
-- `superclaude-framework` [S|hyb|M|+] — Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. — tags: metodologia,python — tools: claude-code — alt: superpowers,ecc,gstack
-- `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills,superclaude-framework,ecc,gstack
+- `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills,ecc,gstack
 - `wshobson-agents` [S|hyb|E|+] — Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otr — tags: skills,coding-agent,agents,python — alt: claude-plugins-official,antigravity-awesome-skills,agency-agents
 
 ### 3. Construir agentes y coordinar equipos de IA (36)
@@ -371,7 +370,7 @@ Detalle: `REPO_MENU_cats/05-conectar-herramientas-con-mcp.md`
 - `neo4j-mcp` [R|loc|M|+] — Servidor MCP oficial de Neo4j para que un asistente lea el esquema de un grafo y ejecute consultas Cypher de l — tags: mcp,graph,neo4j,cypher,go — alt: mcp-neo4j
 - `playwright-mcp` [R|loc|E|+] — Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. — tags: mcp,browser,typescript — prov: mcp — alt: chrome-devtools-mcp,browser-use,browser-harness
 - `public-apis` [D|cld|E|?] — Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyect — tags: mcp,python
-- `serena` [R|loc|E|+] — Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. — tags: mcp,coding-agent,code,python — prov: mcp — alt: codegraph,gitnexus,codebase-memory-mcp,graphify
+- `serena` [R|loc|E|+] — Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. — tags: mcp,coding-agent,code,python — prov: mcp — alt: codegraph,codebase-memory-mcp,graphify
 - `servers` [D|hyb|M|?] — Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enl — tags: mcp,typescript
 - `unity-mcp` [R|loc|M|?] — Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Un — tags: servidores,mcp,c
 
@@ -416,13 +415,13 @@ Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 - `ast-grep` [A|loc|E|+] — CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. — tags: code,security,rust — alt: semgrep
 - `biome` [A|loc|E|+] — Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON, CSS, GraphQL y más, usable por — tags: code,javascript,typescript,rust
 - `cli` [A|cld|E|+] — CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. — tags: code,go
-- `codebase-memory-mcp` [R|loc|E|+] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para — tags: code,mcp,memory — prov: mcp — alt: codegraph,gitnexus,serena,graphify
-- `codegraph` [R|loc|E|+] — CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada arc — tags: code,typescript — alt: codebase-memory-mcp,serena,gitnexus,graphify
+- `codebase-memory-mcp` [R|loc|E|+] — Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para — tags: code,mcp,memory — prov: mcp — alt: codegraph,serena,graphify
+- `codegraph` [R|loc|E|+] — CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada arc — tags: code,typescript — alt: codebase-memory-mcp,serena,graphify
 - `floorplan` [S|loc|M|+] — Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un pr — tags: codigo,skill,javascript
 - `fzf` [A|loc|E|+] — Buscador difuso de línea de comandos y kit de interfaces de terminal para seleccionar archivos, historial o cu — tags: cli,go,terminal
 - `gitleaks` [A|loc|E|+] — Detector de secretos (contraseñas, claves de API, tokens) en repositorios git, archivos y stdin, usable como h — tags: security,go,cli,code — alt: trufflehog
-- `gitnexus` [A|hyb|E|+] — Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar — tags: code,typescript — alt: repomix,codebase-memory-mcp,serena,codegraph,graphify
-- `graphify` [R|hyb|M|+] — CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AS — tags: code,python — alt: codegraph,gitnexus,serena,codebase-memory-mcp
+- `gitnexus` [A|hyb|E|+] — Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se c — tags: code,typescript
+- `graphify` [R|hyb|M|+] — CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AS — tags: code,python — alt: codegraph,serena,codebase-memory-mcp
 - `hishel` [L|loc|M|?] — Añade caché a peticiones HTTP de Python con políticas de expiración y adaptadores de almacenamiento reutilizab
 - `lazygit` [A|loc|E|+] — Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase interactivo, cherry-pick y gestió — tags: cli,go,git,terminal
 - `npkill` [A|loc|E|?] — Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de
@@ -430,7 +429,7 @@ Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 - `openai-python` [L|cld|E|+] — SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. — tags: code,python
 - `pre-commit` [A|loc|E|?] — Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y — tags: code,python,cli,git
 - `pybreaker` [L|loc|M|?] — Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comp
-- `repomix` [A|loc|E|+] — Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. — tags: code,coding-agent,typescript — alt: gitnexus
+- `repomix` [A|loc|E|+] — Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. — tags: code,coding-agent,typescript
 - `requests-cache` [L|loc|M|?] — Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas y reducir viajes repetidos a un
 - `ripgrep` [A|loc|E|+] — Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta .gitignore y omite archivos ocult — tags: cli,rust,code,search
 - `ruff` [A|loc|E|+] — Linter y formateador de Python extremadamente rápido escrito en Rust, compatible con Flake8, isort y Black, co — tags: code,python,rust,cli
@@ -492,7 +491,7 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `json-render` [L|hyb|M|+] — Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el d — tags: ia-ui,library,typescript
 - `konva` [L|loc|M|+] — Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivo — tags: componentes,library,typescript
 - `lucide` [L|loc|E|+] — Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. — tags: ui,design,typescript
-- `magicui` [L|loc|E|?] — Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces mod — tags: ui — alt: react-bits
+- `magicui` [L|loc|E|?] — Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloq — tags: ui — alt: react-bits
 - `mantine` [L|loc|E|?] — Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y no — tags: ui,typescript,react,library — alt: chakra-ui,mui
 - `mui` [L|loc|E|?] — Librería de componentes React completa que implementa Material Design de Google. — tags: ui,react,javascript — alt: ant-design,ui,heroui,chakra-ui,mantine
 - `normalize.css` [L|loc|E|+] — Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. — tags: ui,design
@@ -502,7 +501,7 @@ Detalle: `REPO_MENU_cats/09-dise-ar-y-construir-interfaces-web.md`
 - `penpot` [A|loc|H|?] — Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que qui — tags: design,docker
 - `plasmic` [A|hyb|M|+] — Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin per — tags: design,typescript
 - `radix-primitives` [L|loc|E|?] — Componentes React sin estilos y accesibles para construir sistemas de diseño propios. — tags: ui,react,typescript
-- `react-bits` [L|loc|E|+] — La mayor colección open source de componentes React animados e interactivos para webs llamativas. — tags: ui,react,javascript — alt: magicui
+- `react-bits` [L|loc|E|+] — Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz — tags: ui,react,javascript — alt: magicui
 - `screenshot-to-code` [A|cld|E|+] — Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. — tags: ui,vision,code,python — prov: openai,anthropic,google — alt: stitch-sdk
 - `stitch-sdk` [L|cld|E|+] — SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. — tags: ui,design,typescript — prov: google — alt: screenshot-to-code
 - `storybook` [A|loc|E|?] — Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, — tags: ui,typescript,javascript,docs

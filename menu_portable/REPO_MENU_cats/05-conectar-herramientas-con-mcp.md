@@ -759,8 +759,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide localizar una función por símbolo y enumera sus referencias antes de editar
 **Qué comprobar:** El agente identifica la definición y usos reales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`, `context7`, `superclaude-framework`
-**Alternativas (elige una):** `codegraph`, `gitnexus`, `codebase-memory-mcp`, `graphify`
+**Combina con:** `claude-code`, `codex`, `context7`
+**Alternativas (elige una):** `codegraph`, `codebase-memory-mcp`, `graphify`
 
 ## `servers`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=mcp,typescript

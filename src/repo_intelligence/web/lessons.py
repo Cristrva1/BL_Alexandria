@@ -483,19 +483,10 @@ RECIPE_LESSONS: dict[str, dict] = {
     },
     "analisis-de-repos-grandes": {
         "lesson": (
-            "Para que un asistente entienda un repo enorme sin leerlo entero hace "
-            "falta un índice. El grafo de conocimiento es otra capa, y en esta receta "
-            "se cubre con una sola pieza: graphify o graphrag."
+            "Empaqueta una parte del repo con Repomix para darle contexto al agente. "
+            "Cuando necesites consultar símbolos y llamadas repetidamente, añade CodeGraph. "
+            "Para revisar cambios de Git o explorar flujos visualmente, consulta las ampliaciones."
         ),
-        "pick_one": [
-            ["graphify", "graphrag"],
-        ],
-        "steps": {
-            "codegraph": "Índice estructural del código. Empieza aquí cuando el contexto del agente sale caro.",
-            "graphify": "Mapa consultable del proyecto. Misma capa que graphrag: elige una.",
-            "graphrag": "Saca entidades y relaciones de un corpus con un LLM. Cuesta más de indexar. Alternativa de graphify.",
-            "gitnexus": "Para mirar un repo concreto de forma visual. Si el problema es indexar muchos repos, la pieza es codegraph.",
-        },
     },
     "marketing-de-agencia": {
         "lesson": (

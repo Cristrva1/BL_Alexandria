@@ -152,7 +152,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes abrir las referencias y relaciones del grafo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `repomix`, `codex`
-**Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `graphify`
+**Alternativas (elige una):** `codegraph`, `serena`, `graphify`
 
 ## `codegraph`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=code,typescript
@@ -183,7 +183,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Los resultados identifican definiciones y relaciones comprobables
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `headroom`, `floorplan`
-**Alternativas (elige una):** `codebase-memory-mcp`, `serena`, `gitnexus`, `graphify`
+**Alternativas (elige una):** `codebase-memory-mcp`, `serena`, `graphify`
 
 ## `floorplan`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=codigo,skill,javascript
@@ -280,7 +280,7 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 ## `gitnexus`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=code,typescript
 
-**Qué es:** Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.
+**Qué es:** Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI.
 **Stack:** Node 22.18+ en 22.x o 24.11+; repositorio de prueba
 **Acceso y costes:**
 - API de IA: Sin clave propia de API de IA en la ruta básica. El análisis no exige modelo; la licencia PolyForm Noncommercial limita uso comercial y ofrece licencia aparte
@@ -304,13 +304,12 @@ npx gitnexus setup
 
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización
+**Elige si:** Necesitas seguir un flujo de ejecución en el visor y revisar un renombrado semántico sobre el mismo índice.
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
 **Primera prueba propuesta:** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función
 **Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `opencode`, `codex`
-**Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`, `codegraph`, `graphify`
 
 ## `graphify`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=code,python
@@ -342,7 +341,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Cada relación se puede contrastar con un archivo o símbolo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tree-sitter`, `ollama`, `graphrag`
-**Alternativas (elige una):** `codegraph`, `gitnexus`, `serena`, `codebase-memory-mcp`
+**Alternativas (elige una):** `codegraph`, `serena`, `codebase-memory-mcp`
 
 ## `hishel`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -580,7 +579,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comprobar archivos incluidos, tamaño y exclusiones
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `tree-sitter`, `markitdown`, `codebase-memory-mcp`
-**Alternativas (elige una):** `gitnexus`
 
 ## `requests-cache`
 role=library · exec=local · setup=medium · mcp=False · prov=—

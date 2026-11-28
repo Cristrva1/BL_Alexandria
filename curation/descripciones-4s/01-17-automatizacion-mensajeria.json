@@ -651,7 +651,9 @@
    "notas": "Alternativas (elige una): tooljet, budibase, nocodb.",
    "fuentes": [
     "https://github.com/appsmithorg/appsmith/blob/release/README.md",
-    "https://docs.appsmith.com/connect-data/reference/querying-postgres"
+    "https://docs.appsmith.com/connect-data/reference/querying-postgres",
+    "https://docs.appsmith.com/advanced-concepts/version-control-with-git",
+    "https://docs.appsmith.com/getting-started/setup/manage-plans/downgrade-plan?downgrade-plan-type=remove-license-key"
    ],
    "github": {
     "name_with_owner": "appsmithorg/appsmith",

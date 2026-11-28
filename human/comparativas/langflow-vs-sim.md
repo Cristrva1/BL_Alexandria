@@ -6,7 +6,7 @@
 |---|---|---|
 | Qué hace | Constructor visual de flujos LLM/agentes construido sobre LangChain. | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. |
 | ⭐ Estrellas | 157k | 30.1k |
-| Elígelo si… | Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP | Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP | Buscas un constructor visual que pueda conectarse a servicios de trabajo y un cliente de macOS con navegador, terminal y acceso a carpetas autorizadas. |
 | Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
 | API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
@@ -19,7 +19,7 @@
 ## Regla práctica
 
 - Elige **langflow** si Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP.
-- Elige **Sim** si Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API.
+- Elige **Sim** si Buscas un constructor visual que pueda conectarse a servicios de trabajo y un cliente de macOS con navegador, terminal y acceso a carpetas autorizadas.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

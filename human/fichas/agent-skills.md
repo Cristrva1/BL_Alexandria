@@ -43,7 +43,7 @@ Estado en GitHub: activo · último push 2026-11-14 · última versión publicad
 
 ## Ver similares
 
-Grupo **Metodologías y harness para agentes de código**: Agent Skills (Addy Osmani) ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Metodologías y harness para agentes de código**: Agent Skills (Addy Osmani) ocupa la posición 3 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -51,7 +51,6 @@ Grupo **Metodologías y harness para agentes de código**: Agent Skills (Addy Os
 | 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
 | 3 | **Agent Skills (Addy Osmani)** (esta ficha) | 64 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
 | 4 | [superpowers](superpowers.md) | 59 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
-| 5 | [SuperClaude_Framework](superclaude-framework.md) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo
 

@@ -43,7 +43,7 @@ Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se 
 
 [OpenHands](openhands.md)
 
-**Notas:** Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
+**Notas:** Alternativas (elige una): superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.2.3 (2026-10-01) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -51,7 +51,7 @@ Estado en GitHub: activo · último push 2026-11-15 · última versión publicad
 
 ## Ver similares
 
-Grupo **Metodologías y harness para agentes de código**: ECC ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Metodologías y harness para agentes de código**: ECC ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -59,7 +59,6 @@ Grupo **Metodologías y harness para agentes de código**: ECC ocupa la posició
 | 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
 | 3 | [Agent Skills (Addy Osmani)](agent-skills.md) | 64 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
 | 4 | [superpowers](superpowers.md) | 59 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
-| 5 | [SuperClaude_Framework](superclaude-framework.md) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo
 
@@ -136,7 +135,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
 | [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 | [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 

@@ -153,7 +153,7 @@
      "reciproca_de": "codebase-memory-mcp"
     }
    ],
-   "notas": "Alternativas (elige una): gitnexus.",
+   "notas": "Empaqueta archivos y contexto del repositorio para enviarlos al agente.",
    "fuentes": [
     "https://github.com/yamadashy/repomix/blob/main/README.md",
     "https://repomix.com"
@@ -194,7 +194,7 @@
      "orden_instalacion": "Usa Graphify para el código y GraphRAG para la documentación."
     }
    ],
-   "notas": "Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
+   "notas": "Alternativas (elige una): codegraph, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
    "fuentes": [
     "https://github.com/Graphify-Labs/graphify/blob/v8/README.md"
    ],
@@ -235,7 +235,7 @@
      "reciproca_de": "floorplan"
     }
    ],
-   "notas": "Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.",
+   "notas": "Alternativas (elige una): codebase-memory-mcp, serena, graphify. Telemetría anónima activada.",
    "fuentes": [
     "https://github.com/colbymchenry/codegraph/blob/main/README.md",
     "https://colbymchenry.github.io/codegraph/"
@@ -271,7 +271,7 @@
      "orden_instalacion": "Ejecuta `install` para configurar Codex como cliente."
     }
    ],
-   "notas": "Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
+   "notas": "Alternativas (elige una): codegraph, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
    "fuentes": [
     "https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md"
    ],
@@ -287,8 +287,8 @@
   },
   "gitnexus": {
    "que_es": "GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION). Es muy activo (~49k estrellas, v1.6.12).",
-   "que_hace": "Indexa símbolos, llamadas, dependencias y flujos de ejecución para responder preguntas como dónde se usa algo o qué afecta un cambio. Se usa desde las herramientas MCP del agente, la CLI o un explorador visual del grafo. Reporta ambigüedad y cobertura del índice.",
-   "como_lo_hace": "Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+.",
+   "que_hace": "Indexa dependencias, referencias y flujos de ejecución. Permite recorrer el grafo en el navegador y previsualizar renombrados semánticos.",
+   "como_lo_hace": "Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+. El visor se conecta a gitnexus serve y reutiliza el índice existente.",
    "combina_con": [
     {
      "id": "claude-code",
@@ -312,9 +312,11 @@
      "reciproca_de": "tools"
     }
    ],
-   "notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
+   "notas": "Referencia para explorar flujos y revisar renombrados con el mismo índice. Consulta la licencia no comercial y las condiciones del proveedor.",
    "fuentes": [
-    "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md"
+    "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md",
+    "https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/docs/deployment.md",
+    "https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/LICENSE"
    ],
    "github": {
     "name_with_owner": "abhigyanpatwari/GitNexus",

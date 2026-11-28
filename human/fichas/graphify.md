@@ -35,7 +35,7 @@ Se instala con `pip install graphifyy` o `uv tool install graphifyy` (paquete of
 | [Ollama](ollama.md) | Extra `[ollama]` para inferencia local. | Instala `graphifyy[ollama]` y arranca Ollama. |
 | [graphrag](graphrag.md) | Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura) | Usa Graphify para el código y GraphRAG para la documentación. |
 
-**Notas:** Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.
+**Notas:** Alternativas (elige una): codegraph, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.111 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
@@ -43,7 +43,7 @@ Estado en GitHub: activo · último push 2026-11-15 · última versión publicad
 
 ## Ver similares
 
-Grupo **Mapas e índices de código para agentes**: graphify ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Mapas e índices de código para agentes**: graphify ocupa la posición 1 de 4 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -51,7 +51,6 @@ Grupo **Mapas e índices de código para agentes**: graphify ocupa la posición 
 | 2 | [codegraph](codegraph.md) | 66 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
 | 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
 | 4 | [Repomix](repomix.md) | 53 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
-| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 
@@ -131,7 +130,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
-| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
 | [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
 | [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 

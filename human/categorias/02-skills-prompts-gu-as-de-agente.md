@@ -4,7 +4,7 @@
 
 Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.
 
-34 repos · 2 secciones
+33 repos · 2 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 15 repos
-- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 19 repos
+- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 18 repos
 
 ## Catálogos y marketplaces de skills
 
@@ -27,7 +27,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Anthropic Skills](../fichas/anthropic-skills.md) | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. | Tu objetivo encaja con estos ejemplos: Extraer campos de un formulario PDF propio; Crear una presentación usando las instrucciones de la skill de diapositivas | Sin clave propia de API de IA en la ruta básica |
 | [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Tu objetivo encaja con estos ejemplos: Añadir una herramienta de revisión al flujo de desarrollo; Conectar un servicio mediante un plugin publicado en el marketplace oficial | Sin clave propia de API de IA en la ruta básica |
-| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | Tu objetivo encaja con estos ejemplos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas | Sin clave propia de API de IA en la ruta básica |
+| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio. | Ya usas Composio y buscas una guía concreta para trabajar con un servicio como Calendar o Zoho Books. | Sin clave propia de API de IA en la ruta básica |
 | [Awesome Claude Code](../fichas/awesome-claude-code.md) | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | Tu objetivo encaja con estos ejemplos: Encontrar ejemplos para personalizar una sesión de Claude Code; Comparar herramientas que muestran el uso del agente | Sin clave propia de API de IA en la ruta básica |
 | [Agentic Awesome Skills (AAS)](../fichas/antigravity-awesome-skills.md) | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. | Tu objetivo encaja con estos ejemplos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad | Sin clave propia de API de IA en la ruta básica |
 | [wshobson/agents](../fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores | Sin clave propia de API de IA en la ruta básica |
@@ -56,7 +56,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [BMAD Method](../fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Tu objetivo encaja con estos ejemplos: Convertir una idea de producto en un primer cambio acotado; Revisar requisitos y decisiones antes de implementar una función | Sin clave propia de API de IA en la ruta básica |
 | [book-to-skill](../fichas/book-to-skill.md) | Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | Tu objetivo encaja con estos ejemplos: Preparar una guía de consulta a partir de documentación interna; Convertir notas técnicas propias en instrucciones reutilizables del agente | Sin clave propia de API de IA en la ruta básica |
 | [codex-plugin-cc](../fichas/codex-plugin-cc.md) | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. | Tu objetivo encaja con estos ejemplos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal | API de IA opcional |
-| [SuperClaude_Framework](../fichas/superclaude-framework.md) | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. | Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes | Sin clave propia de API de IA en la ruta básica |
 | [elephant-goldfish-model](../fichas/elephant-goldfish-model.md) | Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias. | Tu objetivo encaja con estos ejemplos: Documentar alternativas para una funcionalidad antes de elegir una; Revisar una especificación con un contexto de lectura renovado | Sin clave propia de API de IA en la ruta básica |
 | [Improve de shadcn](../fichas/shadcn-improve.md) | Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana. | Tu objetivo encaja con estos ejemplos: Separar el análisis de un formulario y su corrección.; Convertir un diagnóstico de rendimiento en tareas verificables. | Sin clave propia de API de IA en la ruta básica |
 | [claude-token-efficient](../fichas/claude-token-efficient.md) | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. | Tu objetivo encaja con estos ejemplos: Reducir respuestas repetitivas en una sesión larga; Mantener un estilo de comunicación conciso para tareas de código | Sin clave propia de API de IA en la ruta básica |

@@ -2,7 +2,7 @@
 
 # 🗂️ Awesome Claude Skills
 
-> Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.
+> Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,15 +16,15 @@
 
 ## ¿Qué es?
 
-Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.
+Colección de ComposioHQ con un índice general de recursos y 832 archivos SKILL.md en la carpeta de automatizaciones publicada en el commit revisado.
 
 ## ¿Qué hace?
 
-Organiza skills por categorías (documentos, desarrollo, datos, negocio y marketing, comunicación, creatividad, productividad, seguridad, automatización vía Composio) y explica qué es una skill frente a un MCP o una herramienta. Destaca su plugin `connect-apps`, que permite a Claude enviar correos, crear incidencias o publicar en Slack a través de más de 1.000 aplicaciones.
+Reúne guías de automatización para buscar acciones de un servicio en Composio y conectar la cuenta. Incluye un índice de recursos y el plugin connect-apps.
 
 ## ¿Cómo lo hace?
 
-Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin-dir ./connect-apps-plugin`, se configura con `/connect-apps:setup` y pide una clave de API de Composio.
+Las guías de automatización revisadas usan Rube MCP de Composio. El plugin connect-apps para Claude Code es una ruta distinta y pide una clave de Composio.
 
 ## ¿Con qué otros repos se combina?
 
@@ -34,24 +34,11 @@ Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin
 | [Claude Code](claude-code.md) | Destino principal del plugin y de muchas skills. | Carga el plugin con `--plugin-dir`. |
 | [SkillSpector](skillspector.md) | Auditar las skills de terceros enlazadas antes de usarlas (combinación por arquitectura). | Audita cada skill antes de instalarla. |
 
-**Notas:** Alternativas (elige una): awesome-agent-skills, antigravity-awesome-skills, awesome-claude-code. Dar acceso a 1.000 apps amplía mucho lo que el agente puede hacer: limita los permisos.
+**Notas:** Referencia para quienes usan Composio. El README declara Apache 2.0 y señala que algunas skills tienen su propia licencia.
 
 Estado en GitHub: activo · último push 2026-09-18 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)</sub>
-
-## Ver similares
-
-Grupo **Catálogos de skills y plugins para agentes**: Awesome Claude Skills ocupa la posición 5 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
-
-| # | Repo | Puntuación | Cuándo elegirlo |
-|---:|---|---:|---|
-| 1 | [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) ⭐ recomendado | 68 | Si quieres el catálogo más grande de skills instalables para varios agentes. |
-| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 62 | Si quieres solo plugins publicados por Anthropic. |
-| 3 | [Awesome Agent Skills](awesome-agent-skills.md) | 54 | Si quieres skills en formato portable para varios agentes. |
-| 4 | [wshobson/agents](wshobson-agents.md) | 51 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
-| 5 | **Awesome Claude Skills** (esta ficha) | 48 | Si buscas skills para Claude ordenadas por tema. |
-| 6 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md) · [2](https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills) · [3](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md)</sub>
 
 ## Acceso, coste y equipo
 
@@ -78,16 +65,16 @@ Material para leer. [Entender los términos](../vocabulario.md).
 - Navegador
 - agente compatible solo al utilizar una skill seleccionada
 
-1. Elige una skill del listado y abre su archivo o repositorio de origen.
-2. Comprueba: Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente.
+1. Abre la guía del servicio que quieras conectar y comprueba qué cuenta necesita.
+2. Identifica una operación pequeña, como revisar los próximos eventos de un calendario de prueba.
 
-Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
+Para otros servicios, ver README oficial y abrir la guía de Rube MCP correspondiente.
 
-[Instrucciones originales de instalación](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)
+[Instrucciones originales de instalación](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Awesome Claude Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Awesome Claude Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 
@@ -106,23 +93,15 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| Tu objetivo encaja con estos ejemplos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| Ya usas Composio y buscas una guía concreta para trabajar con un servicio como Calendar o Zoho Books. | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos
+**Limitaciones:** Las guías de Rube MCP necesitan una conexión activa del servicio. El plugin connect-apps tiene su propia configuración. Consulta la licencia de cada skill.
 
 ## Stack y modelos
 
 - **Stack:** Navegador;  agente compatible solo al utilizar una skill seleccionada
 - **Etiquetas:** `skills` `automation` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
-| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
-| [Awesome Claude Code](awesome-claude-code.md) | 58k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
 
 ## Enlaces
 

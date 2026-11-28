@@ -177,14 +177,12 @@ grupos:
   - antigravity-awesome-skills
   - awesome-agent-skills
   - awesome-claude-code
-  - awesome-claude-skills
   - claude-plugins-official
   - wshobson-agents
   cuando:
     antigravity-awesome-skills: Si quieres el catálogo más grande de skills instalables para varios agentes.
     awesome-agent-skills: Si quieres skills en formato portable para varios agentes.
     awesome-claude-code: Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos.
-    awesome-claude-skills: Si buscas skills para Claude ordenadas por tema.
     claude-plugins-official: Si quieres solo plugins publicados por Anthropic.
     wshobson-agents: Si quieres subagentes y plugins listos para Claude Code por especialidad.
 - id: g-conversion-de-documentos-a-markdown-json-para-ia
@@ -211,13 +209,11 @@ grupos:
   - agent-skills
   - ecc
   - gstack
-  - superclaude-framework
   - superpowers
   cuando:
     agent-skills: Si quieres skills de ingeniería portables en el formato Agent Skills.
     ecc: Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes.
     gstack: Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code.
-    superclaude-framework: Si quieres comandos y personas para Claude Code organizados por fase.
     superpowers: Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada.
 - id: g-apis-y-librerias-no-oficiales-de-whatsapp
   titulo: APIs y librerías no oficiales de WhatsApp
@@ -238,13 +234,11 @@ grupos:
   miembros:
   - codebase-memory-mcp
   - codegraph
-  - gitnexus
   - graphify
   - repomix
   cuando:
     codebase-memory-mcp: Si quieres un índice persistente del código servido por MCP con poco consumo de tokens.
     codegraph: Si quieres un grafo de código local para que el agente navegue símbolos y dependencias.
-    gitnexus: Si quieres un grafo de conocimiento del código consultable por agentes vía MCP.
     graphify: Si quieres convertir carpetas de código y documentos en un grafo navegable.
     repomix: Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo.
   caso_unico:

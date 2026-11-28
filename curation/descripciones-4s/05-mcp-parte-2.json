@@ -111,15 +111,9 @@
      "id": "context7",
      "motivo": "Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura)",
      "orden_instalacion": "Instala ambos servidores en el mismo agente."
-    },
-    {
-     "id": "superclaude-framework",
-     "motivo": "Combinación recíproca: SuperClaude_Framework lo enlaza como «MCP opcional de comprensión de código».",
-     "orden_instalacion": "Orden indicado desde SuperClaude_Framework: Mediante airis-mcp-gateway.",
-     "reciproca_de": "superclaude-framework"
     }
    ],
-   "notas": "Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.",
+   "notas": "Alternativas (elige una): codegraph, codebase-memory-mcp, graphify.",
    "fuentes": [
     "https://github.com/oraios/serena/blob/main/README.md",
     "https://oraios.github.io/serena/"

@@ -1,6 +1,6 @@
 # Alexandría para agentes · Metodologías y harness para agentes de código
 
-Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `metodologia`. 19 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `metodologia`. 18 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2&sub=metodologia · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -29,7 +29,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `superpowers` | Metodología completa de desarrollo para agentes construida sobre skills… | 1 Básico | 59 | MIT (OSI permisiva) | alternativa |
 | `bmad-method` | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev)… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
 | `codex-plugin-cc` | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y… | 1 Básico | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `superclaude-framework` | Framework de configuración que añade comandos, roles y metodologías de trabajo… | 2 Intermedio | 49 | MIT (OSI permisiva) | alternativa |
 | `claude-token-efficient` | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de… | 1 Básico | 47 | MIT (OSI permisiva) | sin grupo |
 | `andrej-karpathy-skills` | Instrucciones para declarar supuestos, simplificar cambios y comprobar… | 1 Básico | 46 | — (sin licencia detectada) | sin grupo |
 | `shadcn-improve` | Organiza una auditoría de código en un plan que un modelo diferente puede… | 2 Intermedio | 45 | MIT (OSI permisiva) | sin grupo |
@@ -80,8 +79,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `npx ecc-universal@2.2.3 setup` — fuente: https://github.com/affaan-m/ECC/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Ejecuta la configuración guiada en una carpeta de prueba y revisa el destino antes de confirmar Éxito: El informe muestra los componentes y archivos preparados para el cliente elegido
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal], `gemini-cli` [20/terminal], `claude-code-hooks-mastery`, `hermes-agent` [21/asistentes]
-- **Alternativas:** `gstack`, `agent-skills`, `superpowers`, `superclaude-framework`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm…. Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes.
+- **Alternativas:** `gstack`, `agent-skills`, `superpowers`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Ahora el repositorio es ECC. Hay rutas nativas para Claude Code y Codex y adaptadores de capacidad limitada para otros clientes.
 
 ### elephant-goldfish-model (`elephant-goldfish-model`)
 
@@ -114,8 +113,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Consulta el estado de instalación y prueba una revisión o planificación sobre un cambio pequeño Éxito: El estado indica el host y puedes revisar el resultado de la skill elegida
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
-- **Alternativas:** `ecc`, `agent-skills`, `superpowers`, `superclaude-framework`
-- **Riesgos y avisos:** Alternativas (elige una): superclaude-framework, superpowers, ecc. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code.
+- **Alternativas:** `ecc`, `agent-skills`, `superpowers`
+- **Riesgos y avisos:** Alternativas (elige una): superpowers, ecc. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code.
 
 ### Agent Skills (Addy Osmani) (`agent-skills`)
 
@@ -131,7 +130,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
   ```
 - **Primera prueba propuesta (no ejecutada):** Pide una revisión de calidad sobre un cambio pequeño del proyecto Éxito: La revisión aplica los criterios de la skill y señala archivos concretos
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `gemini-cli` [20/terminal], `plugins` [2/catalogos]
-- **Alternativas:** `ecc`, `gstack`, `superpowers`, `superclaude-framework`
+- **Alternativas:** `ecc`, `gstack`, `superpowers`
 - **Riesgos y avisos:** Alternativa (elige una): superpowers. Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda.
 
 ### book-to-skill (`book-to-skill`)
@@ -170,8 +169,8 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación (documentada en la fuente; no ejecutada):** `/plugin install superpowers@claude-plugins-official` — fuente: https://github.com/obra/superpowers/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Describe una mejora sencilla y revisa la fase de definición y planificación Éxito: El agente muestra una propuesta acotada antes de cambiar archivos
 - **Combina con:** `claude-plugins-official` [2/catalogos], `codex` [20/terminal], `gemini-cli` [20/terminal], `hermes-agent` [21/asistentes], `claude-code` [20/terminal]
-- **Alternativas:** `ecc`, `gstack`, `agent-skills`, `superclaude-framework`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README.
+- **Alternativas:** `ecc`, `gstack`, `agent-skills`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README.
 
 ### BMAD Method (`bmad-method`)
 
@@ -206,26 +205,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Pide revisar un diff pequeño mediante el comando del plugin y examina su informe Éxito: La delegación devuelve una revisión atribuible al proceso de Codex
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `grok-plugin-claude-code`
 - **Riesgos y avisos:** No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex.
-
-### SuperClaude_Framework (`superclaude-framework`)
-
-- **Repo:** https://github.com/SuperClaude-Org/SuperClaude_Framework · MIT · nivel 2 · 49/100 · alternativa en «Metodologías y harness para agentes de código»
-- **Qué es:** Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.
-- **Cuándo elegirlo:** Casos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code;  Python y pipx según la guía;  copia de configuración revisable; hardware prerequisites; API de IA: no; Claude Code; Python y pipx según la guía; copia de configuración revisable.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md
-
-  ```bash
-  # Install from PyPI
-  pipx install superclaude
-
-  # Install commands (installs all 30 slash commands)
-  superclaude install
-  ```
-- **Primera prueba propuesta (no ejecutada):** Instala la configuración básica y consulta la lista de comandos antes de añadir MCP opcionales Éxito: Puedes identificar qué comandos se incorporaron y ejecutar el diagnóstico del proyecto
-- **Combina con:** `claude-code` [20/terminal], `context7` [5/servidores], `serena` [5/servidores]
-- **Alternativas:** `ecc`, `gstack`, `agent-skills`, `superpowers`
-- **Riesgos y avisos:** Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos. Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos.
 
 ### claude-token-efficient (`claude-token-efficient`)
 

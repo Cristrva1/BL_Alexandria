@@ -35,9 +35,8 @@ Se instala con uv y se conecta al cliente con un comando de arranque o en modo H
 | [Claude Code](claude-code.md) | Cliente MCP compatible, con instrucciones en la documentación. | Instala Serena con uv y añádelo con su comando de arranque. |
 | [Codex CLI](codex.md) | Cliente MCP compatible. | Configura el comando de arranque de Serena en Codex. |
 | [Context7](context7.md) | Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura) | Instala ambos servidores en el mismo agente. |
-| [SuperClaude_Framework](superclaude-framework.md) | Combinación recíproca: SuperClaude_Framework lo enlaza como «MCP opcional de comprensión de código». | Orden indicado desde SuperClaude_Framework: Mediante airis-mcp-gateway. |
 
-**Notas:** Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.
+**Notas:** Alternativas (elige una): codegraph, codebase-memory-mcp, graphify.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.1.0 (2026-10-19) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -119,7 +118,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
-| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
 | [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 | [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 

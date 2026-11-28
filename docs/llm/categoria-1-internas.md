@@ -50,7 +50,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 - **Repo:** https://github.com/appsmithorg/appsmith · Apache-2.0 · nivel 3 · 72/100 · alternativa en «Herramientas internas y bases de datos no-code»
 - **Qué es:** Plataforma low-code de código abierto (Apache 2.0) para desarrollar, desplegar y mantener aplicaciones internas, de Appsmith Inc. Se usa en su nube o autoalojada y publica versiones con frecuencia.
-- **Cuándo elegirlo:** Casos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API.
+- **Cuándo elegirlo:** Necesitas un panel interno sobre APIs o bases de datos, con lógica JavaScript, widgets propios o versionado con Git en el plan Free.
 - **Requisitos:** nivel 3: preparación media, despliegue con Kubernetes/Helm; Cuenta o instancia de prueba;  una fuente de datos de demostración; hardware prerequisites; API de IA: opcional; Cuenta o instancia de prueba; una fuente de datos de demostración.
 - **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/appsmithorg/appsmith/blob/release/deploy/helm/docs/install-mongodb-operator.md
 
@@ -60,7 +60,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Añade una tabla a una página y asóciala a una consulta de datos ficticios Éxito: La tabla se actualiza al ejecutar la consulta y muestra los registros esperados
 - **Combina con:** `supabase` [22/infraestructura], `activepieces` [1/motores], `metabase` [10/bi]
 - **Alternativas:** `tooljet`, `nocodb`, `budibase`, `teable`, `grist-core`, `baserow`
-- **Riesgos y avisos:** Alternativas (elige una): tooljet, budibase, nocodb. La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo.
+- **Riesgos y avisos:** Alternativas (elige una): tooljet, budibase, nocodb. Appsmith Free documenta hasta tres repos privados por espacio de trabajo. Las prestaciones de permisos y despliegue dependen de la edición.
 
 ### NocoDB (`nocodb`)
 

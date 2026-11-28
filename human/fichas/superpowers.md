@@ -36,7 +36,7 @@ Skills más instrucciones iniciales y hooks de sesión. Se instala por separado 
 | [hermes-agent](hermes-agent.md) | Instalación documentada para Hermes Agent. | Reinicia la sesión tras instalar para activar los hooks. |
 | [Claude Code](claude-code.md) | Combinación recíproca: Claude Code lo enlaza como «Biblioteca de skills y flujos para Claude Code». | Orden indicado desde Claude Code: Instala el plugin desde su marketplace. |
 
-**Notas:** Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.
+**Notas:** Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.
 
 Estado en GitHub: activo · último push 2026-11-03 · última versión publicada v7.0.2 (2026-11-03) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -44,7 +44,7 @@ Estado en GitHub: activo · último push 2026-11-03 · última versión publicad
 
 ## Ver similares
 
-Grupo **Metodologías y harness para agentes de código**: superpowers ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Metodologías y harness para agentes de código**: superpowers ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -52,7 +52,6 @@ Grupo **Metodologías y harness para agentes de código**: superpowers ocupa la 
 | 2 | [gstack](gstack.md) | 66 | Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code. |
 | 3 | [Agent Skills (Addy Osmani)](agent-skills.md) | 64 | Si quieres skills de ingeniería portables en el formato Agent Skills. |
 | 4 | **superpowers** (esta ficha) | 59 | Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada. |
-| 5 | [SuperClaude_Framework](superclaude-framework.md) | 49 | Si quieres comandos y personas para Claude Code organizados por fase. |
 
 ## Acceso, coste y equipo
 
@@ -130,7 +129,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Agent Skills (Addy Osmani)](agent-skills.md) | 118k | Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes. |
-| [SuperClaude_Framework](superclaude-framework.md) | 23.9k | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. |
 | [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
 | [gstack](gstack.md) | 142k | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. |
 

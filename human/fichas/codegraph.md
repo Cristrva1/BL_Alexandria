@@ -35,7 +35,7 @@ Se instala con `npm i -g @colbymchenry/codegraph`; el instalador detecta y confi
 | [headroom](headroom.md) | Combinar contexto preciso con compresión del resto. (combinación por arquitectura) | Indexa con CodeGraph y envuelve el agente con Headroom. |
 | [floorplan](floorplan.md) | Combinación recíproca: floorplan lo enlaza como «Combinar el mapa visual con un índice semántico para el agente. (combinación por arquitectura)». | Orden indicado desde floorplan: Usa Floorplan para entender y CodeGraph para navegar. |
 
-**Notas:** Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.
+**Notas:** Alternativas (elige una): codebase-memory-mcp, serena, graphify. Telemetría anónima activada.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.2 (2026-10-03) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -43,7 +43,7 @@ Estado en GitHub: activo · último push 2026-11-16 · última versión publicad
 
 ## Ver similares
 
-Grupo **Mapas e índices de código para agentes**: codegraph ocupa la posición 2 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Mapas e índices de código para agentes**: codegraph ocupa la posición 2 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -51,7 +51,6 @@ Grupo **Mapas e índices de código para agentes**: codegraph ocupa la posición
 | 2 | **codegraph** (esta ficha) | 66 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
 | 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
 | 4 | [Repomix](repomix.md) | 53 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
-| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 
@@ -130,7 +129,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 | [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
-| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
 | [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 
 ## Enlaces

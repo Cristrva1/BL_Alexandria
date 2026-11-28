@@ -36,7 +36,7 @@ Lista en Markdown con enlaces a cada `SKILL.md` y una tabla de rutas por agente.
 | [SkillSpector](skillspector.md) | Auditar skills de terceros (combinación por arquitectura). | Antes de instalarlas. |
 | [awesome-agents](awesome-agents.md) | Combinación recíproca: awesome-agents lo enlaza como «Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura)». | Orden indicado desde awesome-agents: No aplica. |
 
-**Notas:** Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.
+**Notas:** Alternativas (elige una): antigravity-awesome-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.
 
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -44,7 +44,7 @@ Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (c
 
 ## Ver similares
 
-Grupo **Catálogos de skills y plugins para agentes**: Awesome Agent Skills ocupa la posición 3 de 6 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Catálogos de skills y plugins para agentes**: Awesome Agent Skills ocupa la posición 3 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -52,8 +52,7 @@ Grupo **Catálogos de skills y plugins para agentes**: Awesome Agent Skills ocup
 | 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 62 | Si quieres solo plugins publicados por Anthropic. |
 | 3 | **Awesome Agent Skills** (esta ficha) | 54 | Si quieres skills en formato portable para varios agentes. |
 | 4 | [wshobson/agents](wshobson-agents.md) | 51 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
-| 5 | [Awesome Claude Skills](awesome-claude-skills.md) | 48 | Si buscas skills para Claude ordenadas por tema. |
-| 6 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
+| 5 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
 
 ## Acceso, coste y equipo
 
@@ -123,7 +122,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
-| [Awesome Claude Skills](awesome-claude-skills.md) | 79.5k | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. |
 
 ## Enlaces
 

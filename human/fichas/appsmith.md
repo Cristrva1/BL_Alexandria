@@ -38,7 +38,7 @@ Se instala principalmente con Docker (imagen `appsmith/appsmith-ce`) o Kubernete
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.7.0 (2026-11-12) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/appsmithorg/appsmith/blob/release/README.md) · [2](https://docs.appsmith.com/connect-data/reference/querying-postgres)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/appsmithorg/appsmith/blob/release/README.md) · [2](https://docs.appsmith.com/connect-data/reference/querying-postgres) · [3](https://docs.appsmith.com/advanced-concepts/version-control-with-git) · [4](https://docs.appsmith.com/getting-started/setup/manage-plans/downgrade-plan?downgrade-plan-type=remove-license-key)</sub>
 
 ## Ver similares
 
@@ -115,9 +115,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| Necesitas un panel interno sobre APIs o bases de datos, con lógica JavaScript, widgets propios o versionado con Git en el plan Free. | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo
+**Limitaciones:** Appsmith Free documenta hasta tres repos privados por espacio de trabajo. Las prestaciones de permisos y despliegue dependen de la edición.
 
 ## Stack y modelos
 

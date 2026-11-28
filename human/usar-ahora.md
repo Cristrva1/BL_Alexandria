@@ -12,7 +12,7 @@ _Instálalo una vez en tu máquina._
 
 | Repo | Categoría | Qué hace |
 |---|---|---|
-| [GitNexus](fichas/gitnexus.md) | 🧑‍💻 Entender código y comprobar su calidad | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
+| [GitNexus](fichas/gitnexus.md) | 🧑‍💻 Entender código y comprobar su calidad | Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI. |
 | [Repomix](fichas/repomix.md) | 🧑‍💻 Entender código y comprobar su calidad | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. |
 
 ## 📦 Dependencia del proyecto

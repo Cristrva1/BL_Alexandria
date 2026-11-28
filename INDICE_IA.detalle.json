@@ -5340,9 +5340,9 @@
    ],
    "stack": "Cuenta o instancia de prueba;  una fuente de datos de demostración",
    "models": "El autoalojamiento, los planes y las funciones de IA tienen condiciones distintas; consulta la edición que vas a usar",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API",
+   "choose_if": "Necesitas un panel interno sobre APIs o bases de datos, con lógica JavaScript, widgets propios o versionado con Git en el plan Free.",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo",
+   "limits": "Appsmith Free documenta hasta tres repos privados por espacio de trabajo. Las prestaciones de permisos y despliegue dependen de la edición.",
    "combines_with": [
     "supabase",
     "activepieces",
@@ -5468,7 +5468,9 @@
    "descripcion_notas": "Alternativas (elige una): tooljet, budibase, nocodb.",
    "descripcion_fuentes": [
     "https://github.com/appsmithorg/appsmith/blob/release/README.md",
-    "https://docs.appsmith.com/connect-data/reference/querying-postgres"
+    "https://docs.appsmith.com/connect-data/reference/querying-postgres",
+    "https://docs.appsmith.com/advanced-concepts/version-control-with-git",
+    "https://docs.appsmith.com/getting-started/setup/manage-plans/downgrade-plan?downgrade-plan-type=remove-license-key"
    ],
    "descripcion_revision": {
     "batch": "01-automatizacion-mensajeria",
@@ -6238,7 +6240,7 @@
     "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
     "titulo": "Catálogos de skills y plugins para agentes",
     "posicion": 2,
-    "total": 6,
+    "total": 5,
     "papel": "alternativa",
     "cuando": "Si quieres solo plugins publicados por Anthropic.",
     "ranking": [
@@ -6271,15 +6273,8 @@
       "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad."
      },
      {
-      "id": "awesome-claude-skills",
-      "posicion": 5,
-      "puntuacion": 48.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas skills para Claude ordenadas por tema."
-     },
-     {
       "id": "awesome-claude-code",
-      "posicion": 6,
+      "posicion": 5,
       "puntuacion": 48.0,
       "papel": "alternativa",
       "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos."
@@ -6291,7 +6286,7 @@
    "name": "Awesome Claude Skills",
    "cat": 2,
    "sub": "catalogos",
-   "desc": "Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.",
+   "desc": "Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio.",
    "why": "Usos propuestos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas.",
    "how": "El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos",
    "install": "Ver README oficial (sin comando literal documentado). Elige una skill del listado y abre su archivo o repositorio de origen. Comprueba: Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente. Guía original: https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md",
@@ -6301,19 +6296,15 @@
    ],
    "stack": "Navegador;  agente compatible solo al utilizar una skill seleccionada",
    "models": "Consultar el listado no exige LLM; usar skills consume el agente y el plugin Composio añade su cuenta y condiciones",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas",
+   "choose_if": "Ya usas Composio y buscas una guía concreta para trabajar con un servicio como Calendar o Zoho Books.",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos",
+   "limits": "Las guías de Rube MCP necesitan una conexión activa del servicio. El plugin connect-apps tiene su propia configuración. Consulta la licencia de cada skill.",
    "combines_with": [
     "composio",
     "claude-code",
     "skillspector"
    ],
-   "alternatives": [
-    "awesome-agent-skills",
-    "antigravity-awesome-skills",
-    "awesome-claude-code"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
    "homepage": "",
    "license": "",
@@ -6351,15 +6342,15 @@
      "agente compatible solo al utilizar una skill seleccionada"
     ],
     "steps": [
-     "Elige una skill del listado y abre su archivo o repositorio de origen.",
-     "Comprueba: Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente."
+     "Abre la guía del servicio que quieras conectar y comprueba qué cuenta necesita.",
+     "Identifica una operación pequeña, como revisar los próximos eventos de un calendario de prueba."
     ],
     "command": "",
     "command_language": "",
     "command_status": "reference",
-    "source": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md",
-    "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
-    "checked_at": "2026-11-16"
+    "source": "https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md",
+    "note": "Para otros servicios, ver README oficial y abrir la guía de Rube MCP correspondiente.",
+    "checked_at": "2026-11-27"
    },
    "first_step": "Elige una skill del listado y abre su archivo o repositorio de origen",
    "first_try": {
@@ -6403,9 +6394,9 @@
     "installation_tested": false
    },
    "source_archived": false,
-   "que_es": "Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.",
-   "que_hace": "Organiza skills por categorías (documentos, desarrollo, datos, negocio y marketing, comunicación, creatividad, productividad, seguridad, automatización vía Composio) y explica qué es una skill frente a un MCP o una herramienta. Destaca su plugin `connect-apps`, que permite a Claude enviar correos, crear incidencias o publicar en Slack a través de más de 1.000 aplicaciones.",
-   "como_lo_hace": "Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin-dir ./connect-apps-plugin`, se configura con `/connect-apps:setup` y pide una clave de API de Composio.",
+   "que_es": "Colección de ComposioHQ con un índice general de recursos y 832 archivos SKILL.md en la carpeta de automatizaciones publicada en el commit revisado.",
+   "que_hace": "Reúne guías de automatización para buscar acciones de un servicio en Composio y conectar la cuenta. Incluye un índice de recursos y el plugin connect-apps.",
+   "como_lo_hace": "Las guías de automatización revisadas usan Rube MCP de Composio. El plugin connect-apps para Claude Code es una ruta distinta y pide una clave de Composio.",
    "combina_con": [
     {
      "id": "composio",
@@ -6423,9 +6414,11 @@
      "orden_instalacion": "Audita cada skill antes de instalarla."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): awesome-agent-skills, antigravity-awesome-skills, awesome-claude-code. Dar acceso a 1.000 apps amplía mucho lo que el agente puede hacer: limita los permisos.",
+   "descripcion_notas": "Referencia para quienes usan Composio. El README declara Apache 2.0 y señala que algunas skills tienen su propia licencia.",
    "descripcion_fuentes": [
-    "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md"
+    "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md",
+    "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills",
+    "https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md"
    ],
    "descripcion_revision": {
     "batch": "10-skills-plugins-parte-1",
@@ -6471,58 +6464,6 @@
     "fecha": "2026-11-16",
     "resultado": "sin_comando",
     "fuente": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md"
-   },
-   "similares": {
-    "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
-    "titulo": "Catálogos de skills y plugins para agentes",
-    "posicion": 5,
-    "total": 6,
-    "papel": "alternativa",
-    "cuando": "Si buscas skills para Claude ordenadas por tema.",
-    "ranking": [
-     {
-      "id": "antigravity-awesome-skills",
-      "posicion": 1,
-      "puntuacion": 68.2,
-      "papel": "recomendado",
-      "cuando": "Si quieres el catálogo más grande de skills instalables para varios agentes."
-     },
-     {
-      "id": "claude-plugins-official",
-      "posicion": 2,
-      "puntuacion": 62.0,
-      "papel": "alternativa",
-      "cuando": "Si quieres solo plugins publicados por Anthropic."
-     },
-     {
-      "id": "awesome-agent-skills",
-      "posicion": 3,
-      "puntuacion": 53.8,
-      "papel": "alternativa",
-      "cuando": "Si quieres skills en formato portable para varios agentes."
-     },
-     {
-      "id": "wshobson-agents",
-      "posicion": 4,
-      "puntuacion": 50.6,
-      "papel": "alternativa",
-      "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad."
-     },
-     {
-      "id": "awesome-claude-skills",
-      "posicion": 5,
-      "puntuacion": 48.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas skills para Claude ordenadas por tema."
-     },
-     {
-      "id": "awesome-claude-code",
-      "posicion": 6,
-      "puntuacion": 48.0,
-      "papel": "alternativa",
-      "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos."
-     }
-    ]
    }
   },
   "awesome-claude-code": {
@@ -6547,9 +6488,7 @@
     "claude-plugins-official",
     "skillspector"
    ],
-   "alternatives": [
-    "awesome-claude-skills"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/hesreallyhim/awesome-claude-code",
    "homepage": "",
    "license": "CC-BY-NC-ND-4.0",
@@ -6660,7 +6599,7 @@
      "orden_instalacion": "Antes de instalar cualquier recurso."
     }
    ],
-   "descripcion_notas": "Alternativa (elige una): awesome-claude-skills. Se quitó superpowers porque no hay integración.",
+   "descripcion_notas": "Directorio de hooks, comandos y flujos de Claude Code.",
    "descripcion_fuentes": [
     "https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md"
    ],
@@ -6721,8 +6660,8 @@
    "similares": {
     "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
     "titulo": "Catálogos de skills y plugins para agentes",
-    "posicion": 6,
-    "total": 6,
+    "posicion": 5,
+    "total": 5,
     "papel": "alternativa",
     "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos.",
     "ranking": [
@@ -6755,15 +6694,8 @@
       "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad."
      },
      {
-      "id": "awesome-claude-skills",
-      "posicion": 5,
-      "puntuacion": 48.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas skills para Claude ordenadas por tema."
-     },
-     {
       "id": "awesome-claude-code",
-      "posicion": 6,
+      "posicion": 5,
       "puntuacion": 48.0,
       "papel": "alternativa",
       "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos."
@@ -6797,7 +6729,6 @@
    ],
    "alternatives": [
     "awesome-agent-skills",
-    "awesome-claude-skills",
     "wshobson-agents"
    ],
    "repo": "https://github.com/sickn33/agentic-awesome-skills",
@@ -6924,7 +6855,7 @@
      "reciproca_de": "antigravity-cli"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.",
+   "descripcion_notas": "Alternativas (elige una): awesome-agent-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.",
    "descripcion_fuentes": [
     "https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md"
    ],
@@ -6974,7 +6905,7 @@
     "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
     "titulo": "Catálogos de skills y plugins para agentes",
     "posicion": 1,
-    "total": 6,
+    "total": 5,
     "papel": "recomendado",
     "cuando": "Si quieres el catálogo más grande de skills instalables para varios agentes.",
     "ranking": [
@@ -7007,15 +6938,8 @@
       "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad."
      },
      {
-      "id": "awesome-claude-skills",
-      "posicion": 5,
-      "puntuacion": 48.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas skills para Claude ordenadas por tema."
-     },
-     {
       "id": "awesome-claude-code",
-      "posicion": 6,
+      "posicion": 5,
       "puntuacion": 48.0,
       "papel": "alternativa",
       "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos."
@@ -7219,7 +7143,7 @@
     "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
     "titulo": "Catálogos de skills y plugins para agentes",
     "posicion": 4,
-    "total": 6,
+    "total": 5,
     "papel": "alternativa",
     "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad.",
     "ranking": [
@@ -7252,15 +7176,8 @@
       "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad."
      },
      {
-      "id": "awesome-claude-skills",
-      "posicion": 5,
-      "puntuacion": 48.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas skills para Claude ordenadas por tema."
-     },
-     {
       "id": "awesome-claude-code",
-      "posicion": 6,
+      "posicion": 5,
       "puntuacion": 48.0,
       "papel": "alternativa",
       "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos."
@@ -7472,8 +7389,7 @@
     "awesome-agents"
    ],
    "alternatives": [
-    "antigravity-awesome-skills",
-    "awesome-claude-skills"
+    "antigravity-awesome-skills"
    ],
    "repo": "https://github.com/VoltAgent/awesome-agent-skills",
    "homepage": "https://mobile-starterkit.getdesign.md/",
@@ -7596,7 +7512,7 @@
      "reciproca_de": "awesome-agents"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.",
+   "descripcion_notas": "Alternativas (elige una): antigravity-awesome-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.",
    "descripcion_fuentes": [
     "https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md"
    ],
@@ -7649,7 +7565,7 @@
     "grupo": "g-catalogos-de-skills-y-plugins-para-agentes",
     "titulo": "Catálogos de skills y plugins para agentes",
     "posicion": 3,
-    "total": 6,
+    "total": 5,
     "papel": "alternativa",
     "cuando": "Si quieres skills en formato portable para varios agentes.",
     "ranking": [
@@ -7682,15 +7598,8 @@
       "cuando": "Si quieres subagentes y plugins listos para Claude Code por especialidad."
      },
      {
-      "id": "awesome-claude-skills",
-      "posicion": 5,
-      "puntuacion": 48.2,
-      "papel": "alternativa",
-      "cuando": "Si buscas skills para Claude ordenadas por tema."
-     },
-     {
       "id": "awesome-claude-code",
-      "posicion": 6,
+      "posicion": 5,
       "puntuacion": 48.0,
       "papel": "alternativa",
       "cuando": "Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos."
@@ -7891,7 +7800,7 @@
     "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
     "titulo": "Metodologías y harness para agentes de código",
     "posicion": 3,
-    "total": 5,
+    "total": 4,
     "papel": "alternativa",
     "cuando": "Si quieres skills de ingeniería portables en el formato Agent Skills.",
     "ranking": [
@@ -7922,13 +7831,6 @@
       "puntuacion": 59.4,
       "papel": "alternativa",
       "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada."
-     },
-     {
-      "id": "superclaude-framework",
-      "posicion": 5,
-      "puntuacion": 49.0,
-      "papel": "alternativa",
-      "cuando": "Si quieres comandos y personas para Claude Code organizados por fase."
      }
     ]
    }
@@ -8150,7 +8052,6 @@
    ],
    "alternatives": [
     "agent-skills",
-    "superclaude-framework",
     "ecc",
     "gstack"
    ],
@@ -8277,7 +8178,7 @@
      "reciproca_de": "claude-code"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
+   "descripcion_notas": "Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
    "descripcion_fuentes": [
     "https://github.com/obra/superpowers/blob/main/README.md"
    ],
@@ -8328,7 +8229,7 @@
     "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
     "titulo": "Metodologías y harness para agentes de código",
     "posicion": 4,
-    "total": 5,
+    "total": 4,
     "papel": "alternativa",
     "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada.",
     "ranking": [
@@ -8359,13 +8260,6 @@
       "puntuacion": 59.4,
       "papel": "alternativa",
       "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada."
-     },
-     {
-      "id": "superclaude-framework",
-      "posicion": 5,
-      "puntuacion": 49.0,
-      "papel": "alternativa",
-      "cuando": "Si quieres comandos y personas para Claude Code organizados por fase."
      }
     ]
    }
@@ -8396,7 +8290,6 @@
     "hermes-agent"
    ],
    "alternatives": [
-    "superclaude-framework",
     "superpowers",
     "gstack"
    ],
@@ -8531,7 +8424,7 @@
      "reciproca_de": "hermes-agent"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
+   "descripcion_notas": "Alternativas (elige una): superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
    "descripcion_fuentes": [
     "https://github.com/affaan-m/ECC/blob/main/README.md"
    ],
@@ -8581,7 +8474,7 @@
     "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
     "titulo": "Metodologías y harness para agentes de código",
     "posicion": 1,
-    "total": 5,
+    "total": 4,
     "papel": "recomendado",
     "cuando": "Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes.",
     "ranking": [
@@ -8612,13 +8505,6 @@
       "puntuacion": 59.4,
       "papel": "alternativa",
       "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada."
-     },
-     {
-      "id": "superclaude-framework",
-      "posicion": 5,
-      "puntuacion": 49.0,
-      "papel": "alternativa",
-      "cuando": "Si quieres comandos y personas para Claude Code organizados por fase."
      }
     ]
    }
@@ -20557,9 +20443,9 @@
    ],
    "stack": "Node.js 20+; Docker; proveedor o modelo local",
    "models": "Cloud y servicios adicionales tienen planes; self-hosting añade infraestructura; las llamadas a modelos se presupuestan según ruta",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API",
+   "choose_if": "Buscas un constructor visual que pueda conectarse a servicios de trabajo y un cliente de macOS con navegador, terminal y acceso a carpetas autorizadas.",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo",
+   "limits": "Sim Desktop requiere macOS 12 o posterior y se conecta al despliegue de Sim. En otros sistemas se usa la app web.",
    "combines_with": [
     "ollama",
     "vllm",
@@ -20694,7 +20580,9 @@
    "descripcion_fuentes": [
     "https://github.com/simstudioai/sim/blob/main/README.md",
     "https://docs.sim.ai/mcp/overview",
-    "https://docs.sim.ai/self-hosting/docker"
+    "https://docs.sim.ai/self-hosting/docker",
+    "https://docs.sim.ai/desktop",
+    "https://docs.sim.ai/platform/self-hosting/desktop"
    ],
    "descripcion_revision": {
     "batch": "13-frameworks-agentes-parte-2",
@@ -33516,12 +33404,10 @@
    "combines_with": [
     "claude-code",
     "codex",
-    "context7",
-    "superclaude-framework"
+    "context7"
    ],
    "alternatives": [
     "codegraph",
-    "gitnexus",
     "codebase-memory-mcp",
     "graphify"
    ],
@@ -33635,15 +33521,9 @@
      "id": "context7",
      "motivo": "Combinar navegación semántica del código propio con documentación actualizada de librerías. (combinación por arquitectura)",
      "orden_instalacion": "Instala ambos servidores en el mismo agente."
-    },
-    {
-     "id": "superclaude-framework",
-     "motivo": "Combinación recíproca: SuperClaude_Framework lo enlaza como «MCP opcional de comprensión de código».",
-     "orden_instalacion": "Orden indicado desde SuperClaude_Framework: Mediante airis-mcp-gateway.",
-     "reciproca_de": "superclaude-framework"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, codebase-memory-mcp, graphify.",
+   "descripcion_notas": "Alternativas (elige una): codegraph, codebase-memory-mcp, graphify.",
    "descripcion_fuentes": [
     "https://github.com/oraios/serena/blob/main/README.md",
     "https://oraios.github.io/serena/"
@@ -42515,9 +42395,7 @@
     "tools",
     "codebase-memory-mcp"
    ],
-   "alternatives": [
-    "gitnexus"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/yamadashy/repomix",
    "homepage": "https://repomix.com",
    "license": "MIT",
@@ -42643,7 +42521,7 @@
      "reciproca_de": "codebase-memory-mcp"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): gitnexus.",
+   "descripcion_notas": "Empaqueta archivos y contexto del repositorio para enviarlos al agente.",
    "descripcion_fuentes": [
     "https://github.com/yamadashy/repomix/blob/main/README.md",
     "https://repomix.com"
@@ -42693,7 +42571,7 @@
     "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
     "titulo": "Mapas e índices de código para agentes",
     "posicion": 4,
-    "total": 5,
+    "total": 4,
     "papel": "alternativa",
     "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo.",
     "ranking": [
@@ -42724,13 +42602,6 @@
       "puntuacion": 52.9,
       "papel": "alternativa",
       "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo."
-     },
-     {
-      "id": "gitnexus",
-      "posicion": 5,
-      "puntuacion": 50.8,
-      "papel": "alternativa",
-      "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP."
      }
     ]
    }
@@ -42760,7 +42631,6 @@
    ],
    "alternatives": [
     "codegraph",
-    "gitnexus",
     "serena",
     "codebase-memory-mcp"
    ],
@@ -42883,7 +42753,7 @@
      "orden_instalacion": "Usa Graphify para el código y GraphRAG para la documentación."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
+   "descripcion_notas": "Alternativas (elige una): codegraph, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.",
    "descripcion_fuentes": [
     "https://github.com/Graphify-Labs/graphify/blob/v8/README.md"
    ],
@@ -42932,7 +42802,7 @@
     "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
     "titulo": "Mapas e índices de código para agentes",
     "posicion": 1,
-    "total": 5,
+    "total": 4,
     "papel": "recomendado",
     "cuando": "Si quieres convertir carpetas de código y documentos en un grafo navegable.",
     "ranking": [
@@ -42963,13 +42833,6 @@
       "puntuacion": 52.9,
       "papel": "alternativa",
       "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo."
-     },
-     {
-      "id": "gitnexus",
-      "posicion": 5,
-      "puntuacion": 50.8,
-      "papel": "alternativa",
-      "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP."
      }
     ]
    }
@@ -43000,7 +42863,6 @@
    "alternatives": [
     "codebase-memory-mcp",
     "serena",
-    "gitnexus",
     "graphify"
    ],
    "repo": "https://github.com/colbymchenry/codegraph",
@@ -43121,7 +42983,7 @@
      "reciproca_de": "floorplan"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena, gitnexus, graphify. Telemetría anónima activada.",
+   "descripcion_notas": "Alternativas (elige una): codebase-memory-mcp, serena, graphify. Telemetría anónima activada.",
    "descripcion_fuentes": [
     "https://github.com/colbymchenry/codegraph/blob/main/README.md",
     "https://colbymchenry.github.io/codegraph/"
@@ -43171,7 +43033,7 @@
     "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
     "titulo": "Mapas e índices de código para agentes",
     "posicion": 2,
-    "total": 5,
+    "total": 4,
     "papel": "alternativa",
     "cuando": "Si quieres un grafo de código local para que el agente navegue símbolos y dependencias.",
     "ranking": [
@@ -43202,13 +43064,6 @@
       "puntuacion": 52.9,
       "papel": "alternativa",
       "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo."
-     },
-     {
-      "id": "gitnexus",
-      "posicion": 5,
-      "puntuacion": 50.8,
-      "papel": "alternativa",
-      "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP."
      }
     ]
    }
@@ -43237,7 +43092,6 @@
    ],
    "alternatives": [
     "codegraph",
-    "gitnexus",
     "serena",
     "graphify"
    ],
@@ -43354,7 +43208,7 @@
      "orden_instalacion": "Ejecuta `install` para configurar Codex como cliente."
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): codegraph, gitnexus, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
+   "descripcion_notas": "Alternativas (elige una): codegraph, serena, graphify. Revisa el script de instalación antes de ejecutarlo.",
    "descripcion_fuentes": [
     "https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md"
    ],
@@ -43409,7 +43263,7 @@
     "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
     "titulo": "Mapas e índices de código para agentes",
     "posicion": 3,
-    "total": 5,
+    "total": 4,
     "papel": "alternativa",
     "cuando": "Si quieres un índice persistente del código servido por MCP con poco consumo de tokens.",
     "ranking": [
@@ -43440,13 +43294,6 @@
       "puntuacion": 52.9,
       "papel": "alternativa",
       "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo."
-     },
-     {
-      "id": "gitnexus",
-      "posicion": 5,
-      "puntuacion": 50.8,
-      "papel": "alternativa",
-      "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP."
      }
     ]
    }
@@ -43455,7 +43302,7 @@
    "name": "GitNexus",
    "cat": 7,
    "sub": "codigo",
-   "desc": "Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.",
+   "desc": "Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI.",
    "why": "Usos propuestos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización.",
    "how": "El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial",
    "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Guía original: https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md",
@@ -43465,22 +43312,16 @@
    ],
    "stack": "Node 22.18+ en 22.x o 24.11+; repositorio de prueba",
    "models": "El análisis no exige modelo; la licencia PolyForm Noncommercial limita uso comercial y ofrece licencia aparte",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización",
+   "choose_if": "Necesitas seguir un flujo de ejecución en el visor y revisar un renombrado semántico sobre el mismo índice.",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial",
+   "limits": "El visor necesita el servidor del CLI. GitNexus publica PolyForm Noncommercial 1.0.0 y ofrece licenciamiento comercial por separado.",
    "combines_with": [
     "claude-code",
     "opencode",
     "codex",
     "tools"
    ],
-   "alternatives": [
-    "repomix",
-    "codebase-memory-mcp",
-    "serena",
-    "codegraph",
-    "graphify"
-   ],
+   "alternatives": [],
    "repo": "https://github.com/abhigyanpatwari/GitNexus",
    "homepage": "https://gitnexus.vercel.app",
    "license": "PolyForm-Noncommercial-1.0.0",
@@ -43573,8 +43414,8 @@
    },
    "source_archived": false,
    "que_es": "GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION). Es muy activo (~49k estrellas, v1.6.12).",
-   "que_hace": "Indexa símbolos, llamadas, dependencias y flujos de ejecución para responder preguntas como dónde se usa algo o qué afecta un cambio. Se usa desde las herramientas MCP del agente, la CLI o un explorador visual del grafo. Reporta ambigüedad y cobertura del índice.",
-   "como_lo_hace": "Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+.",
+   "que_hace": "Indexa dependencias, referencias y flujos de ejecución. Permite recorrer el grafo en el navegador y previsualizar renombrados semánticos.",
+   "como_lo_hace": "Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hooks de Claude Code y escribe `AGENTS.md`/`CLAUDE.md`; `--index-only` evita esos cambios. `gitnexus setup` configura Claude Code, Cursor, Codex, OpenCode y otros. Requiere Node.js 22.18+ o 24.11+. El visor se conecta a gitnexus serve y reutiliza el índice existente.",
    "combina_con": [
     {
      "id": "claude-code",
@@ -43598,9 +43439,11 @@
      "reciproca_de": "tools"
     }
    ],
-   "descripcion_notas": "Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.",
+   "descripcion_notas": "Referencia para explorar flujos y revisar renombrados con el mismo índice. Consulta la licencia no comercial y las condiciones del proveedor.",
    "descripcion_fuentes": [
-    "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md"
+    "https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md",
+    "https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/docs/deployment.md",
+    "https://github.com/abhigyanpatwari/GitNexus/blob/acf755a1b70ea91208aac9437c2a552579a62b70/LICENSE"
    ],
    "descripcion_revision": {
     "batch": "26-gateways-y-codigo-parte-1",
@@ -43648,51 +43491,6 @@
     "github": "NOASSERTION",
     "fecha": "2026-11-16",
     "restrictiva": true
-   },
-   "similares": {
-    "grupo": "g-mapas-e-indices-de-codigo-para-agentes",
-    "titulo": "Mapas e índices de código para agentes",
-    "posicion": 5,
-    "total": 5,
-    "papel": "alternativa",
-    "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP.",
-    "ranking": [
-     {
-      "id": "graphify",
-      "posicion": 1,
-      "puntuacion": 74.2,
-      "papel": "recomendado",
-      "cuando": "Si quieres convertir carpetas de código y documentos en un grafo navegable."
-     },
-     {
-      "id": "codegraph",
-      "posicion": 2,
-      "puntuacion": 66.4,
-      "papel": "alternativa",
-      "cuando": "Si quieres un grafo de código local para que el agente navegue símbolos y dependencias."
-     },
-     {
-      "id": "codebase-memory-mcp",
-      "posicion": 3,
-      "puntuacion": 58.4,
-      "papel": "alternativa",
-      "cuando": "Si quieres un índice persistente del código servido por MCP con poco consumo de tokens."
-     },
-     {
-      "id": "repomix",
-      "posicion": 4,
-      "puntuacion": 52.9,
-      "papel": "alternativa",
-      "cuando": "Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo."
-     },
-     {
-      "id": "gitnexus",
-      "posicion": 5,
-      "puntuacion": 50.8,
-      "papel": "alternativa",
-      "cuando": "Si quieres un grafo de conocimiento del código consultable por agentes vía MCP."
-     }
-    ]
    }
   },
   "tree-sitter": {
@@ -54464,7 +54262,7 @@
    "name": "React Bits",
    "cat": 9,
    "sub": "componentes",
-   "desc": "La mayor colección open source de componentes React animados e interactivos para webs llamativas.",
+   "desc": "Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React.",
    "why": "Usos propuestos: Crear un encabezado animado; Prototipar una interacción visual.",
    "how": "MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias",
    "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Guía original: https://github.com/DavidHDev/react-bits/blob/main/README.md",
@@ -54600,7 +54398,8 @@
    "descripcion_notas": "Alternativas (elige una): magicui. Licencia con Commons Clause: revísala antes de uso comercial que implique revender los componentes.",
    "descripcion_fuentes": [
     "https://github.com/DavidHDev/react-bits/blob/main/README.md",
-    "https://reactbits.dev/get-started/mcp"
+    "https://reactbits.dev/get-started/mcp",
+    "https://github.com/DavidHDev/react-bits/blob/HEAD/LICENSE.md"
    ],
    "descripcion_revision": {
     "batch": "16-ui-componentes-estilos",
@@ -54672,7 +54471,7 @@
       "posicion": 2,
       "puntuacion": 53.1,
       "papel": "alternativa",
-      "cuando": "Si buscas esto: librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio."
+      "cuando": "Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video."
      }
     ]
    }
@@ -55375,7 +55174,7 @@
    "name": "magicui",
    "cat": 9,
    "sub": "componentes",
-   "desc": "Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.",
+   "desc": "Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.",
    "why": "Usos propuestos: Prototipar una sección de landing; Añadir una interacción de presentación.",
    "how": "Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos",
    "install": "Ver README oficial (sin comando literal documentado). Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable. Guía original: https://magicui.design/docs",
@@ -55385,9 +55184,9 @@
    ],
    "stack": "React; dependencias del componente elegido; proyecto de prueba",
    "models": "Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación",
+   "choose_if": "Quieres componer una sección React con una cuadrícula de funcionalidades, un bloque de video o un registro de componentes bajo MIT.",
    "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos",
+   "limits": "El repositorio de componentes publica MIT. Magic UI Pro aplica sus propios términos a sus secciones y plantillas de pago.",
    "combines_with": [
     "ui",
     "tailwindcss",
@@ -55524,7 +55323,9 @@
    "descripcion_fuentes": [
     "https://github.com/magicuidesign/magicui/blob/main/README.md",
     "https://magicui.design/docs/installation",
-    "https://magicui.design/docs/mcp"
+    "https://magicui.design/docs/mcp",
+    "https://magicui.design/docs/components/bento-grid",
+    "https://pro.magicui.design/license"
    ],
    "descripcion_revision": {
     "batch": "16-ui-componentes-estilos",
@@ -55579,7 +55380,7 @@
     "posicion": 2,
     "total": 2,
     "papel": "alternativa",
-    "cuando": "Si buscas esto: librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.",
+    "cuando": "Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video.",
     "ranking": [
      {
       "id": "react-bits",
@@ -55593,7 +55394,7 @@
       "posicion": 2,
       "puntuacion": 53.1,
       "papel": "alternativa",
-      "cuando": "Si buscas esto: librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio."
+      "cuando": "Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video."
      }
     ]
    }
@@ -91065,244 +90866,6 @@
     "auto": 3
    }
   },
-  "superclaude-framework": {
-   "name": "SuperClaude_Framework",
-   "cat": 2,
-   "sub": "metodologia",
-   "desc": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
-   "why": "Usos propuestos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes.",
-   "how": "Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos",
-   "install": "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar. Guía original: https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md",
-   "cases": [
-    "Usar un rol especializado para revisar una decisión de arquitectura",
-    "Organizar un flujo de desarrollo con comandos de trabajo coherentes"
-   ],
-   "stack": "Claude Code;  Python y pipx según la guía;  copia de configuración revisable",
-   "models": "El núcleo usa tu acceso a Claude; servidores opcionales como Tavily y otras integraciones pueden cobrar aparte",
-   "choose_if": "Tu objetivo encaja con estos ejemplos: Usar un rol especializado para revisar una decisión de arquitectura; Organizar un flujo de desarrollo con comandos de trabajo coherentes",
-   "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-   "limits": "Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos",
-   "combines_with": [
-    "claude-code",
-    "context7",
-    "serena"
-   ],
-   "alternatives": [
-    "superpowers",
-    "ecc",
-    "gstack"
-   ],
-   "repo": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
-   "homepage": "https://superclaude.netlify.app/",
-   "license": "MIT",
-   "lang": "Python",
-   "updated": "2026-11-14",
-   "doc": "human/fichas/superclaude-framework.md",
-   "sources": {
-    "checked_at": "2026-11-14",
-    "readme_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md",
-    "readme_blob_sha": "85f357dd8c17cfb8e2ba8ca3417aa673d9c9cc8d",
-    "root_tree_sha": "fe68862c8ed9e2afb8120c2d9e27d0c3a7ce73a2",
-    "method": "README y estructura raíz de GitHub; sin ejecución ni instalación del proyecto."
-   },
-   "access": {
-    "mode": "agent_extension",
-    "api": "not_required",
-    "local_model": "not_applicable",
-    "claude_code": "host",
-    "codex": "not_documented",
-    "cost": "choice",
-    "hardware": "prerequisites",
-    "scope": "La ficha distingue programa, modelo, agente y servicios externos. Compatibilidad documental; no se instaló ni probó el proyecto en los clientes.",
-    "api_note": "El núcleo usa tu acceso a Claude; servidores opcionales como Tavily y otras integraciones pueden cobrar aparte",
-    "subscription_note": "Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos",
-    "local_note": "Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos",
-    "cost_note": "El núcleo usa tu acceso a Claude; servidores opcionales como Tavily y otras integraciones pueden cobrar aparte",
-    "hardware_note": "Claude Code;  Python y pipx según la guía;  copia de configuración revisable",
-    "checked_at": "2026-11-15",
-    "review": "documented",
-    "sources": [
-     "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
-    ],
-    "source_blob_sha": "85f357dd8c17cfb8e2ba8ca3417aa673d9c9cc8d",
-    "antigravity": "not_documented"
-   },
-   "getting_started": {
-    "kind": "source",
-    "audience": "agent",
-    "entry_url": "",
-    "prerequisites": [
-     "Claude Code",
-     " Python y pipx según la guía",
-     " copia de configuración revisable"
-    ],
-    "steps": [
-     "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
-     "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
-     "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.",
-     "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
-    ],
-    "command": "# Install from PyPI\npipx install superclaude\n\n# Install commands (installs all 30 slash commands)\nsuperclaude install",
-    "command_language": "bash",
-    "command_status": "documented",
-    "source": "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md",
-    "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
-   },
-   "first_step": "Instala la configuración básica y consulta la lista de comandos antes de añadir MCP opcionales",
-   "first_try": {
-    "action": "Instala la configuración básica y consulta la lista de comandos antes de añadir MCP opcionales",
-    "success": "Puedes identificar qué comandos se incorporaron y ejecutar el diagnóstico del proyecto",
-    "execution": "proposed_not_executed"
-   },
-   "practical_examples": [
-    {
-     "scenario": "Usar un rol especializado para revisar una decisión de arquitectura",
-     "status": "illustrative"
-    },
-    {
-     "scenario": "Organizar un flujo de desarrollo con comandos de trabajo coherentes",
-     "status": "illustrative"
-    }
-   ],
-   "editorial_review": {
-    "status": "source_reviewed",
-    "checked_at": "2026-11-15",
-    "source": "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md",
-    "source_blob_sha": "85f357dd8c17cfb8e2ba8ca3417aa673d9c9cc8d",
-    "previous_source_blob_sha": "85f357dd8c17cfb8e2ba8ca3417aa673d9c9cc8d",
-    "previous_category": [
-     2,
-     "metodologia"
-    ],
-    "category_verdict": "confirmed",
-    "note": "Se limita el comando inicial al núcleo; las opciones MCP del ejemplo son pasos separados, no requisitos para todos",
-    "checks": [
-     "identity",
-     "category",
-     "examples",
-     "installation_source",
-     "api_costs",
-     "claude_code",
-     "codex",
-     "antigravity",
-     "local_model"
-    ],
-    "installation_tested": false
-   },
-   "source_archived": false,
-   "que_es": "Marco de «metaprogramación» de configuración para Claude Code (MIT) de SuperClaude-Org, no afiliado a Anthropic. Versión v4.3.0; último cambio en septiembre de 2026.",
-   "que_hace": "Convierte Claude Code en una plataforma de desarrollo estructurada mediante inyección de instrucciones de comportamiento: 30 comandos `/sc:*` que cubren de la lluvia de ideas al despliegue, 20 agentes especializados, 7 modos de comportamiento y 8 integraciones MCP. Por ejemplo, `/sc:research` hace investigación web profunda con Tavily.",
-   "como_lo_hace": "Se instala con pipx (`pipx install superclaude`), que despliega los componentes en Claude Code. `superclaude mcp` instala servidores MCP opcionales (Serena, Sequential, Tavily, Context7, Mindbase) mediante airis-mcp-gateway, con mejoras de velocidad y tokens declaradas por el proyecto [DATO NO VERIFICADO]. El instalador como plugin está previsto para la v5.0.",
-   "combina_con": [
-    {
-     "id": "claude-code",
-     "motivo": "Plataforma que configura.",
-     "orden_instalacion": "Claude Code primero; luego `pipx install superclaude` y su instalador."
-    },
-    {
-     "id": "context7",
-     "motivo": "MCP opcional para consultar documentación oficial.",
-     "orden_instalacion": "`superclaude mcp --servers context7`."
-    },
-    {
-     "id": "serena",
-     "motivo": "MCP opcional de comprensión de código.",
-     "orden_instalacion": "Mediante airis-mcp-gateway."
-    }
-   ],
-   "descripcion_notas": "Alternativas (elige una): superpowers, ecc, gstack. Inyecta muchas instrucciones, así que no conviene instalarlo junto a otro de estos marcos.",
-   "descripcion_fuentes": [
-    "https://github.com/SuperClaude-Org/SuperClaude_Framework/blob/master/README.md"
-   ],
-   "descripcion_revision": {
-    "batch": "11-skills-plugins-parte-2",
-    "checked_at": "2026-11-15",
-    "status": "source_reviewed",
-    "installation_tested": false
-   },
-   "descripcion_github": {
-    "name_with_owner": "SuperClaude-Org/SuperClaude_Framework",
-    "archived": false,
-    "pushed_at": "2026-09-27",
-    "license": "MIT",
-    "primary_language": "Python",
-    "latest_release": "v4.3.0 (2026-03-22)",
-    "checked_at": "2026-11-15"
-   },
-   "calidad": {
-    "puntuacion": 49.0,
-    "ejes": {
-     "adopcion": 4.9,
-     "mantenimiento": 7.8,
-     "madurez": 7.9,
-     "licencia": 15.0,
-     "respaldo": 8.0,
-     "seguridad": 2.5,
-     "encaje": 3.0
-    },
-    "licencia": "osi_permisiva",
-    "notas": [
-     "Sin OpenSSF Scorecard publicado: seguridad neutral"
-    ],
-    "fecha": "2026-11-16"
-   },
-   "complejidad_detalle": {
-    "nivel": 2,
-    "nombre": "Intermedio",
-    "motivos": [
-     "preparación media",
-     "se instala dentro de un agente (skill, plugin o MCP)"
-    ],
-    "origen": "auto",
-    "auto": 2
-   },
-   "similares": {
-    "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
-    "titulo": "Metodologías y harness para agentes de código",
-    "posicion": 5,
-    "total": 5,
-    "papel": "alternativa",
-    "cuando": "Si quieres comandos y personas para Claude Code organizados por fase.",
-    "ranking": [
-     {
-      "id": "ecc",
-      "posicion": 1,
-      "puntuacion": 71.9,
-      "papel": "recomendado",
-      "cuando": "Si quieres un sistema completo de skills, hooks y configuración adaptable a varios agentes."
-     },
-     {
-      "id": "gstack",
-      "posicion": 2,
-      "puntuacion": 66.3,
-      "papel": "alternativa",
-      "cuando": "Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code."
-     },
-     {
-      "id": "agent-skills",
-      "posicion": 3,
-      "puntuacion": 63.6,
-      "papel": "alternativa",
-      "cuando": "Si quieres skills de ingeniería portables en el formato Agent Skills."
-     },
-     {
-      "id": "superpowers",
-      "posicion": 4,
-      "puntuacion": 59.4,
-      "papel": "alternativa",
-      "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada."
-     },
-     {
-      "id": "superclaude-framework",
-      "posicion": 5,
-      "puntuacion": 49.0,
-      "papel": "alternativa",
-      "cuando": "Si quieres comandos y personas para Claude Code organizados por fase."
-     }
-    ]
-   }
-  },
   "quantharness": {
    "name": "QuantHarness",
    "cat": 14,
@@ -104886,7 +104449,6 @@
     "opencode"
    ],
    "alternatives": [
-    "superclaude-framework",
     "superpowers",
     "ecc"
    ],
@@ -105028,7 +104590,7 @@
     "latest_release": "v1.99.4.0 (2026-11-15)",
     "checked_at": "2026-11-15"
    },
-   "descripcion_notas": "Alternativas (elige una): superclaude-framework, superpowers, ecc.",
+   "descripcion_notas": "Alternativas (elige una): superpowers, ecc.",
    "calidad": {
     "puntuacion": 66.3,
     "ejes": {
@@ -105060,7 +104622,7 @@
     "grupo": "g-metodologias-y-harness-para-agentes-de-codigo",
     "titulo": "Metodologías y harness para agentes de código",
     "posicion": 2,
-    "total": 5,
+    "total": 4,
     "papel": "alternativa",
     "cuando": "Si quieres el flujo de planificar, implementar, revisar y probar que usa Garry Tan con Claude Code.",
     "ranking": [
@@ -105091,13 +104653,6 @@
       "puntuacion": 59.4,
       "papel": "alternativa",
       "cuando": "Si quieres que el agente siga TDD, planificación y revisión de forma disciplinada."
-     },
-     {
-      "id": "superclaude-framework",
-      "posicion": 5,
-      "puntuacion": 49.0,
-      "papel": "alternativa",
-      "cuando": "Si quieres comandos y personas para Claude Code organizados por fase."
      }
     ]
    }

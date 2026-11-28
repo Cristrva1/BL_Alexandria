@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**966 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**965 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -9,7 +9,7 @@
 ## Índice
 
 1. [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) — 19
-2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 34
+2. [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) — 33
 3. [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) — 36
 4. [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) — 28
 5. [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) — 27
@@ -83,7 +83,7 @@ _Catálogos de skills, plugins y métodos generales de desarrollo. Elige según 
 |---|---|---|---|---|
 | ⭐ [Anthropic Skills](human/fichas/anthropic-skills.md) | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | ⭐ [Claude Code Plugins Directory](human/fichas/claude-plugins-official.md) | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
-| [Awesome Claude Skills](human/fichas/awesome-claude-skills.md) | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
+| [Awesome Claude Skills](human/fichas/awesome-claude-skills.md) | Colección de guías para automatizar servicios como Google Calendar y Zoho Books desde un agente con Rube MCP de Composio. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [Awesome Claude Code](human/fichas/awesome-claude-code.md) | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🟢 fácil |
 | [Agentic Awesome Skills (AAS)](human/fichas/antigravity-awesome-skills.md) | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | [wshobson/agents](human/fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
@@ -112,7 +112,6 @@ _Catálogos de skills, plugins y métodos generales de desarrollo. Elige según 
 | [BMAD Method](human/fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
 | [book-to-skill](human/fichas/book-to-skill.md) | Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [codex-plugin-cc](human/fichas/codex-plugin-cc.md) | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. | API de IA opcional | 🎨 skill/prompt | 🟢 fácil |
-| [SuperClaude_Framework](human/fichas/superclaude-framework.md) | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [elephant-goldfish-model](human/fichas/elephant-goldfish-model.md) | Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [Improve de shadcn](human/fichas/shadcn-improve.md) | Organiza una auditoría de código en un plan que un modelo diferente puede implementar después de una revisión humana. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 | [claude-token-efficient](human/fichas/claude-token-efficient.md) | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟢 fácil |
@@ -340,7 +339,7 @@ _Índices de código, análisis, calidad, benchmarks y herramientas de desarroll
 | [graphify](human/fichas/graphify.md) | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
 | [codegraph](human/fichas/codegraph.md) | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
 | [codebase-memory-mcp](human/fichas/codebase-memory-mcp.md) | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. | API de IA opcional | 🧩 motor/runtime | 🟢 fácil |
-| [GitNexus](human/fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
+| [GitNexus](human/fichas/gitnexus.md) | Explora flujos de ejecución y previsualiza renombrados semánticos con el índice de GitNexus. El visor web se conecta al servidor del CLI. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
 | [tree-sitter](human/fichas/tree-sitter.md) | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [floorplan](human/fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Sin clave propia de API de IA en la ruta básica | 🎨 skill/prompt | 🟡 medio |
 
@@ -442,7 +441,7 @@ _Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la b
 | [Ant Design](human/fichas/ant-design.md) | Lenguaje de diseño empresarial y librería de componentes React de Ant Group. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Material UI](human/fichas/mui.md) | Librería de componentes React completa que implementa Material Design de Google. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Storybook](human/fichas/storybook.md) | Taller de frontend para construir, documentar y probar componentes y páginas de UI de forma aislada en React, Vue, Angular y otros. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟢 fácil |
-| [React Bits](human/fichas/react-bits.md) | La mayor colección open source de componentes React animados e interactivos para webs llamativas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [React Bits](human/fichas/react-bits.md) | Efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [TanStack Query](human/fichas/tanstack-query.md) | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Chakra UI](human/fichas/chakra-ui.md) | Sistema de componentes React accesibles para crear productos y sistemas de diseño con rapidez, compatible con Next.js RSC. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [swr](human/fichas/swr.md) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
@@ -450,7 +449,7 @@ _Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la b
 | [Mantine](human/fichas/mantine.md) | Biblioteca de componentes React completa con más de 100 componentes, hooks, formularios, gráficos, fechas y notificaciones. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [heroui](human/fichas/heroui.md) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Lucide](human/fichas/lucide.md) | Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
-| [magicui](human/fichas/magicui.md) | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [magicui](human/fichas/magicui.md) | Componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [Radix Primitives](human/fichas/radix-primitives.md) | Componentes React sin estilos y accesibles para construir sistemas de diseño propios. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [konva](human/fichas/konva.md) | Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 

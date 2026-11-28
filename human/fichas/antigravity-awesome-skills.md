@@ -36,7 +36,7 @@ Se instala desde GitHub; la publicación en npm está en pausa porque la cuenta 
 | [SkillSpector](skillspector.md) | Auditar un catálogo tan grande antes de instalar nada (combinación por arquitectura). | Audita las skills seleccionadas. |
 | [Antigravity CLI](antigravity-cli.md) | Combinación recíproca: Antigravity CLI lo enlaza como «Su instalador lista Antigravity CLI (`antigravity-cli`) como destino de instalación de skills». | Orden indicado desde Antigravity CLI: Instala solo las skills que vayas a usar para no sobrecargar el agente. |
 
-**Notas:** Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.
+**Notas:** Alternativas (elige una): awesome-agent-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v20.9.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -44,7 +44,7 @@ Estado en GitHub: activo · último push 2026-11-15 · última versión publicad
 
 ## Ver similares
 
-Grupo **Catálogos de skills y plugins para agentes**: Agentic Awesome Skills (AAS) ocupa la posición 1 de 6 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Catálogos de skills y plugins para agentes**: Agentic Awesome Skills (AAS) ocupa la posición 1 de 5 (recomendado). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -52,8 +52,7 @@ Grupo **Catálogos de skills y plugins para agentes**: Agentic Awesome Skills (A
 | 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 62 | Si quieres solo plugins publicados por Anthropic. |
 | 3 | [Awesome Agent Skills](awesome-agent-skills.md) | 54 | Si quieres skills en formato portable para varios agentes. |
 | 4 | [wshobson/agents](wshobson-agents.md) | 51 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
-| 5 | [Awesome Claude Skills](awesome-claude-skills.md) | 48 | Si buscas skills para Claude ordenadas por tema. |
-| 6 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
+| 5 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
 
 ## Acceso, coste y equipo
 
@@ -132,7 +131,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
-| [Awesome Claude Skills](awesome-claude-skills.md) | 79.5k | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. |
 | [wshobson/agents](wshobson-agents.md) | 42.5k | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. |
 
 ## Enlaces

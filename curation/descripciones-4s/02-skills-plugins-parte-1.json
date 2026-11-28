@@ -95,9 +95,9 @@
    }
   },
   "awesome-claude-skills": {
-   "que_es": "Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.",
-   "que_hace": "Organiza skills por categorías (documentos, desarrollo, datos, negocio y marketing, comunicación, creatividad, productividad, seguridad, automatización vía Composio) y explica qué es una skill frente a un MCP o una herramienta. Destaca su plugin `connect-apps`, que permite a Claude enviar correos, crear incidencias o publicar en Slack a través de más de 1.000 aplicaciones.",
-   "como_lo_hace": "Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin-dir ./connect-apps-plugin`, se configura con `/connect-apps:setup` y pide una clave de API de Composio.",
+   "que_es": "Colección de ComposioHQ con un índice general de recursos y 832 archivos SKILL.md en la carpeta de automatizaciones publicada en el commit revisado.",
+   "que_hace": "Reúne guías de automatización para buscar acciones de un servicio en Composio y conectar la cuenta. Incluye un índice de recursos y el plugin connect-apps.",
+   "como_lo_hace": "Las guías de automatización revisadas usan Rube MCP de Composio. El plugin connect-apps para Claude Code es una ruta distinta y pide una clave de Composio.",
    "combina_con": [
     {
      "id": "composio",
@@ -115,9 +115,11 @@
      "orden_instalacion": "Audita cada skill antes de instalarla."
     }
    ],
-   "notas": "Alternativas (elige una): awesome-agent-skills, antigravity-awesome-skills, awesome-claude-code. Dar acceso a 1.000 apps amplía mucho lo que el agente puede hacer: limita los permisos.",
+   "notas": "Referencia para quienes usan Composio. El README declara Apache 2.0 y señala que algunas skills tienen su propia licencia.",
    "fuentes": [
-    "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md"
+    "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md",
+    "https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills",
+    "https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/composio-skills/googlecalendar-automation/SKILL.md"
    ],
    "github": {
     "name_with_owner": "ComposioHQ/awesome-claude-skills",
@@ -148,7 +150,7 @@
      "orden_instalacion": "Antes de instalar cualquier recurso."
     }
    ],
-   "notas": "Alternativa (elige una): awesome-claude-skills. Se quitó superpowers porque no hay integración.",
+   "notas": "Directorio de hooks, comandos y flujos de Claude Code.",
    "fuentes": [
     "https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md"
    ],
@@ -193,7 +195,7 @@
      "reciproca_de": "antigravity-cli"
     }
    ],
-   "notas": "Alternativas (elige una): awesome-agent-skills, awesome-claude-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.",
+   "notas": "Alternativas (elige una): awesome-agent-skills, wshobson-agents. Con la pausa de npm, desconfía de paquetes AAS recientes en npm.",
    "fuentes": [
     "https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md"
    ],
@@ -312,7 +314,7 @@
      "reciproca_de": "awesome-agents"
     }
    ],
-   "notas": "Alternativas (elige una): antigravity-awesome-skills, awesome-claude-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.",
+   "notas": "Alternativas (elige una): antigravity-awesome-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.",
    "fuentes": [
     "https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md"
    ],
@@ -438,7 +440,7 @@
      "reciproca_de": "claude-code"
     }
    ],
-   "notas": "Alternativas (elige una): agent-skills, superclaude-framework, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
+   "notas": "Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. La telemetría se desactiva con `SUPERPOWERS_DISABLE_TELEMETRY`; también respeta `DISABLE_TELEMETRY` de Claude Code.",
    "fuentes": [
     "https://github.com/obra/superpowers/blob/main/README.md"
    ],
@@ -490,7 +492,7 @@
      "reciproca_de": "hermes-agent"
     }
    ],
-   "notas": "Alternativas (elige una): superclaude-framework, superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
+   "notas": "Alternativas (elige una): superpowers, gstack. El README pide instalar solo desde canales oficiales: el repositorio y sus paquetes npm verificados. Se quitaron openhands, sandbox y hermes-agent porque no hay integración documentada.",
    "fuentes": [
     "https://github.com/affaan-m/ECC/blob/main/README.md"
    ],

@@ -36,7 +36,7 @@ Se ejecuta con `npx repomix@latest`, `npm install -g repomix` o `brew install re
 | [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `repomix_runner.py`». | Orden indicado desde tools: Instala repomix (npm). |
 | [codebase-memory-mcp](codebase-memory-mcp.md) | Combinación recíproca: codebase-memory-mcp lo enlaza como «Empaquetar módulos concretos tras localizarlos en el grafo. (combinación por arquitectura)». | Orden indicado desde codebase-memory-mcp: Localiza con el grafo y empaqueta con Repomix. |
 
-**Notas:** Alternativas (elige una): gitnexus.
+**Notas:** Empaqueta archivos y contexto del repositorio para enviarlos al agente.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.19.0 (2026-11-08) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -44,7 +44,7 @@ Estado en GitHub: activo · último push 2026-11-15 · última versión publicad
 
 ## Ver similares
 
-Grupo **Mapas e índices de código para agentes**: Repomix ocupa la posición 4 de 5 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
+Grupo **Mapas e índices de código para agentes**: Repomix ocupa la posición 4 de 4 (alternativa). Orden por puntuación de calidad; revisa «Cuándo elegirlo» antes de decidir: no todos cubren lo mismo.
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
@@ -52,7 +52,6 @@ Grupo **Mapas e índices de código para agentes**: Repomix ocupa la posición 4
 | 2 | [codegraph](codegraph.md) | 66 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
 | 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
 | 4 | **Repomix** (esta ficha) | 53 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |
-| 5 | [GitNexus](gitnexus.md) | 51 | Si quieres un grafo de conocimiento del código consultable por agentes vía MCP. |
 
 ## Acceso, coste y equipo
 
@@ -124,12 +123,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; repositorio de prueba; filtros de inclusión
 - **Etiquetas:** `code` `coding-agent` `typescript`
 - **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
 
 ## Enlaces
 
