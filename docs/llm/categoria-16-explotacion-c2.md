@@ -19,9 +19,9 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `metasploit` | Framework de referencia para pruebas de penetración: módulos de exploits… | 3 Avanzado | 73 | BSD-3-Clause (OSI copyleft) | sin grupo |
-| `peass-ng` | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de… | 3 Avanzado | 72 | GPL-2.0-or-later (con aclaraciones) (OSI copyleft) | sin grupo |
-| `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 68 | GPL-3.0 (OSI copyleft) | recomendado |
-| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 64 | Apache-2.0 (OSI permisiva) | recomendado |
+| `peass-ng` | LinPEAS/WinPEAS: scripts y binarios que enumeran rutas de escalada de… | 3 Avanzado | 73 | GPL-2.0-or-later (con aclaraciones) (OSI copyleft) | sin grupo |
+| `sliver` | Framework C2 open source de Bishop Fox para emulación de adversario autorizada… | 4 Experto | 69 | GPL-3.0 (OSI copyleft) | recomendado |
+| `caldera` | Framework Apache de emulación de adversario automatizado: agentes, adversarios… | 4 Experto | 63 | Apache-2.0 (OSI permisiva) | recomendado |
 | `atomic-red-team` | Biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y… | 1 Básico | 62 | MIT (OSI permisiva) | alternativa |
 | `empire` | Framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma… | 4 Experto | 60 | BSD-3-Clause (OSI permisiva) | alternativa |
 | `evilginx2` | Proxy de phishing que captura credenciales y cookies de sesión (bypass MFA) en… | 4 Experto | 52 | BSD-3-Clause (OSI permisiva) | sin grupo |
@@ -46,7 +46,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PEASS-ng (`peass-ng`)
 
-- **Repo:** https://github.com/peass-ng/PEASS-ng · GPL-2.0-or-later (con aclaraciones) · nivel 3 · 72/100
+- **Repo:** https://github.com/peass-ng/PEASS-ng · GPL-2.0-or-later (con aclaraciones) · nivel 3 · 73/100
 - **Qué es:** Suite PEASS-ng (GPL) con LinPEAS y WinPEAS para privilege escalation enumeration.
 - **Cuándo elegirlo:** Casos: enumerar privesc en una VM Linux de HTB/GOAD; revisar un bastión Windows tras un acceso autorizado.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; C#; API de IA: no.
@@ -57,7 +57,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Sliver (`sliver`)
 
-- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 68/100 · recomendado en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 69/100 · recomendado en «Frameworks de C2 y post-explotación»
 - **Qué es:** C2 open source de Bishop Fox orientado a red team y emulación autorizada (alternativa a Cobalt Strike de pago).
 - **Cuándo elegirlo:** Casos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -69,7 +69,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 63/100 · recomendado en «Emulación de adversarios»
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.

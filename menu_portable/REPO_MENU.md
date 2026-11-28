@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Revisión del índice: 2026-11-27 · 965 repos curados · Documento 100% para IA.
+> Revisión del índice: 2026-11-27 · 974 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **965 repos** de IA y
+proyecto concreto. Tienes un menú curado de **974 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -234,7 +234,7 @@ Detalle: `REPO_MENU_cats/01-automatizar-procesos-y-crear-herramientas-internas.m
 - `trigger-dev` [P|hyb|M|?] — Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. — tags: automation,agents,typescript — alt: windmill,kestra
 - `windmill` [P|loc|M|+] — Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. — tags: automation,agents,rust,docker — alt: kestra,trigger-dev
 
-### 2. Skills, plugins y métodos para agentes (33)
+### 2. Skills, plugins y métodos para agentes (34)
 Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 
 - `agent-skills` [S|loc|E|+] — Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar — tags: skills,coding-agent — alt: superpowers
@@ -242,7 +242,7 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `andrej-karpathy-skills` [S|cld|E|+] — Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en o — tags: skills,coding-agent
 - `anthropic-skills` [S|cld|E|+] — Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especific — tags: skills,docs,pdf,coding-agent,python — prov: anthropic
 - `antigravity-awesome-skills` [S|hyb|E|+] — Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada An — tags: skills,coding-agent,mcp,javascript — alt: awesome-agent-skills,wshobson-agents
-- `autoskills` [A|loc|E|+] — CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. — tags: catalogos,ruby
+- `autoskills` [A|loc|E|+] — CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. — tags: catalogos,ruby — alt: vercel-skills
 - `awesome-agent-skills` [D|hyb|E|?] — Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comu — tags: skills,coding-agent,agents — alt: antigravity-awesome-skills
 - `awesome-agents` [D|hyb|E|?] — Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. — tags: catalogos
 - `awesome-claude-code` [D|cld|E|?] — Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alter — tags: coding-agent,skills,agents — prov: anthropic
@@ -269,6 +269,7 @@ Detalle: `REPO_MENU_cats/02-skills-plugins-y-m-todos-para-agentes.md`
 - `skills` [S|cld|E|+] — Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plu — tags: skills,coding-agent
 - `spec-kit` [S|loc|E|+] — Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. — tags: coding-agent,skills,python — alt: bmad-method,claude-task-master
 - `superpowers` [S|cld|E|+] — Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseg — tags: skills,coding-agent — alt: agent-skills,ecc,gstack
+- `vercel-skills` [A|loc|E|?] — Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Cl — tags: skills,instalador,agentes de código,npm — alt: autoskills
 - `wshobson-agents` [S|hyb|E|+] — Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otr — tags: skills,coding-agent,agents,python — alt: claude-plugins-official,antigravity-awesome-skills,agency-agents
 
 ### 3. Construir agentes y coordinar equipos de IA (36)
@@ -408,7 +409,7 @@ Detalle: `REPO_MENU_cats/06-memoria-rag-y-b-squeda-de-conocimiento.md`
 - `txtai` [L|hyb|E|+] — Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base d — tags: rag,python,library,mcp
 - `weaviate` [P|hyb|M|+] — Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y — tags: vector-db,rag,go,docker — alt: qdrant,milvus
 
-### 7. Entender código y comprobar su calidad (26)
+### 7. Entender código y comprobar su calidad (27)
 Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 
 - `apscheduler` [L|loc|M|?] — Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
@@ -427,6 +428,7 @@ Detalle: `REPO_MENU_cats/07-entender-c-digo-y-comprobar-su-calidad.md`
 - `npkill` [A|loc|E|?] — Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de
 - `open-code-review` [S|hyb|M|?] — Revisa cambios de código con reglas y un informe guiado, usando su propio proveedor de IA o el asistente de pr
 - `openai-python` [L|cld|E|+] — SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. — tags: code,python
+- `pake` [A|loc|M|?] — Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows — tags: apps de escritorio,tauri,empaquetar web,cli
 - `pre-commit` [A|loc|E|?] — Framework para gestionar y ejecutar hooks de git multilenguaje antes de cada commit: linters, formateadores y — tags: code,python,cli,git
 - `pybreaker` [L|loc|M|?] — Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comp
 - `repomix` [A|loc|E|+] — Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. — tags: code,coding-agent,typescript
@@ -562,10 +564,11 @@ Detalle: `REPO_MENU_cats/11-generar-y-editar-im-genes-con-ia.md`
 - `rembg` [L|loc|E|+] — Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. — tags: image,python
 - `upscayl` [A|loc|E|+] — Aplicación de escritorio libre para ampliar y mejorar imágenes con IA (Real-ESRGAN sobre NCNN Vulkan) en Linux — tags: image,typescript,app,local
 
-### 12. Editar, grabar y generar video (21)
+### 12. Editar, grabar y generar video (22)
 Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 
 - `ai-youtube-shorts-generator` [A|hyb|M|+] — Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de mome — tags: generativo,2short-ai-alternative,ai-clip-generator,ai-clipping,auto-clip,auto-crop,highlight-detection,klap-alternative
+- `cap` [A|loc|E|?] — Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o com — tags: grabar pantalla,edición de video,tutoriales,enlaces para compartir — alt: obs-studio
 - `concat` [A|loc|M|?] — Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. — tags: edicion,app,rust
 - `davinci-resolve-mcp` [R|loc|M|+] — Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render — tags: video,mcp,agents,python — prov: mcp
 - `ffmpeg` [A|loc|E|?] — Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier forma — tags: video,audio,automation,cpp
@@ -577,7 +580,7 @@ Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 - `lossless-cut` [A|loc|E|?] — App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. — tags: video,audio,ui,typescript
 - `ltx-2` [R|loc|H|+] — Código oficial de inferencia y entrenamiento LoRA de LTX-2 y LTX-2.5, modelo DiT de Lightricks que genera víde — tags: video,python,model,local
 - `moneyprinterturbo` [A|hyb|M|+] — App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música e — tags: video,automation,tts,python — prov: openai,anthropic,google,local — alt: openmontage,videofy-minimal,short-video-factory
-- `obs-studio` [A|loc|E|?] — App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio e — tags: video,audio,ui,cpp
+- `obs-studio` [A|loc|E|?] — App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio e — tags: video,audio,ui,cpp — alt: cap
 - `opencut` [A|hyb|M|?] — Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescr — tags: video,ui,typescript,rust — alt: shotcut,kdenlive
 - `openrv` [A|loc|E|+] — Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. — tags: edicion,app,c
 - `pysubs2` [L|loc|E|+] — Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video — tags: subtítulos,srt,webvtt,python
@@ -587,11 +590,12 @@ Detalle: `REPO_MENU_cats/12-editar-grabar-y-generar-video.md`
 - `wan2-2` [R|loc|H|+] — Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y li — tags: video,inference,local,python — prov: local — alt: hunyuanvideo,hunyuanvideo-1-5
 - `wan2gp` [A|loc|H|+] — App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modes — tags: video,image,tts,local,python — prov: local,mcp — alt: comfyui
 
-### 13. PDF, OCR y procesamiento de documentos (22)
+### 13. PDF, OCR y procesamiento de documentos (23)
 Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 
 - `docling` [L|loc|E|+] — Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. — tags: docs,pdf,ocr,python — alt: marker,mineru,unstructured,olmocr
-- `docuseal` [P|loc|H|+] — Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegu — tags: pdf,server,ruby
+- `documenso` [A|hyb|H|?] — Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sella — tags: firma electrónica,pdf,autoalojado,docker,auditoría — alt: docuseal
+- `docuseal` [P|loc|H|+] — Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegu — tags: pdf,server,ruby — alt: documenso
 - `marker` [L|loc|E|+] — Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. — tags: docs,pdf,python — alt: docling,mineru,pdf-craft
 - `markitdown` [L|loc|E|+] — Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, a — tags: docs,python
 - `mineru` [A|loc|M|+] — Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes. — tags: docs,pdf,ocr,python — alt: docling,marker
@@ -697,7 +701,7 @@ Detalle: `REPO_MENU_cats/15-organizar-notas-archivos-y-servicios-personales.md`
 - `vaultwarden` [P|loc|H|+] — Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructur — tags: privacidad,server,rust — alt: keepassxc
 - `zigbee2mqtt` [P|loc|M|?] — Puente de Zigbee a MQTT para usar dispositivos Zigbee de muchas marcas sin pasarelas propietarias, integrable — tags: automation,typescript,iot,self-hosted
 
-### 16. Analizar software y comprobar su seguridad (142)
+### 16. Analizar software y comprobar su seguridad (147)
 Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 
 - `aflplusplus` [A|loc|-|+] — Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. — tags: security
@@ -712,9 +716,11 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `autopsy` [A|loc|M|?] — GUI forense sobre The Sleuth Kit: casos, timelines e ingest modules para investigar discos en laboratorio. — tags: security — alt: sleuthkit
 - `awesome-ai-reverse-engineering` [D|loc|E|?] — Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. — tags: referencias,reference
 - `awesome-reverse-engineering` [D|loc|E|?] — Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. — tags: referencias,reference,python
+- `bandit` [A|loc|E|?] — Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inse — tags: python,análisis estático,seguridad,cli
 - `bettercap` [A|loc|M|?] — Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita. — tags: security
 - `bla` [A|loc|M|+] — Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por — tags: defensa,app,typescript
 - `bloodhound` [P|loc|M|?] — Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de — tags: pruebas,go,security,graph
+- `brakeman` [A|loc|E|+] — Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos — tags: ruby,rails,análisis estático,seguridad
 - `caido` [A|loc|E|?] — Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pag — tags: security — alt: zaproxy
 - `caldera` [A|loc|-|+] — Framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controlada — tags: security,attack,purple
 - `capa` [A|loc|E|?] — Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…) mediante reglas y análisis estático. — tags: security
@@ -722,6 +728,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `certipy` [A|loc|M|+] — Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados. — tags: security
 - `cheatsheetseries` [D|loc|E|?] — Cheatsheets OWASP de desarrollo seguro: ASVS, auth, XSS, secrets… orientadas a builders y defensores. — tags: security
 - `checkov` [A|loc|E|+] — SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y más, con políticas de misconfig y — tags: security,iac,terraform
+- `codeql` [L|loc|E|?] — Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada a — tags: análisis estático,flujo de datos,github,sarif,seguridad — alt: semgrep
 - `coraza` [L|loc|M|?] — WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set, embebible en servidores y proxies como — tags: security,waf,go,seclang — alt: modsecurity
 - `coreruleset` [D|loc|M|?] — Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con firmas comunitarias. — tags: security
 - `cosign` [A|loc|M|+] — Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC. — tags: security
@@ -749,6 +756,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `ghidra` [A|loc|M|+] — Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. — tags: reversing,app,java — alt: radare2
 - `goad` [D|loc|-|?] — Lab Active Directory vulnerable (Orange Cyberdefense) para practicar ataques AD en VMs locales aisladas. — tags: security
 - `gobuster` [A|loc|E|+] — Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado. — tags: security — alt: feroxbuster,dirsearch,ffuf
+- `gosec` [A|hyb|E|?] — Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos exter — tags: go,análisis estático,seguridad,sarif
 - `grype` [A|loc|E|+] — Escáner de vulnerabilidades para imágenes de contenedor y SBOMs: empareja paquetes con CVE y prioriza remediac — tags: security,containers,sbom — alt: trivy
 - `hacktricks` [D|loc|E|+] — Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con técnicas actualizadas por la comunid — tags: security
 - `hashcat` [A|loc|M|?] — Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos — tags: pruebas,c,security,cli — alt: john
@@ -775,6 +783,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `mimikatz` [A|loc|M|?] — Referencia para extracción de credenciales Windows (LSASS, tickets, DCSync) en laboratorios aislados. — tags: security
 - `misp` [P|loc|-|?] — Plataforma de intercambio de threat intelligence: eventos, IOCs, taxonomías y sincronización entre organizacio — tags: security,ti,soc
 - `mitmproxy` [A|loc|M|+] — Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizada — tags: pruebas,app,python
+- `mobsf` [P|loc|M|?] — Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, — tags: móvil,android,ios,análisis estático,seguridad
 - `modsecurity` [R|loc|-|+] — Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP con reglas SecLang como el OWA — tags: security,waf,http,nginx,c++ — alt: coraza
 - `mythic` [A|loc|-|?] — Framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. — tags: security — alt: empire,sliver
 - `naabu` [A|loc|E|+] — Escáner de puertos SYN/CONNECT/UDP en Go, ligero y pensado para encadenarse con Nmap y con Nuclei. — tags: security,portscan,go — alt: httpx
@@ -813,7 +822,7 @@ Detalle: `REPO_MENU_cats/16-analizar-software-y-comprobar-su-seguridad.md`
 - `securecodebox` [A|loc|-|+] — Orquesta escáneres de seguridad (Nmap, ZAP, Nuclei, Trivy y otros) en Kubernetes para automatizar análisis con — tags: security,kubernetes,scanner,devsecops,go
 - `security-audit-skill` [S|hyb|M|+] — Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estru — tags: metodologia,javascript
 - `securityonion` [A|loc|-|?] — Distribución SOC completa (Suricata/Zeek/Elastic…) para laboratorios y sensores; pesada en recursos. — tags: security
-- `semgrep` [A|loc|E|+] — Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. — tags: security,code — alt: ast-grep,sonarqube
+- `semgrep` [A|loc|E|+] — Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. — tags: security,code — alt: ast-grep,sonarqube,codeql
 - `shannon` [A|hyb|M|+] — Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autor — tags: agentes,agent,typescript — prov: local — alt: strix
 - `shuffle` [A|loc|-|+] — SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows. — tags: security
 - `sigma` [D|loc|M|?] — Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a Elastic, Splunk, QRadar, etc. — tags: security,detection,siem

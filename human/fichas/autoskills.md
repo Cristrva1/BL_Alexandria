@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla
 
-**Puntuación de calidad** 40/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 39/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** CC-BY-NC-4.0. Solo uso no comercial. Fuente: [LICENSE](https://github.com/midudev/autoskills/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -111,6 +111,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js;  un proyecto con sus manifiestos de dependencias
 - **Etiquetas:** `catalogos` `ruby`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Skills CLI (Vercel Labs)](vercel-skills.md) | 41.2k | Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes. |
 
 ## Enlaces
 

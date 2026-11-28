@@ -35,6 +35,12 @@ Se usa en excalidraw.com o se embebe en apps React con `npm install react react-
 | [flexoki](flexoki.md) | Paleta coherente para diagramas de documentación. (combinación por arquitectura) | Define los colores personalizados en la paleta del lienzo. |
 | [Kroki](kroki.md) | Combinación recíproca: Kroki lo enlaza como «Kroki renderiza Excalidraw con el contenedor complementario `yuzutech/kroki-excalidraw`». | Orden indicado desde Kroki: Despliega Kroki y `kroki-excalidraw`; después envía el JSON a `/excalidraw/svg`. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Pake](pake.md)
+
 **Notas:** Alternativas (elige una): tldraw, mermaid.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.18.1 (2026-04-21) · licencia declarada MIT (consultado el 2026-11-15).

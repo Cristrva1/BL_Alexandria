@@ -4,7 +4,7 @@
 
 Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
 
-153 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
+158 repos únicos · 11 subcategorías. [Ver en el explorador](../../docs/index.html#/area/ciberseguridad).
 
 ## Opciones para empezar
 
@@ -71,28 +71,33 @@ Comprender procesos y examinar cómo se comporta el software.
 
 Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-[Explorar 40 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-pruebas)
+[Explorar 45 repos](../../docs/index.html#/explorar?area=ciberseguridad&topic=seguridad-pruebas)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [AFL++](../fichas/aflplusplus.md) | Fuzzer de cobertura de referencia (AFL++) para encontrar crashes en software propio o autorizado. | Sin clave propia de API de IA en la ruta básica |
 | [Aircrack-ng](../fichas/aircrack-ng.md) | Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas. | Sin clave propia de API de IA en la ruta básica |
+| [Bandit](../fichas/bandit.md) | Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo. | Sin clave propia de API de IA en la ruta básica |
 | [bettercap](../fichas/bettercap.md) | Framework MITM/red/Wi-Fi: sniffing, proxying y ataques de red en ejercicios con autorización escrita. | Sin clave propia de API de IA en la ruta básica |
 | [bla](../fichas/bla.md) | Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes. | Sin clave propia de API de IA en la ruta básica |
+| [Brakeman](../fichas/brakeman.md) | Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo. | Sin clave propia de API de IA en la ruta básica |
 | [Caido](../fichas/caido.md) | Proxy de pentest web moderno (alternativa a Burp): core HTTP gratis (Basic); Individual/Team/Enterprise de pago. No es open source. | Sin clave propia de API de IA en la ruta básica |
 | [cdxgen](../fichas/cdxgen.md) | Generador de SBOM CycloneDX del ecosistema OWASP para código fuente, contenedores y binarios en decenas de lenguajes y gestores de paquetes. | Sin clave propia de API de IA en la ruta básica |
+| [CodeQL](../fichas/codeql.md) | Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub. | Sin clave propia de API de IA en la ruta básica |
 | [DefectDojo](../fichas/defectdojo.md) | Gestor OWASP de vulnerabilidades y DevSecOps: importa resultados de más de 200 escáneres, deduplica hallazgos y sigue su corrección. | Sin clave propia de API de IA en la ruta básica |
 | [Dependency-Track](../fichas/dependency-track.md) | Plataforma OWASP que ingiere SBOM CycloneDX y vigila de forma continua vulnerabilidades, licencias y riesgo de los componentes de tus proyectos. | Sin clave propia de API de IA en la ruta básica |
 | [dirsearch](../fichas/dirsearch.md) | Dirbuster en Python ampliamente usado para descubrir rutas y ficheros en aplicaciones web de laboratorio. | Sin clave propia de API de IA en la ruta básica |
 | [feroxbuster](../fichas/feroxbuster.md) | Dirbuster rápido en Rust con recursión, filtros y salidas flexibles para descubrimiento de contenidos web. | Sin clave propia de API de IA en la ruta básica |
 | [ffuf](../fichas/ffuf.md) | Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy. | Sin clave propia de API de IA en la ruta básica |
 | [Gobuster](../fichas/gobuster.md) | Fuzzing y descubrimiento de directorios, DNS y buckets en Go; clásico de pentest web autorizado. | Sin clave propia de API de IA en la ruta básica |
+| [gosec](../fichas/gosec.md) | Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código. | API de IA opcional |
 | [hashcat](../fichas/hashcat.md) | Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque. | Sin clave propia de API de IA en la ruta básica |
 | [John the Ripper (jumbo)](../fichas/john.md) | Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA. | Sin clave propia de API de IA en la ruta básica |
 | [k6](../fichas/k6.md) | Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico. | Sin clave propia de API de IA en la ruta básica |
 | [Locust](../fichas/locust.md) | Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real. | Sin clave propia de API de IA en la ruta básica |
 | [Lynis](../fichas/lynis.md) | Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas. | Sin clave propia de API de IA en la ruta básica |
 | [mitmproxy](../fichas/mitmproxy.md) | Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas. | Sin clave propia de API de IA en la ruta básica |
+| [MobSF (Mobile Security Framework)](../fichas/mobsf.md) | Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo. | Sin clave propia de API de IA en la ruta básica |
 | [Nuclei](../fichas/nuclei.md) | Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP crAPI](../fichas/crapi.md) | API deliberadamente vulnerable de OWASP (completely ridiculous API) para practicar los riesgos del API Security Top 10. | Sin clave propia de API de IA en la ruta básica |
 | [OWASP dep-scan](../fichas/dep-scan.md) | Auditoría OWASP de riesgo en dependencias: vulnerabilidades, avisos, licencias y alcanzabilidad a partir de SBOM CycloneDX generados con cdxgen. | Sin clave propia de API de IA en la ruta básica |

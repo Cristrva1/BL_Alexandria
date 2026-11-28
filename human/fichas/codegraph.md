@@ -47,7 +47,7 @@ Grupo **Mapas e índices de código para agentes**: codegraph ocupa la posición
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [graphify](graphify.md) ⭐ recomendado | 74 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
+| 1 | [graphify](graphify.md) ⭐ recomendado | 75 | Si quieres convertir carpetas de código y documentos en un grafo navegable. |
 | 2 | **codegraph** (esta ficha) | 66 | Si quieres un grafo de código local para que el agente navegue símbolos y dependencias. |
 | 3 | [codebase-memory-mcp](codebase-memory-mcp.md) | 58 | Si quieres un índice persistente del código servido por MCP con poco consumo de tokens. |
 | 4 | [Repomix](repomix.md) | 53 | Si quieres empaquetar un repo entero en un archivo para pegarlo en un modelo. |

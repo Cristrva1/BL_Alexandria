@@ -72,7 +72,7 @@ Comprender procesos y examinar cómo se comporta el software.
 
 Revisar tráfico, aplicaciones web, contraseñas, rendimiento y endurecimiento.
 
-`aflplusplus`, `aircrack-ng`, `bettercap`, `bla`, `caido`, `cdxgen`, `crapi`, `defectdojo`, `dep-scan`, `dependency-check`, `dependency-track`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `hashcat`, `java-html-sanitizer`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `nettacker`, `nuclei`, `owasp-java-encoder`, `owtf`, `pwntools`, `pytm`, `securecodebox`, `semgrep`, `sqlmap`, `syzkaller`, `thc-hydra`, `threat-dragon`, `webgoat`, `wireshark`, `wpscan`, `wrongsecrets`, `zaproxy`
+`aflplusplus`, `aircrack-ng`, `bandit`, `bettercap`, `bla`, `brakeman`, `caido`, `cdxgen`, `codeql`, `crapi`, `defectdojo`, `dep-scan`, `dependency-check`, `dependency-track`, `dirsearch`, `feroxbuster`, `ffuf`, `gobuster`, `gosec`, `hashcat`, `java-html-sanitizer`, `john`, `juice-shop`, `k6`, `locust`, `lynis`, `mitmproxy`, `mobsf`, `nettacker`, `nuclei`, `owasp-java-encoder`, `owtf`, `pwntools`, `pytm`, `securecodebox`, `semgrep`, `sqlmap`, `syzkaller`, `thc-hydra`, `threat-dragon`, `webgoat`, `wireshark`, `wpscan`, `wrongsecrets`, `zaproxy`
 
 ### Pruebas de intrusión autorizadas
 
@@ -124,7 +124,7 @@ Encuentra las piezas para producir imágenes, audio y video: desde una voz o un 
 
 Montar material existente, capturar pantalla y preparar subtítulos.
 
-`concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `libass`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `pysubs2`, `rea-video`, `shotcut`, `video-use`, `videolingo`
+`cap`, `concat`, `davinci-resolve-mcp`, `ffmpeg`, `handbrake`, `kdenlive`, `libass`, `lossless-cut`, `obs-studio`, `opencut`, `openrv`, `pysubs2`, `rea-video`, `shotcut`, `video-use`, `videolingo`
 
 ### Video: generación con IA
 
@@ -406,7 +406,7 @@ Lee y transforma archivos, crea explicaciones visuales y construye búsquedas so
 
 Leer, convertir, firmar y organizar archivos.
 
-`docling`, `docuseal`, `libretranslate`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `tika`, `unstructured`, `xberg`
+`docling`, `documenso`, `docuseal`, `libretranslate`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `tika`, `unstructured`, `xberg`
 
 ### OCR y documentos escaneados
 
@@ -532,7 +532,7 @@ Herramientas de terminal, IDE y sesiones de desarrollo.
 
 Índices y análisis para orientarte dentro de repositorios.
 
-`apscheduler`, `ast-grep`, `biome`, `cli`, `codebase-memory-mcp`, `codegraph`, `floorplan`, `fzf`, `gitleaks`, `gitnexus`, `graphify`, `hishel`, `lazygit`, `npkill`, `open-code-review`, `openai-python`, `pre-commit`, `pybreaker`, `repomix`, `requests-cache`, `ripgrep`, `ruff`, `sonarqube`, `swe-bench`, `tree-sitter`, `trufflehog`
+`apscheduler`, `ast-grep`, `biome`, `cli`, `codebase-memory-mcp`, `codegraph`, `floorplan`, `fzf`, `gitleaks`, `gitnexus`, `graphify`, `hishel`, `lazygit`, `npkill`, `open-code-review`, `openai-python`, `pake`, `pre-commit`, `pybreaker`, `repomix`, `requests-cache`, `ripgrep`, `ruff`, `sonarqube`, `swe-bench`, `tree-sitter`, `trufflehog`
 
 ### Backend, alojamiento y despliegue
 
@@ -600,7 +600,7 @@ Ejemplos de machine learning y entrenamiento desde cero.
 
 Explorar instrucciones generales y formas de trabajar con agentes.
 
-`agent-skills`, `agent-toolkit`, `andrej-karpathy-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `autoskills`, `awesome-agent-skills`, `awesome-agents`, `awesome-claude-code`, `awesome-claude-code-subagents`, `awesome-copilot`, `bmad-method`, `book-to-skill`, `claude-code-hooks-mastery`, `claude-code-templates`, `claude-plugins-official`, `claude-token-efficient`, `codex-plugin-cc`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `google-skills`, `grok-plugin-claude-code`, `gstack`, `humans-md-plugins`, `plugins`, `ponytail`, `shadcn-improve`, `skills`, `spec-kit`, `superpowers`, `wshobson-agents`
+`agent-skills`, `agent-toolkit`, `andrej-karpathy-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `autoskills`, `awesome-agent-skills`, `awesome-agents`, `awesome-claude-code`, `awesome-claude-code-subagents`, `awesome-copilot`, `bmad-method`, `book-to-skill`, `claude-code-hooks-mastery`, `claude-code-templates`, `claude-plugins-official`, `claude-token-efficient`, `codex-plugin-cc`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `google-skills`, `grok-plugin-claude-code`, `gstack`, `humans-md-plugins`, `plugins`, `ponytail`, `shadcn-improve`, `skills`, `spec-kit`, `superpowers`, `vercel-skills`, `wshobson-agents`
 
 ### Skills por oficio y especialidad
 

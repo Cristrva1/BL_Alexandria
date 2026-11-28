@@ -22,8 +22,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `anatomy` | skills | Skill para crear ilustraciones isométricas e interactivas de máquinas y… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
 | `taste-skill` | skills | Skill design-taste-frontend para dirección visual y revisión de sitios; otros… | 1 Básico | 70 | MIT (OSI permisiva) | alternativa |
 | `modern-web-guidance` | skills | Herramienta y skill para que un agente consulte documentación actual sobre… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `design.md` | skills | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `android-skills` | skills | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `design.md` | skills | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `impeccable` | skills | Vocabulario y playbooks de diseño para agentes, con detector determinista y… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `skills-emil` | skills | Colección de skills enfocada en diseño de interfaces y en mejorar la… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `logo-design-skill` | skills | Skill para diseñar logotipos con un agente, desde la idea y las referencias… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
@@ -33,29 +33,29 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `3dviz-pro-max` | skills | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o… | 2 Intermedio | 53 | MIT (OSI permisiva) | recomendado |
 | `threejs-skills` | skills | Colección de instrucciones para que agentes programen escenas y experiencias 3D… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
 | `gsap-skills` | skills | Skills oficiales con instrucciones y ejemplos para que agentes creen… | 2 Intermedio | 51 | MIT (OSI permisiva) | sin grupo |
-| `hallmark` | skills | Skill de diseño para agentes que ayuda a construir interfaces con decisiones… | 2 Intermedio | 51 | MIT (OSI permisiva) | alternativa |
+| `hallmark` | skills | Skill de diseño para agentes que ayuda a construir interfaces con decisiones… | 2 Intermedio | 50 | MIT (OSI permisiva) | alternativa |
 | `blender-skills` | skills | Skills para guiar a un agente por modelado y preparación de escenas en Blender… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `design-dna` | skills | Skill para analizar referencias visuales, extraer decisiones de diseño y… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
 | `threejs-game-skills` | skills | Skills para que un agente construya juegos de navegador con Three.js, interfaz… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
 | `dream-loop` | skills | Skill que combina Blender, generación de imágenes y revisión por un agente para… | 2 Intermedio | 42 | MIT (OSI permisiva) | sin grupo |
 | `motion-design-skill` | skills | Skill con principios de ritmo, transiciones y composición del movimiento para… | 2 Intermedio | 41 | MIT (OSI permisiva) | sin grupo |
 | `creative-architect` | skills | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y… | 1 Básico | 40 | MIT (OSI permisiva) | sin grupo |
-| `humanizer` | escritura | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba… | 1 Básico | 72 | MIT (OSI permisiva) | recomendado |
-| `i-have-adhd` | escritura | Skill para que un agente presente primero la respuesta y organice su salida con… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
+| `humanizer` | escritura | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba… | 1 Básico | 70 | MIT (OSI permisiva) | recomendado |
+| `i-have-adhd` | escritura | Skill para que un agente presente primero la respuesta y organice su salida con… | 2 Intermedio | 66 | MIT (OSI permisiva) | sin grupo |
 | `stop-slop` | escritura | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas… | 1 Básico | 40 | MIT (OSI permisiva) | alternativa |
 | `scientific-agent-skills` | dominio | Colección de skills y recursos para que agentes realicen tareas de… | 2 Intermedio | 73 | MIT (OSI permisiva) | sin grupo |
 | `marketingskills` | dominio | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
-| `claude-seo` | dominio | Skills de Claude Code para revisar SEO técnico, contenido, presencia en… | 2 Intermedio | 70 | MIT (OSI permisiva) | sin grupo |
+| `claude-seo` | dominio | Skills de Claude Code para revisar SEO técnico, contenido, presencia en… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `agency-agents` | dominio | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
-| `knowledge-work-plugins` | dominio | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de… | 2 Intermedio | 62 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `knowledge-work-plugins` | dominio | Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `financial-services` | dominio | Plugins, skills y conectores de Anthropic para flujos de investigación y… | 2 Intermedio | 58 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-ads` | dominio | Audita campañas de publicidad con Claude Code y organiza los hallazgos por… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
-| `instagram-agent-skill` | dominio | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y… | 2 Intermedio | 56 | MIT (OSI permisiva) | recomendado |
-| `social-media-research-skills` | dominio | Skills para investigar publicaciones, comentarios, competidores y anuncios en… | 2 Intermedio | 52 | MIT (OSI permisiva) | sin grupo |
+| `instagram-agent-skill` | dominio | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y… | 2 Intermedio | 55 | MIT (OSI permisiva) | recomendado |
+| `social-media-research-skills` | dominio | Skills para investigar publicaciones, comentarios, competidores y anuncios en… | 2 Intermedio | 51 | MIT (OSI permisiva) | sin grupo |
+| `linkedin-agent-skill` | dominio | Skills de Claude para preparar publicaciones, comentarios y planificación de… | 2 Intermedio | 48 | MIT (OSI permisiva) | alternativa |
 | `shopify-ai-toolkit` | dominio | Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
-| `linkedin-agent-skill` | dominio | Skills de Claude para preparar publicaciones, comentarios y planificación de… | 2 Intermedio | 47 | MIT (OSI permisiva) | alternativa |
-| `arcads-claude-code` | dominio | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen… | 2 Intermedio | 37 | MIT (OSI permisiva) | sin grupo |
-| `minimalist-entrepreneur-skills` | dominio | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de… | 2 Intermedio | 37 | — (sin licencia detectada) | sin grupo |
+| `arcads-claude-code` | dominio | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen… | 2 Intermedio | 36 | MIT (OSI permisiva) | sin grupo |
+| `minimalist-entrepreneur-skills` | dominio | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de… | 2 Intermedio | 36 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -112,17 +112,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `front-end-checklist`
 - **Riesgos y avisos:** Documenta Claude Code, Codex y Antigravity; el modelo local es el buscador de documentación y no un sustituto completo del agente de código.
 
-### design.md (`design.md`)
-
-- **Repo:** https://github.com/google-labs-code/design.md · Apache-2.0 · nivel 2 · 64/100
-- **Qué es:** Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
-- **Cuándo elegirlo:** Casos: Documentar una identidad visual; Comparar dos versiones de tokens.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node para CLI; archivo DESIGN.md de prueba; hardware prerequisites; API de IA: no; Node para CLI; archivo DESIGN.md de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `npx @google/design.md lint DESIGN.md` — fuente: https://github.com/google-labs-code/design.md/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
-- **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
-- **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
-
 ### Android Skills (`android-skills`)
 
 - **Repo:** https://github.com/android/skills · Apache-2.0 · nivel 2 · 63/100
@@ -133,6 +122,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada. Éxito: El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
 - **Combina con:** `codex` [20/terminal]
 - **Riesgos y avisos:** Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.
+
+### design.md (`design.md`)
+
+- **Repo:** https://github.com/google-labs-code/design.md · Apache-2.0 · nivel 2 · 63/100
+- **Qué es:** Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
+- **Cuándo elegirlo:** Casos: Documentar una identidad visual; Comparar dos versiones de tokens.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node para CLI; archivo DESIGN.md de prueba; hardware prerequisites; API de IA: no; Node para CLI; archivo DESIGN.md de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `npx @google/design.md lint DESIGN.md` — fuente: https://github.com/google-labs-code/design.md/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
+- **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
+- **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
 
 ### impeccable (`impeccable`)
 
@@ -238,7 +238,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### hallmark (`hallmark`)
 
-- **Repo:** https://github.com/Nutlope/hallmark · MIT · nivel 2 · 51/100 · alternativa en «Skills de diseño de interfaces para agentes»
+- **Repo:** https://github.com/Nutlope/hallmark · MIT · nivel 2 · 50/100 · alternativa en «Skills de diseño de interfaces para agentes»
 - **Qué es:** Skill de diseño (MIT) de Nutlope, publicada como «hecha por Together AI», para Claude Code, Codex, Cursor y OpenCode. Activa, sin releases.
 - **Cuándo elegirlo:** Casos: Preparar una página de empresa; Revisar una landing genérica.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; brief de sitio; acceso a recursos si descargas fotos; hardware prerequisites; API de IA: no; Agente compatible; brief de sitio; acceso a recursos si descargas fotos.
@@ -326,7 +326,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Humanizer (`humanizer`)
 
-- **Repo:** https://github.com/blader/humanizer · MIT · nivel 1 · 72/100 · recomendado en «Skills para quitar el tono de IA a los textos»
+- **Repo:** https://github.com/blader/humanizer · MIT · nivel 1 · 70/100 · recomendado en «Skills para quitar el tono de IA a los textos»
 - **Qué es:** Skill de escritura de código abierto (MIT) de blader que hace que un texto escrito por IA suene a persona sin cambiar su contenido. Muy popular y activa (v4.0.0); el README lleva un patrocinio.
 - **Cuándo elegirlo:** Casos: Mejorar claridad de un correo; Revisar prosa repetitiva.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente con skills; texto propio breve; hardware prerequisites; API de IA: no; Agente con skills; texto propio breve.
@@ -338,7 +338,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### i-have-adhd (`i-have-adhd`)
 
-- **Repo:** https://github.com/ayghri/i-have-adhd · MIT · nivel 2 · 67/100
+- **Repo:** https://github.com/ayghri/i-have-adhd · MIT · nivel 2 · 66/100
 - **Qué es:** Skill/plugin de código abierto (MIT) de ayghri que hace las respuestas de los asistentes de código más directas («apto para TDAH, sin diagnóstico necesario»). Popular y activo (v0.4.1).
 - **Cuándo elegirlo:** Casos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente soportado; preferencia personal de presentación; hardware prerequisites; API de IA: no; Agente soportado; preferencia personal de presentación.
@@ -383,7 +383,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### claude-seo (`claude-seo`)
 
-- **Repo:** https://github.com/AgriciDaniel/claude-seo · MIT · nivel 2 · 70/100
+- **Repo:** https://github.com/AgriciDaniel/claude-seo · MIT · nivel 2 · 67/100
 - **Qué es:** Plugin SEO gratuito y de código abierto (MIT) para Claude Code, de AgriciDaniel. Activo (v2.6.2), con 29 subskills y 20 agentes especialistas.
 - **Cuándo elegirlo:** Casos: Preparar una auditoría SEO inicial; Revisar indexabilidad de una landing.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code; Python 3.11–3.14; web propia; dependencias de navegador; hardware prerequisites; API de IA: opcional; Claude Code; Python 3.11–3.14; web propia; dependencias de navegador.
@@ -412,7 +412,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Knowledge Work Plugins (`knowledge-work-plugins`)
 
-- **Repo:** https://github.com/anthropics/knowledge-work-plugins · Apache-2.0 · nivel 2 · 62/100
+- **Repo:** https://github.com/anthropics/knowledge-work-plugins · Apache-2.0 · nivel 2 · 61/100
 - **Qué es:** Añade a Claude flujos de trabajo por especialidad, como preparar reuniones de ventas, revisar datos y organizar soporte.
 - **Cuándo elegirlo:** Casos: Preparar preguntas para una reunión ficticia.; Clasificar tres tickets inventados sin abrir un CRM. Evítalo si no usas un agente compatible con skills.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Python; API de IA: no; Claude Cowork o Claude Code y, solo para conectores, cuentas de prueba y permisos limitados..
@@ -451,7 +451,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### instagram-agent-skill (`instagram-agent-skill`)
 
-- **Repo:** https://github.com/Jakeschincariol/instagram-agent-skill · MIT · nivel 2 · 56/100 · recomendado en «Skills para redes sociales»
+- **Repo:** https://github.com/Jakeschincariol/instagram-agent-skill · MIT · nivel 2 · 55/100 · recomendado en «Skills para redes sociales»
 - **Qué es:** Trece skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de Instagram, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.
 - **Cuándo elegirlo:** Casos: Preparar un Reel; Revisar un caption.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude o Claude Code; brief de contenido; Python para utilidades opcionales; hardware prerequisites; API de IA: no; Claude o Claude Code; brief de contenido; Python para utilidades opcionales.
@@ -468,7 +468,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### social-media-research-skills (`social-media-research-skills`)
 
-- **Repo:** https://github.com/ScrapeCreators/social-media-research-skills · MIT · nivel 2 · 52/100
+- **Repo:** https://github.com/ScrapeCreators/social-media-research-skills · MIT · nivel 2 · 51/100
 - **Qué es:** Skills de investigación en redes sociales (MIT) de ScrapeCreators, que funcionan con su API de pago. Sin releases; último cambio en agosto de 2026.
 - **Cuándo elegirlo:** Casos: Comparar temas de contenido; Analizar comentarios públicos de una marca.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente con skills; API key de ScrapeCreators; consulta acotada; hardware prerequisites; API de IA: no; Agente con skills; API key de ScrapeCreators; consulta acotada.
@@ -478,19 +478,9 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `last30days-skill`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativa (elige una): last30days-skill. Cada consulta consume créditos de ScrapeCreators. La API externa es de datos y no necesariamente una segunda API LLM; el estándar Agent Skills admite los hosts compatibles pero las redes imponen sus límites.
 
-### Shopify AI Toolkit (`shopify-ai-toolkit`)
-
-- **Repo:** https://github.com/Shopify/Shopify-AI-Toolkit · MIT · nivel 2 · 48/100
-- **Qué es:** Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.
-- **Cuándo elegirlo:** Casos: Consultar cómo se organiza una sección de tema de prueba.; Preparar una consulta de catálogo para una tienda de desarrollo. Evítalo si no usas un agente compatible con skills.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); JavaScript, package.json; API de IA: no; Un cliente admitido y, si consultas una tienda, una cuenta de desarrollo con alcance mínimo..
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala la integración para tu cliente en un proyecto de ejemplo y prueba una consulta de documentación. Éxito: El asistente enlaza la guía de Shopify o devuelve la estructura esperada para el ejemplo.
-- **Riesgos y avisos:** El README declara telemetría activada por defecto y documenta desactivarla. Operar tiendas y usar modelos puede requerir cuentas o planes separados.
-
 ### linkedin-agent-skill (`linkedin-agent-skill`)
 
-- **Repo:** https://github.com/Jakeschincariol/linkedin-agent-skill · MIT · nivel 2 · 47/100 · alternativa en «Skills para redes sociales»
+- **Repo:** https://github.com/Jakeschincariol/linkedin-agent-skill · MIT · nivel 2 · 48/100 · alternativa en «Skills para redes sociales»
 - **Qué es:** Once skills de Claude (MIT) de Jake Schincariol para gestionar una cuenta de LinkedIn, sin registro ni clave de API. Sin releases; último cambio en septiembre de 2026.
 - **Cuándo elegirlo:** Casos: Planificar una semana de contenido; Revisar un perfil profesional.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude o Claude Code; experiencia propia y tema; hardware prerequisites; API de IA: no; Claude o Claude Code; experiencia propia y tema.
@@ -505,9 +495,19 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `instagram-agent-skill`
 - **Riesgos y avisos:** Automatizar comentarios en LinkedIn puede chocar con sus condiciones de uso; publica manualmente. La instalación documentada es para Claude y las instrucciones pueden pegarse en otros modelos; no publica ni garantiza alcance.
 
+### Shopify AI Toolkit (`shopify-ai-toolkit`)
+
+- **Repo:** https://github.com/Shopify/Shopify-AI-Toolkit · MIT · nivel 2 · 48/100
+- **Qué es:** Aporta guías y herramientas de Shopify para asistir el desarrollo de temas y aplicaciones con fuentes del fabricante.
+- **Cuándo elegirlo:** Casos: Consultar cómo se organiza una sección de tema de prueba.; Preparar una consulta de catálogo para una tienda de desarrollo. Evítalo si no usas un agente compatible con skills.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); JavaScript, package.json; API de IA: no; Un cliente admitido y, si consultas una tienda, una cuenta de desarrollo con alcance mínimo..
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/Shopify/Shopify-AI-Toolkit/blob/0388268a61051d1e8400996a58b0e3590c1e1500/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala la integración para tu cliente en un proyecto de ejemplo y prueba una consulta de documentación. Éxito: El asistente enlaza la guía de Shopify o devuelve la estructura esperada para el ejemplo.
+- **Riesgos y avisos:** El README declara telemetría activada por defecto y documenta desactivarla. Operar tiendas y usar modelos puede requerir cuentas o planes separados.
+
 ### Arcads AI Video Skill Pack (`arcads-claude-code`)
 
-- **Repo:** https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial · MIT · nivel 2 · 37/100
+- **Repo:** https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial · MIT · nivel 2 · 36/100
 - **Qué es:** Paquete de skills (MIT) de «Mr. Paid Social» para crear videos e imágenes publicitarios con la cuenta de Arcads desde Claude Code o Cursor. El README usa enlaces de afiliado y promociona una comunidad de pago.
 - **Cuándo elegirlo:** Casos: Prototipar un anuncio vertical; Preparar variantes de una imagen de producto.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP), requiere clave de API; Claude Code o Cursor; cuenta y acceso API Arcads; presupuesto de generación; hardware prerequisites; API de IA: sí; Claude Code o Cursor; cuenta y acceso API Arcads; presupuesto de generación.
@@ -523,7 +523,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### skills (`minimalist-entrepreneur-skills`)
 
-- **Repo:** https://github.com/slavingia/skills · — · nivel 2 · 37/100
+- **Repo:** https://github.com/slavingia/skills · — · nivel 2 · 36/100
 - **Qué es:** Diez skills para Claude Code basadas en el libro «The Minimalist Entrepreneur» de Sahil Lavingia (fundador de Gumroad), publicadas en su repositorio `slavingia/skills`.
 - **Cuándo elegirlo:** Casos: Explorar un problema de cliente; Preparar preguntas de validación.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code; idea de negocio; supuestos escritos; hardware prerequisites; API de IA: no; Claude Code; idea de negocio; supuestos escritos.

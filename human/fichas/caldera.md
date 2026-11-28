@@ -12,7 +12,7 @@
 
 **Nivel:** 4 Experto — preparación difícil; dominio especializado
 
-**Puntuación de calidad** 64/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 63/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -50,7 +50,7 @@ Grupo **Emulación de adversarios**: CALDERA ocupa la posición 1 de 2 (recomend
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **CALDERA** (esta ficha) ⭐ recomendado | 64 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
+| 1 | **CALDERA** (esta ficha) ⭐ recomendado | 63 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
 | 2 | [Atomic Red Team](atomic-red-team.md) | 62 | Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. |
 
 ## Acceso, coste y equipo

@@ -35,6 +35,12 @@ Requiere Node.js 22.12+ y se inicia con `npm init slidev`. Usa Vite para la reca
 | [playwright](playwright.md) | Exportación a PDF o PNG. | Instala playwright-chromium cuando lo pida. |
 | [diagram-design](diagram-design.md) | Combinación recíproca: diagram-design lo enlaza como «Incrustar diagramas en presentaciones. (combinación por arquitectura)». | Orden indicado desde diagram-design: Exporta SVG/PNG e insértalos. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Pake](pake.md)
+
 **Notas:** Alternativas (elige una): marp, reveal.js.
 
 Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v53.1.0 (2026-11-05) · licencia declarada MIT (consultado el 2026-11-15).

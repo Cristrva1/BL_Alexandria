@@ -191,6 +191,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** La lista corresponde a tus tecnologías y queda un registro de las skills instaladas
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `skillspector`, `codex`
+**Alternativas (elige una):** `vercel-skills`
 
 ## `awesome-agent-skills`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,coding-agent,agents
@@ -989,6 +990,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-plugins-official`, `codex`, `gemini-cli`, `hermes-agent`, `claude-code`
 **Alternativas (elige una):** `agent-skills`, `ecc`, `gstack`
+
+## `vercel-skills`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=skills,instalador,agentes de código,npm
+
+**Qué es:** Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita clave de API de IA. Consulta GitHub y skills.sh para descargar fuentes, buscar skills y mostrar auditorías. DISABLE_TELEMETRY=1 o DO_NOT_TRACK=1 desactivan la telemetría y las consultas de auditoría.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración documentada por el proyecto
+- Modelos locales: La función básica no necesita un modelo. No ejecuta modelos. La skill instalada funciona con el agente elegido, que usará un modelo local solo si su propia configuración lo permite.
+- Coste: Sin pago a un modelo en la ruta básica. Paquete MIT sin pago. Las fuentes remotas se descargan de GitHub u otros servidores Git; un token de GitHub es opcional.
+- Equipo: Preparación según la ruta elegida. Equipo de uso general con Node.js 22.20 o posterior, y Git para fuentes remotas. Si el sistema no permite enlaces simbólicos, copia los archivos y lo avisa.
+**Repo:** https://github.com/vercel-labs/skills
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/vercel-labs/skills/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano; Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa
+**Evita si:** Solo quieres leer una skill sin instalarla, o no puedes revisar el contenido de las skills que vas a añadir.
+**Primera prueba propuesta:** En una carpeta de prueba, crea una skill con npx skills@1.9.1 init saludo, escribe en saludo/SKILL.md una instrucción breve propia e instálala con npx skills@1.9.1 add ./saludo -a claude-code
+**Qué comprobar:** npx skills@1.9.1 list muestra la skill saludo y existe .claude/skills/saludo/SKILL.md con tu texto dentro de la carpeta de prueba
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `skillspector`, `awesome-agent-skills`, `claude-code`, `codex`
+**Alternativas (elige una):** `autoskills`
 
 ## `wshobson-agents`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,coding-agent,agents,python

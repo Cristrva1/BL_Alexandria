@@ -38,6 +38,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `faster-whisper`, `yt-dlp`, `ffmpeg`
 
+## `cap`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=grabar pantalla,edición de video,tutoriales,enlaces para compartir
+
+**Qué es:** Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace.
+**Stack:** Rust, Cargo.toml, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. El modo Studio graba y exporta en el equipo. El modo Instant, los enlaces compartidos y Cap AI usan la nube de Cap o un servidor propio.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Grabar y editar no necesita un modelo de IA. Las notas de la 0.6.3 describen una transcripción en el equipo con modelos que se descargan aparte; no se comprobó en el plan gratuito.
+- Coste: Sin pago a un modelo en la ruta básica. Gratis para uso personal. La licencia de escritorio para uso comercial y Cap Pro, con nube, funciones de IA y enlaces ilimitados, son de pago según la página de precios consultada el 27 de noviembre de 2026.
+- Equipo: Equipo normal; revisar dependencias. macOS 13.1 o posterior recomendado, Windows, o Linux con glibc 2.39 o posterior. Ubuntu 22.04 no está soportado.
+**Repo:** https://github.com/CapSoftware/Cap
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/CapSoftware/Cap/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4; Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada
+**Evita si:** necesitas transmitir en directo con escenas y varias fuentes, o vas a grabar para un uso comercial sin pagar la licencia.
+**Primera prueba propuesta:** En el modo Studio, sin iniciar sesión, graba 15 segundos de una ventana con un documento de prueba propio mientras dices una frase al micrófono
+**Qué comprobar:** Al detener la grabación se abre el editor. Exporta a MP4, abre el archivo en tu reproductor y comprueba que se ve la ventana y se oye la frase
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ffmpeg`, `lossless-cut`, `handbrake`
+**Alternativas (elige una):** `obs-studio`
+
 ## `concat`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,app,rust
 
@@ -402,6 +433,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El archivo tiene imagen, audio y niveles aceptables
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `lossless-cut`, `opencut`, `faster-whisper`, `rnnoise`, `deep-live-cam`, `rvc`
+**Alternativas (elige una):** `cap`
 
 ## `opencut`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=video,ui,typescript,rust

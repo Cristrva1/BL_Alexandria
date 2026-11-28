@@ -90,7 +90,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Repo:** https://github.com/meta/astryx · MIT · nivel 2 · 72/100
 - **Qué es:** Añade a una web componentes y temas de un sistema de diseño que puedes adaptar sin construir cada elemento desde cero.
 - **Cuándo elegirlo:** Casos: Construir una pantalla con botones y campos coherentes.; Probar un tema neutro y después ajustar tipografía y color.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Proyecto web React compatible con los paquetes de Astryx y StyleX..
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; TypeScript, package.json; API de IA: no; Proyecto web con React 19 o posterior y StyleX 0.19, como pide el paquete @astryxdesign/core..
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/meta/astryx/blob/19b4b421ec4f81c7c09709e5e1b91a672240817e/README.md
 - **Primera prueba propuesta (no ejecutada):** Sigue el ejemplo React de la guía y monta un botón y un campo en una página de prueba. Éxito: Los componentes aparecen con el tema aplicado y puedes navegar con teclado.
 - **Riesgos y avisos:** La ruta de componentes no requiere IA. Las herramientas opcionales para agentes se configuran por separado.

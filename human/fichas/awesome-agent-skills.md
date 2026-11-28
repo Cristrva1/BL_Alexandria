@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 54/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 53/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -36,6 +36,12 @@ Lista en Markdown con enlaces a cada `SKILL.md` y una tabla de rutas por agente.
 | [SkillSpector](skillspector.md) | Auditar skills de terceros (combinación por arquitectura). | Antes de instalarlas. |
 | [awesome-agents](awesome-agents.md) | Combinación recíproca: awesome-agents lo enlaza como «Complemento: esta lista cubre herramientas para crear agentes y aquella, skills (combinación por arquitectura)». | Orden indicado desde awesome-agents: No aplica. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Skills CLI (Vercel Labs)](vercel-skills.md)
+
 **Notas:** Alternativas (elige una): antigravity-awesome-skills. Algunas entradas enlazan herramientas de pago o con pagos integrados.
 
 Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
@@ -49,9 +55,9 @@ Grupo **Catálogos de skills y plugins para agentes**: Awesome Agent Skills ocup
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) ⭐ recomendado | 68 | Si quieres el catálogo más grande de skills instalables para varios agentes. |
-| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 62 | Si quieres solo plugins publicados por Anthropic. |
-| 3 | **Awesome Agent Skills** (esta ficha) | 54 | Si quieres skills en formato portable para varios agentes. |
-| 4 | [wshobson/agents](wshobson-agents.md) | 51 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
+| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 63 | Si quieres solo plugins publicados por Anthropic. |
+| 3 | **Awesome Agent Skills** (esta ficha) | 53 | Si quieres skills en formato portable para varios agentes. |
+| 4 | [wshobson/agents](wshobson-agents.md) | 50 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
 | 5 | [Awesome Claude Code](awesome-claude-code.md) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
 
 ## Acceso, coste y equipo

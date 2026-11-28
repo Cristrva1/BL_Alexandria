@@ -49,7 +49,7 @@ Grupo **Skills de diseño de interfaces para agentes**: taste-skill ocupa la pos
 | 1 | [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) ⭐ recomendado | 73 | Si quieres una skill con bases de estilos, paletas y tipografías para generar UI. |
 | 2 | **taste-skill** (esta ficha) | 70 | Si quieres que el agente evite el aspecto genérico en las interfaces. |
 | 3 | [impeccable](impeccable.md) | 63 | Si quieres vocabulario y playbooks de diseño con detector y hooks. |
-| 4 | [hallmark](hallmark.md) | 51 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
+| 4 | [hallmark](hallmark.md) | 50 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
 
 ## Acceso, coste y equipo
 

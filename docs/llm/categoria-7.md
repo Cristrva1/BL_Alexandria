@@ -1,6 +1,6 @@
 # Alexandría para agentes · Entender código y comprobar su calidad
 
-Categoría 7 completa (26 repos, 3 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 7 completa (27 repos, 3 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,13 +18,13 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7
 
 | Repo | Sub | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---|---:|---|---|
-| `graphify` | codigo | CLI y skill que convierten código y documentos en un grafo consultable; el… | 2 Intermedio | 74 | Apache-2.0 (OSI permisiva) | recomendado |
+| `graphify` | codigo | CLI y skill que convierten código y documentos en un grafo consultable; el… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | recomendado |
 | `codegraph` | codigo | CLI que indexa tu código en local para que los asistentes de IA entiendan… | 1 Básico | 66 | MIT (OSI permisiva) | alternativa |
-| `tree-sitter` | codigo | Sistema de parsing incremental para herramientas de programación, base de… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
 | `codebase-memory-mcp` | codigo | Motor local de inteligencia de código que conecta código, docs e… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
-| `floorplan` | codigo | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `tree-sitter` | codigo | Sistema de parsing incremental para herramientas de programación, base de… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
+| `gitnexus` | codigo | Explora flujos de ejecución y previsualiza renombrados semánticos con el índice… | 1 Básico | 56 | PolyForm-Noncommercial-1.0.0 (source-available) | sin grupo |
+| `floorplan` | codigo | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de… | 2 Intermedio | 54 | MIT (OSI permisiva) | sin grupo |
 | `repomix` | codigo | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. | 1 Básico | 53 | MIT (OSI permisiva) | alternativa |
-| `gitnexus` | codigo | Explora flujos de ejecución y previsualiza renombrados semánticos con el índice… | 1 Básico | 51 | PolyForm-Noncommercial-1.0.0 (source-available) | sin grupo |
 | `ruff` | calidad | Linter y formateador de Python extremadamente rápido escrito en Rust… | 1 Básico | 74 | MIT (OSI permisiva) | sin grupo |
 | `biome` | calidad | Formateador y linter en un solo binario para JavaScript, TypeScript, JSX, JSON… | 1 Básico | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `open-code-review` | calidad | Revisa cambios de código con reglas y un informe guiado, usando su propio… | 2 Intermedio | 71 | Apache-2.0 (OSI permisiva) | sin grupo |
@@ -36,14 +36,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=7
 | `swe-bench` | calidad | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | 3 Avanzado | 52 | MIT (OSI permisiva) | sin grupo |
 | `openai-python` | herramientas | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes… | 2 Intermedio | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `cli` | herramientas | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la… | 1 Básico | 74 | MIT (OSI permisiva) | sin grupo |
-| `lazygit` | herramientas | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
-| `fzf` | herramientas | Buscador difuso de línea de comandos y kit de interfaces de terminal para… | 1 Básico | 68 | MIT (OSI permisiva) | sin grupo |
+| `lazygit` | herramientas | Interfaz de terminal sencilla para git: preparar fragmentos o líneas, rebase… | 1 Básico | 71 | MIT (OSI permisiva) | sin grupo |
+| `fzf` | herramientas | Buscador difuso de línea de comandos y kit de interfaces de terminal para… | 1 Básico | 67 | MIT (OSI permisiva) | sin grupo |
+| `pake` | herramientas | Convierte una página web o una carpeta con tu web estática en una app de… | 2 Intermedio | 60 | GPL-3.0 (open-core) | sin grupo |
 | `requests-cache` | herramientas | Guarda respuestas de solicitudes Python para reutilizarlas cuando sean válidas… | 2 Intermedio | 59 | BSD-2-Clause (OSI permisiva) | sin grupo |
-| `apscheduler` | herramientas | Programa funciones Python para un horario, un intervalo o una fecha concreta… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `npkill` | herramientas | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo… | 1 Básico | 58 | MIT (OSI permisiva) | sin grupo |
+| `apscheduler` | herramientas | Programa funciones Python para un horario, un intervalo o una fecha concreta… | 2 Intermedio | 57 | MIT (OSI permisiva) | sin grupo |
+| `npkill` | herramientas | Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo… | 1 Básico | 56 | MIT (OSI permisiva) | sin grupo |
 | `hishel` | herramientas | Añade caché a peticiones HTTP de Python con políticas de expiración y… | 2 Intermedio | 53 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `ripgrep` | herramientas | Búsqueda recursiva de texto por expresiones regulares muy rápida que respeta… | 1 Básico | 52 | Unlicense (OSI permisiva) | sin grupo |
-| `pybreaker` | herramientas | Protege una integración Python con un interruptor que pausa llamadas tras… | 2 Intermedio | 43 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `pybreaker` | herramientas | Protege una integración Python con un interruptor que pausa llamadas tras… | 2 Intermedio | 44 | BSD-3-Clause (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -51,7 +52,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### graphify (`graphify`)
 
-- **Repo:** https://github.com/Graphify-Labs/graphify · Apache-2.0 · nivel 2 · 74/100 · recomendado en «Mapas e índices de código para agentes»
+- **Repo:** https://github.com/Graphify-Labs/graphify · Apache-2.0 · nivel 2 · 75/100 · recomendado en «Mapas e índices de código para agentes»
 - **Qué es:** Graphify, CLI y skill que convierte código y documentos en un grafo de conocimiento consultable, de Graphify Labs. Licencia Apache-2.0. Tiene un recuento de estrellas excepcionalmente alto (~149k), publica muy a menudo (v0.9.111) y ofrece…
 - **Cuándo elegirlo:** Casos: Explorar impacto de un cambio; Relacionar documentación y estructura de código.
 - **Requisitos:** nivel 2: preparación media; Python 3.10+; uv o pipx; carpeta de código; hardware prerequisites; API de IA: opcional; Python 3.10+; uv o pipx; carpeta de código.
@@ -78,17 +79,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `graphify`, `codebase-memory-mcp`, `repomix`, `serena`
 - **Riesgos y avisos:** Alternativas (elige una): codebase-memory-mcp, serena, graphify. Telemetría anónima activada. La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa.
 
-### tree-sitter (`tree-sitter`)
-
-- **Repo:** https://github.com/tree-sitter/tree-sitter · MIT · nivel 2 · 60/100
-- **Qué es:** Tree-sitter, generador de parsers y librería de parsing incremental. Licencia MIT. Es infraestructura madura (~27k estrellas, v0.27.2) usada por muchos editores y herramientas.
-- **Cuándo elegirlo:** Casos: Construir un analizador de código; Extraer símbolos para una herramienta de edición.
-- **Requisitos:** nivel 2: preparación media, requiere programar con él; Herramientas y binding del lenguaje elegido; gramática; hardware prerequisites; API de IA: no; Herramientas y binding del lenguaje elegido; gramática.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://tree-sitter.github.io/tree-sitter/
-- **Primera prueba propuesta (no ejecutada):** Analiza un archivo mínimo y observa cómo cambia el árbol tras editar una función Éxito: El árbol refleja el cambio sin interpretar semánticamente todo el programa
-- **Combina con:** `ast-grep` [7/calidad], `aider` [20/terminal], `repomix`, `graphify`
-- **Riesgos y avisos:** Sin alternativas declaradas. Es infraestructura de parsing; no contesta por sí sola preguntas sobre arquitectura o intención del código.
-
 ### codebase-memory-mcp (`codebase-memory-mcp`)
 
 - **Repo:** https://github.com/DeusData/codebase-memory-mcp · MIT · nivel 1 · 58/100 · alternativa en «Mapas e índices de código para agentes»
@@ -101,9 +91,39 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Alternativas:** `graphify`, `codegraph`, `repomix`, `serena`
 - **Riesgos y avisos:** Alternativas (elige una): codegraph, serena, graphify. Revisa el script de instalación antes de ejecutarlo. Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens.
 
+### tree-sitter (`tree-sitter`)
+
+- **Repo:** https://github.com/tree-sitter/tree-sitter · MIT · nivel 2 · 58/100
+- **Qué es:** Tree-sitter, generador de parsers y librería de parsing incremental. Licencia MIT. Es infraestructura madura (~27k estrellas, v0.27.2) usada por muchos editores y herramientas.
+- **Cuándo elegirlo:** Casos: Construir un analizador de código; Extraer símbolos para una herramienta de edición.
+- **Requisitos:** nivel 2: preparación media, requiere programar con él; Herramientas y binding del lenguaje elegido; gramática; hardware prerequisites; API de IA: no; Herramientas y binding del lenguaje elegido; gramática.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://tree-sitter.github.io/tree-sitter/
+- **Primera prueba propuesta (no ejecutada):** Analiza un archivo mínimo y observa cómo cambia el árbol tras editar una función Éxito: El árbol refleja el cambio sin interpretar semánticamente todo el programa
+- **Combina con:** `ast-grep` [7/calidad], `aider` [20/terminal], `repomix`, `graphify`
+- **Riesgos y avisos:** Sin alternativas declaradas. Es infraestructura de parsing; no contesta por sí sola preguntas sobre arquitectura o intención del código.
+
+### GitNexus (`gitnexus`)
+
+- **Repo:** https://github.com/abhigyanpatwari/GitNexus · PolyForm-Noncommercial-1.0.0 · nivel 1 · 56/100
+- **Qué es:** GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION).
+- **Cuándo elegirlo:** Necesitas seguir un flujo de ejecución en el visor y revisar un renombrado semántico sobre el mismo índice.
+- **Requisitos:** nivel 1: preparación sencilla; Node 22.18+ en 22.x o 24.11+; repositorio de prueba; hardware prerequisites; API de IA: no; Node 22.18+ en 22.x o 24.11+; repositorio de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md
+
+  ```bash
+  # Run from your repository root
+  npx gitnexus analyze
+
+  # Connect your editors once
+  npx gitnexus setup
+  ```
+- **Primera prueba propuesta (no ejecutada):** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función Éxito: El mapa permite localizar los archivos reales y sus conexiones
+- **Combina con:** `claude-code` [20/terminal], `opencode` [20/terminal], `codex` [20/terminal]
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Referencia para explorar flujos y revisar renombrados con el mismo índice. Consulta la licencia no comercial y las condiciones del proveedor. El visor necesita el servidor del CLI. GitNexus publica PolyForm Noncommercial 1.0.0 y ofrece licenciamiento comercial por separado.
+
 ### floorplan (`floorplan`)
 
-- **Repo:** https://github.com/haydenschmitty/floorplan · MIT · nivel 2 · 58/100
+- **Repo:** https://github.com/haydenschmitty/floorplan · MIT · nivel 2 · 54/100
 - **Qué es:** Floorplan, plugin para Claude Code y Codex que dibuja un mapa interactivo de una aplicación, de @haydenschmitty. Licencia MIT. Es reciente (~5k estrellas, floorplan--v0.10.0).
 - **Cuándo elegirlo:** Casos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Claude Code o Codex con plugins; proyecto pequeño de prueba; hardware prerequisites; API de IA: no; Claude Code o Codex con plugins; proyecto pequeño de prueba.
@@ -128,25 +148,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `tree-sitter`, `markitdown` [13/conversion], `codebase-memory-mcp`
 - **Alternativas:** `graphify`, `codegraph`, `codebase-memory-mcp`
 - **Riesgos y avisos:** Empaqueta archivos y contexto del repositorio para enviarlos al agente. Ofrece MCP stdio y plugins o skills; revisa secretos y archivos excluidos aunque el paquete incluya un detector.
-
-### GitNexus (`gitnexus`)
-
-- **Repo:** https://github.com/abhigyanpatwari/GitNexus · PolyForm-Noncommercial-1.0.0 · nivel 1 · 51/100
-- **Qué es:** GitNexus, indexador de código en grafo con herramientas MCP, CLI y explorador web, de @abhigyanpatwari. Licencia PolyForm Noncommercial 1.0.0, con licencia comercial aparte (GitHub muestra NOASSERTION).
-- **Cuándo elegirlo:** Necesitas seguir un flujo de ejecución en el visor y revisar un renombrado semántico sobre el mismo índice.
-- **Requisitos:** nivel 1: preparación sencilla; Node 22.18+ en 22.x o 24.11+; repositorio de prueba; hardware prerequisites; API de IA: no; Node 22.18+ en 22.x o 24.11+; repositorio de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md
-
-  ```bash
-  # Run from your repository root
-  npx gitnexus analyze
-
-  # Connect your editors once
-  npx gitnexus setup
-  ```
-- **Primera prueba propuesta (no ejecutada):** Analiza una app pequeña y consulta el recorrido entre un endpoint y su función Éxito: El mapa permite localizar los archivos reales y sus conexiones
-- **Combina con:** `claude-code` [20/terminal], `opencode` [20/terminal], `codex` [20/terminal]
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Referencia para explorar flujos y revisar renombrados con el mismo índice. Consulta la licencia no comercial y las condiciones del proveedor. El visor necesita el servidor del CLI. GitNexus publica PolyForm Noncommercial 1.0.0 y ofrece licenciamiento comercial por separado.
 
 ### Ruff (`ruff`)
 
@@ -285,7 +286,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### lazygit (`lazygit`)
 
-- **Repo:** https://github.com/jesseduffield/lazygit · MIT · nivel 1 · 72/100
+- **Repo:** https://github.com/jesseduffield/lazygit · MIT · nivel 1 · 71/100
 - **Qué es:** Interfaz de terminal para git de código abierto (MIT) creada por Jesse Duffield y mantenida con la comunidad y patrocinadores. Muy popular y activa.
 - **Cuándo elegirlo:** Casos: revisar y preparar por partes los cambios que hizo un agente antes de confirmarlos; hacer rebases interactivos y deshacer operaciones sin recordar comandos.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, go.mod; API de IA: no.
@@ -296,7 +297,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### fzf (`fzf`)
 
-- **Repo:** https://github.com/junegunn/fzf · MIT · nivel 1 · 68/100
+- **Repo:** https://github.com/junegunn/fzf · MIT · nivel 1 · 67/100
 - **Qué es:** Buscador difuso de propósito general de código abierto (MIT) creado y mantenido por Junegunn Choi desde 2013. Muy maduro y extendido.
 - **Cuándo elegirlo:** Casos: buscar archivos y comandos del historial al instante en la terminal; construir menús interactivos en scripts de shell.
 - **Requisitos:** nivel 1: preparación sencilla; Go, Dockerfile, Gemfile, go.mod; API de IA: no.
@@ -304,6 +305,16 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala fzf, activa la integración de tu shell y pulsa CTRL-T para elegir un archivo. Éxito: El selector filtra miles de archivos al escribir y pega la ruta elegida en la línea de comandos.
 - **Combina con:** `ripgrep`, `claude-code` [20/terminal], `codex` [20/terminal]
 - **Riesgos y avisos:** Es una herramienta de uso diario: no requiere servidor ni configuración para empezar.
+
+### Pake (`pake`)
+
+- **Repo:** https://github.com/tw93/Pake · GPL-3.0 · nivel 2 · 60/100
+- **Qué es:** Herramienta de línea de comandos que empaqueta páginas web como apps de escritorio.
+- **Cuándo elegirlo:** Casos: Convertir una página de inicio propia en una app con icono y ventana propios; Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador. Evítalo si no quieres instalar Node.js, Rust y herramientas de compilación, o necesitas que la app acceda a funciones del sistema más allá de mostrar la web.
+- **Requisitos:** nivel 2: preparación media; Rust, Dockerfile, package.json; hardware prerequisites; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/tw93/Pake/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Crea hola.html con un título y un párrafo propios y ejecuta pake ./hola.html --name HolaPake Éxito: En la carpeta aparece un instalador (.dmg, .msi, .deb o AppImage). Instálalo y abre HolaPake: la ventana muestra tu…
+- **Combina con:** `slidev` [31/slides], `tailwindcss` [9/estilos], `excalidraw` [9/diseno]
 
 ### Requests Cache (`requests-cache`)
 
@@ -317,7 +328,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### APScheduler (`apscheduler`)
 
-- **Repo:** https://github.com/agronholm/apscheduler · MIT · nivel 2 · 58/100
+- **Repo:** https://github.com/agronholm/apscheduler · MIT · nivel 2 · 57/100
 - **Qué es:** Programa funciones Python para un horario, un intervalo o una fecha concreta dentro de una aplicación propia.
 - **Cuándo elegirlo:** Casos: Actualizar un dato local cada minuto.; Programar un recordatorio interno una vez al día.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, docker-compose.yml, pyproject.toml; API de IA: no; Python y una versión estable 3.x conforme a su guía..
@@ -327,7 +338,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### npkill (`npkill`)
 
-- **Repo:** https://github.com/voidcosmos/npkill · MIT · nivel 1 · 58/100
+- **Repo:** https://github.com/voidcosmos/npkill · MIT · nivel 1 · 56/100
 - **Qué es:** Muestra cuánto espacio ocupan carpetas generadas por herramientas de desarrollo y permite revisarlas antes de eliminar residuos.
 - **Cuándo elegirlo:** Casos: Medir el tamaño de node_modules en un proyecto de ejemplo.; Revisar sin borrar los residuos de un directorio de pruebas.
 - **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; API de IA: no; Node.js/npm para la distribución oficial y una carpeta de prueba sin datos importantes..
@@ -358,7 +369,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### PyBreaker (`pybreaker`)
 
-- **Repo:** https://github.com/danielfm/pybreaker · BSD-3-Clause · nivel 2 · 43/100
+- **Repo:** https://github.com/danielfm/pybreaker · BSD-3-Clause · nivel 2 · 44/100
 - **Qué es:** Protege una integración Python con un interruptor que pausa llamadas tras varios fallos y después permite comprobar si volvió el servicio.
 - **Cuándo elegirlo:** Casos: Evitar que una integración lenta bloquee todos los trabajos.; Probar cómo se recupera un cliente tras una caída ficticia.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, pyproject.toml; API de IA: no; Un entorno Python con una función ficticia que pueda fallar..

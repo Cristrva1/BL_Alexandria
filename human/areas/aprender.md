@@ -4,7 +4,7 @@
 
 Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
 
-100 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
+101 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/aprender).
 
 ## Opciones para empezar
 
@@ -75,7 +75,7 @@ Ejemplos de machine learning y entrenamiento desde cero.
 
 Explorar instrucciones generales y formas de trabajar con agentes.
 
-[Explorar 32 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-metodos)
+[Explorar 33 repos](../../docs/index.html#/explorar?area=aprender&topic=aprender-metodos)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
@@ -108,6 +108,7 @@ Explorar instrucciones generales y formas de trabajar con agentes.
 | [Ponytail](../fichas/ponytail.md) | Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/google-skills.md) | Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | Sin clave propia de API de IA en la ruta básica |
 | [skills](../fichas/skills.md) | Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plugins para Claude Code y Codex. | Sin clave propia de API de IA en la ruta básica |
+| [Skills CLI (Vercel Labs)](../fichas/vercel-skills.md) | Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica |
 | [Spec Kit](../fichas/spec-kit.md) | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. | Sin clave propia de API de IA en la ruta básica |
 | [superpowers](../fichas/superpowers.md) | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. | Sin clave propia de API de IA en la ruta básica |
 | [wshobson/agents](../fichas/wshobson-agents.md) | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. | Sin clave propia de API de IA en la ruta básica |

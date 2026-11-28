@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 2 de 3)
 
-Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (147 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -17,6 +17,17 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 Índice y tabla de decisión completa: `categoria-16.md`.
 
 ## Fichas
+
+### Nmap (`nmap`)
+
+- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 59/100
+- **Qué es:** Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para…
+- **Cuándo elegirlo:** Casos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.
+- **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nmap/nmap/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`. Éxito: Obtienes la lista de puertos abiertos y los servicios detectados.
+- **Combina con:** `metasploit` [16/explotacion-c2], `nuclei` [16/pruebas], `wireshark` [16/pruebas]
+- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
 
 ### masscan (`masscan`)
 
@@ -42,7 +53,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### PEASS-ng (`peass-ng`)
 
-- **Repo:** https://github.com/peass-ng/PEASS-ng · GPL-2.0-or-later (con aclaraciones) · nivel 3 · 72/100
+- **Repo:** https://github.com/peass-ng/PEASS-ng · GPL-2.0-or-later (con aclaraciones) · nivel 3 · 73/100
 - **Qué es:** Suite PEASS-ng (GPL) con LinPEAS y WinPEAS para privilege escalation enumeration.
 - **Cuándo elegirlo:** Casos: enumerar privesc en una VM Linux de HTB/GOAD; revisar un bastión Windows tras un acceso autorizado.
 - **Requisitos:** nivel 3: preparación sencilla, dominio especializado; C#; API de IA: no.
@@ -53,7 +64,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Sliver (`sliver`)
 
-- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 68/100 · recomendado en «Frameworks de C2 y post-explotación»
+- **Repo:** https://github.com/BishopFox/sliver · GPL-3.0 · nivel 4 · 69/100 · recomendado en «Frameworks de C2 y post-explotación»
 - **Qué es:** C2 open source de Bishop Fox orientado a red team y emulación autorizada (alternativa a Cobalt Strike de pago).
 - **Cuándo elegirlo:** Casos: montar un C2 de laboratorio con implant Linux/Windows; probar detección de canales C2 en un entorno controlado.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Go, Dockerfile, Makefile, go.mod; API de IA: no.
@@ -65,7 +76,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### CALDERA (`caldera`)
 
-- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 64/100 · recomendado en «Emulación de adversarios»
+- **Repo:** https://github.com/apache/caldera · Apache-2.0 · nivel 4 · 63/100 · recomendado en «Emulación de adversarios»
 - **Qué es:** Proyecto Apache de emulación de adversario con UI, agentes y biblioteca de habilidades ATT&CK.
 - **Cuándo elegirlo:** Casos: lanzar una operación ATT&CK contra VMs de laboratorio; comparar cobertura de detección entre dos campañas.
 - **Requisitos:** nivel 4: preparación difícil, dominio especializado; Python, Dockerfile, docker-compose.yml, package.json, requirements.txt; API de IA: no.
@@ -308,6 +319,18 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Instala desde https://arkime.com/downloads siguiendo la guía simple. Éxito: UI muestra sesiones capturadas.
 - **Combina con:** `wireshark` [16/pruebas], `suricata`
 
+### Fail2ban (`fail2ban`)
+
+- **Repo:** https://github.com/fail2ban/fail2ban · GPL-2.0 · nivel 2 · 63/100 · alternativa en «Bloqueo de IP por comportamiento»
+- **Qué es:** Ban automático por logs (GPL según COPYING; API NOASSERTION).
+- **Cuándo elegirlo:** Casos: proteger SSH de un VPS propio; banear force brute a un panel web.
+- **Requisitos:** nivel 2: preparación media; Python, setup.py; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/fail2ban/fail2ban.git` — fuente: https://github.com/fail2ban/fail2ban/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala el paquete de tu distro o clona y sigue COPYING/README; activa el jail sshd. Éxito: IPs repetidas quedan baneadas.
+- **Combina con:** `wazuh`
+- **Alternativas:** `crowdsec`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
 ### Suricata (`suricata`)
 
 - **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 63/100
@@ -317,18 +340,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OISF/suricata/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo. Éxito: Con tráfico de prueba ves alertas en eve.json o el SIEM.
 - **Combina con:** `wazuh`, `wireshark` [16/pruebas], `zeek`
-
-### Fail2ban (`fail2ban`)
-
-- **Repo:** https://github.com/fail2ban/fail2ban · GPL-2.0 · nivel 2 · 62/100 · alternativa en «Bloqueo de IP por comportamiento»
-- **Qué es:** Ban automático por logs (GPL según COPYING; API NOASSERTION).
-- **Cuándo elegirlo:** Casos: proteger SSH de un VPS propio; banear force brute a un panel web.
-- **Requisitos:** nivel 2: preparación media; Python, setup.py; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/fail2ban/fail2ban.git` — fuente: https://github.com/fail2ban/fail2ban/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala el paquete de tu distro o clona y sigue COPYING/README; activa el jail sshd. Éxito: IPs repetidas quedan baneadas.
-- **Combina con:** `wazuh`
-- **Alternativas:** `crowdsec`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ### OWASP Coraza (`coraza`)
 
@@ -430,7 +441,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### Falco (`falco`)
 
-- **Repo:** https://github.com/falcosecurity/falco · Apache-2.0 · nivel 4 · 76/100
+- **Repo:** https://github.com/falcosecurity/falco · Apache-2.0 · nivel 4 · 75/100
 - **Qué es:** Proyecto CNCF de seguridad en tiempo de ejecución para hosts Linux y Kubernetes.
 - **Cuándo elegirlo:** Casos: detectar un shell interactivo en un pod de producción propia; alertar sobre escritura inesperada en /etc dentro de un contenedor.
 - **Requisitos:** nivel 4: preparación difícil; C++, CMakeLists.txt, Makefile; API de IA: no.
@@ -585,49 +596,27 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Combina con:** `claude-code` [20/terminal], `ghidra` [16/reversing], `rea`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Sin alternativas declaradas. Clonar el diseño o el código de terceros puede infringir derechos de autor, marcas o términos de servicio: úsalo solo con…. El autor dice que existe adaptador Codex pero no está probado en una instalación real; MCP y análisis no certifican esa ruta de reconstrucción.
 
-### DefectDojo (`defectdojo`)
+### MobSF (Mobile Security Framework) (`mobsf`)
 
-- **Repo:** https://github.com/DefectDojo/django-DefectDojo · BSD-3-Clause · nivel 2 · 72/100
-- **Qué es:** Proyecto insignia de OWASP para gestión unificada de vulnerabilidades y seguridad de aplicaciones (ASPM), con edición comunitaria de código abierto.
-- **Cuándo elegirlo:** Casos: centralizar los informes de Semgrep, ZAP y Trivy de un equipo en un único tablero; medir el tiempo de corrección de hallazgos críticos por producto.
-- **Requisitos:** nivel 2: preparación media, varios servicios con Docker Compose; Python, docker-compose.yml, requirements.txt; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/DefectDojo/django-DefectDojo && cd django-DefectDojo && docker compose up` — fuente: https://github.com/DefectDojo/django-DefectDojo/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Clona el repo y levanta la versión de prueba con Docker Compose como indica el README; importa un informe de un escáner propio. Éxito: Ves los hallazgos deduplicados asociados a un producto y a una prueba.
-- **Combina con:** `semgrep`, `zaproxy` [16/pruebas], `trivy` [16/nube-contenedores], `nuclei` [16/pruebas], `dependency-track`, `dependency-check`
+- **Repo:** https://github.com/MobSF/Mobile-Security-Framework-MobSF · GPL-3.0 · nivel 2 · 72/100
+- **Qué es:** Plataforma de código abierto para evaluar la seguridad de aplicaciones móviles Android, iOS y Windows.
+- **Cuándo elegirlo:** Casos: Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código; Practicar con una app de entrenamiento de…. Evítalo si Quieres analizar apps de terceros sin permiso o compartir el servidor en una red sin reforzar su configuración.
+- **Requisitos:** nivel 2: preparación media; Python, Dockerfile, pyproject.toml; hardware prerequisites; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Con MobSF 4.6.9 publicado solo en 127.0.0.1, sube UnCrackable-Level1.apk, la app de práctica con licencia CC BY-SA 4.0 del repositorio OWASP/mastg (Crackmes/Android/Level_01) Éxito: Al terminar el análisis estático se abre el informe del paquete owasp.mstg.uncrackable1 con su puntuación de seguridad…
+- **Combina con:** `mastg` [16/referencias], `jadx` [16/reversing], `defectdojo`
 
 ### Semgrep (`semgrep`)
 
-- **Repo:** https://github.com/semgrep/semgrep · LGPL-2.1 · nivel 1 · 71/100
+- **Repo:** https://github.com/semgrep/semgrep · LGPL-2.1 · nivel 1 · 72/100
 - **Qué es:** Herramienta de análisis estático rápida y open source para buscar código, encontrar bugs y aplicar normas de seguridad. La edición comunitaria es LGPL-2.1; la empresa Semgrep vende la AppSec Platform con reglas y análisis propietarios.
 - **Cuándo elegirlo:** Casos: Detectar patrones inseguros repetidos; Aplicar reglas de calidad en CI.
 - **Requisitos:** nivel 1: preparación sencilla; Python mediante uv o pipx; carpeta de prueba; WSL si tu ruta Windows lo necesita; hardware prerequisites; API de IA: no; Python mediante uv o pipx; carpeta de prueba; WSL si tu ruta Windows lo necesita.
 - **Instalación (documentada en la fuente; no ejecutada):** `uv tool install semgrep` — fuente: https://github.com/semgrep/semgrep/blob/develop/README.md
 - **Primera prueba propuesta (no ejecutada):** Ejecuta una regla sencilla sobre un archivo ficticio con un patrón conocido Éxito: El hallazgo señala la línea y puedes comprobarlo manualmente
 - **Combina con:** `claude-code` [20/terminal], `security-audit-skill` [16/skills], `strix` [16/agentes], `defending-code-reference-harness` [16/skills], `raddebugger` [16/depuracion], `shannon` [16/agentes]
-- **Alternativas:** `ast-grep`, `sonarqube`
+- **Alternativas:** `ast-grep`, `sonarqube`, `codeql`
 - **Riesgos y avisos:** Alternativas (elige una): ast-grep. La combinación con defending-code-reference-harness pasa a marcarse por arquitectura. El README documenta plugin de Claude Code; un hallazgo estático necesita revisión y no demuestra por sí solo una vulnerabilidad explotable.
-
-### OWASP Threat Dragon (`threat-dragon`)
-
-- **Repo:** https://github.com/OWASP/threat-dragon · Apache-2.0 · nivel 1 · 70/100 · recomendado en «Modelado de amenazas»
-- **Qué es:** Proyecto OWASP de código abierto para modelado de amenazas con diagramas.
-- **Cuándo elegirlo:** Casos: modelar las amenazas de una API nueva durante el diseño; documentar mitigaciones STRIDE para una revisión de arquitectura.
-- **Requisitos:** nivel 1: preparación sencilla; JavaScript, Dockerfile, package.json; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `docker pull threatdragon/owasp-threat-dragon:stable` — fuente: https://github.com/OWASP/threat-dragon/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Descarga el instalador de escritorio desde las releases oficiales o la imagen Docker del README y crea un modelo de ejemplo. Éxito: Obtienes un diagrama con amenazas asociadas y un informe exportable.
-- **Combina con:** `asvs` [16/referencias], `cheatsheetseries` [16/referencias], `owasp-top10` [16/referencias]
-- **Alternativas:** `pytm`
-
-### bla (`bla`)
-
-- **Repo:** https://github.com/qybaihe/bla · MIT · nivel 2 · 68/100
-- **Qué es:** BLA (Blind LLM Agents), servidor MCP y CLI de defensa para proteger releases de software frente a agentes de ingeniería inversa con IA, como REA. Lo crea @qybaihe. Licencia MIT.
-- **Cuándo elegirlo:** Casos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas.
-- **Requisitos:** nivel 2: preparación media; Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba; hardware prerequisites; API de IA: no; Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `npx bla-agents setup` — fuente: https://github.com/qybaihe/bla/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Inspecciona una protección en una copia pequeña y compara comportamiento y diferencias antes de adoptarla Éxito: Puedes identificar qué transforma y qué pruebas conservarían la función original
-- **Combina con:** `rea` [16/agentes], `claude-code` [20/terminal], `frida` [16/reversing]
-- **Riesgos y avisos:** Sin alternativas declaradas. Mide si la ofuscación compensa su coste de mantenimiento. Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

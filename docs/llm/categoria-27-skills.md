@@ -22,8 +22,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `anatomy` | Skill para crear ilustraciones isométricas e interactivas de máquinas y… | 2 Intermedio | 71 | MIT (OSI permisiva) | sin grupo |
 | `taste-skill` | Skill design-taste-frontend para dirección visual y revisión de sitios; otros… | 1 Básico | 70 | MIT (OSI permisiva) | alternativa |
 | `modern-web-guidance` | Herramienta y skill para que un agente consulte documentación actual sobre… | 2 Intermedio | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `design.md` | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `android-skills` | Añade guías oficiales de Android a Claude Code, Codex o Antigravity para… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `design.md` | Especificación y CLI para documentar identidad visual en DESIGN.md,validar… | 2 Intermedio | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `impeccable` | Vocabulario y playbooks de diseño para agentes, con detector determinista y… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
 | `skills-emil` | Colección de skills enfocada en diseño de interfaces y en mejorar la… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
 | `logo-design-skill` | Skill para diseñar logotipos con un agente, desde la idea y las referencias… | 2 Intermedio | 60 | MIT (OSI permisiva) | sin grupo |
@@ -33,7 +33,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `3dviz-pro-max` | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o… | 2 Intermedio | 53 | MIT (OSI permisiva) | recomendado |
 | `threejs-skills` | Colección de instrucciones para que agentes programen escenas y experiencias 3D… | 2 Intermedio | 53 | MIT (OSI permisiva) | alternativa |
 | `gsap-skills` | Skills oficiales con instrucciones y ejemplos para que agentes creen… | 2 Intermedio | 51 | MIT (OSI permisiva) | sin grupo |
-| `hallmark` | Skill de diseño para agentes que ayuda a construir interfaces con decisiones… | 2 Intermedio | 51 | MIT (OSI permisiva) | alternativa |
+| `hallmark` | Skill de diseño para agentes que ayuda a construir interfaces con decisiones… | 2 Intermedio | 50 | MIT (OSI permisiva) | alternativa |
 | `blender-skills` | Skills para guiar a un agente por modelado y preparación de escenas en Blender… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `design-dna` | Skill para analizar referencias visuales, extraer decisiones de diseño y… | 2 Intermedio | 46 | MIT (OSI permisiva) | sin grupo |
 | `threejs-game-skills` | Skills para que un agente construya juegos de navegador con Three.js, interfaz… | 2 Intermedio | 44 | MIT (OSI permisiva) | sin grupo |
@@ -96,17 +96,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `front-end-checklist`
 - **Riesgos y avisos:** Documenta Claude Code, Codex y Antigravity; el modelo local es el buscador de documentación y no un sustituto completo del agente de código.
 
-### design.md (`design.md`)
-
-- **Repo:** https://github.com/google-labs-code/design.md · Apache-2.0 · nivel 2 · 64/100
-- **Qué es:** Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
-- **Cuándo elegirlo:** Casos: Documentar una identidad visual; Comparar dos versiones de tokens.
-- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node para CLI; archivo DESIGN.md de prueba; hardware prerequisites; API de IA: no; Node para CLI; archivo DESIGN.md de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `npx @google/design.md lint DESIGN.md` — fuente: https://github.com/google-labs-code/design.md/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
-- **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
-- **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
-
 ### Android Skills (`android-skills`)
 
 - **Repo:** https://github.com/android/skills · Apache-2.0 · nivel 2 · 63/100
@@ -117,6 +106,17 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** En un proyecto Android de prueba instala una sola skill desde la ruta de tu cliente y pide una revisión acotada. Éxito: El asistente identifica la skill y aporta una revisión o propuesta que puedes comprobar en el proyecto.
 - **Combina con:** `codex` [20/terminal]
 - **Riesgos y avisos:** Revisa las instrucciones SKILL.md y el alcance de las herramientas antes de dar acceso a un dispositivo real o a un proyecto de producción.
+
+### design.md (`design.md`)
+
+- **Repo:** https://github.com/google-labs-code/design.md · Apache-2.0 · nivel 2 · 63/100
+- **Qué es:** Especificación de formato de Google Labs (Apache 2.0) para describir una identidad visual a agentes de código, con CLI de validación. Versión 0.4.0; el campo de versión de la especificación es aún «alpha».
+- **Cuándo elegirlo:** Casos: Documentar una identidad visual; Comparar dos versiones de tokens.
+- **Requisitos:** nivel 2: preparación sencilla, requiere programar con él; Node para CLI; archivo DESIGN.md de prueba; hardware prerequisites; API de IA: no; Node para CLI; archivo DESIGN.md de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `npx @google/design.md lint DESIGN.md` — fuente: https://github.com/google-labs-code/design.md/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Valida un archivo de identidad y corrige una referencia de token rota Éxito: Puedes revisar el JSON de hallazgos y repetir la validación
+- **Combina con:** `tailwindcss` [9/estilos], `impeccable`, `claude-code` [20/terminal], `design-dna`, `open-design` [9/diseno], `stitch-sdk` [9/ia-ui]
+- **Riesgos y avisos:** La especificación sigue en alpha y puede cambiar. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente.
 
 ### impeccable (`impeccable`)
 
@@ -222,7 +222,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### hallmark (`hallmark`)
 
-- **Repo:** https://github.com/Nutlope/hallmark · MIT · nivel 2 · 51/100 · alternativa en «Skills de diseño de interfaces para agentes»
+- **Repo:** https://github.com/Nutlope/hallmark · MIT · nivel 2 · 50/100 · alternativa en «Skills de diseño de interfaces para agentes»
 - **Qué es:** Skill de diseño (MIT) de Nutlope, publicada como «hecha por Together AI», para Claude Code, Codex, Cursor y OpenCode. Activa, sin releases.
 - **Cuándo elegirlo:** Casos: Preparar una página de empresa; Revisar una landing genérica.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible; brief de sitio; acceso a recursos si descargas fotos; hardware prerequisites; API de IA: no; Agente compatible; brief de sitio; acceso a recursos si descargas fotos.

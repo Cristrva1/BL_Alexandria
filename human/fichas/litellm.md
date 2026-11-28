@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación sencilla; requiere programar con él
 
-**Puntuación de calidad** 78/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 75/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** MIT + licencia Enterprise (litellm/enterprise/). Fuente: [LICENSE](https://github.com/BerriAI/litellm/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -55,9 +55,9 @@ Grupo **Pasarelas y routers de proveedores LLM**: litellm ocupa la posición 1 d
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **litellm** (esta ficha) ⭐ recomendado | 78 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
-| 2 | [OmniRoute](omniroute.md) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
-| 3 | [claude-code-router](claude-code-router.md) | 58 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
+| 1 | **litellm** (esta ficha) ⭐ recomendado | 75 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
+| 2 | [OmniRoute](omniroute.md) | 74 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
+| 3 | [claude-code-router](claude-code-router.md) | 55 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
 
 ## Acceso, coste y equipo
 

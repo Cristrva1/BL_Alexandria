@@ -27,7 +27,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `jadx` | Descompilador de archivos DEX y APK para explorar código Java reconstruido y… | 2 Intermedio | 64 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `capa` | Detecta capacidades en binarios/malware (anti-debug, C2, persistencia…)… | 3 Avanzado | 60 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `frida` | Herramientas de instrumentación dinámica para observar y modificar el… | 3 Avanzado | 59 | wxWindows Library Licence 3.1 (OSI copyleft) | sin grupo |
-| `yara` | Motor de reglas para identificar malware y artefactos por patrones de bytes… | 3 Avanzado | 55 | BSD-3-Clause (OSI permisiva) | sin grupo |
+| `yara` | Motor de reglas para identificar malware y artefactos por patrones de bytes… | 3 Avanzado | 54 | BSD-3-Clause (OSI permisiva) | sin grupo |
 | `rizin` | Herramientas para analizar binarios y estudiar programas mediante… | 3 Avanzado | 48 | LGPL-3.0 (OSI copyleft) | alternativa |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -136,7 +136,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### YARA (`yara`)
 
-- **Repo:** https://github.com/VirusTotal/yara · BSD-3-Clause · nivel 3 · 55/100
+- **Repo:** https://github.com/VirusTotal/yara · BSD-3-Clause · nivel 3 · 54/100
 - **Qué es:** Motor open source (BSD-3-Clause) mantenido en el org VirusTotal para matching de malware.
 - **Cuándo elegirlo:** Casos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; C; API de IA: no.

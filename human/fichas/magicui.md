@@ -48,7 +48,7 @@ Grupo **Componentes animados para React**: magicui ocupa la posición 2 de 2 (al
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [React Bits](react-bits.md) ⭐ recomendado | 59 | Si buscas esto: la mayor colección open source de componentes React animados e interactivos para webs llamativas. |
+| 1 | [React Bits](react-bits.md) ⭐ recomendado | 59 | Si buscas esto: efectos de texto, fondos gráficos y componentes interactivos para añadir animaciones puntuales a una interfaz React. |
 | 2 | **magicui** (esta ficha) | 53 | Si buscas esto: componentes React para componer secciones de página con shadcn y Tailwind, como una cuadrícula Bento o un bloque de video. |
 
 ## Acceso, coste y equipo

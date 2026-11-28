@@ -19,15 +19,15 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
 | `spec-kit` | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. | 1 Básico | 76 | MIT (OSI permisiva) | recomendado |
-| `ponytail` | Skill que hace que tu agente de código piense como un senior minimalista: el… | 1 Básico | 74 | MIT (OSI permisiva) | sin grupo |
-| `ecc` | Sistema de skills, hooks y configuración para agentes de código, con rutas… | 2 Intermedio | 72 | MIT (OSI permisiva) | recomendado |
-| `elephant-goldfish-model` | Plugin con instrucciones para diseñar y revisar software con agentes mediante… | 2 Intermedio | 68 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `gstack` | Conjunto de skills y herramientas para organizar planificación, implementación… | 2 Intermedio | 66 | MIT (OSI permisiva) | alternativa |
-| `agent-skills` | Colección de Addy Osmani con skills de ingeniería para especificar, planificar… | 1 Básico | 64 | MIT (OSI permisiva) | alternativa |
+| `ponytail` | Skill que hace que tu agente de código piense como un senior minimalista: el… | 1 Básico | 73 | MIT (OSI permisiva) | sin grupo |
+| `ecc` | Sistema de skills, hooks y configuración para agentes de código, con rutas… | 2 Intermedio | 70 | MIT (OSI permisiva) | recomendado |
+| `elephant-goldfish-model` | Plugin con instrucciones para diseñar y revisar software con agentes mediante… | 2 Intermedio | 67 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `book-to-skill` | Herramientas para convertir un libro técnico en PDF en una skill que un agente… | 2 Intermedio | 64 | MIT (OSI permisiva) | sin grupo |
+| `gstack` | Conjunto de skills y herramientas para organizar planificación, implementación… | 2 Intermedio | 64 | MIT (OSI permisiva) | alternativa |
 | `skills` | Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño… | 1 Básico | 62 | MIT (OSI permisiva) | sin grupo |
-| `superpowers` | Metodología completa de desarrollo para agentes construida sobre skills… | 1 Básico | 59 | MIT (OSI permisiva) | alternativa |
-| `bmad-method` | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev)… | 1 Básico | 58 | MIT (OSI permisiva) | alternativa |
+| `agent-skills` | Colección de Addy Osmani con skills de ingeniería para especificar, planificar… | 1 Básico | 61 | MIT (OSI permisiva) | alternativa |
+| `bmad-method` | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev)… | 1 Básico | 57 | MIT (OSI permisiva) | alternativa |
+| `superpowers` | Metodología completa de desarrollo para agentes construida sobre skills… | 1 Básico | 57 | MIT (OSI permisiva) | alternativa |
 | `codex-plugin-cc` | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y… | 1 Básico | 56 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `claude-token-efficient` | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de… | 1 Básico | 47 | MIT (OSI permisiva) | sin grupo |
 | `andrej-karpathy-skills` | Instrucciones para declarar supuestos, simplificar cambios y comprobar… | 1 Básico | 46 | — (sin licencia detectada) | sin grupo |
@@ -55,7 +55,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Ponytail (`ponytail`)
 
-- **Repo:** https://github.com/DietrichGebert/ponytail · MIT · nivel 1 · 74/100
+- **Repo:** https://github.com/DietrichGebert/ponytail · MIT · nivel 1 · 73/100
 - **Qué es:** Skill de DietrichGebert (MIT) que hace que el agente escriba solo el código necesario. Activa (v5.3.3); sus benchmarks son del propio proyecto.
 - **Cuándo elegirlo:** Casos: Revisar deuda técnica y detectar código que se puede eliminar; Evaluar alternativas sencillas antes de crear una abstracción nueva.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible;  proyecto donde comparar un cambio pequeño; hardware prerequisites; API de IA: no; Agente compatible; proyecto donde comparar un cambio pequeño.
@@ -72,7 +72,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### ECC (`ecc`)
 
-- **Repo:** https://github.com/affaan-m/ECC · MIT · nivel 2 · 72/100 · recomendado en «Metodologías y harness para agentes de código»
+- **Repo:** https://github.com/affaan-m/ECC · MIT · nivel 2 · 70/100 · recomendado en «Metodologías y harness para agentes de código»
 - **Qué es:** ECC, de affaan-m, se presenta como un «sistema operativo de harness» para agentes (MIT). Es open core: el producto ECC Pro es una GitHub App de pago para repositorios privados.
 - **Cuándo elegirlo:** Casos: Configurar convenciones, skills y comprobaciones para un equipo; Probar una mejora de contexto sin activar todos los componentes.
 - **Requisitos:** nivel 2: preparación pesada, se instala dentro de un agente (skill, plugin o MCP); Node.js compatible;  Git y cliente que elegirá el instalador; hardware prerequisites; API de IA: no; Node.js compatible; Git y cliente que elegirá el instalador.
@@ -84,7 +84,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### elephant-goldfish-model (`elephant-goldfish-model`)
 
-- **Repo:** https://github.com/google/elephant-goldfish-model · Apache-2.0 · nivel 2 · 68/100
+- **Repo:** https://github.com/google/elephant-goldfish-model · Apache-2.0 · nivel 2 · 67/100
 - **Qué es:** EGM, plugin de código abierto de Google (Apache 2.0) para asistentes de IA, que separa diseñar con contexto de revisar con ojos frescos. Muy reciente (v0.1.1).
 - **Cuándo elegirlo:** Casos: Documentar alternativas para una funcionalidad antes de elegir una; Revisar una especificación con un contexto de lectura renovado.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Cliente compatible;  una propuesta o documento propio para revisar; hardware prerequisites; API de IA: no; Cliente compatible; una propuesta o documento propio para revisar.
@@ -97,41 +97,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Plantea una decisión de diseño y pide una revisión con una perspectiva nueva Éxito: Obtienes un brief y observaciones que puedes contrastar con el contexto inicial
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `spec-kit`
 - **Riesgos y avisos:** El repositorio de Google declara que no es un producto con soporte oficial; cada host tiene una guía propia.
-
-### gstack (`gstack`)
-
-- **Repo:** https://github.com/garrytan/gstack · MIT · nivel 2 · 66/100 · alternativa en «Metodologías y harness para agentes de código»
-- **Qué es:** «Fábrica de software» de código abierto (MIT) de Garry Tan, presidente y CEO de Y Combinator, que convierte Claude Code y otros agentes en un equipo de ingeniería virtual. Muy activo (v1.99.4.0), con canal estable y releases frecuentes.
-- **Cuándo elegirlo:** Casos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia.
-- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js; hardware prerequisites; API de IA: no; Git, Bun y cliente autenticado; en Windows revisar Git Bash o WSL y Node.js.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/garrytan/gstack/blob/main/README.md
-
-  ```bash
-  git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/gstack
-  cd ~/gstack && ./setup --host auto      # or: ./setup --host codex
-  ./setup --status                         # one row per install: host, tier, scope, version, path
-  ```
-- **Primera prueba propuesta (no ejecutada):** Consulta el estado de instalación y prueba una revisión o planificación sobre un cambio pequeño Éxito: El estado indica el host y puedes revisar el resultado de la skill elegida
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
-- **Alternativas:** `ecc`, `agent-skills`, `superpowers`
-- **Riesgos y avisos:** Alternativas (elige una): superpowers, ecc. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code.
-
-### Agent Skills (Addy Osmani) (`agent-skills`)
-
-- **Repo:** https://github.com/addyosmani/agent-skills · MIT · nivel 1 · 64/100 · alternativa en «Metodologías y harness para agentes de código»
-- **Qué es:** Skills de ingeniería de Addy Osmani (MIT) para agentes de código, centradas en procesos de nivel producción. Activas (0.6.16).
-- **Cuándo elegirlo:** Casos: Preparar una especificación antes de escribir una funcionalidad; Revisar un diff con criterios de calidad y pruebas.
-- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Node.js y un agente compatible;  instalar solo las skills necesarias; hardware prerequisites; API de IA: no; Node.js y un agente compatible; instalar solo las skills necesarias.
-- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/addyosmani/agent-skills/blob/main/README.md
-
-  ```bash
-  npx skills add addyosmani/agent-skills            # install all 25 skills
-  npx skills add addyosmani/agent-skills --list     # browse before installing
-  ```
-- **Primera prueba propuesta (no ejecutada):** Pide una revisión de calidad sobre un cambio pequeño del proyecto Éxito: La revisión aplica los criterios de la skill y señala archivos concretos
-- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `gemini-cli` [20/terminal], `plugins` [2/catalogos]
-- **Alternativas:** `ecc`, `gstack`, `superpowers`
-- **Riesgos y avisos:** Alternativa (elige una): superpowers. Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda.
 
 ### book-to-skill (`book-to-skill`)
 
@@ -149,6 +114,24 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `docling` [13/conversion], `claude-code` [20/terminal], `hermes-agent` [21/asistentes]
 - **Riesgos y avisos:** Convierte solo libros cuyos derechos tengas: la skill generada contiene el contenido del libro. La portabilidad corresponde al estándar Agent Skills; empieza con material propio y revisa qué contenido puede redistribuirse.
 
+### gstack (`gstack`)
+
+- **Repo:** https://github.com/garrytan/gstack · MIT · nivel 2 · 64/100 · alternativa en «Metodologías y harness para agentes de código»
+- **Qué es:** «Fábrica de software» de código abierto (MIT) de Garry Tan, presidente y CEO de Y Combinator, que convierte Claude Code y otros agentes en un equipo de ingeniería virtual. Muy activo (v1.99.4.0), con canal estable y releases frecuentes.
+- **Cuándo elegirlo:** Casos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia.
+- **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js; hardware prerequisites; API de IA: no; Git, Bun y cliente autenticado; en Windows revisar Git Bash o WSL y Node.js.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/garrytan/gstack/blob/main/README.md
+
+  ```bash
+  git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/gstack
+  cd ~/gstack && ./setup --host auto      # or: ./setup --host codex
+  ./setup --status                         # one row per install: host, tier, scope, version, path
+  ```
+- **Primera prueba propuesta (no ejecutada):** Consulta el estado de instalación y prueba una revisión o planificación sobre un cambio pequeño Éxito: El estado indica el host y puedes revisar el resultado de la skill elegida
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `opencode` [20/terminal]
+- **Alternativas:** `ecc`, `agent-skills`, `superpowers`
+- **Riesgos y avisos:** Alternativas (elige una): superpowers, ecc. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code.
+
 ### skills (`skills`)
 
 - **Repo:** https://github.com/mattpocock/skills · MIT · nivel 1 · 62/100
@@ -160,21 +143,26 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `claude-plugins-official` [2/catalogos], `codex` [20/terminal], `plugins` [2/catalogos]
 - **Riesgos y avisos:** Se quitó awesome-agent-skills: es un catálogo, no una integración. El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar.
 
-### superpowers (`superpowers`)
+### Agent Skills (Addy Osmani) (`agent-skills`)
 
-- **Repo:** https://github.com/obra/superpowers · MIT · nivel 1 · 59/100 · alternativa en «Metodologías y harness para agentes de código»
-- **Qué es:** Metodología completa de desarrollo para agentes de código de Jesse Vincent y Prime Radiant (MIT), basada en skills combinables. Muy activa (v7.0.2); Prime Radiant ofrece soporte comercial.
-- **Cuándo elegirlo:** Casos: Dividir una funcionalidad en tareas que se puedan verificar; Trabajar con pruebas y revisión antes de cerrar un cambio.
-- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Cliente compatible;  proyecto pequeño o carpeta de prueba; hardware prerequisites; API de IA: no; Cliente compatible; proyecto pequeño o carpeta de prueba.
-- **Instalación (documentada en la fuente; no ejecutada):** `/plugin install superpowers@claude-plugins-official` — fuente: https://github.com/obra/superpowers/blob/main/README.md
-- **Primera prueba propuesta (no ejecutada):** Describe una mejora sencilla y revisa la fase de definición y planificación Éxito: El agente muestra una propuesta acotada antes de cambiar archivos
-- **Combina con:** `claude-plugins-official` [2/catalogos], `codex` [20/terminal], `gemini-cli` [20/terminal], `hermes-agent` [21/asistentes], `claude-code` [20/terminal]
-- **Alternativas:** `ecc`, `gstack`, `agent-skills`
-- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README.
+- **Repo:** https://github.com/addyosmani/agent-skills · MIT · nivel 1 · 61/100 · alternativa en «Metodologías y harness para agentes de código»
+- **Qué es:** Skills de ingeniería de Addy Osmani (MIT) para agentes de código, centradas en procesos de nivel producción. Activas (0.6.16).
+- **Cuándo elegirlo:** Casos: Preparar una especificación antes de escribir una funcionalidad; Revisar un diff con criterios de calidad y pruebas.
+- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Node.js y un agente compatible;  instalar solo las skills necesarias; hardware prerequisites; API de IA: no; Node.js y un agente compatible; instalar solo las skills necesarias.
+- **Instalación (documentada en la fuente; no ejecutada):** fuente https://github.com/addyosmani/agent-skills/blob/main/README.md
+
+  ```bash
+  npx skills add addyosmani/agent-skills            # install all 25 skills
+  npx skills add addyosmani/agent-skills --list     # browse before installing
+  ```
+- **Primera prueba propuesta (no ejecutada):** Pide una revisión de calidad sobre un cambio pequeño del proyecto Éxito: La revisión aplica los criterios de la skill y señala archivos concretos
+- **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `gemini-cli` [20/terminal], `plugins` [2/catalogos]
+- **Alternativas:** `ecc`, `gstack`, `superpowers`
+- **Riesgos y avisos:** Alternativa (elige una): superpowers. Antigravity tiene una guía propia y limitaciones de comandos en algunas versiones; usa las skills subyacentes cuando corresponda.
 
 ### BMAD Method (`bmad-method`)
 
-- **Repo:** https://github.com/bmad-code-org/BMAD-METHOD · MIT · nivel 1 · 58/100 · alternativa en «Desarrollo guiado por especificaciones»
+- **Repo:** https://github.com/bmad-code-org/BMAD-METHOD · MIT · nivel 1 · 57/100 · alternativa en «Desarrollo guiado por especificaciones»
 - **Qué es:** BMad Method es un marco de «desarrollo ágil dirigido por IA» de bmad-code-org. El README declara licencia MIT, aunque GitHub la marca como NOASSERTION.
 - **Cuándo elegirlo:** Casos: Convertir una idea de producto en un primer cambio acotado; Revisar requisitos y decisiones antes de implementar una función.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Node.js, Git y uv;  cliente compatible con Agent Skills; hardware prerequisites; API de IA: no; Node.js, Git y uv; cliente compatible con Agent Skills.
@@ -188,6 +176,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Combina con:** `claude-code` [20/terminal], `codex` [20/terminal], `skillspector` [16/skills]
 - **Alternativas:** `spec-kit`
 - **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). Alternativa (elige una): spec-kit. Usa la v6.12 si necesitas estabilidad. El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable.
+
+### superpowers (`superpowers`)
+
+- **Repo:** https://github.com/obra/superpowers · MIT · nivel 1 · 57/100 · alternativa en «Metodologías y harness para agentes de código»
+- **Qué es:** Metodología completa de desarrollo para agentes de código de Jesse Vincent y Prime Radiant (MIT), basada en skills combinables. Muy activa (v7.0.2); Prime Radiant ofrece soporte comercial.
+- **Cuándo elegirlo:** Casos: Dividir una funcionalidad en tareas que se puedan verificar; Trabajar con pruebas y revisión antes de cerrar un cambio.
+- **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Cliente compatible;  proyecto pequeño o carpeta de prueba; hardware prerequisites; API de IA: no; Cliente compatible; proyecto pequeño o carpeta de prueba.
+- **Instalación (documentada en la fuente; no ejecutada):** `/plugin install superpowers@claude-plugins-official` — fuente: https://github.com/obra/superpowers/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** Describe una mejora sencilla y revisa la fase de definición y planificación Éxito: El agente muestra una propuesta acotada antes de cambiar archivos
+- **Combina con:** `claude-plugins-official` [2/catalogos], `codex` [20/terminal], `gemini-cli` [20/terminal], `hermes-agent` [21/asistentes], `claude-code` [20/terminal]
+- **Alternativas:** `ecc`, `gstack`, `agent-skills`
+- **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Alternativas (elige una): agent-skills, ecc, gstack. Se quitaron awesome-claude-code y agent-toolkit porque no hay integración. Claude Code, Codex y Antigravity tienen rutas de instalación propias en el README.
 
 ### codex-plugin-cc (`codex-plugin-cc`)
 

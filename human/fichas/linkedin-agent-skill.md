@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 48/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -46,8 +46,8 @@ Grupo **Skills para redes sociales**: linkedin-agent-skill ocupa la posición 2 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [instagram-agent-skill](instagram-agent-skill.md) ⭐ recomendado | 56 | Si buscas esto: skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. |
-| 2 | **linkedin-agent-skill** (esta ficha) | 47 | Si buscas esto: skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. |
+| 1 | [instagram-agent-skill](instagram-agent-skill.md) ⭐ recomendado | 55 | Si buscas esto: skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. |
+| 2 | **linkedin-agent-skill** (esta ficha) | 48 | Si buscas esto: skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. |
 
 ## Acceso, coste y equipo
 

@@ -6,7 +6,16 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 
 | Añadido | Repo | Qué hace | Acceso básico |
 |---|---|---|---|
+| 2026-11-27 | [Skills CLI (Vercel Labs)](fichas/vercel-skills.md) | Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-27 | [Pake](fichas/pake.md) | Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-27 | [MobSF (Mobile Security Framework)](fichas/mobsf.md) | Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-27 | [libass](fichas/libass.md) | Dibuja subtítulos ASS y SSA con estilos, posiciones y tiempos en programas de video, bibliotecas multimedia y reproductores compatibles. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-27 | [gosec](fichas/gosec.md) | Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código. | API de IA opcional |
+| 2026-11-27 | [Documenso](fichas/documenso.md) | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. | API de IA opcional |
+| 2026-11-27 | [CodeQL](fichas/codeql.md) | Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-27 | [Cap](fichas/cap.md) | Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-27 | [Brakeman](fichas/brakeman.md) | Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo. | Sin clave propia de API de IA en la ruta básica |
+| 2026-11-27 | [Bandit](fichas/bandit.md) | Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-26 | [ImageMagick](fichas/imagemagick.md) | Convierte, redimensiona y prepara imágenes desde la terminal. Puedes generar miniaturas y variantes web en tu equipo sin un modelo de IA. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-24 | [TOON](fichas/toon-format.md) | Convierte listas de objetos JSON a un texto con encabezado y filas para experimentar con entradas más compactas para modelos. | Sin clave propia de API de IA en la ruta básica |
 | 2026-11-24 | [pysubs2](fichas/pysubs2.md) | Convierte formatos de subtítulos y ajusta sus tiempos en lote desde Python o la terminal, sin cambiar el video ni usar una API de IA. | Sin clave propia de API de IA en la ruta básica |

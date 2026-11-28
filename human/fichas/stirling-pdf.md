@@ -37,6 +37,12 @@ Servidor Java (imagen basada en Eclipse Temurin) con frontend TypeScript, que in
 | [paperless-ngx](paperless-ngx.md) | Preparar o limpiar PDF antes de archivarlos (combinación por arquitectura). | Independientes; cambia el puerto 8080 si choca con otro servicio. |
 | [docuseal](docuseal.md) | Combinación recíproca: docuseal lo enlaza como «Preparar o convertir documentos antes de enviarlos a firmar (combinación por arquitectura)». | Orden indicado desde docuseal: Independientes; cambia puertos si coinciden. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Documenso](documenso.md)
+
 **Notas:** Alternativa (elige una): pdfcraft.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v3.3.0 (2026-11-05) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
@@ -50,7 +56,7 @@ Grupo **Suites de herramientas PDF**: Stirling-PDF ocupa la posición 1 de 2 (re
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Stirling-PDF** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
-| 2 | [pdfcraft](pdfcraft.md) | 54 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
+| 2 | [pdfcraft](pdfcraft.md) | 55 | Si buscas esto: conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. |
 
 ## Acceso, coste y equipo
 

@@ -49,9 +49,9 @@ Grupo **Catálogos de skills y plugins para agentes**: Awesome Claude Code ocupa
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) ⭐ recomendado | 68 | Si quieres el catálogo más grande de skills instalables para varios agentes. |
-| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 62 | Si quieres solo plugins publicados por Anthropic. |
-| 3 | [Awesome Agent Skills](awesome-agent-skills.md) | 54 | Si quieres skills en formato portable para varios agentes. |
-| 4 | [wshobson/agents](wshobson-agents.md) | 51 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
+| 2 | [Claude Code Plugins Directory](claude-plugins-official.md) | 63 | Si quieres solo plugins publicados por Anthropic. |
+| 3 | [Awesome Agent Skills](awesome-agent-skills.md) | 53 | Si quieres skills en formato portable para varios agentes. |
+| 4 | [wshobson/agents](wshobson-agents.md) | 50 | Si quieres subagentes y plugins listos para Claude Code por especialidad. |
 | 5 | **Awesome Claude Code** (esta ficha) | 48 | Si usas Claude Code y quieres una lista curada de comandos, hooks y flujos. |
 
 ## Acceso, coste y equipo

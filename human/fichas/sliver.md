@@ -12,7 +12,7 @@
 
 **Nivel:** 4 Experto — preparación difícil; dominio especializado
 
-**Puntuación de calidad** 68/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 69/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -50,7 +50,7 @@ Grupo **Frameworks de C2 y post-explotación**: Sliver ocupa la posición 1 de 3
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | **Sliver** (esta ficha) ⭐ recomendado | 68 | Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. |
+| 1 | **Sliver** (esta ficha) ⭐ recomendado | 69 | Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. |
 | 2 | [Empire](empire.md) | 60 | Si buscas esto: framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. |
 | 3 | [Mythic](mythic.md) | 48 | Si buscas esto: framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. |
 

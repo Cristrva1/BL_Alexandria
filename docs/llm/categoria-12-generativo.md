@@ -23,7 +23,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `wan2-2` | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o… | 3 Avanzado | 67 | Apache-2.0 (OSI permisiva) | recomendado |
 | `hunyuanvideo` | Modelo abierto de Tencent de 13B parámetros para generar video a partir de… | 3 Avanzado | 57 | Tencent Hunyuan Community License (source-available) | alternativa |
 | `wan2gp` | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan… | 3 Avanzado | 53 | WanGP Community License 2.0 (no OSI) (source-available) | sin grupo |
-| `ai-youtube-shorts-generator` | Pipeline de Python que extrae clips verticales de videos de YouTube mediante… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
+| `ai-youtube-shorts-generator` | Pipeline de Python que extrae clips verticales de videos de YouTube mediante… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 | `short-video-factory` | Aplicación de escritorio para crear videos cortos de producto combinando guion… | 2 Intermedio | 47 | AGPL-3.0 (OSI copyleft) | alternativa |
 | `hunyuanvideo-1-5` | Modelo de video de Tencent de 8,3B parámetros que genera clips desde texto o… | 3 Avanzado | 42 | Tencent Hunyuan Community License (source-available) | alternativa |
 
@@ -106,7 +106,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### AI-Youtube-Shorts-Generator (`ai-youtube-shorts-generator`)
 
-- **Repo:** https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator · MIT · nivel 2 · 49/100
+- **Repo:** https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator · MIT · nivel 2 · 48/100
 - **Qué es:** AI YouTube Shorts Generator, pipeline en Python para extraer clips verticales de vídeos largos de YouTube, de @Anil-matcha. Licencia MIT. Tiene ~6k estrellas (sin releases) y lo «impulsa» MuAPI, cuyas APIs de pago se promocionan en el…
 - **Cuándo elegirlo:** Casos: Obtener clips de un tutorial propio; Comparar criterios de selección de momentos.
 - **Requisitos:** nivel 2: preparación media, requiere clave de API; Python; FFmpeg y dependencias locales si eliges ese modo; clave LLM; video autorizado; hardware prerequisites; API de IA: sí; Python; FFmpeg y dependencias locales si eliges ese modo; clave LLM; video autorizado.

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 966 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 974 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -326,7 +326,7 @@
    "title": "Skills, plugins y métodos para agentes",
    "desc": "Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.",
    "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
-   "count": 33,
+   "count": 34,
    "subs": [
     {
      "key": "catalogos",
@@ -445,7 +445,7 @@
    "title": "Entender código y comprobar su calidad",
    "desc": "Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-   "count": 26,
+   "count": 27,
    "subs": [
     {
      "key": "codigo",
@@ -580,7 +580,7 @@
    "title": "Editar, grabar y generar video",
    "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 21,
+   "count": 22,
    "subs": [
     {
      "key": "edicion",
@@ -599,7 +599,7 @@
    "title": "PDF, OCR y procesamiento de documentos",
    "desc": "Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.",
    "file": "human/categorias/13-documentos-presentaciones.md",
-   "count": 22,
+   "count": 23,
    "subs": [
     {
      "key": "conversion",
@@ -750,7 +750,7 @@
      "title": "Inteligencia de amenazas"
     }
    ],
-   "count": 142,
+   "count": 147,
    "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
   },
   {
@@ -3475,7 +3475,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 1,
    "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
@@ -3516,7 +3516,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 47,
    "complejidad": 1
   },
   {
@@ -3645,7 +3645,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 50,
    "complejidad": 1,
    "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
@@ -3683,7 +3683,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 66,
    "complejidad": 1
   },
   {
@@ -3723,7 +3723,7 @@
     "reference"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 53,
    "complejidad": 1,
    "grupo": "g-catalogos-de-skills-y-plugins-para-agentes"
   },
@@ -3763,7 +3763,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 61,
    "complejidad": 1,
    "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
@@ -3845,7 +3845,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 57,
    "complejidad": 1,
    "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
@@ -3888,7 +3888,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 70,
    "complejidad": 2,
    "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
@@ -3963,7 +3963,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 74,
+   "puntuacion": 73,
    "complejidad": 1
   },
   {
@@ -4046,7 +4046,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 57,
    "complejidad": 1,
    "grupo": "g-desarrollo-guiado-por-especificaciones"
   },
@@ -4168,7 +4168,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 70,
    "complejidad": 1,
    "grupo": "g-skills-para-quitar-el-tono-de-ia-a-los-textos"
   },
@@ -4330,7 +4330,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 37,
+   "puntuacion": 36,
    "complejidad": 2
   },
   {
@@ -6516,7 +6516,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 57,
+   "puntuacion": 56,
    "complejidad": 2,
    "grupo": "g-paneles-para-coordinar-equipos-de-agentes"
   },
@@ -6634,7 +6634,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -9769,7 +9769,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 78,
+   "puntuacion": 75,
    "complejidad": 2,
    "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
@@ -10297,7 +10297,7 @@
    ],
    "desc": "Permite consultar símbolos y relaciones de una base de código desde distintos agentes. El análisis de código es determinista y local; documentos, PDFs, imágenes y video requieren la ruta semántica y sus dependencias. Ofrece adaptadores documentados para Claude Code, Codex y Antigravity.",
    "source_archived": false,
-   "puntuacion": 74,
+   "puntuacion": 75,
    "complejidad": 2,
    "grupo": "g-mapas-e-indices-de-codigo-para-agentes"
   },
@@ -10430,7 +10430,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -10464,7 +10464,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 58,
    "complejidad": 2
   },
   {
@@ -10489,7 +10489,8 @@
    "one": "Análisis estático ligero para muchos lenguajes con reglas que se parecen al código.",
    "alt": [
     "ast-grep",
-    "sonarqube"
+    "sonarqube",
+    "codeql"
    ],
    "doc": "human/fichas/semgrep.md",
    "github_id": 227803815,
@@ -10502,7 +10503,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 71,
+   "puntuacion": 72,
    "complejidad": 1
   },
   {
@@ -13665,7 +13666,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 63,
    "complejidad": 2
   },
   {
@@ -15796,7 +15797,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -15902,7 +15903,9 @@
    "lib": false,
    "pick": false,
    "one": "App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real.",
-   "alt": [],
+   "alt": [
+    "cap"
+   ],
    "doc": "human/fichas/obs-studio.md",
    "github_id": 13233158,
    "added_at": "2026-11-10",
@@ -15913,7 +15916,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 69,
    "complejidad": 1
   },
   {
@@ -15949,7 +15952,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 63,
    "complejidad": 1
   },
   {
@@ -16927,7 +16930,7 @@
     "local_model"
    ],
    "source_archived": false,
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 2,
    "grupo": "g-ocr-de-documentos"
   },
@@ -17086,7 +17089,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 51,
    "complejidad": 3,
    "grupo": "g-ocr-de-documentos"
   },
@@ -17167,7 +17170,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 67,
+   "puntuacion": 68,
    "complejidad": 1
   },
   {
@@ -17204,7 +17207,7 @@
     "no_api"
    ],
    "source_archived": false,
-   "puntuacion": 54,
+   "puntuacion": 55,
    "complejidad": 1,
    "grupo": "g-suites-de-herramientas-pdf"
   },
@@ -17243,8 +17246,8 @@
     "no_api"
    ],
    "source_archived": false,
-   "complejidad": 1,
-   "puntuacion": 46
+   "puntuacion": 45,
+   "complejidad": 1
   },
   {
    "id": "slidev",
@@ -17759,7 +17762,9 @@
    "lib": false,
    "pick": false,
    "one": "CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia.",
-   "alt": [],
+   "alt": [
+    "vercel-skills"
+   ],
    "doc": "human/fichas/autoskills.md",
    "starred_by": "Cristrva1",
    "added_at": "2026-11-14",
@@ -17771,7 +17776,7 @@
     "claude"
    ],
    "source_archived": false,
-   "puntuacion": 40,
+   "puntuacion": 39,
    "complejidad": 1
   },
   {
@@ -18092,7 +18097,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 55,
+   "puntuacion": 54,
    "complejidad": 1
   },
   {
@@ -18227,7 +18232,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 52,
+   "puntuacion": 51,
    "complejidad": 2
   },
   {
@@ -18436,7 +18441,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 55,
    "complejidad": 2,
    "grupo": "g-agentes-de-investigacion-autonoma"
   },
@@ -18659,7 +18664,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 67,
    "complejidad": 3,
    "grupo": "g-paneles-para-coordinar-equipos-de-agentes"
   },
@@ -18693,7 +18698,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 42,
+   "puntuacion": 41,
    "complejidad": 2
   },
   {
@@ -20089,7 +20094,7 @@
     "api"
    ],
    "source_archived": false,
-   "puntuacion": 49,
+   "puntuacion": 48,
    "complejidad": 2
   },
   {
@@ -20348,7 +20353,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 47,
    "complejidad": 1
   },
   {
@@ -20500,7 +20505,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 49,
    "complejidad": 2
   },
   {
@@ -20580,7 +20585,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 70,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -21035,7 +21040,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 67,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -21310,7 +21315,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 76,
+   "puntuacion": 74,
    "complejidad": 3,
    "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
@@ -21550,7 +21555,7 @@
     "aprender"
    ],
    "source_archived": false,
-   "puntuacion": 48,
+   "puntuacion": 47,
    "complejidad": 1
   },
   {
@@ -21723,7 +21728,9 @@
    "lib": false,
    "pick": false,
    "one": "Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.",
-   "alt": [],
+   "alt": [
+    "documenso"
+   ],
    "stars": 19053,
    "github_id": 661850205,
    "gh": "docusealco/docuseal",
@@ -21739,7 +21746,7 @@
     "servicios"
    ],
    "source_archived": false,
-   "puntuacion": 60,
+   "puntuacion": 64,
    "complejidad": 3
   },
   {
@@ -22174,7 +22181,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 66,
+   "puntuacion": 64,
    "complejidad": 2,
    "grupo": "g-metodologias-y-harness-para-agentes-de-codigo"
   },
@@ -22407,7 +22414,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 67,
    "complejidad": 2
   },
   {
@@ -22483,7 +22490,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 59,
+   "puntuacion": 57,
    "complejidad": 2
   },
   {
@@ -22678,7 +22685,7 @@
     "programar"
    ],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 54,
    "complejidad": 2
   },
   {
@@ -22975,7 +22982,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 56,
+   "puntuacion": 55,
    "complejidad": 2,
    "grupo": "g-skills-para-redes-sociales"
   },
@@ -23013,7 +23020,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 47,
+   "puntuacion": 48,
    "complejidad": 2,
    "grupo": "g-skills-para-redes-sociales"
   },
@@ -23092,7 +23099,7 @@
     "video"
    ],
    "source_archived": false,
-   "puntuacion": 63,
+   "puntuacion": 62,
    "complejidad": 2
   },
   {
@@ -24246,7 +24253,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 58,
+   "puntuacion": 55,
    "complejidad": 3,
    "grupo": "g-pasarelas-y-routers-de-proveedores-llm"
   },
@@ -24405,7 +24412,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 51,
+   "puntuacion": 50,
    "complejidad": 2,
    "grupo": "g-skills-de-diseno-de-interfaces-para-agentes"
   },
@@ -24942,7 +24949,7 @@
    ],
    "goals": [],
    "source_archived": false,
-   "puntuacion": 50,
+   "puntuacion": 49,
    "complejidad": 1
   },
   {
@@ -25240,7 +25247,7 @@
     "seguridad"
    ],
    "source_archived": false,
-   "puntuacion": 68,
+   "puntuacion": 69,
    "complejidad": 2
   },
   {
@@ -25503,7 +25510,7 @@
     "skills"
    ],
    "source_archived": false,
-   "puntuacion": 37,
+   "puntuacion": 36,
    "complejidad": 2
   },
   {
@@ -26592,7 +26599,7 @@
     "antigravity"
    ],
    "source_archived": false,
-   "puntuacion": 64,
+   "puntuacion": 63,
    "complejidad": 1
   },
   {
@@ -26632,8 +26639,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 3,
-   "puntuacion": 34
+   "puntuacion": 34,
+   "complejidad": 3
   },
   {
    "id": "neo4j-mcp",
@@ -26856,7 +26863,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 70,
+   "puntuacion": 66,
    "complejidad": 2
   },
   {
@@ -28425,7 +28432,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68,
+   "puntuacion": 67,
    "complejidad": 1
   },
   {
@@ -28463,7 +28470,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 71,
    "complejidad": 1
   },
   {
@@ -28939,7 +28946,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 61,
+   "puntuacion": 60,
    "complejidad": 1
   },
   {
@@ -29491,7 +29498,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 60,
+   "puntuacion": 59,
    "complejidad": 1,
    "grupo": "g-editores-de-video"
   },
@@ -30810,7 +30817,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55,
+   "puntuacion": 56,
    "complejidad": 1
   },
   {
@@ -32220,7 +32227,7 @@
     "local_model",
     "api"
    ],
-   "puntuacion": 58,
+   "puntuacion": 57,
    "complejidad": 2
   },
   {
@@ -32422,7 +32429,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 75,
    "complejidad": 2
   },
   {
@@ -34974,7 +34981,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 68,
+   "puntuacion": 69,
    "complejidad": 4,
    "grupo": "g-frameworks-de-c2-y-post-explotacion"
   },
@@ -35051,7 +35058,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 64,
+   "puntuacion": 63,
    "complejidad": 4,
    "grupo": "g-emulacion-de-adversarios"
   },
@@ -35089,7 +35096,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 76,
+   "puntuacion": 75,
    "complejidad": 4
   },
   {
@@ -35388,7 +35395,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 75,
+   "puntuacion": 76,
    "complejidad": 3
   },
   {
@@ -35500,7 +35507,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 55,
+   "puntuacion": 54,
    "complejidad": 3
   },
   {
@@ -35654,7 +35661,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 73,
    "complejidad": 3
   },
   {
@@ -36988,7 +36995,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 62,
+   "puntuacion": 63,
    "complejidad": 2,
    "grupo": "g-bloqueo-de-ip-por-comportamiento"
   },
@@ -37136,7 +37143,7 @@
     "no_api",
     "reference"
    ],
-   "puntuacion": 61,
+   "puntuacion": 62,
    "complejidad": 1
   },
   {
@@ -37819,7 +37826,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 65,
+   "puntuacion": 64,
    "complejidad": 2
   },
   {
@@ -37858,7 +37865,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 72,
+   "puntuacion": 70,
    "complejidad": 2
   },
   {
@@ -38908,7 +38915,7 @@
    "routes": [
     "no_api"
    ],
-   "puntuacion": 54,
+   "puntuacion": 55,
    "complejidad": 2
   },
   {
@@ -38951,8 +38958,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 1,
-   "puntuacion": 64
+   "puntuacion": 64,
+   "complejidad": 1
   },
   {
    "id": "libretranslate",
@@ -38993,8 +39000,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 3,
-   "puntuacion": 57
+   "puntuacion": 57,
+   "complejidad": 3
   },
   {
    "id": "ccusage",
@@ -39034,8 +39041,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2,
-   "puntuacion": 71
+   "puntuacion": 71,
+   "complejidad": 2
   },
   {
    "id": "android-skills",
@@ -39076,8 +39083,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2,
-   "puntuacion": 63
+   "puntuacion": 63,
+   "complejidad": 2
   },
   {
    "id": "claude-ads",
@@ -39111,8 +39118,8 @@
     "no_api",
     "claude"
    ],
-   "complejidad": 2,
-   "puntuacion": 57
+   "puntuacion": 57,
+   "complejidad": 2
   },
   {
    "id": "apscheduler",
@@ -39145,8 +39152,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 58
+   "puntuacion": 57,
+   "complejidad": 2
   },
   {
    "id": "knowledge-work-plugins",
@@ -39180,8 +39187,8 @@
     "no_api",
     "claude"
    ],
-   "complejidad": 2,
-   "puntuacion": 62
+   "puntuacion": 61,
+   "complejidad": 2
   },
   {
    "id": "semantic-router",
@@ -39217,8 +39224,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 55
+   "puntuacion": 55,
+   "complejidad": 2
   },
   {
    "id": "celery",
@@ -39251,8 +39258,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 60
+   "puntuacion": 60,
+   "complejidad": 2
   },
   {
    "id": "kitesurf",
@@ -39285,8 +39292,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3,
-   "puntuacion": 57
+   "puntuacion": 57,
+   "complejidad": 3
   },
   {
    "id": "humans-md-plugins",
@@ -39322,8 +39329,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2,
-   "puntuacion": 43
+   "puntuacion": 43,
+   "complejidad": 2
   },
   {
    "id": "video2threejs",
@@ -39357,8 +39364,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1,
-   "puntuacion": 35
+   "puntuacion": 35,
+   "complejidad": 1
   },
   {
    "id": "pybreaker",
@@ -39391,8 +39398,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 43
+   "puntuacion": 44,
+   "complejidad": 2
   },
   {
    "id": "claude-code-templates",
@@ -39426,8 +39433,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1,
-   "puntuacion": 61
+   "puntuacion": 59,
+   "complejidad": 1
   },
   {
    "id": "isponsorblocktv",
@@ -39458,8 +39465,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 1,
-   "puntuacion": 46
+   "puntuacion": 46,
+   "complejidad": 1
   },
   {
    "id": "prediction-market-backtesting",
@@ -39492,8 +39499,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 32
+   "puntuacion": 32,
+   "complejidad": 2
   },
   {
    "id": "chonkie",
@@ -39528,8 +39535,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 51
+   "puntuacion": 51,
+   "complejidad": 2
   },
   {
    "id": "flagembedding",
@@ -39563,8 +39570,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 2,
-   "puntuacion": 57
+   "puntuacion": 57,
+   "complejidad": 2
   },
   {
    "id": "robotics-antigravity-plugin",
@@ -39598,8 +39605,8 @@
     "antigravity",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 48
+   "puntuacion": 48,
+   "complejidad": 2
   },
   {
    "id": "hyperframes-launches",
@@ -39633,8 +39640,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1,
-   "puntuacion": 55
+   "puntuacion": 55,
+   "complejidad": 1
   },
   {
    "id": "ha-mcp",
@@ -39670,8 +39677,8 @@
     "codex",
     "local_model"
    ],
-   "complejidad": 2,
-   "puntuacion": 68
+   "puntuacion": 68,
+   "complejidad": 2
   },
   {
    "id": "claude-second-brain",
@@ -39706,8 +39713,8 @@
     "no_api",
     "claude"
    ],
-   "complejidad": 2,
-   "puntuacion": 41
+   "puntuacion": 41,
+   "complejidad": 2
   },
   {
    "id": "ffmpeg-skill",
@@ -39742,8 +39749,8 @@
     "claude",
     "codex"
    ],
-   "complejidad": 2,
-   "puntuacion": 70
+   "puntuacion": 70,
+   "complejidad": 2
   },
   {
    "id": "hishel",
@@ -39776,8 +39783,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 53
+   "puntuacion": 53,
+   "complejidad": 2
   },
   {
    "id": "astryx",
@@ -39810,8 +39817,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "complejidad": 2
   },
   {
    "id": "llmlingua",
@@ -39845,8 +39852,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 2,
-   "puntuacion": 49
+   "puntuacion": 48,
+   "complejidad": 2
   },
   {
    "id": "motionbricks",
@@ -39880,8 +39887,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 3,
-   "puntuacion": 55
+   "puntuacion": 55,
+   "complejidad": 3
   },
   {
    "id": "openjarvis",
@@ -39916,8 +39923,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 58
+   "puntuacion": 58,
+   "complejidad": 2
   },
   {
    "id": "portkey-gateway",
@@ -39950,8 +39957,8 @@
    "routes": [
     "api"
    ],
-   "complejidad": 3,
-   "puntuacion": 51
+   "puntuacion": 50,
+   "complejidad": 3
   },
   {
    "id": "openreality",
@@ -39986,8 +39993,8 @@
     "claude",
     "codex"
    ],
-   "complejidad": 3,
-   "puntuacion": 57
+   "puntuacion": 57,
+   "complejidad": 3
   },
   {
    "id": "requests-cache",
@@ -40020,8 +40027,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 59
+   "puntuacion": 59,
+   "complejidad": 2
   },
   {
    "id": "shadcn-improve",
@@ -40054,8 +40061,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 45
+   "puntuacion": 45,
+   "complejidad": 2
   },
   {
    "id": "shopify-ai-toolkit",
@@ -40091,8 +40098,8 @@
     "codex",
     "antigravity"
    ],
-   "complejidad": 2,
-   "puntuacion": 48
+   "puntuacion": 48,
+   "complejidad": 2
   },
   {
    "id": "eve",
@@ -40126,8 +40133,8 @@
    "routes": [
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 63
+   "puntuacion": 63,
+   "complejidad": 2
   },
   {
    "id": "awesome-claude-code-subagents",
@@ -40161,8 +40168,8 @@
     "no_api",
     "reference"
    ],
-   "complejidad": 1,
-   "puntuacion": 52
+   "puntuacion": 51,
+   "complejidad": 1
   },
   {
    "id": "inferssd",
@@ -40197,8 +40204,8 @@
     "no_api",
     "local_model"
    ],
-   "complejidad": 3,
-   "puntuacion": 52
+   "puntuacion": 52,
+   "complejidad": 3
   },
   {
    "id": "polyweather",
@@ -40231,8 +40238,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 44
+   "puntuacion": 44,
+   "complejidad": 2
   },
   {
    "id": "claude-context",
@@ -40267,8 +40274,8 @@
     "codex",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 48
+   "puntuacion": 48,
+   "complejidad": 2
   },
   {
    "id": "gptcache",
@@ -40303,8 +40310,8 @@
     "local_model",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 58
+   "puntuacion": 58,
+   "complejidad": 2
   },
   {
    "id": "npkill",
@@ -40337,8 +40344,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 1,
-   "puntuacion": 58
+   "puntuacion": 56,
+   "complejidad": 1
   },
   {
    "id": "agent-substrate",
@@ -40371,8 +40378,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3,
-   "puntuacion": 69
+   "puntuacion": 69,
+   "complejidad": 3
   },
   {
    "id": "open-code-review",
@@ -40409,8 +40416,8 @@
     "codex",
     "api"
    ],
-   "complejidad": 2,
-   "puntuacion": 71
+   "puntuacion": 71,
+   "complejidad": 2
   },
   {
    "id": "pangolin",
@@ -40443,8 +40450,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "complejidad": 3
   },
   {
    "id": "pi-alert-leiweibau",
@@ -40477,8 +40484,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3,
-   "puntuacion": 47
+   "puntuacion": 47,
+   "complejidad": 3
   },
   {
    "id": "kiri",
@@ -40512,8 +40519,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 64
+   "puntuacion": 64,
+   "complejidad": 2
   },
   {
    "id": "tailcat",
@@ -40546,8 +40553,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 51
+   "puntuacion": 51,
+   "complejidad": 2
   },
   {
    "id": "screen-relay",
@@ -40581,8 +40588,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 3,
-   "puntuacion": 50
+   "puntuacion": 50,
+   "complejidad": 3
   },
   {
    "id": "pysubs2",
@@ -40620,8 +40627,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 50
+   "puntuacion": 50,
+   "complejidad": 2
   },
   {
    "id": "toon-format",
@@ -40659,8 +40666,8 @@
    "routes": [
     "no_api"
    ],
-   "complejidad": 2,
-   "puntuacion": 72
+   "puntuacion": 72,
+   "complejidad": 2
   },
   {
    "id": "imagemagick",
@@ -40741,6 +40748,384 @@
    ],
    "puntuacion": 47,
    "complejidad": 3
+  },
+  {
+   "id": "vercel-skills",
+   "name": "Skills CLI (Vercel Labs)",
+   "cat": 2,
+   "sub": "catalogos",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "instalador",
+    "agentes de código",
+    "npm"
+   ],
+   "stars": 41185,
+   "gh": "vercel-labs/skills",
+   "lib": false,
+   "pick": false,
+   "one": "Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes.",
+   "alt": [
+    "autoskills"
+   ],
+   "doc": "human/fichas/vercel-skills.md",
+   "github_id": 1134543109,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "skills",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "antigravity"
+   ],
+   "puntuacion": 72,
+   "complejidad": 1
+  },
+  {
+   "id": "documenso",
+   "name": "Documenso",
+   "cat": 13,
+   "sub": "pdf",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "firma electrónica",
+    "pdf",
+    "autoalojado",
+    "docker",
+    "auditoría"
+   ],
+   "stars": 15938,
+   "gh": "documenso/documenso",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría.",
+   "alt": [
+    "docuseal"
+   ],
+   "doc": "human/fichas/documenso.md",
+   "github_id": 613010835,
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "documentos",
+    "servicios"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "api"
+   ],
+   "puntuacion": 56,
+   "complejidad": 3
+  },
+  {
+   "id": "cap",
+   "name": "Cap",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "grabar pantalla",
+    "edición de video",
+    "tutoriales",
+    "enlaces para compartir"
+   ],
+   "stars": 25708,
+   "gh": "CapSoftware/Cap",
+   "lib": false,
+   "pick": false,
+   "one": "Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace.",
+   "alt": [
+    "obs-studio"
+   ],
+   "doc": "human/fichas/cap.md",
+   "github_id": 720209383,
+   "lang": "Rust",
+   "license": "AGPL-3.0 (partes MIT)",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "video"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 68,
+   "complejidad": 1
+  },
+  {
+   "id": "pake",
+   "name": "Pake",
+   "cat": 7,
+   "sub": "herramientas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "apps de escritorio",
+    "tauri",
+    "empaquetar web",
+    "cli"
+   ],
+   "stars": 64099,
+   "gh": "tw93/Pake",
+   "lib": false,
+   "pick": false,
+   "one": "Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando.",
+   "alt": [],
+   "doc": "human/fichas/pake.md",
+   "github_id": 551376520,
+   "lang": "Rust",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ],
+   "puntuacion": 60,
+   "complejidad": 2
+  },
+  {
+   "id": "codeql",
+   "name": "CodeQL",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "análisis estático",
+    "flujo de datos",
+    "github",
+    "sarif",
+    "seguridad"
+   ],
+   "stars": 10428,
+   "gh": "github/codeql",
+   "lib": false,
+   "pick": false,
+   "one": "Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub.",
+   "alt": [
+    "semgrep"
+   ],
+   "doc": "human/fichas/codeql.md",
+   "github_id": 143040428,
+   "lang": "CodeQL",
+   "license": "MIT (consultas y bibliotecas); CodeQL CLI con términos propios de GitHub",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 67,
+   "complejidad": 2
+  },
+  {
+   "id": "bandit",
+   "name": "Bandit",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "python",
+    "análisis estático",
+    "seguridad",
+    "cli"
+   ],
+   "stars": 8409,
+   "gh": "PyCQA/bandit",
+   "lib": false,
+   "pick": false,
+   "one": "Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo.",
+   "alt": [],
+   "doc": "human/fichas/bandit.md",
+   "github_id": 131129792,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 62,
+   "complejidad": 1
+  },
+  {
+   "id": "gosec",
+   "name": "gosec",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "go",
+    "análisis estático",
+    "seguridad",
+    "sarif"
+   ],
+   "stars": 9027,
+   "gh": "securego/gosec",
+   "lib": false,
+   "pick": false,
+   "one": "Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código.",
+   "alt": [],
+   "doc": "human/fichas/gosec.md",
+   "github_id": 63625434,
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "puntuacion": 71,
+   "complejidad": 1
+  },
+  {
+   "id": "brakeman",
+   "name": "Brakeman",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ruby",
+    "rails",
+    "análisis estático",
+    "seguridad"
+   ],
+   "stars": 7295,
+   "gh": "presidentbeef/brakeman",
+   "lib": false,
+   "pick": false,
+   "one": "Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo.",
+   "alt": [],
+   "doc": "human/fichas/brakeman.md",
+   "github_id": 865250,
+   "lang": "Ruby",
+   "license": "Brakeman Public Use License",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 44,
+   "complejidad": 1
+  },
+  {
+   "id": "mobsf",
+   "name": "MobSF (Mobile Security Framework)",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "móvil",
+    "android",
+    "ios",
+    "análisis estático",
+    "seguridad"
+   ],
+   "stars": 22368,
+   "gh": "MobSF/Mobile-Security-Framework-MobSF",
+   "lib": false,
+   "pick": false,
+   "one": "Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo.",
+   "alt": [],
+   "doc": "human/fichas/mobsf.md",
+   "github_id": 30102273,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-27",
+   "github_checked": "2026-11-27",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "source_archived": false,
+   "nivel": "ligero",
+   "routes": [
+    "no_api"
+   ],
+   "puntuacion": 72,
+   "complejidad": 2
   }
  ],
  "discovery": {
@@ -41007,6 +41392,7 @@
     ],
     "categories": [
      3,
+     7,
      9,
      18,
      26,

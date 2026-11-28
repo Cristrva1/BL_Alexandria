@@ -1,0 +1,623 @@
+{
+ "lote": "drive-2026-11-27-lote",
+ "fecha": "2026-11-27",
+ "metodo": "Revisión de origen, licencia, paquete publicado, avisos de seguridad y CI sobre el commit de cada versión con la API de GitHub autenticada y la documentación oficial. No se instaló ni ejecutó ningún proyecto; las primeras pruebas quedan propuestas.",
+ "repos": [
+  {
+   "gh": "vercel-labs/skills",
+   "id": "vercel-skills",
+   "name": "Skills CLI (Vercel Labs)",
+   "cat": 2,
+   "sub": "catalogos",
+   "kind": "app",
+   "one": "Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes.",
+   "how": "Lee los archivos SKILL.md de la fuente que indicas, guarda una copia en el proyecto y la enlaza o copia en la carpeta de skills de cada agente elegido. Registra el origen y una huella del contenido para detectar cambios.",
+   "examples": [
+    "Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano",
+    "Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa"
+   ],
+   "try": [
+    "En una carpeta de prueba, crea una skill con npx skills@1.9.1 init saludo, escribe en saludo/SKILL.md una instrucción breve propia e instálala con npx skills@1.9.1 add ./saludo -a claude-code",
+    "npx skills@1.9.1 list muestra la skill saludo y existe .claude/skills/saludo/SKILL.md con tu texto dentro de la carpeta de prueba"
+   ],
+   "steps": [
+    "Instala Node.js 22.20 o posterior y abre una terminal en una carpeta de prueba vacía. Para no enviar datos de uso, define antes DISABLE_TELEMETRY=1 (en PowerShell: $env:DISABLE_TELEMETRY=1).",
+    "Usa el paquete npm skills en su versión 1.9.1, publicado desde este repositorio: escribe siempre npx skills@1.9.1. No añadas -g, -y ni --all, así todo queda dentro de la carpeta de prueba y la herramienta te pregunta antes de escribir.",
+    "Crea la skill con init, instálala con add y la ruta local, y compruébala con list. Al terminar, quítala con npx skills@1.9.1 remove saludo y verifica que la carpeta .claude/skills/saludo desaparece."
+   ],
+   "alt": [
+    "autoskills"
+   ],
+   "ligero": true,
+   "setup": "easy",
+   "license": "MIT",
+   "goals": [
+    "skills",
+    "programar"
+   ],
+   "tags": [
+    "skills",
+    "instalador",
+    "agentes de código",
+    "npm"
+   ],
+   "url": "https://github.com/vercel-labs/skills/releases/tag/v1.9.1",
+   "caveat": "Una skill son instrucciones y, a veces, scripts que tu agente seguirá. Lee el SKILL.md y los archivos de una skill ajena antes de instalarla, o analízala con SkillSpector. Evita -g, -y y --all hasta saber qué se escribe: -g instala en carpetas de tu usuario para todos los proyectos. La tabla de auditoría que muestra antes de instalar es una señal de terceros, no una garantía. Envía datos de uso anónimos salvo que definas DISABLE_TELEMETRY=1. Escribe npx skills@1.9.1: la versión 1.0.0 del mismo nombre en npm es un paquete antiguo sin relación con este proyecto.",
+   "note": "La 1.9.1 se publicó en npm desde el flujo Publish (ejecución 45943719278) con procedencia SLSA y gitHead e7fd0e9. Ese commit solo cambia la versión de package.json respecto a 3c917b6, donde CI (45941358982: compilación y pruebas unitarias en Ubuntu y Windows con Node 22.20, 24 y 26) y E2E (45941359000) terminaron en success. La ejecución programada E2E 45952567515 sobre e7fd0e9 también terminó en success en Ubuntu y macOS: instala, enlaza, lista, restaura y quita skills reales, también en modo global. No se instaló ni ejecutó la CLI en esta revisión, ni se comprobaron todos los agentes de la lista.",
+   "avoid": "Solo quieres leer una skill sin instalarla, o no puedes revisar el contenido de las skills que vas a añadir.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "prerequisites",
+    "local_model": "not_applicable",
+    "claude_code": "project_integration",
+    "codex": "project_integration",
+    "antigravity": "project_integration",
+    "subscription_note": "La CLI no usa ningún modelo. Coloca archivos en las carpetas que leen Claude Code (.claude/skills), Codex (.agents/skills) o Antigravity (.agents/skills). Usar después la skill consume el plan o la cuenta de ese agente.",
+    "local_note": "No ejecuta modelos. La skill instalada funciona con el agente elegido, que usará un modelo local solo si su propia configuración lo permite.",
+    "scope": "Instalación en el ámbito del proyecto con una skill propia. Compatibilidad según la tabla documentada de agentes; no se probó en cada cliente.",
+    "cost_note": "Paquete MIT sin pago. Las fuentes remotas se descargan de GitHub u otros servidores Git; un token de GitHub es opcional.",
+    "api_note": "No necesita clave de API de IA. Consulta GitHub y skills.sh para descargar fuentes, buscar skills y mostrar auditorías. DISABLE_TELEMETRY=1 o DO_NOT_TRACK=1 desactivan la telemetría y las consultas de auditoría.",
+    "hardware_note": "Equipo de uso general con Node.js 22.20 o posterior, y Git para fuentes remotas. Si el sistema no permite enlaces simbólicos, copia los archivos y lo avisa.",
+    "sources": [
+     "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/README.md",
+     "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/agents.md",
+     "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/commands.md",
+     "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/docs/troubleshooting.md",
+     "https://github.com/vercel-labs/skills/blob/e7fd0e9e52f029fe87729d8185cb8caf7049f678/package.json"
+    ]
+   }
+  },
+  {
+   "gh": "documenso/documenso",
+   "id": "documenso",
+   "name": "Documenso",
+   "cat": 13,
+   "sub": "pdf",
+   "kind": "app",
+   "one": "Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría.",
+   "how": "Una aplicación web guarda documentos y firmantes en PostgreSQL y envía enlaces de firma por correo. Cuando todos firman, sella el PDF con un certificado digital.",
+   "examples": [
+    "Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo",
+    "Preparar una plantilla con campos de firma y fecha para reutilizarla"
+   ],
+   "try": [
+    "En la instalación local de desarrollo, crea una cuenta con un correo ficticio y confírmala desde http://localhost:9000. Sube un PDF propio de una página, añade como firmante a «Firmante Ficticio» <firmante@example.com> con un campo de firma y envíalo.",
+    "En http://localhost:9000 abre el correo del firmante y firma. El documento pasa a completado y el PDF descargado muestra una firma digital hecha con el certificado de ejemplo."
+   ],
+   "steps": [
+    "Prepara un equipo con Git, Docker y Docker Compose, Node.js 24 o posterior y npm 11.17 o posterior. La ruta de desarrollo levanta en contenedores PostgreSQL, Inbucket (un buzón de correo local), Redis y Gotenberg.",
+    "Clona el repositorio en la etiqueta v2.22.0, copia .env.example a .env y ejecuta npm run d. Abre http://localhost:3000. Los correos salientes se leen en http://localhost:9000.",
+    "Haz la prueba con un PDF propio y un firmante ficticio. Comprueba el estado completado y la firma del PDF descargado. Al terminar, detén los contenedores."
+   ],
+   "alt": [
+    "docuseal"
+   ],
+   "ligero": true,
+   "ai": "optional",
+   "setup": "heavy",
+   "license": "AGPL-3.0",
+   "licencia_nota": "El núcleo es AGPL-3.0: si modificas Documenso y lo ofreces a otras personas por red, debes publicar tu código. La carpeta packages/ee tiene una licencia comercial; sus funciones (SSO, firma CSC, marca blanca) requieren suscripción Enterprise en producción. La prueba local no las usa.",
+   "goals": [
+    "documentos",
+    "servicios"
+   ],
+   "tags": [
+    "firma electrónica",
+    "pdf",
+    "autoalojado",
+    "docker",
+    "auditoría"
+   ],
+   "url": "https://github.com/documenso/documenso/releases/tag/v2.22.0",
+   "caveat": "Usa la v2.19.0 o posterior; esta ficha usa la v2.22.0. El aviso alto GHSA-3494-9j87-fj64 permite leer nombres y correos de usuarios sin iniciar sesión hasta la 2.17.0. La instalación de desarrollo crea cuentas de ejemplo con contraseñas públicas y firma con un certificado de ejemplo: no la expongas a internet ni firmes documentos reales con ella. Las firmas son electrónicas simples; su validez depende del país y del tipo de documento.",
+   "note": "Sobre d32d049, el commit de v2.22.0, terminaron en success Continuous Integration 43345864857 (compila la app y la imagen Docker), Playwright Tests 43345864965 (pruebas e2e de API y de interfaz en siete fragmentos, con PostgreSQL, correo local y el certificado de ejemplo) y Publish Docker 43345916435 (publica documenso/documenso:v2.22.0 para amd64 y arm64). No se ejecutó la aplicación en esta revisión.",
+   "avoid": "solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo.",
+   "access": {
+    "mode": "software",
+    "api": "optional",
+    "cost": "no_model_fee",
+    "hardware": "prerequisites",
+    "local_model": "not_documented",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "No requiere suscripciones de IA. El AGENTS.md del repositorio orienta a agentes que contribuyen al código; no es una integración para usar la aplicación.",
+    "local_note": "Firmar y sellar no usa modelos. La detección automática de destinatarios y campos es opcional y solo documenta Google Vertex AI; no hay ruta con modelos locales.",
+    "scope": "Entorno local de desarrollo v2.22.0 con un PDF propio y un firmante ficticio. La producción con dominio, SMTP y certificado propio queda fuera de la prueba.",
+    "cost_note": "La edición Community autoalojada es gratuita bajo AGPL-3.0. La nube de Documenso ofrece un plan gratuito con 5 documentos al mes y planes de pago (consultado el 27 nov 2026). Enterprise y Vertex AI son de pago.",
+    "api_note": "La detección con IA necesita una clave de Google Vertex AI con facturación activa. La imagen Docker envía telemetría anónima salvo que definas DOCUMENSO_DISABLE_TELEMETRY=true.",
+    "hardware_note": "Equipo con Docker, Node.js 24 o posterior y al menos 2 GB de RAM libres. La ruta de desarrollo levanta cuatro contenedores.",
+    "sources": [
+     "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/README.md",
+     "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/.env.example",
+     "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/docker/development/compose.yml",
+     "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/deployment/docker-compose.mdx",
+     "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/configuration/advanced/ai-features.mdx",
+     "https://github.com/documenso/documenso/blob/d32d049165db230820465b4f566061ba8fa27012/apps/docs/content/docs/self-hosting/configuration/telemetry.mdx",
+     "https://documenso.com/pricing"
+    ]
+   }
+  },
+  {
+   "gh": "CapSoftware/Cap",
+   "id": "cap",
+   "name": "Cap",
+   "cat": 12,
+   "sub": "edicion",
+   "kind": "app",
+   "one": "Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace.",
+   "how": "La app de escritorio captura pantalla y audio con las funciones de cada sistema, guarda la grabación en tu equipo y la edita y codifica allí. El modo Instant, en cambio, sube el video mientras grabas a la nube de Cap o a un servidor propio.",
+   "examples": [
+    "Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4",
+    "Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada"
+   ],
+   "try": [
+    "En el modo Studio, sin iniciar sesión, graba 15 segundos de una ventana con un documento de prueba propio mientras dices una frase al micrófono",
+    "Al detener la grabación se abre el editor. Exporta a MP4, abre el archivo en tu reproductor y comprueba que se ve la ventana y se oye la frase"
+   ],
+   "steps": [
+    "Usa macOS (se recomienda 13.1 o posterior), Windows o Linux con glibc 2.39 o posterior, por ejemplo Ubuntu 24.04. Ubuntu 22.04 no está soportado. El modo Studio no necesita cuenta.",
+    "Descarga Cap 0.6.3 desde cap.so/download, la página de descarga que enlaza el README oficial. Instálalo y concede los permisos de grabación de pantalla y micrófono que pida el sistema. Si quieres, desactiva la telemetría anónima en Ajustes.",
+    "Si aparece el aviso para iniciar sesión, elige «Usar Studio» o «Ahora no». Haz la grabación de prueba, expórtala a MP4 desde el editor y reprodúcela para comprobar imagen y sonido."
+   ],
+   "alt": [
+    "obs-studio"
+   ],
+   "ligero": true,
+   "ai": "optional",
+   "setup": "easy",
+   "license": "AGPL-3.0 (partes MIT)",
+   "licencia_nota": "GitHub muestra NOASSERTION porque el archivo LICENSE combina licencias: los crates cap-camera* y scap-* son MIT, los componentes de terceros conservan su licencia y el resto es AGPL-3.0. Quien compila desde el código lo recibe bajo AGPL-3.0. La app oficial de cap.so es gratuita para uso personal; el uso comercial requiere la licencia de escritorio o Cap Pro, ambas de pago.",
+   "goals": [
+    "video"
+   ],
+   "tags": [
+    "grabar pantalla",
+    "edición de video",
+    "tutoriales",
+    "enlaces para compartir"
+   ],
+   "url": "https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3",
+   "caveat": "Pide permisos de pantalla, micrófono y cámara: graba solo ventanas sin datos sensibles. El modo Instant sube el video a la nube de Cap y exige cuenta. El plan gratuito es solo para uso personal y limita los enlaces compartidos. En Linux exige glibc 2.39 o posterior.",
+   "note": "Sobre el commit de la 0.6.3 (029aa29), «Engine verify» 43092047100 pasó en Linux, macOS y Windows las suites de exportación, reproducción, audio, edición y subtítulos, y «publish» 43099158030 compiló los instaladores de cuatro plataformas. «Verify recording» con captura real no se ejecutó en ese commit. La nocturna 43150140258, 50 commits después, pasó en tres equipos macOS, falló en macOS 26 y se canceló en Windows. No se instaló ni se probó la app.",
+   "avoid": "necesitas transmitir en directo con escenas y varias fuentes, o vas a grabar para un uso comercial sin pagar la licencia.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Un agente de código puede ayudarte a instalarla, pero Cap no se ejecuta dentro de Claude Code, Codex ni Antigravity. Para grabar y editar en tu equipo basta la app.",
+    "local_note": "Grabar y editar no necesita un modelo de IA. Las notas de la 0.6.3 describen una transcripción en el equipo con modelos que se descargan aparte; no se comprobó en el plan gratuito.",
+    "scope": "App oficial 0.6.3 en modo Studio, sin cuenta y para uso personal. No cubre el modo Instant, la nube ni el autoalojamiento.",
+    "cost_note": "Gratis para uso personal. La licencia de escritorio para uso comercial y Cap Pro, con nube, funciones de IA y enlaces ilimitados, son de pago según la página de precios consultada el 27 de noviembre de 2026.",
+    "api_note": "El modo Studio graba y exporta en el equipo. El modo Instant, los enlaces compartidos y Cap AI usan la nube de Cap o un servidor propio.",
+    "hardware_note": "macOS 13.1 o posterior recomendado, Windows, o Linux con glibc 2.39 o posterior. Ubuntu 22.04 no está soportado.",
+    "sources": [
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/README.md",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/LICENSE",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/licenses/LICENSE-MIT",
+     "https://github.com/CapSoftware/Cap/releases/tag/cap-v0.6.3",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/apps/desktop-gpui/locales/es.toml",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/engine-verify.yml",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/recording-reliability.yml",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/verify-recording.yml",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/publish.yml",
+     "https://github.com/CapSoftware/Cap/blob/029aa29a4c1cebf66f585829aef5ff8dbbca908c/.github/workflows/desktop-release.yml",
+     "https://github.com/CapSoftware/Cap/actions/runs/43092047100",
+     "https://github.com/CapSoftware/Cap/actions/runs/43092046841",
+     "https://github.com/CapSoftware/Cap/actions/runs/43099158030",
+     "https://github.com/CapSoftware/Cap/actions/runs/43150140258",
+     "https://github.com/CapSoftware/Cap/security/advisories",
+     "https://cap.so/download",
+     "https://cap.so/download/versions",
+     "https://cap.so/pricing"
+    ]
+   }
+  },
+  {
+   "gh": "tw93/Pake",
+   "id": "pake",
+   "name": "Pake",
+   "cat": 7,
+   "sub": "herramientas",
+   "kind": "app",
+   "one": "Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando.",
+   "how": "Genera un proyecto Tauri que abre la dirección o tus archivos en el visor web del propio sistema y lo compila como instalador, sin incluir un navegador completo.",
+   "examples": [
+    "Convertir una página de inicio propia en una app con icono y ventana propios",
+    "Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador"
+   ],
+   "try": [
+    "Crea hola.html con un título y un párrafo propios y ejecuta pake ./hola.html --name HolaPake",
+    "En la carpeta aparece un instalador (.dmg, .msi, .deb o AppImage). Instálalo y abre HolaPake: la ventana muestra tu título y tu párrafo"
+   ],
+   "steps": [
+    "Instala Node.js 22.12 o posterior, Rust 1.85 o posterior y las herramientas de compilación de tu sistema: Xcode Command Line Tools en macOS, Visual Studio Build Tools en Windows o las bibliotecas de WebKitGTK que indica la guía en Linux.",
+    "Instala la versión revisada con npm install -g pake-cli@3.21.0 y comprueba que pake --version muestra 3.21.0. No uses versiones anteriores a la 3.17.3.",
+    "Ejecuta la primera prueba con tu archivo hola.html. La primera compilación tarda más porque prepara el entorno. Abre la app generada y comprueba el contenido."
+   ],
+   "alt": [],
+   "ligero": true,
+   "setup": "medium",
+   "license": "GPL-3.0",
+   "licencia_nota": "Pake es GPL-3.0 con una excepción añadida: las apps que generas pueden distribuirse con la licencia que elijas, incluso privativa. Pake y sus versiones modificadas siguen bajo GPL-3.0, y la marca Pake no puede usarse en productos derivados.",
+   "goals": [
+    "web",
+    "programar"
+   ],
+   "tags": [
+    "apps de escritorio",
+    "tauri",
+    "empaquetar web",
+    "cli"
+   ],
+   "url": "https://github.com/tw93/Pake/releases/tag/V3.21.0",
+   "caveat": "Usa la 3.17.3 o posterior, mejor la 3.21.0. Las apps creadas con versiones anteriores dejaban que los scripts de la web llamaran a funciones nativas, y antes de la 3.13.1 podían escribir archivos fuera de la carpeta de descargas. Reconstruye las apps antiguas y empaqueta solo webs en las que confíes. La app gráfica de pake.run es un producto aparte y de pago.",
+   "note": "Sobre el commit de V3.21.0 (705f738), «Quality & Testing» 45192308113 pasó clippy y las pruebas de Rust, la validación rápida de la CLI y la compilación completa de Tauri con sus pruebas en Ubuntu, Windows y macOS, además del empaquetado en Docker. El paquete npm pake-cli 3.21.0 tiene procedencia SLSA de la ejecución 45195435888 sobre ese commit. No se instaló ni se ejecutó.",
+   "avoid": "no quieres instalar Node.js, Rust y herramientas de compilación, o necesitas que la app acceda a funciones del sistema más allá de mostrar la web.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "prerequisites",
+    "local_model": "not_applicable",
+    "claude_code": "project_integration",
+    "codex": "project_integration",
+    "antigravity": "not_documented",
+    "subscription_note": "El repositorio incluye un plugin oficial para Claude Code y Codex que enseña al agente a usar la CLI con --json. Pake no usa la suscripción del agente: la CLI compila en tu equipo.",
+    "local_note": "Empaquetar no usa modelos de IA.",
+    "scope": "CLI pake-cli 3.21.0 instalada desde npm y empaquetado de un archivo HTML propio.",
+    "cost_note": "CLI GPL-3.0 gratuita. La app gráfica de pake.run cobra a partir de la tercera app y no es necesaria.",
+    "api_note": "No necesita clave de API. Al empaquetar una URL descarga el icono del sitio, y la app resultante carga esa web.",
+    "hardware_note": "Node.js 22.12 o posterior, Rust 1.85 o posterior y herramientas de compilación del sistema. La primera compilación descarga dependencias.",
+    "sources": [
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/README.md",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/LICENSE",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/LICENSE-EXCEPTION",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/TRADEMARK.md",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/docs/cli-usage.md",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/docs/faq.md",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/.github/workflows/quality-and-test.yml",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/.github/workflows/npm-publish.yml",
+     "https://github.com/tw93/Pake/blob/705f738d0a96832cc34e5922b4648f299336d567/plugins/pake/skills/pake/SKILL.md",
+     "https://github.com/tw93/Pake/releases/tag/V3.21.0",
+     "https://github.com/tw93/Pake/actions/runs/45192308113",
+     "https://github.com/tw93/Pake/actions/runs/45195435888",
+     "https://github.com/tw93/Pake/security/advisories/GHSA-vq4w-55rh-9ff3",
+     "https://github.com/tw93/Pake/security/advisories/GHSA-6c7f-87jf-wg9w",
+     "https://www.npmjs.com/package/pake-cli/v/3.21.0",
+     "https://pake.run/"
+    ]
+   }
+  },
+  {
+   "gh": "github/codeql",
+   "id": "codeql",
+   "name": "CodeQL",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "library",
+   "one": "Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub.",
+   "how": "El motor de CodeQL convierte el código en una base de datos y le aplica consultas escritas en el lenguaje QL que siguen los datos desde una entrada hasta una operación peligrosa. Este repositorio contiene esas consultas; el motor se distribuye aparte, con licencia propia.",
+   "examples": [
+    "Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión",
+    "Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo"
+   ],
+   "try": [
+    "En un repositorio público propio con licencia MIT, sube app.py con una ruta Flask que lee carpeta = request.args.get('carpeta') y ejecuta subprocess.Popen('ls ' + carpeta, shell=True). Activa CodeQL en Settings > Advanced Security > CodeQL analysis > Set up > Default",
+    "Cuando termina el flujo CodeQL en la pestaña Actions, el apartado Code scanning de la pestaña de seguridad muestra la alerta «Uncontrolled command line» con la regla py/command-line-injection en la línea de Popen"
+   ],
+   "steps": [
+    "Crea una cuenta gratuita de GitHub y un repositorio público nuevo de prueba con licencia MIT u otra aprobada por la OSI. Los términos de CodeQL solo permiten el uso gratuito sobre código abierto publicado así o para investigación académica.",
+    "No instales nada: en Settings > Advanced Security, junto a «CodeQL analysis», elige Set up > Default y pulsa Enable CodeQL. GitHub ejecuta en sus servidores el paquete vigente (codeql-action v4.39.5 usa CodeQL 2.27.6 por defecto), sin coste en repositorios públicos.",
+    "Sube el app.py de la primera prueba, espera a que el flujo CodeQL termine en Actions y abre Code scanning en la pestaña de seguridad. Para usarlo en tu equipo, descarga el CLI 2.27.6 desde github/codeql-cli-binaries; se aplican las mismas condiciones de licencia."
+   ],
+   "alt": [
+    "semgrep"
+   ],
+   "ligero": true,
+   "setup": "easy",
+   "license": "MIT (consultas y bibliotecas); CodeQL CLI con términos propios de GitHub",
+   "licencia_nota": "Las consultas y bibliotecas de este repositorio son MIT. El motor que las ejecuta (CodeQL CLI y el paquete que usa GitHub Actions) se rige por los GitHub CodeQL Terms and Conditions, que no son una licencia de código abierto. Permiten usarlo gratis para investigación académica, demostraciones, pruebas de consultas publicadas con licencia OSI y análisis de código publicado con una licencia aprobada por la OSI; para generar bases de datos en análisis automático, CI o CD, ese código abierto debe estar alojado en GitHub.com. Analizar código privado o cerrado (por ejemplo, un repositorio privado) exige una licencia de pago de GitHub Advanced Security, hoy GitHub Code Security. Los términos prohíben también ofrecer CodeQL como servicio para terceros.",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "tags": [
+    "análisis estático",
+    "flujo de datos",
+    "github",
+    "sarif",
+    "seguridad"
+   ],
+   "url": "https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning",
+   "caveat": "Úsalo gratis solo con repositorios públicos con licencia de código abierto o con fines académicos: el código privado o de clientes requiere licencia de pago de GitHub. No subas secretos ni código ajeno al repositorio de prueba. Si instalas el CLI, usa 2.20.3 o posterior por los avisos publicados (mejor 2.27.6) y no publiques artefactos de depuración en repositorios públicos.",
+   "note": "La versión v4.39.5 de codeql-action (commit 915412ff), que usa CodeQL 2.27.6 por defecto, pasó «PR Check - Multi-language repository» (ejecución 45419775563): crea bases de datos y analiza C/C++, C#, Go, Java, JavaScript, Python y Ruby en Ubuntu y macOS, también con la versión predeterminada. En github/codeql, el commit de codeql-cli/v2.27.6 (ddc0325f) solo muestra en Actions la construcción de la lista de consultas; el PR de preparación (#23184) pasó pruebas públicas de Go, Swift y Rust, y las de Python no son visibles. La consulta py/command-line-injection y su caso de prueba con Flask existen en ese commit. No se ejecutó la primera prueba.",
+   "avoid": "Necesitas analizar código privado o de clientes sin licencia de pago de GitHub, o prefieres reglas sencillas que puedas escribir sin aprender el lenguaje QL.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Un agente de código puede ayudarte a preparar el repositorio o a leer las alertas, por ejemplo con el servidor MCP de GitHub. CodeQL se ejecuta en GitHub Actions o en tu equipo sin suscripción de IA. Las sugerencias de corrección con IA de GitHub (Copilot Autofix) son un servicio aparte y opcional.",
+    "local_note": "El análisis no usa modelos de IA: aplica consultas al código.",
+    "scope": "Configuración predeterminada de code scanning en un repositorio público propio. El CLI local queda como ruta avanzada con los mismos términos de licencia.",
+    "cost_note": "Code scanning y los ejecutores estándar de GitHub Actions son gratuitos en repositorios públicos. En repositorios privados de organizaciones hace falta GitHub Code Security, de pago. El CLI no puede usarse gratis con código cerrado.",
+    "api_note": "No necesita clave de API de IA, solo una cuenta gratuita de GitHub.",
+    "hardware_note": "Con la configuración predeterminada basta un navegador: el análisis corre en servidores de GitHub. El paquete local pesa entre 400 y 700 MB comprimido según el sistema, y necesita las herramientas de compilación de los lenguajes que lo requieran.",
+    "sources": [
+     "https://github.com/github/codeql-cli-binaries/blob/9d0dcfbe60daef8e62688852c0977065865c80a0/LICENSE.md",
+     "https://github.com/github/codeql-action/blob/38112626f97ac1fd7acf3df7ebca51f4677c1b38/README.md",
+     "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/data/reusables/gated-features/code-scanning.md",
+     "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/content/billing/concepts/product-billing/github-actions.md",
+     "https://github.com/github/docs/blob/6dd875c27b0a1262bb71679e979059c80ff8de72/data/reusables/rai/code-scanning/gated-feature-autofix.md",
+     "https://github.com/github/codeql-cli-binaries/releases/tag/v2.27.6"
+    ]
+   }
+  },
+  {
+   "gh": "PyCQA/bandit",
+   "id": "bandit",
+   "name": "Bandit",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo.",
+   "how": "Lee cada archivo Python, lo convierte en un árbol de sintaxis y le aplica complementos que reconocen construcciones de riesgo. Al terminar genera un informe con la gravedad, la confianza y la línea afectada.",
+   "examples": [
+    "Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema",
+    "Añadir una comprobación de seguridad antes de cada commit en un proyecto Python mediante pre-commit"
+   ],
+   "try": [
+    "Crea prueba.py con import subprocess y subprocess.call(input('Carpeta: '), shell=True) y ejecuta bandit prueba.py",
+    "El informe muestra el hallazgo B602 (subprocess_popen_with_shell_equals_true) con gravedad High y confianza High en la línea de la llamada"
+   ],
+   "steps": [
+    "Instala Python 3.10 o posterior, que Bandit 1.9.4 exige. En una carpeta de prueba crea un entorno virtual con python -m venv bandit-env y actívalo.",
+    "Instala la versión revisada desde PyPI con pip install bandit==1.9.4 y comprueba que bandit --version muestra 1.9.4. También existe una imagen oficial firmada en ghcr.io/pycqa/bandit/bandit.",
+    "Crea prueba.py con la llamada de la primera prueba, ejecuta bandit prueba.py y localiza B602. Cambia la llamada a subprocess.call(['ls', carpeta]) sin shell=True y repite: B602 desaparece y solo quedan avisos informativos de gravedad Low, como B404 o B603."
+   ],
+   "alt": [],
+   "ligero": true,
+   "setup": "easy",
+   "license": "Apache-2.0",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "tags": [
+    "python",
+    "análisis estático",
+    "seguridad",
+    "cli"
+   ],
+   "url": "https://bandit.readthedocs.io/en/latest/start.html",
+   "caveat": "Cada hallazgo señala un patrón de riesgo, no una vulnerabilidad confirmada: revisa la línea antes de cambiarla. Bandit analiza archivo por archivo y no revisa dependencias ni secretos del historial de git. Úsalo solo con código propio o con permiso.",
+   "note": "La ejecución 22385359689 de «Build and Test Bandit» terminó en success sobre el commit de la etiqueta 1.9.4 (92ae8b8): formato, pep8 y pruebas con stestr en Python 3.10 a 3.14 en Ubuntu y macOS, incluidas pruebas funcionales que analizan los ejemplos subprocess_shell.py y yaml_load.py. El paquete 1.9.4 de PyPI tiene atestación de procedencia del flujo publish-to-pypi.yml de PyCQA/bandit. No se ejecutó la primera prueba.",
+   "avoid": "Tu proyecto no está escrito en Python o necesitas seguir el recorrido de los datos entre varios archivos.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Un agente de código puede ayudarte a instalar Bandit y a interpretar el informe, pero Bandit se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+    "local_note": "Aplica reglas fijas sobre el código. No usa modelos de IA.",
+    "scope": "Instalación desde PyPI y análisis local de un archivo Python propio.",
+    "cost_note": "Licencia Apache-2.0, sin pago para instalarlo ni ejecutarlo.",
+    "api_note": "No necesita clave de API ni conexión durante el análisis.",
+    "hardware_note": "Cualquier equipo con Python 3.10 o posterior.",
+    "sources": [
+     "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/README.rst",
+     "https://github.com/PyCQA/bandit/blob/92ae8b82fb422a639f0ed8d99e96cea769594e08/doc/source/start.rst",
+     "https://pypi.org/project/bandit/1.9.4/"
+    ]
+   }
+  },
+  {
+   "gh": "securego/gosec",
+   "id": "gosec",
+   "name": "gosec",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código.",
+   "how": "Carga los paquetes del módulo Go y analiza su árbol de sintaxis y una representación intermedia del programa. Algunas reglas siguen los datos desde una entrada del usuario hasta una función peligrosa.",
+   "examples": [
+    "Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar",
+    "Generar un informe SARIF en GitHub Actions y verlo junto con las demás alertas de code scanning"
+   ],
+   "try": [
+    "En una carpeta nueva ejecuta go mod init ejemplo y crea main.go que importe crypto/md5 y fmt e imprima md5.Sum([]byte(\"hola\")); después ejecuta gosec ./...",
+    "El informe lista G401 (uso de MD5 o SHA1) y G501 (importación bloqueada de crypto/md5) con archivo y línea, y el comando termina con código de salida 1"
+   ],
+   "steps": [
+    "Instala Go 1.26 o posterior desde go.dev: el go.mod de v2.30.0 declara go 1.26.0, aunque el README todavía indica 1.25.",
+    "Instala la versión revisada con go install github.com/securego/gosec/v2/cmd/gosec@v2.30.0 y comprueba gosec -version. Otras vías: los binarios de la publicación v2.30.0, con sumas de verificación y firmas cosign, o la fórmula gosec de Homebrew, que mantiene Homebrew y el README no menciona.",
+    "Prepara el módulo de la primera prueba y ejecuta gosec ./... para ver G401 y G501. Cambia a crypto/sha256 con sha256.Sum256 y repite: los dos hallazgos desaparecen."
+   ],
+   "alt": [],
+   "ligero": true,
+   "ai": "optional",
+   "setup": "easy",
+   "license": "Apache-2.0",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "tags": [
+    "go",
+    "análisis estático",
+    "seguridad",
+    "sarif"
+   ],
+   "url": "https://github.com/securego/gosec/releases/tag/v2.30.0",
+   "caveat": "Revisa cada hallazgo a mano y analiza solo código propio o con permiso. Las sugerencias de corrección con IA solo se activan si configuras proveedor y clave: según autofix/ai.go en v2.30.0 envían al servicio la descripción de cada hallazgo y consumen tu API.",
+   "note": "La ejecución 39929569892 del flujo CI terminó en success sobre el commit de v2.30.0 (5eb1d10): golangci-lint, el propio gosec y make test (ginkgo, fmt, vet y govulncheck) con Go 1.26.10 y 1.27.3. La ejecución 39930030604 publicó los binarios con sumas, firmas cosign y SBOM. No se ejecutaron la primera prueba ni las sugerencias con IA.",
+   "avoid": "Tu código no está escrito en Go o buscas revisar dependencias en lugar de tu propio código.",
+   "access": {
+    "mode": "software",
+    "api": "optional",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Una suscripción de Claude Code o Codex no activa las sugerencias de gosec: requieren una clave de API propia. Un agente puede ayudarte a instalar gosec y a leer el informe.",
+    "local_note": "El análisis es local y no usa modelos. Para las sugerencias opcionales, el README admite una URL compatible con OpenAI, como Ollama o LocalAI.",
+    "scope": "Instalación con go install y análisis local de un módulo Go propio, sin la función de IA.",
+    "cost_note": "gosec es Apache-2.0 y gratuito. Solo las sugerencias opcionales consumen la API del proveedor elegido; el README incluye promoción comercial de un proveedor patrocinador.",
+    "api_note": "El análisis no necesita API. Las sugerencias de corrección admiten Atlas Cloud, Gemini, Claude, OpenAI o un servicio compatible con OpenAI, cada uno con su clave.",
+    "hardware_note": "Cualquier equipo con Go 1.26 o posterior.",
+    "sources": [
+     "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/README.md",
+     "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/autofix/ai.go",
+     "https://github.com/securego/gosec/blob/5eb1d104ef85ff2c905c877eb600e8c1dee33a22/go.mod"
+    ]
+   }
+  },
+  {
+   "gh": "presidentbeef/brakeman",
+   "id": "brakeman",
+   "name": "Brakeman",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "app",
+   "one": "Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo.",
+   "how": "Analiza los controladores, modelos, vistas y configuración de la aplicación y sigue los valores que llegan del usuario, como params, hasta llamadas peligrosas. No necesita arrancar la aplicación ni su base de datos.",
+   "examples": [
+    "Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario",
+    "Comparar el informe JSON actual con el anterior para ver qué avisos se corrigieron y cuáles son nuevos"
+   ],
+   "try": [
+    "Crea demo/app/controllers/archivos_controller.rb con una clase ArchivosController cuyo método index ejecute system(\"ls #{params[:carpeta]}\") y ejecuta brakeman demo",
+    "El informe muestra un aviso Command Injection de la comprobación Execute, con confianza High, el archivo y la línea de system"
+   ],
+   "steps": [
+    "Instala Ruby 3.2 o posterior: Brakeman 8.1.1 lo exige para ejecutarse y analiza aplicaciones Rails de la 2.3 a la 8. No necesitas instalar Rails para la prueba.",
+    "Instala la versión revisada desde RubyGems con gem install brakeman -v 8.1.1 y comprueba brakeman --version. La imagen Docker presidentbeef/brakeman sigue en 8.1.0 porque su publicación automática para 8.1.1 falló al arrancar.",
+    "Prepara la carpeta demo de la primera prueba y ejecuta brakeman demo. Cambia la llamada a system(\"ls\", params[:carpeta]), que no pasa por un intérprete de comandos, y repite: el aviso desaparece."
+   ],
+   "alt": [],
+   "ligero": true,
+   "setup": "easy",
+   "license": "Brakeman Public Use License",
+   "licencia_nota": "No es una licencia de código abierto aprobada por la OSI. El texto permite usarlo gratis para analizar tu propio software y para cualquier uso no comercial. Exige una licencia comercial de pago para usos con ventaja comercial o pago a cambio: ofrecerlo como servicio gestionado o SaaS, distribuirlo como producto comercial o dentro de uno, o integrarlo en un producto o servicio de valor añadido. Auditar código de clientes como servicio de pago puede entrar ahí; ante la duda, el LICENSE pide consultar al mantenedor. El código anterior al 15 de junio de 2018 conserva la licencia MIT y las contribuciones se ceden a Synopsys.",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "tags": [
+    "ruby",
+    "rails",
+    "análisis estático",
+    "seguridad"
+   ],
+   "url": "https://github.com/presidentbeef/brakeman/releases/tag/v8.1.1",
+   "cmd": "gem install brakeman",
+   "caveat": "Gratis para revisar tus propias aplicaciones o con fines no comerciales; ofrecerlo en un servicio o producto comercial para terceros requiere licencia de pago. Instala 8.1.1 desde RubyGems, porque la imagen Docker sigue en 8.1.0. Revisa cada aviso a mano.",
+   "note": "CircleCI ejecutó el flujo de pruebas sobre el commit de la etiqueta v8.1.1 (9080ba4) con resultado success: bundle exec rake, que analiza aplicaciones Rails de ejemplo de las versiones 2 a 8, en Ruby 3.2, 3.3, 3.4 y 4.0. GitHub lo registra como comprobación 136439493013. En GitHub Actions no hay pruebas: el único flujo publica la imagen Docker y falló al arrancar para 8.1.1 (ejecución 44796664587). No se ejecutó la primera prueba.",
+   "avoid": "Tu aplicación no usa Ruby on Rails o quieres integrarlo en un producto o servicio comercial para terceros sin comprar la licencia.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "ordinary",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Un agente de código puede ayudarte a instalar Brakeman y a interpretar los avisos, pero Brakeman se ejecuta en tu equipo sin cuenta ni suscripción de IA.",
+    "local_note": "Aplica comprobaciones fijas sobre el código. No usa modelos de IA.",
+    "scope": "Instalación desde RubyGems y análisis local de una carpeta Rails mínima propia.",
+    "cost_note": "Gratis para analizar tu propio software y para uso no comercial. Los usos comerciales que define la licencia (SaaS, producto comercial o servicio de valor añadido) requieren licencia de pago.",
+    "api_note": "No necesita clave de API ni conexión durante el análisis.",
+    "hardware_note": "Cualquier equipo con Ruby 3.2 o posterior.",
+    "sources": [
+     "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/README.md",
+     "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/LICENSE.md",
+     "https://github.com/presidentbeef/brakeman/blob/9080ba43d11208d94d6e4d3a8bedbaec018b06f5/COPYING.md",
+     "https://rubygems.org/gems/brakeman/versions/8.1.1"
+    ]
+   }
+  },
+  {
+   "gh": "MobSF/Mobile-Security-Framework-MobSF",
+   "id": "mobsf",
+   "name": "MobSF (Mobile Security Framework)",
+   "cat": 16,
+   "sub": "defensa",
+   "kind": "server",
+   "one": "Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo.",
+   "how": "Funciona como una aplicación web en tu equipo: subes el archivo de la app, MobSF la descomprime y descompila, aplica reglas de análisis estático y muestra un informe. El análisis dinámico, opcional, necesita además un emulador o un dispositivo preparado.",
+   "examples": [
+    "Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código",
+    "Practicar con una app de entrenamiento de OWASP y comparar el informe con las pruebas de la guía MASTG"
+   ],
+   "try": [
+    "Con MobSF 4.6.9 publicado solo en 127.0.0.1, sube UnCrackable-Level1.apk, la app de práctica con licencia CC BY-SA 4.0 del repositorio OWASP/mastg (Crackmes/Android/Level_01)",
+    "Al terminar el análisis estático se abre el informe del paquete owasp.mstg.uncrackable1 con su puntuación de seguridad y las secciones de permisos, manifiesto y código con sus hallazgos"
+   ],
+   "steps": [
+    "Instala Docker (Docker Desktop en Windows o macOS, o Docker Engine en Linux). La descarga comprimida de la imagen v4.6.9 ronda los 750 MB. Docker Desktop tiene condiciones de licencia propias para empresas grandes.",
+    "Arranca la versión fijada solo para tu equipo: docker run -it --rm -p 127.0.0.1:8000:8000 -e DJANGO_SUPERUSER_PASSWORD=una-clave-tuya opensecurity/mobile-security-framework-mobsf:v4.6.9. Abre http://127.0.0.1:8000 e inicia sesión con el usuario mobsf y esa clave.",
+    "Descarga UnCrackable-Level1.apk de OWASP/mastg, súbela en la página principal y espera el informe. Para terminar, pulsa Ctrl+C en la terminal: con --rm se borran el contenedor y sus resultados."
+   ],
+   "alt": [],
+   "ligero": true,
+   "setup": "medium",
+   "license": "GPL-3.0",
+   "goals": [
+    "seguridad",
+    "programar"
+   ],
+   "tags": [
+    "móvil",
+    "android",
+    "ios",
+    "análisis estático",
+    "seguridad"
+   ],
+   "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.6.9",
+   "caveat": "Usa 4.6.6 o posterior (recomendada 4.6.9): las versiones anteriores tienen avisos publicados, entre ellos XSS almacenado que puede provocar la propia app analizada. Publica el puerto solo en 127.0.0.1 (el ejemplo del README, -p 8000:8000, lo abre a tu red) y no uses la clave predeterminada mobsf/mobsf. Analiza solo apps propias o con permiso, y no subas apps privadas a mobsf.live, que es un servicio en línea.",
+   "note": "La ejecución 44250422514 de «MobSF tests» terminó en success sobre el commit de v4.6.9 (fa87c37): lint, migraciones y pruebas que suben y analizan los archivos de ejemplo del submódulo MobSF/test_files (APK, IPA, APPX y otros) en Ubuntu, macOS y Windows con Python 3.12 y 3.13, además de instalar el paquete. La ejecución 44358831543 publicó la imagen v4.6.9 en Docker Hub. No se ejecutaron la primera prueba ni el análisis dinámico.",
+   "avoid": "Quieres analizar apps de terceros sin permiso o compartir el servidor en una red sin reforzar su configuración.",
+   "access": {
+    "mode": "software",
+    "api": "not_required",
+    "cost": "no_model_fee",
+    "hardware": "prerequisites",
+    "local_model": "not_applicable",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "antigravity": "not_documented",
+    "subscription_note": "Un agente de código puede ayudarte a lanzar el contenedor o a usar la API REST, pero MobSF no necesita ninguna suscripción de IA.",
+    "local_note": "El análisis estático corre en tu equipo sin modelos de IA. Algunas comprobaciones usan la red: resuelven por DNS los dominios hallados en la app y descargan listas de amenazas. MOBSF_DOMAIN_MALWARE_SCAN=0 desactiva esa comprobación.",
+    "scope": "Análisis estático en Docker local de una APK de práctica de OWASP. No cubre el análisis dinámico.",
+    "cost_note": "Licencia GPL-3.0, sin pago para la ruta descrita. El soporte empresarial y los cursos del autor son opcionales y de pago.",
+    "api_note": "No usa API de IA. VirusTotal es opcional, está desactivado por defecto y necesita clave propia; con MOBSF_VT_UPLOAD=1 subiría los archivos a ese servicio.",
+    "hardware_note": "Docker en un equipo de 64 bits (imágenes amd64 y arm64). El análisis dinámico requiere además un emulador, simulador o dispositivo preparado.",
+    "sources": [
+     "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/README.md",
+     "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/Dockerfile",
+     "https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/fa87c37892b264cf76bed8c358cc2d5d5323c8c2/mobsf/MobSF/settings.py",
+     "https://github.com/MobSF/docs/blob/545d88f9c19a97933ba36e60fdb9c6946d7aa9e2/configurations.md"
+    ]
+   }
+  }
+ ]
+}

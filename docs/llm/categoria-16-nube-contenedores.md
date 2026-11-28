@@ -20,7 +20,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 |---|---|---|---:|---|---|
 | `osv-scanner` | Escáner SCA de Google contra la base OSV: lockfiles, imágenes y directorios de… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
 | `trivy` | Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC… | 1 Básico | 79 | Apache-2.0 (OSI permisiva) | recomendado |
-| `falco` | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls… | 4 Experto | 76 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `falco` | Runtime security para contenedores y Linux: reglas que alertan sobre syscalls… | 4 Experto | 75 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `checkov` | SAST de infraestructura como código: Terraform, Kubernetes, CloudFormation y… | 1 Básico | 74 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `prowler` | Auditoría multi-cloud open source (AWS, Azure, GCP…) de configuración y marcos… | 2 Intermedio | 71 | Apache-2.0 (open-core) | sin grupo |
 | `syft` | Genera SBOMs (Software Bill of Materials) de imágenes, directorios y remotes… | 1 Básico | 71 | Apache-2.0 (OSI permisiva) | recomendado |
@@ -59,7 +59,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Falco (`falco`)
 
-- **Repo:** https://github.com/falcosecurity/falco · Apache-2.0 · nivel 4 · 76/100
+- **Repo:** https://github.com/falcosecurity/falco · Apache-2.0 · nivel 4 · 75/100
 - **Qué es:** Proyecto CNCF de seguridad en tiempo de ejecución para hosts Linux y Kubernetes.
 - **Cuándo elegirlo:** Casos: detectar un shell interactivo en un pod de producción propia; alertar sobre escritura inesperada en /etc dentro de un contenedor.
 - **Requisitos:** nivel 4: preparación difícil; C++, CMakeLists.txt, Makefile; API de IA: no.

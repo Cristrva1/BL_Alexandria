@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — app de escritorio con instalador para Windows, macOS y Linux · corregido a mano
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 60/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -34,6 +34,12 @@ Escrito en C con interfaces nativas para cada sistema y HandBrakeCLI; usa biblio
 | [OBS Studio](obs-studio.md) | Las grabaciones de OBS Studio en MKV se convierten con HandBrake a MP4 de menor tamaño para publicarlas (combinación por arquitectura). | Graba con OBS; después transcodifica con un preset de HandBrake. |
 | [LosslessCut](lossless-cut.md) | LosslessCut recorta sin recodificar y HandBrake recodifica solo el resultado final (combinación por arquitectura). | Recorta primero con LosslessCut; después convierte con HandBrake. |
 | [Jellyfin](jellyfin.md) | Combinación recíproca: Jellyfin lo enlaza como «Convertir la videoteca a formatos compatibles con HandBrake reduce la transcodificación en tiempo real de Jellyfin (combinación por arquitectura)». | Orden indicado desde Jellyfin: Convierte con HandBrake; después añade los archivos a la biblioteca. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Cap](cap.md)
 
 **Notas:** No elimina protecciones anticopia; respeta los derechos del material que conviertes.
 

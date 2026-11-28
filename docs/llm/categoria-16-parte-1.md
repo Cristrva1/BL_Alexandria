@@ -1,6 +1,6 @@
 # Alexandría para agentes · Analizar software y comprobar su seguridad (parte 1 de 3)
 
-Categoría 16 completa (142 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 16 completa (147 repos, 14 subcategorías). Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=16 · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -120,7 +120,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 
 ### YARA (`yara`)
 
-- **Repo:** https://github.com/VirusTotal/yara · BSD-3-Clause · nivel 3 · 55/100
+- **Repo:** https://github.com/VirusTotal/yara · BSD-3-Clause · nivel 3 · 54/100
 - **Qué es:** Motor open source (BSD-3-Clause) mantenido en el org VirusTotal para matching de malware.
 - **Cuándo elegirlo:** Casos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis.
 - **Requisitos:** nivel 3: preparación media, dominio especializado; C; API de IA: no.
@@ -598,17 +598,6 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 - **Primera prueba propuesta (no ejecutada):** Instala con `brew install rustscan` y escanea un host de lab. Éxito: Lista puertos y, si configuras, salida Nmap.
 - **Combina con:** `nmap`, `naabu`
 - **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización.
-
-### Nmap (`nmap`)
-
-- **Repo:** https://github.com/nmap/nmap · NPSL (no OSI) · nivel 1 · 59/100
-- **Qué es:** Escáner de red creado por Gordon Lyon (Fyodor) en 1997; el repositorio de GitHub es un espejo del SVN oficial. Licencia propia (Nmap Public Source License) que permite el uso libre a usuarios finales y ofrece licencia comercial para…
-- **Cuándo elegirlo:** Casos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio.
-- **Requisitos:** nivel 1: preparación sencilla; C; API de IA: no.
-- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/nmap/nmap/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`. Éxito: Obtienes la lista de puertos abiertos y los servicios detectados.
-- **Combina con:** `metasploit` [16/explotacion-c2], `nuclei` [16/pruebas], `wireshark` [16/pruebas]
-- **Riesgos y avisos:** Uso dual: solo contra sistemas propios o con autorización. Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia no OSI: revisa las condiciones de uso y redistribución. Escanear redes ajenas sin permiso puede ser delito o violar contratos de proveedores de internet o cloud.
 
 ## Cómo referenciarlo desde AGENTS.md o CLAUDE.md
 

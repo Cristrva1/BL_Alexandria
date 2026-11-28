@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 51/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -49,7 +49,7 @@ Grupo **Skills de diseño de interfaces para agentes**: hallmark ocupa la posici
 | 1 | [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) ⭐ recomendado | 73 | Si quieres una skill con bases de estilos, paletas y tipografías para generar UI. |
 | 2 | [taste-skill](taste-skill.md) | 70 | Si quieres que el agente evite el aspecto genérico en las interfaces. |
 | 3 | [impeccable](impeccable.md) | 63 | Si quieres vocabulario y playbooks de diseño con detector y hooks. |
-| 4 | **hallmark** (esta ficha) | 51 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
+| 4 | **hallmark** (esta ficha) | 50 | Si quieres decisiones visuales más concretas y coherentes al construir interfaces. |
 
 ## Acceso, coste y equipo
 

@@ -49,7 +49,7 @@ Grupo **Desarrollo guiado por especificaciones**: Spec Kit ocupa la posición 1 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | **Spec Kit** (esta ficha) ⭐ recomendado | 76 | Si buscas esto: kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| 2 | [BMAD Method](bmad-method.md) | 58 | Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
+| 2 | [BMAD Method](bmad-method.md) | 57 | Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
 
 ## Acceso, coste y equipo
 

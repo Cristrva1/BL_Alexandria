@@ -908,8 +908,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
-**Primera prueba propuesta:** Elige ASR o TTS y prueba una muestra corta siguiendo esa guía
-**Qué comprobar:** Puedes distinguir transcripción, generación y variante del modelo
+**Primera prueba propuesta:** Transcribe un audio propio corto con VibeVoice-ASR o genera una frase con VibeVoice-Realtime-0.5B siguiendo su guía
+**Qué comprobar:** Obtienes el texto o el audio y sabes qué variante del modelo usaste
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `transformers`, `open-notebook`, `pipecat`, `ten-framework`
 

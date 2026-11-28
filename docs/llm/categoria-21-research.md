@@ -18,10 +18,10 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
-| `deer-flow` | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con… | 2 Intermedio | 68 | MIT (OSI permisiva) | sin grupo |
+| `deer-flow` | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con… | 2 Intermedio | 67 | MIT (OSI permisiva) | sin grupo |
 | `gpt-researcher` | Agente autónomo que investiga en línea y consolida reportes citados y… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | recomendado |
 | `storm` | Sistema de Stanford que investiga un tema en la web y escribe un informe largo… | 2 Intermedio | 60 | MIT (OSI permisiva) | alternativa |
-| `local-deep-research` | Agente de investigación que combina buscadores, documentos y modelos locales o… | 2 Intermedio | 56 | MIT (OSI permisiva) | alternativa |
+| `local-deep-research` | Agente de investigación que combina buscadores, documentos y modelos locales o… | 2 Intermedio | 55 | MIT (OSI permisiva) | alternativa |
 | `autoresearch` | Experimento para iterar sobre entrenamiento de nanochat con un agente de código… | 3 Avanzado | 45 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
@@ -30,7 +30,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### deer-flow (`deer-flow`)
 
-- **Repo:** https://github.com/bytedance/deer-flow · MIT · nivel 2 · 68/100
+- **Repo:** https://github.com/bytedance/deer-flow · MIT · nivel 2 · 67/100
 - **Qué es:** DeerFlow 2.0, «super agent harness» open source de ByteDance, construido sobre LangGraph y LangChain. Licencia MIT. Es una reescritura completa sin código compartido con la v1 (el framework Deep Research sigue en la rama 1.x), tiene ~85k…
 - **Cuándo elegirlo:** Casos: Investigar un tema con fuentes; Coordinar una generación de informe.
 - **Requisitos:** nivel 2: preparación media; Docker o entorno de desarrollo; modelo configurado; carpeta de prueba; hardware prerequisites; API de IA: depends; Docker o entorno de desarrollo; modelo configurado; carpeta de prueba.
@@ -80,7 +80,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### local-deep-research (`local-deep-research`)
 
-- **Repo:** https://github.com/LearningCircuit/local-deep-research · MIT · nivel 2 · 56/100 · alternativa en «Agentes de investigación autónoma»
+- **Repo:** https://github.com/LearningCircuit/local-deep-research · MIT · nivel 2 · 55/100 · alternativa en «Agentes de investigación autónoma»
 - **Qué es:** Local Deep Research, asistente de investigación agéntica que puede ejecutarse totalmente en local, de LearningCircuit. Licencia MIT. Tiene ~9.6k estrellas (v2.0.1); según su propio README, alcanza ~95% en SimpleQA con Qwen3.6-27B en una…
 - **Cuándo elegirlo:** Casos: Consultar documentos privados; Preparar una revisión bibliográfica.
 - **Requisitos:** nivel 2: preparación media; Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo; hardware prerequisites; API de IA: opcional; Modelo local o remoto; buscador; Python o Docker; equipo adecuado al modelo.

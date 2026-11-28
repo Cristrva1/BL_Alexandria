@@ -144,7 +144,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Cuándo elegirlo:** Casos: Estudiar transcripción por hablantes; Probar generación de voz.
 - **Requisitos:** nivel 3: preparación pesada, requiere programar con él; Modelo y guía específicos; Python y GPU según variante; audio autorizado; hardware prerequisites; API de IA: no; Modelo y guía específicos; Python y GPU según variante; audio autorizado.
 - **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/microsoft/VibeVoice.git` — fuente: https://github.com/microsoft/VibeVoice/blob/main/docs/setup_gradio_demo.md
-- **Primera prueba propuesta (no ejecutada):** Elige ASR o TTS y prueba una muestra corta siguiendo esa guía Éxito: Puedes distinguir transcripción, generación y variante del modelo
+- **Primera prueba propuesta (no ejecutada):** Transcribe un audio propio corto con VibeVoice-ASR o genera una frase con VibeVoice-Realtime-0.5B siguiendo su guía Éxito: Obtienes el texto o el audio y sabes qué variante del modelo usaste
 - **Combina con:** `transformers` [24/entrenamiento], `open-notebook` [8/notebooklm], `pipecat` [29/voz-agentes], `ten-framework` [29/voz-agentes]
 - **Riesgos y avisos:** Sin alternativas declaradas. Partes del TTS deshabilitadas por uso indebido. Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal.
 

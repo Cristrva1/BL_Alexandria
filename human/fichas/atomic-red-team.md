@@ -51,7 +51,7 @@ Grupo **Emulación de adversarios**: Atomic Red Team ocupa la posición 2 de 2 (
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [CALDERA](caldera.md) ⭐ recomendado | 64 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
+| 1 | [CALDERA](caldera.md) ⭐ recomendado | 63 | Si buscas esto: framework Apache de emulación de adversario automatizado: agentes, adversarios ATT&CK y operaciones controladas desde web. |
 | 2 | **Atomic Red Team** (esta ficha) | 62 | Si buscas esto: biblioteca de pruebas ATT&CK pequeñas y documentadas para validar detecciones y controles en un laboratorio propio. |
 
 ## Acceso, coste y equipo

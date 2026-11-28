@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
-**Puntuación de calidad** 61/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 59/100 · métricas del 2026-11-26 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

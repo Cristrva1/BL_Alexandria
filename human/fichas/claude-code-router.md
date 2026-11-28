@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación pesada
 
-**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 55/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -47,9 +47,9 @@ Grupo **Pasarelas y routers de proveedores LLM**: claude-code-router ocupa la po
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [litellm](litellm.md) ⭐ recomendado | 78 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
-| 2 | [OmniRoute](omniroute.md) | 76 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
-| 3 | **claude-code-router** (esta ficha) | 58 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
+| 1 | [litellm](litellm.md) ⭐ recomendado | 75 | Si necesitas una pasarela estándar para 100+ proveedores con presupuestos y claves. |
+| 2 | [OmniRoute](omniroute.md) | 74 | Si quieres una pasarela local que reparta cuotas y alternativas entre proveedores. |
+| 3 | **claude-code-router** (esta ficha) | 55 | Si quieres usar Claude Code con otros proveedores o modelos y enrutar por tarea. |
 
 ## Acceso, coste y equipo
 

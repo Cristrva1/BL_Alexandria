@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media
 
-**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 56/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia revisada el 2026-11-16:** Apache-2.0 con condiciones adicionales. Licencia Multica: Apache-2.0 sujeta a las condiciones de la parte I. Fuente: [LICENSE](https://github.com/multica-ai/multica/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -49,8 +49,8 @@ Grupo **Paneles para coordinar equipos de agentes**: multica ocupa la posición 
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [paperclip](paperclip.md) ⭐ recomendado | 68 | Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
-| 2 | **multica** (esta ficha) | 57 | Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. |
+| 1 | [paperclip](paperclip.md) ⭐ recomendado | 67 | Si buscas esto: servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
+| 2 | **multica** (esta ficha) | 56 | Si buscas esto: workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. |
 
 ## Acceso, coste y equipo
 

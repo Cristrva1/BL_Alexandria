@@ -23,7 +23,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `mastg` | Guía OWASP de pruebas de seguridad de apps móviles (Android e iOS): técnicas… | 1 Básico | 69 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
 | `seclists` | Colección OWASP de wordlists y payloads (dirs, users, passwords, fuzzing) de… | 1 Básico | 66 | MIT (OSI permisiva) | recomendado |
 | `payloadsallthethings` | Enciclopedia práctica de payloads y técnicas web (XSS, SQLi, SSRF…) mantenida… | 1 Básico | 63 | MIT (OSI permisiva) | alternativa |
-| `hacktricks` | Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con… | 1 Básico | 61 | — (sin licencia detectada) | sin grupo |
+| `hacktricks` | Wiki práctica de pentest y privilege escalation (book.hacktricks.xyz) con… | 1 Básico | 62 | — (sin licencia detectada) | sin grupo |
 | `awesome-reverse-engineering` | Directorio de herramientas y recursos para aprender análisis de binarios… | 1 Básico | 57 | CC0-1.0 (OSI permisiva) | sin grupo |
 | `masvs` | Estándar OWASP de verificación de seguridad de aplicaciones móviles: controles… | 1 Básico | 56 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
 | `asvs` | Estándar OWASP de verificación de seguridad de aplicaciones: requisitos… | 1 Básico | 53 | CC-BY-SA-4.0 (OSI copyleft) | sin grupo |
@@ -93,7 +93,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### HackTricks (`hacktricks`)
 
-- **Repo:** https://github.com/HackTricks-wiki/hacktricks · — · nivel 1 · 61/100
+- **Repo:** https://github.com/HackTricks-wiki/hacktricks · — · nivel 1 · 62/100
 - **Qué es:** Wiki de pentest (sin SPDX en API).
 - **Cuándo elegirlo:** Casos: repasar privesc Linux antes de un lab; consultar técnicas AD.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; JavaScript, Dockerfile, docker-compose.yml; API de IA: no.

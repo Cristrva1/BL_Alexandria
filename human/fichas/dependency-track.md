@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
-**Puntuación de calidad** 65/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 64/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 

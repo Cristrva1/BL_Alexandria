@@ -12,7 +12,7 @@
 
 **Nivel:** 3 Avanzado — preparación sencilla; dominio especializado
 
-**Puntuación de calidad** 72/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 73/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** GPL-2.0-or-later (con aclaraciones). Fuente: [LICENSE](https://github.com/peass-ng/PEASS-ng/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 

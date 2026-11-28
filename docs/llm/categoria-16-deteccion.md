@@ -25,8 +25,8 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=1
 | `modsecurity` | Motor WAF de código abierto (libmodsecurity v3) que inspecciona peticiones HTTP… | 4 Experto | 70 | Apache-2.0 (OSI permisiva) | recomendado |
 | `coreruleset` | Reglas WAF OWASP (Core Rule Set) para ModSecurity/Coraza: protege apps web con… | 1 Básico | 65 | Apache-2.0 (OSI permisiva) | sin grupo |
 | `arkime` | Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para… | 4 Experto | 63 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `fail2ban` | Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…)… | 2 Intermedio | 63 | GPL-2.0 (OSI copyleft) | alternativa |
 | `suricata` | IDS/IPS y motor de inspección de tráfico de red de referencia (OISF): firmas… | 4 Experto | 63 | GPL-2.0 (OSI copyleft) | sin grupo |
-| `fail2ban` | Bloquea IPs tras intentos fallidos de autenticación leyendo logs (ssh, web…)… | 2 Intermedio | 62 | GPL-2.0 (OSI copyleft) | alternativa |
 | `coraza` | WAF en Go compatible con ModSecurity SecLang y el OWASP Core Rule Set… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | alternativa |
 | `sigma` | Formato y reglas de detección SIEM multi-vendor: escribe una vez, convierte a… | 1 Básico | 58 | DRL-1.1 (reglas); especificación de dominio público (sin licencia detectada) | sin grupo |
 | `shuffle` | SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de… | 3 Avanzado | 56 | AGPL-3.0 (OSI copyleft) | sin grupo |
@@ -115,6 +115,18 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Primera prueba propuesta (no ejecutada):** Instala desde https://arkime.com/downloads siguiendo la guía simple. Éxito: UI muestra sesiones capturadas.
 - **Combina con:** `wireshark` [16/pruebas], `suricata`
 
+### Fail2ban (`fail2ban`)
+
+- **Repo:** https://github.com/fail2ban/fail2ban · GPL-2.0 · nivel 2 · 63/100 · alternativa en «Bloqueo de IP por comportamiento»
+- **Qué es:** Ban automático por logs (GPL según COPYING; API NOASSERTION).
+- **Cuándo elegirlo:** Casos: proteger SSH de un VPS propio; banear force brute a un panel web.
+- **Requisitos:** nivel 2: preparación media; Python, setup.py; API de IA: no.
+- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/fail2ban/fail2ban.git` — fuente: https://github.com/fail2ban/fail2ban/blob/master/README.md
+- **Primera prueba propuesta (no ejecutada):** Instala el paquete de tu distro o clona y sigue COPYING/README; activa el jail sshd. Éxito: IPs repetidas quedan baneadas.
+- **Combina con:** `wazuh`
+- **Alternativas:** `crowdsec`
+- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
+
 ### Suricata (`suricata`)
 
 - **Repo:** https://github.com/OISF/suricata · GPL-2.0 · nivel 4 · 63/100
@@ -124,18 +136,6 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 - **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/OISF/suricata/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo. Éxito: Con tráfico de prueba ves alertas en eve.json o el SIEM.
 - **Combina con:** `wazuh`, `wireshark` [16/pruebas], `zeek`
-
-### Fail2ban (`fail2ban`)
-
-- **Repo:** https://github.com/fail2ban/fail2ban · GPL-2.0 · nivel 2 · 62/100 · alternativa en «Bloqueo de IP por comportamiento»
-- **Qué es:** Ban automático por logs (GPL según COPYING; API NOASSERTION).
-- **Cuándo elegirlo:** Casos: proteger SSH de un VPS propio; banear force brute a un panel web.
-- **Requisitos:** nivel 2: preparación media; Python, setup.py; API de IA: no.
-- **Instalación (documentada en la fuente; no ejecutada):** `git clone https://github.com/fail2ban/fail2ban.git` — fuente: https://github.com/fail2ban/fail2ban/blob/master/README.md
-- **Primera prueba propuesta (no ejecutada):** Instala el paquete de tu distro o clona y sigue COPYING/README; activa el jail sshd. Éxito: IPs repetidas quedan baneadas.
-- **Combina con:** `wazuh`
-- **Alternativas:** `crowdsec`
-- **Riesgos y avisos:** Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION).
 
 ### OWASP Coraza (`coraza`)
 

@@ -22,7 +22,7 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 | `rtk` | Proxy de terminal que compacta salidas de comandos para reducir el contexto que… | 1 Básico | 69 | Apache-2.0 (OSI permisiva) | recomendado |
 | `headroom` | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo… | 2 Intermedio | 61 | Apache-2.0 (OSI permisiva) | alternativa |
 | `gptcache` | Reutiliza respuestas de consultas parecidas a un modelo mediante una caché… | 2 Intermedio | 58 | MIT (OSI permisiva) | sin grupo |
-| `llmlingua` | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | 49 | MIT (OSI permisiva) | sin grupo |
+| `llmlingua` | Acorta texto de entrada para modelos de lenguaje y permite medir cuánto… | 2 Intermedio | 48 | MIT (OSI permisiva) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
@@ -73,7 +73,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### LLMLingua (`llmlingua`)
 
-- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · 49/100
+- **Repo:** https://github.com/microsoft/LLMLingua · MIT · nivel 2 · 48/100
 - **Qué es:** Acorta texto de entrada para modelos de lenguaje y permite medir cuánto contexto conservas antes de enviar el prompt.
 - **Cuándo elegirlo:** Casos: Comparar un prompt largo con su versión comprimida.; Medir tokens ahorrados y revisar si mantuvo una restricción importante.
 - **Requisitos:** nivel 2: preparación media, requiere programar con él; Python, Makefile, pyproject.toml, setup.py; hardware model_dependent; API de IA: no; Python, PyTorch y un modelo de compresión compatible con el hardware..

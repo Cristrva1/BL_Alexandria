@@ -12,7 +12,7 @@
 
 **Nivel:** 1 Básico — preparación sencilla; se instala dentro de un agente (skill, plugin o MCP)
 
-**Puntuación de calidad** 58/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 57/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > **Licencia revisada el 2026-11-16:** MIT. Las marcas BMad están registradas; la licencia no cubre su uso. Fuente: [LICENSE](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/LICENSE). GitHub la marca como NOASSERTION.
 
@@ -49,7 +49,7 @@ Grupo **Desarrollo guiado por especificaciones**: BMAD Method ocupa la posición
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
 | 1 | [Spec Kit](spec-kit.md) ⭐ recomendado | 76 | Si buscas esto: kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| 2 | **BMAD Method** (esta ficha) | 58 | Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
+| 2 | **BMAD Method** (esta ficha) | 57 | Si buscas esto: metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
 
 ## Acceso, coste y equipo
 

@@ -12,7 +12,7 @@
 
 **Nivel:** 2 Intermedio — preparación media; varios servicios con Docker Compose
 
-**Puntuación de calidad** 72/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
+**Puntuación de calidad** 70/100 · métricas del 2026-11-17 · [cómo se calcula](../calidad.md)
 
 ## ¿Qué es?
 
@@ -39,9 +39,9 @@ Servidor Django con PostgreSQL, Celery y Redis desplegado con Docker Compose; pa
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[OWASP Nettacker](nettacker.md) · [OWASP secureCodeBox](securecodebox.md)
+[Bandit](bandit.md) · [Brakeman](brakeman.md) · [CodeQL](codeql.md) · [gosec](gosec.md) · [MobSF (Mobile Security Framework)](mobsf.md) · [OWASP Nettacker](nettacker.md) · [OWASP secureCodeBox](securecodebox.md)
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 3.5.200 (2026-11-16) · licencia declarada BSD-3-Clause (consultado el 2026-11-16).
 

@@ -34,6 +34,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`, `haystack`, `qdrant`, `langchain`
 **Alternativas (elige una):** `marker`, `mineru`, `unstructured`, `olmocr`
 
+## `documenso`
+role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=firma electrónica,pdf,autoalojado,docker,auditoría
+
+**Qué es:** Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. La detección con IA necesita una clave de Google Vertex AI con facturación activa. La imagen Docker envía telemetría anónima salvo que definas DOCUMENSO_DISABLE_TELEMETRY=true.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Firmar y sellar no usa modelos. La detección automática de destinatarios y campos es opcional y solo documenta Google Vertex AI; no hay ruta con modelos locales.
+- Coste: Sin pago a un modelo en la ruta básica. La edición Community autoalojada es gratuita bajo AGPL-3.0. La nube de Documenso ofrece un plan gratuito con 5 documentos al mes y planes de pago (consultado el 27 nov 2026). Enterprise y Vertex AI son de pago.
+- Equipo: Preparación según la ruta elegida. Equipo con Docker, Node.js 24 o posterior y al menos 2 GB de RAM libres. La ruta de desarrollo levanta cuatro contenedores.
+**Repo:** https://github.com/documenso/documenso
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/documenso/documenso/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla
+**Evita si:** solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo.
+**Primera prueba propuesta:** En la instalación local de desarrollo, crea una cuenta con un correo ficticio y confírmala desde http://localhost:9000. Sube un PDF propio de una página, añade como firmante a «Firmante Ficticio» <firmante@example.com> con un campo de firma y envíalo.
+**Qué comprobar:** En http://localhost:9000 abre el correo del firmante y firma. El documento pasa a completado y el PDF descargado muestra una firma digital hecha con el certificado de ejemplo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `stirling-pdf`, `paperless-ngx`, `activepieces`
+**Alternativas (elige una):** `docuseal`
+
 ## `docuseal`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=pdf,server,ruby
 
@@ -63,6 +94,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes revisar el documento resultante y la ubicación de los campos
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `activepieces`, `twenty-main`, `stirling-pdf`, `pdfcraft`
+**Alternativas (elige una):** `documenso`
 
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python

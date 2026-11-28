@@ -36,9 +36,9 @@ Es una herramienta Python que se instala con `uv tool install` desde el repo (co
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (7). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (8). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[agent-toolkit](agent-toolkit.md) · [Anthropic Skills](anthropic-skills.md) · [autoskills](autoskills.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [Awesome Claude Code](awesome-claude-code.md) · [Awesome Claude Skills](awesome-claude-skills.md) · [BMAD Method](bmad-method.md)
+[agent-toolkit](agent-toolkit.md) · [Anthropic Skills](anthropic-skills.md) · [autoskills](autoskills.md) · [Awesome Agent Skills](awesome-agent-skills.md) · [Awesome Claude Code](awesome-claude-code.md) · [Awesome Claude Skills](awesome-claude-skills.md) · [BMAD Method](bmad-method.md) · [Skills CLI (Vercel Labs)](vercel-skills.md)
 
 **Notas:** Sin alternativas declaradas. Un escaneo limpio no garantiza que una skill sea segura.
 

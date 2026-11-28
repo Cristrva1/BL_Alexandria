@@ -45,7 +45,7 @@ Grupo **Frameworks de C2 y post-explotación**: Mythic ocupa la posición 3 de 3
 
 | # | Repo | Puntuación | Cuándo elegirlo |
 |---:|---|---:|---|
-| 1 | [Sliver](sliver.md) ⭐ recomendado | 68 | Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. |
+| 1 | [Sliver](sliver.md) ⭐ recomendado | 69 | Si buscas esto: framework C2 open source de Bishop Fox para emulación de adversario autorizada: implants multiplataforma y canales mTLS/WireGuard/HTTP/DNS. |
 | 2 | [Empire](empire.md) | 60 | Si buscas esto: framework post-explotación/C2 centrado en PowerShell y agentes multiplataforma para labs autorizados. |
 | 3 | **Mythic** (esta ficha) | 48 | Si buscas esto: framework C2 colaborativo con UI: agentes y perfiles C2 se instalan aparte vía mythic-cli. |
 

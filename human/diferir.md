@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**102 repos.**
+**103 repos.**
 
 ## ⏳ Diferir
 
@@ -43,6 +43,7 @@ _Pesado: solo si llega a finalista._
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | 📄 PDF, OCR y procesamiento de documentos | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
 | [olmOCR](fichas/olmocr.md) | 📄 PDF, OCR y procesamiento de documentos | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. |
 | [docuseal](fichas/docuseal.md) | 📄 PDF, OCR y procesamiento de documentos | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. |
+| [Documenso](fichas/documenso.md) | 📄 PDF, OCR y procesamiento de documentos | Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría. |
 | [qlib](fichas/qlib.md) | 📈 Investigar finanzas y mercados | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. |
 | [FinceptTerminal](fichas/finceptterminal.md) | 📈 Investigar finanzas y mercados | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. |
 | [FinGPT](fichas/fingpt.md) | 📈 Investigar finanzas y mercados | Proyecto de LLM financieros abiertos de AI4Finance: modelos ajustados con LoRA, datos y recetas para análisis de sentimiento y tareas financieras. |

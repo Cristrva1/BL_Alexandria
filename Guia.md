@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **965 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **974 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -13,21 +13,21 @@ Las **965 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | # | Categoría | Repos | Para qué |
 |---:|---|---:|---|
 | 1 | [🤖 Automatizar procesos y crear herramientas internas](#-1-automatizar-procesos-y-crear-herramientas-internas) | 19 | Motores de flujos (Activepieces, Windmill, Node-RED, Huginn, Kestra, Trigger.dev) y apps internas sin código (NocoDB, ToolJet, Appsmith, Budibase). Elige primero el motor del proceso y conecta después datos, canales y modelos; para WhatsApp y atención al cliente se combinan con Evolution API, Dify y Chatwoot. |
-| 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 33 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
+| 2 | [🧠 Skills, plugins y métodos para agentes](#-2-skills-plugins-y-métodos-para-agentes) | 34 | Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica. |
 | 3 | [🕸️ Construir agentes y coordinar equipos de IA](#️-3-construir-agentes-y-coordinar-equipos-de-ia) | 36 | Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea. |
 | 4 | [🕷️ Buscar, extraer y monitorear información web](#️-4-buscar-extraer-y-monitorear-información-web) | 28 | Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web. |
 | 5 | [🔌 Conectar herramientas con MCP](#-5-conectar-herramientas-con-mcp) | 27 | SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza. |
 | 6 | [🧬 Memoria, RAG y búsqueda de conocimiento](#-6-memoria-rag-y-búsqueda-de-conocimiento) | 30 | Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda. |
-| 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 26 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
+| 7 | [🧑‍💻 Entender código y comprobar su calidad](#-7-entender-código-y-comprobar-su-calidad) | 27 | Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas. |
 | 8 | [🏠 Chats, modelos locales y espacios privados](#-8-chats-modelos-locales-y-espacios-privados) | 33 | Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha. |
 | 9 | [🎨 Diseñar y construir interfaces web](#-9-diseñar-y-construir-interfaces-web) | 33 | Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas. |
 | 10 | [📊 Dashboards, analítica y mapas](#-10-dashboards-analítica-y-mapas) | 31 | Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes. |
 | 11 | [🖼️ Generar y editar imágenes con IA](#️-11-generar-y-editar-imágenes-con-ia) | 11 | Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen. |
-| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 21 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
-| 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 22 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
+| 12 | [🎬 Editar, grabar y generar video](#-12-editar-grabar-y-generar-video) | 22 | Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos. |
+| 13 | [📄 PDF, OCR y procesamiento de documentos](#-13-pdf-ocr-y-procesamiento-de-documentos) | 23 | Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas. |
 | 14 | [📈 Investigar finanzas y mercados](#-14-investigar-finanzas-y-mercados) | 25 | Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales. |
 | 15 | [🗂️ Organizar notas, archivos y servicios personales](#️-15-organizar-notas-archivos-y-servicios-personales) | 51 | Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar. |
-| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 142 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
+| 16 | [🔍 Analizar software y comprobar su seguridad](#-16-analizar-software-y-comprobar-su-seguridad) | 147 | Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, detección y seguridad de nube. Trabaja sobre sistemas propios o con autorización escrita y separa análisis, pruebas activas y defensa. |
 | 17 | [🤖 WhatsApp, mensajería y chatbots](#-17-whatsapp-mensajería-y-chatbots) | 18 | Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación. |
 | 18 | [🤖 CRM, ventas y marketing](#-18-crm-ventas-y-marketing) | 19 | Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas. |
 | 19 | [🧠 Aprender IA y escribir mejores prompts](#-19-aprender-ia-y-escribir-mejores-prompts) | 30 | Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos. |
@@ -302,6 +302,13 @@ Catálogos de skills, plugins y métodos generales de desarrollo. Elige según t
 | [wshobson/agents](human/fichas/wshobson-agents.md) | Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Awesome Agent Skills](human/fichas/awesome-agent-skills.md) | Tu objetivo encaja con estos ejemplos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — Skills CLI (Vercel Labs), autoskills**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Skills CLI (Vercel Labs)](human/fichas/vercel-skills.md) | Tu objetivo encaja con estos ejemplos: Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano; Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa | Solo quieres leer una skill sin instalarla, o no puedes revisar el contenido de las skills que vas a añadir |
+| [autoskills](human/fichas/autoskills.md) | Tu objetivo encaja con estos ejemplos: Encontrar skills adecuadas para un proyecto React existente; Revisar qué archivos de skills se incorporarían sin descargarlos todos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
 **⚖️ ¿Cuál elegir? — Agent Skills (Addy Osmani), superpowers, ECC, gstack**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -378,6 +385,15 @@ gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [OpenCode](human/fichas/opencode.md) · [plugins](human/fichas/plugins.md)<br>
 **Más:** [ficha completa](human/fichas/wshobson-agents.md) · [GitHub](https://github.com/wshobson/agents)
+
+#### 🖥️ Skills CLI (Vercel Labs)
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 41.2k<br>
+**Qué es:** Instala, lista, actualiza y quita skills de agentes de código desde un repositorio o una carpeta propia, en Claude Code, Codex y otros agentes.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/vercel-labs/skills/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano; Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa — **Evita si:** Solo quieres leer una skill sin instalarla, o no puedes revisar el contenido de las skills que vas a añadir<br>
+**Combina con:** [SkillSpector](human/fichas/skillspector.md) · [Awesome Agent Skills](human/fichas/awesome-agent-skills.md) · [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Más:** [ficha completa](human/fichas/vercel-skills.md) · [GitHub](https://github.com/vercel-labs/skills)
 
 #### 🗂️ Awesome GitHub Copilot
 **Etiquetas:** Ejecución ☁️ cloud/API · MCP 🔌 · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 41.2k<br>
@@ -2151,6 +2167,15 @@ pip install -e .` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [fzf](human/fichas/fzf.md) · [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md)<br>
 **Más:** [ficha completa](human/fichas/ripgrep.md) · [GitHub](https://github.com/BurntSushi/ripgrep)
 
+#### 🖥️ Pake
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 64.1k<br>
+**Qué es:** Convierte una página web o una carpeta con tu web estática en una app de escritorio ligera para macOS, Windows o Linux con un solo comando.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/tw93/Pake/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Convertir una página de inicio propia en una app con icono y ventana propios; Empaquetar la carpeta dist de una presentación o herramienta web estática para usarla sin abrir el navegador — **Evita si:** no quieres instalar Node.js, Rust y herramientas de compilación, o necesitas que la app acceda a funciones del sistema más allá de mostrar la web<br>
+**Combina con:** [Slidev](human/fichas/slidev.md) · [tailwindcss](human/fichas/tailwindcss.md) · [Excalidraw](human/fichas/excalidraw.md)<br>
+**Más:** [ficha completa](human/fichas/pake.md) · [GitHub](https://github.com/tw93/Pake)
+
 #### 🐍 openai-python
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 32.2k<br>
 **Qué es:** SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API.<br>
@@ -3409,6 +3434,13 @@ Editores, grabadores, utilidades de medios y modelos de video generativo. La edi
 | [Shotcut](human/fichas/shotcut.md) | Tu objetivo encaja con estos ejemplos: editar vídeos de YouTube o cursos con cortes, transiciones y títulos; generar subtítulos automáticos a partir del audio de un vídeo | necesitas una instalación sin cuentas ni dependencias adicionales |
 | [Kdenlive](human/fichas/kdenlive.md) | Tu objetivo encaja con estos ejemplos: montar vídeos con varias pistas, efectos y corrección de color; subtitular automáticamente entrevistas o tutoriales | necesitas una instalación sin cuentas ni dependencias adicionales |
 
+**⚖️ ¿Cuál elegir? — OBS Studio, Cap**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [OBS Studio](human/fichas/obs-studio.md) | Tu objetivo encaja con estos ejemplos: Grabar una explicación de pantalla; Preparar escenas para una transmisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Cap](human/fichas/cap.md) | Tu objetivo encaja con estos ejemplos: Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4; Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada | necesitas transmitir en directo con escenas y varias fuentes, o vas a grabar para un uso comercial sin pagar la licencia |
+
 **⚖️ ¿Cuál elegir? — MoneyPrinterTurbo, short-video-factory**
 
 | Repo | Elígelo si… | Evítalo si… |
@@ -3461,6 +3493,15 @@ Editores, grabadores, utilidades de medios y modelos de video generativo. La edi
 **Elige si:** Tu objetivo encaja con estos ejemplos: Quitar una parte de una grabación; Separar o unir medios compatibles — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [yt-dlp](human/fichas/yt-dlp.md) · [whisperX](human/fichas/whisperx.md) · [MoviePy](human/fichas/moviepy.md) · [OBS Studio](human/fichas/obs-studio.md) · [OpenCut](human/fichas/opencut.md)<br>
 **Más:** [ficha completa](human/fichas/lossless-cut.md) · [GitHub](https://github.com/mifi/lossless-cut)
+
+#### 🖥️ Cap
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 25.7k<br>
+**Qué es:** Graba pantalla, cámara y micrófono, edita el video en tu equipo con fondos, zoom y recortes, y expórtalo o compártelo con un enlace.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/CapSoftware/Cap/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Grabar un tutorial corto sobre una hoja de cálculo propia y exportarlo en MP4; Mostrar a un compañero cómo aparece un fallo en tu propia aplicación con una grabación editada — **Evita si:** necesitas transmitir en directo con escenas y varias fuentes, o vas a grabar para un uso comercial sin pagar la licencia<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [LosslessCut](human/fichas/lossless-cut.md) · [HandBrake](human/fichas/handbrake.md)<br>
+**Más:** [ficha completa](human/fichas/cap.md) · [GitHub](https://github.com/CapSoftware/Cap)
 
 #### 🖥️ HandBrake
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 25k<br>
@@ -3653,6 +3694,13 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 | [Stirling-PDF](human/fichas/stirling-pdf.md) | Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [pdfcraft](human/fichas/pdfcraft.md) | Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
+**⚖️ ¿Cuál elegir? — docuseal, Documenso**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [docuseal](human/fichas/docuseal.md) | Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Documenso](human/fichas/documenso.md) | Tu objetivo encaja con estos ejemplos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla | solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo |
+
 ### Conversión de documentos para IA
 
 #### 🔄 Docling ⭐
@@ -3831,6 +3879,15 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [activepieces](human/fichas/activepieces.md) · [twenty-main](human/fichas/twenty-main.md) · [Stirling-PDF](human/fichas/stirling-pdf.md) · [pdfcraft](human/fichas/pdfcraft.md)<br>
 **Más:** [ficha completa](human/fichas/docuseal.md) · [GitHub](https://github.com/docusealco/docuseal)
+
+#### 🖥️ Documenso
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🔴 pesado · ⭐ 15.9k<br>
+**Qué es:** Plataforma abierta de firma electrónica para enviar un PDF a firmantes por correo y obtener el documento sellado con su registro de auditoría.<br>
+**Acceso:** API de IA opcional · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/documenso/documenso/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Recoger la firma de un acuerdo de prueba entre dos personas de tu equipo; Preparar una plantilla con campos de firma y fecha para reutilizarla — **Evita si:** solo necesitas firmar algún PDF suelto y no quieres mantener un servidor con base de datos y correo<br>
+**Combina con:** [Stirling-PDF](human/fichas/stirling-pdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [activepieces](human/fichas/activepieces.md)<br>
+**Más:** [ficha completa](human/fichas/documenso.md) · [GitHub](https://github.com/documenso/documenso)
 
 #### 📄 pdfcraft
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9.8k<br>
@@ -4781,6 +4838,13 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 |---|---|---|
 | [strix](human/fichas/strix.md) | Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [shannon](human/fichas/shannon.md) | Tu objetivo encaja con estos ejemplos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**⚖️ ¿Cuál elegir? — Semgrep, CodeQL**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [Semgrep](human/fichas/semgrep.md) | Tu objetivo encaja con estos ejemplos: Detectar patrones inseguros repetidos; Aplicar reglas de calidad en CI | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [CodeQL](human/fichas/codeql.md) | Tu objetivo encaja con estos ejemplos: Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión; Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo | Necesitas analizar código privado o de clientes sin licencia de pago de GitHub, o prefieres reglas sencillas que puedas escribir sin aprender el lenguaje QL |
 
 **⚖️ ¿Cuál elegir? — OWASP Threat Dragon, OWASP pytm**
 
@@ -5763,6 +5827,15 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [security-audit-skill](human/fichas/security-audit-skill.md) · [strix](human/fichas/strix.md) · [Defending Code Reference Harness](human/fichas/defending-code-reference-harness.md) · [raddebugger](human/fichas/raddebugger.md) · [shannon](human/fichas/shannon.md)<br>
 **Más:** [ficha completa](human/fichas/semgrep.md) · [GitHub](https://github.com/semgrep/semgrep)
 
+#### ⚙️ MobSF (Mobile Security Framework)
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 22.4k<br>
+**Qué es:** Analiza apps Android, iOS y Windows propias desde el navegador y genera un informe de permisos, configuración, código y librerías con riesgo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar la APK de tu propia app antes de publicarla para detectar permisos excesivos, copias de seguridad habilitadas o claves escritas en el código; Practicar con una app de entrenamiento de OWASP y comparar el informe con las pruebas de la guía MASTG — **Evita si:** Quieres analizar apps de terceros sin permiso o compartir el servidor en una red sin reforzar su configuración<br>
+**Combina con:** [OWASP MASTG](human/fichas/mastg.md) · [jadx](human/fichas/jadx.md) · [DefectDojo](human/fichas/defectdojo.md)<br>
+**Más:** [ficha completa](human/fichas/mobsf.md) · [GitHub](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
+
 #### 🖥️ Lynis
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 16.7k<br>
 **Qué es:** Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.<br>
@@ -5772,6 +5845,33 @@ craft-anything-cli doctor                            # checks the install, codin
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [Trivy](human/fichas/trivy.md) · [Claude Code](human/fichas/claude-code.md) · [Prowler](human/fichas/prowler.md) · [PEASS-ng](human/fichas/peass-ng.md)<br>
 **Más:** [ficha completa](human/fichas/lynis.md) · [GitHub](https://github.com/CISOfy/lynis)
 
+#### 📚 CodeQL
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 10.4k<br>
+**Qué es:** Busca vulnerabilidades en el código de un repositorio público siguiendo cómo viajan los datos y muestra cada alerta en la pestaña de seguridad de GitHub.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/github/codeql/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Activar el análisis automático en un repositorio público propio y revisar las alertas antes de publicar una versión; Comprobar si un cambio en una pequeña aplicación Flask abre una inyección de comandos antes de fusionarlo — **Evita si:** Necesitas analizar código privado o de clientes sin licencia de pago de GitHub, o prefieres reglas sencillas que puedas escribir sin aprender el lenguaje QL<br>
+**Combina con:** [GitHub MCP Server](human/fichas/github-mcp-server.md) · [OSV-Scanner](human/fichas/osv-scanner.md) · [DefectDojo](human/fichas/defectdojo.md)<br>
+**Más:** [ficha completa](human/fichas/codeql.md) · [GitHub](https://github.com/github/codeql)
+
+#### 🖥️ gosec
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 9k<br>
+**Qué es:** Revisa código Go en busca de problemas de seguridad, como criptografía débil, comandos armados con datos externos o credenciales en el código.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Arranque:** [Instrucciones originales](https://github.com/securego/gosec/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un servicio web propio en Go antes de publicarlo para encontrar inyecciones de comandos o rutas de archivo sin validar; Generar un informe SARIF en GitHub Actions y verlo junto con las demás alertas de code scanning — **Evita si:** Tu código no está escrito en Go o buscas revisar dependencias en lugar de tu propio código<br>
+**Combina con:** [OSV-Scanner](human/fichas/osv-scanner.md) · [DefectDojo](human/fichas/defectdojo.md)<br>
+**Más:** [ficha completa](human/fichas/gosec.md) · [GitHub](https://github.com/securego/gosec)
+
+#### 🖥️ Bandit
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 8.4k<br>
+**Qué es:** Revisa código Python en busca de fallos de seguridad habituales, como comandos con shell=True o yaml.load inseguro, e indica la línea de cada hallazgo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/PyCQA/bandit/blob/main/README.rst); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un script propio de automatización antes de compartirlo para encontrar llamadas peligrosas al sistema; Añadir una comprobación de seguridad antes de cada commit en un proyecto Python mediante pre-commit — **Evita si:** Tu proyecto no está escrito en Python o necesitas seguir el recorrido de los datos entre varios archivos<br>
+**Combina con:** [pre-commit](human/fichas/pre-commit.md) · [Gitleaks](human/fichas/gitleaks.md) · [DefectDojo](human/fichas/defectdojo.md)<br>
+**Más:** [ficha completa](human/fichas/bandit.md) · [GitHub](https://github.com/PyCQA/bandit)
+
 #### 🖥️ OWASP Dependency-Check
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 7.8k<br>
 **Qué es:** Análisis de composición de software (SCA) de OWASP: detecta dependencias con CVE publicados en Java, .NET, JavaScript, Python y más.<br>
@@ -5780,6 +5880,15 @@ craft-anything-cli doctor                            # checks the install, codin
 **Elige si:** Tu objetivo encaja con estos ejemplos: romper el build de Maven cuando aparece una dependencia con CVSS alto; generar un informe HTML de dependencias vulnerables para una auditoría — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Dependency-Track](human/fichas/dependency-track.md) · [DefectDojo](human/fichas/defectdojo.md) · [OSV-Scanner](human/fichas/osv-scanner.md)<br>
 **Más:** [ficha completa](human/fichas/dependency-check.md) · [GitHub](https://github.com/dependency-check/DependencyCheck)
+
+#### 🖥️ Brakeman
+**Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 7.3k<br>
+**Qué es:** Revisa el código de aplicaciones Ruby on Rails sin ponerlas en marcha y avisa de inyecciones SQL o de comandos, XSS y configuraciones de riesgo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `gem install brakeman` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar una aplicación Rails propia antes de cada versión para encontrar consultas SQL armadas con datos del usuario; Comparar el informe JSON actual con el anterior para ver qué avisos se corrigieron y cuáles son nuevos — **Evita si:** Tu aplicación no usa Ruby on Rails o quieres integrarlo en un producto o servicio comercial para terceros sin comprar la licencia<br>
+**Combina con:** [OSV-Scanner](human/fichas/osv-scanner.md) · [ZAP (Zed Attack Proxy)](human/fichas/zaproxy.md) · [DefectDojo](human/fichas/defectdojo.md)<br>
+**Más:** [ficha completa](human/fichas/brakeman.md) · [GitHub](https://github.com/presidentbeef/brakeman)
 
 #### 🖥️ bla
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol 🖥️ app · Setup 🟡 medio · ⭐ 5.7k<br>

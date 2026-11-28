@@ -34,10 +34,10 @@
    "cat": 2,
    "sub": "catalogos",
    "titulo": "Catálogos y marketplaces de skills",
-   "repos": 15,
+   "repos": 16,
    "archivo": "categoria-2-catalogos.md",
-   "caracteres": 28158,
-   "tokens_estimados": 8046
+   "caracteres": 29654,
+   "tokens_estimados": 8473
   },
   {
    "cat": 2,
@@ -52,10 +52,10 @@
    "cat": 2,
    "sub": null,
    "titulo": "Skills, plugins y métodos para agentes",
-   "repos": 33,
+   "repos": 34,
    "archivo": "categoria-2.md",
-   "caracteres": 58413,
-   "tokens_estimados": 16690
+   "caracteres": 59921,
+   "tokens_estimados": 17121
   },
   {
    "cat": 3,
@@ -241,19 +241,19 @@
    "cat": 7,
    "sub": "herramientas",
    "titulo": "CLIs y SDKs de desarrollo",
-   "repos": 10,
+   "repos": 11,
    "archivo": "categoria-7-herramientas.md",
-   "caracteres": 15772,
-   "tokens_estimados": 4507
+   "caracteres": 17074,
+   "tokens_estimados": 4879
   },
   {
    "cat": 7,
    "sub": null,
    "titulo": "Entender código y comprobar su calidad",
-   "repos": 26,
+   "repos": 27,
    "archivo": "categoria-7.md",
-   "caracteres": 40065,
-   "tokens_estimados": 11448
+   "caracteres": 41382,
+   "tokens_estimados": 11824
   },
   {
    "cat": 8,
@@ -306,8 +306,8 @@
    "titulo": "Componentes, iconos y sistemas de diseño",
    "repos": 15,
    "archivo": "categoria-9-componentes.md",
-   "caracteres": 25293,
-   "tokens_estimados": 7227
+   "caracteres": 25320,
+   "tokens_estimados": 7235
   },
   {
    "cat": 9,
@@ -342,8 +342,8 @@
    "titulo": "Diseñar y construir interfaces web",
    "repos": 33,
    "archivo": "categoria-9.md",
-   "caracteres": 54323,
-   "tokens_estimados": 15521
+   "caracteres": 54350,
+   "tokens_estimados": 15529
   },
   {
    "cat": 10,
@@ -448,10 +448,10 @@
    "cat": 12,
    "sub": "edicion",
    "titulo": "Edición, grabación y subtítulos",
-   "repos": 13,
+   "repos": 14,
    "archivo": "categoria-12-edicion.md",
-   "caracteres": 21938,
-   "tokens_estimados": 6269
+   "caracteres": 23520,
+   "tokens_estimados": 6721
   },
   {
    "cat": 12,
@@ -466,10 +466,10 @@
    "cat": 12,
    "sub": null,
    "titulo": "Editar, grabar y generar video",
-   "repos": 21,
+   "repos": 22,
    "archivo": "categoria-12.md",
-   "caracteres": 36694,
-   "tokens_estimados": 10485
+   "caracteres": 38286,
+   "tokens_estimados": 10939
   },
   {
    "cat": 13,
@@ -493,10 +493,10 @@
    "cat": 13,
    "sub": "pdf",
    "titulo": "Herramientas PDF",
-   "repos": 5,
+   "repos": 6,
    "archivo": "categoria-13-pdf.md",
-   "caracteres": 11621,
-   "tokens_estimados": 3321
+   "caracteres": 13221,
+   "tokens_estimados": 3778
   },
   {
    "cat": 13,
@@ -511,10 +511,10 @@
    "cat": 13,
    "sub": null,
    "titulo": "PDF, OCR y procesamiento de documentos",
-   "repos": 22,
+   "repos": 23,
    "archivo": "categoria-13.md",
-   "caracteres": 39804,
-   "tokens_estimados": 11373
+   "caracteres": 41410,
+   "tokens_estimados": 11832
   },
   {
    "cat": 14,
@@ -718,10 +718,10 @@
    "cat": 16,
    "sub": "defensa",
    "titulo": "Protección y verificación de software",
-   "repos": 12,
+   "repos": 17,
    "archivo": "categoria-16-defensa.md",
-   "caracteres": 18566,
-   "tokens_estimados": 5305
+   "caracteres": 25950,
+   "tokens_estimados": 7415
   },
   {
    "cat": 16,
@@ -763,45 +763,45 @@
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 147,
    "archivo": "categoria-16.md",
    "partes": [
     "categoria-16-parte-1.md",
     "categoria-16-parte-2.md",
     "categoria-16-parte-3.md"
    ],
-   "caracteres": 28638,
-   "tokens_estimados": 8183
+   "caracteres": 29577,
+   "tokens_estimados": 8451
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 147,
    "archivo": "categoria-16-parte-1.md",
    "parte": 1,
-   "caracteres": 61317,
-   "tokens_estimados": 17520
+   "caracteres": 59979,
+   "tokens_estimados": 17137
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 147,
    "archivo": "categoria-16-parte-2.md",
    "parte": 2,
-   "caracteres": 61529,
-   "tokens_estimados": 17580
+   "caracteres": 60473,
+   "tokens_estimados": 17279
   },
   {
    "cat": 16,
    "sub": null,
    "titulo": "Analizar software y comprobar su seguridad",
-   "repos": 142,
+   "repos": 147,
    "archivo": "categoria-16-parte-3.md",
    "parte": 3,
-   "caracteres": 40944,
-   "tokens_estimados": 11699
+   "caracteres": 49883,
+   "tokens_estimados": 14253
   },
   {
    "cat": 17,
@@ -1232,8 +1232,8 @@
    "titulo": "Síntesis y clonación de voz",
    "repos": 13,
    "archivo": "categoria-29-tts.md",
-   "caracteres": 25333,
-   "tokens_estimados": 7239
+   "caracteres": 25389,
+   "tokens_estimados": 7255
   },
   {
    "cat": 29,
@@ -1268,8 +1268,8 @@
    "titulo": "Audio, transcripción, voz y música",
    "repos": 34,
    "archivo": "categoria-29.md",
-   "caracteres": 58798,
-   "tokens_estimados": 16800
+   "caracteres": 58854,
+   "tokens_estimados": 16816
   },
   {
    "cat": 30,

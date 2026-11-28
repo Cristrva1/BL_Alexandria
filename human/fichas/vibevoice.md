@@ -39,7 +39,7 @@ VibeVoice-ASR está integrado en Transformers y en Azure AI Foundry Labs, y hay 
 
 Estado en GitHub: activo · último push 2026-10-08 · licencia declarada MIT (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/VibeVoice/blob/main/README.md)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/VibeVoice/blob/main/README.md) · [2](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/README.md)</sub>
 
 ## Acceso, coste y equipo
 
@@ -88,9 +88,9 @@ Comando copiado literalmente de la documentación del repositorio (sección «Pr
 
 ## Tu primera prueba
 
-Elige ASR o TTS y prueba una muestra corta siguiendo esa guía.
+Transcribe un audio propio corto con VibeVoice-ASR o genera una frase con VibeVoice-Realtime-0.5B siguiendo su guía.
 
-**Qué comprobar:** Puedes distinguir transcripción, generación y variante del modelo.
+**Qué comprobar:** Obtienes el texto o el audio y sabes qué variante del modelo usaste.
 
 Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
@@ -105,7 +105,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---|
 | Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal
+**Limitaciones:** Es una familia que incluye ASR, streaming y TTS; el README raíz remite a guías separadas y no tiene un único instalador universal. El código de VibeVoice-TTS (1.5B) se retiró del repositorio en septiembre de 2025 y su prueba rápida figura como desactivada. Para generar voz queda VibeVoice-Realtime-0.5B; para transcribir, los modelos ASR.
 
 ## Stack y modelos
 
@@ -124,7 +124,8 @@ Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalaci
 
 Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
-- [Fuente 1](https://github.com/microsoft/VibeVoice/blob/main/README.md)
+- [Fuente 1](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/README.md)
+- [Fuente 2](https://github.com/microsoft/VibeVoice/blob/main/README.md)
 
 ---
 

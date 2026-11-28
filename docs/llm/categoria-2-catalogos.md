@@ -1,6 +1,6 @@
 # Alexandría para agentes · Catálogos y marketplaces de skills
 
-Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `catalogos`. 15 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
+Categoría 2 «Skills, plugins y métodos para agentes» › subcategoría `catalogos`. 16 repos. Generado el 2026-11-27 desde `INDICE_IA.json` e `INDICE_IA.detalle.json` (Biblioteca de Alexandría, Binarias Labs).
 Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2&sub=catalogos · Ficha de cada repo: `https://cristrva1.github.io/BL_Alexandria/#/repo/<id>`
 
 ## Instrucciones para el agente
@@ -18,25 +18,37 @@ Explorador en línea: https://cristrva1.github.io/BL_Alexandria/#/explorar?cat=2
 
 | Repo | Para qué | Nivel | Puntuación | Licencia | Papel |
 |---|---|---|---:|---|---|
+| `vercel-skills` | Instala, lista, actualiza y quita skills de agentes de código desde un… | 1 Básico | 72 | MIT (OSI permisiva) | sin grupo |
 | `antigravity-awesome-skills` | Biblioteca de skills para varios agentes con selección revisable y distribución… | 1 Básico | 68 | MIT (OSI permisiva) | recomendado |
-| `awesome-copilot` | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y… | 1 Básico | 68 | MIT (OSI permisiva) | sin grupo |
-| `claude-plugins-official` | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y… | 1 Básico | 62 | Apache-2.0 (OSI permisiva) | alternativa |
-| `claude-code-templates` | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes… | 1 Básico | 61 | MIT (OSI permisiva) | sin grupo |
-| `google-skills` | Colección de skills para trabajar con productos y tecnologías de Google desde… | 2 Intermedio | 59 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `gemini-skills` | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK… | 1 Básico | 55 | Apache-2.0 (OSI permisiva) | sin grupo |
-| `awesome-agent-skills` | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel… | 1 Básico | 54 | MIT (OSI permisiva) | alternativa |
+| `awesome-copilot` | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y… | 1 Básico | 66 | MIT (OSI permisiva) | sin grupo |
+| `claude-plugins-official` | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y… | 1 Básico | 63 | Apache-2.0 (OSI permisiva) | alternativa |
+| `claude-code-templates` | Reúne componentes para Claude Code con buscador, entre ellos skills, agentes… | 1 Básico | 59 | MIT (OSI permisiva) | sin grupo |
+| `google-skills` | Colección de skills para trabajar con productos y tecnologías de Google desde… | 2 Intermedio | 57 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `gemini-skills` | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK… | 1 Básico | 54 | Apache-2.0 (OSI permisiva) | sin grupo |
+| `awesome-agent-skills` | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel… | 1 Básico | 53 | MIT (OSI permisiva) | alternativa |
 | `anthropic-skills` | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de… | 1 Básico | 52 | — (sin licencia detectada) | sin grupo |
-| `awesome-claude-code-subagents` | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes… | 1 Básico | 52 | MIT (OSI permisiva) | sin grupo |
-| `wshobson-agents` | Colección de plugins, agentes y skills con adaptadores documentados para Claude… | 1 Básico | 51 | MIT (OSI permisiva) | alternativa |
+| `awesome-claude-code-subagents` | Reúne perfiles especializados para Claude Code que puedes leer y comparar antes… | 1 Básico | 51 | MIT (OSI permisiva) | sin grupo |
+| `wshobson-agents` | Colección de plugins, agentes y skills con adaptadores documentados para Claude… | 1 Básico | 50 | MIT (OSI permisiva) | alternativa |
 | `awesome-claude-code` | Lista curada de recursos para Claude Code: skills, plugins, hooks, status… | 1 Básico | 48 | CC-BY-NC-ND-4.0 (source-available) | alternativa |
-| `awesome-claude-skills` | Colección de guías para automatizar servicios como Google Calendar y Zoho Books… | 1 Básico | 48 | — (sin licencia detectada) | sin grupo |
-| `plugins` | Especificación y colección oficial de plugins de Cursor para estudiar e… | 1 Básico | 48 | — (sin licencia detectada) | sin grupo |
-| `autoskills` | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un… | 1 Básico | 40 | CC-BY-NC-4.0 (source-available) | sin grupo |
+| `awesome-claude-skills` | Colección de guías para automatizar servicios como Google Calendar y Zoho Books… | 1 Básico | 47 | — (sin licencia detectada) | sin grupo |
+| `plugins` | Especificación y colección oficial de plugins de Cursor para estudiar e… | 1 Básico | 47 | — (sin licencia detectada) | sin grupo |
+| `autoskills` | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un… | 1 Básico | 39 | CC-BY-NC-4.0 (source-available) | sin grupo |
 | `awesome-agents` | Directorio de herramientas y proyectos abiertos para construir y operar agentes… | 1 Básico | 39 | — (sin licencia detectada) | sin grupo |
 
 Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, respaldo 10, encaje 10, seguridad 5. Papel: posición en su grupo de similares; «sin grupo» = no hay otro repo equivalente en el catálogo.
 
 ## Fichas
+
+### Skills CLI (Vercel Labs) (`vercel-skills`)
+
+- **Repo:** https://github.com/vercel-labs/skills · MIT · nivel 1 · 72/100
+- **Qué es:** Herramienta de línea de comandos de Vercel Labs para gestionar skills de agentes de código.
+- **Cuándo elegirlo:** Casos: Instalar en un proyecto la misma skill para Claude Code y Codex sin copiar carpetas a mano; Revisar qué skills tiene un proyecto y quitar las que el equipo ya no usa. Evítalo si Solo quieres leer una skill sin instalarla, o no puedes revisar el contenido de las skills que vas a añadir.
+- **Requisitos:** nivel 1: preparación sencilla; TypeScript, package.json; hardware prerequisites; API de IA: no.
+- **Instalación:** sin comando en el catálogo; ver README oficial. Fuente: https://github.com/vercel-labs/skills/blob/main/README.md
+- **Primera prueba propuesta (no ejecutada):** En una carpeta de prueba, crea una skill con npx skills@1.9.1 init saludo, escribe en saludo/SKILL.md una instrucción breve propia e instálala con npx skills@1.9.1 add ./saludo -a claude-code Éxito: npx skills@1.9.1 list muestra la skill saludo y existe .claude/skills/saludo/SKILL.md con tu texto dentro de la carpeta…
+- **Combina con:** `skillspector` [16/skills], `awesome-agent-skills`, `claude-code` [20/terminal], `codex` [20/terminal]
+- **Alternativas:** `autoskills`
 
 ### Agentic Awesome Skills (AAS) (`antigravity-awesome-skills`)
 
@@ -57,7 +69,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Awesome GitHub Copilot (`awesome-copilot`)
 
-- **Repo:** https://github.com/github/awesome-copilot · MIT · nivel 1 · 68/100
+- **Repo:** https://github.com/github/awesome-copilot · MIT · nivel 1 · 66/100
 - **Qué es:** Colección comunitaria alojada por GitHub (MIT) de agentes personalizados, instrucciones, skills, hooks, flujos de trabajo y plugins para GitHub Copilot. Muy activa; tiene web con búsqueda y un Learning Hub.
 - **Cuándo elegirlo:** Casos: Añadir instrucciones de equipo al asistente de programación; Estudiar un agente especializado antes de adaptarlo a un proyecto.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); GitHub Copilot y un plugin elegido del catálogo; hardware prerequisites; API de IA: no; GitHub Copilot y un plugin elegido del catálogo.
@@ -68,7 +80,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Claude Code Plugins Directory (`claude-plugins-official`)
 
-- **Repo:** https://github.com/anthropics/claude-plugins-official · Apache-2.0 · nivel 1 · 62/100 · alternativa en «Catálogos de skills y plugins para agentes»
+- **Repo:** https://github.com/anthropics/claude-plugins-official · Apache-2.0 · nivel 1 · 63/100 · alternativa en «Catálogos de skills y plugins para agentes»
 - **Qué es:** Repositorio de Anthropic (Apache 2.0) con sus propios plugins para Claude y el marketplace `claude-plugins-official` de Claude Code. Está en transición: los envíos de terceros ya se hacen en claude.ai/directory/manage.
 - **Cuándo elegirlo:** Casos: Añadir una herramienta de revisión al flujo de desarrollo; Conectar un servicio mediante un plugin publicado en el marketplace oficial.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Claude Code;  elegir un plugin y revisar sus dependencias; hardware prerequisites; API de IA: no; Claude Code; elegir un plugin y revisar sus dependencias.
@@ -80,7 +92,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Claude Code Templates (`claude-code-templates`)
 
-- **Repo:** https://github.com/davila7/claude-code-templates · MIT · nivel 1 · 61/100
+- **Repo:** https://github.com/davila7/claude-code-templates · MIT · nivel 1 · 59/100
 - **Qué es:** Reúne componentes para Claude Code con buscador, entre ellos skills, agentes, hooks y configuraciones de herramientas.
 - **Cuándo elegirlo:** Casos: Comparar dos plantillas de revisión de UI.; Encontrar un componente y revisar su procedencia antes de importarlo.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Python, package.json; API de IA: no; Navegador; para una eventual adopción, Claude Code y una carpeta limpia..
@@ -90,7 +102,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### skills (`google-skills`)
 
-- **Repo:** https://github.com/google/skills · Apache-2.0 · nivel 2 · 59/100
+- **Repo:** https://github.com/google/skills · Apache-2.0 · nivel 2 · 57/100
 - **Qué es:** Repositorio oficial de Google (Apache 2.0) con Agent Skills para sus productos, sobre todo Google Cloud. Muy activo, sin releases.
 - **Cuándo elegirlo:** Casos: Revisar la configuración de un servicio Cloud en un entorno de prueba; Aprender a consultar métricas de Ads sin crear campañas.
 - **Requisitos:** nivel 2: preparación media, se instala dentro de un agente (skill, plugin o MCP); Agente compatible;  elegir una skill del producto de Google que usarás; hardware prerequisites; API de IA: no; Agente compatible; elegir una skill del producto de Google que usarás.
@@ -101,7 +113,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### gemini-skills (`gemini-skills`)
 
-- **Repo:** https://github.com/google-gemini/gemini-skills · Apache-2.0 · nivel 1 · 55/100
+- **Repo:** https://github.com/google-gemini/gemini-skills · Apache-2.0 · nivel 1 · 54/100
 - **Qué es:** Biblioteca oficial de Google (Apache 2.0) de skills para la API de Gemini, su SDK y la interacción con los modelos. Activa, sin releases.
 - **Cuándo elegirlo:** Casos: Revisar cómo integrar el SDK de Gemini en una aplicación; Preparar una llamada multimodal con datos de prueba.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente compatible;  cuenta Gemini solo si el proyecto generado llama su API; hardware prerequisites; API de IA: no; Agente compatible; cuenta Gemini solo si el proyecto generado llama su API.
@@ -120,7 +132,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Awesome Agent Skills (`awesome-agent-skills`)
 
-- **Repo:** https://github.com/VoltAgent/awesome-agent-skills · MIT · nivel 1 · 54/100 · alternativa en «Catálogos de skills y plugins para agentes»
+- **Repo:** https://github.com/VoltAgent/awesome-agent-skills · MIT · nivel 1 · 53/100 · alternativa en «Catálogos de skills y plugins para agentes»
 - **Qué es:** Colección MIT de VoltAgent con skills de agentes oficiales de equipos de desarrollo y de la comunidad, seleccionadas a mano. Muy activa; el README lleva patrocinadores.
 - **Cuándo elegirlo:** Casos: Encontrar una skill de Supabase para un proyecto existente; Localizar instrucciones de frontend publicadas por un equipo mantenedor.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador;  identificar el cliente donde usarás el recurso elegido; hardware prerequisites; API de IA: no; Navegador; identificar el cliente donde usarás el recurso elegido.
@@ -150,7 +162,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Awesome Claude Code Subagents (`awesome-claude-code-subagents`)
 
-- **Repo:** https://github.com/VoltAgent/awesome-claude-code-subagents · MIT · nivel 1 · 52/100
+- **Repo:** https://github.com/VoltAgent/awesome-claude-code-subagents · MIT · nivel 1 · 51/100
 - **Qué es:** Reúne perfiles especializados para Claude Code que puedes leer y comparar antes de adoptar uno en tu propio proyecto.
 - **Cuándo elegirlo:** Casos: Comparar el perfil de un revisor de accesibilidad y uno de documentación.; Identificar las herramientas declaradas por una plantilla antes de copiarla.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Shell; API de IA: no; Navegador; para una eventual adopción, Claude Code y una carpeta de prueba..
@@ -160,7 +172,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### wshobson/agents (`wshobson-agents`)
 
-- **Repo:** https://github.com/wshobson/agents · MIT · nivel 1 · 51/100 · alternativa en «Catálogos de skills y plugins para agentes»
+- **Repo:** https://github.com/wshobson/agents · MIT · nivel 1 · 50/100 · alternativa en «Catálogos de skills y plugins para agentes»
 - **Qué es:** Colección MIT de plugins, agentes, skills y comandos de wshobson para varias herramientas de código con IA. Muy activa, sin releases.
 - **Cuándo elegirlo:** Casos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores.
 - **Requisitos:** nivel 1: preparación sencilla, se instala dentro de un agente (skill, plugin o MCP); Agente destino;  dependencias del plugin seleccionado; hardware prerequisites; API de IA: no; Agente destino; dependencias del plugin seleccionado.
@@ -189,7 +201,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### Awesome Claude Skills (`awesome-claude-skills`)
 
-- **Repo:** https://github.com/ComposioHQ/awesome-claude-skills · — · nivel 1 · 48/100
+- **Repo:** https://github.com/ComposioHQ/awesome-claude-skills · — · nivel 1 · 47/100
 - **Qué es:** Colección de ComposioHQ con un índice general de recursos y 832 archivos SKILL.md en la carpeta de automatizaciones publicada en el commit revisado.
 - **Cuándo elegirlo:** Ya usas Composio y buscas una guía concreta para trabajar con un servicio como Calendar o Zoho Books.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Navegador;  agente compatible solo al utilizar una skill seleccionada; hardware prerequisites; API de IA: no; Navegador; agente compatible solo al utilizar una skill seleccionada.
@@ -200,7 +212,7 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### plugins (`plugins`)
 
-- **Repo:** https://github.com/cursor/plugins · — · nivel 1 · 48/100
+- **Repo:** https://github.com/cursor/plugins · — · nivel 1 · 47/100
 - **Qué es:** Repositorio oficial de Cursor con plugins para herramientas de desarrollo, frameworks y productos SaaS. Muy activo; GitHub no detecta licencia de repositorio.
 - **Cuándo elegirlo:** Casos: Encontrar una integración de un servicio que ya utiliza tu equipo; Estudiar cómo empaquetar reglas y skills para Cursor.
 - **Requisitos:** nivel 1: material de consulta: se lee, no se instala; Cursor;  revisar el plugin concreto y sus credenciales; hardware prerequisites; API de IA: no; Cursor; revisar el plugin concreto y sus credenciales.
@@ -211,13 +223,14 @@ Puntuación 0-100: adopción 25, mantenimiento 25, licencia 15, madurez 10, resp
 
 ### autoskills (`autoskills`)
 
-- **Repo:** https://github.com/midudev/autoskills · CC-BY-NC-4.0 · nivel 1 · 40/100
+- **Repo:** https://github.com/midudev/autoskills · CC-BY-NC-4.0 · nivel 1 · 39/100
 - **Qué es:** CLI de midudev que detecta el stack de un proyecto e instala skills de agente seleccionadas. Licencia CC BY-NC 4.0, que no es de código abierto y prohíbe el uso comercial, y que GitHub marca como NOASSERTION. Activo (v0.4.1).
 - **Cuándo elegirlo:** Casos: Encontrar skills adecuadas para un proyecto React existente; Revisar qué archivos de skills se incorporarían sin descargarlos todos.
 - **Requisitos:** nivel 1: preparación sencilla; Node.js;  un proyecto con sus manifiestos de dependencias; hardware prerequisites; API de IA: no; Node.js; un proyecto con sus manifiestos de dependencias.
 - **Instalación (documentada en la fuente; no ejecutada):** `npx autoskills` — fuente: https://github.com/midudev/autoskills/blob/main/README.md
 - **Primera prueba propuesta (no ejecutada):** Revisa la selección que propone para tu stack antes de permitir la instalación Éxito: La lista corresponde a tus tecnologías y queda un registro de las skills instaladas
 - **Combina con:** `claude-code` [20/terminal], `skillspector` [16/skills], `codex` [20/terminal]
+- **Alternativas:** `vercel-skills`
 - **Riesgos y avisos:** Open-core o uso comercial limitado: parte de las funciones o datos son de pago. Licencia confirmada leyendo LICENSE el 2026-11-16 (GitHub: NOASSERTION). La licencia CC BY-NC impide el uso comercial. Se quitó awesome-agent-skills porque no hay integración. Se corrige la API inferida por menciones a tecnologías de autenticación y pagos: no son proveedores requeridos por el CLI.
 
 ### awesome-agents (`awesome-agents`)
